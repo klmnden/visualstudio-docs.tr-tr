@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 087f6c3ce0cbde32bd06a614e562c3d36fc86888
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a064e5076c9970ed827119923c8f232dfdc85e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867637"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Bir kesme noktası istek için bir kesme noktası konumu türünü belirtir.  
@@ -28,7 +25,7 @@ Bir kesme noktası istek için bir kesme noktası konumu türünü belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_BP_LOCATION_TYPE {   
+enum enum_BP_LOCATION_TYPE {   
    BPLT_NONE               = 0x00000000,  
    BPLT_FILE_LINE          = 0x00010000,  
    BPLT_FUNC_OFFSET        = 0x00020000,  
@@ -49,7 +46,7 @@ typedef DWORD BP_LOCATION_TYPE;
 ```  
   
 ```csharp  
-public enum enum_BP_LOCATION_TYPE {   
+public enum enum_BP_LOCATION_TYPE {   
    BPLT_NONE               = 0x00000000,  
    BPLT_FILE_LINE          = 0x00010000,  
    BPLT_FUNC_OFFSET        = 0x00020000,  
@@ -124,7 +121,7 @@ public enum enum_BP_LOCATION_TYPE {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,8 +1,6 @@
 ---
 title: Yönetilen nesnelerin özel görünümlerini oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 389deb0b6504ca5c7a3716399429f176e5dc7870
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861442"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Yönetilen nesnelerin özel görünümlerini oluşturma
 Visual Studio hata ayıklayıcı değişken pencerelerinde veri türleri görüntüleme biçimini özelleştirebilirsiniz.  
@@ -41,7 +39,7 @@ Visual Studio hata ayıklayıcı değişken pencerelerinde veri türleri görün
  İçinde [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kod, Visual Basic DebuggerBrowsable özniteliği desteklemiyor. Bu sınırlama, .NET Framework'ün daha yeni sürümlerde kaldırılmıştır.  
   
 ## <a name="visualizers"></a>Görselleştiriciler  
- Herhangi bir yönetilen veri türü görüntülenecek Görselleştirici yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Görselleştirici yazma](../debugger/how-to-write-a-visualizer.md).  
+ Herhangi bir yönetilen veri türü görüntülenecek Görselleştirici yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Görselleştirici yazma](/visualstudio/debugger/create-custom-visualizers-of-data).  
   
 ## <a name="native-code"></a>Yerel kod  
  Yerel kod için özel veri türü genişletmeleri, Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger dizininde bulunan dosya autoexp.dat ekleyebilirsiniz. Yazma yönergeler `autoexp` kuralları dosyasında bulunur.  
@@ -49,7 +47,7 @@ Visual Studio hata ayıklayıcı değişken pencerelerinde veri türleri görün
 > [!CAUTION]
 >  Bu dosya yapısını ve söz dizimi autoexp kurallarının bir Visual Studio sürümünden sonraki değişebilir.  
   
- Yerel tür görünümleri, bir ifade değerlendirici eklenti yazarak da özelleştirilebilir. Daha fazla bilgi için [EEAddIn örnek: hata ayıklama ifade değerlendirici eklenti](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Yerel tür görünümleri, bir ifade değerlendirici eklenti yazarak da özelleştirilebilir. Daha fazla bilgi için [EEAddIn örnek: Hata ayıklama ifade değerlendirici eklenti](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DebuggerTypeProxy özniteliğini kullanma](../debugger/using-debuggertypeproxy-attribute.md)   

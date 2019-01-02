@@ -1,6 +1,5 @@
 ---
-title: 'Nasıl yapılır: bir zaman uyumsuz Visual Studio hizmeti sağlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir zaman uyumsuz Visual Studio hizmeti sağlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5508490bfd16a3850f6ffee8d0d45d0cced4aae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857834"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl yapılır: zaman uyumsuz bir Visual Studio hizmeti sağlama
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Nasıl Yapılır: Zaman uyumsuz bir Visual Studio hizmeti sağlama
 UI iş parçacığını engellemeden bir hizmet elde etmek istiyorsanız, zaman uyumsuz bir hizmet oluşturma ve arka plan iş parçacığında paketi gerekir. Bu amaçla kullanabileceğiniz bir <xref:Microsoft.VisualStudio.Shell.AsyncPackage> yerine <xref:Microsoft.VisualStudio.Shell.Package>ve hizmeti ile özel zaman uyumsuz yöntemler zaman uyumsuz paketin ekleyin.
   
- Zaman uyumlu Visual Studio hizmetleri sağlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir hizmet sağlamak](../extensibility/how-to-provide-a-service.md).  
+ Zaman uyumlu Visual Studio hizmetleri sağlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir hizmetin](../extensibility/how-to-provide-a-service.md).  
   
 ## <a name="implement-an-asynchronous-service"></a>Zaman uyumsuz bir hizmet ekleme  
   

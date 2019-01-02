@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873521"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Yapay ZEKA proje Visual Studio'da Azure Machine Learning Galerisi oluşturma
 
@@ -42,13 +41,13 @@ Kaydederler [yapay ZEKA için Visual Studio Araçları yüklü](installation.md)
 
 4. Bu hızlı başlangıçta seçin "**TensorFlow kullanarak MNIST**" örnek ve tıklayın **yükleme**. Aşağıdakileri sağlar:
 
-   - **Kaynak grubu**: meta verilerinizi depolanacağı Azure kaynak grubu
+   - **Kaynak grubu**: Meta verilerinizi depolanacağı azure kaynak grubu
    - **Hesap**: Azure Machine Learning denemesi hesabı
    - **Çalışma alanı**: Azure Machine Learning çalışma alanı
    - **Proje türü**: Makine öğrenmesi çerçeveleri. Bu durumda seçin **TensorFlow**
    - **Çözüme eklemek**: geçerli Visual Studio çözümünüzü veya bir oluşturma eklemek ve yeni bir çözüm açın belirler
-   - **Proje yolu**: kod kaydetmek için konum
-   - **Proje adı**: türü **TensorFlowMNIST**
+   - **Proje yolu**: Kod kaydetmek için konum
+   - **Proje adı**: Tür **TensorFlowMNIST**
 
    ![Python uygulaması şablonu kullanılarak elde edilen proje](media/create-project-gallery/new-AzureSampleProject.png)
 

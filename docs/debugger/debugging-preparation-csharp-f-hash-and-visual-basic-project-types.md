@@ -2,7 +2,6 @@
 title: Hata ayıklama hazırlanma C#, F#ve VB projeleri | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866887"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Hata Ayıklama Hazırlığı: C#, F# ve Visual Basic Proje Türleri
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Hata ayıklama hazırlığı: C#, F# ve Visual Basic Proje Türleri
 Bu bölümdeki konular, hata ayıklama açıklayan C#, F#, ve [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proje tarafından oluşturulan türleri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonları.  
   
  Proje türlerine çıktılarını DLL'leri oluşturma halinde gruplandırılır Not [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) paylaştıkları genel özellikleri nedeniyle.  

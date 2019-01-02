@@ -1,9 +1,6 @@
 ---
 title: InfoPath çözümleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864953"
 ---
 # <a name="infopath-solutions"></a>InfoPath çözümleri
   Visual Studio, Microsoft Office InfoPath 2013 ve InfoPath 2010 için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. InfoPath Office 2016'da kullanılamıyor.  
@@ -70,5 +67,3 @@ ms.locfileid: "50670864"
  [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)   
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [InfoPath 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199012)  
-  
-  

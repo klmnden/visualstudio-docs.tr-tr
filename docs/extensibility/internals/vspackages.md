@@ -1,9 +1,6 @@
 ---
-title: VSPackages | Microsoft Docs
-ms.custom: ''
+title: VSPackage'ları | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ba75f9b5f8ca4bea8dc2dc2de9ed04d544acce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98ed051c9f98d481d3816ce5c4bcc2f621d42e86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886854"
 ---
-# <a name="vspackages"></a>VSPackages
-VSPackages genişleten yazılım modülleri olan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcı Arabirimi öğeleri, hizmetleri, projeler, düzenleyiciler ve tasarımcıları sağlayarak Tümleşik geliştirme ortamı (IDE).  
+# <a name="vspackages"></a>VSPackage’lar
+VSPackage genişleten yazılım modülleri olan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI öğeleri, hizmetleri, projeler, düzenleyiciler ve tasarımcılar sağlayarak Tümleşik geliştirme ortamı (IDE).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [VS Kabuğuna VSPackage Dosya Konumunu Belirtme](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Visual Studio Kabuğu VSPackage konumunu belirtmek açıklanmaktadır.  
+ Visual Studio Kabuğu VSPackage konumu belirtmek açıklanmaktadır.  
   
  [VSPackage’lardaki Kaynaklar](../../extensibility/internals/resources-in-vspackages.md)  
- VSPackages de kaynaklarının nasıl yönetileceği açıklanmaktadır.  
+ Vspackage'lardaki kaynaklar yönetileceği açıklanmaktadır.  
   
  [VSPackage’larda Güvenlik için En İyi Yöntemler](../../extensibility/internals/best-practices-for-security-in-vspackages.md)  
  Güvenlik açıklarını anlayarak daha güvenli ürünler oluşturmanıza yardımcı olur.  

@@ -1,9 +1,6 @@
 ---
 title: SccGet işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGet
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3955905252b2293d3c200640ea33d5c23c8fd208
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 089b0f56292dfdeb56eb770a5cec5abf6c0d6b82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869420"
 ---
 # <a name="sccget-function"></a>SccGet işlevi
 Bu işlev, bir veya daha fazla dosyaları görüntülemek ve derleme ancak düzenleme için bir kopyasını alır. Çoğu sistemde, dosyaları salt okunur olarak etiketlenir.  

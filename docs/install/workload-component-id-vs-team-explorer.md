@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 694085412a674731934ac75d62bd2c904e3c7176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860224"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Takım Gezgini 2017 bileşen dizini
 
@@ -36,15 +35,15 @@ Ayrıca sayfa hakkında aşağıdakileri unutmayın:
 * Kullanmayı tercih ederseniz de yükleyebilirsiniz **önerilen** ve **isteğe bağlı** bileşenleri.
 * Her türlü iş yükü ile bağlı olmayan ek bileşenleri listeleyen bir bölüm de ekledik.
 
-VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için bkz [nasıl yapılır: Visual Studio 2017'ye geçirme genişletilebilirlik projeleri](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
+VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
 
 Bu kimliklerinin kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası. Ve iş yükü ve Bileşen kimlikleri diğer ürünlere yönelik bir listesi için bkz. [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>(Visual Studio Takım Gezgini 2017 ile dahil) visual Studio temel Düzenleyicisi
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Açıklama:** söz dizimine duyarlı kod düzenleme, dahil olmak üzere Visual Studio temel Kabuk deneyimi, kaynak kodu denetimi ve iş öğesi yönetimi.
+**Açıklama:** Visual Studio söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi de dahil olmak üzere, temel Kabuk deneyimi ve iş öğesi yönetimi.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 

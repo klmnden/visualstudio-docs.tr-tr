@@ -2,7 +2,6 @@
 title: Bir .NET Framework sürümünü hedefleme
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -12,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860172"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl yapılır: .NET Framework sürümü hedefleme
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl Yapılır: .NET Framework’ün bir sürümünü hedefleme
 
 Bu belge, bir sürümünü hedefleyecek şekilde açıklar varolan bir Visual Basic içinde hedeflenen sürümün nasıl değiştirileceğini ve bir proje oluşturduğunuzda, .NET Framework'ün C#, veya Visual F# proje.
 
 > [!IMPORTANT]
-> C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef framework ve platform araç takımını değiştirmek](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef framework ve platform araç takımını değiştirmek](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Projenizi oluştururken bir sürümü hedeflemek için
 
@@ -46,7 +45,7 @@ Bir proje oluşturduğunuzda, kullanılabilir .NET Framework sürümlerinin hang
 
 Visual Basic'te .NET Framework'ün hedeflenen sürümünü değiştirebilirsiniz C#, veya Visual F# bu yordamı izleyerek proje.
 
-C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef framework ve platform araç takımını değiştirmek](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef framework ve platform araç takımını değiştirmek](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. İçinde **Çözüm Gezgini**, değiştirin ve ardından istediğiniz projenin kısayol menüsünü **özellikleri**.
 
@@ -74,4 +73,4 @@ C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi içi
 - [.NET Framework hedefleme hatalarının sorunlarını giderme](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
 - [Uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Nasıl yapılır: hedef framework ve platform araç takımını (C++) değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Nasıl yapılır: Hedef framework ve platform araç takımını (C++) değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

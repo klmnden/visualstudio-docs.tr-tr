@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointUnboundEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e9b08c05fb9f89e0caf3f12be4337bfe3a9827
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fc45b8044ec0c7b4dc4dbda4c3b9002f0a8043b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857536"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
-Bu arabirim oturum hata ayıklama Yöneticisi'ni (SDM) ilişkili bir kesme noktası yüklenen bir programdan ilişkisiz olduğunu bildirir.  
+Bu arabirim, ilişkili bir kesme noktası yüklü bir programdan ilişkisiz aktarıldığından emin oturum hata ayıklama Yöneticisi (SDM) bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,26 +29,26 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE), kesme noktaları desteğini bir parçası olarak bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirimi uygulanan, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi).  
+ Hata ayıklama altyapısı (DE), kesme noktaları desteğini bir parçası olarak bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi).  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Aygıtların oluşturur ve ilişkili bir kesme noktası ilişkisiz olduğunda bu olay nesnesi gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanacak programın eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
+ DE oluşturur ve bu olay nesnesiyle ilişkili bir kesme noktası ilişkisiz olduğunda gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugBreakpointUnboundEvent2`.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|İlişkisiz hale geldi kesme noktası alır.|  
+|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Bağlanmamış hale geldi kesme noktası alır.|  
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Kesme noktası ilişkisiz nedenini alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Hata ayıklama altyapısı DLL veya sınıf bellekten kaldırıldığında bu modül koduna bağlı olan tüm kesme noktaları ayıklanacak programdan ilişkisiz olması gerekir. Bir `IDebugBreakpointUnboundEvent2` her ilişkisiz kesme için gönderilir.  
+ Hata ayıklama altyapısı DLL veya sınıf kaldırdığında, bu modül koduna bağlı olan tüm kesme noktalarını ayıklanan programın ilişkisiz olması gerekir. Bir `IDebugBreakpointUnboundEvent2` her ilişkisiz bir kesme noktası için gönderilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

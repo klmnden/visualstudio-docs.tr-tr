@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f5e6ceefbff4702d509c18b4a555287a1e9f42
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 94e052865c94d747bcb36cd81e0b1c023262b0c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875160"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Hızlandırıcı işaretçi etiket sayısı C++ AMP saplama işlevinde döndürür.  
+Hızlandırıcı işaretçi etiket sayısı, bir C++ AMP saplama işlevde döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,13 +29,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Parametreler  
  `count`  
- [out] Bir işaretçi bir `DWORD` bir C++ AMP saplama işlev işaretçisi etiketleri Hızlandırıcı sayısı tutan.  
+ [out] Bir işaretçi bir `DWORD` Hızlandırıcı sayısı bir C++ AMP saplama işlevde işaretçi etiketleri içeren.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem üzerinde çağrılır bir `IDiaSymbol` C++ AMP Hızlandırıcı saplama işleve karşılık gelen arabirim.  
+ Bu yöntem üzerinde çağrılır bir `IDiaSymbol` karşılık gelen bir C++ AMP Hızlandırıcısı saplama işlevi için arabirim.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -3,7 +3,6 @@ title: Python yorumlayıcısı ve ortamınız için bir proje seçin
 description: Anaconda ve sanal ortamlar, belirli bir projeye uygulamak da dahil olmak üzere bir Python ortamı özel olarak seçebilirsiniz.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879364"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Nasıl bir proje için bir Python ortamı seçin
 
@@ -115,7 +114,7 @@ Görüntülenen girişler her zaman doğru olmayabilir ve yüklenmesi veya kald�
 Ayrıca Visual Studio kullanarak şu anda desteklemiyor Not `conda` conda ortamına paketlerini yükleyin. Kullanım `conda` komut satır yerine.
 
 > [!Tip]
-> Paket, kaynak kodu yerel bileşenlerin içerir. burada pip başarısız bir paketi yüklemek için ortak bir durum olduğunda  *\*.pyd* dosyaları. Yüklü Visual Studio gerekli sürümü, bu bileşenlerin pip derlenemiyor. Bu durumda görüntülenen hata iletisi **hata: vcvarsall.bat bulunamıyor**. `easy_install` önceden derlenmiş ikili dosyaları, genellikle indirebildiğini Python'dan eski sürümlerine yönelik bir uygun derleyici indirebilirsiniz [ https://aka.ms/VCPython27 ](https://aka.ms/VCPython27). Daha fazla ayrıntı için ["vcvarsallbat bulmak alınamıyor", sorunlu ile nasıl](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) üzerinde Python araçları ekip blogu.
+> Paket, kaynak kodu yerel bileşenlerin içerir. burada pip başarısız bir paketi yüklemek için ortak bir durum olduğunda  *\*.pyd* dosyaları. Yüklü Visual Studio gerekli sürümü, bu bileşenlerin pip derlenemiyor. Bu durumda görüntülenen hata iletisi **hata: Vcvarsall.bat bulunamıyor**. `easy_install` önceden derlenmiş ikili dosyaları, genellikle indirebildiğini Python'dan eski sürümlerine yönelik bir uygun derleyici indirebilirsiniz [ https://aka.ms/VCPython27 ](https://aka.ms/VCPython27). Daha fazla ayrıntı için ["vcvarsallbat bulmak alınamıyor", sorunlu ile nasıl](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) üzerinde Python araçları ekip blogu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,9 +1,6 @@
 ---
 title: SccGetVersion işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879633"
 ---
-# <a name="sccgetversion-function"></a>SccGetVersion işlevi
-Bu işlev, kaynak denetim eklentisi kaynak denetimi eklentisi tarafından desteklenen API sürümü sayısını alır.  
+# <a name="sccgetversion-function"></a>SccGetVersion İşlevi
+Bu işlev, kaynak denetimi eklentisi tarafından desteklenen kaynak denetimi eklentisi API sürüm numarasını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,15 +32,15 @@ LONG SccGetVersion(void);
  Yok.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- A `LONG` desteklenen kaynak denetim eklentisi API'si sürüm numarasını içeren veri türü:  
+ A `LONG` desteklenen kaynak denetimi eklentisi API sürüm numarasını içeren veri türü:  
   
 |WORD|Açıklama|  
 |----------|-----------------|  
-|HIWORD|Ana sürüm|  
-|LOWORD|Alt sürümü|  
+|GET_Y_LPARAM KULLANIN|Ana sürüm|  
+|GET_X_LPARAM|Alt sürüm|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Örneğin, kaynak denetim eklentisi sürüm 1.3 kaynak denetim eklentisi API destekliyorsa, bu işlev 0x0103 döndürecektir.  
+ Örneğin, bir kaynak denetimi Eklentisi Kaynak Denetimi Eklentisi API sürümü 1.3 destekliyorsa, bu işlev 0x0103 döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API İşlevleri](../extensibility/source-control-plug-in-api-functions.md)

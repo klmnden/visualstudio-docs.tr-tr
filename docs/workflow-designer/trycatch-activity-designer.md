@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - TryCatch etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859009"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch Etkinlik Tasarımcısı
 
@@ -41,7 +40,7 @@ Sağ üst köşesindeki genişletme düğmesine **TryCatch** görmek için tasar
 
 Aşağıdaki tabloda <xref:System.Activities.Statements.TryCatch>özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı belirtir <xref:System.Activities.Statements.TryCatch> etkinlik. TryCatch varsayılandır.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|Etkinlik yürütülmesi ilk <xref:System.Activities.Statements.TryCatch> yürütür.|

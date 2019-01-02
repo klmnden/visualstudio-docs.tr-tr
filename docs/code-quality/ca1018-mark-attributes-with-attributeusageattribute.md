@@ -1,8 +1,7 @@
 ---
-title: 'CA1018: Öznitelikleri AttributeUsageAttribute ile işaretleyin'
+title: 'CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1018
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a54dd39746364d6908f440ac77d7a2b8bbfdbcf6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0f88185882d8cddaf81caf95e2871918553b8eaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881993"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Öznitelikleri AttributeUsageAttribute ile işaretleyin
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "45547626"
  İleti hariç yerine bu kural ihlalini düzeltmek. Inherits özniteliği bile <xref:System.AttributeUsageAttribute>, öznitelik kod bakımı basitleştirmek için mevcut olmalıdır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, iki öznitelikleri tanımlar. `BadCodeMaintainerAttribute` yanlış atlar <xref:System.AttributeUsageAttribute> deyimi ve `GoodCodeMaintainerAttribute` doğru Bu bölümde daha önce açıklanan özniteliğini uygular. Unutmayın özelliği `DeveloperName` tasarım kuralı tarafından gerekli [CA1019: öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) ve bütünlük açısından dahil edilmiştir.
+ Aşağıdaki örnek, iki öznitelikleri tanımlar. `BadCodeMaintainerAttribute` yanlış atlar <xref:System.AttributeUsageAttribute> deyimi ve `GoodCodeMaintainerAttribute` doğru Bu bölümde daha önce açıklanan özniteliğini uygular. Unutmayın özelliği `DeveloperName` tasarım kuralı tarafından gerekli [CA1019: Öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) ve bütünlük açısından dahil edilmiştir.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]

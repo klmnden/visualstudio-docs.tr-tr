@@ -1,8 +1,6 @@
 ---
-title: 'Hata: RPC kimlik doğrulaması gerektiriyor. | Microsoft Docs'
-ms.custom: ''
+title: 'Hata: RPC kimlik doğrulaması gerektiriyor | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.rpc_requires_authentication
@@ -16,22 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 214dafa5acc925434cf3569570f20ab7f3331bfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 66f319ba24a52a99994e693774aa9e7c0db7757e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874413"
 ---
-# <a name="error-rpc-requires-authentication"></a>Hata: RPC Kimlik Doğrulaması Gerektiriyor
-Visual Studio hata ayıklayıcısı uzak bilgisayara bağlanamıyor. Uzaktan hata ayıklama önleyen yerel bilgisayarda bir RPC ilkesi etkindir.  
+# <a name="error-rpc-requires-authentication"></a>Hata: RPC kimlik doğrulaması gerektiriyor
+Visual Studio hata ayıklayıcı uzak bilgisayara bağlanamıyor. Yerel bilgisayarda uzaktan hata ayıklamayı engelleyen bir RPC ilkesi etkin.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
 1.  Çalıştırma `\` *windir*`\system32\regedt32.exe`  
   
-2.  Bulup silin `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
+2.  Bulun ve Sil `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
 3.  Kayıt defteri değişikliği etkili şekilde bilgisayarınızı yeniden başlatın.  
   
-4.  Sorun devam ederse, ilgili etki alanı yöneticinize başvurun **bilgisayar yapılandırması > Yönetim Şablonları > Sistem > uzak yordam çağrısı > kısıtlamaları kimliği doğrulanmamış RPC istemcileri için** Grup İlkesi ayar.
+4.  Sorun devam ederse, ilgili etki alanı yöneticinizle iletişime **bilgisayar yapılandırması > Yönetim Şablonları > Sistem > uzak yordam çağrısı > kimliği doğrulanmamış RPC istemciler için kısıtlamaları** Grup İlkesi ayar.

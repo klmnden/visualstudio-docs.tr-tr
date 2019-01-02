@@ -2,7 +2,6 @@
 title: Kod parçacıkları şema başvurusu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864724"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
@@ -271,7 +270,7 @@ IntelliSense Kod Parçacığı hakkında genel bilgileri belirtir.
 |-------------------|-----------------|
 |[Author öğesi](../ide/code-snippets-schema-reference.md#author-element)|İsteğe bağlı öğe. Kod parçacığını yazan kişinin veya şirketin adı. Sıfır veya bir olabilir `Author` öğelerinde bir `Header` öğesi.|
 |[Description öğesi](../ide/code-snippets-schema-reference.md#description-element)|İsteğe bağlı öğe. Kod parçacığının açıklaması. Sıfır veya bir olabilir `Description` öğelerinde bir `Header` öğesi.|
-|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl-element)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` bir Header öğesinde öğeleri. **Not:** Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|
+|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl-element)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` bir Header öğesinde öğeleri. **Not:**  Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|
 |[Keywords öğesi](../ide/code-snippets-schema-reference.md#keywords-element)|İsteğe bağlı öğe. Grupları `Keyword` öğeleri. Sıfır veya bir olabilir `Keywords` öğelerinde bir `Header` öğesi.|
 |[Shortcut öğesi](../ide/code-snippets-schema-reference.md#shortcut-element)|İsteğe bağlı öğe. Kod parçacığını eklemek için kullanılabilecek kısayol metnini belirtir. Sıfır veya bir olabilir `Shortcut` öğelerinde bir `Header` öğesi.|
 |[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes-element)|İsteğe bağlı öğe. Grupları `SnippetType` öğeleri. Sıfır veya bir olabilir `SnippetTypes` öğelerinde bir `Header` öğesi. Varsa hiçbir `SnippetTypes` öğeleri, kod parçacığı her zaman geçerli.|
@@ -666,4 +665,4 @@ Bir metin değeri gereklidir. Bu metin, başvurulan derleme hakkında daha fazla
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kod parçacıkları](../ide/code-snippets.md)
-- [İzlenecek Yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
+- [İzlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)

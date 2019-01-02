@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fbc1baa66dc98b2c5eec27c2a86e0fde3c5e967
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd16a9443cbfd612b30872e8850a9f1b00d09108
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866809"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama
   Bu yönerge, Microsoft Office Excel eylemler bölmesindeki denetimlere veri bağlama gösterir. Bir SQL Server veritabanındaki tablolar arasında bir ana/ayrıntı ilişkisi denetimleri gösterir.  
@@ -61,7 +58,7 @@ ms.locfileid: "49942653"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Adlı bir Excel çalışma kitabı projesi oluşturun **My Excel eylemler bölmesindeki**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adlı bir Excel çalışma kitabı projesi oluşturun **My Excel eylemler bölmesindeki**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **My Excel eylemler bölmesindeki** için proje **Çözüm Gezgini**.  
   
@@ -188,7 +185,5 @@ ms.locfileid: "49942653"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
- [Nasıl yapılır: denetim Eylemler bölmelerindeki Düzen yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

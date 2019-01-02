@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Belge düzeyi projede basit veri bağlama'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895499"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede basit veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede veri bağlama ilişkin temel bilgileri gösterir. Bir SQL Server veritabanı bir tek veri alanında Microsoft Office Excel adlandırılmış aralıkta bağlıdır. İzlenecek yol, ayrıca tablodaki tüm kayıtları arasında kaydırma olanak tanıyan denetimlerin nasıl ekleneceğini gösterir.  
@@ -57,7 +54,7 @@ ms.locfileid: "49824386"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1. Adlı bir Excel çalışma kitabı projesi oluşturun **basit veri bağlaması**, Visual Basic kullanarak veya C#. Emin olun **yeni belge oluşturma** seçilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Adlı bir Excel çalışma kitabı projesi oluşturun **basit veri bağlaması**, Visual Basic kullanarak veya C#. Emin olun **yeni belge oluşturma** seçilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **basit veri bağlaması** için proje **Çözüm Gezgini**.  
   
@@ -188,9 +185,9 @@ ms.locfileid: "49824386"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bu izlenecek yol, bir veritabanında bir alan için bir adlandırılmış aralık bağlama hakkındaki temel bilgileri gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:  
   
--   Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Bir tabloda birden fazla sütuna hücreler yerine bir alan bağlayın. Daha fazla bilgi için [izlenecek yol: belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Bir tabloda birden fazla sütuna hücreler yerine bir alan bağlayın. Daha fazla bilgi için [izlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
 -   Kullanım bir <xref:System.Windows.Forms.BindingNavigator> denetimi kayıtlarda gezinin. Daha fazla bilgi için [nasıl yapılır: Windows Forms BindingNavigator denetimi ile verilerde gezinme](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
@@ -198,5 +195,3 @@ ms.locfileid: "49824386"
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
  [İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

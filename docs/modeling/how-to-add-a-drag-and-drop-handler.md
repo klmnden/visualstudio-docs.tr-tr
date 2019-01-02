@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme'
+title: 'Nasıl Yapılır: Sürükle ve Bırak İşleyicisi Ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876399"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl Yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 
 Sürükle ve bırak olayları için işleyiciler DSL'nizi için ekleyebilirsiniz, böylece kullanıcılar öğeleri, diyagram üzerine diğer diyagramlardan veya Visual Studio'nun diğer kısımlarından sürükleyebilirsiniz. Olayları gibi çift tıklamaları birbirinden ayırma için de işleyicileri ekleyebilirsiniz. Sürükle ve bırak ve çift işleyicileri olarak birlikte bilinen *hareket işleyicileri*.
 
@@ -322,7 +321,7 @@ Bir DSL öğesi sürüklenen öğe ise kaynak modeli açmak ve öğesine erişme
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Fare eylemleri kullanarak: Bölme öğeleri sürükleme
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Farenizi kullanarak: Bölme öğeleri sürükleme
 
 Bir şeklin alanlarda fare işlemlerini durdurur bir işleyici yazabilirsiniz. Aşağıdaki örnek, kullanıcının fare ile sürükleyerek bir bölme öğeleri yeniden sıralamak olanak tanır.
 

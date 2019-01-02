@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd490d15d5dc1760222446a1ae507d0e764c73f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870541"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -36,7 +35,7 @@ Erişim **InvokeDelegate** etkinlik Tasarımcısı'nda **Temelleri** kategorisi 
 
 Aşağıdaki tabloda <xref:System.Activities.Statements.InvokeDelegate> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzunda düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.InvokeDelegate> etkinlik. InvokeDelegate varsayılan değerdir.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak en iyisidir.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Doğru|Adını <xref:System.Activities.ActivityDelegate> etkinlik yürütüldüğünde çağrılabilir. Bu özellik, Tasarımcı yüzeyinde düzenlenebilir ve zorunludur.|
@@ -44,4 +43,4 @@ Aşağıdaki tabloda <xref:System.Activities.Statements.InvokeDelegate> özellik
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: İş Akışı Tasarımcısında etkinlik temsilcileri tanımlama ve kullanma](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Nasıl yapılır: Tanımlama ve iş akışı tasarımcısında etkinlik temsilcileri kullanma](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

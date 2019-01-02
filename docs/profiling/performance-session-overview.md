@@ -1,8 +1,6 @@
 ---
 title: Performans oturumuna genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867179"
 ---
 # <a name="performance-session-overview"></a>Performans oturumuna genel bakış
 Bu genel bakışta profil oluşturma hakkındaki temel bilgileri açıklar. Performans çalışmaya yeni başladığınız geliştiriciler görürsünüz nasıl [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları bunları hızlı bir şekilde üretken ve kodlarını performansını artırmaya yardımcı olabilir. Profil oluşturma deneyimli geliştiriciler, belirli bir profil oluşturma araçları özellikleri ve süreçleri hakkında genel bir bakış elde edebilirsiniz.  
@@ -77,4 +75,4 @@ Bu genel bakışta profil oluşturma hakkındaki temel bilgileri açıklar. Perf
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
- [İzlenecek yol: Performans sorunlarını tanımlama](../profiling/walkthrough-identifying-performance-problems.md)
+ [İzlenecek yol: Performans sorunlarını belirleme](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

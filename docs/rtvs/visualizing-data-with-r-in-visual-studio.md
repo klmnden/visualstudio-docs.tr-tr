@@ -1,93 +1,92 @@
 ---
-title: R ile verileri Görselleştirme
-description: Visual Studio'da çizim windows kullanarak, R programlarından verileri çizmek nasıl.
+title: R ile verileri görselleştirmeyi
+description: R çizim windows kullanarak Visual Studio programlarında verilerden çizim yapma.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859087"
 ---
-# <a name="create-visual-data-plots-with-r"></a>Görsel veri çizimleri R ile oluşturma
+# <a name="create-visual-data-plots-with-r"></a>Görsel verileri çizimleri R ile oluşturma
 
-Çizim, bir veri Bilimcisi'nın iş akışı anahtar bir parçasıdır. R araçları için Visual Studio (RTVS)'da, tüm çizim etkinlik bu anahtar etkinlik verimliliğinizi artırmak için tasarlanmış bir veya daha fazla çizim windows çevresinde toplanır.
+Çizim, veri Uzmanı'nın iş akışı önemli bir parçasıdır. R araçları için Visual Studio (RTVS), tüm çizim etkinlik bu anahtar etkinlik verimliliğinizi artırmaya yönelik bir veya daha fazla çizim windows etrafında ortalar.
 
-![Kahramanı görüntü çizme](media/plotting-hero-image.png)
+![Hero görüntüsü çizme](media/plotting-hero-image.png)
 
 |   |   |
 |---|---|
-| ![video kamera simgesine film](../install/media/video-icon.png "bir videoyu izleyin") | [(Youtube.com) bir video izlemek](https://www.youtube.com/watch?v=ZTbKmz5RSgY) (2 m 02s) R ile Çizdirmek üzerinde. |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Youtube.com) videoyu](https://www.youtube.com/watch?v=ZTbKmz5RSgY) R (2 dk. 02s) ile çizim üzerinde. |
 
 ## <a name="the-plot-window"></a>Çizim penceresi
 
-Çizimler, burada her çizim tarafından oluşturulur bir dizi bir çizim penceresi tutan bir `plot` komutu. Örneğin, kullanarak `plot(1:100)` bir zaten mevcut değilse yeni bir çizim penceresi oluşturur:
+Çizimler, burada her bir çizim oluşturulur tarafından bir dizi bir çizim penceresi tutan bir `plot` komutu. Örneğin, kullanarak `plot(1:100)` biri zaten mevcut değilse yeni bir çizim penceresi oluşturur:
 
-![1 ile 100 doğrusal çizim](media/plotting-1-to-100.png)
+![1 ile 100 arası doğrusal çizimi](media/plotting-1-to-100.png)
 
-Teknik olarak konuşarak, R `plot` komutları işleme çıktılarını bir R grafik cihazına; bir çizim penceresi her çizim penceresi aygıt numarası verilen neden olan bir R grafik cihaz içeriğini oluşturur.
+Teknik terimlerle açıklamak gerekirse, R `plot` komutları işlemek çıktılarını bir R grafik cihazına; bir çizim penceresi her çizim pencere cihaz birkaç verilen neden olduğu bir R grafik cihazı içeriğini işler.
 
-Çizim windows Visual Studio projeleri bağımsızdır ve yük ve projeleri kapatın gibi açık kalır.
+Çizim windows Visual Studio projelerinde bağımsızdır ve açık kalır, yük ve projeleri kapatın.
 
-Bir çizim oluşturma kullanır "active" çizim penceresinde herhangi önceki kaydetme çizim, çizim geçmişi (bkz [çizim geçmişi](#plot-history)). Örneğin, `plot(100:1)` ve ilk çizim aşağıya doğru satır ile değiştirilir.
+Bir çizim oluşturma kullanır "etkin" bir çizim penceresinde önceki herhangi bir kaydetme çizim, çizim geçmişi (bkz [çizim geçmişi](#plot-history)). Örneğin, `plot(100:1)` ve ilk çizim aşağıya bir satır ile değiştirilir.
 
-Diğer tüm Visual Studio windows gibi. Özel düzenler çizim penceresi destekler (bkz [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md). Çizim windows Visual Studio çerçevesinde farklı konumlarda yerleşik, o çerçevesinde yeniden boyutlandırılmış veya tamamen bağımsız yeniden boyutlandırma için çerçeve dışında çekilen. 
+Diğer tüm Visual Studio windows gibi. Özel düzenler çizim pencereyi destekler (bkz [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md). Çizim windows Visual Studio çerçeve içinde farklı konumlara yerleştirilmiş, çerçeveye yeniden boyutlandırılmış veya tamamen bağımsız bir yeniden boyutlandırma için çerçevenin dışında çekilir. 
 
-Bir çizim penceresi her zaman yeniden boyutlandırma en iyi kalite görüntü sağlamak için çizim yeniden oluşturur. Tipik olarak bir çizim çizim bir dosyaya veya bir sonraki bölümde açıklanan komutları kullanarak Pano dışarı aktarmadan önce yeniden boyutlandırma istersiniz.
+Her zaman bir çizim penceresi yeniden boyutlandırma çizim en iyi kalite görüntü sağlamak üzere yeniden işler. Genellikle, bir çizim, çizim bir dosyaya veya sonraki bölümde açıklanan komutları kullanarak Pano dışarı aktarmadan önce yeniden boyutlandırmak istediğiniz.
 
 ## <a name="plot-window-commands"></a>Çizim penceresi komutları
 
-Çizim pencerenin araç çoğunu aracılığıyla da uygulanabilir komutların tutan **R Araçları** > **çizimleri** menüsü.
+Çizim pencerenin araç çoğunu aracılığıyla da uygulanabilir komutları tutan **R Araçları** > **çizimleri** menüsü.
 
 | Düğme | Komut | Açıklama | 
 | --- | --- | --- |
-| ![Yeni çizim penceresi düğmesi](media/plotting-toolbar-01-new-plot-window.png) | Yeni bir çizim penceresi | Ayrı çizim pencere kendi geçmişi ile oluşturur. Bkz: [birden çok çizim windows](#multiple-plot-windows). |
-| ![Çizim penceresi düğmesini etkinleştirin](media/plotting-toolbar-02-activate-plot-window.png) | Çizim pencereyi etkinleştir | Etkin pencereyi, bu nedenle bu sonraki geçerli çizim penceresi ayarlar `plot` komutları pencereye işlenir. Bkz: [birden çok çizim windows](#multiple-plot-windows). Bkz: [birden çok çizim windows](#multiple-plot-windows). |
-| ![Çizim Geçmişi penceresini düğmesi](media/plotting-toolbar-03-plot-history.png) | Çizim Geçmiş penceresi | Küçük resim olarak gösterilen geçmişinde tüm çizimleri ile bir pencere açılır. Bkz: [çizim geçmişi](#plot-history). |
-| ![Çizim geçmişi düğmeleri](media/plotting-toolbar-04-plot-history-arrows.png) | Önceki/sonraki çizim |  Önceki veya sonraki çizim geçmişinde gider. Ctrl + Alt + F11 (önceki) ve Ctrl + Alt + F12 (İleri) geçmişini de gidebilirsiniz. Bkz: [çizim geçmişi](#plot-history). |
-| ![Görüntü Farklı Kaydet düğmesi](media/plotting-toolbar-05-save-as-image.png)| Resim olarak Kaydet | İçin bir dosya adı ister ve geçerli çizim (penceresi içeriği, pencere boyutunu) bir görüntü dosyasına kaydeder. Kullanılabilir biçimleri `.png`, `.jpg`, `.bmp`, ve `.tif`. |
-| ![PDF Farklı Kaydet düğmesi](media/plotting-toolbar-06-save-as-pdf.png)| PDF olarak Kaydet | Geçerli çizim geçerli pencere boyutunu kullanarak bir PDF dosyasına kaydeder. PDF ölçeklendirilir varsa çizim yeniden oluşturmaz. |
-| ![Bit eşlem düğmesi olarak Kopyala](media/plotting-toolbar-07-copy-as-bitmap.png)| Bit eşlem olarak Kopyala | Çizim panoya geçerli pencere boyutunu kullanarak bir ızgara bitmap olarak kopyalar. | 
-| ![Meta dosyası düğmesi olarak Kopyala](media/plotting-toolbar-08-copy-as-metafile.png)| Meta dosyası olarak Kopyala | Panoya olarak çizim kopyalar bir [Windows Meta dosyası](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
-| ![Çizim düğmesini Kaldır](media/plotting-toolbar-09-remove-plot.png)| Çizim Kaldır | Geçerli çizim geçmişinden kaldırır. |
-| ![Temizle tüm çizimleri düğmesi](media/plotting-toolbar-10-clear-all-plots.png) | Tüm çizimleri temizleyin | Tüm çizimleri geçmişi (onay ister) kaldırır. |
+| ![Yeni bir çizim penceresi düğmesi](media/plotting-toolbar-01-new-plot-window.png) | Yeni bir çizim penceresi | Ayrı çizim penceresi ile kendi geçmişini oluşturur. Bkz: [birden çok çizim windows](#multiple-plot-windows). |
+| ![Çizim penceresi düğmeyi etkinleştirin](media/plotting-toolbar-02-activate-plot-window.png) | Çizim penceresini etkinleştir | Etkin pencereyi, bu nedenle, sonraki geçerli çizim pencerenin ayarlar `plot` komutları pencereye işlenir. Bkz: [birden çok çizim windows](#multiple-plot-windows). Bkz: [birden çok çizim windows](#multiple-plot-windows). |
+| ![Çizim Geçmişi penceresini düğmesi](media/plotting-toolbar-03-plot-history.png) | Geçmiş penceresinde Çiz | Küçük resim olarak gösterilen geçmişinde bulunan tüm çizimleri ile bir pencere açılır. Bkz: [çizim geçmişi](#plot-history). |
+| ![Geçmişi düğmeleri çizilecek](media/plotting-toolbar-04-plot-history-arrows.png) | Önceki/sonraki çizim |  Önceki veya sonraki çizim geçmişi gider. Ctrl + Alt + F11 (önceki) ve Ctrl + Alt + F12 (İleri) ile geçmiş da gidebilirsiniz. Bkz: [çizim geçmişi](#plot-history). |
+| ![Görüntüyü düğme olarak Kaydet](media/plotting-toolbar-05-save-as-image.png)| Görüntü olarak Kaydet | Bir dosya adı için ister ve geçerli çizim (penceresi içeriği, pencere boyutu) bir görüntü dosyasına kaydeder. Kullanılabilir biçimler `.png`, `.jpg`, `.bmp`, ve `.tif`. |
+| ![PDF düğme olarak Kaydet](media/plotting-toolbar-06-save-as-pdf.png)| PDF olarak Kaydet | Geçerli pencere boyutunu kullanarak bir PDF dosyası için geçerli çizim kaydeder. PDF ölçeklendirilirse çizim yeniden işlenir. |
+| ![Bit eşlem düğmesi olarak Kopyala](media/plotting-toolbar-07-copy-as-bitmap.png)| Bit eşlem olarak Kopyala | Çizim, geçerli pencere boyutunu kullanarak bir tarama bit eşlem olarak panoya kopyalar. | 
+| ![Meta dosyası düğme olarak Kopyala](media/plotting-toolbar-08-copy-as-metafile.png)| Meta dosyası olarak Kopyala | Çizim panoya kopyalar bir [Windows Meta dosyası](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Çizim düğmeyi kaldırma](media/plotting-toolbar-09-remove-plot.png)| Odebrat Diagram | Geçerli çizim Geçmişi'nden kaldırır. |
+| ![Tümünü çizimleri Temizle düğmesi](media/plotting-toolbar-10-clear-all-plots.png) | Tüm çizimleri Temizle | Tüm çizimleri (onay istemleri) geçmişini kaldırır. |
 
 ## <a name="multiple-plot-windows"></a>Birden çok çizim windows
 
-Veri bilimcilerine genellikle birçok farklı veri kümelerindeki birçok çizimleri çalışmak için RTVS sayıda bağımsız çizim windows oluşturmanıza olanak sağlar. Visual Studio çerçevesi içinde veya dışında çerçeve tamamen gibi ancak bu windows sonra düzenleyebilirsiniz. (Bkz [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md) yerleştirme ve windows yeniden boyutlandırma hakkında genel bilgi için.)
+Veri bilimcileri genellikle birçok farklı veri kümelerinden birçok çizimleri çalışmak için RTVS olabildiğince çok bağımsız çizim windows oluşturmanıza olanak sağlar. Visual Studio çerçevesinde veya çerçevenin dışında tamamen gibi ancak daha sonra bu windows düzenleyebilirsiniz. (Bkz [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md) yerleştirme ve windows yeniden boyutlandırma ile ilgili genel bilgi için.)
 
-Araç çubuğu düğmesini kullanarak yeni bir çizim penceresi oluşturun veya **R Araçları** > **çizimleri** > **yeni çizim pencere**. Yeni bir çizim penceresi hale *etkin* , burada yeni çizimleri işlendiğini olan penceresinin. Etkin pencereyi değiştirmek için kendisine geçiş yapın ve seçin **çizim penceresi etkinleştirme** araç çubuğu düğmesini veya **R Araçları** > **çizer**  >  **Çizim penceresini etkinleştirmek**.
+Yeni bir çizim penceresi araç çubuğu düğmesini kullanarak oluşturduğunuz veya **R Araçları** > **çizimleri** > **yeni bir çizim pencere**. Yeni bir çizim penceresi olur *etkin* yeni çizimleri nerede işlendiğini olan bir pencere. Etkin pencereyi değiştirmek için ona geçiş yapın ve seçin **çizim penceresini etkinleştir** araç çubuğu düğmesini veya **R Araçları** > **çizer**  >  **Çizim penceresini etkinleştir**.
 
-Çizimler, çok, kopyalama veya bunları çizim windows ya da sürükle ve bırak fareyle veya kullanarak kullanarak arasında taşıma anlamına gelir nesneleri bağımsız olan **kopya**, **Kes**, ve **Yapıştır** sağ bağlam komutlarını ve **Düzenle** menüleri.
+Olan çok, bağımsız nesneler çizimleri, yani kopyalayın veya çizim windows ya da sürükle ve bırak kullanılarak veya fare kullanarak arasında taşıyın **kopyalama**, **Kes**, ve **Yapıştır** sağ bağlam komutları ve **Düzenle** menüleri.
 
-Sürükle ve bırak için varsayılan davranış kopyasıdır; taşımak için sürükle ve tutarken bırak **Shift** anahtarı.
+Kopyalama için sürükle ve bırak varsayılan davranıştır; taşımak için sürükle ve tutarken bırak **Shift** anahtarı.
 
 ## <a name="plot-history"></a>Çizim geçmişi
 
-Çizim komutları tüm, bir oturumda Çizdirmek korunur sağlayarak her pencere için çizim geçmişi korunur. Geçmiş gidin, çizim penceresi araç çubuğunda, ok düğmelerini kullanın veya **Ctrl**+**Alt**+**F11** ve **Ctrl** + **Alt**+**F12**. Ayrıca tek çizimleri kaldırın veya araç çubuğu düğmelerini kullanarak yeniden penceresinden tüm çizimleri temizleyin veya **R Araçları** > **çizer** menü komutları.
+Çizim komutlarını tüm, oturum içindeki çizim korunmasını sağlamak, her bir pencere için bir çizim geçmişi korunur. Git geçmişi, çizim penceresi araç çubuğunda, ok düğmelerini kullanın veya **Ctrl**+**Alt**+**F11** ve **Ctrl** + **Alt**+**F12**. Ayrıca tek çizimleri kaldırın veya tüm çizimleri araç çubuğu düğmeleri kullanarak yeniden penceresinden temizleyin veya **R Araçları** > **çizer** menü komutları.
 
 Çizimler koleksiyonunun tamamını görmek için araç çubuğu düğmesini kullanarak çizim Geçmişi penceresini açın veya **R Araçları** > **çizer** > **çizim Geçmişi penceresini**.
-Geçmiş farklı çizim windows (veya aygıt) göre gruplandırılan bu penceresinde görüntülenen çizimleri için küçük bir listesi verilmektedir. Araç çubuğundaki Yakınlaştır düğmeleri kullanarak küçük resimlerin boyutunu değiştirir.
+Geçmiş farklı çizim windows (veya cihaz) gruplandırılmış Bu pencerede görüntülenen çizimleri için küçük bir listesini sağlar. Araç çubuğundaki Yakınlaştırma düğmelerini kullanarak, küçük resimlerin boyutunu değiştirir.
 
-![Çizim Geçmiş penceresi](media/plotting-plot-history-window.png)
+![Geçmiş penceresinde Çiz](media/plotting-plot-history-window.png)
 
-Bir çizim ilişkili penceresinde açmak için bu çizim çift tıklayın, seçin ve ardından **Göster çizim** araç çubuğu düğmesini veya sağ tıklatın ve seçin **Göster çizim**. Tek bir öğesini de seçebilirsiniz çizim ve kopyalama, kesme veya sağ bağlamdan silin veya **Düzenle** menüleri.
+Bir çizim, ilişkili bir pencerede açmak için bu grafik çift tıklayın, seçin ve ardından **Göster çizim** araç çubuğu düğmesini veya sütuna sağ tıklayıp **Göster çizim**. Bireysel belirleyebilirsiniz çizim ve kopyalama, kesme veya sağ tıklama bağlamdan silme veya **Düzenle** menüleri.
 
-Çizim geçmişinizi tüm pencereleri arasında ömrü etkileşimli R oturumunuz için kullanım ömrü bağlıdır. R oturumunuz sıfırlama veya çıkmak ve Visual Studio'yu yeniden başlatın, çizim geçmişinizi sıfırlanır.
+Tüm windows üzerinde çizim geçmişinizi ömrünü etkileşimli R oturumunuz ömrünü bağlıdır. R oturumunuz sıfırlama veya çıkın ve Visual Studio'yu yeniden başlatın, çizim geçmişinizi sıfırlanır.
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Çizim windows programsal
 
-Çizim windows R kodundan belirli çizim windows belirlemek için cihazın sayılar kullanılarak programlı olarak yönetebilirsiniz. 
+Diagram R kodunu Windows'dan özel çizim windows tanımlamak için cihaz numaralarını kullanarak program aracılığıyla yönetebilirsiniz. 
 
-- `dev.list()`: Tüm grafik aygıtları geçerli R oturumunda listeleyin.
-- `dev.new()`: Yeni bir grafik cihaz (yeni bir çizim pencere) oluşturun.
-- `dev.set(<device number>)`: Etkin grafik aygıtı ayarlayın.
+- `dev.list()`: Tüm grafik aygıtların geçerli R oturumunda listelenmektedir.
+- `dev.new()`: Yeni bir grafik cihazı (yeni bir çizim pencere) oluşturun.
+- `dev.set(<device number>)`: Etkin grafik cihazına ayarlayın.
 - `dev.off()`: Etkin cihaz silin.

@@ -1,8 +1,6 @@
 ---
 title: marker_series sınıfı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e638d9316b46a8600fe2e88ca5e4a6611fa1ec4d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: e8ecc6a14cce80197c1221734aadb4ce7e6758cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869826"
 ---
 # <a name="markerseries-class"></a>marker_series sınıfı
-Tek bir sağlayıcı tarafından oluşturulan olayların seri kanal temsil eder.  
+Tek bir sağlayıcı tarafından oluşturulan olayları seri bir kanalı temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,10 +41,10 @@ class marker_series;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[marker_series::is_enabled yöntemi](../profiling/marker-series-is-enabled-method.md)|Herhangi bir oturumunda sağlayıcısı etkin olmadığını belirler.|  
+|[marker_series::is_enabled yöntemi](../profiling/marker-series-is-enabled-method.md)|Tüm oturum sağlayıcısı etkin olmadığını belirler.|  
 |[marker_series::write_alert yöntemi](../profiling/marker-series-write-alert-method.md)|Bir uyarı eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
-|[marker_series::write_flag yöntemi](../profiling/marker-series-write-flag-method.md)|Bir bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
-|[marker_series::write_message yöntemi](../profiling/marker-series-write-message-method.md)|Eşzamanlılık görselleştiricisi izleme dosyası için bir ileti yazar.|  
+|[marker_series::write_flag yöntemi](../profiling/marker-series-write-flag-method.md)|Bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.|  
+|[marker_series::write_message yöntemi](../profiling/marker-series-write-message-method.md)|Eşzamanlılık görselleştiricisi izleme dosyasının bir ileti yazar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `marker_series`  
@@ -54,7 +52,7 @@ class marker_series;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkersobj.h*  
   
- **Namespace:** Concurrency::diagnostic  
+ **Namespace:** CONCURRENCY::Diagnostic  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Tanılama ad alanı](../profiling/diagnostic-namespace.md)

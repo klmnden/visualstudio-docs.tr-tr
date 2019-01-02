@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: araç için Web.Config dosyalarını değiştirme ve dinamik olarak derlenmiş ASP.NET Web uygulamalarının profilini | Microsoft Docs'
+title: 'Nasıl Yapılır: Gereç için Web.Config dosyalarını değiştirme ve dinamik olarak derlenmiş ASP.NET Web uygulamalarının profilini | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,14 +14,14 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f668bebb2967ca89feb1c6f52f00253ac3eb07b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860734"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: Dinamik Olarak Derlenmiş ASP.NET Web Uygulamalarını İzlemek ve Profilini Oluşturmak için Web.Config Dosyalarını Değiştirme
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl Yapılır: Gereç için Web.Config dosyalarını değiştirme ve profil ASP.NET Web uygulamaları dinamik olarak derlenmiş.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak ayrıntılı zamanlama verileri, .NET bellek ayırma verilerinin ve .NET nesne ömür verilerini toplamak için profil oluşturma araçları izleme metodunu derlenmiş [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamaları.  
@@ -145,7 +145,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
-    |**Anahtarı**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
+    |**anahtar**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.exe**|  
   
 4.  Başka bir **ekleme** öğesi alt öğesi olarak **appSettings** öğesi.  
@@ -154,7 +154,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
-    |**Anahtarı**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
+    |**anahtar**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
     |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` Profil Oluşturucu yürütülebilir dosyalar yoludur. Varsa [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yüklü varsayılan konumunda değer olacaktır **C:\Program Files\Microsoft Visual Studio 10.0\Team Araçlar\Performans araçları**  
@@ -227,8 +227,8 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET Uygulamasın izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Nasıl Yapılır: Dinamik Olarak Derlenmiş Bir ASP.NET Uygulamasını İzleme ve Bellek Verileri Toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Nasıl yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET uygulaması ve toplama ayrıntılı zamanlama verileri](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
+ [Nasıl yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET uygulaması ve bellek verilerini toplamak](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
 
 
 

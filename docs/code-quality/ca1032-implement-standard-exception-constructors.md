@@ -2,7 +2,6 @@
 title: 'CA1032: Standart özel durum oluşturucuları uygulayın'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1032
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6cd6922cae5e2d182a279e2d1637a19f8572468
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881237"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standart özel durum oluşturucuları uygulayın
 
@@ -34,37 +33,37 @@ ms.locfileid: "34454758"
 
 ## <a name="cause"></a>Sebep
 
-Bir tür genişletir <xref:System.Exception?displayProperty=fullName> tüm gerekli oluşturucuları bildirme değil ancak.
+Bir türü genişleten <xref:System.Exception?displayProperty=fullName> gerekli tüm oluşturucular değil ancak.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
 Özel durum türleri, aşağıdaki üç oluşturucular uygulamanız gerekir:
 
-- Ortak NewException()
+- Genel NewException()
 
-- Ortak NewException(string)
+- Genel NewException(string)
 
-- Ortak NewException (dize, özel durum)
+- Genel NewException (dize, özel durum)
 
-Eski FxCop statik kod analizi olarak çalıştırıyorsanız ek olarak, için değil [Roslyn tabanlı FxCop çözümleyiciler](../code-quality/roslyn-analyzers-overview.md), dördüncü bir oluşturucu yokluğu aynı zamanda bir ihlali oluşturur:
+Eski FxCop statik kod analizi olarak çalıştırıyorsanız, ayrıca, çalışmanın aksine [Roslyn tabanlı FxCop Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md), dördüncü Oluşturucu olmaması, aynı zamanda bir ihlali oluşturur:
 
 - korumalı veya özel NewException (SerializationInfo, StreamingContext)
 
-Yapıcıların tüm ayarlamasını sağlamaktaki başarısızlık, istisnalarla başa çıkmayı zorlaştırabilir. Örneğin, imzası Oluşturucusu `NewException(string, Exception)` tarafından diğer özel durumlar nedeniyle özel durum oluşturmak için kullanılır. Bu oluşturucu, oluşturabilir ve bir örneğini hangi yönetilen kod böyle bir durumda yapmalısınız olan bir iç (iç içe) özel içeriyor, özel durum atar.
+Yapıcıların tüm ayarlamasını sağlamaktaki başarısızlık, istisnalarla başa çıkmayı zorlaştırabilir. Örneğin, bir imzaya sahip Oluşturucu `NewException(string, Exception)` diğer özel durumların neden olduğu bir özel durum oluşturmak için kullanılır. Bu oluşturucu, oluşturabilir ve böyle bir durumda hangi yönetilen kod yapmalısınız olan bir iç (yuvalanmış) özel içeren, özel durum örneği harekete.
 
-İlk üç özel durum oluşturucuları kurala göre ortak. Dördüncü Oluşturucusu korumasız sınıflardaki korumalı ve korumalı sınıflar, özel ' dir. Daha fazla bilgi için bkz: [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md)
+Kural gereği, ilk üç özel durum oluşturucuları ortaktır. Dördüncü Oluşturucu, mühürsüz sınıflar olarak korumalı ve korumalı sınıflardaki özel. Daha fazla bilgi için [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md)
 
-## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-Bu kural ihlal düzeltmek için eksik oluşturucular özel durumu ekleyin ve doğru erişilebilirlik sahip olduğunuzdan emin olun.
+Bu kural ihlalini düzeltmek için eksik oluşturucular özel durumu ekleyin ve doğru erişilebilirlik sahip olduğunuzdan emin olun.
 
-## <a name="when-to-suppress-warnings"></a>Ne zaman uyarıları bastırma
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
-Genel oluşturucular için farklı erişim düzeyi kullanarak ihlaline neden olduğunda bir uyarı bu kuraldan bastırmak güvenlidir. Ayrıca, için gizlemek kesebilirsiniz `NewException(SerializationInfo, StreamingContext)` taşınabilir sınıf kitaplığı (PCL) oluşturuluyorsa Oluşturucusu.
+Genel oluşturucular için farklı erişim düzeyi kullanarak ihlali neden olduğunda bu kuraldan bir uyarıyı bastırmak güvenlidir. Ayrıca, uyarı için uygun olup `NewException(SerializationInfo, StreamingContext)` taşınabilir sınıf kitaplığı (PCL) derliyorsanız Oluşturucusu.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bu kural ihlal eden bir özel durum türünü ve doğru şekilde uygulanan bir özel durum türü içerir.
+Aşağıdaki örnek bu kuralı ihlal eden bir özel durum türünü ve doğru bir şekilde uygulandığından bir özel durum türü içerir.
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 

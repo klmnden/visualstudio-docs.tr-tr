@@ -1,9 +1,6 @@
 ---
 title: Ekleme listelerini kullanarak Office çözümlerine güven
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857672"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Ekleme listelerini kullanarak Office çözümlerine güven
   Ekleme listeleri yayımcıyı tanımlayan bir sertifika ile imzalanmış Office çözümlerine güven verme olanağı verir. Ekleme listeleri kullanıcıya özeldir ve belge düzeyi özelleştirmeleri ve VSTO eklentileri için kullanılabilir.  
@@ -40,7 +37,7 @@ ms.locfileid: "38783707"
   
  İstem devre dışıysa, güvenilir ve bilinen bir sertifikası olan çözümleri yüklenebilir. İstem düzeyi gerekli Authenticode ayarlarsanız, çözümü, bilinen yetkilisinden bir sertifika ile imzalanmalıdır, ancak bir sertifika (güvenilen bir sertifika) güvenilir kök yetkilisi zincirlenen gerektirmez. İsteyen izin verilirse, bilinmeyen kimliğe sahip bir sertifika çözümü imzalanabileceği. Bu senaryoda, güven kararı, son kullanıcıya ertelenmiş ve geçici bir sertifika çözümü yüklemek yeterli olacaktır.  
   
- Daha fazla bilgi için [nasıl yapılır: ekleme listesi güvenliğini yapılandırma](../vsto/how-to-configure-inclusion-list-security.md) ve Tablo 2 ' nin isteyen düzeyi kayıt defteri anahtarı değeri başlatma etkileri başlıklı [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Daha fazla bilgi için [nasıl yapılır: Ekleme listesi güvenliğini yapılandırma](../vsto/how-to-configure-inclusion-list-security.md) ve Tablo 2 ' nin isteyen düzeyi kayıt defteri anahtarı değeri başlatma etkileri başlıklı [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="structure-of-the-inclusion-list"></a>Ekleme listelerini yapısı  
  Geçerli ekleme listesi girişi iki bölümden oluşur: dağıtım bildiriminin yanı sıra, çözümü imzalamak için kullanılan ortak anahtar için bir yol. Bir çözüm listesine eklendikten sonra kabul edilir güvenilir. Office çözümünün çalıştığında, Office uygulamasının ekleme listesindeki ortak anahtar imzalama anahtarı şu anda çalışıyor çözüm özgün güvenilir sürümüyle aynı olduğunu doğrulamak için dağıtım bildirimi içinde ile karşılaştırır.  
@@ -48,5 +45,3 @@ ms.locfileid: "38783707"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
  [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
-  
-  

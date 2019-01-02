@@ -2,7 +2,6 @@
 title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme'
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866458"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl Yapılır: Projelere sınıf diyagramları ekleme
 
@@ -61,7 +60,7 @@ Birden fazla sınıf diyagramı eklemek için bu yordamdaki adımları yineleyin
 
 İçinde **Çözüm Gezgini**, bir sınıf dosyasının bağlam menüsü (sağ tıklama) açın ve ardından **sınıf diyagramını görüntüle**.
 
-veya
+-veya-
 
 İçinde **sınıf görünümü**, ad alanı veya tür bağlam menüsünü açın ve ardından **sınıf diyagramını görüntüle**.
 

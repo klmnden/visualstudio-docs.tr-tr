@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineFramesByVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bad59015ef6f70e049403269e77aee04dc226765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8de2cbe874f6955c679ce5d3dc8b089f01058a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862906"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
 Belirtilen sanal adres (VA) satır içi karelerden tümünün üzerinden yinelemek bir istemci sağlayan bir sabit listesi alır.  
@@ -25,7 +23,7 @@ Belirtilen sanal adres (VA) satır içi karelerden tümünün üzerinden yinelem
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT findInlineFramesByVA (   
+HRESULT findInlineFramesByVA (   
    IDiaSymbol*       parent,   ULONGLONG         va,  
    IDiaEnumSymbols** ppResult  
 );  

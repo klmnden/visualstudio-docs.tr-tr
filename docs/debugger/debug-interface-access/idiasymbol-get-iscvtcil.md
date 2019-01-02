@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_iscvtcıl | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d721338e1dfc21a54ce663377aba0aa71c83a87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab73bfbfb859967d9df4f27d6d254334a27e53ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879403"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Modülün yerel bir modül için bir ortak Ara dil (CIL) modülünden dönüştürülüp dönüştürülmediğini belirten bir bayrak alır.  

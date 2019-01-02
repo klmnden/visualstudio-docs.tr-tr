@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ef644984b7c7fd364d389fb437b04f02d96b566
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870235"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio'da XAML tasarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,25 +33,25 @@ Visual Studio hem de visual araçları sağlayan için ilgi çekici kullanıcı 
 ### <a name="shared-capabilities"></a>Paylaşılan Özellikler
  En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaşın aynı dizi windows ve özellikleri, bazı farklar. Bazı önemli noktalar şunlardır:
 
--   **Tutarlı bir kullanıcı arabirimi:** tanıdık bağlam içinde uygulamalarınızı daha eğlenceli ve üretken bir deneyim IDE'ler arasında geçiş yapar Visual Studio kullanıcı arabiriminin tasarlayabilirsiniz. Visual Studio kullanımlar odaklanmanıza yardımcı olan Visual Studio koyu tema içeriğinizi ve kullanıcı arabirimi arasındaki kontrastı geliştirerek tasarlarken içerik üzerinde karışır. Bkz: [XAML Tasarımcısını kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+-   **Tutarlı bir kullanıcı arabirimi:** Uygulamalarınızı tanıdık bağlam içinde daha eğlenceli ve üretken bir deneyim IDE'ler arasında geçiş yapar Visual Studio kullanıcı arabiriminin tasarlayabilirsiniz. Visual Studio kullanımlar odaklanmanıza yardımcı olan Visual Studio koyu tema içeriğinizi ve kullanıcı arabirimi arasındaki kontrastı geliştirerek tasarlarken içerik üzerinde karışır. Bkz: [XAML Tasarımcısını kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
      ![Visual Studio IDE için Blend](../designers/media/blendide.png "BlendIDE")
 
--   **XAML IntelliSense:** hem IDE'ler deyim tamamlama, yorum ve kod ve kaynaklarına Gezinti biçimlendirme gibi Düzenleyici işlemleri ortak desteği dahil olmak üzere ıntellisense'ten beklediğiniz genel özelliklerin tümünü destekler bağlama ve kod.
+-   **XAML IntelliSense:** Her iki IDE'ler deyim tamamlama, açıklama ve kod ve gezinme kaynakları, bağlama ve kod biçimlendirme gibi Düzenleyici işlemleri ortak desteği dahil olmak üzere ıntellisense'ten beklediğiniz genel özelliklerin tümünü destekler.
 
--   **Temel hata ayıklama özelliklerini:** çalışan uygulamanızda hata ayıklama için kodunuzda kesme noktaları ayarlama dahil olmak üzere blend'de şimdi ayıklayabilirsiniz. Visual Studio ile hata ayıklama tutarlı bir deneyim sağlamak için Visual Studio için Blend çoğu Visual Studio hata ayıklama windows ve araç çubuklarını içerir. Gelişmiş hata ayıklama yetenekleri gibi tanılama ve Kod Analizi yalnızca Visual Studio içinde kullanılabilir. Bkz: [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
+-   **Temel hata ayıklama özellikleri:** Artık çalışan uygulamanızda hata ayıklama için kodunuzda ayarı kesme noktaları da dahil olmak üzere blend'de ayıklayabilirsiniz. Visual Studio ile hata ayıklama tutarlı bir deneyim sağlamak için Visual Studio için Blend çoğu Visual Studio hata ayıklama windows ve araç çubuklarını içerir. Gelişmiş hata ayıklama yetenekleri gibi tanılama ve Kod Analizi yalnızca Visual Studio içinde kullanılabilir. Bkz: [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
 
--   **Dosya yeniden yükleme deneyimi:** ya da Visual Studio için Blend veya Visual Studio XAML dosyalarınızı düzenleyebilir ve sahip düzenlediğiniz dosyaların yeniden otomatik olarak bunlar arasında geçiş yaptığınızda. İş akışı kesintilerini en aza indirmek için artık dosyanızı yeniden tercihleri dosyası Yükle iletişim kutusunda ayarlayabilirsiniz.
+-   **Dosya yeniden yükleme deneyimi:** Her iki Visual Studio için Blend ya da Visual Studio XAML dosyalarınızı düzenleyin ve bunlar arasında geçiş yaparken otomatik olarak yeniden düzenlenmiş dosyalarınız. İş akışı kesintilerini en aza indirmek için artık dosyanızı yeniden tercihleri dosyası Yükle iletişim kutusunda ayarlayabilirsiniz.
 
      ![Dosya yeniden yükleme deneyimi](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **Eşitlenmiş düzenler ve ayarları:** özel düzenleri kaydedebilir ve araç penceresi düzeni özelleştirmeleri uygulayabilirsiniz olanak tanır. Aynı Microsoft hesabıyla oturum açtığınızda visual Studio bu özelleştirmeler ve hem Visual Studio ve Visual Studio için Blend tercihlerini makinelerdeki eşitler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+-   **Eşitlenmiş düzenler ve ayarları:** Özel düzenleri kaydedebilir ve araç penceresi düzeni özelleştirmeleri uygulayabilirsiniz olanak sağlar. Aynı Microsoft hesabıyla oturum açtığınızda visual Studio bu özelleştirmeler ve hem Visual Studio ve Visual Studio için Blend tercihlerini makinelerdeki eşitler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
--   **Genel bir Çözüm Gezgini:** Çözüm Gezgini ile projelerinizi ve kendi dosyaları, hem de kendileriyle ilişkili komutların hazır erişimi düzenli bir görünümünü size sağlar. Çözüm Gezgini ile büyük kurumsal projeleriyle çalışmak kolaydır. Bkz: [çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md).
+-   **Ortak Çözüm Gezgini için:** Çözüm Gezgini'nde, projelerinizi ve kendi dosyaları, hem de kendileriyle ilişkili komutların hazır erişimi düzenli bir görünümünü sağlar. Çözüm Gezgini ile büyük kurumsal projeleriyle çalışmak kolaydır. Bkz: [çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md).
 
--   **Takım Gezgini:** projelerinizi depolarıyla takım işbirliğini kolaylaştırmak için GIT veya TFS Takım Gezgini ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+-   **Takım Gezgini için:** Takım Gezgini ile projelerinizi takım işbirliğini kolaylaştırmak için GIT veya TFS depoları ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
--   **NuGet:** hem Visual Studio ve Visual Studio için Blend NuGet paketlerini yönetebilirsiniz. NuGet paketleri bir çözümden kaldırılması ve yüklenmesine basitleştirir .NET Framework için bir paket yöneticisidir.
+-   **NuGet:** Visual Studio ve Visual Studio için Blend hem NuGet paketlerini yönetebilirsiniz. NuGet paketleri bir çözümden kaldırılması ve yüklenmesine basitleştirir .NET Framework için bir paket yöneticisidir.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Visual Studio için blend'de Gelişmiş Özellikler
  Üretkenliğinizi artırmak için aşağıdaki görevler için Visual Studio için Blend kullanarak göz önünde bulundurun. Bu, Visual Studio için Blend, daha fazla hız ve Visual Studio Tasarımcısı veya tek başına bir kod işlevsellik burada sunar alanlardır.

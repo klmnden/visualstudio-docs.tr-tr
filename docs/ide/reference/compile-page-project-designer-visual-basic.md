@@ -2,7 +2,6 @@
 title: Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 890754002c6b3d911b26fe7b1d6aa97b339880c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874897"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 
@@ -44,7 +43,7 @@ Aşağıdaki ayarlar, görüntülenecek veya değiştirilecek platform ve yapıl
 
  **Yapılandırma**
 
- Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md) ve [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md).
+ Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md) ve [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md).
 
  **Platform**
 
@@ -176,6 +175,6 @@ Erişim için bu düğmeye tıklayın **AdvancedCompiler ayarları** iletişim k
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl Yapılır: Derleme Olayları Belirtme (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme](../../ide/how-to-create-and-edit-configurations.md)
+- [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md)

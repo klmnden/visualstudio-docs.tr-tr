@@ -1,9 +1,6 @@
 ---
 title: Projectıtemfile öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b66849f9df9ed4de7725bca842c38f4f5a52582
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f2c4446d8c0e3beff59a08cfbe6c0a6c9e5294d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883922"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile öğesi
-  SharePoint için dağıtıldığında ile proje öğesi eklemek için özellik öğesi dosyası gibi bir SharePoint dosyayı temsil eder.  
+  SharePoint'te dağıtıldığında proje öğesi ile eklenecek özellik öğesi dosyası gibi bir SharePoint dosyasını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,9 +40,9 @@ ms.locfileid: "37120604"
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Kaynak**|Gerekli **xs: String** özniteliği.<br /><br /> Proje öğesi ile dağıtmak için dosyanın adı.|  
-|**Hedef**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> Dosya SharePoint üzerinde dağıtım kök klasörüne görelidir dağıtılacağı yolu. Dağıtım kök klasörü tarafından belirtilen dağıtım türü tarafından belirlenir **türü** özniteliği. Varsa **hedef** özniteliği belirtilmezse, belirtilen ada sahip bir klasöre dosya dağıtılacak **kaynak** özniteliği.<br /><br /> Açıklamaları için daha fazla bilgi için bkz **dağıtım yolu** ve **dağıtım kök** SharePoint özelliklerini proje öğelerinde [geliştirmek SharePoint çözümlerini](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Türü**|Gerekli **xs: String** özniteliği.<br /><br /> Dosyası için dağıtım türü. Olası değerler hakkında daha fazla bilgi için açıklama için bkz **dağıtım türü** SharePoint Proje öğeleri özelliğinin [geliştirmek SharePoint çözümlerini](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Kaynak**|Gerekli **xs: String** özniteliği.<br /><br /> Proje öğesi ile dağıtmak için dosya adı.|  
+|**Hedef**|İsteğe bağlı **xs: String** özniteliği.<br /><br /> Dosyanın SharePoint üzerinde dağıtım kök klasörünün göreli dağıtılacağı yolu. Dağıtım türü tarafından belirtilen dağıtım kök klasörü belirlenir **türü** özniteliği. Varsa **hedef** özniteliği belirtilmezse, belirtilen ada sahip dosyayı bir klasöre dağıtılacak **kaynak** özniteliği.<br /><br /> Daha fazla bilgi için açıklamalar için bkz. **dağıtım yolu** ve **dağıtım kökü** özelliklerini SharePoint Proje öğeleri [geliştirme SharePoint çözümleri](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Tür**|Gerekli **xs: String** özniteliği.<br /><br /> Dosya için dağıtım türü. Açıklama için olası değerler hakkında daha fazla bilgi için bkz **dağıtım türü** özelliğin SharePoint proje öğelerinin [geliştirme SharePoint çözümleri](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Alt öğeleri
  Yok.  
@@ -54,20 +51,19 @@ ms.locfileid: "37120604"
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Dosyalar](../sharepoint/files-element.md)|SharePoint için dağıtıldığında ile SharePoint proje öğesi eklenecek dosyaları belirtir.|  
+|[Dosyalar](../sharepoint/files-element.md)|SharePoint'te dağıtıldığında SharePoint proje öğesi ile dahil edilecek dosyalar belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genellikle başvuru SharePoint dosyaları **Projectıtemfile** öğeler özellik öğesi dosyaları içerir (*Elements.xml*), liste tanımları için şema dosyaları (*Schema.xml*) ve Web bölümleri için Web Bölümü tanım dosyalarını (*.webpart*).  
+ Tipik olarak anılan SharePoint dosyaları **Projectıtemfile** öğelerini özellik öğesi dosyaları içerir (*Elements.xml*), liste tanımları için şema dosyalarını (*Schema.xml*) ve Web bölümleri için Web Bölümü tanım dosyalarını (*.webpart*).  
   
 ## <a name="element-information"></a>Öğe bilgileri
   
 |||  
 |-|-|  
 |**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
-|**Şema adı**|SharePoint proje öğesi şeması|  
-|**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
-|**Boş olamaz**|Hayır|  
+|**Şema adı**|SharePoint proje öğesi şema|  
+|**Doğrulama dosyası**|ProjectItemModelSchema.xsd|  
+|**Boş olabilir**|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

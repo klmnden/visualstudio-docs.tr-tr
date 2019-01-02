@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03cfcf2b4ea2b3a0b4773e9c2632c84091819f45
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 401ad47c6b265e005d36cad7d3cf2ae13d7f4f1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880964"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +71,7 @@ Her bir özel menü başlığı oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Menü başlığı varsayılan](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")
 
@@ -104,7 +103,7 @@ Her bir özel menü başlığı oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Menü başlığı üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")
 
@@ -138,7 +137,7 @@ Her bir özel menü başlığı oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Menü başlığı basılı](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")
 
@@ -174,7 +173,7 @@ Her bir özel menü başlığı oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Menü başlığı devre dışı karakter ile](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")
 
@@ -215,7 +214,7 @@ herhangi bir aşağı açılan listesi için menü çubuğunun ya da komut çubu
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Menü varsayılan](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")
 
@@ -281,7 +280,7 @@ herhangi bir aşağı açılan listesi için menü çubuğunun ya da komut çubu
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Menü vurgulu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")
 
@@ -329,7 +328,7 @@ herhangi bir aşağı açılan listesi için menü çubuğunun ya da komut çubu
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Devre dışı menü](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")
 
@@ -389,7 +388,7 @@ Katıştırılmış bir komut için gerek duyduğunuz yerde çubuğu ancak stand
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   Arka Plan
 
@@ -430,7 +429,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Komut simgesinin varsayılan](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")
 
@@ -470,7 +469,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Komut simgesinin üzerine gelindiğinde kullanılacak](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")
 
@@ -512,7 +511,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Komut simgesinin basılı](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")
 
@@ -538,7 +537,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Komut simgesinin devre dışı](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")
 
@@ -579,7 +578,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Birleşik giriş kutusu giriş alanı](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")
 
@@ -637,7 +636,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Birleşik giriş kutusu giriş alanı üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")
 
@@ -695,7 +694,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Color.category
+  Belirteç adı: Color.Category
 
   ![Birleşik giriş kutusu giriş alanı odaklanmış](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")
 
@@ -735,7 +734,7 @@ düğmeleri için komut çubuğunda yer alır.
 
   Öğe
 
-  Belirteç adı: Color.category
+  Belirteç adı: Color.Category
 
   ![Birleşik giriş kutusu giriş alanı basılı](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")
 
@@ -824,7 +823,7 @@ ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;seçim alanı aşağı](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")
 
@@ -886,7 +885,7 @@ ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;seçim alanı üzerine gelindiğinde aşağı](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")
 
@@ -944,7 +943,7 @@ ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;tuşunu basılı seçim alanı](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")
 
@@ -984,7 +983,7 @@ ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;devre dışı seçim alanı aşağı](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")
 
@@ -1033,7 +1032,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Bölünmüş düğme](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")
 
@@ -1065,7 +1064,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Bölünmüş düğme üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")
 
@@ -1099,7 +1098,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Bölünmüş düğmeye basıldığını](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")
 
@@ -1133,7 +1132,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Bölünmüş düğme devre dışı](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")
 
@@ -1176,7 +1175,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Daha fazla seçenek](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")
 
@@ -1200,7 +1199,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Daha fazla seçenek üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")
 
@@ -1226,7 +1225,7 @@ ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Daha fazla seçenek basılı](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")
 
@@ -1274,7 +1273,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  Belge: yerleşik veya kayan
 
@@ -1348,7 +1347,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Çerçeve üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")
 
@@ -1388,7 +1387,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Çerçeve odaklanmış basılı](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")
 
@@ -1441,7 +1440,7 @@ Kabuk güncelleştirme bir tema olduğunda otomatik olarak değiştirmek istemed
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Seçili sekme odaklanmış](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")
 
@@ -1473,7 +1472,7 @@ Kabuk güncelleştirme bir tema olduğunda otomatik olarak değiştirmek istemed
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Seçili sekme odaklanmadan](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")
 
@@ -1555,13 +1554,13 @@ herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizlem
 
 - otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.
 
-  **Seçili Önizleme sekmesi: odaklanmış**
+  **Seçili bir önizleme sekmesinde: Odaklanmış**
 
   Bileşen
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Önizleme sekmesini odaklanmış](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")
 
@@ -1585,13 +1584,13 @@ herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizlem
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
-  **Seçili Önizleme sekmesi: Odaklanmadan**
+  **Seçili bir önizleme sekmesinde: Plana odaklanmadan**
 
   Bileşen
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Önizleme sekmesini odaklanmadan](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")
 
@@ -1613,13 +1612,13 @@ herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizlem
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
-  **Arka plan Önizleme sekmesi: varsayılan**
+  **Arka plan Önizleme sekmesinde: Varsayılan**
 
   Bileşen
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Önizleme arka plan sekmesine](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")
 
@@ -1639,13 +1638,13 @@ herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizlem
 
   Aynı arka plan rengini ayarlayın.
 
-  **Arka plan Önizleme sekmesi: getirin**
+  **Arka plan Önizleme sekmesinde: Vurgulu**
 
   Bileşen
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Önizleme arka plan sekmesine üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")
 
@@ -1684,7 +1683,7 @@ ne zaman bir özel belge taşma düğmesini oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")
 
@@ -1708,7 +1707,7 @@ ne zaman bir özel belge taşma düğmesini oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Overflow üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")
 
@@ -1732,7 +1731,7 @@ ne zaman bir özel belge taşma düğmesini oluşturuyorsunuz.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Basılan taşma](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")
 
@@ -1778,7 +1777,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç penceresi yerleştirilmiş](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")
 
@@ -1796,7 +1795,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç penceresi odaklanmış](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")
 
@@ -1814,7 +1813,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç penceresi odaklanmadan](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")
 
@@ -1843,7 +1842,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Başlık çubuğu odaklanmış](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")
 
@@ -1875,7 +1874,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Başlık çubuğu odaklanmadan](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")
 
@@ -1916,7 +1915,7 @@ araç penceresinin başlık çubuğu renk belirteçleri kullanan kullanıcı ara
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Başlık düğme odaklanmış](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")
 
@@ -1956,7 +1955,7 @@ araç penceresinin başlık çubuğu renk belirteçleri kullanan kullanıcı ara
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Başlık çubuğu düğme üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")
 
@@ -1996,7 +1995,7 @@ araç penceresinin başlık çubuğu renk belirteçleri kullanan kullanıcı ara
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Başlık odaklı ve basılı düğmesi](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")
 
@@ -2045,7 +2044,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç penceresi sekmesinin odaklanmış](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")
 
@@ -2069,7 +2068,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç penceresi sekmesinin odaklanmadan](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")
 
@@ -2095,7 +2094,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç penceresi arka plan sekmesine](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")
 
@@ -2123,7 +2122,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Üzerine gelindiğinde araç penceresi arka plan sekmesine](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")
 
@@ -2164,7 +2163,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Otomatik&#45;sekmesini gizle](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")
 
@@ -2190,7 +2189,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Otomatik&#45;sekmesini üzerine gelindiğinde Gizle](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")
 
@@ -2242,7 +2241,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Arama giriş alanı odaklanmış](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")
 
@@ -2310,7 +2309,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Arama giriş alanı odaklanmadan](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")
 
@@ -2398,7 +2397,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Arama eylem düğmesi basılı](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303 116 1_SearchActionButtonPressed")
 
@@ -2438,7 +2437,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Arama giriş alanı vurgulama](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")
 
@@ -2466,7 +2465,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Arama giriş alanını devre dışı](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")
 
@@ -2539,7 +2538,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   Kenarlık
 
@@ -2559,7 +2558,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Önerilen arama](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")
 
@@ -2613,7 +2612,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Üzerine gelindiğinde önerilen arama](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")
 
@@ -2665,7 +2664,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Arama önerilen basılı](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")
 
@@ -2716,7 +2715,7 @@ her şey için köprü değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Köprü varsayılan](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")
 
@@ -2730,7 +2729,7 @@ her şey için köprü değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Üzerine gelindiğinde köprü](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")
 
@@ -2744,7 +2743,7 @@ her şey için köprü değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Basılan köprü](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")
 
@@ -2758,7 +2757,7 @@ her şey için köprü değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Devre dışı köprü](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")
 
@@ -2781,7 +2780,7 @@ bir bilgi çubuğu için benzer olmayan kullanıcı Arabirimi öğeleri için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Bilgi Çubuğu](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")
 
@@ -2815,7 +2814,7 @@ ne zaman Visual Studio kaydırma çubukları eşleştirmek istediğiniz kullanı
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Kaydırma çubuğu](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")
 
@@ -2849,7 +2848,7 @@ ne zaman Visual Studio kaydırma çubukları eşleştirmek istediğiniz kullanı
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Kaydırma çubuğu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")
 
@@ -2883,7 +2882,7 @@ ne zaman Visual Studio kaydırma çubukları eşleştirmek istediğiniz kullanı
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Basılan kaydırma çubuğu](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")
 
@@ -2930,7 +2929,7 @@ herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Ağaç görünümü](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")
 
@@ -2956,7 +2955,7 @@ herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Ağaç görünümü üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")
 
@@ -2982,7 +2981,7 @@ herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Ağaç görünümü dragover](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")
 
@@ -3008,7 +3007,7 @@ herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Ağaç görünümü odaklanmış](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")
 
@@ -3056,7 +3055,7 @@ herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![Ağaç görünümü üzerine gelindiğinde odaklanmış](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")
 
@@ -3113,7 +3112,7 @@ Visual Studio temasını bulunmayan özel bir arka plan karşı görüntüler d�
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Düğme](../../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")
 
@@ -3131,7 +3130,7 @@ Visual Studio temasını bulunmayan özel bir arka plan karşı görüntüler d�
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Düğme devre dışı](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")
 
@@ -3149,7 +3148,7 @@ Visual Studio temasını bulunmayan özel bir arka plan karşı görüntüler d�
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Düğme üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")
 
@@ -3167,7 +3166,7 @@ Visual Studio temasını bulunmayan özel bir arka plan karşı görüntüler d�
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Düğmeye basıldığını](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")
 
@@ -3185,7 +3184,7 @@ Visual Studio temasını bulunmayan özel bir arka plan karşı görüntüler d�
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Odaklanmış düğmesi](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")
 
@@ -3212,7 +3211,7 @@ herhangi bir UI için bu onay kutusu denetimi değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Onay kutusu](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")
 
@@ -3238,7 +3237,7 @@ herhangi bir UI için bu onay kutusu denetimi değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Devre dışı onay kutusu](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")
 
@@ -3264,7 +3263,7 @@ herhangi bir UI için bu onay kutusu denetimi değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Onay kutusu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")
 
@@ -3290,7 +3289,7 @@ herhangi bir UI için bu onay kutusu denetimi değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Onay kutusu basılı](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")
 
@@ -3316,7 +3315,7 @@ herhangi bir UI için bu onay kutusu denetimi değil.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Onay kutusu odaklanmış](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")
 
@@ -3353,7 +3352,7 @@ açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;aşağı&#47;birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")
 
@@ -3387,7 +3386,7 @@ açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;aşağı&#47;birleşik giriş kutusu devre dışı](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")
 
@@ -3421,7 +3420,7 @@ açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;aşağı&#47;birleşik giriş kutusu üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")
 
@@ -3455,7 +3454,7 @@ açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;aşağı&#47;basılı birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")
 
@@ -3489,7 +3488,7 @@ açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;aşağı&#47;odaklanmış birleşik giriş kutusu](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")
 
@@ -3523,7 +3522,7 @@ açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   ![DROP&#45;aşağı&#47;birleşik giriş kutusu metin girişi](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")
 
@@ -3587,7 +3586,7 @@ bir tablo veya kılavuz denetimi değil herhangi bir UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  Varsayılan
 
@@ -3650,7 +3649,7 @@ bir tablo veya kılavuz denetimi değil herhangi bir UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  Varsayılan
 
@@ -3715,7 +3714,7 @@ bir tablo veya kılavuz denetimi değil herhangi bir UI için.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   Varsayılan (Seçili)
 
@@ -3779,7 +3778,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Etiket](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")
 
@@ -3836,7 +3835,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Etiket &#40;glif&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")
 
@@ -3856,7 +3855,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Etiket &#40;glif&#41; üzerine gelindiğinde](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")
 
@@ -3880,7 +3879,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Etiket &#40;glif&#41; basılı](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")
 
@@ -3904,7 +3903,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Seçili etiketi](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")
 
@@ -3924,7 +3923,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Üzerine gelindiğinde seçili etiketi](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")
 
@@ -3948,7 +3947,7 @@ başka türde UI için.
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Seçili etiketi basılı](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")
 
@@ -3985,7 +3984,7 @@ Visual Studio ortamının arka eşleştirmek istediğiniz yerde.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   Alt Katman
 
@@ -3997,7 +3996,7 @@ Visual Studio ortamının arka eşleştirmek istediğiniz yerde.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   Üst katman
 
@@ -4030,7 +4029,7 @@ Visual Studio ortamının arka eşleştirmek istediğiniz yerde.
 
   Öğe
 
-  Belirteç adı: Category.color
+  Belirteç adı: Category.Color
 
   Menü çubuğu
 
@@ -4073,7 +4072,7 @@ Araç kutusu kullanıcı Arabirimi, benzer olmayan her şey için ya da değişi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç kutusu üst düğümü](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")
 
@@ -4111,7 +4110,7 @@ Araç kutusu kullanıcı Arabirimi, benzer olmayan her şey için ya da değişi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Üzerine gelindiğinde Araç kutusu alt düğüm](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")
 
@@ -4139,7 +4138,7 @@ Araç kutusu kullanıcı Arabirimi, benzer olmayan her şey için ya da değişi
 
  Öğe
 
- Belirteç adı: Category.color
+ Belirteç adı: Category.Color
 
  ![Araç kutusu üst düğümü odaklanmış](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")
 

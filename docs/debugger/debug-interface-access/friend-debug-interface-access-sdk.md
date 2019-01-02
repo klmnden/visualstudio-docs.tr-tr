@@ -1,8 +1,6 @@
 ---
 title: Arkadaş (hata ayıklama arabirimi Erişim SDK'sı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,27 +14,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75cdf9b4239b02e9f07077a6bf574c3b9e5b47a3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fb8b1dc7d54cc913a1ed1986576fa559c7134bd2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868267"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Arkadaş (Arabirim Erişimi SDK'sında Hata Ayıklama)
-Arkadaş sınıfları ve arkadaş işlevleri tanımlanır `SymTagFriend` simgeler. Kullanıcı tanımlı türler (atama) üst öğenin alt öğeleri olan ve sahip bir [Idiasymbol::get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) özelliği.  
+Arkadaş sınıfları ve arkadaş işlevleri tanımlanır `SymTagFriend` semboller. Kullanıcı tanımlı türler(UDT) üst öğesinin alt öğeleri olan ve sahip bir [Idiasymbol::get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) özelliği.  
   
 ## <a name="properties"></a>Özellikler  
- Aşağıdaki tabloda bu simge türü için geçerli ek özellikleri gösterir.  
+ Bu sembol türü için geçerli ek özellikler aşağıdaki tabloda gösterilmektedir.  
   
 |Özellik|Veri türü|Açıklama|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|UDT üst simgesi.|  
+|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|UDT üst simge.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Sınıf üst simge kimliği.|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Sınıf veya işlev adı.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Dizin kimliği simgesi.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Döndürür `SymTagFriend` (birini [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) değerleri).|  
-|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Sınıf veya işlevi için simge.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Sınıf veya işlevin adı.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Sembol, dizin kimliği.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Döndürür `SymTagFriend` (biri [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) değerler).|  
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Sınıf veya işlev simgesi.|  
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Tür simgesi kimliği.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

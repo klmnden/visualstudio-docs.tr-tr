@@ -1,9 +1,7 @@
 ---
 title: Paralel uygulamada hata ayıklama | Microsoft Docs
 description: Paralel Görevler ve Paralel Yığınlar pencerelerinin Visual Studio kullanarak hata ayıklama
-ms.custom: ''
 ms.date: 03/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 2ff1876ba76421818f3a59616cfdf26aae41adb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867153"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>İzlenecek yol: Visual Studio'da paralel bir uygulamada hata ayıklaması
 Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  

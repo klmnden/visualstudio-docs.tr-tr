@@ -1,8 +1,6 @@
 ---
 title: Sorunları araçları performans sorunlarını giderme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 432afd3051d7deb04fe32c02d163e59e324f6b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870842"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Performans sorunlarını giderme
 Profil oluşturma Araçları'nı kullandığınızda aşağıdaki sorunlardan biriyle karşılaşabilirsiniz:  
@@ -33,7 +31,7 @@ Profil oluşturma Araçları'nı kullandığınızda aşağıdaki sorunlardan bi
   
 -   Örnekleme veya .NET bellek yöntemi kullanarak profili oluşturulmuş bir işlem uygulama işi yapar işlem haline gelen bir alt işlemi başlatır. Örneğin, bazı uygulamalar, bir Windows uygulaması veya bir komut satırı uygulaması olarak başlatılmış olup olmadığını belirlemek için komut satırını okur. Bir Windows uygulaması istendi, özgün işlem bir Windows uygulaması olarak yapılandırılmış yeni bir işlem başlatır ve ardından özgün işlem çıkar. Profil oluşturma araçları otomatik olarak alt işlemleri için veri toplama için hiçbir veri toplanır.  
   
-     Bu durumda profil oluşturma verilerini toplamak için profil oluşturucu uygulamaya Profil Oluşturucu ile başlatma yerine alt işlem ekleme. Daha fazla bilgi için [nasıl yapılır: iliştirme ve performans araçlarını çalışan işlemlere ayırma](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) ve [İliştir (VSPerfCmd)](../profiling/attach.md)  
+     Bu durumda profil oluşturma verilerini toplamak için profil oluşturucu uygulamaya Profil Oluşturucu ile başlatma yerine alt işlem ekleme. Daha fazla bilgi için [nasıl yapılır: Ekleme ve ayırma performans araçlarını çalışan işlemlere](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) ve [İliştir (VSPerfCmd)](../profiling/attach.md)  
   
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Performans görünümlerinde ve raporlarında sayılar için işlev adlarını görüntüle  
  Bir uygulamanın profilini sonra raporları ve görünümleri işlev adları yerine numaraları görürsünüz.  

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4c5da35407b028d1c435c87a55f265bd22c46c3a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 74c30506dacd4b156fa7d065b11478fcf5e63765
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890682"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Nasıl yapılır: erişim yük testi sonuçlarını çözümleme
+# <a name="how-to-access-load-test-results-for-analysis"></a>Nasıl Yapılır: Erişim yük testi sonuçlarını çözümleme
 
 Yük Testi Düzenleyicisi'nden bir yük testi çalıştırdığınızda, yük testi sonuçları otomatik olarak açmak ve yük testi görüntülenen **Yük Testi Çözümleyicisi**. Komut satırından bir yük testi çalıştırdığınızda, yük testi sonuçları el ile erişmeniz gerekir.
 

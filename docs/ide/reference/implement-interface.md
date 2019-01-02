@@ -2,19 +2,18 @@
 title: Arabirim uygulama
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ff5c0fb698bba3df955008ebb5d95175dcfc8beb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886617"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Visual Studio'da arabirimi uygulama
 
@@ -24,11 +23,11 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen bir arabirim uygulamak için gereken kodu oluşturmanıza olanak tanır.
+**Ne:** Hemen bir arabirim uygulamak için gereken kodu oluşturmanıza olanak sağlar.
 
-**Ne zaman:** bir arabirimden devralma istiyorsunuz.
+**ne zaman:** Bir arabirimden devralma istiyorsunuz.
 
-**Neden:** bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm arabirimi birer birer el ile uygulayabilirsiniz.
+**Neden:** Bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm arabirimi birer birer el ile uygulayabilirsiniz.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

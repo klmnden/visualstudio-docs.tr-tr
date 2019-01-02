@@ -1,9 +1,6 @@
 ---
 title: Visual Studio için UX temel bileşenleri | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874882"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio için UX temel bileşenleri
 ## <a name="best-practices"></a>Önerilen uygulamalar  
@@ -63,7 +60,7 @@ ms.locfileid: "49848598"
  - İlk iletişim yükseklik olmalıdır **700 pikselden küçük**, içinde IDE çerçevesinin 96 DPI, minimum çözünürlük sığmasını sağlayın.
   
 ### <a name="high-density-displays"></a>Yüksek yoğunluklu görüntüler  
- Visual Studio kullanıcı Arabiriminde da kullanıma hazır Windows destekleyen Etkenler ölçeklendirme tüm DPI çalışmak gerekir: % 150 %200 ve % 250.  
+ Visual Studio kullanıcı Arabiriminde, kullanıma hazır Windows destekleyen de tüm DPI ölçeklendirme faktörlerindeki çalışması gerekir: % 150, %200 ve % 250.  
   
 ## <a name="anti-patterns"></a>Ters desenler  
  Visual Studio UI kılavuz İlkelerimizi ve en iyi uygulamaları izleyin birçok örnekleri içerir. Geliştirilmiştir tutarlı olması için ürün UI tasarım desenleri ne, oluşturmakta olduğumuz için benzer geliştiriciler genellikle alın. Kullanıcı etkileşimi ve görsel tasarım tutarlılık sürücü bize yardımcı olur, biz bazen koşullarımıza Zamanlama kısıtlamaları nedeniyle karşılamaz veya hata önceliklendirme birkaç ayrıntıları sunmaya başlayamıyorsunuz, iyi bir yaklaşım budur ancak. Bunlar Visual Studio ortamının içinde hatalı veya tutarsız UI yayılmaya çünkü bu gibi durumlarda, takımlar bu "ters desenler" birini kopyalayıp istiyoruz değil.  
@@ -120,15 +117,15 @@ Kullanıcı UI kapatılıyor önce açıklayıcı metin okumak için zorlama, Vi
 ### <a name="using-command-bars-for-settings"></a>Komut çubuğu ayarları için kullanma  
  **Şekil A** Bu koruma düzeni temsil eder: ayarı daha fazlasını komutu geçerli bir komut düğmesi altındaki yerleştirme. Bu taslağı hata ayıklamayı Başlat yanı sıra komutları vardır — ister tarayıcı, hata ayıklama olmadan başlat ve içine adımla görünümünde — seçili olan ayar dikkate.  
 
-  ![Şekil y: komut koruma düzeni](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti deseni FigureA")<br />Şekil y: komut çubuğu koruma düzeni
+  ![Şekil y: Komut çubuğu koruma düzeni](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti deseni FigureA")<br />Şekil y: Komut çubuğu koruma düzeni
   
  Biraz daha iyi, ancak hala istenmeyen sokarak ayarlar bu türün araç çubuklarını, gösterildiği gibi **şekil B**. Bölünmüş düğme daha az yer kaplar ve bu nedenle bir geliştirme açılan listeler, ancak her iki tasarımın bir araç çubuğu gerçekten bir komut değil bir şey yükseltmek için yine de kullanmaktadır.  
  
- ![Şekil B: daha iyi, ancak yine de bir komut çubuğu koruma düzeni](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti deseni FigureB")<br />Şekil B: daha iyi, ancak yine de bir komut çubuğu koruma düzeni
+ ![Şekil B: Daha iyi, ancak yine de bir komut çubuğu koruma düzeni](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti deseni FigureB")<br />Şekil B: Daha iyi, ancak yine de bir komut çubuğu koruma düzeni
  
   Gösterilen doğru yaklaşımda **şekil C**, ayar, bir dizi komut bağlıdır. Ayarlanan genel ayar yoktur ve biz yalnızca dört komuttan arasında geçiş yapıyorsanız. Bu, araç çubuğundaki komutları kabul edilebilir tek durumdur. 
 
- ![Şekil C: düzeltmek Visual Studio komut çubuğu düzeni kullanımını](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti deseni FigureC")<br />Şekil C: doğru Visual Studio komut çubuğu desenini kullanın
+ ![Şekil C: Visual Studio komut çubuğu düzeni kullanımını düzeltmek](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti deseni FigureC")<br />Şekil C: Visual Studio komut çubuğu deseni doğru kullanımı
    
 ### <a name="control-anti-patterns"></a>Denetim ters desenler  
  İçin bazı ters desenler, yalnızca yanlış kullanımı veya bir denetim veya denetimlerin Grup sunumu olabilir.  
@@ -156,7 +153,7 @@ Kullanıcı UI kapatılıyor önce açıklayıcı metin okumak için zorlama, Vi
   
    ![Renk hizmet yoksayılıyor ve "daha fazla bilgi edinmek için köprüler" kullanarak Visual Studio ters desenler var. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Renk hizmet yoksayılıyor ve "daha fazla bilgi edinmek için köprüler" kullanarak Visual Studio ters desenler var.  
   
-   **Daha iyi bir çözüm:** anın bağlantıya tıklayarak soru konusunda sizi uyarmayı.  
+   **Daha iyi çözüm için:** Kullanıcının bağlantıya tıklayarak isteyen soru yol açar.  
   
 -   Windows Azure hizmetleri nasıl çalışır?  
   
@@ -167,4 +164,4 @@ Kullanıcı UI kapatılıyor önce açıklayıcı metin okumak için zorlama, Vi
   
  **Hatalı:** "Buraya yeni bir proje oluşturma hakkında yönergeler için tıklayın."
   
- **İyi:** "Nasıl oluşturabilirim yeni bir proje?"
+ **İyi:** "Yeni bir proje nasıl oluştururum?"

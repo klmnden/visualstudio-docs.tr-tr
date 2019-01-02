@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: olay alıcısı oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Olay alıcısı oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861578"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: olay alıcısı oluşturma
+# <a name="how-to-create-an-event-receiver"></a>Nasıl Yapılır: Olay alıcısı oluşturma
   Oluşturarak *Olay alıcıları*, bir kullanıcı SharePoint öğeleri listeleri gibi veya liste öğesi ile etkileşim kurduğunda, yanıt verebilirsiniz. Örneğin, bir kullanıcı takvimi değiştirir veya bir ad kişiler listeden silmesi olay alıcısı kodda tetiklenebilir. Bu konuyu takip ederek, bir liste örneği için bir olay alıcısı ekleme konusunda bilgi edinebilirsiniz.
 
  Bu adımları tamamlamak için yüklü olmalıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve Windows ve SharePoint sürümleri desteklenir. Bu örnek bir SharePoint projesine gerektirdiğinden, ayrıca konudaki yordama tamamlamış olmanız gerekir [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).

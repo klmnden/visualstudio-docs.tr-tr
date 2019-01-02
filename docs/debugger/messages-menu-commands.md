@@ -1,8 +1,6 @@
 ---
 title: İletiler menü komutları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5d2ff50180a0818f3ef9399747d69d75a55198c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861948"
 ---
 # <a name="messages-menu-commands"></a>İletiler Menü Komutları
-**İletileri** iletisi görünümlerinden denetlemek için menü komutları sağlar.  
+**İletileri** menü, ileti görüntülemeleri denetlemek için komutları sağlar.  
   
  **Günlüğü Başlat/Durdur**  
  Başlatır veya ileti görünümü durdurur.  
   
  **Günlük Seçenekleri**  
- Açılır **MessageOptions** iletişim kutusu, ileti arama ölçütlerini belirtebileceğiniz.  
+ Açılır **MessageOptions** iletişim kutusu, ileti arama ölçütleri belirtebileceğiniz.  
   
  **Günlüğü Temizle**  
- Etkin iletiler görünümü içeriğini temizler.
+ Etkin iletiler görünümünü içeriğini temizler.

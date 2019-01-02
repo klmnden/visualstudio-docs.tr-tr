@@ -1,8 +1,6 @@
 ---
 title: System.Deployment.Application kullanan ClickOnce uygulamalarında hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c877c3373f7d028291b521558a04fafd56e022c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6addfb72ae1e67b846433c9762163138523df68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872417"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application kullanan ClickOnce uygulamalarında hata ayıklama
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bir uygulamanın nasıl güncelleştirileceğini yapılandırmanıza olanak tanır. Ancak, özelleştirmek ve kullanmak gerekiyorsa Gelişmiş [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım özellikleri tarafından sağlanan dağıtımı nesne modeline erişme gerekecek <xref:System.Deployment.Application>. Kullanabileceğiniz <xref:System.Deployment.Application> API'leri için Gelişmiş görevler gibi:  

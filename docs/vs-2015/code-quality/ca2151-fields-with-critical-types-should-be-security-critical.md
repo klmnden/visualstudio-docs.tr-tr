@@ -1,12 +1,11 @@
 ---
-title: 'CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır. | Microsoft Docs'
+title: 'CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bbd3e62d58717b5c7d617960afe1d6f490dd2b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ab68ac654a81af348edada60456085d0197385f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875844"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,6 +85,3 @@ ms.locfileid: "49951372"
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2145.transparentmethodsshouldnotusesuppressunmanagedcodesecurity/cs/ca2145.cs#1)]
 
 ### <a name="comments"></a>Açıklamalar
-
-
-

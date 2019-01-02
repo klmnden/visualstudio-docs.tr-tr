@@ -1,9 +1,6 @@
 ---
 title: Office belgelerinde parola koruması
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857007"
 ---
 # <a name="password-protection-on-office-documents"></a>Office belgelerinde parola koruması
   Böylece bunlar parola bilmeyen kişi tarafından açılamıyor, Microsoft Office Word belgelerini ve Microsoft Office Excel çalışma kitaplarını parola ayarlamak mümkündür. Bu seçenek olarak adlandırılan **açık parola**.  
@@ -43,7 +40,5 @@ ms.locfileid: "35676677"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
  [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalıştırmak için izin verme](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

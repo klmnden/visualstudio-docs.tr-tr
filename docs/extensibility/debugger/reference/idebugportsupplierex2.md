@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplierEx2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ba4b16837200f729ec4f8b9061dbb321ee58ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbc58f85a084711057e2ad46b03a1ac0f6fb8f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866785"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Bir bağlantı noktası sağlayıcı seçin ve bir çekirdek sunucusu ile etkileşim için destek sağlar.  
+Seçin ve bir çekirdek sunucusu ile etkileşim kurmak bağlantı noktası sağlayıcısı için destek sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,23 +27,23 @@ IDebugPortSupplierEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Çekirdek sunucusunu kullanacak şekilde seçebilmeniz için özel bir bağlantı noktası tedarikçi bu arabirimi uygular.  
+ Çekirdek sunucusunu kullanacak şekilde seçebilmeniz için özel bağlantı noktası sağlayıcısı bu arabirimi uygular.  
   
 ## <a name="methods"></a>Yöntemler  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir **IDebugPortSupplierEx2**.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Çekirdek sunucunun bağlantı noktası tedarikçi için ayarlar.|  
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Çekirdek sunucusu için bağlantı noktası sağlayıcısı ayarlar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Portpriv.h  
+ Üst bilgi: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

@@ -1,9 +1,6 @@
 ---
 title: Özellikler penceresi alanları ve arabirimleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149c02918ec909c03c1102a5fc0f1643b79fb46d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872234"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler Penceresi Alanları ve Arabirimleri
 Seçim, hangi bilgilerin görüntüleneceğini belirlemek modelin **özellikleri** penceresi odaklı IDE'de pencerenin temel alır. Her pencere ve seçili penceresi içinde nesne genel seçimi bağlamına gönderildi, Seçim bağlam nesnesi olabilir. Bu pencere odaklandığında ortamı genel seçim bağlamını pencere çerçevesi değerlerini güncelleştirir. Bu nedenle odağı değiştiğinde seçim bağlamını yapar.  

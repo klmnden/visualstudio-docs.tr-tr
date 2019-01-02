@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: dosya değişiklik bildirimlerini gösterme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Dosya değişiklik bildirimlerini gösterme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874290"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Nasıl yapılır: dosya değişiklik bildirimlerini gösterme
+# <a name="how-to-suppress-file-change-notifications"></a>Nasıl Yapılır: Dosya değişiklik bildirimlerini gösterme
 Metin arabelleğini temsil eden bir fiziksel dosya değiştirildiğinde, iletinin bir iletişim kutusu görüntüler **aşağıdaki öğelerdeki değişiklikleri kaydetmek istiyor musunuz?** Bu dosya değişikliği bildirimi bilinir. Birçok değişiklik dosyaya kullanacaksanız, ancak bu iletişim kutusunu tekrar tekrar görüntüleme hızlı bir şekilde rahatsız edici hale gelebilir.  
   
  Programlı olarak aşağıdaki yordamı kullanarak bu iletişim kutusunu gizleyebilirsiniz. İletişim kutusu gizleme tarafından bir dosya hemen her zaman değişiklikleri kaydetmek için kullanıcıdan gerek kalmadan yeniden yükleyebilirsiniz.  
@@ -79,7 +76,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

@@ -1,8 +1,6 @@
 ---
-title: "Nasıl yapılır: hangi DLL'de kilitlendiğini programınızın bulma | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl Yapılır: Hangi DLL'de kilitlendiğini programınızın bulma | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f27e0bec20e1dd037beaa5f60ea648c0ccb171
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7726c7fff2f747fcde3fe62bcdcc0866b375728d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879127"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Nasıl yapılır: hangi DLL'de kilitlendiğini programınızın bulma (C#, C++, Visual Basic F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Nasıl Yapılır: Hangi DLL'de kilitlendiğini programınızın bulma (C#, C++, Visual Basic F#)
   
  Uygulamanızı bir sistem DLL'i veya başka birisinin kodu çağrısı sırasında kilitleniyor bulmak kilitlenme oluştuğunda hangi DLL etkindi gerekirse. Kendi programımı dışında bir DLL içindeki bir kilitlenme karşılaşırsanız, konumu şunu kullanarak belirleyebilirsiniz **modülleri** penceresi.  
   
@@ -53,4 +51,4 @@ ms.locfileid: "52257103"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md)   
- [Nasıl Yapılır: Modüller Penceresini Kullanma](../debugger/how-to-use-the-modules-window.md)
+ [Nasıl yapılır: Modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md)

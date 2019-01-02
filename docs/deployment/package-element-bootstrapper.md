@@ -1,8 +1,6 @@
 ---
 title: '&lt;Paket&gt; öğesi (Önyükleyici) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868621"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; öğesi (Önyükleyici)
 `Package` En üst düzey XML öğesi bir paket dosyası içinde bir öğedir.  

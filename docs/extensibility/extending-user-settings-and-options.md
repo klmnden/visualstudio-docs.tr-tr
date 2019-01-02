@@ -1,9 +1,6 @@
 ---
 title: Kullanıcı ayarlarını ve seçeneklerini genişletme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user preferences
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d59fa13d65f04631c41681fdb82c18624f7d69a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883126"
 ---
 # <a name="extend-user-settings-and-options"></a>Kullanıcı ayarlarını ve seçeneklerini genişletme
 Visual Studio'da kullanıcı tercihlerini korumak başlıca iki yolu vardır. **Araçları** > **seçenekleri** sayfalarına izin ayarları, genel ve dile özgü birçok farklı türde için kendi değerlerini ayarlamak kullanıcılar. Kullanıcı ayarları genel Visual Studio yapılandırması özelliklerini belirtmek kullanıcılardan izin verir. Seçenekler sayfaları hakkında daha fazla bilgi için bkz: [seçenekler ve Seçenekler sayfaları](../extensibility/internals/options-and-options-pages.md). Kullanıcı ayarları hakkında daha fazla bilgi için bkz. [kullanıcı ayarları desteği](../extensibility/internals/support-for-user-settings.md).  

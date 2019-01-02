@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1244fb2ba0a9e902d4dd853e7bef25376a205a0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9891e54986cd829c92ab3f5a5ad3a81590cf1474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871206"
 ---
-# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Nasıl yapılır: program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma
+# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Nasıl Yapılır: Program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma
   Bu örnek aralığının başlangıç ve bitiş konumları karakter konumlarını nasıl aldığını gösterir.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -45,11 +42,9 @@ ms.locfileid: "35676879"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#25](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#25)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Nasıl yapılır: aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla paragraf işaretlerini aralık oluştururken hariç tutma](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Nasıl yapılır: program aracılığıyla karakter sayma sayısı](../vsto/how-to-programmatically-count-characters-in-documents.md)  
-  
-  
+ [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Nasıl yapılır: Aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Nasıl yapılır: Program aracılığıyla karakter sayma sayısı](../vsto/how-to-programmatically-count-characters-in-documents.md)  

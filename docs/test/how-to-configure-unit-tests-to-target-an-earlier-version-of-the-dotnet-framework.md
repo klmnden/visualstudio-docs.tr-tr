@@ -2,21 +2,20 @@
 title: Birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7b9032e8a1b6ee796bbea6ce7f7e3f5db7bcd205
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: df8489decc50c863bdfaec65c6de6ddc4d2dd229
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869922"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek şekilde yapılandırma
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl Yapılır: Birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek şekilde yapılandırma
 
 Microsoft Visual Studio ile bir test projesi oluşturduğunuzda, .NET Framework'ün en son sürümü ve hedef olarak varsayılan olarak ayarlanır. Test projeleri Visual Studio'nun önceki sürümlerinden yükseltiyorsanız, ayrıca, bunlar .NET Framework'ün en son sürümünü hedefleyecek şekilde yükseltilir. Proje özelliklerini düzenleyerek, açıkça projenin .NET Framework'ün önceki sürümleri için yeniden hedefleyebilirsiniz.
 

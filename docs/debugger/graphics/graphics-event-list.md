@@ -1,8 +1,6 @@
 ---
 title: Grafik olay listesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870748"
 ---
 # <a name="graphics-event-list"></a>Grafik Olay Listesi
 Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş Direct3D olayları keşfetmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
@@ -112,11 +110,11 @@ Bu pencere, olay listedeki seçili öğenin geçmişini görüntülemek sağlar.
 
 | Sütun | Açıklama |
 |-----------| - |
-| **Türü** | Giriş türü genellikle gösterilir *Oluştur*, *okuma* ve *yazma*. |
+| **Tür** | Giriş türü genellikle gösterilir *Oluştur*, *okuma* ve *yazma*. |
 | **Görünümü** | Zaman içinde o anda bir küçük resim kaynağının adını gösterir.  Küçük resim o anda bir kaynak Ayrıntıları görünümünü açmak için çift tıklayın. |
 | **Event** | Oluştuğu yöntem çağrısının gösterir olay oluşturulur.  Bireysel öğeleri üzerinde başka bir geçmiş İzle simgesini seçerek görüntülenebilir ![izleme simgesi](media/gfx_watch.png) uygun satırda.  Ayrıca, mavi renkte gibi çizilir hiçbir öğe `m_commandList` daha fazla ayrıntı için yukarıdaki ekran görüntüsünde, seçilebilir. |
 
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Cihaz Durumu Nedeniyle Nesnelerin Eksikliği](walkthrough-missing-objects-due-to-device-state.md)
+ [İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-device-state.md)

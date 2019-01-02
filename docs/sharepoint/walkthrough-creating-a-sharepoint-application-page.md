@@ -1,13 +1,8 @@
 ---
-title: 'İzlenecek yol: SharePoint uygulama sayfası oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir SharePoint uygulama sayfası oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867845"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>İzlenecek yol: SharePoint uygulama sayfası oluşturma
  
@@ -158,5 +153,5 @@ Visual Web Designer uygulamasını aşağıdaki konulardan kullanarak SharePoint
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)  
+[Nasıl yapılır: Uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)  
 [Application _layouts sayfa türü](http://go.microsoft.com/fwlink/?LinkID=169274)

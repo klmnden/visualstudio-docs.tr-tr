@@ -1,9 +1,6 @@
 ---
-title: Proje öncelik | Microsoft Docs
-ms.custom: ''
+title: Proje önceliği | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27341f78fb17fa5346a9dfbc7cdd3f86439d3d23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873901"
 ---
-# <a name="project-priority"></a>Proje önceliği
-Bir proje öğesi genellikle yalnızca bir proje çözümdeki üyesidir. Bu nedenle, IDE kolayca hangi proje öğesini açmak için kullanılan belirleyebilirsiniz. Ancak, bir madde birden fazla projesinin bir üyesi ise, IDE öğesini açmak için en iyi proje belirlemek için bir öncelik düzenini kullanır.  
+# <a name="project-priority"></a>Proje Önceliği
+Bir proje öğesi genellikle yalnızca bir proje çözümde üyesidir. Bu nedenle, IDE kolayca hangi proje öğesini açmak için kullanılan belirleyebilirsiniz. Ancak, bir öğe birden çok proje üyesi ise, IDE öğesini açmak için en iyi proje belirlemek için bir öncelik düzenini kullanır.  
   
  Aşağıdaki liste, proje Öncelik düzenini gösterir:  
   
--   IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> belge proje üyesi olup olmadığını belirlemek için çözümdeki her proje için yöntem.  
+-   IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> belge proje üyesi olup olmadığını belirlemek için çözümde her proje için yöntemi.  
   
--   Belge projesinin bir üyesi ise, proje önceliğine sahip, proje, bu belge işleme göre atar yanıt verir. Örneğin, bir dil proje kendi dil kaynak dosyaları için yüksek önceliğe sahip yanıt veriyor, ancak kendi derleme işleminin bir parçası kullanılmayan bir tanınmayan bir dosya türü için daha düşük bir öncelik verir.  
+-   Belge proje üyesi ise, proje önceliğine sahip, projeyi bu belgeyi kendi işlenmesini göre atar yanıt verir. Örneğin, bir dil proje kendi dil kaynak dosyaları için yüksek bir öncelik verir ancak kendi yapı işleminin bir parçası kullanılmayan bir tanınmayan dosya türü için daha düşük bir öncelik verir.  
   
--   Bir belge için projeye özgü özel düzenleyiciler veya tasarımcıları sağlayın projeleri de yüksek bir öncelik alır.  
+-   Bir belge için özel, projeye özgü düzenleyicileri veya tasarımcıları sağlayan projeleri de yüksek öncelik alır.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Numaralandırması öncelik değerleri belge sağlar.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Numaralandırma belge öncelik değerleri sağlar.  
   
--   En yüksek öncelikli belirtir proje belgeyi açmak için bağlam verilir. İki proje önceliği eşittir değerler döndürürse, etkin proje tercih edilir. Belgeyi açabilir çözümdeki proje yanıt verirse, IDE belge çeşitli dosyalar projede koyar. Daha fazla bilgi için bkz: [çeşitli dosyaları proje](../../extensibility/internals/miscellaneous-files-project.md).  
+-   En yüksek öncelikli belirten proje bağlamı belgeyi açmak için verilir. İki proje eşit öncelik değerleri dönerseniz, etkin proje tercih edilir. Bu belgeyi açamazsınız çözümdeki hiçbir proje yanıt verirse, IDE diğer dosyalar projesinde belge koyar. Daha fazla bilgi için [diğer dosyalar projesi](../../extensibility/internals/miscellaneous-files-project.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çeşitli dosyalar proje](../../extensibility/internals/miscellaneous-files-project.md)   
- [Nasıl yapılır: açık belgeler için düzenleyicileri açın](../../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Çeşitli dosyalar projesi](../../extensibility/internals/miscellaneous-files-project.md)   
+ [Nasıl yapılır: Açık açık belgeler için düzenleyicileri](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [Proje ve Proje Öğesi Şablonları Ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md)

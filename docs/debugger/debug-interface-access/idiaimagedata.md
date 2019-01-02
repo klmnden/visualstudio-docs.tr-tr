@@ -1,8 +1,6 @@
 ---
 title: Idiaımagedata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fae8401d7702351e4d51d8b8d485ece87a9478b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894135"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Modüle ya da görüntü temel konumu ve bellek uzaklıklarını ayrıntılarını gösterir.  
+Modülün veya görüntü temel konum ve bellek uzaklıkları ayrıntılarını sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,18 +33,18 @@ IDiaImageData : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Uygulamaya göre modülü sanal bellekte konumunu alır.|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Resmin sanal bellekte konumunu alır.|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Uygulama göreli modül sanal bellekte konumunu alır.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Görüntü sanal bellekte konumunu alır.|  
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Görüntü tabanlı burada bellek konumunu alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bazı hata ayıklama akışlar (XDATA, PDATA) görüntüde ayrıca depolanan verilerin kopyalarını içerir. Bu nesneler seçmeleri için veri akışı `IDiaImageData` arabirimi. Ayrıntılar için bu konudaki "Çağıranlar için Notlar" bölümüne bakın.  
+ Bazı hata ayıklama akışları (XDATA, PDATA), ayrıca görüntüde depolanan verilerin kopyalarını içerir. Bu nesneler için sorgulanabilir veri akışı `IDiaImageData` arabirimi. Ayrıntılar için bu konudaki "Arayanlar için Notlar" bölümüne bakın.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde `QueryInterface` üzerinde bir [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) nesnesi. Tüm hata ayıklama Not akışları Destek `IDiaImageData` arabirimi. Örneğin, şu anda yalnızca XDATA ve PDATA akışlarını destekleyen `IDiaImageData` arabirimi.  
+ Bu arabirim çağırarak elde `QueryInterface` üzerinde bir [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) nesne. Tüm hata ayıklama Not akışları Destek `IDiaImageData` arabirimi. Örneğin, şu anda yalnızca XDATA ve PDATA akışlarını destekleyen `IDiaImageData` arabirimi.  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte, destekleyen bir akış için hata ayıklama akışı tümünün arama `IDiaImageData` arabirimi. Bu tür bir akış bulunursa, o akışı hakkında bazı bilgiler görüntülenir.  
+ Bu örnekte tüm destekleyen herhangi bir akışı için hata ayıklama akışı arama `IDiaImageData` arabirimi. Böyle bir akış bulunursa, bu akış hakkında bazı bilgiler görüntülenir.  
   
 ```C++  
 void ShowImageData(IDiaSession *pSession)  
@@ -113,9 +111,9 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

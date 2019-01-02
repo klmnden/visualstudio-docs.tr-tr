@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Belgelerde metni program aracılığıyla açıklama ekleme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857033"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Nasıl Yapılır: Belgelerde metni program aracılığıyla açıklama ekleme
   Belge sınıfının açıklamalar özelliği bir Microsoft Office Word belgesindeki bir metin aralığı için bir açıklama ekler.  
@@ -52,5 +49,3 @@ ms.locfileid: "53804610"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: Belgelerden tüm açıklamaları program aracılığıyla kaldırma](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Belge konak öğesi](../vsto/document-host-item.md)  
-  
-  

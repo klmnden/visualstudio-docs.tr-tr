@@ -2,7 +2,6 @@
 title: Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878279"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 
@@ -31,7 +30,7 @@ Kullanım **AdvancedCompiler ayarları** iletişim kutusunun **Proje Tasarımcı
 
 2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **derleme** sekmesi.
 
-3.  Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [nasıl yapılır: ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../../debugger/how-to-set-debug-and-release-configurations.md).
+3.  Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4.  Tıklayın **Gelişmiş derleme seçenekleri**.
 
@@ -73,7 +72,7 @@ Koşullu derleme sabitleri sahip efekt, kullanmanın benzer bir [#Const](/dotnet
 
  **Özel sabitleri**
 
- Bu metin kutusunda, uygulamanızın herhangi özel bir sabit girin. Girişleri bu formu kullanarak virgülle ayrılmış: **Name1 "Value1", Name2 = "Value2", Name3 = "Value3"**.
+ Bu metin kutusunda, uygulamanızın herhangi özel bir sabit girin. Girişleri bu formu kullanarak virgülle ayrılmış olması: **Name1 "Value1", Name2 = "Value2", Name3 = "Value3"**.
 
 ## <a name="other-settings"></a>Diğer ayarlar
 

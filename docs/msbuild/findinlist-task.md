@@ -1,8 +1,6 @@
 ---
 title: Findınlist görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54562e26e0da5568ba74d40425cf377260d41000
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f083d44578a4fe61029c707b3798191c5b8b3665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865641"
 ---
 # <a name="findinlist-task"></a>FindInList görevi
 Belirtilen bir listede eşleşen itemspec sahip bir öğe bulur.  

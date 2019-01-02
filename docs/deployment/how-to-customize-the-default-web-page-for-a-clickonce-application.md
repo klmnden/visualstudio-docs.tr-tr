@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d64e6432c1bfe696bf3b116aa35b5f4a5c597507
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 97ab1335b846ecccf31addfa134fc63396dc841b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861283"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme
 ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik olarak oluşturulur ve birlikte uygulamayı yayınladınız. Varsayılan sayfa adı uygulama ve uygulama yükleme, önkoşulları yükleyin veya MSDN Yardımı'na erişmek için bağlantılar içerir.  
   
 > [!NOTE]
@@ -41,7 +39,7 @@ ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik
   
 ### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme  
   
-1.  Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1.  Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 2.  Web sunucusunda açık *Publish.htm* dosyasında Visual Web Designer'ı veya başka bir HTML düzenleyicisi.  
   

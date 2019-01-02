@@ -1,9 +1,6 @@
 ---
 title: SharePoint çözümleri geliştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871063"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint çözümleri geliştirme
   Bazı SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türlerinin bir listesi için bkz. [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Öğeleri bir açıklamasını ve özelliklerini bir SharePoint projesine aşağıda verilmiştir.  
@@ -48,7 +45,7 @@ ms.locfileid: "51295910"
   
  Bir SharePoint projesine içerik türü veya bir liste örneği gibi bir öğe eklediğinizde, bir özelliğe eklenir **özellikleri** düğümü. Öğenin kapsamı, yeni veya mevcut bir özelliğe eklenir olup olmadığını belirler. Yeni öğe mevcut özellikle aynı kapsama sahipse bu özelliğe eklenir. Aksi halde öğe yeni bir özelliğe eklenir.  
   
- El ile özellik eklemek için yürütme **Özellik Ekle** özellik düğümünün kısayol menüsünde komutu. Görüntüleyebilir veya özellik Tasarımcısı'nı kullanarak bir özelliğin içeriğini değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ El ile özellik eklemek için yürütme **Özellik Ekle** özellik düğümünün kısayol menüsünde komutu. Görüntüleyebilir veya özellik Tasarımcısı'nı kullanarak bir özelliğin içeriğini değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
  Bir özellik bir SharePoint projesine eklendiğinde görünür **Çözüm Gezgini** düğüm varsayılan olarak özellik adını*x*.feature, burada *x* benzersiz bir sayıdır. Bir özellik SharePoint sunucusuna dağıtıldıktan sonra SharePoint Yöneticisi, SharePoint sitesi kullanıcıları için kullanılabilir hale etkinleştirebilirsiniz.  
   
@@ -64,7 +61,7 @@ ms.locfileid: "51295910"
   
 ### <a name="project-properties"></a>Proje Özellikleri
   
-|Özellik adı|Açıklama|  
+|Özellik Adı|Açıklama|  
 |-------------------|-----------------|  
 |Etkin dağıtım yapılandırması|Dağıtım sırasında gerçekleştirilen adım serisini belirtir. Daha fazla bilgi için [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
 |Bütünleştirilmiş kod dağıtım hedefi|Nereye belirler *SharePoint uygulama derlemeleri* bulunur. Geçerli derleme konumu değerleri *GlobalAssemblyCache* (varsayılan) veya *WebApplication*.<br /><br /> Varsa *Korumalı çözüm* özelliği **true**, bu özelliği devre dışı bırakılır.|  
@@ -84,7 +81,7 @@ ms.locfileid: "51295910"
   
 ### <a name="project-item-properties"></a>Proje öğesi özellikleri
   
-|Özellik adı|Açıklama|  
+|Özellik Adı|Açıklama|  
 |-------------------|-----------------|  
 |Dağıtıma Çakışma Çözümlemesi|Özellikleri sunucudaki bir öğeninkilerle aynı olan bir proje öğesi dağıtılırken gerçekleştirilecek eylemi belirtir. Daha fazla bilgi için [sorun giderme SharePoint paketleme ve dağıtım](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
 |Özellik özellikleri|SharePoint'te dağıtıldığında bir özellikle birlikte eklenen değer kümesi (anahtar/değer çifti saklanır) belirtir. Özellik dağıtıldıktan sonra kodunuzdaki özellik değerlerine erişebilirsiniz. Daha fazla bilgi için [sağlama paketleme ve dağıtım bilgileri proje öğelerinde](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
@@ -95,7 +92,7 @@ ms.locfileid: "51295910"
   
 ### <a name="project-item-file-properties"></a>Proje öğesi dosyası özellikleri
   
-|Özellik adı|Açıklama|  
+|Özellik Adı|Açıklama|  
 |-------------------|-----------------|  
 |Derleme eylemi|Dosyanın nasıl derleme ve dağıtım işlemleriyle olan ilişkisi belirtir. Daha fazla bilgi için [dosya özelliklerini](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
 |Çıkış Dizinine Kopyala|Kaynak dosyalar çıkış dizinine mi kopyalanacağını belirtir. Aşağıdaki değerlerden biri olabilir:<br /><br /> -   *Kopyalamayın*<br />-   *Her zaman Kopyala*<br />-   *Yeniyse Kopyala*<br /><br /> Daha fazla bilgi için [dosya özelliklerini](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
@@ -104,7 +101,7 @@ ms.locfileid: "51295910"
 |Dağıtım Konumu|Dosyanın SharePoint sunucusundaki tam yolu. Bu yol, dağıtım kökü ve dağıtım yolu alt özelliklerinden oluşur.|  
 |Dağıtım yolu|Dosyanın Workflow1 gibi SharePoint Server dosyasındaki göreli yol\\. Dosyanın tam yolunu birleştirilerek oluşturulur *dağıtım yolu* sonuna değeri *dağıtım kökü* değeri.<br /><br /> Bir değeri seçerek *RootFile* için *dağıtım türü* özellik değişiklikleri *dağıtım kökü* özelliğini \<SharePointRoot >\\, tam olarak nitelenmiş yolu imzalanmayarak \<SharePointRoot > \Workflow1\\. Daha fazla bilgi için [paketleme ve dağıtma SharePoint çözümleri](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Dağıtım kökü|dize. Dosyanın SharePoint sunucusunda dağıtıldığı kök klasörü. Örneğin, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Değerini *dağıtım kökü* özelliği tarafından belirlenir *dağıtım türü* ayarı.|  
-|Dağıtım türü|Belirleyen dosya dağıtım türü kendi *dağıtım kökü* değeri. Aşağıdaki değerlerden biri olabilir:<br /><br /> NoDeployment:  *\<değer yok >*<br /><br /> Elementmanifest öğesini:  *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile:  *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Dağıtım türü|Belirleyen dosya dağıtım türü kendi *dağıtım kökü* değeri. Aşağıdaki değerlerden biri olabilir:<br /><br /> NoDeployment:  *\<değer yok >*<br /><br /> Elementmanifest öğesini: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Dosya Adı|Öğe dosyası için dosya veya klasörün adı.|  
 |Tam yolu|Öğe dosyasının konumu. (Salt okunur.)|  
   
@@ -113,9 +110,9 @@ ms.locfileid: "51295910"
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[SharePoint Projesi ve Proje Öğesi Şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md)|SharePoint projesi ve proje öğesi şablonları de kullanılabilir açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Nasıl yapılır: Bir SharePoint Projesine Öğeler Ekleme](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Yeni veya varolan öğeler ekleneceğini açıklar bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
+|[Nasıl yapılır: Bir SharePoint projesine öğeler ekleme](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Yeni veya varolan öğeler ekleneceğini açıklar bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.|  
 |[İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Adım adım bir müşteri alanı, içerik türü, liste tanımı ve liste örneği oluşturmada size yol gösterir.|  
-|[Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)|Oluşturduğunuz proje için bir olay alıcısı ekleneceğini açıklar [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Nasıl yapılır: Olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)|Oluşturduğunuz proje için bir olay alıcısı ekleneceğini açıklar [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
 |[SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)|İş akışı ilişkilendirme formları ve iş akışı başlatma formlarını içeren iş akışı projelerinin nasıl oluşturulduğunu açıklar.|  
 |[SharePoint için sayfa oluşturma](../sharepoint/creating-pages-for-sharepoint.md)|SharePoint için uygulama sayfaları, site sayfaları, ana sayfalar ve sayfa düzenleri gibi sayfaları nasıl oluşturacağınızı açıklar.|  
 |[SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Kullanıcıların içeriğini, görünümünü ve davranışını SharePoint sitesi sayfalarının bir tarayıcı kullanarak doğrudan değiştirmesine olanak tanıyan denetimler eklemeyi açıklar.|  
@@ -126,7 +123,7 @@ ms.locfileid: "51295910"
 |[Çözüme Dosyaları Dahil Etmek için Modül Kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Dosyaları dağıtmak için modülleri kullanmayı açıklar, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje SharePoint sitesi.|  
 |[Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Sunucu Gezgini kullanarak yerel SharePoint sitelerine göz atmak açıklar.|  
 |[Proje öğelerinde paketleme ve dağıtım bilgileri sağlayın](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Güvenli denetim girişleri, proje çıktı başvuruları ve özellikler gibi projeler için paketleme ve dağıtım bilgileri sağlamak için proje öğesi özelliklerini kullanmayı açıklar.|  
-|[Nasıl yapılır: eşlenmiş klasörler ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Nasıl eşlenen klasörler açıklar SharePoint kaynaklarına daha kolay erişim sağlamak için projenize eklendi.|  
+|[Nasıl yapılır: Eşlenmiş klasörler ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Nasıl eşlenen klasörler açıklar SharePoint kaynaklarına daha kolay erişim sağlamak için projenize eklendi.|  
 |[Korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md)|Korumalı çözümlerle ilgili sorunları açıklar.|  
 |[SharePoint Çözümleri için Güvenlik](../sharepoint/security-for-sharepoint-solutions.md)|SharePoint çözümleri geliştirmek için güvenlik konuları açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[URL Seçici iletişim kutusu &#40;Visual Studio'da SharePoint geliştirme&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Projenizdeki veya yerel SharePoint sunucusundaki kaynaklara yol başvuruları eklemek için kullanabileceğiniz bir iletişim kutusu tanımlar.|  
@@ -136,5 +133,3 @@ ms.locfileid: "51295910"
  [Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Derleme ve SharePoint çözümlerinde hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

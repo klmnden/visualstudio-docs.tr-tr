@@ -1,8 +1,6 @@
 ---
 title: Idiareadexeatrvacallback | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8836f1d234cddfff42f21a3d376eb93b21e4fe29
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e00ce2e1286c2309a11984f9bde23aa74071a076
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859298"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
-Yürütülebilir bir dosyanın göreli sanal adres tarafından belirtilen bayt sağlamak bir istemci uygulaması sağlar.  
+Bir göreli sanal adres tarafından belirtilen bir yürütülebilir dosyanın bayt sağlamak bir istemci uygulaması sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaReadExeAtRVACallback : IUnknown  
+IDiaReadExeAtRVACallback : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,18 +33,18 @@ IDiaReadExeAtRVACallback : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Belirtilen sayıda baytı belirtilen göreli sanal adresinden (RAV) yürütülebilir dosyası başlayarak okur.|  
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Bayt belirtilen göreli sanal adres (RVA) yürütülebilir dosyasından başlayarak belirtilen sayıda okur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İstemci uygulaması çalıştırılabilir programın dosyasına göreli sanal bir adresi kullanarak yürütülebilir dosyanın bayt sağlamak için bu arabirimi uygular. Mutlak dosya uzaklığı kullanmak için uygulama [Idiareadexeatoffsetcallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) arabirimi.  
+ İstemci uygulama yürütülebilir dosyası dosyasına göreli sanal adresi kullanan yürütülebilir dosya baytını sağlamak için bu arabirimi uygular. Bir mutlak dosya uzaklık kullanmak için uygulama [Idiareadexeatoffsetcallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  Bu yöntem istemci uygulaması tarafından uygulanan ve geçirilen [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) dosya okuma için alternatif bir yöntem olarak yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

@@ -1,9 +1,6 @@
 ---
 title: Özel komutlar tarafından kullanılan bit bayrakları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875426"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Özel komutlar tarafından kullanılan bit bayrakları
 Kaynak Denetimi Eklentisi API işlevleri bir dizi davranışını bir veya daha fazla BITS tek bir değer olarak ayarlayarak değiştirilebilir. Bu değerleri bit bayrakları bilinir. Kaynak Denetimi Eklentisi API tarafından kullanılan çeşitli bit bayrakları, bunları kullanan bir işlev tarafından gruplandırılmış burada açıklanmıştır.  
@@ -37,7 +34,7 @@ Kaynak Denetimi Eklentisi API işlevleri bir dizi davranışını bir veya daha 
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Kaynak Denetimi Eklentisi otomatik olarak metin veya ikili dosyanın olup olmadığını algılamak için bekleniyor.|  
 |`SCC_FILETYPE_TEXT`|0x01|Dosya türü metindir.|  
-|`SCC_FILETYPE_BINARY`|0x04|İkili dosya türü. **Not:** `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` bayrakları karşılıklı olarak birbirini dışlar.   Tam olarak bir ya da hiçbiri olarak ayarlayın.|  
+|`SCC_FILETYPE_BINARY`|0x04|İkili dosya türü. **Not:** `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` bayrakları karşılıklı olarak birbirini dışlar. Tam olarak bir ya da hiçbiri olarak ayarlayın.|  
 |`SCC_ADD_STORELATEST`|0x02|Yalnızca en son sürümü (deltaları yok) Store.|  
   
 ## <a name="diff-flags"></a>Fark bayrakları  
@@ -46,7 +43,7 @@ Kaynak Denetimi Eklentisi API işlevleri bir dizi davranışını bir veya daha 
 |Bayrağı|Değer|Açıklama|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Büyük/küçük harf farklılıkları yoksayın.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Boşluk farklılıkları yoksayın. **Not:** `SCC_DIFF_IGNORECASE` ve `SCC_DIFF_IGNORESPACE` bayraklar isteğe bağlı bit bayrakları.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Boşluk farklılıkları yoksayın. **Not:**  `SCC_DIFF_IGNORECASE` Ve `SCC_DIFF_IGNORESPACE` bayraklar isteğe bağlı bit bayrakları.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Tüm dosya içeriğini karşılaştırarak QD.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD tarafından sağlama toplamı.|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD dosya tarih/saat damgasının tarafından.|  
@@ -81,8 +78,8 @@ Kaynak Denetimi Eklentisi API işlevleri bir dizi davranışını bir veya daha 
   
 |Bayrağı|Değer|Açıklama|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE dizinleri geçirme, olmayan dosyalar: Bu dizinlerdeki tüm dosyaları alın.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE dizinleri geçiyor: Bu dizinler ve bunların tüm alt dizinleri.|  
+|`SCC_GET_ALL`|0x00000001L|IDE, dizinleri, dosyaları değil geçiyor: Bu dizinlerdeki tüm dosyaları alın.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE dizinleri geçiyor: Bu dizinler ve bunların tüm alt klasörleri alın.|  
   
 ## <a name="noption-values"></a>nOption değerleri  
  Bu bayraklar tarafından kullanılan [SccSetOption](../extensibility/sccsetoption-function.md) içinde `nOption` parametresi.  

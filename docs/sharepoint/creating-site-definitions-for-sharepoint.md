@@ -1,13 +1,8 @@
 ---
 title: SharePoint için site tanımları oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,52 +13,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868332"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
-  SharePoint Site tanımı projesinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanıza olanak tanır bir *site tanım*, hangi yeni bir SharePoint sitesi için bir temel olarak hizmet verir. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımı'nda, önceden yapılandırılmış listeleri, içerik türleri, Olay alıcıları, resimleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint BLOG gibi bazı site tanımları içerir. BLOG sitesi tanımına dayalı olarak bir site oluşturduğunuzda, site listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.  
+  SharePoint Site tanımı projesi içinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanızı sağlar bir *site tanım*, yeni bir SharePoint sitesi için bir temel olarak görev gören. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımında önceden yapılandırılmış listeler, içerik türleri, Olay alıcıları, görüntüleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint, BLOG gibi bazı site tanımları içerir. BLOG site tanımını temel alan bir site oluşturduğunuzda, site, listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.  
   
  Site tanımları hakkında daha fazla bilgi için bkz: [Site şablonları ve tanımları](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
 ## <a name="site-definition-projects"></a>Site tanımı projeleri
- Site tanımı projelerinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir SharePoint sitesi gereken temel dosyaları sağlar; herhangi bir varsayılan işlevsellik belirtmeyin. Dosyaları ve istediğiniz işlevselliği sağlamak için içeriği eklemeniz gerekir. Site oluşturma ve sizin için gereken dosyaları ekleyerek el ile oluşturabilirsiniz.  
+ Site tanımı projeleri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir SharePoint sitesi gereken temel dosyaları sağlar; herhangi bir varsayılan işlevsellik sağlamaz. Dosyaları ve istediğiniz işlevleri sağlamak için içeriği eklemeniz gerekir. Oluşturma ve ihtiyaç duyduğunuz dosyaları ekleyerek, siteyi el ile oluşturabilirsiniz.  
   
-## <a name="feature-stapling"></a>Zımbalı özelliği
- Site tanımları oluşturma yararlarından biri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otomatik olarak kullandıkları olan *özelliği Zımbalı*. Özellik Zımbalama işlevselliğini site tanımı kendisi yerine site tanımı bir özellik ekler. Bunun yapılması, özgün site tanımı değiştirmeden site tanımı kullanılarak oluşturulan herhangi bir siteye özelliği eklemenizi sağlar. Daha fazla bilgi için bkz: [özelliği Zımbalı](http://go.microsoft.com/fwlink/?LinkID=119283).  
+## <a name="feature-stapling"></a>Özellik Zımbalama
+ Site tanımları oluşturma yararlarından biri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] otomatik olarak kullandıkları olan *özellik Zımbalama*. Özellik Zımbalama işlevselliği ekleme site tanımını kendisi yerine bir site tanımı bir özellik ekler. Bunun yapılması, özgün site tanımı değiştirmeden site tanımı kullanılarak oluşturulan herhangi bir siteye özelliği eklemenizi sağlar. Daha fazla bilgi için [özellik Zımbalama](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Site tanımı projesi bileşenleri
- Bir site tanımı çözüm oluşturduğunuzda aşağıdaki varsayılan dosyaları eklenir, **SiteDefinition** düğümü.  
+## <a name="site-definition-project-components"></a>Site tanımı proje bileşenleri
+ Site tanımı çözümü oluşturduğunuzda, aşağıdaki varsayılan dosyaları eklenir, **SiteDefinition** düğümü.  
   
 |Dosya Adı|Açıklama|  
 |---------------|-----------------|  
-|*default.aspx*|Yeni SharePoint sitesi için varsayılan ASPX giriş sayfası.|  
-|*onet.XML*|Yeni sitenin yapılandırmasını, bileşenlerini site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler etkinleştirilen, içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web sitesiyle dahil bölümleri. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırıldıklarına eklenecek dosyalar listeler.|  
+|*Default.aspx*|Varsayılan ASPX giriş sayfasına yeni bir SharePoint sitesi için.|  
+|*Onet.XML*|Yeni sitenin yapılandırmasını, bileşenleri site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler, etkinleştirilmiş içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web Bölümleri siteyle dahil. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırılacağını eklenecek dosyaları listeler.|  
 |*webtemp_\<SiteDefinitionName > .xml*|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
   
- Varsayılan olarak, tüm site tanımları depolanmış  *\<sürücü: > \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* klasör. Her bir site tanımı kendi alt vardır.  
+ Varsayılan olarak, tüm site tanımları depolanan  *\<sürücü: > \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* klasör. Her bir site tanımı kendi alt vardır.  
   
 ## <a name="related-topics"></a>İlgili konular
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: Temel bir Site Tanımı Projesi Oluşturma](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Adım adım bir temel site tanımı projesi oluşturma aracılığıyla sizi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Nasıl yapılır: özel Site Tanım ve yapılandırma oluşturma](http://go.microsoft.com/fwlink/?LinkId=183309)|Varolan bir site tanımı kopyalama ve bu kopyayı değiştirerek bir özel site tanımı SharePoint'te oluşturmayı açıklar.|  
-|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Kullanılabilir site tanımları belirtir özgün dosya anlatılmakta **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
-|[SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)|SharePoint çözümlerini genel kullanım için hazırlamayı açıklar.|  
-|[SharePoint Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Kullanıcılar değiştirebilir bir SharePoint sayfasına bölümlerini nasıl oluşturabileceğiniz açıklanmaktadır.|  
-|[Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve Web Bölümleri çalıştıran yeniden kullanılabilir denetimler nasıl oluşturabileceğiniz açıklanmaktadır.|  
-|[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Projenizde bir Web sayfasını açtığınızda görüntülenen tasarımcının nasıl kullanılacağı açıklanmaktadır.|  
-|[ASP.NET Web sayfaları genel bakış](http://go.microsoft.com/fwlink/?LinkId=178726)|Yapısı hakkında genel bilgi sağlar [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web sayfaları, sayfa tarafından nasıl işleneceğini [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]ve nasıl [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfalarını görüntüleme XHTML standartlarıyla uyumlu biçimlendirme.|  
-|[ASP.NET Web sayfası sözdizimi](http://go.microsoft.com/fwlink/?LinkId=178727)|Bir ASP.NET sayfasını oluştururlar biçimlendirme öğelerini açıklar.|  
-|[Programlama ASP.NET Web sayfaları](http://go.microsoft.com/fwlink/?LinkId=178728)|Olay işleyicileri oluşturma hakkında bilgi sağlar [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfaları ve istemci komut dosyası ile çalışmaya nasıl.|  
-|[Windows SharePoint Services programlama](http://go.microsoft.com/fwlink/?LinkId=178729)|Sağlanan yönetilen nesne modeli kullanmayı açıklar [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
+|[İzlenecek yol: Temel bir Site tanımı projesi oluşturma](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Temel bir site tanımı projesi oluşturmak adım adım müşteri adayları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Nasıl yapılır: Bir özel Site tanımı oluşturup yapılandırma](http://go.microsoft.com/fwlink/?LinkId=183309)|Mevcut bir site tanımı kopyalama ve sonra kopyayı değiştirerek bir özel site tanımı SharePoint'te oluşturmayı açıklar.|  
+|[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|Kullanılabilir site tanımları belirten özgün dosyayı açıklayan **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
+|[SharePoint Çözümlerini Yerelleştirme](../sharepoint/localizing-sharepoint-solutions.md)|Genel kullanım için SharePoint çözümlerinizi hazırlanma işlemi açıklanmaktadır.|  
+|[SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Kullanıcıların değiştirebileceği bir SharePoint sayfasına bölümlerini nasıl oluşturacağınızı açıklar.|  
+|[Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Uygulama sayfaları ve Web Bölümleri'ni çalıştırın, yeniden kullanılabilir denetimleri nasıl oluşturacağınızı açıklar.|  
+|[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Projenizde bir Web sayfası açtığınızda görünen tasarımcıyı nasıl kullanacağınızı açıklar.|  
+|[ASP.NET Web sayfaları genel bakış](http://go.microsoft.com/fwlink/?LinkId=178726)|Yapısı hakkında genel bilgiler sağlar [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web sayfaları, sayfa tarafından nasıl işlendiğini [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)], nasıl ve ne [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfaları, XHTML standartları ile uyumlu biçimlendirme görüntüler.|  
+|[ASP.NET Web sayfası sözdizimi](http://go.microsoft.com/fwlink/?LinkId=178727)|Bir ASP.NET sayfasını oluştururlar işaretleme öğeleri açıklar.|  
+|[ASP.NET Web sayfaları programlama](http://go.microsoft.com/fwlink/?LinkId=178728)|Olay işleyicileri oluşturma hakkında bilgi sağlar [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfaları ve istemci komut dosyası ile çalışmayı öğrenin.|  
+|[Windows SharePoint Services programlama](http://go.microsoft.com/fwlink/?LinkId=178729)|Sağlanan yönetilen nesne modelinin nasıl kullanılacağını açıklar [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

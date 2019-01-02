@@ -1,8 +1,6 @@
 ---
 title: MSBuild başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872271"
 ---
 # <a name="msbuild-reference"></a>MSBuild başvurusu
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  

@@ -1,12 +1,11 @@
 ---
-title: 'CA2230: değişken bağımsız değişkenler için params kullanın | Microsoft Docs'
+title: 'CA2230: Değişken bağımsız değişkenler için params kullanın | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ad0f43ac18c39d1dfdf6464e5cd260b669e1a0da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62873157c15cbfd4c4bb7d6b45c71b8058ccec39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881681"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Değişken bağımsız değişkenler için params kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +57,3 @@ ms.locfileid: "49892738"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Dil bağımsızlığı ve dilden bağımsız bileşenler](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-

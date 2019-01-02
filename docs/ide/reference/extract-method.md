@@ -2,7 +2,6 @@
 title: Bir yöntemi
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a505d024f3021a94d90ca1182181148187fe844c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864770"
 ---
 # <a name="extract-a-method-refactoring"></a>Ayıklama yöntemi yeniden düzenleme
 
@@ -29,11 +28,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** kendi yönteme kodun bir parçasını kapatmanızı sağlar.
+**Ne:** Kodun bir parçasını kendi yönteme kapatmanızı sağlar.
 
-**Ne zaman:** başka bir yöntemden çağrılması gereken bazı yöntemi mevcut kodun bir parçasını sahip.
+**ne zaman:** Başka bir yöntemden çağrılması gereken bazı yöntemi, mevcut kodun bir parçasını sahip.
 
-**Neden:** , Kopyala/kod Yapıştır, ancak çoğaltma için neden. Bu parça halinde diğer herhangi bir yöntemle serbestçe çağrılabilir kendi yöntemi yeniden düzenleme daha iyi bir çözümdür.
+**Neden:** Kopyala/kod Yapıştır, ancak çoğaltma için neden. Bu parça halinde diğer herhangi bir yöntemle serbestçe çağrılabilir kendi yöntemi yeniden düzenleme daha iyi bir çözümdür.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

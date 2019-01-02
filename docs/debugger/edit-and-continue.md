@@ -2,7 +2,6 @@
 title: Kodu düzenleme ve hata ayıklamaya devam et | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/31/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
@@ -22,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64018143403555dfa671c7fb79be09dcd04d9011
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0946502c694704be62be2872da233bf1d6059b64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878984"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Kodu düzenleme ve hata ayıklama devam Visual Studio'da (C#, VB, C++)
 Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklikler yapmanızı sağlayan bir zamandan tasarruf özelliktir. Ne zaman, sürdürme programın yürütülmesini gibi bir yürütme komutu seçerek **devam** veya **adım**, Düzenle ve devam otomatik olarak kod değişiklikleri ile ilgili bazı sınırlamalar uygular. Bu, durdurmak, tüm programınızı yeniden derleyin ve hata ayıklama oturumunu yeniden zorunda kalmak yerine bir hata ayıklama oturumu sırasında kodunuzda değişiklikler yapmanızı sağlar.  

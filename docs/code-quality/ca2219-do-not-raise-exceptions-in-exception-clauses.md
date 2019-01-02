@@ -2,7 +2,6 @@
 title: 'CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49baf6fe645df35949f47f2796197977d428427e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4403ab65be60000bc758cf1a127e6b589c764702
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857714"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin
 
@@ -49,7 +48,7 @@ ms.locfileid: "49885973"
  Bu kural için bir uyarıyı bastırmayın. Altında oluşturulan bir özel durum yan tümcesinde bir özel durum kodu yürütürken bir avantaj sağlayan senaryo vardır.
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1065: Beklenmedik konumlarda özel durumlar tetiklemeyin](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+ [CA1065: Beklenmedik konumlarda özel durumlar harekete geçirmeyin](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
  [Tasarım Uyarıları](../code-quality/design-warnings.md)

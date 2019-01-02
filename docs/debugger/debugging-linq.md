@@ -1,8 +1,6 @@
 ---
 title: LINQ hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871011"
 ---
 # <a name="debugging-linq"></a>LINQ'de Hata Ayıklama
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Tümleşik hata ayıklama dilini destekler, bazı kısıtlamalarla (LINQ) kodunda sorgulayın. Hata ayıklama özelliklerinin çoğu LINQ deyimleriyle Adımlama, kesme noktaları ayarlama ve sonuçları hata ayıklayıcı pencerelerinde görüntüleme dahil olmak üzere çalışın. Bu konu LINQ hata ayıklamanın önemli sınırlamalarını açıklar.  

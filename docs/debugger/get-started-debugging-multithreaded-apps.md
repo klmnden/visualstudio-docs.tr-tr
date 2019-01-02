@@ -3,7 +3,6 @@ title: Çok iş parçacıklı uygulamalarda hata ayıklamayı öğrenin
 description: Paralel Yığınlar ve paralel izleme Visual Studio kullanarak hata ayıklama
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863296"
 ---
 # <a name="get-started-debugging-multithreaded-applications"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama
 Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticiyi tamamlamak, hata ayıklama çok iş parçacıklı uygulamalar için Visual Studio özellikleriyle alışmanızı.
@@ -35,9 +34,9 @@ Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata
 
 Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanma hakkında ek bilgiler sağlar:
 
-- Kullanılacak **hata ayıklama konumu** araç ve **iş parçacıkları** penceresinde görmek [izlenecek yol: birden çok iş parçacıklı bir uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
+- Kullanılacak **hata ayıklama konumu** araç ve **iş parçacıkları** penceresinde görmek [izlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
 
-- Kullanan bir örnek için <xref:System.Threading.Tasks.Task> (yönetilen kod) ve Eşzamanlılık Çalışma zamanı (C++) [izlenecek yol: paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md). En çok iş parçacıklı uygulama türleri için geçerli olan genel hata ayıklama ipuçları için bu konuda hem de bunu okuyun.
+- Kullanan bir örnek için <xref:System.Threading.Tasks.Task> (yönetilen kod) ve Eşzamanlılık Çalışma zamanı (C++) [izlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md). En çok iş parçacıklı uygulama türleri için geçerli olan genel hata ayıklama ipuçları için bu konuda hem de bunu okuyun.
   
 Öncelikle, bir çok iş parçacıklı bir uygulama projesi de gerekir. Bir örnek aşağıda verilmiştir.  
   
@@ -45,15 +44,15 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
   
 1.  Üzerinde **dosya** menüsünde **yeni** > **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+     **Yeni Proje** iletişim kutusu görünür.  
   
-2.  Bir dil seçin: **Visual C#** , **Visual C++**, veya **Visual Basic**.  
+2.  Bir dil seçin: **Görsel C#** , **Visual C++**, veya **Visual Basic**.  
   
 3.  Altında **Windows Masaüstü**, seçin **konsol uygulaması**.  
   
 4.  İçinde **adı** MyThreadWalkthroughApp girin.  
   
-5.  Seçin **Tamam**.  
+5.  **Tamam**’ı seçin.  
   
      Yeni bir konsol projesi görünür. Proje oluşturulduktan sonra bir kaynak dosyası görüntülenir. Seçtiğiniz dile bağlı olarak, kaynak dosyası olarak adlandırılabilir *Program.cs*, *MyThreadWalkthroughApp.cpp*, veya *Module1.vb*.  
   
@@ -258,7 +257,7 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
     Bu sağ tıklama menülerinde çeşitli eylemleri gerçekleştirebilirsiniz, ancak bu öğretici için size bu ayrıntıları birkaçını göstereceğiz **paralel izleme** penceresi (sonraki bölümlerde).
 
     > [!NOTE]
-    > Her iş parçacığı bilgileri görünümüyle listesini görmek için **iş parçacıkları** penceresi yerine. Bkz: [izlenecek yol: birden çok iş parçacıklı bir uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
+    > Her iş parçacığı bilgileri görünümüyle listesini görmek için **iş parçacıkları** penceresi yerine. Bkz: [izlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Bir değişken üzerinde bir izleme ayarlayın
 
@@ -345,6 +344,6 @@ Hata ayıklayıcı tek bir iş parçacığının yürütülmesini izlemek yararl
   
 ## <a name="see-also"></a>Ayrıca bkz.  
 [Çok iş parçacıklı uygulamaların hatalarını ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[Nasıl yapılır: Hata ayıklarken başka bir iş parçacığına geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Nasıl yapılır: paralel yığını penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)  
+[Nasıl yapılır: Hata ayıklarken başka bir iş parçacığına geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+[Nasıl yapılır: Paralel yığını penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)  
 [Nasıl yapılır: Paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  

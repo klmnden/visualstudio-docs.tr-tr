@@ -1,13 +1,8 @@
 ---
-title: 'İzlenecek yol: Tasarımcı kullanarak bir Web Bölümü SharePoint için oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Tasarımcı kullanarak SharePoint için bir Web Bölümü oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870920"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>İzlenecek yol: Tasarımcı kullanarak bir web bölümü SharePoint için oluşturma
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>İzlenecek yol: Tasarımcı kullanarak SharePoint için bir web bölümü oluşturma
 
 Bir SharePoint sitesi için web bölümleri oluşturursanız kullanıcılarınız doğrudan içeriğini, görünümünü ve bu sitedeki sayfaların davranışını bir tarayıcı kullanarak değiştirebilirsiniz. Bu kılavuzda SharePoint kullanarak görsel olarak bir web bölümü oluşturma işlemi gösterilmektedir **görsel Web Bölümü** Visual Studio'daki proje şablonu.
 
@@ -56,7 +51,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 2. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+     **Yeni Proje** iletişim kutusu görünür.
 
 3. İçinde **yeni proje** iletişim kutusunda, ya da altında **Visual C#** veya **Visual Basic**, genişletme **Office/SharePoint**, seçin **SharePoint çözümleri** kategorisi.
 
@@ -193,5 +188,5 @@ Belirtilen tüm takvimlerdeki olaylar, aylık takvim görünümü'nde görüntü
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Nasıl yapılır: bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Nasıl yapılır: Bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [İzlenecek yol: SharePoint için bir web bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

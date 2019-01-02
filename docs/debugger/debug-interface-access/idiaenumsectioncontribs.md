@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsectioncontribs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5903c276b82f8b689e67c20310ccc6d6a6514896
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 20b64b561c5b033a270458c258a418b4483f733b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859457"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 Veri kaynağında bulunan çeşitli bölüm Katkıları numaralandırır.  
@@ -27,7 +25,7 @@ Veri kaynağında bulunan çeşitli bölüm Katkıları numaralandırır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaEnumSectionContribs : IUnknown  
+IDiaEnumSectionContribs : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,21 +33,21 @@ IDiaEnumSectionContribs : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Sıralayıcı sürümü.|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|  
 |[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Bölüm Katkıları sayısını alır.|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Bölüm Katkıları yoluyla bir dizin alır.|  
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Belirtilen bir numaralandırma sırası bölüm katkı sayısını alır.|  
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Belirtilen sayıda bölüm katkı bir numaralandırma sırasını atlar.|  
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Aracılığıyla bir dizin bölümü Katkıları alır.|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Belirtilen bir numaralandırma sıralı bölümü Katkıları sayısını alır.|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Bir numaralandırma sıralı bölümü Katkıları belirtilen sayıda atlar.|  
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="note-for-callers"></a>Arayanlar için Not  
- Bu arabirimden elde [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) yöntemi. Ayrıntılar için bkz.  
+ Bu arabirimden elde [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) yöntemi. Ayrıntılar için örneğe bakın.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek nasıl alınacağını gösterir ( `GetEnumSectionContribs` işlevi) ve kullanma ( `ShowSectionContribs` işlevi) `IDiaEnumSectionContribs` arabirimi. Bölüm Katkıları kullanımının fazla tam örnek için bkz [Idiasectioncontrib](../../debugger/debug-interface-access/idiasectioncontrib.md) arabirimi.  
+ Bu örnek nasıl alınacağını gösterir ( `GetEnumSectionContribs` işlevi) ve ( `ShowSectionContribs` işlevi) `IDiaEnumSectionContribs` arabirimi. Bölüm Katkıları kullanarak daha kapsamlı örnek için bkz [Idiasectioncontrib](../../debugger/debug-interface-access/idiasectioncontrib.md) arabirimi.  
   
 ```C++  
   
@@ -102,9 +100,9 @@ void ShowSectionContribs(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

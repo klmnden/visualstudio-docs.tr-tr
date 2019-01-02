@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910265a63c9acc5f9835ff5006b6ac0c515a2d3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 957647f216e7a886cdbb0ff029727f1e275776f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870081"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Bu yöntem Görselleştirici hizmeti oluşturur.  
@@ -28,22 +25,22 @@ Bu yöntem Görselleştirici hizmeti oluşturur.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT CreateVisualizerService(  
-   IDebugBinder*              binder,  
-   IDebugSymbolProvider*      pSymProv,  
-   IDebugAddress*             pAddress,  
-   IEEVisualizerDataProvider* dataProvider,  
-   IEEVisualizerService**     ppService  
+HRESULT CreateVisualizerService(  
+   IDebugBinder*              binder,  
+   IDebugSymbolProvider*      pSymProv,  
+   IDebugAddress*             pAddress,  
+   IEEVisualizerDataProvider* dataProvider,  
+   IEEVisualizerService**     ppService  
 );  
 ```  
   
 ```csharp  
-int CreateVisualizerService(  
-   IDebugBinder binder,  
-   IDebugSymbolProvider      pSymProv,  
-   IDebugAddress             pAddress,  
-   IEEVisualizerDataProvider dataProvider,  
-   out IEEVisualizerService  ppService  
+int CreateVisualizerService(  
+   IDebugBinder binder,  
+   IDebugSymbolProvider      pSymProv,  
+   IDebugAddress             pAddress,  
+   IEEVisualizerDataProvider dataProvider,  
+   out IEEVisualizerService  ppService  
 );  
 ```  
   

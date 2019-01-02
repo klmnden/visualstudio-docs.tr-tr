@@ -1,8 +1,6 @@
 ---
-title: Modüller görünümü - örnekleme veri | Microsoft Docs
-ms.custom: ''
+title: Modüller görünümü - örnekleme verileri | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,34 +11,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4c4e3d9181fecd3c9aa2d91201deadb09de7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892984"
 ---
 # <a name="modules-view---sampling-data"></a>Modüller görünümü - örnekleme verileri
-Profil oluşturma verileri örneklenen modülleri göre gruplandırılmış veri görüntüler performans verileri örnekleme modülleri görünümü. Her modül hiyerarşik bir köküdür. Örneklenen işlevleri modülün modül düğümünün altında listelenir.  
+Örnekleme profil oluşturma verileri örneklenen modüller tarafından gruplandırılmış veri görüntüler performans verileri modülleri görünümü. Her bir hiyerarşik ağaç kökünde modülüdür. Örneklenen modülündeki işlevlerin modülü düğümünün altında listelenir.  
   
 > [!NOTE]
->  Gelişmiş güvenlik özellikleri Windows 8 ve Windows Server 2012 Visual Studio profil oluşturucu bu platformlarda toplar şekilde önemli değişiklikler gerekmiştir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- İşlev çalıştırıldığında ne zaman örnekleri toplandı (diğer bir deyişle, işlev çağrı yığını üstünde olduğu), yürütülmekte yönerge adreslerini ve kaynak satırları işlevi düğümünün altında listelenir. Çizgi veya yönerge yürütülürken zaman veri kaynak satırı veya bir yönerge işaretçisi için toplanan olduğundan (bunlar dahil) ve özel değerler her zaman satır verileri ve yönerge verileri için aynıdır.  
+ İşlevi çalıştırıldığında zaman örnekleri toplandı (diğer bir deyişle, işlev çağrı yığınının en üstünde olduğu), yürütülmekte yönerge adresi ve kaynak satırları işlevi düğümünün altında listelenir. Satırı veya yönerge yürüttüğünde veri kaynak satırı veya bir yönerge işaretçisini toplandığından, dahil ve hariç olan değerler her zaman satır verileri hem de yönerge veri için aynıdır.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
 |**Ad**|Modül, işlev, satır numarası veya yönerge işaretçisi adresi adı.|  
-|**İşlem kimliği**|İşlemi çalıştırmak profil oluşturma kimliği (PID).|  
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
 |**İşlem adı**|İşlemin adı.|  
-|**Modül adı**|İşlev, satır veya yönerge işaretçisi içeren modülü adı.|  
-|**Modül yolu**|Modül, işlev, satır veya yönerge işaretçisi içeren modülü yolu.|  
-|**Kaynak dosya**|Bu işlev için tanım içeriyor kaynak dosya.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**Kapsayıcı örnekleri**|-Bir işlev için bu işlev veya bu işlev tarafından çağrıldı bir işlevi yürütmeden; örnek sayısı diğer bir deyişle, çağrı sayısı, bu işlevi içeren örnekleri yığın.<br />-Bir modül için hangi en az bir işlevde modülden örneklerin sayısını yürütülmekte olan.<br />-Bir satır veya yönerge, örnek sayısı için bu satırı veya yönerge yürütürken.|  
-|**Kapsayıcı örnekleri %**|-İşlev veya modül için profil çalıştıran tüm örneklerini yüzdesi bu işlev veya modül (bunlar dahil) örnekleri yoktu.<br />-Bir satır veya yönerge için profil oluşturma tüm örneklerini yüzdesi çalıştırın, bu satırı veya yönerge yürütülmekte olan içinde.|  
-|**Özel örnekleri**|-Bir işlev için çağrı sayısı, bu işlev doğrudan yürütülmekte olan örnekleri yığın; diğer bir deyişle, bu işlev çağrı yığını üstünde olduğu örnek sayısı.<br />-Bir modül için özel örnekleri modülündeki işlevlerin toplamı.<br />-Bir satır veya yönerge, örnek sayısı için bu satırı veya yönerge yürütürken.|  
-|**Özel örnekleri %**|-İşlev veya modül için profil çalıştıran tüm örneklerini yüzdesi bu işlev veya modül özel örnekleri yoktu.<br />-Bir satır veya yönerge için profil oluşturma tüm örneklerini yüzdesi çalıştırın, bu satırı veya yönerge yürütülmekte olan içinde.|  
+|**Modül adı**|İşlevi, çizgi veya yönerge işaretçisini içeren modül adı.|  
+|**Modül yolu**|Modül, işlev, satır veya yönerge işaretçisini içeren modül yolu.|  
+|**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**Kapsamlı örnekler**|-Bir işlev için bu işlev veya bu işlev tarafından çağrılan bir işlev Yürütülüyor; örnek sayısı diğer bir deyişle, çağrı sayısı, bu işlevi içeren örnek yığın.<br />-Bir modül için modülünden hangi en az bir işlevdeki örneklerin sayısı yürütülüyor.<br />-Bir satır veya yönergesi, örnek sayısı için bu satırı veya yönerge yürütürken.|  
+|**Kapsamlı örnek yüzdesi**|-Bir işlev veya modül için profil çalıştıran tüm örneklerin yüzdesi bu işlev veya modül, kapsamlı örnekler yoktu.<br />-Bir satır veya yönerge için profil oluşturma tüm örneklerin yüzdesi çalıştırın, bu satırı veya yönerge Yürütülüyor içinde.|  
+|**Dışlamalı örnekler**|Bir işlev-çağrı sayısı bu işlev doğrudan yürütülmüş örnekleri yığın; diğer bir deyişle, bu işlev çağrı yığınının en üstünde olan örnek sayısı.<br />-Bir modül için modülündeki işlevlerin dışlamalı örnekler toplamı.<br />-Bir satır veya yönergesi, örnek sayısı için bu satırı veya yönerge yürütürken.|  
+|**Dışlamalı örnek yüzdesi**|-Bir işlev veya modül için profil çalıştıran tüm örneklerin yüzdesi bu işlev veya modül dışlamalı örnekleri yoktu.<br />-Bir satır veya yönerge için profil oluşturma tüm örneklerin yüzdesi çalıştırın, bu satırı veya yönerge Yürütülüyor içinde.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Modüller görünümü - örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)   

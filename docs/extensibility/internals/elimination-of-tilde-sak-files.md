@@ -1,9 +1,6 @@
 ---
 title: Saydamlığından ~ SAK dosyalarının | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862820"
 ---
 # <a name="elimination-of-sak-files"></a>Saydamlığından ~ SAK dosyalarının
 Kaynak Denetimi Eklentisi API 1.2 içindeki *~ SAK* özellik bayraklarının dosyalar değiştirildi ve bir kaynak olup olmadığını algılayan yeni işlevleri denetim eklentisini destekler *MSSCCPRJ* dosya ve paylaşımlı kullanıma Almalarla.  
@@ -42,7 +39,7 @@ Kaynak Denetimi Eklentisi API 1.2 ile sağlanan gelişmiş işlevleri destekleye
 ## <a name="new-functions"></a>Yeni işlevleri  
  [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)  
   
- [Sccısmulticheckoutenabled](../../extensibility/sccismulticheckoutenabled-function.md)  
+ [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
  Kaynak Denetimi Eklentisi birden çok (paylaşılan) kullanıma destekler ve ardından bunu bildirir, `SCC_CAP_MULTICHECKOUT` yetenek ve uygular `SccIsMultiCheckOutEnabled` işlevi. Kaynak denetimli projelerin herhangi bir kullanıma alma işlemi oluştuğunda, bu işlev çağrılır.  
   

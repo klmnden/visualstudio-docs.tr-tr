@@ -1,9 +1,6 @@
 ---
-title: Proje Subtypes başlatma sırası | Microsoft Docs
-ms.custom: ''
+title: Proje alt türlerinin başlatılma sırası başlatma | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
@@ -13,42 +10,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe7e7a574d04ec9a49252e32e0fbb8b5685778aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7773d13c973579aaa82324c63e324e78d62a6e8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868634"
 ---
-# <a name="initialization-sequence-of-project-subtypes"></a>Proje Subtypes başlatma sırası
-Temel Proje Fabrika uygulanması çağırarak ortam bir proje oluşturur <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Bir proje alt yapı ortamı proje dosyasının uzantısı için proje türü GUID listesi boş olmadığını belirlerken başlatır. Proje GUID ve proje dosya uzantısının proje olup olmadığını belirtin bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] veya [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proje türü. Örneğin, .vbproj uzantısı ve {tanımlamak F184B08F-C81C-45F6-A57F-5ABD9991F28F} bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projesi.
+# <a name="initialization-sequence-of-project-subtypes"></a>Proje Alt Türlerinin Başlatılma Sırası
+Ortam, temel proje fabrikası uygulamasını çağırarak bir proje oluşturur <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Bir proje alt yapı ortamı için bir proje dosyasının uzantısı proje türü GUID listesi boş olmadığını belirlerken başlatır. GUID proje ve proje dosya uzantısıyla proje olup olmadığını belirtin. bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] veya [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proje türü. Örneğin, .vbproj uzantısı ve {tanımlamak F184B08F-C81C-45F6-A57F-5ABD9991F28F} bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] proje.
 
-## <a name="environments-initialization-of-project-subtypes"></a>Proje Subtypes Ortamı'nın başlatılması
- Aşağıdaki yordamı birden çok proje alt türleri tarafından toplanan proje sistemi başlatma sırası ayrıntılarını verir.
+## <a name="environments-initialization-of-project-subtypes"></a>Proje alt türlerinin başlatılma ortamın başlatma
+ Aşağıdaki yordam başlatma sırası için bir proje sistemi birden çok proje alt türleri tarafından toplanan ayrıntılı olarak açıklanmaktadır.
 
-1.  Ortam temel projenin çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, ve kendi proje dosyası projeye ayrıştırır sırada birleşik proje türü GUID'ler listesi olmadığını bulur `null`. Proje doğrudan kendi projesi oluşturma sona erdirir.
+1.  Temel projenin ortam çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, ve proje, proje dosyası Ayrıştırma sırasında toplama proje türü GUID listesi olmadığını bulur `null`. Proje, doğrudan kendi proje oluşturma sona erdirir.
 
-2.  Proje çağrıları `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> ortam uygulamasını kullanarak bir proje alt oluşturmak için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi. Bu yöntem içinde ortamı özyinelemeli işlev çağrıları, uygulamalarına yapar <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> proje listesi taramasını sırada yöntemleri GUID'ler en dıştaki proje alt türü ile başlayarak, yazın.
+2.  Proje çağrıları `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> ortamın uygulamasını kullanarak bir proje alt türü oluşturmak için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi. Bu yöntem içinde ortamı özyinelemeli işlev çağrıları, uygulamalarına hale <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> GUID'leri, en dıştaki proje alt türü ile başlayarak, proje listesi walking sırasında yöntemlerin yazın.
 
-     Başlatma adımları ayrıntıları.
+     Başlatma adımları açıklanmaktadır.
 
-    1.  Ortam uyarlamasını <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntem çağrılarını `HrCreateInnerProj` aşağıdaki işlev bildirimi yöntemiyle:
+    1.  Ortamın uygulaması <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntem çağrılarını `HrCreateInnerProj` aşağıdaki işlev bildirimi ile yöntemi:
 
          <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
-         Ne zaman bu işlevi çağrıldığında ilk olarak, diğer bir deyişle, en dıştaki proje alt türü için parametreler `pOuter` ve `pOwner` olarak iletilen `null` ve en dıştaki proje alt işlevi ayarlar `IUnknown` için `pOuter`.
+         Ne zaman bu işlev çağrılır ilk kez, diğer bir deyişle, en dıştaki proje alt türü için parametreler `pOuter` ve `pOwner` olarak geçirilir `null` ve işlevin en dıştaki proje alt ayarlar `IUnknown` için `pOuter`.
 
-    2.  Sonraki ortamı çağırır `HrCreateInnerProj` listesindeki ikinci proje türü GUID ile işlevi. Bu GUID toplama dizisi temel projede doğru atlama ikinci iç proje alt karşılık gelir.
+    2.  Sonraki ortam çağırır `HrCreateInnerProj` listede ikinci proje türü GUID ile işlevi. Bu GUID, temel proje toplama dizideki doğru Adımlama ikinci iç proje alt karşılık gelir.
 
-    3.  `pOuter` Şimdi işaret `IUnknown` en dıştaki proje alt ve `HrCreateInnerProj` uygulamanıza çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> uygulamanıza bir çağrı tarafından izlenen <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> geçirdiğiniz denetleme yöntemi `IUnknown` en dıştaki proje alt `pOuter`. Sahibi projeye (iç proje alt türü), toplama proje nesne oluşturması gerekir. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> geçirdiğiniz gösteren bir işaretçi yöntem uygulaması `IUnknown` toplanmakta iç projesinin. Bu iki yöntem toplama nesnesi oluşturun ve başvuru sayısı kendisine bulunduran proje alt bitmez emin olmak için COM toplama kurallarına, uygulamaları gerekir.
+    3.  `pOuter` Artık işaret `IUnknown` , en dıştaki proje alt türü ve `HrCreateInnerProj` uygulamanıza çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> uygulamanız için bir çağrı tarafından izlenen <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> geçirdiğiniz denetleme yöntemi `IUnknown` , en dıştaki proje alt `pOuter`. Sahip olunan proje (iç proje alt türü), toplama proje nesne oluşturmak gerekir. İçinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> geçirdiğiniz bir işaretçiye yöntem uygulaması `IUnknown` toplanmakta olan iç projenin. Bu iki yöntem toplama nesnesi oluşturun ve proje alt türü bir başvuru sayısı kendisine tutarak bitmiyor emin olmak için COM toplama kurallarını izleyin, uygulamaları gerekir.
 
-    4.  `HrCreateInnerProj` uygulamanıza çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bu yöntemde, proje alt başlatma işini yapar. Örneğin, çözüm olayları kayıt yaptırabilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.
+    4.  `HrCreateInnerProj` Uygulamanız, çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Bu yöntemi başlatma işini proje alt türü yapar. Örneğin, çözüm olayları kaydedebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.
 
-    5.  `HrCreateInnerProj` Listedeki son GUID (Temel Proje) ulaşılana kadar yinelemeli olarak adlandırılır. Her bu çağrılardan adımları, d c yinelenir. `pOuter` işaret en dıştaki proje alt `IUnknown` her düzeyi toplama için.
+    5.  `HrCreateInnerProj` Son GUID (Temel Proje) listesinde tarihe kadar yinelemeli olarak adlandırılır. Her biri bu çağrılar için adımları, c d yinelenir. `pOuter` en dıştaki proje alt türü için işaret `IUnknown` her düzeyi bir toplama.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek yaklaşık bir temsili programlı işleminde ayrıntıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi olarak ortamı tarafından gerçekleştirilir. Kod yalnızca bir örnektir; derlenecek amaçlanmamıştır ve daha anlaşılır olması için tüm hata denetimi kaldırıldı.
+Aşağıdaki örnekte, yaklaşık bir temsilini programlı işlemde ayrıntıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntemi olarak, ortamı tarafından gerçekleştirilir. Kodu yalnızca örnek olarak verilmiştir; derlenecek tasarlanmamıştır ve açıklık için tüm hata denetimi kaldırıldı.
 
 ```cpp
 HRESULT CreateAggregateProject

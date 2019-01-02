@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - anahtar<T> etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
 - System.Activities.Statements.Switch`1.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5109b57ba203bbc0bd0a76cb61985ecfaa132967
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873862"
 ---
 # <a name="switcht-activity-designer"></a>Anahtar\<T > etkinlik Tasarımcısı
 
@@ -38,7 +37,7 @@ Erişim **anahtar\<T >** etkinlik Tasarımcısı'nda **akış denetimi** kategor
 
 Aşağıdaki tabloda en kullanışlı gösterilmektedir <xref:System.Activities.Statements.Switch%601> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı belirtir <xref:System.Activities.Statements.Switch%601> etkinlik Tasarımcısı. Varsayılan değer anahtarı: < Int32\>. Değer içinde düzenlenebilir **özellikleri** penceresi veya doğrudan Tasarımcı başlığı.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|Doğru|Bu durumda, yürütülecek belirlemek için çalışmaları koleksiyondaki anahtarların ile karşılaştırmak için kullanılan ifade belirtir.|

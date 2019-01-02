@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: rapor görünümü sütunlarını özelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Rapor görünümü sütunlarını özelleştirme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
@@ -15,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f06b360348ad06df6433c67a4cae7f543ea5ce
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861166"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Nasıl yapılır: rapor görünümü sütunlarını özelleştirme
-Performans araçları Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamına (IDE) sorunsuz bir kullanıcı deneyimi sağlamak için tam olarak tümleşiktir. Aşağıdaki liste, ekleme, kaldırma ve sütunları yeniden düzenleme özelleştirilmiş görünüm temsilcisidir:  
+# <a name="how-to-customize-report-view-columns"></a>Nasıl Yapılır: Rapor görünümü sütunlarını özelleştirme
+Visual Studio Team System geliştirme sürümü Performans araçları tümleşik geliştirme ortamına (IDE) kesintisiz bir kullanıcı deneyimi sağlamak için tam olarak tümleşiktir. Aşağıdaki listede ekleme, kaldırma ve sütunları yeniden düzenleme özelleştirilmiş görünümleri etmektedir:  
   
 -   [Modüller Görünümü](../profiling/modules-view.md)  
   
@@ -33,11 +31,11 @@ Performans araçları Visual Studio Team System geliştirme sürümü tümleşik
   
 -   [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view.md)  
   
--   [Arayan/Aranan görünümü](../profiling/caller-callee-view.md)  
+-   [Çağıran/Çağrılan Görünümü](../profiling/caller-callee-view.md)  
   
 -   [Çağrı Ağacı Görünümü](../profiling/call-tree-view.md)  
   
--   [Ayırmalar görünümü](../profiling/dotnet-memory-allocations-view.md)  
+-   [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)  
   
 -   [Nesne Ömrü Görünümü](../profiling/object-lifetime-view.md)  
   
@@ -45,13 +43,13 @@ Performans araçları Visual Studio Team System geliştirme sürümü tümleşik
   
 -   [İşlem Görünümü](../profiling/process-view.md)  
   
-### <a name="to-customize-a-report-view"></a>Rapor görünümü özelleştirmek için  
+### <a name="to-customize-a-report-view"></a>Bir rapor görünümünü özelleştirmek için  
   
-1.  Rapor görünümü açın.  
+1.  Rapor görünümünü açın.  
   
-2.  Rapor görünümü yüzeyine sağ tıklayın ve ardından **Sütun Ekle/Kaldır**.  
+2.  Rapor görünümü yüzeyine sağ tıklayın ve ardından **sütunları Ekle/Kaldır**.  
   
-     **Sütun Ekle/Kaldır** iletişim kutusu görüntülenir.  
+     **Sütunları Ekle/Kaldır** iletişim kutusu görüntülenir.  
   
 3.  Eklemek istediğiniz sütunları seçin.  
   

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_rvaluereference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3931dbfda4d4c94b1244ce7ba08ab273729b61c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bef3d87c745beaf7374cdfdc4abfa9ede8f2bfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867494"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 Bir işaretçi türü bir rvalue başvurusu olup olmadığını belirten bir bayrak alır. Şu durumlarda kullanın [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) bir işaretçi türüne ayarlanır.  
@@ -45,7 +43,7 @@ HRESULT get_RValueReference (
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

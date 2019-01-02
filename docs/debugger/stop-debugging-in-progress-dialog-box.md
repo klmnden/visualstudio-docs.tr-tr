@@ -1,8 +1,6 @@
 ---
 title: İlerleme durumu iletişim kutusu hata ayıklamayı durdurmak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stopnow
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6e13967cc18fae8d837cc71ea8a91c60f2b1bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3abce02ba1804ff619a7d0f24da35747c2f9ff91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883139"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Devam Eden Hata Ayıklamayı Durdur İletişim Kutusu
 Bu iletişim kutusu, hata ayıklama oturumunu durdurmak hata ayıklayıcı çalışırken görünür, ancak oturumunu durdurmak için biraz zaman olan. Hata ayıklama oturumunu durdurmak normalde çok hızlı olması ve bu iletişim kutusunda görünmez. Bazı durumlarda, ayıklanan tüm işlemleri ayırma için ek süre sürer ancak. Birkaç saniye sürer oturum durduruluyor (veya bir ayırma hatası oluşursa), bu iletişim kutusu görüntülenir. Bu sıklıkla ortaya çıkarsa, dahili bir sorun nedeniyle olabilir ve Ürün Destek Hizmetleri'ne başvurun isteyebilirsiniz.  

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir Web sitesi için performans verileri toplama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir Web sitesi için performans verilerini toplama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864157"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: bir web sitesi performans verileri toplama
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl Yapılır: Bir web sitesi için performans verilerini topla
 
 Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplamak için bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması. Visual Studio'da açık olan bir web uygulaması profilini oluşturabilirsiniz veya profil bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web sitesi, yerel bilgisayarınızda bulunan ve Visual Studio IDE'de açık değil.
 

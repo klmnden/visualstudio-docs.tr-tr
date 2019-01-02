@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - PickBranch etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e45c8ec2d7af5f1bfde5e145607728d3ff0bc85d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860263"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch Etkinlik Tasarımcısı
 
@@ -54,7 +53,7 @@ Seçtiğinizden emin olun **PickBranch** Tasarımcı içinde etkinliklerden biri
 
 Aşağıdaki tabloda en kullanışlı gösterilmektedir <xref:System.Activities.Statements.PickBranch> özellikler ve iş akışı Tasarımcısı'nda kullanmayı açıklar.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Başlığında görüntülenen kolay ad **PickBranch** Tasarımcısı. Varsayılan değer daldır.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Doğru|Her <xref:System.Activities.Statements.PickBranch> içeren bir <xref:System.Activities.Statements.PickBranch.Trigger%2A> çağırabilirsiniz eylem <xref:System.Activities.Statements.PickBranch.Action%2A>.|

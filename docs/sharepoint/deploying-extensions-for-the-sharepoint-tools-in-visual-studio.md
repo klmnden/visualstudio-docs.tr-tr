@@ -1,9 +1,6 @@
 ---
 title: Visual Studio'da SharePoint araçları için hata ayıklama uzantıları | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880828"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint araçları için uzantıları dağıtma
 
@@ -52,11 +49,11 @@ Varsayılan olarak, VSIX projeleri yalnızca VSIX paketlerini değil derlemeleri
 
 Ek projeleri ile aynı zamanda belirli ve uzantı türlerini çalışabilir:
 
--   Uzantınız tarafından kullanılan herhangi bir SharePoint komut uygulayan bir sınıf kitaplığı projesi. Bu senaryoyu gösteren bir kılavuz için bkz. [izlenecek yol: Sunucu Gezgini web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+-   Uzantınız tarafından kullanılan herhangi bir SharePoint komut uygulayan bir sınıf kitaplığı projesi. Bu senaryoyu gösteren bir kılavuz için bkz. [izlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Uzantınızı yeni bir SharePoint proje öğesi türü tanımlıyorsa oluşturan bir öğe şablonu veya proje şablonu, bir öğe şablonu veya proje şablonu projesi. Bu senaryoyu gösteren bir kılavuz için bkz. [izlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+-   Uzantınızı yeni bir SharePoint proje öğesi türü tanımlıyorsa oluşturan bir öğe şablonu veya proje şablonu, bir öğe şablonu veya proje şablonu projesi. Bu senaryoyu gösteren bir kılavuz için bkz. [izlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Bir öğe şablonu veya proje şablonu, özel bir sihirbazın uzantınızı bir şablon içeriyorsa uygulayan bir sınıf kitaplığı projesi. Bu senaryoyu gösteren bir kılavuz için bkz. [izlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+-   Bir öğe şablonu veya proje şablonu, özel bir sihirbazın uzantınızı bir şablon içeriyorsa uygulayan bir sınıf kitaplığı projesi. Bu senaryoyu gösteren bir kılavuz için bkz. [izlenecek yol: Bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Tüm projeleri aynı Visual Studio çözümünde eklerseniz, sınıf kitaplığı projeleri derleme çıktısını dahil etmek için VSIX projesinde source.extension.vsixmanifest dosyasını değiştirebilirsiniz.
 
@@ -218,10 +215,10 @@ Aşağıdaki tablo, bir VSIX projesi SharePoint araç uzantıları farklı türd
 
 |Uzantı türü|İlgili izlenecek yollar|
 |--------------------|--------------------------|
-|Uzantı derlemesini içeren bir uzantı|[İzlenecek yol: bir SharePoint proje öğesi türünü genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [İzlenecek yol: bir SharePoint proje uzantısı oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|SharePoint komutları içeren bir uzantı|[İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [İzlenecek yol: bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|Visual Studio şablonu içeren bir uzantı|[İzlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [İzlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
-|İçeren bir şablon Sihirbazı uzantısı|[İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [İzlenecek yol: bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Uzantı derlemesini içeren bir uzantı|[İzlenecek yol: Bir SharePoint proje öğesi türünü genişletme](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [İzlenecek yol: Bir SharePoint proje uzantısı oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|SharePoint komutları içeren bir uzantı|[İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Visual Studio şablonu içeren bir uzantı|[İzlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [İzlenecek yol: Bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|İçeren bir şablon Sihirbazı uzantısı|[İzlenecek yol: Bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
 ## <a name="create-vsix-packages-manually"></a>VSIX paketlerini el ile oluşturma
 

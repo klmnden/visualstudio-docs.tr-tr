@@ -1,8 +1,6 @@
 ---
 title: UWP uygulamalarında enerji kullanımını çözümleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860870"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını analiz etme
 Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya tamamını kendi piliyle çalışan düşük güçlü tablet cihazları UWP uygulamaları güç ve enerji tüketimini çözümlemenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimsenme oranını artırabilirsiniz ve müşteriler tarafından kullanın.  
@@ -29,9 +27,9 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
  Enerji Tüketimi profil oluşturucusu, profil oluşturma oturumu sırasında bir cihazın ekran, CPU ve ağ bağlantıları etkinliklerini yakalar. Sonra, bu etkinlikler için kullanılan güçle ilgili ve profil oluşturma oturumunun toplam enerji miktarı için tahminler oluşturur.  
   
 > [!NOTE]
->  Enerji profil oluşturucusu, güç ve enerji kullanımını tahmin etmek için, uygulamalarınızın çalıştırılabileceği düşük güçlü tablet cihazları temsil eden standart bir referans cihaz donanımı içeren bir yazılım modeli kullanır. En iyi tahminleri sağlamak için, düşük güç kullanan bir tablet cihazdaki profil verilerini toplamanız önerilir.  
+> Enerji profil oluşturucusu, güç ve enerji kullanımını tahmin etmek için, uygulamalarınızın çalıştırılabileceği düşük güçlü tablet cihazları temsil eden standart bir referans cihaz donanımı içeren bir yazılım modeli kullanır. En iyi tahminleri sağlamak için, düşük güç kullanan bir tablet cihazdaki profil verilerini toplamanız önerilir.  
 >   
->  Bu model düşük güç tüketen çeşitli cihazlar için iyi tahminler sağlasa da, profilini oluşturduğunuz cihazın gerçek değerleri muhtemelen farklı olur. Diğer kaynaklara göre daha maliyetli ve dolayısıyla optimizasyon için iyi aday olabilecek ekran, CPU ve ağ etkinliklerini bulmak için değerleri kullanın.  
+> Bu model düşük güç tüketen çeşitli cihazlar için iyi tahminler sağlasa da, profilini oluşturduğunuz cihazın gerçek değerleri muhtemelen farklı olur. Diğer kaynaklara göre daha maliyetli ve dolayısıyla optimizasyon için iyi aday olabilecek ekran, CPU ve ağ etkinliklerini bulmak için değerleri kullanın.  
   
  Enerji tüketimi Profil Oluşturucusu bu tanımları kullanır *güç* ve *enerji*:  
   
@@ -54,13 +52,13 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
   
  **C#, Visual Basic, C++ kodu işaretler ekleme**  
   
- Bir kullanıcı işareti C# için eklemek için Visual Basic, C++ koduna, oluşturun bir [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) nesne. Ardından çağrıları Ekle [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) kodunuzda işaretlemek istediğiniz noktalarda yöntemleri. Kullanım [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) çağrılarda.  
+ Kullanıcı işareti eklemek için C#, Visual Basic, C++ kodu ilk oluşturmak bir <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName> nesne. Ardından çağrıları Ekle <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> kodunuzda işaretlemek istediğiniz noktalarda yöntemleri. Kullanım [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) çağrılarda.  
   
  Yöntem yürütüldüğünde, profil oluşturma verilerine bir iletiyle birlikte bir kullanıcı işareti eklenir.  
   
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel uygulayan [Windows.Foundation.ıclosable](/uwp/api/windows.foundation.iclosable) arabirimi (tahmini olarak [System.IDisposable](/dotnet/api/system.idisposable) C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) C# ve VB) işiniz bittiğinde günlük kaydı ile Kanal.  
->   -   Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışmak özel duruma neden olur.  
+>  - Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışmak özel duruma neden olur.  
   
  Bkz. Windows SDK'sı örneği [LoggingSession örneğine](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) örnekler.  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      UWP uygulamaları için Visual Studio simulator, ağ bilgi API'lerinin veri bağlantısı özelliklerinin benzetimini yapmak sağlar. Bkz: [simulator'da çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   **JavaScript işlev zamanlaması** ve **CPU kullanımı** araçları, yetersiz işlevlerin neden olduğu CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [analiz CPU kullanımı](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   **JavaScript işlev zamanlaması** ve **CPU kullanımı** araçları, yetersiz işlevlerin neden olduğu CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [analiz CPU kullanımı](/visualstudio/profiling/beginners-guide-to-performance-profiling).
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Visual Studio profil oluşturma](../profiling/index.md)  
- [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)
+
+- [Visual Studio profil oluşturma](../profiling/index.md)  
+- [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

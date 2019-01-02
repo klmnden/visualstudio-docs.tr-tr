@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856871"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak rapor dosyaları, kaynak kodu dosyaları ve etki alanına özgü dil modelleri tabanlı diğer metin dosyaları oluşturabilirsiniz. Temel metin şablonları hakkında daha fazla bilgi için [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonlarını DSL'nizi ayıklanırken Deneysel modda çalışır ve DSL dağıtmış olan bir bilgisayar üzerinde de çalışır.
@@ -58,7 +57,7 @@ Here is a list of elements in the model:
 
 - Belirttiğiniz model dosyası şablon yüklendikten `requires` özelliği.
 
-- Bir özelliğin `this` kök öğe içeriyor. Burada, kodunuzun diğer model öğelerine gidebilirsiniz. Özelliğin adı genellikle kök etki alanı sınıfı, DSL'nin ile aynıdır. Bu örnekte olduğu `this.ExampleModel`.
+- Bir özelliğin `this` kök öğe içeriyor. Burada, kodunuzun diğer model öğelerine gidebilirsiniz. Özelliğin adı genellikle kök etki alanı sınıfı, DSL'nin ile aynıdır. Bu örnekte bu değer `this.ExampleModel`’dur.
 
 - C# kod parçalarını yazıldığı dili olmasına karşın, herhangi bir türdeki metin oluşturabilirsiniz. Alternatif olarak kod yazabileceğiniz [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] özelliği ekleyerek `language="VB"` için `template` yönergesi.
 

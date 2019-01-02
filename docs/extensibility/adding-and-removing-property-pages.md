@@ -1,9 +1,6 @@
 ---
 title: Ekleme ve kaldırma özellik sayfaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885323"
 ---
 # <a name="add-and-remove-property-pages"></a>Özellik sayfaları eklemenizi ve kaldırmanızı
 Proje Tasarımcısı proje özelliklerini, ayarlarını ve kaynakları yönetmek için merkezi bir konum sağlayan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Tek bir pencerede olarak göründüğü [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) ve sekmeleri soldaki aracılığıyla erişilen bölmeleri sağdaki sayısını içerir. (Genellikle özellik sayfaları adlandırılır) bölmeleri Proje Tasarımcısı'nda proje türü ve dili değişiklik gösterir. Proje Tasarımcısı ile erişilebilir **özellikleri** komutunu **proje** menüsü.  

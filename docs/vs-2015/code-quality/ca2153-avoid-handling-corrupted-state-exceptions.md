@@ -4,8 +4,7 @@ ms.custom: ''
 ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
@@ -13,14 +12,14 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 00e475fa90e0a9976105e4c9c645746427366f32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ca1f01b7a865aec4d57527f679d27700c9d7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882954"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Bozuk Durum Özel Durumlarını İşlemekten Kaçının
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Bozuk durum özel durumlarını işlemekten kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -132,6 +131,3 @@ void TestMethod1()
     }
 }
 ```
-
-
-

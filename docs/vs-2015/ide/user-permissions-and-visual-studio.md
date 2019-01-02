@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83a45aaebbf621a5ae84a0ae4bdf3379697a47e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34eab1bed0113c3fbe39574c9ef2a4c2822af5c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858376"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +38,7 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 |Alan|Görev|Daha fazla bilgi için|
 |----------|----------|--------------------------|
 |Yükleme|Visual Studio'yu Yükleme.|[Visual Studio 2015'i yükleme](../install/install-visual-studio-2015.md)|
-||Visual Studio deneme sürümünden yükseltme.|[Nasıl Yapılır. Visual Studio Deneme Sürümünden Yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Visual Studio deneme sürümünden yükseltme.|[Nasıl yapılır: Visual Studio deneme sürümünden yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yerel İçeriği Yükleme ve Yönetme](../ide/install-and-manage-local-content.md)|
 |Uygulama türleri|SharePoint 2010 çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||İçin bir geliştirici lisansı alma [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Bir geliştirici lisansı (Windows Store uygulamaları)](http://go.microsoft.com/fwlink/?LinkID=241313)|
@@ -53,8 +52,8 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 ||Microsoft Azure için bulut hizmeti projelerinde hata ayıklamak için öykünücü kullanma.|[Visual Studio'da bir bulut hizmetinin hatalarını ayıklama](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Cihazda uzak araçları ayarlama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Performans araçları|Uygulama profili oluşturma.|[Performans Profili Oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
-|Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanarak bir barındırma sağlayıcısı bir ASP.NET Web uygulaması dağıtma: IIS'ye bir Test ortamı olarak dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
-|Microsoft'a geri bildirim sağlama|Visual Studio Müşteri Deneyimi Programı'na katılım şeklinizi değiştirme.|[Nasıl yapılır: geri bildirim gönder](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanarak bir barındırma sağlayıcısı bir ASP.NET Web uygulaması dağıtma: Test ortamı olarak IIS'ye dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|Microsoft'a geri bildirim sağlama|Visual Studio Müşteri Deneyimi Programı'na katılım şeklinizi değiştirme.|[Nasıl yapılır: Geri bildirim gönderin](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Visual Studio'yu Yönetici olarak çalıştırma
  IDE'yi her başlattığınızda Visual Studio'yu yönetim izinleri ile başlatabilir veya uygulama kısayolunu her zaman yönetim izinleriyle çalışacak şekilde değiştirebilirsiniz. Daha fazla bilgi için bkz. Windows Yardımı.

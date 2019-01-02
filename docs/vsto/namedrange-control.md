@@ -1,9 +1,6 @@
 ---
 title: NamedRange denetimi
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Range
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c9bc4ff5b3515d5dcd4dab1eef81bf5c9abf979
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f23da0d6e91e63eaab9cd1153f07727b6399b375
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871891"
 ---
 # <a name="namedrange-control"></a>NamedRange denetimi
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Verilere bağlı benzersiz bir ada sahip ve olayları ortaya koyan bir aralığı denetimidir. Daha fazla bilgi için [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).  
@@ -35,7 +32,7 @@ ms.locfileid: "35677781"
 ## <a name="create-the-control"></a>Denetim oluşturma  
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> tasarım zamanında veya belge düzeyi projelere çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler.  
   
- Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimlerini çalışma zamanında VSTO eklenti. Daha fazla bilgi için [nasıl yapılır: çalışma sayfalarına NamedRange ekleme denetimlerini](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+ Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimlerini çalışma zamanında VSTO eklenti. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Varsayılan olarak, çalışma sayfasında dinamik olarak oluşturulan adlandırılmış aralıklar sürdürülmeyen çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -81,10 +78,8 @@ ms.locfileid: "35677781"
  [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Nasıl yapılır: NamedRange denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-namedrange-controls.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [İzlenecek yol: Program NamedRange denetimi olaylarına karşı](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [İzlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

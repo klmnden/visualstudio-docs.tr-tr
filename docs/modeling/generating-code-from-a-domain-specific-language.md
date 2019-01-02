@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883165"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Etki Alanına Özgü Dilden Kod Oluşturma
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] modellerinde temsil verilerden kod, belgeler, yapılandırma dosyalarını ve diğer yapıları üretmek için güçlü bir yol sağlar. Kullanarak [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], verilerinizi temsil eden sınıf kümesi oluşturabileceğiniz ve adları sınıflarda metin şablonlarınızı yazabilirsiniz ve özellikleri, bu verileri yansıtır.
@@ -40,11 +39,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] modellerinde temsil ve
 
  Metin şablonlarında etki alanına özgü dil başvurma hakkında temel bilgiler sağlar.
 
- [İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [İzlenecek yol: Bir modele erişen metin şablonunda hata ayıklama](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  Bir etki alanına özgü dil başvuran bir metin şablonunda hata ayıklama ve sorun giderme yapılacağını açıklar.
 
- [İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [İzlenecek yol: Üretilen bir yönerge işlemcisine ana bilgisayar bağlama](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  Özel bir ana bilgisayar üretilen bir yönerge işlemcisine bağlama açıklar.
 

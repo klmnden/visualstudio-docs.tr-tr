@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Şerit özelleştirmeye başlama'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c393633477debd18857da4296d43b3832e343434
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856832"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Nasıl Yapılır: Şerit özelleştirmeye başlama
   Bir Microsoft Office uygulamasının Şeritine özelleştirmek için ekleyin bir **Şerit (Görsel Tasarımcı)** veya **Ribbon (XML)** bir Office projesi için öğesi.  
@@ -78,5 +75,3 @@ ms.locfileid: "53647155"
  [Şerit XML](../vsto/ribbon-xml.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [İzlenecek yol: Şerit XML kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

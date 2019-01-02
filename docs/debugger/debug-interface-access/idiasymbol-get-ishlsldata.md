@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isHLSLData | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be6e1f49acfc7d08815f0143f55c48fbaf7b017
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b1bd237833e27c3c83a24345e6b7c436b40aa8b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875131"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Bu simgenin yüksek düzey gölgelendirici dili (HLSL) veri temsil edip etmediğini belirler.  
+Bu sembol üst düzey gölgelendirici dili (HLSL) veri temsil edip etmediğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,10 +29,10 @@ HRESULT get_isHLSLData(
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- [out] Bir işaretçi bir `BOOL` bu simgeyi HLSL veri temsil edip etmediğini belirler.  
+ [out] Bir işaretçi bir `BOOL` bu sembol HLSL veri temsil edip etmediğini belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

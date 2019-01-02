@@ -1,9 +1,6 @@
 ---
 title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DISASSEMBLY_STREAM_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9489b8c4399ae72bf7f6a70011eec347d870ca80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f7513ae0ac5094d51d4de2c7c4e0a49295110c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867481"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Ayrıştırılmış kod alana almak için hangi bilgilerin belirtir.  
@@ -28,7 +25,7 @@ Ayrıştırılmış kod alana almak için hangi bilgilerin belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_DISASSEMBLY_STREAM_FIELDS {   
+enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
    DSF_CODEBYTES        = 0x00000004,  
@@ -47,7 +44,7 @@ typedef DWORD DISASSEMBLY_STREAM_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_DISASSEMBLY_STREAM_FIELDS {   
+public enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
    DSF_CODEBYTES        = 0x00000004,  
@@ -114,7 +111,7 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

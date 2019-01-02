@@ -1,8 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - PROFILE_CURRENTID
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d19671e0f9280f02a012ad02b5421f2d62d30926
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ad75506989b326cadf2f1a2b1cd6f133b91649ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886104"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
-PROFILE_CURRENTID sözde belirteci iş parçacığı kimliği veya NameProfile, StartProfile, StopProfile, SuspendProfile ve ResumeProfile işlevleri çağrıda işlem kimliği döndürür. Geçerli iş parçacığının veya işlem yerine özellikle belirtilen bir çalışmaya işlevi neden kullanın.  
+PROFILE_CURRENTID NameProfile, StartProfile StopProfile SuspendProfile ve ResumeProfile işlev çağrısında, işlem kimliği ve iş parçacığı kimliği için sözde belirteci döndürür. İşlevi, geçerli iş parçacığı veya işlemi yerine özellikle belirtilen bir çalışmasına neden kullanın.  
   
 ## <a name="example"></a>Örnek  
- PROFILE_CURRENTID tanımlanmış *VSPerf.h* olarak:  
+ İçinde tanımlı PROFILE_CURRENTID *VSPerf.h* olarak:  
   
 ```cpp  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek PROFILE_CURRENTID gösterilmektedir. Bu örnek, geçerli iş parçacığının çağrıda tanımlayan bir parametre olarak PROFILE_CURRENTID kullanır. [StartProfile](../profiling/startprofile.md) işlevi.  
+ Aşağıdaki örnek PROFILE_CURRENTID gösterir. Bu örnek, bir çağrı geçerli iş parçacığında tanımlayan bir parametre olarak PROFILE_CURRENTID kullanır. [StartProfile](../profiling/startprofile.md) işlevi.  
   
 ```cpp  
 void ExerciseProfileCurrentID()  

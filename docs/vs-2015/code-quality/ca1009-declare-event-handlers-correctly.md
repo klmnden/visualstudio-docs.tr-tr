@@ -1,12 +1,11 @@
 ---
-title: 'CA1009: olay işleyicilerini doğru bildirin | Microsoft Docs'
+title: 'CA1009: Olay işleyicilerini doğru bildirin | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7a405ebbf4cd11a695c6e93231d260d8ceae2483
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba96dbced72ae4d1cd51e05f55670186eb72def6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893493"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Olay işleyicilerini doğru bildirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +62,4 @@ ms.locfileid: "49918512"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.EventArgs?displayProperty=fullName><xref:System.Object?displayProperty=fullName>
- [NIB: Olayları ve temsilciler](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [NIB: Olaylar ve temsilciler](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)

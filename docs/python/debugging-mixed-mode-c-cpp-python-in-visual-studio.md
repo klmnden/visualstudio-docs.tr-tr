@@ -3,7 +3,6 @@ title: Karışık mod hata ayıklaması için Python
 description: Eşzamanlı C++ ve ortamlar arasında adımlama, görüntüleme değerleri ve ifadeleri değerlendirme de dahil olmak üzere Visual Studio'da Python hata ayıklayın.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b654af11ce61cb9331682f8b46e4476c06020ed3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885961"
 ---
 # <a name="debug-python-and-c-together"></a>Python ve C++ birlikte hata ayıklama
 
@@ -40,7 +39,7 @@ Bu makalede açıklandığı gibi karışık mod hata ayıklama özellikleri aş
 
 |   |   |
 |---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | Test ve yerel C modülleri Visual Studio ile hata ayıklama oluşturmaya giriş için bkz. [yakından bakış: yerel modülleri oluşturma](https://youtu.be/D9RlT06a1EI) (youtube.com 9 dk 09s). Video, Visual Studio 2015 ve 2017 için geçerlidir. |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | Test ve yerel C modülleri Visual Studio ile hata ayıklama oluşturmaya giriş için bkz: [yakından bakış: Yerel modülleri oluşturma](https://youtu.be/D9RlT06a1EI) (youtube.com 9 dk 09s). Video, Visual Studio 2015 ve 2017 için geçerlidir. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Karma mod bir Python projesinde hata ayıklamayı etkinleştir
 
@@ -170,8 +169,8 @@ Karışık mod hata ayıklayıcı kodundan [standart bir Python hata ayıklayıc
 
 - Desteklenmeyen özellikler: koşullu kesme noktaları **hata ayıklama etkileşimli** penceresi ve platformlar arası uzaktan hata ayıklama.
 - **Hemen** penceresi: işlevlerini ve sınırlamalar dahil olmak üzere, sınırlı bir alt kümesi ile kullanılabilir ancak burada listelenir.
-- Python sürümleri desteklenir: CPython 2.7 ve 3.3 + yalnızca.
-- Visual Studio Shell: Python ile Visual Studio Shell kullanırken (örneğin, tümleşik Yükleyicisi'ni kullanarak yüklediyseniz), Visual Studio C++ projeleri açamıyor ve yalnızca bir temel metin düzenleyici, C++ dosyaları için düzenleme deneyimi olan. Ancak, C/C++ hata ayıklama ve karma mod hata ayıklama tamamen Kabuğu'nda C++ ifade değerlendirmesi hata ayıklayıcı pencerelerinde ve yerel kod içine Adımlama, kaynak kodu ile desteklenir.
+- Desteklenen Python sürümleri: CPython 2.7 ve 3.3 + yalnızca.
+- Visual Studio Kabuğu: Python ile Visual Studio Shell kullanırken (örneğin, tümleşik Yükleyicisi'ni kullanarak yüklediyseniz), Visual Studio C++ projeleri açamıyor ve yalnızca bir temel metin düzenleyici, C++ dosyaları için düzenleme deneyimi olan. Ancak, C/C++ hata ayıklama ve karma mod hata ayıklama tamamen Kabuğu'nda C++ ifade değerlendirmesi hata ayıklayıcı pencerelerinde ve yerel kod içine Adımlama, kaynak kodu ile desteklenir.
 - Görüntüleme ve genişletme nesneleri: Python nesneleri görüntülerken **Yereller** ve **Watch** hata ayıklayıcı, araç pencerelerini, karma mod hata ayıklayıcı yalnızca nesnelerin yapısı gösterilmektedir. Otomatik olarak özellikleri değerlendirmek veya hesaplanan öznitelikleri gösterir. İsteğe bağlı olarak koleksiyonları için yalnızca yerleşik koleksiyon türleri için öğeleri gösterir (`tuple`, `list`, `dict`, `set`). Bazı yerleşik koleksiyon türden devralınan sürece özel koleksiyon türlerini koleksiyon olarak görselleştirilmiştir değil.
 - İfade değerlendirme: aşağıya bakın.
 

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: ek izleme seçeneklerini belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Ek izleme seçeneklerini belirtme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -15,29 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858675"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Nasıl yapılır: ek izleme seçeneklerini belirtme
+# <a name="how-to-specify-additional-instrumentation-options"></a>Nasıl Yapılır: Ek izleme seçeneklerini belirtme
 
-Visual Studio IDE kullanarak veya komut satırı araçlarını kullanarak ikili dosyaları işaretleyebilir. IDE içinden bir ikili izleme, izleme sırasında ek izleme seçeneklerini belirtme tarafından toplanan verilerin hacmi denetleyebilirsiniz [Vsınstr](../profiling/vsinstr.md) aracı. Bu seçenekler, oturumun veya hedef düzeyinde kullanılabilir. Örneğin, dahil etmek veya izleme işlemi sırasında belirli işlevleri dışlamak için hedef düzeyinde ek izleme seçeneği kullanın.
+İkili dosyaları Visual Studio IDE kullanarak veya komut satırı araçlarını kullanarak izleyebilirsiniz. IDE içinde bir ikili izleme, ek izleme seçeneklerini belirterek izleme sırasında toplanan verilerin hacmini denetleyebilirsiniz [Vsınstr](../profiling/vsinstr.md) aracı. Bu seçenekler, oturum veya hedef düzeyinde kullanılabilir. Örneğin, dahil etmek veya izleme işlemi sırasında belirli işlevleri hariç tutmak için hedef düzeyinde ek izleme seçeneği kullanın.
 
 > [!IMPORTANT]
-> Eklenen her araştırma biraz özgün programın davranışını değiştirir. Bu değişikliği analiz aynı anda ek yükü neden olur. Bu ek yükü yaklaşık çıkarılır olsa bile, yine birden çok iş parçacıklı uygulamalar üzerinde Zarif zamanlama etkilere sahiptir. [Vsınstr](../profiling/vsinstr.md) aracı profili oluşturma sırasında seçenekleri Yardım denetim veri koleksiyonu.
+> Eklenen her araştırma biraz özgün programın davranışını değiştirir. Bu değişikliği yükü analiz zamanında neden olur. Bu ek yükü yaklaşık çıkarılır olsa da, yine de çok iş parçacıklı uygulamalar üzerinde ince zamanlama etkileri vardır. [Vsınstr](../profiling/vsinstr.md) aracı profil oluşturma sırasında seçenekleri Yardım denetim veri koleksiyonu.
 
-## <a name="to-specify-additional-instrumentation-option"></a>Ek izleme seçeneği belirtmek için
+## <a name="to-specify-additional-instrumentation-option"></a>Ek izleme seçeneği belirlemek için
 
-1. İçinde **performans Gezgini**seçin **Performans oturumunu** ve ardından sağ tıklatın ve seçin **özellikleri**.
+1. İçinde **performans Gezgini**seçin **performans oturumu** ve ardından sağ tıklayıp **özellikleri**.
 
-2. İçinde **özellikler sayfalarına**, tıklatın **Gelişmiş** özellikleri.
+2. İçinde **özellikler sayfaları**, tıklayın **Gelişmiş** özellikleri.
 
-3. Tür seçeneklerinde **ek izleme seçeneklerini** kutusu.
+3. Tür seçenekleri **ek izleme seçeneklerini** kutusu.
 
-     Örneğin, /CONTROL:THREAD profil düzeyini belirtmek için kullanın. Seçenekler tam bir listesi için bkz: [Vsınstr](../profiling/vsinstr.md).
+     Örneğin, /CONTROL:THREAD profil oluşturma düzeyini belirtmek için kullanın. Seçeneklerinin tam listesi için bkz: [Vsınstr](../profiling/vsinstr.md).
 
 4. **Tamam**'ı tıklatın.
 

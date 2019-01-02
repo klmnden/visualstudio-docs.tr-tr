@@ -1,8 +1,6 @@
 ---
 title: MIDL görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 724c4de3ca582a98d22eaf1bcb3a8761bb4eff55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860838"
 ---
 # <a name="midl-task"></a>MIDL görevi
 Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*. Daha fazla bilgi için [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
@@ -115,9 +113,9 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**Yok**|**/ Error none**|  
+    |**Yok.**|**/ Error none**|  
     |**EnableCustom**|**/ Error**|  
-    |**Tüm**|**/ Error tüm**|  
+    |**Tümü**|**/ Error tüm**|  
   
      Daha fazla bilgi için **/Error** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
@@ -171,7 +169,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**Yok**|**/ Client yok**|  
+    |**Yok.**|**/ Client yok**|  
     |**Stub**|**/ Client saptama**|  
   
      Daha fazla bilgi için **/Client** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
@@ -186,7 +184,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**Yok**|**/ Server yok**|  
+    |**Yok.**|**/ Server yok**|  
     |**Stub**|**/ Server saptama**|  
   
      Daha fazla bilgi için **/Server** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  

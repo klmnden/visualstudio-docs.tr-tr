@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir hizmet sağlamak | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir hizmetin | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857821"
 ---
-# <a name="how-to-provide-a-service"></a>Nasıl yapılır: bir hizmeti sağlama
+# <a name="how-to-provide-a-service"></a>Nasıl Yapılır: Bir hizmeti sağlama
 VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak amacıyla bir VSPackage hizmeti Visual Studio ile kaydedin ve hizmet eklemeniz gerekir.  
   
  <xref:Microsoft.VisualStudio.Shell.Package> Sınıfı her ikisini birden uygular <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> ve <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> İsteğe bağlı hizmetler sağlayan bir geri çağırma yöntemleri içerir.  
@@ -142,6 +139,6 @@ VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak a
      Değerini `helloString` "Hello" olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: hizmet alma](../extensibility/how-to-get-a-service.md)   
+ [Nasıl yapılır: Hizmet alma](../extensibility/how-to-get-a-service.md)   
  [Hizmetleri sağlamak ve kullanın](../extensibility/using-and-providing-services.md)   
  [Hizmet temel bileşenleri](../extensibility/internals/service-essentials.md)

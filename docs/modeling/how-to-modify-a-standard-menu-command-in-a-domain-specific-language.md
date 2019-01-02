@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Etki Alanına Özgü bir Dilde Standart Menü Komutunu Değiştirme'
+title: 'Nasıl Yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870196"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dilde Standart Menü Komutunu Değiştirme
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl Yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme
 
 DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları davranışını değiştirebilirsiniz. Örneğin, değiştirebilir **Kes** böylece hassas bilgileri içermez. Bunu yapmak için bir komut kümesi sınıftaki yöntemleri geçersiz kılın. Bu sınıfların DslPackage projesinde CommandSet.cs dosyasında tanımlanır ve türetilmiş <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 ## <a name="what-commands-can-you-modify"></a>Hangi komutların, değişiklik yapabilirsiniz?
 
@@ -71,7 +70,7 @@ Komut kümesi sınıfının bir kısmi bildirimi içeren yeni bir dosya oluştur
 
 ## <a name="override-the-command-methods"></a>Komut yöntemleri geçersiz kılın
 
-Çoğu komutlarının ilişkili iki yöntem vardır: yöntem bir adla ister `ProcessOnStatus`... komutu görünür ve etkin olup olmayacağını belirler. Kullanıcı diyagramda sağ tıkladığı zaman çağrılır hızlı bir şekilde yürütün ve herhangi bir değişiklik yapın. `ProcessOnMenu`... kullanıcı komutu tıkladığında ve komutun işlevi gerçekleştirmeniz gereken çağrılır. Bir ya da bu yöntemlerin ikisi de geçersiz kılmak isteyebilirsiniz.
+Komutların çoğu ilişkili iki yöntem vardır: Bir ada sahip yöntem ister `ProcessOnStatus`... komutu görünür ve etkin olup olmayacağını belirler. Kullanıcı diyagramda sağ tıkladığı zaman çağrılır hızlı bir şekilde yürütün ve herhangi bir değişiklik yapın. `ProcessOnMenu`... kullanıcı komutu tıkladığında ve komutun işlevi gerçekleştirmeniz gereken çağrılır. Bir ya da bu yöntemlerin ikisi de geçersiz kılmak isteyebilirsiniz.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Komut bir menü görüntülendiğinde değiştirmek için
 
@@ -148,7 +147,7 @@ Nesneler ve bağlantılar oluşturma ve gezinme öğesi başka bir öğe hakkın
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Nasıl yapılır: Kısayol Menüsüne Komut Ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML Şeması Başvurusu](../extensibility/vsct-xml-schema-reference.md)

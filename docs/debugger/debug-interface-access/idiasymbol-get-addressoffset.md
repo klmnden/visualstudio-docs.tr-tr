@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_addressoffset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dba9f8b40bd3246dd07ec2fae76ad6aa8b9c604
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78f801faae0a32bd928f6adb8062acf18bdf1332
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875199"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 Bir adres konumuna uzaklık bölümü alır. Şu durumlarda kullanın [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md) ayarlanır `LocIsStatic`.  
@@ -27,7 +25,7 @@ Bir adres konumuna uzaklık bölümü alır. Şu durumlarda kullanın [LocationT
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  

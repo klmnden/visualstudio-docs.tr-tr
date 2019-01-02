@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1fd001f5371e346a07f82c9c48a3acb699cefd52
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9ee2f0e2353023f1864c892ecc377050ea87923d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865420"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL Tanımının Özellikleri
 DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü numaralandırma gibi tanımı özellikleri. DslDefinition özellikleri görünür **özellikleri** pencere, diyagramdaki boş bir alanı tıkladığınızda *etki alanına özgü dil tasarımcısını*.
@@ -37,7 +36,7 @@ DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü n
 |Ürün Adı|Bu DSL için oluşturulan Visual Studio paketine kaydedilecek ürünün adı.|\<yok >|
 |Notlar|Bu alan sınıfıyla ilişkili notları.|\<yok >|
 |Açıklama|Bu etki alanı sınıfı için açıklama.|\<yok >|
-|Görünen ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
+|Görünen Ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Yardım anahtar sözcüğü|Bu alan sınıfıyla ilişkili Yardım anahtar sözcüğü.|\<yok >|
 |Derleme|Bu etki alanına özgü dil tanımı için artımlı derleme numarası.|0|
 |Ana sürüm|Bu etki alanına özgü dil tanımı için artımlı başlıca yapı numarası.|1.|

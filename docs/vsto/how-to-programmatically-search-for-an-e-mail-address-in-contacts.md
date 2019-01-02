@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla bir e-posta adresi arama'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla bir e-posta adresi arama'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7b9c4c7d02f3cd1564e6733c46cb821eade7f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 767c75bff42bc19b70d4b6dcd35da16c4bb4c099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893360"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Nasıl yapılır: program aracılığıyla bir e-posta adresi arama
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Nasıl Yapılır: Program aracılığıyla bir e-posta adresi arama
   Bu örnekte, etki alanı adına sahip kişiler için kişi bir klasör arama **example.com** kendi e-posta adresleri.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35677892"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
- [Nasıl yapılır: program aracılığıyla e-posta gönderme](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Nasıl yapılır: program aracılığıyla Outlook Kişilerine erişme](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Nasıl yapılır: program aracılığıyla Outlook Kişilerine bir giriş ekleyin](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
-  
-  
+ [Nasıl yapılır: Program aracılığıyla e-posta gönderme](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Nasıl yapılır: Program aracılığıyla Outlook Kişilerine erişme](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [Nasıl yapılır: Program aracılığıyla Outlook Kişilerine bir giriş ekleyin](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  

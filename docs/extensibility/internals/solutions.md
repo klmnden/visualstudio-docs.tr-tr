@@ -1,9 +1,6 @@
 ---
 title: Çözümleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869485"
 ---
-# <a name="solutions"></a>Çözümleri
-Bir çözüm, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla projeleri gruplandırmasıdır. Çözüme ilgilidir proje ve durum bilgilerini iki çözüm dosyaları, metin tabanlı çözüm (.sln) dosyası ve bir ikili çözüm kullanıcı seçeneği (.suo) dosyası depolanır.  
+# <a name="solutions"></a>Çözümler
+Bir çözümü, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla proje gruplandırmasıdır. Çözüme ait proje ve durum bilgilerini iki çözüm dosyaları, metin tabanlı bir çözüm (.sln) dosyasını ve ikili çözüm kullanıcı seçeneği (.suo) dosyası içinde depolanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Genel bakış](../../extensibility/internals/solutions-overview.md)  
- Bir çözüm ve bir çözüm açıldığında gerçekleşen işlem dahil çözüm dosyalarını türleri açıklanmaktadır.  
+ Bir çözüm ve çözüm açıldığında oluşan süreci bulunan çözüm dosya türleri açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Çözüm (.Sln) Dosyası](../../extensibility/internals/solution-dot-sln-file.md)  
- .Sln dosyasını yapısını açıklar.  
+ Bir .sln dosya yapısını açıklar.  
   
  [Çözüm Kullanıcı Seçenekleri (. Suo) Dosyası](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
  .Suo dosya açıklanmaktadır.

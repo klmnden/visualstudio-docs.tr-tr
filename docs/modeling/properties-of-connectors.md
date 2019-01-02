@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e26401247c2b6cefc3d86dbd5b6e80adfe473937
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: e76766eb3b90dd2a515c7622217febfaffe313c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865264"
 ---
 # <a name="properties-of-connectors"></a>Bağlayıcıların Özellikleri
 Bağlayıcılar, etki alanı ilişkileri oluşturulan tasarımcıda temsil eder.
@@ -29,8 +28,8 @@ Bağlayıcılar, etki alanı ilişkileri oluşturulan tasarımcıda temsil eder.
 |-|-|-|
 |Renk|Bu bağlayıcının rengi.|Siyah|
 |Kesik çizgi stili|Bu bağlayıcının (düz, kesik çizgi, nokta, çizgi nokta, çizgi nokta nokta veya özel) satırı için çizgi stili.|Düz|
-|Kaynak uç stili|(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond veya hiçbiri) bu bağlayıcının kaynak uç stili.|Yok.|
-|Hedef uç stili|(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond veya hiçbiri) bu bağlayıcının hedef uç stili.|Yok.|
+|Kaynak uç stili|(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond veya hiçbiri) bu bağlayıcının kaynak uç stili.|Hiçbiri|
+|Hedef uç stili|(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond veya hiçbiri) bu bağlayıcının hedef uç stili.|Hiçbiri|
 |Metin rengi|Bu bağlayıcıyla ilişkili metin dekoratörleri için kullanılan renk.|Siyah|
 |Kalınlığı|Bu bağlayıcının inç cinsinden ölçülen çizgi kalınlığı.|0.03125|
 |Erişim değiştiricisi|Sınıf erişim düzeyini (`public` veya `internal`).|Ortak|
@@ -46,7 +45,7 @@ Bağlayıcılar, etki alanı ilişkileri oluşturulan tasarımcıda temsil eder.
 |Yönlendirme stilini|Bağlayıcıyı yönlendirmek için kullanılan stil. A `Rectilinear` bağlayıcı yapar dik açılı kapatır gerekli; bir `Straight` Bağlayıcısı yok.|Dönüşler|
 |Özellik olarak kullanıma sunulan rengi<br /><br /> Özellik olarak kullanıma sunulan kesik çizgi stili<br /><br /> Özellik olarak kullanıma sunulan kalınlığı<br /><br /> Kullanıma sunan metin rengi|Varsa `True`, kullanıcının belirtilen özelliği bir şeklin ayarlayabilirsiniz. Bunu ayarlamak için Şekil tanımı sağ tıklatıp **ekleme kullanıma sunulan**.|False|
 |Açıklama|Oluşturulan tasarımcının belge için kullanılır.|\<yok >|
-|Görünen ad|Bu bağlayıcı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
+|Görünen Ad|Bu bağlayıcı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Sabit araç ipucu metni|Sabit bir araç ipucu için kullanılan metin.|\<yok >|
 |Yardım anahtar sözcüğü|Bu öğe için F1 Yardımı dizini oluşturmak için kullanılan anahtar sözcüğü.|\<yok >|
 

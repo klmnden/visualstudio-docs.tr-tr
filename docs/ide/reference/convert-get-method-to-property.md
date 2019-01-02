@@ -2,7 +2,6 @@
 title: Get metodunu özelliğe dönüştürme ve bir özellik için bir Get yöntemi Dönüştür
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.devlang: csharp
 author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0af901ed6a51b962b7b2999b04909136bbb0f3e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861153"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Get metodunu özelliğe dönüştürme / özelliği için Get yöntemini yeniden düzenlemeler dönüştürün
 
@@ -29,9 +28,9 @@ Bu yeniden düzenlemeler geçerlidir:
 
 ## <a name="convert-get-method-to-property"></a>Get metodunu özelliğe dönüştürme
 
-**Ne:** , bir özellik (ve kümesi yönteminizi isteğe bağlı olarak) bir Get yöntemi dönüştürmenize olanak sağlar.
+**Ne:** Bir özellik (ve kümesi yönteminizi isteğe bağlı olarak) bir Get yöntemi dönüştürmenize olanak tanır.
 
-**Ne zaman:** herhangi bir mantık içermeyen bir Get yöntemi vardır.
+**ne zaman:** Sahip olduğunuz herhangi bir mantık içermeyen bir Get yöntemi.
 
 ### <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -70,9 +69,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Özellik Get yönteme Dönüştür
 
-**Ne:** bir özellik için bir Get yöntemi dönüştürmenize olanak tanır.
+**Ne:** Bir özellik için bir Get yöntemi dönüştürmenize olanak tanır.
 
-**Ne zaman:** birden fazla hemen ayarlama ve bir değer alma içeren bir özelliğe sahiptir
+**ne zaman:** Birden fazla hemen ayarlama ve bir değer alma içeren bir özelliğe sahiptir
 
 ### <a name="how-to"></a>Nasıl Yapılır Konuları
 

@@ -2,7 +2,6 @@
 title: Roslyn çözümleyicilerini yapılandırma ve kullanma
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873229"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Yapılandırma ve Roslyn çözümleyicisi kuralları kullanma
 
@@ -65,7 +64,7 @@ Etkin kural için bir proje üzerinde kümesi değiştirebilirsiniz **Kod Analiz
 |Uyarı|İhlalleri görünür olarak *uyarıları* içinde **hata listesi** ve komut satırı derleme çıkışı, ancak derleme başarısız olmasına neden olmaz.|Sorunlu kod içeren bir yeşil dalgalı ve kaydırma çubuğundaki küçük yeşil kutu işaretli altı çizili olduğundan.|
 |Bilgi|İhlalleri görünür olarak *iletileri* içinde **hata listesi**ve hiçbir komut satırı derleme çıktı.|Kod sorunlu altı çizili ile dalgalı ve kaydırma çubuğundaki gri küçük Kutu işaretli bir gri olur.|
 |Hidden|Non-kullanıcıya görünür.|Non-kullanıcıya görünür. Tanılama için IDE tanılama altyapısı, ancak bildirilir.|
-|Yok.|Tamamen gizlendi.|Tamamen gizlendi.|
+|Hiçbiri|Tamamen gizlendi.|Tamamen gizlendi.|
 
 Ayrıca, "bir uyarı kuralının önem derecesi olarak ayarlayıp sıfırlayabilirsiniz" **varsayılan**. Her tanılama görülebilir bir varsayılan önem derecesine sahip **özellikleri** penceresi.
 

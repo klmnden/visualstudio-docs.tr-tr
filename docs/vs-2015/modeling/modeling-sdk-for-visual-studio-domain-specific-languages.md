@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6fcddcb4dc1b615f88e4c78cd7de51402488601f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13c5164dffa068420df1e0d5cc9951607666173e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865790"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +76,10 @@ ms.locfileid: "53054686"
 
  [WPF Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Nasıl yapılır: Etki Alanına Özgü Dil Tasarımcısını Genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Nasıl yapılır: Etki alanına özgü dil tasarımcısını genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Nasıl yapılır: Bir etki alanına özgü dili yeni sürüme geçirme](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Visual Studio için Modelleme SDK'sı için API Başvurusu](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

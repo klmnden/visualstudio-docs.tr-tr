@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio projeleri, özellikle Django Web projesi şablonu tarafından sağlanan özellikler bağlamında Django temel bilgileri bir kılavuz.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 513f42bd597bf42e0f145b1a47a889f6d28ec95c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864052"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>4. adım: tam Django Web projesi şablonunu kullanma
+# <a name="step-4-use-the-full-django-web-project-template"></a>4. Adım: Tam Django Web projesi şablonunu kullanma
 
-**Önceki adımda: [statik dosyaları sunmak, sayfalar eklemek ve şablonu devralma kullanın](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Önceki adım sayısı: [Statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 "Boş Django Web projesi" şablonu Visual Studio'da bağlı bir uygulama oluşturarak Django temelleri incelediniz, "Django Web projesi" şablon tarafından üretilen irdelemesi uygulamayı kolayca anlayabilir.
 
@@ -35,7 +34,7 @@ Bu, artık. adım:
 
 Şablon 5. adımda bahsedilen temel kimlik doğrulaması da sağlar.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: bir şablondan bir proje oluşturma
+## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: Bir şablondan bir proje oluşturma
 
 1. Visual Studio'da Git **Çözüm Gezgini**, sağ **LearningDjango** daha önce Bu öğretici ve seçme içinde oluşturulan çözüm **Ekle**  >   **Yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
@@ -77,9 +76,9 @@ En geniş kapsamlı düzeyinde "Django Web projesi" şablonu aşağıdaki yapıs
 - *Uygulama* klasör görünümleri, modelleri, testleri, forms, şablonları ve (4-2. adım) statik dosyaları dahil olmak üzere tüm uygulama dosyaları içerir. Genellikle bu klasör daha farklı bir uygulama adı kullanacak şekilde yeniden adlandırın.
 - *DjangoWeb* tipik Django proje dosyaları (Django projesinde) klasör içerir:  *\_ \_init\_\_.py*,  *Settings.PY*, *urls.py*, ve *wsgi.py*. Proje şablonunu kullanarak *settings.py* uygulama ve veritabanı dosyası için zaten yapılandırıldı ve *urls.py* rotaları oturum açma formu dahil olmak üzere tüm uygulama sayfaları için zaten yapılandırıldı.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: Visual Studio projeleri arasındaki bir sanal ortam paylaşmayı mümkün mü?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: Bir sanal ortam Visual Studio projeleri arasında paylaşılmasını olanaklı mi?
 
-Cevap: Evet, ancak büyük olasılıkla farklı projelerde zaman içinde farklı paketleri kullanın ve bu nedenle, paylaşılan bir sanal ortam bunu kullanan tüm projeler için tüm paketleri içermelidir tanıma ile bunu.
+Yanıt: Evet, ancak büyük olasılıkla farklı projelerde zaman içinde farklı paketleri kullanın ve bu nedenle, paylaşılan bir sanal ortam bunu kullanan tüm projeler için tüm paketleri içermelidir tanıma ile bunu.
 
 Bununla birlikte, mevcut bir sanal ortam kullanmak için aşağıdakileri yapın:
 
@@ -87,9 +86,9 @@ Bununla birlikte, mevcut bir sanal ortam kullanmak için aşağıdakileri yapın
 1. İçinde **Çözüm Gezgini**, sağ **Python ortamları** düğümünü seçip alt **var olan sanal ortama ekleme**.
 1. Gidin ve sanal ortam içeren klasörü seçin ve ardından **Tamam**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2. adım: görünümleri anlayın ve sayfa proje şablonu tarafından oluşturulan şablonlar
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2. adım: Proje şablonu tarafından oluşturulan şablonların ve görünümleri anlayın
 
-Projeyi çalıştırdığınızda gözlemleyin gibi uygulamayı üç görünüm içerir: hakkında ev ve başvurun. Bu görünümler için kod bulunan *uygulama/görünümler* klasör. Her görünüm işlevi yalnızca çağırır `django.shortcuts.render` yoluyla bir şablon ve basit bir sözlük nesnesi. Örneğin, hakkında sayfası tarafından işlenir `about` işlevi:
+Projeyi çalıştırdığınızda, gözlemleyin gibi uygulamayı üç görünüm içerir: Giriş, ilgili ve ilgili kişi. Bu görünümler için kod bulunan *uygulama/görünümler* klasör. Her görünüm işlevi yalnızca çağırır `django.shortcuts.render` yoluyla bir şablon ve basit bir sözlük nesnesi. Örneğin, hakkında sayfası tarafından işlenir `about` işlevi:
 
 ```python
 def about(request):
@@ -167,9 +166,9 @@ Tek tek sayfa şablonları *about.html*, *contact.html*, ve *index.html*, her bi
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Soru: Can {% block %} ve {% endblock Django sayfası şablonunda %} girintili?
 
-Yanıt: belki de bunları uygun üst öğeleri içinde hizalamak için blok etiketlerini Girintile Evet, Django şablonların düzgün çalışır. Bunlar nereye yerleştirileceğini NET bir şekilde görmenize olanak tanıyan Visual Studio Proje şablonu tarafından oluşturulan şablonların girintili değil.
+Yanıt: Evet, belki de bunları uygun üst öğeleri içinde hizalamak için blok etiketlerini Girintile, Django şablonların düzgün çalışır. Bunlar nereye yerleştirileceğini NET bir şekilde görmenize olanak tanıyan Visual Studio Proje şablonu tarafından oluşturulan şablonların girintili değil.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>4-3. adım: şablon tarafından oluşturulan URL yönlendirmeyi anlama
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>4-3. adım: Şablon tarafından oluşturulan URL yönlendirmeyi anlama
 
 Django projenin *urls.py* "Django Web projesi" şablon tarafından oluşturulan dosya, aşağıdaki kodu içerir:
 
@@ -208,9 +207,9 @@ urlpatterns = [
 
 İlk üç URL desenleri için doğrudan eşleme `home`, `contact`, ve `about` uygulamanın görünümlerde *views.py* dosya. Desenler `^login/$` ve `^logout$`, diğer el, uygulama tarafından tanımlanan görünümleri yerine yerleşik Django görünümlerini kullanın. Çağrıları `url` yöntemi görünümünü özelleştirmek için ek verileri de içerir. 5. adım, bu çağrılar keşfediyor.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Soru: projedeki neden "hakkında" URL deseni kullanan oluşturduğum, ' ^ hakkında ' yerine ' ^ $' burada gösterildiği gibi?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Soru: Projedeki neden "hakkında" URL deseni kullanan oluşturduğum, ' ^ hakkında ' yerine ' ^ $' burada gösterildiği gibi?
 
-Yanıt: Normal ifadede sonunda '$' eksikliği pek çok proje şablonu sürümlerinde basit bir gözetim alınamadı. Mükemmel "hakkında" adlı bir sayfa için URL deseni çalışır, ancak sondaki ' $' URL deseni ayrıca URL'lerle eşleşir hakkında django ="gibi", "about09876", "aboutoflaughter" ve bu nedenle üzerinde. Sondaki '$' ile eşleşen bir URL deseni oluşturmak için burada gösterilen *yalnızca* "hakkında".
+Yanıt: Basit bir gözetim birçok sürümlerinde proje şablonu normal ifadenin sonunda '$' eksikliği oluştu. Mükemmel "hakkında" adlı bir sayfa için URL deseni çalışır, ancak sondaki ' $' URL deseni ayrıca URL'lerle eşleşir hakkında django ="gibi", "about09876", "aboutoflaughter" ve bu nedenle üzerinde. Sondaki '$' ile eşleşen bir URL deseni oluşturmak için burada gösterilen *yalnızca* "hakkında".
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

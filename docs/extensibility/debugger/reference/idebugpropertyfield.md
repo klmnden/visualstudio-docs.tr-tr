@@ -1,9 +1,6 @@
 ---
 title: IDebugPropertyField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyField
@@ -15,43 +12,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b876b19d5242bb90a3d13f255f9245fe14f93a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1489e8ef7bf41274806d1d6b1b134b54268457cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874212"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
-Bu arabirim, bir özellik ayarlama ve alma izin işlevleri sağlar.  
+Bu arabirim, alma ve bir özellik ayarlama izin işlevleri sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bir simge sağlayıcı uygulayan aynı nesne üzerinde bu arabirimi uygulayan [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Bir sınıf üzerinde özellikleri kavramını destekler uzmanlık arabirimidir.  
+ Sembol sağlayıcısı bu arabirimi uygulayan aynı nesne üzerinde uygulayan [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Bu sınıfta özellikleri kavramını destekleyen bir özelleştirmesi arabirimidir.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Kullanım [QueryInterface](/cpp/atl/queryinterface) bu arabirimden almak için [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) , arabirim [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) yöntemi döndürür `FIELD_KIND_PROP`.  
+ Kullanım [QueryInterface](/cpp/atl/queryinterface) bu arabirimden edinme [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) , arabirim [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) yöntemi döndürür `FIELD_KIND_PROP`.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Yöntemlere ek olarak [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ve [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) arabirimleri, bu arabirimi uygulayan aşağıdaki yöntemleri:  
+ Yöntemlere ek olarak [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ve [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) arabirimleri, bu arabirimi aşağıdaki yöntemleri uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Özelliği alır yöntemi alır.|  
-|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Özelliği ayarlar yöntemi alır.|  
+|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Özelliği ayarlar yönteminin alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir özellik yönetilen kod kavram ve değişken olarak kabul edilir bir yöntemi temsil eder. Özellikler yönetilmeyen C++'da yok.  
+ Bir özellik, yönetilen kod kavram ve bir değişken olarak kabul edilir bir yöntemi temsil eder. Yönetilmeyen C++'da özellikleri yok.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: sh.h  
+ Üstbilgi: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

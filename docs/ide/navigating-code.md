@@ -2,7 +2,6 @@
 title: Kod Gezinti komutları
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877438"
 ---
 # <a name="navigate-code"></a>Kod gidin
 
@@ -78,19 +77,19 @@ Kaynak koddaki bir simge tıkladığınızda, o simgenin tüm örnekleri belgede
 
 Gitmek için kullanılabilen aşağıdaki komutları sahip **Düzenle** menüsünün altında **Git**:
 
-- **Satıra Git** (**Ctrl**+**G**): Etkin belgede belirtilen satır numarası taşıyın.
+- **Satıra Git** (**Ctrl**+**G**): Etkin belgedeki belirtilen satır numarasına taşır.
 
-- **Tümüne Git** (**Ctrl**+**T** veya **Ctrl**+**,**): türü belirtilen satırına Taşı Dosya, üye veya simge.
+- **Tümüne Git** (**Ctrl**+**T** veya **Ctrl**+**,**): Belirtilen satır, tür, dosya, üye veya sembol taşıyın.
 
-- **Dosyaya Git** (**Ctrl**+**1**, **Ctrl**+**F**): belirtilen dosyaya Taşı Çözüm.
+- **Dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**F**): Çözüm belirtilen dosyaya gider.
 
-- **Son dosya** (**Ctrl**+**1**, **Ctrl**+**R**): belirtilen, Taşı en son ziyaret edilen çözümdeki (Visual Studio 2017 sürüm 15,8 yeni) dosyası.
+- **Son dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**R**): Çözümdeki belirtilirse, en son ziyaret edilen dosyası (Yeni Visual Studio 2017 sürüm 15,8) taşıyın.
 
-- **Tür Git** (**Ctrl**+**1**, **Ctrl**+**T**): Belirtilen türüne Taşı Çözüm.
+- **Tür Git** (**Ctrl**+**1**, **Ctrl**+**T**): Çözümde belirtilen türe taşıyın.
 
-- **Üye Git** (**Ctrl**+**1**, **Ctrl**+**M**): Belirtilen üye taşıyın Çözüm.
+- **Üye Git** (**Ctrl**+**1**, **Ctrl**+**M**): Belirtilen üye çözümdeki taşıyın.
 
-- **Sembole Git** (**Ctrl**+**1**, **Ctrl**+**S**): Belirtilen sembolü taşıyın Çözüm.
+- **Sembol Git** (**Ctrl**+**1**, **Ctrl**+**S**): Çözüm belirtilen sembolü taşıyın.
 
 Visual Studio 2017 sürüm 15,8 ve daha sonra aşağıdaki **Git** Gezinti komutları de mevcuttur:
 
@@ -111,7 +110,7 @@ Giriş | İşlev
 
 ## <a name="peek-definition"></a>Tanıma göz at
 
-Tanımı görüntüler, Kod düzenleyicisinde, konumunuzu uzağa gitmeden pencerede seçili öğenin tanıma göz at. Daha fazla bilgi için [nasıl yapılır: Özet tanım'ı kullanarak kodu görüntüleme ve düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) ve [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md).
+Tanımı görüntüler, Kod düzenleyicisinde, konumunuzu uzağa gitmeden pencerede seçili öğenin tanıma göz at. Daha fazla bilgi için [nasıl yapılır: Görüntüleme ve Özet tanım'ı kullanarak kod düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) ve [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md).
 
 Giriş | İşlev
 ------------ | ---
@@ -150,7 +149,7 @@ Yapı kılavuz çizgileri devre dışı bırakmak için Git **Araçları** > **s
 
 ## <a name="enhanced-scroll-bar"></a>Gelişmiş kaydırma çubuğu
 
-Kodunuzun kuş bakışı görünümünü almak için bir kod penceresinde Gelişmiş kaydırma çubuğunu kullanın. İmleç kaydırma çubuğu yukarı ve aşağı taşıdığınızda, eşleme modunda önizlemeler kodun görebilirsiniz. Daha fazla bilgi için [nasıl yapılır: kaydırma çubuğunu özelleştirerek kodunuzu izleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Kodunuzun kuş bakışı görünümünü almak için bir kod penceresinde Gelişmiş kaydırma çubuğunu kullanın. İmleç kaydırma çubuğu yukarı ve aşağı taşıdığınızda, eşleme modunda önizlemeler kodun görebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>CodeLens bilgileri
 

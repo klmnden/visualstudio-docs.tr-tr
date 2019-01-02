@@ -1,9 +1,6 @@
 ---
 title: Sistem gereksinimlerini algılama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27fcfa7d7ad7b098bb28a3afee301444c48a46e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892409"
 ---
 # <a name="detect-system-requirements"></a>Sistem gereksinimlerini algılama
 VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Windows Installer, VSPackage'ı yüklemesini yönetmek için kullandığınız zaman, Visual Studio yüklü olup olmadığını algılamak için yükleyici yapılandırabilirsiniz. Ayrıca, örneğin sistemin diğer gereksinimleri denetlemek üzere, belirli bir Windows sürümü veya belirli bir RAM miktarını yapılandırabilirsiniz.  
@@ -46,7 +43,7 @@ Daha yeni bir sürümü yüklü olduğunda, bu sürüm için kayıt defteri anah
 |Visual Studio 2015 (tümleşik ve yalıtılmış) Kabuğu|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detect-when-visual-studio-is-running"></a>Visual Studio çalışırken Algıla  
- Vspackage'i yüklediğinizde Visual Studio çalışıyorsa, VSPackage'ı doğru kaydedilemez. Yükleyici, Visual Studio çalışırken algılamak ve programı yüklemek geri çevir. Windows Installer gibi algılamayı etkinleştirmek için tablo girişleri kullanmanıza izin vermez. Bunun yerine, özel bir eylem şu şekilde oluşturmanız gerekir: kullanım `EnumProcesses` algılamak için işlev *devenv.exe* işlemek ve ardından ayarlayın ya da kullanılan bir yükleyici özellik başlatma koşulu veya koşullu olarak bir iletişim kutusu görüntüler. Bu, Visual Studio kapatmak için kullanıcıya sorar.  
+ Vspackage'i yüklediğinizde Visual Studio çalışıyorsa, VSPackage'ı doğru kaydedilemez. Yükleyici, Visual Studio çalışırken algılamak ve programı yüklemek geri çevir. Windows Installer gibi algılamayı etkinleştirmek için tablo girişleri kullanmanıza izin vermez. Bunun yerine, özel bir eylem şu şekilde oluşturmanız gerekir: Kullanım `EnumProcesses` algılamak için işlev *devenv.exe* işlemek ve ardından ya da koşullu olarak Visual Studio'yu kapatın kullanıcının isteyen bir iletişim kutusu görüntüler veya başlatma koşulunda kullanılan bir yükleyici özelliğini ayarlayın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Windows Installer ile VSPackage yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

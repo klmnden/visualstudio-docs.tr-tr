@@ -1,8 +1,6 @@
 ---
-title: İş parçacığı etkinliği yok (iş parçacıkları görünümü) göster | Microsoft Docs
-ms.custom: ''
+title: İş parçacığı etkinliği yok (iş parçacıkları görünümü) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nothreadreport
@@ -14,25 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edd84e68b7fbf2f361fe7f3b04807ce2feda95f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1bcfbc1a4e2995ca0a8d676b9352b2d7bcba9272
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858330"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>İş parçacığı etkinliği yok (iş parçacıkları görünümü) göstermek için
-Bu alan şu anda görünür zaman aralığı içinde görünür iş parçacıkları hakkındaki verileri gösterir.  
+Bu alan mevcut görülebilir zaman aralığında görünür iş parçacıkları hakkında veriler gösterir.  
   
- Hiçbir bilgi görünür durumdaysa, aşağıdaki ayarları kontrol edin:  
+ Hiçbir bilgi görünür durumdaysa, aşağıdaki ayarları denetleyin:  
   
--   Yakınlaştırma düzeyi yüksek mi? Yakınlaştırma deneyin out ya da daha fazla iş parçacığı etkinliği aralığında getirmek için kaydırma.  
+-   Yakınlaştırma düzeyi yüksek mi? Yakınlaştırmayı deneyin out ya da daha fazla iş parçacığı etkinliği aralığında getirmek için kaydırma.  
   
 -   Çok fazla iş parçacığı gizlidir? Bu durumda, tüm iş parçacıklarının gösteren deneyin  
   
--   Varsa **sadece kendi kodumu** olduğunu belirlenirse, yalnızca veri kodunuzu hakkında görüntüleyebilirsiniz. Herhangi bir sistem iş parçacığı etkinliği olup olmadığından emin olmak için bu ayarı temizleyerek deneyin.  
+-   Varsa **yalnızca kendi kodum** olduğu belirlenirse, yalnızca veri kodunuz hakkında görüntüleyebilirsiniz. Herhangi bir sistem iş parçacığı etkinliği olup olmadığını belirlemek için bu ayarı temizleyerek deneyin.  
   
--   Gürültü azaltma için düşük eşik ayarlandığından emin olun.  
+-   Gürültü azaltma bir düşük eşik ayarlandığından emin olun.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

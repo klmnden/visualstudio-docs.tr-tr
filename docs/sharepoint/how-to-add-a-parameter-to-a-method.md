@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: bir yönteme parametre ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir yönteme parametre eklemek | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,46 +17,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 196ac37cc9bc4f53cfa886b92c62c7a301c3451a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866263"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Nasıl yapılır: bir yönteme parametre ekleme
-  Bir parametre yöntemin içine bilgi geçirmek için veya bir yöntemden bilgi almak için kullanın. Tüm yöntemleri en az bir parametre olması gerekir. Oluşturmak istediğiniz yöntemi türünü desteklemek için bir parametre tasarlamak hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-parameter-to-a-method"></a>Nasıl Yapılır: Bir yönteme bir parametre ekleyin
+  Bir parametre bilgileri yönteme geçirmek için veya bir yöntemden bilgi almak için kullanın. Tüm yöntemler, en az bir parametreye sahip olmalıdır. Oluşturmak istediğiniz yöntemi türünü desteklemek için bir parametre tasarlama hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- Bir yönteme parametre eklediğinizde, Visual Studio, projenizin model dosyasında XML parametre öğesi ekler. Parametre öğesi öznitelikleri hakkında daha fazla bilgi için bkz: [parametresi](http://go.microsoft.com/fwlink/?LinkId=169284).  
+ Bir yönteme parametre eklemek, Visual Studio model dosyası projenize XML parametre öğesi ekler. Parametre öğesi öznitelikleri hakkında daha fazla bilgi için bkz. [parametre](http://go.microsoft.com/fwlink/?LinkId=169284).  
   
 ### <a name="to-add-a-parameter-to-a-method"></a>Bir yönteme parametre eklemek için  
   
 1.  Bir varlık için bir yöntem ekleyin.  
   
-2.  Menü çubuğunda seçin **Görünüm** > **diğer pencereler** > **BDC yöntem ayrıntıları**.  
+2.  Menü çubuğunda, **görünümü** > **diğer Windows** > **BDC yöntem ayrıntıları**.  
   
-     **BDC yöntem ayrıntıları** penceresi açılır. Daha fazla bilgi için bkz: [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
+     **BDC yöntem ayrıntıları** penceresi açılır. Daha fazla bilgi için [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  İçinde **BDC yöntem ayrıntıları** penceresinde yöntemi düğümünü genişletin ve ardından genişletin **parametreleri** düğümü.  
+3.  İçinde **BDC yöntem ayrıntıları** penceresinde yöntemi düğümünü genişletin ve ardından **parametreleri** düğümü.  
   
-4.  İçinde **bir parametre eklemek** listesinde, seçin **oluşturma parametresi**.  
+4.  İçinde **parametre ekleme** listesinde **oluşturma parametresi**.  
   
-     Altında yeni bir parametre görünür **parametreleri** düğümü.  
+     Yeni bir parametre altında görünür **parametreleri** düğümü.  
   
-5.  Menü çubuğunda seçin **Görünüm** > **Özellikler penceresini**.  
+5.  Menü çubuğunda, **görünümü** > **Özellikler penceresi**.  
   
-6.  İçinde **özellikleri** penceresindeki ayarlayın **adı** mantıklı herhangi bir ad özelliği. Örneğin, müşteriler yöntemi verecekse yöntemi adlandırabilirsiniz **GetCustomers**.  
+6.  İçinde **özellikleri** penceresinde **adı** özelliğini anlamlı bir ad. Örneğin, müşterilerin metodun döndüreceği, yöntemin adını verebilirsiniz **GetCustomers**.  
   
-7.  İçinde **BDC yöntem ayrıntıları** penceresinde, parametre yönü için görünür listesini açın ve ardından **içinde**, **InOut**, **çıkışı**, veya **iade**.  
+7.  İçinde **BDC yöntem ayrıntıları** penceresinde, parametrenin yönü için görüntülenen listeyi açın ve ardından **içinde**, **Inout**, **kullanıma**, veya **dönüş**.  
   
-     Oluşturmakta olduğunuz türü yöntemi için seçmek için hangi yöne hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     Hangi yönde oluşturmakta olduğunuz türü yöntemi için seçme hakkında daha fazla bilgi için bkz. [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-8.  Parametrenin tür tanımlayıcısını değiştirin. Daha fazla bilgi için bkz: [nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+8.  Parametrenin tür tanımlayıcısını değiştirin. Daha fazla bilgi için [nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
- [Nasıl yapılır: bir modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Nasıl yapılır: yöntem örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)   
+ [Nasıl yapılır: Modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [Nasıl yapılır: Metot örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)   
  [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

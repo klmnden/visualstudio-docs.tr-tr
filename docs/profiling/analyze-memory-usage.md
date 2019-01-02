@@ -2,19 +2,18 @@
 title: Bellek kullanımını analiz etme
 ms.custom: seodec18
 ms.date: 01/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb854bcbb60dcde1358fe6128466b98780e559c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1dcd3467f474d5c2b3e24ed1d1e490a73e7498bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867192"
 ---
 # <a name="analyze-memory-usage"></a>Bellek kullanımını analiz etme
 Hata ayıklayıcıyla tümleştirilmiş kullanın **bellek kullanımı** Tanılama aracını bellek sızıntılarını ve verimsiz bellek kullanımını bulun. Bir veya daha fazla atmanız bellek kullanımı aracı sağlar *anlık görüntüleri* yönetilen ve yerel bellek yığın. .NET, ASP.NET, yerel veya karma mod (.NET ve yerel) uygulamaları, anlık toplayabilirsiniz.  

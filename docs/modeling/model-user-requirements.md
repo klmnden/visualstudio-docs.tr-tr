@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4791566d3c37517c3c93e62e371bf4cbc9fc6604
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867020"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 
-Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın ihtiyaçlarını anlamanıza, tartışın ve visual Studio yardımcı sisteminizi hedeflerine elde etmelerine yardımcı oynadığı. Her biri farklı bir açısını Kullanıcıların ihtiyaçlarını üzerinde odaklanır. Bu diyagramları kümesi gereksinimleri modelidir. Video gösterimi için bkz: [iş etki alanı modelleme](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
+Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın ihtiyaçlarını anlamanıza, tartışın ve visual Studio yardımcı sisteminizi hedeflerine elde etmelerine yardımcı oynadığı. Her biri farklı bir açısını Kullanıcıların ihtiyaçlarını üzerinde odaklanır. Bu diyagramları kümesi gereksinimleri modelidir. Video gösterimi için bkz: [İş etki alanı modelleme](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
 Visual Studio'nun hangi sürümlerinin her model türünü desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 

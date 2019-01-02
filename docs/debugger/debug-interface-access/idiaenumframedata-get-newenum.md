@@ -1,8 +1,6 @@
 ---
 title: Idiaenumframedata::get__newenum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79761182b344a92742ed6612f08864affee67e1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f3d436a664d7858fe61dfad64ab539f98e2ed2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872089"
 ---
 # <a name="idiaenumframedatagetnewenum"></a>IDiaEnumFrameData::get__NewEnum
 Alır <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> bu Numaralandırıcının sürümü.  
@@ -27,7 +25,7 @@ Alır <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> bu Numaraland�
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get__NewEnum (   
+HRESULT get__NewEnum (   
    IUnknown** pRetVal  
 );  
 ```  

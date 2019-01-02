@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 3934d93355cd652b5da09886e3c7afa5d406119a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: d5d1465253095d069b0c1e62ad6712a60b9e2489
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891394"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Komut satırından Azure projeler derleme
 Microsoft Build Engine (MSBuild) kullanarak, Visual Studio yüklü olduğu yapı Laboratuvar ortamlarında ürünleri oluşturabilirsiniz. MSBuild, genişletilebilir ve tamamen Microsoft tarafından desteklenen proje dosyaları için bir XML biçimini kullanır. MSBuild dosyası biçimini kullanarak, hangi öğe olmalıdır açıklayabilirsiniz bir veya daha fazla platform ve yapılandırmaları için yerleşik.

@@ -2,7 +2,6 @@
 title: Anlık görüntü hata ayıklama sorunlarını giderme | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/07/2017
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880669"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio'da anlık görüntü hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -33,7 +32,7 @@ Aşağıdaki adımları gerçekleştirin:
 
 1. Derleme ve dağıtma, app.isua1 için kullanılan kaynak kodu aynı sürümüne sahip olduğunuzdan emin olun. Dağıtımınız için doğru semboller yükleniyor emin olun. Bunu yapmak için görüntüleme **modülleri** penceresi açıkken anlık görüntü hata ayıklama ve sembol dosyası sütun .pdb dosyasını ayıkladığınız modül için yüklenmiş görüntülendiğini doğrulama. Snapshot Debugger otomatik olarak indirmeyi ve dağıtımınız için semboller kullanın dener.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Sorun: bir anlık görüntü açtığımda sembolleri yüklenmiyor
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Sorun: Anlık görüntü açtığımda sembolleri yüklenmiyor
 
 Pencere görürseniz, semboller yüklenmedi.
 
@@ -56,7 +55,7 @@ Aşağıdaki adımları gerçekleştirin:
 - Anlık görüntü hata ayıklayıcı bileşeni yüklü olduğundan emin olun. Visual Studio Yükleyicisi'ni açın ve kontrol **Snapshot Debugger** Azure iş yükü bileşeni.
 - Uygulamanızın desteklenen emin olun. Şu anda, yalnızca ASP.NET (4.6.1+) ve ASP.NET Core (2.0 +) uygulamalarını Azure App Services'a dağıtılmış desteklenir.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Sorun: yalnızca tanılama araçları kısıtlanmış anlık görüntü görüyorum
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Sorun: Tanılama araçları kısıtlanmış anlık görüntü yalnızca görüyorum
 
 ![Kısıtlı anlık görüntü noktası](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "kısıtlanmış anlık görüntü noktası")
 

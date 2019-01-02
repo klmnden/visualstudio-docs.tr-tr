@@ -1,8 +1,6 @@
 ---
 title: İleti kodları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message codes
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b2061d9f20da8e9c4d5b4f9794f400d638260c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c1f568ead3e5862460d4ae4e18e51687737d4a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866302"
 ---
 # <a name="message-codes"></a>İleti Kodları
-Gösterilen her ileti satırı [iletiler görünümü](../debugger/messages-view.md) 'P,' içeren kullanıcının,' ın,' veya 'R' kod. Bu kodları şu anlama gelir:  
+Gösterilen her ileti satırı [iletiler görünümünü](../debugger/messages-view.md) içeren bir 'P,' kullanıcının,' ın,' veya 'R' kod. Bu kodları, aşağıdaki anlamlara sahiptir:  
   
 |Kod|Açıklama|  
 |----------|-------------|  
-|P|İleti kuyruğa ile deftere **PostMessage** işlevi. İletinin ultimate değerlendirme ilgili hiçbir bilgi kullanılabilir.|  
-|S|İleti ile gönderilmiş **SendMessage** işlevi. Başka bir deyişle, alıcı işler ve iletiyi döndürür kadar gönderen denetim gerekse değil. Alıcı bu nedenle, bir dönüş değeri gönderene geçirebilir.|  
-|s|İleti gönderildi ancak güvenlik için dönüş değerini erişimi engeller.|  
-|R|Her kullanıcının ' iletisi dönüş değeri listeler karşılık gelen bir 'R' (iade) satır bulunur. Bazen, bir ileti işleyicisi başka bir ileti gönderir başka bir deyişle, ileti çağrıları yerleştirilir.|
+|P|İleti kuyruğuyla deftere nakledilen **PostMessage** işlevi. Son Değerlendirme iletisinin ilgili hiçbir bilgi kullanılabilir.|  
+|S|İle gönderilen iletinin **SendMessage** işlevi. Başka bir deyişle, alıcı işler ve ileti döndürür kadar gönderen denetim gerekse değil. Alıcı bu nedenle, dönüş değeri gönderene geçirebilirsiniz.|  
+|s|İleti gönderildi ancak güvenlik dönüş değerini erişimi engeller.|  
+|R|Her bir kişinin ' satırı, ileti dönüş değerini listeler karşılık gelen bir 'R' (başı) satır içeriyor. Bazen, bir ileti işleyicisi başka bir ileti gönderir. yani ileti çağrıları yerleştirilir.|

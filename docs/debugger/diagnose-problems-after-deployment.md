@@ -1,8 +1,6 @@
 ---
 title: Dağıtımdan sonra sorunları tanılama | Microsoft Docs
-ms.custom: ''
 ms.date: 04/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860916"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama
 
@@ -33,7 +31,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
 
 -   Tanılama verilerini gözden geçirmek ve kodunuzu IntelliTrace ile hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya Community sürümlerini)
 
-##  <a name="SetUpBuild"></a> 1. adım: Dahil, sürüm bilgileri oluşturun
+##  <a name="SetUpBuild"></a> 1. adım: Sürümünüzü ile derleme bilgileri ekleyin
  Bir derleme bildirimi oluşturmak için yapı işleminizi ayarlayın (*Buildınfo.config* dosya) web için proje ve sürümünüzü ile bu bildirimi içerir. Bu bildirimi, proje, kaynak denetimi ve belirli bir yapı oluşturmak için kullanılan derleme sistemi hakkında bilgi içerir. Bu bilgiler, kayıtlı olayları gözden geçirmek için IntelliTrace günlük açtıktan sonra eşleşen kaynak ve simgeleri bulmak Visual Studio yardımcı olur.
 
 ###  <a name="AutomatedBuild"></a> Team Foundation Server kullanarak otomatik bir yapı için derleme bildirimi oluşturma
@@ -92,7 +90,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 6.  Yeni bir yapı çalıştırın.
 
-    Git [2. adım: uygulamanızı dağıtın](#DeployRelease)
+    Git [2. adım: Uygulamanızı sürüm](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 veya 2010
  Otomatik olarak projeniz için derleme bildirimini (Buildınfo.config dosyası) oluşturun ve dosyayı projenizin çıkış klasörüne yerleştirmek için aşağıdaki adımları izleyin. Dosya olarak görünür "*ProjectName*. "Çıktı klasöründe Buildınfo.config ancak olan uygulamanızı yayımladıktan sonra dağıtım klasörü" Buildınfo.config"olarak yeniden adlandırıldı.
@@ -117,7 +115,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 4.  Yeni bir yapı çalıştırın.
 
-    Git [2. adım: uygulamanızı dağıtın](#DeployRelease)
+    Git [2. adım: Uygulamanızı sürüm](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> Visual Studio kullanarak el ile bir derleme için derleme bildirimi oluşturma
  Otomatik olarak projeniz için derleme bildirimini (Buildınfo.config dosyası) oluşturun ve dosyayı projenizin çıkış klasörüne yerleştirmek için aşağıdaki adımları izleyin. Dosya olarak görünür "*ProjectName*. "Çıktı klasöründe Buildınfo.config ancak olan uygulamanızı yayımladıktan sonra dağıtım klasörü" Buildınfo.config"olarak yeniden adlandırıldı.
@@ -144,7 +142,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 4.  Yeni bir yapı çalıştırın.
 
-    Git [2. adım: uygulamanızı dağıtın](#DeployRelease)
+    Git [2. adım: Uygulamanızı sürüm](#DeployRelease)
 
 ###  <a name="MSBuild"></a> MSBuild.exe kullanarak elle bir yapı için derleme bildirimi oluşturma
  Bir yapı çalıştırdığınızda bu bağımsız değişkenleri ekleyin:
@@ -155,15 +153,15 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
  **buildsymbolstorepath =**\<*sembol yolu*>
 
-##  <a name="DeployRelease"></a> 2. adım: uygulamanızı dağıtın
+##  <a name="DeployRelease"></a> 2. adım: Uygulamanızı sürüm
  Kullanırsanız [Web.Deploy paketini](https://msdn.microsoft.com/library/dd394698.aspx) gelen derleme bildirimi otomatik olarak yeniden adlandırılır, uygulamanızı dağıtmak için derleme işleminiz tarafından oluşturulan "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucunuz üzerinde uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.
 
  Uygulamanızı dağıtmak için diğer yöntemleri kullanıyorsanız, derleme bildirimi gelen adlandırılır emin olun "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucusundaki uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.
 
-## <a name="step-3-monitor-your-app"></a>Adım 3: Uygulamanızı izleyin
+## <a name="step-3-monitor-your-app"></a>3. Adım: Uygulamanızı izleme
  Uygulamanızı sorunlarını izleme, tanılama olaylarını kaydedin ve bu olayları bir IntelliTrace günlük dosyasına kaydetmek için uygulama performans web sunucunuzda izlemeyi ayarlayın. Bkz: [sürümünüzü dağıtım sorunları için izleme](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="InvestigateEvents"></a> Adım 4: sorunu bulma
+##  <a name="InvestigateEvents"></a> 4. adım: Sorun bulunamadı
  Visual Studio Enterprise geliştirme bilgisayarınıza veya başka bir bilgisayarda kayıtlı olayları gözden geçirmek ve kodunuzu IntelliTrace kullanarak hata ayıklama için gerekir. CodeLens, hata ayıklayıcı eşlemleri gibi araçları da kullanabilirsiniz ve sorunu tanılamanıza yardımcı olacak kod eşlemeleri.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>IntelliTrace günlüğünü ve eşleşen çözümü açın
@@ -188,7 +186,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
      Belirli eşleşmeler veya bilgisayarınızın adı olmayan bir ad ile bir çalışma alanı oluşturmak için seçin **Yönet**.
 
-     [S: neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?](#IneligibleWorkspace)
+     [S: Neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?](#IneligibleWorkspace)
 
      [S: Ben bir takım koleksiyonu veya farklı bir koleksiyon seçinceye kadar niçin devam edemiyorum?](#ChooseTeamProject)
 
@@ -250,7 +248,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 ###  <a name="FAQ"></a> SORU- CEVAP
 
-####  <a name="WhyInclude"></a> S: neden proje, kaynak denetimi, derleme ve sürümüm sembolleriyle hakkında bilgi dahil edilsin mi?
+####  <a name="WhyInclude"></a> S: Proje, kaynak denetimi, derleme ve sürümüm sembolleriyle hakkında bilgi neden dahil edilsin mi?
  Visual Studio, kaynak ve eşleşen çözümü, hata ayıklama çalıştığınız sürümü bulmak için bu bilgileri kullanır. IntelliTrace günlüğünü açın ve hata ayıklamayı başlatmak için bir olay seçin sonra Visual Studio sembolleri bulun ve olayın gerçekleştiği kodu göstermek için kullanır. Ardından, kaydedilmiş değerlere göz ve kodunuzun yürütme ileteceğini veya geriye doğru bir şekilde taşıyabilirsiniz.
 
  TFS ve bu bilgileri kullanıyorsanız, derleme bildirimi (Buildınfo.config dosyası), Visual Studio arar eşleşen kaynağa ve sembollere şu anda bağlı TFS üzerinde değil. Visual Studio doğru TFS veya eşleşen kaynağı bulamıyorsanız, farklı bir TFS seçmenizi istenir.
@@ -280,9 +278,9 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
     - **ProjectCollectionUri**: Team Foundation Server ve proje koleksiyonunuz için URI
 
-    - **Projectıtemspec**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
+    - **Projectıtemspec**: Uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
 
-    - **ProjectVersionSpec**: projeniz için yeni sürümü
+    - **ProjectVersionSpec**: Projeniz için yeni sürümü
 
       Örneğin:
 
@@ -298,13 +296,13 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
   - **Git**
 
-    - **GitSourceControl**: konumunu **GitSourceControl** şeması
+    - **GitSourceControl**: Konumunu **GitSourceControl** şeması
 
     - **RepositoryUrl**: Team Foundation Server, proje koleksiyonu ve Git deposu için URI
 
-    - **ProjectPath**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
+    - **ProjectPath**: Uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu
 
-    - **Commitıd**: kaydınızı kimliği
+    - **Commitıd**: Kaydınızı kimliği
 
       Örneğin:
 
@@ -322,15 +320,15 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
    Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:
 
-  - **BuildLabel** (TeamBuild için için): derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (TeamBuild için için): Derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (önerilen): URI listesi için Sembol (PDB dosyası) konumlarınıza noktalı virgüllerle ayrılmış. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.
+  - **SymbolPath** (önerilen): URI listesi noktalı virgüllerle ayrılmış sembol (PDB dosyası) konumlarınıza için. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.
 
-  - **BuildReportUrl** (için TeamBuild için): TFS'de yapı raporunun konumu
+  - **BuildReportUrl** (TeamBuild için için): TFS'de yapı raporunun konumu
 
-  - **Buildıd** (için TeamBuild için): TFS'de yapı için URI ayrıntıları. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.
+  - **Buildıd** (TeamBuild için için): TFS derleme ayrıntıları için URI. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.
 
-  - **BuiltSolution**: Visual Studio çözüm dosyasının yolu bulmak ve eşleşen çözümü açmak için kullanır. Bu içeriği, **SolutionPath** MsBuild özelliği.
+  - **BuiltSolution**: Visual Studio bulmak ve eşleşen çözümü açmak için kullandığı çözüm dosyasının yolu. Bu içeriği, **SolutionPath** MsBuild özelliği.
 
     Örneğin:
 
@@ -359,8 +357,8 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> S: neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?
- **Y:** seçilen çalışma alanı, kaynak denetim klasörü ve yerel klasör arasında herhangi bir eşlemeye sahip değil. Bu çalışma alanına ilişkin bir eşleme oluşturmak için seçin **Yönet**. Aksi halde, zaten eşleşmiş bir çalışma alanı seçin veya yeni bir çalışma alanı oluşturun.
+####  <a name="IneligibleWorkspace"></a> S: Neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?
+ **Y:** Seçilen çalışma alanı, kaynak denetim klasörü ve yerel klasör arasında herhangi bir eşlemeye sahip değil. Bu çalışma alanına ilişkin bir eşleme oluşturmak için seçin **Yönet**. Aksi halde, zaten eşleşmiş bir çalışma alanı seçin veya yeni bir çalışma alanı oluşturun.
 
  ![Eşleşmiş bir çalışma alanı ile kaynak denetiminden Aç](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
@@ -381,10 +379,10 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
      ![Kaynak Denetiminden Aç &#45; geçişi](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> S: bir çalışma alanı nedir?
- **Y:** , [çalışma alanı, kaynak kopyasını depoladığından](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) geliştirebilir ve bunu ayrı olarak önce onay çalışmanızı test edebilirsiniz. Bulunan çözümle veya projeyle özel olarak eşleşen bir çalışma alanı yoksa, Visual Studio varsayılan çalışma alanı adı olarak bilgisayar adınızla birlikte yeni bir çalışma alanı oluşturmanızı veya mevcut bir çalışma alanı seçmenizi ister.
+####  <a name="WhatWorkspace"></a> S: Çalışma alanı nedir?
+ **Y:** [Çalışma alanı, kaynak kopyasını depoladığından](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) geliştirebilir ve bunu ayrı olarak önce onay çalışmanızı test edebilirsiniz. Bulunan çözümle veya projeyle özel olarak eşleşen bir çalışma alanı yoksa, Visual Studio varsayılan çalışma alanı adı olarak bilgisayar adınızla birlikte yeni bir çalışma alanı oluşturmanızı veya mevcut bir çalışma alanı seçmenizi ister.
 
-####  <a name="UntrustedSymbols"></a> Güvenilmeyen simgeler hakkında bu iletiyi neden alıyorum?
+####  <a name="UntrustedSymbols"></a> S: Bu güvenilmeyen simgeler hakkındaki iletiyi neden alıyorum?
  ![Güvenilmeyen simgeler yolu ile hata ayıklama? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **Y:** bu ileti görüntülenir yapı bildirim dosyası içindeki semboller yolu (\<*ProjectName*>. Buildınfo.config) güvenilir sembol yolları listesine dahil değildir. Hata ayıklama seçeneklerindeki sembol yolu listesine yolu ekleyebilirsiniz.
+ **Y:** Bu ileti görüntülenir yapı bildirim dosyası içindeki semboller yolu (\<*ProjectName*>. Buildınfo.config) güvenilir sembol yolları listesine dahil değildir. Hata ayıklama seçeneklerindeki sembol yolu listesine yolu ekleyebilirsiniz.

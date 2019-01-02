@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla yeni Visio belgeleri oluşturma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0962c0d7927fd7b21969b36020e2a40d587cf452
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872511"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Nasıl yapılır: program aracılığıyla yeni Visio belgeleri oluşturma
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Nasıl Yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma
   Yeni Microsoft Office Visio çizim belgesi oluşturduğunuzda, ona ekleme `Microsoft.Office.Interop.Visio.Documents` açık Visio belgeleri koleksiyonu. Sonuç olarak, `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi yeni bir Visio çizim belgesi oluşturur. Daha fazla bilgi için bkz: VBA başvuru belgelerine [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) yöntemi.  
   
 ## <a name="create-new-blank-documents"></a>Yeni bir boş belge oluşturma  
@@ -77,9 +74,7 @@ ms.locfileid: "50671566"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visio çözümleri](../vsto/visio-solutions.md)   
  [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
- [Nasıl yapılır: program aracılığıyla Visio belgelerini açma](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla Visio belgelerini açma](../vsto/how-to-programmatically-open-visio-documents.md)   
  [Nasıl yapılır: Visio belgelerini program aracılığıyla kapatma](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Nasıl yapılır: program aracılığıyla Visio belgelerini kaydetme](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Nasıl yapılır: program aracılığıyla Visio belgelerini yazdırma](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Nasıl yapılır: Program aracılığıyla Visio belgelerini kaydetme](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla Visio belgelerini yazdırma](../vsto/how-to-programmatically-print-visio-documents.md)  

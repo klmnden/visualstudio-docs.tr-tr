@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869261"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 
@@ -97,7 +96,7 @@ Genellikle, başvurulan öğenin ad alanı (Bu örnekte, `Library` etki alanı s
 
 Bilinen ad sistem XML ağacındaki eşdüzey farklı adlara sahip olmasını gerektirir. Örneğin, iki sınıf aynı ada sahip bir etki alanına özgü dil tanımı kaydetmeyi denerseniz, bu nedenle, doğrulama hataları oluşur. Böylece, doğru bir şekilde daha sonra yeniden yükleyebilirsiniz DslDefinition.dsl dosyası kaydetmeden önce her zaman böyle yinelenen ad hataları düzeltmeniz gerekir.
 
-Bilinen ad türünün her türünde: DomainClassMoniker, DomainRelationshipMoniker, ve benzeri.
+Her tür kendi ad türü vardır: DomainClassMoniker, DomainRelationshipMoniker ve benzeri.
 
 ## <a name="types"></a>Türler
 
@@ -228,7 +227,7 @@ Her etki alanı özelliği bu öznitelikler de sahip olabilir:
 
 Her ilişki aşağıdaki özniteliklere sahip bir kaynak ve hedef rolleri içerir:
 
--   `RolePlayer` Özniteliği başvuruda bağlı örnek etki alanı sınıfı: OutPort kaynağı için hedef InPort.
+-   `RolePlayer` Özniteliği başvuruda bağlı örnek etki alanı sınıfı: OutPort InPort hedef kaynağı için.
 
 -   `Multiplicity` Özniteliğine sahip dört olası değerler (ZeroMany, ZeroOne, tek ve OneMany). Bu öznitelik, bir rol oyuncusu ile ilişkilendirilebilir bu ilişkisine ait bağlantıların sayısını ifade eder.
 

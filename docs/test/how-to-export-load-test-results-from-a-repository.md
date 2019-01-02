@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d86925963c156ae66abcf9b100b27bcd54224d75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869446"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Nasıl yapılır: bir depodan dışarı aktarma yük testi sonuçları
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Nasıl Yapılır: Yük testi sonuçlarını bir depodan dışarı aktarma
 
 Çalıştırma sırasında toplanan bilgileri, bir yük testi çalıştırdığınızda, yük testi sonuçları deposunda depolanır. Yük testi sonuçları deposu, performans sayacı verileri ve hatalar hakkında bilgi içerir. Daha fazla bilgi için [Yönet yük testi sonuçları yük testi sonuçları deposunda](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -58,6 +57,6 @@ Kullanarak yük testi sonuçları Yük Testi Düzenleyicisi'nden yönetebilirsin
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi sonuçları deposu içindeki yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Nasıl yapılır: bir depodan silme yük testi sonuçları](../test/how-to-delete-load-test-results-from-a-repository.md)
+- [Nasıl yapılır: Yük testi sonuçlarını bir depodan silme](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Nasıl yapılır: bir depoda alma yük testi sonuçları](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Nasıl yapılır: Bir depoda alma yük testi sonuçları](../test/how-to-import-load-test-results-into-a-repository.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: Visual Studio uzantısını güncelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Visual Studio uzantısını güncelleştirme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - update package
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf951215dfb4f6837c157a7b8510fba2d09f140
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 65d27087c0708623f1861bb675a37af84e2360a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858325"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>Nasıl yapılır: Visual Studio uzantısını güncelleştirme
+# <a name="how-to-update-a-visual-studio-extension"></a>Nasıl Yapılır: Visual Studio uzantısını güncelleştirme
 Kullanarak, sisteminizde Visual Studio uzantısı güncelleştirebilirsiniz **Uzantılar ve güncelleştirmeler** güncelleştirilmiş sürümünü yüklemek için. Bir uzantının güncelleştirilmiş bir sürümü oluşturursanız, geldiğiniz VSIX bildirimi sürüm numarasını artırılarak güncelleştirilmiş gibi.  
   
  Updates are Installed gelen uzantının VSIX bildirimini aynı olduğunda `ID` olarak yüklenen bir ve daha yüksek bir `Version` sayı. Varsa `Version` sayıdır aynı veya daha düşükse paket yüklenemiyor. Varsa `ID` değerleri eşleşmiyor, henüz yüklenmemiş paketi ayrı bir uzantı kabul edilir.  

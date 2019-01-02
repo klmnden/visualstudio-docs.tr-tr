@@ -1,8 +1,6 @@
 ---
 title: GPU kodunda hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0fdab78364eaf4c0f9fd86753b8ca1c4178415
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 938d2a81f60b86904d0334380734979c2a39cc43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893950"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yapabilirsiniz. GPU hata ayıklama desteği Visual Studio'da yarış algılama işlemlerini başlatma ve bunları ve hata ayıklama Windows tümleştirme ekleme içerir.  
@@ -55,11 +53,11 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
   
 -   [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)  
   
--   [Nasıl Yapılır: Paralel İzleme Penceresini Kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Nasıl yapılır: Paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md) (hata ayıklama konumu araç çubuğu)  
   
--   [Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Veri eşitleme özel durumları  
  Hata ayıklayıcı yürütme sırasında birkaç veri eşitleme koşullar tanımlayabilirsiniz. Bir koşul algılandığında, hata ayıklayıcı kesme durumuna girer. İki seçeneğiniz vardır —**sonu** veya **devam**. Kullanarak **özel durumları** iletişim kutusu, hata ayıklayıcı Bu koşullar algılar ve ayrıca hangi koşullar Bu için keser olup olmadığını yapılandırabilirsiniz. Daha fazla bilgi için [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md). Ayrıca **seçenekleri** yazılan veriler veri değerini değiştirmez, hata ayıklayıcısını özel durumlar yoksayması gerektiğini belirtmek için iletişim kutusu. Daha fazla bilgi için [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  
@@ -78,7 +76,7 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Hata: Seçili hata ayıklama Hızlandırıcı türü için hata ayıklama sürücüsü hedef makinede yüklü değil.  
  Uzak bir bilgisayarda hata ayıklaması yapıyorsanız, bu hata oluşur. Hata ayıklayıcı, çalışma zamanına kadar sürücüleri uzak Bilgisayarına yüklü olup olmadığını belirleyemiyor. Grafik kartı üreticisinden sürücüleri kullanılabilir.  
   
-### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Hata: Zaman aşımı algılama ve Kurtarma (TDR) uzak sitede devre dışı bırakılmalıdır.  
+### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Hata: Uzak sitedeki zaman aşımı algılama ve Kurtarma (TDR) devre dışı bırakılmalıdır.  
  Windows zaman aşımı algılama ve kurtarma işlemi (TDR) tarafından ayarlanmış varsayılan zaman aralığını aşan C++ AMP hesaplamalar için mümkündür. Bu durum oluştuğunda, hesaplama iptal edilir ve veriler kaybolur. Daha fazla bilgi için [işleme TDRs C++ amp'de](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

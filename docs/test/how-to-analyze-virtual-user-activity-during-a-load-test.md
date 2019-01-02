@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875277"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Nasıl yapılır: sanal kullanıcı etkinlik grafiğini kullanarak yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Nasıl Yapılır: Sanal kullanıcı etkinlik grafiğini kullanarak yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme
 
 Kullanarak yük testi ile ilişkili sanal kullanıcı etkinliğini görüntüleyin **sanal kullanıcı aktivite grafiği**. Grafikteki her satırın tek bir sanal kullanıcı temsil eder. **Sanal kullanıcı aktivite grafiği** tam olarak neyin test sırasında her sanal kullanıcı yürütülmüş gösterir. Kullanıcı Etkinlik düzenlerini görebilir, yük düzenleri, yavaş veya başarısız testleri ilişkilendirin ve diğer sanal kullanıcı etkinliğini isteklerle bakın. **Sanal kullanıcı aktivite grafiği** yalnızca yük testi çalışması bittikten sonra kullanılabilir.
 
@@ -108,4 +107,4 @@ Aşağıdaki yordamlar nasıl görüntüleneceğini göstermektedir **sanal kull
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Ayrıntılar görünümünde sanal kullanıcı etkinliğini çözümleme](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [İzlenecek yol: sorunları yalıtmak için sanal kullanıcı etkinlik grafiğini kullanma](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [İzlenecek yol: Sorunları yalıtmak için sanal kullanıcı etkinlik grafiğini kullanma](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

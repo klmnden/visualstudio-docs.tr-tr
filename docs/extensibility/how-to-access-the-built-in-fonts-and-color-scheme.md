@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: yerleşik yazı tipi ve renk şeması erişim | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Yerleşik yazı tipi ve renk şeması erişim | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874608"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Nasıl yapılır: yerleşik yazı tiplerinin erişmek ve ccheme renk
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Nasıl Yapılır: Yerleşik yazı tiplerinin erişmek ve ccheme renk
 Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle ilişkilidir yazı tipleri ve renkler bir düzeni vardır. Bu düzen aracılığıyla erişebileceğiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi.
 
  Yerleşik yazı tiplerini ve renkleri düzeni kullanmak için bir VSPackage gerekir:

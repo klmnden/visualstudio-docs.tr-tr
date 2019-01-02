@@ -1,12 +1,11 @@
 ---
-title: 'CA2105: Dizi alanları salt okunur yok | Microsoft Docs'
+title: 'CA2105: Dizi alanları okunamadı yalnızca | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e38af5e19b872e1ffbd0afcda9afe9e51d2b986a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858237"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Dizi alanları salt okunur olmamalıdır
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Dizi alanları salt okunur değildir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,7 +42,7 @@ ms.locfileid: "49894982"
 ## <a name="rule-description"></a>Kural Tanımı
  Uyguladığınızda `readonly` (`ReadOnly` içinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) alan bir dizi içeren alana değiştiricisi, farklı bir dizi olarak başvurmak için değiştirilemez. Bir dizinin öğeleri salt okunur bir alanda depolanmış olsa bile değiştirilebilir. Açıklardan güvenlik açığı kararları veya genel olarak erişilebilen bir salt okunur dizi öğeleri üzerinde temel işlemleri gerçekleştiren kod içerebilir.
 
- Ortak alan sahip de tasarım kuralı ihlal Not [CA1051: görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Ortak alan sahip de tasarım kuralı ihlal Not [CA1051: Görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural tarafından belirlenen güvenlik açığını gidermek için genel olarak erişilebilen bir salt okunur dizi içeriğine güvenmeyin. Aşağıdaki yordamlardan birini kullanmanız önerilir:
@@ -52,7 +51,7 @@ ms.locfileid: "49894982"
 
 - Genel alanı özel dizinin bir kopyasını döndüren bir yöntem ile değiştirin. Kodunuzu kopyada kullanmayan olduğundan tehlike öğeleri değiştirdiyseniz.
 
-  İkinci yaklaşım seçerseniz, alana sahip bir özellik değiştirmeyin; olumsuz dizi döndüren özellikler, performansı etkiler. Daha fazla bilgi için [CA1819: özellikler diziler döndürmemelidir](../code-quality/ca1819-properties-should-not-return-arrays.md).
+  İkinci yaklaşım seçerseniz, alana sahip bir özellik değiştirmeyin; olumsuz dizi döndüren özellikler, performansı etkiler. Daha fazla bilgi için [CA1819: Özellikler diziler döndürmemelidir](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Bu kuraldan bir uyarıyı, dışlama kesinlikle önerilmez. Salt okunur bir alanın içeriğini önemli olduğu neredeyse hiçbir senaryo oluşur. Senaryonuz Durum buysa, kaldırma `readonly` ileti hariç yerine değiştiricisi.
@@ -71,10 +70,7 @@ ms.locfileid: "49894982"
 
  Bu örnekte çıktı.
 
- **İzinsiz önce: derece: 90, 90, özel 90 derece: 90, 90, 90 güvenli derece, 90, 90, 90**
-**oynama sonra: derece: 90, 555, özel 90 derece: 90, 555, 90 güvenli derece, 90, 90, 90**
+ **İzinsiz önce: Derece: 90, 90, özel 90 derece: 90, 90, 90 güvenli derece, 90, 90, 90**
+**oynama sonra: Derece: 90, 555, özel 90 derece: 90, 555-90 derece, 90, 90, 90 güvenli**
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Array?displayProperty=fullName><xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

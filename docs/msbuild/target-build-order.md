@@ -1,8 +1,6 @@
 ---
 title: Hedef derleme sırası | Microsoft Docs
-ms.custom: ''
 ms.date: 09/04/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96eb3aacfd83ad60ae6c0e0f1fa95209136307ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881532"
 ---
 # <a name="target-build-order"></a>Hedef derleme sırası
 Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri sıralanmış olmaları gerekmektedir. Bu öznitelikler, hedef çalıştığı sırayı belirtmek için kullanabilirsiniz:  
@@ -45,7 +43,7 @@ Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri
   
  İçeri aktarılan projeleri olabilir, kendi `InitialTargets` öznitelikleri. Tüm ilk hedefleri araya toplanır ve sırayla çalıştırın.  
   
- Daha fazla bilgi için [nasıl yapılır: ilk oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Daha fazla bilgi için [nasıl yapılır: İlk olarak oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Varsayılan hedefler  
  `DefaultTargets` Özniteliği [proje](../msbuild/project-element-msbuild.md) öğesi belirtir hangi hedef veya hedefleri yerleşik bir hedef komut satırında açıkça belirtilmezse.  
@@ -64,7 +62,7 @@ Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri
   
  İçeri aktarılan projeleri olabilir, kendi `DefaultTargets` öznitelikleri. İlk `DefaultTargets` karşılaştı öznitelik hedefleri çalıştırılacağı hangi varsayılan belirler.  
   
- Daha fazla bilgi için [nasıl yapılır: ilk oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Daha fazla bilgi için [nasıl yapılır: İlk olarak oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>İlk hedef  
  Varsa hiçbir ilk hedefler, varsayılan hedefler ya da komut satırı hedefleri ilk hedef MSBuild çalıştırır daha sonra proje dosyası veya içeri aktarılan tüm proje dosyaları karşılaşır.  

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: değişiklik ClickOnce uygulaması için yayımlama dilini | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Değişiklik ClickOnce uygulaması için yayımlama dilini | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4567ab9b72ccf827f8fad0bd35654210a4457ad4
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 21fe434c1128c9f0b81455e010872ccaa49790f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871631"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için yayımlama dilini değiştirme
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulaması için yayımlama dilini değiştirme
 
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, dil ve geliştirme bilgisayarınıza kültürünü Yükleme varsayılanlarını sırasında görüntülenen kullanıcı arabirimi. Yerelleştirilmiş bir uygulama yayımlıyorsanız, bir dil ve kültür yerelleştirilmiş sürümüyle eşleşecek şekilde belirtmeniz gerekir. Bu belirlenir `Publish language` projeniz için özellik.
 
@@ -49,4 +47,4 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)
-- [Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

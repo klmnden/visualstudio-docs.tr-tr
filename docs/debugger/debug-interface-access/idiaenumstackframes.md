@@ -1,8 +1,6 @@
 ---
 title: Idiaenumstackframes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,22 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64539a1f10cfa2a263e36095cea40e58244ef6d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1aef0291b4048cf7b673ec9b2791b3b6b6c00846
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879659"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
-Çeşitli yığın çerçeveleri numaralandırır.  
+Kullanılabilir çeşitli yığın çerçevelerini listeler.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Belirtilen sayıda yığın çerçeve öğeyi numaralandırma dizisini alır.|  
-|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Yığın çerçeve öğelerin belirtilen bir sayı sabit listesi dizisinden alır.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
@@ -37,7 +35,7 @@ ms.locfileid: "31459798"
  Bu arabirim çağırarak elde [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) veya [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) yöntemleri.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek edinme ve kullanma gösterilmektedir `IDiaEnumStackFrames` arabirimi. Bkz: [Idiastackframe](../../debugger/debug-interface-access/idiastackframe.md) arabirim uygulaması için `PrintStackFrame` işlevi.  
+ Bu örnek nasıl elde edilir ve gösterir `IDiaEnumStackFrames` arabirimi. Bkz: [Idiastackframe](../../debugger/debug-interface-access/idiastackframe.md) arabirimi uygulaması için `PrintStackFrame` işlevi.  
   
 ```C++  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
@@ -65,9 +63,9 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

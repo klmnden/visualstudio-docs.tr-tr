@@ -1,8 +1,6 @@
 ---
 title: Idialoadcallback2::restrictreferencepathaccess | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c3a6239b41fec44098850973ddcd4839b808a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 121b5a4c74fd017e39314de7afe760a8d6184e25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872141"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 .Exe dosyasının bulunduğu yolu bir .pdb dosyasını ararken izin verilip verilmediğini belirler.  
@@ -31,10 +29,10 @@ HRESULT RestrictReferencePathAccess();
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Herhangi bir başka dönüş kodu `S_OK` .exe dosyasının bulunduğu bir .pdb dosyasını yolunda ararken önlemek için.  
+ Herhangi bir dışındaki kod dönüş `S_OK` .exe dosyasının bulunduğu bir .pdb dosyası için yol arama önlemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

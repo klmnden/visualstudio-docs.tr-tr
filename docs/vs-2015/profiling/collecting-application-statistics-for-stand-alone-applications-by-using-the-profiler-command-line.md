@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9841911dbb1fc9bb97eb995534af3eaec73d10e9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: da0fb80c6787d13b1c30fc13081264736030add0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867702"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak Bağımsız Uygulamalar için Uygulama İstatistikleri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Bu bölümde, yordamları ve komut satırından örnekleme yöntemini kullanarak
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Profil oluşturma'ı kullanarak bir uygulama başlatın**|-   [Nasıl yapılır: bağımsız bir uygulama başlatma ve uygulama istatistikleri toplama](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: Profiler bir .NET Framework uygulamasına ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: Profiler bir yerel uygulamaya profil oluşturucu ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Profil oluşturma'ı kullanarak bir uygulama başlatın**|-   [Nasıl Yapılır: Bağımsız bir uygulama başlatma ve uygulama istatistikleri toplama](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profiler'ı bir .NET Framework uygulamasına ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profiler bir yerel uygulamaya profil oluşturucu ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
@@ -55,7 +55,7 @@ Bu bölümde, yordamları ve komut satırından örnekleme yöntemini kullanarak
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**ASP.NET Web uygulamalarının profilini oluşturma**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**ASP.NET Web uygulamalarının profilini oluşturma**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
 |**Profil hizmetler**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Örnekleme yöntemini kullanarak, Windows Hizmetleri'nden performans istatistikleri toplamak nasıl açıklar.|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Görünümleri ve raporları örnekleme verileri analiz etme  

@@ -1,8 +1,6 @@
 ---
 title: Idiatable::get_name | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87527cd4a025973294ffc6219a452eb1b23bc897
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c5288b85fef8e292454b8b26cbe9459277b1f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868004"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 Tablonun adını alır.  
@@ -27,7 +25,7 @@ Tablonun adını alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_name (   
+HRESULT get_name (   
    BSTR* pRetVal  
 );  
 ```  

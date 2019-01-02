@@ -1,8 +1,6 @@
 ---
 title: Yerel kodda hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 04/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870774"
 ---
 # <a name="debugging-native-code"></a>Yerel Kodda Hata Ayıklama
 Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için teknikleri kapsar. Bu bölümde yer alan teknikleri, üst düzey tekniklerle aynıdır. Visual Studio hata ayıklayıcısını kullanarak mekanizması için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)).  

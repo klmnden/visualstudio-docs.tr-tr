@@ -1,8 +1,6 @@
 ---
 title: ClickOnce ve Authenticode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fe73ba2ef02ecf6f9eb75663650862fd78fea1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859157"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
 *Authenticode* uygulama kodu uygulama yayımcısının özgünlüğünü doğrulamak dijital sertifika ile imzalamak için endüstri standardı şifreleme kullanan bir Microsoft teknolojisidir. Uygulama dağıtımı için Authenticode kullanılarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Truva atı riskini azaltır. Truva atı, virüs veya kötü amaçlı bir üçüncü taraf kurulu olan güvenilir bir kaynaktan gelen yasal bir program olarak görünen diğer zararlı programı değil. İmzalama [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir dijital sertifika ile dağıtımları derlemeleri ve dosyaları değil doğrulamak için isteğe bağlı bir adımdır.  
@@ -55,7 +53,7 @@ ms.locfileid: "49907449"
 ### <a name="timestamps"></a>Zaman damgaları  
  Oturum açmak için kullanılan sertifikaları [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları süresi zaman bir belirli bir süre sonra genellikle on iki aylık. Yeni sertifikalar uygulamaları sürekli yeniden imzalama için gereken kaldırmak için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zaman damgası destekler. Bir uygulama zaman damgasıyla imzalandığında sertifikasını sürdürecektir kabul dolduktan sonra bile, zaman damgası geçerli sağlanır. Böylece [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] süresi dolmuş sertifikaları, ancak karşıdan yüklemek ve çalıştırmak için geçerli zaman damgaları uygulamalarla. Ayrıca, güncelleştirmeleri indirmek ve yüklemek devam etmek yüklenmiş uygulamalara sahip süresi dolmuş sertifikaları sağlar.  
   
- Uygulama sunucusuna bir zaman damgası eklemek için zaman damgası sunucusunun kullanılabilir olması gerekir. Zaman damgası sunucusu seçme hakkında daha fazla bilgi için bkz: [nasıl yapılır: oturum uygulama ve dağıtım bildirimlerini](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Uygulama sunucusuna bir zaman damgası eklemek için zaman damgası sunucusunun kullanılabilir olması gerekir. Zaman damgası sunucusu seçme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="update-expired-certificates"></a>Süresi dolan sertifikaları güncelleştirme  
  Önceki .NET Framework sürümlerinde, sertifikanın süresi dolmuş uygulamayı güncelleştirme, Uygulama çalışmayı durdurmasına neden olabilir. Bu sorunu çözmek için aşağıdaki yöntemlerden birini kullanın:  

@@ -1,9 +1,6 @@
 ---
 title: Excel çözümleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856864"
 ---
 # <a name="excel-solutions"></a>Excel çözümleri
   Visual Studio, Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Excel otomatikleştirin, Excel özelliklerini genişletmek ve Excel kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -122,4 +119,3 @@ ms.locfileid: "53647951"
 | [İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Bir Windows Forms düğme eklemek gösterilmiştir bir <xref:Microsoft.Office.Tools.Excel.NamedRange>ve bir <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanında VSTO eklenti kullanarak. |
 | [Birlikte yazmayı ve eklentileri anlama](./understanding-coauthoring-and-addins.md) | Birlikte yazmayı uyum sağlayacak şekilde çözümlerinizi yapmanız gerekebilir ayarlamalar açıklar. |
 | [Excel 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199011) | Makaleler ve Excel çözümleri geliştirme hakkında başvuru belgelerine bağlantılar sağlar. Bu, Visual Studio kullanarak Office geliştirmeye özgü değildir. |
-

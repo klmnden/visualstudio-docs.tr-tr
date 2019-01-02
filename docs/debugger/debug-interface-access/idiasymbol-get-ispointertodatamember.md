@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isPointerToDataMember | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fec840ac0669c5a882b5c1de9a9e582c3a06a1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b8511b74c55eebb420c04cdc782c8725133c90eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871414"
 ---
 # <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
-Bu simgenin veri üyesi için bir işaretçi olup olmadığını belirtir.  
+Bu simgenin bir veri üyesinin işaretçisinin olup olmadığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,10 +29,10 @@ HRESULT get_isPointerToDataMember(
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- [out] Bir işaretçi bir `BOOL` bu simgenin veri üyesi için bir işaretçi olup olmadığını belirtir.  
+ [out] Bir işaretçi bir `BOOL` bu simgenin bir veri üyesinin işaretçisinin olup olmadığını belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

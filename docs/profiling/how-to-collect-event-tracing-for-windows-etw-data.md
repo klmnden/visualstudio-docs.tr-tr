@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Windows (ETW) toplamak için olay izleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Olay izleme için Windows (ETW) verilerini toplama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
@@ -15,27 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd8016b14d91157942ed8d5e4a987df0009f6af3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8a619820cd2c6a3a884c7279d4eb9ffc9741619d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863661"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Nasıl yapılır: olay izleme için Windows (ETW) verileri toplama
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Nasıl Yapılır: Olay izleme için Windows (ETW) verileri toplama
 
-Olay izleme için Windows (ETW) profil oluşturucu günlük çekirdek veya uygulama tarafından tanımlanan olayları sağlayan bir verimli çekirdek düzeyi izleme özelliğidir. Olay sağlayıcıdan toplanan veriler yalnızca kullanılarak görüntülenebilir /**özeti: ETW** seçeneği [VSPerfReport](../profiling/vsperfreport.md) komut satırı aracı. Performans sorunlarını uygulamada gerçekleştiği belirlemek için bu raporu kullanın.
+Olay izleme için Windows (ETW), profil oluşturucu günlük çekirdek veya uygulama tarafından tanımlanan olayları sağlayan verimli çekirdek düzeyinde izleme sistemidir. Olay sağlayıcısı'ndan toplanan verileri yalnızca kullanılarak görüntülenebilir /**Summary: ETW** seçeneği [VSPerfReport](../profiling/vsperfreport.md) komut satırı aracı. Performans sorunlarını uygulamada nerede oluştuğunu belirlemek için bu raporu kullanabilirsiniz.
 
 > [!NOTE]
-> Gelişmiş güvenlik özellikleri Windows 8 ve Windows Server 2012 Visual Studio profil oluşturucu bu platformlarda toplar şekilde önemli değişiklikler gerekmiştir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="to-enable-event-trace-providers"></a>Olay İzleme sağlayıcıları etkinleştirmek için
+## <a name="to-enable-event-trace-providers"></a>Olay izleme sağlayıcılarını etkinleştirme
 
-1. İçinde **performans Gezgini**, performans oturumu sağ tıklatın ve ardından **özellikleri**.
+1. İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **özellikleri**.
 
-2. İçinde **özellik sayfaları**, tıklatın **Windows olaylarını** özellikleri.
+2. İçinde **özellik sayfaları**, tıklayın **Windows olayları** özellikleri.
 
-3. İçinde **verileri toplamak için Select olayı izleme sağlayıcısı** listesinde, uygulamanıza profil için kullanmak istediğiniz olay sağlayıcıları seçin.
+3. İçinde **verileri toplamak için Select olayı izleme sağlayıcısı** listesinde, uygulamanızın profilini için kullanmak istediğiniz olay sağlayıcılarını seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -13,20 +13,19 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1805efbe676273ceac2f0e264e53946eea1be79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878568"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>Nasıl yapılır: bir yük testi eklentisi oluşturma
+# <a name="how-to-create-a-load-test-plug-in"></a>Nasıl Yapılır: Yük testi eklentisi oluşturma
 
 Bir yük testi, yük testi çalışırken, farklı zamanlarda kodu çalıştırmak için eklenti oluşturabilirsiniz. Yerleşik yük testi işlevselliğini değiştirmenize veya üzerine genişletmek için bir eklenti oluşturun. Örneğin, ayarlamak veya yük testi çalışırken yük testi düzeni değiştirmek için bir yük testi eklentisi kod yazabilirsiniz. Bunu yapmak için devralınan bir sınıf oluşturmanız <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> arabirimi. Bu sınıf uygulamalıdır <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> bu arabirimin yöntemi. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!NOTE]
-> Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)
+> Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Bir web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -36,7 +35,7 @@ Bir yük testi, yük testi çalışırken, farklı zamanlarda kodu çalıştırm
 
 2.  Bir yük testi test projesine ekleyin ve bir web performans testi çalıştırmak için yapılandırın.
 
-     Daha fazla bilgi için [hızlı başlangıç: yük testi projesi oluşturma](../test/quickstart-create-a-load-test-project.md).
+     Daha fazla bilgi için [hızlı başlangıç: Bir yük testi projesi oluşturma](../test/quickstart-create-a-load-test-project.md).
 
 3.  İçinde **Çözüm Gezgini**, çözüme sağ tıklayın ve seçin **Ekle** seçip **yeni proje**.
 
@@ -94,7 +93,7 @@ Bir yük testi, yük testi çalışırken, farklı zamanlarda kodu çalıştırm
     > [!WARNING]
     > Bir web performans testi ya da eklentisini kullanan yük testi çalıştırdığınızda aşağıdakine benzer bir hata alabilirsiniz:
     >
-    > **İstek başarısız oldu: özel durum \<eklenti > olay: dosyası veya bütünleştirilmiş kod yüklenemedi '\<"Eklenti adı".dll dosyası >, sürüm =\<n.n.n.n >, kültür neutral, PublicKeyToken = = null' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.**
+    > **İstek başarısız oldu: Özel durum \<eklenti > olay: Dosyası veya bütünleştirilmiş kod yüklenemedi '\<"Eklenti adı".dll dosyası >, sürüm =\<n.n.n.n >, kültür = neutral, PublicKeyToken = null' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.**
     >
     > Eklentilerinizi birine kod değişikliği yapmanız ve yeni bir DLL sürümü oluşturursanız Bunun nedeni **(sürüm = 0.0.0.0)**, ancak eklenti hala özgün eklenti sürümüne başvuruyor. Bu sorunu gidermek için şu adımları izleyin:
     >
@@ -174,4 +173,4 @@ Sekiz olayları, özel kod ile yük testi çalıştırmak için eklenti yük tes
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Özel kod ve yük testleri için eklentiler oluşturma](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Nasıl yapılır: Web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Nasıl yapılır: Bir Web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)

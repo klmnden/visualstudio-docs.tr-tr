@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5f52d4d6121faba201b37ff8fd9fcff62b46935
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e0c71f82a8268f3c52f4b4d0d6794cfdaebdbe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862175"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI metni ve Visual Studio için Yardım
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -122,17 +121,17 @@ ms.locfileid: "53067971"
 
 -   Böylece bunlar konu yanıtlayacak soru sorun, tümcecik Yardım bağlar.
 
-     Yanlış: "Windows hakkında daha fazla bilgi Azure mobil hizmetler fiyatlandırma"
+     Yanlış:  "Windows Azure mobil hizmetler fiyatlandırma hakkında daha fazla bilgi edinin"
 
-     Doğru: "Windows için hangi fiyatlandırma seçenekleri mevcuttur Azure Mobile Services?"
+     Düzeltin:  "Hangi fiyatlandırma seçeneği, Windows Azure mobil hizmetler için kullanılabilir mi?"
 
 -   Hiçbir zaman kullanmayın *tıklayın...* bağlantı metni.
 
 -   Hiç bağlantı yalnızca sözcük "burada". Yalnızca köprülü word sesli bazı ekran okuyucular için sorunlu budur.
 
-     Yanlış: "Windows Azure mobil hizmetler hakkında bilgi bulmak **burada**"
+     Yanlış:  "Windows Azure mobil hizmetler hakkında bilgi bulmak **burada**"
 
-     Doğru: "Windows için hangi fiyatlandırma seçenekleri mevcuttur Azure Mobile Services?"
+     Düzeltin:  "Hangi fiyatlandırma seçeneği, Windows Azure mobil hizmetler için kullanılabilir mi?"
 
 -   Yardım bağlantıları için doğru yazma stili hakkında daha fazla bilgi için bkz. [konusunda yardım almak için Windows Masaüstü Kılavuzu](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
 

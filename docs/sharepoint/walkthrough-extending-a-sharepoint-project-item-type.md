@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir SharePoint proje öğesi türünü genişletme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir SharePoint proje öğesi türünü genişletme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868673"
 ---
-# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: bir SharePoint proje öğesi türünü genişletme
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: Bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.  
   
  Bu kılavuzda, bir uzantı için oluşturacağınız **iş verileri bağlantı modeli** proje öğesi. Geliştiriciler, BDC modeli verileri görüntüler, projede bir dış liste oluşturmak için uzantıyı kullanabilir. Bu izlenecek yol aşağıdaki görevleri gösterir:  
@@ -150,7 +147,7 @@ ms.locfileid: "51295728"
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  Bu aşamada izlenecek yolda, proje öğesi uzantısı için kodun tümü artık projedir. Projenin hata olmadan derlediğinden emin olmak için çözümü oluşturun.  
   
 #### <a name="to-build-the-solution"></a>Çözümü derlemek için  
@@ -299,5 +296,3 @@ ms.locfileid: "51295728"
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
  [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

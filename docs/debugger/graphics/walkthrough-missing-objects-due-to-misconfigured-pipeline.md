@@ -1,8 +1,6 @@
 ---
-title: 'İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle nesnelerin eksikliği | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle eksik nesneler | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863975"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>İzlenecek Yol: Yanlış Yapılandırılmış Ardışık Düzen Nedeniyle Eksik Nesneler
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle eksik nesneler
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nedeniyle bir unset piksel gölgelendiricisi eksik olan bir nesne incelemek için grafik tanılama araçları.  
   
  Bu örneklerde bu görevler gösterilir:  

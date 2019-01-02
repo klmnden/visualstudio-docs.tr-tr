@@ -2,7 +2,6 @@
 title: CPU örnekleme Başlangıç Kılavuzu
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29ef34a15591a87b7eeb70e204f58329c8c55838
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5b58d0ac6746f68fff107c25152f7a897c8df2e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892111"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme Başlangıç Kılavuzu
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **örnekleme** veri.
@@ -36,7 +35,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
  Varsa **örnekleme** duyduğunuz verileri sağlamazsa diğer profil oluşturma araçları koleksiyonu yöntemleri size yardımcı olabilecek bilgiler farklı türde sağlayın. Bu diğer yöntemler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Windows işlevlerini çağıran kodu yazıyorsanız, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Windows işlevlerini çağıran kodu yazıyorsanız, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Windows sembol bilgilerini başvuru](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="create-and-run-a-performance-session"></a>Oluşturma ve performans oturumu çalıştırma  
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve ardından çalıştırmanız gerekir. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.  
@@ -64,7 +63,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
   
      Uygulamayı yürütmeyi bitirdikten sonra **özeti** profil oluşturma verilerinin görünümü ana Visual Studio penceresinde görüntülenir ve yeni bir oturum için bir simge görünür **performans Gezgini** penceresi.  
   
-## <a name="step-2-analyze-sampling-data"></a>2. adım: örnekleme verileri analiz edin  
+## <a name="step-2-analyze-sampling-data"></a>2. Adım: Örnekleme verileri analiz edin  
  Bir performans oturumunu çalıştırmayı bitirdiğinizde **özeti** Visual Studio ana penceresinde profil oluşturma rapor görünümünde görünür.  
   
  İnceleyerek verilerinizi analiz etmeye başlamanızı öneririz **sık kullanılan yol** ardından fazla çalışmayı yapan ve son olarak diğer işlevlere odaklanarak üzerinde kullanarak işlevlerin listesi **Özet zaman çizelgesi** . Profil oluşturma önerilerini ve Uyarıları da görüntüleyebilirsiniz **hata listesi** penceresi.  
@@ -109,7 +108,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
   
     -   Uyarı hakkında ayrıntılı bilgi görüntülemek için hatayı sağ tıklayın ve ardından **hata yardımını göster**  
   
-## <a name="step-3-revise-code-and-rerun-a-session"></a>3. adım: kodu gözden geçirin ve bir oturumu yeniden çalıştırın  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>3. Adım: Kodu gözden geçirin ve bir oturumu yeniden çalıştırın  
  Bulmak ve bir veya daha fazla işlev en iyi duruma getirme sonra profil oluşturma çalıştırmasını yineleyebilirsiniz ve uygulamanızın performansını için Değişikliklerinizi yaptıktan farkı görmek için verileri karşılaştırabilirsiniz.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Kodu gözden geçirin ve profil oluşturucuyu yeniden çalıştırmak için  
@@ -122,7 +121,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
   
 4.  Oturumu yeniden çalıştırdıktan sonra başka bir veri dosyası eklenir *raporları* klasörü oturumda **performans Gezgini**. Hem özgün seçin ve yeni profil oluşturma verisini, seçime sağ tıklayın ve ardından **Performans raporlarını Karşılaştır**.  
   
-     Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma görünümünün nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: performans veri dosyalarını karşılaştırma](../profiling/how-to-compare-performance-data-files.md).
+     Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma görünümünün nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Performans veri dosyalarını karşılaştırma](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Performans Gezgini](../profiling/performance-explorer.md)   

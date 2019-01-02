@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0f9ad21b14ef3999c115966ff387f0e4dcbf58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 802805be506ce91f0cc3960e2c7c312143077a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895837"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Bu yöntem, yeni bir nesne için Görselleştirici alır. Bu yöntem, varolan nesneyi her zaman yeni bir nesne oluşturur.  
@@ -28,14 +25,14 @@ Bu yöntem, yeni bir nesne için Görselleştirici alır. Bu yöntem, varolan ne
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT GetNewObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetNewObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetNewObjectForVisualizer(  
-   out IDebugObject ppObject  
+int GetNewObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   

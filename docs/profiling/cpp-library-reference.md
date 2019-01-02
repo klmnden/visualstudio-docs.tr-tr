@@ -1,8 +1,6 @@
 ---
 title: C++ Kitaplık Başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Concurrency Visualizer SDK, C++ Library Reference
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5551cb5e66eae9471f2e4e79d2aa6587bf440120
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e489e462c043bb48c9ba0f59f39ce364bb8843d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895252"
 ---
 # <a name="c-library-reference"></a>C++ Kitaplık Başvurusu
-Bu bölüm eşzamanlılık görselleştiricisi SDK'sı için başvuru bilgileri içerir.  
+Bu bölümde, eşzamanlılık görselleştiricisi SDK'si için başvuru bilgileri içerir.  
   
 > [!NOTE]
->  Standart C++ dili bir alt çizgi ile başlayan tanımlayıcıları kullanımını ayırır (`_`) karakteri kitaplıklar gibi uygulamaları için. Kodunuzda bir alt çizgi ile başlayan adları kullanmayın. Bu kural, adları izleyen öğeleri garanti edilmez ve değiştirilebilir gelecek olan kod davranışını serbest bırakır. Bu nedenlerle, bu kod öğeler bu belgelerden göz ardı edilir.  
+>  C++ dil standardı bir alt çizgiyle başlayan tanımlayıcılar kullanımını ayırır (`_`) karakteri, kütüphane gibi uygulamalar için. Kodunuzda altı çizili ile başlayan adları kullanmayın. Öğe adları bu kurala uymayan garantili değildir ve gelecekte değişikliğe tabi olduğu kodun çalışma biçiminin serbest bırakır. Bu nedenlerden dolayı bu tür kod öğeleri bu belgelerden çıkarılır.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [Eşzamanlılık ad alanı (eşzamanlılık görselleştiricisi)](../profiling/concurrency-namespace-concurrency-visualizer.md)  

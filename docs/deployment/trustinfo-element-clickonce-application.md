@@ -1,8 +1,6 @@
 ---
 title: '&lt;trustInfo&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb8494f9602b22f5b5997216a3aa74189e27f3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870501"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; öğesi (ClickOnce uygulaması)
 Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik izinleri açıklar.  

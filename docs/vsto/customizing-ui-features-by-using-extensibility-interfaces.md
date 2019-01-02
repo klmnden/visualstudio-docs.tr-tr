@@ -1,9 +1,6 @@
 ---
 title: Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866666"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme
   Visual Studio'da Office geliştirme araçları, sınıflar ve VSTO eklentisi içinde özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturma kullanıldıklarında birçok uygulama ayrıntıları işleyen tasarımcılar sağlar. Ancak, aynı zamanda uygulayabileceğiniz *genişletilebilirlik arabirimi* her özel gereksinimleriniz varsa, kendiniz özelliği.  
@@ -86,5 +83,3 @@ ms.locfileid: "53648897"
  [VSTO eklentilerinde diğer Office Çözümlerinden kod arama](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO Eklentileri Mimarisi](../vsto/architecture-of-vsto-add-ins.md)  
-  
-  

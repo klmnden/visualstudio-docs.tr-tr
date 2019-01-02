@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericParamField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericParamField interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4072908a8f6690e3d3b00d8c43690be62083242d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c42c9b19e52511097953cf658b3a5ce0decd5e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871618"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 Yönetilen kod genel bir tür için bir parametreyi temsil eder.  
@@ -30,23 +27,23 @@ IDebugGenericParamField : IDebugField
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Genel türler desteği için kullanılır.  
+ Genel türler için destek kullanılır.  
   
 ## <a name="methods"></a>Yöntemler  
- Yöntemlere ek olarak [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabirimi, bu arabirimi uygulayan aşağıdaki yöntemleri:  
+ Yöntemlere ek olarak [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabirimi bu arabirim, aşağıdaki yöntemleri uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|Bu genel parametre ile ilişkili kısıtlamalar sayısını döndürür.|  
-|[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|Bu genel parametre ile ilişkili kısıtlamaları alır.|  
-|[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Genel Bu parametre için bayraklarını alır.|  
-|[Getındex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Bu genel parametre dizinini alır.|  
+|[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|Bu genel parametre ile ilişkili olan kısıtlamaları sayısını döndürür.|  
+|[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|Bu genel parametre ile ilişkili olan kısıtlamaları alır.|  
+|[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Bu genel parametresi için bayrakları alır.|  
+|[GetIndex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Bu genel parametre dizinini alır.|  
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Bu genel parametre adını alır.|  
-|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Bu genel parametre türü veya yöntemi sahibi alır.|  
+|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Bu genel parametre türü veya yönteminde sahibi alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Sh.h  
+ Üst bilgi: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

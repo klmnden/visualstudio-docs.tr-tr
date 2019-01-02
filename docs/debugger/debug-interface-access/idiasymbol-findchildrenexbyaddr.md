@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7398f3afdf8a6895d0feaec35ca33b95e9054060
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 900699fc543da7eba25624766ac6c8b0d5cf88bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875105"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Belirli bir adreste geçerli olan alt simge alır.  
@@ -27,7 +25,7 @@ Belirli bir adreste geçerli olan alt simge alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT findChildrenExByAddr (   
+HRESULT findChildrenExByAddr (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -59,7 +57,7 @@ HRESULT findChildrenExByAddr (
  Döndürülen yerel semboller dinamik aralık bilgilerini içerir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

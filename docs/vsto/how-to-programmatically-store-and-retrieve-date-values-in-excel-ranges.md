@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a28a357aa6a01615d269c6fba41c690f41c7b93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863910"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Nasıl yapılır: program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Nasıl Yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve
   Değerleri depolanıp bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -87,8 +84,6 @@ ms.locfileid: "35677255"
  [Aralıklarla çalışma](../vsto/working-with-ranges.md)   
  [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Nasıl yapılır: koddaki çalışma sayfası aralıklarına program aracılığıyla bakma](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Nasıl yapılır: çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Nasıl yapılır: Koddaki çalışma sayfası aralıklarına program aracılığıyla bakma](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Nasıl yapılır: Çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

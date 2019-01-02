@@ -1,8 +1,6 @@
 ---
 title: CreateItem görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e50b1f56be7b32bd21b9b5785caac003b7ee86d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945306"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860890"
 ---
 # <a name="createitem-task"></a>CreateItem görevi
 Öğe koleksiyonlarını girdi öğelerinin ile doldurur. Bu, bir listeden diğerine kopyalanmasına öğeleri sağlar.  
@@ -39,7 +37,7 @@ ms.locfileid: "37945306"
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |`AdditionalMetadata`|İsteğe bağlı `String` dizi parametresi.<br /><br /> Çıktı öğeleri eklemek için ek meta verileri belirtir.  Meta veri adı ve değeri öğe için şu sözdizimini belirtin:<br /><br /> *Metadataname'in* `=` *MetadataValue*<br /><br /> Birden fazla meta veri adı/değer çiftleri noktalı virgül ile ayrılmalıdır. Adı veya değeri bir noktalı virgül veya diğer özel karakterleri içeriyorsa, bunlar kaçış karakterleri eklenmelidir. Daha fazla bilgi için [nasıl yapılır: MSBuild özel karakterleri kaçış](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
-|`Exclude`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Çıktı öğesi koleksiyondan hariç tutmak için öğeleri belirtir. Bu parametre joker karakteri belirtimlerine içerebilir. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md) ve [nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md).|  
+|`Exclude`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Çıktı öğesi koleksiyondan hariç tutmak için öğeleri belirtir. Bu parametre joker karakteri belirtimlerine içerebilir. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md) ve [nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametresi.<br /><br /> Çıktı öğesi koleksiyonda eklemek istediğiniz öğeleri belirtir. Bu parametre joker karakteri belirtimlerine içerebilir.|  
 |`PreserveExistingMetadata`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `True`, zaten mevcut değilse ek meta veriler yalnızca geçerlidir.|  
   
@@ -80,4 +78,4 @@ ms.locfileid: "37945306"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)

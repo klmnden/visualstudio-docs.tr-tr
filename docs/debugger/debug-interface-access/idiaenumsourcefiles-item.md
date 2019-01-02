@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsourcefiles::Item | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12fa454b0d91c0656e6f6792e0c77158f304af00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b21e77db31cbfbbf02aba2371b8211ffdd0c4a14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859139"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
 Bir kaynak dosyası kullanarak bir dizini alır.  
@@ -27,7 +25,7 @@ Bir kaynak dosyası kullanarak bir dizini alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD            index,  
    IDiaSourceFile** sourceFile  
 );  

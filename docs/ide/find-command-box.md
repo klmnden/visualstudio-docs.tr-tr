@@ -1,8 +1,7 @@
 ---
-title: Bulma komut kutusu
+title: Bul-komut kutusu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
@@ -13,46 +12,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 91546caa5136fbcd31dabcaa9294ccd8056e6750
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866796"
 ---
 # <a name="findcommand-box"></a>Bul/Komut kutusu
 
-Aramak için metin ve Visual Studio komutları çalıştırmak **Bul/komut** kutusu. **Bul/komut** kutusu araç çubuğu denetimi olarak hala kullanılabilir, ancak artık varsayılan olarak görünür. Görüntüleyebileceğiniz **Bul/komut** seçerek kutusunu **Düğme Ekle veya Kaldır** üzerinde **standart** araç çubuğu ve ardından seçme **Bul**.
+Arama metni ve Visual Studio komutları çalıştırmak **Bul/komut** kutusu. **Bul/komut** kutusu araç çubuğu denetimi olarak hala kullanılabilir, ancak artık varsayılan olarak görünür. Görüntüleyebileceğiniz **Bul/komut** kutusunu **Düğme Ekle veya Kaldır** üzerinde **standart** araç çubuğu ve ardından **Bul**.
 
-Çalıştırmak için bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komutu, büyüktür ile yazdığınızdan daha (**>**) oturum.
+Çalıştırılacak bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komutu, bir büyük yazdığınızdan değerinden (**>**) oturum.
 
-**Bul/komut** kutusuna girilen son 20 öğeleri korur ve bir aşağı açılan listede görüntüler. Seçerek listeyi gidebilirsiniz **ok tuşları**.
+**Bul/komut** kutusuna girilen son 20 öğe korur ve bunları bir aşağı açılan listede görüntüler. Listede seçerek gidebilirsiniz **ok tuşlarını**.
 
-![Bul&#47;komut kutusu](../ide/media/findcommandbox.png)
+![Bulma&#47;komut kutusu](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>Metin arama
 
-Varsayılan olarak metinde belirttiğinizde, **Bul/komut** kutusuna ve ardından **Enter** anahtar, Visual Studio belirtilenseçeneklerinikullanarakgeçerlibelgeveyaaraçpenceresiarar**Dosyalarda Bul** iletişim kutusu. Daha fazla bilgi için bkz: [bulma ve metin değiştirme](../ide/finding-and-replacing-text.md).
+Varsayılan olarak metin belirttiğinizde **Bul/komut** kutusuna ve ardından **Enter** anahtar, Visual Studio içinde belirtilenseçeneklerikullanarakgeçerlibelgeveyaaraçpenceresininarar**Dosyalarda Bul** iletişim kutusu. Daha fazla bilgi için [bulma ve değiştirme metni](../ide/finding-and-replacing-text.md).
 
-## <a name="entering-commands"></a>Komutları girme
+## <a name="entering-commands"></a>Komutlar girme
 
-Kullanılacak **Bul/komut** tek bir sorun için kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komutunu veya diğer ad metin arama yerine, bir büyük komutuyla yazdığınızdan daha (**>**) simgesi. Örneğin:
+Kullanılacak **Bul/komut** tek bir sorun için onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komutunu ya da diğer ad komutu büyük bir metin arama yerine yazdığınızdan değerinden (**>**) simgesi. Örneğin:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
-Alternatif olarak, ayrıca kullanabileceğiniz **komutu** girin ve tek veya birden çok komut yürütmek için penceresi. Bazı komutlar veya diğer adlar girilen ve tek başına yürütülebilir; Başkalarının kendi sözdizimi değişkenlerinde gerekli sahip. Bağımsız değişkenleri sahip komutları bir listesi için bkz: [Visual Studio komutları](../ide/reference/visual-studio-commands.md).
+Alternatif olarak, ayrıca kullanabileceğiniz **komut** girin ve tek veya birden çok komut yürütme penceresi. Bazı komutlar veya diğer adlar girilen ve kendileri tarafından yürütülen; diğerleri kendi sözdizimi değişkenlerinde gerek duyarlar. Bağımsız değişkenlere sahip komutları listesi için bkz. [Visual Studio komutları](../ide/reference/visual-studio-commands.md).
 
-## <a name="escape-characters"></a>Çıkış karakterleri
+## <a name="escape-characters"></a>Kaçış karakterleri
 
-Bir şapka (**^**) karakter komutunda anlamına karakter hemen sonrasında tam anlamıyla yerine bir denetim karakteri olarak yorumlanır. Bu düz tırnak işaretleri eklemek için kullanılabilir (**"**), boşluk, başında Yatık çizgi, belirliyorsanız düzeltme işaretleri veya diğer değişmez değer karakterleri bir parametre veya anahtar değeri, anahtar adlarını dışında. Örneğin:
+Şapka işareti (**^**) bir komut karakter anlamına karakter hemen sonrasında yerine birebir yorumlandığı bir denetim karakteri olarak yorumlanır. Bu düz tırnak işaretleri eklemek için kullanılabilir (**"**), boşluk, önde gelen eğik çizgiler, düzeltme işaretleri veya herhangi başka bir sabit karakterin bir parametre veya anahtar değeri, anahtar adları dışında. Örneğin:
 
 ```
 >Edit.Find ^^t /regex
 ```
 
-İç veya dış tırnak işaretleri olup bir şapka aynı çalışır. Bir şapka satırında son karakter ise, yoksayılır.
+İç veya dış tırnak işaretleri olup olmadığını şapka işareti aynı şekilde çalışır. Şapka işareti satırdaki son karakterse, yoksayılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

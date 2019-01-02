@@ -1,9 +1,6 @@
 ---
 title: 'Denetim listesi: Yeni proje türleri oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861591"
 ---
 # <a name="checklist-create-new-project-types"></a>Denetim listesi: Yeni proje türleri oluşturma
 Yeni bir proje türü oluşturmak için birkaç görevi tamamlamanız gerekir. Aşağıdaki denetim listesinde, bu görevleri için bir kılavuz sağlar:  
   
 1.  Yeni Proje türünüz için işlevsellik tasarlayın. Daha fazla bilgi için [proje türü tasarım kararları](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Hangi düzenleyicileri, kod ve diğer proje öğeleri için kullanıldığını belirleyebilirsiniz. Temel veya standart düzenleyicileri kullanabilirsiniz ya da oluşturabilir ve projeye özgü düzenleyicileri kullanır. Daha fazla bilgi için [özel düzenleyiciler ve tasarımcılar oluşturma](../../extensibility/creating-custom-editors-and-designers.md) ve [nasıl yapılır: projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Hangi düzenleyicileri, kod ve diğer proje öğeleri için kullanıldığını belirleyebilirsiniz. Temel veya standart düzenleyicileri kullanabilirsiniz ya da oluşturabilir ve projeye özgü düzenleyicileri kullanır. Daha fazla bilgi için [özel düzenleyiciler ve tasarımcılar oluşturma](../../extensibility/creating-custom-editors-and-designers.md) ve [nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Proje öğelerinizi olacaktır katılım düzeyini belirlemek **sınıf görünümü** ve **Nesne Tarayıcısı**. Daha fazla bilgi için [sembol tarama araçlarını destekleyen](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   

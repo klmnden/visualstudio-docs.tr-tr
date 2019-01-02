@@ -13,15 +13,14 @@ manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865550"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio Başlangıç süresini iyileştirme
 
@@ -59,11 +58,11 @@ Her zaman uzantı için gelecekteki oturumları kullanarak yeniden etkinleştire
 
 3. Aşağıdaki üç seçenekten birini seçin:
 
-   - **Varsayılan davranışı kullan:** araç penceresi için varsayılan davranış. Bu seçenek tutma başlangıç performansı artırmak değildir.
+   - **Varsayılan davranışı kullanın:** Araç penceresi için varsayılan davranış. Bu seçenek tutma başlangıç performansı artırmak değildir.
 
-   - **Başlangıçta pencere gösterme:** Visual Studio'da açtığınızda belirtilen araç penceresi önceki bir oturum açma sol olsa bile her zaman kapatılır. İhtiyacınız olduğunda, araç penceresi uygun menüsünden açabilirsiniz.
+   - **Başlangıçta pencere gösterme:** Visual Studio'da açtığınızda önceki bir oturum açma sol olsa bile her zaman belirtilen araç penceresi kapatılır. İhtiyacınız olduğunda, araç penceresi uygun menüsünden açabilirsiniz.
 
-   - **Otomatik Gizle penceresi başlangıçta:** araç penceresini önceki bir oturumda açık bırakıldı, bu seçeneği araç penceresi başlatma önlemek için aracının pencere grubu başlangıçta daraltır. Araç penceresi genellikle kullanıyorsanız bu seçeneği iyi bir seçimdir. Araç penceresi hala kullanılabilir ancak Visual Studio Başlangıç süresini artık olumsuz etkiler.
+   - **Başlangıçta pencereyi otomatik gizle:** Araç penceresini önceki bir oturumda açık bırakıldı, başlangıçta aracını pencerenin grubu araç penceresi başlatma önlemek için bu seçeneği daraltır. Araç penceresi genellikle kullanıyorsanız bu seçeneği iyi bir seçimdir. Araç penceresi hala kullanılabilir ancak Visual Studio Başlangıç süresini artık olumsuz etkiler.
 
      ![Visual Studio performansını Yönet - araç pencerelerini görüntüleyin](../ide/media/vside_perfdialog_toolwindows.png)
 

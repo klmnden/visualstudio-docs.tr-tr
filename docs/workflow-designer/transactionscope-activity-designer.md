@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - TransactionScope etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e823ea0fa716545dcc2cfba3df3ba93118e65f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873719"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope Etkinlik Tasarımcısı
 
@@ -35,7 +34,7 @@ Erişim **TransactionScope** etkinlik Tasarımcısı'nda **işlem** kategorisi *
 
 Aşağıdaki tabloda <xref:System.Activities.Statements.TransactionScope> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Ve <xref:System.Activities.Statements.TransactionScope.Body%2A> özelliklerinin iş akışı Tasarımcısı yüzeyine düzenlenebilir. Ancak, özellik Kılavuzu'nun diğer özellikleri düzenlenmesi gerekir.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı <xref:System.Activities.Statements.TransactionScope> etkinlik. TransactionScope varsayılandır. Ancak <xref:System.Activities.Activity.DisplayName%2A> değeri kesinlikle gerekli değil, kullanmak için en iyi bir uygulamadır.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Doğru|Tek bir işlem içinde çalıştırmak için etkinlik belirtir. Eklemek için <xref:System.Activities.Statements.TransactionScope.Body%2A> etkinlik, açılan bir etkinlikten **araç kutusu** içine **gövdesi** kutusuna **TransactionScope** ipucu metnini "bırakma etkinlik ile etkinlik Tasarımcısı Burada".|

@@ -2,7 +2,6 @@
 title: Derleme işlemini genişletme
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
@@ -15,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce38985a5fc0b74326648557e22eb17bfdfb4f48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863686"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl yapılır: Visual Studio derleme işlemini genişletme
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl Yapılır: Visual Studio derleme işlemini genişletme
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yapı işlemi bir dizi tarafından tanımlanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* proje dosyanıza aktarmış dosyaları. Dosyaları, bunlardan alınan *Microsoft.Common.targets*, yapı işleminde bazı noktalarda özel görevleri çalıştırmanıza olanak tanır şekilde genişletilebilir. Bu makalede genişletmek için kullanabileceğiniz iki yöntem anlatılmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] derleme işlemi:  
   
 -   Tanımlanan belirli önceden tanımlanmış hedefleri geçersiz kılma *Microsoft.Common.targets*.  
@@ -57,7 +56,7 @@ Aşağıdaki tabloda tüm hedeflerin gösterir *Microsoft.Common.targets* , güv
 |Hedef adı|Açıklama|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|Bu hedefler birinde eklenen görevler önce veya çekirdek derleme tamamlandıktan sonra çalışır. Çoğu özelleştirmeleri, bu iki hedefi birinde gerçekleştirilir.|  
-|`BeforeBuild`, `AfterBuild`|Bu hedefler birinde eklenen görevler önce veya sonra yapı diğer her şey çalışır. **Not:** `BeforeBuild` ve `AfterBuild` hedefleri sonunda öncesi ve derleme sonrası olayları proje dosyanıza kolayca eklemenize olanak sağlayan, çoğu proje dosyaları, açıklamalar içinde zaten tanımlanmıştır.|  
+|`BeforeBuild`, `AfterBuild`|Bu hedefler birinde eklenen görevler önce veya sonra yapı diğer her şey çalışır. **Not:**  `BeforeBuild` Ve `AfterBuild` hedefleri sonunda öncesi ve derleme sonrası olayları proje dosyanıza kolayca eklemenize olanak sağlayan, çoğu proje dosyaları, açıklamalar içinde zaten tanımlanmıştır.|  
 |`BeforeRebuild`, `AfterRebuild`|Bu hedefler önce çalıştırması biriyle eklenen veya çekirdek sonra işlevi yeniden görevleri çağrılır. Hedef yürütme sırası *Microsoft.Common.targets* olduğu: `BeforeRebuild`, `Clean`, `Build`, ardından `AfterRebuild`.|  
 |`BeforeClean`, `AfterClean`|Önce bu hedefler birinde eklenen görevleri çalıştırmak veya çekirdek sonra temiz işlevi çağrılır.|  
 |`BeforePublish`, `AfterPublish`|Bu hedefler önce çalıştırması biriyle eklenen veya sonra çekirdek işlevselliğini yayımlama görevleri çağrılır.|  

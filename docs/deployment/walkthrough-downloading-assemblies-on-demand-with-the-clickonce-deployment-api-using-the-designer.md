@@ -1,8 +1,6 @@
 ---
-title: "İzlenecek yol: ClickOnce dağıtım API'si Tasarımcısı'nı kullanarak ile isteğe bağlı derlemeleri indirme | Microsoft Docs"
-ms.custom: ''
+title: 'İzlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878607"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>İzlenecek yol: ClickOnce dağıtım API'si Tasarımcısı'nı kullanarak ile isteğe bağlı derlemeleri indirme
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>İzlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme
 Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamayı ilk kez çalıştırdığınızda, uygulama yüklenir. Bununla birlikte, küçük bir grup kullanıcı tarafından kullanılan uygulamanızın parçalarını olabilir. Bu durumda, yalnızca türlerinden oluşturduğunuzda bir derlemeyi indirmek istediğiniz. Aşağıdaki örneklerde, belirli bütünleştirilmiş kodların "isteğe bağlı" olarak, uygulamanızda işaretlenecek gösterilmiştir ve yer alan kullanarak indirmek nasıl sınıfları <xref:System.Deployment.Application> bunları ortak dil çalışma zamanı talep ettiğinde ad alanı.
 
 > [!NOTE]
@@ -81,11 +79,11 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deploy
 
 4.  Genişletin **grubu** açılır liste kutusundan seçip alt **yeni**. Bir ad girin `ClickOnceLibrary` yeni grup adı.
 
-5.  Açıklanan şekilde uygulamanızı yayımlamaya devam [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5.  Açıklanan şekilde uygulamanızı yayımlamaya devam [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Bildirim oluşturma ve düzenleme Aracı'nı kullanarak isteğe bağlı olarak, ClickOnce uygulamanızı derlemeleri işaretlemek için-grafik istemcisi (MageUI.exe)
 
-1. Oluşturma, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] açıklandığı bildirimlerini [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Oluşturma, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] açıklandığı bildirimlerini [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 2. MageUI.exe kapatmadan önce dağıtımınızın uygulama bildirimi içeren sekmesini seçip bu sekmede **dosyaları** sekmesi.
 

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_symındexıd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab73620b76b6073a9126f975fd5b821bf6a06e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b57ea53f597f085814f9ba8f9dd4d48051c754e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863543"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
 Sembol benzersiz tanımlayıcısını alır.  
@@ -27,7 +25,7 @@ Sembol benzersiz tanımlayıcısını alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_symIndexId (   
+HRESULT get_symIndexId (   
    DWORD* pRetVal  
 );  
 ```  

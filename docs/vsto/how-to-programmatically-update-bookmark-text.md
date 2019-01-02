@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: yer işareti metnini program aracılığıyla güncelleştirme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Yer işareti metnini program aracılığıyla güncelleştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864342"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>Nasıl yapılır: yer işareti metnini program aracılığıyla güncelleştirme
+# <a name="how-to-programmatically-update-bookmark-text"></a>Nasıl Yapılır: Yer işareti metnini program aracılığıyla güncelleştirme
   Sonraki bir zamanda ya da yer işaretindeki metnin yerine metnin alabilmeleri Microsoft Office Word belgesindeki bir yer tutucu yer işareti içinde metin ekleyebilirsiniz. Ayrıca belge düzeyinde özelleştirme geliştiriyorsanız metinde güncelleştirebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> veriye bağlı denetim. Daha fazla bilgi için [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -86,5 +83,3 @@ ms.locfileid: "49833024"
  [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
  [Yer işareti denetimi](../vsto/bookmark-control.md)  
-  
-  
