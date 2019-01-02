@@ -44,7 +44,6 @@
 #### [Azure Danışmanı Sohbeti](vs-azure-advisory-chat.md)
 #### [Azure Topluluğu](vs-azure-community.md)
 #### [Teknik Destek](vs-tech-support.md)
-#### [Geliştirici Topluluğu Desteği](vs-priority-support.md)
 #### [Concierge Desteği](vs-concierge-chat.md)
 ## Abonelikleri Yönetme
 ### [Yönetici Sorumlulukları](admin-responsibilities.md)
