@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Visual Basic projesinde kodu VBA kullanıma sunma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900998"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Nasıl Yapılır: Visual Basic projesinde kodu VBA kullanıma sunma
   Kodda getirebilir bir [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] iki birbiriyle etkileşim kurmak için kod istiyorsanız, Visual Basic Applications (VBA) kodu için proje.  
@@ -126,5 +123,3 @@ ms.locfileid: "53648645"
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [İzlenecek yol: Visual Basic projesinde VBA'dan kod çağırabilir](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [Nasıl yapılır: Visual c VBA kodu ortaya&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
-  
-  

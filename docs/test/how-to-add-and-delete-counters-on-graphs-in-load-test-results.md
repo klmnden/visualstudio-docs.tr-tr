@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 079a7390b462dd8d48535f683f391ec2dca4827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916803"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Nasıl yapılır: Yük Testi Sonuçlarındaki Grafiklerde Sayaç Ekleme ve Silme
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Nasıl Yapılır: Yük testi sonuçlarındaki grafiklerde sayaç ekleme ve silme
 
 Kullanabileceğiniz **sayaçları** paneli performans sayaçları grafiğe eklenecek.
 
@@ -30,7 +29,7 @@ Kullanabileceğiniz **sayaçları** paneli performans sayaçları grafiğe eklen
 
 **Performans sayacı örnekleme aralığı hakkında önemli noktalar**
 
-İçin bir değer seçin **örnek hızı** özelliği yük testinde çalışma ayarları yük testinizin uzunluğuna göre. Varsayılan değer olarak beş saniye gibi küçük bir örnekleme hızı yükleme testi sonuçları veritabanı daha fazla alan gerektirir. Daha uzun yük testleri için örnek hızı artırmak topladığınız veri miktarını azaltır. Daha fazla bilgi için [nasıl yapılır: örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+İçin bir değer seçin **örnek hızı** özelliği yük testinde çalışma ayarları yük testinizin uzunluğuna göre. Varsayılan değer olarak beş saniye gibi küçük bir örnekleme hızı yükleme testi sonuçları veritabanı daha fazla alan gerektirir. Daha uzun yük testleri için örnek hızı artırmak topladığınız veri miktarını azaltır. Daha fazla bilgi için [nasıl yapılır: Örnek hızı belirtme](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Örnek hızlara ait bazı Kılavuzlar şunlardır:
 
@@ -49,7 +48,7 @@ Etkinleştirmek için iki seçeneğiniz vardır **Zamanlama Ayrıntıları Depos
 
 Zamanlama ayarları verisini özellikle daha uzun yük testleri için çok büyük olabilir saklamak için yük testi sonuçları deposunda gereken alan miktarı. Bu veriler yük testi yürütmesini bitirene kadar yükleme testi aracısında depolanır çünkü Ayrıca, yük testi sonuçları deposu yük testinin sonunda bu verileri depolamak için uzun zamandır. Yük testi çalışmayı tamamladıktan sonra verilerin depoya saklandığı. Varsayılan olarak, **Zamanlama Ayrıntıları Deposu** özelliği etkin hale getirilir. Bu test ortamınızın sorunu ise, ayarlamak isteyebilirsiniz **Zamanlama Ayrıntıları Deposu** için **hiçbiri**.
 
-Daha fazla bilgi için [nasıl yapılır: zamanlama ayrıntıları depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Daha fazla bilgi için [nasıl yapılır: Zamanlama Ayrıntıları Depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Bir yük testi grafiğinde belirli bir performans sayacına görüntülemek için
 
@@ -87,4 +86,4 @@ Daha fazla bilgi için [nasıl yapılır: zamanlama ayrıntıları depolama öze
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Nasıl yapılır: özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Nasıl yapılır: Özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md)

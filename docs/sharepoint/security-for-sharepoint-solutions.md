@@ -1,9 +1,6 @@
 ---
 title: SharePoint çözümleri için güvenlik | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904909"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint çözümleri için güvenlik
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint uygulamaları güvenliğini iyileştirmenize yardımcı olacak aşağıdaki özellikleri içerir.
@@ -37,7 +34,7 @@ ms.locfileid: "49878771"
  Sistemin genel derleme önbelleğine dağıtılmaz herhangi bir SharePoint çözümü AllowPartiallyTrustedCallers özniteliği eklenir ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Bu, korumalı alana alınan çözümler ya da SharePoint uygulaması Bin dizinine dağıtılan çözümleri içerir. Daha fazla bilgi için [için Microsoft .NET Framework sürüm 1 güvenlik değişikliklerini](http://go.microsoft.com/fwlink/?LinkId=177515) ve [dağıtma Web Bölümleri SharePoint Foundation'da](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Betik özelliğinde karşı güvenli
- *Betik ekleme* kötü amaçlı olabilecek kod ekleme denetimleri veya Web sayfaları. SharePoint 2010 sitelerine betik ekleme karşı korumaya yardımcı olmak için katkıda bulunanlar görüntüleyemez veya varsayılan olarak Web Bölümleri veya özelliklerini düzenleyin. Bu davranışı SafeAgainstScript adlı SafeControl bir öznitelik tarafından denetlenir. İçinde [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], bu öznitelik bir proje öğesinin ayarlayın **güvenli denetim girdileri** alt özellik **karşı güvenli betik**. Daha fazla bilgi için [proje öğelerinde paketleme ve dağıtım bilgileri sağlayan](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ve [nasıl yapılır: denetimleri güvenli denetim olarak işaretleme](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+ *Betik ekleme* kötü amaçlı olabilecek kod ekleme denetimleri veya Web sayfaları. SharePoint 2010 sitelerine betik ekleme karşı korumaya yardımcı olmak için katkıda bulunanlar görüntüleyemez veya varsayılan olarak Web Bölümleri veya özelliklerini düzenleyin. Bu davranışı SafeAgainstScript adlı SafeControl bir öznitelik tarafından denetlenir. İçinde [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], bu öznitelik bir proje öğesinin ayarlayın **güvenli denetim girdileri** alt özellik **karşı güvenli betik**. Daha fazla bilgi için [proje öğelerinde paketleme ve dağıtım bilgileri sağlayan](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ve [nasıl yapılır: Denetimleri güvenli denetim olarak işaretleme](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista ve Windows 7 kullanıcı hesabı denetimi
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] kullanıcı hesabı denetimi (UAC) olarak bilinen bir güvenlik özelliği dahil edilip derecelendirilir. SharePoint çözümleri geliştirmek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] üzerinde [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] ve [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemleri, UAC gerektirir, çalıştırmanızı [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir sistem yöneticisi olarak. Gelen **Başlat** menüsünde, kısayol menüsünü açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve ardından **yönetici olarak çalıştır**.
@@ -78,7 +75,7 @@ ms.locfileid: "49878771"
 
 -   [Web Bölümleri SharePoint Foundation'da güvenliğini sağlama](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Web uygulaması güvenliği geliştirmeye: Tehditler ve Önlemler Kılavuzu](http://go.microsoft.com/fwlink/?LinkID=140080)
+-   [Web uygulaması Güvenliği Artırma: Tehditler ve Önlemler Kılavuzu](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Genel güvenlik
 

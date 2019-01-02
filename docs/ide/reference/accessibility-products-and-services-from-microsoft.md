@@ -1,9 +1,8 @@
 ---
-title: Erişilebilirlik ürünleri ve Microsoft Hizmetleri
+title: Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
 description: Hakkında daha fazla ürün ve hizmetleri bizim işletim sistemleri, programları ve uygulamaları kullanmak herkes için daha erişilebilir hale gelmesine yardımcı olabilecek Microsoft engelli kişiler de dahil olmak üzere.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886325"
 ---
-# <a name="accessibility-products-and-services-from-microsoft"></a>Erişilebilirlik ürünleri ve Microsoft Hizmetleri
+# <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
 
 > [!TIP]
 > Visual Studio için en yeni erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz. [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.

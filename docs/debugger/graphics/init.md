@@ -1,8 +1,6 @@
 ---
 title: Init | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0436384e0af816475590ab84dc645848113f5ab7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06594b749b5d92781f6c3389ca6f5f9395c98c75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827253"
 ---
 # <a name="init"></a>Init
-Etkin olarak yakalamak ve grafik bilgilerini bir grafik günlük dosyasına kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.  
+Etkin bir şekilde yakalayıp grafik bilgilerini bir grafik günlük dosyasına kaydetmek için grafik tanılama uygulama bileşeninin hazırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,12 +28,12 @@ void Init(
   
 #### <a name="parameters"></a>Parametreler  
  `vsgLogGetter`  
- Aranabilir varlık — işlevi, işlev işaretçisi, lambda veya işlev nesnesi gibi — oluşan bir arabellek uzunluğu parametreler olarak alır `wchar_t` , arabellek ve döndürür gösteren bir işaretçi `void`. Çağrıldığında, aranabilir varlık grafik bilgilerini kaydetmek için kullanılan ve döndürmeden önce belirtilen arabellek Yazar dosya adını belirler.  
+ Aranabilir bir varlık — işlevi, işlev işaretçisi, lambda veya işlev nesnesi gibi — oluşan bir arabellek uzunluğu parametre olarak alan `wchar_t` ve bir işaretçi, arabellek ve döndürür `void`. Çağrıldığında çağrılabilir varlık grafik bilgilerini kaydetmek için kullanılır ve sonuç döndürülmeden önce belirtilen arabelleğe Yazar dosya adını belirler.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `Init` İşlevi çağrılır otomatik olarak örneği `VsgDbg` sınıfı belirterek yapılandırılmıştır `bDefaultInit` kurucusu parametresinin `true`; Aksi halde, `Init` önce açıkça çağrılmalıdır Etkin olarak yakalayabilir ve grafik bilgilerini kaydedin.  
+ `Init` İşlevi örneği otomatik olarak çağrılır `VsgDbg` sınıfı belirterek yapılandırılmıştır `bDefaultInit` parametre, oluşturucunun `true`; Aksi takdirde `Init` açıkça önce çağrılmalıdır etkin bir şekilde yakalayabilir ve grafik bilgilerini kaydedin.  
   
- Sonlandırma ve Kapat etkin grafikler çağırarak günlük dosyası `UnInit`ve ardından yakalamak ve yeni bir grafik günlük dosyası için daha fazla grafik bilgilerini çağırarak kayıt `Init` yeniden. Bu sayıda birkaç bağımsız grafik aynı kullanarak günlük dosyalarını oluşturmak istediğiniz yineleyebilirsiniz `VsgDbg` örneği.  
+ Sonlandırma ve Kapat etkin grafikler çağırarak günlük dosyası `UnInit`, ardından yakalama ve yeni bir grafik günlük dosyası için daha fazla grafik bilgisi çağırarak kayıt `Init` yeniden. Bu olarak aynı kullanarak günlük dosyalarını birden fazla bağımsız grafik oluşturmak istediğiniz kadar tekrarlayabilirsiniz `VsgDbg` örneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UnInit](init.md)

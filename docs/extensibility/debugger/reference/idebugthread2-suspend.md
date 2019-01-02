@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::Suspend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::Suspend
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9da385dc9f50ec66b45df1c9955f338a6c550467
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3037a91c838def73b559938128dba831ffe30ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902181"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Bir iş parçacığını askıya alır.  
@@ -28,13 +25,13 @@ Bir iş parçacığını askıya alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT Suspend (   
+HRESULT Suspend (   
    DWORD *pdwSuspendCount  
 );  
 ```  
   
 ```csharp  
-HRESULT Suspend (   
+HRESULT Suspend (   
    out uint pdwSuspendCount  
 );  
 ```  

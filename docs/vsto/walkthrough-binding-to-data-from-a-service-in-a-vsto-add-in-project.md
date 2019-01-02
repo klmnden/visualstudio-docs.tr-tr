@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: VSTO eklenti projesinde bir hizmetten verilere bağlama'
-ms.custom: ''
+title: 'İzlenecek yol: Bir VSTO eklenti projesinde bir hizmetten verilere bağlama'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892296"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesinde bir hizmetten verilere bağlama
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: Bir VSTO eklenti projesinde bir hizmetten verilere bağlama
   Verileri, VSTO eklentisi projelerine konak denetimlere bağlayabilirsiniz. Bu izlenecek yol, bir Microsoft Office Word belgesi için denetimler ekleme, MSDN içerik hizmetinden alınan verilere denetimler bağlama ve çalışma zamanında olaylara yanıt gösterilmektedir.  
   
- **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Word 2010 için uygulama düzeyi projelere yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler Word 2010 için uygulama düzeyi projelere yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933189"
   
 1.  Adlı bir sözcük VSTO eklentisi projesi oluşturun **MTPS içerik hizmeti**, Visual Basic veya C# kullanarak.  
   
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio açılır `ThisAddIn.vb` veya `ThisAddIn.cs` dosya ve projeye ekler **Çözüm Gezgini**.  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933189"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

@@ -1,12 +1,11 @@
 ---
-title: 'CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın | Microsoft Docs'
+title: 'CA1820: Dize uzunluğunu kullanarak boş dizeleri test | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 680a9ee1681a98176f2c21fc989331bf82aa2b15
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd9b7c3d254607efb118af3a1ee27856e6f3c523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914656"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +54,3 @@ ms.locfileid: "49861026"
  Aşağıdaki örnek, boş bir dize aramak için kullanılan farklı teknikleri gösterir.
 
  [!code-csharp[FxCop.Performance.StringTest#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.StringTest/cs/FxCop.Performance.StringTest.cs#1)]
-
-
-

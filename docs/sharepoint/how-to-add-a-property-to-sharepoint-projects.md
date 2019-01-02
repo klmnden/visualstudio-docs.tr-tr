@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: SharePoint projelerine özellik ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: SharePoint projelerine özellik ekleme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950478"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Nasıl yapılır: SharePoint projelerine özellik ekleme
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Nasıl Yapılır: SharePoint projelerine özellik ekleme
   Bir özellik için herhangi bir SharePoint projesine eklemek için bir proje uzantısı'nı kullanabilirsiniz. Özellik görünür **özellikleri** proje seçildiğinde penceresi **Çözüm Gezgini**.  
   
- Aşağıdaki adımlar, bir proje uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ Aşağıdaki adımlar, bir proje uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Bir SharePoint projesine bir özellik eklemek için  
   
@@ -57,15 +54,15 @@ ms.locfileid: "49898421"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Özel özellikler davranışını belirtin  
  Özel bir özellik görünür ve davranır nasıl tanımlayabileceğiniz **özellikleri** öznitelikleri uygulayarak penceresi <xref:System.ComponentModel> özellik tanımı için ad alanı. Aşağıdaki öznitelikler pek çok senaryoda kullanışlıdır:  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>: Özelliğin görünen adını belirtir **özellikleri** penceresi.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>: Görüntülenen özellik adını belirtir **özellikleri** penceresi.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Belirtir görünen açıklama dizesi tabanında **özellikleri** özelliği seçildiğinde penceresi.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Görüntülenen açıklama dizesi tabanında belirtir **özellikleri** özelliği seçildiğinde penceresi.  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>: Bir özelliğin varsayılan değerini belirtir.  
+-   <xref:System.ComponentModel.DefaultValueAttribute>: Özelliğin varsayılan değerini belirtir.  
   
 -   <xref:System.ComponentModel.TypeConverterAttribute>: Görüntülenen dizeyi arasında özel bir dönüştürme belirtir **özellikleri** penceresi ve dize olmayan özellik değeri.  
   
--   <xref:System.ComponentModel.EditorAttribute>: Bir özelliği değiştirmek için özel bir düzenleyici belirtir.  
+-   <xref:System.ComponentModel.EditorAttribute>: Özelliği değiştirmek için özel bir düzenleyici belirtir.  
   
 ## <a name="compile-the-code"></a>Kod derleme  
  Bu örnek aşağıdaki derlemelere başvurular gerektirir:  
@@ -85,8 +82,6 @@ ms.locfileid: "49898421"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint projeleri genişletme](../sharepoint/extending-sharepoint-projects.md)   
- [Nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Nasıl yapılır: bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [Nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Nasıl yapılır: Bir kısayol menü öğesini SharePoint projelerine ekleme](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
-  

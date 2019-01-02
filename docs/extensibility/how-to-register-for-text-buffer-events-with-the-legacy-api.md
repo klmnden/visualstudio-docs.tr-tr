@@ -1,9 +1,6 @@
 ---
-title: "Nasıl yapılır: metin arabelleği olayları eski API'si ile kaydolma | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl Yapılır: Metin arabelleği olayları eski API'si ile kaydolma | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ffe8362f26a55fdb6a9fe236782965a2062ed69
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886013"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Nasıl yapılır: metin arabelleği olayları eski API'si ile kaydolma
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Nasıl Yapılır: Metin arabelleği olayları eski API'si ile kaydolun
 Metin arabelleği eski API'si aracılığıyla erişiyorsanız aşağıdaki yordamda gösterildiği gibi metin arabelleği olayları kaydolmalıdır.  
   
 ## <a name="to-advise-text-buffer-events"></a>Metin arabelleği olayları bildirmek için  

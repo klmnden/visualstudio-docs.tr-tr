@@ -1,9 +1,6 @@
 ---
-title: Kaynak Denetim deposunu proje klasörüne karşılaştırma | Microsoft Docs
-ms.custom: ''
+title: Proje klasörünün kaynak denetimi Store karşılaştırın | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0f6f2185385ee7ec3942556a43f58d43e7a4da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39e4cea70f407ab4fd9358d35488103aecb2b58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903662"
 ---
-# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Kaynak Denetim deposunu yerel proje klasörüne isteğe bağlı karşılaştırması
-Eklenti API yerel proje klasörünü ve kaynak denetimi karşılaştırması işlevlerini kullanarak gerçekleştirilir 1.2 kaynağında kontrol [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) ve [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
+# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>İsteğe Bağlı Olarak Yerel Proje Klasörünün Kaynak Denetimi Deposuyla Karşılaştırılması
+Kaynak Denetim eklentisi API işlevleri kullanarak yerel proje klasörünün kaynak denetimi arasındaki karşılaştırma gerçekleştirilir 1.2 [Sccdirqueryınfo](../../extensibility/sccdirqueryinfo-function.md) ve [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
   
- İçinde **Çözüm Gezgini**, tek bir dosyayı yerine bir klasör seçilirse, **karşılaştırmak sürümleri** kısayol menüsünü çağırır yeni [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) ve [ SccDirDiff](../../extensibility/sccdirdiff-function.md) eklenti kaynak denetiminde.  
+ İçinde **Çözüm Gezgini**, tek bir dosyayı yerine bir klasör seçtiyseniz **sürümleri Karşılaştır** kısayol menüsünde Yeni çağırır [Sccdirqueryınfo](../../extensibility/sccdirqueryinfo-function.md) ve [ SccDirDiff](../../extensibility/sccdirdiff-function.md) kaynak denetimi eklentisi içinde.  
   
-## <a name="new-capability-flags"></a>Yeni yetenek bayrakları  
+## <a name="new-capability-flags"></a>Yeni özellik bayrakları  
  `SCC_CAP_DIRECTORYDIFF`  
   
  `SCC_CAP_DIRECTORYCHECKOUT`  
@@ -36,10 +33,10 @@ Eklenti API yerel proje klasörünü ve kaynak denetimi karşılaştırması iş
   
  [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)  
   
- `SccDirQueryInfo` İşlevi çağrılmadan önce `SccDirDiff` çalışma dizini kaynak denetimli olup olmadığını belirlemek için. `SccDirDiff` İşlevi geçerli yerel dizin ve karşılık gelen kaynak denetimi klasör arasındaki farkları görüntüler. Bu komut eklentisinin dizine değişikliklerin listesini görüntülemek için kaynak denetimi sorar. Kaynak Denetim eklentisi farkları görüntülemek için kendi kullanıcı Arabirimi sağlar.  
+ `SccDirQueryInfo` İşlevi önce çağrılır `SccDirDiff` çalışma dizini kaynak-denetimli olup olmadığını belirlemek için. `SccDirDiff` İşlevi, geçerli yerel dizin ve karşılık gelen kaynak denetim klasörü arasındaki farkları görüntüler. Bu komut, kaynak denetimi eklentisi dizine değişikliklerin listesini görüntülemek için sorar. Kaynak Denetimi Eklentisi farkları görüntülemek için kendi kullanıcı Arabirimi sağlar.  
   
 > [!NOTE]
->  Bu işlev olarak aynı komutu bayrakları kullanır [SccDiff](../../extensibility/sccdiff-function.md). Kaynak denetimi eklenti sağlayıcısı, dizinler için "hızlı fark" işlemi desteklemeyen tercih edebilirsiniz.  
+>  Bu işlev, aynı komut bayrakları olarak kullanır [SccDiff](../../extensibility/sccdiff-function.md). Kaynak Denetimi Eklentisi sağlayıcısı, "hızlı fark" işlemi için dizinleri desteklemeyen tercih edebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API Sürümü 1.2’deki Yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

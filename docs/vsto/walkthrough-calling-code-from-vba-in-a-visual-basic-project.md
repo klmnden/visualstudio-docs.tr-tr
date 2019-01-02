@@ -1,9 +1,6 @@
 ---
-title: "İzlenecek yol: kod Visual Basic projesinde VBA'dan çağırın"
-ms.custom: ''
+title: "İzlenecek yol: Visual Basic projesinde VBA'dan kod çağırabilir"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917663"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>İzlenecek yol: kod Visual Basic projesinde VBA'dan çağırın
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>İzlenecek yol: Visual Basic projesinde VBA'dan kod çağırabilir
   Bu kılavuzda bir yöntem belge düzeyi özelleştirmesinde için Microsoft Office Word Visual Basic'ten belgedeki Applications (VBA) kodu için nasıl çağrılacağını gösterir. Yordamı üç temel adımdan oluşur: bir yöntem ekleyin `ThisDocument` konak öğesi sınıfına, VBA kodu yöntemi kullanıma sunar ve belgedeki VBA kodu, ardından yöntemi çağırın.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -216,13 +213,11 @@ ms.locfileid: "38808943"
   
 -   Bir Visual C# özelleştirme VBA'dan Kod çağırın. Bu işlem, Visual Basic işleminden farklıdır. Daha fazla bilgi için [izlenecek yol: Visual c VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
--   VBA içinden VSTO eklentisi kodu çağırın. Daha fazla bilgi için [izlenecek yol: çağrı kodu bir VSTO eklenti VBA'dan](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   VBA içinden VSTO eklentisi kodu çağırın. Daha fazla bilgi için [izlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)   
- [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanımına sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Nasıl yapılır: kodu Visual c VBA kullanımına sunma&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Nasıl yapılır: Visual Basic projesinde kodu VBA kullanıma sunma](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Nasıl yapılır: Visual c VBA kodu ortaya&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [İzlenecek yol: Visual c VBA'dan Kod Çağırma&#35; proje](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  

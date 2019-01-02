@@ -1,9 +1,6 @@
 ---
-title: "İzlenecek yol: çağrı VBA'dan kod bir VSTO eklenti"
-ms.custom: ''
+title: "İzlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915909"
 ---
-# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>İzlenecek yol: çağrı VBA'dan kod bir VSTO eklenti
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>İzlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma
   Bu yönerge, VSTO eklentisi Visual Basic for Applications (VBA) ve COM, VSTO eklentileri için dahil olmak üzere, başka bir Microsoft Office çözümü için bir nesneyi göstermek nasıl gösterir.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -149,7 +146,7 @@ ms.locfileid: "49843827"
   
 -   Kullanım `ThisAddIn` konak uygulama otomatikleştirmek ve VSTO eklenti projesindeki diğer görevleri gerçekleştirmek için sınıf. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
   
--   VSTO eklentisi içinde özel görev bölmesi oluşturun. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md) ve [nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   VSTO eklentisi içinde özel görev bölmesi oluşturun. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md) ve [nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 -   Bir VSTO eklentisi Şeritte özelleştirin. Daha fazla bilgi için [Şerite Genel Bakış](../vsto/ribbon-overview.md) ve [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
@@ -160,5 +157,3 @@ ms.locfileid: "49843827"
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

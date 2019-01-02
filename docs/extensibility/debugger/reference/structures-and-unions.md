@@ -1,9 +1,6 @@
 ---
-title: Yapılar ve birleşimleri | Microsoft Docs
-ms.custom: ''
+title: Yapılar ve birleşimler | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - structures [Visual Studio SDK]
@@ -13,117 +10,117 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e3f5ebb4e871f98b027638f5aae47d853828a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42d2634cf99a730aa44f1a497080b69fdff2b962
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906910"
 ---
-# <a name="structures-and-unions"></a>Yapılar ve birleşimleri
-Yapılar ve birleşimleri hata ayıklama Visual Studio SDK verilmiştir.  
+# <a name="structures-and-unions"></a>Yapılar ve Birleşimler
+Yapılar ve birleşimler hata ayıklama Visual Studio SDK'sında aşağıda verilmiştir.  
   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)  
- Bir sistem kimliği ya da bir GUID olabilir işlem Kimliğini belirtir.  
+ Sistem kimliği veya bir GUID olabilir işlem Kimliğini belirtir.  
   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)  
- Altında bir kesme noktası ateşlenir koşullar açıklanmaktadır.  
+ Bir kesme noktası harekete koşullar açıklanmaktadır.  
   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
- Konum, program ve iş parçacığı gibi bir hata kesme noktası çözüm açıklanır.  
+ Konum, program ve iş parçacığı gibi bir hata kesme noktası çözünürlüğü açıklar.  
   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
- Kesme noktası konumunu tanımlamak için kullanılan yapısı türünü belirtir.  
+ Kesme noktası konumunu tanımlamak için kullanılan yapı türünü belirtir.  
   
  [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)  
- Kodda bir adresinde bir kesme noktası konumunu açıklayan bileşenleri tanımlar.  
+ Kodda bir adresteki bir kesme noktası konumunu tanımlayan bileşenleri tanımlar.  
   
  [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
- Ayıklanacak programı bir adresine doğrudan bağlı bir kesme noktası konumu açıklar.  
+ Hata ayıklanan programa bir adres için doğrudan bağlı bir kesme noktası konumu açıklar.  
   
  [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
- Kod kaynak dosyasında satırında bir kesme noktası konumu açıklar.  
+ Kaynak dosyada kod satırında bir kesme noktası konumu açıklar.  
   
  [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
- Kesme kodu işlevinde noktasında uzaklık konumunu açıklar.  
+ Kodda bir işlev bir kesme noktasında uzaklık konumunu açıklar.  
   
  [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
- IDE içinden kullanıcı girebilirsiniz bir dize göre kod kesme noktaları ayarlamak için kullanılır.  
+ IDE içinden kullanıcının girebileceği bir dizesini kod kesme noktaları ayarlamak için kullanılır.  
   
  [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
- Kullanıcı IDE içinden girebilirsiniz bir dize temel alan veri kesme noktaları ayarlamak için kullanılır.  
+ IDE içinden kullanıcının girebileceği bir dize temel alan veri kesme noktaları ayarlamak için kullanılır.  
   
  [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)  
- Belirli bir konumdaki bir kesme noktası çözüm açıklanır.  
+ Belirli bir konumda bir kesme noktası çözünürlüğü açıklar.  
   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
- Bir kesme noktası bağlı tetiklenmez daha önce geçirilmiş sonra sayısı ve koşulları açıklar.  
+ Bağlı bir kesme noktası daha önce geçirilmiş sonra harekete geçirilmez sayısı ve koşullar açıklanmaktadır.  
   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
  Bir kesme noktası uygulamak için gereken bilgileri içerir.  
   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
- Bir kesme noktası uygulamak için gereken bilgileri içerir (aynı [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) yapısı ancak satıcı GUID, kısıtlama ve tracepoint bilgileri içerir).  
+ Bir kesme noktası uygulamak için gereken bilgileri içerir (aynı [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) yapısı ancak satıcı GUID, kısıtlama ve İzleme noktası bilgilerini içerir).  
   
  [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
- Kod kesme konumunu açıklar.  
+ Bir kod kesme noktası konumu açıklar.  
   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
  Veri kesme noktası bağlamanın sonucunu açıklar.  
   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
- Kod kesme noktası ya da bir veri kesme noktası ilişkili kesme noktası bilgilerini açıklar.  
+ Bir kod kesme noktası ya da veri kesme noktası bağlı Kesme noktasının bilgiler açıklanmaktadır.  
   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
- Kesme noktası çözümleme konum yapısını belirtir.  
+ Kesme noktası çözünürlüğü konumu yapısını belirtir.  
   
  [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)  
  Dize dizisi açıklar.  
   
  [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)  
- Meta verilerini harcanan alan türü hakkındaki bilgileri belirtir.  
+ Meta verileri kullanarak gerçekleştirilen bir alan türü hakkındaki bilgileri belirtir.  
   
  [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)  
  Bir işlev veya yöntem çağrısı açıklar.  
   
  [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)  
- Hata ayıklayıcı çalışmakta olduğu bilgisayarın açıklar.  
+ Hata ayıklayıcı üzerinde çalıştığı bilgisayar açıklar.  
   
  [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)  
- GUID'lerin listesini açıklar.  
+ GUID'ler listesi açıklar.  
   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
- Bellek içerik veya kod içeriği açıklar.  
+ Bellek içeriği veya kod bağlamı tanımlar.  
   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)  
- Bir adresi ayıklanacak bir programda açıklar.  
+ Hata ayıklanan programa bir adres açıklar.  
   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
- Adresleri farklı türde bir dizi birini temsil eder.  
+ Birkaç farklı türde adresleri birini temsil eder.  
   
  [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
- Özel bir Görüntüleyici tanımlayan veya Görselleştirici yazın.  
+ Özel bir Görüntüleyici tanımlar veya Görselleştirici yazın.  
   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)  
- Bir nesnenin adı, türü ve değeri içeren hiyerarşik bir yapı sırayla açıklayan hata ayıklama özelliği tanımlar.  
+ Bir nesnenin adı, türü ve değeri içeren hiyerarşik bir yapısı sırayla açıklayan hata ayıklama özelliği tanımlar.  
   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
  Bir başvuru açıklar.  
   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)  
- IDE görüntülenmek için ayrıştırılmış açıklar.  
+ Ayrıştırılmış kodu görüntülemek için IDE açıklar.  
   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)  
- Bir özel durum ya da çalışma zamanı hatası ayıklanacak program tarafından oluşturulan açıklar.  
+ Bir özel durum veya çalışma zamanı hata ayıklanacak program tarafından oluşturulan açıklar.  
   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
- Yerel bir değişken, parametre veya diğer alan açıklar.  
+ Yerel bir değişken, parametre veya diğer alanlar açıklanır.  
   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
- Yığın çerçevesi açıklar.  
+ Bir yığın çerçevesini tanımlar.  
   
  [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)  
- Kullanılabilir hata ayıklama altyapıları için benzersiz tanımlayıcı bir dizi açıklar.  
+ Bir dizi benzersiz tanımlayıcıları kullanılabilir hata ayıklama altyapıları için açıklar.  
   
  [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)  
  Bir modül JustMyCode bilgilerini ayarlamak için kullanılır.  
@@ -132,25 +129,25 @@ Yapılar ve birleşimleri hata ayıklama Visual Studio SDK verilmiştir.
  Belirli bir makine açıklar.  
   
  [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)  
- Bir dizi bir dizi öğesine açıklar.  
+ Bir dizi öğesine bir dizi açıklar.  
   
  [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)  
- Bir sınıf veya yapı alanı adresini açıklar.  
+ Bir alanın bir sınıf veya yapının adresi açıklar.  
   
  [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)  
- Bir kapsamdaki (genellikle bir işlev veya yöntem) yerel değişkenin adresini açıklar.  
+ (Genellikle bir işlev veya yöntem), bir kapsamdaki yerel değişkenin adresi açıklar.  
   
  [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)  
- Bir sınıfın bir yöntem adresini açıklar.  
+ Bir sınıfın yöntemini adresini açıklar.  
   
  [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)  
- Yöntem veya işlevi bir parametreyi açıklar.  
+ Bir yöntem veya işlev parametresi açıklar.  
   
  [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)  
- Bir yöntemi veya işlev dönüş değeri açıklar.  
+ Bir yöntem veya işlev dönüş değeri açıklar.  
   
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
- Meta verilerini harcanan alan türü açıklanmaktadır.  
+ Meta verileri kullanarak gerçekleştirilen bir alan türü açıklar.  
   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)  
  Belirli bir modülün (DLL, EXE veya derleme) açıklar.  
@@ -162,16 +159,16 @@ Yapılar ve birleşimleri hata ayıklama Visual Studio SDK verilmiştir.
  Yerel Adres açıklar.  
   
  [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
- PDB sembol yapılan bir alan türü açıklanmaktadır.  
+ PDB sembol harcanan alan türü açıklar.  
   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)  
- Bir kod konuma bağlamak hazır bir kesme noktası durumunu açıklar.  
+ Bir kod konuma bağlamak hazır olan bir kesme noktasının durumunu açıklar.  
   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)  
- Bir işlemi açıklanmaktadır.  
+ Bir süreç açıklanmaktadır.  
   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)  
- Bir listesini açıklayan [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) program düğümleri temsil eden nesne.  
+ Bir listesini açıklayan [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) program düğümleri temsil eden nesneleri.  
   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)  
  Bir makine üzerinde çalışan işlemlerini açıklar.  
@@ -183,18 +180,18 @@ Yapılar ve birleşimleri hata ayıklama Visual Studio SDK verilmiştir.
  Bir iş parçacığı özelliklerini açıklar.  
   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
- Alanın türünü açıklar.  
+ Bir alanın türünü açıklar.  
   
  [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)  
- Fiziksel Adres açıklar.  
+ Fiziksel bir adrese açıklar.  
   
  [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)  
- Göreli bir adresi açıklayan bir `this` işaretçisi (`Me` Visual Basic'te).  
+ Göreli bir adresi açıklayan bir `this` işaretçi (`Me` Visual Basic'te).  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h, sh.h veya ee.h  
+ Başlık: msdbg.h, sh.h veya ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

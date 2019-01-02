@@ -2,7 +2,6 @@
 title: Tetikleyici askıya alma, sürdürme ve UWP hata ayıklarken arka plan olaylarını | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c5543150708238ecc0026bcb1acb012feaaf37d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919683"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Nasıl tetikleyeceğinizi askıya alma, sürdürme ve UWP uygulamaları Visual Studio'da hata ayıklarken arka plan olayları
 Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uygulamanızın yürütme durumunu denetler — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve cihaz durumu olarak sonlandırılıyor. Windows hata ayıklaması yapıyorsanız, bu etkinleştirme olaylarını devre dışı bırakır. Bu konu, hata ayıklayıcı bu olayları tetiklemesine açıklar.  
@@ -111,6 +110,6 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio ile UWP uygulamalarını test etme](../test/testing-store-apps-with-visual-studio.md)   
- [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Visual Studio'da uygulamalarının hatalarını ayıklama](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle)   
  [Başlatma, sürdürme ve çoklu görev gerçekleştirme](/windows/uwp/launch-resume/index)

@@ -1,8 +1,6 @@
 ---
-title: Simge konumları | Microsoft Docs
-ms.custom: ''
+title: Sembol konumları | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,22 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 021911c01a7cd98e157f6c216ae28feffcaf7096
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 892c9f3b200466b22d847063ce2a60cf63301e5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915081"
 ---
 # <a name="symbol-locations"></a>Simge Konumları
-Çoğu simgeleri görüntü dosyası içinde tanımlanmış bir konuma sahip. Sembolün konum arasında bir değer ile belirtilen [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md) numaralandırması. Simgenin konumuna bağlı olarak ek özellikler destekleyebilir.  
+Çoğu sembolleri resim dosyası içinde tanımlanan bir konuma sahip. Sembolün konumu arasında bir değer ile belirtilen [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md) sabit listesi. Simgenin konumuna bağlı olarak ek özellikleri desteklemiyor olabilir.  
   
- Aşağıdaki tabloda, en sık kullanılan konumu türlerini ve ek özellikleri gösterir.  
+ Aşağıdaki tabloda, en yaygın kullanılan konum türleri ve ek özellikleri gösterilmektedir.  
   
 |Konum türü|Ek Özellikler|  
 |-------------------|---------------------------|  
 |`LocIsNull`|yok|  
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol::get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (göreli sanal adresleri etkinse)<br /><br /> [Idiasymbol::get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (görüntü Bankası için sıfır olmayan ayarlanmışsa)|  
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol::get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (göreli sanal adreslerine etkinleştirildiyse)<br /><br /> [Idiasymbol::get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (görüntü tabanı için sıfır olmayan ayarlandıysa)|  
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|  
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  

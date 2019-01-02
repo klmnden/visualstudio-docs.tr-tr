@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama'
+title: 'Nasıl Yapılır: Uygulama ve dağıtım bildirimlerini imzalama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852920"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl Yapılır: Uygulama ve dağıtım bildirimlerini imzalama
 
 Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile imzalanmış olması gerekir ve Authenticode teknolojisi kullanılarak. Windows sertifika deposu veya bir anahtar dosyasından bir sertifika kullanarak bildirimleri imzalayabilirsiniz.
 
@@ -34,7 +33,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
 
  ClickOnce bildirimlerini imzalanması için isteğe bağlı *.exe*-tabanlı uygulamaları. Daha fazla bilgi için bu belgedeki "imzalanmamış bildirimler oluşturmak" bölümüne bakın.
 
- Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+ Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sahip yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler *.pfx* uzantısı. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.
@@ -94,7 +93,7 @@ ClickOnce bildirimlerini imzalanması için isteğe bağlı *.exe*-tabanlı uygu
 
 2.  Üzerinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala** onay kutusu.
 
-3.  Yayınlama sürümünü, uygulamanızın yalnızca bir sürümü kalacak şekilde sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için [nasıl yapılır: ayarlama ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md).
+3.  Yayınlama sürümünü, uygulamanızın yalnızca bir sürümü kalacak şekilde sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için [nasıl yapılır: Kümesi ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4.  Uygulamayı yayınlayın.
 
@@ -112,6 +111,6 @@ ClickOnce bildirimlerini imzalanması için isteğe bağlı *.exe*-tabanlı uygu
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Nasıl yapılır: genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [Nasıl yapılır: Genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [İmzalama sayfası, Proje Tasarımcısı](../ide/reference/signing-page-project-designer.md)
 - [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)

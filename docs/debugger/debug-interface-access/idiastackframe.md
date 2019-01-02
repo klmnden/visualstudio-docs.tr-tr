@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ad1dc5417055c6a17288ee67031d0473062a66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893490"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
-Yığın çerçevesi özelliklerini gösterir.  
+Yığın çerçevesinin özellikleri sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,35 +29,35 @@ IDiaStackFrame : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Bu arabirim tarafından desteklenen yöntemleri şunlardır:  
+ Bu arabirim tarafından desteklenen yöntemler şunlardır:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Bu adres aralığındaki kod için temel işaretçi ayrılır belirten bir bayrak alır. Bu yöntem kullanım dışıdır.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Bu adres aralığı, kod için taban işaretçisi ayrılır belirten bir bayrak alır. Bu metot kullanımdan kaldırılmıştır.|  
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Çerçevenin adresini temel alır.|  
 |[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|C++ özel durum işleme geçerli olduğunu belirten bir bayrak alır.|  
-|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Blok işlevinin giriş noktası içerdiğini belirten bir bayrak alır.|  
-|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Yerel değişkenler yığına bayt sayısını alır.|  
-|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Yığına parametrelerinin bayt sayısını alır.|  
-|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Başlangıç kod bloğundaki bayt sayısını alır.|  
-|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Kaydedilmiş Yazmaçlar yığına bayt sayısını alır.|  
-|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Yerel Adres temel alır.|  
-|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Yığın çerçevesi içinde gönderilen bayt sayısını alır.|  
-|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Belirtilen yerel değişkenin değerini ham bayt olarak alır.|  
-|[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Belirtilen yazmaç değerini alır.|  
+|[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Blok bir işlevin giriş noktasını içeren belirten bir bayrak alır.|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Yerel değişkenler yığına itildi bayt sayısını alır.|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Parametreleri yığına itildi bayt sayısını alır.|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Bloğu içindeki kod prolog bayt sayısını alır.|  
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Yığına itildi kaydedilmiş kayıtları bayt sayısını alır.|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Yerel öğeler adresini temel alır.|  
+|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|En büyük yığın çerçevesinde üzerinde gönderilen bayt sayısını alır.|  
+|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Ham bayt olarak belirlenen yerel değişkenin değerini alır.|  
+|[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Belirtilen bir kayıt değeri alır.|  
 |[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Çerçevenin dönüş adresi alır.|  
-|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Çerçevenin bayt boyutunu alır.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Çerçevesinin bayt cinsinden boyutunu alır.|  
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Sistem özel durum işleme geçerli olduğunu belirten bir bayrak alır.|  
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Çerçeve türünü alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yığın çerçevesi bir işlev çağrısı, yürütme sırasında soyutlamadır.  
+ Yürütme sırasında bir işlev çağrısının bir Özet bir yığın çerçevesidir.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde [Idiaenumstackframes::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) yöntemi. Bkz: [Idiaenumstackframes](../../debugger/debug-interface-access/idiaenumstackframes.md) edinme konusunda bir örnek arabirimi `IDiaStackFrame` arabirimi.  
+ Bu arabirim çağırarak elde [Idiaenumstackframes::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) yöntemi. Bkz: [Idiaenumstackframes](../../debugger/debug-interface-access/idiaenumstackframes.md) arabirimi edinme hakkında bir örnek `IDiaStackFrame` arabirimi.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek yığın çerçevesi çeşitli özniteliklerini görüntüler.  
+ Bu örnek, bir yığın çerçevesinin çeşitli öznitelikleri görüntüler.  
   
 ```C++  
 void PrintStackFrame(IDiaStackFrame* pFrame)  
@@ -103,9 +101,9 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetMemoryBytes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceee9edae9a4cc36e08d3692bea17b288d44c862
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ec3740bb170f4284f9ef7e9cb35ea66008694e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913983"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Program tarafından kullanılan bellek bayt alır.  
@@ -28,13 +25,13 @@ Program tarafından kullanılan bellek bayt alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT GetMemoryBytes(   
+HRESULT GetMemoryBytes(   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
 ```csharp  
-int GetMemoryBytes(   
+int GetMemoryBytes(   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  
 ```  

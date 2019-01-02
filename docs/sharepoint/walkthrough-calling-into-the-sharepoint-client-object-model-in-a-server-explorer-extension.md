@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918894"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma
   Bu izlenecek yol için bir uzantı SharePoint istemci nesne modelini nasıl çağırılacağını **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. SharePoint istemci nesne modelini kullanma hakkında daha fazla bilgi için bkz. [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
@@ -39,7 +36,7 @@ ms.locfileid: "51296040"
 -   Hata ayıklama ve uzantıyı test etme.  
   
 > [!NOTE]  
->  Bu anlatımda oluşturduğunuz uzantıyı oluşturduğunuz uzantıyı benzer [izlenecek yol: Sunucu Gezgini web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Bu kılavuzda SharePoint sunucu nesne modeli kullanılır, ancak bu izlenecek yol, istemci nesne modelini kullanarak gerçekleştirdiğiniz görevlerin gerçekleştirir.  
+>  Bu anlatımda oluşturduğunuz uzantıyı oluşturduğunuz uzantıyı benzer [izlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Bu kılavuzda SharePoint sunucu nesne modeli kullanılır, ancak bu izlenecek yol, istemci nesne modelini kullanarak gerçekleştirdiğiniz görevlerin gerçekleştirir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:  
@@ -181,7 +178,7 @@ Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenec
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  İzlenecek yol için tüm kod içinde bu noktada **Web Bölümü Galerisi'ne** düğümünü projede sunuldu. Derleme **WebPartNodeExtension** hata olmadan derlediğinden emin olmak için proje.  
   
 #### <a name="to-build-the-project"></a>Projeyi oluşturmak için  

@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d344fdd444a46b3e0434e70850946ef242864b0
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900223"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 
@@ -42,7 +41,7 @@ Parametreleştirilmiş TableAdapter sorguları oluşturma **veri kümesi Tasarı
 
 -   SQL deyimi için istenen parametrelere sahip bir WHERE yan tümcesi ekleyerek yeni bir TableAdapter'ı oluşturun. Daha fazla bilgi için [oluştur ve TableAdapter yapılandırma](../data-tools/create-and-configure-tableadapters.md).
 
-     veya
+     -veya-
 
 -   Bir sorgu, WHERE yan tümcesi istenen parametrelerle SQL deyiminde ekleme, var olan bir TableAdapter ekleyin.
 
@@ -67,13 +66,13 @@ Parametreleştirilmiş TableAdapter sorguları oluşturma **veri kümesi Tasarı
 
 4.  Bir ad yazın **yeni sorgu adı** yeni bir sorgu oluşturuyorsanız kutusu.
 
-     veya
+     -veya-
 
      Bir sorgu seçin **varolan sorgu adı** kutusu.
 
 5.  İçinde **sorgu metni** parametreleri alan bir sorgu yazın.
 
-6.  Seçin **Tamam**.
+6.  **Tamam**’ı seçin.
 
      Bir giriş parametresi için Denetim ve bir **yük** düğmesi, formda eklenir bir <xref:System.Windows.Forms.ToolStrip> denetimi.
 

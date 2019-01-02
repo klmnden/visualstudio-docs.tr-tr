@@ -2,7 +2,6 @@
 title: Blend'de doğrudan seçim aracı değiştirici tuşları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83377aa4dabec81815a1503287cc878ca2fee062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823279"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend'de doğrudan seçim aracı değiştirici tuşları
 Aşağıdaki tabloda, var olan bir yol ile şeklini değiştirmek için kullanabileceğiniz kısayollar listelenmektedir **doğrudan seçim** aracı ![doğrudan seçim aracı](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Eklemek veya var olan bir yol noktalarını kaldırmak için veya iki mevcut yollar katılmaya **kalem** aracı.

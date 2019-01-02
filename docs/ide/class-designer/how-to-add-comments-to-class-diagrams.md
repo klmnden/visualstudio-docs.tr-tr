@@ -2,7 +2,6 @@
 title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarına açıklamalar ekleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afa0bc954e2812cb4c0149bfeef623195540e2a3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916380"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Nasıl Yapılır: Sınıf diyagramlarına açıklama ekleme
 

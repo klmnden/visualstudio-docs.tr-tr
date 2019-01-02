@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,17 +15,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e67c0c6b1bf24555e57d09b75317ce562a9f956
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 073ac55cce908a43bed2a2c6acb4e11cc1fa2ead
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824099"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek Yol: Visual Studio Uzantısı Yayımlama
+# <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısı yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Not**: Visual Studio Galerisi Visual Studio Market tarafından değiştirildiği. Ayrıntılar için bu konunun en son sürümüne bakın.
+**Not**: Visual Studio Galerisi, Visual Studio Market tarafından değiştirilmektedir. Ayrıntılar için bu konunun en son sürümüne bakın.
 
 
 Bu izlenecek yol, Visual Studio uzantısı için Visual Studio Galerisine yayımlama gösterilmektedir. Uzantınızı Galerisine eklediğinizde, geliştiriciler kullanabilir **Uzantılar ve güncelleştirmeler** için yeni ve güncelleştirilmiş uzantıları var gidin.
@@ -59,13 +58,13 @@ Bu izlenecek yol, Visual Studio uzantısı için Visual Studio Galerisine yayım
 
 4.  Oturum açmak için Microsoft hesabınızı kullanın. Bir Microsoft hesabınız yoksa bir bu noktada oluşturabilirsiniz.
 
-5.  Tıklayın **karşıya**.
+5.  **Karşıya Yükle**'ye tıklayın.
 
-6.  İçinde **1. adım: uzantı türü**seçin **aracı** ve ardından **sonraki**.
+6.  İçinde **1. adım: Uzantı türü**seçin **aracı** ve ardından **sonraki**.
 
-7.  İçinde **2. adım: karşıya**, doğrudan Visual Studio Galeri'ye yükleyin ya da yalnızca kendi Web sitesine bir bağlantı eklemek seçebilirsiniz. Bu örnekte **my aracı yüklemek istediğiniz**. **Denetiminizi seçin** kutusu görüntülenir. Tıklayın **Gözat** ve ardından TestPublish.vsix projenin \bin\Release klasörü seçin. **İleri**'ye tıklayın.
+7.  İçinde **2. adım: Karşıya yükleme**, doğrudan Visual Studio Galeri'ye yükleyin ya da yalnızca kendi Web sitesine bir bağlantı eklemek seçebilirsiniz. Bu örnekte **my aracı yüklemek istediğiniz**. **Denetiminizi seçin** kutusu görüntülenir. Tıklayın **Gözat** ve ardından TestPublish.vsix projenin \bin\Release klasörü seçin. **İleri**'ye tıklayın.
 
-8.  İçinde **3. adım: temel bilgileri**, source.extension.vsixmanifest dosyası alanları görüntülenir. Uygun bir seçin **kategori** ve ekleme **etiketleri** uzantınızı bulmalarına yardımcı olmak için. Daha ayrıntılı Özet ve Açıklama (Açıklama 280 en az karakter uzunluğunda olmalıdır) eklemek isteyebilirsiniz. Bırakın **uzantı türü** olarak **Microsoft uzantısı** ve **maliyet kategorisi** olarak **deneme**.
+8.  İçinde **3. adım: Temel bilgileri**, source.extension.vsixmanifest dosyası alanları görüntülenir. Uygun bir seçin **kategori** ve ekleme **etiketleri** uzantınızı bulmalarına yardımcı olmak için. Daha ayrıntılı Özet ve Açıklama (Açıklama 280 en az karakter uzunluğunda olmalıdır) eklemek isteyebilirsiniz. Bırakın **uzantı türü** olarak **Microsoft uzantısı** ve **maliyet kategorisi** olarak **deneme**.
 
 9. Sayfanın alt kısmındaki Katkı Sözleşmesi'ni okuyun ve kontrol **kabul ediyorum**.
 

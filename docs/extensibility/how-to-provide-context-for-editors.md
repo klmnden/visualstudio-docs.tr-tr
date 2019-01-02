@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: bağlam sağlamak için düzenleyicileri | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bağlam sağlamak için düzenleyicileri | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909918"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Nasıl yapılır: bağlam sağlamak için düzenleyicileri açma
+# <a name="how-to-provide-context-for-editors"></a>Nasıl Yapılır: Düzenleyiciler için bağlam sağlayın
 Yalnızca Düzenleyici odaklı veya araç penceresine odak hemen taşınmadan önce odağa sahip için bir düzenleyici, bağlamı etkin değil. Aşağıdaki görevleri gerçekleştirerek, içerik için bir düzenleyici sağlayabilirsiniz:  
   
 1. Bir içerik paketi oluşturun.  

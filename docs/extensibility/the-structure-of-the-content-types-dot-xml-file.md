@@ -1,9 +1,6 @@
 ---
 title: '[Content_types] .xml dosyasının yapısı | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - content_types
@@ -16,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893279"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909901"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml Dosyasının Yapısı
 Bir VSIX paketi, içerik türleri hakkındaki bilgileri içerir. Visual Studio paketi yüklemek için [Content_Types] .xml dosyasını kullanır, ancak dosyayı yüklemez.  
   
 > [!NOTE]
->  Bu konuda, VSIX paketinde kullanılan [Content_Type] .xml dosyaları için geçerli olsa da, [Content_Types] .xml dosya türü parçasıdır *açık paketleme kuralları (OPC)* standart. Daha fazla bilgi için [OPC: A yeni standart için paketleme verilerinizi](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN Web sitesinde.  
+>  Bu konuda, VSIX paketinde kullanılan [Content_Type] .xml dosyaları için geçerli olsa da, [Content_Types] .xml dosya türü parçasıdır *açık paketleme kuralları (OPC)* standart. Daha fazla bilgi için [OPC: Bir yeni standart için paketleme verilerinizi](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN Web sitesinde.  
   
 ## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
  Kök öğe ve öznitelikler ve alt öğeler aşağıdaki bölümlerde açıklanmaktadır.  
@@ -67,11 +64,11 @@ Bir VSIX paketi, içerik türleri hakkındaki bilgileri içerir. Visual Studio p
 ### <a name="attribute-name-attribute"></a>{Öznitelik adı} Özniteliği  
  Visual Studio aşağıdaki tanır `ContentType` ilişkili değerleri `Extension` türleri.  
   
-|Uzantı|contentType|  
+|Dahili numara|contentType|  
 |---------------|-----------------|  
 |txt|metin/düz|  
 |pkgdef|metin/düz|  
-|XML|metin/xml|  
+|xml|metin/xml|  
 |vsixmanifest|metin/xml|  
 |htm veya html|metin/html|  
 |RTF|Uygulama/rtf|  

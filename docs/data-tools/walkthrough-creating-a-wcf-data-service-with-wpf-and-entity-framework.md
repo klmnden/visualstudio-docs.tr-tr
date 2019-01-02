@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cbafb006091956ce5359bc6b575accd057b2ee37
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b0353688be3b6fa62a0f33338461eeab78ee33d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888510"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
 Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
@@ -70,7 +69,7 @@ Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**  ve **Web** düğümleri seçin**ASP.NET Web uygulaması** şablonu.
+2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** ve **Web** düğümler ve ardından **ASP. NET Web uygulaması** şablonu.
 
 3. İçinde **adı** metin kutusuna **NorthwindWeb**ve ardından **Tamam** düğmesi.
 
@@ -94,7 +93,7 @@ Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/include
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         veya
+         -veya-
 
     -   Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmeye. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
 
@@ -156,7 +155,7 @@ Sonraki adımlarda hizmeti kullanmak üzere bir Windows Forms istemci uygulamas�
 
 1. Menü çubuğunda, dosya **Ekle** > **yeni proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**  düğümünü seçin **Windows** düğümünü seçin **Windows Forms uygulamalarındaki**.
+2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** düğümünü seçin **Windows** düğümünün seçin **Windows Forms uygulamalarındaki**.
 
 3. İçinde **adı** metin kutusuna `NorthwindClient`ve ardından **Tamam** düğmesi.
 
@@ -291,4 +290,4 @@ Sonraki isteğe bağlı adımda hizmetin döndürdüğü verileri filtreleme hak
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Nasıl yapılır: ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Nasıl yapılır: Ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

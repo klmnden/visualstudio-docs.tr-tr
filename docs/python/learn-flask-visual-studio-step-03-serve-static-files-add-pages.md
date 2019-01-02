@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio projeleri, özellikle statik dosyaları işleme, uygulamaya sayfaları ekleyin ve şablonu devralma gösterimi bağlamında Flask temel bilgileri bir kılavuz
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 22d498ea38494baa12539039960685bb0abda056
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917561"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. adım: statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. Adım: Statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
 
-**Önceki adımda: [görünümleri ile bir Flask uygulaması oluşturma ve sayfa şablonları](learn-flask-visual-studio-step-02-create-app.md)**
+**Önceki adım sayısı: [Görünümleri ve şablonların ile bir Flask uygulaması oluşturma](learn-flask-visual-studio-step-02-create-app.md)**
 
 Bu öğreticinin önceki adımlarında müstakil HTML tek bir sayfayla en az bir Flask uygulaması oluşturulacağını öğrendiniz. Modern web uygulamaları, ancak genellikle birçok sayfaları oluşan ve olun tutarlı bir stil ve davranışı sağlamak için CSS ve JavaScript dosyaları gibi paylaşılan kaynakları.
 
@@ -34,7 +33,7 @@ Bu adımda, şunların nasıl yapılır:
 > - (3-3. adım) uygulamaya ek sayfalar ekleme
 > - (Adım 3-4) sayfalar arasında kullanılan bir üst bilgi ve gezinti çubuğu oluşturmak için şablon devralma kullanın
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>3-1. adım: öğe şablonları ile aşina
+## <a name="step-3-1-become-familiar-with-item-templates"></a>3-1. adım: Öğe şablonları ile aşina
 
 Bir Flask uygulaması geliştirirken, genellikle çok daha fazla Python, HTML, CSS ve JavaScript dosyaları ekleyin. Her dosya türü için (diğer dosyaları ister *web.config* dağıtımı için ihtiyacınız olan), Visual Studio'nun sağladığı uygun [öğe şablonları](python-item-templates.md) başlamanıza yardımcı olmak için.
 
@@ -48,7 +47,7 @@ Bir şablonu kullanmak için istediğiniz şablonu seçin, dosya için bir ad be
 
 Yanıt: Visual Studio Proje dosyası (*.pyproj*) bir Python projesi olarak işaretleyen bir proje türü tanımlayıcısı içeriyor. Visual Studio, proje türü için uygun olan öğe şablonları göstermek için bu tür tanımlayıcısı kullanır. Bu şekilde bloblarda her sıralamak için sormadan türleri pek çok proje için Visual Studio öğe şablonları zengin sağlayabilirsiniz.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>3-2. adım: hizmet uygulamanızdan statik dosyalar
+## <a name="step-3-2-serve-static-files-from-your-app"></a>3-2. adım: Uygulamanızdan statik dosyaları işleme
 
 Python (herhangi bir çerçeveyi kullanarak) ile oluşturulmuş bir web uygulaması, Python dosyalarınızın her zaman web ana bilgisayarın sunucu üzerinde çalışan ve bir kullanıcının bilgisayarına hiçbir zaman iletilmez. Ana sunucu olarak yalnızca sunar diğer dosyaları, Bununla birlikte, CSS ve JavaScript gibi tarayıcı tarafından özel olarak kullanıldığından-bunlar istenen ne zaman açıktır. Bu tür dosyalar "statik" dosyaları olarak adlandırılır ve Flask bunları otomatik olarak, kod yazmaya gerek sunabilirsiniz. HTML dosyaları içinde Örneğin, yalnızca statik dosyalar projesinde bir göreli yol kullanarak başvurabilirsiniz. Bu adım ilk bölümünde mevcut sayfa şablonunuza bir CSS dosyası ekler.
 
@@ -115,15 +114,15 @@ Flask çağrılan bir işlev sağlar `serve_static_file` projenin içinde herhan
 
 1. Uygulamayı çalıştırın ve statik dosya verdiğini görmek için / api/veri bitiş noktasına gidin. İşiniz bittiğinde uygulamayı durdurun.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Soru: statik dosyaları düzenlemek için tüm kuralları var mı?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Soru: Statik dosyaları düzenlemek için tüm kuralları var mıdır?
 
 Yanıt: Diğer CSS, JavaScript ve HTML dosyaları ekleyebilirsiniz, *statik* klasör ancak istediğiniz. Statik dosyaları düzenlemek için normal bir şekilde adlandırılmış alt klasörlerde oluşturmaktır *yazı tipleri*, *betikleri*, ve *içeriği* (için stil sayfaları ve diğer dosyaları).
 
-### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Soru: Nasıl URL değişkenleri ve sorgu parametreleri API'si yapabilirim?
+### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Soru: URL değişkenleri ve sorgu parametreleri API'si nasıl yapabilirim?
 
-Yanıt: 1-4. adım için yanıt bkz [Soru: nasıl Flask değişken URL rotaları ile çalışma ve sorgu parametreleri?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Yanıt: Yanıt için 1-4. adımda bkz [Soru: Flask değişken URL rotaları ve sorgu parametreleri ile nasıl çalışır?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>3-3. adım: uygulama için bir sayfa ekleyin
+## <a name="step-3-3-add-a-page-to-the-app"></a>3-3. adım: Uygulamaya bir sayfa ekleyin
 
 Uygulamaya başka bir sayfa ekleme aşağıdaki anlamına gelir:
 
@@ -174,11 +173,11 @@ Aşağıdaki adımları giriş sayfasından, ilgili sayfada bağlantılara ve "H
 
 1. Sonuçları inceleyin ve sayfalar arasında gezinti denetlemek için projeyi çalıştırın. İşiniz bittiğinde uygulamayı durdurun.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Soru: sayfa işlevinin adını Flask için önemli mi?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Soru: Sayfa işlevinin adını Flask için önemli mi?
 
 Yanıt: Hayır, çünkü bu `@app.route` Flask yanıt oluşturmak için işlev çağrıları URL'leri belirleyen dekoratör. Geliştiriciler genellikle yönlendirmek için işlev adıyla eşleşmesi, ancak böyle bir eşleşen gerekli değildir.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>3-4. adım: bir başlık ve gezinti çubuğu oluşturmak için şablon devralma kullanın
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>3-4. adım: Bir üst bilgi ve gezinti çubuğu oluşturmak için şablon devralma kullanın
 
 Açık Gezinti bağlantıları her sayfada sahip olmak yerine modern web uygulamaları genellikle bir marka başlığı ve en önemli sayfa bağlantılarının, açılır menüler ve benzeri sağlayan bir gezinti çubuğunu kullanın. Üst bilgi ve gezinti çubuğunda aynı olan tüm sayfalara emin olmak için ancak her sayfası şablonu aynı kodu yinelemek istediğiniz yok. Bunun yerine, tek bir yerde tüm sayfaları ortak parçalarını tanımlamak istersiniz.
 
