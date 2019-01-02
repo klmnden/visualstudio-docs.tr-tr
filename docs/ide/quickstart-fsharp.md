@@ -1,9 +1,8 @@
 ---
-title: 'Hızlı Başlangıç: bir ASP.NET Core web hizmetini oluşturmaF#'
+title: 'Hızlı Başlangıç: Bir ASP.NET Core web hizmetini oluşturunF#'
 description: Visual Studio ile bir ASP.NET Core web hizmeti oluşturmayı öğrenin F#, adım adım.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -13,14 +12,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 884dfec4d3b8050fa6059cb0f505e1c7619336f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961877"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: Kullanım ilk ASP.NET Core web hizmeti oluşturmak için Visual StudioF#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: İlk ASP.NET Core web hizmeti oluşturmak için Visual StudioF#
 
 5-10 dakika giriş bölümünde F# Visual Studio'da oluşturacağınız bir F# ASP.NET Core web uygulaması.
 
@@ -63,7 +62,7 @@ Kod basittir. Bir F# değerleri dizisi bağlı `values` adlandırın ve ardında
 
 ![Değiştirilen Get member](../ide/media/hello-world-fs-get-member.png)
 
-## <a name="run-the-application"></a>Uygulamayı çalıştırın
+## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
 1. Tuşuna **Ctrl**+**F5** uygulamayı çalıştırın ve bir web tarayıcısında açın.
 

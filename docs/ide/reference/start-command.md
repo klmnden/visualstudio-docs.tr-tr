@@ -2,7 +2,6 @@
 title: Başlat Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd2d64d8103afe1e303052c9b27fc2cc85cab58
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903936"
 ---
 # <a name="start-command"></a>Başlat Komutu
-Başlangıç projesi hata ayıklama başlar.
+Başlangıç projesinde hata ayıklamaya başlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,13 +33,13 @@ Debug.Start [address]
 ## <a name="arguments"></a>Arguments
  `address`
 
- İsteğe bağlı. Hangi program, kaynak kodunda kesme noktası benzer durduran adresi. Bu bağımsız değişken yalnızca hata ayıklama modunda geçerli değil.
+ İsteğe bağlı. Adres, program yürütme bir kesme noktası kaynak kodundaki benzer askıya alır. Bu bağımsız değişken, yalnızca hata ayıklama modunda geçerlidir.
 
 ## <a name="remarks"></a>Açıklamalar
- **Başlat** komutu çalıştırıldığında, belirtilen adresine RunToCursor işlemi gerçekleştirir.
+ **Başlat** komut çalıştırıldığında, belirtilen adresi için bir RunToCursor işlemi gerçekleştirir.
 
 ## <a name="example"></a>Örnek
- Bu örnek, hata ayıklayıcı başlatır ve oluşan özel durumlar yok sayar.
+ Bu örnekte, hata ayıklayıcıyı başlatır ve oluşan özel durumları yok sayar.
 
 ```cmd
 >Debug.Start
@@ -50,5 +49,5 @@ Debug.Start [address]
 
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

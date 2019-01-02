@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::Delete | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::Delete
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b5b6b91dd871582c78be62202f7355ca68ffbea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 91885471093fd6f8d270d69d090b56472970a772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961837"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 Bu bekleyen kesme noktasının ve ondan bağlı tüm kesme noktalarını siler.  
@@ -29,8 +26,8 @@ Bu bekleyen kesme noktasının ve ondan bağlı tüm kesme noktalarını siler.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT Delete(   
-   void   
+HRESULT Delete(   
+   void   
 );  
 ```  
   

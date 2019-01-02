@@ -2,7 +2,6 @@
 title: XAML uygulamalarında kaynak tüketimini analiz etme
 ms.custom: seodec18
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 32368b280faf7b87aa128865cf169c7675a58c95
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 96d770679055acd39f0913aef3e8a38281201762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911318"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimi ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) analiz edin
 
@@ -124,7 +123,7 @@ Kullanım **zaman çizelgesi ayrıntıları** sıralama, filtreleme ve açıklam
   
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [WPF ekibi blogu: WPF uygulamaları için yeni kullanıcı Arabirimi performans çözümleme aracı](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
+- [WPF ekibi blogu: WPF uygulamaları için yeni kullanıcı Arabirimi Performans analiz aracı](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
 - [C++, C# ve Visual Basic kullanarak UWP uygulamaları için en iyi performans](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [WPF uygulama performansını iyileştirin](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
 - [Visual Studio profil oluşturma](../profiling/index.md)  

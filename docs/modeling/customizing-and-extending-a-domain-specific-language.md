@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960043"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları tanımlamak birden fazla düzeyleri sağlar:
@@ -57,13 +56,13 @@ Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları
 |Şekil düzeninin ve görünümünün kopyalama ve sürükle-bırak korur.|Şekilleri ve bağlayıcıları kopyalanan ekleme `ElementGroupPrototype`. Geçersiz kılmak için en uygun yöntemi `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|
 |Şekiller geçerli imleç konumu gibi seçtiğiniz bir konuma yapıştırın.|Geçersiz kılma `ClipboardCommandSet.ProcessOnCopy()` konuma özgü sürümünü kullanacak şekilde `ElementOperations.Merge().` bkz [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|
 |Yapıştırırken ek bağlantılar oluşturma|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|Etkinleştirme sürükleyip diğer DSL'ler ve Windows bu diyagram öğeleri|Bkz: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Etkinleştirme sürükleyip diğer DSL'ler ve Windows bu diyagram öğeleri|Bkz: [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Üst sürüklediğiniz gibi bir şekil veya bir bağlantı noktası gibi bir alt Şekil'üzerine sürüklenerek aracı sağlar.|Öğe birleştirme yönergesinde, bırakılan nesne üst iletmek için hedef nesne sınıfı üzerinde tanımlayın. Bkz: [öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md).|
 |Bir şekil veya ek bağlantılar ve şeklin üzerine sürüklenerek aracını izin verin veya oluşturulan nesneler. Örneğin, bir yorum, bağlı durumda olan bir öğe kesilmesine izin vermek için.|Öğe birleştirme yönergesinde hedef etki alanı sınıfını tanımlamak ve oluşturulacak bağlantılara tanımlayın. Karmaşık durumlarda, özel kod ekleyebilirsiniz. Bkz: [öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md).|
 |Bir aracıyla öğeleri bir grup oluşturun. Örneğin, sabit bir dizi bağlantı noktası ile bir bileşen.|ToolboxHelper.cs araç kutusu başlatma yöntemi yok sayın. Bir öğe grubu prototip (öğeleri ve bunların ilişki bağlantılarını içeren EGP) oluşturun. Bkz: [araçları ve araç kutusunu özelleştirme](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Asıl ve bağlantı noktası şekiller EGP içeriyor ya da bağlantı noktası şekilleri EGP örneği oluşturulduğunda konumlandırmak için BoundsRules tanımlayın. Bkz: [BoundsRules şekil konumunu ve boyutunu Kısıtlamama](../modeling/boundsrules-constrain-shape-location-and-size.md).|
 |Birden fazla ilişki oluşturmak için bir bağlantı aracını kullanın.|Bağlantı bağlama yönergesi (LCD) araç tarafından çağrılan bağlantı oluşturucuyu ekleyin. LCD'ler iki öğe türleri arasında ilişki türünü belirler. Bu öğelerin durumlarını bağımlı hale getirmek için özel kod ekleyebilirsiniz. Bkz: [araçları ve araç kutusunu özelleştirme](../modeling/customizing-tools-and-the-toolbox.md).|
 |Yapışkan araçları - birçok şekilleri veya bağlayıcıları art arda oluşturmak için herhangi bir aracı kullanıcı çift tıklayabilirsiniz.|DSL Gezgini içinde seçin `Editor` düğümü. Özellikler penceresinde ayarlayın **kullanan Yapışkan araç kutusu öğeleri**.|
-|Menü komutlarını tanımlama|Bkz: [nasıl yapılır: standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Menü komutlarını tanımlama|Bkz: [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Model doğrulama kuralları ile sınırlama|Bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md)|
 |Bir DSL kod, yapılandırma dosyaları ve belgeleri oluşturur.|[Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Modelleri nasıl kaydedileceğini özelleştirme dosyası için.|Bkz: [dosya depolamayı ve XML serileştirmeyi özelleştirme](../modeling/customizing-file-storage-and-xml-serialization.md)|

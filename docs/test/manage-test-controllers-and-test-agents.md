@@ -2,19 +2,18 @@
 title: Test denetleyicilerini ve test aracılarını yönetme
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891407"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
@@ -45,7 +44,7 @@ Farklı test denetleyicisine test aracısı eklemek isteyebilirsiniz veya yükl�
 
 2. Test aracısını nasıl çalıştırılabilir için iki seçenek sunulur:
 
-   - **Hizmet**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak zorunda değilsiniz gibi kodlanmış UI testleri veya test, altında çalıştığında bir video kaydı oluşturmak, **test aracısını farklı çalıştır**seçin **hizmeti**. Test aracısı hizmet olarak başlatılacak. Seçin **sonraki**.
+   - **Hizmet**: Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak zorunda değilsiniz gibi kodlanmış UI testleri veya test, altında çalıştığında bir video kaydı oluşturmak, **test aracısını farklı çalıştır**seçin **hizmet**. Test aracısı hizmet olarak başlatılacak. Seçin **sonraki**.
 
       Artık test aracısı hizmet olarak başladığında kullanıcı hakkındaki ayrıntıları girebilirsiniz.
 
@@ -145,8 +144,8 @@ Durum ve diğer ayarları için aşağıdaki yordamları kullanarak test aracıs
 |Test aracısı özelliği|Açıklama|
 |-|-----------------|
 |**Ağırlığı**|Test aracılarını farklı performans düzeyleriyle kullandığınızda yükü dağıtmak için kullanılır. Örneğin, 100 ağırlığı ile bir test aracısı, 50 ağırlığı ile bir test aracısı yükünün iki katı alır.|
-|**IP geçişi**|IP geçişini yapılandırmak için kullanılır. IP geçişi, bir IP adresi aralığı kullanarak bir sunucuya istek göndermek bir test aracısı sağlar. Bu, farklı istemci bilgisayarlardan gelen çağrıların benzetimini yapar.<br /><br /> Yük testiniz web grubuna erişiyorsa IP geçişi önemlidir. Çoğu yük dengeleyicileri, istemcinin IP adresini kullanarak bir istemci ve belirli bir web sunucusu arasında benzeşim kurar. Tüm istekler tek bir istemciden geliyor gibi görünüyorsa, yük dengeleyicisi yükü dengelemez. Web grubunda iyi bir yük dengesi edinmek için istekleri bir dizi IP adreslerinden geldiğinden emin olun. **Not:** bir ağ bağdaştırıcısı belirtebilir veya kullanın **(Tümü Atanmamış)** otomatik olarak şu anda kullanılmayan birini seçmek için. <br /><br /> IP geçiş özelliğini kullanmak için Visual Studio Test aracısı hizmetinin o aracı bilgisayar için Yöneticiler grubundaki bir kullanıcı olarak çalıştırılması gerekir. Bu kullanıcı, aracı kurulumu sırasında seçilir, ancak hizmet özelliklerini değiştirme ve yeniden başlatarak değiştirilebilir.<br /><br /> IP geçişinin düzgün çalıştığını doğrulamak için IIS web sunucusunda günlüğe kaydetmeyi etkinleştirmek için isteklerin yapılandırdığınız IP adreslerinden geldiğini doğrulamak için IIS günlüğü işlevini kullanın.|
-|**Öznitelikler**|Test aracısı seçiminde kullanılabilecek ad/değer çiftleri kümesi. Örneğin, bir test belirli bir OS gerektirebilir. Öznitelik ekleyebilirsiniz **rolleri** sekmesinde test öznitelikleri eşleşen bir test aracısı seçmek için ayarları dosyası ve bunlar kullanılabilir. Birden fazla makinede test çalıştırmak isterseniz, testlerinizi çalıştırmak üzere yapılandırılmış test ayarları rolünde bir öznitelik oluşturun ve sonra ilgili rolde kullanmak istediğiniz her test aracısı üzerinde eşleştirme özniteliğini yapılandırın... **Not:** Bu ayar yalnızca bu öznitelikler sadece Visual Studio için test ayarlarında kullanılır çünkü bir proje için kaydedilmemiş bir test denetleyicisiyle kayıtlı test aracıları için kullanılabilir.|
+|**IP geçişi**|IP geçişini yapılandırmak için kullanılır. IP geçişi, bir IP adresi aralığı kullanarak bir sunucuya istek göndermek bir test aracısı sağlar. Bu, farklı istemci bilgisayarlardan gelen çağrıların benzetimini yapar.<br /><br /> Yük testiniz web grubuna erişiyorsa IP geçişi önemlidir. Çoğu yük dengeleyicileri, istemcinin IP adresini kullanarak bir istemci ve belirli bir web sunucusu arasında benzeşim kurar. Tüm istekler tek bir istemciden geliyor gibi görünüyorsa, yük dengeleyicisi yükü dengelemez. Web grubunda iyi bir yük dengesi edinmek için istekleri bir dizi IP adreslerinden geldiğinden emin olun. **Not:**  Bir ağ bağdaştırıcısı belirtebilir veya kullanın **(Tümü Atanmamış)** otomatik olarak şu anda kullanılmayan birini seçmek için. <br /><br /> IP geçiş özelliğini kullanmak için Visual Studio Test aracısı hizmetinin o aracı bilgisayar için Yöneticiler grubundaki bir kullanıcı olarak çalıştırılması gerekir. Bu kullanıcı, aracı kurulumu sırasında seçilir, ancak hizmet özelliklerini değiştirme ve yeniden başlatarak değiştirilebilir.<br /><br /> IP geçişinin düzgün çalıştığını doğrulamak için IIS web sunucusunda günlüğe kaydetmeyi etkinleştirmek için isteklerin yapılandırdığınız IP adreslerinden geldiğini doğrulamak için IIS günlüğü işlevini kullanın.|
+|**Öznitelikler**|Test aracısı seçiminde kullanılabilecek ad/değer çiftleri kümesi. Örneğin, bir test belirli bir OS gerektirebilir. Öznitelik ekleyebilirsiniz **rolleri** sekmesinde test öznitelikleri eşleşen bir test aracısı seçmek için ayarları dosyası ve bunlar kullanılabilir. Birden fazla makinede test çalıştırmak isterseniz, testlerinizi çalıştırmak üzere yapılandırılmış test ayarları rolünde bir öznitelik oluşturun ve sonra ilgili rolde kullanmak istediğiniz her test aracısı üzerinde eşleştirme özniteliğini yapılandırın... **Not:**  Bu ayar, yalnızca bu öznitelikler sadece Visual Studio için test ayarlarında kullanılır çünkü bir proje için kaydedilmemiş bir test denetleyicisiyle kayıtlı test aracıları için kullanılabilir.|
 
 Değişiklikleri hemen yürürlüğe girer fakat çalışan testleri etkilemez Aracısı ağırlığı ve test aracısı özniteliği test edin. IP adresi aralığı, test denetleyicisi yeniden başlatıldıktan sonra etkili olur.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cb3ab28a70904d7f7bedbf126dc5fcdce77f176a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 322f0f31eafe6616334aa9cb62ad9b67a4ad43b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924468"
 ---
-# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Nasıl yapılır: bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme
-  Kullanıcı bir e-posta iletisini aldığında bu örnek özel eylemleri gerçekleştirir.  
+# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Nasıl Yapılır: Bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme
+  Bu örnekte, kullanıcı bir e-posta iletisi aldığında özel eylemleri gerçekleştirir.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -37,6 +34,4 @@ ms.locfileid: "35257393"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)   
- [VSTO eklentileri programlama kullanmaya başlama](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  
+ [VSTO eklentileri programlama kullanmaya başlayın](../vsto/getting-started-programming-vsto-add-ins.md)  

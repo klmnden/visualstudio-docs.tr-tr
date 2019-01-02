@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Temel Lambert Gölgelendiricisi Oluşturma'
+title: 'Nasıl Yapılır: Temel Lambert gölgelendiricisi oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622209951ba3321a8278e0f65058459591af7d38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850363"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Nasıl yapılır: temel Lambert gölgelendiricisi oluşturma
+# <a name="how-to-create-a-basic-lambert-shader"></a>Nasıl Yapılır: Temel Lambert gölgelendiricisi oluşturma
 
 Bu makalede, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) Klasik Lambert aydınlatma modeli uygulayan aydınlatma gölgelendirici oluşturmak için nasıl kullanılacağını gösterir.
 
@@ -55,7 +54,7 @@ Başlamadan önce emin **özellikleri** penceresi ve **araç kutusu** görüntü
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Nasıl Yapılır: Gölgelendiriciyi Dışarı Aktarma](../designers/how-to-export-a-shader.md)
-- [Nasıl Yapılır: Temel Phong Gölgelendiricisi Oluşturma](../designers/how-to-create-a-basic-phong-shader.md)
+- [Nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md)
+- [Nasıl yapılır: Temel Phong gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-phong-shader.md)
 - [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 - [Gölgelendirici Tasarımcısı Düğümleri](../designers/shader-designer-nodes.md)

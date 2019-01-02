@@ -1,9 +1,6 @@
 ---
 title: TEXT_DOC_ATTR_2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TEXT_DOC_ATTR_2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c877b1e42110defe717395cc78cc76acae00b934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d74bbfa4fb89baf01c5fb3d49a0767c67b800ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872732"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
-Bir belge öznitelikleri açıklanmaktadır.  
+Belgenin özniteliklerini açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,22 +35,22 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
   
 ## <a name="members"></a>Üyeler  
  TEXT_DOC_ATTR_READONLY_2  
- Belgeyi salt okunur olduğunu gösterir.  
+ Belge salt okunur olduğunu gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Bu değer, C# derlemesindeki gerçekte tanımlı değil. Bunun yerine, kaynak dosyanızı tanımı kopyalamanız gerekir.  
+>  Bu değer, C# derlemesinde gerçekten tanımlı değil. Bunun yerine, kaynak dosyanız için tanım kopyalamanız gerekir.  
   
  Bağımsız değişken olarak geçirilen [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) yöntemi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Numaralandırmalar](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)

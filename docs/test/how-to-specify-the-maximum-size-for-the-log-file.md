@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 69078569f59612f5335266784d71c5003aad5f5d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902975"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Nasıl yapılır: yük testleri için günlük dosyası boyutu üst sınırı belirtin
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Nasıl Yapılır: Yük testleri için günlük dosyası boyutu üst sınırı belirtin
 
 Varsayılan olarak, yük testleri için kullanılan günlük dosyasının en büyük boyutu, 20 megabayt olarak ayarlanır. Denetleyici hizmetiyle ilişkilendirilmiş yapılandırma dosyasını düzenleyerek bu değeri değiştirebilirsiniz.
 

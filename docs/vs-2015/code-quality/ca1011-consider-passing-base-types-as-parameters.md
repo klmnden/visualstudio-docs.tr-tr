@@ -1,12 +1,11 @@
 ---
-title: 'CA1011: temel türleri parametre geçirmeyi düşünün. | Microsoft Docs'
+title: 'CA1011: Temel türleri parametre olarak geçirmeyi düşünün | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5f55ec4e9a2b2cf91ebf1aef6588d0780c0f92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901145"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Temel türleri parametre olarak geçirmeyi düşünün
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +64,4 @@ ms.locfileid: "49898648"
  [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ConsiderPassingBaseTypes/vb/FxCop.Design.ConsiderPassingBaseTypes.vb#1)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1059: Üyeler belli somut türleri göstermemelidir](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
-
-
-
+ [CA1059: Üyeler belirli somut türleri göstermemelidir](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

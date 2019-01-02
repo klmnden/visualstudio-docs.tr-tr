@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962262"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Nasıl yapılır: bir yük testine ek çalışma ayarları ekleme
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Nasıl Yapılır: Bir yük testine ek çalışma ayarları ekleme
 
 Çalıştırma ayarları yük testinin çeşitli diğer ayarları belirleyin. Bunlar, test sonuçları koleksiyon ayrıntı düzeyi ve test çalıştığında toplanan sayaç kümeleri süresini içerir. Oluşturun ve her bir yük testi için birden çok çalışma ayarlarını depolamak ve ardından test çalıştırması sırasında kullanmak için belirli bir ayar seçin. İlk çalıştırma ayarı kullanarak yük testi oluşturduğunuzda, yük testinize eklenir **Yeni Yük Testi Sihirbazı**.
 
@@ -40,14 +39,14 @@ Yük testi farklı koşullar altında çalıştırabilmeniz için daha fazla yü
 
      **Özellikleri** seçili çalışma ayarı için özelliklerle penceresi görüntülenir.
 
-5.  İçinde **özellikleri** penceresinde metin kutusunu kullanın **adı** ayar bir adı çalıştırılmasına vermek özelliği çalışma ayarı amacı tanımlar (örneğin, **Çalıştır ayarını: beş dakika çalıştırma** ).
+5.  İçinde **özellikleri** penceresinde metin kutusunu kullanın **adı** ayar bir adı çalıştırılmasına vermek için özelliği çalışma ayarı amacını açıklar (örneğin, **ayarı çalıştırın: Beş dakika çalıştırma**).
 
 6.  Kullanım **özellikleri** çalıştırma ayarlarını değiştirmek için penceresi. Örneğin, çalışma süresini **00:05:00** testiniz için beş dakika çalıştırılacak.
 
     > [!NOTE]
     > Çalıştırma ayarları özellikleri ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).
 
-     Eklenen çalıştırın ayarını etkin olarak kullanmak istediğiniz artık belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: çalışma ayarları yük testi için etkin seçmek](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Eklenen çalıştırın ayarını etkin olarak kullanmak istediğiniz artık belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Etkin çalışma ayarı için bir yük testi seçin](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -15,13 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837179"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Kodlanmış web performans testi oluşturma
 
@@ -86,17 +85,17 @@ Web performans testleri, web uygulamanızla göz atarak kaydedilir. Testler, bir
 
 ## <a name="qa"></a>SORU- CEVAP
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Aynı anda birden fazla test çalıştırabilir miyim?
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>S: Aynı anda birden fazla test çalıştırabilir miyim?
  **Y:** Evet, bağlam menüsü kullanma **Çözüm Gezgini**.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>S: veri kaynağı miyim kodlanmış test üretmeden önce veya sonra Ekle?
- **Y:** eklemek daha kolay bir [veri kaynağı](../test/add-a-data-source-to-a-web-performance-test.md) kodu otomatik olarak sizin için oluşturulacağından Kodlanmış testi oluşturmadan önce.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>S: Bir veri kaynağı miyim kodlanmış test üretmeden önce veya sonra eklemeniz gerekir?
+ **Y:** Eklemek daha kolay bir [veri kaynağı](../test/add-a-data-source-to-a-web-performance-test.md) kodu otomatik olarak sizin için oluşturulacağından Kodlanmış testi oluşturmadan önce.
 
  Bir veri kaynağı ile kodlanmış bir test çalıştırdığınızda, aşağıdaki hata iletisini görebilirsiniz:
 
- **Test çalıştırılamadı \<Test adı > aracıdaki \<bilgisayar adı >: nesne başvurusu bir nesnenin örneğine ayarlanmadı.**
+ **Test çalıştırılamadı \<Test adı > aracıdaki \<bilgisayar adı >: Nesne başvurusu bir nesnenin örneğine ayarlı değil.**
 
  Bu, karşılık gelen bir DataBindingAttribute olmadan test sınıfı için tanımlanan DataSourceAttribute öğesine sahip olduğundan ortaya çıkabilir. Bu hatayı gidermek için uygun bir DataBindingAttribute ekleyin, silin veya açıklama olarak kodun dışına.
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Q: doğrulama ve ayıklama kuralları miyim kodlanmış test üretmeden önce veya sonra ekleme?
- **Y:** Kodlanmış testi oluşturmadan önce doğrulama kuralları ve ayıklama kuralları eklemek kolaydır; ancak, kullanmanızı öneririz [kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) doğrulama amacıyla.
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>S: Ben bir kodlanmış test üretmeden önce veya sonra doğrulama ve ayıklama kuralları eklemeliyim?
+ **Y:** Kodlanmış testi oluşturmadan önce doğrulama kuralları ve ayıklama kuralları eklemek kolaydır; Ancak, kullanmanızı öneririz [kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) doğrulama amacıyla.

@@ -1,8 +1,6 @@
 ---
-title: 'DA0005: Sık sık kullanılan GC2 koleksiyonları | Microsoft Docs'
-ms.custom: ''
+title: 'DA0005: Sık kullanılan GC2 koleksiyonları | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0005
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e3038f873895e38cf162e67316bc08f2fc007b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41e6ed5396a58bb6f3c39f9addbcd36b8dfaa7e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948582"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Sık kullanılan GC2 koleksiyonları
 

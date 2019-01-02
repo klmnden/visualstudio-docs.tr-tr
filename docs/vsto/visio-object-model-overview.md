@@ -1,9 +1,6 @@
 ---
 title: Visio nesne modeline genel bakış
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848473"
 ---
 # <a name="visio-object-model-overview"></a>Visio nesne modeline genel bakış
   Office çözümleri geliştirmek için Microsoft Office Visio için Visio nesne modeli ile etkileşim kurabilir. Bu nesne modeli sınıfları ve arabirimleri Visio için birincil birlikte çalışma derlemesi olarak sağlanır ve tanımlanan oluşur `Microsoft.Office.Interop.Visio` ad alanı.  
@@ -83,5 +80,3 @@ ms.locfileid: "50671410"
  [Visio çözümleri](../vsto/visio-solutions.md)   
  [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md)   
  [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)  
-  
-  

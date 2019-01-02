@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924806"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 
@@ -79,7 +78,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 ## <a name="create-the-data-source"></a>Veri kaynağı oluşturma
 
-Bu adımı kullanarak Northwind veritabanına bir veri kaynağı oluşturur. **veri kaynağı Yapılandırma Sihirbazı**. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/installing-database-systems-tools-and-samples.md).
+Bu adımı kullanarak Northwind veritabanına bir veri kaynağı oluşturur. **veri kaynağı Yapılandırma Sihirbazı**. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Örnek veritabanlarını yüklemek](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Üzerinde **veri** menüsünde **veri kaynaklarını Göster**.
 
@@ -93,7 +92,7 @@ Bu adımı kullanarak Northwind veritabanına bir veri kaynağı oluşturur. **v
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         veya
+         -veya-
 
     -   Seçin **yeni bağlantı** açmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
 
@@ -154,7 +153,7 @@ Bu izlenecek yolda, verileri için `Customers` tablo bir **ayrıntıları** veri
 
 2. Veriler her tabloda bir veya daha fazla kayıt için birkaç değişiklik yapalım.
 
-3. Seçin **Kaydet** düğmesi.
+3. **Kaydet** düğmesini seçin.
 
 4. Değişiklikler kaydedildi doğrulamak için veritabanında değerleri kontrol edin.
 

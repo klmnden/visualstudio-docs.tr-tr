@@ -1,8 +1,6 @@
 ---
 title: ResolveComReference görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893347"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference görevi
 Liste bir veya daha fazla türdeki kitaplık adlarını alır veya *.tlb* dosyaları ve disk üzerindeki konumlara bu tür kitaplıklarını giderir.  
@@ -62,14 +60,14 @@ Liste bir veya daha fazla türdeki kitaplık adlarını alır veya *.tlb* dosyal
 |`VersionMajor`|Öğe meta verileri gerekir.<br /><br /> Tür kitaplığının ana sürümü. Bu öğe meta verileri belirtilmezse, görev başarısız olur.|  
 |`VersionMinor`|Öğe meta verileri gerekir.<br /><br /> Tür kitaplığının bir alt sürümü. Bu öğe meta verileri belirtilmezse, görev başarısız olur.|  
 |`LocaleIdentifier`|İsteğe bağlı öğe meta verileri.<br /><br /> Yerel ayar tanımlayıcı (veya LCID) tür kitaplığı için. Bu, bir kullanıcı, bölge veya uygulama tarafından tercih edilen İnsan dil tanımlayan bir 32-bit değeri olarak belirtilir. Bu öğe meta verileri belirtilmezse görev bir varsayılan yerel ayar tanımlayıcı "0" kullanır.|  
-|`WrapperTool`|İsteğe bağlı öğe meta verileri.<br /><br /> Bu tür kitaplığı için derleme sarmalayıcısı oluşturmak için kullanılan sarmalayıcı aracı belirtir. Bu öğe meta verileri belirtilmezse görev "tlbimp", varsayılan bir sarmalayıcı aracı kullanır. Typelibs'ın büyük/küçük harf duyarsız, kullanılabilir seçenekler şunlardır:<br /><br /> -   `Primary`: Bu sarmalayıcı aracı zaten oluşturulmuş birincil birlikte çalışma derlemesi için COM bileşeni kullanmak istediğinizde kullanın. Bu sarmalayıcı aracı kullandığınızda, görev başarısız olmasına neden olacağından bir sarmalayıcı çıktı dizini belirtmeyin.<br />-   `TLBImp`: Bir COM bileşeni birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.<br />-   `AXImp`: Bir ActiveX denetimi için birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.|  
+|`WrapperTool`|İsteğe bağlı öğe meta verileri.<br /><br /> Bu tür kitaplığı için derleme sarmalayıcısı oluşturmak için kullanılan sarmalayıcı aracı belirtir. Bu öğe meta verileri belirtilmezse görev "tlbimp", varsayılan bir sarmalayıcı aracı kullanır. Typelibs'ın büyük/küçük harf duyarsız, kullanılabilir seçenekler şunlardır:<br /><br /> -   `Primary`: Önceden oluşturulmuş birincil birlikte çalışma derlemesi için COM bileşeni kullanmak istediğinizde bu sarmalayıcı aracı kullanın. Bu sarmalayıcı aracı kullandığınızda, görev başarısız olmasına neden olacağından bir sarmalayıcı çıktı dizini belirtmeyin.<br />-   `TLBImp`: COM bileşeni için birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.<br />-   `AXImp`: Bir ActiveX denetimi için birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.|  
   
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles öğe meta verileri  
  Geçirilen öğeleri için öğe meta verileri kullanılabilir aşağıdaki tabloda açıklanmıştır `TypeLibFiles` parametresi.  
   
 |Meta Veriler|Açıklama|  
 |--------------|-----------------|  
-|`WrapperTool`|İsteğe bağlı öğe meta verileri.<br /><br /> Bu tür kitaplığı için derleme sarmalayıcısı oluşturmak için kullanılan sarmalayıcı aracı belirtir. Bu öğe meta verileri belirtilmezse görev "tlbimp", varsayılan bir sarmalayıcı aracı kullanır. Typelibs'ın büyük/küçük harf duyarsız, kullanılabilir seçenekler şunlardır:<br /><br /> -   `Primary`: Bu sarmalayıcı aracı zaten oluşturulmuş birincil birlikte çalışma derlemesi için COM bileşeni kullanmak istediğinizde kullanın. Bu sarmalayıcı aracı kullandığınızda, görev başarısız olmasına neden olacağından bir sarmalayıcı çıktı dizini belirtmeyin.<br />-   `TLBImp`: Bir COM bileşeni birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.<br />-   `AXImp`: Bir ActiveX denetimi için birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.|  
+|`WrapperTool`|İsteğe bağlı öğe meta verileri.<br /><br /> Bu tür kitaplığı için derleme sarmalayıcısı oluşturmak için kullanılan sarmalayıcı aracı belirtir. Bu öğe meta verileri belirtilmezse görev "tlbimp", varsayılan bir sarmalayıcı aracı kullanır. Typelibs'ın büyük/küçük harf duyarsız, kullanılabilir seçenekler şunlardır:<br /><br /> -   `Primary`: Önceden oluşturulmuş birincil birlikte çalışma derlemesi için COM bileşeni kullanmak istediğinizde bu sarmalayıcı aracı kullanın. Bu sarmalayıcı aracı kullandığınızda, görev başarısız olmasına neden olacağından bir sarmalayıcı çıktı dizini belirtmeyin.<br />-   `TLBImp`: COM bileşeni için birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.<br />-   `AXImp`: Bu sarmalayıcı aracı, bir ActiveX denetimi için birlikte çalışma derlemesi oluşturmak istediğinizde kullanın.|  
   
 > [!NOTE]
 >  Büyük bir tür kitaplığı görevi doğru dosyanın disk üzerinde çözümlenmesi olasılığını benzersiz şekilde tanımlamak için sağladığınız daha fazla bilgi.  

@@ -1,8 +1,6 @@
 ---
 title: ToggleHUD | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ce582ab49d4d079f01f7231f49aa761baa1069
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a4ee371f90636d98d5dd771cc508e58cd1d1a394
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907981"
 ---
 # <a name="togglehud"></a>ToggleHUD
-Grafik tanılama değiştirir *HUD* (Head yukarı görüntüle) kaplama açıp kapatma.  
+Grafik tanılama değiştirir *baş üstü* (baş yukarı Göster) kaplama veya kapat.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -27,6 +25,6 @@ void ToggleHUD();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Grafik tanılama HUD grafik tanılama altında çalışan uygulama sol üst köşesinde görüntülenir. Çalışma zamanı grafik bilgilerini yakalama ve çağrılarak eklenir iletileri ve uygulama hakkında bilgi görüntüler [AddMessage](addmessage.md) üye işlevi.  
+ Grafik tanılama baş üstü grafik tanılama altında çalışmakta olan uygulamayı sol üst köşesinde görüntülenir. Uygulama ve grafik bilgilerini yakalama ve çağırarak eklenen iletileri hakkında çalışma zamanı bilgilerini görüntüler [AddMessage](addmessage.md) üye işlevi.  
   
- HUD geçiş yapmak için etkin olarak grafik bilgilerini yakalama gerekmez — diğer bir deyişle, bir örneği üzerinden değiştirilebilir `VsgDbg` sınıfı, ancak [Init](init.md) üye işlevi ilk çağrılması gerekmez.
+ Baş üstü geçiş yapmak için grafik bilgilerini yakalama etkin gerekmez; diğer bir deyişle, bir örneği üzerinden değiştirilebilir `VsgDbg` sınıfı, ancak [Init](init.md) üye işlevi ilk kez çağrılması gerekmez.

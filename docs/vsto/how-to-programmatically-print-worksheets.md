@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma sayfalarını program aracılığıyla yazdırma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma sayfalarını program aracılığıyla yazdırma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c5061c7b83173088a4031455f27d1332219b6f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904558"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Nasıl yapılır: çalışma sayfalarını program aracılığıyla yazdırma
+# <a name="how-to-programmatically-print-worksheets"></a>Nasıl Yapılır: Çalışma sayfalarını program aracılığıyla yazdırma
   Çalışma kitabındaki yazdırabilir.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -67,9 +64,7 @@ ms.locfileid: "49876650"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
- [Nasıl yapılır: program aracılığıyla çalışma sayfaları Yazımı denetleme](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma sayfaları Yazımı denetleme](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
  [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

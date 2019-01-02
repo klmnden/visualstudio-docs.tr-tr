@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı Kabuk Özellikleri
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -12,31 +11,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880682"
 ---
 # <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk Özellikleri
 
-İş Akışı Tasarımcısı üç ana UI alandan oluşur: Tasarımcı yüzeyine, içerik haritası çubuğunun üstündeki ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğunun üst geçerli kök etkinlik öğelerinin listesini görüntülemek için kullanılır. Daha fazla bilgi için bkz: [nasıl yapılır: kullanım içerik haritası Gezinti](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekran Merkezi'nde iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme için düğmeler sayısını içerir.
+İş Akışı Tasarımcısı, üç temel kullanıcı Arabirimi alanları oluşur: tasarım yüzeyinde, içerik haritası çubuğu üstünde ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğu, geçerli bir kök etkinlik öncüleri listesini görüntülemek için kullanılır. Daha fazla bilgi için [nasıl yapılır: İçerik haritası gezintisini kullanma](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekranın merkezinde, iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme düğmelerini içerir.
 
 ## <a name="shell-features"></a>Kabuk özellikleri
- Kabuk düğmeleri yakınlaştırmak veya iş akışınızı dışında ekranınızın boyutu iş akışınıza içeriklerin sığması ve Göster veya gizle Genel İnceleme haritası için kullanabileceğiniz çubuğu sağ tarafta vardır. Ayrıca CTRL ++ ve CTRL + klavye kısayollarını kullanarak bir iş akışı dışında ya da yakınlaştırabilirsiniz-.
+ Kabuk düğmeleri yakınlaştırma veya uzaklaştırma iş akışınızı, iş akışınızın, ekran boyutuna içindekilere ve Göster veya gizle genel bakış haritasını için kullanabileceğiniz çubuğunun sağ tarafında vardır. İçine veya dışına CTRL ++ ve CTRL + klavye kısayollarını kullanarak iş akışı yakınlaştırma yapabilirsiniz-.
 
-## <a name="overview-map"></a>Genel İnceleme Haritası
- Genel İnceleme Haritası tüm alt ve tüm genişletilmiş bunların alt öğeleri de dahil olmak üzere geçerli içerik haritası kökündeki tüm etkinlik küçük bir sürümünü görüntüler. Bir Görünüm penceresi, bir dikdörtgen içinde Düzenleyicisi görüntülenmekte etkinlik kısmı vurgular turuncu bir kenarlık yoktur. Genel İnceleme Haritası etrafında dikdörtgen sürükleyerek, iş akışı Tasarımcısı'nı birlikte kayar ve düzenleyici görünümünü değiştirir.
+## <a name="overview-map"></a>Genel Bakış haritasını
+ Genel Bakış haritasını, tüm alt öğelerini ve tüm genişletilmiş bunların alt öğeleri dahil olmak üzere geçerli içerik haritası kökündeki tüm etkinlik küçük bir sürümünü görüntüler. Görünüm penceresi, şu anda Düzenleyicisi içinde görüntülenen bir etkinlik kısmını vurgular turuncu bir kenarlık ile bir dikdörtgen yoktur. Genel Bakış haritasını çevresinde bir dikdörtgen sürükleyerek iş akışı Tasarımcısı kaydırılır ve düzenleyici görünümünü değiştirir.
 
 > [!NOTE]
-> İş Akışı Tasarımcısı kullanıcı arabirimi sanallaştırılmış. Etkinlik tasarımcıları, yalnızca gerekli olduğunda işlenir. İş akışı bir kısmı hiçbir zaman Tasarımcı yüzeyine düzenlendi, söz konusu bölümü üzerinde genel bakış eşlemesi beyaz olarak görünür. Genel İnceleme Haritası tamamen kaydırma iş akışı çizer.
+> İş Akışı Tasarımcısı kullanıcı arabirimi sanallaştırılır. Etkinlik tasarımcıları, yalnızca gerekli olduğunda işlenir. İş akışının bir kısmını hiçbir zaman Tasarımcı yüzeyinde düzenlendi, söz konusu bölümü genel bakış harita üzerinde beyaz olarak görünür. Genel Bakış haritasını tamamen kaydırma iş akışı çizer.
 
-## <a name="copying-or-saving-workflows-as-images"></a>Kopyalama veya iş akışları görüntü olarak kaydetme
- İş akışları, bit eşlem biçiminde kopyaladığınız veya bitmap veya vektör biçiminde kaydedilmiş. Kopyalama veya görüntü kaydetme tüm alt öğelerini ve başka bir programa genişletilmiş kendi alt dahil olmak üzere geçerli içerik haritası kökündeki tüm etkinlik görünümünü dışa aktarmak için bir yol sağlar.
+## <a name="copying-or-saving-workflows-as-images"></a>Kopyalama veya görüntü olarak iş akışları kaydediliyor
+ İş akışları, bit eşlem biçiminde kopyalanamaz veya bit eşlem ya da vektör biçiminde kaydedilmiş. Kopyalama veya görüntü kaydetme kökünde tüm alt öğelerini ve tüm genişletilmiş alt öğelerini başka bir programa dahil olmak üzere geçerli içerik haritası, tüm etkinlik görünümünü dışarı aktarmak için bir yol sağlar.
 
- Resim olarak kopyalamak için herhangi bir yere Tasarımcısı seçin sağ tıklayın ve **kopya görüntü olarak**. Resim olarak kaydetmek için herhangi bir yere Tasarımcısı seçin sağ tıklayın ve **resmi olarak kaydetmek**. İş akışları, JPG, GIF, PNG ya da XPS biçiminde kaydedilebilir. Biçimi seçili **Kaydet** iletişim kutusunda **farklı türde Kaydet:** liste kutusu pencerenin altındaki aşağı açılır.
+ Görüntü olarak Kopyala için herhangi bir yere Tasarımcısı seçin sağ tıklayıp **görüntü olarak Kopyala**. Görüntü olarak kaydetmek için her yerde Tasarımcısı seçin sağ tıklayın ve **görüntüyü farklı Kaydet**. İş akışları, JPG, GIF, PNG ya da XPS biçiminde kaydedilebilir. Biçimi seçildiğinde **Kaydet** iletişim kutusunda **farklı kaydetme türü:** pencerenin alt kısmındaki liste kutusunda aşağı açılır.
 
 ## <a name="fonts-and-colors"></a>Yazı tipleri ve renkler
 
-Visual Studio içinde iş akışı Tasarımcısı'nda kullanılan yazı tiplerini ortamı yazı tipi tarafından denetlenir. İşletim sistemi tema için yüksek karşıtlık renk düzenini kullanıyorsanız, iş akışı Tasarımcısı'nda görüntülenen renklerini değiştirin. Visual Studio iş akışı Tasarımcısı'nda değişikliklerin etkili olması bir yazı tipi veya renk ayarlarını değiştirdikten sonra yeniden başlatmanız gerekir.
+Visual Studio içinde iş akışı Tasarımcısı'nda kullanılan yazı tiplerini ortam yazı tipi tarafından denetlenir. İşletim sistemi temanızı yüksek karşıtlık renk düzeni kullanıyorsanız, iş akışı Tasarımcısı'nda görüntülenen renklerini değiştirin. İş Akışı Tasarımcısı'nda değişiklikler etkili olmadan önce bir yazı tipi veya renk ayarları değiştirdikten sonra Visual Studio'yu yeniden başlatmanız gerekir.

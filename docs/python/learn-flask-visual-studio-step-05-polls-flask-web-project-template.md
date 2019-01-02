@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio projeleri, özellikle yoklamalar Flask Web projesi ve polls – Webový projekt Flask/Jade şablonları özelliklerinin bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5938bceeb3dc7393437f44102c21d1ef16c45b63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923802"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>5. adım: yoklamalar Flask Web projesi şablonunu kullanma
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>5. Adım: Polls – Flask Web projesi şablonunu kullanma
 
-**Önceki adımda: [tam Flask Web projesi şablonunu kullanma](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Önceki adım sayısı: [Tam bir Flask Web projesi şablonunu kullanma](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Visual Studio'nun "Flask Web projesi" şablonu anladım artık "Yoklamalar Flask Web üzerinde aynı kod tabanının yapılar projesi", üçüncü Flask şablonu bakabilirsiniz.
 
@@ -36,7 +35,7 @@ Bu adımda şunların nasıl yapılır:
 
 Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Jinja şablon oluşturma altyapısı için kullanır. "Windows Flask/Jade polls – Webový projekt" şablonu da sağlar. Ayrıntılar için bkz [adım 4 - Flask/Jade Web projesi şablonu](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>5-1. adım: Proje oluşturma
+## <a name="step-5-1-create-the-project"></a>5-1. adım: Projeyi oluşturma
 
 1. Visual Studio'da Git **Çözüm Gezgini**, sağ **LearningFlask** daha önce Bu öğretici ve seçme içinde oluşturulan çözüm **Ekle**  >   **Yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
@@ -76,7 +75,7 @@ Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Ji
 
 Önce belirtildiği gibi. neleri kadarını "Yoklamalar Flask Web projesi" şablonu (ve "Windows Flask/Jade polls – Webový projekt" şablonu) oluşturulmuş bir projeyi Visual Studio'daki diğer proje şablonları incelediniz, bilgi sahibi olmanız gerekir. Ek adımlar bu makalede daha önemli değişiklikler ve eklemeler, veri modelleri ve ek görünümler özetler.
 
-## <a name="step-5-2-understand-the-data-models"></a>5-2. adım: veri modelini anlama
+## <a name="step-5-2-understand-the-data-models"></a>5-2. adım: Veri modellerini anlama
 
 Uygulama için veri modellerini yoklama ve tanımlanan seçim adlı Python sınıflardır *modelleri /\_\_init\_\_.py*. Bir yoklama seçim örneklerinin bir koleksiyonunu temsil kullanılabilir yanıtları soru temsil eder. Bir yoklama sayısı (herhangi bir seçim için) oy ve görünümleri oluşturmak için kullanılan istatistiklerini hesaplamak için bir yöntem de tutar:
 
@@ -112,7 +111,7 @@ class Choice(object):
 
 Bu veri modelleri sonraki adımda açıklanan veri depolarını yedekleme farklı türleriyle çalışmak uygulamanın görünüm sağlayan genel özetlerdir.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>5-3. adım: yedekleme veri depoları anlama
+## <a name="step-5-3-understand-the-backing-data-stores"></a>5-3. adım: Yedekleme veri depoları anlama
 
 "Windows Flask polls – Webový projekt" şablonu ile oluşturulan uygulama, bellek, Azure tablo depolama veya Mongo DB veritabanına bir veri deposuna karşı çalıştırabilirsiniz.
 
@@ -234,11 +233,11 @@ def seed():
 
 Bu işlem tamamlandıktan sonra `redirect('/')` deyiminde `seed` yöntemi giriş sayfasına götürür. Çünkü `repository.get_polls` artık koşullu etiketleri bir veri nesnesi döndürür *templates\index.html* artık yoklamalar içeren bir tablo oluşturur.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Soru: Nasıl bir yeni yoklamalar uygulamaya ekliyor mu?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Soru: Nasıl bir uygulama için yeni yoklamalar katar?
 
 Yanıt: Proje şablonu aracılığıyla sağlanan uygulama ekleme veya düzenleme yoklamalar için bir özellik içermiyor. Değiştirebileceğiniz *models\samples.json* yeni başlatma verilerini oluşturmak için ancak bunun yapılması veri deposunu sıfırlama anlamına. Düzenleme özellikleri uygulamak için genişletmek gereken `Repository` sınıf arabirimi gerekli oluşturmak için yöntemleri ile `Choice` ve `Poll` örnekleri, bu yöntemleri kullanan ek sayfalarında sonra bir kullanıcı Arabirimi uygulayın.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4. adım: yoklama ayrıntıları ve sonuçları görünümleri anlayın
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4. adım: Yoklama sonuçları ve ayrıntı görünümleri anlayın
 
 Çoğu "Yoklamalar Flask Web projesi" ve "Windows Flask/Jade polls – Webový projekt" şablonları tarafından üretilen görünümlerini hakkında ve iletişim için görünümleri gibi sayfa, "Flask Web projesi" (veya "Webový projekt Flask/Jade") şablonu tarafından oluşturulan görünümler, çalıştığınız oldukça benzer ile Bu öğreticide daha önce. Önceki bölümde ayrıca başlatma düğmesini veya yoklamalar listesini göstermek için giriş sayfasına nasıl uygulandığını öğrendiniz.
 
@@ -348,7 +347,7 @@ def results(key):
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!Note]
-> Visual Studio çözümünüzü kaynak denetimine Bu öğretici boyunca yürüten, artık başka bir işleme yapmak için iyi bir zamandır. Çözümünüzü öğretici kaynak kodu github'da eşleşmelidir: [Microsoft/python-örnek-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Visual Studio çözümünüzü kaynak denetimine Bu öğretici boyunca yürüten, artık başka bir işleme yapmak için iyi bir zamandır. Çözümünüzü öğretici kaynak kodu github'da eşleşmesi gerekir: [Microsoft/python-örnek-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 Artık Visual Studio'da "Boş Flask Web projesi", "[/Jade] Flask Web projesi" ve "Windows Flask [/Jade] polls – Webový projekt" şablonları tamamen incelediniz. Flask kullanarak şablonları, görünümleri ve yönlendirme gibi tüm temellerini öğrendiğinize göre ve yedekleme veri deposu kullanmayı gördünüz. Artık bir web uygulaması tüm görünümleri ve gereksinim modelleri kendi kullanmaya başlamak mümkün olması gerekir.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla kitaplarındaki taşıma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Kitaplarındaki program aracılığıyla taşıma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5075008e3b6b2b6f9ae087c0cfe962f2a1191f52
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4df9f10872283cf8f8b38ba29a9ea140646aa16f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898940"
 ---
-# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Nasıl yapılır: program aracılığıyla kitaplarındaki taşıma
+# <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Nasıl Yapılır: Kitaplarındaki program aracılığıyla taşıma
   Program aracılığıyla çalışma kitabında çalışma diğer çalışma sayfalarına göre konumunu değiştirebilirsiniz. Excel, taşınan sayfanın için bir konum belirtmezseniz, içerdiği için yeni bir çalışma kitabı oluşturur.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,9 +41,7 @@ ms.locfileid: "35676687"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Nasıl yapılır: program aracılığıyla çalışma kitaplarından çalışma sayfaları silme](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma kitaplarından çalışma sayfaları silme](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

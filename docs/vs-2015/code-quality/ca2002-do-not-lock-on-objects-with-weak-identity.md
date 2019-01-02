@@ -1,12 +1,11 @@
 ---
-title: 'CA2002: zayıf kimliği olan nesneleri kilitlemez | Microsoft Docs'
+title: 'CA2002: Zayıf kimliği olan nesneleri kilitlemeyin | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8ddcd20275dc84cc1c575e00f539c2a436139c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4999ff475ffada76104c28f07d98ef410c4f0f9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901895"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Zayıf kimliği olan nesneleri kilitlemeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,6 +76,3 @@ ms.locfileid: "49907878"
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Threading.Monitor><xref:System.AppDomain>
  [lock deyimi](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock deyimi](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
-
-
-

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla Outlook e-posta öğelerinden ekleri kaydetme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Ekleri Outlook e-posta öğelerinden program aracılığıyla kaydetme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd564b71622ad5f9ee6500ddc3864bad0b21686b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ec543a23a68965c0fa629d7318f40e840fb81152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911240"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Nasıl yapılır: program aracılığıyla Outlook e-posta öğelerinden ekleri kaydetme
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Nasıl Yapılır: Ekleri Outlook e-posta öğelerinden program aracılığıyla kaydetme
   Bu örnek, posta gelen kutusunda alındığında e-posta eklerini belirli bir klasöre kaydeder.  
   
 > [!IMPORTANT]  
@@ -39,8 +36,6 @@ ms.locfileid: "35676923"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)   
- [Nasıl yapılır: program aracılığıyla klasörü ada göre alma](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Nasıl yapılır: bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
- [Nasıl yapılır: belirli klasör içinde program aracılığıyla arama yapma](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  
-  
-  
+ [Nasıl yapılır: Program aracılığıyla klasörü ada göre alma](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Nasıl yapılır: Bir e-posta iletisi alındığında program aracılığıyla işlem gerçekleştirme](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)   
+ [Nasıl yapılır: Belirli klasör içinde program aracılığıyla arama yapma](../vsto/how-to-programmatically-search-within-a-specific-folder.md)  

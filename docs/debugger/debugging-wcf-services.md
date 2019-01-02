@@ -1,8 +1,6 @@
 ---
 title: WCF hizmetlerinde hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,24 +16,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8efa769ab7e8fcf55e281f7c29f1f4e04b67f850
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f586cf8761d993d9478775e82ec02d8665bf09b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923922"
 ---
 # <a name="debugging-wcf-services"></a>WCF Hizmetlerinde Hata Ayıklama
 ## <a name="in-this-section"></a>Bu Bölümde  
- [WCE hata ayıklamasında sınırlamalar](../debugger/limitations-on-wcf-debugging.md)  
- WCF hata ayıklamayı kısıtlamaları açıklar.  
+ [WCE Hata Ayıklama Sınırlamaları](../debugger/limitations-on-wcf-debugging.md)  
+ WCE hata üzerindeki kısıtlamaları açıklar.  
   
  [Nasıl yapılır: WCF hizmetleri içine Adımlama](../debugger/how-to-step-into-wcf-services.md)  
  Bir WCF Hizmeti Adımlama için hata ayıklayıcı desteği açıklanmaktadır.  
   
- [Nasıl yapılır: kendini barındıran WCF hizmetinde hata ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
- Dış IIS çalıştıran bir WCF hizmetinde hata ayıklama açıklar veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geliştirme sunucusu.  
+ [Nasıl yapılır: Kendini barındıran WCF hizmetinde hata ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ Dış IIS çalıştıran bir WCF hizmetinde hata ayıklama işlemini açıklamaktadır veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geliştirme sunucusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama güvenliği](../debugger/debugger-security.md)   
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+ [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
+ [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78d62fd8627f9397f3d14668ffc963e10a28abd0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: abe021cd06f9263335519e3059c8fda727bf34bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896519"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Belirtilen öznitelik ile belirtilen programlama dilinde uygulanan sınıfları alır.  

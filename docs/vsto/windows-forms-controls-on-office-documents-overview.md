@@ -1,9 +1,6 @@
 ---
 title: Windows Forms denetimlerine Office belgeleri genel bakış
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902499"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms denetimlerine Office belgeleri genel bakış
   Windows Forms denetimlerini, kullanıcıların girin veya verileri işlemek için etkileşim kurabilir nesnelerdir. Microsoft Office Excel ve Microsoft Office Word için belge düzeyi projeleri, Windows Forms denetimleri belge veya çalışma kitabındaki projenizde tasarım zamanında ekleyebileceğiniz veya program aracılığıyla çalışma zamanında bu denetimler ekleyebilirsiniz. Program aracılığıyla bu denetimleri herhangi bir açık belge veya çalışma zamanında VSTO eklenti Excel veya Word için ekleyebilirsiniz.  
   
- Daha fazla bilgi için [nasıl yapılır: denetimleri Office belgelerine Windows Forms ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Daha fazla bilgi için [nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892787"
  Bazı durumlarda, kod yüklemez ve sadece bit eşlemi, kullanıcı çalışma kitabı Tasarım modunda açıldığında gibi görüntülenir. Ayrıca, kullanıcının sahip olmayan bir bilgisayarda çalışma kitabını açar, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] denetimleri yüklemek için özelleştirme çalışamaz ve bu nedenle yalnızca bit eşlem denetimin görünür olup yüklü. Her zaman, çalışma kitabını kaydetmeden ve kişisel bilgilerinizi yanlışlıkla olarak çıkmadığından emin olmak için başka bir kullanıcıya göndermeden önce çalışma kitaplarının denetimlerden kişisel bilgileri kaldırmanız gerekir.  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Excel çalışma sayfasındaki hücreyi boyuta denetim boyutu  
- Denetimin üst hücre boyutu değiştiğinde otomatik olarak yeniden boyutlandırılıp ayarlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
+ Denetimin üst hücre boyutu değiştiğinde otomatik olarak yeniden boyutlandırılıp ayarlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Tüm çalışma sayfalarını tarafından paylaşılan bileşenleri ekleme  
  Tüm çalışma sayfaları arasında gibi paylaşmak istediğiniz bileşenleri ekleyebileceğiniz bir <xref:System.Data.DataSet>, çalışma kitabı tasarımcısına çalışma sayfaları. Bileşen bileşen alanında görünür.  
@@ -156,14 +153,12 @@ ms.locfileid: "49892787"
  [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index)   
  [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Nasıl yapılır: çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Nasıl yapılır: yazdırırken çalışma sayfası denetimlerini gizleme](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [Nasıl yapılır: Yazdırırken çalışma sayfası denetimlerini gizleme](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [İzlenecek yol: CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini değiştirme](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
  [İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
- [İzlenecek yol: düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
- [İzlenecek yol: metin kutusunda düğme kullanarak bir belgede metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
+ [İzlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
+ [İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [İzlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştir](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
- [İzlenecek yol: radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleştir](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  
+ [İzlenecek yol: Radyo düğmelerini kullanarak belgede grafik güncelleştir](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
+ [İzlenecek yol: Bir radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleştir](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  

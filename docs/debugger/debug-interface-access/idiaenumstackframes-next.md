@@ -1,8 +1,6 @@
 ---
 title: Idiaenumstackframes::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42d096ce41c5ff9f254e7f44d595159130e43548
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 781b86d405057ddfe70bcde9199ec4094d896288
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828205"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 Yığın çerçeve öğelerin belirtilen bir sayı sabit listesi dizisinden alır.  
@@ -27,7 +25,7 @@ Yığın çerçeve öğelerin belirtilen bir sayı sabit listesi dizisinden alı
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT Next(   
+HRESULT Next(   
    ULONG             celt,  
    IDiaStackFrame**  rgelt,  
    ULONG*            pceltFetched  

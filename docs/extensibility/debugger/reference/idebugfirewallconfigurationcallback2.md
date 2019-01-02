@@ -1,9 +1,6 @@
 ---
 title: IDebugFirewallConfigurationCallback2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFirewallConfigurationCallback2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1981d16141ed44ccbac0d2e05ae058451f0dff5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0348f1414224a3b9d092b5d7c1623de9720c9e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960832"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
-Sorulacak DCOM kullanan bir hata ayıklama altyapısı sağlar [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] güvenlik duvarı uzaktan hata ayıklama engellemez emin olmak için kullanıcı Arabirimi.  
+Sorun için DCOM kullanan bir hata ayıklama altyapısı sağlar [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] güvenlik duvarı uzaktan hata ayıklama engellemez emin olmak için kullanıcı Arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,11 +34,11 @@ IDebugFirewallConfigurationCallback2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|İstekler güvenlik duvarı uzaktan hata ayıklama engellemeniz değil.|  
+|[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|Güvenlik Duvarı uzaktan hata ayıklama engellemediğinizden emin istekler.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Msdbg.h  
+ Üst bilgi: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

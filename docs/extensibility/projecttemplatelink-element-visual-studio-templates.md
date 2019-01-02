@@ -1,6 +1,5 @@
 ---
 title: ProjectTemplateLink öğesi (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885987"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink öğesi (Visual Studio şablonları)
 Yolunu belirtir *.vstemplate* tek bir projede birden fazla projeli bir şablon dosyası.  

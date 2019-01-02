@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f96451551cc15df4ae9357c721276383d1060a47
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 217f67916808ac8b839cc4f2e522233c7b6a58d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899593"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +139,7 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
  Kendiniz bir gruba el ile eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın.
 
 ##  <a name="BootableVHD"></a> Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor
- Önyüklenebilir bir VHD'den Windows çalışırken bir uygulamayı Android için Visual Studio öykünücü üzerinde çalıştırmayı denerseniz öykünücü genellikle başlaması birkaç dakika sürer veya başlatılamıyor. Öykünücü başlatmak başarısız olduğunda, aşağıdaki iletiyi görürsünüz: uygulama dağıtımı başarısız oldu. Lütfen yeniden deneyin.
+ Önyüklenebilir bir VHD'den Windows çalışırken bir uygulamayı Android için Visual Studio öykünücü üzerinde çalıştırmayı denerseniz öykünücü genellikle başlaması birkaç dakika sürer veya başlatılamıyor. Öykünücü başlatmak başarısız olduğunda, aşağıdaki iletiyi görürsünüz: Uygulama dağıtımı başarısız oldu. Lütfen yeniden deneyin.
 
  Bu yapılandırma desteklenmez. İlgili sorunlar hakkında daha fazla bilgi için bkz: [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 

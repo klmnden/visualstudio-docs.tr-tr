@@ -1,13 +1,8 @@
 ---
-title: 'İzlenecek yol: temel bir Site tanımı projesi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Temel bir Site tanımı projesi oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958897"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>İzlenecek yol: temel bir site tanımı projesi oluşturma
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>İzlenecek yol: Temel bir site tanımı projesi oluşturma
   Bu izlenecek yol, üzerinde bazı denetimler içeren bir görsel Web bölümü içeren bir temel site tanımını nasıl oluşturulacağını gösterir. Açıklık için oluşturduğunuz görsel Web Bölümü, yalnızca birkaç denetimlerine sahiptir. Ancak, daha fazla işlevsellik içeren daha karmaşık SharePoint site tanımları oluşturabilirsiniz.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
@@ -54,7 +49,7 @@ ms.locfileid: "49844427"
   
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**. IDE'nizi menü çubuğundaki Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa seçin **dosya** > **yeni proje**.  
   
-    **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni Proje** iletişim kutusu görünür.  
   
 2. Genişletin **Visual C#**  düğümü veya **Visual Basic** düğümünü genişletin **SharePoint** düğümünü seçip **2010** düğümü.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49844427"
   
 2.  Seçin **SiteDefinition1** proje düğümünü ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.  
   
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.  
+     **Yeni Öğe Ekle** iletişim kutusu görünür.  
   
 3.  Genişletin **Visual C#**  düğümü veya **Visual Basic** düğümünü genişletin **SharePoint** düğümünü seçip **2010** düğümü.  
   
@@ -187,6 +182,5 @@ ms.locfileid: "49844427"
      İşlecin sağ tarafındaki düğmenin etiket metni görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Nasıl yapılır: Olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,8 +1,6 @@
 ---
 title: ClickOnce uygulamalarını yerelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 784d4b6df24a5f4327a87c638b9624a0e4cec46c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893603"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce uygulamalarını yerelleştirme
 Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme işlemidir. Bu işlem, kullanıcı arabirimi (UI) metni doğru tarih ve para birimi biçimlendirme, bir form üzerinde denetimleri boyutunu ayarlama kullanarak bir bölgeye özgü dile çevirme içerir ve gerekirse yansıtma denetimleri sağdan sola.  
@@ -67,9 +65,9 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
 ## <a name="download-satellite-assemblies-on-demand"></a>Uydu derlemelerini indirme  
  Tüm uydu derlemeleri tek bir dağıtımda karar verirseniz, bu sayede derlemeleri isteğe bağlı olarak işaretlemek isteğe bağlı indirme, kullanarak performansı artırabilirsiniz. Uygulama yüklendiğinde veya işaretlenen derlemeler yüklenmeyecektir. Çağırarak gerektiğinde derlemeleri yükleyebilirsiniz <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> metodunda <xref:System.Deployment.Application.ApplicationDeployment> sınıfı.  
   
- Uydu derlemelerini indirme biraz isteğe bağlı derlemeleri diğer türleri farklıdır. Bu senaryoyu kullanarak etkinleştirme hakkında daha fazla bilgi ve kod örnekleri için [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] araçlarını [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], bakın [izlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı uydu derlemelerini indirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ Uydu derlemelerini indirme biraz isteğe bağlı derlemeleri diğer türleri farklıdır. Bu senaryoyu kullanarak etkinleştirme hakkında daha fazla bilgi ve kod örnekleri için [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] araçlarını [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], bkz: [izlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Bu senaryoda da etkinleştirebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Ayrıca bkz: [izlenecek yol: ClickOnce dağıtım API'sini kullanarak tasarımcı ile isteğe bağlı uydu derlemelerini indirme](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) veya [izlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı uydu derlemelerini indirme Tasarımcı kullanarak](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
+ Bu senaryoda da etkinleştirebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Ayrıca bkz: [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) veya [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Dağıtımdan önce yerelleştirilmiş ClickOnce uygulamalarını test etme  
  Bir Windows Forms uygulaması yalnızca şu durumlarda için bir uydu derlemesine kullanılacak <xref:System.Threading.Thread.CurrentUICulture%2A> özelliği uygulamanın ana iş parçacığı için uydu bütünleştirilmiş kodun kültüre ayarlayın. Yerel bir pazarda müşteri büyük olasılıkla zaten Windows yerelleştirilmiş bir sürümünü kültüre uygun varsayılan olarak ayarlanmış olan çalıştırırsınız.  

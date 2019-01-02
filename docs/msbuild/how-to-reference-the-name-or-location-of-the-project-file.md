@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Proje dosyasının konumunu ve adını başvurusu | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Proje dosyasının konumunu ve adını başvurusu | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906039"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Nasıl yapılır: Proje dosyasının konumunu ve adını başvurusu
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Nasıl Yapılır: Adı veya proje dosyasının konumuna başvurma
 Kendi özellik oluşturmak zorunda kalmadan proje dosyasının kendisini adına veya konumuna projenin kullanabilirsiniz. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosya adına başvuran ayrılmış özellikleri ve proje ile ilgili diğer özellikleri sağlar. Ayrılmış özellikler hakkında daha fazla bilgi için bkz. [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="use-the-project-properties"></a>Proje özelliklerini kullanma

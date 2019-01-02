@@ -1,9 +1,6 @@
 ---
 title: Office çözümlerinde geç bağlama
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,59 +15,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847262"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office çözümlerinde geç bağlama
-  Nesne modelleri Office uygulamalarının bazı türleri geç bağlama özellikleriyle kullanılabilir olan işlevsellik sağlar. Örneğin, bazı yöntemler ve özellikler farklı türde nesne Office uygulama bağlı olarak döndürebilir ve bazı türleri farklı yöntemler ve farklı bağlamdan özellikler getirebilir.  
+  Nesne modellerinde Office uygulamalarının bazı türleri geç bağlama özellikleri kullanılabilir olan işlevsellik sağlar. Örneğin, yöntemler ve özellikler farklı türde Office uygulamasının bağlama nesneleri döndürebilir ve bazı türleri farklı yöntemler veya farklı bağlamlardaki özelliklerinde kullanıma sunabilirsiniz.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Visual Basic projeleri **Option Strict** kapalı ve Visual C# projeleri hedefleyen [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] doğrudan bu geç bağlama özellikleri uygulamadığınız türleriyle çalışabilirsiniz.  
+ Visual Basic projeleri **Option Strict** kapalı ve görsel C# hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] doğrudan, bu geç bağlama özellikleri uygulayan türleri ile çalışabilir.  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Örtük ve açık atama nesnesinin dönüş değerleri  
- Birçok yöntem ve Microsoft Office birincil birlikte çalışma derlemeleri (PIA) dönüş özelliklerinde <xref:System.Object> birkaç farklı türde nesne döndürebildiğinden değerleri. Örneğin, <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> özelliği döndürür bir <xref:System.Object> dönüş değeri olabilir çünkü bir <xref:Microsoft.Office.Interop.Excel.Worksheet> veya <xref:Microsoft.Office.Interop.Excel.Chart> etkin sayfanın ne olduğuna bağlı olarak nesne.  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Örtük ve açık atama nesnenin dönüş değerleri  
+ Birçok yöntem ve özellikleri Microsoft Office birincil birlikte çalışma derlemeleri (PIA) iade <xref:System.Object> birkaç farklı türde nesne döndürdüğünden, değerleri. Örneğin, <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> özelliği döndürür bir <xref:System.Object> dönüş değeri bu nedenle bir <xref:Microsoft.Office.Interop.Excel.Worksheet> veya <xref:Microsoft.Office.Interop.Excel.Chart> active sayfanın ne olduğuna bağlı olarak nesnesi.  
   
- Bir yöntemi veya özelliği döndüğünde bir <xref:System.Object>, açıkça (Visual Basic'te) nesne Visual Basic projeleri içinde doğru türüne dönüştürmeniz gerekir nerede **Option Strict** açıktır. Açıkça cast gerekmez <xref:System.Object> Visual Basic projelerinde dönüş değerleri nerede **Option Strict** kapalıdır.  
+ Bir yöntem veya özellik döndürdüğünde bir <xref:System.Object>, açıkça (Visual Basic'te) nesne Visual Basic projelerinde doğru türe dönüştürmeniz gerekir burada **Option Strict** açıktır. Açık tür dönüştürme gerekmez <xref:System.Object> dönüş değerleri Visual Basic projelerinde burada **Option Strict** kapalıdır.  
   
- Çoğu durumda, başvuru belgeleri olası dönüş değerini döndüren bir üye türlerini için listeler bir <xref:System.Object>. Dönüştürme ya da nesne atama Kod Düzenleyicisi'nde nesnesi için IntelliSense sağlar.  
+ Çoğu durumda, başvuru belgeleri döndüren bir üye için dönüş değeri olası türleri listeler bir <xref:System.Object>. Dönüştürme ya da nesneye Kod Düzenleyicisi'nde nesne için IntelliSense sağlar.  
   
- Visual Basic'te dönüştürme hakkında daha fazla bilgi için bkz: [dolaylı ve açık dönüştürmeler &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) ve [CType işlevi &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Visual Basic dönüştürme hakkında daha fazla bilgi için bkz. [örtük ve açık dönüştürmeler &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) ve [CType işlevi &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Örnekler  
- Aşağıdaki kod örneği, bir Visual Basic projesinde bir nesne belirli bir türüne yayınlanamıyor gösterilmiştir nerede **Option Strict** açıktır. Bu proje türünde, açıkça atamalısınız <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> özelliğine bir <xref:Microsoft.Office.Interop.Excel.Range>. Bu örnek bir belge düzeyi Excel projesi adlı bir çalışma sayfası sınıfıyla birlikte gerektirir `Sheet1`.  
+ Aşağıdaki kod örneği bir Visual Basic projesinde bir nesne için belirli bir tür dönüştürme gösterilmektedir burada **Option Strict** açıktır. İçinde bu tür bir proje açıkça dönüştürmelisiniz <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> özelliğini bir <xref:Microsoft.Office.Interop.Excel.Range>. Bu örnek adlı bir çalışma sayfası sınıfı ile bir belge düzeyi Excel proje gerektirir `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]  
   
- Aşağıdaki kod örneği, bir Visual Basic projesinde bir nesne belirli bir türüne örtük olarak yayınlanamıyor gösterilmiştir nerede **Option Strict** devre dışı veya hedefleyen Visual C# projesinde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Projeleri, bu tür <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> özelliği örtük olarak atandığında bir <xref:Microsoft.Office.Interop.Excel.Range>. Bu örnek bir belge düzeyi Excel projesi adlı bir çalışma sayfası sınıfıyla birlikte gerektirir `Sheet1`.  
+ Aşağıdaki kod örneği, bir nesne belirli bir türüne örtük olarak bir Visual Basic projesinde dönüştürülecek gösterilmiştir burada **Option Strict** kapalı veya bir görselde C# hedefleyen proje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Projeleri, bu tür <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> özelliği türünden örtük olarak bir <xref:Microsoft.Office.Interop.Excel.Range>. Bu örnek adlı bir çalışma sayfası sınıfı ile bir belge düzeyi Excel proje gerektirir `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="access-members-that-are-available-only-through-late-binding"></a>Sadece geç bağlama aracılığıyla kullanılabilir olan erişim üyeleri  
- Bazı özellikleri ve yöntemleri Office PIA sadece geç bağlama aracılığıyla kullanılabilir. Visual Basic projeleri **Option Strict** kapalı veya Visual C# projeleri hedefleyen olan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], geç bağlama üyelere erişmek için bu dillerde geç bağlama özelliklerini kullanabilirsiniz. Visual Basic projeleri **Option Strict** olduğundan, bu üyeler erişmek için yansıma kullanmalısınız.  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>Yalnızca geç bağlama aracılığıyla kullanılabilir olan erişim üyeleri  
+ Bazı özellikler ve Office PIA'ların yöntemleri geç bağlama aracılığıyla kullanılabilir. Visual Basic projelerinde **Option Strict** kapalı veya görselde C# hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], geç bağlanan üyelere erişim için bu dillerde geç bağlama özellikleri kullanabilirsiniz. Visual Basic projelerinde **Option Strict** açıktır, bu üyelere erişim için yansıma kullanmalısınız.  
   
 ### <a name="examples"></a>Örnekler  
- Aşağıdaki kod örneğinde, Visual Basic projesinde geç bağlama üyelere erişmek gösterilmiştir nerede **Option Strict** devre dışı veya hedefleyen Visual C# projesinde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Bu örnek geç bağlama erişen **adı** özelliği **Dosya Aç** Word iletişim kutusu. Bu örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` Word projesindeki sınıfı.  
+ Aşağıdaki kod örneği, Visual Basic projesinde geç bağlama üyelerine nasıl erişileceğini gösteren burada **Option Strict** kapalı veya bir görselde C# hedefleyen proje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Bu örnekte, geç bağlanan erişen **adı** özelliği **Dosya Aç** Word'de bir iletişim kutusu. Bu örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` Word projesindeki sınıf.  
   
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- Aşağıdaki kod örneğinde yansıma Visual Basic projesinde aynı görevi gerçekleştirmek için nasıl kullanılacağı gösterilmektedir nerede **Option Strict** açıktır.  
+ Aşağıdaki kod örneği, Visual Basic projesinde aynı görevi başarmak için yansıma kullanmak gösterilmiştir burada **Option Strict** açıktır.  
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)   
- [Kullanım türü dinamik &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Tür dinamiği kullanma &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Yansıma (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Yansıma (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md)  
-  
-  
+ [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)  

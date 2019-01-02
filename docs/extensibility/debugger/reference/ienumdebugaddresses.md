@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugAddresses | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugAddresses
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfed705253a03ec550e7533f7e2ab323b7ead62a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0958ddb9aca23da5f73bd2686f86d8a0ccd826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920491"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
-Bu arabirimi uygulayan nesneler koleksiyonunu temsil eder [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.  
+Bu arabirimi uygulayan nesnelerin bir koleksiyonunu temsil eder [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,29 +29,29 @@ IEnumDebugAdresses : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bu arabirimi uygulayan nesneler sağlamak için simge sağlayıcı tarafından uygulanan [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi. Bu standart COM numaralandırması nedeniyle olmadığını unutmayın [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) yöntemi.  
+ Bu arabirimi uygulayan nesne kümeleri sağlamak için Sembol sağlayıcısı tarafından uygulanan [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi. Bu varlığı nedeniyle standart bir COM numaralandırma olmadığını unutmayın [GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md) yöntemi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  Bu arabirim tarafından döndürülen [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md) ve [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md).  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Bu arabirim, aşağıdaki yöntemlerden uygular.  
+ Bu arabirim, aşağıdaki yöntemleri uygular.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Bir sonraki kümesini alır [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) nesnelerinin numaralandırması.|  
-|[Atla](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Belirtilen sayıda girişleri atlar.|  
-|[Sıfırla](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Numaralandırma ilk girişe sıfırlar.|  
-|[kopya](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Geçerli numaralandırmada bir kopyasını alır.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Listedeki girişleri sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Sonraki alır [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) nesnelerden sabit listesi.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Belirtilen bir girdi sayısı atlar.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|Numaralandırma ilk girişe sıfırlar.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Geçerli sabit bir kopyasını alır.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Sabit listesi içerisindeki giriş sayısını alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim, genellikle ifade değerlendiricisi vermek için uygun adresi belirlemenize yardımcı olması için hata ayıklama altyapısı tarafından kullanılır.  
+ Bu arabirim, genellikle için ifade değerlendirici vermek için uygun adresi belirlemeye yardımcı olması için hata ayıklama altyapısı tarafından kullanılır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: sh.h  
+ Üstbilgi: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

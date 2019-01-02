@@ -1,9 +1,6 @@
 ---
 title: SharePoint uygulamaları için performans profili oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Profiling.SilverlightWebPartOnly
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b605cfce7d7f804715276f0bb395b007900921c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 8578a27dc6daceda25667142a3cdccae50a42552
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905695"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint uygulamaları için performans profili
 

@@ -1,8 +1,6 @@
 ---
-title: Kesme noktaları iletişim kutusu seç | Microsoft Docs
-ms.custom: ''
+title: Kesme noktaları iletişim kutusu seçin | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.breakpt.choose
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ca31b8fa1536e23cce691629ddf5015721d9c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898797"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Kesme Noktaları Seç İletişim Kutusu
-**Kesme noktaları Seç** iletişim kutusu açılır belirsiz girişinde bir kesme noktası kümeden çalıştığınızda **yeni kesme noktası** iletişim kutusu. Belirsiz giriş yaygın bir örneği bir aşırı yüklenmiş işlevi adı değil.  
+**Kesme noktalarını Seç** iletişim kutusu açılır, belirsiz girişten bir kesme noktası ayarlamak çalıştığınızda **yeni kesme noktası** iletişim kutusu. Belirsiz girişe ortak bir örnek aşırı yüklenmiş işlev adıdır.  
   
- **Kesme noktaları**  
- Ayarlanabilecek listeleri olası kesme noktaları belirsiz giriş, temel. Ayarlanacak bir veya daha fazla kesme noktaları seçebilirsiniz.  
+ **Kesme Noktaları**  
+ Ayarlanabilen ayarlanabilen olası kesme noktalarını belirsiz girişlere dayanılarak. Ayarlanacak bir veya daha fazla kesme noktası seçebilirsiniz.  
   
- **Tüm**  
+ **Tümü**  
  Listelenen tüm kesme noktalarını seçer **kesme noktaları** kutusu.  
   
- **Yok**  
+ **Yok.**  
  Listelenen tüm kesme noktalarını temizler **kesme noktaları** kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kesme noktalarını kullanma](../debugger/using-breakpoints.md)
+ [Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)

@@ -3,7 +3,6 @@ title: R araçları seçenekleri
 description: Visual Studio'da R dili ve ilişkili özelliklerin seçenekleri referansı.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37250962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900567"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio seçenekleri için R araçları
 
@@ -30,10 +29,10 @@ Ayarları aracılığıyla erişilir **R Araçları** > **seçenekleri** menüs�
 
 Seçenekler ve ayarlar R belirli aşağıdaki yöntemleri kullanılarak erişilir. Seçmelisiniz **tüm ayarları göster** kutusunun alt kısmındaki **seçenekleri** iletişim kutusu tüm bu bölümleri görünür.
 
-- Kod biçimlendirme seçenekleri (bkz [Düzenleyici Seçenekleri](editing-r-code-in-visual-studio.md#editor-options): **Araçları** > **seçenekleri** menüsünde, ardından **metin düzenleyici**  >  **R** > **biçimlendirme**
-- Lint seçenekleri (bkz [Linting](linting-r-code.md)): **Araçları** > **seçenekleri** menüsü, ardından **metin düzenleyici**  >   **R** > **Lint**
-- Gelişmiş Düzenleyici Seçenekleri ([bu makalede açıklanan](#text-editor--r--advanced-options)): **Araçları** > **seçenekleri** menüsü, ardından **metin düzenleyici**  >  **R** > **Gelişmiş**
-- Davranış seçenekleri ([bu makalede açıklanan](#r-tools--advanced-options)): **R Araçları** > **seçenekleri** menüsünden veya **Araçları**  >  **Seçenekleri**, ardından kaydırarak **R Araçları**.
+- Kod biçimlendirme seçenekleri (bkz [Düzenleyici Seçenekleri](editing-r-code-in-visual-studio.md#editor-options): **Araçlar** > **seçenekleri** menüsü, ardından **metin düzenleyici** > **R** > **biçimlendirme**
+- Lint seçenekleri (bkz [Linting](linting-r-code.md)): **Araçlar** > **seçenekleri** menüsü, ardından **metin düzenleyici** > **R** > **Lint**
+- Gelişmiş Düzenleyici Seçenekleri ([bu makalede açıklanan](#text-editor--r--advanced-options)): **Araçlar** > **seçenekleri** menüsü, ardından **metin düzenleyici** > **R** > **Gelişmiş**
+- Davranış seçenekleri ([bu makalede açıklanan](#r-tools--advanced-options)): **R Araçları** > **seçenekleri** menüsünden veya **Araçları** > **seçenekleri**, ardından kaydırarak **R Araçları**.
 
 **R Araçları** > **veri bilimi ayarları** komutu Visual Studio'da genel farklı ayar da etkiler. Bu komut, sonraki bölümde açıklanmıştır.
 

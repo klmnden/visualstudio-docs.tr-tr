@@ -1,8 +1,6 @@
 ---
 title: Yürütme görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959254"
 ---
 # <a name="exec-task"></a>Yürütme görevi
 Belirtilen program veya komut belirtilen bağımsız değişkenler kullanılarak çalıştırır.  

@@ -2,7 +2,6 @@
 title: 'CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ICollectionImplementationsHaveStronglyTypedMembers
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcf5218f41a11d50b6cc3f36767190cce5deab1b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9a1695ee55c8142a170fae41a1143118e0ba5a53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949082"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır
 
@@ -54,9 +53,9 @@ ms.locfileid: "45545534"
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1038: Numaralandırıcıların türü kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038: Numaralandırıcılar kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039: Listelerin türü kesin olarak belirlenmiştir](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: Listeler kesin türdedir](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

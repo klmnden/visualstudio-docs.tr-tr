@@ -1,16 +1,11 @@
 ---
-title: 'Nasıl yapılır: özellik bağımlılıkları ekleme ve kaldırma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Özellik bağımlılıkları ekleme ve kaldırma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,57 +15,56 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924247"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>Nasıl yapılır: özellik bağımlılıkları ekleyip
-  SharePoint özelliği işlev veya veri için diğer özellikleri bağlı. Bu durumlarda, bu diğer özellikleri, özellik için bağımlılıklar olarak işaretleyebilirsiniz. Bu şekilde, özellik etkinleştirilmeden önce bağımlı özellikleri etkinleştirilir SharePoint sunucusu sağlar.  
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Nasıl Yapılır: Ekleme ve kaldırma özellik bağımlılıkları
+  SharePoint özelliğinizi işlevi veya verileri diğer özelliklere bağlı olabilir. Bu durumlarda, bu diğer özellikleri özelliğiniz için bağımlılıklar olarak işaretleyebilirsiniz. Bu şekilde, özellik etkinleştirilmeden önce bağımlı özellikleri etkinleştirilir SharePoint sunucusu sağlar.  
   
-## <a name="add-dependencies"></a>Bağımlılıkları ekleyin.  
- Bağımlılıklar olarak çözümünüzde diğer özellikleri ekleyebilirsiniz. Bu şekilde, gerekli özellikleri yüklü ve, özellik yüklenmeden önce etkinleştirilmiş olduğundan emin olabilirsiniz.  
+## <a name="add-dependencies"></a>Bağımlılıkları ekleyin  
+ Bağımlılıklar olarak çözümünüzdeki diğer özellikler ekleyebilirsiniz. Bu şekilde, gerekli özellikleri yüklü ve özelliğinizi yüklenmeden önce etkinleştirilmiş olduğundan emin yapabilirsiniz.  
   
-#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Bir bağımlılık çözümünün bir özelliği eklemek için
+#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Bir bağımlılık çözümdeki bir özellik eklemek için
   
-1.  Özellik Tasarımcısı'nı açın, **özellik etkinleştirme bağımlılıkları** düğümünü ve ardından **Ekle** düğmesi.  
+1.  Özellik Tasarımcısı'nı açın, **özellik etkinleştirme bağımlılıkları** düğümünü seçip **Ekle** düğmesi.  
   
-2.  İçinde **özelliğini etkinleştirme bağımlılıklar ekleme** iletişim kutusunda, seçin **bir bağımlılık özelliklerini çözümünde eklemek** seçenek düğmesi, bir bağımlılık olarak eklemek istediğiniz özelliğin başlığını seçin ve ardından seçin **Ekle** düğmesi.  
+2.  İçinde **özellik etkinleştirme bağımlılıkları Ekle** iletişim kutusunda **çözümdeki özelliklere bir bağımlılık ekleme** seçenek düğmesini, bir bağımlılık olarak eklemek istediğiniz özelliğin başlığını seçin ve ardından seçin **Ekle** düğmesi.  
   
-     Birden fazla özellik seçerken birden çok başlığını seçerek ekleyebileceğiniz **Ctrl** anahtarı.  
+     Seçerken birden çok başlığını seçerek birden fazla özellik ekleyebilirsiniz **Ctrl** anahtarı.  
   
-## <a name="addi-custom-dependencies"></a>Addi özel bağımlılıkları  
- Bağımlılık olarak bir SharePoint sunucusu üzerine zaten dağıtılmış olan özellikleri ekleyebilirsiniz. Bu şekilde, SharePoint etkinleştirme işlemi, özellik yüklenmeden önce tüm bağımlı özellikler etkinleştirildiğinden emin olmak için denetler.  
+## <a name="addi-custom-dependencies"></a>Addi özel bağımlılıklar  
+ Bir bağımlılık olarak bir SharePoint sunucu üzerinde zaten dağıtılmış olan özellikleri ekleyebilirsiniz. Bu şekilde özelliğinizi yüklenmeden önce tüm bağımlı özellikler etkinleştirildiğinden emin olmak için SharePoint etkinleştirme işlemini denetler.  
   
 #### <a name="to-add-a-dependency-by-the-feature-id"></a>Özellik kimliği ile bir bağımlılık eklemek için
   
-1.  Özellik Tasarımcısı'nı açın, **özellik etkinleştirme bağımlılıkları** düğümünü ve ardından **Ekle** düğmesi.  
+1.  Özellik Tasarımcısı'nı açın, **özellik etkinleştirme bağımlılıkları** düğümünü seçip **Ekle** düğmesi.  
   
-2.  İçinde **özelliğini etkinleştirme bağımlılıklar ekleme** iletişim kutusunda, seçin **özel bir bağımlılık ekleme** seçenek düğmesi.  
+2.  İçinde **özellik etkinleştirme bağımlılıkları Ekle** iletişim kutusunda **özel bağımlılık Ekle** seçenek düğmesini.  
   
 3.  İçinde **özellik kimliği** metin kutusunda, bir etkinleştirme bağımlılık olarak işaretleyin ve ardından istediğiniz özellik için GUID girin **Ekle** düğmesi.  
   
-## <a name="edit-custom-dependencies"></a>Özel bağımlılıkları Düzenle  
- Daha önce eklediğiniz özel bağımlılıkları düzenleyebilirsiniz. Ancak, yalnızca, çözüm can kaldırılır, bağımlı özellikler düzenlenemez.  
+## <a name="edit-custom-dependencies"></a>Özel bağımlılıklar Düzenle  
+ Daha önce eklemiş olduğunuz özel bağımlılıklar düzenleyebilirsiniz. Ancak, yalnızca, çözüm can kaldırılır, bağımlı özellik düzenlenemez.  
   
-#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Bir bağımlılığı çözümünün bir özelliği değiştirmek için
+#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Bir çözümdeki bir özellik bağımlılığı değiştirmek için
   
-1.  Özellik Tasarımcısı'nı açın ve ardından genişletin **özellik etkinleştirme bağımlılıkları** düğümü.  
+1.  Özellik Tasarımcısı'nı açın ve ardından **özellik etkinleştirme bağımlılıkları** düğümü.  
   
-2.  Düzenle ve ardından istediğiniz özelliğin adını seçin **Düzenle** düğmesi.  
+2.  Düzenleyin ve ardından istediğiniz özelliğin adını seçin **Düzenle** düğmesi.  
   
-3.  İçinde **Düzenle özel özelliğini etkinleştirme bağımlılık** iletişim kutusu, başlık, özellik kimliği veya açıklamayı değiştirmek ve ardından **gönderme** düğmesi.  
+3.  İçinde **özel özellik etkinleştirme bağımlılığı Düzenle** iletişim kutusu, başlık, özellik Kimliğine veya açıklamasına değiştirin ve ardından **Gönder** düğmesi.  
   
 ## <a name="remove-dependencies"></a>Bağımlılıkları kaldırın  
   
-#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Çözümde bir özelliği bir bağımlılığı kaldırmak için
+#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Çözümdeki bir özellik üzerinde bir bağımlılık kaldırmak için
   
-1.  Özellik Tasarımcısı'nda genişletin **özellik etkinleştirme bağımlılıkları** düğümü, kaldırın ve ardından istediğiniz özelliğin adını seçin **kaldırmak** düğmesi.  
+1.  Özellik Tasarımcısı'nda genişletin **özellik etkinleştirme bağımlılıkları** düğümünü kaldırın ve ardından istediğiniz özelliğin adını seçin **Kaldır** düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
- [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Nasıl yapılır: Bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Nasıl yapılır: SharePoint özelliklerine öğe ekleyip](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  

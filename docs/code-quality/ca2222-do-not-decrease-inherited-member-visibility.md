@@ -2,7 +2,6 @@
 title: 'CA2222: Devralınan üye görünürlüğünü azaltmayın'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDecreaseInheritedMemberVisibility
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dcf92e2a5cdfb7f83a84c55b222aabf415fcfe0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 71b4bd27b7c2258e508f02c7c4e88a516c370209
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911971"
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Devralınan üye görünürlüğünü azaltmayın
 

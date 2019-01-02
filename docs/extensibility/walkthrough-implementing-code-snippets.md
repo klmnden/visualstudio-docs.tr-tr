@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Kod parçacıkları uygulama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902194"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>İzlenecek yol: Uygulama kod parçacıkları
+# <a name="walkthrough-implement-code-snippets"></a>İzlenecek yol: Kod parçacıkları uygulama
 Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi kod ekleyebilmeniz bunları bir düzenleyici uzantısına dahil etme.  
   
  Kod parçacığı, kod veya bir dosyada edilebilecek diğer metin bir parçası olan. Üzerinde belirli programlama dilleri için kaydedilen tüm parçacıkları görüntülemek için **Araçları** menüsünü tıklatın **kod parçacığı Yöneticisi**. Sağ tıklatın, kod parçacığı, istediğiniz bir dosyada bir kod parçacığını eklemek için kod parçacığı Ekle,'a tıklayın veya **Surround With**, istediğiniz kod parçacığı bulun ve çift tıklatın. Basın **sekmesini** veya **Shift**+**sekmesini** parçacığının ilgili bölümlerin değiştirin ve ENTER tuşuna basın **Enter** veya **Esc** kabul etmek. Daha fazla bilgi için [kod parçacıkları](../ide/code-snippets.md).  
@@ -33,7 +30,7 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
 3. Kod parçacığı genişletme uygulayın.  
   
-   Bu izlenecek yolda temel alır [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Bu izlenecek yolda dayanır [izlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -112,7 +109,7 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Kod parçacıkları için belirli bir GUID kaydetmek için  
   
-1.  Açık **CompletionTest** proje. Bu proje oluşturma hakkında daha fazla bilgi için bkz [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Açık **CompletionTest** proje. Bu proje oluşturma hakkında daha fazla bilgi için bkz: [izlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  Projede aşağıdaki derlemelere başvurular ekleyin:  
   

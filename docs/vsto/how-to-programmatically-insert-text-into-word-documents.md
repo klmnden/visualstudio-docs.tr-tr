@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Word belgelerine program aracılığıyla metin ekleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828923"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Nasıl Yapılır: Word belgelerine program aracılığıyla metin ekleme
   Microsoft Office Word belgelerine metin eklemek için başlıca üç yolu vardır:  
   
 -   Bir aralıktaki metin ekleyin.  
@@ -129,8 +126,6 @@ ms.locfileid: "49881670"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: belgelerde program aracılığıyla biçimlendirme metni](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
-  
-  
+ [Nasıl yapılır: Belgelerde program aracılığıyla metin biçimlendirme](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  

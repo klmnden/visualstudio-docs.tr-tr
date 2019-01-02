@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b11aec1291847e917ad7c5d53ad81a3a5b37390
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f04e52ed3198c37f19cd5cf1ce9eb334446c6d52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959410"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express bileşen dizini
 
@@ -36,15 +35,15 @@ Ayrıca sayfa hakkında aşağıdakileri unutmayın:
 * Kullanmayı tercih ederseniz de yükleyebilirsiniz **önerilen** ve **isteğe bağlı** bileşenleri.
 * Her türlü iş yükü ile bağlı olmayan ek bileşenleri listeleyen bir bölüm de ekledik.
 
-VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için bkz [nasıl yapılır: Visual Studio 2017'ye geçirme genişletilebilirlik projeleri](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
+VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
 
 Bu kimliklerinin kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası. Ve iş yükü ve Bileşen kimlikleri diğer ürünlere yönelik bir listesi için bkz. [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
 ## <a name="express-for-windows-desktop"></a>Windows Masaüstü için express
 
-**ID:** Microsoft.VisualStudio.Workload.WDExpress
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.WDExpress
 
-**Açıklama:** WPF, WinForms ve Win32 gibi yerel ve yönetilen uygulamalar ile söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi, derleme ve iş öğesi yönetimi. C#, Visual Basic ve Visual C++ desteği içerir.
+**Açıklama:** Söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi ile WPF, WinForms ve Win32 gibi yerel ve yönetilen uygulamalar oluşturun. C#, Visual Basic ve Visual C++ desteği içerir.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 

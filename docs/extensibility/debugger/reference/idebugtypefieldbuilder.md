@@ -1,9 +1,6 @@
 ---
 title: IDebugTypeFieldBuilder | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962081"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Bir türü temsil eden bir alan oluşturma olanağı temsil eder.  
+Türünü temsil eden bir alan oluşturma özelliği temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,19 +27,19 @@ IDebugTypeFieldBuilder : IUnknown
 ```  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim, simge Sağlayıcısı'ndan elde edilir.  
+ Bu arabirim, sembol Sağlayıcısı'ndan elde edilir.  
   
 ## <a name="methods"></a>Yöntemler  
- Bu arabirim, aşağıdaki yöntemlerden uygular:  
+ Bu arabirim, aşağıdaki yöntemleri uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Basit tür temsil eden bir nesne oluşturur.|  
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Belirtilen tür için bir işaretçi oluşturur.|  
+|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Temel türünü temsil eden bir nesne oluşturur.|  
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Belirtilen tür işaretçisi oluşturur.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Sh.h  
+ Üst bilgi: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

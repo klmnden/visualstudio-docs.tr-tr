@@ -1,8 +1,6 @@
 ---
 title: Arayan - Aranan görünümü - çakışma verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,45 +10,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902912"
 ---
 # <a name="callercallee-view----contention-data"></a>Arayan/Aranan görünümü - çakışma verileri
-Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri Çekişme bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  
+Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri çakışma bilgilerini görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir.  
   
- **Geçerli işlevi** Orta kılavuzunda görüntülenir ve seçilen işlevi için Çekişme bilgilerini gösterir. Tüm engelleyici çekişmeleri işlevi için değerleri içerir.  
+ **Geçerli işlev** Orta kılavuzda görüntülenir ve seçili işlev çakışma bilgilerini gösterir. İşlev için tüm engelleyici Çekişme değerlerini içerir.  
   
- **Geçerli işlevini çağırdı işlevleri** üst kılavuzunda görüntülenir ve seçilen (geçerli) işlevi değerlerine işlevleri (üst) arayan tek tek katkı gösterir.  
+ **Geçerli işlevi çağırmış işlevler** üst kılavuz görüntülenir ve seçili (geçerli) işlevinin değerlere işlevler bireysel Katkıları çağıranın (üst) gösterir.  
   
- **Geçerli işlev tarafından çağrılan işlevler** alt kılavuzunda görüntülenir ve alt işlevi geçerli bir işlev tarafından çağrıldığında işlevleri seçili işlevinin ' % s'Aranan (alt) Çekişme bilgilerini gösterir.  
+ **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz görüntülenir ve alt işlevi geçerli işlev tarafından çağrıldığında seçili işlev işlevlerini (alt) çağrılan çakışma bilgilerini gösterir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Türü**|İşlev Bağlam:<br /><br /> -   **0** -geçerli işlevi<br />-   **1** -geçerli işlevi çağıran bir işlev<br />-   **2** -geçerli işlev tarafından çağrılan bir işlevi<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
-|**Özel engellenen süresi**|-Geçerli işlevi için bu işlev işlev gövdesinde kod yürütmek engellendi zaman. İşlev tarafından çağrılan işlevlerinde engellenen süresi dahil değildir.<br />-Çağıran işlev için özel engellenen zaman bu işlev geçerli işlevi çağrıldığında oluşan geçerli işlevinin kısmı.<br />-Çağrılan işlev için bu işlev bu işlev geçerli işlevi tarafından çağrıldığında, kendi kod yürütmek engellendi zaman. Çağrılan işlev tarafından çağrılan alt işlevlerinde engellenen süresi dahil değildir.|  
-|**Özel engellenen süresi %**|Bu işlev bu bağlamda için özel engellenen zamanı çalıştırmak profil tüm engellenen zamanı yüzdesi.|  
-|**Özel çekişmeleri**|-Geçerli işlevi için bu işlev işlev gövdesinde kod yürütmek engellendi sayısı. İşlevin adı veriliyordu işlevlerinde oluştu çekişmeleri dahil edilmez.<br />-Çağıran işlev için bu işlev geçerli işlevi çağrıldığında oluşan geçerli işlevinin özel çekişmeleri sayısı.<br />-Çağrılan işlev için bu işlev bu işlev geçerli işlevi tarafından çağrıldığında kod işlev gövdesine yürütme engellendi sayısı. Çağrılan işlev tarafından çağrılan işlevlerinde oluştu çekişmeleri dahil edilmez.|  
-|**Özel çekişmeleri %**|Profil çalıştıran tüm çekişmeleri yüzdesi bu işlevi bu bağlamda için özel çekişmeleri yoktu.|  
-|**İşlev adresi**|İşlev adresi ya da belirteci.|  
+|**Tür**|İşlevin bağlamı:<br /><br /> -   **0** -geçerli işlevi<br />-   **1** -geçerli işlevi çağıran bir işlev<br />-   **2** -geçerli işlev tarafından çağrılan bir işlev<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
+|**Dışlamalı engellenme süresi**|-Geçerli işlev için bu işlev, işlev gövdesinde kod yürütürken gelen engellendiği zaman. İşlev tarafından çağırılan işlevlerdeki engellenme süresi dahil değildir.<br />-Çağıran işlev için bu işlev geçerli işlev çağrıldığında oluşan geçerli işlevin dışlamalı engellenme süresi kısmı.<br />-Çağrılan işlev için bu işlev, bu işlev geçerli işlev tarafından çağrıldığında, kendi kod yürütme engellendi zaman. Alt işlevlerinde çağrılan işlev tarafından çağırılan engellenme süresi dahil değildir.|  
+|**Dışlamalı engellenme süresi yüzdesi**|Dışlamalı engellenme süresi için bu işlevi bu bağlamda, profil oluşturma çalışması içindeki tüm engellenme süresinin yüzdesi.|  
+|**Dışlamalı Çekişmeler**|-Geçerli işlev için bu işlev, işlev gövdesinde kod yürütürken gelen engellendi sayısı. İşlev tarafından çağrılan işlevler oluşan çakışmaları dahil edilmez.<br />-Çağıran işlev için bu işlev geçerli işlev çağrıldığında oluşan geçerli işlevin dışlamalı Çekişme sayısı.<br />-Çağrılan işlev için bu işlev, bu işlev geçerli işlev tarafından çağrıldığında işlev gövdesinde kod yürütürken gelen engellendi sayısı. Çağrılan işlev tarafından çağırılan işlevlerdeki oluşan çakışmaları dahil edilmez.|  
+|**Dışlamalı Çekişme yüzdesi**|Profil çalıştıran tüm çekişmelerin yüzdesi için bu işlevi bu bağlamda dışlamalı çekişmeler yoktu.|  
+|**İşlev adresi**|İşlev adresi veya belirteci.|  
 |**İşlev adı**|İşlev tam adı.|  
-|**Dahil engellenen süre**|-Geçerli işlevi için bu işlev veya bu işlev tarafından çağrılan işlevler biri yürütülmesini engellendi zaman. Geçerli işlev tarafından çağrılan işlevler engellenen zamanında dahil edilir.<br />-Çağıran işlevi için (bunlar dahil) bölümünü zaman bu işlev geçerli işlevi çağrıldığında oluşan geçerli işlevinin engelledi.<br />-Aranan işlevi için bu işlev veya işlev tarafından çağrıldı işlevleri biri, bu işlev geçerli tarafından çağrıldığında yürütülmesini engellenmiş olan zaman işlev. Çağrılan işlev tarafından çağrılan işlevler engellenen zamanında dahil edilir.|  
-|**Kapsayıcı engellenen süresi %**|Bu işlev bu bağlamda için kapsayıcı engellenen zamanı çalıştırmak profil tüm engellenen zamanı yüzdesi.|  
-|**Kapsayıcı çekişmeleri**|-Geçerli işlevi için bu işlev veya işlev tarafından çağrılan işlevler biri yürütülmesini engellendi sayısı. İşlevin adı veriliyordu işlevlerinde oluştu çekişmeleri dahil edilir.<br />-Çağıran işlev için (bunlar dahil) çekişmeleri bu işlev geçerli işlevi çağrıldığında oluşan geçerli işlevinin sayısı.<br />-Çağrılan işlev için bu işlev veya işlev tarafından çağrılan işlevler biri, bu işlev geçerli işlevi tarafından çağrıldığında yürütülmesini engellenmiş olan sayısı. Çağrılan işlev tarafından çağrılan işlevlerinde oluştu çekişmeleri dahil edilir.|  
-|**Kapsayıcı çekişmeleri %**|Profil çalıştıran tüm çekişmeleri yüzdesi bu işlevi bu bağlamda için özel çekişmeleri yoktu.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**Modül adı**|İşlevi içeren modülü adı.|  
-|**Modül yolu**|İşlevi içeren modülü yolu.|  
-|**İşlem kimliği**|Çekişmeleri meydana geldiği işlemin işlem kimliği (PID).|  
+|**Kapsamlı engellenme süresi**|-Geçerli işlev için bu işlev ya da bu işlev tarafından çağrılmış işlevlerin yürütülmesini engellendiği zaman. Geçerli işlev tarafından çağrılan işlevler engellenme süresi dahildir.<br />-Bir çağıran işlevin için kapsamlı bir kısmı bu işlev geçerli işlev çağrıldığında oluşan geçerli işlevin zaman engelledi.<br />-Bu işlev veya bir işlev tarafından çağırılan işlev, bu işlev geçerli tarafından çağrıldığında yürütülmesini engellenmiş olan zaman için çağrılan işlev, işlev. Engellenme süresi çağrılan işlev tarafından çağrılan işlevler dahil edilmiştir.|  
+|**Kapsamlı engellenme süresi yüzdesi**|Kapsamlı engellenme süresi için bu işlevi bu bağlamda, profil oluşturma çalışması içindeki tüm engellenme süresinin yüzdesi.|  
+|**Kapsamlı Çekişmeler**|-Geçerli işlev için bu işlev veya bir işlev tarafından çağrılmış işlevlerin yürütülmesini engellendi sayısı. İşlev tarafından çağrılan işlevler oluşan çakışmaları dahil edilir.<br />-Çağıran işlev için bu işlev geçerli işlev çağrıldığında oluşan geçerli işlevin kapsamlı Çekişme sayısı.<br />-Çağrılan işlev için bu işlev veya bir işlev tarafından çağrılmış işlevlerin yürütülmesini geçerli işlev tarafından bu işlev çağrıldığında engellendi sayısı. Çağrılan işlev tarafından çağırılan işlevlerdeki oluşan çakışmaları dahil edilir.|  
+|**Kapsamlı Çekişme yüzdesi**|Profil çalıştıran tüm çekişmelerin yüzdesi için bu işlevi bu bağlamda dışlamalı çekişmeler yoktu.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**Modül adı**|İşlevi içeren modül adı.|  
+|**Modül yolu**|İşlevi içeren modül yolu.|  
+|**İşlem kimliği**|Çekişme oluştuğu işlemin işlem kimliği (PID).|  
 |**İşlem adı**|İşlemin adı.|  
 |**Kök işlev adı**|Geçerli işlevin adı. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
-|**Kaynak dosya**|Bu işlev için tanım içeriyor kaynak dosya.|  
+|**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Arayan/Aranan görünümü](../profiling/caller-callee-view.md)   
  [Arayan/Aranan görünümü - örnekleme verileri](../profiling/caller-callee-view-sampling-data.md)   
  [Arayan/Aranan görünümü - .NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   

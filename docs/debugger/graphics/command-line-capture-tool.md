@@ -1,8 +1,6 @@
 ---
 title: Komut satırı Yakalama aracı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960660"
 ---
 # <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı
 DXCap.exe, grafik tanılama yakalama ve kayıttan yürütme için bir komut satırı aracıdır. Bu, Direct3D 10 ila Direct3D 12 arasında tüm özellik düzeylerini destekler.  
@@ -164,15 +162,15 @@ DXCap.exe -e map
   
  **"Microsoft.BingMaps" paketi:**  
  **Installdirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **Tam adı: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Ad: Microsoft.BingMaps**  
+ **Adı: Microsoft.BingMaps**  
  **Yayımcı: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Sürüm: 2.1.2914.1734**  
  **Başlatılabilir uygulamalar:**  
- **ID: AppexMaps**  
+ **Kimliği: AppexMaps**  
  **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: Hayır**  
+ **IsWWA: Yok**  
  **(Başlatmak için) AppSpec: DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** , grafik bilgilerini yakalamak için kullanabileceğiniz komut çıktı numaralandırılmış her uygulama için son satırının görüntüler.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Belirli çerçeveleri ya da belirli zamanları arasında çerçeveleri yakalayın.  

@@ -2,7 +2,6 @@
 title: Bir C++ hata ayıklama yapılandırması proje ayarları
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957916"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ hata ayıklama yapılandırması proje ayarları
-Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
+Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
   
 > [!NOTE]
 >  Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategorisi için UWP uygulamaları ve C++ ile yazılmış bileşenler için farklı. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
@@ -143,15 +142,15 @@ Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değişti
 | **Uzak sunucu adı** (uzak Windows hata ayıklayıcı) | Bir uygulamada hata ayıklamak istediğiniz bilgisayarın (sizin dışında) adını belirtir.<br /><br /> RemoteMachine yapı makrosu bu özelliğin değerine ayarlanır; Daha fazla bilgi için [derleme komutları ve Özellikler makroları için](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Bağlantı** (uzak Windows hata ayıklayıcı) | Uzaktan hata ayıklama için standart ve kimlik doğrulamasız bağlantı türleri arasında geçiş yapmanıza izin verir. Bir uzak bilgisayar adı belirtin **uzak sunucu adı** kutusu. Bağlantı türleri aşağıdakileri kapsamaktadır:<br /><br /> -   **Windows kimlik doğrulaması ile uzaktan**<br />-   **Kimlik doğrulaması ile uzaktan**<br /><br /> **Not** uzaktan hata ayıklama kimlik doğrulamasısız uzak bilgisayarı güvenlik ihlallerine karşı savunmasız. Windows kimlik doğrulama modu daha güvenlidir.<br /><br /> Daha fazla bilgi için [uzaktan hata ayıklama Kurulumu](../debugger/remote-debugging.md). |
 | **HTTP URL** (Web hizmeti hata ayıklayıcısı ve Web tarayıcı hata ayıklayıcısı) | Hata ayıklaması yaptığınız projenin bulunduğu URL'yi belirtir. |
-| **Hata ayıklayıcı türü** | Kullanılacak hata ayıklayıcı türünü belirtir: **yalnızca yerel**, **yalnızca yönetilen**, **yalnızca GPU**, **karma**, **otomatik**(varsayılan) veya **betik**.<br /><br /> -   **Yalnızca yerel** yönetilmeyen C++ kodu içindir.<br />-   **Yalnızca yönetilen** ortak dil çalışma zamanı altında (yönetilen kod) çalışan kod içindir.<br />-   **Karma** hem yönetilen hem de yönetilmeyen kod için hata ayıklayıcıları çağırır.<br />-   **Otomatik** derleyici ve EXE bilgilerini temel alan bir hata ayıklayıcı türünü belirler.<br />-   **Betik** komut dosyaları için bir hata ayıklayıcı çağırır.<br />-   **Yalnızca GPU** bir GPU cihazında veya DirectX başvuru tarayıcısında çalışan C++ AMP kodu içindir. Bkz: [GPU hata ayıklama kodu](../debugger/debugging-gpu-code.md). |
+| **Hata ayıklayıcı türü** | Kullanılacak hata ayıklayıcı türünü belirtir: **Yalnızca yerel**, **yalnızca yönetilen**, **yalnızca GPU**, **karma**, **otomatik** (varsayılan) veya **betik**.<br /><br /> -   **Yalnızca yerel** yönetilmeyen C++ kodu içindir.<br />-   **Yalnızca yönetilen** ortak dil çalışma zamanı altında (yönetilen kod) çalışan kod içindir.<br />-   **Karma** hem yönetilen hem de yönetilmeyen kod için hata ayıklayıcıları çağırır.<br />-   **Otomatik** derleyici ve EXE bilgilerini temel alan bir hata ayıklayıcı türünü belirler.<br />-   **Betik** komut dosyaları için bir hata ayıklayıcı çağırır.<br />-   **Yalnızca GPU** bir GPU cihazında veya DirectX başvuru tarayıcısında çalışan C++ AMP kodu içindir. Bkz: [GPU hata ayıklama kodu](../debugger/debugging-gpu-code.md). |
 | **Ortam** (yerel Windows hata ayıklayıcısı ve uzak Windows hata ayıklayıcı) | Hata ayıklaması yaptığınız program için ortam değişkenlerini belirtir. Standart ortam değişkeni sözdizimini kullanın (örneğin, `PATH="%SystemRoot%\..."`). Bu değişkenler, sistem ortamını geçersiz kılar veya bağlı olarak, sistem ortamıyla birleştirilir **ortamı Birleştir** ayarı. Ayarlar sütununu sol tıklattığınızda, "Düzenle..." görünür. Ortam değişkenlerini düzenlemek için bu bağlantıyı seçin. |
 | **Ortam birleştirme** (yerel Windows hata ayıklayıcı) | Değişkenleri belirler belirtilen **ortam** kutusunda, işletim sistemi tarafından tanımlanan ortam ile birleştirilir. Varsayılan ayar evet'tir. |
 | **SQL hata ayıklama** (tüm ancak MPI Kümesi hata ayıklayıcısı) | Uygulamanızdan SQL yordamlarının hata ayıklamasını etkinleştirir, [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] uygulama. Varsayılan ayar Hayır |
 | **Hata ayıklama Hızlandırıcı türü** (yalnızca GPU hata ayıklama) | Hata ayıklama için kullanılacak GPU cihazını belirtir. GPU uyumlu cihazlar için cihaz sürücülerinin yüklenmesi ek seçenekler ekler. Varsayılan ayar **GPU - yazılım öykünücüsü**. |
 | **GPU varsayılan kesme noktası davranışı** (yalnızca GPU hata ayıklama) | Bir kesme noktası olayının SIMD eğriltme içindeki her bir iş parçacığı için oluşturup oluşturmadığını belirtir. Varsayılan ayar kesme noktası olayı eğriltme başına yalnızca bir kez başlatılmasıdır. |
 | **Varsayılan amp Hızlandırıcısı** | GPU kodunda hata ayıklama sırasında varsayılan AMP hızlandırıcıyı belirtir. Seçin **WARP Yazılım hızlandırıcı** soruna donanım veya sürücüden kodunuz yerine nedeni araştırmak için. |
-| **Dağıtım dizini** (uzak Windows hata ayıklayıcı) | Proje çıktısı başlatmadan önce kopyalanacağı burada olacaktır uzak bilgisayardaki yolunu belirtir. Yol, uzak bilgisayardaki bir ağ paylaşımı veya uzak bilgisayardaki bir klasöre bir yol olabilir. Varsayılan ayar boş proje çıkışının bir ağ paylaşımına kopyalanmadığı anlamına gelir. Dosyaların dağıtımını etkinleştirmek için de seçmeniz gerekir **Dağıt** Configuration Manager iletişim kutusundaki onay kutusu. Daha fazla bilgi için [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md). |
-| **Dağıtılacak ek dosyalar** (uzak Windows hata ayıklayıcı) | Dağıtım dizini özelliği ayarlanmışsa, bu dağıtım dizinine kopyalanacak ek dosyaların noktalı virgülle ayrılmış bir listesini budur. Varsayılan ayar boş, hiçbir ek dosyaları dağıtım dizinine kopyalanmadığı anlamına gelir. Dosyaların dağıtımını etkinleştirmek için de seçmeniz gerekir **Dağıt** Configuration Manager iletişim kutusundaki onay kutusu. Daha fazla bilgi için [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md). |
+| **Dağıtım dizini** (uzak Windows hata ayıklayıcı) | Proje çıktısı başlatmadan önce kopyalanacağı burada olacaktır uzak bilgisayardaki yolunu belirtir. Yol, uzak bilgisayardaki bir ağ paylaşımı veya uzak bilgisayardaki bir klasöre bir yol olabilir. Varsayılan ayar boş proje çıkışının bir ağ paylaşımına kopyalanmadığı anlamına gelir. Dosyaların dağıtımını etkinleştirmek için de seçmeniz gerekir **Dağıt** Configuration Manager iletişim kutusundaki onay kutusu. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md). |
+| **Dağıtılacak ek dosyalar** (uzak Windows hata ayıklayıcı) | Dağıtım dizini özelliği ayarlanmışsa, bu dağıtım dizinine kopyalanacak ek dosyaların noktalı virgülle ayrılmış bir listesini budur. Varsayılan ayar boş, hiçbir ek dosyaları dağıtım dizinine kopyalanmadığı anlamına gelir. Dosyaların dağıtımını etkinleştirmek için de seçmeniz gerekir **Dağıt** Configuration Manager iletişim kutusundaki onay kutusu. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md). |
 | **Visual C++ hata ayıklama çalışma zamanı kitaplıklarını Dağıt** (uzak Windows hata ayıklayıcı) | Dağıtım dizini özelliği ayarlanmışsa, bu geçerli platform için Visual C++ hata ayıklama çalışma zamanı kitaplıklarının ağ paylaşımına kopyalanıp kopyalanmayacağını belirtir. Varsayılan ayar evet'tir. |
   
 ## <a name="cc-folder-general-category"></a>C/C++ klasörü (genel kategori)  

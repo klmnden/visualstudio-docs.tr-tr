@@ -1,8 +1,7 @@
 ---
-title: 'CA1721: Tür adları alma metotlarıyla eşleşmemelidir'
+title: 'CA1721: TÜR Özellik adları get yöntemleri ile eşleşmemelidir'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1721
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e0b9c348fc9131ede355c58408b517d20ed2500b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920984"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Tür adları alma metotlarıyla eşleşmemelidir
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: TÜR Özellik adları get yöntemleri ile eşleşmemelidir
 
 |||
 |-|-|
@@ -59,4 +58,4 @@ ms.locfileid: "45549683"
  [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1024: Uygun yerlerde özellikler kullanın](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Uygun yerlerde özellikler kullan](../code-quality/ca1024-use-properties-where-appropriate.md)

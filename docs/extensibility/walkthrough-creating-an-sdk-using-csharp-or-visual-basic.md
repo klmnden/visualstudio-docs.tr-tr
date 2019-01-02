@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: C# veya Visual Basic kullanarak SDK oluşturma | Microsoft Docs'
-ms.custom: ''
+title: "İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921659"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic kullanarak SDK oluşturma
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic
 Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak oluşturma ve sonra bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:  
   
 -   [SimpleMath Windows çalışma zamanı bileşeni oluşturma](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -136,7 +133,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 22. İçinde **Çözüm Gezgini**, seçin **SimpleMath.winmd**.  
   
-23. Menü çubuğunda, **görünümü** > **özellikleri** (klavye: seçin **F4** anahtar).  
+23. Menü çubuğunda, **görünümü** > **özellikleri** (klavye: Seçin **F4** anahtar).  
   
 24. İçinde **özellikleri** penceresinde değişiklik **derleme eylemi** özelliğini **içerik**ve ardından değiştirmek **VSIX Ekle** özelliği **True**.  
   

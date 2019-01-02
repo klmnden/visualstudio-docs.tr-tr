@@ -3,8 +3,6 @@ title: "&lt;formRegions&gt; öğesi (Visual Studio'da Office Geliştirme)"
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d72206ac6ddd6696c1f2fac0f9de6552408a5a46
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 997bd24861f986736d7d691a8d2877f9b5a78566
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909105"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; öğesi (Visual Studio'da Office Geliştirme)
   `formRegions` Öğesinin `vstov4` ad alanı, VSTO eklentisi ile ilişkili olan Microsoft Office Outlook form bölgeleri içerir.

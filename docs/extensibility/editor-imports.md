@@ -1,9 +1,6 @@
 ---
 title: Düzenleyici içeri aktarımları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893937"
 ---
 # <a name="editor-imports"></a>Düzenleyici içeri aktarımları
 Bir dizi Düzenleyicisi Hizmetleri, fabrikaları ve erişim farklı türde çekirdek Düzenleyici uzantınızı sağlayan aracıları içeri aktarabilirsiniz. Örneğin, aktarabilirsiniz <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> sunmak için bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> için belirli bir içerik türü. (Bu Gezgin, bir metin arabelleği farklı türde aramaları gerçekleştirme sağlar.)  
@@ -45,19 +42,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  İçeri aktarmalar kullanarak daha fazla örnek için aşağıdaki izlenecek yollara bakın:  
   
- [İzlenecek yol: dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [İzlenecek yol: Dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [İzlenecek yol: metin görünümünü özelleştirme](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [İzlenecek yol: Metin görünümünü özelleştirme](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [İzlenecek yol: Metni vurgulayın](../extensibility/walkthrough-highlighting-text.md)  
+ [İzlenecek yol: Metni vurgulama](../extensibility/walkthrough-highlighting-text.md)  
   
- [İzlenecek yol: Görüntü Hızlıbilgi araç ipuçları](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [İzlenecek yol: İmza Yardımı görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [İzlenecek yol: Görüntü deyim tamamlama](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [İzlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [İzlenecek yol: ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [İzlenecek yol: Ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="import-the-service-provider"></a>Hizmet sağlayıcısı içeri aktarma  
  Ayrıca Al bir <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (Microsoft.VisualStudio.Shell.Immutable.10.0 derlemede bulunan) Visual Studio hizmetlerine erişim elde etmek için aynı şekilde:  
@@ -72,7 +69,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Hizmetler  
  Düzenleyici, bir hizmet sağlayan ve birden çok bileşen arasında paylaşılan genellikle tek varlıklar hizmetleridir.  
   
-|{1&gt;İçeri Aktar&lt;1}|Sağlar|  
+|İçeri Aktarma|Sağlar|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Dosya uzantıları arasındaki ilişki ve <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Koleksiyonu <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|  
@@ -114,7 +111,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Diğer içeri aktarmalar  
  Sağlayıcı üreteçlerinin ve aracıya genellikle birden çok bileşeni birden çok örneği olan varlıklardır.  
   
-|{1&gt;İçeri Aktar&lt;1}|Sağlar|  
+|İçeri Aktarma|Sağlar|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|Bir <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) belirtilen arabellek için.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Bir metin işaretçisi etiketlerde (bir <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  

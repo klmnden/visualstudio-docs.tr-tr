@@ -2,7 +2,6 @@
 title: DataTips değişken değerlerini görüntüleme | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898079"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Kod Düzenleyicisi'nde veri değerlerini görüntüleme datatips
 
@@ -131,4 +130,3 @@ DataTips paylaşabilir veya bir metin düzenleyicisi kullanarak Düzenle bir XML
  [Hata ayıklama sırasında ilk bakış](../debugger/debugger-feature-tour.md) [hata ayıklayıcısı verilerini görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
  [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)   
-

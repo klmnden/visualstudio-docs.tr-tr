@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: bir XML belgesinden bir XML Şeması oluşturun'
+title: 'Nasıl Yapılır: XML Belgesinden XML Şeması Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
@@ -10,39 +9,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915211"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Nasıl yapılır: bir XML belgesinden bir XML Şeması oluşturun
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Nasıl Yapılır: Bir XML belgesinden XML şeması oluşturma
 
-XML düzenleyicisini, bir XML belgesinden bir XML Şeması Tanım Dili (XSD) şeması oluşturmanıza olanak sağlar. XML örneği Belge Şeması aşağıdaki şekilde nasıl oluşturulacağını belirler:
+XML Düzenleyicisi, bir XML Şeması Tanım Dili (XSD) şeması bir XML belgesinden oluşturmanıza olanak sağlar. Örnek XML Belge Şeması aşağıdaki şekilde nasıl oluşturulacağını belirler:
 
--   XML belge şeması yok veya belge türü tanımı (DTD) ilişkili varsa XML belgedeki verileri yeni bir XML Şeması anlamak için kullanılır.
+-   XML belgesi bir şeması yok veya belge türü tanımı (DTD'nin) ilişkili varsa, XML belgesi verileri yeni bir XML şema çıkarsanacak kullanılır.
 
--   XML belge ilişkili DTD içeriyorsa, dış DTD ve iç alt karşılık gelen bir XML Şeması dönüştürülür.
+-   XML belgesi ilişkili bir DTD'nin içeriyorsa, karşılık gelen bir XML şeması için dış DTD'nin ve iç alt dönüştürülür.
 
--   XML belge bir satır içi XML verileri azaltılmış (XDR) şema içeriyorsa, XDR şema karşılık gelen bir XML Şeması dönüştürülür.
+-   XML belgesi bir satır içi XML verileri azaltılmış (XDR) şema içeriyorsa, karşılık gelen bir XML şemasına XDR şeması dönüştürülür.
 
 Oluşturulan şemaları, daha sonra XML belgesi için IntelliSense sağlamak için kullanılır.
 
-Şema çıkarımı altyapısının hakkında daha fazla bilgi için bkz: [bir XML Şeması çıkarımını yapma](/dotnet/standard/data/xml/inferring-an-xml-schema).
+Şema çıkarımı altyapısının hakkında daha fazla bilgi için bkz: [XML şemasından çıkarım yapma](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
 ## <a name="to-create-an-xml-schema"></a>Bir XML şeması oluşturmak için
 
-1.  Bir XML örneği belgesi içine XML Düzenleyicisi'ni yükleyin.
+1.  XML örnek belge ile XML Düzenleyicisi'ni yükleyin.
 
-2.  Tıklatın **Create Schema** gelen düğmesini **araç**.
+2.  Tıklayın **Create Schema** düğmesini **araç**.
 
-     Bir XML Şeması belgesi oluşturulur ve XML örneği belgesinde bulunan her ad alanı için açıldı. Her şema geçici çeşitli dosya olarak açılır.
+     Bir XML Şeması belgesi oluşturulup XML örneği belgesinde bulunan her ad alanı için açılır. Her şema geçici çeşitli dosya olarak açılır.
 
-     Şemalar, projenize eklenir veya atılan diske kaydedilir.
+     Şemalar, projenize eklenir veya atılan diske kaydedildi.
 
     > [!NOTE]
-    >  **Create Schema** komutu kullanılabilir de kısayol menüsünden XML Düzenleyicisi'nin ve altında **XML** menüsü.
+    >  **Create Schema** komutu kısayol menüsünde bulunan XML Düzenleyicisi'nin altında ve ayrıca **XML** menüsü.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

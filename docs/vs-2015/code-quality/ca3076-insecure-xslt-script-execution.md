@@ -4,8 +4,7 @@ ms.custom: ''
 ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
@@ -13,14 +12,14 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 39aebc0e7681b139e021c48c12a87d4b060cc7af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 294666c21968a0197149834da18515862c50f027
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920426"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Güvensiz XSLT Betiği Yürütme
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Güvensiz XSLT betiği yürütme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -142,6 +141,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

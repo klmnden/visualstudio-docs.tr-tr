@@ -3,8 +3,6 @@ title: Kullanmaya başlama (Office geliştirme için Visual Studio'da) alma
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d415fc57cd4923fbe5c62f4f9758dac23a4fccc3
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d0d2868becbdc68f88c8ac191e3a044f3cfc8b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955363"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Kullanmaya başlama (Office geliştirme için Visual Studio'da) alma
   Bu bölüm, Yardım konuları içerir. Visual Studio'da Microsoft Office geliştirici araçlarını kullanmaya başlama.  
@@ -78,5 +76,3 @@ ms.locfileid: "53647670"
   
  [Office teknik makaleleri ve Visual "nasıl" soruları için Visual Studio Araçları](http://go.microsoft.com/fwlink/?LinkID=106640)  
  Video ve Visual Studio kullanılarak oluşturulan Office çözümlerini hakkında teknik makalelere bağlantı içerir.  
-  
-  

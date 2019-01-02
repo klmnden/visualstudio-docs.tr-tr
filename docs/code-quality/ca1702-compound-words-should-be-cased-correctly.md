@@ -1,8 +1,7 @@
 ---
-title: 'CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır'
+title: 'CA1702: Bileşik sözcüklerin doğru yazılmalıdır'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4703c43c81df13432f45fb4ba519a02b39a839e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829582"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bileşik sözcüklerin doğru yazılmalıdır
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Kategori|Microsoft.Naming|
-|Yeni Değişiklik|En son ne zaman derlemelerini gönderildi.<br /><br /> Tür parametreleri harekete zaman bölünemez -.|
+|Yeni Değişiklik|En son ne zaman derlemelerini tetiklenir.<br /><br /> Bölünemez - tür parametrelerinde tetiklendiğinde.|
 
 ## <a name="cause"></a>Sebep
 
@@ -38,17 +37,17 @@ Tanımlayıcının adı birden çok sözcük içerir ve bu sözcüklerden en az 
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Tanımlayıcı adı büyük/küçük harf üzerinde dayalı sözcükler bölündüğünü. Bitişik her iki word birleşimi Microsoft Yazım kitaplığı tarafından denetlenir. Tanımlıysa, kural ihlal tanımlayıcı oluşturur. "Sağlama" ve "Sağlama" ve "Multipart" sırasıyla ortası "MultiPart" bir ihlaline neden bileşik sözcüklerin örnekleridir. Önceki yaygın kullanımı nedeniyle, birkaç özel durum dışında kurala yerleşiktir ve birden fazla tek sözcük işaretlendi, "Araç" ve "Dosya adı" gibi ortası (Bu durumda, "Araç" ve "Dosya adı") iki ayrı sözcükleri olarak.
+Tanımlayıcı adı büyük/küçük harf üzerinde dayalı sözcükler bölündüğünü. Bitişik her iki word birleşimi, Microsoft Yazım kitaplığı tarafından denetlenir. Tanımlıysa, tanımlayıcı bir kural ihlali üretir. "CheckSum" ve "Checksum" ve "Multipart" sırasıyla yazılmalıdır "MultiPart" bir ihlaline neden bileşik sözcüklerin örnekleridir. Önceki yaygın kullanım nedeniyle, kurala birkaç özel durum oluşturulur ve birden fazla tek sözcük işaretlenmiş, "Araç çubuğu" ve "Dosya adı" gibi büyük/küçük harfleri olarak iki ayrı sözcükleri (Bu durumda, "Araç çubuğu" ve "Dosya adı").
 
-Adlandırma kuralları hedefleyen ortak dil çalışma zamanı kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığa sahip olan kişi tarafından geliştirilmiştir müşteri güvenini artırır öğrenme eğrisini azaltır.
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
 
-## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-Böylece doğru ortası adını değiştirin.
+Böylece bu sözcüklerden adını değiştirin.
 
 ## <a name="language"></a>Dil
 
-Yazım denetimi şu anda yalnızca İngilizce tabanlı kültürü sözlükler karşı denetler. Proje dosyası projenizde kültürünü ekleyerek değiştirebilirsiniz **CodeAnalysisCulture** öğesi.
+Yazım denetleyicisi şu anda yalnızca İngilizce tabanlı kültürü sözlükleri karşı denetler. Proje dosyası projenize kültürü ekleyerek değiştirebilirsiniz **CodeAnalysisCulture** öğesi.
 
 Örneğin:
 
@@ -59,16 +58,16 @@ Yazım denetimi şu anda yalnızca İngilizce tabanlı kültürü sözlükler ka
 ```
 
 > [!IMPORTANT]
-> Bir İngilizce tabanlı kültürü dışında her şey için kültürü ayarlama, bu kod analizi kural sessiz bir şekilde devre dışı bırakılır.
+> İngilizce-tabanlı bir kültür dışında bir kültürü ayarlarsanız, bu kod çözümleme kural sessiz bir şekilde devre dışı bırakıldı.
 
-## <a name="when-to-suppress-warnings"></a>Ne zaman uyarıları bastırma
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
-Bu kural bir uyarıdan bileşik word kısımlarını yazım sözlüğüyle tanınır ve amacı iki sözcükler kullanın ise gizlemek güvenlidir.
+Bileşik sözcük kısımlarını yazım sözlüğüyle tanınır ve amacı iki kelimeye kullanmaktır. Bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="related-rules"></a>İlgili kuralları
 
-- [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 - [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.

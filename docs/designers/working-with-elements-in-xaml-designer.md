@@ -2,7 +2,6 @@
 title: XAML Tasarımcısı'nda öğelerle çalışma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922605"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 Öğeleri ekleyebilirsiniz; denetimler, düzenler ve şekiller — uygulamanıza XAML, kod veya XAML Tasarımcısını kullanarak. Bu konuda, Visual Studio veya Visual Studio için Blend, XAML Tasarımcısı'nda öğelerle çalışma açıklar.
@@ -65,9 +64,9 @@ ms.locfileid: "49926949"
 
 1.  Hizalamak için kullanmak istediğiniz öğeleri seçin. Tuşuna basın ve basılı tutarak birden fazla öğe seçebilirsiniz **Ctrl** öğeleri seçerken anahtar.
 
-2.  Altında aşağıdaki özelliklerden birini **HorizontalAlignment** içinde **Düzen** Özellikler penceresini bölümünü: **sol**, **Merkezi**, **Sağ**, veya **Esnetme**.
+2.  Altında aşağıdaki özelliklerden birini **HorizontalAlignment** içinde **Düzen** Özellikler penceresinin bölümü: **Sol**, **Merkezi**, **sağ**, veya **Esnetme**.
 
-3.  Altında aşağıdaki özelliklerden birini **VerticalAlignment** içinde **Düzen** Özellikler penceresini bölümünü: **üst**, **Merkezi**, **Alt**, veya **Esnetme**.
+3.  Altında aşağıdaki özelliklerden birini **VerticalAlignment** içinde **Düzen** Özellikler penceresinin bölümü: **Üst**, **Merkezi**, **alt**, veya **Esnetme**.
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Dayama çizgileri kullanarak iki veya daha fazla öğe hizalamak için
 

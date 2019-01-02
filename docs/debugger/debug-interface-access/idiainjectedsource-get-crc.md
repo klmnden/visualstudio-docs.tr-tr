@@ -1,8 +1,6 @@
 ---
 title: Idiaınjectedsource::get_crc | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99c48af26f2b40969ec818743ec8f4d220f8404
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3864cb92708f0b726ee73316fd2060c981f0a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894986"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 Kaynak kodunun bayt hesaplanan bir Döngüsel artıklık denetimi (CRC) alır.  
@@ -27,7 +25,7 @@ Kaynak kodunun bayt hesaplanan bir Döngüsel artıklık denetimi (CRC) alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_crc (   
+HRESULT get_crc (   
    DWORD* pRetVal  
 );  
 ```  

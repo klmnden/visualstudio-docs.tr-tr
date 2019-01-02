@@ -3,7 +3,6 @@ title: Uygulamalarınızda ölçü CPU kullanımı
 description: CPU hata ayıklayıcısıyla tümleştirilmiş tanılama araçları kullanarak uygulamanızdaki performans sorunlarını analiz edin.
 ms.custom: seodec18
 ms.date: 02/27/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ed0549cceb928b622578add5a634bb5795e5c96d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889796"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU kullanımını analiz etme ölçü uygulama performansı
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **CPU kullanımı** tanılama araçları, uygulamanız için performans verilerini almak için sekmesinde. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -46,7 +45,7 @@ Bu öğreticide şunları yapacaksınız:
 > * CPU kullanım verileri toplama
 > * CPU kullanım verilerini çözümleme
   
-## <a name="step-1-collect-profiling-data"></a>1. adım: profil oluşturma verilerini topla 
+## <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla 
   
 1.  Visual Studio'da hata ayıklama ve CPU kullanımını incelemek için istediğiniz noktada uygulamanızda bir kesme noktası ayarlamak istediğiniz projeyi açın.
 
@@ -97,7 +96,7 @@ Bu öğreticide şunları yapacaksınız:
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>2. adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2. Adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve ardından her birine daha yakından bakalım alma verilerinizi analiz etmeye başlamanızı öneririz.
 

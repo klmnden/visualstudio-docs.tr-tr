@@ -1,9 +1,6 @@
 ---
 title: Office kullanıcı arabirimini özelleştirme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924834"
 ---
 # <a name="office-ui-customization"></a>Office kullanıcı arabirimini özelleştirme
   Visual Studio'da Office geliştirme araçlarını kullanarak, kullanıcı arabirimi (UI) Microsoft Office uygulamalarının özelleştirebilirsiniz. Bu konu aşağıdaki bölümlerde özelleştirebileceğiniz kullanıcı Arabirimi özellikleri açıklar:  
@@ -96,7 +93,7 @@ ms.locfileid: "49836774"
  Daha fazla bilgi için [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md) ve [Windows forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Kısayol menüleri  
- Bir belge veya uygulama penceresinin sağ tıklattığınızda bir kısayol menü görünür. Bir olay gibi bir kullanıcı bir belge, çalışma kitabı veya ana bilgisayar denetimi tıklattığında, gerçekleştikten sonra görünmesi için bir kısayol menüsü ayarlayabilirsiniz. Bir kısayol menüsüne bir dizi farklı komutlar veya denetimler ekleyebilirsiniz. Kısayol menüleri XML kullanarak oluşturun. Eklerseniz bir **Ribbon (XML)** öğesi Office projeniz için kısayol menüleri oluşturma için Ribbon XML dosyasındaki XML ekleyebilirsiniz. Kısayol menüleri oluşturmak için XML kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: kısayol menülerine komut ekleme](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Bir belge veya uygulama penceresinin sağ tıklattığınızda bir kısayol menü görünür. Bir olay gibi bir kullanıcı bir belge, çalışma kitabı veya ana bilgisayar denetimi tıklattığında, gerçekleştikten sonra görünmesi için bir kısayol menüsü ayarlayabilirsiniz. Bir kısayol menüsüne bir dizi farklı komutlar veya denetimler ekleyebilirsiniz. Kısayol menüleri XML kullanarak oluşturun. Eklerseniz bir **Ribbon (XML)** öğesi Office projeniz için kısayol menüleri oluşturma için Ribbon XML dosyasındaki XML ekleyebilirsiniz. Kısayol menüleri oluşturmak için XML kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Kısayol menülerine komut ekleme](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
@@ -106,7 +103,5 @@ ms.locfileid: "49836774"
  [Özel görev bölmeleri](../vsto/custom-task-panes.md)   
  [Office çözümlerinde WPF denetimlerini kullanma](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [İzlenecek yol: bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
+ [Nasıl yapılır: Eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [İzlenecek yol: Bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837975"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Değişiklik günlüğü (Unity için Visual Studio Araçları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   Windows Store uygulamaları için UnityEngine ve UnityEditor derlemelere başvuruları sabit.
 
--   Hata ayıklayıcıda adımlanırken düzeltildi: Adımlanamıyor, genel özel durum.
+-   Hata ayıklayıcıda adımlanırken sabit hata: Adımlanamıyor, genel özel durum.
 
 -   Visual Studio 2015'te sabit isabet sayısı kesme noktaları.
 
@@ -206,13 +205,13 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   Visual Studio Araçları için Unity 5 için Unity paketini yükleyin.
 
--   **Belgeler:** belgesi oluşturma performansını artırın.
+-   **Belgeler:** Belge oluşturma performansını geliştirin.
 
 -   **Sihirbazlar:** Unity 4.6 ve Unity 5 yeni MonoBehavior yöntemleri destekler.
 
--   **Unity:** güvenli olmayan bayrakları arama ve özel proje dosyası oluşturma sırasında .rsp dosyaları tanımlar.
+-   **Unity:** Güvenli olmayan bayrakları arama ve özel proje dosyası oluşturma sırasında .rsp dosyaları tanımlar.
 
--   **Kullanıcı Arabirimi:** eklenen Unity için Visual Studio Araçları **seçenekleri** Visual Studio'da iletişim kutusu.
+-   **UI:** Unity için Visual Studio Araçları eklenen **seçenekleri** Visual Studio'da iletişim kutusu.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -246,13 +245,13 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   İçin VS hata listesi Unity konsol günlükleri gönderin.
 
--   **Belgeler:** düzeltmek için yeni unity belgeleri belgeleri oluşturma.
+-   **Belgeler:** Yeni unity belgeleri için doğru belgeleri oluşturma.
 
--   **Proje:** taşıyın ve gerektiğinde, hatta klasörlerinde Unity .meta dosyalarını yeniden adlandırın.
+-   **Proje:** Taşıma ve gerektiğinde, hatta klasörlerinde Unity .meta dosyalarını yeniden adlandırın.
 
--   **Sihirbazlar:** MonoBehavior yöntemi parametrelerinin sırasını kodu oluştururken düzeltin.
+-   **Sihirbazlar:** Kod oluşturma sırasında MonoBehavior yöntemi parametrelerinin sırasını düzeltin.
 
--   **Kullanıcı Arabirimi:** desteği Visual Studio temaları bağlam menüsü ve simgeler.
+-   **UI:** Visual Studio temasından bağlam menüsü ve simgeleri destekler.
 
 ## <a name="20-preview"></a>2.0 Önizlemesi
  Yayımlanan 2014-11-12
@@ -597,21 +596,21 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   Hata düzeltildi UV'leri 48: çift tırnak bazen hataya yazıp tüm işlevi (kod tamamlama, sözdizimi vurgulama vs.) Kes.
 
--   UV'leri 46 hata düzeltildi: açılan komut dosyası (UnityScript) hata listesi, Visual Studio tıklandığında çoğaltılabilir.
+-   UV'leri 46 hata düzeltildi: Hata listesi, Visual Studio tıklandığında açılan komut dosyası (UnityScript) yinelenen.
 
--   Hata düzeltildi UV'leri 42: durum çubuğunda Unity bağlantı logosu VS 2012'de fare olayları işleme değil.
+-   UV'leri 42 hata düzeltildi: Durum çubuğunda Unity bağlantı logosu VS 2012'de fare olaylarını işlemiyor.
 
--   Hata düzeltildi UV'leri 44: CTRL + SHIFT + Q hızlı MonoBehaviours için VS 2012'de kullanılabilir değil.
+-   UV'leri 44 hata düzeltildi: CTRL + SHIFT + Q hızlı MonoBehaviours için VS 2012'de kullanılamaz.
 
--   Hata düzeltildi UV'leri 40: pencere VS2012 "koyu" tema etkin olduğunda Unity proje Gezgininde seçilen öğeler okunamaz.
+-   UV'leri 40 hata düzeltildi: Unity proje Gezgininde seçilen öğeler, pencere VS2012 "koyu" tema etkin olduğunda okunamaz durumda.
 
--   Hata düzeltildi UV'leri 39: Atlanan dizeleri sorunu belirteç oluşturma.
+-   UV'leri 39 hata düzeltildi: Atlanan dizelerden sorun.
 
--   Hata düzeltildi UV'leri-35: değişkenleri incelerken nesneler üzerinde çağırmak ToString.
+-   UV'leri-35 hata düzeltildi: ToString değişkenleri incelerken nesneler üzerinde çağırmak.
 
--   Hata düzeltildi UV'leri 27: Goto sembol penceresi tutarsızlık VS2012 "koyu" tema ile.
+-   27 UV'leri hata düzeltildi: Goto sembol penceresi tutarsızlık VS2012 "koyu" tema ile.
 
--   Hata düzeltildi UV'leri-11: Eş yordamlarda yerel öğeler.
+-   11 UV'leri hata düzeltildi: Eş yordamlarda yerel öğeler.
 
 ## <a name="11--beta-release"></a>1.1 – beta sürümü
  Yayımlanan 2014-10-09
@@ -717,9 +716,9 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   Sabit ifade değerlendirmesi için yüklü bütünleştirilmiş kodlarında türler nasıl aranır.
 
--   Hata düzeltildi UV'leri 21: Değerlendirme atamasının Unity nesneler üzerinde etkisi yoktur.
+-   UV'leri 21 hata düzeltildi: Değerlendirme atamasının Unity nesneler üzerinde hiçbir etkisi olmaz.
 
--   Hata düzeltildi UV'leri 21: Unity matematik API için bir yöntem çağırmayla hesaplanırken geçersiz işaretçi.
+-   UV'leri 21 hata düzeltildi: Unity matematik API için bir yöntem çağırmayla hesaplanırken geçersiz işaretçi.
 
 ## <a name="108"></a>zamanlarını 1.0.8
  Yayımlanan 2012-09-26
@@ -818,4 +817,3 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="10--initial-release"></a>1.0 – ilk sürümü
  Yayımlanan 2012-08-22
-

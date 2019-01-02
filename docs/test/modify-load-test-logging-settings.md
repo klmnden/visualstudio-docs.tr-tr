@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 88819e8858a57a16e327e8e7b04f69c74fe5045a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900788"
 ---
 # <a name="modify-load-test-logging-settings"></a>Yük testi günlüğü ayarlarını değiştirme
 
@@ -27,8 +26,8 @@ Tamamlanan yük testi için yük testi sonucu performans sayaç örneklerini ve 
 
 |Görev|İlişkili konular|
 |-|-----------------------|
-|**Bir yük testi başarısız olursa, günlükleri kaydedin:** bir yük testi başarısız olduğunda test günlüğü kaydetmek isteyip istemediğinizi belirtebilirsiniz.|-   [Nasıl yapılır: test başarısızlıklarının test günlüklerini kaydedilip kaydedilmediği belirleme](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Günlük dosyası için maksimum dosya boyutunu ayarlayın:** maksimum dosya boyutu için günlük dosyasına kullanmak istediğinizi belirtmek için test denetleyicisi hizmeti ile ilişkili XML yapılandırma dosyasını düzenleyebilirsiniz.|[Nasıl yapılır: günlük dosyası boyutu üst sınırı belirtin](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Bir yük testi başarısız olursa, günlükleri kaydedin:** Bir yük testi başarısız olduğunda test günlüğü kaydetmek isteyip istemediğinizi belirtebilirsiniz.|-   [Nasıl Yapılır: Test hata günlükleri test etmek için kaydedilip kaydedilmediği belirleme](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Günlük dosyası için maksimum dosya boyutunu ayarlayın:** Günlük dosyası için kullanmak istediğiniz maksimum dosya boyutunu belirtmek için test denetleyicisi hizmeti ile ilişkili XML yapılandırma dosyasını düzenleyebilirsiniz.|[Nasıl yapılır: Günlük dosyası boyutu üst sınırı belirtin](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

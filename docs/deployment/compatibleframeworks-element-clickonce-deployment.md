@@ -1,8 +1,6 @@
 ---
 title: '&lt;compatibleFrameworks&gt; öğesi (ClickOnce dağıtımı) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44329fc4c2ec5e9f2f8352d69ea487f23cbe3c5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: df45e5bc3f9294ac1a53353ec784d83c9220f1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900970"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; öğesi (ClickOnce dağıtımı)
 Burada bu uygulamayı yükleyip çalıştırabileceği bir .NET Framework sürümlerini tanımlar.  
@@ -33,12 +31,12 @@ Burada bu uygulamayı yükleyip çalıştırabileceği bir .NET Framework sürü
   
 ```xml  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   

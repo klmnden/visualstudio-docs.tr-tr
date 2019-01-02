@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_intrinsic | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f5525a63e4453c594cd84b248f71303b083312
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6f0d00b29912f1e5baff93b81a7c69924271a24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905013"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 Bir sınıf geçerli bir tür olup olmadığını belirten bir bayrak alır.  
@@ -27,7 +25,7 @@ Bir sınıf geçerli bir tür olup olmadığını belirten bir bayrak alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_intrinsic(   
+HRESULT get_intrinsic(   
    BOOL* pRetVal)  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_intrinsic(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

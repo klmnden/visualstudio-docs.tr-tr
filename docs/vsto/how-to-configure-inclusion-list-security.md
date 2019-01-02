@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Ekleme listesi güvenliğini yapılandırma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895583"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Nasıl Yapılır: Ekleme listesi güvenliğini yapılandırma
   Yönetici izinleriniz varsa, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümlerine güven kararı listesine kaydederek yükleme seçeneğiniz verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz. [ekleme listelerini kullanarak Office güven çözümleri](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -213,5 +210,3 @@ ms.locfileid: "53647741"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Ekleme listelerini kullanarak Office çözümlerine güven](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
-  
-  

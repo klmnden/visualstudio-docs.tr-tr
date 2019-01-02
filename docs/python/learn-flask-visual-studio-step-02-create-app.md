@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio projeleri, özellikle bir uygulama oluşturma ve görünümleri ve şablonlar kullanma adımları bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9803baf3e9e3f3f2c0d4c07c3f5ddfbf7833c7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906000"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Adım 2: görünümler ve sayfa şablonları ile bir Flask uygulaması oluşturma
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2. Adım: Görünümleri ve şablonların ile bir Flask uygulaması oluşturma
 
-**Önceki adımda: [Visual Studio'nun proje ve çözüm oluşturma](learn-flask-visual-studio-step-01-project-solution.md)**
+**Önceki adım sayısı: [Visual Studio'nun proje ve çözüm oluşturma](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Bu öğreticinin 1 adımdaki sahip bir sayfa ve tek bir dosyada tüm kodu ile bir Flask uygulaması olur. Gelecekteki geliştirme için izin vermek için kodu yeniden düzenleyin ve şablonların için bir yapı oluşturmak idealdir. Özellikle, kod uygulamanın görünümler için başlangıç kodu gibi diğer yönlerini ayırmak istiyorsunuz.
 
@@ -32,7 +31,7 @@ Bu adımda, daha fazla bilgi için nasıl:
 > - Görünüm başlangıç koddan ayırmak için uygulamanın kodu yeniden düzenleme (Adım 2 - 1)
 > - (Adım 2-2) sayfa şablon kullanarak görünüm işlemek
 
-## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>2-1. adım: daha fazla geliştirme desteği için projeyi yeniden düzenleyin
+## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>2-1. adım: Daha fazla geliştirme desteği için projeyi yeniden düzenleyin
 
 "Boş Flask Web projesi" şablonu tarafından oluşturulan kodda, tek bir sahip *app.py* başlatma kodunu tek bir görünümde yanı sıra içeren dosya. Daha fazla birden çok görünüm ve şablonlar ile bir uygulama geliştirmek için izin vermek için bu sorunlar ayırmak idealdir.
 
@@ -103,13 +102,13 @@ Kodunuzda değişiklikler yaptık ve başarıyla sınanmıştır olduğundan, ka
 
     ![Uzak Ekip Gezgini'nde yürütmeler gönderin](media/flask/step02-source-control-push-to-remote.png)
 
-### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Soru: Ne sıklıkta bir kaynak denetimine işlemesi gerektiğini?
+### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Soru: Ne sıklıkla bir kaynak denetimine işlemesi gerektiğini?
 
-Yanıt: yaptığınız değişiklikler kaynak denetimine bir kayıt bir nokta ve değişiklik günlüğü oluşturur için hangi depoyu gerekirse geri alabilirsiniz. Her işleme için belirli değişiklikleri de incelenebilir. Git işlemeleri pahalı olduğundan, işleme, çok sayıda değişiklikleri tek bir yürütme içine accumulate üzere daha sık kullanılan daha iyidir. NET bir şekilde, tek tek dosyalar her küçük değişiklik yapmanız gerekmez. Tipik bir işleme bir özellik eklerken bu adımda gerçekleştirilen veya bazı kodu yeniden düzenleme bitti gibi bir yapıyı değiştirme yapmanız gerekir. Ayrıca diğer kullanıcılarla takımınız ayrıntı düzeyi için en iyi herkes için işleme inceleyin.
+Yanıt: Yaptığınız değişiklikler kaynak denetimine oluşturur bir kaydı bir nokta ve değişiklik günlüğü için hangi depoyu gerekirse geri alabilirsiniz. Her işleme için belirli değişiklikleri de incelenebilir. Git işlemeleri pahalı olduğundan, işleme, çok sayıda değişiklikleri tek bir yürütme içine accumulate üzere daha sık kullanılan daha iyidir. NET bir şekilde, tek tek dosyalar her küçük değişiklik yapmanız gerekmez. Tipik bir işleme bir özellik eklerken bu adımda gerçekleştirilen veya bazı kodu yeniden düzenleme bitti gibi bir yapıyı değiştirme yapmanız gerekir. Ayrıca diğer kullanıcılarla takımınız ayrıntı düzeyi için en iyi herkes için işleme inceleyin.
 
 Ne sıklıkta yürüttükten ve iki farklı kaygıları olan ne sıklıkta işlemeler bir uzak depoya gönderin. Uzak depoya göndermeden önce yerel deponuzda birden çok işleme birikebilir. Yeniden yürütme ne sıklıkta nasıl takımınızın depo yönetmek ister şirket bağlıdır.
 
-## <a name="step-2-2-use-a-template-to-render-a-page"></a>2-2. adım: bir sayfayı oluşturmak için şablon kullanma
+## <a name="step-2-2-use-a-template-to-render-a-page"></a>2-2. adım: Bir sayfayı oluşturmak için şablon kullanma
 
 `home` Şu ana kadar sahip olduğunuz işlevi *views.py* sayfası için bir düz metin HTTP yanıt başka bir şey oluşturur. Ancak, çoğu gerçek web sayfaları, genellikle canlı verileri bir araya getiren zengin HTML sayfaları ile yanıt. Aslında, bir işlevi kullanarak bir görünüm tanımlamak için birincil içerik dinamik olarak oluşturmak için nedenidir.
 
@@ -196,23 +195,23 @@ Görünüm için dönüş değeri bir dize olduğundan, dinamik içerik kullanar
 
 1. Kaynak denetimi ve uzak deponuz isterseniz altında açıklandığı gibi güncelleştirmek için değişikliklerinizi işleyin [2-1. adım](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Soru: şablonların ayrı bir dosyada olmam gerekir mi?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Soru: Şablonların ayrı bir dosyada olmam gerekir mi?
 
-Yanıt: şablonları genellikle ayrı HTML dosyalarında korunsa de satır içi şablonu kullanabilirsiniz. Ayrı bir dosya kullanarak, ancak işaretleme ve kod arasında NET bir ayrım sağlamak için önerilir.
+Yanıt: Şablonları genellikle ayrı HTML dosyalarında saklanır olsa da, bir satır içi şablonu da kullanabilirsiniz. Ayrı bir dosya kullanarak, ancak işaretleme ve kod arasında NET bir ayrım sağlamak için önerilir.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Soru: şablonları .html dosya uzantısını kullanmalıdır?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Soru: Şablonları .html dosya uzantısını kullanmalıdır?
 
-Yanıt: *.html* her zaman için ilk bağımsız değişkeni dosyasında tam göreli yolunu tanımlamak için uzantı sayfasında şablon dosyaları için tamamen isteğe bağlı `render_template` işlevi. Ancak, Visual Studio (ve diğer Düzenleyiciler) genellikle kod tamamlama ve sözdizimi coloration ile gibi özellikler size *.html* şablonları sayfasında olgu ağır dosyaları olmayan kesinlikle HTML.
+Yanıt: *.Html* her zaman için ilk bağımsız değişkeni dosyasında tam göreli yolunu tanımlamak için uzantı sayfasında şablon dosyaları için tamamen isteğe bağlı `render_template` işlevi. Ancak, Visual Studio (ve diğer Düzenleyiciler) genellikle kod tamamlama ve sözdizimi coloration ile gibi özellikler size *.html* şablonları sayfasında olgu ağır dosyaları olmayan kesinlikle HTML.
 
 Aslında, Flask projesi ile çalışırken, Visual Studio otomatik olarak düzenlediğiniz HTML dosyası aslında bir Flask şablonudur algılar ve bazı otomatik tamamlama özellikleri sağlar. Örneğin, başlattığınızda bir Flask sayfası şablonu yorum yazmak `{#`, Visual Studio otomatik olarak size kapatma `#}` karakter. **Yorum seçimi** ve **seçimi işletilir satıra çevir** komutları (üzerinde **Düzenle** > **Gelişmiş** menü ve araç çubuğundaki) Ayrıca şablon açıklamaları yerine HTML Yorumlarını kullanın.
 
 ### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Soru: Proje çalıştırabilir, şablon bulunamayan bir hata görüyorum. Ne oldu?
 
-Yanıt: şablon bulunamıyor hatalar görürseniz, Flask proje için uygulama eklediğinizden emin olun *settings.py* içinde `INSTALLED_APPS` listesi. Bu giriş olmadan uygulamanın aramak için Flask bilemezsiniz *şablonları* klasör.
+Yanıt: Şablon bulunamıyor hatalar görürseniz, Flask proje için uygulama eklediğinizden emin olun *settings.py* içinde `INSTALLED_APPS` listesi. Bu giriş olmadan uygulamanın aramak için Flask bilemezsiniz *şablonları* klasör.
 
-### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Soru: şablonları daha fazla alt klasörler halinde düzenlenebilir?
+### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Soru: Şablonlar, daha fazla alt klasörler halinde düzenlenebilir?
 
-Yanıt: Evet, alt klasörler kullanabilir ve göreli yol altında daha sonra başvurmak *şablonları* çağrılarında `render_template`. Bunun yapılması, ad alanları şablonlarınızı için etkili bir şekilde oluşturmak için harika bir yoludur.
+Yanıt: Evet, alt klasörler kullanın ve göreli yol altında daha sonra başvurmak *şablonları* çağrılarında `render_template`. Bunun yapılması, ad alanları şablonlarınızı için etkili bir şekilde oluşturmak için harika bir yoludur.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

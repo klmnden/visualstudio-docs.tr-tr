@@ -1,8 +1,6 @@
 ---
 title: Idialoadcallback | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbde460fadf89b27745fd05729fda6736fb3d3d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bacf5c57955f018c684ffb42afb5b9195cf4543f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924377"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
-Geri aramalar yordamı bulma, böylece konumu girişimi ilerlemesini bildirmek bir kullanıcı arabirimi etkinleştirme DIA simge alır.  
+Yordamı bulmak, bu nedenle konumu denemesinin ilerleme üzerinde rapor için bir kullanıcı arabirimi etkinleştirme DIA Sembol'nden geri çağırmaları alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,25 +29,25 @@ IDiaLoadCallback : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki yöntemlerden bu arabirim tarafından sunulur:  
+ Aşağıdaki yöntemleri bu arabirim tarafından sunulur:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Hata ayıklama dizin .exe dosyasında bulunan çağrılır.|  
-|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Aday .dbg Dosya açıldığında çağrılır.|  
-|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Aday .pdb dosyasını açıldığında çağrılır.|  
-|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Kayıt defteri sorguları sembol arama yolları bulmak için kullanılan varsa belirler.|  
-|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Erişim simgesi sunucuya simgeleri çözümlemek için izin verilip verilmediğini belirler.|  
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Hata ayıklama dizini .exe dosyasında bulundu çağrılır.|  
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Bir aday .dbg Dosya açıldığında çağrılır.|  
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Bir aday .pdb dosyası açıldığında çağrılır.|  
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Kayıt defteri sorguları sembol arama yollarını bulmak için kullanılabilir olmadığını belirler.|  
+|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Erişim bir simge sunucusuna simgeleri çözme izin verilip verilmediğini belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İstemci uygulaması bu arabirimi uygular ve kendisine bir başvuru çağrısında sağlar [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi.  
+ İstemci uygulaması bu arabirimi uygulayan ve çağrısında ona başvuru sağlayan [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi.  
   
- Bir yükleme işlemi uygulanan ek kısıtlamalar için bkz: [Idialoadcallback2](../../debugger/debug-interface-access/idialoadcallback2.md) arabirimi.  
+ Bir yükleme işlemi uygulanan ek kısıtlamaları için bkz: [Idialoadcallback2](../../debugger/debug-interface-access/idialoadcallback2.md) arabirimi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

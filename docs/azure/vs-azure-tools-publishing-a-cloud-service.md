@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b90a0dcaaafa2b3d83c949592951e564fce974f2
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: eee8ca669384f202fe430f4ec836f8e4b1fea9c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923094"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio kullanarak bulut hizmetini yayımlama
 
@@ -33,9 +32,9 @@ Azure uygulamanızı yayımlayın ve Web dağıtımı kullanarak bir web rolü g
 
 Azure uygulamanızı yayımladığınızda, aşağıdaki görevlerden birini yapabilirsiniz:
 
-- Hizmet paketi oluştur: bir dağıtım ortamından uygulamanızı yayımlamak için bu paketin ve hizmet yapılandırma dosyasını kullanabilirsiniz [Azure portalında](https://portal.azure.com).
+- Hizmet paketi oluşturun: Bir dağıtım ortamından uygulamanızı yayımlamak için bu paketin ve hizmet yapılandırma dosyasını kullanabilirsiniz [Azure portalında](https://portal.azure.com).
 
-- Visual Studio'dan Azure projenizi yayımlamak: uygulamanızı doğrudan Azure'da yayımlamak için Yayımla Sihirbazı'nı kullanın. Bilgi için [Azure uygulaması Yayımlama Sihirbazı](vs-azure-tools-publish-azure-application-wizard.md).
+- Azure projenizi Visual Studio'dan yayımlama: Uygulamanızı doğrudan Azure'da yayımlamak için Yayımla Sihirbazı'nı kullanın. Bilgi için [Azure uygulaması Yayımlama Sihirbazı](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Visual Studio'dan bir hizmet paketi oluşturmak için
 
@@ -69,11 +68,11 @@ Uygulamanızın arka uç altyapısı kararlı olduğundan, ancak web rollerinin 
 
 ### <a name="requirements-for-using-web-deploy"></a>Web Dağıtımı'nı kullanma gereksinimleri
 
-- **Geliştirme ve test amacıyla yalnızca**: web rolü çalıştığı sanal makineye doğrudan yapılan değişiklikler. Bu sanal makineyi geri dönüştürülmesi gerekiyorsa, yayımladığınız özgün paketi sanal makine rolü için yeniden oluşturmak için kullanıldığından değişiklikler kaybolur. Web rolü için en son değişiklikleri almak için uygulamanızı yeniden yayımlayın.
+- **Geliştirme ve test amacıyla yalnızca**: Değişiklikler, web rolü çalıştığı sanal makineye doğrudan yapılır. Bu sanal makineyi geri dönüştürülmesi gerekiyorsa, yayımladığınız özgün paketi sanal makine rolü için yeniden oluşturmak için kullanıldığından değişiklikler kaybolur. Web rolü için en son değişiklikleri almak için uygulamanızı yeniden yayımlayın.
 
-- **Yalnızca web rolleri güncelleştirilebilir**: çalışan rolleri güncelleştirilemiyor. Ayrıca, güncelleştirilemiyor `RoleEntryPoint` içinde `web role.cs`.
+- **Yalnızca web rolleri güncelleştirilebilir**: Çalışan rolleri güncelleştirilemiyor. Ayrıca, güncelleştirilemiyor `RoleEntryPoint` içinde `web role.cs`.
 
-- **Yalnızca tek bir örnek bir web rolünün destekleyebilir**: dağıtım ortamınızda birden çok örneğini herhangi bir web rolü olamaz. Ancak, birden çok web rolleri her tek bir örnekle desteklenir.
+- **Yalnızca tek bir örnek bir web rolünün destekleyebilir**: Dağıtım ortamınızda birden çok örneğini herhangi bir web rolü olamaz. Ancak, birden çok web rolleri her tek bir örnekle desteklenir.
 
 - **Uzak Masaüstü bağlantılarını etkinleştirin**: Bu gereksinim, değişiklikler Internet Information Services (IIS) çalıştıran bir sunucuya dağıtmak için sanal makineye bağlanmak için kullanıcı adı ve parola kullanmak Web dağıtımı sağlar. Ayrıca, bu sanal makinede IIS'ye güvenilen bir sertifika eklemek için bu sanal makineye bağlanmak gerekebilir. (Bu sertifika, Web dağıtımı tarafından kullanılan IIS için Uzak bağlantı güvenli olmasını sağlar.)
 

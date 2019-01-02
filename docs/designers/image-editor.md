@@ -2,7 +2,6 @@
 title: Görüntü Düzenleyici
 ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899725"
 ---
 # <a name="image-editor"></a>Görüntü düzenleyicisi
 
@@ -126,10 +125,10 @@ Durumunu etkileyen komutlar **Resim Düzenleyicisi** bulunan **resim düzenleyic
 |**Kılavuz**|Etkinleştirir veya piksel sınırları gösteren Kılavuzu devre dışı bırakır. Görüntüye yakınlaştırma kadar kılavuz görünmeyebilir.|
 |**Sonraki MIP düzeyini görüntüle**|MIP harita zincirindeki büyük sonraki MIP düzeyine etkinleştirir. Tasarım yüzeyinde etkin MIP düzeyi görüntülenir. Bu öğe yalnızca MIP düzeyleri dokular için kullanılabilir.|
 |**Önceki MIP düzeyini görüntüle**|MIP harita zincirdeki sonraki daha küçük MIP düzeyine etkinleştirir. Tasarım yüzeyinde etkin MIP düzeyi görüntülenir. Bu öğe yalnızca MIP düzeyleri dokular için kullanılabilir.|
-|**Kırmızı kanal**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alfa kanalı**|Etkinleştirir veya belirli renk kanal devre dışı bırakır. **Not:** sistematik olarak etkinleştirme veya renk kanallarını devre dışı bırakarak, bir veya daha fazlası için ilgili sorunları ayırabilirsiniz. Örneğin, yanlış Alfa Saydamlığı tanımlayabilirsiniz.|
+|**Kırmızı kanal**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alfa kanalı**|Etkinleştirir veya belirli renk kanal devre dışı bırakır. **Not:**  Sistematik olarak etkinleştirme veya renk kanallarını devre dışı bırakarak, bir veya daha fazlası için ilgili sorunları ayırabilirsiniz. Örneğin, yanlış Alfa Saydamlığı tanımlayabilirsiniz.|
 |**Arka plan**|Etkinleştirir veya arka plan resmi saydam kısımları aracılığıyla görüntülenmesini devre dışı bırakır. Aşağıdaki seçeneklerden birini seçerek arka planı nasıl görüntüleneceğini yapılandırabilirsiniz:<br /><br /> **Dama Tahtası**<br /> Belirtilen arka plan rengi ile birlikte yeşil renk, arka planda bir dama tahtası desenini görüntülemek için kullanır. Resmin saydam kısımları daha belirgin hale getirmek için bu seçeneği kullanabilirsiniz.<br /><br /> Beyaz arka plan<br /> Rengi beyaz arkaplan görüntülenmesi için kullanır.<br /><br /> Siyah arka plan<br /> Arka plan görüntülemek için siyah renk kullanır.<br /><br /> Arka plana animasyon ekle<br /> Dama Tahtası desenini yavaş yatay kaydırır. Resmin saydam kısımları daha belirgin hale getirmek için bu seçeneği kullanabilirsiniz.|
 |**Özellikler**|Alternatif olarak, açar veya kapatır **özellikleri** penceresi.|
-|**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreler**<br /><br /> Birçok ortak görüntü filtreler sağlar: **siyah beyaz**, **bulanıklaştıran**, **Brighten**, **Koyulaştır**, **Kenaralgılama**, **Kabartma**, **renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirin**.<br /><br /> **Grafik motorları**<br /><br /> **D3d11 ile işle**<br /> İşlemek için Direct3D 11 kullanır **Resim Düzenleyicisi** tasarım yüzeyi.<br /><br /> **D3d11warp ile işle**<br /> İşlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır **Resim Düzenleyicisi** tasarım yüzeyi.<br /><br /> **Araçlar**<br /><br /> **Yatay Çevir**<br /> Görüntü, yatay ya da x ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Dikey Çevir**<br /> Görüntü, dikey ya da y ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Mips üret**<br /> MIP düzeyleri görüntü oluşturur. MIP düzeyleri zaten varsa, en büyük MIP düzeyini yeniden oluşturulur. Daha küçük MIP düzeylerine yapılan tüm değişiklikler kaybolur. Ürettiğiniz MIP düzeylerini kaydetmek için kullanmanız gerekir *.dds* görüntüsünü kaydetmek için kullanılan biçim.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:** seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.|
+|**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreler**<br /><br /> Birçok ortak görüntü filtreler sağlar: **Siyah beyaz**, **bulanıklaştıran**, **parlaklaştırma**, **koyu**, **kenar algılama**, **kabartma**, **Renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirin**.<br /><br /> **Grafik motorları**<br /><br /> **D3d11 ile işle**<br /> İşlemek için Direct3D 11 kullanır **Resim Düzenleyicisi** tasarım yüzeyi.<br /><br /> **D3d11warp ile işle**<br /> İşlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır **Resim Düzenleyicisi** tasarım yüzeyi.<br /><br /> **Araçlar**<br /><br /> **Yatay Çevir**<br /> Görüntü, yatay ya da x ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Dikey Çevir**<br /> Görüntü, dikey ya da y ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Mips üret**<br /> MIP düzeyleri görüntü oluşturur. MIP düzeyleri zaten varsa, en büyük MIP düzeyini yeniden oluşturulur. Daha küçük MIP düzeylerine yapılan tüm değişiklikler kaybolur. Ürettiğiniz MIP düzeylerini kaydetmek için kullanmanız gerekir *.dds* görüntüsünü kaydetmek için kullanılan biçim.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:** Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.|
 
 ### <a name="image-editor-toolbar"></a>Resim Düzenleyicisi araç çubuğu
 
@@ -216,7 +215,7 @@ Bir bölge seçin, sonra seçimi işaretin boyutunu değiştirerek veya görünt
 
 Aşağıdaki tablo, geçerli değiştirici tuş birleşimlerini açıklar:
 
-|CTRL|Kaydırma|Alt|Açıklama|
+|CTRL|Shift|Alt|Açıklama|
 |----------|-----------|---------|-----------------|
 ||||Seçili bölge içeriğini yeniden boyutlandırır.|
 ||**Kaydırma**||Orantılı olarak seçili bölge içeriğini yeniden boyutlandırır.|

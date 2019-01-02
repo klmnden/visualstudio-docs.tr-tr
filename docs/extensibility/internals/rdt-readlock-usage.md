@@ -1,9 +1,6 @@
 ---
-title: RDT_ReadLock kullanım | Microsoft Docs
-ms.custom: ''
+title: RDT_ReadLock kullanımı | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
@@ -16,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fda2fbb4a4b03dff9d677d9c7581a4138d9fcf7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96248d799eae5005c996fa1cc192ee3b447571f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837439"
 ---
-# <a name="rdtreadlock-usage"></a>RDT_ReadLock kullanımı
+# <a name="rdtreadlock-usage"></a>RDT_ReadLock Kullanımı
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> Visual Studio IDE içinde şu anda açık olan tüm belgelerin listesini olduğu çalıştıran Belge tablosu (RDT), bir belge kilitleme için mantığı sağlayan bayrak değeridir. Bu bayrak, belge açıldığında ve bir belgeyi görünür kullanıcı arabiriminde görünmez bellekte tutulan olup belirler.
+<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> bir belge çalıştırılan Belge tablosu (RDT), kilitleme Visual Studio IDE içinde şu anda açık olan tüm belgelerin listesi olduğu için mantıksal sağlayan bayrak değeridir. Bu bayrak açıldığında belgeleri ve belge kullanıcı arabiriminde görünür veya kilitlerinden bellekte tutulan olup belirler.
 
-Genellikle, kullanacağınız <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> zaman aşağıdakilerden biri doğruysa:
+Genellikle, kullanacağınız <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> aşağıdakilerden birini olduğunda true:
 
-- Bir belgeyi görünmez açmak istediğinizde ve salt okunur ancak değil henüz hangi kurulan <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> sahip.
+- Görünmez bir belgeyi açmaya istediğinizde ve salt okunur ancak değil ancak hangi kurulan <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> sahip.
 
-- Kullanıcı Arabiriminde görüntülenir ve kapatmak çalıştı önce görünmez açılmış bir belgeyi kaydetmek için sizden kullanıcıya istediğinizde.
+- Kullanıcı önce kullanıcı görünmez açılmış bir belge kaydedilmeyeceğinin sorulması için istediğiniz zaman kullanıcı Arabiriminde görüntülenen ve kapatmak çalışıldı.
 
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Görünür ve görünmez belgeleri yönetme
 
-Bir kullanıcı kullanıcı Arabiriminde bir belge açıldığında bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> belge sahibi oluşturulması gerekir ve bir <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> bayrağı ayarlanmış olması gerekir. Öyle değilse <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> sahibi kurulabileceği sonra kullanıcı tıklattığında belge kaydedilmeyecek **Tümünü Kaydet** veya IDE kapatır. Bu belge görünmez burada bellekte değiştirilir ve kullanıcı kapanışında belge kaydetmenizi veya varsa kaydedilmiş açık olup olmadığını anlamına gelir **Tümünü Kaydet** seçilir, ardından bir `RDT_ReadLock` kullanılamaz. Bunun yerine, kullanmanız gereken bir `RDT_EditLock` ve kaydetme bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> zaman bir <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> bayrağı.
+Bir kullanıcı kullanıcı Arabiriminde bir belge açıldığında bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> belge için sahip yeniden oluşturulması ve <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> bayrağı ayarlanmalıdır. Hayır ise <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> sahibi kurulabilir ve ardından kullanıcı tıkladığında belge kaydedilmeyecek **Tümünü Kaydet** veya IDE'yi kapatır. Bu belge görünmez bellek değiştirilir ve kullanıcı belgeyi Kapat kaydetmenizi veya, kaydedilen açık olup olmadığını anlamına gelir **Tümünü Kaydet** seçilir, ardından bir `RDT_ReadLock` kullanılamaz. Bunun yerine, kullanmanız gereken bir `RDT_EditLock` ve kaydetme bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> olduğunda bir <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> bayrağı.
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock ve Belge değişikliği
 
-Belge görünmez açılmasını sunacak bahsedilen önceki bayrağı gösterir, `RDT_EditLock` zaman belge açıldığında kullanıcı tarafından görünür **DocumentWindow**. Bu durumda, kullanıcı ile sunulan bir **kaydetmek** ne zaman sor görünür **DocumentWindow** kapalı. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` kullanan uygulamaları <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> hizmet başlangıçta iş yalnızca bir `RDT_ReadLock` (yani, belge görünmez bilgilerini açıldığında) alınır. Belge değiştirilmesi gerekir, daha sonra ardından kilidi için zayıf yükseltilir **RDT_EditLock**. Kullanıcı daha sonra belgeyi görünür durumda açarsa **DocumentWindow**, `CodeModel`'s zayıf `RDT_EditLock` yayımlanır.
+Belgenin görünmez açılış verecek bahsedilen önceki bayrağı gösterir, `RDT_EditLock` zaman belge açıldığında kullanıcı tarafından görünür **DocumentWindow**. Bu durumda, kullanıcı ile sunulur bir **Kaydet** ne zaman istemleri görünür **DocumentWindow** kapalı. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` kullanan uygulamaları <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> hizmet başlangıçta iş yalnızca bir `RDT_ReadLock` (yani, belge görünmez bilgileri ayrıştırmak için ne zaman açıldığını) alınır. Belge değiştirilmesi gerekir, daha sonra sonra kilidi için bir zayıf yükseltilir **RDT_EditLock**. Kullanıcı daha sonra belge içinde görünen açarsa **DocumentWindow**, `CodeModel`'s zayıf `RDT_EditLock` serbest bırakılır.
 
-Kullanıcı ardından kapatırsa **DocumentWindow** ve seçer **Hayır** açık belgeyi kaydetmek isteyip istemediğiniz sorulduğunda sonra `CodeModel` uygulama belgedeki tüm bilgilerin siler ve açana Daha fazla bilgi ve belge için gerekli görünmez sonraki zaman diskten belgesi. Bu davranış subtlety burada kullanıcının açılır bir örneğidir **DocumentWindow** görünmez açık belgenin değiştirdiği, kapatılır ve ardından seçer **Hayır** belgeyi kaydetmek isteyip istemediğiniz sorulduğunda. Belge varsa, bu durumda, bir `RDT_ReadLock`, ardından belgeyi değil gerçekte kapatılacak ve belgeyi kaydetmesini önlemek kullanıcının seçtiği olsa bile değiştirilen belgeyi görünmez bellekte açık kalır.
+Kullanıcı ardından kapanıyorsa **DocumentWindow** seçerse **Hayır** açık belgeyi kaydetmek isteyip istemediğiniz sorulduğunda sonra `CodeModel` uygulama belgedeki tüm bilgilerin siler ve yeniden açar Belge diskten belge için daha fazla bilgi gerekiyor sonraki açışınızda görünmez. Bu davranış subtlety burada kullanıcının açılır bir örneğidir **DocumentWindow** görünmez açık belgenin değiştirdiği, kapatılan ve sonra seçer **Hayır** belgeyi kaydetmek isteyip istemediğiniz sorulduğunda. Belge varsa, bu durumda bir `RDT_ReadLock`, sonra belgeyi değil gerçekten kapatılacak ve kullanıcı belgeyi kaydedemez seçmiş olsanız da Değiştirilen belgeyi görünmez bellekte açık kalır.
 
-Belgenin görünmez açılırken bir zayıf kullanıyorsa `RDT_EditLock`, sonra da kullanıcının belgeyi görünür şekilde açar ve diğer kilitler tutulmaz kendi kilit verir. Kullanıcının kapattığı zaman **DocumentWindow** ve seçer **Hayır** belgeyi kaydetmek isteyip istemediğiniz sorulduğunda sonra belgenin bellekten kapatılması gerekir. Başka bir deyişle, görünmez istemci bu oluşumu izlemek RDT olaylarını dinleyecek gerekir. Belge gereklidir başlattığınızda belgeyi yeniden gerekir.
+Belgenin görünmez açılış bir zayıf kullanıyorsa `RDT_EditLock`, sonra da kullanıcı ölçeklendirirseniz belge açılır ve başka bir kilit tutulan kilidin verir. Kullanıcının kapattığı zaman **DocumentWindow** seçerse **Hayır** belgeyi kaydetmek isteyip istemediğiniz sorulduğunda sonra belgeyi bellekten kapatılmalıdır. Bu, görünmez istemci bu durum izlemek RDT olayları dinlemeye devam etmesi gereken anlamına gelir. Belge gerekli, sonraki açışınızda, belgenin kapatılıp gerekir.

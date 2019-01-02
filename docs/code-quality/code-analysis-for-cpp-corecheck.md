@@ -2,7 +2,6 @@
 title: C++ temel yönergeleri denetleyici başvurusu
 ms.date: 03/22/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11386dcd742e64737a4b06f2db9f55145f535d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959490"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ temel yönergeleri denetleyici başvurusu
 
@@ -67,7 +66,7 @@ Bu bölüm, C++ temel yönergeleri denetleyici uyarıları listeler. Kod Analizi
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) işaretçi aritmetiği kullanmayın. Bunun yerine yayılma kullanın. Bkz: [C++ temel yönergeleri Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-İfade '% expr %': diziden işaretçiye bozunma gerçekleştirmeyin. Bkz: [C++ temel yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+'% Expr %'. ifade: Diziden işaretçiye bozunma gerçekleştirmeyin. Bkz: [C++ temel yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 ## <a name="uniquepointer-group"></a>UNIQUE_POINTER grubu
 
@@ -97,23 +96,23 @@ Bu bölüm, C++ temel yönergeleri denetleyici uyarıları listeler. Kod Analizi
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) genel Başlatıcı, '% Sembol %' extern nesnesine erişir. Bkz: [C++ temel yönergeleri I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) özel oluşturma ve yok etme nesneleriyle adlandırılmamış kaçının. Bkz: [ES.84: (çalışmayın) adı olmayan yerel bir değişken bildirmek](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) özel oluşturma ve yok etme nesneleriyle adlandırılmamış kaçının. Bkz: [ES.84: (Çalışmayın) adı olmayan yerel bir değişken bildirmek](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="class-group"></a>SINIF grubu
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) tanımlayın veya türü '% Sembol %' varsayılan işlem silmek, tanımlama veya tüm silin. Bkz: [C++ temel yönergeleri C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) işlevi '% Sembol %', 'override' ile işaretlenmemelidir. Bkz: [C.128: sanal işlevleri tam olarak bir sanal geçersiz kılma veya son belirtmelidir](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) işlevi '% Sembol %', 'override' ile işaretlenmemelidir. Bkz: [C.128: Sanal işlevler, tam olarak bir sanal geçersiz kılma veya son belirtmelidir](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
 [C26434 DONT_HIDE_METHODS](C26434.md) '% symbol_1% ' işlevi, bir sanal olmayan işlev '% symbol_2% ' gizler. Bkz: [C++ temel yönergeleri C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) '% Sembol %' işlevi tam olarak bir 'virtual', 'override' veya 'final' belirtmeniz gerekir. Bkz: [C.128: sanal işlevleri tam olarak bir sanal geçersiz kılma veya son belirtmelidir](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) '% Sembol %' işlevi tam olarak bir 'virtual', 'override' veya 'final' belirtmeniz gerekir. Bkz: [C.128: Sanal işlevler, tam olarak bir sanal geçersiz kılma veya son belirtmelidir](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) ya da ortak sanal ya da korumalı sanal olmayan yok edici bir sanal işlev ile ' % Sembol %' türü gerekiyor. Bkz: [C++ temel yönergeleri C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) geçersiz kılmak Yıkıcı açıkça 'override' veya 'virtual' belirticileri kullanmamanız. Bkz: [C.128: sanal işlevleri tam olarak bir sanal geçersiz kılma veya son belirtmelidir](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) geçersiz kılmak Yıkıcı açıkça 'override' veya 'virtual' belirticileri kullanmamanız. Bkz: [C.128: Sanal işlevler, tam olarak bir sanal geçersiz kılma veya son belirtmelidir](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 
 ## <a name="type-group"></a>Grup türü
@@ -131,7 +130,7 @@ Bu bölüm, C++ temel yönergeleri denetleyici uyarıları listeler. Kod Analizi
 [C26440 DECLARE_NOEXCEPT](C26440.md) işlevi '% Sembol %' bildirilebilir `noexcept`. Bkz: [C++ temel yönergeleri F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) bildirilen bir işlev **noexcept** ancak özel durumlar oluşturabilecek bir işlevi çağırır.
-Bkz: [C++ temel yönergeleri: F.6: işlevinizi oluşturması beklenmiyor, noexcept bildirirken](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Bkz: [C++ temel yönergeleri:  F.6: İşlevinizi oluşturması beklenmiyor, noexcept bildirirken](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 ## <a name="concurrency-group"></a>EŞZAMANLILIK grubu
 
@@ -141,7 +140,7 @@ Bkz: [C++ temel yönergeleri: F.6: işlevinizi oluşturması beklenmiyor, noexce
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) '% işlevi %' işlevi için başvuru bağımsız değişkeni '% değişken %' olarak işaretlenmiş `const`. Bkz: [C++ temel yönergeleri con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): '% işlevi %' işlevi için işaretçi bağımsız değişkeni '% değişken %' işaretçisi olarak işaretlenebilir `const`. Bkz: [C++ temel yönergeleri con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): '% İşlevi %' işlevi için işaretçi bağımsız değişkeni '% değişken %' işaretçisi olarak işaretlenebilir `const`. Bkz: [C++ temel yönergeleri con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) işaretçisi olarak işaretleyin, '% değişken %' işaret ettiği değer yalnızca bir kez atanmış `const`. Bkz: [C++ temel yönergeleri con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
@@ -185,7 +184,7 @@ Bkz: [C++ temel yönergeleri: F.6: işlevinizi oluşturması beklenmiyor, noexce
 
 ## <a name="bounds-group"></a>SINIR grubu
 
-[C26446 USE_GSL_AT](c26446.md) kullanmayı tercih `gsl::at()` yerine denetlenmeyen alt simge işleci. Bkz: [C++ temel yönergeleri: Bounds.4: standart kitaplık işlevleri ve sınırları işaretli olmayan türler kullanmayın](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) kullanmayı tercih `gsl::at()` yerine denetlenmeyen alt simge işleci. Bkz: [C++ temel yönergeleri:  Bounds.4: Standart kitaplık işlevleri ve sınırları işaretli olmayan türler kullanmayın](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
 İşaretçi aritmetiği kullanmayın. Bunun yerine yayılma kullanın. Bkz: [C++ temel yönergeleri Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -194,19 +193,19 @@ Bkz: [C++ temel yönergeleri: F.6: işlevinizi oluşturması beklenmiyor, noexce
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) değeri % değeri olan sınırları dışında (0, bağlı %) değişkeni '% değişken %'. Yalnızca dizi sınırları içindeki sabit ifadeleri dizini. Bkz: [C++ temel yönergeleri Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) ifade '% expr %': diziden işaretçiye bozunma gerçekleştirmeyin. Bkz: [C++ temel yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) ifade '% expr %': Diziden işaretçiye bozunma gerçekleştirmeyin. Bkz: [C++ temel yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>GSL grubu
 
 [C26445 NO_SPAN_REF](c26445.md) başvuru `gsl::span` veya `std::string_view` bir ömür sorununun göstergesi olabilir.
-Bkz: [C++ temel yönergeleri GSL.view: görünümleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+Bkz: [C++ temel yönergeleri GSL.view: Görünümler](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md) kullanmayı tercih `gsl::at()` yerine denetlenmeyen alt simge işleci. Bkz: [C++ temel yönergeleri: Bounds.4: standart kitaplık işlevleri ve sınırları işaretli olmayan türler kullanmayın](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) kullanmayı tercih `gsl::at()` yerine denetlenmeyen alt simge işleci. Bkz: [C++ temel yönergeleri:  Bounds.4: Standart kitaplık işlevleri ve sınırları işaretli olmayan türler kullanmayın](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) kullanmayı düşünün `gsl::finally` son eylem amaçlanıyorsa. Bkz: [C++ temel yönergeleri: GSL.util: yardımcı programlar](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY ](c26448.md) kullanmayı düşünün `gsl::finally` son eylem amaçlanıyorsa. Bkz: [C++ temel yönergeleri:  GSL.util: Yardımcı programları](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` veya `std::string_view` geçici öğeden oluşturulan ne zaman geçersiz olacak geçici geçersiz kılınır. Bkz: [C++ temel yönergeleri: GSL.view: görünümler](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` veya `std::string_view` geçici öğeden oluşturulan ne zaman geçersiz olacak geçici geçersiz kılınır. Bkz: [C++ temel yönergeleri: GSL.view: Görünümleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 
 ## <a name="deprecated-warnings"></a>Kullanım dışı uyarıları

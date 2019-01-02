@@ -6,7 +6,6 @@ ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 17b204a54e2ecd52438f6a05f5190a6ee0f396f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955613"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Dosyalar ve klasörler için güven ayarlarını yapılandırma
 
@@ -37,11 +36,11 @@ Güven ayarlarını değiştirmek için aşağıdaki adımları izleyin:
 
 2. Dosya ve klasörler için istediğiniz denetimleri düzeyini seçin. Her biri için farklı denetimleri olabilir. Seçenekler şunlardır:
 
-   * **Hiçbir doğrulama**: Visual Studio değil tüm denetimleri gerçekleştirin.
+   * **Hiçbir doğrulama**: Visual Studio, tüm denetimler gerçekleştirmez.
 
-   * **Web özniteliğinin işareti doğrulayın**: dosya veya klasörün web öznitelik işareti varsa, Visual Studio engeller ve açmak için izin ister.
+   * **Web özniteliğinin işareti doğrulayın**: Dosya veya klasörün web öznitelik işareti varsa, Visual Studio engeller ve açmak için izin ister.
 
-   * **Yol güvenilir olduğundan emin olun**: dosya veya klasör yolu parçası değilse **güvenilen yolları** listesi, Visual Studio engeller ve açmak için izin ister.
+   * **Yol güvenilir olduğundan emin olun**: Dosya veya klasör yolu parçası değilse **güvenilen yolları** listesi, Visual Studio engeller ve açmak için izin ister.
 
    ![Güven doğrulama seçenekleri](media/trust-settings.png)
 

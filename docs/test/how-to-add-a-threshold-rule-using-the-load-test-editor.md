@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 76cf2ff3cd5ab3f18f76a5c6ea68be2411b76d84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896337"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak bir eşik kuralı ekleme
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Nasıl Yapılır: Yük Testi Düzenleyicisini kullanarak bir eşik kuralı ekleme
 
 Yük testlerindeki eşik kuralları, bir performans sayacı değeri bir sabit değer ya da başka bir performans sayacı değeri ile karşılaştırın.
 
@@ -38,7 +37,7 @@ Yük testlerindeki eşik kuralları, bir performans sayacı değeri bir sabit de
 
      **Eşik Kuralı Ekle** iletişim kutusu görüntülenir.
 
-5.  Kurallar iki türlerinden birini seçebilirsiniz: **Sabiti Karşılaştır** ve **sayacı Karşılaştır**. Uygun türünü seçin ve şu değerleri ayarlayın.
+5.  İki kural türlerinden birini seçebilirsiniz: **Sabiti Karşılaştır** ve **karşılaştırma sayaç**. Uygun türünü seçin ve şu değerleri ayarlayın.
 
     > [!NOTE]
     > Ayarlama **aşarsa uyar** özelliğini **True** bir Eşiği aşan bir sorun olduğunu belirtmek için veya **False** eşiğin altında kalan bir sorun olduğunu belirtmek için.

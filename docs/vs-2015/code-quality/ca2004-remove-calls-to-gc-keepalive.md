@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 944862f742e96ef061c3c425bb28c0addcb4fb4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c8d35a94390e426fca47456046fb42820992668
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961948"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: GC.KeepAlive'a çağrıları kaldırın
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: GC kaldırın. KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +47,3 @@ ms.locfileid: "49829072"
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Yalnızca dönüştürmek teknik olarak doğru değilse, bu uyarının gösterilmemesi `SafeHandle` sınıfınıza kullanımı.
-
-
-

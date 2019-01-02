@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5be8699d23fef3d8e4971bea1cea782bbd9fbdef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 15e7098971e8107194f99c41307d9dc9149f4e02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957877"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +41,7 @@ ms.locfileid: "53059000"
 
 3. Doğru şekilde seçmiş olduğunuz seçeneğini kullanın.
 
-   **Önemli:** asla sabit kodlamayın onaltılık, RGB veya sistem renkleri, kullanıcı Arabirimi öğeleri için. Hizmetleri kullanarak hue ayarlama esneklik sağlar. Ayrıca, hizmeti olmadan, temasını değiştirdikten yeteneklerinden yararlanmak mümkün olmayacaktır [VSColor hizmet](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+   **ÖNEMLİ:** Asla sabit kodlamayın onaltılık, RGB veya sistem renkleri, kullanıcı Arabirimi öğeleri için. Hizmetleri kullanarak hue ayarlama esneklik sağlar. Ayrıca, hizmeti olmadan, temasını değiştirdikten yeteneklerinden yararlanmak mümkün olmayacaktır [VSColor hizmet](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio için renk atamak için yöntemleri arabirim öğeleri
  Kullanıcı Arabirimi öğeleri için en uygun yöntemi seçin.
@@ -77,7 +76,7 @@ ms.locfileid: "53059000"
  Ortak paylaşılan renkler kullanmadan önce doğru kullanma hakkında anladığınızdan emin olun. Yanlış kullanımı ortak paylaşılan renkler, kullanıcılarınız için tutarsız, bozucu veya karmaşık bir deneyim neden olabilir.
 
 ### <a name="user-customizable-colors"></a>Kullanıcı tarafından özelleştirilebilir renkleri
- Bkz: [son kullanıcılar için renk gösterme](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+ Bkz. [Son kullanıcılar için renk gösterme](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
  Bazı durumlarda, bir kod Düzenleyicisi'ni veya tasarım yüzeyine, oluşturduğunuz gibi kullanıcı Arabirimi, özelleştirmek son kullanıcının izni isteyeceksiniz. Özelleştirilebilir kullanıcı Arabirimi bileşenleri bulunduğunda **yazı tipleri ve renkler** bölümünü **Araçlar > Seçenekler** burada kullanıcılar seçebilir ön plan rengini, arka plan rengi veya her ikisini birden değiştirmek için iletişim kutusunda,.
 
@@ -118,7 +117,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ```
 
- **Not:** tarafından döndürülen değerlerin COLORREF **GetVSSysColorEx()** içeren yalnızca R, G, B bileşenlerinin bir Tema rengi. Bir tema girişi saydamlık kullanıyorsa, alfa kanalı değeri döndürmeden önce göz ardı edilir. İlgilenilen ortam rengi saydamlık kanal önemli olduğu bir yerde kullanılması gerekiyorsa, bu nedenle, IVsUIShell5.GetThemedColor IVsUIShell2::GetVSSysColorEx yerine, bu konunun ilerleyen kısımlarında açıklandığı gibi kullanmalısınız.
+ **NOT:** Tarafından döndürülen değerlerin COLORREF **GetVSSysColorEx()** içeren yalnızca R, G, B bileşenlerinin bir Tema rengi. Bir tema girişi saydamlık kullanıyorsa, alfa kanalı değeri döndürmeden önce göz ardı edilir. İlgilenilen ortam rengi saydamlık kanal önemli olduğu bir yerde kullanılması gerekiyorsa, bu nedenle, IVsUIShell5.GetThemedColor IVsUIShell2::GetVSSysColorEx yerine, bu konunun ilerleyen kısımlarında açıklandığı gibi kullanmalısınız.
 
 ##### <a name="from-managed-code"></a>Yönetilen koddan
  VSColor hizmete aracılığıyla yerel koda erişim oldukça basittir. Yönetilen kod ile çalışıyorsanız, ancak hizmetin nasıl kullanılacağını belirlemek zor olabilir. Aklınızda C# kod parçacığı bu işlemi gösteren şöyledir:
@@ -389,7 +388,7 @@ protected override void Dispose(bool disposing)
 
 - Her üyesi kategori bilgilerini görüntüleme
 
-  **Not:** her kategori en az bir görüntü öğesi içermelidir.
+  **NOT:** Her kategori en az bir görüntü öğesi içermelidir.
 
   IDE kullanır **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** çeşitli kategorileri birleşimini tanımlamak için arabirim.
 
@@ -417,7 +416,7 @@ protected override void Dispose(bool disposing)
 
 - **IDE değişiklikleri için yoklama**. Bu sistem uygulanan yapılabilir [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi. Öncelikle desteği için Kalıcılık, ancak [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) yöntemi görüntü öğeleri için yazı tipi ve renk bilgilerini elde edebilirsiniz. Yazı tipi ve renk ayarları hakkında daha fazla bilgi için bkz. MSDN makalesi [erişme depolanan yazı tipi ve renk ayarlarını](https://msdn.microsoft.com/library/bb166382.aspx).
 
-  **Not:** yoklama sonuçları doğru olduğundan emin olmak için kullanın [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) önbellek temizleme ve güncelleştirme alma yöntemleri çağrılmadan önce gerekli olup olmadığını belirlemek için arabirimi [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi.
+  **NOT:** Yoklama sonuçları doğru olduğundan emin olmak için kullanın [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) önbellek temizleme ve güncelleştirme alma yöntemleri çağrılmadan önce gerekli olup olmadığını belirlemek için arabirimi [IVsFontAndColorStorage ](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) arabirimi.
 
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Özel yazı tipi ve renk kategorisi arabirimleri uygulama olmadan kaydetme
  Aşağıdaki kod örneği, özel yazı tipi kaydedin ve arabirimleri uygulama olmadan kategori rengi gösterilmektedir:

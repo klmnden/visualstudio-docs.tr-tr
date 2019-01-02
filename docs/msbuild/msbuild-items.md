@@ -1,9 +1,7 @@
 ---
 title: MSBuild öğeleri | Microsoft Docs
 description: ItemGroup Msbuild'i içerecek öznitelik bir derlemede dahil edilecek dosyaları belirtmek için kullanın
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898706"
 ---
 # <a name="msbuild-items"></a>MSBuild öğeleri
 MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder (dosyaları belirtilen `Include` özniteliği). Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
@@ -55,9 +53,9 @@ MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder
 -   .NET Framework 3.5, başlangıç `Target` öğeleri [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğeler içerebilir öğeler öğesi.  
   
 ##  <a name="reference-items-in-a-project-file"></a>Bir proje dosyasında öğeleri başvurusu  
- Öğe türlerine proje dosyası boyunca başvurulacak söz dizimini kullanın. @(\<Itemtype >). Örneğin, kullanarak önceki örnekte öğesi türü başvuru `@(Compile)`. Bu söz dizimini kullanarak bu görevi parametre olarak öğe türü belirterek görevlere öğeleri geçirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).  
+ Öğe türlerine proje dosyası boyunca başvurulacak söz dizimini kullanın. @(\<Itemtype >). Örneğin, kullanarak önceki örnekte öğesi türü başvuru `@(Compile)`. Bu söz dizimini kullanarak bu görevi parametre olarak öğe türü belirterek görevlere öğeleri geçirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).  
   
- Genişletildiğinde, varsayılan olarak, bir öğe türünün öğeleri noktalı virgülle (;) ayrılır. Kullanabileceğiniz sözdizimi @(\<Itemtype >, '\<ayırıcı >') varsayılan dışındaki bir ayırıcı belirtmek için. Daha fazla bilgi için [nasıl yapılır: virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Genişletildiğinde, varsayılan olarak, bir öğe türünün öğeleri noktalı virgülle (;) ayrılır. Kullanabileceğiniz sözdizimi @(\<Itemtype >, '\<ayırıcı >') varsayılan dışındaki bir ayırıcı belirtmek için. Daha fazla bilgi için [nasıl yapılır: Virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Joker karakter öğelerini belirtmek için kullanın  
 
@@ -81,7 +79,7 @@ Kullanabileceğiniz `**`, `*`, ve `?` her dosyayı ayrı ayrı listelemek yerine
 
 Dahil etmek değişmez değer isterseniz `*` veya `?` joker karakter genişletmesi olmadan bir öğe karakterleriyle gerekir [joker karakterleri kaçış](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Joker karakterler hakkında daha fazla bilgi için bkz: [nasıl yapılır: derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).  
+Joker karakterler hakkında daha fazla bilgi için bkz: [nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).  
 
 ##  <a name="use-the-exclude-attribute"></a>Hariç tutma özniteliği kullanın  
  Öğeler içerebilir `Exclude` belirli öğeler (dosyalar) öğesi türünden dışlar özniteliği. `Exclude` Öznitelik genellikle joker karakterler ile birlikte kullanılır. Örneğin, aşağıdaki XML ekler her *.cs* dışında dosya CSFile öğesi türü dizindeki *DoNotBuild.cs* dosya.  
@@ -99,7 +97,7 @@ Joker karakterler hakkında daha fazla bilgi için bkz: [nasıl yapılır: derle
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Daha fazla bilgi için [nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Daha fazla bilgi için [nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="item-metadata"></a>Öğe meta verileri  
  Öğe meta veri bilgilerine ek olarak içerebilir `Include` ve `Exclude` öznitelikleri. Bu meta veriler, toplu iş görevleri ve hedefleri için veya öğeler hakkında daha fazla bilgi gerektiren görevler tarafından kullanılabilir. Daha fazla bilgi için [toplu işleme](../msbuild/msbuild-batching.md).  
@@ -326,9 +324,9 @@ Output:
 ## <a name="see-also"></a>Ayrıca bkz.  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
- [Nasıl yapılır: derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md)   
- [Nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Nasıl yapılır: virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md)   
+ [Nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Nasıl yapılır: Virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Öğe tanımları](../msbuild/item-definitions.md)   
  [Toplu işleme](../msbuild/msbuild-batching.md)   
  [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)

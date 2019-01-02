@@ -1,9 +1,6 @@
 ---
 title: Kaynak Denetimi Eklentisi uygulamak için en iyi uygulamalar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, best practices
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16699f520390c0bc4f062f9db82e66a26ef5fd8f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b8e28733c91097094f38fa92ff0f21d54a194942
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948413"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Kaynak Denetimi Eklentisi uygulamak için en iyi yöntemler
 Aşağıdaki teknik ayrıntıları'nın, güvenilir bir şekilde bir kaynak denetimi eklentisi içinde yardımcı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

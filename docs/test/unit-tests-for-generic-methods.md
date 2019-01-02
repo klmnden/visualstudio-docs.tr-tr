@@ -2,7 +2,6 @@
 title: Genel Metotlar için birim testleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ced33798841a732773310a902c0d51568bc36fe7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 974648db0a6b8fa8ede1c26f7e1d605d0023b699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924130"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel metotlar için birim testleri
 
@@ -34,7 +33,7 @@ Ne zaman Visual Studio'nun oluşturduğu genel bir sınıf için bir birim testi
 
 -   [Bir tür kısıtlaması kullanın](#TypeConstraintNotSatisfied). Bu örnek, bir tür kısıtlaması kullanan bir genel yöntem için birim testi gösterir. Bu örnekte, tür kısıtlaması karşılanmıyor.
 
-###  <a name="EditingGeneratedTestCode"></a> Örnek 1: Oluşturulan test kodu düzenleme
+###  <a name="EditingGeneratedTestCode"></a> Örnek 1: Oluşturulan test kod düzenleme
  Bu bölümdeki test kodu adlı bir test altındaki kod yöntemi test `SizeOfLinkedList()`. Bu yöntem, bağlantılı listesinde düğüm sayısını belirten bir tamsayı döndürür.
 
  Visual Studio Enterprise tarafından oluşturulan gibi ilk kod örneği bölümde oluşturulan Test kodu, düzenlenmemiş test kodu gösterir. ' % S'bölümünde düzenlenen Test kodu, ikinci örnek, iki farklı veri türleri için SizeOfLinkedList yöntemi çalışmasını test nasıl yapabileceğiniz gösterir `int` ve `char`.
@@ -120,7 +119,7 @@ public void SizeOfLinkedListTest()
 > Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir test çalıştırılırken hata ayıklama](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 
-###  <a name="TypeConstraintNotSatisfied"></a> Örnek 2: bir tür kısıtlaması kullanma
+###  <a name="TypeConstraintNotSatisfied"></a> Örnek 2: Bir tür kısıtlaması kullanma
  Bu örnek, bir birim testi karşılanmadı bir tür kısıtlaması kullanan bir genel yöntem için gösterir. İlk bölüm, kod test altındaki kod projesi gösterir. Tür kısıtlaması vurgulanır.
 
  İkinci bölümde test projesinden kod gösterilmektedir.

@@ -7,36 +7,35 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f0ef5829c89a10dcf985d0815ae8144b6cb791b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d0ed4ba38f93d57c8f8ab18245155dbd9013a5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880643"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik türleri eşleşmiyor
 
 Bir ilişki oluşturulamıyor \<ilişkilendirme adı >-özellik türleri eşleşmiyor. Özellik türlerinin eşleşmesi gerekmez: \<özellik adları >.
 
-İlişkilendirmeleri tanımlanan seçili tarafından **ilişki özellikleri** içinde **ilişkilendirme Düzenleyicisi** iletişim kutusu. İlişkiyi her tarafında özellikleri aynı veri türünde olmalıdır.
+İlişkilendirmeleri tanımlanmış tarafından seçilen **ilişkilendirme özellikleri** içinde **ilişkilendirme Düzenleyicisi** iletişim kutusu. İlişkinin her iki taraftaki özellikleri aynı veri türünde olmalıdır.
 
-İletisinde listelenen özellikleri aynı veri türlerine sahip değilsiniz.
+İleti içinde listelenen özellikler aynı veri türlerine sahip değilsiniz.
 
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. İleti inceleyin ve iletide çağrılan özellikleri not alın.
+1. İletisini inceleyin ve iletide çekilerek özellikleri not alın.
 
-2. Tıklatın **Tamam** iletişim kutusunu kapatmak için.
+2. Tıklayın **Tamam** iletişim kutusunu kapatın.
 
-3. İnceleme **ilişki özellikleri** ve aynı veri türünün özellikleri seçin.
+3. İnceleme **ilişkilendirme özellikleri** ve aynı veri türünde özelliklerini seçin.
 
 4. **Tamam**'ı tıklatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [O/R Tasarımcısı iletileri](../data-tools/o-r-designer-messages.md)
-- [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Nasıl yapılır: LINQ-SQL sınıfları (O/R Tasarımcısı) arasında bir ilişkilendirme oluşturun](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

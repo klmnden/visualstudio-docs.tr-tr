@@ -1,9 +1,6 @@
 ---
 title: Üst öğe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902443"
 ---
 # <a name="parent-element"></a>Üst öğe
 Bir düğme veya birleşik giriş kutusunun üst yalnızca bir grup olabilir. Bir menü veya grubun üst herhangi bir menü veya grup olabilir. İçinde bir [CommandPlacement öğesi](../extensibility/commandplacement-element.md), bu öğe gereklidir; diğer tüm durumlarda isteğe bağlıdır. Bu öğe atlanırsa, üst `Group_Undefined:0` kapsanan.  
@@ -41,7 +38,7 @@ Bir düğme veya birleşik giriş kutusunun üst yalnızca bir grup olabilir. Bi
 |kimlik|Gerekli. Kimliği GUID/kimliği komut tanımlayıcısı.|  
   
 ### <a name="child-elements"></a>Alt öğeleri  
- Yok.  
+ Hiçbiri  
   
 ### <a name="parent-elements"></a>Üst öğeler  
   

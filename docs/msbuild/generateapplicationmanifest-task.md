@@ -1,8 +1,6 @@
 ---
 title: GenerateApplicationManifest görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9526c2c62d9ace81127c61ef313cf55971fc1692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900697"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest görevi
 Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşene ilişkin benzersiz bir kimliği tanımlayarak ve tüm derlemeleri ve bileşeni oluşturan dosyaları tanımlayan bir bileşeni açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi, uygulamanın giriş noktasını gösteren ve uygulama güvenlik düzeyini belirterek yerel bildirimi genişletir.  

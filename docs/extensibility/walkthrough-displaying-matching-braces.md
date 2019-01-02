@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Eşleşen küme ayraçlarını görüntüleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956589"
 ---
-# <a name="walkthrough-display-matching-braces"></a>İzlenecek yol: eşleşen küme ayraçlarını görüntüleme
+# <a name="walkthrough-display-matching-braces"></a>İzlenecek yol: Eşleşen küme ayraçlarını görüntüleme
 Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp giriş işaretini bir küme ayraçlarının olduğunda eşleşen ayraçlar için bir metin işaretçisi etiket ekleme gibi dil tabanlı özellikler uygular. Küme ayraçları bir dil bağlamında tanımlayın, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve etiketleri yalnızca yazın ya da mevcut bir içerik türüyle (örneğin, "metin") etiketler uygulayın. Aşağıdaki örneklerde, ayraç eşleştirme "metin" içerik türü etiketleri uygulamak gösterilmektedir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
@@ -126,4 +123,4 @@ Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp gi
 4.  Giriş işaretini bir açık ayraç önce getirdiğinizde, küme ayracı hem de eşleşen kapatma ayracı vurgulanmış olmalıdır. Yalnızca kapatma küme ayracından sonra işaretçiyi getirdiğinizde, küme ayracı hem de eşleşen açık küme ayracı vurgulanmış olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

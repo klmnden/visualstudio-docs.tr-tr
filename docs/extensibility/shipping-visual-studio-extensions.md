@@ -1,9 +1,6 @@
 ---
-title: Visual Studio uzantıları sevkiyat | Microsoft Docs
-ms.custom: ''
+title: Visual Studio uzantıları gönderme | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX deployment
@@ -15,51 +12,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c646ec2c5159e6c3551776761baa9328e3d62bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d076b7d02b5acec811ed4789a3fe1711f5dca6e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896753"
 ---
-# <a name="shipping-visual-studio-extensions"></a>Visual Studio uzantıları aktarma
-Uzantınızı geliştirme bitirdikten sonra diğer makinelere yüklemeniz, arkadaşlarınız ve iş arkadaşlarınızla paylaşın veya Visual Studio Market'te yayımlayın. Bu bölümde biz yayımlama ve uzantınızı korumak için yapmanız gereken her şey açıklamaktadır: yayımlama, yerelleştirme ve güncelleştirme .vsix dosyalarıyla çalışma.  
+# <a name="shipping-visual-studio-extensions"></a>Visual Studio Uzantıları Gönderme
+Uzantınızı geliştirme bitirdikten sonra diğer makinelere yükleyin, arkadaşlarınız ve iş arkadaşları ile paylaşma veya Visual Studio Market'te yayımlayın. Bu bölümde biz yayımlama ve uzantınızı sağlamak için yapmanız gereken her şeyi açıklayan: yayımlama, yerelleştirme ve güncelleştirme .vsix dosyaları ile çalışma.  
   
 ## <a name="working-with-vsix-extensions"></a>VSIX uzantıları ile çalışma  
- Boş bir VSIX proje oluşturma ve farklı öğe şablonları ekleyerek VSIX uzantıları oluşturabilirsiniz. Daha fazla bilgi için bkz: [VSIX proje şablonu](../extensibility/vsix-project-template.md).  
+ Boş bir VSIX projesi oluşturarak ve farklı öğe şablonları ekleyerek, bir VSIX uzantılarını oluşturabilirsiniz. Daha fazla bilgi için [VSIX proje şablonu](../extensibility/vsix-project-template.md).  
   
- Proje şablonları paketini, şablonları, VSPackages, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri, öğe için VSIX biçimini kullanabilirsiniz **araç** denetimleri, derlemeler ve özel türler (buna dahildir özel başlangıç sayfaları). VSIX biçimi dosya tabanlı dağıtım kullanır. VSIX paketler hakkında daha fazla bilgi için bkz: [VSIX paketi anatomisi](../extensibility/anatomy-of-a-vsix-package.md).  
+ Paket proje şablonları, öğe şablonları, VSPackage'ları, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri için VSIX biçimi kullanabileceğiniz **araç kutusu** denetimleri, derlemeleri ve özel türler (Bu içerir özel başlangıç sayfaları). VSIX biçimi, dosya tabanlı dağıtım kullanır. VSIX paketleri hakkında daha fazla bilgi için bkz. [bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md).  
   
- VSIX biçimi kod parçacıkları yüklenmesini desteklemez. Genel Derleme Önbelleği (GAC) için veya sistem kayıt defterine yazılıyor gibi diğer bazı senaryolar da desteklemez. GAC veya yükleme kayıt defterinde yazmak gerekiyorsa, Windows Installer kullanmanız gerekir. Daha fazla bilgi için bkz: [hazırlama uzantıları için Windows Installer dağıtımı](../extensibility/preparing-extensions-for-windows-installer-deployment.md).  
+ VSIX biçimi, kod parçacıkları yüklenmesini desteklemez. Genel Derleme Önbelleği (GAC) için veya sistem kayıt defterine yazma gibi diğer bazı senaryolar da desteklemez. GAC veya kayıt defterinde yükleme için yazmanız gereken Windows Yükleyici kullanmanız gerekir. Daha fazla bilgi için [hazırlama uzantıları için Windows Installer dağıtımı](../extensibility/preparing-extensions-for-windows-installer-deployment.md).  
   
-## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Visual Studio Market'te uzantınızı yayımlama  
- Yalnızca .vsix dosyasını posta ya da bir sunucu üzerinde koymaya tarafından uzantınızı diğer kişilere dağıtabilirsiniz. Ancak, kodunuzu çok kişilerin eline en iyi yolu, koymak için [Visual Studio Market'te](https://marketplace.visualstudio.com/vs). Visual Studio Market'te uzantıları aracılığıyla Visual Studio kullanıcılara kullanılabilir **Uzantılar ve güncelleştirmeler**. Daha fazla bilgi için bkz: [bulma ve Visual Studio uzantılarını kullanarak](../ide/finding-and-using-visual-studio-extensions.md).  
+## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Uzantınızı Visual Studio Market'te yayımlama  
+ Yalnızca bir sunucuya yerleştirmeyi ya da bunları .vsix dosyasını posta tarafından uzantınızı diğer kişilere dağıtabilirsiniz. Ancak birçok kişinin elinizde kodunuzu almak için en iyi yolu, yerleştirip [Visual Studio Market](https://marketplace.visualstudio.com/vs). Visual Studio Market uzantıları aracılığıyla Visual Studio kullanıcılara kullanılabilir **Uzantılar ve güncelleştirmeler**. Daha fazla bilgi için [bulma ve Visual Studio uzantılarını kullanarak](../ide/finding-and-using-visual-studio-extensions.md).  
   
- Bir uzantıyı Visual Studio Market'te yüklemeyi gösteren bir tam örnek için bkz: [izlenecek yol: Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).  
+ Visual Studio Market'te uzantı yüklemeyi gösteren bir tam örnek için bkz: [izlenecek yol: Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).  
   
-## <a name="private-galleries"></a>Özel galerileri  
- Denetimleri, şablonlar ve Araçlar geliştirdikçe intranetinizdeki özel bir Galeriye göndererek bunları kuruluşunuz ile paylaşabilirsiniz. Daha fazla bilgi için bkz: [özel galerileri](../extensibility/private-galleries.md).  
+## <a name="private-galleries"></a>Özel Galeriler  
+ Denetimleri, şablonlar ve araçlar geliştirirken, özel bir galeri intranetinizdeki yayınlayarak bunları kuruluşunuzla paylaşabilirsiniz. Daha fazla bilgi için [özel galeriler](../extensibility/private-galleries.md).  
   
 ## <a name="localizing-your-extension"></a>Uzantınızı yerelleştirme  
- Farklı yerel ayarlara uzantı yayımlamayı planlıyorsanız, bu yerelleştirme düşünmelisiniz. Ne ilgili açıklama için bkz: [yerelleştirme VSIX paket](../extensibility/localizing-vsix-packages.md).  
+ Uzantınızı farklı yerel ayarlar yayın planlıyorsanız, yerelleştirme düşünmelisiniz. Nelerin dahil açıklaması için bkz [VSIX paketlerini yerelleştirme](../extensibility/localizing-vsix-packages.md).  
   
 ## <a name="updating-and-versioning-your-extension"></a>Güncelleştirme ve sürüm oluşturma uzantınızı  
- Uzantınızı yayımladıktan sonra var. gelen güncelleştirmek için gerektiğinde bir süre. Visual Studio Market'te yayımlanan uzantı güncelleştirmek nasıl öğrenmek için bkz: [nasıl yapılır: uzantı güncelleştirme](../extensibility/how-to-update-a-visual-studio-extension.md).  
+ Uzantınızı yayımladıktan sonra var gelen güncelleştirmeniz gerektiğinde bir süre. Visual Studio Market'te yayımlanmış bir uzantıyı güncelleştirmek nasıl öğrenmek için bkz: [nasıl yapılır: Uzantı güncelleştirmesi](../extensibility/how-to-update-a-visual-studio-extension.md).  
   
- Uzantınızın Visual Studio birden fazla sürümünü destekleyecek şekilde ayarlayabilirsiniz. Daha fazla bilgi için bkz: [Visual Studio, birden çok sürümleri destekleyen](../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+ Uzantınızı Visual Studio'nun birden çok sürümünü destekleyecek şekilde ayarlayabilirsiniz. Daha fazla bilgi için [destekleyen birden çok Versions of Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
 ## <a name="related-topics"></a>İlgili Konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[VSIX Proje Şablonunu Kullanmaya Başlama](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX proje şablonu özel Proje şablonu yüklemek için nasıl kullanılacağını açıklar.|  
-|[Bir VSIX Paketinin Anatomisi](../extensibility/anatomy-of-a-vsix-package.md)|VSIX paketi bileşenlerini açıklar.|  
-|[VSIX Proje Şablonu](../extensibility/vsix-project-template.md)|Paket ve uzantı yayımlama hakkında adım adım yönergeler sağlar.|  
+|[VSIX Proje Şablonunu Kullanmaya Başlama](../extensibility/getting-started-with-the-vsix-project-template.md)|VSIX proje şablonunu özel proje şablonunu yüklemek için nasıl kullanılacağını açıklar.|  
+|[Bir VSIX Paketinin Anatomisi](../extensibility/anatomy-of-a-vsix-package.md)|Bir VSIX paketi bileşenlerinin açıklar.|  
+|[VSIX Proje Şablonu](../extensibility/vsix-project-template.md)|Paketleme ve uzantı yayımlamak hakkında adım adım yönergeler sağlar.|  
 |[VSIX Paketlerini Yerelleştirme](../extensibility/localizing-vsix-packages.md)|Yerelleştirilmiş metin extension.vsixlangpack dosyalarını kullanarak yükleme işlemini sağlamayı açıklar.|  
-|[Nasıl yapılır: uzantı güncelleştir](../extensibility/how-to-update-a-visual-studio-extension.md)|Uzantı sisteminizdeki güncelleştirmek ve varolan bir Visual Studio uzantısı bir güncelleştirme dağıtın açıklar.|  
-|[Nasıl Yapılır: VSIX Paketine Bağımlılık Ekleme](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX dağıtım Paketlerine yönelik başvuruları eklemeyi açıklar.|  
-|[Uzantıları Windows Installer Dağıtımı için Hazırlama](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Uzantınızı Windows Installer ile dağıtmak açıklanmaktadır.|  
-|[VSIX Paketlerini İmzalama](../extensibility/signing-vsix-packages.md)|VSIX paket oturum açıklanmaktadır.|  
-|[Özel Galeriler](../extensibility/private-galleries.md)|Uzantıları için özel galerileri oluşturma açıklanmaktadır.|  
-|[Visual Studio'nun Birden Çok Sürümünü Destekleme](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Uzantı desteğine sahip birden fazla sürümünü Visual Studio gösterilmektedir.|
+|[Nasıl yapılır: Bir uzantıyı güncelleştir](../extensibility/how-to-update-a-visual-studio-extension.md)|Sisteminizde bir uzantı güncelleştirme ve var olan bir Visual Studio uzantısı için bir güncelleştirme dağıtmayı açıklar.|  
+|[Nasıl yapılır: VSIX paketine bağımlılık ekleme](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX dağıtım paketleri başvurularını eklemeyi açıklar.|  
+|[Uzantıları Windows Installer Dağıtımı için Hazırlama](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Windows Installer ile uzantınızı dağıtma işlemi açıklanmaktadır.|  
+|[VSIX Paketlerini İmzalama](../extensibility/signing-vsix-packages.md)|VSIX paketlerini imzalama açıklanmaktadır.|  
+|[Özel Galeriler](../extensibility/private-galleries.md)|Özel galeriler uzantıları için nasıl oluşturulacağını açıklar.|  
+|[Visual Studio'nun Birden Çok Sürümünü Destekleme](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Uzantı destek sağlamak nasıl Visual Studio'nun birden çok sürümünü gösterir.|
 |[Visual Studio'yu Bulma](locating-visual-studio.md)|Özel uzantı dağıtımı için Visual Studio örneklerini bulmak açıklar.|

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892309"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araçları), bir etki alanına özgü dil tasarlayın ve kullanıcıların diline dayalı modeller oluşturmak için gereken her şeyi oluşturmak olanak tanır.
@@ -66,7 +65,7 @@ Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araç
 ## <a name="validation-in-dsl-tools"></a>DSL araçları doğrulama
  DSL bir etki alanı modeli, kod oluşturma için temel gereksinimleri karşıladığından emin olmak için doğrulama düzeyini sağlar. Genellikle, kendi etki alanına özgü dil oluşturduğunuzda, iş mantığı kurallarınızı ifade etmek için kendi doğrulama ekleyin. Özel doğrulama hakkında daha fazla bilgi için bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).
 
- Bunu tasarlarken, etki alanına özgü dil genellikle doğrulamak önerilir. Alana özgü dilinizi doğrulama hatası varsa, kaynak kod üretilemiyor. Şablonlar'dan kaynak kodu oluşturma işleminin tıklayarak gerçekleştirilir **tüm Şablonları Dönüştür** Çözüm Gezgini araç çubuğundaki. Dil tanımı değişiklik olduğunda da emin olun **tüm Şablonları Dönüştür**. Daha fazla bilgi için [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Bunu tasarlarken, etki alanına özgü dil genellikle doğrulamak önerilir. Alana özgü dilinizi doğrulama hatası varsa, kaynak kod üretilemiyor. Şablonlar'dan kaynak kodu oluşturma işleminin tıklayarak gerçekleştirilir **tüm Şablonları Dönüştür** Çözüm Gezgini araç çubuğundaki. Dil tanımı değişiklik olduğunda da emin olun **tüm Şablonları Dönüştür**. Daha fazla bilgi için [nasıl yapılır: Bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>DSL araçları özelleştirme
  Ek kod modeli davranışlarını iyileştirmek ve dilinizi kısıtlamaları tanımlamak için sağlayabilir. Zorunlu kılınırsa, metin şablonlarını değiştirerek önemli değişiklik yapabilirsiniz.

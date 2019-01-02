@@ -1,9 +1,6 @@
 ---
 title: Proje Üreteçlerini kullanarak proje örnekleri oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project factories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938128"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Proje üreteçlerini kullanarak proje örnekleri oluşturma
 Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanan bir *proje fabrikası* proje nesnelerin örneklerini oluşturmak için. Bir proje fabrikası cocreatable COM nesneleri için bir standart sınıf üreteci benzer. Ancak, proje nesnelerini cocreatable değildir; Bunlar, bir proje fabrikası kullanarak yalnızca oluşturulabilir.  

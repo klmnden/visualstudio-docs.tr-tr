@@ -1,9 +1,6 @@
 ---
 title: Bir VSIX paketinin anatomisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921490"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX paketinin anatomisi
 Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bir veya daha fazla Visual Studio uzantıları, Visual Studio meta verileri ile birlikte içeren bir dosya kullanır. Meta verilerin yer alan VSIX bildirimi içinde ve *[Content_Types] .xml* dosya. Bir VSIX paketi de bir veya daha fazla içerebilir *Extension.vsixlangpack* sağlamak üzere dosyaları Kurulum metninde yerelleştirilmiş ve bağımlılıklarını yüklemek için ek VSIX paketleri içerebilir.  
@@ -60,4 +57,4 @@ Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bi
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* dosyayı genişletilmiş dosya türlerini tanımlayan *.vsix* dosya. Visual Studio Paket yüklemesi sırasında bu dosyayı kullanır ancak dosyayı yüklemez. Bu dosya hakkında daha fazla bilgi için bkz. [[Content_types] .xml dosyasının yapısı](the-structure-of-the-content-types-dot-xml-file.md).  
   
- A *[Content_Types] .xml* dosya açık paketleme kuralları (OPC) standart tarafından gerekli. OPC hakkında daha fazla bilgi için bkz: [OPC: verilerinizi paketleme için yeni bir standart](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) MSDN Web sitesinde.
+ A *[Content_Types] .xml* dosya açık paketleme kuralları (OPC) standart tarafından gerekli. OPC hakkında daha fazla bilgi için bkz: [OPC: Verilerinizi paketleme için yeni bir standart](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) MSDN Web sitesinde.

@@ -1,9 +1,6 @@
 ---
 title: Kaynak denetimini tümleştirmeye genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902998"
 ---
 # <a name="source-control-integration-overview"></a>Kaynak Denetimini Tümleştirmeye Genel Bakış
 Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki şekilde karşılaştırır; Kaynak denetimi eklentisi ve bir kaynak denetimi çözümü sağlar ve yeni kaynak denetimi özellikleri vurgular VSPackage'ı. Visual Studio el ile kaynak denetimi eklentileri ve kaynak denetimi VSPackage'ları arasında geçiş yapma ek olarak çözüm tabanlı otomatik geçiş sağlar.  
@@ -35,7 +32,7 @@ Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki şekilde 
   
 1. Belirtilen işlevleri uygulayan bir DLL'yi oluşturmak [kaynak denetimi eklentileri](../../extensibility/source-control-plug-ins.md).  
   
-2. Uygun kayıt defteri girişlerini yaparak DLL'yi kaydetme (açıklanan [nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Uygun kayıt defteri girişlerini yaparak DLL'yi kaydetme (açıklanan [nasıl yapılır: Kaynak Denetimi Eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Kullanıcı Arabirimi ve kaynak denetimi bağdaştırıcısı paketi (kaynak denetimi eklentileri aracılığıyla kaynak denetimi işlevlerini işleyen Visual Studio bileşeni) tarafından istendiğinde görünen bir Yardımcısı oluşturma  
   

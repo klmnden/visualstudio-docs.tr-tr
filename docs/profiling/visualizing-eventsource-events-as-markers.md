@@ -1,8 +1,6 @@
 ---
 title: EventSource olaylarını işaretleyici olarak Görselleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
@@ -10,54 +8,54 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 40a0edf549686d8b984d937b5970f429fe29f931
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840705"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource olaylarını işaretleyici olarak Görselleştirme
-Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olarak görüntüleyebilir ve işaretlerinin görüntülenme biçimini kontrol edebilirsiniz. EventSource işaretçileri görüntülemek için GUID ETW sağlayıcısını kullanarak kayıt [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu. Eşzamanlılık görselleştiricisi EventSource olaylarını olarak göstermek için varsayılan kuralları sahip [bayrak işaretleyicileri](../profiling/flag-markers.md), [aralık işaretçileri](../profiling/span-markers.md), ve [ileti işaretçileri](../profiling/message-markers.md). EventSource olaylarını olaylara özel alanlar ekleyerek görüntülenme biçimini özelleştirebilirsiniz. İşaretçileri hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md). EventSource olaylarını hakkında daha fazla bilgi için bkz: <xref:System.Diagnostics.Tracing>.  
+Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olarak görüntüleyebilir ve işaretçileri nasıl görüntüleneceğini denetleyebilirsiniz. EventSource işaretlerinin görüntülemek için kullanarak ETW sağlayıcısı GUID kaydetme [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu. EventSource olaylarını olarak göstermek için varsayılan kuralları eşzamanlılık görselleştiricisi sahip [bayrak işaretleyicileri](../profiling/flag-markers.md), [yayılma işaretçileri](../profiling/span-markers.md), ve [ileti işaretçileri](../profiling/message-markers.md). EventSource olaylarını olaylara özel alanlar ekleyerek nasıl görüntüleneceğini özelleştirebilirsiniz. İşaretçiler hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md). EventSource olaylarını hakkında daha fazla bilgi için bkz: <xref:System.Diagnostics.Tracing>.  
   
-## <a name="default-visualization-of-eventsource-events"></a>EventSource olayların varsayılan Görselleştirme  
- Varsayılan olarak, eşzamanlılık görselleştiricisi EventSource olaylarını göstermek için aşağıdaki kuralları kullanır.  
+## <a name="default-visualization-of-eventsource-events"></a>EventSource olaylarını varsayılan Görselleştirme  
+ Varsayılan olarak, Concurrency Visualizer EventSource olaylarını göstermek için aşağıdaki kuralları kullanır.  
   
 ### <a name="marker-type"></a>İşaret türü  
   
-1.  Olayları [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win: başlangıç veya win: Durdur kabul edilir başına veya sonuna bir aralık sırasıyla.  İç içe geçmiş veya yayılma çakışan görüntülenemiyor. Bir iş parçacığı üzerinde başlayan ve başka birinde son olay çiftleri görüntülenemiyor.  
+1.  Sahip olayları [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) kazanma: Başlangıç ya da kazanın: Stop kabul edilir başına veya sonuna bir aralık sırasıyla.  İç içe geçmiş veya yayılma çakışan görüntülenemiyor. Bir iş parçacığı üzerinde başlayan ve başka birinde son olay çifti görüntülenemiyor.  
   
-2.  Sürece, işlem kodu win: Başlangıç ne win: Durdur bir olay işaret bayrak olarak kabul edilir kendi [düzeyi](/windows/desktop/WES/defining-severity-levels) (EVENT_RECORD alanı. EVENT_HEADER. EVENT_DESCRIPTOR) olan win: ayrıntılı ya da daha yüksek.  
+2.  Sürece, Opcode kazanma: Başlangıç ne kazanma: Stop bir olay işaretçisi bayrak olarak kabul edilir, [düzeyi](/windows/desktop/WES/defining-severity-levels) (EVENT_RECORD alanı. EVENT_HEADER. EVENT_DESCRIPTOR) olan kazanma: ayrıntılı veya üzeri.  
   
 3.  Diğer durumlarda, olay iletisi olarak kabul edilir.  
   
 ### <a name="importance"></a>Önem derecesi  
- Aşağıdaki tabloda, olay düzeyi işaret önem nasıl eşlendiğini tanımlar.  
+ Aşağıdaki tabloda, olay düzeyi işaret önemini nasıl eşlendiğini tanımlar.  
   
-|ETW düzey|Eşzamanlılık görselleştiricisi önem|  
+|ETW düzeyi|Eşzamanlılık görselleştiricisi önem derecesi|  
 |---------------|---------------------------------------|  
-|Win: LogAlways|Normal|  
-|Win: kritik|Kritik|  
-|Win: hata|Kritik|  
-|Win: uyarı|Yüksek|  
-|Win: bilgi|Normal|  
-|Win: ayrıntılı|Düşük|  
+|Kazanma: LogAlways|Normal|  
+|Kazanma: kritik|Kritik|  
+|Kazanma: hata|Kritik|  
+|Kazanma: uyarı|Yüksek|  
+|Kazanma: bilgilendirme|Normal|  
+|Kazanma: ayrıntılı|Düşük|  
 |Win büyüktür: ayrıntılı|Düşük|  
   
 ### <a name="series-name"></a>Seri adı  
- Olayın görev adı için seri adı kullanılır. Seri adı hiçbir görev olayı için tanımlanmışsa boştur.  
+ Olayın görev adı için seri adı kullanılır. Seri adı, hiçbir görev olayı için tanımlanmışsa boştur.  
   
 ### <a name="category"></a>Kategori  
- Düzeyi win ise: kritik veya win: hata sonra kategori uyarı (-1). Aksi takdirde, kategori (0) varsayılandır.  
+ Düzeyi win ise: kritik veya kazanma: hata, sonra da kategoriyi uyarı (-1). Aksi takdirde, varsayılan değer (0) kategorisidir.  
   
 ### <a name="text"></a>Metin  
- Printf türü biçimlendirilmiş metin iletisi olay için tanımlanan değilse işaret açıklaması görüntülenir. Aksi takdirde, olayın adı ve her yükü alanının değeri açıklamasıdır.  
+ Printf türü biçimlendirilmiş metin iletisi için olay tanımlanmışsa, işaret açıklamasını görüntülenir. Aksi takdirde, olayın adı ve her yükü alanın değerini açıklamasıdır.  
   
-## <a name="customize-visualization-of-eventsource-events"></a>EventSource olaylarını görselleştirme özelleştirme  
- EventSource olaylarını olaya uygun alanlar ekleyerek aşağıdaki bölümlerde açıklandığı gibi görüntülenme biçimini özelleştirebilirsiniz.  
+## <a name="customize-visualization-of-eventsource-events"></a>EventSource olaylarını görselleştirmesini özelleştirme  
+ EventSource olaylarını olayı için uygun alanlar ekleyerek aşağıdaki bölümlerde açıklandığı gibi gösterilme biçimini özelleştirebilirsiniz.  
   
 ### <a name="marker-type"></a>İşaret türü  
- Kullanım `cvType` alan, olay temsil etmek için kullanılan işaret türünü denetlemek için bir bayt. CvType için kullanılabilir değerleri şunlardır:  
+ Kullanım `cvType` alan, olay temsil etmek için kullanılan işaret türünü denetlemek için bir bayt. CvType için kullanılabilen değerler şunlardır:  
   
 |cvType değeri|Sonuçta elde edilen işaret türü|  
 |------------------|---------------------------|  
@@ -68,9 +66,9 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
 |Diğer tüm değerler|İleti|  
   
 ### <a name="importance"></a>Önem derecesi  
- Kullanabileceğiniz `cvImportance` alan, bir EventSource olay önem ayarını denetlemek için bir bayt. Ancak, alt düzey kullanarak bir olay görüntülenen önemini kontrol öneririz.  
+ Kullanabileceğiniz `cvImportance` alan, bir EventSource olay önem derecesi ayarı denetlemek için bir bayt. Ancak, alt düzey kullanarak bir olay görüntülenen önemini denetim öneririz.  
   
-|cvImportance değeri|Eşzamanlılık görselleştiricisi önem|  
+|cvImportance değeri|Eşzamanlılık görselleştiricisi önem derecesi|  
 |------------------------|---------------------------------------|  
 |0|Normal|  
 |1.|Kritik|  
@@ -81,19 +79,19 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
 |Diğer tüm değerler|Düşük|  
   
 ### <a name="series-name"></a>Seri adı  
- Kullanım `cvSeries` olay alanı, eşzamanlılık görselleştiricisi EventSource olaya verir seri adı denetlemek için bir dize.  
+ Kullanım `cvSeries` olay alanı, Concurrency Visualizer EventSource olaya sağlar. seri adı denetlemek için bir dize.  
   
 ### <a name="category"></a>Kategori  
- Kullanım `cvCategory` alan, eşzamanlılık görselleştiricisi EventSource olaya verir kategori denetlemek için bir bayt.  
+ Kullanım `cvCategory` EventSource olaya eşzamanlılık görselleştiricisi veren kategori denetlemek için bir bayt alan.  
   
 ### <a name="text"></a>Metin  
- Kullanım `cvTextW` alan, eşzamanlılık görselleştiricisi EventSource olaya içeren açıklama denetlemek için bir dize.  
+ Kullanım `cvTextW` alan, Concurrency Visualizer EventSource olaya veren bir açıklama denetlemek için bir dize.  
   
 ### <a name="spanid"></a>SpanID  
- Olayları çiftlerini eşleşecek şekilde, int cvSpanId alanını kullanın. Değer bir aralık temsil Başlat/Durdur olayların her çifti için benzersiz olmalıdır. Genellikle eşzamanlı kodu için bu eşitleme temelleri gibi kullanımını <xref:System.Threading.Interlocked.Exchange%2A> (CvSpanID için kullanılan değer) anahtarının doğru olduğundan emin olmak için.  
+ Olay çifti ile eşleşen için bir int cvSpanId alanını kullanın. Her bir çifti Başlat/Durdur olayların bir aralığı temsil eden değeri benzersiz olmalıdır. Genellikle eş zamanlı kod için bu eşitleme temellerine gibi gerektirir <xref:System.Threading.Interlocked.Exchange%2A> (CvSpanID için kullanılan değer) anahtarının doğru olduğundan emin olmak için.  
   
 > [!NOTE]
->  Bunları kısmen aynı iş parçacığı üzerinde üst üste veya bunları bir iş parçacığında başlatmaya izin vermek yayılma, iç içe SpanID kullanılmasına izin verin ve başka bir uç desteklenmiyor.  
+>  Kısmen aynı iş parçacığında üst üste veya bir iş parçacığında başlatmaya izin vermek için yayılma içine yerleştirmek için SpanID kullanılmasına izin verin ve diğer uçta desteklenmiyor.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md)

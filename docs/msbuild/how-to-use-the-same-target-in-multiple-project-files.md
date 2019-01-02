@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: birden çok proje dosyasında aynı hedefi kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Birden çok proje dosyasında aynı hedefi kullanma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7ace0e86a5c65afa2c8c5fb12364b9dba66c093e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905471"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Nasıl yapılır: birden çok proje dosyasında aynı hedefi kullanma
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Nasıl Yapılır: Birden çok proje dosyasında aynı hedefi kullanma
 Birkaç yazdıysanız [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları, olduğunu keşfetti., aynı görevleri ve hedefleri, farklı proje dosyalarında kullanmanız gerekebilir. Bu görevler veya hedefleri eksiksiz bir açıklaması her proje dosyasında dahil olmak üzere yerine ayrı proje dosyasında hedef kaydedebilir ve sonra proje hedef kullanması gereken diğer proje alın.  
   
 ## <a name="use-the-import-element"></a>İçeri aktarma öğesi kullanma  

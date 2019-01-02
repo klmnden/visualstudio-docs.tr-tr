@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51474047d5cb2b57a3d45df4009dccd3335ce759
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bd60adc7ae4df46bc74297a66271765a3d02cf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851053"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -246,7 +245,7 @@ Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri b
 
     -   **Açık komut:** satır içi sunan
 
-    -   **Ortam göstergesi çift:** CodeLens açılır penceresi
+    -   **Ortam göstergesi çift tıklayın:** CodeLens açılır penceresi
 
 -   **Her zaman** her kullanıcı Esc tuşuna bastığında ayrıntılı içerik yok sayın.
 

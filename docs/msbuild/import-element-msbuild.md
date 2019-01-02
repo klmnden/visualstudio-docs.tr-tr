@@ -1,8 +1,6 @@
 ---
 title: İçeri aktarma öğesi (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900879"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.  
@@ -51,7 +49,7 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 |`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek olan koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
 
 ### <a name="child-elements"></a>Alt öğeleri  
- Yok.  
+ Hiçbiri  
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
@@ -115,4 +113,4 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Nasıl yapılır: birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

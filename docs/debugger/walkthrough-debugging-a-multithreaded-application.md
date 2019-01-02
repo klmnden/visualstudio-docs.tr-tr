@@ -1,8 +1,6 @@
 ---
 title: İş parçacığı hata ayıklayıcıda görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,44 +23,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946168"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>İş parçacıkları penceresini kullanarak Visual Studio hata ayıklayıcı iş parçacıkları görünümü
-İçinde **iş parçacıkları** penceresini inceleyin ve ayıkladığınız uygulama iş parçacıkları ile çalışır. Nasıl kullanılacağını adım adım yönergeler için **iş parçacıkları** penceresinde görmek [izlenecek yol: iş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md).
+İçinde **iş parçacıkları** penceresini inceleyin ve ayıkladığınız uygulama iş parçacıkları ile çalışır. Nasıl kullanılacağını adım adım yönergeler için **iş parçacıkları** penceresinde görmek [izlenecek yol: İş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>İş Parçacıkları penceresini kullanma 
  **İş parçacıkları** penceresi içeren bir tablo, her satır ayrı bir iş parçacığı, uygulamanızda nerede açıklar. Varsayılan olarak, uygulamanızı tüm iş parçacıklarının tabloda listelenir, ancak yalnızca sizi ilgilendiren iş parçacıklarını gösterilecek listeyi filtreleyebilirsiniz. Her sütun, farklı türden bilgileri açıklar. Ayrıca, bazı sütunları gizleyebilirsiniz. Tüm sütunları görüntülemek, aşağıdaki sütunlar, soldan sağa doğru görünür:  
   
-- **Bayrağı**: etiketlenmemiş bu sütunda adlandırdığınızdan istediğiniz bir iş parçacığı işaretleyebilirsiniz. Bir iş parçacığı bayrak hakkında daha fazla bilgi için bkz: [nasıl yapılır: bayrağı iş parçacıklarını bayrakla işaretleme ve](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Bayrağı**: Etiketlenmemiş bu sütunda özen istediğiniz bir iş parçacığı işaretleyebilirsiniz. Bir iş parçacığı bayrak hakkında daha fazla bilgi için bkz: [nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md).  
   
-- **Geçerli iş parçacığı**: etiketlenmemiş bu sütunda bir sarı ok geçerli iş parçacığı gösterir. Ok anahat geçerli olmayan bir iş parçacığı için geçerli hata ayıklayıcı bağlamını gösterir.
+- **Geçerli iş parçacığı**: Etiketlenmemiş bu sütunda bir sarı ok geçerli iş parçacığı gösterir. Ok anahat geçerli olmayan bir iş parçacığı için geçerli hata ayıklayıcı bağlamını gösterir.
   
-- **Kimliği**: her iş parçacığı kimlik numarasını görüntüler.  
+- **KİMLİĞİ**: Her iş parçacığı kimlik numarasını görüntüler.  
   
-- **Kimliği yönetilen**: yönetilen kimlik numaraları için yönetilen iş parçacıklarını görüntüler.  
+- **Kimliği yönetilen**: Yönetilen iş parçacıkları için yönetilen kimlik numaraları görüntüler.  
   
-- **Kategori**: kullanıcı arabirimi iş parçacıkları, uzak yordam çağrı işleyicisi veya çalışan iş parçacığı iş parçacığı kategorisini görüntüler. Uygulamanın ana iş parçacığı bir özel kategori tanımlar.  
+- **Kategori**: Kullanıcı arabirimi iş parçacıkları, uzak yordam çağrı işleyicisi veya çalışan iş parçacığı iş parçacığı kategorisini görüntüler. Uygulamanın ana iş parçacığı bir özel kategori tanımlar.  
   
-- **Adı**: her iş parçacığı varsa veya olarak ada göre tanımlayan \<No Name >.  
+- **Ad**: Her iş parçacığı varsa veya olarak ada göre tanımlayan \<No Name >.  
   
-- **Konum**: iş parçacığı nerede çalıştığını gösterir. Bu konum iş parçacığı için tam çağrı yığınını Göster genişletebilirsiniz.  
+- **Konum**: İş parçacığı nerede çalıştığını gösterir. Bu konum iş parçacığı için tam çağrı yığınını Göster genişletebilirsiniz.  
   
-- **Öncelik**: öncelik ya da sistem her iş parçacığı için atanan öncelik görüntüler (varsayılan olarak gizlidir) bir Gelişmiş sütunu.  
+- **Öncelik**: Öncelik ya da sistem her iş parçacığı için atanan öncelik görüntüler (varsayılan olarak gizlidir) gelişmiş bir sütun.  
   
-- **Benzeşim maskesi**: her iş parçacığı için İşlemci benzeşim maskesi gösterir (varsayılan olarak gizlidir) bir Gelişmiş sütunu. Çok işlemcili bir sistemde, bir iş parçacığı üzerinde çalışabileceği hangi İşlemci benzeşim maskesi belirler.  
+- **Benzeşim maskesi**: (Varsayılan olarak gizlidir) gelişmiş bir sütunu, her iş parçacığı için İşlemci benzeşim maskesi gösterir. Çok işlemcili bir sistemde, bir iş parçacığı üzerinde çalışabileceği hangi İşlemci benzeşim maskesi belirler.  
   
-- **Sayısı askıya**: askıya alınma sayısını görüntüler (varsayılan olarak gizlidir) bir Gelişmiş sütunu. Bu sayaç, bir iş parçacığı çalıştırılıp çalıştırılamayacağını belirler. Askıya alınmış sayıları hakkında daha fazla bilgi için bkz: [dondurma ve iş parçacıklarını çözme](#freeze-and-thaw-threads).  
+- **Askıya sayısı**: Askıda sayma görüntüler (varsayılan olarak gizlidir) bir Gelişmiş sütun. Bu sayaç, bir iş parçacığı çalıştırılıp çalıştırılamayacağını belirler. Askıya alınmış sayıları hakkında daha fazla bilgi için bkz: [dondurma ve iş parçacıklarını çözme](#freeze-and-thaw-threads).  
   
-- **İşlem adı**: her iş parçacığı ait olduğu için işlem gösterir (varsayılan olarak gizlidir) bir Gelişmiş sütunu. Bu sütundaki veriler, birçok işlemi hata ayıklama işlemi yaparken yararlı olabilir.  
+- **İşlem adı**: (Varsayılan olarak gizlidir) gelişmiş bir sütunu, her iş parçacığı ait olduğu için işlem görüntüler. Bu sütundaki veriler, birçok işlemi hata ayıklama işlemi yaparken yararlı olabilir.  
 
-- **İşlem Kimliği**: işlem gösterir (varsayılan olarak gizlidir) bir Gelişmiş sütun kimliği her iş parçacığı ait olduğu. 
+- **İşlem Kimliği**: (Varsayılan olarak gizlidir) gelişmiş bir sütunu, her iş parçacığı ait olduğu için işlem Kimliğini görüntüler. 
 
-- **Aktarım niteleyicisi**: hata ayıklayıcı bağlı makineyi benzersiz olarak tanımlayan (varsayılan olarak gizlidir) bir Gelişmiş sütunu. 
+- **Aktarım niteleyicisi**: Gelişmiş sütun (varsayılan olarak gizlidir) bir benzersiz olarak tanımlayan, hata ayıklayıcının bağlanacağı makine belirtir. 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>İş parçacıkları penceresini kesme modunda veya çalıştırma modunda görüntülemek için  
   
@@ -73,7 +71,7 @@ ms.locfileid: "53066229"
 -   Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde **sütunları**. Daha sonra seçin veya göstermek veya gizlemek istediğiniz sütunun adını temizleyin.  
 
 ## <a name="display-flagged-threads"></a>Bayraklı iş parçacıklarını görüntüleme  
- Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları** penceresi. Daha fazla bilgi için [nasıl yapılır: iş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md). İçinde **iş parçacıkları** penceresinde tercih edebilirsiniz tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını görüntüler.  
+ Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları** penceresi. Daha fazla bilgi için [nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md). İçinde **iş parçacıkları** penceresinde tercih edebilirsiniz tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını görüntüler.  
   
 ### <a name="to-display-only-flagged-threads"></a>Yalnızca bayraklı iş parçacıklarını görüntülemek için  
   

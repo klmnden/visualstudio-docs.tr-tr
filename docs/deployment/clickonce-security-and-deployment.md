@@ -1,8 +1,6 @@
 ---
 title: ClickOnce güvenliği ve dağıtımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923120"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce güvenliği ve dağıtımı
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklü ve minimum kullanıcı müdahalesiyle çalıştırma kendi kendini güncelleştiren ve Windows tabanlı uygulamalar oluşturmanızı sağlayan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# geliştirdiyseniz, ClickOnce teknolojisi ile dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -62,7 +60,7 @@ ms.locfileid: "49926455"
  Çekirdek [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım mimarisi, iki XML bildirim dosyaları dayanır: uygulama bildirimi ve bir dağıtım bildirimi. Dosyaları, ClickOnce uygulamalarının gelen yüklendiği, nasıl güncelleştirilir ve ne zaman güncelleştirileceği tanımlamak için kullanılır.  
   
 ### <a name="publish-clickonce-applications"></a>ClickOnce uygulamalarını yayımlama  
- Uygulama bildirimi uygulamanın kendisinin açıklar. Bu derlemeler, bağımlılıklar ve uygulama, gerekli izinlere ve burada güncelleştirmelerinin kullanılabilir olacağını konumun oluşturan dosyaları içerir. Uygulama geliştiricisi Yayımlama Sihirbazı'nda Visual Studio ya da bildirim oluşturma ve düzenleme aracı kullanarak uygulama bildirimini yazar (*Mage.exe*) içinde [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Daha fazla bilgi için [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Uygulama bildirimi uygulamanın kendisinin açıklar. Bu derlemeler, bağımlılıklar ve uygulama, gerekli izinlere ve burada güncelleştirmelerinin kullanılabilir olacağını konumun oluşturan dosyaları içerir. Uygulama geliştiricisi Yayımlama Sihirbazı'nda Visual Studio ya da bildirim oluşturma ve düzenleme aracı kullanarak uygulama bildirimini yazar (*Mage.exe*) içinde [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
  Dağıtım bildirimi, uygulamanın nasıl dağıtılacağını açıklar. Bu, uygulama bildiriminin konumu ve istemcilerin çalışması gereken uygulama sürümünü içerir.  
   

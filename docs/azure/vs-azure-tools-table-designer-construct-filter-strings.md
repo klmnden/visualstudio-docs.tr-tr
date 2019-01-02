@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ccba0314e51116b58aa44bd25309b921c47c8799
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 9010e3f08499b235d4cd4b02e929ab042dca2216
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954107"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Tablo Tasarımcısı için Filtre Dizelerini Oluşturma
 ## <a name="overview"></a>Genel Bakış
@@ -35,7 +34,7 @@ Aşağıdaki mantıksal işleçler için tüm özellik türleri desteklenir:
 | lt |Küçüktür |Fiyat lt 20 |
 | le |Küçük veya eşittir |Fiyat le 100 |
 | ne |Eşit değildir |Şehir ne 'Londra' |
-| and |ve |Fiyat le 200 ve fiyat gt 3.5 |
+| and |Ve |Fiyat le 200 ve fiyat gt 3.5 |
 | veya |Veya |Fiyat le 3.5 veya 200 fiyat gt |
 | not |değil |IsAvailable değil |
 

@@ -1,9 +1,6 @@
 ---
 title: BP_STATE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_STATE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0527cefeaed58e990d8474c25a522788e4dba6fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 627645cb75f53feccae92caf15523d72d69c323f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906767"
 ---
 # <a name="bpstate"></a>BP_STATE
 İlişkili bir kesme noktası varlığı ve de etkin olup olmadığını belirtir.  
@@ -28,7 +25,7 @@ ms.locfileid: "49924258"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_BP_STATE {   
+enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
    BPS_DISABLED = 0x0002,  
@@ -38,7 +35,7 @@ typedef DWORD BP_STATE;
 ```  
   
 ```csharp  
-public enum enum_BP_STATE {   
+public enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
    BPS_DISABLED = 0x0002,  
@@ -65,7 +62,7 @@ public enum enum_BP_STATE {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

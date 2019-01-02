@@ -3,7 +3,6 @@ title: Seçin ve Python yorumlayıcılarını yükleme
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılarını tam bir listesi.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 60a3aff0cf0a5803cfc60b0215ca1f3cda44cef4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905234"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
@@ -35,7 +34,7 @@ Visual Studio gösterir bilinen tüm ortamlarda [ **Python ortamları** ](managi
 
 | Yorumlayıcı | Açıklama |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](https://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım?](https://wiki,python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
+| [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](https://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım? ](https://wiki,python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
 | [V Ironpythonu](https://github.com/IronLanguages/ironpython2) | Python, 32-bit ve 64 bit sürümlerde kullanılabilir sağlayan bir .NET uygulaması C#/F#/Visual Basic birlikte çalışabilirliği, .NET API'leri, standart Python hata ayıklama (ancak değil C++ karışık mod hata ayıklama için) erişim ve IronPython karışık /C# hata ayıklama. Ancak, IronPython, sanal ortamları desteklemez. |
 | [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platformu Python tarafından desteklenen ve CPython ve zor yükleme paketlerinin en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
 | [PyPy](https://www.pypy.org/) | Yüksek performans izleme JIT uzun süre çalışan programlar ve performans tanımlamak burada durumlar için iyi bir Python uygulamasıdır verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |

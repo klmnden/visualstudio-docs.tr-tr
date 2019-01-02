@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eddd0252bca5cea3f683f0e00133b8e6e66392f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952186"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: Bir işlemde veri kaydetme
 
@@ -54,7 +53,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-2. Ya da genişletin **Visual C#**  veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
+2. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -76,7 +75,7 @@ Bu adımı kullanan **veri kaynağı Yapılandırma Sihirbazı** dayalı bir ver
 
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-         veya
+         -veya-
 
     -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu ve Northwind veritabanına bağlantı oluşturun.
 
@@ -167,7 +166,7 @@ Varsayılan olarak eklenen formunuza bırakılan ilk tablo için kod `click` ola
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
 
-## <a name="run-the-application"></a>Uygulamayı çalıştırın
+## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
 Tuşuna **F5** uygulamayı çalıştırın.
 

@@ -1,8 +1,6 @@
 ---
 title: LIB görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922026"
 ---
 # <a name="lib-task"></a>LIB görevi
 Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar *lib.exe*. Kitaplık Yöneticisi'ni oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyası kitaplığı yönetir. Kitaplık Yöneticisi'ni de dışarı aktarma dosyaları oluşturabilir ve kitaplıkları dışarı başvuru tanımlarını içeri aktarma. Daha fazla bilgi için [LIB başvurusu](/cpp/build/reference/lib-reference) ve [çalıştıran LIB](/cpp/build/reference/running-lib).  

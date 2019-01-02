@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959501"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak için bir şablondan bir Visual Studio çözümü oluşturun. Anahtar çözüm DslDefinition.dsl içinde depolanan DSL tanımı diyagramı parçasıdır. DSL tanımını DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri eklemek, DSL daha ayrıntılı bir şekilde özelleştirmek için program kodu ekleyebilirsiniz.
 
-DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabileceğiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
+DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Bir şablon çözümü seçme
  Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
@@ -171,7 +170,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 |-|-|-|
 |Diyagram üzerinde şekil.<br /><br /> Kulvar.|DSL kök sınıfı.|Minimal dil.<br /><br /> Görev akışı: Aktör sınıfı.|
 |Kulvar şekil.|Etki alanı sınıfı Kulvarlar görüntülenen öğeler.|Görev akışı: Görev sınıfı.|
-|Öğe kapsayıcı silinirse burada öğesi silindiğinde şeklinde listesinde.<br /><br /> Şeklin edge üzerinde bağlantı noktası.|Kapsayıcı şekli için eşlenmiş etki alanı sınıfı.|Sınıf diyagramı: öznitelik sınıfı.<br /><br /> Bileşen Diyagramı: bağlantı noktası sınıfı.|
+|Öğe kapsayıcı silinirse burada öğesi silindiğinde şeklinde listesinde.<br /><br /> Şeklin edge üzerinde bağlantı noktası.|Kapsayıcı şekli için eşlenmiş etki alanı sınıfı.|Sınıf diyagramı: Sınıf özniteliği.<br /><br /> Bileşen Diyagramı: Bağlantı noktası sınıfı.|
 |Öğe listesinde, kapsayıcı silinirse silinmez.|DSL kök sınıfı.<br /><br /> Referans bağlantıları listesini görüntüler.||
 |Doğrudan görüntülenir.|Bu bölümü forms sınıfı.||
 
@@ -187,7 +186,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 >  Gömme devralma ile aynı değil. Gömme ilişkisi çocuklarını özellikleri devralması değil.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Her etki alanı sınıfı için etki alanı özellikleri ekleyin
- Etki alanı özellikleri değerlerini depolar. Örnekler: ad, Unvan, yayın tarihi.
+ Etki alanı özellikleri değerlerini depolar. Örnekler şunlardır: Ad, Unvan, yayın tarihi.
 
  Tıklayın **etki alanı özellikleri** sınıfında, ENTER tuşuna basın ve ardından bir özelliğin adını yazın. Bir etki alanı özelliğinin varsayılan türü dizedir. Türü değiştirmek istiyorsanız, etki alanı özelliğini seçin ve ayarlayın **türü** içinde **özellikleri** penceresi. İstediğiniz türü açılan listesinde değilse bkz [özellik türleri ekleme](#addTypes).
 
@@ -409,7 +408,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
    Bir bağlayıcı ilk test ettikten sonra bazı özelliklerini ayarlamak ve bazı daha gelişmiş özellikler eklemek isteyebilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a> Liste içeren şekilleri tanımlama: bölme şekilleri
+## <a name="compartments"></a> Liste içeren şekilleri tanımlama: Bölme şekilleri
  Bir veya daha fazla öğe listeleri içeren bir bölme şekli içeriyor. Örneğin, bir müzik kitaplığı DSL müzik Albümler temsil etmek için bölme şekilleri kullanabilirsiniz. Her albüm içinde şarkıya bir listesi bulunur.
 
  ![Bölme şekli](../modeling/media/compartmentshape.png)
@@ -605,7 +604,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 
  Bu nedenle, DSL tanımındaki bazı ilişkiler değiştirdiğinizde, bu tanımı kaydettiğinizde veya tüm şablonları dönüştürdüğünüzde bildirilmesini hataları için olağan dışı olduğunu bilmeniz gerekir. Bu hataların çoğunu düzeltmeye kolaydır. Hatanın konumunu görmek için hata raporuna çift tıklayın.
 
- Ayrıca bkz: [nasıl yapılır: bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Ayrıca bkz: [nasıl yapılır: Bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Sorun giderme
  Aşağıdaki tabloda çözüm önerileri ile birlikte bir DSL tasarlarken, karşılaşılan en yaygın sorunlardan bazıları listelenmektedir. Daha fazla öneri kullanılabilir [görselleştirme araçları Extensibililty Forumu](http://go.microsoft.com/fwlink/?LinkId=186074).
@@ -619,7 +618,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
 | Oluşturduğum bir etki alanı sınıfı, ancak dil Gezgini'nde örnekleri oluşturulamaz. | Gömme ilişkisi hedef kök dışındaki her etki alanı sınıfı olmalıdır. |
 | My DSL Gezgini içinde öğeleri yalnızca tür adları ile gösterilir. | Sınıfın bir etki alanı özelliği DSL tanımındaki seçin ve Özellikler penceresinde ayarlayın **öğe adı** true. |
 | My DSL her zaman XML Düzenleyicisi'nde açılır. | Dosya okunurken bir hata nedeniyle oluşabilir. Ancak, bile, bu hatayı düzelttikten sonra DSL Tasarımcısı olarak Düzenleyici açıkça sıfırlamanız gerekir.<br /><br /> Proje öğesi sağ tıklayın, **birlikte Aç** seçip * YourLanguage ***Tasarımcısı (varsayılan)**. |
-| Derleme adları değiştirdim sonra my DSL araç görünmez. | İnceleyin ve güncelleştirme **DslPackage\GeneratedCode\Package.tt** daha fazla bilgi için bkz [nasıl yapılır: bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| Derleme adları değiştirdim sonra my DSL araç görünmez. | İnceleme ve güncelleştirme **DslPackage\GeneratedCode\Package.tt** daha fazla bilgi için [nasıl yapılır: Bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | My DSL araç görünmez, ancak derleme adı değişmemiştir.<br /><br /> Veya, bir uzantı yüklemek için hata raporlama bir ileti kutusu görünür. | Deneysel örneğini sıfırlama ve çözümünüzü yeniden oluşturun.<br /><br /> 1.  Windows Başlat menüsü, altında **tüm programlar**, genişletin [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], ardından **Araçları**ve ardından **Microsoft Visual Studio Deneysel örneğini sıfırlama**.<br />2.  Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**. |
 
 ## <a name="see-also"></a>Ayrıca Bkz.

@@ -1,8 +1,6 @@
 ---
 title: İletilerini çıkış penceresine Gönder. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906754"
 ---
-# <a name="send-messages-to-the-output-window"></a>İletilerini çıkış penceresine Gönder.
+# <a name="send-messages-to-the-output-window"></a>Çıkış penceresine ileti gönderme
 
 Çalışma zamanı iletileri yazabileceğiniz **çıkış** penceresini kullanarak <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> parçası olan bir sınıf, <xref:System.Diagnostics> sınıf kitaplığı. Kullanım <xref:System.Diagnostics.Debug> , yalnızca çıkış istiyorsanız sınıfı *hata ayıklama* programınızın sürümü. Kullanım <xref:System.Diagnostics.Trace> hem de çıkış isterseniz sınıfı *hata ayıklama* ve *yayın* sürümleri.  
   

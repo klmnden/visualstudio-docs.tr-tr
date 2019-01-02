@@ -1,8 +1,6 @@
 ---
 title: FormatVersion görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,21 +13,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f9cae12a66e2b442d6c42032d3f4bf65942127
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7f9b2cf2daff750f626f35b8c98f8269577b4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934076"
 ---
 # <a name="formatversion-task"></a>FormatVersion görevi
 Düzeltme numarası için sürüm numarası ekler.  
   
--   #1. durum: Giriş: sürüm =\<tanımlanmamış >;  Gözden geçirme =\<umursamaz >;   Çıkış: OutputVersion "1.0.0.0" =  
+-   #1. durum: Giriş: Sürüm =\<tanımlanmamış >;  Gözden geçirme =\<umursamaz >;   Çıkış: OutputVersion "1.0.0.0" =  
   
--   #2. durum: Giriş: sürüm = "1.0.0.*" düzeltme "5" çıkış =: OutputVersion "1.0.0.5" =  
+-   #2. durum: Giriş: Sürüm = "1.0.0.*" düzeltme "5" çıkış =: OutputVersion "1.0.0.5" =  
   
--   #3. durum: Giriş: sürüm = "1.0.0.0" Düzeltme =\<umursamaz >;  Çıkış: OutputVersion "1.0.0.0" =  
+-   #3. durum: Giriş: Sürüm = "1.0.0.0" Düzeltme =\<umursamaz >;  Çıkış: OutputVersion "1.0.0.0" =  
   
 ## <a name="parameters"></a>Parametreler  
  Parametreleri aşağıdaki tabloda açıklanmıştır `FormatVersion` görev.  

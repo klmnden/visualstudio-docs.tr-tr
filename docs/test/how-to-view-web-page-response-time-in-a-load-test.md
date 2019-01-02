@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850144"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi kullanarak bir yük testinde web sayfası yanıt süresini görüntüleme
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl Yapılır: Yük Testi Çözümleyicisi kullanarak bir yük testi içindeki görünümü web sayfası yanıt süresi
 
 Her web sayfasının yüklenmesi için geçen süreyi olarak da bilinen *yanıt süresi*. Web performans testi oluşturduğunuzda, web performans testinde web sayfası her istek için yanıt süresi hedefi ayarlayabilirsiniz.
 
@@ -61,7 +60,7 @@ Bir yük testi içinde web performans testinizi yoğunluk altında çalıştır�
    |**en fazla**|En fazla sayfa yanıt süresi.<br /><br /> Varsayılan olarak, bu verileri toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümünün değiştirmek için çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **Zamanlama Ayrıntıları Deposu** özelliği, select **AllIndividualDetails**.|
    |**Std sapma**|Varsayılan olarak, standart sapma verileri toplanmaz. İçinde bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** düğümünün değiştirmek için çalışma ayarı düğümünü seçin. İçinde **özellikleri** penceresinde için **Zamanlama Ayrıntıları Deposu** özelliği, select **AllIndividualDetails**.|
    |**Sayfa saati**|Web sayfası için yapılan tüm istekleri için ortalama yanıt süresi.|
-   |**Hedef**|Sayfa saati hedefi. Bu sayfa için sabit bir değerdir. **Not:** sayfa saati hedefi, web performans testinde istek için hedef yalnızca tanımlanmış olduğunda görüntülenir.|
+   |**Hedef**|Sayfa saati hedefi. Bu sayfa için sabit bir değerdir. **Not:**  Web performans testinde istek için hedef yalnızca tanımlanmış sayfa saati hedefi görüntülenir.|
    |**% Toplantı hedefi**|Web sayfası için yanıt süresi hedefi karşılayan yapılan isteklerin yüzdesi.|
 
    Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -96,5 +95,5 @@ Bir yanıt süresi verilerini görüntülemek için:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümleyin](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Nasıl yapılır: erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
+- [Nasıl yapılır: Erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

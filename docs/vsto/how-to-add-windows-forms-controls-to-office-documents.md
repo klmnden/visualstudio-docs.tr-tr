@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Office belgelerine Windows forms denetimleri ekleme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ba2d1f46a16724f120d3e3ac788dfc8f2e290474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899921"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Nasıl Yapılır: Office belgelerine Windows Forms denetimleri ekleme
   Belge düzeyi projesinde tasarım zamanında Microsoft Office Excel ve Microsoft Office Word belgelerine Windows Forms denetimleri ekleyebilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri çalışma zamanında denetimler ekleyebilirsiniz. Örneğin, ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> denetlemek için çalışma böylece kullanıcılar bir seçeneklerini listeden seçebilirsiniz.  
@@ -141,4 +138,3 @@ ms.locfileid: "53647864"
  [Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  

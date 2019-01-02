@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma kitaplarını program aracılığıyla koruma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla koruma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900783"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Nasıl yapılır: çalışma kitaplarını program aracılığıyla koruma
+# <a name="how-to-programmatically-protect-workbooks"></a>Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla koruma
   Kullanıcıların ekleme yapılamıyor veya çalışma sayfaları silme ve ayrıca da programlı olarak çalışma kitabının korumasını kaldırmak, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, isterseniz (kullanıcılar sayfası taşınamıyor şekilde) korunan yapı ve korumalı çalışma kitabının windows isteyip istemediğinizi belirtin olup olmadığını gösterir.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Bir çalışma kitabını koruma hücre düzenleme kullanıcıların durdurmaz. Verileri korumak için çalışma sayfaları korumanız gerekir. Daha fazla bilgi için [nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Bir çalışma kitabını koruma hücre düzenleme kullanıcıların durdurmaz. Verileri korumak için çalışma sayfaları korumanız gerekir. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Aşağıdaki kod örnekleri, kullanıcıdan alınan parolayı içeren bir değişkeni kullanın.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35676709"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

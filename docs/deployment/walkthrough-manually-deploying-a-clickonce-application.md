@@ -1,8 +1,6 @@
 ---
 title: 'İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923276"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>İzlenecek yol: ClickOnce uygulamasını el ile dağıtma
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma
 Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama veya gelişmiş dağıtım özelliklerini kullanması gereken güvenilen uygulama dağıtımı gibi kullanmalısınız *Mage.exe* , oluşturmakiçinkomutsatırıaracı[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri. Bu izlenecek yolda nasıl oluşturulacağını açıklar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] komut satırı sürümünü kullanarak dağıtımı (*Mage.exe*) veya grafik sürümünü (*MageUI.exe*) bildirim oluşturma ve Düzenleme aracı.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
@@ -45,7 +43,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 - Dağıtımın nasıl dağıtılacağı belirleyin.  
   
-   Dağıtım seçenekleri şunları içerir: Web, dosya paylaşımı veya CD. Daha fazla bilgi için [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
+   Dağıtım seçenekleri şunlardır: Web, dosya paylaşımı veya CD. Daha fazla bilgi için [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
   
 - Uygulama yükseltilmiş bir güven düzeyi isteyip istemediğini belirler.  
   
@@ -151,7 +149,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 13. Dosya sisteminizdeki bir dosya olarak depolanan bir sertifika varsa **sertifika dosyası işaretiyle** seçeneğini ve üç nokta simgesini kullanarak dosya sisteminden sertifikayı seçin (**...** ) düğmesi. Ardından, sertifika parolasını yazın.  
   
-     veya  
+     -veya-  
   
      Sertifikanızı bilgisayarınızdan erişilebilir bir sertifika deposunda tutuluyorsa seçin **depolanan bir sertifika ile oturum** seçenek ve sağlanan listeden bir sertifika seçin.  
   
@@ -179,7 +177,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../de
   
 25. Dosya sisteminizdeki bir dosya olarak depolanan bir sertifika varsa **sertifika dosyası işaretiyle** seçeneğini ve üç nokta simgesini kullanarak dosya sisteminden sertifikayı seçin (**...** ) düğmesi. Ardından, sertifika parolasını yazın.  
   
-     veya  
+     -veya-  
   
      Sertifikanızı bilgisayarınızdan erişilebilir bir sertifika deposunda tutuluyorsa seçin **depolanan bir sertifika ile oturum** seçenek ve sağlanan listeden bir sertifika seçin.  
   

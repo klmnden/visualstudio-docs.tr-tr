@@ -1,8 +1,6 @@
 ---
-title: Eşzamanlılık görselleştiricisi SDK | Microsoft Docs
-ms.custom: ''
+title: Eşzamanlılık görselleştiricisi SDK'sı | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
@@ -12,32 +10,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a9898037e7dc6beae5d984856ff5c12b74183049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884976"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Eşzamanlılık Görselleştiricisi SDK
-Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanlılık görselleştiricisi SDK'sını kullanarak kaynak kodunuzu işaretleyebilir. Ek verileri kodunuzda aşamaları ve olaylarla ilişkilendirebilirsiniz. Bu ek görsel olarak da bilinir *işaretçileri*.  Bir giriş için bkz [eşzamanlılık görselleştiricisi SDK'sı giriş](http://go.microsoft.com/fwlink/?LinkId=235405).  
+Eşzamanlılık Görselleştiricisindeki ek bilgileri görüntülemek için eşzamanlılık görselleştiricisi SDK'sını kullanarak kaynak kodunuz izleyebilirsiniz. Ek veri kodunuzda aşamaları ve olaylarla ilişkilendirebilirsiniz. Bu ek görselleştirmeler olarak bilinen *işaretçileri*.  Tanıtım amaçlı bir kılavuz için bkz. [eşzamanlılık görselleştiricisi SDK'sı ile tanışın](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
 ## <a name="properties"></a>Özellikler  
- Bayrakları, yayılma ve her iki özellik iletiniz: kategori ve önem derecesi. İçinde [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusunda görüntülenen işaretçileri kümesini filtrelemek için bu özellikleri kullanabilirsiniz. Ayrıca, bu özellikler işaretçileri görsel gösterimi etkiler. Örneğin, bayrakları boyutunu önem temsil etmek için kullanılır. Ayrıca, renk kategori göstermek için kullanılır.  
+ Bayrakları, yayılımları ve her iki özelliğe sahip iletileri: kategori ve önem derecesi. İçinde [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusunda görüntülenen işaretçileri kümesini filtrelemek için bu özellikleri kullanabilirsiniz. Ayrıca, bu özellikleri işaretçileri görsel temsilini etkiler. Örneğin, bayrakları boyutunu önem göstermek için kullanılır. Ayrıca, renk kategorisi belirtmek için kullanılır.  
   
 ## <a name="basic-usage"></a>Temel kullanım  
- Eşzamanlılık görselleştiricisi işaretleyicileri oluşturmak için kullanabileceğiniz varsayılan bir sağlayıcı gösterir. Sağlayıcı ile birlikte eşzamanlılık görselleştiricisi zaten kayıtlı ve kullanıcı Arabiriminde görünen işaretçileri yapmak için başka bir şey yapmanıza gerek yoktur.  
+ Eşzamanlılık görselleştiricisi işaretleyicileri oluşturmak için kullanabileceğiniz bir varsayılan sağlayıcıyı gösterir. Eşzamanlılık görselleştiricisi ile birlikte bir sağlayıcı zaten kayıtlı ve işaretçileri kullanıcı Arabiriminde görünür yapmak için başka bir şey yapmanız gerekmez.  
   
 ### <a name="c-and-visual-basic"></a>C# ve Visual Basic  
- C#, Visual basic ve diğer yönetilen kod, varsayılan sağlayıcı çağırarak kullanmak <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. İşaretçileri oluşturmak için dört işlevleri sunar: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A>, ve <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Varsayılan özelliklerini kullanmak istediğinize bağlı olarak bu işlevler için birden çok aşırı vardır.  En basit aşırı olayın açıklamasını belirten bir dize parametresi alan. Açıklama eşzamanlılık görselleştiricisi raporlarında görüntülenir.  
+ C#, Visual basic ve diğer yönetilen kod, çağrı yaparak ve varsayılan sağlayıcıyı kullanmak <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. İşaretçileri oluşturmak için dört işlev sunar: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A>, ve <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Varsayılan özelliklerini kullanmak istediğinize bağlı olarak, bu işlevler için birden fazla aşırı yüklemeleri vardır.  En basit aşırı olayın açıklamasını belirten bir dize parametresi alır. Açıklama, Concurrency Visualizer raporlarında görüntülenir.  
   
-##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Bir C# veya Visual Basic projesine SDK desteği eklemek için  
+##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Bir C# veya Visual Basic projesi için SDK desteği eklemek için  
   
-1.  Menü çubuğunda seçin **Çözümle**, **eşzamanlılık görselleştiricisi**, **ekleme SDK projesine**.  
+1.  Menü çubuğunda, **Çözümle**, **eşzamanlılık görselleştiricisi**, **SDK proje ekleme**.  
   
-2.  İstediğiniz SDK erişmeye ve sonra projeyi seçin **Seçili proje SDK ekleme** düğmesi.  
+2.  Erişim SDK'yı ve ardından istediğiniz projeyi seçin **Seçili projeye Ekle SDK** düğmesi.  
   
-3.  Bir Imports veya kodunuzu deyimiyle ekleyin.  
+3.  Bir Imports veya using deyimini kodunuza ekleyin.  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -48,23 +46,23 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
     ```  
   
 ### <a name="c"></a>C++  
- C++'da, oluşturma bir [marker_series sınıfı](../profiling/marker-series-class.md) nesne ve işlevleri çağırmak için kullanın.  `marker_series` Sınıfı işaretleyicileri oluşturmak için üç işlevleri sunar [marker_series::write_flag yöntemi](../profiling/marker-series-write-flag-method.md), [marker_series::write_message yöntemi](../profiling/marker-series-write-message-method.md)ve [işaretçi_ Series::write_alert yöntemi](../profiling/marker-series-write-alert-method.md).  
+ C++'ta, oluşturun bir [marker_series sınıfı](../profiling/marker-series-class.md) nesne ve işlevlerini çağırmak için kullanın.  `marker_series` Sınıfı gösterir, işaretçiler oluşturmak için üç işlev [marker_series::write_flag yöntemi](../profiling/marker-series-write-flag-method.md), [marker_series::write_message yöntemi](../profiling/marker-series-write-message-method.md)ve [işaretçi_ Series::write_alert yöntemi](../profiling/marker-series-write-alert-method.md).  
   
-##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Bir C++ veya C projeye SDK desteği eklemek için  
+##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Bir C ya da C++ projesine SDK desteği eklemek için  
   
-1.  Menü çubuğunda seçin **Çözümle**, **eşzamanlılık görselleştiricisi**, **ekleme SDK projesine**.  
+1.  Menü çubuğunda, **Çözümle**, **eşzamanlılık görselleştiricisi**, **SDK proje ekleme**.  
   
-2.  İstediğiniz SDK erişmeye ve sonra projeyi seçin **Seçili proje SDK ekleme** düğmesi.  
+2.  Erişim SDK'yı ve ardından istediğiniz projeyi seçin **Seçili projeye Ekle SDK** düğmesi.  
   
-3.  C++ için dahil `cvmarkersobj.h`. C için dahil `cvmarkers.h`.  
+3.  C++ için ekleme `cvmarkersobj.h`. C için dahil `cvmarkers.h`.  
   
-4.  Kullanarak bir ekleme deyimi, kodunuzun.  
+4.  Kullanarak bir ekleme kodunuzu deyimi.  
   
     ```cpp  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Oluşturma bir `marker_series` nesne ve ona geçirin `span` Oluşturucusu.  
+5.  Oluşturma bir `marker_series` nesne ve geçirin `span` Oluşturucusu.  
   
     ```C++  
   
@@ -74,23 +72,23 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
     ```  
   
 ## <a name="custom-usage"></a>Özel kullanım  
- Gelişmiş senaryolar için eşzamanlılık görselleştiricisi SDK'sı daha fazla denetim sunar.  İki ana kavramlar daha Gelişmiş senaryolar ile ilişkilidir: işaret sağlayıcıları ve işaret serisi. İşaretçi, farklı ETW sağlayıcılar (her sahip farklı bir GUID) sağlayıcılarıdır. İşaretçi bir sağlayıcı tarafından oluşturulan olaylar seri kanalları oluşur. Bir işaretçi sağlayıcısı tarafından oluşturulan olaylar düzenlemek için bunları kullanabilirsiniz.  
+ Gelişmiş senaryolar için daha fazla denetim eşzamanlılık görselleştiricisi SDK'sı sunar.  İki ana kavram daha gelişmiş senaryoları ile ilişkili: işaretleyicisi sağlayıcılarını ve işaret serisi. İşaretçisi, farklı ETW sağlayıcılarını (her farklı bir GUID vardır) sağlayıcılarıdır. Bir sağlayıcı tarafından oluşturulan olayları seri kanalları işaret oluşur. İşaretleyici sağlayıcı tarafından oluşturulan olayları düzenlemek için bunları kullanabilirsiniz.  
   
-#### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Yeni bir işaret sağlayıcı bir C# veya Visual Basic projesinde kullanmak için  
+#### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Bir C# veya Visual Basic projesinde yeni bir işaretleyici sağlayıcısını kullanmak için  
   
-1.  Oluşturma bir <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> nesnesi.  Oluşturucu bir GUID alır.  
+1.  Oluşturma bir <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> nesne.  Oluşturucusu bir GUID alır.  
   
-2.  Sağlayıcıyı kaydetmek için eşzamanlılık görselleştiricisi açmak [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu.  Seçin **işaretçileri** sekmesini ve ardından **Yeni Sağlayıcı Ekle** düğmesi. İçinde [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusunda, sağlayıcı ve sağlayıcının açıklamasını oluşturmak için kullanılan GUID girin.  
+2.  Sağlayıcıyı kaydetmek için eşzamanlılık görselleştiricisi'ni açın [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu.  Seçin **işaretçileri** sekmesine ve ardından **Yeni Sağlayıcı Ekle** düğmesi. İçinde [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusunda, sağlayıcısı ve sağlayıcı açıklamasını oluşturmak için kullanılan GUID girin.  
   
-#### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C++ veya C projede yeni bir işaret sağlayıcısı kullanmak için  
+#### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Bir C ya da C++ projesinde yeni bir işaretleyici sağlayıcısını kullanmak için  
   
 1.  Kullanım `CvInitProvider` işlevi bir PCV_PROVIDER başlatılamadı.  Bir GUID * ve PCV_PROVIDER Oluşturucusu alır\*.  
   
-2.  Sağlayıcıyı kaydetmek için açık [Gelişmiş ayarları](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu.  Seçin **işaretçileri** sekmesini ve ardından **Yeni Sağlayıcı Ekle** düğmesi. Bu iletişim kutusunda sağlayıcısı ve sağlayıcı açıklamasını oluşturmak için kullanılan GUID girin.  
+2.  Sağlayıcıyı kaydetmek için açık [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu.  Seçin **işaretçileri** sekmesine ve ardından **Yeni Sağlayıcı Ekle** düğmesi. Bu iletişim kutusunda sağlayıcısı ve sağlayıcı açıklamasını oluşturmak için kullanılan GUID girin.  
   
-#### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Bir C# veya Visual Basic projesinde işaret serisi kullanmak için  
+#### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Bir C# veya Visual Basic projesinde bir işaret serisi kullanmak için  
   
-1.  Yeni bir kullanmak için <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, ilk kullanarak oluşturma bir <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> nesne ve ardından işaret olayları doğrudan yeni serisinden oluşturun.  
+1.  Yeni bir kullanılacak <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, kullanarak ilk oluşturmak bir <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> nesne ve işaret olayları doğrudan yeni dizisinden sonra oluşturmak.  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
@@ -102,16 +100,16 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
     series1.WriteFlag("My flag")  
     ```  
   
-#### <a name="to-use-a-marker-series-in-a-c-project"></a>C++ projesinde işaret serisi kullanma  
+#### <a name="to-use-a-marker-series-in-a-c-project"></a>Bir C++ projesinde bir işaret serisi kullanmak için  
   
-1.  Oluşturma bir `marker_series` nesnesi.  Bu yeni serisinden olaylar oluşturabilir.  
+1.  Oluşturma bir `marker_series` nesne.  Bu yeni serisinden olaylar oluşturabilir.  
   
     ```scr  
     marker_series series;  
     series.write_flag(_T("Hello world!"));  
     ```  
   
-#### <a name="to-use-a-marker-series-in-a-c-project"></a>Bir işaretçi serisi C projesinde kullanmak için  
+#### <a name="to-use-a-marker-series-in-a-c-project"></a>Bir C projesi içinde bir işaret serisi kullanmak için  
   
 1.  Kullanım `CvCreateMarkerSeries` bir PCV_MARKERSERIES oluşturmak için işlevi.  
   
@@ -125,7 +123,7 @@ Eşzamanlılık görselleştiricisi ek bilgileri görüntülemek için eşzamanl
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)|Eşzamanlılık görselleştiricisi API için C++ açıklar.|  
-|[C Kitaplık Başvurusu](../profiling/c-library-reference.md)|Eşzamanlılık görselleştiricisi API C. açıklar|  
+|[C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)|Eşzamanlılık görselleştiricisi API'si için C++ açıklar.|  
+|[C Kitaplık Başvurusu](../profiling/c-library-reference.md)|Eşzamanlılık görselleştiricisi API C. açıklar.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Yönetilen kod için eşzamanlılık görselleştiricisi API açıklar.|  
-|[Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)|Eşzamanlılık yöntemi kullanılarak oluşturulur ve iş parçacığı yürütme verileri içeren veri dosyalarını profil oluşturma raporları ve görünümleri için başvuru bilgileri.|
+|[Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)|Görünümleri ve raporları, eşzamanlılık yöntemi kullanılarak oluşturulur ve iş parçacığı yürütme verileri içeren veri dosyalarını profil oluşturma için başvuru bilgileri.|

@@ -1,23 +1,22 @@
 ---
-title: 'İş Akışı Tasarımcısı - nasıl yapılır: tanımlama ve etkinlik temsilcileri kullanma'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: Tanımlama ve etkinlik temsilcileri kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908468"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl yapılır: tanımlama ve iş akışı tasarımcısında etkinlik temsilcileri kullanma
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl Yapılır: İş Akışı Tasarımcısında etkinlik temsilcileri tanımlama ve kullanma
 
 .NET framework 4.5 içeren bir kullanıma hazır Tasarımcı için <xref:System.Activities.Statements.InvokeDelegate> etkinlik. Bu tasarımcı, türetilen etkinlik temsilcileri atamak için kullanılabilir <xref:System.Activities.ActivityDelegate>, gibi <xref:System.Activities.ActivityAction> veya <xref:System.Activities.ActivityFunc%601>.
 

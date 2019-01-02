@@ -1,9 +1,8 @@
 ---
-title: İş Akışı Tasarımcısı ile uygulamaları geliştirme
+title: İş Akışı Tasarımcısı ile uygulama geliştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -18,32 +17,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6fa987303ccbc3c6dc9122fb03daef02896a327
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 8ef3b7e9bfc18407023e6a84a25eb32d453823ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903637"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>İş Akışı Tasarımcısı ile uygulamaları geliştirme
 
-İş Akışı Tasarımcısı bir görsel tasarımcı ve grafik oluşturma ve, hata ayıklama için hata ayıklayıcı, [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) Visual Studio'da (WF) uygulamaları. Bileşik iş akışı uygulaması, etkinlik kitaplığı veya şablonları ve etkinlik tasarımcıları kullanarak Windows Communication Foundation (WCF) hizmet oluşturma sağlar.
+İş Akışı Tasarımcısı bir görsel tasarımcı ve grafik oluşturma ve hata ayıklama için hata ayıklayıcı olduğu [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) Visual Studio'daki (WF) uygulamaları. Bir bileşik iş akışı uygulaması, etkinlik kitaplığı veya Windows Communication Foundation (WCF) hizmet şablonları ve etkinlik tasarımcıları kullanarak oluşturmak sağlar.
 
-## <a name="install-windows-workflow-foundation"></a>Windows Workflow Foundation Yükleme
+## <a name="install-windows-workflow-foundation"></a>Windows Workflow Foundation'ı yükleme
 
-İş akışı proje şablonları Visual Studio 2017 kullanmak için ilk yükleme **Windows Workflow Foundation** bileşeni.
+İş akışı proje şablonları, Visual Studio 2017'de kullanmak için önce yükleme **Windows Workflow Foundation** bileşeni.
 
-1. Visual Studio Yükleyicisi'ni açın. Açmak için bir hızlı seçerek yoludur **Araçları** > **alma araçları ve özelliklerinin** Visual Studio.
+1. Visual Studio Yükleyicisi'ni açın. Açmak için hızlı bir şekilde belirlemektir **Araçları** > **araçları ve özellikleri Al** Visual Studio'da.
 
-1. Visual Studio yükleyicisinde seçin **bileşenleri tek tek** sekmesi.
+1. Visual Studio Yükleyicisi'nde seçin **tek tek bileşenler** sekmesi.
 
-1. Ekranı aşağı kaydırarak **geliştirme etkinlikleri** kategori ve ardından **Windows Workflow Foundation** bileşeni.
+1. Ekranı aşağı kaydırarak **geliştirme etkinliklerini** kategorisi ve ardından **Windows Workflow Foundation** bileşeni.
 
    ![Visual Studio 2017 için Windows Workflow Foundation bileşeni](media/windows-workflow-foundation-component.png)
 
-1. Seçin **değiştirmek**.
+1. Seçin **değiştirme**.
 
-   Visual Studio yükler **Windows Workflow Foundation** bileşeni.
+   Visual Studio'yu yükler **Windows Workflow Foundation** bileşeni.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

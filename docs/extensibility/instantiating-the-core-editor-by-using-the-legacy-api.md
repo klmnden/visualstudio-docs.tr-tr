@@ -1,9 +1,6 @@
 ---
 title: Eski API'yi kullanarak çekirdek Düzenleyici örnekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838170"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Eski API'yi kullanarak çekirdek Düzenleyici örneği
 Düzenleyici metin düzenleme ekleme, silme, kopyalama ve yapıştırma gibi işlevleri sorumludur. Bu, bu işlevler, metin renklendirme, girinti ve IntelliSense deyim tamamlama gibi dil Hizmetleri tarafından sağlanan işlevleri ile birleştirir.  
@@ -65,9 +62,9 @@ Düzenleyici metin düzenleme ekleme, silme, kopyalama ve yapıştırma gibi iş
   
  Varsa <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> yöntemi, metin düzenleyici olarak aynı komutu GUID döndürür, çekirdek Düzenleyici örneği, otomatik olarak varsayılan kısayol tuşlarını alır.  
   
- Genel bilgi için bkz. [izlenecek yol: Düzenleyici çekirdek oluşturma ve bir düzenleyici dosya türü kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Genel bilgi için bkz. [izlenecek yol: Çekirdek düzenleyici oluşturma ve bir düzenleyici dosya türü kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çekirdek Düzenleyicisi içinde](../extensibility/inside-the-core-editor.md)   
  [Açın ve proje öğeleri Kaydet](../extensibility/internals/opening-and-saving-project-items.md)   
- [İzlenecek yol: bir çekirdek Düzenleyicisi ve bir düzenleyici dosya türü kayıt oluşturma](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [İzlenecek yol: Bir çekirdek Düzenleyicisi ve bir düzenleyici dosya türü kayıt oluşturma](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

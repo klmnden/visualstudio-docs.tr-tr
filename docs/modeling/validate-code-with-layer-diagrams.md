@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907832"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -55,7 +54,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
 
 Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Kodu Visual Studio'da açık bir bağımlılık diyagramından el ile veya komut isteminde doğrulayabilirsiniz. Yerel yapıları veya Azure işlem hatları çalıştıran oluşturduğunda otomatik olarak kod da doğrulayabilirsiniz. Bkz: [kanal 9 videosu: tasarım ve bağımlılık diyagramlarını kullanarak Mimarinizi doğrulama](http://go.microsoft.com/fwlink/?LinkID=252073).
+Kodu Visual Studio'da açık bir bağımlılık diyagramından el ile veya komut isteminde doğrulayabilirsiniz. Yerel yapıları veya Azure işlem hatları çalıştıran oluşturduğunda otomatik olarak kod da doğrulayabilirsiniz. Bkz: [kanal 9 Video: Tasarlama ve doğrulama bağımlılık diyagramlarını kullanarak Mimarinizi](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Team Foundation Server (TFS) kullanarak katman doğrulaması çalıştırmak istiyorsanız, yapı sunucunuzda ayrıca Visual Studio'nun aynı sürümünü yüklemeniz gerekir.
@@ -164,7 +163,7 @@ Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmalar�
 
 Doğrulama hatalarını yönetmek için bu görevleri kullanın **hata listesi** penceresi:
 
-|**Hedef**|**Aşağıdaki adımları izleyin**|
+|**Alıcı**|**Aşağıdaki adımları izleyin**|
 |-|-|
 |Doğrulama sırasında seçili hataları gizleme|Bir veya birden çok seçili hataya sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **Hataları Gizle**.<br /><br /> Gizlenen hatalar üstü çizili biçimde görünür. Doğrulamayı daha sonra çalıştırdığınızda bu hatalar görünmez.<br /><br /> Gizlenen hatalar bir karşılık gelen bağımlılık diyagramı dosyası için .gizlenenler dosyasında izlenir.|
 |Seçili hataların gizlenmesini durdurma|Seçili gizlenen hata veya hatalara sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **hataları gizlemeyi Durdur**.<br /><br /> Doğrulamayı daha sonra çalıştırdığınızda seçili gizlenen hatalar görünecektir.|
@@ -229,11 +228,11 @@ Aşağıdaki bölümde, bu hatalarda kullanılan sözdizimi belirtilmekte, bu ha
 | **Hata sözdizimi** | **Hata açıklaması** |
 |-|-|
 | DV0001: **Geçersiz bağımlılık** | Bu sorun, bir kod öğesi (ad alanı, tür, üye) başka bir katmana eşlenmiş bir kod öğesi için bir katman başvuruları eşlenmiş, ancak bu bu katmanları içeren bağımlılık doğrulama diyagramı Katmanlar arasındaki bağımlılık ok yok bildirilir. Bir bağımlılık kısıtlama ihlali budur. |
-| DV1001: **geçersiz ad alanı adı** | Bu sorun, "Namespace adlarına izin" özelliği bu kod öğe tanımlandığı ad alanı içermeyen bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Namespace adlarına izin" söz dizimi ad alanları hangi kod öğeleri ile ilişkili katmandır noktalı virgülle ayrılmış listesi olacak Not tanımlanacak verilir. |
-| DV1002: **başvurulamayan ad alanında bağımlılık** | Bu sorun, bir katman ile ilişkili ve Katmanı "Başvurulamayan Namespace" özelliğinde tanımlanan bir ad alanında tanımlanan başka bir kod öğe başvuran bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Başvurulamayan ad alanları" özelliği bir noktalı virgülle ayrılmış liste içinde bu katman ile ilişkili kod öğelerine başvurulmaması gereken ad alanları olarak tanımlandığını aklınızda bulundurun. |
-| DV1003: **izin verilmeyen ad alanı adı** | Bu sorun, bu kod öğe tanımlandığı ad alanı "Namespace ad izin verilmeyen" özelliği içeren bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Ad alanı adı izin verilmeyen" özelliği ad alanları hangi kod öğeleri bu katman ile ilişkili değil tanımlanmalıdır noktalı virgülle ayrılmış listesi olarak tanımlandığını aklınızda bulundurun. |
-| DV3001: **Missing LINK** | Katman '*LayerName*'bağlantı'*Yapıt*' bulunamıyor. Eksik bir derleme başvurunuz mu var? |
-| DV9001: **mimari çözümleme iç hatalar buldu** | Sonuçlar tamamlanmamış olabilir. Daha fazla bilgi için ayrıntılı yapı olay günlüğü veya çıkış penceresine bakın. |
+| DV1001: **Geçersiz ad alanı adı** | Bu sorun, "Namespace adlarına izin" özelliği bu kod öğe tanımlandığı ad alanı içermeyen bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Namespace adlarına izin" söz dizimi ad alanları hangi kod öğeleri ile ilişkili katmandır noktalı virgülle ayrılmış listesi olacak Not tanımlanacak verilir. |
+| DV1002: **Başvurulamayan ad alanında bağımlılık** | Bu sorun, bir katman ile ilişkili ve Katmanı "Başvurulamayan Namespace" özelliğinde tanımlanan bir ad alanında tanımlanan başka bir kod öğe başvuran bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Başvurulamayan ad alanları" özelliği bir noktalı virgülle ayrılmış liste içinde bu katman ile ilişkili kod öğelerine başvurulmaması gereken ad alanları olarak tanımlandığını aklınızda bulundurun. |
+| DV1003: **İzin verilmeyen ad alanı adı** | Bu sorun, bu kod öğe tanımlandığı ad alanı "Namespace ad izin verilmeyen" özelliği içeren bir katman ile ilişkili bir kod öğesinin bildirilir. Bir adlandırma kısıtlaması ihlali budur. "Ad alanı adı izin verilmeyen" özelliği ad alanları hangi kod öğeleri bu katman ile ilişkili değil tanımlanmalıdır noktalı virgülle ayrılmış listesi olarak tanımlandığını aklınızda bulundurun. |
+| DV3001: **Eksik bağlantı** | Katman '*LayerName*'bağlantı'*Yapıt*' bulunamıyor. Eksik bir derleme başvurunuz mu var? |
+| DV9001: **Mimari çözümleme iç hatalar buldu** | Sonuçlar tamamlanmamış olabilir. Daha fazla bilgi için ayrıntılı yapı olay günlüğü veya çıkış penceresine bakın. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

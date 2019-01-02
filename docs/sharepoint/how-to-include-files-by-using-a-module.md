@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: bir modül kullanarak dosyaları dahil etme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir modül kullanarak dosyaları içerme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,47 +13,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923503"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Nasıl yapılır: bir modül kullanarak dosyaları dahil etme
-  *Modülleri* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modülleri) ASPX ana sayfalar gibi dosyaları, metin dosyaları ya da görüntüleri SharePoint'e dağıtmanıza olanak sağlayan kapsayıcılardır.  
+# <a name="how-to-include-files-by-using-a-module"></a>Nasıl Yapılır: Bir modül kullanarak dosyaları içerme
+  *Modüller* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modülleri) dosyaları gibi ASPX ana sayfalar, metin dosyaları ya da görüntülerini SharePoint'e dağıtmanıza olanak tanıyan kapsayıcılardır.  
   
- Belge kitaplığına veya normal bir dosya (örneğin, default.aspx) gibi bir dosya dağıtmak belge kitaplığı dışında seçebilirsiniz. Belge kitaplığına bir dosya eklemek için belirtin `Type="GhostableInLibrary"` bir öznitelik olarak **dosya** öğesi. Bu ayar kitaplığa eklendiğinde dosyanızla gitmek için bir liste öğesi oluşturmak için SharePoint bildirir. Belge kitaplığı dışında bir dosyayla dağıtılması için ya da belirttiğiniz `Type="Ghostable"` veya yalnızca çıkarın **türü** özniteliği.  
+ Belge kitaplığına veya normal bir dosya (örneğin, default.aspx) gibi bir dosya dağıtmak bir belge kitaplığı dışında seçebilirsiniz. Bir belge kitaplığına bir dosya eklemek için belirtin `Type="GhostableInLibrary"` özniteliği olarak **dosya** öğesi. SharePoint kitaplığına eklendiğinde dosyanızla gitmek için bir liste öğesi oluşturmak için bu ayarı bildirir. Bir belge kitaplığının dışındaki bir dosya dağıtmak için seçeneklerinden birini belirtin `Type="Ghostable"` veya yalnızca çıkarın **türü** özniteliği.  
   
-## <a name="add-a-module-to-a-sharepoint-solution"></a>Bir SharePoint çözüm bir modül Ekle  
+## <a name="add-a-module-to-a-sharepoint-solution"></a>Bir modül için bir SharePoint çözümünü ekleyin  
   
 #### <a name="to-add-a-module"></a>Bir modül eklemek için  
   
 1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]bir SharePoint projesi oluşturun veya açın.  
   
-     Daha fazla bilgi için bkz: [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Daha fazla bilgi için [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
 2.  İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.  
   
      **Yeni Öğe Ekle** iletişim kutusu açılır.  
   
-3.  SharePoint şablonları listesinden seçip **Modülü** şablonu ve ardından **Ekle** düğmesi.  
+3.  SharePoint şablonları listesinde seçin **Modülü** şablonu seçip **Ekle** düğmesi.  
   
-     Bu adım, bir düğümü Module1 adlı projeye oluşturur.  
+     Bu adımda, bir düğüm Module1 adlı projede oluşturulur.  
   
-4.  Module1 altında silmek *örnek.txt* dosya.  
+4.  Module1'ın altında Sil *örnek.txt* dosya.  
   
-     Örnek.txt tüm yeni modüllerdeki örneğin amaçları dahil edilir ve gerekli değildir. (Dosya silme de girdisini modülün kaldırır, Not *Elements.xml* dosyası.)  
+     Örnek.txt tüm yeni modüller örneğin amacıyla bulunur ve gerekli değildir. (Dosyayı silme da girdisini modülün kaldırır, Not *Elements.xml* dosyası.)  
   
-5.  SharePoint belirli klasör yapısını dağıtmak için dosyalarınızı istiyorsanız, bu klasörleri Module1 altında oluşturun [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Module1 düğümü seçerek ve ardından, menü çubuğu seçme **proje**, **yeni Klasör**.  
+5.  Dosyaları SharePoint'teki belirli bir klasör yapısı dağıtmak istiyorsanız, bu klasörleri Module1 altında oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Module1 düğüm seçerek ve ardından, menü çubuğundan seçme **proje**, **yeni Klasör**.  
   
-6.  İstediğiniz dosyayı ekleyin ve ardından, menü çubuğunda klasörü seçin **proje**, **varolan öğeyi Ekle**.  
+6.  Dosyayı ekleyin ve ardından menü çubuğunda, istediğiniz klasörü seçin **proje**, **varolan öğeyi Ekle**.  
   
-7.  SharePoint'e dağıtın ve ardından istediğiniz bir veya daha fazla dosya seçin **Ekle** düğmesi.  
+7.  SharePoint'e dağıtmanıza ve ardından istediğiniz bir veya daha fazla dosya seçin **Ekle** düğmesi.  
   
-     Projeye bir dosya eklediğinizde, bunun için bir giriş modülün Elements.xml dosyasına otomatik olarak eklenir. Proje dağıtıldığında, dosyalar tarafından belirtilen projenin kök dizine göreli SharePoint sunucusuna kopyalanır **dosya** öğenin **Url** gibi öznitelik `Url="Module1/New Folder/SomeFile.doc`. Bir dosya için dağıtım konumu değiştirmek istiyorsanız, ya da başka bir klasöre taşıyın **Çözüm Gezgini** veya değiştirmek kendi **Url** ayarı.  
+     Projeye bir dosya eklediğinizde, bunun için bir giriş için modülün Elements.xml dosyası otomatik olarak eklenir. Proje dağıtılırken, dosyalar tarafından belirtilen proje kök dizinine göreli bir SharePoint sunucusuna kopyalanır **dosya** öğenin **Url** gibi öznitelik `Url="Module1/New Folder/SomeFile.doc`. Dağıtım konumu bir dosya için değiştirmek istiyorsanız, ya da başka bir klasöre taşıyın **Çözüm Gezgini** veya değiştirmek, **Url** ayarı.  
   
-8.  Bir Belge Kitaplığı'nda görünmesini istediğiniz tüm dosyaları ekleme `Type="GhostableInLibrary"` özniteliği kendi girişi *Elements.xml*. Örneğin,  
+8.  Bir belge kitaplığındaki görünmesini istediğiniz tüm dosyaları için ekleme `Type="GhostableInLibrary"` girdisini özniteliği *Elements.xml*. Örneğin,  
   
     ```xml  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
@@ -66,9 +61,8 @@ ms.locfileid: "37120416"
   
 9. Projeyi dağıtın.  
   
-     SharePoint içinde belirtilen konumlara dosyaları kopyalayın.  
+     SharePoint içinde belirtilen konuma dosyaları kopyalayın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
+ [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  

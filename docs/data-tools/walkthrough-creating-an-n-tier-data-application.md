@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma'
+title: 'İzlenecek yol: N katmanlı veri uygulaması oluşturma'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924273"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>İzlenecek yol: n katmanlı veri uygulaması oluşturma
+# <a name="walkthrough-create-an-n-tier-data-application"></a>İzlenecek yol: N katmanlı veri uygulaması oluşturma
 *N katmanlı* veri uygulamaları verilere erişen ve birden çok mantıksal katmana ayrılmış uygulamalarıdır veya *katmanları*. Uygulama bileşenlerini farklı katmanlara ayırmak uygulamanızın yönetilebilirliğini ve ölçeklenebilirliğini artırır. Bunu, tüm çözümü yeniden tasarlamanıza gerek kalmadan tek bir katmana uygulanabilen yeni teknolojilerin daha kolay benimsenmesini sağlayarak yapar. N katmanlı mimaride bir sunu katmanı, bir orta katman ve bir veri katmanı bulunur. Orta katmanda genellikle bir veri erişim katmanı, iş mantığı katmanı ve kimlik doğrulaması ve doğrulama gibi paylaşılan bileşenler bulunur. Veri katmanında ilişkisel bir veritabanı vardır. N katmanlı uygulamalar hassas bilgileri orta katmanın veri erişimi katmanında depolayarak sunu katmanına erişimi olan son kullanıcılardan uzakta tutulmasını sağlar. Daha fazla bilgi için [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md).
 
 N katmanlı uygulamada çeşitli katmanları ayırma yollarından biri, uygulamanıza eklemek istediğiniz her katman için ayrı projeler oluşturmaktır. Türü belirtilmiş veri kümelerinde, üretilen veri kümesinin ve `DataSet Project` kodunun gitmesi gereken projeleri belirleyen bir `TableAdapter` özelliği bulunur.
@@ -50,7 +49,7 @@ Bu kılavuz boyunca aşağıdaki adımları gerçekleştirin:
 
 -   Veri tablolarını doldurmak için kod yazma.
 
-![video bağlantısı](../data-tools/media/playvideo.gif) bu konunun video sürümü için bkz: [Video nasıl yapılır: bir n katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).
+![video bağlantısı](../data-tools/media/playvideo.gif) bu konunun video sürümü için bkz: [Video nasıl yapılır: N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Önkoşullar
 Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır.
@@ -79,7 +78,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-2. Ya da genişletin **Visual C#**  veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
+2. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
 
 3. Orta bölmede seçin **sınıf kitaplığı** proje türü.
 
@@ -106,7 +105,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
  Sonraki adım türü belirtilmiş bir veri kümesi oluşturmaktır. Türü belirtilmiş veri kümeleri, her iki veri kümesi sınıfıyla oluşturulur (dahil olmak üzere `DataTables` sınıflar) ve `TableAdapter` tek bir projede sınıfları. (Tüm sınıflar tek dosyada oluşturulur.) Veri kümesi ve TableAdapters öğelerini farklı projelere ayırdığınızda, bırakarak diğer projeye taşınır dataset sınıfı olduğu `TableAdapter` sınıfları özgün projede. Bu nedenle, veri kümesini sonuçta (DataAccessTier projesi) TableAdapter bağdaştırıcılarını içerecek projede oluşturun. Kullanarak bir veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.
 
 > [!NOTE]
-> Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: örnek veritabanları yükleme](../data-tools/installing-database-systems-tools-and-samples.md).
+> Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır. Northwind örnek veritabanını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Örnek veritabanlarını yüklemek](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma
 
@@ -124,7 +123,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
      Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-     veya
+     -veya-
 
      Seçin **yeni bağlantı** açmak için **Bağlantı Ekle** iletişim kutusu.
 
@@ -156,7 +155,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 5. Üzerinde **derleme** menüsünde **Çözümü Derle**.
 
-   Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini içeren proje (`DataAccessTier`) şimdi yalnızca TableAdapter bağdaştırıcıları içerir. Proje **DataSet projesi** özelliği (`DataEntityTier`) türü belirtilmiş veri kümesi içerir: *NorthwindDataSet.Dataset.Designer.vb* (veya  *NorthwindDataSet.Dataset.Designer.cs*).
+   Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini içeren proje (`DataAccessTier`) şimdi yalnızca TableAdapter bağdaştırıcıları içerir. Proje **DataSet projesi** özelliği (`DataEntityTier`) türü belirtilmiş veri kümesi içerir: *NorthwindDataSet.Dataset.Designer.vb* (veya *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları taşınmaz otomatik olarak. Mevcut veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.

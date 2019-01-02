@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: başvuru pencereleri sembol bilgileri | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Başvuru Windows bilgi simgesi | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
@@ -15,38 +13,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ee80d19dea5956c85c844863ffd41ec94c486486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841683"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: başvuru Windows sembol bilgileri
-Profil oluşturma Visual Studio Araçları simgesini kullanın (. *pdb*) gibi simgesel adları çözümlemek için dosyaları işlev program ikili adları. Otomatik olarak karşıdan yükle ve doğru güncelleştirmek için aşağıdaki adımları izleyebilirsiniz. *pdb* dosyaları yerel bilgisayarda Windows sürümü için.  
+# <a name="how-to-reference-windows-symbol-information"></a>Nasıl Yapılır: Başvuru Pencereleri sembol bilgileri
+Visual Studio profil oluşturma araçları simgesini kullanın (. *pdb*) dosyaları gibi sembolik adları çözümlemek için işlev adlarını program ikili dosyaları. Otomatik olarak indirip doğru güncelleştirmek için aşağıdaki adımları izleyebilirsiniz. *pdb* dosyaları yerel bilgisayarda Windows sürümü için.  
   
 > [!NOTE]
->  Bu ayar, varolan raporları etkilemez. Yalnızca simge sunucusunu belirttikten sonra oluşturulan raporlar sembol bilgileri gerekir.  
+>  Bu ayar, var olan raporların etkilemez. Sembol sunucusu belirttikten sonra oluşturulan raporlar sembol bilgilerini sahip olur.  
   
- Daha fazla bilgi için bkz: [belirt simgesi (. *pdb*) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Daha fazla bilgi için [belirtin simge (. *pdb*) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-### <a name="to-use-the-microsoft-symbol-server"></a>Microsoft Simge sunucusunu kullanmak için  
+### <a name="to-use-the-microsoft-symbol-server"></a>Microsoft sembol sunucusu kullanmak için  
   
-1.  C:\SymbolCache gibi simge dosyası bilgileri içeren bir klasör oluşturun.  
+1.  C:\SymbolCache gibi sembol dosyası bilgilerini içeren bir klasör oluşturun.  
   
-2.  Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.  
+2.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
      **Seçenekleri** iletişim kutusu görüntülenir.  
   
-3.  Genişletme **hata ayıklama** ağacı ve ardından **simgeleri**.  
+3.  Genişletin **hata ayıklama** ağaç ve ardından **sembolleri**.  
   
-4.  İçinde **simge (.pdb) dosya konumları**seçin **Microsoft simge sunucuları**  
+4.  İçinde **sembol dosyası (.pdb) konumlar**seçin **Microsoft sembol sunucuları**  
   
-5.  İçinde **önbelleğe bu dizin simge sunucusundan simgeleri**, adım 1 ' de örneğin oluşturulduğu klasörünün yolunu yazın:  
+5.  İçinde **semboller sembol sunucusundan bu dizine önbelleğe**, örneğin, 1. adımda oluşturduğunuz klasör yolunu yazın:  
   
      **C:\SymbolCache**  
   
-     Üç nokta düğmesini tıklatarak (**...** ) ve ardından bir dizinden **klasöre Gözat** iletişim kutusu.  
+     Üç nokta düğmesine de tıklayabilirsiniz (**...** ) seçip bir dizinden **klasöre Gözat** iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

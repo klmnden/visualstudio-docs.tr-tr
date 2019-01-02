@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e72814b34790dd133f09e0fb16c594e12ea8147c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: def47ec9f58db8d1a4cd1497d5c4611369167bb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832236"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 
@@ -27,7 +26,7 @@ ModelBus benzersiz bir Modeli'ne veya bir model içinde belirli bir öğeye baş
 
 Ek bilgi ve örnek kod için bkz:
 
--   [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
 -   [Visual Studio için modelleme SDK'sı](http://www.microsoft.com/download/details.aspx?id=40754)
 
@@ -520,6 +519,6 @@ DSL tanım Diyagramı sağ tıkladığınızda, tıklayın **Modelbus'ı etkinle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Metin Şablonunda Visual Studio ModelBus'ı Kullanma](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6f9abc191bdecce244581e7427116b05427de215
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f89dd915498d2528a0a40a3e7a0af8b5d65a5b4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900634"
 ---
 # <a name="properties-of-swimlanes"></a>Kulvarların Özellikleri
 Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir diyagram bölün. Diğer şekiller Kulvarlar içinde görüntülenecek tanımlayabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -48,7 +47,7 @@ Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir d
 |Başlangıç genişliği|Bu kulvarın inç cinsinden başlangıç genişliği. Yalnızca dikey Kulvarlar için geçerlidir.|0|
 |Kullanıma sunan metin rengi|Varsa `True`, kullanıcı oluşturulan tasarımcıdaki bir Kulvar rengini ayarlayabilirsiniz. Bunu ayarlamak için Kulvar şekle sağ tıklayın ve **ekleme kullanıma sunulan**.|False|
 |Açıklama|Oluşturulan tasarımcının belge için kullanılır.|\<yok >|
-|Görünen ad|Bu kulvarın sınıfa başvurmak için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
+|Görünen Ad|Bu kulvarın sınıfa başvurmak için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Sabit araç ipucu metni|Sabit bir araç ipucu için kullanılan metin.|\<yok >|
 |Yardım anahtar sözcüğü|Bu kulvarın için F1 Yardımı dizini oluşturmak için kullanılan anahtar sözcüğü.|\<yok >|
 

@@ -1,9 +1,6 @@
 ---
 title: Kaynak denetimi eklentileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923646"
 ---
 # <a name="source-control-plug-ins"></a>Kaynak Denetimi Eklentileri
 Kaynak Denetimi Eklentisi SDK başvuru bölümüne ile tümleşik kaynak denetimi sistemlerini sağlayan eksiksiz arabirim belirtimi içeren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sözdizimi ve semantiği ile arabirim oluşturmak için kaynak denetimi eklentisi uygulamalıdır çeşitli işlevleri ve veri türlerini belirtir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).  
@@ -57,7 +54,7 @@ Kaynak Denetimi Eklentisi SDK başvuru bölümüne ile tümleşik kaynak denetim
  [Sözlük](../extensibility/source-control-plug-in-glossary.md)  
  Yararlı hüküm ve kaynak denetimi eklentisi SDK belgeleri okumak için tanımlarını sağlar.  
   
- [Nasıl Yapılır: Kaynak Denetimi Eklentileri için Uyumluluk Uyarılarını Kapatma](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Nasıl yapılır: Kaynak denetimi eklentileri için uyumluluk uyarılarını kapatma](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Uyarıları devre dışı bırakma açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

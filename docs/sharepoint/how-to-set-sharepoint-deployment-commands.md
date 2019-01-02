@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: SharePoint dağıtım komutlarını ayarlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: SharePoint dağıtım komutlarını ayarlama | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,36 +12,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920371"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Nasıl yapılır: kümesi SharePoint dağıtım komutlarını
-  Dağıtım öncesi ve dağıtım sonrası Komutlar ayarlayarak, dağıtım işlemi özelleştirebilirsiniz. SharePoint çözümlerini Visual Studio'da hata ayıklarken önce ve sonra diğer dağıtım eylemleri şu komutları çalıştırın.  
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Nasıl Yapılır: SharePoint dağıtım komutlarını ayarlama
+  Dağıtım öncesi ve dağıtım sonrası komutları ayarlayarak, dağıtım işlemi özelleştirebilirsiniz. SharePoint çözümleri Visual Studio'dan hata ayıklaması yaparken önce ve sonra diğer dağıtım eylemleri şu komutları çalıştırın.  
   
-### <a name="to-add-a-pre-deployment-command"></a>Dağıtım öncesi komut eklemek için  
+### <a name="to-add-a-pre-deployment-command"></a>Dağıtım öncesi komut ekleme  
   
-1.  Menü çubuğunda seçin **proje** > **\<*ProjectName*> Özellikler**.  
-  
-2.  Seçin **SharePoint** sekmesi.  
-  
-3.  İçinde **dağıtım öncesi komut satırı** metin kutusuna, bu adımı özelleştirmek için MS-DOS veya MSBuild komut girin.  
-  
-     Dizin içeriği dağıtım tamamlanmadan önce listelemek için örneğin **dir**.  
-  
-### <a name="to-add-a-post-deployment-command"></a>Bir dağıtım sonrası komut eklemek için  
-  
-1.  Menü çubuğunda seçin **proje** > **\<*ProjectName*> Özellikler**.  
+1.  Menü çubuğunda, **proje** > **\<*ProjectName*> Özellikleri**.  
   
 2.  Seçin **SharePoint** sekmesi.  
   
-3.  İçinde **dağıtım sonrası komut satırı** metin kutusuna, bu adımı özelleştirmek için MS-DOS veya MSBuild komut girin.  
+3.  İçinde **dağıtım öncesi komut satırını** metin kutusunda, bu adımı özelleştirmek için MS-DOS veya MSBuild komut girin.  
   
-     Dağıtım tamamlandıktan sonra dizin içeriği listelemek için örneğin **dir**. Derlemenin derleme dizinden kopyalamak için bir MSBuild değişken kullanmak için girin **$(TargetPath) c:\DeploymentDirectory kopyalama**.  
+     Örneğin, dağıtım tamamlanmadan önce dizin içeriğini listelemek için girin **dir**.  
+  
+### <a name="to-add-a-post-deployment-command"></a>Dağıtım sonrası komut ekleme  
+  
+1.  Menü çubuğunda, **proje** > **\<*ProjectName*> Özellikleri**.  
+  
+2.  Seçin **SharePoint** sekmesi.  
+  
+3.  İçinde **dağıtım sonrası komut satırı** metin kutusunda, bu adımı özelleştirmek için MS-DOS veya MSBuild komut girin.  
+  
+     Örneğin, dağıtım tamamlandıktan sonra dizin içeriğini listelemek için girin **dir**. Derleme derleme dizininden kopyalamak için bir MSBuild değişken kullanmak için girin **$(TargetPath) c:\DeploymentDirectory kopyalama**.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+ [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

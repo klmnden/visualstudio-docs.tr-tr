@@ -1,8 +1,6 @@
 ---
 title: VsgDbg sınıfı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c48142d3458cf3c85b0391fcf33dc7238d16abb2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f457d35725a0a6041fe82b06853a6dffdf69b53d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922461"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg Sınıfı
-Grafik tanılama uygulama bileşeninin programsal denetim için bir arabirimi temsil eder.  
+Grafik tanılama uygulama bileşeninin programlı denetim için bir arabirimi temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -27,27 +25,27 @@ class VsgDbg;
 ```  
   
 ## <a name="members"></a>Üyeler  
- `VsgDbg` Sınıfı, aşağıdaki üyeleri destekler.  
+ `VsgDbg` Sınıfı aşağıdaki üyelere destekler.  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[VsgDbg::VsgDbg (Oluşturucu)](vsgdbg-vsgdbg-constructor.md)|Bir örneğini oluşturur `VsgDbg` sınıfı ve isteğe bağlı olarak etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
-|[VsgDbg::~VsgDbg (Yok Edici)](vsgdbg-tilde-vsgdbg-destructor.md)|Örneği bozar `VsgDbg` sınıfı.|  
+|[VsgDbg::VsgDbg (Oluşturucu)](vsgdbg-vsgdbg-constructor.md)|Örneği oluşturur `VsgDbg` sınıfı ve isteğe bağlı olarak etkin bir şekilde yakalayıp grafik bilgilerini kaydetmek için grafik tanılama uygulama bileşeninin hazırlar.|  
+|[VsgDbg::~VsgDbg (Yok Edici)](vsgdbg-tilde-vsgdbg-destructor.md)|Örneğini yok eder `VsgDbg` sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[AddMessage](addmessage.md)|Özel ileti grafik tanılama HUD (Head yukarı görüntüle) ekler.|  
-|[BeginCapture](begincapture.md)|İle sona erer yakalama aralığı başlar `EndCapture`.|  
-|[CaptureCurrentFrame](capturecurrentframe.md)|Grafik günlük dosyası için geçerli çerçeve kalanı yakalar.|  
-|[Kopyalama (Programlı Yakalama)](copy-programmatic-capture.md)|Etkin Grafikler (.vsglog) günlük dosyasının içeriğini yeni bir dosyaya kopyalar.|  
-|[EndCapture](endcapture.md)|Başlatıldığı yakalama zaman aralığı sona `BeginCapture`.|  
-|[Init](init.md)|Etkin olarak yakalamak ve grafik bilgilerini kaydetmek için grafik tanılamayı uygulama bileşeninin hazırlar.|  
-|[ToggleHUD](togglehud.md)|Grafik tanılama HUD katmana açmak veya kapatmak değiştirir.|  
-|[UnInit](uninit.md)|Grafik günlük dosyası sonlandırır kapatılır ve uygulama, etkin olarak grafik bilgilerini kaydetme sırasında kullanılan kaynakları serbest bırakır.|  
+|[AddMessage](addmessage.md)|Grafik tanılama baş üstü (baş yukarı görüntüleme) için özel bir ileti ekler.|  
+|[BeginCapture](begincapture.md)|İle biten bir yakalama aralık başlar `EndCapture`.|  
+|[CaptureCurrentFrame](capturecurrentframe.md)|Geçerli kare grafik günlük dosyasına geri kalanında yakalar.|  
+|[Kopyalama (Programlı Yakalama)](copy-programmatic-capture.md)|Etkin bir grafik günlüğü (.vsglog) dosyasının içeriğini yeni bir dosyaya kopyalar.|  
+|[EndCapture](endcapture.md)|İle başlatılan bir yakalama zaman aralığı sona `BeginCapture`.|  
+|[Init](init.md)|Etkin bir şekilde yakalayıp grafik bilgilerini kaydetmek için grafik tanılama uygulama bileşeninin hazırlar.|  
+|[ToggleHUD](togglehud.md)|Grafik tanılama baş üstü katmana açıp değiştirir.|  
+|[UnInit](uninit.md)|Grafik günlük dosyasını sonlandırır kapatılır ve uygulama, etkin bir şekilde grafik bilgilerini kaydetme sırasında kullanılan kaynakları serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `VsgDbg` Sınıfı, grafik tanılama özellikleri programlı olarak denetlemek için kullanabileceğiniz bir arabirimi temsil eder. Bazı özellikler bile, aktif olarak yakalama ve grafik bilgilerini kaydetme kullanabilirsiniz; Bu içerir `AddMessage` üye işlevini ve `ToggleHUD` üye işlevi. Bir üye işlevleri başlatmak veya etkin grafik bilgilerini yakalama durdurmak için grafik tanılamayı uygulama bileşeninin hazırlama ya da uygulama etkin olarak yakalama ve grafik bilgilerini bir grafik günlük dosyasına kaydetme sırasında çağrılması gerekir.
+ `VsgDbg` Sınıfı, grafik tanılama özelliklerine program aracılığıyla denetlemek için kullanabileceğiniz bir arabirimi temsil eder. Bazı özellikler bile, aktif yakalama ve grafik bilgilerini kaydetme kullanabilirsiniz; Bu içerir `AddMessage` üye işlevi ve `ToggleHUD` üye işlevi. Diğer üye işlevlerini başlatmak veya durdurmak etkin grafik bilgilerini yakalama için grafik tanılama uygulama bileşeninin hazırlama veya uygulamayı etkin bir şekilde yakalama ve grafik bilgilerini bir grafik günlük dosyasına kaydını çağrılmalıdır.

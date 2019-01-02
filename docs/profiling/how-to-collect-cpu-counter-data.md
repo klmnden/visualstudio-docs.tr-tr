@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: CPU sayaç verileri toplama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: CPU sayaç verileri toplama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897241"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Nasıl yapılır: CPU sayaç verileri toplama
+# <a name="how-to-collect-cpu-counter-data"></a>Nasıl Yapılır: CPU sayaç verileri toplama
 
 CPU olay sayaç donanıma özgü performans verilerini toplamak için kullanılır. Bu makalede, yöntemi profil oluşturma Araçları'nı kullandığınızda, olay sayacı verilerini toplama işlemini göstermektedir.
 
@@ -45,7 +43,7 @@ CPU olay sayaç donanıma özgü performans verilerini toplamak için kullanıl�
 
 - Ölçümlü izlemeyle profil, bir veya daha fazla sayaçlarından veri toplayın.
 
-- Örnekleme tarafından profil, bir sayaç olay örnekleme aralığı belirtin. Daha fazla bilgi için [nasıl yapılır: örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md).
+- Örnekleme tarafından profil, bir sayaç olay örnekleme aralığı belirtin. Daha fazla bilgi için [nasıl yapılır: Örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Ölçümlü izlemeyle profil, CPU performans sayacı verilerini toplamak için
 

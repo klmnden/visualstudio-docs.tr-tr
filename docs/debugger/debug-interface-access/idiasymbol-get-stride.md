@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_stride | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30f32bd7f69d303ec6050534f54e389cd2f69873
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e6fccc85095b6868db4cfc403cfee58160341afb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906695"
 ---
 # <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
 Matris veya strided dizi STRIDE alır.  
@@ -31,10 +29,10 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- [out] Bir işaretçi bir `DWORD` STRIDE tutar.  
+ [out] Bir işaretçi bir `DWORD` STRIDE tutan.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

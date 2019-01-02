@@ -1,8 +1,6 @@
 ---
 title: Simge türlerinin sözcük hiyerarşisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,41 +12,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c4ef49cb7eabae7608ce417e4f3d5ef99a8284
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5695f2c2398a1abafb5325c85d5cd7e98324dab8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904029"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Simge Türlerinin Sözcük Hiyerarşisi
-Aşağıdaki tabloda Simge türlerinin sözcük hiyerarşi içinde gösterir.  
+Aşağıdaki tabloda, sözcük hiyerarşisi içinde Sembol türleri gösterilmektedir.  
   
 ## <a name="symbol-types"></a>Sembol türleri  
   
 |Simge türü|Açıklama|  
 |-----------------|-----------------|  
-|[Ek Açıklama](../../debugger/debug-interface-access/annotation.md)|Program kodunda açıklamalı bir konum belirtir.|  
-|[Block](../../debugger/debug-interface-access/block.md)|İç içe geçmiş kapsamlar işlevlerde belirtir.|  
-|`Compiland`|Belirten bir `compiland` .exe dosyasına bağlı.|  
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Ek derlenecek ayrıntıları yükleniyor gerektirir ve bu nedenle almak için çalışma zamanında yük doğurur derlenecek dosya verilerini belirtir.|  
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Derlenecek derlenmesini önemli herhangi bir ek ortam değişkenlerini belirtir.|  
+|[Ek Açıklama](../../debugger/debug-interface-access/annotation.md)|Program kodunda ek açıklamalı bir konumu belirtir.|  
+|[Block](../../debugger/debug-interface-access/block.md)|İç içe kapsamları işlevlerde belirtir.|  
+|`Compiland`|Belirtir bir `compiland` .exe dosyasına bağlanır.|  
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Ek derlenecek ayrıntıları yükleniyor gerektirir ve bu nedenle almak için çalışma zamanı yükü tabi derlenecek veri belirtir.|  
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Derlenecek derlenmesi için önemli olan tüm ek ortam değişkenlerini belirtir.|  
 |[Özel (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Kullanıcı tanımlı bir sembol belirtir.|  
-|[Veriler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Bu değişkenleri parametreler, yerel değişkenleri, genel değişkenler ve sınıf üyeleri belirtir.|  
-|[Exe](../../debugger/debug-interface-access/exe.md)|Genel kapsamdaki verileri belirtir; Tüm bir .exe veya .dll dosyasına karşılık gelir.|  
-|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Tanımlanan bir nokta olan bir işlev belirtir sona erdirmek için hangi hata ayıklama sırasında değildir.|  
-|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Tanımlanan bir nokta olan bir işlev belirtir başlamak için hangi hata ayıklama sırasında değildir.|  
-|[İşlev (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Bir işlev belirtir.|  
-|[Etiket (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Program kodunda bir konum belirtir.|  
-|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Bir yürütülebilir programı oluştururken görünür dış bir sembol belirtir.|  
-|[Dönüştürücü](../../debugger/debug-interface-access/thunk.md)|Belirten bir `thunk`.|  
-|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Belirten bir `namespace`tanımlayıcısı.|  
+|[Veriler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Bu değişkenleri parametreleri, yerel değişkenler, genel değişkenler ve sınıf üyeleri belirtir.|  
+|[Exe](../../debugger/debug-interface-access/exe.md)|Genel kapsamdaki verileri belirtir. Tüm bir .exe veya .dll dosyasına karşılık gelir.|  
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Tanımlı bir noktasında, bir işlevi belirtir sonlandırmak için hangi hata ayıklama sırasında değildir.|  
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Tanımlı bir noktasında, bir işlevi belirtir. başlamak için hangi hata ayıklama sırasında değildir.|  
+|[İşlev (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Bir işlevi belirtir.|  
+|[Etiket (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Program kodunda bir konumu belirtir.|  
+|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Yürütülebilir program oluşturma sırasında görüntülenen bir dış bir sembol belirtir.|  
+|[Dönüştürücü](../../debugger/debug-interface-access/thunk.md)|Belirtir bir `thunk`.|  
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Belirtir bir `namespace`tanımlayıcısı.|  
   
 > [!NOTE]
->  Sembol türüne bağlı olarak ek sembol özellikleri kullanılabilir. Bu özellikleri tek tek sembol konuları listelenmiştir.  
+>  Ek Sembol Özellikleri sembol türüne bağlı olarak kullanılabilir. Bu özellikleri tek tek sembol konularında listelenmiştir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Simge türlerinin sınıf hiyerarşisi](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Idiasymbol::get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [Simgeler ve simge etiketleri](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
- [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum Numaralandırması](../../debugger/debug-interface-access/symtagenum.md)

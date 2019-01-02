@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958819"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.
@@ -52,7 +51,7 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
 
     -   Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.
 
--   Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: giriş; seçin Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.
+-   Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.
 
 #### <a name="linking-tests-to-use-cases"></a>Kullanım örnekleri için testleri bağlama
  Kullanıyorsanız [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] tasarlama ve testleri çalıştırmak için testlerinizin gereksinimi, kullanım durumu ve kullanıcı hikayesi iş öğeleri altında düzenleyebilirsiniz. Bu bağlantı iş öğeleri, modelinizde kullanım için. Bu hızlı bir şekilde izleme gereksinimleri değişiklikler testleri sağlar ve kullanım örneği her ilerlemesini izlemenize yardımcı olur.

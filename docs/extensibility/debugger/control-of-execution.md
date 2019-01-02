@@ -1,9 +1,6 @@
 ---
 title: Yürütme denetimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a95e01a44236d4f98f55f50a56cf28473ad575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5617849b1dbd8e3857818fb762f562502b89386
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947432"
 ---
 # <a name="control-of-execution"></a>Yürütme denetimi
 Hata ayıklama altyapısı (DE) genellikle aşağıdaki olaylardan biri son başlatma olayı gönderir:  
@@ -42,11 +39,11 @@ Hata ayıklama altyapısı (DE) genellikle aşağıdaki olaylardan biri son baş
   
 5. Kullanıcı, üzerinde Adımlama seçer veya bir işlevden, IDE program çağırmak için hata ayıklama oturumu ister `Step` yöntemi. IDE sonra birim (yönergesi, deyim veya satır) bir adım adım (mi oturum üzerinden veya işlev dışında adımlamak) türünü ve geçirir. Bu adım tamamlandıktan sonra DE durdurma olay hata ayıklama oturumu için adım tam bir olay gönderir.  
   
-    veya  
+    -veya-  
   
     Kullanıcı, dosyadaki geçerli yönerge işaretçisini çalıştırmaya devam etmeyi seçerse, IDE program çağırmak için hata ayıklama oturumunun ister **yürütme** yöntemi. Sonraki durdurma koşul karşılaşana kadar program yürütme devam eder.  
   
-    veya  
+    -veya-  
   
     Hata ayıklama oturumunun belirli durdurma olay yok saymak için ise, programın hata ayıklama oturumu çağırır **devam** yöntemi. Ardından durdurma koşul karşılaştığında program içine, üzerine veya bir işlev dışına Adımlama, adımı devam eder.  
   

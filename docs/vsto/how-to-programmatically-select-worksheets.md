@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla çalışma sayfaları seçme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla çalışma sayfaları seçme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924481"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Nasıl yapılır: program aracılığıyla çalışma sayfaları seçme
+# <a name="how-to-programmatically-select-worksheets"></a>Nasıl Yapılır: Program aracılığıyla çalışma sayfaları seçme
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Yöntemi yeni nesneye kullanıcının seçimi taşır belirtilen nesneyi seçer. Kullanım <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> yöntemi, kullanıcının seçimini değiştirmeden nesnesine odaklanmak istiyorsanız.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,14 +49,12 @@ ms.locfileid: "35677917"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla yazdırma](../vsto/how-to-programmatically-print-worksheets.md)   
- [Nasıl yapılır: program aracılığıyla çalışma kitaplarından çalışma sayfaları silme](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Nasıl yapılır: çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla yazdırma](../vsto/how-to-programmatically-print-worksheets.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma kitaplarından çalışma sayfaları silme](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

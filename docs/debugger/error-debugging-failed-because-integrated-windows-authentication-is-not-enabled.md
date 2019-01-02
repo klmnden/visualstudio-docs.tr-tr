@@ -1,8 +1,6 @@
 ---
-title: 'Hata: Tümleşik Windows kimlik doğrulaması etkinleştirilmediğinden hata ayıklama başarısız oldu | Microsoft Docs'
-ms.custom: ''
+title: 'Hata: Hata ayıklama başarısız tümleşik Windows kimlik doğrulaması etkinleştirilmediğinden | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f56cca9fa637efaa66b6dcab4716d4a1900aa61d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837634"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Hata: Tümleşik Windows Kimlik Doğrulaması Etkinleştirilmediğinden Hata Ayıklama Başarısız
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Hata: Tümleşik Windows kimlik doğrulaması etkinleştirilmediğinden hata ayıklama başarısız oldu
 Hata ayıklama isteyen kullanıcının kimlik doğrulaması, kimlik doğrulama hatası tarafından engellendi. Bir Web uygulaması veya bir XML Web hizmeti adımlamak çalıştığınızda ortaya çıkabilir. Bu hatanın bir nedeni, tümleşik Windows kimlik doğrulamasının etkin olduğunu. Bunu etkinleştirmek için "Tümleşik Windows kimlik doğrulamasını etkinleştirmek için." bulunan adımları izleyin.  
   
  Tümleşik Windows kimlik doğrulaması etkin ve bu hatayı görünmeye devam eder, çünkü bu hataya neden olduğunu mümkün **Windows etki alanı sunucuları için Özet kimlik doğrulaması** etkinleştirilir. Bu durumda, ağ yöneticinize başvurmanız gerekir.  
@@ -75,8 +73,7 @@ Hata ayıklama isteyen kullanıcının kimlik doğrulaması, kimlik doğrulama h
   
          Kullanıcı erişim denetimi iletişim kutusu görünür ve devam etmek izin ister.  
   
-    3.  
-              **Devam**'a tıklayın.  
+    3.  **Devam**'a tıklayın.  
   
          Windows özellikleri iletişim kutusu görüntülenir.  
   

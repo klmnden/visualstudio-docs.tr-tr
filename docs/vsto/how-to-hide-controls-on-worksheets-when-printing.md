@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Yazdırırken çalışma sayfası denetimlerini gizleme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 322c314a768545996f343526367de44c667ce89b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d245e6d1d4af1d0135abe88c89f54490a0f5296e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873437"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Nasıl Yapılır: Yazdırırken çalışma sayfası denetimlerini gizleme
   Windows Forms denetimleri içeren bir Microsoft Office Excel belge yazdırma sırasında denetimleri yazdırılan çalışma sayfalarında görünür. Bir çalışma sayfası yazdırma sırasında denetimleri gizleyebilirsiniz.  
@@ -49,5 +46,3 @@ ms.locfileid: "53646805"
  [Windows Forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
-  
-  

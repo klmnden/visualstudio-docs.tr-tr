@@ -1,9 +1,6 @@
 ---
 title: Özellik bayrakları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36fa879ac08f81ffd61cb8febf4183ec268d3a6c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 958cbc17c843ba4d23ac83b928f7b517ada93080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922133"
 ---
 # <a name="capability-flags"></a>Özellik bayrakları
 SCC_CAP_*xxx* bayraklar: kaynak denetimi eklentisi yeteneklerini belirtmek için kullanılan bit bayrakları. SCC_EXCAP_*xxx* bayraklar genişletilmiş özellikler belirtin ve tam sayı değerlerine çözmek artımlı bayrakları.  

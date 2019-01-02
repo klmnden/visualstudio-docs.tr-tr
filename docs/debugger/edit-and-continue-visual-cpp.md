@@ -1,8 +1,6 @@
 ---
 title: Düzenle ve devam et (Visual C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 05/31/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923000"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C++)
 Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklenen kod değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md) Düzenle ve devam et sınırlamaları hakkında bilgi için.
@@ -33,7 +31,7 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
   
  [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](/cpp/build/reference/zo-enhance-optimized-debugging) Visual Studio 2013 güncelleştirme 3'te kullanılmaya başlanan derleyici seçeneği olmadan ikili dosyaları derlenmiş için bu ek bilgiler için .pdb (simge) dosyaları ekler [/Od (devre dışı bırak (Hata Ayıkla)) ](https://msdn.microsoft.com/library/aafb762y.aspx) seçeneği.  
   
- **/ZO** devre dışı bırakır, Düzenle ve devam et. Bkz: [nasıl yapılır: iyileştirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md).  
+ **/ZO** devre dışı bırakır, Düzenle ve devam et. Bkz: [nasıl yapılır: İyileştirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Düzenle ve Devam Et'i devre dışı bırakmak veya etkinleştirmek  
  Geçerli hata ayıklama oturumu sırasında uygulanan istemediğiniz kod düzenlemeler yapmasını durumunda Düzenle ve devam et otomatik çağrılmasını devre dışı bırakmak isteyebilirsiniz. Ayrıca otomatik Düzenle ve devam et yeniden etkinleştirebilirsiniz.

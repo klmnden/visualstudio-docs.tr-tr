@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_sealed | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e77e379d3f3635cf6976765450ba32ea6de81ef2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffb4e6e82b3c34b8186bbee2a42fba8a1f6a8b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920251"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 Sınıf veya yöntemi korumalı olup olmadığını belirten bir bayrak alır.  
@@ -27,7 +25,7 @@ Sınıf veya yöntemi korumalı olup olmadığını belirten bir bayrak alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_sealed(   
+HRESULT get_sealed(   
    BOOL* pRetVal)  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_sealed(
  Korumalı sınıf bir taban sınıfı olarak kullanılamaz. Korumalı bir yöntem overidden olamaz.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

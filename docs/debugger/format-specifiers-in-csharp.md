@@ -1,8 +1,6 @@
 ---
 title: Biçim belirleyiciler hata ayıklayıcı (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899020"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Biçim belirleyiciler içinde C# Visual Studio hata ayıklayıcısı
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** biçim belirticilerini kullanarak pencere. İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresi, [izleme noktaları](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç görünür bir [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) belirtilen biçim görüntülenir.  
@@ -60,9 +58,9 @@ Aşağıdaki kod örneği kullanacağız:
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntüler|  
 |---------------|------------|--------------------------|--------------|  
 |AC|Örtülü değerlendirme özellikleri ve örtük işlev çağrılarını devre dışı bırakıldığında, yararlı olabilecek bir ifade değerlendirmesi zorlar.|"Kapalı işlev değerlendirme kullanıcı tarafından devre dışı" iletisi|\<Değer >|  
-|d|ondalık tamsayı|0x0065|101|  
+|d|Ondalık tamsayı|0x0065|101|  
 |dinamik|Dinamik bir görünümü kullanarak belirtilen nesneyi görüntüler|Dinamik görünüm dahil olmak üzere nesnenin tüm üyelerini görüntüler|Yalnızca dinamik görünüm görüntüler|  
-|h|onaltılık tamsayı|61541|0x0000F065|  
+|h|Onaltılık tamsayı|61541|0x0000F065|  
 |Nq|hiçbir tırnak işaretleri dize|"Benim dize"|My dize|  
 |nse|Davranış biçimini değil belirtir. "Yan etkiler" ifadesiyle değerlendirir. İfade yorumlanamıyor ve yalnızca Değerlendirme sürümü (örneğin, bir işlev çağrısı) çözülebilir, bunun yerine bir hata görürsünüz.|Yok|Yok|
 |gizli|Tüm genel ve genel olmayan üyeleri görüntüler|Görüntüler Genel üyeler|Tüm üyelerini görüntüler|  

@@ -1,8 +1,6 @@
 ---
-title: Dışa aktarma düğmesi (eşzamanlılık görselleştiricisi) | Microsoft Docs
-ms.custom: ''
+title: Dışarı aktarma düğmesi (eşzamanlılık görselleştiricisi) | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.export
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c977c147aa9edc7dc83e76dc3d9c07dd959c3f9c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d6a861ef9b55741b02ecd87836f419b5b20bd2d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924026"
 ---
-# <a name="export-button-concurrency-visualizer"></a>Dışa aktarma düğmesi (eşzamanlılık görselleştiricisi)
-**Verme** düğmesini etkinleştirir, çağrı yığını olarak dışarı aktarmak bir. *CSV* kendi kayıtlar için veya Microsoft Excel gibi başka bir aracı ile kullanım için dosya.  
+# <a name="export-button-concurrency-visualizer"></a>Dışarı aktarma düğmesi (eşzamanlılık görselleştiricisi)
+**Dışarı** düğmesini etkinleştirir, çağrı yığını olarak dışarı aktarmak bir. *CSV* kendi kayıtlarınız için veya Microsoft Excel gibi başka bir aracı ile kullanım için dosya.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)   

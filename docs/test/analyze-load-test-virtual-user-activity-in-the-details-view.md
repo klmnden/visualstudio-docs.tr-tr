@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 484c80e474fdce799bc10787bddf157a19f46740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902925"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Yük Testi Çözümleyicisinin Ayrıntılar görünümünde Yük Testi Sanal Kullanıcı etkinliğini çözümleme
 
@@ -57,9 +56,9 @@ ms.locfileid: "53059914"
 
 |Görevler|İlişkili konular|
 |-|-|
-|**Yük testinizi çalıştırın:** görüntülemek tamamlanana kadar bir yük testi oluşturup sanal kullanıcı etkinliği verilerini toplamayı etkinleştirmek için yapılandırdıktan sonra test çalıştırmalısınız **sanal kullanıcı aktivite grafiği**.||
-|**Sanal kullanıcı etkinliği verilerini içeren yük testi sonuçlarını görüntüleme:** yük testinize yapılandırılmış, oluşturuldu ve çalışması tamamlandıktan sonra sanal kullanıcı etkinliği verilerini kullanarak görüntüleyebilirsiniz **sanal kullanıcı aktivite grafiği** .|-   [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Nasıl yapılır: yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Yük testlerinde performans sorunlarını yalıtmak:** kullanabileceğiniz **sanal kullanıcı aktivite grafiği** yük testinizde performans sorunlarını gidermeye yardımcı olmak için.|-   [İzlenecek yol: sorunları yalıtmak için sanal kullanıcı etkinlik grafiğini kullanma](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Yük testinizi çalıştırın:** Bir yük testi oluşturup sanal kullanıcı etkinliği verilerini toplamayı etkinleştirmek için yapılandırdıktan sonra görüntülemek tamamlanana kadar test çalıştırmalısınız **sanal kullanıcı aktivite grafiği**.||
+|**Sanal kullanıcı etkinliği verilerini içeren yük testi sonuçları görüntüleyin:** Yük testiniz yapılandırılmış, oluşturuldu ve çalışması tamamlandıktan sonra sanal kullanıcı etkinliği verilerini kullanarak görüntüleyebilirsiniz **sanal kullanıcı aktivite grafiği**.|-   [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Nasıl Yapılır: Bir yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Yük testlerinde performans sorunlarını yalıtmak:** Kullanabileceğiniz **sanal kullanıcı aktivite grafiği** yük testinizde performans sorunlarını gidermeye yardımcı olmak için.|-   [İzlenecek yol: Sorunları yalıtmak için sanal kullanıcı etkinlik grafiğini kullanma](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

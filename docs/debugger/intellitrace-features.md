@@ -1,8 +1,6 @@
 ---
 title: IntelliTrace özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, debugging with events
@@ -22,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: f37c90f212233936a6a260b6339effb261f91c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826604"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Özellikleri
 
 IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığınını ve yerel değişken değerleri) yürütmesinde farklı noktalarda incelemenize olanak tanır, uygulama yöntemini çağırır. Yalnızca zamanki gibi hata ayıklamaya başlayın. - IntelliTrace varsayılan olarak açıldı ve IntelliTrace kaydı yeni bilgileri görebilirsiniz **tanılama araçları** penceresinin altında **olayları** sekmesi. Bir olay seçin ve tıklayın **etkinleştirmek geçmiş hata ayıklama** bu olay için kaydedilen Yereller ve çağrı yığınını görmek için.
 
-Adım adım bir açıklaması için bkz. [izlenecek yol: IntelliTrace'i kullanarak](../debugger/walkthrough-using-intellitrace.md).
+Adım adım bir açıklaması için bkz. [izlenecek yol: IntelliTrace kullanarak](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace kullanılabilir Visual Studio Enterprise sürümünde, ancak Visual Studio Professional veya Community sürümlerini içinde değil.
 

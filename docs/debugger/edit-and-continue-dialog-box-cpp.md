@@ -1,8 +1,6 @@
 ---
 title: Düzenle ve devam et iletişim kutusu (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c6d598605f229f306571e792c9b4dcfadfbda92
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923724"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Düzenle ve devam et iletişim kutusu (C++)
 Düzenle ve devam yerel koda yapılan değişiklikleri uygulanamadı. Bu geçici bir durum olabilir. Bazen Düzenle ve devam et yerel kod değişikliklerini hemen uygulanamaz, ancak bunları daha sonra (örneğin, tamamlandıktan sonra artık çalıştırma yordamı için geçerli çağrının) hata ayıklama oturumu sırasında uygulayabilirsiniz. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md).  

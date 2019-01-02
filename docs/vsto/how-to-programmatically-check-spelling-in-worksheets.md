@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla çalışma sayfaları Yazımı denetleme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla çalışma sayfaları Yazımı denetleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ea589f30c026ddf946cb43811818b54d3df9b2e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899976"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Nasıl yapılır: program aracılığıyla çalışma sayfaları Yazımı denetleme
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Nasıl Yapılır: Program aracılığıyla çalışma sayfaları Yazımı denetleme
   Program aracılığıyla çalışma sayfasındaki bir kelimelerin yazımı kontrol edebilirsiniz. **Yazım** iletişim kutusu otomatik olarak görünüp görünmeyeceğini yanlış yazılmış kelimelerden çalışma sayfasında.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -46,8 +43,6 @@ ms.locfileid: "35676886"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)   
- [Nasıl yapılır: program aracılığıyla Excel hesapları çalıştırma](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Nasıl yapılır: Program aracılığıyla Excel hesapları çalıştırma](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

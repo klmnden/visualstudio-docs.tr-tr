@@ -3,7 +3,6 @@ title: Hızlı Başlangıç - Python kodu bir depoyu kopyalamak
 description: Bu hızlı başlangıçta, Visual Studio Takım Gezgini kullanarak Python koans depoyu kopyalayarak Visual Studio'da Python projesi oluşturun.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,14 +11,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922854"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodu bir depoyu kopyalama
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodunun bir depoyu kopyalama
 
 Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-support-in-visual-studio.md), Visual Studio için GitHub uzantısı ekleyebilirsiniz. Uzantı, kolayca Python kodu bir depoyu kopyalamak ve buradan gelen IDE içinde bir proje oluşturun olanak tanır. Her zaman de komut satırında depoları kopyalayın ve ardından Visual Studio'da çalışma.
 

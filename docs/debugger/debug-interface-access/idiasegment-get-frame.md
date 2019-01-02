@@ -1,8 +1,6 @@
 ---
 title: Idiasegment::get_frame | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0911d342f7db341165bdbae426ab784e40b73347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90dbe786155fa11e5bf1df9ed113362382838d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898699"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 Segment numarasını alır.  
@@ -27,7 +25,7 @@ Segment numarasını alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_frame (   
+HRESULT get_frame (   
    DWORD* pRetVal  
 );  
 ```  

@@ -2,7 +2,6 @@
 title: Web şablonları oluşturma
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -12,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 052e9daa7911051138e831436cad23de7ae7ee8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921857"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Nasıl yapılır: web şablonlarını elle oluşturma
+# <a name="how-to-manually-create-web-templates"></a>Nasıl Yapılır: Web şablonlarını elle oluşturma
 
 Bir web şablonu oluşturma, diğer türlerdeki şablonları oluşturmaktan daha farklıdır. Web projesi şablonları görünür çünkü **yeni Web sitesi Ekle** iletişim kutusu ve web projesi öğeleri programlama dili tarafından kategorilere *vstemplate* dosya şablonu bir web şablonu belirtmeniz gerekir ve programlama dilini tanımlar.
 
