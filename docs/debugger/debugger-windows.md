@@ -2,7 +2,6 @@
 title: Windows hata ayıklayıcısı | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875812"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio hata ayıklayıcı Windows hakkında bilgi edinin
 
@@ -41,7 +40,7 @@ Programınızın hata ayıklama sırasında çoğu hata ayıklayıcı penceresin
 |Görevler|CTR:+SHIFT+D, K|[Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)|
 |Python etkileşimli hata ayıklama|SHIFT+ALT+I|[Python etkileşimli REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript Konsolu|CTRL+ALT+V, C|[Hızlı Başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM Gezgini|CTRL+ALT+V, D|[DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)|
+|DOM Gezgini|CTRL+ALT+V, D|[DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Canlı görsel ağaç|-|[Hata ayıklama sırasında XAML özelliklerini denetleme](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Canlı özellik Gezgini|-|[Hata ayıklama sırasında XAML özelliklerini denetleme](../debugger/inspect-xaml-properties-while-debugging.md)|
 |İşlemler|CTRL+ALT+Z|[İş Parçacıklarında ve İşlemlerde Hata Ayıklama](../debugger/debug-threads-and-processes.md)|

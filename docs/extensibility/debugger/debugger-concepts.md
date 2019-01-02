@@ -1,9 +1,6 @@
 ---
 title: Hata ayıklayıcı kavramları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e38c743ce7170e0842a3430c7b2aa190df94782b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 99ecd5d685592a252a185feaedc75a5566f1c5ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857497"
 ---
 # <a name="debugger-concepts"></a>Hata ayıklayıcı kavramları
 Visual Studio hata ayıklama paketi oluşturmak için kullanılan paket tasarlamada mimari kavramlarını tanımanız gerekir.  
@@ -54,7 +51,7 @@ Visual Studio hata ayıklama paketi oluşturmak için kullanılan paket tasarlam
  [Modüller](../../extensibility/debugger/modules.md)  
  Mimari, fiziksel bir yürütülebilir dosya veya bir DLL gibi bir kod kapsayıcısı olarak hata ayıklama açısından bir modül tanımlar.  
   
- [Kesme noktaları](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
+ [Kesme Noktaları](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
  Kesme noktaları üç tür tanımlar — beklemede, bağlama ve hata — hata ayıklama mimarisi bakımından.  
   
 ## <a name="related-sections"></a>İlgili bölümler  

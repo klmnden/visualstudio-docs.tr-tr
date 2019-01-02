@@ -2,7 +2,6 @@
 title: ASP.NET uygulamaları için hata ayıklamayı | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881107"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio'da ASP.NET veya ASP.NET Core uygulamalarının hatalarını ayıklama
 
@@ -168,15 +167,15 @@ IIS için uygulamaları yayımlamak için farklı yolu vardır. Bu adımlarda, o
      
    - ASP.NET Core için seçin **dosya sistemi**, uygulama için ayarlayabilir ve ardından klasörü seçin **açık**.
 
-1. Seçin **sonraki**. 
+1. **İleri**’yi seçin. 
 
 1. Altında **yapılandırma**seçin **hata ayıklama** açılır listeden.
 
-1. Seçin **Kaydet**.
+1. **Kaydet**’i seçin.
 
 1. İçinde **Yayımla** iletişim kutusunda, emin **CustomProfile** (veya yeni oluşturduğunuz profil adı) görünür ve **LastUsedBuildConfiguration** ayarlanır  **Hata ayıklama**. 
 
-1. Seçin **yayımlama**.
+1. **Yayımla**’yı seçin.
 
     ![IIS yayımlama](media/dbg-aspnet-local-iis-select-site.png "IIS yayımlama")
 
@@ -185,10 +184,9 @@ IIS için uygulamaları yayımlamak için farklı yolu vardır. Bu adımlarda, o
 
 ## <a name="see-also"></a>Ayrıca bkz.  
 [ASP.NET hata ayıklama: sistem gereksinimleri](aspnet-debugging-system-requirements.md)   
-[Nasıl yapılır: bir kullanıcı hesabı altında çalışan işlemini çalıştırma](how-to-run-the-worker-process-under-a-user-account.md)   
+[Nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma](how-to-run-the-worker-process-under-a-user-account.md)   
 [Nasıl yapılır: ASP.NET işleminin adını bulma](how-to-find-the-name-of-the-aspnet-process.md)   
 [Dağıtılmış web uygulamalarında hata ayıklama](debugging-deployed-web-applications.md)   
-[İzlenecek yol: web formunda hata ayıklama](walkthrough-debugging-a-web-form.md)   
+[İzlenecek yol: Bir web formunda hata ayıklama](walkthrough-debugging-a-web-form.md)   
 [Nasıl yapılır: ASP.NET özel durumlarında hata ayıklama](how-to-debug-aspnet-exceptions.md)   
-[Web uygulamalarında hata ayıklama: hatalar ve sorun giderme](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](debugging-web-applications-errors-and-troubleshooting.md)

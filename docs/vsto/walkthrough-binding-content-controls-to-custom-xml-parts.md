@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama'
-ms.custom: ''
+title: 'İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899658"
 ---
-# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama
   Bu yönerge, içerik denetimleri belge içinde depolanan XML verilerini Word için belge düzeyi özelleştirmesinde bağlamak nasıl gösterir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -62,7 +59,7 @@ ms.locfileid: "49916757"
   
 ### <a name="to-create-a-new-word-document-project"></a>Yeni bir Word belgesi projesi oluşturmak için  
   
-1.  Adlı bir Word belgesi projesi oluşturun **ÇalışanDenetimleri**. Çözüm için yeni bir belge oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adlı bir Word belgesi projesi oluşturun **ÇalışanDenetimleri**. Çözüm için yeni bir belge oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tasarımcıda yeni Word belgesi açar ve ekler **ÇalışanDenetimleri** için proje **Çözüm Gezgini**.  
   
@@ -109,7 +106,7 @@ ms.locfileid: "49916757"
   
 1.  Üzerinde **proje** menüsünde seçin **Yeni Öğe Ekle**.  
   
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.  
+     **Yeni Öğe Ekle** iletişim kutusu görünür.  
   
 2.  İçinde **şablonları** bölmesinde **XML dosyası**.  
   
@@ -143,7 +140,7 @@ ms.locfileid: "49916757"
   
 1.  Üzerinde **proje** menüsünde seçin **Yeni Öğe Ekle**.  
   
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.  
+     **Yeni Öğe Ekle** iletişim kutusu görünür.  
   
 2.  İçinde **şablonları** bölmesinde **XML Şeması**.  
   
@@ -296,7 +293,7 @@ ms.locfileid: "49916757"
   
 9. Dosya adı **ÇalışanDenetimleri.docx.zip**.  
   
-     **ÇalışanDenetimleri.docx'i** belge Open XML biçiminde kaydedilir. Bu belge ile yeniden adlandırarak *.zip* dosya adı uzantısı belgesinin içeriğini inceleyebilirsiniz. Open XML hakkında daha fazla bilgi için teknik makaleye bakın [(2007) Office Open XML giriş dosyası biçimleri](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **ÇalışanDenetimleri.docx'i** belge Open XML biçiminde kaydedilir. Bu belge ile yeniden adlandırarak *.zip* dosya adı uzantısı belgesinin içeriğini inceleyebilirsiniz. Open XML hakkında daha fazla bilgi için teknik makaleye bakın [(2007) Office Open XML giriş dosyası biçimleri](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Açık **ÇalışanDenetimleri.docx.zip** dosya.  
   
@@ -313,19 +310,17 @@ ms.locfileid: "49916757"
 ## <a name="next-steps"></a>Sonraki adımlar  
  İçerik denetimleri aşağıdaki konulardan kullanma hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Bir şablon oluşturmak için kullanılabilir tüm içerik denetimlerini kullanın. Daha fazla bilgi için [izlenecek yol: içerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Bir şablon oluşturmak için kullanılabilir tüm içerik denetimlerini kullanın. Daha fazla bilgi için [izlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Belge kapalıyken özel XML bölümleri verileri değiştirin. Kullanıcı, belgeyi bir sonraki açışında XML öğelerine bağlanan içerik denetimleri yeni veriler görüntüler.  
   
--   Bir belge bölümlerini koruma için içerik denetimleri kullanın. Daha fazla bilgi için [nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Bir belge bölümlerini koruma için içerik denetimleri kullanın. Daha fazla bilgi için [nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)   
  [İçerik denetimleri](../vsto/content-controls.md)   
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

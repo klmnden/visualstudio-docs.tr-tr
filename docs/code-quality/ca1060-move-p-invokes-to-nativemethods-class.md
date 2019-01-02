@@ -1,8 +1,7 @@
 ---
-title: 'CA1060: P-Invokes öğesini NativeMethods sınıfına taşıyın'
+title: 'CA1060: P-Invokes NativeMethods sınıfına taşıyın'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874238"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın
 
@@ -94,7 +93,7 @@ Bu sınıflar olarak bildirilen `internal` (`Friend`, Visual Basic'te) ve yeni �
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods örneği
 
 ### <a name="description"></a>Açıklama
- P/Invoke yöntemleri, güvenli bir şekilde çağrılamaz ve yan etkilere neden olabilecek adlı bir sınıfta put **UnsafeNativeMethods**. Bu yöntemler, bunlar kullanıcıya yanlışlıkla gösterilmez emin olmak için titizlikle denetlenmelidir. Kural [CA2118: gözden geçirme SuppressUnmanagedCodeSecurityAttribute kullanımını](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) bu konuda yardımcı olabilir. Alternatif olarak, yöntemler yerine talep başka bir iznine sahip olması gereken **UnmanagedCode** kullandığında bunları.
+ P/Invoke yöntemleri, güvenli bir şekilde çağrılamaz ve yan etkilere neden olabilecek adlı bir sınıfta put **UnsafeNativeMethods**. Bu yöntemler, bunlar kullanıcıya yanlışlıkla gösterilmez emin olmak için titizlikle denetlenmelidir. Kural [CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) bu konuda yardımcı olabilir. Alternatif olarak, yöntemler yerine talep başka bir iznine sahip olması gereken **UnmanagedCode** kullandığında bunları.
 
  Aşağıdaki örnekte gösterildiği bir **Cursor.Hide** sarmalar yöntemi **sayı değil geçiş** user32.dll işlevden.
 

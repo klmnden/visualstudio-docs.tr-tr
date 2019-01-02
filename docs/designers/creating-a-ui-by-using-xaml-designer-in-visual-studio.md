@@ -2,7 +2,6 @@
 title: XAML Tasarımcısı ile kullanıcı Arabirimi oluşturma
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880416"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma
 
@@ -123,11 +122,11 @@ Farklı görüntüleme boyutlarını ve çözünürlüklerini uygulama için bel
 
 **Yönlendirme**
 
-Uygulama için farklı yönleri belirtir: **yatay** veya **dikey**.
+Uygulama için farklı yönleri belirtir: **Yatay** veya **dikey**.
 
 **Edge**
 
-Uygulamanız için farklı edge hizalamaları belirtir: **hem**, **sol**, **sağ**, veya **hiçbiri**.
+Uygulamanız için farklı edge hizalamaları belirtir: **Her ikisi de**, **sol**, **sağ**, veya **hiçbiri**.
 
 **Yüksek Karşıtlık**
 
@@ -201,4 +200,4 @@ Her bir özellik sağındaki değer bir *özelliği işaretçisi* kutusu simgesi
 
 - [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md)
 - [Kaynak oluşturma ve uygulama](../designers/how-to-create-and-apply-a-resource.md)
-- [İzlenecek yol: XAML Tasarımcısı’nda verileri bağlama](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [İzlenecek yol: XAML Tasarımcısı'nda verilere bağlama](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

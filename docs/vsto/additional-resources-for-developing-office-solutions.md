@@ -1,8 +1,6 @@
 ---
 title: Office çözümleri geliştirmek için ek kaynaklar
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e46a9bfcecdff222182e1c5a0145eca3ba44c92
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 699ae68db1c9f28cd5cd164cc027ac5b6bd65fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883275"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Office çözümleri geliştirmek için ek kaynaklar
   Visual Studio'da Microsoft Office geliştirici araçları yalnızca bir Office uygulamalarını genişletmek için birçok yol gösterir. Office uygulamaları, ayrıca Open XML Visual Studio ya da bu belgeleri Office geliştirici araçları tarafından kapsanmayan biçimleri gibi bazı yerleşik özellikler vardır.  

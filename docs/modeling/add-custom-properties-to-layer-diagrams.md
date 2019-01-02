@@ -10,49 +10,48 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 368d1a794f51d827aa62cc913039edda59ae7ae6
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 407db46519872d8f1c4e6eba79ddd5ca84610d70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892244"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel özellikler ekleme
 
-Bağımlılık diyagramları için uzantı kodu yazarken, bir bağımlılık diyagramda herhangi bir öğe değerleriyle depolayabilirsiniz. Diyagram yeniden açılır ve kaydedildiğinde, değerleri korunur. Ayrıca bu özellikleri görünür olabilir **özellikleri** penceresi böylece kullanıcılar bakın ve bunları düzenleyebilir. Örneğin, her katman için normal bir ifade belirtin ve her katman sınıflarda adları kullanıcı tarafından belirtilen desenle uygun doğrulamak için doğrulama kodu yazma kullanıcıların izin.
+Bağımlılık diyagramları için uzantı kodu yazdığınızda, herhangi bir öğeyle değerleri bir bağımlılık diyagramında saklayabilirsiniz. Diyagram kaydedildiğinde ve yeniden açıldığında, değerler kalır. Bu özellikler görünür bulundurabilirsiniz **özellikleri** penceresi böylece kullanıcıların görebilmesi ve düzenleyebilmesi. Örneğin, kullanıcıların her katman için normal bir ifade belirtin ve her katmanda sınıfların adlarını, kullanıcı tarafından belirtilen düzene uyan doğrulamak için doğrulama kodu yazmasına izin verebilirsiniz.
 
 ## <a name="non-visible-properties"></a>Görünür olmayan özellikleri
 
-Yalnızca bir bağımlılık diyagramda herhangi bir öğeye değerler eklemek için kodunuzu istiyorsanız, bir MEF Bileşeni tanımlamak gerekmez. Adlı bir sözlük yoktur `Properties` içinde <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Herhangi bir katman öğe sözlüğe sıralanabilir değerleri eklemeniz yeterlidir. Bağımlılık diyagramın bir parçası olarak kaydedilir. Daha fazla bilgi için bkz: [gidin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Yalnızca kodunuzun değerleri bağımlılık diyagramında herhangi bir öğe eklemeye istiyorsanız, bir MEF Bileşeni tanımlamanız gerekmez. Adlı bir sözlük var. `Properties` içinde <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Herhangi bir katman öğenin sözlüğe sıralanabilecek değerler eklemeniz yeterlidir. Bağımlılık diyagramın bir parçası olarak kaydedilir. Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 ## <a name="editable-properties"></a>Düzenlenebilir özellikler
 
-**İlk hazırlama**
+**İlk Hazırlık**
 
 > [!IMPORTANT]
 > Özellikleri görünür yapmak için katman özellikleri görünür olmasını istediğiniz her bilgisayarda aşağıdaki değişikliği yapın:
 >
-> 1. Not Defteri'ni kullanarak çalıştırın **yönetici olarak çalıştır**. Açık *%ProgramFiles%\Microsoft Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 1. Kullanarak Not Defteri'ni çalıştırma **yönetici olarak çalıştır**. Açık *%ProgramFiles%\Microsoft Visual Studio [sürüm] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
 > 2. İçinde **içerik** öğesini ekleyin:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
-> 3. Altında **Visual Studio Araçları** Visual Studio uygulama Başlat menüsünde açık bölümünü **Geliştirici komut istemi**. Girin:
+> 3. Altında **Visual Studio Araçları** Visual Studio uygulama başlangıç menüsünde, açık bir bölümünü **Geliştirici komut istemi**. Girin:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Visual Studio'yu yeniden başlatın.
 
-**Kodunuzu bir VSIX proje ile olduğundan emin olun**
+**Kodunuzun bir VSIX projesinde olduğundan emin olun**
 
-Özelliğinizi komutu, hareketi veya doğrulama projesi parçası ise, herhangi bir şey eklemenize gerek yoktur. Özel özellik için kod MEF Bileşeni olarak tanımlanan bir Visual Studio genişletilebilirlik projesi tanımlanması gerekir. Daha fazla bilgi için bkz: [bağımlılık diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md) veya [bağımlılık diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Özelliğiniz komutun, hareket ya da doğrulama projesi parçasıysa, hiçbir şey eklemenize gerek yoktur. Özel özelliğinizin kodu, bir MEF Bileşeni olarak tanımlanmış bir Visual Studio genişletilebilirlik projesinde tanımlanmalıdır. Daha fazla bilgi için [bağımlılık diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md) veya [bağımlılık diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-**Özel özellik tanımlama**
+**Özel özelliği tanımla**
 
-Bir özel özellik oluşturmak için bu gibi bir sınıf tanımlayın:
+Özel bir özellik oluşturmak için şunun gibi bir sınıf tanımlayın:
 
 ```csharp
 [Export(typeof(IPropertyExtension))]
@@ -62,13 +61,13 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-Üzerinde özellikleri de tanımlayabilir <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ya da dahil, türetilmiş sınıflarından herhangi biriyle:
+Özellikleri tanımlayabilirsiniz <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> veya içeren, ondan türetilen sınıflardan biri:
 
--   `ILayerModel` -modeli
+-   `ILayerModel` -model
 
 -   `ILayer` -her katman
 
--   `ILayerDependencyLink` -katmanları arasındaki bağlantıları
+-   `ILayerDependencyLink` -Katmanlar arasında bağlantılar
 
 -   `ILayerComment`
 
@@ -76,7 +75,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 ## <a name="example"></a>Örnek
 
-Tipik bir özel özellik tanımlayıcısı kodudur. Katman modeli üzerinde bir Boolean özelliği tanımlar (`ILayerModel`) bir özel doğrulama yöntemi için değerler sağlayın kullanıcının olanak tanır.
+Aşağıdaki kod tipik bir özel özellik tanımlayıcısıdır. Katman modelinde bir Boolean özelliği tanımlar (`ILayerModel`) olanak tanıyan kullanıcının özel doğrulama yöntemi için değerler sağlayın.
 
 ```csharp
 using System;

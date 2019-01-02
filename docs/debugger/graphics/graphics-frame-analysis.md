@@ -1,8 +1,6 @@
 ---
 title: Grafik çerçevesi analizi | Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875647"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
@@ -191,4 +189,4 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 |**Çeyrek doku boyutları**|Doku boyutlarını kullanıcıların özgün boyutu her boyutundaki çeyreği hedeflerini işlenmeyebilir tüm dokular üzerinde azaltır. Örneğin, 256 x 128 doku için 64 x 32 texel'in azaltılır.<br /><br /> Daha fazla bilgi için [Half/Quarter doku boyutları değişken](half-quarter-texture-dimensions-variant.md).|  
 |**BC doku sıkıştırma**|Etkinleştirir sıkıştırma B8G8R8X8, B8G8R8A8 veya R8G8B8A8 piksel biçimi değişken tüm dokular hakkında engelleyin. B8G8R8X8 biçimi çeşitleri BC1 kullanarak sıkıştırılır; B8G8R8A8 ve R8G8B8A8 biçimi çeşitleri BC3 kullanarak sıkıştırılır.<br /><br /> Daha fazla bilgi için [BC doku sıkıştırma değişken](bc-texture-compression-variant.md).|  
   
- Çoğu çeşitleri için öngörücü sonucudur: "azalan doku boyutuna göre yarı daha hızlı yüzde 25" veya "Etkinleştirme 2 x MSAA yalnızca 2 yüzde daha yavaş". Daha fazla yorumu diğer çeşitleri gerektirebilir; 1 x 1 Görünüm penceresi boyutları değişiklikleri değişken büyük performans kazancı gösterir, örneğin, işleme göre düşük doldurma oranı; performansı düşürdüğünü gösterir olmadığını olduğunu gösterebilir Alternatif olarak, performansı önemli bir değişiklik varsa, işleme göre köşe işleme performansı düşürdüğünü gösterir emin olduğunu gösterebilir.
+ Düzenleyici çoğu çeşitleri için oluşur: "Yarısı göre azalan doku boyutu daha hızlı yüzde 25" veya "Etkinleştirme 2 x MSAA yalnızca 2 yüzde daha yavaş". Daha fazla yorumu diğer çeşitleri gerektirebilir; 1 x 1 Görünüm penceresi boyutları değişiklikleri değişken büyük performans kazancı gösterir, örneğin, işleme göre düşük doldurma oranı; performansı düşürdüğünü gösterir olmadığını olduğunu gösterebilir Alternatif olarak, performansı önemli bir değişiklik varsa, işleme göre köşe işleme performansı düşürdüğünü gösterir emin olduğunu gösterebilir.

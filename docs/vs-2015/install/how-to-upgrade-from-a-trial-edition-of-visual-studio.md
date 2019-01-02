@@ -1,12 +1,11 @@
 ---
-title: 'Nasıl yapılır: bir deneme sürümünden yükseltme | Microsoft Docs'
+title: 'Nasıl Yapılır: Deneme sürümünden yükseltme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 717f11fe-be6c-4d6e-9006-e7e5220c02bb
@@ -14,14 +13,14 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: eeb70f917d750965fec07f5d3d1174489800ec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 415f60116e3120f9690d20d20dfd37c560d5ad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867793"
 ---
-# <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Nasıl Yapılır. Visual Studio Deneme Sürümünden Yükseltme
+# <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Nasıl Yapılır: Visual Studio deneme sürümünden yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ürün kayıt olmadan 14 gün boyunca Visual Studio'nun yayın öncesi sürümü değerlendirebilirsiniz. Bir Microsoft hesabıyla oturum açarak kaydettikten sonra ön sürüm lisansının süresi bombasını tarihine kadar geçerlidir.
@@ -49,4 +48,4 @@ ms.locfileid: "53055285"
     >  Visual Studio'nun herhangi bir sürümünü kayıt ettirmek ve kilidini kaldırmak için İnternet erişimi gerekir. Bununla birlikte, Visual Studio kayıt ettirildikten sonra İnternet bağlantısı isteğe bağlıdır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio yükleme](../install/install-visual-studio-2015.md) [Visual Studio'da oturum açma](../ide/signing-in-to-visual-studio.md) [nasıl yapılır: Visual Studio ürün anahtarını bulmak](../install/how-to-locate-the-visual-studio-product-key.md) [bulun veya Team Foundation Serveriçinürünanahtarınıdeğiştirmek](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Visual Studio yükleme](../install/install-visual-studio-2015.md) [Visual Studio'da oturum açma](../ide/signing-in-to-visual-studio.md) [nasıl yapılır: Visual Studio ürün anahtarını bulmak](../install/how-to-locate-the-visual-studio-product-key.md) [bulun veya Team Foundation Server için ürün anahtarını değiştirmek](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

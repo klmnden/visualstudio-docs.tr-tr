@@ -1,8 +1,6 @@
 ---
 title: Seçimi kopyala | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.selection.copy
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f0f9e7f7a2d4a11c6f3394cb83be95306a2849c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876646"
 ---
 # <a name="copy-selection"></a>Seçimi kopyala
-Rapor sekmesinden tüm çağrı yığını kopyalamak için tıklayın **kopya**. Daha sonra bu eylemi destekleyen herhangi bir programda çağrı yığını yapıştırabilirsiniz.  
+Bütün çağrı yığını raporu sekmesinden kopyalamak için tıklayın **kopyalama**. Ardından, o eylemi destekleyip herhangi bir programda çağrı yığınını yapıştırabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

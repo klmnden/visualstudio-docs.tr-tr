@@ -1,8 +1,6 @@
 ---
 title: 'İzlenecek yol: Örnekleme kullanarak komut satırı profili oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886815"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Komut satırı kullanarak örnekleme profili oluşturma
 
@@ -35,7 +33,7 @@ Bu kılavuzda, aşağıdaki adımları izler:
 
 - Ara anlayış [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Komut satırı araçları ile çalışma anlama Ara
-- Bir kopyasını [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md)
+- Bir kopyasını [PeopleTrax örneği](/visualstudio/profiling/performance-explorer)
 - Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Örnekleme yöntemini kullanarak komut satırı profili oluşturma

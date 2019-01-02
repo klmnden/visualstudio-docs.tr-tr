@@ -1,8 +1,6 @@
 ---
-title: Veri örnekleme arayan - Aranan görünümü - | Microsoft Docs
-ms.custom: ''
+title: Arayan - Aranan görünümü - örnekleme verileri | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Caller/Callee view
@@ -13,41 +11,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 61820a99d3037a205b0c206740c40fc54f439607
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891498"
 ---
 # <a name="callercallee-view---sampling-data"></a>Arayan/Aranan görünümü - örnekleme verileri
-Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  
+Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil bilgilerini görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir.  
   
- **Geçerli işlevi** Orta Kılavuz ve bunun görüntülenen bilgi seçili işlevi için profil oluşturmayı gösterir. Tüm örneklenen işlev çağrıları değerlerini içerir.  
+ **Geçerli işlev** Orta Kılavuz ve bunun görüntülenen bilgi seçili işlev için profil oluşturmayı gösterir. İşlev çağrıları tüm örneklenen değerlerini içerir.  
   
- **Geçerli işlevini çağırdı işlevleri** üst kılavuzunda görüntülenir ve seçilen (geçerli) işlevi değerlerine işlevleri (üst) arayan tek tek katkı gösterir.  
+ **Geçerli işlevi çağırmış işlevler** üst kılavuz görüntülenir ve seçili (geçerli) işlevinin değerlere işlevler bireysel Katkıları çağıranın (üst) gösterir.  
   
- **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz ve bunun görüntülenen alt işlevi geçerli bir işlev tarafından çağrıldığında seçili işlevinin bilgi Aranan (alt) işlevleri için profil oluşturmayı gösterir.  
+ **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz ve bunun görüntülenen geçerli işlev tarafından alt işlev çağrıldığında çağrılan (alt) işlevleri için seçili işlev bilgileri profil oluşturma gösterilmektedir.  
   
 > [!NOTE]
->  Gelişmiş güvenlik özellikleri Windows 8 ve Windows Server 2012 Visual Studio profil oluşturucu bu platformlarda toplar şekilde önemli değişiklikler gerekmiştir. UWP uygulamalar için yeni koleksiyon teknikler de gerekir. Bkz: [Windows 8 ve Windows Server 2012 uygulamaların performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**İşlem kimliği**|İşlemi çalıştırmak profil oluşturma kimliği (PID).|  
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
 |**İşlem adı**|İşlemin adı.|  
-|**Modül adı**|İşlevi içeren modülü adı.|  
-|**Modül yolu**|İşlevi içeren modülü yolu.|  
-|**Kaynak dosya**|Bu işlev için tanım içeriyor kaynak dosya.|  
+|**Modül adı**|İşlevi içeren modül adı.|  
+|**Modül yolu**|İşlevi içeren modül yolu.|  
+|**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
 |**İşlev adı**|İşlev tam adı.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**İşlev adresi**|İşlev adresi.|  
-|**Türü**|İşlev Bağlam:<br /><br /> -   **0** -geçerli işlevi<br />-   **1** -geçerli işlevi çağıran bir işlev<br />-   **2** -geçerli işlev tarafından çağrılan bir işlevi|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**İşlev adresi**|İşlevin adresi.|  
+|**Tür**|İşlevin bağlamı:<br /><br /> -   **0** -geçerli işlevi<br />-   **1** -geçerli işlevi çağıran bir işlev<br />-   **2** -geçerli işlev tarafından çağrılan bir işlev|  
 |**Kök işlev adı**|Geçerli işlevin adı.|  
-|**Kapsayıcı örnekleri**|-Geçerli işlevi için bu işlev veya bir alt işlevlerini yürütülmekte olan olsa da, toplanan örnek sayısı.<br />-Çağıran işlev için bu işlev geçerli işlevi çağrıldığında, toplanan dahil geçerli işlevi örnek sayısı.<br />-Çağrılan işlev için geçerli işlevi bu işlev çağrıldığında, toplanmış olan her ikisi de dahil bu işlev örnek sayısı.|  
-|**Kapsayıcı örnekleri %**|Profil çalıştıran tüm örneklerini yüzdesi bu işlevin kapsayıcı örnekleri yoktu.|  
-|**Özel örnekleri**|-Bu işlev doğrudan yürütülürken için geçerli işlevi, çalışmasını profil örneklerin sayısını toplanan; diğer bir deyişle, bu işlev çağrı yığını en üstünde zaman oluştu. Bu işlev, alt işlevleri yürütülürken toplanan örnek özel sayılar sayılmaz.<br />-Çağıran işlev için bu işlev geçerli işlevi çağrıldığında, toplanan özel geçerli işlevi örnek sayısı.<br />-Çağrılan işlev için geçerli işlevi bu işlev çağrıldığında toplanmış olan bir özel kullanım örnekleri bu işlevin sayısı.|  
-|**Özel örnekleri %**|Profil çalıştıran tüm örneklerini yüzdesi bu işlev özel örnekleri yoktu.|  
+|**Kapsamlı örnekler**|-Geçerli işlev için bu işlev veya onun alt işlevlerden birini çağırılma yürütüldüğü karşın, toplanan örnek sayısı.<br />-Çağıran işlev için bu işlev geçerli işlevin çağrıldığı zaman, toplanmış olan kapsamlı örnek geçerli işlevin sayısı.<br />-Çağrılan işlev için bu işlev, bu işlev geçerli işlevin çağrıldığı zaman, toplanmış olan kapsamlı örnek sayısı.|  
+|**Kapsamlı örnek yüzdesi**|Profil çalıştıran tüm örneklerin yüzdesi, bu işlevin kapsamlı örnekler yoktu.|  
+|**Dışlamalı örnekler**|-Bu işlev doğrudan yürütülürken profil çalışan örnek sayısı geçerli işlev için toplanan; diğer bir deyişle, bu işlev çağrı yığınının başında ne zaman. Bu işlevin alt işlevleri yürütülürken toplanan örnekler dışlamalı sayımlar içinde sayılmaz.<br />-Çağıran işlev için bu işlev geçerli işlevin çağrıldığı zaman, toplanmış olan dışlamalı örnek geçerli işlevin sayısı.<br />-Çağrılan işlev için bu işlev, bu işlev geçerli işlevin çağrıldığı zaman, toplanmış olan özel örnek sayısı.|  
+|**Dışlamalı örnek yüzdesi**|Profil çalıştıran tüm örneklerin yüzdesi, bu işlevin dışlamalı örnekler yoktu.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Arayan/Aranan görünümü - .NET bellek örnekleme verileri](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   

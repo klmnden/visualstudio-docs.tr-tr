@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: eski dil hizmeti oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Eski dil hizmeti oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98f5da733866143212ee4386bdeb88b3d0a2340a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7f60d580b79ebba03a8617e8bd797ec9d099971
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891965"
 ---
-# <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek Yol: Eski Dil Hizmeti Oluşturma
+# <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: Eski dil hizmeti oluşturma
 Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıfları kullanarak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oldukça basittir. Dil hizmeti ve dil hizmeti diliniz için bir ayrıştırıcı barındırmak için bir VSPackage ihtiyacınız vardır.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

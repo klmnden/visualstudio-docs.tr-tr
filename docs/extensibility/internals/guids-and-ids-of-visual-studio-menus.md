@@ -1,9 +1,6 @@
 ---
 title: GUID'leri ve kimlikleri Visual Studio menülerinin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906949"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID'leri ve kimlikleri, Visual Studio menü
 Bu makalede, menüler ve gruplar Visual Studio menü çubuğunda GUID ve ID değerlerini numaralandırır. Bu değerleri tanımlanan *.vsct* Visual Studio SDK'ın bir parçası olarak yüklenen dosyalar. Daha fazla bilgi için [IDE tanımlı komutlar, menüler ve gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -181,7 +178,7 @@ Bu makalede, menüler ve gruplar Visual Studio menü çubuğunda GUID ve ID değ
  Aşağıdaki hiyerarşi, Visual Studio menü çubuğundaki menüleri ile ilişkili alt menüler gösterir. Yalnızca bir grubu kendi üst menü olabileceğinden, her alt gruptan menüde yerine doğrudan menüsünden Düzen gerekir. Menüleri, gruplar ve alt menülerini arasındaki ilişki hakkında daha fazla bilgi için bkz. [menüye alt menü ekleme](../../extensibility/adding-a-submenu-to-a-menu.md).  
   
 > [!NOTE]
->  Bunlar IDE içindeki gruplar için adlandırma kuralı şu şekilde olayla çünkü Visual Studio menü çubuğundaki menüleri adlarını bu hiyerarşide ayrı olarak gösterilmez: *IDG_VS_\<menüsü adı\>_\< Grup adı\>*.  
+>  Bunlar IDE içindeki gruplar için adlandırma kuralı şu şekilde olayla çünkü Visual Studio menü çubuğundaki menüleri adlarını bu hiyerarşide ayrı olarak gösterilmez: *IDG_VS_\<menüsü adı\>_\<grup adı\>*.  
   
 |Üst grup|Alt menü|Alt gruplar|  
 |------------------|-------------|------------------|  

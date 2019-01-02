@@ -8,15 +8,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 4fa897ff92cb6956bef59dfcb7a860b24d0d8bae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885750"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 
@@ -58,7 +57,7 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanını kullan�
 
 4.  Şimdi Northwind veritabanına dayalı bir model oluşturmak için Visual Studio'yu kullanabilirsiniz.
 
-## <a name="create-the-model"></a>Model oluşturma
+## <a name="create-the-model"></a>Modeli oluşturma
 
 1. ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe**. Sol bölmede altında C# düğümünü seçin **veri** ve Orta bölmede seçin **ADO.NET varlık veri modeli**.
 
@@ -74,7 +73,7 @@ Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanını kullan�
 
     ![Model için veritabanı nesneleri seçin](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Sihirbazın oluşturduğu C# Entity Framework modelini temsil eden sınıf. Düz eski sınıflardır C# sınıfları ve bunların hangi biz olan veri bağlama WPF kullanıcı arabirimi. *.Edmx* dosya, ilişkileri ve veritabanındaki nesneleri sınıfları ilişkilendirir diğer meta veriler açıklanmaktadır. *.Tt* dosyalarıdır, model ve veritabanı değişiklikleri kaydetme işleyen kod oluşturan T4 şablonları. İçinde bu dosyaları gördüğünüz **Çözüm Gezgini** Northwind_model düğümü altında:
+5. Sihirbaz, Entity Framework modelini temsil eden C# sınıfları oluşturur. Düz eski sınıflardır C# sınıfları ve bunların hangi biz olan veri bağlama WPF kullanıcı arabirimi. *.Edmx* dosya, ilişkileri ve veritabanındaki nesneleri sınıfları ilişkilendirir diğer meta veriler açıklanmaktadır. *.Tt* dosyalarıdır, model ve veritabanı değişiklikleri kaydetme işleyen kod oluşturan T4 şablonları. İçinde bu dosyaları gördüğünüz **Çözüm Gezgini** Northwind_model düğümü altında:
 
       ![Çözüm Gezgini EF modeli dosyaları](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -425,7 +424,7 @@ Bu işleyici yöntemleri MainWindow sınıfta ekleyin *MainWindow.xaml.cs*. Mü�
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>Uygulamayı çalıştırın
+## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
 Hata ayıklamayı başlatmak için basın **F5**. Müşteri ile sipariş verilerini kılavuz doldurulmuş görürsünüz ve Gezinti düğmelerinin beklenen şekilde çalışması gerekir. Tıklayarak **işleme** veri girdikten sonra yeni müşteri veya sipariş modele eklemek için. Tıklayarak **iptal** verileri kaydetmeden yeni bir müşteri ya da yeni bir sipariş formu dışında yedeklenir. Mevcut müşteriler ve siparişler doğrudan metin kutularındaki düzenlemeler yapabilir ve bu değişiklikleri modele otomatik olarak yazılır.
 

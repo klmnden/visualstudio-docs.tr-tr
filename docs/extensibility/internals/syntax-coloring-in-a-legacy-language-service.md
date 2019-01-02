@@ -1,9 +1,6 @@
 ---
-title: Sözdizimi eski dil hizmetinde renklendirme | Microsoft Docs
-ms.custom: ''
+title: Eski dil hizmetinde söz dizimi renklendirmesi | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring
@@ -14,64 +11,64 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 172f06f4e30f1320b6e17332cb2b54af91f7ed01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b48391be0bcd852637296f45c5b8dda9916cefa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874672"
 ---
-# <a name="syntax-coloring-in-a-legacy-language-service"></a>Eski dil hizmetinde renklendirme sözdizimi
+# <a name="syntax-coloring-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Söz Dizimi Renklendirmesi
 
-Visual Studio renklendirme hizmeti dil öğeleri tanımlamak ve bunları bir düzenleyicide belirtilen renklerle görüntülemek için kullanır.
+Visual Studio renklendirme hizmet dilinin öğelerini tanımlamak ve bunları belirtilen bir Düzenleyicisi renkleri görüntülemek için kullanır.
 
 ## <a name="colorizer-model"></a>Renklendirici modeli
- Dil hizmeti uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> sonra düzenleyiciler tarafından kullanılan arabirim. Bu uygulama, aşağıdaki çizimde gösterildiği gibi ayrı bir nesne dil hizmetinden geçerlidir:
+ Dil hizmeti uygulayan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ardından düzenleyiciler tarafından kullanılan arabirim. Bu uygulama, aşağıdaki çizimde gösterildiği gibi dil hizmeti ayrı bir nesneden geçerlidir:
 
  ![SVC Renklendirici grafiği](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
->  Hizmet renklendirme söz dizimi renklendirme metin için genel Visual Studio mekanizması ayrıdır. Genel hakkında daha fazla bilgi için [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] renklendirme, destekleme mekanizması bkz [kullanarak yazı tiplerini ve renkleri](../../extensibility/using-fonts-and-colors.md).
+>  Hizmet renklendirme söz dizimi renklendirme metin için genel Visual Studio mekanizması ayrıdır. Genel hakkında daha fazla bilgi için [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] renklendirme, destekleyici mekanizması bkz [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).
 
- Renklendirici yanı sıra dil hizmeti Düzenleyicisi tarafından özel colorable öğeleri sağlayan reklam tarafından kullanılan özel colorable öğeler sağlayabilir. Bunu uygulayarak yapmak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> arabirimini uygulayan nesnedeki <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirimi. Düzenleyici çağırdığında özel colorable öğe sayısını döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> Yöntemi Düzenleyicisi'ni çağırdığında ayrı bir özel colorable öğe döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> yöntemi.
+ Renklendirici yanı sıra özel renklendirilebilir öğeler sağlayan advertising tarafından düzenleyici tarafından kullanılan özel renklendirilebilir öğeler dil hizmeti sağlayabilirsiniz. Bunu uygulayarak yapabilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> arabirimi uygulayan aynı nesne üzerinde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirimi. Düzenleyici çağırdığında, özel renklendirilebilir öğeler sayısını döndürür. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> Yöntemi Düzenleyicisi çağırdığında, ayrı bir özel renklendirilebilir öğe döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> yöntemi.
 
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Yöntemi uygulayan bir nesne döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> arabirimi. Dil hizmeti 24 bit ya da yüksek renk değerleri destekliyorsa, uygulamalıdır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> aynı nesneye arabirimde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> arabirimi.
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Yöntemini uygulayan bir nesne döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> arabirimi. Dil hizmeti 24-bit ya da yüksek renk değerleri destekliyorsa, uygulamalıdır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> arabirimi aynı nesne üzerinde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> arabirimi.
 
-## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Bir VSPackage dil hizmeti Renklendirici nasıl kullanır
+## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Dil hizmeti Renklendirici bir VSPackage'ı kullanma
 
-1.  VSPackage dil hizmeti aşağıdakileri yapmak için VSPackage gerektirir uygun dil hizmeti almanız gerekir:
+1.  VSPackage'ı VSPackage'ı, aşağıdakileri yapmak için dil hizmeti gerektirir uygun dil hizmeti almanız gerekir:
 
-    1.  Bir nesne uygulama kullanmak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> renklendirilen için metni almak için arabirim.
+    1.  Bir nesneyi uygulama kullanmak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> renklendirilmiş için metin almak için arabirim.
 
          Metin, uygulayan bir nesne kullanarak genellikle görüntülenir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi.
 
     2.  Dil hizmeti VSPackage GUID dil hizmeti için hizmet sağlayıcısı sorgulayarak alın. Dil Hizmetleri kayıt defterinde dosya uzantısı ile tanımlanır.
 
-    3.  Dil hizmeti ile ilişkilendirmek <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> çağırarak kendi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> yöntemi.
+    3.  Dil hizmeti ile ilişkilendirme <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> çağırarak kendi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> yöntemi.
 
-2.  VSPackage şimdi elde edilir ve Renklendirici nesne aşağıdaki şekilde kullanın:
+2.  VSPackage'ı şimdi alabilir ve Renklendirici nesnesini şu şekilde kullanın:
 
     > [!NOTE]
-    > Çekirdek Düzenleyicisi'ni VSPackages bir dil hizmetin Renklendirici nesneleri açıkça almak zorunda kalmazsınız. Uygun dil hizmeti çekirdek Düzenleyici örneği alır almaz, burada gösterilen tüm renklendirme görevleri gerçekleştirir.
+    > Çekirdek Düzenleyicisi'ni VSPackage'ları, bir dil hizmetin Renklendirici nesneleri açıkça elde gerekmez. Çekirdek Düzenleyici örneği uygun dil hizmeti edinir hemen sonra burada gösterilen tüm renklendirme görevleri gerçekleştirir.
 
-    1.  Uygulayan dil hizmetin Renklendirici nesnesini alın <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>, ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> çağırarak arabirimleri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> dil hizmetin yöntemi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> nesnesi.
+    1.  Uygulayan dil hizmetin Renklendirici nesnesi elde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>, ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> çağırarak arabirimleri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> dil hizmetin metodunda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> nesne.
 
-    2.  Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metin belirli bir aralığa Renklendirici bilgilerini elde etmek için yöntem.
+    2.  Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> belirli bir aralık metin Renklendirici bilgileri almak için yöntemi.
 
-         <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> değer, bir renklendirilen metin aralığı içinde her karakter dizisi döndürür. Çekirdek Düzenleyicisi tarafından tutulan varsayılan colorable öğesi listesini ya da dil hizmeti kendisi tarafından tutulan özel colorable öğesi listesini colorable öğesi listesini dizin değerlerdir.
+         <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> renklendirilmiş metin aralığı her karakter için bir değer dizisi döndürür. Çekirdek düzenleyici tarafından tutulan varsayılan renklendirilebilir öğesi listesinden veya dil hizmeti kendisi tarafından tutulan bir özel renklendirilebilir öğesi listesinden bir renklendirilebilir öğesi liste içine dizinler değerlerdir.
 
-    3.  Tarafından döndürülen renklendirme bilgileri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> seçili metni görüntülemek için yöntem.
+    3.  Tarafından döndürülen renklendirme bilgileri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> seçili metni görüntülemek için yöntemi.
 
 > [!NOTE]
->  Bir dil hizmeti Renklendirici kullanmanın yanı sıra bir VSPackage mekanizması renklendirme genel amaçlı Visual Studio metin de kullanabilirsiniz. Bu mekanizma hakkında daha fazla bilgi için bkz: [kullanarak yazı tiplerini ve renkleri](../../extensibility/using-fonts-and-colors.md).
+>  Dil hizmeti Renklendirici kullanmanın yanı sıra bir VSPackage mekanizması renklendirme genel amaçlı Visual Studio metin de kullanabilirsiniz. Bu mekanizması hakkında daha fazla bilgi için bkz. [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
- [Söz dizimi renklendirme uygulama](../../extensibility/internals/implementing-syntax-coloring.md) Discusses bir düzenleyici nasıl eriştiğini bir dil hizmetin söz dizimi renklendirme ve dil hizmet sözdizimi renklendirmesi desteklemek için uygulamanız gerekir.
+ [Söz dizimi renklendirmesi uygulama](../../extensibility/internals/implementing-syntax-coloring.md) Discusses Düzenleyici nasıl eriştiğini dil hizmetin söz dizimi renklendirme ve söz dizimi renklendirmesi desteklemek için dil hizmeti uygulamalıdır.
 
- [Nasıl yapılır: kullanım yerleşik Colorable öğeleri](../../extensibility/internals/how-to-use-built-in-colorable-items.md) dil hizmetinden yerleşik colorable öğelerin nasıl kullanılacağı gösterilmektedir.
+ [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md) dil hizmeti yerleşik renklendirilebilir öğeleri kullanma işlemi gösterilmektedir.
 
- [Özel Colorable öğeler](../../extensibility/internals/custom-colorable-items.md) nasıl özel colorable öğeler uygulanacağını anlatır.
+ [Özel renklendirilebilir öğeler](../../extensibility/internals/custom-colorable-items.md) nasıl özel renklendirilebilir öğeler uygulanacağı açıklanır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Yazı tipleri ve renkler kullanarak](../../extensibility/using-fonts-and-colors.md)
+- [Yazı Tiplerini ve Renkleri Kullanma](../../extensibility/using-fonts-and-colors.md)

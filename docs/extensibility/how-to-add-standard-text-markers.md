@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: standart metin işaretçileri ekleyin | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Standart metin işaretçileri ekleyin | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874634"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Nasıl yapılır: standart metin işaretçileri Ekle
+# <a name="how-to-add-standard-text-markers"></a>Nasıl Yapılır: Standart metin işaretçileri Ekle
 İle sağlanan varsayılan metin işaretçisi türleri oluşturmak için aşağıdaki yordamı kullanın. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici.  
   
 ## <a name="to-create-a-text-marker"></a>Bir metin işaretçisi oluşturmak için  
@@ -51,6 +48,6 @@ ms.locfileid: "39638827"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Nasıl yapılır: uygulama, hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
- [Nasıl yapılır: özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+ [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
+ [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
+ [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)

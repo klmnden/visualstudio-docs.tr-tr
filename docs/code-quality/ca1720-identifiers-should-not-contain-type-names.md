@@ -2,7 +2,6 @@
 title: 'CA1720: Tanımlayıcılar tür adları içermemelidir'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912275"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Tanımlayıcılar tür adları içermemelidir
 
@@ -35,7 +34,7 @@ ms.locfileid: "50143131"
 ## <a name="cause"></a>Sebep
  Dışarıdan görünen üye bir parametre adını veri türü adı içerir.
 
- veya
+ -veya-
 
  Açıkça görünen üyenin adı dil özellikli veri türü adı içerir.
 
@@ -52,7 +51,7 @@ ms.locfileid: "50143131"
 
 - UInt8
 
-- kısa
+- Kısa
 
 - UShort
 
@@ -64,7 +63,7 @@ ms.locfileid: "50143131"
 
 - Uınteger
 
-- uzun
+- Uzun
 
 - ULong
 
@@ -72,7 +71,7 @@ ms.locfileid: "50143131"
 
 - İmzalı
 
-- kayan nokta
+- Kayan
 
 - float32
 
@@ -141,7 +140,7 @@ Ayrıca, bir parametre adlarını büyük küçük harf duyarlı bir şekilde de
  Parametre ve üye adları türüne göre ara sıra kullanılmasını uygun olabilir. Ancak, hiçbir bilinen yeni geliştirme için senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak. Daha önce sevk kitaplıkları için bu kuraldan bir uyarıyı bastırmak olabilir.
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
  [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 

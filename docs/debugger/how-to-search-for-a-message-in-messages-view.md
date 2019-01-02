@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: iletiler görünümünde ileti arama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: İletiler görünümünde ileti arama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863387"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Nasıl Yapılır: İletiler Görünümünde İleti Arama
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Nasıl Yapılır: İletiler görünümünde ileti arama
 Arama ölçütü olarak kendi tanıtıcı, tür veya ileti kimliği'ni kullanarak iletiler görünümünde belirli bir ileti için arama yapabilirsiniz. Bunlardan herhangi birini — veya bir birleşimini — geçerli arama ölçütleri olacaktır. İlk arama yönünü de belirtilebilir. Alanları iletişim kutusunda, seçili ileti özniteliklerle önceden yüklenir.  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>İletiler görünümünde ileti aramak için  

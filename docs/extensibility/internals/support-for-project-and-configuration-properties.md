@@ -1,9 +1,6 @@
 ---
 title: Proje ve yapılandırma özellikleri için destek | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2f61bce5b54dc877117af71b07dc0bfc1fdd8b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893532"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE) proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcı, uygulamanın özelliklerini ayarlayabilirsiniz böylece, kendi proje türü için özellik sayfası sağlayabilirsiniz.  
   
- İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: izlenecek yol: Proje oluşturma ve yapılandırma özellikleri (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: İzlenecek yol: Proje ve yapılandırma özelliklerini gösterme (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Projeleri (MPFProj) için yönetilen paket çerçevesini oluşturmak ve yeni proje sistemi yönetmek için yardımcı sınıflar sağlar. Kaynak kod ve derleme yönergelerini bulabilirsiniz [projeler - Visual Studio 2013 için MPF](https://github.com/tunnelvisionlabs/MPFProj10).  
   

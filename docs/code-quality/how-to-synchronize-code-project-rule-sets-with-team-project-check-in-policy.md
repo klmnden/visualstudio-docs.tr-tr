@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: Takım Projesi İade İlkesiyle Kod Proje Kural Kümelerini Eşitleme'
+title: 'Nasıl Yapılır: İade takım projesi ilkesiyle kod proje kural kümelerini eşitleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883249"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Nasıl yapılır: Azure DevOps projesi iade ilkesiyle kod proje kural kümelerini eşitleme
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Nasıl Yapılır: Azure DevOps projesi iade ilkesiyle kod proje kural kümelerini eşitleme
 
 Azure DevOps projesi iade ilkesiyle kod proje için Kod Analizi ayarları, en az belirtilen kural kümesi için iade ilkesi kuralları içeren bir kural kümesi belirterek eşitleyin. Geliştirici sağlama, ad ve kural kümesi için iade ilkesi konumunu bildirebilirsiniz. Proje için Kod Analizi kuralları doğru kümesini kullandığından emin olmak için aşağıdaki seçeneklerden birini kullanabilirsiniz:
 

@@ -1,8 +1,6 @@
 ---
 title: MSBuild hedefleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c383af855c849636f780e5c333bd1937e5e90955
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877646"
 ---
 # <a name="msbuild-targets"></a>MSBuild hedefleri
 Hedefler görevleri belirli bir sıraya göre gruplandırabilir ve daha küçük birimlere factored için derleme işlemindeki izin. Örneğin, bir hedef başka bir proje için girişler derler ve bunları boş dizine yerleştirir, derleme için hazırlamak için çıkış dizinindeki tüm dosyaları silebilirsiniz. Görevler hakkında daha fazla bilgi için bkz. [görevleri](../msbuild/msbuild-tasks.md).  
@@ -99,4 +97,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
- [Nasıl yapılır: birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

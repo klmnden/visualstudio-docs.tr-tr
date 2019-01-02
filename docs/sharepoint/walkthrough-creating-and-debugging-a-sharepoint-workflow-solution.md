@@ -1,16 +1,11 @@
 ---
-title: 'İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hatalarını ayıklama | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912996"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama
   Bu izlenecek yol, temel sıralı iş akışı şablonunun nasıl oluşturulacağını gösterir. İş akışı, bir belgeyi gözden olup olmadığını belirlemek için paylaşılan belge kitaplığı özelliğini denetler. Belgeyi gözden, iş akışı tamamlanır.  
@@ -127,7 +122,7 @@ ms.locfileid: "42626494"
      Bu sayfa, iş akışı başladığında belirtmenize olanak sağlar. Bir kullanıcı el ile SharePoint veya iş akışının ilişkili olduğu bir öğe oluşturulduğunda başladığında varsayılan olarak, iş akışı otomatik olarak ya da başlar.  
   
 ## <a name="create-workflow-activities"></a>İş akışı etkinlikleri oluşturun
- İş akışı içeren bir veya daha fazla *etkinlikleri* gerçekleştirilecek eylemler temsil eder. Bir iş akışı etkinlikleri düzenlemek için iş akışı Tasarımcısı'nı kullanın. Bu yordamda, iki etkinlikleri iş akışına ekleyeceğiz: HandleExternalEventActivity ve OnWorkFlowItemChanged. Bu etkinlikler belgeleri gözden geçirme durumu izleme **paylaşılan belgeler** listesi  
+ İş akışı içeren bir veya daha fazla *etkinlikleri* gerçekleştirilecek eylemler temsil eder. Bir iş akışı etkinlikleri düzenlemek için iş akışı Tasarımcısı'nı kullanın. Bu yordamda, iş akışına iki etkinliği ekleyeceğiz: HandleExternalEventActivity ve OnWorkFlowItemChanged. Bu etkinlikler belgeleri gözden geçirme durumu izleme **paylaşılan belgeler** listesi  
   
 #### <a name="to-create-workflow-activities"></a>İş akışı etkinlikleri oluşturmak için  
   
@@ -296,4 +291,3 @@ ms.locfileid: "42626494"
  [SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Derleme ve SharePoint çözümlerinde hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

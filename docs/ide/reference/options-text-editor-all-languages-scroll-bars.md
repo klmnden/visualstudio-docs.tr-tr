@@ -2,7 +2,6 @@
 title: Seçenekler, metin düzenleyici tüm diller, kaydırma çubukları
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876792"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Seçenekler, metin düzenleyici tüm diller, kaydırma çubukları
 Bu iletişim kutusu Kod Düzenleyicisi kaydırma çubuğunun varsayılan davranışını değiştirmenizi sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsü. İçinde **metin düzenleyici** klasörünü genişletin **tüm diller** alt ve ardından **kaydırma çubukları**.
@@ -65,4 +64,4 @@ Kaydırma çubuğu iki modu vardır: çubuk modu ile eşleme modu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: kaydırma çubuğunu özelleştirme](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Nasıl yapılır: Kaydırma çubuğunu özelleştirme](../how-to-track-your-code-by-customizing-the-scrollbar.md)

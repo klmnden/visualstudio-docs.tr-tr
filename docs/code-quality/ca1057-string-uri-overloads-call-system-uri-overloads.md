@@ -1,8 +1,7 @@
 ---
-title: 'CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır'
+title: 'CA1057: String URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1057
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 44130632cb416bf03819ddff13b797ac3b799354
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: cc113abf5fc1f0d47b37643c404dffade26d0899
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891196"
 ---
-# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Dize URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır
+# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: String URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır
 
 |||
 |-|-|
@@ -57,9 +56,9 @@ Bir tür yalnızca bir dize parametresi adlandırılan farklı yöntem aşırı 
  [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA2234: Dizeler yerine System.Uri nesneleri gönderin](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+ [CA2234: Dizeler yerine System.Uri nesneleri geçirin](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
 
- [CA1056: URI özellikleri dize olmamalıdır](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+ [CA1056: URI özellikleri dizeler olmamalıdır](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
  [CA1054: URI parametreleri dizeler olmamalıdır](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 

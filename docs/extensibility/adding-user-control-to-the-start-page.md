@@ -1,9 +1,6 @@
 ---
 title: Başlangıç sayfasına kullanıcı denetimi ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874699"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Başlangıç sayfasına kullanıcı denetimi Ekle
 Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu ekleme işlemi gösterilmektedir. Örnek bir kullanıcı denetimi çözüme ekler, kullanıcı denetimi oluşturur ve ardından derlemesi başlangıç sayfasından başvuran *.xaml* dosya. Yeni bir sekmede temel bir Web tarayıcısı olarak işlevler kullanıcı denetimi barındırır.  
@@ -110,7 +107,7 @@ Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu eklem
 2.  SetButton_Click olay işleyicisi aşağıdaki gibi doldurun.  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  
@@ -189,4 +186,4 @@ Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu eklem
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [WPF kapsayıcı denetimleri](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)   
- [İzlenecek yol: başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

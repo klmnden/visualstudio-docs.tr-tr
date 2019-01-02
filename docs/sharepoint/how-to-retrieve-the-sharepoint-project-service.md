@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: SharePoint Proje hizmetini alma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: SharePoint Proje hizmetini alma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891608"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Nasıl yapılır: SharePoint Proje hizmetini alma
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Nasıl Yapılır: SharePoint Proje hizmetini alma
   SharePoint Proje hizmeti çözümleri aşağıdaki türden erişebilirsiniz:  
   
 -   SharePoint Proje sistemi proje uzantısı, proje öğesi uzantısını veya proje öğesi tür tanımı gibi bir uzantısıdır. Bu tür uzantılar hakkında daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletmek](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -47,7 +44,7 @@ ms.locfileid: "49880604"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]  
   
-     Proje uzantıları oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+     Proje uzantıları oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>Bir proje öğesi uzantısını hizmetinde almak için  
   
@@ -60,7 +57,7 @@ ms.locfileid: "49880604"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     Proje öğesi uzantılarınızı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+     Proje öğesi uzantılarınızı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Bir proje öğesi türü tanımındaki hizmet almak için  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49880604"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     Proje öğesi türleri tanımlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir SharePoint proje öğesi türü tanımlayacağınızı](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+     Proje öğesi türleri tanımlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir SharePoint proje öğesi türü tanımlayacağınızı](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Sunucu Gezgini uzantıları hizmetini alma  
  ' In bir uzantısı olarak **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**, proje hizmeti kullanarak erişebileceğiniz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> özelliği bir <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> nesne.  
@@ -96,7 +93,7 @@ ms.locfileid: "49880604"
   
  VSPackage içinde talep edebilir bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> aşağıdaki yöntemlerden birini kullanarak nesne:  
   
-- <xref:System.IServiceProvider.GetService%2A> Türetildiği yönetilen bir VSPackage yöntemi <xref:Microsoft.VisualStudio.Shell.Package> sınıfı. Daha fazla bilgi için [nasıl yapılır: hizmet alma](../extensibility/how-to-get-a-service.md).  
+- <xref:System.IServiceProvider.GetService%2A> Türetildiği yönetilen bir VSPackage yöntemi <xref:Microsoft.VisualStudio.Shell.Package> sınıfı. Daha fazla bilgi için [nasıl yapılır: Hizmet alma](../extensibility/how-to-get-a-service.md).  
   
 - Statik <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> yöntemi. Daha fazla bilgi için [kullanım GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
   
@@ -104,6 +101,5 @@ ms.locfileid: "49880604"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint Proje hizmetini kullanın](../sharepoint/using-the-sharepoint-project-service.md)   
- [Nasıl yapılır: hizmet alma](../extensibility/how-to-get-a-service.md)   
- [Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Nasıl yapılır: Hizmet alma](../extensibility/how-to-get-a-service.md)   
+ [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)  

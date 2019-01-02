@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 97ab03084a64adcf6644eeaaef8478c453fc3559
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 799b5d2feafbf4a0e7b6ff54673983a585b0d2fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876896"
 ---
 # <a name="properties-of-domain-classes"></a>Etki Alanı Sınıflarının Özellikleri
 Etki alanı sınıfları aşağıdaki tabloda özelliklere sahiptir. Etki alanı sınıfları hakkında daha fazla bilgi için bkz: [anlama modelleri, sınıfları ve ilişkileri](../modeling/understanding-models-classes-and-relationships.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -33,7 +32,7 @@ Etki alanı sınıfları aşağıdaki tabloda özelliklere sahiptir. Etki alanı
 |Ad Alanı|Bu alan sınıfının ad alanı.|Geçerli ad alanı|
 |Notlar|Bu alan sınıfıyla ilişkili resmi olmayan notlar.|\<yok >|
 |Açıklama|Belge oluşturulan tasarımcının kullanıcı Arabirimi için kullanılan bir açıklaması.|\<yok >|
-|Görünen ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
+|Görünen Ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Yardım anahtar sözcüğü|Bu etki alanı sınıfı için F1 Yardımı dizini oluşturmak için kullanılan isteğe bağlı anahtar sözcük.|\<yok >|
 
 ## <a name="see-also"></a>Ayrıca Bkz.

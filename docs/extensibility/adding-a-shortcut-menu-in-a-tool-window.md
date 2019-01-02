@@ -1,9 +1,6 @@
 ---
 title: Araç penceresine kısayol menüsü ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909807"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Araç penceresine kısayol menüsü ekleme
 Bu izlenecek yol bir kısayol menüsü araç penceresine geçirir. Bir kullanıcı bir düğme, metin kutusu veya pencere arkaplanı tıklattığında görünen menüsünde bir kısayol menüsünü olur. Bir kısayol menü komutlarını diğer menü veya araç çubukları üzerindeki komutları olarak aynı şekilde davranır. Bir kısayol menüsü desteklemek için projeyi belirtin *.vsct* dosya ve yanıt olarak sağ tıklama fare görüntüleyin.  
@@ -119,10 +116,10 @@ Bu izlenecek yol bir kısayol menüsü araç penceresine geçirir. Bir kullanıc
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Semboller bölümünde tanımlanan komut kimlikleri aynı bunlar *ShortcutMenuPackage.vsct* dosya. Yalnızca gerekli olduğu için bağlam grubunun buraya dahil edilmez *.vsct* dosya.  
@@ -211,7 +208,7 @@ Bu izlenecek yol bir kısayol menüsü araç penceresine geçirir. Bir kullanıc
 7.  İçinde *ShortcutMenuControl.xaml.cs*, olay işleyicisi için bir saplama ekleyin.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

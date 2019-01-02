@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama | Microsoft Docs'
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857221"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>İzlenecek yol: komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>İzlenecek yol: Komut satırı aracılığıyla bir Visual Studio uzantısı yayımlama
 
 Bu kılavuzda komut satırını kullanarak Visual Studio Market'te Visual Studio uzantısı yayımlama gösterir. Market'te uzantınızı eklediğinizde, geliştiriciler kullanabilir [ **Uzantılar ve güncelleştirmeler** ](../ide/finding-and-using-visual-studio-extensions.md) iletişim için yeni ve güncelleştirilmiş uzantıları var gidin.
 
@@ -203,7 +200,7 @@ Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. 
 
 Bu durumda, varsayılan bir VSPackage uzantı kullanacağız, ancak aynı adımları her uzantı türü için geçerlidir.
 
-1. C# ' "bir menü komutu içeren TestPublish" adlı bir VSPackage'ı oluşturun. Daha fazla bilgi için [ilk uzantınızı oluşturmaya: Hello World](../extensibility/extensibility-hello-world.md).
+1. C# ' "bir menü komutu içeren TestPublish" adlı bir VSPackage'ı oluşturun. Daha fazla bilgi için [ilk uzantınızı oluşturmaya: Merhaba Dünya](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Uzantınızı paketi
 

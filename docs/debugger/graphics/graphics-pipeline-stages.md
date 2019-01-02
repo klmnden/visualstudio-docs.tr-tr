@@ -1,8 +1,6 @@
 ---
 title: Grafik ardışık düzen aşamaları | Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pipeline
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da74af0f77586e518365fa669c84309e7751b319
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a76b782b3abaf92eedccb43104987d16668794d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898001"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafik Ardışık Düzen Aşamaları
 Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağrısı Direct3D grafik Ardışık düzenin her aşaması tarafından nasıl dönüştürdüğünü anlamanıza yardımcı olur.  
@@ -127,4 +125,4 @@ Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağr�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)

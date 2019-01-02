@@ -1,9 +1,7 @@
 ---
-title: '8. adım: bir resim düğme olayı işleyicisi Göster için kod yazma'
-ms.custom: ''
+title: '8. Adım: Bir resim düğme olayı işleyicisi Göster için kod yazma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: be9163ce831f556310a17b72c3833d9756ddf952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887899"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. adım: bir resim düğme olayı işleyicisi Göster için kod yazma
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Bir resim düğme olayı işleyicisi Göster için kod yazma
 
 Bu adımda yaptığınız **resim Göster** şöyle çalışan düğmesi:
 
@@ -28,7 +26,7 @@ Bu adımda yaptığınız **resim Göster** şöyle çalışan düğmesi:
 
 IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç vardır. Kodun girerken IDE, girdiğiniz kısmi sözcükler için önerilen tamamlamaları içeren bir kutu açar. Sonra yapmak istediğinizi belirlemeye çalışır ve otomatik olarak öğeyi listeden seçtiğiniz son atlar. Yukarı veya aşağı taşımak için okları veya seçimleri daraltmak için de mektup yazmaya devam edebilirsiniz. Seçeneği gördüğünüzde, seçmek istediğiniz **sekmesini** anahtarı seçin. Alternatif olarak, gerekli değilse, önerileri yok sayabilirsiniz.
 
-![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Resim Görüntüleyici oluşturma Visual Basic'te - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videoda, Visual Studio'nun önceki bir sürümünü kullanır. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
+![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 4 Resim Görüntüleyici oluşturma](https://msdn.microsoft.com/vstudio/gg315355.aspx). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videoda, Visual Studio'nun önceki bir sürümünü kullanır. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Bir resim düğme olayı işleyicisi Göster için kod yazmak için
 
@@ -65,7 +63,7 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
 
          Hakkında daha fazla bilgi edinmek için `ShowDialog()` yöntemi bkz [ShowDialog yöntemi](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
-    5.  Kullandığınızda, bir yöntem bir denetim veya bileşen üzerinde (olarak adlandırılan *bir yöntemi çağırmak*), parantezler eklemeniz gerekir. Bu nedenle açılış ve kapanış ayraçlarını hemen "g sonra" girin `ShowDialog`: `()` şimdi "openFileDialog1.ShowDialog()" gibi görünmelidir.
+    5.  Kullandığınızda, bir yöntem bir denetim veya bileşen üzerinde (olarak adlandırılan *bir yöntemi çağırmak*), parantezler eklemeniz gerekir. Bu nedenle açılış ve kapanış ayraçlarını hemen "g sonra" girin `ShowDialog`: `()` "OpenFileDialog1.ShowDialog()" gibi görünmelidir.
 
         > [!NOTE]
         > Yöntemler, tüm önemli bir parçasıdır ve Bu öğreticide, yöntemleri kullanmak için birkaç yol göstermiştir. Bir bileşenin yöntemini nasıl aradığınız gibi şeyler yapmak için söylemek için çağırabilirsiniz **OpenFileDialog** bileşenin `ShowDialog()` yöntemi. Programınız bir anda, gibi şeyler yapmak için kendi yöntemlerinizi oluşturabilirsiniz adlı `showButton_Click()` bir kullanıcı bir düğmeyi seçtiğinde bir iletişim kutusu ve resim açan yöntemi.
@@ -97,6 +95,6 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [9. adım: gözden geçirme, açıklama ve kodunuzu test](../ide/step-9-review-comment-and-test-your-code.md).
+-   Sonraki öğretici adımına gitmek için bkz: [9. adım: Gözden geçirme, açıklama ve kodunuzu test](../ide/step-9-review-comment-and-test-your-code.md).
 
--   Önceki öğretici adımına dönmek için bkz: [7. adım: formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md).
+-   Önceki öğretici adımına dönmek için bkz: [adım 7: Formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md).

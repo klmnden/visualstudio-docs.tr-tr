@@ -1,7 +1,6 @@
 ---
 title: Roslyn Çözümleyicileriyle çalışmaya başlama | Microsoft Docs
 ms.date: 04/02/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: gregvanl
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 591e09596c92476b7664b541d74344099d19ecb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874541"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn çözümleyicileriyle çalışmaya başlama
 
@@ -24,7 +23,7 @@ Visual Studio'da canlı, proje temelli kod çözümleyicileriyle API yazarlar, e
 
 [Roslyn Canlı kod Çözümleyicileri giriş ve gözden geçirme](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
-[Ekleme kodu düzeltir izlenecek yol: Çözümleyicisi sorunları için kullanıcıların düzeltmeleri sağlayabilir](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[İzlenecek yol kod düzeltmeleri ekleyin: Kullanıcılar düzeltmeleri Çözümleyicisi sorunlarda sağlayabilir.](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
 [Giriş ve gerçek dünya Çözümleyicisi Kılavuzu](https://channel9.msdn.com/events/Build/2015/3-725)
 
@@ -37,7 +36,7 @@ Visual Studio'da canlı, proje temelli kod çözümleyicileriyle API yazarlar, e
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Roslyn Çözümleyicileri genel bakış](../code-quality/roslyn-analyzers-overview.md)
-- [Öğretici: ilk Çözümleyicisi ve kod düzeltmenizi yazın](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+- [Öğretici: İlk Çözümleyicisi ve kod düzeltmenizi yazın](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET derleyici platformu Paket sürümü başvurusu](roslyn-version-support.md)
 - [GitHub OSS sitesinde daha fazla belgeleri](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Roslyn çözümleyicilerini github'da ile uygulanan FxCop kuralı](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

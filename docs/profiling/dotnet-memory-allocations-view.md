@@ -1,8 +1,6 @@
 ---
 title: .NET bellek ayırma görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895551"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Bellek Ayırma Görünümü
 Ayırma görünümü, profil oluşturma çalışması süresince oluşturulan türlerini listeler. Her türde ayırmalar şeklinde sonuçlanan işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü türüdür.  
@@ -49,7 +47,7 @@ Ayırma görünümü, profil oluşturma çalışması süresince oluşturulan t�
 |**Modül yolu**|Tür veya işlev içeren modül yolu.|  
 |**Kaynak dosyası**|Tür veya işlev tanımını içeren kaynak dosya.|  
 |**İşlevin satır numarası**|Bu tür tanımı veya kaynak dosyada işlev satır sayısı.|  
-|**düzeyi**|Veri türü veya bir işlev için olup olmadığını gösterir.|  
+|**Düzey**|Veri türü veya bir işlev için olup olmadığını gösterir.|  
 |**Kapsamlı ayırmalar**|-Bir işlev için işlevi tarafından oluşturulan üst öğe türündeki nesnelerin toplam sayısı. Bu sayı, alt işlevlerde oluşturulan nesneleri içerir.<br />-Bir tür için oluşturulan bu türdeki örneklerin toplam sayısı.|  
 |**Kapsamlı ayırma yüzdesi**|-Bir işlev için olan işleve göre üst türü kapsamlı ayırma profil oluşturma çalıştırmasını içinde oluşturulan tüm nesnelerin yüzdesi.<br />-Bir tür için, profil oluşturma çalışmasında oluşturulan nesnelerin toplam sayısının yüzdesi türün örneklerinin yoktu.|  
 |**Dışlamalı ayırmalar**|-Bir işlev için işlev çağrı yığınının başında doğrudan yürütülürken, oluşturulan nesne sayısı. Bu sayı, alt işlevlerde oluşturulan nesnelerin içermez.<br />-Bir tür için oluşturulan bu türdeki örneklerin toplam sayısı.|  

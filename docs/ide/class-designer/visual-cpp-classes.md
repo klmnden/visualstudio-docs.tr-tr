@@ -2,7 +2,6 @@
 title: Sınıf Tasarımcısında Visual C++ Sınıfları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b768fa059d3933ef75c5ff58e050c8c1521f770a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895239"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf tasarımcısında Visual C++ sınıfları
 

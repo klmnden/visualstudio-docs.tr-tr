@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma kitaplarını program aracılığıyla kapatma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kapatma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0e9cb0402894bc09ff287db1ee42001ee005678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893201"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Nasıl yapılır: çalışma kitaplarını program aracılığıyla kapatma
+# <a name="how-to-programmatically-close-workbooks"></a>Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kapatma
   Etkin çalışma kitabının kapatabilir veya kapatmak için bir çalışma kitabı belirtebilirsiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -57,10 +54,8 @@ ms.locfileid: "35677735"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)   
- [Nasıl yapılır: çalışma kitaplarını program aracılığıyla kaydetme](../vsto/how-to-programmatically-save-workbooks.md)   
- [Nasıl yapılır: program aracılığıyla çalışma kitaplarını açma](../vsto/how-to-programmatically-open-workbooks.md)   
+ [Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kaydetme](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma kitaplarını açma](../vsto/how-to-programmatically-open-workbooks.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

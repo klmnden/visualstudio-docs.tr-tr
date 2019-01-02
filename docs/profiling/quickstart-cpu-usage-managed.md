@@ -3,7 +3,6 @@ title: CPU kullanım verilerini (yönetilen kod için) çözümleme
 description: C# ve Visual Basic CPU kullanımı Tanılama aracını kullanarak uygulama performansını ölçmeye
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 68d8319082fbcbe232989814c190f9a4746c11f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899580"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Hızlı Başlangıç: Visual Studio'da (yönetilen kod için) CPU kullanım verilerini çözümleme
 
@@ -161,7 +160,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     > [!NOTE]
     > Visual Basic'te, Başlangıç nesnesi ayarlandığından emin olun `Sub Main` (**özellikleri** > **uygulama** > **Başlangıç nesnesi**).
 
-##  <a name="step-1-collect-profiling-data"></a>1. adım: profil oluşturma verilerini topla
+##  <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
 
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `Main` işlevi:
 
@@ -204,7 +203,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>2. adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2. Adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve ardından her birine daha yakından bakalım alma verilerinizi analiz etmeye başlamanızı öneririz.
 

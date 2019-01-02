@@ -1,8 +1,6 @@
 ---
 title: Form bölgesine çalışma zamanında erişme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875439"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Form bölgesine çalışma zamanında erişme
 
@@ -71,14 +69,14 @@ ms.locfileid: "52304486"
 
  Form bölgesi kod dosyası dışındaki bir denetime erişimi etkinleştirmek için bu denetim döndürülecek form bölgesi kod dosyasında bir özellik oluşturun.  
 
- Özellikleri oluşturma hakkında daha fazla bilgi için C#, bkz: [nasıl yapılır: bildirme ve kullanım okuma yazma özellikleri &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Özellikleri oluşturma hakkında daha fazla bilgi için C#, bkz: [nasıl yapılır: Bildirme ve kullanım okuma yazma özellikleri &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Visual Basic'de özellikler oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir özelliği (Visual Basic) oluşturma](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Visual Basic'de özellikler oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir özelliği (Visual Basic) oluşturma](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Outlook form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Outlook form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
