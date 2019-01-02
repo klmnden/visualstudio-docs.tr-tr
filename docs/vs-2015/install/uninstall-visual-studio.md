@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 71e1318444c0b03ee5b2b9024c13bfbeb51b5c41
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 985f99afb0f9c0e659586d7878df94bf1b7266c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822431"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +46,7 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
 1.  Visual Studio'nun .exe dosyasını (örneğin, "vs_enterprise.exe" bulun).
 
     > [!NOTE]
-    >  Dosya Örneğin, "%ProgramData%\Package Cache", bir alt klasöründe olmalıdır: C:\ProgramData\Package önbellek\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
+    >  Dosya, örneğin, "%ProgramData%\Package Cache", bir alt klasöründe olmalıdır: C:\ProgramData\Package önbellek\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
 
 2.  Kullanarak .exe dosyasını çalıştırın. / uninstall/force komut satırı parametrelerini.
 
@@ -77,7 +76,7 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
 
 2. Yükleme veya kullanmak istediğiniz Visual Studio'nun önceki sürümünü yeniden yükleyin.
 
-   Visual Studio'nun önceki bir sürümünü yüklüyor olsanız bile, Kurulum programı varsa sürüm veya daha yeni bir sürümünü kullanmak yine de deneyebilirsiniz. Daha ayrıntılı bilgi için bkz. [nasıl yapılır: bir belirli Visual Studio'nun sürümünü yükleme](../install/how-to-install-a-specific-release-of-visual-studio.md) konu.
+   Visual Studio'nun önceki bir sürümünü yüklüyor olsanız bile, Kurulum programı varsa sürüm veya daha yeni bir sürümünü kullanmak yine de deneyebilirsiniz. Daha ayrıntılı bilgi için bkz. [nasıl yapılır: Sürüm, Visual Studio'nun belirli bir yükleme](../install/how-to-install-a-specific-release-of-visual-studio.md) konu.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Visual Studio'yu yükleyin](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

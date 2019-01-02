@@ -1,9 +1,6 @@
 ---
 title: Menü komutlarına simge ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], adding to toolbars
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d01e64915004eb21a92c21a67291dc4f034112d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 73e49c3ac9586f5287e21e63e4560b7009927f46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827643"
 ---
 # <a name="add-icons-to-menu-commands"></a>Menü komutlarına simge ekleme
 Komutlar, menüler ve araç çubuklarında görünebilir. Araç çubukları bir komut normalde bir simge ve metin ile görünür (alanından tasarruf etmek için) yalnızca bir simge ile menülerde görüntülenecek bir komut yaygındır.  

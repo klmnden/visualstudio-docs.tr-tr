@@ -1,8 +1,6 @@
 ---
 title: ClickOnce uygulamaları için kod erişimi güvenliği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe8709d6bb94c1437f03c4bd0c5b8b368d05b21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828361"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce uygulamaları için kod erişimi güvenliği
 ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sınırlamalarına tabi olan. Bu nedenle, uygulamaları kod erişim güvenliği ve ClickOnce uygulamalarınızı buna göre yazma anlamak önemlidir.  
@@ -52,7 +50,7 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
 ## <a name="configure-security-permissions"></a>Güvenlik izinlerini yapılandırma  
  Her zaman, kod erişimi güvenliği izinleri sınırlamak için uygun bölgeyi istemek için ClickOnce uygulamanızı yapılandırmanız gerekir. Güvenlik izinlerini yapılandırabilirsiniz **güvenlik** sayfasının **Proje Tasarımcısı**.  
   
- **Güvenlik** sayfasını **Proje Tasarımcısı** içeren bir **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu. Bu onay kutusu seçildiğinde, güvenlik izin isteklerini uygulamanız için dağıtım bildirimi eklenir. Yükleme sırasında istenen izinlere uygulamanın dağıtıldığı bölge için varsayılan izinler aşarsa izinleri vermek için kullanıcı istenir. Daha fazla bilgi için bkz. [nasıl yapılır: ClickOnce etkinleştir güvenlik ayarlarını](../deployment/how-to-enable-clickonce-security-settings.md).  
+ **Güvenlik** sayfasını **Proje Tasarımcısı** içeren bir **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu. Bu onay kutusu seçildiğinde, güvenlik izin isteklerini uygulamanız için dağıtım bildirimi eklenir. Yükleme sırasında istenen izinlere uygulamanın dağıtıldığı bölge için varsayılan izinler aşarsa izinleri vermek için kullanıcı istenir. Daha fazla bilgi için [nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştirme](../deployment/how-to-enable-clickonce-security-settings.md).  
   
  Farklı konumlardan dağıtılan uygulamaları sormadan farklı düzeylerde izinler verilir. Örneğin, Internet'ten uygulama dağıtıldığında, son derece kısıtlayıcı bir izin kümesini alır. Yerel Intranet üzerinden yüklendiğinde, daha fazla izin alır ve bir CD-ROM'dan yüklendiğinde tam güven izinleri alır.  
   
@@ -69,7 +67,7 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
   
  Ayrıca, kod yazdığınızda, IntelliSense özelliği Kod Düzenleyicisi'nde, yapılandırmış olduğunuz güvenlik izinlerini bulunmayan herhangi bir üye devre dışı bırakır.  
   
- Daha fazla bilgi için [nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Daha fazla bilgi için [nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Tarayıcıda tutulan uygulamalar için güvenlik izinleri  
  Visual Studio, Windows Presentation Foundation (WPF) uygulamaları için aşağıdaki proje türlerini sağlar:  
@@ -97,6 +95,6 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
  [Nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştirme](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Güvenilir Uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md)   
  [Güvenlik Sayfası, Proje Tasarımcısı](../ide/reference/security-page-project-designer.md)

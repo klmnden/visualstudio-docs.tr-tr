@@ -1,8 +1,6 @@
 ---
 title: Veri toplama denetimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - advanced tasks for profiling tools
@@ -13,22 +11,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: deafe488fdb44216f0a6750f532c2e0d2363b453
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 89c1f0b435790622bee54b6cf91d57bd0cc9be29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848792"
 ---
-# <a name="control-data-collection"></a>Denetimin veri toplama
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Oluşturma Araçları, bir performans oturumu sırasında profil oluşturma verilerinin ne zaman toplanacağını kontrol etmenizi ve profillenen işlevleri belirtmenizi sağlar. Bu bölümde, veri koleksiyonunu durdurmak ve başlatmak açıklar **performans Gezgini** ve **veri toplama denetimi** windows ve kendisi için profil oluşturma verilerini toplanır nesneleri sınırlandırmak nasıl.  
+# <a name="control-data-collection"></a>Veri toplamayı denetleme
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Oluşturma Araçları, bir performans oturumu sırasında profil oluşturma verilerinin ne zaman toplanacağını kontrol etmenizi ve profillenen işlevleri belirtmenizi sağlar. Bu bölümde, veri koleksiyonunu durdurmak ve başlatmak açıklar **performans Gezgini** ve **veri koleksiyonu denetimi** windows ve kendisi için profil oluşturma verilerinin toplandığı nesnelerin nasıl.  
   
 ## <a name="common-tasks"></a>Ortak görevler
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Profil oluşturma durdurup başlatın:** uygulama başlatıldığında bir uygulamayı veya iliştirebilirsiniz profil oluşturucu zaten çalışan bir işlemin profili başlayabilirsiniz. Hedef uygulama çalışırken, veri toplamayı duraklatabilir ve devam ettirebilirsiniz. Hedef uygulamayı kapatarak veya profil oluşturucuyu çalışan bir işlemden ayırarak bir profil oluşturma oturumunu sonlandırabilirsiniz. |-   [Nasıl yapılır: Başlangıç ve bitiş performans verileri toplama](../profiling/how-to-start-and-end-performance-data-collection.md)<br />-   [Nasıl yapılır: ekleme ve ayırma işlemleri çalıştırmanın performans araçları](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)<br />-   [Nasıl yapılır: duraklatma ve sürdürme performans verileri toplama](../profiling/how-to-pause-and-resume-performance-data-collection.md)|  
-|**Toplanan verileri sınırlamak için profil oluşturma Araçları'nı yapılandırın:** izleme metodunu kullanın çalıştırmalarının profil toplanan verileri sınırlamak için performans oturumu yapılandırma özelliklerini kullanabilirsiniz. Belirli .dll dosyalarını, ad alanlarını, sınıfları ve işlevleri dahil edebilir veya hariç tutabilirsiniz. Ayrıca, belirttiğiniz bir boyut eşiğini karşılamayan işlevleri çıkarabilirsiniz.|-   [Nasıl yapılır: belirli DLL'ler için araçları sınırlama](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)<br />-   [Nasıl yapılır: belirli işlevler için araçları sınırlama](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [Nasıl yapılır: hariç tutma veya kısa işlevleri izlemeden içerir](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)|  
+|**Başlatın ve profil oluşturmayı durdur:** Uygulama başlatıldığında bir uygulamanın veya profil oluşturucu zaten çalışan bir işleme iliştirilebilir profili başlayabilirsiniz. Hedef uygulama çalışırken, veri toplamayı duraklatabilir ve devam ettirebilirsiniz. Hedef uygulamayı kapatarak veya profil oluşturucuyu çalışan bir işlemden ayırarak bir profil oluşturma oturumunu sonlandırabilirsiniz. |-   [Nasıl Yapılır: Başlangıç ve bitiş performans verilerini toplama](../profiling/how-to-start-and-end-performance-data-collection.md)<br />-   [Nasıl Yapılır: Ekleme ve ayırma işlemleri çalıştırmak için performans araçları](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)<br />-   [Nasıl Yapılır: Duraklatma ve sürdürme performans verilerini toplama](../profiling/how-to-pause-and-resume-performance-data-collection.md)|  
+|**Toplanan verileri sınırlamak için profil oluşturma Araçları'nı yapılandırın:** Performans oturumu yapılandırma özelliklerini, şüpheli işlem yöntemini kullanan çalıştırmaları profil oluşturma çalışmasında toplanan verileri sınırlamak için kullanabilirsiniz. Belirli .dll dosyalarını, ad alanlarını, sınıfları ve işlevleri dahil edebilir veya hariç tutabilirsiniz. Ayrıca, belirttiğiniz bir boyut eşiğini karşılamayan işlevleri çıkarabilirsiniz.|-   [Nasıl Yapılır: Sınırı izlemeyi belirli DLL'ler](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)<br />-   [Nasıl Yapılır: Belirli işlevler için izlemeyi sınırı](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [Nasıl Yapılır: Hariç tutma veya kısa işlevleri izlemeden içerir](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)|  
   
 ## <a name="related-sections"></a>İlgili bölümler  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  

@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - SendAndReceiveReply şablon Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
 - System.ServiceModel.Activities.ReceiveReply.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22cdd114a11ff9d1b3b162009cc77d83aec1fd83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1bd37924a818fce26e3f3263aec691be66aee29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960491"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply Şablon Tasarımcısı
 
@@ -45,7 +44,7 @@ Kullanma hakkında daha fazla bilgi için **Gönder** yapılandırmak için tasa
 Aşağıdaki tabloda <xref:System.ServiceModel.Activities.ReceiveReply> özelliklerini ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri Özellikler Kılavuzu ' düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
 
-| Özellik adı | Gerekli | Kullanım |
+| Özellik Adı | Gerekli | Kullanım |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | İsteğe bağlı kolay adı <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik. ReceiveReplyForSend varsayılandır.<br /><br /> Ancak varsayılan olmayan bir değeri kullanımı kolay için <xref:System.Activities.Activity.DisplayName%2A> kesinlikle gerekli değildir, bu tür bir değer kullanmak en iyisidir. |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | Doğru | Başvuru <xref:System.ServiceModel.Activities.Send> etkinlik ile eşleştirilmiş <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik. Bu özellik olmamalıdır **null**. <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler birlikte istemcide bir istek/yanıt Mesajlaşma modeli model için kullanılır. Bu özellik belirten <xref:System.ServiceModel.Activities.Send> etkinlik eşleştirilmiştir. Tasarımcıda için otomatik olarak bağlı olduğundan bu özellik düzenlenemiyor <xref:System.ServiceModel.Activities.Send> oluşturduğunuz etkinlik <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik. |

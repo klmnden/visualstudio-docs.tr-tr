@@ -2,19 +2,18 @@
 title: Grafik Tanılama'ne genel bakış | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831384"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Genel Bakış
 Visual Studio *grafik tanılama* kaydetme ve ardından Direct3D uygulamalar oluşturma ve performans sorunları çözümleme araçları kümesidir. Grafik Tanılama, Windows bilgisayarınızda veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalarda kullanılabilir.  
@@ -53,7 +52,7 @@ Visual Studio *grafik tanılama* kaydetme ve ardından Direct3D uygulamalar olu�
 ### <a name="gpu-usage"></a>GPU Kullanımı  
  Grafik tanılama Direct3D uygulamanızın performansını da profilini oluşturabilirsiniz. Profil oluşturma verilerini grafik olaylarını tarafından kaydetme ayrıntılarını dengesiz çünkü bu kullanılacak çerçeveleri yakalamasını önler ayrı grafik Çözümleyicisi ile incelenir.  
   
- Bkz: [GPU kullanımı](gpu-usage.md) daha fazla bilgi için.  
+ Bkz: [GPU kullanımı](/visualstudio/profiling/gpu-usage) daha fazla bilgi için.  
   
 ### <a name="directx-control-panel"></a>DirectX denetim masası  
  DirectX denetim masası, DirectX'in davranış şeklini değiştirmek için kullanabileceğiniz bir DirectX bileşenidir; örneğin, DirectX çalışma zamanı bileşenlerinin hata ayıklama sürümünü etkinleştirebilir, raporlanan hata ayıklama iletilerinin türünü seçebilir ve daha düşük kapasiteli donanımlara öykünmek için belirli grafik donanımı yeteneklerinin kullanılmasına izin vermeyebilirsiniz. DirectX üzerinde bu düzeyde bir denetim DirectX uygulamanızda hata ayıklamanıza ve uygulamayı test etmenize yardımcı olabilir. DirectX denetim masasına Visual Studio'dan erişebilirsiniz.  

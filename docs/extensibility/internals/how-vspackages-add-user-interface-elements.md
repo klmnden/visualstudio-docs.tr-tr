@@ -1,9 +1,6 @@
 ---
 title: Nasıl VSPackages kullanıcı arabirimi öğeleri eklemesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962694"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage kullanıcı arabirimi öğelerini nasıl eklenir
 VSPackage örnek, menüleri ve araç çubukları için kullanıcı arabirimi (UI) öğeleri ekleyebilir ve araç penceresi, Visual Studio yoluyla *.vsct* dosya.  
@@ -140,7 +137,7 @@ priority="0x0100" type="Menu">
 #### <a name="commands"></a>Komutlar  
  IDE için sağlanan bir komut olarak tanımlanan bir [Button öğesi](../../extensibility/button-element.md) veya [Combos öğesi](../../extensibility/combo-element.md). Bir menü veya araç çubuğu üzerinde görünmesi için komut kendi üst öğesi olarak bir grup olmalıdır.  
   
-##### <a name="buttons"></a>Düğmeleri  
+##### <a name="buttons"></a>Düğmeler  
  Düğmeler tanımlanmış `Buttons` bölümü. Tüm menü öğesi, düğme veya tek bir komut çalıştırmak için bir kullanıcı tıkladığında başka bir öğenin bir düğme olarak kabul edilir. Bazı düğme türleri listesi işlevselliği de içerebilir. Düğmeleri aynı gerekli ve menüler olan isteğe bağlı öznitelikleri vardır ve ayrıca olabilir bir [Icon öğesi](../../extensibility/icon-element.md) GUID ve IDE'de düğmesi nesnesini temsil eden bir bit eşlem Kimliğini belirtir. Düğmeler ve onların öznitelikleri hakkında daha fazla bilgi için bkz: [Buttons öğesi](../../extensibility/buttons-element.md) belgeleri.  
   
  Düğme aşağıdaki örnekte önceki örnekte grubunun bir alt öğesidir ve IDE'de menü öğesi o grubun üst menüsünde görünür.  
@@ -185,7 +182,7 @@ priority="0x0100" type="Menu">
 </Combos>  
 ```  
   
-##### <a name="bitmaps"></a>Bit eşlemler  
+##### <a name="bitmaps"></a>Bit Eşlemler  
  Bir simge ile birlikte görüntülenir komutları içermelidir bir `Icon` kendi GUID ve Kimliği'ni kullanarak bir bit eşleme başvurduğu öğesi Her bir bit eşlem olarak tanımlanan bir [Bitmap öğesi](../../extensibility/bitmap-element.md) içinde `Bitmaps` bölümü. Öznitelikler için yalnızca gerekli bir `Bitmap` definition `guid` ve `href`, kaynak dosyaya işaret eder. Bir kaynak Şerit kaynak dosyası ise, bir **usedList** özniteliktir Ayrıca Şerit kullanılabilir görüntüleri listelemek için gerekli. Daha fazla bilgi için [Bitmap öğesi](../../extensibility/bitmap-element.md) belgeleri.  
   
 ### <a name="parenting"></a>Üst öğe oluşturma  

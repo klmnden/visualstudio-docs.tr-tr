@@ -1,8 +1,7 @@
 ---
-title: 'CA1038: Numaralandırıcıların türü kesin olarak belirtilmelidir'
+title: 'CA1038: Numaralandırıcılar kesin olarak belirtilmelidir'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22cc84a0cdc8d4fdb86f6890ae0ebd25eb65beb8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 426dbcd4116ee4ff52befbcbd8e9beea62e8cb72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954014"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Numaralandırıcıların türü kesin olarak belirtilmelidir
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Numaralandırıcılar kesin olarak belirtilmelidir
 
 |||
 |-|-|
@@ -58,7 +57,7 @@ ms.locfileid: "45545495"
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: Listelerin türü kesin olarak belirlenmiştir](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: Listeler kesin türdedir](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

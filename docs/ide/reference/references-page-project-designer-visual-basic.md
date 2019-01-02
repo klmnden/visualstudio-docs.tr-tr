@@ -2,7 +2,6 @@
 title: Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e1a81ef2eb22e9ccd67baf1b41145a354dbb4f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957416"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 
@@ -100,5 +99,5 @@ Erişim için bu düğmeye tıklayın **başvuru yolları** iletişim kutusu.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md)
-- [Nasıl Yapılır: İçeri Aktarılan Ad Uzaylarını Ekleme veya Kaldırma (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Nasıl yapılır: Ekleme veya kaldırma içeri aktarılan ad alanlarını (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports Deyimi (XML Ad Alanı)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821047"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
 
@@ -75,7 +74,7 @@ Yönergeleri birleştirmek için özel kod ekleyebilirsiniz:
 >
 > Yeni bir öğe veya yeni ilişki her zaman özel kodunuz tarafından işlendiğinden emin olmak istiyorsanız, tanımlama göz önünde bir `AddRule` gömme ilişkisinde ve `DeleteRule` öğenin etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
 
-## <a name="example-defining-an-emd-without-custom-code"></a>Örnek: bir EMD özel kod olmadan tanımlama
+## <a name="example-defining-an-emd-without-custom-code"></a>Örnek: Özel kod olmadan bir EMD tanımlama
 
 Aşağıdaki örnek, bir öğe ve bir bağlayıcı aynı anda var olan bir şekil araç kutusundan sürükleyip oluşturmasına olanak verir. Örneğin DSL tanımı için bir EMD ekler. Bu değişiklikten önce kullanıcıların araçları mevcut şekiller üzerine değil ancak diyagram üzerine sürükleyebilirsiniz.
 
@@ -91,7 +90,7 @@ Kullanıcılar ayrıca öğeleri diğer öğeler üzerine yapıştırabilirsiniz
 
    1.  İçinde **DSL Gezgini**, genişletme **alan sınıfları**. Sağ `ExampleElement` ve ardından **yeni öğe birleştirme yönergesinde ekleme**.
 
-   2.  Emin olun **DSL ayrıntıları** penceresi açıkken, böylece yeni EMD ayrıntılarını görebilirsiniz. (Menü: **görünümü**, **diğer Windows**, **DSL ayrıntıları**.)
+   2.  Emin olun **DSL ayrıntıları** penceresi açıkken, böylece yeni EMD ayrıntılarını görebilirsiniz. (Menü: **Görüntüleme**, **diğer Windows**, **DSL ayrıntıları**.)
 
 3. Ayarlama **dizin oluşturma sınıfı** hangi sınıfın öğelerin üzerine birleştirilebilir tanımlamak için DSL Ayrıntıları penceresinde `ExampleElement` nesneleri.
 
@@ -161,7 +160,7 @@ Bir EMD için özel kod ekleyerek daha karmaşık birleştirme davranışı tan�
 
 4.  Çözümü yeniden derleyin. Oluşturulan kod modelinden güncelleştirilecek çünkü bu normalden daha uzun sürer.
 
-     Bir yapı hatası bildirilen, benzer olacaktır: "Company.ElementMergeSample.ExampleElement içermiyor bir tanımı için CanMergeExampleElement..."
+     Bir yapı hatası bildirilen, benzer olacaktır: "Company.ElementMergeSample.ExampleElement bir için CanMergeExampleElement neobsahuje platnou definici..."
 
      Yöntemini uygulamalıdır `CanMergeExampleElement`.
 
@@ -208,7 +207,7 @@ Bir EMD için özel kod ekleyerek daha karmaşık birleştirme davranışı tan�
 
     3.  Modele dörtten fazla öğeleri eklemek için şu adımlardan herhangi birini kullanamazsınız doğrulayın. Tüm öğe birleştirme yönergesinde kullandıkları olmasıdır.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Örnek: Özel birleştirme kodu için bir EMD ekleme
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Örnek: Bir EMD için birleştirme özel kod ekleme
 
 Özel birleştirme kodu, kullanıcı bir araç sürüklediğinde veya bir öğenin üstüne yapıştırır ne tanımlayabilirsiniz. Özel bir birleştirme tanımlamak için iki yolu vardır:
 

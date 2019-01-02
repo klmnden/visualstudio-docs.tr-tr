@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947666"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
 
@@ -37,7 +36,7 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
 
     -   Veri kümesi veya varlık veri modeli.
 
-    -   WCF veri hizmeti, WCF hizmeti veya web hizmeti. Daha fazla bilgi için [nasıl yapılır: bir hizmetteki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   WCF veri hizmeti, WCF hizmeti veya web hizmeti. Daha fazla bilgi için [nasıl yapılır: Bir hizmetteki verilere bağlanma](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Nesneleri. Daha fazla bilgi için [Visual Studio'da nesne bağlama](bind-objects-in-visual-studio.md).
 
@@ -94,4 +93,4 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
 
 - [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF uygulamalarındaki ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)
-- [İzlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)
+- [İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md)

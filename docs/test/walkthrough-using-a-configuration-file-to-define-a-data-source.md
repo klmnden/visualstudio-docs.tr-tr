@@ -1,8 +1,7 @@
 ---
-title: 'İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma'
+title: 'İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840745"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
 Bu izlenecek yol içinde tanımlanan bir veri kaynağı kullanımını gösterir. bir *app.config* birim testi dosyası. Nasıl oluşturulacağını öğreneceksiniz bir *app.config* tarafından kullanılan bir veri kaynağı tanımlayan dosyası <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu izlenecek yolda gösterilen görevler aşağıdakileri içerir:
 
@@ -272,4 +271,4 @@ Artık bir *app.config* dosyasında tanımlanan, tanımlanan veri kaynaklarında
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Birim testi kod](../test/unit-test-your-code.md)
-- [Nasıl yapılır: bir veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)
+- [Nasıl Yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: özel metin işaretçileri oluştur | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Özel metin işaretçileri oluştur | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965226"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: özel metin işaretçileri oluşturma
+# <a name="how-to-create-custom-text-markers"></a>Nasıl Yapılır: Özel metin işaretçileri oluşturma
 Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak istiyorsanız, aşağıdaki adımları izlemelisiniz:  
   
 - Diğer araçları erişebilmesi yeni metin işaretçisi kaydedin.  
@@ -29,7 +26,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 - Diğer işlemler tarafından yapmak için kullanılabilecek bir hizmet oluşturma metin işaret kullanın.  
   
-  Bir bölge kodu bir metin işaretçisi uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md).  
+  Bir bölge kodu bir metin işaretçisi uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Özel işaret kaydetmek için  
   
@@ -66,7 +63,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 ## <a name="to-create-a-custom-text-marker"></a>Bir özel metin işaretçisi oluşturmak için  
   
-1.  Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> arabirimi.  
+1.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> arabirimini gerçekleştirin.  
   
      Bu arabirim, uygulamanız özel işaretçi türünüz görünümünü ve davranışını tanımlar.  
   
@@ -92,6 +89,6 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Nasıl yapılır: standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
- [Nasıl yapılır: uygulama, hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
- [Nasıl yapılır: metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+ [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
+ [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
+ [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)

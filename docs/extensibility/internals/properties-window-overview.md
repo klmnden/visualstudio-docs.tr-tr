@@ -1,9 +1,6 @@
 ---
 title: Özellikler penceresine genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42048c22498915cfc2d73e691ed49d5790193854
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3994c46d2786b86c01b75ee2d89a4e202a13847d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841066"
 ---
 # <a name="properties-window-overview"></a>Özellikler Penceresine Genel Bakış
 **Özellikleri** windows bulunan iki ana tür seçili nesnelerin özelliklerini görüntülemek için kullanılan pencere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Bu iki windows türleri şunlardır:  

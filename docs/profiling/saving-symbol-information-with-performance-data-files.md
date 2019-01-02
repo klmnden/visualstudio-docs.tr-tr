@@ -1,8 +1,6 @@
 ---
 title: Performans veri dosyalarıyla birlikte sembol bilgilerini kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4cc39f8e07ed0947bedc31ba39d74fc8cee742a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820338"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Performans veri dosyalarıyla kaydetme sembol bilgisi
 
@@ -64,5 +62,5 @@ VsPerfReport - packsymbols-summary: all filename.vsp
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Performans Araçları Verilerini Kaydetme ve Dışarı Aktarma](../profiling/saving-and-exporting-performance-tools-data.md)  
-[Nasıl Yapılır: Başvuru Pencereleri Sembol Bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
+[Nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
 [VSPerfReport](../profiling/vsperfreport.md)

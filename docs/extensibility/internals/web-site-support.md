@@ -1,9 +1,6 @@
 ---
 title: Web sitesi desteği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
@@ -13,30 +10,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3da310c6695598eef36998cc562f6d477eff29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83e7cb983ec850c0efc9d22f1dd6458c71bcdcb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824775"
 ---
-# <a name="web-site-support"></a>Web sitesi desteği
-Bir Web sitesi proje sistemi Web projeleri oluşturan bir proje sistemidir. Web projeleri, Web uygulamaları sırayla oluşturun. Bir Web sitesi projesini kod ilişkili her Web sayfası için bir yürütülebilir dosyası oluşturur. Başka bir yürütülebilir dosya kaynak kodu dosyalarından /App_Code klasöründe oluşturulur.  
+# <a name="web-site-support"></a>Web Sitesi Desteği
+Bir Web sitesi proje sistemi Web projeleri oluşturan bir proje sistemidir. Web projeleri sırayla Web uygulamaları oluşturun. Bir Web sitesi projesi kod ilişkili her bir Web sayfası için bir yürütülebilir dosya oluşturur. Ek yürütülebilir dosyalar /App_Code klasöründeki kaynak kodu dosyasından oluşturulur.  
   
- Web sitesi proje sistemleri, şablonları ve kayıt öznitelikleri varolan bir proje sistemine ekleyerek oluşturulur. Dili için IntelliSense sağlayıcısı özniteliklerden birini seçer. IntelliSense sağlayıcı uygulaması başvuruları işler ve önbelleğe alınmamış akıllı bir Web sayfası istendiğinde dil derleyici çağırır.  
+ Web sitesi proje sistemleri, varolan bir proje sistemine şablonları ve kaydı öznitelikleri ekleyerek oluşturulur. Bu öznitelikler dil için IntelliSense sağlayıcı seçer. IntelliSense sağlayıcı uygulaması başvuruları işler ve önbelleğe alınmamış akıllı bir Web sayfası istenen dil derleyicisini çağırır.  
   
- Web sayfaları derlemek için kullanılan dil derleyicisi ile kaydedilmelidir [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Kullanabileceğiniz [ \<derleyici > öğesi](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) aşağıdaki örnekteki gibi derleyici kaydetmek için Web.config dosyasında:  
+ Web sayfaları derlemek için kullanılan dil derleyici ile kaydedilmelidir [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)]. Kullanabileceğiniz [ \<derleyici > öğesi](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) Web.config dosyasında aşağıdaki örnekte olduğu gibi derleyici kaydetmek için:  
   
 ```  
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Web Sitesi Destek Şablonları](../../extensibility/internals/web-site-support-templates.md)  
- Yeni Web sitesi projeleri ve ilişkili öğeleri oluşturmak için kullanabileceğiniz şablonlarını listeler.  
+ Yeni Web sitesi projeleri ve ilişkili öğeleri oluşturmak için kullanabileceğiniz şablonları listeler.  
   
  [Web Sitesi Destek Öznitelikleri](../../extensibility/internals/web-site-support-attributes.md)  
- Bir Web sitesi projesine bağlanmak kayıt öznitelikleri gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
+ Bir Web sitesi projesine bağlanmak kaydı öznitelikleri gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Web Projeleri](../../extensibility/internals/web-projects.md)  

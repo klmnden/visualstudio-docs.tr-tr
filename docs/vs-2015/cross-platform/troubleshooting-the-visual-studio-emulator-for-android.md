@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c1d8310cb2585dfd2041ce25fd4301b557521911
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841349"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,7 +178,7 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
 
      - Güvenilir yürütme devre dışı bırak
 
-       Bu makalede daha fazla bilgi için bkz: Technet: Hyper-V: nasıl düzeltme BIOS hataları etkinleştirme Hyper-V'ye
+       Daha fazla bilgi için bu makaleye bakın: TechNet: Hyper-V: Hyper-V'yi etkinleştirme BIOS hataların nasıl düzeltileceğini
 
   5. En az 4 GB sistem belleği ve bunu diğer yoğun kaynak programlar ve süreçler tarafından Tüketilmekte olan değil, sahip olduğunuzdan emin olun.
 
@@ -197,7 +196,7 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
 
    Genel olarak, geliştiricilerin bu ürün Windows 8 ve Hyper-V ile uyumlu olacak şekilde, yazılım güncelleştirme kadar olacaktır.
 
-   Aşağıdaki ürünler için Windows 8 Uyumluluk yükseltme gerektirebilir: VirtualBox, sanal bilgisayar 7, VMWare, bazı VPN istemcileri yazılım güvenlik duvarları, Cisco VPN istemcileri ve diğer sanallaştırma sistemlerinin bazı sürümlerinde. Windows 8 ve Hyper-V ile uyumlu hale getirmek için yazılım yükseltmelerini teşvik etmek için sorgulanabilir sanallaştırma yazılımı geliştiricisi çalışın.
+   Aşağıdaki ürünler için Windows 8 Uyumluluk yükseltme gerektirebilir: VirtualBox, sanal bilgisayar 7, VMWare, bazı VPN istemcileri, yazılım güvenlik duvarları, Cisco VPN istemcileri ve diğer sanallaştırma sistemlerinin bazı sürümlerinde. Windows 8 ve Hyper-V ile uyumlu hale getirmek için yazılım yükseltmelerini teşvik etmek için sorgulanabilir sanallaştırma yazılımı geliştiricisi çalışın.
 
    Olarak bir **geçici çözüm**, tüm üçüncü taraf sürücüler ve Visual Studio ile iletişim kurmak için öykünücüsü tarafından kullanılan sanal ağ ile engelliyor uygulamalar devre dışı bırakabilirsiniz. Bu uygulamalar şunları içerebilir:
 
@@ -260,7 +259,7 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
 
   Bu sorunu çözmek için USB3 anakart BIOS ayarları devre dışı bırakın ve bilgisayarı yeniden başlatın. Daha sonra gigabayt, anakart ait BIOS için bir güncelleştirme yayımladı olup olmadığını denetleyin.
 
-  Daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın: [önyükleme hatası sonra gigabayt sistemlerinde Hyper-V rolünün yüklenmesi](https://support.microsoft.com/en-us/kb/2693144).
+  Daha fazla bilgi için aşağıdaki Bilgi Bankası makalesine bakın: [Önyükleme hatası sonra gigabayt sistemlerinde Hyper-V rolünün yüklenmesi](https://support.microsoft.com/en-us/kb/2693144).
 
 ##  <a name="ADB"></a> Visual Studio öykünücüsü için uygulama dağıtılmaya çalışılırken takılı veya öykünücü diğer IDE içinde hata ayıklama hedefi olarak görünmüyor
  Öykünücünün çalıştığından, ancak ADB (Android hata ayıklama köprüsü) bağlanması görünmez ya da (örneğin, Android Studio veya Eclipse) ADB kullanan Android araçları görünmüyor öykünücü için ADB nerede arar ayarlamak gerekebilir. Öykünücü, Android SDK'nızı temel konumunu tanımlamak için bir kayıt defteri anahtarını kullanır ve bu dizin altında \platform-tools\adb.exe dosyasını arar. Öykünücüsü tarafından kullanılan Android SDK yolu değiştirmek için:

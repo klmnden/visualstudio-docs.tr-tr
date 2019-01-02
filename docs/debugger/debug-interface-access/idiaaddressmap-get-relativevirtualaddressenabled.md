@@ -1,8 +1,6 @@
 ---
 title: Idiaaddressmap::get_relativevirtualaddressenabled | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a9048a3b0d4371d73f98f53645f8580405cd95c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939310"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Göreli sanal adreslerine (RVA) kullanılması ve hesaplama etkin olup olmadığını gösterir.  
@@ -27,7 +25,7 @@ Göreli sanal adreslerine (RVA) kullanılması ve hesaplama etkin olup olmadığ
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_relativeVirtualAddressEnabled (   
+HRESULT get_relativeVirtualAddressEnabled (   
    BOOL* pRetVal  
 );  
 ```  

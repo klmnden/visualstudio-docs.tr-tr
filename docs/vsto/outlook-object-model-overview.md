@@ -1,9 +1,6 @@
 ---
 title: Outlook nesne modeline genel bakış
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945359"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook nesne modeline genel bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilir. Outlook nesne modeline sınıflar ve kullanıcı arabirimi öğelerini temsil eden arabirim sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eder tüm uygulama <xref:Microsoft.Office.Interop.Outlook.Folder> nesne e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.  
@@ -35,7 +32,7 @@ ms.locfileid: "49941197"
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [ı: Outlook'u kullanma bir özel görev rapor oluşturmak için bunu nasıl?](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Bir özel görev rapor oluşturmak için Outlook kullanılır? ](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## <a name="access-objects-in-an-outlook-project"></a>Outlook projesinde nesnelere erişme  
  Outlook birçok nesne ile etkileşim sağlar. Nesne modeline etkili bir şekilde kullanmak için aşağıdaki üst düzey nesneleri ile ilgili bilgi sahibi olması gerekir:  
@@ -99,17 +96,17 @@ ms.locfileid: "49941197"
   
  Karşılık gelen Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox **gelen** Outlook'taki.  
   
- Varsayılan erişim gösteren bir örnek <xref:Microsoft.Office.Interop.Outlook.Folder> ve yeni bir <xref:Microsoft.Office.Interop.Outlook.Folder>, bkz: [nasıl yapılır: program aracılığıyla özel klasör öğeleri oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md).  
+ Varsayılan erişim gösteren bir örnek <xref:Microsoft.Office.Interop.Outlook.Folder> ve yeni bir <xref:Microsoft.Office.Interop.Outlook.Folder>, bkz: [nasıl yapılır: Program aracılığıyla özel klasör öğeleri oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md).  
   
 ### <a name="mailitem-object"></a>MailItem Nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.MailItem> Nesnesi, bir e-posta iletisini temsil eder. <xref:Microsoft.Office.Interop.Outlook.MailItem> nesneleri, genellikle klasörler gibi **gelen**, **Gönderilmiş öğeler**, ve **giden**. <xref:Microsoft.Office.Interop.Outlook.MailItem> Özellikler ve oluşturmak ve e-posta iletileri göndermek için kullanılan yöntemler sunar.  
   
- Bir e-posta iletisi oluşturmak nasıl gösteren bir örnek için bkz: [nasıl yapılır: program aracılığıyla bir e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
+ Bir e-posta iletisi oluşturmak nasıl gösteren bir örnek için bkz: [nasıl yapılır: Program aracılığıyla bir e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
   
 ### <a name="appointmentitem-object"></a>AppointmentItem nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Nesnesini gösteren bir toplantı, tek seferlik bir randevu veya yinelenen bir randevu veya toplantıya **Takvim** klasör. <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Nesne yanıtlama veya toplantı istekleri ve toplantı ayrıntılarını zaman ve konum gibi belirten özellikleri iletme gibi eylemler gerçekleştiren yöntemler içerir.  
   
- Randevu oluşturma işlemini gösteren bir örnek için bkz: [nasıl yapılır: program aracılığıyla toplantı isteği oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md).  
+ Randevu oluşturma işlemini gösteren bir örnek için bkz: [nasıl yapılır: Program aracılığıyla toplantı isteği oluşturma](../vsto/how-to-programmatically-create-a-meeting-request.md).  
   
 ### <a name="taskitem-object"></a>TaskItem nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> Nesnesi belirtilen bir zaman çerçevesi içinde gerçekleştirilecek bir görevi temsil eder. <xref:Microsoft.Office.Interop.Outlook.TaskItem> nesneleri yerleştirilir **görevleri** klasör.  
@@ -119,7 +116,7 @@ ms.locfileid: "49941197"
 ### <a name="contactitem-object"></a>ContactItem nesnesi  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>Nesnesini temsil eden bir kişi **kişiler** klasör. <xref:Microsoft.Office.Interop.Outlook.ContactItem> iletişim bilgileri, adres, e-posta adresi ve telefon numaraları gibi temsil ettikleri kişiler için çeşitli nesneleri içerir.  
   
- Yeni bir kişi oluşturulacağını gösteren bir örnek için bkz: [nasıl yapılır: program aracılığıyla Outlook Kişilerine bir giriş ekleyin](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Var olan bir kişi arama gösteren bir örnek için bkz [nasıl yapılır: program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
+ Yeni bir kişi oluşturulacağını gösteren bir örnek için bkz: [nasıl yapılır: Program aracılığıyla Outlook Kişilerine bir giriş ekleyin](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Var olan bir kişi arama gösteren bir örnek için bkz [nasıl yapılır: Program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
   
 ##  <a name="refdoc"></a> Outlook nesne modeli belgeleri kullanın  
  Outlook nesne modeli hakkında tam bilgi için Outlook birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.  
@@ -142,5 +139,4 @@ ms.locfileid: "49941197"
 |[Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)|Posta öğeleriyle görevleri nasıl gerçekleştireceğinizi gösteren konuları sağlar.|  
 |[Klasörlerle çalışma](../vsto/working-with-folders.md)|Klasörlerle görevleri nasıl gerçekleştireceğinizi gösteren konuları sağlar.|  
 |[Takvim öğeleriyle çalışma](../vsto/working-with-calendar-items.md)|Takvim öğeleriyle görevleri nasıl gerçekleştireceğinizi gösteren konuları sağlar.|  
-|[Nasıl yapılır: program aracılığıyla geçerli Outlook öğesini belirleme](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Geçerli klasör ve seçtiğiniz öğe hakkındaki bazı bilgileri adının nasıl görüntüleneceğini gösterir.|  
-  
+|[Nasıl yapılır: Program aracılığıyla geçerli Outlook öğesini belirleme](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Geçerli klasör ve seçtiğiniz öğe hakkındaki bazı bilgileri adının nasıl görüntüleneceğini gösterir.|  

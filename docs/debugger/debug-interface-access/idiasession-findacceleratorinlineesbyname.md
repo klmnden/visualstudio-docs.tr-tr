@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findAcceleratorInlineesByName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 240315fed330c72a8fe180056642c9aff0fb96aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a13400cab447f4122a88bfbcec1265ae8e7e2fd5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828101"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 Belirtilen satır içi işlev adına karşılık gelen satır içi çerçeveler için semboller numaralandırmasını döndürür.  
@@ -25,7 +23,7 @@ Belirtilen satır içi işlev adına karşılık gelen satır içi çerçeveler 
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
+HRESULT findAcceleratorInlineeLinesByName (   
    LPCOLESTR             name,  
    DWORD                 option,  
    IDiaEnumSymbols**     ppResult  

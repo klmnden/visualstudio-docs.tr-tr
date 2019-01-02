@@ -1,9 +1,6 @@
 ---
 title: IDebugCanStopEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f049648fcbd93d7ad7411a4dfeba8bbdb4431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5313595bd96b2176255822425d11776eedaedbe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942248"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-Bu arabirim, geçerli kod konumda durdurulup durdurulmayacağı oturum hata ayıklama Yöneticisi'ni (SDM) istemek için kullanılır.  
+Bu arabirim, geçerli kod konumda durdurmak mi oturum hata ayıklama Yöneticisi (SDM) istemek için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,30 +29,30 @@ IDebugCanStopEvent2 : IUknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) kaynak kod atlama desteklemek için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirimi uygulanan, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi).  
+ Hata ayıklama altyapısı (DE) kaynak kod içerisinde ilerlemeye desteklemek için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi).  
   
- Bu arabirim uygulaması SDM'ın çağrısı iletişim kurması gereken [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) hata ayıklama altyapısı. Örneğin, bu işleme iş parçacığında hata ayıklama altyapının iletiye gönderilen bir ileti ile yapılabilir veya bu arabirimi uygulayan nesne hata ayıklama altyapısı başvuru tutun ve hata ayıklama motoruna içine geçirilen bayrağı geri arama `IDebugCanStopEvent2::CanStop`.  
+ Bu arabirim uygulamasını SDM'ın çağrısı iletişim kurması gereken [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) hata ayıklama altyapısı. Örneğin, bu işleme iş parçacığı hata ayıklama altyapısının ileti gönderen bir ileti ile yapılabilir veya bu arabirimi uygulayan nesnenin bir başvuru için hata ayıklama altyapısı tutun ve geri yöntemlere geçirilen bayrağı ile hata ayıklama motorunda arama `IDebugCanStopEvent2::CanStop`.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu yöntem kodu yürütme ve DE devam etmek için DE sorulan her zaman atlama DE gönderebilirsiniz. Bu olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanacak programın eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
+ Bu yöntem DE, yürütme ve DE devam etmek için sorulan her zaman kod içerisinde ilerlemeye DE gönderebilirsiniz. Bu olay ile gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugCanStopEvent2`.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Bu olay nedeni alır.|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Ayıklanacak program veya bu olayı (ve gönderme durdurma nedenini açıklayan bir olay) konumunda Durdur yalnızca yürütme devam belirtir.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Bu olay konumunu açıklar belge bağlamını alır.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Bu olay konumunu açıklar kod bağlamını alır.|  
+|[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Bu olay nedenini alır.|  
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Hata ayıklanan programa veya bu olay (ve durdurma nedenini açıklayan bir olayı gönderme) konumunda Durdur yalnızca yürütme devam belirtir.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Bu olay konumunu tanımlayan belge bağlamını alır.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Bu olay konumunu tanımlayan kod bağlamı alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir işlev ve DE kullanıcı adımları hiçbir hata ayıklama bilgisi var. bulur veya hata ayıklama bilgileri var, ancak DE bu konumda görüntülenebilir kaynak kodunu bilmez DE bu arabirim gönderir.  
+ Bir işlev ve DE kullanıcı adımlarına bulur hiçbir hata ayıklama bilgisi yok veya hata ayıklama bilgisi var, ancak DE o konumda görüntülenebilen kaynak kodu bilemez, bu arabirim DE gönderir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

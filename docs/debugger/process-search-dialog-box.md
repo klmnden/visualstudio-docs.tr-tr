@@ -1,8 +1,6 @@
 ---
 title: İşlem arama iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process Search
@@ -12,42 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f133833114398ceb257fcceeaab7e7f4f5da2c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958071"
 ---
 # <a name="process-search-dialog-box"></a>İşlem Arama İletişim Kutusu
-Bulmak ve belirli bir işlemde düğümü seçmek için bu iletişim kutusunu kullanın [işlemleri Görünüm](../debugger/processes-view.md). Bu iletişim kutusunu görüntülemek için odağı taşımak bir **işlemleri** Görünümü penceresi. Ardından **bulma işlemi** gelen **arama** menüsü.  
+Bulmak ve belirli bir işlem düğümü seçmek için bu iletişim kutusunu kullanın [işlemler görünümü](../debugger/processes-view.md). Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir **işlemleri** Görünümü penceresi. Ardından **bulma işlemi** gelen **arama** menüsü.  
   
  Aşağıdaki ayarlar kullanılabilir:  
   
  **İşlem**  
  Aranacak işlem kimliği.  
   
- **Modülü**  
- Aranacak modülü dizesi.  
+ **Module**  
+ Aranacak modül dizesi.  
   
  **Arama yönü yukarı veya aşağı**  
- Arama ilk yönü.  
+ Search'ün ilk yönü.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [İşlemler görünümünde işlem arama](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Belirli bir işlemin işlemler görünümünde bulmak açıklanmaktadır.  
+ İşlemler görünümünde belirli bir işlem nasıl açıklar.  
   
  [İşlemler Görünümü](../debugger/processes-view.md)  
- Etkin işlemler ağaç görünümünü görüntüler.  
+ Etkin İşlem ağaç görünümünü görüntüler.  
   
  [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
- Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.  
+ Spy ++ ağaç görünümlerini windows, iletileri, süreçleri ve iş parçacıkları açıklar.  
   
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
- [İşlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md)  
- İşlemler görünümünde seçilen bir işlem özelliklerini görüntülemek için kullanılır.  
+ [İşlem Özellikleri İletişim Kutusu](../debugger/process-properties-dialog-box.md)  
+ İşlemler görünümünde seçilen işlem özelliklerini görüntülemek için kullanılır.  
   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
- Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.
+ Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümler içerir.

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831543"
 ---
 # <a name="structure-your-modeling-solution"></a>Modelleme çözümünüzün yapısını oluşturma
 
@@ -36,7 +35,7 @@ Orta veya büyük bir projede takım yapısı, yapıya uygulamanın temel alır.
 
 2. Mimari çözüm sizi ararız bir Visual Studio çözümü oluşturun. Bu çözüm, genel sistem tasarımı oluşturmak için kullanılır. Modelleri, ancak hiçbir kodu içerecek.
 
-   Bir bağımlılık diyagramı, bu çözüme ekleyin. Uygulamanız için seçtiğiniz mimari bağımlılık diyagram üzerinde çizin. Örneğin, diyagramda bu katmanlar ve aralarındaki bağımlılıkları gösterebilir: sunu; İş mantığı; ve verileri.
+   Bir bağımlılık diyagramı, bu çözüme ekleyin. Uygulamanız için seçtiğiniz mimari bağımlılık diyagram üzerinde çizin. Örneğin, diyagramda şu katmanları ve aralarındaki bağımlılıkları gösterebilir: Sunu; İş mantığı; ve verileri.
 
 4. Mimari bağımlılık diyagramda her katman için ayrı bir Visual Studio çözümü oluşturun.
 
@@ -76,7 +75,7 @@ Orta veya büyük bir projede takım yapısı, yapıya uygulamanın temel alır.
 
 1. Her katmanın çözümde mimari modelleme projesine ekleyin. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın, fareyle **Ekle**ve ardından **mevcut proje**. Tek bir modelleme projesi artık her bir çözümden erişilebilir: Mimari proje ve her katman için geliştirme projesi.
 
-2. Paylaşılan modeldeki her bir katman için paket oluşturma: içinde **Çözüm Gezgini**, modelleme projesini seçin. İçinde **UML Model Gezgini**, model kök düğümüne sağ tıklayın, fareyle **Ekle**ve ardından **paket**.
+2. Paylaşılan modeldeki her katman için bir paket oluşturun: İçinde **Çözüm Gezgini**, modelleme projesini seçin. İçinde **UML Model Gezgini**, model kök düğümüne sağ tıklayın, fareyle **Ekle**ve ardından **paket**.
 
    Her paket gereksinimleri ve ilgili katmanı tasarımını açıklayan diyagramları içerir.
 

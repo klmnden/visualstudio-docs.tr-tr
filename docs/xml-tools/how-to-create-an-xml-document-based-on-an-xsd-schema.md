@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: bir XSD şemasını temel alan bir XML belgesi oluşturma'
+title: 'Nasıl Yapılır: Bir XSD Şemasını Temel Alan XML Belgesi Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,44 +9,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820205"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl yapılır: bir XSD şemasını temel alan bir XML belgesi oluşturma
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl Yapılır: Bir XSD şemasını temel alan XML belgesi oluşturma
 
-**Örnek XML oluşturmak** özelliği XML Şeması (XSD) dosyasını temel alan bir örnek XML dosyası oluşturur.
+**Örnek XML oluşturmak** özelliği XML Şeması (XSD) dosyanız tabanlı bir örnek XML dosyası oluşturur.
 
  Aşağıdaki senaryolar için bu seçeneği kullanabilirsiniz:
 
--   Şemanızı çeşitli yapılardan kullanımını anlamak için.
+-   Çeşitli yapılar, şema kullanımını anlamak için.
 
--   Şema ne yaptığını onaylamak için bunu yapmak için tasarlanmıştır.
+-   Şema ne yaptığını onaylamak için bunu gerçekleştirmesi amaçlanmıştır.
 
-**Örnek XML oluşturmak** özelliği yalnızca genel öğeleri üzerinde kullanılabilir ve geçerli bir XML Şeması kümesi gerektirir.
+**Örnek XML oluşturmak** özelliği yalnızca genel öğeler üzerinde kullanılabilir ve geçerli bir XML şema kümesi gerektirir.
 
-Bu özellik genellikle geçerli XML belgelerini oluşturur. Şema bir veya daha fazlasını içeriyorsa, ancak örnek geçerli olmayabilir:
+Bu özellik, genellikle geçerli XML belgeleri oluşturur. Şema, bir veya daha fazlasını içeriyor, ancak örnek geçerli olmayabilir:
 
 -   `xs:key`, `xs:keyref`, Ve `xs:unique` kimlik kısıtlamaları.
 
--   `xs:pattern` yönü.
+-   `xs:pattern` modeller.
 
 -   Numaralandırmalar `xs:QName` türü.
 
 -   `xs:ENTITY`, `xs:ENTITIES`, ve `xs:NOTATION` türleri.
 
-Ayrıca, unutmayın `xs:base64Binary` içeriği yalnızca numaralandırma türü için şema oluşursa oluşturulmayacak.
+Ayrıca, `xs:base64Binary` içeriği yalnızca numaralandırma türü için şema oluşursa oluşturulur.
 
-## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD dosyasını temel alan bir XML örneği belgesi oluşturmak için
+## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD dosyasını temel alan bir XML örneği belge oluşturmak için
 
-1.  Adımları [nasıl yapılır: oluşturma ve bir XSD şema dosyası düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  İçinde [XML Şeması Explorer](../xml-tools/xml-schema-explorer.md), sağ `PurchaseOrder` genel öğesi. Seçin **örnek XML oluşturmak**.
+2.  İçinde [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md), sağ `PurchaseOrder` genel öğesi. Seçin **örnek XML oluşturmak**.
 
-     Bu seçenek, PurchaseOrder seçtiğinizde. *xml* dosya aşağıdaki örnek XML içeriği ile oluşturulan ve XML Düzenleyicisi'nde açılır:
+     Bu seçenek, PurchaseOrder seçtiğinizde. *xml* aşağıdaki örnek XML içeriği dosyasıyla oluşturulur ve XML Düzenleyicisi'nde açılır:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -78,4 +77,4 @@ Ayrıca, unutmayın `xs:base64Binary` içeriği yalnızca numaralandırma türü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XML verileri ile çalışma](../xml-tools/working-with-xml-data.md)
+- [XML verileriyle çalışma](../xml-tools/working-with-xml-data.md)

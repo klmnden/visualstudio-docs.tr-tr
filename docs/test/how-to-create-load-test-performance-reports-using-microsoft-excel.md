@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95f184628af5b56845f76d1c7279608b6826c151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826793"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: oluşturma yük testi başarım raporları kullanarak Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl Yapılır: Microsoft Excel kullanarak yük testi başarım raporları oluşturma
 
 İki veya daha fazla test sonucunu temel alan Microsoft Excel yük testi raporları oluşturabilirsiniz.
 
@@ -104,7 +103,7 @@ Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **
    - **Hata karşılaştırması -** iki çalıştırma ve yineleme sayısı arasında karşılaşılan hata türlerini karşılaştırır.
 
      > [!TIP]
-     > Daha iyi raporlar için çeşitli özellikler, daha zengin raporlara olanak tanıyan bir web performans testleri ve yük testleri de kullanılabilir. Sayfa istekleri raporlarda sunulan iki özelliğe sahiptir: hedef ve raporlama adı. Sayfa yanıt zamanı hedefe yönelik bildirilir ve raporlama adı URL'nin raporlarında yerine kullanılacak. Sayaç Kümelerini Yönet altında çalıştırma ayarları yük testinde özelliği bilgisayar etiketleri rapor makina adlarında sunulur. Bu rapor belirli bir makinenin rolünü tanımlamak kullanışlıdır.
+     > Daha iyi raporlar için çeşitli özellikler, daha zengin raporlara olanak tanıyan bir web performans testleri ve yük testleri de kullanılabilir. Sayfa istekleri raporlarda sunulan iki özelliğe sahiptir: Hedef ve raporlama adı. Sayfa yanıt zamanı hedefe yönelik bildirilir ve raporlama adı URL'nin raporlarında yerine kullanılacak. Sayaç Kümelerini Yönet altında çalıştırma ayarları yük testinde özelliği bilgisayar etiketleri rapor makina adlarında sunulur. Bu rapor belirli bir makinenin rolünü tanımlamak kullanışlıdır.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Excel kullanarak yük testi Eğilim raporları oluşturmak için
 
@@ -144,7 +143,7 @@ Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **
 9. Rapor raporda oluşturulan çeşitli Excel çalışma kitabı sekmeleri bağlantılara sahip olan bir içindekiler tablosu ile oluşturulur. Bağlantılar eğilim raporu için seçili sayaçları temel alır. 7. adımda seçtiğiniz varsayılan sayaçları bırakılırsa, örneğin, ardından raporun sunulan veri 7. adımda listelenen her sayaç için Excel'de ayrı sekmeler oluşturur. Her sayaç için oluşturulan veri, eğilim stili grafiklerde sunulur.
 
    > [!TIP]
-   > Daha iyi raporlar için çeşitli özellikler, daha zengin raporlara olanak tanıyan bir web performans testleri ve yük testleri de kullanılabilir. Sayfa istekleri raporlarda sunulan iki özelliğe sahiptir: hedef ve raporlama adı. Sayfa yanıt zamanı hedefe yönelik bildirilir ve raporlama adı URL'nin raporlarında yerine kullanılacak. Sayaç Kümelerini Yönet altında çalıştırma ayarları yük testinde özelliği bilgisayar etiketleri rapor makina adlarında sunulur. Bu rapor belirli bir makinenin rolünü tanımlamak kullanışlıdır.
+   > Daha iyi raporlar için çeşitli özellikler, daha zengin raporlara olanak tanıyan bir web performans testleri ve yük testleri de kullanılabilir. Sayfa istekleri raporlarda sunulan iki özelliğe sahiptir: Hedef ve raporlama adı. Sayfa yanıt zamanı hedefe yönelik bildirilir ve raporlama adı URL'nin raporlarında yerine kullanılacak. Sayaç Kümelerini Yönet altında çalıştırma ayarları yük testinde özelliği bilgisayar etiketleri rapor makina adlarında sunulur. Bu rapor belirli bir makinenin rolünü tanımlamak kullanışlıdır.
 
 ## <a name="net-framework-security"></a>.NET Framework güvenliği
 

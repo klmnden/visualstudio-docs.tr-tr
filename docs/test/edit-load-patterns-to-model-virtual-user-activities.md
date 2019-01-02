@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942102"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme
 
@@ -112,10 +111,10 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 
 |Görevler|İlişkili Konular|
 |-|-----------------------|
-|**Yük testiniz için ilk yük düzeni belirtme:** kullanarak yük testi oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, yük düzeni seçin.|-   [Yük düzeni değiştirme](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**Yük testiniz için yük düzeni düzenleme:** yük testinizi oluşturduktan sonra yük düzeni içindeki düzenleyebilirsiniz **Yük Testi Düzenleyicisi**.|-   [Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Sanal kullanıcı yük testi senaryosuna olup olmadığını belirten web önbellek verilerini içermelidir:** değiştirebileceğiniz **yeni kullanıcıların yüzdesini** yük testi, önbelleğe alma web benzetim şeklini etkileyen özelliği sanal kullanıcı için bir web tarayıcısı tarafından gerçekleştirilmesi.|-   [Nasıl yapılır: web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Adım eğrisi süresi Adım yük düzeni için belirtme:** **adım eğrisi süresi** özelliği artırma bir adımdan bir sonrakine (örneğin 100 kullanıcıdan 200 kullanıcıya) artışın hemen yerine için sağlar.|-   [Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Yük testiniz için ilk yük düzeni belirtme:** Kullanarak bir yük testi oluşturduğunuzda **Yeni Yük Testi Sihirbazı**, yük düzeni seçin.|-   [Yük düzeni değiştirme](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Yük testiniz için yük düzeni düzenleme:** Yük testinizi oluşturduktan sonra yük düzeni içindeki düzenleyebilirsiniz **Yük Testi Düzenleyicisi**.|-   [Nasıl Yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Sanal kullanıcı yük testi senaryosuna olup olmadığını belirten web önbellek verilerini içermelidir:** Değiştirebileceğiniz **yeni kullanıcıların yüzdesini** özelliğini sanal kullanıcı için bir web tarayıcısı tarafından gerçekleştirilen yük testi taklit eden web önbelleğe alma yöntemini etkiler.|-   [Nasıl Yapılır: Web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Adım eğrisi süresi Adım yük düzeni için belirtme:** **Adım eğrisi süresi** özelliği artırma bir adımdan bir sonrakine (örneğin 100 kullanıcıdan 200 kullanıcıya) artışın hemen yerine için sağlar.|-   [Nasıl Yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Yük düzeni değiştirme
 
@@ -128,7 +127,7 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
  Yük düzeni, etkin bir yük testi ve yeni kullanıcıların eklendiği oranı sırasında sanal kullanıcıların sayısını belirtir. Üç kullanılabilir düzen arasından seçim yapabilirsiniz: adım düzeni, sabit ve hedef temelli. Daha fazla bilgi için [yük desenleriyle bir yük testi senaryosunda sanal kullanıcı sayısını belirtin](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
-> Bir yük testi eklentisi kullanarak yükleme özelliklerini programlı olarak da değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
+> Bir yük testi eklentisi kullanarak yükleme özelliklerini programlı olarak da değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
 
 
 ### <a name="to-change-the-load-pattern"></a>Yük Düzeni değiştirmek için
@@ -158,5 +157,5 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
-- [Nasıl yapılır: web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [Nasıl yapılır: Web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
 - [Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

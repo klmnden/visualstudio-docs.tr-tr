@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: yer işareti denetimlerini yeniden boyutlandırma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Yer işareti denetimlerini yeniden boyutlandırma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942456"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>Nasıl yapılır: yer işareti denetimlerini yeniden boyutlandırma
+# <a name="how-to-resize-bookmark-controls"></a>Nasıl Yapılır: Yer işareti denetimlerini yeniden boyutlandırma
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Word.Bookmark> Microsoft Office Word belgesine eklediğinizde denetim. Ayrıca daha sonraki bir zamanda boyutlandırabilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924843"
   
    Bir yer işaretinin konumunu ve boyutunu önemli bir değişiklik varsa, bu yararlıdır.  
   
-  Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler. Daha fazla bilgi için [nasıl yapılır: Word belgelerine yer işareti ekleme denetimleri](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler. Daha fazla bilgi için [nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -97,5 +94,3 @@ ms.locfileid: "49924843"
  [Nasıl yapılır: NamedRange denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-namedrange-controls.md)   
  [Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-listobject-controls.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
-title: 'ASP.NET hata ayıklama: Sistem gereksinimleri | Microsoft Docs'
-ms.custom: ''
+title: 'ASP.NET hata ayıklaması: Sistem gereksinimleri | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 71b6cbc3f523b8f21b21b0e69b1d6e45e23acb0c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 334f2887b85cf0c58ace27cfca65984b29067246
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824044"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>ASP.NET Hata Ayıklama: Sistem Gereksinimleri
+# <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
 Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hata ayıklama senaryoları:  
   
 - Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:  
@@ -46,7 +44,7 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
   
  Adını [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi senaryo hata ayıklama ve IIS sürümüne göre farklılık gösterir. Daha fazla bilgi için [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Kullanıcı değiştirebilir, hesap [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] altında çalışan IIS çalıştıran sunucuda machine.config dosyasının düzenleyerek çalışan işlemi. Bunu yapmanın en iyi yolu kullanmaktır **Internet Information Services (IIS) Yöneticisi'ni**. Daha fazla bilgi için [nasıl yapılır: çalışan işlem altında bir kullanıcı hesabı çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Kullanıcı değiştirebilir, hesap [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] altında çalışan IIS çalıştıran sunucuda machine.config dosyasının düzenleyerek çalışan işlemi. Bunu yapmanın en iyi yolu kullanmaktır **Internet Information Services (IIS) Yöneticisi'ni**. Daha fazla bilgi için [nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Değiştirirseniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kendi kullanıcı hesabı altında çalışacak şekilde çalışan işlemi IIS çalıştıran sunucuda yönetici olmanız gerekmez.  
   
@@ -55,4 +53,4 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Nasıl Yapılır: Bir Kullanıcı Hesabı Altında Çalışan İşlemini Çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [Nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

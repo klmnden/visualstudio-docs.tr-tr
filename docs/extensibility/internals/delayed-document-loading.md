@@ -1,9 +1,6 @@
 ---
 title: Gecikmeli belge yüklemesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940368"
 ---
 # <a name="delayed-document-loading"></a>Gecikmeli belge yüklemesi
 Bir kullanıcı bir Visual Studio çözümü yeniden açana, ilişkili belgelerin çoğu hemen yüklü değil. Belge pencere çerçevesi başlatma bekleyen durumda oluşturulur ve çalıştırılan Belge tablosu (RDT) (bir saplama çerçeve olarak adlandırılır) bir yer tutucu belge yerleştirilir.  
@@ -59,7 +56,7 @@ Bir belge tam olarak başlatıldığında başlatan RDT olaya abone olarak bir b
 - Aksi takdirde, abone olabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>.  
   
 
- Aşağıdaki örnek, bir kuramsal belge erişim senaryo: bir Visual Studio uzantısı istediği açık belgeler hakkında bazı bilgiler görüntülemek, düzenleme örneği için kilit sayısı ve belge verilerini hakkında bir şey. Belgeleri kullanarak RDT numaralandırır <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, sonra çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> düzenleme kilit sayısı ve belge verilerini almak için her belge için. Belge başlatma bekleyen durumda ise, belge verileri isteyen, gereksiz yere yeniden başlatılmasına neden olur.  
+ Aşağıdaki örnek, bir kuramsal belge erişim senaryodur: Bir açık belgeler hakkında bazı bilgiler görüntülenecek uzantı istediği VisualStudio, örneği için Düzen kilit sayısı ve belge verilerini hakkında bir şey. Belgeleri kullanarak RDT numaralandırır <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>, sonra çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> düzenleme kilit sayısı ve belge verilerini almak için her belge için. Belge başlatma bekleyen durumda ise, belge verileri isteyen, gereksiz yere yeniden başlatılmasına neden olur.  
   
  Bir belgeye erişme daha verimli bir şekilde kullanmaktır <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> düzenleme kilit sayacını alın ve ardından <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> belge başlatılmış olup olmadığını belirlemek için. Bayrakları dahil etmezseniz <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, belge zaten başlatılmış ve belge verilerini ile isteyen <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> gereksiz sıfırlamaları neden olmaz. Bayrakları dahil etmezseniz <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>, uzantıyı belge başlatılana kadar belge verileri isteyen kaçınmanız gerekir. Bu başlatma olarak algılanabilir `OnAfterAttributeChange(Ex)` olay işleyicisi.  
   

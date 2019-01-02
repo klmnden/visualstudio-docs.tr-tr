@@ -3,7 +3,6 @@ title: IntelliTrace kullanarak görünüm önceki uygulama durumu
 description: Anlık görüntülerini alabilir ve anlık görüntülerle IntelliTrace geri adım görüntüleme hakkında bilgi edinin
 ms.custom: seodec18
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939985"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Visual Studio'da IntelliTrace geri adım atmayı kullanarak önceki uygulama durumlarını İnceleme
 
@@ -112,7 +111,7 @@ Genel Adımlama performansı üzerindeki etkisini, uygulamaya bağlıdır. Bir a
   * Alternatif olarak: 
     1. Visual Studio yükleyicisinden masaüstü için VC++ 2015.3 v140 araç seti (x86, x64) bileşenini yükleyin.
     2. Hedef uygulamayı derleyin.
-    3. Komut satırından, editbin aracını ayarlamak için kullanın. `Largeaddressaware` hedef yürütülebilir için bayrak. Örneğin, (yol güncelleştirdikten sonra) Bu komutu kullanabilirsiniz: "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+    3. Komut satırından, editbin aracını ayarlamak için kullanın. `Largeaddressaware` hedef yürütülebilir için bayrak. Örneğin, (yol güncelleştirdikten sonra), bu komutu kullanabilirsiniz: "C:\Program dosyaları (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
     4. Hata ayıklamayı başlatmak için basın **F5**. Artık, hata ayıklama adımlarında ve kesme noktalarında anlık görüntü alınır.
 
        > [!Note]

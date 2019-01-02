@@ -1,8 +1,6 @@
 ---
 title: Office çözümlerinde uygulama ve dağıtım bildirimleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e26b0ed3f9f02de223f19789416c8dce50182d3
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 24650d2cb4cbed3a5b4c4f1ee02e395e7b8c2988
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828569"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office çözümlerinde uygulama ve dağıtım bildirimleri
   Bir uygulama bildirimi bulun ve kendi derlemeleri güncelleştirmek için bir Office çözümü tarafından kullanılan bilgileri sağlayan bir XML dosyasıdır. Bir uygulama bildirimi, derlemeler ve uygulama bildirimi en güncel sürümünü bulmak için gereken bilgileri sağlar sunucuda depolanan bir XML dosyası olan bir dağıtım bildirimi ile kullanılabilir.

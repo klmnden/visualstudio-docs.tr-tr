@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_issafebuffers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ae68e11669b336d26bb34704861a1a6fe30287
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb8ff4b0477a4d70cebc42fb99e17c09ac37e062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946376"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Dosyaların konumudur yönergesi güvenli bir arabellek için kullanılıp kullanılmayacağını belirten bir bayrak alır. Şu durumlarda kullanın [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) ayarlanır `SymTagFunction`.  
@@ -27,7 +25,7 @@ Dosyaların konumudur yönergesi güvenli bir arabellek için kullanılıp kulla
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_isSafeBuffers(   
+HRESULT get_isSafeBuffers(   
    BOOL* pRetVal)  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_isSafeBuffers(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857127"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Program Kodunda Modelde Gezinme ve Modeli Güncelleştirme
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  Renk ve bu yöntemi kullanarak bağlayıcıların kullanıma sunulan diğer özellikleri de ayarlayabilirsiniz.
 
 ### <a name="use-transactions"></a>İşlemleri kullanma
- Şekiller ve bağlayıcılar diyagramları olan alt türlerini <xref:Microsoft.VisualStudio.Modeling.ModelElement> ve Store Canlı. Bu nedenle değişiklikleri için yalnızca bir işlem içinde yapmanız gerekir. Daha fazla bilgi için [nasıl yapılır: modeli güncelleştirmek için kullanım işlemleri](../modeling/how-to-use-transactions-to-update-the-model.md).
+ Şekiller ve bağlayıcılar diyagramları olan alt türlerini <xref:Microsoft.VisualStudio.Modeling.ModelElement> ve Store Canlı. Bu nedenle değişiklikleri için yalnızca bir işlem içinde yapmanız gerekir. Daha fazla bilgi için [nasıl yapılır: Modeli güncelleştirmek için işlemleri kullanma](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Belge görünüm ve belge verilerini
  ![Standart diyagram türleri sınıf diyagramı](../modeling/media/dsldiagramsanddocs.png)
@@ -488,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Etki Alanına Özgü bir Dilde Doğrulama](../modeling/validation-in-a-domain-specific-language.md)
 - [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Nasıl yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [Nasıl yapılır: Modeli güncelleştirmek için işlemleri kullanma](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Değişikliklere Yanıt Verme ve Değişiklikleri Yayma](../modeling/responding-to-and-propagating-changes.md)

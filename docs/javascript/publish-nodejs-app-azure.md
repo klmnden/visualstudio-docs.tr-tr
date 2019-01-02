@@ -1,9 +1,7 @@
 ---
 title: Linux App Service'te bir Node.js uygulaması yayımlama
 description: Node.js uygulamalarını azure'da bir Linux App Service için Visual Studio'da oluşturulan yayımlayabilirsiniz.
-ms.custom: ''
 ms.date: 11/1/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846262"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
 
@@ -31,7 +29,7 @@ Linux App Service Node.js uygulaması (aksine, Windows uygulama Node.js uygulama
 
 Bu öğreticide Visual Studio için Node.js araçları ile yüklenen bir şablon başlayarak bir Node.js uygulaması oluşturma, kod github'daki depoya itme ve gelen dağıtabilirsiniz, böylece bir Azure App Service Azure web portalı üzerinden sağlama işlemini gösterir. GitHub deposu. Azure uygulama hizmeti sağlama ve yerel bir Git deposundan kod göndermek için komut satırı kullanmak için bkz. [Node.js uygulaması oluşturma](/azure/app-service/containers/quickstart-nodejs).
 
-Bu öğreticide, şunların nasıl yapılır:
+Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kodunuz için bir GitHub deposu oluşturma
@@ -84,7 +82,7 @@ Visual Studio için GitHub'ı ayarlamak için:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Azure'da bir Linux App Service oluşturma
 
-1. Oturum [Azure portalında](https://portal.azure.com).
+1. [Azure Portal](https://portal.azure.com)’da oturum açın.
 
 2. Seçin **uygulama hizmetleri** solda, hizmetler listesinden ve ardından **Ekle**.
 

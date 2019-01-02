@@ -1,8 +1,6 @@
 ---
-title: Pencereler sekmesi, ileti seçenekleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
+title: Windows sekmesi, ileti seçenekleri iletişim kutusu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Windows
@@ -12,38 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad738a03b63284abc9ad2d922a51f140228e4ed7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 407b7c1c28d4232988bb36f8c1333197cd2dc08f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827185"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Pencereler Sekmesi, İleti Seçenekleri İletişim Kutusu
-Kullanım **Windows** listelenen iletileri kapsamını ayarlamak için sekmesini [iletiler görünümünü](../debugger/messages-view.md). Görüntülenecek [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md), seçin **günlük iletilerini** gelen **Spy** menüsü.  
+Kullanım **Windows** listelenen iletileri kapsamını belirlemek için sekmesinde [iletiler görünümünü](../debugger/messages-view.md). Görüntülenecek [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md), seçin **günlük iletilerini** gelen **Spy** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **Windows** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **Windows** sekmesinde:  
   
  **Bulucu Aracı**  
- Bir pencereyi seçmek için kullanılan sürükle ve bırak aracıdır.  
+ Bir pencere seçmek için kullanılan sürükle ve bırak aracı.  
   
  **Spy ++ Gizle**  
- Ana Spy ++ penceresi kaldırır ve bırakır **MessageOptions** iletişim kutusu diğer uygulamalarınızı en üstünde görünür.  
+ Spy ++ sonuçların kaldırır ve çıktığında **MessageOptions** iletişim kutusu, diğer uygulamalar üzerinde görünür.  
   
  **Ana penceresi**  
- Seçilen ve en yakın üst penceresinde iletileri görüntüler.  
+ Seçilen pencere ve ilk üst öğe penceresinin iletileri görüntüleyin.  
   
  **Alt pencere**  
- Seçilen pencere ve iç içe alt pencereleri dahil olmak üzere tüm alt öğe pencerelerinden için iletileri görüntüler.  
+ Seçilen pencere ve iç içe geçmiş alt öğe pencerelerini de dahil olmak üzere tüm alt öğe pencerelerinden iletileri görüntüleyin.  
   
- **İş parçacığı Windows**  
- Seçilen pencere ve aynı iş parçacığı tarafından sahip olunan tüm windows için iletileri görüntüler.  
+ **Aynı iş parçacığının Windows**  
+ Seçilen pencere ve aynı iş parçacığı tarafından sahip olunan tüm windows iletilerini görüntüler.  
   
- **Aynı işlemi Windows**  
- Seçilen pencere ve aynı işlem tarafından sahip olunan tüm windows için iletileri görüntüler.  
+ **Aynı işlemin Windows**  
+ Seçilen pencere ve aynı işleme ait tüm windows iletilerini görüntüler.  
   
- **Tüm Windows sisteminde**  
- Tüm windows iletilerini görüntüleyin.  
+ **Tüm Windows Sistem**  
+ Tüm windows iletilerini görüntüler.  
   
  **Ayarları varsayılan olarak Kaydet**  
- Yeni ileti akışı windows için yukarıdaki ayarları kaydedin. Bu ayarlar, ayrıca Spy ++ çıkarken kaydedilir.
+ Yeni ileti akışı windows için önceki ayarları kaydedin. Bu ayarlar, ayrıca Spy ++ çıkarken kaydedilir.

@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 8d8b5ac6beb6cfb7b40f3f09fded3fef365652a4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ddbc8a221cd883c3f30a583a1c1f03430c5f00ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825509"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Projeleri Visual Studio için Azure Araçları'nın güncel sürümüne yükseltme
 ## <a name="overview"></a>Genel Bakış
@@ -33,7 +32,7 @@ Yükseltmek istediğinizi belirtin veya bir proje otomatik olarak yükseltilir, 
 * Azure önbelleği bir veya daha fazla proje rolleri barındırılıyorsa bir proje yükseltildiğinde bazı özellikler hizmet yapılandırma (.cscfg dosyası) ve hizmet tanımı (.csdef dosyası) değiştirilir. Azure önbellek NuGet paketini projeye kullanıyorsa, proje paketi en son sürümüne yükseltilir. Web.config dosyasını açın ve istemci yapılandırması, yükseltme işlemi sırasında düzgün şekilde tutulan doğrulamanız gerekir. Azure önbellek istemci derlemelerine başvurular NuGet paketi kullanmadan dts'e eklediyseniz, bu derlemeler güncelleştirilmez; Ayrıca, yeni sürümleri bu başvuruları el ile güncelleştirmeniz gerekir.
 
 > [!IMPORTANT]
-> F # projeleri için böylece bu derlemelerin yeni sürümlerini oldukları Azure derlemelere başvuruları el ile güncelleştirmelisiniz.
+> İçin F# projeleri, böylece bu derlemelerin yeni sürümlerini oldukları Azure derlemelere başvuruları el ile güncelleştirmeniz gerekir.
 > 
 > 
 
@@ -44,4 +43,3 @@ Yükseltmek istediğinizi belirtin veya bir proje otomatik olarak yükseltilir, 
     **Uygulama** sekmesi, projeyle ilişkili Araçlar sürümü gösterir. Azure Araçları'nın geçerli sürümü varsa, proje zaten yükseltildi. Hangi sekmesini gösteren daha araçları daha yeni bir sürümünü yüklediyseniz bir **yükseltme** düğmesi görünür.
 3. Seçin **yükseltme** Araçları'nın geçerli sürümüne bir projeyi yükseltmesine düğmesi.
 4. Projeyi oluşturmak ve ardından API değişikliklerden kaynaklanan hataları çözün. Kodunuz için yeni sürümü değiştirme hakkında daha fazla bilgi için özel API belgelerine bakın.
-

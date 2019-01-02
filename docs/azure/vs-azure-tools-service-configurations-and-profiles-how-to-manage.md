@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 1b520edc52c21d3edfc03b7e501a838eabe775ff
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: bfd24092d2f6cf3ff28236fc1dd76ba1d2404d87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821681"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Hizmet yapılandırmalarını ve profillerini yönetme
 ## <a name="overview"></a>Genel Bakış
@@ -45,7 +44,7 @@ Ayrıca açabilirsiniz **yapılandırmaları yönetme** rolün özellik sayfalar
    
     **Hizmet yapılandırmalarını Yönet** iletişim kutusu görüntülenir.
 2. Hizmet yapılandırmasını silmek için silmek için istediğiniz yapılandırmayı seçin **adı** listeleyin ve ardından **Kaldır**. Bu yapılandırmayı silmek istediğinizi doğrulamak için bir iletişim kutusu görüntülenir.
-3. Seçin **Sil**.
+3. **Sil**’i seçin.
    
      Hizmet yapılandırma dosyası, Çözüm Gezgini'nde bir Azure projesi kaldırılır.
 
@@ -99,4 +98,3 @@ Sihirbazı ilk kez çalıştırdığınızda, bir varsayılan profili oluşturul
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Azure Visual Studio projenizden diğer bölümlerini yapılandırma hakkında bilgi edinmek için [bir Azure projesi yapılandırma](http://go.microsoft.com/fwlink/p/?LinkID=623075)
-

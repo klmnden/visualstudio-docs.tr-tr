@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: 3B modelin Pivot noktasını değiştirme'
+title: 'Nasıl Yapılır: 3B modelin Pivot noktasını değiştirme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8c66d7b16451a2ee3e545b4737b0ecd12c47d413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822310"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Nasıl yapılır: 3B modelin pivot noktasını değiştirme
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Nasıl Yapılır: 3B modelin pivot noktasını değiştirme
 
 Bu makalede değiştirmek için Model Düzenleyicisi'ni kullanmayı gösteren *pivot noktası* 3B modeli. Pivot noktası matematik nesnenin döndürme ve ölçeklendirme merkezini tanımlayan alanında noktasıdır.
 
@@ -27,7 +26,7 @@ Kaynak 3B modelin pivot noktası değiştirerek tanımlayabilirsiniz.
 
 Emin olun **özellikleri** penceresi ve **araç kutusu** görüntülenir.
 
-1.  Başlangıç makalesinde bir gibi mevcut bir 3B model ile [nasıl yapılır: temel 3B model oluşturma](../designers/how-to-create-a-basic-3-d-model.md).
+1.  Başlangıç makalesinde bir gibi mevcut bir 3B model ile [nasıl yapılır: Temel 3B model oluşturma](../designers/how-to-create-a-basic-3-d-model.md).
 
 2.  Pivot modu girin. Üzerinde **Model Düzenleyicisi modu** araç seçin **Pivot modu** pivot modunu etkinleştirmek için düğme. Bir kutu çevresinde görünen **Pivot modu** Model Düzenleyicisi artık pivot modunda olduğunu belirtmek için düğme. Pivot modu, dünya alanındaki nesne yapısını yerine nesnenin pivot noktası çeviri gibi işlemleri etkiler.
 

@@ -1,8 +1,6 @@
 ---
-title: Arayan Aranan görünümü | Microsoft Docs
-ms.custom: ''
+title: Arayan-Aranan görünümü | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
@@ -17,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 973c65927e3732cff44ab8eecb684f3c75af8614
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f3e349437ddf785ae8ec57b4625cb97f4427b57f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830043"
 ---
 # <a name="callercallee-view"></a>Arayan/Aranan görünümü
-Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir:  
+Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil bilgilerini görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir:  
   
- **Geçerli işlevi** Orta Kılavuz ve bunun görüntülenen bilgi seçili işlevi için profil oluşturmayı gösterir. Değerler, toplanan tüm işlev çağrıları profil Çalıştır içerir.  
+ **Geçerli işlev** Orta Kılavuz ve bunun görüntülenen bilgi seçili işlev için profil oluşturmayı gösterir. Değerler, toplanan tüm işlev çağrıları profil oluşturma çalışması içerir.  
   
- **Geçerli işlevini çağırdı işlevleri** üst kılavuzunda görüntülenir ve seçilen (geçerli) işlevinin arayan (üst) işlevi gelen çağrıları tarafından oluşturulan değerlerin sayısını gösterir.  
+ **Geçerli işlevi çağırmış işlevler** üst kılavuz görüntülenir ve çağıran (üst) işlevi'öğesinden gelen çağrılar tarafından oluşturulan değerleri seçili (geçerli) işlevinin sayısını gösterir.  
   
- **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz ve bunun görüntülenen alt işlevi geçerli bir işlev tarafından çağrıldığında seçili işlevinin bilgi Aranan (alt) işlevleri için profil oluşturmayı gösterir.  
+ **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz ve bunun görüntülenen geçerli işlev tarafından alt işlev çağrıldığında çağrılan (alt) işlevleri için seçili işlev bilgileri profil oluşturma gösterilmektedir.  
   
- Arayan/Aranan görünümü içinde kullanılabilir sütunlar verileri toplamak için kullanılan profil yöntemine (örnekleme veya araçları) bağlıdır ve .NET bellek verileri profil toplanmış çalıştırın.  
+ Çağıran/çağrılan Görünümü'nde kullanılabilir olan sütunlarda veri toplamak için kullanılan profil oluşturma yöntemine (örnekleme veya Araçlar) bağlıdır ve .NET bellek verileri profil oluşturma çalışmasında toplanan açmasa da Çalıştır.  
   
- Diğer iki bölümden görünümü içinde listelenen işlevleri herhangi biri çift tıklatarak rapor görünümü orta bölümünde geçerli işlevi olması için farklı bir işlevi seçebilirsiniz. Rapor görünümü değişiklikleri yansıtacak şekilde otomatik olarak güncelleştirilir.  
+ Rapor görünümü Orta kısmındaki geçerli işlevin herhangi bir görünümün diğer iki bölümü listelenen işlevlerin çift tıklayarak gereken farklı işlevi seçebilirsiniz. Rapor görünümü, değişiklikleri yansıtacak şekilde otomatik olarak güncelleştirilir.  
   
- Sütun adları tıklayarak verileri sıralayabilirsiniz. Arayan/Aranan görünümü ek sütunlar eklenebilir. Daha fazla bilgi için bkz: [nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
+ Sütun adları tıklayarak verileri yeniden sıralayabilirsiniz. Ek sütunları çağıran/çağrılan görünümü eklenebilir. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Arayan/Aranan görünümü - örnekleme verileri](../profiling/caller-callee-view-sampling-data.md)   

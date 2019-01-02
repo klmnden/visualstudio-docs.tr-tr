@@ -3,19 +3,18 @@ title: R için Uzak çalışma alanları
 description: Nasıl uzak R çalışma alanlarını ayarlayın ve Visual Studio'dan bağlanabilir.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837790"
 ---
 # <a name="set-up-remote-workspaces"></a>Uzak çalışma alanlarını ayarlayın
 
@@ -171,13 +170,13 @@ R kodu çalıştırmak için Uzak bilgisayar gibi yüklü R yorumlayıcıya sahi
 
 Uzak bilgisayarda çalışan R services ile Ayrıca kullanıcı hesaplarını oluşturmak için güvenlik duvarı kuralları ayarlamanıza, Azure ağı yapılandırma ve SSL sertifikası yapılandırma.
 
-1. Kullanıcı hesapları: Uzak bilgisayar erişen her kullanıcı için hesapları oluşturun. Ya da standart (ayrılıklı olmayan) yerel kullanıcı hesaplarını oluşturabilir veya R server bilgisayarınızın etki alanınızla birleştirin ve uygun güvenlik gruplarına ekleme `Users` güvenlik grubu.
+1. Kullanıcı hesapları: İçin Uzak bilgisayar erişen her kullanıcı hesapları oluşturun. Ya da standart (ayrılıklı olmayan) yerel kullanıcı hesaplarını oluşturabilir veya R server bilgisayarınızın etki alanınızla birleştirin ve uygun güvenlik gruplarına ekleme `Users` güvenlik grubu.
 
-1. Güvenlik duvarı kuralları: varsayılan olarak, `R Host Broker` 5444 numaralı TCP bağlantı noktasını dinler. Bu nedenle, Windows Güvenlik duvarı kuralları için gelen ve giden trafiği etkin olduğundan emin olun (giden paketler ve benzer senaryoları yüklemek için gerekli değildir).  R Hizmetleri yükleyicisi bu kurallar yerleşik Windows Güvenlik Duvarı için otomatik olarak ayarlar. Bir üçüncü taraf güvenlik duvarı kullanıyorsanız, bağlantı noktası 5444 ancak açın `R Host Broker` el ile.
+1. Güvenlik duvarı kuralları: Varsayılan olarak, `R Host Broker` 5444 numaralı TCP bağlantı noktasını dinler. Bu nedenle, Windows Güvenlik duvarı kuralları için gelen ve giden trafiği etkin olduğundan emin olun (giden paketler ve benzer senaryoları yüklemek için gerekli değildir).  R Hizmetleri yükleyicisi bu kurallar yerleşik Windows Güvenlik Duvarı için otomatik olarak ayarlar. Bir üçüncü taraf güvenlik duvarı kullanıyorsanız, bağlantı noktası 5444 ancak açın `R Host Broker` el ile.
 
-1. Azure yapılandırması: Uzak bilgisayardan Azure sanal makinede ise, bağlantı noktası 5444 gelen trafik için de, Windows Güvenlik duvarını bağımsız olarak Azure ağı içinde açın. Ayrıntılar için bkz [ağ güvenlik grubu ile ağ trafiğini filtreleme](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) Azure belgeleri.
+1. Azure yapılandırması: Azure'da bir sanal makine uzak bilgisayarın olması durumunda, Windows Güvenlik duvarını bağımsız olan gelen trafiği Azure de ağ içinde 5444 numaralı bağlantı noktasını açın. Ayrıntılar için bkz [ağ güvenlik grubu ile ağ trafiğini filtreleme](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) Azure belgeleri.
 
-1. R konak aracısı yüklemek için hangi SSL sertifikası bildirmek: sertifikanın bir Intranet sunucusunda yüklüyorsanız, sunucunuzun tam etki alanı adı, NetBIOS adıyla aynı olduğundan emin olma olasılığı yüksektir. Bu durumda, hiçbir şey yoktur yüklenen varsayılan sertifika olarak yapmak için gerekir.
+1. R konak aracısı yüklemek için hangi SSL sertifikası bildirin: Sertifika bir Intranet sunucusunda yüklüyorsanız, sunucunuzun tam etki alanı adı NetBIOS adı ile aynı olduğunu olasıdır. Bu durumda, hiçbir şey yoktur yüklenen varsayılan sertifika olarak yapmak için gerekir.
 
     Ancak, sertifikanızın (örneğin, bir Azure VM) bir Internet'e yönelik sunucuya yüklüyorsanız, Internet'e yönelik sunucunun FQDN'sini hiçbir zaman NetBIOS adı ile aynı olduğu için sunucunuzun tam etki alanı adını (FQDN) kullanın.
 

@@ -2,7 +2,6 @@
 title: Menüleri ve araç çubuklarını özelleştirme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
@@ -29,14 +28,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b22309f75e9ffd8a134af1d5ddafacb6d060f100
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940407"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl yapılır: menüleri ve Visual Studio araç çubuklarını özelleştirme
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl Yapılır: Menüleri ve Visual Studio araç çubuklarını özelleştirme
 
 Visual Studio yalnızca ekleyerek ve araç çubuklarını ve menü çubuğundaki menüleri kaldırma, aynı zamanda ekleyerek ve herhangi bir araç veya menü komutları kaldırma özelleştirebilirsiniz.
 
@@ -81,7 +80,7 @@ Visual Studio yalnızca ekleyerek ve araç çubuklarını ve menü çubuğundaki
         Ayrıca, bir araç çubuğunu, ana yerleştirme alanında herhangi bir konuma taşımak için sol kenarından sürükleyebilirsiniz.
 
         > [!NOTE]
-        > Kullanılabilirliğini ve erişilebilirliğini araç çubuklarının geliştirme konusunda daha fazla bilgi için bkz. [nasıl yapılır: ayarlama IDE erişilebilirlik seçeneklerini](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Kullanılabilirliğini ve erişilebilirliğini araç çubuklarının geliştirme konusunda daha fazla bilgi için bkz. [nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Bir menü veya araç çubuğunu özelleştirme</a>
 

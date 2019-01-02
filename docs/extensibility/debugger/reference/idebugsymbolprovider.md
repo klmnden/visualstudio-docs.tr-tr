@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de77e30f0e9f52af10eef1757048a078d6d4a583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 419712760d6920874fa89e0da80cc1529f767f1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840375"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-Bu arabirim simgeler ve türleri, alanlar olarak döndüren sağlayan bir simge sağlayıcısını temsil eder.  
+Bu arabirim sembollere ve türlere, alanları olarak döndürme sağlayan bir sembol sağlayıcısını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,10 +29,10 @@ IDebugSymbolProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bir simge sağlayıcısı simgesi sağlamak ve bir ifade değerlendiricisi bilgileri yazın bu arabirimi uygulamalıdır.  
+ Sembol sağlayıcısı sembol sağlayın ve ifade değerlendiricisi bilgi yazmak için bu arabirimi uygulamalıdır.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim COM'ın kullanarak elde `CoCreateInstance` işlevi (yönetilmeyen simgesi sağlayıcıları) veya yönetilen kod derlemesi ve bu derlemesinde bilgilere dayanarak simgesi sağlayıcı örneği uygun yükleyerek. Hata ayıklama altyapısı ifade değerlendiricisi birlikte çalışmak için simge sağlayıcısı başlatır. Bu arabirim başlatmasını bir yaklaşım için bkz.  
+ Bu arabirim, COM'ın kullanarak elde edilen `CoCreateInstance` işlevi (yönetilmeyen sembol sağlayıcıları) veya yönetilen bir kod derlemesi ve bu derlemede bulunan bilgilere dayanarak sembol sağlayıcısı örnekleme uygun yükleniyor. Hata ayıklama altyapısı ifade değerlendiricisi ile birlikte çalışmak için Sembol sağlayıcısı oluşturur. Bu arabirim örnekleme bir yaklaşım için örneğe bakın.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugSymbolProvider`.  
@@ -46,29 +43,29 @@ IDebugSymbolProvider : IUnknown
 |`Uninitialize`|Kullanım dışı. Kullanmayın.|  
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Hata ayıklama adresi içeren alanı alır.|  
 |`GetField`|Kullanım dışı. Kullanmayın.|  
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Bir belge konumunu bir dizi halinde hata ayıklama adresleri eşler.|  
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Bir belge bağlamı hata ayıklama adresleri bir diziye eşler.|  
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Hata ayıklama adresi bir belge bağlamına eşler.|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Hata ayıklama adresindeki Kodu derlemek için kullanılan dili alır.|  
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Hata ayıklama adresi bir belge konumu dizisine eşler.|  
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Bir belge bağlamına bir hata ayıklama adresleri dizisine eşler.|  
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Bir hata ayıklama adresi bir belge bağlamına eşler.|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Hata ayıklama adresten Kodu derlemek için kullanılan dili alır.|  
 |`GetGlobalContainer`|Kullanım dışı. Kullanmayın.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Tam yöntem adını temsil eden alanını alır.|  
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Bir tam sınıf adını temsil eden sınıf alan türü alır.|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Temsil eden bir tam yöntemi ad alanını alır.|  
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Tam nitelikli sınıf adınız temsil eden sınıf alan türünü alır.|  
 |[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Hata ayıklama adresiyle ilişkili ad alanları için bir numaralandırıcı oluşturur.|  
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Sembol adını bir simge türü eşler.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Belirli hata ayıklama adresi yöntemine aşağıdaki hata ayıklama adresini alır.|  
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Sembol adı için bir simge türü eşler.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Bir yöntemde belirli hata ayıklama adresi aşağıdaki hata ayıklama adresi alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim belge konumlar hata ayıklama adreslere ve eşler.  
+ Bu arabirim, hata ayıklama adreslere ve belge konumları eşler.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: sh.h  
+ Üstbilgi: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte, (hata ayıklama altyapısı bu değer bilmeniz gerekir) GUID'sine verilen simgesi sağlayıcı örneği gösterilmektedir.  
+ Bu örnekte, sembol sağlayıcısı (hata ayıklama altyapısı bu değer bilmeniz gerekir) GUID'sine verilen örneği gösterilmektedir.  
   
 ```cpp  
 // A debug engine uses its own symbol provider and would know the GUID  

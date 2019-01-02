@@ -2,19 +2,18 @@
 title: C/C++ için birim testleri yazma
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840888"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -73,7 +72,7 @@ Sonra birim sınamanız *.cpp* ekleyin bir `#include` test etmek istediğiniz t�
 ### <a name="write-test-methods"></a>Test yöntemleri yazın
 
 > [!NOTE]
-> Bu bölüm, C/C++ için Microsoft birim testi çerçevesi için söz dizimini gösterir. Burada belgelenmektedir: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test belgeleri için bkz. [Google Test öncü](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Boost.Test için bkz: [Boost Test kitaplığı: birim testi çerçevesi](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Bu bölüm, C/C++ için Microsoft birim testi çerçevesi için söz dizimini gösterir. Burada belgelenmiştir: [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API başvuru](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test belgeleri için bkz. [Google Test öncü](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Boost.Test için bkz: [Boost Test kitaplığı: Birim testi çerçevesi](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 *.Cpp* dosyası test projenize bir saptama sınıfı ve kodu test yazma ilişkin bir örnek olarak tanımlanan yöntemi vardır. İmzaları yöntemleri gelen bulunabilir hale TEST_CLASS ve TEST_METHOD makroları kullandığını unutmayın **Test Gezgini** penceresi.
 

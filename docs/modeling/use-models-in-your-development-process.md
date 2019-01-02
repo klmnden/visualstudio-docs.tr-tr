@@ -2,7 +2,6 @@
 title: Geliştirme sürecinizde modelleri kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -11,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832824"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 
-Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yardımcı olmak için bir model kullanabilirsiniz. Bir model, sisteminizin çalıştığı dünyanın görselleştirin, kullanıcıların ihtiyaçlarını açıklamak, sisteminizin mimarisini tanımlayın, kod çözümleme ve kodunuzu gereksinimleri karşıladığından emin olun yardımcı olabilir. Bkz: [kanal 9 videosu: mimariyi modelleme aracılığıyla geliştirmek](http://go.microsoft.com/fwlink/?LinkID=252078).
+Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yardımcı olmak için bir model kullanabilirsiniz. Bir model, sisteminizin çalıştığı dünyanın görselleştirin, kullanıcıların ihtiyaçlarını açıklamak, sisteminizin mimarisini tanımlayın, kod çözümleme ve kodunuzu gereksinimleri karşıladığından emin olun yardımcı olabilir. Bkz: [kanal 9 Video: Mimariyi modelleme aracılığıyla geliştirmek](http://go.microsoft.com/fwlink/?LinkID=252078).
 
 Visual Studio'nun hangi sürümlerinin her model türünü desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -133,7 +132,7 @@ Farklı türlerdeki diyagram, farklı düzeylerde soyutlama tasarım açıklamak
 
 |**Kategori**|**Bağlantılar**|
 |-|-|
-|**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif) [videoları MSDN Nasıl Yaparım: oluşturma ve kullanma UML modellerini ve diyagramları (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım videolar: Oluşturma ve UML modellerini ve diyagramları (Visual Studio 2010 Ultimate) kullanın](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Forumları**|- [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Bloglar**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Mimari Araç Kullanımı Kılavuzu](../modeling/visual-studio-architecture-tooling-guidance.md)|

@@ -1,8 +1,6 @@
 ---
 title: Geçerli sekme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964da1521852d942490c09b83135c62f6be3ed9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964740"
 ---
 # <a name="current-tab"></a>Geçerli sekme
-Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (varsa) olan en yakın zaman çizelgesi geçerli seçim noktaya CPU iş parçacığı kesimi seçtiyseniz.  Bu durumda, seçim noktası siyah ok veya yukarıdaki zaman çizelgesi düzeltme işareti ile temsil edilir. Engelleme kesimi seçildiğinde, hiçbir yürütme olduğundan şapka görüntülenmez. Ancak, kesim hala vurgulanır ve çağrı yığını görüntülenir.  
+Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (varsa) olan geçerli seçimi noktası Zaman Çizelgesi'nde en yakın bir CPU iş parçacığı segment seçtiyseniz.  Bu durumda, seçimi noktası bir siyah ok ya da giriş işaretini zaman çizelgesinin üzerindeki tarafından temsil edilir. Bir engelleme segmentini seçildiğinde hiçbir yürütme olduğundan giriş işaretini görüntülenmez. Ancak, kesim hala vurgulanır ve çağrı yığını görüntülenir.  
   
- **Geçerli** sekmesi ayrıca DirectX etkinlik kesimleri, işaretçileri ve g/ç erişimi hakkında bilgileri görüntüler.  DirectX etkinlik kesimine yönelik DMA paketleri donanım sıranın işlenme biçimi hakkında bilgi görüntülenir.  İçin işaretçileri, açıklama ve işaret türü hakkında bilgi görüntülenir.  G/ç erişimi için dosya ve okuma veya yazılan bayt sayısı hakkında bilgiler görüntülenir.  
+ **Geçerli** sekmesi ayrıca, DirectX etkinliği kesimleri, işaretçileri ve g/ç erişimi hakkındaki bilgileri görüntüler.  DirectX etkinliği kesimine yönelik donanım kuyruk tarafından işlenen DMA paket yolu hakkında bilgi görüntülenir.  İşaretçileri için açıklama ve işaret türü hakkında bilgi görüntülenir.  G/ç erişimi için dosya ve okunan veya yazılan bayt sayısı hakkında bilgiler görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

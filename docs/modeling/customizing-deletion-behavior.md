@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940959"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 Genellikle bir öğeyi silme ilgili öğeleri de silinmesine neden olur. Tüm ilişkiler bağlı ve herhangi bir alt öğe silindi. Bu davranış adlı *yayma Sil*. Örneğin ek ilgili öğeler silinir düzenlemek delete yayma özelleştirebilirsiniz. Program kodunu yazarak silme yayma model durumuna bağlı yapabilirsiniz. Ayrıca, yanıt bir silme işlemi için başka değişiklik neden olabilir.
@@ -140,7 +139,7 @@ partial class MusicLibDeleteClosure
 
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> öğe silindiğinde çağırılır. Böylece gerekirse geri alma gerçekleştirilebilir, ancak diğer öğelerden bağlantısı kesilmişse ve kaldırılmasını CLR yığınında kalır `store.ElementDirectory`. İlişki için roller hala eski rol oyuncuları başvuru.`IsDeleted` geçerlidir.
 
-3. Kullanıcının bir öğenin oluşturduktan sonra geri çağırır ve önceki bir silme işlemi Yinele için tekrarlandığında OnDeleting ve OnDeleted adı verilir. Kullanım `this.Store.InUndoRedoOrRollback` bu gibi durumlarda mağazası öğeleri güncelleştirme önlemek için. Daha fazla bilgi için [nasıl yapılır: modeli güncelleştirmek için kullanım işlemleri](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. Kullanıcının bir öğenin oluşturduktan sonra geri çağırır ve önceki bir silme işlemi Yinele için tekrarlandığında OnDeleting ve OnDeleted adı verilir. Kullanım `this.Store.InUndoRedoOrRollback` bu gibi durumlarda mağazası öğeleri güncelleştirme önlemek için. Daha fazla bilgi için [nasıl yapılır: Modeli güncelleştirmek için işlemleri kullanma](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Örneğin, son alt şarkı silindiğinde aşağıdaki kod, albüm siler:
 

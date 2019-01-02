@@ -1,8 +1,6 @@
 ---
 title: ClickOnce uygulamalarının güvenliğini sağlama | Microsoft Docs
-ms.custom: ''
 ms.date: 02/17/2017
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a49bf9cbf2c43cd7692592b53b9aca2b256313
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944278"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce uygulamalarının güvenliğini sağlama
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, kod korumalı kaynaklara ve işlemlere sahip olan erişimini sınırlamaya yardımcı olması için .NET Framework kod erişim güvenliği sınırlamalarına tabidir. Bu nedenle, yazma için kod erişim güvenliği etkilerini anlamanız önemli olduğu, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaların uygun şekilde. Uygulamalarınız erişim için Internet ve Intranet gibi tam güven veya kısmi bölgeler kullanabilir.  
@@ -40,14 +38,14 @@ ms.locfileid: "39080346"
 |Ağ dosya paylaşımından yükleyin|Yerel Intranet bölgesi|  
 |CD-ROM'dan yükleyin|Tam Güven|  
   
- Varsayılan izinler uygulamanın özgün sürümüyle dağıtılan konumu temel alır; uygulama güncelleştirmeleri de bu izinleri devralır. Uygulama Web veya ağ konumundan güncelleştirmeleri denetlemek için yapılandırılmış ve daha yeni bir sürüm varsa, özgün yükleme tam güven izinleri yerine Internet ve Intranet bölgesi için izinleri alabilir. Kullanıcıların uyarılmasını önlemek için, Sistem Yöneticisi belirli bir uygulama yayımcısını güvenilir kaynak olarak tanımlayan bir ClickOnce dağıtım ilkesi belirtebilir. Bu ilkenin dağıtılmış olduğu bilgisayarlar için, izinler otomatik olarak verilecek ve kullanıcı uyarılmayacaktır. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Güvenilir uygulama dağıtımını yapılandırmak için, sertifika makine veya kuruluş düzeyinde yüklenebilir. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamaları için bir istemci bilgisayara güvenilir yayımcı ekleme](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ Varsayılan izinler uygulamanın özgün sürümüyle dağıtılan konumu temel alır; uygulama güncelleştirmeleri de bu izinleri devralır. Uygulama Web veya ağ konumundan güncelleştirmeleri denetlemek için yapılandırılmış ve daha yeni bir sürüm varsa, özgün yükleme tam güven izinleri yerine Internet ve Intranet bölgesi için izinleri alabilir. Kullanıcıların uyarılmasını önlemek için, Sistem Yöneticisi belirli bir uygulama yayımcısını güvenilir kaynak olarak tanımlayan bir ClickOnce dağıtım ilkesi belirtebilir. Bu ilkenin dağıtılmış olduğu bilgisayarlar için, izinler otomatik olarak verilecek ve kullanıcı uyarılmayacaktır. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Güvenilir uygulama dağıtımını yapılandırmak için, sertifika makine veya kuruluş düzeyinde yüklenebilir. Daha fazla bilgi için [nasıl yapılır: Güvenilen bir yayımcı ClickOnce uygulamaları için bir istemci bilgisayara ekleme](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Kod erişim güvenliği ilkeleri  
  Uygulama izinlerini ayarlar tarafından belirlenir [ \<trustInfo > öğesi](../deployment/trustinfo-element-clickonce-application.md) uygulama bildiriminin öğesi. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projenin ayarlarına dayanarak bu bilgiyi otomatik olarak oluşturduğu **güvenlik** özellik sayfası. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, sadece istediği özel izinler verilir. Örneğin, dosya erişiminin tam güven izinlerini gerektirdiği yerde uygulama tam güven izinleri isterse, uygulamaya tam güven izinleri değil de sadece dosya erişim izni verilir. Geliştirirken, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması emin olmanız uygulamanız için gereken belirli izinleri istemek. Çoğu durumda, uygulamanızı kısmi güvenle sınırlamak için Internet veya yerel Intranet bölgelerini kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Uygulamanız özel izinleri gerektiriyorsa, özel bir bölge oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Uygulamanın dağıtıldığı bölge için varsayılan izin kümesinin parçası olmayan bir izni dahil etme, son kullanıcının güncelleme ve yükleme zamanında iznin verilmesi için uyarılmasına sebep olur. Kullanıcıların uyarılmasını önlemek için, sistem yöneticisi belirli bir uygulama yayımcısını güvenilir kaynak olarak tanımlayan bir ClickOnce dağıtım ilkesi belirtebilir. Bu ilkenin dağıtılmış olduğu bilgisayarlar üzerinde, izinler otomatik olarak verilecek ve kullanıcı uyarılmayacaktır.  
   
- Geliştirici olarak, uygulamanızın uygun izinlerle çalıştığından emin olmak sizin sorumluluğunuzdur. Uygulama çalışma zamanı sırasında bir bölge dışında izinler isterse, güvenlik özel durumu ortaya çıkabilir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hedef güvenlik bölgesinde uygulamanızda hata ayıklamak sağlar. ve güvenli uygulamalar geliştirme üzerine Yardım sağlar. Daha fazla bilgi için [nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Geliştirici olarak, uygulamanızın uygun izinlerle çalıştığından emin olmak sizin sorumluluğunuzdur. Uygulama çalışma zamanı sırasında bir bölge dışında izinler isterse, güvenlik özel durumu ortaya çıkabilir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hedef güvenlik bölgesinde uygulamanızda hata ayıklamak sağlar. ve güvenli uygulamalar geliştirme üzerine Yardım sağlar. Daha fazla bilgi için [nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Kod erişimi güvenliği ve ClickOnce hakkında daha fazla bilgi için bkz: [ClickOnce uygulamaları için kod erişimi güvenliği](../deployment/code-access-security-for-clickonce-applications.md).  
   
@@ -68,7 +66,7 @@ ms.locfileid: "39080346"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Varsayılan olarak, sorgu dizesi bağımsız değişkenleri devre dışıdır. Öznitelik etkinleştirmek için `trustUrlParameters` uygulamanın dağıtım bildiriminde ayarlanmalıdır. Bu değer arasında ayarlanabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] MageUI.exe gelen ve giden. Etkinleştirme geçirme hakkında ayrıntılı adımlar için sorgu dizeleri, bkz: [nasıl yapılır: çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Varsayılan olarak, sorgu dizesi bağımsız değişkenleri devre dışıdır. Öznitelik etkinleştirmek için `trustUrlParameters` uygulamanın dağıtım bildiriminde ayarlanmalıdır. Bu değer arasında ayarlanabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] MageUI.exe gelen ve giden. Etkinleştirme geçirme hakkında ayrıntılı adımlar için sorgu dizeleri, bkz: [nasıl yapılır: Çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Bir komut satırı veya veritabanı için olan sorgu dizesi aracılığıyla elde edilen bağımsız değişkenleri güvenli oldukları konusunda emin olmadan geçirmeyin. Güvenli olmayan bağımsız değişkenler rasgele komutları çalıştırarak uygulamanızı yönetmek için kötü amaçlı kullanıcılara izin verebilecek veritabanı ve komut satırı kaçış karakterlerini içeren dizelerdir.  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
@@ -15,34 +12,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d9038663bd74b5dabeda92d8b6b9e4e31d092de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939972"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Bu yöntem, bağlantı noktası sağlayıcı bağlantı noktaları (bunları diske yazarak) hata ayıklayıcı çağırmaları arasında kalıcı olup olmadığını belirler.  
+Bu yöntem, bağlantı noktası sağlayıcısı bağlantı noktası (bunları diske yazarak) hata ayıklayıcı çağrıları arasında kalıcı olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  Yok.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `S_OK` bağlantı noktaları kalıcı değilse veya `S_FALSE` bağlantı noktaları kalıcı belirtmek için.  
+ `S_OK` bağlantı noktalarını kalıcı ise veya `S_FALSE` bağlantı noktaları kalıcı belirtmek için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bağlantı noktası sağlayıcı bağlantı noktalarını devam edebilir, bu da kaldırıldığı zaman bunu ve bir kez daha örneği oluşturulduğunda bunları yeniden.  
+ Bağlantı noktası sağlayıcısı bağlantı noktası ederse, kaldırıldığında Bunu yapmak ve sonra bunları yeniden başlatıldığında yeniden gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

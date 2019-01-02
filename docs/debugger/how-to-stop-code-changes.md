@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: kod değişikliklerini durdurma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Kod değişikliklerini durdurma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843261"
 ---
-# <a name="how-to-stop-code-changes"></a>Nasıl Yapılır: Kod Değişikliklerini Durdurma
+# <a name="how-to-stop-code-changes"></a>Nasıl Yapılır: Kod değişikliklerini durdurma
 Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi durdurabilirsiniz.  
   
 > [!CAUTION]

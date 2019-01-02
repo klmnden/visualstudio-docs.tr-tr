@@ -1,12 +1,11 @@
 ---
-title: 'CA1502: aşırı karmaşıklıktan kaçının | Microsoft Docs'
+title: 'CA1502: Aşırı karmaşıklıktan kaçının | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3873f71343f11895989ba4d37bb0cc837bfb0db0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964899"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Aşırı karmaşıklıktan kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,6 +98,3 @@ ms.locfileid: "49890588"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_sizeInUdt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9a3e9e8cf1b1b931164ebb9f089eb69895945b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 52c99386bc319d02b8d2735d3714d9c06312cee0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961289"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
-Kullanıcı tanımlı bir tür üyesi boyutunu alır.  
+Kullanıcı tanımlı bir tür üyesi VHD'nin boyutunu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,7 +32,7 @@ HRESULT get_sizeInUdt(
  [out] Bir işaretçi bir `DWORD` üye boyutunu belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

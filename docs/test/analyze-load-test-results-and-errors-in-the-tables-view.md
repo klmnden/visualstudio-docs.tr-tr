@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962642"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Yük testi sonuçlarını ve hatalarını Yük Testi Çözümleyicisinin Tablo görünümünde çözümleyin
 
@@ -55,8 +54,8 @@ Aşağıdaki tabloda, yük testi çalışmaları çözümlemek için kullanılab
 |Tablo adı|Açıklama|
 |-|-|
 |Hatalar|Yük testi çalıştırması sırasında oluşan hataların listesini görüntüler. Daha fazla bilgi için [hataları tablosu](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) bu konuda, ve [Çözümle yük testi sonuçları](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Sayfaları|Yük testi çalıştırması sırasında erişilen sayfalarının bir listesini görüntüler. Yalnızca bir yük testi tamamlandıktan sonra bu tabloya bazı veriler kullanılabilir. Daha fazla bilgi için [nasıl yapılır: web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
-|İstekleri|Bir yük testi sırasında verilen tek tek isteklerin ayrıntılarını görüntüler. Bu, tüm HTTP isteklerini ve resimler gibi bağımlı istekleri içerir. Daha fazla bilgi için [Requests tablosuna](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) bu konuda.|
+|Sayfaları|Yük testi çalıştırması sırasında erişilen sayfalarının bir listesini görüntüler. Yalnızca bir yük testi tamamlandıktan sonra bu tabloya bazı veriler kullanılabilir. Daha fazla bilgi için [nasıl yapılır: Web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|İstekler|Bir yük testi sırasında verilen tek tek isteklerin ayrıntılarını görüntüler. Bu, tüm HTTP isteklerini ve resimler gibi bağımlı istekleri içerir. Daha fazla bilgi için [Requests tablosuna](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) bu konuda.|
 |SQL izleme|SQL izleme sonuçlarını görüntüler. Bu tabloda yalnızca bir yük testi tamamlandıktan sonra ve yalnızca SQL izleme test sırasında kullanıldıysa kullanılabilir. Daha fazla bilgi için [SQL izleme verileri tablo](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) bu konuda.|
 |Testler|Görüntüler Ayrıntılar bireysel testler için bir yük testi sırasında çalıştırın. Daha fazla bilgi için [testler tablosu](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) bu konuda.|
 |Eşikleri|Yük testi çalıştırması sırasında gerçekleşen bir eşik kuralı ihlallerini listesini görüntüler. Daha fazla bilgi için [eşik kuralı ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md).|
@@ -66,7 +65,7 @@ Aşağıdaki tabloda, yük testi çalışmaları çözümlemek için kullanılab
 
 ## <a name="collect-percentile-data"></a>Yüzdelik veri topla
 
- Bazı yük testi tabloları yüzde birlik veri ve yanıt sürelerini üzerindeki ağ öykünme göre gruplara ayrılmış içeren ek sütunlar içerebilir. Varsayılan olarak, bu verileri toplanmaz. Yüzdelik veri yalnızca sonuçları veritabanına kaydetme ve yerel olarak değil kaydettiğinizde kullanılabilir. Daha fazla bilgi için [yönetme yük testi sonuçları yük testi sonuçları deposunda](../test/manage-load-test-results-in-the-load-test-results-repository.md). Ayrıca, bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** belirli çalıştırma ayarını düğüm değiştirmek için düğümü seçin. İçinde **özellikleri** penceresinde için **Zamanlama Ayrıntıları Deposu** özelliği, select **StatisticsOnly** veya **AllIndividualDetails**. Daha fazla bilgi için [nasıl yapılır: web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Bazı yük testi tabloları yüzde birlik veri ve yanıt sürelerini üzerindeki ağ öykünme göre gruplara ayrılmış içeren ek sütunlar içerebilir. Varsayılan olarak, bu verileri toplanmaz. Yüzdelik veri yalnızca sonuçları veritabanına kaydetme ve yerel olarak değil kaydettiğinizde kullanılabilir. Daha fazla bilgi için [yönetme yük testi sonuçları yük testi sonuçları deposunda](../test/manage-load-test-results-in-the-load-test-results-repository.md). Ayrıca, bu verileri toplamak için **Yük Testi Düzenleyicisi**altında **çalıştırma ayarları** belirli çalıştırma ayarını düğüm değiştirmek için düğümü seçin. İçinde **özellikleri** penceresinde için **Zamanlama Ayrıntıları Deposu** özelliği, select **StatisticsOnly** veya **AllIndividualDetails**. Daha fazla bilgi için [nasıl yapılır: Web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>İstekler tablosu
 
@@ -118,7 +117,7 @@ Aşağıdaki tabloda, yük testi çalışmaları çözümlemek için kullanılab
  Aşağıdaki tablo sütunları listeler **işlemleri** tablo.
 
 > [!NOTE]
-> Tüm sütunları görüntülemek için etkin çalışma ayarı ile ilişkili Zamanlama Ayrıntıları Deposu özelliğini etkinleştirmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: zamanlama ayrıntıları depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Tüm sütunları görüntülemek için etkin çalışma ayarı ile ilişkili Zamanlama Ayrıntıları Deposu özelliğini etkinleştirmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Zamanlama Ayrıntıları Depolama özelliğini belirtme](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Sütun|Açıklama|Zamanlama Ayrıntıları olmadan da görünür|
 |-|-|-|
@@ -133,8 +132,8 @@ Aşağıdaki tabloda, yük testi çalışmaları çözümlemek için kullanılab
 |**En az yanıt süresi**|Bu, Düşünme zamanlarını içermez.|Hayır|
 |**En yüksek yanıt süresi**|Bu, Düşünme zamanlarını içermez.|Hayır|
 |**ORTANCA yanıt süresi**|Bu, Düşünme zamanlarını içermez.|Hayır|
-|**% 90 yanıt süresi**|İşlem süresi 90. yüzdebirlik değeri. Bu, Düşünme zamanlarını içermez. **Not:** bu Visual Studio Team System 2008 Test Yükleme kullanılan Aracısı, farklı **%90 işlem süresi** değeri.|Hayır|
-|**% 95 yanıt süresi**|95. yüzdebirlik işlem süresi için. Bu, Düşünme zamanlarını içermez. **Not:** bu Visual Studio Team System 2008 Test Yükleme kullanılan Aracısı, farklı **%95 işlem süresi** değeri.|Hayır|
+|**% 90 yanıt süresi**|İşlem süresi 90. yüzdebirlik değeri. Bu, Düşünme zamanlarını içermez. **Not:**  Bu Visual Studio Team System 2008 Test Yükleme kullanılan Aracısı, farklı **%90 işlem süresi** değeri.|Hayır|
+|**% 95 yanıt süresi**|95. yüzdebirlik işlem süresi için. Bu, Düşünme zamanlarını içermez. **Not:**  Bu Visual Studio Team System 2008 Test Yükleme kullanılan Aracısı, farklı **%95 işlem süresi** değeri.|Hayır|
 |**% 99 yanıt süresi**|İşlem süresi 99. yüzdebirlik değeri. Bu, Düşünme zamanlarını içermez.|Hayır|
 |**Std sapma yanıt süresi**|Bu, Düşünme zamanlarını içermez.|Hayır|
 
@@ -244,7 +243,7 @@ Tablo Görünümü'nde çakışmadan aynı anda en fazla dört tabloları görü
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Nasıl yapılır: erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
+- [Nasıl yapılır: Erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
 - [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Eşik kuralı ihlallerini çözümleme](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Yük testi sonuçları deposu içindeki yük testi sonuçlarını yönetme](../test/manage-load-test-results-in-the-load-test-results-repository.md)

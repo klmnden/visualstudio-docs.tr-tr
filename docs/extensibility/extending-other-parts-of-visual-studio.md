@@ -1,9 +1,6 @@
 ---
 title: Visual Studio'nun diğer bölümlerini genişletme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967287"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Visual Studio'nun diğer bölümlerini genişletme
 Visual Studio UI genişletebileceğiniz çok daha fazla bölümü vardır. Burada birkaç gösteriyoruz.  
@@ -34,10 +31,10 @@ Visual Studio UI genişletebileceğiniz çok daha fazla bölümü vardır. Burad
 -   [Bir Windows Forms araç kutusu denetimi oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
 ## <a name="extend-the-status-bar"></a>Durum çubuğunu genişletme  
- Durum çubuğu ve ilerleme çubuğu için okuma ve yazma işlemini ve animasyonları ve diğer kullanıcı Arabirimi sağlayan öğrenin: [durum çubuğunu genişletme](../extensibility/extending-the-status-bar.md).  
+ Durum çubuğu ve ilerleme çubuğu için okuma ve yazma işlemini ve animasyonları ve diğer kullanıcı Arabirimi sağlayan öğrenin: [Durum çubuğunu genişletme](../extensibility/extending-the-status-bar.md).  
   
 ## <a name="create-custom-start-pages"></a>Özel başlangıç sayfaları oluşturma  
- Sıfırdan veya indirilebilir başlangıç sayfası örnek kendi başlangıç sayfanızı hale getirmeyi öğrenin: [özel bir başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
+ Sıfırdan veya indirilebilir başlangıç sayfası örnek kendi başlangıç sayfanızı hale getirmeyi öğrenin: [Özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="write-to-the-activity-log"></a>Etkinlik günlüğüne yazma  
- Etkinlik günlüğüne yazmayı öğrenin: [nasıl yapılır: etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).
+ Etkinlik günlüğüne yazma işlemleri gerçekleştirmeyi öğreneceksiniz: [Nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).

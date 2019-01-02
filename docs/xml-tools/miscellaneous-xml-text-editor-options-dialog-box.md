@@ -2,7 +2,6 @@
 title: Diğer, XML, Metin Düzenleyici, Seçenekler İletişim Kutusu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
@@ -10,64 +9,64 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941407"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Çeşitli, XML, metin düzenleyici, Seçenekler iletişim kutusu
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Diğer, XML, metin düzenleyici, Seçenekler iletişim kutusu
 
-Bu iletişim kutusu için XML Düzenleyicisi otomatik tamamlama ve şema ayarlarını değiştirmenizi sağlar. Erişebileceğiniz **seçenekleri** iletişim kutusundan **Araçları** menüsü.
+Bu iletişim kutusu otomatik tamamlama ve şema XML Düzenleyicisi ayarları değiştirmenize olanak sağlar. Erişebildiğiniz **seçenekleri** iletişim kutusundan **Araçları** menüsü.
 
 > [!NOTE]
-> Öğesini seçtiğinizde bu ayarlar kullanılabilir **metin düzenleyici** klasörü, **XML** klasörünü ve ardından **çeşitli** gelen seçeneği **seçenekleri** iletişim kutusu.
+> Seçtiğinizde, bu ayarlar kullanılabilir **metin düzenleyici** klasöründe **XML** klasörünü ve ardından **çeşitli** seçeneğini **seçenekleri** iletişim kutusu.
 
 
-## <a name="auto-insert"></a>Otomatik ekleme
+## <a name="auto-insert"></a>Otomatik Ekle
  **Kapatma etiketleri**
 
- Otomatik Tamamlama ayarı işaretlenirse, etiketi olmayan zaten kapalıysa bir başlangıç etiketi kapatmak için sağ açılı ayraç (>) yazdığınızda Düzenleyicisi'ni otomatik olarak bir bitiş etiketi ekler. Bu varsayılan davranıştır.
+ Otomatik tamamlama ayarını işaretlenirse etiketi zaten kapalı değilse bir başlangıç etiketi kapatmak için sağ açılı ayraç (>) yazdığınızda düzenleyici otomatik olarak bir bitiş etiketi ekler. Bu varsayılan davranıştır.
 
- Boş bir öğenin tamamlama otomatik tamamlama ayarda bağlı değildir. Otomatik Tamamlama boş bir öğe her zaman bir ters eğik çizgi (/) yazarak olabilir.
+ Boş bir öğenin tamamlandığında otomatik tamamlama ayarını bağlı değildir. Otomatik Tamamlama boş bir öğenin her zaman bir ters eğik çizgi (/) yazarak olabilir.
 
  **Öznitelik tırnak işaretleri**
 
- XML öznitelikleri yazarken Düzenleyicisi ekler `=" "` karakter ve şapka (^) çift tırnak içine yerleştirir.
+ XML öznitelikleri yazarken, düzenleyici ekler `=" "` karakterlerini ve çift tırnak işareti içinde şapka (^) yerleştirir.
 
  Varsayılan olarak seçilidir.
 
  **Namespace bildirimi**
 
- Gerekli olan her yerde Düzenleyicisi ad alanı bildirimleri otomatik olarak ekler.
+ Gerekli olurlarsa olsunlar Düzenleyicisi ad alanı bildirimi otomatik olarak ekler.
 
  Varsayılan olarak seçilidir.
 
- **Diğer biçimlendirme (açıklamalar, CDATA)**
+ **Diğer işaretlemeler (açıklamalar, CDATA)**
 
  Açıklamalar, CDATA, DOCTYPE, işleme yönergeleri ve diğer biçimlendirme otomatik olarak tamamlanır.
 
  Varsayılan olarak seçilidir.
 
 ## <a name="network"></a>Ağ
- **DTD ve şemaları otomatik olarak indir**
+ **Otomatik olarak indirilen DTD'ler ve şemalar indir**
 
- Şemaları ve belge tür tanımları (DTD), HTTP konumlardan otomatik olarak yüklenir. Bu özellik otomatik proxy sunucusu algılama etkin System.Net kullanır.
+ Şemaları ve belge türü tanımları (DTD'ler), HTTP konumlardan otomatik olarak yüklenir. Bu özellik, otomatik proxy sunucu algılaması etkin System.Net kullanır.
 
  Varsayılan olarak seçilidir.
 
 ## <a name="outlining"></a>Anahat Oluşturma
- **Anahat modu dosyalarını açtığınızda girin**
+ **Dosyalar açıldığında anahat moduna gir**
 
- Bir dosya açıldığında anahat özelliğini etkinleştirir.
+ Bir dosya açıldığında anahat oluşturma özelliğini etkinleştirir.
 
  Varsayılan olarak seçilidir.
 
-## <a name="caching"></a>Önbelleğe alma
+## <a name="caching"></a>Önbelleğe Alma
  **Şemaları**
 
- Şema önbelleğinin konumunu belirtir. Gözat düğmesine (**...** ) açılır **dizin taraması** geçerli şema önbellek konumu iletişim kutusunu. Farklı bir dizin seçin ya da iletişim kutusunda, bir klasör seçin, sağ tıklatın ve seçin **açık** dizinde yenilikleri görmek için.
+ Şema önbelleği konumunu belirtir. Göz at düğmesine (**...** ) açılır **dizinine göz at** iletişim kutusu geçerli şema önbellek konumunda. Farklı bir dizine seçebilir veya iletişim kutusunda, bir klasör seçebilirsiniz, sağ tıklatın ve seçin **açık** dizinde yenilikleri görmek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

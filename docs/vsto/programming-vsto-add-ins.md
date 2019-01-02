@@ -1,9 +1,6 @@
 ---
 title: VSTO eklentilerini programlama
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
@@ -35,12 +32,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 522a3cbac565e217f0b6525fb6288f5b79908a78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830657"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO eklentilerini programlama
   Bir VSTO eklentisi oluşturma tarafından bir Microsoft Office uygulamasının genişlettiğinizde, karşı doğrudan kod yazma `ThisAddIn` projenizdeki sınıfı. Bu sınıf, Microsoft Office konak uygulamanın nesne modeline erişme, uygulamanın kullanıcı arabirimini (UI) özelleştirmek ve diğer Office çözümleri için VSTO eklenti içinde nesnelerini kullanıma sunma gibi görevleri gerçekleştirmek için kullanabilirsiniz.  
@@ -122,10 +119,10 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Görev|Üye kullanmak için|  
 |----------|-------------------|  
 |VSTO eklentisi için VSTO eklentisi yüklendiğinde başlatmak için kodu çalıştırın.|Kodu `ThisAddIn_Startup` yöntemi. İçin varsayılan olay işleyicisini budur <xref:Microsoft.Office.Tools.AddInBase.Startup> olay. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|  
-|VSTO eklentisi kaldırılmadan önce VSTO eklentisi tarafından kullanılan kaynakları temizlemek için kodu çalıştırın.|Kodu `ThisAddIn_Shutdown` yöntemi. İçin varsayılan olay işleyicisini budur <xref:Microsoft.Office.Tools.AddInBase.Shutdown> olay. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md). **Not:** Outlook'ta, varsayılan olarak `ThisAddIn_Startup` olay işleyicisi için VSTO eklentisi kaldırıldığında her zaman çağrılmaz. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|  
+|VSTO eklentisi kaldırılmadan önce VSTO eklentisi tarafından kullanılan kaynakları temizlemek için kodu çalıştırın.|Kodu `ThisAddIn_Shutdown` yöntemi. İçin varsayılan olay işleyicisini budur <xref:Microsoft.Office.Tools.AddInBase.Shutdown> olay. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md). **Not:**  Outlook'ta, varsayılan olarak `ThisAddIn_Startup` olay işleyicisi için VSTO eklentisi kaldırıldığında her zaman çağrılmaz. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|  
 |Bir özel görev bölmesini görüntüler.|Kullanım `CustomTaskPanes` alan. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).|  
 |Diğer Microsoft Office çözümleri için VSTO eklenti nesneleri kullanıma sunma.|Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yöntemi. Daha fazla bilgi için [çağrı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
-|Bir özellik genişletilebilirlik arabirimi uygulama tarafından Microsoft Office sistemindeki özelleştirin.|Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> arabirimi uygulayan bir sınıf örneği döndürmek için yöntemi. Daha fazla bilgi için [genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelleştirme özellikleri](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Not:** Şerit kullanıcı arabirimini özelleştirmek için ayrıca kılabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> yöntemi.|  
+|Bir özellik genişletilebilirlik arabirimi uygulama tarafından Microsoft Office sistemindeki özelleştirin.|Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> arabirimi uygulayan bir sınıf örneği döndürmek için yöntemi. Daha fazla bilgi için [genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelleştirme özellikleri](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Not:**  Şerit kullanıcı arabirimini özelleştirmek için ayrıca kılabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> yöntemi.|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>ThisAddIn sınıfı tasarımı anlama  
  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> bir arabirimdir. `ThisAddIn` Sınıf türetilir <xref:Microsoft.Office.Tools.AddInBase> sınıfı. Bu temel sınıf üyelerine tüm çağrıları için iç uygulaması yönlendirir <xref:Microsoft.Office.Tools.AddIn> arabiriminde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
@@ -150,10 +147,8 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
  [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [VSTO eklentilerinde diğer Office Çözümlerinden kod arama](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [İzlenecek yol: çağrı VBA'dan kod bir VSTO eklenti](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [İzlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
-  
-  

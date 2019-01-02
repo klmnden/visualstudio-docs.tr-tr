@@ -1,8 +1,6 @@
 ---
 title: Tanılama Namespace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c46f67281fe62de36472d9007f21841e843c20fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839449"
 ---
 # <a name="diagnostic-namespace"></a>Tanılama ad alanı
-`diagnostics` Ad alanı, eşzamanlılık görselleştiricisi işaretleyicileri yayma için işlevsellik sağlar.  
+`diagnostics` Ad alanı için eşzamanlılık görselleştiricisi işaretleyicileri yayma işlevselliği sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,19 +34,19 @@ namespace diagnostic;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[marker_series Sınıfı](../profiling/marker-series-class.md)|Tek bir sağlayıcı tarafından oluşturulan olayların seri kanal temsil eder.|  
-|[span Sınıfı](../profiling/span-class.md)|Bir uygulama aşaması tanımlar.|  
+|[marker_series Sınıfı](../profiling/marker-series-class.md)|Tek bir sağlayıcı tarafından oluşturulan olayları seri bir kanalı temsil eder.|  
+|[span Sınıfı](../profiling/span-class.md)|Uygulamanın bir aşama tanımlar.|  
   
 ### <a name="enumerations"></a>Numaralandırmalar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[marker_importance Sabit Listesi](../profiling/marker-importance-enumeration.md)|Eşzamanlılık görselleştiricisi işaret önem düzeyini temsil eder.|  
+|[marker_importance Sabit Listesi](../profiling/marker-importance-enumeration.md)|Eşzamanlılık görselleştiricisi işaretleyicisi önem düzeyini temsil eder.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkersobj.h*  
   
- **Namespace:** eşzamanlılık  
+ **Namespace:** Eşzamanlılık  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eşzamanlılık ad alanı (eşzamanlılık görselleştiricisi)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 2 | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir Site sütunu proje öğesi, bir proje şablonu ile oluşturma, bölüm 2 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829913"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve bir proje şablonu Visual Studio'da ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonu proje öğesi içeren yeni bir proje oluşturmak için kullanıldığında, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
   
- Bu kılavuzda, örnekte gösterildiği bir Site sütunu proje şablonu için bir sihirbaz ekleyeceksiniz [izlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Bir kullanıcı bir Site sütunu proje oluşturduğu zaman, sihirbaz site sütunu (örneğin, kendi temel türü ve grup) hakkında bilgi toplar ve bu bilgileri ekler *Elements.xml* yeni proje dosyasında.  
+ Bu kılavuzda, örnekte gösterildiği bir Site sütunu proje şablonu için bir sihirbaz ekleyeceksiniz [izlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Bir kullanıcı bir Site sütunu proje oluşturduğu zaman, sihirbaz site sütunu (örneğin, kendi temel türü ve grup) hakkında bilgi toplar ve bu bilgileri ekler *Elements.xml* yeni proje dosyasında.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942081"
 > Bir dizi örnek iş akışları için [SharePoint iş akışı örnekleri](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu kılavuzu izlemeden için öncelikle SiteColumnProjectItem çözüm tamamlayarak oluşturmanız gerekir [izlenecek yol: bir proje şablonu, bölüm 1 ile bir Site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+ Bu kılavuzu izlemeden için öncelikle SiteColumnProjectItem çözüm tamamlayarak oluşturmanız gerekir [izlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler de aşağıdakiler gerekir:  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942081"
   
   Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
-- Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Proje şablonlarıyla kullanma sihirbazları](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
+- Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
   
 - SharePoint için site sütunları. Daha fazla bilgi için [sütunları](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942081"
 |SharePoint komutları|Sihirbaz çalıştırılırken yerel SharePoint sitesini çağırmak için Sihirbazı veri modeli tarafından kullanılan yöntemleri şunlardır. SharePoint komutları .NET Framework 3.5 hedeflemesi gerekir çünkü bu komutları sihirbaz kodu geri kalanından farklı bir derleme için uygulanır.|  
   
 ## <a name="create-the-projects"></a>Projeleri oluşturma
- Bu izlenecek yolu tamamlamak için birkaç proje oluşturduğunuz SiteColumnProjectItem çözüme eklemeniz gerekir [izlenecek yol: bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ Bu izlenecek yolu tamamlamak için birkaç proje oluşturduğunuz SiteColumnProjectItem çözüme eklemeniz gerekir [izlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Bir WPF projesi. U uygulayacaksınız <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirim ve kullanıcı Arabirimi Sihirbazı bu projeyi tanımlayın.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942081"
   
 13. Visual Basic projesi geliştiriyorsanız ProjectTemplateWizard ad alanı projenize kullanarak aktarmak **Proje Tasarımcısı**.  
   
-     Daha fazla bilgi için [nasıl yapılır: ekleme veya içeri aktarılan ad alanlarını kaldırma &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Daha fazla bilgi için [nasıl yapılır: İçeri aktarılan ad uzaylarını ekleyip &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>SharePointcommands projeyi yapılandırmak için
   
@@ -315,7 +312,7 @@ ms.locfileid: "49942081"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  Bu aşamada izlenecek yolda, sihirbaz için kodun tümü artık projedir. Hata olmadan derlediğinden emin olmak için projeyi derleyin.  
   
 #### <a name="to-build-your-project"></a>Projenizi yapılandırmak için  
@@ -323,7 +320,7 @@ ms.locfileid: "49942081"
 1.  Menü çubuğunda, **derleme** > **Çözümü Derle**.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Proje şablonundan key.snk dosya kaldırma
- İçinde [izlenecek yol: bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), her bir Site sütunu proje örneği imzalamak için kullanılan bir key.snk dosyası oluşturduğunuz proje şablonu içerir. Sihirbaz, artık her proje için yeni bir key.snk dosyası oluşturur çünkü bu key.snk dosya artık gerekli değildir. Key.snk dosyanın proje şablonundan ve bu dosya başvuruları kaldırın.  
+ İçinde [izlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), her bir Site sütunu proje örneği imzalamak için kullanılan bir key.snk dosyası oluşturduğunuz proje şablonu içerir. Sihirbaz, artık her proje için yeni bir key.snk dosyası oluşturur çünkü bu key.snk dosya artık gerekli değildir. Key.snk dosyanın proje şablonundan ve bu dosya başvuruları kaldırın.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Proje şablonundan key.snk dosyayı kaldırmak için  
   
@@ -542,9 +539,8 @@ ms.locfileid: "49942081"
      Nasıl dağıtılacağı hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantıları, bakın [sevkiyat Visual Studio uzantıları](/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [İzlenecek yol: bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [İzlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [SharePoint Proje öğeleri için öğe şablonları ve proje şablonları oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio Şablon Şeması Başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Nasıl Yapılır: Sihirbazları Proje Şablonlarıyla Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)  

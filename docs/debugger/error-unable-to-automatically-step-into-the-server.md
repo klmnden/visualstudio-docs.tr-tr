@@ -1,8 +1,6 @@
 ---
-title: 'Hata: Otomatik olarak Adımlanamıyor aktarılacaksa | Microsoft Docs'
-ms.custom: ''
+title: 'Hata: Otomatik olarak adımlanamıyor aktarılacaksa | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.causality_no_server_response
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37298dcbb2443755136c4c57eb4633fcb3197a87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2c1a36555f9861fabe30937c6ecde856277cdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955912"
 ---
-# <a name="error-unable-to-automatically-step-into-the-server"></a>Hata: Sunucunun İçine Otomatik Olarak Adımlanamıyor
+# <a name="error-unable-to-automatically-step-into-the-server"></a>Hata: Otomatik olarak adımlanamıyor aktarılacaksa
 Hata görünür:  
   
  Otomatik olarak adımlanamıyor aktarılacaksa. Hata ayıklayıcı uzak yordam yürütülmesi önce bildirilmedi  

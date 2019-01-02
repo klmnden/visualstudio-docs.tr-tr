@@ -1,8 +1,7 @@
 ---
-title: 'CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleme'
+title: 'CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin'
 ms.date: 03/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1824
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beaef23dd5b3047d1d65b90fdd984dfdedd7e145
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db780257c83c42f97500a83f1843332cae0ecea3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825182"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleme
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin
 
 |||
 |-|-|
@@ -34,39 +33,39 @@ ms.locfileid: "31916393"
 
 ## <a name="cause"></a>Sebep
 
-Bir derlemeyi içeren bir **ResX**-kaynak temel ancak sahip olmadığı <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> uygulanmış.
+Bir derlemeyi içeren bir **ResX**-yoktur ancak kaynak tabanlı <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> uygulanmış.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute> Özniteliği bir uygulamanın varsayılan kültürü Kaynak Yöneticisi'ni bildirir. Uygulamanın ana derlemede varsayılan kültürün kaynaklarının eklendiyse ve <xref:System.Resources.ResourceManager> varsayılan kültürü olarak aynı kültüre ait kaynakları alması gerekir <xref:System.Resources.ResourceManager> ana derlemesinde bulunan kaynaklara otomatik olarak kullanır için bir uydu derleme arama yerine. Bu normal derleme araştırma atlar, yükleme ve çalışma kümesi azaltabilir ilk kaynak için arama performansı geliştirir.
+<xref:System.Resources.NeutralResourcesLanguageAttribute> Öznitelik, bir uygulamanın varsayılan kültürünün kaynak yöneticisi bildirir. Varsayılan kültürün kaynakları uygulamanın ana derlemede gömülü değilse ve <xref:System.Resources.ResourceManager> varsayılan kültürüyle aynı kültürü ait kaynakları almak sahip <xref:System.Resources.ResourceManager> otomatik olarak ana derlemede bulunan kaynakları kullanır. için bir uydu derleme aramak yerine. Bu, normal derleme araştırma atlar, yükleme ve çalışma kümenizi azaltabilir ilk kaynağın Arama performansını artırır.
 
 > [!TIP]
-> Bkz: [paketleme ve dağıtma kaynakları](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) işlemi için <xref:System.Resources.ResourceManager> kaynak dosyaları için araştırma için kullanır.
+> Bkz: [paketleme ve dağıtma kaynakları](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) işlem için <xref:System.Resources.ResourceManager> kaynak dosyaları için araştırma için kullanır.
 
-## <a name="fix-violations"></a>İhlalleri Düzelt
+## <a name="fix-violations"></a>İhlallerini düzeltmek
 
-Bu kural ihlal düzeltmek için öznitelik derlemeye eklemek ve bağımsız kültür kaynakları dili belirtin.
+Bu kural ihlalini düzeltmek için özniteliği derlemeye ekleyin ve dil nötr kültürün kaynakları belirtin.
 
-### <a name="to-specify-the-neutral-language-for-resources"></a>Kaynaklar için dilden belirtmek için
+### <a name="to-specify-the-neutral-language-for-resources"></a>Nötr dil kaynakları belirtmek için
 
 1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından **özellikleri**.
 
-2. Seçin **uygulama** sekmesini tıklatın ve ardından **derleme bilgilerini**.
+2. Seçin **uygulama** sekmesine tıklayın ve ardından **derleme bilgileri**.
 
    > [!NOTE]
-   > Projeniz .NET standart veya .NET Core projesiyse seçin **paket** sekmesi.
+   > Projeniz .NET Standard veya .NET Core projesiyse seçin **paket** sekmesi.
 
-3. Dilden seçin **dilden** veya **derleme dilden** aşağı açılan liste.
+3. Dili seçin **dilden** veya **derleme dilden** aşağı açılan listesi.
 
-4. Seçin **Tamam**.
+4. **Tamam**’ı seçin.
 
-## <a name="when-to-suppress-warnings"></a>Ne zaman uyarıları bastırma
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
-Bu kural bir uyarıdan gizlemek için izin verilir. Ancak, başlangıç performansının düşmesine neden.
+Bu kuraldan bir uyarıyı bastırmak için izin verilebilir. Ancak, başlangıç performansı düşebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
-- [Masaüstü uygulamalarında (.NET) kaynakları](/dotnet/framework/resources/)
+- [(.NET) Masaüstü uygulamalarındaki kaynaklar](/dotnet/framework/resources/)
 - [CA1703 - kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 - kaynak dize bileşik sözcüklerin doğru ortası](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701 - kaynak dizesi bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

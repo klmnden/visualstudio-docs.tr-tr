@@ -1,12 +1,11 @@
 ---
-title: 'Nasıl yapılır: belirli bir sürüm yükleyin | Microsoft Docs'
+title: 'Nasıl Yapılır: Belirli bir sürüm yükleyin | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,14 +15,14 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1f8da9b0a577ba7810c3895d9492ce4be7c69cd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42776c20cd6634903344569f9ce1f35a776c5f86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959930"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Nasıl yapılır: Visual Studio'nun belirli bir sürüm yükleyin
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Nasıl Yapılır: Visual Studio'nun belirli bir sürüm yükleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İsteğe bağlı özelliklerimizi en güncel ve iyileştirilmiş sürümünü elde etmeniz Visual Studio kurulumunu sık sık güncelleştiriyoruz.  Ancak Visual Studio 2015'in önceki bir sürümünü yüklemek istiyorsanız — örneğin, bir güncelleştirme 1 öncesi sürümünden Visual Studio iOS desteği — daha sonra kendi özellik bildirim dosyaları önceki bir sürümünü kullanmak için Visual Studio kurulumunu zorlamanız gerekir. Bu makalede bunun nasıl yapılacağı açıklanmaktadır.
@@ -38,7 +37,7 @@ ms.locfileid: "53065914"
 
 |Visual Studio 2015 sürümü|Ne çalıştırmak için|Kullanılacak komut satırı|Hangi kurulumu yok|
 |--------------------------------|-----------------|--------------------------|---------------------|
-|Visual Studio Enterprise (en son genel sürüm)|Güncelleştirme ile Visual Studio Enterprise (kullanılabilir [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Not:** varsayılan davranışı Bu yükleme, en son isteğe bağlı özellikler sunar ve bu nedenle, herhangi bir komut satırı parametreleri gerektirmez.|Visual Studio Kurulum en son feed.xml kullanın ve en son dosyaları yükleme|
+|Visual Studio Enterprise (en son genel sürüm)|Güncelleştirme ile Visual Studio Enterprise (kullanılabilir [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Not:**  Bu yükleme varsayılan davranışını en son isteğe bağlı özellikler sunar ve bu nedenle, herhangi bir komut satırı parametreleri gerektirmez.|Visual Studio Kurulum en son feed.xml kullanın ve en son dosyaları yükleme|
 |Visual Studio Enterprise güncelleştirme 3 (daha fazla güncelleştirme 3-dönem güncelleştirmelerden olmadan özgün Aktualizace 3)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|Visual Studio Kurulum güncelleştirme 3 yayınlandığında, kullanılabilir feed.xml kullanır|
 |Visual Studio Enterprise güncelleştirme (özgün güncelleştirme 2 ancak önceden tarihi bu güncelleştirme 3'ü güncelleştirir) 2|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|Visual Studio Kurulum güncelleştirme 3 önce piyasaya Sürüldü geçerli feed.xml kullanır|
 |Visual Studio Enterprise (daha fazla güncelleştirme 2-dönem güncelleştirmelerden olmadan özgün Update 2)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio Kurulumu güncelleştirme 2 yayımlandığında kullanılabilir feed.xml kullanır|

@@ -1,8 +1,6 @@
 ---
 title: Yalnızca hata ayıklama, zamanında, iletişim kutusu seçenekleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6736e0646193754dbd932e5501a6473ee18c7e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05a1cc9e4847b9ffa2c873b137c35bfbf6f83f83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968121"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu
 Erişim için **Just-ın-Time** sayfasında, Git **Araçları** menüsüne ve ardından **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **hata ayıklama** düğümünü seçip alt **Just-ın-Time**. Bu sayfa, Just-ın-yönetilen kod, yerel kod ve betik hata ayıklama Time etkinleştirmenize izin verir. Daha fazla bilgi için [tam zamanında hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md).  
@@ -59,4 +57,4 @@ Erişim için **Just-ın-Time** sayfasında, Git **Araçları** menüsüne ve ar
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama, Seçenekler iletişim kutusu](../debugger/debugging-options-dialog-box.md)   
- [Nasıl Yapılır: Hata Ayıklayıcısı Ayarlarını Belirtme](../debugger/how-to-specify-debugger-settings.md)
+ [Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme](../debugger/how-to-specify-debugger-settings.md)

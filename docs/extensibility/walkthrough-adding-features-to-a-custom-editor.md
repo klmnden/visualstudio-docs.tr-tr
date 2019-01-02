@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Bir özel düzenleyiciye özellik ekleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850407"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>İzlenecek yol: özel bir düzenleyici özellikleri ekleyin
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>İzlenecek yol: Özel bir düzenleyici özellikleri ekleyin
 Özel bir düzenleyici oluşturduktan sonra daha fazla özellik ekleyebilirsiniz.  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>VSPackage için bir düzenleyici oluşturmak için  
   
 1.  Visual Studio Paketi proje şablonunu kullanarak bir özel düzenleyici oluşturma.  
   
-     Daha fazla bilgi için [izlenecek yol: özel bir düzenleyici oluşturmak](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Daha fazla bilgi için [izlenecek yol: Özel bir düzenleyici oluşturmak](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Düzenleyici tek bir görünüm veya birden çok görünüm desteklemek için istediğinize karar verin.  
   
@@ -118,7 +115,7 @@ ms.locfileid: "49873025"
   
 12. Bağlama duyarlı Yardım desteği uygulayın.  
   
-     Bu adım öğeleri düzenleyicinizde dinamik Yardım penceresi F1 Yardımı ve desteği sağlamak sağlar. Daha fazla bilgi için [nasıl yapılır: bağlam sağlamak için düzenleyicileri](../extensibility/how-to-provide-context-for-editors.md).  
+     Bu adım öğeleri düzenleyicinizde dinamik Yardım penceresi F1 Yardımı ve desteği sağlamak sağlar. Daha fazla bilgi için [nasıl yapılır: Bağlam sağlamak için düzenleyicileri](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Otomasyon nesne modeli, düzenleyicisinden uygulayarak kullanıma `IDispatch` arabirimi.  
   
@@ -157,4 +154,4 @@ ms.locfileid: "49873025"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Otomasyon modeline katkıda bulunma](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Nasıl yapılır: bağlam sağlamak için düzenleyicileri açma](../extensibility/how-to-provide-context-for-editors.md)
+ [Nasıl yapılır: Düzenleyiciler için bağlam sağlayın](../extensibility/how-to-provide-context-for-editors.md)

@@ -1,20 +1,18 @@
 ---
 title: GPU kullanımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941092"
 ---
 # <a name="gpu-usage"></a>GPU kullanımı
 
@@ -104,7 +102,7 @@ Aradığınız ne bulmak için işlem adları, iş parçacığı kimlikleri ve o
 |--------------------|-----------------|
 |**İşlem**|İlgilendiğiniz işlemin adı. Bu açılır menüde GPU Tanılama oturumu sırasında kullanılan tüm işlemler dahildir. Bu açılan işlemi ile ilişkili rengi aşağıdaki zaman çizelgeleri iş parçacığının etkinlik renktir.|
 |**iş parçacığı**|İlgilendiğiniz iş parçacığı kimliği. Çok iş parçacıklı bir uygulamada, bu bilgileri, ilgilendiğiniz iş akışına ait belirli bir iş parçacığı ayırmanıza yardımcı olabilir. Seçili iş parçacığıyla ilişkilendirilmiş olayları, her zaman çizelgesinde vurgulanır.|
-|**Görüntüleme**|Yenileme hızı görüntülenir görüntüleme sayısını **Not:** bazı sürücüler tek ve büyük sanal bir görüntü birden çok fiziksel görüntüler sunmak için yapılandırılabilir. Makine bağlı birden çok ekran olsa bile, listelenen, yalnızca bir görüntü görebilirsiniz.|
+|**Görüntüleme**|Yenileme hızı görüntülenir görüntüleme sayısını **Not:**  Bazı sürücüler, birden çok fiziksel görüntüler tek ve büyük sanal bir görüntü sunmak için yapılandırılabilir. Makine bağlı birden çok ekran olsa bile, listelenen, yalnızca bir görüntü görebilirsiniz.|
 |**Filtre**|İlgilendiğiniz anahtar sözcükler. Raporun alt kısmında olaylar, yalnızca tam veya kısmi bir anahtar sözcükle eşleşen vm'lere yer alır. Birden çok anahtar sözcüklerini noktalı virgülle (;) ayırarak belirtebilirsiniz.|
 |**Hiyerarşi sıralama**|Kullanıcı işaretleri--tanımlanan olay hiyerarşilerde--korunur veya göz ardı olduğunu gösteren bir onay kutusu.|
 

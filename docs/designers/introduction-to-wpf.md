@@ -2,7 +2,6 @@
 title: WPF'ye Giriş
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
@@ -13,14 +12,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955298"
 ---
-# <a name="wpf-overview"></a>WPF genel bakış
+# <a name="wpf-overview"></a>WPF’ye genel bakış
 
 Windows Presentation Foundation (WPF) masaüstü istemcisi, görsel olarak etkileyici kullanıcı deneyimleri ile Windows için uygulamalar oluşturmanıza olanak sağlar.
 
@@ -91,16 +90,16 @@ Ana uygulamanın kullanıcı etkileşimlerine (örneğin, menü, araç çubuğun
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox 
 
 namespace SDKSample
 {
-    public partial class AWindow : Window
+    public partial class AWindow : Window
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
-            // that is defined in markup with this class, including  
+            // InitializeComponent call is required to merge the UI 
+            // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
         }
@@ -117,28 +116,28 @@ namespace SDKSample
 ```vb
 Namespace SDKSample
 
-    Partial Public Class AWindow
+    Partial Public Class AWindow
         Inherits System.Windows.Window
 
-        Public Sub New()
+        Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
-            ' that is defined in markup with this class, including  
+            ' InitializeComponent call is required to merge the UI 
+            ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub 
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub 
 
-    End Class 
+    End Class 
 
-End Namespace
+End Namespace
 ```
 
 Bu örnekte, arka plan kod türetildiği bir sınıf uygulayan <xref:System.Windows.Window> sınıfı. `x:Class` Özniteliği işaretleme arka plan kod sınıfı ile ilişkilendirmek için kullanılır. `InitializeComponent` biçimlendirme ile arka plan kod sınıfı içinde tanımlanan kullanıcı Arabirimi birleştirmek için arka plan kod sınıfın oluşturucusundan çağrılır. (`InitializeComponent` uygulamanız, uygulamanız gerekmez neden olan yapılandırıldığında sizin için oluşturulur.) Birleşimi `x:Class` ve `InitializeComponent` , oluşturulduğunda, uygulamanızın doğru şekilde başlatıldığından emin olun. Arka plan kod sınıfı ayrıca bir olay işleyicisi düğmenin uygulayan <xref:System.Windows.Controls.Primitives.ButtonBase.Click> olay. Düğme tıklandığında, olay işleyicisi bir ileti kutusu çağırarak gösterir <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> yöntemi.
@@ -197,13 +196,13 @@ Düzen sistemi göreli konumlandırma, hangi penceresi değişen benimsemesine v
 
 Temel WPF sınıflarıyla alt denetimler için Düzen sistemi kullanıma sunulur. Kılavuz, yığın ve takma gibi ortak düzenleri için çeşitli düzen denetimleri WPF içerir:
 
-- <xref:System.Windows.Controls.Canvas>: Kendi düzen alt denetimleri sağlar.
+- <xref:System.Windows.Controls.Canvas>: Alt denetimler, kendi düzen sağlar.
 
 - <xref:System.Windows.Controls.DockPanel>: Alt denetimler bölmesinin kenarlarını hizalanır.
 
 - <xref:System.Windows.Controls.Grid>: Alt denetimler, satırlar ve sütunlarla yerleştirilir.
 
-- <xref:System.Windows.Controls.StackPanel>: Dikey veya yatay alt denetimler yığılır.
+- <xref:System.Windows.Controls.StackPanel>: Alt denetimler dikey veya yatay Yığılmış değil.
 
 - <xref:System.Windows.Controls.VirtualizingStackPanel>: Alt denetimler sanallaştırılmış ve yatay veya dikey yönlendirilmiş olan tek bir satıra düzenlenir.
 

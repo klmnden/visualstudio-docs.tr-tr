@@ -1,9 +1,6 @@
 ---
 title: ListObject denetimi
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945190"
 ---
 # <a name="listobject-control"></a>ListObject denetimi
   <xref:Microsoft.Office.Tools.Excel.ListObject> Denetim olayları ortaya koyan ve verilere bağlı bir listedir. Bir çalışma sayfasına bir liste eklediğinizde, Visual Studio oluşturur bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel nesne modeline geçiş yapmak zorunda kalmadan doğrudan programlayabileceğiniz denetimi.  
@@ -34,7 +31,7 @@ ms.locfileid: "35677183"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>Denetim oluşturma  
- Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında veya çalışma zamanında çalışma. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> yalnızca çalışma zamanında çalışma sayfalarına denetimleri. Daha fazla bilgi için [nasıl yapılır: çalışma sayfalarına ListObject ekleme denetimlerini](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında veya çalışma zamanında çalışma. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> yalnızca çalışma zamanında çalışma sayfalarına denetimleri. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Varsayılan olarak, çalışma sayfasında dinamik olarak oluşturulan listenin nesneleri sürdürülmeyen çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -49,7 +46,7 @@ ms.locfileid: "35677183"
   
  Veriler ayrı olduğundan <xref:Microsoft.Office.Tools.Excel.ListObject>, eklemek ve kaldırmak, ilişkili veri kümesini ve doğrudan aracılığıyla veri <xref:Microsoft.Office.Tools.Excel.ListObject>. Herhangi bir mekanizma aracılığıyla ilişkili veri kümesindeki veriler güncelleştirilirse <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi otomatik olarak değişiklikleri yansıtır. Daha fazla bilgi için [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Hızlı bir şekilde doldurmak için bir <xref:Microsoft.Office.Tools.Excel.ListObject> bağlayarak denetimi <xref:Microsoft.Office.Tools.Excel.ListObject> bir veri kaynağı. Verilere bağlı verileri düzenlerseniz <xref:Microsoft.Office.Tools.Excel.ListObject>, değişiklikler veri kaynağında da otomatik olarak yapılır. Doldurmak istiyorsanız bir <xref:Microsoft.Office.Tools.Excel.ListObject> ve sonra verileri değiştirmek kullanıcı etkinleştirme <xref:Microsoft.Office.Tools.Excel.ListObject> kullanabileceğiniz veri kaynağını değiştirmeden <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> yöntemini <xref:Microsoft.Office.Tools.Excel.ListObject> veri kaynağından. Daha fazla bilgi için bkz [nasıl yapılır: ListObject dolgu denetimleri ile verileri](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Hızlı bir şekilde doldurmak için bir <xref:Microsoft.Office.Tools.Excel.ListObject> bağlayarak denetimi <xref:Microsoft.Office.Tools.Excel.ListObject> bir veri kaynağı. Verilere bağlı verileri düzenlerseniz <xref:Microsoft.Office.Tools.Excel.ListObject>, değişiklikler veri kaynağında da otomatik olarak yapılır. Doldurmak istiyorsanız bir <xref:Microsoft.Office.Tools.Excel.ListObject> ve sonra verileri değiştirmek kullanıcı etkinleştirme <xref:Microsoft.Office.Tools.Excel.ListObject> kullanabileceğiniz veri kaynağını değiştirmeden <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> yöntemini <xref:Microsoft.Office.Tools.Excel.ListObject> veri kaynağından. Daha fazla bilgi için [nasıl yapılır: ListObject denetimlerini veri ile doldurmak](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 > [!NOTE]  
 >  Veri bağlama çakışan üzerinde desteklenmiyor <xref:Microsoft.Office.Tools.Excel.ListObject> kontrol eder.  
@@ -58,7 +55,7 @@ ms.locfileid: "35677183"
  Verilere bağlı bir XML dosyası okunurken <xref:Microsoft.Office.Tools.Excel.ListObject> denetim eğilimlidir denetimi ilk bağlamak ve ardından arama yavaş olacak şekilde <xref:System.Data.DataSet.ReadXml%2A> DataSet'i doldurmak için. Performansı artırmak için çağrı <xref:System.Data.DataSet.ReadXml%2A> denetimi bağlamadan önce.  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>ListObject denetimlerini veri kaynağından bağlantısını kes  
- Doldurduktan sonra bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim liste nesnesi verilerde yapılan değişiklikleri veri kaynağına etkilemez, böylece bir veri kaynağına bağlayarak veri ile kesebilirsiniz. Daha fazla bilgi için bkz [nasıl yapılır: ListObject dolgu denetimleri ile verileri](../vsto/how-to-fill-listobject-controls-with-data.md).  
+ Doldurduktan sonra bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim liste nesnesi verilerde yapılan değişiklikleri veri kaynağına etkilemez, böylece bir veri kaynağına bağlayarak veri ile kesebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ListObject denetimlerini veri ile doldurmak](../vsto/how-to-fill-listobject-controls-with-data.md).  
   
 ### <a name="restore-column-and-row-order"></a>Sütun ve satır sırası geri yükleme  
  Veri bağladığınızda bir <xref:Microsoft.Office.Tools.Excel.ListObject> Visual Studio çalışma kitabının kaydedilmiş her sütun ve satır sırasını izler tasarım zamanında, bir belgeye eklendikten sonra Denetim. Bir kullanıcı taşınırsa <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanı sırasında satırları veya sütunları yeni sipariş çalışma kitabı sonraki açılışında korunur ve <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi veri kaynağına yeniden bağlar.  
@@ -112,17 +109,15 @@ ms.locfileid: "35677183"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)   
- [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-listobject-controls.md)   
  [Nasıl yapılır: ListObject denetimine yeni bir satır eklendiğinde verileri doğrulama](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [Nasıl yapılır: eşleme ListObject sütunlarıyla verileri](../vsto/how-to-map-listobject-columns-to-data.md)   
- [Nasıl yapılır: dolgu ListObject denetimlerini veri ile](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Nasıl yapılır: ListObject sütunlarıyla verileri eşleme](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Nasıl yapılır: ListObject denetimlerini veri ile doldurabilirsiniz.](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939404"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Nasıl yapılır: bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Nasıl Yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme
   Microsoft Office uygulamaları, beklenmedik şekilde davranmasına VSTO Add-Ins devre dışı bırakabilirsiniz. Uygulamanın VSTO eklenti yüklemez, hata ayıklamayı denediğinizde, uygulama sabit devre dışı ya da geçici olarak devre dışı bırakılmış VSTO eklenti gerekebilir.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35677733"
  [Office çözümleri oluşturun](../vsto/building-office-solutions.md)   
  [Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md)   
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)  
-  
-  

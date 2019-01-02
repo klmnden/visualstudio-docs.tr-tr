@@ -1,8 +1,6 @@
 ---
 title: Eşzamanlılık Namespace (eşzamanlılık görselleştiricisi) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 781e5251dcb0580c4e6ae36e33e6af2b16f3a79d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823794"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Eşzamanlılık ad alanı (eşzamanlılık görselleştiricisi)
-`Concurrency` Ad alanı sınıflar sağlar ve size işlevleri erişim eşzamanlılık çalışma zamanı C++ için eşzamanlı bir programlama çerçevesi. Daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime).  
+`Concurrency` Size işlevleri erişmek için eşzamanlılık çalışma zamanı C++ için eşzamanlı programlama çerçevesi ve ad alanı sınıflar sağlar. Daha fazla bilgi için [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,7 +34,7 @@ namespace Concurrency;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Tanılama Ad Alanı](../profiling/diagnostic-namespace.md)|`diagnostics` Ad alanı, eşzamanlılık görselleştiricisi işaretleyicileri yayma için işlevsellik sağlar.|  
+|[Tanılama Ad Alanı](../profiling/diagnostic-namespace.md)|`diagnostics` Ad alanı için eşzamanlılık görselleştiricisi işaretleyicileri yayma işlevselliği sağlar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** cvmarkersobj.h  

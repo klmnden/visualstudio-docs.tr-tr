@@ -1,8 +1,6 @@
 ---
 title: 'DA0039: Çok yüksek oranda kilit çakışmaları | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.39
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4548e190b7008c887ccf1c149a95f52bd8d7892d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d806b6f6bb375dd05cebc56faadc396e3d80516
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962577"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Çok yüksek oranda kilit çakışması
 
@@ -48,7 +46,7 @@ ms.locfileid: "49845712"
  Bu kural, bir profil oluşturma çalışması süresince alınan ölçümlere aşırı yüksek miktarda bir kilit çakışması var. belirttiğinizde tetikler. Kilit çakışması kilit için bekleyen iş parçacıklarının yürütülmesini geciktirmek. Kilit çakışması birim testlerini veya daha düşük bir son donanım üzerinde çalışan yük testlerini bile oldukça küçük miktarlarda araştırılmalıdır.  
 
 > [!NOTE]
->  Profil oluşturma verilerinin bildirilen kilit çakışması oranını önemli ancak değil aşırı olduğunda [DA0038: yüksek oranda kilit çakışması](../profiling/da0038-high-rate-of-lock-contentions.md) bilgi iletisi yerine bu uyarı iletisi tetiklenir.  
+>  Profil oluşturma verilerinin bildirilen kilit çakışması oranını önemli ancak değil aşırı olduğunda [DA0038: Yüksek oranda kilit çakışması](../profiling/da0038-high-rate-of-lock-contentions.md) bilgi iletisi yerine bu uyarı iletisi tetiklenir.  
 
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
  İletiyi gitmek için çift tıklatın [işaretleri](../profiling/marks-view.md) profil oluşturma verilerinin görünümü.  Bulma **.NET CLR LocksAndThreads\Contention hızı / sn** sütun. Varsa belirli program yürütme aşamaları kilit çakışması diğer aşamaları ağır olduğu belirleyin.  

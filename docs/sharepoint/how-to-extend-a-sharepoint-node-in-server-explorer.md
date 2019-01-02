@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e39d108d78782413cd120e2a00b97f85784004b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940433"
 ---
-# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl Yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme
   Altındaki düğümleri genişletebilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Yeni alt düğümleri, kısayol menü öğeleri ve özellikleri için var olan bir düğüm eklemek istediğinizde bu kullanışlıdır. Daha fazla bilgi için [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint düğümünü genişletme  
@@ -48,7 +45,7 @@ ms.locfileid: "49861845"
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Site bağlantı düğümleri (site URL'leri görüntüleme düğüm) belirtmek için bu değerleri site düğümleri veya diğer tüm üst düğümleri kullanım **Sunucu Gezgini**.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Bir SharePoint sitesindeki bir liste, alan veya içerik türünü temsil eden bir düğüm gibi ayrı ayrı bir bileşen temsil eden yerleşik düğümlerinden belirtmek için bu değerleri kullanırsınız.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Bu değerleri bir liste, alan veya içerik türünü temsil eden bir düğüm gibi bir SharePoint sitesindeki tek tek bir bileşen temsil eden yerleşik düğümlerinden belirtmek için kullanın.  
   
 6.  Uygulamanızda <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> yöntemi, kullanım üyeleri *nodeType* düğüme özellikleri eklemek için parametre. Bu parametre bir <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> tanımlanan olaylara erişim sağlayan nesne <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> arabirimi. Örneğin, aşağıdaki olayları işleyebilir:  
   
@@ -56,7 +53,7 @@ ms.locfileid: "49861845"
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Düğümü için özel bir kısayol menü öğesi eklemek için bu olayı işleyin.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Özel özellikler için düğümü eklemek için bu olayı işleyin. Özellikleri görünür **özellikleri** düğümü seçildiğinde penceresi.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Düğümü için özel özellikler eklemek için bu olayı işleyin. Özellikleri görünür **özellikleri** düğümü seçildiğinde penceresi.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde iki farklı türde düğüm uzantısı oluşturma işlemini göstermektedir:  
@@ -68,7 +65,7 @@ ms.locfileid: "49861845"
   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
   [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
-  Bu uzantı, düğüm düzenlenebilir dize özelliği ekler. SharePoint sunucusu salt okunur verileri görüntüleyen özel özellikler de oluşturabilirsiniz. Bunun nasıl yapılacağını gösteren bir örnek için bkz: [izlenecek yol: Sunucu Gezgini web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+  Bu uzantı, düğüm düzenlenebilir dize özelliği ekler. SharePoint sunucusu salt okunur verileri görüntüleyen özel özellikler de oluşturabilirsiniz. Bunun nasıl yapılacağını gösteren bir örnek için bkz: [izlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ## <a name="compile-the-code"></a>Kod derleme  
  Bu örnek aşağıdaki derlemelere başvurular gerektirir:  
@@ -89,4 +86,3 @@ ms.locfileid: "49861845"
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

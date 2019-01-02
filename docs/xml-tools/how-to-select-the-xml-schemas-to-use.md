@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: XML şemalarını seçme'
+title: 'Nasıl Yapılır: Kullanılacak XML Şemalarını Seçme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824398"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Nasıl yapılır: kullanılacak XML şemalarını seçin
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Nasıl Yapılır: Kullanılacak XML şemalarını seçin
 
 XML Düzenleyicisi bulunan bir şema önbelleği sağlar *%InstallDir%\Xml\Schemas* dizin. Şema önbelleği, IntelliSense ve XML belgesi doğrulama için kullanılan XML şemaları iyi bilinen içerir.
 
@@ -40,7 +39,7 @@ Gizli çözüm kullanıcı seçenekleri dosyası'nda belirttiğiniz şemaları k
 
    - Listelenen bir şema seçin **XML şemaları** iletişim kutusunda, tıklayın **kullanım** sütun tıklayın ve ardından **Bu şemayı kullan**.
 
-     veya
+     -veya-
 
    - Birden çok şema listelenen seçin **XML şemaları** iletişim, sütuna sağ tıklayıp **Bu şemayı kullan**.
 

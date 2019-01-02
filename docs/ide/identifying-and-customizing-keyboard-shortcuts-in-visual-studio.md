@@ -2,7 +2,6 @@
 title: Klavye kısayollarını tanımlama ve özelleştirme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820403"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Tanımlamak ve Visual Studio'daki klavye kısayollarını özelleştirme
 
@@ -69,7 +68,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
 
 2. Genişletin **ortam** klasörünü ve ardından **klavye**.
 
-3. İsteğe bağlı: adı, boşluk olmadan komut bir kısmını veya tamamını girerek komutların listesini filtrelemek **içeren komutları göster** kutusu.
+3. İsteğe bağlı: Adı, boşluk olmadan komut bir kısmını veya tamamını girerek komutların listesini filtrelemek **içeren komutları göster** kutusu.
 
 4. Listede, klavye kısayolu atamak istediğiniz komutu seçin.
 
@@ -78,7 +77,7 @@ Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamış
     Örneğin, seçebileceğiniz **genel** kısayolun her bağlamda çalışmasını istiyorsanız. Başka bir düzenleyicide Genel olarak eşlenmemiş herhangi bir kısayolu kullanabilirsiniz. Aksi takdirde düzenleyici kısayolu geçersiz kılar.
 
     > [!NOTE]
-    > Bir klavye kısayolunu parçası olarak şu tuşları atayamazsınız **genel**: yazdırma ekran/Sys Rq, kaydırma Lock, Pause/Break, sekme, Caps Lock, INSERT, Home, End, Page Up, Page Down, Windows logosu tuşu, uygulama anahtarı, herhangi bir ok anahtarları veya Enter; Num Lock, Delete veya sayısal tuş takımındaki; temizleyin Ctrl + Alt + Delete tuş bileşimi.
+    > Bir klavye kısayolunu parçası olarak şu tuşları atayamazsınız **genel**: Ekran/Sys Rq, Scroll Lock, Pause/Break, sekme, Caps Lock, INSERT, giriş, End, Page Up, Page Down, Windows logosu tuşu, uygulama tuşu, ok tuşlarını veya Enter'ı yazdırmak; Num Lock, Delete veya sayısal tuş takımındaki; temizleyin Ctrl + Alt + Delete tuş bileşimi.
 
 6. İçinde **kısayol tuşlarına basın** kutusunda, kullanmak istediğiniz kısayolu girin.
 

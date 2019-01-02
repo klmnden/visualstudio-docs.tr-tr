@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: belirtin derleme olayları (Visual Basic)'
+title: 'Nasıl Yapılır: Derleme olayları belirtme (Visual Basic)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828871"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: belirtin derleme olayları (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Nasıl Yapılır: Derleme olayları belirtme (Visual Basic)
 
 Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler derleme işleminin bir parçası olarak çalıştırmak için kullanılabilir. Derleme öncesi olayları önce derleme oluşur; derleme sonrası olayları derleme sonra oluşur.
 
@@ -50,7 +49,7 @@ Derleme olayları belirtilir **Build Events** iletişim kutusu, kullanılabilir 
     > [!NOTE]
     > Derleme öncesi veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Örnek: derleme sonrası olay kullanarak bildirim bilgileri değiştirmek üzere nasıl
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgilerini değiştirme
 
 Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ayarlama işlemi gösterilmektedir kullanarak bildirim bir *.exe* adlı bir derleme sonrası olay komut ( *. exe.manifest* proje dosyasında Dizin). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört kısımlı bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildiriminin:
 
@@ -64,7 +63,7 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir .exe komutu oluşturmak için
 
-1. Komut için bir konsol uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
+1. Komut için bir konsol uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.
 
 2. İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **konsol uygulaması** şablonu. Projeyi adlandırın `ChangeOSVersionVB`.
 
@@ -127,7 +126,7 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için
 
-1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.
+1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.
 
 2.  İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows Masaüstü** ardından **Windows Forms uygulaması** şablonu. Projeyi adlandırın `VBWinApp`.
 3.  Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
@@ -169,4 +168,4 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
 - [Derleme sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Yayımlama Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)
 - [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Nasıl yapılır: belirtin derleme olayları (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Nasıl yapılır: Derleme olayları belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)

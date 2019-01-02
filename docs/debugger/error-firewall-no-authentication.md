@@ -1,8 +1,6 @@
 ---
-title: 'Hatası: Hiçbir kimlik doğrulama güvenlik duvarı | Microsoft Docs'
-ms.custom: ''
+title: 'Hata: Güvenlik Duvarı kimlik doğrulaması yok | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.firewall.noauth
@@ -16,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ca9603b7b678eb288b78d09f62cc8aac5774ebc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a37fc9c1df938c1cb4817b74d2ebb1d239377823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827240"
 ---
-# <a name="error-firewall-no-authentication"></a>Hata: Güvenlik Duvarı Kimlik Doğrulaması Yok
-Internet Bağlantısı Güvenlik Duvarı uzak makinesinde uzaktan hata ayıklama izin verecek şekilde ayarlanır değil. İle uzaktan hata ayıklama için `No Authentication`, msvsmon.exe özel durumlar listesine eklenmelidir. Bazı IPSec bağlantı noktaları açma de gerekebilir.  
+# <a name="error-firewall-no-authentication"></a>Hata: Güvenlik Duvarı kimlik doğrulaması yok
+Internet Bağlantısı Güvenlik Duvarı uzak makinede uzaktan hata ayıklamaya izin verecek şekilde ayarlanır değil. İle uzaktan hata ayıklama `No Authentication`, msvsmon.exe özel durumlar listesine eklenmesi gerekir. Bazı IPSec bağlantı noktaları açma de gerekebilir.  
   
 > [!NOTE]
->  Uzaktan hata ayıklayıcı otomatik olarak Windows Güvenlik Duvarı'nı yapılandırmanız mümkün olur. Üçüncü taraf güvenlik duvarı yazılımı veya bir donanım güvenlik duvarı gibi Windows Güvenlik Duvarı dışında bir güvenlik duvarı kullanırken, uzaktan hata ayıklama izin vermek için Güvenlik Duvarı'nı el ile yapılandırılması gerekir. Bunu yapmak için bu msvsmon.exe TCP/IP bağlantı noktalarında trafiğe izin dinlemede. Varsayılan olarak, bu, bağlantı noktası 4018 ve burada 4018 tüm işletim sistemlerinde kullanılır ve 4019 yalnızca Windows x64 x86 hata ayıklama izin vermek için kullanılan 4019 işlemlerdir.  
+>  Uzaktan hata ayıklayıcıyı otomatik olarak Windows Güvenlik Duvarı'nı yapılandırabilirsiniz. Windows Güvenlik Duvarı gibi üçüncü taraf yazılım güvenlik duvarı veya donanım güvenlik duvarı dışında bir güvenlik duvarı kullanırken, uzaktan hata ayıklama izin vermek için güvenlik duvarını el ile yapılandırılması gerekir. Bunu yapmak için msvsmon.exe'nin TCP/IP bağlantı noktalarında trafiğe izin dinlediği. Varsayılan olarak, bu, bağlantı noktası 4018 ve burada 4018 tüm işletim sistemlerinde kullanılır ve 4019 yalnızca Windows üzerinde x64 x86 hata ayıklamaya izin verecek şekilde kullanılan 4019 işlemlerdir.  
   
- Daha fazla bilgi için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).
+ Daha fazla bilgi için [uzaktan hata ayıklama](../debugger/remote-debugging.md).

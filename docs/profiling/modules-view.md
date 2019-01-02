@@ -1,8 +1,6 @@
 ---
 title: Modüller görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.modules
@@ -16,21 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcafc9960f9ff4c053e63b1fc5abfd75bb41c995
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6370b15d1530a924396b72cbefabd782094e2b91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823017"
 ---
 # <a name="modules-view"></a>Modüller Görünümü
-Modüller görünümü profil oluşturma verileri modüllerini listeler. Her bir hiyerarşik ağaç kök düğümünün modülüdür. Profili işlevleri modülün modül düğümünün altında listelenir. Profil oluşturma verileri örnekleme yöntemini kullanarak toplanan satırı bilgileri işlevi düğümünün altında listelenir ve yönerge işaretçisi veri satırı düğümünün altında listelenir.  
+Modüller görünümü, profil oluşturma verilerinin modülleri listeler. Her bir hiyerarşik ağaç kök düğümü modülüdür. Profili oluşturulan işlevler modülü, modül düğümünün altında listelenir. Profil oluşturma verilerinin örnekleme metodu kullanılarak tarafından toplanan, satır bilgileri işlevi düğümünün altında listelenir ve yönerge işaretçisi veri satırı düğümünün altında listelenir.  
   
  Genişlet veya daralt görüntülemek veya modül performans verileri görünümü kapatmak için modül adı.  
   
- Sütun eklemek veya kaldırmak için rapor penceresinde sağ tıklayın ve ardından **Sütun Ekle/Kaldır**. Verileri bir sütun adı tıklayarak sıralayabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Rapor Görünümü Özelleştir sütunları](../profiling/how-to-customize-report-view-columns.md).  
+ Sütun ekleme veya kaldırma için rapor penceresindeki sağ tıklayın ve ardından **sütunları Ekle/Kaldır**. Bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
   
- Modüller görünümü içinde kullanılabilir sütunlar verileri toplamak için kullanılan profil yöntemine (örnekleme veya araçları) bağlıdır ve .NET bellek verileri profil toplanmış çalıştırın.  
+ Modüller görünümünde kullanılabilen sütunların veri toplamak için kullanılan profil oluşturma yöntemine (örnekleme veya Araçlar) bağlıdır ve .NET bellek verileri profil oluşturma çalışmasında toplanan açmasa da Çalıştır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Modüller görünümü](../profiling/modules-view-sampling-data.md)   

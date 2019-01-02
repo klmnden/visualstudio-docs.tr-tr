@@ -2,19 +2,18 @@
 title: Alan, özellik, yerel değişken oluştur
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 59d2cc85bb8aa8989e87f55bf105d4ac37117a56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825376"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Visual Studio'da bir alan, özelliği veya yerel değişken oluştur
 
@@ -24,11 +23,11 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen önce bildirilmemiş alan, özelliği veya yerel kodu oluşturmanıza olanak tanır.
+**Ne:** Hemen önce bildirilmemiş alan, özelliği veya yerel kodu oluşturmanıza olanak sağlar.
 
-**Ne zaman:** yazarken, yeni bir alan, özelliği veya yerel tanıtır ve düzgün bir şekilde, otomatik olarak bildirmek istiyor.
+**ne zaman:** Size yeni bir alan, özelliği veya yerel yazarken tanıtır ve düzgün bir şekilde, otomatik olarak bildirmek.
 
-**Neden:** ancak bu özellik bildirimi oluşturmak ve otomatik olarak yazın, kullanmadan önce alan, özelliği veya yerel bildirebilirsiniz.
+**Neden:** Alan, özelliği bildirip veya yerel kullanmadan önce ancak bu özellik bildirimi oluşturur ve otomatik olarak yazın.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

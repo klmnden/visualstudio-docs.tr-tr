@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil etme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: ClickOnce uygulamasına Önkoşullar dahil etme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d28da26cd01b804f8527e42c9ed3aa7977ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a357b15485115a5acbd7750f022366420903857d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943466"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil etme
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulamasına Önkoşullar dahil etme
 Önkoşul yazılımı dağıtmadan önce bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması gerekir indirmeniz olan yükleme paketlerini geliştirme bilgisayarınıza bu Önkoşullar. Ne zaman bir uygulamayı yayımlamak ve seçin **Uygulamamla aynı konumdan önkoşulları karşıdan**, eğer yükleyici paketleri olmayan bir hata meydana gelir **paketleri** klasör.  
   
 > [!NOTE]
@@ -52,4 +50,4 @@ ms.locfileid: "49917862"
     Şimdi, yükleyici paketi uygulamanız ile dağıtabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: ClickOnce uygulamasıyla önkoşulları işaretli'ı yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Nasıl yapılır: ClickOnce uygulamasıyla önkoşulları işaretli yükleyin](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

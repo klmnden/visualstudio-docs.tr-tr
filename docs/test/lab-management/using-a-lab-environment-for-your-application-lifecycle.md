@@ -2,7 +2,6 @@
 title: Devops için bir laboratuvar ortamı kullanma
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7b93e4f065cbd776de9f70fae61594e828a92fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940701"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops için bir laboratuvar ortamı kullanma
 
@@ -77,15 +76,15 @@ Laboratuvar ortamları, Visual Studio Laboratuvar Yönetimi ile oluşturabilece�
 
 **SCVMM ortamları:** yalnızca SCVMM ortamları sanal makineler yalnızca Hyper-V sanallaştırma Framework'te çalıştırabilirsiniz (System Center Virtual Machine Manager), SCVMM tarafından yönetilen sanal makineler içerebilir. Ancak SCVMM ortamlarını standart ortamlarda kullanılabilir olmayan aşağıdaki otomasyon ve yönetim özellikleri sağlar:
 
-- **Ortam anlık görüntülerini:** ortam anlık görüntülerini içeren bir laboratuar ortamında durumunu hızlı bir şekilde, temiz bir ortam geri yükleme veya değiştirilmiş bir ortamın durumu Kaydet. Bir yapı-dağıtma-test iş akışı, kaydetme ve Ortam anlık görüntü geri yükleme işlemini otomatik hale getirmek için de kullanabilirsiniz.
+- **Ortam anlık görüntülerini:** Hızlı bir şekilde, temiz bir ortam geri yükleyin veya değiştirilmiş bir ortam durumunu kaydetmek için bir laboratuvar ortamının durumu ortam anlık görüntülerini içerir. Bir yapı-dağıtma-test iş akışı, kaydetme ve Ortam anlık görüntü geri yükleme işlemini otomatik hale getirmek için de kullanabilirsiniz.
 
-- **Depolanan ortamlar:** bir SCVMM ortamı bir kopyasını depolamak ve söz konusu ortamın birden çok kopyasını dağıtabilirsiniz.
+- **Depolanan ortamlar:** Bir SCVMM ortamı bir kopyasını depolamak ve söz konusu ortamın birden çok kopyasını dağıtabilirsiniz.
 
-- **Ağ yalıtımı:** ağ yalıtımı, bilgisayar adı çakışmaları olmadan bir SCVMM ortamı birden çok eşdeğer kopyasını aynı anda çalışmasına olanak sağlar.
+- **Ağ yalıtımı:** Ağ yalıtımı, bilgisayar adı çakışmaları olmadan bir SCVMM ortamı birden çok eşdeğer kopyasını aynı anda çalıştırmanızı sağlar.
 
-- **Sanal makine şablonları:** bir sanal makine şablonu adı olan bir sanal makine ve diğer tanımlayıcıları kaldırıldı. Bir VM şablonu SCVMM ortamında dağıtıldığında, Microsoft Test Yöneticisi yeni tanımlayıcılarını oluşturur. Bu, birden çok kopyasını aynı ortamdaki bir sanal makine veya birden çok ortamda dağıtın ve ardından sanal makineleri aynı anda çalıştırmak sağlar.
+- **Sanal makine şablonları:** Bir sanal makine şablonu adı olan bir sanal makine olduğu ve diğer tanımlayıcıları kaldırılır. Bir VM şablonu SCVMM ortamında dağıtıldığında, Microsoft Test Yöneticisi yeni tanımlayıcılarını oluşturur. Bu, birden çok kopyasını aynı ortamdaki bir sanal makine veya birden çok ortamda dağıtın ve ardından sanal makineleri aynı anda çalıştırmak sağlar.
 
-- **Depolanan sanal makineler:** proje Kitaplığınızda depolanan ve benzersiz tanımlayıcıları içeren bir sanal makine.
+- **Depolanan sanal makineler:** Proje Kitaplığınızda depolanan ve benzersiz tanımlayıcıları içeren bir sanal makine.
 
 > [!NOTE]
 > Laboratuvar Yönetimi SCVMM 2016 desteklemez.

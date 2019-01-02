@@ -1,23 +1,22 @@
 ---
-title: 'İş Akışı Tasarımcısı - nasıl yapılır: içerik haritası gezintisini kullanma'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: İçerik Haritalı Gezinmeyi Kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3620c1d39413d3c7e2f1339fcc856d2d8421255d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963890"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Nasıl yapılır: içerik haritası gezintisini kullanma
+# <a name="how-to-use-breadcrumb-navigation"></a>Nasıl Yapılır: İçerik Haritalı Gezinmeyi Kullanma
 
 İş Akışı Tasarımcısı'nda görüntülenen etkinlikler kümesini değiştirmek için üç ana yolu vardır:
 

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio SDK başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, reference
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 8281a6d367ae4d6b51576160479ba492ebdf805a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943347"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK başvurusu
 Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio ad alanları, ilgili ad alanları ve diğer ilgi hakkında bilgi içerir.  

@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f63a1734c7df506c2bda0e51546b2ece04ebb00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833429"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Nasıl yapılır: web hizmeti testi oluşturma
+# <a name="how-to-create-a-web-service-test"></a>Nasıl Yapılır: Web hizmeti testi oluşturma
 
 Web performans testi, web hizmetleri test etmek için kullanabilirsiniz. Kullanarak **istek Ekle** ve **Web hizmeti isteği Ekle** seçenekleri, istekleri tek tek özelleştirebilirsiniz **Web Performans Testi Düzenleyicisi** web bulmak için hizmeti sayfaları. Genellikle, web uygulamasında bu sayfa görüntülenmez. Bu nedenle, bu sayfaları için erişim isteği özelleştirmeniz gerekir.
 

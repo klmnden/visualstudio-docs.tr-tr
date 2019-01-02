@@ -2,7 +2,6 @@
 title: Kod analizini yapılandırma
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939769"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl Yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma
 
 Visual Studio'da, Kod Analizi listesinden seçim yapabilir [kural kümeleri](../code-quality/rule-set-reference.md)) yönetilen kod projesi için uygulanacak. Varsayılan olarak, **Microsoft en az önerilen kurallar** kural kümesi işaretli, ancak isterseniz kümesi farklı bir kural uygulayabilirsiniz. Bir çözümde bir veya birden çok proje için kural kümeleri uygulanabilir.
 
 > [!TIP]
-> ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: yapılandırma kod analizi için bir ASP.NET web uygulaması](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework projesi için bir kural yapılandırmak için
 
@@ -77,4 +76,4 @@ Varsayılan olarak, bir çözümün tüm yönetilen projelere atanır *Microsoft
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kod çözümleme kural kümesi başvurusu](../code-quality/rule-set-reference.md)
-- [Nasıl yapılır: bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Nasıl yapılır: Bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

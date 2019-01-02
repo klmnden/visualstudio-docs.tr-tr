@@ -1,9 +1,6 @@
 ---
 title: Eski API'yi kullanarak bir dil hizmetinin bağlamına sağlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940264"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Eski API'yi kullanarak bir dil Hizmet bağlamı sağlar.
 Kullanıcı bağlamı kullanarak sağlamak için bir dil hizmeti için iki seçenek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi: metin işaretçisi bağlam sağlamak ya da tüm kullanıcı bağlamı sağlar. Her arasındaki farklar aşağıda özetlenmiştir.  
   
- Bağlam sağlamak için kendi düzenleyicinizi bağlı bir dil hizmeti ile ilgili daha fazla bilgi için bkz: [nasıl yapılır: bağlam sağlamak için düzenleyicileri](../extensibility/how-to-provide-context-for-editors.md).  
+ Bağlam sağlamak için kendi düzenleyicinizi bağlı bir dil hizmeti ile ilgili daha fazla bilgi için bkz: [nasıl yapılır: Bağlam sağlamak için düzenleyicileri](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Düzenleyici metin işaretçisi bağlam sağlayın  
  Derleyici hataları metin işaretçilerini tarafından belirtilen bağlam sağlamak için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi, uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi. İmleç üzerinde bir metin işaretçisi olduğunda bu senaryoda, Dil Hizmet bağlamı sağlar. Bu anahtar sözcüğü için imlecin sağlamak üzere Düzenleyicisi sağlar **dinamik Yardım** penceresi özniteliği yok.  

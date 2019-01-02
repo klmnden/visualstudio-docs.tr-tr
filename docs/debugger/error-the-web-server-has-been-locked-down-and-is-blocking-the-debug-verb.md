@@ -1,8 +1,6 @@
 ---
 title: 'Hata: Web sunucusu kilitli ve DEBUG fiilini engelliyor | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,38 +16,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941563"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor
-Bir Web uygulaması veya XML Web hizmeti içine Adımlama, IIS Kilitleme aracını çalıştırın ve URLScan yüklü ve etkinleştirilmiş olduğundan başarısız oldu. Bu durum IIS DEBUG fiilini almasını engeller.  
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Hata: Web sunucusu kilitli ve DEBUG fiilini engelliyor
+Bir Web uygulaması veya XML Web hizmeti içine Adımlama, IIS Kilitleme aracını çalıştırın ve URLScan yüklü ve etkin olduğundan başarısız oldu. Bu durum, IIS DEBUG fiilini almasını engeller.  
   
- URLScan IIS Web sitesi yöneticileri gereksiz özelliklerini kapatmak ve, sunucunun işlediği HTTP isteği türü kısıtlama olanağı vermek için IIS Kilitleme Aracı ile birlikte çalışan bir güvenlik aracıdır. Belirli HTTP isteklerini engelleyerek URLScan güvenlik aracı sunucudan ve zarar görmesine neden zararlı olabilecek istekleri engeller.  
+ URLScan IIS Web sitesi yöneticilerinin gereksiz özelliklerini Kapat ve sunucu işleyecek HTTP istek türlerini kısıtlamak olanağı vermek için IIS Kilitleme Aracı ile birlikte çalışan bir güvenlik aracıdır. URLScan güvenlik aracı, belirli HTTP isteklerini engelleyerek, sunucuya ulaşmadan ve zarar görmesine neden zararlı olabilecek istekleri engeller.  
   
- Uygulamanız IIS 6.0, Windows Server 2003 çalıştırıyorsa, çünkü IIS 6.0 aynı işlevselliği sağlar, IIS Kilitleme Aracı çalıştırmamanız.  
+ Uygulamanızı IIS 6.0, Windows Server 2003 çalıştırıyorsa, çünkü IIS 6.0 aynı işlevselliği sağlar, IIS Kilitleme aracını çalıştırmamanız.  
   
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Bir Web sunucusunda yüklü URLScan ile hata ayıklamayı etkinleştirmek için  
   
-1.  Urlscan.ini dosyasını bulun. Normalde, aşağıdakine benzer bir dizinde bulacaksınız:  
+1.  Urlscan.ini dosyasını bulun. Normalde, şuna benzer bir dizinde bulacaksınız:  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
 2.  Dosyanın bir kopyasını oluşturun ve adlandırın **Urlscan.old**.  
   
-3.  Not Defteri veya metin düzenleyiciyi kullanarak Urlscan.ini dosyasını özgün kopyasını açın.  
+3.  Özgün kopyasını Urlscan.ini dosyasını Not Defteri'nde veya tercih ettiğiniz metin düzenleyiciyi kullanarak açın.  
   
-4.  URLScan.ini içinde [AllowVerbs] bölümünü bulun. Hata ayıklama [AllowVerbs] bölümüne ekleyin. Görürseniz; [AllowVerbs] bölümünde hata ayıklama, fiili açıklamadan çıkarın için noktalı virgül kaldırın.  
+4.  URLScan.ini içinde [AllowVerbs] bölümünü bulun. Hata ayıklama [AllowVerbs] bölümüne ekleyin. Görürseniz; [AllowVerbs] bölümünde hata AYIKLAMAK için noktalı fiili açıklamasını kaldırın.  
   
-5.  [DenyVerbs] bölümünü bulun. Hata ayıklama [DenyVerbs] bölümünde görüntülenirse, kaldırın.  
+5.  [DenyVerbs] bölümünü bulun. Hata ayıklama [DenyVerbs] bölümünde görünüyorsa, bunu kaldırın.  
   
 6.  Dosyayı kaydedin.  
   
-7.  Sunucuyu yeniden başlatmanız veya IIS yeniden başlatın.  
+7.  Sunucuyu yeniden başlatın veya IIS'yi yeniden başlatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Hata: Web sunucusu istenen kaynak bulunamadı.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [Hata: Web sunucusu istenen kaynağı bulamadı.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

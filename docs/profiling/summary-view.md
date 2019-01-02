@@ -1,8 +1,6 @@
 ---
 title: Özet görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 5ce66ecc8114d349e0fea241b9f704b1f61de198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842219"
 ---
 # <a name="summary-view"></a>Özet görünümü
 Özet görünümü profil oluşturma yürütmesine en pahalı performans işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünümde bir zaman çizelgesi grafiği sağlar ve profil oluşturma yöntemine performans ölçümleri temelinde en pahalı işlevleri veya nesneleri iki veya daha fazla listesini alan. Bu görünümdeki veriler kullanılan profil oluşturma yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanmadı.  
@@ -40,7 +38,7 @@ ms.locfileid: "51220845"
 
 |||  
 |-|-|  
-|**Kullanıcı olmayan kod Göster**<br /><br /> **Yalnızca benim kodumu Göster**|Yerel kod veya izleme metodunu kullanarak toplanan veriyi profil oluşturma için kullanılabilir değil. Yalnızca kullanıcı kodunun verilerini görüntüleme arasında geçiş yapar (**sadece benim kodumu Göster**) ve sistem kod dahil olmak üzere tüm koddan verileri görüntüleme (**Göster kullanıcı olmayan kod**). Varsayılan olarak, veriler, kullanıcı kodu sınırlıdır. Bir ayarı değiştirmek için bkz [nasıl yapılır: Profil Oluşturucu Araçlar filtreleme sadece benim kodumu görüntülemek için rapor görünümlerini](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
+|**Kullanıcı olmayan kod Göster**<br /><br /> **Yalnızca benim kodumu Göster**|Yerel kod veya izleme metodunu kullanarak toplanan veriyi profil oluşturma için kullanılabilir değil. Yalnızca kullanıcı kodunun verilerini görüntüleme arasında geçiş yapar (**sadece benim kodumu Göster**) ve sistem kod dahil olmak üzere tüm koddan verileri görüntüleme (**Göster kullanıcı olmayan kod**). Varsayılan olarak, veriler, kullanıcı kodu sınırlıdır. Bu ayarı değiştirmek için bkz: [nasıl yapılır: Filtre profil oluşturucu Araçlar raporu görünümlerini'sadece benim kodumu görüntülemek için](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
 |**Rehberi görüntüle**|Performans kural uyarılar görüntüler **hata listesi** penceresi. Daha fazla bilgi için [verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|  
 
 ## <a name="report"></a>Rapor  
@@ -52,8 +50,8 @@ ms.locfileid: "51220845"
 | **Kırpılmış çağrı ağacını Göster** | Çağrı ağacı Görünümü'nde en pahalı yürütme yollarını görüntüler. Daha fazla bilgi için [çağrı ağacı görünümü](../profiling/call-tree-view.md). |
 | **Etkin satırları göster** | Araçlar yöntemini kullanarak toplanan veriyi profil oluşturma için kullanılamaz. Satırlar görünümünde en pahalı kaynak kodu satırlarını görüntüler. Daha fazla bilgi için [satırlar görünümü](../profiling/lines-view.md). |
 | **Raporları Karşılaştır** | Görüntüler **seçin analiz dosyaları karşılaştırma** geçerli dosyayı karşılaştırmak için başka bir profil oluşturma veri dosyasını belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md). |
-| **Rapor verilerini dışarı aktar** | Görüntüler **dışarı aktarma raporu** virgülle ayrılmış değer (.csv) veya .xml dosyaları olarak kaydetmek için bir veya daha fazla rapor görünümlerini belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: dışarı aktarma profil oluşturma araçları raporları](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
-| **Analiz edilen Raporu Kaydet** | Geçerli profil oluşturma veri dosyasını arabirimdeki daha hızlı açılır .vsps dosyası olarak kaydeder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Daha fazla bilgi için [nasıl yapılır: profil oluşturma veri dosyaları kaydetme analiz](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
+| **Rapor verilerini dışarı aktar** | Görüntüler **dışarı aktarma raporu** virgülle ayrılmış değer (.csv) veya .xml dosyaları olarak kaydetmek için bir veya daha fazla rapor görünümlerini belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Dışarı aktarma profil oluşturma araçları raporları](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
+| **Analiz edilen Raporu Kaydet** | Geçerli profil oluşturma veri dosyasını arabirimdeki daha hızlı açılır .vsps dosyası olarak kaydeder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Daha fazla bilgi için [nasıl yapılır: Profil oluşturma veri dosyaları kaydetme analiz](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Rapor verilerini Filtrele** | Verileri rapor görünümünde sınırlandırmak için ölçüt belirleyebileceğiniz profil oluşturma rapor filtresi bölmesi görüntülenir. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md) |
 | **Tam ekrana geç** | Rapor görünümü için tam ekran moduna geçiş yapar. |
 

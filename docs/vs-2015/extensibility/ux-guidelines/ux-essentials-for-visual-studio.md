@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8984b0b7854457fcfa8f2b48e82fa8d12f8e539d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5f207a6bd8ba4947617e6cc1212f92dcfe81516e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940649"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio için UX temel bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +64,7 @@ ms.locfileid: "53060468"
  İlk iletişim kutusu boyutu 1000 piksel yüksekliğinde çerçevesinde IDE'nin en az bu 96 DPI çözünürlükte içinde uyacak şekilde aşmamalıdır.
 
 ### <a name="high-density-displays"></a>Yüksek yoğunluklu görüntüler
- Visual Studio kullanıcı Arabiriminde da kullanıma hazır Windows destekleyen Etkenler ölçeklendirme tüm DPI çalışmak gerekir: % 150 %200 ve % 250.
+ Visual Studio kullanıcı Arabiriminde, kullanıma hazır Windows destekleyen de tüm DPI ölçeklendirme faktörlerindeki çalışması gerekir: % 150, %200 ve % 250.
 
 ## <a name="anti-patterns"></a>Ters desenler
  Visual Studio UI kılavuz İlkelerimizi ve en iyi uygulamaları izleyin birçok örnekleri içerir. Geliştirilmiştir tutarlı olması için ürün UI tasarım desenleri ne, oluşturmakta olduğumuz için benzer geliştiriciler genellikle alın. Kullanıcı etkileşimi ve görsel tasarım tutarlılık sürücü bize yardımcı olur, biz bazen koşullarımıza Zamanlama kısıtlamaları nedeniyle karşılamaz veya hata önceliklendirme birkaç ayrıntıları sunmaya başlayamıyorsunuz, iyi bir yaklaşım budur ancak. Bunlar Visual Studio ortamının içinde hatalı veya tutarsız UI yayılmaya çünkü bu gibi durumlarda, takımlar bu "ters desenler" birini kopyalayıp istiyoruz değil.
@@ -124,19 +123,19 @@ ms.locfileid: "53060468"
 ### <a name="using-command-bars-for-settings"></a>Komut çubuğu ayarları için kullanma
  ![Komut çubuğu anti&#45;deseni &#45; Şekil A](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti deseni FigureA")
 
- **Şekil y: komut çubuğu koruma düzeni**
+ **Şekil y: Komut çubuğu koruma düzeni**
 
  **Şekil A** Bu koruma düzeni temsil eder: ayarı daha fazlasını komutu geçerli bir komut düğmesi altındaki yerleştirme. Bu taslağı hata ayıklamayı Başlat yanı sıra komutları vardır — ister tarayıcı, hata ayıklama olmadan başlat ve içine adımla görünümünde — seçili olan ayar dikkate.
 
  ![Komut çubuğu anti&#45;deseni &#45; şekil B](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti deseni FigureB")
 
- **Şekil B: daha iyi, ancak yine de bir komut çubuğu koruma düzeni**
+ **Şekil B: Daha iyi, ancak yine de bir komut çubuğu koruma düzeni**
 
  Biraz daha iyi, ancak hala istenmeyen sokarak ayarlar bu türün araç çubuklarını, gösterildiği gibi **şekil B**. Bölünmüş düğme daha az yer kaplar ve bu nedenle bir geliştirme açılan listeler, ancak her iki tasarımın bir araç çubuğu gerçekten bir komut değil bir şey yükseltmek için yine de kullanmaktadır.
 
  ![Komut çubuğu anti&#45;deseni &#45; şekil C](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti deseni FigureC")
 
- **Şekil C: doğru Visual Studio komut çubuğu desenini kullanın**
+ **Şekil C: Visual Studio komut çubuğu deseni doğru kullanımı**
 
  İçinde **şekil C**, ayar, bir dizi komut bağlıdır. Ayarlanan genel ayar yoktur ve biz yalnızca dört komuttan arasında geçiş yapıyorsanız. Bu, araç çubuğundaki komutları kabul edilebilir tek durumdur.
 
@@ -176,7 +175,7 @@ ms.locfileid: "53060468"
 
    **Renk hizmet yoksayılıyor ve "daha fazla bilgi edinmek için köprüler" kullanarak Visual Studio ters desenler var.**
 
-   **Daha iyi bir çözüm:** anın bağlantıya tıklayarak soru konusunda sizi uyarmayı.
+   **Daha iyi çözüm için:** Kullanıcının bağlantıya tıklayarak isteyen soru yol açar.
 
 -   Windows Azure hizmetleri nasıl çalışır?
 
@@ -187,4 +186,4 @@ ms.locfileid: "53060468"
 
  **Hatalı:** "Buraya yeni bir proje oluşturma hakkında yönergeler için tıklayın."
 
- **İyi:** "Nasıl oluşturabilirim yeni bir proje?"
+ **İyi:** "Yeni bir proje nasıl oluştururum?"

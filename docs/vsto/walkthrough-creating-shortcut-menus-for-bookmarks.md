@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: yer işaretleri için kısayol menüleri oluşturma'
-ms.custom: ''
+title: 'İzlenecek yol: Yer işaretleri için kısayol menüleri oluşturma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940564"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>İzlenecek yol: yer işaretleri için kısayol menüleri oluşturma
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>İzlenecek yol: Yer işaretleri için kısayol menüleri oluşturma
   Bu izlenecek yol için kısayol menüleri oluşturma işlemini gösterir <xref:Microsoft.Office.Tools.Word.Bookmark> Word için belge düzeyi özelleştirmesinde denetimleri. Kullanıcı yer işaretindeki metnin tıkladığında bir kısayol menü görünür ve metni biçimlendirmek için kullanıcı seçeneklerini sunar.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49884088"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
--   Bu ada sahip bir Word belgesi projesi oluşturma **My yer işareti kısayol menüsünü**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Bu ada sahip bir Word belgesi projesi oluşturma **My yer işareti kısayol menüsünü**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **My yer işareti kısayol menüsünü** için proje **Çözüm Gezgini**.  
   
@@ -193,7 +190,7 @@ ms.locfileid: "49884088"
   
 -   Excel'de ana bilgisayar denetim olaylarına tepki vermek için kod yazın. Daha fazla bilgi için [izlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Bir yer işaretine biçimlendirme değiştirmek için bir onay kutusunu kullanın. Daha fazla bilgi için [izlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirme](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Bir yer işaretine biçimlendirme değiştirmek için bir onay kutusunu kullanın. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak belge biçimlendirmesini](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884088"
  [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)   
  [Yer işareti denetimi](../vsto/bookmark-control.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

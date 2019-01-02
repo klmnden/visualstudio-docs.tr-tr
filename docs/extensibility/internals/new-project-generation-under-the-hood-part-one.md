@@ -1,9 +1,6 @@
 ---
-title: 'Yeni proje oluşturma: altyapı öğeleri, bir bölüm | Microsoft Docs'
-ms.custom: ''
+title: 'Yeni proje oluşturma: Bir altyapı öğeleri, bölüm | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827656"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm Bir
+# <a name="new-project-generation-under-the-hood-part-one"></a>Yeni proje oluşturma: Bir altyapı öğeleri, bölüm
 Hiç kendi proje türünüzü oluşturmak hakkında düşündüğünüz? Yeni bir proje oluşturduğunuzda, gerçekte ne olacağını merak ediyorsunuz? Şimdi başlık altında bir göz atalım ve gerçekten neler olup bittiğini bakın.  
   
  Visual Studio sizin için koordine eden çeşitli görevler vardır:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   Sıralama düzenini değiştirilebilir.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Bir proje türü için kök düğümü bulma  
- Visual Studio ProjectTemplates klasörleri erişir, tüm .zip dosyalarını açan ve herhangi bir .vstemplate dosyaları ayıklanır. .Vstemplate dosyası bir uygulama şablonunu açıklayan XML kullanır. Daha fazla bilgi için [yeni proje oluşturma: başlık altında ikinci Kısım](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Visual Studio ProjectTemplates klasörleri erişir, tüm .zip dosyalarını açan ve herhangi bir .vstemplate dosyaları ayıklanır. .Vstemplate dosyası bir uygulama şablonunu açıklayan XML kullanır. Daha fazla bilgi için [yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > etiketi uygulama için proje türü belirler. Örneğin, bu etikete sahip bir EmptyProject.vstemplate dosyası \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip dosya içeriyor:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** Visual C# ' in Windows düğümü altında yalnızca bir alt düğüm olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm İki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

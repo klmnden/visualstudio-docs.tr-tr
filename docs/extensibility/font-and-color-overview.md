@@ -1,9 +1,6 @@
 ---
 title: Yazı tipi ve renk genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966507"
 ---
 # <a name="font-and-color-overview"></a>Yazı tipi ve renk genel bakış
 Bu konuda ele alınmıştır metin yazı tipi ve renk ayarlarını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Kategorileri ve öğeleri görüntüleme kavramlarını da tanıtılmaktadır ve VSPackages ve çekirdek düzenleyici metin özniteliklerini kullanma açıklanmaktadır.  
@@ -74,7 +71,7 @@ Bu konuda ele alınmıştır metin yazı tipi ve renk ayarlarını [!INCLUDE[vsp
   
 - Her iki özelliği kullanmak yerleşik görüntü öğeleri **metin EditorCategory** ve bunları genişletmek için.  
   
-   Daha fazla bilgi için [nasıl yapılır: yerleşik renklendirilebilir öğeleri kullanma](../extensibility/internals/how-to-use-built-in-colorable-items.md) ve [özel renklendirilebilir öğeler](../extensibility/internals/custom-colorable-items.md).  
+   Daha fazla bilgi için [nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../extensibility/internals/how-to-use-built-in-colorable-items.md) ve [özel renklendirilebilir öğeler](../extensibility/internals/custom-colorable-items.md).  
   
 - Otomatik Kalıcılık geçerli durumu hem yerleşik ve özel görüntü öğeleri ile **metin düzenleyici** kategorisi.  
   

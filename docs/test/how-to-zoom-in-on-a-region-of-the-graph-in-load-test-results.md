@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4026c8077c45fa7f383f59eda0595c8a97eba58d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823522"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Nasıl yapılır: yük testi sonuçlarında grafiğin bir bölgesine yakınlaştırma
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Nasıl Yapılır: Yük testi sonuçlarında grafiğin bir bölgesine yakınlaştırma
 
 Bir yük testi tamamlandıktan sonra yakınlaştırmak ve kaydırmak için grafiğin bir bölgesine yakınlaştırma çubukları kullanabilirsiniz. Yakınlaştırma tarafından ince ayrıntılı olarak yük testi sırasında oluşturulan verileri inceleyebilirsiniz.
 
@@ -59,7 +58,7 @@ Grafikleri görüntülemek için:
 
      \- veya -
 
-     Daha önce çalıştırılan yük testi ayrıntılarını görüntüleyin. Daha fazla bilgi için [nasıl yapılır: erişim yük testi sonuçlarını analiz](../test/how-to-access-load-test-results-for-analysis.md).
+     Daha önce çalıştırılan yük testi ayrıntılarını görüntüleyin. Daha fazla bilgi için [nasıl yapılır: Çözümleme için yük testi sonuçlarına erişme](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Seçin **grafikleri** graflarınız görüntülenmiyorsa.
 
@@ -119,4 +118,4 @@ Görüntülenen birden çok grafik olduğunda, böylece yük testi çalıştırm
 
 - [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

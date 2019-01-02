@@ -1,12 +1,11 @@
 ---
-title: 'Nasıl Yapılır: Menüleri ve Araç Çubuklarını Özelleştirme'
+title: 'Nasıl Yapılır: Menüleri ve araç çubuklarını özelleştirme'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -33,14 +32,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9b9f755379644cbc3dd5b4a06fae44b2416f251
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820935"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Menüleri ve Araç Çubuklarını Özelleştirme
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl Yapılır: Menüleri ve Visual Studio araç çubuklarını özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Araç çubuklarını ve menü çubuğundaki menüleri ekleyip kaldırmanın yanı sıra herhangi bir araç çubuğundaki veya menüdeki komutları ekleyip kaldırmak suretiyle de Visual Studio'yu özelleştirebilirsiniz.

@@ -1,9 +1,6 @@
 ---
 title: Temel Proje sistemi oluşturma, bölüm 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832560"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>1. Bölüm temel proje sistemi oluşturma
 Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenlemek için geliştiricilerin kullanan kapsayıcılardır. Projeleri görünür çözümlerin alt öğeleri olarak **Çözüm Gezgini**. Projeleri, düzenleme, derleme, hata ayıklama ve kaynak kod dağıtma ve Web Hizmetleri, veritabanları ve diğer kaynaklara başvurular oluşturma olanak tanır.  
@@ -71,7 +68,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
   
 ### <a name="to-create-a-basic-project-template"></a>Temel Proje şablonu oluşturmak için  
   
-1. Üç klasör projesi altında başka bir tane ekleyin: *Templates\Projects\SimpleProject*. (İçinde **Çözüm Gezgini**, sağ **SimpleProject** proje düğümünü, işaret **Ekle**ve ardından **yeni klasör**. Klasör adı *şablonları*. İçinde *şablonları* klasör adında bir klasör ekleme *projeleri*. Buna *projeleri* klasör adında bir klasör Ekle *SimpleProject*.)  
+1. Projeye bir diğer altında üç klasör ekleyin: *Templates\Projects\SimpleProject*. (İçinde **Çözüm Gezgini**, sağ **SimpleProject** proje düğümünü, işaret **Ekle**ve ardından **yeni klasör**. Klasör adı *şablonları*. İçinde *şablonları* klasör adında bir klasör ekleme *projeleri*. Buna *projeleri* klasör adında bir klasör Ekle *SimpleProject*.)  
   
 2. İçinde *Templates\Projects\SimpleProject* klasöründe adlı simge olarak kullanılacak bir bit eşlem resim dosyası eklemek *SimpleProject.ico*. Tıkladığınızda **Ekle**, simge Düzenleyicisi açılır.  
   
@@ -444,7 +441,7 @@ Templates
   
 ### <a name="to-test-the-projectnode-class"></a>ProjectNode sınıfı test etmek için  
   
-1.  Tuşuna **F5** hata ayıklama başlatılamıyor. Deneysel örneğinde yeni bir SimpleProject oluşturun.  
+1.  Hata ayıklamaya başlamak için **F5**'e basın. Deneysel örneğinde yeni bir SimpleProject oluşturun.  
   
 2.  Visual Studio bir proje oluşturmak için proje fabrikanızı çağırmalıdır.  
   
@@ -559,7 +556,7 @@ Templates
      Şablon parametreleri $nameSpace$ ve $className$ yeni değerlere sahip olmayan dikkat edin. Sonraki bölümde şablon parametre değiştirme uygulamak öğreneceksiniz.  
   
 ## <a name="substitute-template-parameters"></a>Şablon parametreleri değiştirin  
- Bir önceki bölümde, proje şablonu ile Visual Studio kullanarak kaydettiğiniz `ProvideProjectFactory` özniteliği. Bu şekilde bir şablon klasörü yolunu kaydetme geçersiz kılma ve genişletme temel şablon parametre değiştirme etkinleştirme sağlar `ProjectNode.AddFileFromTemplate` sınıfı. Daha fazla bilgi için [yeni proje oluşturma: altyapı öğeleri, bölüm iki](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Bir önceki bölümde, proje şablonu ile Visual Studio kullanarak kaydettiğiniz `ProvideProjectFactory` özniteliği. Bu şekilde bir şablon klasörü yolunu kaydetme geçersiz kılma ve genişletme temel şablon parametre değiştirme etkinleştirme sağlar `ProjectNode.AddFileFromTemplate` sınıfı. Daha fazla bilgi için [yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Artık yeni kod ekleyin `AddFileFromTemplate` sınıfı.  
   

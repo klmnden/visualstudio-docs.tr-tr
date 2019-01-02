@@ -1,8 +1,7 @@
 ---
-title: 'İzlenecek Yol: XSLT Profil Oluşturucusu'
+title: 'İzlenecek yol: XSLT Profil Oluşturucusu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: gewarren
@@ -10,105 +9,105 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f41515ddf04300c075fd82f67bf588d3c17ecc9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835558"
 ---
-# <a name="walkthrough-xslt-profiler"></a>İzlenecek Yol: XSLT Profil Oluşturucusu
+# <a name="walkthrough-xslt-profiler"></a>İzlenecek yol: XSLT Profil Oluşturucusu
 
-XSLT profil oluşturucu ölçü Yardım, değerlendirmek ve performans ile ilgili sorunlar XSLT kodda hedef ayrıntılı XSLT performans raporları oluşturur. XSLT profil oluşturucu yararlı ipuçları XSL ve XSLT stil sayfası iyileştirmeler içerir. XSLT uygulamaları için isteğe bağlı en yüksek performans, bu aracı gerekli olabilir.
+XSLT Profiler ölçülmesine yardımcı olmak, değerlendirme ve performans ile ilgili sorunları XSLT kodda hedef ayrıntılı XSLT performans raporları oluşturur. XSLT Profiler XSL ve XSLT stil sayfası iyileştirmeler için faydalı ipuçları içerir. XSLT uygulamaları için isteğe bağlı en yüksek performans, bu aracı gerekli olabilir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Aşağıdaki örneklerde yordamlarda, Visual Studio ve .NET Framework sürüm 4.0 veya üstünü gerektirir.
+Aşağıdaki örneklerde yer alan yordamlar, Visual Studio ve .NET Framework 4.0 veya sonraki bir sürümü gerektirir.
 
-### <a name="create-the-performance-report"></a>Performans raporu oluşturma
+### <a name="create-the-performance-report"></a>Performans raporu oluşturun
 
 1.  XSLT belge Visual Studio'da açın.
 
-2.  Tıklayın **profil XSLT** bulunan XML menü seçeneği.
+2.  Tıklayarak **profil XSLT** XML menüsünde sağlanır seçeneği.
 
-3.  Giriş XML belgesi sağlar. Bir XML belgesi açık değilse, dosya için istenir.
+3.  Girdi XML belgesini sağlar. Bir XML belgesi zaten açık değilse, dosya için istenir.
 
-4.  Analiz başlatır, ve bir ilerleme çubuğu Düzenleyicisi içinde ilerleme durumunu görüntüler.
+4.  Analiz başlar ve bir ilerleme çubuğu Düzenleyicisi içinde ilerlemesini görüntüler.
 
-5.  XSLT çıkış çıkış Bölmesi'nde görünür olur.
+5.  XSLT çıkış çıkış Bölmesi'nde görünür.
 
-6.  Bir performans oturumu sona erdikten sonra performans raporu denetleyin. Bir performans raporu kaydedilen verileri görüntülemek ve XSLT performansını çözümlemek sağlar.
+6.  Performans oturumu sona erdikten sonra bu performans raporu denetleyin. Bir performans raporda kaydedilen verileri görüntüleyin ve XSLT Performans analiz sağlar.
 
-### <a name="get-all-the-available-views"></a>Tüm kullanılabilir görünümleri Al
+### <a name="get-all-the-available-views"></a>Tüm kullanılabilir görünümlere Al
 
-1.  Tıklayın **Geçerli Görünüm** kullanılabilen tüm görünümleri almak için aşağı açılan liste.
+1.  Tıklayarak **Geçerli Görünüm** tüm kullanılabilir görünümlere almak için aşağı açılan listesi.
 
-2.  Seçin **özeti görünümü** seçeneğini **Geçerli Görünüm** aşağı açılan liste. Varsayılan olarak, bir performans raporu görüntülenen **özeti görünümü**. Bu görünüm, XSLT belgelerle performans sorunlarını belirlemek için bir başlangıç noktasıdır. **Özeti görünümü** aşağıdaki veri noktaları listeler:
+2.  Seçin **özeti görünümünü** seçeneğini **Geçerli Görünüm** aşağı açılan listesi. Varsayılan olarak, bir performans raporu görüntülenen **özeti görünümünü**. Bu görünüm, XSLT belge ile performans sorunlarını belirlemek için bir başlangıç noktasıdır. **Özeti görünümünü** aşağıdaki veri noktaları listelenmektedir:
 
-    -   En çağrılan işlevleri
+    -   En çok çağrılan İşlevler
 
-    -   Ayrı ayrı çoğu iş işlevleri
+    -   En bireysel işlerle İşlevler
 
-    -   Yürütmek için uzun zaman ayırdığınız işlevleri
+    -   Yürütmek için en uzun zaman ayırdığınız işlevleri
 
-3.  Varsayılan olarak, her veri noktası için üç sütun bulunur: adını işlevi, mutlak değeri çağrılarının sayısı ve toplam işlev çağrıları için adlandırılmış işlevinin bir yüzde değeri. Her veri noktası **özeti görünümü**, daha ayrıntılı görünümler işlevi veri noktalarında sağ tıklayarak gidebilirsiniz.
+3.  Varsayılan olarak, her veri noktası için üç sütun vardır: işlev, mutlak değeri içinde çağrı sayısı ve toplam işlev çağrısı adlandırılmış işlevinin bir yüzde değeri adı. Her bir veri noktası **özeti görünümünü**, daha ayrıntılı görünüm için işlev veri noktalarına sağ tıklayarak gidebilirsiniz.
 
-4.  Seçin **işlev görünümü** seçeneğini **Geçerli Görünüm** aşağı açılan liste. **İşlev görünümü** profil oluşturma sırasında çağrılan işlevler listeler. Verileri bir sütun adı tıklayarak sıralayabilirsiniz. Varsayılan olarak görüntülenen sütunları şunlardır:
+4.  Seçin **işlev görünümü** seçeneğini **Geçerli Görünüm** aşağı açılan listesi. **İşlev görünümü** profil oluşturma sırasında çağrılan işlevlerin listeler. Bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Varsayılan olarak görüntülenen sütunlar şunlardır:
 
     -   **İşlev adı**
 
-    -   **Geçen dahil süre**
+    -   **Geçen kapsamlı süre**
 
-    -   **Geçen özel süre**
+    -   **Geçen dışlamalı süre**
 
-    -   **Uygulama dahil süresi**
+    -   **Kapsamlı uygulama süresi**
 
-    -   **Uygulama özel süresi**
+    -   **Dışlamalı uygulama süresi**
 
     -   **Çağrı sayısı**
 
-5.  Tüm saat sütunları mutlak değerler ve yüzde görüntülenir. Terim **özel** diğer işlevleri tarafından harcanan süre dışlayacak biçimde geçen yürütme adında bu işlev yürütülmesi sırasında bir işlevi için toplam süreyi gösterir.
+5.  Tüm saat sütunları hem mutlak değerler hem de yüzde görüntülenir. Terim **özel** diğer işlevleri tarafından harcanan zamanı fiyatlara geçen yürütülürken, bu işlevin yürütülmesi sırasında çağrılan işlev için toplam süreyi ifade eder.
 
-6.  Terim **Inclusive** adlı ve diğer işlevleri olarak adlandırılan bu işlevler adlı herhangi bir işlev, yürütme süresini de dahil olmak üzere tüm işlevleri yürütülen toplam zamanın başvuruyor.
+6.  Terim **Inclusive** adlı ve diğer işlevleri olarak adlandırılan işlevlerin çağrılma bunlardan herhangi bir işlev, yürütme süresi dahil olmak üzere tüm işlevlerin yürütülürken harcanan toplam süreyi gösterir.
 
 ### <a name="select-callercallee-view"></a>Arayan/Aranan görünümü seçin
 
-1.  Seçin **arayan/Aranan** görünümünde **Geçerli Görünüm** aşağı açılan liste.
+1.  Seçin **çağıran/çağrılan** görünümünde **Geçerli Görünüm** aşağı açılan listesi.
 
-2.  **Arayan/Aranan** görünümü aşağıdaki üç farklı bölümden vardır:
+2.  **Çağıran/çağrılan** görünümü, aşağıdaki üç ayrı bölümü vardır:
 
-    -   **Adlı işlevleri**: belirli bir işlev adı verilen tüm işlevleri görünümü üst kısmından listelenir.
+    -   **Çağıran işlevler**: Belirli bir işlevi çağrılan tüm işlevleri görünümün üst kısmında listelenir.
 
-    -   **Geçerli işlevi**: çağrıldı belirli işlevi görünümü orta bölümünde listelenir.
+    -   **Geçerli işlev**: Belirli işlev çağrıldı görünümün orta bölümünde listelenir.
 
-    -   **Adı veriliyordu tarafından işlevleri** : belirli bir işlev tarafından çağrılan tüm işlevleri görünümü alt kısmından listelenir.
+    -   **Tarafından çağrılan işlevler** : Belirli işlev tarafından çağrılan tüm işlevleri görünümün alt kısmında listelenir.
 
-3.  Bir işlev adlandırırsanız `SyncToNavigator` adlı tüm işlevleri görünümü orta bölümünde görünür `SyncToNavigator` işlevi görünür Görünüm ve adı veriliyordu tarafından tüm işlevler üst kısmında `SyncToNavigator` görünüm alt kısmında görüntülenir.
+3.  Adlı bir işlev ise `SyncToNavigator` çağrılan tüm işlevleri görünümü ikinci kısmında görünür `SyncToNavigator` işlevi Görünüm ve tarafından çağrılan tüm işlevler üst kısmında görünür `SyncToNavigator` görünümün alt kısmında görüntülenir.
 
-4.  Görünümün Orta parçası işlevinde herhangi diğer iki bölümden görünümü içinde listelenen işlevlerden çift tıklatarak değiştirebilirsiniz. Görünüm sonra otomatik olarak değişiklikleri yansıtacak şekilde güncelleştirilir.
+4.  İşlev görünümü Orta kısmındaki görünümün diğer iki bölümü listelenen işlevlerden herhangi birinin çift tıklayarak değiştirebilirsiniz. Görünüm, daha sonra otomatik olarak değişiklikleri yansıtacak şekilde güncelleştirilir.
 
-5.  Sütun adları tıklayarak veri daha da sıralayabilirsiniz.
+5.  Ayrıca, verileri sütun adlarını tıklatarak sıralayabilirsiniz.
 
 ### <a name="select-call-tree-view"></a>Çağrı ağacı görünümü seçin
 
-1.  Seçin **çağrı ağacı görünümü** içinde **Geçerli Görünüm** aşağı açılan liste. Bu görünüm, program yürütme ağacı görünümdür.
+1.  Seçin **çağrı ağacı görünümü** içinde **Geçerli Görünüm** aşağı açılan listesi. Bu program yürütme ağaç görünümünü görünümüdür.
 
-2.  **Çağrı ağacı görünümü** işlem adı olarak ağacının kökü gösterir. Ağaç düğümleri işlevlerdir. Bu görünüm, belirli arama izlemeleri ayrıntıya ve hangi izlemeleri en yüksek performans etkisi çözümlemek sağlar. Görünüm benzer **çağrı yığını Görünüm** hata ayıklama sırasında kullanılabilir. Sütunları yanı sıra **işlev görünümü**, **çağrı ağacı görünümü**, görüntülemek için ek bir sütun **modül adı**.
+2.  **Çağrı ağacı görünümü** işlem adı olarak ağacının kökü gösterir. Ağaç düğümleri işlevlerdir. Bu görünüm belirli çağrı izlemeleri ayrıntıya ve hangi izlemeleri en yüksek performans etkisi analiz sağlar. Görünüm benzer **çağrı yığın görünümü** hata ayıklama sırasında kullanılabilir. Ek sütunları **işlev görünümü**, **çağrı ağacı görünümü**, görüntülenecek ek bir sütun yok **modül adı**.
 
-3.  Seçin **işaretleri** içinde **Geçerli Görünüm** aşağı açılan liste.
+3.  Seçin **işaretleri** içinde **Geçerli Görünüm** aşağı açılan listesi.
 
-4.  SLT Profil Oluşturucu ile ilişkili bir açıklamayı içeren veri toplama akışında görünmesini işaretleri vardır. İşaretleri sayaçları sahip Code yerlerdir. XSLT performans sayaçları toplanamadı XSLT profil oluşturucu söyleyin olduğunda bu işaretlerinden birini yürütülen her zaman sayaçları toplanan. Veriler içeren bir tabloda görüntülenir **işareti kimliği**, **işareti adı** (**Başlat Program**, **Program sonlandırma**) ve  **Zaman damgası**. İşaretleri değil toplanır ve kronolojik sırada görünmesini **işaretleri Görünüm** performans raporu.
+4.  SLT Profiler ile ilişkili bir açıklamayla veri koleksiyonu akışında görünmesini işaretleri vardır. İşaretleri sayaçları sahip kodda yerlerdir. XSLT Profiler XSLT performans sayaçları toplamak için size zaman sayaçları biri bu işaretler, yürütülen her zaman toplanan. Veriler içeren bir tablo görüntülenir **işaret kimliği**, **işareti adı** (**başlangıç programı**, **son Program**) ve  **Zaman damgası**. İşaretleri değil toplanır ve kronolojik sırada görünmesini **işaret görünümü** performans raporu.
 
-### <a name="select-modules-in-the-current-view"></a>Geçerli görünümde modül seçin
+### <a name="select-modules-in-the-current-view"></a>Geçerli görünümde modülleri seçin
 
-1.  Seçin **modülleri** içinde **Geçerli Görünüm** aşağı açılan liste.
+1.  Seçin **modülleri** içinde **Geçerli Görünüm** aşağı açılan listesi.
 
-2.  Modüller görünümü modül düzeyi toplanan tüm işlevleri düz bir listesidir. Genişlet veya daralt görüntülemek veya modül performans verileri görünümü kapatmak için modül adı. Verileri bir sütun adı tıklayarak sıralayabilirsiniz. Varsayılan olarak, vardır hem mutlak değerler hem de yüzde sayılar için **geçen dahil süre**, **geçen özel zaman**, **uygulama dahil süresi**, **Uygulama özel süresi**, ve **çağrı sayısı**.
+2.  Modüller görünümü, tüm işlevler için Modül düzeyinde toplanmış düz listesidir. Genişlet veya daralt görüntülemek veya modül performans verileri görünümü kapatmak için modül adı. Bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Varsayılan olarak mevcuttur hem mutlak değerler hem de yüzde sayılar için **geçen kapsamlı süre**, **geçen dışlamalı süre**, **kapsamlı uygulama süresi**, **Dışlamalı uygulama süresi**, ve **çağrılarını**.
 
-3.  Seçin **işlem** içinde **Geçerli Görünüm** aşağı açılan liste.
+3.  Seçin **işlem** içinde **Geçerli Görünüm** aşağı açılan listesi.
 
 4.  İşlem görünümü içeren bir tablo görüntüler **işlem kimliği**, **işlem adı**, **başlaması zamanı**ve **bitiş zamanı**. Veri sütunu adları tıklayarak sıralanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: XSLT hiyerarşi kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [İzlenecek yol: XSLT hiyerarşisi kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)

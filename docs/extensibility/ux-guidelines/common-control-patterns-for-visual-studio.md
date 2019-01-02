@@ -1,9 +1,6 @@
 ---
 title: Visual Studio için yaygın denetim desenleri | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832641"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio için yaygın denetim desenleri
 ##  <a name="BKMK_CommonControls"></a> Ortak Denetimler  
@@ -49,7 +46,7 @@ Denetimleri stillendirme yaparken dikkate alınması gereken ilk şey, denetimle
   
 -   **Standart (yardımcı programı) iletişim kutuları:** temalı değil. Şablonu yeniden kullanmayın. Temel denetim stili varsayılan ayarları kullanın.  
   
--   **Aracı, windows, belge düzenleyicileri, tasarım yüzeyleriyle ve temalı iletişim kutuları:** renk hizmetini kullanan özel temalı görünümünü kullanın.  
+-   **Araç pencereleri, belge düzenleyicileri, tasarım yüzeyleriyle ve temalı iletişim kutuları:** Renk hizmetini kullanan özel temalı görünümünü kullanın.  
   
 ###  <a name="BKMK_Scrollbars"></a> Kaydırma çubukları  
  Kaydırma çubukları izlemelidir [Windows için ortak etkileşim desenleri kaydırma çubukları](/windows/desktop/Controls/about-scroll-bars) ile içerik bilgilerini genişletilmiş sürece, Kod Düzenleyicisi'nde ister.  
@@ -69,7 +66,7 @@ Denetimleri stillendirme yaparken dikkate alınması gereken ilk şey, denetimle
   
 -   Alanların gerekli  **\<gerekli >** olarak Filigran belgeler bunları içinde. Nadir durumlarda dışında bir arka plan rengini değiştirmemesi gerekir.  
   
--   Doğrulama hatası: bkz [bildirimler ve Visual Studio için ilerleme durumu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Doğrulama hatası: Bkz: [bildirimler ve Visual Studio için ilerleme durumu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Giriş alanlarını, bunlar gösterilir penceresinin genişliğini uygun değil ya da bir yol gibi uzun bir alan uzunluğunu rasgele eşleştirilecek içeriği sığdıracak şekilde boyutlandırılmalıdır. Uzunluğu bir göstergesi kullanıcıya karakterlerinin kaçının tutulacağını alana izin için sınırlamalar olabilir.  
   
@@ -299,7 +296,7 @@ Düğmeyi kullanarak yönergeleri:
 #### <a name="graphical-buttons"></a>Grafik düğmeleri  
 Bazı düğmeleri, her zaman bir grafik görüntüsünü kullanın ve hiçbir zaman alanından tasarruf etmek ve Yerelleştirme sorunları önlemek için metni ekleyin. Bunlar, alan seçicileri ve diğer sıralanabilir listelerinde sıklıkla kullanılır.  
   
-> **Not:** kullanıcınız (hiçbir erişim anahtarları vardır) Bu düğme için sekmesinde, bu nedenle bunları mantıklı bir sırada yerleştirin. Harita `name` sürer ve böylece ekran okuyucular düzgün düğmesi eylemi yorumlama eylem düğmenin özelliği.  
+> **Not:** Kullanıcınız (hiçbir erişim anahtarları vardır) Bu düğme için sekmesinde, bu nedenle bunları mantıklı bir sırada yerleştirin. Harita `name` sürer ve böylece ekran okuyucular düzgün düğmesi eylemi yorumlama eylem düğmenin özelliği.  
   
 | İşlev | Düğme |  
 | --- | --- |  
@@ -371,23 +368,23 @@ Ağaç görünümünde öğeleri seçin ve klavye kullanarak düğümlerin içer
 ##### <a name="tree-view-control"></a>Ağaç görünümü denetimi  
 Visual Studio ağaç denetimleri ortak klavye gezintisi izlemelidir:  
   
--   **Yukarı Ok:** ağacın taşıyarak öğeleri seçin  
+-   **Yukarı Ok:** Ağacın taşıyarak öğeleri seçin  
   
--   **Aşağı ok:** ağacının taşıyarak öğeleri seçin  
+-   **Aşağı ok:** Ağacının taşıyarak öğeleri seçin  
   
--   **Sağ ok:** ağacında bir düğümü genişletin  
+-   **Sağ ok:** Bir ağaç düğümünü genişletin  
   
--   **Sol Ok:** ağacında bir düğümü Daralt  
+-   **Sol Oka Dönüştür:** Ağacında bir düğümü Daralt  
   
--   **Anahtarı girin:** başlatmak, yükleme, yürütme seçili öğe  
+-   **Anahtarı girin:** Başlatma, yükleme, yürütme seçili öğe  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (ağaç görünümü ve ızgara görünümü)  
 Bir grid'in içindeki ağaç görünümünde içeren karmaşık bir denetim trid denetimidir. Ağaç görünümünde, aşağıdaki eklemelerle olarak aynı klavye komutlarını ağacında doğru genişletme ve daraltma saygı:  
   
--   **Sağ ok:** bir düğümünü genişletin. Düğüm genişletildikten sonra en yakın sütuna sağ taraftaki gezinme devam etmelidir. Gezinti satırının sonundaki durdurmanız gerekir.  
+-   **Sağ ok:** Bir düğümünü genişletin. Düğüm genişletildikten sonra en yakın sütuna sağ taraftaki gezinme devam etmelidir. Gezinti satırının sonundaki durdurmanız gerekir.  
   
--   **Sekmesi:** yakın hücrenin sağ taraftaki gitmenizi sağlar.  Satırın sonunda, gezinti ve bir sonraki satıra devam eder.  
+-   **Sekmesi:** En yakın hücreye sağ taraftaki gider.  Satırın sonunda, gezinti ve bir sonraki satıra devam eder.  
   
--   **SHIFT + Tab:** yakın hücrenin soldaki gitmenizi sağlar.  Satırın başlangıcında, gezinti önceki satırdaki en sağındaki hücreyi devam eder.  
+-   **SHIFT + Tab:** Sol taraftaki yakın hücreye gider.  Satırın başlangıcında, gezinti önceki satırdaki en sağındaki hücreyi devam eder.  
   
 ![Visual Studio trid denetiminde](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Visual Studio'da bir trid denetimi

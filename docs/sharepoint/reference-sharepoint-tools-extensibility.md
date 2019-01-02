@@ -1,9 +1,6 @@
 ---
 title: Başvuru (SharePoint araçları genişletilebilirliği) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,23 +12,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0699df6d6826cf2079f2fcfe0358ce4e0a7eebd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ffc082f992542f54c9545e9567a924b5480fc8b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847054"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Başvuru (SharePoint araçları genişletilebilirliği)
-  Bu bölümde Visual Studio'da SharePoint araçları genişletmek için başvuru belgelerini içerir.  
+  Bu bölümde, Visual Studio'da SharePoint araçlarını genişletmek için başvuru belgelerini içerir.  
   
 ## <a name="in-this-section"></a>Bu bölümde
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)  
- Başvuru belgelerine içeren *.spdata* dosyası şeması.  
+ İçin başvuru belgeleri içeren *.spdata* dosya şeması.  
   
  [API Başvurusu &#40;SharePoint araçları genişletilebilirliği&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
- Genişletme Visual Studio'da SharePoint araçları için API başvuru belgeleri içerir.  
+ Visual Studio'da SharePoint araçlarını genişletmek için API başvuru belgelerini içerir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Visual Studio'da SharePoint araçları genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
-  
+ [SharePoint araçlarını Visual Studio'da genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  

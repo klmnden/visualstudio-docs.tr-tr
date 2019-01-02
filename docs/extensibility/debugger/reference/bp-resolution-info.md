@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fafba8e09ad4f0dccb40ebd6fb88b75eef70964d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3d3e96d827e3f6e4979431508b19609f9215651
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824121"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 Bir kod kesme noktası ya da veri kesme noktası bağlı Kesme noktasının bilgiler açıklanmaktadır.  
@@ -28,7 +25,7 @@ Bir kod kesme noktası ya da veri kesme noktası bağlı Kesme noktasının bilg
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-typedef struct _BP_RESOLUTION_INFO {   
+typedef struct _BP_RESOLUTION_INFO {   
    BPRESI_FIELDS          dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
    IDebugProgram2*        pProgram;  
@@ -37,7 +34,7 @@ typedef struct _BP_RESOLUTION_INFO {
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_INFO {   
+public struct BP_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
    public IDebugProgram2         pProgram;  
@@ -64,7 +61,7 @@ public struct BP_RESOLUTION_INFO {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

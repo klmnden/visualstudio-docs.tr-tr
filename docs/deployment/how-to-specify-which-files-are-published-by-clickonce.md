@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe2e5ab9f2074c1706f14ac52f655921af4b9a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826961"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl Yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projedeki uygulama, tüm kod dışı dosyalara yanı sıra uygulama dağıtılır. Bazı durumlarda değil istediğiniz veya belirli dosyaları yayımlamanız gerekir veya koşullara göre belirli dosyaları yüklemek isteyebilirsiniz. Visual Studio dosyaları dışarıda bırak, dosyalar, veri dosyalarını veya önkoşul olarak işaretleme ve koşullu yüklemek için dosya grupları oluşturmak için özellikler sunar.  
   
  Dosyaları bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama yönetilen **uygulama dosyaları** iletişim kutusu, erişilebilir **Yayımla** sayfasının **Proje Tasarımcısı**.  
@@ -39,7 +37,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
   
 -   SQL veritabanı gibi veri dosyaları (*.mdf* ve *.mdb*) dosyalarını ve XML dosyalarını işaretlenir veri dosyaları olarak varsayılan olarak.  
   
--   Derlemelere başvuruları (*.dll* dosyaları) başvuru eklediğinizde, aşağıdaki gibi belirlenmiştir: varsa **Yereli Kopyala** olduğu **False**, varsayılan olarak bir önkoşul olarak işaretlenmiş derleme (**önkoşul (otomatik)**), bulunmalıdır GAC'de uygulama yüklenmeden önce. Varsa **Yereli Kopyala** olduğu **True**, derleme varsayılan olarak bir uygulama derleme olarak işaretlenir (**Ekle (otomatik)**) ve yükleme sırasında uygulama klasörüne kopyalanır. Bir COM başvurusu görünür **uygulama dosyaları** iletişim kutusu (olarak bir *.ocx* dosyası) yalnızca kendi **yalıtılmış** özelliği **True**. Varsayılan olarak dahil edilir.  
+-   Derlemelere başvuruları (*.dll* dosyaları) başvuru eklediğinizde, aşağıdaki gibi belirlenmiştir: Varsa **Yereli Kopyala** olduğu **False**, varsayılan olarak bir önkoşul derleme olarak işaretlenmiş (**önkoşul (otomatik)**), bulunmalıdır GAC'de uygulama yüklenmeden önce. Varsa **Yereli Kopyala** olduğu **True**, derleme varsayılan olarak bir uygulama derleme olarak işaretlenir (**Ekle (otomatik)**) ve yükleme sırasında uygulama klasörüne kopyalanır. Bir COM başvurusu görünür **uygulama dosyaları** iletişim kutusu (olarak bir *.ocx* dosyası) yalnızca kendi **yalıtılmış** özelliği **True**. Varsayılan olarak dahil edilir.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Uygulama dosyaları iletişim kutusuna dosya eklemek için  
   
@@ -117,4 +115,4 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
- [Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 158de56c254c58f1d8a566e4170310a060b0a884
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822245"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Tanımlayıcılar tür adları içermemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +39,7 @@ ms.locfileid: "49862345"
 ## <a name="cause"></a>Sebep
  Dışarıdan görünen üye bir parametre adını veri türü adı içerir.
 
- veya
+ -veya-
 
  Açıkça görünen üyenin adı dil özellikli veri türü adı içerir.
 
@@ -57,7 +56,7 @@ ms.locfileid: "49862345"
 
 - UInt8
 
-- kısa
+- Kısa
 
 - UShort
 
@@ -69,7 +68,7 @@ ms.locfileid: "49862345"
 
 - Uınteger
 
-- uzun
+- Uzun
 
 - ULong
 
@@ -77,7 +76,7 @@ ms.locfileid: "49862345"
 
 - İmzalı
 
-- kayan nokta
+- Kayan
 
 - float32
 
@@ -146,13 +145,10 @@ ms.locfileid: "49862345"
  Parametre ve üye adları türüne göre ara sıra kullanılmasını uygun olabilir. Ancak, hiçbir bilinen yeni geliştirme için senaryolar ortaya burada bu kuraldan bir uyarıyı bastırmak. Önceki sevk sahip kitaplıkları için bu kuraldan bir uyarıyı bastırmak olabilir.
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
  [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Tanımlayıcılar alt çizgi içermemelidir](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
  [CA1719: Parametre adları üye adlarıyla eşleşmemelidir](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-

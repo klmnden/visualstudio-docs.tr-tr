@@ -1,13 +1,8 @@
 ---
-title: 'İzlenecek yol: özel Site iş akışı faaliyeti oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Özel Site iş akışı faaliyeti oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951819"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>İzlenecek yol: özel site iş akışı faaliyeti oluşturma
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>İzlenecek yol: Özel site iş akışı faaliyeti oluşturma
   Bu izlenecek yol kullanarak bir site düzeyinde iş akışı için özel bir etkinlik oluşturma işlemini gösterir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Yalnızca bir site listesindeki tüm site için site düzeyinde iş akışları uygulayın.) Özel Etkinlik bir yedekleme Duyurular listesi oluşturur ve ardından Duyurular listesi içeriğini buna kopyalar.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
@@ -128,6 +123,5 @@ ms.locfileid: "49894176"
 5.  Hızlı Başlat çubuğunda **duyuruları yedekleme** bağlantı. Dikkat bulunan duyuruların hepsini **duyuruları** listesi bu yeni listesine kopyalanmış.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Nasıl yapılır: Olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  

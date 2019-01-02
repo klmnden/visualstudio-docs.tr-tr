@@ -1,8 +1,6 @@
 ---
 title: Eylemler bölmesine genel bakış
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +11,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821133"
 ---
 # <a name="actions-pane-overview"></a>Eylemler bölmesine genel bakış
   Eylemler bölmesi bir özelleştirilebilirdir **belge eylemleri** görev bölmesi, belirli Microsoft Office Word belgesi ya da Microsoft Office Excel çalışma kitabına eklenmiş. Eylemler bölmesinde içindeki diğer yerleşik görev bölmeleri yanı sıra Office görev bölmesi gibi barındırılan **XML kaynağı** görev bölmesinde Excel veya **stilleri ve biçimlendirme** Word görev bölmesinde. Windows Forms veya WPF denetimleri, Eylemler bölmesi kullanıcı arabirimini tasarlamak için kullanabilirsiniz.
@@ -35,7 +33,7 @@ ms.locfileid: "35677791"
 > [!NOTE]  
 >  Eylemler bölmesinde özel görev bölmeleri farklıdır. Özel görev bölmeleri, uygulama, belirli bir belge ile ilişkilidir. Özel görev bölmeleri VSTO eklentileri için bazı Microsoft Office uygulamaları oluşturabilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).  
 
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [bunu nasıl yaparım kullanım WPF denetimleri Excel eylemler bölmesindeki içinde?](http://go.microsoft.com/fwlink/?LinkId=132763).
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Excel eylemler bölmesindeki içinde WPF denetimleri kullanılsın mı? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="display-the-actions-pane"></a>Eylemler bölmesini görüntüle  
  Eylemler bölmesi tarafından temsil edilen <xref:Microsoft.Office.Tools.ActionsPane> sınıfı. Bir belge düzeyi projesi oluşturduğunuzda, bu sınıfın bir örneği kullanılarak kodunuza kullanılabilir `ActionsPane` alanını `ThisWorkbook` (Excel için) veya `ThisDocument` (Word için) projenizde sınıf. Eylemler bölmesini görüntülemek için bir Windows Forms denetimine ekleme <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği `ActionsPane` alan. Aşağıdaki kod örneğinde adlı bir denetim ekler `actions` Eylemler bölmesine.  
@@ -48,16 +46,16 @@ ms.locfileid: "35677791"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Eylemler bölmesi için birden çok denetim ekleme  
  Eylemler bölmesine birden çok denetim eklediğinizde, denetimleri bir kullanıcı denetiminde grup ve ardından kullanıcı denetimine ekleyin <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği. Bu işlem, aşağıdaki adımları içerir:  
 
-1.  Ekleyerek Eylemler bölmesinin kullanıcı arabirimi (UI) oluşturma bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projenize öğesi. Bu öğelerinin her ikisini de içeren özel bir Windows Forms <xref:System.Windows.Forms.UserControl> sınıfı. **Eylemler bölmesi denetimi** ve **kullanıcı denetimi** öğeleri eşdeğer; tek fark, adıdır.  
+1. Ekleyerek Eylemler bölmesinin kullanıcı arabirimi (UI) oluşturma bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projenize öğesi. Bu öğelerinin her ikisini de içeren özel bir Windows Forms <xref:System.Windows.Forms.UserControl> sınıfı. **Eylemler bölmesi denetimi** ve **kullanıcı denetimi** öğeleri eşdeğer; tek fark, adıdır.  
 
-2.  Windows Forms denetimlerine ekleme <xref:System.Windows.Forms.UserControl> Tasarımcısını kullanarak ya da kod yazarak.  
+2. Windows Forms denetimlerine ekleme <xref:System.Windows.Forms.UserControl> Tasarımcısını kullanarak ya da kod yazarak.  
 
-    > [!NOTE]  
-    >  Bir WPF ekleyerek Eylemler bölmesi WPF denetimleri ekleyebilirsiniz <xref:System.Windows.Controls.UserControl> Windows Forms'a <xref:System.Windows.Forms.UserControl>. Daha fazla bilgi için [kullanım WPF denetimleri Office çözümlerinde](../vsto/using-wpf-controls-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Bir WPF ekleyerek Eylemler bölmesi WPF denetimleri ekleyebilirsiniz <xref:System.Windows.Controls.UserControl> Windows Forms'a <xref:System.Windows.Forms.UserControl>. Daha fazla bilgi için [kullanım WPF denetimleri Office çözümlerinde](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3.  Özel kullanıcı denetimi örneğini bulunan denetimler ekleyin `ActionsPane` alanını `ThisWorkbook` (Excel için) veya `ThisDocument` (Word için) projenizde sınıf.  
+3. Özel kullanıcı denetimi örneğini bulunan denetimler ekleyin `ActionsPane` alanını `ThisWorkbook` (Excel için) veya `ThisDocument` (Word için) projenizde sınıf.  
 
- Bu işlem daha ayrıntılı bir şekilde gösteren örnekler için bkz. [nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+   Bu işlem daha ayrıntılı bir şekilde gösteren örnekler için bkz: [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Eylemler Bölmesini Gizle  
  Ancak <xref:Microsoft.Office.Tools.ActionsPane> sınıfında bir <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> yöntemi ve bir <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> özelliği kaldıramazsınız Eylemler bölmesinde kullanıcı arabiriminden tüm üyeleri kullanarak <xref:Microsoft.Office.Tools.ActionsPane> sınıfının kendisini. Çağırma <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> yöntemi veya ayarı <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> özelliğini **false** yalnızca eylemler bölmesindeki; denetimleri gizler görev bölmesinde gizlemez.  
@@ -94,7 +92,7 @@ ms.locfileid: "35677791"
 2.  İçinde **Göster/Gizle** grubunda **belge eylemleri** iki durumlu düğme.  
 
 ## <a name="program-actions-pane-events"></a>Program Eylemler bölmesinde olayları  
- Eylemler bölmesine birden çok kullanıcı denetimi ekleyin ve ardından gösteren ve kullanıcı denetimleri gizleyerek belge olaylarına yanıt için kod yazma. XML Şeması öğelerini belgenize eşlerseniz, ekleme noktasını bir XML öğeleri içinde olduğunda, belirli kullanıcı denetimleri Eylemler bölmesinde gösterebilirsiniz. Daha fazla bilgi için [nasıl yapılır: şemaları Visual Studio içindeki Word belgeleriyle eşleştirme](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) ve [nasıl yapılır: şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
+ Eylemler bölmesine birden çok kullanıcı denetimi ekleyin ve ardından gösteren ve kullanıcı denetimleri gizleyerek belge olaylarına yanıt için kod yazma. XML Şeması öğelerini belgenize eşlerseniz, ekleme noktasını bir XML öğeleri içinde olduğunda, belirli kullanıcı denetimleri Eylemler bölmesinde gösterebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Şemaları Visual Studio içindeki Word belgeleriyle eşleştirme](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) ve [nasıl yapılır: Visual Studio içindeki çalışma sayfalarıyla eşleştirme şemaları eşleme](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
 
  Konak denetimi, uygulama veya belge olaylarını dahil olmak üzere herhangi bir nesnenin olaylara yanıt vermek amacıyla kod da yazabilirsiniz. Daha fazla bilgi için [izlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
 
@@ -107,7 +105,7 @@ ms.locfileid: "35677791"
  Bir ileti kutusu görüntülerseniz, <xref:System.Windows.Forms.Control.Validating> Eylemler bölmesinde, olay üzerindeki bir denetimin olay işleyicisi, odağı denetimden ileti kutusu için ikinci bir kez yükseltilebilir. Bu sorunu önlemek için bir <xref:System.Windows.Forms.ErrorProvider> denetiminin tüm doğrulama hatası iletilerini görüntüler.  
 
 ## <a name="user-control-stacking-order"></a>Kullanıcı denetimi sıralaması  
- Birden çok kullanıcı denetimleri kullanıyorsanız, yatay veya dikey olarak yerleştirilmiş olup olmadığını eylemler bölmesindeki kullanıcı denetimleri düzgün yığın için kod yazabilirsiniz. Kullanıcı denetimleri eylemler bölmesindeki yığınlama sırasını kullanarak ayarlayabilirsiniz <xref:Microsoft.Office.Tools.StackStyle> numaralandırması <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> özelliği. Daha fazla bilgi için [nasıl yapılır: denetim Eylemler bölmelerindeki Düzen yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
+ Birden çok kullanıcı denetimleri kullanıyorsanız, yatay veya dikey olarak yerleştirilmiş olup olmadığını eylemler bölmesindeki kullanıcı denetimleri düzgün yığın için kod yazabilirsiniz. Kullanıcı denetimleri eylemler bölmesindeki yığınlama sırasını kullanarak ayarlayabilirsiniz <xref:Microsoft.Office.Tools.StackStyle> numaralandırması <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> özelliği. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
 
  <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> Özelliği aşağıdaki gerçekleştirebileceğiniz <xref:Microsoft.Office.Tools.StackStyle> sabit listesi değerleri.  
 
@@ -117,7 +115,7 @@ ms.locfileid: "35677791"
 |FromLeft|Eylemler bölmesinde soldan yığın.|  
 |FromRight|Eylemler bölmesinde sağdan yığılır.|  
 |FromTop|Eylemler bölmesinin üst kısmından yığın.|  
-|Yok.|Yığın sıralaması tanımlanan; Sipariş geliştirici tarafından kontrol edilir.|  
+|Hiçbiri|Yığın sıralaması tanımlanan; Sipariş geliştirici tarafından kontrol edilir.|  
 
  Aşağıdaki kod kümeleri <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> Eylemler bölmesinin üst kullanıcı denetimleri yığın özelliği.  
 
@@ -144,7 +142,7 @@ ms.locfileid: "35677791"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]  
 
 > [!NOTE]  
->  Son kullanıcılar, herhangi bir zamanda görev bölmesinde elle konumlandırabilirsiniz. Görev bölmesi programlı olarak belirttiğiniz konumda yerleşik kalacağından emin olmanın bir yolu yoktur. Ancak, yönlendirme değişiklikleri denetlemek ve Eylemler bölmesindeki denetimlere doğru yönde Yığılmış emin olun. Daha fazla bilgi için [nasıl yapılır: denetim Eylemler bölmelerindeki Düzen yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
+>  Son kullanıcılar, herhangi bir zamanda görev bölmesinde elle konumlandırabilirsiniz. Görev bölmesi programlı olarak belirttiğiniz konumda yerleşik kalacağından emin olmanın bir yolu yoktur. Ancak, yönlendirme değişiklikleri denetlemek ve Eylemler bölmesindeki denetimlere doğru yönde Yığılmış emin olun. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmelerindeki düzen denetimi yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
 
  Ayarı <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> ve <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> özelliklerini <xref:Microsoft.Office.Tools.ActionsPane> çünkü konumunu değiştirmez <xref:Microsoft.Office.Tools.ActionsPane> görev bölmesinde katıştırılmış nesne.  
 
@@ -157,9 +155,9 @@ ms.locfileid: "35677791"
  [Office çözümlerinde WPF denetimlerini kullanma](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
- [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Nasıl yapılır: Word belgelerine veya Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
  [İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
- [Nasıl yapılır: denetim Eylemler bölmelerindeki Düzen yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  

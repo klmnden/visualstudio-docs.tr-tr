@@ -1,8 +1,6 @@
 ---
 title: CvCreateMarkerSeriesWithCodePageA işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmakers/CvCreateMarkerSeriesWithCodePageA
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63fe3de8c4322e378f110813ac93fa523f3453ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 55466cc96e4969f05bc34edfaf4a28564dba17ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822495"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA işlevi
-Belirtilen sağlayıcı ve belirtilen kod sayfası için işaret serisi oluşturur. Bu işlev, açıkça işaret API ANSI işlevleri tarafından yazılan metin kod sayfası belirlemek için kullanılabilir. İzleme yakalanan ve daha sonra farklı yerel ayarlara/dilleri ile farklı makinelerde analiz durumda kod sayfası ayarı yararlı olabilir. Varsayılan olarak GetACP() işlevi tarafından döndürülen kod sayfası kullanılır.  
+Belirtilen sağlayıcı ve belirtilen kod sayfası için işaretçisi oluşturur. Bu işlev, açıkça işaret API ANSI işlevleri tarafından yazılan metin için kod sayfası belirtmek için kullanılabilir. İzleme yakalanan ve daha sonra farklı yerel ayarlar/dilleri ile farklı makinelerde analiz durumda kod sayfası ayarlanması yararlı olabilir. Varsayılan olarak, kod sayfası GetACP() işlevi tarafından döndürülen kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,19 +35,19 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
   
 #### <a name="parameters"></a>Parametreler  
  `pProvider`  
- Cvınitprovider tarafından daha önce başlatılmış sağlayıcı nesnesi. NULL olamaz.  
+ Cvınitprovider tarafından önceden başlatılan sağlayıcı nesnesi. NULL olamaz.  
   
  `pSeriesName`  
- İşaretçi seri adı. BOŞ olamaz, ancak boş dize izin verilir.  
+ İşaret seri adı. NULL olamaz, ancak boş dizeye izin verilir.  
   
  `nTextCodePage`  
  Geçerli kod sayfası.  
   
  `ppMarkerSeries`  
- İşaretçi serisi bağlam depolayan bir çıkış değişkeninin adresi. NULL olamaz.  
+ İşaret serisi bağlam depolayacak bir çıkış değişkeni adresi. NULL olamaz.  
   
 ## <a name="return-value"></a>Dönüş değeri  
- İşaretçi serisi başarıyla oluşturulduğunda veya tüm hatalar oluştu. hata kodu var. durumda S_OK. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
+ S_OK işaret serisi başarıyla oluşturulduğunda veya hata kodu var. durumda tüm hatalar. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkers.h*  

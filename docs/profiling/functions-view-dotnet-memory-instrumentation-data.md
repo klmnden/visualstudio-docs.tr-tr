@@ -1,8 +1,6 @@
 ---
 title: İşlevler görünümü - .NET bellek izleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,94 +10,94 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b578fd091b0b7473eb9e09e8c1eb13510c9e1b84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962340"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>İşlevler görünümü - .NET bellek izleme verileri
-İşlevler görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma verileri, profil oluşturma çalışması sırasında bellek tahsis işlevleri listeler. Bir işlev satır ayırma ve işlev için zamanlama verileri sayısı ve boyutu bildirir.  
+İşlevler görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma verilerinin profil oluşturma çalışması süresince bellek ayrılan işlevler listelenir. Bir işlevi satır ayırma ve zamanlama verilerini işlevi sayısı ve boyutu raporlar.  
   
 ## <a name="general"></a>Genel  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
 |**İşlev adı**|İşlevin adı.|  
-|**İşlev adresi**|İşlev adresi.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**Çağrı sayısı**|Bu işleve yapılan çağrıların toplam sayısı.|  
-|**Kaynak dosya**|Bu işlev tanımını içeren kaynak dosyası.|  
-|**Modül adı**|İşlevi içeren modülü adı.|  
-|**Modül yolu**|İşlevi içeren modülü yolu.|  
-|**İşlem kimliği**|İşlemi çalıştırmak profil oluşturma kimliği (PID).|  
+|**İşlev adresi**|İşlevin adresi.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**Çağrı sayısı**|Bu işleve yapılan çağrılar toplam sayısı.|  
+|**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
+|**Modül adı**|İşlevi içeren modül adı.|  
+|**Modül yolu**|İşlevi içeren modül yolu.|  
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
 |**İşlem adı**|İşlemin adı.|  
-|**Zaman özel araştırma ek yükü**|Araçları nedeniyle bu işlev için ek süre. Araştırma yükünü tüm özel sürelerinden çıkarılır.|  
-|**Zaman dahil araştırması ek yükü**|Bu işlev ve araçları nedeniyle alt işlevleri için ek yükü süresi. Araştırma yükü tüm kapsayıcı sürelerinden çıkarılır.|  
+|**Zaman dışlamalı araştırma ek yükü**|Zaman ek yükü izleme nedeniyle bu işlev. Tüm özel sürelerinden çıkarıldığında araştırma ek yükü.|  
+|**Zaman kapsamlı araştırma ek yükü**|Bu işlevde ve alt işlevleri nedeniyle izleme için ek yükü süre. Tüm kapsamlı sürelerinden çıkarıldığında araştırma ek yükü.|  
   
 ## <a name="net-memory-values"></a>.NET bellek değerleri  
- Bir işlevin dahil .NET bellek değerleri sayısını (ayırmaları) ve boyutunu (bayt) işlevi ve onun alt işlevleri tarafından oluşturulan nesneleri gösterir.  
+ Bir işlev dahil .NET bellek değerlerini (ayırmalar) sayısı ve boyutu (bayt), işlev ve alt işlevleri tarafından oluşturulan nesnelerin gösterir.  
   
- Özel bellek değerleri sayısını ve boyutunu işlevi tarafından ve onun alt işlevleri tarafından oluşturulan nesneleri gösterir.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Kapsayıcı ayırmaları**|Bu işlev ve bu işlev tarafından çağrılan işlevler oluşturulan nesneleri toplam sayısı.|  
-|**Kapsayıcı ayırmaları %**|Profil çalışmasını ayrılan tüm nesneleri yüzdesi bu işlevin kapsayıcı ayırmaları yoktu.|  
-|**Özel ayırmaları**|İşlev kodu işlev gövdesine edildi yürütülürken oluşturulan nesneleri toplam sayısı. Bu sayı, bu işlev tarafından adı veriliyordu işlevlerinde oluşturulan nesneleri içermez.|  
-|**Özel ayırmaları %**|Profil çalıştırdığınızda oluşturulan tüm nesneler yüzdesi bu işlevin özel ayırmaları yoktu.|  
-|**Kapsayıcı bayt**|Bu işlev ve bu işlev tarafından çağrılan işlevler ayrılan belleğin bayt sayısı.|  
-|**Kapsayıcı bayt %**|Profil çalışmasını ayrılan tüm bayt bellek yüzdesi bu işlevin kapsayıcı bayt yoktu.|  
-|**Özel bayt sayısı**|Bu işlev tarafından ayrılan ancak tarafından işlev olmayan belleğin bayt sayısı, bu işlev tarafından adı veriliyordu.|  
-|**Özel bayt %**|Profil çalışmasını ayrılan tüm bayt bellek yüzdesi bu işlevin özel bayt yoktu.|  
-  
-## <a name="elapsed-inclusive-values"></a>Geçen dahil değerleri  
- Çağrı yığınındaki bir işlevi olan süresi geçen dahil değerleri gösterir. Zaman harcanan zamanın alt işlevleri ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarını içerir.  
+ Özel bellek değerleri sayısı ve boyutu, işlevi ve onun alt işlevleri tarafından oluşturulan nesnelerin gösterir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Geçen dahil süre**|Toplam bu işleve yapılan tüm çağrıların dahil süre geçti.|  
-|**Geçen dahil süre %**|Bu işlevin dahil geçen süre harcandığını profil Çalıştır toplam geçen dahil süre yüzdesi.|  
-|**Ortalama dahil geçen zaman**|Ortalama bu işlev çağrısının dahil süre geçti.|  
-|**Max geçen dahil süre**|En fazla bu işlev çağrısının dahil zaman geçti.|  
-|**Min (bunlar dahil) geçen zaman**|En düşük bu işlev çağrısının dahil süre geçti.|  
+|**Kapsamlı ayırmalar**|Bu işlevdeki ve bu işlev tarafından çağrılan işlevler oluşturulan nesnelerin toplam sayısı.|  
+|**Kapsamlı ayırma yüzdesi**|Yüzdesi, profil oluşturma çalışmasında ayrılan tüm nesneler, bu işlevin kapsamlı ayırmalar yoktu.|  
+|**Dışlamalı ayırmalar**|İşlev işlev gövdesinde kod yürütülürken oluşturulan nesneleri toplam sayısı. Bu sayı, bu işlev tarafından çağrılan işlevler oluşturulan nesneleri içermez.|  
+|**Dışlamalı ayırma yüzdesi**|, Profil oluşturma çalışmasında oluşturulan tüm nesnelerin yüzdesi, bu işlevin dışlamalı ayırmalar yoktu.|  
+|**Kapsamlı bayt**|Bu işlevdeki ve bu işlev tarafından çağrılan işlevler ayrılan belleğin bayt sayısı.|  
+|**Kapsamlı bayt yüzdesi**|Bu işlevin kapsamlı bayt olan, profil oluşturma çalışmasında ayrılan tüm bellek bayt yüzdesi.|  
+|**Dışlamalı bayt**|Bu işlev tarafından ayrılan, ancak tarafından not işlevleri bellek bayt sayısı, bu işlev tarafından çağrılmış.|  
+|**Dışlamalı bayt yüzdesi**|Bu işlevin dışlamalı bayt olan, profil oluşturma çalışmasında ayrılan tüm bellek bayt yüzdesi.|  
   
-## <a name="elapsed-exclusive-values"></a>Geçen özel değerler  
- Bir işlev, doğrudan çağrı yığını üstünde yürütme süresi geçen özel değerleri gösterir. Zaman zaman bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları içerir ancak harcanan zamanın alt işlevlerde içermez.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Geçen özel süre**|Toplam bu işleve yapılan tüm çağrıların özel zaman geçti.|  
-|**Özel geçen süre %**|Toplam geçen özel zaman bu işlevin harcandığını profil Çalıştır toplam geçen özel zaman yüzdesi.|  
-|**Ortalama özel geçen zaman**|Ortalama bu işlev çağrısının özel zaman geçti.|  
-|**Max geçen özel süre**|En fazla bu işlev çağrısının özel zaman geçti.|  
-|**Min özel geçen zaman**|En düşük düzeyde, bu işlev çağrısının özel süre.|  
-  
-## <a name="application-inclusive-values"></a>Uygulama (bunlar dahil) değerleri  
- Uygulama dahil değerler çağrı yığınındaki bir işlevi olan süreyi belirtir. Süresi bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içermez ancak alt işlevlerde harcanan zamanın içermez.  
+## <a name="elapsed-inclusive-values"></a>Geçen kapsamlı değerleri  
+ Geçen kapsamlı değerleri, çağrı yığınındaki bir işlevi olduğu zamanı gösterir. Saati, harcanan süre alt işlevleri ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları içerir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Uygulama dahil süresi**|Bu işlev yapılan tüm çağrıların toplam uygulama dahil süresi.|  
-|**Uygulama dahil süresi %**|Bu işlev toplam uygulama dahil süresi içinde harcandığını profil Çalıştır toplam geçen dahil zamanı yüzdesi.|  
-|**Ortalama uygulama dahil süresi**|Bu işlev için bir çağrı ortalama uygulama dahil saati.|  
-|**En fazla uygulama dahil süresi**|Bu işlev için bir çağrı en fazla uygulama dahil saati.|  
-|**Min uygulama dahil süresi**|Bu işlev çağrısının minimum uygulama dahil süresi.|  
+|**Geçen kapsamlı süre**|Bu işleve yapılan tüm çağrıların toplam kapsamlı süre.|  
+|**Geçen kapsamlı süre yüzdesi**|Bu işlevin geçen kapsamlı süre harcandığını profil oluşturma çalışması toplam geçen kapsamlı süre yüzdesi.|  
+|**Geçen ortalama kapsamlı süre**|Bu işlev çağrısına ortalama kapsamlı süre.|  
+|**Geçen maksimum kapsamlı süre**|Maksimum kapsamlı süre bu işlev çağrısına geçti.|  
+|**Geçen minimum kapsamlı süre**|Minimum kapsamlı süre bu işlev çağrısına geçti.|  
+  
+## <a name="elapsed-exclusive-values"></a>Geçen dışlamalı değerleri  
+ Geçen dışlamalı değerleri bir işlev doğrudan çağrı yığınının en üstünde çağırılma yürütüldüğü zaman gösterir. Bağlam geçişleri ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında zaman zaman içerir, ancak alt işlevlerde harcanan süreyi içermez.  
+  
+|Sütun|Açıklama|  
+|------------|-----------------|  
+|**Geçen dışlamalı süre**|Toplam bu işleve yapılan tüm çağrılar dışlamalı süre.|  
+|**Geçen dışlamalı süre yüzdesi**|Toplam geçen dışlamalı süre bu işlevin içinde harcandığını profil oluşturma çalışması toplam geçen dışlamalı süre yüzdesi.|  
+|**Geçen ortalama dışlamalı süre**|Ortalama dışlamalı süre bu işlev çağrısına geçti.|  
+|**Geçen maksimum dışlamalı süre**|Maksimum dışlamalı süre bu işlev çağrısına geçti.|  
+|**Geçen minimum dışlamalı süre**|Minimum dışlamalı süre bu işlev çağrısına geçti.|  
+  
+## <a name="application-inclusive-values"></a>Uygulama kapsamlı değerlerini  
+ Uygulama kapsamlı değerleri, çağrı yığınındaki bir işlevi olduğu zamanı gösterir. Süresi, bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan süreyi içermez, ancak alt işlevlerde harcanan süreyi içermez.  
+  
+|Sütun|Açıklama|  
+|------------|-----------------|  
+|**Kapsamlı uygulama süresi**|Bu işleve yapılan tüm çağrılar toplam uygulama kapsamlı zamanı.|  
+|**Kapsamlı uygulama süresi yüzdesi**|Bu işlevin toplam uygulama kapsamlı süre içinde harcandığını profil oluşturma çalışması toplam geçen kapsamlı süre yüzdesi.|  
+|**Ortalama kapsamlı uygulama süresi**|Bu işlev için bir çağrı, ortalama uygulama kapsamlı süre.|  
+|**Maksimum kapsamlı uygulama süresi**|Bu işlev çağrısı en fazla uygulama kapsamlı zamanı.|  
+|**Minimum kapsamlı uygulama süresi**|Bu işlev çağrısına en düşük uygulama kapsamlı süre.|  
   
 ## <a name="application-exclusive-values"></a>Uygulama özel değerler  
- Uygulama özel değerler işlevi doğrudan çağrı yığını üstünde yürütülmekte olan süreyi belirtir. Ya da alt işlevlerde harcanan zamanın içermez süresi bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içermez.  
+ Bir işlev doğrudan çağrı yığınının en üstünde çağırılma yürütüldüğü zaman dışlamalı uygulama değerlerini belirtin. Ya da alt işlevlerde harcanan süreyi içermez süresi, bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan süreyi içermez.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Uygulama özel süresi**|Bu işlev tüm çağrıları toplam uygulama özel saati.|  
-|**Uygulama özel süresi %**|Bu işlev toplam uygulama özel zamanında harcandığını profil Çalıştır toplam geçen özel zaman yüzdesi.|  
-|**Ortalama uygulama özel süresi**|Bu işlev için bir çağrı ortalama uygulama özel saati.|  
-|**En fazla uygulama özel süresi**|Bu işlev için bir çağrı en fazla uygulama özel saati.|  
-|**Min uygulama özel süresi**|Bu işlev için bir çağrı minimum uygulama özel saati.|  
+|**Dışlamalı uygulama süresi**|Bu işleve yapılan tüm çağrıların toplam uygulama dışlamalı süre.|  
+|**Dışlamalı uygulama süresi yüzdesi**|Bu işlevin toplam uygulama dışlamalı süre içinde harcandığını profil oluşturma çalışması toplam geçen dışlamalı süre yüzdesi.|  
+|**Ortalama dışlamalı uygulama süresi**|Bu işlev için bir çağrı, ortalama uygulama dışlamalı süre.|  
+|**Maksimum dışlamalı uygulama süresi**|Bu işlev çağrısı en fazla uygulama özel zamanı.|  
+|**Minimum dışlamalı uygulama süresi**|Bu işlev çağrısına en düşük uygulama dışlamalı süre.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
  [İşlevler Görünümü](../profiling/functions-view-sampling-data.md)

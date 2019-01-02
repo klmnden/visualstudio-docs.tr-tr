@@ -1,8 +1,6 @@
 ---
 title: Olaylar (VSPerfCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 author: mikejo5000
@@ -10,17 +8,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb99ec5bab1098f3551548698919cb1f2fc8f8b1
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1b8d6085f21035408b33b229220e4aea10b2b6c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842089"
 ---
 # <a name="events-vsperfcmd"></a>Olaylar (VSPerfCmd)
-*VSPerfCmd.exe* **olayları** seçeneği olay Windows için izleme (ETW) günlüğe kaydedilmesini denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı bir .etl dosyasına kaydedilir. Verileri kullanarak bir rapor görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  
+*VSPerfCmd.exe* **olayları** olay izleme için Windows (ETW) günlüğe kaydetme seçeneği denetler. ETW verilerini Profil Oluşturucu veri dosyasından ayrı .etl dosyasına kaydedilir. Bir raporu kullanarak verileri görüntülenebilir [VSPerfReport](../profiling/vsperfreport.md) /summary:etw komutu.  
   
- **Olayları** seçeneği VSPerfCmd önce herhangi bir zamanda çağrılabilir **kapatma** komutu profil oluşturmayı durdurmak için çağrılır.  
+ **Olayları** seçeneği VSPerfCmd önce herhangi bir zamanda çağrılabilir **kapatma** komutu, profil oluşturmayı durdurmak için çağrılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -29,33 +27,33 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- **Üzerinde**&#124;**devre dışı**  
+ **Üzerinde**&#124;**kapalı**  
  Başlatır veya olay veri toplamayı durdurur.  
   
  `Guid`  
- Sağlayıcı denetim GUID.  
+ Sağlayıcı denetimden GUİD'si.  
   
  `ProviderName`  
- Windows Yönetim Araçları (WMI) kayıtlı sağlayıcısının adı.  
+ Kayıtlı Windows Yönetim Araçları (WMI) sağlayıcısının adı.  
   
  `Flags`  
- "0 x"-Olay sağlayıcısı tarafından tanımlanan onaltılık flags değeri öneki.  
+ "0 x"-Olay sağlayıcısı tarafından tanımlanan bayrakları onaltılık değer öneki.  
   
  `Level`  
  Toplanan veri miktarını belirtir. `Level` Olay sağlayıcısı tarafından tanımlanır.  
   
- **Olayları** seçeneği anlar sağlayıcı adları olarak aşağıdaki çekirdek anahtar sözcükler:  
+ **Olayları** seçeneği sağlayıcı adları olarak aşağıdaki çekirdek anahtar sözcükleri anlar:  
   
  **İşlem**  
- İşlem olayları  
+ Olayları işleme  
   
- **İş parçacığı**  
+ **iş parçacığı**  
  İş parçacığı olayları  
   
  **Görüntü**  
- Yük görüntü ve olayları kaldırma  
+ Görüntü yükleme ve kaldırma olayları  
   
- **disk**  
+ **Disk**  
  Disk g/ç olayları  
   
  **Dosya**  
@@ -73,22 +71,22 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Kayıt defteri**  
  Kayıt defteri erişimi olayları  
   
- Çekirdek sağlayıcısı yalnızca etkin olduğunu unutmayın. Devre dışı bırakılamaz veya İzleyici kapatılana kadar bayraklarının değiştirilebilir.  
+ Çekirdek sağlayıcısı yalnızca etkin olduğunu unutmayın. Devre dışı bırakılamaz ya da İzleyici kapatılana dek bayraklarının değiştirilebilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  CLR ETW olayları etkin olduğunda, ek başlangıç verileri de izleme görünümü raporda toplanır. Raporda görünmesini başlangıç olayları dışlamak için aşağıdaki komutu kullanın:  
+>  CLR ETW olaylarını etkin olduğunda, ek başlatma verileri de izleme görünümü raporda toplanır. Başlangıç olayları raporda görünmesini dışarıda bırakmak için aşağıdaki komutu kullanın:  
   
 ```cmd  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  Başlangıç olayları bırakmazsanız bu olaylar Yönetilen Nesne Biçimi (MOF) dosyasında listelenmeyen çünkü sonra GUID raporda görünürler. Daha fazla bilgi için Microsoft Web sitesinde bu sayfaya bakın: [örnek Yönetilen Nesne Biçimi (MOF) dosyasını](http://go.microsoft.com/fwlink/?linkid=37118).  
+>  Başlangıç olayları dışlamazsanız, çünkü bu olaylar Yönetilen Nesne Biçimi (MOF) dosyasında listelenmeyen ardından GUID'leri raporda görünürler. Daha fazla bilgi için Microsoft Web sitesindeki bu sayfaya bakın: [Örnek Yönetilen Nesne Biçimi (MOF) dosyası](http://go.microsoft.com/fwlink/?linkid=37118).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil hizmetler](../profiling/command-line-profiling-of-services.md)

@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f1e5ab69491af3add542e30bb4cdd44047ca094e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942180"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio derleme araçları 2017 bileşen dizini
 
@@ -36,15 +35,15 @@ Ayrıca sayfa hakkında aşağıdakileri unutmayın:
 * Kullanmayı tercih ederseniz de yükleyebilirsiniz **önerilen** ve **isteğe bağlı** bileşenleri.
 * Her türlü iş yükü ile bağlı olmayan ek bileşenleri listeleyen bir bölüm de ekledik.
 
-VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için bkz [nasıl yapılır: Visual Studio 2017'ye geçirme genişletilebilirlik projeleri](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
+VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
 
 Bu kimliklerinin kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası. Ve iş yükü ve Bileşen kimlikleri diğer ürünlere yönelik bir listesi için bkz. [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
 ## <a name="azure-development-build-tools"></a>Azure geliştirme derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Açıklama:** MSBuild Azure uygulamaları oluşturmaya yönelik görevleri ve hedefleri.
+**Açıklama:** MSBuild görevleri ve hedefleri, Azure uygulamaları geliştirmek için.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -86,7 +85,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET framework 4.7 geliştirme
 
 ## <a name="data-storage-and-processing-build-tools"></a>Veri depolama ve işleme derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.DataBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.DataBuildTools
 
 **Açıklama:** SQL Server veritabanı projeleri derleme
 
@@ -107,7 +106,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçlar�
 
 ## <a name="net-desktop-build-tools"></a>.NET Masaüstü derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
 **Açıklama:** WPF, Windows Forms ve konsol uygulamaları kullanarak oluşturmaya yönelik Araçlar C#, Visual Basic ve F#.
 
@@ -149,7 +148,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# derleyici | 15.8.27825.0 | 
 
 ## <a name="msbuild-tools"></a>MSBuild araçları
 
-**ID:** Microsoft.VisualStudio.Workload.MSBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.MSBuildTools
 
 **Açıklama:** MSBuild tabanlı uygulamalar oluşturmak için gereken araçları sağlar.
 
@@ -163,7 +162,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn der
 
 ## <a name="net-core-build-tools"></a>.NET core derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
 **Açıklama:** .NET Core, ASP.NET Core, HTML/JavaScript ve kapsayıcılar kullanılarak uygulamaları oluşturmaya yönelik araçlar.
 
@@ -179,9 +178,9 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0-1.1 geliştirme araçları |
 
 ## <a name="nodejs-build-tools"></a>Node.js derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Açıklama:** ağ uygulamaları bir zaman uyumsuz olay temelli bir JavaScript çalışma zamanı olan Node.js kullanarak ölçeklenebilir oluşturmaya yönelik MSBuild görevleri ve hedefleri.
+**Açıklama:** Uygulamaları bir zaman uyumsuz olay temelli bir JavaScript çalışma zamanı olan Node.js kullanarak ölçeklenebilir oluşturmaya yönelik MSBuild görevleri ve hedefleri ağ.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -192,7 +191,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.
 
 ## <a name="officesharepoint-build-tools"></a>Office/SharePoint derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
 **Açıklama:** Office ve SharePoint eklentileri ve VSTO eklentileri oluşturun.
 
@@ -232,7 +231,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET framework 4.7 geliştirme
 
 ## <a name="universal-windows-platform-build-tools"></a>Evrensel Windows platformu derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
 **Açıklama:** Evrensel Windows platformu uygulamaları derlemek için gereken araçları sağlar.
 
@@ -255,18 +254,18 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 SDK (10.0.15063.0) Masaüstü C++ [x86 ve x64] için | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) için UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) için UWP: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [x86 ve x64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) için UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 UWP için SDK (10.0.16299.0): C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | İsteğe Bağlı
 
 ## <a name="visual-c-build-tools"></a>Visual C++ derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.VCTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.VCTools
 
 **Açıklama:** Microsoft C++ araç takımı, ATL veya MFC kullanarak Windows Masaüstü uygulamaları oluşturun.
 
@@ -296,12 +295,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 SDK (10.0.15063.0) Masaüstü C++ [x86 ve x64] için | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) için UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) için UWP: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [x86 ve x64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) için UWP: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 UWP için SDK (10.0.16299.0): C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.WinXP | C++ için Windows XP desteği | 15.8.27924.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK ve UCRT SDK | 15.6.27406.0 | İsteğe Bağlı
@@ -311,9 +310,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio uzantısı geliştirme
 
-**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**Açıklama:** eklentileri ve uzantıları Visual Studio için yeni komutlar da dahil olmak üzere oluşturmaya yönelik araçlar, kod Çözümleyicileri ve araç pencerelerini.
+**Açıklama:** Eklentileri ve uzantıları Visual Studio için yeni komutlar da dahil olmak üzere oluşturmaya yönelik araçlar, kod Çözümleyicileri ve araç pencereleri.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -337,9 +336,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.
 
 ## <a name="web-development-build-tools"></a>Web geliştirme derleme araçları
 
-**ID:** Microsoft.VisualStudio.Workload.WebBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Açıklama:** MSBuild görevleri ve hedefleri oluşturma için web uygulamaları.
+**Açıklama:** MSBuild görevleri ve web uygulamaları oluşturmaya yönelik hedefler.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -382,9 +381,9 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0-1.1 geliştirme araçları |
 
 ## <a name="mobile-development-with-net"></a>.NET ile Mobil Geliştirme
 
-**ID:** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**KİMLİĞİ:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**Açıklama:** iOS, Android ve Windows kullanarak platformlar arası uygulamalar oluşturmaya yönelik Araçlar C# ve F#.
+**Açıklama:** İOS, Android ve Windows kullanarak platformlar arası uygulamalar oluşturmaya yönelik Araçlar C# ve F#.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 

@@ -2,7 +2,6 @@
 title: UWP uygulamalarında ağ kullanımını analiz etme
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 195353903ca9f9db8142a6909f3a2a6bab15b4aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822829"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını analiz etme
 Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulaması ile ilgili sorunlar, yanlış önbellek kullanımı ve görüntü gibi sorunları çözmek ve indirme performansını yardımcı olabilir.  
@@ -74,7 +73,7 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
- [Visual Studio blogu: Karşınızda Visual Studio'nun ağ denetçisi](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Visual Studio blog'u: Visual Studio'nun ağ Inspector ile tanışın](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Kanal 9 Video: VS tanılama araçları - yeni ağ Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Visual Studio profil oluşturma](../profiling/index.md)  
  [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

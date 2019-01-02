@@ -1,8 +1,6 @@
 ---
 title: Grafik bilgilerini yakalama | Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09571f593c77ffed1daaeaa2ac7639e2a97a32ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838157"
 ---
 # <a name="capturing-graphics-information"></a>Grafik Bilgilerini Yakalama
 İşleme sorunlarını ve performans sorunlarını tanılamak için Visual Studio grafik Çözümleyicisi kullanabilirsiniz, böylece Direct3D uygulamanızdan grafik bilgilerini yakalama.  
@@ -29,7 +27,7 @@ ms.locfileid: "49820531"
   
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Uygulamanızı Grafik Tanılama altında çalıştırmak için  
   
-- Menü çubuğunda, **hata ayıklama**, **grafik**, **grafik hata ayıklamayı Başlat**. (Klavye: Alt+F5 tuşlarına basın)  
+- Menü çubuğunda, **hata ayıklama**, **grafik**, **grafik hata ayıklamayı Başlat**. (Klavye: Alt + F5 tuşlarına basın)  
   
 - Üzerinde **grafik** araç seçin **grafik hata ayıklamayı Başlat** düğmesi.  
   
@@ -80,10 +78,10 @@ ms.locfileid: "49820531"
   
  Projenizi uzaktan hata ayıklama için yapılandırma şekliniz, geliştirmekte olduğunuz uygulamanın türüne ve kullandığınız programlama diline göre değişir. Bir UWP uygulaması için uzaktan hata ayıklamayı yapılandırma hakkında daha fazla bilgi için bkz: [uzak bir makinede çalıştırmak UWP uygulamaları](../run-windows-store-apps-on-a-remote-machine.md). Bir Windows masaüstü uygulaması için uzaktan hata ayıklamayı yapılandırma hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklama](../remote-debugging.md).  
   
- Daha sonra, bilgilerin yakalandığı yerden bağımsız olarak, grafik bilgilerini kayıttan yürütmek için bir uzak makine veya cihaz kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: grafik tanılama kayıttan yürütme makinesini değiştirme](how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Daha sonra, bilgilerin yakalandığı yerden bağımsız olarak, grafik bilgilerini kayıttan yürütmek için bir uzak makine veya cihaz kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme](how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Komut satırından grafik bilgilerini yakalama  
  Bir komut satırı aracını kullanarak bir uygulamadan grafik bilgilerini yakalanabilir. Bu araç, DXCap.exe, hızlı bir şekilde yakalayın ve Visual Studio ya da programlı yakalama kullanmadan grafik bilgilerini kayıttan yürütme. Özellikle, otomasyon için veya bir test ortamında DXCap.exe kullanabilirsiniz. DXCap.exe hakkında daha fazla bilgi için bkz: [komut satırı Yakalama aracı](command-line-capture-tool.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Grafik Bilgilerini Yakalama](walkthrough-capturing-graphics-information.md)
+ [İzlenecek yol: Grafik bilgilerini yakalama](walkthrough-capturing-graphics-information.md)

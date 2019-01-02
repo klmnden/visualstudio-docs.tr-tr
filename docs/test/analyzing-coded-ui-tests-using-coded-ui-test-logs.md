@@ -2,19 +2,18 @@
 title: Kodlanmış UI Test Günlüklerini Kullanarak Kodlanmış UI Testlerini Çözümleme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944966"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Kodlanmış UI test günlüklerini çözümleme kodlanmış UI testleri kullanarak
 
@@ -22,7 +21,7 @@ Kodlanmış UI test günlüklerini filtre ve kayıt kodlanmış UI testleri hakk
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>1. adım: günlük kaydını etkinleştirme
+## <a name="step-1-enable-logging"></a>1. Adım: Günlü kaydını etkinleştir
 
 Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yöntemlerden birini kullanın:
 
@@ -58,7 +57,7 @@ Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yönt
 
    <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2. adım: kodlanmış UI testleri çalıştırmak ve günlüğünü görüntüleyin
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2. Adım: Kodlanmış UI testleri çalıştırmak ve günlüğünü görüntüleyin
 
 Yapılan değişiklikler ile kodlanmış UI testi çalıştırdığınızda *QTAgent32.exe.config* dosya, yerinde bağlantısını bir çıktı görmeniz **Test Gezgini** sonuçları. Yalnızca, test, aynı zamanda için izleme düzeyi için "verbose." olarak ayarlandığında başarılı testleri başarısız olduğunda günlük dosyaları oluşturulur
 

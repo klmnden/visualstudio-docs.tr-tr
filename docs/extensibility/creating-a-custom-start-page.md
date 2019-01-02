@@ -1,9 +1,6 @@
 ---
 title: Başlangıç sayfasına özel oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 52050641ee9d2d522ff07dd5eaed72ecbec2b09e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941446"
 ---
 # <a name="creating-a-custom-start-page"></a>Özel başlangıç sayfası oluşturma
 Bu belgedeki adımları izleyerek özel bir başlangıç sayfası oluşturabilirsiniz.  
@@ -87,8 +84,8 @@ Bu belgedeki adımları izleyerek özel bir başlangıç sayfası oluşturabilir
 -   Başlangıç sayfası test ve kararlı buldu sonra kullanın **başlangıç sayfasını Özelleştir** seçeneğini **seçenekleri** birincil örneğinde Visual Studio Başlangıç sayfası olarak seçmek için iletişim kutusu  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [Başlangıç sayfasına kullanıcı denetimi Ekle](../extensibility/adding-user-control-to-the-start-page.md)   
  [Visual Studio komutları için bir başlangıç sayfası Ekle](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [İzlenecek yol: bir başlangıç sayfasında kullanıcı ayarlarını Kaydet](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarlarını Kaydet](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md)

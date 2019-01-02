@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823549"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -124,9 +123,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>S: hangi veritabanlarını bir veri kaynağı olarak kullanabilir miyim?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>S: Veri kaynağı olarak hangi veritabanlarını kullanabilirim?
 
-**Y:** aşağıdakileri kullanabilirsiniz:
+**Y:** Aşağıdakileri kullanabilirsiniz:
 
 - Microsoft SQL Azure.
 
@@ -140,9 +139,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
 - Oracle 7.3, 8i, 9i veya 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>S: bir virgülle ayrılmış değer (CSV) metin dosyası veri kaynağı olarak nasıl kullanabilirim?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>S: Bir virgülle ayrılmış değer (CSV) metin dosyası veri kaynağı olarak nasıl kullanabilirim?
 
-**Y:** burada nasıl:
+**Y:** İşte nasıl:
 
 1. Projelerinizin veritabanı yapılarını düzenlemek ve bir öğe eklemek için bir klasör oluşturun.
 
@@ -164,9 +163,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
      ![Bir ad girin ve CSV dosyası seçin](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>S: var olan CSV dosyam sütun üstbilgilerini içermiyorsa?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>S: Ne var olan CSV dosyam sütun üstbilgilerini içermiyorsa?
 
-**Y:** sütun başlıkları ekleyemezseniz CSV dosyasını veritabanı olarak değerlendirmek için şema açıklama dosyası kullanabilirsiniz.
+**Y:** Sütun başlıkları ekleyemezseniz CSV dosyasını veritabanı olarak değerlendirmek için şema açıklama dosyası kullanabilirsiniz.
 
 1. Adlı yeni bir metin dosyası ekleyin *schema.ini*.
 
@@ -215,7 +214,7 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
      ![Test etmek için eklenen veri kaynağı](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>S: bir XML dosyası veri kaynağı olarak nasıl kullanabilirim?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>S: Bir XML dosyası veri kaynağı olarak nasıl kullanabilirim?
 
 **Y:** Evet.
 
@@ -247,7 +246,7 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
      ![Bir ad girin ve XML dosyası seçin](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>SOAP kullanan bir web hizmeti isteğine veri bağlama ekleyebilir miyim?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>S: SOAP kullanan bir web hizmeti isteğine veri bağlama ekleyebilir miyim?
 
 **Y:** Evet, SOAP XML el ile değiştirmeniz gerekir.
 

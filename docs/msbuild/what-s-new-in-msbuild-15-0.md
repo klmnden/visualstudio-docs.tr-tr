@@ -1,8 +1,6 @@
 ---
 title: Hangi&#39;s MSBuild 15'deki yenilikler | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2017
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 3712f009262abd9590653af3f3ef4e4e81c87e84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943583"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15'te Yenilikler
 
@@ -40,7 +38,7 @@ MSBuild olarak kullanıma sunuldu parçası [.NET Core SDK'sı](https://www.micr
 - `SDK35ToolsPath` Ve `SDK40ToolsPath` noktası özelliklerini (örneğin, 10.0A 4.X araçları için) Visual Studio'nun bu sürümü ile paketlenmiştir .NET Framework SDK'sına.
 
 ## <a name="updates"></a>Güncelleştirmeler
-- [Proje öğesi](../msbuild/project-element-msbuild.md) yeni bir `SDK` özniteliği. Ayrıca `Xmlns` özniteliği, artık isteğe bağlıdır. Hakkında daha fazla bilgi için `SDK` özniteliği için bkz: [nasıl yapılır: kullanım MSBuild proje SDK'ları](../msbuild/how-to-use-project-sdk.md), [paketler, meta paketler ve çerçeveler](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Çekirdek](/dotnet/core/tools/csproj).
+- [Proje öğesi](../msbuild/project-element-msbuild.md) yeni bir `SDK` özniteliği. Ayrıca `Xmlns` özniteliği, artık isteğe bağlıdır. Daha fazla bilgi için `SDK` özniteliği için bkz: [nasıl yapılır: MSBuild proje SDK'ları kullanın](../msbuild/how-to-use-project-sdk.md), [paketler, meta paketler ve çerçeveler](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Core](/dotnet/core/tools/csproj).
 - [Öğe unsuru](../msbuild/item-element-msbuild.md) dış hedefleri olan yeni bir `Update` özniteliği. Ayrıca, kısıtlama `Remove` özniteliği ortadan kaldırılmıştır.
 - *Directory.Build.props* özelleştirmeleri bir dizin altında projelerine sağlayan kullanıcı tanımlı bir dosya. Bu dosya gelen otomatik olarak içeri aktarılır *Microsoft.Common.props* sürece özelliği `ImportDirectoryBuildTargets` ayarlanır **false**. *Directory.Build.targets* tarafından alınan *Microsoft.Common.targets*.
 - Herhangi bir meta veri öznitelikleri geçerli listesi ile çakışmadığından bir ad ile isteğe bağlı olarak bir özniteliği olarak ifade edilebilir. Daha fazla bilgi için [öğe](../msbuild/item-element-msbuild.md).

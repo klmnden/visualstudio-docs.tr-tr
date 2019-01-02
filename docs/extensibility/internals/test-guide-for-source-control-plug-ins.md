@@ -1,9 +1,6 @@
 ---
 title: Test kaynak denetimi eklentileri için Kılavuzu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827906"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Kaynak Denetimi Eklentileri için Test Kılavuzu
 Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Test en yaygın alanlara ek olarak bazı sorunlu olabilecek daha karmaşık alanları kapsamlı bir bakış sağlanır. Bu genel bakış, test çalışmalarının kapsamlı bir liste olarak tasarlanmamıştır.  
@@ -40,7 +37,7 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
  Herhangi bir proje türü kullanılabilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kaynak denetimi tümleştirmesini destekleyen (örneğin, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], veya [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
  Web projesi  
- Web projeleri dört tür vardır: dosya sistemi, yerel IIS, uzak sitelerin ve FTP.  
+ Web projeleri dört tür vardır: Dosya sistemi, yerel IIS, uzak sitelerin ve FTP.  
   
 - Dosya sistemi projeleri bir yerel yolda oluşturulur, ancak dahili olarak bir UNC yolu erişilen ve istemci projeleri gibi IDE içinde kaynak denetimi altında yerleştirilmiş olarak yüklenmesi için Internet Information Services (IIS) gerektirmez.  
   
@@ -58,55 +55,55 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
   
 ## <a name="test-areas-covered-in-this-section"></a>Bu bölümde yer alan test alanlarını  
   
--   [Test Alanı 1: Kaynak Denetimine Ekleme/Kaynak Denetiminden Açma](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Test alanı 1: / Açık kaynak denetiminden Ekle](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Case 1a: kaynak denetimine Çözüm Ekle  
+    -   Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle  
   
-    -   Case 1b: kaynak denetiminden çözüm Aç  
+    -   Büyük/küçük harf 1b: Açık çözüm kaynak denetimi  
   
-    -   Case 1c: kaynak denetiminden çözüm ekleyin  
+    -   Durum 1c: Kaynak denetiminden çözüm ekleyin  
   
--   [Test Alanı 2: Kaynak Denetiminden Alma](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Test alanı 2: Kaynak denetiminden alma](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Test Alanı 3: Kullanıma Alma/Kullanıma Almayı Geri Alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Test alanı 3: Kullanıma almayı geri al / gözden geçirin](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   3. durum: Kullanıma / kullanıma almayı geri al  
+    -   3. durum: Kullanıma almayı geri al / gözden geçirin  
   
-    -   Case 3a: gözden geçirin  
+    -   Büyük/küçük harf 3a: Kullanıma Al  
   
-    -   3b durum: kullanıma alma bağlantısı kesildi  
+    -   Büyük/küçük harf 3b: Bağlantısı kesilen kullanıma alma  
   
-    -   Case 3c: Sorgu düzenleme/sorgu kaydetme (QEQS)  
+    -   Durum 3c: Sorgu düzenleme/sorgu kaydetme (QEQS)  
   
-    -   3B case: Sessiz kullanıma alma  
+    -   Case 3d: Sessiz kullanıma alma  
   
-    -   Case 3e: geri alma  
+    -   Büyük/küçük harf 3e: Kullanıma almayı geri al  
   
--   [Test Alanı 4: İade Etme](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Test alanı 4: Teslim etme](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Case 4a: öğeleri değiştirdiği  
+    -   Büyük/küçük harf 4a: Değiştirilen öğeler  
   
-    -   Case 4b: dosya ekleme  
+    -   Büyük/küçük harf 4b: Dosya ekleme  
   
-    -   Case 4 c: Proje ekleme  
+    -   4c. durum: Ekleme projeleri  
   
--   [Test Alanı 5: Kaynak Denetimini Değiştirme](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Test alanı 5: Kaynak denetimini Değiştir](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Case 5a: bağlama  
+    -   Büyük/küçük harf 5a: bağlama  
   
-    -   Case 5b: Unbind  
+    -   Büyük/küçük harf 5b: Bağlamayı Kaldır  
   
-    -   Case 5c: yeniden bağlayın  
+    -   Durum 5c: yeniden bağlayın  
   
--   [Test Alanı 6: Silme](../../extensibility/internals/test-area-6-delete.md)  
+-   [Test alanı 6: DELETE](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Test Alanı 7: Paylaşma](../../extensibility/internals/test-area-7-share.md)  
+-   [Test alanı 7: Paylaş](../../extensibility/internals/test-area-7-share.md)  
   
--   [Test Alanı 8: Eklenti Değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Test alanı 8: Eklenti değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Case 8a: otomatik değiştirme  
+    -   Büyük/küçük harf 8a: Otomatik değiştirme  
   
-    -   Case 8b: Çözüm tabanlı Değiştir  
+    -   Büyük/küçük harf 8b: Çözüm tabanlı Değiştir  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentileri](../../extensibility/source-control-plug-ins.md)

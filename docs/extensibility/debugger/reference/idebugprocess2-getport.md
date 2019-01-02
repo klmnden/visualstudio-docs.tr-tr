@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::GetPort | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::GetPort
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d5efb15fd90d121ac14af064925b6e4154a88e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a63a7eaf889dc56a0a9fe61f61757eceac03e0c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829689"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 İşlem çalışıyor bağlantı noktasını alır.  
@@ -28,14 +25,14 @@ ms.locfileid: "49870581"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT GetPort(   
-   IDebugPort2** ppPort  
+HRESULT GetPort(   
+   IDebugPort2** ppPort  
 );  
 ```  
   
 ```csharp  
-int GetPort(   
-   out IDebugPort2 ppPort  
+int GetPort(   
+   out IDebugPort2 ppPort  
 );  
 ```  
   

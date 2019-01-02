@@ -1,36 +1,35 @@
 ---
-title: Tanılama veri ve sistem tarafından oluşturulan günlükleri
+title: Tanılama verilerini ve sistem tarafından oluşturulan günlükler
 ms.date: 05/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 873d0be0e1efee220e0a702fc537beace1d7aa32
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34478350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824518"
 ---
-# <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio tarafından toplanan sistem tarafından oluşturulan günlükleri
+# <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio tarafından toplanan sistem tarafından oluşturulan günlükler
 
-Visual Studio toplar sorunları gidermek ve aracılığıyla ürünün kalitesini artırmak için sistem tarafından oluşturulan günlükleri [Visual Studio Müşteri Deneyimini Geliştirme Programı](visual-studio-experience-improvement-program.md). Bu makalede türlerini topladığımız veri ve biz bunu nasıl kullandığı hakkında bazı bilgiler sağlar. Ayrıca, kişisel ve hassas bilgilerin yanlışlıkla açığa çıkmasına uzantısı yazarlar nasıl önleyebilirsiniz ipuçları sağlar.
+Visual Studio aracılığıyla ürünün kalitesini ve sorunları gidermek için sistem tarafından oluşturulan günlükleri toplar [Visual Studio Müşteri Deneyimi Geliştirme Programı](visual-studio-experience-improvement-program.md). Bu makalede topladığımız verilerinin ve nasıl kullandığımızı türleri hakkında bazı bilgiler sağlar. Ayrıca, kişisel veya gizli bilgilerin yanlışlıkla açığa çıkmasına uzantı yazarları nasıl kaçınabilirsiniz ipuçları sağlar.
 
 ## <a name="types-of-collected-data"></a>Toplanan veri türleri
 
-Visual Studio sistem tarafından oluşturulan günlükleri çökme, askıda, UI yanıt vermeyi durdurma sorununu ve yüksek CPU veya bellek kullanımını toplar. Kullanım veya ürün yükleme sırasında oluşan hatalar hakkında bilgileri de toplarız. Toplanan veriler hatası göre değişir ve Yığın izlemeleri, bellek dökümlerini ve özel durum bilgileri aşağıdakileri içerebilir:
+Visual Studio, kilitlenmeleri, askıda, kullanıcı Arabirimi yanıt vermeyi durdurma sorununa ve yüksek CPU veya bellek kullanımı için sistem tarafından oluşturulan günlükleri toplar. Ürün yüklemesi ya da kullanım sırasında karşılaşılan hatalar hakkında bilgileri de toplarız. Toplanan verileri hatada göre değişir ve Yığın izlemeleri ve bellek dökümlerini özel durum bilgilerini içerebilir:
 
-- Yüksek CPU kullanımı ve yanıt vermeyi durdurma sorununu için ilgili Visual Studio iş parçacığı Yığın izlemeleri toplanır.
+- Yüksek CPU kullanımı ve yanıt vermeyi durdurma sorununa ilgili Visual Studio iş parçacığı Yığın izlemeleri toplanır.
 
-- Örneğin, kilitlenme, askıda veya yüksek bellek kullanımı, bir sorun olduğu bazı iş parçacığı Yığın izlemeleri olmayan kök belirlemek için yeterli durumlarda neden bir bellek topladığımız *döküm*. Hata oluştuğunda döküm işlemin durumunu temsil eder.
+- Kilitlenmeler, askıda veya yüksek bellek kullanımı, sorunun nerede bazı iş parçacığı yığın izlemelerini olmayan kök belirlemek için yeterli çalışmaları neden bir bellek topladığımız *döküm*. Hata oluştuğunda döküm işlemin durumunu temsil eder.
 
-- Beklenmeyen hata koşulları, disk üzerindeki bir dosyasına yazmaya çalışırken hata Örneğin, bir özel durum için şu özel durum hakkında bilgi toplayın. Bilgiler, özel durum, özel durumun oluştuğu iş parçacığı yığın izlemesi, özel durum ve belirli özel durumla ilgili diğer bilgileri ile ilişkili ileti adını içerir.
+- Beklenmeyen hata koşulları, diskte, bir dosyaya yazmaya çalışırken hata oluştu, özel durum için özel durum hakkında bilgi topluyoruz. Özel durum yığın izleme özel durumun oluştuğu iş parçacığının, özel durum ve belirli özel durumu ile ilgili diğer bilgileri ile ilişkili ileti adı bilgileri içerir.
 
-   Toplanan verilerin aşağıdaki örnek, bir özel durum adı, yığın izleme ve özel durum iletisi gösterir:
+   Aşağıdaki örnek, toplanan verilerin bir özel durum adı, yığın izlemesi ve özel durum iletisi gösterilir:
 
    ```text
    "Reserved.DataModel.Fault.Exception.TypeString": "System.IO.IOException",
@@ -48,31 +47,31 @@ Visual Studio sistem tarafından oluşturulan günlükleri çökme, askıda, UI 
    "Reserved.DataModel.Fault.Exception.Message": " The process cannot access the file 'C:\\Users\\[UserName]\\AppData\\Local\\Microsoft\\VisualStudio\\Packages\\_Channels\\4CB340F5\\channelManifest.json' because it is being used by another process."
    ```
 
-## <a name="how-we-use-system-generated-logs"></a>Sistem tarafından oluşturulan günlükleri nasıl kullanırız
+## <a name="how-we-use-system-generated-logs"></a>Sistem tarafından oluşturulan günlüklere nasıl kullandığımızı
 
-Bir hata kök nedenini belirlemek için iş akışı hata ve önemine türüne bağlı olarak değişir.
+Bir hata nedenini belirlemek için iş akışı türünü hata ve önemine bağlı olarak değişir.
 
 ### <a name="error-classification"></a>Hata sınıflandırma
 
-Günlükleri bağlı olarak, hataları sınıflandırılmış ve bunların araştırma önceliğini belirlemek için sayılır. Örneğin, biz keşfedebilir "System.IO. \__Error.WinIOError ""System.IO.FileStream.Init "sürümünde 500 kez oluştu \<x >, ürün ve bu sürümde oluşumu en yüksek hızı sahiptir.
+Hataları günlüklerine göre sınıflandırılmış ve bunların araştırma önceliğini belirlemek için hesaba katılır. Örneğin, biz keşfedebilir, "System.IO. \__Error.WinIOError ""System.IO.FileStream.Init "sürümünde 500 kereden oluştu \<x > ürünün ve bu sürümde en yüksek oran, oluşumunu sahiptir.
 
-### <a name="work-items-for-tracking"></a>İzleme için iş öğeleri
+### <a name="work-items-for-tracking"></a>İş öğelerini izlemek için
 
-İş öğeleri tek tek, Önceliklendirilmiş hataları için oluşturulan ve araştırma için mühendisleri atandı. Bu iş öğeleri genellikle Sınıflandırma, öncelik ve hata türü için ilgili tanılama bilgileri içerir. Bu bilgiler hata için toplanan sistem tarafından oluşturulan günlükleri türetilir. Örneğin, bir iş öğesi için bir kilitlenme kilitlenme oluştuğu yığın izlemesi içerebilir.
+Tek tek, öncelikli hatalar için çalışma öğeleri oluşturulur ve mühendislerine araştırma için atanmış. Bu iş öğeleri genellikle Sınıflandırma, öncelik ve hata türüne ilgili tanılama bilgileri içerir. Bu bilgiler hata için toplanan sistem tarafından oluşturulan günlüklere türetilir. Örneğin, bir iş öğesi için bir kilitlenme kilitlenme nerede oluştuğunu yığın izlemesi içerebilir.
 
 ### <a name="error-investigation"></a>Hata araştırma
 
-Mühendisleri hata kök nedenini belirlemek için bir iş öğesinin kullanılabilir bilgileri kullanın. Bazı durumlarda, bunlar iş öğesi, varsa daha daha fazla bilgi gerekiyor; bu durumda, toplanan özgün sistem tarafından oluşturulan günlüğüne başvurun. Örneğin, bir mühendislik ürün çökmeyle anlamak için bellek dökümü inceleyin.
+Mühendisler, bir hata nedenini belirlemek için bir iş öğesinde kullanılabilir bilgileri kullanın. Bazı durumlarda, istedikleri nedir iş öğesinde değerinden daha fazla bilgi bu durumda bunlar toplanan özgün sistem tarafından oluşturulan günlüğüne başvurun. Örneğin, bir mühendis, bir ürün kilitlenme anlamak için bellek dökümü inceleyin.
 
 ## <a name="tips-for-extension-authors"></a>Uzantı yazarları için ipuçları
 
-Uzantı yazarlar kullanarak kişisel olmayan kişisel bilgileri ve diğer hassas bilgiler adlarını kendi modülleri, türleri ve yöntemleri riskini sınırlamanız gerekir. Yığında kodu ile bir kilitlenme veya benzer bir hata koşuluna meydana gelirse, bu bilgileri sistem tarafından oluşturulan günlükleri bir parçası olarak toplanan.
+Uzantı yazarları kullanarak kişisel değil kişisel bilgiler veya kendi modüller, türler ve yöntemlerin adlarını diğer hassas bilgiler açığa sınırlamanız gerekir. Bu bilgileri, yığında kodu ile bir kilitlenme veya benzer bir hata koşulu ortaya çıkarsa, sistem tarafından oluşturulan günlükleri bir parçası olarak toplanan.
 
-## <a name="opt-out-of-data-collection"></a>Veri toplama dışında iptal et
+## <a name="opt-out-of-data-collection"></a>Veri toplama işlemini iptal
 
-Topladığımız veri ve erişim ve saklama kısıtlamalar amacı verildiğinde, Visual Studio ve Windows için varsayılan gizlilik ayarları kullanmanızı öneririz. Ancak, [çıkma](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) , Visual Studio deneyimini geliştirme programı. Tüm programları için sistem tarafından oluşturulan günlük toplama dışında kabul etmek için bkz: [Tanılama, geri bildirim ve Windows 10 gizlilik](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Seçenekler, kullandığınız Windows sürümüne bağlı olarak değişebilir.
+Amacını topladığımız veriler ve saklama ve erişim kısıtlamaları göz önünde bulundurulduğunda, Visual Studio ve Windows için varsayılan gizlilik ayarlarını kullanmanızı öneririz. Ancak, [çıkma](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) Visual Studio deneyimini geliştirme programı. Tüm programları için sistem tarafından oluşturulan günlük toplama dışında iptal etmek için bkz. [Tanılama, geri bildirim ve Windows 10'daki gizlilik](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Seçenekler, kullandığınız Windows sürümüne bağlı olarak değişiklik gösterebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio Müşteri Deneyimi Geliştirme Programı](visual-studio-experience-improvement-program.md)
-- [Tanılama, geri bildirim ve Windows 10 gizlilik](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)
+- [Tanılama, geri bildirim ve Windows 10'daki gizlilik](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

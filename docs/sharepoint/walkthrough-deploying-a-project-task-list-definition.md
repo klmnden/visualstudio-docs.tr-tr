@@ -1,13 +1,8 @@
 ---
-title: 'İzlenecek yol: Proje Görev listesi tanımını dağıtma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir proje görev listesi tanımını dağıtma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280369"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826630"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>İzlenecek yol: Proje Görev listesi tanımını dağıtma
 
@@ -161,11 +156,11 @@ Visual Studio IIS uygulama havuzunu geri dönüştüren, çözümün var olan t�
 
 5. PowerShell'i `Add-SPUserSolution` uzak SharePoint yükleme paketini yüklemek için komutu. (Küme çözümleri için kullanmak `Add-SPSolution` komutu.)
 
-     Örneğin, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Örneğin: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`
 
 6. PowerShell'i `Install-SPUserSolution` çözümü dağıtmak için komutu. (Küme çözümleri için kullanmak `Install-SPSolution` komutu.)
 
-     Örneğin, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Örneğin: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`
 
      Uzaktan dağıtım hakkında daha fazla bilgi için bkz. [kullanarak çözüm](http://go.microsoft.com/fwlink/?LinkId=217680) ve [ekleme ve SharePoint 2010'daki PowerShell ile çözümleri dağıtma](http://go.microsoft.com/fwlink/?LinkId=217682).
 
@@ -175,7 +170,7 @@ Aşağıdaki konular SharePoint çözümlerini dağıtma ve özelleştirme hakk�
 
 - [İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Nasıl yapılır: olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)
+- [Nasıl yapılır: Olay alıcısı oluşturma](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [SharePoint Server 2010 için Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)
 

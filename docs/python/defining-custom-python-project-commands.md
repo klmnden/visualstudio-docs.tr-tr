@@ -3,7 +3,6 @@ title: Python projeleri için özel menü komutlarını tanımlama
 description: Düzenleme proje ve MSBuild, Visual Studio yürütülebilir programlar, betikler, modüller, satır içi kod parçacıkları ve pip çağırmak için Python proje bağlam menüsüne özel komutlar ekleyebilirsiniz.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3cf0e0984c8051c0301ccb20c5f8dce2850c1514
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820998"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python projeleri için özel komutlar tanımlayın
 
@@ -42,11 +41,11 @@ Her özel komut bir Python dosyası, bir Python modülü, satır içi Python kod
 >
 > Ancak, özel komut geliştirirken, bu tıklama zahmetli hale gelebilir. Daha verimli bir iş akışı için Visual Studio'da projeye yüklemek ve açmak için ayrıca *.pyproj* ayrı bir düzenleyicide tamamen (başka bir örneği Visual Studio, Visual Studio Code, Not Defteri, vb. gibi.) dosyası. Düzenleyicide ve Visual Studio anahtara değişiklikleri kaydettiğinizde, Visual Studio değişiklikleri algılar ve projeyi yeniden yüklemeyi ister (**proje \<adı > ortam dışında değiştirilmiş.**). Seçin **yeniden** ve yaptığınız değişiklikleri tek bir adımda hemen uygulanır.
 
-## <a name="walkthrough-add-a-command-to-a-project-file"></a>İzlenecek yol: bir komutu bir proje dosyasına ekleyin.
+## <a name="walkthrough-add-a-command-to-a-project-file"></a>İzlenecek yol: Bir proje dosyası için bir komut ekleme
 
 Özel komutları ile tanımak için bu bölümde doğrudan kullanarak bir projenin başlangıç dosyası çalışan basit bir örneği açıklanmaktadır *python.exe*. (Böyle bir komut etkili bir şekilde kullanarak aynıdır **hata ayıklama** > **hata ayıklama olmadan Başlat**.)
 
-1. "Python-CustomCommands kullanarak" adlı yeni bir proje oluşturma **Python uygulaması** şablonu. (Bkz [hızlı başlangıç: bir şablondan bir Python projesi oluşturma](quickstart-02-python-in-visual-studio-project-from-template.md) , zaten işlemiyle ilgili bilgi sahibi değilseniz, yönergeler için.)
+1. "Python-CustomCommands kullanarak" adlı yeni bir proje oluşturma **Python uygulaması** şablonu. (Bkz [hızlı başlangıç: Bir şablondan bir Python projesi oluşturma](quickstart-02-python-in-visual-studio-project-from-template.md) , zaten işlemiyle ilgili bilgi sahibi değilseniz, yönergeler için.)
 
 1. İçinde *Python_CustomCommands.py*, kod ekleme `print("Hello custom commands")`.
 
@@ -145,10 +144,10 @@ Tüm öznitelik değerleri büyük/küçük harfe duyarsızdır.
 
 | Öznitelik | Gerekli | Açıklama |
 | --- | --- | --- |
-| TargetType | Evet | Hedef öznitelik ne içerdiğini ve bağımsız değişkenler özniteliği ile birlikte nasıl kullanıldığını belirtir:<ul><li>**yürütülebilir**: hedefte, doğrudan komut satırına girilen gibi bağımsız değişkenler, değer ekleme adlı yürütülebilir dosyayı çalıştırın. Değer bağımsız değişkenler olmadan yalnızca bir program adı içermelidir.</li><li>**betik**: çalıştırma *python.exe* ile hedef dosya adını, ardından bağımsız değişkenleri değere sahip.</li><li>**Modül**: çalıştırma `python -m` bağımsız değişken değeri ile izlenen hedefte, modül adı ardından.</li><li>**kod**: hedefte bulunan satır içi kodu çalıştırın. Bağımsız değişken değeri yok sayılır.</li><li>**pip**: çalıştırma `pip` ExecuteIn ", ancak pip varsayar çıktısını almak için" olarak ayarlanır; bağımsız değişken tarafından izlenen hedefte komutu olan `install` komut ve hedef olarak paket adını kullanır.</li></ul> |
+| TargetType | Evet | Hedef öznitelik ne içerdiğini ve bağımsız değişkenler özniteliği ile birlikte nasıl kullanıldığını belirtir:<ul><li>**Yürütülebilir dosya**: Hedefte, doğrudan komut satırına girilen gibi bağımsız değişkenler, değer ekleme adlı yürütülebilir dosyayı çalıştırın. Değer bağımsız değişkenler olmadan yalnızca bir program adı içermelidir.</li><li>**betik**: Çalıştırma *python.exe* ile hedef dosya adını, ardından bağımsız değişkenleri değere sahip.</li><li>**Modül**: Çalıştırma `python -m` bağımsız değişken değeri ile izlenen hedefte, modül adı ardından.</li><li>**kod**: Hedefte bulunan satır içi kodu çalıştırın. Bağımsız değişken değeri yok sayılır.</li><li>**pip**: Çalıştırma `pip` ExecuteIn ", ancak pip varsayar çıktısını almak için" olarak ayarlanır; bağımsız değişken tarafından izlenen hedefte komutu olan `install` komut ve hedef olarak paket adını kullanır.</li></ul> |
 | Hedef | Evet | Dosya adı, modül adı, kod veya, TargetType bağlı olarak kullanmak için pip komutu. |
 | Arguments | İsteğe Bağlı | Bir dize bağımsız değişkenleri, hedef vermek için (varsa) belirtir. TargetType olduğunda dikkat `script`, bağımsız değişkenler Python programına verilmez *python.exe*. İçin göz ardı `code` TargetType. |
-| ExecuteIn | Evet | Komutu çalıştırmak ortamı belirtir:<ul><li>**Konsol**: (varsayılan), hedef ve bağımsız değişkenler doğrudan komut satırında girilirse gibi çalışır. Hedef çalıştığından ve otomatik olarak kapatıldıktan bir komut penceresi görünür.</li><li>**consolepause**: konsol, aynı ancak beklediği için bir tuş basışı pencereyi kapatmadan önce.</li><li>**Çıkış**: çalıştırmaları hedef ve, hesaplamanın sonuçlarını görüntülediği **çıkış** Visual Studio'daki. TargetType "pip" ise, Visual Studio paket adını hedef kullanır ve bağımsız değişkenleri ekler.</li><li>**REPL**: çalıştırmaları hedefte [Python etkileşimli](python-interactive-repl-in-visual-studio.md) penceresi; isteğe bağlı görünen adı, pencere başlığı için kullanılır.</li><li>**Hiçbiri**: konsol gibi davranır.</li></ul>|
+| ExecuteIn | Evet | Komutu çalıştırmak ortamı belirtir:<ul><li>**Konsol**: (Varsayılan) Hedef ve bağımsız değişkenler, doğrudan komut satırında girilirse gibi çalışır. Hedef çalıştığından ve otomatik olarak kapatıldıktan bir komut penceresi görünür.</li><li>**consolepause**: Konsolu, ancak bir tuş basışı bekler pencereyi kapatmadan önce aynıdır.</li><li>**Çıkış**: Hedef çalıştırır ve, hesaplamanın sonuçlarını görüntülediği **çıkış** Visual Studio'daki. TargetType "pip" ise, Visual Studio paket adını hedef kullanır ve bağımsız değişkenleri ekler.</li><li>**REPL**: Çalıştıran hedef [Python etkileşimli](python-interactive-repl-in-visual-studio.md) penceresi; isteğe bağlı görünen adı, pencere başlığı için kullanılır.</li><li>**Hiçbiri**: konsol gibi davranır.</li></ul>|
 | Başlangıç | İsteğe Bağlı | Komut çalıştırmak için klasör. |
 | ErrorRegex<br>WarningRegEx | İsteğe Bağlı | Yalnızca ExecuteIn olduğunda kullanılan `output`. Her iki değer hangi Visual Studio ile ayrıştırır, hataları ve Uyarıları göstermek için çıktı komutu normal bir ifade belirtin, **hata listesi** penceresi. Belirtilmezse, komut etkilemez **hata listesi** penceresi. Bekliyor hangi Visual Studio hakkında daha fazla bilgi için bkz: [adlandırılmış yakalama grupları](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | İsteğe Bağlı | Paket gereksinimleri aynı biçimi kullanarak komut listesini [ *requirements.txt* ](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Çalıştırma PyLint** komutu, örneğin belirtir `pylint>=1.0.0`. Komutu çalıştırmadan önce Visual Studio listedeki tüm paketleri yüklü olduğunu denetler. Visual Studio tüm eksik paketleri yüklemek için pip kullanır. |
@@ -161,8 +160,8 @@ Visual Studio, hata ve uyarıların bir komutun çıktısından ayrıştırılı
 - `(?<message>...)`: Hata metni
 - `(?<code>...)`: Hata kodu
 - `(?<filename>...)`: Bildirilen hata için dosyanın adı
-- `(?<line>...)`: Kendisi için hata bildirdi dosya konumu satır sayısı.
-- `(?<column>...)`: Kendisi için hata bildirdi dosya konumu sütun sayısı.
+- `(?<line>...)`: Satır numarası için hata bildirdi dosyanın konumu.
+- `(?<column>...)`: Konumu için hata bildirdi dosyasındaki sütun sayısı.
 
 Örneğin, PyLint aşağıdaki biçimde uyarılar üretir:
 
@@ -351,7 +350,7 @@ Araştırılacak nasıl **Spustit server** ve **başlangıç hata ayıklama sunu
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
-### <a name="message-the-project-file-could-not-be-loaded"></a>İleti: "proje dosyası yüklenemedi"
+### <a name="message-the-project-file-could-not-be-loaded"></a>İleti: "Proje dosyası yüklenemedi"
 
 Proje dosyasında sözdizimi hataları sahip olduğunu gösterir. Bir satır numarası ile özel hata iletisi içerir ve karakter konumu.
 
@@ -374,7 +373,7 @@ Komut yer onay `<PythonCommands>` özellik grubu ve komut listesi adı belirtile
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>İleti: "çalıştırılırken bir hata oluştu \<komut adı >. Komut alınamadı \<hedef adı > projeden. "
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>İleti: "Çalıştırılırken bir hata oluştu \<komut adı >. Komut alınamadı \<hedef adı > projeden. "
 
 Bildiren içeriğini `<Target>` veya `<CreatePythonCommandItem>` öğeleridir yanlış. Olası nedenler şunlardır:
 

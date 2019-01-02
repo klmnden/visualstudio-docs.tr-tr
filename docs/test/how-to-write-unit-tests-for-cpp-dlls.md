@@ -2,29 +2,28 @@
 title: C++ DLL'leri için birim testleri yazma
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7de21715053a91b187ccdcc1b87f042cedd1b7de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832456"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio'da C++ DLL'leri için birim testleri yazma
 
  DLL kodu, test etmek istediğiniz işlevleri dışa aktarır, bağlı olarak test etmek için birkaç yolu vardır. Aşağıdaki yöntemlerden birini seçin:
 
- **DLL'den dışarı çağrı yalnızca işlevler birim testleri:** bölümünde anlatıldığı gibi ayrı bir test projesi Ekle [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md). Test projesinde DLL projesinden bir başvuru ekleyin.
+ **Birim testlerini DLL'den dışarı aktarılan işlevleri çağırın:** Bölümünde anlatıldığı gibi ayrı bir test projesi Ekle [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md). Test projesinde DLL projesinden bir başvuru ekleyin.
 
  Yordamına gidin [dışarı aktarılan işlevleri DLL projesinden başvurma](#projectRef).
 
- **DLL bir .exe dosyası olarak oluşturulmuştur:** ayrı bir test projesi ekleyin. Bu çıkış nesnesi dosyasına bağlayın.
+ **DLL bir .exe dosyası olarak derlenmiştir** Ayrı bir test projesi ekleyin. Bu çıkış nesnesi dosyasına bağlayın.
 
  Yordamına gidin [testleri nesneye veya kitaplık dosyalarına bağlama](#objectRef).
 
@@ -34,7 +33,7 @@ ms.locfileid: "53056181"
 
  Yordamına gidin [DLL statik bir kitaplığa çevirme](#staticLink).
 
- **Birim testleri, dışa aktarılmayan üye olmayan işlevleri çağırmalıdır ve kod bir dinamik bağlantı kitaplığı (DLL) derlenmesi gerekir:** birim testlerini aynı projede ürün kodu olarak ekleyin.
+ **Birim testleri, dışa aktarılmayan üye olmayan işlevleri çağırmalıdır ve kod bir dinamik bağlantı kitaplığı (DLL) derlenmesi gerekir:** Birim testlerini aynı projede ürün kodu olarak ekleyin.
 
  Yordamına gidin [aynı projede birim testleri eklemek için](#sameProject).
 
@@ -158,6 +157,6 @@ ms.locfileid: "53056181"
 - [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
 - [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
-- [İzlenecek yol: Oluşturma ve kullanarak bir dinamik bağlantı kitaplığı (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [İzlenecek yol: Bir dinamik bağlantı kitaplığı (C++) oluşturma ve kullanma](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [İçeri ve dışarı aktarma](/cpp/build/importing-and-exporting)
-- [Hızlı Başlangıç: Test temelli Test Gezgini ile geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)

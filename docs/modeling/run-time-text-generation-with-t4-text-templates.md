@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939933"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 
@@ -300,7 +299,7 @@ INCLUDE yönergesi, bir şablon dosyası ya da eklenen dosyadaki metni içinde h
 
 Çalışma zamanı şablonları, soyut bir temel sınıf şablonu yazarak arasında içerik paylaşabilirsiniz. Kullanım `inherits` parametresinin `<@#template#>` başka bir çalışma zamanı Şablon sınıfı başvurmak için yönergesi.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Devralma deseni: temel yöntemlerini parçaları
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Devralma deseni: Parçalanma taban yöntemi
 
 Aşağıdaki örnekte kullanılan deseni, aşağıdaki noktalara dikkat edin:
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>Devralma deseni: Temel gövdesinde metin
+#### <a name="inheritance-pattern-text-in-base-body"></a>Devralma deseni: Temel gövde metni
 
 Şablon devralma kullanarak bu alternatif yaklaşım içinde metnin toplu temel şablonunda tanımlanır. Türetilmiş şablonlara veri sağlar ve metin temel içeriğinize uyan parça.
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>İlgili Konular
 
-Tasarım zamanı şablonları: kod üretmek için bir şablon kullanmak istiyorsanız, uygulamanızın bir parçası haline gelir, bkz: [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Tasarım zamanı şablonları: Kodu oluşturmak için bir şablon kullanmak istiyorsanız, uygulamanızın bir parçası haline gelir, bkz: [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Çalışma zamanı şablonları, şablonları ve bunların içeriğini derleme zamanında burada belirlenir, herhangi bir uygulamada kullanılabilir. Ancak, çalışma zamanında değiştirme şablonlardan metin oluşturan Visual Studio uzantısı yazmak istiyorsanız bkz [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

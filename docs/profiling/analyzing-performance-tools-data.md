@@ -1,8 +1,6 @@
 ---
 title: Performans analiz araçlarını veri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 521be9d9d0d4e6ecd34547219ef0d7aa81b402f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944768"
 ---
 # <a name="analyze-performance-tools-data"></a>Performans araçları verilerini analiz etme
 Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları görüntüleyip uygulama performans sorunlarını analiz etmek etkinleştirin. Bu bölümde, performans verileri incelemek için kullanılabilir görünümleri ve performans raporları hakkında genel bir bakış sağlar.  
@@ -32,9 +30,9 @@ Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Sorunları hızlı bir şekilde tanımlamak için performans kurallarını kullanma:** sık karşılaşılan sorunlar ve sorunu içeren kaynak kod için kolayca gezinin Yardım Profil Araçları performans kuralları tanımlayın. Ayrıntılı Yardım konuları, genellikle bir çözüm önerebilir.|-   [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**Rapor Görünümü ayrıntıları kavramanız gerekir:** profil oluşturma araçları rapor görünümlerini işlemler, iş parçacıkları, modüller ve işlevleri, bir profil oluşturma için toplanan performans verilerini sağlar. Görünen veriler veri toplamak için kullanılan profil oluşturma yöntemine bağlıdır.|-   [Performans raporu görünümleri](../profiling/performance-report-views.md)|  
-|**Yapılandırma, sıralama ve filtreleme rapor görünümlerini:** belirtin ve bir raporda görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve verileri yalnızca belirttiğiniz süre kesimi içerecek şekilde filtreleyin.|-   [Performans araçları rapor görünümlerini özelleştirme](../profiling/customizing-performance-tools-report-views.md)|  
+|**Sorunları hızlı bir şekilde tanımlamak için performans kurallarını kullanın:** Sık karşılaşılan sorunlar ve sorunu içeren kaynak kod için kolayca gezinin Yardım profil oluşturma araçları performans kuralları tanımlayın. Ayrıntılı Yardım konuları, genellikle bir çözüm önerebilir.|-   [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Rapor Görünümü ayrıntıları kavramanız gerekir:** Profil oluşturma araçları rapor görünümlerini toplanan performans verilerini işlemler, iş parçacıkları, modüller ve bir profil oluşturma, işlevler sağlar. Görünen veriler veri toplamak için kullanılan profil oluşturma yöntemine bağlıdır.|-   [Performans raporu görünümleri](../profiling/performance-report-views.md)|  
+|**Yapılandırma, sıralama ve filtreleme görünümleri bildirin:** Belirtin ve bir raporda görüntülemek için Rapor satırları sıralama veri sütunları sıralama ve verileri yalnızca belirttiğiniz süre kesimi içerecek şekilde filtreleyin.|-   [Performans araçları rapor görünümlerini özelleştirme](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>İlgili bölümler  
  [Performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md)  

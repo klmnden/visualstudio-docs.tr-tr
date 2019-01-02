@@ -1,9 +1,6 @@
 ---
 title: Kaynak denetimi VSPackage'larını kullanmaya başlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98edacd71132e9290cb339f3b3741a0afc25888
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849732"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Kaynak denetimi VSPackage'ları ile çalışmaya başlama
 Bir kaynak denetimi VSPackage'ı, kaynak denetimi eklentisi için daha gelişmiş bir alternatiftir. Kaynak denetimi eklentileri hakkında daha fazla bilgi için bkz: [kaynak denetimi eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md). Bir kaynak denetimi VSPackage'ı kaynak denetimi modeli, özellikler ve kullanıcı arabirimi (UI) üzerinde tam denetim sağlar ve bu tümleştirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı VSPackage olarak.  

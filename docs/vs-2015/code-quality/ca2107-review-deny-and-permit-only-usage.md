@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7a82e6b1acdb8eee1d97dcf6f264ebf66343b58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1e51e9f5de55fa0fe87455f345e4153e47cd90d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830871"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Gözden geçirmeyi reddet ve yalnızca kullanımına izin ver
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Gözden geçirmeyi reddetmek ve yalnızca kullanımına izin ver
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -77,15 +76,12 @@ ms.locfileid: "49851124"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **İsteğe bağlı: Çağıranın Reddet isteğe bağlı olarak onaylanan izni olan etkisi yoktur. ** 
- **LinkDemand: çağıranın Reddet üzerinde hiçbir etkisi LinkDemand olarak onaylanan iznine sahip.** 
- **LinkDemand: çağıranın Reddet LinkDemand ile korunan kodla hiçbir etkisi.** 
- **LinkDemand: Bu Reddet LinkDemand ile korunan kod ile hiçbir etkiye sahiptir.**
+ **İsteğe bağlı: Arayanın Reddet isteğe bağlı olarak onaylanan izni olan etkisi yoktur. ** 
+ **LinkDemand: Arayanın Reddet LinkDemand olarak onaylanan izni olan etkisi yoktur. ** 
+ **LinkDemand: Arayanın Reddet LinkDemand ile korunan kodla etkisi yoktur. ** 
+ **LinkDemand: Bu verme LinkDemand ile korunan kodla etkisi yoktur.**
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
  [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [güvenlik denetimlerini geçersiz kılma](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28) [PermitOnly yöntemini kullanma](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yük Testi Sonuçlarında Özel Grafikler Oluşturma'
+title: 'Nasıl Yapılır: Yük testi sonuçlarında özel grafikler oluşturma'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958007"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Nasıl yapılır: test sonuçlarını yükleme özel grafikler oluşturma
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Nasıl Yapılır: Test sonuçları yükleme özel grafikler oluşturma
 
 Yük testi sonuçları hakkında belirli bilgi görüntüleyen grafikleri tasarlayabilirsiniz. Özel bir grafik, graf görüntüleyen yük testi sayacı belirterek tasarlayın.
 
@@ -40,9 +39,9 @@ Aşağıdaki yordamda, bir yük testi çalışırken veya çalışması bittikte
 
      Yeni grafik görünür **Yük Testi Çözümleyicisi**. Şu anda seçili graf panelinde görünür; Bu panelde görüntülenen graf değiştirir.
 
-3.  Yeni grafik sayaçları ekleyerek özelleştirin. Daha fazla bilgi için [nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Yeni grafik sayaçları ekleyerek özelleştirin. Daha fazla bilgi için [nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Grafik görünümünde yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

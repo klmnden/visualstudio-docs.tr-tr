@@ -2,19 +2,18 @@
 title: Bir soyut sınıf uygulama
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 551efd07e3e62764c71a6bc4e2a9683517139966
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047609"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840414"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio'da bir soyut sınıf uygulama
 
@@ -24,11 +23,11 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen soyut bir sınıf uygulamak için gereken kodu oluşturmanıza olanak tanır.
+**Ne:** Hemen bir soyut sınıf uygulama için gerekli kodu oluşturmanıza olanak sağlar.
 
-**Ne zaman:** soyut bir sınıftan istiyorsunuz.
+**ne zaman:** Soyut bir sınıftan istiyorsunuz.
 
-**Neden:** bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm soyut üyelerini birer birer el ile uygulayabilirsiniz.
+**Neden:** Bu özellik otomatik olarak tüm yöntem imzaları oluşturur ancak tüm soyut üyelerini birer birer el ile uygulayabilirsiniz.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

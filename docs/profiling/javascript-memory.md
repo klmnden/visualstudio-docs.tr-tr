@@ -2,7 +2,6 @@
 title: UWP uygulamalarında JavaScript bellek kullanımını çözümleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962382"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP uygulamalarında JavaScript bellek kullanımını analiz etme
 JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript kullanarak Windows için oluşturulan UWP uygulamalarında bellek sızıntılarını bulmanıza yardımcı olması için Visual Studio'da kullanılabilir. Desteklenen uygulamalar için evrensel Windows uygulamaları uygulamalarıdır.
@@ -99,7 +98,7 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
 -   [Anlık görüntü farkı görüntüleme](#view-a-snapshot-diff). Anlık görüntü arasındaki fark değerlerini gösterir. Bu görünümler, nesnenin farklarını boyutu ve nesne sayısını gösterir.  
   
 ## <a name="isolate-a-memory-leak"></a>Bir bellek sızıntısı Ayır  
- JavaScript bellek Çözümleyicisi daha etkili bir şekilde kullanmanıza yardımcı olabilecek bir iş akışı adımları sağlar. Aşağıdaki adımları uygulamanız bir bellek sızıntısı olduğunu şüpheleniyorsanız yararlı olabilir. Çalışan bir uygulamayı bir bellek sızıntısı tanımlama işleminde size yol gösterir bir öğretici için bkz [izlenecek yol: bir bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+ JavaScript bellek Çözümleyicisi daha etkili bir şekilde kullanmanıza yardımcı olabilecek bir iş akışı adımları sağlar. Aşağıdaki adımları uygulamanız bir bellek sızıntısı olduğunu şüpheleniyorsanız yararlı olabilir. Çalışan bir uygulamayı bir bellek sızıntısı tanımlama işleminde size yol gösterir bir öğretici için bkz [izlenecek yol: (JavaScript) Bellek sızıntısını bulma](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Uygulamanızı Visual Studio'da açın.  
   
@@ -141,7 +140,7 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
     - Fark yığın boyutu (sol bağlantı yığın boyutu altında). Bağlantı metni, önceki anlık görüntüye yığın boyutu ve yığın boyutu geçerli anlık görüntü arasındaki farkı gösterir.  
   
-    - Fark nesne sayısı (sağ bağlantı altındaki nesne sayısı). Bağlantı metni iki değer gösterilir (örneğin, +1858 /-1765): ilk değeri önceki anlık görüntüye bu yana eklenen yeni nesneler sayısıdır ve ikinci değer nesnelerin önceki anlık görüntüye beri kaldırılan sayısıdır.  
+    - Fark nesne sayısı (sağ bağlantı altındaki nesne sayısı). Bağlantı metni iki değer gösterilir (örneğin, +1858 /-1765): İlk değeri önceki anlık görüntüye bu yana eklenen yeni nesneler sayısıdır ve ikinci değer nesnelerin önceki anlık görüntüye beri kaldırılan sayısıdır.  
   
       Bu bağlantılar, türleri yığında tutulan boyut veya bağlı olarak hangi bağlantı açtığınız nesne sayısı, sıralı bir fark anlık görüntü Ayrıntıları görünümünü açın.  
   
@@ -197,7 +196,7 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
 -   Nesne sayısı. Bu sayaç yalnızca uygulama ve JavaScript çalışma zamanı tarafından oluşturulan yerleşik nesneleri filtreler oluşturulan nesneleri gösterir. Anlık görüntü ayrıntılarını türleri görünümünü nesne sayısı bağlar.  
   
--   Fark nesne sayısı. Bu iki değer gösterilir: ilk değeri önceki anlık görüntüye beri; eklenen yeni nesneler sayısıdır. ve ikinci değer nesnelerin önceki anlık görüntüye beri kaldırılan sayısıdır. Örneğin, çizim 1,859 nesneleri eklendi ve anlık görüntü # 1'den beri 1,733 nesneleri kaldırıldı gösterir. Bunu indirildi, bu bilgileri kırmızı bir ok toplam nesne sayısı arttığında ise veya yeşil bir ok tuşunu takip eder. Nesne sayısı değişmediğinden, metin göreceğiniz **değişiklik** yerine bir sayı. İlk anlık görüntü için metni görürsünüz **temel**. Anlık görüntü farkı türleri görünümünü fark nesne sayısı bağlantılar  
+-   Fark nesne sayısı. Bu iki değer gösterilir: İlk değer önceki anlık görüntüye bu yana eklenen yeni nesneler sayısıdır; ve ikinci değer nesnelerin önceki anlık görüntüye beri kaldırılan sayısıdır. Örneğin, çizim 1,859 nesneleri eklendi ve anlık görüntü # 1'den beri 1,733 nesneleri kaldırıldı gösterir. Bunu indirildi, bu bilgileri kırmızı bir ok toplam nesne sayısı arttığında ise veya yeşil bir ok tuşunu takip eder. Nesne sayısı değişmediğinden, metin göreceğiniz **değişiklik** yerine bir sayı. İlk anlık görüntü için metni görürsünüz **temel**. Anlık görüntü farkı türleri görünümünü fark nesne sayısı bağlantılar  
   
 -   Anlık görüntünün alınma zamanını ekranında ekran görüntüsü.  
   
@@ -359,7 +358,7 @@ if (performance && performance.mark) {
   
     -   Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.  
   
-    -   Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](../debugger/view-dom-event-listeners.md).  
+    -   Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](/visualstudio/debugger/quickstart-debug-html-and-css).  
   
 -   İkinci bölümü izleyin [bu videoyu](https://channel9.msdn.com/Events/Build/2013/3-316) JavaScript bellek Çözümleyicisi hakkında derleme 2013 konferansına ait.  
   

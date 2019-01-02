@@ -2,7 +2,6 @@
 title: 'CA2204: Değişmez değerler doğru yazılmalıdır'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - Literals should be spelled correctly
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f86658978a105c1fa4f3c4602b5c838f4c80726
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e23ab1c1c245a03e88b05fb15259193bb508b69a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944317"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: Değişmez değerler doğru yazılmalıdır
 
@@ -30,27 +29,27 @@ ms.locfileid: "31918429"
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
 
-Sabit değerli bir dize yerelleştirilebilir parametresi için ya da yerelleştirilebilir özelliği bağımsız değişken olarak geçirilir ve dize Microsoft Yazım kitaplığı tarafından tanınmayan bir veya daha fazla sözcükler içeriyor.
+Bir sabit dize yerelleştirilebilir parametresi veya yerelleştirilebilir bir özellik için bir bağımsız değişken olarak geçirilir ve dizesi Microsoft Yazım kitaplığı tarafından tanınmayan bir veya daha fazla sözcük içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural bir parametre veya bir özellik için bir değer olarak geçirilen sabit değerli bir dize ya da daha fazla aşağıdaki durumlarda doğrudur:
+Bu kural, bir parametre veya bir özellik için bir değer olarak geçirilen bir sabit dize denetler veya aşağıdaki durumlarda daha fazla doğrudur:
 
-- <xref:System.ComponentModel.LocalizableAttribute> Parametresi ya da özelliğin özniteliği true.
+- <xref:System.ComponentModel.LocalizableAttribute> Özniteliği parametre ya da özelliğin true.
 
-- Parametresi veya özellik adı "Metin", "İletisi" veya "Resim yazısı" içerir.
+- Parametresi veya özellik adı "Metin", "İleti" veya "Başlık" içeriyor.
 
 - Geçirilen dize değişkeninin adı bir <xref:System.Console.Write%2A> veya <xref:System.Console.WriteLine> yöntemdir "value" veya "biçim".
 
-Bu kural değişmez değer dize bileşik sözcüklerinin belirtece dönüştürmek sözcüklere ayrıştırır ve her bir sözcük veya belirteç yazımını denetler. Ayrıştırma algoritması hakkında daha fazla bilgi için bkz: [CA1704: tanımlayıcılar yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Bu kural sabit dizesini bileşik sözcüklerin kelimelere, ayrıştırır ve her sözcük veya belirtecin yazımını denetler. Ayrıştırma algoritma hakkında daha fazla bilgi için bkz. [CA1704: Tanımlayıcıları yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="language"></a>Dil
 
-Yazım denetimi şu anda yalnızca İngilizce tabanlı kültürü sözlükler karşı denetler. Proje dosyası projenizde kültürünü ekleyerek değiştirebilirsiniz **CodeAnalysisCulture** öğesi.
+Yazım denetleyicisi şu anda yalnızca İngilizce tabanlı kültürü sözlükleri karşı denetler. Proje dosyası projenize kültürü ekleyerek değiştirebilirsiniz **CodeAnalysisCulture** öğesi.
 
 Örneğin:
 
@@ -61,15 +60,15 @@ Yazım denetimi şu anda yalnızca İngilizce tabanlı kültürü sözlükler ka
 ```
 
 > [!IMPORTANT]
-> Bir İngilizce tabanlı kültürü dışında her şey için kültürü ayarlama, bu kod analizi kural sessiz bir şekilde devre dışı bırakılır.
+> İngilizce-tabanlı bir kültür dışında bir kültürü ayarlarsanız, bu kod çözümleme kural sessiz bir şekilde devre dışı bırakıldı.
 
-## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-Bu kural ihlal düzeltmek için Word yazımı düzeltin veya sözcüğü özel sözlüğe ekleyin. Özel sözlük kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Kod Analizi dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Bu kural ihlalini düzeltmek için sözcük yazımını düzeltin ya da sözcüğü bir özel sözlüğüne ekleyin. Özel sözlükler kullanma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Kod çözümleme dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
-## <a name="when-to-suppress-warnings"></a>Ne zaman uyarıları bastırma
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
-Bu kuraldan uyarıyı bastırmayın. Doğru yazılmış kelimeler yeni yazılım kitaplıkları için gerekli öğrenme eğrisini düşürebilir.
+Bu kuraldan uyarıyı bastırmayın. Doğru bir şekilde yazılmış kelimeler yeni yazılım kitaplıkları için gereken öğrenme eğrisini azaltır.
 
 ## <a name="related-rules"></a>İlgili kuralları
 
