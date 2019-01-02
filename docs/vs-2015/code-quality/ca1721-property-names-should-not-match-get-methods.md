@@ -1,12 +1,11 @@
 ---
-title: 'Ca1721 tür: Özellik adları get yöntemleri eşleşmemelidir | Microsoft Docs'
+title: 'CA1721: TÜR Özellik adları get yöntemleri değil eşleşmelidir | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,14 +19,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6d2c9bec4d7bfc1059bde61f730c157e25a499bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af5b5a128bfbc5b005007b4f4a970c3d50b06d58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943924"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Tür adları alma metotlarıyla eşleşmemelidir
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: TÜR Özellik adları get yöntemleri ile eşleşmemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,7 +60,4 @@ ms.locfileid: "49880461"
  [!code-vb[FxCop.Naming.GetMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/vb/FxCop.Naming.GetMethod.vb#1)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1024: Uygun yerlerde özellikler kullanın](../code-quality/ca1024-use-properties-where-appropriate.md)
-
-
-
+ [CA1024: Uygun yerlerde özellikler kullan](../code-quality/ca1024-use-properties-where-appropriate.md)

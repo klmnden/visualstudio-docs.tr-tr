@@ -1,8 +1,6 @@
 ---
 title: GPU etkinliği (disk belleği) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.gpuactivity
@@ -13,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8b682c47844a9bc88afdce4a532b1188746a85
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 919f99ad24764017e823dbceda51bec4461401e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942729"
 ---
 # <a name="gpu-activity-paging"></a>GPU Etkinliği (Disk Belleği)
-**GPU etkinliği (disk belleği)** üzerinde kesim **iş parçacığı** sekmesinde temsil kez zaman GPU işleme disk belleği istekleri.  Bir segment uzunluğu GPU doğrudan bellek erişimi (DMA) disk belleği paket işliyordu süreyi temsil eder. Genellikle, disk belleği paketleri CPU ve GPU'ya arasında bellek aktarımı ile ilişkilendirilmiş.  
+**GPU etkinliği (disk belleği)** üzerinde kesim **iş parçacıkları** sekmesinde temsil saatleri zaman GPU işleme sayfalandırma istekleri.  Bir segmenti uzunluğunu GPU doğrudan bellek erişimi (DMA) disk belleği paket işliyordu süreyi temsil eder. Genellikle, disk belleği paketleri bellek CPU ve GPU arasında aktarımı ile ilişkilidir.  
   
- Seçtiğinizde, bir GPU disk belleği segment, rapor üzerinde **geçerli** sekmesini işlenmiş DMA paket hakkındaki bilgileri görüntüler. Bu, beklenen süre miktarını DirectX altyapısı, DMA paket gönderilen işlem ve paket işlemek için gerekli olan zamanı ile ilişkili donanım sıranın içerir.  
+ Seçtiğinizde, bir GPU sayfalama segment, rapor üzerinde **geçerli** sekmesini işlenmiş DMA paket hakkında bilgileri görüntüler. Bu, DirectX altyapısı, DMA paket gönderilen işlem ve paket işlemek için gerekli olan zamanı ile ilişkili donanım kuyruğundaki, beklenen süre miktarını içerir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Kullanım Görünümü](../profiling/utilization-view.md)

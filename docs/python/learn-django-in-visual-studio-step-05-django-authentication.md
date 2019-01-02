@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio projeleri, Django Web projesi şablonları tarafından sağlanan özel kimlik doğrulama özelliklerimiz bağlamında Django temel bilgileri bir kılavuz.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 26a8268508f4d53a488d2c9d5fd54ef9330b2fc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820312"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>5. adım: Django kullanıcıların kimlik doğrulaması
+# <a name="step-5-authenticate-users-in-django"></a>5. Adım: Django kullanıcıların kimlik doğrulaması
 
-**Önceki adımda: [tam Django Web projesi şablonunu kullanma](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Önceki adım sayısı: [Tam Django Web projesi şablonunu kullanma](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Kimlik doğrulama web apps için ortak bir gereksinimi olduğundan, "Django Web projesi" şablonu temel kimlik doğrulaması akışı içerir. (Bu öğreticinin 6. adımında açıklanan "Yoklamalar Django Web projesi" şablonu da aynı akışı içerir.) Django projesi şablonlardan birini kullanırken, Visual Studio kimlik doğrulaması için gerekli olan tüm modülleri Django projesinin içerir. *settings.py*.
 
@@ -31,7 +30,7 @@ Bu adımda şunları öğrenirsiniz:
 > [!div class="checklist"]
 > - Visual Studio şablonları sağlanan kimlik doğrulama akışı kullanma (adım 5 - 1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>5-1. adım: kimlik doğrulaması akışı kullanın
+## <a name="step-5-1-use-the-authentication-flow"></a>5-1. adım: Kullanım kimlik doğrulaması akışı
 
 Aşağıdaki adımlar, kimlik doğrulaması akışı alıştırma ve söz konusu olan proje bölümlerini açıklar:
 
@@ -208,7 +207,7 @@ Aşağıdaki adımlar, kimlik doğrulaması akışı alıştırma ve söz konusu
 
 ### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Soru: Amacı nedir {% csrf_token %} etiket görünür \<form\> öğeleri?
 
-Yanıt: `{% csrf_token %}` etiketi içeren Django'nın yerleşik [siteler arası istek sahteciliği (csrf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT ve DELETE isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) sonra gerekli korumayı ekler.
+Yanıt: `{% csrf_token %}` Etiketi içeren Django'nın yerleşik [siteler arası istek sahteciliği (csrf) koruma](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django belgeleri). Genellikle, POST, PUT ve DELETE isteği gibi yöntemleri bir form içeren herhangi bir öğeye bu etiketi ekleyin. Şablon işleme işlevi (`render`) sonra gerekli korumayı ekler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

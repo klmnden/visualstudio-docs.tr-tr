@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941670"
 ---
 # <a name="domain-property-value-change-handlers"></a>Etki alanı özellik değeri değişiklik işleyicileri
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Alternatif yöntem: hesaplanan özellikleri
+### <a name="alternative-technique-calculated-properties"></a>Alternatif yöntem: Hesaplanan özellikleri
 
 Önceki örnekte, bir etki alanı özelliğinden değerlere yayılması OnValueChanged()'ın nasıl kullanılabileceğini gösterir. Her bir özellik depolanan değerine sahiptir.
 
@@ -105,7 +104,7 @@ Bunun yerine, türetilen özelliği hesaplanan özellik tanımlama düşünebili
 
 Ancak, olası bir dezavantajı hesaplanan özellikler, ifade değeri, bir performans sorunu sayacağı kullanıldığı her zaman değerlendirilir olur. Ayrıca, hiçbir OnValueChanging() ve yoktur OnValueChanged() hesaplanan bir özellik.
 
-### <a name="alternative-technique-change-rules"></a>Alternatif yöntem: kuralları Değiştir
+### <a name="alternative-technique-change-rules"></a>Alternatif yöntem: Kuralları Değiştir
 
 Bir ChangeRule tanımlarsanız, bir özelliğin değerini değiştirir, bir işlem sonunda yürütülür.  Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
 

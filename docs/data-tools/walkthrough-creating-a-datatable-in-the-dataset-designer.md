@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek Yol: Veri Kümesi Tasarımcısında DataTable Oluşturma'
+title: 'İzlenecek yol: Veri kümesi tasarımcısında DataTable oluşturma'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824840"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>İzlenecek yol: veri kümesi tasarımcısında DataTable oluşturma
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>İzlenecek yol: Veri kümesi tasarımcısında DataTable oluşturma
 
 Bu izlenecek yolda nasıl oluşturulacağını açıklar bir <xref:System.Data.DataTable> (olmadan bir TableAdapter) kullanarak **veri kümesi Tasarımcısı**. TableAdapter'ları içeren veri tabloları oluşturma hakkında daha fazla bilgi için bkz. [oluştur ve TableAdapter yapılandırma](../data-tools/create-and-configure-tableadapters.md).
 
@@ -41,7 +40,7 @@ Bu izlenecek yolda nasıl oluşturulacağını açıklar bir <xref:System.Data.D
 
 1.  Üzerinde **proje** menüsünde **Yeni Öğe Ekle**.
 
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+     **Yeni Öğe Ekle** iletişim kutusu görünür.
 
 2.  Sol bölmede seçin **veri**, ardından **veri kümesi** orta bölmesinde.
 

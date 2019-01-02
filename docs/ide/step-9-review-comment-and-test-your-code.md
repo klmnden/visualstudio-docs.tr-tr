@@ -1,9 +1,7 @@
 ---
-title: '9. adım: Gözden geçirme, açıklama ve kodunuzu test'
-ms.custom: ''
+title: '9. Adım: Gözden geçirme, açıklama ve kodunuzu test'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -11,21 +9,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cb11810a8e87dfe2a21538b5c69c027e84f4f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821211"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>9. adım: Gözden geçirme, açıklama ve kodunuzu test
+# <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Gözden geçirme, açıklama ve kodunuzu test
 Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını değiştirmeyen bir nottur. Ne yaptığını anlamak için kodunuzu okuyan kişi için kolaylaştırır. Kodunuza yorumlar eklemek, öğrenmek için iyi bir alışkanlıktır. Visual C# içinde iki İleri eğik çizgi (/ /) satırı bir açıklama olarak işaretler. Visual Basic'te, tek tırnak işareti ('), bir satırı yorum olarak işaretlemek için kullanılır. Bir açıklama ekledikten sonra programınızı test edin. Çalıştırın ve sık yakalayın ve erken önce kod daha karmaşık sorunları düzeltmek için projeler üzerinde çalıştığınız sırada kodunuzu test etmek için iyi bir uygulamadır. Bu adlandırılır *yinelemeli sınama*.
 
  Çalışır bir şey yalnızca yerleşik ve henüz yapılmaz olsa da, zaten bir resim yüklüyor olabilir. Bir açıklamayı kodunuza ekleyin ve test için önce aşağıdaki kavramları sıkça kullanacağınız için kod kavramlarını gözden geçirmek için zaman ayırın:
 
 - Ne zaman tıklattığınız **resim Göster** düğmesine **Windows Form Tasarımcısı**, otomatik olarak eklenen IDE bir *yöntemi* program kodunuza için.
 
-- Yöntemlerdir nasıl kodunuzu düzenleme şeklinizdir: nasıl kodunuzun gruplandırılma şeklidir.
+- Kodunuzu düzenleme şeklinizdir nasıl yöntemler şunlardır: Bunu nasıl kodunuzun gruplandırılma şeklidir.
 
 - Çoğu zaman bir yöntem bir küçük birçok şeyi nasıl gibi belirli bir sırayla yapar, `showButton_Click()` yöntemi bir iletişim kutusu gösterir ve bir resim yükler.
 
@@ -45,7 +43,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
 
    Deyimleri ne programlarınızın şeyler yaptıran şeydir. Visual C# içinde bir ifade her zaman noktalı virgülle biter. Visual Basic'te, bir satırın sonuna bir deyimin sonudur. (Visual Basic'de noktalı virgül gerekiyor.) Önceki deyim söyler, <xref:System.Windows.Forms.PictureBox> ile kullanıcının seçtiği dosyayı yüklemek için Denetim **OpenFileDialog** bileşeni.
 
-  ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: içinde resim görüntüleyici oluşturma C# -Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
+  ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
 ## <a name="to-add-comments"></a>Yorum eklemek için
 
@@ -85,12 +83,12 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
     > [!NOTE]
     >  Herhangi bir görüntü görmüyorsanız **bir resim dosyası seçin** iletişim kutusunda, olduğundan emin olun **tüm dosyalar (*.\*)**  filtre iletişim kutusunun alt sağ tarafındaki aşağı açılan listede seçili.
 
-3.  Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle, kullanılan <xref:System.Windows.Forms.TableLayoutPanel> ve <xref:System.Windows.Forms.FlowLayoutPanel> kapsayıcılar: Bunlar formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.
+3.  Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle, kullanılan <xref:System.Windows.Forms.TableLayoutPanel> ve <xref:System.Windows.Forms.FlowLayoutPanel> kapsayıcıları: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.
 
      Şimdi, daha büyük resimler, resim görüntüleyicinizin kenarlıklarının dışına gider. Sonraki adımda, resimleri pencereye sığdırmak için kod ekleyeceksiniz.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [adım 10: ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Sonraki öğretici adımına gitmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
--   Önceki öğretici adımına dönmek için bkz: [adım 8: bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+-   Önceki öğretici adımına dönmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

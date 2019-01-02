@@ -1,8 +1,6 @@
 ---
-title: İşleme iliştirilemiyor | Microsoft Docs
-ms.custom: ''
+title: İşleme iliştirilemiyor. | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.unable2attach
@@ -16,50 +14,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7036210f47e99ca11edbdb86fdf1f44e40829237
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: affcff981ee516810f2ed9f6c2337c5145ebc572
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819581"
 ---
 # <a name="unable-to-attach-to-the-process"></a>İşleme İliştirilemiyor
-İşleme eklenemiyor. Hata ayıklayıcı bileşen sunucuda bu makineye bağlanırken erişim aldı.  
+İşleme iliştirilemiyor. Hata ayıklayıcı bileşeni sunucuda bu makineye bağlanırken erişim aldı.  
   
- Bu hataya neden iki yaygın senaryolar şunlardır:  
+ Bu hataya neden iki yaygın senaryo vardır:  
   
- **Senaryo 1:** makine bir Windows XP çalıştıran. Makine B, Windows Server 2003 çalışıyor. Kayıt defteri makine B üzerinde aşağıdaki DWORD değerini içerir:  
+ **Senaryo 1:** Makine Windows XP çalışıyor. Windows Server 2003 çalıştıran makine B. Makine B üzerinde kayıt defterini, aşağıdaki DWORD değerini içerir:  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
- Kullanıcı 1 B makinede Terminal sunucusu oturumu (oturumu 1) başlatır ve yönetilen bir uygulamanın bu oturumu başlatır.  
+ 1 kullanıcı Terminal Server oturumunu (oturumu 1) makinede B ve yönetilen bir uygulama bu oturumdan başlayan.  
   
- Her iki makinede yönetici olan, kullanıcı 2, makine A. günlüğe kaydedilir Buradan, makine b 1 oturumunda çalışan bir uygulama eklemek çözemiyorsa çalışır  
+ Her iki makinede yönetici de olan, kullanıcı 2, makine A. kaydediliyor Burada, makine b 1 oturumda çalışan bir uygulamaya eklemek izinli çalışır  
   
- **Senaryo 2:** bir kullanıcı oturum makinelere iki, A ve B, aynı çalışma grubundaki her iki makinelerde aynı parola kullanarak. Hata ayıklayıcı bir makinede çalışıyor ve makine B. makine A'da çalıştıran yönetilen uygulamayı ekleme çalışılırken sahip **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** kümesine **Konuk**.  
+ **Senaryo 2:** Bir kullanıcı her iki makinelerde aynı parola kullanarak makinelere iki, A ve B aynı çalışma kaydedilir. Hata ayıklayıcı bir makine üzerinde çalışan ve makine b makine A üzerinde çalışan yönetilen bir uygulamaya iliştirmeye **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** kümesine **Konuk**.  
   
 ### <a name="to-solve-scenario-1"></a>Senaryo 1 çözmek için  
   
--   Hata ayıklayıcı ve aynı kullanıcı hesabı adı ve parola altında yönetilen uygulamayı çalıştırın.  
+-   Hata ayıklayıcı ve yönetilen uygulama aynı kullanıcı hesabı adı ve parola altında çalıştırın.  
   
 ### <a name="to-solve-scenario-2"></a>Senaryo 2 çözmek için  
   
 1.  Gelen **Başlat** menüsünde seçin **Denetim Masası**.  
   
-2.  Denetim Masası'nda çift **Yönetimsel Araçlar**.  
+2.  Denetim Masası'ndaki çift **Yönetimsel Araçlar**.  
   
-3.  Yönetimsel Araçlar penceresinde çift **yerel güvenlik ilkesi**.  
+3.  Yönetimsel Araçlar penceresinde, **yerel güvenlik ilkesi**.  
   
-4.  Yerel Güvenlik İlkesi penceresinde seçin **yerel ilkeler**.  
+4.  Yerel Güvenlik İlkesi penceresinde **yerel ilkeler**.  
   
-5.  İçinde **ilkeleri** sütun, çift **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli**.  
+5.  İçinde **ilkeleri** sütunu, çift **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli**.  
   
 6.  İçinde **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** iletişim kutusunda, yerel güvenlik ayarını **Klasik**, tıklatıp **Tamam**.  
   
     > [!CAUTION]
-    >  Güvenlik modeli Klasik olarak değiştirme paylaşılan dosyalara ve DCOM bileşenleri için beklenmeyen erişimle sonuçlanabilir. Bu değişiklik yaparsanız, uzak bir kullanıcı, yerel kullanıcı hesabı yerine ile Konuk doğrulayabilir. Uzak bir kullanıcı, kullanıcı adınızı ve parolanızı eşleşiyorsa, bu kullanıcının herhangi bir klasör veya DCOM nesnesi çıkışı paylaştığınız erişebilir olacaktır. Bu güvenlik modelini kullanırsanız, makinedeki tüm kullanıcı hesaplarının güçlü parolalar sahip veya hata ayıklama için bir yalıtılmış ağ Adası ayarlama ve yetkisiz erişimi önlemek için makineler hata ayıklaması emin olun.  
+    >  Güvenlik modeli Klasik olarak değiştirilmesi beklenmeyen Access'te paylaşılan dosyaları ve DCOM bileşenleri için neden olabilir. Bu değişiklik yaparsanız, uzak bir kullanıcı, yerel kullanıcı hesabı yerine ile Konuk kimlik doğrulaması yapabilir. Uzak bir kullanıcı, kullanıcı adınızı ve parolanızı eşleşiyorsa, bu kullanıcı herhangi bir klasör veya DCOM nesne dışarı paylaştığı erişebilir olacaktır. Bu güvenlik modeli kullandığınız makinedeki tüm kullanıcı hesaplarını güçlü parolalar veya hata ayıklama için bir yalıtılmış ağ Adası ayarlama ve yetkisiz erişimi önlemek için makineleri hata ayıklaması emin olun.  
   
 7.  Tüm pencereleri kapatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)
+ [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)

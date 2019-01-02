@@ -1,7 +1,6 @@
 ---
-title: 'Nasıl yapılır: uygulama Bul ve Değiştir mekanizması | Microsoft Docs'
+title: 'Nasıl Yapılır: Uygulama Bul ve Değiştir mekanizması | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -11,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd41f8f1a86a0b6177b4a1d1498075d6de77030
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e3847b9125109cd48b458d06cbfc41fa91b7139f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943031"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Nasıl yapılır: Bul uygulamak ve mekanizmasını değiştirin
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>Nasıl Yapılır: Bul uygulamak ve mekanizmasını değiştirin
 
 Visual Studio Bul/Değiştir kullanmanın iki yolu sağlar. Bir metin resim kabuğa geçirin ve, arama, vurgulama ve değiştirmeyi metin işlemek yoludur. Bu, kullanıcıların birden çok metin yayılma belirtmesine izin verir. Alternatif olarak, bu işlev, VSPackage'ı kontrol edebilirsiniz. Her iki durumda da geçerli hedef ve bütün açık belgeleri hedeflerini hakkında Kabuk bildirmeniz gerekir.
 

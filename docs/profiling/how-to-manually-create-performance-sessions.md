@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: performans oturumlarını elle oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Performans oturumlarını elle oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.dllpage
@@ -16,25 +14,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bf92b01828764652cd75de648b1def01bb722c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c186fdd2c54697b5cda7845547eb33f3fca16ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819685"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Nasıl yapılır: performans oturumlarını elle oluşturma
-Bir performans oturumu el ile oluşturabilirsiniz. Bir proje ile açmak zorunda değilsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bunu yapmak için. Daha fazla bilgi için bkz: [performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md).  
+# <a name="how-to-manually-create-performance-sessions"></a>Nasıl Yapılır: El ile performans oturumları oluşturma
+Performans oturumu el ile oluşturabilirsiniz. Bir proje açın gerekmez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bunu yapmak için. Daha fazla bilgi için [performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md).  
   
-### <a name="to-manually-create-a-performance-session"></a>Performans oturum el ile oluşturmak için  
+### <a name="to-manually-create-a-performance-session"></a>El ile bir performans oturumu oluşturmak için  
   
-1.  Üzerinde **hata ayıklama** menüsündeki **profil oluşturucu**, ardından **performans Gezgini**ve ardından **yeni performans oturumu**.  
+1.  Üzerinde **hata ayıklama** menüsünde **Profiler**, ardından **performans Gezgini**ve ardından **yeni performans oturumu**.  
   
-     Bir boş Performans oturumunu eklenen **performans Gezgini**.  
+     Boş performans oturumu eklenir **performans Gezgini**.  
   
-2.  Sağ **hedefleri**ve ardından **hedef ikili eklemek**.  
+2.  Sağ **hedefleri**ve ardından **hedef ikili Ekle**.  
   
-3.  İçinde **hedef ikili eklemek** iletişim kutusunda dosya adını seçin ve ardından **açık**.  
+3.  İçinde **hedef ikili Ekle** iletişim kutusunda dosya adını seçin ve ardından **açık**.  
   
      Yeni bir ikili eklenir.  
   

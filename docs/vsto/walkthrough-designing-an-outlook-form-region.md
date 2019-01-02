@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Outlook form bölgesi tasarlama'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942378"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>İzlenecek yol: Outlook form bölgesi tasarlama
   Özel form bölgeleri, standart veya özel Microsoft Office Outlook formlarına genişletin. Bu kılavuzda, yeni bir sayfa denetçisi penceresinde bir kişi öğesinin görüntülenen özel form bölgesi tasarlama. Bu form bölgesini kişi için Windows Live yerel arama Web sitesine adres bilgilerini göndererek listelenen her adresinin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
@@ -62,7 +59,7 @@ ms.locfileid: "49813693"
   
 3.  Proje herhangi bir dizine kaydedin.  
   
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Outlook VSTO eklenti projesine form bölgesi ekleme  
  Bir Outlook VSTO eklentisi çözüm, bir veya daha fazla Outlook form bölgesi öğesi içerebilir. Form bölgesi öğesi kullanarak projenize ekleme **yeni Outlook Form bölgesi** Sihirbazı.  
@@ -154,7 +151,7 @@ ms.locfileid: "49813693"
   
 3.  Kişi biçiminde yazın **Ann Beebe** ilgili kişi olarak adlandırın ve ardından aşağıdaki üç adresi belirtin.  
   
-    |Adres türü|Adresi|  
+    |Adres türü|Adres|  
     |------------------|-------------|  
     |**İş**|**4567 Main St İstanbul, NY**|  
     |**Giriş**|**1234 Kuzey St. İstanbul, NY**|  
@@ -178,9 +175,7 @@ ms.locfileid: "49813693"
  [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
  [Outlook form bölgeleri oluşturma yönergeleri](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Form bölgesini Outlook ileti sınıfıyla ilişkilendirme](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Outlook form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Nasıl yapılır: Outlook'un form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
-  
-  

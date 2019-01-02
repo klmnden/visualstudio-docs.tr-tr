@@ -3,19 +3,18 @@ title: R Araçları'nı yükleme
 description: Çevrimdışı yüklemeleri dahil olmak üzere Visual Studio 2015, Visual Studio 2017'de R araçları yüklemek nasıl.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 4fdf7cb791339350ff9644d0f727e3adc299add6
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 0bede3afc12eb7f22f516d7f21727609d5724a9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943161"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio için R araçları yükleme
 

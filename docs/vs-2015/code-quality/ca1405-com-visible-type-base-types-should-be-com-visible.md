@@ -1,12 +1,11 @@
 ---
-title: 'CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır. | Microsoft Docs'
+title: 'CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee4c7a501a7c48118285ff37844af856cf7b4395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78a8d9512dfeb2c5d85ea0d1dbaed87b9243ed3e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942225"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +56,3 @@ ms.locfileid: "49840517"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Sınıf arabirimine giriş](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) [yönetilmeyen kod ile birlikte](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
-
-
-

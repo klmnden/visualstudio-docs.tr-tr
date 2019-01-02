@@ -1,13 +1,8 @@
 ---
 title: 'İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824742"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma
   Bu yönerge, ilişki ve başlatma formlarını kullanımını içeren bir temel sıralı iş akışının nasıl oluşturulacağını gösterir. Öncelikle SharePoint Yöneticisi tarafından (İlişkilendirme formu) ilişkili ve iş akışı (başlatma formu) kullanıcı tarafından yeniden başlatıldığında, bir iş akışına eklenecek parametrelerini etkinleştirme ASPX forms şunlardır.  
   
  Bu izlenecek yolda, burada aşağıdaki gereksinimleri olan bir onay iş akışı gider raporlarını oluşturmak için bir kullanıcının istediği bir senaryosu açıklanmaktadır:  
@@ -452,5 +447,4 @@ ms.locfileid: "49873883"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  
+ [İzlenecek yol: Bir uygulama sayfasını bir iş akışına ekleme](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  

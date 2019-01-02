@@ -1,9 +1,6 @@
 ---
 title: SharePoint programlama modeline genel bakış araçları uzantıları | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8417600d379312304a05d0e4a1ddfc49637ae0e9
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e575ac4d73464ba216d98bbd126a0165fdc9a2a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941946"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Araç uzantılarının programlama modeline SharePoint genel bakış
   Visual Studio'da SharePoint araçları için bir uzantı oluşturduğunuzda, SharePoint araçları tarafından kullanıma sunulan bir veya daha fazla genişletilebilirlik arabirimlerini uygulayarak başlayın. Çoğu durumda, uzantı özellikleri uygulamak için SharePoint araçları tarafından sağlanan diğer türleri de kullanır. Bazı senaryolarda Visual Studio ve SharePoint tarafından sağlanan diğer nesne modellerini türleri de kullanabilirsiniz. Bu nesne modellerinin her biri amacı anlamak ve bunları birbiriyle SharePoint araçları için uzantıları oluşturmak için nasıl kullanılacağını bilmek gerekir.  

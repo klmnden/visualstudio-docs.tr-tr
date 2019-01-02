@@ -1,9 +1,6 @@
 ---
 title: VSCT XML Şeması koşullu öznitelikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 071f13420fe9482e99189ca29eeb09d319f182bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fae45cde013615cd0363f1a97158a178e4b0348c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943440"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Şeması koşullu öznitelikleri
 Tüm listeleri ve öğeleri koşullu öznitelikleri uygulayabilirsiniz. Mantıksal işleçler ve sembol genişletme ifadeler true veya false olarak değerlendirin. TRUE ise sonuçta elde edilen çıktıda ilişkili liste veya öğe dahildir.  

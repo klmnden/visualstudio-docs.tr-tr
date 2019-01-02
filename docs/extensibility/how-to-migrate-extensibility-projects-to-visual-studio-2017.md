@@ -1,9 +1,6 @@
 ---
-title: "Nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl Yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme | Microsoft Docs"
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820416"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl Yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme
 
 Bu belgede, genişletilebilirlik projelerini Visual Studio 2017'ye yükseltme açıklanmaktadır. Proje dosyaları güncelleştirilmeye nasıl açıklayan ek olarak, bu da yeni sürüm 3 VSIX bildirim biçimi için (VSIX v3) uzantı bildirim sürümünden 2 (VSIX v2) yükseltmek nasıl açıklar.
 
@@ -40,7 +37,7 @@ Proje dosyası (örneğin **.csproj*) güncelleştirilir:
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Microsoft.VSSDK.BuildTools NuGet paketini güncelleştir
 
->**Not:** çözümünüzü Microsoft.VSSDK.BuildTools NuGet paketini başvurmuyorsa bu adımı atlayabilirsiniz.
+>**Not:** Çözümünüzü Microsoft.VSSDK.BuildTools NuGet paketini başvurmuyorsa bu adımı atlayabilirsiniz.
 
 Uzantınızı yeni VSIX v3'te oluşturmak için (sürüm 3) biçimi, çözümünüzü yeni VSSDK derleme araçları ile oluşturulması gerekir. Uzantınızı VSIX v2 NuGet aracılığıyla daha eski bir sürüme bir başvuru tutan ancak bu Visual Studio 2017 ile yüklenir. Bu durumda, çözümünüzün Microsoft.VSSDK.BuildTools NuGet paketinin bir güncelleştirmeyi el ile yüklemeniz gerekir.
 
@@ -57,7 +54,7 @@ Microsoft.VSSDK.BuildTools NuGet başvurularını güncelleştirmek için:
 
 Kullanıcının yükleme Visual Studio Uzantısı'nı çalıştırmak için gerekli tüm bütünleştirilmiş kodlara sahip olmak için tüm önkoşul bileşenleri veya paketler uzantı bildirim dosyası belirtin. Bir kullanıcı, uzantıyı yüklemeye çalıştığında Vsıxınstaller tüm önkoşulların yüklü olup olmadığını kontrol eder. Bazı eksikse, eksik bileşenleri uzantı yükleme işleminin bir parçası yüklemek için kullanıcı istenir.
 
->**Not:** en azından tüm uzantılar Visual Studio çekirdek Düzenleyicisi bileşenini bir önkoşul olarak belirtmeniz gerekir.
+>**Not:** En azından tüm uzantılar Visual Studio çekirdek Düzenleyicisi bileşenini bir önkoşul olarak belirtmeniz gerekir.
 
 * Uzantı bildirim dosyası Düzenle (genellikle adlı *source.extension.vsixmanifest*).
 * Olun `InstallationTarget` 15.0 içerir.
@@ -79,11 +76,11 @@ Kullanıcının yükleme Visual Studio Uzantısı'nı çalıştırmak için gere
 </PackageManifest>
 ```
 
-### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>Seçenek: değişiklik için VSIX uzantısı bildirim Tasarımcısı'nı kullanın
+### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>Seçenek: Değişiklik için VSIX uzantısı bildirim Tasarımcısı'nı kullanın
 
 Bildirim XML doğrudan düzenlemek yerine yeni kullanabileceğiniz **önkoşulları** sizin için sekmesinde önkoşulları seçmek için bildirim Tasarımcısı ve XML güncelleştirilir.
 
->**Not:** bildirim Tasarımcısı yalnızca geçerli Visual Studio örneğinde yüklü bileşenleri (iş yükleri veya paketleri) seçmenizi sağlayacak. Bir iş yükü, paket veya şu anda yüklü olmayan bir bileşen için bir önkoşul eklemeniz gerekiyorsa, XML bildirimi doğrudan düzenleyin.
+>**Not:** Bildirim Tasarımcısı yalnızca geçerli Visual Studio örneğinde yüklü bileşenleri (iş yükleri veya paketleri) seçmenizi sağlayacak. Bir iş yükü, paket veya şu anda yüklü olmayan bir bileşen için bir önkoşul eklemeniz gerekiyorsa, XML bildirimi doğrudan düzenleyin.
 
 * Açık *source.extension.vsixmanifest [Design]* dosya.
 * Seçin **önkoşulları** sekmesi ve ENTER tuşuna **yeni** düğmesi.
@@ -97,7 +94,7 @@ Bildirim XML doğrudan düzenlemek yerine yeni kullanabileceğiniz **önkoşulla
 * İçin açılan listeyi tıklatın **adı** ve istenen önkoşul seçin.
 * Gerekli sürüme güncelleştirin.
 
-  >Not: Sürüm alanı bir aralığı kadar kapsayan (ancak değil de dahil olmak üzere) ile yüklü bileşen sürümü ile önceden doldurulur sonraki ana sürümünden bileşen.
+  >Not: Sürüm alanı bir aralığı kadar kapsayan (ancak değil de dahil olmak üzere) ile yüklü bileşen sürümü ile önceden doldurulmuş sonraki ana sürümünden bileşen.
 
   ![roslyn önkoşul Ekle](media/add-roslyn-prerequisite.png)
 
@@ -107,11 +104,11 @@ Bildirim XML doğrudan düzenlemek yerine yeni kullanabileceğiniz **önkoşulla
 
 Visual Studio'nun Deneysel örneğindeki uzantınızın hatalarını ayıklamak isterseniz emin olun ilişkin proje ayarlarını **hata ayıklama** > **başlangıç eylemi** sahip **dış Başlat Program:** değerine *devenv.exe* Visual Studio 2017 yüklemenizi dosyası.
 
-Gibi görünebilir: *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+Bunu aşağıdaki gibi görünmelidir: *C:\Program dosyaları (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Harici program Başlat](media/start-external-program.png)
 
->**Not:** hata ayıklama başlatma eylemi genellikle depolanan *. csproj.user* dosya. Bu dosya genellikle yer aldığı *.gitignore* dosya ve bu nedenle, normal olarak kabul edilen kaynak denetimine diğer proje dosyaları ile kaydedilmez. Bu nedenle, kaynak denetiminden yeni çözümünüzü aldıysanız proje başlangıç eylemi için hiçbir değer olacaktır olma olasılığı yüksektir. Visual Studio 2017 ile oluşturulan yeni VSIX projeleri sahip olacak bir *. csproj.user* geçerli Visual Studio yükleme dizinini işaret varsayılanları ile oluşturulan dosya. Bir VSIX v2 uzantısı geçiriyorsanız, ancak olasıdır, *. csproj.user* dosya önceki Visual Studio sürüme ait yükleme dizini için başvurular içerir. Değeri ayarlanırken **hata ayıklama** > **başlangıç eylemi** uzantınızı hatasını ayıklamaya çalıştığınızda başlatmak doğru Visual Studio deneysel örneğinde izin verir.
+>**Not:** Hata ayıklama başlatma eylemi genellikle depolanan *. csproj.user* dosya. Bu dosya genellikle yer aldığı *.gitignore* dosya ve bu nedenle, normal olarak kabul edilen kaynak denetimine diğer proje dosyaları ile kaydedilmez. Bu nedenle, kaynak denetiminden yeni çözümünüzü aldıysanız proje başlangıç eylemi için hiçbir değer olacaktır olma olasılığı yüksektir. Visual Studio 2017 ile oluşturulan yeni VSIX projeleri sahip olacak bir *. csproj.user* geçerli Visual Studio yükleme dizinini işaret varsayılanları ile oluşturulan dosya. Bir VSIX v2 uzantısı geçiriyorsanız, ancak olasıdır, *. csproj.user* dosya önceki Visual Studio sürüme ait yükleme dizini için başvurular içerir. Değeri ayarlanırken **hata ayıklama** > **başlangıç eylemi** uzantınızı hatasını ayıklamaya çalıştığınızda başlatmak doğru Visual Studio deneysel örneğinde izin verir.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Uzantı düzgün (bir VSIX v3) derlemeleri denetleme
 
@@ -128,7 +125,7 @@ Gibi görünebilir: *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterp
 
 VSIX gereken tüm önkoşulları yüklü bir makinede başarıyla yükler. test edin.
 
->**Not:** uzantıyı yüklemeden önce lütfen Visual Studio'nun tüm örneklerini kapatın.
+>**Not:** Uzantıyı yüklemeden önce lütfen Visual Studio'nun tüm örneklerini kapatın.
 
 Uzantıyı yüklemek çalışır:
 
@@ -136,10 +133,10 @@ Uzantıyı yüklemek çalışır:
 
 ![Visual Studio 2017'de VSIX yükleyicisi](media/vsixinstaller-vs-2017.png)
 
-* İsteğe bağlı: Visual Studio'nun önceki sürümlerini kontrol edin.
+* İsteğe bağlı: Visual Studio'nun önceki sürümlerini denetleyin.
   * Geriye dönük uyumluluk kanıtlar.
   * Çalışmalıdır Visual Studio 2012, Visual Studio 2013, Visual Studio 2015 için.
-* İsteğe bağlı: Onay, VSIX yükleyicisi sürüm denetleyicisi sürümlerinin bir seçenek sunar.
+* İsteğe bağlı: VSIX Yükleyici sürüm denetleyicisi sürümlerinin bir seçim sunar denetleyin.
   * Visual Studio'nun önceki sürümleri (yüklüyse) içerir.
   * Visual Studio 2017'yi içerir.
 
@@ -149,13 +146,13 @@ Visual Studio kısa bir süre önce açıldı, bu gibi bir iletişim kutusu gör
 
 Kapatmak işlemler için bekleyin veya görevleri el ile bitmelidir. Listelenen adı veya PID'si parantez içinde listelenen işlemleri bulabilirsiniz.
 
->**Not:** Visual Studio'nun bir örneğinde çalışırken bu işlemleri otomatik olarak kapatılacak değil. Makinede - diğer kullanıcıların dahil olmak üzere Visual Studio'nun tüm örneklerini kapatın sonra yeniden denemeye devam emin olun.
+>**Not:** Visual Studio örneği çalışırken bu işlemleri otomatik olarak kapatılacak değil. Makinede - diğer kullanıcıların dahil olmak üzere Visual Studio'nun tüm örneklerini kapatın sonra yeniden denemeye devam emin olun.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Gerekli Önkoşullar eksik olduğunda denetleyin
 
 * Uzantı bir makinede Visual Studio 2017, olmadığı içeren Önkoşullarda (yukarıda) tanımlanan tüm bileşenleri yüklenmeye çalışıldı.
 * Yükleme eksik Bileşen/sn tanımlar ve bunları bir önkoşul olarak Vsıxınstaller listeler denetleyin.
-* Not: ön koşulları uzantısıyla yüklenmesi gerekiyorsa ayrıcalık gerekli olacaktır.
+* Not: Önkoşullar uzantısıyla yüklenmesi gerekiyorsa ayrıcalık gerekli olacaktır.
 
 ![vsıxınstaller önkoşulu eksik](media/vsixinstaller-missing-prerequisite.png)
 
@@ -165,7 +162,7 @@ Bağımlılıklarınızı baktığımda, bir bağımlılık için birden çok bi
 
 Ek rehberlik için ortak olan birkaç uzantı türleri ve bunların önerilen Önkoşullar belirledik:
 
-Uzantı türü | Görünen ad | Kimliği
+Uzantı türü | Görünen Ad | Kimliği
 --- | --- | ---
 Düzenleyici | Visual Studio temel Düzenleyicisi  | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# ve Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -180,7 +177,7 @@ Hangi bileşenin belirli bir ikili içeren emin değilseniz, indirme [bileşen i
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
 
-Excel tablosunda dört sütun vardır: **bileşen adı**, **ComponentId**, **sürüm**, ve **ikili / dosya adları**.  Arama ve belirli bileşenler ve ikili dosyaları bulmak için filtreleri kullanabilirsiniz.
+Excel tablosunda dört sütun vardır: **Bileşen adı**, **ComponentId**, **sürüm**, ve **ikili / dosya adları**.  Arama ve belirli bileşenler ve ikili dosyaları bulmak için filtreleri kullanabilirsiniz.
 
 Tüm başvuruları için ilk olarak, hangilerinin çekirdek Düzenleyici (Microsoft.VisualStudio.Component.CoreEditor) bileşeni olduğunu belirleyin.  En az çekirdek Düzenleyicisi bileşenini tüm uzantılar için bir önkoşul olarak belirtilmesi zorunlu kılarız. Çekirdek Düzenleyicisi'nde olmayan bırakılan başvuruları, filtre eklemesine **ikili dosyaları / dosya adlarını** bölümü herhangi bir alt kümesine ilişkin bu başvuruları bileşenleri bulunamadı.
 

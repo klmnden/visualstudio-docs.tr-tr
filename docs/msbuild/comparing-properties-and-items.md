@@ -1,8 +1,6 @@
 ---
 title: Özellikleri ve öğeleri karşılaştırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942365"
 ---
 # <a name="compare-properties-and-items"></a>Özellikleri ve öğeleri karşılaştırma
 MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.  
@@ -69,7 +67,7 @@ MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşul
 </PropertyGroup>  
 ```  
   
- OutputDir sahip öğe türü bir `Include` değerine sahip öznitelik "KeyFiles\\; Sertifikaları\\". MSBuild, iki öğeyi bu dizeyi ayrıştırır: KeyFiles\ ve sertifikaları\\. Öğe türü OutputDir OutputDirList özelliğinin değeri kullanıldığında, MSBuild dönüştürür veya "öğe türü noktalı virgülle ayrılmış dizesi düzleştirir" "KeyFiles\\; Sertifikaları\\".  
+ OutputDir sahip öğe türü bir `Include` değerine sahip öznitelik "KeyFiles\\; Sertifikaları\\". MSBuild iki öğeyi bu dizeyi ayrıştırır: Sertifikaları ve KeyFiles\\\. Öğe türü OutputDir OutputDirList özelliğinin değeri kullanıldığında, MSBuild dönüştürür veya "öğe türü noktalı virgülle ayrılmış dizesi düzleştirir" "KeyFiles\\; Sertifikaları\\".  
   
 ## <a name="properties-and-items-in-tasks"></a>Özellikleri ve öğeleri görevler  
  Özellikleri ve öğeleri, girdileri ve çıktıları MSBuild görevleri olarak kullanılır. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md).  

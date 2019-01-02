@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Etki Alanına Özgü Dil Çözümü Oluşturma'
+title: 'Nasıl Yapılır: Alana Özgü Dil Çözümü Oluşturma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f138f1f809ae5a81aa97c571a147c679bacaa3b2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943778"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl yapılır: Etki Alanına Özgü Dil Çözümü Oluşturma
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl Yapılır: Alana Özgü Dil Çözümü Oluşturma
 Bir etki alanına özgü dil (DSL) özel bir Visual Studio çözümünü kullanarak oluşturulur.
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -46,7 +45,7 @@ Bir etki alanına özgü dil (DSL) özel bir Visual Studio çözümünü kullana
 
    1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
 
-   2. **Yeni proje** iletişim kutusu görüntülenir.
+   2. **Yeni Proje** iletişim kutusu görünür.
 
    3. Altında **proje türleri**, genişletme **diğer proje türleri** düğüm seçeneğine tıklayıp **genişletilebilirlik**.
 

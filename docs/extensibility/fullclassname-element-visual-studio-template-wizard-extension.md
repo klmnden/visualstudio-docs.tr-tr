@@ -1,9 +1,7 @@
 ---
 title: FullClassName öğesi (Visual Studio Şablon Sihirbazı uzantısı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f185d791010c545dd56326505d871fb964a71b66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943745"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName öğesi (Visual Studio Şablon Sihirbazı uzantısı)
 Uygulayan sınıfın tam adını `IWizard` arabirimi.  
@@ -93,4 +91,4 @@ Uygulayan sınıfın tam adını `IWizard` arabirimi.
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

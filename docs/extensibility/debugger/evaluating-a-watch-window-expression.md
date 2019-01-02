@@ -1,9 +1,6 @@
 ---
 title: Bir Gözcü penceresi ifadesini değerlendirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822709"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Gözcü penceresi ifadesini değerlendirme
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232109"
 7.  Visual Studio çağrıları [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) ardından izleme listesinde görüntülenen ifade değeri elde edilir.  
   
 ## <a name="parse-then-evaluate"></a>Ayrıştırma sonra değerlendir  
- Karmaşık bir ifade ayrıştırma değerlendirme daha çok daha uzun sürebilir olduğundan bir ifade değerlendirme işlemi iki adımlamayla ayrılmıştır: 1) ifade ayrıştırma ve (2) ayrıştırılmış ifadeyi değerlendirir. Bu şekilde, birden çok kez değerlendirme oluşabilir, ancak yalnızca bir kez ayrıştırılacak ifade gerekiyor. Ara ayrıştırılmış ifade içinde EE döndürüldüğü bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) sırayla kapsüllenmiş ve DE döndürülen nesne bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesne. `IDebugExpression` Nesne için tüm değerlendirmesi erteler `IDebugParsedExpression` nesne.  
+ Karmaşık bir ifade ayrıştırma değerlendirme daha çok daha uzun sürebilir olduğundan bir ifade değerlendirme işlemi iki adımlamayla ayrılmıştır: ifade (1) ayrıştırma ve 2) ayrıştırılmış ifadeyi değerlendirir. Bu şekilde, birden çok kez değerlendirme oluşabilir, ancak yalnızca bir kez ayrıştırılacak ifade gerekiyor. Ara ayrıştırılmış ifade içinde EE döndürüldüğü bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) sırayla kapsüllenmiş ve DE döndürülen nesne bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesne. `IDebugExpression` Nesne için tüm değerlendirmesi erteler `IDebugParsedExpression` nesne.  
   
 > [!NOTE]
 >  Bir EE rağmen bu Visual Studio varsayar, bu iki adımlı işleme uyması gerekli değildir; EE ayrıştırabilir ve aynı adımda değerlendirme zaman [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) çağrılır (MyCEE örnek, örneğin işleyişi budur). Dilinizi karmaşık ifadeleri biçimlendiriyorsa ayrıştırma adım değerlendirme adımdan ayırmak isteyebilirsiniz. Çoğu ifadeleri izlerken bu Visual Studio hata ayıklayıcısında performans artırabilir gösterilir.  

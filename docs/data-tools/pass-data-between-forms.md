@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 0f4c77e4d2f8d0c75f71942cf61213210bc680ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944833"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 
@@ -71,7 +70,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-2. Ya da genişletin **Visual C#**  veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
+2. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 

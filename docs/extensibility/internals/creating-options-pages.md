@@ -1,9 +1,6 @@
 ---
 title: Seçenekler sayfaları oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework, creating Tools Options pages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 879d094051efd6a64af1c43cb96be71fbc67f5ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820643"
 ---
 # <a name="create-options-pages"></a>Seçenekler sayfaları oluşturma
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yönetilen paket çerçevesini türetilen sınıflar <xref:Microsoft.VisualStudio.Shell.DialogPage> genişletmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ekleyerek IDE **seçenekleri** altında sayfaları **Araçları** menüsü.  

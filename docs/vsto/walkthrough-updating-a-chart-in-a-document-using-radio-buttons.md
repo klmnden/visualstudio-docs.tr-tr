@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştir'
-ms.custom: ''
+title: 'İzlenecek yol: Radyo düğmelerini kullanarak belgede grafik güncelleştir'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943242"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>İzlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştir
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>İzlenecek yol: Radyo düğmelerini kullanarak belgede grafik güncelleştir
   Bu yönerge, radyo düğmeleri Microsoft Office Word için belge düzeyi özelleştirmesinde kullanıcıların belgeye grafik türlerini seçmek için seçenek sunmak için nasıl kullanılacağını gösterir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49904680"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Adıyla bir Word belgesi projesi oluşturma **My grafik seçenekleri**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adıyla bir Word belgesi projesi oluşturma **My grafik seçenekleri**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **My grafik seçenekleri** için proje **Çözüm Gezgini**.  
   
@@ -211,13 +208,11 @@ ms.locfileid: "49904680"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Sonraki gelebilir bazı görevler aşağıda verilmiştir:  
   
--   Bir düğmeye bir metin kutusunu doldurmak için kullanma. Daha fazla bilgi için [izlenecek yol: metin kutusunda düğme kullanarak bir belgede metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Bir düğmeye bir metin kutusunu doldurmak için kullanma. Daha fazla bilgi için [izlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Bir birleşik giriş kutusundan bir stil seçerek biçimlendirme değiştirin. Daha fazla bilgi için [izlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirme](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Bir birleşik giriş kutusundan bir stil seçerek biçimlendirme değiştirin. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak belge biçimlendirmesini](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)   
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

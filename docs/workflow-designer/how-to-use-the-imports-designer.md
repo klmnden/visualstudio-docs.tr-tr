@@ -1,9 +1,8 @@
 ---
-title: 'İş Akışı Tasarımcısı - nasıl yapılır: içeri aktarmalar Tasarımcısını kullanma'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: İçeri Aktarmalar Tasarımcısını Kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f0ae017eaf9843b4411ecf762b91d29ff9d95c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823973"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Nasıl yapılır: içeri aktarmalar Tasarımcısını kullanma
+# <a name="how-to-use-the-imports-designer"></a>Nasıl Yapılır: İçeri Aktarmalar Tasarımcısını Kullanma
 
 İçe Aktarılanlar tasarımcısını Deyimlerinizde kullanın türler için ad alanları girmenizi sağlar. Benzer şekilde **aktarır** veya **kullanarak** Visual Basic anahtar sözcükleri ve C#, içeri aktarmalar tasarımcısını alanlarında İfadenizde bir tür adı girmeniz yeterlidir etkinleştirme belirtme yerine tam olarak Sürüm nitelikli tür adı.
 

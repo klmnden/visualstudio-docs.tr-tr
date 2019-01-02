@@ -1,8 +1,6 @@
 ---
 title: .NET bellek verisi görünümleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method views
@@ -13,69 +11,69 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516f9addb9dc5ca5f7cc8eac87ec1ce97b0e8415
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95577c4d346ee635fb44e36c88965d322efee308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820166"
 ---
 # <a name="net-memory-data-views"></a>.NET bellek verisi görünümleri
-Bu bölüm, .NET bellek profil oluşturma verileri içeren görünümler ve raporlar Profil Oluşturucu veri dosyalarının için başvuru bilgileri içerir.  
+Bu bölüm .NET bellek profil oluşturma verileri içeren görünümleri ve raporları Profil Oluşturucu veri dosyalarının yönelik başvuru bilgileri içerir.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [Özet Görünümü](../profiling/summary-view-dotnet-memory-data.md)  
- İşlevler ve en fazla belleği tahsis türlerini listeler.  
+ En çok bellek ayrılan türleri ve işlevleri listeler.  
   
- [Ayırmalar görünümü](../profiling/dotnet-memory-allocations-view.md)  
- Profil oluşturma çalıştırma ve türü tahsisini sonuçlandı çağrısı ağaçları (yürütme yolları) ayrılan türlerini listeler.  
+ [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)  
+ Profil oluşturma çalıştırmasını ve türü tahsiste sonuçlanan çağrı ağaçları (yürütme yolları) tahsis türlerini listeler.  
   
  [Nesne Ömrü Görünümü](../profiling/object-lifetime-view.md)  
- Profil oluşturma çalıştırma ve örnekleri, bayt cinsinden boyutu ve türü atık toplama nesil sayısını ayrılan türlerini listeler.  
+ Profil oluşturma çalıştırmasını ve örnekleri, bayt cinsinden boyutu ve türü çöp toplama nesil sayısını ayrılan türlerini listeler.  
   
- [Çağrı ağacı görünümü - örnekleme](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
- Bellek ayırma verileri işlevlerin çalıştırmak profil oluşturma ve yürütme yolları temsil eden bir hiyerarşik ağaç görüntüler.  
+ [Çağrı Ağacı Görünümü - Örnekleme](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ Bellek ayırma verisini işlevleri çalıştırmak profil oluşturma ve yürütme yollarını temsil eden bir hiyerarşik ağaç görüntüler.  
   
- [Modüller görünümü - örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)  
- .NET bellek ayırma verileri modülü tarafından düzenler ve İşlevler, kaynak kod satırlarını ve bellek ayrıldı yürütülmekte yönergeleri listeler.  
+ [Modüller Görünümü- Örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)  
+ .NET bellek ayırma verisini modülü tarafından düzenler ve İşlevler, kaynak kod satırlarına ve ayrılan bellek yürütme yönergeleri listeler.  
   
  [Arayan/Aranan görünümü - .NET bellek örnekleme verileri](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)  
- Seçili işlevi, seçili işlevini çağırdı işlevleri ve seçili işlevin adı veriliyordu işlevleri için bellek ayırma veri listeler.  
+ Seçili işleve, seçili işlev çağıran işlevler ve seçili işlev tarafından çağrılan işlevler için bellek ayırma verisini listeler.  
   
- [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)  
- Profil oluşturma çalıştırmada işlevleri için bellek ayırma verilerini listeler.  
+ [İşlevler Görünümü- Örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)  
+ Profil oluşturma çalıştırmasını işlevler için bellek ayırma verisini listeler.  
   
- [Satırlar görünümü - örnekleme](../profiling/lines-view-dotnet-memory-sampling-data.md)  
- Bellek ayırma verileri kaynak kodu satırlarla profil Çalıştır işlevlerin listeler.  
+ [Satırlar Görünümü- Örnekleme](../profiling/lines-view-dotnet-memory-sampling-data.md)  
+ Kaynak kod satırlarına işlevlerin profil oluşturma çalışması için bellek ayırma verisini listeler.  
   
- [Yönerge işaretçileri (IP) görünümü - örnekleme](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)  
- Profil oluşturma Çalıştır işlevlerin yönergeleri için bellek ayırma verilerini listeler.  
+ [Yönerge İşaretçileri (IP) Görünümü- Örnekleme](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)  
+ Profil oluşturma çalıştırmasını işlevlerin yönergeleri için bellek ayırma verisini listeler.  
   
- [Çağrı ağacı görünümü - izleme](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  
- Yürütme yolları, bellek ayırma verileri ve profil çalıştırmak Araçlı işlevler için ayrıntılı zamanlama verileri temsil eden bir hiyerarşik ağaç görüntüler.  
+ [Çağrı Ağacı Görünümü - İzleme](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)  
+ Yürütme yollarını, bellek ayırma verileri ve profil oluşturma çalışması olarak işaretlenmiş işlevler için ayrıntılı zamanlama verileri temsil eden bir hiyerarşik ağaç görüntüler.  
   
- [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)  
- Profil oluşturma verileri modülü tarafından düzenler ve İşlevler, bellek ayırma verileri ve ayrıntılı zamanlama bilgisini modülü için listeler.  
+ [Modüller Görünümü - İzleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)  
+ Modülü tarafından profil oluşturma verileri düzenler ve İşlevler, bellek ayırma verilerinin ve modülü için ayrıntılı zamanlama bilgisi listeler.  
   
- [Arayan/Aranan görünümü - NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  
- Bellek ayırma verileri ve seçili Araçlı işlevi, seçili işlevini çağırdı işlevleri ve seçili işlev tarafından çağrılan işlevler için ayrıntılı zamanlama bilgilerini listeler.  
+ [Arayan/Aranan görünümü - .NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)  
+ Bellek ayırma verileri ve seçili izleme eklenmiş bir işleve, seçili işlev çağıran işlevler ve seçili işlev tarafından çağrılan işlevler için ayrıntılı zamanlama bilgilerini listeler.  
   
- [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
- Profil oluşturma çalıştırmada Araçlı işlevleri için bellek ayırma verilerini listeler.  
+ [İşlevler Görünümü - İzleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
+ İzleme eklenmiş profil oluşturma çalıştırmasını işlevler için bellek ayırma verisini listeler.  
   
 ## <a name="reference"></a>Başvuru  
  [İşlev Ayrıntıları Görünümü](../profiling/function-details-view.md)  
- Seçili işlevi çağrılır ve seçili işlev tarafından çağrılan işlevler arasındaki ilişkinin grafik bir grafik görüntüler.  
+ Seçili işleve çağrılır ve seçili işlev tarafından çağrılmış işlevler arasındaki ilişkinin bir grafik görüntüler.  
   
  [İşlem Görünümü](../profiling/process-view.md)  
- Listeleri işlemi ve iş parçacığı başlangıç ve bitiş saatleri.  
+ Listeleri işlem ve iş parçacığı başlangıç ve bitiş zamanlarını.  
   
  [İşaretler Görünümü](../profiling/marks-view.md)  
- ETW ve profil oluşturma veri dosyasına eklenen olayları örnekleme listeler.  
+ ETW ve örnekleme bir profil oluşturma veri dosyası içine eklenen olaylarını listeler.  
   
 ## <a name="related-sections"></a>İlgili bölümler  
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)  
- Görünümler ve raporlar örnekleme yöntemini kullanarak oluşturulan profil oluşturucu veri dosyalarının için başvuru bilgileri.  
+ [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)  
+ Görünümleri ve raporları örnekleme metodu kullanılarak üretilen Profil Oluşturucu veri dosyaları için başvuru bilgileri.  
   
  [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)  
- Görünümler ve raporlar izleme metodunu kullanarak oluşturulan profil oluşturucu veri dosyalarının için başvuru bilgileri.
+ Görünümleri ve raporları araç haline getirme yöntemi kullanılarak üretilen Profil Oluşturucu veri dosyalarının için başvuru bilgileri.

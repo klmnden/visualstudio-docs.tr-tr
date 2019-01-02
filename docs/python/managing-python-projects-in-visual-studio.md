@@ -3,7 +3,6 @@ title: Python uygulaması projeleri yönetme
 description: Visual Studio projeleri, dosyaları ve uygulama ilişkilerde karmaşıklığını arasındaki bağımlılıkları yönetin.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825298"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -39,7 +38,7 @@ Visual Studio, çeşitli uygulama yapılarının bir projeden varolan bir klasö
 |   |   |
 |---|---|
 | ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) Python projeleri (2 dk. 17s) giriş. |
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | Ayrıca bkz: [yakından bakış: kaynak denetimi Python projeleri ile kullanma](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 dk 55s). |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | Ayrıca bkz: [yakından bakış: Python projeleri ile kaynak denetimi kullanın](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 dk 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Dosya ekleme, bir başlangıç dosyası atayın ve ortamlarını ayarlama
 
@@ -93,7 +92,7 @@ Visual Studio, bir Python projesi sıfırdan veya mevcut koddan ayarlamak için 
 
 ## <a name="linked-files"></a>Bağlantılı dosyaları
 
-Bağlı dosyalar projeye kapsama alınır, ancak genellikle uygulamanın proje klasörleri dışında bulunan dosyalardır. Görünürler **Çözüm Gezgini** Kaplanmış kısayol simge normal dosyalar: ![bağlı dosya simgesi](media/projects-linked-file-icon.png)
+Bağlı dosyalar projeye kapsama alınır, ancak genellikle uygulamanın proje klasörleri dışında bulunan dosyalardır. Görünürler **Çözüm Gezgini** Kaplanmış kısayol simge normal dosyalar: ![Bağlı dosya simgesi](media/projects-linked-file-icon.png)
 
 İçinde belirtilen bağlantılı dosyaları *.pyproj* kullanarak dosya `<Compile Include="...">` öğesi. Bağlantılı dosyaları göreli bir yol dizin yapısı dışında kullanıyorlarsa örtük veya açık içindeki yollara kullanıyorlarsa **Çözüm Gezgini**:
 

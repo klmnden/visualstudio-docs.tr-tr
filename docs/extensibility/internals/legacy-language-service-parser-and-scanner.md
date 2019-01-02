@@ -1,9 +1,6 @@
 ---
 title: Eski dil hizmeti ayrıştırıcısı ve tarayıcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941855"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı
 Ayrıştırıcının dil hizmeti kalbidir. Yönetilen paket Framework (MPF) dil sınıflar görüntülenen kodu hakkında bilgi seçmek için bir dil ayrıştırıcı gerektirir. Bir ayrıştırıcı, metin sözcük belirteçlere ayırır ve ardından bu belirteçleri türü ve işlevleri belirler.  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. Bitti.  
   
 ### <a name="summary"></a>Özet  
- Eşleşen küme ayraçlarını işlemi, genellikle basit dil öğe çiftlerine sınırlıdır. Üçlü eşleştirme gibi daha karmaşık öğeleri ("`if(...)`","`{`"ve"`}`", veya "`else`","`{`"ve"`}`"), bir sözcük tamamlama işleminin bir parçası vurgulanabilir. Örneğin, "else" sözcüğü tamamlandığında eşleşen "`if`" deyimi vurgulanır. Bir dizi varsa `if` / `else if` deyimleri, bunların tümünün vurgulanmış Ayraç eşleştirme olarak aynı mekanizmayı kullanarak. <xref:Microsoft.VisualStudio.Package.Source> Temel sınıf zaten destekler, şu şekilde: tarayıcı belirteci tetikleyici değer döndürmelidir <xref:Microsoft.VisualStudio.Package.TokenTriggers> tetikleyici değeri ile birlikte <xref:Microsoft.VisualStudio.Package.TokenTriggers> önce imleç konumu belirteci.  
+ Eşleşen küme ayraçlarını işlemi, genellikle basit dil öğe çiftlerine sınırlıdır. Üçlü eşleştirme gibi daha karmaşık öğeleri ("`if(...)`","`{`"ve"`}`", veya "`else`","`{`"ve"`}`"), bir sözcük tamamlama işleminin bir parçası vurgulanabilir. Örneğin, "else" sözcüğü tamamlandığında eşleşen "`if`" deyimi vurgulanır. Bir dizi varsa `if` / `else if` deyimleri, bunların tümünün vurgulanmış Ayraç eşleştirme olarak aynı mekanizmayı kullanarak. <xref:Microsoft.VisualStudio.Package.Source> Temel sınıf zaten destekler, bu gibi: Tarayıcı belirteci tetikleyici değer döndürmelidir <xref:Microsoft.VisualStudio.Package.TokenTriggers> tetikleyici değeri ile birlikte <xref:Microsoft.VisualStudio.Package.TokenTriggers> önce imleç konumu belirteci.  
   
  Daha fazla bilgi için [eski dil hizmetinde Ayraç eşleştirme](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   

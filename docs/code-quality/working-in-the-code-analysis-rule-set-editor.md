@@ -2,7 +2,6 @@
 title: Kod Analizi kural kümesi düzenleyicisini kullanma
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd80031530049b204c0befc445c1416aa08b43e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826042"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Kod Analizi kural kümesi düzenleyicisini kullanma
 
@@ -31,7 +30,7 @@ Aşağıdaki tablo önem derecesi seçenekleri gösterir:
 |Hata|Bir hata oluşturur **hata listesi** ve aynı zamanda derleme zamanında.|
 |Bilgi|Bir ileti oluşturur **hata listesi**.|
 |Hidden|İhlalin kullanıcı için görünür değil. IDE ihlalini ancak bildirilir.|
-|Yok.|Kural bastırılır. Kuralın kural kümesi kaldırıldıysa gibi davranış aynıdır.|
+|Hiçbiri|Kural bastırılır. Kuralın kural kümesi kaldırıldıysa gibi davranış aynıdır.|
 
 Düzenleyici kuralları, belirttiğiniz alan grupları kuralları bir kural tarafından ayarlanan bir ağaç yapısında görüntüler. Ekleme veya kuralları kural kümesinden kaldırmak için bir veya daha fazla aşağıdaki adımları gerçekleştirin:
 

@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f892c96a40f9edfc01ea0c6a8de15e59b20fb067
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 270ea37a7e16934452b2a6598fc213fd628bcbbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943375"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüler ve komutlar için Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +55,7 @@ ms.locfileid: "53061277"
  Komutları yakınında kullanıcının odak alanına yerleştirmek kullanışlıdır. Bunu yapmanın bir yolu, Düzenleyicisi araç penceresi ya da belgenin üst kısmında bir gömülü araç oluşturmaktır. Araç çubuğunda yer komutları belirli içerik bölgeye penceresi içinde olmalıdır. Bu araç çubuklarında paylaşılan komutları yinelenen değil. Örneğin, hiçbir zaman içinde bir gömülü araç bir "Kaydet" simgesi yerleştirin.
 
 ### <a name="content-and-command-visibility"></a>İçerik ve komut görünürlük
- Komutları mevcut aşağıdaki kapsamlar: **ortam**, **hiyerarşi**, ve **belge**. Güvenle komut yerleşimden sahip olmak için her kapsam bildirin.
+ Komutlar aşağıdaki kapsamlar mevcuttur: **Ortam**, **hiyerarşi**, ve **belge**. Güvenle komut yerleşimden sahip olmak için her kapsam bildirin.
 
  İçindeki komutlar **ortam** kapsam birincil bağlam'kurmak ve birden çok bağlamları arasında paylaşılır. Bunlar, belge ve araç pencereleri düzenleme ve görünürlük değiştirir. Ortamdaki komutları yanı sıra kapsamı olan **yeni proje**, **sunucuya Bağlan**, **iliştirme işlemi**, **Kes**,  **Kopyalama**, **Yapıştır**, **Bul**, **seçenekleri**, **özelleştirme**, **yeni pencere**, ve **Yardım görüntülemek**.
 

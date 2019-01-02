@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla arama ve belgelerdeki metni değiştirme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6de96133a810898fe847cce71bb2711dd7c31dd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823681"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Nasıl yapılır: program aracılığıyla arama ve belgelerdeki metni değiştirme
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Nasıl Yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme
   <xref:Microsoft.Office.Interop.Word.Find> Nesnedir hem de bir üyesi <xref:Microsoft.Office.Interop.Word.Selection> ve <xref:Microsoft.Office.Interop.Word.Range> nesneleri ve bunlardan birini Microsoft Office Word belgelerinde metin aramak için kullanabilirsiniz. Replace komutu FIND komutu bir uzantısıdır.  
   
  Kullanan bir <xref:Microsoft.Office.Interop.Word.Find> Microsoft Office Word belgesi ve belirli bir metni, biçimlendirme ve stil Ara döngü nesnesini ve kullanmak <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> bulunan öğelerden herhangi birini değiştirmek için özellik.  
@@ -120,9 +117,8 @@ ms.locfileid: "49822403"
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> bulunan ilk öğeyi değiştirir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: program aracılığıyla arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Nasıl yapılır: program aracılığıyla bulunan öğeler arasında döngü](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Nasıl yapılır: Program aracılığıyla bulunan öğeler arasında döngü](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  

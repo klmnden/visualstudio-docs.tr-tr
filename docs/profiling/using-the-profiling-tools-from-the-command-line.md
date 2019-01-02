@@ -1,8 +1,6 @@
 ---
 title: Profil oluşturma kullanarak komut satırından araçları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command line, performance tools
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac28817a7c72b7ecfbbc3c76dd3626f0a24d11c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b606f6d41669550bd84f7d7cdcb7be84e7efda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941894"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Komut satırından profil oluşturma araçlarını kullanma
 Komut satırı araçlarını kullanabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profili uygulamalara komut isteminde ve toplu iş dosyaları kullanarak ve komut dosyası profil oluşturma otomatik hale getirmek için profil oluşturma araçları. Bir komut isteminde rapor dosyalarını da oluşturabilirsiniz. Basit bağımsız profil oluşturucuyu olmadığı bilgisayarlarda verileri toplamak için kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü.  
@@ -33,10 +31,10 @@ Komut satırı araçlarını kullanabilirsiniz [!INCLUDE[vsprvs](../code-quality
   
 | Görev | İlgili içerik |
 | - | - |
-| **Semboller konumunu ayarlayın:** işlevleri ve parametre adlarını görüntülemek için profil oluşturucu sembol erişiminiz olması gerekir (. *pdb*) profili oluşturulan ikili dosyaları. Bu dosyalar, analiz görüntülemek istediğiniz uygulamaları ve Microsoft işletim sistemi için Sembol dosyaları içermelidir. Doğru olduğundan emin olmak için genel Microsoft sembol Sunucusu'nu kullanabilirsiniz. *pdb* Microsoft ikili dosyaları. | -   [Nasıl yapılır: komut satırından sembol dosyası konumlarını belirtme](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
-| **Uygulamanızın profilini:** bir hedef uygulama profil oluşturma metodu uygulamanın türüne bağlı profili için kullandığınız seçenekleri ve komut satırı araçları ve hedef yönetilen veya yerel bir uygulama olup. | -   [Komut satırından profil oluşturma yöntemlerini kullanma](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Profil hizmetler](../profiling/command-line-profiling-of-services.md) |
-| **.XML veya .csv raporları oluşturun:** komut satırından profil oluşturma için arabirimi görüntülenebilir veri dosyalarını oluşturur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Da oluşturabilirsiniz. *xml* veya virgülle ayrılmış değer (. *CSV*) VSPerfReport komut satırı aracını kullanarak veri dosyaları. | -   [Komut satırından profil oluşturucu raporlar oluşturma](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
-| **Profili Visual Studio olmadan bilgisayarlarda kodda:** sahip olmayan bilgisayarlarda uygulama verilerini toplamak için profil oluşturma araçları bağımsız profil oluşturucuyu kullanabilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü. | -   [Nasıl yapılır: bağımsız profil oluşturucuyu yükleme](../profiling/how-to-install-the-stand-alone-profiler.md) |
+| **Semboller konumunu ayarlayın:** İşlevler ve parametre adlarını görüntülemek için profil oluşturucu sembol erişiminiz olması gerekir (. *pdb*) profili oluşturulan ikili dosyaları. Bu dosyalar, analiz görüntülemek istediğiniz uygulamaları ve Microsoft işletim sistemi için Sembol dosyaları içermelidir. Doğru olduğundan emin olmak için genel Microsoft sembol Sunucusu'nu kullanabilirsiniz. *pdb* Microsoft ikili dosyaları. | -   [Nasıl Yapılır: Sembol dosyası konumlarını komut satırından belirtme](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
+| **Uygulamanızın profilini:** Bir hedef uygulama profil oluşturma metodu uygulamanın türüne bağlı profili için kullandığınız seçenekleri ve komut satırı araçları ve hedef yönetilen veya yerel bir uygulama olup. | -   [Komut satırından profil oluşturma yöntemlerini kullanma](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [Profil hizmetler](../profiling/command-line-profiling-of-services.md) |
+| **.XML veya .csv raporları oluşturun:** Profil oluşturmayı komut isteminde, arabirimin görüntülenebilir veri dosyalarını oluşturur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Da oluşturabilirsiniz. *xml* veya virgülle ayrılmış değer (. *CSV*) VSPerfReport komut satırı aracını kullanarak veri dosyaları. | -   [Komut satırından profil oluşturucu raporlar oluşturma](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
+| **Visual Studio bulunmayan bilgisayarlarda kod profili:** Profil oluşturma araçları bağımsız profil oluşturucuyu sahip olmayan bilgisayarlarda uygulama verilerini toplamak için kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yüklü. | -   [Nasıl Yapılır: Bağımsız profil oluşturucuyu yükleme](../profiling/how-to-install-the-stand-alone-profiler.md) |
   
 ## <a name="reference"></a>Başvuru  
  [Komut satırı profil araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)  

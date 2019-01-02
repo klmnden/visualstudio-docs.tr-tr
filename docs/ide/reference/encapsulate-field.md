@@ -2,7 +2,6 @@
 title: Bir özellik için bir alanı yeniden düzenleyin
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc2d4e7d7210cc374358c6f5d296f5f99035907a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822267"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Yeniden düzenleme alanı kapsülle
 
@@ -29,11 +28,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** alana bir özellikte açın ve yeni oluşturulan özelliği kullanmak için bu alanın tüm kullanımları güncelleştirme olanak tanır.
+**Ne:** Bir alan bir özellikte açın ve yeni oluşturulan özelliği kullanmak için bu alanın tüm kullanımları güncelleştirme olanak sağlar.
 
-**Ne zaman:** bir özellikte alandan ve bu alanın tüm başvurularını güncelleştirmek istediğiniz.
+**ne zaman:** Bir alan bir özellikte taşıyın ve bu alanın tüm başvurularını güncelleştirmek istiyorsunuz.
 
-**Neden:** bir alan diğer sınıflar erişim vermek istediğiniz, ancak söz konusu sınıfın doğrudan erişimine sahip olmasını istemiyorsanız.  Bir özellik alanı sarmalama tarafından örneğin atanan değerin doğrulamak için kod yazabilirsiniz.
+**Neden:** Bir alan diğer sınıflar erişim vermek istediğiniz, ancak söz konusu sınıfın doğrudan erişimine sahip olmasını istemezsiniz.  Bir özellik alanı sarmalama tarafından örneğin atanan değerin doğrulamak için kod yazabilirsiniz.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: uzantı performansını tanılama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Uzantı performansını tanılama | Microsoft Docs'
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943427"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Başlangıç uzantısı etkileri ölçme
 
@@ -31,7 +28,7 @@ Bu etkiyi anlayıp anlamadığını yardımcı olmak için yeni bir özellik yav
 Uzantı geliştiricileri, uzantı etkisi nasıl hesaplandığını açıklayarak yardımcı olmak için bu belgede amaçlar. Bu belge, ayrıca nasıl uzantısı etkisi yerel olarak çözümlenebilir açıklar. Yerel olarak uzantısı etkisini çözümleme uzantısı etkileyen bir performans gösterilebilir uzantı belirler.
 
 > [!NOTE]
-> Bu belge, başlangıç ve çözüm yükleme uzantıları etkisini odaklanır. Bunlar UI yanıt veremez duruma gelmesine neden olduğunda uzantıları ayrıca Visual Studio performansını etkiler. Bu konu hakkında daha fazla bilgi için bkz. [nasıl yapılır: uzantılardan kaynaklanan kullanıcı Arabirimi tanılama gecikmeleri](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Bu belge, başlangıç ve çözüm yükleme uzantıları etkisini odaklanır. Bunlar UI yanıt veremez duruma gelmesine neden olduğunda uzantıları ayrıca Visual Studio performansını etkiler. Bu konu hakkında daha fazla bilgi için bkz. [nasıl yapılır: UI tanılama uzantılardan kaynaklanan gecikme](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Uzantıları başlangıç nasıl etkileyebileceğini
 
@@ -51,11 +48,11 @@ Visual Studio 2015'ten itibaren birçok özelliği ekledik. Bu özellikler, otom
 
 Aşağıdaki belgelerde bu özellikler hakkında daha fazla ayrıntı bulabilirsiniz:
 
-[Kural tabanlı UI bağlamı](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): oluşturulan kullanıcı Arabirimi bağlamları daha zengin bir kural tabanlı altyapısı, özellikleri, proje türlerine göre özel bağlamları oluşturmanıza olanak sağlar ve öznitelikleri. Özel bağlamları daha özel senaryoları sırasında bir paket yüklemek için kullanılabilir. Bu belirli senaryolar başlangıç yerine belirli bir özelliğine sahip bir proje varlığını içerir. Ayrıca özel bağlamları izin [komutu için özel bir bağlam bağlanması için görünürlük](visibilityconstraints-element.md) proje bileşenleri veya kullanılabilir başka koşullar göre. Bu özellik bir komut durumu Sorgu işleyici kaydetmek için bir paket yükleme gereğini ortadan kaldırır.
+[Kural tabanlı UI bağlamı](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Oluşturulan kullanıcı Arabirimi bağlamları daha zengin bir kural tabanlı altyapısı, proje türleri, özellikleri ve özniteliklere göre özel bağlamları oluşturmanıza olanak sağlar. Özel bağlamları daha özel senaryoları sırasında bir paket yüklemek için kullanılabilir. Bu belirli senaryolar başlangıç yerine belirli bir özelliğine sahip bir proje varlığını içerir. Ayrıca özel bağlamları izin [komutu için özel bir bağlam bağlanması için görünürlük](visibilityconstraints-element.md) proje bileşenleri veya kullanılabilir başka koşullar göre. Bu özellik bir komut durumu Sorgu işleyici kaydetmek için bir paket yükleme gereğini ortadan kaldırır.
 
-[Zaman uyumsuz paket desteği](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio paketleri paket yükleme, otomatik yük özniteliği veya bir zaman uyumsuz hizmet sorgu tarafından istendi, zaman uyumsuz olarak arka planda yüklenecek Visual Studio 2015'te yeni AsyncPackage temel sınıf sağlar . Bu arka plan IDE yanıt vermeye devam edebilir yüklenmesine izin verir. Uzantı arka planda başlatılır ve başlangıç ve çözüm yükleme gibi kritik senaryolar etkilenen mıydı bile olsa, IDE yanıt veriyor.
+[Zaman uyumsuz paket desteği](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Yeni AsyncPackage temel sınıf Visual Studio 2015'te zaman uyumsuz olarak paket yük otomatik yük özniteliği veya bir zaman uyumsuz hizmet sorgu istenip istenmediğini arka planda yüklenecek Visual Studio paketleri sağlar. Bu arka plan IDE yanıt vermeye devam edebilir yüklenmesine izin verir. Uzantı arka planda başlatılır ve başlangıç ve çözüm yükleme gibi kritik senaryolar etkilenen mıydı bile olsa, IDE yanıt veriyor.
 
-[Zaman uyumsuz Hizmetleri](how-to-provide-an-asynchronous-visual-studio-service.md): zaman uyumsuz paket desteği sayesinde, hizmetleri zaman uyumsuz olarak sorgulamak ve zaman uyumsuz Hizmetleri kaydettirebilir için destek ekledik. Çoğu zaman uyumsuz sorgu iş arka plan iş parçacıklarında gerçekleşmesi zaman uyumsuz sorgu desteklemek için temel Visual Studio Hizmetleri dönüştürmeyle ilgili daha da önemlisi çalışıyoruz. SComponentModel (Visual Studio MEF ana bilgisayarı) artık tamamen zaman uyumsuz yüklemeyi destekleyecek kadar uzantılarına izin vermek için zaman uyumsuz sorgu desteklediği önemli hizmetler biridir.
+[Zaman uyumsuz Hizmetleri](how-to-provide-an-asynchronous-visual-studio-service.md): Zaman uyumsuz paket desteği sayesinde, hizmetleri zaman uyumsuz olarak sorgulama ve zaman uyumsuz Hizmetleri kaydettirebilir desteği de ekledik. Çoğu zaman uyumsuz sorgu iş arka plan iş parçacıklarında gerçekleşmesi zaman uyumsuz sorgu desteklemek için temel Visual Studio Hizmetleri dönüştürmeyle ilgili daha da önemlisi çalışıyoruz. SComponentModel (Visual Studio MEF ana bilgisayarı) artık tamamen zaman uyumsuz yüklemeyi destekleyecek kadar uzantılarına izin vermek için zaman uyumsuz sorgu desteklediği önemli hizmetler biridir.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Otomatik etkisini azaltma uzantılar yüklendi
 
@@ -167,11 +164,11 @@ Görünümü artık yalnızca uzantısı ilgili derlemeleri ile ilişkili olan m
 
 Örneğin yukarıdaki bazı ilginç çağrı yığınlarını olacaktır:
 
-1. GÇ kullanarak `System.IO` sınıfı: Bu kareler kapsamlı maliyetini izlemede çok pahalı olmayabilir ancak dosya g/ç hızı makineden makineye farklılık gösterir, soruna neden olabilir olduğundan.
+1. GÇ kullanarak `System.IO` sınıfı: Bu çerçeveler kapsamlı maliyetini izlemede çok pahalı olmayabilir ancak dosya g/ç hızı makineden makineye farklılık gösterir, soruna neden olabilir, çünkü.
 
    ![Sistem g/ç çerçeveler](media/perfview-system-io-frames.png)
 
-2. Diğer zaman uyumsuz işler, bekleyen çağrılar engelleme: kapsamlı süre bu durumda, ana iş parçacığı, zaman uyumsuz iş tamamlanma engellendi süreyi temsil eder.
+2. Diğer zaman uyumsuz işler, bekleyen çağrılar engelleme: Bu durumda, kapsamlı süre ana iş parçacığı zaman uyumsuz iş tamamlanma engellendi süreyi temsil eder.
 
    ![engelleme çağrı çerçeveler](media/perfview-blocking-call-frames.png)
 

@@ -1,9 +1,6 @@
 ---
 title: Bildirimler ve ilerleme durumu için Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942677"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Bildirimler ve Visual Studio için ilerleme durumu
 ##  <a name="BKMK_NotificationSystems"></a> Bildirim sistemleri  
@@ -50,8 +47,8 @@ ms.locfileid: "48863962"
 |[İlerleme göstergesi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Rapor işleniyor (belirli veya belirsiz) ihtiyacınız olduğunda kullanın. İlerleme göstergesi türleri ve belirli kullanım her biri için çeşitli vardır. Bkz: [ilerleme göstergeleri](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||  
 |[Visual Studio bildirimler penceresi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Bildirimler penceresi herkese açık şekilde genişletilebilir değildir. Ancak, bir dizi ileti lisans ve Visual Studio veya paketler için güncelleştirmelerin bilgilendirici bildirimleri kritik sorunlar da dahil olmak üzere Visual Studio hakkında iletişim kurmak için kullanılır.|Diğer bildirim türleri için kullanmayın.|  
 |[Hata listesi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Sorun (uyarı/hata/bilgisi) sorun yaşıyor doğrudan kullanıcının şu anda açık olan çözüme ilişkili olması durumunda, bunlar kod üzerinde harekete gerekebilir.<br /><br /> Bu, örneğin aşağıdakileri içerir:<br /><br /> -Derleyici iletileri (uyarı/hata/bilgisi)<br /><br /> -Kod hakkında kod Çözümleyicisi/tanılama iletileri<br /><br /> -İleti oluşturma<br /><br /> , Proje veya çözüm dosyaları ile ilgili sorunlar için uygun olabilir, ancak Çözüm Gezgini göstergesi önce göz önünde bulundurun.|Herhangi bir kullanıcının açık olan çözüme kod ilişkisine sahip olmayan öğeler için kullanmayın.|  
-|Düzenleyici bildirimleri: ampul|Dosya Aç var olan bir sorunu gidermek için kullanılabilecek bir düzeltme sahip olduğunuzda kullanın.<br /><br /> Ampul de yeniden düzenlemeler gibi isteğe bağlı olarak kullanıcı kodunda alınır ancak bu durumda "bildirim style" görünmez hızlı Eylemler barındırmak için kullanılması gerektiğini unutmayın.|Açık dosyanın herhangi bir ilişkisi olmayan öğeler için kullanmayın.|  
-|Düzenleyici bildirimleri: dalgalı çizgiler|Belirli bir aralık açık kodlarını (örneğin, bir kırmızı dalgalı hatalara) ile ilgili bir sorun için kullanıcıyı uyarmak için bu seçeneği kullanın.|Belirli bir aralığa açık kodlarını ilişkili olmayan öğeler için kullanmayın.|  
+|Düzenleyici bildirimleri: Ampul|Dosya Aç var olan bir sorunu gidermek için kullanılabilecek bir düzeltme sahip olduğunuzda kullanın.<br /><br /> Ampul de yeniden düzenlemeler gibi isteğe bağlı olarak kullanıcı kodunda alınır ancak bu durumda "bildirim style" görünmez hızlı Eylemler barındırmak için kullanılması gerektiğini unutmayın.|Açık dosyanın herhangi bir ilişkisi olmayan öğeler için kullanmayın.|  
+|Düzenleyici bildirimleri: Dalgalı çizgiler|Belirli bir aralık açık kodlarını (örneğin, bir kırmızı dalgalı hatalara) ile ilgili bir sorun için kullanıcıyı uyarmak için bu seçeneği kullanın.|Belirli bir aralığa açık kodlarını ilişkili olmayan öğeler için kullanmayın.|  
 |[Katıştırılmış durum çubukları](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|İlgili içerik veya özel araç penceresi, belge penceresi ya da iletişim penceresi bağlam içinde işlem durumu sağlamak için bu seçeneği kullanın.|Genel Ürün bildirimler, işlemleri veya içeriğe hiçbir ilişki belirli pencereye sahip olmayan öğeler için kullanmayın.|  
 |[Windows Tepsisi bildirimi](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|İşlem dışı işlemler için bildirimleri yüzey veya Yahoo! companion uygulamaları için kullanın.|IDE ilgili bildirimler için kullanmayın.|  
 |[Bildirim baloncuklar](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Uzak bir işlem bildirim veya değiştirmek için kullanın **dışında** IDE.|Kullanıcı işlemlerinin bildirmek için bir yol kullanmayın **içinde** IDE.|  
@@ -250,7 +247,7 @@ ms.locfileid: "48863962"
   
  ![Satır içi ilerleme Mesajlaşma](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903 09_InlineText")  
   
- **Sunucu Gezgini satır içi metin: yenileniyor...**  
+ **Sunucu Gezgini satır içi metin: Yenileniyor...**  
   
 ##### <a name="tool-windows"></a>Araç pencereleri  
  Genel İlerleme göstergesi, doğrudan araç çubuğunun altında konumlandırılmış bir belirsiz ilerleme çubuğu olarak temsil edilir.  
@@ -259,7 +256,7 @@ ms.locfileid: "48863962"
   
  **Takım Gezgini genel belirsiz ilerleme çubuğu**  
   
-##### <a name="dialogs"></a>İletişim kutuları  
+##### <a name="dialogs"></a>İletişim Kutuları  
  İletişim kutuları ilerleme yükleyici türlerinden herhangi birini içerebilir. İlerleme göstergesi Mesajlaşma ile eşleştirilmiş yanı sıra ayrıntılı temsil eder ve alt işlemlerin İlerleme göstergesi birden fazla seviyede birlikte.  
   
  ![Birden çok İlerleme göstergesi türleri ile iletişim](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903 11_Dialog")  
@@ -329,13 +326,13 @@ ms.locfileid: "48863962"
 ### <a name="creating-an-infobar"></a>Bir bilgi çubuğu oluşturma  
  Bilgi çubuğu, soldan sağa doğru dört bölüm içerir:  
   
--   **Simge:** budur burada herhangi bir simge eklemek için bir uyarı simgesi gibi bilgi çubuğu, görüntülemek istediğiniz.  
+-   **Simge:** Bu burada herhangi bir simge eklemek, bir uyarı simgesi gibi bilgi çubuğu için görüntülemek istediğiniz.  
   
--   **Metin:** metninde bağlantılarıyla birlikte, senaryo/durum kullanıcı açıklamak için metni, gerekirse ekleyebilirsiniz. Metin Sözün tutmak unutmayın.  
+-   **Metin:** Senaryo/durum kullanıcı tanımlamak için metinde bağlantılarıyla birlikte metindir gerekirse ekleyebilirsiniz. Metin Sözün tutmak unutmayın.  
   
--   **Eylemler:** bağlantılar ve düğmeler kullanıcı, Bilgi Çubuğu'nda gerçekleştirebileceğiniz eylemler için bu bölümü içermelidir.  
+-   **Eylemler:** Bu bölümde, bağlantılar ve düğmeler kullanıcı, Bilgi Çubuğu'nda gerçekleştirebileceğiniz eylemler için içermelidir.  
   
--   **Kapat düğmesi:** sağa son bölümde Kapat düğmesine sahip olabilir.  
+-   **Kapat düğmesi:** Son bölümde sağa bir Kapat düğmesi olabilir.  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Yönetilen kodda standart bir bilgi çubuğu oluşturma  
  InfoBarModel sınıfı, bir bilgi çubuğu için bir veri kaynağı oluşturmak için kullanılabilir. Bu dört oluşturuculardan birini kullanın:  

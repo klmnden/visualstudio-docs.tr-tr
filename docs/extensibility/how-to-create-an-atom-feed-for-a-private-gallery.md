@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir Atom oluşturmak için özel bir galeriyi akış | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Atom oluşturmak için özel bir galeriyi akış | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fc3aef8605f5c3343bcc6aca86513d631cace35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941696"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: Atom akışı için özel bir galeri oluşturun
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl Yapılır: Atom akışı için özel bir galeri oluşturun
 Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** özel bir galeri olarak. Daha fazla bilgi için [özel galeriler](../extensibility/private-galleries.md).  
   
 ## <a name="create-an-atom-feed"></a>Bir Atom akışı oluşturma  

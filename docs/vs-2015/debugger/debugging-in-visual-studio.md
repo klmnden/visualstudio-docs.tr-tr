@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -23,12 +22,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d38173e1060534edae580a1b12c43e2d8b3f047a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68a3646963f7ebbeea9c2ea3ac9a9c1f1729b23a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833896"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +35,7 @@ Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranış
 
  Hata ayıklama ve tanılama Visual Studio için hızlı bir giriş için bkz: [hata ayıklama, profil ve tanılama](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
--   [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md) Visual Studio 2015'te yeni işlevler açıklanmaktadır.
+-   [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015) Visual Studio 2015'te yeni işlevler açıklanmaktadır.
 
 -   [Windows hata ayıklayıcı](../debugger/debugger-windows.md)farklı hata ayıklayıcı pencerelerini listeler.
 

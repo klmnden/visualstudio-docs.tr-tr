@@ -1,6 +1,5 @@
 ---
-title: 'Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824294"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl Yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
 Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref:Microsoft.VisualStudio.Shell.UIContext>s etkinleşir. Ancak, bu UI bağlamları sertifikalarıdır, hiçbir seçenek uzantı yazarları bırakan ince değildir ancak noktasından önce etkinleştirir kullanılabilir bir UI bağlamı seçmek için gerçekten yüklenecek VSPackage'ı istedikleri. İyi bilinen UI bağlamı bir listesi için bkz. <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Paketler yüklenirken bir performans etkisi olabilir ve gerekli olandan daha çabuk yüklenirken en iyi yöntem değildir. Visual Studio 2015, kural tabanlı UI bağlamı, altında çalışacağı bir UI bağlamı etkinleştirildi ve ilişkili VSPackages yüklenen kesin koşulları tanımlamak uzantı yazarları sağlayan bir mekanizma kavramını sundu.  
@@ -44,7 +43,7 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
    ```  
   
-    Öznitelikler için aşağıdaki değerleri ekleyin: (bu özniteliklerin ayrıntıları daha sonra verilecektir)  
+    Öznitelikler için aşağıdaki değerleri ekleyin: (Bu özniteliklerin ayrıntıları daha sonra açıklanacaktır)  
   
    ```csharp  
    [ProvideAutoLoad(TestPackage.UIContextGuid)]      

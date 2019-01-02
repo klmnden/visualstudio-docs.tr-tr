@@ -1,8 +1,6 @@
 ---
 title: ProcessOn ve ProcessOff | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba91d26e038c0b0223217793f66debeeb63af85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c3c03667401c5fc93929a94fbacacb0e64fe71f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821172"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn ve ProcessOff
 VSPerfCmd.exe **ProcessOff** ve **ProcessOn** alt komutları duraklatma ve komut satırı profil oluşturma oturumu içinde belirtilen işlem için profil oluşturmayı sürdürün. **ProcessOff** profil oluşturma işlemi durdurur ve **ProcessOn** işlemi profil oluşturmaya başlar.  
@@ -44,7 +42,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Başlatma veya durdurma işlemini tamsayı tanımlayıcısı. İşlem kimliklerini listelenen **işlem** Windows Görev Yöneticisi'nin sekmesinde.  
   
 ## <a name="required-subcommands"></a>Gerekli bir alt komutları  
- Yok.  
+ Hiçbiri  
   
 ## <a name="valid-subcommands"></a>Geçerli alt komutları  
  **ProcessOn** ve **ProcessOff** de aşağıdaki komutları içeren komut satırlarında belirtilebilir.  

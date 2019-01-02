@@ -1,9 +1,6 @@
 ---
 title: SccRemove işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccRemove
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28aa5c5aa887b08992b15adeb48128168b8cfa29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b07706fd7e74011a87d0eb67c8a158208ac95a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818437"
 ---
 # <a name="sccremove-function"></a>SccRemove İşlevi
 Bu işlev, kaynak denetim sisteminden dosyaları siler.  

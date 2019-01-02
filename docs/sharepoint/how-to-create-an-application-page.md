@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: uygulama sayfası oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Uygulama sayfası oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820231"
 ---
-# <a name="how-to-create-an-application-page"></a>Nasıl yapılır: uygulama sayfası oluşturma
+# <a name="how-to-create-an-application-page"></a>Nasıl Yapılır: Uygulama sayfası oluşturma
   Bir veya daha fazla SharePoint siteleri için bir ASP.NET web sayfası oluşturabilirsiniz. SharePoint'te, bu sayfaları uygulama sayfaları denir. Bir site sayfasını, bir uygulama sayfası sayfanın çalışan kod içerir. Daha fazla bilgi için [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Bir uygulama sayfası oluşturmak için  
@@ -55,4 +50,3 @@ ms.locfileid: "51296209"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [İzlenecek yol: SharePoint uygulama sayfası oluşturma](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

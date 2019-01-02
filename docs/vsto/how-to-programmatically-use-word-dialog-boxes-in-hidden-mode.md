@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla Word iletişim kutularını gizli modda kullanma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla Word iletişim kutularını gizli modda kullanma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819633"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Nasıl yapılır: program aracılığıyla Word iletişim kutularını gizli modda kullanma
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Nasıl Yapılır: Program aracılığıyla Word iletişim kutularını gizli modda kullanma
   Microsoft Office Word yerleşik iletişim kutularında kullanıcıya görüntülenmeden çağırarak bir yöntem çağrısı ile karmaşık işlemleri gerçekleştirebilir. Kullanarak bunu yapabilirsiniz <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Dialog> çağırmadan nesne <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> yöntemi.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35677227"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: program aracılığıyla Word yerleşik iletişim kutularını kullanın.](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Nasıl yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
  [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md)   
  [Yansıma (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Yansıma (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

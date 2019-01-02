@@ -1,9 +1,6 @@
 ---
 title: 'Test alanı 5: Kaynak denetimini Değiştir | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7093d50290c4c0612faf6c7691f90e62a08267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942638"
 ---
-# <a name="test-area-5-change-source-control"></a>Test Alanı 5: Kaynak Denetimini Değiştirme
+# <a name="test-area-5-change-source-control"></a>Test alanı 5: Kaynak denetimini Değiştir
 Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak denetimi değiştirilmeden **kaynak denetimini Değiştir** komutu.  
 
  **Kaynak denetimini Değiştir** komut, kullanıcı için dört temel işlevleri sağlar:  
@@ -36,7 +33,7 @@ Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak den
 
 - **Bağlama/bağlantısını kes:**  
 
-  Bağlı veya çevrimdışı durumunu değiştirir alanı 3'te bahsedilen denetimli çözüm. Daha fazla bilgi için [Test alanı 3: kullanıma / geri alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Bağlı veya çevrimdışı durumunu değiştirir alanı 3'te bahsedilen denetimli çözüm. Daha fazla bilgi için [Test alanı 3: Gözden geçirin / geri alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
 
 ## <a name="command-menu-access"></a>Komut menü erişimi  
  Aşağıdaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı menüsü yolu test durumlarında kullanılır.  
@@ -46,7 +43,7 @@ Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak den
 ## <a name="test-cases"></a>Test çalışmaları  
  Belirli test çalışmalarını şunlardır **kaynak denetimini Değiştir** test alanı komutu.  
 
-### <a name="case-5a-bind"></a>Case 5a: bağlama  
+### <a name="case-5a-bind"></a>Büyük/küçük harf 5a: bağlama  
  Bağlama seçili projeler ve çözümler için kaynak kodu denetim bilgisi eklemesine izin verir. Kullanıcı bir proje kaynak denetimine eklenecek bunlar tanımlamak için genellikle istenir. Kullanıcı yeni bir proje kaynak denetimi (kaynak denetimine Ekle karşıtlığını) bu işlemin bir parçası olarak oluşturamazsınız.  
 
 
@@ -58,7 +55,7 @@ Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak den
 | Hiç kaynak denetimi çözümü Bağla | 1.  Kaynak denetiminde bir boş klasör oluşturun.<br />2.  Bir istemci projesi oluşturun.<br />3.  Açık **kaynak denetimini Değiştir** iletişim kutusu (**dosya**, **kaynak denetimi**, **kaynak denetimini Değiştir**).<br />4.  Boş konumda kaynak denetimi çözümü bağlayın.<br />5.  Tıklayın **Tamam** kapatmak için **kaynak denetimini Değiştir** iletişim kutusu.<br />6.  Tıklayın **devam bu bağlamaları** onay iletişim kutusunda.<br />7.  Tıklayın **Tamam** görünürse uyarı iletişim kutusunda. | Çözüm kaynak denetimi eklenir.<br /><br /> Çözüm ve proje kullanıma. |
 | Bağlama iptal et | 1.  Bir proje oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Kaynak denetimini Değiştir iletişim kutusunu açın.<br />4.  Tüm bağlamayı Kaldır.<br />5.  Tıklayın **Tamam** iletişim kutusunu kapatmak için düğme. Bu adım başarılı olursa, sonraki adıma geçin.<br />6.  Yeniden **kaynak denetimini Değiştir** iletişim kutusu.<br />7.  İlişkisiz bir konuma bağlayın.<br />8.  Tıklayın **iptal**. | `Result from Step 5:`<br /><br /> Çözüm, artık kaynak denetimi altında değil<br /><br /> `Result from Step 8:`<br /><br /> Çözümüdür altında hala olmayan kaynak denetimi. |
 
-### <a name="case-5b-unbind"></a>Case 5b: Unbind  
+### <a name="case-5b-unbind"></a>Büyük/küçük harf 5b: Bağlamayı Kaldır  
  Proje ve çözüm kaldırır kaynak kodu denetim bilgisi bağlamayı Kaldır. Kullanıcı Seçimi ve nasıl öğeler kaynak denetimine eklenen bir karışımını etkilenen proje ve çözüm temel alır.  
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  
@@ -66,7 +63,7 @@ Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak den
 |Bir dosya sistemi veya yerel IIS Web projesi ve bir istemci projesini içeren çözüm unbind|1.  Bir dosya sistemi veya yerel IIS Web projesi oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Yeni bir istemci projesi çözüme ekleyin.<br />4.  Denetleyin / çözüm istenirse kabul edin.<br />5.  Açık **kaynak denetimini Değiştir** iletişim kutusu.<br />6.  Tıklayın **Unbind**.<br />7.  İletişim kutusunu kapatmak için **Tamam** 'ı tıklatın.<br />8.  Çözüm, proje, çözüm öğeleri, proje öğeleri denetlemek çalışır.|Çözüm ve projeler kaynak denetimi altında değil.<br /><br /> Kaynak denetimi menüsü komutlarını görünmez.|  
 |İptal Unbind|1.  Bir proje oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Açık **kaynak denetimini Değiştir** iletişim kutusu.<br />4.  Tıklayın **tüm bağlantısını**.<br />5.  Tıklayın **iptal**.|Kaynak denetimi altında bir çözümdür.|  
 
-### <a name="case-5c-rebind"></a>Case 5c: yeniden bağlayın  
+### <a name="case-5c-rebind"></a>Durum 5c: yeniden bağlayın  
  Yeniden bağlamasını bağlamayı Kaldır ve bağlama yalnızca bir birleşimi olan — bir proje/daha önce kaynak denetimi altında olan ve bağlantısız çözüm yeniden bağlama işlemi.  
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  

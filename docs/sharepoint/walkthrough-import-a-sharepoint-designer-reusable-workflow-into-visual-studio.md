@@ -1,15 +1,10 @@
 ---
-title: "İzlenecek yol: bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma | Microsoft Docs"
-ms.custom: ''
+title: "İzlenecek yol: Bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821365"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>İzlenecek yol: bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>İzlenecek yol: Bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma
   Bu kılavuzda SharePoint Designer 2010 içinde oluşturulan bir yeniden kullanılabilir iş akışını içeri aktarma gösteren bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint iş akışı projesi.  
   
  SharePoint Tasarımcısı'nda oluşturulan iş akışları veya *bildirim temelli iş akışları*, oluşur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] yerine kod deyimlerini. SharePoint Designer 2010 tanıtır *yeniden kullanılabilir iş akışlarını*, farklı listelerinde SharePoint siteleri tarafından kullanılan taşınabilir, bildirim temelli iş akışları olduğu.  
@@ -269,4 +264,3 @@ ms.locfileid: "49851484"
  [Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  

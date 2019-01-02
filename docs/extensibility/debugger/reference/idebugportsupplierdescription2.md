@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplierDescription2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15facb38037272dcf2cef4f06d84d835b874012
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6387708232c97a25ea11fc554d250e14e6b66e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818345"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Etkinleştirir [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] içindeki metni görüntülemek için kullanıcı Arabirimi **aktarım bilgi** bölümünü **ekleme işlemi için** iletişim kutusu.  
+Sağlar [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] içindeki metni görüntülemek için kullanıcı Arabirimi **aktarım bilgi** bölümünü **iliştirme** iletişim kutusu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,18 +27,18 @@ IDebugPortSupplierDescription2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bu arabirim, bağlantı noktası üreticiler tarafından uygulanır.  
+ Bu arabirim, bağlantı noktası sağlayıcıları tarafından uygulanır.  
   
 ## <a name="methods"></a>Yöntemler  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugPortSupplierDescription2`.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|İçin bağlantı noktası tedarikçi açıklama ve açıklama meta verilerini alır.|  
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Bağlantı noktası sağlayıcısı için bir açıklama ve açıklama meta verilerini alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Msdbg.h  
+ Üst bilgi: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

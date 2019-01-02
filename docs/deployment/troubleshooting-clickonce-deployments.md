@@ -1,8 +1,6 @@
 ---
 title: ClickOnce dağıtım sorunlarını giderme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 25d352666b66202b40d5d1d397aa36a978f695a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944489"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce dağıtım sorunlarını giderme
 Bu konu ile en yaygın sorunları tanılamak ve gidermek yardımcı olur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımları.  
@@ -34,7 +32,7 @@ Bu konu ile en yaygın sorunları tanılamak ve gidermek yardımcı olur [!INCLU
 
 ## <a name="deployment-considerations"></a>Dağıtım konuları
 
- [Nasıl yapılır: ClickOnce dağıtım hataları için özel günlük dosyası konumu ayarlama](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Nasıl yapılır: Bir ClickOnce dağıtım hataları için özel günlük dosyası konumu ayarlama](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Tüm yeniden yönlendirme açıklar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] etkinleştirme hataları tek bir günlük dosyası için bir makine üzerinde.  
   
  [Nasıl yapılır: ClickOnce dağıtımları için ayrıntılı günlük dosyası belirtme](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  

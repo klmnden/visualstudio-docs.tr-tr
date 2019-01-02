@@ -1,9 +1,6 @@
 ---
 title: SccProperties işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccProperties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8067464802899ce8966d63d702679d216b6377
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74eae3272563fb3514bedfd57fb3d94c98d98193
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818855"
 ---
 # <a name="sccproperties-function"></a>SccProperties İşlevi
 Bu işlev, bir dosya veya proje kaynak denetimi özellikleri görüntüler.  

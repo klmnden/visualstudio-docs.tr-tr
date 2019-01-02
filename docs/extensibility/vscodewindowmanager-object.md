@@ -1,9 +1,6 @@
 ---
 title: VSCodeWindowManager nesnesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSCodeWindowManager
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943294"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager nesnesi
 Dil hizmeti, kod penceresi Yöneticisi uygular ve Kenarlıklar (örneğin, aşağı açılan çubuk) yönetmekten sorumludur. Daha fazla bilgi için [eski API'yi kullanarak kod Windows özelleştirme](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

@@ -1,8 +1,6 @@
 ---
 title: PF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
@@ -10,24 +8,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c86ce1c828ff3f090ce675aeed03a4911a55544
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2fad892cd0f5d63b83de6d01189410c572f4ec82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821535"
 ---
 # <a name="pf"></a>PF
-*VSPerfCmd.exe* **PF** seçeneği sayfa hataları örneklenen profil olayını ayarlar ve bir örnekleme aralığı 10 varsayılan sayfa hatalarının sayısı isteğe bağlı olarak değişir.  
+*VSPerfCmd.exe* **PF** seçeneği ayarlar örneklenir profil oluşturma olay sayfa hataları ve bir örnekleme aralığı 10 varsayılan sayfa hata sayısı isteğe bağlı olarak değişir.  
   
 > [!NOTE]
->  **PF** 64-bit sistemlerinde kullanılamaz.  
+>  **PF** 64-bit sistemlerde kullanılamaz.  
   
-**PF** de içeren bir komut satırında yalnızca kullanılabilir **başlatma** veya **Attach** seçeneği.  
+**PF** de içeren bir komut satırında yalnızca kullanılabilir **başlatma** veya **iliştirme** seçeneği.  
   
- Varsayılan olarak, örnekleme olay durdurulamaz harici işlemci saat döngüsü için ayarlanır ve örnekleme aralığı 10,000,000 için ayarlanır. **Zamanlayıcı**, **PF**, **Sys**, ve **sayaç** seçenekleri örnek olay ve örnekleme aralığı ayarlamanıza olanak sağlar. **GC** seçeneği her ayırma ve atık toplama olay .NET bellek verileri toplar. Bir komut satırında bu seçenekler yalnızca biri belirtilebilir.  
+ Varsayılan olarak, örnekleme olay durdurulmamış işlemci saat döngülerini için ayarlanır ve örnekleme aralığı 10,000,000 için ayarlanır. **Zamanlayıcı**, **PF**, **Sys**, ve **sayacı** seçenekleri örnekleme olay ve örnekleme aralığı ayarlamanızı sağlar. **GC** seçeneği her ayırma ve atık toplama etkinlikte .NET bellek verileri toplar. Bir komut satırında bu seçenekleri yalnızca biri belirtilebilir.  
   
- Örnekleme olay ve örnekleme aralığı yalnızca ilk komut içeren satırı ayarlanabilir bir **başlatma** veya bir **Attach** seçeneği.  
+ Örnekleme olay ve örnekleme aralığı yalnızca ilk komut içeren satırı ayarlanabilir bir **başlatma** veya **iliştirme** seçeneği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,34 +35,34 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
   
 #### <a name="parameters"></a>Parametreler  
  `Events`  
- Bir örnekleme aralığı içinde sayfa hatası olaylarının sayısını belirten bir tamsayı değeri. Varsa `Events` belirtilmezse, aralığı 10 olarak ayarlandı.  
+ Bir örnekleme aralığı içinde sayfa hatası olaylarının sayısını belirten bir tamsayı değeri. Varsa `Events` belirtilmezse, aralığı 10'a ayarlayın.  
   
-## <a name="required-options"></a>Gerekli seçenekler  
+## <a name="required-options"></a>Gerekli seçenekleri  
  **PF** yalnızca aşağıdaki seçeneklerden birini içeren bir komut satırında belirtilebilir.  
   
  **Başlat:** `AppName`  
  Profil Oluşturucu ve AppName tarafından belirtilen uygulamayı başlatır.  
   
- **Ekle:** `PID`  
- Profil Oluşturucu AppName tarafından belirtilen işlem ekler.  
+ **Ekleme:** `PID`  
+ AppName tarafından belirtilen işlem için profil oluşturucuyu ekler.  
   
-## <a name="invalid-options"></a>Geçersiz seçenekleri  
+## <a name="invalid-options"></a>Geçersiz Seçenekler  
  Aşağıdaki seçenekler aynı komut satırında belirtilemez **PF**.  
   
  **Zamanlayıcı**[**:**`Cycles`]  
- Ayarlar işlemci saatinin örnekleme olaya geçiş yapar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Cycles`. Varsayılan süreölçerini 10,000,000 ' dir.  
+ Kümeleri işlemci saat için örnekleme olay geçiş yapar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Cycles`. Varsayılan Zamanlayıcı 10,000,000 aralığıdır.  
   
  **Sys**[**:**`Events`]  
- İşletim sistemi çekirdeği (syscalls) profili uygulamasından çağrıları örnekleme olay ayarlar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Events`. Varsayılan Sys aralığı 10'dur.  
+ Örnekleme olayını, işletim sisteminin çekirdeğine (syscalls) profili oluşturulan uygulamayla çağrıları ayarlar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Events`. Varsayılan Sys aralığı 10'dur.  
   
  **Sayaç:** `Name`[`,Reload`[`,FriendlyName`]]  
- Sayaç tarafından belirtilen CPU performans örnekleme olay ayarlar `Name` ve örnekleme aralığı ayarlar `Reload`.  
+ Bir CPU performans sayaç tarafından belirtilen örnekleme olayını ayarlar `Name` ve örnekleme aralığı ayarlar `Reload`.  
   
  **GC**[**:**{**ayırma**&#124;**ömrü**}]  
- .NET bellek verileri toplar. Varsayılan olarak (**ayırma**), her bellek ayırma etkinlikte toplanan veriler. Zaman **ömrü** parametresi belirtilmişse, veri her atık toplama etkinlikte de toplanır.  
+ .NET bellek verileri toplar. Varsayılan olarak (**ayırma**), her bir bellek ayırma etkinlikte toplanan veriler. Zaman **ömrü** parametresi belirtildiğinde, veriler ayrıca her çöp toplama olayını toplanır.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek, sayfa hataları için profil oluşturma örnek olayı ayarlayabilirsiniz ve örnekleme aralığı 20 sayfa hataları gösterilmektedir.  
+ Bu örnekte, profil oluşturma örnek olay sayfa hataları ve 20 sayfa hataları örnekleme aralığı ayarlayın gösterilmektedir.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -75,4 +73,4 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil hizmetler](../profiling/command-line-profiling-of-services.md)

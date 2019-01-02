@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Paket bildirimi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Paket bildirimi oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943479"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Nasıl yapılır: Paket bildirimi oluşturma
+# <a name="how-to-create-a-package-manifest"></a>Nasıl Yapılır: Paket bildirimi oluşturma
 Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Yerelleştirilmiş farklı sürümleri arasında paylaşılan işlevselliği ürün bildirimine gitmeniz gerekir.  
   
  Paket bildirimleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).  

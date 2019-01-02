@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943096"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme
   Bu yönerge, Microsoft Office Word belgesinde Eylemler bölmesi oluşturma işlemini gösterir. Eylemler bölmesinde girişini toplamak ve ardından metin belgeye gönderen iki denetimleri içerir.  
@@ -51,7 +48,7 @@ ms.locfileid: "51948731"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Adıyla bir Word belgesi projesi oluşturma **My temel Actions Pane**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adıyla bir Word belgesi projesi oluşturma **My temel Actions Pane**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **My temel Actions Pane** için proje **Çözüm Gezgini**.  
   
@@ -184,9 +181,7 @@ ms.locfileid: "51948731"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
- [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Nasıl yapılır: Word belgelerine veya Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Nasıl yapılır: Excel çalışma kitaplarına Eylemler bölmesi ekleme](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [Nasıl yapılır: denetim Eylemler bölmelerindeki Düzen yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Yer işareti denetimi](../vsto/bookmark-control.md)  
-  
-  

@@ -3,8 +3,6 @@ title: Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7708bc32e240f5976f1a7b6b9f9a1afb4c950743
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942664"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
   Office'i genişleten .NET Framework uygulamaları oluşturmak için Visual Studio'da Microsoft Office geliştirici araçları kullanabilirsiniz. Bu uygulamalar olarak da adlandırılır *Office çözümleri*.  
@@ -114,5 +112,3 @@ ms.locfileid: "53441502"
   
  [Visual Studio .NET framework programlamada](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Visual Basic ve Visual C# .NET Framework'teki uygulama geliştirmeyle ele alınmaktadır.  
-  
-  

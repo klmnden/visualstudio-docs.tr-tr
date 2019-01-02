@@ -2,7 +2,6 @@
 title: Web formunda hata ayıklama | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822184"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>İzlenecek Yol: Web Formunda Hata Ayıklama
+# <a name="walkthrough-debugging-a-web-form"></a>İzlenecek yol: Bir Web formunda hata ayıklama
 Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Göster bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması, Web formu olarak da bilinir. Başlat ve yürütmeyi durdurun, kesme noktaları ayarlayın ve değişkenleri incelemek nasıl gösterir **Watch** penceresi.
 
 > [!NOTE]
@@ -69,7 +68,7 @@ Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Gö
 
 11. Bıraktığınız düğme denetimini çift tıklayın.
 
-     Bu sizi kod sayfasına götürür: C# veya Default.aspx.vb için Default.aspx.cs [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. İmleç işlevi olmalıdır `Button1_Click`.
+     Bu sizi kod sayfasına götürür: Default.aspx.cs için C# veya için Default.aspx.vb [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. İmleç işlevi olmalıdır `Button1_Click`.
 
 12. İçinde `Button1_Click` işlev, aşağıdaki kodu ekleyin:
 

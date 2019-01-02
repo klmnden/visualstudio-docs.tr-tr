@@ -1,8 +1,6 @@
 ---
 title: Sorgulama. Pdb dosyası | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a13f98e9d1507c0044057099d61b625e1142929e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f909067c704686be4608546cc891df7f131107e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819560"
 ---
 # <a name="querying-the-pdb-file"></a>.Pdb Dosyasını Sorgulama
 Program veritabanı dosyası (.pdb uzantısına) türü ve, derleme ve bağlama proje boyunca toplanan sembolik hata ayıklama bilgisini içeren bir ikili dosyadır. Bir PDB dosyası ile C/C++ programı derleme oluşturulduğunda **/zi** veya **/zi** veya [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], veya [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] ile program **/debug** seçeneği. Başvuru için hata ayıklama bilgisi .pdb dosyasına nesne dosyaları içerir. Pdb dosyaları hakkında daha fazla bilgi için bkz. [PDB dosyaları](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). DIA uygulama çeşitli simgeler, nesneleri ve veri öğeleri bir yürütülebilir görüntü içinde hakkındaki ayrıntıları almak için aşağıdaki genel adımları kullanabilirsiniz.  

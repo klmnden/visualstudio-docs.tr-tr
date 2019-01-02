@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma kitaplarını program aracılığıyla kaydetme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kaydetme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fc715518f31031c65667a2480d7e14111105202
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829177"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Nasıl yapılır: çalışma kitaplarını program aracılığıyla kaydetme
+# <a name="how-to-programmatically-save-workbooks"></a>Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kaydetme
   Bir çalışma kitabını kaydetmek için çeşitli yollar vardır. Bir çalışma kitabı yolu değiştirmeden kaydedebilirsiniz. Çalışma kitabını önce kaydedilmedi, yolu belirterek, çalışma kitabını kaydetmeniz gerekir. Açık bir yol Microsoft Office Excel dosya oluşturulduğunda verilen ada sahip geçerli klasöre kaydeder. Ayrıca, çalışma kitabını Aç bellekte değiştirmeden çalışma kitabının bir kopyasını kaydedebilirsiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -88,9 +85,7 @@ ms.locfileid: "35677163"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)   
  [Çalışma kitabı konak öğesi](../vsto/workbook-host-item.md)   
- [Nasıl yapılır: çalışma kitaplarını program aracılığıyla kapatma](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kapatma](../vsto/how-to-programmatically-close-workbooks.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

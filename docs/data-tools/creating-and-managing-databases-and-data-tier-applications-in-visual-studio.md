@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ad784e0438e0b1f02607c3cb748c759b9266dbe6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824582"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Veritabanı projeleri ve veri katmanı uygulamaları
 
@@ -29,9 +28,9 @@ Veri katmanı uygulamaları tarafından desteklenen veritabanı özelliklerin bi
 
 | Üst düzey görev | Destekleyici İçerik |
 | - | - |
-| **Veri katmanı uygulaması geliştirmeye başla:** kavramı bir veri katmanı uygulaması (DAC), SQL Server 2008 ile kullanılmaya başlandı. Bir DAC, bir SQL Server veritabanı ve bir istemci-sunucu veya 3 katmanlı uygulama tarafından kullanılan destekleyici örneği nesneler için bir tanım içeriyor. Bir DAC, tablolar ve görünümler, oturum açma bilgileri gibi örnek varlıkları birlikte gibi nesneleri içerir. DAC proje oluşturma, derleme DAC paket dosyası ve SQL Server veritabanı altyapısı örneğine dağıtım için bir veritabanı yöneticisi DAC paket dosyası göndermek için Visual Studio kullanabilirsiniz. | - [Veri katmanı uygulamaları](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Yinelemeli veritabanı geliştirme gerçekleştirme:** geliştiriciler, proje bölümlerini kontrol edin ve bunları bir yalıtılmış geliştirme ortamında güncelleştirin. Bu ortam türünü kullanarak, diğer takım üyeleri etkilemeden değişikliklerinizi test edebilirsiniz. Değişiklik tamamlandıktan sonra burada diğer takım üyelerinin yaptığınız değişiklikleri alabilir ve yapı ve bunları bir test sunucusuna dağıtmak geri sürüm denetimine, dosyaları denetleyin. | - [Çevrimdışı veritabanı proje odaklı geliştirme (SQL Server veri araçları)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-SQL hata ayıklayıcı (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Doğrulama prototip oluşturma, test sonuçları ve değiştirme veritabanı betikleri ve nesneleri:** herhangi biri şu genel görevleri gerçekleştirmek için Transact-SQL Düzenleyicisi'ni kullanabilirsiniz. | - [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Bir veri katmanı uygulaması geliştirmeyi başlatın:** Veri katmanı uygulaması (DAC) kavramı, SQL Server 2008 ile kullanılmaya başlandı. Bir DAC, bir SQL Server veritabanı ve bir istemci-sunucu veya 3 katmanlı uygulama tarafından kullanılan destekleyici örneği nesneler için bir tanım içeriyor. Bir DAC, tablolar ve görünümler, oturum açma bilgileri gibi örnek varlıkları birlikte gibi nesneleri içerir. DAC proje oluşturma, derleme DAC paket dosyası ve SQL Server veritabanı altyapısı örneğine dağıtım için bir veritabanı yöneticisi DAC paket dosyası göndermek için Visual Studio kullanabilirsiniz. | - [Veri katmanı uygulamaları](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Yinelemeli veritabanı geliştirme gerçekleştirme:** Geliştiriciler, proje bölümlerini denetleyin ve yalıtılmış bir geliştirme ortamında güncelleştirebilirsiniz. Bu ortam türünü kullanarak, diğer takım üyeleri etkilemeden değişikliklerinizi test edebilirsiniz. Değişiklik tamamlandıktan sonra burada diğer takım üyelerinin yaptığınız değişiklikleri alabilir ve yapı ve bunları bir test sunucusuna dağıtmak geri sürüm denetimine, dosyaları denetleyin. | - [Çevrimdışı veritabanı proje odaklı geliştirme (SQL Server veri araçları)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-SQL hata ayıklayıcı (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Prototip oluşturma,: test sonuçlarını ve değiştirme veritabanı betikleri ve nesneleri doğrulanıyor** Bu ortak görevlerin herhangi birini gerçekleştirmek için Transact-SQL Düzenleyicisi'ni kullanabilirsiniz. | - [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

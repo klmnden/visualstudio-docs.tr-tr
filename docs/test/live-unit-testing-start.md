@@ -2,7 +2,6 @@
 title: Canlı birim testi ile 2017 kullanarak kodunuzu test etme hakkında bilgi edinin | Microsoft Docs
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8908b592283f81d8c60a2adb93c12af3f5e61ba7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942193"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 

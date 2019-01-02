@@ -1,8 +1,6 @@
 ---
 title: Performans araçları ile çalışmaya başlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: cf973c05e3ee70654fee1655591da11f54bc826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942859"
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 
@@ -28,9 +26,9 @@ Visual Studio kod performans verilerini çözümleme toplamak ve görüntülemek
 
 - Performans raporları farklı düzeyde uygulama yapısı, kaynak kod satırlarına ve işlemleri görünümler sağlar. Performans raporları, uygulama yürütme verileri, arama göstermek ve belirli bir işlevin tüm uygulamanın çağırma ağacına işlevler olarak bilinir.  
   
-Hızla bir proje, uygulama veya ASP.NET Web sitesi profili oluşturmak için Seç **hata ayıklama** > **performans Profiler**seçip **performans Sihirbazı**. Ayrıntılı yönergeler için bkz. [yeni başlayanlar için performans profili oluşturma Kılavuzu](../profiling/beginners-guide-to-cpu-sampling.md) ve [nasıl yapılır: bir Web sitesi performans verileri toplama](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+Hızla bir proje, uygulama veya ASP.NET Web sitesi profili oluşturmak için Seç **hata ayıklama** > **performans Profiler**seçip **performans Sihirbazı**. Ayrıntılı yönergeler için bkz. [yeni başlayanlar için performans profili oluşturma Kılavuzu](../profiling/beginners-guide-to-cpu-sampling.md) ve [nasıl yapılır: Bir Web sitesi için performans verilerini toplama](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
 
-El ile belirtin ve profil oluşturma oturumunu bir performans yapılandırmak için **hata ayıklama** > **Profiler** > **performans Gezgini**. Kullanım **hedefleri** klasörü ve **özellikleri** içinde sayfa **performans Gezgini** oturumları yapılandırmak için. Yönergeler için [nasıl yapılır: performans oturumlarını elle oluşturma](../profiling/how-to-manually-create-performance-sessions.md).  
+El ile belirtin ve profil oluşturma oturumunu bir performans yapılandırmak için **hata ayıklama** > **Profiler** > **performans Gezgini**. Kullanım **hedefleri** klasörü ve **özellikleri** içinde sayfa **performans Gezgini** oturumları yapılandırmak için. Yönergeler için [nasıl yapılır: Performans oturumlarını elle oluşturma](../profiling/how-to-manually-create-performance-sessions.md).  
   
 **Ayrıca bkz:**
   

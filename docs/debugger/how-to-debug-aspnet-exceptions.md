@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: ASP.NET özel durumlarında hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: ASP.NET özel durumlarında hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,35 +17,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5923818e93170ded1f857ac20d42cd6134aed5d3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 002f100f11bd88e31b94283e7efe5e25299448bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944304"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Nasıl Yapılır: ASP.NET Özel Durumlarında Hata Ayıklama
-Özel durumlar hata ayıklama, sağlam bir geliştirme önemli bir bölümü değildir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama. Özel durumlar hata ayıklama hakkında genel bilgi olduğuna [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md).  
+# <a name="how-to-debug-aspnet-exceptions"></a>Nasıl Yapılır: ASP.NET özel durumlarında hata ayıklama
+Özel durumların hatalarının ayıklanması, güçlü bir geliştirme önemli bir parçası olduğu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama. Özel durumları hata ayıklama hakkında genel bilgilerine [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md).  
   
- Hata ayıklama için işlenmemiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] özel durumlar, hata ayıklayıcı bunları durdurur emin olmalısınız. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Çalışma zamanı sahip bir üst düzey özel durum işleyicisi. Bu nedenle, hata ayıklayıcı varsayılan olarak hiçbir zaman işlenmeyen özel durumları keser. Bir özel durum oluştuğunda hata ayıklayıcısında araya girmektir için seçmelisiniz **bölün bir özel durum olduğunda: durum** , bir özel durum ayarını **özel durumları** iletişim kutusu.  
+ Hata ayıklamak için işlenmemiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] özel durumları, hata ayıklayıcının onlar için durduğundan emin olmalısınız. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Çalışma zamanı bir üst düzey özel durum işleyicisine sahiptir. Bu nedenle, hata ayıklayıcı varsayılan olarak hiçbir zaman işlenmeyen özel durumları keser. Bir özel durum oluştuğunda hata ayıklayıcıyı durdurmak için seçmelisiniz **bir özel durum olduğunda Kes: Durum** o özel duruma ayarını **özel durumları** iletişim kutusu.  
   
- Sadece kendi kodumu etkinleştirilirse **bölün bir özel durum olduğunda: durum** .NET Framework yöntemi veya başka bir sistem kod bir özel durum, hemen ayırmak hata ayıklayıcı neden olmaz. Sistem dışı kodu, hata ayıklayıcı isabetler kadar bu keser sonra bunun yerine, yürütme devam eder. Sonuç olarak, yüklü bir özel durum oluştuğunda sistem kodlarda adıma.  
+ Yalnızca kendi Kodum'u etkinleştirdiyseniz **bir özel durum olduğunda Kes: Durum** hata ayıklayıcının .NET Framework yöntemi veya başka bir sistem kodunda özel durum oluşturulursa hemen kesilmesine neden olmaz. Sistem dışı kod hata ayıklayıcı sayısına ulaşana kadar bu keser sonra bunun yerine, yürütme devam eder. Sonuç olarak, yüklü bir özel durum oluştuğunda sistem kodu boyunca adım adım.  
   
- Sadece kendi kodumu daha yararlı olabilecek başka bir seçenek sağlar: **bir özel durum olduğunda Kes: kullanıcının işlemediği**. Bir özel durum için bu ayarı seçerseniz, hata ayıklayıcı ancak özel durum yakalandı değil ve kullanıcı kodu tarafından işlenen kullanıcı kodu yürütme kesintiye uğrar. Bu ayar üzerindeki etkisini, üst düzey geçersiz kılar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] özel durum işleyicisi, bu işleyici kullanıcı olmayan kodda olduğundan.  
+ Yalnızca kendi kodum, daha yararlı olabilecek başka bir seçenek sağlar: **Bir özel durum olduğunda Kes: Kullanıcı-işlenmemiş**. Bir özel durum için bu ayarı seçerseniz, hata ayıklayıcı, ancak özel durum yakalanıp işlenmezse kullanıcı kodu tarafından işlenen, yalnızca kullanıcı kodunda yürütmeyi keser. Bu ayar etkisini en üst düzey verilerek [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] özel durum işleyicisi, o işleyicisi kullanıcı dışındaki kodda olduğundan.  
   
-### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>ASP.NET özel durumlarının sadece kendi kodumu ile hata ayıklamayı etkinleştirmek için  
+### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>ASP.NET özel durumlarında yalnızca kendi kodum ile hata ayıklamayı etkinleştirmek için  
   
 1.  Üzerinde **hata ayıklama** menüsünde tıklatın **özel durumları**.  
   
      **Özel durumları** iletişim kutusu görüntülenir.  
   
-2.  Üzerinde **ortak dil çalışma zamanı özel durumları** satır, select **sayıcı** veya **kullanıcı işlenmemiş**.  
+2.  Üzerinde **ortak dil çalışma zamanı özel durumları** satır, select **sayıcı** veya **kullanıcı-işlenmemiş**.  
   
-     Kullanılacak **kullanıcı işlenmemiş** ayarı **sadece kendi kodumu** etkinleştirilmelidir...  
+     Kullanılacak **kullanıcı-işlenmemiş** ayarını **yalnızca kendi kodum** etkinleştirilmesi gerekir...  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>ASP.NET özel durum işleme için en iyi uygulamaları kullanmak için  
   
--   Yer `try ... catch` geçici özel durumlar oluşturan kod blokları düşündüğünüz ve nasıl ele alınacağını bildikleri. Uygulama çağrıları XML Web hizmeti veya doğrudan bir SQL Server değiştirirken, örneğin, bu kodu bulunmalıdır **try... catch** oluşabilecek çeşitli özel durumlar olduğundan engeller.
+-   Bir yerde `try ... catch` geçici özel durumlar atabilen kod blokları, tahmin ve nasıl işleyeceğini bilen. Bir XML Web hizmetine veya doğrudan bir SQL Server uygulama çağrıları yapıyor, örneğin, kod içinde olmalıdır **try... catch** oluşabilecek çok sayıda özel durum olduğundan engeller.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

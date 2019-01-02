@@ -1,9 +1,6 @@
 ---
 title: Özel düzenleyicilerde belge verileri ve belge görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818881"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Belge verileri ve özel düzenleyicilerde belge görünümü
 Özel bir düzenleyici iki bölümden oluşur: bir belge veri nesnesi ve bir belge görünümü nesnesi. Belge veri nesnesi adları önermek olarak görüntülenecek metin verileri temsil eder. Benzer şekilde, bir veya daha fazla windows belge veri nesnesi görüntüleneceği belge görünümü nesnesi (veya "Görünüm") temsil eder.  
@@ -42,7 +39,7 @@ ms.locfileid: "39639821"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Birden çok belge görünümünü desteği](../extensibility/supporting-multiple-document-views.md)   
  [Basitleştirilmiş ekleme](../extensibility/simplified-embedding.md)   
- [Nasıl yapılır: görünümleri ekleme belge verileri](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Nasıl yapılır: Görünümler ekleme belge verileri](../extensibility/how-to-attach-views-to-document-data.md)   
  [Belge kilit tutucusu Yönetimi](../extensibility/document-lock-holder-management.md)   
  [Tek ve çoklu sekme görünümleri](../extensibility/single-and-multi-tab-views.md)   
  [Standart belge kaydetme](../extensibility/internals/saving-a-standard-document.md)   

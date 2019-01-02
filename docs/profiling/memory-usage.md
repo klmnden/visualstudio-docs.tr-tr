@@ -3,19 +3,18 @@ title: Uygulamalarınızda ölçü bellek kullanımı
 description: Hata ayıklayıcıyla tümleştirilmiş Tanılama Aracı ile hata ayıklarken bellek sızıntılarını ve verimsiz bellek bulun.
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942300"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntılarını ve verimsiz bellek Bul **bellek kullanımı** Tanılama aracı. Bir veya daha fazla atmanız bellek kullanımı aracı sağlar *anlık görüntüleri* nesne türlerinin bellek kullanımı etkilerini anlamanıza yardımcı olmak üzere yönetilen ve yerel bellek yığın. .NET, yerel veya karma mod (.NET ve yerel) uygulamaları, anlık toplayabilirsiniz.  
@@ -67,7 +66,7 @@ Bu öğreticide şunları yapacaksınız:
      >   
      >  ![Anlık görüntüleri etkinleştir](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Durdur (kısayol tuşu: **Shift**+**F5**) ve hata ayıklamayı yeniden başlatın.  
+     >  Durdur (kısayol tuşu: **Kaydırma**+**F5**) ve hata ayıklamayı yeniden başlatın.  
 
 6.  Hata ayıklama oturumunuzu başlangıcında bir anlık görüntüsünü almak için seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu. (Bu da bir kesme noktası Burada ayarlanan yardımcı olabilir.)
 
@@ -168,7 +167,7 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
  [Hata ayıklama sırasında CPU ve bellek çözümleme](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Visual C++ blogu: Bellek, Visual C++ 2015'te profil oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
+ [Visual C++ blogu: Visual C++ 2015'te bellek profili oluşturma](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

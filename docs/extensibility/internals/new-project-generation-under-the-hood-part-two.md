@@ -1,9 +1,6 @@
 ---
-title: 'Yeni proje oluşturma: altyapı öğeleri, iki bölüm | Microsoft Docs'
-ms.custom: ''
+title: 'Yeni proje oluşturma: Altyapı öğeleri, bölüm iki | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943518"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm İki
-İçinde [yeni proje oluşturma: başlık altında Kısım](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) gördüğümüz nasıl **yeni proje** iletişim kutusu doldurulur. Seçtiğiniz varsayalım bir **Visual C# Windows uygulaması**, doldurulmuş **adı** ve **konumu** metin kutuları ve tıklandı Tamam.  
+# <a name="new-project-generation-under-the-hood-part-two"></a>Yeni proje oluşturma: Altyapı öğeleri, bölüm iki
+İçinde [yeni proje oluşturma: Altyapı, bir bölümü altında](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) gördüğümüz nasıl **yeni proje** iletişim kutusu doldurulur. Seçtiğiniz varsayalım bir **Visual C# Windows uygulaması**, doldurulmuş **adı** ve **konumu** metin kutuları ve tıklandı Tamam.  
   
 ## <a name="generating-the-solution-files"></a>Çözüm dosyaları oluşturma  
  Bir uygulama şablonunu seçme yönlendirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sıkıştırmasını açın ve karşılık gelen .vstemplate dosyasını açın ve bu dosyayı XML komutlar yorumlamak için bir şablon başlatın. Bu komutlar, yeni veya mevcut çözümde proje ve proje öğeleri oluşturur.  
@@ -70,7 +67,7 @@ namespace Simple
  Temel .vstemplate dosyası bu biçime sahip  
   
 ```  
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
     <TemplateData>  
     </TemplateData>  
     <TemplateContent>  
@@ -78,7 +75,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- İnceledik \<TemplateData > konusundaki [yeni proje oluşturma: başlık altında Kısım](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Bu bölümdeki etiketleri görünümünü denetlemek için kullanılan **yeni proje** iletişim kutusu.  
+ İnceledik \<TemplateData > konusundaki [yeni proje oluşturma: Bir altyapı öğeleri, bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Bu bölümdeki etiketleri görünümünü denetlemek için kullanılan **yeni proje** iletişim kutusu.  
   
  Etiketleri \<TemplateContent > bölüm denetimi oluşturma yeni projeleri ve proje öğeleri. İşte \<TemplateContent > \Program Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip klasörüne cswindowsapplication.vstemplate dosyasından bölümü.  
   
@@ -92,13 +89,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">  
       Resources.resx  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
       Resources.Designer.cs  
     </ProjectItem>  
     <ProjectItem TargetFileName="Properties\Settings.settings">  
       Settings.settings  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
       Settings.Designer.cs  
     </ProjectItem>  
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
@@ -157,5 +154,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm Bir](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Yeni proje oluşturma: Bir altyapı öğeleri, bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822169"
 ---
 # <a name="create-relationships-between-datasets"></a>Veri kümeleri arasında ilişki oluşturma
 İlgili verileri içeren veri kümeleri tablolar kullanım <xref:System.Data.DataRelation> nesneleri tablolar arasında bir üst/alt ilişkilerini temsil eden ve birbirlerinden ilgili kayıtları döndürmek için. İlişkili tabloları kullanarak veri kümelerine ekleme **veri kaynağı Yapılandırma Sihirbazı**, veya **veri kümesi Tasarımcısı**oluşturur ve yapılandırır <xref:System.Data.DataRelation> nesnesi.
@@ -60,7 +59,7 @@ Yapabileceğiniz kuralları belirtilen <xref:System.Data.Rule> sabit listesi ve 
 |Yabancı anahtar kısıtlaması kuralı|Eylem|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|Üst kayıtta yapılan değişiklik (güncelleştirme veya silme) alt tablosundaki ilgili kayıtlar da gerçekleştirilir.|
-|<xref:System.Data.Rule.SetNull>|Alt kayıtları silinmez, ancak alt kayıtlardaki yabancı anahtarı kümesine <xref:System.DBNull>. Bu ayar, "artık" alt kayıtları bırakılabilir — diğer bir deyişle, bunlar hiç üst kayıtlar ilişkisi. **Not:** bu kullanarak alt tablosunda geçersiz veri sonuçlanabilir.|
+|<xref:System.Data.Rule.SetNull>|Alt kayıtları silinmez, ancak alt kayıtlardaki yabancı anahtarı kümesine <xref:System.DBNull>. Bu ayar, "artık" alt kayıtları bırakılabilir — diğer bir deyişle, bunlar hiç üst kayıtlar ilişkisi. **Not:** Bu kural kullanarak alt tabloda geçersiz veriler neden olabilir.|
 |<xref:System.Data.Rule.SetDefault>|İlgili alt kayıtları yabancı anahtarının varsayılan değerine ayarlanır (sütun tarafından belirlenen <xref:System.Data.DataColumn.DefaultValue%2A> özelliği).|
 |<xref:System.Data.Rule.None>|İlgili alt kayıtları değişiklik yapılmaz. Bu ayar, başvuruları geçersiz üst kayıtlar için alt kayıtları içerebilir.|
 
@@ -78,7 +77,7 @@ Veri tabloları arasında ilişki görünen satırlar halinde **veri kümesi Tas
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>İki veri tabloları arasında bir ilişki oluşturmak için
 
-1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [izlenecek yol: veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [izlenecek yol: Veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Sürükleme bir **ilişkisi** nesnesinden **veri kümesi** ilişki alt veri tablosunda toolbox.
 
@@ -102,7 +101,7 @@ Veri tabloları arasında ilişki görünen satırlar halinde **veri kümesi Tas
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Veri kümesi Tasarımcısı'nda bir ilişki adı görüntülemek için
 
-1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [izlenecek yol: veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [izlenecek yol: Veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Gelen **veri** menüsünde **ilişki etiketlerini göster** ilişki adı görüntülenecek komutu. İlişki adı gizlemek için bu komutu temizleyin.
 
