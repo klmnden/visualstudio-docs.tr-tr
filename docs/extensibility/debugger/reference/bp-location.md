@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ceb6c85c510269877dfe34e091d50095dc7a50c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839649"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Kesme noktası konumunu tanımlamak için kullanılan yapı türünü belirtir.  
@@ -79,21 +76,21 @@ public struct BP_LOCATION {
  [Yalnızca C++] İçeren [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) , yapı `bpLocationType`  =  `BPLT_RESOLUTION`.  
   
  `unionmember1`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
  `unionmember2`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
  `unionmember3`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
  `unionmember4`  
- [Yalnızca C#] Yorumlama konusunda açıklamalara bakın.  
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yapı üyesidir [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ve [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapıları.  
   
- [Yalnızca C#] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpLocationType` değer daha sonra hangi her belirlemek için diğer sütunlarda arayın `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# ' de bir parçası olarak yorumlamak bir yol için örneğe bakın.  
+ [C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpLocationType` değer daha sonra hangi her belirlemek için diğer sütunlarda arayın `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# ' de bir parçası olarak yorumlamak bir yol için örneğe bakın.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -134,7 +131,7 @@ namespace MyPackage
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

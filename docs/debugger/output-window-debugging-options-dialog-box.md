@@ -1,8 +1,6 @@
 ---
-title: Çıktı penceresi, hata ayıklama, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
+title: Çıkış penceresi, hata ayıklama, Seçenekler iletişim kutusu | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.OutputWindow
@@ -19,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e339be389e629970a5f9b3bb1813165b1fcc7e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a635d36a18c5630f654922e0d96bca54a223fd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935859"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Çıkış Penceresi, Hata Ayıklama, Seçenekler İletişim Kutusu
-Hata ayıklama bilgisi türlerini görünür belirtebilirsiniz **çıkış** penceresi. Bu seçenekleri görüntülemek için açmak **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **hata ayıklama** düğümü ve tıklatın **çıktı penceresi**.
+Hata ayıklama bilgisi türlerini görünür belirtebilirsiniz **çıkış** penceresi. Bu seçenekleri görüntülemek için Aç **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **hata ayıklama** düğüm seçeneğine tıklayıp **çıkış penceresine**.
 
-**Genel çıkış ayarları** bu kategoriyi genel hata ayıklama iletileri görünür olup olmadığını belirlemek denetimleri içeren **çıkış** penceresi. Her tür ileti görünüp görünmeyeceğini belirtebilirsiniz.  
+**Genel çıkış ayarları** Bu kategoride içinde genel hata ayıklama iletilerinin görüntülenip görüntülenmeyeceğini belirlemek denetimleri **çıkış** penceresi. Her tür ileti görünür olup olmadığını belirtebilirsiniz.  
 
-**WPF izleme ayarları** bu kategoriyi görünür WPF izleme iletilerini düzeyini belirlemek denetimleri içeren **çıkış** penceresi. Her tür ileti görünür ve arasında değişen bir düzeyi belirtin belirtebilirsiniz **kritik** için **tüm**.
+**WPF izleme ayarlarını** görünen WPF izleme iletilerini düzeyini belirlemek denetimleri bu kategoride **çıkış** penceresi. Her tür ileti görünür ve bir düzeyi kadar belirtin belirtebilirsiniz **kritik** için **tüm**.
 
-Daha fazla bilgi için bkz: [nasıl yapılır: WPF izleme bilgilerini görüntüle](../debugger/how-to-display-wpf-trace-information.md).
+Daha fazla bilgi için [nasıl yapılır: WPF izleme bilgilerini görüntüleme](../debugger/how-to-display-wpf-trace-information.md).
 
-Varsayılan ayarları geri yüklemeniz gerekiyorsa, o kullanarak yapabilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları** > **tüm ayarlara**. Yalnızca bir alt kümesini ayarları sıfırlamak istiyorsanız, ayarlarınızı kaydetmek **içeri ve dışarı aktarım ayarları Sihirbazı** test etmek istediğiniz bir değişiklik yapmadan önce sonra kaydedilmiş ayarlarınızı daha sonra alabilirsiniz.
+Varsayılan ayarlarını geri yüklemeniz gerekirse, bu kullanarak yapabilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları** > **tüm ayarları Sıfırla**. Yalnızca bir alt kümesini ayarlarını sıfırlamak istiyorsanız, ayarlarınızı kaydedin **içeri ve dışarı aktarma ayarları Sihirbazı** test etmek istediğiniz değişiklik yapmadan önce sonra kaydedilmiş ayarlarınızı daha sonra içeri aktarın.
   
 ## <a name="see-also"></a>Ayrıca bkz.
 [Hata ayıklama, Seçenekler iletişim kutusu](../debugger/debugging-options-dialog-box.md)   

@@ -2,7 +2,6 @@
 title: Hata ayıklarken çağrı yığınında eşleştirme yöntemleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889247"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklarken çağrı yığınında eşleştirme yöntemleri
 Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Haritası oluşturun. Hataları bulmaya odaklanabilmeniz amacıyla kodun ne yaptığını izlemek için harita üzerine not alabilirsiniz.
@@ -50,7 +49,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
   Bkz.
 
-- [Video: (kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: (Kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Çağrı yığınını eşleme](#MapStack)
 
@@ -70,7 +69,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 1.  Hata ayıklama başlatılamıyor. (Klavye: **F5**)
 
-2.  Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **Ctrl** + **Shift** + **`**)
+2.  Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
 
      ![Çağrı yığınını eşleme başlatmak için kod Haritası'nı seçin](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -93,7 +92,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 ## <a name="AddRelatedCode"></a> Eşlemeye ilgili kodu ekleyin
  Artık bir harita - ne sonraki kendinizi? C# veya Visual Basic ile çalışıyorsanız, alanlar, özellikler ve kodda neler olduğunu izlemek için diğer yöntemler gibi öğeleri ekleyin.
 
- Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: tuşuna basın ve harita yöntemi seçin **F12**)
+ Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: Tuşuna basın ve harita yöntemi seçin **F12**)
 
  ![Kod haritasında bir yöntem için kod tanımı gidin](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -143,7 +142,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
    Haritanın değiştirilmesi kodu herhangi bir şekilde etkilemez. Haritadaki herhangi bir şeyi rahatça yeniden adlandırabilir, taşıyabilir veya kaldırabilirsiniz.
 
-- **Bu ileti ne anlama gelir: "diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
+- **Bu ileti ne anlama gelir: "Diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
 
    Kod, haritayı son güncelleştirmenizden sonra değişmiş olabilir. Örneğin, harita üzerindeki bir çağrı artık kodda bulunmayabilir. İletiyi kapatın ve haritayı yeniden güncelleştirmeden önce çözümü yeniden oluşturmayı deneyin.
 

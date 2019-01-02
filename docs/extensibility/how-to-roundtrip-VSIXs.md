@@ -1,8 +1,6 @@
 ---
 title: Nasıl yapılır gidiş geliş uzantıları
 ms.date: 06/25/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
@@ -10,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880958"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: uzantıları Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirin
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl Yapılır: Uzantılar Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirmek
 
 Bu belgede, genişletilebilirlik projeleri Visual Studio 2015 ve Visual Studio 2017 gidiş dönüş yapmak açıklanmaktadır. Bu yükseltme işlemini tamamladıktan sonra bir proje açın, derleme, yükleme ve Visual Studio 2015 ve Visual Studio 2017 ' çalıştırmak mümkün olacaktır. Bir başvuru, Visual Studio 2015 ve Visual Studio 2017 arasındaki gidiş dönüş yapabilen bazı uzantılar bulunabilir [VS SDK'sı genişletilebilirlik örnekleri](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
@@ -40,7 +38,7 @@ Anahat bir VSIX gidiş dönüşlü hale getirmek için bu belgedeki tamamlayaca�
 
 4. Derleme ve Test
 
-## <a name="environment-setup"></a>Ortam Kurulumu
+## <a name="environment-setup"></a>Ortam kurulumu
 
 Bu belge, makinenizde yüklü olduğunu varsayar:
 

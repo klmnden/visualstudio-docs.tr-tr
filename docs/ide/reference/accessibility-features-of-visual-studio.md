@@ -3,7 +3,6 @@ title: Visual Studio'nun erişilebilirlik özellikleri
 description: Windows işletim sistemi hem de Visual Studio Geliştirici paketi daha erişilebilir engelli kişilerin yaşamlarını dahil herkes için yardımcı olun yardımcı programları ve erişilebilirlik özellikleri hakkında daha fazla bilgi edinin.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866484"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun erişilebilirlik özellikleri
 
@@ -46,15 +45,15 @@ Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aş
 
 Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Nasıl yapılır: IDE erişilebilirlik Set seçenekleri](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Nasıl yapılır: klavyeyi özel olarak kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Nasıl yapılır: Yalnızca klavyeyi kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Varsayılan klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Erişilebilirlik ipuçları ve püf noktaları](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Nasıl yapılır: yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,8 +1,6 @@
 ---
-title: 'DA0006: Değer türleri için üzerine yaz | Microsoft Docs'
-ms.custom: ''
+title: "DA0006: ' Lerin üzerine yaz değer türleri için geçersiz kılın. | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab011487f33438091eb963c9ea4a7e1d1c80ec4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78c284e4dd38b551cc575b20da84152470462fd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876019"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: Değer türleri için Eşittir()'lerin üzerine yaz
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: Değer türleri için'lerin üzerine yaz'geçersiz kılma
 
 |||  
 |-|-|  
@@ -41,4 +39,4 @@ ms.locfileid: "49856281"
  Equals ve eşitlik işleçleri geçersiz kılma hakkında daha fazla bilgi için bkz. [uygulama Equals ve eşitlik operatörünün (==) için yönergeler](http://go.microsoft.com/fwlink/?LinkId=177818).  
 
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
- Equals ve eşitlik işleçleri uygulama örneği için bkz: kod çözümleme kural [CA1815: geçersiz kılma eşittir ve işleç değer türleri üzerinde](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Equals ve eşitlik işleçleri uygulama örneği için bkz: kod çözümleme kural [CA1815: Geçersiz kılma eşittir ve işleç değer türleri üzerinde](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

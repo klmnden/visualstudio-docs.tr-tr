@@ -1,9 +1,6 @@
 ---
 title: Eski API'sini kullanarak kod Windows özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883045"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Eski API'sini kullanarak kod windows özelleştirme
 Bir kod penceresinde bir veya daha fazla metin görünümlerini destekleyen bir belge penceresi nesnesidir. Tam bir kod penceresi özelliklerini ilişkili dil hizmetine bağlıdır. Çok Belgeli Arabirim (MDI) modunda kod penceresinde MDI alt çerçeve ' dir.  
@@ -36,10 +33,10 @@ Kod penceresi
  `Customizing Code Windows by Using the Legacy API`  
  Kodu windows eski API'yi kullanarak özelleştirmek nasıl açıklar.  
   
- [Nasıl yapılır: başka bir düzenleyicide bir düzenleyicide barındırın](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Nasıl yapılır: Konak bir düzenleyicide başka bir düzenleyici](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Bir düzenleyici penceresi içine ikinci bir düzenleyici barındırmak nasıl açıklar.  
   
- [Nasıl yapılır: Düzenleyici odağı kaybettiğinde olayları yangın](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Nasıl yapılır: Düzenleyici odağı kaybettiğinde olayları tetiklemesine](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Bir belge veri nesnesine bir belge görünümü ekleme açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  

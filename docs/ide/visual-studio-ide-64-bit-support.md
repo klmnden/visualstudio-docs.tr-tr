@@ -2,7 +2,6 @@
 title: 64 bit desteği
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa48de77bdf5ba283068f3dfcc492a76ae3576c0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d8f7755b1c6d1b2aefbc39d20eec9b0432391e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844112"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 Bit desteği
 
@@ -30,7 +29,7 @@ Visual Studio uygulamalarınızı 64 bit platformlar da dahil olmak üzere, fark
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Projeleri 64-bit uygulamalar yapılandırma
 
-[Nasıl yapılır: projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md) 64-bit uygulamalar oluşturulacak yapılandırma projelerini açıklanır.
+[Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md) 64-bit uygulamalar oluşturulacak yapılandırma projelerini açıklanır.
 
 ## <a name="debug-a-64-bit-application"></a>Bir 64 bit uygulamanın hatalarını ayıklama
 

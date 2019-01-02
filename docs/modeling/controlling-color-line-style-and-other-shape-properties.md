@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929704"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Renk, Çizgi Stili ve Diğer Şekil Özelliklerini Denetleme
-Renk 'olarak verilebilen gibi' - bazı şekil özellikleri başka bir deyişle, etki alanına bağlı bir özellik şeklin için. Başkalarının doğrudan denetlenmesi gerekir.
+Renk 'olarak sunulabilir gibi' - bazı Şekil özelliklerini, diğer bir deyişle, şekle bir alan özelliğine bağlı. Başkalarının doğrudan denetlenmesi gerekir.
 
-## <a name="exposing-a-property"></a>Bir özellik gösterme
- Bazı şekil özellikleri renk gibi bir etki alanı özellik değerine bağlanabilir.
+## <a name="exposing-a-property"></a>Bir özelliği kullanıma sunma
+ Renk gibi bazı Şekil özelliklerini değeri alan özelliği olarak bağlanabilir.
 
- DSL tanımı'nda bir şekil, bağlayıcı veya diyagramı sınıfı seçin. Kendi bağlam menüsünde seçin **eklemek açığa**ve ardından istediğiniz dolgu rengi gibi bir özellik seçin.
+ DSL tanımındaki şekil, bağlayıcı veya diyagram sınıfı seçin. Kendi bağlam menüsünde **ekleme kullanıma sunulan**, istediğiniz gibi dolgu rengi özelliği seçin.
 
- Şeklin şimdi program kodundaki veya bir kullanıcı olarak ayarlayabilirsiniz bir etki alanı özelliğine sahiptir.
+ Şekil, program kodu veya bir kullanıcı olarak ayarlanmış bir alan özelliği artık sahiptir.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Dinamik olarak sunulan bir özelliği güncelleniyor
- Genellikle, sunulan özelliği başka bir özellikte bağımlı hale getirmek istediğiniz. Örneğin, belirli bir etki alanı özelliği olduğunda kırmızı açmak için bir şekli sıfırdan isteyebilirsiniz. Bu bağımlılık yapmak için Oluştur bir [kuralı](../modeling/rules-propagate-changes-within-the-model.md). Örneğin:
+## <a name="dynamically-updating-an-exposed-property"></a>Dinamik olarak sunulan bir özellik güncelleştiriliyor
+ Genellikle sunulan özelliği başka bir özellikte bağlı olmanız gerekir. Örneğin, belirli bir etki alanı özelliği olduğunda kırmızıya şekle sıfırdan isteyebilirsiniz. Bu bağımlılık olmak için oluşturun bir [kural](../modeling/rules-propagate-changes-within-the-model.md). Örneğin:
 
 ```csharp
 using System;

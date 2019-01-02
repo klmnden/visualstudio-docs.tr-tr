@@ -1,9 +1,6 @@
 ---
 title: Setwefprocessıd yöntemi
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b426237816bfee53e7c3e50c19e29168b27e16e1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3ccce49992073f11245929bf7af0b966537bd079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886156"
 ---
 # <a name="setwefprocessid-method"></a>Setwefprocessıd yöntemi
-  Web uzantılarının Framework (WEF) içerik çalışacak işlem tanımlayıcısını sağlar.  
+  Web uzantılarının Framework (WEF) içeriği çalışacak işlem tanımlayıcısı sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,11 +35,9 @@ HRESULT SetWefProcessId(
 |*dwProcessId*|WEF içeriğini çalıştırmak için kullanılan işlem tanımlayıcısı.|  
   
 ## <a name="return-value"></a>Dönüş değeri  
- Yöntemi başarıyla tamamlanmış olup olmadığını belirten bir HRESULT değer.  
+ Yöntemi başarıyla tamamlanıp tamamlanmadığını belirten bir HRESULT değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem, WEF içerik işlem oluşturulduktan sonra ancak herhangi bir WEF içerik çalışmadan önce çağrılmalıdır.  
   
- Bir hata ayıklayıcısı WEF içerik işleme iliştirilemiyor geliştirme ortamı isterseniz, ortama bu yöntem uygulamanızda bu işlemi gerçekleştirmeniz gerekir.  
-  
-  
+ Geliştirme ortamını WEF içerik işleme hata ayıklayıcı iliştirmek istiyorsanız, ortam bu yöntemi uygulamanızda bu işlemi gerçekleştirmeniz gerekir.  

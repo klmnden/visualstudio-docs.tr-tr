@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 431dad2f87fdd5857c91b39152d7f119945c0867
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 4359c71e054b8284e16eaed88b0ee140f7954494
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869459"
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 A *domain özelliği* değer tutan bir model öğesi olan bir özelliktir. Örneğin, `Person` etki alanı sınıfı özellikleri vardır `Name` ve `BirthDate`. DSL tanımındaki etki alanı özellikleri, etki alanı sınıfı kutusuna Diyagramı'nda ve etki alanı sınıfı, DSL Gezgini altında listelenir. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md).
@@ -48,7 +47,7 @@ A *domain özelliği* değer tutan bir model öğesi olan bir özelliktir. Örne
 |**Ad**|Bu etki alanı özelliğinin adı. Örneğin geçerli bir tanımlayıcı olmalıdır **SongTitle**.|\<yok >|
 |**Notlar**|Bu etki alanı özelliği ile ilişkili resmi olmayan notlar.|\<yok >|
 |**Ayarlayıcı erişim değiştiricisi**|Ayarlayıcının erişim değiştiricisini. Bu, hangi programda kod özelliği ayarlayabilirsiniz kapsamı denetler.|`public`|
-|**Türü**|Özellik türü. Kullanılabilir türler listesine eklemek için DSL DSL Gezgini içinde kök sağ tıklayın ve tıklayın **dış türü Ekle**.|`String`|
+|**Tür**|Özellik türü. Kullanılabilir türler listesine eklemek için DSL DSL Gezgini içinde kök sağ tıklayın ve tıklayın **dış türü Ekle**.|`String`|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

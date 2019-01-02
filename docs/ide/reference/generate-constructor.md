@@ -2,19 +2,18 @@
 title: Bir Oluşturucu Hızlı Eylem oluştur
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895304"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio'da bir oluşturucu üret
 
@@ -24,13 +23,13 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen bir sınıf üzerinde yeni bir oluşturucu için kod oluşturmanıza olanak tanır.
+**Ne:** Hemen bir sınıf üzerinde yeni bir oluşturucu için kod oluşturmanıza olanak sağlar.
 
-**Ne zaman:** yeni oluşturucusu ve düzgün bir şekilde otomatik olarak bildirmek istiyorsanız tanıtmak veya var olan bir oluşturucu değiştirin.
+**ne zaman:** Yeni bir oluşturucu tanıtır ve düzgün bir şekilde otomatik olarak bildirmek istiyorsanız veya var olan bir oluşturucu değiştirin.
 
-**Neden:** ancak bu özellik, uygun parametrelerle birlikte otomatik olarak oluşturur, kullanmadan önce Oluşturucu bildirebilirsiniz. Ayrıca, mevcut bir oluşturucu değiştirme otomatik olarak güncelleştirmek için bu özelliği kullanmadığınız sürece tüm callsites güncelleştirilmesini gerektirir.
+**Neden:** Ancak, bu özellik, uygun parametrelerle birlikte otomatik olarak oluşturur, kullanmadan önce Oluşturucu bildirebilirsiniz. Ayrıca, mevcut bir oluşturucu değiştirme otomatik olarak güncelleştirmek için bu özelliği kullanmadığınız sürece tüm callsites güncelleştirilmesini gerektirir.
 
-**Nasıl:** bir oluşturucu oluşturmak için birkaç yolu vardır:
+**Nasıl:** Bir oluşturucu oluşturmak için birkaç yol vardır:
 
    - [Oluşturucu Oluşturma ve üyeleri seçin](#pick)
    - [Seçili alanları oluşturucusunu üret](#selection)
@@ -58,7 +57,7 @@ Bu kod oluşturma için geçerlidir:
 
    **Üyeleri çekme** iletişim kutusu açılır.
 
-1. Oluşturucu parametresi olarak dahil etmek istediğiniz üyeleri seçin. Yukarı kullanarak bunları sıralayın ve aşağı okları. Seçin **Tamam**.
+1. Oluşturucu parametresi olarak dahil etmek istediğiniz üyeleri seçin. Yukarı kullanarak bunları sıralayın ve aşağı okları. **Tamam**’ı seçin.
 
    ![Seçim üyeleri iletişim](media/constructor1-dialog-cs.png)
 
@@ -95,7 +94,7 @@ Bu kod oluşturma için geçerlidir:
 
 1. İmlecinizi satıra Yerleştir kırmızı dalgalı olduğu. Kırmızı dalgalı çizgi henüz mevcut olmayan bir oluşturucu için bir çağrı gösterir.
 
-   - C# İÇİN:
+   - C#:
 
        ![Vurgulanmış kodu C#](media/constructor-highlight-cs.png)
 
@@ -121,7 +120,7 @@ Bu kod oluşturma için geçerlidir:
 
    Oluşturucu, kullanımdan çıkarılan herhangi bir parametre ile oluşturulur.
 
-   - C# İÇİN:
+   - C#:
 
        ![Yöntem sonuç C# oluştur](media/constructor-result-cs.png)
 

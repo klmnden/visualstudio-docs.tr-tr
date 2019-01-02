@@ -2,7 +2,6 @@
 title: İmzalama Sayfası, Proje Tasarımcısı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856650"
 ---
 # <a name="signing-page-project-designer"></a>İmzalama Sayfası, Proje Tasarımcısı
 Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıtım bildirimlerini imzalamak için ve ayrıca (tanımlayıcı ad imzalama) derlemeyi imzalamak için.
@@ -40,7 +39,7 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
 ## <a name="application-and-deployment-manifest-signing"></a>Uygulama ve dağıtım bildirimlerini imzalama
  **ClickOnce bildirimlerini imzala** onay kutusu
 
- Uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile oturum açmak için bu onay kutusunu seçin. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: oturum uygulama ve dağıtım bildirimlerini](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile oturum açmak için bu onay kutusunu seçin. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  **Store arasından seçim** düğmesi
 
@@ -71,9 +70,9 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
 ## <a name="assembly-signing"></a>Derleme imzalama
  **Derlemeyi imzalamayı** onay kutusu
 
- Derlemeyi imzalamak ve kesin adlandırılmış bir anahtar dosyası oluşturmak için bu onay kutusunu seçin. Derlemeyi kullanarak imzalama hakkında daha fazla bilgi için **Proje Tasarımcısı**, bkz: [nasıl yapılır: bir derleme (Visual Studio) oturum](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+ Derlemeyi imzalamak ve kesin adlandırılmış bir anahtar dosyası oluşturmak için bu onay kutusunu seçin. Derlemeyi kullanarak imzalama hakkında daha fazla bilgi için **Proje Tasarımcısı**, bkz: [nasıl yapılır: Bir derleme (Visual Studio) oturum](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Bu seçenek Windows Yazılım Geliştirme Seti (SDK) tarafından sağlanan Al.exe araç derlemeyi imzalamak için kullanır. Al.exe hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir derlemeyi tanımlayıcı bir adla imzalamak](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Bu seçenek Windows Yazılım Geliştirme Seti (SDK) tarafından sağlanan Al.exe araç derlemeyi imzalamak için kullanır. Al.exe hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir derlemeyi katı bir adla imzalamak](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  **Tanımlayıcı ad anahtar dosyası seç** listesi
 
@@ -101,7 +100,7 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
 
 - [Proje Özellikleri Başvurusu](../../ide/reference/project-properties-reference.md)
 - [Derleme ve Bildirim İmzalamayı Yönetme](../../ide/managing-assembly-and-manifest-signing.md)
-- [Nasıl Yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [Nasıl yapılır: bir derleme (Visual Studio) oturum açın](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Nasıl yapılır: Bütünleştirilmiş Kodu Tanımlayıcı Adla İmzalama](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Nasıl yapılır: Bir derleme (Visual Studio) oturum açın](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Nasıl yapılır: Derlemeyi tanımlayıcı bir adla imzalama](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Kesin Adlandırılmış Bütünleştirilmiş Kodlar](/dotnet/framework/app-domains/strong-named-assemblies)

@@ -2,7 +2,6 @@
 title: Çıktı Penceresi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.build.output
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51fcd9ece62afca8c5369c813d5ca8e5314dafe6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5121053ebb88d3c6c5bcbedbb2798daff3ad07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836497"
 ---
 # <a name="output-window"></a>Çıktı penceresi
 
@@ -78,7 +77,7 @@ C++'da, özel derleme adımları oluşturma ve derleme olayları, uyarıları ve
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Çıkış penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Nasıl yapılır: çıkış penceresini denetleme](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Nasıl yapılır: Çıkış penceresini denetleme](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Derleme ve oluşturma](../../ide/compiling-and-building-in-visual-studio.md)
 - [Derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md)
 - [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview)

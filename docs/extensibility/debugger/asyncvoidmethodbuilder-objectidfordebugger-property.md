@@ -1,9 +1,6 @@
 ---
 title: Asyncvoidmethodbuilder.objectıdfordebugger özelliği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1d0c6d2e8fbe9a26a8d38351d0e6e423b1c0de5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961373"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Asyncvoidmethodbuilder.objectıdfordebugger özelliği
 Hata ayıklayıcı bu oluşturucuya benzersiz şekilde tanımlamak için kullanılan nesneyi alır.  

@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: temel 3B Model oluşturma'
+title: 'Nasıl Yapılır: Temel 3B Model oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeff9ce5ad4085c77443775fccb82e0eb9e6739d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929623"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Nasıl yapılır: temel 3B model oluşturma
+# <a name="how-to-create-a-basic-3d-model"></a>Nasıl Yapılır: Temel 3B model oluşturma
 
 Bu makalede, Model Düzenleyicisi temel 3B model oluşturma için nasıl kullanılacağını gösterir. Aşağıdaki eylemler ele alınmaktadır:
 
@@ -76,6 +75,6 @@ Bu makalede, Model Düzenleyicisi temel 3B model oluşturma için nasıl kullan�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: 3B arazi modeli oluşturma](../designers/how-to-model-3-d-terrain.md)
+- [Nasıl yapılır: Model 3B Arazi](../designers/how-to-model-3-d-terrain.md)
 - [Model düzenleyicisi](../designers/model-editor.md)
 - [Gölgelendirici tasarımcısı](../designers/shader-designer.md)

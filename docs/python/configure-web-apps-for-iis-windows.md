@@ -3,7 +3,6 @@ title: IIS için Python web uygulamalarını yapılandırma
 description: Internet Information Services ile bir Windows sanal makinesinden çalıştırmak için Python web uygulamaları nasıl yapılandıracağınızı öğrenmek.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d05e4022ada575873a85279d81b094b08160b6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843365"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS için Python web uygulamalarını yapılandırma
 
@@ -114,14 +113,14 @@ Ardından, uygulamanızın değiştirme *web.config* dosyanın tam yollarını i
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: değişiklik `WSGI_HANDLER` değerini `<project_name>.app` burada `<project_name>` projenizin adıyla aynıdır. Bakarak tam tanımlayıcısını bulabilirsiniz `from <project_name> import app` deyiminde *runserver.py*. Örneğin, proje "FlaskAzurePublishExample" ise, giriş şu şekilde görünür:
+    - **Flask**: Değişiklik `WSGI_HANDLER` değerini `<project_name>.app` burada `<project_name>` projenizin adıyla aynıdır. Bakarak tam tanımlayıcısını bulabilirsiniz `from <project_name> import app` deyiminde *runserver.py*. Örneğin, proje "FlaskAzurePublishExample" ise, giriş şu şekilde görünür:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django**: iki değişiklik için gereken *web.config* Django projeler için. İlk olarak değiştirmek `WSGI_HANDLER` değerini `django.core.wsgi.get_wsgi_application()` (nesne *wsgi.py* dosyası):
+    - **Django**: İki değişiklik için gereken *web.config* Django projeler için. İlk olarak değiştirmek `WSGI_HANDLER` değerini `django.core.wsgi.get_wsgi_application()` (nesne *wsgi.py* dosyası):
 
         ```xml
         <!-- Django apps only -->
@@ -134,7 +133,7 @@ Ardından, uygulamanızın değiştirme *web.config* dosyanın tam yollarını i
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Yalnızca Django uygulamaları**: içinde Django projesinin *settings.py* site URL'si, etki alanı ya da IP adresi ekleyin `ALLOWED_HOSTS` aşağıda gösterildiği gibi '1.2.3.4' URL veya IP adresi ile doğal değiştirme:
+1. **Yalnızca Django uygulamaları**: Django projenin *settings.py* site URL'si, etki alanı ya da IP adresi ekleyin `ALLOWED_HOSTS` aşağıda gösterildiği gibi '1.2.3.4' URL veya IP adresi ile doğal değiştirme:
 
     ```python
     # Change the URL or IP address to your specific site

@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: _Analysis_assume kullanarak ek kod bilgileri belirtme'
+title: 'Nasıl Yapılır: __Analysis_assume Kullanarak Ek Kod Bilgileri Belirtme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Analysis_assume
@@ -14,27 +13,27 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 17e25ace1da6cad9fcdc129b6c6f517c39c9c103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845088"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Nasıl yapılır: _Analysis_assume kullanarak ek kod bilgileri belirtme
-Çözümleme işleminin yardımcı olmak ve Uyarıları azaltmak C/C++ kodu için kod analizi aracı için ipuçları sağlayabilir. Ek bilgi sağlamak için aşağıdaki işlev kullanın:
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Nasıl Yapılır: __Analysis_assume Kullanarak Ek Kod Bilgileri Belirtme
+Analiz işlemine yardımcı olmak ve Uyarıları azaltmak C/C++ kodu için kod analizi aracı için ipuçları sağlar. Ek bilgi sağlamak için aşağıdaki işlevi kullanın:
 
  `_Analysis_assume(`  `expr`  `)`
 
- `expr` -true değerlendirileceği varsayılır herhangi bir ifade.
+ `expr` -herhangi bir ifade doğru olarak değerlendirilebilmesi için kabul edilir.
 
- Kod çözümleme aracı ifade tarafından temsil edilen koşul işlevi burada görünür ve ifade, örneğin, bir değişkene atama tarafından değiştirilinceye kadar doğrudur noktasında doğru olduğunu varsayar.
+ Kod Analizi aracı ifade tarafından temsil edilen koşul true işlevi burada görünür ve ifade, örneğin, bir değişkene atama ile değiştirilinceye kadar doğrudur noktada olduğunu varsayar.
 
 > [!NOTE]
->  `_Analysis_assume` kodu iyileştirme etkilemez. Kod çözümleme aracı dışında `_Analysis_assume` no-op tanımlanır.
+>  `_Analysis_assume` kod iyileştirme etkilemez. Kod Analizi aracı dışında `_Analysis_assume` bir İşlemsiz tanımlanır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod `_Analysis_assume` kod çözümleme uyarısı düzeltmek için [C6388](../code-quality/c6388.md):
+ Aşağıdaki kod `_Analysis_assume` Kod Analizi uyarısı düzeltmek için [C6388](../code-quality/c6388.md):
 
 ```
 #include<windows.h>

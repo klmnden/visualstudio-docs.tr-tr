@@ -1,9 +1,6 @@
 ---
 title: Metin işaretçileri eski API'si ile kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867007"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Metin işaretçileri eski API'si ile kullanma
 Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni kayan bir dizi ve bir bölgeye metin davranışını ' dir. Kesme noktaları, yer işaretleri, dalgalı alt çizgiler ve salt okunur bölgelere işaretçileri içerir. Metin işaretçileri temel söz dizimi renklendirmesi öğesinden farklıdır. Söz dizimi renklendirme, metnin bir bölgeyle ilişkili dil söz dizimi iletişim kurmak için hızlı bir yoludur. Hız önemlidir, Windows ekran halinde yeniden boyar olduğunda söz dizimi renklendirmesi genellikle istenir. Söz dizimi renklendirmesi yalnızca metin rengini değiştirir. Metin işaretçileri birçok diğer metin özellikleri değiştirebilirsiniz. Metin işaretçileri "kaydırabilirsiniz" ve özel davranışı uygulamak ve renklendirme.  
@@ -32,10 +29,10 @@ Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni k
   
 | Başlık | Açıklama |
 | - | - |
-| [Nasıl Yapılır: Standart Metin İşaretçileri Ekleme](../extensibility/how-to-add-standard-text-markers.md) | Bir standart metin işaretçisi türü tarafından sağlanan eklemeyi açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metni görünümü çekirdek Düzenleyici. |
-| [Nasıl Yapılır: Hata İşaretçilerini Uygulama](../extensibility/how-to-implement-error-markers.md) | Uygulama örneğini açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kırmızı dalgalı alt çizgiler kullanarak hataları göstermek için kullanılan işaretçisi. |
-| [Nasıl yapılır: Özel Metin İşaretçileri Oluşturma](../extensibility/how-to-create-custom-text-markers.md) | Oluşturma ve bir özel metin işaretçisi türü metin görünümü ekleme işlemini açıklamaktadır. |
-| [Nasıl Yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md) | Metin işaretçileri ekleme işlemi açıklanmaktadır. |
+| [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md) | Bir standart metin işaretçisi türü tarafından sağlanan eklemeyi açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metni görünümü çekirdek Düzenleyici. |
+| [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md) | Uygulama örneğini açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kırmızı dalgalı alt çizgiler kullanarak hataları göstermek için kullanılan işaretçisi. |
+| [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md) | Oluşturma ve bir özel metin işaretçisi türü metin görünümü ekleme işlemini açıklamaktadır. |
+| [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md) | Metin işaretçileri ekleme işlemi açıklanmaktadır. |
 | [Temel Düzenleyicinin İçinde](../extensibility/inside-the-core-editor.md) | Çekirdek Düzenleyici özelliklerini açıklar ve çekirdek Düzenleyici özelleştirme hakkında ayrıntılar sağlar. |
 | [Düzenleyici Özellikleri](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Uygulamasında kullanılabilen özellikleri açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici. |
   

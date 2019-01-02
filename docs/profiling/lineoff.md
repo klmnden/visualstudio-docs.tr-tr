@@ -1,8 +1,6 @@
 ---
-title: LineOff | Microsoft Docs
-ms.custom: ''
+title: Lıneoff | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
@@ -10,17 +8,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5d8c3e2644c94a4e15115661341a34c9e6f761
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 5fc5ad3e2256b32e32e02814d41168663e3539ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926128"
 ---
 # <a name="lineoff"></a>LineOff
-Örnekleme profili oluşturma yöntemi kullanırken varsayılan olarak, profil oluşturucu kaynak kodu satır sayısı ve satır numarası uzaklık verilerini toplar. VSPerfCmd **LineOff** seçeneği devre dışı bırakır satır numarası veri toplama VSPerfCmd uygulamayı başlatmak için kullanıldığında. Profil oluşturma verilerini işleve toplanır ne zaman düzey **LineOff** belirtilir.  
+Örnekleme profili oluşturma yöntemi kullanırken, varsayılan olarak, profil oluşturucu kaynak kodu satır numarasını ve satır numarası uzaklık veri toplar. VSPerfCmd **Lıneoff** seçeneği devre dışı bırakır satır numarası veri koleksiyonunu VSPerfCmd uygulamayı başlatmak için kullanıldığında. Profil oluşturma verilerinin işleve toplandığı zaman düzey **Lıneoff** belirtilir.  
   
- Kullanabileceğiniz **LineOff** yalnızca **başlatma** seçeneği ve yalnızca zaman profil oluşturucu örnekleme için kullanarak başlatıldı **Başlat**:**örnek** seçeneği.  
+ Kullanabileceğiniz **Lıneoff** yalnızca **başlatma** seçeneği, ve yalnızca zaman profil oluşturucu örnekleme için kullanarak başlatıldı **Başlat**:**örnek** seçeneği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -29,16 +27,16 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Yok.  
+ Hiçbiri  
   
-## <a name="required-options"></a>Gerekli seçenekler  
- **LineOff** seçeneği içeren bir komut satırında yalnızca kullanılabilir **başlatma** seçeneği.  
+## <a name="required-options"></a>Gerekli seçenekleri  
+ **Lıneoff** seçeneği yalnızca içeren bir komut satırında kullanılabilir **başlatma** seçeneği.  
   
  **Başlat:** `AppName`  
- Belirtilen uygulamayı başlatır ve profil oluşturma örnekleme yöntemi ile başlar.  
+ Belirtilen uygulamayı başlatır ve örnekleme yöntemiyle profili oluşturma başlar.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek uygulama ve profil oluşturucu başlatır ve satır düzeyi örnekleme devre dışı bırakır.  
+ Bu örnek, uygulama ve profil oluşturucuyu başlatır ve satır düzeyi örnekleme devre dışı bırakır.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -49,4 +47,4 @@ VSPerfCmd.exe /Launch:TestApp.exe /LineOff
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil hizmetler](../profiling/command-line-profiling-of-services.md)

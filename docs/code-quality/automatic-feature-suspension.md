@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861309"
 ---
 # <a name="automatic-feature-suspension"></a>Otomatik özelliği askıya alma
 
@@ -43,7 +42,7 @@ Bir düşük bellek durumu aşağıdaki eylemler gerçekleşir:
 
 ## <a name="full-solution-analysis-suspended"></a>Tam çözüm analizini askıya alındı
 
-Varsayılan olarak, tam çözüm analizini Visual Basic için etkinleştirilir ve Visual C# için devre dışı. Ancak, bir düşük bellek koşulunda tam çözüm analizini otomatik olarak hem Visual Basic ve Visual C# için Seçenekler iletişim kutusu ayarlarına bakılmaksızın devre dışıdır. Ancak, tam çözüm analizini seçerek yeniden etkinleştirebilirsiniz **yeniden etkinleştirmeniz** düğmesi olduğunda, seçerek göründüğü çubuğu bilgileri **tam çözüm analizini etkinleştirme** onay kutusundan veya Seçenekler iletişim kutusunda Visual Studio yeniden başlatılıyor. Seçenekler iletişim kutusu, her zaman geçerli tam çözüm analizi ayarları gösterir. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı tam çözüm analizini](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Varsayılan olarak, tam çözüm analizini Visual Basic için etkinleştirilir ve Visual C# için devre dışı. Ancak, bir düşük bellek koşulunda tam çözüm analizini otomatik olarak hem Visual Basic ve Visual C# için Seçenekler iletişim kutusu ayarlarına bakılmaksızın devre dışıdır. Ancak, tam çözüm analizini seçerek yeniden etkinleştirebilirsiniz **yeniden etkinleştirmeniz** düğmesi olduğunda, seçerek göründüğü çubuğu bilgileri **tam çözüm analizini etkinleştirme** onay kutusundan veya Seçenekler iletişim kutusunda Visual Studio yeniden başlatılıyor. Seçenekler iletişim kutusu, her zaman geçerli tam çözüm analizi ayarları gösterir. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable tam çözüm analizini](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC devre dışı gecikme süresi düşük
 
@@ -66,6 +65,6 @@ Ayrıca, iç Visual Studio işlemleri için kullanılan önbellekler de temizlen
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl Yapılır: Tam Çözüm Analizini Etkinleştirme ve Devre Dışı Bırakma](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Nasıl yapılır: Tam çözüm analizini devre dışı bırakma ve etkinleştirme](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Atık Toplamanın Temelleri](/dotnet/standard/garbage-collection/fundamentals)
 - [Büyük çözümler için performans konuları](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

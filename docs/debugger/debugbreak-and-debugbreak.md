@@ -1,8 +1,6 @@
 ---
 title: DebugBreak ve __debugbreak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,20 +19,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933855"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak ve __debugbreak
-DebugBreak Win32 işlevi çağırabilir veya [__debugbreak](/cpp/intrinsics/debugbreak) kodunuzda herhangi bir noktada iç. `DebugBreak` ve `__debugbreak` bu konumda bir kesme noktası ayarlama aynı etkiye sahiptir.  
+DebugBreak Win32 işlevini çağırabilir veya [__debugbreak](/cpp/intrinsics/debugbreak) kodunuzdaki herhangi bir noktada iç. `DebugBreak` ve `__debugbreak` bu konumda bir kesme noktası ayarlamak aynı etkiye sahiptir.  
   
- Çünkü `DebugBreak` sistem hata ayıklama simgeleri yüklü, doğru çağrı yığını bilgileri sonra kesme görüntülendiğinden emin olmak için bir sistem işlevi çağrısı. Aksi takdirde, hata ayıklayıcı tarafından görüntülenen çağrı yığını bilgileri kapalı bir çerçeve tarafından olabilir. Kullanırsanız `__debugbreak`, simgeler gerekli değildir.  
+ Çünkü `DebugBreak` bir sistem işlevi, sistem hata ayıklama sembolleri yüklü, doğru çağrı yığını bilgilerini sonra son görüntülendiğinden emin olmak için bir çağrı gibidir. Aksi takdirde, hata ayıklayıcı tarafından görüntülenen çağrı yığını bilgilerini bir çerçeve tarafından kapalı olması. Kullanırsanız `__debugbreak`, semboller gerekli değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](/cpp/intrinsics/compiler-intrinsics)   
- [Hata ayıklama güvenliği](../debugger/debugger-security.md)   
+ [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
- [Simge (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Simge (.pdb) ve Kaynak Dosyaları Belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

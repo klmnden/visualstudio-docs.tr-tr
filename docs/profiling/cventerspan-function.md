@@ -1,8 +1,6 @@
 ---
 title: CvEnterSpan işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892591"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan işlevi
 Yeni bir aralık başlangıcını işaretler.  
@@ -105,10 +103,10 @@ HRESULT CvEnterSpanExVA(
   
 #### <a name="parameters"></a>Parametreler  
  `argList`  
- Bağımsız değişkenler listesi.  
+ Bağımsız değişken listesi.  
   
  `category`  
- Aralık kategorisi  
+ Aralığın kategorisi  
   
  `level`  
  Aralık önem düzeyi.  
@@ -120,10 +118,10 @@ HRESULT CvEnterSpanExVA(
  İleti biçimi dizesi. NULL olamaz.  
   
  `ppSpan`  
- Sonuçta elde edilen aralık nesnesi tutacak değişkeni adresidir. Adres boş olamaz, değişkeni herhangi bir değer olabilir.  
+ Elde edilen aralık nesnesini tutacak bir değişken adresi. Adresi boş olamaz, değişken herhangi bir değere sahip olabilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
+ İletinin başarılı bir şekilde yazıldığında S_OK. Hata kodu: var olan herhangi bir hata durumunda. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkers.h*  

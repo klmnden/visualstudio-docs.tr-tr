@@ -2,7 +2,6 @@
 title: Uzaktan hata ayıklama Visual C++ projesi | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884590"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da Visual C++ projesi
 Farklı bir bilgisayarda bir Visual Studio uygulamasında hata ayıklama, yükleme ve uygulamanızı dağıtacağınız bilgisayarda Uzak araçları çalıştırmak için projenizi Visual Studio'dan uzak bilgisayara bağlanın ve ardından dağıtmak ve uygulamanızı çalıştırmak için yapılandırın.
@@ -73,7 +72,7 @@ Desteklenen Windows 7 ve daha yeni uzaktan hata ayıklayıcı (telefon değil) v
    |Uzaktan komut|C:\remotetemp\mymfc.exe|  
    |Çalışma dizini|C:\remotetemp|  
    |Uzak sunucu adı|MJO DL:*BağlantıNoktasıNumarası*|  
-   |bağlantı|Windows kimlik doğrulaması ile uzaktan|  
+   |Bağlantı|Windows kimlik doğrulaması ile uzaktan|  
    |Hata ayıklayıcı türü|Yalnızca yerel|  
    |Dağıtım dizini|C:\remotetemp.|  
    |Dağıtılacak ek dosyalar|C:\data\mymfcdata.txt.|  

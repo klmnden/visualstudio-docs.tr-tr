@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: COM sunucularında hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: COM sunucularında hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,29 +22,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853937"
 ---
-# <a name="how-to-debug-com-servers"></a>Nasıl Yapılır: COM Sunucularında Hata Ayıklama
-COM sunucusu uygulamalarında hata ayıklama her zaman çözmek kolay olmayan sorunlar benzersiz bir kümesi oluşturur.  
+# <a name="how-to-debug-com-servers"></a>Nasıl Yapılır: COM sunucularında hata ayıklama
+COM sunucu uygulamalarında hata ayıklama, bir dizi benzersiz olmayan her zaman kolay çözmek sorun oluşturur.  
   
- Sunucu uygulaması hata ayıklamak başlangıç sahip değil veya kapsayıcı uygulamanız için hata ayıklama bilgilerini kullanmak istiyor musunuz, üç adımlık bir işlemdir olur.  
+ Sahip değil ya da kapsayıcı uygulamanızı hata ayıklama bilgilerini kullanmak istiyor musunuz, sunucu uygulamasının hata ayıklamayı başlatma işlemi üç adımdan olur.  
   
-### <a name="to-debug-a-server-application-without-container-information"></a>Kapsayıcı bilgileri olmadan bir sunucu uygulaması hata ayıklamak için  
+### <a name="to-debug-a-server-application-without-container-information"></a>Kapsayıcı bilgileri olmadan bir sunucu uygulamasında hata ayıklamak için  
   
-1.  Sunucunun normal bir uygulama olarak hata ayıklama başlatılamıyor.  
+1.  Sunucunun normal bir uygulama olarak hatalarını ayıklamaya başlayın.  
   
-2.  Kesme noktaları istediğiniz şekilde ayarlayın.  
+2.  Kesme noktaları, istediğiniz şekilde ayarlayın.  
   
-3.  Kapsayıcı uygulamayı başlatın.  
+3.  Kapsayıcı uygulamasını başlatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM ve ActiveX hata ayıklaması](../debugger/com-and-activex-debugging.md)   
- [Nasıl yapılır: COM istemcilerinde ve sunucularında RPC hata ayıklamasını kullanarak hata ayıklama](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Nasıl yapılır: RPC hata ayıklamasını kullanarak COM istemcilerinde ve sunucularda hata ayıklama](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM sunucusunda ve kapsayıcısında hata ayıklama](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcı özelliği turu](../debugger/debugger-feature-tour.md)
+ [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

@@ -8,16 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895488"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ için Visual Studio veri araçları
 
@@ -25,7 +24,7 @@ Veri kaynaklarına erişirken yerel C++ genellikle en hızlı performans sağlar
 
 SQL veritabanlarına bağlanmak için yerel C++ uygulamaları, ODBC ve OLE DB sürücüleri ve Windows ile birlikte ADO sağlayıcıyı kullanabilirsiniz. Bunlar, bu arabirimleri destekleyen herhangi bir veritabanına bağlanabilirsiniz. ODBC sürücüsü standardıdır. OLE DB, geriye dönük uyumluluk için sağlanır. Bu veri teknolojileri hakkında daha fazla bilgi için bkz. [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-SQL Server 2005'te özel işlevsellikten yararlanmak ve daha sonra kullanmak üzere [SQL Server yerel istemcisi](/sql/relational-databases/native-client/sql-server-native-client). Yerel istemci ayrıca SQL Server ODBC sürücüsünü ve SQL Server OLE DB sağlayıcısı bir yerel dinamik bağlantı kitaplığı (DLL) içerir. Bu, Microsoft SQL Server için yerel kodlu API'ler (ODBC, OLE DB ve ADO) kullanan uygulamaları destekler. SQL Server veri araçları ile SQL Server Native Client yükler. Programlama Kılavuzu aşağıda verilmiştir: [programlama SQL Server yerel istemcisi](/sql/relational-databases/native-client/sql-server-native-client-programming).
+SQL Server 2005'te özel işlevsellikten yararlanmak ve daha sonra kullanmak üzere [SQL Server yerel istemcisi](/sql/relational-databases/native-client/sql-server-native-client). Yerel istemci ayrıca SQL Server ODBC sürücüsünü ve SQL Server OLE DB sağlayıcısı bir yerel dinamik bağlantı kitaplığı (DLL) içerir. Bu, Microsoft SQL Server için yerel kodlu API'ler (ODBC, OLE DB ve ADO) kullanan uygulamaları destekler. SQL Server veri araçları ile SQL Server Native Client yükler. Programlama Kılavuzu şu şekildedir: [SQL Server yerel istemcisi programlama](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Bir C++ uygulamasından localDB ODBC ve SQL Native Client aracılığıyla bağlanmak için
 

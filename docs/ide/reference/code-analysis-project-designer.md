@@ -2,7 +2,6 @@
 title: Kod Çözümlemesi, Proje Tasarımcısı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,67 +14,67 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860145"
 ---
 # <a name="code-analysis-project-designer"></a>Kod Çözümlemesi, Proje Tasarımcısı
-Kodunuz üzerinde çalıştırmak için seçebilirsiniz kod analizi aracı içerir. Tasarım Kuralları ve programlama ihlalleri İleri Microsoft .NET Framework tasarım yönergeleri ayarlama gibi aracı, derlemeler hakkında bilgi bildirir.
+Kodunuz üzerinde çalıştırmak için iyileştirilmiş kod analizi aracı içerir. Microsoft .NET Framework tasarım yönergeleri ile ortaya konan programlama ve tasarım kuralları ihlalleri gibi araç derlemelerinizi, bilgileri raporlar.
 
 ## <a name="uielement-list"></a>UIElement Listesi
- Kod çözümleme etkinleştir
+ Kod analizini etkinleştir
 
  Etkinleştirir veya projeniz için Kod Analizi devre dışı bırakır.
 
  Tasarım Kuralları
 
- Etkinleştirir veya tasarım kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya tasarım kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Genelleştirme kuralları
 
- Etkinleştirir veya Genelleştirme kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya Genelleştirme kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Birlikte çalışabilirlik kuralları
 
- Etkinleştirir veya birlikte çalışabilirlik kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya birlikte çalışabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Bakım kuralları
 
- Etkinleştirir veya bakım kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
-
- Mobility kuralları
-
- Etkinleştirir veya mobility kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
-
- Adlandırma kuralları
-
- Etkinleştirir veya adlandırma kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
-
- Performans Kuralları
-
- Etkinleştirir veya performans kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya bakım kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Taşınabilirlik kuralları
 
- Etkinleştirir veya taşınabilirlik kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya taşınabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+
+ Adlandırma kuralları
+
+ Etkinleştirir veya adlandırma kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+
+ Performans Kuralları
+
+ Etkinleştirir veya performans kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+
+ Taşınabilirlik kuralları
+
+ Etkinleştirir veya taşınabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Güvenilirlik kuralları
 
- Etkinleştirir veya güvenilirlik kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya güvenilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Güvenlik kuralları
 
- Etkinleştirir veya güvenlik kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya güvenlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Kullanım Kuralları
 
- Etkinleştirir veya kullanım kuralları devre dışı bırakır. Etkinleştirmek veya bireysel kuralları devre dışı bırakmak için bu girdi genişletebilirsiniz.
+ Etkinleştirir veya kullanım kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Yönetilen Kod için Kod Çözümleme Uyarıları](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Yönetilen Kod için Kod Çözümlemesine Genel Bakış](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: bir XPath ifadesi değerlendir'
+title: 'Nasıl Yapılır: Bir XPath İfadesini Değerlendirme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: gewarren
@@ -10,47 +9,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: eac1668a5d85f1f40d6defe4682f028674b5bf0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838654"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Nasıl yapılır: bir XPath ifadesi değerlendir
+# <a name="how-to-evaluate-an-xpath-expression"></a>Nasıl Yapılır: Bir XPath İfadesini Değerlendirme
 
-XPath ifadelerle değerlendirebilir **QuickWatch** iletişim kutusu. XPath ifadesi W3C XPath 1.0 öneri göre geçerli olmalıdır. Geçerli XSLT bağlamı — diğer bir deyişle, `self::node()` düğümünde **Yereller** penceresi — XPath ifadesi değerlendirme bağlamı sağlar.
+XPath ifadeleri ile değerlendirebilirsiniz **QuickWatch** iletişim kutusu. XPath ifadesi W3C XPath 1.0 öneri göre geçerli olmalıdır. Geçerli XSLT bağlam — diğer bir deyişle, `self::node()` düğümünde **Yereller** penceresi — için XPath ifadesini değerlendirme bağlamı sağlar.
 
- Aşağıdaki listede, hangi işlevlerin bir XPath ifadesi hesaplanırken desteklenen açıklanmaktadır:
+ Aşağıdaki listede, hangi işlevlerin bir XPath ifadesi değerlendirilirken desteklenen açıklanmaktadır:
 
 -   Yerleşik XPath işlevleri desteklenir.
 
 -   Yerleşik XSLT işlevleri desteklenmez.
 
--   Kullanıcı tanımlı işlevler desteklenmez.
+-   Kullanıcı tanımlı işlevleri desteklenmez.
 
 > [!NOTE]
-> Aşağıdaki yordam kullanır *belowAvg.xsl* ve *books.xml* dosyaları buradan [izlenecek yol: bir XSLT stil sayfası hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.
+> Aşağıdaki yordam kullanır *belowAvg.xsl* ve *books.xml* dosyalarını [izlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.
 
-## <a name="to-evaluate-an-xpath-expression"></a>Bir XPath ifadesi değerlendirmek için
+## <a name="to-evaluate-an-xpath-expression"></a>Bir XPath ifadesini değerlendirme
 
-1.  Kesme noktasında Ekle `xsl:if` başlangıç etiketi.
+1.  Bir kesme noktasında Ekle `xsl:if` başlangıç etiketi.
 
-2.  Tıklatın **hata ayıklama XSL** XML Düzenleyicisi araç çubuğunda.
+2.  Tıklayın **hata ayıklama XSL** XML Düzenleyicisi araç çubuğu düğmesi.
 
-     Hata ayıklayıcı başlar ve üzerinde sonları `xsl:if` etiketi.
+     Hata ayıklayıcıyı başlatır ve üzerinde sonları `xsl:if` etiketi.
 
-3.  Sağ tıklatıp **QuickWatch**.
+3.  Sağ tıklayıp **QuickWatch**.
 
      **QuickWatch** iletişim kutusu görüntülenir.
 
-4.  Girin `./price/text()` içinde **ifade** alanını **QuickWatch** iletişim kutusu ve tıklatın **yeniden**.
+4.  Girin `./price/text()` içinde **ifade** alanını **QuickWatch** iletişim kutusu ve tıklatın **yeniden değerlendir**.
 
-     Geçerli kitap düğümünün fiyat görünür **değeri** kutusu.
+     Geçerli kitap düğümün fiyatı görünür **değer** kutusu.
 
-5.  XPath ifadesi değiştirme `./price/text() < $bookAverage` tıklatıp **yeniden**.
+5.  XPath ifadesi değiştirme `./price/text() < $bookAverage` tıklatıp **yeniden değerlendir**.
 
-     **Değeri** kutusu gösterir XPath ifadesi hesaplandığında sonucunu `true`.
+     **Değer** kutusu gösterir XPath ifadesi olarak değerlendirilen `true`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

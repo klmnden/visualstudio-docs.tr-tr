@@ -2,21 +2,20 @@
 title: Kodlanmış UI testi oluşturma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878240"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>İzlenecek yol: Oluşturma, düzenleme ve bir kodlanmış UI testinin
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>İzlenecek yol: Oluşturun, düzenleyin ve bir kodlanmış UI testinin
 
 Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir Windows Presentation Framework (WPF) uygulaması korumak öğreneceksiniz. İzlenecek yol çeşitli zamanlama sorunları tarafından Kırılan testleri düzeltmeye ve denetimleri yeniden düzenleme için çözümler sağlar.
 
@@ -26,7 +25,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
 
 1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+     **Yeni Proje** iletişim kutusu görünür.
 
 2.  İçinde **yüklü** bölmesini genişletin **Visual C#** ve ardından **Windows Masaüstü**.
 
@@ -38,7 +37,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
 
 6.  Projeyi kaydetmek için bir klasör seçin. İçinde **konumu** metin kutusuna, klasörün adını yazın.
 
-7.  Seçin **Tamam**.
+7.  **Tamam**’ı seçin.
 
      **Visual Studio için WPF Tasarımcısı** açılır ve projenin MainWindow öğesini görüntüler.
 
@@ -133,7 +132,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
    > [!NOTE]
    > Görmüyorsanız **kodlanmış UI Test projesi** şablon gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Seçin **Tamam**.
+1. **Tamam**’ı seçin.
 
      Yeni kodlanmış UI test projesi adlı **Codeduıtestproject1** çözümünüze eklenir.
 
@@ -147,7 +146,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
 
 1. Seçin **kaydı Başlat** üzerinde **UIMap - Kodlanmış UI Test Oluşturucusu** iletişim.
 
-     ![Kaydı Başlat](../test/media/cuit_builder_record.png)
+     ![Kaydı başlat](../test/media/cuit_builder_record.png)
 
      Gerekirse, gelen e-posta ile uğraşmak zorunda örneğin kayıt duraklatabilirsiniz.
 

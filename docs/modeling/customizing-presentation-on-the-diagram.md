@@ -10,16 +10,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473d0a1e1f9bd215513e7a69f8fc511f6416db7a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e38984ceeaad6971d94afd488a0f4027e7260769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968303"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Diyagramda Sunuyu Özelleştirme
-Aşağıdaki diyagramda bir etki alanına özgü dil Tasarımcısı'nın ana sunu alanıdır. Genellikle, kullanıcılar, diyagram modellerini oluşturmak için kullanır. Aşağıdaki konularda açıklandığı gibi diyagram özelleştirebilirsiniz.
+Diyagram, bir etki alanına özgü dil Tasarımcısı'nın ana sunu alanıdır. Genellikle, kullanıcılar, diyagram modellerini oluşturmak için kullanır. Diyagramda şu konularda açıklandığı gibi özelleştirebilirsiniz.
 
 -   [Şekiller ve Bağlayıcıları Tanımlama](../modeling/defining-shapes-and-connectors.md)
 

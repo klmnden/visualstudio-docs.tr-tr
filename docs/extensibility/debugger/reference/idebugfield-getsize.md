@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetSize | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetSize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd47ac87eb61876302215f6a1e7e8aeed53c287
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82c4625b3b964604bead378015634be8b2d808c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887292"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Bu yöntem, bir alanın bayt cinsinden boyutunu alır.  
@@ -28,7 +25,7 @@ Bu yöntem, bir alanın bayt cinsinden boyutunu alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT GetSize(   
+HRESULT GetSize(   
    DWORD* pdwSize  
 );  
 ```  

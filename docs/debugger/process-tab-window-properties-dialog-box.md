@@ -1,8 +1,6 @@
 ---
 title: İşlem sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Process Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d504171b50a717ebb4863e2ab9995e384101d9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 557f471a841aa549ecb67fbe99a40b69465fb4b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968027"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>İşlem Sekmesi, Pencere Özellikleri İletişim Kutusu
-Kullanım **işlem** Seçili pencereyi işlemi tanımlamak için. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı taşımak [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  
+Kullanım **işlem** seçili penceresinin işlemi tanımlamak için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **işlem** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **işlem** sekmesinde:  
   
 |Giriş|Açıklama|  
 |-----------|-----------------|  
-|**İşlem kimliği**|Bu pencere oluşturulan iş parçacığı sahibi işlemin kimliği. Bu işlem özelliklerini görüntülemek için bu değeri seçin.|  
+|**İşlem kimliği**|Bu pencere oluşturulan iş parçacığı sahip işlem kimliği. Bu işlem özelliklerini görüntülemek için bu değeri seçin.|  
 |**İş parçacığı kimliği**|Bu pencere oluşturulan iş parçacığı kimliği. Bu iş parçacığı özelliklerini görüntülemek için bu değeri seçin.|

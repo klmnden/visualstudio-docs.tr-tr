@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Belgelere program aracılığıyla resim ve Word Art ekleme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ac57f54d7ba925a7189dfa0bf94e1b951c5ba7fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854210"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Nasıl Yapılır: Belgelere program aracılığıyla resim ve Word Art ekleme
   Tasarım zamanında veya çalışma zamanı sırasında belgelere resimler ve çizim nesneleri ekleyebilirsiniz. WordArt Microsoft Office Word belgelerine dekoratif metin eklemenize olanak tanır. Bu özel yazı efektleri çizim özelleştirebilir ve belgenize eklemek nesneleridir.  
@@ -108,5 +105,3 @@ ms.locfileid: "53804844"
  [Nasıl yapılır: Program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Nasıl yapılır: Program aracılığıyla belgeleri kaydetme](../vsto/how-to-programmatically-save-documents.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

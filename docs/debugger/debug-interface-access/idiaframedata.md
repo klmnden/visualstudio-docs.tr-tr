@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efdc99d45bfc081fafd9b8467937567cca777b68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5152dfc0ed6ef043fe80a060643c660c0f1ec343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948452"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
-Yığın çerçevesi ayrıntılarını gösterir.  
+Bir yığın çerçevesini ayrıntılarını sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaFrameData : IUnknown  
+IDiaFrameData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,33 +33,33 @@ IDiaFrameData : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Çerçeve kod adresi bölüm parçası alır.|  
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Çerçeve kod adresi uzaklık parçası alır.|  
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Görüntü göreli sanal adres (RAV) çerçevesi için kod alır.|  
-|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Çerçeve kodunu sanal adres (VA) alır.|  
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Çerçeve tarafından açıklanan kod bloğunun bayt cinsinden uzunluğu alır.|  
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Yerel değişkenler yığına bayt sayısını alır.|  
-|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Yığına parametrelerinin bayt sayısını alır.|  
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Yığın çerçevesi içinde gönderilen bayt sayısını alır.|  
-|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Başlangıç kod bloğundaki bayt sayısını alır.|  
-|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Kaydedilmiş Yazmaçlar yığına bayt sayısını alır.|  
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Geçerli işlevi çağırmadan önce ayarlayın kayıt hesaplamak için kullanılan program dizesini alır.|  
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Alır, bu sistem özel durum işleme belirten bir bayrak etkili olur.|  
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Alır, C++ özel durum işleme belirten bir bayrak etkili olur.|  
-|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Blok işlevi giriş noktasını içerse belirten bir bayrak alır.|  
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Bu adres aralığındaki kod için temel işaretçi ayrılır belirten bir bayrak alır. Bu yöntem kullanım dışıdır.|  
-|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Derleyici özgü çerçeve türünü alır.|  
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Alır işlevi kapsayan için veri arabirimi çerçevesi.|  
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Yığın geriye doğru izleme gerçekleştirir ve yığın ilerlemesi çerçeve arabiriminde yazmaçlar geçerli durumunu döndürür.|  
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Çerçeve kodunu adresini bölüm parçası alır.|  
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Çerçeve için kod adresinin uzaklık bölümü alır.|  
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Görüntü göreli sanal adres (RVA) çerçevesi için kodu alır.|  
+|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Çerçeve için kodun sanal adres (VA) alır.|  
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Çerçeve tarafından açıklanan bir kod bloğunu bayt cinsinden uzunluğunu alır.|  
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Yerel değişkenler yığına itildi bayt sayısını alır.|  
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Parametreleri yığına itildi bayt sayısını alır.|  
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|En büyük yığın çerçevesinde üzerinde gönderilen bayt sayısını alır.|  
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Bloğu içindeki kod prolog bayt sayısını alır.|  
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Yığına itildi kaydedilmiş kayıtları bayt sayısını alır.|  
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Geçerli işlevi çağırmadan önce ayarlanmış kayıt hesaplamak için kullanılan program dizesini alır.|  
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Alır, bu sistem özel durum işleme gösteren bir bayrak geçerli olur.|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Alır, C++ özel durum işleme gösteren bir bayrak geçerli olur.|  
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Blok bir işlev giriş noktası içerdiğini gösteren bir bayrak alır.|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Bu adres aralığı, kod için taban işaretçisi ayrılır gösteren bir bayrak alır. Bu metot kullanımdan kaldırılmıştır.|  
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Derleyici özel çerçeve türünü alır.|  
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Alır işlevi kapsayan veri arabirimi çerçevesi.|  
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Yığın geriye doğru izleme gerçekleştirir ve bir yığın ilerlemesi çerçeve arabiriminde kayıtları geçerli durumunu döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayrıntılar için bir çerçeve kullanılabilir adres ve blok uzunluğu ile belirtilen adres aralığı içinde yürütme noktaları içindir.  
+ Yürütme noktaları adresi ve blok uzunluğu ile belirtilen adres aralığında kullanılabilir bir çerçeve için ayrıntılar bulunur.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde [Idiaenumframedata::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) veya [Idiaenumframedata::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) yöntemleri. Bkz: [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md) Ayrıntılar için arabirim.  
+ Bu arabirim çağırarak elde [Idiaenumframedata::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md) veya [Idiaenumframedata::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md) yöntemleri. Bkz: [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md) Ayrıntılar için.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek özelliklerini yazdırır bir `IDiaFrameData` nesnesi. Bkz: [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md) arabirimi bir örnek için nasıl `IDiaFrameData` arabirimi elde edilir.  
+ Bu örnek özellikleri yazdırır bir `IDiaFrameData` nesne. Bkz: [Idiaenumframedata](../../debugger/debug-interface-access/idiaenumframedata.md) arabirimi örneği nasıl `IDiaFrameData` arabirimi elde edilir.  
   
 ```C++  
 void PrintFrameData(IDiaFrameData* pFrameData){  
@@ -115,9 +113,9 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

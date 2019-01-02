@@ -2,7 +2,6 @@
 title: Kaynağı Listele Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a5d0699fced4d01d439942081b359454bcf476
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7a94af10921c80b87b7d53f0f587aaf9ca55b22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850368"
 ---
 # <a name="list-source-command"></a>Kaynağı Listele Komutu
-Kaynak kodu belirtilen satır görüntüler.
+Belirtilen kaynak kodu satırlarını görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,22 +39,22 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 
  / Geçerli
 
- İsteğe bağlı. Geçerli satır gösterir.
+ İsteğe bağlı. Geçerli satırı gösterir.
 
- / Dosyası:`filename`
+ / Dosya:`filename`
 
- İsteğe bağlı. Gösterilecek dosyasının yolu. Bir dosya adı belirtilmezse, komut satırı geçerli deyimin için kaynak kodunu gösterir.
+ İsteğe bağlı. Gösterilecek dosyasının yolu. Dosya adı belirtilmezse, komut satırı geçerli deyimin için kaynak kodunu gösterir.
 
- / Satır:`number`
+ / Çizgi:`number`
 
- İsteğe bağlı. Bir satır numarasında gösterir.
+ İsteğe bağlı. Belirli bir satır numarasına gösterir.
 
  / ShowLineNumbers:`yes|no`
 
  İsteğe bağlı. Satır numaraları görüntülenip görüntülenmeyeceğini belirtir.
 
 ## <a name="example"></a>Örnek
- Bu örnekte, kaynak kodu satır numaralarını görünür dosyanın Form1.vb, 4 satırından listelenmiştir.
+ Bu örnekte, kaynak kodu satır numaralarını görünür olan Form1.vb, dosyanın 4 satırından listeler.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

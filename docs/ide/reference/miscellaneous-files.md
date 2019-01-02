@@ -2,7 +2,6 @@
 title: Çeşitli Dosyalar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.newfile
@@ -22,35 +21,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0d764cea7992a9833bd8bddde8432388aebbc994
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867166"
 ---
 # <a name="miscellaneous-files"></a>Çeşitli Dosyalar
-Kullanmak istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bağımsız olarak bir projeden veya bir çözüm dosyalarda çalışmak için düzenleyiciler. Açık bir çözüm sahip olsa da, açın ve bir çözüm ya da bir proje eklemeden dosyaları değiştirin. Çeşitli dosyalar bağımsız olarak kapsayıcılardan çalışmak istediğiniz dosya adı verilir. Çeşitli dosyalar çözümler ve projeler için dış, derlemelerde eklenmez ve kaynak denetimi altında bir çözümüyle eklenemez.
+Kullanmak istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bağımsız olarak bir proje veya çözüm dosyaları üzerinde çalışmasına düzenleyiciler. Açık bir çözüm olsa da, açın ve bir çözüm veya proje eklemeden dosyaları değiştirin. Bağımsız olarak kapsayıcılardan çalışmak istediğiniz dosyaları diğer dosyalar çağrılır. Çeşitli dosyalar, çözümler ve projeler için dış, yapılarında dahil değildir ve ile kaynak denetimi altında bir çözüme eklenemez.
 
- Dosyaları bağımsız olarak bir kapsayıcı açma çeşitli nedenlerden dolayı kullanışlıdır. Proje tabanlı bir çözümdür ancak geliştirmek için çözümün geliştirme tam sayı olmamasına karşın görüntülemek istediğiniz bir dosyanız olabilir. Yaygın örnek geliştirme notları veya yönergeleri, veritabanı şeması ve kod klipleri verilebilir. Ayrıca, tek başına bir dosya oluşturmak isteyebilirsiniz.
+ Dosyaları bağımsız olarak bir kapsayıcıdan açma çeşitli nedenlerden dolayı kullanışlıdır. Ancak proje tabanlı bir çözüm geliştirmek için çözümün geliştirme integral olmamasına karşın görüntülemek istediğiniz bir dosya olabilir. Geliştirme notları veya yönergeleri, veritabanı şemasını ve kod klipleri ortak örnek verilebilir. Ayrıca, tek başına bir dosya oluşturmak isteyebilirsiniz.
 
  ![Çözüm projeleri](../../ide/reference/media/projects_solutions_misc.gif)
 
- Klasör seçenekleri etkinleştirilirse Çözüm Gezgini dosyaları için çeşitli dosyalar klasörü görüntüleyebilirsiniz. Seçenekler arasında ayarlanabilir [belgeler, ortam, Seçenekler iletişim kutusu](../../ide/reference/documents-environment-options-dialog-box.md). Çeşitli dosya kapattıktan sonra bir seçenek için de etkinleştirilmediği sürece herhangi bir belirli çözüm veya proje ile ilişkili değil.
+ Klasör Seçenekleri etkinleştirilip etkinleştirilmediğini çeşitli dosyalar klasörüne dosyalar için Çözüm Gezgini görüntüleyebilirsiniz. Seçenekler arasında ayarlanabilir [belgeler, ortam, Seçenekler iletişim kutusu](../../ide/reference/documents-environment-options-dialog-box.md). Çeşitli dosya kapattıktan sonra bir seçenek için de etkinleştirilmediği sürece, herhangi bir belirli çözüm veya proje ile ilişkili değil.
 
- Çeşitli dosyalar klasörü dosyaları bağlantılar olarak temsil eder. Bir çözümü açtığınızda, bu klasör bir çözümün bir parçası olmasa da, bazı veya tüm çözüm son kapatıldığında açıldı çeşitli dosyalar, klasör ayarlarını bağlı olarak yeniden açılır.
+ Diğer dosyalar klasörünü görüntülerseniz, dosyaların bağlantı olarak temsil eder. Bir çözümü açtığınızda bu klasör bir çözümün bir parçası olmasa da, bazı veya tüm çözüm kapatıldığında açıldıkları çeşitli dosyalar, klasör ayarlarını bağlı olarak yeniden açılır.
 
 > [!NOTE]
-> Çeşitli dosyalar klasörü görünmez dosyaların bazıları şunlardır: .zip dosyaları gibi IDE içinden değiştirilemiyor dosyaları ve .doc dosyaları. IDE harici bir düzenleyici yalnızca değiştirilebilir dosyaları izlemek değil.
+> Çeşitli dosyalar klasörüne görünmeyen dosyaların bazıları şunlardır: .zip dosyalarını gibi IDE içinden değiştiremezsiniz dosyaları ve .doc dosyaları. IDE, yalnızca bir dış düzenleyici ile değiştirilebilir dosyaları izlemek değildir.
 
 
-## <a name="commands-available-in-the-ide"></a>IDE içinde kullanılabilen komutları
- Menüleri, araç çubukları ve dosya biçimine bağlı değişiklik içerdikleri komutları, açın. Örneğin, bir metin dosyası açtığınızda, metin düzenleyici araç çubuğu görüntülenir ve kendi komutları kullanılabilir. Ardından bir XML Şeması dosyası açarsanız, XML Şeması araç çubuğu görüntülenir. XML Şeması düzenlerken, metin düzenleyici araç çubuğunun komutları (veya araç) kullanılamaz. XML Şeması etkin pencereyi ve bu nedenle, geçerli seçim bağlamı vardır. Proje dosyası ile çeşitli dosya arasında geçiş yaptığınızda, tüm proje ile ilgili komutları kaybolur ve yalnızca o çeşitli dosyaya doğrudan ilgili görünür.
+## <a name="commands-available-in-the-ide"></a>IDE içinde kullanılabilir komutları
+ Menüleri, araç çubukları ve dosyanın biçimi temel alarak değişiklik içerdikleri komutlar, açın. Örneğin, bir metin dosyasını açtığınızda, metin düzenleyici araç çubuğu görünür ve kendi komutları kullanılabilir. Ardından bir XML şeması dosyasını açın, XML şema araç çubuğu görünür. XML şema kümenizdeki düzenlerken, metin düzenleyici araç çubuğunun komutları (veya araç) kullanılamaz. XML Şeması etkin pencere olup, bu nedenle, geçerli seçim bağlamı içerir. Bir proje dosyası ve çeşitli dosyası arasında geçiş yaptığınızda, projeyle ilgili tüm komutlar kaybolur ve yalnızca çeşitli dosyayı doğrudan ilgili görünür.
 
 ## <a name="folder-display-options"></a>Klasör görünen seçenekleri
- Çeşitli dosyaları açmadıysanız olsa bile klasör görünür çeşitli klasörü için görüntüleme seçeneklerini ayarlayabilirsiniz. Çözüm dosyası çeşitli dosyaların listesini kalıcı olarak yönetmez. Dosyaların en son kullanılan kullanıcı başına (MRU) listesini unutmayın imkan tanıyan isteğe bağlı bir özellik kullanır.
+ Çeşitli klasörü için görüntüleme seçeneklerini ayarlayabilirsiniz, böylece rağmen diğer tüm dosyalar açılmadı klasör görünür. Çözüm dosyası, çeşitli dosyalar listesini kalıcı olarak yönetmez. Bu, dosyaların en son kullanılan kullanıcı başına (MRU) listesini unutmayın sağlayan isteğe bağlı bir özellik kullanır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Çözümler ve projeler](../../ide/solutions-and-projects-in-visual-studio.md)
-- [Belgeler, ortam, Seçenekler iletişim kutusu](../../ide/reference/documents-environment-options-dialog-box.md)
+- [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Belgeler, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/documents-environment-options-dialog-box.md)

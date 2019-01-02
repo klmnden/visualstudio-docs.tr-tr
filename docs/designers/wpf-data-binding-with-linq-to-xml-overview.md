@@ -2,7 +2,6 @@
 title: LINQ to XML genel bakış ile WPF verilerini bağlama
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: bc67ec6beb42c3bce82f3a32f6e40f052f8ad0ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850732"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML genel bakış ile WPF verilerini bağlama
 
@@ -41,7 +40,7 @@ WPF verilerini bağlama özelliklerinden birine bir veri kaynağı ile ilişkile
 |---------------|-----------------|
 |Bağlama hedefi|Veri kaynağı ile ilişkilendirilecek Kullanıcı Arabirimi öğesi. Görsel öğeler ' WPF'de türetilir <xref:System.Windows.UIElement> sınıfı.|
 |Hedef özelliği|*Bağımlılık özelliği* bağlama hedefinin bağlama veri kaynağı değerini yansıtır. Bağımlılık özellikleri tarafından doğrudan desteklenir <xref:System.Windows.DependencyObject> sınıfı, hangi <xref:System.Windows.UIElement> türetir.|
-|Bağlama kaynağı|Sunu için kullanıcı Arabirimi öğesi için sağlanan bir veya daha fazla değerler için kaynak nesne. WPF otomatik olarak kaynakları bağlama olarak şu türleri destekliyor: CLR nesneleri, ADO.NET veri nesneleri, XML verilerinin (XPath veya LINQ to XML sorgularında) veya başka bir <xref:System.Windows.DependencyObject>.|
+|Bağlama kaynağı|Sunu için kullanıcı Arabirimi öğesi için sağlanan bir veya daha fazla değerler için kaynak nesne. WPF otomatik olarak kaynakları bağlama olarak aşağıdaki türlerini destekler: CLR nesneleri, ADO.NET veri nesneleri, XML verilerinin (XPath veya LINQ to XML sorgularında) veya başka bir <xref:System.Windows.DependencyObject>.|
 |Kaynak yolu|Değeri veya değerleri kümesi bağlanacağını çözümler bağlama kaynağı özelliği.|
 
 Bağımlılık özelliği bir belirli bir kullanıcı Arabirimi öğesinin dinamik olarak hesaplanan bir özellik temsil eden WPF kavramıdır. Örneğin, varsayılan değerleri veya bir üst öğe tarafından sağlanan değerleri bağımlılık özellikleri genellikle sahiptir. Bu özel özellikleri örnekleri tarafından desteklenen <xref:System.Windows.DependencyProperty> sınıfı (ve değil olarak alanları standart özellikleri ile). Daha fazla bilgi için [bağımlılık özelliklerine genel bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview).

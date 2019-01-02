@@ -2,7 +2,6 @@
 title: Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.File_Extension
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a15484883128e138621795a903d036f3e4804a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846158"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 
@@ -62,4 +61,4 @@ Aynı liste olarak sağlar **Düzenleyicisi**. Dosya uzantıları olmadan belgel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl Yapılır: Düzenleyici Modlarını Yönetme](../../ide/how-to-manage-editor-modes.md)
+- [Nasıl yapılır: Düzenleyici modlarını yönetme](../../ide/how-to-manage-editor-modes.md)

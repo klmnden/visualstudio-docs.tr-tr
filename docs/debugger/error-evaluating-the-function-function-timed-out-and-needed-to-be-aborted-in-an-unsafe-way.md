@@ -1,22 +1,20 @@
 ---
 title: 'Hata: İşlev değerlendirme &#39;işlevi&#39; zaman aşımına uğradı ve güvenli bir şekilde iptal edilmesi gerekti | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 459ece9551ce8bd64703db139f8024ece4953cfa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883317"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Hata: İşlev değerlendirme &#39;işlevi&#39; zaman aşımına uğradı ve güvenli bir şekilde iptal edilmesi gerekti
 
@@ -35,7 +33,7 @@ Bu sorunun bazı olası çözümü vardır.
 Hata iletisi, hata ayıklayıcı ulaşmaya çalıştık işlevin adını bildirir. Bu işlev değiştirebilir, özellik alıcısı veya ToString yöntemini çağırma, hata ayıklayıcı engelleyebilirsiniz. Aşağıdakilerden birini deneyin:
  
 * Yöntem başka türde bir özellik alıcısı yanı sıra kodu değiştirin veya ToString yöntemi ve sorunu kaybolur.
-    veya
+    -veya-
 * (ToString için) DebuggerDisplay özniteliği türüne tanımlayın ve ToString dışında bir şey değerlendirmek hata ayıklayıcı olabilir.
     -veya-
 * (Özellik alıcısı için) PUT `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` özelliği özniteliği. Bu API Uyumluluk nedenleriyle bir özellik kalması gereken bir yöntem varsa yararlı olabilir, ancak gerçekten bir yöntemi olması gerekir.
@@ -51,7 +49,3 @@ Hata iletisi, hata ayıklayıcı ulaşmaya çalıştık işlevin adını bildiri
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>Çözüm #4: Yönetilen Uyumluluk modunu etkinleştir
 
 Eski hata ayıklama Altyapısı'na geçiş yapıyorsanız, bu hatayı gidermek mümkün olabilir. Git **Araçları** > **seçenekleri**, ayarı seçin **hata ayıklama** > **genel**  >  **Yönetilen Uyumluluk modunu kullan**. Daha fazla bilgi için [genel hata ayıklama seçenekleri](../debugger/general-debugging-options-dialog-box.md).
-
-
-
-  

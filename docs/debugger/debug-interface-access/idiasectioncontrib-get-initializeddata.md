@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib::get_initializeddata | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b972c70fd0cc8a9c7f02476434a7f8f9394a8a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 016ce3def422e270083a9f20c672f71f46da2244
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881467"
 ---
 # <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
 Bölüm başlatılmamış veri içerip içermediğini gösteren bir bayrak alır.  
@@ -27,7 +25,7 @@ Bölüm başlatılmamış veri içerip içermediğini gösteren bir bayrak alır
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_initializedData (   
+HRESULT get_initializedData (   
    BOOL* pRetVal  
 );  
 ```  

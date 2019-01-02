@@ -1,9 +1,6 @@
 ---
 title: SharePoint için Web bölümleri oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879140"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint için Web bölümleri oluşturma
   Web Bölümleri'ni kullanarak, içeriğini, görünümünü ve davranışını bir SharePoint sitesi sayfalarının bir tarayıcı kullanarak değiştirebilirsiniz. Web Bölümleri olan bir web bölümü sayfasının içinde çalışan sunucu tarafı denetimleri: bir SharePoint sitesinde görünen sayfaların yapı taşları oldukları. Bkz: [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -54,10 +49,10 @@ ms.locfileid: "49906051"
 |.WebPart dosyası|SharePoint web bölümü, bir web bölümü galerisinde görüntülemesi gereken bilgileri sağlar.|  
 |Kod dosyası|Web bölümüne denetimler ekleyen ve web bölümü içinde özel içerik oluşturan yöntemleri içerir.|  
   
- Daha fazla bilgi için [nasıl yapılır: bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Daha fazla bilgi için [nasıl yapılır: Bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Visual web bölümü öğesi
- Bir görsel web bölümü, Visual Studio'da Visual Web Developer Tasarımcısını kullanarak oluşturduğunuz bir web bölümüdür. Bir görsel web bölümü herhangi bir web bölümü olarak aynı şekilde çalışır. Bir web bölümüne düğme ve metin kutuları gibi denetimler eklemek için bir XML dosyası için kodu ekleyin. Ancak, denetimleri bir görsel web bölümü için sürükleyerek ya da Visual Studio içindeki web parçalarına kopyalayarak eklediğiniz **araç kutusu**. Tasarımcı, sonra gerekli kodu XML dosyasında oluşturur. Bkz: [nasıl yapılır: Tasarımcı kullanarak oluşturma SharePoint web bölümü](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Bir görsel web bölümü, Visual Studio'da Visual Web Developer Tasarımcısını kullanarak oluşturduğunuz bir web bölümüdür. Bir görsel web bölümü herhangi bir web bölümü olarak aynı şekilde çalışır. Bir web bölümüne düğme ve metin kutuları gibi denetimler eklemek için bir XML dosyası için kodu ekleyin. Ancak, denetimleri bir görsel web bölümü için sürükleyerek ya da Visual Studio içindeki web parçalarına kopyalayarak eklediğiniz **araç kutusu**. Tasarımcı, sonra gerekli kodu XML dosyasında oluşturur. Bkz: [nasıl yapılır: Bir tasarımcı kullanarak SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>SharePoint denetimleri
  Visual Studio, uygulama sayfaları gibi SharePoint sayfaları oluşturmak için bazı denetimler sunar. Bu denetimlerin görünür **araç kutusu** altında **SharePoint denetimleri**. Bu denetimlerin işlevleri türetildiği [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) SharePoint site ve liste sayfalarında kullanılan ASP.NET sunucu denetimlerini içeren ad alanı.  
@@ -115,10 +110,9 @@ ms.locfileid: "49906051"
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)|SharePoint sayfaları için web bölümleri oluşturma işlemi gösterilmektedir.|  
+|[Nasıl yapılır: Bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part.md)|SharePoint sayfaları için web bölümleri oluşturma işlemi gösterilmektedir.|  
 |[Nasıl yapılır: Tasarımcı kullanarak bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Bir görsel tasarım yüzeyini kullanarak SharePoint için web bölümleri oluşturma işlemi gösterilmektedir.|  
-|[Nasıl yapılır: bir SharePoint uygulama sayfası veya web bölümü için bir kullanıcı denetimi oluşturma](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Uygulama sayfaları ve SharePoint'te çalışan web bölümleri tarafından kullanılabilen özel, yeniden kullanılabilir denetimler oluşturma işlemi gösterilmektedir.|  
+|[Nasıl yapılır: Bir SharePoint uygulama sayfası veya web bölümü için bir kullanıcı denetimi oluşturma](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Uygulama sayfaları ve SharePoint'te çalışan web bölümleri tarafından kullanılabilen özel, yeniden kullanılabilir denetimler oluşturma işlemi gösterilmektedir.|  
 |[İzlenecek yol: SharePoint için bir web bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|SharePoint için bir web bölümü tasarlamak açıklar.|  
-|[İzlenecek yol: Tasarımcı kullanarak bir web bölümü SharePoint için oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Denetimleri bir görsel tasarım yüzeyine sürükleyerek, SharePoint için bir web bölümü tasarlamak açıklar.|  
+|[İzlenecek yol: Tasarımcı kullanarak SharePoint için bir web bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Denetimleri bir görsel tasarım yüzeyine sürükleyerek, SharePoint için bir web bölümü tasarlamak açıklar.|  
 |[İzlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Bir Silverlight uygulamasını barındıran ve SharePoint listelerinden veri görüntüleyen bir SharePoint için bir web bölümü tasarlamak açıklar.|  
-  

@@ -2,7 +2,6 @@
 title: Sınıf Tasarımcısında Visual C++ Typedefs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -15,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869196"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Sınıf tasarımcısında Visual C++ typedefs
 
-[TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) deyimleri yöneltme bir ad ve temel alınan türü arasında bir veya daha fazla katmanı oluşturun. **Sınıf Tasarımcısı** anahtar sözcüğüyle bildirilen C++ typedef türlerini destekler `typedef`, örneğin:
+[TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) deyimleri, bir veya daha fazla katman bir ad ve temel alınan türü arasında bir yöneltme oluşturun. **Sınıf Tasarımcısı** anahtar sözcüğü ile bildirilen C++ typedef türlerini destekler `typedef`, örneğin:
 
 ```cpp
 typedef class coord
@@ -39,13 +38,13 @@ Ardından bu tür bir örneği bildirmek için de kullanabilirsiniz:
 
 `COORD OriginPoint;`
 
-## <a name="class-and-struct-shapes"></a>Sınıf ve yapı şekiller
+## <a name="class-and-struct-shapes"></a>Sınıf ile yapı şekilleri
 
-İçinde **Sınıf Tasarımcısı**, Şekil typedef belirtilen türde bir C++ typedef sahiptir. Kaynak bildirirse `typedef class`, Şekil köşeleri ve etiket yuvarlanmış **sınıfı**. İçin `typedef struct`, Şekil kare köşeleri ve etiket sahip **yapısı**.
+İçinde **Sınıf Tasarımcısı**, bir C++ typedef typedef içinde belirtilen tür şeklini sahiptir. Kaynak bildirirse `typedef class`, şeklin köşe ve etiket yuvarlanmış **sınıfı**. İçin `typedef struct`, Şekil köşeler ve etikete sahiptir **yapı**.
 
-Sınıfları ve yapıları bunların içinde bildirilen iç içe geçmiş tür tanımları sahip olabilir. İçinde **Sınıf Tasarımcısı**, sınıf ve yapısı şekiller olarak içe şekillerin iç içe geçmiş typedef bildirimleri gösterebilir.
+Bunların içinde bildirilen iç içe geçmiş tür tanımları, sınıfları ve yapıları olabilir. İçinde **Sınıf Tasarımcısı**, sınıf ve yapı şekilleri iç içe geçmiş typedef bildirimleri gibi iç içe geçmiş şekillere gösterebilir.
 
-TypeDef şekilleri Destek **Göster ilişkilendirmesi olarak** ve **Göster koleksiyon ilişkilendirmesini** bağlam menüsünde komutları.
+TypeDef şekilleri Destek **ilişkilendirmesi olarak göster** ve **koleksiyon ilişkilendirmesi olarak göster** bağlam menüsü komutları.
 
 ### <a name="class-typedef-example"></a>Sınıf typedef örneği
 
@@ -54,7 +53,7 @@ class B {};
 typedef B MyB;
 ```
 
-![Sınıf tasarımcısında C++ sınıfı typedef](media/cpp-class-typedef.png)
+![Sınıf Tasarımcısı'nda C++ sınıfı typedef](media/cpp-class-typedef.png)
 
 ### <a name="struct-typedef-example"></a>Yapı typedef örneği
 
@@ -66,11 +65,11 @@ typedef struct mystructtag
 } mystruct;
 ```
 
-![Sınıf tasarımcısında C++ yapısı typedef](media/cpp-struct-typedef.png)
+![Sınıf Tasarımcısı'nda C++ yapı typedef](media/cpp-struct-typedef.png)
 
-## <a name="unnamed-typedefs"></a>Adlandırılmamış tür tanımları
+## <a name="unnamed-typedefs"></a>Adsız tür tanımları
 
-Bir ad olmadan bir typedef bildirebilir rağmen **Sınıf Tasarımcısı** belirttiğiniz etiket adını kullanmaz. **Sınıf Tasarımcısı** adını kullanır, **sınıf görünümü** oluşturur. Örneğin, aşağıdaki bildirimi geçerlidir, ancak görünür **sınıf görünümü** ve **Sınıf Tasarımcısı** adlı bir nesne olarak **__unnamed**:
+Bir ad olmadan bir typedef bildirebilirsiniz rağmen **Sınıf Tasarımcısı** belirttiğiniz etiket adını kullanmaz. **Sınıf Tasarımcısı** adını kullanır, **sınıf görünümü** oluşturur. Örneğin, aşağıdaki bildirimi geçerlidir, ancak görünür **sınıf görünümü** ve **Sınıf Tasarımcısı** adlı bir nesne olarak **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -82,7 +81,7 @@ typedef class coord
 ```
 
 > [!NOTE]
-> **Sınıf Tasarımcısı** kaynak türü, bir işlev işaretçisi olan tür tanımları görüntülenmez.
+> **Sınıf Tasarımcısı** tür tanımları, kaynak türü, işlev işaretçisi olan görüntülemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

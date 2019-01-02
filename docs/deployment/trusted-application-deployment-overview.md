@@ -1,8 +1,6 @@
 ---
 title: Güvenilir Uygulama dağıtımına genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934670"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama dağıtımına genel bakış
 Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] güvenilir uygulama dağıtımı teknolojisini kullanarak yükseltilmiş izinlere sahip uygulamalar.  
@@ -82,17 +80,17 @@ Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:
 -   *CertMgr.exe*, Internet Explorer'ın bir bileşeni olan ve bu nedenle Windows 98 ve sonraki tüm sürümlerinde bulunmaktadır. Daha fazla bilgi için [Certmgr.exe (Sertifika Yöneticisi Aracı)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>ClickOnce uygulaması oluşturma  
- A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] istemci uygulaması uygulamayı tanımlayan ve yükleme parametrelerini sağlayan bildirim dosyaları ile birlikte. Programınıza kapatabilirsiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanarak uygulama **Yayımla** komutunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatif olarak, gerekli tüm dosyaları oluşturabilirsiniz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bulunan araçları kullanarak dağıtım [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Ayrıntılı adımlar için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bkz [izlenecek yol: ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] istemci uygulaması uygulamayı tanımlayan ve yükleme parametrelerini sağlayan bildirim dosyaları ile birlikte. Programınıza kapatabilirsiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanarak uygulama **Yayımla** komutunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatif olarak, gerekli tüm dosyaları oluşturabilirsiniz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bulunan araçları kullanarak dağıtım [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Ayrıntılı adımlar için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bkz [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
  Güvenilir uygulama dağıtımı için belirli [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ve yalnızca birlikte kullanılan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar.  
   
 ### <a name="sign-the-deployment"></a>Dağıtım oturum  
- Sertifikanızı aldıktan sonra dağıtımınız imzalamak için kullanmanız gerekir. Uygulamanızı kullanarak dağıtıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama Sihirbazı, bir sertifikayı kendiniz değil belirttiyseniz Sihirbazı otomatik olarak bir test sertifikası sizin için oluşturur. Ayrıca [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje Tasarımcısı penceresinde, ancak bir CA tarafından sağlanan bir sertifika sağlamak için.  Ayrıca bkz: [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Sertifikanızı aldıktan sonra dağıtımınız imzalamak için kullanmanız gerekir. Uygulamanızı kullanarak dağıtıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama Sihirbazı, bir sertifikayı kendiniz değil belirttiyseniz Sihirbazı otomatik olarak bir test sertifikası sizin için oluşturur. Ayrıca [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje Tasarımcısı penceresinde, ancak bir CA tarafından sağlanan bir sertifika sağlamak için.  Ayrıca bkz: [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Uygulama bir test sertifikası ile dağıtılması önermiyoruz.  
   
- Uygulamayı kullanarak da oturum açabilirsiniz *Mage.exe* veya *MageUI.exe* SDK Araçları. Daha fazla bilgi için [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım imzalama ile ilgili komut satırı seçeneklerinin tam listesi için bkz. [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
+ Uygulamayı kullanarak da oturum açabilirsiniz *Mage.exe* veya *MageUI.exe* SDK Araçları. Daha fazla bilgi için [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım imzalama ile ilgili komut satırı seçeneklerinin tam listesi için bkz. [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
 ### <a name="publish-the-application"></a>Uygulama yayımlama  
  Oturum açmış olan hemen sonra [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri, uygulama, yükleme konumunuz için yayımlamaya hazır. Yükleme konumu, bir Web sunucusu, bir dosya paylaşımına veya yerel disk olabilir. Bir istemci, dağıtım bildirimini ilk kez eriştiğinde, güven yöneticisi seçmelisiniz olmadığını [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama authorities veya daha yüksek bir güven düzeyinde bir yüklü çalışmak için güvenilir yayımcı. Güven Yöneticisi depolamak karşılaştırarak dağıtım istemcinin güvenilir yayımcı olarak depolanan sertifikaları imzalamak için kullanılan sertifikanın bu seçenek bulunur. Güven Yöneticisi bir eşleşme bulduğunda, uygulamanın yüksek güven ile çalışır.  
@@ -105,4 +103,4 @@ Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
- [İzlenecek yol: ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+ [İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

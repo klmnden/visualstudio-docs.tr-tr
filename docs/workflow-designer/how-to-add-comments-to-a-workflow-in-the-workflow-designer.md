@@ -1,9 +1,8 @@
 ---
-title: 'İş Akışı Tasarımcısı - nasıl yapılır: bir iş akışına açıklama ekleme'
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: Bir iş akışına açıklama ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -13,14 +12,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f440102f1a155f179273f145adc58be54c275e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883313"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882795"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Nasıl yapılır: iş akışı tasarımcısında bir iş akışı aracılığıyla açıklama ekleme
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Nasıl Yapılır: İş Akışı Tasarımcısında bir iş akışına açıklama ekleme
 
 Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak için .NET Framework 4.5 öğesi Tasarımcısı'nda aşağıdaki türden ek açıklamalar eklemek Geliştirici sağlar:
 

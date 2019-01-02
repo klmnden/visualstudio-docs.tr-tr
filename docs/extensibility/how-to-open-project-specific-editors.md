@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: projeye özgü düzenleyicileri açma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Projeye özgü düzenleyicileri açma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45967d2312a7693130126612c7fd052c54e17ce2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934420"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Nasıl yapılır: projeye özgü düzenleyicileri açma
+# <a name="how-to-open-project-specific-editors"></a>Nasıl Yapılır: Projeye özgü düzenleyicileri açma
 Bir proje tarafından açılmış bir öğe dosyası doğası gereği bu proje için belirli düzenleyiciye bağlıysa, proje dosyası bir projeye özgü Düzenleyicisi'ni kullanarak açmanız gerekir. Dosya bir düzenleyicide seçme IDE'nin mekanizması aşağı temsilci olarak seçilemez. Örneğin, standart bir bit eşlem Düzenleyicisi kullanmak yerine, projeniz için benzersiz olan bilgileri tanıdığı bir belirli bir bit eşlem Düzenleyicisi belirtmek için bu projeye özgü Düzenleyicisi seçeneği kullanabilirsiniz.  
   
  IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> yöntemi belirli bir proje tarafından bir dosyanın açılması gerektiğini belirler. Daha fazla bilgi için [Aç komutunu kullanarak dosyaları görüntüleme](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Uygulamak için aşağıdaki kılavuzları kullanın `OpenItem` projenizin bir projeye özgü Düzenleyicisi'ni kullanarak bir dosyayı açmak için yöntemi.  
@@ -56,5 +53,5 @@ Bir proje tarafından açılmış bir öğe dosyası doğası gereği bu proje i
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Açın ve proje öğeleri Kaydet](../extensibility/internals/opening-and-saving-project-items.md)   
- [Nasıl yapılır: standart düzenleyicileri açma](../extensibility/how-to-open-standard-editors.md)   
- [Nasıl yapılır: açık belgeler için düzenleyicileri açma](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Nasıl yapılır: Açık standart düzenleyicileri](../extensibility/how-to-open-standard-editors.md)   
+ [Nasıl yapılır: Açık belgeler için düzenleyicileri açma](../extensibility/how-to-open-editors-for-open-documents.md)

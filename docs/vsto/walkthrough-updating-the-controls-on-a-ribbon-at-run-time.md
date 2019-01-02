@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme'
-ms.custom: ''
+title: 'İzlenecek yol: Çalışma zamanında Şerit denetimlerini güncelleştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926962"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>İzlenecek yol: Çalışma zamanında Şerit denetimlerini güncelleştirme
 
 Bu yönerge, Şerit nesne modeline Şerit Office uygulamasına yüklendikten sonra Şerit denetimlerini güncelleştirme için nasıl kullanılacağını gösterir.
 
@@ -68,7 +65,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 3.  Projenin varsayılan proje dizinine kaydedin.
 
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Özel Şerit grubuna tasarlama
 
@@ -309,7 +306,7 @@ Aşağıdaki konulardan Office UI özelleştirme hakkında daha fazla bilgi edin
 - [Şerit nesne modeline genel bakış](../vsto/ribbon-object-model-overview.md)
 - [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)
 - [Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)
+- [Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)
 - [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Nasıl yapılır: Bir Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Nasıl yapılır: Eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)

@@ -1,8 +1,6 @@
 ---
-title: 'İzlenecek yol: bir gizlilik istemiyle özel bir önyükleyici oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir gizlilik istemiyle özel bir önyükleyici oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882728"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemiyle özel bir önyükleyici oluşturma
 Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamaları yapılandırabilirsiniz. Müşterileriniz için bu davranış kabul ettiğinden emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulamaya izin verilip verilmeyeceğini seçebilirsiniz. Uygulamayı otomatik olarak güncelleştirmesine izin verilmiyorsa yüklemez.  
@@ -148,7 +146,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 -   Yazılım Lisans Koşulları'nı bir belge.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>1. adım: önyükleyici dizini oluşturmak için  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>1. Adım: Önyükleyici dizini oluşturmak için  
   
 1.  Adlı bir dizin oluşturmak **UpdateConsentDialog** içinde *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
@@ -160,7 +158,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
     > [!NOTE]
     >  Her yerel ayar için yeni bir dizin oluşturun. Örneğin, fr ve de yerel ayarlar için alt ekleyebilirsiniz. Bu dizinler, dil paketlerini ve Fransızca ve Almanca dizeleri gerekirse içerecektir.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. adım: product.xml bildirim dosyası oluşturmak için  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. Adım: Product.xml bildirim dosyası oluşturmak için  
   
 1.  Adlı bir metin dosyası oluşturma *product.xml*.  
   
@@ -192,7 +190,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 3.  Dosyayı UpdateConsentDialog önyükleyici dizine kaydedin.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3. adım: package.xml bildirimi oluşturmak için dosya ve yazılım lisans koşulları  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3. Adım: Package.xml bildirim dosyası ve Yazılım Lisans Koşulları'nı oluşturmak için  
   
 1.  Adlı bir metin dosyası oluşturma *package.xml*.  
   
@@ -266,13 +264,13 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 6.  Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
   
-     Güncelleştirme Onayı iletişim uygulaması görünür ve aşağıdaki metni gösterir: Web üzerindeki en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
+     Güncelleştirme Onayı iletişim uygulaması görüntülenir ve aşağıdaki metni gösterir: Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
   
 7.  Uygulamayı kapatın veya İptal'e tıklayın.  
   
-     Uygulama bir hatayı gösterir: için sistem bileşenleri yüklenirken bir hata oluştu *ApplicationName*. Tüm sistem bileşenleri başarıyla yükleninceye kadar kurulum devam edemiyor.  
+     Uygulama, bir hatayı gösterir: İçin sistem bileşenleri yüklenirken bir hata oluştu *ApplicationName*. Tüm sistem bileşenleri başarıyla yükleninceye kadar kurulum devam edemiyor.  
   
-8.  Aşağıdaki hata iletisini göstermek için Ayrıntılar'ı tıklatın: Bileşen Güncelleştirme Onayı iletişim kutusu aşağıdaki hata iletisiyle başarısız oldu: "otomatik güncelleştirme anlaşmayı kabul edilmez." Aşağıdaki bileşenler yüklenemedi:-Güncelleştirme Onayı iletişim  
+8.  Aşağıdaki hata iletisini göstermek için Ayrıntılar'a tıklayın: Bileşen Güncelleştirme Onayı iletişim, şu hata iletisiyle başarısız oldu: "Otomatik güncelleştirme anlaşmayı kabul edilmiyor." Aşağıdaki bileşenler yüklenemedi:-Güncelleştirme Onayı iletişim  
   
 9. **Kapat**'ı tıklatın.  
   
@@ -292,7 +290,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 6.  Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
   
-     Güncelleştirme Onayı iletişim uygulaması görünür ve aşağıdaki metni gösterir: Web üzerindeki en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
+     Güncelleştirme Onayı iletişim uygulaması görüntülenir ve aşağıdaki metni gösterir: Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
   
 7.  Tıklayın **ediyorum**ve ardından **İlerle**.  
   

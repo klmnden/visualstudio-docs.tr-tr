@@ -1,8 +1,6 @@
 ---
 title: CvCreateMarkerSeries işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateMarkerSeriesA
@@ -16,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55dd6658aca332937299b2301d8294081bc7d3fd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9395f576e942e799312dad2e22be79942110a8ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967806"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries işlevi
-İşaretçi serisi için belirli bir sağlayıcı oluşturur.  
+İşaret için belirli bir sağlayıcı oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,16 +40,16 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
 #### <a name="parameters"></a>Parametreler  
  `pProvider`  
- Cvınitprovider tarafından daha önce başlatılmış sağlayıcı nesnesi. NULL olamaz.  
+ Cvınitprovider tarafından önceden başlatılan sağlayıcı nesnesi. NULL olamaz.  
   
  `pSeriesName`  
- İşaretçi seri adı. BOŞ olamaz, ancak boş dize izin verilir.  
+ İşaret seri adı. NULL olamaz, ancak boş dizeye izin verilir.  
   
  `ppMarkerSeries`  
- İşaretçi serisi bağlam depolayan bir çıkış değişkeninin adresi. NULL olamaz.  
+ İşaret serisi bağlam depolayacak bir çıkış değişkeni adresi. NULL olamaz.  
   
 ## <a name="return-value"></a>Dönüş değeri  
- İşaretçi serisi başarıyla oluşturulduğunda veya tüm hatalar oluştu. hata kodu var. durumda S_OK. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
+ S_OK işaret serisi başarıyla oluşturulduğunda veya hata kodu var. durumda tüm hatalar. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkers.h*  

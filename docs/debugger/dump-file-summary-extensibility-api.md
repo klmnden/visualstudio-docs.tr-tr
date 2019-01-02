@@ -1,8 +1,6 @@
 ---
 title: Döküm dosyası özeti genişletilebilirlik API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938925"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>Döküm Dosyası Özeti Genişletilebilirlik API
-Bu bölümde genişletilebilirlik API'leri kullanarak, genişletebilirsiniz. Exe proje sistemi ve **dökümü Özet** kendi özel hata ayıklama altyapısı ile kullanılmak üzere sayfa.  
+Bu bölümde genişletilebilirlik API'leri kullanarak, genişletebilirsiniz. Exe proje sistemi ve **döküm özeti** kendi özel hata ayıklama altyapısı ile kullanmak için sayfa.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- Genişletmek için API'ler **dökümü Özet** sayfa ve. Exe proje sistemi aşağıdaki ad alanında kullanılabilir:  
+ Genişletmek için API'ler **döküm özeti** sayfası ve. Exe proje sistemi aşağıdaki ad alanında kullanılabilir:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Döküm dosyalarını kullanma](../debugger/using-dump-files.md)
+ [Döküm Dosyalarını Kullanma](../debugger/using-dump-files.md)

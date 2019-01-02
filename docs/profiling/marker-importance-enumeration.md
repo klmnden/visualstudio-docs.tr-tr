@@ -1,8 +1,6 @@
 ---
-title: marker_importance numaralandırması | Microsoft Docs
-ms.custom: ''
+title: marker_importance sabit listesi | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844124"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841696"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance numaralandırması
-Eşzamanlılık görselleştiricisi işaret önem düzeyini temsil eder.  
+Eşzamanlılık görselleştiricisi işaretleyicisi önem düzeyini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,14 +35,14 @@ enum marker_importance;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |`critical_importance`|İşaretin kritik öneme sahip olduğunu belirtir.|  
-|`high_importance`|İşaretin yüksek önem düzeyine sahip olduğunu belirtir.|  
-|`low_importance`|İşaretin düşük önem olduğunu belirtir.|  
-|`normal_importance`|İşaretin normal önem olduğunu belirtir.|  
+|`high_importance`|İşaretin yüksek önem sahip olduğunu belirtir.|  
+|`low_importance`|İşaretin düşük öneme sahip olduğunu belirtir.|  
+|`normal_importance`|İşaretin normal önem sahip olduğunu belirtir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkersobj.h*  
   
- **Namespace:** Concurrency::diagnostic  
+ **Namespace:** CONCURRENCY::Diagnostic  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Tanılama ad alanı](../profiling/diagnostic-namespace.md)

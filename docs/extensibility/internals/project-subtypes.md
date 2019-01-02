@@ -1,9 +1,6 @@
 ---
-title: Proje Subtypes | Microsoft Docs
-ms.custom: ''
+title: Proje alt türleri | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
@@ -14,50 +11,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91a16ad11f7089230138919519922d58f3cc472
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fdbc00863c7aa0d03ad94bd60966e81f7faaf81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853469"
 ---
-# <a name="project-subtypes"></a>Proje alt türleri
-Proje subtypes özelleştirme veya proje sistemleri davranış flavor izin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Özelleştirmeleri içeren proje dosyasında ekleme veya öğeleri filtreleme ek verileri kaydetme **Yeni Öğe Ekle** iletişim kutusu, derlemeler nasıl hata ayıklaması ve dağıtılan, denetleme ve projeyi genişletme **özelliği Sayfaları** iletişim kutusu. VSPackages proje alt türleri COM birleştirme kullanarak uygular.  
+# <a name="project-subtypes"></a>Proje Alt Türleri
+Proje alt türleri özelleştirebilirsiniz veya proje sistemleri davranışını flavor izin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Özelleştirmeleri içeren proje dosyasında ekleme veya öğeleri filtreleme ek veri kaydetme **Yeni Öğe Ekle** iletişim kutusunda, derlemeleri nasıl hata ayıklama ve dağıtılan, denetleme ve proje genişletme **özelliği Sayfaları** iletişim kutusu. VSPackage proje alt türleri COM toplama kullanarak uygulayın.  
   
 > [!NOTE]
->  Visual C++ proje sistemi proje alt türleri desteklemez. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kendi SQL Server ve akıllı aygıt projeleri uygulamak için proje subtypes kullanır.  
+>  Visual C++ proje sistemi proje alt türleri desteklemez. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proje alt türleri kendi SQL Server ve akıllı cihaz projeleri uygulamak için kullanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Proje Alt Türleri Tasarımı](../../extensibility/internals/project-subtypes-design.md)  
- Proje subtypes kavramını açıklar.  
+ Proje alt türleri kavramını açıklar.  
   
  [Proje Alt Türlerinin Başlatılma Sırası](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)  
- Programsal proje alt başlatma sırası tarafından açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı.  
+ Programlı proje alt başlatma sırası tarafından açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortam.  
   
  [Proje Alt Türleri Tarafından Genişletilen Özellikler ve Metotlar](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)  
- Ayrıntılı açıklamalar için proje subtypes kullanarak en sık genişletilmiş yöntemleri ve özellikleri sağlar.  
+ Proje alt türleri kullanarak en sık genişletilmiş yöntemleri ve özellikleri ayrıntılı açıklamalar sağlar.  
   
  [MSBuild Proje Dosyasında Verileri Kalıcı Hale Getirme](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)  
- Proje dosyası verilerde sürdürmek nasıl ve nasıl kullanılacağını açıklar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> proje alt toplama düzeyleri arasında proje dosyasındaki verileri korumak için.  
+ Bir proje dosyasında verileri kalıcı hale getirmenize nasıl ve nasıl kullanılacağını açıklar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> proje alt toplama düzeyleri arasında proje dosyasındaki verileri koruma.  
   
  [Proje Özelliği Kullanıcı Arabirimi](../../extensibility/internals/project-property-user-interface.md)  
- Proje subtypes proje nasıl değiştirebileceğiniz anlatılmaktadır **özellik sayfaları** iletişim kutusu.  
+ Proje alt türleri proje nasıl değiştireceğinizi açıklar **özellik sayfaları** iletişim kutusu.  
   
  [Temel Projenin Nesne Modelini Genişletme](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)  
- Proje subtypes Otomasyon nesne modeli genişletmek için Otomasyon Extender'larının nasıl kullanabileceğiniz hakkında bilgi sağlar.  
+ Proje alt türleri Otomasyon nesne modeli genişletmek için Otomasyon Genişleticileri nasıl kullanabileceğiniz hakkında bilgi sağlar.  
   
  [Yeni Öğe Ekleme İletişim Kutusuna Katkıda Bulunma](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)  
- Öğeleri eklemeyi açıklar **Yeni Öğe Ekle** iletişim kutusu.  
+ Öğeler ekleneceğini açıklar **Yeni Öğe Ekle** iletişim kutusu.  
   
  [Proje Dosyalarında Verileri Kaydetme](../../extensibility/saving-data-in-project-files.md)  
- Proje alt nasıl kaydedebilir ve yönetilen paket Framework (MPF) kullanarak proje dosyasında alt özgü verileri almak açıklanmaktadır.  
+ Proje alt kaydedebilir ve yönetilen paket Framework (MPF) kullanarak proje dosyasındaki alt özgü verileri almak nasıl açıklar.  
   
  [Özelleştirilmiş Dağıtım İşleme](../../extensibility/internals/handling-specialized-deployment.md)  
- Proje subtypes özel dağıtım davranışı uygulayarak nasıl sağlayabilir açıklar <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> arabirimi.  
+ Proje alt türleri özelleştirilmiş dağıtım davranışı uygulayarak nasıl sağlayabilirsiniz açıklar <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> arabirimi.  
   
  [Özellik Sayfaları Ekleme ve Kaldırma](../../extensibility/adding-and-removing-property-pages.md)  
- Ekleme ve özellik sayfaları Proje Tasarımcısı'nda kaldırma açıklar.  
+ Ekleme ve özellik sayfaları, Proje Tasarımcısı'nda kaldırma açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Proje Türleri](../../extensibility/internals/project-types.md)  
- Ayrıntılı konulara bağlantılar sağlanır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeleri.
+ Gerçekleşen konulara bağlantılar sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeleri.

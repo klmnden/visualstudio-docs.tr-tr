@@ -7,23 +7,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c342b738269acbb4b2b089fc8e33a0fe9dc770dd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885604"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Veritabanı nesnesi için şema bilgileri alınamadı \<nesne adı >
 
-Bu ileti genellikle bir nesneyi görünür **Sunucu Gezgini** veya **Database Explorer** panoya kopyalandı, veritabanından silinmiş ve Tasarımcısı yapıştırılan. Veritabanı nesnesi artık mevcut olmadığından bu ileti görüntülenir.
+Bu ileti genellikle bir nesne görüntülendiğinde **Sunucu Gezgini** veya **veritabanı Gezgini** panoya kopyalandı, veritabanından silinir ve ardından tasarımcının üzerine yapıştırılabilir. Veritabanı nesnesi artık mevcut olmadığından, bu ileti görünür.
 
-Bu hatayı düzeltmek için seçin **Tamam** iletişim kutusunu kapatmak için.
+Bu hatayı düzeltmek için seçin **Tamam** iletişim kutusunu kapatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [O/R Tasarımcısı iletileri](../data-tools/o-r-designer-messages.md)
-- [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -2,7 +2,6 @@
 title: SAL'ı Anlama
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -10,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a219590c20e2ec2bb77cc3ffa59bb6249cc52dfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889926"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 
@@ -43,7 +42,7 @@ void * memcpy(
 Bu işlevin ne yaptığını anlayabilirsiniz? Bir işlev uygulanan ya da adlı programı doğruluğunu sağlamak için belirli özellikleri korunmalıdır. Yalnızca bir örnekteki gibi bir bildirim bakarak, bunların ne olduğunu bilmiyorum. SAL ek açıklamalar olmadan, belge veya kod açıklamaları dayalı etmesi gerekir. İçin MSDN belgelerine işte `memcpy` söylüyor:
 
 > "Kopya kaynak hedefe kopyalanmaya bayt sayısı. Kaynak ve hedef çakışırsa, memcpy davranışı tanımsızdır. Çakışan bölgeleri işlemek için memcpy kullanın.
-> **Güvenlik Notu:** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için arabellek taşmalarını bkz."
+> **Güvenlik Notu:** Boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için arabellek taşmalarını bkz."
 
 Belgeler, birkaç kodunuzu program doğruluğunu sağlamak için belirli özelliklerini korumak sahip Öner bit bilgi içerir:
 
@@ -120,7 +119,7 @@ Bu uygulama, ortak bir kapalı tek hata içeriyor. Neyse ki, kod yazar SAL arabe
 
     > **Geçersiz parametre değeri C6387** 'pInt', '0' olabilir: Bu 'InCallee' işlevinin belirtimine bağlı kalmıyor.
 
-### <a name="example-the-in-annotation"></a>Örnek: \_içinde\_ ek açıklaması
+### <a name="example-the-in-annotation"></a>Örnek: \_İçinde\_ ek açıklaması
 
 `_In_` Ek açıklama gösterir:
 
@@ -158,7 +157,7 @@ void BadInCaller()
 
 Bu örneği temel Visual Studio Kod Analizi kullanırsanız arayanlar için başlatılmış olan bir arabellek için Null olmayan bir işaretçi geçtiğini doğrular `pInt`. Bu durumda, `pInt` işaretçisi, NULL olamaz.
 
-### <a name="example-the-inopt-annotation"></a>Örnek: \_içinde\_iyileştirilmiş\_ ek açıklaması
+### <a name="example-the-inopt-annotation"></a>Örnek: \_İçinde\_iyileştirilmiş\_ ek açıklaması
 
 `_In_opt_` aynı `_In_`, giriş parametresinin NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
 
@@ -186,7 +185,7 @@ void InOptCaller()
 
 Visual Studio Kod Analizi arabellek erişmeden önce işlevi için NULL denetimleri doğrular.
 
-### <a name="example-the-out-annotation"></a>Örnek: \_kullanıma\_ ek açıklaması
+### <a name="example-the-out-annotation"></a>Örnek: \_Kullanıma\_ ek açıklaması
 
 `_Out_` bir öğeyi buffer'a işaret eden bir NULL olmayan işaretçi geçirilir ve işlev öğe başlatır sık karşılaşılan bir senaryodur destekler. Çağıranın çağırmadan önce arabellek başlatmak zorunda değildir; Çağrılan işlev döndürülmeden önce başlatmak üzere vaat eder.
 
@@ -212,7 +211,7 @@ void OutCaller()
 
 Visual Studio kod analizi aracı doğrulama çağıran bir arabellek için NULL olmayan bir işaretçi geçirir `pInt` ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
 
-### <a name="example-the-outopt-annotation"></a>Örnek: \_kullanıma\_iyileştirilmiş\_ ek açıklaması
+### <a name="example-the-outopt-annotation"></a>Örnek: \_Kullanıma\_iyileştirilmiş\_ ek açıklaması
 
 `_Out_opt_` aynı `_Out_`, parametresi NULL olmasına izin verilen ve bu nedenle, işlev bu denetlemelisiniz hariç.
 
@@ -361,7 +360,7 @@ void OutPtrOptCaller()
 
 Visual Studio Kod Analizi doğrulama Bu işlev null önce denetler `*pInt` referans edildi ve döndürülmeden önce arabellek işlevi tarafından başlatılır.
 
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Örnek: \_başarı\_ birlikte ek açıklama \_çıkış\_
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Örnek: \_Başarı\_ birlikte ek açıklama \_çıkış\_
 
 Ek açıklamalar, çoğu nesnelere uygulanabilir.  Özellikle, tam bir işlev açıklama ekleyebilirsiniz.  Bir işlev en belirgin özelliklerini, başarılı veya başarısız, biridir. Ancak bir arabellek boyutuna arasındaki ilişkiyi gibi C/C++ işlevi başarı veya başarısızlık express olamaz. Kullanarak `_Success_` ek açıklama, bir işlev için hangi başarının neye benzediğini söyleyebilirsiniz.  Parametre `_Success_` ek açıklama olduğunu da true olduğunda işlevi başarılı olduğunu belirten bir ifade. İfade, ek açıklama ayrıştırıcının işleyebilir herhangi bir şey olabilir. İşlev başarılı olduğunda işlev döndürdükten sonra ek açıklamalar etkilerini yalnızca geçerlidir. Bu örnek gösterir nasıl `_Success_` etkileşimde `_Out_` doğru şeyleri yapacakları konusunda. Anahtar sözcüğünü kullanabilirsiniz `return` dönüş değerini göstermek için.
 

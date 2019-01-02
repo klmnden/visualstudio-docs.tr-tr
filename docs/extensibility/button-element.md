@@ -1,9 +1,6 @@
 ---
 title: Button öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 128016b892206db64a5295c8c15b26b87637b530
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d4bfa27ac2a71e53418ac1be1f9a377f06aede7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870183"
 ---
 # <a name="button-element"></a>Button öğesi
-Kullanıcının etkileşime geçtiği bir öğe tanımlar. Düğmeler, farklı türde olabilir: düğme, MenuButton ve SplitDropDown.  
+Kullanıcının etkileşime geçtiği bir öğe tanımlar. Düğmeler, farklı türde olabilir: Düğme, MenuButton ve SplitDropDown.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,7 +41,7 @@ Kullanıcının etkileşime geçtiği bir öğe tanımlar. Düğmeler, farklı t
 |---------------|-----------------|  
 |GUID|Gerekli. GUID/ID komut tanımlayıcısı GUİD'si.|  
 |kimlik|Gerekli. Kimliği bir GUID/ID komut tanımlayıcısı.|  
-|önceliği|İsteğe bağlı. Bir sayısal değer yönelik önceliği belirtir.|  
+|öncelik|İsteğe bağlı. Bir sayısal değer yönelik önceliği belirtir.|  
 |türü|İsteğe bağlı. Düğme türünü belirten bir numaralandırılmış değeri.<br /><br /> Belirtilmemişse, düğme kullanır.<br /><br /> Düğme<br /> Araç çubuklarında (genellikle icon bir düğme olarak), menüler ve bağlam menüleri görünür bir standart komutu.<br /><br /> MenuButton<br /> Komut yürütme değil, ancak başka bir menü üreten bir menü öğesi.<br /><br /> SplitDropDown<br /> Microsoft Word standart araç çubuğundaki Geri Al ve Yinele düğmeler gibi denetimler.|  
 |Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

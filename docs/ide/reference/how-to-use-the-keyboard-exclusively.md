@@ -1,9 +1,8 @@
 ---
-title: 'Nasıl yapılır: klavyeyi özel olarak kullanma'
+title: 'Nasıl Yapılır: Yalnızca klavyeyi kullanma'
 description: Varsayılan kısayol tuş birleşimleri gidin ve Visual Studio tümleşik geliştirme ortamında (IDE) kodu daha kolay hale getirmek için kullanmayı öğrenin.
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -18,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874465"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl yapılır: klavyeyi özel olarak kullanma
+# <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl Yapılır: Yalnızca klavyeyi kullanma
 
 > [!TIP]
 > Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.

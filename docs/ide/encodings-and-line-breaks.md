@@ -2,7 +2,6 @@
 title: Kodlama ve satır sonu karakterleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -19,18 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 11a70e214362d61fa54e83182bec7cc128905b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052015"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847707"
 ---
 # <a name="encodings-and-line-endings"></a>Kodlamalar ve satır sonları
 
 Visual Studio'da satır sonlarını olarak şu karakterleri yorumlanır:
 
-- 000 D + 000A Unicode karakterler, satır başı ve satır besleme CR LF:
+- CR LF: Satır başı ve satır besleme, 000 D + 000A Unicode karakterler
 
 - LF: Satır besleme, Unicode karakter 000A
 

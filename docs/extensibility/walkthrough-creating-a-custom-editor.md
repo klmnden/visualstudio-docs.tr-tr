@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: özel düzenleyici oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir özel düzenleyici oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9110e1c2ac6c39898f7dbbd6f9f4412ebcba278
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8656f14f3a6c9cd52b73ac0fdd3573d008c7aa0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847160"
 ---
-# <a name="walkthrough-create-a-custom-editor"></a>İzlenecek yol: özel düzenleyici oluşturma
+# <a name="walkthrough-create-a-custom-editor"></a>İzlenecek yol: Özel düzenleyici oluşturma
 VSPackage proje şablonu basit bir özel düzenleyici, C++'da oluşturabilirsiniz. VSPackage proje şablonu, artık C# veya Visual Basic projeleri destekler. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  

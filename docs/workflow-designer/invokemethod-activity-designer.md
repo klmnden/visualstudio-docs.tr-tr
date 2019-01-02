@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - InvokeMethod etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946951"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod Etkinlik Tasarımcısı
 
@@ -35,7 +34,7 @@ Erişim **InvokeMethod** etkinlik Tasarımcısı'nda **Temelleri** kategorisi **
 
 Aşağıdaki tabloda <xref:System.Activities.Statements.InvokeMethod> özelliklerini ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzunda düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.InvokeMethod> etkinlik. InvokeMethod varsayılan değerdir.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak en iyisidir.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Doğru|Etkinlik yürütüldüğünde çağrılacak yöntemin adı. Çağrılan yöntem olarak bildirilmelidir **genel**. Bu özellik, Tasarımcı yüzeyinde düzenlenebilir ve zorunludur.|
@@ -57,7 +56,7 @@ Parametreleri kaydetmek için algoritma <xref:System.Activities.Activity.CacheMe
 
 3.  Yinelemek <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> koleksiyonu ve her bağımsız değişken kaydedin.
 
-Sonuçta elde edilen özel durum türüdür <xref:System.Activities.InvalidWorkflowException> şu iletiyle: 'InvokeMethod': 'TargetObject' adıyla bir değişken RuntimeArgument veya zaten bir DelegateArgument bulunmaktadır. Adları bir ortam kapsamı içinde benzersiz olmalıdır.
+Sonuçta elde edilen özel durum türüdür <xref:System.Activities.InvalidWorkflowException> şu ileti ile: 'InvokeMethod': Bir değişken RuntimeArgument veya zaten bir DelegateArgument 'TargetObject' adıyla var. Adları bir ortam kapsamı içinde benzersiz olmalıdır.
 
 Bu kısıtlama geçerli değildir <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> ve <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>. İş akışı bağımsız değişkenleri olmadığınız ve bu nedenle kayıtlı olmayan <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> koleksiyonunu <xref:System.Activities.Statements.InvokeMethod> etkinliğinde <xref:System.Activities.Activity.CacheMetadata%2A> yöntemi.
 

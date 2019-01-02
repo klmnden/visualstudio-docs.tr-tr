@@ -4,8 +4,7 @@ ms.custom: ''
 ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
@@ -13,14 +12,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37aeec3ffc0505ee37e1658d01912837f06096d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953432"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD İşleme
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -387,6 +386,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

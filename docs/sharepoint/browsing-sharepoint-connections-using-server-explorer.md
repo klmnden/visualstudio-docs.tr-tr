@@ -1,15 +1,10 @@
 ---
 title: Sunucu Gezgini kullanarak SharePoint bağlantılarına gözatma | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SharePointExplorer.SharePointConnection
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,40 +16,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e897469eee33a1e4ee48b9096714b4213c099a8f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931365"
 ---
-# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Sunucu Gezgini kullanarak SharePoint bağlantılarına göz
-  Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu yöntemi kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. Liste tanımları ve içerik türleri gibi SharePoint site bileşenlerini adlı bir düğüm görünür **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda seçin **Görünüm** > **Sunucu Gezgini**. SharePoint site bileşenlerini görüntüleme ek olarak, öğeleri kaldırmak, özelliklerini görüntülemek veya kısayol menüsünden komutları kullanarak ağaç görünümü yenileyin.  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın
+  Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu tekniği kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. SharePoint site bileşenlerini liste tanımları ve içerik türleri gibi görünen adlı bir düğüm **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda, **görünümü** > **Sunucu Gezgini**. SharePoint site bileşenlerini görüntülenmesinin yanı sıra öğeleri kaldırma, özelliklerini görüntülemek veya kısayol menüsünden komutlarını kullanarak ağaç görünümü yenileyin.  
   
 > [!IMPORTANT]  
->  Bir SharePoint sitesine göz atmak için SharePoint site koleksiyonunun bir yönetici olması ve Visual Studio'yı bir yerel bilgisayarda yönetici olarak çalıştırıyor olmanız gerekir. Site Aksi takdirde görünür **Sunucu Gezgini**, ancak, düğüm genişletilemiyor. Site koleksiyonu yöneticisi olup olmadığını doğrulamak için siteyi bir web tarayıcısında Aç Aç **Site eylemleri** menüsünde seçin **Site izinleri**ve ardından **izinleri: Takım Site** sayfasında, **Site koleksiyonu yöneticileri** komutunu **Yönet** Şerit üzerindeki Grup. Site koleksiyonu yöneticisi varsa adınızı metin kutusunda görüntülenir. Varsa **Site koleksiyonu yöneticileri** komutu Şerit üzerindeki Yönet grubundaki görünmüyor, site koleksiyonu için bir yönetici değil ve site yöneticisinden uygun izinleri almak gerekir.  
+>  Bir SharePoint sitesi göz atmak için SharePoint site koleksiyonu yöneticisi olmalı ve Visual Studio yerel bilgisayarın yönetici olarak çalıştırıyor olmalısınız. Site Aksi takdirde, görünür **Sunucu Gezgini**, ancak kendi düğüm genişletilemiyor. Site koleksiyonu yöneticisi olup olmadığını doğrulamak için bir web tarayıcısında, açık sitesini açın **Site eylemleri** menüsünde seçin **Site izinleri**ve ardından **izinleri: Ekip sitesi** sayfasında **Site koleksiyonu yöneticileri** komutunu **Yönet** Şeritteki grubu. Bir site koleksiyonu yöneticisi olduğunuz adınızı metin kutusunda görüntülenir. Varsa **Site koleksiyonu yöneticileri** komut grubu Yönet Şerit üzerindeki görünmüyorsa, site koleksiyonu için Yönetici değilseniz ve site yöneticisinden uygun izinleri almak.  
   
-## <a name="server-explorer-nodes"></a>Sunucu Gezgini düğümleri
- Her bir SharePoint sitesi bileşeninin bir düğüm tarafından temsil edilen **Sunucu Gezgini** ağaç görünümü altında **SharePoint bağlantıları**. Örneğin, varsayılan SharePoint siteleri görüntüler bir tartışma türünü temsil eder tartışma adlı bir içerik türü dahil **tartışmalara** SharePoint sitesi sayfası. Tartışma içerik türü birden fazla alan içeriyor. Bu alanları görüntülemek için **Sunucu Gezgini**, genişletin **içerik türü** düğümünü ve ardından **tartışma** düğümü. Altında olan gövdesi, tartışma konu ve başlık gibi birkaç alan düğümü.  
+## <a name="server-explorer-nodes"></a>Sunucu Gezgini düğümü
+ Her bir SharePoint sitesi bileşeninin bir düğüm tarafından temsil edilen **Sunucu Gezgini** ağaç görünümü altında **SharePoint bağlantıları**. Örneğin, görüntüleyen bir tartışma türünü temsil eden bir tartışma olarak adlandırılan bir içerik türü varsayılan SharePoint sitelerinde yer **tartışmaları** SharePoint sitesinin sayfası. Tartışma içerik türü, çeşitli alanları içerir. Bu alanları görüntülemek için **Sunucu Gezgini**, genişletme **içerik türü** düğümünü ve ardından **tartışma** düğümü. Altında bu var. gövdesi ve tartışma konu başlığı gibi birkaç alan düğümü  
   
-## <a name="node-shortcut-menu-commands"></a>Düğüm kısayol menü komutları
- Her düğümün düğümünü sağ tıklayarak veya seçmeden ve ardından erişim bir kısayol menüsü sahip **Shift**+**F10** anahtarları. Düğüm komutları aşağıdakileri içerebilir:  
+## <a name="node-shortcut-menu-commands"></a>Düğümün kısayol menü komutları
+ Her düğüm, düğüme sağ veya bunu seçerek ve ardından erişim bir kısayol menüsünde vardır **Shift**+**F10** anahtarları. Düğüm komutları aşağıdakileri içerebilir:  
   
 |Komut adı|Açıklama|  
 |------------------|-----------------|  
-|Yenile|Ağaç görünümü düğümünde görüntülenen son tarihten oluşmuş olabilecek değişiklikleri yansıtacak şekilde güncelleştirir.|  
-|Sil|Seçili düğümün ağaç görünümünden kaldırır. **Not:** bu komut yalnızca altında listelenen SharePoint bağlantıları etkin **SharePoint bağlantıları** düğümü.|  
-|Özellikler|Seçili konumda kullanılabilir özelliklerini görüntüler **özellikleri** penceresi. Salt okunur tüm özellikleri ve her düğümün kendisiyle ilişkili özellikler vardır.|  
-|Bağlantı Ekle|Gözatmak istediğiniz bir SharePoint sitesi belirtmenize olanak tanır. Kullanılabilir **SharePoint bağlantıları** düğümünü ve alt site düğümleri.|  
-|Tarayıcıda görüntüle|Seçilen Liste Web tarayıcısında görüntüler. Bu komut altında bazı listelerde kullanılabilir **listeler** bulunan düğüm **listeler ve kitaplıklar**.|  
+|Yenile|Ağaç görünümünde düğümünde görüntülenen son tarihten oluşmuş olabilecek değişiklikleri yansıtacak şekilde güncelleştirir.|  
+|Sil|Seçili düğüm ağacı görünümden kaldırır. **Not:**  Bu komut yalnızca altında listelenen SharePoint bağlantıları etkin **SharePoint bağlantıları** düğümü.|  
+|Özellikler|Seçili konumda kullanılabilir özelliklerini görüntüler **özellikleri** penceresi. Tüm salt okunur özelliklerini olduğunu ve her düğüm ile ilişkili özellikler.|  
+|Bağlantı Ekle|Gözatmak istediğiniz bir SharePoint sitesi belirtmenizi sağlar. Kullanılabilir **SharePoint bağlantıları** düğümü ve alt site düğümleri.|  
+|Tarayıcıda görüntüle|Seçili listedeki Web tarayıcınızda görüntülenir. Bu komut, bazı listelerinde altında kullanılabilir **listeler** bulunan düğüm **listeler ve kitaplıklardaki**.|  
   
 ## <a name="related-topics"></a>İlgili konular
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: SharePoint bağlantıları Ekle Kaldır](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Yeni bir SharePoint sitesi eklemek için gereken adımları açıklar **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**.|  
+|[Nasıl yapılır: SharePoint bağlantıları Ekle Kaldır](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Yeni bir SharePoint sitesine eklemek için gereken adımları açıklar **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

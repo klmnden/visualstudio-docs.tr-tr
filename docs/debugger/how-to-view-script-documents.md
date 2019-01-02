@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: betik belgelerini görüntüleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Betik belgelerini görüntüleme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,37 +15,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867738"
 ---
-# <a name="how-to-view-script-documents"></a>Nasıl Yapılır: Betik Belgelerini Görüntüleme
-Önceki sürümlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], sunucu tarafı komut dosyasından oluşturulan istemci tarafı komut dosyaları komut dosyası Gezgini penceresinde görüldü. Böylece istemci tarafı komut dosyası kullanılabilirliğini her zaman açık değildi betik Gezgini penceresi genellikle, gizlenmiş.  
+# <a name="how-to-view-script-documents"></a>Nasıl Yapılır: Betik belgelerini görüntüleme
+Önceki sürümlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], sunucu tarafı betiğinden oluşturulan istemci tarafı komut dosyaları betik Gezgini penceresinde görüntülenmektedir. İstemci tarafı komut dosyası kullanılabilirliğini her zaman açık değil, betik Gezgini penceresi genellikle, gizli olduğu.  
   
- İçinde [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], sunucu tarafı komut dosyasından oluşturulan istemci tarafı komut dosyası dosyaları görünür, Çözüm Gezgini'nde, varsayılan olarak görünür. Betik Gezgini penceresi ortadan kaldırılmıştır.  
+ İçinde [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], sunucu tarafı betiğinden oluşturulan istemci tarafı komut dosyaları, varsayılan olarak görünen Çözüm Gezgini'nde görünür. Betik Gezgini penceresi ortadan kaldırılmıştır.  
   
- Yalnızca hata ayıklama modunda veya kesme modunda olduğunda istemci tarafı komut dosyası dosyalar görülebilir. Görüntülendikleri **betik belgelerini** düğümü.  
+ Yalnızca hata ayıklama modunda veya kesme modunda olduğunda istemci tarafı betiklerinin görülebilir. Görünürler **betik belgelerini** düğümü.  
   
- Sunucu tarafı komut dosyaları her zaman görünür. Görüntülendikleri  **\<Web sitesi Pathname >** düğümü. Düğümün adını bu örneğe benzer: `c:\...\Website2\`  
+ Sunucu tarafı komut dosyaları her zaman görünürdür. Görünürler  **\<Web sitesi Pathname >** düğümü. Düğümün adını şu örnektekine benzer: `c:\...\Website2\`  
   
-### <a name="to-view-a-server-side-script-document"></a>Sunucu tarafı komut dosyası belgeyi görüntülemek için  
+### <a name="to-view-a-server-side-script-document"></a>Bir sunucu tarafı komut dosyası belgesini görüntülemek için  
   
-1.  İçinde **Çözüm Gezgini**, açık  **\<Web sitesi Pathname >** düğümü.  
+1.  İçinde **Çözüm Gezgini**açın  **\<Web sitesi Pathname >** düğümü.  
   
-2.  Görüntülemek istediğiniz komut dosyasını çift tıklatın.  
+2.  Görüntülemek istediğiniz komut dosyasına çift tıklayın.  
   
-     Sunucu tarafı komut dosyası kaynağı penceresinde açılır.  
+     Sunucu tarafı komut dosyası, bir kaynak penceresinde açılır.  
   
 ### <a name="to-view-a-client-side-script-document"></a>İstemci tarafı komut dosyası belgeyi görüntülemek için  
   
-1.  İçinde **Çözüm Gezgini**, açık **betik belgelerini** düğümü.  
+1.  İçinde **Çözüm Gezgini**açın **betik belgelerini** düğümü.  
   
-2.  Görüntülemek istediğiniz komut dosyasını çift tıklatın.  
+2.  Görüntülemek istediğiniz komut dosyasına çift tıklayın.  
   
-     İstemci tarafı komut dosyası kaynağı penceresinde açılır.  
+     İstemci tarafı komut dosyası, bir kaynak penceresinde açılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)
+ [Hata Ayıklayıcıda Verileri Görüntüleme](../debugger/viewing-data-in-the-debugger.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: derlemede ortam değişkenlerini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Derlemede ortam değişkenlerini kullanma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93e77ee2a3ca9a3c4ef3f3ceb7491e1b2ecdf074
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845401"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl yapılır: derlemede ortam değişkenlerini kullanma
+# <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl Yapılır: Derlemede ortam değişkenlerini kullanma
 Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların değil bilgileri kullanarak yapı seçeneklerini ayarlamak gereklidir. Bu bilgiler genellikle ortam değişkenleri olarak depolanır.  
   
 ## <a name="reference-environment-variables"></a>Başvuru ortam değişkenleri  
@@ -67,4 +65,4 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
 ## <a name="see-also"></a>Ayrıca bkz.  
 [MSBuild ](../msbuild/msbuild.md)  
 [MSBuild özellikleri](../msbuild/msbuild-properties.md)  
-[Nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[Nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

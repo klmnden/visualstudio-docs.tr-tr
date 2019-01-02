@@ -2,19 +2,18 @@
 title: Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883032"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI testlerinde HTML5 denetimleri kullanma
 
@@ -49,9 +48,9 @@ Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denet
 
 Bkz: [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) onaylama üzerinde ekleyebileceğiniz özellikler listesi.
 
- **Arama özellikleri:** arama özelliklerini `HtmlAudio` olan `Id`, `Name` ve `Title`.
+ **Arama özellikleri:** Arama özelliklerini `HtmlAudio` olan `Id`, `Name` ve `Title`.
 
- **Filtre özellikleri:** filtre özelliklerini `HtmlAudio` olan `Src`, `Class`, `ControlDefinition` ve `TagInstance`.
+ **Filtre özellikleri:** Filtre özelliklerini `HtmlAudio` olan `Src`, `Class`, `ControlDefinition` ve `TagInstance`.
 
 > [!NOTE]
 > Arama ve duraklatma süreyi önemli ölçüde fazla olabilir. Kayıttan yürütme sırasında kodlanmış UI testi belirtilen süre içinde kadar bekleyin `(TimeSpan)` ses duraklatmadan önce. Bazı özel durumda tarafından duraklatma komutunu ulaşmaktan önce belirtilen zaman geçtiyse, bir özel durum oluşturulur.
@@ -73,15 +72,15 @@ Bkz: [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElem
 
 Bkz: [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) onaylama üzerinde ekleyebileceğiniz özellikler listesi.
 
- **Arama özellikleri:** arama özelliklerini `HtmlVideo` olan `Id`, `Name` ve `Title`.
+ **Arama özellikleri:** Arama özelliklerini `HtmlVideo` olan `Id`, `Name` ve `Title`.
 
- **Filtre özellikleri:** filtre özelliklerini `HtmlVideo` olan `Src`, `Poster`, `Class`, `ControlDefinition` ve `TagInstance`.
+ **Filtre özellikleri:** Filtre özelliklerini `HtmlVideo` olan `Src`, `Poster`, `Class`, `ControlDefinition` ve `TagInstance`.
 
 > [!NOTE]
 > Geri veya ileri sarma-30s veya +30s etiketleri kullanarak video, bu uygun zaman aramak için toplanacak.
 
 ## <a name="progressbar"></a>ProgressBar
- **ProgressBar denetimi:** ProgressBar olan interactable olmayan bir denetim. Onaylamalar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini. Daha fazla bilgi için [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **ProgressBar denetimi:** ProgressBar interactable olmayan bir denetimdir. Onaylamalar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini. Daha fazla bilgi için [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![HTML5 ProgressBar denetimi](../test/media/codedui_html5_progressbar.png)
 

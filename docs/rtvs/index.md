@@ -3,19 +3,18 @@ title: Visual Studio için R Araçları
 description: R araçları için Visual Studio (RTVS), IntelliSense, hata ayıklama ve uzak çalışma alanları dahil olmak üzere birçok dil özellikleri sağlayan ücretsiz, açık kaynaklı bir uzantısıdır.
 ms.date: 11/13/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: c2ae060c889065f7f8ba543e0cb20e8ea40ec758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883087"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 

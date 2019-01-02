@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: kaynak dosyası ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Kaynak dosyası ekleme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e21aefb95dab4b4a6fdc852159c7a0f226e613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877633"
 ---
-# <a name="how-to-add-a-resource-file"></a>Nasıl yapılır: kaynak dosyası ekleme
+# <a name="how-to-add-a-resource-file"></a>Nasıl Yapılır: Kaynak dosyası ekleme
   Komutlar kaynak dosyaları eklemek için çözüm düğüm ve Çözüm Gezgini'nde özellik düğümlerin kısayol menüsünü açıktır. Daha fazla bilgi için [yerelleştirme SharePoint çözümleri](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>SharePoint çözüm genel kaynak dosyası eklemek için  
@@ -57,5 +52,3 @@ ms.locfileid: "49861195"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

@@ -1,9 +1,6 @@
 ---
 title: Üst kapsayıcı klasörleri oluşturma çözümleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889104"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Üst kapsayıcı klasörleri çözümleri oluşturun
 İçinde kaynak denetimi eklentisi API sürümü 1.2, bir kullanıcı bir çözüm içindeki tüm web projeleri için tek bir kök kaynak denetimi hedef belirtebilirsiniz. Bu tek köklü bir süper birleşik kök (SUR) olarak adlandırılır.  
@@ -52,7 +49,7 @@ ms.locfileid: "49830698"
 |Özellik|Kaynak Denetimi Eklentisi API sürümü 1.1|Kaynak Denetimi Eklentisi API sürümü 1.2|  
 |-------------| - | - |  
 |SCC için çözüm ekleyin|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Kaynak-denetimli çözüme proje ekleme|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Not:** Visual Studio çözüm Sur doğrudan alt olduğunu varsayar|  
+|Kaynak-denetimli çözüme proje ekleme|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Not:**  Visual Studio çözüm Sur doğrudan alt olduğunu varsayar|  
   
 ## <a name="examples"></a>Örnekler  
  Aşağıdaki tabloda, iki örnek listeler. Her iki durumda da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcı kadar kaynak denetimi altında bir çözüm için bir hedef konum istenir *user_choice* hedef olarak belirtilir. User_choice belirtildiğinde, çözüm ve iki proje kaynak denetimi hedefler için kullanıcıya sormadan eklenir.  

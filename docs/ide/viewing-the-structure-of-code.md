@@ -1,8 +1,7 @@
 ---
-title: Sınıf görünümü kullanarak kod yapısını görüntüleme, hiyerarşi, Nesne Tarayıcısı ve kod tanımı penceresi çağırın
+title: Sınıf görünümü kullanarak kod yapısını görüntüleme, kod tanımı penceresi hiyerarşi ve Nesne Tarayıcısı arama
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -27,160 +26,160 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880919"
 ---
-# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Windows farklı aracı kullanarak kod yapısını görüntüleme
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Farklı araç pencerelerini kullanarak kod yapısını görüntüleme
 
-Sınıflar ve üyeleri de dahil olmak üzere çeşitli araç pencereleri kullanarak Visual Studio'da inceleyebilirsiniz **sınıf görünümü**, **çağrı hiyerarşisi**, **Nesne Tarayıcısı**ve **Kod tanımı** (yalnızca C++). Bu araç pencereleri Visual Studio projeleri, .NET Framework bileşenlerini, COM bileşenleri, dinamik bağlantı kitaplığı (DLL), kodda inceleyebilirsiniz ve kitaplıkları (TLB) yazın.
+Sınıfları ve üyeleri dahil olmak üzere çeşitli araç pencerelerine kullanarak Visual Studio'da inceleyebilirsiniz **sınıf görünümü**, **çağrı hiyerarşisi**, **Nesne Tarayıcısı**ve **Kod tanımı** (yalnızca C++ için). Bu araç pencereleri, kod projeleri Visual Studio, .NET Framework bileşenlerini, COM bileşenlerini, dinamik bağlantı kitaplıklarını (DLL) inceleyebilirsiniz ve tür kitaplıkları (TLB).
 
-Aynı zamanda **Çözüm Gezgini** türleri ve sembolleri Ara projelerinizi üyelerinde göz atmak için bir yöntemin çağrı hiyerarşisi, Bul simge başvurularını ve daha fazla bilgi, birden çok aracı pencereler arasında geçiş yapmak zorunda kalmadan görüntüleyin.
+Ayrıca **Çözüm Gezgini** türler ve üyeler sembolleri, arama projelerinizde göz atmak için bir yöntemin çağrı hiyerarşisini, Bul sembol başvuruları ve daha fazla birden çok araç pencereleri arasında geçiş yapmak zorunda kalmadan görüntüleyin.
 
-Visual Studio Enterprise edition varsa, kullanabileceğiniz *kod eşlemeleri* kodunuzu ve bağımlılıklarını yapısını çözümün tamamında arasında görselleştirmek için. Daha fazla bilgi için bkz: [bağımlılıkları ile kod haritalarını eşleştirmek](../modeling/map-dependencies-across-your-solutions.md).
+Visual Studio Enterprise edition kullanıyorsanız, kullanabileceğiniz *kod haritaları* yapısını kodunuzu ve bağımlılıkları arasında çözümün tamamını görselleştirmek için. Daha fazla bilgi için [kod haritaları ile bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).
 
-## <a name="class-view-visual-basic-c-c"></a>Sınıf Görünümü (Visual Basic, C# ' ta, C++)
+## <a name="class-view-visual-basic-c-c"></a>Sınıf Görünümü (Visual Basic, C#, C++)
 
-**Sınıf Görünümü** parçası olarak gösterilen **Çözüm Gezgini** ve ayrı bir pencere olarak. **Sınıf Görünümü** uygulama öğelerini görüntüler. Üst bölmede ad alanlarını, türleri, arabirimler, numaralandırmalar ve sınıfları ve üst bölmede seçili türüne ait üyeleri alt bölmesinde görüntüler. Bu pencere kullanarak, kaynak kodu üye tanımlarında taşıyabilirsiniz (veya **Nesne Tarayıcısı** öğesi çözümünüzü dışında tanımlanmışsa).
+**Sınıf Görünümü** parçası olarak gösterilen **Çözüm Gezgini** ve ayrı bir pencerede olarak. **Sınıf Görünümü** bir uygulamanın öğelerini görüntüler. Üst bölme ad alanlarını, türleri, arabirimleri, numaralandırmalar ve sınıflar ve alt bölmesinde üst bölmede seçilen türe ait üyelerini görüntüler. Bu pencere öğesini kullanarak, kaynak kodu üye tanımlarında taşıyabilirsiniz (veya **Nesne Tarayıcısı** öğe çözümünüzü dışında tanımlı ise).
 
-Alt öğelerini görüntülemek için bir proje derleme gerekmez **sınıf görünümü**. Projenizde kodu değiştirirken penceresi yenilenir.
+Alt öğeleri görüntülemek için bir proje derlemek zorunda değilsiniz **sınıf görünümü**. Kod projenizde değiştirirken penceresi yenilenir.
 
-Kod projenize proje düğümüne ve seçerek ekleyebileceğiniz **Ekle** açmak için düğmeye **Yeni Öğe Ekle** iletişim kutusu. Kod ayrı bir dosyaya eklenir.
+Kod proje düğümünü ve seçerek projenize ekleyebilirsiniz **Ekle** açmak için düğmeyi **Yeni Öğe Ekle** iletişim kutusu. Kodu ayrı bir dosyada eklenir.
 
-Projenizi kaynak kodu denetimi için işaretliyse, her **sınıf görünümü** öğesi dosya kaynak kodu durumunu belirten bir simge görüntülenir. Ortak kaynak kodu denetimi komutları gibi **kullanıma**, **iade**, ve **en son sürümü Al** öğesi için kısayol menüsünde de mevcuttur.
+Projeniz için kaynak kodu denetimi, iade edildiğinde, her **sınıf görünümü** öğesi dosyanın kaynak kodu durumunu belirten bir simge görüntüler. Ortak kaynak kodu denetimi komutları gibi **kullanıma**, **iade**, ve **en son sürümü Al** öğesi için kısayol menüsünde de mevcuttur.
 
 ### <a name="class-view-toolbar"></a>Sınıf Görünümü araç çubuğu
 
-**Sınıf görünümü** araç aşağıdakileri içerir:
+**Sınıf görünümü** araç çubuğu aşağıdakileri içerir:
 
 |||
 |-|-|
-|**Yeni klasör**|Bir sanal klasör veya sık kullanılan öğelerini düzenleyebilirsiniz alt klasörü oluşturur. Etkin çözümde kaydedilir (*.suo*) dosyası. Yeniden adlandırma veya öğenin kodunuzda sildikten sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşiden klasöre yeniden taşıyabilirsiniz.|
-|**Geri**|Daha önce seçilen öğeye gider.|
-|**İlet**|Sonraki seçilen öğeye gider.|
-|**Sınıf diyagramında görüntülemek** (yönetilen kod projeleri yalnızca)|Bir ad seçin veya yazın kullanılabilir duruma gelir **sınıf görünümü**. Bir ad alanı seçildiğinde, sınıf diyagramı içinde tüm türleri gösterilmektedir. Bir Türü seçildiğinde, sınıf diyagramı yalnızca o türünü gösterir.|
+|**Yeni klasör**|Sanal klasör veya sık kullanılan öğeleri düzenlemek alt klasör oluşturur. Etkin çözüm kaydedilmeden (*.suo*) dosyası. Yeniden adlandırma ya da kodunuzda bir öğeyi sil sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşisindeki klasörüne yeniden taşıyabilirsiniz.|
+|**Geri**|Daha önce seçilen öğe için gider.|
+|**İleriye doğru**|Seçili öğeye ileri gider.|
+|**Sınıf diyagramı görüntüle** (kod projeleri yalnızca yönetilen)|Bir ad alanı seçin veya yazın, kullanılabilir **sınıf görünümü**. Bir ad alanı seçili olduğunda, sınıf diyagramı içinde tüm türleri gösterir. Bir tür seçili olduğunda, sınıf diyagramına yalnızca bu türünü gösterir.|
 
-### <a name="class-view-settings"></a>Sınıf Görünümü Ayarları
+### <a name="class-view-settings"></a>Sınıf Görünümü ayarlar
 
-**Sınıfı görünüm ayarlarını** araç çubuğunda, aşağıdaki ayarlara sahip:
+**Sınıf görünümü ayarlar** araç çubuğunda, aşağıdaki ayarlara sahiptir:
 
 |||
 |-|-|
-|**Taban türleri Göster**|Taban türleri görüntülenir.|
-|**Türetilen türlerin Göster**|Türetilen türlerin görüntülenir.|
-|**Gizli türleri ve üyeleri Göster**|Gizli türleri ve üyeleri (istemciler tarafından kullanılmaya değil) gri açık metin olarak görüntülenir.|
-|**Genel üyeleri Göster**|Genel üyeler görüntülenir.|
-|**Korumalı Üyeleri Göster**|Korumalı üyeleri görüntülenir.|
-|**Özel üyeleri Göster**|Özel üyelerin görüntülenir.|
-|**Diğer üyeleri Göster**|Diğer tür üye görüntülenir, iç dahil olmak üzere (veya Visual Basic arkadaş) üyeleri.|
-|**Devralınan üyeleri Göster**|Devralınan üyeleri görüntülenir.|
-|**Genişletme yöntemleri Göster**|Genişletme yöntemleri görüntülenir.|
+|**Temel türleri Göster**|Temel türleri görüntülenir.|
+|**Türetilmiş türleri Göster**|Türetilmiş türler görüntülenir.|
+|**Gizli türleri ve üyeleri Göster**|Gizli türleri ve üyeleri (istemcileri tarafından kullanılmak üzere tasarlanmamıştır) açık gri metin görüntülenir.|
+|**Ortak üyeleri Göster**|Genel üye görüntüleniyor.|
+|**Korunan üyeleri Göster**|Korumalı üye görüntüleniyor.|
+|**Özel üyeleri Göster**|Özel üyeler görüntülenir.|
+|**Diğer üyeleri Göster**|Diğer türde üye görüntülenir, iç dahil olmak üzere (veya Visual Basic'te Friend) üyeler.|
+|**Devralınan üyeleri Göster**|Devralınan üye görüntüleniyor.|
+|**Uzantı yöntemleri Göster**|Genişletme yöntemleri görüntülenir.|
 
 ### <a name="class-view-shortcut-menu"></a>Sınıf Görünümü kısayol menüsü
 
-Kısayol menüsünde **sınıf görünümü** Seçili proje türüne bağlı olarak aşağıdakileri içerebilir:
+Kısayol menüsünde **sınıf görünümü** seçilen proje türünü bağlı olarak aşağıdakileri içerebilir:
 
 |||
 |-|-|
-|**Tanıma gitme**|Öğesinin tanımı veya kaynak kodundaki bulan **Nesne Tarayıcısı**, öğesi açık projeye tanımlı değil.|
-|**Tanımı Gözat**|Seçilen öğeyi görüntüler **Nesne Tarayıcısı**.|
-|**Tüm başvuruları Bul**|Seçili nesne öğesi bulur ve sonuçları görüntüler bir **Bul sonuçları** penceresi.|
-|**Filtre türü için** (yönetilen yalnızca kodu)|Yalnızca seçili türü veya ad alanı görüntüler. Filtre seçerek kaldırabilirsiniz **Temizle Bul** (**X**) düğmesine **Bul** kutusu.|
-|**Kopyala**|Öğenin tam adı kopyalar.|
-|**Alfabetik olarak sıralamak**|Alfabetik olarak türleri ve üyeleri adına göre listelenmiştir.|
-|**Üye türü göre sırala**|Türleri ve üyeleri türüne göre sırayla (sınıfları arabirimleri koyun, temsilciler arabirimleri koyun ve yöntemleri özellikleri koyun şekilde) listeler.|
-|**Üye erişimi göre sırala**|Liste türleri ve üyeleri erişim sırayla, ortak veya özel gibi yazın.|
-|**Üye türü göre Gruplandır**|Nesne türüne göre gruplara türleri ve üyeleri sıralar.|
-|**Bildirim Git** (yalnızca C++ kodu)|Tür veya üye bildirimi varsa kaynak kodunu görüntüler.|
-|**Tanıma gitme**|Tür veya üye tanımını varsa kaynak kodunu görüntüler.|
-|**Başvuru gidin**|Bir başvuru türü veya üyesi kullanılabilir durumdaysa kaynak kodunda gösterir.|
-|**Çağrı hiyerarşisini görüntüleme**|Seçili yönteminde görüntüler **çağrı hiyerarşisi** penceresi.|
+|**Tanıma Git**|Kaynak kodu ya da öğenin açıklamasını bulur **Nesne Tarayıcısı**, öğeyi projede tanımlı değil.|
+|**Tanım göz atın**|Seçili öğeyi görüntüler **Nesne Tarayıcısı**.|
+|**Tüm başvuruları Bul**|Şu anda seçili nesne öğesi bulur ve sonuçları görüntüler bir **sonuçları Bul** penceresi.|
+|**Filtre türü** (kod yalnızca yönetilen)|Yalnızca seçilen tür veya ad alanı görüntüler. Seçerek filtreyi kaldırabilirsiniz **Temizle Bul** (**X**) düğmesinin yanındaki **Bul** kutusu.|
+|**Kopyala**|Öğenin tam adını kopyalar.|
+|**Alfabetik olarak Sırala**|Türleri ve üyeleri alfabetik olarak ada göre listeler.|
+|**Üye türe göre sırala**|Türleri ve üyeleri türe göre sırayla unutmayın (sınıflar arabirimleri koyun, arabirimler, temsilciler koyun ve yöntemler, Özellikler önünde gibi) listeler.|
+|**Üye erişimine göre sırala**|Liste türleri ve üyeleri erişimlerine göre sırayla, genel veya özel gibi yazın.|
+|**Üye türüne göre grupla**|Türler ve üyeler gruplara nesne türüne göre sıralar.|
+|**Git için bildirimi** (yalnızca C++ kodu)|Türe veya üyeye bildirimi varsa kaynak kodunu görüntüler.|
+|**Tanıma Git**|Türün veya üyenin tanımı varsa kaynak kodunu görüntüler.|
+|**Başvuruya Git**|Türe veya üyeye başvuru varsa kaynak kodunu görüntüler.|
+|**Çağrı hiyerarşisini görüntüle**|Seçili yöntemi görüntüler **çağrı hiyerarşisi** penceresi.|
 
-## <a name="call-hierarchy-window-visual-basic-c-c"></a>Çağrı hiyerarşisi penceresi (Visual Basic, C# ' ta, C++)
+## <a name="call-hierarchy-window-visual-basic-c-c"></a>Çağrı hiyerarşisi penceresi (Visual Basic C#, C++)
 
-**Çağrı hiyerarşisi** penceresi gösterir burada verilen yöntemi veya özelliği olarak adlandırılır. Ayrıca, bu yöntemi tarafından çağrılmış yöntemlerini listeler. Belirtilen bir kapsamda yöntemleri arasındaki çağıran ve çağrılan ilişkiler gösterilmektedir arama grafiği birden çok düzeyi görüntüleyebilirsiniz.
+**Çağrı hiyerarşisi** penceresi gösterir burada verilen yöntemi veya özelliği olarak adlandırılır. Ayrıca, bu yönteminden çağrılan yöntemler listelenmiştir. Belirtilen kapsamda olan yöntemleri çağıran-çağrılan ilişkileri gösteren çağrı grafı birden fazla düzeyde görüntüleyebilirsiniz.
 
-Görüntüleyebileceğiniz **çağrı hiyerarşisi** bir yöntem (veya özellik veya oluşturucusu) Düzenleyicisi'nde seçerek ve ardından seçme penceresi **görünüm çağrı hiyerarşisi** kısayol menüsünde. Görüntü, aşağıdaki resimde benzemelidir:
+Görüntüleyebileceğiniz **çağrı hiyerarşisi** Düzenleyicisi'nde yöntem (veya özellik veya Oluşturucu) seçip ardından penceresi **çağrı hiyerarşisini** kısayol menüsünde. Ekran aşağıdaki görüntüye benzer olacaktır:
 
-![Çağrı hiyerarşisi penceresi Visual Studio'da](../ide/media/multiplenodes.png)
+![Visual Studio çağrı hiyerarşisi penceresi](../ide/media/multiplenodes.png)
 
-Araç çubuğundaki aşağı açılan listeyi kullanarak hiyerarşi kapsamını belirleyebilirsiniz: çözüm, geçerli projenin ya da geçerli belge.
+Araç çubuğunda yanıdaki açılan listeyi kullanarak, hiyerarşinin bir kapsam belirtebilirsiniz: çözüm, geçerli proje ya da geçerli belge.
 
-Ana bölmede yöntemi gelen ve giden çağrıları görüntüler ve **çağrısı siteleri** bölmesi, seçilen arama konumunu görüntüler. Sanal ya da soyut, üyeleri için bir **geçersiz kılmaları yöntem adı** düğümü görüntülenir. Arabirim üyeleri için bir **uygulayan yöntem adı** düğümü görüntülenir.
+Ana bölmede yöntemi gelen ve giden çağrıları görüntüler ve **çağrı siteleri** bölmesi, seçilen çağrı konumunu görüntüler. Sanal veya soyut üyeler için bir **geçersiz kılmaları yöntem adı** düğümü görüntülenir. Arabirim üyeleri için bir **uygulayan yöntem adı** düğümü görüntülenir.
 
-**Çağrı hiyerarşisi** penceresi yöntemi, bir yöntem olay işleyici eklenir veya bir temsilciye atanmış yerler dahil grup başvuruları bulamazsa. Bu başvuruları bulmak için **tüm başvuruları Bul** komutu.
+**Çağrı hiyerarşisi** penceresi yöntemi burada bir yöntem bir olay işleyicisi eklenir veya bir temsilciye atanmış basamak içeren grubu başvuruları bulamazsa. Bu başvurular bulmak için kullanın **tüm başvuruları Bul** komutu.
 
-Kısayol menüsünde **çağrı hiyerarşisi** penceresinde aşağıdaki komutları içerir:
+Kısayol menüsünde **çağrı hiyerarşisi** penceresi aşağıdakileri içerir:
 
 |||
 |-|-|
-|**Yeni bir kökü olarak Ekle**|Seçili düğümün yeni bir kök düğümü ekler.|
-|**Kök Kaldır**|Seçili kök düğümü ağaç görünümü bölmesindeki kaldırır.|
-|**Tanıma gitme**|Bir yöntem orijinal tanımına gider.|
-|**Tüm başvuruları Bul**|Projede seçili yöntemine yönelik tüm başvuruları bulur.|
-|**Kopyala**|Seçili düğümün (ancak alt düğümlerini) kopyalar.|
+|**Yeni kök olarak Ekle**|Seçili düğümü yeni bir kök düğümü ekler.|
+|**Kökü Kaldır**|Ağaç görünümü bölmesinde seçilen kök düğümü kaldırır.|
+|**Tanıma Git**|Bir yöntemin orijinal tanımına gider.|
+|**Tüm başvuruları Bul**|Projede seçilen yöntemi tüm başvurularını bulur.|
+|**Kopyala**|Seçili düğümü (ancak alt düğümlerini) kopyalar.|
 |**Yenileme**|Bilgileri yeniler.|
 
 ## <a name="BKMK_ObjectBrowser"></a> Nesne Tarayıcısı
 
-**Nesne Tarayıcısı** penceresi projelerinizde kodu açıklamalarını görüntüler.
+**Nesne Tarayıcısı** penceresi projelerinizde kod açıklamaları görüntüler.
 
-Pencerenin en üstünde açılan listeyi kullanarak görüntülemek istediğiniz bileşenleri filtreleyebilirsiniz. Özel bileşenler, yönetilen kod yürütülebilir dosyaları, kitaplık derlemeleri, tür kitaplıklarının içerebilir ve *.ocx* dosyaları. C++ özel bileşenleri eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizinine kaydedilir *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Pencerenin en üstündeki açılan listesini kullanarak görüntülemek istediğiniz bileşenleri filtreleyebilirsiniz. Yönetilen kod yürütülebilir dosyaları, Kütüphane derlemelerini, tür kitaplıkları, özel bileşenler içerebilir ve *.ocx* dosyaları. C++ özel bileşenler eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizinine kaydedilir *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
-Sol bölmesinde **Nesne Tarayıcısı** derlemeler gösterir. İçerdikleri ad alanları görüntülemek için derlemeleri genişletin ve içerdikleri türleri görüntülenecek ad alanları'nı genişletin. Bir türünü seçtiğinizde, üyelerine (örneğin, özellikleri ve yöntemleri) sağ bölmede listelenir. Sağ alt kısmında seçili öğe hakkında ayrıntılı bilgiler görüntüler.
+Sol bölmesinde **Nesne Tarayıcısı** derlemeleri gösterir. Derlemeleri içerdikleri ad alanlarını görüntülemek için genişletin ve ardından içerdikleri türleri görüntülenecek ad alanları'ı genişletin. Üyeleri (örneğin, özellikleri ve yöntemleri), bir türünü seçtiğinizde, sağ bölmede listelenir. Alt sağ bölmesinde seçtiğiniz öğe hakkındaki ayrıntılı bilgileri görüntüler.
 
-Kullanarak belirli bir öğe için arama yapabilirsiniz **arama** pencerenin üstündeki kutusu. Aramalar büyük/küçük harfe duyarsızdır. Arama sonuçları, sol bölmede görüntülenir. Bir aramayı temizlemek için tercih **Aramayı Temizle** (**X**) düğmesine **arama** kutusu.
+Kullanarak belirli bir öğe için arama yapabilirsiniz **arama** pencerenin üst kısmındaki kutusu. Aramalar büyük/küçük harfe duyarsızdır. Arama sonuçları, sol bölmede görüntülenir. Aramayı temizlemek için seçin **Aramayı Temizle** (**X**) düğmesinin yanındaki **arama** kutusu.
 
-**Nesne Tarayıcısı** yaptığınız seçimleri izini ve gidin seçimlerinizi arasında kullanarak **İleri** ve **geri** araç çubuğundaki düğmeler.
+**Nesne Tarayıcısı** yaptığınız seçimleri izini ve gidebilirsiniz seçimlerinizi arasında kullanarak **İleri** ve **geri** araç çubuğundaki düğmeler.
 
-Kullanabileceğiniz **Nesne Tarayıcısı** bir derleme başvurusu çözüm açmak için bir öğe (derleme, ad alanı, tür veya üye) ve seçerek eklemek için **Başvuru Ekle** araç çubuğunda.
+Kullanabileceğiniz **Nesne Tarayıcısı** (derleme, ad alanı, tür veya üye) bir öğe ve seçerek bir açık çözüme bir bütünleştirilmiş kod başvurusu eklemek için **Başvuru Ekle** araç çubuğunda.
 
 ### <a name="object-browser-settings"></a>Nesne Tarayıcısı ayarları
 
-Kullanarak **nesne tarayıcı ayarlarını** düğmesi araç çubuğunda, aşağıdaki görünümlerden birini belirtebilirsiniz:
+Kullanarak **nesne tarayıcısı ayarları** düğme araç çubuğunda, aşağıdaki görünümlerden birini belirtebilirsiniz:
 
 |||
 |-|-|
-|**Görünüm ad alanları**|Sol bölmede, fiziksel kapsayıcıları yerine ad alanları görüntüler. Ad alanları birden çok fiziksel kapsayıcılarında depolanan birleştirilir.|
-|**Görünüm kapsayıcıları**|Ad alanları, yerine fiziksel kapsayıcılar'ın sol bölmesinde görüntüler. **Ad alanları görüntülemek** ve **görünüm kapsayıcıları** birbirini dışlayan ayarlardır.|
-|**Taban türleri Göster**|Taban türleri görüntüler.|
-|**Türetilen türlerin Göster**|Türetilmiş tür görüntüler.|
-|**Gizli türleri ve üyeleri Göster**|Gizli görüntüler türleri ve açık gri renkte (istemciler tarafından kullanılmaya değil) üyeleri.|
-|**Genel üyeleri Göster**|Genel üyeler görüntüler.|
-|**Korumalı Üyeleri Göster**|Korumalı üyeler görüntüler.|
-|**Özel üyeleri Göster**|Özel üyelerin görüntüler.|
-|**Diğer üyeleri Göster**|Diğer iç dahil olmak üzere üyeleri (veya Visual Basic'te arkadaş) türleri üyeleri görüntüler.|
+|**Görünüm ad alanları**|Sol bölmede, fiziksel kapsayıcılar yerine ad alanları görüntüler. Ad alanlarında birden çok fiziksel kapsayıcılarda depolanan birleştirilir.|
+|**Görünüm kapsayıcıları**|Fiziksel kapsayıcılar yerine ad alanları, sol bölmede görüntülenir. **Ad alanlarını görüntülemek** ve **görünümü kapsayıcıları** birbirini dışlayan ayarlarıdır.|
+|**Temel türleri Göster**|Temel türleri görüntüler.|
+|**Türetilmiş türleri Göster**|Türetilmiş türleri görüntüler.|
+|**Gizli türleri ve üyeleri Göster**|Görüntüler gizli türleri ve üyeleri (istemcileri tarafından kullanılmak üzere tasarlanmamıştır)'açık gri metin.|
+|**Ortak üyeleri Göster**|Genel üyeler görüntüler.|
+|**Korunan üyeleri Göster**|Korumalı üyeler görüntüler.|
+|**Özel üyeleri Göster**|Özel üyeler görüntüler.|
+|**Diğer üyeleri Göster**|Diğer iç üyelerini (veya Visual Basic'te Friend) türler üyelerini görüntüler.|
 |**Devralınan üyeleri Göster**|Devralınan üyeleri görüntüler.|
-|**Genişletme yöntemleri Göster**|Genişletme yöntemleri görüntüler.|
+|**Uzantı yöntemleri Göster**|Genişletme yöntemleri görüntüler.|
 
-### <a name="object-browser-shortcut-menu-commands"></a>Nesne Tarayıcısı kısayol menü komutları
+### <a name="object-browser-shortcut-menu-commands"></a>Nesne tarayıcı kısayol menü komutları
 
-Kısayol menüsünde **Nesne Tarayıcısı** öğesi türüne bağlı olarak aşağıdaki komutları içerebilir seçili:
+Kısayol menüsünde **Nesne Tarayıcısı** öğe türüne bağlı olarak aşağıdaki komutları içerebilir seçili:
 
 |||
 |-|-|
-|**Tanımı Gözat**|Seçilen öğe için birincil düğüm gösterir.|
-|**Tüm başvuruları Bul**|Seçili nesne öğesi bulur ve sonuçları görüntüler bir **Bul sonuçları** penceresi.|
-|**Filtre türü için**|Yalnızca seçili türü veya ad alanı görüntüler. Filtre seçerek kaldırabilirsiniz **Aramayı Temizle** düğmesi.|
-|**Kopyala**|Öğenin tam adı kopyalar.|
-|**Kaldır**|Kapsam özel bir bileşen kümesi ise, seçilen bileşenin kapsamından kaldırır.|
-|**Alfabetik olarak sıralamak**|Alfabetik olarak türleri ve üyeleri adına göre listelenmiştir.|
-|**Nesne türüne göre sırala**|Türleri ve üyeleri türüne göre sırayla (sınıfları arabirimleri koyun, temsilciler arabirimleri koyun ve yöntemleri özellikleri koyun şekilde) listeler.|
-|**Nesne erişimi göre sırala**|Liste türleri ve üyeleri erişim sırayla, ortak veya özel gibi yazın.|
-|**Nesne türüne göre Gruplandır**|Nesne türüne göre gruplara türleri ve üyeleri sıralar.|
-|**Bildirim Git** (C++ projeleri yalnızca)|Tür veya üye bildirimi varsa kaynak kodunu görüntüler.|
-|**Tanıma gitme**|Tür veya üye tanımını varsa kaynak kodunu görüntüler.|
-|**Başvuru gidin**|Bir başvuru türü veya üyesi kullanılabilir durumdaysa kaynak kodunda gösterir.|
-|**Çağrı hiyerarşisini görüntüleme**|Seçili yönteminde görüntüler **çağrı hiyerarşisi** penceresi.|
+|**Tanım göz atın**|Seçili öğe için birincil düğüm gösterir.|
+|**Tüm başvuruları Bul**|Şu anda seçili nesne öğesi bulur ve sonuçları görüntüler bir **sonuçları Bul** penceresi.|
+|**Türe göre filtrele**|Yalnızca seçilen tür veya ad alanı görüntüler. Seçerek filtreyi kaldırabilirsiniz **Aramayı Temizle** düğmesi.|
+|**Kopyala**|Öğenin tam adını kopyalar.|
+|**Kaldır**|Özel bileşen kümesi kapsamı ise seçilen bileşen kapsamından kaldırır.|
+|**Alfabetik olarak Sırala**|Türleri ve üyeleri alfabetik olarak ada göre listeler.|
+|**Nesne türüne göre sırala**|Türleri ve üyeleri türe göre sırayla unutmayın (sınıflar arabirimleri koyun, arabirimler, temsilciler koyun ve yöntemler, Özellikler önünde gibi) listeler.|
+|**Nesne erişime göre sırala**|Liste türleri ve üyeleri erişimlerine göre sırayla, genel veya özel gibi yazın.|
+|**Nesne türüne göre grupla**|Türler ve üyeler gruplara nesne türüne göre sıralar.|
+|**Git için bildirimi** (yalnızca C++ projeleri)|Türe veya üyeye bildirimi varsa kaynak kodunu görüntüler.|
+|**Tanıma Git**|Türün veya üyenin tanımı varsa kaynak kodunu görüntüler.|
+|**Başvuruya Git**|Türe veya üyeye başvuru varsa kaynak kodunu görüntüler.|
+|**Çağrı hiyerarşisini görüntüle**|Seçili yöntemi görüntüler **çağrı hiyerarşisi** penceresi.|
 
 ## <a name="code-definition-window-c"></a>Kod tanımı penceresi (C++)
 
-**Kod tanımı** penceresinde seçili C++ tür veya üye tanımının etkin projesinde. Kod Düzenleyicisi'ni veya kod Görünüm penceresi tür veya üye seçilebilir.
+**Kod tanımı** penceresinde etkin projedeki seçili C++ tür veya üyenin tanımı gösterilir. Türe veya üyeye bir kod Görünümü penceresi veya Kod düzenleyicisinde seçilebilir.
 
-Bu pencere salt okunur olsa da, kesme noktaları veya yer işaretleri ayarlayabilirsiniz. Görüntülenen tanımını değiştirmeyi seçerek **tanımını Düzenle** kısayol menüsünde. Bu kod Düzenleyicisi'nde kaynak dosyasını açar ve tanımı başladığı satırına ekleme noktasını taşır.
+Bu pencereyi salt okunur olsa da, yer imlerinde veya kesme noktaları ayarlayabilirsiniz. Görüntülenen tanımı değiştirmek için seçin **tanımını Düzenle** kısayol menüsünde. Bu kaynak dosyasını Kod düzenleyicisinde açar ve tanımı başladığı noktasını satıra taşır.
 
 > [!NOTE]
 > Visual Studio 2015'ten başlayarak **kod tanımı** penceresi yalnızca C++ kodu ile kullanılabilir.
@@ -191,30 +190,30 @@ Kısayol menüsünde **kod tanımı** penceresinde aşağıdakileri içerebilir:
 
 |||
 |-|-|
-|**Hızlı Eylemler ve yapan yeniden düzenlemeler**||
+|**Hızlı Eylemler ve yeniden düzenlemeler**||
 |**Yeniden Adlandır**||
-|**Dosyaları Ekle Grafiği Oluştur**||
-|**Özet tanımı**||
-|**Tanıma gitme**|Tanımı (veya kısmi sınıflar için tanımları) bulur ve bunları görüntüler bir **Bul sonuçları** penceresi.|
+|**Ekleme dosyalarının Grafını oluştur**||
+|**Tanıma göz at**||
+|**Tanıma Git**|Tanımı (veya tanımları, parçalı sınıflar) bulur ve bunları görüntüler bir **sonuçları Bul** penceresi.|
 |**Bildirimine gidin**||
-|**Tüm başvuruları Bul**|Tür veya üye başvuruları çözümde bulur.|
-|**Çağrı hiyerarşisini görüntüleme**|Yönteminde görüntüler **çağrı hiyerarşisi** penceresi.|
-|**Geçiş üstbilgi / kod dosyası**||
-|**Testleri çalıştırma**|Projede birim testleri varsa, seçili kodu için testleri çalıştırır.|
-|**Testleri hata ayıklama**||
-|**Kesme noktası**|Bir kesme noktası (veya bir tracepoint) ekler.|
-|**İmleci çalıştırın**|Program imleç konumu için hata ayıklama modunda çalışır.|
-|**kod parçacığında**||
-|**Kesme**, **kopya**, **Yapıştır**||
+|**Tüm başvuruları Bul**|Türe veya üyeye yapılan başvurular çözümde bulur.|
+|**Çağrı hiyerarşisini görüntüle**|Yönteminde görüntüler **çağrı hiyerarşisi** penceresi.|
+|**Başlık / kod dosyası**||
+|**Testleri çalıştırın**|Projede birim testleri varsa, seçilen kod için testleri çalıştırır.|
+|**Testlerde Hata Ayıkla**||
+|**Kesme noktası**|Bir kesme noktası (veya izleme noktası) ekler.|
+|**İmlece kadar Çalıştır**|Programın hata ayıklama modunda İmleç konumuna çalıştırır.|
+|**Kod parçacığı**||
+|**Kes**, **kopyalama**, **Yapıştır**||
 |**Ek Açıklama**||
-|**Anahat Oluşturma**|Standart anahat komutları.|
+|**Anahat Oluşturma**|Standart komutlar anahat oluşturma.|
 |**Yeniden tara**||
-|**Tanımını düzenleme**|Kod penceresinde tanımına ekleme noktasını taşır.|
-|**Kodlama seçin**|Açılır **kodlama** penceresi bir dosya için kodlama ayarlayabilirsiniz.|
+|**Tanımı Düzenle**|Ekleme noktasını kod penceresinde tanım taşır.|
+|**Kodlama Seç**|Açılır **kodlama** penceresi bir dosya için kodlama ayarlayabilirsiniz.|
 
 ## <a name="document-outline-window"></a>Belge Anahattı penceresi
 
-Kullanabileceğiniz **belge anahattı** XAML sayfası Tasarımcı veya bir Windows Form Tasarımcısı gibi tasarımcı görünümlerle veya HTML sayfaları ile birlikte penceresi. Böylece form ya da sayfa mantıksal yapısını görüntüleyebilir ve son derece katıştırılmış veya gizli denetimleri bulmak Bu pencere öğeleri bir ağaç görünümünde görüntüler.
+Kullanabileceğiniz **belge anahattı** veya HTML sayfaları için XAML sayfa tasarımcıyı veya bir Windows Form Tasarımcısı gibi tasarımcı görünümleri ile birlikte penceresi. Böylece form veya sayfadaki mantıksal yapısını görüntülemek ve derin gömülü veya gizli denetimler Bu pencere öğeleri bir ağaç görünümünde görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

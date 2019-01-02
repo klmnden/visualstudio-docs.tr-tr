@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e4105d8dda298dd0235acd113a9a0612265fbc0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6db1195203b13ab38f5f3ca74d8b07d96b658f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959085"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>(JavaScript) Visual Studio'da Store uygulamaları için hata ayıklama oturumu başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +82,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
    ![Windows Phone için yalnızca geçerli](../debugger/media/phone-only-content.png "phone_only_content")
 
-   Visual Studio, yapıları ve hata ayıklayıcısı ekli uygulamayı başlatır. Yürütme bir kesme noktasına ulaşıldığında, işlenmeyen bir özel durum oluşur, el ile yürütme askıya veya uygulama sona kadar devam eder. Daha fazla bilgi için [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md).
+   Visual Studio, yapıları ve hata ayıklayıcısı ekli uygulamayı başlatır. Yürütme bir kesme noktasına ulaşıldığında, işlenmeyen bir özel durum oluşur, el ile yürütme askıya veya uygulama sona kadar devam eder. Daha fazla bilgi için [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> Hata ayıklama oturumu yapılandırma
  Betik derlenmemiş olduğundan derleme yapılandırma ve platform ayarları geçerli değildir. Bir C++ ya da yönetilen bileşen hata ayıklaması yapıyorsanız ayarlamak **yapılandırma** için **hata ayıklama** ve hedef platformunuzu seçin **yapılandırma** iletişim.
@@ -160,7 +159,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ##  <a name="BKMK_Start_the_debugging_session"></a> Hata ayıklama oturumu başlatma
 
 ###  <a name="BKMK_Start_debugging__F5_"></a> (F5) hata ayıklamayı Başlat
- Seçeneğini belirlediğinizde **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: F5), Visual Studio hata ayıklayıcısı ekli uygulamayı başlatır. Yürütme bir kesme noktasına ulaşıldığında, işlenmeyen bir özel durum oluşur, el ile yürütme askıya veya uygulama sona kadar devam eder.
+ Seçeneğini belirlediğinizde **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: F5), Visual Studio hata ayıklayıcısı ekli uygulamasını başlatır. Yürütme bir kesme noktasına ulaşıldığında, işlenmeyen bir özel durum oluşur, el ile yürütme askıya veya uygulama sona kadar devam eder.
 
 ###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Uygulama başlangıcı geciktirmek ancak (F5) hata ayıklamayı Başlat
  Uygulamayı hata ayıklama modunda çalıştırabilir, ancak bunu hata ayıklayıcı dışında bir yöntem tarafından başlatılması izin için ayarlayabilirsiniz. Örneğin, başlatma Başlat menüsünden uygulamanızın hatalarını ayıklama veya uygulama başlatmadan bir arka plan işlemi uygulamasında hata ayıklamak için isteyebilirsiniz. Uygulama başlangıcı geciktirmek için şunu yapın:
@@ -266,4 +265,4 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
    Visual Studio hata ayıklayıcı işleme ekler. Yürütme bir kesme noktasına ulaşıldığında, işlenmeyen bir özel durum oluşur, el ile yürütme askıya veya uygulama sona kadar devam eder.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Denetleme (JavaScript) hata ayıklama oturumunda yürütme](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md) [tetikleyici askıya alma, sürdürme ve arka plan olaylarını Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [uygulamalarında hata ayıklama Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+ [Denetleme (JavaScript) hata ayıklama oturumunda yürütme](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [hızlı başlangıç: Hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md) [tetikleyici askıya alma, sürdürme ve arka plan olaylarını Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)

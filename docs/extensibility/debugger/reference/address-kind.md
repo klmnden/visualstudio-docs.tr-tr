@@ -1,9 +1,6 @@
 ---
 title: ADDRESS_KIND | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - ADDRESS_KIND
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3138b4151c1f78a05daf2320d5979d5c6e15db42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e4c103884da28bedfd221e26b159e9e8f98e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867429"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Adresleri türlerini belirtir.  
@@ -90,7 +87,7 @@ public enum enum_ADDRESS_KIND {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

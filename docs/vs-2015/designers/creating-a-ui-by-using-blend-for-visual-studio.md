@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883152"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +58,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
 |![](../designers/media/b1-5.png "B1_5")|**Varlık Araçları** erişim **varlıklar** paneli ve en son göstermek için kitaplıktan varlık kullanılır.|![Belirtme çizgisi E](../designers/media/b5-label-e.png "b5_label_E")|**Metin denetimi**|
 |||![Belirtme çizgisi F](../designers/media/b5-label-f.png "b5_label_F")|**Ortak Denetimler**|
 
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ##  <a name="Assets"></a> Varlıklar panelini turu
  Tüm denetimleri bulabilirsiniz **varlıklar** paneli, benzer **araç kutusu** Visual Studio'da. Denetimleri ek olarak, her şey için çalışma yüzeyine ekleyebilirsiniz bulabilirsiniz **varlıklar** paneli, stilleri, ortam, davranışları ve efektleri gibi.
@@ -126,7 +125,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
 |                     ![Belirtme çizgisi 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Gradyan kaydırıcı** yalnızca bir gradyan fırçası seçtiyseniz görünür.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Gelişmiş özellikleri göster** daha az yaygın olarak kullanılan özellikleri kategorilerini görüntüleyin.                                                                      |
 
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [özellikler panelini](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [özellikler panelini](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Denetimler ekleme ve bunların davranışlarını değiştirme](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [nesneleri](../designers/animate-objects-in-xaml-designer.md) [şekiller ve yollar çizin](../designers/draw-shapes-and-paths.md) [Visual Studio ve Visual Studio için Blend, XAML tasarlama](../designers/designing-xaml-in-visual-studio.md)

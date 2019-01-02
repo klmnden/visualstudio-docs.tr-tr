@@ -2,7 +2,6 @@
 title: Geliştirme sırasında sisteminizi doğrulama
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907306"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869326"
 ---
 # <a name="validate-your-system-during-development"></a>Geliştirme sırasında sisteminizi doğrulama
 Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile tutarlı korunmasına yardımcı olabilirsiniz.
@@ -35,7 +34,7 @@ Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile
 
 |**Kategori**|**Bağlantılar**|
 |-|-|
-|**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif) [Channel 9: Doug yedi: kod anlama ve Visual Studio 2010 ile sistem tasarımı](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif) [Channel 9: bağımlılık diyagramı kullanarak uygulama mimarileri oluşturma](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: bağımlılık diyagramlarını kullanarak kod doğrulama](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Doug yedi: Kod anlama ve Visual Studio 2010 ile sistem tasarımı](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Bir bağımlılık diyagramı kullanarak uygulama mimarileri oluşturma](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: Bağımlılık diyagramları kullanarak kod doğrulama](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Bloglar**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)|

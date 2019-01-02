@@ -1,9 +1,6 @@
 ---
 title: IDebugMethodField::EnumAllLocals | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMethodField::EnumAllLocals
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b060e26668fb7a3c64cee9360e62c198d9c988c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f03a285a390e244babe99b2cc0ae2db5bf9e67f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846288"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Yöntemi dahili olarak bir derleyici tarafından oluşturulan dahil olmak üzere tüm yerel değişkenlerin için bir numaralandırıcı oluşturur.  
@@ -28,7 +25,7 @@ Yöntemi dahili olarak bir derleyici tarafından oluşturulan dahil olmak üzere
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT EnumAllLocals(   
+HRESULT EnumAllLocals(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppLocals  
 );  

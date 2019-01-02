@@ -1,9 +1,6 @@
 ---
 title: Kaynak denetimi tasarım kararları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0385d5feb7baf7fe60e253616c8db0f326932e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd1ffa27a8dfa7c1d98e7242d71f7cfe83c319d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883191"
 ---
-# <a name="source-control-design-decisions"></a>Kaynak denetimi tasarım kararları
-Aşağıdaki tasarım kararlarını projeleri için kaynak denetimi uygularken dikkate alınmalıdır.  
+# <a name="source-control-design-decisions"></a>Kaynak Denetimi Tasarım Kararları
+Aşağıdaki tasarım kararlarını projeler için kaynak denetimi uygularken dikkate alınmalıdır.  
   
-## <a name="will-information-be-shared-or-private"></a>Bilgiler, paylaşılan veya özel olacak?  
- Yapabileceğiniz en önemli tasarım kararı hangi bilgilerin paylaşılabilir ve özel nedir ' dir. Örneğin, proje için dosya listesini paylaşılan, ancak bu dosyaları listede bazı kullanıcılar özel dosyaları sahip olmak isteyebilirsiniz. Derleyici ayarları paylaşılan ancak başlangıç projesi genellikle özeldir. Tamamen paylaşılan, paylaşılan bir geçersiz kılma ile veya yalnızca özel ayarlar. (.Suo) dosyaları, çözümü kullanıcı seçenekleri gibi tasarım gereği, özel öğeleri içine denetlenmez [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Özel bir bilgi .suo dosya ya da oluşturduğunuz, örneğin, belirli bir özel dosya gibi özel dosyaları depolamak mutlaka bir. csproj.user dosya Visual C# için veya bir. vbproj.user dosya Visual Basic.  
+## <a name="will-information-be-shared-or-private"></a>Bilgi, paylaşılan veya özel olacak mı?  
+ Yapabileceğiniz en önemli tasarım özel nedir ve hangi bilgilerin paylaşılabilir kararıdır. Örneğin, proje için dosyaların listesini paylaşılan, ancak bu dosyaları listesi içinde bazı kullanıcılar özel dosyaları sahip olmak isteyebilirsiniz. Derleyici ayarları paylaşılır, ancak başlangıç projesi genellikle özeldir. Yalnızca paylaşılan, paylaşılan bir geçersiz kılma ile veya tamamen özel ayarlarıdır. Çözüm kullanıcı seçenekleri (. suo) dosyaları gibi tasarım gereği, özel öğeler halinde denetlenmez [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Herhangi bir özel bilgi .suo dosya ya da oluşturduğunuz, örneğin, belirli bir özel dosya gibi özel dosyaları depolamak mutlaka bir. csproj.user dosya Visual C# veya. vbproj.user dosya Visual Basic için.  
   
- Bu kararı her şeyi içeren değil ve bir öğe tarafından olarak yapılır.  
+ Bu karar, her şeyi içeren değil ve bir öğe tarafından temelinde yapılamaz.  
   
-## <a name="will-the-project-include-special-files"></a>Proje özel dosyaları içerir?  
- Başka bir önemli tasarım proje yapınızı özel dosyaları kullanıp kullanmadığını bir karardır. Çözüm Gezgini'nde ve iade görünür ve teslim alma iletişim kutuları dosyaları temelini oluşturan gizli dosyaları özel dosyalarıdır. Özel dosyaları kullanırsanız, aşağıdaki yönergeleri izleyin:  
+## <a name="will-the-project-include-special-files"></a>Projeye özel dosyaları içerecek?  
+ Başka bir önemli tasarım proje özel dosyaları kullanıp kullanmadığını kararıdır. Çözüm Gezgini'nde ve iade görünür ve kullanıma iletişim kutuları dosyaları temelini oluşturan gizli dosyalar özel dosyalarıdır. Özel dosyaları kullanıyorsanız, aşağıdaki yönergeleri izleyin:  
   
-1.  Özel dosyaları proje kök düğüm ilişkilendirmeyin — diğer bir deyişle, proje ile kendini dosya. Proje dosyası tek bir dosya olmalıdır.  
+1.  Özel dosyalar proje kök düğümü ile ilişkilendirilmemiş — diğer bir deyişle, kendi proje ile dosya. Proje dosyanız, tek bir dosya olmalıdır.  
   
-2.  Ne zaman özel dosyaları eklenen, kaldırıldı veya yeniden adlandırılmış bir projede uygun <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> dosyalarıdır özel dosyaları belirten bayrak kümesi ile olay tetiklenir. Bu olaylar uygun çağırma proje yanıta ortamında tarafından denir <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> yöntemleri.  
+2.  Ne zaman özel dosya eklendiğinde, kaldırılır veya bir proje, uygun olarak yeniden adlandırıldı <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> dosyalarıdır özel dosyaları gösteren bayrak kümesi ile olayları tetiklendi. Bu olaylar uygun çağırma projeye yanıt ortama göre adlandırılır <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> yöntemleri.  
   
-3.  Proje veya Düzenleyicisi çağırdığında <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> bir dosya için bu dosyayla ilişkili özel dosyalar otomatik olarak kullanıma değil. Özel dosyalarında birlikte üst dosya geçirin. Ortam olarak geçirilen tüm dosyaları arasındaki ilişkiyi algılar ve uygun şekilde kullanıma UI özel dosyaları gizle.  
+3.  Proje veya Düzenleyicisi çağırdığında <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> bir dosya için özel bu dosyayla ilişkili dosyaları otomatik olarak kullanıma alınmamış. Özel dosyaların yanı sıra üst dosya geçirin. Ortam içinde geçirilen tüm dosyaları arasındaki ilişki algılar ve uygun şekilde kullanıma kullanıcı arabiriminde özel dosyaları gizle.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

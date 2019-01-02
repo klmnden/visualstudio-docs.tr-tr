@@ -1,8 +1,6 @@
 ---
 title: Idiaaddressmap::put_imagealign | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06110568e0854692b19c3c118e948024bd346295
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0188a0faa4f9fe7a711cbdfd7c006e7e423713fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879737"
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 Resim hizalamasını ayarlar.  
@@ -27,7 +25,7 @@ Resim hizalamasını ayarlar.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT put_imageAlign (   
+HRESULT put_imageAlign (   
    DWORD NewVal  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugModules2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugModules2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3ca02776aae4a7b4cd22485eba9827f4731d5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bcdcdfc343ae5fdc10fd3fa15a5ade4c7259ba7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888412"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
-Bu arabirim modüllerin listesini numaralandırır.  
+Bu arabirim, modüllerin listesini numaralandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +29,7 @@ IEnumDebugModules2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) için bir program yüklü modülleri listesini temsil etmek için bu arabirimi uygular.  
+ Hata ayıklama altyapısı (DE) için bir program yüklü modüller listesini temsil etmek için bu arabirimi uygular.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  Visual Studio çağrıları [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) bu arabirimi elde edilir.  
@@ -42,25 +39,25 @@ IEnumDebugModules2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Bir numaralandırma sırasını modülleri belirtilen sayısını alır.|  
-|[Atla](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Bir numaralandırma sırasını modülleri belirtilen sayıda atlar.|  
-|[Sıfırla](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
-|[kopya](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Modülleri sayısını alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Bir numaralandırma sıralı modüllerinin belirtilen bir sayı alır.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Bir numaralandırma sıralı modülleri belirtilen sayıda atlar.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Modüller sayısını alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Visual Studio öncelikle güncelleştirmek için bu arabirimi kullanan **modülleri** penceresi.  
+ Visual Studio, öncelikli olarak güncelleştirmek için bu arabirimi kullanan **modülleri** penceresi.  
   
- Visual Studio'da hata ayıklama amacıyla, mantıksal bir sıra modülü sınırlar, bu nedenle arası kod yönerge programdır tek bir modüllerin listesini gereksinimini [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi. Listedeki ilk modülü genellikle ilişkili programı için ilk giriş noktası içerir.  
+ Visual Studio'da hata ayıklama amacıyla, modül sınırları, bu nedenle çapraz kod yönergeleri mantıksal bir dizi programdır modülleri için tek bir listesi için gereken [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi. Listedeki ilk modülü genellikle ilişkili programı için ilk giriş noktası içerir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)

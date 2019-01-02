@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir SharePoint proje uzantısı oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir SharePoint proje uzantısı oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885906"
 ---
-# <a name="walkthrough-create-a-sharepoint-project-extension"></a>İzlenecek yol: bir SharePoint proje uzantısı oluşturma
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>İzlenecek yol: Bir SharePoint proje uzantısı oluşturma
   Bu izlenecek yol, bir SharePoint proje uzantısı oluşturma işlemini gösterir. Bir proje ne zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyinde olaylara yanıt vermek için bir proje uzantısı'nı kullanabilirsiniz. Ayrıca, özel özellikler ekleme veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantıları, proje uzantılarını belirli bir SharePoint proje türüyle ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir türden SharePoint projesi açıldığında uzantınızı yüklediği [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  Bu izlenecek yolda oluşturulan herhangi bir SharePoint projesine eklenen özel bir Boolean özelliği oluşturacağınız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Ayarlandığında **True**, yeni özellik ekler veya projenize görüntüler kaynak klasörüne eşlenir. Ayarlandığında **False**, varsa resimler klasöründeki kaldırıldı. Daha fazla bilgi için [nasıl yapılır: eşlenmiş klasörler ekleme ve kaldırma](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
@@ -209,4 +206,3 @@ ms.locfileid: "51295988"
  [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

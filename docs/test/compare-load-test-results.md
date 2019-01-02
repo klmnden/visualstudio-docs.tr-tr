@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52c5ff41a8c1085e39009c240e3416a60a081101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951111"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Rapor yük testi sonuçlarını test karşılaştırmaları veya eğilim analizi
 
@@ -43,8 +42,8 @@ Ayrıca, elektronik tablo dosyasını, hissedarların raporu görmek için verit
 
 |Görevler|İlişkili konular|
 |-|-|
-|**Performans ve stres rapor oluşturma:** Microsoft Excel kullanarak yük ve web performans testlerinizi üzerinde raporlar oluşturabilirsiniz.|- [Nasıl yapılır: oluşturma yük testi başarım raporları kullanarak Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**El ile Microsoft Word'ı kullanarak performans ve stres rapor oluşturma:** raporları, yük ve web performans testleri el ile özeti, tablo ve graf verilerini bir Microsoft Word belgesine yapıştırarak oluşturabilirsiniz.|- [Nasıl yapılır: Microsoft Word kullanılarak bir yük testi başarım raporunu el ile oluşturma](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Performans ve stres raporu oluşturun:** Microsoft Excel kullanarak yük ve web performans testlerinizi üzerinde raporlar oluşturabilirsiniz.|- [Nasıl Yapılır: Microsoft Excel kullanarak yük testi başarım raporları oluşturma](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Microsoft Word kullanılarak el ile performans ve stres raporu oluşturun:** Raporları, yük ve web performans testleri el ile özeti, tablo ve graf verilerini bir Microsoft Word belgesine yapıştırarak oluşturabilirsiniz.|- [Nasıl Yapılır: Microsoft Word kullanılarak bir yük testi başarım raporunu el ile oluşturma](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: derlenecek dosyaları seçme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Derlenecek dosyaları seçme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875413"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: derleme dosyaları seçin
+# <a name="how-to-select-the-files-to-build"></a>Nasıl Yapılır: Derleme dosyaları seçin
 Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasında ayrı olarak listeleyebilirsiniz veya tüm dosyaları bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz.  
   
 ## <a name="specify-inputs"></a>Girişleri belirtin  
@@ -172,5 +170,5 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
 ```  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Öğeler](../msbuild/msbuild-items.md)

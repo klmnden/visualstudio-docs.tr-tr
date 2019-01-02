@@ -1,15 +1,10 @@
 ---
-title: 'Nasıl yapılır: ek derlemeler ekleme ve kaldırma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Ek derlemeler ekleme ve kaldırma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887016"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl yapılır: ek derlemeler ekleyip
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl Yapılır: Ekleme ve ek bütünleştirilmiş kodları Kaldır
   SharePoint paketinin, diğer derlemelerdeki işlevi veya verileri bağlıysa, derlemeleri, çözüm paketine (.wsp) ekleyebilirsiniz. Bu şekilde, SharePoint server özel derlemeler ile bir pakete yüklenmesini sağlar.  
   
  Ayrıca, ekleyin ve güvenli denetimler ve derlemeleri ile ilişkili sınıf kaynak dosyaları değiştirin.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219152"
   
 #### <a name="to-add-an-existing-assembly"></a>Mevcut bir bütünleştirilmiş kodu eklemek için  
   
-1.  Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Seçin **Gelişmiş** sekmesi.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219152"
   
 1.  Açık **paket Tasarımcısı**.  
   
-     Daha fazla bilgi için [nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Seçin **Gelişmiş** sekmesi.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219152"
   
 #### <a name="to-delete-an-existing-assembly"></a>Mevcut bir bütünleştirilmiş kodu silmek için  
   
-1.  Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Seçin **Gelişmiş** sekmesi.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219152"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
- [Nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Nasıl yapılır: Bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Nasıl yapılır: SharePoint özelliklerine öğe ekleyip](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  

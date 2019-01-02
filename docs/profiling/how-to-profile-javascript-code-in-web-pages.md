@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Web sayfalarında JavaScript kodu profil | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Web sayfalarında JavaScript kod profil | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -13,64 +11,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863657"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Nasıl yapılır: web sayfalarında profili JavaScript kodu
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Nasıl Yapılır: Web sayfalarında JavaScript kodu profili
 
-Visual Studio profil oluşturma araçları içinde yürütür JavaScript kodu için performans verilerini toplayabilir bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, rasgele web sayfası ya da izleme profili oluşturma yöntemi kullanarak JavaScript uygulama. Internet Explorer 8 veya sonraki sürümünü gerektirir.
+Visual Studio profil oluşturma araçları, yürütülen JavaScript kodu için performans verilerini toplayabilir bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, bir rastgele web sayfası veya yöntemi profil oluşturma Araçları'nı kullanarak JavaScript uygulaması. Internet Explorer 8 veya sonraki sürümünü gerektirir.
 
 > [!WARNING]
-> JavaScript UWP uygulamalarında profil için bkz: [JavaScript belleği](../profiling/javascript-memory.md) 
+> UWP uygulamalarında JavaScript profili oluşturmak için bkz: [JavaScript belleği](../profiling/javascript-memory.md) 
 
-Performans oturum oluşturmak için profil oluşturma Sihirbazı'nı kullanabilirsiniz. İzleme yöntemini belirtin ve ardından Özellikler iletişim kutusunun araçları sayfasında seçeneğini performans oturumu için profil oluşturma JavaScript belirtin.
+Performans oturumu oluşturmak için profil oluşturma Sihirbazı'nı kullanabilirsiniz. Araçlar yöntemini belirtin ve ardından JavaScript profil oluşturma performans oturumu Özellikleri iletişim kutusunun izleme sayfasındaki seçeneğini belirtin.
 
-JavaScript profil belirttiğinizde, JavaScript kodu yürütmelerinin tarayıcıda ve [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sunucu üzerinde yürütülen kodu profili.
+JavaScript profil oluşturma belirttiğinizde, her iki JavaScript kodu, yürütür tarayıcıda ve [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sunucu üzerinde yürütülen kodu profili.
 
-- İçin bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, tarayıcıda yürüten hem JavaScript kodu ve [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sunucu üzerinde yürütülen kodu profili.
+- İçin bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, tarayıcıda yürüten iki JavaScript kodunu ve [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sunucu üzerinde yürütülen kodu profili.
 
-- Rastgele bir web sayfasını tarayıcıda yürütür JavaScript kodu profili.
+- Rastgele bir web sayfası için tarayıcı içinde yürütülen JavaScript kod profil oluşturulan.
 
-## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>ASP.NET web uygulaması projesinde profiline JavaScript
+## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Bir ASP.NET web uygulaması projesinde JavaScript profili oluşturmak için
 
 1. Açık [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Visual Studio'da web projesi.
 
-2. Üzerinde **Çözümle** menüsünde tıklatın **başlatma performans Sihirbazı**.
+2. Üzerinde **Çözümle** menüsünü tıklatın **performans Sihirbazını Başlat**.
 
-3. Performans Sihirbazı'nın ilk sayfasında belirttiğiniz **Araçları** profili oluşturma yöntemi ve ardından **sonraki**.
+3. Performans Sihirbazı'nın ilk sayfasında belirttiğiniz **izleme** yöntemi profil oluşturma ve ardından **sonraki**.
 
-4. Sihirbazın ikinci sayfasında geçerli proje hedefleri listesinde seçili olduğundan emin olun ve ardından **sonraki.**
+4. Sihirbazın ikinci sayfasında, geçerli projenin hedefleri listesinde seçili olduğundan emin olun ve ardından **sonraki.**
 
-5. Sihirbazın üçüncü sayfasında seçin **profil JavaScript** onay kutusunu işaretleyin ve ardından **sonraki**.
+5. Sihirbazın üçüncü sayfasında **JavaScript profili** onay kutusunu işaretleyin ve ardından **sonraki**.
 
-6. Sihirbazının dördüncü sayfasında, tıklatın **son** tarayıcıda web uygulamasını başlatmak için.
+6. Sihirbazının dördüncü sayfasında tıklayın **son** tarayıcıda web uygulamasını başlatmak için.
 
-7. Profil oluşturmayı istediğiniz işlevselliği uygular.
+7. Profil oluşturmak istediğiniz işlevi çalıştırın.
 
-8. Profil oluşturma oturumu sona erdirmek için tarayıcıyı kapatın.
+8. Profil oluşturma oturumunu sona erdirmek için tarayıcıyı kapatın.
 
-### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Tek tek web sayfalarında JavaScript veya JavaScript uygulamaları profilini
+### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Tek tek web sayfalarında JavaScript veya JavaScript uygulamaları profilini çıkarmak için
 
 1. Visual Studio'yu açın.
 
-2. Üzerinde **Çözümle** menüsünde tıklatın **başlatma performans Sihirbazı**.
+2. Üzerinde **Çözümle** menüsünü tıklatın **performans Sihirbazını Başlat**.
 
-3. Performans Sihirbazı'nın ilk sayfasında belirttiğiniz **Araçları** profili oluşturma yöntemi ve ardından **sonraki**.
+3. Performans Sihirbazı'nın ilk sayfasında belirttiğiniz **izleme** yöntemi profil oluşturma ve ardından **sonraki**.
 
-4. Sihirbazın ikinci sayfasında ASP.NET veya JavaScript uygulama'yı tıklatın ve ardından **sonraki.**
+4. Bir ASP.NET veya JavaScript uygulama sihirbazının ikinci sayfasında tıklayın ve ardından **sonraki.**
 
 5. Sihirbazın üçüncü sayfasında:
 
-    1. Sayfanın URL'sini yazın **hangi URL veya yol uygulamanızın çalışacağı** kutusu.
+    1. Sayfanın URL'sini yazın **uygulamanız hangi URL'de çalışacak** kutusu.
 
-    2. Seçin **profil JavaScript** onay kutusunu işaretleyin ve ardından **sonraki**.
+    2. Seçin **JavaScript profili** onay kutusunu işaretleyin ve ardından **sonraki**.
 
-6. Sihirbazının dördüncü sayfasında, tıklatın **son** web sayfasını tarayıcıda başlatmak için.
+6. Sihirbazının dördüncü sayfasında tıklayın **son** tarayıcıda web sayfasını başlatmak için.
 
-7. Profil oluşturmayı istediğiniz işlevselliği uygular.
+7. Profil oluşturmak istediğiniz işlevi çalıştırın.
 
-8. Profil oluşturma oturumu sona erdirmek için tarayıcıyı kapatın.
+8. Profil oluşturma oturumunu sona erdirmek için tarayıcıyı kapatın.

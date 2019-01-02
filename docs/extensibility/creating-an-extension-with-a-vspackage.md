@@ -1,9 +1,6 @@
 ---
 title: VSPackage içeren bir uzantı oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838417"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage içeren bir uzantı oluşturma
 Bu izlenecek yol, bir VSIX projesi oluşturun ve bir VSPackage proje öğesi ekleyin işlemini göstermektedir. Bir ileti kutusu görüntüleme için kullanıcı Arabirimi Shell hizmetinin almak için VSPackage'ı kullanacağız.  
@@ -49,7 +46,7 @@ Bu izlenecek yol, bir VSIX projesi oluşturun ve bir VSPackage proje öğesi ekl
     public sealed class FirstPackage : Package  
     ```  
   
-2.  VSPackage'ı yükledi bize sağlayan bir ileti ekleyelim. VSPackage'nın kullandığımız `Initialize()` Hizmetleri VSPackage'ı bir yalnızca tarihli sonra Visual Studio aldığından Bunu yapmak için yöntemi. (Hizmetler alma hakkında daha fazla bilgi için bkz. [nasıl yapılır: hizmet alma](../extensibility/how-to-get-a-service.md).) Değiştirin `Initialize()` yöntemi `FirstPackage` alır kodla <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> hizmetini alır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> arabirimi ve çağrılarını kendi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> yöntemi.  
+2.  VSPackage'ı yükledi bize sağlayan bir ileti ekleyelim. VSPackage'nın kullandığımız `Initialize()` Hizmetleri VSPackage'ı bir yalnızca tarihli sonra Visual Studio aldığından Bunu yapmak için yöntemi. (Hizmetler alma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Hizmet alma](../extensibility/how-to-get-a-service.md).) Değiştirin `Initialize()` yöntemi `FirstPackage` alır kodla <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> hizmetini alır <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> arabirimi ve çağrılarını kendi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> yöntemi.  
   
     ```csharp  
     protected override void Initialize()  

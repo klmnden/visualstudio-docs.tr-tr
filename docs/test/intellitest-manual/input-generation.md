@@ -2,7 +2,6 @@
 title: Dinamik sembolik yürütme | Microsoft Intellitest Geliştirici Test aracı
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834678"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Dinamik sembolik yürütme kullanarak giriş oluşturma
 
-Intellitest oluşturur için girişler [parametreli birim testleri](test-generation.md#parameterized-unit-testing) programı dal koşulları analiz tarafından. Test girdileri olup programın yeni dal oluşturma davranışları tetikleyebilir göre seçilir. Analiz artımlı bir işlemdir. Bir koşul iyileştirir **s: ben -> {true, false}** giriş parametrelerini resmi test **miyim**. **q** Intellitest zaten gözlemlenen davranışların kümesini temsil eder. Başlangıçta **q: = false**, bu yana hiçbir şey henüz gözlenmiştir.
+Intellitest oluşturur için girişler [parametreli birim testleri](test-generation.md#parameterized-unit-testing) programı dal koşulları analiz tarafından. Test girdileri olup programın yeni dal oluşturma davranışları tetikleyebilir göre seçilir. Analiz artımlı bir işlemdir. Bir koşul iyileştirir **s: Ben -> {true, false}** giriş parametrelerini resmi test **miyim**. **q** Intellitest zaten gözlemlenen davranışların kümesini temsil eder. Başlangıçta **q: = false**, bu yana hiçbir şey henüz gözlenmiştir.
 
 Döngünün adımlar şunlardır:
 
@@ -29,7 +28,7 @@ Döngünün adımlar şunlardır:
 
 1. Intellitest, seçilen giriş ile test yürütür **miyim**, test ve test edilen programın yürütülmesini izler.
 
-1. Yürütme sırasında program, program tarafından koşullu dalları hakkında belirlenir belirli bir yol alır. Yürütme belirlemek tüm koşullar kümesini adlı *yol koşulu*koşul olarak yazılmış **ben -> {true, false} p:** biçimsel giriş parametrelerini üzerinden. Intellitest bir gösterimiyse, bu koşul hesaplar.
+1. Yürütme sırasında program, program tarafından koşullu dalları hakkında belirlenir belirli bir yol alır. Yürütme belirlemek tüm koşullar kümesini adlı *yol koşulu*koşul olarak yazılmış **p: Ben -> {true, false}** üzerinden biçimsel giriş parametreleri. Intellitest bir gösterimiyse, bu koşul hesaplar.
 
 1. Intellitest kümeleri **q: (q ya da p) =**. Diğer bir deyişle, bu yolun gösterdiği yakaladı olgu kayıtları **p**.
 

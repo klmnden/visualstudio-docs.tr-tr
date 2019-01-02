@@ -2,7 +2,6 @@
 title: Azure'da alarak yayımlama yayımlama ayarları
 description: Oluşturma ve bir uygulamayı Visual Studio'dan Azure App Service dağıtmak için bir yayımlama profilini İçeri Aktar
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b0af5732e80098cabeda8f11901e968ebb3d4a9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853950"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulamayı yayımladığınızda Visual Studio'da yayımlama ayarları
 

@@ -1,9 +1,6 @@
 ---
 title: Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833374"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için
 
@@ -301,7 +298,7 @@ Ardından, yöntem belgesinin kök getirir ve kod genel durumda rastgele iş iç
 
 Artık basabilirsiniz **F5** , Çözümleyicisi Visual Studio ikinci bir örneğini yürütmek için. Önceden kullanmış olduğunuz konsol projesi açın. Artık, yeni nesne oluşturma ifadesi için olduğu görünür ampul görmelisiniz `ImmutableArray<int>`. Basarsanız **Ctrl**+**.** (Dönem), kodunuzu düzeltin ardından görür ve bir ampul kullanıcı Arabirimi otomatik olarak oluşturulan kodu fark önizlemede görürsünüz. Roslyn sizin için oluşturur.
 
-**Pro İpucu:** Visual Studio'nun ikinci örneğini başlatın ve kod düzeltmenizi ampul görmüyor durumunda Visual Studio bileşen önbelleği temizlemeniz gerekebilir. Önbelleği temizleniyor, Visual Studio, en son bileşenini ardından seçmeniz gerekir, böylece bileşenleri yeniden incelemek için Visual Studio zorlar. İlk olarak, Visual Studio ikinci örneğini kapatın. Ardından **Windows Explorer**, gitmek *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" sürümü başka bir sürümü Visual Studio ile değiştirir). Alt dizini silmek *ComponentModelCache*.
+**Pro İpucu:** Visual Studio'nun ikinci örneğini başlatabilir ve kod düzeltmenizi ampul görmüyorsanız, Visual Studio bileşen önbelleği temizlemek gerekebilir. Önbelleği temizleniyor, Visual Studio, en son bileşenini ardından seçmeniz gerekir, böylece bileşenleri yeniden incelemek için Visual Studio zorlar. İlk olarak, Visual Studio ikinci örneğini kapatın. Ardından **Windows Explorer**, gitmek *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" sürümü başka bir sürümü Visual Studio ile değiştirir). Alt dizini silmek *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Video konuşacak ve bunları kod proje bitiş
 

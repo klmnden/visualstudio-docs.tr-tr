@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio projeleri, özellikle Flask Web projesi ve Webový projekt ve Flask/Jade şablonları tarafından sağlanan özellikleri bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bc7cd5a504a28ac34b80c6455b86bdfc28ac1be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878594"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>4. adım: tam Flask Web projesi şablonunu kullanma
+# <a name="step-4-use-the-full-flask-web-project-template"></a>4. Adım: Tam bir Flask Web projesi şablonunu kullanma
 
-**Önceki adımda: [statik dosyaları sunmak, sayfalar eklemek ve şablonu devralma kullanın](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Önceki adım sayısı: [Statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 "Boş Flask uygulaması projesi" şablonu Visual Studio'da bağlı bir uygulama oluşturarak Flask temelleri incelediniz, "Flask Web projesi" şablon tarafından üretilen irdelemesi uygulamayı kolayca anlayabilir.
 
@@ -35,7 +34,7 @@ Bu, artık. adım:
 
 Bu makalede, "Flask Web projesinin Jade şablon oluşturma altyapısı yerine Jinja kullanarak" aynı olan bir uygulamayı hazırlayan "Webový projekt Flask/Jade" şablonu için de geçerlidir. Ek ayrıntılar bu makalenin sonunda bulunur.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: bir şablondan bir proje oluşturma
+## <a name="step-4-1-create-a-project-from-the-template"></a>4-1. adım: Bir şablondan bir proje oluşturma
 
 1. Visual Studio'da Git **Çözüm Gezgini**, sağ **LearningFlask** daha önce Bu öğretici ve seçme içinde oluşturulan çözüm **Ekle**  >   **Yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
@@ -76,9 +75,9 @@ Bu makalede, "Flask Web projesinin Jade şablon oluşturma altyapısı yerine Ji
   - *Statik* adlı alt klasörde *içeriği* (CSS dosyaları) *yazı tipleri* (yazı tipi dosyaları) ve *betikleri* (JavaScript dosyaları).
   - *Şablonları* klasörünü içeren bir *layout.html* ile birlikte temel şablon *about.html*, *contact.html*, ve  *index.HTML* için belirli bir sayfa her genişletme *layout.html*.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: Visual Studio projeleri arasındaki bir sanal ortam paylaşmayı mümkün mü?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Soru: Bir sanal ortam Visual Studio projeleri arasında paylaşılmasını olanaklı mi?
 
-Cevap: Evet, ancak büyük olasılıkla farklı projelerde zaman içinde farklı paketleri kullanın ve bu nedenle, paylaşılan bir sanal ortam bunu kullanan tüm projeler için tüm paketleri içermelidir tanıma ile bunu.
+Yanıt: Evet, ancak büyük olasılıkla farklı projelerde zaman içinde farklı paketleri kullanın ve bu nedenle, paylaşılan bir sanal ortam bunu kullanan tüm projeler için tüm paketleri içermelidir tanıma ile bunu.
 
 Bununla birlikte, mevcut bir sanal ortam kullanmak için aşağıdakileri yapın:
 
@@ -86,9 +85,9 @@ Bununla birlikte, mevcut bir sanal ortam kullanmak için aşağıdakileri yapın
 1. İçinde **Çözüm Gezgini**, sağ **Python ortamları** düğümünü seçip alt **var olan sanal ortama ekleme**.
 1. Gidin ve sanal ortam içeren klasörü seçin ve ardından **Tamam**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2. adım: görünümleri anlayın ve sayfa proje şablonu tarafından oluşturulan şablonlar
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>4-2. adım: Proje şablonu tarafından oluşturulan şablonların ve görünümleri anlayın
 
-Projeyi çalıştırdığınızda gözlemleyin gibi uygulamayı üç görünüm içerir: hakkında ev ve başvurun. Bu görünümler için kod bulunan *FlaskWeb/views.py*. Her görünüm işlevi yalnızca çağırır `flask.render_template` yoluyla bir şablon ve şablona vermek için değerleri için bağımsız değişken listesi. Örneğin, hakkında sayfası tarafından işlenir `about` işlevi (olan dekoratör URL yönlendirmeyi sağlar):
+Projeyi çalıştırdığınızda, gözlemleyin gibi uygulamayı üç görünüm içerir: Giriş, ilgili ve ilgili kişi. Bu görünümler için kod bulunan *FlaskWeb/views.py*. Her görünüm işlevi yalnızca çağırır `flask.render_template` yoluyla bir şablon ve şablona vermek için değerleri için bağımsız değişken listesi. Örneğin, hakkında sayfası tarafından işlenir `about` işlevi (olan dekoratör URL yönlendirmeyi sağlar):
 
 ```python
 @app.route('/about')

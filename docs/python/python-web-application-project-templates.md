@@ -3,7 +3,6 @@ title: Python Web uygulaması şablonları
 description: Visual Studio, Bottle, Flask ve Django çerçeveleri kullanarak Python web uygulamaları için şablonlar sağlar. hata ayıklama yapılandırmaları ve Azure App Service'te yayımlama desteği içerir.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850628"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 
@@ -45,7 +44,7 @@ Tüm **boş \<framework > Web projesini** şablonları ile daha fazla bir proje 
 | --- | --- |
 | **Boş Bottle Web projesi** | En az bir uygulama oluşturur *app.py* bir ana sayfası ile `/` ve `/hello/<name>` yankılayan sayfa `<name>` çok kısa bir satır içi sayfası şablonu kullanarak. |
 | **Boş Django Web projesi** | Bir çekirdek Django site yapısı ancak hiçbir Django uygulamaları ile Django projesi oluşturur. Daha fazla bilgi için [Django şablonları](python-django-web-application-project-template.md) ve [Django adımı 1 bilgi](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Boş bir Flask Web projesi** | Bir tek "Hello World!" ile en az bir uygulama oluşturur. için sayfa `/`. Bu uygulamanın ayrıntılı anlatılan adımları izleyerek sonucunu benzer [hızlı başlangıç: ilk Python web uygulamanızı oluşturmak için Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Ayrıca bkz: [Flask adımı 1 bilgi](learn-flask-visual-studio-step-01-project-solution.md).
+| **Boş bir Flask Web projesi** | Bir tek "Hello World!" ile en az bir uygulama oluşturur. için sayfa `/`. Bu uygulamanın ayrıntılı anlatılan adımları izleyerek sonucunu benzer [hızlı başlangıç: İlk Python web uygulamanızı oluşturmak için Visual Studio'yu kullanın](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Ayrıca bkz: [Flask adımı 1 bilgi](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Web grubu
 

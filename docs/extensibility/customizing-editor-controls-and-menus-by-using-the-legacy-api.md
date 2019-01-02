@@ -1,9 +1,6 @@
 ---
 title: Düzenleyici denetimleri ve menüler eski API'yi kullanarak özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851267"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Düzenleyici denetimleri ve Mmenus eski API'yi kullanarak özelleştirme
 Dil hizmeti veya bir metin görünümü bağlam menüleri ve denetimleri Düzenleyicisi'nde kontrol edebilirsiniz. Bu bölümdeki sayfaları bu özellikler ile çalışma konusunda ayrıntılı bilgi vermektedir.  
@@ -33,7 +30,7 @@ Dil hizmeti veya bir metin görünümü bağlam menüleri ve denetimleri Düzenl
  [Bağlam menüleri](../extensibility/context-menus.md)  
  Düzenleyici bağlam menüleri açıklar.  
   
- [Nasıl yapılır: durum çubuğunda güncelleştirme](../extensibility/how-to-update-the-status-bar.md)  
+ [Nasıl yapılır: Durum çubuğunda güncelleştirme](../extensibility/how-to-update-the-status-bar.md)  
  Güncelleştirme için yönergeler sağlar **durum çubuğu**.  
   
 ## <a name="related-sections"></a>İlgili bölümler  

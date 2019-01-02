@@ -1,8 +1,6 @@
 ---
 title: MSBuild satır içi görevleri ile RoslynCodeTaskFactory | Microsoft Docs
-ms.custom: ''
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887756"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild satır içi görevleri RoslynCodeTaskFactory ile
 Benzer şekilde [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory satır içi görevleri olarak kullanım için bellek içi görev derlemeleri oluşturmak için platformlar arası Roslyn derleyicileri kullanır.  RoslynCodeTaskFactory görevleri hedef .NET Standard ve .NET Framework ve .NET Core çalışma zamanlarını ve bunun yanı sıra Linux ve Mac OS gibi diğer platformlarda çalışabilir.
@@ -257,4 +255,4 @@ Bu satır içi görevleri yolları Birleştir ve dosya adını alın.
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
- [İzlenecek yol: satır içi göre oluşturma](../msbuild/walkthrough-creating-an-inline-task.md)
+ [İzlenecek yol: Satır içi göre oluşturma](../msbuild/walkthrough-creating-an-inline-task.md)

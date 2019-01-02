@@ -1,9 +1,6 @@
 ---
 title: Kaynak Denetimi Eklentisi oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 361ad46c781f9e29c7c99fa4340433583571d811
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f8b6578923134d1aaaeb2c60eb118ab66e71d27e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888094"
 ---
 # <a name="create-a-source-control-plug-in"></a>Kaynak Denetimi Eklentisi oluşturma
 Visual Studio SDK'sı, kaynak denetim yeteneği eklemenize olanak sağlayan kaynaklar sağlayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Bu belgede özetlenen kaynak denetimi eklentisi API ile uyumlu herhangi bir eklentinin DLL kullanmanıza imkan tanır.  
