@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931183"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki Klavye Kısayollarını Tanımlama ve Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Visual Studio komutları için kısayollar tanımlayabilir, bu kısayolları öz
      Örneğin, seçebileceğiniz **genel** kısayolun her bağlamda çalışmasını istiyorsanız. Başka bir düzenleyicide Genel olarak eşlenmemiş herhangi bir kısayolu kullanabilirsiniz. Aksi takdirde düzenleyici kısayolu geçersiz kılar.
 
     > [!NOTE]
-    >  Bir klavye kısayolunu parçası olarak şu tuşları atayamazsınız **genel**: yazdırma ekran/Sys Rq, kaydırma Lock, Pause/Break, sekme, Caps Lock, INSERT, Home, End, Page Up, Page Down, Windows logosu tuşu, uygulama anahtarı, herhangi bir ok anahtarları veya Enter; Num Lock, Delete veya sayısal tuş takımındaki; temizleyin veya Ctrl + Alt + Delete.
+    >  Bir klavye kısayolunu parçası olarak şu tuşları atayamazsınız **genel**: Ekran/Sys Rq, Scroll Lock, Pause/Break, sekme, Caps Lock, INSERT, giriş, End, Page Up, Page Down, Windows logosu tuşu, uygulama tuşu, ok tuşlarını veya Enter'ı yazdırmak; Num Lock, Delete veya sayısal tuş takımındaki; temizleyin veya Ctrl + Alt + Delete.
 
 6.  İçinde **kısayol tuşlarına basın** kutusunda, kullanmak istediğiniz kısayolu girin.
 

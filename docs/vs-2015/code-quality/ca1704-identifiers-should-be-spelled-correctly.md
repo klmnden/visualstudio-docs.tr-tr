@@ -1,12 +1,11 @@
 ---
-title: 'CA1704: Tanımlayıcılar doğru yazılmalıdır | Microsoft Docs'
+title: 'CA1704: Tanımlayıcıları yazıldığından | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5f25dab8805906333a0be417dc16c8dd7aa4cf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850053"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Tanımlayıcılar doğru yazılmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,13 +55,13 @@ ms.locfileid: "49827551"
   Varsayılan olarak, yazım denetimcisi (TR) İngilizce sürümü kullanılır. Diğer bir dil sözlükleri şu anda kullanılabilir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Bu kural ihlalini düzeltmek için sözcük yazımını düzeltin veya word CustomDictionary.xml adlı bir özel sözlüğüne ekleyin. Sözlük proje dizinine aracının yükleme dizininde veya kullanıcı profili altındaki aracı ile ilişkili dizine yerleştirin (%USERPROFILE%\Application veri\\...). Bir projeye özel sözlük ekleme hakkında bilgi edinmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bkz: [nasıl yapılır: kod çözümleme dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Bu kural ihlalini düzeltmek için sözcük yazımını düzeltin veya word CustomDictionary.xml adlı bir özel sözlüğüne ekleyin. Sözlük proje dizinine aracının yükleme dizininde veya kullanıcı profili altındaki aracı ile ilişkili dizine yerleştirin (%USERPROFILE%\Application veri\\...). Bir projeye özel sözlük ekleme hakkında bilgi edinmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bkz: [nasıl yapılır: Kod çözümleme dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - Sözlük/sözcükleri/Recognized yolunda bir ihlali oluşmamalıdır sözcükler ekleyin.
 
 - Sözlük/sözcükleri/tanınmayan yolunda bir ihlali neden olmamalıdır sözcükler ekleyin.
 
-- Sözlük/sözcükleri/kullanım dışı yolunda geçersiz olarak işaretlenmiş sözcükler ekleyin. İlişkili kural konusuna [CA1726: tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)daha fazla bilgi için.
+- Sözlük/sözcükleri/kullanım dışı yolunda geçersiz olarak işaretlenmiş sözcükler ekleyin. İlişkili kural konusuna [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)daha fazla bilgi için.
 
 - Sözlük/kısaltmalar/CasingExceptions yoluna kısaltma büyük/küçük harf kuralları için özel durumlar ekleyin.
 
@@ -99,7 +98,7 @@ ms.locfileid: "49827551"
 
  [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
  [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
@@ -108,7 +107,4 @@ ms.locfileid: "49827551"
  [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Nasıl yapılır: Kod Çözümleme Dizinini Özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
-
-
-
+ [Nasıl yapılır: Kod çözümleme dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

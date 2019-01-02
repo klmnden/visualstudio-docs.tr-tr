@@ -1,8 +1,7 @@
 ---
-title: 'CA1000: Genel türlerde statik üyeleri belirtme'
+title: 'CA1000: Genel türlerde statik üyeleri bildirmeyin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec0e60302e1d6bff813a7bf0f39e1b71a6f1653
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f4f0a21f685cc4ff1edc54aa8002d6ecb3c28b9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890527"
 ---
-# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Genel türlerde statik üyeleri belirtme
+# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Genel türlerde statik üyeleri bildirmeyin
 
 |||
 |-|-|
@@ -78,7 +77,7 @@ someObject.GenericMethod<int>();
 
  [CA1003: Genel olay işleyici örnekleri kullan](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Uygun yerlerde genel türler kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Uygun yerlerde genel türleri kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
  [Genel Türler](/dotnet/csharp/programming-guide/generics/index)

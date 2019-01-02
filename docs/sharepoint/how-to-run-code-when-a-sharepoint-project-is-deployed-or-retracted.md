@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma kodu bir SharePoint projesi dağıtıldığında veya geri çekildiğinde olan | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma kodu bir SharePoint projesi dağıtıldığında veya geri çekildiğinde olan | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,25 +12,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933628"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Nasıl yapılır: bir SharePoint projesine dağıtılan ya da geri çekilebilir kodu çalıştırın.
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Nasıl Yapılır: Bir SharePoint projesine dağıtılan ya da geri çekilebilir kodu çalıştırın.
   Bir SharePoint projesine dağıtılan ya da geri çekilebilir ek görevleri gerçekleştirmek istiyorsanız, Visual Studio tarafından oluşturulan olayları işleyebilir. Daha fazla bilgi için [genişletmek SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Bir SharePoint projesi kodu çalıştırmak için dağıtılan geri çekilebilir veya  
   
 1. Bir proje öğesi uzantısı, bir proje uzantısı veya yeni bir proje öğesi türü tanımını oluşturun. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
-   -   [Nasıl yapılır: bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+   -   [Nasıl yapılır: Bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-   -   [Nasıl yapılır: bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+   -   [Nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-   -   [Nasıl yapılır: bir SharePoint proje öğesi türü tanımlama](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+   -   [Nasıl yapılır: Bir SharePoint proje öğesi türü tanımlama](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2. Uzantı, erişim <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> nesne. Daha fazla bilgi için [nasıl yapılır: SharePoint Proje hizmetini alma](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
@@ -58,5 +55,4 @@ ms.locfileid: "49832452"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Nasıl yapılır: dağıtım adımları yürütüldüğünde kodu çalıştırma](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  
+ [Nasıl yapılır: Dağıtım adımları yürütüldüğünde kodu çalıştırma](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  

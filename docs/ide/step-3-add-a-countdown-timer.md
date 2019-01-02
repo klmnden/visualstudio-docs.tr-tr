@@ -1,9 +1,7 @@
 ---
-title: '3. adım: geri sayım Zamanlayıcısı ekleme'
-ms.custom: ''
+title: '3. Adım: Bir geri sayım Zamanlayıcısı ekleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
@@ -11,53 +9,53 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7cf75b23b74753b875aafb43a5dd331b18c623
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c259f8cae798db3ed79329276c95135a9b607541
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962564"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>3. adım: geri sayım Zamanlayıcısı ekleme
-Bu öğreticinin üçüncü bölümünde test alanın tamamlamak kalan saniye sayısını izlemek için geri sayım Zamanlayıcısı ekleyeceksiniz.
+# <a name="step-3-add-a-countdown-timer"></a>3. Adım: Bir geri sayım Zamanlayıcısı ekleme
+Bu Eğitimin üçüncü kısmında sınava giren bitirmek kalan saniye sayısını izlemek için bir geri sayım Zamanlayıcısı ekleyeceksiniz.
 
 > [!NOTE]
->  Bu konuda bir öğretici serisi kodlama temel kavramları hakkında bir parçasıdır. Öğretici genel bakış için bkz: [Eğitmen 2: zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+>  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Bir geri sayım Zamanlayıcısı ekleme
 
-1.  Adlı bir tamsayı değişken Ekle **timeLeft**, önceki yordamda yaptığınız gibi. Kodunuzu aşağıdaki gibi görünmelidir.
+1.  Adlı bir tam sayı değişkeni ekleyin **timeLeft**, önceki yordamda yaptığınız gibi. Kodunuzu aşağıdaki gibi görünmelidir.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
-     Şimdi gerçekte, belirttiğiniz süre miktarını sonra bir olay başlatır bir süreölçer gibi saniye sayısı bir yöntem gerekir.
+     Şimdi, aslında bir olay başlatır, belirttiğiniz süre miktarını sonra bir Zamanlayıcı gibi saniye sayan bir yöntem gerekir.
 
-2.  Tasarım penceresinde taşımak bir <xref:System.Windows.Forms.Timer> gelen denetim **bileşenleri** kategorisini **araç** formunuza.
+2.  Tasarım penceresinde Taşı bir <xref:System.Windows.Forms.Timer> denetimi **bileşenleri** kategorisi **araç kutusu** formunuza.
 
-     Tasarım pencerenin altındaki gri alanında denetimi görünür.
+     Denetim tasarım penceresinin altındaki gri alanda görüntülenir.
 
-3.  Form üzerinde seçin **Süreölçer1** yalnızca eklenen ve ayarlama simgesi kendi **aralığı** özelliğine **1000**.
+3.  Form üzerinde seçin **Süreölçer1** yalnızca eklenen ve Ayarla simgesi kendi **aralığı** özelliğini **1000**.
 
-     Aralık değeri milisaniye cinsinden bir değer 1000 neden olduğundan <xref:System.Windows.Forms.Timer.Tick> saniyede tetiklenecek olay.
+     Aralık değeri milisaniye cinsinden değeri 1000 neden olduğundan <xref:System.Windows.Forms.Timer.Tick> her saniye tetiklenmesine olay.
 
-4.  Form üzerinde çift **Zamanlayıcı** denetimine veya onu seçin ve ardından **Enter** anahtarı.
+4.  Formda çift **Zamanlayıcı** denetleyen veya bunu seçin ve ardından **Enter** anahtarı.
 
-     Kod Düzenleyicisi görünür ve eklediğiniz onay olay işleyicisi için yöntemini görüntüler.
+     Kod Düzenleyicisi görünür ve yeni eklediğiniz Tick olay işleyicisinin yöntemini görüntüler.
 
-5.  Yeni bir olay işleyicisi yöntemi aşağıdaki deyimleri ekleyin.
+5.  Aşağıdaki deyimleri yeni olay işleyici yöntemine ekleyin.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
 
-     Belirleyerek zaman bitti olup olmadığını, eklediğiniz üzerinde bağlı olarak, Zamanlayıcı saniyede denetler olup olmadığını **timeLeft** 0'dan büyük tamsayı değişken. Saat ise, hala kalır. Zamanlayıcı ilk timeLeft 1 çıkarır ve ardından güncelleştirmeleri **metin** özelliği **timeLabel** kaç saniye kaldı test alanın göstermek için denetim.
+     Zaman belirleyerek aşımına uğrayıp, eklediğiniz üzerinde bağlı olarak, Zamanlayıcı saniyede denetler olmadığını **timeLeft** tamsayı değişkeninin 0'dan büyük. İse, zaman kalıyor. Zamanlayıcı ilk Timeleft'ten 1 çıkarır ve ardından güncelleştirmeleri **metin** özelliği **timeLabel** sınava kaç saniye kaldığını göstermek için denetim.
 
-     Hiçbir zaman kalırsa, Zamanlayıcı durdurur ve metnini değiştirir **timeLabel** gösterir, böylece denetim **zaman yukarı!** Test bittiğinde ve yanıt ortaya bir ileti kutusu sunar — bu durumda, ekleyerek addend1 ve addend2. **Etkin** özelliği **startButton** denetim ayarlanmış **true** test alanın başka bir test başlatabilirsiniz.
+     Hiçbir zaman kalırsa, Zamanlayıcıyı durdurur ve metnini değiştirir **timeLabel** , denetiminin **saatin yukarı!** Bir mesaj kutusu sınavın ve yanıt açıklanır sunar; bu durumda addend1 ve addend2 ekleyerek tarafından. **Etkin** özelliği **startButton** denetim ayarı **true** sınavı alanın başka bir test başlayabilmesi.
 
-     Yeni eklediğiniz bir `if else` kararlar almak için programlar nasıl çalıştığını bildiren olan ifade. Bir `if else` deyimi aşağıdaki gibi görünür.
+     Az önce eklediğiniz bir `if else` kararlar programların nasıl size deyimi. Bir `if else` deyimi aşağıdaki gibi görünür.
 
     > [!NOTE]
-    >  Aşağıdaki örnekte yalnızca gösterim amacıyla olduğu-projenize eklemeyin.
+    >  Aşağıdaki örnek yalnızca gösterim amaçlıdır-projenize eklemeyin.
 
     ```vb
     If (something that your program will check) Then
@@ -82,30 +80,30 @@ Bu öğreticinin üçüncü bölümünde test alanın tamamlamak kalan saniye sa
     }
     ```
 
-     Bakabilir yakından eklediğiniz deyimi `else` toplama problemi yanıtı göstermek için blok.
+     Yakından bakın eklediğiniz deyime `else` ek soruya yanıtı göstermek için blok.
 
      [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
      [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]
 
-     Deyim `addend1 + addend2` iki değişken değerleri toplar. İlk bölümü (`sum.Value`) kullanan **değeri** Sum doğru yanıt görüntülenecek NumericUpDown denetimi özelliği. Aynı özelliği daha sonra test için yanıtları denetlemek için kullanın.
+     Deyim `addend1 + addend2` iki değişkendeki değerleri toplar. İlk Kısım (`sum.Value`) kullanan **değer** özelliğini doğru yanıtı görüntülemek için NumericUpDown denetimi. Aynı özellik daha sonra sınavın yanıtlarını denetlemek için kullanın.
 
-     Test tutmayı girebilirsiniz numaralarını daha kolay kullanarak bir <xref:System.Windows.Forms.NumericUpDown> matematik sorunlara yanıtlar için kullandığınız neden olan denetim. Olası yanıtlar tam sayılar 0 ile 100 arasında tümü. Varsayılan değerleri bırakarak **Minimum**, **maksimum**, ve **ondalık basamaklar** özellikleri, emin test tutmayı gönderilemiyor ondalık girin, negatif sayıları, veya çok yüksek sayılar. (Test tutmayı 3,141 girmek izin istedi, ancak değil 3.1415, ayarlayabilirsiniz **ondalık basamaklar** özelliği 3.)
+     Sınava girenlerin sayı girebilir, daha kolay kullanarak bir <xref:System.Windows.Forms.NumericUpDown> matematik sorularının yanıtları için kullandığınız neden olan denetim. Olası yanıtların tümü 0 ile 100 arası tamsayılardır. Varsayılan değerlerini bırakarak tarafından **Minimum**, **maksimum**, ve **OndalıkBasamaklar** özellikleri, emin sınava girenlerin ondalık girin olamaz, negatif sayılar, veya çok yüksek sayılar. (Sınava girenlerin 3.141 girmek izin vermek istediyseniz ama 3.1415, ayarladığınız, **OndalıkBasamaklar** özelliğini 3.)
 
-6.  Üç satır sonuna ekleyin `StartTheQuiz()` yöntemi kodu aşağıdaki gibi görünür.
+6.  Sonuna üç satır ekleyin `StartTheQuiz()` yöntemi, kod aşağıdaki gibi görünür.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
-     Şimdi, test başladığında, **timeLeft** değişkenini 30 ve **metin** özelliği **timeLabel** denetim 30 saniyeye ayarlayın. Ardından <xref:System.Windows.Forms.Timer.Start> Zamanlayıcı denetim yöntemi geri sayım başlatır. (Test yanıt henüz denetlemez — sonraki gelen.)
+     Artık sınavınız başladığında, **timeLeft** değişkenini 30 ve **metin** özelliği **timeLabel** denetimi, 30 saniye olarak ayarlanır. Ardından <xref:System.Windows.Forms.Timer.Start> Zamanlayıcı denetimi yöntemi geri sayımı başlatır. (Sınav yanıtı henüz denetlemedi; sonraki gelen.)
 
-7.  Programınızı kaydetmek, çalıştırın ve ardından **Başlat** formundaki düğmesi.
+7.  Programınızı kaydedin, çalıştırın ve ardından **Başlat** formundaki düğmesi.
 
-     Sayılacak süreölçer başlatır. Ne zaman çıkış test uçları çalıştığında ve yanıt görünür. Aşağıdaki çizimde test göstermektedir.
+     Zamanlayıcı saymaya başlar. Zaman zaman sınav sona erer ve yanıtlar görünür. Aşağıdaki çizim sınavı göstermektedir.
 
-     ![Devam eden matematik testi](../ide/media/express_addcountdown.png) matematik testi sürüyor
+     ![Matematik sınavı devam ediyor](../ide/media/express_addcountdown.png) matematik sınavı devam ediyor
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Öğretici bir sonraki adıma dönmek için bkz: [4. adım: CheckTheAnswer() yöntemi ekleme](../ide/step-4-add-the-checktheanswer-parens-method.md).
+-   Sonraki öğretici adımına gitmek için bkz: [4. adım: CheckTheAnswer() yöntemi ekleme](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
--   Eğitmen önceki adıma dönmek için bkz: [2. adım: rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).
+-   Önceki öğretici adımına dönmek için bkz: [2. adım: Rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).

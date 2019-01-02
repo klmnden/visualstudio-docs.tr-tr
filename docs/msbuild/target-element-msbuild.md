@@ -1,8 +1,6 @@
 ---
 title: Hedef öğe (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965255"
 ---
 # <a name="target-element-msbuild"></a>Hedef öğe (MSBuild)
 İçin görevler kümesini içeren [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ardışık olarak yürütmek için.  
@@ -62,8 +60,8 @@ ms.locfileid: "49918798"
 |---------------|-----------------|  
 |`Name`|Gerekli öznitelik.<br /><br /> Hedefin adı.|  
 |`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. İçin değerlendirilen koşul yoksa `false`, hedef hedefi ya da ayarlanmış olan tüm aracıların gövdesini yürütmez `DependsOnTargets` özniteliği. Koşullar hakkında daha fazla bilgi için bkz. [koşullar](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|İsteğe bağlı öznitelik.<br /><br /> Bu hedefin giriş oluşturan dosyalar. Birden çok dosya noktalı virgül ile ayrılır. Damgaları Çıkıştaki dosyaların zaman damgaları Çıkıştaki dosyaların zaman ile karşılaştırıldığında `Outputs` belirlemek için olup olmadığını `Target` güncel. Daha fazla bilgi için [artımlı derlemeleri](../msbuild/incremental-builds.md), [nasıl yapılır: artımlı olarak derleme](../msbuild/how-to-build-incrementally.md), ve [dönüştüren](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|İsteğe bağlı öznitelik.<br /><br /> Form bu hedefe çıkarır dosyalar. Birden çok dosya noktalı virgül ile ayrılır. Damgaları Çıkıştaki dosyaların zaman damgaları Çıkıştaki dosyaların zaman ile karşılaştırıldığında `Inputs` belirlemek için olup olmadığını `Target` güncel. Daha fazla bilgi için [artımlı derlemeleri](../msbuild/incremental-builds.md), [nasıl yapılır: artımlı olarak derleme](../msbuild/how-to-build-incrementally.md), ve [dönüştüren](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|İsteğe bağlı öznitelik.<br /><br /> Bu hedefin giriş oluşturan dosyalar. Birden çok dosya noktalı virgül ile ayrılır. Damgaları Çıkıştaki dosyaların zaman damgaları Çıkıştaki dosyaların zaman ile karşılaştırıldığında `Outputs` belirlemek için olup olmadığını `Target` güncel. Daha fazla bilgi için [artımlı derlemeleri](../msbuild/incremental-builds.md), [nasıl yapılır: Artımlı olarak derleme](../msbuild/how-to-build-incrementally.md), ve [dönüştüren](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|İsteğe bağlı öznitelik.<br /><br /> Form bu hedefe çıkarır dosyalar. Birden çok dosya noktalı virgül ile ayrılır. Damgaları Çıkıştaki dosyaların zaman damgaları Çıkıştaki dosyaların zaman ile karşılaştırıldığında `Inputs` belirlemek için olup olmadığını `Target` güncel. Daha fazla bilgi için [artımlı derlemeleri](../msbuild/incremental-builds.md), [nasıl yapılır: Artımlı olarak derleme](../msbuild/how-to-build-incrementally.md), ve [dönüştüren](../msbuild/msbuild-transforms.md).|  
 |`Returns`|İsteğe bağlı öznitelik.<br /><br /> Bu hedef, örneğin, MSBuild görevleri çağıran görevler için kullanılabilir hale getirilir öğeleri kümesi. Birden çok hedefe, noktalı virgül ile ayrılır. Hedef dosya yoksa `Returns` öznitelikler yerine bu amaç için kullanılan çıkış öznitelikleri.|  
 |`KeepDuplicateOutputs`|İsteğe bağlı Boolean özniteliği.<br /><br /> Varsa `true`, birden fazla başvuru aynı öğe hedef olarak kaydedilir.  Varsayılan olarak, bu özniteliktir `false`.|  
 |`BeforeTargets`|İsteğe bağlı öznitelik.<br /><br /> Hedef adları noktalı virgülle ayrılmış listesi.  Bu seçenek belirtildiğinde, bu hedefe belirtilen hedef veya hedefleri önce çalışması gerektiğini belirtir. Bu, doğrudan değiştirmeden hedefleri var olan bir dizi genişletme proje yazarı olanak tanır. Daha fazla bilgi için [hedef derleme sırası](../msbuild/target-build-order.md).|  

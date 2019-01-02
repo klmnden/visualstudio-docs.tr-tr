@@ -1,8 +1,6 @@
 ---
 title: VCMessage görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f51abd957f5a39cdc3af1f34bf3af28999ab80fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928967"
 ---
 # <a name="vcmessage-task"></a>VCMessage görevi
 Uyarı günlükleri ve bir yapı sırasında hata iletileri.  
@@ -41,7 +39,7 @@ Uyarı günlükleri ve bir yapı sırasında hata iletileri.
 |---------------|-----------------|  
 |**Bağımsız Değişkenler**|İsteğe bağlı **dize** parametresi.<br /><br /> Görüntülenecek iletiler noktalı virgülle ayrılmış listesi.|  
 |**Kod**|Gerekli **dize** parametresi.<br /><br /> İleti niteleyen hata numarası.|  
-|**Türü**|İsteğe bağlı **dize** parametresi.<br /><br /> Yaymak üzere ileti türünü belirtir. "Uyarı" bir uyarı iletisi göstermek için oluşturabilir veya bir hata iletisi göstermek için "Error" belirtin.|  
+|**Tür**|İsteğe bağlı **dize** parametresi.<br /><br /> Yaymak üzere ileti türünü belirtir. "Uyarı" bir uyarı iletisi göstermek için oluşturabilir veya bir hata iletisi göstermek için "Error" belirtin.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)

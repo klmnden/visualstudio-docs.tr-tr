@@ -1,9 +1,7 @@
 ---
 title: Visual Studio'da Office çözümleri mimarisi
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5916ca091d7479b76c21aff914811d090f6667
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837988"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio'da Office çözümleri mimarisi
   Bu bölümdeki konular, Visual Studio'da Office geliştirme araçları kullanılarak oluşturulmuş çözümleri nasıl çalıştığı hakkında bilgi sağlar.  
@@ -59,5 +57,3 @@ ms.locfileid: "53247906"
   
  [Genel başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Office projeleri ve API'ler için Office projeleri, uygulama ve dağıtım bildirimlerini arabirimi öğelerinde kullanıcı hakkındaki bilgilere bağlantılar sağlar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
-  
-  

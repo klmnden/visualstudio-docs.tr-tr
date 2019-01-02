@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: Hizmetleri sorunlarını giderme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Hizmetleri sorunlarını giderme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2e1e59b5d2bd1210511b355676407a1368143f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877948"
 ---
-# <a name="how-to-troubleshoot-services"></a>Nasıl yapılır: hizmetlerde sorun giderme
+# <a name="how-to-troubleshoot-services"></a>Nasıl Yapılır: Hizmetleri sorunlarını giderme
 Bir hizmet almayı deneyin gerektiğinde oluşabilecek bazı ortak sorunlar vardır:  
   
 - Hizmet ile kayıtlı değil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -41,7 +38,7 @@ if (log == null) return;
   
 ## <a name="to-troubleshoot-a-service"></a>Bir hizmette sorun gidermek için  
   
-1. Hizmet doğru şekilde kayıtlı olup olmadığını görmek için sistem kayıt defterine inceleyin. Daha fazla bilgi için [nasıl yapılır: bir hizmet sağlamak](../extensibility/how-to-provide-a-service.md).  
+1. Hizmet doğru şekilde kayıtlı olup olmadığını görmek için sistem kayıt defterine inceleyin. Daha fazla bilgi için [nasıl yapılır: Bir hizmetin](../extensibility/how-to-provide-a-service.md).  
   
     Aşağıdaki *.reg* dosya parça gösterir nasıl SVsTextManager hizmet kayıtlı:  
   

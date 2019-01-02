@@ -1,8 +1,6 @@
 ---
 title: Çağrı yığınının görsel haritasını oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -31,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960845"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Hata ayıklama sırasında çağrı yığınının görsel haritasını oluşturma 
 
 Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Haritası oluşturun. Kodun ne yaptığını, böylece hata bulmaya odaklanabilirsiniz izlemek için harita üzerinde not alabilirsiniz.
 
-Bir kılavuz için şu videoyu izleyin: [Video: (kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
+Bir kılavuz için şu videoyu izleyin: [Video: (Kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Komutlar ve kod haritaları ile kullanabileceğiniz Eylemler ayrıntıları için bkz: [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
 

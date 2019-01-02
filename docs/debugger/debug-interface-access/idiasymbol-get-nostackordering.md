@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_nostackordering | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f0b0b25c90a4cba2de6fb45164d9a6bf77446c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b9f570c6ae2e101e319d9789c7e8c7d391008c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963595"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 Bu işlev, yığın sıralama yok yığın arabelleği denetimi bir parçası olarak yapılıyordu olup olmadığını gösteren bir bayrak alır ([/GS (arabellek güvenlik denetimi)](/cpp/build/reference/gs-buffer-security-check) derleyici seçeneği).  

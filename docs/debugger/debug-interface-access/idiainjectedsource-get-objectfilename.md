@@ -1,8 +1,6 @@
 ---
 title: Idiaınjectedsource::get_objectfilename | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bb9297ab7a572572a35df3521236267ebd87e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98ec28996a217c2472a992fa44bed228a147987f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949438"
 ---
 # <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
 Kaynak için derlenen nesne dosyası adını alır.  
@@ -27,7 +25,7 @@ Kaynak için derlenen nesne dosyası adını alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_objectFilename (   
+HRESULT get_objectFilename (   
    BSTR* pRetVal  
 );  
 ```  

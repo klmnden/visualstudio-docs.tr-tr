@@ -1,8 +1,6 @@
 ---
 title: Profil oluşturma HPC (yüksek performanslı hesaplama) kümelerinde | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856664"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC (yüksek performanslı hesaplama) profili kümeleri
 
@@ -56,7 +54,7 @@ Bir HPC işlem düğümünde profili oluşturmak için aşağıdakileri yapmanı
 |------------------| - |
 | *%HeadNode%* | Küme baş düğümü adı. |
 | *%FxPath%* | Yolu [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] yükleyici. Visual Studio yükleme medyasında yoludur: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Visual Studio yükleme medyasında yoludur: tek başına Profiler\x64\vs_profiler.exe |
+| *%ProfilerPath%* | Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Visual Studio yükleme medyasında yoludur: Tek başına Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profil
 
@@ -150,4 +148,3 @@ HPC profili oluşturma Sihirbazı HPC başlatma özellikleri sayfasında perform
 | **Profil öncesi betik bağımsız değişkenleri** | Ön profili betiğe geçirilecek bağımsız değişkenleri belirtir. |
 | **Sonrası komut dosyası profil** | Profil oluşturma oturumu sona erdikten sonra yerel geliştirme bilgisayarınızda çalıştırılacak bir komut dosyası yolu ve dosya adını belirtir. |
 | **Profil sonrası betik bağımsız değişkenleri** | Sonrası profili betiğe geçirilecek bağımsız değişkenleri belirtir. |
-

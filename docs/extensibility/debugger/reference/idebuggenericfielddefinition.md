@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericFieldDefinition | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91906fa4e4b76f8d9c43c3a181dd0e8781219587
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4f81691f60619cd9442e86b155850cd29e2cbd5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896594"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 Yönetilen kod genel bir tür için bir alan tanımını temsil eder.  
@@ -30,17 +27,17 @@ IDebugGenericFieldDefinition : IUnknown
 ```  
   
 ## <a name="methods"></a>Yöntemler  
- Bu arabirim, aşağıdaki yöntemlerden uygular:  
+ Bu arabirim, aşağıdaki yöntemleri uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Tür bağımsız değişkenleri dizisini verilen bir alan örneği oluşturur.|  
-|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Parametrelerin sayısı verilen tür parametreleri alır.|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Tür parametreleri genel alanıyla ilişkili sayısını alır.|  
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Tür bağımsız değişkenleri dizisini verilen bir alanda örneği oluşturur.|  
+|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Parametre sayısı belirtilen tür parametreleri alır.|  
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Tür parametreleri genel bir alanla ilişkili sayısını alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Sh.h  
+ Üst bilgi: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

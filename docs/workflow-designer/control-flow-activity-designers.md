@@ -1,25 +1,24 @@
 ---
-title: İş Akışı Tasarımcısı - denetim akışı etkinlik tasarımcıları
+title: İş Akışı Tasarımcısı - akış etkinliği tasarımcılarını denetleme
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 17f8ee8f97c172546867a552b32f2640d42bc91f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935521"
 ---
 # <a name="control-flow-activity-designers"></a>Akış Etkinliği Tasarımcılarını denetleme
 
-İş Akışı Tasarımcısı, iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinliklerin sayısını içerir. Bu bölüm, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikleri içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağını hakkında rehberlik sağlar.
+İş Akışı Tasarımcısı kullanarak iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikler içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.
 
 ## <a name="reference"></a>Başvuru
 
@@ -53,7 +52,7 @@ Etkinlik tasarımcıları diğer türleri için aşağıdaki konulara bakın:
 
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)
 
- [Mesajlaşma](../workflow-designer/messaging-activity-designers.md)
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
 
  [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)
 

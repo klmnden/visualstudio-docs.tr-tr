@@ -1,8 +1,6 @@
 ---
 title: Idiaenumdebugstreamdata::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 781fd79611e8de323085ed73dc7682808d69b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958390"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Belirtilen sayıda numaralandırılan sıralı kayıtları alır.  
@@ -27,7 +25,7 @@ Belirtilen sayıda numaralandırılan sıralı kayıtları alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG  celt,  
    DWORD  cbData,  
    DWORD* pcbData,  

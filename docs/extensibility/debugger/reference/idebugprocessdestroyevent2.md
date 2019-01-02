@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessDestroyEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcessDestroyEvent2
@@ -15,37 +12,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9122c161a0ce308c7bd2e46cb6d56c32ada85fbc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f7b594e87780e1b81ea24ee1f1a94b43eba2095
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947754"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
-Bir işlem sonlandırıldı, beklenmedik şekilde çıkar veya gelen ayrılmış olduğunda bu arabirim gönderilir.  
+Bu arabirim, bir işlem sonlandırılır, beklenmedik şekilde çıkar veya öğesinden ayrıldı gönderilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDebugProcessDestroyEvent2 : IUnknown  
+IDebugProcessDestroyEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) veya özel bir bağlantı noktası tedarikçi bir işlem sonlandırıldı raporlamak için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirimi uygulanan, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi.  
+ Hata ayıklama altyapısı (DE) veya özel bağlantı noktası sağlayıcısı, bir işlem sonlandırıldı bildirmek için bu arabirimi uygulayın. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- DE ya da özel bir bağlantı noktası tedarikçi oluşturur ve bir işlemin sonlandırılması raporlamak için bu olay nesnesi gönderir. Kullanarak, bu olay DE gönderir [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanacak programın eklendiğinde, SDM tarafından sağlanan geri çağırma işlevi. Bu olayı kullanarak özel bir bağlantı noktası tedarikçi gönderir [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) arabirimi.  
+ DE veya özel bağlantı noktası sağlayıcısı oluşturur ve bu olay bir işlemin sonlandırılması rapor nesnesine gönderir. Kullanarak DE bu olay gönderen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi. Özel bağlantı noktası sağlayıcısı kullanarak bu olay gönderir [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) arabirimi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)

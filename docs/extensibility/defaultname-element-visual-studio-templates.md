@@ -1,6 +1,5 @@
 ---
 title: DefaultName öğesi (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29e64b046187b21fec91381e6d4bbb14c3e0f393
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 37c92b6b1fe400e859971a4233daff8d00ddac6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885362"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName öğesi (Visual Studio şablonları)
 Oluşturulduğunda, Visual Studio Proje sistemi oluşturacak proje veya öğe için ad belirtir.  

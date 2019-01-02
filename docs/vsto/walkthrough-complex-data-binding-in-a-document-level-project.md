@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964065"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede karmaşık veri bağlama ilişkin temel bilgileri gösterir. Alanları Northwind SQL Server veritabanındaki birden çok hücre Microsoft Office Excel çalışma sayfasındaki bağlayabilirsiniz.  
@@ -181,7 +178,7 @@ ms.locfileid: "49841890"
   
 2. Aşağıdaki bilgileri boş satır ekleyin.  
   
-   |EmployeeID|Soyadı|FirstName|Başlık|  
+   |EmployeeID|LastName|FirstName|Başlık|  
    |----------------|--------------|---------------|-----------|  
    |10|Aslan|Halil|Satış Yöneticisi|  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841890"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bu izlenecek yol, bir tablo, Liste nesnesine bir veritabanında bağlama hakkındaki temel bilgileri gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:  
   
--   Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Çözümü dağıtın. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
   
--   Bir alan ve tablo arasında bir ana/ayrıntı ilişkisi oluşturun. Daha fazla bilgi için [izlenecek yol: önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Bir alan ve tablo arasında bir ana/ayrıntı ilişkisi oluşturun. Daha fazla bilgi için [izlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
  [İzlenecek yol: Belge düzeyi projede basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  

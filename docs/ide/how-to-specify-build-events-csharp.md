@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: belirtin derleme olayları (C#)'
+title: 'Nasıl Yapılır: Derleme olayları belirtme (C#)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964682"
 ---
-# <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: belirtin derleme olayları (C#)
+# <a name="how-to-specify-build-events-c"></a>Nasıl Yapılır: Derleme olayları belirtme (C#)
 
 Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için derleme olaylarını kullanma. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütülür.
 
@@ -61,7 +60,7 @@ Bir proje oluşturulduğunda, derleme öncesi olayları adlı bir dosyaya eklene
     > [!NOTE]
     > Derleme öncesi veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Örnek: derleme sonrası olay kullanarak bildirim bilgileri değiştirmek üzere nasıl
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgileri değiştirme
 
 Aşağıdaki yordamı kullanarak uygulama bildiriminde minimum işletim sistemi sürümü ayarlamak gösterilmiştir bir *.exe* bir derleme sonrası olay çağrılan komut ( *. exe.manifest* dosyası Proje dizini). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört kısımlı bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildiriminin:
 
@@ -189,5 +188,5 @@ Aşağıdaki yordamı kullanarak uygulama bildiriminde minimum işletim sistemi 
 
 - [Derleme olayları sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Nasıl yapılır: belirtin derleme olayları (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)

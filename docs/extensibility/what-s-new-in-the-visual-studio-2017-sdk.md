@@ -1,9 +1,6 @@
 ---
 title: Hangi&#39;'teki Visual Studio 2017 SDK'sı | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952215"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Hangi&#39;'teki Visual Studio 2017 SDK'sı
 
@@ -41,7 +38,7 @@ Bu değişiklikler hakkında bilgi edinmek için aşağıdaki konulara bakın:
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Genişletilebilirlik projesi Visual Studio 2017'ye geçirme
 
-Genişletilebilirlik projelerinizi ve kendi VSIX bildirimlerini Visual Studio 2017'ye güncelleştirme hakkında bilgi edinmek için bkz: [nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Genişletilebilirlik projelerinizi ve kendi VSIX bildirimlerini Visual Studio 2017'ye güncelleştirme hakkında bilgi edinmek için bkz: [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="custom-project-and-item-templates"></a>Özel proje ve öğe şablonları
 
@@ -49,4 +46,4 @@ Visual Studio 2017'den itibaren özel Proje ve öğe şablonları için tarama a
 
 ## <a name="updated-extension-performance-guidelines"></a>Güncelleştirilmiş uzantısı performans yönergeleri
 
-Yeni bir [nasıl yapılır: uzantı performansını tanılama](how-to-diagnose-extension-performance.md) altında makalesi [yönetme VSPackages](managing-vspackages.md) algılamak ve Visual Studio uzantısı etkisini analiz etme göstermek için başlangıç ve çözüm yükleme süreleri.
+Yeni bir [nasıl yapılır: Uzantı performansını tanılama](how-to-diagnose-extension-performance.md) altında makalesi [yönetme VSPackages](managing-vspackages.md) algılamak ve Visual Studio uzantısı etkisini analiz etme göstermek için başlangıç ve çözüm yükleme süreleri.

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: görüntüleme ve gizleme yazmaç gruplarını | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Görüntüleme ve gizleme yazmaç gruplarını | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registergroups
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abd617a1b787896f296976ba21f76d3eafbd13c4
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 839ae628184250e276c27fccc80c6b9f8085fabd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846801"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Nasıl yapılır: görüntüleme ve gizleme yazmaç gruplarını (C#, C++, Visual Basic F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Nasıl Yapılır: Görüntüleme ve gizleme yazmaç gruplarını (C#, C++, Visual Basic F#)
 
 **Kaydeder** pencere, yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümünün **genel**kategorisi.
 
@@ -47,4 +45,4 @@ Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları gruplar hal
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../debugger/how-to-use-the-registers-window.md)
+- [Nasıl yapılır: Yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)

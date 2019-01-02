@@ -1,8 +1,6 @@
 ---
 title: ClickOnce uygulamalarında yerel ve uzak veri erişimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874884"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce uygulamalarında yerel ve uzak veri erişimi
 Çoğu uygulama veri üretir veya tüketir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Okuma ve yerel olarak ve uzaktan veri yazma için çeşitli seçenekler sunar.  
@@ -45,7 +43,7 @@ ms.locfileid: "49943056"
 >  Olduğunda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması kaldırıldığında, kendi veri dizini de kaldırılır. Hiçbir zaman son-kullanıcıya yönetilen belgeler gibi verilerini depolamak için veri dizini kullanın.  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>ClickOnce dağıtımında işareti veri dosyaları  
- Mevcut bir dosyayı veri dizini içine koymak için var olan dosyayı bir veri dosyası olarak işaretlemelisiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın uygulama bildirim dosyası. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasına bir veri dosyası dahil](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Mevcut bir dosyayı veri dizini içine koymak için var olan dosyayı bir veri dosyası olarak işaretlemelisiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın uygulama bildirim dosyası. Daha fazla bilgi için [nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>Okuma ve yazma için veri dizini  
  Veri dizini okuma gerektirir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama isteği okuma izni; benzer şekilde, dizine yazma izni gerektirir. Tam güven ile çalışacak şekilde yapılandırılmışsa, uygulamanızın otomatik olarak bu izne sahip. İzin yükseltilmesi ya da güvenilir uygulama dağıtımı'nı kullanarak uygulamanız için yükseltme yaptığınıza izinler hakkında daha fazla bilgi için bkz. [güvenli ClickOnce uygulamaları](../deployment/securing-clickonce-applications.md).  
@@ -58,7 +56,7 @@ ms.locfileid: "49943056"
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Veri dosyaları olarak dağıtımınızdaki dosyalardan işaretleme daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce uygulamasına bir veri dosyası dahil](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Veri dosyaları olarak dağıtımınızdaki dosyalardan işaretleme daha fazla bilgi için bkz: [nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  İlgili değişkenleri kullanarak veri dizini yolunu de edinebilirsiniz <xref:System.Windows.Forms.Application> gibi sınıf <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -110,4 +108,4 @@ ms.locfileid: "49943056"
  Çoğu zaman, veritabanına doğrudan erişim gerekmez, ancak bunun yerine yazılan bir Web sunucusu uygulaması aracılığıyla erişirsiniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] veya bir XML Web hizmeti. Bu şekilde tüm veritabanı erişimlerinin ise genellikle en iyi yöntem, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir Web sunucusundan dağıtılır. Kısmi güven Server'da uygulamanızın izinlerini yükseltme olmadan erişebilir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: ClickOnce uygulamasına bir veri dosyası Ekle](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

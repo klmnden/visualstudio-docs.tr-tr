@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: hata ayıklayıcısı ayarlarını belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Hata ayıklayıcısı ayarlarını belirtme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847184"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Nasıl Yapılır: Hata Ayıklama Ayarlarını Belirtme
+# <a name="how-to-specify-debugger-settings"></a>Nasıl Yapılır: Hata ayıklayıcısı ayarlarını belirtme
 İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], hata ayıklayıcı davranış değişkenleri gösterilme biçimini, belirli uyarılar olup olmadığını sunulur, kesme noktaları nasıl ayarlanacağını ve bozucu çalışan programları nasıl etkilediğini dahil olmak üzere, çeşitli ayarları belirtebilirsiniz. Hata ayıklayıcı ayarlarında belirttiğiniz **seçenekleri** iletişim kutusu.  
   
 ### <a name="to-set-debugger-options"></a>Hata ayıklayıcı seçeneklerini ayarlamak için  

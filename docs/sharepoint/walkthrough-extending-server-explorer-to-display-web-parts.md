@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Sunucu gezginini Web bölümlerini görüntülemek üzere genişletme | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957903"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme
   Visual Studio'da kullanabileceğiniz **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** bileşenleri SharePoint sitelerinde görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** böylece Web Bölümü Galerisi'ne görüntüler her SharePoint sitesine bağlı.  
@@ -43,7 +40,7 @@ ms.locfileid: "51296391"
 -   Hata ayıklama ve uzantıyı test etme.  
   
 > [!NOTE]  
->  İstemci nesne modelini SharePoint için bunun yerine sunucu nesne modeli kullanır. Bu kılavuzda alternatif bir sürümü için bkz: [izlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  İstemci nesne modelini SharePoint için bunun yerine sunucu nesne modeli kullanır. Bu kılavuzda alternatif bir sürümü için bkz: [izlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:  
@@ -261,7 +258,7 @@ ms.locfileid: "51296391"
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  İzlenecek yol için tüm kod içinde bu noktada **Web Bölümü Galerisi'ne** düğüm ve SharePoint komutlarını kullanıma projeleri. Hem projede hata olmadan derleme emin olmak için çözümü oluşturun.  
   
 #### <a name="to-build-the-solution"></a>Çözümü derlemek için  
@@ -374,7 +371,6 @@ ms.locfileid: "51296391"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [İzlenecek yol: bir sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Simgeler için görüntü Düzenleyicisi](/cpp/windows/image-editor-for-icons)   
  [Simge veya başka görüntü oluşturma &#40;simgeler için görüntü Düzenleyicisi&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

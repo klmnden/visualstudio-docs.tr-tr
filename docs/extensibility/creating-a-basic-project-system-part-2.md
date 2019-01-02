@@ -1,9 +1,6 @@
 ---
 title: Temel Proje sistemi oluşturma, bölüm 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967780"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>2. Bölüm temel proje sistemi oluşturma
 Bu serideki ilk izlenecek [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistemi oluşturma işlemi gösterilmektedir. Bu izlenecek yol, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek üzerinde temel proje sistemi oluşturur. Bu bir başlamadan önce ilk izlenecek yolu tamamlamanız gerekir.  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Visual Studio SDK Deneysel örneğini sıfırlama.  
   
-    Üzerinde [!INCLUDE[win7](../debugger/includes/win7_md.md)]: üzerinde **Başlat** menüsünde bulmak **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** klasöre tıklayın ve ardından **Microsoft Visual Studio Deneysel Sıfırla örnek**.  
+    Üzerinde [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Üzerinde **Başlat** menüsünde Bul **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** klasöre tıklayın ve ardından **MicrosoftVisualStudioDeneyselörneğinisıfırlama**.  
   
-    Sonraki Windows sürümlerinde: üzerinde **Başlat** ekranında, yazın **Microsoft Visual Studio sıfırlama \<sürüm > deneysel örneğinde**.  
+    Sonraki Windows sürümlerinde: Üzerinde **Başlat** ekranında, yazın **Microsoft Visual Studio sıfırlama \<sürüm > deneysel örneğinde**.  
   
 2. Bir komut istemi penceresi görüntülenir. Sözcükleri gördüğünüzde **devam etmek için herhangi bir tuşa basın**, tıklayın **ENTER**. Pencere kapandıktan sonra Visual Studio'yu açın.  
   

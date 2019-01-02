@@ -2,7 +2,6 @@
 title: Otomatikleştirilmiş UI testleri
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840648"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -146,7 +145,7 @@ Kodlanmış UI test araçları ve şablonları erişmek için yükleme **kodlanm
 
 Bu konuda geriye kalan bölümlerinde, bu yordamdaki adımları hakkında daha fazla ayrıntı sağlar.
 
-Daha ayrıntılı bir örnek için bkz. [izlenecek yol: oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). İzlenecek yolda, oluşturmak, düzenlemek ve bir kodlanmış UI testinin nasıl yükleneceğini göstermek için basit bir Windows Presentation Foundation (WPF) uygulaması oluşturacaksınız. İzlenecek yol çeşitli zamanlama sorunları ve yeniden düzenlemeyi denetleme tarafından kırılan testleri düzeltmeye ilişkin çözümler sağlar.
+Daha ayrıntılı bir örnek için bkz. [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). İzlenecek yolda, oluşturmak, düzenlemek ve bir kodlanmış UI testinin nasıl yükleneceğini göstermek için basit bir Windows Presentation Foundation (WPF) uygulaması oluşturacaksınız. İzlenecek yol çeşitli zamanlama sorunları ve yeniden düzenlemeyi denetleme tarafından kırılan testleri düzeltmeye ilişkin çözümler sağlar.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Testten geçirilen uygulamanın başlatıp
 
@@ -293,7 +292,7 @@ Kodlanmış UI testi oluşturduktan sonra Visual Studio'da aşağıdaki araçlar
 
     - Kodlanmış UI testi oluşturduktan sonra veri odaklı olarak değiştirebilirsiniz. Daha fazla bilgi için [verilerle çalışan kodlanmış UI testi oluşturma](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için uygun UITestControl.WaitForControlXXX() yöntemini ekleyin. Kullanılabilir yöntemleri tam listesi için bkz [olun kodlanmış UI testleri, kayıttan yürütme sırasında belirli olaylar için bekleyin](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Bir denetim WaitForControlEnabled yöntemi kullanarak etkin olmasını bekler, kodlanmış UI testi örneği için bkz [izlenecek yol: oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için uygun UITestControl.WaitForControlXXX() yöntemini ekleyin. Kullanılabilir yöntemleri tam listesi için bkz [olun kodlanmış UI testleri, kayıttan yürütme sırasında belirli olaylar için bekleyin](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Bir denetim WaitForControlEnabled yöntemi kullanarak etkin olmasını bekler, kodlanmış UI testi örneği için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     - Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir. Daha fazla bilgi için [kullanarak HTML5 denetimleri kodlanmış UI testlerinde](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -439,15 +438,15 @@ Kodlanmış UI test günlüklerini kullanarak kodlanmış UI testlerini analiz e
 
 ## <a name="whats-next"></a>Sırada ne var?
 
-**Kodlanmış UI testleri çalıştırmak için ek seçenekler:** kodlanmış UI testleri bu konunun önceki kısımlarında açıklandığı gibi doğrudan Visual Studio'dan çalıştırabilirsiniz. Ayrıca, Microsoft Test Yöneticisi veya Azure komut zincirlerini kullanarak otomatikleştirilmiş UI testleri çalıştırabilirsiniz. Kodlanmış UI testlerini otomatik olduğunda, bunları diğer otomatik testler çalıştırdığınızda, masaüstü ile etkileşimine izin sahiptirler.
+**Kodlanmış UI testleri çalıştırmak için ek seçenekler:** Bu konunun önceki kısımlarında açıklandığı gibi kodlanmış UI testleri doğrudan Visual Studio'dan çalıştırabilirsiniz. Ayrıca, Microsoft Test Yöneticisi veya Azure komut zincirlerini kullanarak otomatikleştirilmiş UI testleri çalıştırabilirsiniz. Kodlanmış UI testlerini otomatik olduğunda, bunları diğer otomatik testler çalıştırdığınızda, masaüstü ile etkileşimine izin sahiptirler.
 
 - [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)
 
 - [Yapı işleminizdeki testleri çalıştırın](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Nasıl yapılır: test aracınızı masaüstüyle etkileşim kuran testleri çalıştırmak için ayarlama](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Nasıl yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Özel denetimler için destek ekleme:** kodlanmış UI Test Çerçevesi olası her UI desteklemez ve test etmek istediğiniz kullanıcı Arabirimi desteklemiyor olabilir. Örneğin, Microsoft Excel için kodlanmış UI testi kullanıcı arabiriminin hemen oluşturulamıyor. Ancak, özel bir denetim destekleyen kodlanmış UI Test Çerçevesi uzantısı oluşturabilirsiniz.
+**Özel denetimler için destek ekleme:**  Kodlanmış UI Test Çerçevesi, her olası kullanıcı Arabirimi desteklemez ve test etmek istediğiniz kullanıcı Arabirimi desteklemiyor olabilir. Örneğin, Microsoft Excel için kodlanmış UI testi kullanıcı arabiriminin hemen oluşturulamıyor. Ancak, özel bir denetim destekleyen kodlanmış UI Test Çerçevesi uzantısı oluşturabilirsiniz.
 
 - [Kodlanmış UI denetimlerinizin etkinleştir](../test/enable-coded-ui-testing-of-your-controls.md)
 
@@ -459,7 +458,7 @@ Kodlanmış UI testleri genellikle el ile testleri otomatik hale getirmek için 
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [İzlenecek yol: Oluşturma, düzenleme ve bir kodlanmış UI testinin](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [İzlenecek yol: Oluşturun, düzenleyin ve bir kodlanmış UI testinin](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Kodlanmış UI testi için test UWP uygulaması oluşturma](test-uwp-app-with-coded-ui-test.md)
 - [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)
 - [Kodlanmış UI testleri için en iyi uygulamalar](../test/best-practices-for-coded-ui-tests.md)

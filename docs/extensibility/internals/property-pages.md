@@ -1,9 +1,6 @@
 ---
 title: Özellik sayfaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837894"
 ---
 # <a name="property-pages"></a>Özellik Sayfaları
 Kullanıcılar, görüntüleyin ve özellik sayfalarını kullanma proje yapılandırma bağımlı ve - bağımsız özelliklerini değiştirin. A **özellik sayfaları** düğmesi etkin **özellikleri** penceresi veya bir özellik sayfası görünümü seçili nesnenin sağlayan nesneleri için Çözüm Gezgini araç çubuğu. Özellik sayfaları ortamı tarafından oluşturulur ve çözümler ve projeler için kullanılabilir. Ancak, aynı zamanda olabilirler oluşturan Proje öğeleri yapılandırmaya bağlı özelliklerinin kullanımı için kullanılabilir. Dosyaları bir proje içinde düzgün bir şekilde oluşturmak farklı bir derleyici anahtarı ayarları gerektirdiğinde bu özellik kullanılabilir.  

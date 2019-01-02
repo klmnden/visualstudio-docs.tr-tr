@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Bir Office belgesi bir veri kaynağını programlamayla önbelleğe alma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3db60729facffdfd42553f95215e154de528436f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dd125e105681aa389a0c1b213fc5373b1177db6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960702"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Nasıl Yapılır: Bir Office belgesi bir veri kaynağını programlamayla önbelleğe alma
   Program aracılığıyla bir veri nesnesi bir belgedeki veri önbelleğini çağırarak ekleyebileceğiniz `StartCaching` gibi bir konak yöntemi öğesi bir <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, veya <xref:Microsoft.Office.Tools.Excel.Worksheet>. Bir veri nesnesi çağırarak verileri önbellekten kaldırma `StopCaching` konak öğesinin yöntemi.

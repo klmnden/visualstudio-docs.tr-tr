@@ -1,9 +1,6 @@
 ---
 title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugParsedExpression::EvaluateSync
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdf9fa9057e946d68da9f1e02d5aaf90b34e569a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f855fd8407c3f4846ee98e10e813fdc2bd387845
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855357"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Bu yöntem, Ayrıştırılan ifadeyi değerlendirir ve isteğe bağlı olarak başka bir veri türü sonucu çevirir.  
@@ -28,7 +25,7 @@ Bu yöntem, Ayrıştırılan ifadeyi değerlendirir ve isteğe bağlı olarak ba
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    DWORD                 dwEvalFlags,  
    DWORD                 dwTimeout,  
    IDebugSymbolProvider* pSymbolProvider,  

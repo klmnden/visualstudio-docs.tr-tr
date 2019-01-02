@@ -1,15 +1,10 @@
 ---
-title: 'Nasıl yapılır: SharePoint özelliklerine öğe ekleme ve kaldırma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: SharePoint özelliklerine öğe ekleme ve kaldırma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964023"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Nasıl yapılır: SharePoint özelliklerine öğe ekleyip
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Nasıl Yapılır: SharePoint özelliklerine öğe ekleyip
   Bir SharePoint çözüm oluşturduğunuzda, Visual Studio varsayılan SharePoint Proje öğeleri için bir özellik ekler. Dağıtımdan önce ekleyebilir ve SharePoint özelliği değiştirmek için SharePoint Proje öğeleri kaldırın.  
   
 ## <a name="add-sharepoint-project-items-to-a-feature"></a>SharePoint Proje öğeleri için özellik ekleme  
@@ -35,7 +30,7 @@ ms.locfileid: "49854838"
   
 1. Özellik Tasarımcısı'nı açın.  
   
-    Daha fazla bilgi için [nasıl yapılır: bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Daha fazla bilgi için [nasıl yapılır: Bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Bir veya daha fazla öğeyi Ekle **Çözümdeki öğelere** listesindeki **özellik öğeleri** bir veya daha fazla aşağıdaki adımları gerçekleştirerek listesi:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854838"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)   
  [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

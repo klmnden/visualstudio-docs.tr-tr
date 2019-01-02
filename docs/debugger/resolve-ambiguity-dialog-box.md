@@ -1,8 +1,6 @@
 ---
 title: Belirsizliği Çöz iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.Disambig
@@ -21,27 +19,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 130f580c997cb5bc0e522d0fef57969788481273
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a31d217f8dc492468a894f78f10a4f7656677521
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945073"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Belirsizliği Çöz İletişim Kutusu
-`Resolve Ambiguity` Hata ayıklayıcı görüntülemek için konum seçtiğinizde iletişim kutusu görüntülenir. Örneğin, C++ şablonları kullanıyorsanız, birden çok işlevler tek işlevi şablondan oluşturabilirsiniz. Hata ayıklayıcı şablonu kaynak konumda durdurur ve seçtiğiniz `Go To Disassembly`, hata ayıklayıcı birden çok seçenek vardır. Şablondan oluşturulan her işlevi kendi Ayrıştırılmış kod var ve hata ayıklayıcı, görüntülemek istediğiniz hangi koduyla bilmez. `Resolve Ambiguity` İletişim kutusu tüm ilgili konumlara bir listeden istediğiniz konuma seçmenize olanak sağlar.  
+`Resolve Ambiguity` İletişim kutusu, hata ayıklayıcı görüntüleneceği konumun seçtiğinizde görüntülenir. Örneğin, C++ şablonları kullanıyorsanız, tek işlevi şablondan birden çok işlevler oluşturabilirsiniz. Şablonu kaynak konumda hata ayıklayıcıyı durdurur ve seçtiğiniz `Go To Disassembly`, hata ayıklayıcı birden çok seçenek vardır. Şablondan oluşturulan her işlev kendi ayrıştırılmış kodu bulunur ve hata ayıklayıcı, görüntülemek istediğiniz hangi kodun bilmez. `Resolve Ambiguity` İletişim kutusunda istediğiniz konuma karşılık gelen tüm konumlara listesinden seçmenize imkan tanır.  
   
  `Choose the specific location`  
- Komutunuza karşılık gelen tüm konumları listeler.  
+ Komutunuz için karşılık gelen tüm konumlarda listeler.  
   
  `Address`  
- Her işlev için bellek adreslerini gösterir.  
+ Her işlev için bellek adresleri gösterilir.  
   
  `Function`  
  Her işlevin adını gösterir.  
   
  `Module`  
- (EXE ya da DLL) modülü gösterir işlevi için nesne kodu içeren.  
+ Modülü (EXE veya DLL) gösterir işlev için nesne kodu içeren.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcıdaki ifadeler](../debugger/expressions-in-the-debugger.md)
+ [Hata Ayıklayıcısındaki İfadeler](../debugger/expressions-in-the-debugger.md)

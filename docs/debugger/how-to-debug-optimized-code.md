@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: iyileştirilmiş kodda hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: İyileştirilmiş kodda hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843482"
 ---
-# <a name="how-to-debug-optimized-code"></a>Nasıl Yapılır: İyileştirilmiş Kodda Hata Ayıklama
+# <a name="how-to-debug-optimized-code"></a>Nasıl Yapılır: En iyi duruma getirilmiş kodda hata ayıklama
 
 > [!NOTE]
 > Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).

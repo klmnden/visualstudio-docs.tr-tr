@@ -1,8 +1,6 @@
 ---
 title: Idiaenumınjectedsources | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0abebe14f0ab4c36d0833edb099d71f09843ea22
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5a5dfc19844ee084a03ecbf07070e7ba78fd8220
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966644"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
-Veri kaynağında bulunan çeşitli eklenen kaynakları numaralandırılamıyor.  
+Veri kaynağında bulunan çeşitli eklenen kaynakları listeleme.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaEnumInjectedSources : IUnknown  
+IDiaEnumInjectedSources : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,21 +33,21 @@ IDiaEnumInjectedSources : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Sıralayıcı sürümü.|  
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|  
 |[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Eklenen kaynağı sayısını alır.|  
 |[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Eklenen bir kaynak dizin yoluyla alır.|  
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Belirtilen bir numaralandırma sırası eklenen kaynaklarında sayısını alır.|  
-|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Bir numaralandırma sırasını eklenen kaynaklarında belirtilen sayıda atlar.|  
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Belirtilen bir numaralandırma sıralı eklenen kaynakları sayısını alır.|  
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Bir numaralandırma sıralı eklenen kaynakları belirtilen sayıda atlar.|  
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırılarak alınır [Idiasession::findınjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) yöntemini çağırarak ya da belirli kaynak dosyasının adıyla [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) GUID ile yöntemi `IDiaEnumInjectedSources` arabirimi.  
+ Bu arabirim çağırılarak alınır [Idiasession::findınjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) yöntemini çağırarak belirli bir kaynak dosya ve ada sahip [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) GUID ile yöntemi `IDiaEnumInjectedSources` arabirimi.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek nasıl alınacağını gösterir ( `GetEnumInjectedSources` işlevi) ve kullanma ( `DumpAllInjectedSources` işlevi) `IDiaEnumInjectedSources` arabirimi. Bkz: [Idiapropertystorage](../../debugger/debug-interface-access/idiapropertystorage.md) arabirim uygulaması için `PrintPropertyStorage` işlevi. Alternatif bir çıktı için bkz: [Idiaınjectedsource](../../debugger/debug-interface-access/idiainjectedsource.md) arabirimi.  
+ Bu örnek nasıl alınacağını gösterir ( `GetEnumInjectedSources` işlevi) ve ( `DumpAllInjectedSources` işlevi) `IDiaEnumInjectedSources` arabirimi. Bkz: [Idiapropertystorage](../../debugger/debug-interface-access/idiapropertystorage.md) arabirimi uygulaması için `PrintPropertyStorage` işlevi. Alternatif bir çıktı için bkz: [Idiaınjectedsource](../../debugger/debug-interface-access/idiainjectedsource.md) arabirimi.  
   
 ```C++  
   
@@ -108,9 +106,9 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

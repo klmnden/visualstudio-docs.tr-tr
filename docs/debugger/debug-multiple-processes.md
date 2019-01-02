@@ -1,8 +1,6 @@
 ---
 title: Birden çok işlemde hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968585"
 ---
 # <a name="debug-multiple-processes"></a>Birden çok işlemde hata ayıklama
 
@@ -50,7 +48,7 @@ Bir projeden hata ayıklamayı başlatmak için **Çözüm Gezgini** yapmadan bu
    
 1. Seçin **geçerli seçimi**, **tek başlangıç projesi** ve bir proje dosyası veya **birden fazla başlangıç projesi**. 
 
-   Seçerseniz **birden fazla başlangıç projesi**, eylem ve başlatma sırası her proje için gerçekleştirilecek değiştirebilirsiniz: **Başlat**, **ayıklamadan Başlat**, veya **Hiçbiri**.  
+   Seçerseniz **birden fazla başlangıç projesi**, eylem ve başlatma sırası her proje için gerçekleştirilecek değiştirebilirsiniz: **Başlangıç**, **ayıklamadan Başlat**, veya **hiçbiri**.  
    
 1. Seçin **Uygula**, veya **Tamam** uygulamak ve iletişim kutusunu kapatın. 
 
@@ -108,7 +106,7 @@ Birden çok süreçle bir uygulamanın hataları ayıklanırken, yeni, adımlama
   
 Aşağıdaki tabloda, hata ayıklama davranışları açıklanmaktadır ne zaman komutları **bir işlem kesildiğinde tüm işlemleri Kes** onay kutusunun seçili veya seçimi:
 
-|**komutu**|Seçili|Seçimi|  
+|**Komutu**|Seçildi|Seçimi|  
 |-|-|-|  
 |**Hata ayıklama**  > **tümünü Kes**|Tüm işlemler kesilir.|Tüm işlemler kesilir.|  
 |**Hata ayıklama** > **devam edin**|Tüm işlemler sürdürülür.|Tüm askıya alınan işlemler sürdürülür.|  
@@ -165,7 +163,7 @@ Denetlenmesine, **hata ayıklamayı Durdur** içinde tek bir işlemi etkiler **i
   
 Aşağıdaki tablo hata ayıklayıcıyı Durdur davranışlarını tanımlar, sonlandırın ve komutları birden çok süreçle ayırma: 
 
-|**komutu**|**Açıklama**|  
+|**Komutu**|**Açıklama**|  
 |-|-| 
 |**Hata ayıklama** > **hata ayıklamayı Durdur**|Davranış olarak değiştirilmediği sürece **işlemleri** penceresinde, hata ayıklayıcı tarafından başlatılan işlemler tarihinde sona erdi ve ekli işlemleri ayrılmasının.|  
 |**Hata ayıklama** > **tümünü Sonlandır**|Tüm işlemler sonlandırılır.|  

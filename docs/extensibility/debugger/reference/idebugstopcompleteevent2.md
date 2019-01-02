@@ -1,9 +1,6 @@
 ---
 title: IDebugStopCompleteEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
@@ -12,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed73821021d3a993507db9925c512119fbb98ca1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39da50c17d4d4b8b02390e0d2960d5696b93b1f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932904"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
-Bir programı durdurulduğunda hata ayıklama altyapısı (DE) oturum hata ayıklama Yöneticisi (SDM) Bu isteğe bağlı bir olay gönderebilir.
+Bir program durduğunda, hata ayıklama altyapısı (DE) oturum hata ayıklama Yöneticisi (SDM) Bu isteğe bağlı bir olay gönderebilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,16 +28,16 @@ IDebugStopCompleteEvent2 : IUnknown
 
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar
 
-Bu arabirim, Visual Studio 2005 ile sunulmuştur. Önceki sürümlerde, zaman uyumsuz durdurma desteklememektedir.
+Bu arabirim, Visual Studio 2005 ile kullanılmaya başlandı. Önceki sürümlerde, zaman uyumsuz durdurma desteklememektedir.
 
-[Durdur](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) birden çok işlem ya da çok program senaryolarda SDM tarafından çağrılır. Bir program SDM durdurma olay gönderdiğinde, SDM çok durdurmak için diğer programları ister.
+[Durdur](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) SDM senaryolarda, çok işlemli veya çok programı tarafından çağrılır. Bir program için SDM durdurma olay gönderdiğinde SDM çok durdurmak için diğer programları ister.
 
-Durma zaman uyumsuz olarak bir programı durdurdu SDM bildirmek için kullanılır. SDM yorumlayıcı hata ayıklama altyapının için yararlıdır bildiren, bazen kod hata ayıklaması içinde çalıştığı program, bunu [durdurmak](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) zaman uyumlu olarak tamamlanamıyor. Hata ayıklama altyapısı bu zaman uyumsuz bildirim uygulamadığınız isteyip istemediğini, döndürmesi gerekir `S_ASYNC_STOP` gelen [durdurmak](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
+Durdurma, zaman uyumsuz olarak bir program durduktan SDM bildirmek için kullanılır. SDM bir yorumlayıcı hata ayıklama altyapısı için yararlıdır bildiren, bazen kod hata ayıklaması içinde çalıştığı programı, bunu [Durdur](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) zaman uyumlu olarak tamamlanamadı. Hata ayıklama altyapısı bu zaman uyumsuz bildirim görevlendirmek isteyip istemediği, döndürmesi gereken `S_ASYNC_STOP` gelen [Durdur](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: msdbg.h
+Üstbilgi: msdbg.h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

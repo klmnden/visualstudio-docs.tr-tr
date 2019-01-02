@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Başlangıç ve bitiş performans verileri toplama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Başlangıç ve bitiş performans verilerini toplama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.summarypage
@@ -17,28 +15,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 968926e89f724f8e8ac647a0bfa09c7c97098adc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 370fbea6d819b5c9f51b2bd9e3182fd37244af3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934037"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Nasıl yapılır: Başlangıç ve bitiş performans verileri toplama
-Profil oluşturma başlamadan önce Performans oturumunu profiline istediğiniz hedef ikili eklemeniz gerekir. Hedef eklemek için sağ **hedefleri** içinde **performans Gezgini**ve ardından **hedef ikili eklemek**. İçinde **hedef ikili eklemek** iletişim kutusunda dosya adını seçin ve ardından **açık**. Yeni bir ikili eklenir.  
+# <a name="how-to-start-and-end-performance-data-collection"></a>Nasıl Yapılır: Başlangıç ve bitiş performans verilerini toplama
+Profil oluşturma başlamadan önce performans oturumu profiline istediğiniz hedef ikili eklemeniz gerekir. Hedef eklemek için sağ **hedefleri** içinde **performans Gezgini**ve ardından **hedef ikili Ekle**. İçinde **hedef ikili Ekle** iletişim kutusunda dosya adını seçin ve ardından **açık**. Yeni bir ikili eklenir.  
   
 ### <a name="to-start-profiling"></a>Profil oluşturmayı başlatmak için  
   
-1.  Performans oturum adını sağ tıklatın **performans Gezgini** penceresi ve aşağıdaki seçeneklerden birini seçin:  
+1.  Performans oturumu adını sağ **performans Gezgini** penceresi ve aşağıdaki seçeneklerden birini seçin:  
   
-    -   **Profil oluşturma ile başlatma** - uygulama başlar ve profil oluşturma hemen başlar.  
+    -   **Profil ile Başlat** - uygulamayı başlatır ve profil oluşturma hemen başlar.  
   
-    -   **Başlat duraklatılır profil oluşturma** - uygulama başlar ancak profil başlamaz. Seçerek profil oluşturmayı başlatmak için **Sürdür koleksiyonu** içinde **veri toplama denetimi** penceresi. Daha fazla bilgi için bkz: [nasıl yapılır: duraklatma ve sürdürme performans verileri toplama](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
+    -   **Launch ile profil oluşturma duraklatıldı** - uygulama başlar ancak profil oluşturma başlamaz. Seçerek profili oluşturma başlangıç **sürdürme koleksiyonu** içinde **veri koleksiyonu denetimi** penceresi. Daha fazla bilgi için [nasıl yapılır: Duraklatma ve sürdürme performans verilerini toplama](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
   
 ### <a name="to-end-profiling"></a>Profil oluşturma sonlandırmak için  
   
--   Profil oluşturma oturumu bitiş, tercih edilen uygulamadan çıkmak için yöntemdir. Profil, üzerinde hemen durdurmak için **performans Gezgini** araç tıklatın **durdurmak**.  
+-   Profil Araçları oturumunu sonlandırma tercih edilen uygulamadan çıkmak için yöntemdir. Profil oluşturma, üzerinde hemen durdurmak **performans Gezgini** araç çubuğunda tıklatın **Durdur**.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Denetimin veri toplama](../profiling/controlling-data-collection.md)   
- [Nasıl yapılır: Performans verileri toplamayı duraklatma ve sürdürme](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+ [Veri toplamayı denetleme](../profiling/controlling-data-collection.md)   
+ [Nasıl yapılır: Duraklatma ve sürdürme performans verilerini toplama](../profiling/how-to-pause-and-resume-performance-data-collection.md)

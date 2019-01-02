@@ -1,8 +1,6 @@
 ---
 title: Yakınlaştırma Denetimi (iş parçacıkları görünümü) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -14,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85297c32274eb3b6573f536be15d621a60b95921
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 87959310b0c34a801ade0ae5ffdb00c75ff9dcc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938140"
 ---
 # <a name="zoom-control-threads-view"></a>Yakınlaştırma Denetimi (iş parçacıkları görünümü)
-Yakınlaştırma Denetimi ilgi alanlarına göre belirli üzerinde odaklanabilmeniz zaman çizelgesinde yakınlaştırma yardımcı olacak bir kaydırıcı ' dir. Zaman Çizelgesi görünümüne Merkezi'nde bu denetim yakınlaştırır olduğundan, yakınlaştırmak önce ilgi alanı ortalayın.  
+Yakınlaştırma, belirli ilgi alanlarına odaklanabilmeniz için zaman çizelgesinde yakınlaştırma ve uzaklaştırma yardımcı olacak bir kaydırıcı denetimidir. Zaman Çizelgesi Görünümü Merkezi'nde bu denetimi yakınlaştırır olduğundan, ilgi alanı, yakınlaştırma önce Merkezi.  
   
-## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>Zaman çizelgesi görünümünde sürükleyerek Yakınlaştır  
- Zaman çizelgesi görünümünde sürükleyerek yakınlaştırma vurgulanır alana sarı olarak oluşturur. Fare düğmesini bıraktığınızda, bu Zaman Çizelgesi görünümüne seçili aralıkta yakınlaştırır.  
+## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>Zaman Çizelgesi Görünümü'nde sürükleyerek Yakınlaştır  
+ Zaman Çizelgesi Görünümü'nde sürükleyerek yakınlaştırma sarı renkle vurgulanır bir alanı oluşturur. Fare düğmesini bıraktığınızda, zaman çizelgesi görünümü seçili aralıkta yakınlaştırır.  
   
-## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Fare tekerleği kullanarak yakınlaştırma  
- (Fare odağa sahip emin olmak için) ilgili zaman çizelgesi üzerinde herhangi bir noktaya tıklayın ve sonra basın **Ctrl** ve fare tekerleğinin (içinde iletme yakınlaştırma; çıkışı geriye dönük yakınlaştırma) taşıyın.  
+## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Fare tekerleğini kullanarak yakınlaştırabilir  
+ (Fare odağa sahip sağlamak üzere) zaman çizelgesi üzerinde herhangi bir noktaya tıklayın ve sonra basın **Ctrl** ve fare tekerleğini (içinde iletme yakınlaştırır; geriye dönük yakınlaştırır kullanıma) taşıyın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Kanalları Yönet](../profiling/manage-channels.md)   

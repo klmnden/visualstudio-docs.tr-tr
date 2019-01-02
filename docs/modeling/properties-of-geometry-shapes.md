@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2159a7954059eedb0d5100cb41a33b47f7577e93
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8b230d9611b52e4f68c399b5b36b2a8c0bfe88ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937773"
 ---
 # <a name="properties-of-geometry-shapes"></a>Geometri Şekillerinin Özellikleri
 Geometrik şekiller, etki alanı sınıfların örneklerini bir etki alanına özgü dil nasıl görüntüleneceğini belirtmek için kullanabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -43,13 +42,13 @@ Geometrik şekiller, etki alanı sınıfların örneklerini bir etki alanına ö
 |Temel geometrik şekil|Bu şeklin temel sınıf.|(hiçbiri)|
 |Ad|Bu şeklin adı.|Geçerli ad|
 |Ad Alanı|Bu şeklin ile bağlantılı olan ad alanı.|Geçerli ad alanı|
-|Araç İpucu türü|Nasıl bir araç ipucu (sabit, değişken veya hiçbiri) tanımlanır. Fixed ise ardından değerini `Fixed Tooltip Text` özelliği, araç ipucu olarak kullanılır; ardından değişken durumunda, araç ipucu özel kodda tanımlanır.|Yok.|
+|Araç İpucu türü|Nasıl bir araç ipucu (sabit, değişken veya hiçbiri) tanımlanır. Fixed ise ardından değerini `Fixed Tooltip Text` özelliği, araç ipucu olarak kullanılır; ardından değişken durumunda, araç ipucu özel kodda tanımlanır.|Hiçbiri|
 |Notlar|Bu öğeyle ilişkili resmi olmayan notlar.|\<yok >|
 |İlk yükseklik|Bu şeklin inç cinsinden başlangıç yüksekliği.|1.|
 |Başlangıç genişliği|Bu şeklin inç cinsinden başlangıç genişliği.|1,5|
 |Özellik olarak kullanıma sunulan dolgu rengi<br /><br /> İfşa edilen dolgu gradyanı modu<br /><br /> Ana hat rengi özellik olarak kullanıma sunulan<br /><br /> Ana hat kesik çizgi stilinin özellik olarak kullanıma sunulan<br /><br /> Anahat kalınlığı özellik olarak kullanıma sunulan<br /><br /> Kullanıma sunan metin rengi|Varsa `True`, kullanıcının belirtilen özelliği bir şeklin ayarlayabilirsiniz. Bunu ayarlamak için Şekil tanımı sağ tıklatıp **ekleme kullanıma sunulan**.|False|
 |Açıklama|Oluşturulan tasarımcının belgelemek için kullanılan bir açıklaması.|\<yok >|
-|Görünen ad|Bu şekil için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
+|Görünen Ad|Bu şekil için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Sabit araç ipucu metni|Sabit bir araç ipucu için kullanılan metin.|\<yok >|
 |Yardım anahtar sözcüğü|Bu şeklin için F1 Yardımı dizini oluşturmak için kullanılan anahtar sözcüğü.|\<yok >|
 

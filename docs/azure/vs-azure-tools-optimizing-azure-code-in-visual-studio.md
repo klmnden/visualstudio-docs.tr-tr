@@ -10,13 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
-ms.openlocfilehash: 043219fa46907ca3ff95cd4663f720f9cbd3f56d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6f9f43174a0d66a463b96955dbc2e6d57780a143
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968520"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure Kodunuzu İyileştirme
 Microsoft Azure kullanan uygulamalar programlama, uygulama ölçeklenebilirlik, davranış ve bulut ortamlarında performans sorunlarını önlemek için izlemeniz gereken kodlama bazı yöntemler vardır. Microsoft tanır ve birkaç bu sık karşılaşılan sorunları tanımlar ve bunları çözmenize yardımcı olan bir Azure Kod Analizi aracı sağlar. NuGet aracılığıyla Visual Studio araç indirebilirsiniz.

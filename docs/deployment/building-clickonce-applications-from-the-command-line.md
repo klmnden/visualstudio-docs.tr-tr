@@ -1,8 +1,6 @@
 ---
 title: Komut satırından ClickOnce uygulamaları oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926271"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Komut satırından ClickOnce uygulamalarını derleme
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamında (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. Aslında, ile oluşturulmuş bir projeyi yeniden oluşturabilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca olan başka bir bilgisayara [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yüklü. Bu, otomatik bir işlem kullanılarak yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar veya kullanarak, proje oluşturma kapsamı dışında teknikleri Gelişmiş.  
@@ -37,13 +35,13 @@ ms.locfileid: "49853291"
   
  `/target:publish` Komutu yayımlama hedefi MSBuild'e bildirir. Yayımlama hedefi, yapı hedefine bağlıdır. Bu, yayımlama işlemi oluşturma işlemi üst olduğu anlamına gelir. Örneğin, bir Visual Basic veya C# kaynak dosyaları için bir değişiklik yaptıysanız, karşılık gelen derleme yayımlama işlemi tarafından otomatik olarak yeniden yapılandırılacaktır.  
   
- Tam oluşturma hakkında bilgi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı oluşturmak için Mage.exe komut satırı aracını kullanarak, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimi için bkz: [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Tam oluşturma hakkında bilgi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımı oluşturmak için Mage.exe komut satırı aracını kullanarak, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimi için bkz: [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>MSBuild ile temel bir ClickOnce uygulaması oluşturun ve yapılandırın  
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Oluşturma ve bir ClickOnce projeyi yayımlama  
   
-1. Tıklayın **yeni proje** gelen **dosya** menüsü. **Yeni proje** iletişim kutusu görüntülenir.  
+1. Tıklayın **yeni proje** gelen **dosya** menüsü. **Yeni Proje** iletişim kutusu görünür.  
   
 2. Seçin **Windows uygulama** ve adlandırın `CmdLineDemo`.  
   
@@ -171,4 +169,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
- [İzlenecek yol: ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+ [İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

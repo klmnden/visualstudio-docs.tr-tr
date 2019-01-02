@@ -1,8 +1,6 @@
 ---
 title: TargetCLR | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd27aadb0b4335cc122a1b45e9f37e13d9a69f4c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ed0891715f6c9a0f4f89249a6ca5ac6415bad038
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967128"
 ---
 # <a name="targetclr"></a>TargetCLR
-**TargetCLR** seçeneği CLR birden fazla sürümünü bir uygulama yüklendiğinde bu ortak dil çalışma zamanı (CLR) sürümünü profiline belirtir.  
+**TargetCLR** seçeneği bir uygulamada birden fazla CLR sürümü yüklendiğinde, ortak dil çalışma zamanı (CLR) sürümünü profiline belirtir.  
   
  Varsayılan olarak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları hedef uygulama tarafından yüklenen CLR ilk sürümü.  
   
@@ -30,19 +28,19 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
   
 #### <a name="parameters"></a>Parametreler  
  `ClrVersion`  
- CLR sürüm numarası. Sürüm biçimi kullanmak **vN.N.NNNNN**.  
+ CLR sürüm numarası. Sürüm biçimi **vN.N.NNNNN**.  
   
-## <a name="required-options"></a>Gerekli seçenekler  
- **TargetCLR** seçeneği yalnızca kullanılabilir ile **başlatma** veya **Attach** seçenekleri.  
+## <a name="required-options"></a>Gerekli seçenekleri  
+ **TargetCLR** seçeneği yalnızca kullanılabilir ile **başlatma** veya **iliştirme** seçenekleri.  
   
  **Başlat:** `AppName`  
- Belirtilen uygulamayı başlatır ve profiline başlatır.  
+ Belirtilen uygulamayı başlatır ve profile başlatır.  
   
- **Ekle:** `PID`  
- Belirtilen işlem profilini başlatır.  
+ **Ekleme:** `PID`  
+ Belirtilen işlem profili başlar.  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte, TargetCLR seçeneği CLR sürüm 4.0.11003 profili emin olmak için kullanılır.  
+ Bu örnekte, TargetCLR seçeneği, CLR sürümü 4.0.11003 profili emin emin olmak için kullanılır.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  

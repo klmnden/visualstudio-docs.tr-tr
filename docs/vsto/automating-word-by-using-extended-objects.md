@@ -1,8 +1,6 @@
 ---
 title: Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +21,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85d3adc2ff156f6967d7590788c749d0343c7c0f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 8244aec25b0179c22e88f91b4577d2fa78c119f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950153"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken
   Visual Studio'da Word çözümleri geliştirirken kullanabileceğiniz *konak öğelerini* ve *konak kontrolü*Çözümlerinizdeki s. Bunlar gibi Word nesne modeli (Word için birincil birlikte çalışma derlemesi tarafından sunulan diğer bir deyişle, nesne modeli) yaygın olarak kullanılan belirli nesneleri genişleten nesnelerdir <xref:Microsoft.Office.Interop.Word.Document> ve <xref:Microsoft.Office.Interop.Word.ContentControl> nesneleri. Genişletilmiş nesneler temel aldıkları Word nesneleri gibi davranırlar fakat nesnelere veri bağlama becerileri ve ek olaylar ekleyin.  
@@ -70,5 +68,3 @@ ms.locfileid: "53248156"
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-  
-  

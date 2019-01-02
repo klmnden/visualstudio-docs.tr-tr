@@ -1,9 +1,6 @@
 ---
 title: Verileri önbelleğe
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967261"
 ---
 # <a name="cache-data"></a>Verileri önbelleğe
   Böylece veriler erişilebilir, çevrimdışı veya Microsoft Office Word veya Microsoft Office Excel açmadan belge düzeyi özelleştirmesinde veri nesneleri önbelleğe alabilir. Nesne, nesne önbelleğe almak için belirli gereksinimleri karşılayan bir veri türü olmalıdır. .NET Framework'teki birçok ortak veri türleri dahil olmak üzere, bu gereksinimleri karşılayan <xref:System.String>, <xref:System.Data.DataSet>, ve <xref:System.Data.DataTable>.  
@@ -91,5 +88,3 @@ ms.locfileid: "53248130"
  [Nasıl yapılır: Bir Office belgesi bir veri kaynağını programlamayla önbelleğe alma](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Nasıl yapılır: Bir parola korumalı belgede veriyi önbelleğe alma](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [İzlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
-  
-  

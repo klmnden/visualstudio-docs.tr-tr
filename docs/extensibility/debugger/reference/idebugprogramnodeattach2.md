@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNodeAttach2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNodeAttach2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a83f5635dfacb638a2e76054dc5ed4e887e2a3cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e212c195754fcab8d60beb3a6536606d6ce86054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851803"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
-Program düğümün ilişkili programın bağlama girişimi bildirilmesini sağlar.  
+Bir programı ilişkili programa ekleme girişimi bildirilmesini düğüme sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,34 +29,34 @@ IDebugProgramNodeAttach2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bu arabirimi uygulayan aynı sınıfa uygulanan [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi ekleme işlemi bildirim almak için ve ekleme işlemini iptal etmek için bir fırsat sağlamaktır.  
+ Bu arabirimi uygulayan aynı sınıf uygulanan [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi iliştirme işlemi bildirim almak için ve iliştirme işlemi iptal etmek için bir fırsat sunar.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde `QueryInterface` yönteminde bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) nesnesi. [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi çağrılır, önce [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) program düğüm ekleme işlemi durdurmak için bir şansı vermek yöntemi.  
+ Bu arabirim çağırarak elde `QueryInterface` yönteminde bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) nesne. [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi çağrıldığında, önce [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi program düğüm ekleme işlemini durdurmak için bir şans verin.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki yöntem bu arabirimi uygular:  
+ Bu arabirim, aşağıdaki yöntemi uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|İlişkili programı ekler veya ekleme işlemi için erteler [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi.|  
+|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|İlişkili programına iliştirir veya ekleme işlemi için erteler [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirimin tercih edilen kullanım dışı alternatifidir [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) yöntemi. Tüm hata ayıklama motorları her zaman ile yüklenen `CoCreateInstance` işlev, ayıklanacak program adres alanı dışında başka bir deyişle, örneği.  
+ Bu arabirim kullanım dışı tercih edilen alternatif olan [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) yöntemi. Tüm hata ayıklama altyapıları ile her zaman yüklenir `CoCreateInstance` işlev, diğer bir deyişle, bunlar ayıklanan programa Adres alanının örneği oluşturulur.  
   
- Önceki bir uygulaması, `IDebugProgramNode2::Attach_V7` yöntemi yalnızca ayarı `GUID` , ardından yalnızca ayıklanacak programının [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi uygulanması gerekiyor.  
+ Önceki bir uygulaması, `IDebugProgramNode2::Attach_V7` yöntemi yalnızca ayar `GUID` , ardından yalnızca ayıklanan programın [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi uygulanması gerekiyor.  
   
- Önceki bir uygulaması, `IDebugProgramNode2::Attach_V7` sağlanan geri çağırma arabirimi kullanılan yöntem, sonra bu işlevselliği uygulaması için taşınması gerekiyor [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi ve `IDebugProgramNodeAttach2` arabirimi yok uygulanmalıdır.  
+ Önceki bir uygulaması, `IDebugProgramNode2::Attach_V7` sağlanan geri arama arabirimini kullanılan yöntem ve ardından ilgili işlev uygulaması için taşınması gereken [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemi ve `IDebugProgramNodeAttach2` arabirimi yok uygulanmalıdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Msdbg.h  
+ Üst bilgi: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [Ekleme](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

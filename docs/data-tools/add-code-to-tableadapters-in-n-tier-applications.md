@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5a9aad4aaecb629f5860fadf56e35a55455be63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17a56fcf0c89ef63033cdcd538e5b9cf9e3efe49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928295"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>N katmanlı uygulamalarda TableAdapter’lara kod ekleme
 TableAdapter için bir parçalı sınıf dosyası oluşturarak ve kodu eklemeden bir TableAdapter işlevini genişletme (kod eklemek yerine *DatasetName.DataSet.Designer* dosyası). Kısmi sınıflar arasında birden çok fiziksel dosyaları Bölünecek belirli bir sınıf için kod etkinleştirin. Daha fazla bilgi için [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial) veya [partial (tür)](/dotnet/csharp/language-reference/keywords/partial-type).

@@ -1,8 +1,6 @@
 ---
 title: Cvınitprovider işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvInitProvider
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 171537a752818e31ba6a3e7e185fd02017dcb967
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967715"
 ---
 # <a name="cvinitprovider-function"></a>Cvınitprovider işlevi
-İşaretçi sağlayıcıyı başlatır. Diğer eşzamanlılık görselleştiricisi SDK işlevleri önce çağrılmalıdır.  
+İşaretleyici sağlayıcısını başlatır. Diğer eşzamanlılık görselleştiricisi SDK'si işlevinden önce çağrılmalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,13 +33,13 @@ HRESULT CvInitProvider(
   
 #### <a name="parameters"></a>Parametreler  
  `pGuid`  
- Sağlayıcı GUID. NULL olamaz.  
+ Sağlayıcı GUID'si. NULL olamaz.  
   
  `ppProvider`  
- Sağlayıcı içeriği depolayan bir çıkış değişkeninin adresi. NULL olamaz.  
+ Sağlayıcı içeriği depolayacak bir çıkış değişkeni adresi. NULL olamaz.  
   
 ## <a name="return-value"></a>Dönüş değeri  
- Sağlayıcı başarıyla başlatıldı veya tüm hatalar oluştu. hata kodu var. durumda S_OK. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
+ S_OK sağlayıcısı başarıyla başlatıldı veya hata kodu var. durumda tüm hatalar. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkers.h*  

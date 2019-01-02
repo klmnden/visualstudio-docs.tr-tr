@@ -1,8 +1,6 @@
 ---
-title: 'İzlenecek yol: sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2efe3801639fb85e1331fc77cc27cbb42717a12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926115"
 ---
-# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma
+# <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan bir MSBuild proje dosyası oluşturma
 .NET Framework'ü hedefleyen programlama dilleri, tanımlamak ve uygulama oluşturma işlemini denetlemek için MSBuild proje dosyaları kullanın. Bir MSBuild proje dosyası oluşturmak için Visual Studio kullandığınızda, uygun XML dosyasına otomatik olarak eklenir. Ancak, XML'in nasıl düzenlendiğini anlamak yararlı ve bunu bir yapıyı denetlemek üzere nasıl değiştirebilirsiniz.  
   
  Bir C++ projesi için proje dosyası oluşturma hakkında daha fazla bilgi için bkz: [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
@@ -139,10 +137,10 @@ Minimal proje dosyanız, aşağıdaki koda benzemelidir:
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -232,7 +230,7 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -308,7 +306,7 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -392,9 +390,9 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
   
      **Hedef "Derleme", tüm çıktı dosyalarının göre giriş dosyaları güncel olduğu için atlanıyor.**  
   
-     **Giriş dosyalarını: HelloWorld.cs olarak**  
+     **Giriş dosyaları: HelloWorld.cs olarak**  
   
-     **Çıkış dosyalarını: BinMSBuildSample.exe**  
+     **Çıktı dosyaları: BinMSBuildSample.exe**  
   
      Uygulamanın son oluşturulmasında beri kaynak dosyaların hiçbiri değişiklik yapılmadığından MSBuild yapı hedefini atlar.  
   
@@ -475,7 +473,7 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
 ```  
   
 ## <a name="whats-next"></a>Sırada ne var?  
- Visual Studio otomatik olarak bu izlenecek yolda gösterilen işin çoğunu gerçekleştirebilirsiniz. Oluşturma, düzenleme, derleme ve MSBuild proje dosyaları test etmek için Visual Studio'u kullanmayı öğrenmek için bkz: [izlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio otomatik olarak bu izlenecek yolda gösterilen işin çoğunu gerçekleştirebilirsiniz. Oluşturma, düzenleme, derleme ve MSBuild proje dosyaları test etmek için Visual Studio'u kullanmayı öğrenmek için bkz: [izlenecek yol: MSBuild kullanmak](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
 [MSBuild'e genel bakış](../msbuild/msbuild.md)  

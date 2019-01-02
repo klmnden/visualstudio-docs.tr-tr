@@ -1,9 +1,6 @@
 ---
 title: İfadeleri değerlendirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6248b06b69fa89d1888467a70718cf98b2a9a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7df128995c114c724c7a25ebe4949be935a3c496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929743"
 ---
 # <a name="evaluate-expressions"></a>İfadeleri değerlendirme
 İfadeler, geçirilen dizelerden oluşturulur **Otolar**, **Watch**, **QuickWatch**, veya **hemen** windows. Bir ifade değerlendirildiğinde değişken veya bağımsız değişken ve değeri türünü ve adını içeren bir yazdırılabilir bir dize oluşturur. Bu dize karşılık gelen bir IDE penceresinde görüntülenir.  

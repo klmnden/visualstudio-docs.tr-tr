@@ -1,8 +1,6 @@
 ---
 title: Yönetilen koddaki onaylar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce83c69893e4623dc5989561d0edfb6415708d56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880185"
 ---
 # <a name="assertions-in-managed-code"></a>Yönetilen Koddaki Onaylar
 Onaylama işlemi, bir veya `Assert` ifadesi bağımsız değişkeni olarak belirlediğiniz bir koşulu sınar `Assert` deyimi. Koşul true olarak değerlendirilirse, herhangi bir işlem gerçekleşir. Koşul false olarak değerlendirilirse, onaylama işlemi başarısız olur. Hata ayıklama derlemesi ile çalıştırıyorsanız, programınız Kesme moduna girer.  
@@ -219,6 +217,6 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [İzleme ve İşaretleme uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)   
- [Nasıl yapılır: izleme ve hata ayıklama ile koşullu derleme](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
- [C#, F # ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Nasıl yapılır: İzleme ve hata ayıklama ile koşullu derleme](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
+ [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

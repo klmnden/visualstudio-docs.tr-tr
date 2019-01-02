@@ -1,8 +1,6 @@
 ---
 title: Hata ayıklayıcı ayarları ve hazırlığı | Microsoft Docs
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926865"
 ---
 # <a name="debugger-settings-and-preparation"></a>Hata ayıklayıcı ayarları ve hazırlığı
 Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla birlikte hata ayıklamak için gereken hazırlık açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı. Programınızda oluşturursanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonlarını kullanarak, bu ayarlar, hata ayıklama yapılandırmasında ayarlandığını.  
   
- Daha fazla bilgi için [nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Daha fazla bilgi için [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Hata Ayıklayıcısı Proje Ayarları](../debugger/debugger-project-settings.md)  
@@ -42,13 +40,13 @@ Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla
  [Konsol Projeleri](../debugger/debugging-preparation-console-projects.md)  
  Konsol projeleri, hata ayıklama için yapılandırma hakkında yönergeler sağlar.   
   
- [Nasıl Yapılır: Visual Studio Çözümünün Parçası Olmayan Yürütülebilir Öğede Hata Ayıklama](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Nasıl yapılır: Visual Studio çözümünün parçası olmayan yürütülebilir öğede hata ayıklama](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Visual Studio projesinin bir parçası oluşturulmamış bir yürütülebilir dosyada hata ayıklama açıklanmaktadır.  
   
  [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)  
  64 bit uygulamalarda hata ayıklama işlemini açıklamaktadır.  
   
- [Nasıl Yapılır: Hata Ayıklama İçin .NET Framework Sürümü Belirtme](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Nasıl yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Hata ayıklayıcı için hangi sürümün kullanılacağını belirtmek için bir kayıt defteri anahtarı ayarlama işlemi açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

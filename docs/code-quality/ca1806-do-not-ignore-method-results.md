@@ -2,7 +2,6 @@
 title: 'CA1806: Yöntem sonuçlarını yoksaymayın'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1806
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 - VB
 manager: douge
-ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 865c4d26758021b0f0200f7834d02cd34f22bc8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954204"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Yöntem sonuçlarını yoksaymayın
 
@@ -55,7 +54,7 @@ HRESULT ya da hata kodu yoksayılıyor beklenmeyen davranışlara hata koşullar
 
  Yöntemi bir B yöntemini çağırır, ancak B yöntemi döndüren yeni dize örneğinde kullanmaz. Örneği bir bağımsız değişken olarak başka yönteme geçirin, örneği bir değişkene atayın. Ya da gereksizse çağrısını kaldırın.
 
- veya
+ -veya-
 
  Yöntem, yöntem A B yöntemini çağırır, ancak HRESULT kullanmaz veya hata kodu döndürür. Sonucu bir koşullu deyimde kullanın, sonucu bir değişkene atayın ya da başka yönteme bağımsız değişken olarak geçirin.
 

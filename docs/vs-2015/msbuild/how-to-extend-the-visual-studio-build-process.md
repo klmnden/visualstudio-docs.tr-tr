@@ -1,12 +1,11 @@
 ---
-title: 'Nasıl yapılır: derleme işlemini genişletme | Microsoft Docs'
+title: 'Nasıl Yapılır: Derleme işlemini genişletme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e552b75ea5ba34004d0c53850f1af77a120b20cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a3a530f74e1cf90012f9724d68493b1602b0e6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938727"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl Yapılır: Visual Studio Derleme İşlemini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +63,7 @@ ms.locfileid: "53050263"
 |Hedef Adı|Açıklama|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Bu hedefler birinde eklenen görevler, önce veya çekirdek derleme tamamlandıktan sonra çalışır. Çoğu özelleştirmeleri, bu iki hedefi birinde gerçekleştirilir.|
-|`BeforeBuild`, `AfterBuild`|Bu hedefler birinde eklenen görevler önce veya sonra yapı diğer her şey çalışır. **Not:** `BeforeBuild` ve `AfterBuild` hedefleri sonunda, çoğu proje dosyalarını açıklamalardaki önceden tanımlanır. Bu proje dosyanıza öncesi ve derleme sonrası olayları kolayca eklemenizi sağlar.|
+|`BeforeBuild`, `AfterBuild`|Bu hedefler birinde eklenen görevler önce veya sonra yapı diğer her şey çalışır. **Not:**  `BeforeBuild` Ve `AfterBuild` hedefleri sonunda, çoğu proje dosyalarını açıklamalardaki önceden tanımlanır. Bu proje dosyanıza öncesi ve derleme sonrası olayları kolayca eklemenizi sağlar.|
 |`BeforeRebuild`, `AfterRebuild`|Görevleri önce çalıştırması şu hedeflerinden birini eklenebilir veya çekirdek yeniden oluşturduktan sonra işlevi çağrılır. Microsoft.Common.targets içinde hedef yürütme sırası: `BeforeRebuild`, `Clean`, `Build`, ardından `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Önce bu hedefler birinde eklenen görevleri çalıştırmak veya çekirdek sonra temiz işlevi çağrılır.|
 |`BeforePublish`, `AfterPublish`|Görevleri önce çalıştırması şu hedeflerinden birini eklenebilir veya çekirdek işlevselliğini yayımladığınızda çağrılır.|

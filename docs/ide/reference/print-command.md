@@ -2,7 +2,6 @@
 title: Yazdır Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.print
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 31f604d6df45cb22d18401b5925867d5ab0e02b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900892"
 ---
 # <a name="print-command"></a>Yazdır Komutu
-Bir ifadeyi değerlendirir veya belirtilen metin görüntüler.
+Bir ifadeyi değerlendirir veya belirtilen metni görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,7 +37,7 @@ Debug.Print text
  Gerekli. Değerlendirilecek ifade veya görüntülenecek metin.
 
 ## <a name="remarks"></a>Açıklamalar
- Bu komut için bir diğer ad olarak soru işareti (?) kullanabilirsiniz. Bu nedenle, örneğin, komutu
+ Bu komut için bir diğer ad olarak, soru işareti (?) kullanabilirsiniz. Bunu, örneğin, komut
 
 ```cmd
 >Debug.Print expA
@@ -50,7 +49,7 @@ Debug.Print text
 >? expA
 ```
 
- Her iki sürümünün de bu komut geçerli ifadenin değerini döndürür `expA`.
+ Bu komutun her iki sürümü ifadenin geçerli değerini döndürecektir `expA`.
 
 ## <a name="example"></a>Örnek
 
@@ -63,5 +62,5 @@ Debug.Print text
 - [Deyimi Değerlendir Komutu](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

@@ -2,23 +2,22 @@
 title: Belirli olaylar için kodlanmış UI testlerini bekletme olun
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6db68827b94deb461fe812e333d3fcbb44afc4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850920"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan yürütme sırasında belirli olaylar için bekleyin, kodlanmış UI testleri yapın
 
-Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için aşağıdaki tabloda açıklandığı gibi uygun UITestControl.WaitForControlXXX() yöntemi kullanın. Bir denetimi kullanarak etkin olmasını bekler bir kodlanmış UI testine ilişkin bir örnek <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> yöntemi bkz [izlenecek yol: oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için aşağıdaki tabloda açıklandığı gibi uygun UITestControl.WaitForControlXXX() yöntemi kullanın. Bir denetimi kullanarak etkin olmasını bekler bir kodlanmış UI testine ilişkin bir örnek <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> yöntemi bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -27,7 +26,7 @@ Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için iler
 Visual Studio Enterprise
 
 > [!TIP]
-> Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
+> Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 **UITestControl.WaitForControlXXX() yöntemleri**
 
@@ -37,7 +36,7 @@ Denetim için fare ve klavye girdisi kabul etmeye hazır olmasını bekler. Alty
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-Denetimi Sihirbazı sunucuya çağrıları yaparak bazı zaman uyumsuz doğrulama giriş, etkin olmasını bekler. Beklenecek yöntemi gibi yapabilecekleriniz **sonraki** düğmesi etkin () olacak şekilde Sihirbazı. Bu yöntem bir örnek için bkz [izlenecek yol: oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Denetimi Sihirbazı sunucuya çağrıları yaparak bazı zaman uyumsuz doğrulama giriş, etkin olmasını bekler. Beklenecek yöntemi gibi yapabilecekleriniz **sonraki** düğmesi etkin () olacak şekilde Sihirbazı. Bu yöntem bir örnek için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -111,7 +110,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
 - [UI otomasyonunu kullanarak kodunuzu test etme](../test/use-ui-automation-to-test-your-code.md)
 - [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
-- [İzlenecek yol: Oluşturma, düzenleme ve bakımı kodlanmış UI testi](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)
 - [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Nasıl yapılır: kodlanmış UI test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)
+- [Nasıl yapılır: Kodlanmış UI test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

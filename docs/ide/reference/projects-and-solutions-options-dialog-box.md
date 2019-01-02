@@ -2,7 +2,6 @@
 title: Projeler ve Çözümler, Seçenekler İletişim Kutusu
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926319"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projeler ve çözümler sayfanın, Seçenekler iletişim kutusu
 
@@ -89,11 +88,11 @@ Burada Visual Studio yeni proje ve çözüm klasörleri oluşturur. varsayılan 
 
 ### <a name="user-project-templates-location"></a>Kullanıcı proje şablonları konumu
 
-Varsayılan konumu belirtir, **yeni proje** iletişim kutusu listesini oluşturmak için kullandığı **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: bulun ve düzenleme şablonlarını](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Varsayılan konumu belirtir, **yeni proje** iletişim kutusu listesini oluşturmak için kullandığı **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Kullanıcı öğe Şablonları konumu
 
-Varsayılan konumu belirtir, **Yeni Öğe Ekle** iletişim kutusu listesini oluşturmak için kullandığı **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: bulun ve düzenleme şablonlarını](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Varsayılan konumu belirtir, **Yeni Öğe Ekle** iletişim kutusu listesini oluşturmak için kullandığı **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

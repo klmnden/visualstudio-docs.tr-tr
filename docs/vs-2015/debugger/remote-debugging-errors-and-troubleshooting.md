@@ -30,25 +30,25 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2bb349e49715f4a7a1be49e4a0764aee29ecdab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 3bea019935ea4988bcad1bcd0d34e228d37c22ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931248"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Uzaktan Hata Ayıklama Hataları ve Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uzaktan hata ayıklama çalışırken hatalarla karşılaşabilirsiniz.  
   
--   [Hata: Sunucunun İçine Otomatik Olarak Adımlanamıyor](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Hata: Otomatik olarak adımlanamıyor aktarılacaksa](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Hata: Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi (MSVSMON.EXE) uzak bilgisayar üzerinde çalışıyor görünmüyor.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
+-   [Hata: Microsoft Visual Studio uzaktan hata ayıklama İzleyicisi (MSVSMON. EXE) uzak bilgisayar üzerinde çalışıyor görünmüyor.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running?view=vs-2015)  
   
 -   [Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Hata: Uzak Makine, Uzaktan Bağlantılar iletişim kutusunda görünmüyor](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+-   [Hata: Uzak makinede uzaktan bağlantılar iletişim kutusunda görünmüyor](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

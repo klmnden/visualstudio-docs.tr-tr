@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 5. adımı çekirdek kılavuzun Visual Studio'da Python ortamı paketleri yönetmek için Visual Studio'nun özellikleri gösteren, Python özelliklerinin.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 666b780506784d7c252d37bc018817101bcfede8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964978"
 ---
-# <a name="step-5-install-packages-in-your-python-environment"></a>5. adım: Python ortamınızda paketleri yükleme
+# <a name="step-5-install-packages-in-your-python-environment"></a>5. Adım: Python ortamınızda paketleri yükleme
 
-**Önceki adımda: [hata ayıklayıcıda kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**Önceki adım sayısı: [Hata ayıklayıcıda kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 Python Geliştirici topluluğu kendi projelerine birleştirebilirsiniz yararlı paketleri binlerce hazırlamıştır. Visual Studio için Python ortamlarınızda paketlerini yönetmek için bir kullanıcı Arabirimi sağlar.
 

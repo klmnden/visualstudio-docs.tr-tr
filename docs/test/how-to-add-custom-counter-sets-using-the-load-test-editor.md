@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e610e29c623ecc7e67dcaa87ac1d7ce5417fb5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956211"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak özel sayaç kümeleri ekleme
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Nasıl Yapılır: Yük Testi Düzenleyicisini kullanarak özel sayaç kümeleri ekleme
 
 İle bir yük testi oluşturduğunuzda, **Yeni Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için ön tanımlı sayaç kümeleri kümesini sunar.
 
@@ -43,7 +42,7 @@ Sayaçlarınızı yönettiğiniz **Yük Testi Düzenleyicisi**. Test zaten eklen
     > [!NOTE]
     > Sayaç kümesi gibi varsayılan bir ad verilir **Custom1**. Adı kullanarak değiştirebileceğiniz **özellikleri** penceresi. Tuşuna **F4** görüntülenecek **özellikleri** penceresi.
 
-4.  Sayaçları özel sayaç kümesi, yeni sayaç kümesini sağ tıklatın ve ardından eklemek için **Sayaç Ekle**. Sayaçları ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: sayaç kümelerine sayaç ekleme](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4.  Sayaçları özel sayaç kümesi, yeni sayaç kümesini sağ tıklatın ve ardından eklemek için **Sayaç Ekle**. Sayaçları ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Sayaç kümelerine sayaç ekleme](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Varolan bir sayaç kümesini sağ tıklatıp, kopyala öğesini seçip ardından onu sayaç kümeleri düğümüne yapıştırarak da özel sayaç kümesi eklemek mümkündür. Kopyalanır, ancak gerekli değildir, ek sayaçları silinebilir. Kullanarak yeni sayacın adını değiştirebilirsiniz **özellikleri** penceresi.

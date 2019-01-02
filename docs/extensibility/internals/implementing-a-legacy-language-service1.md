@@ -1,9 +1,6 @@
 ---
-title: Eski dil Service1 uygulama | Microsoft Docs
-ms.custom: ''
+title: Bir eski dil hizmeti Uygulama1 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
@@ -13,39 +10,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0486b8ad035d64f542d48f1e304413780958d90c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3218a8cf1c61fb9b88520702a953f2288e19b3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855893"
 ---
-# <a name="implementing-a-legacy-language-service"></a>Eski dil hizmeti uygulama
-Sözdizimi vurgulama, eşleşen ayraç ve IntelliSense tamamlanma gibi çok çeşitli özellikleri destekleyen bir eski dil hizmet uygulamak için sınıflar yönetilen paket Framework'te (MPF) kullanabilirsiniz.  
+# <a name="implementing-a-legacy-language-service"></a>Eski dil hizmetinde uygulama
+Söz dizimi vurgulama, ayraç eşleştirme ve IntelliSense tamamlama gibi çok çeşitli özelliklerini destekleyen eski dil hizmeti uygulamak için yönetilen paket çerçevesini (MPF) sınıfları kullanabilirsiniz.  
   
- Eski dil hizmetler bir VSPackage bir parçası olarak uygulanır, ancak dil hizmet özellikleri uygulamak için daha yeni MEF uzantıları kullanmak için bir yoludur. Bir dil hizmeti uygulamak için yeni yolu hakkında daha fazla bilgi için bkz: [Düzenleyicisi ve dil hizmeti uzantılarını](../../extensibility/editor-and-language-service-extensions.md).  
+ Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Dil hizmeti uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [düzenleyici ve dil hizmeti uzantıları](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Yeni Düzenleyicisi API mümkün olan en kısa sürede kullanmaya başlamanızı öneriyoruz. Bu dil hizmetinizin performansını ve yeni Düzenleyicisi özelliklerden yararlanmak sağlar.  
+>  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Eski Dil Hizmetine Genel Bakış](../../extensibility/internals/legacy-language-service-overview.md)  
- MPF içinde desteklenen dil hizmet özelliklerine genel bakış.  
+ İçinde MPF desteklenen dil hizmeti özelliklerine genel bakış.  
   
- [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Bir dil hizmeti MPF kullanarak uygulamak için gereken nedir açıklar.  
+ [Eski Dil Hizmeti Uygulama](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ Dil hizmeti MPF uygulamak için gereken açıklar.  
   
- [Eski dil hizmeti kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Bir dil MPF tabanlı hizmete kaydolmak için gereken adımları açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [Eski Dil Hizmeti Kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ Bir dil MPF tabanlı hizmetiyle kaydetmek için gerekli adımları açıklayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Bir dil hizmetin tüm özelliklerini MPF kullanarak uygulamak için gereken iki ayrıştırıcıları açıklar.  
+ MPF dil hizmetinin tüm özellikleri uygulamak için gereken iki Çözümleyicileri açıklar.  
   
- [İzlenecek Yol: Eski Dil Hizmeti Oluşturma](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
- Bir VSPackage MPF dil hizmeti uygulamak için gereken temel adımları sağlar.  
+ [İzlenecek yol: Eski dil hizmeti oluşturma](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
+ VSPackage'ı içinde bir MPF dil hizmeti uygulamak için gerekli temel adımlar sağlanmaktadır.  
   
- [İzlenecek Yol: Yüklü Kod Parçacıklarının Listesini Alma (Eski Uygulama)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
- Yüklü kod parçacıkları listesini alma teknikleri gösterir.  
+ [İzlenecek yol: (Eski uygulama) yüklü kod parçacıklarının listesini alma](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
+ Yüklü kod parçacıklarının listesini alma teknikleri gösterir.  
   
- [Eski dil hizmeti özellikleri](../../extensibility/internals/legacy-language-service-features1.md)  
- Konulara bağlantılar ne MPF kullanarak bir dil hizmetin tüm özelliklerini uygulama yapılmalıdır bu ayrıntı sağlar.
+ [Eski Dil Hizmeti Özellikleri](../../extensibility/internals/legacy-language-service-features1.md)  
+ Ne MPF dil hizmetinin tüm özellikleri uygulamak için yapılması gereken bu ayrıntılı konulara bağlantılar sağlar.

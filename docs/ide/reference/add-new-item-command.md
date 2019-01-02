@@ -2,7 +2,6 @@
 title: Yeni Öğe Ekle Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952478"
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
-Geçerli çözüme bir .htm, .css, .txt veya çerçeve gibi yeni bir çözüm öğesi ekler ve açar.
+Geçerli çözüme .htm, .css, .txt veya frameset gibi yeni bir çözüm öğesi ekler ve onu açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,28 +34,28 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  `filename` İsteğe bağlı. Çözüme eklenecek öğe yolu ve dosya adı.
 
 ## <a name="switches"></a>Anahtarlar
- / t: `templatename` isteğe bağlı. Oluşturulacak dosya türünü belirtir. Hiçbir şablon adı belirtilmezse, varsayılan olarak bir metin dosyası oluşturulur.
+ / t: `templatename` İsteğe bağlı. Oluşturulacak dosya türünü belirtir. Hiçbir şablon adı belirtilmezse, varsayılan olarak bir metin dosyası oluşturulur.
 
- / T:`templatename` bağımsız değişken sözdizimi yansıtan içinde bulunan bilgileri **yeni çözüm Öğe Ekle** iletişim kutusu. Kategori adı bir ters eğik çizgi ile olan dosya türünü ayırmak dosya türünü ve ardından tam kategori girmeniz gerekir (`\`) ve tüm dizeyi tırnak işaretleri içine kapsayan.
+ / T:`templatename` bağımsız değişken söz dizimi içinde bulunan bilgileri yansıtır **yeni çözüm Öğe Ekle** iletişim kutusu. Dosya türü kategori adı bir ters eğik çizgi dosya türünü ayırmak, ardından tam kategori girmeniz gerekir (`\`) ve tırnak dizenin tamamını kapsayan.
 
- Örneğin, yeni bir metin dosyası oluşturmak için / t: şunları girersiniz`templatename` bağımsız değişkeni.
+ Örneğin, yeni bir metin dosyası oluşturmak için / t: şunları girersiniz`templatename` bağımsız değişken.
 
 ```cmd
 /t:"General\Style Sheet"
 ```
 
- / e: `editorname` isteğe bağlı. Dosya açılacak Düzenleyicisi adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı sağlanan **birlikte Aç** iletişim kutusu görüntülenir.
+ / e: `editorname` İsteğe bağlı. Dosyanın açılmasını Düzenleyicisi adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı verilmesi, **birlikte Aç** iletişim kutusu görüntülenir.
 
- / E:`editorname` bağımsız değişkeni söz dizimini kullanır Düzenleyici adları içinde göründükleri gibi **ile iletişim kutusunu aç**, tırnak işaretleri içindeki kapalı.
+ / E:`editorname` bağımsız değişkeni sözdizimini kullanan Düzenleyicisi adları gibi görünürler **ile iletişim kutusunu açma**tırnak işareti içine alınan.
 
- Örneğin, bir stil sayfası kaynak kod düzenleyicisinde açmak için aşağıdaki / e: için girersiniz`editorname` bağımsız değişkeni.
+ Örneğin, bir stil sayfası Kaynak Kod Düzenleyicisi'nde açmak için / e: şunları girersiniz`editorname` bağımsız değişken.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Örnek
- Bu örnek, geçerli çözüme yeni bir çözüm öğesi olan MyHTMLpg, ekler.
+ Bu örnek, yeni bir çözüm öğesi MyHTMLpg, geçerli çözüme ekler.
 
 ```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
@@ -66,5 +65,5 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

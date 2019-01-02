@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856448"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Word için belge düzeyi özelleştirmeyi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir belge açık olduğunda kullanılabilir. Belge düzeyi özelleştirmesi birçok farklı uygulama değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir belge açık olduğunda, yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -143,17 +140,17 @@ ms.locfileid: "49928821"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Word için basit bir belge düzeyi özelleştirmesi oluşturduktan sonra aşağıdaki konulardan özelleştirmeleri geliştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Belge düzeyi özelleştirmelerde gerçekleştirebileceğiniz genel programlama görevlerini: [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).  
+-   Belge düzeyi özelleştirmelerde gerçekleştirebileceğiniz genel programlama görevleri: [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md).  
   
 -   Word için belge düzeyi özelleştirmeleri özgü programlama görevleri: [Word çözümleri](../vsto/word-solutions.md).  
   
 -   Word nesne modelini kullanarak: [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md).  
   
--   Word kullanıcı arabirimini özelleştirme, örneğin, göre Şerite özel sekme ekleme veya kendi Eylemler bölmesi oluşturma: [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
+-   UI Word'ün, örneğin, Şeride özel bir sekme ekleme ya da kendi Eylemler bölmesi oluşturma özelleştirme: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   
--   Word nesne modeli (örneğin, belgelerdeki yönetilen denetimleri ve Word denetimleri verilere kullanarak Windows Forms veri bağlama kullanarak mümkün olmayan görevleri gerçekleştirmek için Visual Studio'da Office çözümleri tarafından sağlanan genişletilmiş Word nesneleri kullanma model bağlama): [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md).  
+-   Word nesne modeli (örneğin, belgelerdeki yönetilen denetimleri ve Word denetimleri verilere kullanarak Windows Forms veri bağlama kullanarak mümkün olmayan görevleri gerçekleştirmek için Visual Studio'da Office çözümleri tarafından sağlanan genişletilmiş Word nesneleri kullanma bağlama modelini): [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Derleme ve Word için belge düzeyi özelleştirmeleri hata ayıklama: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
+-   Derleme ve Word için belge düzeyi özelleştirmeleri hata ayıklama: [Office çözümleri oluşturmanıza](../vsto/building-office-solutions.md).  
   
 -   Word için belge düzeyi özelleştirmeleri dağıtma: [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
   
@@ -167,5 +164,3 @@ ms.locfileid: "49928821"
  [Office çözümleri oluşturun](../vsto/building-office-solutions.md)   
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentTextEvents2::onDestroy | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentTextEvents2::OnDestroy
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7603ff5ad5d8a221a045936fe7504d12274aa7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c7e8d431b6ec3e4d06e94da28c87ff7b69968de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855276"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 Tüm belgeyi yok edildi gösterir.  
@@ -28,8 +25,8 @@ Tüm belgeyi yok edildi gösterir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT onDestroy(   
-   void   
+HRESULT onDestroy(   
+   void   
 );  
 ```  
   

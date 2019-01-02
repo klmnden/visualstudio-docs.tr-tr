@@ -3,21 +3,20 @@ title: Visual Studio IDE turu
 titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fafb5e9f99c42eb799aa310042c9f8e9ffd0300
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 057297bf3460811a848b86c84363771d2de0ed21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856712"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakış
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE ilk bakma
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), biz windows, menüler ve diğer kullanıcı Arabirimi özellikleri bazıları ilişkin tura katılın.
 
@@ -113,6 +112,6 @@ Visual Studio kullanıcı arabirimi ile tanışın özelliklerinin birkaçı adr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio IDE genel bakış](../ide/visual-studio-ide.md)
+- [Visual Studio IDE genel bakış](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017'in daha fazla özellik](../ide/advanced-feature-overview.md)
 - [Tema ve yazı tipi renkleri değiştirme](../ide/quickstart-personalize-the-ide.md)

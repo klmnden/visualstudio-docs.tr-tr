@@ -1,9 +1,6 @@
 ---
-title: VSIX v3 uzantıları klasörüyle dışında yükleme | Microsoft Docs
-ms.custom: ''
+title: VSIX v3 ile uzantılar klasörünün dışına yükleme | Microsoft Docs
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
@@ -11,16 +8,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8476b300974d66efc60f647c897ec6892191e7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968504"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Uzantıları klasörünün dışında yükleme
+# <a name="installing-outside-the-extensions-folder"></a>Uzantılar klasörünün dışına yükleme
 
-Visual Studio 2017 ve VSIX v3 ile başlayan (uzantısı varlıklar uzantıları klasörünü dışında yüklemek için şimdi destek sürüm 3). Şu anda, (burada [INSTALLDİR] Visual Studio örneğinin yükleme dizin ile eşlenen) geçerli yükleme konumları olarak aşağıdaki konumlarda etkin:
+Visual Studio 2017 ve VSIX v3 ile başlayan (uzantı varlıklar uzantılar klasörünün dışına yükleme için artık destek sürüm 3). Şu anda, aşağıdaki konumlardan, geçerli yükleme konumlarını (burada [INSTALLDIR] Visual Studio örneğinin yükleme dizinine eşlendi) olarak etkin değil:
 
 * [INSTALLDİR] \MSBuild
 * [INSTALLDİR] \Xml\Schemas
@@ -30,19 +27,19 @@ Visual Studio 2017 ve VSIX v3 ile başlayan (uzantısı varlıklar uzantıları 
 * [INSTALLDİR] \Common7\IDE\RemoteDebugger
 * [INSTALLDİR] \Common7\IDE\VC\VCTargets
 
->**Not:** VSIX biçimi dışında VS yükleme klasör yapısı yüklemeye izin vermez.
+>**Not:** VSIX biçimi VS yükleme klasör yapısını dışında yüklemeye izin vermiyor.
 
 Bu dizinleri yüklemeyi desteklemek için VSIX "makine başına örnek başına" yüklenmelidir. Bu extension.vsixmanifest Tasarımcısı'nda "tüm kullanıcılar" onay kutusunu işaretleyerek etkin hale getirilebilir:
 
-![tüm kullanıcılar denetleyin](media/check-all-users.png)
+![tüm kullanıcılar](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>Yüklemekökü ayarlama
+## <a name="how-to-set-the-installroot"></a>InstallRoot ayarlama
 
-Yükleme dizinleri ayarlamak için kullanabileceğiniz **özellikleri** Visual Studio'daki. Örneğin, ayarlayabileceğiniz `InstallRoot` yukarıdaki konumlardan birine proje başvurusu özelliği:
+Yükleme dizinleri belirlemek üzere kullanabileceğiniz **özellikleri** Visual Studio'daki. Örneğin, ayarlayabilirsiniz `InstallRoot` yukarıdaki konumlardan birine yapılan proje başvurusunun özelliği:
 
-![kök özellikleri yükleyin](media/install-root-properties.png)
+![kök özellikleri yükleme](media/install-root-properties.png)
 
-Bu ilgili bazı meta veri ekler `ProjectReference` özelliği VSIX proje .csproj dosya içinde:
+Bu ilgili bazı meta veriler ekler `ProjectReference` içinde VSIX proje .csproj dosyasını özelliği:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -52,15 +49,15 @@ Bu ilgili bazı meta veri ekler `ProjectReference` özelliği VSIX proje .csproj
  </ProjectReference>
 ```
 
->**Not:** tercih ederseniz, doğrudan .csproj dosyasını düzenleyin.
+>**Not:** Tercih ederseniz, .csproj dosyasını doğrudan düzenleyebilirsiniz.
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>Bir alt yolu yüklemekökü altında ayarlama
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>Bir yükleme kökü altında InstallRoot ayarlama
 
-Bir alt yolu yüklemek isteyip istemediğinizi `InstallRoot`, ayarlayarak yapabilirsiniz `VsixSubPath` özelliği olduğu gibi `InstallRoot` özelliği. Örneğin, yüklemek için bizim proje referansının çıktısı istiyoruz söyleyin ' [INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'. Kolayca özelliği Tasarımcısı ile bunu yapabilirsiniz:
+Bir yükleme kökü altında yüklemek isteyip istemediğinizi `InstallRoot`, bunu ayarlayarak yapabilirsiniz `VsixSubPath` özelliği olduğu gibi `InstallRoot` özelliği. Örneği için yüklemek için proje başvurusunun çıkış istediğimizi varsayalım. ' [INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'. Kolayca özellik Tasarımcısı ile bunu yapabilirsiniz:
 
-![set alt yolu](media/set-subpath.png)
+![set-yükleme kökü](media/set-subpath.png)
 
-Karşılık gelen .csproj değişiklikleri şuna benzeyecektir:
+Karşılık gelen .csproj değişiklikleri şöyle görünür:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -73,4 +70,4 @@ Karşılık gelen .csproj değişiklikleri şuna benzeyecektir:
 
 ## <a name="extra-information"></a>Ek bilgi
 
-Özellik Tasarımcı değişiklikleri daha fazlasını proje başvuruları için geçerlidir; ayarlayabileceğiniz `InstallRoot` projenizi de içinde öğeleri için meta veriler (yukarıda açıklanan aynı yöntemleri kullanarak).
+Özellik Tasarımcısı değişiklikleri daha fazlasını proje başvuruları için geçerlidir; ayarlayabileceğiniz `InstallRoot` meta verileri de, projedeki öğeleri için (yukarıda açıklanan aynı yöntemleri kullanarak).

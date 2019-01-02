@@ -1,8 +1,7 @@
 ---
-title: 'CA1304: CultureInfo belirtme'
+title: 'CA1304: CultureInfo belirt'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe02dd66b523e6ee82c5e1a2051f3a68839957d4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968491"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo belirtme
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo belirt
 
 |||
 |-|-|
@@ -44,9 +43,9 @@ Yöntem veya Oluşturucu kabul eden aşırı yüklenmiş bir üyeyi çağıran b
 
 Olduğunda bir <xref:System.Globalization.CultureInfo> veya <xref:System.IFormatProvider?displayProperty=nameWithType> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET Framework üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
 
-- Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Diğer bir deyişle, bir dosya ya da veritabanı, kalıcı bir değeri depolanan ve yazılım tarafından erişilen, sabit kültür kullanın. Bkz: <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Diğer bir deyişle, bir dosya ya da veritabanı, kalıcı bir değeri depolanan ve yazılım tarafından erişilen, sabit kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
 - Hedef değerin bilmiyorsanız, veri tüketici sahip veya sağlayıcıyı kültür.
 
@@ -84,7 +83,7 @@ Bu örnek aşağıdaki çıktıyı üretir:
 
 ## <a name="related-rules"></a>İlgili kuralları
 
-- [CA1305: IFormatProvider belirtin](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305: Iformatprovider belirtin](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

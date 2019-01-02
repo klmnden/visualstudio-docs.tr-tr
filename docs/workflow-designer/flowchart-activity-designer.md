@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - Flowchart etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
 - System.Activities.Statements.FlowStep.UI
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468e4e09f8e31ae6b3e8bf7a49b7a1c368b3e73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6aee36a87b6bf9210a880c9b547f8efda08dbe98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926659"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart Etkinlik Tasarımcısı
 
@@ -41,7 +40,7 @@ ms.locfileid: "49877692"
 
 Aşağıdaki tabloda <xref:System.Activities.Statements.Flowchart> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Üst bilgide etkinlik Tasarımcısı görünen adını belirtir. Akış varsayılan değerdir. Değer içinde düzenlenebilir **özellikleri** penceresi veya doğrudan etkinlik Tasarımcısı başlığı.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|İçinde bu kapsamlı değişkenlerinin koleksiyonunu <xref:System.Activities.Statements.Flowchart> alt etkinlikleriyle arasında durum paylaşma için.|

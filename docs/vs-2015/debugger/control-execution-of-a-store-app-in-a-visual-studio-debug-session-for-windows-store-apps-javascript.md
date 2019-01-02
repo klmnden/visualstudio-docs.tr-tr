@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca8e2a584ff68786d22bd90ddd8827a70c66a557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d35a33fcacf57c0d88e7bd7db1112f4ec3db4204
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052216"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968319"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Bir Store uygulamasının yürütülmesini denetleme (JavaScript) Windows Store uygulamaları için Visual Studio hata ayıklama oturumunda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +73,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 
 2. **Default.js kaynak dosyasını açın.** Çözüm Gezgini'nde açın **js** düğümünü seçip `default.js`.
 
-3. **Sayfa içeriğini örnek kod ile değiştirin.** Tüm içeriğini silmek `default.js` dosya. Bu bağlantıyı izleyin: [hata ayıklayıcı gezintisi örnek kodu (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)ve ardından panoya JavaScript bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı veya Yardım Görüntüleyicisi bu hızlı başlangıç sayfasına geri dönün.) Visual Studio Düzenleyicisi'nde kod şimdi boş yapıştırın `default.js`. Seçin **Ctrl + S** dosyayı kaydetmek için.
+3. **Sayfa içeriğini örnek kod ile değiştirin.** Tüm içeriğini silmek `default.js` dosya. Bu bağlantıyı izleyin: [Hata ayıklayıcı gezintisi örnek kodu (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)ve ardından panoya JavaScript bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı veya Yardım Görüntüleyicisi bu hızlı başlangıç sayfasına geri dönün.) Visual Studio Düzenleyicisi'nde kod şimdi boş yapıştırın `default.js`. Seçin **Ctrl + S** dosyayı kaydetmek için.
 
    Şimdi, bu konudaki örnekleri birlikte izleyebilirsiniz.
 
@@ -192,7 +191,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 
      ![Metin Görselleştirici hata ayıklama](../debugger/media/dbg-jsnav-text-visualizer.png "DBG_JSNAV_Text_Visualizer")
 
-7.  **İmlece kadar çalıştırma.** Satırı seçin `callTrack += "->example3";` seçip **imlece kadar Çalıştır** kısayol menüsünde (klavye: **Ctrl + F10**). Hata ayıklayıcı, döngü yinelemesi tamamlar ve ardından satırında yürütmeyi askıya alır.
+7.  **İmlece kadar çalıştırma.** Satırı seçin `callTrack += "->example3";` seçip **imlece kadar Çalıştır** kısayol menüsünde (klavye: **CTRL + F10**). Hata ayıklayıcı, döngü yinelemesi tamamlar ve ardından satırında yürütmeyi askıya alır.
 
 8.  **Hata ayıklamayı durdurun.** Üzerinde **hata ayıklama** menüsünde seçin **hata ayıklamayı Durdur** (klavye: **Shift + F5**). Bu, hata ayıklama oturumunuzu sonlandırır.
 
@@ -220,7 +219,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 
 2.  **Kesme noktasına kadar çalıştırın.** Hata ayıklama oturumu başlatın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: **F5**). Hata ayıklayıcı yürütme kesme noktasında askıya alır. Çizginin Adımlama.
 
-3.  **Yereller penceresini açın.** Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: Alt + 4).
+3.  **Yereller penceresini açın.** Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: Alt+ 4).
 
 4.  **Modül işlevinde yerel değişkenlerini inceleyin** Yereller windows yürütülmekte olan işlevin değişkenleri görüntüler ( `module` işlevi) ağacı üst düzey düğüm. JavaScript bir işleve girdiğiniz zaman, tüm değişkenler oluşturur ve bunları değerini verir `undefined`. İşlev içinde tanımlanan işlevleri kendi metin bir değere sahip.
 
@@ -257,7 +256,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 
 2.  **Kesme noktasına kadar çalıştırın.** Hata ayıklama oturumu başlatın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: **F5**). Hata ayıklayıcı yürütme kesme noktasında askıya alır.
 
-3.  **Yereller penceresini açın.** Üzerinde gerekirse **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: **Alt + 4**). Pencerenin tüm değişkenleri listeler ve içindeki işlevler unutmayın `module` işlev ve de içeren bir **[genel]** düğümü.
+3.  **Yereller penceresini açın.** Üzerinde gerekirse **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: **Alt+ 4**). Pencerenin tüm değişkenleri listeler ve içindeki işlevler unutmayın `module` işlev ve de içeren bir **[genel]** düğümü.
 
 4.  **Genel değişkenler inceleyin.** Genişletin **[genel]** düğümü. Global değişkenler ve nesneler JavaScript için Windows kitaplığı tarafından ayarlandı. Kendi değişkenleri için genel kapsam ekleyebilirsiniz.
 
@@ -293,7 +292,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 
 2.  **Kesme noktasına kadar çalıştırın.** Hata ayıklama oturumu başlatın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: **F5**). Hata ayıklayıcı modül işlevdeki bir kesme noktasında yürütmeyi askıya alır.
 
-3.  **Çağrı yığını penceresini açın.** Üzerinde **hata ayıklama** menüsünde seçin **Windows**ve ardından **çağrı yığını** (klavye: Alt + 7). Çağrı yığını penceresinde iki işlev gösterdiğine dikkat edin:
+3.  **Çağrı yığını penceresini açın.** Üzerinde **hata ayıklama** menüsünde seçin **Windows**ve ardından **çağrı yığını** (klavye: Alt+ 7). Çağrı yığını penceresinde iki işlev gösterdiğine dikkat edin:
 
     -   **Genel kod** giriş noktası `module` çağrı yığınını alt kısmındaki işlevi.
 
@@ -310,4 +309,4 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 7.  **Hata ayıklamayı durdurun.** Üzerinde **hata ayıklama** menüsünde seçin **hata ayıklamayı Durdur** (klavye: **Shift + F5**). Bu, hata ayıklama oturumunuzu sonlandırır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Bir (JavaScript) hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md) [hızlı başlangıç: hata ayıklayıcı gezintisi (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md) [tetikleyici askıya alma, sürdürme ve arka plan olayları Windows Store için)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)
+ [Bir (JavaScript) hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md) [hızlı başlangıç: Gezinti (JavaScript) hata ayıklayıcı](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [hızlı başlangıç: Hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md) [tetikleyici askıya alma, sürdürme ve arka plan olaylarını Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md)

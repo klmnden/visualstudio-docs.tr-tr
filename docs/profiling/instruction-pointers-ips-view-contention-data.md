@@ -1,8 +1,6 @@
 ---
-title: Yönerge işaretçileri (IP) görünümü - Çekişme verileri | Microsoft Docs
-ms.custom: ''
+title: Yönerge işaretçileri (IP) görünümü - çakışma verileri | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,40 +10,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853482"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Yönerge işaretçileri (IP) görünümü - çakışma verileri
-Çakışma verileri IP'leri görünümünü Çalıştır profil yürütülmesini engellendi derleme yönergeleri için veri listeler.  
+Çekişme verisi IP'ler görünümünü veriler için profil oluşturma çalışmasında çalıştırılması engellenen derleme yönergeleri listeler.  
   
- Yönerge işaretçileri görünümü sütunlardaki değerleri aşağıdaki tabloda açıklanmaktadır.  
+ Yönerge işaretçileri görünümü sütun değerleri aşağıdaki tabloda açıklanmaktadır.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Özel engellenen süresi**|Bu işlev engellenen süre.|  
-|**Özel engellenen süresi %**|Yönerge yürütüldüğü sırada engellenen zamanı yüzdesi.|  
-|**Özel çekişmeleri**|Yönerge yürütüldüğü sırada gerçekleşen çekişmeleri sayısı.|  
-|**Özel çekişmeleri %**|Yönerge yürütüldüğü sırada gerçekleşen çalıştırmak profil tüm çekişmeleri yüzdesi.|  
+|**Dışlamalı engellenme süresi**|Bu işlevdeki engellenme süresi.|  
+|**Dışlamalı engellenme süresi yüzdesi**|Yönerge yürütülmesi sırasında engellenme süresi yüzdesi.|  
+|**Dışlamalı Çekişmeler**|Yönerge yürütülmesi sırasında oluşan çekişmelerin sayısı.|  
+|**Dışlamalı Çekişme yüzdesi**|Yönerge yürütülmesi sırasında oluşan profil oluşturma çalışması içindeki tüm çekişmelerin yüzdesi.|  
 |**İşlev adresi**|Yüklenen ikili işlevinde başlangıç bellek adresi.|  
 |**İşlev adı**|Yönergeyi içeren işlev adı.|  
 |**Yönerge adresi**|Yüklenen ikili yönergesinde bellek adresi.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**Modül adı**|Yönergeyi içeren modülü adı.|  
-|**Modül yolu**|Yönergeyi içeren modülü yolu.|  
-|**İşlem kimliği**|İşlem kimliği (PID) profili işleminin.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**Modül adı**|Yönergeyi içeren modül adı.|  
+|**Modül yolu**|Yönergeyi içeren modül yolu.|  
+|**İşlem kimliği**|İşlem kimliği (PID) profilli işlemin.|  
 |**İşlem adı**|İşlemin adı.|  
-|**Kaynak karakter başlangıç**|Bu yönerge başlatan kaynak dosya satırdaki karakter uzaklığı.|  
-|**Kaynak karakter ucu**|Bu yönerge erdiği kaynak dosya satırdaki karakter uzaklığı.|  
-|**Kaynak dosya**|Yönerge içeren kaynak dosyası.|  
-|**Kaynak satırı başlangıç**|Bu yönerge başlatan kaynak dosyasında satır numarası.|  
-|**Kaynak satır sonu**|Bu yönerge erdiği kaynak dosyasında satır numarası.|  
+|**Kaynak karakter başlangıcı**|Bu yönerge başladığı kaynak dosya satır öğesindeki taban karakterin uzaklığı.|  
+|**Kaynak karakter sonu**|Bu yönerge erdiği kaynak dosya satır öğesindeki taban karakterin uzaklığı.|  
+|**Kaynak dosyası**|Yönergeyi içeren kaynak dosyası.|  
+|**Kaynak satır başlangıcı**|Bu yönerge başladığı kaynak dosyadaki satır numarası.|  
+|**Kaynak satır sonu**|Bu yönerge erdiği kaynak dosyadaki satır numarası.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view.md)   
  [Yönerge işaretçileri (IP) görünümü - örnekleme](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view-sampling-data.md)

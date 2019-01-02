@@ -1,8 +1,6 @@
 ---
 title: Toplu hedef işlemede meta veri öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486169788ad4533f5d45bf48c979ce3d0f5f7920
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f46f71303dead8c44881098a89fa7518d05e7d4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856403"
 ---
 # <a name="item-metadata-in-target-batching"></a>Toplu hedef işlemede öğe meta verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Giriş ve çıkışlarını yapı hedef üzerinde bağımlılık analizleri gerçekleştirmek özelliğine sahiptir. Giriş veya çıkış hedefin güncel olduğunu belirlenirse hedef atlanacak ve derleme devam edecek. `Target` öğeleri kullanın `Inputs` ve `Outputs` bağımlılık analizi sırasında incelemek için öğeleri belirtmek için öznitelikler.  
@@ -68,7 +66,7 @@ ms.locfileid: "39081065"
 ```  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: artımlı olarak derleme](../msbuild/how-to-build-incrementally.md)   
+ [Nasıl yapılır: Artımlı olarak derleme](../msbuild/how-to-build-incrementally.md)   
  [Toplu işleme](../msbuild/msbuild-batching.md)   
  [Hedef öğe (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Toplu Görev işlemede öğe meta verileri](../msbuild/item-metadata-in-task-batching.md)

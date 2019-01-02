@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: uygulama ve dağıtım bildirimlerini yeniden imzalama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d5276f77226930b7ad49aea3253321ed3c8082be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937994"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Nasıl yapılır: yeniden, uygulama ve dağıtım bildirimlerini imzalama
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Nasıl Yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama
 Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap) ya da Office çözümleri için uygulama bildiriminde dağıtım özelliklerini değişiklikleri yaptıktan sonra her iki uygulamayı yeniden imzalamanız gerekir ve dağıtım bildirimleri ile bir Sertifika. Bu işlem, değiştirilen dosyaların son kullanıcı bilgisayarlarında yüklenmediğinden garanti eder.  
   
  Burada bildirimlerini yeniden imzalama başka bir senaryo, kendi sertifika ile dağıtım bildirimleri ve uygulamayı imzalamak Müşterilerinizin istediği andır.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimlerini yeniden imzalama  
- Bu yordam, uygulama bildirim dosyasına değişiklikler zaten yaptınız varsayar (*.manifest*). Daha fazla bilgi için [nasıl yapılır: dağıtım özelliklerini değiştirme](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Bu yordam, uygulama bildirim dosyasına değişiklikler zaten yaptınız varsayar (*.manifest*). Daha fazla bilgi için [nasıl yapılır: Dağıtım özelliklerini değiştirme](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Uygulama ve dağıtım yeniden imzalamak için Mage.exe ile bildirimleri  
   
@@ -122,6 +120,6 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
  [Nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştirme](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Nasıl yapılır: ClickOnce uygulamaları için bir istemci bilgisayara güvenilir yayımcı ekleme](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

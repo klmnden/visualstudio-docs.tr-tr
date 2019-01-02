@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: teknik destek için bir bağlantı belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Teknik destek için bir bağlantı belirtme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933946"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Nasıl yapılır: teknik destek için bir bağlantı belirtme
+# <a name="how-to-specify-a-link-for-technical-support"></a>Nasıl Yapılır: Teknik destek için bir bağlantı belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama **destek URL'si** özelliği, bir Web sayfası veya kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımı tanımlar. Bu özellik isteğe bağlıdır; URL sağlanırsa, uygulamanın girişinde görüntülenir **Program Ekle veya Kaldır** iletişim kutusu.  
   
  **Destek URL'si** özelliği, üzerinde ayarlanabilir **Yayımla** sayfasının **Proje Tasarımcısı**.  
@@ -48,4 +46,4 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
- [Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,9 +1,6 @@
 ---
 title: Office çözümleri oluşturma ve tasarlama
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b1911feec92e802fb8534623c903bb6461832bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935995"
 ---
 # <a name="design-and-create-office-solutions"></a>Office çözümleri oluşturma ve tasarlama
   Visual Studio, birkaç farklı türde Office çözümleri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Belgelerinin bu bölümü, proje şablonlarını açıklar ve Office projeleri oluşturma hakkında yönergeler sağlar. Projenizi oluşturduktan sonra kodun ve kullanıcı arabirimi özelleştirmelerinin gerçekleştirme hakkında daha fazla bilgi için bkz. [geliştirme Office çözümleri](../vsto/developing-office-solutions.md).  
@@ -108,5 +105,3 @@ ms.locfileid: "53648813"
  [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)   
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
  [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

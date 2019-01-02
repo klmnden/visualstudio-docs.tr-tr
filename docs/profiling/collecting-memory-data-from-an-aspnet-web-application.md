@@ -1,8 +1,6 @@
 ---
 title: Profiler komut satırını kullanarak bir ASP.NET Web uygulamasından bellek verileri toplama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: c99ca461acc51697a8c5b654f5b350149ac76c09
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 9772961d8ebd7b91b75886d7c5fa9cafbf76cfae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902873"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bir ASP.NET web uygulamasından bellek verileri toplama
 Bu bölümde kullanarak bir ASP.NET Web uygulaması için bellek ayırma ve nesne yaşam verisi toplamak için seçenekleri ve yordamları açıklanmaktadır **VSPerfCmd** komut satırı aracı.  
@@ -30,9 +28,9 @@ Bu bölümde kullanarak bir ASP.NET Web uygulaması için bellek ayırma ve nesn
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: bellek verileri toplamak için bir ASP.NET web uygulamasına profil oluşturucu ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Gereç statik olarak derlenmiş ikili dosyaları**|-   [Nasıl yapılır: statik olarak derlenmiş bir ASP.NET uygulamasın izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|  
-|**Gereç dinamik olarak derlenmiş ikili dosyaları**|-   [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|  
+|**Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Bellek verileri toplamak için bir ASP.NET web uygulamasına profil oluşturucu ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Gereç statik olarak derlenmiş ikili dosyaları**|-   [Nasıl Yapılır: Statik olarak derlenmiş bir ASP.NET uygulamasını izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|  
+|**Gereç dinamik olarak derlenmiş ikili dosyaları**|-   [Nasıl Yapılır: Dinamik olarak derlenmiş bir ASP.NET uygulamasını izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler
   

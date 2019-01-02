@@ -1,6 +1,5 @@
 ---
 title: RequiredPlatformVersion öğesi (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb848935343592c7baf3c2026f1a8637f08c6af8
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 5f77b14903ccf5569755cf7116a1365d5ba8487c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561609"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850394"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion öğesi (Visual Studio şablonları)
 Proje şablonu düzgün çalışması için gerekli işletim sistemi en düşük sürümünü belirtir. Bu öğe oluşturmak için proje şablonları kullanılan [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] uygulamalar.  

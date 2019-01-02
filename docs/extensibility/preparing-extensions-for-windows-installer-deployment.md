@@ -1,9 +1,6 @@
 ---
 title: Uzantıları Windows Installer dağıtımı için hazırlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5ceaa78315c896350f87d216e2cc320b66844999
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931417"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Uzantıları Windows Installer dağıtımı için hazırlama
 Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazsınız. Ancak, bir VSIX paketi MSI dağıtım içeriğini ayıklayabilirsiniz. Bu belge, bir kurulum projesi eklenmek üzere bir VSIX paketi varsayılan çıktısı bir projesini Hazırlama işlemi gösterilmektedir.  
@@ -59,4 +56,4 @@ Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazs
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Visual Studio Installer dağıtımı](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [İzlenecek yol: özel bir eylem oluşturur.](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+ [İzlenecek yol: Özel Eylem oluştur](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

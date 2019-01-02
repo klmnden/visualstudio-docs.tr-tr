@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: iş parçacığı özelliklerini görüntüleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: İş parçacığı özelliklerini görüntüleme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - thread properties
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc5b8d6dcf3cb6dc2a78bee626633103d5b1b18c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e011da42235fe62c86c7c2a12fee99b439b38421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851384"
 ---
-# <a name="how-to-display-thread-properties"></a>Nasıl yapılır: İş Parçacığı Özelliklerini Görüntüleme
+# <a name="how-to-display-thread-properties"></a>Nasıl Yapılır: İş parçacığı özelliklerini görüntüleme
 Listelenen bir iş parçacığı hakkında daha fazla bilgi için [iş parçacıkları görünümü](../debugger/threads-view.md), kullanın [iş parçacığı Özellikleri iletişim kutusu](../debugger/thread-properties-dialog-box.md).  
   
 ### <a name="to-open-a-thread-properties-dialog-box"></a>Bir iş parçacığı Özellikleri iletişim kutusunu açmak için  

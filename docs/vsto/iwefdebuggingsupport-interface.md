@@ -1,9 +1,6 @@
 ---
 title: Iwefdebuggingsupport arabirimi
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 351fb69b99393a10518168f4f9b01efe1f9efaa7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 73aff964cfb66d33e308aef6448fc0f0b1b27c09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901025"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Iwefdebuggingsupport arabirimi
-  Visual hata ayıklama için Office uygulamaları kolaylaştırmak için Studio gibi bir hata ayıklama ortamı tarafından uygulanır. Word veya Excel gibi Office uygulamasının Visual Studio'dan bu arabirim alır ve yöntemleri bazı noktalarda arabirimde hata ayıklama oturumu sırasında çağırır.  
+  Office uygulamalarında hata ayıklamayı kolaylaştırmak için Visual Studio'yu gibi bir hata ayıklama ortamı tarafından uygulanır. Word veya Excel gibi Office uygulamasını Visual Studio'dan bu arabirim alır ve ardından yöntemleri arabirimindeki bazı noktalarda hata ayıklama oturumu sırasında çağırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,11 +37,9 @@ interface IWefDebuggingSupport : IUnknown
 ```  
   
 ## <a name="methods"></a>Yöntemler  
- Aşağıdaki tabloda Iwefdebuggingsupport arabirimi tanımlar yöntemlerini listeler.  
+ Iwefdebuggingsupport arabirimi tanımlar yöntemler aşağıdaki tabloda listelenmiştir.  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Getautoınsertextensions yöntemi](../vsto/getautoinsertextensions-method.md)|Hata ayıklama sırasında otomatik olarak eklenmesini olan Office için uygulamalar hakkındaki bilgileri alır.|  
-|[Setwefprocessıd yöntemi](../vsto/setwefprocessid-method.md)|Web uzantılarının Framework (WEF) içerik çalışacak işlem tanımlayıcısını sağlar.|  
-  
-  
+|[Getautoınsertextensions metodu](../vsto/getautoinsertextensions-method.md)|Hata ayıklama sırasında otomatik olarak eklenmesi için Office için uygulamalar hakkında bilgi alır.|  
+|[Setwefprocessıd yöntemi](../vsto/setwefprocessid-method.md)|Web uzantılarının Framework (WEF) içeriği çalışacak işlem tanımlayıcısı sağlar.|  

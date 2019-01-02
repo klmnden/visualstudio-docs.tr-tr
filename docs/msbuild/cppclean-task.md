@@ -1,8 +1,6 @@
 ---
 title: CPPClean görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 749d60c764f522d188b45b4ecf7302d69b6cd64b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fbf575db0289f0b5bbb5fbcd0bf47605871e52c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966378"
 ---
 # <a name="cppclean-task"></a>CPPClean Görevi
 MSBuild Visual C++ proje derlenirken oluşturan geçici dosyaları siler. Derleme dosyaları silme işlemi olarak bilinir *Temizleme*.  

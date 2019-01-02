@@ -1,9 +1,6 @@
 ---
 title: Kayıt ve seçim (kaynak denetimi VSPackage'ı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930719"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve Seçim (Kaynak Denetimi VSPackage’ı)
 Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Birden fazla kaynak denetimi VSPackage'ı kayıtlı değilse, kullanıcı uygun zamanlarda yüklemek için hangi VSPackage'ı seçebilirsiniz. Bkz: [VSPackages](../../extensibility/internals/vspackages.md) VSPackages ve bunları kaydetme hakkında daha fazla bilgi.  
@@ -36,9 +33,9 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
   
 - Paket GUID'si: (Bu bölümde ID_Package olarak adlandırılır) kaynak denetimi uyarlamasını içeren paket için ana GUID budur.  
   
-- Kaynak Denetim GUID'i: Bu kaynak denetimi VSPackage'ı ile Visual Studio kaynak denetimi saplama kaydetmek için kullanılan bir GUID değeridir ve ayrıca komut UI bağlamı GUID olarak kullanılır. Kaynak denetimi hizmetini GUID GUID kaynak denetiminde kayıtlı. Örnekte, kaynak denetim GUID'i ID_SccProvider çağrılır.  
+- Kaynak Denetim GUID'i: Bu, kaynak denetimi VSPackage'ı ile Visual Studio kaynak denetimi saplama kaydetmek için kullanılan bir GUID değeridir ve komut UI bağlamı GUID olarak da kullanılır. Kaynak denetimi hizmetini GUID GUID kaynak denetiminde kayıtlı. Örnekte, kaynak denetim GUID'i ID_SccProvider çağrılır.  
   
-- Kaynak denetimi hizmeti GUID: özel hizmet (Bu bölümde SID_SccPkgService olarak adlandırılır) Visual Studio tarafından kullanılan GUID budur. Buna ek olarak, diğer GUID'leri VSPackages, araç pencerelerini tanımlamak ve benzeri kaynak denetim paketi gerekir.  
+- Kaynak denetimi hizmetini GUID'si: Özel hizmet (Bu bölümde SID_SccPkgService olarak adlandırılır) Visual Studio tarafından kullanılan GUID budur. Buna ek olarak, diğer GUID'leri VSPackages, araç pencerelerini tanımlamak ve benzeri kaynak denetim paketi gerekir.  
   
   Aşağıdaki kayıt defteri girdilerini kaynak denetimi VSPackage'ı tarafından yapılması gerekir:  
   

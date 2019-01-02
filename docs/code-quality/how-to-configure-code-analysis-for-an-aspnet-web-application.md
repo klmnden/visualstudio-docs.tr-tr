@@ -2,7 +2,6 @@
 title: ASP.NET Web uygulaması için kod çözümlemesini yapılandırma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8b2776399e776e34126c3c000332aa267682b88f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a781e918a925ebd43110339e03d528a4cf6b3c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853037"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Nasıl yapılır: Bir ASP.NET Web Uygulaması İçin Kod Çözümlemesini Yapılandırma
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Nasıl Yapılır: Bir ASP.NET Web Uygulaması İçin Kod Analizini Yapılandırma
 
 Visual Studio'da Kod Analizi listesinden seçebilirsiniz *kural kümeleri* uygulamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması. Varsayılan kuralı Microsoft en az önerilen kurallar kümesidir. Başka bir kural web sitesine uygulamak için kümesini seçebilirsiniz.
 

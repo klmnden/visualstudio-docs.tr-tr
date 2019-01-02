@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: IIS özellik ayarlarını doğrulama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: IIS özellik ayarlarını doğrulama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926891"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Nasıl Yapılır: IIS Özellik Ayarlarını Doğrulama
+# <a name="how-to-verify-iis-property-settings"></a>Nasıl Yapılır: IIS özellik ayarlarını doğrulama
 
 IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarlayabilirsiniz. Bu ayarlar doğrulanıyor genellikle sorun giderme gerekli bir adım, bu nedenle bu özellikleri çalıştırmak, uygulama için doğru şekilde ayarlamanız gerekir.
 
@@ -37,7 +35,7 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>IIS Web uygulamasının ayarlarını denetlemek için
 
-1. Açık **Yönetimsel Araçlar** penceresi: üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.
+1. Açık **Yönetimsel Araçlar** penceresi: Üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.
 
    -   Windows 2000'de seçin **Internet Hizmetleri Yöneticisi'ni**.
 
@@ -61,7 +59,7 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
 
    3.  Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.
 
-5. Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: uzantı ile hata ayıklama fiili ilişkilendirmek](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. İçin bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama, uygulama kümesinde bir uygulama adı için sanal klasör emin **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni** veya  **Internet Information Services**.
 

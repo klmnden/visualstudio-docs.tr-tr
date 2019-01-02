@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_issplitted | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c30577900a2d2e192bdc2dea45fc89846b102b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d02c67f9cd7e8c82e08cc3490f546c103cfb7a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927382"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 Veri simgesi bir toplama veya diğer semboller koleksiyonu bölünmüş olup olmadığını belirten bir bayrak alır; bunlar gerçekten daha büyük bir simge bir parçası olmasına rağmen derleyici sembolleri ayrı varlıklar olarak değerlendirir.  

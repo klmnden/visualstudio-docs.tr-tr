@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843625"
 ---
 # <a name="load-test-scenario-properties"></a>Yük testi senaryosu özellikleri
 
@@ -43,11 +42,11 @@ Yük testi senaryo özellik ayarları Visual Studio Yük testi gereksinimlerini 
 
 |Özellik|Tanım|
 |-|----------------|
-|**Kullanılacak Aracılar**|Senaryonuz yükü çalıştırıyorsanız kullanmak istediğiniz aracıları uzaktan test belirtir. Örneğin, performans eğilimlerini analiz ederken tutarlılık sağlamak için belirli bir aracı kümesi belirtmek isteyebilirsiniz. Ayrıca, hangi betiklerin arasında çalıştırdığı ve aracıyı bulunduğu benzeşim yani aracıları coğrafi olarak dağıtılabilir.<br /><br />Aracıları ayrılmalıdır virgüllerle, örneğin "**agent1'e, birim testi Agent2, Aracı3**". Özellik boş bırakılırsa, senaryo kullanılabilir tüm aracılar kullanması gerektiğini belirtir.<br /><br />Daha fazla bilgi için [nasıl yapılır: belirtin test aracıları kullanmayı](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Kullanılacak Aracılar**|Senaryonuz yükü çalıştırıyorsanız kullanmak istediğiniz aracıları uzaktan test belirtir. Örneğin, performans eğilimlerini analiz ederken tutarlılık sağlamak için belirli bir aracı kümesi belirtmek isteyebilirsiniz. Ayrıca, hangi betiklerin arasında çalıştırdığı ve aracıyı bulunduğu benzeşim yani aracıları coğrafi olarak dağıtılabilir.<br /><br />Aracıları ayrılmalıdır virgüllerle, örneğin "**agent1'e, birim testi Agent2, Aracı3**". Özellik boş bırakılırsa, senaryo kullanılabilir tüm aracılar kullanması gerektiğini belirtir.<br /><br />Daha fazla bilgi için [nasıl yapılır: Kullanılacak test aracıları belirtme](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Adım Gecikmesine dağıtımı Uygula**|Test karışımı modeli Adımlama kullanıcının tipik dağıtım gecikmelerine isteyip istemediğinizi belirtmek için kullanılan Boole değeri. Bu özellik yalnızca geçerlidir **Test karışımı türü** özelliği **kullanıcı adımı tabanlı**.<br /><br />Daha fazla bilgi için [nasıl yapılır: Adım Gecikmesine dağıtımı Uygula](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**IP geçişi**|IP geçişi kullanılıp kullanılmadığını belirtmek için kullanılan Boole değeri.<br /><br />IP geçişi, bir dizi farklı IP adreslerini kullanarak bir sunucuya istek göndermek bir test aracısı sağlar. Bu, farklı istemci bilgisayarlardan gelen çağrıların benzetimini yapar. Yük dengeli web grubu karşı test ettiğinizde, IP geçişi önemlidir. Çoğu yük dengeleyicileri, istemcinin IP adresini kullanarak bir istemci ve belirli bir web sunucusu arasında benzeşim kurar. Tüm istekler tek bir istemciden geliyor gibi görünüyorsa, yük dengeleyicisi yükü dengelemez. Web grubunda iyi bir yük dengesi edinmek için istekleri bir dizi IP adreslerinden geldiğini önemlidir.<br /><br />IP geçişi, yalnızca test aracısı ile kullanılabilir.|
 |**En yüksek Test Yinelemeleri**|Senaryoda çalıştırılacak testlerin sayısını belirtmek için kullanılan sayısal değer. 0 değeri en büyük değer belirtir.<br /><br />Daha fazla bilgi için [senaryolar için test yinelemelerini yapılandırma](../test/configure-test-iterations-in-a-load-test-scenario.md).|
-|**Yeni kullanıcıların yüzdesi**|Bu senaryoda yeni kullanıcılar ya da ilk ziyaretçi yüzdesini belirtir sayısal değer.<br /><br />Daha fazla bilgi için [nasıl yapılır: web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
+|**Yeni kullanıcıların yüzdesi**|Bu senaryoda yeni kullanıcılar ya da ilk ziyaretçi yüzdesini belirtir sayısal değer.<br /><br />Daha fazla bilgi için [nasıl yapılır: Web önbellek verilerini kullanan sanal kullanıcıların yüzdesini belirtme](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Düşünme profili**|Senaryo kullanıp kullanmayacağını belirtir **Normal dağıtım**, veya Düşünme profili **üzerinde** veya **kapalı**.<br /><br />Daha fazla bilgi için [Web sitesi insan etkileşimi gecikmelerini benzetmek için düşünme düzenleme kez](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Zamanlama

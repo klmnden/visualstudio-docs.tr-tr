@@ -1,9 +1,6 @@
 ---
 title: Kullanılabilen hizmetlerin listesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964643"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilir Hizmetlerin Listesi
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve Visual Studio SDK'sı, aşağıdaki hizmetleri destekler. Bazı paketler, burada listelenmeyen kendi hizmetler sunan — Örneğin, dil Hizmetleri tek bir hizmet GUID yoktur. Kayıt defterinde dil hizmetinin GUID'i bulmak için dil adını kullanmanız gerekir.  
@@ -31,7 +28,7 @@ ms.locfileid: "49876470"
 | Hizmet | Arabirim | Visual Studio | Visual Studio 2005 | Açıklama |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Evet | Evet | VSPackage'ları tarafından elde etmek için kullanılan bir <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> zaman uyumsuz veri aktarımları kolaylaştırmak için bir ActiveX denetiminden arabirimi. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Hayır | Evet | Otomasyon için kullanılan tasarım zamanı genişletilebilirlik (DTE) nesnesi alır.<br /><br /> C/C++ KODU: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Hayır | Evet | Otomasyon için kullanılan tasarım zamanı genişletilebilirlik (DTE) nesnesi alır.<br /><br /> C/C++ KİMLİĞİ: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Evet | Evet | Bir denetim için varsayılan olay işleyicisini görüntülemek için bir form tasarımcısı tarafından uygulanır. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Evet | Evet | Otomasyon arabirimine başka bir VSPackage'ı ya da bir denetimi VSPackage'ı etkinleştirir. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Evet | Evet | VSPackage'ı eklemek veya bir genişletilmiş tür kitaplığı oluşturmak sağlar. |

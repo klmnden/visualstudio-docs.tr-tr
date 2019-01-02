@@ -2,7 +2,6 @@
 title: Başvuru Yöneticisi'nde başvurular ekleme
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856286"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: ekleme veya başvuru Yöneticisi'ni kullanarak başvuruları kaldırma
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl Yapılır: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
 
 Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştirdiği eklemek ve yönetmek için iletişim kutusu sizin Microsoft, bileşenine başvuruyor. Bir evrensel Windows uygulaması geliştiriyorsanız, projeniz otomatik olarak tüm doğru Windows SDK'sı DLL'lerin başvuruyor. Bir .NET uygulaması geliştiriyorsanız projeniz otomatik olarak başvuruda *mscorlib.dll*. Bazı .NET API'ları el ile eklemek zorunda bileşenlerde sunulur. COM bileşenleri veya özel bileşenler başvuruları el ile eklenmesi gerekir.
 
@@ -72,7 +71,7 @@ Bir proje türü Derlemeler'i desteklemiyorsa sekmesinde görünmez **başvuru Y
 
 1. **Framework** hedef alınan çerçeveyi oluşturan tüm derlemeleri listeler.
 
-    Projeleri Windows 8.x Store uygulamaları için hedeflenmiş içindeki derlemelerin tümüne başvurular içerir [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] varsayılan olarak proje oluşturma. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** çerçeve'nin tümüne yönelik başvuruyu belirtir. Buna **Framework** sekmesini çerçeveden derlemelerin hiçbirini listeleme yüklemeyecekseniz ve bunun yerine şu iletiyi görüntüler: "tüm Framework derlemelerine zaten başvurulmuş. Lütfen Nesne Tarayıcısı Framework'deki başvuruları araştırmak için kullanın." Masaüstü projeleri için **Framework** sekmesini hedeflenen çerçeveden derlemeleri numaralandırır ve kullanıcı uygulamanın gerek duyduğu başvuruları eklemelidir.
+    Projeleri Windows 8.x Store uygulamaları için hedeflenmiş içindeki derlemelerin tümüne başvurular içerir [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] varsayılan olarak proje oluşturma. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** çerçeve'nin tümüne yönelik başvuruyu belirtir. Buna **Framework** sekmesini çerçeveden derlemelerin hiçbirini listeleme yüklemeyecekseniz ve bunun yerine şu iletiyi görüntüler: "Tüm Framework derlemelerine zaten başvurulmuş. Lütfen Nesne Tarayıcısı Framework'deki başvuruları araştırmak için kullanın." Masaüstü projeleri için **Framework** sekmesini hedeflenen çerçeveden derlemeleri numaralandırır ve kullanıcı uygulamanın gerek duyduğu başvuruları eklemelidir.
 
 2. **Uzantıları** bileşen ve denetim dış satıcılarının hedeflenen çerçeveyi genişletmek için geliştirilmiştir tüm derlemeleri listeler. Kullanıcı uygulamasının amacına bağlı olarak, bu derlemelere gerek duyulabilir.
 
@@ -157,7 +156,7 @@ Visual Studio'da bir WinMD dosyasını iki şekilde oluşturabilirsiniz:
 
 - **Windows 8.x Store uygulaması yönetilen projeleri**: Windows 8.x Store uygulaması projeleri WinMD ikili dosyalarını çıktı ayarlayarak **proje özellikleri** > **Output Type = WinMD File**. WinMD dosya adı, içinde varolan tüm alan adlarının üst küme alan adı olmalıdır. Örneğin, bir proje ad alanları oluşuyorsa `A.B` ve `A.B.C`, verilen WinMD için olası adlar *A.winmd* ve *A.B.winmd*. Bir kullanıcı girerse bir **proje özellikleri** > **derleme adı** veya **proje özellikleri** > **Namespace**projedeki ad alanları kümesinden kopuk değer veya bir proje içinde hiçbir üst küme ad alanı, bir derleme uyarısı oluşturulur: "'A.winmd' Bu derleme için geçerli bir .winmd bir dosya adı değil." Bir Windows Meta Veri dosyası içindeki tüm türler, dosya adının bir alt ad alanında mevcut olmalıdır. Dosya adının alt ad alanında mevcut olmayan türler çalışma zamanında mümkün olmayacaktır. Bu derlemede, en küçük ortak ad alanıdır `CSWSClassLibrary1`. Bir masaüstü Visual Basic veya C# projesi yalnızca birinci Winmd'ler bilinir, Windows 8 SDK kullanılarak oluşturulmuş Winmd'lerin kullanabilir ve winmd oluşturamaz.
 
-- **Windows 8.x Store uygulaması yerel projeleri**: yerel bir WinMD dosyası yalnızca meta verilerden oluşur. Uygulaması ayrı bir DLL dosyası içinde var olur. Bir üretebilir yerel ikili dosyaları Windows çalışma zamanı bileşeni proje şablonu seçilerek **yeni proje** iletişim kutusu ya da boş bir projeden başlatarak ve bir WinMD dosyası oluşturmak için proje özelliklerini değiştirme. Proje kopuk ad alanlarından oluşuyorsa, bir yapı hatası kullanıcıya ad alanlarını birleştirmesi veya MSMerge aracını çalıştırması gerektiğini söyler.
+- **Windows 8.x Store uygulaması yerel projeleri**: Yerel bir WinMD dosyası yalnızca meta verilerden oluşur. Uygulaması ayrı bir DLL dosyası içinde var olur. Bir üretebilir yerel ikili dosyaları Windows çalışma zamanı bileşeni proje şablonu seçilerek **yeni proje** iletişim kutusu ya da boş bir projeden başlatarak ve bir WinMD dosyası oluşturmak için proje özelliklerini değiştirme. Proje kopuk ad alanlarından oluşuyorsa, bir yapı hatası kullanıcıya ad alanlarını birleştirmesi veya MSMerge aracını çalıştırması gerektiğini söyler.
 
 **Windows** sekmesi iki alt gruptan oluşur.
 
@@ -165,7 +164,7 @@ Visual Studio'da bir WinMD dosyasını iki şekilde oluşturabilirsiniz:
 
 **Çekirdek** alt hedeflenen Windows sürümü için SDK içindeki winmd'lerin (Windows çalışma zamanı öğelerini için) tüm listeler.
 
-Windows 8.x Store uygulaması projeleri, proje oluşturma sırasında varsayılan olarak Windows 8 SDK içindeki Winmd'lerin tümüne başvurular içerir. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** tüm Windows 8 SDK'sına yönelik başvuruyu belirtir. Buna **çekirdek** alt gruba **başvuru Yöneticisi** Windows 8 SDK'sı derlemelerin hiçbirini numaralandırmaz ve bunun yerine bir ileti görüntüler: "Windows SDK'sı zaten başvurulmuş. Lütfen nesne tarayıcısı Windows SDK'sındaki başvuruları araştırmak için kullanın."
+Windows 8.x Store uygulaması projeleri, proje oluşturma sırasında varsayılan olarak Windows 8 SDK içindeki Winmd'lerin tümüne başvurular içerir. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** tüm Windows 8 SDK'sına yönelik başvuruyu belirtir. Buna **çekirdek** alt gruba **başvuru Yöneticisi** Windows 8 SDK'sı derlemelerin hiçbirini numaralandırmaz ve bunun yerine bir ileti görüntüler: "Windows SDK'sı zaten başvuruldu. Lütfen nesne tarayıcısı Windows SDK'sındaki başvuruları araştırmak için kullanın."
 
 Masaüstü projelerinde **çekirdek** alt grup, varsayılan olarak görünmez. Windows çalışma zamanı proje düğümü için kısayol menüsünü açarak ekleyebilirsiniz seçme **projeyi**, aşağıdaki kod parçacığını ekleyerek ve projeyi yeniden açarak (proje düğümünü seçin **projeyiyenidenyükle**). Çağırdığınızda **başvuru Yöneticisi** iletişim kutusu, **çekirdek** alt grubu görünür.
 

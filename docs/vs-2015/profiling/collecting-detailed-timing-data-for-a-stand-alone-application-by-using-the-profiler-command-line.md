@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9a84a4dbbeee9c8d4738406023cdb86df09504e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 89ca6cfb99fad4364c8e6a1e180821d5d547b7ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925803"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak Bağımsız bir Uygulama için Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**İzleme kullanarak bir .NET Framework uygulamasına profil**|-   [Nasıl yapılır: bir .NET Framework bileşenini izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**İzleme kullanarak C/C++ uygulamasına profil**|-   [Nasıl yapılır: izleme yerel bileşen ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**İzleme kullanarak bir .NET Framework uygulamasına profil**|-   [Nasıl Yapılır: Gereç .NET bileşeni ve toplama ayrıntılı zamanlama verileri](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**İzleme kullanarak C/C++ uygulamasına profil**|-   [Nasıl Yapılır: İzleme yerel bileşen ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
@@ -51,7 +51,7 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**ASP.NET uygulamalarının profilini oluşturma**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**ASP.NET uygulamalarının profilini oluşturma**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Profil oluşturma hizmetleri**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Ölçümlü izleme verilerini analiz etme, görünümleri ve raporlar  

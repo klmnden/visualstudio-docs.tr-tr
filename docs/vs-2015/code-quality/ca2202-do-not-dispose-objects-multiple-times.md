@@ -1,12 +1,11 @@
 ---
-title: 'CA2202: nesneleri birden çok kez atmayın | Microsoft Docs'
+title: 'CA2202: Nesneleri birden çok kez atmayın | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63bb4d3c260c86110769f83ba2059c75f1b58ff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853250"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Nesneleri birden çok kez atmayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +43,7 @@ ms.locfileid: "49830723"
  Düzgün uygulanan bir <xref:System.IDisposable.Dispose%2A> yöntemi çağrıldığında birden çok kez bir özel durum olmadan. Ancak, bu kesin değildir ve oluşturmaktan kaçınmak için bir <xref:System.ObjectDisposedException?displayProperty=fullName> değil, çağırmalıdır <xref:System.IDisposable.Dispose%2A> bir nesne üzerinde birden fazla kez.
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA2000: Kapsamı kaybetmeden önce verileri atın](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000: Kapsamı kaybetmeden önce verileri nesneleri dispose](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için kod yolunun, bu nedenle bu bakılmaksızın uygulamasını değiştirin <xref:System.IDisposable.Dispose%2A> nesne için yalnızca bir kez çağrılır.
@@ -90,6 +89,3 @@ finally
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.IDisposable?displayProperty=fullName> [Dispose deseni](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

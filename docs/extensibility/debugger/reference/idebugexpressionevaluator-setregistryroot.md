@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator::SetRegistryRoot
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d327528d340bc5472278de13e83077cd2c28171b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 306414e19730d988cbacb14e60f70a6382661ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893687"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Bu yöntem, kayıt defteri kökü ayarlar. Yan yana hata ayıklamak için kullanılır.  
@@ -28,7 +25,7 @@ Bu yöntem, kayıt defteri kökü ayarlar. Yan yana hata ayıklamak için kullan
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT SetRegistryRoot (   
+HRESULT SetRegistryRoot (   
    LPCOLESTR ustrRegistryRoot  
 );  
 ```  

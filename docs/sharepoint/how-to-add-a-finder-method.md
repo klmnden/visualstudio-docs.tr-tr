@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: bir Bulucu yöntemi ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir Bulucu yöntemi ekleme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 597d1e706ad75ba6ec16b958c94b5ba9d8e97760
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963466"
 ---
-# <a name="how-to-add-a-finder-method"></a>Nasıl yapılır: bir Bulucu yöntemi ekleme
+# <a name="how-to-add-a-finder-method"></a>Nasıl Yapılır: Bir Bulucu yöntemi ekleme
   Bir web bölümü veya listedeki varlıkların listesini görüntülemek İş Verileri Bağlantısı (BDC) hizmeti etkinleştirmek için oluşturmalısınız bir *Bulucu* yöntemi. Varlığın örneklerinin bir koleksiyonunu döndüren özel bir yöntem bir Bulucu metodudur. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-finder-method"></a>Bir Bulucu yöntemi oluşturmak için  
   
 1. Üzerinde **İVB Tasarımcısı**, varlık seçin.  
   
-    Daha fazla bilgi için [nasıl yapılır: modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+    Daha fazla bilgi için [nasıl yapılır: Modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2. Menü çubuğunda, **görünümü** > **diğer Windows** > **BDC yöntem ayrıntıları**.  
   
@@ -46,7 +41,7 @@ ms.locfileid: "49836235"
   
     Visual Studio, bir tür tanımlayıcı bir yöntem ve bir dönüş parametresi ekler.  
   
-4. Tür tanımlayıcısını bir varlık koleksiyon türü tanımlayıcısı yapılandırın. Bir varlık koleksiyon türü tanımlayıcısı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+4. Tür tanımlayıcısını bir varlık koleksiyon türü tanımlayıcısı yapılandırın. Bir varlık koleksiyon türü tanımlayıcısı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  Varlığa bir belirli Bulucu metodunu eklediyseniz, bu adımı gerçekleştirmeniz gerekmez. Visual Studio, belirli Bulucu metodunu içinde tanımlanan tür tanımlayıcısını kullanır.  
@@ -70,11 +65,9 @@ ms.locfileid: "49836235"
 ## <a name="see-also"></a>Ayrıca bkz.
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
  [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Nasıl yapılır: belirli bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Nasıl yapılır: bir yaratıcı metodu ekleme](../sharepoint/how-to-add-a-creator-method.md)   
- [Nasıl yapılır: bir Silici yöntemi ekleme](../sharepoint/how-to-add-a-deleter-method.md)   
- [Nasıl yapılır: bir güncelleyici metodu ekleme](../sharepoint/how-to-add-an-updater-method.md)   
- [Nasıl yapılır: bir yönteme bir parametre ekleyin](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Nasıl yapılır: bir yöntemi örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Nasıl yapılır: Belirli bir Bulucu yöntemi ekleme](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Nasıl yapılır: Bir yaratıcı metodu ekleme](../sharepoint/how-to-add-a-creator-method.md)   
+ [Nasıl yapılır: Silici metodu ekleme](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Nasıl yapılır: Bir güncelleyici metodu ekleme](../sharepoint/how-to-add-an-updater-method.md)   
+ [Nasıl yapılır: Bir yönteme bir parametre ekleyin](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Nasıl yapılır: Metot örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)  

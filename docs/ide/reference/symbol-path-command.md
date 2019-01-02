@@ -2,7 +2,6 @@
 title: Sembol Yolu Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.symbolpath
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a27d795e5491081dca98a395c788cf8407e43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 56e274c103d9bc8d4f80606476c8c6fd4793a8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903948"
 ---
 # <a name="symbol-path-command"></a>Sembol Yolu Komutu
-Simgelerini aramak hata ayıklayıcı için dizinler listesinde ayarlar.
+Hata ayıklayıcının simge araması dizinler listesini ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,20 +34,20 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Arguments
  `pathname`
 
- İsteğe bağlı. Noktalı virgülle ayrılmış yollar simgelerini aramak hata ayıklayıcı için listesi.
+ İsteğe bağlı. Noktalı virgül hata ayıklayıcının simge araması yolları bir listesidir.
 
 ## <a name="remarks"></a>Açıklamalar
- Öyle değilse `pathname` belirtilmemişse, komut geçerli simgesi yolları listeler.
+ Hayır ise `pathname` belirtilirse, komut geçerli simge yollarını listeler.
 
 ## <a name="example"></a>Örnek
- Bu örnek iki yolu simgesi dizinleri listesine ekler.
+ Bu örnek simge dizinleri listesine iki yol ekler.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Örnek
- Bu örnek, geçerli simgesi yolları noktalı virgülle ayrılmış listesini görüntüler.
+ Bu örnek, geçerli simge yollarının noktalı virgülle ayrılmış bir liste görüntüler.
 
 ```
 Debug.SymbolPath

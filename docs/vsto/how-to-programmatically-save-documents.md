@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla belgeleri kaydetme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla belgeleri kaydetme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821600"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Nasıl yapılır: program aracılığıyla belgeleri kaydetme
+# <a name="how-to-programmatically-save-documents"></a>Nasıl Yapılır: Program aracılığıyla belgeleri kaydetme
   Microsoft Office Word belgeleri kaydetmek için çeşitli yollar vardır. Belge adını değiştirmeden bir belgeyi kaydedebilirsiniz veya yeni bir adla bir belgeyi kaydedebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883483"
 -   Belgeye yeni bir adla kaydetmek için adında bir dizin *Test* c sürücüsünde bulunan mevcut olması gerekir  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: program aracılığıyla belgeleri kapatma](../vsto/how-to-programmatically-close-documents.md)   
- [Nasıl yapılır: varolan belgeleri program aracılığıyla açma](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla belgeleri kapatma](../vsto/how-to-programmatically-close-documents.md)   
+ [Nasıl yapılır: Varolan belgeleri program aracılığıyla açma](../vsto/how-to-programmatically-open-existing-documents.md)   
  [Belge konak öğesi](../vsto/document-host-item.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

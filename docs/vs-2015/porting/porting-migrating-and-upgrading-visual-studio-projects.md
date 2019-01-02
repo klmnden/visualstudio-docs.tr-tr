@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6fffd688382287dc4c5d2e7623297383637e7b64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966605"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,15 +70,15 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |SketchFlow|Visual Studio'nun projeyi WPF 4.5/Silverlight 5'e yükseltmesine izin verirseniz projeyi açabilirsiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] Veritabanı|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SQL Server'ın önceki bir sürümde oluşturulmuş bir veritabanı dosyasını (.mdf) varsa, kendisine yükseltmelisiniz [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] önce SQL Server Express LocalDB ile kullanabilirsiniz, ancak artık veritabanı ile SQL Server'ın önceki sürümleriyle uyumlu değildir. Yükseltme yapmazsanız içindeki veritabanıyla çalışmaya devam edebilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] yüklenerek ve kullanılarak [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] aynı bilgisayarda. Daha fazla bilgi için [.mdf dosyalarını yükseltme](../data-tools/upgrade-dot-mdf-files.md).|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Varsa [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express çalıştıran bilgisayarlarda yüklü [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ve Visual Studio 2010 SP1, projeyi üç sürümde de açabilirsiniz.|
-|SQL Server Rapor Projesi|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Yerel mod için (diğer bir deyişle, SQL Server'a bağlı değilken) yalnızca, görüntüleyicide ile ilişkili denetimler için tasarım zamanı deneyimi vermeyeceğiz [!INCLUDE[vs2010](../includes/vs2010-md.md)], ancak proje, çalışma zamanında düzgün çalışmayacaktır. **Dikkat:** özgü bir özellik eklerseniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], rapor şeması otomatik olarak yükseltilir ve projeyi artık açamazsınız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
+|SQL Server Rapor Projesi|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Yerel mod için (diğer bir deyişle, SQL Server'a bağlı değilken) yalnızca, görüntüleyicide ile ilişkili denetimler için tasarım zamanı deneyimi vermeyeceğiz [!INCLUDE[vs2010](../includes/vs2010-md.md)], ancak proje, çalışma zamanında düzgün çalışmayacaktır. **Dikkat:**  Özel bir özellik eklerseniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], rapor şeması otomatik olarak yükseltilir ve projeyi artık açamazsınız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |Birim testleri|Kullanabileceğiniz [!INCLUDE[TCMext](../includes/tcmext-md.md)] içinde [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1 aygıtını herhangi bu sürümlerinden oluşturduğunuz testleri açabilirsiniz.|
-|Visual C++|Kullanabileceğiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde oluşturulmuş bir C++ projesini açmak için [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1. Kullanmak istiyorsanız [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde oluşturulmuş bir projeyi derlemek için ortamı [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], her iki sürümü Visual Studio'nun aynı bilgisayarda yüklü olması gerekir. Daha fazla bilgi için [nasıl yapılır: Visual Studio 2015 için Visual C++ projeleri yükseltme](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) ve [Visual C++ taşıma ve yükseltme Kılavuzu](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
+|Visual C++|Kullanabileceğiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde oluşturulmuş bir C++ projesini açmak için [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1. Kullanmak istiyorsanız [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde oluşturulmuş bir projeyi derlemek için ortamı [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], her iki sürümü Visual Studio'nun aynı bilgisayarda yüklü olması gerekir. Daha fazla bilgi için [nasıl yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) ve [Visual C++ taşıma ve yükseltme Kılavuzu](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
 |Visual Studio 2010 web|Visual Studio'nun projeyi otomatik olarak yükseltmesine izin verirseniz projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
 |Visual Studio 2010 Veritabanı (.dbproj)|Projeyi bir SQL Server veri araçları veritabanı projesine dönüştürürseniz, projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Ancak, [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] bu yapıları desteklemez:<br /><br /> -Birim testleri<br />-Veri üretme planları<br />-Veri karşılaştırma dosyaları<br />-statik kod analizi için özel kural uzantıları<br />-server.sqlsettings<br />-.sqlcmd dosyaları<br />-özel dağıtım uzantıları<br />-Kısmi Projeler (.files)<br /><br /> SQL Server Veri Araçlarını yüklerseniz, dönüştürme işleminden sonra Visual Studio 2010 SP1 ile projeyi açabilirsiniz. Daha fazla bilgi için [Microsoft SQL Server veri Araçları](http://msdn.microsoft.com/data/tools.aspx).|
 |Visual Studio 2010 Görsel Veritabanı Araçları|Bu projede açabileceğiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
 |Visual Studio Laboratuvar Yönetimi|Kullanabileceğiniz [!INCLUDE[TCMext](../includes/tcmext-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1 aygıtını herhangi bir bu sürümüyle oluşturulmuş ortamları açabilirsiniz. Ancak, ortamları oluşturmadan önce Microsoft Test Yöneticisi sürümünüzün Team Foundation Server sürümünüz ile eşleşmesi gerekir.|
 |Visual Studio Makrosu|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] proje türünü desteklemediğinden.|
-|Visual Studio SDK/VSIX|Bir Visual Studio SDK projesini yükseltmeden sonra [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], içinde açılamaz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio 2015 için genişletilebilirlik projeleri geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
+|Visual Studio SDK/VSIX|Bir Visual Studio SDK projesini yükseltmeden sonra [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], içinde açılamaz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Daha fazla bilgi için [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
 |Visual Studio için Microsoft Azure Araçları|Visual Studio version 2.1 için Microsoft Azure Araçları'nı kullanıyorsanız, içinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. Önceki sürümlerini hedefleyen projeler için Visual Studio projeyi 2.1 sürümüne yükseltmesine izin verirseniz projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
 |Windows Communication Foundation, Windows Presentation Foundation|Bu projede açabileceğiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
 |Windows Mobile|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] proje türünü desteklemediğinden.|

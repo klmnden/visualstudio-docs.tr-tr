@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856494"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Nasıl yapılır: program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Nasıl Yapılır: Program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın
   Program aracılığıyla şekiller bir belgenin tek bir sayfada kopyalayabilir ve aynı belgede yeni bir sayfaya yapıştırın. Özgün sayfa üzerinde sahip oldukları gibi varsayılan konuma (etkin pencere Merkezi) veya aynı koordinat konumlarını bunları yapıştırın seçebilirsiniz.  
   
 ## <a name="copy-and-paste-shapes"></a>Kopyalama ve yapıştırma şekiller  
@@ -53,5 +50,3 @@ ms.locfileid: "50671501"
  [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
  [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)   
  [Nasıl yapılır: Visio belgesine program aracılığıyla şekiller ekleme](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  

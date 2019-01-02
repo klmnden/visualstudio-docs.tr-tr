@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointRequest3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f369b193b69ef1a08c2ad3d451ff989caae8939f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8f987f925683bd4c81b189f27eae3d967359882
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963103"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
-Bu arabirim oluşturmak ve herhangi bir türde kesme noktası bağlamak gereken bilgileri temsil eder. Bir uzantısıdır [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
+Bu arabirim, oluşturma ve herhangi bir türde kesme noktası bağlama için gereken bilgileri temsil eder. Bir uzantısıdır [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,25 +29,25 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Oturum hata ayıklama Yöneticisi'ni (SDM) genellikle bu arabirimi uygular.  
+ Oturum hata ayıklama Yöneticisi (SDM), genellikle bu arabirimi uygular.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Hata ayıklama altyapısı (DE) çağırarak bu arabirim erişen [QueryInterface](/cpp/atl/queryinterface) çağrıda alınan IDebugBreakpointRequest2 arabirimde [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).  
+ Hata ayıklama altyapısı (DE) Bu arabirim çağırarak erişen [QueryInterface](/cpp/atl/queryinterface) çağrıda alınan IDebugBreakpointRequest2 arabirimde [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Kaynağından devralındı yöntemleri yanı sıra [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), `IDebugBreakpointRequest3` arabirimi aşağıdaki yöntemi kullanıma sunar.  
+ Devralınan yöntemleri yanı sıra [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), `IDebugBreakpointRequest3` arabirimi aşağıdaki yöntemi kullanıma sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Bu kesme isteği açıklar kesme noktası isteği bilgilerini alır.|  
+|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Bu kesme noktası istek tanımlayan kesme noktası isteği bilgilerini alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim DE ek bilgi sağlamak için kullanılan [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapısı. Bu ek bilgiler DE'ın satıcı kimliği (GUID biçiminde), bir tracepoint adını ve bir kesme noktası kısıtlama adını içerir.  
+ Bu arabirim DE ek bilgi sağlamak için kullanılan [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapısı. Bu ek bilgiler DE'ın satıcı kimliği (GUID biçiminde), bir izleme noktası adını ve bir kesme noktası kısıtlama adını içerir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

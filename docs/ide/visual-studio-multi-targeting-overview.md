@@ -2,7 +2,6 @@
 title: .NET Framework'ü hedefleyen
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 763e02dbd491e132dc91ec7a79717fab1e645d86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955207"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio çoklu sürüm desteğine genel bakış
 
@@ -85,4 +84,4 @@ Derleme başvuruları hakkında daha fazla bilgi için bkz: [tasarım zamanında
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Çoklu sürüm desteği (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Nasıl yapılır: hedef framework ve platform araç takımını (C++) değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Nasıl yapılır: Hedef framework ve platform araç takımını (C++) değiştirme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

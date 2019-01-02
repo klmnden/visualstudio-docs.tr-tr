@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: belgelerden kaldırma yönetilen kod uzantıları'
-ms.custom: ''
+title: 'Nasıl Yapılır: Belgelerden yönetilen kod uzantılarını kaldırma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964779"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Nasıl yapılır: belgelerden kaldırma yönetilen kod uzantıları
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Nasıl Yapılır: Belgelerden yönetilen kod uzantılarını kaldırma
   Bir belge veya Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirmesinde parçası olan bir çalışma kitabı özelleştirme bütünleştirilmiş kodu programlı olarak kaldırabilirsiniz. Kullanıcılar, ardından belgeleri açın ve içeriğini görüntülemek, ancak belgeye eklediğiniz herhangi bir özel kullanıcı arabirimi (UI) görüntülenmez ve kodunuzu çalışmaz.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Aşağıdakilerden birini kullanarak özelleştirme bütünleştirilmiş kodu kaldırabilirsiniz `RemoveCustomization` tarafından sağlanan yöntemleri [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Kullandığınız yöntemine bağlıdır, çalışma zamanında özelleştirme çıkarmak istediğiniz (diğer bir deyişle, Word sırasında özelleştirmelerinde kodu çalıştırarak belgesi veya Excel çalışma kitabı açıldıktan), veya kapatılmış bir belge veya bir belgeden özelleştirme kaldırmak istiyorsanız, i Microsoft Office'in yüklü olmayan bir sunucuya s.  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [yapmak ı: ekleme veya ayırma Word belgesinden bir VSTO derleme?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yazarım Ekleme veya bir Word belgesi VSTO derlemesinden ayırma? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Çalışma zamanında özelleştirme derlemeyi kaldırmak için  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35677731"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Nasıl yapılır: yönetilen ekleme kodu belgelere uzantıları](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Nasıl yapılır: Belgelere yönetilen kod uzantıları ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

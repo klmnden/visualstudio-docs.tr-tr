@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Şerit XML kullanarak özel sekme oluşturma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955233"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>İzlenecek yol: Şerit XML kullanarak özel sekme oluşturma
   Bu izlenecek yol kullanarak özel bir Şerit sekmesi oluşturma işlemini gösterir **Ribbon (XML)** öğesi.  
@@ -55,7 +52,7 @@ ms.locfileid: "38808930"
   
 1.  Oluşturma bir **Word eklentisi** adlı proje **MyRibbonAddIn**.  
   
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **ThisAddIn.cs** veya **ThisAddIn.vb** ekler ve kod dosyası **MyRibbonAddIn** için proje **Çözüm Gezgini**.  
   
@@ -161,5 +158,3 @@ ms.locfileid: "38808930"
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Şerit XML](../vsto/ribbon-xml.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

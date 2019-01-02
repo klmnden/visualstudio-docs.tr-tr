@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: yazmaç değerini düzenleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: YAZMAÇ değerini düzenleme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: a84cd75dd6ae6ecd2e62bd41ed384cd03305bbf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963461"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Nasıl yapılır: yazmaç değerini düzenleme (C#, C++, Visual Basic F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Nasıl Yapılır: YAZMAÇ değerini düzenleme (C#, C++, Visual Basic F#)
 
 Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü.  
   
@@ -45,4 +43,4 @@ Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değils
     >  Kayan nokta değerlerini düzenlemek, kesirli bileşenlerin ondalıktan ikiliye dönüştürülmesi nedeniyle küçük yanlışlıklara neden olabilir. Görünüşte zararsız bir düzenleme bile, kayan nokta kaydı en az önemli bitlerin bazılarının değişiklikleri neden olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../debugger/how-to-use-the-registers-window.md)
+ [Nasıl yapılır: Yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)

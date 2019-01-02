@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848994aec796b25c031e7367db10f67e95f09f79
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 7a55249c82f6404b0a7e60af95ae1c1b177a761d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899804"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Nasıl Yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma
   Visual Studio'da Microsoft Office geliştirici araçları kullanabilmesi için bir geliştirme bilgisayarı yapılandırmak için bu konudaki yönergeleri izleyin. Bu adımları gerçekleştirmek için geliştirme bilgisayarında yönetici ayrıcalıkları olmalıdır.  
@@ -41,5 +38,3 @@ ms.locfileid: "53648480"
  [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  

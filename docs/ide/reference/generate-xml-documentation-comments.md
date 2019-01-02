@@ -2,21 +2,20 @@
 title: XML belgeleri yorumları Ekle
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964289"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Nasıl yapılır: INSERT belgeleri oluşturmak için XML açıklamaları
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Nasıl Yapılır: Belgeleri oluşturmak için XML açıklamalarını ekleme
 
 Visual Studio size yardımcı olabilir belge sınıfları ve yöntemleri gibi kod öğeleri otomatik olarak standart XML belge açıklaması yapısını oluşturarak. Derleme zamanında içeren belge yorumlarını bir XML dosyası oluşturabilirsiniz. Visual Studio ve diğer Ide'leri IntelliSense türler ve üyeler hakkında hızlı bilgi göstermek için kullanabilirsiniz, böylece derleyici tarafından oluşturulan XML dosyasının yanı sıra .NET bütünleştirilmiş kodunuzda dağıtılabilir. Ayrıca, XML dosyasını gibi araçlarla çalıştırılabilir [DocFX](https://dotnet.github.io/docfx/) ve [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) API Başvurusu Web siteleri oluşturmak için.
 

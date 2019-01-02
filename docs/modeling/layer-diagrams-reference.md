@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948400"
 ---
 # <a name="dependency-diagrams-reference"></a>Bağımlılık diyagramları: başvuru
 
@@ -50,7 +49,7 @@ Aşağıdaki görevleri gerçekleştirmenize yardımcı olması için bir bağı
 
 -   İadeniz doğrulama dahil ederek geliştirme ve kodunuzun bakım sırasında hedeflenen mimariyi güçlendirmek ve yapı işlemleri.
 
-Bu konuda, bir bağımlılık diyagram üzerinde kullanabileceğiniz öğeleri açıklar. Oluşturma ve bağımlılık diyagramları çizmek için bkz hakkında daha ayrıntılı bilgi için [bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md). Katman desenleri hakkında daha fazla bilgi için ziyaret [desenler ve uygulamalar site](http://go.microsoft.com/fwlink/?LinkId=145794).
+Bu konuda, bir bağımlılık diyagram üzerinde kullanabileceğiniz öğeleri açıklar. Oluşturma ve bağımlılık diyagramları çizmek için bkz hakkında daha ayrıntılı bilgi için [bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md). Katman desenleri hakkında daha fazla bilgi için ziyaret [desenler ve uygulamalar site](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Bağımlılık diyagramları okuma
 
@@ -78,7 +77,7 @@ Her katman, çözümünüzdeki projeler, sınıflar, ad alanları, proje dosyala
 
 Katmanlar ve yapılar bağlama hakkında daha fazla bilgi için bkz:
 
--   [Bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)
+-   [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)
 
 -   [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ Bağımlılık diyagramında bir veya daha fazla katmanı için kısayol menüs�
 |-|-|
 |**Kategorileri**|Sınıfı, ad alanı, kaynak dosyasını ve benzeri gibi bir yapı türü|
 |**Katman**|Yapıya katmanı|
-|**Doğrulamayı destekler**|Varsa **True**, sonra da katman doğrulama işlemine proje ya da bu öğeden bağımlılıklara uygun olduğunu doğrulayabilirsiniz.<br /><br /> Varsa **False**, sonra bağlantının katman doğrulama işleminde yer almaz.<br /><br /> Daha fazla bilgi için [bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).|
+|**Doğrulamayı destekler**|Varsa **True**, sonra da katman doğrulama işlemine proje ya da bu öğeden bağımlılıklara uygun olduğunu doğrulayabilirsiniz.<br /><br /> Varsa **False**, sonra bağlantının katman doğrulama işleminde yer almaz.<br /><br /> Daha fazla bilgi için [bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md).|
 |**tanımlayıcı**|Bağlantılı yapıt başvurusu|
 
 ## <a name="see-also"></a>Ayrıca bkz.

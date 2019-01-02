@@ -1,9 +1,6 @@
 ---
 title: Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965927"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
   Kullanım **Yayımlama Sihirbazı** çözüm dosyaları belirtilen bir konuma kopyalamak için bildirim dosyalarını oluşturmak ve bir Kurulum programı oluşturma.  
@@ -53,7 +50,7 @@ ms.locfileid: "50672762"
 >  Hedef bilgisayarın Windows Vista çalıştırıyorsa, daha fazla ilgili önemli noktalar vardır. Yerel yayımlama seçeneğini kullanmak için Windows Vista bilgisayarda yönetici olması gerekir. Ayrıca, her zaman varsayılan konumu: *yayımlama\\*  IIS yüklü olup olmadığından bağımsız olarak dizin.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında varsayılan yükleme yolu nedir?  
- Yükleme yolu isteğe bağlıdır. İsterseniz, yükleme yolu daha sonra ayarlayabilirsiniz. Ayrıntılar için bkz [nasıl yapılır: bir Office çözümünü yükleme yolunu değiştirmek](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Yükleme yolu isteğe bağlıdır. İsterseniz, yükleme yolu daha sonra ayarlayabilirsiniz. Ayrıntılar için bkz [nasıl yapılır: Office çözümünü yükleme yolunu değiştirmek](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  Yükleme yolu, son kullanıcının özelleştirme yükleyecek dizindir. Ayrıca çözüm güncelleştirmeleri denetlemek için kullanacağı yoludur. **Yayımlama Sihirbazı** çözüm yolu, girdiğiniz aynı olmadığı sürece bu konuma dağıtmaz **bu uygulamayı yayımlamak için konumu belirtin** önceki sayfada kutusu.  
   
@@ -72,5 +69,3 @@ ms.locfileid: "50672762"
  [ClickOnce kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Yayımlama Sayfası, Proje Tasarımcısı &#40;Visual Studio'da Office geliştirme&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)  
-  
-  

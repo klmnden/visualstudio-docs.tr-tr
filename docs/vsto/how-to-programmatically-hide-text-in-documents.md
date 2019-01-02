@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: belgelerde metni program aracılığıyla gizleme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Belgelerde metni program aracılığıyla gizleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928441"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Nasıl yapılır: belgelerde metni program aracılığıyla gizleme
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Nasıl Yapılır: Belgelerde metni program aracılığıyla gizleme
   Bir belgede metin ayarlayarak gizleyebilirsiniz <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> özelliği <xref:Microsoft.Office.Interop.Word.Range.Font%2A> metin belirli bir dizi.  
   
  İçinde bulunan metinde Örneğin, geçici olarak gizleyebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> (belge düzeyi özelleştirmesindeki) veya bir <xref:Microsoft.Office.Interop.Word.Bookmark> (içinde bir VSTO eklenti) bir belgeyi yazıcıya göndermeden önce.  
@@ -58,10 +55,8 @@ ms.locfileid: "35677789"
  Bu kod örneği, belgenin içerdiğini varsaymaktadır bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Bookmark> adlı denetimi (bir VSTO eklenti) `bookmark1`.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md)   
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Nasıl yapılır: yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Nasıl yapılır: Program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Nasıl yapılır: Yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

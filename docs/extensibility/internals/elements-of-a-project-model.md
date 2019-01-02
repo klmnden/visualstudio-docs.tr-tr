@@ -1,9 +1,6 @@
 ---
 title: Proje modeli öğeleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eab0627184ac887aacfdfb2f275f0e8d9d30df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962616"
 ---
 # <a name="elements-of-a-project-model"></a>Proje modeli öğeleri
 Arabirimleri ve tüm projelerde uygulamaları [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] temel yapısını paylaşır: Proje türünüz için proje modeli. Geliştirdiğiniz VSPackage'ı olan proje modelinde tasarım kararlarınızı ile uyumlu ve IDE tarafından sağlanan genel işlevleri ile birlikte çalışan nesnelerin oluşturun. Örneğin, bir proje öğesi nasıl kalıcı denetim olsa da, bir dosya kalıcı gerekir bildirim kontrol edebilirim. Ne zaman bir kullanıcı bir açık proje öğesi üzerinde odağı yerleştirir ve seçer **Kaydet** üzerinde **dosya** menüsünde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menü çubuğu, proje türü kodunuzu gerekir IDE komuttan ıntercept, dosya kalıcı hale getirmek ve bildirimi, dosya artık değiştirildi IDE geri gönderin.  
   
- VSPackage, IDE arabirimlerine erişim sağladığı hizmetler aracılığıyla IDE ile etkileşime girer. Örneğin, belirli hizmetleri aracılığıyla, İzleyici ve rota komutları ve projede yapılan seçimleri bağlam bilgilerini sağlar. VSPackage'ı için gerekli tüm genel IDE işlevi, hizmetler tarafından sağlanır. Hizmetleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: hizmet alma](../../extensibility/how-to-get-a-service.md).  
+ VSPackage, IDE arabirimlerine erişim sağladığı hizmetler aracılığıyla IDE ile etkileşime girer. Örneğin, belirli hizmetleri aracılığıyla, İzleyici ve rota komutları ve projede yapılan seçimleri bağlam bilgilerini sağlar. VSPackage'ı için gerekli tüm genel IDE işlevi, hizmetler tarafından sağlanır. Hizmetleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: Hizmet alma](../../extensibility/how-to-get-a-service.md).  
   
  Diğer uygulama konuları:  
   
@@ -49,5 +46,5 @@ Arabirimleri ve tüm projelerde uygulamaları [!INCLUDE[vsprvs](../../code-quali
  [Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Proje modeli çekirdek bileşenleri](../../extensibility/internals/project-model-core-components.md)   
  [Proje üreteçlerini kullanarak proje örnekleri oluşturma](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [Nasıl yapılır: hizmet alma](../../extensibility/how-to-get-a-service.md)   
+ [Nasıl yapılır: Hizmet alma](../../extensibility/how-to-get-a-service.md)   
  [Proje türleri oluşturma](../../extensibility/internals/creating-project-types.md)

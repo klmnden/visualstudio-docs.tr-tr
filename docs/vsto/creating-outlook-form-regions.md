@@ -1,9 +1,6 @@
 ---
 title: Outlook form bölgeleri oluşturma
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7b5145701f72bed183dbcff3c3fbe48f757740f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842206"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook form bölgeleri oluşturma
   Form bölgeleri, Microsoft Office Outlook formları özelleştirmek için kullanabilirsiniz. Visual Studio tasarlamak, geliştirmek ve hata ayıklama form bölgeleri kolaylaştıran gelişmiş araçlar sağlar.  
@@ -190,4 +187,3 @@ ms.locfileid: "53441736"
 |[Nasıl yapılır: Outlook'un form bölgesini görüntülemesini engelleme](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Microsoft Office Outlook, belirli bir öğe için bir form bölgesini görüntülemesini engelleme işlemi gösterilmektedir.|  
 |Form bölgesinin göründüğü Outlook öğesine erişmek nasıl gösterir.|  
 |[Outlook form bölgelerindeki özel eylemler](../vsto/custom-actions-in-outlook-form-regions.md)|Bir Outlook öğesine yanıt vermesine olanak sağlayan açıklar.|  
-  

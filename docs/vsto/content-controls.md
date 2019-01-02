@@ -1,9 +1,6 @@
 ---
 title: İçerik denetimleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
@@ -41,12 +38,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4cb82609ef8f1a37379c1451e733e8b046313e2
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: b1656f40cd0d75c73f9f1e4b3a74a6f2b7e7ad0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956550"
 ---
 # <a name="content-controls"></a>İçerik denetimleri
   İçerik denetimleri tasarım belgeleri ve bu özelliklere sahip şablonları sağlamak sizin için bir yol:  
@@ -166,7 +163,7 @@ ms.locfileid: "53441528"
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Dizi|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Yok.|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Dizi|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Hiçbiri|  
   
  Belge düzeyi ve VSTO eklentisi projeleri, bir içerik denetimi veri kaynağına program aracılığıyla kullanarak bağlayabilirsiniz <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> yöntemi <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> denetiminin özelliği. Bunu yaparsanız bir dizeyi geçirmek **metin** için *propertyName* parametresinin <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> yöntemi. **Metin** içerik denetimleri için varsayılan veri bağlama özelliği bir özelliktir.  
   

@@ -3,7 +3,6 @@ title: Hızlı Başlangıç - şablon kullanarak bir Python projesi oluşturma
 description: Bu hızlı başlangıçta basit bir Flask uygulaması için yerleşik bir şablon kullanarak Python için bir Visual Studio projesi oluşturun.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964565"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
@@ -77,17 +76,17 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
 1. Seçin **hata ayıklama** > **hata ayıklama olmadan Başlat** uygulamayı çalıştırın ve bir tarayıcıda `localhost:5555`.
 
-**Soru: Hangi bir Python şablonları Visual Studio sunuluyor?**
+**Soru: Visual Studio diğer Python şablonları sunar?**
 
-**Yanıt**: Python iş yükü yüklenmiş, Visual Studio Proje şablonları için de dahil olmak üzere çeşitli sağlar [Flask, Bottle ve Django web çerçeveleri](../python/python-web-application-project-templates.md), Azure bulut Hizmetleri, farklı makine öğrenimi senaryolar ve hatta bir Python uygulaması içeren mevcut bir klasör yapısından bir proje oluşturmak için şablon. Bunlar üzerinden erişim **dosya** > **yeni** > **proje** iletişim kutusunu seçerek **Python** Dil düğümünü ve alt düğümleri.
+**Yanıt**: Python iş yükü yüklenmiş, Visual Studio Proje şablonları için de dahil olmak üzere çeşitli sağlar [Flask, Bottle ve Django web çerçeveleri](../python/python-web-application-project-templates.md), Azure bulut Hizmetleri, başka bir makine öğrenme senaryoları ve hatta bir bir Python uygulaması içeren mevcut bir klasör yapısından bir proje oluşturmak için şablon. Bunlar üzerinden erişim **dosya** > **yeni** > **proje** iletişim kutusunu seçerek **Python** Dil düğümünü ve alt düğümleri.
 
 Visual Studio ayrıca dosya çeşitli sağlar veya *öğe şablonları* Python sınıfı, bir Python paketi, bir test jednotky Pythonu, hızlı bir şekilde oluşturmak için *web.config* dosyaları ve daha fazlası. Açık bir Python projeniz varsa, öğe şablonları aracılığıyla erişim **proje** > **Yeni Öğe Ekle** menü komutu. Bkz: [öğe şablonları](python-item-templates.md) başvuru.
 
 Şablonları kullanarak önemli zamandan tasarruf ne zaman bir projeye Başlarken veya bir dosya oluşturup ayrıca farklı uygulama türleri hakkında bilgi edinin ve kod yapıları için harika bir yol sağlar. Bunu sundukları teklifler ile tanımak için çeşitli şablonlardan projeler ve öğeler oluşturmak için birkaç dakikanızı ayırarak yardımcı olur.
 
-**Soru: Ayrıca Cookiecutter şablonları kullanabilir miyim?**
+**Soru: Cookiecutter şablonları da kullanabilirim?**
 
-**Yanıt**: Evet! Aslında, Visual Studio aracılığıyla hakkında bilgi edinebilirsiniz Cookiecutter ile doğrudan tümleştirme sağlayan [hızlı başlangıç: bir Cookiecutter şablonundan proje oluşturma](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Yanıt**: Evet! Aslında, Visual Studio aracılığıyla hakkında bilgi edinebilirsiniz Cookiecutter ile doğrudan tümleştirme sağlayan [hızlı başlangıç: Bir Cookiecutter şablonundan proje oluşturma](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

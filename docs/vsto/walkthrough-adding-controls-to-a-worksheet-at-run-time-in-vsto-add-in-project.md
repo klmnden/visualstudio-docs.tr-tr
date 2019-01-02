@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme'
-ms.custom: ''
+title: 'İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968650"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>İzlenecek yol: çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme
   Bir Excel VSTO eklentisi kullanarak herhangi bir açık çalışma sayfasına denetimler ekleyebilirsiniz. Bu izlenecek yol ekleme olanağı Şerit kullanmayı gösterir. bir <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>ve bir <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma. Bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Excel için VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler Excel için VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
@@ -195,5 +192,3 @@ ms.locfileid: "49915704"
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [ListObject denetimi](../vsto/listobject-control.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Paralel iş parçacıklarında değişkenleri bir izleme ayarlayın | Microsoft Docs
-ms.custom: ''
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946990"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Visual Studio'da paralel iş parçacıklarında değişkenleri bir izleme ayarlayın
 Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifade tutan değerleri görüntüleyebilirsiniz. Her satır bir uygulama içinde çalışan bir iş parçacığını temsil eder, ancak bir iş parçacığı içinde birden çok satır gösterilebilir. Daha açık belirtmek gerekirse her satır, işlev imzası geçerli yığın çerçevesinde işlevi eşleşen bir işlev çağrısını temsil eder. Sıralama, yeniden sıralama, kaldırmak ve sütunları olan öğeleri gruplayın. Bayrak, işaretsiz dondurma, (askıya) ve (devam) iş parçacıklarını çözme. Aşağıdaki sütunlar görüntülenir **paralel izleme** penceresi:  
@@ -64,7 +62,7 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
   
 ### <a name="to-switch-to-another-thread"></a>Başka bir iş parçacığına geçiş yapmak için  
   
--   Geçerli iş parçacığı sütunu çift tıklayın (ikinci sütun). (Klavye: satırı seçin ve Enter tuşuna basın.)  
+-   Geçerli iş parçacığı sütunu çift tıklayın (ikinci sütun). (Klavye: Satırı seçin ve Enter tuşuna basın.)  
   
 ### <a name="to-sort-a-column"></a>Bir sütunu sıralamak için  
   
@@ -89,4 +87,4 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)   
- [İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+ [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

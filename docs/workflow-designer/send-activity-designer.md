@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - Send etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbbcc01001d663e927431b99915bf69d9a223ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954035"
 ---
 # <a name="send-activity-designer"></a>Send Etkinlik Tasarımcısı
 
@@ -40,13 +39,13 @@ Alternatif olarak, **SendAndReceiveReply** şablonu Tasarımcısı'nda **Mesajla
 Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Send> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, Özellikler kılavuzu veya iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
 
-| Özellik adı | Gerekli | Kullanım |
+| Özellik Adı | Gerekli | Kullanım |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | Kolay adı <xref:System.ServiceModel.Activities.Send> etkinlik. Gönderme varsayılandır. Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır. |
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | Doğru | Hizmet işlemi adını adlı bu <xref:System.ServiceModel.Activities.Send> etkinlik. Bu özellik için varsayılan değer oluşturmak için kullanılan **eylem** özelliği varsa **eylem** özelliği açıkça ayarlanmadı. |
 | <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> | Doğru | Çağrılacak hizmet uygulayan hizmet sözleşmesi adı. |
 | <xref:System.ServiceModel.Activities.Send.Content%2A> | False | İleti veya parametre içeriği almak için belirtir. Ya da olabilir bir <xref:System.ServiceModel.Activities.ReceiveMessageContent> etkinlik veya <xref:System.ServiceModel.Activities.ReceiveParametersContent> etkinlik. Bu özelliğin yanındaki üç nokta düğmesini seçerek Düzenle **içerik** özellik kılavuzu veya tıklayarak alanındaki **tanımlayın...**  yanında düğmesini **içerik** üzerinde etiket **alma** etkinlik Tasarımcı yüzeyine bırakın. Her ikisini de görüntüle **içerik tanımı** iletişim. Bu kutuyu kullanma hakkında daha fazla bilgi için bkz. [içerik tanımı iletişim kutusunun](../workflow-designer/content-definition-dialog-box.md) konu. |
-| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | Belirtir <xref:System.ServiceModel.Activities.CorrelationHandle> uygun iş akışı örneği için ileti yönlendirmek için kullanılır.<br /><br /> Yanındaki üç nokta düğmesini tıklayın <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> özelliği açmak için özellikler kılavuzundaki **ifade Düzenleyicisi** iletişim kutusu. Bu iletişim kutusunu kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: ifade düzenleyicisini kullanma](../workflow-designer/how-to-use-the-expression-editor.md) konu. |
+| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | Belirtir <xref:System.ServiceModel.Activities.CorrelationHandle> uygun iş akışı örneği için ileti yönlendirmek için kullanılır.<br /><br /> Yanındaki üç nokta düğmesini tıklayın <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> özelliği açmak için özellikler kılavuzundaki **ifade Düzenleyicisi** iletişim kutusu. Bu iletişim kutusunu kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: İfade düzenleyicisini kullanma](../workflow-designer/how-to-use-the-expression-editor.md) konu. |
 | <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> | False | Koleksiyonunu belirtir <xref:System.ServiceModel.Activities.CorrelationInitializer> birden çok başlatmak nesneleri <xref:System.ServiceModel.Activities.CorrelationHandle> bu yapılandırma nesneleri <xref:System.ServiceModel.Activities.Send> etkinlik iş akışı içinde. Yanındaki üç nokta düğmesini tıklayın <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> özelliği açmak için özellikler kılavuzundaki **bağıntı başlatıcılar Ekle** iletişim kutusu. Bu kutuyu kullanma hakkında daha fazla bilgi için bkz. [Correlationınitializer iletişim kutusunu](../workflow-designer/add-correlationinitializers-dialog-box.md) konu. |
 | <xref:System.ServiceModel.Activities.Send.KnownTypes%2A> | False | Bir koleksiyon hizmet işlemi için bilinen türleri bu tarafından çağrılacak <xref:System.ServiceModel.Activities.Send> etkinlik. Bu özellik ile birlikte kullanılması gereken <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> özelliğini <xref:System.Runtime.Serialization.DataContractSerializer>. Varsa göz ardı edilir <xref:System.Xml.Serialization.XmlSerializer> kullanılır.<br /><br /> Yanında bulunan üç nokta düğmesini seçin **KnownTypes** özellik kılavuzunda görüntülenecek alan **Editor Typu Kolekce** ilgili türleri ile ekleyebileceğiniz iletişim.<br /><br /> Yanında bulunan üç nokta düğmesini seçin **KnownTypes** özellik kılavuzunda görüntülenecek alan **Editor Typu Kolekce** ilgili türleri ile ekleyebileceğiniz iletişim kutusu. Bu kutuyu kullanma hakkında daha fazla bilgi için bkz. [türü koleksiyon Düzenleyicisi iletişim kutusu](../workflow-designer/type-collection-editor-dialog-box.md) konu. |
 | <xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A> | Doğru | Belirtir <xref:System.Net.Security.ProtectionLevel> ileti.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> yalnızca kimlik doğrulamasını anlamına gelir.<br />2. <xref:System.Net.Security.ProtectionLevel> oturum iletilen veri bütünlüğünü sağlamaya yardımcı olmak için veri anlamına gelir.<br />3. <xref:System.Net.Security.ProtectionLevel> anlamına gelir, şifreleme ve veri gizliliği ve aktarılan veri bütünlüğünü sağlamaya yardımcı olmak için oturum açın. |

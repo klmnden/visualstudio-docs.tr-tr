@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir uygulama sayfasını bir iş akışına ekleme | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938205"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: bir uygulama sayfasını bir iş akışına ekleme
-  Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: Bir uygulama sayfasını bir iş akışına ekleme
+  Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
@@ -45,7 +42,7 @@ ms.locfileid: "49866902"
 
 -   Visual Studio.
 
--   Konu başlığı projeyi tamamlamak de [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+-   Konu başlığı projeyi tamamlamak de [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend iş akışı kodu
  İlk olarak, harcama raporlarını miktarını sonucu sütununun değerini ayarlamak için iş akışına bir kod satırı ekleyin. Bu değer daha sonra harcama raporu Özet hesaplamaya kullanılır.
@@ -352,7 +349,7 @@ ms.locfileid: "49866902"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Nasıl yapılır: uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)
+- [İzlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Nasıl yapılır: Uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)
 - [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)

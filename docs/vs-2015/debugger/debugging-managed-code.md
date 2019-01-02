@@ -26,12 +26,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 801a4654b2297e3c19929063716339c7a4fcd50b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 84e41d06fb490cf3528f19eade08000f1ae27587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930157"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [Visual Basic'de Durdur Deyimleri](../debugger/stop-statements-in-visual-basic.md)  
  Açıklar `Stop` bir kesme noktası ayarlamak için bir alternatif sağlayan bir ifade. Örnek kod ayrıca sağlanan, arasında karşılaştırma birlikte `Stop` deyimi ve `End` arasında iyi gibi olarak bir deyim `Stop` ve `Assert` deyimi.  
   
- [İzlenecek yol: Windows Formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [İzlenecek yol: Bir Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
  Bir Windows formu oluşturma ve bu formunda hata ayıklama için adım adım yönergeler sağlar. Windows Form, yönetilen bir Windows uygulamasının standart bir bileşen en yaygın yönetilen uygulamalardan biridir. Bu izlenecek yol, Visual C# ve Visual Basic kullanan, ancak C++ ile bir Windows formu oluşturma tekniklerini genellikle benzerdir.  
   
  [OnStart metodunda hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)  
@@ -57,7 +57,7 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [Karışık mod hata ayıklama](../debugger/debugging-mixed-mode-applications.md)  
  Karışık mod uygulamalarında hata ayıklama açıklanır. Bu, yerel kod yönetilen kodu ile bir araya getiren herhangi bir uygulama anlamına gelir.  
   
- [Hata: Sistemde çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Hata: Sistemde bir çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Yönetilen kodda hata ayıklama çalışırsanız oluşan bir hata iletisi açıklayan bir [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)], veya hata ayıklama modunda başlatıldı Windows NT sistem.  
   
  [JIT İyileştirmesi ve Hata Ayıklaması](../debugger/jit-optimization-and-debugging.md)  
@@ -66,7 +66,7 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [LINQ ve DLINQ hata ayıklama](../debugger/debugging-linq.md)  
  LINQ sorguları hata ayıklama teknikleri açıklar.  
   
- [İzlenecek Yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -88,14 +88,14 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [Betik ve Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications-and-script.md)  
  Genel hata ayıklama sorunları ve komut dosyası ve Web uygulamalarında hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.  
   
- [Visual Studio 2015'te Hata Ayıklayıcısı Yenilikleri](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
+ [Visual Studio 2015'te Hata Ayıklayıcısı Yenilikleri](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)  
  Bu sürümde eklenen yeni hata ayıklama özellikleri açıklaması [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Giriş sayfasının hatalarını ayıklama](../debugger/debugging-in-visual-studio.md)  
  Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgileri içeren hata ayıklayıcı, ayarlar ve hazırlık, kesme noktaları, özel durumların işlenmesi yenilikler Düzenle ve devam et, yönetilen kodda hata ayıklama, Visual C++ projelerinde hata ayıklama, COM ve ActiveX hata ayıklaması, DLL'lerinde hata ayıklama, SQL ve kullanıcı hata ayıklama arabirimi başvuruları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Özel Windows hata ayıklama tasarım zamanında Forms denetimleri](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [İzlenecek yol: Hata ayıklama özel Windows Forms denetimleri tasarım zamanında](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)
 

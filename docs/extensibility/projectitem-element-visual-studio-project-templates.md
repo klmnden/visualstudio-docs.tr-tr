@@ -1,9 +1,7 @@
 ---
 title: ProjectItem öğesi (Visual Studio Proje şablonları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2290b8a95bbb2e53ae14f410f77109394528b138
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927369"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem öğesi (Visual Studio Proje şablonları)
 Proje şablonunda içeren bir dosyayı belirtir.  

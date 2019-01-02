@@ -1,8 +1,6 @@
 ---
 title: IntelliTrace ile olayları görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f46113365b66a75d3f9e149181637c79068645ab
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929396"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Visual Studio'da IntelliTrace ile olayları görüntüleme
 Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategorilerini hakkında bilgi, ayrıca olayları toplamak için IntelliTrace'i kullanabilirsiniz. Aşağıdaki yordamlar, bunun nasıl yapılacağını gösterir.  

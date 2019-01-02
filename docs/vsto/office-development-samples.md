@@ -1,9 +1,6 @@
 ---
 title: Office geliştirme örnekleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +12,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964539"
 ---
 # <a name="office-development-samples"></a>Office geliştirme örnekleri
   Visual Studio, Microsoft Office geliştirici araçları Office çözümleri oluşturmak için nasıl kullanılacağını gösteren örnek uygulamalar içerir. Bu örnek kod söz dizimi yapısı ve Office çözümleri oluşturmak için kullanılan teknikleri gösterir.  
   
- En geçerli örnekler için bkz. [MSDN geliştirici örnekleri: kod öğrenin](http://go.microsoft.com/fwlink/?LinkID=248199) Microsoft Web sitesinde.  
+ En geçerli örnekler için bkz. [MSDN geliştirici örnekleri: Kodlardan öğrenin](http://go.microsoft.com/fwlink/?LinkID=248199) Microsoft Web sitesinde.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +41,5 @@ ms.locfileid: "35677175"
 |VBA ve VSTO birlikte çalışabilirlik örneği|Bir yöntem belge düzeyi özelleştirmesinde Excel için Visual Basic for Applications (VBA) kodu çalışma kitabı nasıl çağrılacağını gösterir.<br /><br /> Bu örnek yalnızca çevrimiçi kullanılabilir.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [MSDN geliştirici örnekleri: kod örnekleri edinin](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [MSDN geliştirici örnekleri: Kod örnekleri edinin](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)  
-  
-  

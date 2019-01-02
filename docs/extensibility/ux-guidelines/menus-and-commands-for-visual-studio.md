@@ -1,9 +1,6 @@
 ---
 title: Menüler ve komutlar için Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933805"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüler ve komutlar için Visual Studio
 ## <a name="command-usage"></a>Komut kullanımı  
@@ -52,7 +49,7 @@ ms.locfileid: "49937960"
  Komutları yakınında kullanıcının odak alanına yerleştirmek kullanışlıdır. Bunu yapmanın bir yolu, Düzenleyicisi araç penceresi ya da belgenin üst kısmında bir gömülü araç oluşturmaktır. Araç çubuğunda yer komutları belirli içerik bölgeye penceresi içinde olmalıdır. Bu araç çubuklarında paylaşılan komutları yinelenen değil. Örneğin, hiçbir zaman içinde bir gömülü araç bir "Kaydet" simgesi yerleştirin.  
   
 ### <a name="content-and-command-visibility"></a>İçerik ve komut görünürlük  
- Komutları mevcut aşağıdaki kapsamlar: **ortam**, **hiyerarşi**, ve **belge**. Güvenle komut yerleşimden sahip olmak için her kapsam bildirin.  
+ Komutlar aşağıdaki kapsamlar mevcuttur: **Ortam**, **hiyerarşi**, ve **belge**. Güvenle komut yerleşimden sahip olmak için her kapsam bildirin.  
   
  İçindeki komutlar **ortam** kapsam birincil bağlam'kurmak ve birden çok bağlamları arasında paylaşılır. Bunlar, belge ve araç pencereleri düzenleme ve görünürlük değiştirir. Ortamdaki komutları yanı sıra kapsamı olan **yeni proje**, **sunucuya Bağlan**, **iliştirme işlemi**, **Kes**,  **Kopyalama**, **Yapıştır**, **Bul**, **seçenekleri**, **özelleştirme**, **yeni pencere**, ve **Yardım görüntülemek**.  
   

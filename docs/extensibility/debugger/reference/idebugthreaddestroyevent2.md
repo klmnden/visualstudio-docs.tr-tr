@@ -1,9 +1,6 @@
 ---
 title: IDebugThreadDestroyEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThreadDestroyEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78017b006e755ecb5177ba06f65b81e8430bdc55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ecf71ce4d59c01f92d460d2107a1c8dceff76627
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928230"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
-Bir iş parçacığı tamamlanıncaya kadar çalıştırdığınızda bu arabirim hata ayıklama altyapısı (DE) tarafından oturum hata ayıklama Yöneticisi (SDM) gönderilir.  
+Bir iş parçacığı tamamlanana kadar çalıştırdığınızda bu arabirimi hata ayıklama altyapısı (DE) oturum hata ayıklama Yöneticisi (SDM) gönderilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,10 +29,10 @@ IDebugThreadDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- DE bir iş parçacığı sona erdi rapor için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirimi uygulanan, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi.  
+ Bu arabirim için bir iş parçacığı sona erdi rapor DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- DE oluşturur ve bu olay nesnesi bir iş parçacığı sona erdi rapor gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanacak programın eklendiğinde, SDM tarafından sağlanan geri çağırma işlevi.  
+ KODU oluşturur ve bu olay nesne için bir iş parçacığı sona erdi rapor gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugThreadDestroyEvent2`.  
@@ -45,17 +42,17 @@ IDebugThreadDestroyEvent2 : IUnknown
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|İş parçacığının çıkış kodu alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Visual Studio güncelleştirmek için bu olay kullanan **iş parçacığı** penceresi.  
+ Visual Studio güncelleştirmek için bu olay kullanır **iş parçacıkları** penceresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

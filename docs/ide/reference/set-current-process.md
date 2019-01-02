@@ -2,7 +2,6 @@
 title: Geçerli Süreci Ayarla
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
@@ -13,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64561db59cc089d9539ab396cf4e869e92fe1117
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0c01c399dc76d1b328443edef27edd9a921b1b9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855289"
 ---
 # <a name="set-current-process"></a>Geçerli Süreci Ayarla
-Belirtilen işlem etkin işlem hata ayıklayıcı olarak ayarlar.
+Belirtilen işlemi Hata ayıklayıcıdaki etkin işlem olarak ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,7 +34,7 @@ Debug.SetCurrentProcess index
  Gerekli. İşlem dizini.
 
 ## <a name="remarks"></a>Açıklamalar
- Hata ayıklama yaptığınız ancak herhangi bir anda yalnızca bir işlem dubber etkin olduğu durumlarda, birden çok işlem ekleyebilirsiniz. Kullanabileceğiniz `SetCurrentProcess` etkin işlem ayarlamak için komutu.
+ Hata ayıklama, ancak yalnızca bir işlem dublajcı içerisinde belirli bir zamanda birden çok işleme iliştirebilirsiniz. Kullanabileceğiniz `SetCurrentProcess` etkin işlemi ayarlamak için komutu.
 
 ## <a name="example"></a>Örnek
 

@@ -1,9 +1,6 @@
 ---
 title: IDebugDocument2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocument2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36ac127e6cd6e25fd42c4859e723c883ecaffa82
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 240efad211f9d5aaee9c9494d545f11dd79e0bce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905734"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Bu arabirim, bir kaynak belge temsil eder.  
@@ -32,26 +29,26 @@ IDebugDocument2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Genellikle bu arabirimi uygular. Hata ayıklama altyapısı (DE), ayrıca kaynak kodunu sağlamanız gerekir ve kaynak disk üzerinde mevcut değil Bu arabirimi uygulayabilirsiniz.  Bu gibi durumlarda DE ayrıca uygulamak [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) ve [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) arabirimleri gibi bazı ek yöntemlere [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) ve [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) arabirimleri.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Genellikle bu arabirimi uygular. Bu kaynak kodu sağlaması gerekir ve kaynak disk üzerinde mevcut değil, hata ayıklama altyapısı (DE) Bu arabirim de uygulayabilirsiniz.  Böyle durumlarda da DE uygulamak [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) ve [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) arabirimleri yanı sıra bazı ek yöntemlerde [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) ve [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) arabirimleri.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Yöntemlere `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, ve `IDebugActivateDocumentEvent2` arabirimler bu arabirimi döndürür.  
+ Yöntemlerde `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, ve `IDebugActivateDocumentEvent2` arabirimi bu arabirim döndürür.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugDocument2`.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Belgenin adını birkaç forms birini alır.|  
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Belge adını çeşitli biçimlerden birinde alır.|  
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Belge sınıfı tanımlayıcısını alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yalnızca kaynak kodu DE sağlar, bu arabirim uygulanır. Bir HTML sayfasında komut dosyası ayıklanırken kaynak indirilen veya dinamik olarak üretilen çünkü Örneğin, DE kaynak kodu sağlar ve bir disk dosyası olarak yok. C++ gibi geleneksel dilleri hata ayıklama sırasında bu arabirim uygulanması gerekmez.  
+ Bu arabirim, yalnızca kaynak kodu DE sağladığı zaman uygulanır. Bir HTML sayfasında komut dosyası ayıklanırken kaynak indirilen veya dinamik olarak oluşturulan gibi DE kaynak kodu sağlar ve bir disk dosyası olarak mevcut değil. C++ gibi geleneksel dilleri hata ayıklama sırasında uygulanması bu arabirimi gerekmez.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: hangi için önce hedefin derleneceğini belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Derleme için önce hangi hedefin belirtme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d73ef1935f01a48d756ce39df934f3afa83c2d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967037"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Nasıl yapılır: ilk oluşturmak için hangi hedef belirtin
+# <a name="how-to-specify-which-target-to-build-first"></a>Nasıl Yapılır: İlk olarak oluşturmak için hangi hedef belirtin
 Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluşturulduğunu tanımlayan öğeler. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı yapılar ilk proje dosyası içermedikçe bulur ve tüm bağımlılıkları, proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği veya bir hedef belirtilen komut satırını kullanarak **- Hedef** geçin.  
   
 ## <a name="use-the-initialtargets-attribute"></a>InitialTargets özniteliğini kullanın  
@@ -77,4 +75,4 @@ Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluş
 ## <a name="see-also"></a>Ayrıca bkz.
   [MSBuild](../msbuild/msbuild.md)  
  [Hedefleri](../msbuild/msbuild-targets.md)   
- [Nasıl yapılır: derlemeyi temizleme](../msbuild/how-to-clean-a-build.md)
+ [Nasıl yapılır: Derlemeyi temizleme](../msbuild/how-to-clean-a-build.md)

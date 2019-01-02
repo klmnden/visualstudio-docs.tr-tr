@@ -1,9 +1,6 @@
 ---
 title: Office belgelerindeki denetimler
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930602"
 ---
 # <a name="controls-on-office-documents"></a>Office belgelerindeki denetimler
   Windows Forms denetimleri eklemek için Visual Studio'da Office geliştirme araçlarını kullanabilirsiniz ve *konak denetimlerini* Word belgelerini ve Excel çalışma sayfaları için. Konak denetimleri, Word ve Excel nesne modellerinde çeşitli kullanıcı arabirimi (UI) nesneleri genişleten nesnelerdir.  
@@ -54,5 +51,3 @@ ms.locfileid: "53441476"
   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Belgelerde, Word ve Excel belge içindeki konak denetimlere veri bağlama tarafından verilerini nasıl görüntüleyebileceğinizi açıklar.  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Idiaenumtables | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4018b347b3fa6989a2dbd2116ac2c234ebfb70f8
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 0e6dbfc2a61be36dbe64d8198dc56e695d774602
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951189"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
-Veri kaynağında bulunan çeşitli tablolar numaralandırır.  
+Veri kaynağında bulunan çeşitli tabloları sıralar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaEnumTables : IUnknown  
+IDiaEnumTables : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,12 +33,12 @@ IDiaEnumTables : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Sıralayıcı sürümü.|  
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|  
 |[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Tablo sayısını alır.|  
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Bir dizin veya bir ad yoluyla bir tablo alır.|  
-|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Belirtilen bir numaralandırma sırası tablolarda sayısını alır.|  
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Bir numaralandırma sırasını tablolarda belirtilen sayıda atlar.|  
-|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Bir dizin veya bir ad kullanarak bir tabloyu alır.|  
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Belirtilen bir sabit listesi sırası tablolarında sayısını alır.|  
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Bir numaralandırma sıralı tablolarda belirtilen sayıda atlar.|  
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -64,9 +62,9 @@ void ShowTableNames(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

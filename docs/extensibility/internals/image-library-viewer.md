@@ -1,6 +1,5 @@
 ---
 title: Görüntü kitaplığı Görüntüleyicisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968676"
 ---
 # <a name="image-library-viewer"></a>Görüntü Kitaplığı Görüntüleyicisi
 Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve görüntü bildirimler, bunları Visual Studio olduğu aynı şekilde yönetmek kullanıcının arayın. Kullanıcı, arka plan, boyutları, DPI, yüksek karşıtlık ve diğer ayarlarını değiştirebilirsiniz. Araç ayrıca her görüntü bildirimi yükleme bilgilerini görüntüler ve görüntü bildiriminde her görüntü kaynağı bilgilerini görüntüler. Bu araç için yararlıdır:  
@@ -72,7 +71,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
 |||  
 |-|-|  
 |**Alt öğe**|**Tanım**|  
-|{1&gt;İçeri Aktar&lt;1}|Belirtilen bildirim dosyası geçerli bildirimde kullanmak için simgelerin içeri aktarır.|  
+|İçeri Aktarma|Belirtilen bildirim dosyası geçerli bildirimde kullanmak için simgelerin içeri aktarır.|  
 |Guid|Simgenin bir GUID temsil eder ve GUID biçimlendirme eşleşmesi gerekir.|  
 |Kimlik|Simgenin bir kimliği temsil eder ve negatif olmayan bir tamsayı olmalıdır.|  
 |Dize|Simgenin bir rastgele dize değeri temsil eder.|  
@@ -132,7 +131,7 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
 |-|-|  
 |**Öznitelik**|**Tanım**|  
 |URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) kullanarak uygulama: / / / yetkilisi<br /><br /> -Bir mutlak bileşen kaynak başvurusu<br /><br /> -Yerel bir kaynak içeren bir dosya yolu|  
-|Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> - *Işık*: kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> - *Koyu*: kaynağı koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> - *Yüksek Karşıtlık*: kaynak, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> - *HighContrastLight*: kaynak, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> -*HighContrastDark*: kaynak, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** özniteliği atlanırsa, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** olduğu *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Varsa **arka plan** yok sayıldıysa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
+|Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> - *Işık*: Kaynak, hafif bir arka plan üzerinde kullanılabilir.<br /><br /> - *Koyu*: Kaynak koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> - *Yüksek Karşıtlık*: Kaynak, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> - *HighContrastLight*: Kaynak, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> -*HighContrastDark*: Kaynak, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** özniteliği atlanırsa, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Varsa **arka plan** olduğu *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Varsa **arka plan** yok sayıldıysa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
   
  A \<kaynak > öğesi aşağıdaki isteğe bağlı alt öğeleri tam olarak birine sahip olabilir:  
   

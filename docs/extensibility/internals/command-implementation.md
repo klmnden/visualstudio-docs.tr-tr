@@ -1,9 +1,6 @@
 ---
 title: Komut, uygulama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965427"
 ---
 # <a name="command-implementation"></a>Komut uygulama
 Komut içinde bir VSPackage'ı uygulamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  
@@ -72,13 +69,13 @@ if ( null != mcs )
   
     -   `OLECMDF_SUPPORTED`: Komut desteklenir.  
   
-    -   `OLECMDF_INVISIBLE`: Komut görünür olmamalıdır.  
+    -   `OLECMDF_INVISIBLE`: Komutun görünür olmamalıdır.  
   
-    -   `OLECMDF_LATCHED`: Komut, üzerinde açılıp ve denetlendi gibi görünüyor.  
+    -   `OLECMDF_LATCHED`: Komut çubuğunda açılıp ve denetlendi görünür.  
   
     -   `OLECMDF_ENABLED`: Komut etkin.  
   
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Kısayol menüsünde görünmüyorsa komut gizlenmelidir.  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`: Kısayol menüsünde görünmüyorsa, komut gizlenmelidir.  
   
     -   `OLECMDF_NINCHED`: Komut menü denetleyicisi ve etkin değil ancak aşağı açılan listesinin boş değil ve yine de kullanılabilir. (Bu bayrağı nadiren kullanılır.)  
   

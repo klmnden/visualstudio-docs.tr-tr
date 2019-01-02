@@ -2,7 +2,6 @@
 title: XAML Tasarımcısı seçenekler sayfası
 ms.date: 03/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964305"
 ---
 # <a name="xaml-designer-options-page"></a>XAML Tasarımcısı seçenekler sayfası
 
@@ -110,4 +109,4 @@ XAML Tasarımcısı'nda dosyaları XAML düzenleme olduğunda efektler Blend kul
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [WPF'de XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [İzlenecek Yol: İlk WPF masaüstü uygulamam](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [İzlenecek yol: İlk WPF Masaüstü Uygulamam](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

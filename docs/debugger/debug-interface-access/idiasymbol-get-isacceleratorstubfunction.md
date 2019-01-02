@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf6be53925ed6f9cd613f7e7a19cca9f00cace
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956582"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Simgenin bir üst düzey işlevi simge karşılık gelen bir Hızlandırıcı için derlenmiş bir gölgelendirici için karşılık gelen olup olmadığını gösterir bir `parallel_for_each` çağırın.  
+Sembol üst düzey işlev sembole karşılık gelen bir Hızlandırıcı için derlenmiş gölgelendirici için karşılık gelen olup olmadığını gösteren bir `parallel_for_each` çağırın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,10 +29,10 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>Parametreler  
  `pFlag`  
- [out] Bir işaretçi bir `BOOL` simgenin bir üst düzey işlevi simge karşılık gelen bir Hızlandırıcı için derlenmiş bir gölgelendirici için karşılık gelen olup olmadığını bildiren bir `parallel_for_each` çağırın.  
+ [out] Bir işaretçi bir `BOOL` sembol üst düzey işlev sembole karşılık gelen bir Hızlandırıcı için derlenmiş gölgelendirici için karşılık gelen olmadığını bildiren bir `parallel_for_each` çağırın.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

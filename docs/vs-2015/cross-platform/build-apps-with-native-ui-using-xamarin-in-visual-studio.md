@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a17f8468eca37b5b977aa6b892e268bda5376ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: addc983ce8490e8c1dc1b84a98223cc1b23a76f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931063"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -524,7 +523,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 
 2.  Bir uygun cihaz veya öykünücü hedef seçin ve ardından F5 tuşuna basarak uygulamayı başlatın.
 
-3.  Cihazda veya öykünücüde düzenleme kutusuna geçerli bir Amerika Birleşik Devletleri posta kodu yazın (örneğin: 60601) ve basın **hava durumunu alın**. Bu bölge için hava durumu verileri, ardından denetimleri görünür.
+3.  Cihazda veya öykünücüde düzenleme kutusuna geçerli bir Amerika Birleşik Devletleri posta kodu yazın (örneğin: 60601) tuşuna basın **hava durumunu alın**. Bu bölge için hava durumu verileri, ardından denetimleri görünür.
 
      ![Android ve Windows Phone için hava durumu uygulaması](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -630,7 +629,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 
 2.  F5 tuşuna basarak uygulamayı başlatın.
 
-3.  Windows Phone öykünücüsü'nde geçerli bir Amerika Birleşik Devletleri posta kodu düzenleme kutusuna yazın (örneğin: 60601) ve basın **hava durumunu alın**. Bu bölge için hava durumu verileri, ardından denetimleri görünür.
+3.  Windows Phone öykünücüsü'nde geçerli bir Amerika Birleşik Devletleri posta kodu düzenleme kutusuna yazın (örneğin: 60601) tuşuna basın **hava durumunu alın**. Bu bölge için hava durumu verileri, ardından denetimleri görünür.
 
      ![Windows sürümü çalışan uygulamanın](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

@@ -1,27 +1,26 @@
 ---
-title: 'Önceki .NET Framework sürümleri için F # hedef'
-description: "F # kullanarak Visual Studio'da .NET Framework'ün daha eski bir sürümü hedefleme hakkında bilgi edinin."
+title: Önceki .NET Framework sürümlerini hedefF#
+description: Kullanırken, .NET Framework'ün daha eski bir sürümü hedefleme hakkında bilgi edinin F# Visual Studio'da.
 ms.date: 07/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cb32f37bde0a55da081105cbee52a8744db2b88
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888082"
 ---
-# <a name="target-older-versions-of-net-f"></a>Hedef eski sürümlerini .NET (F #)
+# <a name="target-older-versions-of-net-f"></a>Eski .NET sürümlerini hedefleyen (F#)
 
-.NET Framework 2.0 kullanan denerseniz, Windows 8.1 Visual Studio yüklü olduğunda 3.0 veya 3.5 bir F # proje aşağıdaki hata görünebilir:
+.NET Framework 2.0, 3.0 veya 3.5 hedeflemek denerseniz aşağıdaki hata görünebilir bir F# proje Windows 8.1 Visual Studio yüklü olduğunda:
 
-**Bu proje 2.0 F # çalışma zamanının gerektirir, ancak bu çalışma zamanı yüklü değil.**
+**Bu proje 2.0 gerektirir F# çalışma zamanı, ancak bu çalışma zamanı yüklü değil.**
 
 Bu hata koşulları altında aşağıdaki birleşimi bilinmektedir:
 
@@ -31,7 +30,7 @@ Bu hata koşulları altında aşağıdaki birleşimi bilinmektedir:
 
 - Projeniz .NET Framework 2.0, 3.0 veya 3.5 hedefler.
 
-Visual Studio yükleme sırasında .NET Framework'ün yüklü sürümlerini algılar. .NET Framework 3.5 yalnızca yüklü ve etkin değilse visual Studio 2.0 F # çalışma zamanı yükler.
+Visual Studio yükleme sırasında .NET Framework'ün yüklü sürümlerini algılar. Visual Studio'yu yükler F# yalnızca .NET Framework 3.5 yüklü etkin ve 2.0 çalışma zamanı.
 
 ## <a name="resolve-the-error"></a>Hatayı çözün
 
@@ -39,7 +38,7 @@ Bu hatayı gidermek için şunlardan birini yapabilirsiniz:
 
 - Hedef .NET Framework'ün daha yeni bir sürümü.
 
-- Windows 8.1 üzerinde .NET Framework 3.5 etkinleştirin ve ardından Visual Studio yüklemesini onararak F # 2.0 çalışma zamanını yükleyin. Bunu yapmak için adımları izleyin.
+- Windows 8.1 üzerinde .NET Framework 3.5 etkinleştirme ve yüklemeyi F# Visual Studio onarmayı tarafından 2.0 çalışma zamanı. Bunu yapmak için adımları izleyin.
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>Windows 8.1 üzerinde .NET Framework 3.5 etkinleştirmek için
 
@@ -53,11 +52,11 @@ Bu hatayı gidermek için şunlardan birini yapabilirsiniz:
 
    Zaten yapmadıysanız, .NET Framework 3.5 etkinleştirilir.
 
-### <a name="to-install-the-f-20-runtime"></a>F # 2.0 çalışma zamanı yüklemek için
+### <a name="to-install-the-f-20-runtime"></a>Yüklenecek F# 2.0 çalışma zamanı
 
 İzleyin [onarım Visual Studio 2017 için adımları](../install/repair-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [F # Kılavuzu (.NET Framework)](/dotnet/fsharp/)
-- [Visual Studio'da F #](fsharp-visual-studio.md)
+- [F#Kılavuzu (.NET Framework)](/dotnet/fsharp/)
+- [F#Visual Studio'da](fsharp-visual-studio.md)

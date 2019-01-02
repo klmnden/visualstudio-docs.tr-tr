@@ -2,7 +2,6 @@
 title: Hata Listesi Penceresi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 50cc9a5198df29385519364455eda319b5aeae68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963877"
 ---
 # <a name="error-list-window"></a>Hata Listesi Penceresi
 
@@ -55,14 +54,14 @@ Araç çubuğunun sağ tarafında biri diğeri araç çubuğunun solunda iki aç
 
 Analiz etmek ve hata grupları üzerinde hareket için arama kapsamını sınırlandırabilirsiniz. Örneğin, bir projenin derlenmesini önleyen çekirdek hatalarına odaklanmak isteyebilirsiniz. Kapsam belirleme seçenekleri şunlardır:
 
-1.  **Belgeleri açma**: hatalar, uyarılar ve açık belgelerin iletileri göster.
+1.  **Açık belgeler**: Hataları, uyarıları ve iletileri açık belgelerin gösterir.
 
-2.  **Geçerli proje**: Göster hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.
+2.  **Geçerli proje**: Hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.
 
     > [!NOTE]
     > Şu anda seçili olan belgenin projesi seçili projeden farklıysa, filtrelenmiş liste hataları, uyarıları ve iletileri değiştirecek **Çözüm Gezgini**.
 
-3.  **Geçerli belge**: hatalar, uyarılar ve şu anda seçili belgedeki iletilerini göster **Düzenleyicisi** veya **Çözüm Gezgini**.
+3.  **Geçerli belge**: Hataları, uyarıları ve iletileri için seçilmiş belgenin içinde Göster **Düzenleyicisi** veya **Çözüm Gezgini**.
 
 Bir filtre o anda arama sonucuna uygulanırsa, filtrenin adını görünür **hata listesi** başlık çubuğu. **Hataları**, **uyarıları**, ve **iletileri** düğmeleri sonra toplam öğe sayısının yanı sıra gösterilen filtrelenmiş öğe sayısını da görüntüler. Örneğin, düğme Göster "x / y hata". Hiçbir filtre uygulanmamışsa başlık çubuğunda yalnızca "hata listesi" yazar.
 

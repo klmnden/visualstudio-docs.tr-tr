@@ -1,8 +1,6 @@
 ---
 title: CvWriteMessage işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteMessageW
@@ -28,15 +26,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 22e1933b3a59c4aea76b262831918bab53e3b073
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892150"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage işlevi
-Eşzamanlılık görselleştiricisi izleme dosyası için bir ileti yazar.  
+Eşzamanlılık görselleştiricisi izleme dosyasının bir ileti yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -96,10 +94,10 @@ HRESULT CvWriteMessageExVA(
   
 #### <a name="parameters"></a>Parametreler  
  `argList`  
- Bağımsız değişkenler listesi.  
+ Bağımsız değişken listesi.  
   
  `category`  
- Aralık kategorisi  
+ Aralığın kategorisi  
   
  `level`  
  Aralık önem düzeyi.  
@@ -111,7 +109,7 @@ HRESULT CvWriteMessageExVA(
  İleti biçimi dizesi. NULL olamaz.  
   
 ## <a name="return-value"></a>Dönüş değeri  
- İletiyi başarıyla yazıldığında S_OK. Hata kodu vardı herhangi bir hata durumunda. Hata koşulu denetlemek için başarılı/başarısız makroları kullanın.  
+ İletinin başarılı bir şekilde yazıldığında S_OK. Hata kodu: var olan herhangi bir hata durumunda. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkers.h*  

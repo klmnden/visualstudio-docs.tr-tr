@@ -1,9 +1,6 @@
 ---
 title: Özel kullanıcı arabirimi (kaynak denetimi VSPackage'ı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc8158325d975aec4bd522fddad2375001d2f72e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3fa5972a520825b8c7622bd07e23d53910339ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852657"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Özel kullanıcı arabirimi (kaynak denetimi VSPackage'ı)
 Alt menü öğelerini ve varsayılan durumlarına Visual Studio komut tablosu aracılığıyla VSPackage bildirir (*.vsct*) dosyası. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) VSPackage yüklenene kadar bu menü öğeleri varsayılan durumlarını görüntüler. Sonuç olarak, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> etkinleştirmek ya da menü öğelerini devre dışı yöntemi çağrılır.  

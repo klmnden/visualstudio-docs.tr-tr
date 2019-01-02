@@ -1,8 +1,6 @@
 ---
 title: Performans Gezgini | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 837c8d405245237962888a0a689fbdd17f6a0a92
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0a248821639a2263f5695d64030d932b2b6a05fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933920"
 ---
 # <a name="performance-explorer"></a>Performans Gezgini
 
@@ -36,15 +34,15 @@ Performans ve profil oluşturma ile ilgili güncel ve Gelişmiş konular hakkın
 |Görev|İlgili içerik|
 |----------|---------------------|
 |**Windows 8 ve üzeri teknikleri**|[Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
-|**Profil oluşturma kavramları anlama:** kavramlar ve toplamak için kullanacağını koşullarla görüntülemek ve profil oluşturma araçları kullanarak kod performansını çözümlemek öğrenin.|[Genel Bakışlar](../profiling/overviews-performance-tools.md)|
-|**Hemen ve bunu:** toplamak, görüntüleyin ve profil oluşturma araçları ile kod performansını çözümlemek kullanacağınız temel yordamlar hakkında bilgi edinin. Uygulamalı adım adım kılavuza deneyin.|[Başlarken](../profiling/getting-started-with-performance-tools.md)|
-|**Profil oluşturma oturumunu yapılandırma:** gelişmiş yöntemleri projeleri veya ikilileri profili belirtin, profil oluşturma yöntemini seçin, performans verileri toplamak için seçin ve diğer profil oluşturma oturumunu ayarlama seçenekleri konusunda bilgi edinin.|[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)|
-|**Profil Oluşturucu topladığı verileri kontrol:** nasıl profil oluşturmayı durdurmak ve başlatmak için performans oturumu özellikleri ve etkileşimli yordamları kullanın ve yalnızca istediğiniz bilgileri toplamak performans verileri sınırlamak nasıl bilgi edinin.|[Veri toplamayı denetleme](../profiling/controlling-data-collection.md)|
-|**Performans sorunlarını bulun:** görüntülemek ve profil oluşturma Araçlar rapor görünümü penceresindeki toplanan performans verilerini analiz etme hakkında bilgi edinin.|[Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)|
-|**Performans değişikliklerini Çözümle:** performans değişikliklerini analiz etmek için iki Profil Oluşturucu veri dosyalarını karşılaştırma öğrenin.|[Performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md)|
-|**Kaydetme ve paylaşma sonuçlarınızı:** veri arşivleme veya paylaşım için profil oluşturma kaydetmeyi öğrenin.|[Performans araçları verilerini kaydetme ve dışarı aktarma](../profiling/saving-and-exporting-performance-tools-data.md)|
-|**Profil oluşturmayı otomatikleştirmek:** profil oluşturma araçları komut istemini kullanmayı öğrenin.|[Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)|
-|**Denetim program tarafından profil oluşturma:** yönetilen ve yerel profil araçları API'leri için veri toplamayı denetleme doğrudan kaynak koddan kullanmayı öğrenin.|[Profil Araçları API'leri](../profiling/profiling-tools-apis.md)|
+|**Profil oluşturma kavramları anlayın:** Kavramlar ve koşullarla toplamak, görüntüleyin ve profil oluşturma araçları kullanarak kod performansını çözümlemek için kullanacağınız öğrenin.|[Genel Bakışlar](../profiling/overviews-performance-tools.md)|
+|**Hemen ve bunu yapın:** Toplama, görüntüleyin ve profil oluşturma araçları ile kod performansını çözümlemek kullanacağınız temel yordamları öğreneceksiniz. Uygulamalı adım adım kılavuza deneyin.|[Başlarken](../profiling/getting-started-with-performance-tools.md)|
+|**Profil oluşturma oturumunu yapılandırın:** Gelişmiş yöntemlerinin projeleri veya ikilileri profili, profil oluşturma yöntemini seçin, toplamak için performans verilerini belirleme konusunda bilgi edinmek ve diğer profil oluşturma oturumunu ayarlama seçenekleri.|[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)|
+|**Profil Oluşturucu topladığı verileri kontrol edin:** Performans oturumu özellikleri ve etkileşimli yordamları başlatma ve durdurma profil oluşturma için nasıl kullanılacağını ve yalnızca istediğiniz bilgileri toplamak performans verileri sınırlamak öğrenin.|[Veri toplamayı denetleme](../profiling/controlling-data-collection.md)|
+|**Performans sorunlarını bulun:** Görüntüleme ve profil oluşturma Araçlar rapor görünümü penceresindeki toplanan performans verilerini analiz etme hakkında bilgi edinin.|[Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)|
+|**Performans değişikliklerini Çözümle:** Performans değişikliklerini analiz etmek için iki Profil Oluşturucu veri dosyalarını karşılaştırma öğrenin.|[Performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md)|
+|**Kaydedebilir ve sonuçlarınızı paylaşabilir:** Veri arşivleme veya paylaşım için profil oluşturma kaydetmeyi öğrenin.|[Performans araçları verilerini kaydetme ve dışarı aktarma](../profiling/saving-and-exporting-performance-tools-data.md)|
+|**Profil oluşturma otomatik hale getirin:** Profil oluşturma araçları komut istemini kullanmayı öğrenin.|[Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)|
+|**Program tarafından profil oluşturma denetimi:** Doğrudan kaynak koddan veri toplamayı denetlemek için yönetilen ve yerel profil araçları API'leri kullanmayı öğrenin.|[Profil Araçları API'leri](../profiling/profiling-tools-apis.md)|
 |**Profil oluşturma sorunlarını giderme**|[Performans sorunlarını giderme](../profiling/troubleshooting-performance-tools-issues.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -1,9 +1,7 @@
 ---
 title: Node.js ve Express uygulaması oluşturma
 description: Bu öğreticide, Visual Studio için Node.js araçları kullanarak uygulama oluşturma
-ms.custom: ''
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,17 +11,17 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: d366816df1247c5e0c09a5cc714fb8daaa831968
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927499"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve Express uygulaması oluşturma
 Bu öğreticide Node.js ve Express kullanarak Visual Studio geliştirme için basit bir Node.js web uygulaması oluşturma, kod ekleyin, bazı IDE özelliklerini ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](http://visualstudio.microsoft.com).
 
-Bu öğreticide, şunların nasıl yapılır:
+Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kod ekleyin
@@ -51,7 +49,7 @@ Express web uygulamaları oluşturmak için Node.js için bir sunucu çerçevesi
 
 * Visual Studio 2017 ve Node.js geliştirme iş yükü olması gerekir.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
     İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -158,7 +156,7 @@ IntelliSense kod yazarken, size yardımcı olur. Visual Studio bir araçtır.
 
 1. İçinde *index.js*içeren kod satırına gidin `res.render`.
 
-1. İmlecinizi sonra put `data` dize, tip `: get` ve IntelliSense gösterilir `getData` kod içinde tanımlanan işlevi. Seçin `getData`.
+1. İmlecinizi sonra put `data` dize, tip `: get` ve IntelliSense gösterilir `getData` kod içinde tanımlanan işlevi. `getData` öğesini seçin.
 
     ![IntelliSense kullanma](../javascript/media/tutorial-nodejs-intellisense.png)
 
@@ -190,7 +188,7 @@ Visual Studio hata ayıklayıcısı ekli uygulamayı çalıştırmak için sonra
 
     ![Bir kesme noktası ayarlayın](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Uygulamayı çalıştırın
+## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
 1. Edge veya Chrome'da gibi hata ayıklama araç çubuğundaki hata ayıklama hedefi seçin.
 

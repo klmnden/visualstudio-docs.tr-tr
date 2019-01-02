@@ -1,9 +1,6 @@
 ---
 title: URL Seçici iletişim kutusu (Visual Studio'da SharePoint Geliştirme) | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.VWD.URLPicker
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffeca5bf0149ce5a36e5abb77eab673e87f36dc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925907"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL Seçici iletişim kutusu (Visual Studio'da SharePoint Geliştirme)
   URL Seçici iletişim kutusu içinde SharePoint çalıştıran yerel sunucu ana sayfa dosyası veya projenizdeki veya bulunan görüntü dosyaları gibi dosyaları seçebilirsiniz.  
@@ -46,7 +43,7 @@ ms.locfileid: "49950764"
   
   Genişletin **sunucu** düğümünü SharePoint çalıştıran yerel sunucu üzerinde bulunan dosyaları seçin. Bu dosyalar olarak seçilebilir iletişim kutusunda görünmesi için aşağıdaki ölçütleri karşılaması gerekir:  
   
-- Dosya aşağıdaki eşlenen klasörler birinde bulunmalıdır: **görüntüleri**, **düzenleri**, veya **ControlTemplates**.  
+- Dosya aşağıdaki eşlenen klasörler birinde bulunmalıdır: **Görüntüleri**, **düzenleri**, veya **ControlTemplates**.  
   
 - Dosyanın SharePoint içerik veritabanı bulunamıyor.  
   
@@ -62,4 +59,3 @@ ms.locfileid: "49950764"
  [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  

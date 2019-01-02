@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3ec468ebedbe1d15ddff3527bcf0783b9831247e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e860daf40358978538f732fdb9fea0696778354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937588"
 ---
 # <a name="properties-of-domain-relationships"></a>Etki Alanı İlişkilerinin Özellikleri
 Özellikler aşağıdaki tabloda, bir etki alanı ilişkisi ile ilişkilendirilir. Etki alanı ilişkileri hakkında daha fazla bilgi için bkz: [anlama modelleri, sınıfları ve ilişkileri](../modeling/understanding-models-classes-and-relationships.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -35,7 +34,7 @@ ms.locfileid: "50966446"
 |Ad Alanı|Etki alanı ilişkisi ile bağlantılı olan ad alanı.|Geçerli ad alanı|
 |Notlar|Etki alanı ilişkisi ile ilişkili resmi olmayan notlar.|\<yok >|
 |Açıklama|Kod belge için kullanılır ve oluşturulan tasarımcının kullanıcı Arabiriminde kullanılan açıklaması.|\<yok >|
-|Görünen ad|Etki alanı ilişkisi için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
+|Görünen Ad|Etki alanı ilişkisi için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Yardım anahtar sözcüğü|Etki alanı ilişkisi için F1 Yardımı dizini oluşturmak için kullanılan isteğe bağlı anahtar sözcük.|\<yok >|
 
 ## <a name="see-also"></a>Ayrıca Bkz.

@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - onaylayın etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6823b564b7ec3da1585810c27db2f97c1b16ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34f59bc8ad3040c6077d5feeb4f725f367b8dcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956483"
 ---
 # <a name="confirm-activity-designer"></a>Confirm Etkinlik Tasarımcısı
 
@@ -36,7 +35,7 @@ ms.locfileid: "49906539"
 ### <a name="the-confirm-properties"></a>Özellikleri onaylayın
  Aşağıdaki tabloda <xref:System.Activities.Statements.Confirm> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Özelliği, özellik kılavuzu veya iş akışı Tasarımcısı yüzeyine düzenlenebilir ancak <xref:System.Activities.Statements.Confirm.Target%2A> özellik kılavuzunda özellik düzenlenemez.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı belirtir <xref:System.Activities.Statements.CancellationScope> etkinlik. Onayla varsayılandır.|
 |<xref:System.Activities.Statements.Confirm.Target%2A>|Doğru|Belirtir <xref:System.Activities.InArgument%601> içeren <xref:System.Activities.Statements.CompensationToken> bu <xref:System.Activities.Statements.Confirm> etkinlik.|

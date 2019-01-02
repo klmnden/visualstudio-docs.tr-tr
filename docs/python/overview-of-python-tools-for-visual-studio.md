@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio, Windows (PTVS Visual Studio için Python araçları olarak da bilinir) üzerinde en iyi Python IDE yapmadan Python özelliklerinin özeti.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927343"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -45,8 +44,8 @@ Kullanım **açık etkileşimli pencere** Python etkileşimli olarak Visual Stud
 
 Daha fazla bilgi için:
 
-- Video (2 dk. 35s): [yönetme Python ortamları](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Docs: [Yönet Python ortamları](managing-python-environments-in-visual-studio.md)
+- Video (2 dk. 35s): [Python ortamları yönetme](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Docs: [Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
 - Docs: [Python ortamları başvurusu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zengin düzenleme, IntelliSense ve kod kavrama
@@ -57,11 +56,11 @@ Visual Studio söz dizimi renklendirme, otomatik tamamlama tüm kod ve kitaplık
 
 Daha fazla bilgi için:
 
-- Video (2 dk. 30 saniye): [Düzenle Python kodu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Video (2 dk. 30 saniye): [Python kodunu Düzenle](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Docs: [Python kodunu Düzenle](editing-python-code-in-visual-studio.md)
-- Docs: [kod biçimlendirme](formatting-python-code.md)
-- Docs: [kodu yeniden düzenleyin](refactoring-python-code.md)
-- Docs: [bir lint kullanın](linting-python-code.md)
+- Docs: [Biçim Kodu](formatting-python-code.md)
+- Docs: [Kodu yeniden düzenleme](refactoring-python-code.md)
+- Docs: [Bir lint kullanın](linting-python-code.md)
 - Genel Visual Studio özellik belgeleri: [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Etkileşimli pencere
@@ -77,8 +76,8 @@ Visual Studio, satır içi çizimleri, .NET ve Windows Presentation Foundation (
 Daha fazla bilgi için:
 
 - Video (2 milyon 22s: [Python etkileşimli penceresi](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Docs: [etkileşimli penceresi](python-interactive-repl-in-visual-studio.md)
-- Docs: [Ipython Visual Studio'da](interactive-repl-ipython.md)
+- Docs: [Etkileşimli pencere](python-interactive-repl-in-visual-studio.md)
+- Docs: [Visual Studio'da Ipython](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Proje sistemi ve proje ve öğe şablonları
 
@@ -92,11 +91,11 @@ Proje ve öğe şablonlarını projeleri ve dosyaları farklı türleri ayarlama
 
 Daha fazla bilgi için:
 
-- Docs: [Yönet Python projeleri](managing-python-projects-in-visual-studio.md)
-- Docs: [öğe şablonları başvurusu](python-item-templates.md)
+- Docs: [Python projeleri yönetme](managing-python-projects-in-visual-studio.md)
+- Docs: [Öğe şablonları başvurusu](python-item-templates.md)
 - Docs: [Python proje şablonları](managing-python-projects-in-visual-studio.md#project-templates)
 - Docs: [C++ ve Python ile çalışma](working-with-c-cpp-python-in-visual-studio.md)
-- Genel Visual Studio özellik belgeleri: [proje ve öğe şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Genel Visual Studio özellik belgeleri: [Proje ve öğe şablonları](../ide/creating-project-and-item-templates.md#visual-studio-templates)
 - Genel Visual Studio özellik belgeleri: [Visual Studio'da projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Tam özellikli hata ayıklama
@@ -110,8 +109,8 @@ Daha fazla bilgi için:
 - Video: [Python 3 m 32s hata ayıklama](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - Docs: [Python hata ayıklama](debugging-python-in-visual-studio.md)
 - Docs: [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Docs: [Linux üzerinde uzaktan hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
-- Genel Visual Studio özellik belgeleri: [özelliği Visual Studio hata ayıklayıcı turu](../debugger/debugger-feature-tour.md)
+- Docs: [Uzaktan Linux üzerinde hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
+- Genel Visual Studio özellik belgeleri: [Visual Studio hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Kapsamlı Raporlama ile profil oluşturma araçları
 
@@ -123,7 +122,7 @@ Daha fazla bilgi için:
 
 - Video: [Python 3 m 00s profil oluşturma](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - Docs: [Python profil oluşturma araçları](profiling-python-code-in-visual-studio.md)
-- Genel Visual Studio özellik belgeleri: [profil oluşturma özelliği Turu](../profiling/profiling-feature-tour.md). (Tüm Visual Studio profil oluşturma özellikleri, Python için mevcuttur).
+- Genel Visual Studio özellik belgeleri: [Profil oluşturma özelliği Turu](../profiling/profiling-feature-tour.md). (Tüm Visual Studio profil oluşturma özellikleri, Python için mevcuttur).
 
 ## <a name="unit-testing-tools"></a>Birim test araçları
 
@@ -134,8 +133,8 @@ Bulma, çalıştırmak ve Visual Studio'da testleri yönetmek **Test Gezgini**ve
 Daha fazla bilgi için:
 
 - Video: [Python 2 milyon 31s test etme](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Docs: [birim testi için Python araçları](unit-testing-python-in-visual-studio.md)
-- Genel Visual Studio özellik belgeleri: [birim testi kod](../test/unit-test-your-code.md).
+- Docs: [Python için birim test araçları](unit-testing-python-in-visual-studio.md)
+- Genel Visual Studio özellik belgeleri: [Birim testi kod](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
@@ -147,7 +146,7 @@ Daha fazla bilgi için [Python için Azure SDK'sı](azure-sdk-for-python.md)
 
 |   |   |
 |---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | <ul><li>[Python ile programlamaya giriş](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Acemi: dizeleri ve işlevleri](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python ile ilgili temel bilgiler: liste ve döngüler](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[İlk Python sorular](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | <ul><li>[Python ile programlamaya giriş](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python başlangıç: Dizeler ve işlevleri](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python ile ilgili temel bilgiler: Liste ve döngüler](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[İlk Python sorular](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 

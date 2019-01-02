@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927356"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl yapılır: çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl Yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma
   Çalışma sayfasında satırları veya sütunları yeniden boyutlandırdığınızda, hücreleri içinde herhangi bir ana bilgisayar denetimleri yeniden boyutlandırılmış hücre genişliği veya yüksekliği otomatik olarak yeniden boyutlandırın. Windows Forms denetimleri varsayılan olarak otomatik olarak yeniden boyutlandırma değil.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -79,7 +76,6 @@ ms.locfileid: "35677286"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Nasıl yapılır: yazdırırken çalışma sayfası denetimlerini gizleme](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Nasıl yapılır: Yazdırırken çalışma sayfası denetimlerini gizleme](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

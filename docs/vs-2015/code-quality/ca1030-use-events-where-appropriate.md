@@ -1,12 +1,11 @@
 ---
-title: 'CA1030: uygun yerlerde olaylar kullanın | Microsoft Docs'
+title: 'CA1030: Uygun yerlerde olaylar kullanın | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb3420cdfe3dbe66a96b504539b48fab9177861
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881240"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Uygun yerlerde olaylar kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +57,3 @@ ms.locfileid: "49870139"
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Yöntem ile çalışmazsa bu kuraldan bir uyarıyı bastırmak [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] olay modeli.
-
-
-

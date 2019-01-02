@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- devlang-csharp
+ms.technology: devlang-csharp
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 827c2ea5ee3236c6d34e46405cbfedd3d3a93225
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cd456bf03b3c5037c21845c082ca60ef563e8df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938808"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>C# için Visual Studio geliştirme ortamını kullanma #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +37,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE), ortak bir kullanıcı arabir
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[İzlenecek Yol: Basit Bir Uygulama Oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Uygulama geliştirmeyle ilgili olarak Visual Studio'ya dahil olan özelliklerin ve araçların birçoğu için bir genel bakış sağlar.|
+|[İzlenecek yol: Basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Uygulama geliştirmeyle ilgili olarak Visual Studio'ya dahil olan özelliklerin ve araçların birçoğu için bir genel bakış sağlar.|
 |[Çözümler ve Projeler Oluşturma](../ide/creating-solutions-and-projects.md)|Tüm kaynak kod dosyalarını, simgeler gibi kaynak dosyaları, harici dosyalara başvuruları ve derleyici ayarları gibi yapılandırma verilerini içeren bir projenin nasıl oluşturulacağını açıklar.|
 |[Proje Tasarımcısı giriş](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Proje özelliklerini, ayarlarını ve kaynaklarını yönetmek için merkezi bir konum sağlayan Proje Tasarımcısı için genel bakış sağlar.|
 |[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|Metni, kodu ve biçimlendirmeyi değiştirmenize ve işlemenize, denetimleri, diğer nesneleri ve ad uzaylarını eklemenize ve yapılandırmanıza, harici bileşenlere ve kaynaklara başvurular eklemenize yardımcı olan Visual Studio araçlarını açıklar.|
@@ -46,7 +45,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE), ortak bir kullanıcı arabir
 |[Visual C# Kod Parçacıkları](../ide/visual-csharp-code-snippets.md)|Uygulamanıza otomatik olarak ortak kod yapıları eklemek için Visual C#'de Kod Parçacıkları'nın kullanımı için genel bakış sağlar|
 |[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|Bul ve Değiştir penceresi, Yer İşaretleri, Görev Listesi ve Hata Listesi'nin kod satırlarını bulmak için kullanılmasına ilişkin yordamlara bağlantılar sağlar.|
 |[Kod Yapısını Görüntüleme](../ide/viewing-the-structure-of-code.md)|Sınıfların, sınıf üyelerinin ve kaynakların hiyerarşilerine nasıl göz atılacağını açıklar.|
-|[Nasıl yapılır: C# Projesine Uygulama Yapılandırma Dosyası Ekleme](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Bir yapılandırma dosyasını (app.config) C# projesine nasıl ekleyeceğinizi açıklar.|
+|[Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Bir yapılandırma dosyasını (app.config) C# projesine nasıl ekleyeceğinizi açıklar.|
 |[Kaynak olarak Meta Veriler](../csharp-ide/metadata-as-source.md)|IDE'nin meta verileri nasıl kaynak kod olarak görüntülemenizi sağladığını açıklar.|
 |[Yeniden Düzenleme (C#)](../csharp-ide/refactoring-csharp.md)|Uygulamanızın davranışını değiştirmeden kodunuzu değiştirebilmenize yardımcı olan yeniden düzenleme işlemlerini listeler.|
 |[Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)|Visual Studio çözümünüz için hata ayıklamanın, yayınlamanın ve özel yapıların nasıl yapılandırılacağını açıklar.|

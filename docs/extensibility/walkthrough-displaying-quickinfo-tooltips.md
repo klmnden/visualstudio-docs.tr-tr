@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965810"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>İzlenecek yol: Görüntü Hızlıbilgi araç ipuçları
+# <a name="walkthrough-display-quickinfo-tooltips"></a>İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme
 Hızlıbilgi yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve açıklamaları bir kullanıcı işaretçiyi bir yöntem adı üzerinde taşır. Quickınfo'da açıklamaları sağlamak istediğiniz tanımlayıcıları tanımlayıp ardından, içeriği görüntülemek bir araç ipucu oluşturma dil tabanlı özellikleri gibi Hızlıbilgi uygulayabilirsiniz. Bir dil hizmeti bağlamında Hızlıbilgi tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu tür için Hızlıbilgi görüntülemek veya mevcut bir içerik türü (örneğin, "metin") için Hızlıbilgi görüntüleyebilirsiniz. Bu izlenecek yol, Hızlıbilgi görüntülemek için "metin" içerik türü gösterilmektedir.  
   
  Bu kılavuzda Hızlıbilgi örnek, bir kullanıcı, bir yöntem adı işaretçiyi hareket ettirdiğinde araç ipuçları görüntüler. Bu tasarım, dört bu arabirimlerin uygulanma gerektirir:  
@@ -178,4 +175,4 @@ Hızlıbilgi yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve
 4.  İşaretçiyi "Ekle" oluşumları birinin üzerine getirin. İmza ve açıklamasını `add` yöntemi görüntülenmesi gerekir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

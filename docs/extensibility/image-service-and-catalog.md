@@ -1,6 +1,5 @@
 ---
 title: Görüntü hizmeti ve kataloğu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899710"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü hizmeti ve kataloğu
 Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme içerir.  
@@ -106,7 +105,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
 |||  
 |-|-|  
 |**Alt öğe**|**Tanım**|  
-|{1&gt;İçeri Aktar&lt;1}|Belirtilen bildirim dosyası geçerli bildirimde kullanmak için simgelerin alır|  
+|İçeri Aktarma|Belirtilen bildirim dosyası geçerli bildirimde kullanmak için simgelerin alır|  
 |Guid|Simgenin bir GUID temsil eder ve GUID biçimlendirme eşleşmelidir|  
 |Kimlik|Simgenin bir kimliği temsil eder ve negatif olmayan bir tamsayı olmalıdır|  
 |Dize|Simgenin bir rastgele dize değeri temsil eder.|  
@@ -166,7 +165,7 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
 |-|-|  
 |**Öznitelik**|**Tanım**|  
 |URI|[Gerekli] Gelen görüntü burada yüklenebilir tanımlayan URI. Aşağıdakilerden biri olabilir:<br /><br /> -A [paketi URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) kullanarak uygulama: / / / yetkilisi<br />-Bir mutlak bileşen kaynak başvurusu<br />-Yerel bir kaynak içeren bir dosya yolu|  
-|Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> *Açık:* kaynağı açık bir arka plan üzerinde kullanılabilir.<br /><br /> *Koyu:* kaynağı koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> *Yüksek Karşıtlık:* kaynağı, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastLight:* kaynağı, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastDark:* kaynağı, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Arka plan özniteliği belirtilmezse, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Arka planda ise *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Arka plan atlanırsa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
+|Arka Plan|[İsteğe bağlı] Ne tür bir arka plan kaynak kullanılması amaçlanmıştır gösterir.<br /><br /> Aşağıdakilerden biri olabilir:<br /><br /> *Açık:* Kaynak, hafif bir arka plan üzerinde kullanılabilir.<br /><br /> *Koyu:* Kaynak koyu renkli bir arka plan üzerinde kullanılabilir.<br /><br /> *Yüksek Karşıtlık:* Kaynak, yüksek karşıtlık modunda herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastLight:* Kaynak, yüksek karşıtlık modunda açık bir arka plan üzerinde kullanılabilir.<br /><br /> *HighContrastDark:* Kaynak, yüksek karşıtlık modunda koyu renkli arka plan üzerinde kullanılabilir.<br /><br /> Arka plan özniteliği belirtilmezse, kaynağı herhangi bir arka plan üzerinde kullanılabilir.<br /><br /> Arka planda ise *ışık*, *koyu*, *HighContrastLight*, veya *HighContrastDark*, hiçbir zaman ters kaynağının renkler. Arka plan atlanırsa veya kümesine *Karşıtlık*, kaynağın renkleri ters çevirmeyi görüntünün tarafından denetlenir **AllowColorInversion** özniteliği.|  
 
 |||  
   

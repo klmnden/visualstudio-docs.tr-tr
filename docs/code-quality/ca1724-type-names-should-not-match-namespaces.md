@@ -1,8 +1,7 @@
 ---
-title: 'CA1724: Tür Adları Ad Alanlarıyla Eşleşmemelidir'
+title: 'CA1724: Tür adları ad alanlarıyla eşleşmemelidir'
 ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - TypeNamesShouldNotMatchNamespaces
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: c28bf4af55e1c12045357a76e3488ff4083fcee5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848947"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Tür adları, ad alanları ile eşleşmemelidir
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Tür adları ad alanlarıyla eşleşmemelidir
 
 |||
 |-|-|

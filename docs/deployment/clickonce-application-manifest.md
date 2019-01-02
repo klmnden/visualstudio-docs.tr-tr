@@ -1,8 +1,6 @@
 ---
 title: ClickOnce Uygulama bildirimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929234"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Uygulama bildirimi
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi kullanılarak dağıtılan bir uygulamayı tanımlayan bir XML dosyası olduğunu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -34,9 +32,9 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bil
 | - | - | - |
 | [\<derleme > öğesi](../deployment/assembly-element-clickonce-application.md) | Gerekli. En üst düzey öğe. | `manifestVersion` |
 | [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-application.md) | Gerekli. Birincil derlemenin tanımlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > öğesi](../deployment/trustinfo-element-clickonce-application.md) | Uygulama güvenlik gereksinimlerini tanımlar. | Yok. |
+| [\<trustInfo > öğesi](../deployment/trustinfo-element-clickonce-application.md) | Uygulama güvenlik gereksinimlerini tanımlar. | Hiçbiri |
 | [\<entryPoint > öğesi](../deployment/entrypoint-element-clickonce-application.md) | Gerekli. Uygulama kodu giriş noktasını tanımlar. | `name` |
-| [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md) | Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar. | Yok. |
+| [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md) | Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar. | Hiçbiri |
 | [\<Dosya > öğesi](../deployment/file-element-clickonce-application.md) | İsteğe bağlı. Uygulama tarafından kullanılan her nonassembly dosyayı tanımlar. Dosya ile ilgili Bileşen Nesne Modeli (COM) yalıtım veriler içerebilir. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [\<fileAssociation > öğesi](../deployment/fileassociation-element-clickonce-application.md) | İsteğe bağlı. Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
@@ -46,7 +44,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bil
 ## <a name="file-location"></a>Dosya konumu  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi dağıtımı tek bir sürümüne özeldir. Bu nedenle, bunlar ayrı olarak dağıtım bildirimlerinden depolanması gerekir. Genel kural bunları ilişkili sürümü adlı bir alt dizinde yerleştirmektir.  
 
- Uygulama bildirimini her zaman dağıtımdan önce oturum açmanız gerekir. Bir uygulama bildirimi el ile değiştirirseniz, kullanmalısınız *mage.exe* uygulama bildirimini yeniden imzalamanız için dağıtım bildirimini güncelleştirin ve sonra dağıtım bildirimi yeniden imzalayın. Daha fazla bilgi için [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Uygulama bildirimini her zaman dağıtımdan önce oturum açmanız gerekir. Bir uygulama bildirimi el ile değiştirirseniz, kullanmalısınız *mage.exe* uygulama bildirimini yeniden imzalamanız için dağıtım bildirimini güncelleştirin ve sonra dağıtım bildirimi yeniden imzalayın. Daha fazla bilgi için [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
 ## <a name="file-name-syntax"></a>Dosya adı sözdizimi  
  Adı bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirim dosyası olmalıdır tam adını ve uzantısını uygulamanın tanımlandığı gibi `assemblyIdentity` uzantısı tarafından izlenen öğesini *.manifest*. Örneğin, başvuran bir uygulama bildirimi *Example.exe* uygulama aşağıdaki dosya adı sözdizimi kullanmanız.  

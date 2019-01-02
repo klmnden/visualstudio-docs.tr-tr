@@ -1,8 +1,6 @@
 ---
 title: Çekirdekler görünümü Yakınlaştırma aracı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -14,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c29bacc07268223b9d4e5bf6cef4670c1a1f323
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5bfc05c208a072fbe1e17eeafdebb938b33aaaf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967300"
 ---
 # <a name="cores-view-zoom-tool"></a>Çekirdekler görünümü Yakınlaştırma aracı
-Yakınlaştırma Denetimi ilgi alanlarına göre belirli üzerinde odaklanabilmeniz zaman çizelgesinde yakınlaştırma olanak sağlayan bir kaydırıcı ' dir. Bu denetim geçerli görünümü Merkezi'nde yakınlaştırır, görünümü yakınlaştırma yapma önce şekilde ayarlayın.  
+Yakınlaştırma, belirli ilgi alanlarına odaklanabilmeniz için zaman çizelgesinde yakınlaştırma ve uzaklaştırma olanak sağlayan bir kaydırıcı denetimidir. Bu denetim üzerinde geçerli görünüm merkezinin yakınlaştırır, ekranı önce görünümü şekilde ayarlayın.  
   
-## <a name="other-ways-to-zoom"></a>Yakınlaştırma etmenin diğer yolları  
+## <a name="other-ways-to-zoom"></a>Yakınlaştırmak için diğer yolları  
   
--   Yakınlaştırma: sürükleme zaman çizelgesi görünümünde bir alan seçin. Fare düğmesini bıraktığınızda, bu Zaman Çizelgesi görünümüne seçili aralıkta yakınlaştırır.  
+-   Yakınlaştırmayı: Zaman Çizelgesi Görünümü'nde bir alan seçmek için sürükleyin. Fare düğmesini bıraktığınızda, zaman çizelgesi görünümü seçili aralıkta yakınlaştırır.  
   
--   Yakınlaştırma ve uzaklaştırma: zaman çizelgesi yazın ve ENTER tuşuna üzerine getirin **Ctrl** fare tekerleği taşırken.  
+-   Yakınlaştırma ve uzaklaştırma: Zaman çizelgesi üzerinde gelin ve sonra basın **Ctrl** fare tekerleğini taşırken.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çekirdekler Görünümü](../profiling/cores-view.md)

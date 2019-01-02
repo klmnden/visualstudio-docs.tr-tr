@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926456"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama
   Bu yönerge, Word eylemler bölmesindeki denetimlere veri bağlama gösterir. Bir SQL Server veritabanındaki tablolar arasında bir ana/ayrıntı ilişkisi denetimleri gösterir.  
@@ -61,7 +58,7 @@ ms.locfileid: "49873896"
   
 1.  Adıyla bir Word belgesi projesi oluşturma **My Word eylemler bölmesindeki**. Sihirbazda **yeni belge oluşturma**.  
   
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **My Word eylemler bölmesindeki** için proje **Çözüm Gezgini**.  
   
@@ -240,7 +237,5 @@ ms.locfileid: "49873896"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)   
- [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Nasıl yapılır: Word belgelerine veya Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

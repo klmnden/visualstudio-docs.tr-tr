@@ -1,9 +1,6 @@
 ---
 title: Eski dil hizmetinde özel belge özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 473b3970fe8a7d7e65b8e569420b2be6455a3d14
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1c323b71f67f795cb9a3c6ab7492cbcf77a9b8c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946717"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Eski dil hizmetinde özel belge özellikleri
 Belge özellikleri görüntülenebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **özellikleri** penceresi. Programlama dilleri, tek tek kaynak dosyalarıyla ilişkili özellikler genellikle gerekmez. Ancak, XML kodlama, şema ve stil sayfası etkileyen belge özelliklerini destekler.  

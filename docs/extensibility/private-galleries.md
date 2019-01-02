@@ -1,9 +1,6 @@
 ---
 title: Özel galeriler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91b3ecec969ab6a717598d8dfb77e674890216a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f1be2f2327ac48f46894f66d35f6a392608b6177
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897780"
 ---
 # <a name="private-galleries"></a>Özel galeriler
 Denetimleri, şablonlar ve bunlara yayınlayarak geliştirme araçları paylaşabilirsiniz bir *özel galeri* gösterildiği gibi kuruluşunuz için intranet üzerindeki:  
@@ -54,7 +51,7 @@ Denetimleri, şablonlar ve bunlara yayınlayarak geliştirme araçları paylaşa
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom|Sharepoint (REG_SZ)  
@@ -64,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Daha fazla bilgi için [nasıl yapılır: kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
+ Daha fazla bilgi için [nasıl yapılır: Kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
   
 ## <a name="install-extensions-from-a-private-gallery"></a>Özel bir Galeriden uzantıları yükleme  
  İçin arama yapın ve Visual Studio uzantıları özel bir galeri yüklersiniz **Uzantılar ve güncelleştirmeler**. Aşağıdaki adımları adlı özel bir galeri kullanın `My Gallery`.  

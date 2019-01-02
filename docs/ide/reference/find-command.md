@@ -2,7 +2,6 @@
 title: Bul Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.find
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb84e7305797522c7e34e387357eedfdcd61e88f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cf891b87de6e4e836aa4a710b3c5638db9e23919
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965700"
 ---
 # <a name="find-command"></a>Bul Komutu
-Bir alt kümesi üzerinde kullanılabilir seçenekleri kullanarak dosyaları arar **dosyalarda Bul** sekmesinde **bulma ve değiştirme** penceresi.
+Dosyaları bulunan seçenekler kümesini kullanarak arar **dosyalarda Bul** sekmesinde **Bul ve Değiştir** penceresi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,35 +32,35 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="arguments"></a>Arguments
- `findwhat` Gerekli. Eşleşen metin.
+ `findwhat` Gerekli. Eşleştirilecek metin.
 
 ## <a name="switches"></a>Anahtarlar
- /Case veya /c isteğe bağlı. Eşleşme ortaya yalnızca büyük ve küçük harfleri tam olarak belirtilen eşleşiyorsa `findwhat` bağımsız değişkeni.
+ /Case veya /c isteğe bağlı. Eşleşme gerçekleşmesi yalnızca büyük ve küçük harfleri tam olarak belirtilen platformlarla eşleşen `findwhat` bağımsız değişken.
 
- / doc veya /d isteğe bağlı. Yalnızca geçerli belgede arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ / doc veya /d isteğe bağlı. Yalnızca geçerli belgede arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
- /markall veya /m isteğe bağlı. Her satırda bir arama eşleşme geçerli belgedeki içeren bir grafik yerleştirir.
+ /markall veya /m isteğe bağlı. Geçerli belge içinde bir arama eşleşme içeren her satırda bir grafik yerleştirir.
 
- /Open veya /o isteğe bağlı. Bir belge değilmiş gibi tüm açık belgeleri arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ /Open veya /o isteğe bağlı. Bir belge değilmiş gibi tüm açık belgeleri arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
- / Options veya /t isteğe bağlı. Geçerli Bul seçeneği ayarlarını listesini görüntüler ve arama gerçekleştirmez.
+ / Options veya /t isteğe bağlı. Geçerli bulma seçeneği ayarları listesini görüntüler ve arama yapmaz.
 
- /proc veya /p isteğe bağlı. Yalnızca geçerli yordamı arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ /proc veya /p isteğe bağlı. Yalnızca geçerli yordamı arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
- / Reset veya /e isteğe bağlı. Bul seçeneklerini varsayılan ayarlarına geri döndürür ve bir arama gerçekleştirmez.
+ Reset veya /e isteğe bağlı. Bulma seçenekleri varsayılan ayarlarına geri döndürür ve bir arama yapmaz.
 
- /sel veya /s isteğe bağlı. Yalnızca geçerli seçimi arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ /sel veya /s isteğe bağlı. Yalnızca geçerli seçimi arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
- /UP veya /u isteğe bağlıdır. Dosya geçerli konumunu başına doğru dosyasında arar. Varsayılan olarak, dosya ve dosyanın sonuna aramaları geçerli konumda aramalar başlar.
+ /UP veya /u isteğe bağlı. Dosyanın başına doğru dosyasındaki geçerli konumda arar. Varsayılan olarak geçerli konumda dosyanın sonuna doğru arar ve dosya aramaları başlar.
 
- /Regex veya /r isteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişken olarak değişmez değer karakterleri yerine metin desenlerini göstermek gösterimler. Normal ifade karakter tam bir listesi için bkz: [normal ifadeler](../../ide/using-regular-expressions-in-visual-studio.md).
+ /Regex veya /r isteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişken olarak sabit karakterleriyle yerine metin desenleri temsil eden gösterimler. Normal ifade karakterleri tam bir listesi için bkz. [normal ifadeler](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /wild veya /l isteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişkeni olarak bir karakter ya da bir karakter dizisi temsil etmek için gösterimler.
+ /wild veya/l isteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişken olarak bir karakter ya da dizi karakteri temsil etmek için gösterimler.
 
- /Word veya /w isteğe bağlı. Yalnızca tam sözcükleri için arama yapar.
+ /Word veya /w isteğe bağlı. Yalnızca için tam sözcükleri arar.
 
 ## <a name="example"></a>Örnek
- Bu örnek kod şu anda seçili bölümünde "somestring" sözcüğü için büyük küçük harfe duyarlı arama gerçekleştirir.
+ Bu örnek, şu anda seçili kod bölümünde "somestring" sözcüğü için büyük küçük harfe duyarlı bir arama gerçekleştirir.
 
 ```cmd
 >Edit.Find somestring /sel /case
@@ -70,6 +69,6 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

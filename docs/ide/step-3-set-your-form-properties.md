@@ -1,9 +1,7 @@
 ---
-title: '3. adım: form özelliklerinizi ayarlama'
-ms.custom: ''
+title: '3. Adım: Form özelliklerinizi ayarlama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cde54cb95c9e9d9cb237e8241425c70766e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c891a8aa535b9e2bc000f3d115b580f3a220a44b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968517"
 ---
-# <a name="step-3-set-your-form-properties"></a>3. adım: form özelliklerinizi ayarlama
+# <a name="step-3-set-your-form-properties"></a>3. Adım: Form özelliklerinizi ayarlama
 Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun görünüşünü değiştirme.
 
- ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: Resim Görüntüleyici oluşturma C# ' - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
+ ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
 ## <a name="to-set-your-form-properties"></a>Form özelliklerinizi ayarlamak için
 
@@ -73,4 +71,4 @@ Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun 
 
 -   Sonraki öğretici adımına gitmek için bkz: [4. adım: TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Önceki öğretici adımına dönmek için bkz: [2. adım: programınızı çalıştırma](../ide/step-2-run-your-program.md).
+-   Önceki öğretici adımına dönmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).

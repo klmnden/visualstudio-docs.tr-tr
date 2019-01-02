@@ -1,8 +1,6 @@
 ---
-title: 'Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli | Microsoft Docs'
-ms.custom: ''
+title: 'Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.sourceserver.securityalert
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e99c56efc5338feeded20621c7467bbf8274bc9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3e421521bd40ff4369433b0a0c3c323579e36125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855622"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli
 Kaynak Sunucusu'nu kullanırken, bu uyarı iletişim kutusu görüntülenir. Bu, hata ayıklayıcı kaynak kodunu edinmek için yürütmek için gereken komut kaynak sunucu srcsvr.ini dosyasının içerdiği için güvenilir komutları listesinde olmadığını gösterir. Bu geçerli bir komutsa, srcsvr.ini dosyasına bunu ekleyebilirsiniz. Aksi takdirde, bunu çalıştırmamanız gerekir. Daha fazla bilgi için [belirtin sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="message-text"></a>İleti metni  

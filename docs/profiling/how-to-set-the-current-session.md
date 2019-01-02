@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: geçerli oturum ayarlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Geçerli oturumu ayarlama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
@@ -17,24 +15,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ba98d1d2a4a427632487e2b96663c5c40ad0a052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841813"
 ---
-# <a name="how-to-set-the-current-session"></a>Nasıl yapılır: geçerli oturum ayarlayın
+# <a name="how-to-set-the-current-session"></a>Nasıl Yapılır: Geçerli oturumu ayarlama
 
-İçinde birden çok performans oturumu açabilirsiniz **performans Gezgini**ve ardından geçerli oturum olarak ayarlanacak görünür performans oturumlarını birini seçebilirsiniz.
+İçinde birden çok performans oturumu açabilirsiniz **performans Gezgini**ve ardından geçerli oturum olarak ayarlanacak görünür performans oturumları birini seçebilirsiniz.
 
-Bir oturum olarak geçerli oturumu ayarladıktan sonra tıklatarak **başlatma** üzerinde **performans Gezgini** araç, geçerli oturum profil başlayacak.
+Bir oturum geçerli oturum olarak ayarladıktan sonra tıklayarak **başlatma** üzerinde **performans Gezgini** araç, profil oluşturma geçerli oturumunu başlayacak.
 
-## <a name="to-set-current-performance-session"></a>Geçerli Performans oturumunu ayarlamak için
+## <a name="to-set-current-performance-session"></a>Geçerli Performans oturumunu ayarlama
 
-- İçinde **performans Gezgini**, performans oturumu sağ tıklatın ve ardından **geçerli oturum olarak ayarlamak**.
+- İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **geçerli oturumu ayarlama**.
 
-     Oturum adı kalın olarak görünür.
+     Oturum adı kalın yazı tipinde görünür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

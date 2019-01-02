@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ac8f1c1d631e4d5f682fea5e1841e3914241d14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 78a737c953446773c8788875d1924ce21f64f599
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964711"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio'nun çevrimdışı yüklemesini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +68,7 @@ Bu sayfa, Internet'e bağlı olmadıkları sırada Visual Studio 2015 yüklemeyi
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dotfuscator ve Analytics Community Edition 5.19.1 (Community, Professional ve Enterprise sürümleri için Visual Studio'nun yüklü olarak **Windows 7 SP1** ve **Windows Server 2008 R2**) |                                                                                                                                       Çevrimdışı makinenize çalışıyorsa **Windows 7 SP1** veya **Windows Server 2008 R2**, Visual Studio 2015'i yüklemeden önce aşağıdaki adımları gerçekleştirmeniz gerekir:<br /><br /> 1.  CTL dosyalarını indirmek için bir dosya veya web sunucusu yapılandırın.<br /><br /> 2.    Bağlantısı kesilmiş bir ortam için Microsoft otomatik güncelleştirme URL'sini yeniden yönlendirme.<br /><br /> Daha fazla bilgi için [yapılandırma Güvenilen Kökleri ve izin verilmeyen sertifikaları](https://technet.microsoft.com/library/dn265983.aspx) Microsoft TechNet sitesindeki sayfası.                                                                                                                                       |
 |                                                                                  Android SDK kurulumu (API düzeyi)                                                                                   |                                                                        Android SDK'sı (API düzeyi) paketleri yüklemek için internet bağlantısı olması gerekir. Kısıtlanmış bir ağda varsa, Visual Studio'yu yüklediğinizde aşağıdaki URL'lere erişim izin vermeniz gerekir:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Proxy ayarları ile olası sorunları çözme hakkında daha fazla bilgi için bkz. [Visual Studio 2015 yükleme hataları (Android SDK Kurulumu) bir proxy'nin arkasında](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) blog gönderisi.                                                                         |
-|                             Visual Studio genişletilebilirlik öğe şablonları<br /><br /> Visual Studio için GitHub uzantısı<br /><br /> Visual Studio için PowerShell araçları                             | Visual Studio 2015'i yüklediğinizde, internet bağlantısı yoksa, özel bir çevrimdışı yükleme düzenini oluşturmak için çevrimdışı akış kullanabilirsiniz. **Not:** özel bu akışa Visual Studio 2015 için en son güncelleştirmeleri içerir. <br /><br /> Çevrimdışı akış özel oluşturmak için aşağıdaki komutu çalıştırın: / Layout *sürücü:* \VisualStudio2015 /overridefeeduri *xml akışı URL'si*<br /><br /> Örneğin, İngilizce dil için Visual Studio 2015 Enterprise'nın özel çevrimdışı akış çalıştırın:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Tercih ettiğiniz dilde özel bir çevrimdışı akış oluşturmak için kullanabileceğiniz URL'leri tam bir listesi için aşağıdaki tabloya bakın. |
+|                             Visual Studio genişletilebilirlik öğe şablonları<br /><br /> Visual Studio için GitHub uzantısı<br /><br /> Visual Studio için PowerShell araçları                             | Visual Studio 2015'i yüklediğinizde, internet bağlantısı yoksa, özel bir çevrimdışı yükleme düzenini oluşturmak için çevrimdışı akış kullanabilirsiniz. **Not:**  Bu özel akış Visual Studio 2015 için en son güncelleştirmeleri içerir. <br /><br /> Çevrimdışı akış özel oluşturmak için aşağıdaki komutu çalıştırın: / Layout *sürücü:* \VisualStudio2015 /overridefeeduri *xml akışı URL'si*<br /><br /> Örneğin, İngilizce dil için Visual Studio 2015 Enterprise'nın özel çevrimdışı akış çalıştırın:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Tercih ettiğiniz dilde özel bir çevrimdışı akış oluşturmak için kullanabileceğiniz URL'leri tam bir listesi için aşağıdaki tabloya bakın. |
 
  Yukarıdaki tabloda açıklandığı gibi bir dile özgü özel çevrimdışı akış, oluşturmak için aşağıdaki URL'ler kullanın.
 

@@ -1,9 +1,6 @@
 ---
 title: IEnumCodePaths2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCodePaths2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc2441d2257c5e3c3e6d205ea27b64e03938490b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e43491c329753e50e7c733afb55ecd4f415d11a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965239"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
-Bu arabirim kod yollarının listesini temsil eder.  
+Bu arabirim, kod yolları bir listesini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +29,7 @@ IEnumCodePaths2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) kod yolların listesini temsil etmek için bu arabirimi uygular.  
+ Hata ayıklama altyapısı (DE) kod yolları bir listesini göstermek için bu arabirimi uygular.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  Çağrı [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) bu arabirimi elde edilir.  
@@ -42,19 +39,19 @@ IEnumCodePaths2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Kod yolları bir numaralandırma dizisinde belirtilen sayısını alır.|  
-|[Atla](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Kod yolları bir numaralandırma dizisinde belirtilen sayıda atlar.|  
-|[Sıfırla](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
-|[kopya](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Kod yollarının sayısını bir numaralandırıcı alır.|  
+|[Next](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Belirtilen bir kod yolları bir numaralandırma sıralı sayısını alır.|  
+|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Belirtilen sayıda kod yolları bir numaralandırma sıralı atlar.|  
+|[Reset](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
+|[Clone](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Kod yolu sayısını bir numaralandırıcı alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kod yolu bir programda bir şube noktası veya işlev çağrısını temsil eder. Kod yolların listesini üzerinden kod yürütmeyi sürdü yolu temsil eder.  
+ Bir kod yolu bir programda bir dal noktası veya işlev çağrısını temsil eder. Kod yolları bir listesi üzerinden, kod yürütme alınan yolu temsil eder.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

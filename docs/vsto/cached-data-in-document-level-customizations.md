@@ -1,9 +1,6 @@
 ---
 title: Belge düzeyi özelleştirmelerdeki önbelleğe alınmış veriler
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964656"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerdeki önbelleğe alınmış veriler
   Belge düzeyi özelleştirmeleri işleminin birincil amacı, Office belgeleri görünümden veri ayırmaktır. Veri, sayı ve metin içeren belge içinde depolanan bilgileri ifade eder. Görünümü kullanıcı arabirimi hem de Microsoft Office Excel ve Microsoft Office Word nesne modeli anlamına gelir.  
@@ -66,5 +63,3 @@ ms.locfileid: "53248302"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)   
  [Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

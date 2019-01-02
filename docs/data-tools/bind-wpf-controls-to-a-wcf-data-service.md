@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925189"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 
@@ -64,11 +63,11 @@ Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlama
 
 Bu izlenecek yol, bir WCF veri hizmeti için bir proje oluşturarak başlayın:
 
-1. Visual Studio'yu başlatın.
+1. Visual Studio’yu çalıştırın.
 
 2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
 
-3. Genişletin **Visual C#**  veya **Visual Basic**ve ardından **Web**.
+3. Genişletin **Visual C#** veya **Visual Basic**ve ardından **Web**.
 
 4. Seçin **ASP.NET Web uygulaması** proje şablonu.
 
@@ -80,7 +79,7 @@ Bu izlenecek yol, bir WCF veri hizmeti için bir proje oluşturarak başlayın:
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Hizmet için bir varlık veri modeli oluşturma
 
-WCF veri hizmeti kullanarak bir uygulamaya veri kullanıma sunmak için bir hizmet için veri modeli tanımlamanız gerekir. WCF veri hizmeti iki tür veri modellerini destekler: Varlık veri modelleri ve ortak dil çalışma zamanı (CLR) uygulayan kullanılarak tanımlanmış özel veri modelleri <xref:System.Linq.IQueryable%601> arabirimi. Bu kılavuzda, veri modeli için bir varlık veri modeli oluşturun.
+WCF veri hizmeti kullanarak bir uygulamaya veri kullanıma sunmak için bir hizmet için veri modeli tanımlamanız gerekir. WCF veri hizmeti, iki tür veri modellerini destekler: Varlık veri modelleri ve ortak dil çalışma zamanı (CLR) uygulayan kullanılarak tanımlanmış özel veri modelleri <xref:System.Linq.IQueryable%601> arabirimi. Bu kılavuzda, veri modeli için bir varlık veri modeli oluşturun.
 
 1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
 
@@ -135,7 +134,7 @@ WCF veri hizmeti verileri görüntülemek için hizmetini temel alan bir veri ka
 
 1. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın, **Ekle**seçip **yeni proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda Genişlet **Visual C#**  veya **Visual Basic**ve ardından **Windows**.
+2. İçinde **yeni proje** iletişim kutusunda Genişlet **Visual C#** veya **Visual Basic**ve ardından **Windows**.
 
 3. Seçin **WPF uygulaması** proje şablonu.
 
@@ -231,7 +230,7 @@ Müşteri kayıtları sürükleyerek görüntüleyen denetimler oluşturma `Sale
 
 Satış verileri hizmetten yükleme için hizmet proxy nesnesi kullanın. Veri kaynağı için döndürülen verileri atamak <xref:System.Windows.Data.CollectionViewSource> WPF penceresinde.
 
-1. Oluşturulacak Tasarımcısı'nda `Window_Loaded` olay işleyicisi, yazan metnin çift: **MainWindow**.
+1. Oluşturulacak Tasarımcısı'nda `Window_Loaded` olay işleyicisi, yazan metnin çift tıklayın: **MainWindow**.
 
 2. Olay işleyicisi aşağıdaki kodla değiştirin. Değiştirdiğinizden emin olun *localhost* bu kodda adresi ile geliştirme bilgisayarınızda yerel ana bilgisayar adresi.
 
@@ -307,7 +306,7 @@ Bu kılavuzu tamamladıktan sonra aşağıdaki görevleri gerçekleştirebilirsi
 
 - Nasıl kullanacağınızı öğrenin **veri kaynakları** WPF bağlama için Visual Studio penceresinde başka türde veri kaynaklarını denetler. Daha fazla bilgi için [bağlama WPF denetimlerini bir veri kümesine](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md).
+- Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

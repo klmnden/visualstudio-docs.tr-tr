@@ -1,8 +1,6 @@
 ---
 title: Modüller görünümü - izleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,75 +10,75 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a2c5b1d7db173a932de186f67b0f0eb96a6350f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965992"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modüller görünümü - izleme verileri
-Modüller görünümü profil oluşturma verileri olan modülleri göre gruplandırılmış performans verilerini görüntüler. Modül işlevleri modülü düğüme listelenmiştir.  
+Modüller görünümü, profil oluşturma verileri olan modüller tarafından gruplandırılmış performans verilerini görüntüler. Modülündeki işlevlerin modülü düğümün altında listelenir.  
   
 ## <a name="general"></a>Genel  
- Genel sütunları görünümü satırı işlevinde tanımlayın.  
+ Genel sütunları bir görünüm satır işlevi tanımlar.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
 |**Ad**|İşlev veya modül adı.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**Çağrı sayısı**|Bu işlev veya modül yapılan çağrılar toplam sayısı.|  
-|**Kaynak dosya**|Bu işlev için tanım içeriyor kaynak dosya.|  
-|**Modül adı**|İşlevi içeren modülü adı.|  
-|**Modül yolu**|İşlevi içeren modülü yolu.|  
-|**İşlem kimliği**|İşlemi çalıştırmak profil oluşturma kimliği (PID).|  
-|**İşlem adı**|İçinde modül veya işlevi yürütülmekte olan işlemin adı.|  
-|**Zaman özel araştırma ek yükü**|Bu işlev veya modül nedeniyle araçları için ek yükü süresi.|  
-|**Zaman dahil araştırması ek yükü**|Bu işlev veya modül ve araçları nedeniyle alt işlevleri için ek yükü süresi.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**Çağrı sayısı**|Bu işlev veya modül yapılan çağrıları toplam sayısı.|  
+|**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
+|**Modül adı**|İşlevi içeren modül adı.|  
+|**Modül yolu**|İşlevi içeren modül yolu.|  
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
+|**İşlem adı**|Hangi modülün veya işlevin yürütülmekte olan işlemin adı.|  
+|**Zaman dışlamalı araştırma ek yükü**|Bu işlev veya modül nedeniyle izleme için ek yükü süre.|  
+|**Zaman kapsamlı araştırma ek yükü**|Zaman ek yükü bu işlev veya modül ve izleme nedeniyle alt işlevleri.|  
   
-## <a name="elapsed-inclusive-values"></a>Geçen dahil değerleri  
- Çağrı yığınındaki bir işlevi olan süresi geçen dahil değerleri gösterir. Zaman harcanan zamanın alt işlevleri ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarını içerir.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Geçen dahil süre**|-Bir işlev için işlevinde harcanan süre. Bu alt işlevlerinde ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içerir.<br />-Bir modül için en az bir işlev modülü çağrı yığınında ne zaman.|  
-|**Geçen dahil süre %**|Çalıştıran profil oluşturma toplam geçen dahil toplam geçen dahil zaman bu modülü veya işlevi için harcanan sürenin yüzdesi.|  
-|**Ortalama dahil geçen zaman**|-Bir işlev için ortalama bu işlev çağrısının dahil zaman geçti.<br />-Bir modül için ortalama işlevleri modülünde yapılan tüm çağrıların dahil süre geçti.|  
-|**Max geçen dahil süre**|-Bir işlev için en fazla bu işlev çağrısının dahil zaman geçti.<br />-Bir modül için en fazla modül işlevlerde yapılan tüm çağrıların dahil süre geçti.|  
-|**Min (bunlar dahil) geçen zaman**|-Bir işlev için en düşük bu modülü veya işlev çağrısının dahil zaman geçti.<br />-Bir modül için en düşük işlevleri modülünde yapılan tüm çağrıların dahil süre geçti.|  
-  
-## <a name="elapsed-exclusive-values"></a>Geçen özel değerler  
- Bir işlev, doğrudan çağrı yığını üstünde yürütme süresi geçen özel değerleri gösterir. İçerik Geçişi ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın zaman içerir ancak harcanan zamanın alt işlevlerde içermez.  
+## <a name="elapsed-inclusive-values"></a>Geçen kapsamlı değerleri  
+ Geçen kapsamlı değerleri, çağrı yığınındaki bir işlevi olduğu zamanı gösterir. Saati, harcanan süre alt işlevleri ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları içerir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Geçen özel süre**|-Bir işlev için modüle ya da işlevi harcanan süre. Bu bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları içerir ancak alt işlevlerde geçen zamanı dışlar.<br />-İçin modül, modül işlevlerde özel sürelerinin toplamını geçti.|  
-|**Özel geçen süre %**|Çalıştıran profil oluşturma toplam geçen özel toplam geçen özel zaman bu modülü veya işlevi için harcanan sürenin yüzdesi.|  
-|**Ortalama özel geçen zaman**|-Bir işlev için ortalama bu işlev çağrısının özel zaman geçti.<br />-Bir modül için ortalama işlevleri modülünde yapılan tüm çağrıların özel zaman geçti.|  
-|**Max geçen özel süre**|-Bir işlev için en fazla bu işlev çağrısının özel zaman geçti.<br />-Bir modül için en fazla modül işlevlerde yapılan tüm çağrıların özel zaman geçti.|  
-|**Min özel geçen zaman**|-Bir işlev için en düşük bu modülü veya işlev çağrısının özel zaman geçti.<br />-Bir modül için en düşük işlevleri modülünde yapılan tüm çağrıların özel zaman geçti.|  
+|**Geçen kapsamlı süre**|-Bir işlev için işlevde harcanan süre. Alt işlevleri ve işletim sistemi, bağlam anahtarları ve giriş/çıkış işlemleri gibi çağrılarında harcanan süreyi içerir.<br />-Bir modül için modülünde en az bir işlev çağrı yığını üzerinde olduğu zaman.|  
+|**Geçen kapsamlı süre yüzdesi**|Toplam geçen kapsamlı süre Bu modülün veya işlevin içinde profil oluşturma, toplam geçen kapsamlı süre yüzdesi harcandığını.|  
+|**Geçen ortalama kapsamlı süre**|-Bir işlev için ortalama kapsamlı süre bu işlev çağrısına geçti.<br />-Bir modül için ortalama kapsamlı süre modülündeki işlevleri yapılan tüm çağrıların geçti.|  
+|**Geçen maksimum kapsamlı süre**|-Bir işlev için maksimum kapsamlı süre bu işlev çağrısına geçti.<br />-Bir modül için en fazla modülündeki işlevleri yapılan tüm çağrıların kapsamlı süre geçti.|  
+|**Geçen minimum kapsamlı süre**|-Bir işlev için en az Bu modülün veya işlevin çağrısına kapsamlı süre geçti.<br />-Bir modül için minimum kapsamlı süre modülündeki işlevleri yapılan tüm çağrıların geçti.|  
   
-## <a name="application-inclusive-values"></a>Uygulama (bunlar dahil) değerleri  
- Uygulama dahil değerler çağrı yığınındaki bir işlevi olan süreyi belirtir. Süresi bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içermez. Ancak, zaman harcanan zamanın alt işlevlerde içermez.  
+## <a name="elapsed-exclusive-values"></a>Geçen dışlamalı değerleri  
+ Geçen dışlamalı değerleri bir işlev doğrudan çağrı yığınının en üstünde çağırılma yürütüldüğü zaman gösterir. Bağlam geçişleri ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan zaman zaman içerir, ancak alt işlevlerde harcanan süreyi içermez.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Uygulama dahil süresi**|-Bir işlev için işlev çağrılarında harcanan süre. Bu alt işlevlerde geçen süre, ancak İçerik Geçişi ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları dışlar saati içerir.<br />-Bir modül için en az bir işlev modülü çağrı yığınında ne zaman. Bu işletim sistemi çağrılarında harcanan zamanın dışlar.|  
-|**Uygulama dahil süresi %**|Bu modül ya da işlevin uygulama dahil süresi içinde harcandığını profil Çalıştır toplam geçen dahil süre yüzdesi.|  
-|**Ortalama uygulama dahil süresi**|-Bir işlev için bu işlevi çağrısı, ortalama uygulama dahil süresi.<br />-Bir modül için işlevleri modülünde yapılan tüm çağrıların ortalama uygulama dahil süresi.|  
-|**En fazla uygulama dahil süresi**|-Bir işlev için bu işlevi çağrısı, en fazla uygulama dahil süresi.<br />-Bir modül için işlevleri modülünde yapılan tüm çağrıların en fazla uygulama dahil süresi.|  
-|**Min uygulama dahil süresi**|-Bir işlev için bu modülü veya işlev çağrısının minimum uygulama dahil süresi.<br />-Bir modül için işlevleri modülünde yapılan tüm çağrıların en az uygulama dahil süresi.|  
+|**Geçen dışlamalı süre**|-Bir işlev için modülün veya işlevin harcanan süre. Bu bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları içerir, ancak alt işlevlerde harcanan zamanı dışlar.<br />-Bir modül için modülündeki işlevlerin özel süreleri toplamı geçti.|  
+|**Geçen dışlamalı süre yüzdesi**|Toplam geçen dışlamalı süre Bu modülün veya işlevin içinde profil oluşturma, toplam geçen dışlamalı süre yüzdesi harcandığını.|  
+|**Geçen ortalama dışlamalı süre**|-Bir işlev için ortalama dışlamalı süre bu işlev çağrısına geçti.<br />-Bir modül için ortalama dışlamalı süre modülündeki işlevleri yapılan tüm çağrıların geçti.|  
+|**Geçen maksimum dışlamalı süre**|-Bir işlev için maksimum dışlamalı süre bu işlev çağrısına geçti.<br />-Bir modül için maksimum dışlamalı süre modülündeki işlevleri yapılan tüm çağrıların geçti.|  
+|**Geçen minimum dışlamalı süre**|-Bir işlev için minimum dışlamalı süre Bu modülün veya işlevin çağrısına geçti.<br />-Bir modül için minimum dışlamalı süre modülündeki işlevleri yapılan tüm çağrıların geçti.|  
+  
+## <a name="application-inclusive-values"></a>Uygulama kapsamlı değerlerini  
+ Uygulama kapsamlı değerleri, çağrı yığınındaki bir işlevi olduğu zamanı gösterir. Zaman bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan süreyi içermez. Ancak, zaman alt işlevlerde harcanan süreyi içermez.  
+  
+|Sütun|Açıklama|  
+|------------|-----------------|  
+|**Kapsamlı uygulama süresi**|-Bir işlev için işlev çağrılarında harcanan süre. Bu alt işlevlerde geçen ancak bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları dışlar süreyi içerir.<br />-Bir modül için modülünde en az bir işlev çağrı yığını üzerinde olduğu zaman. Bu, işletim sistemi çağrılarında harcanan süre dahil değildir.|  
+|**Kapsamlı uygulama süresi yüzdesi**|Kapsamlı uygulama süresi Bu modülün veya işlevin içinde harcandığını profil oluşturma çalışması toplam geçen kapsamlı süre yüzdesi.|  
+|**Ortalama kapsamlı uygulama süresi**|-Bir işlev için bu işlev için bir çağrı, ortalama uygulama kapsamlı süre.<br />-Bir modül için modülündeki işlevleri yapılan tüm çağrıların ortalama uygulama kapsamlı süre.|  
+|**Maksimum kapsamlı uygulama süresi**|-Bir işlev için bu işlevi çağrısı, en fazla uygulama kapsamlı süre.<br />-Bir modül için modülündeki işlevleri yapılan tüm çağrıların en fazla uygulama kapsamlı süre.|  
+|**Minimum kapsamlı uygulama süresi**|-Bir işlev için yapılan çağrının Bu modülün veya işlevin en düşük uygulama kapsamlı süre.<br />-Bir modül için modülündeki işlevleri yapılan tüm çağrıların en düşük uygulama kapsamlı süre.|  
   
 ## <a name="application-exclusive-values"></a>Uygulama özel değerler  
- Uygulama özel değerler modüle ya da işlevi harcanan süreyi belirtir. Bu alt işlevlerde geçen süre ve ayrıca bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları dışlar zamanı dışlar.  
+ Uygulama özel değerlerini modülün veya işlevin harcanan zamanı gösterir. Bu alt işlevlerde geçen süre ve aynı zamanda bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları hariç süre dahil değildir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Uygulama özel süresi**|Bu modül ya da işlevin yapılan tüm çağrıların toplam uygulama özel süresi.|  
-|**Uygulama özel süresi %**|Bu modül ya da işlevin uygulama özel süresi içinde harcandığını profil Çalıştır toplam geçen özel zaman yüzdesi.|  
-|**Ortalama uygulama özel süresi**|-Bir işlev için bu işlevi çağrısı, ortalama uygulama özel süresi.<br />-Bir modül için işlevleri modülünde yapılan tüm çağrıların ortalama uygulama özel süresi.|  
-|**En fazla uygulama özel süresi**|-Bir işlev için bu işlevi çağrısı, en fazla uygulama özel süresi.<br />-Bir modül için işlevleri modülünde yapılan tüm çağrıların en fazla uygulama özel süresi.|  
-|**Min uygulama özel süresi**|-Bir işlev için bu modülü veya işlev çağrısının minimum uygulama özel süresi.<br />-Bir modül için işlevleri modülünde yapılan tüm çağrıların en az uygulama özel süresi.|  
+|**Dışlamalı uygulama süresi**|Bu modülün veya işlevin yapılan tüm çağrıların toplam uygulama dışlamalı süre.|  
+|**Dışlamalı uygulama süresi yüzdesi**|Dışlamalı uygulama süresi Bu modülün veya işlevin içinde harcandığını profil oluşturma çalışması toplam geçen dışlamalı süre yüzdesi.|  
+|**Ortalama dışlamalı uygulama süresi**|-Bir işlev için bu işlev için bir çağrı, ortalama uygulama dışlamalı süre.<br />-Bir modül için modülündeki işlevleri yapılan tüm çağrıların ortalama uygulama dışlamalı süre.|  
+|**Maksimum dışlamalı uygulama süresi**|-Bir işlev için bu işlevi çağrısı, en fazla uygulama dışlamalı süre.<br />-Bir modül için modülündeki işlevleri yapılan tüm çağrıların en fazla uygulama dışlamalı süre.|  
+|**Minimum dışlamalı uygulama süresi**|-Bir işlev için yapılan çağrının Bu modülün veya işlevin en düşük uygulama dışlamalı süre.<br />-Bir modül için modülündeki işlevleri yapılan tüm çağrıların en düşük uygulama dışlamalı süre.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Modüller görünümü](../profiling/modules-view-sampling-data.md)   

@@ -8,15 +8,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34127eb64ffbe4f9285e5e5efb215409b6997141
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968462"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Yük testi projesi oluşturma
+# <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Bir yük testi projesi oluşturma
 
 10 dakikalık bu hızlı başlangıçta, oluşturma ve bir web performansı ve yük testi projesi Visual Studio'da çalıştırma öğreneceksiniz. Yük testleri, web performans veya bir sunucu aynı anda erişen birçok kullanıcının benzetimini yapmak için birim testleri yürütün.
 

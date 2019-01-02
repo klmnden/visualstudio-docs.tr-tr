@@ -1,9 +1,6 @@
 ---
 title: Hata ayıklama motoru özel oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852709"
 ---
 # <a name="create-a-custom-debug-engine"></a>Bir özel hata ayıklama altyapısı oluşturma
 Hata ayıklama altyapısı (DE), belirli çalışma zamanı mimarileri hata ayıklamasını sağlayan bir bileşendir. Genellikle çalışma zamanı ortam başına yalnızca bir DE uygulama yok.  
@@ -61,7 +58,7 @@ Hata ayıklama altyapısı (DE), belirli çalışma zamanı mimarileri hata ayı
  [Hata ayıklayıcı olayları çağırma](../../extensibility/debugger/calling-debugger-events.md)  
  Hata ayıklama oturumunda gerçekleşen olayların arama sırası belgeler.  
   
- [Nasıl yapılır: bir özel hata ayıklama altyapısında hata ayıklama](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Nasıl Yapılır: Özel hata ayıklama altyapısında hata ayıklama](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Özel bir DE hata ayıklama açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  

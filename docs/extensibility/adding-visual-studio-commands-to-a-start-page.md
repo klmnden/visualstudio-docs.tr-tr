@@ -1,9 +1,6 @@
 ---
 title: Bir başlangıç sayfasına Visual Studio komutları ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page commands
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ae9ebb5e9acb3fa1787f2af3b0fbb159c1485d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 499b6cb593dd29d9bd881203daab19fc319ff1a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902460"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Visual Studio komutları için bir başlangıç sayfası Ekle
 Özel başlangıç sayfası oluşturduğunuzda, Visual Studio komutları ekleyebilirsiniz. Bu belge, Visual Studio komutları bir başlangıç sayfası XAML nesnelerde bağlamak için farklı yolları açıklanmaktadır.  
@@ -108,7 +105,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- Bir örnek için bkz. [izlenecek yol: bir başlangıç sayfasında kullanıcı ayarları kaydediliyor](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
+ Bir örnek için bkz [izlenecek yol: Kullanıcı ayarları bir başlangıç sayfasına kaydetme](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Başlangıç sayfasına kullanıcı denetimi ekleme](../extensibility/adding-user-control-to-the-start-page.md)

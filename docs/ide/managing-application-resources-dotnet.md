@@ -2,7 +2,6 @@
 title: Uygulama kaynaklarını yönetme (.NET)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966816"
 ---
 # <a name="manage-application-resources-net"></a>Uygulama kaynaklarını yönetme (.NET)
 
@@ -50,7 +49,7 @@ Seçin **kaynakları** sekmesi. Ekleyebileceğiniz bir *.resx* projenizi değil 
 Kaynaklar, farklı .NET projeleri diğer proje türleri içinde yönetilir. Kaynaklar hakkında daha fazla bilgi için:
 
 - Evrensel Windows Platformu (UWP) uygulamaları görmek [uygulama kaynaklarını ve kaynak yönetim sistemi](/windows/uwp/app-resources/)
-- C++ projeleri için bkz: [kaynak dosyalarıyla çalışmak](/cpp/windows/working-with-resource-files) ve [nasıl yapılır: kaynak oluşturma](/cpp/windows/how-to-create-a-resource)
+- C++ projeleri için bkz: [kaynak dosyalarıyla çalışmak](/cpp/windows/working-with-resource-files) ve [nasıl yapılır: Kaynak Oluştur](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

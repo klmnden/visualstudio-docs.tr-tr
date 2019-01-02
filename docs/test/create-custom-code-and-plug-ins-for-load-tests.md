@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aeb7a0cd638accca463d90f043d2be4581128b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932924"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Yük testleri için özel kod ve eklentiler oluşturma
 
@@ -30,10 +29,10 @@ ms.locfileid: "53062751"
 
 |Görevler|İlişkili konular|
 |-|-----------------------|
-|**Özel bir yük testi eklentisi oluşturma**: yük testi API, özel bir Yük testiniz için daha fazla işlevsellik eklemek için eklenti oluşturmak için kullanabilirsiniz.|-   [Nasıl yapılır: yük testi API'si kullanma](../test/how-to-use-the-load-test-api.md)<br />-   [Nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md)|
-|**Özel bir Web başarım testi eklentisi oluşturma:** özel bir web performans testi isteği düzeyinde de dahil olmak üzere, daha fazla test işlevselliği eklemek için eklenti oluşturmak için web performans testi API'ı kullanabilirsiniz. Ayrıca, bir web hizmetini test oluşturabilirsiniz.<br /><br /> Ayrıca, bir web performans testi kaydedildikten sonra ancak Web Performans Testi Sonuç Görüntüleyicisi'nde göründüğü önce değiştirebileceğiniz bir web kaydedici eklentisi oluşturabilirsiniz.|-   [Nasıl yapılır: web başarım testi API'si kullanma](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Nasıl yapılır: web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Nasıl yapılır: istek düzeyi eklentisi oluşturma](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Nasıl yapılır: web hizmeti testi oluşturma](../test/how-to-create-a-web-service-test.md)<br />-   [Nasıl yapılır: kaydedici eklentisi oluşturma](../test/how-to-create-a-recorder-plug-in.md)|
-|**Web Performans Test Sonuçları Görüntüleyicisi için kullanıcı Arabirimi özellikleri ekleyin:** Visual Studio eklentisini kullanarak Web Performans Test Sonuçları Görüntüleyicisi için daha fazla kullanıcı Arabirimi özelliklerini ekleyebilirsiniz.|-   [Nasıl yapılır: Visual Studio eklentisi Web performans test sonuçları oluşturma Görüntüleyicisi](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Özel HTTP Gövde Düzenleyicisi oluşturma:** bir web hizmetinden http XML yanıtlarını ikili veya dizesini düzenlemek için özel bir düzenleyici oluşturabilirsiniz.|-   [Nasıl yapılır: bir özel HTTP Gövde Düzenleyicisi için web performans testi Düzenleyicisi oluşturma](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Özel bir yük testi eklentisi oluşturma**: Yük testi API, özel bir Yük testiniz için daha fazla işlevsellik eklemek için eklenti oluşturmak için kullanabilirsiniz.|-   [Nasıl Yapılır: Yük testi API'si kullanma](../test/how-to-use-the-load-test-api.md)<br />-   [Nasıl Yapılır: Bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md)|
+|**Özel bir Web performans testiniz için eklenti oluşturun:** Web performans testi API, özel bir web performans testi isteği düzeyinde de dahil olmak üzere, daha fazla test işlevselliği eklemek için eklenti oluşturmak için kullanabilirsiniz. Ayrıca, bir web hizmetini test oluşturabilirsiniz.<br /><br /> Ayrıca, bir web performans testi kaydedildikten sonra ancak Web Performans Testi Sonuç Görüntüleyicisi'nde göründüğü önce değiştirebileceğiniz bir web kaydedici eklentisi oluşturabilirsiniz.|-   [Nasıl Yapılır: Web performans testi API'si kullanma](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Nasıl Yapılır: Bir web performans testi eklentisi oluşturma](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Nasıl Yapılır: İstek düzeyi eklentisi oluşturma](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Nasıl Yapılır: Web hizmeti testi oluşturma](../test/how-to-create-a-web-service-test.md)<br />-   [Nasıl Yapılır: Kaydedici eklentisi oluşturma](../test/how-to-create-a-recorder-plug-in.md)|
+|**Web Performans Test Sonuçları Görüntüleyicisi için kullanıcı Arabirimi özellikleri ekleyin:** Visual Studio eklentisini kullanarak Web Performans Test Sonuçları Görüntüleyicisi için daha fazla kullanıcı Arabirimi özelliklerini ekleyebilirsiniz.|-   [Nasıl Yapılır: Visual Studio eklentisi web performans test sonuçları Görüntüleyicisi için oluşturma](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Özel HTTP Gövde Düzenleyicisi oluşturma:** Bir web hizmetinden http XML yanıtlarını ikili veya dizesini düzenlemek için özel bir düzenleyici oluşturabilirsiniz.|-   [Nasıl Yapılır: Özel HTTP Gövde Düzenleyicisi için web performans testi Düzenleyicisi oluşturma](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Başvuru
 

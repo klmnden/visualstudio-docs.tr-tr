@@ -1,9 +1,6 @@
 ---
 title: Dil sunucusu Protokolü uzantısı ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966566"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -313,12 +310,19 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
       }
    }
    ```
+
 4. .Pkgdef dosyası projeye ekleyin (yeni metin dosyası ekleyin ve .pkgdef için dosya uzantısı değiştirme). Pkgdef bu dosya, bu bilgileri içermelidir:
 
    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
    ```
+
+    Örnek:
+    ```xml
+    [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
+    @="$PackageFolder$\MockLanguageExtensionSettings.json"
+    ```
 
 5. .pkgdef dosyasını sağ tıklatın ve seçin **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
 

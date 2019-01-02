@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898394"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: yük testi çalışma ayarı için bağlam parametreleri ekleme
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl Yapılır: Bir yük testi çalışma ayarı için bağlam parametreleri ekleme
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için.
 
@@ -38,9 +37,9 @@ Websunucusu1 bağlam parametresi değeri atamanız durumunda `http://CorporateSt
 
 Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bir bağlam parametresi için farklı değerler atama tarafından yük testi farklı ortamları kullanarak çalıştırabilirsiniz:
 
-- Kurumsal hazırlama Web sunucusuna çalışma ayarına: adlı bağlam parametresi `WebServer1=http://CorporateStagingWebServer`
+- Kurumsal hazırlama Web Server ayarını çalıştırın: Adlı bağlam parametresi `WebServer1=http://CorporateStagingWebServer`
 
-- Kurumsal üretim Web sunucusu çalıştırma ayarı: adlı bağlam parametresi `WebServer1=http://CorporateProductionWebServer`
+- Çalıştırma ayarı Kurumsal üretim Web sunucusu: Adlı bağlam parametresi `WebServer1=http://CorporateProductionWebServer`
 
   **Komut satırından çalıştırma ayarını değiştirme**
 

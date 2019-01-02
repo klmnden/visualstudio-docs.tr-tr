@@ -1,9 +1,6 @@
 ---
 title: Dosya Aç komutunu kullanarak dosyaları görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964669"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Dosya Aç komutunu kullanarak dosyaları görüntüleme
 Aşağıdaki adımlar, IDE nasıl işlediğini açıklar **açık dosya** kullanılabilir olan komutunu **dosya** menüde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Adımları ayrıca nasıl projeleri bu komutu kaynaklanan çağrıları yanıt açıklar.  
@@ -52,10 +49,10 @@ Aşağıdaki adımlar, IDE nasıl işlediğini açıklar **açık dosya** kullan
   
 4.  Proje dosyası açılır IDE belirler hemen sonra çağrılır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> proje yöntemi.  
   
-5.  Proje, projeye özgü Düzenleyici ya da bir standart düzenleyici kullanarak dosyayı açma seçeneğini ardından sahiptir. Daha fazla bilgi için [nasıl yapılır: projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md) ve [nasıl yapılır: standart düzenleyicileri açma](../../extensibility/how-to-open-standard-editors.md)sırasıyla.  
+5.  Proje, projeye özgü Düzenleyici ya da bir standart düzenleyici kullanarak dosyayı açma seçeneğini ardından sahiptir. Daha fazla bilgi için [nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md) ve [nasıl yapılır: Standart düzenleyicileri açma](../../extensibility/how-to-open-standard-editors.md)sırasıyla.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Birlikte Aç komutunu kullanarak dosyaları görüntüleme](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Açın ve proje öğeleri Kaydet](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Nasıl yapılır: projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md)   
- [Nasıl yapılır: standart düzenleyicileri açma](../../extensibility/how-to-open-standard-editors.md)
+ [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Nasıl yapılır: Açık standart düzenleyicileri](../../extensibility/how-to-open-standard-editors.md)

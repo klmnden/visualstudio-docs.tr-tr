@@ -1,8 +1,6 @@
 ---
 title: Idiastackwalkframe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f16d6f824b3b150406c23cce87e186fe9b120999
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa93204c7011fb13a079c22a0f18bede145631c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927213"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
-Yığın bağlamı çağırmaları arasında tutar [Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) yöntemi.  
+Yığın bağlamı çağrıları arasında tutar [Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -36,21 +34,21 @@ IDiaStackWalkFrame : IUnknown
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Bir kayıt değeri alır.|  
-|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Bir kayıt değerini ayarlar.|  
+|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Bir kayıt değeri ayarlar.|  
 |[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Bellek görüntüden okur.|  
-|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Belirtilen yığın çerçevesi yakın işlevi dönüş adresi arar.|  
-|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Bir dönüş adresi hiç veya neredeyse belirtilen adres için belirtilen yığın çerçevesi arar.|  
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Belirtilen yığın çerçevesinin yakın işlevi dönüş adresi arar.|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Belirtilen yığın çerçevesinin veya belirtilen adres'e yakın bir dönüş adresi arar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim program yürütülmesi sırasında okuma ve kayıtları yazma yanı sıra bellek erişmek ve dönüş adresleri bulmak için kullanılır.  
+ Bu arabirim, program yürütme sırasında okuma ve yazma kayıtlarını yanı sıra bellek erişim ve dönüş adresi bulmak için kullanılır.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- İstemci uygulaması bu arabirimi uygular ve arabirimine örneği geçirir [Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) yöntemi. Bu arabirim aynı örneği yeniden her çağrılması sırasında kasalar durumunu korumak için kullanılan `execute` yöntemi. `execute` Yöntemi de bu arabirim dönüş adresi belirlemek için kullanır.  
+ İstemci uygulaması bu arabirimi uygulayan ve bir arabirimin örneğini geçirir [Idiaframedata::Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) yöntemi. Bu arabirim'ın aynı örneğine tekrar tekrar her çağrılması sırasında kasalar durumunu korumak için kullanılır `execute` yöntemi. `execute` Yöntemi de bu arabirimi dönüş adresi belirlemek için kullanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

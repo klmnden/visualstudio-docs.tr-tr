@@ -1,8 +1,6 @@
 ---
 title: CRT kitaplığı ile bellek sızıntılarını bulma | Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931033"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>CRT kitaplığı ile bellek sızıntılarını bulma
 

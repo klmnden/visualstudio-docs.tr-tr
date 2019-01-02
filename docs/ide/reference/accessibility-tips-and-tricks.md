@@ -3,7 +3,6 @@ title: Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 description: Engelli kişiler de dahil olmak üzere ipuçları ve Visual Studio tümleşik geliştirme ortamı (IDE) kullanmak herkes için daha erişilebilir hale gelmesine yardımcı olabilecek öneriler hakkında daha fazla bilgi edinin.
 ms.date: 09/15/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929594"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 
@@ -53,7 +52,7 @@ Visual Studio IDE, birçok araç pencereleri gibi araç çubukları sahiptir. A�
 |Özellik|Açıklama|Tuş bileşimi|
 |-------------|-----------------| - |
 |IDE araç çubukları|Standart araç çubuğundaki ilk düğmeyi seçin.|**ALT**, **CTRL** + **SEKMESİ**|
-|Araç penceresi araç çubukları|Araç penceresi araç çubuklarını odağı taşıyın. <br> <br> **Not:** bu için çoğu araç pencereleri, ancak yalnızca odak araç penceresinde olduğunda çalışır. Ayrıca, ALT tuşunu önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin, ALT tuşunu seçerek önce kısa bir süre için SHIFT tuşunu basılı gerekir.|**SHIFT** + **ALT**|
+|Araç penceresi araç çubukları|Araç penceresi araç çubuklarını odağı taşıyın. <br> <br> **NOT:** Bu, çoğu araç pencerelerinin, ancak yalnızca odak araç penceresinde olduğunda çalışır. Ayrıca, ALT tuşunu önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin, ALT tuşunu seçerek önce kısa bir süre için SHIFT tuşunu basılı gerekir.|**SHIFT** + **ALT**|
 |Araç Çubukları|Sonraki araç ilk öğenin (araç odağa sahip olduğunda) gidin.|**CTRL** + **SEKMESİ**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Diğer yararlı bir kısayol tuş birleşimleri
@@ -62,10 +61,10 @@ Bazı diğer yararlı kısayol tuş birleşimleri arasında şunlar yer alır.
 
 |Özellik|Açıklama|Tuş bileşimi|
 |-------------|-----------------| - |
-|IDE|Yüksek Karşıtlık açıp geçin. <br> <br> **Not:** standart Windows kısayol|**Sol ALT + sol SHIFT + EKRANI Yazdır**|
-|İletişim kutusu|İletişim kutusunda bir onay kutusu seçeneğini kaldırın veya seçin. <br> <br> **Not:** standart Windows kısayol|**ARA ÇUBUĞU**|
-|Bağlam menüleri|(Sağ tıklama) bağlam menüsünü açın. <br> <br> **Not:** standart Windows kısayol|**SHIFT** + **F10**|
-|Menüler|Bir menü öğesi, Hızlandırıcı tuşlarıyla hızlıca erişin. Seçin **ALT** bir menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio'da proje Aç iletişim kutusunu görüntülemek için seçtiğiniz **ALT** + **F** + **O**  +  **P**.  <br><br> **Not:** standart Windows kısayol|**ALT** + **[harf]**|
+|IDE|Yüksek Karşıtlık açıp geçin. <br> <br> **NOT:** Standart Windows kısayol|**Sol ALT + sol SHIFT + EKRANI Yazdır**|
+|İletişim kutusu|İletişim kutusunda bir onay kutusu seçeneğini kaldırın veya seçin. <br> <br> **NOT:** Standart Windows kısayol|**ARA ÇUBUĞU**|
+|Bağlam menüleri|(Sağ tıklama) bağlam menüsünü açın. <br> <br> **NOT:** Standart Windows kısayol|**SHIFT** + **F10**|
+|Menüler|Bir menü öğesi, Hızlandırıcı tuşlarıyla hızlıca erişin. Seçin **ALT** bir menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio'da proje Aç iletişim kutusunu görüntülemek için seçtiğiniz **ALT** + **F** + **O**  +  **P**.  <br><br> **NOT:** Standart Windows kısayol|**ALT** + **[harf]**|
 |Araç penceresi|Araç kutusu sekmeleri arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DARALTILDI**|
 |Araç penceresi|Bir denetimi araç kutusundan bir form veya Tasarımcısı ekleyin.|**GİRİN**|
 |Klavye, ortam, Seçenekler iletişim kutusu|Girilen bir tuş bileşimi Sil **kısayol tuşlarına basın** seçeneği.|**GERİ AL**|
@@ -104,7 +103,7 @@ Ses için Visual Studio program olayları atamak için Windows Ses uygulaması k
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio'nun erişilebilirlik özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [Nasıl yapılır: menüleri ve Visual Studio araç çubuklarını özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Nasıl yapılır: Menüleri ve Visual Studio araç çubuklarını özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft Erişilebilirlik](https://www.microsoft.com/Accessibility)
 * [Erişilebilirlik (Mac için Visual Studio)](/visualstudio/mac/accessibility)

@@ -2,7 +2,6 @@
 title: İzle Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.watch
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ccc9c6af2a87502c2b651e91f7d935ffc7ae3474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964487"
 ---
 # <a name="watch-command"></a>İzle Komutu
-Oluşturur ve belirtilen bir örneğini açar bir **izleme** penceresi. Kullanabileceğiniz bir **izleme** değişkenleri, ifadeler ve kayıtları, bu değerleri düzenlemek ve sonuçları kaydetmek için değerleri hesaplamak için penceresi.
+Oluşturur ve belirtilen bir örneğini açar bir **Watch** penceresi. Kullanabileceğiniz bir **Watch** penceresi değişkenleri ve ifadeleri kayıtları, bu değerleri düzenleme ve sonuçları kaydetmek için değerleri hesaplamak için.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +33,7 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Arguments
  `index`
 
- Gerekli. Gözcü penceresi örneği sayısı.
+ Gerekli. İzleme penceresi örneği sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
  `index` Bir tamsayı olmalıdır. Geçerli değerler 1, 2, 3 veya 4 arasındadır.
@@ -47,9 +46,9 @@ Debug.Watch[index]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Otomatik değişkenler ve yerel Windows](../../debugger/autos-and-locals-windows.md)
-- [Bir izleme izleme ve QuickWatch Windows Visual Studio kullanarak değişkenleri ayarlayın](../../debugger/watch-and-quickwatch-windows.md)
+- [Otomatikler ve Yereller Pencereleri](../../debugger/autos-and-locals-windows.md)
+- [Değişkenleri izleme ve QuickWatch Windows Visual Studio kullanarak bir izleme ayarlayın](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

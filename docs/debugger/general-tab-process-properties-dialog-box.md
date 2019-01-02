@@ -1,8 +1,6 @@
 ---
 title: Genel sekmesi, işlem özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dcefc8be643c74349102261725c4879c0e161cd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 52822d3cc503c948c7c1fdc320d850d9e1f84ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927054"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Genel Sekmesi, İşlem Özellikleri İletişim Kutusu
-Kullanım **genel** sekmesi belirli bir işlemle ilgili daha fazla bilgi edinin. Görüntülenecek [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md), odağı taşımak bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Ağaçta herhangi bir işlem düğümü seçin ve ardından **özellikleri** gelen **Görünüm** menüsü.  
+Kullanım **genel** belirli bir işlemle ilgili daha fazla bilgi için sekmesinde. Görüntülenecek [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md), odağı Taşı bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Herhangi bir işlem düğümü ağacında seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **genel** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **genel** sekmesinde:  
   
 |Giriş|Açıklama|  
 |-----------|-----------------|  
-|**Modül adı**|Modül adı.|  
-|**İşlem kimliği**|Bu işlemin benzersiz Kimliğidir. İşlem Kimliği numaraları yeniden kullanılır, bu nedenle bunlar yalnızca işlem süresi için bir işlemi tanımlar. Bir program çalıştırıldığında işlem nesne türü oluşturulur. Bir işlemin tüm iş parçacıklarının aynı adres alanını paylaşır ve aynı verilere erişimi.|  
-|**Temel öncelik**|Bu işlem geçerli temel önceliği. Bir işlem içinde iş parçacığı oluşturma ve kendi temel önceliği işlemin temel önceliğine göre daha düşük.|  
-|**İş Parçacıkları**|Bu işlemde etkin olan iş parçacıklarının sayısı.|  
-|**CPU süresi**|Bu işlem ve parçacıklarını harcanan toplam CPU zaman. Kullanıcı süresi ve ayrıcalıklı zaman eşittir.|  
-|**Kullanıcı Zamanı**|Bu işlemin iş parçacıklarının boş olmayan iş parçacıklarında kullanıcı modunda kod çalıştırırken harcadığı toplu geçen süre. Pencere Yöneticisi ve grafik altyapısı gibi alt sistemleri gibi uygulamalar kullanıcı modunda çalışır.|  
-|**Ayrıcalıklı Zaman**|Geçen toplam süre, boş olmayan iş parçacıklarında ayrıcalıklı modda bu işlemin çalıştığı. Hizmet katmanı, Executive yordamları ve çekirdek ayrıcalıklı modda çalışır. Grafik bağdaştırıcıları ve yazıcılar dışında çoğu cihazların cihaz sürücüleri de ayrıcalıklı modda yürütün. Uygulamanız için Windows yapar bazı iş ayrıcalıklı zaman yanı sıra diğer alt sistem işlemlerinde görünebilir.|  
+|**Modül adı**|Modülün adı.|  
+|**İşlem kimliği**|Bu işlem benzersiz kimliği. Bunlar işlem ömrü boyunca yalnızca bir işlemi tanımlamak için işlem kimliği numaraları yeniden kullanılır. İşlem nesnesi türü, bir program çalıştırıldığında oluşturulur. Bir işlemdeki tüm iş parçacıkları, aynı adres alanı paylaşabilir ve aynı verilere erişebilir.|  
+|**Temel öncelik**|Bu işlemin geçerli temel öncelik. Bir işlemdeki iş parçacıkları, yükseltmek ve kendi temel öncelik işlemin temel öncelik göre daha düşük.|  
+|**İş Parçacıkları**|Bu işlem şu anda etkin iş parçacığı sayısı.|  
+|**CPU süresi**|Bu işlem ve kendi iş parçacığı üzerinde harcanan toplam CPU süresi. Kullanıcı saati artı ayrıcalıklı zaman eşit.|  
+|**Kullanıcı Zamanı**|Bu işlemin iş parçacıklarının boşta olmayan iş parçacıklarında kullanıcı modunda kod çalıştırırken harcadığı geçen toplam geçen süre. Alt pencere yöneticisi ve grafik altyapısı gibi gibi uygulamalar kullanıcı modunda yürütün.|  
+|**Ayrıcalıklı Zaman**|Toplam geçen süre, boş olmayan iş parçacıklarında ayrıcalıklı modda bu işlemin çalıştığı. Hizmet katmanını, başkanlık yordamlar ve çekirdek ayrıcalıklı modunda yürütün. Grafik bağdaştırıcıları ve yazıcılar dışında çoğu cihaz için cihaz sürücüleri ayrıca ayrıcalıklı modda yürütülür. Windows uygulamanız için yaptığı bazı iş ayrıcalıklı zaman yanı sıra diğer alt işlemlerin görünebilir.|  
 |**Geçen süre**|Bu işlemin çalıştığı toplam geçen süre.|

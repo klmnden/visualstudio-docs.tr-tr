@@ -1,8 +1,6 @@
 ---
-title: Görünür zaman aralığı tabanlı rapor | Microsoft Docs
-ms.custom: ''
+title: Rapor görünür zaman aralığı temel | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -14,22 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938335"
 ---
 # <a name="report-based-on-visible-time-range"></a>Görünür zaman aralığı tabanlı rapor
-Profil görünümü şu anda görünür zaman aralığı ve kanallar dayalı raporlar gösterilir. Farklı veri alt kümesi ayrıntılarını görmek için gösterge öğelerini tıklatın.  
+Profil görünümü şu anda görünür zaman aralığı ve kanalları göre raporları görüntüler. Farklı veri kümelerine ayrıntılarını görmek için gösterge öğelerini tıklayın.  
   
- Burada tablolarda veriler hakkında daha fazla bilgi bulabilirsiniz.  
+ Burada tablolardaki verileri hakkında daha fazla bilgi bulabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Gösterilecek iş parçacığı etkinliği yok](../profiling/no-thread-activity-to-show-threads-view.md)   
  [Yürütme Profil raporu](../profiling/execution-profile-report.md)   
- [Eşitleme zamanı](../profiling/synchronization-time.md)   
+ [Eşitleme saati](../profiling/synchronization-time.md)   
  [G/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md)   
  [Bekleme süresi](../profiling/sleep-time.md)   
  [Bellek yönetimi zamanı](../profiling/memory-management-time.md)   

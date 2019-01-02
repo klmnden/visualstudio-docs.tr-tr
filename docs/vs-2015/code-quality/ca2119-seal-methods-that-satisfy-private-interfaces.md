@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b3cf2fea42cb84bc0a6d58470767341a76c1655
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874754"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Özel arabirimleri karşılayan yöntemleri mühürleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,6 +74,3 @@ ms.locfileid: "49825406"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Arabirimleri](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [arabirimleri](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-

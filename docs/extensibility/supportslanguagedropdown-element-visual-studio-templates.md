@@ -1,6 +1,5 @@
 ---
 title: SupportsLanguageDropDown öğesi (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92043550d9318fc5de70d14bed12b110d3ef2e26
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: b907fc1dec31cee62ebebc2a1fb3676f77c407e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887730"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown Öğesi (Visual Studio Şablonları)
 Web öğesi şablonu için birden çok dil aynı olup olmadığını ve olup olmadığını belirtir **dil** seçeneği etkinleştirilir **Yeni Öğe Ekle** iletişim kutusu.  

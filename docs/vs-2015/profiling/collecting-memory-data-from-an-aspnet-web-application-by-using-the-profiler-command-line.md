@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 260676ee54a9410bb7bfc8d90bd3d044c403169d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: bbe52509eb298c33077c81a69e02a813c29b7ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959741"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak bir ASP.NET Web Uygulamasından Bellek Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Bu bölümde kullanarak bir ASP.NET Web uygulaması için bellek ayırma ve nesn
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: bellek verileri toplamak için bir ASP.NET Web uygulamasına Profiler ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Gereç statik olarak derlenmiş ikili dosyaları**|-   [Nasıl yapılır: statik olarak derlenmiş bir ASP.NET Uygulamasın izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Gereç dinamik olarak derlenmiş ikili dosyaları**|-   [Nasıl yapılır: dinamik olarak derlenmiş bir ASP.NET Uygulamasın izleme ve bellek verileri toplama](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profiler bellek verileri toplamak için bir ASP.NET Web uygulamasına ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Gereç statik olarak derlenmiş ikili dosyaları**|-   [Nasıl Yapılır: Aracı bir statik olarak derlenmiş bir ASP.NET uygulaması ve bellek verilerini toplamak](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Gereç dinamik olarak derlenmiş ikili dosyaları**|-   [Nasıl Yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET uygulaması ve bellek verilerini toplamak](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   
@@ -47,7 +47,7 @@ Bu bölümde kullanarak bir ASP.NET Web uygulaması için bellek ayırma ve nesn
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**Örnekleme yöntemiyle profili**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Kaynak çakışması ve iş parçacığı etkinliği profil**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>.NET Framework bellek verileri profil oluşturma  

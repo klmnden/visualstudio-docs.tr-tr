@@ -1,9 +1,6 @@
 ---
 title: FIELD_INFO_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FIELD_INFO_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ea2148290402f2a8e5c08474de125fc52bca47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e48ac549001ed8a6ef363540cf50affb0e7b605
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902512"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Hangi bilgilerin hakkında alınacağını belirtir bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesne.  
@@ -28,7 +25,7 @@ Hangi bilgilerin hakkında alınacağını belirtir bir [IDebugField](../../../e
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_FIELD_INFO_FIELDS {   
+enum enum_FIELD_INFO_FIELDS {   
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  
    FIF_TYPE      = 0x0004,  
@@ -73,7 +70,7 @@ public enum enum_FIELD_INFO_FIELDS {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

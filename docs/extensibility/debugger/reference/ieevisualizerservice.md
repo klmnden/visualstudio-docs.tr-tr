@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerService | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerService
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e2b08872a952ecf9d618825c48ae1d5907fa5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d629e5bc557779345ff514d1d90bf03b84e320be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928191"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
->  Visual Studio 2015'te ifade değerlendiricisi uygulama bu şekilde kullanım dışıdır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricileri](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Bu arabirim için işlevler sağlayan anahtar yöntemlerini uygular [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) ve [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) arabirimleri.  
+ İşlevsellik sağlayan anahtar yöntemleri bu arabirimi uygulayan [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) ve [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) arabirimleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,10 +32,10 @@ IEEVisualizerService : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Visual Studio bir ifade değerlendiricisi türü görselleştiriciler desteklemek için (EE) izin vermek için bu arabirimi uygular.  
+ Visual Studio, bir ifade değerlendiricisi tür görselleştiricileri desteklemek için (EE) izin vermek için bu arabirimi uygular.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- EE çağrıları [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) bu arabirim türü görselleştiriciler desteğini bir parçası olarak elde edilir.  
+ EE çağrıları [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) bu arabirimi desteğini bir parçası olarak için tür görselleştiricileri elde edilir.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
@@ -50,16 +47,16 @@ IEEVisualizerService : IUnknown
 |[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Belirtilen özellik veya alan için görüntülenecek değer dizeleri sayısını alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- IDE kullanan [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) tüm özel görüntüleyiciler olup olmadığını belirlemek için arabirimi veya özelliği için görselleştiriciler yazın. Görselleştirici hizmeti oluşturarak (ile [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), EE işlevsellik sağlayabilir `IDebugProperty3` ve [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (görüntüleme ve değiştirme destekleyen bir özelliğin değeri) arabirimleri ve böylece türü görselleştiriciler destekler.  
+ IDE kullanır [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) herhangi bir özel görüntüleyiciler olup olmadığını belirlemek için arabirimi veya özelliği için görselleştiriciler yazın. Görselleştirici hizmeti oluşturarak (ile [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), EE işlevsellik sağlayabilirsiniz `IDebugProperty3` ve [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (görüntüleme ve değiştirme destekleyen bir özelliğin değerini), arabirimleri ve böylece tür görselleştiricileri destekler.  
   
- Bir EE özel görüntüleyiciler varsa bu kendisini uygular, EE ekleyebilirsiniz `CLSID`tarafından döndürülen listesinin sonuna özel bu izleyicilere s [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Bu tür görselleştiriciler ve kendi özel görüntüleyiciler desteklemek bir EE sağlar. Yalnızca olduğundan emin olun [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) tüm özel görüntüleyiciler eklenmesi yansıtır.  
+ Bir EE özel görüntüleyiciler varsa, kendisini uygulayan, EE ekleyebilir `CLSID`s, bu özel görüntüleyiciler tarafından döndürülen listenin sonuna [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Bu tür görselleştiricileri hem kendi özel görüntüleyiciler desteklemek bir EE sağlar. Yalnızca olduğundan emin olun [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) herhangi bir özel görüntüleyiciler eklenmesini yansıtır.  
   
- Bkz: [türü Görselleştirici ve özel Görüntüleyicisi](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) görselleştiriciler görüntüleyiciler arasındaki farkı bir tartışma için.  
+ Bkz: [tür görselleştiricisi ve özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) görselleştiriciler ve görüntüleyiciler arasındaki fark hakkında ayrıntılı bilgi için.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: ee.h  
+ Üstbilgi: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,8 +1,6 @@
 ---
 title: Önyükleyici paketleri oluşturma
-ms.custom: ''
 ms.date: 05/02/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878396"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
 Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri yüklemek ve algılamak için yapılandırılabilen genel bir yükleyicidir (*.msi*) dosyaları ve yürütülebilir programlar. Yükleyici bir önyükleyici de denir. Bu bileşenin yüklenmesini yönetmek için meta verileri belirleyen XML bildirimleri kümesi programlanır.  Her yeniden dağıtılabilir bileşeni, ya da önkoşul, görünür **önkoşulları** iletişim kutusu için ClickOnce önyükleyici paketi olur. Bir önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyalarını içeren dosyaları grubudur. 
@@ -35,13 +33,13 @@ Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri y
 Önyükleyici önce Önkoşullar zaten yüklü olup olmadığını algılar. İlk Önkoşullar yüklü değilse, önyükleyici lisans sözleşmelerini gösterir. İkinci olarak, son kullanıcı lisans sözleşmelerini kabul ettikten sonra yükleme Önkoşullar için başlar. Aksi takdirde, tüm ön koşullar algılanırsa, önyükleyici yalnızca uygulama yükleyicisini başlatır.  
   
 ## <a name="create-custom-bootstrapper-packages"></a>Özel önyükleyici paketleri oluşturma  
-Visual Studio XML Düzenleyicisi'ni kullanarak, önyükleyici bildirimler oluşturabilirsiniz. Bir önyükleyici paketi oluşturma örneği için bkz [izlenecek yol: bir gizlilik istemiyle özel bir önyükleyici oluşturma](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+Visual Studio XML Düzenleyicisi'ni kullanarak, önyükleyici bildirimler oluşturabilirsiniz. Bir önyükleyici paketi oluşturma örneği için bkz [izlenecek yol: Bir gizlilik istemiyle özel bir önyükleyici oluşturma](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
 Bir önyükleyici paketi oluşturmak için ürün bildirimi oluşturmanız gerekir ve her biri için yerelleştirilmiş bir paket bildirimi de bir bileşen sürümü.
   
-* Ürün bildirimi *product.xml*, paket için dilden meta verileri içerir. Bu yeniden dağıtılabilir bileşenin tüm yerelleştirilmiş sürümleri için ortak meta veriler içerir.  Bu dosyayı oluşturmak için bkz: [nasıl yapılır: bir ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).
+* Ürün bildirimi *product.xml*, paket için dilden meta verileri içerir. Bu yeniden dağıtılabilir bileşenin tüm yerelleştirilmiş sürümleri için ortak meta veriler içerir.  Bu dosyayı oluşturmak için bkz: [nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).
   
-* Paket bildirimi *package.xml*, dile özgü meta veriler; içeren genellikle yerelleştirilmiş hata iletileri içerir. Bir bileşen, yerelleştirilmiş her bileşenin sürümü için en az bir paket bildiriminin olması gerekir. Bu dosyayı oluşturmak için bkz: [nasıl yapılır: bir paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).
+* Paket bildirimi *package.xml*, dile özgü meta veriler; içeren genellikle yerelleştirilmiş hata iletileri içerir. Bir bileşen, yerelleştirilmiş her bileşenin sürümü için en az bir paket bildiriminin olması gerekir. Bu dosyayı oluşturmak için bkz: [nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).
   
 Bu dosyalar oluşturulduktan sonra ürün bildirim dosyasını özel önyükleyici için adlandırılan bir klasöre yerleştirin. Paket bildirim dosyası yerel ayar adlı bir klasöre gider. Örneğin, paket bildirim dosyasının İngilizce olarak yeniden dağıtılması için ise, dosyayı en adlı klasöre koyun. Japonca için ja ve Almanca için de gibi her yerel ayar için bu işlemi yineleyin. Son özel önyükleyici paketi aşağıdaki klasör yapısına sahip olabilir.  
 
@@ -60,7 +58,7 @@ Bu dosyalar oluşturulduktan sonra ürün bildirim dosyasını özel önyükleyi
         package.xml
     ```
   
-Ardından, yeniden dağıtılabilen dosyaları önyükleyici klasör konumuna kopyalayın. Daha fazla bilgi için [nasıl yapılır: yerelleştirilmiş önyükleyici paketi oluşturma](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+Ardından, yeniden dağıtılabilen dosyaları önyükleyici klasör konumuna kopyalayın. Daha fazla bilgi için [nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma](../deployment/how-to-create-a-localized-bootstrapper-package.md).
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     
@@ -97,7 +95,7 @@ Yeniden dağıtılabilir dosyaların Kurulum projelerinde dağıtılmasını eng
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-Yeniden dağıtılabilir liste, aşağıdaki biçimi kullanarak adlandırmalısınız. bir XML dosyasıdır:  *\<şirket adı >.\< Bileşen adı >. RedistList.xml*. Bu nedenle, örneğin bileşen Acme tarafından yapılan DataWidgets olarak adlandırılmışsa, kullanın *Acme.DataWidgets.RedistList.xml*. Yeniden dağıtılabilir liste içeriklerinin bir örneği şuna benzeyebilir:  
+Yeniden dağıtılabilir liste, aşağıdaki biçimi kullanarak adlandırmalısınız. bir XML dosyasıdır: *\<Şirket adı >. \<Bileşen adı >. RedistList.xml*. Bu nedenle, örneğin bileşen Acme tarafından yapılan DataWidgets olarak adlandırılmışsa, kullanın *Acme.DataWidgets.RedistList.xml*. Yeniden dağıtılabilir liste içeriklerinin bir örneği şuna benzeyebilir:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8"?>  

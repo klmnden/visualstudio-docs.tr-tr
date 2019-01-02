@@ -19,39 +19,38 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: aaf566c211cd79657b67a5af72d53c718cd2507a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951465"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Bir veri kümesini doldururken kısıtlamaları kapatma
 
-Bir veri kümesi (örneğin, yabancı anahtar kısıtlamaları) kısıtlamalarını içeriyorsa, bunlar dataset karşı gerçekleştirilen işlemleri {ilgili hatalar yükseltebilirsiniz. Örneğin, alt kayıtları yüklemeden önce yükleme üst kayıtlar bir kısıtlamayı ihlal ediyor ve hataya neden ilgili. Bir alt kayıt yük hemen kısıtlaması ilgili üst kayıt için denetler ve hata başlatır.
+Bir veri kümesi (örneğin, yabancı anahtar kısıtlamaları) kısıtlamaları içeriyorsa, bunlar sıra veri kümesinde gerçekleştirilen işlemleri ilgili hataları yükseltebilirsiniz. Örneğin, alt kayıtları yüklemeden önce yükleme üst kayıtlar bir kısıtlamayı ihlal ve hataya neden ilgili. Alt kayıt yük hemen sonra kısıtlaması ilgili üst kaydını denetler ve bir hata oluşturur.
 
-Geçici kısıtlaması askıya izin vermek için bir mekanizma olsaydı, alt tablosuna bir kayıt yüklemeye çalıştığınız her zaman bir hata oluşturdu. Bir veri kümesindeki tüm kısıtlamalar askıya almak için başka bir yolu <xref:System.Data.DataRow.BeginEdit%2A>, ve <xref:System.Data.DataRow.EndEdit%2A> özellikleri.
+Geçici kısıtlaması askıya alma izin vermek için bir mekanizma bulunmadığından varsa, alt tabloya bir kayıt yüklemeye çalıştığınız her zaman bir hata oluşturulması. Bir veri kümesindeki tüm kısıtlamalar askıya almak için başka bir yöntem, <xref:System.Data.DataRow.BeginEdit%2A>, ve <xref:System.Data.DataRow.EndEdit%2A> özellikleri.
 
 > [!NOTE]
 > Doğrulama olayları (örneğin, <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging>) kısıtlamaları devre dışı bırakıldığında oluşturulmaz.
 
-## <a name="to-suspend-update-constraints-programmatically"></a>Güncelleştirme kısıtlamaları programlı olarak askıya almak için
+## <a name="to-suspend-update-constraints-programmatically"></a>Güncelleştirme kısıtlamaları programlı olarak askıya alma
 
 -   Aşağıdaki örnek, bir veri kümesinde denetleme kısıtlaması geçici olarak kapatmak gösterilmektedir:
 
      [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
      [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
 
-## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Veri kümesi Tasarımcısı'nı kullanarak güncelleştirme kısıtlamaları askıya almak için
+## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Veri kümesi Tasarımcısı'nı kullanarak güncelleştirme kısıtlamaları askıya alma
 
-1.  Bir veri kümesini açma **veri kümesi Tasarımcısı**. Daha fazla bilgi için bkz: [izlenecek yol: veri kümesi tasarımcısında bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [izlenecek yol: Veri kümesi Tasarımcısı'nda bir veri kümesi oluşturma](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  İçinde **özellikleri** penceresindeki ayarlayın <xref:System.Data.DataSet.EnforceConstraints%2A> özelliğine `false`.
+2.  İçinde **özellikleri** penceresinde <xref:System.Data.DataSet.EnforceConstraints%2A> özelliğini `false`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [TableAdapters kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md)

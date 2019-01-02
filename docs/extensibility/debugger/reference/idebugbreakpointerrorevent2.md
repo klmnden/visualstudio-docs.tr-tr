@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointErrorEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointErrorEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f7cd8bdb5e8a36539807970958efda8f152e5c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c64bd12bba1c3935575078a551d2edf06702e68d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900385"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
-Bu arabirim oturum hata ayıklama Yöneticisi'ni (SDM) bekleyen bir kesme noktası yüklenen bir program, bir uyarı veya hata nedeniyle bağlanamadı olduğunu bildirir.  
+Bu arabirim, oturum hata ayıklama Yöneticisi (SDM) bir bekleyen kesme noktasının yüklü bir programa, bir uyarı veya hata nedeniyle bağlanamadı olduğunu bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,27 +29,27 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- DE, kesme noktaları desteğini bir parçası olarak bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirimi uygulanan, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi).  
+ Bu arabirim, kesme noktaları desteğini bir parçası olarak DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi).  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Aygıtların oluşturur ve bekleyen bir kesme noktası ayıklanacak programın bağlanamaz zaman bu olay nesnesi gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanacak programın eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
+ KODU oluşturur ve bir bekleyen kesme noktasının ayıklanan programa bağımlı olamaz, bu olay nesneyi gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugBreakpointErrorEvent2`.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Alır [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) uyarı veya hata açıklar arabirimi.|  
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Alır [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) uyarı veya hata açıklayan arabirimi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kesme noktası bağlı olduğunda, bir olay için SDM gönderilir. Kesme noktası bağlı değilse, bir `IDebugBreakpointErrorEvent2` gönderilen; Aksi takdirde, bir [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) gönderilir.  
+ Bir kesme noktasının bağlı her bir olay için SDM gönderilir. Kesme noktasının bağlı, bir `IDebugBreakpointErrorEvent2` gönderilir; Aksi takdirde, bir [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) gönderilir.  
   
- Örneğin, ayrıştırma veya değerlendirmek bekleyen kesme noktası ile ilişkilendirilen koşulu başarısız olduğunda bir uyarı bekleyen kesme noktası şu anda bağlı gönderilir. Kesme noktası kodunu henüz yüklenmemiş değilse bu durum oluşabilir.  
+ Örneğin, parse veya değerlendirmek bekleyen kesme noktasıyla ilişkilendirilmiş olan koşul başarısız olduğunda bir uyarı bekleyen kesme noktası şu anda bağlı gönderilir. Bu durum kodu kesme noktası için henüz yüklememiş ortaya çıkabilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

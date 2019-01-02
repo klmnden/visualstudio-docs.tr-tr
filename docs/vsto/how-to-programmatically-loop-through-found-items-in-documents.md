@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla bulunan öğeler arasında döngü'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla bulunan öğeler arasında döngü'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f36ddfa182d1a0440ca733b19c34a27b245007fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a04cf49d1414ae1cedf2d157237e53883182eb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961848"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Nasıl yapılır: program aracılığıyla bulunan öğeler arasında döngü
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Nasıl Yapılır: Program aracılığıyla bulunan öğeler arasında döngü
   <xref:Microsoft.Office.Interop.Word.Find> Sınıfında bir <xref:Microsoft.Office.Interop.Word.Find.Found%2A> döndüren özellik **true** olduğunda Aranan öğe bulundu. Bulunan tüm örnekleri arasında döngü bir <xref:Microsoft.Office.Interop.Word.Range> kullanarak <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -74,10 +71,8 @@ ms.locfileid: "49848065"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: program aracılığıyla arama ve belgelerdeki rext değiştirin](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki rext değiştirin](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: "CA1063: IDisposable'ı doğru uygulayın"
 ms.date: 02/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e202c35ee6bd8353170e758629b1cc6e739b775d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 55ebe4c74bcaf2a8d5299018b7666328ff51c028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949056"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 

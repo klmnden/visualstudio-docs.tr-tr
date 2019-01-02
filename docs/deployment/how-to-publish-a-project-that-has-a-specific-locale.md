@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca121a8f8a68ca7a036b14c0f0c2bd6d1a84ff00
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 5c103ca9cec3c7c09a383f6c785b52f3f5c6f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928980"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl Yapılır: Bir özel yerel ayara sahip olan bir projeyi yayımlama
 Farklı yerel ayarlara sahip bileşenleri içeren bir uygulama için durumdur. Bu senaryoda, birkaç proje sahip bir çözüm oluşturun ve ardından her yerel ayar için ayrı projeler yayımlama. Bu yordam, bir makro 'tr' yerel ayarı kullanarak bir çözümde ilk projenizi yayımlamak için nasıl kullanılacağını gösterir. Bu yordamı 'tr' dışında bir yerel ayar ile deneyin istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel ayarına uyan makroda.  
   
 > [!NOTE]
@@ -167,4 +165,4 @@ Farklı yerel ayarlara sahip bileşenleri içeren bir uygulama için durumdur. B
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
  [Makrolar geliştirme ortamı](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
  [Makro Gezgini penceresi](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
- [Nasıl yapılır: Düzenle ve makroları program aracılığıyla oluşturma](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+ [Nasıl yapılır: Düzenleme ve makroları program aracılığıyla oluşturma](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

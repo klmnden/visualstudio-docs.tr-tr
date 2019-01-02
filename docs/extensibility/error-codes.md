@@ -1,9 +1,6 @@
 ---
 title: Hata kodları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931979"
 ---
 # <a name="error-codes"></a>Hata kodları
 Bir kaynak denetimi eklentisi API işlevi bir hata geri döndüğünde, aşağıdaki hata kodları biri olması beklenir. Tüm hataları uyarı veya bilgilendirme hatası kodları pozitif, negatif ve başarı 0'dır.  

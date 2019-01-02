@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::DestroyProgram | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::DestroyProgram
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1376f6b235bc9fa492f35557118a1857a36defa7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b026155fb6aa514621dd2da0f9a037ded066e808
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967673"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Belirtilen program beklenmedik şekilde sona erdi ve DE program için tüm başvuruları temizlemek bir hata ayıklama altyapısı (DE) bildirir ve olay gönderme bir program yok.  
@@ -28,13 +25,13 @@ Belirtilen program beklenmedik şekilde sona erdi ve DE program için tüm başv
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT DestroyProgram(   
+HRESULT DestroyProgram(   
    IDebugProgram2* pProgram  
 );  
 ```  
   
 ```cpp  
-int DestroyProgram(   
+int DestroyProgram(   
    IDebugProgram2 pProgram  
 );  
 ```  

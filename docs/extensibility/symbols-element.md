@@ -1,9 +1,6 @@
 ---
 title: Symbols öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeeaff19eb0eb479cdb7faa441c2cde8f60f52d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965901"
 ---
 # <a name="symbols-element"></a>Symbols Öğesi
 GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar. Yönetilmeyen kod için bu bilgiler genellikle tarafından belirtilen üst bilgi dosyaları geldiği [Extern öğesi](../extensibility/extern-element.md). Kod kullanan bu bilgileri tanımlamak için semboller öğenin alt öğeleri yönetilen.  
   
- Mevcut bir .cto dosyadan .vsct dosyası oluşturma simgeleri Symbols öğesi alt öğesi olarak oluşturulur. Daha fazla bilgi için [nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
+ Mevcut bir .cto dosyadan .vsct dosyası oluşturma simgeleri Symbols öğesi alt öğesi olarak oluşturulur. Daha fazla bilgi için [nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
   
  Symbols öğesi ile karıştırılmamalıdır [tanımlama öğesi](../extensibility/define-element.md), önişlemci tarafından kullanılmak üzere ad-değer çiftleri tanımlar.  
   
@@ -44,7 +41,7 @@ GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar.
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|Yok.||  
+|Hiçbiri||  
   
 ### <a name="child-elements"></a>Alt Öğeler  
   

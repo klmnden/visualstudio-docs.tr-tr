@@ -2,7 +2,6 @@
 title: Live Unit Testing yenilikler
 ms.date: 10-11-2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2f032d062a751186c0abdaa37e5fb451d981e4c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962762"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing’deki Yenilikler
 
@@ -37,9 +36,9 @@ Visual Studio 2017 sürüm 15.4 ile başlayarak, Live Unit Testing iyileştirmel
 
 - **MSTest framework sürüm 1 için destek**: Live Unit Testing zaten üç popüler birim test çerçeveleri ile çalışır: xUnit, NUnit ve MSTest. MSTest birim testi projelerini MS Test version 2 kullanıldığında daha önce Live Unit Testing yalnızca çalışıyordu. Visual Studio 2017 sürüm 15.4 ile başlayarak, şimdi de MSTest sürüm 1 de destekler. 
 
-- **Güvenilirlik ve performansa**: Live Unit Testing artık sağlar sistem projeleri tam yükleme tamamlamadıysanız daha iyi algılayabilir ve Live Unit Testing kilitlenen önler. Derleme performansı iyileştirmeleri ayrıca kaçının sistem projede hiçbir şey Dosya değişmiş olduğunu bilir, MSBuild projelerinin reevaluating.  
+- **Güvenilirlik ve performansa**: Live Unit Testing artık sistem projeleri tam yükleme tamamlamadıysanız daha iyi algılayabilir ve Live Unit Testing kilitlenen önler sağlar. Derleme performansı iyileştirmeleri ayrıca kaçının sistem projede hiçbir şey Dosya değişmiş olduğunu bilir, MSBuild projelerinin reevaluating.  
 
-- **Çeşitli kullanıcı arabirimi iyileştirmelerini**: kafa karıştırıcı **Canlı Test kümesi – Ekle/Çıkar** sağ tıklama hareketi seçeneğinden adlandırıldı **Live Unit Testing ekleme/çıkarma**. **Temiz sıfırlama** seçeneğini **Test** > **Live Unit Testing** menü kaldırıldı. Artık seçerek erişilebilir durumda **Araçları** > **seçenekleri** > **Live Unit Testing** seçerek **kalıcı verileri Sil** .
+- **Çeşitli kullanıcı arabirimi iyileştirmelerini**:  Kafa karıştırıcı **Canlı Test kümesi – Ekle/Çıkar** sağ tıklama hareketi seçeneğinden adlandırıldı **Live Unit Testing ekleme/çıkarma**. **Temiz sıfırlama** seçeneğini **Test** > **Live Unit Testing** menü kaldırıldı. Artık seçerek erişilebilir durumda **Araçları** > **seçenekleri** > **Live Unit Testing** seçerek **kalıcı verileri Sil** .
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Yeni Visual Studio 2017 sürüm 15.3 için Live Unit Testing nedir
 
@@ -67,4 +66,3 @@ Bu önemli eklemeler yanı sıra, Live Unit Testing, aşağıdaki geliştirmeler
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Dinamik Birim Testine Giriş](live-unit-testing-intro.md)   
 - [Visual Studio 2017 ile Live Unit Testing](live-unit-testing.md)
-
