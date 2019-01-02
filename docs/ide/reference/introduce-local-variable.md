@@ -1,20 +1,19 @@
 ---
-title: Visual Studio'da bir yerel değişken ekleme
+title: Bir yerel değişken ekleme
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97e0e994a15c9587ae781280743b42329753e43d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968689"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio'da bir yerel değişken ekleme
 
@@ -24,11 +23,11 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen var olan bir ifade değiştirmek için bir yerel değişken oluşturmanıza olanak tanır.
+**Ne:** Var olan bir ifade değiştirmek için bir yerel değişken hemen oluşturmanıza olanak sağlar.
 
-**Ne zaman:** yerel bir değişkende olsaydı, kolayca daha sonra yeniden kullanılabilen kodlarla koda sahip.
+**ne zaman:** Yerel bir değişkende olsaydı kolayca daha sonra yeniden kullanılabilen kodlarla kodu var.
 
-**Neden:** kopyalayın ve sonra işlemi gerçekleştirmek, sonucu yerel bir değişkende depolar ve yerel bir değişken boyunca kullanmanız daha iyi ancak kodu çeşitli konumlarda kullanmak için birden çok kez yapıştırın.
+**Neden:** Kopyalayın ve sonra işlemi gerçekleştirmek, sonucu yerel bir değişkende depolar ve yerel bir değişken boyunca kullanmanız daha iyi ancak kodu çeşitli konumlarda kullanmak için birden çok kez yapıştırın.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -68,7 +67,7 @@ Bu kod oluşturma için geçerlidir:
        ![Uygulama arabirimi sonucu VB](media/local-result-vb.png)
 
    > [!NOTE]
-   > Kullanabileceğiniz **.. .all tekrarlarını...**  menü seçeneğini seçili ifadesi, yalnızca özellikle vurgulanmış bir her örneğini değiştirin.
+   > Kullanabileceğiniz **.. .all oluşumlarını...**  menü seçeneğini seçili ifadesi, yalnızca özellikle vurgulanmış bir her örneğini değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

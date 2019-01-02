@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Kod çalıştırmadan Office çözümlerini açma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930118"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl Yapılır: Kod çalıştırmadan Office çözümlerini açma
   Yönetilen kod uzantıları ile oluşturulan Microsoft Office çözümü son kullanıcı Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği, Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.  
@@ -57,5 +54,3 @@ ms.locfileid: "53646912"
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)   
  [Office çözümlerinde uygulama ve dağıtım bildirimleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
-  

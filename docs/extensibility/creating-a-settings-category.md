@@ -1,9 +1,6 @@
 ---
 title: Ayarları kategorisi oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935625"
 ---
 # <a name="create-a-settings-category"></a>Ayarları kategorisi oluşturma
 
@@ -121,7 +118,7 @@ Bu izlenecek yolda başlatmak için önce ilk bölümünü tamamlamalısınız [
 
      **Verme tamamlandı** Raporları Sayfası ayarlarınız başarıyla dışarı aktarıldı.
 
-10. Üzerinde **dosya** menüsünde **açık**ve ardından **dosya**. Bulun *MySettings.vssettings* ve açın.
+10. Üzerinde **dosya** menüsünde **açık**ve ardından dosya. Bulun *MySettings.vssettings* ve açın.
 
      (, GUID'leri farklılık gösterir) dosyasının aşağıdaki bölümünde dışarı aktardığınız özellik kategorisine bulabilirsiniz.
 

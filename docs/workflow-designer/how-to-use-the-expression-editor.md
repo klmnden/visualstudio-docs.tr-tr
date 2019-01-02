@@ -1,9 +1,8 @@
 ---
-title: "İş Akışı Tasarımcısı - nasıl yapılır: ifade Düzenleyicisi'ni kullanın"
+title: 'İş Akışı Tasarımcısı - nasıl yapılır: İfade Düzenleyicisini Kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -12,48 +11,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 63fca3051ce50f728cf83976f6ef6a5204ad35b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956250"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: ifade Düzenleyicisi'ni kullanın
+# <a name="how-to-use-the-expression-editor"></a>Nasıl Yapılır: İfade Düzenleyicisini Kullanma
 
-Birçok iş akışı etkinlikleri girin ve ifadeler değerlendirmek için kullanılan bir iş akışı Tasarımcısı denetimi ifade düzenleyicisidir. İfade Düzenleyicisi düzenleme deneyimi, dahil olmak üzere IntelliSense renklendirme, tam özellikli bir IDE sağlar Paramınfo, diğer özellikler arasında hata dalgalı çizgiler. Bunu girildikten sonra derleyici ifade doğrular. İfade geçersiz ise, bir hata simgesi görüntülenir. Düzenleyici olarak da açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.
+İfade Düzenleyicisi'ni girin ve ifadeleri değerlendirmek için kullanılan birçok iş akışı etkinliklerinde bir iş akışı Tasarımcısı denetimidir. İfade Düzenleyicisi düzenleme deneyimi de dahil olmak üzere IntelliSense, renklendirme, tam özellikli bir IDE sağlar Paramınfo, diğer özellikler arasında hata ilişkilendirmelerini. Bunu girildikten sonra derleyici ifadesini doğrular. İfade geçersizse, bir hata simgesi görüntülenir. Düzenleyici olarak de açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.
 
-Değişmez değerler veya Visual Basic kodu bağımsız değişken veya özellikler bağlı ifadelerini olun. Yeni bir değer verim işlemleriyle birlikte olan değer öğeleri (örneğin, değişkenlerinin, sabitleri, değişmez değerleri, özellikleri) içerir. İfadeler, uygulama C# kullanarak bir programda olsa bile VB.NET sözdizimi kullanılarak yazılır. Bunun anlamı büyük/küçük harf önemli değildir, karşılaştırma tek eşittir kullanarak gerçekleştirilir oturum ("=" "== yerine"), Boole işleçleri sözcüklerdir "ve" ve "veya" simgeleri yerine "& &" ve "||", ve **hiçbir şey** kullanılır yerine **null**. İfadeleri ve Visual Basic'de işleçler hakkında daha fazla bilgi ve bazı örnekler için bkz: [işleçler ve ifadeler Visual Basic'te](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Değişmez değerler veya Visual Basic kodunu bağımsız değişkenler veya özellikleri bağlı ifadelerdir. Yeni bir değer yield işlemleriyle birlikte değeri öğeleri (örneğin, değişkenleri, sabitleri, sabit değerleri, özellikleri) içerirler. İfadeler, C# kullanarak bir programda uygulaması olsa bile VB.NET söz dizimini kullanarak yazılır. Büyük/küçük harf önemli değildir, tek bir eşittir kullanarak karşılaştırma gerçekleştirilir yani oturum ("=" "==" yerine), Boole işleçleri sözcüklerdir "ve" ve "veya" sembolleri yerine "& &" ve "||", ve **hiçbir şey** kullanılır yerine **null**. İfadeler ve Visual Basic'de işleçler hakkında daha fazla bilgi ve bazı örnekler için bkz: [işleçler ve ifadeler Visual Basic'te](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
 **İfade Düzenleyicisi** gibi davranır:
 
 - Odağı ifade Düzenleyicisi üzerinde değilse, normal bir TextBlock denetimi gibi görünüyor.
 
-- Odağı ifade Düzenleyicisi olduğunda arar ve ifade Düzenleyicisi denetimi gibi davranır. Odağı kaybettiğinde ifade Düzenleyicisi gibi normal TextBlock yeniden arar.
+- Odağı ifade düzenleyicisini olduktan sonra görünür ve ifade Düzenleyicisi denetimi gibi davranır. Odağı kaybettiğinde sonra ifade Düzenleyicisi gibi normal bir TextBlock tekrar görünür.
 
-- Ardından üzerinde ifade Düzenleyicisi rehosted iş akışı Tasarımcısı'nda odaklanmanıza, metin kutusu gibi davranır. Odak rehosted iş akışı Tasarımcısı'nda kesildiğinde ifade Düzenleyicisi gibi normal TextBlock yeniden arar.
+- Daha sonra yeniden barındırılan iş akışı Tasarımcısı'nda ifade Düzenleyicisi üzerinde odaklanmak, bir metin kutusu gibi davranır. Yeniden barındırılan iş akışı Tasarımcısı'nda odağı kaybettiğinde ifade Düzenleyicisi gibi normal bir TextBlock yeniden görünür.
 
 > [!NOTE]
-> IntelliSense ifade Düzenleyicisi için yalnızca Visual Studio içinde kullanılabilir. Visual Studio hem rehosted senaryoları derleyici ifade girildiği ve ifade geçersiz ifade Düzenleyicisi hata simgesi görüntüler sonra doğrular.
+> IntelliSense için ifade Düzenleyicisi yalnızca Visual Studio içinde kullanılabilir. Visual Studio hem yeniden barındırılan senaryoları derleyici ifade girildiği ve ifade geçersiz bir hata simgesi ifade düzenleyicisini görüntüler sonra doğrular.
 
-## <a name="use-the-expression-editor"></a>İfade Düzenleyicisi'ni kullanın
+## <a name="use-the-expression-editor"></a>İfade Düzenleyicisini Kullanma
 
-1.  Visual Studio'da yeni veya var olan iş akışı projesini açın.
+1.  Visual Studio'da, yeni veya var olan iş akışı projesi açın.
 
-2.  Ekleme, örneğin, <xref:System.Activities.Statements.Assign> , iş akışı için etkinlik.
+2.  Ekleme, örneğin, <xref:System.Activities.Statements.Assign> etkinlik akışınıza.
 
     > [!NOTE]
-    > Birden çok iş akışı etkinlikleri ifade düzenleyicileri vardır. İfade TextBlock'lar değişken Tasarımcısı, bağımsız değişken Tasarımcısı ve dinamik bağımsız değişkeni Tasarımcısı'nı da görünür. <xref:System.Activities.Statements.Assign> Etkinlik, bir örnek olarak kullanılır.
+    > Birden çok iş akışı etkinlikleri ifade düzenleyicileri vardır. İfade TextBlock'lar değişken tasarımcısını, bağımsız değişken tasarımcısını ve dinamik bağımsız değişken tasarımcısını da görünür. <xref:System.Activities.Statements.Assign> Etkinliği, örnek olarak kullanılır.
 
 3.  Sol ifade Düzenleyicisi için etkinlik Tasarımcısı'nda <xref:System.Activities.Statements.Assign> etkinlik.
 
-     Gri filigranı dizelerden  **\<için >** ve  **\<bir VB ifadesi girin >** varsayılan ifade Düzenleyicilerde metin dizelerini içindir <xref:System.Activities.Statements.Assign> etkinlik.
+     Gri Filigran dizeleri  **\<için >** ve  **\<zadejte Výraz jazyka vb. >** varsayılan ifade Düzenleyicilerde metin dizelerini içindir <xref:System.Activities.Statements.Assign> etkinlik.
 
-4.  İfadeniz girin. Bir dize girin, dize etrafında tırnak işareti koymak emin olun. İfade bağımsız değişkeni bir değişkene bağlamak seçerseniz, iş tırnak işaretleri devre dışı bırakın.
+4.  İfadeniz girin. Bir dize girin, dize etrafında tırnak işareti koymak emin olun. İfade bağımsız değişkeni bir değişkene bağlamak isterseniz, tırnak işaretleri bırakın.
 
-     İşiniz bittiğinde, bir bölge veya alanı dışında ifade Tasarımcısı'nın başka bir bölümüne odağı kaydırılacak Düzenleyicisi'ni seçin. Odağı kaydırma ifade daha önce açıklandığı şekilde doğrulamak derleyici neden olur.
+     İşiniz bittiğinde, bir bölge ya da alanı dışında ifade odağı tasarımcının başka bir parçası için Düzenleyici'yi seçin. Odağı kaydırma, daha önce açıklandığı şekilde ifadeyi doğrulamak derleyicinin neden olur.
 
-     Alternatif bir yol girin veya bir ifade düzenlemek için özellik kılavuzunda özellik adının yanındaki üç nokta düğmesine olmaktır. Üç nokta seçerek açılır **ifade Düzenleyicisi** bir iletişim kutusu olarak.
+     Alternatif bir yol girin veya bir ifade düzenlemek için özellik kılavuzunda özellik adının yanındaki üç noktaya tıklayın sağlamaktır. Üç noktayı seçtiğinizde açılır **ifade Düzenleyicisi** bir iletişim kutusu olarak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

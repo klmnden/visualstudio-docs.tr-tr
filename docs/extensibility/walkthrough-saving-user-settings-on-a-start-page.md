@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Kullanıcı ayarlarını başlangıç sayfasına kaydetme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
@@ -11,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948777"
 ---
-# <a name="walkthrough-save-user-settings-on-a-start-page"></a>İzlenecek yol: bir başlangıç sayfasında kullanıcı ayarlarını Kaydet
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarlarını Kaydet
 Başlangıç sayfası için kullanıcı ayarlarını kalıcı hale getirebilirsiniz. Bu izlenecek yolu takip ederek, kullanıcı bir düğmeye tıkladığında ve ardından başlangıç sayfası yükleyen her zaman bu ayarı alır bir ayarı kayıt defterine kaydeder bir denetim oluşturabilirsiniz. Başlangıç sayfası proje şablonu özelleştirilebilir kullanıcı denetimini içerir ve söz konusu denetim varsayılan başlangıç sayfası XAML çağrıları olduğundan, başlangıç sayfası kendisini değiştirmek zorunda değilsiniz.  
   
- Bu izlenecek yolda örneği ayarlar deposu örneğidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> okuyan ve bunu çağrıldığında aşağıdaki kayıt defteri konumuna yazma arabirimi: **HKCU\Software\Microsoft\VisualStudio\14.0\\ \<KoleksiyonAdı >**  
+ Bu izlenecek yolda örneği ayarlar deposu örneğidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> okuyan ve bunu çağrıldığında aşağıdaki kayıt defteri konumuna yazma arabirimi: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<KoleksiyonAdı >**  
   
  Visual Studio'nun deneysel örneğinde çalıştığı sırada ayarlar deposu okuyan ve yazan **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<KoleksiyonAdı >.**  
   

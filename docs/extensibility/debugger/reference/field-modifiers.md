@@ -1,9 +1,6 @@
 ---
 title: FIELD_MODIFIERS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FIELD_MODIFIERS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84275f107872358f027a85843c3ce5c431bba6a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946272"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Alan türü için değiştiriciler belirtir.  
@@ -28,7 +25,7 @@ Alan türü için değiştiriciler belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_FIELD_MODIFIERS {   
+enum enum_FIELD_MODIFIERS {   
    FIELD_MOD_NONE             = 0x00000000,  
   
    // Modifier of the field  
@@ -191,7 +188,7 @@ public enum enum_FIELD_MODIFIERS {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

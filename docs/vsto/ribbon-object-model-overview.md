@@ -1,9 +1,6 @@
 ---
 title: Şerit nesne modeline genel bakış
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961315"
 ---
 # <a name="ribbon-object-model-overview"></a>Şerit nesne modeline genel bakış
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve çalışma zamanında Şerit denetimlerinin özelliklerini ayarlamak için kullanabileceğiniz sağlam biçimde yazılmış nesne modeli sunar. Örneğin, dinamik olarak menü denetimlerini doldurmak veya gösterebilir ve bağlamsal denetimlerini gizle. Şerit, ancak yalnızca Şerit tarafından Office uygulamasına yüklenmeden önce sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için [salt okunur özelliklerini ayarlama](#SettingReadOnlyProperties).  
@@ -50,7 +47,7 @@ ms.locfileid: "49910595"
   
 |Denetim adı|Sınıf adı|  
 |------------------|----------------|  
-|**Kutusu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
+|**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Düğme**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
@@ -193,10 +190,9 @@ ms.locfileid: "49910595"
  [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [İzlenecek yol: Çalışma zamanında Şerit denetimlerini güncelleştirme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)   
  [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Nasıl yapılır: Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Nasıl yapılır: kullanıcı arayüzü hatalarını gösterme eklentisi](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Nasıl yapılır: Bir Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Nasıl yapılır: Eklenti kullanıcı arayüzü hatalarını gösterme](../vsto/how-to-show-add-in-user-interface-errors.md)  

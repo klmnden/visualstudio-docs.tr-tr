@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: öğe şablonu ile özel bir eylem proje öğesi oluşturma, bölüm 2 | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir özel eylem proje öğesi öğe şablonu ile oluşturma, bölüm 2 | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913942"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: Bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve Visual Studio'da bir öğe şablonunu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonunuzu yeni bir proje öğesi örneğini bir projeye eklemek için kullandıkları, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
   
- Bu kılavuzda, örnekte gösterildiği özel bir eylem proje öğesi için bir sihirbaz ekleyeceksiniz [izlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Bir kullanıcı bir SharePoint projesine özel bir eylem proje öğesi eklediğinde, sihirbaz özel eylem (örneğin, konumunu ve son kullanıcı seçtiğinde gidilecek URL'yi) hakkında bilgi toplar ve bu bilgileri ekler *Elements.xml* dosyasında yeni proje öğesi.  
+ Bu kılavuzda, örnekte gösterildiği özel eylem proje öğesi için bir sihirbaz ekleyeceksiniz [izlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Bir kullanıcı bir SharePoint projesine özel bir eylem proje öğesi eklediğinde, sihirbaz özel eylem (örneğin, konumunu ve son kullanıcı seçtiğinde gidilecek URL'yi) hakkında bilgi toplar ve bu bilgileri ekler *Elements.xml* dosyasında yeni proje öğesi.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296248"
 >  Bir örnekten indirebileceğiniz [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , özel etkinlikler için iş akışı oluşturma işlemi gösterilmektedir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu kılavuzu izlemeden için öncelikle CustomActionProjectItem çözüm tamamlayarak oluşturmanız gerekir [izlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Bu kılavuzu izlemeden için öncelikle CustomActionProjectItem çözüm tamamlayarak oluşturmanız gerekir [izlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler de aşağıdakiler gerekir:  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296248"
   
   Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   
-- Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Proje şablonlarıyla kullanma sihirbazları](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
+- Visual Studio'da proje ve öğe şablonlarını sihirbazları. Daha fazla bilgi için [nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md) ve <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimi.  
   
 - SharePoint özel eylemler. Daha fazla bilgi için [özel eylem](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Sihirbazı proje oluşturma
- Bu izlenecek yolu tamamlamak için bir proje oluşturduğunuz CustomActionProjectItem çözüme eklemelisiniz [izlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). U uygulayacaksınız <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirim ve kullanıcı Arabirimi Sihirbazı bu projeyi tanımlayın.  
+ Bu izlenecek yolu tamamlamak için bir proje oluşturduğunuz CustomActionProjectItem çözüme eklemelisiniz [izlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). U uygulayacaksınız <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirim ve kullanıcı Arabirimi Sihirbazı bu projeyi tanımlayın.  
   
 #### <a name="to-create-the-wizard-project"></a>Sihirbazı proje oluşturmak için  
   
@@ -156,7 +153,7 @@ ms.locfileid: "51296248"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  Bu aşamada izlenecek yolda, sihirbaz için kodun tümü artık projedir. Hata olmadan derlediğinden emin olmak için projeyi derleyin.  
   
 #### <a name="to-build-your-project"></a>Projenizi yapılandırmak için  
@@ -345,10 +342,9 @@ ms.locfileid: "51296248"
 4.  (Deneysel örneği ve Visual Studio'nun CustomActionProjectItem çözüm açık olduğu örneği) Visual Studio'nun her iki örneklerini kapatın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [İzlenecek yol: bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [İzlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio Şablon Şeması Başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Nasıl yapılır: sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Varsayılan özel eylem konumları ve kimlikleri](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

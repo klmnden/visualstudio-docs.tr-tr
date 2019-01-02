@@ -1,9 +1,6 @@
 ---
 title: IDebugExceptionEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f2cb866c12cacc2c0fcc81c3021e7cc5af448d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1348e83a3b07240fcb1c5e6ae4819ea85e4c054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929884"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
-Şu anda yürütülmekte olan programa bir özel durum oluştuğunda hata ayıklama altyapısı (DE) Bu arabirim oturum hata ayıklama Yöneticisi (SDM) gönderir.  
+Programın şu anda yürütülmekte olan bir özel durum oluştuğunda hata ayıklama altyapısı (DE) Bu arabirim oturum hata ayıklama Yöneticisi (SDM) gönderir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,33 +29,33 @@ IDebugExceptionEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- DE ayıklanacak programa bir özel durum oluştu rapor için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirimi uygulanan, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi.  
+ Bu arabirim için bir özel durum hata ayıklaması yapılan programa oluştu rapor DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](/cpp/atl/queryinterface) erişimi `IDebugEvent2` arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Aygıtların oluşturur ve bir özel durum raporlamak için bu olay nesnesi gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanacak programın eklendiğinde, SDM tarafından sağlanan geri çağırma işlevi.  
+ KODU oluşturur ve bu olay bir özel durum rapor nesnesine gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugExceptionEvent2`.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Bu olay şu özel durum hakkında ayrıntılı bilgi alır.|  
-|[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Bu olay şu özel durum okunabilir bir açıklamasını alır.|  
-|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Hata ayıklama altyapısı (DE) yürütme devam ettiğinde ayıklanacak programın bu özel durum geçirme seçeneğiniz destekleyip desteklemediğini belirler.|  
-|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Özel durum yürütme devam ettiğinde ayıklanacak programın geçirileceğini ya da özel durum atılmalıdır belirtir.|  
+|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Bu olay harekete geçirilen özel durum hakkında ayrıntılı bilgiler alır.|  
+|[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Bu olay harekete geçirilen özel durum için okunabilir bir açıklamasını alır.|  
+|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Hata ayıklama altyapısı (DE) yürütme devam ettiğinde ayıklanan programa bu özel durum geçirme seçeneğiniz destekleyip desteklemediğini belirler.|  
+|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Özel durum yürütme devam ettiğinde ayıklanan programa geçirilmelidir olup olmadığını ya da özel durum atılmalı belirtir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu özel durum olayı ilk fırsat veya ikinci fırsat özel durum önceki çağrısıyla belirlendiyse, görmek için DE denetler olay göndermeden önce [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). İlk fırsat özel durum olarak belirlenmişse `IDebugExceptionEvent2` olay SDM gönderilir. Aksi durumda, uygulamaya özel durumu işlemek için bir fırsat DE sunar. Hiçbir özel durum işleyicisi verdiyse ve özel bir ikinci fırsat özel durum belirlendiyse `IDebugExceptionEvent2` olay SDM gönderilir. Aksi takdirde, programın yürütülmesi DE sürdürür ve işletim sistemi veya çalışma zamanı özel durumu işler.  
+ Bu özel durum olayı bir ilk şans veya ikinci şans özel durum için bir çağrı tarafından belirlendiyse, görmek için DE denetler olay göndermeden önce [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). İlk fırsat özel durum olarak belirlendiyse `IDebugExceptionEvent2` olay SDM için gönderilir. Değilse DE uygulamaya özel durumu işlemek üzere bir fırsat sunar. Hiçbir özel durum işleyicisi sağlanır ve özel durum ikinci şans özel durum belirlendiyse `IDebugExceptionEvent2` olay SDM için gönderilir. Aksi takdirde DE programın yürütülmesini sürdürür ve işletim sistemi ya da çalışma zamanı özel durumu işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

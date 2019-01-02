@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934381"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio’da pencere düzenlerini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
  Bir belgede aynı anda iki konuma görüntüleyemez veya varsa, windows bölebilirsiniz. Belgenizi iki bağımsız olarak kaydırma bölümlere ayırmak için tıklayın **bölünmüş** üzerinde **penceresi** menüsü. Tıklayın **Bölmeyi Kaldır** üzerinde **penceresi** tek bir görünüm geri yüklemek için menü.
 
 ### <a name="toolbars"></a>Araç Çubukları
- Araç çubukları düzenlenmiş sürükleyerek ya da kullanarak **Özelleştir** iletişim kutusu. Getirin ve araç çubuklarını özelleştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: özelleştirme menüleri ve araç çubuklarını](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Araç çubukları düzenlenmiş sürükleyerek ya da kullanarak **Özelleştir** iletişim kutusu. Getirin ve araç çubuklarını özelleştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Düzenleme ve Windows yerleştirme
  Her ikisi de windows belge ve araç pencerelerini olabilir *yerleştirilmiş*, konum ve boyut IDE pencere çerçevesi veya ayrı bir pencerede IDE'yi bağımsız değişken sahip olacak şekilde. Araç pencerelerini IDE çerçevesinin içinde her yerden yerleştirilmiş olabilir; Bazı araç pencerelerinin Düzenleyicisi çerçevesindeki sekmeli pencerelerin olarak sabitlenebilir. Belge pencereleri Düzenleyicisi çerçevesinde sabitlenebilir ve geçerli konumlarına sekme sırasını sabitlenebilir. Birlikte bir "raft" içinde veya dışında IDE içinde kaydırmak için birden çok windows sabitleyebilirsiniz. Araç pencerelerini de gizli veya simge.
@@ -168,7 +167,7 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 
      Çoklu monitör Kurulum ve tek bir izleyici dizüstü evde varsa, her makine için iyileştirilmiş düzenleri oluşturabilirsiniz.
 
-     Not: bir çoklu monitör düzeni tek izleme sisteminde uygularsanız, ikinci monitörde yerleştirilen kayan windows artık Visual Studio penceresinin gizlenir. Alt + Sekme tuşuna basarak bu windows öne getirebilirsiniz. Daha sonra Visual Studio ile birden çok monitör açarsanız, düzenini yeniden uygulayarak windows belirtilen konumlarına geri yükleyebilirsiniz.
+     Not: Bir çoklu monitör düzeni tek izleme sisteminde uygularsanız, ikinci monitörde yerleştirilen kayan windows artık Visual Studio penceresinin gizlenir. Alt + Sekme tuşuna basarak bu windows öne getirebilirsiniz. Daha sonra Visual Studio ile birden çok monitör açarsanız, düzenini yeniden uygulayarak windows belirtilen konumlarına geri yükleyebilirsiniz.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Yönetme ve katmanlarınızı Dolaşımda
 
@@ -185,6 +184,6 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[Windows türleri](../misc/kinds-of-windows.md)|IDE'de araç pencereleri ve belge pencereleri arasındaki farkları ele alır.|
-|[Nasıl yapılır: pencereleri düzenleme ve yerleştirme Windows](../misc/how-to-arrange-and-dock-windows.md)|Pencereleri nasıl sabitleyeceğiniz, otomatik olarak gizleyeceğiniz, döşeyeceğiniz ve ayrıca pencere düzenini nasıl sıfırlayacağınız açıklanır.|
-|[Nasıl Yapılır: IDE'de Gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE'de, kullanım sırasına göre, açık pencereler arasında nasıl geçiş yapacağınız açıklanır. Ayrıca belirli belgelere nasıl atlayabileceğinizi açıklar.|
+|[Nasıl yapılır: Pencereleri düzenleme ve Windows yerleştirme](../misc/how-to-arrange-and-dock-windows.md)|Pencereleri nasıl sabitleyeceğiniz, otomatik olarak gizleyeceğiniz, döşeyeceğiniz ve ayrıca pencere düzenini nasıl sıfırlayacağınız açıklanır.|
+|[Nasıl yapılır: IDE'de gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE'de, kullanım sırasına göre, açık pencereler arasında nasıl geçiş yapacağınız açıklanır. Ayrıca belirli belgelere nasıl atlayabileceğinizi açıklar.|
 |[Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Ayar bileşimleri ve ayarların pencere düzenlerini, klavye kısayollarını ve IDE'deki diğer öğeleri nasıl etkilediği hakkında bilgi içerir.|

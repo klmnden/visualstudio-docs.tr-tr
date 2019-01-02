@@ -1,8 +1,6 @@
 ---
 title: Ayrıntılı Profiler komut satırını kullanarak bağımsız bir uygulama için zamanlama verileri toplama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 21cb675136ba5180c8a7d26073ea16e6c6831aac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831686"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bağımsız bir uygulama için ayrıntılı zamanlama verileri toplama
 Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açıklar komut satırından izleme metodunu kullanarak bir istemci (tek başına) bileşeni için verileri.  
@@ -27,8 +25,8 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**İzleme kullanarak bir .NET Framework uygulamasına profil**|-   [Nasıl yapılır: bir .NET Framework bileşenini izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
-|**İzleme kullanarak C/C++ uygulamasına profil**|-   [Nasıl yapılır: yerel bir bileşeni izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
+|**İzleme kullanarak bir .NET Framework uygulamasına profil**|-   [Nasıl Yapılır: Bir .NET Framework bileşenini izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**İzleme kullanarak C/C++ uygulamasına profil**|-   [Nasıl Yapılır: Yerel bir bileşeni izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler

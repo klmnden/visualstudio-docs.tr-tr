@@ -1,9 +1,6 @@
 ---
 title: Dil hizmeti ve düzenleyici uzantı noktaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907968"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil hizmeti ve düzenleyici uzantı noktaları
 Düzenleyici, çoğu dil hizmeti özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına genişletebilirsiniz uzantı noktaları sağlar. Ana uzantı noktası kategorileri şunlardır:  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: bir kenarlığı ile ilişkili.  
   
   > [!NOTE]
-  >  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, HighlightWordTag tanımında bkz [izlenecek yol: metni vurgulama](../extensibility/walkthrough-highlighting-text.md).  
+  >  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, HighlightWordTag tanımında bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: genişletilmiş veya daraltılmış anahat içinde bölge ile ilişkilendirilmiş.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Bu biçim tanımı için bir etiket uygulamak için ayarladığınız (görünen adı değil) sınıfın ad özniteliği adı başvuru.  
   
 > [!NOTE]
->  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition bkz [izlenecek yol: metni vurgulama](../extensibility/walkthrough-highlighting-text.md).  
+>  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Kenarlıklar genişletme  
  Kenarlıklar ya da bir metin görünümünde görüntülenen metin eklenebilir veya metnin kendisini görüntülemek görsel efektler tanımlayın. Her tür kendi kenarlığı tanımlayabilirsiniz <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: kenarlığı adı.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: kenarlığı diğer kenarlığı katmanları göre sıralama. Sınıf <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> dört varsayılan Katmanlar tanımlar: seçimi, anahat oluşturma, giriş işaretini ve metin.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: kenarlığı diğer kenarlığı katmanları göre sıralama. Sınıf <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> dört varsayılan Katmanlar tanımlar: Anahat oluşturma, seçimi giriş işaretini ve metin.  
   
   Aşağıdaki örnek, bir kenarlığı katman tanımı üzerinde dışarı aktarma öznitelikleri gösterir.  
   
@@ -546,11 +543,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  IntelliSense kaynakları uygulama hakkında daha fazla bilgi için aşağıdaki izlenecek yollara bakın:  
   
- [İzlenecek yol: Görüntü Hızlıbilgi araç ipuçları](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [İzlenecek yol: İmza Yardımı görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [İzlenecek yol: Görüntü deyim tamamlama](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [İzlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implement-an-intellisense-controller"></a>Bir IntelliSense denetleyicisi uygulayın  
  Bir denetleyici özelleştirmek için uygulamanız gereken <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> arabirimi. Ayrıca, aşağıdaki öznitelikleri ile birlikte bir denetleyici sağlayıcısı uygulamanız gerekir:  
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  IntelliSense denetleyicileri kullanma hakkında daha fazla bilgi için aşağıdaki izlenecek yollara bakın:  
   
- [İzlenecek yol: Görüntü Hızlıbilgi araç ipuçları](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

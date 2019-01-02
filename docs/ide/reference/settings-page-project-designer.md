@@ -2,7 +2,6 @@
 title: Ayarlar Sayfası, Proje Tasarımcısı
 ms.date: 06/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f7b47b56522f5c4aeef0054e6b7b52434ff87
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 95fc794bee8388dd0655af9adcd9101f57816126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "35609966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949251"
 ---
 # <a name="settings-page-project-designer"></a>Ayarlar sayfası, Proje Tasarımcısı
 
@@ -71,7 +70,7 @@ Ayarları yardımcı sınıfları hakkında daha fazla bilgi için bkz: [uygulam
 
 Uygulama ayarı adı bu alana girin.
 
-**Türü**
+**Tür**
 
 Ayar için bir tür seçmek için açılan listeyi kullanın. Aşağı açılan listeden, örneğin, en sık kullanılan türler görünür **dize**, **(bağlantı dizesi)**, ve **System.Drawing.Font**. Seçerek başka bir tür seçebilirsiniz **Gözat** listesi ve bir türden sonra seçerek sonunda **bir türü seçin** iletişim kutusu. Bir türü seçtikten sonra aşağı açılan listesinde (geçerli çözüm için yalnızca) ortak türlerine eklenir.
 

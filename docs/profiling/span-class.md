@@ -1,8 +1,6 @@
 ---
 title: span sınıfı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b1a430ebba3435673c90f85c6270c308c58612d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893924"
 ---
 # <a name="span-class"></a>span sınıfı
 Uygulamanın bir aşama tanımlar.  
@@ -45,7 +43,7 @@ class span;
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkersobj.h*  
   
- **Namespace:** Concurrency::diagnostic  
+ **Namespace:** CONCURRENCY::Diagnostic  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Tanılama ad alanı](../profiling/diagnostic-namespace.md)

@@ -2,7 +2,6 @@
 title: Değişken bildirimi başvurunun yanına taşıma
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9bc661331ee03af6d34caeae847b717db1f21fc5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86a0ffb984cc18c1269630c25bfca3646ef17451
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907196"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Başvuru yeniden düzenleme yakın bildirimi taşıma
 
@@ -24,11 +23,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - C#
 
-**Ne:** yakın değişken bildirimlerini kullanımları için geçiş yapmanıza izin veren.
+**Ne:** Kendi kullanımı için değişken bildirimlerini yakın taşımanıza olanak tanır.
 
-**Ne zaman:** daha dar bir kapsamda olan değişken bildirimleri sahip.
+**ne zaman:** Dar bir kapsamda olabilir değişken bildirimleri var.
 
-**Neden:** olduğu, ancak okunabilirlik sorunları veya bilgi gizleme neden olabilir bırakabilir. Okunabilirliği artırmak için yeniden düzenleme için bir fırsat budur.
+**Neden:** Bu, ancak okunabilirlik sorunları veya bilgi gizleme neden olabilecek bırakabilir. Okunabilirliği artırmak için yeniden düzenleme için bir fırsat budur.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

@@ -2,7 +2,6 @@
 title: Hizmetler Sayfası, Proje Tasarımcısı
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952387"
 ---
 # <a name="services-page-project-designer"></a>Hizmetler Sayfası, Proje Tasarımcısı
 
@@ -31,7 +30,7 @@ Erişim için **Hizmetleri** sayfasında, içinde bir proje düğümü seçin **
 
 ## <a name="task-list"></a>Görev Listesi
 
-[Nasıl Yapılır: İstemci Uygulama Servislerini Yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
@@ -53,7 +52,7 @@ Erişim için **Hizmetleri** sayfasında, içinde bir proje düğümü seçin **
 
  **Forms kimlik doğrulaması kullan**
 
- Kimlik doğrulama sağlayıcısı form kimlik doğrulaması kullandığını gösterir. Başka bir deyişle, uygulamanız için oturum açma kullanıcı arabirimi sağlamanız gerekir. Daha fazla bilgi için [nasıl yapılır: istemci uygulama hizmetleri ile kullanıcı oturumu uygulama](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+ Kimlik doğrulama sağlayıcısı form kimlik doğrulaması kullandığını gösterir. Başka bir deyişle, uygulamanız için oturum açma kullanıcı arabirimi sağlamanız gerekir. Daha fazla bilgi için [nasıl yapılır: İstemci uygulama hizmetleri ile kullanıcı oturum açma adını](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Kimlik doğrulama hizmet konumu**
 
@@ -79,6 +78,6 @@ Erişim için **Hizmetleri** sayfasında, içinde bir proje düğümü seçin **
 
 - [İstemci Uygulama Servisleri](/dotnet/framework/common-client-technologies/client-application-services)
 - [Hizmetler İçin Gelişmiş Ayarlar İletişim Kutusu](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Nasıl Yapılır: İstemci Uygulama Servislerini Yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Derleme Sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)

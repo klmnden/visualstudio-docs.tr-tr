@@ -9,22 +9,21 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832144"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Nasıl yapılır: test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Nasıl Yapılır: Test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
 
 Visual Studio'daki yapılandırma düzenleyicisinden, testi çalıştıran kullanıcının ses ve ekran kayıtları tanılama veri bağdaştırıcısını yapılandırabilirsiniz. Bu tanılama veri bağdaştırıcısı, test sırasında masaüstü oturumunun bir ekran ve ses kaydını kaydeder. Kayıt test sonucuyla birlikte kaydedilir veya bir hataya iliştirilebilir. Diğer ekip üyeleri, yeniden oluşturulması zor olan uygulama sorunlarını yalıtmak için kaydı kullanabilir.
 
 > [!WARNING]
 > Ekran ve ses kayıtları birden çok ekran yapılandırmasını desteklemez.
 
-Ekran ve Ses Kaydedici el ile veya otomatikleştirilmiş testlerle kullanılabilir. Örneğin, kodlanmış UI testini uzaktan çalıştırırsanız, çalışırken kodlanmış UI testini görebilmek için masa üstünü kaydetmek isteyebilirsiniz. Bir ekran ve ses kaydını uzaktan yakalama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Masaüstü ile etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+Ekran ve Ses Kaydedici el ile veya otomatikleştirilmiş testlerle kullanılabilir. Örneğin, kodlanmış UI testini uzaktan çalıştırırsanız, çalışırken kodlanmış UI testini görebilmek için masa üstünü kaydetmek isteyebilirsiniz. Bir ekran ve ses kaydını uzaktan yakalama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -52,13 +51,13 @@ Ekran ve Ses Kaydedici el ile veya otomatikleştirilmiş testlerle kullanılabil
 
 6.  Altında **ekran kaydı kalitesi**, aşağıdaki açılır liste seçenekleri yapılandırın:
 
-    1.  **Kare hızı:** kullanmak istediğiniz ekran ve ses kaydında saniyede kaç kare belirtin. 4 Saniyedeki varsayılan değerdir. 2 ile 20 arasındaki değerler belirtilebilir.
+    1.  **Kare hızı:** Ekran ve ses kaydında kullanmak istediğiniz saniyede kaç kare belirtin. 4 Saniyedeki varsayılan değerdir. 2 ile 20 arasındaki değerler belirtilebilir.
 
-    2.  **Bit hızı:** saniyede kaç kilobayt ekran ve ses kaydında kullanılacağını belirtin. Varsayılan değer 512'dır. 512 ve 10.000 arasındaki değerler belirtilebilir.
+    2.  **Bit hızı:** Ekran ve ses kaydında kullanılacak saniyede kaç kilobayt belirtin. Varsayılan değer 512'dır. 512 ve 10.000 arasındaki değerler belirtilebilir.
 
-    3.  **Kalite(1-100):** kalitesini ekran ve ses 1 ile 100 arasında bir aralık belirleyerek belirtebilirsiniz. 50 (Orta aralık) varsayılandır.
+    3.  **Kalite(1-100):** Ekran ve ses 1 ile 100 arasında bir aralık belirleyerek kalitesini belirtebilirsiniz. 50 (Orta aralık) varsayılandır.
 
-7.  Seçin **Tamam**. Tanılama izleme toplayıcı ayarları şimdi yapılandırılır ve test ayarlarınız için kaydedildi.
+7.  **Tamam**’ı seçin. Tanılama izleme toplayıcı ayarları şimdi yapılandırılır ve test ayarlarınız için kaydedildi.
 
     > [!TIP]
     > Bu tanılama veri bağdaştırıcısı için yapılandırmayı sıfırlamak için seçin **varsayılan yapılandırmaya Sıfırla** Visual Studio için ve **Varsayılana Sıfırla** Microsoft Test Yöneticisi için.

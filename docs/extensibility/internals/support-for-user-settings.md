@@ -1,9 +1,6 @@
 ---
 title: Kullanıcı ayarları desteği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Custom Settings Points
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea4d5bd890c28721539fa9528df72446fedc126
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930914"
 ---
 # <a name="support-for-user-settings"></a>Kullanıcı Ayarları için Destek
 VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir veya daha fazla ayarları kategorileri tanımlayabilir **içeri/dışarı aktarma ayarları** komutunu **Araçları** menüsü. Bu kalıcılığını sağlamak için ayarları API'leri kullanın. içinde [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -34,7 +31,7 @@ VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir vey
      Birkaç özel ayarları noktası tek bir VSPackage'ı destekliyorsa, her özel ayarları noktası ayrı bir sınıf tarafından uygulanır ve her benzersiz bir örneği tarafından kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfı. Sonuç olarak, sınıf uygulama bir ayar birden fazla ayarları kategorisi destekleyebilir.  
 
 ## <a name="custom-settings-point-registry-entry-details"></a>Özel ayarlar noktası kayıt defteri girişi ayrıntıları  
- Özel ayarları noktaları, bir kayıt defteri girişini şu konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\\`<CSPName>`burada `<CSPName>` VSPackage'ı destekleyen özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.  
+ Özel ayarları noktaları bir kayıt defteri girişini şu konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\\`<CSPName>`burada `<CSPName>` VSPackage'ı destekleyen özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.  
 
 > [!NOTE]
 >  Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* bir alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamıdır (IDE) başlatılmamış. Daha fazla bilgi için [komut satırı anahtarları](../../extensibility/command-line-switches-visual-studio-sdk.md).  
@@ -61,4 +58,3 @@ VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir vey
 | Kategori | REG_SZ | GUID | Ayarları kategorisi tanımlayan GUID.<br /><br /> Birlikte çalışma derlemelerini tabanlı uygulamalar için bu değer bir rasgele seçilen olabilir GUID, hangi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE geçtiği <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> yöntemleri. Bu iki yöntemden birini tüm uygulamaları kendi bir GUID bağımsız değişken doğrulamanız gerekir.<br /><br /> Üzerinde MPF tabanlı uygulamalar için bu GUID ile alınan <xref:System.Type> sınıfı uygulama [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ayarları mekanizması. |
 | ResourcePackage | REG_SZ | GUID | İsteğe bağlı.<br /><br /> Uygulama VSPackage bunları sağlamazsa, uydu DLL içeren yolu dizeleri yerelleştirilmiş.<br /><br /> MPF VSPackage, doğru kaynak almak için yansıtma kullanır böylece <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfı, bu bağımsız değişken ayarlı değil. |
 | AlternateParent | REG_SZ | Bu özel ayarları noktasını içeren araçları seçenekleri sayfasından altında klasör adı. | İsteğe bağlı.<br /><br /> Yalnızca bir ayarları uygulaması destekliyorsa, bu değeri ayarlamanız gerekir **Araçlar Seçenekler** Kalıcılık mekanizması olarak kullanan sayfaları [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] durumunu kaydetmek için Otomasyon modelindeki mekanizması yerine.<br /><br /> Bu gibi durumlarda AlternateParent anahtar değer `topic` bölümünü `topic.sub-topic` belirli tanımlamak için kullanılan dize **ToolsOptions** sayfası. Örneğin, **ToolsOptions** sayfa `"TextEditor.Basic"` AlternateParent değer `"TextEditor"`.<br /><br /> Zaman <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> özel ayarları noktası oluşturur, kategori adı ile aynıdır. |
-

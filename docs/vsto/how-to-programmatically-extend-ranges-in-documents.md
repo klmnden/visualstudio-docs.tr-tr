@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Belgelerde aralıkları program aracılığıyla genişletme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919670"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>Nasıl Yapılır: Belgelerde aralıkları program aracılığıyla genişletme
   Tanımladıktan sonra bir <xref:Microsoft.Office.Interop.Word.Range> değiştirmeniz, başlangıç ve bitiş noktalarını kullanarak bir Microsoft Office Word belgesinde nesne <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> Ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri aynı iki bağımsız değişkeni alır *birim* ve *sayısı*. *Sayısı* değişkendir taşımak için birim sayısını ve *birim* bağımsız değişkeni, aşağıdakilerden biri olabilir <xref:Microsoft.Office.Interop.Word.WdUnits> değerleri:  
   
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
@@ -52,7 +49,7 @@ ms.locfileid: "49888677"
   
 ## <a name="to-extend-a-range"></a>Bir aralığı genişletmek için  
   
-1.  Karakter aralığı tanımlayın. Daha fazla bilgi için [nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
+1.  Karakter aralığı tanımlayın. Daha fazla bilgi için [nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
      Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir.  
   
@@ -93,9 +90,8 @@ ms.locfileid: "49888677"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Nasıl yapılır: aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Nasıl yapılır: program aracılığıyla paragraf işaretlerini aralık oluştururken hariç tutma](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
+ [Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Nasıl yapılır: Aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

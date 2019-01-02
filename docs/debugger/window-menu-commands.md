@@ -1,8 +1,6 @@
 ---
 title: Pencere menü komutları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window menu commands
@@ -12,33 +10,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1379bb236b1b29cd5747e67e73abcb1bc069acb0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e90d6dc7074ad6d70be783326e7617d0fd7e337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895655"
 ---
 # <a name="window-menu-commands"></a>Pencere Menü Komutları
-**Penceresi** menü komutları Spy ++ windows yönetmenizi sağlar.  
+**Penceresi** menü Spy ++ windows yönetmek için komutlar sağlar.  
   
- **CASCADE**  
- Tüm Pencereleri Basamakla desende yeniden düzenler.  
+ **Basamakla**  
+ Art arda desenindeki tüm windows yeniden düzenler.  
   
  **Yatay Döşe**  
- Yatay bölme desende tüm pencereleri düzenler.  
+ Yatay Döşe desenindeki tüm windows yeniden düzenleyin.  
   
  **Dikey Döşe**  
- Tüm windows Dikey bölme desende yeniden düzenler.  
+ Dikey Döşe desenindeki tüm windows yeniden düzenler.  
   
  **Simgeleri Düzenle**  
- Windows küçülttüğünüzde görünüm simgeleri yeniden düzenler.  
+ Windows küçülttüğünüzde görünümünü simgeleri yeniden düzenler.  
   
  **Tümünü Kapat / Kapat**  
- Spy ++'ta birini veya hepsini windows kapatır.  
+ Spy ++'ta bir ya da tüm pencereleri kapatır.  
   
  **Yenileme**  
  Seçili Görünümü yeniler.  
   
  **Pencere**  
- Belirli bir pencere seçimine izin verir.
+ Belirli bir pencere seçilmesine izin verir.

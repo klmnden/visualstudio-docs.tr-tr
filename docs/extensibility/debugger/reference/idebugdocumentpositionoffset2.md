@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentPositionOffset2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08b278d75068351d6d65511f74209c7208024cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eeedd1038b577be8a0e0cac46359cf0b05f0dc70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948293"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
-Bir kaynak dosya konumu olarak bir karakter uygun temsil eder.  
+Bir karakter uzaklığı olarak kaynak dosyada bir konumu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,15 +34,15 @@ IDebugDocumentPositionOffset2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Geçerli belge konumu için aralığını alır.|  
+|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Geçerli belge konumunu aralığını alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu aynı bilgileri döndürür [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ancak `char` belge baştan kaydırır. Bu bir disk üzerinde diğer bir deyişle, normalde döndürülen satır ve sütun bilgileri yerine karakterlerin tek boyutlu dizi var gibi bu belge sayısını gösterir.  
+ Bu aynı bilgileri döndürür [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ancak `char` belgenin başından kaydırır. Bu bir diskte diğer bir deyişle, normalde döndürülen satır ve sütun bilgisi yerine karakterlerin tek boyutlu dizi var gibi bu belgeyi sunar.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Msdbg.h  
+ Üst bilgi: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

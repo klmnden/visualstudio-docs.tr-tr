@@ -1,9 +1,6 @@
 ---
 title: DISASSEMBLY_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DISASSEMBLY_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d42a7c5e9247359abfcdb4d65db5a4e0de247e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b0e4f793b0dcfe7a8a35bfeb06a3acd53c969d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961015"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Ayrıştırılmış kod bayrakları belirtir.  
@@ -28,7 +25,7 @@ Ayrıştırılmış kod bayrakları belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_DISASSEMBLY_FLAGS {   
+enum enum_DISASSEMBLY_FLAGS {   
    DF_DOCUMENTCHANGE     = 0x00000001,  
    DF_DISABLED           = 0x00000002,  
    DF_INSTRUCTION_ACTIVE = 0x00000004,  
@@ -40,7 +37,7 @@ typedef DWORD DISASSEMBLY_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DISASSEMBLY_FLAGS {   
+public enum enum_DISASSEMBLY_FLAGS {   
    DF_DOCUMENTCHANGE     = 0x00000001,  
    DF_DISABLED           = 0x00000002,  
    DF_INSTRUCTION_ACTIVE = 0x00000004,  
@@ -77,7 +74,7 @@ public enum enum_DISASSEMBLY_FLAGS {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -2,7 +2,6 @@
 title: Çift Yönlü Dillerde Uygulamalar Oluşturma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 26c3ea5073d4b53c0a9d75c18722f1569aff8646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863640"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891621"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
 
@@ -43,7 +42,7 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 
 -   **Nesne adları** çift yönlü diller çözümleri, projeleri, dosyaları, klasörleri ve benzeri için ad atamak için kullanabilirsiniz. Kodu, değişkenleri, sınıflar, nesne, öznitelikler, meta verileri ve diğer öğeleri adları için çift yönlü diller kullanabilirsiniz.
 
--   **Dosya kodlama** kaydedebilir ve dosyaları bir dile özgü veya Unicode kodlaması ile açın. Daha fazla bilgi için [nasıl yapılır: dosyaları kaydetme ve açma kodlamayla](../ide/how-to-save-and-open-files-with-encoding.md).
+-   **Dosya kodlama** kaydedebilir ve dosyaları bir dile özgü veya Unicode kodlaması ile açın. Daha fazla bilgi için [nasıl yapılır: Kaydetme ve açma dosyaları kodlamayla](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="features-with-limited-or-no-support"></a>Sınırlı veya destek özellikleri
  Çift yönlü dil uygulamaları için ortak diğer özellikler tamamen Visual Studio'da veya bazı durumlarda, hiç desteklenmez. Bu güncelleştirmeler şunlardır:

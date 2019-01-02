@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -39,12 +38,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 847e4144c8846f0247d735ec640fc878a75fa82e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e66c47c0bf36bf98e4d5f0439d1c3cb84c6b999
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955415"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio'da (VB, C#, C++ ve XAML) bir Store uygulaması için hata ayıklama oturumu başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

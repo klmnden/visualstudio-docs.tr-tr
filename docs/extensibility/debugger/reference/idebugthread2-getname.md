@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::GetName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::GetName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 670ee7b9fe8262e981f3c0abeb57710c2da9b0e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d53d0e9a76caa1341494cea93311f9c912191c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948686"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Bir iş parçacığı adını alır.  
@@ -28,13 +25,13 @@ Bir iş parçacığı adını alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT GetName (   
+HRESULT GetName (   
    BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetName (   
+int GetName (   
    out string pbstrName  
 );  
 ```  

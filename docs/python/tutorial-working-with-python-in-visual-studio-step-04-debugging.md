@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Adım 4 çekirdek kılavuzun Visual Studio hata ayıklayıcıda Python kodu çalıştırmak nasıl yapılandırılacağını açıklayan, özelliklerin Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931547"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>4. adım: hata ayıklayıcıda kod çalıştırma
+# <a name="step-4-run-code-in-the-debugger"></a>4. Adım: Hata ayıklayıcıda kod çalıştırma
 
-**Önceki adımda: [etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Önceki adım sayısı: [Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Ek projeleri bir zengin düzenleme deneyimi, sağlama, yönetme ve **etkileşimli** penceresinde Visual Studio'nun sağladığı tam özellikli Python kodu için hata ayıklama. Hata ayıklayıcıda, her bir döngü yinelemesi dahil olmak üzere adım adım kodunuzu çalıştırabilirsiniz. Bazı koşullar doğru olduğunda da program duraklatabilirsiniz. Herhangi bir noktada hata ayıklayıcıda program duraklatıldığında tüm program durumunu inceleyebilir ve değişkenleri değiştirin. Bu tür eylemleri program hataları izlemek için gerekli olan ve dikkatli bir şekilde tam program akışını izlemek için çok yararlı yardımları de sağlar.
 

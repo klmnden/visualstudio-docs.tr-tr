@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953004"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl Yapılır: Hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
 
 Tanılama veri bağdaştırıcısı için görsel Stdio, belirli tanı izleme bilgilerini toplamak için IntelliTrace'i yapılandırabilirsiniz. Testler bu bağdaştırıcıyı kullanabilir, test, uygulama için büyük miktarda tanılama olayları toplayabilir ve sonrasında bir geliştirici bu olayları, kodu izleyip bir hatanın nedenini bulmak üzere kullanabilir. IntelliTrace için tanılama veri bağdaştırıcısı el ile veya otomatik testler için kullanılabilir.
 

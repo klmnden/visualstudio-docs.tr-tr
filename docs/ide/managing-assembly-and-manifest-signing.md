@@ -2,7 +2,6 @@
 title: Derleme ve bildirim imzalamayı yönetme
 ms.date: 02/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927577"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Derleme ve bildirim imzalamayı yönetme
 
@@ -70,7 +69,7 @@ Ayrıca, önceden oluşturduğunuz bir anahtara işaret edebilir. Anahtarları o
 
 Yalnızca ortak anahtar erişimi varsa, anahtar atama erteleneceği Gecikmeli imzalama'ı kullanabilirsiniz. Seçerek imzalamayı geciktirme etkinleştirme **gecikme yalnızca oturum** onay kutusu. Gecikmeli imzalanmış bir proje çalıştırmaz ve hata ayıklaması yapılamıyor. Ancak, geliştirme sırasında doğrulama kullanarak atlayabilir [Sn.exe tanımlayıcı ad aracı](/dotnet/framework/tools/sn-exe-strong-name-tool) ile `-Vr` seçeneği.
 
-Bildirimleri imzalama hakkında daha fazla bilgi için bkz: [nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama](../ide/how-to-sign-application-and-deployment-manifests.md).
+Bildirimleri imzalama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

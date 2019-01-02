@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata::get_addresssection | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd246ce9f547f72936a899602c439d1afcd05a45
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 291db81f2c17b5baa6d5b719b659b07919b86508
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898732"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
 Çerçeve kodunu adresini bölüm parçası alır.  
@@ -27,7 +25,7 @@ ms.locfileid: "49911440"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_addressSection (   
+HRESULT get_addressSection (   
    DWORD* pRetVal  
 );  
 ```  

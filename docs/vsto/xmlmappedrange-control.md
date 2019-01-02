@@ -1,9 +1,6 @@
 ---
 title: XmlMappedRange denetimi
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9cf21ceda64fe79996e05426a3379972c3c4be33
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f19bf36b145a5f2c1b4e841a96cdd485a0fb6ac1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946710"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange denetimi
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Yalnızca yinelenmeyen bir şema öğesine Microsoft Office Excel'de eşlendiğinde oluşturan bir aralık denetimidir. Örneğin, `maxOccurs` bir şema öğesinin özniteliği, 1 değerine eşittir. Visual Studio XML eşlenmiş aralığı oluşturduktan sonra Excel nesne modeline geçiş yapmak zorunda kalmadan doğrudan karşı programlama yapabilirsiniz. Yalnızca silebilirsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> öğe eşlemesi kaldırıldığında Excel'den denetimi.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [bunu nasıl yaparım kullanım XML eşleme Excel'de?](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? XML eşleme Excel'de kullanılsın mı? ](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## <a name="bind-data-to-the-control"></a>Veriyi denetime bağlama  
  Bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimi bağlama için tek bir veri alanı (Basit veri bağlama) destekler. <xref:Microsoft.Office.Tools.Excel.ListObject> Denetimi karmaşık veri bağlamayı destekler ve yinelenen bir şema öğesine bir hücreye eşlendiğinde otomatik olarak oluşturulur. Daha fazla bilgi için [ListObject denetimine](../vsto/listobject-control.md).  
@@ -62,9 +59,7 @@ ms.locfileid: "35677390"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)   
- [Nasıl yapılır: çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [Nasıl yapılır: Çalışma sayfalarına XMLMappedRange denetimleri ekleme](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Nasıl yapılır: şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [Nasıl yapılır: Şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

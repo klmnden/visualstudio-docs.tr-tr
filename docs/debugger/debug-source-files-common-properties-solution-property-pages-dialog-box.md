@@ -1,8 +1,6 @@
 ---
 title: Kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -24,24 +22,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a722422306a16ee7e2dc340448f0e082f8a1f014
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931914"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Kaynak Dosyalarda Hata Ayıklama, Ortak Özellikler, Çözüm Özellik Sayfaları İletişim Kutusu
-Bu özellik sayfası, burada hata ayıklayıcı kaynak dosyaları için çözüm hata ayıklama sırasında görüneceğini belirtir.  
+Bu özellik sayfası, burada hata ayıklayıcı kaynak dosyaları için hata ayıklama çözümü görüneceğini belirtir.  
   
- Erişim için **kaynak dosyalarında Hata Ayıkla** özellik sayfası, çözümünüze sağ tıklatın **Çözüm Gezgini** seçip **özellikleri** kısayol menüsünden. Genişletme **ortak özellikleri** klasörü ve tıklatın **kaynak dosyalarında Hata Ayıkla** sayfası.  
+ Erişim için **kaynak dosyalarında Hata Ayıkla** özellik sayfası, çözümünüzde sağ **Çözüm Gezgini** seçip **özellikleri** kısayol menüsünden. Genişletin **ortak özellikler** klasör seçeneğine tıklayıp **kaynak dosyalarında Hata Ayıkla** sayfası.  
   
  **Kaynak kodu içeren dizinler**  
- İçinde hata ayıklayıcı kaynak dosyaları için çözüm hata ayıklama sırasında arar dizinlerin listesini içerir. Belirtilen dizin alt dizinler de aranır.  
+ İçinde hata ayıklayıcı kaynak dosyaları için çözüm hata ayıklama sırasında arar dizinlerin bir listesini içerir. Ayrıca, belirtilen dizinlerin alt dizinler aranır.  
   
  **Bu kaynak dosyaları için konum değil**  
- Okumak için hata ayıklayıcı istemediğiniz dosya adlarını girin. Hata ayıklayıcı bu dosyalardan birini yukarıda belirtilen dizinlerden biri bulursa, onu dikkate almaz. Varsa **kaynağı Bul** ayıkladığınız ve tıklattığınız olsa da, iletişim kutusu gelir **iptal**, böylece hata ayıklayıcı bu dosya için arama devam etmez arama için dosyayı bu listeye eklenen.  
+ Okumak için hata ayıklayıcı istemediğiniz tüm dosyaların adlarını girin. Hata ayıklayıcı bu dosyalardan biri yukarıda belirtilen dizinlerde birini bulursa, onu yoksayar. Varsa **kaynağı Bul** hata ayıklama ve tıkladığınız sırada iletişim kutusu açıldığında **iptal**, aradığınız dosya hata ayıklayıcı bu dosya için aramaya devam etmeyecek, böylece bu listeye eklenmesine.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama güvenliği](../debugger/debugger-security.md)   
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)
+ [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
+ [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)

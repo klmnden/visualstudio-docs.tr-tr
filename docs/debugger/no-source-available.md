@@ -1,8 +1,6 @@
 ---
 title: Kullanılabilir kaynak yok | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
@@ -19,28 +17,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aae4b2428470e3e33477cfdb36699c2c1da20c1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8673db7f0e31a32e7e4fdf92e447f373b5a29dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945281"
 ---
 # <a name="no-source-available"></a>Kullanılabilir Kaynak Yok
-Projeniz için görüntülemeye çalıştığınız kaynak kodu içermiyor. Kaynak kodu sahip olmayan bir modül normal neden çift **çağrı yığını penceresinde** veya **iş parçacıkları penceresi**. Hata ayıklama devam edebilirsiniz, ancak kaynak penceresini kesme noktalarını ayarlayın ve bu konumda başka eylemler gerçekleştirmek için kullanamazsınız. Bir kesme noktası belirleyerek gerekiyorsa kullanın **ayrıştırma penceresi** yerine.  
+Projenizin kaynak kodunu görüntülemeye çalıştığınız kod içermiyor. Olağan sebep, kaynak kodu olmayan bir modül çift **çağrı yığını penceresinde** veya **iş parçacıkları penceresi**. Hata ayıklamak, devam edebilirsiniz, ancak kaynak penceresinde kesme noktaları ayarlamak ve bu konumdaki diğer eylemleri gerçekleştirmek için kullanamazsınız. Bir kesme noktası ayarlamak ihtiyacınız varsa, **ayrıştırma penceresi** yerine.  
   
- Çözüm özellik sayfaları burada hata ayıklayıcı kaynakları dosya arayan dizinleri değiştirin ve seçilen kaynak dosyaları gözardı etmek için hata ayıklayıcı söyleyin. Bkz: [Debug kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
+ Çözüm özellik sayfaları'nda hata ayıklayıcı kaynakları dosyalarını nerede arar dizinleri değiştirin ve seçili kaynak dosyaları yoksaymak için hata ayıklayıcının işlemi durdurmasını. Bkz: [kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu için hata ayıklama](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  
   
  **Kaynak kodu bulmak için Gözat**  
- Burada kaynak kodu bulmak için gözatabilirsiniz bir iletişim kutusunu açmak için bu bağlantıyı tıklatın.  
+ Burada kaynak kodunu bulmak için gözatabilirsiniz bir iletişim kutusunu açmak için bu bağlantıya tıklayın.  
   
- **Ayrıştırılmış Göster**  
- Başlatır **ayrıştırma penceresi**.  
+ **Ayrıştırılmış Kodu Göster**  
+ Başlatan **ayrıştırma penceresi**.  
   
- **Her zaman kaynak dosyalarını eksik ayrıştırılmış Göster**  
- Görüntülemek için bu seçeneği belirleyin **ayrıştırma penceresi** otomatik olarak kaynak olduğunda kullanılabilir. Bu ayar ayrıca değiştirilebilir **seçenekleri** iletişim kutusu, **hata ayıklama** kategorisi, **genel** seçerek veya temizleyerek sayfasında, **Göster ayrıştırılmış kodu varsa kaynağı kullanılamıyor**.  
+ **Eksik kaynak dosyaların ayrıştırmasını her zaman göster**  
+ Görüntülemek için bu seçeneği belirleyin **ayrıştırma penceresi** otomatik olarak kaynak olduğunda kullanılabilir. Bu ayar, ayrıca değiştirilebilir **seçenekleri** iletişim kutusu, **hata ayıklama** kategori **genel** seçerek veya temizleyerek sayfasında, **ayrıştırılmış Kodu Göster, Kaynak kullanılamıyor**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları, ortak özellikler, çözüm özellik sayfaları iletişim kutusu hata ayıklama](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [Simge (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [SOS.dll (SOS Hata Ayıklama Uzantısı)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

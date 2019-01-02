@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Exclude veya kısa işlevleri izlemeden Include | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Hariç tutma veya dahil kısa işlevleri izlemeden | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, instrument events
@@ -14,32 +12,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6234db781925e8c0558513cb7e8bc608b5cfea
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: adeff3a6f068c5432f1640cd96752a84228b8ad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896116"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Nasıl yapılır: hariç tutma veya kısa işlevleri izlemeden içerir
-Profil oluşturma araçları varsayılan olarak, dışarıda *küçük işlevleri* izlemeden. İşlev çağrıları yapma kısa işlevleri küçük işlevlerdir. Bu kısa işlevleri dışlama araçları tarafından yükü daha azdır için sağlar ve bu nedenle araçları hızı geliştirilmiş. Kısa işlevleri dışlama ayrıca performans veri dosyası profil azaltır (. *Vsp*) boyutunu ve çözümleme için gereken süreyi. Küçük işlevler hariç, küçük işlevlerde geçen süre üst işlevleriyle özel ve kapsayıcı zaman karşı sayar. Küçük işlevler hariç veya Araçları'nda, aşağıdaki yordamda açıklandığı gibi dahil.  
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Nasıl Yapılır: Kısa işlevleri izlemeden hariç tutma veya izlemeye dahil etme
+Varsayılan olarak, profil oluşturma araçları hariç *küçük işlevlerin* İzleme'den. Küçük işlevlerin işlev çağrıları yapmayın kısa işlevlerdir. Bu küçük işlevler hariç için izleme yükü daha azdır sağlar ve bu nedenle izleme hızı geliştirildi. Küçük işlevlerin dışlama ayrıca profil oluşturma veri dosyasından performans azaltır (. *Vsp*) boyutunu ve analiz için gerekli olduğu süre. Küçük işlevlerin dışlanırsa, küçük işlevlerde geçen süre üst işlevlerini özel ve kapsamlı süre karşı sayar. Küçük işlevlerin dışlanan veya Araçları'nda, aşağıdaki yordamda açıklandığı gibi dahil.  
   
-### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Hariç tutma veya kısa işlevleri izlemeden eklemek için  
+### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Kısa işlevleri izlemeden hariç tutmak veya  
   
-1.  İçinde **performans Gezgini**seçin **Performans oturumunu** ve ardından sağ tıklatın ve seçin **özellikleri**.  
+1.  İçinde **performans Gezgini**seçin **performans oturumu** ve ardından sağ tıklayıp **özellikleri**.  
   
      **Özellik sayfaları** iletişim kutusu görüntülenir.  
   
-2.  İçinde **özellik sayfaları**, tıklatın **Araçları** özellikleri.  
+2.  İçinde **özellik sayfaları**, tıklayın **izleme** özellikleri.  
   
-3.  Kısa işlevleri izleme hariç tutmak için işaretleyin **araçları kısa işlevleri dışlama**. Varsayılan ayar budur.  
+3.  Kısa işlevleri izlemeden hariç tutmak için seçin **kısa işlevleri izlemeden hariç**. Varsayılan ayar budur.  
   
-     veya  
+     -veya-  
   
-     Kısa işlevleri de araçları içerecek şekilde temizleyin **araçları kısa işlevleri dışlama**.  
+     Kısa işlevleri Araçları'nda dahil etmek için Temizle **kısa işlevleri izlemeden hariç**.  
   
 4.  **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Denetimin veri toplama](../profiling/controlling-data-collection.md)   
+ [Veri toplamayı denetleme](../profiling/controlling-data-collection.md)   
  [Performans oturumu özellikleri](../profiling/performance-session-properties.md)

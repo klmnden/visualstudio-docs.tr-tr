@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Temel Phong Gölgelendiricisi Oluşturma'
+title: 'Nasıl Yapılır: Temel Phong gölgelendiricisi oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3120142b2d6fae7c8ee02c81f6ae76efb0aaaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934128"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Nasıl yapılır: temel Phong gölgelendiricisi oluşturma
+# <a name="how-to-create-a-basic-phong-shader"></a>Nasıl Yapılır: Temel Phong gölgelendiricisi oluşturma
 
 Bu makalede, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) Klasik Phong aydınlatma modeli uygulayan aydınlatma gölgelendirici oluşturmak için nasıl kullanılacağını gösterir.
 
@@ -25,11 +24,11 @@ Bu makalede, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelen
 
 Phong aydınlatma modeli, yansıtıcı bir yüzeyi özellikleri benzetir Yansımalı vurgulama içerecek şekilde Lambert aydınlatma modeli genişletir. Lambert aydınlatma modeli kullandığınız aynı kaynaktan Yönlü ışık ek aydınlatma Yansımalı bileşen sağlar, ancak kendi son renk katkısı farklı şekilde işlenir. Yansımalı vurgulama her yüzeyi sahnedeki farklı görünüm yönünü, yönü ışık kaynağı yüzey yönü arasındaki ilişkiye bağlı etkiler. Yansımalı renk, yansımalı güç ve yönlendirmesini yüzeyi ve renk, şiddeti ve yönü ışık kaynaklarına bir üründür. Maksimum Yansımalı katkı Görüntüleyicisi, doğrudan ışık kaynağına yansıtacak yüzeylerini alır ve ışık kaynağına Sırtı Görüntüleyicisi yansıtacak yüzeylerini hiçbir katkı alırsınız. Phong aydınlatma modeli altında bir veya daha fazla Yansımalı bileşenleri her noktasında bir nesne için yansımalı vurgulamanın yoğunluğu ve renk belirlemek için birleştirilir ve ardından pikselin son rengini üretmek için Lambert aydınlatma modeli sonucuna eklenir .
 
-Lambert aydınlatma modeli hakkında daha fazla bilgi için bkz: [nasıl yapılır: temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
+Lambert aydınlatma modeli hakkında daha fazla bilgi için bkz: [nasıl yapılır: Temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Başlamadan önce emin **özellikleri** penceresi ve **araç kutusu** görüntülenir.
 
-1. Bölümünde anlatıldığı gibi bir Lambert gölgelendiricisi oluşturma [nasıl yapılır: temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Bölümünde anlatıldığı gibi bir Lambert gölgelendiricisi oluşturma [nasıl yapılır: Temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Bağlantı kesme **Lambert** düğümünden **son rengini** düğümü. Seçin **RGB** , terminal **Lambert** düğümünü seçip **Bağlantıları Kes**. Bu, sonraki adımda eklenen düğümü için yer sağlar.
 
@@ -63,7 +62,7 @@ Başlamadan önce emin **özellikleri** penceresi ve **araç kutusu** görüntü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır. 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md)
 - [Nasıl yapılır: Temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)

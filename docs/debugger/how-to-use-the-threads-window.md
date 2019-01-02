@@ -1,9 +1,7 @@
 ---
 title: Çok iş parçacıklı uygulamaların hatalarını ayıklama
 description: Visual Studio'da iş parçacıkları penceresi ve hata ayıklama konumu araç çubuğu kullanarak hata ayıklama
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893713"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>İzlenecek yol: iş parçacıkları penceresini kullanarak birden çok iş parçacıklı bir uygulamanın hatalarını ayıklama
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>İzlenecek yol: İş parçacıkları penceresini kullanarak bir çok iş parçacıklı uygulamaların hatalarını ayıklama
 
 Birçok Visual Studio kullanıcı arabirimi öğeleri birden çok iş parçacıklı uygulamaların hatalarını ayıklamanıza yardımcı olur. Bu makale Kod Düzenleyicisi penceresinde birden çok iş parçacıklı hata ayıklama özellikleri tanıtır **hata ayıklama konumu** araç ve **iş parçacıkları** penceresi. Hata ayıklama çok iş parçacıklı uygulamalar için diğer araçları hakkında daha fazla bilgi için bkz: [birden çok iş parçacıklı uygulamalarında hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md). 
   
@@ -99,7 +97,7 @@ Kaynak Kod Düzenleyicisi'ni ya da iş parçacıklarını bayrakla işaretleme v
 
 1. Açık **hata ayıklama konumu** seçerek araç **görünümü** > **araç çubukları** > **hata ayıklama konumu**. Ayrıca araç çubuğu alanına sağ tıklatıp seçin **hata ayıklama konumu**. 
    
-1. **Hata ayıklama konumu** araç üç alan vardır: **işlem**, **iş parçacığı**, ve **yığın çerçevesi**. Açılan menü **iş parçacığı** listesinde ve ne kadar iş parçacığı yok olduğuna dikkat edin. İçinde **iş parçacığı** liste, şu anda çalışan bir iş parçacığı olarak işaretlenmiş bir **>** simgesi. 
+1. **Hata ayıklama konumu** araç üç alan vardır: **İşlem**, **iş parçacığı**, ve **yığın çerçeve**. Açılan menü **iş parçacığı** listesinde ve ne kadar iş parçacığı yok olduğuna dikkat edin. İçinde **iş parçacığı** liste, şu anda çalışan bir iş parçacığı olarak işaretlenmiş bir **>** simgesi. 
    
 1. Kaynak kod penceresinde, bir iş parçacığı işaret simgesi cilt payını üzerine gelin ve DataTip içinde bayrak simgesine (veya boş bayrağını simge) seçin. Bayrak simgesine kırmızıya döner. 
    
@@ -188,4 +186,4 @@ Artık, hata ayıklama çok iş parçacıklı uygulamalar hakkındaki temel bilg
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl yapılır: Hata ayıklarken başka bir iş parçacığına geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Nasıl yapılır: Hata ayıklarken başka bir iş parçacığına geçiş](../debugger/how-to-switch-to-another-thread-while-debugging.md)

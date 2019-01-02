@@ -1,8 +1,6 @@
 ---
 title: Hata ayıklama ve uyarı iletişim kutuları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 918c59d1da1c1d84b4e9cb2cea8e54b4dc632fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938821"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Hataları Ayıklama ve Uyarı İletişim Kutuları
 Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata ayıklama sırasında karşılaşabileceğiniz uyarı.  
@@ -56,10 +54,10 @@ Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata a
   
  [Makineye bağlanılamıyor](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [Hata: Sistemde Çekirdek Hata Ayıklayıcı Etkinleştirildiğinden Hata Ayıklama Mümkün Değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Hata: Hata ayıklama mümkün bir çekirdek hata ayıklayıcısı sistemde etkin](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Betik ve Web hata ayıklama: hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Betik ve Web hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Uzaktan hata ayıklama hataları](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   

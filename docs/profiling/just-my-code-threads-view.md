@@ -1,8 +1,6 @@
 ---
 title: Yalnızca kendi kodum (iş parçacıkları görünümü) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.jmc
@@ -14,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b194dbddcd4a0b89c05944de9160bb2e39d43c6
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877425"
 ---
 # <a name="just-my-code-threads-view"></a>Yalnızca Kendi Kodum (İş Parçacıkları Görünümü)
-Bu seçeneği seçerseniz, yalnızca kodunuzu artı çağrılan işlevlerin bir düzey göstermek için çağrı yığını filtre uygular.  
+Bu seçeneği belirlerseniz, çağrı yığını, yalnızca kodunuzu artı çağrılan fonksiyonların bir seviyesini göstermek için filtre uygular.  
   
- Bu seçeneği etkinleştirilerek çağrı yığını karmaşıklığını önemli ölçüde azaltmak ve belki de belirli bir sorunu tanılamak daha kolay hale getirebilirsiniz.  
+ Bu seçeneği etkinleştirilerek çağrı yığınının karmaşıklığını önemli ölçüde azaltan ve belki de belirli bir sorunu tanılamak daha kolay hale getirebilirsiniz.  
   
- Bazı durumlarda, bu seçeneğin belirlenmesi engelleme duyurmak filtre uygulayabilir. Bu durumu tespit için tam çağrı yığını ayrıntıları gerektiriyorsa, tam çağrı yığını göstermek için bu seçeneği temizleyin.  
+ Bazı durumlarda, bu seçeneğin belirlenmesi, engelleme duyurmak filtre uygulayabilir. Bu belirlenmesi için tam çağrı yığın ayrıntılarını gerektiriyorsa, tam çağrı yığınını kullanıma sunmak için bu seçeneği temizleyin.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)   

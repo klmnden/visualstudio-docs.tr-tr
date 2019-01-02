@@ -1,9 +1,6 @@
 ---
 title: Metin arabelleği olayları eski API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 62bf7670a40b2cf8094793f833dfa7bcc038cdb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909820"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Metin arabelleği olayları eski API
 Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç farklı olaylar gönderir.  

@@ -1,9 +1,6 @@
 ---
 title: Özel belge kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, saving custom documents
@@ -15,35 +12,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5425a1c35816fd85847915029e3b6f2da1ed75a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fd55353d09f7e08572eecb6c4729205150c2b03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932661"
 ---
-# <a name="saving-a-custom-document"></a>Özel belge kaydetme
-Ortam tanıtıcıları **kaydetmek**, **Kaydet**, ve **Tümünü Kaydet** komutları. Bir kullanıcı tıkladığında **kaydetmek**, **Kaydet**, **veya Tümünü Kaydet** üzerinde **dosya** menüsü veya bir Tümünü Kaydet içinde aşağıdaki kaynaklanan çözüm kapatır işlem gerçekleşir.  
+# <a name="saving-a-custom-document"></a>Özel Belge Kaydetme
+Ortam tutamaçları **Kaydet**, **Kaydet**, ve **Tümünü Kaydet** komutları. Kullanıcı tıkladığında **Kaydet**, **Kaydet**, **veya Tümünü Kaydet** üzerinde **dosya** menüsü veya bir Tümünü Kaydet içinde aşağıdaki kaynaklanan çözümü kapatır işlem gerçekleşir.  
   
  ![Müşteri Düzenleyicisini Kaydetme](../../extensibility/internals/media/private.gif "özel")  
-Kaydet Kaydet ve Tümünü Kaydet komut için özel bir düzenleyici işleme  
+Kaydet ve işleme için özel bir düzenleyici Tümünü Kaydet komut Kaydet  
   
- Bu işlem aşağıdaki adımlarda ayrıntılı olarak açıklanmıştır:  
+ Bu işlem aşağıdaki adımları ayrıntılı olarak verilmiştir:  
   
-1.  İçin **kaydetmek** ve **Kaydet** komutları ortamı kullanır <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> etkin belge penceresini belirlemek için hizmet ve böylece hangi öğeler kaydedilmelidir. Etkin belge penceresini bilinen sonra ortamı öğe tanımlayıcısı (ItemId) ve hiyerarşi işaretçi çalışan belge tablosu belgede bulur. Daha fazla bilgi için bkz: [çalıştıran Belge tablosu](../../extensibility/internals/running-document-table.md).  
+1.  İçin **Kaydet** ve **Kaydet** komutlar, ortamı kullanır <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> etkin belge penceresini belirlemek için hizmet ve böylece hangi öğeler kaydedilmelidir. Etkin belge penceresini tanındıktan sonra ortam öğe tanımlayıcısı (öğe kimliği) ve hiyerarşi işaretçi çalıştırılan Belge tablosu belgede bulur. Daha fazla bilgi için [çalıştırılan Belge tablosu](../../extensibility/internals/running-document-table.md).  
   
-     Tümünü Kaydet komut için ortam kaydetmek için tüm öğeleri listesi derlemek için çalışan belge tablosunda bilgileri kullanır.  
+     Tümünü Kaydet komut için ortamı kaydetmek için tüm öğelerin listesini derlemek için çalışan belge tablosunda bilgileri kullanır.  
   
-2.  Çözümü zaman alan bir <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> çağrısı, seçilen öğeleri kümesi içinde tekrarlanan (tarafından sunulan başka bir deyişle, birden çok seçimin <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> hizmet).  
+2.  Çözüm aldığında bir <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> çağrı, seçilen öğeleri dizi aracılığıyla yinelenir (diğer bir deyişle, tarafından kullanıma sunulan birden çok seçimin <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> hizmeti).  
   
-3.  Seçilen her bir öğede çözüm çağırmak için hiyerarşi işaretçisi kullanır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> Kaydet menü komutu etkin olup olmadığını belirlemek için yöntem. Bir veya daha fazla öğe kirli, Kaydet komutunu etkindir. Hiyerarşi Standart Düzenleyici kullanıyorsa, ardından sorgulanırken hiyerarşi temsilciler Düzenleyicisi durumuna çağırarak kirli <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> yöntemi.  
+3.  Seçimdeki her bir öğede çözüm çağırmak için hiyerarşi işaretçi kullanır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> Kaydet menü komutunu etkinleştirilmesi gerekip gerekmediğini belirlemek için yöntemi. Ardından bir veya daha fazla öğe kirli, Kaydet komutunu etkinleştirilir. Hiyerarşi Standart Düzenleyici kullanıyorsa, ardından sorgulama hiyerarşi temsilcileri Düzenleyicisi durumuna çağırarak kirli <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> yöntemi.  
   
-4.  Kirli her seçili öğeye bağlı, çözüm çağırmak için hiyerarşi işaretçisi kullanır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> uygun hiyerarşileri yöntemi.  
+4.  Kirli her seçili öğe üzerinde çözüm çağırmak için hiyerarşi işaretçi kullanır <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> uygun hiyerarşilerindeki yöntemi.  
   
-     Özel bir düzenleyici söz konusu olduğunda, belge veri nesnesi ve proje arasındaki iletişimi özeldir. Bu nedenle, bu iki nesne tüm özel Kalıcılık sorunları ele alınır.  
+     Özel bir düzenleyici söz konusu olduğunda belge veri nesnesi ile proje arasındaki iletişimi özeldir. Bu nedenle, bu iki nesne herhangi bir özel Kalıcılık konuları ele alınır.  
   
     > [!NOTE]
-    >  Kendi Kalıcılık uygularsanız, çağırdığınızdan emin olun <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> zamandan tasarruf yöntemi. Dosyayı kaydetmek güvenli olduğundan emin olmak için bu yöntem denetler (örneğin, dosya salt okunur değil).  
+    >  Kendi Kalıcılık uygularsanız, çağırdığınızdan emin olun <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> zaman kazanmak için yöntemi. Dosyayı kaydetmek güvenli olduğundan emin olmak için bu yöntem denetler (örneğin, dosyayı salt okunur değildir).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

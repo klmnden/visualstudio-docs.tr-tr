@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib::get_notpaged | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f494767820c59e7ece714768979b1778b79a8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75ae1f3244e20d4f1fa49ec316f3e1edf85c08c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910811"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
 Bölüm bellek yetersiz disk belleğine alınacak olamaz olup olmadığını gösteren bir bayrak alır.  
@@ -27,7 +25,7 @@ Bölüm bellek yetersiz disk belleğine alınacak olamaz olup olmadığını gö
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_notPaged (   
+HRESULT get_notPaged (   
    BOOL* pRetVal  
 );  
 ```  

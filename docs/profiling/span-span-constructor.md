@@ -1,8 +1,6 @@
 ---
 title: span::span Oluşturucusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe89b289601775fad8c102e696e799edce1c50c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 88112a9ee8f89ee0e3b4fc4a71633b9028b692bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952020"
 ---
 # <a name="spanspan-constructor"></a>span::span Oluşturucusu
 Yeni bir örneğini başlatır `span` sınıfı.  
@@ -69,7 +67,7 @@ span(
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** *cvmarkersobj.h*  
   
- **Namespace:** Concurrency::diagnostic
+ **Namespace:** CONCURRENCY::Diagnostic
  
  ## <a name="see-also"></a>Ayrıca bkz.
  [span sınıfı](../profiling/span-class.md)

@@ -1,9 +1,6 @@
 ---
 title: Klasörlerle çalışma
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,30 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cbfe7f673554543a8d84558175b64063db9710f8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 843019c1e7c845f0cdf2dcae7e571bf9ed991b79
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952621"
 ---
 # <a name="work-with-folders"></a>Klasörlerle çalışma
-  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> Sınıfı yöntemleri ve erişim, oluşturma ve klasörleri özelleştirmek için kullandığınız özellikler içerir.  
+  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> Sınıfı erişmek, oluşturmak ve klasör özelleştirmek için kullandığınız özellikler ve yöntemler içerir.  
   
 |Görev|Yordam|  
 |----------|---------------|  
-|Arama dizelerini iletilerin konu alanında **gelen**.|[Nasıl yapılır: belirli klasör içinde program aracılığıyla arama](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|  
-|Bir klasöre bir başvurusu alın ve içeriği görüntülenemiyor.|[Nasıl yapılır: program aracılığıyla klasörü ada göre alma](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|  
-|Önizleme bölmesinde bir Web sayfasını görüntüleyen bir klasör oluşturun.|[Nasıl yapılır: program aracılığıyla bir web sayfasını Outlook klasörüyle ilişkilendirme](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|  
-|Bir adı için geçerli kullanıcı Kimliğine sahip bir klasör oluşturun.|[Nasıl yapılır: program aracılığıyla özel klasör öğeleri oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md)|  
-|Belirtilen bir klasöre belirli ölçütlerle eşleşen iletileri taşıyın.|[Nasıl yapılır: Outlook'ta program aracılığıyla öğeleri taşıma](../vsto/how-to-programmatically-move-items-in-outlook.md)|  
+|Arama dizelerini iletilerin konu alanında **gelen**.|[Nasıl yapılır: Belirli klasör içinde program aracılığıyla arama yapma](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|  
+|Bir klasör için bir başvuru almak ve içeriğini görüntüler.|[Nasıl yapılır: Program aracılığıyla klasörü ada göre alma](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|  
+|Önizleme bölmesinde bir Web sayfasını görüntüleyen bir klasör oluşturun.|[Nasıl yapılır: Program aracılığıyla web sayfasını Outlook klasörüyle ilişkilendirme](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|  
+|Geçerli kullanıcı kimliği için bir adı olan bir klasör oluşturun.|[Nasıl yapılır: Program aracılığıyla özel klasör öğeleri oluşturma](../vsto/how-to-programmatically-create-custom-folder-items.md)|  
+|Belirli bir klasöre belirli ölçütlerle eşleşen iletileri taşıyın.|[Nasıl yapılır: Outlook'ta program aracılığıyla öğeleri taşıma](../vsto/how-to-programmatically-move-items-in-outlook.md)|  
   
- Outlook görevleri ve Outlook nesne modeli hakkında daha fazla bilgi için bkz: [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).  
+ Outlook görevleri ve Outlook nesne modeli hakkında daha fazla bilgi için bkz. [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)   
  [Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)   
  [Takvim öğeleriyle çalışma](../vsto/working-with-calendar-items.md)   
  [Outlook çözümleri](../vsto/outlook-solutions.md)  
-  
-  

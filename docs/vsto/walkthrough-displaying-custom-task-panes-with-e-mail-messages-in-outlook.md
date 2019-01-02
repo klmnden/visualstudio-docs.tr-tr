@@ -1,9 +1,6 @@
 ---
 title: "İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme"
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926592"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme
   Bu izlenecek yolda oluşturulan veya açılan her e-posta iletisiyle bir özel görev bölmesi benzersiz bir örneğini görüntülemek nasıl gösterir. Kullanıcılar, görüntülemek veya her e-posta iletisini Şeritteki bir düğmeyi kullanarak özel görev bölmesini gizle.  
@@ -60,14 +57,14 @@ ms.locfileid: "49828474"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya Microsoft Outlook 2010.  
   
-  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [ı: kullanım görev bölmeleri Outlook'ta bunu nasıl?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Görev bölmeleri Outlook'ta kullanılsın mı? ](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Projeyi oluşturma  
  Özel görev bölmeleri, VSTO eklentileri uygulanır. Outlook için VSTO eklentisi projesi oluşturarak başlayın.  
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Oluşturma bir **Outlook eklentisi** adlı proje **OutlookMailItemTaskPane**. Kullanım **Outlook eklentisi** proje şablonu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Oluşturma bir **Outlook eklentisi** adlı proje **OutlookMailItemTaskPane**. Kullanım **Outlook eklentisi** proje şablonu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır *ThisAddIn.cs* veya *ThisAddIn.vb* ekler ve kod dosyası **OutlookMailItemTaskPane** için proje **Çözüm Gezgini**.  
   
@@ -199,7 +196,7 @@ ms.locfileid: "49828474"
     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  Hata olmadan derlediğinden emin olmak için projenizi derleyin.  
   
 ### <a name="to-build-your-project"></a>Projenizi yapılandırmak için  
@@ -267,17 +264,15 @@ ms.locfileid: "49828474"
   
 -   Özel görev bölmesi VSTO eklentisi için farklı bir uygulama oluşturun. Özel görev bölmeleri destekleyen uygulamalar hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).  
   
--   Bir Microsoft Office uygulamasının özel görev bölmesini kullanarak otomatik hale getirin. Daha fazla bilgi için [izlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Bir Microsoft Office uygulamasının özel görev bölmesini kullanarak otomatik hale getirin. Daha fazla bilgi için [izlenecek yol: Bir uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Bir Şerit düğmesi, bir özel görev bölmesini görüntülemek veya gizlemek için kullanılan Excel'de oluşturun. Daha fazla bilgi için [izlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Bir Şerit düğmesi, bir özel görev bölmesini görüntülemek veya gizlemek için kullanılan Excel'de oluşturun. Daha fazla bilgi için [izlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Özel görev bölmeleri](../vsto/custom-task-panes.md)   
- [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [İzlenecek yol: Bir uygulamayı özel görev bölmesinden otomatikleştirme](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)   
  [Şerit, çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Otomasyon modeline katkıda bulunma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d56b446914ae7345ccb0d393db8f17fc7f82c47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6db9cd21b56fb4d31a97fea9f16541377a8de1f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952608"
 ---
 # <a name="contribute-to-the-automation-model"></a>Otomasyon modeline katkıda bulunma
 Visual Studio ortamı özelleştirmek için Otomasyon arabirimlerini sunmaktadır. Otomasyon modeli, Visual Studio eklentileri ve uzantıları oluşturmak son kullanıcıların sağlayan nesne modelidir.  
@@ -61,4 +58,3 @@ Visual Studio ortamı özelleştirmek için Otomasyon arabirimlerini sunmaktadı
 ## <a name="reference"></a>Başvuru  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
  VSPackage DTE Otomasyon nesne modeli içerisinde nasıl katıldığı gösteren bir kod örneği sağlanmıştır. Seçili açıklamalar parametreleri ve dönüş değerleri listelenmektedir.  
-  

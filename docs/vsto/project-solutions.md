@@ -1,9 +1,6 @@
 ---
 title: Proje çözümleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909781"
 ---
 # <a name="project-solutions"></a>Proje çözümleri
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Project için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, proje otomatikleştirmek, proje özellikleri genişletmek veya proje kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.  
@@ -67,7 +64,7 @@ ms.locfileid: "35677742"
  Project UI ve diğer Microsoft Office uygulamalarının özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: ilk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [VSTO eklentileri programlama kullanmaya başlayın](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
@@ -77,5 +74,3 @@ ms.locfileid: "35677742"
  [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)   
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [Project 2010 ve Project Server 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

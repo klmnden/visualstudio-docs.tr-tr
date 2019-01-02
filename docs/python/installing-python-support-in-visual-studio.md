@@ -3,7 +3,6 @@ title: Python desteğini yükleme
 description: Python Tools için Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010, seçeneklerini ve yükleme konumlarını dahil olmak üzere kurulur.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c59aee52ca547b4d209870516beb359d7138366
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961757"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -83,7 +82,7 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
 - Kullanım [ **onarım** ](../install/repair-visual-studio.md) Visual Studio Yükleyicisi'nde seçeneği.
 - Onarmak ya da Python aracılığıyla yeniden **ayarları** > **uygulamalar ve Özellikler** Windows içinde.
 
-**Örnek hata**: etkileşimli işlem başlatılamadı: System.ComponentModel.Win32Exception (0x80004005): Bilinmeyen hata (0xc0000135) Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
+**Örnek hata**: Etkileşimli işlem başlatılamadı: System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() sırasında bilinmeyen hata (0xc0000135).
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -101,9 +100,9 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
 
 1. Python Araçları'nün uygun sürümüne, Visual Studio için Visual Studio sürümünüz için yükleyin:
 
-    - Visual Studio 2013: [Visual Studio 2013 için PTVS 2.2](https://github.com/Microsoft/PTVS/releases/v2.2). **Dosya** > **yeni proje** iletişim Visual Studio 2013'te, size bir kısayol için bu işlemi.
-    - Visual Studio 2012: [Visual Studio 2012 için PTVS 2.1](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010: [Visual Studio 2010 için PTVS 2.1](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013 için: [Visual Studio 2013 için PTVS 2.2](https://github.com/Microsoft/PTVS/releases/v2.2). **Dosya** > **yeni proje** iletişim Visual Studio 2013'te, size bir kısayol için bu işlemi.
+    - Visual Studio 2012 için: [PTVS 2.1 Visual Studio 2012 için](https://pytools.codeplex.com/downloads/get/920478)
+    - Visual Studio 2010 için: [PTVS 2.1 Visual Studio 2010 için](https://pytools.codeplex.com/downloads/get/920479)
 
 1. [Tercih ettiğiniz bir Python yorumlayıcısını yükleyerek](installing-python-interpreters.md). Bir yorumlayıcı yüklü ve Visual Studio zaten yüklüyse olmayan otomatik olarak algıla bkz [el ile bir ortamı tanımlamanız](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
@@ -134,4 +133,3 @@ burada:
 ### <a name="user-specific-installations-15-and-earlier"></a>Kullanıcıya özgü yüklemeleri (1.5 ve öncesi)
 
 İzin yükleme yalnızca geçerli kullanıcı için Python araçları Visual Studio 1.5 ve önceki sürümler, bu durumda yükleme yolu *%LocalAppData%\Microsoft\VisualStudio\\< VS_ver > \Extensions\Microsoft\Python araçları Visual Studio için\\< PTVS_ver >* burada &lt;VS_ver&gt; ve &lt;PTVS_ver&gt; yukarıda açıklanan adıyla aynıdır.
-

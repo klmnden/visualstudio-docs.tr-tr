@@ -2,7 +2,6 @@
 title: Live Unit Testing SSS
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935599"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing sık sorulan sorular
 
@@ -97,7 +96,7 @@ Evet. Live Unit Testing, .NET Core ve .NET Framework ile çalışır. .NET Core 
 
 Çözümünüzü "Normal" belgelenmiş derleme için gerekli olmayan alt yapısı (Live Unit Testing) oluşturmak için özel aşamanın sonra kod projenize ekleyin veya *.targets* denetleyen dosyaları`BuildingForLiveUnitTesting` özelliğini ve özel ön/son derleme adımları gerçekleştirir. Ayrıca, (yayımlama veya paketleri oluşturma gibi) belirli derleme adımları kaldırın veya bu proje özelliğini temel alarak bir Live Unit Testing derleme (Önkoşullar kopyalama gibi) derleme adımları eklemek için de seçebilirsiniz. Tuto vlastnost nelze upravovat temel yapı özelleştirme normal yapı hiçbir şekilde değiştirmez ve Live Unit Testing yapıları yalnızca etkiler.
 
-Örneğin, normal bir yapı sırasında NuGet paketlerini üreten bir hedef olabilir. NuGet paketlerini yaptığınız her düzenlemeden sonra oluşturulacak büyük olasılıkla istemezsiniz. Bu nedenle, hedefleyen Live Unit Testing yapı aşağıdaki gibi yaparak devre dışı bırakabilirsiniz:  
+Örneğin, normal bir yapı sırasında NuGet paketlerini üreten bir hedef olabilir. NuGet paketlerini yaptığınız her düzenlemeden sonra oluşturulacak büyük olasılıkla istemezsiniz. Bu nedenle, hedefleyen Live Unit Testing yapı aşağıdaki gibi yaparak devre dışı bırakabilirsiniz:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Evet. Live Unit Testing, .NET Core ve .NET Framework ile çalışır. .NET Core 
 
 Örneğin, yapınızın kılıyorsa `<OutputPath>` aşağıda gösterildiği gibi:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Evet. Live Unit Testing, .NET Core ve .NET Framework ile çalışır. .NET Core 
 
 sonra aşağıdaki XML olarak değiştirebilirsiniz:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ Geçersiz `<OutDir>` doğrudan yapı işleminizde; geçersiz kılma `<OutputPath
 ## <a name="set-the-location-of-build-artifacts"></a>Derleme yapıtları konumunu ayarlama
 **Altında varsayılan konumu yerine belirli bir konuma gitmek için Live Unit Testing derleme yapıtları istiyorum *.vs* klasör. Bu sorunu nasıl değiştirebilirim?**
 
-Ayarlama `LiveUnitTesting_BuildRoot` istediğiniz Live Unit Testing derleme yapıtlarını bırakılan yola kullanıcı düzeyinde ortam değişkeni. 
+Ayarlama `LiveUnitTesting_BuildRoot` istediğiniz Live Unit Testing derleme yapıtlarını bırakılan yola kullanıcı düzeyinde ortam değişkeni. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Explorer vs test edin. Live Unit Testing test çalıştırmaları 
 **Nasıl testleri Test Gezgini penceresinden testleri Live Unit Testing içinde çalışan farklı mı çalışıyor?**
 
 Bazı farklılıklar vardır:
 
-- Çalıştırılırken veya hata ayıklama testlerden **Test Gezgini** penceresinde çalışır normal ikili dosyaları, izleme eklenmiş ikili dosyalar Live Unit Testing çalıştırılır. İzleme eklenmiş ikili dosyaların hatalarını ayıklamak isterseniz ekleyerek bir [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) test yönteminizde yöntem çağrısında yöntemi (ne zaman Live Unit Testing tarafından yürütülür dahil) yürütülür ve daha sonra herhangi bir zamanda başlatmak hata ayıklayıcı neden olur ekleme ve izleme eklenmiş ikili hatalarını ayıklayın. Ancak, çoğu kullanıcı senaryolarının saydam izleme ve hata ayıklama gerekmez izleme eklenmiş ikili dosyalar Hedefimiz olur.
+- Çalıştırılırken veya hata ayıklama testlerden **Test Gezgini** penceresinde çalışır normal ikili dosyaları, izleme eklenmiş ikili dosyalar Live Unit Testing çalıştırılır. İzleme eklenmiş ikili dosyaların hatalarını ayıklamak isterseniz ekleyerek bir [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) test yönteminizde yöntem çağrısında yöntemi (ne zaman Live Unit Testing tarafından yürütülür dahil), yürütülen herhangi bir zamanda başlatmak için hata ayıklayıcı neden olur ve ekleme ve izleme eklenmiş ikili hata ayıklama. Ancak, çoğu kullanıcı senaryolarının saydam izleme ve hata ayıklama gerekmez izleme eklenmiş ikili dosyalar Hedefimiz olur.
 
 - Live Unit Testing testleri çalıştırmak için yeni bir uygulama etki alanı oluşturmaz, ancak testleri çalıştırın **Test Gezgini** penceresi, yeni bir uygulama etki alanı oluşturun.
 
@@ -203,7 +202,7 @@ Bu değerleri kullanan testler Canlı birim testi tarafından çalıştırıldı
 
 Derleme hedef dosyalarınız uygun girdileri ve çıktıları belirtilen yoktur ve çözümünüzü oluşturma işlemi çözümün bir parçası olan kaynak kodu oluşturursa, düzenlemeleri değil olsa bile çözümünüzü oluşturabilirsiniz. MSBuild uygun güncel denetimleri gerçekleştirmek ve yeni bir derleme gerekip gerekmediğini hedefleri girişler ve çıkışlar listesini verilmelidir.
 
-Live Unit Testing, kaynak dosyaların değiştiğini algıladığında, bir derleme başlar. Live Unit Testing, çözümünüzün derleme kaynak dosyaları oluşturduğundan, bir derleme sonsuz döngüye elde edersiniz. Live Unit Testing ikinci derleme (önceki yapı yeni oluşturulan kaynak dosyalarını sistemlerimiz) başlatıldığında, girdileri ve çıktıları hedefinin ancak işaretli değilse, girdileri ve çıktıları denetimleri olur çünkü bu derleme döngüden her şeyin güncel olduğunu gösterir.  
+Live Unit Testing, kaynak dosyaların değiştiğini algıladığında, bir derleme başlar. Live Unit Testing, çözümünüzün derleme kaynak dosyaları oluşturduğundan, bir derleme sonsuz döngüye elde edersiniz. Live Unit Testing ikinci derleme (önceki yapı yeni oluşturulan kaynak dosyalarını sistemlerimiz) başlatıldığında, girdileri ve çıktıları hedefinin ancak işaretli değilse, girdileri ve çıktıları denetimleri olur çünkü bu derleme döngüden her şeyin güncel olduğunu gösterir.  
 
 ## <a name="lightweight-solution-load"></a>Basit çözüm yükü
 **Nasıl iş basit çözüm yükü özelliği ile test birimi Canlı?**
@@ -223,12 +222,12 @@ Bu bilinen bir sorundur ve Visual Studio 2017'in sonraki bir güncelleştirmede 
 
 Bu sorun düzeltilmiştir ve Visual Studio 2017 sürüm 15.3 yok. Visual Studio'nun bu sürümüne yükseltin.
 
-Visual Studio 2017'in eski sürümleri için bu bilinen bir sorundur. Bu sorunu çözmek için eklenen veya testleri hariç herhangi bir dosyaya bir düzenleme anlamak gerekir. 
+Visual Studio 2017'in eski sürümleri için bu bilinen bir sorundur. Bu sorunu çözmek için eklenen veya testleri hariç herhangi bir dosyaya bir düzenleme anlamak gerekir. 
 
 ## <a name="editor-icons"></a>Düzenleyici simgeleri
 **Çıktı penceresinde iletileri göre testleri çalıştırması için Live Unit Testing görünüyor olsa da neden hiçbir simge Düzenleyicisi'nde göremiyorum?**
 
-Live Unit Testing üzerinde çalışan derlemeler için herhangi bir nedenle izleme eklenmiş değildir, simge Düzenleyicisi'nde göremeyebilirsiniz. Örneğin, Live Unit Testing ayarlanan projeleri ile uyumlu olmayan `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Bu durumda, yapı işleminizin ya da bu ayarını kaldırın veya değiştirilmesi güncelleştirilmesi gerekiyor `true` çalışmak Live Unit Testing için. 
+Live Unit Testing üzerinde çalışan derlemeler için herhangi bir nedenle izleme eklenmiş değildir, simge Düzenleyicisi'nde göremeyebilirsiniz. Örneğin, Live Unit Testing ayarlanan projeleri ile uyumlu olmayan `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Bu durumda, yapı işleminizin ya da bu ayarını kaldırın veya değiştirilmesi güncelleştirilmesi gerekiyor `true` çalışmak Live Unit Testing için. 
 
 ## <a name="capture-logs"></a>Günlükleri yakalama
 **Dosya hata raporları için nasıl daha ayrıntılı günlüklere topluyor?**

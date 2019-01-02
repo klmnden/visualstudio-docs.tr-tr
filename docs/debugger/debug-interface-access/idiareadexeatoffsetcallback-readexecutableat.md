@@ -1,8 +1,6 @@
 ---
 title: Idiareadexeatoffsetcallback::readexecutableat | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f1c1ab49205a299b73837685b3d35b352a855d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d75529a2baebc6a5f488122106f47e512a4b9ac0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962162"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Belirtilen sayıda baytı bir yürütülebilir dosya öğesinden belirtilen bir uzaklık başlayarak okur.  
@@ -27,7 +25,7 @@ Belirtilen sayıda baytı bir yürütülebilir dosya öğesinden belirtilen bir 
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT ReadExecutableAt (   
+HRESULT ReadExecutableAt (   
    DWORDLONG fileOffset,  
    DWORD     cbData,  
    DWORD*    pcbData,  

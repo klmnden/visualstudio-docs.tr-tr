@@ -2,19 +2,18 @@
 title: Performansı iyileştirmeye yönelik ipuçları
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bdc20f22fc535028cb67939fed9c9472ed081428
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956900"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -123,7 +122,7 @@ Bazı araçları veya uzantıları performansını artırmak için kapatılabili
 
 CLR çöp toplama bellek yönetimi sistemi kullanır. Bu sistemde, bazen bellek artık gerekmeyen nesneler tarafından kullanılır. Bu durum geçici; Çöp toplayıcı, performans ve kaynak kullanımı buluşsal yöntemlerini temel alarak bu belleği serbest bırakır. Visual Studio'da bir kısayol tuşu kullanarak kullanılmayan belleği toplamak için CLR zorlayabilirsiniz. Önemli miktarda atık koleksiyonu için bekliyor ve bir Çöp toplamayı zorlamak, bellek kullanımını görmelisiniz *devenv.exe* işlem bırak **Görev Yöneticisi'ni**. Bu yöntemi kullanmak nadiren gereklidir. (Tam derleme, hata ayıklama oturumu veya bir çözüm açık olay gibi) pahalı bir işlem tamamlandıktan sonra ancak, ne kadar bellek gerçekten işlem tarafından kullanılıyor belirlemenize yardımcı olur. Visual Studio (yönetilen ve yerel) karışık olduğundan, bazen yerel ayırıcısı ve atık toplayıcı sınırlı bellek kaynaklarının mücadele etmek mümkündür. Yüksek bellek kullanım koşullarında, çöp toplayıcısının çalıştırmak için zorlayın yardımcı olabilir.
 
-Bir Çöp toplamayı zorlamak için kısayol tuşu kullanın: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (Bu iki defa basın).
+Bir Çöp toplamayı zorlamak için kısayol tuşu kullanın: **CTRL**+**Alt**+**Shift**+**F12**, **Ctrl** + **Alt**+**Shift**+**F12** (Bu iki defa basın).
 
 Çöp toplama güvenilir bir şekilde başlatılmasına gerek olursa çalışma, Visual Studio geri bildirim aracı üzerinden bir rapor dosyası bu hata büyük olasılıkla, davranıştır gibi senaryonuza sağlar.
 

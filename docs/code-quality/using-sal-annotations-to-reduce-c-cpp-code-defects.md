@@ -2,7 +2,6 @@
 title: C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -14,52 +13,52 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a48bca7afb59fa83e489c6f5cd96d115d8c872
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954338"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
-SAL Microsoft kaynak kodu ek açıklama dilidir. Kaynak kodu ek açıklamaları kullanılarak, hedefi kodunuzu açık yapabilirsiniz. Bu ek açıklamaları da kodunuzu daha doğru bir şekilde önemli ölçüde daha az sayıda hatalı pozitif sonuç ve false negatif ile analiz etmek otomatik statik çözümleme araçları sağlar.
+SAL Microsoft kaynak kodu ek açıklama dilidir. Kaynak kod ek açıklamaları kullanarak, amaç, arka plan kod açık yapabilirsiniz. Bu ek açıklamalar, ayrıca otomatik statik çözümleme araçları, kodunuzu daha doğru bir şekilde önemli ölçüde daha az hatalı pozitif sonuçları ve hatalı negatif analiz etmek etkinleştirin.
 
- Bu bölümdeki makaleleri belgelerin SAL yönlerini ele, SAL söz diziminin başvuru sağlar ve kullanımını örnekleri verin.
+ Belgelerin bu bölümdeki makaleleri SAL yönlerini tartışmanıza, başvuru için SAL söz dizimi sağlar ve verin, kullanım örnekleri.
 
 -   [SAL'yi Anlama](../code-quality/understanding-sal.md)
 
-     Bilgi ve çekirdek SAL ek açıklamaları Göster örnekler sağlar.
+     Bilgi ve çekirdek SAL ek açıklamalarını gösteren örnekler sağlar.
 
 -   [İşlev Parametrelerini ve Dönüş Değerlerini Açıklama](../code-quality/annotating-function-parameters-and-return-values.md)
 
-     İşlevler ve işlev parametreleri için SAL ek açıklamaları listelenmektedir.
+     İşlevler ve işlev parametreleri için SAL ek açıklamalarını listeler.
 
 -   [İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)
 
-     İşlevler ve işlev davranışı için SAL ek açıklamaları listelenmektedir.
+     İşlevler ve işlevin davranışı için SAL ek açıklamalarını listeler.
 
 -   [Yapıları ve Sınıfları Yorumlama](../code-quality/annotating-structs-and-classes.md)
 
-     Yapılar ve sınıflar için SAL ek açıklamaları listelenmektedir.
+     Yapılar ve sınıflar için SAL ek açıklamalarını listeler.
 
 -   [Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)
 
-     SAL ek açıklamaları kilit yöntemleriyle kullanılmasını açıklar.
+     Kilit mekanizmalarıyla SAL ek açıklamalarını kullanma açıklanmaktadır.
 
 -   [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     Koşul veya diğer SAL ek açıklamaları (yerleştirme) kapsamını belirtin SAL ek açıklamaları listelenmektedir.
+     Koşul veya diğer SAL ek açıklamaları (yerleştirme) kapsamını belirtin SAL ek açıklamalarını listeler.
 
 -   [İç İşlevler](../code-quality/intrinsic-functions.md)
 
-     İç SAL ek açıklamaları listelenmektedir.
+     İç SAL ek açıklamalarını listeler.
 
--   [En iyi yöntemler ve örnekler](../code-quality/best-practices-and-examples-sal.md)
+-   [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
-     SAL ek açıklamaları kullanmayı gösteren örnekler verilmektedir. Ayrıca ortak Tuzaklar açıklar.
+     SAL ek açıklamalarını kullanma işlemini gösteren örnekler sağlar. Ayrıca yaygın görülen tehlikeleri açıklar.
 
 ## <a name="related-resources"></a>İlgili Kaynaklar
- [Kod çözümleme ekip blogu](http://go.microsoft.com/fwlink/?LinkId=251197)
+ [Kod Analizi ekip blogu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [SAL 2.0 Windows sürücülerinin ek açıklamaları](http://go.microsoft.com/fwlink/?LinkId=250979)
+ [2.0 SAL ek açıklamaları Windows sürücüleri](http://go.microsoft.com/fwlink/?LinkId=250979)

@@ -2,7 +2,6 @@
 title: Çağrı Yığınını Listele Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listcallstack
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e809af75f0a4a47da6af30a3d93748401ca4609d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 066bf09da72f0f0bee91057c9547e5d3b2daf774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929691"
 ---
 # <a name="list-call-stack-command"></a>Çağrı Yığınını Listele Komutu
 Geçerli çağrı yığınını görüntüler.
@@ -114,5 +113,5 @@ kb 2
 - [İş Parçacıklarını Listele Komutu](../../ide/reference/list-threads-command.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

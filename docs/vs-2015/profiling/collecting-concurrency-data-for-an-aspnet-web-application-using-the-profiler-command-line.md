@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba6fbb03b171b50014aad887ff83d9841f0249
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 9abf64864c9b722f344662200dfc923cc3e192b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914189"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak bir ASP.NET Web Uygulaması için Eşzamanlılık Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kaynak çe
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir ASP.NET uygulamasına Profiler ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme|-   [Nasıl Yapılır: Profiler eşzamanlılık verileri toplamak için bir ASP.NET uygulamasına ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Başvuru  
  [Komut Satırı Profil Oluşturma Araçları Başvurusu](../profiling/command-line-profiling-tools-reference.md)  
@@ -45,7 +45,7 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kaynak çe
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**Örnekleme yöntemiyle profili**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Bellek ayırma ve atık koleksiyon profili**|-   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Profil oluşturma eşzamanlılık sorunları  

@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: devralma türleri (Sınıf Tasarımcısı) arasındaki oluştur'
+title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) türler arasında devralma oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,43 +14,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925569"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda türler arasında devralmayı oluşturma
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Nasıl Yapılır: Sınıf tasarımcısında türler arasında devralma oluşturma
 
-Sınıf diyagramı kullanarak iki tür arasında bir devralma ilişkisi oluşturmak için **Sınıf Tasarımcısı**, kendi türetilmiş türü veya türleri ile temel türü bağlanın. İki sınıf arasında bir sınıf ve bir arabirim arasında veya iki arabirimler arasında bir devralma ilişkisi olabilir.
+Kullanarak bir sınıf diyagramı üzerindeki iki tür arasında devralma ilişkisi oluşturamadığınız için **Sınıf Tasarımcısı**, temel türü kendi türetilmiş bir türü veya türleri ile bağlanın. İki sınıf arasındaki, bir sınıf ve arabirim arasında veya iki arabirim arasında bir devralma ilişkisi olabilir.
 
-## <a name="to-create-an-inheritance-between-types"></a>Türler arasında devralmayı oluşturmak için
+## <a name="to-create-an-inheritance-between-types"></a>Bir türler arasında devralma oluşturma
 
-1.  İçinde projenizden **Çözüm Gezgini**, bir sınıf diyagramı (.cd) dosyasını açın.
+1.  İçinde projenizden **Çözüm Gezgini**, bir sınıf diyagramı (.cd) dosyası açın.
 
-     Sınıf diyagramında yoksa, oluşturun. Bkz: [nasıl yapılır: projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md).
+     Bir sınıf diyagramı yoksa, oluşturun. Bkz: [nasıl yapılır: Projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md).
 
-2.  İçinde **araç**altında **Sınıf Tasarımcısı**, tıklatın **devralma**.
+2.  İçinde **araç kutusu**altında **Sınıf Tasarımcısı**, tıklayın **devralma**.
 
-3.  Sınıf diyagramında başlayarak istediğiniz türler arasında bir devralma çizgi çizme:
+3.  Sınıf diyagramında devralım çizgisi başlayarak, istediğiniz türlerini arasında Çiz:
 
-    -   Türetilmiş bir sınıf için temel sınıfı
+    -   Temel sınıfın türetilmiş bir sınıf
 
-    -   Uygulayan bir sınıfa uygulanan arabirimi
+    -   Uygulanan arabirimi uygulayan sınıfı
 
-    -   Genişletme arabirime genişletilmiş arabirimi
+    -   Genişletilmiş arabirimi için bir genişletme arabirimi
 
-4.  İsteğe bağlı olarak, genel bir türden türetilmiş bir tür olduğunda Devralma Satırı'ı tıklatın. İçinde **özellikleri** penceresindeki ayarlayın **tür bağımsız değişkenleri** genel türü için istediğiniz türüyle eşleşecek şekilde özelliği.
+4.  İsteğe bağlı olarak, genel bir türden türetilmiş bir tür olduğunda, devralım çizgisi tıklayın. İçinde **özellikleri** penceresinde **tür bağımsız değişkenleri** genel tür için istediğiniz türüyle eşleşecek şekilde özelliği.
 
     > [!NOTE]
-    > Bir üst soyut sınıf soyut en az bir üye içeriyorsa, tüm soyut üyelerini Özet olmayan türetilen sınıflar uygulanır.
+    > Ardından tüm soyut üye bir soyut sınıfı en az bir soyut üye içermesi durumunda, soyut olmayan devralma sınıfları olarak uygulanır.
     >
-    >  Mevcut genel türleri görselleştirebilirsiniz rağmen yeni genel türler oluşturulamıyor. Ayrıca, varolan genel türleri için tür parametreleri değiştiremezsiniz.
+    >  Varolan genel türleri görselleştirebilir olsa da, yeni genel türler oluşturulamıyor. Ayrıca, varolan genel türler için tür parametrelerini değiştiremezsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Devralma](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Devralma Temelleri](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Nasıl yapılır: türler arasında devralmayı görüntüleme](how-to-view-inheritance-between-types.md)
+- [Nasıl yapılır: Türler arasında devralmayı görüntüleme](how-to-view-inheritance-between-types.md)
 - [Sınıf Tasarımcısında Visual C++ Sınıfları](visual-cpp-classes.md)

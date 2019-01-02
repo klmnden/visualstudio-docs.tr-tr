@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbols::reset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a09a4876fb364a6cf8e80f8b66edde4976f909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 83bf82ebdf4410a0c38077fd079f6f1f81d6510b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961974"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-Bir numaralandırma sırasını başlangıç durumuna sıfırlar.  
+Bir numaralandırma sıralı başlangıç durumuna sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

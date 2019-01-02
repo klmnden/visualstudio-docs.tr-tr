@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891066"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Nasıl yapılır: bir ağ bağdaştırıcısına bir test denetleyicisi veya test aracısı bağlama
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Nasıl Yapılır: Bir ağ bağdaştırıcısına bir test denetleyicisi veya test aracısı bağlama
 
 Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisayarda birden çok ağ bağdaştırıcısı varsa, test denetleyicisi veya test aracısının belirlemek için bilgisayar adı yerine IP adresi belirtmeniz gerekir.
 
@@ -135,5 +134,5 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
 - [Test aracılarını yükleme ve yapılandırma](../test/lab-management/install-configure-test-agents.md)
 - [Yük testi günlüğü ayarlarını değiştirme](../test/modify-load-test-logging-settings.md)
 - [Test denetleyicileri için bağlantı noktalarını yapılandırın ve test aracıları](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Nasıl yapılır: günlük dosyası boyutu üst sınırı belirtin](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Nasıl yapılır: test denetleyicileri için zaman aşımı sürelerini belirtme ve test aracıları](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Nasıl yapılır: Günlük dosyası boyutu üst sınırı belirtin](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Nasıl yapılır: Test denetleyicileri için zaman aşımı sürelerini belirtme ve test aracıları](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
