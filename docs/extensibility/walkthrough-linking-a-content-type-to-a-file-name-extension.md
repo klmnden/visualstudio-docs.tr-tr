@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926193"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü
 Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantılarını kullanarak bağlamak için bir dosya adı uzantısı. Bazı durumlarda, dosya adı uzantısı, bir dil hizmeti tarafından zaten tanımlandı. Ancak, MEF ile kullanmak için yine de bunu bir içerik türüyle bağlamanız gerekir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
@@ -93,7 +90,7 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>İçerik türü için bir düzenleyici dışarı aktarma Ekle  
   
-1.  Düzenleyici uzantısı oluşturun. Örneğin, açıklanan kenar boşluğu glif uzantısı kullanabilirsiniz [izlenecek yol: dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Düzenleyici uzantısı oluşturun. Örneğin, açıklanan kenar boşluğu glif uzantısı kullanabilirsiniz [izlenecek yol: Dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Bu yordamda tanımlanan sınıfı ekleyin.  
   

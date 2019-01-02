@@ -2,7 +2,6 @@
 title: Kod ölçümlerini Hesapla
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855578"
 ---
 # <a name="code-metrics-values"></a>Kod ölçüm değerleri
 
@@ -24,7 +23,7 @@ Artan karmaşıklık modern yazılım uygulamaları, kodu güvenilir ve sürdür
 
 Geliştiriciler Visual Studio, karmaşıklığı ve bakımı, yönetilen kodun ölçüm kod ölçümleri verileri üretme için kullanabilirsiniz. Bütün bir çözüm ya da tek bir proje için kod ölçümleri verileri oluşturulabilir.
 
-Visual Studio'da kod ölçümleri verileri üretme hakkında daha fazla bilgi için bkz: [nasıl yapılır: kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md).
+Visual Studio'da kod ölçümleri verileri üretme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Yazılım ölçümleri
 
@@ -57,5 +56,5 @@ Geliştirici bakın ve değiştirme kodu olduğundan Windows Forms için oluştu
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Nasıl yapılır: kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md)
+- [Nasıl yapılır: Kod ölçümleri verileri üretme](../code-quality/how-to-generate-code-metrics-data.md)
 - [Kod ölçümleri sonuçları penceresini kullanma](../code-quality/working-with-code-metrics-data.md)

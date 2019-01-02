@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a3dc5236d47450cb755ff8abbffd5b6497ff145
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 37af3c995e3dde5ad33e8135e8a648b6c0f6a962
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870277"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio’da (Xaml ve C#) bir hata ayıklama oturumunda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +56,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
  **MainPage.xaml.cs kaynak dosyasını açın.** XAML Düzenleyicisi'nde herhangi bir yere sağ tıklayın ve seçin **kodu görüntüle**. MainPage.xaml.cs arka plan kod dosyası görüntülenir. Bu yalnızca bir yöntem Not `MainPage()` oluşturucusu, dosyada listelenmektedir.
 
- **MainPage Oluşturucusu örnek kod ile değiştirin.** MainPage() yöntemi silin. Bu bağlantıyı izleyin: [hata ayıklayıcı gezintisi örnek kodu (Xaml ve C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)ve ardından Pano için C# bölümünde listelenen kodu kopyalayın. (Seçin **geri** tarayıcı veya Yardım Görüntüleyicisi bu hızlı başlangıç sayfasına geri dönün.) Visual Studio Düzenleyicisi'nde koda yapıştırın `partial class MainPage` blok. Dosyayı kaydetmek için CTRL + s seçin.
+ **MainPage Oluşturucusu örnek kod ile değiştirin.** MainPage() yöntemi silin. Bu bağlantıyı izleyin: [Hata ayıklayıcı gezintisi örnek kodu (Xaml ve C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)ve sonra listelenen kodu kopyalayın C# panoya bölümü. (Seçin **geri** tarayıcı veya Yardım Görüntüleyicisi bu hızlı başlangıç sayfasına geri dönün.) Visual Studio Düzenleyicisi'nde koda yapıştırın `partial class MainPage` blok. Dosyayı kaydetmek için CTRL + s seçin.
 
  Şimdi, bu konudaki örnekleri birlikte izleyebilirsiniz.
 
@@ -71,7 +70,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 ### <a name="example-1"></a>Örnek 1
  Bu örnekte, MainPage.xaml.cs dosyanın MainPage oluşturucuda bir kesme noktası ayarlayın, ilk metodun içine, değişken değerlerini görüntülemek ve ardından hata ayıklamayı durdurun.
 
- **Bir kesme noktası ayarlayın.** İfadede bir kesme noktası ayarlamak `methodTrack = "Main Page";` MainPage oluşturucuda. Kaynak Kod Düzenleyicisi gölgeli kanalda satır seçin (klavye: F9 tuşuna basın ve imleci satıra getirin).
+ **Bir kesme noktası ayarlayın.** İfadede bir kesme noktası ayarlamak `methodTrack = "Main Page";` MainPage oluşturucuda. Kaynak Kod Düzenleyicisi gölgeli kanalda satır seçin (klavye: İmleci satıra getirin ve F9 tuşuna basın).
 
  ![Adımlama](../debugger/media/dbg-basics-stepinto.png "DBG_Basics_StepInto")
 
@@ -105,7 +104,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
   Değişkenin fare gelin `a`. Ada, değere ve veri türünü not alın. Değişkenin fare gelin `methodTrack`. Yeniden ada, değere ve veri türünü not alın.
 
-  **Değişken değerleri Yereller penceresinde inceleyin.** Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: Alt + 4).
+  **Değişken değerleri Yereller penceresinde inceleyin.** Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **Yereller**. (Klavye: Alt+ 4).
 
   ![Yerel öğeler penceresinde](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 
@@ -165,7 +164,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
  **Kesme noktasına kadar çalıştırın.** Hata ayıklama oturumu başlatın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: F5). Hata ayıklayıcı MainPage yöntemde bir kesme noktasında yürütmeyi askıya alır.
 
- **Örnek3 yöntemi içine Adımlama.** Seçin **içine adımla** üzerinde **hata ayıklama** menü (klavye: F11) örnek3 yöntemi Giriş noktasına taşınır. Bir veya iki döngüleri yinelendiğinde kadar metodun Metoda atlama devam `for` blok. Bu, tüm 1000 yineleme boyunca adım uzun süreceğini unutmayın.
+ **Örnek3 yöntemi içine Adımlama.** Seçin **içine adımla** üzerinde **hata ayıklama** menü (klavye: F11) örnek3 yönteminin giriş noktasını taşımak için kullanılır. Bir veya iki döngüleri yinelendiğinde kadar metodun Metoda atlama devam `for` blok. Bu, tüm 1000 yineleme boyunca adım uzun süreceğini unutmayın.
 
  **Koşullu kesme noktası ayarlayın.** Kod penceresinin sol kanalda satırın sağ `x += i;` seçip **koşul**. Seçin **koşul** onay kutusunu işaretleyin ve ardından yazın `i == 500;` metin kutusuna. Seçin **true** seçenek ve **Tamam**. Kesme noktası 500th yinelemesini değerinde kontrol etmenize olanak `for` döngü.
 
@@ -181,7 +180,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
  Metin Görselleştirici penceresi görünür ve dize değeri çok satırlı dize olarak sunulur.
 
- **İmlece kadar çalıştırma.** Satırın sağ `methodTrack += "->Example3";` seçip **imlece kadar Çalıştır** (klavye: satır; imleci taşıma CTRL + F10). Hata ayıklayıcı, döngü yinelemesi tamamlar ve ardından satırında yürütmeyi askıya alır.
+ **İmlece kadar çalıştırma.** Satırın sağ `methodTrack += "->Example3";` seçip **imlece kadar Çalıştır** (klavye: İmleç satırına taşıyın; CTRL + F10). Hata ayıklayıcı, döngü yinelemesi tamamlar ve ardından satırında yürütmeyi askıya alır.
 
  **Hata ayıklamayı durdurun.** Hata Ayıklama menüsünde, hata ayıklamayı Durdur seçin (klavye: Shift + F5). Bu, hata ayıklama oturumunuzu sonlandırır.
 

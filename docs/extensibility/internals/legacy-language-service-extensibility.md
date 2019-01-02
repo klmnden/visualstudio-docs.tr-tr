@@ -1,9 +1,6 @@
 ---
 title: Eski dil hizmeti genişletilebilirliği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,42 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb7d8165060fa3b9a6445ad71a977c79414056f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e5dbb6e5b592a166c5110623886534967613d95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853508"
 ---
-# <a name="legacy-language-service-extensibility"></a>Eski dil hizmeti genişletilebilirliği
-Bir dil hizmeti IDE kaynak kod düzenleme için dile özgü destek sağlar.  
+# <a name="legacy-language-service-extensibility"></a>Eski Dil Hizmeti Genişletilebilirliği
+Dil hizmeti, IDE içindeki kaynak kodu düzenleme için dile özgü destek sağlar.  
   
- Eski dil hizmetler bir VSPackage bir parçası olarak uygulanır, ancak dil hizmet özellikleri uygulamak için daha yeni MEF uzantıları kullanmak için bir yoludur. Bir dil hizmeti uygulamak için yeni yolu hakkında daha fazla bilgi için bkz: [Düzenleyicisi ve dil hizmeti uzantılarını](../../extensibility/editor-and-language-service-extensions.md).  
+ Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Dil hizmeti uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [düzenleyici ve dil hizmeti uzantıları](../../extensibility/editor-and-language-service-extensions.md).  
   
  Bu bölümde, yapı ve eski dil hizmeti uygulaması açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Eski Dil Hizmetini Geçirme](../../extensibility/internals/migrating-a-legacy-language-service.md)  
- Visual Studio 2008 bir dil Hizmeti'nden en son sürüme güncelleştirmek açıklanmaktadır.  
+ Visual Studio 2008 dil hizmeti en son sürüme güncelleştirmek açıklanmaktadır.  
   
  [Eski Dil Hizmeti Temel Bileşenleri](../../extensibility/internals/legacy-language-service-essentials.md)  
- Bir programlama dili Visual Studio'ya tümleştirmek için dil Hizmetleri geliştirme hakkında önemli bilgileri sağlar.  
+ Bir programlama dili, Visual Studio ile tümleştirmek için dil Hizmetleri geliştirme hakkında önemli bilgiler sağlar.  
   
  [Eski Dil Hizmeti Geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)  
- Bir dil hizmeti oluşturmanıza yardımcı olabilir konulara bağlantılar sağlar.  
+ Dil hizmeti oluşturmanıza yardımcı olacak konulara bağlantılar sağlar.  
   
  [Eski Dil Hizmetinde Söz Dizimi Renklendirmesi](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Bir dil hizmetinde sözdizimi vurgulama destekleme hakkında bilgi sağlar.  
+ Bir dil hizmetinde söz dizimi vurgulama destekleme hakkında bilgi sağlar.  
   
- [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Yönetilen paket framework (MPF) tam özellikli dil hizmeti yönetilen koda uygulanması için nasıl kullanılacağı hakkında bilgi sağlar.  
+ [Eski Dil Hizmeti Uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Yönetilen kodda bir tam özellikli dil hizmeti uygulamak için yönetilen paket çerçevesini (MPF) kullanma hakkında bilgi sağlar.  
   
  [Sembol Tarama Araçlarını Destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- Kitaplıkları ve IDE içinde simgelerin ağaç görünümleri Gözat sağlayan araçlar açıklanmaktadır.  
+ Kitaplıklar ve IDE içindeki simgeleri ağaç görünümlerini göz atmanızı sağlayan araçları açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Düzenleyici ve Dil Hizmeti Uzantıları](../../extensibility/editor-and-language-service-extensions.md)  
- Visual Studio düzenleyicileri genel bir bakış sağlar.  
+ Visual Studio Düzenleyicisi'ne genel bakış sağlar.  
   
  [Hata Ayıklama için Dil Hizmeti Desteği](../../extensibility/internals/language-service-support-for-debugging.md)  
- Visual Studio hata ayıklama oluşturmak ve programların hatalarını ayıklamak için kullanılan hata ayıklayıcı bileşenleri özelleştirmek için gerekli olan bilgileri içeren SDK için ilgili bilgileri ve bağlantı sağlar.
+ Visual Studio hata ayıklama oluşturmak ve programların hatalarını ayıklamak için kullanılan hata ayıklayıcı bileşenleri özelleştirmek için gerekli bilgileri içeren SDK için bağlantı ve hakkında bilgi sağlar.

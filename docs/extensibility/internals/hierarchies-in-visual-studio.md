@@ -1,9 +1,6 @@
 ---
 title: Visual Studio'da hiyerarşiler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - hierarchies, Visual Studio IDE
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0774c4a7ad9686b02501bed80a060519f5a500f3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 49d058752d41604ec6560d18096c68e6566ab01e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852670"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio’da Hiyerarşiler
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) proje olarak görüntüleyen bir *hiyerarşi*. IDE içinde bir hiyerarşi, her düğüme bir ilişkili özellikler kümesini sahip olduğu düğümlerinin ağacıdır. A *proje hiyerarşisi* proje öğelerini, öğeleri ilişkileri ve öğeleri ilişkili özellikler ve komutları tutan bir kapsayıcıdır.  

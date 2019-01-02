@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: koddaki çalışma sayfası aralıklarına program aracılığıyla bakma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Koddaki çalışma sayfası aralıklarına program aracılığıyla bakma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 608ce006ccc34330631da8d4c947405b027f1a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1a9904140d08d3ddca63c70bc77f1db4dffb1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851254"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Nasıl yapılır: koddaki çalışma sayfası aralıklarına program aracılığıyla bakma
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Nasıl Yapılır: Koddaki çalışma sayfası aralıklarına program aracılığıyla bakma
   Benzer bir süreç içeriğine başvurmak için kullandığınız bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,13 +49,11 @@ ms.locfileid: "35677206"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Aralıklarla çalışma](../vsto/working-with-ranges.md)   
- [Nasıl yapılır: program aracılığıyla çalışma sayfaları Yazımı denetleme](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Nasıl yapılır: program aracılığıyla çalışma kitaplarındaki aralıklara biçimler uygulama](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Nasıl yapılır: program aracılığıyla otomatik biçimde aralıkları artımlı şekilde değişen verilerle ile doldurun.](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Nasıl yapılır: program aracılığıyla çalışma sayfası aralıklarında metin arama](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma sayfaları Yazımı denetleme](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma kitaplarındaki aralıklara biçimler uygulama](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Nasıl yapılır: Program aracılığıyla otomatik biçimde aralıkları artımlı şekilde değişen verilerle ile doldurun.](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Nasıl yapılır: Program aracılığıyla çalışma sayfası aralıklarında metin arama](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

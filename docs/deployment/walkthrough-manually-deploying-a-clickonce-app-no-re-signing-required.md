@@ -1,8 +1,6 @@
 ---
-title: İzlenecek yol:, Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs
-ms.custom: ''
+title: 'İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898157"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol:, Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
  Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, uygulama müşterinin marka kullanabilirsiniz veya marka bilgilerinizi koruyabilirsiniz. Örneğin, uygulamanın tek bir özel uygulama ise, markanızı isteyebilirsiniz. Uygulamanın her müşteri için yüksek oranda özelleştirilmiş ise, müşterinin marka kullanmak isteyebilirsiniz. Dağıtmak üzere bir uygulama için bir kuruluş verdiğinizde .NET Framework 3.5, markanızı, yayımcı bilgileri ve güvenlik imza sağlar. Daha fazla bilgi için [başkalarının dağıtmak ClickOnce oluşturma uygulamaları](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   
 > [!NOTE]
->  Bu izlenecek yolda dağıtımları el ile kullanarak komut satırı aracı oluşturduğunuz *Mage.exe* veya grafik aracı *MageUI.exe*. Dağıtımlar hakkında daha fazla bilgi için bkz. [izlenecek yol: bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+>  Bu izlenecek yolda dağıtımları el ile kullanarak komut satırı aracı oluşturduğunuz *Mage.exe* veya grafik aracı *MageUI.exe*. Dağıtımlar hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolda adımları gerçekleştirmek için aşağıdakiler gerekir:  
@@ -131,7 +129,7 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 14. Dosya sisteminizdeki bir dosya olarak depolanan bir sertifika varsa, **sertifika dosyası olarak oturum** seçeneğini ve üç nokta simgesini kullanarak dosya sisteminden sertifikası seçin (**...** ) düğmesi.  
   
-     veya  
+     -veya-  
   
      Sertifikanızı bilgisayarınızdan erişilebilen bir sertifika deposunda kaldığı seçin **depolanan bir sertifika seçeneği ile oturum**, sağlanan listeden bir sertifika seçin.  
   

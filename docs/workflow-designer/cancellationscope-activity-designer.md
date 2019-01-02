@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - CancellationScope etkinlik Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b9e565e5579405fa73ea6a3de12d7c27ed7edc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 124b4d5d1b8e35611d990fd6c169a880a4e13a5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872258"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope Etkinlik Tasarımcısı
 
@@ -37,7 +36,7 @@ ms.locfileid: "49926845"
 
 Aşağıdaki tabloda <xref:System.Activities.Statements.CancellationScope> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. <xref:System.Activities.Activity.DisplayName%2A> Özelliği özellik kılavuzunda düzenlenebilir ancak iş akışı Tasarımcısı yüzeyine diğer özellikleri düzenlenmesi gerekir.
 
-|Özellik adı|Gerekli|Kullanım|
+|Özellik Adı|Gerekli|Kullanım|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı <xref:System.Activities.Statements.CancellationScope> etkinlik. CancellationScope varsayılandır. Ancak <xref:System.Activities.Activity.DisplayName%2A> değeri kesinlikle gerekli değil, kullanmak için en iyi bir uygulamadır.|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|Doğru|Hangi iptal için sağlanan mantıksal etkinlik belirtir. Eklemek için <xref:System.Activities.Statements.CancellationScope.Body%2A> etkinlik, açılan bir etkinlikten **araç kutusu** içine **gövdesi** kutusuna **CancellationScope** etkinlik Tasarımcısı. İpucu metnini "Etkinliği buraya bırakın" ekleyin.|

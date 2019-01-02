@@ -1,9 +1,6 @@
 ---
 title: Kaynak denetimi eklentileri ile çalışmaya başlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f1eb4f76616f6a5f6791cbcd1b8a5770d1dcabb
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 829bf676a407fd166eda252cb4e6e2fbdb93fa41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854509"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Kaynak denetimi eklentileri ile çalışmaya başlama
 Kaynak Denetimi Eklentisi oluşturmak için kaynak denetimi eklentisi API'içinde tanımlanan işlevleri uygulayan bir DLL'yi oluşturmak ve ardından DLL ile kaydetmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kaynak kod sürüm denetiminde kullanmak için kullanılabilir hale getirmek için.  
@@ -27,7 +24,7 @@ Kaynak Denetimi Eklentisi oluşturmak için kaynak denetimi eklentisi API'içind
  Kaynak Denetimi Eklentisi API (sürüm 1.1, 1.2 ve 1.3) üç sürümü, kaynak denetimi eklentileri için kullanılabilir. Kaynak Denetimi Eklentisi API burada belgelenmektedir 1.3 sürümüdür. Kaynak denetimi eklentileri ile tamamen uyumlu olacak şekilde tasarlandığı 1.1 ve 1.2 sürümleri destekleme. [Kaynak denetimi eklentisi API sürümü 1.3 yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) bölümde kaynak denetimi eklentisi API'ın en son sürümünde desteklenen yeni özellikler açıklanmaktadır.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
- [Nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ [Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  Bir DLL kaynak denetimine bağlamak için gerekli kayıt defteri girdilerini olun açıklar.  
   
  [Kaynak Denetimi Eklentisi API sürümü 1.3 yenilikler nelerdir?](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  

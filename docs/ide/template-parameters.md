@@ -2,7 +2,6 @@
 title: Proje ve öğe şablon parametreleri
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -12,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e945ac065b2c7f5e3a677ae2175b45a94af2910a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935196"
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
@@ -74,7 +73,7 @@ Aşağıdaki tabloda, herhangi bir şablon kullanılabilecek ayırtılmış şab
 
 Kendi şablon parametreleri ve değerleri, ek parametre değiştirme sırasında kullanılan ayrılmış varsayılan şablon parametreleri olarak belirtebilirsiniz. Daha fazla bilgi için [CustomParameters öğesi (Visual Studio şablonları)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Örnek: Proje adı için bir dosya adı kullanın.
+## <a name="example-use-the-project-name-for-a-file-name"></a>Örnek: Bir dosya adı için proje adı kullan
 
 Bir parametre kullanarak proje öğeleri için değişken dosya adlarını belirtebilirsiniz `TargetFileName` özniteliği.
 
@@ -91,7 +90,7 @@ Aşağıdaki örnek, bir yürütülebilir dosyanın adını tarafından belirtil
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Örnek: ad alanı adı için güvenli bir proje adı kullanın.
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Örnek: Ad alanı adı için güvenli bir proje adı kullan
 
 C# sınıf dosyasında ad alanı için güvenli bir proje adı kullanmak için aşağıdaki sözdizimini kullanın:
 

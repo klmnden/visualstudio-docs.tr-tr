@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81b2f98694ee34b6fc4c442a4d4746b436025583
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916788"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE’yi kişiselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +40,10 @@ Bu bölümde, Visual Studio'yu en iyi geliştirme tarzınıza ve gereksinimlerin
  Siz ve takımınız için özel bir başlangıç sayfası oluşturmak için bkz [başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)
 
 ### <a name="environment-color-themes"></a>Ortam Renk temalarını
- Renk teması açık, koyu mavi yazıp ortamında arasında değiştirmek için **hızlı başlatma** ve **ortam &#124; genel**. Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** ve **ortam &#124; yazı tipleri ve renkler**. Ayrıca bkz: [nasıl yapılır: değişiklik yazı tipleri ve renkler](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Renk teması açık, koyu mavi yazıp ortamında arasında değiştirmek için **hızlı başlatma** ve **ortam &#124; genel**. Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** ve **ortam &#124; yazı tipleri ve renkler**. Ayrıca bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Menüleri ve araç çubukları
- Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: menüleri özelleştirme ve araç çubuklarını](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Ana menü büyük/küçük harf
  Ana menü büyük/küçük harf arasında popüler talep nedeniyle değiştirebilirsiniz **ilk harfler büyük** ve **tümü büyük harf** yazarak `environment` içinde **hızlı başlatma** seçip**Ortam &#124; genel**.

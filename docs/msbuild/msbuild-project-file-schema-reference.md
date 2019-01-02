@@ -1,8 +1,6 @@
 ---
 title: MSBuild proje dosyası şema başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ed3fd3fc60e6c263d7363047ed36b2f0d891a76
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ea993233409f7df9f99b345184634e4de6e59618
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852433"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild proje dosyası şema başvurusu
 Tüm bir tablo sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML Şeması öğeleri kullanılabilir öznitelikler ve alt öğeleri.  
@@ -36,7 +34,7 @@ Tüm bir tablo sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includ
 |-------------|--------------------|----------------|  
 |[Öğe Seç (MSBuild)](../msbuild/choose-element-msbuild.md)|Aksi takdirde<br /><br /> Ne zaman|--|  
 |[İçeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md)|--|Koşul<br /><br /> Proje|  
-|[Importgroup öğesi](../msbuild/importgroup-element.md)|{1&gt;İçeri Aktar&lt;1}|Koşul|  
+|[Importgroup öğesi](../msbuild/importgroup-element.md)|İçeri Aktarma|Koşul|  
 |[Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)|*Itemmetadata*|Koşul<br /><br /> Hariç tutma<br /><br /> Şunları Dahil Et:<br /><br /> Kaldır|  
 |[Itemdefinitiongroup öğesi (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Öğesi*|Koşul|  
 |[ItemGroup öğesi (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Öğesi*|Koşul|  
@@ -46,7 +44,7 @@ Tüm bir tablo sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includ
 |[Çıktı öğesi (MSBuild)](../msbuild/output-element-msbuild.md)|--|Koşul<br /><br /> ItemName<br /><br /> ÖzellikAdı<br /><br /> TaskParameter|  
 |[Parameter öğesi](../msbuild/parameter-element.md)|--|Çıkış<br /><br /> ParameterType<br /><br /> Gerekli|  
 |[ParameterGroup öğesi](../msbuild/parametergroup-element.md)|*Parametre*|--|  
-|[Proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md)|Bunu seçin<br /><br /> {1&gt;İçeri Aktar&lt;1}<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Hedef<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
+|[Proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md)|Bunu seçin<br /><br /> İçeri Aktarma<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Hedef<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
 |[ProjectExtensions öğesi (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Özellik öğesi (MSBuild)](../msbuild/property-element-msbuild.md)|--|Koşul|  
 |[PropertyGroup öğesi (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Özelliği*|Koşul|  

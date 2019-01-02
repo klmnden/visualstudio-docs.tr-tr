@@ -2,7 +2,6 @@
 title: Türü eşleşen dosya yeniden düzenleme için Taşı
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 793ae8f86bf4c4641a3170cde011a3912d0d38ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870553"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Bir eşleşen dosya yeniden düzenleme için bir tür Taşı
 
@@ -27,11 +26,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** Seçili türde aynı ada sahip ayrı bir dosyaya geçiş yapmanıza izin veren.
+**Ne:** Seçilen tür aynı ada sahip ayrı bir dosyaya taşımanıza olanak tanır.
 
-**Ne zaman:** ayırmak istediğiniz aynı dosyaya birden fazla sınıflar, yapılar, arabirimler, vb. vardır.
+**ne zaman:** Aynı dosyada, ayırmak istediğiniz birden fazla sınıflar, yapılar, arabirimler, vb. vardır.
 
-**Neden:** aynı dosyaya birden fazla yerleştirme yapabilirsiniz, bu tür bulmak zordur. Aynı ada sahip dosyaları türleri taşıyarak, kod daha okunabilir ve giderek daha kolay hale gelir.
+**Neden:** Aynı dosyaya birden fazla yerleştirme, bu tür bulmak zorlaştırabilir. Aynı ada sahip dosyaları türleri taşıyarak, kod daha okunabilir ve giderek daha kolay hale gelir.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

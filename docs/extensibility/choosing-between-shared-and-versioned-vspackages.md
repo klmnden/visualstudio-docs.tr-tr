@@ -1,9 +1,6 @@
 ---
 title: Paylaşılan ve sürümü tutulan Vspackage'lar arasında seçim yapma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - SxS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bb3cebb9cdc00f6e4ef486ef6330cf2b18c6dc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f3fa5c1474b6bb2f0d1bd822b7b7cee8672424c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850998"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Paylaşılan ve sürümü tutulan Vspackage'lar arasında seçin
 Visual Studio'nun farklı sürümleri aynı bilgisayarda bulunabilir. VSPackage'ları herhangi bir karışımını destekleyebilmesi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sürümleri.  

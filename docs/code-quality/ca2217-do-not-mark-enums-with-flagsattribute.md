@@ -1,8 +1,7 @@
 ---
-title: 'CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin'
+title: 'CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -20,49 +19,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852485"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Numaralandırmaları FlagsAttribute ile işaretlemeyin
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin
 
 |||
 |-|-|
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
 |Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Olmayan sonu|
+|Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
 
-Dışarıdan görünür numaralandırma işaretlenmiş <xref:System.FlagsAttribute>ve onu bir veya iki ya da başka bir birleşimini tabanların olmayan daha fazla değer sabit değerleri tanımlı.
+Dışarıdan görünen bir sabit listesi ile işaretlenmiş <xref:System.FlagsAttribute>, varsa ve iki ya da diğer bir birleşimini tabanların olmayan daha fazla değer tanımlı değerler sabit listesi üzerinde.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir numaralandırma olmalıdır <xref:System.FlagsAttribute> yalnızca sabit listesinde tanımlanan her değerin iki ya da bir birleşimini gücünü ise mevcut tanımlı değerler.
+Bir numaralandırma olmalıdır <xref:System.FlagsAttribute> her değer numaralandırmada tanımlanan iki ya da bir birleşimini gücünden ise mevcut tanımlanan değerleri.
 
-## <a name="how-to-fix-violations"></a>İhlallerini düzeltmek nasıl
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-Bu kural ihlal düzeltmek için kaldırmak <xref:System.FlagsAttribute> gelen numaralandırması.
+Bu kural ihlalini düzeltmek için kaldırmak <xref:System.FlagsAttribute> gelen sabit listesi.
 
-## <a name="when-to-suppress-warnings"></a>Ne zaman uyarıları bastırma
+## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Öznitelik olmaması gereken örnek
+## <a name="example-that-should-not-have-the-attribute"></a>Örnek özniteliğine sahip olmamalıdır
 
-Aşağıdaki örnek, bir numaralandırma gösterir `Color`, 3 değeri içerir. 3 iki ya da değerlere herhangi bir birleşimini gücünü değil. `Color` Numaralandırması ile işaretlenmelidir döndürmemelidir <xref:System.FlagsAttribute>.
+Aşağıdaki örnek, bir numaralandırma gösterir `Color`, 3 değeri içeren. 3 iki ya da tanımlanmış değerlerden herhangi bir kombinasyonunu güç değil. `Color` Numaralandırması ile işaretlenir olmamalıdır <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Özniteliği olmalıdır örnek
+## <a name="example-that-should-have-the-attribute"></a>Örnek özniteliğine sahip olmamalıdır
 
-Aşağıdaki örnek, bir numaralandırma gösterir `Days`, ile işaretlenen gereksinimlerini karşılayan <xref:System.FlagsAttribute>.
+Aşağıdaki örnek, bir numaralandırma gösterir `Days`, ile işaretlenen gereksinimleri karşılayan <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
@@ -70,7 +69,7 @@ Aşağıdaki örnek, bir numaralandırma gösterir `Days`, ile işaretlenen gere
 
 ## <a name="related-rules"></a>İlgili kuralları
 
-[CA1027: Numaralandırmaları FlagsAttribute ile işaretleyin](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: Sabit listelerini FlagsAttribute ile işaretleyin](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

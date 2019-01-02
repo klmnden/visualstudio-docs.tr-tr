@@ -4,7 +4,6 @@ description: Visual Studio'da C# ve ASP.NET Core, adım adım ile basit bir Hell
 ms.custom: mvc
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -14,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 8487d09c75ff8880fd6c3fe4af59fa2b494b315e
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 52f728573480816ca56aae6d05fc74ad196f5087
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925543"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 

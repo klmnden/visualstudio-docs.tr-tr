@@ -1,8 +1,6 @@
 ---
 title: Kod türünü seç iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.selectengines
@@ -23,22 +21,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0f291df376de5de00f1cc6a8a2f94767eccec49
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3ef9edc87963e6c2e3a4ba6ab8eebda429a41a60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856166"
 ---
 # <a name="select-code-type-dialog-box"></a>Kod Türünü Seç İletişim Kutusu
-Bu iletişim kutusunu açmak için Aç **ekleme işlemi için** iletişim kutusunu ve ardından **seçin** düğmesi.  
+Bu iletişim kutusunu açmak için açık **iliştirme** iletişim kutusunu ve ardından **seçin** düğmesi.  
   
- **Otomatik olarak hata ayıklamak için kod türünü belirleme**  
- Uygun hata ayıklayıcıyı çalışan kod türüne göre seçilir.  
+ **Hata ayıklanacak kodun türünü otomatik olarak belirleme**  
+ Uygun hata ayıklayıcı, çalışan kod türüne göre seçilir.  
   
- **Bu kod türleri hata ayıklama:**  
+ **Bu tür kodlarda Hata Ayıkla:**  
  Belirtilen listeden hata ayıklamak istediğiniz kod türünü seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama güvenliği](../debugger/debugger-security.md)   
- [Çalıştırma işlemine iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+ [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
+ [Çalıştırma İşlemine İliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

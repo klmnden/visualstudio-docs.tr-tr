@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: SharePoint projeleri için özel bir dağıtım adımı oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891582"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio, belirli bir sırayla bir dizi dağıtım adımı yürütür. Visual Studio, birçok yerleşik dağıtım adımlarını içerir, ancak kendi oluşturabilirsiniz.  
@@ -177,7 +174,7 @@ ms.locfileid: "51296157"
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]  
   
-## <a name="checkpoint"></a>Denetim noktası  
+## <a name="checkpoint"></a>Checkpoint  
  Bu aşamada izlenecek yolda, özel dağıtım adımını ve SharePoint komutları için kodun tümü kullanıma projeleri. Hata olmadan derleme emin olmak için bunları oluşturun.  
   
 #### <a name="to-build-the-projects"></a>Projeleri derlemek için  
@@ -488,4 +485,3 @@ ms.locfileid: "51296157"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

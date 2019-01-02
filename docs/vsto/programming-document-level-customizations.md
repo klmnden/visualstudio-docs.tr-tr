@@ -1,9 +1,6 @@
 ---
 title: Belge düzeyi özelleştirmelerini programlama
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Sheet3
@@ -30,12 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9c7fa658c24caa65b3c955002ffeeaff6573c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925452"
 ---
 # <a name="program-document-level-customizations"></a>Belge düzeyi özelleştirmelerini programlama
   Microsoft Office Word veya Microsoft Office Excel belge düzeyi özelleştirmesi kullanılarak genişlettiğinizde aşağıdaki görevleri gerçekleştirebilirsiniz:  
@@ -149,7 +146,7 @@ Globals.ThisDocument.Save();
   
 - Şeritteki yerleşik bir sekmeyi özel gruplar ekleyin.  
   
-   Daha fazla bilgi için [nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md).  
+   Daha fazla bilgi için [nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md).  
   
   Microsoft Office UI uygulamaları özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
   
@@ -175,5 +172,3 @@ Globals.ThisDocument.Save();
  [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)   
  [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)  
-  
-  

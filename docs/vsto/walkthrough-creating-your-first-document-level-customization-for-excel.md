@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955324"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Excel için belge düzeyi özelleştirmeyi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir çalışma kitabı açık olduğunda kullanılabilir. Belge düzeyi özelleştirmesi birçok farklı uygulama değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir çalışma kitabını açtığınızda yeni bir Şerit sekmesi görüntüleme gibi.  
@@ -155,17 +152,17 @@ ms.locfileid: "49849040"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Excel için temel bir belge düzeyi özelleştirme oluşturduktan sonra aşağıdaki konulardan özelleştirmeleri geliştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
--   Belge düzeyi özelleştirmelerde gerçekleştirebileceğiniz genel programlama görevlerini: [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).  
+-   Belge düzeyi özelleştirmelerde gerçekleştirebileceğiniz genel programlama görevleri: [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md).  
   
 -   Excel için belge düzeyi özelleştirmeleri özgü programlama görevleri: [Excel çözümleri](../vsto/excel-solutions.md).  
   
 -   Excel nesne modelini kullanarak: [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).  
   
--   Excel kullanıcı arabirimini özelleştirme, örneğin, göre Şerite özel sekme ekleme veya kendi Eylemler bölmesi oluşturma: [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
+-   Kullanıcı Arabirimi, Excel, örneğin, Şeride özel bir sekme ekleme ya da kendi Eylemler bölmesi oluşturma özelleştirme: [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   
--   Excel nesne modeli (örneğin, belgelerdeki yönetilen denetimleri ve Excel denetimleri kullanarak Windows Forms veri bağlama kullanarak mümkün olmayan görevleri gerçekleştirmek için Visual Studio'da Office geliştirme araçları tarafından sağlanan genişletilmiş Excel nesneleri kullanma veri bağlama modelini): [otomatikleştirmek genişletilmiş nesneleri kullanarak Excel](../vsto/automating-excel-by-using-extended-objects.md).  
+-   Excel nesne modeli (örneğin, belgelerdeki yönetilen denetimleri ve Excel denetimleri kullanarak Windows Forms veri bağlama kullanarak mümkün olmayan görevleri gerçekleştirmek için Visual Studio'da Office geliştirme araçları tarafından sağlanan genişletilmiş Excel nesneleri kullanma veri bağlama modelini): [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Derleme ve Excel için belge düzeyi özelleştirmeleri hata ayıklama: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
+-   Derleme ve Excel için belge düzeyi özelleştirmeleri hata ayıklama: [Office çözümleri oluşturmanıza](../vsto/building-office-solutions.md).  
   
 -   Excel için belge düzeyi özelleştirmeleri dağıtma: [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
   
@@ -179,5 +176,3 @@ ms.locfileid: "49849040"
  [Office çözümleri oluşturun](../vsto/building-office-solutions.md)   
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
-  
-  

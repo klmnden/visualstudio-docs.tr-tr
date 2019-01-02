@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Visual Studio uzantısı yayımlama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852459"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısı yayımlama
 
@@ -33,7 +30,7 @@ Bu izlenecek yol, Visual Studio Market'te Visual Studio uzantısı yayımlama g�
 
 Bu makalede bir varsayılan VSPackage uzantısı kullanır, ancak adımları her uzantı türü için geçerlidir.
 
-1. C# ' adlı bir VSPackage'ı oluşturma `TestPublish` olan bir menü komutu. Daha fazla bilgi için [ilk uzantınızı oluşturun: Hello World](../extensibility/extensibility-hello-world.md).
+1. C# ' adlı bir VSPackage'ı oluşturma `TestPublish` olan bir menü komutu. Daha fazla bilgi için [ilk uzantınızı oluşturun: Merhaba Dünya](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Uzantınızı paketi
 
@@ -71,10 +68,9 @@ Bu makalede bir varsayılan VSPackage uzantısı kullanır, ancak adımları her
 
 6. Uzantınızı karşıya yüklemek için kullanmak istediğiniz publisher'ı seçin. Yayımcılar, sol tarafta listelenen yayımcı adlarını tıklatarak değiştirebilirsiniz. Tıklayarak **yeni uzantı** seçip **Visual Studio**.
 
-7. İçinde **1: karşıya uzantı**, doğrudan Visual Studio Market VSIX dosyasını karşıya yükleyin veya sadece kendi Web sitesine bir bağlantı eklemek seçebilirsiniz. Bu örnekte, uzantı *TestPublish.vsix* yüklenir. Sürükleyip bırakın uzantınızı veya kullanın **tıklayın** dosyasına gözatmak için bağlantı. Uzantınızı projenin \bin\Release klasöründe bulun.  
-              **Devam**'a tıklayın.
+7. İçinde **1: Karşıya uzantı Yükle**, doğrudan Visual Studio Market VSIX dosyasını karşıya yükleyin veya sadece kendi Web sitesine bir bağlantı eklemek seçebilirsiniz. Bu örnekte, uzantı *TestPublish.vsix* yüklenir. Sürükleyip bırakın uzantınızı veya kullanın **tıklayın** dosyasına gözatmak için bağlantı. Uzantınızı projenin \bin\Release klasöründe bulun.  **Devam**'a tıklayın.
 
-8. İçinde **2: uzantı ayrıntılarını sağlayın**, otomatik olarak doldurulan gelen bazı alanlar *source.extension.vsixmanifest* uzantınızı dosyasından. Her hakkında daha fazla ayrıntı bulabilirsiniz:
+8. İçinde **2: Uzantı ayrıntılarını sağlayın**, otomatik olarak doldurulan gelen bazı alanlar *source.extension.vsixmanifest* uzantınızı dosyasından. Her hakkında daha fazla ayrıntı bulabilirsiniz:
 
     * **İç ad** uzantı ayrıntı sayfasında URL'de kullanılır. Örneğin, "myname" Yayımcı adı altında bir uzantısı yayımlama ve iç adı "uzantım" olacak şekilde belirterek bir URL'de sonuçları "marketplace.visualstudio\.com/items?itemName=myname.myextension", uzantının ayrıntılı bilgi için Sayfa.
     
@@ -126,11 +122,11 @@ Market erişmek ve bir yayımcı hesabı yönetmek için ek kullanıcılara izin
 
    * **Oluşturucu**: Kullanıcı Uzantıları yayımlayabilir ancak olamaz görüntüleyebilir veya diğer kullanıcıların yayımladığı uzantıları yönetebilirsiniz.
   
-   * **Okuyucu**: kullanıcı görüntüleyebilir uzantıları, ancak olamaz yayımlama veya uzantıları yönetin.
+   * **Okuyucu**: Kullanıcı Uzantıları görüntüleyebilir ancak olamaz yayımlama veya uzantıları yönetin.
   
-   * **Katkıda bulunan**: kullanıcı yayımlama ve uzantıları yönetebilen ancak Yayımcı ayarlarını düzenleyebilir ya da erişimi yönetme.
+   * **Katkıda bulunan**: Kullanıcı yayımlama ve uzantıları yönetebilen, ancak Yayımcı ayarlarını düzenleyebilir veya erişimi yönetin.
   
-   * **Sahibi**: kullanıcı yayımlamak ve uzantıları yönetin, yayımcı ayarlarını düzenleyebilir ve erişimi yönetin.
+   * **Sahibi**: Kullanıcı yayımlama ve uzantıları yönetin, yayımcı ayarlarını düzenleyebilir ve erişimi yönetin.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio Market'ten uzantı yükleme
 

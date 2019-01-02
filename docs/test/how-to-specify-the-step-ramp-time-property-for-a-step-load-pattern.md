@@ -9,17 +9,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 81373e30498ad02f4007e096cfbc6a7cff953402
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925764"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Nasıl Yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme
 
-İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için. Daha fazla bilgi için [izlenecek yol: bir yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md).
+İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için. Daha fazla bilgi için [izlenecek yol: Bir yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -38,7 +37,7 @@ Adım yük düzeni, kullanıcı yükü arttıkça performansın nasıl değişec
 
 -   Adım Süresi (saniye): 1800
 
--   Adım Rampa Süresi (saniye): 20
+-   Adım eğrisi süresi (saniye): 20
 
 -   Adım kullanıcısı sayısı: 100
 

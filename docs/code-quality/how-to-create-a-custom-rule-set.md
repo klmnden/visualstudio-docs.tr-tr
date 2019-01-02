@@ -2,7 +2,6 @@
 title: Özel Kod Analizi kural kümesi oluşturma
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929932"
 ---
 # <a name="customize-a-rule-set"></a>Bir kural kümesi özelleştirme
 
@@ -85,7 +84,7 @@ Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir ku
 
 - Aynı kural listelenen iki veya daha çok kez bir kural kümesi içinde *aynı* önem derecesi, aşağıdaki uyarıyı karşılaşabilirsiniz **hata listesi**:
 
-   **CA0063: kural kümesi dosyası yüklenemedi. '\[,] .ruleset ' veya onun bağlantılı kural birini dosyaları ayarlayın. Dosya, kural kümesi şemasına uymuyor.**
+   **CA0063: Kural kümesi dosyası yüklenemedi. '\[,] .ruleset ' veya onun bağlantılı kural birini dosyaları ayarlayın. Dosya, kural kümesi şemasına uymuyor.**
 
 - Kural kümesini kullanarak bir alt kural içeriyorsa bir **INCLUDE** etiketi ve alt ve üst kural kümelerini iki listesinden aynı kural ancak farklı önem dereceleri ile ardından üst kural kümesindeki önem öncelik kazanır. Örneğin:
 
@@ -121,5 +120,5 @@ Bir kural kümesi olduğuna göre sonraki adım, ekleme veya kaldırma kurallar�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Nasıl yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Kod çözümleme kural kümesi başvurusu](../code-quality/rule-set-reference.md)

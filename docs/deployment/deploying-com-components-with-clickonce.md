@@ -1,8 +1,6 @@
 ---
 title: ClickOnce ile COM bileşenleri dağıtma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888458"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce ile COM bileşenleri dağıtma
 Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmuştur. Bileşenleri, genel olarak kaydedilmesi gerekir ve bu nedenle çakışan uygulamalar arasında istenmeyen yan etkilere neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumludur. çünkü bu durum genellikle .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenlerini Windows XP ya da daha yüksek işletim sistemi dağıtmanıza olanak tanır.  

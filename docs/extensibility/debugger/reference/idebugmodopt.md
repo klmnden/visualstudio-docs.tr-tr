@@ -1,9 +1,6 @@
 ---
 title: IDebugModOpt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugModOpt interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0477f8b3a39bd919a814828377228c5ccc02bd11
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7585a303c8f4a37567d64b0a27f7a8560c3135f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851543"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
-Hata ayıklama isteğe bağlı değiştiricisi temsil eder.  
+Hata ayıklama isteğe bağlı bir değiştirici temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,18 +27,18 @@ IDebugModOpt : IUnknown
 ```  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Alınan bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bir sınıf veya yöntemini temsil eden nesne.  
+ Alınan bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bir sınıf veya yöntemi temsil eden nesne.  
   
 ## <a name="methods"></a>Yöntemler  
- Aşağıdaki yöntem bu arabirimi uygular:  
+ Bu arabirim, aşağıdaki yöntemi uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|İsteğe bağlı değiştiricileri listesini alır.|  
+|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|İsteğe bağlı değiştiricilere listesini alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Sh.h  
+ Üst bilgi: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

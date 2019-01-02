@@ -1,9 +1,6 @@
 ---
-title: Otomasyon VSPackages için sağlama | Microsoft Docs
-ms.custom: ''
+title: Vspackage'lar için Otomasyon sağlama | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
@@ -14,34 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb5f3393443e41c9bd99a8890b53bedae006d7a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926872"
 ---
-# <a name="providing-automation-for-vspackages"></a>Otomasyon VSPackages için sağlama
-Otomasyon için VSPackages sağlamak için başlıca iki yolu vardır: VSPackage özgü nesneler uygulayarak ve standart Otomasyon nesneleri uygulayarak. Genellikle, bunlar birlikte ortamının otomasyon modeli genişletmek için kullanılır.  
+# <a name="providing-automation-for-vspackages"></a>VSPackage’lar için Otomasyon Sağlama
+Vspackage'lar için Otomasyon sağlamak için iki ana yolu vardır: VSPackage özgü nesneler uygulayarak ve standart Otomasyon nesneleri uygulayarak. Genel olarak, bunlar birlikte otomasyon modeli ortamın genişletmek için kullanılır.  
   
 ## <a name="vspackage-specific-objects"></a>VSPackage özgü nesneler  
- Otomasyon modelindeki belirli yerlerde, VSPackage benzersiz Otomasyon nesneleri sağlamanızı gerektirir. Örneğin, yeni projeler yalnızca, VSPackage sağlar ayrı nesneler gerektirir. Bu nesne adlarını kayıt defterinde girilen ve ortam çağrıları aracılığıyla elde `DTE` nesnesi.  
+ Otomasyon modelindeki belirli yerlerde, VSPackage için benzersiz Otomasyon nesneleri sağlar gerektirir. Örneğin, yeni projeler, VSPackage sağlayan ayrı nesneleri gerektirir. Bu nesnelerin adlarını kayıt defterinde girilen ve ortama yapılan çağrılar aracılığıyla elde edilen `DTE` nesne.  
   
- Bir Otomasyon tüketici standart bir nesne nesne özelliği üzerinden sağlanan nesne kullandığında VSPackage özgü nesneler de elde edilebilir. Örneğin, standart `Window` nesnesi bir `Object` özelliği, yaygın olarak bilinen `Windows.Object` özelliği. Tüketiciler çağırdığınızda `Window.Object` , VSPackage uygulanan bir pencere üzerinde geri kendi tasarımınızı belirli Otomasyon nesnesinin geçirdiğiniz.  
+ Standart bir nesne nesne özelliği üzerinden sağlanan nesne bir Otomasyon tüketici kullandığında VSPackage özgü nesneler de elde edilebilir. Örneğin, standart `Window` nesnesinin bir `Object` özelliği, yaygın olarak bilinen `Windows.Object` özelliği. Tüketiciler çağırdığınızda `Window.Object` , VSPackage içinde uygulanan penceresinde geri kendi tasarım belirli bir Otomasyon nesnesinin geçirdiğiniz.  
   
 #### <a name="projects"></a>Projeler  
- VSPackages kendi VSPackage özgü nesneleri yoluyla yeni proje türleri için otomasyon modeli genişletebilirsiniz. VSPackage benzersiz projenizi ayırt etmek için yeni Otomasyon nesneleri sağlama birincil amacı nesneleri bir <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> veya <xref:VSLangProj80.VSProject2> nesnesi. Bu ayrım göründükleri yan yana tek veya diğer proje türleri dışında projenin türünüz yinelemek için bir yol sağlamak istediğinizde kullanışlıdır bir çözümde. Daha fazla bilgi için bkz: [gösterme projesi nesneleri](../../extensibility/internals/exposing-project-objects.md).  
+ VSPackage kendi VSPackage özgü nesneler aracılığıyla yeni proje türleri için otomasyon modeli genişletebilirsiniz. Nesnenin, VSPackage'ı projenize benzersiz ayırt etmek için yeni Otomasyon nesneleri sağlama birincil amacı bir <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> veya <xref:VSLangProj80.VSProject2> nesne. Bu ayrım göründükleri yan yana tek veya diğer proje türleri dışında proje türünüzü yinelemek için bir yol sağlamak istediğinizde kullanışlıdır bir çözümde. Daha fazla bilgi için [proje nesnelerini kullanıma sunma](../../extensibility/internals/exposing-project-objects.md).  
   
 #### <a name="events"></a>Olaylar  
- Ortamının olay mimarisi kendi VSPackage özgü nesneleri eklemek başka bir yer sağlar. Örneğin, kendi benzersiz olay nesneleri oluşturarak, projeler için ortam olay modeli genişletebilirsiniz. Kendi proje türü için yeni bir öğe eklendiğinde, kendi olaylarını sağlamak isteyebilirsiniz. Daha fazla bilgi için bkz: [gösterme olayları](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
+ Olay denetimli mimari ortamın kendi VSPackage özgü nesneler eklemek başka bir yer sağlar. Örneğin, kendi benzersiz olay nesneleri oluşturarak, ortamın olay modeli projeleri için genişletebilirsiniz. Kendi proje türü için yeni bir öğe eklendiğinde kendi olaylarınızı sağlamak isteyebilirsiniz. Daha fazla bilgi için [gösterme olayları](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
   
 #### <a name="window-objects"></a>Pencere Nesneleri  
- Windows geri çağrıldığında geri ortama VSPackage özel bir Otomasyon nesnesi geçirebilirsiniz. Türetilmiş bir nesne uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> veya `IDispatch` , aktarır geri özellikleri, onu tarihli pencere nesnesi genişletme. Örneğin, bir pencere çerçevesi tarihli bir denetim için Otomasyon sağlamak için bu yaklaşımı kullanın. Bu nesne ve genişletmek diğer nesneleri semantiği tasarlamak için size aittir. Daha fazla bilgi için bkz: [nasıl yapılır: Windows için Otomasyon sağlamak](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
+ Windows, çağrıldığında geri ortama geri VSPackage özgü Otomasyon nesnesi geçirebilirsiniz. Türetilen bir nesne uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> veya `IDispatch` , uygulamalı geri özellikleri, onu tarihli pencere nesnesi genişletme. Örneğin, bir pencere çerçevesinde tarihli bir denetim için Otomasyon sağlamak için bu yaklaşımı kullanabilirsiniz. Bu nesne ve genişletme herhangi bir nesne semantiği tasarlamak için size aittir. Daha fazla bilgi için [nasıl yapılır: Windows için Otomasyon sağlar](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
   
-#### <a name="options-pages-on-the-tools-menu"></a>Araçlar menüsünden Seçenekler sayfaları  
- Araçlar, sayfalar uygulamak ve kendi seçeneklerinizi oluşturmak üzere kayıt defterini bilgileri ekleyerek aracılığıyla seçenekleri otomasyon modeli genişletmek için sayfaları oluşturabilirsiniz. Sayfalarınızın diğer seçenekleri sayfalar gibi ortam nesne modeli aracılığıyla sonra çağrılabilir. Ortamı VSPackages üzerinden ekleme özelliği tasarım seçenekleri sayfaları gerektiriyorsa, Otomasyon desteği de eklemeniz gerekir. Daha fazla bilgi için bkz: [seçenekleri sayfaları için Otomasyon desteği](../../extensibility/internals/automation-support-for-options-pages.md).  
+#### <a name="options-pages-on-the-tools-menu"></a>Araçlar menüsünde Seçenekler sayfaları  
+ Araçlar, Seçenekler otomasyon modeli sayfaları uygulama ve kendi seçenekleri oluşturmak üzere kayıt defteri bilgileri ekleyerek aracılığıyla genişletmek için sayfaları oluşturabilirsiniz. Diğer Seçenekler sayfaları gibi ortam nesne modeli üzerinden sayfalarınızı ardından volat pouze jednou. Tasarım ortamı üzerinden VSPackages ekleme özelliği seçenekler sayfaları gerektiriyorsa, Otomasyon desteği de eklemeniz gerekir. Daha fazla bilgi için [seçenekler sayfaları için Otomasyon desteği](../../extensibility/internals/automation-support-for-options-pages.md).  
   
 ## <a name="standard-automation-objects"></a>Standart Otomasyon nesneleri  
- Projeler için Otomasyon genişletmek için de standart Otomasyon nesneleri uygular (türetilmiş `IDispatch`) diğer proje nesneleri göze ve standart yöntemleri ve özellikleri uygular. Standart nesneleri örneklerindendir çözüm hiyerarşiye gibi eklenen project nesneleri `Projects`, `Project`, `ProjectItem`, ve `ProjectItems`. Her yeni proje türü, bu nesnelerin (ve muhtemelen semantiğini bağlı olarak diğer olanları projenizin) uygulamanız gerekir.  
+ Otomasyon projeleri için genişletmek için de standart Otomasyon nesneleri uygular (türetilen `IDispatch`) diğer proje nesneler dikkati ve standart yöntemleri ve özellikleri uygulama. Örnekler, standart nesneleri gibi çözüm hiyerarşiye eklenen proje nesnelerini `Projects`, `Project`, `ProjectItem`, ve `ProjectItems`. Her yeni proje türü, bu nesneler (ve muhtemelen diğer formüllerde semantiği bağlı olarak, projenizin) uygulamanız gerekir.  
   
- Bir anlamda bu nesneler VSPackage özgü projesi nesneleri ters avantajı sağlar. Standart Otomasyon nesneleri aynı nesneleri destekleyen başka bir projeye gibi genelleştirilmiş bir şekilde kullanılacak projenizi izin verin. Bu nedenle, bir genel karşı yazılmış eklenti `Project` ve `ProjectItem` nesneleri karşı herhangi bir türde projeleri işlev görebilir. Daha fazla bilgi için bkz: [modelleme projesi](../../extensibility/internals/project-modeling.md).
+ Bir anlamda, bu nesneler VSPackage özgü proje nesnelerini karşı avantajı sağlar. Projeniz gibi aynı nesneleri destekleyen başka bir projeye genelleştirilmiş bir yol kullanılması standart Otomasyon nesneleri sağlar. Bu nedenle, bir genel karşı yazılan eklenti `Project` ve `ProjectItem` nesneleri herhangi bir türde projelere karşı işlev görebilir. Daha fazla bilgi için [modelleme projesi](../../extensibility/internals/project-modeling.md).

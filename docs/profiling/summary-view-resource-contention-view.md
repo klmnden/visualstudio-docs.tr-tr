@@ -1,8 +1,6 @@
 ---
 title: Özet görünümü - kaynak çakışması görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
@@ -12,38 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed1db5bd560c32cdb40ddc728b3ede63c70dbc88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917429"
 ---
-# <a name="summary-view---resource-contention-view"></a>Özet görünümü - kaynak çakışması görünümü
-Özet görünümü, bir kaynağa erişim için beklenen karşın, bir iş parçacığı veya işlem askıya alındı, uygulamanızda olaylar hakkında bilgi görüntüler.  
+# <a name="summary-view---resource-contention-view"></a>Özet Görünümü - Kaynak Çakışması Görünümü
+Özet görünümü, bir kaynağa erişim için beklenen karşın, bir iş parçacığı veya işlemi askıya alındı, uygulamanızda olaylar hakkında bilgi görüntüler.  
   
- Bildirim bağlantıları ve rapor listeler açıklaması dahil olmak üzere daha fazla bilgi için bkz: [özeti görünümü](../profiling/summary-view.md).  
+ Rapor listeler ve bildirim bağlantıları açıklamasını dahil olmak üzere daha fazla bilgi için bkz. [özeti görünümünü](../profiling/summary-view.md).  
   
 ## <a name="timeline-graph"></a>Zaman Çizelgesi grafiği  
- Özet görünümü zaman çizelgesi grafiğinde Çekişme olayları profil oluştu zamanla profili uygulamasının sayısını gösterir. Seçilen zaman aralığı görünümüne filtrelemek için zaman çizelgesi grafik kullanabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Özet zaman çizelgesi filtre rapor görünümleri](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Özet görünümü zaman çizelgesi grafikte, profil oluşturma gerçekleşen zaman içinde oluşturulan uygulamanın Çekişme olayları sayısını gösterir. Seçili zaman aralığı için görünüme filtre uygulamak için zaman çizelgesi Grafiği'ni kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
-## <a name="most-contended-resources"></a>En Contended kaynakları  
- **Çoğu Contended kaynakları** en Çekişme olayları nedeniyle uygulama kaynakları listeler. Çakışmaları görüntülemek için bir kaynak adı tıklatabilirsiniz. Kaynak çekişmeleri ayrıntılı bir zaman çizelgesi çekişmeleri görünümü iş parçacığı tarafından sağlar.  
+## <a name="most-contended-resources"></a>En çekişmeli kaynaklar  
+ **En fazla kaynak Contended** Çekişme olayları en nedeniyle uygulama kaynakları listeler. Çekişmelerini görüntülemek için bir kaynak adı tıklayabilirsiniz. Çekişmeleri görünümü kaynak çakışması ayrıntılı bir zaman çizelgesi iş parçacığı tarafından sağlar.  
   
- **Çoğu Contended kaynakları** her kaynak için aşağıdaki veriler içerir.  
+ **En fazla kaynak Contended** her bir kaynak olarak aşağıdaki verileri içerir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Ad**|Kaynağın adı.|  
-|**Çekişmeleri %**|Bu kaynak üzerinde çekişmeleri olan profil oluşturma veri tüm Çekişme olayları yüzdesi.|  
+|**Ad**|Kaynak adı.|  
+|**Çekişme yüzdesi**|Bu kaynak üzerinde Çekişme olan profil oluşturma veri tüm Çekişme olayları yüzdesi.|  
   
-## <a name="most-contended-thread"></a>En Contended iş parçacığı  
- **Çoğu Contended iş parçacığı** Çekişme olayları'en büyük sayı olan uygulama parçacıklarında listeler. Kaynak çekişmeleri ayrıntılı bir zaman çizelgesi iş parçacığı tarafından sağlar çekişmeleri görünümü görüntülemek için iş parçacığı adı tıklatabilirsiniz.  
+## <a name="most-contended-thread"></a>En çekişmeli iş parçacığı  
+ **Çoğu Contended iş parçacıkları** iş parçacığı Çekişme olayları en çok sayıda olan uygulamada listeler. İş parçacığı tarafından ayrıntılı bir zaman çizelgesi kaynak çakışması sağlayan çekişmelerini görüntülemek için iş parçacığı adı tıklayabilirsiniz.  
   
- **Çoğu Contended iş parçacığı** her iş parçacığı için aşağıdaki veriler içerir.  
+ **Çoğu Contended iş parçacıkları** her iş parçacığı için aşağıdaki veriler içerir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
 |**ID**|İş parçacığı tanımlayıcısı.|  
 |**Ad**|İş parçacığı sahibi olan işlemin adı.|  
-|**Çekişmeleri %**|Bu kaynak üzerinde çekişmeleri olan profil oluşturma veri tüm Çekişme olayları yüzdesi.|
+|**Çekişme yüzdesi**|Bu kaynak üzerinde Çekişme olan profil oluşturma veri tüm Çekişme olayları yüzdesi.|

@@ -2,7 +2,6 @@
 title: Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa846a25e1383c0c164dfb4747899f5e86237d32
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4719d529d3fc9da7367150cd211a598ebf52770a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853287"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
 Kullanım **biçimlendirme** sayfasının **seçenekleri** Kod Düzenleyicisi'nde kod biçimlendirme seçeneklerini ayarlamak için iletişim kutusu. Menü çubuğunda, bu sayfaya erişmek için seçin **Araçları**, **seçenekleri**ve ardından **metin düzenleyici**, **JavaScript**ve **Biçimlendirme**.

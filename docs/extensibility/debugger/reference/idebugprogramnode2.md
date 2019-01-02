@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNode2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fd14fb79d410aa20392af42e43004f46dfec73
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15d811cb01f7d5201f8cc1d7f64795c0197cf99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848067"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
-Bu arabirim hata ayıklaması yapılabilir bir programı temsil eder.  
+Bu arabirim, hata ayıklaması yapılabilir bir program temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,10 +29,10 @@ IDebugProgramNode2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) veya özel bir bağlantı noktası tedarikçi hata ayıklaması yapılabilir bir programı temsil etmek için bu arabirimi uygular. Bu arabirimi uygulayan aynı nesne üzerinde genel uygulanır [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi. Bu arabirim kayıtlı [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] çağırarak [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
+ Hata ayıklama altyapısı (DE) veya özel bağlantı noktası sağlayıcısı hata ayıklaması yapılabilir bir program temsil etmek için bu arabirimi uygular. Bu arabirimi uygulayan aynı nesne üzerinde uygulanan genellikle [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi. Bu arabirim kayıtlı [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] çağırarak [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Çağrı [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) bu arabirim dönün. Özel bir bağlantı noktası tedarikçi çağrısıyla bu arabirimin aldığı [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Bu arabirimin çağrısıyla SE aldığı [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
+ Çağrı [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) bu arabirimi dönün. Bu arabirim yapılan bir çağrıyla özel bağlantı noktası sağlayıcısı alır [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Bu arabirim için bir çağrı yoluyla bir DE alır [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugProgramNode2`.  
@@ -51,17 +48,17 @@ IDebugProgramNode2 : IUnknown
 |[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|KULLANIM DIŞI. KULLANMAYIN.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oturum hata ayıklama Yöneticisi'ni (SDM) genellikle çağırır [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) bu arabirimi elde edilir.  
+ Oturum hata ayıklama Yöneticisi (SDM) genellikle çağrıları [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) bu arabirimi elde edilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Msdbg.h  
+ Üst bilgi: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)   
  [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)   

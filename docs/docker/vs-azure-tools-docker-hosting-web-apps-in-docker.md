@@ -5,7 +5,6 @@ services: azure-container-service
 documentationcenter: .net
 author: mlearned
 manager: douge
-editor: ''
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.service: azure-container-service
 ms.devlang: dotnet
@@ -14,21 +13,24 @@ ms.tgt_pltfrm: NA
 ms.workload: NA
 ms.date: 05/21/2018
 ms.author: mlearned
-ms.openlocfilehash: 8364211080deb0f7f7b22822d1a0653090e15345
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: d759e1fbdb6f5e0aaf68f867e35d5e7531502c40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931151"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Visual Studio kullanarak kapsayıcı kayıt defterine ASP.NET kapsayıcısı dağıtma
+
 ## <a name="overview"></a>Genel Bakış
+
 Docker, bazı açılardan konak uygulamalar ve hizmetler için kullanabileceğiniz bir sanal makineye, benzer bir basit bir kapsayıcı alt yapısıdır.
 Bu öğreticide, kapsayıcıya alınmış uygulamanızı yayımlamak için Visual Studio kullanarak açıklanmaktadır bir [Azure Container Registry](https://azure.microsoft.com/services/container-registry).
 
 Azure aboneliğiniz yoksa başlamadan önce [ücretsiz bir hesap](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) oluşturun.
 
 ## <a name="prerequisites"></a>Önkoşullar
+
 Bu öğreticiyi tamamlamak için:
 
 * En son sürümünü yükleyin [Visual Studio 2017](https://azure.microsoft.com/downloads/) "ASP.NET ve web geliştirme" iş yüküyle birlikte sağlanır

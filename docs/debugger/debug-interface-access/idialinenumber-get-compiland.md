@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber::get_compiland | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca79c4a2f90e21d71518033ffb8450c02998945
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c24c79abb4b907c79c45e6dea5843546e3ce9804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851816"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
 Görüntü metnin bayt katkıda derlenecek dosya simgesi bir başvuru alır.  
@@ -27,7 +25,7 @@ Görüntü metnin bayt katkıda derlenecek dosya simgesi bir başvuru alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_compiland (   
+HRESULT get_compiland (   
    IDiaSymbol** pRetVal  
 );  
 ```  

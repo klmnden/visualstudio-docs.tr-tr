@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: ListObject denetimlerini veri ile doldurabilirsiniz.'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cafaaebeea2a6fd5d4c750e89e90747da28b254d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925634"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Nasıl Yapılır: ListObject denetimlerini veri ile doldurabilirsiniz.
   Veri bağlama, hızlı bir şekilde belgenize veri eklemek için bir yol olarak kullanabilirsiniz. Verileri Liste nesnesine bağladıktan sonra verileri görüntüler ancak artık veri kaynağına bağlı olduğu için liste nesnesi kesebilirsiniz.  
@@ -71,5 +68,3 @@ ms.locfileid: "53646695"
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Nasıl yapılır: Belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  

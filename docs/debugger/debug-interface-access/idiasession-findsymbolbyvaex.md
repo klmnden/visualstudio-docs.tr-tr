@@ -1,8 +1,6 @@
 ---
 title: Idiasession::findsymbolbyvaex | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 706049acf99804038f48125b77a71b879658baac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a184240836904be54f8ccea3d648e403213601e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851634"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 İçeriyor veya belirtilen sanal adres (VA) ve uzaklığı için en yakın olan bir belirtilen simge türü alır.  
@@ -27,7 +25,7 @@ ms.locfileid: "49874468"
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT findSymbolByVAEx (   
+HRESULT findSymbolByVAEx (   
    ULONGLONG    va,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol,  

@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: iş parçacıklarını bayrakla işaretleme ve bayrak | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d26c87867e071b7dafce80d95e4bc46cb88bb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851410"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Nasıl Yapılır: İş Parçacıklarını Bayrakla İşaretleme ve İşareti Geri Alma
+# <a name="how-to-flag-and-unflag-threads"></a>Nasıl Yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak
 Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları**, **Paralel Yığınlar** (iş parçacığı görünümü), **paralel izleme**ve  **GPU iş parçacıkları** windows. Başkalarının bayraklı iş parçacıklarını diğer iş parçacıklarından ayırt etmek ve bu simgeyi yardımcı olabilir.  
   
 Bayraklı iş parçacıklarını ayrıca Al, özel olarak değerlendirilmesi **iş parçacığı** listesini **hata ayıklama konumu** araç ve diğer çok iş parçacıklı hata ayıklama Windows. Tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını Göster **iş parçacığı** listesi veya diğer Windows.
@@ -64,4 +62,4 @@ Bayraklı iş parçacıklarını ayrıca Al, özel olarak değerlendirilmesi **i
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md)  
- [İzlenecek yol: iş parçacıkları penceresini kullanarak birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/how-to-use-the-threads-window.md)
+ [İzlenecek yol: İş parçacıkları penceresini kullanarak birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/how-to-use-the-threads-window.md)

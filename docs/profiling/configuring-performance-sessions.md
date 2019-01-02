@@ -1,8 +1,6 @@
 ---
 title: Performans oturumlarını yapılandırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e00c31643a5f894612daa24d4a271856d8e21f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7dd85cc1a4fb00acfc6d6f7afde05917552f6c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854340"
 ---
 # <a name="configure-performance-sessions"></a>Performans oturumlarını yapılandırma
 Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, çok çeşitli çok sayıda uygulama türleri için performans verilerini toplayabilir. Bu bölümde, ilginizi çeken verileri toplamak için profil oluşturma Araçları'nı yapılandırmak için performans oturumu ve hedef ikili performans Wizardand özelliklerini kullanmayı gösterir. Profil oluşturma araçları yapılandırma özellikleri de içinde profil oluşturma yürütmesine toplanan veri miktarını denetlemek için kullanılabilir. Daha fazla bilgi için [veri toplamayı kontrol](../profiling/controlling-data-collection.md).  
@@ -32,9 +30,9 @@ Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil olu�
   
 | Görev | İlgili içerik |
 | - | - |
-| **Temel profil oluşturma seçenekleri ayarlayın:** yapılandırmanız gereken [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Microsoft sembol sunucusu kullanmak için. Bu, Windows ve diğer Microsoft uygulamaları geçerli sürümü için işlevi ve parametre adları gibi semboller erişebildiğinizden emin yapar. Profil oluşturma araçları ve profil oluşturma veri dosyalarıyla adları sistem izinleri gibi profil oluşturma oturumu başlamadan önce diğer genel seçenekleri de belirtebilirsiniz. | -   [Nasıl yapılır: başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Nasıl yapılır: sembol bilgilerini seri hale getirme](../profiling/how-to-serialize-symbol-information.md)<br />-   [Nasıl yapılır: geçerli oturumu ayarlama](../profiling/how-to-set-the-current-session.md)<br />-   [Nasıl yapılır: izinleri ayarlama](../profiling/how-to-set-permissions.md)<br />-   [Nasıl yapılır: performans veri dosyası adlandırma seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md) |
-| **Toplamak istediğiniz verileri belirtin:** profil oluşturma oturumunu yapılandırmak için kullandığınız yordam profil oluşturmak istediğiniz hedef uygulama türü ve toplamak istediğiniz performans veri türüne bağlıdır. | -   [Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)<br />-   [Örnekleme kullanarak performans istatistikleri toplama](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [Nasıl yapılır: web sayfalarında JavaScript profili kod](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [İş parçacığı ve işlem eşzamanlılık verileri toplama](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [Ek performans verileri toplama](../profiling/collecting-additional-performance-data.md) |
-| **Gelişmiş yapılandırma seçenekleri ayarlayın:** birden çok ortak dil çalışma zamanı (CLR) sürümünü yükleyin ve .NET Framework uygulamaları profili oluşturduğunuzda, hangi sürümünün profilinin belirtebilirsiniz. Performans oturumu içinde birden fazla .exe dosyası varsa, ikili dosyalarının başlatma sırasını ayarlayabilirsiniz. | -   [Nasıl yapılır: .NET Framework çalışma zamanını belirtin](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Nasıl yapılır: başlatmak için ikili dosya belirtme](../profiling/how-to-specify-the-binary-to-start.md) |
+| **Temel profil oluşturma seçenekleri ayarlayın:** Yapılandırmanız gereken [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Microsoft sembol sunucusu kullanmak için. Bu, Windows ve diğer Microsoft uygulamaları geçerli sürümü için işlevi ve parametre adları gibi semboller erişebildiğinizden emin yapar. Profil oluşturma araçları ve profil oluşturma veri dosyalarıyla adları sistem izinleri gibi profil oluşturma oturumu başlamadan önce diğer genel seçenekleri de belirtebilirsiniz. | -   [Nasıl Yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [Nasıl Yapılır: Sembol bilgilerini seri hale getirme](../profiling/how-to-serialize-symbol-information.md)<br />-   [Nasıl Yapılır: Geçerli oturumu ayarlama](../profiling/how-to-set-the-current-session.md)<br />-   [Nasıl Yapılır: İzinleri ayarlama](../profiling/how-to-set-permissions.md)<br />-   [Nasıl Yapılır: Performans veri dosyası adlandırma seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md) |
+| **Toplamak istediğiniz verileri belirtin:** Profil oluşturma oturumunu yapılandırmak için kullandığınız yordam, profil oluşturmak istediğiniz hedef uygulama türü ve toplamak istediğiniz performans veri türüne bağlıdır. | -   [Nasıl Yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)<br />-   [Örnekleme kullanarak performans istatistikleri toplama](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [Nasıl Yapılır: Web sayfalarında JavaScript kodu profili](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [İş parçacığı ve işlem eşzamanlılık verileri toplama](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [Ek performans verileri toplama](../profiling/collecting-additional-performance-data.md) |
+| **Gelişmiş yapılandırma seçenekleri ayarlayın:** Birden çok ortak dil çalışma zamanı (CLR) sürümünü yükleyin ve .NET Framework uygulamaları profil, hangi sürümünün profilinin belirtebilirsiniz. Performans oturumu içinde birden fazla .exe dosyası varsa, ikili dosyalarının başlatma sırasını ayarlayabilirsiniz. | -   [Nasıl Yapılır: .NET Framework çalışma zamanını belirtin](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [Nasıl Yapılır: Başlamak için ikili dosya belirtme](../profiling/how-to-specify-the-binary-to-start.md) |
   
 ## <a name="related-sections"></a>İlgili bölümler  
  [Veri toplamayı denetleme](../profiling/controlling-data-collection.md)  

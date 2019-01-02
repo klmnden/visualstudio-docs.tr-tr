@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932265"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl yapılır: test belirtin yükleme kullanılacak aracı test senaryoları
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl Yapılır: Yük testi senaryolarında kullanılacak test aracıları belirtme
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için.
 
@@ -69,6 +68,6 @@ Bir test aracısı makineye CPU kullanımı yüzde 75'inden daha vardır veya y�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
-- [İzlenecek yol: Yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
+- [İzlenecek yol: Bir yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md)
 - [Yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md)
