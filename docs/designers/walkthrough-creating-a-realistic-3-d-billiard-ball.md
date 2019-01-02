@@ -1,8 +1,7 @@
 ---
-title: 'İzlenecek yol: gerçekçi bir 3B bilardo topu oluşturma'
+title: 'İzlenecek yol: Gerçekçi bir 3B bilardo topu oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913497"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Gerçekçi bir 3B bilardo topu oluşturma
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>İzlenecek yol: Gerçekçi bir 3B bilardo topu oluşturma
 
 Bu izlenecek yol, Visual Studio gölgelendirici Tasarımcısı ve Resim Düzenleyicisi'ni kullanarak gerçekçi bir 3B bilardo topu oluşturma işlemini gösterir. Bilardo topunun 3B görünümü, birçok gölgelendirici teknikleri uygun doku kaynakları ile birleştirerek elde edilir.
 
@@ -79,7 +78,7 @@ Emin olun **özellikleri** penceresi ve **araç kutusu** görüntülenir.
 
 3. Doku özelliklerini yapılandırarak önceki yordamda oluşturduğunuz dokuyu uygulayın. Değerini **doku** özelliği **doku örneğinin** düğüme **doku1**ve ardından kullanarak doku dosyasını belirtin. **Filename**özelliği **doku1** aynı özellik penceresinde özellik grubu.
 
-   Bir dokunun gölgelendiriciye uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: temel doku gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-texture-shader.md).
+   Bir dokunun gölgelendiriciye uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Temel doku gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-texture-shader.md).
 
    Bilardo topu şuna benzer görünmelidir:
 
@@ -101,7 +100,7 @@ Bilgisayar grafiklerinde *aydınlatma modelleri*— Basitleştirilmiş benzetiml
 
 - İsteğe bağlı olarak yapılandırarak Aydınlatmanın nasıl davranacağını ayarlayabilirsiniz **MaterialDiffuse** gölgelendirici grafiğinin özelliği. Gölgelendirici grafiğinin özelliklerine erişmek için tasarım yüzeyinde boş bir alan seçin ve ardından, erişmek istediğiniz özelliği bulun **özellikleri** penceresi.
 
-Gölgelendiricinize Lambert aydınlatma uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
+Gölgelendiricinize Lambert aydınlatma uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Temel Lambert gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Uygulanan Lambert aydınlatma ile bilardo topu şuna benzer görünmelidir:
 
@@ -123,7 +122,7 @@ Lambert aydınlatma modeli önceki paragrafta açıklandığı gibi Yansımalı 
 
 2. İsteğe bağlı olarak Yansımalı Vurgunun yapılandırarak Yansımalı Vurgunun davranış biçimini ayarlayabilirsiniz (**MaterialSpecular** ve **MaterialSpecularPower**) gölgelendirici grafiğinin. Tasarım yüzeyinde ve ardından boş bir alan için gölgelendirici grafiğinin özelliklerine erişmek, seçin **özellikleri** penceresinde erişmek istediğiniz özelliği bulun.
 
-   Yansımalı vurguların gölgelendiriciye uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: temel Phong gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-phong-shader.md).
+   Yansımalı vurguların gölgelendiriciye uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Temel Phong gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-phong-shader.md).
 
    Uygulanan Yansımalı vurgular ile bilardo topu şuna benzer görünmelidir:
 
@@ -212,7 +211,7 @@ Ortam eşleme gerçek yansımaların etkin bir yaklaşığını önceki paragraf
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md)
-- [Nasıl yapılır. 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 - [Görüntü Düzenleyicisi](../designers/image-editor.md)
 - [Gölgelendirici Tasarımcısı düğümleri](../designers/shader-designer-nodes.md)

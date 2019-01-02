@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: bir MSBuild proje SDK başvurusu | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir MSBuild proje SDK başvurusu | Microsoft Docs'
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9e5640e02813c22465815576e1435210e2d55712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935235"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Nasıl yapılır: kullanım MSBuild proje SDK'ları
+# <a name="how-to-use-msbuild-project-sdks"></a>Nasıl Yapılır: MSBuild proje SDK'ları kullanın
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 "projesinde SDK" kavramını kullanıma sunulan özellikler ve içeri aktarılacak hedefler gerektiren bir yazılım geliştirme setleri kullanarak basitleştirir.
 

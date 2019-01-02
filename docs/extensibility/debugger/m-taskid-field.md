@@ -1,9 +1,6 @@
 ---
 title: m_taskıd alanı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_taskId field, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b68e1caa0add0c013740c6a0615995a1fa8bc1
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91edfb6f98d9949193af760d5369d4e6e9035cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910442"
 ---
 # <a name="mtaskid-field"></a>m_taskıd alanı
 Destek alanı <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> özelliği.  

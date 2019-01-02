@@ -1,8 +1,6 @@
 ---
 title: Windows (ETW) raporu için olay izleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Event tracing for Windows profiling report
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e75d9cbcb67ab9f97b83bf388cc5b6fec58ba3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e732d8350949d8ac9bfdc6a89c87b6d415fc726
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913271"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Olay izleme için Windows (ETW) raporu
 Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Windows (ETW) raporu listeler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları. İkili dosyada toplanan ETW veriler (. *etl*) dosyası.  
@@ -26,7 +24,7 @@ Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Window
 > [!NOTE]
 >  ETW raporları görüntüleyemez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] arabirimi.  
   
-- ETW profil oluşturma araçları kullanarak toplama hakkında bilgi için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] arabirim için bkz: [nasıl yapılır: veri toplamak için olay izleme Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- ETW profil oluşturma araçları kullanarak toplama hakkında bilgi için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] arabirim için bkz: [nasıl yapılır: Olay izleme için Windows (ETW) verileri toplamak](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
 - Kullanarak ETW veri toplama hakkında bilgi için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı araçları görmek [olayları](../profiling/events-vsperfcmd.md).  
   
@@ -38,5 +36,5 @@ Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Window
 |**İşlem kimliği**|Olayı oluşturan bir işlemi tanımlar.|  
 |**İş parçacığı kimliği**|Olayı oluşturan iş parçacığını tanımlar.|  
 |**Açıklama**|Olay sağlayıcısı tanımlar.|  
-|**Türü**|Olay türü tanımlar.|  
+|**Tür**|Olay türü tanımlar.|  
 |**Özellikler**|Olay Özellikleri. Her olay, parantez içine alınmış bir virgülle ayrılmış, ad-değer çiftidir.|

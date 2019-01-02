@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: metin işaretçileri kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Metin işaretçileri kullanma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 825f567098d86a0f643de84eef395e5404d3b0f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895707"
 ---
-# <a name="how-to-use-text-markers"></a>Nasıl yapılır: metin işaretçileri kullanma
+# <a name="how-to-use-text-markers"></a>Nasıl Yapılır: Metin işaretçileri kullanma
 Düzenlemek için metin işaretçileri uygulanabilir bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> nesne.  
   
 ## <a name="procedures"></a>Yordamlar  
@@ -57,6 +54,6 @@ Düzenlemek için metin işaretçileri uygulanabilir bir <xref:Microsoft.VisualS
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Nasıl yapılır: standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
- [Nasıl yapılır: özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: uygulama, hata işaretçileri](../extensibility/how-to-implement-error-markers.md)
+ [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
+ [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
+ [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)

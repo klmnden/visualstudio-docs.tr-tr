@@ -3,7 +3,6 @@ title: İş Akışı Tasarımcısı - ReceiveAndSendReply şablon Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6b5a12b37509e6e5113c704ef2c3ff931ea32e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b62da812773795ff89e1beb87af6364c8baee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915052"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply Şablon Tasarımcısı
 
@@ -45,7 +44,7 @@ Kullanma hakkında daha fazla bilgi için **alma** yapılandırmak için tasarı
 Aşağıdaki tabloda <xref:System.ServiceModel.Activities.SendReply> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri Özellikler kılavuz düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
 
 
-| Özellik adı | Gerekli | Kullanım |
+| Özellik Adı | Gerekli | Kullanım |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | İsteğe bağlı kolay adı <xref:System.ServiceModel.Activities.SendReply> etkinlik. SendReplyToReceive varsayılandır.<br /><br /> Ancak varsayılan olmayan bir değeri kullanımı kolay için <xref:System.Activities.Activity.DisplayName%2A> kesinlikle gerekli değildir, bu tür bir değer kullanmak en iyisidir. |
 | <xref:System.ServiceModel.Activities.SendReply.Request%2A> | Doğru | Başvuru <xref:System.ServiceModel.Activities.Receive> etkinlik ile eşleştirilmiş <xref:System.ServiceModel.Activities.SendReply> etkinlik. Bu özellik olmamalıdır **null**. <xref:System.ServiceModel.Activities.Receive> ve <xref:System.ServiceModel.Activities.SendReply> etkinlikler birlikte sunucu üzerinde bir istek/yanıt Mesajlaşma modeli model için kullanılır. Bu özellik belirten <xref:System.ServiceModel.Activities.Send> etkinlik eşleştirilmiştir. Tasarımcıda için otomatik olarak bağlı olduğundan bu özellik düzenlenemiyor <xref:System.ServiceModel.Activities.Send> oluşturduğunuz etkinlik <xref:System.ServiceModel.Activities.SendReply> etkinlik. |

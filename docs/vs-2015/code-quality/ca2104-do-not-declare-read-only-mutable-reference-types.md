@@ -1,12 +1,11 @@
 ---
-title: 'CA2104: salt okunur kesilebilir başvuru türleri bildirmeyin | Microsoft Docs'
+title: 'CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66248e6920c879932204ddb25a40820720adfd84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19c371aa57718ffe18cd2428de8bf6ca0a174a29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893574"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +44,7 @@ ms.locfileid: "49877445"
 
  Salt okunur değiştiricisi ([salt okunur](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) C# ' ta, [salt okunur](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) içinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ve [const](http://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) C++'ta) bir başvuru türü üzerinde alan (c++ işaretçisi) alanın engeller farklı bir başvuru türü örneği tarafından değiştirildi. Ancak, değiştiricisi başvuru türünü değiştirme alanının örnek verilerini engellemez.
 
- Salt okunur dizi alanları bu kurala ancak bunun yerine ihlalini neden [CA2105: dizi alanları okunamadı yalnızca](../code-quality/ca2105-array-fields-should-not-be-read-only.md) kuralı.
+ Salt okunur dizi alanları bu kurala ancak bunun yerine ihlalini neden [CA2105: Dizi alanları okunamadı yalnızca](../code-quality/ca2105-array-fields-should-not-be-read-only.md) kuralı.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için salt okunur değiştiricisi kaldırın veya bir değişiklik kabul edilebilir ise, alan bir sabit türüyle değiştirin.
@@ -59,6 +58,3 @@ ms.locfileid: "49877445"
  [!code-cpp[FxCop.Security.MutableReferenceTypes#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cpp/FxCop.Security.MutableReferenceTypes.cpp#1)]
  [!code-csharp[FxCop.Security.MutableReferenceTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/cs/FxCop.Security.MutableReferenceTypes.cs#1)]
  [!code-vb[FxCop.Security.MutableReferenceTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.MutableReferenceTypes/vb/FxCop.Security.MutableReferenceTypes.vb#1)]
-
-
-

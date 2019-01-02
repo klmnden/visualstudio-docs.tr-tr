@@ -2,7 +2,6 @@
 title: Test Gezgini Hakkında SSS
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -16,12 +15,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6f4d93f81cb653cda5af7a4b75affef4a845790f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910444"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini hakkında SSS
 
@@ -122,7 +121,7 @@ Test bağdaştırıcısı uzantılarından kullanmak yerine, projeleri test bağ
 
 Son UWP test projeleri, test uygulamaları tanımlamak için daha iyi performans sağlayan bir test platformu yapı özelliğini belirtin. Visual Studio 15.7 Sürüm önce başlatıldı bir UWP test projesi varsa, bu hatayı görebilirsiniz **çıkış** > **testleri**:
 
-**System.AggregateException: Bir veya daha fazla hata oluştu. System.InvalidOperationException--->: şu TestContainer bulunamadı {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider adresindeki <GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException: Bir veya daha fazla hata oluştu. System.InvalidOperationException--->: Şu TestContainer bulunamadı {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider adresindeki <GetTestContainerAsync>d__61.MoveNext()**
 
 Bu hatayı düzeltmek için:
 

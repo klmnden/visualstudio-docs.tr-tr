@@ -2,7 +2,6 @@
 title: Grafik tanılama | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890936"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama
 Visual Studio*grafik tanılama* kaydetme ve ardından Direct3D uygulamalar oluşturma ve performans sorunları çözümleme araçları kümesidir. Grafik Tanılama, Windows PC, bir Windows cihaz öykünücüsü veya bir uzak bilgisayar veya cihaz üzerinde yerel olarak çalışan uygulamalarda kullanılabilir.  
@@ -82,6 +81,5 @@ Visual Studio*grafik tanılama* kaydetme ve ardından Direct3D uygulamalar oluş
 
 | Başlık | Açıklama |
 | - | - |
-| [Hata ayıklayıcısı özellik turu](../debugging-in-visual-studio.md) | Hata ayıklama işlevleri tanıtır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Hata ayıklayıcısı özellik turu](/visualstudio/debugger/debugger-feature-tour) | Hata ayıklama işlevleri tanıtır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [DirectX grafik ve oyun](http://go.microsoft.com/fwlink/?LinkId=256498) | DirectX grafik teknolojilerini açıklayan makaleleri sağlar. |
-

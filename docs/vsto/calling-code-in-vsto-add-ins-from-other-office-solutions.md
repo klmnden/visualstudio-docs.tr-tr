@@ -1,9 +1,6 @@
 ---
 title: VSTO eklentilerinde diğer Office Çözümlerinden kod arama
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 5c347000d75beb628c01c5a8f8275d4755db776f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910275"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO eklentilerinde diğer Office Çözümlerinden kod arama
   Bir nesne için diğer Microsoft Office çözümleri gibi diğer çözümlerle VSTO eklenti içinde kullanıma sunabilirsiniz. VSTO eklenti diğer çözümleri kullanmayı etkinleştirmek istediğiniz bir hizmet sağlar, bu yöntem kullanışlıdır. Bir Web hizmetinden Finansal veriler üzerinde hesaplamalar yapan Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar zamanında Excel VSTO eklentisi içinde çağırarak gerçekleştirebilirsiniz.  
@@ -152,5 +149,3 @@ utilities.ImportData();
  [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md)   
  [Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
-title: Arayan Aranan görünümü - izleme verileri | Microsoft Docs
-ms.custom: ''
+title: Arayan-Aranan görünümü - izleme verileri | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,87 +10,87 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a24d19fabc3cb82dbb4004ec71b6fa00bc470c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 6fa2aa1820fabef8a14355190984e83f3ee52054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947107"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Arayan/Aranan görünümü - izleme verileri
-Arayan/Aranan görünümü çağrısı ağacında seçilen işlevi ve üst ve alt işlevleri profil bilgilerini görüntüler. Arayan/Aranan görünümü üç kılavuzları içerir.  
+Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri hakkında profil bilgileri çağrı ağacında görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir.  
   
- **Geçerli işlevi** Orta Kılavuz ve bunun görüntülenen profil seçili işlevi hakkında bilgi gösterir. İşlev tüm çağrıları değerlerini içerir.  
+ **Geçerli işlev** Orta Kılavuz ve bunun görüntülenen profil oluşturma seçili işlev hakkında bilgi gösterir. İşlev çağrıları tüm değerleri içerir.  
   
- **Geçerli işlevini çağırdı işlevleri** üst kılavuz ve bunun görüntülenen profil seçili işlevi çağıran (üst) işlevleri hakkında bilgi gösterir. Değerleri bu çağıran işlev gelen çağrıları tarafından üretildi. geçerli işlevi değerini miktarını gösterir.  
+ **Geçerli işlevi çağırmış işlevler** üst kılavuz ve bunun görüntülenen profil oluşturma seçili işlev çağıran (üst) işlevleri hakkında bilgi gösterir. Değerleri bu çağıran işlev çağrılarının tarafından oluşturulmuş geçerli işlev değerini miktarını gösterir.  
   
- **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz ve bunun görüntülenen profil seçili işlevinin Aranan (alt) işlevleri örnekleri hakkında bilgi gösterir. Değerleri geçerli işlevi tarafından çağrıldığında, alt işlevinde harcanan zamanı gösterir.  
+ **Geçerli işlev tarafından çağrılan işlevler** alt kılavuz ve bunun görüntülenen profil oluşturma seçili işlev (alt) çağrılan işlevlerin örnekleri hakkında bilgi gösterir. Değerleri yalnızca geçerli işlev tarafından çağrıldığında alt işlevde harcanan zamanı gösterir.  
   
 ## <a name="general"></a>Genel  
- Genel sütunları görünümü satırı işlevinde tanımlayın.  
+ Genel sütunları bir görünüm satır işlevi tanımlar.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
 |**İşlev adı**|İşlevin adı.|  
-|**İşlev adresi**|İşlev adresi.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
-|**Çağrı sayısı**|Bu işleve yapılan çağrılar toplam sayısı.|  
-|**Kaynak dosya**|Bu işlev için tanım içeriyor kaynak dosya.|  
-|**Modül adı**|İşlevi içeren modülü adı.|  
-|**Modül yolu**|İşlevi içeren modülü yolu.|  
-|**İşlem kimliği**|İşlemi çalıştırmak profil oluşturma kimliği (PID).|  
+|**İşlev adresi**|İşlevin adresi.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
+|**Çağrı sayısı**|Bu işleve yapılan çağrıların toplam sayısı.|  
+|**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
+|**Modül adı**|İşlevi içeren modül adı.|  
+|**Modül yolu**|İşlevi içeren modül yolu.|  
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
 |**İşlem adı**|İşlemin adı.|  
-|**Zaman özel araştırma ek yükü**|Bu işlev süredir yükü, araçları tarafından neden oldu. Araştırma yükünü tüm özel sürelerinden çıkarılır.|  
-|**Zaman dahil araştırması ek yükü**|Bu işlev ve onun alt işlevleri için ek yükü süresi, araçları tarafından neden oldu. Araştırma yükü tüm kapsayıcı sürelerinden çıkarılır.|  
-|**Türü**|İşlev Bağlam:<br /><br /> **0** -geçerli işlevi<br /><br /> **1** -geçerli işlevi çağıran bir işlev<br /><br /> **2** -geçerli işlev tarafından çağrılan bir işlevi<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
+|**Zaman dışlamalı araştırma ek yükü**|Zaman ek yükü bu işlev, ölçümlü izlemeyle neden oldu. Tüm özel sürelerinden çıkarıldığında araştırma ek yükü.|  
+|**Zaman kapsamlı araştırma ek yükü**|Zaman ek yükü Bu işlevde ve alt işlevleri, ölçümlü izlemeyle neden oldu. Tüm kapsamlı sürelerinden çıkarıldığında araştırma ek yükü.|  
+|**Tür**|İşlevin bağlamı:<br /><br /> **0** -geçerli işlevi<br /><br /> **1** -geçerli işlevi çağıran bir işlev<br /><br /> **2** -geçerli işlev tarafından çağrılan bir işlev<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
 |**Kök işlev adı**|Geçerli işlevin adı. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
   
-## <a name="elapsed-inclusive-values"></a>Geçen dahil değerleri  
- Çağrı yığınındaki bir işlevi olan süresi geçen dahil değerleri gösterir. Zaman alt işlevlerde geçen süre ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içerir.  
+## <a name="elapsed-inclusive-values"></a>Geçen kapsamlı değerleri  
+ Geçen kapsamlı değerleri, çağrı yığınındaki bir işlevi olduğu zamanı gösterir. Zaman alt işlevlerde harcanan zaman ve işletim sistemi, bağlam anahtarları ve giriş/çıkış işlemleri gibi çağrılarında harcanan süreyi içerir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Geçen dahil süre**|-Geçerli işlevi için işlevinde harcanan süre. Değer alt işlevleri ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içerir.<br />-Çağıran işlevi için bu çağıran işlev gelen çağrıları tarafından üretildi. geçerli işlevinin geçen dahil süre miktarı.<br />-Çağrılan işlev için geçerli işlevi gelen çağrıları tarafından oluşturulan bu işlev örneklerinde harcanan süre. Değer, Aranan alt işlevlerini ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içerir.|  
-|**Geçen dahil süre %**|Bu işlevi bu bağlamda geçen dahil süre harcandığını profil Çalıştır toplam geçen dahil zamanı yüzdesi.|  
-|**Ortalama dahil geçen zaman**|Ortalama bu işlevi bu bağlamda çağrısı dahil süre.|  
-|**Max geçen dahil süre**|En fazla bu işlevi bu bağlamda çağrısı dahil süre.|  
-|**Min (bunlar dahil) geçen zaman**|En düşük bu işlevi bu bağlamda çağrısı dahil süre.|  
+|**Geçen kapsamlı süre**|-Geçerli işlev için işlevde harcanan süre. Değer, alt işlevleri ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları harcanan süreyi içerir.<br />-Çağıran işlev için bu çağıran işleve çağrılar tarafından oluşturulmuş geçerli işlevin geçen kapsamlı süre miktarı.<br />-Çağrılan işlev için bu işlev çağrıları geçerli işlevden tarafından oluşturulan örneklerinde için harcanan süre. Değeri, çağrılan alt işlevlerini ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan zaman içerir.|  
+|**Geçen kapsamlı süre yüzdesi**|Geçen kapsamlı süre bu işlevi bu bağlamda harcandığını profil oluşturma çalışması toplam geçen kapsamlı süre yüzdesi.|  
+|**Geçen ortalama kapsamlı süre**|Ortalama kapsamlı süre bu bağlamda bu işlev çağrısına geçti.|  
+|**Geçen maksimum kapsamlı süre**|Maksimum kapsamlı süre bu bağlamda bu işlev çağrısına geçti.|  
+|**Geçen minimum kapsamlı süre**|Minimum kapsamlı süre bu bağlamda bu işlev çağrısına geçti.|  
   
-## <a name="elapsed-exclusive-values"></a>Geçen özel değerler  
- Bir işlev, doğrudan çağrı yığını üstünde yürütme süresi geçen özel değerleri gösterir. İçerik Geçişi ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın zaman içerir ancak harcanan zamanın alt işlevlerde içermez.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Geçen özel süre**|-Geçerli işlevi için işlevin doğrudan yürütmede harcanan süre. Değer alt işlevleri ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içerir.<br />-Çağıran işlev için bu çağıran işlev gelen çağrıları tarafından üretildi. geçerli işlevinin özel geçen süre.<br />-Çağrılan işlev için geçerli işlevi gelen çağrıları tarafından oluşturulan bu işlev örneklerinde harcanan süre. Aranan işlevi alt işlevlerde harcanan zamanı değeri dışlar, ancak bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarını içerir.|  
-|**Özel geçen süre %**|Çalıştıran profil oluşturma toplam geçen özel süre yüzdesi bu işlevi bu bağlamda toplam geçen özel zaman harcandığını.|  
-|**Ortalama özel geçen zaman**|Ortalama bu işlevi bu bağlamda çağrısı özel süre.|  
-|**Max geçen özel süre**|En fazla bu işlevi bu bağlamda çağrısı özel süre.|  
-|**Min özel geçen zaman**|En düşük bu işlevi bu bağlamda çağrısı özel süre.|  
-  
-## <a name="application-inclusive-values"></a>Uygulama (bunlar dahil) değerleri  
- Uygulama dahil değerler çağrı yığınındaki bir işlevi olan süreyi belirtir. Süresi bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın içermez ancak alt işlevlerde harcanan zamanın içermez.  
+## <a name="elapsed-exclusive-values"></a>Geçen dışlamalı değerleri  
+ Geçen dışlamalı değerleri bir işlev doğrudan çağrı yığınının en üstünde çağırılma yürütüldüğü zaman gösterir. Bağlam geçişleri ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan zaman zaman içerir, ancak alt işlevlerde harcanan süreyi içermez.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Uygulama dahil süresi**|-Geçerli işlevi için işlevi ve onun alt işlevlerde geçen süre. Değer bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında harcanan zamanın dışlar.<br />-Çağıran işlevi için bu çağıran işlev gelen çağrıları tarafından üretildi. geçerli işlevinin uygulama dahil süre miktarı.<br />-Çağrılan işlev için geçerli işlevi gelen çağrıları tarafından oluşturulan bu işlev örneklerinde harcanan süre. Değer harcanan zamanın Aranan işlevi alt işlevlerde içerir, ancak bu harcanan zamanın bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrılarında içermez.|  
-|**Uygulama dahil süresi %**|Çalıştıran profil oluşturma toplam geçen dahil süre yüzdesi bu işlevi bu bağlamda toplam uygulama dahil süresi geçen süre.|  
-|**Ortalama uygulama dahil süresi**|Bu işlevi bu bağlamda çağrısı ortalama uygulama dahil saati.|  
-|**En fazla uygulama dahil süresi**|Bu işlevi bu bağlamda çağrısı en fazla uygulama dahil saati.|  
-|**Min uygulama dahil süresi**|Bu işlevi bu bağlamda çağrısı minimum uygulama dahil saati.|  
+|**Geçen dışlamalı süre**|-Geçerli işlev için işlevin doğrudan yürütme harcanan zamanı. Değer, alt işlevleri ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları harcanan süreyi içerir.<br />-Çağıran işlev için bu çağıran işleve çağrılar tarafından oluşturulmuş geçerli işlevin geçen dışlamalı süre miktarı.<br />-Çağrılan işlev için bu işlev çağrıları geçerli işlevden tarafından oluşturulan örneklerinde için harcanan süre. Değeri, çağrılan işlevin alt işlevlerde harcanan zaman içermez, ancak bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları içerir.|  
+|**Geçen dışlamalı süre yüzdesi**|Çalıştıran profil oluşturma toplam geçen dışlamalı süre yüzdesi bu işlevi bu bağlamda toplam geçen dışlamalı süre geçen süre.|  
+|**Geçen ortalama dışlamalı süre**|Ortalama dışlamalı süre bu bağlamda bu işlev çağrısına geçti.|  
+|**Geçen maksimum dışlamalı süre**|Maksimum dışlamalı süre bu bağlamda bu işlev çağrısına geçti.|  
+|**Geçen minimum dışlamalı süre**|Minimum dışlamalı süre bu bağlamda bu işlev çağrısına geçti.|  
+  
+## <a name="application-inclusive-values"></a>Uygulama kapsamlı değerlerini  
+ Uygulama kapsamlı değerleri, çağrı yığınındaki bir işlevi olduğu zamanı gösterir. Süresi, bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında harcanan süreyi içermez, ancak alt işlevlerde harcanan süreyi içermez.  
+  
+|Sütun|Açıklama|  
+|------------|-----------------|  
+|**Kapsamlı uygulama süresi**|-Geçerli işlev için işlev ve alt işlevleri harcanan süre. Değeri, işletim sistemi, bağlam anahtarları ve giriş/çıkış işlemleri gibi çağrılarında harcanan süreyi içermez.<br />-Çağıran işlev için kapsamlı uygulama süresi Bu çağıran işleve çağrılar tarafından oluşturulmuş geçerli işlevin miktarı.<br />-Çağrılan işlev için bu işlev çağrıları geçerli işlevden tarafından oluşturulan örneklerinde için harcanan süre. Değer alt işlevleri çağrılan işlevin harcanan süreyi içerir, ancak bu harcanan zaman bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrılarında içermez.|  
+|**Kapsamlı uygulama süresi yüzdesi**|Çalıştıran profil oluşturma toplam geçen kapsamlı süre yüzdesi bu işlevi bu bağlamda kapsamlı toplam uygulama süresi geçen süre.|  
+|**Ortalama kapsamlı uygulama süresi**|Bu işlevi bu bağlamda bir çağrı, ortalama uygulama kapsamlı süre.|  
+|**Maksimum kapsamlı uygulama süresi**|Bu bağlamda bu işlev çağrısı en fazla uygulama kapsamlı zamanı.|  
+|**Minimum kapsamlı uygulama süresi**|En düşük uygulama kapsamlı süre bu işlevi bu bağlamda bir çağırma.|  
   
 ## <a name="application-exclusive-values"></a>Uygulama özel değerler  
- Uygulama özel değerler işlevinde harcanan süreyi belirtir. Bu alt işlevlerde geçen süre ve ayrıca bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları dışlar zamanı dışlar.  
+ Uygulama özel değerlerini işlevde harcanan zamanı gösterir. Bu alt işlevlerde geçen süre ve aynı zamanda bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları hariç süre dahil değildir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**Uygulama özel süresi**|-Geçerli işlevi için işlevin doğrudan yürütmede harcanan süre. Değer alt işlevlerde harcanan zamanın içermez ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları içermez.<br />-Çağıran işlev için bu çağıran işlev gelen çağrıları tarafından üretildi. geçerli işlevinin uygulama özel süre miktarı.<br />-Çağrılan işlev için geçerli işlevi gelen çağrıları tarafından oluşturulan bu işlev örneklerinde harcanan süre. Değer Aranan işlevi alt işlevlerde harcanan zamanın içermez ve bağlam anahtarlarının ve girdi/çıktı işlemleri gibi işletim sistemi çağrıları içermez.|  
-|**Uygulama özel süresi %**|Çalıştıran profil oluşturma toplam geçen özel süre yüzdesi bu işlevi bu bağlamda toplam uygulama özel süresini harcandığını.|  
-|**Ortalama uygulama özel süresi**|Bu işlevi bu bağlamda çağrısı ortalama uygulama özel saati.|  
-|**En fazla uygulama özel süresi**|Bu işlevi bu bağlamda çağrısı en fazla uygulama özel saati.|  
-|**Min uygulama özel süresi**|Bu işlevi bu bağlamda çağrısı minimum uygulama özel saati.|  
+|**Dışlamalı uygulama süresi**|-Geçerli işlev için işlevin doğrudan yürütme harcanan zamanı. Değer alt işlevlerde harcanan süreyi içermez ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları içermez.<br />-Çağıran işlev için bu çağıran işleve çağrılar tarafından oluşturulmuş geçerli işlevin dışlamalı uygulama süresi miktarı.<br />-Çağrılan işlev için bu işlev çağrıları geçerli işlevden tarafından oluşturulan örneklerinde için harcanan süre. Değeri, çağrılan işlevin alt işlevlerde harcanan süreyi içermez ve bağlam anahtarları ve giriş/çıkış işlemleri gibi işletim sistemi çağrıları içermez.|  
+|**Dışlamalı uygulama süresi yüzdesi**|Çalıştıran profil oluşturma toplam geçen dışlamalı süre yüzdesi bu bağlamda bu işlevin toplam uygulama dışlamalı süre geçen süre.|  
+|**Ortalama dışlamalı uygulama süresi**|Bu işlevi bu bağlamda bir çağrı, ortalama uygulama dışlamalı süre.|  
+|**Maksimum dışlamalı uygulama süresi**|Bu bağlamda bu işlev çağrısı en fazla uygulama özel zamanı.|  
+|**Minimum dışlamalı uygulama süresi**|En düşük uygulama dışlamalı süre, bu bağlamda bu işlev çağrısı.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Arayan/Aranan görünümü - örnekleme verileri](../profiling/caller-callee-view-sampling-data.md)   
  [Arayan/Aranan görünümü - .NET bellek örnekleme verileri](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Arayan/Aranan görünümü - .NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

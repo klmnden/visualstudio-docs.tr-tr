@@ -3,8 +3,6 @@ title: "&lt;friendlyName&gt; öğesi (Visual Studio'da Office Geliştirme)"
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ff600e911ba97a437f998726b900dfc8c267ae8
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 30355920b2ee41ca3b31216101cb2dc46e608b77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930563"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; öğesi (Visual Studio'da Office Geliştirme)
   `friendlyName` Öğesinin `vstov4` ad alanı, yüklü programlar listesinde görüntülenen adını depolar.

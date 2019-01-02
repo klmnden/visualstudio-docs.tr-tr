@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919605"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 
@@ -71,11 +70,11 @@ DSL Gezgini bu kısmında, şunları yapabilirsiniz:
 
 3.  Ayarlama **araç kutusu simgesi** 16 x 16 bit eşleme başvurmak için özellik.
 
-     Rapordaki yeni simge tanımlamak istiyorsanız, Çözüm Gezgini içindeki bir bit eşlem dosyası oluştur **Dsl\Resources** klasör. Dosyada, aşağıdaki özellik değerlerini olmalıdır: **derleme eylemi** = **içerik**; **Çıkış dizinine Kopyala** = **kopyalamayın**.
+     Rapordaki yeni simge tanımlamak istiyorsanız, Çözüm Gezgini içindeki bir bit eşlem dosyası oluştur **Dsl\Resources** klasör. Dosyada, aşağıdaki özellik değerlerini olmalıdır: **Derleme eylemi** = **içerik**; **Çıkış dizinine Kopyala** = **kopyalamayın**.
 
-4.  **Bir öğe aracı:** ayarlayın **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.
+4.  **Öğe araç için:** Ayarlama **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.
 
-     **Bağlayıcı aracı:** ayarlamak **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.
+     **Bağlayıcı aracı için:** Ayarlama **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.
 
 5.  DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve bir örnek model dosyasını Visual Studio'nun deneysel örneğinde açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.
 
@@ -238,6 +237,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Öğe Oluşturma ve Hareketini Özelleştirme](../modeling/customizing-element-creation-and-movement.md)
 - [Kopyalama Davranışını Özelleştirme](../modeling/customizing-copy-behavior.md)
-- [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Program Kodunda Modeli Gezinme ve Güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Bağlantı hattı diyagramları örneği DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

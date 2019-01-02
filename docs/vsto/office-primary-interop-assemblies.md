@@ -1,9 +1,6 @@
 ---
 title: Office birincil birlikte çalışma derlemeleri
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926743"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
 
@@ -82,7 +79,7 @@ Office PIA son kullanıcı bilgisayarlarında Office çözümlerinin çalışmas
 
 Visual Studio'daki her Office proje şablonu, tek bir Microsoft Office uygulaması ile çalışmak üzere tasarlanmıştır. Birden çok Microsoft Office uygulamasının özelliklerini kullanmayı veya bir uygulama veya Visual Studio'da bir proje yok bileşenin özelliklerini kullanmak için gerekli pıa'lara başvuru eklemeniz gerekir.  
   
-Çoğu durumda, altında Visual Studio tarafından yüklenen pıa'lara başvuru eklemeniz gerekir `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` dizin. Derlemelerin bu sürümleri görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+Çoğu durumda, altında Visual Studio tarafından yüklenen pıa'lara başvuru eklemeniz gerekir `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` dizin. Derlemelerin bu sürümleri görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Derlemelerin bu sürümleri yüklediyseniz ve PIA'lar genel derleme önbelleğinde kayıtlı görünür **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Bunları kullanırken oluşabilecek bazı geliştirme sorunları olduğundan, derlemelerin bu sürümlerine başvuruları eklemekten kaçının. Genel derleme önbelleğinde PIA'ların farklı sürümlerini kayıtlıysanız, örneğin, projeniz otomatik olarak en son kaydedilen derleme sürümüne bağlanır; üzerinde farklı bir derleme sürümü belirtseniz dahi  **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu.  
   
@@ -113,7 +110,7 @@ Aşağıdaki tablo, kullanılabilen birincil birlikte çalışma derlemelerini l
 |Microsoft Publisher 14.0 Nesne Kitaplığı<br /><br /> Microsoft Publisher 15.0 Nesne Kitaplığı|Microsoft.Office.Interop.Publisher.dll|  
 |Microsoft SharePoint Designer 14.0 Web nesne başvuru kitaplığı|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Microsoft SharePoint Designer 14.0 sayfa nesne başvuru kitaplığı|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Microsoft akıllı etiketler 2.0 tür kitaplığı **Not:** akıllı etiketlerin kullanımı terk içinde [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft akıllı etiketler 2.0 tür kitaplığı **Not:**  Akıllı etiketler bırakılmıştır [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] ve [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
 |Microsoft Visio 14.0 tür kitaplığı<br /><br /> Microsoft Visio 15.0 tür kitaplığı|Microsoft.Office.Interop.Visio.dll|  
 |Microsoft Visio 14.0 Web tür kitaplığı olarak Kaydet<br /><br /> Microsoft Visio 15.0 Web tür kitaplığı olarak Kaydet|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Microsoft Visio 14.0 çizim denetimi tür kitaplığı<br /><br /> Microsoft Visio 15.0 çizim denetimi tür kitaplığı|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Yüklediğinizde ve Office PIA'larını genel derleme önbelleğinde (ya da Offi
 
 Örneğin, ne zaman başvuran bir çözüm bir [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] derlemesi olan bir bilgisayarda çalışan [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aynı birincil birlikte çalışma bütünleştirilmiş kod sürümü, bağlama yeniden yönlendirme derlemesi bildirir [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] yüklenecek çalışma zamanı [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] birincil birlikte çalışma bütünleştirilmiş kod sürümü. 
 
-Daha fazla bilgi için [nasıl yapılır: otomatik bağlama yeniden yönlendirmesini devre](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+Daha fazla bilgi için [nasıl yapılır: Otomatik bağlama yeniden yönlendirmesini devre](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
 
-- [Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)   
 - [InfoPath çözümleri](../vsto/infopath-solutions.md)   
 - [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Daha fazla bilgi için [nasıl yapılır: otomatik bağlama yeniden yönlendirme
 - [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
 - [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
 - [Genel başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

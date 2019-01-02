@@ -1,9 +1,6 @@
 ---
 title: İleti numaralandırıcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f83692db7755ae4b65f794a570b8c656d6dad145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17c6d8a59a90b9744d2eb0ad96686db8da4e824b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939907"
 ---
 # <a name="message-enumerator"></a>İleti numaralandırıcısı
 Aşağıdaki bayrakları için kullanılan `TEXTOUTPROC` işlevini çağırdığında, IDE sağlayan bir geri çağırma işlevidir [SccOpenProject](../extensibility/sccopenproject-function.md) (bkz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) geri çağırma hakkında ayrıntılı bilgi için işlevi).  
@@ -29,16 +26,16 @@ Aşağıdaki bayrakları için kullanılan `TEXTOUTPROC` işlevini çağırdığ
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-enum {   
-   SCC_MSG_RTN_CANCEL = -1,   
-   SCC_MSG_RTN_OK = 0,   
-   SCC_MSG_INFO = 1   
-   SCC_MSG_WARNING,   
-   SCC_MSG_ERROR,   
-   SCC_MSG_STATUS,   
-   SCC_MSG_DOCANCEL,   
-   SCC_MSG_STARTCANCEL,   
-   SCC_MSG_STOPCANCEL   
+enum {   
+   SCC_MSG_RTN_CANCEL = -1,   
+   SCC_MSG_RTN_OK = 0,   
+   SCC_MSG_INFO = 1   
+   SCC_MSG_WARNING,   
+   SCC_MSG_ERROR,   
+   SCC_MSG_STATUS,   
+   SCC_MSG_DOCANCEL,   
+   SCC_MSG_STARTCANCEL,   
+   SCC_MSG_STOPCANCEL   
 };  
 ```  
   

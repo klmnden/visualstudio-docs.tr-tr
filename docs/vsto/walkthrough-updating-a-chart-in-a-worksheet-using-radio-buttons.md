@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek Yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme'
-ms.custom: ''
+title: 'İzlenecek yol: Radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891951"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek Yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek yol: Radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleme
   Bu izlenecek yol, kullanıcı seçenekleri arasında kolayca geçiş yapmak için bir yol sağlamak için Microsoft Office Excel çalışma sayfasında radyo düğmeleri kullanmanın temellerini gösterir. Bu durumda, bir grafik stilini seçeneklerini değiştirin.  
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -96,7 +93,7 @@ ms.locfileid: "49866447"
 
 1.  Adlı bir Excel çalışma kitabı projesi oluşturun **My Excel grafik**. Sihirbazda **mevcut belgeyi kopyalamak**.  
 
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Tıklayın **Gözat** düğmesi ve bu kılavuzda daha önce oluşturulan çalışma kitabını göz atın.  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866447"
 
 -   Projeyi dağıtma. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
 
--   Bir düğmeye bir metin kutusunu doldurmak için kullanma. Daha fazla bilgi için [izlenecek yol: düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Bir düğmeye bir metin kutusunu doldurmak için kullanma. Daha fazla bilgi için [izlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
 
--   Onay kutularını kullanarak çalışma sayfasındaki biçimlendirmeyi Değiştir. Daha fazla bilgi için [izlenecek yol: CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirme](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Onay kutularını kullanarak çalışma sayfasındaki biçimlendirmeyi Değiştir. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)  
-

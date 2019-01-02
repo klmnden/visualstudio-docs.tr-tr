@@ -1,9 +1,6 @@
 ---
 title: Hata ayıklayıcıyı genişletmek için yol haritası | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527d142b27e5b49bcf133429dc232614bad04a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87d9d1eb077e875e234166ba57e378dde721abaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951079"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Hata ayıklayıcıyı genişletmek için yol haritası
 Bu belgeler genişletmeye yönelik kılavuz ve başvuru bilgileri sağlar [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] ile hata ayıklayıcı [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -46,7 +43,7 @@ Bu belgeler genişletmeye yönelik kılavuz ve başvuru bilgileri sağlar [!INCL
   
    [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-   [Öğretici: Bir hata ayıklama altyapısı ATL COM kullanarak derleme](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+   [Öğretici: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
    [Bağlantı noktası sağlayıcısı uygulama](../../extensibility/debugger/implementing-a-port-supplier.md)  
   

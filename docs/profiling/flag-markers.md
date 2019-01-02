@@ -1,8 +1,6 @@
 ---
 title: Bayrak işaretleyicileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
@@ -12,40 +10,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f924089ef31e2b452419b107788357060a4c6bb6
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: a879114f21cfa23eab66cca507c3a2b960872c7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923445"
 ---
 # <a name="flag-markers"></a>Bayrak işaretleyicileri
-Bayrak işaret anlık bir uygulama sürede oluşan bir şeyi temsil eder. Bir bayrak pek çok uygulama olayları temsil edebilir. Örneğin, bir bayrak belirli iş öğesini zaman zamanlandığı veya ne zaman bir özel durum oluştu gösterebilirsiniz. Görev paralel kitaplığı gibi çalışma zamanları bayrakları de oluşturabilirsiniz.  
+Bayrak işareti anlık uygulama zamanda gerçekleşen bir sorun temsil eder. Bayrak pek çok uygulama olayları temsil edebilir. Örneğin, belirli iş öğesi zaman zamanlanan veya özel durum oluştuğunda bir bayrak gösterebilirsiniz. Görev paralel kitaplığı gibi çalışma zamanları bayrakları da oluşturabilirsiniz.  
   
-## <a name="flag-importance"></a>Bayrak önem derecesi  
- Bayrakları önemine bağlı olarak farklı boyutlarda görüntülenir. Herhangi bir işaret gibi düşük, normal, yüksek veya kritik önem olabilir.  Bu çizim önem düzeyini işaretçilerini görünümünü gösterir:  
+## <a name="flag-importance"></a>Bayrağı önem derecesi  
+ Bayrakları, farklı boyutlarda önemine bağlı olarak görüntülenir. Herhangi bir işaretçi gibi düşük, normal, yüksek veya kritik önem olabilir.  Bu çizim önem düzeyine göre işaretçiler görünümünü gösterir:  
   
  ![Düşük, Normal, yüksek ve kritik önem işaretçileri](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
-Bayrak önemini gösteren işaretçileri  
+Bayrağı önemini gösteren işaretçiler  
   
-## <a name="flag-category"></a>Bayrak kategorisi  
- Bir bayrak kategorisinin bağlı olarak beş farklı renk birinde görüntülenir. Beşten fazla kategorileri varsa renkleri yeniden kullanılır. Renk seçemezsiniz. Herhangi bir işaret gibi herhangi bir tamsayı kategori olabilir. Sonraki çizim ilk beş kategorileri için renkleri gösterir.  
+## <a name="flag-category"></a>Bayrağı kategorisi  
+ Bayrak kategori bağlı olarak beş farklı renkler biriyle görüntülenir. Beşten fazla kategorileri varsa renkleri yeniden kullanılır. Renk seçemezsiniz. Herhangi bir işaretçi gibi kategori herhangi bir tamsayı olabilir. Bir sonraki resimde, ilk beş kategorileri için renkleri gösterir.  
   
- ![Kategori işaretlerinin beş renk](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
-Kategoriler gösteren işaretçileri  
+ ![Kategori işaretçilerinin beş renkleri](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+Kategorileri gösteren işaretçiler  
   
 ## <a name="alerts"></a>Uyarılar  
- Bir uyarı, bir özel durum gibi bir kritik uygulama olay temsil eden bir kırmızı renkli bayrak belirtir.  Bir uyarı şöyledir:  
+ Bir uyarı, bir özel durum gibi kritik uygulama yer alan bir olayı temsil eden kırmızı renkli bayrak belirtir.  Bir uyarı şu şekildedir:  
   
  ![Eşzamanlılık görselleştiricisi uyarı işaret](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
-Bir uyarı işaretçisi  
+Bir uyarı işareti  
   
 ## <a name="aggregation-flags"></a>Toplama bayrakları  
- Bazen bayrakları bunu başka yakın bunlar ayrı ayrı çekilemez eşzamanlılık görselleştiricisi içinde oluşur. Bu oluştuğunda, bir gri *toplama bayrağı* temsil temel bayrakları gösterilir. Bu simgeleri birinde işaretçiyi getirdiğinizde, araç ipucu temsil edilen temel bayrakları sayısını görüntüler. Bayrakları görüntülemek için Yakınlaştır. Bu süreç boyunca tüm yakınlaştırmak ve hala bir toplama bayrağını alma, temel alınan bayrakları görüntüleyebilirsiniz [işaretçiler raporu](../profiling/markers-report.md).  
+ Bazen bayrakları bunu birbirine yakın bunlar ayrı ayrı çekilemez eşzamanlılık görselleştiricisi içinde oluşur. Bu oluştuğunda, bir gri *toplama bayrağı* temsil temel alınan bayrakları gösterilir. Bu simgeler biri üzerinde işaretçiyi getirdiğinizde araç ipucu temsil edilen temel alınan bayrakları sayısını görüntüler. Bayrakları görüntülemek için yakınlaştırın. Tüm yakınlaştırmak ve toplama bayrağı almaya devam ediyorsanız, temel alınan bayrakları görüntüleyebileceğiniz [işaretçiler raporu](../profiling/markers-report.md).  
   
- Toplama bayrakları farklı boyutlarda çizilir. Toplama en önemli bayrağı önem düzeyini boyutuna bağlıdır. Aşağıdaki çizimde, artan düzende önem toplama bayrakları gösterir.  
+ Toplama bayrakları, farklı boyutlardaki çizilir. Toplama en önemli bayrağı önem düzeyini boyutuna bağlıdır. Aşağıdaki çizim, artan sırada önem toplama bayrakları gösterir.  
   
- ![Toplama bayrakları gösteren dört önem düzeylerini](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Toplam dört önem düzeylerini gösteren bayraklar](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Önem düzeyine göre toplama bayrakları  
   
 ## <a name="see-also"></a>Ayrıca bkz.  

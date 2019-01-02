@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913875"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme
   Bu yönerge Windows Forms denetimleri Microsoft Office Word için belge düzeyi özelleştirmesinde metin biçimlendirmesini değiştirmek için nasıl kullanılacağını gösterir.  
@@ -55,7 +52,7 @@ ms.locfileid: "49863938"
   
 1.  Adıyla bir Word belgesi projesi oluşturma **My Word biçimlendirme**. Sihirbazda **yeni belge oluşturma**.  
   
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **My Word biçimlendirme** için proje **Çözüm Gezgini**.  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863938"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bu izlenecek yol, onay kutularını kullanarak ve program aracılığıyla Word belgelerinde biçimlendirme metin değiştirme temellerini gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:  
   
--   Bir düğmeye bir metin kutusunu doldurmak için kullanın. Daha fazla bilgi için [izlenecek yol: metin kutusunda düğme kullanarak bir belgede metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Bir düğmeye bir metin kutusunu doldurmak için kullanın. Daha fazla bilgi için [izlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Grafik stilleri seçilecek radyo düğmelerini kullanarak. Daha fazla bilgi için [izlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Grafik stilleri seçilecek radyo düğmelerini kullanarak. Daha fazla bilgi için [izlenecek yol: Radyo düğmelerini kullanarak belgede grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 
 ## <a name="see-also"></a>Ayrıca bkz.  
@@ -165,5 +162,3 @@ ms.locfileid: "49863938"
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange denetimi](../vsto/namedrange-control.md)   
  [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

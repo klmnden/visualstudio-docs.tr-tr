@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: sayfa yukarı veya aşağı bellekte | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Sayfa yukarı veya aşağı bellekte | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902233"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Nasıl Yapılır: Bellekte Sayfa Yukarı veya Aşağı Gitme
+# <a name="how-to-page-up-or-down-in-memory"></a>Nasıl Yapılır: Sayfa yukarı veya aşağı bellekte
 
 Bellek içeriğini görüntülediğinizde bir **bellek** penceresi veya **ayrıştırılmış kodu** penceresinde bellek alanı yukarı veya aşağı taşımak için dikey kaydırma çubuğunu kullanabilirsiniz.  
   

@@ -2,23 +2,22 @@
 title: Öğe şablonları oluşturma
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952267"
 ---
-# <a name="how-to-create-item-templates"></a>Nasıl yapılır: öğe şablonları oluşturma
+# <a name="how-to-create-item-templates"></a>Nasıl Yapılır: Öğe şablonları oluşturma
 
-Bu makalede bir öğe şablonunu kullanarak oluşturma işlemi gösterilmektedir **şablonu Dışarı Aktarma Sihirbazı**. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).
+Bu makalede bir öğe şablonunu kullanarak oluşturma işlemi gösterilmektedir **şablonu Dışarı Aktarma Sihirbazı**. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: Çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusuna bir kullanıcı öğe şablonu eklemek için
 
@@ -26,7 +25,7 @@ Bu makalede bir öğe şablonunu kullanarak oluşturma işlemi gösterilmektedir
 
 1. Projeye bir öğe ekleyin ve istiyorsanız bunu değiştirin.
 
-1. Burada parametre değişikliğini gerçekleşmesi belirtmek için kod dosyasını değiştirin. Daha fazla bilgi için [nasıl yapılır: şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Burada parametre değişikliğini gerçekleşmesi belirtmek için kod dosyasını değiştirin. Daha fazla bilgi için [nasıl yapılır: Bir şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar**.
 
@@ -113,7 +112,7 @@ Bazı durumlarda bir öğe şablonunu el ile sıfırdan oluşturmak isteyebilirs
 
 1. Proje öğesi şablon olarak kaydedilecek hazır olana kadar değiştirin.
 
-1. Burada parametre değiştirme, varsa herhangi bir yere gerçekleşmesi gerektiğini belirtmek için kod dosyasını değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: şablonda parametreleri ikame etme.](../ide/how-to-substitute-parameters-in-a-template.md)
+1. Burada parametre değiştirme, varsa herhangi bir yere gerçekleşmesi gerektiğini belirtmek için kod dosyasını değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir şablonda parametreleri değiştirin.](../ide/how-to-substitute-parameters-in-a-template.md)
 
 1. Bir XML dosyası oluşturun ve ile kaydetmek bir *.vstemplate* proje öğesi dosyanız ile aynı dizinde dosya uzantısı.
 
@@ -128,5 +127,5 @@ Bazı durumlarda bir öğe şablonunu el ile sıfırdan oluşturmak isteyebilirs
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)
-- [Nasıl yapılır: çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md)
+- [Nasıl yapılır: Çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md)
 - [Visual Studio Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md)

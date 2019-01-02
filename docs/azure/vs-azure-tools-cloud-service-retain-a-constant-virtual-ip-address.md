@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 0d0ac9d18e72ff656877e47b9858ac460e54e7cf
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 786292d3d566f2b1da27bdd254019460929fbc0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921374"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure bulut hizmeti için sabit bir sanal IP adresi tutma
 Azure'da barındırılan bir bulut hizmeti güncelleştirdiğinizde, hizmet sanal IP adresi (VIP) emin olmanız gerekebilir. Birçok etki alanı Yönetimi Hizmetleri, etki alanı adı sistemi (DNS) etki alanı adlarını kaydetmek için kullanın. VIP aynı kalırsa DNS çalışır. Kullanabileceğiniz **Yayımlama Sihirbazı** bulut hizmetinizin VIP'si ne zaman değişmez emin olmak için Azure Araçları, güncelleştirin. Bulut Hizmetleri için DNS etki alanı yönetimi kullanma hakkında daha fazla bilgi için bkz. [Azure bulut hizmeti için bir özel etki alanı adı yapılandırma](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -55,4 +54,3 @@ Dağıtım ayarlarında belirttiğiniz **Yayımlama Sihirbazı**, çeşitli dağ
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Visual Studio kullanarak Azure Uygulama Sihirbazı yayımlama](vs-azure-tools-publish-azure-application-wizard.md)
-

@@ -1,13 +1,8 @@
 ---
-title: İzlenecek yol:, iş verileri kullanarak SharePoint'te dış liste oluşturma | Microsoft Docs
-ms.custom: ''
+title: "İzlenecek yol: İş verileri kullanarak SharePoint'te dış liste oluşturma | Microsoft Docs"
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918790"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>İzlenecek yol:, iş verileri kullanarak SharePoint'te dış liste oluşturma
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>İzlenecek yol: İş verileri kullanarak SharePoint'te dış liste oluşturma
 
 Arka uç sunucu uygulamaları, Web Hizmetleri ve veritabanları iş verilerini görüntülemek SharePoint İş Verileri Bağlantısı (BDC) hizmeti sağlar.
 
@@ -190,7 +185,7 @@ Kullanarak, kişi varlığı için belirli bir Bulucu yöntemi eklemek **BDC yö
     |Ad|Tür adı|
     |----------|---------------|
     |FirstName|System.String|
-    |Soyadı|System.String|
+    |LastName|System.String|
     |Telefon|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
@@ -275,9 +270,9 @@ Projeyi çalıştırdığınızda SharePoint sitesi açılır ve Visual Studio i
 
 Tasarım modelleri için aşağıdaki konulardan SharePoint BDC hizmeti hakkında daha fazla bilgi edinebilirsiniz:
 
-- [Nasıl yapılır: bir yaratıcı metodu ekleme](../sharepoint/how-to-add-a-creator-method.md).
-- [Nasıl yapılır: bir güncelleyici metodu ekleme](../sharepoint/how-to-add-an-updater-method.md).
-- [Nasıl yapılır: bir Silici metodu ekleme](../sharepoint/how-to-add-a-deleter-method.md).
+- [Nasıl yapılır: Bir yaratıcı metodu ekleme](../sharepoint/how-to-add-a-creator-method.md).
+- [Nasıl yapılır: Bir güncelleyici metodu ekleme](../sharepoint/how-to-add-an-updater-method.md).
+- [Nasıl yapılır: Silici metodu ekleme](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

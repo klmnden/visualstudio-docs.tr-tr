@@ -1,9 +1,7 @@
 ---
 title: "&lt;Uygulama&gt; öğesi (Visual Studio'da Office Geliştirme)"
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0668d3fce722633a10be82c5f7fcd1a0556a4e3b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7b2f0035bd4072e3245aa44be64d05ef059a70cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950283"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Uygulama&gt; öğesi (Visual Studio'da Office Geliştirme)
   `application` Öğesinin `vstav3` ad alanı, Office çözümleri açıklamasını sarmalar. Belge düzeyi özelleştirmeleri ve VSTO eklentileri için farklı alt öğeleridir.

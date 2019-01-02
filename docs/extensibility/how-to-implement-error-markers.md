@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: uygulama, hata işaretçileri | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Hata işaretçileri uygulamak | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931508"
 ---
-# <a name="how-to-implement-error-markers"></a>Nasıl yapılır: uygulama, hata işaretçileri
+# <a name="how-to-implement-error-markers"></a>Nasıl Yapılır: Uygulama hata işaretçileri
 Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için metin düzenleyici özelleştirmeleri en zor olan. Ancak, VSPackage kullanıcılara verdikleri kadar bunları sağlamanın maliyeti basıyor. Hata işaretçileri, dil ayrıştırıcı dalgalı veya dalgalı kırmızı bir çizgi ile yanlış olarak gördüğü metin farenizin işaretleyin. Bu gösterge programcılar hatalı kod görsel olarak görüntüleyerek yardımcı olur.  
   
  Kırmızı dalgalı alt çizgiler uygulamak için metin işaretçileri kullanın. Bir kural olarak, dil Hizmetleri kırmızı dalgalı alt çizgiler metin arabelleği için bir arka plan geçişi boşta kalma süresi veya bir arka plan iş parçacığında ekleyin.  
@@ -29,11 +26,11 @@ Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için met
   
 1. Kırmızı dalgalı çizgi yerleştirmek istediğiniz metni seçin.  
   
-2. Bir işaretçi türünün oluşturma `MARKER_CODESENSE_ERROR`. Daha fazla bilgi için [nasıl yapılır: standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).  
+2. Bir işaretçi türünün oluşturma `MARKER_CODESENSE_ERROR`. Daha fazla bilgi için [nasıl yapılır: Standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Geçirin, sonra bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirim işaretçisi.  
   
-   Bu işlem ipucu metnini veya özel bağlam menüsü belirli bir işaret oluşturmanıza olanak sağlar. Daha fazla bilgi için [nasıl yapılır: standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).  
+   Bu işlem ipucu metnini veya özel bağlam menüsü belirli bir işaret oluşturmanıza olanak sağlar. Daha fazla bilgi için [nasıl yapılır: Standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).  
   
    Aşağıdaki nesneler, hata işaretçileri görüntülenebilmesi gereklidir.  
   
@@ -58,6 +55,6 @@ Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için met
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Nasıl yapılır: standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
- [Nasıl yapılır: özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+ [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
+ [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
+ [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
