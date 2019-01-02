@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: kod parçacıklarını dağıtma'
+title: 'Nasıl Yapılır: Kod parçacıklarını dağıtma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836068"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Nasıl yapılır: kod parçacıklarını dağıtma
+# <a name="how-to-distribute-code-snippets"></a>Nasıl Yapılır: Kod parçacıklarını dağıtma
 
 Kod parçacıklarınızı arkadaşlarınıza verebilir ve bunları kullanarak kendi bilgisayarlarındaki parçacıkları yükleme **kod parçacıkları Yöneticisi**. Bununla birlikte, dağıtılacak çok sayıda kod olması ya da daha yaygın olarak dağıtmak istiyorsanız, kod parçacığı dosyanızı bir Visual Studio uzantısına dahil etme. Visual Studio kullanıcılarına, uzantıyı daha sonra yükleyebilirsiniz.
 
@@ -29,7 +28,7 @@ Visual Studio uzantıları oluşturmak için Visual Studio SDK'yı yüklemeniz g
 
 ## <a name="set-up-the-extension"></a>Uzantı ayarlayın
 
-Bu yordamda oluşturulan Hello World kod parçacığını kullanacağız [izlenecek yol: bir kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). Biz verin *.snippet* geri dönün ve bir yapmak zorunda kalmamak için metin.
+Bu yordamda oluşturulan Hello World kod parçacığını kullanacağız [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). Biz verin *.snippet* geri dönün ve bir yapmak zorunda kalmamak için metin.
 
 1. Adlı yeni bir VSIX projesi oluşturun **TestSnippet**. (**Dosya** > **yeni** > **proje** > **Visual C# (veya Visual Basic)**  >  **Genişletilebilirlik**.)
 

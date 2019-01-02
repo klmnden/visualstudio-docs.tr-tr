@@ -1,9 +1,6 @@
 ---
-title: Tek dosya oluşturucuları uygulama | Microsoft Docs
-ms.custom: ''
+title: Tek dosya oluşturucular ekleme | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom tools, implementing
@@ -15,21 +12,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71db8036634cfc266db3c585c48317262f48b367
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 728a1748d4c78bd93bf827290404f65607076b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847788"
 ---
-# <a name="implementing-single-file-generators"></a>Tek dosya oluşturucuları uygulama
-Özel bir araç — bazen tek dosya oluşturucu da adlandırılır — genişletmek için kullanılan [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ve [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proje sistemlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Arabirimini uygulayan bir COM bileşeni özel bir araç olan <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> arabirimi. Bu arabirimi kullanarak, özel bir araç tek bir giriş dosyası tek bir çıktı dosyasına dönüştürür. Diğer kullanışlı olan çıktı veya dönüşümün sonucunu kaynak kodu olabilir. Görsel Tasarımcı ve Web Hizmetleri Açıklama Dili (WSDL) kullanılarak oluşturulan dosyaları değişikliklere yanıt olarak üretilen kod özel aracı tarafından oluşturulan kod dosyalarının iki örnek verilmiştir.  
+# <a name="implementing-single-file-generators"></a>Tek Dosya Oluşturucular Ekleme
+Özel araç — bazen tek dosya oluşturucu olarak da adlandırılır — genişletmek için kullanılan [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ve [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proje sistemleri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Özel araç uygulayan bir COM bileşenidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> arabirimi. Bu arabirim kullanarak özel bir araç tek çıktı dosyasına tek bir giriş dosyası dönüştürür. Dönüştürme sonucunu kaynak kodu olabilir veya diğer yararlı olan çıktı. İki örnek özel aracı tarafından oluşturulan kodu dosyalarının bir görsel tasarımcı ve Web Hizmetleri Açıklama Dili (WSDL) kullanılarak oluşturulan dosyaları değişikliklere yanıt olarak oluşturulan kodu verilmiştir.  
   
- Özel bir araç yüklenir veya giriş dosyası kaydedilir, proje sistemi çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> yöntemini ve bir başvuru geçirir bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> yapabildiği aracı raporlama yapabilir, ilerleme durumunu kullanıcıya geri çağırma arabirimi.  
+ Özel bir aracı yüklenir ve giriş dosyası kaydedilir, proje sistemi çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> yöntemi ve bir başvuru geçirir bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> yapabildiği aracın rapor edebilir, ilerleme durumunu kullanıcıya geri çağırma arabirimi.  
   
- Özel araç oluşturur çıktı dosyası projesi ile giriş dosyası bir bağımlılığı eklenir. Özel aracın uygulaması tarafından döndürülen dize göre çıkış dosyasının adı proje sistemi otomatik olarak saptar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.  
+ Özel aracının oluşturduğu çıkış dosyası bağımlılığı bulunan Giriş dosyası projeye eklenir. Proje sistemi otomatik olarak özel aracın uygulaması tarafından döndürülen dize göre çıktı dosyası adını belirleyen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.  
   
- Özel bir araç uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> arabirimi. İsteğe bağlı olarak, destek özel araçları <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> giriş dosyası dışındaki kaynaklardan bilgi almak için arabirim. Özel bir araç kullanmadan önce herhangi bir durumda, onu sistem veya de kaydetmeniz gerekir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yerel kayıt. Özel Araçlar kaydetme hakkında daha fazla bilgi için bkz: [kaydetme tek dosya oluşturucuları](../../extensibility/internals/registering-single-file-generators.md).  
+ Özel araç uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> arabirimi. İsteğe bağlı olarak, özel araçları desteği <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> giriş dosyası dışındaki bir kaynaktan bilgi almak için arabirim. Özel araç kullanabilmeniz için herhangi bir durumda, sistem veya kaydetmelisiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yerel kayıt defteri. Özel Araçlar kaydetme ile ilgili daha fazla bilgi için bkz: [tek dosya oluşturucuları kaydetme](../../extensibility/internals/registering-single-file-generators.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Türleri Görsel Tasarımcıların Kullanımına Sunma](../../extensibility/internals/exposing-types-to-visual-designers.md)

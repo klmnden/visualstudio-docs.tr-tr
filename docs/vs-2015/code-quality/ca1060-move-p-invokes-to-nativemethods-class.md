@@ -1,12 +1,11 @@
 ---
-title: 'CA1060: Taşıma P-Invokes öğesini NativeMethods sınıfına | Microsoft Docs'
+title: 'CA1060: P-Invokes NativeMethods sınıfına taşıyın | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 019d02b8cd5031148a2902ed3bda54640dcc6587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849288"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +93,7 @@ ms.locfileid: "49913871"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods örneği
 
 ### <a name="description"></a>Açıklama
- P/Invoke yöntemleri, güvenli bir şekilde çağrılamaz ve yan etkilere neden olabilecek adlı bir sınıfta put **UnsafeNativeMethods**. Bu yöntemler, bunlar kullanıcıya yanlışlıkla gösterilmez emin olmak için titizlikle denetlenmelidir. Kural [CA2118: gözden geçirme SuppressUnmanagedCodeSecurityAttribute kullanımını](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) bu konuda yardımcı olabilir. Alternatif olarak, yöntemler yerine talep başka bir iznine sahip olması gereken **UnmanagedCode** kullandığında bunları.
+ P/Invoke yöntemleri, güvenli bir şekilde çağrılamaz ve yan etkilere neden olabilecek adlı bir sınıfta put **UnsafeNativeMethods**. Bu yöntemler, bunlar kullanıcıya yanlışlıkla gösterilmez emin olmak için titizlikle denetlenmelidir. Kural [CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) bu konuda yardımcı olabilir. Alternatif olarak, yöntemler yerine talep başka bir iznine sahip olması gereken **UnmanagedCode** kullandığında bunları.
 
  Aşağıdaki örnekte gösterildiği bir **Cursor.Hide** sarmalar yöntemi **sayı değil geçiş** user32.dll işlevden.
 
@@ -104,6 +103,3 @@ ms.locfileid: "49913871"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Tasarım Uyarıları](../code-quality/design-warnings.md)
-
-
-

@@ -3,19 +3,18 @@ title: Çözüm Gezgini için iç içe geçme kurallar dosyası
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831160"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Çözüm Gezgini’nde dosya iç içe yerleştirmeyi özelleştirme
 
@@ -30,7 +29,7 @@ ms.locfileid: "49928704"
 
 Özelleştirilmiş olmayan dosya iç içe yerleştirme için kullanılabilir seçenekler şunlardır:
 
-* **Kapalı**: Bu seçenek tüm geçmesiz dosyaların düz bir liste sağlar.
+* **Kapalı**: Bu seçenek, tüm iç içe yerleştirme içermeyen dosyaları düz bir listesini sağlar.
 
 * **Varsayılan**: Bu seçenek size davranışı iç içe varsayılan dosya **Çözüm Gezgini**. Belirtilen proje türü için hiçbir ayar varsa, projede hiçbir dosya iç içe geçirilmiştir. İç içe geçme ayarlarını, örneğin, bir web projesi için mevcut durumunda uygulanır.
 
@@ -50,17 +49,17 @@ Kullanmanızı öneririz **Web** şeyle zaten işlevleri çalışmak daha kolay 
 
 Şimdi düğüm üzerinde odaklanın **dependentFileProviders** ve onun alt düğümleri. Her alt düğümü, dosyaları yerleştirmek için Visual Studio'yu kullanabilirsiniz kural türüdür. Örneğin, **aynı dosya adı, ancak farklı bir uzantıya sahip** kuralı bir türüdür. Kullanılabilir kurallar şunlardır:
 
-* **extensionToExtension**: iç içe yerleştirmek için bu kural türü kullanmak *file.js* altında *file.ts*
+* **extensionToExtension**: İç içe yerleştirmek için bu kural türü kullanmak *file.js* altında *file.ts*
 
-* **fileSuffixToExtension**: iç içe yerleştirmek için bu kural türü kullanmak *dosya vsdoc.js* altında *file.js*
+* **fileSuffixToExtension**: İç içe yerleştirmek için bu kural türü kullanmak *dosya vsdoc.js* altında *file.js*
 
-* **addedExtension**: iç içe yerleştirmek için bu kural türü kullanmak *file.html.css* altında *file.html*
+* **addedExtension**: İç içe yerleştirmek için bu kural türü kullanmak *file.html.css* altında *file.html*
 
-* **pathSegment**: iç içe yerleştirmek için bu kural türü kullanmak *jquery.min.js* altında *jquery.js*
+* **pathSegment**: İç içe yerleştirmek için bu kural türü kullanmak *jquery.min.js* altında *jquery.js*
 
-* **allExtensions**: iç içe yerleştirmek için bu kural türü kullanmak *dosya.* * altında *file.js*
+* **allExtensions**: İç içe yerleştirmek için bu kural türü kullanmak *dosya.* * altında *file.js*
 
-* **fileToFile**: iç içe yerleştirmek için bu kural türü kullanmak *bower.json* altında *.bowerrc*
+* **fileToFile**: İç içe yerleştirmek için bu kural türü kullanmak *bower.json* altında *.bowerrc*
 
 ### <a name="the-extensiontoextension-provider"></a>ExtensionToExtension sağlayıcısı
 
@@ -136,7 +135,7 @@ Her çözüm ve proje bağlam menüsü aracılığıyla çözüm ve proje özgü
 
 ![Çözüm ve proje özel iç içe geçme kuralları](media/filenesting_solutionprojectspecific.png)
 
-Çözüm ve proje özgü ayarları, etkin Visual Studio ayarları ile birleştirilir. Örneğin, bir boş projeye özgü ayarları dosyasına sahip olabilir ancak **Çözüm Gezgini** hala dosyaları iç içe. İç içe geçme davranışı, çözüme özel ayarlar veya Visual Studio ayarları kullanıma sunulacaktır. İç içe dosya ayarları birleştirmek için bir öncelik olduğundan: Visual Studio > çözüm > Proje.
+Çözüm ve proje özgü ayarları, etkin Visual Studio ayarları ile birleştirilir. Örneğin, bir boş projeye özgü ayarları dosyasına sahip olabilir ancak **Çözüm Gezgini** hala dosyaları iç içe. İç içe geçme davranışı, çözüme özel ayarlar veya Visual Studio ayarları kullanıma sunulacaktır. İç içe dosya ayarları birleştirmek için öncelik verilmiştir: Visual Studio > çözüm > Proje.
 
 Seçeneğini etkinleştirerek dosyalar disk üzerinde mevcut olsa bile, çözüm ve proje özgü ayarları yok saymak için Visual Studio söyleyebilirsiniz **çözüm ve proje ayarlarını Yoksay** altında **Araçları**  >  **Seçenekleri** > **ASP.NET Core** > **dosya iç içe geçme**.
 

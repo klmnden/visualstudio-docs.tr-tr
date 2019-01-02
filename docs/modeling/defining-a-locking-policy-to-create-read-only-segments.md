@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866497"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Visual Studio Görselleştirme ve modelleme SDK'sı Değiştirilemezlik API, böylece okunan ancak değiştirilmemiş bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli kilitlemek bir program sağlar. Bu salt okunur seçeneği, örneğin, bir kullanıcı iş arkadaşlarınızı Not ekleme ve bir DSL model gözden geçirmek isteyebilirsiniz ancak bunları özgün değiştirmesini engelleyebilirsiniz kullanılabilir.
@@ -79,10 +78,10 @@ partition.SetLocks(Locks.Delete);
 
 |Değer|Yani `IsLocked(Value)` geçerlidir|
 |-|-|
-|Yok.|Kısıtlama yok.|
+|Hiçbiri|Kısıtlama yok.|
 |Özellik|Öğelerin etki alanı özellikleri değiştirilemez. Bu rolü ilişkisinde bir etki alanı sınıfı tarafından oluşturulan özellikler için geçerli değildir.|
 |Ekle|Bir bölümde yeni öğeleri ve bağlantılarına oluşturulamıyor veya depolar.<br /><br /> Uygulanamaz `ModelElement`.|
-|Taşıma|Öğesi, bölümler arasında taşınamaz `element.IsLocked(Move)` true ise veya `targetPartition.IsLocked(Move)` geçerlidir.|
+|Taşı|Öğesi, bölümler arasında taşınamaz `element.IsLocked(Move)` true ise veya `targetPartition.IsLocked(Move)` geçerlidir.|
 |Sil|Bu kilit öğe üzerinde ayarlanır veya herhangi bir öğelerine silme işlemi, katıştırılmış öğeleri ve şekiller gibi yayar bir öğe silinemiyor.<br /><br /> Kullanabileceğiniz `element.CanDelete()` öğenin silinip silinemeyeceği bulunacak.|
 |Yeniden sıralama|Bir roleplayer bağlantıları sıralama değiştirilemez.|
 |İçinde RolePlayer|Bu öğede kaynaklanan bağlantı kümesi değiştirilemez. Örneğin, yeni öğeler altında bu öğe eklenemiyor. Bu, bu öğenin hedefi olan bağlantılar etkilemez.<br /><br /> Bu öğe bir bağlantı varsa, kaynak ve hedef etkilenmez.|

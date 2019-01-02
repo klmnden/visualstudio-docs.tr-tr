@@ -1,8 +1,6 @@
 ---
 title: Genel sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
@@ -12,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f762d935edab5720ccd9add155dac3d0e5f2f186
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ac2cbdea0f5ff8fc14ab2901772cd3b77372d471
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874621"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Genel Sekme, Pencere Özellikleri İletişim Kutusu
-Kullanım **genel** sekmesi seçili penceresi hakkında bilgi gösterir. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı taşımak [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  
+Kullanım **genel** seçilen pencere hakkındaki bilgileri görüntülemek için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **genel** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **genel** sekmesinde:  
   
 |Giriş|Açıklama|  
 |-----------|-----------------|  
-|**Pencere resim yazısı**|Metin Pencere başlığında veya bir denetim ise bir pencerede bulunan metin.|  
-|**Pencere işleci**|Bu pencere benzersiz kimliği. Pencere tutamacı numaraları yeniden kullanılır; Bunlar, bu pencereyi ömrü boyunca yalnızca bir pencere tanımlayın.|  
-|**Pencere Proc**|Pencere yordamı işlevi bu pencere için sanal adres. Bu alan, bu pencereyi bir Unicode penceresi olup ve altsınıflanmış olup da gösterir.|  
-|**Dikdörtgen**|Pencere için sınırlayıcı dikdörtgenini. Dikdörtgen boyutunu de görüntülenir. Ekran koordinatları piksel birimleridir.|  
-|**Geri yüklenen Rect**|Geri yüklenen penceresi için sınırlayıcı dikdörtgenini. Dikdörtgen boyutunu de görüntülenir. Yalnızca penceresini tam ekran simge durumuna küçültülmüş veya geri yüklenen Rect dikdörtgen farklılık gösterir. Ekran koordinatları piksel birimleridir.|  
-|**İstemci Rect**|Pencere istemci alan sınırlayıcı dikdörtgenini. Dikdörtgen boyutunu de görüntülenir. Piksel penceresi istemci alanını sol üstünden göreli birimleridir.|  
-|**Örnek tanıtıcısı**|Uygulama örneği tanıtıcısı. Örnek tanıtıcısı benzersiz değil.|  
-|**Denetim kimliği veya menü işleci**|Görüntülenmekte pencerenin alt pencere ise, denetim kimliği etiketi görüntülenir. Bu alt pencerenin denetim kimliği tanımlayan bir tamsayı denetim kimliği olan Görüntülenmekte penceresi alt pencere değilse Muamele menüsü etiketi görüntülenir. Menü işleci bu pencereyi ile ilişkili menü tanıtıcısı tanımlayan bir tamsayıdır.|  
+|**Pencere Başlığı**|Pencere resim yazısı, metin veya bir denetim ise bir pencerede kapsanan metin.|  
+|**Pencere tanıtıcısı**|Bu pencere benzersiz kimliği. Pencere tutamacı numaraları yeniden kullanılır; Bunlar, bu pencere ömrü boyunca yalnızca bir pencere belirleyin.|  
+|**Pencere işleme**|Bu pencere için Pencere yordamı fonksiyonunun sanal adresi. Bu alan ayrıca bu pencereyi bir Unicode penceresi olup ve alt sınıflanan gösterir.|  
+|**Dikdörtgen**|Dikdörtgen penceresi. Dikdörtgen boyutunu da görüntülenir. Ekran koordinatlarında piksel birimleridir.|  
+|**Geri yüklenen dikdörtgen**|Geri yüklenen pencere için sınırlayıcı dikdörtgeni. Dikdörtgen boyutunu da görüntülenir. Yalnızca pencerenin ekranı simge durumuna küçültülmüş veya geri yüklenen Rect dikdörtgenden farklılık gösterir. Ekran koordinatlarında piksel birimleridir.|  
+|**İstemci dikdörtgeni**|Dikdörtgen penceresinin istemci alanına için. Dikdörtgen boyutunu da görüntülenir. Piksel penceresinin istemci alanına sol üstünden göreli birimleridir.|  
+|**Örnek tanıtıcısını**|Örnek tanıtıcısını uygulama. Örnek işler özgü değildir.|  
+|**Denetim Kimliği ya da menü tanıtıcısı**|Alt pencere görüntülenmesini penceresi ise denetim kimliği etiketi görüntülenir. Denetim Kimliği bu alt pencerenin denetim kimliğini belirten bir tamsayı olduğu Görüntülenen penceresinin alt pencere değilse, menü işlemek etiketi görüntülenir. Menü tanıtıcısı Bu pencere ile ilgili menü tanıtıcısı tanımlayan bir tamsayıdır.|  
 |**Kullanıcı verileri**|Bu pencere yapısına bağlı uygulamaya özgü verileri.|  
-|**Pencere bayt**|Bu pencere ile ilişkili ek bayt sayısı. Bu bayt anlamını uygulama tarafından belirlenir. DWORD biçiminde bayt değerleri görmek için liste kutusunu genişletin.|
+|**Pencere baytları**|Bu pencere ile ilgili ek bayt sayısı. Bu bayt anlamını uygulama tarafından belirlenir. Liste kutusu DWORD biçimde bayt değerleri görmek için genişletin.|

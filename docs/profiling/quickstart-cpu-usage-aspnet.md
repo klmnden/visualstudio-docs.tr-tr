@@ -3,7 +3,6 @@ title: CPU kullanım verilerini (ASP.NET) çözümleme
 description: CPU kullanımı Tanılama Aracı'nı kullanarak ASP.NET uygulamalarında uygulama performansını ölçmeye
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837400"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verileri, Visual Studio (ASP.NET) çözümleme
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verilerini, Visual Studio (ASP.NET) çözümleme
 
 Visual Studio, uygulamanızdaki performans sorunlarını analiz etmenize yardımcı olmak için çok sayıda güçlü özellikler sağlar. Bu konuda bazı temel özellikleri öğrenmek için hızlı bir yolunu sağlar. Burada, yüksek CPU kullanımından kaynaklanan performans sorunlarını tanımlamak için bir aracı atacağız. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
 
@@ -154,7 +153,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>1. adım: profil oluşturma verilerini topla 
+##  <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla 
   
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `Simple` Oluşturucusu:
 
@@ -195,7 +194,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>2. adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2. Adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve ardından her birine daha yakından bakalım alma verilerinizi analiz etmeye başlamanızı öneririz.
 

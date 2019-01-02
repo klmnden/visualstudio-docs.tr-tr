@@ -3,57 +3,56 @@ title: Müşteri Deneyimi Geliştirme Programı
 description: Visual Studio'da gizlilik ayarlarının nasıl yönetileceğini öğrenin.
 ms.date: 05/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 71205231e3734fd5df876501f3880afa8b0779c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822777"
 ---
-# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimini Geliştirme Programı
+# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
 
-Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde Visual Studio geliştirmesine yardımcı olmak için tasarlanmıştır. Bu program [hatalar hakkında bilgi toplar](../ide/diagnostic-data-collection.md), bilgisayar donanımı ve kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kişi Visual Studio nasıl kullanır. Toplanan bilgiler, Microsoft'un hangi özellikleri iyileştireceğini belirlemesine yardımcı olur. Bu belge içinde veya dışında VSCEIP opt alınmaktadır.
+Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde Visual Studio geliştirmesine yardımcı olmak için tasarlanmıştır. Bu program [hatalar hakkında bilgi toplar](../ide/diagnostic-data-collection.md), bilgisayar donanımı ve nasıl kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kişiler Visual Studio kullanın. Toplanan bilgiler, Microsoft'un hangi özellikleri belirlemesine yardımcı olur. Bu belgenin içine veya dışına VSCEIP nasıl ele alınmaktadır.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="opt-in-or-out"></a>Giriş veya çıkış iptal et
+## <a name="opt-in-or-out"></a>Veya iyileştirilmiş
 
-VSCEIP varsayılan olarak açıktır. Kapatın veya, bu yönergeleri izleyerek yeniden açın:
+VSCEIP varsayılan olarak etkinleştirilir. Kapatın veya yeniden, bu yönergeleri izleyerek yedekleme:
 
-1. Visual Studio'yu başlatın.
+1. Visual Studio’yu çalıştırın.
 
-1. Gelen **yardımcı** menüsündeki **geri bildirim gönder**ve ardından **ayarları**.
+1. Gelen **yardımcı** menüsünde **geri bildirim gönder**ve ardından **ayarları**.
 
    **Visual Studio Deneyimini Geliştirme Programı** iletişim kutusu açılır.
 
-1. Geri çevirmek için seçin **Hayır, katılmak istiyorum değil**ve ardından **Tamam**.
-   Kabul için seçin **Evet, katılmak istiyorum**ve ardından **Tamam**.
+1. Geri çevirmek için seçin **Hayır, katılmak istemiyorum**ve ardından **Tamam**.
+   Katılım için seçin **Evet, katılmak istiyorum**ve ardından **Tamam**.
 
    ![Visual Studio Deneyimini Geliştirme Programı iletişim](media/experience-improvement-program.png)
 
 ### <a name="registry-settings"></a>Kayıt defteri ayarları
 
-Yüklerseniz [derleme araçları Visual Studio için](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), VSCEIP yapılandırmak için kayıt defterini güncelleştirmeniz gerekir. Kurumsal müşteriler, kayıt defteri tabanlı bir ilke ayarlayarak içinde veya dışında VSCEIP kabul etmek için bir Grup İlkesi oluşturabilirsiniz.
+Yüklerseniz [Visual Studio derleme Araçları](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), VSCEIP yapılandırmak için kayıt defterini güncelleştirmeniz gerekir. Kurumsal müşteriler, kayıt defteri tabanlı bir ilke ayarlayarak içine veya dışına VSCEIP kabul etmek için bir Grup İlkesi oluşturabilirsiniz.
 
-İlgili kayıt defteri anahtarı ve ayarlar aşağıdaki gibidir:
+İlgili kayıt defteri anahtarı ve ayarları aşağıdaki gibidir:
 
-64-bit işletim sistemlerinde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** 32-bit işletim sistemlerinde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** olduğunda Grup İlkesi olan etkinse, anahtar = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+64-bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** 32-bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** olduğunda Grup İlkesi olan etkin, anahtar = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
 Giriş = **OptIn**
 
-Değer = (DWORD)
-- **0** alma (VSCEIP Kapat) seçti
-- **1** (VSCEIP etkinleştirin) seçti
+Değer (DWORD) =
+- **0** alma (VSCEIP Kapat) kabul
+- **1** (VSCEIP Aç) kabul
 
 > [!CAUTION]
-> Kayıt defterinin hatalı düzenlenmesi sisteminize ciddi şekilde zarar verebilir. Kayıt defterinde değişiklik yapmadan önce, bilgisayarınızdaki tüm değerli verileri yedeklemelisiniz. Aynı zamanda **bilinen son iyi yapılandırma** el ile yapılan değişiklikler uygulandıktan sonra sorunlarla karşılaşırsanız başlangıç seçeneği.
+> Kayıt defterinin hatalı düzenlenmesi sisteminize ciddi şekilde zarar verebilir. Kayıt defterinde değişiklik yapmadan önce, bilgisayarınızdaki tüm değerli verileri yedeklemelisiniz. Ayrıca **bilinen son iyi yapılandırma** el ile yapılan değişiklikler uygulandıktan sonra sorunlarla karşılaşırsanız başlangıç seçeneği.
 
 İşlenen veya aktarılan VSCEIP tarafından toplanan, bilgileri hakkında daha fazla bilgi için bkz [Microsoft gizlilik bildirimi](https://privacy.microsoft.com/privacystatement).
 

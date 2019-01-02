@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: 3B modele gölgelendirici uygulama'
+title: 'Nasıl Yapılır: 3B modele gölgelendirici uygulama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12fc18532888dbf688c3fcc0e5695edfaf47d953
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7c0c7b304b5fd435d739252db821232f977b75a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837163"
 ---
-# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Nasıl yapılır: 3B modele gölgelendirici uygulama
+# <a name="how-to-apply-a-shader-to-a-3d-model"></a>Nasıl Yapılır: 3B modele gölgelendirici uygulama
 
 Bu makalede, 3B modele gölgelendirici yönlendirilmiş grafik gölgelendirici dili (DGSL) uygulamak için Model Düzenleyicisi'ni kullanma gösterilmektedir.
 
@@ -27,7 +26,7 @@ Bu makalede, 3B modele gölgelendirici yönlendirilmiş grafik gölgelendirici d
 
 Başlamadan önce emin **özellikleri** penceresi görüntülenir.
 
-1. Bir veya daha fazla modeli içeren bir 3B Sahne ile başlar. Uygun bir 3B Sahne yoksa açıklandığı gibi oluşturmak [nasıl yapılır: temel 3B Model oluşturma](../designers/how-to-create-a-basic-3-d-model.md). Modele uygulayabileceğiniz bir DGSL gölgelendirici sahip olmalısınız. Uygun bir gölgelendirici yoksa açıklandığı gibi oluşturmak [nasıl yapılır: temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md) ve devam etmeden önce onu bir dosyayı kaydettiğinizden emin olun.
+1. Bir veya daha fazla modeli içeren bir 3B Sahne ile başlar. Uygun bir 3B Sahne yoksa açıklandığı gibi oluşturmak [nasıl yapılır: Temel 3B Model oluşturma](../designers/how-to-create-a-basic-3-d-model.md). Modele uygulayabileceğiniz bir DGSL gölgelendirici sahip olmalısınız. Uygun bir gölgelendirici yoksa açıklandığı gibi oluşturmak [nasıl yapılır: Temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md) ve devam etmeden önce onu bir dosyayı kaydettiğinizden emin olun.
 
 2. İçinde **seçin** modu, gölgelendirici uygulamak istediğiniz ve daha sonra modeli seçin **özellikleri** penceresi içinde **Filename** özelliği **etkisi**  özelliği Grup, modele uygulamak istediğiniz DGSL gölgelendirici belirtin.
 

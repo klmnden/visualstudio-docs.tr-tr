@@ -1,9 +1,6 @@
 ---
 title: VSIX bildirim Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93780f0d8c85eaa2736759f3765c34edfb7c9998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852355"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX Bildirim Tasarımcısı
 Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bildirim dosyası, değiştirir.  
@@ -76,7 +73,7 @@ Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bi
   **Önizleme görüntüsü**  
   Grafik dosyasını belirtir (*.png*, *.bmp*, *.jpeg*, *.ico*) içindegörüntülenecekönizlemegörüntüsünüiçeren**Uzantı Yöneticisi**, bir önizleme görüntüsü varsa. Önizleme görüntüsü 200 x 200 piksel olmalıdır. Hiçbir önizleme görüntüsü belirtilirse, **Uzantı Yöneticisi** varsayılan bir görüntü kullanır.  
   
-  **Etiketleri**  
+  **Etiketler**  
   Arama ipuçları için kullanılacak metni etiketleri ekler.  
   
   **Sürüm Notları**  

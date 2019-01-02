@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_baseSymbol | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81cf7e2c924aac3be16774b98bb85eb220256113
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f0c5a6bd5f28f72e154b76b28b10b19a76652eea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841891"
 ---
 # <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
-İşaretçinin temel aldığı simge alır.  
+İşaretçi temel aldığı simgeyi alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,10 +29,10 @@ HRESULT get_baseSymbol(
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- [out] İşaretçinin temel aldığı simgesi için bir işaretçi.  
+ [out] İşaretçi temel aldığı sembol için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   

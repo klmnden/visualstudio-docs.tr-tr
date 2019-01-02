@@ -1,8 +1,6 @@
 ---
 title: '&lt;Açıklama&gt; öğesi (ClickOnce dağıtımı) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d0ad2399cf43b8e86bd45e9c33dd421eeb55416f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828819"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Açıklama&gt; öğesi (ClickOnce dağıtımı)
 Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımlar ve bir **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi.  
@@ -32,8 +30,8 @@ Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımla
   
 ```xml  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  

@@ -1,6 +1,6 @@
 ---
 title: Renk Değeri Başvurusu
-description: 'Başvurusu: onaltılık kodlar yeni Visual Studio renk belirteçleri oluşturma'
+description: 'Başvuru: Onaltılık kodlar yeni Visual Studio renk belirteçleri oluşturmak için'
 keywords: rengi, onaltılık kod hue, temalı kullanıcı Arabirimi, tema oluşturma
 author: brickgeorge
 ms.author: gregvanl
@@ -8,15 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870066"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 
@@ -98,7 +96,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 | Ön plan: üzerine gelme | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 | Arka Plan | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![#FF292929 örneğini](../../extensibility/ux-guidelines/media/292929.png "#FF292929 örneği")<br />`#FF292929` | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 | Arka plan: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFFFFCF4 örneğini](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 örneği")<br />`#FFFFFCF4` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
-| Kenarlık | Yok. | Yok. | Yok. | Yok. |
+| Kenarlık | Hiçbiri | Yok. | Yok. | Hiçbiri |
 | Kenarlık: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFE5C365 örneğini](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 örneği")<br />`#FFE5C365` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Kategori grubu

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma'
+title: 'İzlenecek yol: Özel Metin Şablonu Ana Bilgisayarı Oluşturma.'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840771"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
+# <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: Bir özel metin şablonu konağı oluşturma
 
 A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştürme motoru* çalıştırılacak. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
 
@@ -821,7 +820,7 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu kılavuzda, temel dönüştürme işlevini destekleyen bir metin şablonu dönüştürme ana bilgisayarı oluşturdunuz. Ana bilgisayarınızı, özel veya oluşturulan yönerge işlemcilerini çağıran metin şablonlarını destekleyecek şekilde genişletebilirsiniz. Daha fazla bilgi için [izlenecek yol: üretilen bir yönerge işlemcisine ana bilgisayar bağlama](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+Bu kılavuzda, temel dönüştürme işlevini destekleyen bir metin şablonu dönüştürme ana bilgisayarı oluşturdunuz. Ana bilgisayarınızı, özel veya oluşturulan yönerge işlemcilerini çağıran metin şablonlarını destekleyecek şekilde genişletebilirsiniz. Daha fazla bilgi için [izlenecek yol: Üretilen bir yönerge işlemcisine ana bilgisayar bağlama](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

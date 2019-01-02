@@ -1,8 +1,6 @@
 ---
 title: StartTrackingContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - StartTrackingContext
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b6cb8676f95ff86efbcfbe421872cf2d9a3f47c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0a12945400c1d479ad8543b2c8f050098d326881
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844125"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Bir izleme bağlamına başlayın.  
@@ -44,4 +42,4 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** *FileTracker.h*
+ **Üst bilgi:** *FileTracker.h*

@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: Ana hat oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Anahat oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827529"
 ---
-# <a name="walkthrough-outlining"></a>İzlenecek Yol: Ana Hat Oluşturma
+# <a name="walkthrough-outlining"></a>İzlenecek yol: Anahat Oluşturma
 Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin bölgeleri türleri tanımlayarak anahat oluşturma gibi ayarlayın. Bir dil hizmeti bağlamında bölgeleri tanımlamak veya kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bölge tanımı yalnızca bu türü için geçerli veya bölge tanımları var olan bir içerik türüyle (örneğin, "metin") uygulamak. Bu izlenecek yol, tanımlamak ve ana hat oluşturma bölgeleri görüntülemek gösterilmektedir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
@@ -135,4 +132,4 @@ Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin b
 4.  İki ayraç içeren bir anahat oluşturma bölgesi olmalıdır. Anahat oluşturma bölge daraltmak için eksi işaretini sol tarafındaki açık ayraç olması gerekir. Ne zaman bölgesi daraltıldığında, üç nokta simgesine (*...* ) daraltılmış bölgeye ve metni içeren bir açılır pencere solunda görünmesi gereken **gelin metin** üç nokta üzerinde işaretçiyi getirdiğinizde görünmelidir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

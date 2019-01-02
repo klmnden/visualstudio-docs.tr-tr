@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6922613c7a1493d5b40b807166281ae11eb04d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835506"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Nasıl yapılır: program aracılığıyla tanımlama ve belgelerde aralıkları seçin
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Nasıl Yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin
   Kullanarak Microsoft Office Word belgesindeki bir aralığın tanımlayabilirsiniz bir <xref:Microsoft.Office.Interop.Word.Range> nesne. Kullanarak, örneğin, bir çeşitli yollarla, tüm belgede seçebilirsiniz <xref:Microsoft.Office.Interop.Word.Range.Select%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Range> içerik özelliğini kullanarak veya nesne <xref:Microsoft.Office.Tools.Word.Document> sınıfta (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Document> sınıfı (içinde bir VSTO eklenti).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -130,11 +127,9 @@ ms.locfileid: "49833141"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Nasıl yapılır: belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Nasıl yapılır: Word belgelerinde aralıkları'program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Nasıl yapılır: aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Nasıl yapılır: program aracılığıyla paragraf işaretlerini aralık oluştururken hariç tutma](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
-  
+ [Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Nasıl yapılır: Program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Nasıl yapılır: Aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

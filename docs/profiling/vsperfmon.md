@@ -1,8 +1,6 @@
 ---
 title: VSPerfMon | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPerfMon tool
@@ -18,15 +16,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9754d4f324c178c117e14ff5949bd6c8ef352e9
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6be37dc46b603d8193e45b8aa11d9b0cd78d9891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841073"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
-VSPerfMon aracı, bir uygulama için performans verilerini toplamak için kullanabilirsiniz; Bu aracı tarafından başlatılan genellikle *VSPerfCmd.exe*. VSPerfMon görüntüler işlem hakkında ek bilgi eklemek veya VSPerfCmd aracı kullanarak mevcut olmayan ayırma. Bu bilgileri görüntülemek için ayrı bir pencerede VSPerfMon başlatın. VSPerfMon çağırmak için aşağıdaki sözdizimini kullanın:  
+Bir uygulama için performans verilerini toplamak için VSPerfMon Aracı'nı kullanabilirsiniz; Genellikle bu aracı tarafından başlatılan *VSPerfCmd.exe*. VSPerfMon görüntüler işlem hakkında ek bilgi ekleme veya ayırma, VSPerfCmd aracı kullanarak mevcut değil. Bu bilgileri görüntülemek için ayrı bir pencerede VSPerfMon başlatın. VSPerfMon çağırmak için aşağıdaki sözdizimini kullanın:  
   
 ```cmd  
 VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTPUT <file name> [/WINCOUNTER:cfg] [/USER [DOMAIN\]username]  
@@ -36,20 +34,20 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
 |Seçenekler|Açıklama|  
 |-------------|-----------------|  
-|**U**|Yeniden yönlendirilen konsol çıktısı Unicode olarak yazılır.  Bu, belirtilen ilk seçenek olmalıdır.|  
-|**Çıkış:** `<` *dosya adı* `>`|Belirtilen dosya adına çıkış yeniden yönlendirir.|  
+|**U**|Yeniden yönlendirilmiş konsol Çıkışı Unicode olarak yazılır.  Bu, belirtilen ilk seçenek olması gerekir.|  
+|**Çıkış:** `<` *dosya adı* `>`|Belirtilen dosya adı için çıkış yeniden yönlendirir.|  
 |**İZLEME**|İzleme eklenmiş profil oluşturma için Performans İzleyicisi'ni başlatır.|  
-|**ÖRNEK**|Örnekleme profili oluşturma için Performans İzleyicisi'ni başlatır.|  
+|**ÖRNEK**|Örnekleme profil oluşturma için Performans İzleyicisi'ni başlatır.|  
 |**KAPSAMI**|Kod kapsamı koleksiyonu için Performans İzleyicisi'ni başlatır.|  
-|**EŞZAMANLILIK**|Kaynak çakışması profil oluşturma için Performans İzleyicisi'ni başlatır.|  
-|**Kullanıcı:** `[` *etki alanı* `\]` *kullanıcı adı*|İstemci erişimi için Performans İzleyicisi'ni belirtilen hesabından sağlar.|  
-|**CROSSSESSION**|Profil oluşturma oturumu arası sağlar.|  
-|**SAYAÇ** `:cfg`|İzleme profili oluşturma yöntemi (İzleme) kullanıldığında, her izleme noktada toplanacak CPU sayaç belirtir. Birden fazla sayaç seçenekleri belirterek birden fazla sayaç verileri toplayabilir.<br /><br /> Sayaç belirtmek için aşağıdaki sözdizimini kullanın (*cfg*) verileri:<br /><br /> **CounterName** [**, yeniden yükleme**[,**FriendlyName**]]<br /><br /> -   **CounterName** VSPerfCmd /QueryCounters komutu tarafından döndürülen bir sayaç adı.<br />-   **Yeniden yükleme** sayacı olay örnekleme aralığı. Kullanmayın *yeniden* izleme yöntemi ile.<br />-Belirtilen zaman **FriendlyName** değiştirir **CounterName** profil oluşturma araçları rapor sütun adları.|  
-|**WINCOUNTER** `:path`|İşareti verilerle dahil etmek için bir Windows performans sayacı belirtir. `path` Windows performans sayacı biçiminde bir dize olarak PDH sayaç yolu değil. Örneğin:<br /><br /> \Processor(0)\\% işlemci zamanı<br /><br /> \System\Context/sn|  
-|**OTOMATİK İŞARET** `:n`|/WINCOUNTER kullandığınızda otomatik işaretleri arasında zaman aralığı (milisaniye cinsinden) belirtir. En yakın 500ms kadar yuvarlanmış.<br /><br /> Otomatik işaretleri devre dışı bırakmak için 0 kullanın. (varsayılan belirtilmezse 500ms =)|  
+|**EŞZAMANLILIK**|Kaynak Çekişme profil oluşturma için Performans İzleyicisi'ni başlatır.|  
+|**Kullanıcı:** `[` *etki alanı* `\]` *kullanıcı adı*|İstemci erişimi için Performans İzleyicisi'ni belirtilen hesaptan sağlar.|  
+|**CROSSSESSION**|Çapraz oturum profil oluşturmayı etkinleştirir.|  
+|**SAYAÇ** `:cfg`|İzleme profili oluşturma metodu (İzleme) kullanıldığında, her bir izleme noktasına toplanacak CPU sayaç belirtir. Birden fazla sayaç seçenekleri belirterek, birden fazla sayaç verileri toplayabilirsiniz.<br /><br /> Sayaç belirtmek için aşağıdaki sözdizimini kullanın (*cfg*) veri:<br /><br /> **CounterName** [**, yeniden**[,**FriendlyName**]]<br /><br /> -   **CounterName** VSPerfCmd/querycounters komutu tarafından döndürülen bir sayaç adıdır.<br />-   **Reload** sayacı olay örnekleme aralığı. Kullanmayın *yeniden* araç haline getirme yöntemi ile.<br />-Belirtilen zaman **FriendlyName** değiştirir **CounterName** profil oluşturma araçları rapor sütun adları.|  
+|**WINCOUNTER** `:path`|İşareti verilerle dahil etmek için bir Windows performans sayacı belirtir. `path` bir Windows performans sayacı PDH sayacı yol biçiminde dizedir. Örneğin:<br /><br /> \Processor(0)\\% işlemci zamanı<br /><br /> \System\Context anahtarlar/sn|  
+|**OTOMATİK İŞARET** `:n`|/WINCOUNTER kullandığınız kullanıldığında otomatik işaretler arasındaki zaman aralığını (milisaniye cinsinden) belirtir. Yuvarlatılmış en yakın 500ms kadar.<br /><br /> Otomatik işaretleri devre dışı bırakmak için 0 kullanın. (varsayılan = 500ms belirtilmezse)|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Vsınstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
- [Performans rapor görünümleri](../profiling/performance-report-views.md)
+ [Performans raporu görünümleri](../profiling/performance-report-views.md)

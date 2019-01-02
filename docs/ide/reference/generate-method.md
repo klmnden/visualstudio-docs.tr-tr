@@ -2,19 +2,18 @@
 title: Bir yöntem oluşturma
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c0b84ac126bd7a7bb14a90f03e2d2dd10f881b01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836369"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio'da bir yöntem oluşturma
 
@@ -24,11 +23,11 @@ Bu kod oluşturma için geçerlidir:
 
 - Visual Basic
 
-**Ne:** hemen bir yöntem bir sınıfa eklemenizi sağlar.
+**Ne:** Hemen bir yöntem bir sınıfa eklemenizi sağlar.
 
-**Ne zaman:** yeni bir yöntem ve düzgün bir şekilde, otomatik olarak bildirmek istiyor.
+**ne zaman:** Size yeni bir yöntem ve düzgün bir şekilde, otomatik olarak bildirir.
 
-**Neden:** ancak bu özellik bildirimi otomatik olarak oluşturur, yöntemi ve parametreleri, kullanmadan önce bildirebilirsiniz.
+**Neden:** Ancak, bu özellik bildirimi otomatik olarak oluşturur, kullanmadan önce yöntem ve parametreler bildirebilirsiniz.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

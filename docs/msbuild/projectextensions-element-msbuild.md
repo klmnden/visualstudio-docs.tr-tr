@@ -1,8 +1,6 @@
 ---
 title: ProjectExtensions öğesi (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0057d51256f9cddff7c30056d4c669e9f2f2dd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc5dd1b98c4cf63aabd1ea48fca8bb5ebbb370b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828127"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions öğesi (MSBuild)
 Sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyalarını içerecek olmayan[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bilgileri. Herhangi bir şey içinde bir `ProjectExtensions` öğesi tarafından yoksayılacak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -45,10 +43,10 @@ Sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
 
 ### <a name="attributes"></a>Öznitelikler  
- Yok.  
+ Hiçbiri  
 
 ### <a name="child-elements"></a>Alt öğeleri  
- Yok.  
+ Hiçbiri  
 
 ### <a name="parent-elements"></a>Üst öğeler  
 

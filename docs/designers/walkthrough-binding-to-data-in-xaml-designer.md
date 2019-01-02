@@ -2,7 +2,6 @@
 title: XAML Tasarımcısı'nda verileri bağlama
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f1effd15666839b6e48bcebf46120585c4cfc36c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866130"
 ---
-# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı’nda verilere bağlama
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda verileri bağlama
 
 XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullanarak veri bağlama özellikleri ayarlayabilirsiniz. Bu kılavuzda örnek veriyi denetime bağlama gösterilmektedir. Özellikle, gözden geçirme sahip basit bir alışveriş sepeti sınıfı oluşturma işlemini gösterir ve bir [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) adlı `ItemCount`ve ardından `ItemCount` özelliğini **metin** özelliği bir [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) denetimi.
 

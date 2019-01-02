@@ -1,8 +1,7 @@
 ---
-title: 'Hızlı Başlangıç: C/C++ İçin Kod Çözümleme'
+title: 'Hızlı Başlangıç: C/C++ için Kod Analizi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,14 +11,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825207"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Hızlı başlangıç: C/C++ için kod analizi
+# <a name="quickstart-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ için kod analizi
 
 Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kalitesini artırabilir. Bu yaygın sorunlar, iyi bir programlama uygulama ya da test sürecinde bulmak zor olan hataları ihlalleri bulmanıza yardımcı olabilir. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için Kod Analizi arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir.
 
@@ -111,9 +110,9 @@ Visual Studio içinden hatalardan oturum iş öğesi izleme özelliğini kullana
 
 Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.
 
-- **Başlık veya Uyarı Kimliği Filtresi uyarılarını için**: anahtar sözcük arama kutusuna girin.
+- **Başlık veya Uyarı Kimliği Filtresi uyarılarını için**: Anahtar sözcük arama kutusuna girin.
 
-- **Filtre Uyarıları önem derecesine göre için**: varsayılan olarak, Kod Analizi ileti önem derecesi atanan **uyarı**. Bir veya daha fazla ileti olarak önemi atamak için **hata** özel bir kuralda ayarlayın. Üzerinde **önem derecesi** sütununun **hata listesi**, açılan liste okunu ve ardından filtre simgesini seçin. Seçin **uyarı** veya **hata** ilgili önem atanmış olan iletileri görüntülemek için. Seçin **Tümünü Seç** tüm iletileri görüntülemek için.
+- **Filtre Uyarıları önem derecesine göre için**: Varsayılan olarak, Kod Analizi ileti önem derecesi atanan **uyarı**. Bir veya daha fazla ileti olarak önemi atamak için **hata** özel bir kuralda ayarlayın. Üzerinde **önem derecesi** sütununun **hata listesi**, açılan liste okunu ve ardından filtre simgesini seçin. Seçin **uyarı** veya **hata** ilgili önem atanmış olan iletileri görüntülemek için. Seçin **Tümünü Seç** tüm iletileri görüntülemek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

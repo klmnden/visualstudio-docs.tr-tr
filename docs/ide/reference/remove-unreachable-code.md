@@ -2,7 +2,6 @@
 title: Erişilemeyen kodları yeniden düzenleme Kaldır
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 481c0d116eb2aee2c4f931f1ca4cb2de7927c62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842544"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Erişilemeyen kodları yeniden düzenleme Kaldır
 
@@ -24,11 +23,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - C#
 
-**Ne:** hiçbir zaman yürütülecek kodu kaldırır.
+**Ne:** Hiçbir zaman yürütülecek kodu kaldırır.
 
-**Ne zaman:** programınızda Bu kod parçacığı gereksiz yapmadan bir kod parçacığı için yol yok.
+**ne zaman:** Programınızın Bu kod parçacığı gereksiz yapmadan bir kod parçacığı, hiçbir yolu vardır.
 
-**Neden:** geliştirmek okunabilirlik ve sürdürülebilirliği gereksiz kod kaldırarak ve hiçbir zaman yürütülür.
+**Neden:** Okunabilirlik ve sürdürülebilirliği gereksiz olan ve hiçbir zaman yürütülecek kodu kaldırarak geliştirin.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

@@ -1,8 +1,6 @@
 ---
 title: 'DA0023: Yüksek GC CPU süresi | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0023
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d13f1c0bc2a024d35611d81f4aba3694f3bc39e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e340c7a46b469eda296b09da96a01249bc860e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836274"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839118"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Yüksek GC CPU süresi
 
@@ -44,7 +42,7 @@ ms.locfileid: "49836274"
  Bu kural, çöp toplamaya harcanan süreyi toplam uygulama işleme süresi ile karşılaştırıldığında önemli olduğunda tetikler.  
 
 > [!NOTE]
->  Toplam uygulama işleme süresi ile karşılaştırıldığında oranı çöp toplamaya harcanan süresinin aşırı olduğunda [DA0024: aşırı GC CPU zamanı](../profiling/da0024-excessive-gc-cpu-time.md) yerine bu kural uyarı ateşlenir.  
+>  Toplam uygulama işleme süresi ile karşılaştırıldığında oranı çöp toplamaya harcanan süresinin aşırı olduğunda [DA0024: Aşırı GC CPU zamanı](../profiling/da0024-excessive-gc-cpu-time.md) yerine bu kural uyarı ateşlenir.  
 
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
  Hata Listesi penceresindeki iletiyi gitmek için çift tıklatın [işaret görünümü](../profiling/marks-view.md) profil oluşturma verilerinin. Bulma **.NET CLR bellek\\% gc'de zaman** sütun. Varsa belirli program yürütme aşamaları çöp toplamanın yönetilen bellek yükü diğer aşamaları ağır olduğu belirleyin. Gc'de zaman % değerlerini değer çöp toplama oranını karşılaştırma bildirilen içinde **Gen 0 toplamaları sayısı**, **Gen 1 toplamaları sayısı**, **Gen 2 toplamaları sayısı** değerleri .  

@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831894"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Excel için uygulama düzeyi eklentiyi oluşturma işlemini gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin çalışma kitaplarını açık olan bağımsız olarak kullanılabilir.  
@@ -121,15 +118,15 @@ ms.locfileid: "49949909"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Excel için temel bir VSTO eklentisi oluşturdunuz, VSTO eklentileri aşağıdaki konulardan geliştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
--   VSTO eklentilerinde gerçekleştirebileceğiniz genel programlama görevlerini: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
+-   VSTO eklentileri gerçekleştirebileceğiniz genel programlama görevleri: [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md).  
   
--   Excel VSTO eklentileri belirli programlama görevleri: [Excel çözümleri](../vsto/excel-solutions.md).  
+-   Programlama Excel VSTO eklentileri belirli görevleri: [Excel çözümleri](../vsto/excel-solutions.md).  
   
 -   Excel nesne modelini kullanarak: [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).  
   
--   Excel kullanıcı arabirimini (UI) özelleştirme, örneğin, göre Şerite özel sekme ekleme veya kendi özel görev bölmesi oluşturuluyor: [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
+-   Örneğin, özelleştirme Şerite özel sekme ekleme veya kendi özel görev bölmesi oluşturma Excel, kullanıcı arabirimi (UI): [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
   
--   Derleme ve Excel için VSTO eklentileri hata ayıklama: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
+-   Derleme ve Excel için VSTO eklentileri'hata ayıklama: [Office çözümleri oluşturmanıza](../vsto/building-office-solutions.md).  
   
 -   Excel için VSTO eklentileri dağıtma: [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
   
@@ -142,5 +139,3 @@ ms.locfileid: "49949909"
  [Office çözümleri oluşturun](../vsto/building-office-solutions.md)   
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
-  
-  

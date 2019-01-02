@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d50f51fa2bcf43fd5bc299f803c2607b4f3351e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850810"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>İzlenecek yol: Oluşturma ve birim testlerini içeren bir yük testi çalıştırma
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>İzlenecek yol: Birim testleri içeren bir yük testi oluşturma ve çalıştırma
 
 Bu izlenecek yolda, birim testleri içeren bir yük testi oluşturun.
 
@@ -37,13 +36,13 @@ Bu kılavuzda, aşağıdaki görevleri tamamlamayacaksınız:
 
 -   Bir yük testi çalıştırın.
 
--   Bölümündeki adımları gerçekleştirdikten [izlenecek yol: oluşturma ve çalıştırma için birim testleri yönetilen kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) web içeren bir basit C# sınıf kitaplığı oluşturmak için performans ve yük bazı birim testlerinin ile testi.
+-   Bölümündeki adımları gerçekleştirdikten [izlenecek yol: Oluşturma ve çalıştırma için birim testleri yönetilen kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) basit oluşturmak için C# bazı birimiyle web performansı ve yük testi projesi içeren bir sınıf kitaplığı içinde test eder.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Yeni Yük Testi Sihirbazı'nı kullanarak birim testleri içeren bir yük testi oluşturma
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Yeni Yük Testi Sihirbazı'nı başlatmak için
 
-1.  İçinde oluşturduğunuz Banka çözümünü açın [izlenecek yol: yönetilen kod oluşturma ve çalıştırma için birim testleri](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  İçinde oluşturduğunuz Banka çözümünü açın [izlenecek yol: Oluşturma ve çalıştırma için birim testleri yönetilen kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  İçinde **Çözüm Gezgini**, banka çözümü düğümü için kısayol menüsünü açın, **Ekle**ve ardından **yeni proje**.
 

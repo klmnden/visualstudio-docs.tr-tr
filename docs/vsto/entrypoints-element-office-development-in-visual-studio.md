@@ -3,8 +3,6 @@ title: "&lt;giriş noktaları&gt; öğesi (Visual Studio'da Office Geliştirme)"
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc54225172f3d84e5577d65fb4574c5d3fcd6b18
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8392fa83899e078050786091fa4a2f462eb40c9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852951"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;giriş noktaları&gt; öğesi (Visual Studio'da Office Geliştirme)
   `entryPoints` Öğesinin `vstav3` ad alanı içeren tüm `entryPoint` bir Office çözümü ile ilişkili öğeleri.

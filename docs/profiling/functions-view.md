@@ -1,8 +1,6 @@
 ---
 title: İşlevler görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functions
@@ -17,21 +15,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 935b7aa55633167b6f9630b8046e29f9bc8eba91
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 1c2b86a1822c7ec25170ce168af9864c6df740f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833348"
 ---
 # <a name="functions-view"></a>İşlevler Görünümü
-İşlevler görünümü profil oluşturma sırasında adlı işlevleri listeler.  
+İşlevler görünümü, profil oluşturma sırasında çağrılan işlevleri listeler.  
   
- Varsayılan olarak, işlevleri adına göre listelenmiştir. İşlevler modülü tarafından görüntülemek üzere işlevler Görünümü penceresinde sağ tıklayın ve ardından **Göster modülü görünümünde**. Bu modül görünümü görüntüler.  
+ Varsayılan olarak, İşlevler adına göre listelenmiştir. Modülü tarafından işlevleri görüntülemek için İşlevler Görünümü penceresine sağ tıklatın ve ardından **Modül Görünümü Göster**. Bu modül görünümü görüntülenir.  
   
- Sütun eklemek veya kaldırmak için rapor penceresinde sağ tıklayın ve ardından **Sütun Ekle/Kaldır**. Ayrıca, bir sütun adı tıklayarak verileri sıralayabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Rapor Görünümü Özelleştir sütunları](../profiling/how-to-customize-report-view-columns.md).  
+ Sütun ekleme veya kaldırma için rapor penceresindeki sağ tıklayın ve ardından **sütunları Ekle/Kaldır**. Ayrıca, bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
   
- İşlevler görünümünde kullanılabilen sütunları verileri toplamak için kullanılan profil yöntemine (örnekleme veya araçları) bağlıdır ve .NET bellek verileri profil toplanmış çalıştırın.  
+ İşlevler görünümünde kullanılabilen sütunların veri toplamak için kullanılan profil oluşturma yöntemine (örnekleme veya Araçlar) bağlıdır ve .NET bellek verileri profil oluşturma çalışmasında toplanan açmasa da Çalıştır.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [İşlevler görünümü](../profiling/functions-view-sampling-data.md)   

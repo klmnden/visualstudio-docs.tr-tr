@@ -1,9 +1,6 @@
 ---
 title: Dil sunucusu Protokolü'ne genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828231"
 ---
 # <a name="language-server-protocol"></a>Dil Sunucusu Protokolü
 
@@ -52,13 +49,13 @@ Aşağıdaki örnek nasıl bir yordam sırasında bir araç ve dil sunucusu ilet
 
 ![LSP Akış Diyagramı](media/lsp-flow-diagram.png)
 
-* **Kullanıcı Aracı'nda (bir belge olarak adlandırılır) bir dosya açılır**: araç dil sunucunun bir belge açık olduğunu bildirir (' textDocument/didOpen'). Şu andan itibaren gerçekte belgesinin içeriğini hakkında artık dosya sisteminde değil ancak aracı bellekte tutulur.
+* **Kullanıcı Aracı'nda (bir belge olarak adlandırılır) bir dosya açılır**: Aracı dil sunucunun bir belge açık olduğunu bildirir (' textDocument/didOpen'). Şu andan itibaren gerçekte belgesinin içeriğini hakkında artık dosya sisteminde değil ancak aracı bellekte tutulur.
 
-* **Kullanıcının yaptığı düzenlemeler**: aracın sunucunun (' textDocument/didChange') Belge değişikliği hakkında size bildirir ve anlamsal bilgilerin programın dil sunucu tarafından güncelleştirilir. Böyle gibi dil server bu bilgileri analiz eder ve algılanan hataları ve Uyarıları (' textDocument/publishDiagnostics') aracıyla bildirir.
+* **Kullanıcının yaptığı düzenlemeler**: Aracı sunucu ile ilgili belge Değiştir (' textDocument/didChange') size bildirir ve anlamsal bilgilerin programın dil sunucu tarafından güncelleştirilir. Böyle gibi dil server bu bilgileri analiz eder ve algılanan hataları ve Uyarıları (' textDocument/publishDiagnostics') aracıyla bildirir.
 
-* **Kullanıcı "Tanıma Git" düzenleyicisindeki bir simgeye yürütür.**: aracı iki parametre ile bir ' textDocument/tanım' istek gönderir: (1) belge URI'si ve tanımı isteği Git sunucuya başlatıldığı gelen (2 metin konumu. Sunucu yanıt verir belge URI'si ve simgenin tanımını belgesinin içindeki konumu.
+* **Kullanıcı "Tanıma Git" düzenleyicisindeki bir simgeye yürütür.**: Araç, iki parametre ile bir ' textDocument/tanım' isteği gönderir: (1) belge URI ve tanımı isteği Git sunucuya başlatıldığı gelen (2 metin konumu. Sunucu yanıt verir belge URI'si ve simgenin tanımını belgesinin içindeki konumu.
 
-* **Kullanıcı ' % s'belgesi (dosya) kapatır**: belge artık bellek ve geçerli içeriğini şimdi artık dosya sisteminde güncel olan dil sunucusunun bildiren aracından ' textDocument/didClose' bildirim gönderilir.
+* **Kullanıcı ' % s'belgesi (dosya) kapatır**: Belge artık bellek ve geçerli içeriğini şimdi artık dosya sisteminde güncel olan dil sunucusunun bildiren aracından ' textDocument/didClose' bildirim gönderilir.
 
 Bu örnekte, protokol düzeyinde Düzenleyici Özellikleri "Tanıma", "Tüm başvuruları Bul" gibi dil sunucusuyla nasıl iletişim kurduğu gösterilmektedir. Protokolü tarafından kullanılan veri düzenleyicimizi veya IDE'mizi 'veri türleri' şu anda açık metin belgesi ve imleç konumu gibi türleridir. Veri türleri, genellikle soyut sözdizimi ağacı ve derleyici simgeleri (örneğin, çözümlenen türleri, ad,...) sağlayacak bir programlama dili etki alanı modeli düzeyinde değildir. Bu protokol önemli ölçüde basitleştirir.
 

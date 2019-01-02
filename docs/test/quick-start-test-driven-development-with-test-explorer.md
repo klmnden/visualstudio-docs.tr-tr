@@ -2,21 +2,20 @@
 title: Test Gezgini ile test güdümlü geliştirme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f38b38fbce688b405887ec39cc6e234f5d7b70d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833934"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: temelli geliştirme, Test Gezgini ile Test
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 
 Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere birim testleri yazmak için kullanabileceğiniz birkaç çerçeve vardır. Bazı test çerçeveleri, farklı dillerde veya platformlarda test için özel hazırlanmıştır. Test Gezgini bu çerçevelerin herhangi birinde yapılan birim testleri için tek bir arabirim sağlar. En sık kullanılan çerçeveler için bağdaştırıcılar bulunmaktadır ve diğer çerçeveler için kendi bağdaştırıcılarınızı yazabilirsiniz.
 
@@ -53,13 +52,13 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 
     Test Gezgini açılır ve sonuçları özetini görüntüler.
 
-   **Testlerin tam bir listesini görmek için:** Seç **Tümünü Göster** herhangi bir kategoride.
+   **Testlerin tam bir listesini görmek için:** Seçin **Tümünü Göster** herhangi bir kategoride.
 
-   **Bir test sonucunun ayrıntılarını görmek için:** , Ayrıntılar bölmesinde özel durum iletileri gibi ayrıntıları görüntülemek için Test Gezgini'nde testi seçin.
+   **Bir test sonucunun ayrıntılarını görmek için:** Ayrıntılar bölmesinde özel durum iletileri gibi ayrıntıları görüntülemek için Test Gezgini'nde testi seçin.
 
    **Bir testin koduna gitmek için:** Test Gezgini'nde teste çift tıklayın ya da seçin **testi Aç** kısayol menüsünde.
 
-   **Bir testte hata ayıklamak için:** bir veya daha fazla testin kısayol menüsünü açın ve ardından **seçilen Testlerde Hata Ayıkla**.
+   **Bir testte hata ayıklamak için:** Bir veya daha fazla testin kısayol menüsünü açın ve ardından **seçilen Testlerde Hata Ayıkla**.
 
 > [!IMPORTANT]
 > Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.
@@ -69,7 +68,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 > Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>İzlenecek yol: birim testlerini bir yöntemi geliştirmek için kullanma.
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>İzlenecek yol: Bir yöntem geliştirmek üzere kullanarak birim testleri
  Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Testi ve yöntemi oluşturma

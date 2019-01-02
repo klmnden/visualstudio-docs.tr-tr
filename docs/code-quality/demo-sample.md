@@ -1,8 +1,7 @@
 ---
-title: Örnek C++ projesi için kod çözümleme
+title: Örnek C++ proje için Kod Analizi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
@@ -13,34 +12,34 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: aafbaaf682852adaea8f20a1373ea1ae4b025fad
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ad5a7d3b2c13b603fd3a9f523563c844dda8b67d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852511"
 ---
-# <a name="sample-c-project-for-code-analysis"></a>Örnek C++ projesi için kod çözümleme
+# <a name="sample-c-project-for-code-analysis"></a>Örnek C++ proje için Kod Analizi
 
-Bu aşağıdaki yordamlar örneğe oluşturulacağını gösterir [izlenecek yol: C/C++ analiz kod kusurları için](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Yordamları oluşturun:
+Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol: Kusurları için C/C++ kod çözümleme](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Yordamlar oluşturun:
 
 - CppDemo adlı bir Visual Studio çözümü.
 
 - CodeDefects adlı bir statik kitaplık projesi oluşturun.
 
-- Ek açıklamalar adlı bir statik kitaplık projesi oluşturun.
+- Statik kitaplık projesi ek açıklamaları adı.
 
-Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için dosyaları.
+Yordamlar kod için üst bilgi de sağlar. ve *.cpp* statik kitaplıklar için dosyaları.
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo çözüm ve CodeDefects proje oluşturma
 
-1. Tıklatın **dosya** menüsündeki **yeni**ve ardından **yeni proje**.
+1. Tıklayın **dosya** menüsünde **yeni**ve ardından **yeni proje**.
 
-2. İçinde **proje türleri** ağaç listesi, Visual C++ VS varsayılan dilde değilse genişletin **diğer diller**.
+2. İçinde **proje türleri** ağaç listesi, Visual C++ varsayılan dilinizi vs'de değilse genişletin **diğer diller**.
 
-3. Genişletme **Visual C++** ve ardından **genel**.
+3. Genişletin **Visual C++** ve ardından **genel**.
 
-4. İçinde **şablonları**, tıklatın **boş proje**.
+4. İçinde **şablonları**, tıklayın **boş proje**.
 
 5. İçinde **adı** metin kutusunda, **CodeDefects**.
 
@@ -48,25 +47,25 @@ Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için d
 
 7. İçinde **çözüm adı** metin kutusunda, **CppDemo**.
 
-## <a name="configure-the-codedefects-project-as-a-static-library"></a>Statik kitaplık olarak CodeDefects projeyi yapılandırın
+## <a name="configure-the-codedefects-project-as-a-static-library"></a>Statik kitaplık olarak CodeDefects proje yapılandırma
 
 1. Çözüm Gezgini'nde sağ **CodeDefects** ve ardından **özellikleri**.
 
-2. Genişletme **yapılandırma özellikleri** ve ardından **genel**.
+2. Genişletin **yapılandırma özellikleri** ve ardından **genel**.
 
-3. İçinde **genel** listesinde, metni seçin sütunda yanına **hedef uzantısı**ve ardından **.lib**.
+3. İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.
 
-4. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik Lib (.lib)**.
+4. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.
 
-## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>CodeDefects projesine üst bilgisinin ve kaynak dosyası ekleme
+## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Üst bilgi ve kaynak dosya CodeDefects projeye ekleyin.
 
-1. Çözüm Gezgini'nde genişletin **CodeDefects**, sağ **üstbilgi dosyaları**, tıklatın **Ekle**ve ardından **yeni öğe**.
+1. Çözüm Gezgini'nde **CodeDefects**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklatın **kod**ve ardından **üstbilgi dosyası (.h)**.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod**ve ardından **üst bilgi dosyası (.h)**.
 
 3. İçinde **adı** kutusuna **Bug.h** ve ardından **Ekle**.
 
-4. Aşağıdaki kodu kopyalayın ve yapıştırın *Bug.h* dosyasını Visual Studio düzenleyicisinde.
+4. Aşağıdaki kodu kopyalayın ve yapıştırın *Bug.h* Visual Studio düzenleyicisinde dosya.
 
     ```cpp
     #include <windows.h>
@@ -90,11 +89,11 @@ Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için d
 
 5. Çözüm Gezgini'nde sağ **kaynak dosyaları**, işaret **yeni**ve ardından **yeni öğe**.
 
-6. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklatın **C++ dosyasına (.cpp)**
+6. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **C++ dosyası (.cpp)**
 
 7. İçinde **adı** kutusuna **Bug.cpp** ve ardından **Ekle**.
 
-8. Aşağıdaki kodu kopyalayın ve yapıştırın *Bug.cpp* dosyasını Visual Studio düzenleyicisinde.
+8. Aşağıdaki kodu kopyalayın ve yapıştırın *Bug.cpp* Visual Studio düzenleyicisinde dosya.
 
     ```cpp
     #include <stdlib.h>
@@ -154,11 +153,11 @@ Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için d
     }
     ```
 
-9. Tıklatın **dosya** menüsüne ve ardından **Tümünü Kaydet**.
+9. Tıklayın **dosya** menüsüne ve ardından **Tümünü Kaydet**.
 
-## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Ek açıklamalar proje ekleyin ve bir statik kitaplık yapılandırın
+## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Ek açıklamalar projeye ekleyin ve statik bir kitaplık olarak yapılandırma
 
-1. Çözüm Gezgini'nde tıklatın **CppDemo**, işaret **Ekle**ve ardından **yeni proje**.
+1. Çözüm Gezgini'nde tıklayın **CppDemo**, işaret **Ekle**ve ardından **yeni proje**.
 
 2. İçinde **Yeni Proje Ekle** iletişim kutusunda, Visual C++'ı genişletin, **genel**ve ardından **boş proje**.
 
@@ -166,21 +165,21 @@ Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için d
 
 4. Çözüm Gezgini'nde sağ **ek açıklamaları** ve ardından **özellikleri**.
 
-5. Genişletme **yapılandırma özellikleri** ve ardından **genel**.
+5. Genişletin **yapılandırma özellikleri** ve ardından **genel**.
 
-6. İçinde **genel** listesinde, metni seçin sütunda yanına **hedef uzantısı**ve ardından **.lib**.
+6. İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.
 
-7. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik Lib (.lib)**.
+7. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.
 
-## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Kaynak dosya ve üstbilgi dosyası ek açıklamaları projeye ekleyin
+## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Kaynak dosya ve üstbilgi dosyası ek açıklamaları projeye ekleyin.
 
-1. Çözüm Gezgini'nde genişletin **ek açıklamaları**, sağ **üstbilgi dosyaları**, tıklatın **Ekle**ve ardından **yeni öğe**.
+1. Çözüm Gezgini'nde **ek açıklamaları**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklatın **üstbilgi dosyası (.h)**.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **üst bilgi dosyası (.h)**.
 
 3. İçinde **adı** kutusuna **annotations.h** ve ardından **Ekle**.
 
-4. Aşağıdaki kodu kopyalayın ve yapıştırın *annotations.h* dosyasını Visual Studio düzenleyicisinde.
+4. Aşağıdaki kodu kopyalayın ve yapıştırın *annotations.h* Visual Studio düzenleyicisinde dosya.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -199,11 +198,11 @@ Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için d
 
 5. Çözüm Gezgini'nde sağ **kaynak dosyaları**, işaret **yeni**ve ardından **yeni öğe**.
 
-6. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklatın **kod** ve ardından **C++ dosyasına (.cpp)**
+6. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod** ve ardından **C++ dosyası (.cpp)**
 
 7. İçinde **adı** kutusuna **annotations.cpp** ve ardından **Ekle**.
 
-8. Aşağıdaki kodu kopyalayın ve yapıştırın *annotations.cpp* dosyasını Visual Studio düzenleyicisinde.
+8. Aşağıdaki kodu kopyalayın ve yapıştırın *annotations.cpp* Visual Studio düzenleyicisinde dosya.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -232,4 +231,4 @@ Yordamlar, kod ayrıca üst bilgi sağlar. ve *.cpp* statik kitaplıklar için d
 
     ```
 
-9. Tıklatın **dosya** menüsüne ve ardından **Tümünü Kaydet**.
+9. Tıklayın **dosya** menüsüne ve ardından **Tümünü Kaydet**.

@@ -1,8 +1,6 @@
 ---
 title: Idiaaddressmap | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1593f59125c4b6325bfd97015485cc2a4d85f6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a563ee3502cc1e713946cd70575be187ecbeadbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824554"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-DIA SDK'sı sanal ve göreli sanal adresleri hata ayıklama nesneleri için nasıl hesaplar üzerinde denetim sağlar.  
+DIA SDK'sı sanal ve göreli sanal adreslerine hata ayıklama nesneler için nasıl hesaplar üzerinde denetim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaAddressMap : IUnknown  
+IDiaAddressMap : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -35,25 +33,25 @@ IDiaAddressMap : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Belirli bir oturum için bir adres eşlemesi kurulduğunda olup olmadığını gösterir.|  
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Adres eşlemesi simgesi adresleri çevirmek için kullanılması gerekip gerekmediğini belirtir.|  
-|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Hesaplama ve göreli sanal adresleri kullanımını etkinleştirilip etkinleştirilmediğini gösterir.|  
-|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|İstemcinin etkinleştirmek veya devre dışı göreli sanal adresleri hesaplama olanak tanır.|  
-|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Geçerli resmi hizalaması alır.|  
-|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Resmi hizalaması ayarlar.|  
-|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Ayarlar göreli sanal adres çevirisi etkinleştirmek için üstbilgiler görüntü.|  
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Görüntü düzeni çevirileri desteklemek için bir adres eşlemesi sağlar.|  
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Belirli bir oturum için bir adres eşlemesi kurulduktan olup olmadığını gösterir.|  
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Adres Haritası sembol adreslerine çevirmek için kullanılıp kullanılmayacağını belirtir.|  
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Göreli sanal adreslerine kullanımını ve hesaplama etkin olup olmadığını gösterir.|  
+|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|İstemci, etkinleştirme veya devre dışı göreli sanal adreslerine hesaplanması sağlar.|  
+|[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Geçerli resim hizalamasını alır.|  
+|[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Resim hizalamasını ayarlar.|  
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Kümeleri göreli sanal adres çevirisi'ni etkinleştirmek için üst görüntü.|  
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Görüntü düzen çevirileri desteklemek için bir adres Haritası sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu arabirim tarafından sağlanan denetim iki sağladığınız veri kümesi içinde kapsüllenir: görüntü üstbilgileri ve adres eşlemeleri. Çoğu istemcilerin kullandığı [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi bir görüntü ve yöntem genellikle tüm gerekli üst bilgileri ve haritalar verileri kendisini bulabilir uygun hata ayıklama bilgilerini bulamıyor. Ancak bazı istemciler özel işleme ve veri için arama uygular. Bu tür istemciler yöntemlerini kullanın `IDiaAddressMap` DIA SDK ile arama sonuçları sağlamak için arabirim.  
+ Bu arabirim tarafından sağlanan denetimi iki sağladığınız veri kümesi içinde kapsüllenir: görüntü üst bilgileri ve adres eşlemeleri. Çoğu istemciler [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi bir görüntü ve yöntem genellikle tüm verilerin gerekli üst bilgileri ve haritalar kendisini bulabilir uygun hata ayıklama bilgileri bulunamadı. Ancak bazı istemciler, özelleştirilmiş işleme ve verileri için arama uygulayın. Bu gibi istemcilerde yöntemlerini kullanın `IDiaAddressMap` DIA SDK ile arama sonuçları sağlamak için arabirim.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim DIA session nesnesinden kullanılabilir. İstemci çağrılarını `QueryInterface` yöntemi arabirimde DIA oturum nesnesi, genellikle [Idiasession](../../debugger/debug-interface-access/idiasession.md)almak için `IDiaAddressMap` arabirimi.  
+ Bu arabirim, DIA oturum nesnesinden kullanılabilir. İstemci çağrıları `QueryInterface` arabirimde DIA oturumu nesne, genellikle yöntemi [Idiasession](../../debugger/debug-interface-access/idiasession.md), alınacak `IDiaAddressMap` arabirimi.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

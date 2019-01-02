@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454bb625f51f336b4b127848aad7c57a73f0456
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845505"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırından İzleme Metodunu Kullanarak Hizmetler için Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Bir .NET hizmetine profil**|-   [Nasıl yapılır: bir .NET hizmetini izleme ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Bir .NET hizmetine profil**|-   [Nasıl Yapılır: Aracı bir .NET hizmetine ve toplama ayrıntılı zamanlama verileri](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**C/C++ hizmetin profilini**|-   [Nasıl yapılır: izleme bir yerel hizmet ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**C/C++ hizmetin profilini**|-   [Nasıl Yapılır: İzleme bir yerel hizmet ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   
@@ -49,7 +49,7 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
 |Görev|İlgili içerik|  
 |----------|---------------------|  
 |**(İstemci) tek başına uygulamaların profilini oluşturma**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**ASP.NET Web uygulamalarının profilini oluşturma**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**ASP.NET Web uygulamalarının profilini oluşturma**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Ölçümlü izleme verilerini analiz etme, görünümleri ve raporlar  
  [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)

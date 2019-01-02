@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a3904efd69763a096504922ee233a927ba69ed8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847041"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Bir test denetleyicisi ve test aracısına roller atama
 
@@ -37,7 +36,7 @@ Bu yönerge, oluşturmak ve Visual Studio kullanarak birçok makine üstünden s
 
 1.  İçinde **Çözüm Gezgini**, sağ **çözüm öğeleri** işaret **Ekle**ve ardından **yeni öğe**.
 
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+     **Yeni Öğe Ekle** iletişim kutusu görünür.
 
 2.  İçinde **yüklü şablonlar** bölmesinde seçin **Test ayarları**.
 

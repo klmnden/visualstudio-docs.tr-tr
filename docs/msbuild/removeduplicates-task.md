@@ -1,8 +1,6 @@
 ---
 title: RemoveDuplicates görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b11ac8c615bce56e4dc1a0299076ef36e1b6b373
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831881"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates görevi
 Yinelenen öğeleri belirtilen öğeyi koleksiyondan kaldırır.  
@@ -94,4 +92,4 @@ Yinelenen öğeleri belirtilen öğeyi koleksiyondan kaldırır.
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)
+ [Görevler](../msbuild/msbuild-tasks.md)

@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_CODE_FILE_LINE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c114919d74fba7a28c9d3ea11fc5bb9947d6a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52ad83e4ad79bb305143fd4f648e7e32131f8889
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847908"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 Belirli bir satır kod kaynak dosyada kesme noktası konumu için verileri içerir.  
@@ -28,7 +25,7 @@ Belirli bir satır kod kaynak dosyada kesme noktası konumu için verileri içer
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-typedef struct _BP_LOCATION_CODE_FILE_LINE {   
+typedef struct _BP_LOCATION_CODE_FILE_LINE {   
    BSTR                     bstrContext;  
    IDebugDocumentPosition2* pDocPos;  
 } BP_LOCATION_CODE_FILE_LINE;  
@@ -47,7 +44,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

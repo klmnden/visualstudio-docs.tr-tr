@@ -2,7 +2,6 @@
 title: 'İzlenecek yol: LinqToXmlDataBinding örneği'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6642981934c764fc2f6d512cb19502a21ac224e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850706"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>İzlenecek yol: LinqToXmlDataBinding örneği
 Bu izlenecek yolda LinqToXmlDataBinding örneği ve iki birincil kaynak dosyalarından daha ilgi çekici içeriğini bazıları açıklanmaktadır *L2DBForm.xaml* ve *L2DBForm.xaml.cs*.
 
 ## <a name="prerequisites"></a>Önkoşullar
- Bu kılavuzu okumadan önce derleme ve açıklandığı gibi LinqToXmlDataBinding programı çalıştırın öneririz [nasıl yapılır: derleme ve çalıştırma LinqToXmlDataBinding örneği](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
+ Bu kılavuzu okumadan önce derleme ve açıklandığı gibi LinqToXmlDataBinding programı çalıştırın öneririz [nasıl yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
 
 ## <a name="remarks"></a>Açıklamalar
  Oluşan bir Windows Presentation Foundation (WPF) uygulaması C# ve XAML kaynak dosyaları LinqToXmlDataBinding programdır. Kitap listesi tanımlar ve görüntüleme, ekleme, silme ve bu girişleri düzenlemek kullanıcının sağlayan gömülü bir XML belgesi içeriyor. Bunu, aşağıdaki iki birincil kaynak dosyalardan oluşur:
@@ -50,4 +49,4 @@ Bu izlenecek yolda LinqToXmlDataBinding örneği ve iki birincil kaynak dosyalar
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [LINQ, XML örneği kullanarak WPF verilerini bağlama](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Nasıl yapılır: LinqToXmlDataBinding oluşturma ve çalıştırma örneği](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+- [Nasıl yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

@@ -1,12 +1,11 @@
 ---
-title: 'CA1303: harfleri yerelleştirilmiş parametreler göndermeyin | Microsoft Docs'
+title: 'CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -21,12 +20,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e78569dff8dfaeac1b0ed07bc41a3c9a9795c56e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833335"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +68,3 @@ ms.locfileid: "49886571"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Masaüstü Uygulamalarındaki Kaynaklar](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-

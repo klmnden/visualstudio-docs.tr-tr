@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872404"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Alana Özgü Dilleri Kullanmaya Başlama
 
@@ -23,7 +22,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 > [!NOTE]
 > Visual Studio 2017'de metin şablonu dönüştürme SDK'sını ve Visual Studio modelleme SDK'sı, Visual Studio'nun belirli özelliklerini yüklediğinizde otomatik olarak yüklenir. Daha fazla ayrıntı için [bu blog gönderisini](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabileceğiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
+DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Bir etki alanına özgü dil ile ne yapabilirsiniz?
 
@@ -386,7 +385,7 @@ Mevcut etki alanı sınıfları ve ilişkileri yeniden adlandırın. Örneğin, 
 ## <a name="validation-and-commands"></a>Doğrulama ve komutlar
  Doğrulama kısıtlamaları ekleyerek bu DSL daha fazla geliştirebilir. Bu kısıtlamaları, model doğru durumda olduğundan emin olun, tanımlayabilirsiniz, yöntemlerdir. Örneğin, doğum tarihi bir alt öğelerinden bundan sonraki olan emin olmak için bir kısıtlama tanımlayabilirsiniz. DSL kullanıcı kısıtlamaların hiçbirini keser bir model kaydetmeye çalıştığında doğrulama özelliği bir uyarı görüntüler. Daha fazla bilgi için [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).
 
- Ayrıca kullanıcının çağırabileceği menü komutları tanımlayabilirsiniz. Komutlar, model değiştirebilirsiniz. Ayrıca Visual Studio'da diğer modellerle ve dış kaynaklar ile etkileşebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Ayrıca kullanıcının çağırabileceği menü komutları tanımlayabilirsiniz. Komutlar, model değiştirebilirsiniz. Ayrıca Visual Studio'da diğer modellerle ve dış kaynaklar ile etkileşebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>DSL dağıtma
  Diğer kullanıcıların etki alanına özgü dil kullanmasına izin vermek için Visual Studio Uzantısı (VSIX) dosyasını dağıtın. DSL çözümü oluşturduğunuzda oluşturulur.

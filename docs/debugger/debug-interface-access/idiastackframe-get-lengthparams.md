@@ -1,8 +1,6 @@
 ---
 title: Idiastackframe::get_lengthparams | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6754a729d6493defaad05266fd8b44d996b3ebfd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9f26d84a0211681ea43a77ac12be58d8d4b4f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842638"
 ---
 # <a name="idiastackframegetlengthparams"></a>IDiaStackFrame::get_lengthParams
 Parametreleri yığına itildi bayt sayısını alır.  
@@ -27,7 +25,7 @@ Parametreleri yığına itildi bayt sayısını alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_lengthParams (   
+HRESULT get_lengthParams (   
    DWORD* pRetVal  
 );  
 ```  

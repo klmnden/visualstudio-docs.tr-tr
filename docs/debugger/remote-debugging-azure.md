@@ -2,7 +2,6 @@
 title: Uzaktan hata ayıklama, IIS ve Azure üzerinde ASP.NET Core | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1658e8df9950ed7b9be060663204511a09d8c626
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839102"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Uzaktan hata ayıklama Visual Studio 2017'de azure'da IIS üzerinde ASP.NET Core
 
@@ -226,7 +225,7 @@ Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 
     Visual Studio'da kesme noktasına isabet.
 
-### <a name="bkmk_openports"></a> Sorun giderme: Windows Server üzerinde gerekli bağlantı noktaları açma
+### <a name="bkmk_openports"></a> Sorun giderme: Windows Server üzerinde gerekli bağlantı noktalarını açma
 
 Çoğu ayarlar ASP.NET ve uzaktan hata ayıklayıcı yüklemesi tarafından gerekli bağlantı noktalarının açıldığından. Ancak, bir güvenlik duvarının arkasında barındırılan uygulama ve dağıtım sorunlarını giderirken, doğru bağlantı noktalarının açık olduğundan emin olun gerekebilir.
 
@@ -240,4 +239,3 @@ Gerekli bağlantı noktaları:
 
 Ayrıca, bu bağlantı noktaları ASP.NET yükleme tarafından zaten açılması gerekir:
 - 8172 - (isteğe bağlı) uygulamayı Visual Studio'dan dağıtmak Web dağıtımı için gerekli
-

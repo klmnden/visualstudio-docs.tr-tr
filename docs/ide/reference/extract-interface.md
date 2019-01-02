@@ -2,7 +2,6 @@
 title: Bir arabirimi yeniden düzenleme ayıklayın
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838222"
 ---
 # <a name="extract-an-interface-refactoring"></a>Bir arabirimi yeniden düzenleme ayıklayın
 
@@ -29,11 +28,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** bir arabirim kullanarak var olan bir sınıf, yapı veya arabirim üyeleri oluşturmanızı sağlar.
+**Ne:** Varolan bir sınıf, yapı veya arabirim üyelerini kullanarak bir arabirim oluşturmanıza olanak sağlar.
 
-**Ne zaman:** çeşitli sınıflar, yapılar veya arabirimleri ile genel ve diğer sınıflar, yapılar veya arabirimleri tarafından kullanılan yapılamadı yöntemleri vardır.
+**ne zaman:** Sahip olduğunuz çeşitli sınıflar, yapılar veya arabirimleri yöntemleriyle ortak ve diğer sınıflar, yapılar veya arabirimleri tarafından kullanılan yapılamadı.
 
-**Neden:** harika yapılar için nesne yönelimli tasarım arabirimdir. Sınıflar için tüm Eat, içecek, uyku gibi yaygın yöntemleri olabilir çeşitli hayvanlar (Dog, Kedi, Bird) sahip olduğunuzu düşünelim. IAnimal gibi bir arabirim kullanarak köpek Cat ve Bird ortak bir "SIGNATURE" Bu yöntemlere ait olmasını çalıştırmasına olanak tanır.
+**Neden:** Arabirimleri, nesne yönelimli tasarım harika yapılarıdır. Sınıflar için tüm Eat, içecek, uyku gibi yaygın yöntemleri olabilir çeşitli hayvanlar (Dog, Kedi, Bird) sahip olduğunuzu düşünelim. IAnimal gibi bir arabirim kullanarak köpek Cat ve Bird ortak bir "SIGNATURE" Bu yöntemlere ait olmasını çalıştırmasına olanak tanır.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

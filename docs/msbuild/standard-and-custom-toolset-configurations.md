@@ -1,8 +1,6 @@
 ---
 title: Standart ve özel araç takımı yapılandırmaları | Microsoft Docs
-ms.custom: ''
 ms.date: 01/31/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a834a5b4b1a380b23ad9edfda9ea42f40e20469
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839527"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standart ve özel araç takımı yapılandırmaları
 Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluşturmak için kullanabileceğiniz araçları başvurular içerir. Standart bir araç takımı MSBuild içerir, ancak özel araç takımları de oluşturabilirsiniz. Bir araç takımı belirtme hakkında daha fazla bilgi için bkz: [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

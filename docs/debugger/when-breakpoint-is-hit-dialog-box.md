@@ -1,8 +1,6 @@
 ---
 title: Kesme noktası isabet iletişim kutusu olduğunda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.whenbreakpointishit
@@ -19,25 +17,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2d0940764e64f9179eb8346c271afa6136b72f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 560a79892ee50f3d151971f46bcc2c2b7f205d3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845622"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Kesme Noktası İsabet Edildiğinde İletişim Kutusu
 Bu iletişim kutusu ile bir kesme noktasına gelindiğinde gerçekleşen eylemi özelleştirebilirsiniz.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Bir ileti yazdırma**  
- DebuggerDisplay sözdizimini kullanarak bir ileti yazdırır. Daha fazla bilgi için bkz: [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md).  
+ **İleti Yazdır**  
+ DebuggerDisplay sözdizimini kullanarak bir ileti yazdırır. Daha fazla bilgi için [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md).  
   
  Bu metin kutusu, bir DebuggerDisplay ifadesinin küme ayraçları içinde veya tek başlarına kullanılabilecek özel anahtar sözcükleri (örneğin, $ADDRESS) de destekler. Kullanılabilir anahtar sözcükler, iletişim kutusunda listelenir.  
   
- **Yürütme devam**  
- Bu denetim etkin yalnızca **iletiyi yazdırma** seçilir. Bu denetim seçildiğinde, bir kesme noktasını, konuma ulaşıldığında kesmek yerine, program yürütmenizi izlemek üzere bir izleme noktası olarak kullanabilirsiniz.  
+ **Yürütmeye devam et**  
+ Bu denetimin etkin olup yalnızca **ileti Yazdır** seçilir. Bu denetim seçildiğinde, bir kesme noktasını, konuma ulaşıldığında kesmek yerine, program yürütmenizi izlemek üzere bir izleme noktası olarak kullanabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kesme noktalarını kullanma](../debugger/using-breakpoints.md)   
- [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)
+ [Kesme noktaları kullanma](../debugger/using-breakpoints.md)   
+ [DebuggerDisplay Özniteliğini Kullanma](../debugger/using-the-debuggerdisplay-attribute.md)

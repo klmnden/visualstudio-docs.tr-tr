@@ -1,9 +1,6 @@
 ---
 title: Bağlantı sağlayıcıları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e134b9b4adeb45693a9841a0a867a9c3630bf2aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835110"
 ---
 # <a name="port-suppliers"></a>Bağlantı noktası sağlayıcıları
 Hata ayıklayıcı mimarisinde bir *bağlantı noktası sağlayıcısı*:  

@@ -1,9 +1,6 @@
 ---
 title: 'Nasıl Yapılır: Program aracılığıyla belgelere üstbilgiler ve altbilgiler ekleme'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848460"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Nasıl Yapılır: Program aracılığıyla belgelere üstbilgiler ve altbilgiler ekleme
   Metin için üstbilgiler ve altbilgiler belgenize kullanarak ekleyebileceğiniz <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> özelliği ve <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> özelliği <xref:Microsoft.Office.Interop.Word.Section>. Her bir belge bölümü, üç üstbilgiler ve altbilgiler içerir:  
@@ -76,4 +73,3 @@ ms.locfileid: "53803382"
  [Nasıl yapılır: Program aracılığıyla yeni belgeler oluşturma](../vsto/how-to-programmatically-create-new-documents.md)   
  [Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Nasıl yapılır: Program aracılığıyla bulunan öğeler arasında döngü](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   

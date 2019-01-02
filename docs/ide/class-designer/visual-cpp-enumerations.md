@@ -2,7 +2,6 @@
 title: Sınıf Tasarımcısında Visual C++ Numaralandırmaları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], enumerations
@@ -12,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a42dfb65cc70704bbed662e35b2e2eb0e9c237c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dde9e749a58935e0b50b604897092f69f16300b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869209"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Sınıf tasarımcısında Visual C++ numaralandırmaları
 
-**Sınıf Tasarımcısı** C++ destekler `enum` ve kapsamlı `enum class` türleri. Aşağıda bir örnek verilmiştir:
+**Sınıf Tasarımcısı** C++ destekler `enum` ve kapsamlı `enum class` türleri. Bir örneği verilmiştir:
 
 ```cpp
 enum CardSuit {
@@ -40,7 +39,7 @@ enum class CardSuit {
 };
 ```
 
-Sınıf diyagramında C++ numaralandırması Şekil arar ve çalıştığını yapısı şekli gibi etiketi okur dışında **Enum** veya **Enum sınıfı**, mavi yerine pembe ve üst ve sol renkli kenarlık vardır Kenar boşlukları. Numaralandırma şekiller ve yapısı şekiller kare köşeleri vardır.
+Sınıf diyagramında C++ numaralandırma şekli görünür ve etiketi dışında bir yapı şeklinde çalışır **Enum** veya **sabit listesi sınıfı**, mavi yerine pembe ve sol üst taraftaki renkli kenarlık vardır Kenar boşlukları. Numaralandırma şekilleri ve yapı şekilleri dörtgen köşelerine sahiptir.
 
 Kullanma hakkında daha fazla bilgi için `enum` yazın, bkz: [numaralandırmalar](/cpp/cpp/enumerations-cpp).
 

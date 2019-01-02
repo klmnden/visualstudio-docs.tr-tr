@@ -2,7 +2,6 @@
 title: Metin Düzenleyici Seçenekleri İletişim Kutusu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -20,17 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d746426a5db9a3b71ba3fd3703887f9e4c894ef9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5e034ecee379e2c0ff577392f89539cee7610dfd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833835"
 ---
 # <a name="text-editor-options-dialog-box"></a>Metin Düzenleyici Seçenekleri iletişim kutusu
 
-Düzenleyici Seçenekleri **seçenekleri** iletişim kutusu görünümü ve davranışı Düzenleyicisi'nı özelleştirme yolları sağlar.
+Düzenleyici Seçenekleri **seçenekleri** iletişim kutusu Düzenleyicisi davranışını ve görünümünü özelleştirmek için yol sağlayın.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
-[Kod Düzenleyicisi özelliklerini](../../ide/writing-code-in-the-code-and-text-editor.md) Kod Düzenleyicisi'ni kullanmak için farklı yollar açıklanmaktadır.
+[Kod Düzenleyicisi özellikleri](../../ide/writing-code-in-the-code-and-text-editor.md) Kod Düzenleyicisi'ni kullanmak için farklı yollar açıklanmaktadır.

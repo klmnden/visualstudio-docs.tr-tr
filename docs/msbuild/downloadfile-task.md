@@ -1,10 +1,8 @@
 ---
 title: DownloadFile görev | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832930"
 ---
 # <a name="downloadfile-task"></a>DownloadFile görevi
 Köprü Metni Aktarım Protokolü (HTTP) kullanılarak belirtilen dosyaları indirir.
@@ -47,7 +45,7 @@ Köprü Metni Aktarım Protokolü (HTTP) kullanılarak belirtilen dosyaları ind
 |`DownloadedFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> çıkış parametresi.<br /><br /> İndirilen dosyayı belirtir.|
 |`Retries`|İsteğe bağlı `Int32` parametresi.<br /><br /> İndirmek, önceki tüm denemeler başarısız olursa denemek için kaç kez belirtir. Varsayılan olarak sıfırdır.|  
 |`RetryDelayMilliseconds`|İsteğe bağlı `Int32` parametresi.<br /><br /> Milisaniye cinsinden gerekli yeniden denemeler arasındaki gecikmeyi belirtir. Varsayılan olarak 5000.|  
-|`SkipUnchangedFiles`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, değiştirilmemiş olan dosyalar indiriliyor atlar. Varsayılan olarak `true`. `DownloadFile` Görev, bunlar aynı boyutta varsa ve aynı son değiştirme tarihine göre uzak sunucunun değiştirilmemiş dosyaları dikkate alır. <br /><br />**Not:** dosyaların son değiştirilme tarihini dosyanın yeniden yüklenmesine neden olacak tüm HTTP sunucuları belirtin.|
+|`SkipUnchangedFiles`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, değiştirilmemiş olan dosyalar indiriliyor atlar. Varsayılan olarak `true`. `DownloadFile` Görev, bunlar aynı boyutta varsa ve aynı son değiştirme tarihine göre uzak sunucunun değiştirilmemiş dosyaları dikkate alır. <br /><br />**Not:**  Dosyaların son değiştirilme tarihini dosyanın yeniden yüklenmesine neden olacak tüm HTTP sunucuları belirtin.|
 |`SourceUrl`|Gerekli `String` parametresi.<br /><br /> İndirmek için URL'yi belirtir.|
   
 ## <a name="remarks"></a>Açıklamalar  

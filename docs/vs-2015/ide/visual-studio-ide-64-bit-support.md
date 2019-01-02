@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a1dfdbfe286043a6e0010687b4ef9a7f178eb2b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1935265b05c5074d043a008aad8a150bf4398c89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852368"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 Bit Desteği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +34,12 @@ ms.locfileid: "53062683"
 
 -   [64 bit Uygulamalar için Dağıtım Önkoşulları](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Nasıl yapılır: bir Windows Installer bir 64-bit platformu için oluşturun](http://msdn.microsoft.com/en-us/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+-   [Nasıl yapılır: Bir 64-bit platformu için bir Windows Yükleyici oluşturma](http://msdn.microsoft.com/en-us/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Projeleri 64-bit uygulamalar yapılandırma
  Aşağıdaki başlıklar 64 bitlik uygulamalara oluşturulacak yapılandırma projelerini tartışır.
 
--   [Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)
+-   [Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Bir 64 bit uygulamanın hatalarını ayıklama
  Düzenle ve devam et seçenekleri çalışmaz [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] bir 64 bit Windows işletim sisteminde çalışıyor. Aşağıdaki konular, 64 bitlik uygulamalardaki hata ayıklamayı tartışır.
@@ -52,4 +51,4 @@ ms.locfileid: "53062683"
 -   [Döküm Dosyalarını Kullanma](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Nasıl Yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)
+ [Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)

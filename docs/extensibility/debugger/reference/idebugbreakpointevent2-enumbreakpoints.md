@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6015d9251d5e9cf26220d069a26a742cde89ad3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd7f82a50e8a0d4b17ec63204248ccb88544ba6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868848"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Geçerli kod konumda harekete kesme noktaları için bir numaralandırıcı oluşturur.  
@@ -41,13 +38,13 @@ int EnumBreakpoints(
   
 #### <a name="parameters"></a>Parametreler  
  `ppEnum`  
- [out] Döndürür bir [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) geçerli kod konumu ile ilişkili tüm kesme noktaları numaralandırır nesnesi.  
+ [out] Döndürür bir [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) nesnesini geçerli kod konumu ile ilişkili tüm kesme noktalarını numaralandırır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirli bir konumdaki tüm kesme noktaları belirli bir zamanda yangın (Bu koşul yerine getirilene kadar Örneğin, bir kesme noktası bir koşul ateşlenir değil).  
+ Belirli bir zamanda belirli bir konumdaki tüm kesme noktalarını yangın (Bu koşulu karşılanıncaya kadar Örneğin, bir kesme noktası koşulu ile tetiklenmez).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

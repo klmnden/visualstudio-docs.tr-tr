@@ -1,9 +1,6 @@
 ---
 title: CONTEXT_INFO_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CONTEXT_INFO_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6833e93e7947ee5013a8879c6a5fc949de9fb20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 532a2f309af612fb74a2f810b7fe445b79f813fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847971"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Bir bellek bağlamı hakkında almak için hangi bilgilerin belirtir.  
@@ -28,7 +25,7 @@ Bir bellek bağlamı hakkında almak için hangi bilgilerin belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_CONTEXT_INFO_FIELDS {   
+enum enum_CONTEXT_INFO_FIELDS {   
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  
    CIF_FUNCTIONOFFSET =  0x00000004,  
@@ -81,7 +78,7 @@ public enum enum_CONTEXT_INFO_FIELDS {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

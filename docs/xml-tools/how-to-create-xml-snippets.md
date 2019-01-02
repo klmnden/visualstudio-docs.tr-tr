@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: XML kod parçacıkları oluşturma'
+title: 'Nasıl Yapılır: XML Kod Parçacıklarını Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829108"
 ---
-# <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML kod parçacıkları oluşturma
+# <a name="how-to-create-xml-snippets"></a>Nasıl Yapılır: XML kod parçacıkları oluşturma
 
 XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir. "Kod parçacığı" adlı bir XML kod parçacığı Düzenleyici içeren yeni kod parçacıkları oluşturmak için diğer bir deyişle bir ortak kod parçacığı.
 
@@ -121,5 +120,5 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [XML kod parçacıkları](../xml-tools/xml-snippets.md)
-- [Nasıl yapılır: kullanım XML kod parçacıkları](../xml-tools/how-to-use-xml-snippets.md)
+- [Nasıl yapılır: XML kod parçacıklarını kullanma](../xml-tools/how-to-use-xml-snippets.md)
 - [Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -1,8 +1,6 @@
 ---
 title: Özel veri görselleştiriciler oluştur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 99228f525ae85743834c75aa69bf64609d0b5ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834158"
 ---
 # <a name="create-custom-data-visualizers"></a>Özel veri görselleştiriciler oluşturma 
  A *Görselleştirici* parçasıdır [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] bir değişkeni veya nesneyi, veri türüne uygun şekilde görüntüler hata ayıklayıcı kullanıcı arabirimi. Örneğin, bir HTML Görselleştirici bir HTML dizesi olarak yorumlar ve sonucu bir tarayıcı penceresinde görüneceği şekilde görüntüler. Bit eşlem Görselleştirici bir bit eşlem yapısı yorumlar ve onu gösteren grafiği görüntüler. Bazı görselleştiriciler, yanı sıra veri değiştirmenizi sağlar.
@@ -84,13 +82,13 @@ Hata ayıklanan tarafın kod kullanarak belirttiğiniz <xref:System.Diagnostics.
   
 ## <a name="see-also"></a>Ayrıca bkz.
   
- [İzlenecek yol: C# ile görselleştirici yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [İzlenecek yol: Görselleştirici yazmaC#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [İzlenecek yol: Visual Basic'te görselleştirici yazma](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [İzlenecek yol: Visual Basic'te Görselleştirici yazma](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
- [Nasıl yapılır: Görselleştirici yükleme](../debugger/how-to-install-a-visualizer.md)  
+ [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)  
   
- [Nasıl yapılır: Görselleştiriciyi test etme ve hata ayıklama](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Nasıl yapılır: Test ve hata ayıklama Görselleştirici](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Görselleştirici API başvurusu](../debugger/visualizer-api-reference.md)  
   

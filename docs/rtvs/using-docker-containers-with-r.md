@@ -3,7 +3,6 @@ title: R ve Docker kapsayıcıları
 description: Docker kapsayıcıları için R ayarlayabilir ve bunları Visual Studio ile bağlanma nasıl.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 39d28f01d6c59e91c07853b00d91680c4ce10278
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835610"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Visual Studio için R araçları ile Docker kapsayıcılarını kullanma
 

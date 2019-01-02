@@ -2,7 +2,6 @@
 title: 'CA2111: İşaretçiler görünür olmamalıdır'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a08d15ec491bb78c2d9398c8e689015c9523a3c1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1427cc61d540599b04118e6efff020f62a58bd1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839748"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: İşaretçiler görünür olmamalıdır
 
@@ -38,7 +37,7 @@ ms.locfileid: "45546830"
 ## <a name="rule-description"></a>Kural açıklaması
  <xref:System.IntPtr> ve <xref:System.UIntPtr> işaretçi türleri, yönetilmeyen bellek erişmek için kullanılır. Bir işaretçi özel, içsel veya salt okunur durumda değilse, kötü amaçlı kod işaretçinin, potansiyel olarak bellekte rastgele konumlara erişmesine izin vermek veya uygulama ya da sistem hatalarına neden değerini değiştirebilirsiniz.
 
- İşaretçi alan içeren tür güvenli erişim yapmak istiyorsanız, bkz. [CA2112: güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ İşaretçi alan içeren tür güvenli erişim yapmak istiyorsanız, bkz. [CA2112: Güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  İşaretçi salt okunur, iç veya özel hale getirerek güvenli hale getirin.
@@ -47,7 +46,7 @@ ms.locfileid: "45546830"
  İşaretçi değeri temel kullanmayın, bu kuraldan bir uyarıyı gizler.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod, ihlal ve kural karşılamak işaretçileri gösterir. Özel olmayan işaretçileri de kuralı ihlal bildirimi [CA1051: görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ Aşağıdaki kod, ihlal ve kural karşılamak işaretçileri gösterir. Özel olmayan işaretçileri de kuralı ihlal bildirimi [CA1051: Görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 

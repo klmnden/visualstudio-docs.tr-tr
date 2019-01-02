@@ -1,9 +1,6 @@
 ---
-title: VSPackages kaydetme | Microsoft Docs
-ms.custom: ''
+title: VSPackage'ları kaydetme | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, registering
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6f7e603fbc023415ad2b8ddc157f239feb53768
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4b5bedbfdeaab6fa3d7d8efe4479a8b7f3e4de4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842612"
 ---
-# <a name="registering-vspackages"></a>VSPackages kaydetme
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .pkgdef dosyalarını açıklar ve bir VSPackage bulmak için kullanır. Bir .pkgdef dosyası Aksi halde sistem kayıt defterine eklenen tüm kayıt bilgileri içerir. Yönetilen VSPackages kaynak koduna öznitelikleri ekleme ve ardından çalıştırarak kayıtlı [CreatePkgDef yardımcı programı](../../extensibility/internals/createpkgdef-utility.md) .pkgdef dosyası oluşturmak için sonuçta elde edilen derleme üzerinde.  
+# <a name="registering-vspackages"></a>VSPackage’ları Kaydetme
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage'ı bulun ve .pkgdef dosyalarını kullanır. .Pkgdef dosyası sistem kayıt defterine eklenmesi kayıt bilgileri içerir. Kaynak koduna öznitelikleri eklemek ve ardından çalışan yönetilen VSPackages kayıtlı [CreatePkgDef yardımcı programı](../../extensibility/internals/createpkgdef-utility.md) .pkgdef dosyası oluşturmak için sonuçta elde edilen derleme üzerinde.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [VS Kabuğuna VSPackage Dosya Konumunu Belirtme](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Yükleme yolu için VSPackages açıklar.  
+ VSPackage için yükleme yolunu açıklar.  
   
  [VSPackage Kaydetme ve Kaydını Kaldırma](../../extensibility/registering-and-unregistering-vspackages.md)  
- Bir VSPackage kaydedileceği açıklanmaktadır.  
+ VSPackage kaydetme açıklanmaktadır.  

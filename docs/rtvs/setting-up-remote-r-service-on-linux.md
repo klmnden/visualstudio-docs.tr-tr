@@ -3,7 +3,6 @@ title: Linux üzerinde uzak R hizmeti ayarlama
 description: Linux için Ubuntu ve Windows alt sistemi uzak R hizmeti ayarlama yapma.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835951"
 ---
 # <a name="remote-r-service-for-linux"></a>Linux için Uzak R Hizmeti
 
@@ -89,7 +88,7 @@ Her durumda, uzak bilgisayarda yüklü aşağıdaki R yorumlayıcı birine sahip
 
 #### <a name="create-a-vm"></a>VM oluşturma
 
-1. Oturum [Azure portalında](https://portal.azure.com).
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 1. Sanal makinelere gidin ve ardından **Ekle**.
 1. Kullanılabilir VM görüntüleri listede, aramak ve aşağıdakilerden birini seçin:
     - Ubuntu sunucusu: `Ubuntu Server 16.04 LTS`
@@ -170,4 +169,3 @@ Her durumda, uzak bilgisayarda yüklü aşağıdaki R yorumlayıcı birine sahip
     ```
 1. Kullanım `az container list` durumunu denetlemek için komutu. Aranacak `provisioningState`: `Succeeded`.
 1. Sağlama başarılı olursa, kapsayıcıya artık bağlanabilirsiniz. Genel IP adresi de arayın `ipAddress` docker dosyasının kimlik bilgileri ile kapsayıcıya RTVS bağlanmak için kullandığınız alanı.
-

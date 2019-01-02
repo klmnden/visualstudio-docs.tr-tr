@@ -2,7 +2,6 @@
 title: Deyimi Değerlendir Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0be6e57c0c741420006d20c0945b9b8c8b77d51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864131"
 ---
 # <a name="evaluate-statement-command"></a>Deyimi Değerlendir Komutu
-Değerlendirir ve belirli deyim görüntüler.
+Değerlendirir ve verilen deyimi görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,9 +34,9 @@ Debug.EvaluateStatement text
  `text` Gerekli. Değerlendirilecek ifade.
 
 ## <a name="remarks"></a>Açıklamalar
- Girmek için kullanılan penceresi **EvaluateStatement** komutu belirleyen bir eşittir işareti (=) bir karşılaştırma işleci veya atama işleci olarak yorumlanır.
+ Girmek için kullanılan pencere **EvaluateStatement** komut belirleyen bir eşittir işareti (=) karşılaştırma işleci veya bir atama işleci olarak yorumlanır.
 
- İçinde **komutu** penceresinde, bir eşittir işareti (=) bir karşılaştırma işleci yorumlanır. Örneğin, bunu, değişkenlerin değerleri `a` ve `b` farklı, sonra komutu
+ İçinde **komut** penceresinde, eşittir işareti (=) karşılaştırma işleci yorumlanır. Örneğin, bu nedenle, değişkenlerin değerleri `a` ve `b` farklı, sonra komutu
 
 ```cmd
 >Debug.EvaluateStatement(a=b)
@@ -45,13 +44,13 @@ Debug.EvaluateStatement text
 
  bir değeri döndürür `false`.
 
- İçinde **hemen** penceresinde, buna karşın bir eşittir işareti (=) atama işleci yorumlanır. Bu nedenle, örneğin, komutu
+ İçinde **hemen** penceresinde, aksine, eşittir işareti (=) bir atama işleci yorumlanır. Bunu, örneğin, komut
 
 ```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
- değişkene atar `a` değişkenin değerini `b`.
+ atar `a` değişkenin değerini `b`.
 
 ## <a name="example"></a>Örnek
 
@@ -64,5 +63,5 @@ Debug.EvaluateStatement text
 - [Yazdır Komutu](../../ide/reference/print-command.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)
