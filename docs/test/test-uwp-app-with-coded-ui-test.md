@@ -2,7 +2,6 @@
 title: Kodlanmış UI testi ile bir UWP uygulaması test
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842050"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Kodlanmış UI testi için test UWP uygulaması oluşturma
 
@@ -207,17 +206,17 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>S: Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?
 
-**A**: kaydedilecek seçenek UWP uygulamaları için desteklenmez.
+**A**: Kaydedilecek seçenek UWP uygulamaları için desteklenmiyor.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Kodlanmış UI testi için UWP uygulamalarım WinJS üzerinde oluşturabilirim miyim?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>S: WinJS üzerinde temel UWP uygulamalarım için kodlanmış UI testi oluşturabilir miyim?
 
 **A**: Hayır, yalnızca XAML tabanlı uygulamalar desteklenir.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?
 
-**A**: herhangi bir kod, yaptığınız değişiklikler *UIMapDesigner.cs* dosyanın üzerine kod kullanarak oluşturduğunuz her zaman **kodlanmış UI Test Oluşturucusu**. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, kopyalayın *UIMap.cs* dosya ve yeniden adlandırın. *UIMap.cs* dosya, yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir *UIMapDesigner.cs* dosya. Orijinal yönteme başvuruyu kaldırmak *CodedUITest.cs* dosya ve adlandırılan yöntem adıyla değiştirin.
+**A**: Herhangi bir kod, yaptığınız değişiklikler *UIMapDesigner.cs* dosyanın üzerine kod kullanarak oluşturduğunuz her zaman **kodlanmış UI Test Oluşturucusu**. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, kopyalayın *UIMap.cs* dosya ve yeniden adlandırın. *UIMap.cs* dosya, yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir *UIMapDesigner.cs* dosya. Orijinal yönteme başvuruyu kaldırmak *CodedUITest.cs* dosya ve adlandırılan yöntem adıyla değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

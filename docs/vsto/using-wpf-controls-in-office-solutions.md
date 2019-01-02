@@ -1,9 +1,6 @@
 ---
 title: Office çözümlerinde WPF denetimlerini kullanma
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822281"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office çözümlerinde WPF denetimlerini kullanma
 
@@ -56,11 +53,11 @@ Office çözümlerinde UI öğelerine doğrudan WPF denetimleri ekleyemezsiniz. 
 
 5.  Eylemler bölmesinde, form bölgesi ya da özel görev bölmesi projenize ekleyin:
 
-    -   Form bölgeleri için ekleme bir **Outlook Form bölgesi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    -   Form bölgeleri için ekleme bir **Outlook Form bölgesi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Eylemler bölmeleri için ekleme bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için bkz [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) ve [nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    -   Eylemler bölmeleri için ekleme bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) ve [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Özel görev bölmeleri için ekleme bir **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    -   Özel görev bölmeleri için ekleme bir **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6.  Gelen *ProjectName* **WPF kullanıcı denetimleri** sekmesinde **araç kutusu**, Eylemler bölmesinde, form bölgesi veya özel görev bölmesi için tasarımcı WPF kullanıcı denetimi sürükleyin.
 
@@ -113,11 +110,11 @@ Daha fazla mimari hakkında bilgi ve Windows Forms denetimleri ve forms, WPF den
 
 Windows Forms denetimleri ve Visual Studio formlarında tasarım zamanında WPF denetimleri ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [İzlenecek yol: yeni bir WPF içeriği Windows formlarında tasarım zamanında oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+-   [İzlenecek yol: Tasarım zamanında Windows Forms yeni bir WPF içeriği oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
 -   [İzlenecek yol: Tasarım zamanında WPF içeriği Windows Forms'ta düzenleme](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [İzlenecek yol: Stil WPF içeriği](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [İzlenecek yol: WPF içeriği için stil](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -126,6 +123,6 @@ Windows Forms denetimleri ve Visual Studio formlarında tasarım zamanında WPF 
 - [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)
 - [Özel görev bölmeleri](../vsto/custom-task-panes.md)
 - [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)
-- [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Nasıl yapılır: bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Nasıl yapılır: Word belgelerine veya Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

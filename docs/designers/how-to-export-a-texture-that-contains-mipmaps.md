@@ -1,8 +1,7 @@
 ---
-title: "Nasıl yapılır: Mipmap'leri İçeren Dokuyu Dışa Aktarma"
+title: "Nasıl Yapılır: Mipmap'leri içeren dokuyu dışa aktarma"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7bddd2eec1da77ad6f128f6010e485b7efaf1866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836643"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: mipmap'leri içeren dokuyu dışa aktarma
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl Yapılır: Mipmap'leri içeren dokuyu dışarı aktarma
 
 Görüntü içeriği ardışık düzeni, projenizin yapı evresinin parçası olarak bir kaynak görüntüden mipmap'leri oluşturabilirsiniz. Bazı efektler elde etmek için bazı durumlarda, her MIP düzeyinin görüntü içeriğini el ile belirtmeniz gerekir. Her MIP düzeyinin görüntü içeriğini el ile belirtmek ihtiyacınız kalmadığında, derleme zamanında mipmap oluşturma mipmap içeriğinin asla eşitleme dışı duruma sağlar. Çalışma zamanında mipmap'leri oluşturmanın performans maliyetini ortadan kaldırır.
 
@@ -33,14 +32,14 @@ Mipeşlem, 3D oyun veya uygulamada dokulu yüzeyler için otomatik ekran alanı 
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>Mipmap içeren bir dokuyu dışarı aktarmak için
 
-1. Temel doku ile başlayın. Varolan bir resim dosyasını yükleyin ya da açıklandığı gibi oluşturmak [nasıl yapılır: temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). Mipmap'leri desteklemek için genişliği ve yüksekliği ikinin kuvveti, örneğin, 64 x 64, 256 x 256 veya 512 x 512 aynı güç olan olan bir doku belirtin.
+1. Temel doku ile başlayın. Varolan bir resim dosyasını yükleyin ya da açıklandığı gibi oluşturmak [nasıl yapılır: Temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). Mipmap'leri desteklemek için genişliği ve yüksekliği ikinin kuvveti, örneğin, 64 x 64, 256 x 256 veya 512 x 512 aynı güç olan olan bir doku belirtin.
 
-2. Görüntü içeriği ardışık düzeni tarafından işlenir böylece yeni oluşturduğunuz doku dosyasını yapılandırarak. İçinde **Çözüm Gezgini**, oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**. Seçin **uygulamak**.
+2. Görüntü içeriği ardışık düzeni tarafından işlenir böylece yeni oluşturduğunuz doku dosyasını yapılandırarak. İçinde **Çözüm Gezgini**, oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**. **Uygula**’yı seçin.
 
    **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.
 
 3. Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Mipsüret** özelliğini **Evet (/ generatemips)**.
 
-4. Seçin **Tamam**.
+4. **Tamam**’ı seçin.
 
 Proje oluşturduğunuzda, görüntü içeriği ardışık düzeni kaynak görüntüyü çalışma biçiminden MIP düzeyleri de dahil olmak üzere, belirttiğiniz çıkış biçimine dönüştürür. Sonuç projenin çıkış dizinine kopyalanır.

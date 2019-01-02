@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: dosyaları derlemeden dışlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Dosyaları derlemeden dışlama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833290"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Nasıl yapılır: dosyaları derlemeden dışlama
+# <a name="how-to-exclude-files-from-the-build"></a>Nasıl Yapılır: Dosyaları derlemeden dışlama
 Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz. Ancak, bir dosya dizinine veya bir dizin, iç içe geçmiş bir derleme için giriş olarak dahil etmek istemediğiniz dizinler kümesi olabilir. Açıkça girişleri listesinden söz konusu dosya veya dizin dışlayabilirsiniz. Ayrıca olabilir bir dosyayı yalnızca belirli koşullar altında dahil etmek istediğiniz bir proje. Bir yapı içinde bir dosya dahil koşullar açıkça bildirebilirsiniz.  
   
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Bir dosya veya dizin işlemenin dışında bir derleme için girişler  
@@ -127,4 +125,4 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Öğeleri](../msbuild/msbuild-items.md)   
  [MSBuild](../msbuild/msbuild.md)   
- [Nasıl yapılır: derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md)   
+ [Nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md)   

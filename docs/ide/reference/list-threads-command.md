@@ -2,7 +2,6 @@
 title: İş Parçacıklarını Listele Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listthreads
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa44556be7c20c52d44ec83da1ba9d4972b4542d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1a914ffcd242626b0f519ab541c4c381a4597da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846145"
 ---
 # <a name="list-threads-command"></a>İş Parçacıklarını Listele Komutu
-İş parçacıklarının geçerli programa görüntüler.
+Geçerli programdaki iş parçacıklarının listesini görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,10 +34,10 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Arguments
  `index`
 
- İsteğe bağlı. Bir iş parçacığı geçerli iş parçacığının olmasını dizinini tarafından seçer.
+ İsteğe bağlı. Bir iş parçacığı geçerli iş parçacığı olarak dizine göre seçer.
 
 ## <a name="remarks"></a>Açıklamalar
- Belirtildiğinde, `index` bağımsız değişkeni belirtilen iş parçacığı geçerli iş parçacığı olarak işaretler. Bir yıldız işareti (*), geçerli iş parçacığının yanında listesinde görüntülenir.
+ Bu seçenek belirtildiğinde, `index` bağımsız değişkeni, belirtilen iş parçacığı geçerli iş parçacığı olarak işaretler. Bir yıldız işareti (*), geçerli iş parçacığı yanındaki listede görüntülenir.
 
 ## <a name="example"></a>Örnek
 
@@ -52,5 +51,5 @@ Debug.ListThreads [index]
 - [Ayrıştırılmış Kodu Listele Komutu](../../ide/reference/list-disassembly-command.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

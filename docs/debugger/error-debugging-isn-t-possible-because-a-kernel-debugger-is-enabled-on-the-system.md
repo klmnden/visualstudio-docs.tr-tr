@@ -1,8 +1,6 @@
 ---
-title: 'Hata: Hata ayıklama birincile&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t | Microsoft Docs'
-ms.custom: ''
+title: 'Hata: Birincile hata ayıklama&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8a0e615f1283a1aaf742a70961c26c3b6b35037
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832837"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Hata ayıklama birincile&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Birincile hata ayıklama&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t
 Yönetilen kod hata ayıklaması yaparken, aşağıdaki hata iletisini alabilirsiniz:  
   
 ```cmd

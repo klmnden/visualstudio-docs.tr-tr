@@ -1,8 +1,6 @@
 ---
 title: IntelliTrace tek başına toplayıcıyı kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820922"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>IntelliTrace tek başına toplayıcıyı kullanma
 **IntelliTrace collector** IntelliTrace Tanılama verilerini uygulamalarınız için üretim sunucularına ya da diğer ortamlarda hedef makinede Visual Studio yüklemeden ve değiştirmeden toplamanıza olanak tanır. Sistem ortam hedefleyin. IntelliTrace collector, web, SharePoint, WPF ve Windows Forms uygulamaları üzerinde çalışır. Veri toplama işiniz bittiğinde kaldırmak için toplayıcıyı silmeniz yeterlidir.
@@ -71,7 +69,7 @@ ms.locfileid: "53684869"
 
 5.  [Bir Web uygulaması ya da SharePoint uygulamasından veri topla](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     veya
+     -veya-
 
      [Yönetilen bir uygulamadan veri toplama](#BKMK_Collect_Data_from_Executables)
 

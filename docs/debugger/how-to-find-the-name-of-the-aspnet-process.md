@@ -1,8 +1,6 @@
 ---
 title: ASP.NET çalışan işlemine bulun | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836172"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>ASP.NET işleminin adını bulma
 
@@ -47,6 +45,6 @@ ms.locfileid: "51751777"
 **Ayrıca bkz:**
 
  [Çalışan bir işleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [Uzaktan hata ayıklama web uygulamaları için Önkoşullar](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [Uzaktan hata ayıklama web uygulamaları için Önkoşullar](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)   
  [Sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md)   
  [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

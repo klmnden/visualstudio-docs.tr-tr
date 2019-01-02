@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Geometri Tabanlı Gradyan Gölgelendirici Oluşturma'
+title: 'Nasıl Yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c690aa0b18969dd3a832550789a65db01d61f08e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831868"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl yapılır: geometri tabanlı gradyan gölgelendirici oluşturma
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl Yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma
 
 Bu makalede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili geometri tabanlı gradyan gölgelendirici oluşturma için nasıl kullanılacağını gösterir. Her nokta, dünya alanındaki bir nesnenin yüksekliğini tarafından sabit bir RGB renk değeri bu gölgelendiriciyi olacak şekilde ölçeklendirir.
 
@@ -62,9 +61,9 @@ Aşağıdaki resimde tamamlanmış gölgelendirici grafiği ve bir küre için u
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır. 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md)
-- [Nasıl yapılır: 3B arazi modeli oluşturma](../designers/how-to-model-3-d-terrain.md)
+- [Nasıl yapılır: Model 3B Arazi](../designers/how-to-model-3-d-terrain.md)
 - [Nasıl yapılır: Gri tonlamalı doku gölgelendiricisi oluşturma](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 - [Gölgelendirici Tasarımcısı düğümleri](../designers/shader-designer-nodes.md)

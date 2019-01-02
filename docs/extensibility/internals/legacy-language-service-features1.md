@@ -1,9 +1,6 @@
 ---
-title: Eski dil hizmeti Features1 | Microsoft Docs
-ms.custom: ''
+title: Eski dil hizmeti özellikleri1 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework]
@@ -13,71 +10,71 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c931147d20454a920e20cec61e1f6000a9b043d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0580e9a7482e6de7403de8fca6c6b33fdbaa6ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830453"
 ---
 # <a name="legacy-language-service-features"></a>Eski dil hizmeti özellikleri
-Yönetilen paket framework (MPF) dil hizmeti bir veya daha fazla destekleyebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sözdizimi vurgulama, IntelliSense ve kesme noktası doğrulama gibi özellikleri. Her bir özelliğin diğer bağımsız olarak uygulanabilir ancak tüm bir Ayrıştırıcıyı ve yalnızca bir tarayıcı gerektiren sözdizimi vurgulama dışında bir tarayıcı gerektirir.  
+Bir yönetilen paket framework (MPF) dil hizmeti bir veya daha fazla destekleyebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] söz dizimi vurgulama, IntelliSense ve kesme noktası doğrulama gibi özellikler. Her bir özellik diğerlerinden bağımsız olarak uygulanabilir ancak tüm bir ayrıştırıcı ve yalnızca bir tarayıcı gerektiren söz dizimi vurgulama dışında bir tarayıcı gerektirir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Eski Dil Hizmetinde Ayraç Eşleştirme](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- Dil çifti olarak da bilinen eşleşen Ayraç eşleştirme desteklemek için gerekli olan açıklar.  
+ Dil çifti olarak da bilinen eşleşen Ayraç eşleştirme desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Koda Açıklama Ekleme](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- Yorum oluşturma ve seçili kodunu uncommenting desteklemek için gerekli olan açıklar.  
+ Yorum ve seçili kodu uncommenting desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Özel Belge Özellikleri](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
- Bir kaynak dosyasında katıştırılmış belge özelliklerini desteklemek için gerekli olan açıklar.  
+ Kaynak dosyada gömülü bir belge özellikleri desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Ana Hat Oluşturma](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- Gizli bölgeler uygulama anahat oluşturma desteklemek için gerekli olan açıklar.  
+ Gizli bölgeler uygulaması ana hat oluşturmayı desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Kodu Yeniden Biçimlendirme](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- Yeniden biçimlendirme kodu desteklemek için gerekli olan açıklar.  
+ Kodu yeniden biçimlendirme desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Kod Parçacıkları için Destek](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- Eklenir ve düzenlenebilir kesimlerin kodunun kod parçacıkları desteklemek için gerekli olan açıklar.  
+ Eklenir ve düzenlenebilir kod parçalarını olan kod parçacıkları desteklemek için gereken açıklar.  
   
- [Eski dil hizmetindeki parametre bilgisi](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- Yöntem yazıldığı gibi bir yöntem imzası görüntüleme için IntelliSense parametre bilgisi işlemi desteklemek için gerekli olan açıklar.  
+ [Eski Dil Hizmetinde Parametre Bilgileri](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+ Yöntem yazıldığı gibi bir yöntem imzasını görüntülemek için IntelliSense parametre bilgisi işlemi desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Hızlı Bilgiler](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- Tanımlayıcı hakkında bilgi görüntülemek için IntelliSense Hızlı bilgileri işlemi desteklemek için gerekli olan açıklar.  
+ Bir tanımlayıcı hakkında bilgi görüntülemek için IntelliSense hızlı bilgi işlemi desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Üye Tamamlama](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
  Bir ad alanı üyesi bir listeden seçmek için IntelliSense üye tamamlama işlemi desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Sözcük Tamamlama](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- Kısmen yazılan sözcükler tamamlamak için IntelliSense tam sözcüğü işlemi desteklemek için gerekli olan açıklar.  
+ Kısmen yazılan sözcükleri tamamlama tam sözcük IntelliSense işlemi desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Otomatik Değişkenler Penceresi için Destek](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- Bir dil hizmeti desteklemek için yapabileceğiniz açıklanır **otomobiller** hata ayıklarken penceresi.  
+ Dil hizmeti desteklemek için neler yapabileceğinizi açıklayan **Otolar** ayıklarken penceresi.  
   
  [Eski Dil Hizmetinde Otomatik Değişkenler Penceresi için Destek](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- Nasıl kullanılacağını açıklar **gezinti çubuğu** herhangi bir tür veya üye bu görünümde gösterilen dosyasında Hızlı gezinme sağlamak için Düzenleyicisi görünümünün üstte...  
+ Nasıl kullanılacağını açıklar **gezinti çubuğu** sayfanın üst kısmında, herhangi bir tür veya üye bu görünümde gösterilen dosyasındaki gezinmenin hızlı gerçekleşmesini sağlamak için düzenleyici görünümü...  
   
  [Eski Dil Hizmetinde Söz Dizimi Renklendirmesi](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- Kaynak kodu sözdizimi vurgulama desteklemek için gerekli olan açıklar.  
+ Kaynak kodunun söz dizimi vurgulama desteklemek için gereken açıklar.  
   
  [Eski Dil Hizmetinde Kesme Noktalarını Doğrulama](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- Bir dil hizmeti bir hata ayıklayıcı dışında doğrulama kesme noktaları desteklemek için yapabileceklerinizi açıklar.  
+ Dil hizmeti bir hata ayıklayıcı dışında doğrulama kesme noktalarını desteklemek için neler yapabileceğinizi açıklayan.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Ayrıştırıcı ve yönetilen paket framework kullanan bir dil hizmetin tüm özelliklerini uygulamak için gereken tarayıcı açıklar.  
+ Yönetilen paket çerçevesini kullanan bir dil hizmetinin tüm özellikleri uygulamak için gerekli olan tarayıcı ve ayrıştırıcı açıklar.  
   
- [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Bir dil hizmeti MPF kullanarak uygulamak için gereken nedir açıklar.  
+ [Eski Dil Hizmeti Uygulama](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ Dil hizmeti MPF uygulamak için gereken açıklar.  
   
- [Eski dil hizmeti kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Bir dil MPF tabanlı hizmete kaydolmak için gereken adımları açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [Eski Dil Hizmeti Kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ Bir dil MPF tabanlı hizmetiyle kaydetmek için gerekli adımları açıklayan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [IntelliSense Kullanma](../../ide/using-intellisense.md)  
- Nasıl IntelliSense dil başvuruları erişmek kolaylaştırır açıklanmaktadır.  
+ Açıklayan nasıl IntelliSense dili başvuruları şekilde erişmek çok kolay hale getirir.  
   
- [Eski dil hizmeti uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Yönetilen paket framework (MPF) tam özellikli dil hizmeti yönetilen koda uygulanması için nasıl kullanılacağı hakkında bilgi sağlar.
+ [Eski Dil Hizmeti Uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Yönetilen kodda bir tam özellikli dil hizmeti uygulamak için yönetilen paket çerçevesini (MPF) kullanma hakkında bilgi sağlar.

@@ -3,7 +3,6 @@ title: npm paketlerini yönetme
 description: Visual Studio Node.js paket yöneticisini (npm) kullanarak paketleri yönetmenize yardımcı olur.
 ms.custom: seodec18
 ms.date: 06/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 297bad186c7f3412e56a5a59f65b82ab9cd35a03
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845960"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio'da npm paketlerini yönetme
 

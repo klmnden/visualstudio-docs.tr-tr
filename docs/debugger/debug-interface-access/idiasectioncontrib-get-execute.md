@@ -1,8 +1,6 @@
 ---
 title: Idiasectioncontrib::get_execute | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3f6f26a5ba6442dc9047a2612e032a97a95e04f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1202f5956d0ab32c8be75438077a3277b6ff1029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834012"
 ---
 # <a name="idiasectioncontribgetexecute"></a>IDiaSectionContrib::get_execute
 Bölüm kod olarak yürütülebilir olup olmadığını belirten bir bayrak alır.  
@@ -27,7 +25,7 @@ Bölüm kod olarak yürütülebilir olup olmadığını belirten bir bayrak alı
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_excute (   
+HRESULT get_excute (   
    BOOL* pRetVal  
 );  
 ```  

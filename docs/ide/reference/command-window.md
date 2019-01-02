@@ -2,7 +2,6 @@
 title: Komut Penceresi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841865"
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komut** penceresi komutları veya doğrudan diğer adlar yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir araç çubuğunda hem menü komutları hem de görünmez komutları yürütebilir. Görüntülenecek **komut** penceresinde seçin **diğer Windows** gelen **görünümü** seçin ve menü **komut penceresi**.
@@ -110,7 +109,7 @@ Kısa form anahtarları bir gruba birleştirilir ve verilen bir değer, bu değe
  İç veya dış tırnak işaretleri olup olmadığını şapka işareti aynı şekilde çalışır. Şapka işareti satırdaki son karakterse, yoksayılır. Burada gösterilen örnek deseni araması yapmayı gösteren "^ t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Yol adları boşluk için tırnak işareti kullanın
- Örneğin, boşluk içeren bir yola sahip bir dosyayı açmak istiyorsanız yolu veya boşluk içeren bir yol kesimi etrafına çift tırnak işareti yerleştirmeniz gerekir: **C:\\"Program Files"** veya **"C:\Program Files"**.
+ Örneğin, boşluk içeren bir yola sahip bir dosyayı açmak istiyorsanız yolu veya boşluk içeren bir yol kesimi etrafına çift tırnak işareti yerleştirmeniz gerekir: **C:\\"Program dosyaları"** veya **"C:\Program Files"**.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

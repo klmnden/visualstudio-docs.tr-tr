@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbols::Clone | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f7a9bbba4d63837e3abe851f92b9b182978d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d665be2d4bbebe58cc834b92283bfc14a702b34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825938"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.  
@@ -27,7 +25,7 @@ Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaraland�
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbols** ppenum  
 );  
 ```  

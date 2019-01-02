@@ -1,8 +1,6 @@
 ---
 title: Tam zamanında hata ayıklayıcı ile hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831556"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Tam zamanında hata ayıklayıcı, Visual Studio kullanarak hata ayıklama
 
@@ -107,7 +105,7 @@ Tam zamanında yerine standart Windows formu hata işleme hata ayıklamayı etki
 
 Bu örnekte, Visual Studio'da atan bir C# konsol uygulaması yapacaksınız bir [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Visual Studio'da C# konsol uygulaması oluşturma (**dosya** > **yeni** > **proje** > **Visual C#**  >  **Konsol uygulaması**) adlı *ThrowsNullException*. Visual Studio'da proje oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: Basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. Visual Studio'da C# konsol uygulaması oluşturma (**dosya** > **yeni** > **proje** > **Visual C#**  >  **Konsol uygulaması**) adlı *ThrowsNullException*. Visual Studio'da proje oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: Basit bir uygulama oluşturma](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Projeyi Visual Studio'da açıldığında açın *Program.cs* dosya. Ana() yöntemi, bir çizgi konsola yazdırır ve ardından bir NullReferenceException oluşturur aşağıdaki kodla değiştirin:
    

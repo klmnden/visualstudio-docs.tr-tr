@@ -2,7 +2,6 @@
 title: Yazı tiplerini ve renkleri değiştirme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -13,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb7e762c15b99492bda03d5300af398552cfd01
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9dba46b6593259afa8e1494e751b2859fe90a9c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832529"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl yapılır: yazı tiplerini ve renkleri Visual Studio'da değiştirme
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl Yapılır: Yazı tipleri ve renkler Visual Studio'da değiştirme
 
 IDE çerçevesinin ve araç pencerelerinin Visual Studio'da çeşitli şekillerde rengini özelleştirebilirsiniz.
 
 > [!TIP]
-> Kod düzenleyicinin renklerini değiştirme konusunda daha fazla bilgi için bkz: [nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Kod düzenleyicinin renklerini değiştirme konusunda daha fazla bilgi için bkz: [nasıl yapılır: Yazı tipleri ve renkler düzenleyicisinde değişiklik](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="change-the-color-theme-of-the-ide"></a>IDE'nin renk temasını değiştirme
 
@@ -70,4 +69,4 @@ Tüm pencereler ve iletişim kutuları IDE içindeki yazı tipini ve metin boyut
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'nun erişilebilirlik özellikleri](../ide/reference/accessibility-features-of-visual-studio.md)
-- [Nasıl yapılır: yazı tiplerini ve renkleri Düzenleyicisi'nde değiştirme](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Nasıl yapılır: Yazı tipleri ve renkler düzenleyicide Değiştir](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

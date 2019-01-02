@@ -2,7 +2,6 @@
 title: UWP uygulamalarında HTML UI yanıtlama hızını çözümleme | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843534"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Evrensel Windows uygulamaları HTML UI yanıtlama hızını çözümleme
 Bu konu, Evrensel Windows uygulamaları için bir performans aracı kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak uygulamalarınızın performans sorunlarını yalıtmak açıklar.  
@@ -69,7 +68,7 @@ Bu konu, Evrensel Windows uygulamaları için bir performans aracı kullanıcı 
 6.  Profil Oluşturucu toplanan uygulama ve verileri profil oluşturmayı durdurmak için seçin **koleksiyonu Durdur**.  
   
 ## <a name="isolate-an-issue"></a>Bir sorunu  
- Aşağıdaki bölümde, performans sorunlarını yalıtmak yardımcı olacak öneriler sunar. Uygulamasının performansını test etme bir örnek kullanarak performans sorunlarını belirleyin ve nasıl hakkında adım adım açıklama için bkz: [izlenecek yol: iyileştirme UI yanıtlama hızı (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ Aşağıdaki bölümde, performans sorunlarını yalıtmak yardımcı olacak öneriler sunar. Uygulamasının performansını test etme bir örnek kullanarak performans sorunlarını belirleyin ve nasıl hakkında adım adım açıklama için bkz: [izlenecek yol: UI yanıtlama hızı (HTML) geliştirme](/visualstudio/profiling/html-ui-responsiveness).  
   
 ###  <a name="Workflow"></a> Bir kullanıcı Arabirimi yanıt hızı sorununu gidermek  
  UI yanıtlama hızı Profiler daha etkili bir şekilde kullanmanıza yardımcı olabilecek bir önerilen iş akışı adımları sağlayın:  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   Farklı bir sayfasına gittiğinizde oluşan bir gezinti olayı. Olay için bir araç ipucu hedef sayfası URL'si gösterilir.  
   
 ###  <a name="CPUUtilization"></a> Görünüm CPU kullanımı  
- CPU kullanım grafiği aşırı CPU etkinliği olduğu süre tanımlamanızı sağlar. Uygulamanın bir süre boyunca ortalama CPU kullanımı hakkında bilgi sağlar. Bilgi aşağıdaki kategorileri göstermek için renk kodlu: **Yükleniyor**, **komut dosyası**, çöp toplama (**GC**), **stil**, **İşleme**, ve **görüntü kodu çözme**. Bu kategorileri hakkında daha fazla bilgi için bkz. [Profiler olay başvuru](#profiler-event-reference) bu konuda.  
+ CPU kullanım grafiği aşırı CPU etkinliği olduğu süre tanımlamanızı sağlar. Uygulamanın bir süre boyunca ortalama CPU kullanımı hakkında bilgi sağlar. Bilgi aşağıdaki kategorileri göstermek için renk kodludur: **Yükleme**, **komut dosyası**, çöp toplama (**GC**), **stil**, **işleme**, ve **görüntüsü kod çözme**. Bu kategorileri hakkında daha fazla bilgi için bkz. [Profiler olay başvuru](#profiler-event-reference) bu konuda.  
   
  CPU kullanım grafiği, CPU kullanımı değerleri tek bir yüzde değeri bir veya daha fazla CPU için birleştirme tüm uygulama iş parçacığı üzerinde harcanan süreyi gösterir. Birden fazla CPU kullanımda olduğunda değerin CPU kullanımı yüzde 100 aşabilir.  
   
@@ -343,8 +342,8 @@ if (performance.mark && performance.measure) {
 |Atık toplama|GC|Artık kullanımda olan nesneler için bellek toplamaya harcanan süre.|  
 |CSS hesaplama|Stil oluşturma|Hesaplanacak etkilenen tüm öğelerin stil özelliklerinin gerekli DOM'da değişiklikler yapıldı.|  
 |Düzen|Stil oluşturma|Boyutunun ve/veya konumunun hesaplanmasını etkilenen tüm öğelerin DOM'da değişiklikler yapıldı.|  
-|Boyama|işleme|DOM'da görsel değişiklikler yapıldı ve sayfasının bölümlerini yeniden oluşturmak için bir girişimde bulunuldu.|  
-|İşleme katmanı|işleme|DOM (katman olarak bilinir) bağımsız olarak işlenen bir parçasında görsel değişiklikler yapıldı ve işlenecek sayfasının bir bölümü değişiklik gerekli.|  
+|Boyama|İşleme|DOM'da görsel değişiklikler yapıldı ve sayfasının bölümlerini yeniden oluşturmak için bir girişimde bulunuldu.|  
+|İşleme katmanı|İşleme|DOM (katman olarak bilinir) bağımsız olarak işlenen bir parçasında görsel değişiklikler yapıldı ve işlenecek sayfasının bir bölümü değişiklik gerekli.|  
 |Görüntü kodu çözme|Görüntü kodu çözme|Görüntü DOM eklenmiştir ve sıkıştırmasını açın ve özgün biçiminde görüntüden bir bit eşleme kodunu çözmek için bir girişimde bulunuldu.|  
 |Çerçeve|Yok|DOM'da etkilenen tüm bölümleri sayfasının yeniden çizilmesini gerektiren görsel değişiklikler yapıldı. Gruplandırma için kullanılan bir araç tarafından oluşturulan olay budur.|  
 |Kullanıcı ölçümü|Yok|Uygulamaya özel bir senaryo kullanma ölçülmüştür `performance.measure` yöntemi. Kod çözümlemesi için kullanılan bir araç tarafından oluşturulan olay budur.|  

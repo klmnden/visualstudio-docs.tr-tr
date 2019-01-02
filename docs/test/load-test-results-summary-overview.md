@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 70447148922382cef3e5c3fb9b7ba24613033c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834301"
 ---
 # <a name="load-test-results-summary-overview"></a>Yük testi sonuçları özetine genel bakış
 
-Bir yük testi çalıştırdıktan sonra sonuçları hızlı bir şekilde anlamak için yükleme testi özetini görüntüleyebilirsiniz. Yükleme testi özetini anahtar sonuçları bir compact ve kolay okunur biçimde sağlar. Ayrıca, yük testinin yazdırabilirsiniz. Bu, proje katılımcılarına sonuçları iletişim kurarken güvenli kılar. Bir yük testi sonucu daha önce çalışan yük testinden açtığınızda, yükleme testi özetini de varsayılan görünümü şu şekildedir. Daha fazla bilgi için [nasıl yapılır: erişim yük testi sonuçlarını analiz](../test/how-to-access-load-test-results-for-analysis.md).
+Bir yük testi çalıştırdıktan sonra sonuçları hızlı bir şekilde anlamak için yükleme testi özetini görüntüleyebilirsiniz. Yükleme testi özetini anahtar sonuçları bir compact ve kolay okunur biçimde sağlar. Ayrıca, yük testinin yazdırabilirsiniz. Bu, proje katılımcılarına sonuçları iletişim kurarken güvenli kılar. Bir yük testi sonucu daha önce çalışan yük testinden açtığınızda, yükleme testi özetini de varsayılan görünümü şu şekildedir. Daha fazla bilgi için [nasıl yapılır: Çözümleme için yük testi sonuçlarına erişme](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Özet görünümü](../test/media/ltest_summaryview.png)
 
@@ -39,11 +38,11 @@ Yükleme testi özetini bölümlere ayrılmıştır. İlk bölüm Özet üst kı
 
 - Genel sonuçları
 
-- Anahtar istatistiği: en yavaş 5 sayfa
+- Anahtar istatistiği: En yavaş 5 sayfa
 
-- Anahtar istatistiği: en yavaş 5 test
+- Anahtar istatistiği: En yavaş 5 test
 
-- Anahtar istatistiği: en yavaş 5 SQL işlemi
+- Anahtar istatistiği: En yavaş 5 SQL işlemi
 
     > [!NOTE]
     > Yalnızca yük testinde SQL izlemeyi etkinse SQL İşlemleri bölmesi görüntülenir.
@@ -70,19 +69,19 @@ Test çalıştırması bilgileri bölümü, test, başlangıç ve bitiş zamanla
 
 Genel sonuçlar bölümü Özet saniye, başarısız isteklerin toplam sayısı, ortalama yanıt süresi ve ortalama sayfa süresi başına istek sayısı dahil olmak üzere test sonuçlarını içerir.
 
-## <a name="key-statistic-top-5-slowest-pages"></a>Anahtar istatistiği: en yavaş 5 sayfa
+## <a name="key-statistic-top-5-slowest-pages"></a>Anahtar istatistiği: En yavaş 5 sayfa
 
-En yavaş sayfalar bölümü yük testinde ilk 5 en yavaş sayfalar içerir. URL ve ortalama sayfa yükleme süresi her sayfada görüntülenir. Sayfalar, azalan sırada listelenir. Açmak için sayfanın URL'sini seçebileceğiniz **sayfaları** tablo ve daha fazla ayrıntı için bu sayfayı inceleyin. Daha fazla bilgi için [nasıl yapılır: web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+En yavaş sayfalar bölümü yük testinde ilk 5 en yavaş sayfalar içerir. URL ve ortalama sayfa yükleme süresi her sayfada görüntülenir. Sayfalar, azalan sırada listelenir. Açmak için sayfanın URL'sini seçebileceğiniz **sayfaları** tablo ve daha fazla ayrıntı için bu sayfayı inceleyin. Daha fazla bilgi için [nasıl yapılır: Web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 Yüzdelik dilim değeri **%95 sayfa süresi (sn)** rapor %95 sayfa bu süresini saniye cinsinden en geç tamamlandı.
 
-## <a name="key-statistic-top-5-slowest-tests"></a>Anahtar istatistiği: en yavaş 5 test
+## <a name="key-statistic-top-5-slowest-tests"></a>Anahtar istatistiği: En yavaş 5 test
 
 En yavaş 5 test yük testi içinde en yavaş testler bölümü içerir. Her test için test ve ortalama test süresi adı görüntülenir. Testler, azalan sırada listelenir. Açmak için bir test adı seçebileceğiniz **testleri** tablo ve daha fazla ayrıntı için test inceleyin. Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 Yüzdelik dilim değeri **%95 Test Süresi (sn)** rapor %95 test bu süresini saniye cinsinden en geç tamamlandı.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Anahtar istatistiği: en yavaş 5 SQL işlemi
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Anahtar istatistiği: En yavaş 5 SQL işlemi
 
 Yük testinde SQL izlemeyi etkinleştirilirse, en yavaş sorgular ilk 5 en yavaş yük testinde içerir. Her test için işlem ve süreyi adı görüntülenir. Süre (SQL Server 2005) mikrosaniye veya milisaniye (SQL Server 2000 ve öncesi) görüntülenir. Testler süreye göre azalan sırada listelenir. Açmak için bir işlem adını seçebileceğiniz **SQL İzleme** tablo ve daha fazla ayrıntı için bu işlemi denetleyin. Daha fazla bilgi için [SQL izleme verileri tablo](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
@@ -95,7 +94,7 @@ Test sonuçları bölümü, tüm testleri ve yük testi senaryolarında listesin
 
 ## <a name="page-results"></a>Sonuçlar sayfası
 
-Sayfa sonuçları bölümü, yük testinde web sayfalarının bir listesini içerir. URL, senaryo, sayı, ortalama sayfa süresi ve testin adı görüntülenir. Açmak için sayfanın URL'sini seçebileceğiniz **sayfaları** tablo ve daha fazla ayrıntı için bu sayfayı inceleyin. Daha fazla bilgi için [nasıl yapılır: web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Sayfa sonuçları bölümü, yük testinde web sayfalarının bir listesini içerir. URL, senaryo, sayı, ortalama sayfa süresi ve testin adı görüntülenir. Açmak için sayfanın URL'sini seçebileceğiniz **sayfaları** tablo ve daha fazla ayrıntı için bu sayfayı inceleyin. Daha fazla bilgi için [nasıl yapılır: Web sayfası yanıtını görüntüleme](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Daralt ve bölüm başlığının yanındaki oku seçerek bu bölümü genişletin.

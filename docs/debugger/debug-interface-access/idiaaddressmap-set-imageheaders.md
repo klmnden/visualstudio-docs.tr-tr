@@ -1,8 +1,6 @@
 ---
 title: Idiaaddressmap::set_imageheaders | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72b8b7d1531a75568e97ac4d18c85f80508f9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6593092fc155a375480f082a1f82dc53a1d851fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834145"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Kümeleri göreli sanal adres çevirisi'ni etkinleştirmek için üst görüntü.  
@@ -27,7 +25,7 @@ Kümeleri göreli sanal adres çevirisi'ni etkinleştirmek için üst görüntü
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT set_imageHeaders (   
+HRESULT set_imageHeaders (   
    DWORD cbData,  
    BYTE  data[],  
    BOOL  originalHeaders  

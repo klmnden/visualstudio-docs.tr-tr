@@ -1,9 +1,6 @@
 ---
-title: Simgenin tarama araçları destekleme | Microsoft Docs
-ms.custom: ''
+title: Sembol tarama araçlarını destekleme | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
@@ -21,37 +18,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77ba75a0b62f2b0cbac1d7c60875dd322d0feaf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841985"
 ---
-# <a name="supporting-symbol-browsing-tools"></a>Simgenin tarama araçları destekleme
-**Nesne Tarayıcısı**, **sınıf görünümü**, **çağrısı tarayıcı** ve **Bul simgesi sonuçlarınızı** araçları Visual Studio özellikleri gözatma simgesi sunar. Bu araçları simgelerin hiyerarşik ağaç görünümleri görüntülemek ve simgeleri ağacında arasındaki ilişkileri gösterir. Simgeleri ad alanları, nesneler, sınıflar, sınıf üyeleri ve çeşitli bileşenlerinde bulunan diğer dil öğeleri temsil edebilir. Visual Studio projeleri, dış bileşenler dahil [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] bileşenleri ve tür (.tlb) kitaplıkları. Daha fazla bilgi için bkz: [kodunu yapısı görüntüleme](../../ide/viewing-the-structure-of-code.md).  
+# <a name="supporting-symbol-browsing-tools"></a>Sembol Tarama Araçlarını Destekleme
+**Nesne Tarayıcısı**, **sınıf görünümü**, **çağrı tarayıcısı** ve **sembol sonuçları Bul** sembol göz atma özellikleri Visual Studio araçları sağlar. Bu araçlar, hiyerarşik ağaç görünümleri simgeleri görüntüler ve simgeler ağacında arasındaki ilişkileri göstermek. Simgeler, ad alanları, nesneler, sınıflar, sınıf üyeleri ve çeşitli bileşenlerinde bulunan diğer dil öğeleri temsil edebilir. Visual Studio projeleri, dış bileşenleri dahil [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] bileşenleri ve tür (.tlb) kitaplıkları. Daha fazla bilgi için [Structure of Code görüntüleme](../../ide/viewing-the-structure-of-code.md).  
   
-## <a name="symbol-browsing-libraries"></a>Simgenin tarama kitaplıkları  
- Dil uygulayan bileşenlerinizi sembolleri izlemek ve arabirimleri kümesi aracılığıyla Visual Studio nesne Yöneticisi'ni listeler simgelerin sağlamak kitaplıkları oluşturarak simgenin tarama Visual Studio özelliklerini genişletebilirsiniz. Bir kitaplık tarafından açıklanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> arabirimi. Visual Studio nesne Yöneticisi'ni yeni veri istekleri simgenin Tarama Araçları'ndan kitaplıklarından verileri alma ve onu düzenleme yanıt verir. Daha sonra doldurur veya Araçlar istenen verilerle güncelleştirir. Visual Studio nesne Yöneticisi ' ni bir başvuru almak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, geçirmek <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> kimliği için hizmet `GetService` yöntemi.  
+## <a name="symbol-browsing-libraries"></a>Sembol tarama kitaplıkları  
+ Bir dil uygulayan bileşenlerinizi sembolleri izlemek ve bir dizi arabirimleri aracılığıyla Visual Studio nesne yöneticisine sembolleri listesini sağlayan kitaplıkları oluşturarak sembol tarama Visual Studio özelliklerini genişletebilirsiniz. Bir kitaplığı tarafından tanımlanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> arabirimi. Visual Studio nesne Yöneticisi'ni yeni veri istekleri için Sembol tarama araçlarını kitaplıklarından veri alma ve düzenleme, yanıt verir. Daha sonra doldurur veya araçları ile istenen verileri güncelleştirir. Visual Studio nesne Yöneticisi ' ni bir başvuru almak <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, geçmesi <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> kimliği için hizmet `GetService` yöntemi.  
   
- Her kitaplık tüm kitaplıkları'nı bilgileri toplar Visual Studio nesnesi Yöneticisi ile kaydetmeniz gerekir. Bir kitaplık kaydetmek için arama <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> yöntemi. Hangi aracı isteği başlatır, bağlı olarak Visual Studio nesne Yöneticisi'ni uygun kitaplığı bulur ve verileri ister. Veri kitaplıklar arasında geçen ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi tarafından açıklanan simgelerin listelerindeki <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi.  
+ Her kitaplık tüm kitaplıklarını temel bilgileri toplar Visual Studio nesnesi Yöneticisi ile kaydetmeniz gerekir. Bir kitaplığını kaydettirmek için çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> yöntemi. Hangi aracın isteği başlatır, bağlı olarak Visual Studio nesne yöneticisine uygun kitaplığı bulur ve verileri ister. Veri kitaplıklar arasında dolaşır ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi tarafından açıklanan simgeleri listelerindeki <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne yöneticisidir kitaplıklarınızın en güncel verileri yansıtacak şekilde araçları simgenin tarama düzenli aralıklarla yenileme için sorumlu.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi, sembol tarama araçlarını kitaplıklarda da en güncel verileri yansıtacak şekilde düzenli olarak yenilenmesi için sorumludur.  
   
- Aşağıdaki diyagramda, istekleri/veri değişim süreci kitaplık ve Visual Studio nesne Yöneticisi'ni arasındaki temel öğeleri örneği içerir. Diyagramdaki arabirimleri yönetilen kod uygulamasına bir parçasıdır.  
+ Aşağıdaki diyagramda bir örneği arasında bir kitaplık ve Visual Studio nesne yöneticisine istekleri/veri değişim işlemi temel öğeleri içerir. Arabirimler diyagramdaki bir yönetilen kod uygulaması'nın bir parçasıdır.  
   
- ![Bir kitaplık nesnesi Yöneticisi arasındaki veri akışını](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
+ ![Veri akışı kitaplığı ve nesne yöneticisine arasında](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
   
- Simge listesi Visual Studio nesnesi Yöneticisi sağlamak için öncelikle kitaplığı ile Visual Studio nesne Yöneticisi'ni çağırarak kaydetmeniz gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> yöntemi. Kitaplık kaydedildikten sonra Visual Studio nesne Yöneticisi'ni kitaplığı özellikleri hakkında bazı bilgileri ister. Örneğin, kitaplık bayrakları ister ve çağırarak kategorileri desteklenen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> yöntemleri. Bu kitaplıktan araçlardan birini veri istediğinde, belirli bir noktada Nesne Yöneticisi'ni en üst düzey listesini simgeleri çağırarak ister <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> yöntemi. Yanıt, kitaplık sembolleri listesini üreten ve Visual Studio nesne Yöneticisi üzerinden kullanıma sunar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi'ni belirler çağırarak kaç öğe listede bulunan <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> yöntemi. Tüm aşağıdaki isteklerini listedeki belirli bir öğe için ilgili ve her istekte öğesi dizin numarasını sağlayın. Çağırarak türü, erişilebilirlik ve öğenin diğer özellikleri hakkında bilgi toplamak için Visual Studio nesne Yöneticisi'ni geçer <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> yöntemi.  
+ Visual Studio nesne yöneticisine simge listesi sağlamak için önce kitaplığı ile Visual Studio nesne yöneticisi çağırarak kaydetmeniz gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> yöntemi. Kitaplık kaydedildikten sonra Visual Studio nesne yöneticisine kitaplık özellikleri hakkında belirli bilgi ister. Örneğin, kitaplık bayrakları ister ve kategorileri çağırarak desteklenen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> yöntemleri. Bu kitaplıktan araçlarından biri olan veri istediğinde, belirli bir noktada nesne yöneticisine en üst düzey listesini sembolleri çağırarak ister <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> yöntemi. Yanıt, kitaplık, simge listesi üreten ve Visual Studio nesne yöneticisine kullanıma sunduğu <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi belirler çağırarak kaç öğeleri listede olan <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> yöntemi. Aşağıdaki tüm istekleri listesinde belirli bir öğe için ilgili ve her istekte öğesi dizin numarasını sağlayın. Çağırarak türü, erişilebilirlik ve öğenin diğer özellikleri hakkında bilgi toplamak için Visual Studio nesne yöneticisine geçer <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> yöntemi.  
   
- Çağırarak öğesinin adını belirler <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> yöntemi ve simge bilgilerini çağırarak istekleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> yöntemi. Simge öğe adı solunda görüntülenir ve öğe, erişilebilirlik ve diğer özellikleri türünü gösterir.  
+ Çağırarak öğenin adını belirler <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> yöntemi ve çağırarak simge bilgisi istekleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> yöntemi. Simge sol tarafında öğe adı görüntülenir ve öğe, erişilebilirlik ve diğer özellikleri türünü gösterir.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesnesi Yöneticisi çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> verilen liste öğesi genişletilemez olup olmadığını ve alt öğeleri olup belirlemek amacıyla yöntemi. UI öğenin genişletmek için bir istek gönderdiğinde, Nesne Yöneticisi'ni simgeleri alt listesini çağırarak ister <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> yöntemi. İşlem, isteğe bağlı olarak oluşturulmakta ağaç farklı kısımlarını ile devam eder.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesnesi Yöneticisi çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> belirtilen liste öğesi genişletilebilir ve alt öğelerine sahip belirlemek için yöntemi. UI öğe genişletmek için bir istek gönderirse, nesne yöneticisine alt simge listesi çağırarak istekleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> yöntemi. İşlem, isteğe bağlı olarak oluşturulmakta ağacı farklı kısımlarını ile devam eder.  
   
 > [!NOTE]
->  Yerel kod simgesi sağlayıcısı uygulamak için kullandığınız <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> arabirimleri.  
+>  Yerel kod sembol sağlayıcısı uygulamak için kullanma <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> arabirimleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: bir kitaplık nesnesi Yöneticisi ile kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Nasıl yapılır: kullanıma nesnesi Yöneticisi kitaplığı tarafından sağlanan simgelerin listeler](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Nasıl Yapılır: Bir Kitaplıktaki Sembolleri Tanımlama](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Nasıl yapılır: Nesne yöneticisine kitaplık kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
+ [Nasıl yapılır: Bir kitaplıktaki sembolleri tanımlama](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
