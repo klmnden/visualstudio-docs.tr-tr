@@ -22,7 +22,7 @@ ms.locfileid: "51000620"
 
 ## <a name="warnings-and-errors-by-category"></a>Uyarı ve hata kategorisine göre
 
-* **Sınırlar
+* **Sınırlar**
   * [MaxBranches aşıldı](#maxbranches-exceeded)
   * [MaxConstraintSolverTime aşıldı](#maxconstraintsolvertime-exceeded)
   * [MaxConditions aşıldı](#maxconditions-exceeded)
