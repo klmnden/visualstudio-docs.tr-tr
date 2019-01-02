@@ -1,9 +1,6 @@
 ---
 title: Belgelere güven verme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912365"
 ---
 # <a name="grant-trust-to-documents"></a>Belgelere güven verme
   Belge düzeyi projesi aynı uygulama düzeyi projelere güvenlik gereksinimlerine sahiptir: bir sertifika ile bildirimleri imzalama veya güven istemi tıklayarak. Ayrıca, belge veya çalışma kitabı güvenli bir konuma atanan bir dizinde yer almalıdır.  
@@ -50,5 +47,3 @@ ms.locfileid: "53648842"
  [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md)   
  [Office çözüm güvenliğinde sorunlarını giderme](../vsto/troubleshooting-office-solution-security.md)   
  [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
-  
-  

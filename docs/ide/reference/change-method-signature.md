@@ -2,7 +2,6 @@
 title: Yöntem imzası yeniden düzenleyin
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968410"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Bir yöntem imzası yeniden düzenleme değiştirme
 
@@ -30,11 +29,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** kaldırın ya da bir yöntemin parametre sırasını değiştirme sağlar.
+**Ne:** Bir yöntemin parametre sırasını değiştirmek veya kaldırmak izin verir.
 
-**Ne zaman:** taşımak veya çeşitli konumlarda kullanılmakta olan bir yöntem parametresi kaldırmak istediğiniz.
+**ne zaman:** Taşıma veya bir çeşitli yerlerde kullanılmakta olan bir yöntem parametresi kaldırmak istediğiniz.
 
-**Neden:** el ile kaldırın ve parametreleri yeniden Sırala ve ardından bu yönteme tüm çağrılarını bulun ve bunları tek tek değiştirmek, ancak hatalarına neden olabilir.  Bu yeniden düzenleme aracı görevi otomatik olarak gerçekleştirir.
+**Neden:** El ile kaldırın ve parametreleri yeniden Sırala ve ardından bu yönteme tüm çağrılarını bulun ve bunları tek tek değiştirmek, ancak hatalarına neden.  Bu yeniden düzenleme aracı görevi otomatik olarak gerçekleştirir.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

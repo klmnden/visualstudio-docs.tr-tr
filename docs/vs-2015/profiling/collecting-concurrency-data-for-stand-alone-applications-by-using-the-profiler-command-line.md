@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc20cce20c07e4fe33cf343cd0cc900a46be5586
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: e49d723db8cb444fb9e21640a2e5e9b1eecea268
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950562"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak Bağımsız Uygulamalar için Eşzamanlılık Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil olu
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Bir .NET Framework uygulaması ve profili eşzamanlılık verileri Başlat**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir .NET Framework uygulamasını başlatma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**C/C++ ve profil eşzamanlılık verilerini Başlat**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir yerel uygulamayı başlatma](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: eşzamanlılık verileri toplamak için bir .NET Framework uygulamasına Profiler ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl yapılır: bir yerel uygulama ve eşzamanlılık verileri toplama için Profiler ekleme](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Bir .NET Framework uygulaması ve profili eşzamanlılık verileri Başlat**|-   [Nasıl Yapılır: Eşzamanlılık verileri toplamak için bir .NET Framework uygulamasını başlatma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**C/C++ ve profil eşzamanlılık verilerini Başlat**|-   [Nasıl Yapılır: Eşzamanlılık verileri toplamak için bir yerel uygulamayı başlatma](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profiler eşzamanlılık verileri toplamak için bir .NET Framework uygulamasına ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Bir yerel uygulama ve eşzamanlılık verileri toplama için Profiler ekleme](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   

@@ -1,8 +1,6 @@
 ---
 title: ResumeProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c503c0fccf6cd78a01914647294a37e0b86f55e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947913"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` Yöntemi azaltır askıya alma/sürdürme sayaç için belirtilen profil oluşturma düzeyi.  
@@ -67,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>İşlev bilgisi  
- Başlık: bildirilen *VSPerf.h*  
+ Üst bilgi: Bildirilen *VSPerf.h*  
   
  İçeri aktarma kitaplığı: *VSPerf.lib*  
   

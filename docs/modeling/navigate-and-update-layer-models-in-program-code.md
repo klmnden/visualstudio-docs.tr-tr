@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948660"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Program kodunda katman modellerini gezinme ve güncelleştirme
 
-Bu makalede, öğeleri ve ilişkileri gidin ve program kodunu kullanarak katman modellerini açıklar. Kullanıcı açısından bağımlılık diyagramları hakkında daha fazla bilgi için bkz. [bağımlılık diyagramları: başvuru](../modeling/layer-diagrams-reference.md) ve [bağımlılık diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).
+Bu makalede, öğeleri ve ilişkileri gidin ve program kodunu kullanarak katman modellerini açıklar. Kullanıcı açısından bağımlılık diyagramları hakkında daha fazla bilgi için bkz. [bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md) ve [bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md).
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Bu konuda açıklanan hakkında daha genel bir cephe modelidir <xref:Microsoft.VisualStudio.GraphModel> modeli. Yazıyorsanız bir [menü komut veya hareket uzantısı](../modeling/add-commands-and-gestures-to-layer-diagrams.md), kullanın `Layer` modeli. Yazıyorsanız bir [katman doğrulama uzantısı](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), kullanımı daha kolay olan `GraphModel`.
 
@@ -136,5 +135,5 @@ public void ... (...)
 - [Bağımlılık diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Bağımlılık diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Bağımlılık diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Bağımlılık Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
-- [Bağımlılık Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)
+- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
+- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)

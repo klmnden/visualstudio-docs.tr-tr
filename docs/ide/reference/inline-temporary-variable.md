@@ -2,7 +2,6 @@
 title: Geçici bir değişken değeriyle değiştirin.
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a6fea50f3cceb907cb014d29bb46988ab07dad6c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aa329dd3fe7d01046c35be9829aed4ca4519c3e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909040"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Satır içi bir geçici değişken yeniden düzenleme
 
@@ -27,11 +26,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** geçici değişken kaldırın ve bunun yerine değeriyle değiştirme olanak tanır.
+**Ne:** Geçici bir değişkene kaldırın ve bunun yerine değeriyle değiştirin olanak sağlar.
 
-**Ne zaman:** geçici değişken kullanımı kodu anlamak zorlaştırır.
+**ne zaman:** Geçici değişkene kullanımını anlamak kod zorlaştırır.
 
-**Neden:** geçici değişken kaldırılması duruma kodu daha kolay okunabilir.
+**Neden:** Geçici bir değişkene kaldırmak kod kolay okunur hale getirebilir.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 

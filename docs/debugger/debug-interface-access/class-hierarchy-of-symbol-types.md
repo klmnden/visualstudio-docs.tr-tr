@@ -1,8 +1,6 @@
 ---
-title: Sınıf hiyerarşisi Simge türlerinin | Microsoft Docs
-ms.custom: ''
+title: Hiyerarşi Simge türlerinin sınıf | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8aeb208c4015d205efbfe018ee324a8ba0ede6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fa257de86367f2531cce5c57080cd059856fa82a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902860"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Simge Türlerinin Sınıf Hiyerarşisi
-Aşağıdaki tabloda sınıf hiyerarşisi simgesi türlerini tanımlar.  
+Aşağıdaki tabloda, sınıf hiyerarşisindeki sembol türleri açıklanmaktadır.  
   
 ## <a name="symbol-types"></a>Sembol türleri  
   
@@ -32,20 +30,20 @@ Aşağıdaki tabloda sınıf hiyerarşisi simgesi türlerini tanımlar.
 |[Enum (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Numaralandırılmış türler simgesi.|  
 |[PointerType](../../debugger/debug-interface-access/pointertype.md)|İşaretçi türleri simgesi.|  
 |[ArrayType](../../debugger/debug-interface-access/arraytype.md)|Dizi türleri simgesi.|  
-|[BaseType](../../debugger/debug-interface-access/basetype.md)|Taban türleri simgesi|  
-|[Tür Tanımı (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Diğer türleri için adları tanıtır simge.|  
+|[BaseType](../../debugger/debug-interface-access/basetype.md)|Temel türleri simgesi|  
+|[Tür Tanımı (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Tanıtan diğer türleri için adlar simge.|  
 |[BaseClass](../../debugger/debug-interface-access/baseclass.md)|Her bir kullanıcı tanımlı tür (UDT) taban sınıfı için kullanılan simge.|  
 |[Arkadaş (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/friend-debug-interface-access-sdk.md)|Arkadaş sınıfları ve arkadaş işlevleri simgesi.|  
 |[FunctionType](../../debugger/debug-interface-access/functiontype.md)|Her benzersiz işlev imzası simgesi.|  
-|[FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)|Bir işlev için her bir parametreyi simgesi.|  
-|[VTableShape](../../debugger/debug-interface-access/vtableshape.md)|Sanal tablo boyutunu simgesi.|  
+|[FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)|Her parametre için bir işlev simgesi.|  
+|[VTableShape](../../debugger/debug-interface-access/vtableshape.md)|Sanal tablonun boyutunu simgesi.|  
 |[VTable](../../debugger/debug-interface-access/vtable.md)|Sanal bir tablo simgesi.|  
-|[CustomType](../../debugger/debug-interface-access/customtype.md)|Satıcı tanımlı tür simgesi.|  
+|[CustomType](../../debugger/debug-interface-access/customtype.md)|Satıcı tanımlı bir tür simgesi.|  
 |[ManagedType](../../debugger/debug-interface-access/managedtype.md)|Meta verilerde tanımlanan bir tür simgesi.|  
 |[Boyut](../../debugger/debug-interface-access/dimension.md)|Dizi boyutları simgesi.|  
   
 > [!NOTE]
->  Her simge diğer simgelerini başvurular yanı sıra simgesi hakkındaki bilgileri tutmak özelliklere sahip olabilir. Bu özellikleri tek tek sembol konuları listelenmiştir.  
+>  Her simge, diğer sembol başvuruları yanı sıra sembol bilgilerini tutan özelliklere sahip olabilir. Bu özellikleri tek tek sembol konularında listelenmiştir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CV_access_e numaralandırması](../../debugger/debug-interface-access/cv-access-e.md)   

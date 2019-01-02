@@ -1,9 +1,6 @@
 ---
 title: PowerPoint çözümleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906052"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint çözümleri
   Visual Studio, Microsoft Office PowerPoint için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, PowerPoint otomatikleştirmek, PowerPoint özellikleri genişletmek veya PowerPoint kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906565"
 > [!NOTE]  
 >  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.  
   
- ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [: oluşturma bir eklenti Microsoft PowerPoint için bunu nasıl?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Bir eklenti için PowerPoint oluşturulsun mu? ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>PowerPoint PowerPoint nesne modelini kullanarak otomatik hale getirin.  
  PowerPoint nesne modeli, PowerPoint otomatikleştirmek için kullanabileceğiniz birçok türü ortaya çıkarır. Bu türler ortak görevleri gerçekleştirmek için kod yazmanıza olanak sağlar:  
@@ -72,7 +69,7 @@ ms.locfileid: "49906565"
 |----------|--------------------------|  
 |Özel görev bölmesi oluşturun.|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
 |Şeride özel sekmeler ekleme|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
-|Şeritteki yerleşik bir sekmeyi özel gruplar ekleyin.|[Nasıl yapılır: yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Şeritteki yerleşik bir sekmeyi özel gruplar ekleyin.|[Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  PowerPoint UI ve diğer Microsoft Office uygulamaları özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).  
   
@@ -87,5 +84,3 @@ ms.locfileid: "49906565"
  [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)   
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

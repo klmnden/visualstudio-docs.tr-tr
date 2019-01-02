@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d51eaed785932703a5eb97714be8dc7b407fc81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07c9c5d129305d8c3128a081abe8079321043a57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918959"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 Dize adları için karşılık gelen alır, özellik tanımlayıcıları verilir.  

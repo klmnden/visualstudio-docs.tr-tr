@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0c39eecadee0cad44c0e448051869b77022282e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911906"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Nasıl yapılır: kullanıcı adım testi karışım modeli gecikmesine dağıtımı Uygula
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Nasıl Yapılır: Kullanıcı adım testi karışım modeli gecikmesine dağıtımı Uygula
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, senaryonun özelliklerini test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için Yük Testi Düzenleyicisi'ni kullanabilirsiniz.
 
@@ -30,11 +29,11 @@ Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, senar
 
 Değeri **Gecikmesine Dağıtım uygulama** true veya false olarak ayarlanabilir:
 
-- **True**: değer tarafından belirtilen normal istatistiksel dağılımı gecikmeler senaryo geçerlidir **saatte kullanıcı başına testler** sütununda **Test Karışımını Düzenle** iletişim kutusu. Daha fazla bilgi için [bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: Senaryo değeri tarafından belirtilen normal istatistiksel dağılımı gecikmeler geçerlidir **saatte kullanıcı başına testler** sütununda **Test Karışımını Düzenle** iletişim kutusu. Daha fazla bilgi için [bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Örneğin, sahip olduğunuz varsayılmıştır **saatte kullanıcı başına testler** değerini **Test Karışımını Düzenle** Ayarla iletişim kutusu test için saat başına iki kullanıcı. Varsa **Gecikmesine Dağıtım uygulama** özelliği **True**, normal bir istatistiksel dağılımı testler arasındaki bekleme süresi uygulanır. Testleri saatte iki test çalışmaya devam edecektir, ancak bunlar arasında 30 dakikalık bir gecikmeyle mutlaka olmayacaktır. Dört dakika sonra 45 dakika sonra ikinci test ilk testin çalıştırabilirsiniz.
 
-- **False**: değeri için belirtilen bir hızda testler **saatte kullanıcı başına testler** sütununda **Test Karışımını Düzenle** iletişim kutusu. Daha fazla bilgi için [bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: Değeri için belirtilen bir hızda testler **saatte kullanıcı başına testler** sütununda **Test Karışımını Düzenle** iletişim kutusu. Daha fazla bilgi için [bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Örneğin, sahip olduğunuz varsayılmıştır **saatte kullanıcı başına testler** değerini **Test Karışımını Düzenle** Ayarla iletişim kutusu test için saat başına iki kullanıcı. Varsa **Gecikmesine Dağıtım uygulama** özelliği **False**, testlerinizi çalıştırdığınızda, hiçbir yaratmamış olursunuz. Test, 30 dakikada bir çalışır. Bu, saat başına iki testleri çalıştırmanızı sağlar.
 
@@ -57,6 +56,6 @@ Değeri **Gecikmesine Dağıtım uygulama** true veya false olarak ayarlanabilir
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yük testi senaryolarını düzenleme](../test/edit-load-test-scenarios.md)
-- [İzlenecek yol: Yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
+- [İzlenecek yol: Bir yük testi oluşturma ve çalıştırma](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test denetleyicileri ve test aracıları](configure-test-agents-and-controllers-for-load-tests.md)
 - [Yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md)

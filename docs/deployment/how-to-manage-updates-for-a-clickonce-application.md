@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: ClickOnce uygulaması için güncelleştirmeleri yönetme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: ClickOnce uygulaması için güncelleştirmeleri yönetme | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945905"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için güncelleştirmeleri yönetme
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulaması için güncelleştirmeleri yönetme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Uygulama güncelleştirmeleri otomatik olarak veya programlama yoluyla denetleyebilirsiniz. Bir geliştirici olarak ne zaman ve nasıl güncelleme kontrolleri gerçekleştirilir, güncelleştirmeleri zorunlu olan ve burada uygulama güncelleştirmeleri denetlemeli belirtme esneklik kullanabileceğiniz birçok seçenek mevcuttur.  
   
  Uygulama güncelleştirmeleri otomatik olarak uygulama başlamadan önce ya da belirlenen aralıklarda uygulama başladıktan sonra denetlemek için yapılandırabilirsiniz. Buna ek olarak, gerekli en düşük sürüm belirtebilirsiniz; diğer bir deyişle, kullanıcının sürüm gereken sürümden düşükse bir güncelleştirmenin yüklü olduğu.  
@@ -103,7 +101,7 @@ ms.locfileid: "44283658"
   
 5.  İçinde **güncelleştirme konumu** alanına, aşağıdaki biçimi kullanarak tam bir URL ile güncelleştirme konumu *http://Hostname/ApplicationName*, ya da UNC yolu biçiminde  *\\\Server\ ApplicationName*, veya **Gözat** güncelleştirme konumu için Gözat düğmesini. Uygulamanın güncelleştirilmiş bir sürümünü kendisi için nerede görüneceğini güncelleştirme konumdur.  
   
-6.  Güncelleştirmeleri denetlemek için kullanıcıları seçip bir Windows formunda bir düğme, menü öğesi veya diğer kullanıcı arabirimi öğesi oluşturun. Bu öğenin olay işleyicisinden denetlemek ve güncelleştirmeleri yüklemek için bir yöntemini çağırın. Bu tür bir yöntem için Visual Basic ve Visual C# koduna ilişkin bir örnek bulabilirsiniz [nasıl yapılır: ClickOnce dağıtım API'sini kullanarak program aracılığıyla uygulama güncelleştirmelerini denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Güncelleştirmeleri denetlemek için kullanıcıları seçip bir Windows formunda bir düğme, menü öğesi veya diğer kullanıcı arabirimi öğesi oluşturun. Bu öğenin olay işleyicisinden denetlemek ve güncelleştirmeleri yüklemek için bir yöntemini çağırın. Visual Basic ve Visual örneği bulabilirsiniz C# benzer bir yöntem için kod [nasıl yapılır: ClickOnce dağıtım API'sini kullanarak program aracılığıyla uygulama güncelleştirmelerini denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Uygulamanızı oluşturun.  
   
@@ -112,5 +110,5 @@ ms.locfileid: "44283658"
  [Uygulama güncelleştirmeleri iletişim kutusu](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [ClickOnce güncelleştirme stratejisini seçin](../deployment/choosing-a-clickonce-update-strategy.md)   
  [ClickOnce uygulamalara yayımlama](../deployment/publishing-clickonce-applications.md)   
- [Nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Nasıl yapılır: ClickOnce dağıtım API'sini kullanarak program aracılığıyla uygulama güncelleştirmelerini denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

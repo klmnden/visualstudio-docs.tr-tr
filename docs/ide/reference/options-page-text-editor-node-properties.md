@@ -2,7 +2,6 @@
 title: Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935677"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **metin düzenleyici** kategori `DTE.Properties("TextEditor", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
@@ -56,7 +55,7 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
 |WordWrap|Get/Set (Boole)|Görünümün, uzun satırları sözcük sınırlarından kaydırıp kaydırmayacağını belirler. Bu ayar `true` neden `VirtualSpace` özellik ayarlamak için (Bu listede) öğesinin `false`.|
 |WordWrapGlyphs|Get/Set (Boole)|Satırın sonunda bir karakter (glif) görüntüler; bu da satırın bir sonraki satıra kaydırılacağını gösterir.|
 |EnableLeftClickForURLs|Get/Set (Boole)|Düzenleyicinin URL'lerin altını çizip çizmeyeceğini ve sistem kayıtlı web tarayıcısında URL'ye atlama için tek sol tıklamanın belirler.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Girintilendirme stilini belirler: Varsayılan, Akıllı veya Yok.|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Girintilendirme stilini belirler: Varsayılan, akıllı veya yok.|
 |TabSize|Get/Set (Long)|Bir sekmeye eşit gelen boşluk sayısını temsil eder. 1 ila 60 aralığı (sınırlar dahil) dışında bir tamsayı ayarlanması hata verir.|
 |InsertTabs|Get/Set (Boole)|Varsa `True`, girintilendirme yaparken sekme karakterleri kullanılır.|
 |IndentSize|Get/Set (Long)|Tek bir girinti düzeyine eşit boşluk sayısını temsil eder. 1 ila 60 aralığı (sınırlar dahil) dışında bir tamsayı değeri ayarlanması hata verir.|

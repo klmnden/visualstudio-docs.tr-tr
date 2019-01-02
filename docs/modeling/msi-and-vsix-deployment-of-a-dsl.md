@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938192"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
 Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. Visual Studio, hedef bilgisayarda zaten yüklü olmalıdır.
@@ -24,7 +23,7 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
 
 |Yöntem|Yararları|
 |-|-|
-|VSX (Visual Studio uzantısı)|Dağıtımı çok kolaydır: kopyalama ve yürütme **.vsix** DslPackage proje dosyası.<br /><br /> Daha fazla bilgi için [yükleme ve bir DSL VSX kullanarak kaldırma](#Installing).|
+|VSX (Visual Studio uzantısı)|Dağıtımı çok kolaydır: Kopyala ve yürütme **.vsix** DslPackage proje dosyası.<br /><br /> Daha fazla bilgi için [yükleme ve bir DSL VSX kullanarak kaldırma](#Installing).|
 |MSI (yükleyici dosyası)|-Visual Studio DSL dosyasına çift tıklayarak açın izin verir.<br />-DSL dosya türü hedef bilgisayardaki bir simge ilişkilendirir.<br />-Bir XSD (XML Şeması) DSL dosya türü ile ilişkilendirir. Dosya Visual Studio'ya yüklendiğinde bu uyarıları engeller.<br /><br /> Bir MSI oluşturmak için çözümünüze bir kurulum projesi eklemeniz gerekir.<br /><br /> Daha fazla bilgi için [DSL bir MSI dosyası kullanarak dağıtımı](#msi).|
 
 ## <a name="Installing"></a> Yükleme ve bir DSL VSX kullanarak kaldırma

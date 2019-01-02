@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme'
+title: 'Nasıl Yapılır: Alana Özgü Dili Yeni Sürüme Geçirme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b53d604fdf9c18a2e5552d787f7a69ff4c92df2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955074"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl Yapılır: Alana Özgü Dili Yeni Sürüme Geçirme
 Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] sürümünden [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , ile dağıtılan [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
 
  Geçiş Aracı bir parçası olarak sağlanan [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]. Araç, Visual Studio projeleri ve çözümleri kullanın veya DSL araçları tanımlamak dönüştürür.

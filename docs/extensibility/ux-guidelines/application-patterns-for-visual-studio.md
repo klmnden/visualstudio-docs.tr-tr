@@ -1,9 +1,6 @@
 ---
 title: Visual Studio için uygulama desenleri | Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898585"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio için uygulama desenleri
 ##  <a name="BKMK_WindowInteractions"></a> Pencere etkileşimleri  
@@ -186,15 +183,15 @@ Belge düzenleyicileri birkaç farklı temel türleri vardır ve her bir aynı t
 
 -   **Tasarım yüzeyine:** WPF forms Tasarımcısı, Windows forms  
 
--   **İletişim kutusu stilinde Düzenleyicisi:** bildirim Tasarımcısı, proje özellikleri  
+-   **İletişim kutusu stilinde bir düzenleyici:** Bildirim Tasarımcısı, proje özellikleri  
 
 -   **Model Tasarımcısı:** iş akışı Tasarımcısı, codemap, mimari diyagramı, ilerleme  
 
 Belge de kullandığınız birkaç Düzenleyicisi olmayan türleri de vardır. Belgeler kendilerini düzenleme yapmadığınız sırada bunlar belge pencereleri için standart etkileşimlerini izlemeniz gerekir.  
 
--   **Raporları:** IntelliTrace raporu, Hyper-V rapor profil oluşturucusu raporu  
+-   **Raporları:** IntelliTrace rapor, Hyper-V rapor, profil oluşturucusu raporu  
 
--   **Pano:** tanılama Merkezi  
+-   **Pano:** Tanılama Hub'ı  
 
 #### <a name="text-based-editors"></a>Metin tabanlı düzenleyiciler  
 
@@ -427,9 +424,9 @@ Olumlu ve olumsuz yönleri için sekmesinde benzeri denetimlerde UI katmanlama f
 
 | Geçiş mekanizması | Avantajlar ve uygun kullanın | Olumsuz ve uygunsuz kullanım |  
 | --- | --- | --- |  
-| Sekme denetimi | İletişim kutusu sayfaları ilgili kümeleri halinde gruplandırıp<br /><br />Beşten az (veya tek bir satırda arasında iletişim uyan sekme sayısı) için yararlı iletişim kutusunda ilgili denetimlerin sayfaları<br /><br />Sekme etiketleri kısa olmalıdır: içeriği kolayca belirleyebilirsiniz bir veya iki sözcük<br /><br />Ortak bir sistem iletişim kutusu stili<br /><br />Örnek: **dosya Gezgini &gt; öğesi özellikleri** | Tanımlayıcı kısa etiketler yapmak zor olabilir<br /><br />Genellikle bir iletişim kutusunda beş sekme geçmiş ölçeklendirilemez<br /><br />Bir satır (alternatif katmanlama tekniği kullanın) için çok fazla sekmeleri varsa uygun<br /><br />Genişletilebilir değil |  
+| Sekme denetimi | İletişim kutusu sayfaları ilgili kümeleri halinde gruplandırıp<br /><br />Beşten az (veya tek bir satırda arasında iletişim uyan sekme sayısı) için yararlı iletişim kutusunda ilgili denetimlerin sayfaları<br /><br />Sekme etiketleri kısa olmalıdır: içeriği kolayca belirleyebilirsiniz bir veya iki sözcük<br /><br />Ortak bir sistem iletişim kutusu stili<br /><br />Örnek: **Dosya Gezgini &gt; öğesi özellikleri** | Tanımlayıcı kısa etiketler yapmak zor olabilir<br /><br />Genellikle bir iletişim kutusunda beş sekme geçmiş ölçeklendirilemez<br /><br />Bir satır (alternatif katmanlama tekniği kullanın) için çok fazla sekmeleri varsa uygun<br /><br />Genişletilebilir değil |  
 | Gezinti kenar çubuğu | Daha fazla kategori sekmeleri daha uyum basit geçiş cihaz<br /><br />Düz liste kategorileri (hiyerarşi yok)<br /><br />Genişletilebilir<br /><br />Örnek: **Özelleştir... &gt; Komut ekleme** | Üçten grubu olması halinde yatay boşluk olmayan bir iyi kullanımı<br /><br />Görev daha iyi bir açılan uygun olabilir |  
-| Ağaç denetimi | Sınırsız kategorileri sağlar<br /><br />Gruplandırma ve/veya kategori hiyerarşisi sağlar<br /><br />Genişletilebilir<br /><br />Örnek: **Araçları &gt; seçenekleri** | Yoğun bir şekilde iç içe Hiyerarşiler aşırı yatay kaydırma neden olabilir<br /><br />Visual Studio bir overabundance ağaç görünümlerini sahiptir. |  
+| Ağaç denetimi | Sınırsız kategorileri sağlar<br /><br />Gruplandırma ve/veya kategori hiyerarşisi sağlar<br /><br />Genişletilebilir<br /><br />Örnek: **Araçlar &gt; seçenekleri** | Yoğun bir şekilde iç içe Hiyerarşiler aşırı yatay kaydırma neden olabilir<br /><br />Visual Studio bir overabundance ağaç görünümlerini sahiptir. |  
 | Sihirbazı | Görev tamamlama ile görev tabanlı, sıralı adımlar kullanıcı göstererek yardımcı olur: üst düzey bir görev Sihirbazı'nı temsil eder ve tek tek bölmeleri genel görevi tamamlamak için gereken görevleri temsil eder<br /><br />Görevin ne zaman kullanıcı Aksi takdirde birden çok düzenleyicileri kullanır ve bir görevi tamamlamak için windows aracı gerekirdi olarak UI sınırları geçtiğinde yararlı<br /><br />Yararlı görev dallanma gerektirir.<br /><br />Yararlı görev adımları arasındaki bağımlılıkları içeriyor<br /><br />Yararlı bir karar çatal birkaç benzer görevlerle farklı benzer iletişim kutuları sayısını azaltmak için bir iletişim kutusunda sunulabilir | Bir sıralı iş akışı gerektirmez herhangi bir görev için uygun<br /><br />Kullanıcılar kısası ve çok çok adımlı bir sihirbaz tarafından kafanız dönüşebilir.<br /><br />Sihirbazlar kendiliğinden ekran gerçek boyutunuzu sınırlı |  
 
 ##### <a name="hallways-or-dashboards"></a>Koridorlarda veya panolar  
@@ -470,11 +467,11 @@ Projeleri genellikle sınıflandırmak (kalıcı depolama alanında proje öğel
 
 Sürükle ve bırak açısından bakıldığında, aşağıdaki özelliklere her türde bir proje içinde uygulanması gereken **Çözüm Gezgini**:  
 
--   **Proje başvurusu tabanlı:** anahtar projenin'ın depolama alanındaki bir öğeye bir başvuru geçici olarak sürükleyerek noktasıdır. Başvuru-tabanlı bir proje bir taşıma işlemi için bir kaynak olarak davranırken, yalnızca proje öğesine başvuruyu kaldırmanız gerekir. Öğe sabit sürücüden gerçekten silinmemelidir. Başvuru-tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, özgün kaynak öğeye bir başvuru öğesinin özel bir kopyasını yapmadan eklemelisiniz.  
+-   **Proje başvurusu tabanlı:** Proje'nın depolama alanındaki bir öğeye bir başvuru geçici olarak sürükleyerek anahtar noktasıdır. Başvuru-tabanlı bir proje bir taşıma işlemi için bir kaynak olarak davranırken, yalnızca proje öğesine başvuruyu kaldırmanız gerekir. Öğe sabit sürücüden gerçekten silinmemelidir. Başvuru-tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, özgün kaynak öğeye bir başvuru öğesinin özel bir kopyasını yapmadan eklemelisiniz.  
 
--   **Dizin tabanlı proje:** bir Sürükle ve bırak açısından bakıldığında, proje başvurusu yerine fiziksel öğenin sürüklemekte olduğu. Dizin tabanlı bir proje için bir taşıma işlemi kaynağı olarak davranırken sabit sürücüyü fiziksel silmenizi yanı sıra projeden kaldırma yukarı bitmelidir. Dizin tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, hedef konumunda kaynak öğenin bir kopyasını olmanız gerekir.  
+-   **Dizin tabanlı proje:** Bir Sürükle ve bırak açısından bakıldığında, başvuru yerine fiziksel bir öğe proje sürükleyerek. Dizin tabanlı bir proje için bir taşıma işlemi kaynağı olarak davranırken sabit sürücüyü fiziksel silmenizi yanı sıra projeden kaldırma yukarı bitmelidir. Dizin tabanlı bir proje taşıma (veya kopyalama) işlemi için hedef olarak davranırken, hedef konumunda kaynak öğenin bir kopyasını olmanız gerekir.  
 
--   **Karma hedef proje:** doğasını (depolama alanındaki bir öğeye bir başvuru) ya da öğe sürüklenen öğe üzerinde bir Sürükle ve bırak açısından bakıldığında, bu tür bir proje davranışını temel alır. Başvurular ve fiziksel öğeleri için doğru davranışı üzerinde açıklanmıştır.  
+-   **Karma hedef proje:** Bir Sürükle ve bırak açısından bakıldığında, bu tür bir proje davranışını doğasını (depolama alanındaki bir öğeye bir başvuru) ya da öğe sürüklenen öğe üzerinde temel alır. Başvurular ve fiziksel öğeleri için doğru davranışı üzerinde açıklanmıştır.  
 
 Projesinde yalnızca bir tür varsa **Çözüm Gezgini**, sürükle ve bırak işlemleri basit olabilir. Her proje sistemi kendi sürükle-bırak davranışı tanımlama yeteneği olduğundan, tahmin edilebilir bir kullanıcı deneyimi sağlamak için (Windows Explorer sürükle-bırak davranışı göre) belirli yönergeleri izlenmesi gerekir:  
 
@@ -508,7 +505,7 @@ Kullanıcının her zaman bir öğenin seçilmesi, hedef konuma sürükleyerek v
 #### <a name="reference-based-projects"></a>Başvuru tabanlı projeler  
  Aşağıdaki tabloda, hedef başvurulan tabanlı projeler için basılan kaynak öğesi ve değiştirici tuşları yapısına göre gerçekleştirilmelidir sürükle ve bırak (yanı sıra Kes/kopyala/yapıştır) işlemleri özetlenmektedir:  
 
-| Değiştirici | Kategori | Kaynak öğe: başvuru/bağlantı | Kaynak öğe: fiziksel öğe veya dosya sistemi (`CF_HDROP`) |  
+| Değiştirici | Kategori | Kaynak öğe: Başvuru/bağlantı | Kaynak öğe: Fiziksel bir öğe veya dosya sistemi (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Herhangi bir değiştiricisi | Eylem | Taşıma | Bağlantı |  
 | Herhangi bir değiştiricisi | Hedef | Özgün öğe başvurusu ekler | Özgün öğe başvurusu ekler |  
@@ -540,7 +537,7 @@ Kullanıcının her zaman bir öğenin seçilmesi, hedef konuma sürükleyerek v
 Aşağıdaki tabloda, hedef dizin tabanlı projeler için basılan kaynak öğesi ve değiştirici tuşları yapısına göre gerçekleştirilmelidir sürükle ve bırak (yanı sıra Kes/kopyala/yapıştır) işlemleri özetlenmektedir:  
 
 
-| Değiştirici | Kategori | Kaynak öğe: başvuru/bağlantı | Kaynak öğe: fiziksel öğe veya dosya sistemi (`CF_HDROP`) |
+| Değiştirici | Kategori | Kaynak öğe: Başvuru/bağlantı | Kaynak öğe: Fiziksel bir öğe veya dosya sistemi (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Herhangi bir değiştiricisi | Eylem | Taşıma | Taşıma |
 | Herhangi bir değiştiricisi | Hedef | Hedef konum öğesine kopyalar | Hedef konum öğesine kopyalar |
@@ -566,7 +563,7 @@ Aşağıdaki tabloda, hedef dizin tabanlı projeler için basılan kaynak öğes
 #### <a name="mixed-target-projects"></a>Karma hedef projeleri  
 Aşağıdaki tabloda, karma hedef projeler için basılan kaynak öğesi ve değiştirici tuşları yapısını temel gerçekleştirilmelidir sürükle ve bırak (yanı sıra Kes/kopyala/yapıştır) işlemleri özetlenmektedir:  
 
-| Değiştirici | Kategori | Kaynak öğe: başvuru/bağlantı | Kaynak öğe: fiziksel öğe veya dosya sistemi (`CF_HDROP`) |  
+| Değiştirici | Kategori | Kaynak öğe: Başvuru/bağlantı | Kaynak öğe: Fiziksel bir öğe veya dosya sistemi (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Herhangi bir değiştiricisi | Eylem | Taşıma | Taşıma |
 | Herhangi bir değiştiricisi | Hedef | Özgün öğe başvurusu ekler | Hedef konum öğesine kopyalar |

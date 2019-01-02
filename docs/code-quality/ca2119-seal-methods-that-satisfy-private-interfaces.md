@@ -2,7 +2,6 @@
 title: 'CA2119: Özel arabirimleri karşılayan yöntemleri mühürleyin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa207e85bcb7054b1a7b91ac8dd29ff45fe1091a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 48fbe9e56c1286acc2eb948d0ec692f441bd1975
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920741"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Özel arabirimleri karşılayan yöntemleri mühürleyin
 

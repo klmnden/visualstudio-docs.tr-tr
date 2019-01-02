@@ -1,9 +1,6 @@
 ---
 title: BPREQI_FIELDS90 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3412b0a27704ec0ddd3d77f296b3fa73976bf359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b1fd893440e4659815a4915edef5a36c9c14aa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851962"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 Alınacak bir kesme noktası isteği bilgilerini belirtin. geçerli değerler numaralandırır. Bu numaralandırma genişletir [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) sabit listesi.  
@@ -123,9 +120,9 @@ public enum enum_BPREQI_FIELDS90
  Tüm alanlar için belirtir `BP_REQUEST_INFO2` yapısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Msdbg90.h  
+ Üst bilgi: Msdbg90.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

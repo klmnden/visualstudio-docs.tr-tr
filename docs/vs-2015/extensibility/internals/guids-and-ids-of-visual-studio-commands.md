@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e263678cca7e85993fefd01866352cafc83a74c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 04d79b78642310b636c6f9e7dd90f86d4f43e1ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903004"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio Komutlarının GUID’leri ve Kimlikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +37,7 @@ Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve 
 
 #### <a name="to-locate-a-command-definition"></a>Bir komut tanımı bulunamadı
 
-1. Aşağıdaki dosyaları Visual Studio'da açın *Visual Studio SDK yükleme yolunu*\VisualStudioIntegration\Common\Inc\ klasör: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.
+1. Aşağıdaki dosyaları Visual Studio'da açın *Visual Studio SDK yükleme yolunu*\VisualStudioIntegration\Common\Inc\ klasörü: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct Venusmenu.vsct.
 
     Çoğu Visual Studio komutları SharedCmdDef.vsct ve ShellCmdDef.vsct tanımlanır. Hata ayıklayıcıyı ilgilidir komutları VsDbgCmdUsed.vsct tanımlar ve Web geliştirme özgü komutlar Venusmenu.vsct tanımlar.
 

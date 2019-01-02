@@ -1,8 +1,6 @@
 ---
 title: RC görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915594"
 ---
 # <a name="rc-task"></a>RC görevi
 Microsoft Windows Kaynak Derleyicisi aracı sarmalar *rc.exe*. **RC** görev derler imleçler, simgeler, bit eşlemler, iletişim kutuları ve yazı tipleri gibi kaynakları bir kaynağa (*.res*) dosyası. Daha fazla bilgi için [kaynak derleyici](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).

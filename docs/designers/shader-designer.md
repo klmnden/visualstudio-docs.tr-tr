@@ -2,7 +2,6 @@
 title: Gölgelendirici Tasarımcısı
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968546"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 
@@ -33,9 +32,9 @@ Kullanabileceğiniz **gölgelendirici Tasarımcısı** üst düzey gölgelendiri
 |Biçim Adı|Dosya Uzantısı|Desteklenen işlemler (görüntüleme, düzenleme, dışarı aktarma)|
 |-----------------| - | - |
 |Yönlü graf gölgelendirici dili|*.dgsl*|Görüntüle, Düzenle|
-|HLSL gölgelendirici (kaynak kodu)|*.hlsl*|Dışarı aktarma|
-|HLSL gölgelendirici (bayt)|*.CSO*|Dışarı aktarma|
-|C++ üst bilgisi (HLSL bayt dizesi)|*.h*|Dışarı aktarma|
+|HLSL gölgelendirici (kaynak kodu)|*.hlsl*|Dışarı Aktarma|
+|HLSL gölgelendirici (bayt)|*.CSO*|Dışarı Aktarma|
+|C++ üst bilgisi (HLSL bayt dizesi)|*.h*|Dışarı Aktarma|
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
@@ -98,7 +97,7 @@ Bu tabloda öğeleri açıklar **gölgelendirici Tasarımcısı modu** araç çu
 |**Düzlem ile Önizleme**|Etkin olduğunda, bir uçak modelinin gölgelendiricinin önizlemesini görüntülemek için kullanılır. Aynı anda yalnızca bir önizleme şekli etkinleştirilebilir.|
 |**Araç Kutusu**|Alternatif olarak gösterir veya gizler **araç kutusu**.|
 |**Özellikler**|Alternatif olarak gösterir veya gizler **özellikleri** penceresi.|
-|**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Dışarı aktarma**: gölgelendiriciyi çeşitli biçimlerde verilmesini sağlar.<br /><br /> **Dışarı aktarma olarak**: Gölgelendirici ya da HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarır. Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik motorları**: tasarım yüzeyinde görüntülemek için kullanılan Oluşturucu seçimini etkinleştirir.<br /><br /> **D3d11 ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**: kullanan Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için WARP).<br /><br /> **Görünüm**: Gölgelendirici Tasarımcısı hakkında ek bilgi sağlar.<br /><br /> **Kare hızı**: etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde bulunan geçerli kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. Bu seçenek, etkinleştirdiğinizde kullanışlıdır **gerçek zamanlı işleme modu** seçeneği.|
+|**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Dışarı aktarma**: Gölgelendirici çeşitli biçimlerde verilmesini sağlar.<br /><br /> **Dışarı Aktar**: Gölgelendirici ya da HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarır. Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik motorları**: Tasarım yüzeyinde görüntülemek için kullanılan Oluşturucu seçimini etkinleştirir.<br /><br /> **D3d11 ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Görünüm**: Gölgelendirici Tasarımcısı hakkında ek bilgi sağlar.<br /><br /> **Kare hızı**: Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde bulunan geçerli kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. Bu seçenek, etkinleştirdiğinizde kullanışlıdır **gerçek zamanlı işleme modu** seçeneği.|
 
 > [!TIP]
 > Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.
@@ -147,12 +146,12 @@ Aşağıdaki tabloda, gölgelendirici değiştirebileceğiniz parametreler göst
 
 |Parametre|Özellikler|
 |---------------|----------------|
-|**Doku 1** - **doku 8**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Filename**: Bu doku kaydı ile ilişkili doku dosyasının tam yolu.|
-|**Malzeme ortam**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: nedeniyle dolaylı - veya ortam - Aydınlatmanın geçerli pikselin yayınık rengi.|
-|**Malzeme Yayınık**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: geçerli pikselin doğrudan aydınlatmayı nasıl pürüzlü açıklayan bir renk.|
-|**Malzeme Yayımlatıcı**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: kendi kendine sağlanan aydınlatma nedeniyle geçerli pikselin renk katkısı.|
-|**Malzeme Yansımalı**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: geçerli pikselin doğrudan aydınlatmayı nasıl yansıttığını açıklayan bir renk.|
-|**Malzeme Yansımalı güç**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: geçerli pikselin Yansımalı vurgular yoğunluğunu tanımlayan üs.|
+|**Doku 1** - **doku 8**|**Erişim**:                             **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Filename**: Bu doku kaydı ile ilişkili doku dosyasının tam yolu.|
+|**Malzeme ortam**|**Erişim**:                             **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Dolaylı - veya ortam - aydınlatma nedeniyle geçerli pikselin yayınık rengi.|
+|**Malzeme Yayınık**|**Erişim**: **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**:  Geçerli pikselin doğrudan aydınlatmayı nasıl pürüzlü açıklayan bir renk.|
+|**Malzeme Yayımlatıcı**|**Erişim**:                              **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Kendi kendine sağlanan aydınlatma nedeniyle geçerli pikselin renk katkısı.|
+|**Malzeme Yansımalı**|**Erişim**:                              **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Geçerli pikselin doğrudan aydınlatmayı nasıl yansıttığını açıklayan bir renk.|
+|**Malzeme Yansımalı güç**|**Erişim**:                             **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Geçerli pikselin Yansımalı vurgular yoğunluğunu tanımlayan üs.|
 
 #### <a name="time-based-effects"></a>Zamana bağlı etkileri
 
@@ -172,7 +171,7 @@ Uygulamanızda bir gölgelendirici kullanmadan önce DirectX anlayan bir biçimd
 
 Gölgelendiricileri HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarabilirsiniz. HLSL kaynak kodu içeren bir metin dosyasına dışarı bir *.hlsl* dosya adı uzantısı. Gölgelendirici bytecode'una olabilir ya da olan bir ham ikili dosyası dışarı bir *.cso* dosya adı uzantısı veya C++ üst bilgisi (*.h*) bir diziye gölgelendirici bytecode'una kodlar dosya.
 
-Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).
+Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları
 

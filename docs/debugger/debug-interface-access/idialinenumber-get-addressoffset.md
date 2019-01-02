@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber::get_addressoffset | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96accb2f62c2a92b6e48eb9d8a70434381ad9cfe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2485c77313376b6f4a9a1e7dcbc28165302d41ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913236"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 Bir blok başladığı bellek adresi uzaklık bölümünü alır.  
@@ -27,7 +25,7 @@ Bir blok başladığı bellek adresi uzaklık bölümünü alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,8 +1,7 @@
 ---
-title: 'CA1305: IFormatProvider belirtme'
+title: 'CA1305: Iformatprovider belirtin'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -18,14 +17,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954243"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider belirtme
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: Iformatprovider belirtin
 
 |||
 |-|-|
@@ -48,9 +47,9 @@ Bu kural yoksayılıyor olarak belgelenmiş olan .NET Framework yöntemlere yap�
 
 Olduğunda bir <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> veya <xref:System.IFormatProvider> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET Framework üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
 
-- Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Bir değeri depolanan ve (bir dosyadan veya veritabanından kalıcı) yazılım tarafından erişilen, sabit kültür kullanın. Bkz: <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Bir değeri depolanan ve (bir dosyadan veya veritabanından kalıcı) yazılım tarafından erişilen, sabit kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
 - Hedef değerin bilmiyorsanız, veri tüketici sahip veya sağlayıcıyı kültür.
 
@@ -83,7 +82,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>İlgili kuralları
 
-- [CA1304: CultureInfo belirtin](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: CultureInfo belirt](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

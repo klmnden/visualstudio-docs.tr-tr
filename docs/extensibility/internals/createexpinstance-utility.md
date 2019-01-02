@@ -1,9 +1,6 @@
 ---
 title: Createexpınstance yardımcı programı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f7f52f45023106d3e504258a538823c1c8fbb4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961108"
 ---
 # <a name="createexpinstance-utility"></a>Createexpınstance yardımcı programı
 Kullanım **Createexpınstance** oluşturmak, sıfırlama veya Visual Studio'nun deneysel örneği silmek için yardımcı program. Deneysel örneğinde hata ayıklayın ve Visual Studio uzantıları temel ürünü değiştirmeden test etmek için kullanabilirsiniz.  
@@ -39,7 +36,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **/ Reset**  
  Deneysel örneği siler ve ardından yeni bir tane oluşturur.  
   
- **/ Temizle**  
+ **/Clean**  
  Deneysel örneği siler.  
   
  **/ VSInstance**  

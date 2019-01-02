@@ -1,9 +1,6 @@
 ---
 title: Outlook için Şerit özelleştirme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0caef19f2f82ed6dcf1d46cfc85637c64e019f4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932372"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Outlook için Şerit özelleştirme
   Microsoft Office Outlook'ta Şeritteki'nı özelleştirdiğinizde, Şerit uygulamada nerede görüneceğini dikkate almanız gerekir. Outlook, ana uygulama kullanıcı arabiriminde (UI) ve Windows'da, kullanıcılar e-posta iletilerini oluşturmak gibi belirli görevleri gerçekleştirirken açın Şerit görüntüler. Bu uygulamayı windows, denetçi olarak adlandırılır.  
@@ -58,5 +55,3 @@ ms.locfileid: "53647242"
  [Şerite Genel Bakış](../vsto/ribbon-overview.md)   
  [Şerit Tasarımcısı](../vsto/ribbon-designer.md)   
  [Şerit XML](../vsto/ribbon-xml.md)  
-  
-  

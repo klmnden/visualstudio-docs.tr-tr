@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: Yönetilen bir Kod Hatası için bir İş Öğesi Oluşturma'
+title: 'Nasıl Yapılır: Yönetilen Kod Hatası için İş Öğesi Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b251970bfd57b31842e1573e2e156e11a517c81a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ff03686e353fa3df06204c59935ff614bbf7bdfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895616"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Nasıl yapılır: Yönetilen bir Kod Hatası için bir İş Öğesi Oluşturma
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Nasıl Yapılır: Yönetilen Kod Hatası için İş Öğesi Oluşturma
 
 Visual Studio içinden günlük iş öğesi iş öğesi izleme özelliğini kullanabilirsiniz. Bu özelliği kullanmak için projenizi bir Azure DevOps projesi içinde bir parçası olmalıdır [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 

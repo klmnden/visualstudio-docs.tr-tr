@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme'
-ms.custom: ''
+title: 'İzlenecek yol: Bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954902"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>İzlenecek yol: bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>İzlenecek yol: Bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme
   Bir VSTO eklentisi kullanarak, Microsoft Office Word'ün herhangi bir açık belgeye denetimler ekleyebilirsiniz. Bu izlenecek yol ekleme olanağı Şerit kullanmayı gösterir. bir <xref:Microsoft.Office.Tools.Word.Controls.Button> veya <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye.  
 
- **İçin geçerlidir:** Bu konu başlığı altındaki bilgiler Word 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler, Word 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).  
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951593"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Yeni bir Word VSTO eklenti projesi oluşturmak için  
 
-1.  Adlı Word için VSTO eklentisi projesi oluşturun **WordDynamicControls**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adlı Word için VSTO eklentisi projesi oluşturun **WordDynamicControls**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Bir başvuru ekleyin **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** derleme. Bu başvuru, bu kılavuzda daha sonra belge program aracılığıyla bir Windows Forms denetimi eklemek için gereklidir.  
 
@@ -187,7 +184,7 @@ ms.locfileid: "49951593"
 
 -   Word eklenti dinamik denetim örneği, belgeye çalışma zamanında diğer pek çok denetimi türleri ekleyin ve belge açıldığında denetimleri yeniden nasıl oluşturulduğunu gösteren bir örnek için bkz [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).  
 
--   Excel için VSTO eklentisi kullanarak bir çalışma sayfasına denetimler ekleme yapmayı gösteren bir kılavuz için bkz. [izlenecek yol: çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
+-   Excel için VSTO eklentisi kullanarak bir çalışma sayfasına denetimler ekleme yapmayı gösteren bir kılavuz için bkz. [izlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Word çözümleri](../vsto/word-solutions.md)   
@@ -196,4 +193,3 @@ ms.locfileid: "49951593"
  [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

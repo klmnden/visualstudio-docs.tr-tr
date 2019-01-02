@@ -1,9 +1,6 @@
 ---
 title: Bir kaynak denetimi VSPackage'ı uygulanmayacağını belirleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3bef6030b6a21eeda708a5258c47c9dfdcfc0a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6ed78f8245479edfaa5e87c22e6651c867d96f98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914470"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Kaynak denetimi VSPackage'ı uygulanacağını belirleme
 Bu bölümde, kaynak denetimi uygun tümleştirme yolu seçme hakkında çözümler ve verir geniş yönergeleri genişletmek için kaynak denetimi eklentileri ve kaynak denetimi VSPackage'ları seçimleri elaborates.  

@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Boş Değer Atanabilir Tür Oluşturma (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: Boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953046"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda bir boş değer atanabilir tür oluşturma
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı'nda bir boş değer atanabilir tür oluşturma
 
 Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Burada bazı alanlar herhangi bir değer atanamaz veritabanlarında yaygın yöntem budur. Örneğin, bir null değer, henüz bir değer atanmadı olduğunu belirtmek için bir veritabanı alanı atayabilirsiniz.
 
@@ -92,5 +91,5 @@ C# dilinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz: 
 - <xref:System.Nullable%601>
 - [Boş Değer Atanabilir Tipler](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Boş Değer Atanabilir Tipleri Kullanma](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Nasıl yapılır: Boş Değer Atanabilir Tipi Tanımlama](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Nasıl yapılır: Boş değer atanabilir bir tür belirleme](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Boş Değer Atanabilen Değer Türleri](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

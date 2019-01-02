@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessQueryProperties | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessQueryProperties
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac071afd9f9ce7d45a05408aeec32117776832f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b74b410e64cd6f57b828947d829461bc9d490776
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905497"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Bu arabirim tarafından uygulanan bir uzantı arabirimdir [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Implementers. Hata ayıklama işlemi ortamı hakkında bilgi almak uygulayan sağlar.  
+Bu arabirim tarafından uygulanan bir uzantı arabirimdir [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) uygulayıcılar. Hata ayıklama işlem ortamı hakkında bilgi almak uygulayan sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,7 +27,7 @@ IDebugProcessQueryProperties: IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama işlemi yürütme ortamı hakkında bilgi almak için bu arabirimi uygular.  
+ Hata ayıklama işlemi yürütme ortamı hakkında bilgi edinmek için bu arabirimi uygulayın.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugProcessQueryProperties`.  
@@ -44,12 +41,12 @@ IDebugProcessQueryProperties: IUnknown
  Bu arabirim nadiren uygulanır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Portpriv.h  
+ Üst bilgi: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çekirdek arabirimleri](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

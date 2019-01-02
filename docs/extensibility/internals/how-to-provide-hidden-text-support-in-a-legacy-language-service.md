@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: eski dil hizmetinde gizli metin desteği | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Eski dil hizmetinde gizli metin desteği | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d368caaa9b65f6f9ab8b12c1f49994e3bfe16670
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 53e7e47f3f38ecca4e68e100dbc24bfaae5aad8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926352"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Nasıl yapılır: gizli metin sağlayın eski dil hizmetinde desteği
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Nasıl Yapılır: Eski dil hizmetinde gizli metin desteği
 Anahat bölgelerin yanı sıra gizli metin bölgeler oluşturabilirsiniz. İstemci tarafından denetlenen veya Düzenleyicisi tarafından denetlenen gizli metin bölgeleri olabilir ve metnin bir bölge tamamen gizlemek için kullanılır. Düzenleyici gizli bölge yatay çizgiler olarak görüntüler. Bunun bir örneği **yalnızca betik** HTML düzenleyicisinde görüntüle.  
   
   

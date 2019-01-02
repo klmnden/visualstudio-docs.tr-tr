@@ -1,5 +1,5 @@
 ---
-title: Bir ilişkilendirme - iki kez listelenen özellik oluşturulamıyor
+title: Bir ilişkilendirme - özellik iki kere listelenmiş oluşturulamıyor
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
@@ -7,36 +7,35 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d508cc407087e481ff77e29956db7511bba81165
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db36f6e15a219109fa60ffaed13a01890833ea82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910863"
 ---
-# <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özelliği listelenen iki kez
+# <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik iki kere listelenmiş
 
-Bir ilişki oluşturulamıyor \<ilişkilendirme adı >. Aynı özelliği birden çok kez listelenir: \<özellik adı >.
+Bir ilişki oluşturulamıyor \<ilişkilendirme adı >. Aynı özellik birden fazla kez listeleniyor: \<özellik adı >.
 
-İlişkilendirmeleri tanımlanan seçili tarafından **ilişki özellikleri** içinde **ilişkilendirme Düzenleyicisi** iletişim kutusu. Özellikler ilişkisindeki her sınıf için yalnızca bir kez listelenebilir.
+İlişkilendirmeleri tanımlanmış tarafından seçilen **ilişkilendirme özellikleri** içinde **ilişkilendirme Düzenleyicisi** iletişim kutusu. Özellikler, ilişkilendirmenin her sınıf için yalnızca bir kez listelenebilir.
 
-İleti özelliği üst veya alt sınıfın içinde birden fazla kez görünür **ilişki özellikleri**.
+İleti özelliği üst veya alt sınıfın içinde birden fazla kez görünür **ilişkilendirme özellikleri**.
 
-## <a name="to-resolve-this-condition"></a>Bu durumu gidermek için
+## <a name="to-resolve-this-condition"></a>Bu durumu düzeltmek için
 
-- İleti inceleyin ve iletide belirtilen özellik unutmayın.
+- İletisini inceleyin ve message içinde belirtilen özelliğini not edin.
 
-- Tıklatın **Tamam** ileti kutusu kapatılamadı.
+- Tıklayın **Tamam** ileti kutusunu kapatın.
 
-- İnceleme **ilişki özellikleri** ve yinelenen girişleri kaldırın.
+- İnceleme **ilişkilendirme özellikleri** ve yinelenen girdileri kaldırın.
 
 - **Tamam**'ı tıklatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [O/R Tasarımcısı iletileri](../data-tools/o-r-designer-messages.md)
-- [LINQ-SQL Visual Studio Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Nasıl yapılır: LINQ-SQL sınıfları (O/R Tasarımcısı) arasında bir ilişkilendirme oluşturun](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

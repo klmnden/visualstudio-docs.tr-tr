@@ -10,19 +10,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950205"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules Şekil Konumunu ve Boyutunu Kısıtlamama
 
-A *sınırları kural* sınırları boyutu ve şekli konumunu tanımlayan bir sınıftır. Bir kullanıcı bir şekli veya köşeleri ya da bir şekli yanlarından sürükleme sırasında sürekli olarak adlandırılan bir yöntem sağlar.
+A *sınırları kural* boyut ve konum bir şeklin sınırları tanımlayan bir sınıftır. Bu durumdayken bir kullanıcı bir şekil veya köşeleri veya bir şekil tarafına sürükleyerek tekrar tekrar çağrılan bir yöntem sağlar.
 
-Aşağıdaki örnekte, sabit boyutlu, yatay veya dikey çubuk olarak dikdörtgen kısıtlar. Kullanıcı köşeleri ya da yanlara sürüklendiğinde anahattı iki izin verilen yapılandırmaları yükseklik ve genişlik arasında çevirir.
+Aşağıdaki örnek, bir çubuk yatay veya dikey olarak sabit boyutta olacak şekilde bir dikdörtgen kısıtlar. Kullanıcı, kenarlar ve köşeler sürüklediğinde, ana hat iki izin verilen yapılandırma yükseklik ve genişlik çevirir.
 
 Bir sınıf türetilir sınırları kural <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Kural örneği şeklinde oluşturulur:
 

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933028"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl yapılır: konak kontrolü verileriyle veri kaynağını güncelleme
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl Yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme
   Konak kontrolü bir veri kaynağına bağlama ve veri kaynağını denetimi verilerde yapılan değişikliklerle güncelleştirin. Bu işlemde iki ana adım vardır:  
   
 1. Bellek içi veri kaynağına denetiminde değiştirilen verileri ile güncelleştirin. Genellikle, bellek içi veri kaynağı, bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya başka bir veri nesnesi.  
@@ -119,10 +116,8 @@ ms.locfileid: "49839771"
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)    
  [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Nasıl yapılır: çalışma sayfasındaki veritabanı kayıtları arasında kaydırma](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [Nasıl yapılır: çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Nasıl yapılır: belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Nasıl yapılır: belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Nasıl yapılır: belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
+ [Nasıl yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Nasıl yapılır: Belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Nasıl yapılır: Belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Nasıl yapılır: Belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)  

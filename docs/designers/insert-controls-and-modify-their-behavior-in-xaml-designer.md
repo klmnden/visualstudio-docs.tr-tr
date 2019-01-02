@@ -2,7 +2,6 @@
 title: XAML Tasarımcısı'de denetimler ekleme ve bunların davranışlarını değiştirme
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a80fff74-bf01-41c9-ab85-ada7a873c3a9
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: c50e0dd1884a588c95cd4baa4c544d67a85989b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911487"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>XAML Tasarımcısı'de denetimler ekleme ve bunların davranışlarını değiştirme
 
@@ -57,7 +56,7 @@ A *davranışı* kod yeniden kullanılabilir bir pakettir. Bunu biraz yapmak bir
 
 ![Özellikler bölmesinde FluidMoveBehavior](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 
-**Bir video izleyin:** ![oynatma simgesine](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend ipuçları: 1. Bölüm davranışları kullanarak giriş](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
+**Bir video izleyin:** ![Oynatma simgesi](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend ipuçları: 1. Bölüm davranışları kullanarak giriş](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
 ### <a name="events"></a>Olaylar
 

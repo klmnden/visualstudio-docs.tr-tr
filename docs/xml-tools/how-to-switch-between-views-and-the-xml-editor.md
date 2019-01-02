@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: görünümleri ve XML düzenleyicisini arasında geçiş yapma'
+title: 'Nasıl Yapılır: Görünümler ile XML Düzenleyicisi Arasında Geçiş Yapma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: gewarren
@@ -10,31 +9,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0eb90f2ead313ce94d609d71385b595f3e964b
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 09ad752dc87ea322396d6e6513593d71a7554b98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936249"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Nasıl yapılır: görünümleri ve XML düzenleyicisini arasında geçiş yapma
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Nasıl Yapılır: Görünümler ile XML Düzenleyicisi arasında geçiş yapın
 
-Bu konu, XML şema Tasarımcısı (XSD Tasarımcı) görünümleri ve XML düzenleyicisini arasında geçiş yapma gösterir. Bu örnekte [satın alma siparişi şeması](../xml-tools/sample-xsd-file-simple-schema.md).
+Bu konuda, XML şema Tasarımcısı (XSD Tasarımcısı) görünümler ile XML Düzenleyicisi arasında geçiş yapma gösterilmektedir. Bu örnekte [satınalma siparişi şeması](../xml-tools/sample-xsd-file-simple-schema.md).
 
-## <a name="to-switch-between-the-views-and-the-xml-editor"></a>XML Düzenleyicisi'ni ve görünümleri arasında geçiş yapmak için
+## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Görünümler ile XML Düzenleyicisi arasında geçiş yapmak için
 
-1.  Oluşturun ve yeni bir XML şema dosyası düzenlemek için adımları [nasıl yapılır: oluşturma ve bir XSD şema dosyası düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Yeni bir XML şema dosyası oluşturma ve düzenleme için adımları [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  XML şema Tasarımcısı için XML Düzenleyicisi'nden geçiş yapmak için herhangi bir yere XML Düzenleyicisi'nde sağ tıklatıp **Görünüm Tasarımcısı**.
+2.  İçin XML şema tasarımcısını XML düzenleyicisinden geçiş yapmak için herhangi bir XML Düzenleyicisi'nde sağ tıklayıp **Görünüm Tasarımcısı**.
 
-3.  Filigran kullanılarak grafik görünümüne geçiş yapmak için tıklatın **düğümleri arasındaki ilişkiyi görmek için grafik görünümü kullanmak** Başlat görünümündeki bağlantı.
+3.  Filigran kullanarak grafik görünümüne geçmek için tıklatın **düğümler arasındaki ilişkiyi görmek için graf görünümünü kullanın** başlangıç görünümünde bağlantı.
 
-4.  Sürükleme `USAddress` düğümden **XML Şeması Explorer** grafik görünümü üzerine. Sağ `USAddress` seçin ve grafik görünümü düğümünde **Göster içerik modeli görünümünde** bağlam menüsünde.
+4.  Sürükle `USAddress` düğümünden **XML Şeması Gezgini** graf görünümünü sürükleyin. Sağ `USAddress` graf görünümünden ve select düğümünde **içerik modeli görünümünde göster** bağlam menüsünde.
 
-     İçerik modeli görünümü ayrıntılarıyla `USAddress` düğümü görüntülenir.
+     İçerik modeli görünümünü ayrıntılarıyla `USAddress` düğümü görüntülenir.
 
-5.  Araç çubuğunu kullanarak içerik modeli görünümünden başlatmak görünümüne geçiş yapmak için tıklatın **Başlangıç'ı** XSD araç çubuğunda.
+5.  Araç çubuğunu kullanarak içerik modeli görünümünden başlatmak görünümüne geçmek için tıklatın **başlangıç görünümündeki** XSD araç çubuğu düğmesi.
 
-6.  Kısayol tuşlarını kullanarak görünümleri arasında geçiş yapmak için basın **Ctrl**+**1** Başlat görünüm için **Ctrl**+**2** Grafik görünümü için ve **Ctrl**+**3** içerik modeli görünümü.
+6.  Kısayol tuşlarını kullanarak görünümler arasında geçiş yapmak için basın **Ctrl**+**1** başlangıç görünümü **Ctrl**+**2** graf görünümü ve **Ctrl**+**3** içerik modeli görünümünden için.
 
-7.  İçerik modeli görünümünden XML Düzenleyici'ye gidin, düğümünü sağ tıklatın ve seçin **görünümü kodu** bağlam menüsünde.
+7.  İçerik modeli görünümünden XML Düzenleyicisi'ne gitmek için düğümünü sağ tıklatın ve seçin **kodu görüntüle** bağlam menüsünde.

@@ -1,9 +1,6 @@
 ---
 title: Hata ayıklama oturumu Manager | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - session debug manager, unifying session views
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109dce19f85e0742217c1c478b1b1687fd5a33e8
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 014ac5b4c310b97fb1c041eeaededef8c97ab88b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905364"
 ---
 # <a name="session-debug-manager"></a>Oturum hata ayıklama Yöneticisi
 Oturum hata ayıklama Yöneticisi (SDM) makineleri herhangi bir sayıda arasında herhangi bir sayıda birden çok işlem programlarında hata ayıklama hata ayıklama altyapısı (DE) herhangi bir sayıda yönetir. SDM çoğaltıcı bir hata ayıklama altyapısı olmaya ek olarak, IDE için hata ayıklama oturumu birleşik bir görünümünü sağlar.  

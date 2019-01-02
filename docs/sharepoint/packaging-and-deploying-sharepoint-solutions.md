@@ -1,13 +1,8 @@
 ---
 title: SharePoint çözümlerini paketleme ve dağıtma | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849025"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Paketleme ve SharePoint çözümlerini dağıtma
   Genellikle, bir SharePoint çözüm, bir çözüm paketi (.wsp) dosyası kullanarak bir SharePoint sunucusuna dağıtılır. Visual Studio, SharePoint Proje öğeleri özelliklerini düzenlemek ve SharePoint özelliklerinizi dağıtmak için bir paket oluşturmak için kullanabilirsiniz.  
@@ -40,9 +35,9 @@ ms.locfileid: "49863275"
 -   [Dosyaları SharePoint çözümlerini dağıtma](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Özellikler ve paketler oluşturun
- Visual Studio ile ilgili SharePoint öğeleri gruplandırmak için kullanabileceğiniz bir *özellik*. Örneğin, bir kişi liste tanımı için bir özellik liste örneği ve liste tanımını içerebilir. Dağıtım amaçları için tek bir özelliği bu iki öğenin birleştirebilirsiniz. Özellikler hakkında daha fazla bilgi için bkz. [yapı taşı: Özellikler](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Visual Studio ile ilgili SharePoint öğeleri gruplandırmak için kullanabileceğiniz bir *özellik*. Örneğin, bir kişi liste tanımı için bir özellik liste örneği ve liste tanımını içerebilir. Dağıtım amaçları için tek bir özelliği bu iki öğenin birleştirebilirsiniz. Özellikler hakkında daha fazla bilgi için bkz. [yapı taşı: Özellikleri](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
- Ardından, bir SharePoint çözüm paketini oluşturabilirsiniz (*.wsp*) birden çok özellik paketi için site tanımları, derlemeleri ve diğer dosyaları bir biçimde SharePoint tarafından dosyaları dağıtmak için gereken dosyaları depolayan tek bir pakette Sunucu. Daha fazla bilgi için [yapı taşı: çözümleri](http://go.microsoft.com/fwlink/?LinkID=169186).  
+ Ardından, bir SharePoint çözüm paketini oluşturabilirsiniz (*.wsp*) birden çok özellik paketi için site tanımları, derlemeleri ve diğer dosyaları bir biçimde SharePoint tarafından dosyaları dağıtmak için gereken dosyaları depolayan tek bir pakette Sunucu. Daha fazla bilgi için [yapı taşı: Çözümleri](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
 ## <a name="feature-and-packaging-tool-support"></a>Özellik ve paketleme araç desteği
  Visual Studio'da SharePoint geliştirme araçları, hızla özellikleri ve daha kolay dağıtım için çözüm paketleri SharePoint dosyalarınızı düzenlemek için kullanabilirsiniz. Özellik ve çözüm paketini yapılandırmak için aşağıdaki araçları kullanabilirsiniz.  
@@ -81,9 +76,9 @@ ms.locfileid: "49863275"
   
   Visual Studio'da SharePoint geliştirme araçları, Çözüm paketinin düzgün biçimlendirildiğini sağlamaya yardımcı olmak için doğrulama kuralları vardır. Ayrıca, kurallar doğrulayın *.wsp* çözüm dosyası başarılı bir şekilde dağıtılabilir ve bir SharePoint sunucusuna etkinleştirildi. Özellikler için XML şeması hakkında daha fazla bilgi için bkz. [özellik şemaları](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  SharePoint Proje sistemi için özel özellik ve paket doğrulama kuralları ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: özel özellik ve paket doğrulama kuralları için SharePoint çözümleri oluşturma](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  SharePoint Proje sistemi için özel özellik ve paket doğrulama kuralları ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Özel özellik ve paket doğrulama kuralları için SharePoint çözümleri oluşturma](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
-  Paketleme Gezgini hakkında daha fazla bilgi için bkz: [nasıl yapılır: ekleme ve paketleme Gezgini'ni kullanarak, özellikler ve öğeler pakete kaldırma](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Paketleme Gezgini hakkında daha fazla bilgi için bkz: [nasıl yapılır: Ekleme ve paketleme Gezgini'ni kullanarak, özellikler ve öğeler pakete kaldırma](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Çözüm Gezgini
  Gidin ve SharePoint proje dosyalarını açmak için Çözüm Gezgini'ni kullanabilirsiniz. Özellik Olay alıcıları özellikleri eklemek için Çözüm Gezgini'nde bağlam menüsünü kullanın ve kaynakları özellik. Ayrıca, özelliği tasarımcılar ve paket tasarımcıları için dağıtım paketlerini ve özellikleri yapılandırmak için açabilirsiniz.  
@@ -109,4 +104,3 @@ ms.locfileid: "49863275"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Derleme ve SharePoint çözümlerinde hata ayıklama](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

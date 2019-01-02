@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: metin kutusunda düğme kullanarak bir belgede metin görüntüleme'
-ms.custom: ''
+title: 'İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910145"
 ---
-# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek yol: metin kutusunda düğme kullanarak bir belgede metin görüntüleme
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme
   Bu yönerge, düğmeler ve belge düzeyi özelleştirmesinde metin kutuları için Microsoft Office Word nasıl kullanılacağını gösterir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -49,7 +46,7 @@ ms.locfileid: "49822574"
   
 1.  Adıyla bir Word belgesi projesi oluşturma **Word Düğmem**. Sihirbazda **yeni belge oluşturma**.  
   
-     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **Word Düğmem** için proje **Çözüm Gezgini**.  
   
@@ -108,9 +105,9 @@ ms.locfileid: "49822574"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bu izlenecek yol, düğme ve metin kutusu Word belgelerinde kullanmanın temellerini gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:  
   
--   Birleşik giriş kutusu biçimini değiştirmek için kullanma. Daha fazla bilgi için [izlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirme](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Birleşik giriş kutusu biçimini değiştirmek için kullanma. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak belge biçimlendirmesini](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
--   Grafik stilleri seçilecek radyo düğmelerini kullanarak. Daha fazla bilgi için [izlenecek yol: radyo düğmelerini kullanarak belgede grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Grafik stilleri seçilecek radyo düğmelerini kullanarak. Daha fazla bilgi için [izlenecek yol: Radyo düğmelerini kullanarak belgede grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Windows Forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)   
@@ -118,5 +115,3 @@ ms.locfileid: "49822574"
  [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)   
  [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

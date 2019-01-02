@@ -1,9 +1,6 @@
 ---
 title: VSIX Uzantı Şeması 2.0 başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e295bc8c09f41c4c1c77b216a9d91d0644d2d24e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6f9019ca281dd86ef4665e8f6590798d4dfbd917
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914672"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Uzantı Şeması 2.0 başvurusu
 VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler eklemek bu şema 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Yükleyici bildirimi XML öğeleri ve onu anlamıyor öznitelikleri yok sayar.  
@@ -48,9 +45,9 @@ VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Do
   
 -   `<Identity>` -Bu paket için kimlik bilgilerini tanımlar ve aşağıdaki öznitelikler içerir:  
   
-    -   `Id` -Bu öznitelik, yazarı tarafından seçmiş paketi için benzersiz bir kimliği olması gerekir. CLR Türleri namespaced aynı şekilde adı nitelendirilmesi gerekir: Company.Product.Feature.Name. `Id` Özniteliği 100 karakter ile sınırlıdır.  
+    -   `Id` -Bu öznitelik, yazarı tarafından seçmiş paketi için benzersiz bir kimliği olması gerekir. CLR Türleri namespaced aynı şekilde tam adı: Company.Product.Feature.Name. `Id` Özniteliği 100 karakter ile sınırlıdır.  
   
-    -   `Version` -Bu paketi ve içeriğini sürümünü tanımlar. Bu öznitelik CLR derleme sürümü oluşturma biçimdedir: Major.Minor.Build.Revision (1.2.40308.00). Daha yüksek bir sürüm numarasına sahip bir paketi paket güncelleştirmelerini kabul edilir ve mevcut yüklü sürümü yüklenebilir.  
+    -   `Version` -Bu paketi ve içeriğini sürümünü tanımlar. Bu öznitelik, CLR derleme sürüm biçimi aşağıdaki gibidir: Major.Minor.Build.Revision (1.2.40308.00). Daha yüksek bir sürüm numarasına sahip bir paketi paket güncelleştirmelerini kabul edilir ve mevcut yüklü sürümü yüklenebilir.  
   
     -   `Language` -Bu öznitelik varsayılan dil paketini ve bu bildirimi metinsel verilere karşılık gelir. Örneğin kaynak derlemeleri için bu öznitelik CLR yerel ayar kodu kuralını izleyen: en-us, en, fr-fr. Belirtebileceğiniz `neutral` Visual Studio herhangi bir sürümünü çalıştıran bir dilden uzantısı bildirmek için. Varsayılan değer `neutral` şeklindedir.  
   

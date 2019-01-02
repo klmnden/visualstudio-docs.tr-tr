@@ -2,7 +2,6 @@
 title: Erişilebilirlik ürünleri ve Hizmetleri (Blend)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: be4a39747150d0be0e550afddf8048d4e207521d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965862"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Erişilebilirlik ürünleri ve Hizmetleri (Blend)
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki bölümler, Microsoft Windows'u engelli kişiler için daha kolay erişilebilir duruma getiren özellikler, ürünler ve hizmetler konusunda bilgi sağlar.
@@ -55,7 +54,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 
  Princeton, NJ 08540
 
- Telefon numarası Amerika Birleşik Devletleri: (800) 221-4792
+ ABD içi telefon numarası: (800) 221-4792
 
  Telefon numarası Amerika Birleşik Devletleri ve Kanada: (609) 452-0606
 

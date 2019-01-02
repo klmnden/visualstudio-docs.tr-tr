@@ -3,7 +3,6 @@ title: CookieCutter şablonları Python ile kullanma
 description: Visual Studio şablonları Python kodu için keşfetmek ve bu şablonlardan projeler oluşturmak için grafik Cookiecutter uzantısını da destekler.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958241"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 
@@ -92,8 +91,8 @@ Bir Cookiecutter şablonu yazma temel bilgileri için bkz: [Cookiecutter belgele
 
 Varsayılan şablon değişkenleri işlenmesi (dize veya listesi) veri türüne bağlıdır:
 
-- Dizesi: Değişken adı, değer ve varsayılan değer gösteren bir filigran girmek için metin kutusu etiketi. Araç İpucu metin kutusundaki varsayılan değeri gösterir.
-- Listesi: Değişken adı, bir değer seçmek için açılan kutusu etiketi. Araç İpucu birleşik giriş kutusundaki varsayılan değeri gösterir.
+- Dize: Değişken adı, değer ve varsayılan değer gösteren bir filigran girmek için metin kutusu etiketi. Araç İpucu metin kutusundaki varsayılan değeri gösterir.
+- Listesi: Değişken adı, bir değer seçmek için birleşik giriş kutusu etiketi. Araç İpucu birleşik giriş kutusundaki varsayılan değeri gösterir.
 
 Bu işleme hakkında ek meta verilerinde belirterek artırmak mümkündür, *cookiecutter.json* dosyasını Visual Studio'da belirli (ve Cookiecutter CLI tarafından yoksayılır). Tüm özellikleri isteğe bağlıdır:
 
@@ -102,7 +101,7 @@ Bu işleme hakkında ek meta verilerinde belirterek artırmak mümkündür, *coo
 | Etiketle | Değişken adı yerine bir değişken için Düzenleyici üzerinde görünen belirtir. |
 | Açıklama | Bu değişken için varsayılan değer yerine düzenleme denetiminde görünen araç ipucu belirtir. |
 | URL | URL gösteren bir araç ipucu ile bir köprü etiketi değiştirir. Köprü metnine tıklayarak, bu URL için kullanıcının varsayılan tarayıcı açılır. |
-| Seçici | Bir değişken için düzenleyicinin özelleştirme yapmanıza izin verir. Şu anda desteklenen aşağıdaki Seçici:<ul><li>`string`: Standart metin kutuları, dizeler için varsayılan.</li><li>`list`: Standart Kombo kutusu listeleri için varsayılan.</li><li>`yesno`: Arasında seçim yapma birleşik giriş kutusu `y` ve `n`, dizeleri.</li><li>`odbcConnection`: Metin kutusunda bir **...**  düğme bir veritabanı bağlantısı iletişim kutusunu açar.</li></ul> |
+| Seçici | Bir değişken için düzenleyicinin özelleştirme yapmanıza izin verir. Şu anda desteklenen aşağıdaki Seçici:<ul><li>`string`: Standart metin kutuları, dizeler için varsayılan.</li><li>`list`: Standart Kombo kutusu listeleri için varsayılan.</li><li>`yesno`: Birleşik giriş kutusu arasında seçim yapmanızı `y` ve `n`, dizeleri.</li><li>`odbcConnection`: Metin kutusunda bir **...**  düğme bir veritabanı bağlantısı iletişim kutusunu açar.</li></ul> |
 
 Örnek:
 

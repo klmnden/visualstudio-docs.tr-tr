@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Temel Doku Gölgelendiricisi Oluşturma'
+title: 'Nasıl Yapılır: Temel doku gölgelendiricisi oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 85de6bcaa4b3b62c9a3ad03464d9b95cb0134a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946074"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Nasıl yapılır: temel doku gölgelendiricisi oluşturma
+# <a name="how-to-create-a-basic-texture-shader"></a>Nasıl Yapılır: Temel doku gölgelendiricisi oluşturma
 
 Bu makalede, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) bir tek doku gölgelendiricisi oluşturmak için nasıl kullanılacağını gösterir. Bu gölgelendiriciyi RGB ve dokudan örneklenen alfa değerleri için doğrudan son rengini ayarlar.
 
@@ -54,7 +53,7 @@ Belirli şekiller daha iyi önizlemeleri için bazı gölgelendiricileri sağlay
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır. 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Görüntü Düzenleyicisi](../designers/image-editor.md)
 - [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 - [Gölgelendirici Tasarımcısı düğümleri](../designers/shader-designer-nodes.md)

@@ -2,7 +2,6 @@
 title: Yayın Sayfası, Proje Tasarımcısı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911422"
 ---
 # <a name="publish-page-project-designer"></a>Yayın Sayfası, Proje Tasarımcısı
 **Yayımla** sayfasının **Proje Tasarımcısı** ClickOnce dağıtım özelliklerini yapılandırmak için kullanılır.
@@ -82,18 +81,18 @@ ms.locfileid: "39179508"
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [ClickOnce Uygulamalarını Yayımlama](../../deployment/publishing-clickonce-applications.md)
-- [Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Nasıl yapılır: Visual Studio'nun Dosyaları Nereye Kopyalayacağını Belirtme](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Nasıl yapılır: Son Kullanıcıların Yükleme Yapacakları Konumu Belirtme](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Nasıl yapılır: Teknik Destek için bir Bağlantı Belirtme](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Nasıl yapılır: ClickOnce Çevrimdışı veya Çevrimiçi Yükleme Modunu Belirtme](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [Nasıl yapılır: CD Yüklemeleri için AutoStart'ı Etkinleştirme](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Nasıl yapılır: ClickOnce Yayım Sürümü'nü Ayarlama](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Nasıl yapılır: ClickOnce Yayım Sürümünü Otomatik Olarak Artırma](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [Nasıl yapılır: ClickOnce Tarafından Hangi Dosyaların Yayımlandığını Belirtme](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [Nasıl yapılır: ClickOnce Uygulamasıyla Önkoşulları Yükleme](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Nasıl yapılır: ClickOnce Uygulaması için Güncelleştirmeleri Yönetme](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Nasıl yapılır: ClickOnce Uygulaması için Yayımlama Dilini Değiştirme](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Nasıl yapılır: ClickOnce Uygulaması için Başlat Menüsü Adı Belirtme](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
-- [Nasıl yapılır: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [Nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Nasıl yapılır: Visual Studio'nun dosyaları nereye kopyalayacağını belirtme](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Nasıl yapılır: Burada son kullanıcıların yükleme yapacakları konumu belirtme](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Nasıl yapılır: Teknik destek için bir bağlantı belirtme](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Nasıl yapılır: ClickOnce çevrimdışı belirtin veya çevrimiçi yükleme modunu](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Nasıl yapılır: CD yüklemeleri için AutoStart'ı etkinleştir](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [Nasıl yapılır: Kümesi ClickOnce yayım sürümü](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Nasıl yapılır: Otomatik olarak artırma ClickOnce yayım sürümü](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Nasıl yapılır: ClickOnce uygulaması için güncelleştirmeleri yönetme](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Nasıl yapılır: Değişiklik ClickOnce uygulaması için yayımlama dilini](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Nasıl yapılır: ClickOnce uygulaması için Başlat menüsü adı belirtme](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
 - [ClickOnce Güvenliği ve Dağıtımı](../../deployment/clickonce-security-and-deployment.md)

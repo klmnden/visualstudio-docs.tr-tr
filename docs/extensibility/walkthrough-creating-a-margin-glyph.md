@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: dış boşluk karakteri oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir dış boşluk karakteri oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac8d70c401d543afe73ac14d6f8617e5f375482
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851358"
 ---
-# <a name="walkthrough-create-a-margin-glyph"></a>İzlenecek yol: dış boşluk karakteri oluşturma
+# <a name="walkthrough-create-a-margin-glyph"></a>İzlenecek yol: Dış boşluk karakteri oluşturma
 Özel düzenleyici uzantıları kullanarak, düzenleyici kenar boşlukları görünümünü özelleştirebilirsiniz. "Todo" sözcüğü kod açıklamada göründüğü her durumda bu kılavuzda bir özel karakter gösterge kenar boşluğu koyar.  
   
 ## <a name="prerequisites"></a>Önkoşullar  

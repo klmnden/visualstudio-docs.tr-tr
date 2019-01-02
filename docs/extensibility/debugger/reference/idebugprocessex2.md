@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessEx2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcessEx2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fa10fb5ebe2f9a78d44997c29ae51bc02e2c842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e331702c98656fd0bee31c1b6e1a130fe2c30f77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962840"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Bu arabirim, hata ayıklama Yöneticisi (SDM) bildirmek için ekleme veya işlemden ayırmak Process işlem oturum sağlar.  
@@ -57,9 +54,9 @@ IDebugProcessEx2 : IUnknown
  Bu arabirim, işlem SDM arasında özeldir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Portpriv.h  
+ Üst bilgi: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

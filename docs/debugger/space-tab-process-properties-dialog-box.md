@@ -1,8 +1,6 @@
 ---
 title: Alan sekmesi, işlem özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -12,26 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4b5a416c7d3eb466498e7cf4ff727134c0f20f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e9cc3489cd07576521356a40c9d4abd42507aee9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853261"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Alan Sekmesi, İşlem Özellikleri İletişim Kutusu
-Kullanım **alanı** adres alanı, bir işlemin incelemek için sekmesi. Görüntülenecek [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md), odağı taşımak bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Ağaçta herhangi bir işlem düğümü seçin ve ardından **özellikleri** gelen **Görünüm** menüsü.  
+Kullanım **alanı** bir işlemin adres alanı incelemek için sekmesinde. Görüntülenecek [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md), odağı Taşı bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Herhangi bir işlem düğümü ağacında seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **alanı** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **alanı** sekmesinde:  
   
 |Giriş|Açıklama|  
 |-----------|-----------------|  
-|**Alanı olarak işaretlenmiş Göster**|Kategori alanı (görüntü, eşlenen, ayrılmış veya atanmamış) seçmek için bu liste kutusunu kullanın.|  
-|**Yürütülebilir bayt**|Seçilen kategori, bu işlemi kullanan tüm adres alanı toplamı. Yürütülebilir bellek programlar tarafından çalıştırılabilir, ancak değil okunur veya olabilir yazılmış bellektir.|  
-|**Exec salt okunur bayt**|Seçilen kategori, bu süreç kullanılarak salt okunur özellikler ile kullanmak üzere tüm adres alanında toplamı. Exec salt okunur bellek yürütülen okuma yanı sıra bellektir.|  
-|**Exec okuma yazma bayt**|Seçilen kategori, bu süreç kullanılarak okuma-yazma özelliklerini kullanmaya tüm adres alanında toplamı. Exec okuma yazma bellek programlar tarafından yürütülen yanı sıra okunabilir ve değiştiren bellektir.|  
-|**Exec-Kopyala baytları yazma**|Seçilen kategori, programlar tarafından yürütülen yanı sıra okunabilir ve yazılan tüm adres alanı toplamı. Bu tür koruma bellek işlemler arasında paylaşılmak üzere gerektiğinde kullanılır. Ardından bunlar paylaşan işlemler bellek salt okunur, tüm aynı bellek kullanır. Paylaşan bir işlem yazma erişimi isterse bir kopyasını bu bellek için işlem yapılacaktır.|  
-|**Erişim yok bayt**|Seçilen kategori, bir işlem bunu kullanmanızı engelliyor tüm adres alanı toplamı. Erişim ihlali yazma ise oluşturulur veya okuma denenir.|  
-|**Salt okunur bayt**|Seçilen kategori, yürütülen okuma yanı sıra tüm adres alanı toplamı.|  
-|**Okuma-yazma bayt**|Seçilen kategori, okuma ve yazma sağlayan tüm adres alanı toplamı.|  
-|**Yazma kopyası bayt**|Seçilen kategori için tüm adres alanının toplam bellek okumak için ancak yazma için paylaşımı sağlayan. İşlemler bu belleği okurken, bunlar aynı bellek paylaşabilirsiniz. Ancak, bu paylaşılan bellek, okuma/yazma erişimi bir paylaşım işlem istediği zaman, belleğin kopyası yazma için yapılır.|
+|**Alan için işaretlenmişi Göster**|Kategori alanı (görüntü, eşlenmiş, ayrılmış veya atanmamış) seçmek için bu liste kutusunu kullanın.|  
+|**Yürütülebilir baytlar**|Seçilen kategori, bu işlemi kullanan tüm adres alanının toplamı. Yürütülebilir bellek programlar tarafından yürütülebilen ancak değil okuma veya yazılan bellektir.|  
+|**Çalıştırılabilir-Salt okunur baytlar**|Seçilen kategori için toplam kullanım bu işlemi kullanarak salt okunur özelliklere sahip tüm adres alanında. Çalıştırılabilir-Salt okunur bellek, yürütülen okuma yanı sıra bellektir.|  
+|**Çalıştırılabilir-oku-yaz baytları**|Seçilen kategori, bu işlemi kullanarak okuma / yazma özellikleri ile kullanılacak tüm adres alanında toplamı. Çalıştırılabilir-oku yaz, çalıştırılabilen yanı sıra okunabilir ve değiştirilen bellek bellektir.|  
+|**Exec-yazma kopyası baytları**|Seçilen kategori, çalıştırılabilen yanı sıra okunabilir ve yazılan tüm adres alanını toplamı. Bu tür işlemler arasında paylaşılan bellek ihtiyacı olduğunda kullanılır. Ardından bunlar paylaşan işlemler bellek salt okunur ise tüm aynı bellek kullanır. Paylaşan bir işlem yazma erişimi isterse, bu bellek kopyasını işlemi yapılır.|  
+|**Erişilemez baytlar**|Seçilen kategori için bir işlem kullanmasını engelleyen tüm adres alanının toplamı. Yazma erişimi ihlali oluşturulur veya okuma denenir.|  
+|**Salt okunur baytlar**|Seçilen kategori, yürütülen okuma yanı sıra, tüm adres alanının toplamı.|  
+|**Oku-yaz baytları**|Seçilen kategori, okuma ve yazma sağlayan tüm adres alanının toplamı.|  
+|**Yazma kopyası baytları**|Seçilen kategori için tüm adres alanının toplamı, bellek, okuma yazma için ancak paylaşım sağlar. İşlemler bu bellek okurken, aynı bellek paylaşabilirler. Ancak, paylaşan bir işlem bu paylaşılan bellek, okuma/yazma erişimi istediğinde, yazma için belleğin bir kopyası yapılır.|

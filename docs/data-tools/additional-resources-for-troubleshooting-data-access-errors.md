@@ -223,19 +223,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932726"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Forumlarda veri erişimi hatalarında sorun giderme
 
-Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları ve Uyarıları Yardım bulabilirsiniz. MSDN'de kullanılabilir bazı ilgili verileri forumları şunlardır:
+Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları ve Uyarıları ile ilgili Yardım bulabilirsiniz. MSDN'de kullanılabilir bazı verilerle ilgili forumlar şunlardır:
 
 - [Windows Forms veri denetimleri ve veri bağlama](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
@@ -245,13 +244,13 @@ Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları v
 
 - [WCF Veri Hizmetleri Forumu](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [SQL Server veri erişim Forumu](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [SQL Server veri erişimi Forumu](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
-- [LINQ-SQL Forumu](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
+- [LINQ to SQL Forumu](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
 - [ADO.NET veri sağlayıcıları Forumu](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-SQL Server bağlantı sorunlarını giderme hakkında daha fazla bilgi için bkz: [sorun giderme için SQL Server veritabanı motorunun bağlanma](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+SQL Server bağlantı sorunlarını giderme hakkında daha fazla bilgi için bkz: [sorun giderme SQL Server veritabanı altyapısına bağlanma](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

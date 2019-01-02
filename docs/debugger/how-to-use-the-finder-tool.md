@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Bulucu Aracı kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bulucu Aracı kullanma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965268"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Nasıl yapılır: Bulucu Aracı Kullanma
+# <a name="how-to-use-the-finder-tool"></a>Nasıl Yapılır: Bulucu aracını kullanma
 Bulucu Aracı kullanabileceğiniz **Bul penceresi** penceresi özellikleri ve iletileri görüntülemek için iletişim kutusu. Bulucu aracını da devre dışı bırakılmış bir alt öğe pencerelerini bulun ve varsa vurgulamak için hangi pencerenin alt pencereler çakışıyorsa devre dışı keşfedilir.  
   
  ![Spy&#43; &#43; Bul iletişim kutusu penceresini](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  

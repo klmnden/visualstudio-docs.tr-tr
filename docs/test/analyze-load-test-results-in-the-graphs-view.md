@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f27689d5e3c322a539a0db5ee1f93c569cb181a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914563"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Yük Testi Çözümleyicisinin Grafik görünümünde yük testi sonuçlarını çözümleme
 
@@ -34,7 +33,7 @@ Test sonuçlarını grafik şeklinde görüntülemek için seçin **grafikleri**
 
 En fazla dört grafik panelleri aynı anda görüntülenebilir. Farklı bir panel düzenleri kullanarak arasında geçiş yapabilirsiniz **panel düzenini** araç çubuğu düğmesi.
 
-Birkaç yerleşik grafik sağlanır. Yerleşik kullanabileceğiniz grafikleri olduğu gibi veya bunları özelleştirebilirsiniz. Ayrıca, kendi grafiklerinizi oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) ve [nasıl yapılır: özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md).
+Birkaç yerleşik grafik sağlanır. Yerleşik kullanabileceğiniz grafikleri olduğu gibi veya bunları özelleştirebilirsiniz. Ayrıca, kendi grafiklerinizi oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) ve [nasıl yapılır: Özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 ## <a name="built-in-graphs"></a>Yerleşik grafikleri
 
@@ -54,7 +53,7 @@ Yük testi sonuçlarını analiz etmek kullanılabilen yerleşik grafikler aşa�
 > [!NOTE]
 > Yalnızca yanıt süresi performans sayaçları için bir otomatik olarak üretilmiş bir yanıt süresi grafiği eklenebilir.
 
- Sayaç bilgileri hem de grafiğin altındaki grafikler göstergede görüntüler. Grafiğin bir bölümüne de yakınlaştırabilirsiniz. Daha fazla bilgi için [nasıl yapılır: grafiğin bir bölgesine yakınlaştırmak](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+ Sayaç bilgileri hem de grafiğin altındaki grafikler göstergede görüntüler. Grafiğin bir bölümüne de yakınlaştırabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Grafiğin bir bölgesine yakınlaştırmak](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Grafiklerde Görüntülenen Sayaçlar
 
@@ -80,23 +79,23 @@ Yük testi sonuçlarını analiz etmek kullanılabilen yerleşik grafikler aşa�
 
 |Görevler|İlişkili konular|
 |-|-|
-|**Grafik gösterge kullanarak özelleştirme:** grafik görünümü göstergesi, grafik ile ilişkili her performans sayacı için daha fazla bilgi görüntüler. Gösterge, performans sayaçlarını kaldırmak, performans sayaçları grafiğe vurgulayın ve çizim seçenekleri özelleştirmek için kullanabilirsiniz.|-   [Yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Grafik üzerinde sayaçları görüntüler:** farklı türlerde veri bir yük testi sonuçları grafiği grafik üzerinde sayaçları yerleştirerek ekleyebilirsiniz.|-   [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Grafikler üzerinde yakınlaştırma:** bir yük testi tamamlandıktan sonra yakınlaştırmak ve kaydırmak için grafiğin bir bölgesine yakınlaştırma çubukları kullanabilirsiniz. Yakınlaştırma tarafından ince ayrıntılı olarak yük testi sırasında oluşturulan verileri inceleyebilirsiniz.|-   [Nasıl yapılır: grafiğin bir bölgesine yakınlaştırma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Grafikleri döşeme:** yük testi sonuç grafikleri herhangi çeşitli desenlerden düzenleyebilirsiniz. En fazla dört grafikleri döşeme.||
-|**Özel grafikler oluşturma:** yük testi sonuçları hakkında belirli bilgi görüntüleyen grafikleri tasarlayabilirsiniz. Özel bir grafik, graf görüntüleyen yük testi sayacı belirterek tasarlayın.|-   [Nasıl yapılır: özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Graftaki performans sayaçları verileri dışarı aktarma:** kullanarak graf verilerini Microsoft Excel'e aktarabilirsiniz **grafik verilerini Excel'e dışarı aktar** düğmesini **Yük Testi Çözümleyicisi** sırasında araç çubuğu bulunduğunuz **grafikleri** görünümü.||
+|**Grafik gösterge kullanarak özelleştirin:** Grafikler, grafik ile ilişkili her performans sayacı için gösterge görüntüler bilgileri görüntüleyin. Gösterge, performans sayaçlarını kaldırmak, performans sayaçları grafiğe vurgulayın ve çizim seçenekleri özelleştirmek için kullanabilirsiniz.|-   [Yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Grafiklerde sayaç görüntüle:** Grafik üzerinde sayaçları koyarak, bir yük testi sonuçları grafiği için farklı türlerde veri ekleyebilirsiniz.|-   [Nasıl Yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Grafiklerde yakınlaştırma:** Bir yük testi tamamlandıktan sonra yakınlaştırmak ve kaydırmak için grafiğin bir bölgesine yakınlaştırma çubukları kullanabilirsiniz. Yakınlaştırma tarafından ince ayrıntılı olarak yük testi sırasında oluşturulan verileri inceleyebilirsiniz.|-   [Nasıl Yapılır: Grafiğin bir bölgesine yakınlaştırma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Kutucuk grafikler:** Yük testi sonuç grafikleri herhangi çeşitli desenlerden düzenleyebilirsiniz. En fazla dört grafikleri döşeme.||
+|**Özel grafikler oluşturma:** Yük testi sonuçları hakkında belirli bilgi görüntüleyen grafikleri tasarlayabilirsiniz. Özel bir grafik, graf görüntüleyen yük testi sayacı belirterek tasarlayın.|-   [Nasıl Yapılır: Özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Graftaki performans sayaçları verilerini dışarı aktarın:** Graf verileri kullanarak Microsoft Excel'e dışarı aktarabilirsiniz **grafik verilerini Excel'e dışarı aktar** düğmesini **Yük Testi Çözümleyicisi** içerikteyken araç **grafikleri** görünümü.||
 
 ## <a name="related-tasks"></a>İlişkili görevler
 
  [Yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümleyin](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Nasıl yapılır: erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
+ [Nasıl yapılır: Erişim yük testi sonuçlarını çözümleme](../test/how-to-access-load-test-results-for-analysis.md)
 
  [Yük testi sonuçlarını çözümleme](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
-- [Nasıl yapılır: özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Nasıl yapılır: grafiğin bir bölgesine yakınlaştırma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Nasıl yapılır: Özel grafikler oluşturma](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Nasıl yapılır: Grafiğin bir bölgesine yakınlaştırma](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

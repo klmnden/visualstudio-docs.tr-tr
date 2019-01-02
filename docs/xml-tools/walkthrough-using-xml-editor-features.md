@@ -1,8 +1,7 @@
 ---
-title: 'İzlenecek Yol: XML Düzenleyicisi Özelliklerini Kullanma'
+title: 'İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: gewarren
@@ -10,105 +9,105 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 524b96fea7fedba248c04f384445ee3a03a3595b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902012"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>İzlenecek yol: Kullanmak XML Düzenleyicisi özellikleri
+# <a name="walkthrough-use-xml-editor-features"></a>İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma
 
-Bu izlenecek adımları yeni bir XML belgesi nasıl oluşturacağınızı gösterir. İzlenecek yol da XML yazmak için değerli kılan özelliklerin bir XML Düzenleyicisi'nin kullanır.
+Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini göstermektedir. İzlenecek yol bazı XML yazmak için değerli hale getiren XML Düzenleyicisi'nin özelliklerini kullanır.
 
 > [!NOTE]
-> İzlenecek yol başlatmadan önce kaydetmek *hireDate.xsd* (aşağıda bu konuya da dahil) dosyasını yerel bilgisayarınıza.
+> Yönergelere başlamadan önce kaydetmek *hireDate.xsd* dosyayı yerel bilgisayarınıza (aşağıda bu konuya da dahil).
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Yeni bir XML dosyası oluşturmak ve bir XML şeması ile ilişkilendirmek için
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Yeni bir XML dosyası oluşturun ve bir XML şeması ile ilişkilendirmek için
 
-1.  Üzerinde **dosya** menüsündeki **yeni**, tıklatıp **dosya**.
+1.  Üzerinde **dosya** menüsünde **yeni**, tıklatıp **dosya**.
 
-2.  Seçin **XML dosyası** içinde **şablonları** bölmesinde ve tıklatın **açık**.
+2.  Seçin **XML dosyası** içinde **şablonları** bölmesi ve tıklatın **açık**.
 
-     Yeni bir dosya Düzenleyicisi'nde açılır. Varsayılan XML bildirimi dosyayı içeren `<?xml version="1.0" encoding="utf-8">`.
+     Yeni bir dosya düzenleyicide açılır. Varsayılan XML bildirimi dosyasını içeren `<?xml version="1.0" encoding="utf-8">`.
 
-3.  Belge Özellikleri penceresinde Gözat düğmesine (**...** ) üzerinde **şemaları** alan.
+3.  Belge Özellikler penceresinde, Gözat düğmesine tıklayın (**...** ) üzerinde **şemaları** alan.
 
      **XSD şemaları** iletişim kutusu görüntülenir.
 
 4.  **Ekle**'yi tıklatın.
 
-     **Açık XSD şema** iletişim kutusu görüntülenir.
+     **Açık XSD şeması** iletişim kutusu görüntülenir.
 
-5.  Seçin *hireDate.xsd* dosya ve tıklayın **açık**.
+5.  Seçin *hireDate.xsd* tıklayın ve dosya **açık**.
 
 6.  **Tamam**'ı tıklatın.
 
-     XML Şeması sunulmuştur XML belgesi ile ilişkilendirilmiş. XML Şeması belgesi doğrulamak için kullanılır. Bu ayrıca, IntelliSense tarafından geçerli öğeleri üye listesini doldurmak için kullanılır.
+     XML Şeması sunulmuştur XML belge ile ilişkilendirilmiş. XML Şeması, belgeyi doğrulamak için kullanılır. Bu ayrıca, IntelliSense tarafından geçerli öğe üye listesini doldurmak için kullanılır.
 
 ## <a name="to-add-data"></a>Veri eklemek için
 
 1.  Tür `<` Düzenleyicisi bölmesinde.
 
-     Üye listesi olası öğeleri görüntüler:
+     Üye listesi, mümkün olan öğeleri görüntüler:
 
-    -   **!--** bir yorum ekleyin.
+    -   **!--** açıklama eklemek için.
 
-    -   **! DOCTYPE** bir belge türü eklemek için.
+    -   **! DOCTYPE** belge türü eklemek için.
 
     -   **?** bir işlem yönergesi eklemek için.
 
-    -   **çalışan** kök öğesi eklemek için.
+    -   **çalışan** kök öğe eklemek için.
 
-2.  Seçin **<!--** açıklama düğümü ve tuşuna eklemek için **Enter**.
+2.  Seçin **<!--** bir açıklama düğümü ve ENTER tuşuna **Enter**.
 
-     Düzenleyici, açıklama bitiş etiketi ekler ve imleci başlangıç ve bitiş yorum etiketleri arasına yerleştirir.
+     Düzenleyici, açıklama bitiş etiketi ekler ve başlangıç ve bitiş açıklama etiketleri arasında imleci geçir yerleştirir.
 
 3.  Yazın **Test XML dosyası**.
 
-4.  Yeni bir satıra yazın `<`seçip **çalışan** üye listesinden.
+4.  Yeni bir satıra yazın `<`seçip **çalışan** üye listesinde.
 
-     Düzenleyici bir XML öğesi ekler `<employee`. Bu noktada öznitelikleri öğesine ekleyebilir veya yazarak başlangıç etiketi kapatabilirsiniz `>`.
+     Düzenleyicisi bir XML öğesi ekler `<employee`. Bu noktada öğenin öznitelikleri ekleyebilir veya yazarak başlangıç etiketi kapatabilirsiniz `>`.
 
-5.  Tür `>` etiket kapatın.
+5.  Tür `>` etiketi kapatın.
 
-6.  Düzenleyici bitiş etiketi ekler. Bitiş etiketi bir doğrulama hatası gösteren dalgalı alt çizgi ile eklenir. **Araç ipucu** iletisini görüntüler: **içeriği eksik 'çalışanı' öğesine sahip. 'ID' beklenen**.
+6.  Düzenleyici bitiş etiketi ekler. Bitiş etiketi, bir doğrulama hatası gösteren dalgalı alt çizgi ile eklenir. **Araç ipucu** iletisini görüntüler: **' % S'öğesi 'çalışanı' içeriği eksik sahip. 'ID' beklenen**.
 
-7.  Tür `<` seçip **kimliği** üye listesinden. Yazın `>`.
+7.  Tür `<` seçip **kimliği** üye listesinde. Yazarak `>`.
 
-     Düzenleyici XML öğesi ekler `<ID></ID>`ve imleci kimliği başlattıktan sonra etiketi yerleştirir.
+     Düzenleyici XML öğesi ekler `<ID></ID>`ve imleci kimliği başlattığınızda etiketi yerleştirir.
 
 8.  Tür **abc**.
 
-     **Abc** metin dalgalı alt çizgiyle sahiptir. **Araç ipucu** iletisini görüntüler: **'ID' öğesi kendi veri türüne göre geçersiz bir değere sahip**.
+     **Abc** metin dalgalı çizgi vardır. **Araç ipucu** iletisini görüntüler: **'ID' öğesi kendi veri türüne göre geçersiz bir değere sahip**.
 
-9. Kimliği öğeyi sağ tıklatıp **Tanıma Git**.
+9. Kimliği öğeye sağ tıklayıp **tanıma**.
 
-     Düzenleyici açılır *hireDate.xsd* yeni bir belge penceresi dosyasında ve imleci kimliği şema öğesi tanımını yerleştirir.
+     Düzenleyicisi açılır *hireDate.xsd* yeni bir belge penceresi dosyasında ve imleci kimliği şema öğesi tanımını konumlandırır.
 
-10. XML dosyasına dönmek ve Değiştir **abc** metinle **123**.
+10. XML dosyasına dönün ve Değiştir **abc** metinle **123**.
 
-     Dalgalı alt çizgi ve **araç ipucu** altındaki kimliği öğesi değeri temizlenir. **Araç ipucu** için çalışan bitiş etiketi şimdi iletisini görüntüler: **içeriği eksik 'çalışanı' öğesine sahip. Beklenen 'işe alma-date'**.
+     Dalgalı çizgi ve **araç ipucu** altında ID öğesinin değerine temizlenir. **Araç ipucu** çalışan sonu etiketi artık iletisini görüntüler: **' % S'öğesi 'çalışanı' içeriği eksik sahip. Beklenen 'alım tarihi'**.
 
-11. İmleci kimliği Bitiş etiketinden sonra yerleştirin, yazın `<`seçin **işe alma tarihi** üye listesine ve ardından türü `>`.
+11. Yazın, sonra kimliği bitiş etiketi imleci `<`seçin **alım tarihi** üye listesini ve ardından türünde `>`.
 
-     Düzenleyici XML öğesi ekler `<hire-date></hire-date>`ve işe alma tarihi başlattıktan sonra etiketi imleci yerleştirir.
+     Düzenleyici XML öğesi ekler `<hire-date></hire-date>`ve imleci başlangıç alım tarihi sonra etiketi yerleştirir.
 
-12. Yazın **2003-01-10** işe alma tarihi değeri.
+12. Yazın **2003-01-10** alım tarih değeri.
 
 ## <a name="to-format-the-xml-document"></a>XML belgesi biçimlendirmek için
 
-- Seçin **belgeyi Biçimlendir** XML Düzenleyicisi araç çubuğu düğmesinden.
+- Seçin **belgeyi Biçimlendir** XML Düzenleyicisi araç çubuğundan düğme.
 
     XML belgesi biçimlendirilir.
 
 ## <a name="to-save-the-xml-document"></a>XML belgesi kaydetmek için
 
-1.  Gelen **dosya** menüsünde, select **Kaydet**.
+1.  Gelen **dosya** menüsünde **Kaydet**.
 
-     **Dosyasını Farklı Kaydet** iletişim kutusu görüntülenir. Varsayılan dosya adı *'XMLFile1'*.
+     **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir. Varsayılan dosya adı *'XMLFile1'*.
 
-2.  XML belgesi için konum ve dosya adı girin ve tıklayın **kaydetmek**.
+2.  XML belgesi için konum ve dosya adını girin ve tıklayın **Kaydet**.
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd dosyası
  Aşağıdaki şema dosyası izlenecek yol tarafından kullanılır.

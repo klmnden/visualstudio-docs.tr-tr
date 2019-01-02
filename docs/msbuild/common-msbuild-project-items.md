@@ -1,8 +1,6 @@
 ---
 title: Yaygın MSBuild proje öğeleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b51046ce3a4b589cb77ce27d1e103a6b8a6c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951712"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild proje öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.  
@@ -123,7 +121,7 @@ ms.locfileid: "49937518"
 | Görünür | İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest |
 
-### <a name="none"></a>Yok.  
+### <a name="none"></a>Hiçbiri  
  Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.  
 
 
@@ -143,7 +141,7 @@ ms.locfileid: "49937518"
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
  İçeri aktarmak için FxCop projesi temsil eder.  
 
-### <a name="import"></a>{1&gt;İçeri Aktar&lt;1}  
+### <a name="import"></a>İçeri Aktarma  
  Ad uzayları, tarafından aktarılacaksa derlemeleri temsil [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyici.  
 
 ## <a name="see-also"></a>Ayrıca bkz.  

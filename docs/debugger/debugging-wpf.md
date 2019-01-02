@@ -1,8 +1,6 @@
 ---
 title: WPF'de hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db41fe7cc56b9e22c94affe8b502959cec17c84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72739f755b24dd16e5d741afd35caf4faa8f3545
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919634"
 ---
 # <a name="debugging-wpf"></a>WPF'de Hata Ayıklama
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] hata ayıklama WPF uygulamalarını daha kolay hale getirmek için ek özellikler sağlar.  
@@ -32,8 +30,8 @@ ms.locfileid: "49912558"
   
 | Başlık | Açıklama |
 | - | - |
-| [Nasıl yapılır: WPF Ağacı Görselleştiricisini kullanma](../debugger/how-to-use-the-wpf-tree-visualizer.md) | WPF ağacı Görselleştiricisini WPF nesne görsel ağacını keşfedin ve o ağaç içinde nesneler için WPF bağımlılık özellikleri görüntülemek için kullanabilirsiniz. Bu konu, WPF ağacı Görselleştiricisini kullanıcı arabirimini açıklar. |
-| [Nasıl Yapılır: WPF İzleme Bilgilerini Görüntüleme](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] WPF uygulamaları hata ayıklama izleme bilgilerini alabilir ve bu bilgileri görüntülemek **çıkış** penceresi. Bu konu, etkinleştirmek ve WPF izleme bilgilerini görüntüsünü özelleştirmek açıklar. |
+| [Nasıl yapılır: WPF ağacı Görselleştiricisini kullanma](../debugger/how-to-use-the-wpf-tree-visualizer.md) | WPF ağacı Görselleştiricisini WPF nesne görsel ağacını keşfedin ve o ağaç içinde nesneler için WPF bağımlılık özellikleri görüntülemek için kullanabilirsiniz. Bu konu, WPF ağacı Görselleştiricisini kullanıcı arabirimini açıklar. |
+| [Nasıl yapılır: WPF izleme bilgilerini görüntüleme](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] WPF uygulamaları hata ayıklama izleme bilgilerini alabilir ve bu bilgileri görüntülemek **çıkış** penceresi. Bu konu, etkinleştirmek ve WPF izleme bilgilerini görüntüsünü özelleştirmek açıklar. |
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

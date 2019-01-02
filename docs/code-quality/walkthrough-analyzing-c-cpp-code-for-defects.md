@@ -1,8 +1,7 @@
 ---
-title: 'İzlenecek yol: Kod Kusurları için C/C++ Kodunu Analiz Etme'
+title: 'İzlenecek yol: Kusurları için C/C++ kodunu analiz etme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -14,64 +13,64 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e15c6acc241e36e7cadc1d6f043549f1f5e46c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829517"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: Kod Kusurları için C/C++ Kodunu Analiz Etme
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: Kusurları için C/C++ kodunu analiz etme
 
-Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları için C/C++ kodunu analiz etme gösterir.
+Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları için C/C++ kodunu analiz etme gösterir.
 
-- Kod çözümleme yerel kodu çalıştırın.
-- Kod hatası uyarıları çözümleyin.
-- Hata olarak kabul uyarı.
-- Kod hatasını çözümleme geliştirmek için kaynak kodu açıklama.
+- Yerel kod üzerinde kod analizini Çalıştır.
+- Kod hatasını uyarıları çözümleyin.
+- Hata olarak kabul uyarısı.
+- Kod hata analizi iyileştirmek için kaynak kodu açıklama ekleyin.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 - Bir kopyasını [gösterim örneği](../code-quality/demo-sample.md).
-- C/C++ ilgili temel bilgilere.
+- C/C++ temel düzeyde bilinmesini.
 
-### <a name="to-run-code-defect-analysis-on-native-code"></a>Kod hatasını çözümleme yerel kodu çalıştırmak için
+### <a name="to-run-code-defect-analysis-on-native-code"></a>Yerel kod üzerinde kod hata analizi çalıştırmak için
 
-1. Tanıtım çözümde açmak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+1. Tanıtım çözümde açık [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-     Tanıtım çözüm şimdi doldurur **Çözüm Gezgini**.
+     Tanıtım çözümü şimdi doldurur **Çözüm Gezgini**.
 
-2. Üzerinde **yapı** menüsünde tıklatın **çözümü yeniden derle**.
+2. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.
 
-     Çözüm, herhangi bir hata veya uyarı oluşturur.
+     Çözüm herhangi bir hata veya uyarı derlenir.
 
-3. İçinde **Çözüm Gezgini**, CodeDefects projesini seçin.
+3. İçinde **Çözüm Gezgini**, CodeDefects projeyi seçin.
 
-4. Üzerinde **proje** menüsünde tıklatın **özellikleri**.
+4. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 
      **CodeDefects özellik sayfaları** iletişim kutusu görüntülenir.
 
-5. Tıklatın **kod çözümleme**.
+5. Tıklayın **Kod Analizi**.
 
-6. Tıklatın **derlemede C/C++ için Kod Analizi etkinleştir** onay kutusu.
+6. Tıklayın **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu.
 
-7. CodeDefects projeyi yeniden oluşturun.
+7. CodeDefects projeyi yeniden derleyin.
 
      Kod çözümleme uyarıları görüntülenir **hata listesi**.
 
-### <a name="to-analyze-code-defect-warnings"></a>Kod hatası uyarıları çözümlemek için
+### <a name="to-analyze-code-defect-warnings"></a>Kod hatasını uyarıları çözümlemek için
 
-1. Üzerinde **Görünüm** menüsünde tıklatın **hata listesi**.
+1. Üzerinde **görünümü** menüsünü tıklatın **hata listesi**.
 
-     İçinde seçtiğiniz Geliştirici profili bağlı olarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], işaret gerekebilir **diğer pencereler** üzerinde **Görünüm** menüsüne ve ardından **hata listesi**.
+     Te seçtiğiniz Geliştirici profili bağlı olarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], işaret edecek şekilde olabilir **diğer Windows** üzerinde **görünümü** menüsüne ve ardından **hata listesi**.
 
 2. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:
 
-     C6230 Uyarı: anlamsal olarak farklı türleri arasında örtük cast: Boolean bağlamda HRESULT kullanarak.
+     Uyarı C6230: Anlamsal olarak farklı türleri arasında örtük atama: Boole bağlamında HRESULT kullanma.
 
-     Kod Düzenleyicisi uyarı işlevinde neden satırı görüntüler `bool``ProcessDomain()`. Bu uyarı bir HRESULT bir 'If' deyimi bir Boolean sonucu beklenirken kullanılmakta olduğunu gösterir.
+     Kod Düzenleyicisi uyarıya yol açan işlev satır görüntüler `bool``ProcessDomain()`. Bu uyarı, bir HRESULT bir 'If' deyimi bir Boolean sonucu beklenen yeri kullanılmakta olduğunu gösterir.
 
-3. Bu uyarı, başarılı makrosu kullanarak düzeltin. Kodunuzu aşağıdaki kodu benzemelidir:
+3. Bu uyarı, SUCCEEDED makrosu kullanarak düzeltin. Kodunuzu aşağıdaki koda benzemelidir:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -79,55 +78,55 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
 
 4. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:
 
-     C6282 Uyarı: yanlış işleci: test bağlamda sabiti atama. İstenen == edildi?
+     C6282 Uyarı: Hatalı operatör: test bağlamında sabit atama. Hedeflenen == oldu?
 
-5. Bu uyarı eşitlik için test ederek düzeltin. Kodunuzu aşağıdaki kodu benzer görünmelidir:
+5. Bu uyarı, eşitlik için test ederek düzeltin. Kodunuzu aşağıdaki koda benzemelidir:
 
    ```cpp
    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
    ```
 
-### <a name="to-treat-warning-as-an-error"></a>Uyarı hata olarak işlemek için
+### <a name="to-treat-warning-as-an-error"></a>Uyarı hata olarak değerlendirilecek
 
-1. Aşağıdaki Bug.cpp dosyasına ekleyin `#pragma` C6001 uyarıyı hata olarak işlemek için dosyanın başına deyimi:
+1. Bug.cpp dosyasına aşağıdakileri ekleyin `#pragma` C6001 uyarı hata olarak değerlendirilecek dosyanın başına deyimi:
 
    ```cpp
    #pragma warning (error: 6001)
    ```
 
-2. CodeDefects projeyi yeniden oluşturun.
+2. CodeDefects projeyi yeniden derleyin.
 
      İçinde **hata listesi**, C6001 hata olarak görünür.
 
 3. Kalan iki C6001 hataları düzeltin **hata listesi** başlatma tarafından `i` ve `j` 0.
 
-4. CodeDefects projeyi yeniden oluşturun.
+4. CodeDefects projeyi yeniden derleyin.
 
-     Proje uyarı veya hata oluşturulur.
+     Projeyi herhangi bir uyarı veya hata derler.
 
-### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>Kaynak kodu ek açıklama uyarılarla annotation.c düzeltmek için
+### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>Kaynak kod ek açıklama uyarılara annotation.c düzeltmek için
 
-1. Çözüm Gezgini'nde ek açıklamaları projesini seçin.
+1. Çözüm Gezgini içinde ek açıklamalar projeyi seçin.
 
-2. Üzerinde **proje** menüsünde tıklatın **özellikleri**.
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 
      **Ek açıklamaları özellik sayfaları** iletişim kutusu görüntülenir.
 
-3. Tıklatın **kod çözümleme**.
+3. Tıklayın **Kod Analizi**.
 
-4. Seçin **derlemede C/C++ için Kod Analizi etkinleştir** onay kutusu.
+4. Seçin **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu.
 
-5. Ek açıklamalar projeyi yeniden oluşturun.
+5. Ek açıklamalar projeyi yeniden derleyin.
 
 6. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:
 
-     C6011 Uyarı: NULL işaretçi 'newNode' başvurusunun kaldırılmasının.
+     Uyarı C6011: NULL işaretçi 'newNode' başvurusunun kaldırılması.
 
-     Bu uyarı dönüş değerini denetlemek için çağıran tarafından başarısız olduğunu gösterir. Bu durumda, çağrı içinde **AllocateNode** bir NULL değer döndürebilir (işlev bildirimi AllocateNode için annotations.h üstbilgi dosyası bakın).
+     Bu uyarı, dönüş değeri denetleyin çağıran tarafından hatası gösterir. Bu durumda, bir çağrıda **AllocateNode** NULL bir değer döndürebilir (işlev bildirimi için AllocateNode annotations.h üstbilgi dosyasını bakın).
 
 7. Annotations.cpp dosyasını açın.
 
-8. Bu uyarı düzeltmek için dönüş değerini sınamak için bir 'If' deyimi kullanın. Kodunuzu aşağıdaki kodu benzemelidir:
+8. Bu uyarıyı düzeltmek için dönüş değerini test etmek için bir 'if' deyimini kullanın. Kodunuzu aşağıdaki koda benzemelidir:
 
    ```cpp
    if (NULL != newNode)
@@ -138,13 +137,13 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
    }
    ```
 
-9. Ek açıklamalar projeyi yeniden oluşturun.
+9. Ek açıklamalar projeyi yeniden derleyin.
 
-     Proje uyarı veya hata oluşturulur.
+     Projeyi herhangi bir uyarı veya hata derler.
 
-### <a name="to-use-source-code-annotation"></a>Kaynak kodu ek açıklama kullanmak için
+### <a name="to-use-source-code-annotation"></a>Kaynak kod ek açıklamaları kullanmak için
 
-1. Biçimsel parametresi açıklama ve dönüş değeri işlevinin `AddTail` Bu örnekte gösterildiği gibi öncesi ve sonrası koşullarını kullanarak:
+1. Ek açıklama biçimsel parametreler ve dönüş değeri işlevin `AddTail` öncesi ve sonrası koşulları Bu örnekte gösterilen şekilde kullanarak:
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -158,11 +157,11 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
 
 3. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:
 
-     C6011 Uyarı: bilgileri başvuru kaldırma boş işaretçi 'düğümü'.
+     Uyarı C6011: 'Düğümü' NULL işaretçisinin başvurusunun kaldırılması.
 
-     Bu uyarı işlevdeki geçirilen düğüm null olabileceğini gösterir ve uyarı nerede gerçekleştiği satır numarasını gösterir.
+     Bu uyarı işleve geçirilen düğüm null olabileceğini gösterir ve burada uyarı tetiklendi satır numarasını gösterir.
 
-4. Bu uyarı düzeltmek için dönüş değerini sınamak için bir 'If' deyimi kullanın. Kodunuzu aşağıdaki kodu benzemelidir:
+4. Bu uyarıyı düzeltmek için dönüş değerini test etmek için bir 'if' deyimini kullanın. Kodunuzu aşağıdaki koda benzemelidir:
 
    ```cpp
    . . .
@@ -176,9 +175,9 @@ Bu kılavuz C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları
 
 5. Ek açıklamalar projeyi yeniden derleyin.
 
-     Proje uyarı veya hata oluşturulur.
+     Projeyi herhangi bir uyarı veya hata derler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Kod kusurları için yönetilen kod çözümleme](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/C++ için kod çözümleme](../code-quality/code-analysis-for-c-cpp-overview.md)
+[İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[C/C++ için Kod Analizi](../code-quality/code-analysis-for-c-cpp-overview.md)

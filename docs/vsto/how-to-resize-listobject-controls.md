@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme'
-ms.custom: ''
+title: 'Nasıl Yapılır: ListObject denetimlerinin boyutunu değiştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e655305400915f1ac97a042ac1cca26e52a05ec5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909690"
 ---
-# <a name="how-to-resize-listobject-controls"></a>Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme
+# <a name="how-to-resize-listobject-controls"></a>Nasıl Yapılır: ListObject denetimlerinin boyutunu değiştirme
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel çalışma kitabına eklediğinizde denetimi; ancak daha sonraki bir zamanda yeniden boyutlandırmak isteyebilirsiniz. Örneğin, iki sütunlu bir liste için üç sütun değiştirmek isteyebilirsiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -40,7 +37,7 @@ ms.locfileid: "49811509"
   
   Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).  
   
-  ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [ı: ekleme sütunları zamanında verilere bağlı bir liste nesnesi için bunu nasıl?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Çalışma zamanında verilere bağlı bir liste nesnesi için sütunları eklensin mi? ](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> ListObject denetimi tasarım zamanında yeniden boyutlandırma  
  Listeyi yeniden boyutlandırmak için tıklayın ve boyutlandırma tutamaçlarından birinin sürükleyin veya boyutunda tanımlayabilirsiniz **listeyi yeniden boyutlandır** iletişim kutusu.  
@@ -74,7 +71,7 @@ ms.locfileid: "49811509"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
 ##  <a name="runtimeaddin"></a> ListObject çalışma zamanında VSTO eklenti projesinde yeniden boyutlandırma  
- Yeniden bir <xref:Microsoft.Office.Tools.Excel.ListObject> herhangi bir açık çalışma zamanında denetim. Ekleme hakkında daha fazla bilgi için bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetiminin çalışma için VSTO eklentisi kullanarak, bkz: [nasıl yapılır: çalışma sayfalarına ListObject ekleme denetimlerini](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+ Yeniden bir <xref:Microsoft.Office.Tools.Excel.ListObject> herhangi bir açık çalışma zamanında denetim. Ekleme hakkında daha fazla bilgi için bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetiminin çalışma için VSTO eklentisi kullanarak, bkz: [nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 ### <a name="to-resize-a-list-object-programmatically"></a>Liste nesnesine programlı olarak yeniden boyutlandırmak için  
   
@@ -95,8 +92,6 @@ ms.locfileid: "49811509"
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject denetimi](../vsto/listobject-control.md)   
- [Nasıl yapılır: çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Nasıl yapılır: yer işareti denetimlerini yeniden boyutlandırma](../vsto/how-to-resize-bookmark-controls.md)   
+ [Nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [Nasıl yapılır: Yer işareti denetimlerini yeniden boyutlandırma](../vsto/how-to-resize-bookmark-controls.md)   
  [Nasıl yapılır: NamedRange denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-namedrange-controls.md)  
-  
-  

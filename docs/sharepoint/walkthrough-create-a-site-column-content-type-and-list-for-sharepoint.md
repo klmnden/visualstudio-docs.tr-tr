@@ -1,17 +1,12 @@
 ---
-title: 'İzlenecek yol: bir Site sütunu, içerik türü ve SharePoint için liste oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir Site sütunu, içerik türü ve SharePoint için liste oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852537"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma
   Aşağıdaki yordamlar özel SharePoint sitesi sütunlar oluşturma işlemini göstermektedir: veya *alanları*— site sütunlarını kullanan bir içerik türü yanı sıra. Ayrıca, yeni içerik türü kullanan bir liste oluşturma işlemini gösterir.  
@@ -95,7 +90,7 @@ ms.locfileid: "49900130"
     </Field>  
     ```  
   
-4.  Aynı yordamı kullanarak, iki daha fazla site sütunları projeye ekleyin: **hasta kimliği** (tür = "Tamsayı") ve **Doktor adı** (tür = "Text"). Grup değerlerine ayarlayın **Clinic Site sütunları**.  
+4.  Yordamın aynısını kullanarak, iki daha fazla site sütunları, projeye ekleyin: **Hasta kimliği** (tür = "Tamsayı") ve **Doktor adı** (tür = "Text"). Grup değerlerine ayarlayın **Clinic Site sütunları**.  
   
 ## <a name="create-a-custom-content-type"></a>Özel bir içerik türü oluştur
  Ardından, içerik türü oluşturun — kişiler içerik türe göre — önceki yordamda oluşturduğunuz site sütunları içerir. Mevcut bir içerik türünde bir içerik türü almasını sağlayarak, temel içerik türü kullanılmak üzere yeni içerik türü birden fazla site sütunları sağladığından zamandan tasarruf edebilirsiniz.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900130"
   
      Bunun yapılması, daha önce tanımladığınız site sütunlarını yanı sıra kişi içerik türü diğer faydalı olabilecek site sütunlara erişmenizi sağlar.  
   
-6.  Sonra içerik türü Tasarımcısı görünen **sütunları** sekmesinde, üç site daha önce tanımlanan sütunları ekleyin: **hasta adı**, **hasta kimliği**ve **Doktor adı**. Bu sütunlar eklemek için site sütunları listesinde ilk liste kutusunu seçin. **görünen ad**, her bir site sütunu aynı anda listeden birini seçin.  
+6.  Sonra içerik türü Tasarımcısı görünen **sütunları** sekmesinde, üç site daha önce tanımlanan sütunları ekleyin: **Hasta adı**, **hasta kimliği**, ve **Doktor adı**. Bu sütunlar eklemek için site sütunları listesinde ilk liste kutusunu seçin. **görünen ad**, her bir site sütunu aynı anda listeden birini seçin.  
   
     > [!TIP]  
     >  Daha hızlı bir şekilde site sütunları seçmek için sütunun adını ilk birkaç harfini girerek listeyi filtreleyin.  
@@ -131,7 +126,7 @@ ms.locfileid: "49900130"
   
 11. Menü çubuğunda, **dosya** > **Tümünü Kaydet**ve ardından içerik türü Tasarımcısı'nı kapatın.  
   
-## <a name="create-a-list"></a>Bir liste oluşturun
+## <a name="create-a-list"></a>Liste oluştur
  Şimdi yeni içerik türü ve site sütunlarını kullanan bir liste oluşturun.  
   
 #### <a name="to-create-a-list"></a>Bir liste oluşturmak için  
@@ -229,7 +224,6 @@ ms.locfileid: "49900130"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint için site sütunları, içerik türleri ve listeler oluşturma](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
- [Nasıl yapılır: özel alan türü oluşturma](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Nasıl yapılır: Özel alan türü oluşturma](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [İçerik türleri](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Sütunları](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

@@ -1,9 +1,6 @@
 ---
 title: Yazma. Vsct dosyaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945268"
 ---
 # <a name="author-vsct-files"></a>.Vsct dosyaları yazma
 Bu belge yazma işlemi gösterilmektedir bir *.vsct* menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI) öğeleri Visual Studio tümleşik geliştirme ortamı (IDE) için ekleme dosyası. Zaten sahip bir Visual Studio Paket (VSPackage'ı) kullanıcı Arabirimi öğeleri eklediğinizde, bu adımları kullanın. bir *.vsct* dosya.  
@@ -26,14 +23,14 @@ Bu belge yazma işlemi gösterilmektedir bir *.vsct* menü öğeleri, araç çub
  Bunun nedeni Visual Studio Paket şablonu kullanmanızı tavsiye ederiz yeni projeler için bir *.vsct* seçimlerinizi bağlı olarak, bir menü komutu, bir araç penceresi ya da özel bir düzenleyici için gerekli öğeler zaten sahip olan dosya . Bu değişiklik *.vsct* , VSPackage gereksinimlerini karşılamak için dosya. Değiştirme hakkında daha fazla bilgi için bir *.vsct* dosya, örneklere bakın [genişletmek menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="author-the-file"></a>Dosyayı yazın  
- Yazar bir *.vsct* dosyasında bu aşamaları: dosyalara ve kaynaklara yapısını oluşturmak, kullanıcı Arabirimi öğeleri bildirmek, IDE'de kullanıcı Arabirimi öğeleri yerleştirmek ve özel davranışları ekleyin.  
+ Yazar bir *.vsct* Bu aşamalar dosyasında: Dosyalara ve kaynaklara yapısını oluşturmak, kullanıcı Arabirimi öğeleri bildirmek, IDE içinde kullanıcı Arabirimi öğeleri yerleştirmek ve özel davranışları ekleyin.  
   
 ### <a name="file-structure"></a>Dosya yapısı  
  Temel yapısı bir *.vsct* dosyası bir [CommandTable](../../extensibility/commandtable-element.md) içeren kök öğesi bir [komutları](../../extensibility/commands-element.md) öğesi ve bir [sembolleri](../../extensibility/symbols-element.md) öğesi.  
   
 #### <a name="to-create-the-file-structure"></a>Dosya yapısı oluşturmak için  
   
-1.  Ekleme bir *.vsct* dosyası projenize adımları izleyerek [nasıl yapılır: .vsct dosyası oluşturma](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Ekleme bir *.vsct* dosyası projenize adımları izleyerek [nasıl yapılır: .Vsct dosyası oluşturma](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2. Gerekli ad alanları için ekleme `CommandTable` öğesi, aşağıdaki örnekte gösterildiği gibi:  
   
@@ -54,9 +51,9 @@ Bu belge yazma işlemi gösterilmektedir bir *.vsct* menü öğeleri, araç çub
   
 1. En üstündeki `CommandTable` öğesi ekleyin `Extern` başvurulan ayarlayın ve her bir dış dosya için öğe `href` dosyasının adı için öznitelik. Visual Studio kaynaklara erişmek için aşağıdaki üst bilgi dosyaları başvurabilirsiniz:  
   
-   -   *Stdidcmd.h*: Visual Studio tarafından kullanıma sunulan tüm komutlar için kimliklerini tanımlar.  
+   -   *Stdidcmd.h*: Visual Studio tarafından kullanıma sunulan tüm komutlar için kimlikleri tanımlar.  
   
-   -   *Vsshlids.h*: komut kimlikleri için Visual Studio menü içerir.  
+   -   *Vsshlids.h*: Komut kimlikleri için Visual Studio menü içerir.  
   
 2. Paketiniz diğer paketleri veya Visual Studio tarafından tanımlanan herhangi bir komut çağırırsa, ekleme bir `UsedCommands` öğeden sonra `Commands` öğesi. Bu öğe ile doldurmak bir [UsedCommand](../../extensibility/usedcommand-element.md) çağırmanızı diğer bir deyişle, paketin parçası olarak her komut için öğesi. Ayarlama `guid` ve `id` özniteliklerini `UsedCommand` öğelerine GUID ve ID değerleri çağrılacak komut. 
 

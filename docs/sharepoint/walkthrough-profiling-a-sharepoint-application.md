@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir SharePoint uygulaması için profil oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir SharePoint uygulaması için profil oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913823"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>İzlenecek yol: bir SharePoint uygulama profili
+# <a name="walkthrough-profile-a-sharepoint-application"></a>İzlenecek yol: Profil bir SharePoint uygulaması
   Bu izlenecek yol, profil oluşturma araçlarını Visual Studio'da bir SharePoint uygulama performansını iyileştirmek için nasıl kullanılacağını gösterir. Örneğin, özellik olayı alıcısını performansını düşürür bir boşta döngü içeren bir SharePoint özelliği olay alıcısı uygulamasıdır. Visual Studio profil oluşturucu, bulun ve proje en pahalı (yavaş gerçekleşir) parçası olarak da bilinen ortadan sağlar *etkin yolu*.  
   
  Bu izlenecek yol aşağıdaki görevleri gösterir:  
@@ -280,4 +277,3 @@ ms.locfileid: "49852758"
  [Performans oturumuna genel bakış](/visualstudio/profiling/performance-session-overview)   
  [Performans profili oluşturma Başlangıç Kılavuzu](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Visual Studio Profiler uygulama performans sorunlarını bulun](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

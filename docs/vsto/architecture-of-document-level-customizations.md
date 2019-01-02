@@ -1,8 +1,6 @@
 ---
 title: Belge düzeyi özelleştirmeler mimarisi
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917390"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge düzeyi özelleştirmeler mimarisi
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmelerini oluşturmak için projeleri içerir. Bu konu, belge düzeyinde özelleştirmeler şu yönlerini açıklar:  
@@ -152,5 +150,3 @@ ms.locfileid: "53248276"
  [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)   
  [Özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md)   
  [Belge düzeyi özelleştirmelerdeki önbelleğe alınmış veriler](../vsto/cached-data-in-document-level-customizations.md)  
-  
-  

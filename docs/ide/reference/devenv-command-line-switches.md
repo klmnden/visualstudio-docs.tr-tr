@@ -2,7 +2,6 @@
 title: Devenv komut satırı anahtarları
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 29a86959ccd4b0224e22e480588d36a0d637336e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911984"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv komut satırı anahtarları
 
@@ -82,7 +81,7 @@ Aşağıdaki komut satırı anahtarları IDE görüntülemez.
 |[/Build](../../ide/reference/build-devenv-exe.md)|Belirtilen çözüm veya projeyi yapılandırmasına göre belirtilen çözümü derler.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden oluşturma komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına bir dağıtım için gerekli dosyaları ile birlikte çözümü derler.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|İki dosyayı karşılaştırır. Dört parametre alır: Kaynakdosya, Hedefdosya, SourceDisplayName (isteğe bağlı), TargetDisplayName (isteğe bağlı).|
+|[/Diff](../../ide/reference/diff.md)|İki dosyayı karşılaştırır. Dört parametre alır: Kaynakdosya, Hedefdosya, SourceDisplayName (isteğe bağlı) TargetDisplayName (isteğe bağlı).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Oluşturma sırasında hatalar almak için bir dosya belirtmenizi sağlar.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projeyi oluşturmak için temizlemek veya dağıtmak. Yalnızca / Build ayrıca sağladıysanız bu anahtarı kullanabilirsiniz. / rebuild, / clean veya / deploy anahtarı.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Derleme veya dağıtım için proje yapılandırmasını belirtir. Yalnızca/Project anahtarı da sağladıysanız bu anahtarı kullanabilirsiniz.|

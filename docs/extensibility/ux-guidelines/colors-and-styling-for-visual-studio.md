@@ -1,9 +1,6 @@
 ---
 title: Renkler ve stil Visual Studio için | Microsoft Docs
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914614"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 
@@ -82,7 +79,7 @@ Ortak paylaşılan renkler kullanmadan önce doğru kullanma hakkında anladığ
 
 ### <a name="user-customizable-colors"></a>Kullanıcı tarafından özelleştirilebilir renkleri
 
-Bkz: [son kullanıcılar için renk gösterme](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+Bkz. [Son kullanıcılar için renk gösterme](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
 Bazı durumlarda, bir kod Düzenleyicisi'ni veya tasarım yüzeyine oluştururken gibi kullanıcı Arabirimi, özelleştirmek son kullanıcının izni isteyeceksiniz. Özelleştirilebilir kullanıcı Arabirimi bileşenleri bulunduğunda **yazı tipleri ve renkler** bölümünü **Araçları &gt; seçenekleri** iletişim kutusunda, burada kullanıcıların tercih edebilir ön plan rengini, arka plan rengi veya her ikisini de değiştirin.
 

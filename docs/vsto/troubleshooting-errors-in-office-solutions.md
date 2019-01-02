@@ -1,9 +1,6 @@
 ---
 title: Office çözümleri hatalarında sorun giderme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919030"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office çözümleri hatalarında sorun giderme
   Visual Studio'da Office çözümleri geliştirirken, aşağıdaki görevleri gerçekleştirirken sorunlarla karşılaşabilirsiniz:  
@@ -57,9 +54,9 @@ ms.locfileid: "50672957"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Mevcut bir çalışma kitabını temel alan bir Excel çalışma kitabı projesi oluştururken hatalar  
  Mevcut bir çalışma kitabını temel alan yeni bir Excel çalışma kitabı projesi oluşturursanız, şu hatalarla birlikte görebilirsiniz.  
   
- Excel: "Gizlilik Uyarı: Bu belge makroları, ActiveX denetimleri, XML genişletme paketi bilgileri ve Web bileşenleri içerir. Bu belge denetçisi tarafından kaldırılan kişisel bilgiler içerebilir."  
+ Excel'den: "Gizlilik uyarısı: Bu belge, makroları, ActiveX denetimleri, XML genişletme paketi bilgileri ve Web bileşenleri içerir. Bu belge denetçisi tarafından kaldırılan kişisel bilgiler içerebilir."  
   
- Visual Studio'dan: "Düzgün yüklenemedi Tasarımcısı."  
+ Visual Studio'dan: "Tasarımcısı düzgün şekilde yüklenemedi."  
   
  Bu hatalar, belge Inspector'ı kullanarak kendi kişisel bilgilerine sahip bir çalışma kitabını temel alan bir proje oluşturmak deneyin ortaya çıkabilir. Bu hatadan kaçınmak için proje oluşturmadan önce aşağıdaki adımları gerçekleştirin.  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Bu kod, aşağıdaki derleme hataları oluşur:  
   
-- Visual Basic: "derlemesi yok PIA modunu kullanarak bağlandığında başvuru 'belge sınıfı' sınıfına izin verilmiyor."  
+- Visual Basic: "Derlemesi yok PIA modunu kullanarak bağlandığında başvuru 'belge sınıfı' sınıfına izin verilmiyor."  
   
-- Visual C#: "'Microsoft.Office.Interop.Word.DocumentClass' katıştırılmış birlikte çalışma türü. Uygulanabilir arabirimi kullanın."  
+- Görsel C#: "'Microsoft.Office.Interop.Word.DocumentClass' katıştırılmış birlikte çalışma türü. Uygulanabilir arabirimi kullanın."  
   
   Bu hatayı gidermek için bunun yerine karşılık gelen arabirimi başvurmak için kodu değiştirin. Örneğin, başvurusu yerine bir <xref:Microsoft.Office.Interop.Word.DocumentClass> nesne, örneği başvuru <xref:Microsoft.Office.Interop.Word.Document> bunun yerine arabirimi.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Office çözümlerinde sorun giderme](../vsto/troubleshooting-office-solutions.md)   
  [Office çözüm güvenliğinde sorunlarını giderme](../vsto/troubleshooting-office-solution-security.md)   
  [Office çözümü dağıtımında sorunlarını giderme](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: Seçenekler İletişim Kutusu, Projeler ve Çözümler, Derleme ve Çalıştırma
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b2d047201214e3a7cd4c14c61baa041840decd8
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: be6ac2a482e2e6fe52ad4458fec727f0da2dafe0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917802"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Seçenekler İletişim Kutusu, Projeler ve Çözümler, Derleme ve Çalıştırma
 

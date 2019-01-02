@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: ilk VSTO eklentinizi projesi oluşturma'
-ms.custom: ''
+title: 'İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931261"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>İzlenecek yol: ilk VSTO eklentinizi projesi oluşturma
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma
   Bu kılavuzda, Microsoft Office Project için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
@@ -123,13 +120,13 @@ ms.locfileid: "50671423"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bir temel VSTO eklentisi projesi oluşturduğunuz, VSTO eklentileri aşağıdaki konulardan geliştirme hakkında daha fazla bilgi edinebilirsiniz:  
   
--   VSTO eklentileri için proje'nda gerçekleştirebileceğiniz genel programlama görevlerini: [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).  
+-   VSTO eklentileri için proje'nda gerçekleştirebileceğiniz genel programlama görevleri: [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md).  
   
--   Projenin nesne modelini kullanma: [proje çözümleri](../vsto/project-solutions.md).  
+-   Proje nesne modeli kullanarak: [Proje çözümleri](../vsto/project-solutions.md).  
   
--   Derleme ve VSTO eklentileri için proje hata ayıklama: [yapı Office çözümleri](../vsto/building-office-solutions.md).  
+-   Derleme ve VSTO eklentileri için proje hata ayıklama: [Office çözümleri oluşturmanıza](../vsto/building-office-solutions.md).  
   
--   VSTO eklentileri için proje dağıtma: [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
+-   Project için VSTO eklentileri dağıtma: [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671423"
  [Office çözümleri oluşturun](../vsto/building-office-solutions.md)   
  [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
  [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)  
-  
-  

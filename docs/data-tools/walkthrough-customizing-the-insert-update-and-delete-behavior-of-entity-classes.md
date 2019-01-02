@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı varlık sınıflarının'
+title: 'İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı, varlık sınıfları'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c4512e0defab2d99e2e857c8cb09913b2b521ed8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894083"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: INSERT, update ve varlık sınıflarının silme davranışını özelleştirme
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: Varlık sınıflarının ekleme, güncelleştirme ve silme davranışını özelleştirme
 
 [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oluşturmak ve LINQ to SQL sınıfları (varlık sınıfları) bir veritabanındaki nesnelerde tabanlı düzenlemek için bir görsel tasarım yüzeyi sağlar. Kullanarak [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), SQL veritabanlarına erişim bir LINQ teknolojisi kullanabilirsiniz. Daha fazla bilgi için [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/).
 
@@ -75,7 +74,7 @@ SQL sınıflarına LINQ ile çalışma ve bir Windows formunda veri görüntüle
 
 1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
 
-2. Ya da genişletin **Visual C#**  veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
+2. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
 
 3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
 
@@ -104,7 +103,7 @@ Veritabanı tabloları tablolardan sürükleyerek eşlenen SQL sınıflarına LI
      Adlı bir varlık sınıfı **müşteri** oluşturulur. Müşteriler tablosundaki sütunlara karşılık gelen özelliklerle var. Varlık sınıfı adlı **müşteri** (değil **müşteriler**) olduğundan Müşteriler tablosundan tek bir müşteri temsil eder.
 
     > [!NOTE]
-    > Bu yeniden adlandırma adlandırılır *çoğullaştırma*. Bunu açılıp kapatılabilir [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md). Daha fazla bilgi için [nasıl yapılır: açma ve kapatma (O/R Tasarımcısı) çoğullaştırma kapatma](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Bu yeniden adlandırma adlandırılır *çoğullaştırma*. Bunu açılıp kapatılabilir [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md). Daha fazla bilgi için [nasıl yapılır: Çoğullaştırmayı açıp (O/R Tasarımcısı) kapatma](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3.  Üzerinde **derleme** menüsünde tıklatın **derleme UpdatingwithSProcsWalkthrough** Projeyi derlemek için.
 
@@ -269,12 +268,12 @@ Uygulama gereksinimlerinize bağlı olarak, SQL varlık sınıflarına LINQ olu�
 
 - Eşzamanlılık denetimi sırasında güncelleştirmeleri uygulayın. Bilgi için [iyimser eşzamanlılık: genel bakış](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [LINQ sorgularına giriş (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [(C#) LINQ sorgularına giriş](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext metotları](../data-tools/datacontext-methods-o-r-designer.md)
-- [Nasıl yapılır: güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [LINQ to SQL sorguları](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

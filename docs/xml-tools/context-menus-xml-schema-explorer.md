@@ -2,7 +2,6 @@
 title: XML Şeması Gezgini bağlam menüleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898902"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Bağlam menüleri (XML Şeması Gezgini)
 
 Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlemleri gerçekleştirmek için kullanılır.
 
-## <a name="node-type-schema-set"></a>Düğüm türü: şema kümesi
+## <a name="node-type-schema-set"></a>Düğüm türü: Şema kümesi
 
 Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekler açıklanmaktadır.
 
@@ -32,7 +31,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Genel öğeler Göster**|Bulur ve şema kümesindeki tüm genel öğeler vurgulanır.|
 |**Özellik Penceresi**|Açılır **özellikleri** penceresi (Bunu zaten açık değilse). Bu pencere, düğüm hakkında bilgi görüntüler.|
 
-## <a name="node-type-namespace"></a>Düğüm türü: Namespace
+## <a name="node-type-namespace"></a>Düğüm türü: Ad Alanı
  Aşağıdaki tabloda, bir ad alanı düğümü için kullanılabilir seçenekleri açıklar.
 
 |Seçenek|Açıklama|
@@ -43,7 +42,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Genel öğeler Göster**|Bulur ve seçilen ad alanındaki tüm genel öğeler vurgulanır.|
 |**Özellik Penceresi**|Açılır **özellikleri** penceresi (Bunu zaten açık değilse). Bu pencere, düğüm hakkında bilgi görüntüler.|
 
-## <a name="node-type-file"></a>Düğüm türü: dosya
+## <a name="node-type-file"></a>Düğüm türü: Dosya
  Aşağıdaki tabloda, bir dosya düğümü için kullanılabilir seçenekleri açıklar.
 
 |Seçenek|Açıklama|
@@ -65,7 +64,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Kodu Görüntüle**|XML Düzenleyicisi'nde seçili düğümü içeren dosyayı açar. XML şema Gezgini içinde seçili öğenin XML Düzenleyicisi'nde da seçilir.|
 |**Özellik Penceresi**|Açılır **özellikleri** penceresi (Bunu zaten açık değilse). Bu pencere, düğüm hakkında bilgi görüntüler.|
 
-## <a name="node-type-element"></a>Düğüm türü: öğesi
+## <a name="node-type-element"></a>Düğüm türü: Öğe
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra öğe düğümlerinin için bağlam menüsünü aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
@@ -77,7 +76,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Show değiştirme grubu Heads**|Değiştirme grubu üyeleri, bulur ve aşağıdaki gibi seçilen öğe için doğrudan ve dolaylı heads vurgular genel öğeler için:<br /><br /> Seçilen öğede belirtilen değiştirme grubu baş.<br />-Bir değiştirme grubu kendi baş öğede belirtilen head.|
 |**Örnek XML oluşturma**|Yalnızca genel öğeler için kullanılabilir. Genel öğe için bir örnek XML dosyası oluşturur.|
 
-## <a name="node-type-global-types"></a>Düğüm türü: genel türler
+## <a name="node-type-global-types"></a>Düğüm türü: Genel türler
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra, genel tür düğümleri için bağlam menüsünü aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
@@ -87,7 +86,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Tüm türetilmiş türleri Göster**|Bulur ve doğrudan ve dolaylı olarak seçilen türünden türetilen tüm türler vurgular.|
 |**Tüm üst öğeleri göster**|Tüm (Temel) üst türleri gösterir.|
 
-## <a name="node-type-attribute"></a>Düğüm türü: özniteliği
+## <a name="node-type-attribute"></a>Düğüm türü: Öznitelik
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra, öznitelik düğümleri için bağlam menüsünü aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
@@ -96,7 +95,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Özgün özniteliğe Git**|Öznitelik başvuruları için öznitelik gerçek tanımına gider.|
 |**Tüm başvuruları göster**|Genel öznitelikler için bulur ve tüm başvuruları vurgular (sahip diğer öznitelikleri `ref="selectedAttribute"`) seçilen öznitelik.|
 
-## <a name="node-type-attribute-group"></a>Düğüm türü: öznitelik grubu
+## <a name="node-type-attribute-group"></a>Düğüm türü: Öznitelik grubu
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra, öznitelik düğümleri gruplandırma için bağlam menüsünü aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|
@@ -105,7 +104,7 @@ Aşağıdaki tabloda, bir şema düğüm kümesi için kullanılabilen seçenekl
 |**Tüm üyeleri Göster**|Bulur ve öznitelik grubunun tüm üyeleri vurgular.|
 |**Tüm başvuruları göster**|Bulur ve tüm başvuruları vurgular (öznitelik grupları `ref="selectedAttributeGroup"`) seçili öznitelik grubu için.|
 
-## <a name="node-type-named-group"></a>Düğüm türü: Grup adı
+## <a name="node-type-named-group"></a>Düğüm türü: Adlandırılmış Grup
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra, adlandırılmış Grup düğümleri için bağlam menüsünü aşağıdaki seçeneklere sahiptir:
 
 |Seçenek|Açıklama|

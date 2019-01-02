@@ -1,8 +1,6 @@
 ---
 title: '&lt;entryPoint&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56996f83f0ac8d9e7b2bce81ab7e2c8e13faee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e37021c6c8492b0c882a84cbb88fe1cd9b5458e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950270"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; öğesi (ClickOnce uygulaması)
 Gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamayı bir istemci bilgisayarda çalıştırın.  
@@ -95,7 +93,7 @@ Gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../deployme
 ## <a name="remarks"></a>Açıklamalar  
  Bu öğe için derleme ve giriş noktasını tanımlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
 
- Kullanamazsınız `commandLine` uygulamanıza çalışma zamanında parametreleri geçirmek için. Sorgu dizesi parametreleri için erişebileceğiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın dağıtımından <xref:System.AppDomain>. Daha fazla bilgi için [nasıl yapılır: çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Kullanamazsınız `commandLine` uygulamanıza çalışma zamanında parametreleri geçirmek için. Sorgu dizesi parametreleri için erişebileceğiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın dağıtımından <xref:System.AppDomain>. Daha fazla bilgi için [nasıl yapılır: Bir çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
 
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde gösterilmiştir bir `entryPoint` öğesi için bir uygulama bildiriminde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md) konu.  

@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: çalışma sayfasındaki veritabanı kayıtları arasında kaydırma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677279"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897476"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl yapılır: çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl Yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
   Aşağıdaki yordam bir Microsoft Office Excel çalışma sayfasındaki tüm kayıtlarda gezinin son kullanıcının etkinleştirme denetimleri ile bir veritabanı tablosundan tek bir alan görüntülemek için tasarımcı kullanmayı gösterir.  
   
  Tasarımcı yalnızca belge düzeyinde projelerde kullanabilirsiniz. Ancak, ayrıca denetimler ekleme ve bunları programlı olarak çalışma zamanında verilere bağlayın. Daha fazla bilgi için [izlenecek yol: VSTO eklenti projesinde basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
@@ -48,5 +45,3 @@ ms.locfileid: "35677279"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

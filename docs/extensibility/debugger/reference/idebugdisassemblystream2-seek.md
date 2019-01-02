@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::Seek | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::Seek
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 375ff5c08c481061d217fbb0b3a4fac38d1e74c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f17bf830a9d7566ad00b062d81edcd7e1a242a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913126"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Ayrıştırılmış kod akış yönergeler belirtilen konuma göre verilen sayıda okuma imleci taşır.  
@@ -28,7 +25,7 @@ Ayrıştırılmış kod akış yönergeler belirtilen konuma göre verilen sayı
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-HRESULT Seek(   
+HRESULT Seek(   
    SEEK_START          dwSeekStart,  
    IDebugCodeContext2* pCodeContext,  
    UINT64              uCodeLocationId,  
@@ -37,7 +34,7 @@ HRESULT Seek(
 ```  
   
 ```csharp  
-int Seek(   
+int Seek(   
    enum_SEEK_START    dwSeekStart,  
    IDebugCodeContext2 pCodeContext,  
    ulong              uCodeLocationId,  

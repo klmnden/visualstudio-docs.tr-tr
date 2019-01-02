@@ -1,8 +1,6 @@
 ---
 title: MSBuild kavramları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, concepts
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961f7df72476293c101ceeacbafbb31c1084fb20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1aaaf8dfae7ed0fd3626779fa1ba33e795d9f1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913510"
 ---
 # <a name="msbuild-concepts"></a>MSBuild kavramları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Yapı platformunu yazılım nasıl oluşturduğunu denetler için kullanabileceğiniz temel bir XML Şeması sağlar. Bileşenleri derleme ve nasıl oluşturulacak oldukları belirtmek için bu MSBuild dört bölümden kullanın: özellikler, öğeler, görevleri ve hedefleri.  
@@ -32,8 +30,7 @@ ms.locfileid: "49892888"
 | [MSBuild görevleri](../msbuild/msbuild-tasks.md) | Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] CAN atomik yapı işlemleri gerçekleştirmek için. |
 | [Özellikleri ve öğeleri karşılaştırma](../msbuild/comparing-properties-and-items.md) | MSBuild özellikleri ve öğeleri karşılaştırır. İkisi de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır. |
 | [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md) | Açıklayan nasıl çıkılacağını bazı karakter [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] belirli bağlamlarda özel kullanım için ayırır. |
-| [İzlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir. |
-| [İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md) | MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio tümleşik geliştirme ortamı (IDE) kapatmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir. |
+| [İzlenecek yol: Sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir. |
+| [İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md) | MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio tümleşik geliştirme ortamı (IDE) kapatmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir. |
 | [MSBuild başvurusu](../msbuild/msbuild-reference.md) | Başvuru bilgilerini içeren belgelere bağlantılar. |
 | [MSBuild](../msbuild/msbuild.md) | Bir proje dosyası için XML Şeması genel bir bakış sunar ve yazılım derleme işlemlerini nasıl denetlediğini gösterir. |
-

@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e1b10fc38abaf497332746e1367f5727f0998023
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c9bbc913b98b4acddd04a2cc1e5b331848f85e2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893674"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti rollerini yapılandırma
 Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 
@@ -275,4 +274,3 @@ Aşağıdaki kod, yerel depolama alanına bir metin dosyası yazmak nasıl bir �
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Visual Studio'da Azure projeleri hakkında daha fazla bilgi edinmek [bir Azure projesi yapılandırma](vs-azure-tools-configuring-an-azure-project.md). Bulut hizmet şeması hakkında daha fazla bilgi edinmek [şema başvurusu](https://msdn.microsoft.com/library/azure/dd179398).
-

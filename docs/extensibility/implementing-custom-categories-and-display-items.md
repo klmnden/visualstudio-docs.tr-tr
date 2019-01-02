@@ -1,9 +1,6 @@
 ---
 title: Uygulama özel kategoriler ve öğeleri görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908442"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Özel kategoriler uygulamak ve öğeleri görüntüleme
 VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özel kategoriler ve görüntü öğeleri aracılığıyla tümleşik geliştirme ortamı (IDE).
@@ -116,7 +113,7 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 
      IDE kullanıcı değişiklik aşağıdaki uygun yöntemi çağıran **yazı tipleri ve renkler** sayfası. Örneğin, çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> yeni bir yazı tipi seçtiyseniz yöntemi.
 
-     veya
+     -veya-
 
 -   IDE değişiklikleri için yoklama.
 
@@ -135,5 +132,5 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Metin renklendirmesi yazı tipi ve renk bilgilerini al](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Yazı tipi ve renk ayarlarını erişim depolanan](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Nasıl yapılır: yerleşik yazı tipi ve renk şeması erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Nasıl yapılır: Yerleşik yazı tipi ve renk şeması erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Yazı tipi ve renk genel bakış](../extensibility/font-and-color-overview.md)

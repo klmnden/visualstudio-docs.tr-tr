@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Genel bakış ve adım 1 / Visual Studio'da yeni Python projesi oluşturma ve önkoşulları de dahil olmak üzere, Python özelliklerine ilişkin bir çekirdek kılavuz.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916052"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Öğretici: Visual Studio'da Python ile çalışma
 
@@ -26,17 +25,17 @@ Python güvenilir, esnek, öğrenin, tüm işletim sistemlerinde kullanmak için
 
 Visual Studio, Python için birinci sınıf dil desteği sağlar. Bu öğreticide, aşağıdaki adımlarla size yol gösterir:
 
-- [0. adım: yükleme](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [0. adım: Yükleme](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [1. adım: (Bu makale) bir Python projesi oluşturma](#step-1-create-a-new-python-project)
-- [2. adım: Yazma ve Visual Studio IntelliSense nasıl çalıştığını görürsünüz kodu çalıştırın](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [3. adım: etkileşimli REPL penceresinde daha fazla kod oluşturma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [4. adım: Visual Studio hata ayıklayıcıda tamamlanmış program çalıştırma](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [5. adım: paketleri yükleyin ve Python ortamlarını yönetme](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [2. adım: Yazma ve Visual Studio IntelliSense nasıl çalıştığını görürsünüz kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [3. adım: Etkileşimli REPL penceresinde daha fazla kod oluşturma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [4. adım: Visual Studio hata ayıklayıcıda tamamlanmış program çalıştır](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [5. adım: Paketleri yükleme ve Python ortamlarını yönetme](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [6. adım: Git ile çalışma](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
-## <a name="step-1-create-a-new-python-project"></a>1. adım: yeni Python projesi oluşturma
+## <a name="step-1-create-a-new-python-project"></a>1. Adım: Yeni Python projesi oluşturma
 
 A *proje* Visual Studio kaynak kodu, kaynaklar, yapılandırmaları vb. dahil olmak üzere tek bir uygulama oluşturmak için birlikte gelen tüm dosyaları nasıl yönettiği. Bir proje testini biçimlendirir ve tüm proje dosyaları yanı sıra birden çok proje arasında paylaşılan, dış kaynaklara arasındaki ilişkiyi tutar. Bu nedenle, uygulamanızı kolayca genişletin ve yalnızca geçici klasör, bir projenin ilişkileri yönetme komutlar daha çok daha kolay büyütün, metin dosyaları ve hatta kendi fikrinizi projeleri sağlar.
 

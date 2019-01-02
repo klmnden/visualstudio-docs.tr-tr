@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: bir Silverlight Web parçası oluşturma SharePoint için OData görüntüleyen | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir Silverlight Web parçası oluşturma, SharePoint için OData görüntüleyen | Microsoft Docs'
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 658417d07fdc0031a6e018d332bdbdd1d7edb1a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905721"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma
   SharePoint 2010 listesi verilerini OData yoluyla kullanıma sunar. SharePoint'te, OData hizmeti ListData.svc RESTful hizmeti tarafından uygulanır. Bu izlenecek yol, bir Silverlight uygulamasını barındıran bir SharePoint web bölümü oluşturma işlemi gösterilmektedir. Silverlight uygulaması ListData.svc kullanarak SharePoint duyuru listesi bilgilerini görüntüler. Daha fazla bilgi için [SharePoint Foundation REST arabirimi](http://go.microsoft.com/fwlink/?LinkId=225999) ve [açık veri Protokolü](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -71,7 +68,7 @@ ms.locfileid: "51296118"
   
 #### <a name="to-customize-the-silverlight-application"></a>Silverlight uygulaması özelleştirmek için
   
-1.  Silverlight uygulamasında System.Windows.Data bir bütünleştirilmiş kod başvurusu ekleyin. Daha fazla bilgi için [nasıl yapılır: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+1.  Silverlight uygulamasında System.Windows.Data bir bütünleştirilmiş kod başvurusu ekleyin. Daha fazla bilgi için [nasıl yapılır: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 2.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **başvuruları**ve ardından **hizmet Başvurusu Ekle**.  
   
@@ -235,5 +232,3 @@ ms.locfileid: "51296118"
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [SharePoint çözüm paketleri yükseltme dağıtma ve yayımlama](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
-  
-  

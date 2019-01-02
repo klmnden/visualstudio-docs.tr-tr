@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: DLL projesinde hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir DLL projesinde hata ayıklama | Microsoft Docs'
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854080"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Nasıl yapılır: Visual Studio'da bir DLL projesinden hata ayıklama (C#, C++, Visual Basic F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Nasıl Yapılır: Bir DLL projesinden Visual Studio'da hata ayıklama (C#, C++, Visual Basic F#)
 
 DLL projesinde hata ayıklama yollarından biri, çağıran uygulama DLL proje özelliklerinde belirtmektir. Ardından, DLL projesinden kendisini hata ayıklamaya başlayabilirsiniz. Çalışmak bu yöntem için uygulama, yapılandırmadan biri ile aynı konumda aynı DLL'nin çağırmanız gerekir. Bu sürüm, uygulamayı bulur ve farklı bir DLL sürümünü yükler, kesme noktalarınız içermez. DLL'lerinde hata ayıklama diğer yöntemleri için bkz. [hata ayıklama DLL projelerinde](../debugger/debugging-dll-projects.md).
   
-Yönetilen uygulamanızın yerel bir DLL çağırır veya yerel uygulamanızı yönetilmiş DLL'ye çağrı, DLL hem çağıran uygulama hata ayıklama yapabilirsiniz. Daha fazla bilgi için [nasıl yapılır: karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md).   
+Yönetilen uygulamanızın yerel bir DLL çağırır veya yerel uygulamanızı yönetilmiş DLL'ye çağrı, DLL hem çağıran uygulama hata ayıklama yapabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Yerel ve yönetilen DLL projelerinde arama uygulamaları belirtmek için farklı ayarları vardır. 
 
@@ -51,7 +49,7 @@ Yerel ve yönetilen DLL projelerinde arama uygulamaları belirtmek için farklı
    
 1. Tüm gerekli program bağımsız değişkenleri eklemek **komut satırı bağımsız değişkenlerini** kutusu.  
    
-1. Seçin **Tamam**.
+1. **Tamam**’ı seçin.
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Çağıran bir uygulama içinde yönetilen bir DLL projesi belirtin  
   

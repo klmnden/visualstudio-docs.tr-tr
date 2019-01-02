@@ -1,9 +1,8 @@
 ---
-title: 'Nasıl yapılır: ayarlama IDE erişilebilirlik seçeneklerini'
+title: 'Nasıl Yapılır: IDE erişilebilirlik seçeneklerini ayarlama'
 description: Visual Studio'da tümleşik geliştirme ortamı (IDE) kullanmak herkes için daha kolay hale getirecek erişilebilirlik seçeneklerini ayarlama görme zorluğu olan kişiler ve zorluğu yazılacak olan kişiler de dahil olmak üzere bilgi edinin.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906780"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Nasıl yapılır: ayarlama IDE erişilebilirlik seçeneklerini
+# <a name="how-to-set-ide-accessibility-options"></a>Nasıl Yapılır: IDE erişilebilirlik seçeneklerini ayarlama
 
 > [!TIP]
 > Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
@@ -71,7 +70,7 @@ Ayrıca, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] destekledi
     > [!NOTE]
     > Metin tabanlı araç pencereleri ve düzenleyiciler için metin boyutu Sıfırla tercih **Varsayılanlar kullan**.
 
-7.  Seçin **Tamam**.
+7.  **Tamam**’ı seçin.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>IDE içinde kullanılan renkleri değiştirebilir
 
@@ -90,9 +89,9 @@ Ayrıca, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] destekledi
 
 4.  Gelen **görüntü öğeleri**, görüntü gibi değiştirmek istediğiniz öğeyi seçin **düz metin**, **gösterge kenar boşluğunu**, **görünür boşluk**, **HTML öznitelik adı**, veya **XML özniteliği**.
 
-5.  Görüntü ayarlarını aşağıdaki seçeneklerden birini seçin: **öğe ön plan**, **öğesi arka plan**, ve **kalın**.
+5.  Görüntü ayarlarını, aşağıdaki seçeneklerden birini seçin: **Öğe ön plan**, **öğesi arka plan**, ve **kalın**.
 
-6.  Seçin **Tamam**.
+6.  **Tamam**’ı seçin.
 
 ## <a name="toolbars"></a>Araç Çubukları
 

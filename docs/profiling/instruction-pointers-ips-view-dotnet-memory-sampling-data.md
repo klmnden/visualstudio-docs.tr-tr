@@ -1,8 +1,6 @@
 ---
 title: Yönerge işaretçileri (IP) görünümü - .NET bellek örnekleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,37 +10,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b3d0d0334ed8073a125d8b2c435f8e5d58299d4
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 9d3ad0bc9239c0cee9bdb425f2a475391654125a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964169"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Yönerge işaretçileri (IP) görünümü - .NET bellek örnekleme verileri
-Profil oluşturma çalışması sırasında bellek tahsis derleme yönergeleri örnekleme yöntemini kullanarak toplanan .NET bellek ayırma profil oluşturma verileri IP'leri görünümünü listeler. Görünümün sütunlarını ayırmaları sayısı ve boyutu da listeler.  
+Örnekleme metodu kullanılarak tarafından toplanan .NET bellek ayırma profil oluşturma verisini IP'ler görünümünü ayrılan bellek profil oluşturma çalışması süresince derleme yönergeleri listeler. Görünümün sütunlarını ayrıca ayırmaların sayısı ve boyutu listeleyin.  
   
  Yalnızca özel değerleri listelenmektedir.  
   
 |Sütun|Açıklama|  
 |------------|-----------------|  
-|**İşlem kimliği**|İşlemi çalıştırmak profil oluşturma kimliği (PID).|  
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
 |**İşlem adı**|İşlemin adı.|  
-|**Modül adı**|Yönergeyi içeren modülü adı.|  
-|**Modül yolu**|Yönergeyi içeren modülü yolu.|  
-|**Kaynak dosya**|Yönerge içeren kaynak dosyası.|  
+|**Modül adı**|Yönergeyi içeren modül adı.|  
+|**Modül yolu**|Yönergeyi içeren modül yolu.|  
+|**Kaynak dosyası**|Yönergeyi içeren kaynak dosyası.|  
 |**İşlev adı**|İşlevin adı.|  
-|**İşlev satır numarası**|Bu işlev kaynak dosyadaki başlangıç satır sayısı.|  
+|**İşlevin satır numarası**|Satır numarası kaynak dosyada bu işlevin başlangıcı.|  
 |**İşlev adresi**|İşlev başlangıç adresi.|  
-|**Kaynak satırı başlangıç**|Ayırma gerçekleştiği kaynak dosyasında başlangıç satır numarası.|  
-|**Kaynak satır sonu**|Ayırma gerçekleştiği kaynak dosyasında bitiş satır numarası.|  
-|**Kaynak karakter başlangıç**|Ayırma gerçekleştiği kaynak dosyası satırı başlangıç karakteri uzaklığı.|  
-|**Kaynak karakter ucu**|Ayırma gerçekleştiği kaynak dosya satırında bir bitiş karakteri uzaklığı.|  
+|**Kaynak satır başlangıcı**|Ayırma oluşan kaynak dosyasındaki başlangıç satırı numarası.|  
+|**Kaynak satır sonu**|Ayırma oluşan kaynak dosyasındaki bitiş satır sayısı.|  
+|**Kaynak karakter başlangıcı**|Ayırma oluşan kaynak dosya satırında başlangıç karakteri uzaklığı.|  
+|**Kaynak karakter sonu**|Öğesindeki taban karakterin bitiş ayırma oluşan kaynak dosya satır uzaklığı.|  
 |**Yönerge adresi**|Yönerge adresi.|  
-|**Özel ayırmaları**|Yönerge tarafından oluşturulan nesneleri toplam sayısı.|  
-|**Özel ayırmaları %**|Yönerge tarafından ayrılan çalıştırmak profil oluşturulan tüm nesneler yüzdesi.|  
-|**Özel bayt sayısı**|Profil çalışmasını ayrılan belleğin bayt sayısı yönergesi tarafından ayrılan.|  
-|**Özel bayt %**|Yönerge tarafından ayrılan tüm profil çalıştırmak ayrılan belleği bayt yüzdesi.|  
+|**Dışlamalı ayırmalar**|Yönerge tarafından oluşturulan nesnelerin toplam sayısı.|  
+|**Dışlamalı ayırma yüzdesi**|Yönerge tarafından ayrılan profil oluşturma çalışmasında oluşturulan tüm nesneleri yüzdesi.|  
+|**Dışlamalı bayt**|Yönerge tarafından ayrılan bellek, profil oluşturma çalışmasında ayrılan bayt sayısı.|  
+|**Dışlamalı bayt yüzdesi**|Yönerge tarafından ayrılan tüm profil oluşturma çalışmasında ayrılan belleği bayt yüzdesi.|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view-sampling-data.md)

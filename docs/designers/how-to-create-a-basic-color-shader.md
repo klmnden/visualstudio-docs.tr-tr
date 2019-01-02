@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Temel Renk Gölgelendiricisi Oluşturma'
+title: 'Nasıl Yapılır: Temel renk gölgelendiricisi oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d81bbc96e2191d7e637c63a3d28364f957ed5e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924362"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950861"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Nasıl yapılır: temel renk gölgelendiricisi oluşturma
+# <a name="how-to-create-a-basic-color-shader"></a>Nasıl Yapılır: Temel renk gölgelendiricisi oluşturma
 
 Bu makalede gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) bir düz renk gölgelendiricisi oluşturma için nasıl kullanılacağını gösterir. Bu gölgelendirici için sabit bir RGB renk değeri son rengini ayarlar.
 
@@ -48,7 +47,7 @@ Belirli şekiller daha iyi önizlemeleri için bazı gölgelendiricileri sağlay
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır. 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md)
 - [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
 - [Gölgelendirici Tasarımcısı düğümleri](../designers/shader-designer-nodes.md)

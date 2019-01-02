@@ -1,9 +1,6 @@
 ---
 title: IDebugDefaultPort2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDefaultPort2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6d131ab24cc57af1846f89b61afa2d89ae2cacb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f371eb040ae2c160582093f07eacb2108bcb7b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930589"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Bu arabirim, bir bağlantı noktasının sunucu ve bildirim tesis erişmek için çeşitli yöntemler sağlar.  
+Bu arabirim bir bağlantı noktasının sunucusu ve bildirim olanakları erişmek için çeşitli yöntemler sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,27 +29,27 @@ IDebugDefaultPort2 : IDebugPort2
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Visual Studio erişim programları için hata ayıklama bağlantı noktası temsil etmek için bu arabirimi uygular. Uzaktan hata ayıklama işliyorsa özel bir bağlantı noktası tedarikçi da bu arabirimi uygulayabilirsiniz.  
+ Visual Studio erişim programları için hata ayıklama bağlantı temsil etmek için bu arabirimi uygular. Uzaktan hata ayıklama işliyorsa özel bağlantı noktası sağlayıcısı Ayrıca bu arabirim uygulayabilir.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Yöntemlere bağımsız değişken [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) arabirimi bu arabirim sağlar. Çağırma [QueryInterface](/cpp/atl/queryinterface) üzerinde bir [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) arabirimi bu arabirimin de edinebilirsiniz.  
+ Bağımsız değişken üzerinde yöntemleri [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) arabirimi bu arabirim sağlar. Çağırma [QueryInterface](/cpp/atl/queryinterface) üzerinde bir [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) arabirimi bu arabirim de edinebilirsiniz.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- İçinde tanımlanan yöntemler yanı sıra [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), aşağıdaki yöntemlerden bu arabirimi uygular:  
+ İçinde tanımlanan yöntemleri yanı sıra [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), aşağıdaki yöntemlerden bu arabirimi uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Bağlantı noktası bildirim arabirimi Bu bağlantı noktasından alır.|  
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Bu bağlantı noktasını barındıran sunucuya arabirimi alır.|  
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Bu bağlantı noktasını barındıran sunucuya arabirimini alır.|  
 |[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Bu bağlantı noktasını yerel makinede çalışıp çalışmadığını belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Adı "`IDebugDefaultPort2`" varsayılan bir bağlantı noktası göstermiyor biraz bir misnomer aynıdır. "IDebugPort3." çağrılabilir  
+ Adı "`IDebugDefaultPort2`" varsayılan bağlantı noktası göstermiyor biraz bir misnomer aynıdır. "IDebugPort3." çağrılabilir  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

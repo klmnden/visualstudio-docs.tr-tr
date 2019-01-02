@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama'
+title: 'İzlenecek yol: Bir modele erişen metin şablonunda hata ayıklama'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,32 +8,31 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914549"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Modele Erişen Metin Şablonunda Hata Ayıklama
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Bir modele erişen metin şablonunda hata ayıklama
 Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüştürürken, Değiştir veya metin şablonları bir etki alanına özgü dil çözümünde eklediğinizde, hatalar alabilirsiniz. Aşağıdaki örneklerde bir metin şablonunda hata ayıklama için yapabileceğiniz şeylerden bazıları gösterilmektedir.
 
 > [!NOTE]
->  Metin hakkında daha fazla bilgi için genel olarak, bkz: şablonları [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları hata ayıklama hakkında daha fazla bilgi için bkz. [izlenecek yol: bir metin şablonunda hata ayıklama](debugging-a-t4-text-template.md).
+>  Metin hakkında daha fazla bilgi için genel olarak, bkz: şablonları [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları hata ayıklama hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir metin şablonunda hata ayıklama](debugging-a-t4-text-template.md).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma
  Bu yordamda aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:
 
 - Ad: DebuggingTestLanguage
 
-- Çözüm şablonu: en az bir dil
+- Çözüm şablonu: Minimal dil
 
 - Dosya uzantısı: .ddd
 
 - Şirket adı: Fabrikam
 
-  Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Bir metin şablonu oluşturma
  Bir metin şablonu çözümünüze ekleyin.

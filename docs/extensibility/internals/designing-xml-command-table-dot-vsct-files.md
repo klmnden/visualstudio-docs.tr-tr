@@ -1,9 +1,6 @@
 ---
 title: XML komut tablosu tasarlama (. Vsct) dosyaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904302"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML komut tablosu (.vsct) dosyaları tasarlama
 Bir XML komut tablosu (*.vsct*) dosya VSPackage için komut öğelerin Görünüm ve düzeninin açıklar. Düğmeler, birleşik giriş kutuları, menüler, araç çubukları ve grupları komut öğelerinin komut öğeler içerir. Bu makalede, XML komut tablosu dosyaları, komut öğeleri ve menüler nasıl etkilediklerini ve bunların nasıl oluşturulacağı açıklanır.
@@ -28,7 +25,7 @@ Bir XML komut tablosu (*.vsct*) dosya VSPackage için komut öğelerin Görünü
 
  Çalıştırarak yeni bir VSPackage'ı oluşturduğunuzda [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] paketi şablonu şablon oluşturur bir *.vsct* gerekli öğeler dosyasıyla bir menü komutu, araç penceresi veya seçimlerinize bağlı olarak, özel bir düzenleyici. Bu *.vsct* dosya daha sonra değiştirilebilir belirli bir VSPackage gereksinimlerini karşılamak için. Değiştirme örnekleri için bir *.vsct* bkz [genişletmek menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).
 
- Yeni bir oluşturmak için boş *.vsct* bkz [nasıl yapılır: oluşturma bir *.vsct* dosya](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). XML öğeleri, öznitelikleri ve değerleri oluşturulduktan sonra komut öğesi düzeni tanımlamak için dosyaya ekleyin. Ayrıntılı bir XML şeması için bkz: [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md).
+ Yeni bir oluşturmak için boş *.vsct* bkz [nasıl yapılır: Oluşturma bir *.vsct* dosya](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). XML öğeleri, öznitelikleri ve değerleri oluşturulduktan sonra komut öğesi düzeni tanımlamak için dosyaya ekleyin. Ayrıntılı bir XML şeması için bkz: [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc ve .vsct dosyaları arasındaki farklar
  Anlamı XML arkasında bulunan etiketleri sırada bir *.vsct* dosya, bu etiketler artık kullanım dışı olarak aynı *.ctc* dosya biçimi, geliştirdikleri biraz farklıdır:
@@ -55,48 +52,48 @@ Bir XML komut tablosu (*.vsct*) dosya VSPackage için komut öğelerin Görünü
 
 - *Simgesi* bağımsız değişken isteğe bağlıdır.
 
-- Bölüm bit eşlem: Bu bölüm aynı olan bir *.ctc* artık bir dosya adı tarafından çekilir içinde Href aracılığıyla belirtebilirsiniz dışında dosya *vsct.exe* derleyici derleme zamanında.
+- Bit eşlem bölüm: Bu bölümde de aynı olan bir *.ctc* artık bir dosya adı tarafından çekilir içinde Href aracılığıyla belirtebilirsiniz dışında dosya *vsct.exe* derleyici derleme zamanında.
 
-- ResID: Eski kimliği kullanılan ve hala çalıştığı aynı olabilir kaynak bit eşlem *.ctc* dosyaları.
+- ResID: Eski kaynak kimliği kullanılan ve hala çalıştığı aynı olabilir bit eşlem *.ctc* dosyaları.
 
-- HRef: bit eşlem kaynağı için bir dosya adı belirtmek izin veren yeni bir yöntem. Kullanılan bölümüne atlayabilirsiniz. böylece tüm kullanılan olduğunu varsayar. Derleyicinin varsayılan dosya, sonra tüm ağ paylaşımları üzerindeki yerel kaynakları için arar ve tüm kaynakları tarafından tanımlanan **/I** geçin.
+- HRef: Bit eşlem kaynağı için bir dosya adı belirtmenizi sağlar bir yeni yöntem. Kullanılan bölümüne atlayabilirsiniz. böylece tüm kullanılan olduğunu varsayar. Derleyicinin varsayılan dosya, sonra tüm ağ paylaşımları üzerindeki yerel kaynakları için arar ve tüm kaynakları tarafından tanımlanan **/I** geçin.
 
-- Tuş: Artık bir öykünücü belirtmeniz gerekir. Bir belirtirseniz, derleyicinin düzenleyici ve öykünücü aynı olduğu varsayılır.
+- Tuş: Artık bir öykünücü belirtmeniz gerekmez. Bir belirtirseniz, derleyicinin düzenleyici ve öykünücü aynı olduğu varsayılır.
 
 - Keychord: Keychord bırakıldı. Yeni biçim *Key1, Değişiklik1, Key2, Mod2*.  Bir karakter, onaltılık veya VK sabiti belirtebilirsiniz.
        
 Yeni derleyici *vsct.exe*, her ikisi de derler *.ctc* ve *.vsct* dosyaları. Eski *ctc.exe* derleyici, ancak tanımıyor veya derleme *.vsct* dosyaları.
 
-Kullanabileceğiniz *vsct.exe* varolan dönüştürmek için derleyici *.cto* dosyasını bir *.vsct* dosya. Daha fazla bilgi için [nasıl yapılır: Varolan .cto dosyasından .vsct dosyası oluşturma](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+Kullanabileceğiniz *vsct.exe* varolan dönüştürmek için derleyici *.cto* dosyasını bir *.vsct* dosya. Daha fazla bilgi için [nasıl yapılır: Mevcut bir .cto dosyadan .vsct dosyası oluşturma](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
 ## <a name="the-vsct-file-elements"></a>.Vsct dosyası öğeleri
  Komut tablosu aşağıdaki hiyerarşi ve öğeleri sahiptir:
 
- [CommandTable öğesi](../../extensibility/commandtable-element.md): komutlarını, menü grupları ve menüler VSPackage'ı ile ilişkili tüm temsil eder.
+ [CommandTable öğesi](../../extensibility/commandtable-element.md): Tüm komutlar, menü grupları ve menüler VSPackage'ı ile ilişkili temsil eder.
 
- [Extern öğesi](../../extensibility/extern-element.md): ile birleştirmek istediğiniz herhangi bir dış .h dosyaları başvuran *.vsct* dosya.
+ [Extern öğesi](../../extensibility/extern-element.md): Birleştirmek istediğiniz herhangi bir dış .h dosyaları başvuran *.vsct* dosya.
 
- [Öğe dahil](../../extensibility/include-element.md): ile birlikte derlemek istediğiniz herhangi bir ek üstbilgi (.h) dosyalarına başvuran, *.vsct* dosya. A *.vsct* dosya içerebilir *.h* komutlarını, menü grupları ve menüler IDE veya başka bir VSPackage sağlayan tanımlayan sabitler içeren dosya.
+ [Öğe dahil](../../extensibility/include-element.md): İle birlikte derlemek istediğiniz herhangi bir ek üstbilgi (.h) dosyalarına başvuran, *.vsct* dosya. A *.vsct* dosya içerebilir *.h* komutlarını, menü grupları ve menüler IDE veya başka bir VSPackage sağlayan tanımlayan sabitler içeren dosya.
 
- [Commands öğesi](../../extensibility/commands-element.md): tüm yürütülebilecek tek tek komutlarla temsil eder. Her komut aşağıdaki dört alt öğeleri içerir:
+ [Commands öğesi](../../extensibility/commands-element.md): Tüm yürütülebilecek tek tek komutlarla temsil eder. Her komut aşağıdaki dört alt öğeleri içerir:
 
- [Menus öğesi](../../extensibility/menus-element.md): tüm menüleri ve araç çubuklarını VSPackage'ı temsil eder. Menü komutları grupları için kapsayıcılardır.
+ [Menus öğesi](../../extensibility/menus-element.md): Tüm menüleri ve araç çubuklarını VSPackage'ı temsil eder. Menü komutları grupları için kapsayıcılardır.
 
- [Groups öğesi](../../extensibility/groups-element.md): tüm grupları VSPackage'ı temsil eder. Grupları tek tek komutlarla koleksiyonlarıdır.
+ [Groups öğesi](../../extensibility/groups-element.md): Tüm grupları VSPackage'ı temsil eder. Grupları tek tek komutlarla koleksiyonlarıdır.
 
- [Buttons öğesi](../../extensibility/buttons-element.md): tüm komut düğmeleri ve menü öğeleri VSPackage'ı temsil eder. Düğme komutları ile ilişkilendirilebilen visual denetimlerdir.
+ [Buttons öğesi](../../extensibility/buttons-element.md): Tüm komut düğmeleri ve menü öğeleri VSPackage'ı temsil eder. Düğme komutları ile ilişkilendirilebilen visual denetimlerdir.
 
- [Bitmaps öğesi](../../extensibility/bitmaps-element.md): tüm bit eşlemler tüm düğmelerin VSPackage'ı temsil eder. Bit eşlemler yanındaki veya bağlama komut düğmeleri görüntüleme resimleri ' dir.
+ [Bitmaps öğesi](../../extensibility/bitmaps-element.md): Tüm bit eşlemler tüm düğmelerin VSPackage'ı temsil eder. Bit eşlemler yanındaki veya bağlama komut düğmeleri görüntüleme resimleri ' dir.
 
- [CommandPlacements öğesi](../../extensibility/commandplacements-element.md): Burada tek tek komutlarla tarihli, VSPackage menülerde ek konumları belirtir.
+ [CommandPlacements öğesi](../../extensibility/commandplacements-element.md): Özel komutlar, VSPackage menülerde burada tarihli ek konumlarını gösterir.
 
- [VisibilityConstraints öğesi](../../extensibility/visibilityconstraints-element.md): bir komut hiç zaman ya da belirli bir iletişim kutusu veya pencere görüntülendiğinde gibi yalnızca belirli bağlamlarda, görüntüler olup olmadığını belirtir. Belirtilen bağlamı etkin olduğunda, menüler ve bu öğe için bir değere sahip komutlar görüntülenir. Komutu her zaman görüntülemek için varsayılan davranıştır.
+ [VisibilityConstraints öğesi](../../extensibility/visibilityconstraints-element.md): Bir komut hiç zaman ya da belirli bir iletişim kutusu veya pencere görüntülendiğinde gibi yalnızca belirli bağlamlarda, görüntüler olup olmadığını belirtir. Belirtilen bağlamı etkin olduğunda, menüler ve bu öğe için bir değere sahip komutlar görüntülenir. Komutu her zaman görüntülemek için varsayılan davranıştır.
 
- [KeyBindings öğesi](../../extensibility/keybindings-element.md): komutlar için herhangi bir tuş bağlamaları belirtir. Gibi bir komut yürütmek için basılması gereken diğer bir deyişle, bir veya daha fazla anahtar birleşimlerini **Ctrl**+**S**.
+ [KeyBindings öğesi](../../extensibility/keybindings-element.md): Komutlar için herhangi bir tuş bağlamaları belirtir. Gibi bir komut yürütmek için basılması gereken diğer bir deyişle, bir veya daha fazla anahtar birleşimlerini **Ctrl**+**S**.
 
- [UsedCommands öğesi](../../extensibility/usedcommands-element.md): bildirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı geçerli VSPackage'ı etkin olduğunda belirtilen komut başka kod tarafından uygulanan olsa da, bu komutu uygulamasını sağlar.
+ [UsedCommands öğesi](../../extensibility/usedcommands-element.md): Bildirir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ortamı geçerli VSPackage'ı etkin olduğunda belirtilen komut başka kod tarafından uygulanan olsa da, bu komutu uygulamasını sağlar.
 
- [Symbols öğesi](../../extensibility/symbols-element.md): GUID kimlikleri Komutlarınızın paketteki tüm ve sembol adlarını içerir.
+ [Symbols öğesi](../../extensibility/symbols-element.md): Komutlarınızın paketteki tüm GUID kimlikleri ve sembol adlarını içerir.
 
 ## <a name="vsct-file-design-guidelines"></a>.vsct dosyası tasarım yönergeleri
  Başarıyla tasarım bir *.vsct* dosyasında, aşağıdaki yönergeleri izleyin.

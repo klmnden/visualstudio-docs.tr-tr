@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915432"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Bir VS Uzantısında Metin Dönüştürmeyi Çağırma
 Bir menü komutu gibi bir Visual Studio uzantısı yazıyorsanız veya [etki alanına özgü dil](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), metin şablonlarını dönüştürmek için metin şablonu oluşturma hizmetini kullanabilirsiniz. Alma <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> hizmet ve bunu <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
@@ -135,8 +134,8 @@ Sample text.
  Türetilen bir parametre sınıfını kullanarak değerleri bir metin şablonu dışına geçirebilirsiniz <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>İlgili Konular
- Önceden işlenmiş metin şablonundan metin oluşturmak için: çağrı `TransformText()` oluşturulan sınıfın yöntemi. Daha fazla bilgi için [T4 metin şablonları ile çalışma süresi metni oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Önceden işlenmiş bir metin şablonundan metin oluşturmak için: Çağrı `TransformText()` oluşturulan sınıfın yöntemi. Daha fazla bilgi için [T4 metin şablonları ile çalışma süresi metni oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Visual Studio uzantısı dışında metin oluşturmak için: özel bir ana bilgisayar tanımlayın. Daha fazla bilgi için [özel konak kullanarak metin şablonlarını işleme](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Visual Studio uzantısı dışında metin oluşturmak için: Özel bir ana bilgisayar tanımlayın. Daha fazla bilgi için [özel konak kullanarak metin şablonlarını işleme](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Daha sonra derlenmiş ve yürütülen kaynak kodu oluşturmak için: çağrı `t4.PreprocessTemplate()` yöntemi <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+ Daha sonra derlenebilecek ve yürütülebilecek kaynak kodu oluşturmak için: Çağrı `t4.PreprocessTemplate()` yöntemi <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

@@ -1,8 +1,6 @@
 ---
 title: Idiaenumframedata::Next | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55320b4f07eb2acda1d46875fa6f3bd5eefe2813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6a2c4c2a80ea5186b4a3036491bd64a6531d753
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951569"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 Belirtilen sayıda sabit listesi sırası çerçeve veri öğelerini alır.  
@@ -27,7 +25,7 @@ Belirtilen sayıda sabit listesi sırası çerçeve veri öğelerini alır.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG           celt,   
    IDiaFrameData** rgelt,  
    ULONG*          pceltFetched  

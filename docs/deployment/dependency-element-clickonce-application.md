@@ -1,8 +1,6 @@
 ---
 title: '&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898630"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması)
 Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.  
@@ -129,7 +127,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 |-----------------------| - |
 | `dependencyType` | Gerekli. Bağımlılık türünü belirtir. Geçerli değerler `preprequisite` ve `install`. Bir `install` derlemenin bir parçası olarak yüklü [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. A `prerequisite` derleme genel derleme önbelleğinde (GAC) önce mevcut olmalıdır [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama yükleyebilirsiniz. |
 | `allowDelayedBinding` | Gerekli. Derleme programlı olarak çalışma zamanında yüklenebilir olup olmadığını belirtir. |
-| `group` | İsteğe bağlı. Varsa `dependencyType` özniteliği `install`, isteğe bağlı olarak yalnızca yükleme derlemelerin adlandırılmış bir grubu belirtir. Daha fazla bilgi için [izlenecek yol: ClickOnce dağıtım API'sini kullanarak tasarımcı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Varsa kümesine `framework` ve `dependencyType` özniteliği `prerequisite`, .NET Framework'ün bir parçası olarak derlemeyi belirtir. Genel Derleme Önbelleği (GAC) Bu derleme için yüklerken işaretlenmediği [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ve sonraki sürümler. |
+| `group` | İsteğe bağlı. Varsa `dependencyType` özniteliği `install`, isteğe bağlı olarak yalnızca yükleme derlemelerin adlandırılmış bir grubu belirtir. Daha fazla bilgi için [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Varsa kümesine `framework` ve `dependencyType` özniteliği `prerequisite`, .NET Framework'ün bir parçası olarak derlemeyi belirtir. Genel Derleme Önbelleği (GAC) Bu derleme için yüklerken işaretlenmediği [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ve sonraki sürümler. |
 | `codeBase` | Ne zaman gerekli `dependencyType` özniteliği `install`. Bağımlı derleme yolu. Mutlak bir yol veya bildirim kodunun göreli bir yol, temel olabilir. Bu yol, geçerli olması için bütünleştirilmiş kod bildirimi sırada geçerli bir URI olmalıdır. |
 | `size` | Ne zaman gerekli `dependencyType` özniteliği `install`. Bağımlı derlemenin bayt cinsinden boyutu. |
 

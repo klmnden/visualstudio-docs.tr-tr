@@ -2,7 +2,6 @@
 title: Visual Basic Varsayılanları, Projeler, Seçenekler İletişim Kutusu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VBDefaults
@@ -16,34 +15,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d211b69a4fb8ce988298a39310f103574b563721
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d33d48d1579c01c4d1df298d0822a66dd4c46fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892377"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Visual Basic Varsayılanları, Projeler, Seçenekler İletişim Kutusu
-Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir proje oluşturduğunuzda, belirtilen seçenek deyimleri proje başlığı Kod Düzenleyicisi'nde eklenir. Seçenekler tüm Visual Basic projeleri için geçerlidir.
+Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir proje oluşturulduğunda, belirtilen seçenek deyimleri Kod Düzenleyicisi'nde proje üst bilgi eklenir. Seçenekler, tüm Visual Basic projeleri için geçerlidir.
 
- Bu iletişim kutusunu'na erişmek için **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **projeler ve çözümler** klasörünü ve ardından **VB varsayılanları**.
+ Bu iletişim kutusunda, erişim için **Araçları** menüsünde tıklayın **seçenekleri**, genişletin **projeler ve çözümler** klasörünü ve ardından **VB varsayılanları**.
 
- **Açık seçeneği**
+ **Seçeneği açık**
 
- Derleyici varsayılan ayarlar, böylece değişkenlerin açık bildirimler gereklidir. Varsayılan olarak, **Option Explicit** ayarlanır **üzerinde**. Daha fazla bilgi için bkz: [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+ Derleyici varsayılanı, değişkenlerin açık bildirimler gerekli olacak şekilde ayarlar. Varsayılan olarak, **Option Explicit** ayarlanır **üzerinde**. Daha fazla bilgi için [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
- **Option Strict**
+ **Katı tanımlama seçeneği**
 
- Derleyici varsayılan ayarlar, böylece açık daraltma dönüşümleri gereklidir ve geç bağlama verilmez. Varsayılan olarak, **Option Strict** ayarlanır **devre dışı**. Daha fazla bilgi için bkz: [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+ Derleyicinin varsayılan ayarlar, böylece açık bir daraltma dönüştürmelerini gereklidir ve geç bağlama izin verilmiyor. Varsayılan olarak, **Option Strict** ayarlanır **kapalı**. Daha fazla bilgi için [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
- **Seçenek karşılaştırma**
+ **Karşılaştırma seçeneği**
 
- Dize karşılaştırmaları için derleyici varsayılan ayarlar: ikili (büyük küçük harfe duyarlı) veya metin (büyük küçük harfe duyarsızdır.) Varsayılan olarak, **seçeneği karşılaştırmak** ayarlanır **ikili**. Daha fazla bilgi için bkz: [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+ Derleyici varsayılanı dize karşılaştırmaları için ayarlar: ikili dosya (büyük-küçük harfe duyarlı) veya metin (büyük/küçük harfe.) Varsayılan olarak, **Option Compare** ayarlanır **ikili**. Daha fazla bilgi için [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Option Infer**
 
- Yerel türü çıkarımı derleyici varsayılan ayarlar. Varsayılan olarak, **Option Infer** ayarlanır **üzerinde** yeni oluşturulan projeleri için ve çok **kapalı** Visual Basic önceki sürümlerinde oluşturulan geçirilen projeler için. Daha fazla bilgi için bkz: [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+ Yerel tür çıkarımı derleyici varsayılan ayarlar. Varsayılan olarak, **Option Infer** ayarlanır **üzerinde** yeni oluşturulan projelerde ve çok **kapalı** Visual Basic'in önceki sürümlerinde oluşturulan geçirilen projeleri için. Daha fazla bilgi için [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Çözümler ve projeler](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)

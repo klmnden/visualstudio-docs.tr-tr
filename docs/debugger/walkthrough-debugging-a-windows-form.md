@@ -2,7 +2,6 @@
 title: Bir Windows formunda hata ayıklama | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d0e04b407303b1d6f98862fdef36bb8228fd780
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851975"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek Yol: Windows Formunda Hata Ayıklama
+# <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek yol: Bir Windows formunda hata ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.  
   
  İlk olarak, herhangi bir açık çözümü kapatmanız gerekir.  

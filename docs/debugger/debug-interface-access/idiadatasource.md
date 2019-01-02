@@ -1,8 +1,6 @@
 ---
 title: Idiadatasource | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5126ea6da80bb6c029f9237ff01dfc805c9eaf6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 837372903dd1435c9cc5603805a85ce608481fc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904263"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
-Hata ayıklama simgeleri ın kaynak erişimi başlatır.  
+Hata ayıklama sembolleri bir kaynak erişim başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-IDiaDataSource : IUnknown  
+IDiaDataSource : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
@@ -36,17 +34,17 @@ IDiaDataSource : IUnknown
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Son yükleme hatası için dosya adını alır.|  
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Açılır ve hata ayıklama veri kaynağı olarak program veritabanı (.pdb) dosyası hazırlar.|  
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Açılır ve program veritabanı (.pdb) dosyası sağlanan imza bilgileri eşleştiğini doğrular; hata ayıklama veri kaynağı olarak .pdb dosyasını hazırlar.|  
-|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Açılır ve.exe/.dll dosyayla ilişkili hata ayıklama veri hazırlar.|  
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bellek içi veri akışı erişilen bir program veritabanı (.pdb) dosyasında depolanan hata ayıklama verileri hazırlar.|  
-|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Simgeler sorgulama için bir oturum açar.|  
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Açılır ve hata ayıklama veri kaynağı olarak bir program veritabanı (.pdb) dosyası hazırlar.|  
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Açılır ve program veritabanı (.pdb) dosyası, sağlanan imza bilgileri eşleştiğini doğrular. .pdb dosyası, hata ayıklama veri kaynağı olarak hazırlar.|  
+|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Açılır ve.exe/.dll dosya ile ilgili hata ayıklama verileri hazırlar.|  
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Bir bellek içi veri akışı yoluyla erişilen bir program veritabanı (.pdb) dosyası içinde depolanan hata ayıklama verileri hazırlar.|  
+|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Semboller sorgulamak için bir oturum açar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yükleme yöntemlerinden birini çağrısına `IDiaDataSource` arabirimi simgesi Kaynak açılır. Başarılı bir çağrı [Idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md) yöntemi döndürür bir [Idiasession](../../debugger/debug-interface-access/idiasession.md) veri kaynağı sorgulanırken destekleyen arabirimi. Load yöntemi dosya ile ilgili bir hata verirse sonra [Idiadatasource::get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) yöntemi dönüş değeri şu hata ile ilişkilendirilmiş dosya adını içerir.  
+ Yükleme yöntemlerinden birini çağrısı `IDiaDataSource` sembol kaynak arabirimi açılır. Başarılı bir çağrı [Idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md) yöntemi döndürür bir [Idiasession](../../debugger/debug-interface-access/idiasession.md) veri kaynağının desteklediği arabirimi. Load yöntemi bir dosya ile ilgili hata verirse sonra [Idiadatasource::get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) yöntemi dönüş değeri hata ile ilgili dosya adını içerir.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırılarak alınır `CoCreateInstance` sınıf tanımlayıcısı işleviyle `CLSID_DiaSource` ve arabirim kimliği `IID_IDiaDataSource`. Bu örnek, bu arabirimin nasıl elde gösterir.  
+ Bu arabirim çağırılarak alınır `CoCreateInstance` sınıfı tanımlayıcısına sahip işlev `CLSID_DiaSource` ve arabirim kimliği `IID_IDiaDataSource`. Bu örnek, bu arabirimi nasıl aldıklarına gösterir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -65,9 +63,9 @@ if (FAILED(hr))
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Dia2.h  
+ Üst bilgi: dia2.h  
   
- Kitaplığı: diaguids.lib  
+ Kitaplık: diaguids.lib  
   
  DLL: msdia80.dll  
   

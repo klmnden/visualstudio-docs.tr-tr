@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme'
-ms.custom: ''
+title: 'İzlenecek yol: Bir uygulamayı özel görev bölmesinden otomatikleştirme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915094"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>İzlenecek yol: uygulamayı özel görev bölmesinden otomatikleştirme
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>İzlenecek yol: Bir uygulamayı özel görev bölmesinden otomatikleştirme
   Bu yönerge, PowerPoint otomatikleştiren bir özel görev bölmesi oluşturma işlemini gösterir. Kullanıcı tıkladığında özel görev bölmesi tarihler bir slayta ekler. bir <xref:System.Windows.Forms.MonthCalendar> üzerinde özel görev bölmesi denetimi.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "35676747"
   
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
   
-1.  Adlı bir PowerPoint VSTO eklentisi projesi oluşturun **MyAddIn**, PowerPoint eklenti proje şablonunu kullanarak. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adlı bir PowerPoint VSTO eklentisi projesi oluşturun **MyAddIn**, PowerPoint eklenti proje şablonunu kullanarak. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] açılır **ThisAddIn.cs** veya **ThisAddIn.vb** ekler ve kod dosyası **MyAddIn** için proje **Çözüm Gezgini**.  
   
@@ -139,14 +136,12 @@ ms.locfileid: "35676747"
   
 -   Özel görev bölmesi VSTO eklentisi için farklı bir uygulama oluşturun. Özel görev bölmeleri destekleyen uygulamalar hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).  
   
--   Özel görev bölmesini görüntülemek veya gizlemek için kullanılan bir Şerit düğmesi oluşturun. Daha fazla bilgi için [izlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Özel görev bölmesini görüntülemek veya gizlemek için kullanılan bir Şerit düğmesi oluşturun. Daha fazla bilgi için [izlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
 -   Özel görev bölmesi Outlook'ta açtığınız her e-posta iletisi oluşturun. Daha fazla bilgi için [izlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Özel görev bölmeleri](../vsto/custom-task-panes.md)   
- [Nasıl yapılır: uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [İzlenecek yol: özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  

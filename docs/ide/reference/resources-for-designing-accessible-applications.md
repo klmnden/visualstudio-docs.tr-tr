@@ -3,7 +3,6 @@ title: Erişilebilir uygulamalar tasarlama için kaynaklar
 description: Kullanılacak engelliler için daha kolay hale getirmek için erişilebilir uygulamalar oluşturmayı öğrenin.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959631"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir uygulamalar tasarlama için kaynaklar
 
@@ -37,7 +36,7 @@ Erişilebilir bir Windows uygulamaları ve Web siteleri geliştirmek için eriş
 
 ## <a name="windows-applications"></a>Windows uygulamaları
 
-* **[İzlenecek yol: erişilebilir bir Windows tabanlı uygulama oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  bu makalede bir örnek Windows "Windows için sertifikalıdır" logosunu beş erişilebilirlik gereksinimleri dahil olmak üzere adım adım yönergeler sağlar. uygulama.
+* **[İzlenecek yol: Erişilebilir bir Windows tabanlı uygulama oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  bu makalede örnek bir Windows uygulamasında "Windows için sertifikalıdır" logosunu beş erişilebilirlik gereksinimleri dahil etmek için adım adım yönergeler sağlar.
 
 * **Yönergeler için klavye kullanıcı arabirimi tasarım** Bu teknik makaleye kullanıcılar klavyeden gidebilir bir Windows uygulaması tasarım açıklar. Daha fazla bilgi için [yönergeleri klavye kullanıcı arabirimi tasarımı](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 

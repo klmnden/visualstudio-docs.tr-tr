@@ -1,9 +1,6 @@
 ---
 title: Visual Studio'da Office ve SharePoint geliştirme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 76043da9815becd6b5cb25a2117b4ff746d6d242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898654"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir veya kullanıcılar indirir, eklenti [Office Store](https://store.office.com/) veya Kurumsal katalog veya yüklemek, kullanıcıların .NET Framework tabanlı bir çözüm oluşturarak bir bilgisayar.  
@@ -109,5 +106,3 @@ ms.locfileid: "50671709"
 |--------|---------|  
 |SharePoint çözümleri SharePoint eklentileri ile karşılaştırın.|[SharePoint eklentileri'nde SharePoint çözümleri ile karşılaştırılan](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Bir SharePoint çözümünü oluşturun.|[SharePoint çözümleri oluşturma](../sharepoint/create-sharepoint-solutions.md)|  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955561"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce dağıtımlarında sunucu ve istemci yapılandırma sorunları
 Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız Windows tanımadığı bir dosya içeriyorsa, bir Microsoft Word dosyası gibi dosya aktarmak IIS reddeder ve dağıtımınızın başarılı olmaz.  
@@ -104,15 +102,15 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
 | https:// | Yükleyebileceğiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bu protokolü kullanarak uygulama. |
 | File:// | Yükleyebileceğiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bu protokolü kullanarak uygulama. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2'de: Windows Güvenlik Duvarı  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2 için: Windows Güvenlik Duvarı  
  Varsayılan olarak, Windows XP SP2, Windows Güvenlik Duvarı'nı etkinleştirir. Windows XP yüklü olduğu bir bilgisayarda uygulama geliştiriyorsanız, yayımlama ve çalıştırmak koruyabilmeyi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] IIS çalıştıran sunucunun yerel uygulamalar. Ancak, Windows Güvenlik Duvarı açık değilse, IIS çalıştıran başka bir bilgisayardan o sunucuya erişemez. Windows Güvenlik Duvarı'nı yönetme hakkında yönergeler için Windows yardımına bakın.  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: FrontPage sunucu uzantılarını etkinleştir  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server için: FrontPage sunucu uzantılarını etkinleştir  
  Microsoft FrontPage Server Extensions HTTP kullanan bir Windows Web sunucusundaki uygulama yayımlama için gereklidir.  
 
  Varsayılan olarak, FrontPage Server Extensions yüklü Windows Server yok. Kullanmak istiyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] FrontPage Server Extensions ile HTTP kullanan bir Windows Server Web sunucusuna yayımlamak için FrontPage Server Extensions önce yüklemelisiniz. Windows Server'da sunucunuzu yönetin Yönetim Aracı'nı kullanarak yükleme gerçekleştirebilirsiniz.  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Kilitli içerik türleri  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server için: Kilitlenmiş içerik türleri  
  IIS üzerinde [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] kilitler bilinen belirli içerik türlerini hariç tüm dosya türleri (örneğin, *.htm*, *.html*, *.txt*, vb.). Dağıtımını etkinleştirmek için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bu sunucuyu kullanan uygulamalar, dosya türü yüklenmesine izin verecek IIS ayarlarını değiştirmeniz gerekir. *.application*, *.manifest*ve herhangi bir özel dosya türleri uygulamanız tarafından kullanılan.  
 
  Bir IIS sunucusu kullanarak dağıtırsanız, çalıştırma *inetmgr.exe* ve varsayılan Web sayfası için yeni bir dosya türü ekleyin:  

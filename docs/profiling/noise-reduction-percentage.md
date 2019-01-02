@@ -1,8 +1,6 @@
 ---
 title: Gürültü azaltma yüzdesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.filter
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 184a9b8e132ea1254edc7e9b88139386cc8cf36e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8da0c93f0593adec25528ac2e00dce75417e221
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945879"
 ---
 # <a name="noise-reduction-percentage"></a>Gürültü Azaltma Yüzdesi
-Varsayılan olarak, gürültü azaltma yüzdesi ayarının değeri 2'dir. Bu ayar eşit veya daha büyük dahil süre yüzdesi olan girişleri çağrısı ağacında gösterilir. Ayarı değiştirerek çağrısı ağacında görüntülenen girdi sayısı kontrol edebilirsiniz. Örneğin, değer 10'a değiştirmek dahil bir süre % 10'a eşit veya daha büyük olan çağrı ağacı girişleri gösterir. Ayarın değerini artırarak işleminizi performans üzerinde büyük etkileri olan girişleri odaklanabilirsiniz.
+Varsayılan olarak, gürültü azaltma yüzdesi ayarının değeri 2'dir. Büyüktür veya eşittir Bu ayar için kapsamlı süre yüzdesi olan girişleri çağrı ağacında gösterilmektedir. Ayarı değiştirerek, çağrı ağacında görüntülenen giriş sayısını kontrol edebilirsiniz. Örneğin, 10 değeri değiştirilirse büyüktür veya eşittir % 10 için kapsamlı bir süresi olan çağrı ağacı girişleri gösterir. Bir ayarın değerini artırarak, işlemin performansını etkiler büyük girişlerdeki odaklanabilirsiniz.

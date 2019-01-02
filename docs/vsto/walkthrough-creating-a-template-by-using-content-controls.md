@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: içerik denetimlerini kullanarak şablon oluşturma'
-ms.custom: ''
+title: 'İzlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931992"
 ---
-# <a name="walkthrough-create-a-template-by-using-content-controls"></a>İzlenecek yol: içerik denetimlerini kullanarak şablon oluşturma
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>İzlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma
   Bu yönerge, yapılandırılmış ve yeniden kullanılabilir içerik bir Microsoft Office Word şablonu oluşturmak için içerik denetimlerini kullanan bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -59,7 +56,7 @@ ms.locfileid: "49833193"
   
 ### <a name="to-create-a-new-word-template-project"></a>Yeni bir Word şablonu projesi oluşturmak için  
   
-1.  Adlı bir Word şablonu projesi oluşturun **ne MyBuildingBlockTemplate**. Sihirbazda, çözümdeki bir yeni belge oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Adlı bir Word şablonu projesi oluşturun **ne MyBuildingBlockTemplate**. Sihirbazda, çözümdeki bir yeni belge oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Yeni bir Word şablonu Tasarımcısı'nda açılır ve ekler **ne MyBuildingBlockTemplate** için proje **Çözüm Gezgini**.  
   
@@ -235,15 +232,13 @@ ms.locfileid: "49833193"
 ## <a name="next-steps"></a>Sonraki adımlar  
  Bu konu başlığından içerik denetimleri kullanma hakkında daha fazla bilgi edinebilirsiniz:  
   
--   İçerik denetimleri, bir belgeye ekli özel XML parçaları olarak da adlandırılan, XML parçalarının bağlayın. Daha fazla bilgi için [izlenecek yol: içerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   İçerik denetimleri, bir belgeye ekli özel XML parçaları olarak da adlandırılan, XML parçalarının bağlayın. Daha fazla bilgi için [izlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)   
  [İçerik denetimleri](../vsto/content-controls.md)   
  [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

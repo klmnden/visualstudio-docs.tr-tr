@@ -1,12 +1,11 @@
 ---
-title: 'Nasıl yapılır: oluşturma ve katılımsız yükleme çalıştırma | Microsoft Docs'
+title: 'Nasıl Yapılır: Oluşturma ve katılımsız yükleme çalıştırma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,14 +16,14 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951936"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Nasıl Yapılır: Katılımsız Visual Studio Yüklemesi Oluşturma ve Çalıştırma
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Nasıl Yapılır: Oluşturma ve Visual Studio katılımsız yükleme çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçin yükleme uygulamasını çalıştırarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir katılımsız (yani sessiz özelleştirilmiş olan) olarak DVD gibi medya yerine bir intranet üzerinden yükleme. Bu konu nasıl hazırlayacağınızı açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu tür bir ağ paylaşımından yükleme.
@@ -119,7 +118,7 @@ ms.locfileid: "53065525"
 
 2. Açık **Başlat** menüsünü ve ardından **çalıştırmak**.
 
-3. Aşağıdaki metni girin: \\ \\ *ServerName*\IDEinstall\vs_*ürün*.exe/adminfile PathToAdmindeployment.xml dosyası
+3. Aşağıdaki metni girin: \\\\*ServerName*\IDEinstall\vs_*ürün*.exe/adminfile PathToAdmindeployment.xml dosyası
 
     AdditionalParametersAsNeeded
 

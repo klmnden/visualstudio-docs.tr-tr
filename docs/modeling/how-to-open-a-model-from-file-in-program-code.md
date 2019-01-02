@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Program Kodunda Dosyadan Model Açma'
+title: 'Nasıl Yapılır: Program Kodunda Dosyadan Model Açma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938076"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl Yapılır: Program Kodunda Dosyadan Model Açma
 DSL model herhangi bir uygulama açabilirsiniz.
 
  Bir Visual Studio Uzantısında, bu amaçla Modelbus'ı kullanabilirsiniz. ModelBus bir model veya bir model öğelerini ve taşınmışsa, model bulma için standart mekanizması sağlar. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
@@ -42,7 +41,7 @@ DSL model herhangi bir uygulama açabilirsiniz.
 
     -   İşbu sözleşmenin görmüyorsanız **.NET** sekmesinde **Add References** iletişim kutusu, tıklayın **Gözat** gidin ve sekme `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   DSL projenizin bin klasörü altında bulabilirsiniz, DSL derleme. Adı genellikle formu şöyledir: *şirketiniz*. *Projeniz*`.Dsl.dll`.
+-   DSL projenizin bin klasörü altında bulabilirsiniz, DSL derleme. Adı genellikle formu şöyledir: *Şirketiniz*. *Projeniz*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>DSL önemli sınıfları
  DSL'nizi okuyan kod yazabileceğiniz önce bazı DSL'nizi tarafından oluşturulan sınıfların adlarını bilmeniz gerekir. DSL çözümünüzü açın **Dsl** proje ve konum **GeneratedCode** klasör. Alternatif olarak, projenizin DSL derlemede çift **başvuruları**, DSL ad alanında açın **Nesne Tarayıcısı**.

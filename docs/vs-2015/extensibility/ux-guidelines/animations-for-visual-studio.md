@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b74a283a4142cea7753db6e04d922517ae32afe9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1b32addb7dcd767e8848640d79933f9868bdd959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918660"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio için animasyonları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -253,13 +252,13 @@ ms.locfileid: "53052099"
 
 ##### <a name="animation-properties"></a>Animasyon özellikleri
 
--   Opaklık başlatılıyor: % belirme için 0, %100 fade-out için
+-   Opaklık başlatılıyor: % Belirme, fade-out %100 0
 
--   Opaklık bitiş: %100 belirme için %0 fade-out için
+-   Opaklık bitiş: Belirme, %0 fade-out için %100
 
--   Süresi: 200 milisaniye cinsinden tek başına, bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
+-   Süresi: 200 milisaniye cinsinden tek başına bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
 
--   Stil hızlandırma: sinüs Inout
+-   Kolaylaştırıcı stili: Inout Sinüs
 
 ##### <a name="examples"></a>Örnekler
 
@@ -279,13 +278,13 @@ ms.locfileid: "53052099"
 
 ##### <a name="animation-properties"></a>Animasyon özellikleri
 
--   Başlangıç rengi: özel kullanıcı Arabirimi
+-   Başlangıç rengi: Özel kullanıcı Arabirimi
 
--   Bitiş rengi: özel kullanıcı Arabirimi
+-   Bitiş rengi: Özel kullanıcı Arabirimi
 
--   Süresi: 200 milisaniye cinsinden tek başına, bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
+-   Süresi: 200 milisaniye cinsinden tek başına bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
 
--   Stil hızlandırma: sinüs Inout
+-   Kolaylaştırıcı stili: Inout Sinüs
 
 ##### <a name="examples"></a>Örnekler
 
@@ -307,9 +306,9 @@ ms.locfileid: "53052099"
 
 -   Y Ölçek: % veya belirli boyutu (piksel cinsinden)
 
--   Bağlantı konumu: genellikle (sağdan sola diller için) sol veya sağ üst köşede (için sağdan sola diller)
+-   Bağlantı konumu: Genel (sağdan sola diller için) sol veya sağ üst köşede (sağdan sola diller için)
 
--   Süresi: 200 milisaniye cinsinden tek başına, bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
+-   Süresi: 200 milisaniye cinsinden tek başına bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
 
 ##### <a name="examples"></a>Örnekler
 
@@ -327,15 +326,15 @@ ms.locfileid: "53052099"
 
 ##### <a name="animation-properties"></a>Animasyon özellikleri
 
--   Başlangıç X ve Y konumu: özel kullanıcı Arabirimi
+-   Başlangıç X ve Y konumu: Özel kullanıcı Arabirimi
 
--   Bitiş X ve Y konumu: özel kullanıcı Arabirimi
+-   Bitiş X ve Y konumu: Özel kullanıcı Arabirimi
 
--   Hareket yolu: yok
+-   Hareket yolu: Hiçbiri
 
--   Süresi: 200 milisaniye cinsinden tek başına, bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
+-   Süresi: 200 milisaniye cinsinden tek başına bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
 
--   Stil hızlandırma: sinüs Inout
+-   Kolaylaştırıcı stili: Inout Sinüs
 
 ##### <a name="example"></a>Örnek
  Sekme yeniden sıralama
@@ -352,9 +351,9 @@ ms.locfileid: "53052099"
 
 -   Dönüş derecesini: 360
 
--   Dönüş Merkezi: nesnenin orta
+-   Dönüş Merkezi: Nesnenin orta
 
--   Süre: sürekli
+-   Süresi: Sürekli
 
 ##### <a name="example"></a>Örnek
  Belirsiz İlerleme göstergesi (dönen)
@@ -363,64 +362,64 @@ ms.locfileid: "53052099"
 
 #### <a name="tab-open"></a>Açık sekmesi
 
-- Stil: görüntülenir
+- Stili: Görünür
 
-- Süre: Sıfır saniye
+- Süresi: Sıfır saniye
 
   ![Visual Studio'da Aç animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")
 
 #### <a name="tab-close"></a>Sekmesini kapatın
 
-- Stil: X konumunu değiştir
+- Stili: X konumu değiştirin
 
-- Süre: 200 milisaniye olarak
+- Süresi: 200 milisaniye
 
   ![Visual Studio'da Kapat animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")
 
 #### <a name="tab-reorder"></a>Sekme yeniden sıralama
 
-- Stil: X konumunu değiştir
+- Stili: X konumu değiştirin
 
-- Süre: 200 milisaniye olarak
+- Süresi: 200 milisaniye
 
   ![Visual Studio'da yeniden düzenleme animasyon sekmesinde](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")
 
 #### <a name="close-floating-document"></a>Kayan belgeyi Kapat
 
-- Stil: görüntülenir
+- Stili: Görünür
 
-- Süre: 200 milisaniye olarak
+- Süresi: 200 milisaniye
 
   ![Visual Studio'da belge animasyon kayan Kapat](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")
 
 #### <a name="window-state-transition"></a>Pencere durum geçişi
 
-- Stil: diğer windows ile tutarlı olması için belgeyi Kapat animasyon tanımlayın geçerli işletim sistemi sağlar.
+- Stili: Diğer windows ile tutarlı olacak şekilde, geçerli işletim sistemi belgeyi Kapat animasyon tanımlamak olanak tanır.
 
-- Süre: 200 milisaniye olarak
+- Süresi: 200 milisaniye
 
   ![Visual Studio'da pencere durum geçişi animasyon](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")
 
 #### <a name="menu-open"></a>Menü Aç
 
-- Stil: belirme
+- Stili: Belirme
 
-- Süre: 200 milisaniye olarak
+- Süresi: 200 milisaniye
 
   ![Visual Studio'da menü açık animasyon](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")
 
 #### <a name="menu-close"></a>Menüsünü Kapat
 
-- Stil: Fade-out
+- Stili: Fade-out
 
-- Süre: 200 milisaniye olarak
+- Süresi: 200 milisaniye
 
   ![Visual Studio'da menü Kapat animasyon](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")
 
 #### <a name="auto-hide-tool-window-reveal"></a>Otomatik gizleme araç penceresini göster
 
-- Stil: görüntülenir
+- Stili: Görünür
 
-- Süre: Sıfır saniye
+- Süresi: Sıfır saniye
 
   ![Otomatik&#45;Visual Studio'da araç penceresi animasyon Gizle](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")

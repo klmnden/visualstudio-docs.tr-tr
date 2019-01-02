@@ -2,7 +2,6 @@
 title: Modülleri Listele Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962655"
 ---
 # <a name="list-modules-command"></a>Modülleri Listele Komutu
-Geçerli işlem için modüllerini listeler.
+Geçerli işlem için modülleri listeler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,44 +34,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Parametreler
- / Adresi:`yes|no`
+ / Adres:`yes|no`
 
- İsteğe bağlı. Bellek adreslerini modüllerin gösterilip gösterilmeyeceğini belirler. Varsayılan değer `yes`.
+ İsteğe bağlı. Modül bellek adresleri gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / Adı:`yes|no`
+ / Name:`yes|no`
 
- İsteğe bağlı. Modül adlarını gösterilip gösterilmeyeceğini belirler. Varsayılan değer `yes`.
+ İsteğe bağlı. Modül adlarını gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `yes`.
 
  / Order:`yes|no`
 
- İsteğe bağlı. Modülleri sırasını gösterilip gösterilmeyeceğini belirler. Varsayılan değer `no`.
+ İsteğe bağlı. Modüller sırasını gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `no`.
 
  / Yolu:`yes|no`
 
- İsteğe bağlı. Modülleri yollarını gösterilip gösterilmeyeceğini belirler. Varsayılan değer `yes`.
+ İsteğe bağlı. Modül yolları gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / İşlemi:`yes|no`
+ / Process:`yes|no`
 
- İsteğe bağlı. Modülleri işlemlerinin gösterilip gösterilmeyeceğini belirler. Varsayılan değer `no`.
+ İsteğe bağlı. Modüller işlemlerinin gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `no`.
 
  / SymbolFile:`yes|no`
 
- İsteğe bağlı. Simge dosyaları modüllerin gösterilip gösterilmeyeceğini belirler. Varsayılan değer `no`.
+ İsteğe bağlı. Sembol dosyaları modüllerinin gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `no`.
 
  / SymbolStatus:`yes|no`
 
- İsteğe bağlı. Sembol durumları modüllerin gösterilip gösterilmeyeceğini belirler. Varsayılan değer `yes`.
+ İsteğe bağlı. Modül sembolü durumları gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `yes`.
 
  / Zaman damgası:`yes|no`
 
- İsteğe bağlı. Zaman damgaları modüllerin gösterilip gösterilmeyeceğini belirler. Varsayılan değer `no`.
+ İsteğe bağlı. Zaman damgaları modüllerinin gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `no`.
 
- / Sürümü:`yes|no`
+ / VERSION:`yes|no`
 
- İsteğe bağlı. Modülleri sürümleri gösterilip gösterilmeyeceğini belirler. Varsayılan değer `no`.
+ İsteğe bağlı. Modül sürümlerini gösterilip gösterilmeyeceğini belirtir. Varsayılan değer `no`.
 
 ## <a name="example"></a>Örnek
- Bu örnek modül adlarını, adreslerini ve geçerli işlem için zaman damgalarını listeler.
+ Bu örnekte, modül adlarını, adresleri ve geçerli işlem için zaman damgalarını listeler.
 
 ```
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
@@ -82,4 +81,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Nasıl yapılır: modüller penceresini kullanma](../../debugger/how-to-use-the-modules-window.md)
+- [Nasıl yapılır: Modüller penceresini kullanma](../../debugger/how-to-use-the-modules-window.md)

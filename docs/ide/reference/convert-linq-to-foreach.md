@@ -1,8 +1,7 @@
 ---
-title: Foreach deyimi için bir LINQ Sorgu dönüştürmek için kodu yeniden düzenleyin
+title: LINQ sorgusu için foreach deyimi dönüştürmek için kodu yeniden düzenleyin
 ms.date: 05/15/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,36 +10,36 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3e4e448931e028c53d62c534e2785e4f026a7ec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 23b8446b0fa44cccc3ae18ad789fd5b45e514033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937302"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Foreach deyimi için LINQ dönüştürmek için yeniden düzenleme
 
-Dönüştürmek için bu yeniden düzenleme kullanın [LINQ Sorgu sözdizimi](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) için bir [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) deyimi.
+Bu yeniden düzenleme dönüştürmek için kullanma [LINQ Sorgu söz dizimi](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) için bir [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) deyimi.
 
 Bu yeniden düzenleme için geçerlidir:
 
 - C#
 
-## <a name="how-to-use-it"></a>Nasıl kullanılacağını
+## <a name="how-to-use-it"></a>Kullanımı
 
 1. Tüm LINQ Sorgu başlayarak seçin `from`.
 
    > [!NOTE]
-   > Bu yeniden düzenleme yalnızca sorgu sözdizimi ve yöntem sözdizimi ile ifade LINQ sorgularını dönüştürmek için kullanılabilir.
+   > Bu yeniden düzenleme yalnızca sorgu sözdizimi ve yöntem sözdizimi ile ifade edilen LINQ sorguları dönüştürmek için kullanılabilir.
 
-1. Tuşuna **Ctrl**+**.** veya tornavida ![tornavida simgesi](../media/screwdriver-icon.png) kod dosyasının kenar boşluğunda simgesi.
+1. Tuşuna **Ctrl**+**.** veya tornavida ![tornavida simgesi](../media/screwdriver-icon.png) kod dosyasının boşluğundaki simgeye.
 
    ![Foreach hızlı Eylemler menüsüne LINQ Dönüştür](media/convert-linq-to-foreach.png)
 
-1. Seçin **'foreach' Dönüştür**. Ya da seçin **Önizleme değişiklikleri** açmak için [Değişiklikleri Önizle](../../ide/preview-changes.md) iletişim ve ardından **Uygula**.
+1. Seçin **'foreach' olarak Dönüştür**. Ya da seçin **değişiklik önizlemesi** açmak için [Değişiklikleri Önizle](../../ide/preview-changes.md) iletişim tıklayın ve ardından **Uygula**.
 
 > [!NOTE]
-> C# ' ta açık bir tür bu yapan yeniden düzenlemeler tarafından oluşturulan kodu kullanır veya [var](/dotnet/csharp/language-reference/keywords/var) değişkeni için `foreach` döngü. Oluşturulan kod, doğrudan veya dolaylı türünde kapsamındaki kod stili ayarlarına bağlıdır. Bu belirli kod stilini ayarlar altında makine düzeyinde yapılandırılır **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **C#** > **kod stili** > **genel** > **\'var' Tercihler**, ya da çözüm düzeyinde bir [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) dosya. Bir kod stili ayarı değiştirirseniz, **seçenekleri**, değişikliklerin etkili olması kod dosyası yeniden açın.
+> İçin C#, bu yeniden düzenlemeler tarafından oluşturulan kodu açık bir tür kullanan veya [var](/dotnet/csharp/language-reference/keywords/var) yineleme değişkeni için `foreach` döngü. Kapsam içinde kod stili ayarları türü oluşturulan kodda, doğrudan veya dolaylı bağlıdır. Bu belirli kod stili ayarları altında makine düzeyinde yapılandırılır **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **C#**  >  **Kod stili** > **genel** > **\'var' Tercihler**, ya da çözüm düzeyinde bir [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) dosya. Kod stili ayarı değiştirirseniz **seçenekleri**, değişikliklerin etkili olabilmesi için kod dosyasını açın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

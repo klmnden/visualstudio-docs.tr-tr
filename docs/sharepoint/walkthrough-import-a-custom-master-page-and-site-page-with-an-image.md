@@ -1,9 +1,6 @@
 ---
-title: 'İzlenecek yol: özel bir ana sayfa ve Site içeri aktarma bir görüntüyle | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Özel ana sayfasını içeri aktarma ve bir görüntü içeren Site | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904159"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma
   Bu izlenecek yol, bir SharePoint özel ana sayfasını ve görüntüye sahip bir site sayfasını içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.  
 
  Bu izlenecek yol aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:  
@@ -179,10 +176,9 @@ ms.locfileid: "49890999"
 
 7. Dağıtılan öğeleri görüntülemek için SharePoint sitesini açın.  
 
-   Dosyaların içeri aktarmak için alternatif bir yolu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve bu bilgisayarlara dağıtın SharePoint olan modüllere dosyaları eklemek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Nasıl yapılır: bir ana sayfa veya temayı içeri aktarma](../sharepoint/how-to-import-a-master-page-or-theme.md) ve [çözüme dosyaları dahil etmek için modül kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+   Dosyaların içeri aktarmak için alternatif bir yolu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve bu bilgisayarlara dağıtın SharePoint olan modüllere dosyaları eklemek için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Nasıl Yapılır: Ana sayfa veya temayı içeri aktarma](../sharepoint/how-to-import-a-master-page-or-theme.md) ve [çözüme dosyaları dahil etmek için modül kullanma](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
 
 ## <a name="see-also"></a>Ayrıca bkz.
  [Mevcut bir SharePoint sitesinden öğeleri içeri aktarma](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

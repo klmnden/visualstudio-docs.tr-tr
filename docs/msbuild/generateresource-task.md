@@ -1,8 +1,6 @@
 ---
 title: GenerateResource görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917507"
 ---
 # <a name="generateresource-task"></a>GenerateResource görevi
 Arasında dönüştürür *.txt* ve *.resx* (XML tabanlı kaynak biçimi) dosyalarını ve ortak dil çalışma zamanı ikili *.resources* katıştırılabilir bir çalışma zamanı ikili dosyaları yürütülebilir veya uydu derlemeleri içine derlenmiş. Bu görevi genellikle dönüştürmek için kullanılan *.txt* veya *.resx* dosyaları *.resources* dosyaları. `GenerateResource` Görev benzer işlevsellik [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -46,7 +44,7 @@ Arasında dönüştürür *.txt* ve *.resx* (XML tabanlı kaynak biçimi) dosyal
 |`PublicClass`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, bir türü kesin belirlenmiş kaynak sınıfı olarak genel bir sınıf oluşturur.|  
 |`References`|İsteğe bağlı `String[]` parametresi.<br /><br /> Başvuru türlerinde yüklenecek *.resx* dosyalarını. *.resx* dosya veri öğeleri, bir .NET türü olabilir. Zaman *.resx* dosya okuma, bu çözümlenmelidir. Genellikle, bu kuralları yükleniyor standart türünü kullanarak başarılı bir şekilde çözülür. Derlemelerde sağlarsanız `References`, bunlar daha önceliklidir.<br /><br /> Bu parametre, kesin olarak belirlenmiş kaynaklar için gerekli değildir.|  
 |`SdkToolsPath`|İsteğe bağlı `String` parametresi.<br /><br /> SDK Araçları yolunu gibi belirtir *resgen.exe*.|  
-|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Öğeleri dönüştürmek için belirtir. Bu parametreye geçirilen öğe, şu dosya uzantılarından biri olmalıdır:<br /><br /> -   *.txt*: dönüştürülecek bir metin dosyası uzantısı belirtir. Metin dosyaları yalnızca dize kaynakları içerebilir.<br />-   *.resx*: dönüştürülecek XML tabanlı kaynak dosyası için bir uzantı belirtir.<br />-   *.restext*: aynı biçimi belirtir *.txt*. Bu farklı uzantı, diğer kaynak dosyaları, yapı işleminizde kaynakları içeren kaynak dosyalarını NET bir ayrım yapmak istiyorsanız kullanışlıdır.<br />-   *.Resources*: dönüştürmek bir kaynak dosya uzantısı belirtir.|  
+|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Öğeleri dönüştürmek için belirtir. Bu parametreye geçirilen öğe, şu dosya uzantılarından biri olmalıdır:<br /><br /> -   *.txt*: Dönüştürülecek bir metin dosyası uzantısı belirtir. Metin dosyaları yalnızca dize kaynakları içerebilir.<br />-   *.resx*: Dönüştürülecek XML tabanlı kaynak dosyası için bir uzantı belirtir.<br />-   *.restext*: Aynı biçimi belirtir *.txt*. Bu farklı uzantı, diğer kaynak dosyaları, yapı işleminizde kaynakları içeren kaynak dosyalarını NET bir ayrım yapmak istiyorsanız kullanışlıdır.<br />-   *.Resources*: Dönüştürülecek bir kaynak dosyası uzantısı belirtir.|  
 |`StateFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Bağımlılık bağlantıları denetimi hızlandırmak için kullanılan bir isteğe bağlı önbellek dosyası yolunu belirtir *.resx* giriş dosyaları.|  
 |`StronglyTypedClassName`|İsteğe bağlı `String` parametresi.<br /><br /> Türü kesin belirlenmiş kaynak sınıfı için sınıf adını belirtir. Bu parametre belirtilmezse, kaynak dosyanın temel adı kullanılır.|  
 |`StronglyTypedFilename`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Kaynak dosyası için dosya adını belirtir. Bu parametre belirtilmezse, sınıfın adını dile bağlı olarak değişir uzantılı temel dosya adı olarak kullanılır. Örneğin: *MyClass.cs*.|  
@@ -87,7 +85,7 @@ Arasında dönüştürür *.txt* ve *.resx* (XML tabanlı kaynak biçimi) dosyal
  Aşağıdaki kod, adlı katıştırılmış bir kaynağı oluşturur, derleme myAssembly adlı varsayarak *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Olmadan \<LogicalName > meta verileri, kaynak adlı *myAssembly.myResource.resources*.  Bu örnekte, yalnızca Visual Basic ve Visual C# yapı işlemi için geçerlidir.  

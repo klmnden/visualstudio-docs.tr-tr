@@ -1,9 +1,6 @@
 ---
 title: MACHINE_INFO_FIELDS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MACHINE_INFO_FIELDS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 631ef4bbb23d4b0cedbf86d7eedb019580cf7e5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27feb8a47d28569d05afca46d2d773ba855976e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830186"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Hangi tür bilgiler almak için belirli bir makine için belirtir.  
@@ -28,7 +25,7 @@ Hangi tür bilgiler almak için belirli bir makine için belirtir.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```cpp  
-enum enum_MACHINE_INFO_FIELDS {   
+enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  
@@ -37,7 +34,7 @@ typedef DWORD MACHINE_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_MACHINE_INFO_FIELDS {   
+public enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  
@@ -64,7 +61,7 @@ public enum enum_MACHINE_INFO_FIELDS {
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,8 +1,7 @@
 ---
-title: 'CA2210: Derlemelerin tanımlayıcı adı geçerli olmalıdır'
+title: 'CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: f3d6eb70e22da0b17fff9febce47bcaa5b980269
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908361"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Derlemelerin tanımlayıcı adı geçerli olmalıdır
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır
 
 |||
 |-|-|
@@ -102,5 +101,5 @@ Derleme ortamında kullandıysanız yalnızca bu kuraldan bir uyarıyı bastırm
 
 - <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>
 - <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
-- [Nasıl yapılır: Bütünleştirilmiş Kodu Tanımlayıcı Adla İmzalama](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Nasıl yapılır: Derlemeyi tanımlayıcı bir adla imzalama](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Sn.exe (Tanımlayıcı Ad Aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool)

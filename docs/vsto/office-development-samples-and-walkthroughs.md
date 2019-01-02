@@ -1,9 +1,6 @@
 ---
 title: Office geliştirme örnekleri ve izlenecek yollar
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909794"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office geliştirme örnekleri ve izlenecek yollar
   Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Microsoft Office çözümleri oluşturmak için kullanılan teknikleri gösteren adım adım talimatları içerir.  
@@ -60,5 +57,3 @@ ms.locfileid: "35677270"
 |[Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)|Visual Studio'da Office geliştirme ile programlama hakkında sık sorulan sorular listeler ve ortak sorunları çözebilecek konulara bağlantılar sağlar.|  
 |[Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)|Çözümünüzün derlemeleri rolünü ve Microsoft Office çözümleri oluşturma hakkında bilgi için bağlantılar sağlar.|  
 |[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)|Eylemler bölmesinde adlı belge düzeyi görev bölmesinde genel bir bakış sağlar.|  
-  
-  

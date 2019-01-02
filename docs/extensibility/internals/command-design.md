@@ -1,9 +1,6 @@
 ---
 title: Komut tasarımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd810d0c2f33d4a8ddbffd876357ead7e0e5e7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4386294f6c2e3b4a3f81b0cf46f8804c53f490d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933894"
 ---
 # <a name="command-design"></a>Komut tasarımı
 Bir komut için bir VSPackage'ı eklediğinizde, görüntülenecek olduğu, kullanılabilir olduğunda ve nasıl işleneceğini olduğunu belirtmeniz gerekir.  

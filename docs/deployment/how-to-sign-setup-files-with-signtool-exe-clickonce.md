@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: Kurulum dosyalarını SignTool.exe (ClickOnce) ile | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Kurulum dosyalarını SignTool.exe (ClickOnce) ile | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 845c1511ebb4555fee12c92b5534b11fb23cbb45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845330"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Nasıl yapılır: Kurulum dosyalarını SignTool.exe (ClickOnce) ile
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Nasıl Yapılır: Kurulum dosyalarını SignTool.exe (ClickOnce) ile
 Kullanabileceğiniz *SignTool.exe* Kurulum programını imzalamak için (*setup.exe*). Bu işlem, değiştirilen dosyaların son kullanıcı bilgisayarlarında yüklü olmadığını garanti eder.  
   
  Varsayılan olarak, ClickOnce bildirimlerini ve imzalı bir Kurulum programı oturum açtı. Ancak, daha sonra Kurulum programının parametreleri değiştirmek istiyorsanız, Kurulum programı daha sonra oturum açmalısınız. Kurulum programı açtıktan sonra parametreleri değiştirin, imza bozulur.  
@@ -79,4 +77,4 @@ Kullanabileceğiniz *SignTool.exe* Kurulum programını imzalamak için (*setup.
     ```  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: yeniden, uygulama ve dağıtım bildirimlerini imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

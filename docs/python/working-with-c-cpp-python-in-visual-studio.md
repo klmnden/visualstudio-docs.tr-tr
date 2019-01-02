@@ -3,7 +3,6 @@ title: Python için C++ uzantıları yazma
 description: Visual Studio, CPython ve PyBind11 karışık mod hata ayıklama da dahil olmak üzere, kullanarak Python için C++ uzantısı oluşturma için kullanılan bir kılavuz.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947848"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -136,7 +135,7 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
     > Proje Özellikleri'nde C/C++ sekmesini görmüyorsanız, proje, C/C++ kaynak dosyaları tanımlayan hiçbir dosya içermiyor olmasıdır. Olmayan bir kaynak dosyası oluşturursanız, bu durum ortaya çıkabilir bir *.c* veya *.cpp* uzantısı. Örneğin, yanlışlıkla girdiğiniz `module.coo` yerine `module.cpp` yeni öğe iletişim kutusunda daha önce ardından Visual Studio dosyayı oluşturur ancak dosya türü olarak ayarlayıp ayarlamadığını "C / C + kod," olduğu ne C/C++ Özellikleri sekmesi etkinleştirir. Dosyayı yeniden adlandırın bile durum böyle misidentification kalır `.cpp`. Dosya türü düzgün bir şekilde ayarlamak için dosyaya sağ **Çözüm Gezgini**seçin **özellikleri**, ardından **dosya türü** için **C/C++ kodu**.
 
     > [!Warning]
-    > Her zaman **C/C++** > **kod oluşturma** > **çalışma zamanı kitaplığı** seçeneğini **çok iş parçacıklı DLL (/ MD)** olsa bile bir hata ayıklama yapılandırması için bu ayarı olduğundan hata ayıklama olmayan Python ikili dosyaları ile oluşturulur. Ayarlamak için MSDN aboneliğine **hata ayıklama çok iş parçacıklı DLL (/ MDd)** oluşturma seçeneği bir **hata ayıklama** yapılandırma hata üreten **C1189: Py_LIMITED_API, Py_TRACE_REFS, Py_DEBUG ile uyumlu değil ve Py_REF_DEBUG**. Ayrıca, kaldırırsanız `Py_LIMITED_API` derleme hatayı önlemek için Python modülü içe aktarmaya çalışıldığında çöküyor. (Kilitlenme DLL'nin çağrısı içinde olur `PyModule_Create` daha sonra çıktı iletisi ile açıklandığı **önemli Python hata: PyThreadState_Get: geçerli iş parçacığının**.)
+    > Her zaman **C/C++** > **kod oluşturma** > **çalışma zamanı kitaplığı** seçeneğini **çok iş parçacıklı DLL (/ MD)** olsa bile bir hata ayıklama yapılandırması için bu ayarı olduğundan hata ayıklama olmayan Python ikili dosyaları ile oluşturulur. Ayarlamak için MSDN aboneliğine **hata ayıklama çok iş parçacıklı DLL (/ MDd)** oluşturma seçeneği bir **hata ayıklama** yapılandırma hata üreten **C1189: Py_LIMITED_API Py_DEBUG Py_TRACE_REFS ve Py_REF_DEBUG ile uyumsuz**. Ayrıca, kaldırırsanız `Py_LIMITED_API` derleme hatayı önlemek için Python modülü içe aktarmaya çalışıldığında çöküyor. (Kilitlenme DLL'nin çağrısı içinde olur `PyModule_Create` daha sonra çıktı iletisi ile açıklandığı **önemli Python hata: PyThreadState_Get: geçerli iş parçacığının**.)
     >
     > / MDd seçeneği Python hata ayıklama ikililerini derlemek için kullanılan (gibi *python_d.exe*), ancak bir uzantı DLL'si seçerek hala neden şu yapı hatasıyla `Py_LIMITED_API`.
 
@@ -266,7 +265,7 @@ Python 2.7 ile çalışıyorsanız, başvuracak [genişletme Python 2.7 C veya C
 
 C++ Modülü aşağıdaki nedenlerden dolayı derleme başarısız:
 
-- Bulunamıyor *Python.h* (**E1696: kaynak dosyası "Python.h" açılamıyor** ve/veya **C1083: açık dosya içeremez: "Python.h": Böyle bir dosya veya dizin**): doğrulayın yolda **C/C++** > **genel** > **ek içerik dizinleri** Python proje özellikleri işaret yüklemenin *dahil* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-projects).
+- Bulunamıyor *Python.h* (**E1696: kaynak dosyası "Python.h" açılamıyor** ve/veya **C1083: Açık dosya içeremez: "Python.h": Böyle bir dosya veya dizin**): doğrulayın yolunda **C/C++** > **genel** > **ek içerik dizinleri** içinde Proje Özellikleri noktalarına Python yüklemenizin *dahil* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-projects).
 
 - Python kitaplıkları bulunamıyor: doğrulayın yolunda **bağlayıcı** > **genel** > **ek kitaplık dizinleri** projedeki Python yüklemenizi ait özellikler noktalarına *libs* klasör. 6. adım altında bkz [core C++ projesi oluşturma](#create-the-core-c-projects).
 

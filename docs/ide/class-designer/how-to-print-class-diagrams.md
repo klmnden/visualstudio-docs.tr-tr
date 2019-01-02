@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl Yapılır: Sınıf Diyagramlarını Yazdırma (Sınıf Tasarımcısı)'
+title: 'Nasıl Yapılır: Yazdırma sınıf diyagramları (Sınıf Tasarımcısı)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
@@ -13,26 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e4b38967badbed94c946b04a1434150912c32859
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916260"
 ---
-# <a name="how-to-print-class-diagrams"></a>Nasıl yapılır: sınıf diyagramlarını yazdırma
+# <a name="how-to-print-class-diagrams"></a>Nasıl Yapılır: Sınıf diyagramlarını yazdırma
 
-Visual Studio yazdırma özelliğini kullanarak bir sınıf diyagramı yazdırabilirsiniz.
+Visual Studio yazdırma özelliğini kullanarak bir sınıf diyagramı yazdırabilir.
 
-## <a name="to-print-a-class-diagram"></a>Sınıf diyagramında yazdırmak için
+## <a name="to-print-a-class-diagram"></a>Bir sınıf diyagramı'ı yazdırmak için
 
 1.  Sınıf diyagramı açın.
 
-2.  Tıklatın **yazdırma** üzerinde **dosya** menüsü.
+2.  Tıklayın **yazdırma** üzerinde **dosya** menüsü.
 
-Tüm sınıf diyagramı yazdırır. Ayarlarını gerekebilir **sayfa yapısı** uygun boyutta yazdırmak için iletişim kutusu.
+Tüm sınıf diyagramına yazdırır. Ayarlarını gerekebilir **sayfa yapısı** uygun bir boyutta yazdırmak için iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: bir Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
-- [Nasıl yapılır: sınıf diyagramlarını görüntü olarak dışarı aktarma](how-to-export-class-diagrams-as-images.md)
+- [Nasıl yapılır: Bir Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
+- [Nasıl yapılır: Sınıf diyagramlarını görüntü olarak dışarı aktarma](how-to-export-class-diagrams-as-images.md)

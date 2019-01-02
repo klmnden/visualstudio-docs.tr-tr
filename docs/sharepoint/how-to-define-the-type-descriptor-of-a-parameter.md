@@ -1,13 +1,8 @@
 ---
-title: 'Nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Bir parametrenin tür tanımlayıcısını tanımlama | Microsoft Docs'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953163"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl yapılır: bir parametrenin tür tanımlayıcısını tanımlama
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl Yapılır: Bir parametrenin tür tanımlayıcısını tanımlama
   Bir tür tanımlayıcı bir parametrenin veri türünü tanımlayan özellikler içerir. Tür tanımlayıcısını bir alan, bir varlık veya varlık koleksiyonunu tanımlayabilirsiniz. Daha fazla bilgi için [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Bir parametrenin tür tanımlayıcısını tanımlamak için  
@@ -50,7 +45,7 @@ ms.locfileid: "51294987"
   
 ### <a name="to-define-an-entity"></a>Bir varlık tanımlamak için  
   
-1.  İçinde **özellikleri** penceresinde **adı** özelliğini varlığı tanımlayan bir ad (örneğin: **kişi**).  
+1.  İçinde **özellikleri** penceresinde **adı** özelliğini varlığı tanımlayan bir ad (örneğin: **Kişi**).  
   
 2.  Ayarlama **TypeName** özelliğini tam olarak nitelenmiş adını varlığı temsil eden tür. Bu tür bir sınıf projenizi, çözümünüzde başvurduğunuz bir derlemede tanımlı bir tür veya BDC nesne modelinde tanımlı bir tür olabilir.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294987"
   
 2. Menü çubuğunda, **görünümü**, **Özellikler penceresi**.  
   
-3. İçinde **özellikleri** penceresinde **adı** özelliğini varlığı tanımlayan bir ad (örneğin: **kişiler**).  
+3. İçinde **özellikleri** penceresinde **adı** özelliğini varlığı tanımlayan bir ad (örneğin: **Kişiler**).  
   
 4. Ayarlama **IsCollection** özelliğini **True**. Bu, bu tür tanımlayıcıyı varlıklar koleksiyonu olduğunu gösterir.  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294987"
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)   
- [Nasıl yapılır: modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Nasıl yapılır: bir yönteme bir parametre ekleyin](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Nasıl yapılır: bir yöntemi örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)   
+ [Nasıl yapılır: Modele bir varlık ekleme](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Nasıl yapılır: Bir yönteme bir parametre ekleyin](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Nasıl yapılır: Metot örneği tanımlama](../sharepoint/how-to-define-a-method-instance.md)   
  [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
