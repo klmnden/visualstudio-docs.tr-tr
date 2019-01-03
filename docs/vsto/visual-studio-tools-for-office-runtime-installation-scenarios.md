@@ -1,9 +1,6 @@
 ---
 title: Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 366863dc9babfd918e3f689420c5e26ec05db6a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850037"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları
   Office çalışma zamanı için Visual Studio 2010 Araçları üç şekilde yükleyebilirsiniz:  
@@ -67,10 +64,8 @@ ms.locfileid: "50670903"
   
  Office çalışma zamanı yeniden dağıtılabilir ve .NET Framework 3.5 için Office uzantıları için Office uzantıları için Visual Studio 2010 araçları kullanarak çalışma zamanını yüklediğinizde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki sürümü, yüklü karşılık gelen .NET sürümleri Framework zaten mevcut. Çalışma zamanı yüklü olduğunda bilgisayarda .NET Framework'ün bu sürümlerinden birini eksikse, eksik sürümü .NET Framework için Office uzantılarını o anda yüklü değil. Eksik daha sonra .NET Framework sürümünü yüklerseniz, çalışma zamanı karşılık gelen Office uzantıları (çalışma zamanı dağıtıldığı bir çözüm ile yüklenmiş uzantıları gerektiren bir çözüm yüklendikten sonraki açışınızda otomatik olarak yükler. ClickOnce kullanarak) veya (çalışma zamanı, Windows Installer kullanarak dağıtılan bir çözüm ile yüklenmişse) yüklendi.  
   
- Bir ClickOnce çözümde Önkoşullar da dahil olmak üzere daha fazla bilgi için bkz: [nasıl yapılır: son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Çalışma zamanı yeniden dağıtılabilir paketi el ile yükleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Bir ClickOnce çözümde Önkoşullar da dahil olmak üzere daha fazla bilgi için bkz: [nasıl yapılır: Son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Çalışma zamanı yeniden dağıtılabilir paketi el ile yükleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Office çalışma zamanı için Visual Studio araçlarındaki derlemeler](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
-  
-  

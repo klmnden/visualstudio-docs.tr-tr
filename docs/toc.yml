@@ -1,6 +1,6 @@
 items:
 - name: Visual Studio belgeleri
-  href: ide/index.md
+  href: ide/index.yml
 - name: Genel Bakış
   items:
   - name: Visual Studio 2017 Hakkında
@@ -140,32 +140,24 @@ items:
     href: ide/quickstart-fsharp.md
   - name: 'C#: Web uygulaması oluşturma'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: UWP uygulaması oluşturma'
-    href: ide/quickstart-uwp-csharp.md
   - name: 'C#: Konsol uygulaması oluşturma'
     href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic: Konsol uygulaması oluşturma'
     href: ide/quickstart-visual-basic-console.md
 - name: Öğreticiler
   items:
-  - name: Visual Studio’da C++...
-    href: /cpp/build/vscpp-step-0-installation
-  - name: Visual Studio’da Python...
-    href: python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-  - name: Visual Studio’da R...
-    href: rtvs/getting-started-with-r.md
-  - name: Visual Studio’da Node.js
-    href: javascript/tutorial-nodejs.md
-  - name: Visual Studio’da C#
-    items:
-    - name: 'C#: Web uygulaması oluşturma'
-      href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C#: Konsol uygulaması oluşturma'
-      href: ide/tutorial-csharp-console.md
-  - name: Visual Studio’da Visual Basic
-    href: ide/tutorial-visual-basic-console.md
-  - name: Visual Studio’da hata ayıklama
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
+  - name: C#
+    href: get-started/csharp/
+  - name: F#
+    href: /dotnet/fsharp/
+  - name: Visual Basic
+    href: get-started/visual-basic/
+  - name: C++
+    href: /cpp/get-started/tutorials/
+  - name: Python
+    href: python/
+  - name: Node.js
+    href: javascript/
 - name: Nasıl yapılır kılavuzları
   items:
   - name: Geliştirme
@@ -517,7 +509,7 @@ items:
     - name: Ek öğreticiler
       items:
       - name: C# veya Visual Basic ile WPF uygulaması oluşturma
-        href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
+        href: /visualstudio/get-started/csharp/tutorial-wpf
       - name: Windows Forms uygulama öğreticileri
         items:
         - name: 'Öğretici 1: Resim görüntüleyici oluşturma (C#)'
@@ -1120,9 +1112,10 @@ items:
       href: ide/developer-community-privacy.md
   - name: Visual Studio’da sorun bildirme
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Genel bakış: Sorun bildirin'
-    href: ide/report-a-problem.md
-  - name: 'Genel bakış: Bir özellik önerin'
+    items:
+    - name: Sorun bildirme durumları ve SSS
+      href: ide/report-a-problem.md
+  - name: Visual Studio için özellik önerin
     href: ide/suggest-a-feature.md
   - name: Müşteri Deneyimi Geliştirme Programı
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1126,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Bizimle iletişime geçin
     href: ide/talk-to-us.md
-ms.openlocfilehash: ea2c50939b41a1495f02330ad5ca5fb0e0472666
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 65504b4cf7bfd126edceacfdcfd1cc71e725e8ca
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348460"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740430"

@@ -1,9 +1,6 @@
 ---
 title: Microsoft Yardım Görüntüleyicisi SDK'sı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987057"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 
@@ -142,7 +139,7 @@ Konu gövdesi (üstbilgi ve altbilgi dahil değil) sayfa bağlantılarının, No
 
 4.  Bir kod parçacığını ekleyin:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Dile özgü metin kodu ekleyin: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` unutmayın `devLangnu=` diğer diller girmenizi sağlar. Örneğin, `devLangnu="Fortran"` Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
+5.  Dile özgü metin kodu ekleyin:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Unutmayın `devLangnu=` diğer diller girmenizi sağlar. Örneğin, `devLangnu="Fortran"` Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
 
 6.  Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,13 +280,13 @@ F1 Akış Diyagramı:
 
 Ne zaman çevrimiçi (tarayıcıda başlatılacak) Yardım Görüntüleyicisi varsayılan Yardım içerik kaynağını ayarlayın:
 
--   Visual Studio iş ortağı (VSP) özellikleri yayma F1 özellik paketi (özellik paketi prefix.keyword ve çevrimiçi URL ön eki kayıt defterinde bulundu) bir değer: F1 gönderen bir VSP URL + parametreleri tarayıcıya.
+-   Visual Studio iş ortağı (VSP) özellikleri F1 özellik paketi (özellik paketi prefix.keyword ve çevrimiçi URL ön eki kayıt defterinde bulundu) bir değer göstermiyor: F1 bir VSP URL + tarayıcıya parametreleri gönderir.
 
--   Visual Studio özellikleri (dil Düzenleyicisi, Visual Studio özel menü öğeleri, vb.): F1 tarayıcıya bir Visual Studio URL gönderir.
+-   Visual Studio özellikleri (dil Düzenleyicisi, Visual Studio özel menü öğeleri, vb.):  F1 bir Visual Studio URL için tarayıcının gönderir.
 
 Ne zaman yerel Yardım'a (tanıtım Yardım Görüntüleyici'de) Yardım Görüntüleyicisi varsayılan Yardım içerik kaynağını ayarlayın:
 
--   F1 özellik paketi arasında yerel depolama dizini anahtar sözcüğü eşleştiği VSP özellikler (yani, özellik paketi prefix.keyword = yerel depolama dizinde bulunan değeri): F1 Yardım Görüntüleyici konusundaki işler.
+-   F1 özellik paketi arasında yerel depolama dizini anahtar sözcüğü eşleştiği VSP özellikler (yani, özellik paketi prefix.keyword = yerel depolama dizinde bulunan değeri):  F1 Yardım Görüntüleyici konusundaki işler.
 
 -   Visual Studio özellikleri (Visual Studio özelliklerinden yayılan özellik paketi geçersiz kılmak VSP seçeneği): F1 Yardım Görüntüleyicisi'nde bir Visual Studio konu işler.
 
@@ -325,7 +322,7 @@ F1'e geri dönüş için satıcı Yardım içeriğini etkinleştirmek için aşa
 
 **Temel yerel Namespace ayrıştırma**
 
-Kayıt defterinde temel yerel ad alanını ayrıştırma üzerinde etkinleştirmek için adını yazarak yeni bir DWORD değeri ekleyin: BaseNativeNamespaces ve 1 (altında desteklemek istediğiniz katalog anahtarı) değerini ayarlayın.  Örneğin, Visual Studio kataloğu kullanmak istiyorsanız, yolu anahtarı ekleyebilirsiniz:
+Ayrıştırma temel yerel ad etkinleştirmek için kayıt defterinde yeni bir DWORD değeri adını yazarak ekleyin: BaseNativeNamespaces ve 1 (altında desteklemek istediğiniz katalog anahtarı) değerini ayarlayın.  Örneğin, Visual Studio kataloğu kullanmak istiyorsanız, yolu anahtarı ekleyebilirsiniz:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ Bir kullanıcı daha sonra iş ortakları hive altında bir ad alanı olarak Cus
 
 Aşağıdaki kayıt defteri anahtarı ve değeri ekleyin:
 
-Yardım anahtar HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic: görünen hata ayıklama çıktı perakende değer: Evet
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Yardım anahtar: Hata ayıklama çıktı perakende değeri görüntüle: EVET
 
 Yardım menü öğesi altında IDE içindeki "Yardım bağlamı hata ayıklama" seçin.
 
@@ -374,7 +371,7 @@ Visual Studio sürüm, Visual Studio iş ortakları için yalıtılmış ve tüm
 
 Marka paketleri Yardım Görüntüleyicisi'ni içeren ürün tarafından yüklenir.  Visual Studio ürünleri için:
 
--   Bir geri dönüş marka paket (Branding_\<yerel ayar > .mshc) Yardım Görüntüleyicisi 2.3 uygulama kök dizininde yüklü (örnek: C:\Program Files (x86) \Microsoft Help Viewer\v2.3) Yardım Görüntüleyicisi dil paketi tarafından.  Bu paket marka ürün yüklü olmayan durumlar için kullanılır (içerik yüklendi) veya yüklü paketleri şu marka burada bozuk.  Uygulama kök geri dönüş marka paketi kullanıldığında, Visual Studio öğelerini (logosu ve geri bildirim) göz ardı edilir.
+-   Bir geri dönüş marka paket (Branding_\<yerel ayar > .mshc) Yardım Görüntüleyicisi 2.3 uygulama kök dizininde yüklü (örnek: C:\Program dosyaları (x86) \Microsoft Help Viewer\v2.3) Yardım Görüntüleyicisi dil paketi tarafından.  Bu paket marka ürün yüklü olmayan durumlar için kullanılır (içerik yüklendi) veya yüklü paketleri şu marka burada bozuk.  Uygulama kök geri dönüş marka paketi kullanıldığında, Visual Studio öğelerini (logosu ve geri bildirim) göz ardı edilir.
 
 -   Visual Studio içeriği içerik paket hizmetini yüklendiğinde bir marka paket de (ilk zaman içerik yükleme senaryosu için) yüklenir.  Marka paketine bir güncelleştirme varsa, güncelleştirmeyi içerik İleri güncelleştirmeyi veya ek paket yükleme eylemi olduğunda yüklenir.
 
@@ -439,20 +436,20 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 
 | | |
 | - | - |
-| Özelliği: | **CollapsibleArea** |
+| Özellik: | **CollapsibleArea** |
 | Kullanım: | Daraltır içerik denetimi metni Genişlet |
 | **Öğe** | **Değer** |
 | ExpandText | Genişletin |
 | CollapseText | Daralt |
-| Özelliği: | **CodeSnippet** |
-| Kullanım: | Kod parçacığı denetim metin.  Not: Alanı için kod parçacığı içerik "Bölünemez" alanı ile değiştirilir. |
+| Özellik: | **CodeSnippet** |
+| Kullanım: | Kod parçacığı denetim metin.  Not: Kod parçacığı içerikle "Bölünemez" alanı için alan değiştirilecektir. |
 | **Öğe** | **Değer** |
 | CopyToClipboard | Panoya kopyala |
 | ViewColorizedText | Renkli görüntüle |
 | CombinedVBTabDisplayLanguage | Visual Basic (örnek) |
 | VBDeclaration | Bildirim |
 | VBUsage | Kullanım |
-| Özelliği: | **Geri bildirim, altbilgi ve logosu** |
+| Özellik: | **Geri bildirim, altbilgi ve logosu** |
 | Kullanım: | Müşteri e-posta yoluyla geçerli konu hakkında geri bildirim sağlamak için bir geri bildirim denetimi sağlar.  Telif Hakkı metin içeriği.  Logo tanımı. |
 | **Öğe** | **Değer (Bu dizeler içerik benimseyen gereksinime uygun şekilde değiştirilebilir.)** |
 | Telif Hakkı | © 2013 Microsoft Corporation. Tüm hakları saklıdır. |
@@ -461,7 +458,7 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| Özelliği: | **Sorumluluk reddi** |
+| Özellik: | **Sorumluluk reddi** |
 | Kullanım: | Özel durum bildirimleri makine için bir dizi içerik çevrilebilir. |
 | **Öğe** | **Değer** |
 | MT_Editable | Bu makale makine çevirisi oldu. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin. |
@@ -470,14 +467,14 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 | MT_QualityNonEditable | Bu makalede el ile çevrilmiştir. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin. |
 | MT_BetaContents | Bu makale makine çevirisi bir ön sürüm için oldu. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin. |
 | MT_BetaRecycledContents | Bu makalede, bir ön sürüm için el ile çevrilmiştir. Internet bağlantısı varsa, "Bu sayfayı düzenlenebilir modda orijinal İngilizce içerikle aynı anda görüntülemek için bu konuyu çevrimiçi gör"'i seçin. |
-| Özelliği: | **LinkTable** |
+| Özellik: | **LinkTable** |
 | Kullanım: | Çevrimiçi konusuna bağlantılar için destek |
 | **Öğe** | **Değer** |
 | LinkTableTitle | Bağlantı tablosu |
 | TopicEnuLinkText | İngilizce sürümünü görüntülemek\</a > bilgisayarınızda mevcut olan bu konu başlığının. |
 | TopicOnlineLinkText | Bu konuda görüntülemek \<bir href = "{0}" {1}> Çevrimiçi\</a > |
 | OnlineText | Çevrimiçi |
-| Özelliği: | **Video ses denetimi** |
+| Özellik: | **Video ses denetimi** |
 | Kullanım: | Öğeleri ve video içeriği için metin görüntüleme |
 | **Öğe** | **Değer** |
 | MultiMediaNotSupported | Internet Explorer 9 veya üstü yüklü olmalıdır destekleyecek şekilde {0} içeriği. |
@@ -485,25 +482,25 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 | AudioText | ses akışı |
 | OnlineVideoLinkText | \<p > Bu konu ile ilgili videoyu görüntülemek için tıklayın {0} \<bir href = "{1}" >{2}burada\</a >.\< /p > |
 | OnlineAudioLinkText | \<p > Bu konu ile ilgili sesi dinlemek için tıklatın {0} \<bir href = "{1}" >{2}burada\</a >.\< /p > |
-| Özelliği: | **İçerik denetimi yüklü değil** |
+| Özellik: | **İçerik denetimi yüklü değil** |
 | Kullanım: | Contentnotinstalled.htm işlemek için kullanılan metin öğelerini (dize) |
 | **Öğe** | **Değer** |
 | ContentNotInstalledTitle | Bilgisayarınızda hiçbir içerik bulunamadı. |
 | ContentNotInstalledDownloadContentText | \<p > içeriği bilgisayarınıza indirmek için \<bir href = "{0}" {1}> Yönet sekmesini tıklatın\</a >.\< /p > |
 | ContentNotInstalledText | \<p > bilgisayarınızda hiçbir içerik yüklenir. Yerel Yardım içerik yükleme için yöneticinize başvurun. \</p > |
-| Özelliği: | **Konu denetim bulunamadı** |
+| Özellik: | **Konu denetim bulunamadı** |
 | Kullanım: | Topicnotfound.htm işlemek için kullanılan metin öğelerini (dize) |
 | **Öğe** | **Değer** |
 | TopicNotFoundTitle | İstenen konu bilgisayarınızda bulunamıyor. |
 | TopicNotFoundViewOnlineText | \<p > istediğiniz konu bilgisayarınızda bulunamadı, ancak yapabilecekleriniz \<bir href = "{0}" {1}> konuyu çevrimiçi gör\</a >.\< /p > |
 | TopicNotFoundDownloadContentText | \<p > benzer konular için Gezinti bölmesine bakın veya \<bir href = "{0}" {1}> Yönet sekmesini tıklatın\</a > bilgisayarınıza içerik indirilemedi.\< /p > |
 | TopicNotFoundText | \<p > istediğiniz konu bilgisayarınızda bulunamadı. \</p > |
-| Özelliği: | **Konu bozuk denetimi** |
+| Özellik: | **Konu bozuk denetimi** |
 | Kullanım: | Topiccorrupted.htm işlemek için kullanılan metin öğelerini (dize) |
 | **Öğe** | **Değer** |
 | TopicCorruptedTitle | İstenen konu görüntülenemiyor. |
 | TopicCorruptedViewOnlineText | \<p > Yardım Görüntüleyiciyi istenen konuyu görüntüleyemiyor. Konunun içeriğinde veya temel bir sistem bağımlılık bir hata olabilir. \</p > |
-| Özelliği: | **Giriş sayfası denetimi** |
+| Özellik: | **Giriş sayfası denetimi** |
 | Kullanım: | Yardım Görüntüleyicisi üst düzey düğüm içerik görünümü destekleyen metin. |
 | **Öğe** | **Değer** |
 | HomePageTitle | Yardım Görüntüleyicisi giriş sayfası |
@@ -558,7 +555,7 @@ Bir dizi anahtar bilgileri açıklayan hangi içerik kümelerini yüklü bir bö
 
 ||||
 |-|-|-|
-|**Dosya**|**Kullanın**|**Görüntülenen içerik kaynağı**|
+|**Dosya**|**Kullanma**|**Görüntülenen içerik kaynağı**|
 |homepage.htm|Şu anda yüklü içeriği ve içeriklerini hakkında kullanıcıya göstermek uygun başka iletisi görüntüleyen bir sayfa budur.  Bu dosya ek meta veri özniteliği "Microsoft.Help.Id" içeriğe sahip olan yerel içerik TOC üst kısmında bu içerik yerleştirir "-" 1 =.||
 ||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, etiket \<HomePageTitle >|
 ||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageIntroduction >|
@@ -593,7 +590,7 @@ Visual Studio İçerik, Visual Studio logosu ve bunun yanı sıra diğer grafik 
 
 ||||
 |-|-|-|
-|**Dosya**|**Kullanın**|**Örnekler**|
+|**Dosya**|**Kullanma**|**Örnekler**|
 |Clear.gif|Daraltılabilir alan işlemek için kullanılan||
 |footer_slice.gif|Altbilgi sunu||
 |info_icon.gif|Bilgileri görüntülerken, kullanılan|Sorumluluk reddi|
@@ -729,7 +726,7 @@ Visual Studio İçerik depolama alanı oluşturun. Tümleşik Kabuk senaryo içi
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-us
 
-   Anahtar: Katalog adı dize değeri: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] belgeleri
+   Anahtar: Katalog adı dize değeri: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Belgeleri
 
 **Projeyi Oluşturma**
 
@@ -806,7 +803,7 @@ Dağıtılmışsa, bunu test etmek için:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-ABD
 
-    Anahtar: Katalog adı dize değeri: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] belgeleri. ISO Shell için bu kataloğunuzu adıdır.
+    Anahtar: Katalog adı dize değeri: [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Belgeleri. ISO Shell için bu kataloğunuzu adıdır.
 
 8. İçeriğinizi (cab veya MSHC ve MSHA) yerel bir klasöre kopyalayın.
 

@@ -20,11 +20,11 @@ items:
 - name: Öğreticiler
   items:
   - name: C#’ta hata ayıklamayı öğrenin
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: C++’ta hata ayıklamayı öğrenin
     href: getting-started-with-the-debugger-cpp.md
   - name: Visual Basic’te hata ayıklamayı öğrenin
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Hata ayıklayıcıda Python kodu çalıştırma...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Canlı bir Azure uygulamasında hata ayıklama
@@ -214,7 +214,7 @@ items:
         items:
         - name: Görselleştirici mimarisi
           href: visualizer-architecture.md
-        - name: 'İzlenecek yol: C# ile görselleştirici yazma'
+        - name: 'İzlenecek yol: C# dilinde görselleştirici yazma'
           href: walkthrough-writing-a-visualizer-in-csharp.md
         - name: "İzlenecek yol: Visual Basic'te görselleştirici yazma"
           href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -423,7 +423,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Visual Basic'de durdur deyimleri
         href: stop-statements-in-visual-basic.md
-      - name: 'İzlenecek Yol: Windows Formunda Hata Ayıklama'
+      - name: 'İzlenecek yol: Windows Formunda hata ayıklama'
         href: walkthrough-debugging-a-windows-form.md
       - name: OnStart metodunda hata ayıklama
         href: how-to-debug-the-onstart-method.md
@@ -546,7 +546,7 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: Dağıtılmış Web uygulamalarında hata ayıklama
         href: debugging-deployed-web-applications.md
-      - name: 'İzlenecek Yol: Web Formunda Hata Ayıklama'
+      - name: 'İzlenecek yol: Web Formunda Hata Ayıklama'
         href: walkthrough-debugging-a-web-form.md
       - name: ASP.NET özel durumlarında hata ayıklama
         href: how-to-debug-aspnet-exceptions.md
@@ -588,7 +588,7 @@ items:
         - name: Betiğe ekleme
           href: how-to-attach-to-script.md
           items:
-          - name: 'Uyarı: Betik hata ayıklaması devre dışı'
+          - name: 'Uyarı: Betik hata ayıklama devre dışı'
             href: warning-script-debugging-disabled.md
     - name: WCF hizmetlerinde hata ayıklama
       href: debugging-wcf-services.md
@@ -840,9 +840,9 @@ items:
   items:
   - name: Visual Studio’da hata ayıklayıcısı yenilikleri
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821402"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561742"

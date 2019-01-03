@@ -125,42 +125,42 @@ items:
       href: editor-imports.md
     - name: EditorConfig’i destekleme
       href: supporting-editorconfig.md
-    - name: 'İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama'
+    - name: 'İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama'
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-    - name: 'İzlenecek Yol: Dış Boşluk Karakteri Oluşturma'
+    - name: 'İzlenecek yol: Dış Boşluk Karakteri Oluşturma'
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 'İzlenecek Yol: Metin Görünümünü Özelleştirme'
+    - name: 'İzlenecek yol: Metin Görünümünü Özelleştirme'
       href: walkthrough-customizing-the-text-view.md
-    - name: 'İzlenecek Yol: Görünüm Kenarlığı, Komutlar ve Ayarlar (Sütun Kılavuzları) Oluşturma'
+    - name: 'İzlenecek yol: Görünüm Kenarlığı, Komutlar ve Ayarlar (Sütun Kılavuzları) Oluşturma'
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'İzlenecek Yol: Metni Vurgulama'
+    - name: 'İzlenecek yol: Metni Vurgulama'
       href: walkthrough-highlighting-text.md
-    - name: 'İzlenecek Yol: Ana Hat Oluşturma'
+    - name: 'İzlenecek yol: Anahat Oluşturma'
       href: walkthrough-outlining.md
-    - name: 'İzlenecek Yol: Eşleşen Küme Ayraçlarını Görüntüleme'
+    - name: 'İzlenecek yol: Eşleşen Küme Ayraçlarını Görüntüleme'
       href: walkthrough-displaying-matching-braces.md
-    - name: 'İzlenecek Yol: HızlıBilgi Araç İpuçlarını Görüntüleme'
+    - name: 'İzlenecek yol: HızlıBilgi Araç İpuçlarını Görüntüleme'
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 'İzlenecek Yol: İmza Yardımını Görüntüleme'
+    - name: 'İzlenecek yol: İmza Yardımını Görüntüleme'
       href: walkthrough-displaying-signature-help.md
-    - name: 'İzlenecek Yol: Deyim Tamamlamayı Görüntüleme'
+    - name: 'İzlenecek yol: Deyim Tamamlamayı Görüntüleme'
       href: walkthrough-displaying-statement-completion.md
-    - name: 'İzlenecek Yol: Kod Parçacıkları Uygulama'
+    - name: 'İzlenecek yol: Kod Parçacıklarını Uygulama'
       href: walkthrough-implementing-code-snippets.md
-    - name: 'İzlenecek Yol: Ampul Önerilerini Görüntüleme'
+    - name: 'İzlenecek yol: Ampul Önerilerini Görüntüleme'
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: 'İzlenecek Yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma'
+    - name: 'İzlenecek yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma'
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: 'İzlenecek Yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma'
+    - name: 'İzlenecek yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma'
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-    - name: 'İzlenecek Yol: Düzenleyici Uzantısından DTE Nesnesine Erişme'
+    - name: 'İzlenecek yol: Düzenleyici Uzantısından DTE Nesnesine Erişme'
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: Özel Düzenleyiciler ve Tasarımcılar Oluşturma
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 'İzlenecek Yol: Özel Düzenleyici Oluşturma'
+    - name: 'İzlenecek yol: Özel Düzenleyici Oluşturma'
       href: walkthrough-creating-a-custom-editor.md
-    - name: 'İzlenecek Yol: Bir Özel Düzenleyiciye Özellik Ekleme'
+    - name: 'İzlenecek yol: Özel Düzenleyiciye Özellik Ekleme'
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Assembly Öğesi (Visual Studio Şablon Sihirbazı Uzantısı)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (Visual Studio Şablonları)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: BuildOnLoad Özniteliği ve Öğesi (Visual Studio Şablonları)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnload Öğesi (Visual Studio Şablonları)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (Visual Studio Şablonları)
       href: createinplace-visual-studio-templates.md
     - name: CreateNewFolder Öğesi (Visual Studio Şablonları)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: RequiredFrameworkVersion Öğesi (Visual Studio Şablonları)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion Öğesi (Visual Studio Şablonları)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference Öğesi (Visual Studio Şablonları)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (Visual Studio Şablonları)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder Öğesi (Visual Studio Şablonları)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: SupportsMasterPage Öğesi (Visual Studio Şablonları)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName Öğesi (Visual Studio Şablonları)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: TemplateContent Öğesi (Visual Studio Şablonları)
       href: templatecontent-element-visual-studio-templates.md
     - name: TemplateData Öğesi (Visual Studio Şablonları)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: WizardExtension Öğesi (Visual Studio Şablonları)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload Öğesi (Visual Studio Şablonları)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion Öğesi (Visual Studio Şablonları)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference Öğesi (Visual Studio Şablonları)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName Öğesi (Visual Studio Şablonları)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Visual Studio Şablon Bildirim Şeması Başvurusu
     href: visual-studio-template-manifest-schema-reference.md
 - name: Kullanıcı Ayarlarını ve Seçeneklerini Genişletme
@@ -365,13 +365,13 @@ items:
   - name: Özel Başlangıç Sayfası Oluşturma
     href: creating-a-custom-start-page.md
     items:
-    - name: 'İzlenecek Yol: Başlangıç Sayfasına Özel XAML Ekleme'
+    - name: 'İzlenecek yol: Başlangıç Sayfasına Özel XAML Ekleme'
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: Başlangıç Sayfasına Kullanıcı Denetimi Ekleme
       href: adding-user-control-to-the-start-page.md
     - name: Başlangıç Sayfasına Visual Studio Komutları Ekleme
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 'İzlenecek Yol: Kullanıcı Ayarlarını Başlangıç Sayfasına Kaydetme'
+    - name: 'İzlenecek yol: Kullanıcı Ayarlarını Başlangıç Sayfasına Kaydetme'
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: Özel Başlangıç Sayfaları Dağıtma
       href: deploying-custom-start-pages.md
@@ -426,7 +426,7 @@ items:
     href: vsix-project-template.md
   - name: VSIX Proje Şablonunu Kullanmaya Başlama
     href: getting-started-with-the-vsix-project-template.md
-  - name: 'İzlenecek Yol: Visual Studio Uzantısı Yayımlama'
+  - name: 'İzlenecek yol: Visual Studio Uzantısı Yayımlama'
     href: walkthrough-publishing-a-visual-studio-extension.md
   - name: 'İzlenecek yol: Komut satırı aracılığıyla Visual Studio Uzantısı yayımlama'
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
@@ -728,11 +728,11 @@ items:
 - name: Yazılık Geliştirme Seti Oluşturma
   href: creating-a-software-development-kit.md
   items:
-  - name: 'İzlenecek Yol: C# veya Visual Basic Kullanarak SDK Oluşturma'
+  - name: 'İzlenecek yol: C# veya Visual Basic Kullanarak SDK Oluşturma'
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-  - name: 'İzlenecek Yol: C++ Kullanarak SDK Oluşturma'
+  - name: 'İzlenecek yol: C++ Kullanarak SDK Oluşturma'
     href: walkthrough-creating-an-sdk-using-cpp.md
-  - name: 'İzlenecek Yol: JavaScript Kullanarak SDK Oluşturma'
+  - name: 'İzlenecek yol: JavaScript Kullanarak SDK Oluşturma'
     href: walkthrough-creating-an-sdk-using-javascript.md
 - name: .NET Derleyici Platformu ("Roslyn") Genişletilebilirliği
   href: dotnet-compiler-platform-roslyn-extensibility.md
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Roslyn paketi sürümü başvurusu
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967499"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562366"

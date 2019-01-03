@@ -2,7 +2,6 @@
 title: Şekiller ve yollar çizin
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942651"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 
@@ -85,7 +84,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 ##  <a name="Convert"></a> Bir şekli bir yola Dönüştür
  Bir şekli bir yolu değiştirmek yollarla değiştirmek için şekli bir yola Dönüştür.
 
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: bir şekli bir yola dönüştürmek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bir şekli bir yola dönüştürmek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 ##  <a name="Combine"></a> Yolları Birleştir
  Tek bir yol, yol ve Şekil birleştirebilirsiniz.
@@ -98,7 +97,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 |![Örtüşmeyi Dışla](../designers/media/b1_2.png)|Birleştir|![](../designers/media/b1_5.png)|Örtüşmeyi Dışla|
 |![Çıkarma](../designers/media/b1_3.png)|Bölme|![](../designers/media/b1_6.png)|Çıkarma|
 
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ##  <a name="Compound"></a> Bileşik yol Oluştur
  Bileşik yol oluşturduğunuzda, yolların herhangi bir kesişen bölümleri sonuçtan çıkartılır ve sonuçlanan yol en alt yolun görsel özelliklerini kabul eder.
@@ -107,14 +106,14 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 
  ![Bileşik yol Kes](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ##  <a name="Clipping"></a> Bir kırpma yolunu oluşturun
  Bir kırpma yolu, kırpma yolu dışına düşen maskelenmiş nesnenin kısımlarını saklayarak, diğer nesneye uygulanan bir yol veya şekildir.
 
  ![Kırpma yolu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: bir kırpma yolunu oluşturun](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bir kırpma yolunu oluşturun](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

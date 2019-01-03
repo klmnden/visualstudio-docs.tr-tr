@@ -1,0 +1,45 @@
+items:
+- name: Visual Studio’da C#
+  href: index.yml
+  items:
+  - name: Genel Bakış
+    items:
+    - name: Visual Studio 2017 Hakkında
+      href: visual-studio-ide.md
+    - name: Kod düzenleyicisi hakkında
+      href: tutorial-editor.md
+    - name: Projeler ve çözümler hakkında
+      href: tutorial-projects-solutions.md
+    - name: Diğer Visual Studio özellikleri
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+  - name: Öğreticiler
+    items:
+    - name: İlk C# uygulamanızı oluşturma
+      href: tutorial-console.md
+    - name: Web uygulaması oluşturma
+      href: tutorial-aspnet-core.md
+    - name: UWP uygulaması oluşturma
+      href: tutorial-uwp.md
+    - name: WPF uygulaması oluşturma
+      href: tutorial-wpf.md
+    expanded: true
+  - name: Visual Studio'yu öğrenin
+    items:
+    - name: Kodu yazma ve düzenleme
+      href: tutorial-editor.md
+    - name: Derleme ve oluşturma
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Kodunuzda hata ayıklama
+      href: ../csharp/tutorial-debugger.md
+    - name: Birim testi
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    - name: Projenizi dağıtma
+      href: ../../deployment/index.md
+    - name: Verilere erişme
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+ms.openlocfilehash: cb9bc5df898e902292b2cf53bcb43f72f4464454
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443594"
