@@ -1,8 +1,6 @@
 ---
 title: MSBuild sözlüğü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 27f918b3ca3408303091dc5200ab8919ffc1eecc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986875"
 ---
 # <a name="msbuild-glossary"></a>MSBuild sözlüğü
 Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini açıklamak için kullanılır.  
@@ -133,7 +131,7 @@ Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini açıklamak için
  kayıt defteri özelliği  
  Bkz: *özelliği, kayıt defteri*.  
   
- Hedef  
+ hedef  
  Bir hedef, görevler, belirli bir sıraya göre gruplandıran ve proje dosyasının bölümlerini derleme işlemine giriş noktaları olarak kullanıma sunar. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md).  
   
  Hedef, yapı  

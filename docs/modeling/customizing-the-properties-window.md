@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987346"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde davranışını ve görünümünü özelleştirebilirsiniz. DSL tanımındaki her etki alanı sınıfı üzerinde etki alanı özelliklerini tanımlayın. Diyagram üzerinde veya Model Gezgini'nde sınıfının bir örneğini seçtiğinizde varsayılan olarak, her etki alanı özelliği Özellikler penceresinde listelenir. Bunları diyagramdaki şekil alanları eşlenmedi olsa bile bu görmek ve etki alanı özelliklerinin değerlerini düzenlemek, sağlar.
@@ -24,7 +23,7 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 ## <a name="names-descriptions-and-categories"></a>Adları ve açıklamaları kategorileri
  **Adı ve görünen adı**. Bir alan özelliği tanımında, özellik görünen adı Özellikler penceresinde çalışma zamanında görüntülenen adıdır. Özellik Güncelleştirme için program kodu yazarken aksine, adı kullanılır. Adın doğru bir CLR alfasayısal adı olması gerekir, ancak görünen adı boşluk içeremez.
 
- DSL tanımındaki bir özelliğin adını ayarladığınızda, onun görünür ismini adının bir kopyasını otomatik olarak ayarlanır. "FuelGauge" gibi bir Pascal cased adını yazarsanız, görünen adı otomatik olarak bir boşluk içeriyor: "Yakıt ölçer". Ancak, görünen ad başka bir değere açıkça ayarlayabilirsiniz.
+ DSL tanımındaki bir özelliğin adını ayarladığınızda, onun görünür ismini adının bir kopyasını otomatik olarak ayarlanır. "FuelGauge" gibi bir Pascal cased adını yazarsanız, görünen adı otomatik olarak bir boşluk içerir: "Yakıt ölçer". Ancak, görünen ad başka bir değere açıkça ayarlayabilirsiniz.
 
  **Açıklama**. Bir etki alanı özelliğin açıklamasını iki yerde görüntülenir:
 

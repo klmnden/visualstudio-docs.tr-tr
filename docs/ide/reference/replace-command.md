@@ -2,7 +2,6 @@
 title: Değiştir Komutu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replace
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b712ee88526585d24ffd7b22fadbbf015c3d131
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b058b57897c369b4f7cc54b849d9abea3a1b6b15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989237"
 ---
 # <a name="replace-command"></a>Değiştir Komutu
-Bir alt kümesi üzerinde kullanılabilir seçenekleri kullanarak dosyaları metinde değiştirir **dosyalarda Değiştir** sekmesinde **bulma ve değiştirme** penceresi.
+Metin dosyalarında bulunan seçenekler kümesini kullanarak değiştirir **dosyalarda Değiştir** sekmesinde **Bul ve Değiştir** penceresi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +35,11 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Arguments
  `findwhat`
 
- Gerekli. Eşleşen metin.
+ Gerekli. Eşleştirilecek metin.
 
  `replacewith`
 
- Gerekli. Eşleşen metin için alternatif metin.
+ Gerekli. Eşleşen metni eklenecek metin.
 
 ## <a name="switches"></a>Anahtarlar
  / all veya /a
@@ -49,54 +48,54 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  /Case veya /c
 
- İsteğe bağlı. Eşleşme ortaya yalnızca zaman büyük ve küçük harfleri tam olarak belirtilen eşleşiyorsa `findwhat` bağımsız değişkeni.
+ İsteğe bağlı. Eşleşme gerçekleşmesi yalnızca zaman büyük ve küçük harfleri tam olarak belirtilen platformlarla eşleşen `findwhat` bağımsız değişken.
 
  / doc veya /d
 
- İsteğe bağlı. Yalnızca geçerli belgede arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ İsteğe bağlı. Yalnızca geçerli belgede arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
- / Gizli veya /h
+ / Gizli veya/h
 
- İsteğe bağlı. Tasarım zamanı denetimi, gizli bir bölge anahatları belirlenmiş bir belge veya bir daraltılmış sınıfı ya da yöntemi meta verileri gibi gizli bilgiler ve daraltılmış metin arar.
+ İsteğe bağlı. Bir tasarım zamanı denetimi, gizli bir bölge anahatları belirlenmiş bir belge veya bir daraltılmış sınıf veya yöntemin meta verilerini gibi altına gizlenmiş ve daraltılmış metin araması yapar.
 
  /Open veya /o
 
- İsteğe bağlı. Bir belge değilmiş gibi tüm açık belgeleri arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ İsteğe bağlı. Bir belge değilmiş gibi tüm açık belgeleri arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
  / Options veya /t
 
- İsteğe bağlı. Geçerli Bul seçeneği ayarlarını listesini görüntüler ve arama gerçekleştirmez.
+ İsteğe bağlı. Geçerli bulma seçeneği ayarları listesini görüntüler ve arama yapmaz.
 
  /proc veya /p
 
- İsteğe bağlı. Yalnızca geçerli yordamı arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ İsteğe bağlı. Yalnızca geçerli yordamı arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
  /Regex veya /r
 
- İsteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişken olarak değişmez değer karakterleri yerine metin desenlerini göstermek gösterimler. Normal ifade karakter tam bir listesi için bkz: [normal ifadeler](../../ide/using-regular-expressions-in-visual-studio.md).
+ İsteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişken olarak sabit karakterleriyle yerine metin desenleri temsil eden gösterimler. Normal ifade karakterleri tam bir listesi için bkz. [normal ifadeler](../../ide/using-regular-expressions-in-visual-studio.md).
 
- / Reset veya /e
+ Reset veya /e
 
- İsteğe bağlı. Bul seçeneklerini varsayılan ayarlarına geri döndürür ve bir arama gerçekleştirmez.
+ İsteğe bağlı. Bulma seçenekleri varsayılan ayarlarına geri döndürür ve bir arama yapmaz.
 
- /sel veya/s
+ /sel veya /s
 
- İsteğe bağlı. Yalnızca geçerli seçimi arar. Kullanılabilir arama kapsamlar yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
+ İsteğe bağlı. Yalnızca geçerli seçimi arar. Kullanılabilir arama kapsamları yalnızca birini belirtin `/doc`, `/proc`, `/open`, veya `/sel`.
 
  /UP veya /u
 
- İsteğe bağlı. Dosyanın en üstüne doğru dosyayı geçerli konumundan arar. Varsayılan olarak, dosya ve dosyanın sonuna doğru İlerle geçerli konumda aramalar başlar.
+ İsteğe bağlı. Dosyanın üst tarafındaki dosya geçerli konumda arar. Varsayılan olarak, dosya ve İlerle dosyasının en altına doğru geçerli konumu aramaları başlar.
 
- /wild veya /l
+ /wild veya/l
 
- İsteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişkeni olarak bir karakter ya da bir karakter dizisi temsil etmek için gösterimler.
+ İsteğe bağlı. Önceden tanımlanmış özel karakterleri kullanan `findwhat` bağımsız değişken olarak bir karakter ya da dizi karakteri temsil etmek için gösterimler.
 
  /Word veya /w
 
- İsteğe bağlı. Yalnızca tam sözcükleri için arama yapar.
+ İsteğe bağlı. Yalnızca için tam sözcükleri arar.
 
 ## <a name="example"></a>Örnek
- Bu örnek değiştirir `btnSend` ile `btnSubmit` tüm belgeleri açın.
+ Bu örnekte değiştirir `btnSend` ile `btnSubmit` tüm açık belgeleri.
 
 ```
 >Edit.Replace btnSend btnSubmit /open
@@ -106,6 +105,6 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 - [Metin Bulma ve Değiştirme](../../ide/finding-and-replacing-text.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Bul/Komut Kutusu](../../ide/find-command-box.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)

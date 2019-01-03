@@ -1,8 +1,6 @@
 ---
 title: Öğe tanımları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990811"
 ---
 # <a name="item-definitions"></a>Öğe tanımları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 kullanarak proje dosyalarındaki öğeleri statik bildirimi sağlayan [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Ancak, meta veriler için tüm öğeleri aynı olsa bile, yalnızca öğe düzeyinde meta veri eklenebilir. İtibariyle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, adlı bir proje öğesi [Itemdefinitiongroup](../msbuild/itemdefinitiongroup-element-msbuild.md) bu sınırlamayı kaldırır. *Itemdefinitiongroup* adlandırılmış öğe türü içindeki tüm öğeler için varsayılan meta veri değerlerini ekleyen öğesi tanımları kümesini tanımlamanızı sağlar.  
@@ -28,7 +26,7 @@ ms.locfileid: "39178568"
   
 -   Öğesi türleri, birden çok tanımına sahip olabilir. Ek meta veri belirtimleri türüne eklenir, son belirtimi önceliklidir. \(Meta veri özelliklerini izleyin aynı alma sırada izler.\)  
   
--   Meta veri olabilir eklenebilir. Örneğin, CDefines değerleri koşullu olarak ayarlanan özellikler bağlı olarak toplanır. Örneğin, `MT;STD_CALL;DEBUG;UNICODE`.  
+-   Meta veri olabilir eklenebilir. Örneğin, CDefines değerleri koşullu olarak ayarlanan özellikler bağlı olarak toplanır. Örneğin: `MT;STD_CALL;DEBUG;UNICODE`  
   
 -   Meta veri kaldırılabilir.  
   
@@ -71,7 +69,7 @@ ms.locfileid: "39178568"
   
 -   Itemdefinitiongroup öğesi üzerinde öğesi dönüştürme  
   
--   ortam değişkeni  
+-   Ortam değişkeni  
   
 -   Global özelliği (gelen *MSBuild.exe* komut satırı)  
   
@@ -254,4 +252,4 @@ Başlayarak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsb
 ```  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Toplu işleme](../msbuild/msbuild-batching.md)
+ [Toplu İşleme](../msbuild/msbuild-batching.md)

@@ -1,12 +1,8 @@
 ---
 title: Değiştirilebilir parametreler | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989171"
 ---
 # <a name="replaceable-parameters"></a>Değiştirilebilir parametreler
   Değiştirilebilir parametreler veya *belirteçleri*, gerçek değerleri, tasarım zamanında bilinen olmayan SharePoint çözüm öğeleri için değerler sağlamak için proje dosyaları içinde kullanılabilir. Bunlar standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablon belirteçleri. Daha fazla bilgi için [şablon parametreleri](../ide/template-parameters.md).  

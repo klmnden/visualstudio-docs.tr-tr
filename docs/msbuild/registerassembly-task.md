@@ -1,8 +1,6 @@
 ---
 title: RegisterAssembly görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1e3eb6108ac96716895ff996b043bc486c16e38
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4b4242ed9b1e18879c724b996baa393e0371e115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988607"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly görevi
 Belirtilen derleme içindeki meta veriyi okur ve oluşturmak COM istemcilerinin veren kayıt defterine gerekli girişleri ekler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] şeffaf bir şekilde sınıfları. Bu görevin benzer, ancak aynı, davranıştır [Regasm.exe (derleme kayıt aracı)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  

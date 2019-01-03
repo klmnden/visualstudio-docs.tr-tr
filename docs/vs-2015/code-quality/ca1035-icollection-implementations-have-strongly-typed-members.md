@@ -1,12 +1,11 @@
 ---
-title: 'CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır | Microsoft Docs'
+title: 'CA1035: ICollection uygulamalarında üye türü kesin belirlenmiş | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c5a20352b92c5cf4089029d9b613fdf8a83a8c2e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56ae90909c708d564d71e350f80344bcba34b49b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990038"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +58,11 @@ ms.locfileid: "49930160"
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ICollectionStrongTypes/cs/FxCop.Design.ICollectionStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1038: Numaralandırıcıların türü kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038: Numaralandırıcılar kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039: Listelerin türü kesin olarak belirlenmiştir](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: Listeler kesin türdedir](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Array?displayProperty=fullName><xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
-
-
-

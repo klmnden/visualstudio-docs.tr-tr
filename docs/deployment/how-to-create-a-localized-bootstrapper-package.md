@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: yerelleştirilmiş önyükleyici paketi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1083633410c42c63f8c3e9a2ff341a2278f0b63a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990405"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: yerelleştirilmiş önyükleyici paketi oluşturma
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl Yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
 Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazla dosya oluşturarak yerelleştirilmiş önyükleyici paketi sürümlerini oluşturabilirsiniz: dosya bir yazılım lisans koşulları (gibi bir *eula.rtf*) ve bir paket bildirimi (*package.xml*).  
   
- Varsayılan olarak, yalnızca .NET Framework 4, .NET Framework 4 istemci profili, F # çalışma zamanı 2.0 ve F # çalışma zamanı 4.0 için Visual Studio 2010 yerelleştirilmiş önyükleyici paketleri içerir. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.  
+ Varsayılan olarak, Visual Studio 2010 yalnızca .NET Framework 4 için .NET Framework 4 istemci profili, yerelleştirilmiş önyükleyici paketleri içerir F# çalışma zamanı 2.0 ve F# çalışma zamanı 4.0. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.  
   
 1.  Yerel ayar adı sonra adlı bir klasör oluşturun *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.  
   
@@ -57,7 +55,7 @@ Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazl
     |İspanyolca|ES|  
     |Fransızca|FR|  
     |İtalyanca|Bunu|  
-    |Kore Dili|Ko|  
+    |Korece|Ko|  
     |Japonca|ja|  
     |Lehçe|PL|  
     |Portekizce (Brezilya)|pt-BR|  

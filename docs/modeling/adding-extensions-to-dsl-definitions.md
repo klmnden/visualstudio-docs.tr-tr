@@ -8,31 +8,30 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dc764df3037baeba36666ce896549018d86c2a21
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e4c80dee056d559822006627c86f4b4884942c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991142"
 ---
-# <a name="add-extensions-to-dsl-definitions"></a>Uzantıları için DSL tanımları ekleme
+# <a name="add-extensions-to-dsl-definitions"></a>DSL Tanımlarına Uzantı Ekleme
 
-DSL tanımı uzantısı, bir etki alanına özgü dil (DSL) uzantıları paketi oluşturmanıza olanak sağlar. Bir Visual Studio Tümleştirme Uzantısı'na (VSIX) bulunur, DSL uzantısı bir kullanıcının bilgisayarında DSL aynı şekilde yüklenebilir. Ek özellikler dinamik olarak etkin ve çalışma zamanında devre dışı. DSL'ler açıkça uzantısı için tasarlanmış gerekmez ve uzantıları daha sonra veya üçüncü tarafların genişletilmiş DSL değiştirmeden tasarlanabilir.
+DSL tanımı uzantısı, uzantı bir etki alanına özgü dil (DSL) için bir paket oluşturmanıza olanak sağlar. Bir DSL aynı şekilde bir kullanıcının bilgisayarında bulunan bir Visual Studio Tümleştirme Uzantısı'na (VSIX) DSL uzantısının yüklenebilir. Ek özellikleri dinamik olarak etkin ve çalışma zamanında devre dışı. DSL uzantısı açıkça tasarlanmış olması gerekmez ve uzantıları daha sonra veya üçüncü tarafların genişletilmiş DSL değiştirmeden tasarlanabilir.
 
-DSL uzantıları aşağıdaki özellikler içerebilir:
+DSL uzantıları aşağıdaki özellikleri içerebilir:
 
--   Model ve sunu öğelerin özellikleri
+-   Model ve sunu öğelerinin özellikleri
 
--   Şekilleri ve bağlayıcıları için dekoratörler
+-   Dekoratörler için şekilleri ve bağlayıcıları
 
--   Sınıfları, ilişkileri, şekilleri ve bağlayıcıları
+-   Sınıfları, ilişkilerini, şekiller ve bağlayıcılar
 
 -   Doğrulama kısıtlamaları
 
--   Araç kutusu öğelerini ve sekmeleri
+-   Araç kutusu öğeleri ve sekmeler
 
-Genişletilmiş bir DSL kullanıcısı oluşturun ve ek özellikler örneklerini içeren bir modeli kaydedin. Model uygun uzantısı yüklü diğer kullanıcılar tarafından okunabilir. Uzantısı yüklü olmayan kullanıcılar ek özellikleri kullanamaz, ancak güncelleştirin ve ek özellikler kaybetmeden bir modeli kaydedin.
+Genişletilmiş bir DSL kullanıcısı oluşturabilir ve ek özellikler örneklerini içeren bir modeli kaydedin. Model uygun uzantısı yüklü diğer kullanıcılar tarafından okunabilir. Uzantı yüklü olmayan kullanıcılar, ek özellikleri kullanamaz, ancak güncelleştirin ve ek özellikler kaybetmeden bir modeli kaydedin.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

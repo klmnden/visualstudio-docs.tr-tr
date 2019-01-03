@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Tek tablolu devralma (O R Designer) kullanarak LINQ to SQL sınıfları oluşturma'
+title: 'İzlenecek yol: Tek tablo devralma (O R Designer) kullanarak LINQ to SQL sınıfları oluşturma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,18 +10,17 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdb8f4a419bfaa2d4e5d6c93bad4daede6c10990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988183"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: LINQ tek tablolu devralma (O/R Tasarımcısı) kullanarak SQL sınıfları oluşturma
-[LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı veriler sağlar [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak SQL sınıflarına LINQ oluşturma
+[LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı verileri sağlayan [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Bu kılavuz boyunca aşağıdaki görevleri gerçekleştirin:
 
@@ -54,7 +53,7 @@ ms.locfileid: "49864737"
     |Sütun adı|Veri Türü|Null değerlere izin ver|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Türü**|**int**|**TRUE**|
+    |**Tür**|**int**|**TRUE**|
     |**FirstName**|**Nvarchar(200)**|**False**|
     |**Soyadı**|**Nvarchar(200)**|**False**|
     |**Yöneticisi**|**int**|**TRUE**|
@@ -74,7 +73,7 @@ ms.locfileid: "49864737"
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Türü**|**FirstName**|**Soyadı**|**Yöneticisi**|
+    |**ID**|**Tür**|**FirstName**|**Soyadı**|**Yöneticisi**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -190,7 +189,7 @@ ms.locfileid: "49864737"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [İzlenecek yol:, (O R Designer) SQL sınıflarına LINQ oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama (O/R Tasarımcısı)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [İzlenecek yol: (O R Designer) SQL sınıflarına LINQ oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Nasıl yapılır: Visual Basic veya C# içinde nesne modeli oluşturma](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Nasıl yapılır: Visual Basic'de nesne modeli oluşturmak veyaC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

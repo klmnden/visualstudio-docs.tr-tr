@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989250"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük testi çözümleyicisini kullanarak Yük testlerindeki eşik kuralı ihlallerini çözümleme
 
@@ -39,7 +38,7 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük 
 |Sütun|Açıklama|Varsayılan olarak görünür|
 |-|-|-|
 |Zaman|İhlalin gerçekleştiği süre boyunca yük test edin.|Evet|
-|Bilgisayar|İhlalin gerçekleştiği test edilen bilgisayar adı. **Not:** donanımlarını üzerinde yük testlerini çalıştırdığınızda bu önemlidir.|Evet|
+|Bilgisayar|İhlalin gerçekleştiği test edilen bilgisayar adı. **Not:**  Bu, üzerinde donanımlarını yük testlerini çalıştırdığınızda önemlidir.|Evet|
 |Kategori|İhlalin gerçekleştiği performans sayacı kategorisi.|Evet|
 |Sayaç|İhlalin gerçekleştiği performans sayacının adı.|Evet|
 |Örnek|Performans sayacı örneği üzerinde ihlali oluştu.|Evet|

@@ -1,9 +1,6 @@
 ---
 title: Word çözümleri
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b443cd985910cbb6e81ce79016193623bdeb2dd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986758"
 ---
 # <a name="word-solutions"></a>Word çözümleri
   Visual Studio, Microsoft Office Word için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Word'ü otomatikleştirmek, Word özelliklerini genişletmek ve Word kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +59,7 @@ ms.locfileid: "35676907"
 ##  <a name="doclevel"></a> Word için belge düzeyi özelleştirmeleri geliştirme  
  Microsoft Office Word için belge düzeyi özelleştirmesinde, belirli bir belge ile ilişkilendirilen derleme oluşur. Derleme, genellikle UI'yi özelleştirerek ve Word'ü otomatikleştirerek belgeyi genişletir. Yalnızca ilişkili belge Word'de açık olduğunda bir VSTO Word'ün kendisiyle ilişkilendirilen eklentiyi bir özelleştirmede uyguladığınız işlevsellik kullanılabilir.  
   
- Word için belge düzeyi özelleştirme projesi oluşturmak için Word belgesi veya Word Şablonu proje şablonlarını kullanın. **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Word için belge düzeyi özelleştirme projesi oluşturmak için Word belgesi veya Word Şablonu proje şablonlarını kullanın. **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  Belge düzeyi özelleştirmelerinin hakkında daha fazla bilgi için [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
   
@@ -74,7 +71,7 @@ ms.locfileid: "35676907"
 ##  <a name="applevel"></a> Word için VSTO eklentileri geliştirin  
  Microsoft Office Word'ün bir VSTO eklentisi Word tarafından yüklenen bir derleme içerir. Derleme, genellikle UI'yi özelleştirerek ve Word'ü otomatikleştirerek Word genişletir. Belirli bir belge ile ilişkilendirilen belge düzeyi özelleştirmesinin aksine bir VSTO eklentide uyguladığınız işlevsellik, herhangi bir tek belge ile sınırlı değildir.  
   
- Word için VSTO eklentisi projesi oluşturmak için Word eklentisi proje şablonlarını kullanın **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da oluşturma Office projelerinde](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Word için VSTO eklentisi projesi oluşturmak için Word eklentisi proje şablonlarını kullanın **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  VSTO eklentileri nasıl çalıştığı hakkında genel bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).  
   
@@ -99,7 +96,7 @@ ms.locfileid: "35676907"
   
 |Görev|Daha fazla bilgi için|  
 |----------|--------------------------|  
-|Belgeye eylemler bölmesi ekleme.|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)<br /><br /> [Nasıl yapılır: Word belgelerine Eylemler bölmesi ekleme veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Belgeye eylemler bölmesi ekleme.|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)<br /><br /> [Nasıl yapılır: Word belgelerine veya Excel çalışma kitaplarına Eylemler bölmesi ekleme](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
 |Belge yüzeyine genişletilmiş XMLNode ve XMLNodes denetimleri ekleme.|[Nasıl yapılır: Word belgelerine XMLNode denetimleri ekleme](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Nasıl yapılır: Word belgelerine XMLNodes denetimleri ekleme](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>VSTO eklentileri için seçenekleri  
@@ -118,7 +115,5 @@ ms.locfileid: "35676907"
 |[Windows Forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)|Word belgelerine Windows Forms denetimlerini nasıl ekleyebileceğinizi açıklar.|  
 |[İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word için temel bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.|  
 |[İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Word için basit bir VSTO eklentisi oluşturma işlemini gösterir.|  
-|[İzlenecek yol: bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Bir Windows eklemek için Forms düğmesinin ve gösterir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye çalışma zamanında VSTO eklenti kullanarak.|  
+|[İzlenecek yol: Bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Bir Windows eklemek için Forms düğmesinin ve gösterir <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye çalışma zamanında VSTO eklenti kullanarak.|  
 |[Ofis geliştirmede Word 2010](http://go.microsoft.com/fwlink/?LinkId=199020)|Makaleler ve Word çözümleri (Visual Studio kullanarak Office geliştirmeye özgü olmayan) geliştirme hakkında başvuru belgelerine bağlantılar sağlar.|  
-  
-  

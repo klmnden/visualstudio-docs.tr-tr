@@ -2,7 +2,6 @@
 title: Genel Windows Formları ve Web Formları İçin Kültüre Özgü Sınıflar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
@@ -30,12 +29,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: cb0215c27b8d1fb09f54bc8590d24b99403670f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989967"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Genel Windows Formları ve web formları için kültüre özgü sınıflar
 
@@ -46,7 +45,7 @@ Her bir kültürün tarih, zaman, sayı, para birimi ve diğer bilgileri görün
 
 ## <a name="using-the-culture-setting"></a>Kültür ayarı kullanma
 
-Uygulama veya depolanan kültür ayarı kullanmak **Bölgesel Seçenekler** kültür kuralları, çalışma zamanı ve bilgi biçimlendirebilmek belirlemek için Denetim Masası'nı tıklatın,. Kültürü ayarlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: ASP.NET web sayfası Genelleştirme için UI kültürü ve kültüre ayarlayın](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Bilgi kültür ayarı göre otomatik olarak Biçimlendir sınıfları çağrılır *kültüre özgü*. Kültüre özgü bazı yöntemler
+Uygulama veya depolanan kültür ayarı kullanmak **Bölgesel Seçenekler** kültür kuralları, çalışma zamanı ve bilgi biçimlendirebilmek belirlemek için Denetim Masası'nı tıklatın,. Kültürü ayarlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Kültür ve ASP.NET web sayfası Genelleştirme için UI kültürü](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Bilgi kültür ayarı göre otomatik olarak Biçimlendir sınıfları çağrılır *kültüre özgü*. Kültüre özgü bazı yöntemler
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

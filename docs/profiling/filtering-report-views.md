@@ -1,8 +1,6 @@
 ---
 title: Rapor görünümlerini filtreleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986381"
 ---
 # <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor dosyasına dışarı profil oluşturma verileri sınırlamak için veri dosyaları için filtre uygulayabilirsiniz. Bir rapor için zaman damgası değerlerini arasındaki verileri sınırlayabilir ve belirli işlem ve iş parçacıkları için verileri sınırlayabilirsiniz. Filtreler bir dosyaya kaydedin ve kaydedilmiş filtre içeri aktararak Bu filtre üzerinde farklı bir profil oluşturma veri dosyasını oluşturun.  
   
  Bir rapor için zaman diliminin Özet görünümü grafik zaman çizelgesini kullanarak da sınırlayabilirsiniz. Bkz: [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Sistem ve üçüncü taraf kodu bir raporundan dışlamak için bkz: [nasıl yapılır: Filtre profil oluşturma Araçlar rapor görünümleri için sadece benim kodumu görüntüle](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Sistem ve üçüncü taraf kodu bir raporundan dışlamak için bkz: [nasıl yapılır: Profil oluşturma araçları rapor görünümlerini yalnızca benim kodumu görüntülemek için filtre](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Yordamlar  
   

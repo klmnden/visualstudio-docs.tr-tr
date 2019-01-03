@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Üretilen bir Yönerge İşlemcisine Ana Bilgisayar Bağlama'
+title: 'İzlenecek yol: Üretilen bir yönerge işlemcisine ana bilgisayar bağlama'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3340c9e820103cc286915fe50f105d202eb8c8f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988799"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Konağı Oluşturulan bir Yönerge İşlemcisine Bağlama
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir yönerge işlemcisine ana Bağlan
 
-Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel bir ana bilgisayar gösterilmiştir [izlenecek yol: bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Birden çok çıktı dosyaları oluşturmak gibi işlevler eklemek için bu konak genişletebilirsiniz.
+Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel bir ana bilgisayar gösterilmiştir [izlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Birden çok çıktı dosyaları oluşturmak gibi işlevler eklemek için bu konak genişletebilirsiniz.
 
 Yönerge işlemcileri çağıran metin şablonlarını destekler, böylece bu kılavuzda, özel bir ana bilgisayar genişletin. Bu, bir etki alanına özgü dil tanımladığınızda, oluşturur bir *yönerge işlemcisi* için etki alanı modeli. Yönerge işlemcisini bütünleştirilmiş kod yazma ve içeri aktarma yönergeleri şablonlarındaki gereksinimini azaltır modeline erişim şablonları yazmak kullanıcılar için kolaylaştırır.
 
 > [!NOTE]
-> Bu izlenecek yolda yapılar [izlenecek yol: özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Bu izlenecek yol önce gerçekleştirin.
+> Bu izlenecek yolda yapılar [izlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Bu izlenecek yol önce gerçekleştirin.
 
 Bu izlenecek yol aşağıdaki görevleri içerir:
 
@@ -52,7 +51,7 @@ Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Ayrıca, oluşturduğunuz özel metin şablonu dönüştürme olmalıdır [izlenecek yol: bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Ayrıca, oluşturduğunuz özel metin şablonu dönüştürme olmalıdır [izlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 ## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Bir yönerge işlemcisi oluşturmak için etki alanına özgü dil araçları kullanın
 
@@ -62,13 +61,13 @@ Bu kılavuzda, bir etki alanına özgü dil çözümü DSLMinimalTest oluşturma
 
    -   Ad: DSLMinimalTest
 
-   -   Çözüm şablonu: en az bir dil
+   -   Çözüm şablonu: Minimal dil
 
    -   Dosya uzantısı: en düşük
 
    -   Şirket adı: Fabrikam
 
-   Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Bir etki alanına özgü dil çözümü oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
@@ -89,7 +88,7 @@ Bu kılavuzda, bir etki alanına özgü dil çözümü DSLMinimalTest oluşturma
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Bir özel metin şablonu konağı bir yönerge işlemcisine bağlama
 
-Yönerge işlemcisini ve oluşturduğunuz özel metin şablonu konağı yönerge işlemcisini oluşturduktan sonra bağlandığınız [izlenecek yol: bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Yönerge işlemcisini ve oluşturduğunuz özel metin şablonu konağı yönerge işlemcisini oluşturduktan sonra bağlandığınız [izlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 1.  CustomHost çözümü açın.
 
@@ -365,4 +364,4 @@ Yönerge işlemcisini ve oluşturduğunuz özel metin şablonu konağı yönerge
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [İzlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)

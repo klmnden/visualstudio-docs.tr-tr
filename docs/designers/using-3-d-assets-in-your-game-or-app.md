@@ -2,7 +2,6 @@
 title: Oyunlarda veya uygulamalarda 3B varlıklar kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986771"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Oyununuzda veya uygulamanızda 3B varlıklar kullanma
 
@@ -44,7 +43,7 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
     |----------------| - |
     |Dokularla ve görüntülerle|**ImageContentTask (.targets, .props)**|
     |3B modeller|**MeshContentTask (.targets, .props)**|
-    |Gölgelendiricileri|**ShaderGraphContentTask (.targets, .props)**|
+    |Gölgelendiriciler|**ShaderGraphContentTask (.targets, .props)**|
 
 3.  Seçin **Tamam** düğmesi.
 
@@ -95,7 +94,7 @@ Bir doku varlığı oluşturmak için görüntü içeriği ardışık düzen ara
 |**Sıkıştırma**|Çıkış dosyası için kullanılan sıkıştırma türünü belirtir.<br /><br /> Kullanılabilir seçenekler şunlardır:<br /><br /> -   **Sıkıştırma yok**<br />-   **BC1_UNORM sıkıştırma**<br />-   **BC1_UNORM_SRGB sıkıştırma**<br />-   **BC2_UNORM sıkıştırma**<br />-   **BC2_UNORM_SRGB sıkıştırma**<br />-   **BC3_UNORM sıkıştırma**<br />-   **BC3_UNORM_SRGB sıkıştırma**<br />-   **BC4_UNORM sıkıştırma**<br />-   **BC4_SNORM sıkıştırma**<br />-   **BC5_UNORM sıkıştırma**<br />-   **BC5_SNORM sıkıştırma**<br />-   **BC6H_UF16 sıkıştırma**<br />-   **BC6H_SF16 sıkıştırma**<br />-   **BC7_UNORM sıkıştırma**<br />-   **BC7_UNORM_SRGB sıkıştırma**<br /><br /> Hakkında hangi sıkıştırma biçimlerinin DirectX'in farklı sürümlerinde desteklendiği hakkında bilgi için bkz. [DXGI için Programlama Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Ön çarpımlı alfa biçimine Dönüştür|**Evet** görüntü çıkış dosyasına; önceden çarpılan alfa biçimine dönüştürmek için Aksi takdirde, **Hayır**. Yalnızca çıktı dosyası değiştirildi, kaynak görüntü değiştirilmez.|
 |**Mips üret**|**Evet** derleme zamanında tam bir MIP zincir oluşturmak ve çıkış dosyasında; eklemek için Aksi takdirde, **Hayır**. Varsa **Hayır**, kaynak dosyası zaten mipmap zinciri içeriyor ve sonra çıktı dosyası bir MIP zinciri olur; Aksi takdirde, çıkış dosyası yok MIP zinciri olmaz.|
-|**İçerik çıktısı**|Çıkış dosyasının adını belirtir. **Önemli:** sahip çıkış dosyasının dosya adı uzantısını değiştirmek dosyanın formatını etkilemez.|
+|**İçerik çıktısı**|Çıkış dosyasının adını belirtir. **Önemli:**  Çıkış dosyasının dosya adı uzantısını değiştirmek dosyanın formatını üzerinde etkisi yoktur.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Kafes içerik ardışık düzen yapılandırması
 
@@ -103,7 +102,7 @@ Kafes değer oluşturmak için Kafes içerik ardışık düzen aracını kulland
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**İçerik çıktısı**|Çıkış dosyasının adını belirtir. **Önemli:** sahip çıkış dosyasının dosya adı uzantısını değiştirmek dosyanın formatını etkilemez.|
+|**İçerik çıktısı**|Çıkış dosyasının adını belirtir. **Önemli:**  Çıkış dosyasının dosya adı uzantısını değiştirmek dosyanın formatını üzerinde etkisi yoktur.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Gölgelendirici içerik ardışık düzen yapılandırması
 
@@ -111,13 +110,13 @@ Gölgelendirici değerini oluşturmak için gölgelendirici içeriği ardışık
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**İçerik çıktısı**|Çıkış dosyasının adını belirtir. **Önemli:** sahip çıkış dosyasının dosya adı uzantısını değiştirmek dosyanın formatını etkilemez.|
+|**İçerik çıktısı**|Çıkış dosyasının adını belirtir. **Önemli:**  Çıkış dosyasının dosya adı uzantısını değiştirmek dosyanın formatını üzerinde etkisi yoktur.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Yükleme ve çalışma zamanında 3B varlıklar kullanma
 
 ### <a name="use-textures-and-images"></a>Kullanım dokular ve resimler
 
-Direct3D Doku kaynakları oluşturmak için işlevler sağlar. Direct3D 11'de, doku kaynaklarını ve kaynak görünümünü doğrudan görüntü dosyalarından oluşturmak için D3DX11 yardımcı program kitaplığı ek işlevler sağlar. Direct3D 11'de bir doku kaynağı oluşturma hakkında daha fazla bilgi için bkz. [dokular](http://go.microsoft.com/fwlink/p/?LinkID=246267). Bir doku kaynağı veya kaynak görünümü oluşturmak için D3DX11 kitaplığının kullanma hakkında daha fazla bilgi için bir resim dosyasını görmek [nasıl yapılır: bir dosyadan doku başlatmak](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D Doku kaynakları oluşturmak için işlevler sağlar. Direct3D 11'de, doku kaynaklarını ve kaynak görünümünü doğrudan görüntü dosyalarından oluşturmak için D3DX11 yardımcı program kitaplığı ek işlevler sağlar. Direct3D 11'de bir doku kaynağı oluşturma hakkında daha fazla bilgi için bkz. [dokular](http://go.microsoft.com/fwlink/p/?LinkID=246267). Bir doku kaynağı veya kaynak görünümü oluşturmak için D3DX11 kitaplığının kullanma hakkında daha fazla bilgi için bir resim dosyasını görmek [nasıl yapılır: Bir dosyadan doku başlatmak](http://go.microsoft.com/fwlink/p/?LinkId=246268).
 
 ### <a name="use-3d-models"></a>3B modelleri kullanma
 
@@ -208,8 +207,8 @@ cbuffer MiscVars : register(b3)
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Nasıl yapılır: Mipmap'leri içeren dokuyu dışarı aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Hesaplanmış mipmap'leri içeren dokuyu dışarı aktarmak için görüntü içeriği ardışık düzeni kullanmayı açıklar.|
-|[Nasıl yapılır: Ön çarpımlı alfa kullanan dokuyu dışarı aktarma](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Ön çarpımlı alfa değerleri içeren bir dokuyu dışarı aktarmak için görüntü içeriği ardışık düzeni kullanmayı açıklar.|
-|[Nasıl yapılır: Direct2D veya Javascript uygulamaları kullanmak için dokuyu dışarı aktarma](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Direct2D veya JavaScript uygulamasında kullanılabilen bir dokuyu dışarı aktarmak için görüntü içeriği ardışık düzeni kullanmayı açıklar.|
+|[Nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Hesaplanmış mipmap'leri içeren dokuyu dışarı aktarmak için görüntü içeriği ardışık düzeni kullanmayı açıklar.|
+|[Nasıl yapılır: Çarpımlı Alfaya sahip bir dokuyu dışarı aktarma](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Ön çarpımlı alfa değerleri içeren bir dokuyu dışarı aktarmak için görüntü içeriği ardışık düzeni kullanmayı açıklar.|
+|[Nasıl yapılır: Direct2D veya JavaScript uygulamaları ile kullanmak için doku dışa aktarma](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Direct2D veya JavaScript uygulamasında kullanılabilen bir dokuyu dışarı aktarmak için görüntü içeriği ardışık düzeni kullanmayı açıklar.|
 |[Oyunlar ve uygulamalar için 3B varlıklarla çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Visual Studio'nun oluşturmak ve dokular ve resimler, 3B modelleri ve gölgelendiricileri içeren, 3B varlıkları işlemek için sağladığı düzenleme araçlarını açıklar.|
 |[Nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md)|Gölgelendirici Tasarımcısı'ndan gölgelendiriciyi dışarı aktarma işlemini açıklamaktadır.|

@@ -1,13 +1,8 @@
 ---
 title: Oluşturma ve SharePoint çözümlerinde hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987200"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Derleme ve SharePoint çözümlerinde hata ayıklama
   Genel olarak, derleme ve hata ayıklama SharePoint çözümleri derleme ve hata ayıklama proje türlerinde aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Bu bölümdeki konular, mevcut farkları açıklamaktadır.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283541"
 |Paket Ara dosyaları.|*\<ProjectName > \pkgobj\debug* veya  *\<ProjectName > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>SharePoint çözümleri derleme
- SharePoint çözümleri oluşturmak için SharePoint server'ın doğru sürümü geliştirme bilgisayarında olmalıdır. Aksi halde SharePoint çözümleri oluşturmak diğer proje türleri oluşturma aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için [nasıl yapılır: derleme SharePoint çözümleri](../sharepoint/how-to-build-sharepoint-solutions.md).  
+ SharePoint çözümleri oluşturmak için SharePoint server'ın doğru sürümü geliştirme bilgisayarında olmalıdır. Aksi halde SharePoint çözümleri oluşturmak diğer proje türleri oluşturma aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için [nasıl yapılır: SharePoint çözümleri derleme](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>SharePoint çözümlerini test etmek ve hata ayıklama
  Hata ayıklama önce [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopyaları *.wsp* paket SharePoint sunucusuna Site ve Web kapsamlı özelliklerini etkinleştirir ve bazı durumlarda, projeyi başlatır. Diğer durumlarda, projeyi el ile açmanız gerekebilir. Daha fazla bilgi için [sorun giderme SharePoint çözümleri](../sharepoint/troubleshooting-sharepoint-solutions.md) ve [hata ayıklama SharePoint çözümleri](../sharepoint/debugging-sharepoint-solutions.md).  
@@ -57,5 +52,3 @@ ms.locfileid: "44283541"
  [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)   
  [Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

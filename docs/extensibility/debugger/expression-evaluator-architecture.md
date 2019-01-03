@@ -1,9 +1,6 @@
 ---
 title: İfade değerlendirici mimarisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5110b34c13952e359b494352063a2a277fbdcdde
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e25b1280788486fd35eb0e917c10f75c01be40ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989409"
 ---
 # <a name="expression-evaluator-architecture"></a>İfade değerlendirici mimarisi
 > [!IMPORTANT]
@@ -40,7 +37,7 @@ ms.locfileid: "39232042"
 ### <a name="evaluate-the-expression"></a>İfade değerlendirilemiyor  
  Visual Studio ya da çağırır [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) veya [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ayrıştırılmış ifade değerlendirilemiyor. Bu yöntemlerin ikisi de arama [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` yöntemi çağıran hemen while `IDebugExpression2::EvaluateAsync` yöntemi bir arka plan iş parçacığı aracılığıyla çağırır) ayrıştırılmış ifade değerlendirilip döndürülecek bir [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) ayrıştırılmış ifadenin türü ve değeri temsil eden arabirim. `IDebugParsedExpression::EvaluateSync` Ayrıştırılmış ifade tarafından temsil edilen bir asıl değere dönüştürmek için sağlanan SH, adresi ve Bağlayıcısı'nı kullanan `IDebugProperty2` arabirimi.  
   
-### <a name="for-example"></a>Örneğin  
+### <a name="for-example"></a>Örneğin:  
  Çalışan bir program içinde bir kesme noktasına isabet sonra bir değişkende görüntülemek kullanıcının seçtiği **QuickWatch** iletişim kutusu. Bu iletişim kutusu, değişkenin adını, değeri ve türünü gösterir. Kullanıcı, genellikle değeri değiştirebilirsiniz.  
   
  Zaman **QuickWatch** iletişim kutusu gösterilir, incelenmekte değişkeninin adını metin olarak gönderilir [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Bu döndürür bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) ayrıştırılmış ifadesi, bu durumda temsil eden bir nesne, değişken. [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ardından oluşturmak için çağrılan bir `IDebugProperty2` adının yanı sıra değişken değerini ve türünü temsil eden nesne. Görüntülenen bu bilgilerdir.  

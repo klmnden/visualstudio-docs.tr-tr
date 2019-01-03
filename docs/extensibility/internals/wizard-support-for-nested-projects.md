@@ -1,9 +1,6 @@
 ---
-title: İç içe geçmiş projeleri için sihirbaz desteği | Microsoft Docs
-ms.custom: ''
+title: İç içe projeler için sihirbaz desteği | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add Item wizard
@@ -15,21 +12,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14e8a32db2542ae1729a7fdc87cc2ab32845f8ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3231dd48cea43f517a5e59f33c80df655032ec0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990138"
 ---
-# <a name="wizard-support-for-nested-projects"></a>İç içe geçmiş projeleri için sihirbaz desteği
-İç içe geçmiş projeleri için ana proje uygulayabilirsiniz iki sihirbaz IDE çalıştırır: **yeni proje** Sihirbazı'nı ve **Öğe Ekle** Sihirbazı.  
+# <a name="wizard-support-for-nested-projects"></a>İç içe Projeler için Sihirbaz Desteği
+IDE ana proje iç içe projeler için uygulayabileceğiniz iki sihirbazları çalıştırır: **yeni proje** Sihirbazı ve **Öğe Ekle** Sihirbazı.  
   
- Bir kullanıcı başlıyorsa **yeni proje** seçerek Sihirbazı **Proje Ekle** tıklatıp **yeni proje** Dosya menüsünden veya seçerek **Ekle** ve sağ **yeni proje** IDE Çözüm Gezgini'nde çalıştıran **AddProject** komut ve üst projenin uyarlamasını **AddProject**komut ya da bir şablon proje dosyası ya da bir bağlam parametreleri kümesini içeren bir Sihirbazı'nı (.vsz) dosyası döndürür.  
+ Bir kullanıcı başlarsa **yeni proje** seçerek Sihirbazı **Proje Ekle** tıklayıp **yeni proje** Dosya menüsünden veya seçerek **Ekle** sağ **yeni proje** IDE Çözüm Gezgini'nde çalışan **AddProject** komut ve üst projenin uygulaması **AddProject**komut ya da bir şablon proje dosyası veya bir dizi bağlam parametreleri içeren bir sihirbaz (.vsz) dosyası döndürür.  
   
- Benzer şekilde, bir üst projenin uyarlamasını **addItem** sihirbazları farklı bir bağlam parametreleri kümesini içeren bir .vsz dosyası döndürür.  
+ Benzer şekilde, bir üst projenin uygulaması **addItem** sihirbazları farklı bir bağlam parametreleri kümesini içeren bir .vsz dosyası döndürür.  
   
- Sihirbazları hakkında daha fazla bilgi için bkz: [Sihirbazı'nı (. Vsz) dosya](../../extensibility/internals/wizard-dot-vsz-file.md), [bağlam parametreleri](../../extensibility/internals/context-parameters.md) ve [proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md).  
+ Sihirbazları hakkında daha fazla bilgi için bkz: [Sihirbazı (. Vsz) dosya](../../extensibility/internals/wizard-dot-vsz-file.md), [bağlam parametreleri](../../extensibility/internals/context-parameters.md) ve [proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

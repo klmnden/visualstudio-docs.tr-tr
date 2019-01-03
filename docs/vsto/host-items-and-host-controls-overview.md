@@ -1,9 +1,6 @@
 ---
 title: Konak öğelerine ve denetimlerine genel bakış
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -39,12 +36,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e759b493c183c9a42da0130abc87d40c40f9b471
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987459"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Konak öğelerine ve denetimlerine genel bakış
   Konak denetimlerinin ve konak öğelerinin programlama modeli için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office çözümlerini sağlamaya yardımcı türleridir. Konak denetimlerinin ve konak öğelerinin Microsoft Office Word ve Microsoft Office Excel, COM, Windows Forms denetimleri gibi yönetilen nesnelerle etkileşim gibi daha fazla alan nesne modelleri ile etkileşim kurma olun.  
@@ -179,4 +176,3 @@ ms.locfileid: "53647980"
  [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)   
  [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  

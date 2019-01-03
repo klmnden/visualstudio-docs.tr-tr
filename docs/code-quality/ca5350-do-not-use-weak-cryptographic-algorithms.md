@@ -1,8 +1,7 @@
 ---
-title: 'CA5350: Zayıf Şifreleme Algoritmaları Kullanmayın'
+title: 'CA5350: Zayıf şifreleme algoritmaları kullanmayın'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 11c13b44c2f09075550dc5872ccf76d00aae4f6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987291"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Zayıf Şifreleme Algoritmaları Kullanmayın
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Zayıf şifreleme algoritmaları kullanmayın
 
 |||
 |-|-|

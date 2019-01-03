@@ -1,9 +1,6 @@
 ---
 title: Hata ayıklayıcıyı başlatma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b1cc4a75a17ea686ef5c5c5c75e21f1c5f74de8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 1d1c1ba42d1d05217eff6e8ff7a0b6f1209a05db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990889"
 ---
 # <a name="launch-the-debugger"></a>Hata ayıklayıcıyı başlatma
 Hata ayıklayıcıyı başlatma, yöntemlerini ve olaylarını uygun öznitelikleriyle birlikte doğru sırasını gönderilmesi gerekir.  
@@ -34,7 +31,7 @@ Hata ayıklayıcıyı başlatma, yöntemlerini ve olaylarını uygun öznitelikl
   
      Varsa `S_FALSE` hata ayıklama altyapısı (DE), sanal makine aşamasındayız yüklenecek döndürülür.  
   
-     veya  
+     -veya-  
   
      Varsa `S_OK` DE, yüklenecek döndürülür işlemdeki SDM biri. SDM sonra aşağıdaki görevleri gerçekleştirir:  
   

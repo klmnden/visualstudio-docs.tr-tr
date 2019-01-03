@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Adım 3 / Çekirdek izlenecek Python etkileşimli REPL penceresini kapsayan Visual Studio'da Python özellikleri.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986836"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>3. adım: etkileşimli REPL penceresini kullanma
+# <a name="step-3-use-the-interactive-repl-window"></a>3. Adım: Etkileşimli REPL penceresini kullanma
 
-**Önceki adımda: [yazma ve kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Önceki adım sayısı: [Yazma ve kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 Visual Studio **etkileşimli** penceresi Python için normal düzenleme-oluşturma-hata ayıklama döngüsü önemli ölçüde kısaltır bir zengin okuma-değerlendirme-print-loop (REPL) deneyimi sağlar. **Etkileşimli** penceresinde Python komut satırı REPL deneyiminin tüm özellikleri sağlar. Ayrıca, çok kaynak dosyaları Visual Studio'da kod değişimi Düzenleyici, aksi takdirde komut satırından yavaşlatan bir yöntemdir kolaylaştırır.
 

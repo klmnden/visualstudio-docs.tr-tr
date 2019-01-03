@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989156"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 
@@ -64,9 +63,9 @@ Startprocessingrun() tüm çağrıları sonra şablon oluşturma altyapısı bu 
 
 -   `string GetClassCodeForProcessingRun()` -Yöntemler, özellikler ve şablon kodunu kullanabileceğiniz diğer bildirimleri kodunu döndürür. Bunu yapmanın en kolay yolu, C# veya Visual Basic kodunu içeren bir dize oluşturmaktır. Yönerge işlemciniz herhangi bir CLR dil kullanan bir şablondan çağrılan özellikli hale getirmek için ifadeleri bir CodeDom ağacını oluşturmak ve ardından şablon tarafından kullanılan dilde ağacı seri hale getirme sonucunu döndürür.
 
--   Daha fazla bilgi için [izlenecek yol: özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+-   Daha fazla bilgi için [izlenecek yol: Özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Özel yönerge işlemcisi dağıtma](../modeling/deploying-a-custom-directive-processor.md) özel yönerge işlemcisi kaydetmek açıklanmaktadır.
-- [İzlenecek yol: özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md) özel yönerge işlemcisi oluşturma, kayıt ve yönerge işlemcisini sınamak ve HTML olarak çıkış dosyası biçimine açıklanmaktadır.
+- [İzlenecek yol: Özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md) özel yönerge işlemcisi oluşturma, kayıt ve yönerge işlemcisini sınamak ve HTML olarak çıkış dosyası biçimine açıklanmaktadır.

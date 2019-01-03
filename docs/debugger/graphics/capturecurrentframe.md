@@ -1,8 +1,6 @@
 ---
 title: CaptureCurrentFrame | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41169494424310427e5a8ae6a0af533bdf4be834
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c96a931593771e381d8f526919a5180da1eb919a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990168"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
-Grafik günlük dosyası için geçerli çerçeve kalanı yakalar.  
+Geçerli kare grafik günlük dosyasına geri kalanında yakalar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -27,9 +25,9 @@ void CaptureCurrentFrame();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şu anda başka bir yakalama devam ediyor durumunda — tarafından başlatılan bir yakalama gibi `BeginCapture` işlevi — bu yakalama tamamlandı ve ayrı bir kare olarak grafik günlüğüne kaydedilir. Daha sonra farklı bir çerçeve olarak da kaydedilir geçerli çerçeve kalanı yakalama grafik tanılama başlar hemen. Geçerli çerçevenin son sunmak için bir çağrı tarafından işaretlenir.  
+ Şu anda başka bir yakalama devam ediyor durumunda — tarafından başlatılan bir yakalama gibi `BeginCapture` işlevi — söz konusu yakalama tamamlandı ve ayrı bir kare olarak grafik günlüğüne kaydedilmiş. Daha sonra farklı bir çerçeve olarak da kaydedilir geçerli çerçeve geri kalanında yakalama grafik tanılama başlar hemen. Geçerli çerçevenin son sunmak için bir çağrı tarafından işaretlenir.  
   
- Bir çerçeve yakalamak için yakalama ve grafik bilgilerini kaydetmek için uygulamanızı hazırlamak — diğer bir deyişle, aradığınız gerekir [Init](init.md) örneği üzerinden `VsgDbg` çağırmadan önce sınıf `CaptureCurrentFrame`.  
+ Bir kareyi yakalamak için yakalama ve grafik bilgilerini kaydetmek için uygulamanızı hazırlama — diğer bir deyişle, çağrısı yapmanız gerekir [Init](init.md) örneği üzerinden `VsgDbg` çağırmadan önce sınıfı `CaptureCurrentFrame`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Init](init.md)   

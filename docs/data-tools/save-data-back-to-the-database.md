@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989142"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 
@@ -49,7 +48,7 @@ TableAdapter'ları ile sahibiyseniz, doğrudan aşağıdaki konulardan birine at
 |[TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)|TableAdapters güncelleştirmeleriyle gerçekleştirme|
 |[Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)|İki veya daha fazla ilgili tablo ile bir veri kümesinden güncelleştirmeleri gerçekleştirme|
 |[Bir eşzamanlılık özel durumunu işleme](../data-tools/handle-a-concurrency-exception.md)|İki kullanıcı aynı anda bir veritabanındaki verilerle aynı değiştirmeye çalıştığında özel durumları işleme|
-|[Nasıl yapılır: bir işlemi kullanarak veri kaydetme](../data-tools/save-data-by-using-a-transaction.md)|Sistem kullanarak bir işlemde veri kaydetme yapma. İşlemler ad alanı ve bir TransactionScope nesnesi|
+|[Nasıl yapılır: Bir işlemi kullanarak veri kaydetme](../data-tools/save-data-by-using-a-transaction.md)|Sistem kullanarak bir işlemde veri kaydetme yapma. İşlemler ad alanı ve bir TransactionScope nesnesi|
 |[Bir işlemde veri kaydetme](../data-tools/save-data-in-a-transaction.md)|Verileri bir işlem içinde bir veritabanına kaydetme göstermek için bir Windows Forms uygulaması oluşturan gözden geçirme|
 |[Bir veritabanına (birden çok tablo) veri kaydetme](../data-tools/save-data-to-a-database-multiple-tables.md)|Nasıl kayıtlarını düzenleyin ve birden çok tablo veritabanına değişiklikleri kaydetmek için|
 |[Verileri bir nesneden veritabanına kaydetme](../data-tools/save-data-from-an-object-to-a-database.md)|Nasıl bir nesneden veritabanına bir veri kümesinde bir TableAdapter DbDirect yöntemi kullanarak değil veri geçirme|
@@ -281,4 +280,4 @@ UPDATE deyiminde, her iki yeni değerler (Bu kaydı için yazılır) eski değer
 - [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Verileri doğrulama](validate-data-in-datasets.md)
-- [Nasıl yapılır: ekleme, değiştirme ve (WCF data services) varlıklarını silme](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Nasıl yapılır: Ekleme, değiştirme ve (WCF data services) varlıklarını silme](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

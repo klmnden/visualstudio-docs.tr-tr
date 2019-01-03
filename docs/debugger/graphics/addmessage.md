@@ -1,8 +1,6 @@
 ---
 title: AddMessage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de3460a345dba21e3a8f481adb510b9e3bdd4990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6555072bcbebe24011ca0701f02f48bc1703c34a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985741"
 ---
 # <a name="addmessage"></a>AddMessage
-Grafik tanılama için özel bir ileti ekler *HUD* (Head yukarı görüntüle).  
+Grafik tanılama için özel bir ileti ekler *baş üstü* (baş yukarı Göster).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,9 +28,9 @@ void AddMessage(
   
 #### <a name="parameters"></a>Parametreler  
  `szMessage`  
- HUD eklenecek ileti.  
+ Baş üstü için eklenecek ileti.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Grafik tanılama HUD grafik tanılama altında çalışan uygulama sol üst köşesinde görüntülenir. Çalışma zamanı grafik bilgilerini yakalama ve bu işlevini çağırarak eklenen iletileri ve uygulama hakkında bilgi görüntüler.  
+ Grafik tanılama baş üstü grafik tanılama altında çalışmakta olan uygulamayı sol üst köşesinde görüntülenir. Uygulama ve grafik bilgilerini yakalama ve bu işlevi çağrılarak eklenir iletileri hakkında çalışma zamanı bilgileri görüntüler.  
   
- Bir ileti HUD eklemek için etkin olarak grafik bilgilerini yakalama gerekmez — diğer bir deyişle, bir ileti örneği eklenebilir `VsgDbg` sınıfı, ancak [Init](init.md) üye işlevi mu ilk çağrılmasına değil. Yalnızca HUD görüntülenen iletiler, grafik günlük dosyasında kaydedilmez.
+ Baş üstü için bir ileti eklemek için grafik bilgilerini yakalama etkin gerekmez; diğer bir deyişle, bir ileti örneği eklenebilir `VsgDbg` sınıfı, ancak [Init](init.md) ilk olarak üye işlev yok. İletileri yalnızca baş üstü görüntülenir, grafik günlük dosyasına kaydedilmez.

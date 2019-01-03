@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: efa6c917e5a59c291d07757b52fab4fe8aa7b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdb0c34f873e7f8dce5b771ece2d3620da4deb19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990246"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
-Bu arabirim, belirli bir iş parçacığı çağrı yığınında tek yığın çerçevesi temsil eder.  
+Bu arabirim, belirli bir iş parçacığında bir çağrı yığınındaki bir tek yığın çerçevesini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,7 +29,7 @@ IDebugStackFrame2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) yığın çerçevesi temsil etmek için bu arabirimi uygular.  
+ Hata ayıklama altyapısı (DE), bir yığın çerçevesini temsil etmek için bu arabirimi uygular.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  Çağrı [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) almak için bir [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) arabirimi. Çağrı [sonraki](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) almak için bir [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) içeren yapısı `IDebugStackFrame2` arabirimi.  
@@ -42,24 +39,24 @@ IDebugStackFrame2 : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Bu yığın çerçevesi için kod bağlamını alır.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Bu yığın çerçevesi için kod bağlamı alır.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Bu yığın çerçevesi için belge bağlamını alır.|  
-|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Yığın çerçevesi adını alır.|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Yığın çerçevesi açıklamasını alır.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Yığın çerçevesi ile ilişkili fiziksel adres aralığını makine bağımlı bir gösterimini alır.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Geçerli bağlam içinde ifade değerlendirme bir yığın çerçevesi ve iş parçacığı yapmak için bir değerlendirme bağlamını alır.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Yığın çerçevesi ile ilişkili dilini alır.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Yığın çerçevesi ile ilişkili özellikleri açıklamasını alır.|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Yığın için bir numaralandırıcı çerçeve özellikleri oluşturur.|  
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Yığın çerçevesi ile ilişkili iş parçacığı alır.|  
+|[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Yığın çerçevesinin adını alır.|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Yığın çerçevesinin açıklamasını alır.|  
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Bir yığın çerçevesiyle ilgili olan fiziksel adres aralığını makine bağımlı bir gösterimini alır.|  
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Bir yığın çerçevesi ve iş parçacığı geçerli bağlam içinde ifade değerlendirmesi yapmak için bir değerlendirme bağlamı alır.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Bir yığın çerçevesiyle ilgili dilini alır.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Bir yığın çerçevesiyle ilgili özellikleri açıklamasını alır.|  
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Çerçeve Özellikleri yığın için bir numaralandırıcı oluşturur.|  
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Bir yığın çerçevesiyle ilgili iş parçacığı alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayıklanacak program (ya da bir kullanıcı tarafından ayarlanmış kesme noktası veya bir özel durum nedeniyle) bir kesme noktasında yalnızca durduruldu olduğunda bu arabirimi elde edilir. Bu arabirimden ifadeleri değerlendirmek için bir ifade bağlamı alınabilir, kayıtları listesi döndürülebilecek veya çağrı yığını elde ve incelenmesi.  
+ Bu arabirim, yalnızca hata ayıklanan programa (ya da bir kullanıcı kümesi kesme noktası veya bir özel durum nedeniyle) bir kesme noktasında durduruldu olduğunda elde edilir. Bu arabirimden, ifadeler değerlendirilecek bir ifade bağlamı elde edilebilir, kayıtların listesini döndürülebilir veya çağrı yığını elde ve incelenir.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: msdbg.h  
+ Üstbilgi: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Kısayol Menüsüne Komut Ekleme'
+title: 'Nasıl Yapılır: Kısayol Menüsüne Komut Ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987972"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl Yapılır: Kısayol Menüsüne Komut Ekleme
 Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri için menü komutlarını, etki alanına özgü dil (DSL) ekleyebilirsiniz. Kullanıcı diyagramda sağ tıkladığınızda komutlar (kısayol) bağlam menüsünde görünür. Böylece yalnızca belirli durumlarda menüsünde görünen komut tanımlayabilirsiniz. Yalnızca kullanıcı belirli türlerini öğenin veya öğelerin belirli durumlarda tıkladığında gibi komut görünür yapabilirsiniz.
 
  Özet olarak, adımları DslPackage projesinde aşağıdaki gibi gerçekleştirilir:
@@ -33,7 +32,7 @@ Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri i�
    Örnekler için bkz: [Görselleştirme ve modelleme SDK'sı Web sitesi](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  Kesme, yapıştırma, Tümünü Seç ve yazdırma gibi bazı mevcut komutları davranışını CommandSet.cs yöntemleri geçersiz kılarak de değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+>  Kesme, yapıştırma, Tümünü Seç ve yazdırma gibi bazı mevcut komutları davranışını CommandSet.cs yöntemleri geçersiz kılarak de değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>MEF kullanarak bir komut tanımlama
  Yönetilen uzantı çerçevesi (MEF) diyagram menüsünden menü komutlarını tanımlama alternatif bir yöntem sağlar. Birincil amacı, sizin tarafınızdan veya diğer üçüncü taraflarca genişletilmesi DSL etkinleştirmektir. Kullanıcılar yalnızca DSL yüklemeyi seçebilirsiniz veya DSL ve uzantılarını yükleyebilirsiniz. Ancak, MEF MEF DSL üzerinde etkinleştirmek için ilk iş sonra kısayol menü komutlarını tanımlama işlemlerini de azaltır.
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Komutun yaptığı tanımlayın
  Her komut için tanımlayan bir `OnMenu...` kullanıcı komutu tıkladığında, gerekli bir eylem gerçekleştiren yöntemi.
 
- Model öğelerine değişiklik yaparsanız, bir işlem içinde bunu yapmanız gerekir. Daha fazla bilgi için [nasıl yapılır: bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Model öğelerine değişiklik yaparsanız, bir işlem içinde bunu yapmanız gerekir. Daha fazla bilgi için [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  Bu örnekte, `ClassShape`, `ModelClass`, ve `Comment` sınıf diyagramı DSL şablondan türetilmiş DSL içinde tanımlanan türleridir.
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Nesne başka bir nesne modelde gezinme ve nesneler ve bağlantılar oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Nesne başka bir nesne modelde gezinme ve nesneler ve bağlantılar oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Kayıt komutu
  C# dilinde CommandSet.vsct sembolleri bölümde yaptığınız GUID ve ID değerleri bildirimlerini yineleyin:
@@ -360,8 +359,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Nasıl Yapılır: Standart Menü Komutunu Değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Etki Alanına Özgü Dil Çözümlerini Dağıtma](../modeling/deploying-domain-specific-language-solutions.md)
-- [Örnek kod: bağlantı hattı diyagramları](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Örnek kod: Bağlantı hattı diyagramları](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

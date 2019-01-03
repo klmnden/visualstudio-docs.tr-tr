@@ -2,7 +2,6 @@
 title: XML Düzenleyicisi IntelliSense Özellikleri
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986212"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense özellikleri
 
@@ -45,7 +44,7 @@ XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karş�
 
 -   Belirtilen adlandırılmış bir şablon parametresi adları.
 
-Daha fazla bilgi için [izlenecek yol: XSLT IntelliSense kullanarak](../xml-tools/walkthrough-using-xslt-intellisense.md) konu.
+Daha fazla bilgi için [izlenecek yol: XSLT IntelliSense kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md) konu.
 
 ## <a name="auto-completion"></a>Otomatik Tamamlama
  XML Düzenleyicisi'ni de gerekli XML sözdiziminde doldurarak daha kolay XML düzenleme olmasını sağlar. Örneğin aşağıdaki başlangıç etiketi yazın:
@@ -122,4 +121,4 @@ XML Düzenleyicisi'ni bir ad alanı Ekle özelliğine de sahiptir bildirimi bir 
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)
 - [IntelliSense Kullanma](../ide/using-intellisense.md)
-- [İzlenecek Yol: XSLT IntelliSense Kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [İzlenecek yol: XSLT IntelliSense kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)

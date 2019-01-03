@@ -1,8 +1,6 @@
 ---
 title: Menü komutları olmak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy menu commands
@@ -12,30 +10,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a11b24f5f0f950fabe475a0f0099e76032451fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0abf9695e0210cdae9785aafcd967513e48bf43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989535"
 ---
 # <a name="spy-menu-commands"></a>Spy Menü Komutları
-**Spy** menü komutları Spy ++ pencereler ve görünümler ile çalışma sağlar.  
+**Spy** menü Spy ++ Windows ve görünümler ile çalışmak için komutları sağlar.  
   
  **Windows**  
- Yeni bir Windows görünümü açılır.  
+ Yeni bir Windows görünümü açar.  
   
  **İşlemler**  
- Yeni bir işlemler görünümü açılır.  
+ Yeni bir işlemler görünümü açar.  
   
  **İş Parçacıkları**  
- Yeni bir iş parçacıkları görünümü açılır.  
+ Yeni bir iş parçacıkları görünümü açar.  
   
  **Günlük iletileri**  
- Yeni iletiler görünümünü ve açar [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) görünüm için.  
+ Yeni bir ileti görünümü açar ve açılır [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) görünüm.  
   
- **Pencere Bul**  
- Görüntüler **FindWindow** fare penceresiyle seçmek için iletişim kutusu.  
+ **Pencereyi Bul**  
+ Görüntüler **FindWindow** fare ile bir pencere seçmek için iletişim kutusu.  
   
  **Çıkış**  
  Spy ++ yardımcı programı kapatır.

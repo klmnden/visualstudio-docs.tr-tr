@@ -1,9 +1,8 @@
 ---
-title: 'F # Araçları'
-description: "Visual Studio'nun hangi özellikleri F # de destekleneni öğrenin."
+title: F#Araçları
+description: Visual Studio'nun hangi özellikler desteklenir öğrenin F#.
 ms.date: 07/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -12,38 +11,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18803d3033cc3aa1fdfb43620eb741ff1724ec74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990092"
 ---
-# <a name="develop-with-visual-f-in-visual-studio"></a>Visual Studio içinde Visual F # ile geliştirme
+# <a name="develop-with-visual-f-in-visual-studio"></a>Görselle geliştirme F# Visual Studio'da
 
-Bu makale, F # geliştirme için Visual Studio özellikleri hakkında bilgi içerir.
+Bu makale, Visual Studio özellikleri hakkında bilgi içerir. F# geliştirme.
 
-## <a name="install-f-support"></a>F # desteği yükleme
+## <a name="install-f-support"></a>Yükleme F# desteği
 
-Visual Studio'da F # ile geliştirmek için önce yükleme **.NET Masaüstü geliştirmesinden** yapmadıysanız, iş yükü. Visual Studio iş yükleri seçerek açabilirsiniz. Visual Studio yükleyicisi aracılığıyla yükleyin **Araçları** > **araçları ve özellikleri Al**.
+Geliştirme için F# Visual Studio'da ilk yükleme **.NET masaüstü geliştirme** yapmadıysanız, iş yükü. Visual Studio iş yükleri seçerek açabilirsiniz. Visual Studio yükleyicisi aracılığıyla yükleyin **Araçları** > **araçları ve özellikleri Al**.
 
 ![Visual Studio'da .NET masaüstü geliştirme iş yükü](media/dotnet-desktop-development-workload.png)
 
-## <a name="f-project-features"></a>F # proje özellikleri
+## <a name="f-project-features"></a>F#Proje Özellikleri
 
-Çeşitli proje ve öğe şablonları, Visual Studio'da F # için kullanılabilir. Aşağıdaki görüntüde, .NET Core ve .NET Standard için F # proje şablonlarında bazıları gösterilmektedir:
+Çeşitli proje ve öğe şablonları kullanılabilir F# Visual Studio'da. Aşağıdaki resimde bazıları gösterilmektedir F# .NET Core ve .NET Standard için proje şablonları:
 
-![F # proje şablonlarında Visual Studio](media/fsharp-project-templates.png)
+![F#Visual Studio Proje şablonları](media/fsharp-project-templates.png)
 
-Aşağıdaki görüntüde, F # öğe şablonları bazıları gösterilmektedir:
+Aşağıdaki resimde bazıları gösterilmektedir F# öğe şablonları:
 
-![Visual Studio öğe şablonları F #](media/fsharp-item-templates.png)
+![F#Visual Studio öğe şablonları](media/fsharp-item-templates.png)
 
-Veri erişimi için öğe şablonları hakkında daha fazla bilgi için bkz: [F # tür sağlayıcıları](/dotnet/fsharp/tutorials/type-providers/index).
+Veri erişimi için öğe şablonları hakkında daha fazla bilgi için bkz: [ F# tür sağlayıcıları](/dotnet/fsharp/tutorials/type-providers/index).
 
-Proje Özellikleri'nde özellikler aşağıdaki tabloda F #'ta özetlenmiştir:
+Proje özelliklerinde özellikler aşağıdaki tabloda özetlenmiştir F#:
 
-|Proje ayarı|F #'de destekleniyor mu?|Notlar|
+|Proje ayarı|Desteklenen F#?|Notlar|
 |---------------|----------------|-----|
 |Kaynak dosyaları|Evet||
 |Derleme ve hata ayıklama ayarları başvurusu|Evet||
@@ -58,7 +57,7 @@ Proje Özellikleri'nde özellikler aşağıdaki tabloda F #'ta özetlenmiştir:
 
 ## <a name="project-designer"></a>Proje Tasarımcısı
 
-**Proje Tasarımcısı** ilgili işlevselliğe göre gruplandırılan çeşitli proje özellik sayfaları oluşur. F # projeleri için kullanılabilir sayfaları genellikle diğer diller için mevcut kodlar alt kümesidir ve aşağıdaki tabloda açıklanmıştır. Bağlantılar sağlanır karşılık gelen C# için **Proje Tasarımcısı** sayfası.
+**Proje Tasarımcısı** ilgili işlevselliğe göre gruplandırılan çeşitli proje özellik sayfaları oluşur. Sayfaları için kullanılabilir F# projeler çoğunlukla diğer diller için mevcut kodlar alt kümesidir ve aşağıdaki tabloda açıklanmıştır. Bağlantılar sağlanır karşılık gelen C# için **Proje Tasarımcısı** sayfası.
 
 |Proje Tasarımcısı sayfası|İlgili bağlantılar|Açıklama|
 | - |-------------|-----------|
@@ -70,9 +69,9 @@ Proje Özellikleri'nde özellikler aşağıdaki tabloda F #'ta özetlenmiştir:
 |Başvuru yolları|[Bir projedeki başvuruları yönetme](managing-references-in-a-project.md)|Kodu bağımlı derlemelerin aranacağı yeri belirtmek sağlar.|
 |Kaynaklar (yalnızca .NET SDK)|Yok|Oluştur ve varsayılan kaynak dosyası yönetmenize olanak sağlar.|
 
-### <a name="f-specific-settings"></a>F #-özel ayarlar
+### <a name="f-specific-settings"></a>F#-belirli ayarları
 
-Aşağıdaki tabloda, F #'tan da özgü ayarları özetlenmektedir:
+Özgü ayarları aşağıdaki tabloda özetlenmiştir F#:
 
 |Proje Tasarımcısı sayfası|Ayar|Açıklama|
 | - |-------|-----------|
@@ -81,31 +80,31 @@ Aşağıdaki tabloda, F #'tan da özgü ayarları özetlenmektedir:
 
 ## <a name="code-and-text-editor-features"></a>Kod ve metin düzenleyici özellikleri
 
-F #'de Visual Studio kodu ve metin düzenleyiciler, aşağıdaki özellikleri desteklenir:
+Visual Studio kodu ve metin düzenleyiciler, aşağıdaki özellikleri desteklenir F#:
 
-|Özellik|Açıklama|F #'de destekleniyor mu?|
+|Özellik|Açıklama|Desteklenen F#?|
 |-------|-----------|----------------|
 |Otomatik olarak açıklaması|Açıklama satırı yapın veya kodun bölümlerine sağlar.|Evet|
 |Otomatik olarak Biçimlendir|Standart girinti ve stil kod yeniden biçimlendirir.|Hayır|
 |Yer işaretleri|Düzenleyicide yerler kaydetmenizi sağlar.|Evet|
 |Girinti değiştirme|Girintileri veya seçili satırları girintilemez.|Evet|
-|Akıllı girintileme|Otomatik olarak Girintiler ve F # kapsam kurallara göre imleci serbest girintiler.|Evet|
+|Akıllı girintileme|Otomatik olarak Girintiler ve imleci göre XML'deki girintiler F# kapsama kuralları.|Evet|
 |[Metin bulma ve değiştirme](finding-and-replacing-text.md)|Bir dosya, proje veya çözüm arayın ve potansiyel olarak metin değiştirmek etkinleştirir.|Evet|
 |.NET Framework API tanımına Git|İmleç bir .NET Framework API üzerinde konumlandırıldığında, .NET Framework meta verileri kullanarak oluşturulan kodu gösterir.|Hayır|
 |Kullanıcı tanımlı API tanımına Git|İmleç imleç kodunuzda varlık tanımlandığı yere taşır, tanımlı bir program varlık üzerinde olduğunda.|Evet|
 |Satıra Gitme|Bir dosyadaki satır numarası tarafından belirli bir satıra gitmenizi sağlar.|Evet|
 |Dosyasının üst gezinti çubukları|Kodda, konumları, örneğin, işlev adı atlamak sağlar.|Evet|
-|Blok yapısı kılavuzları|Hangi üzerine için Önizleme gelindiğinde F # kapsamlar, belirten kuralları gösterir.|Evet|
+|Blok yapısı kılavuzları|Gösteren gösterir yönergeleri F# kapsamlar, üzerine bir önizleme gelindiğinde.|Evet|
 |[Anahat Oluşturma](outlining.md)|Daha kısa bir görünüm oluşturmak için kod bölümlerini daraltmak olanak tanır.|Evet|
 |Sekmeye Dönüştür|Boşlukları sekmelere dönüştürür.|Evet|
 |Tür renklendirme|Özel bir renk ile tanımlanmış tür adları gösterir.|Evet|
 |Hızlı bulun. Hızlı Bul Bul ve Değiştir penceresi görürsünüz.|Bir dosya ya da proje aramanızı sağlar.|Evet|
-|**CTRL**+**tıklayın** için Tanıma Git|Tutacak sağlar **Ctrl** ve Tanıma Git çağırmak için bir F # sembolüne tıklayın.|Evet|
+|**CTRL**+**tıklayın** için Tanıma Git|Tutacak sağlar **Ctrl** tıklayın bir F# Tanıma Git çağırmak için Sembol.|Evet|
 |Hızlıbilgi Tanıma Git|Çağırma araç ipuçları içinde tıklanabilir sembolleri Tanıma Git.|Evet|
-|Tümüne Git|Tüm F # yapılarını genel, benzer öğe eşleştirmesi gezinme sağlar **Ctrl**+**T**.|Evet|
+|Tümüne Git|Tüm genel, benzer öğe eşleştirmesi gezinme sağlar F# aracılığıyla yapıları **Ctrl**+**T**.|Evet|
 |Satır içi yeniden adlandırma|Sembol satır içi tüm örneklerini yeniden adlandırır.|Evet|
 |Tüm başvuruları Bul|Tüm sembol oluşumlarını bir kod temelinde bulur.|Evet|
-|Adı kod düzeltme basitleştirin|F # sembolleri için gereksiz niteleyicileri kaldırır.|Evet|
+|Adı kod düzeltme basitleştirin|Gereksiz niteleyicilerinin kaldırır F# semboller.|Evet|
 |Kullanılmayan Kaldır `open` deyimi kod düzeltmesi|Tüm gereksiz kaldırır `open` belgede deyimleri.|Evet|
 |Kullanılmayan değere kod düzeltmesi|Alt çizgi için kullanılmayan bir tanımlayıcı yeniden adlandırma önerir.|Evet|
 
@@ -113,9 +112,9 @@ Visual Studio ve özellikleri metin düzenleyicisi kod düzenleme hakkında daha
 
 ## <a name="intellisense-features"></a>IntelliSense özellikleri
 
-Aşağıdaki tabloda, desteklenen ve F #'de desteklenmeyen IntelliSense özellikleri özetlenmektedir:
+Aşağıdaki tablo desteklenen ve içinde desteklenmeyen IntelliSense özelliklerini özetler F#:
 
-|Özellik|Açıklama|F #'de destekleniyor mu?|
+|Özellik|Açıklama|Desteklenen F#?|
 |-------|-----------|----------------|
 |Otomatik olarak uygulanan arabirimler|Arabirim yöntemleri için kod saplamalar oluşturur.|Evet|
 |Kod parçacıkları|Kod yaygın kodlama yapıları içeren konulara ekler.|Hayır|
@@ -124,18 +123,18 @@ Aşağıdaki tabloda, desteklenen ve F #'de desteklenmeyen IntelliSense özellik
 |Teklif tamamlama sembolleri açılmamış ad alanları|Otomatik Tamamlama özelliğiyle açılmamış bir ad alanında bulunan eşleşen bir sembol, karşılık gelen ile tamamlamak teklif önerilen `open` seçildiğinde deyimi.|Evet|
 |Kod öğeleri oluşturma|Çeşitli yapılar saplama kodunun oluşturulacağı sağlar.|Hayır|
 |Üyeleri Listeleme|Üye erişimi işleci (.) yazın, türün üyeleri gösterir.|Evet|
-|Using deyimlerini/açık düzenleme|Tarafından başvurulan ad alanlarını düzenler **kullanarak** C# ifadelerini veya **açın** F # yönergeleri.|Hayır|
+|Using deyimlerini/açık düzenleme|Tarafından başvurulan ad alanlarını düzenler **kullanarak** deyimlerinde C# veya **açın** yönergelerinde F#.|Hayır|
 |Parametre Bilgisi|Bir işlev çağrısı türü olarak parametreler hakkında yararlı bilgiler gösterir.|Evet|
 |Hızlı Bilgi|Kodunuzdaki herhangi bir tanımlayıcı için bütün bildirimi görüntüler.|Evet|
-|Otomatik küme ayracı tamamlama|Otomatik olarak F # küme ayracı benzeri sözdizimi yapılarını işlemsel bir şekilde tamamlar.|Evet|
+|Otomatik küme ayracı tamamlama|Otomatik olarak tamamlar F# küme ayracı benzeri sözdizimi işlemsel bir şekilde oluşturur.|Evet|
 
 IntelliSense hakkında genel bilgi için bkz: [kullanım IntelliSense](using-intellisense.md).
 
 ## <a name="debugging-features"></a>Hata ayıklama özellikleri
 
-Aşağıdaki tabloda, F # kodu hatalarını ayıklama sırasında kullanılabilen özellikler özetlenmiştir:
+Aşağıdaki tabloda, hata ayıklarken kullanılabilen özellikler özetlenmiştir F# kod:
 
-|Özellik|Açıklama|F #'de destekleniyor mu?|
+|Özellik|Açıklama|Desteklenen F#?|
 |-------|-----------|----------------|
 |Otomatik değişkenler penceresi|Otomatik veya geçici değişkenleri gösterir.|Hayır|
 |Kesme noktaları|Hata ayıklama sırasında kod yürütme belirli noktalarda duraklatmanıza da olanak sağlar.|Evet|
@@ -152,16 +151,16 @@ Visual Studio hata ayıklayıcısı hakkında genel bilgi için bkz. [Visual Stu
 
 ## <a name="additional-tools"></a>Ek araçlar
 
-Aşağıdaki tablo, Visual Studio Araçları için F # desteği özetler.
+Aşağıdaki tabloda özetlenmiştir desteğini F# Visual Studio Araçları.
 
-|Aracı|Açıklama|F #'de destekleniyor mu?|
+|Aracı|Açıklama|Desteklenen F#?|
 |----|-----------|----------------|
 |Çağrı Hiyerarşisi|Görüntüler, kodunuzda iç içe geçmiş yapısı işlevi çağırır.|Hayır|
 |Kod Ölçümleri|Satır sayısı gibi kodunuz hakkında bilgiler toplar.|Hayır|
 |Sınıf Görünümü|Bir projedeki kod türüne göre bir görünümünü sağlar.|Hayır|
 |[Hata Listesi penceresi](reference/error-list-window.md)|Kod hatalarının bir listesini gösterir.|Evet|
-|[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Yazın (veya kopyalayıp yapıştırın) F # kodu ve projenizin yapı bağımsız olarak hemen çalıştırmanızı sağlar. F # Etkileşimli penceresi, okuma, Evaluate, yazdırma Loop (REPL) yerdir.|Evet|
-|Nesne Tarayıcısı|Bir derlemede bulunan türleri görüntülemenizi sağlar.|Derlenmiş bütünleştirilmiş kod içinde göründükleri gibi tam olarak yazar gibi F # türleri görünmez. Derlenmiş F # türleri temsili göz atabilirsiniz ancak F #'tan göründükleri gibi türlerini görüntüleyemez.|
+|[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Yazın (veya kopyalayıp yapıştırın) sayesinde F# kod ve projenizin yapı bağımsız olarak hemen çalıştırın. F# Etkileşimli penceresi, okuma, Evaluate, yazdırma Loop (REPL).|Evet|
+|Nesne Tarayıcısı|Bir derlemede bulunan türleri görüntülemenizi sağlar.|F#derlenmiş bütünleştirilmiş kod içinde göründükleri gibi tam olarak yazar gibi türleri görünmez. Derlenmiş temsili göz atabilirsiniz F# türleri, ancak görüntülenemez türleri gelen göründükleri gibi F#.|
 |[Çıkış penceresi](reference/output-window.md)|Derleme çıkışı görüntüler.|Evet|
 |Performans Analizi|Kodunuzun performansını ölçmek için araçlar sağlar.|Evet|
 |Özellik penceresi|Görüntüler ve odaklı geliştirme ortamında nesnenin özelliklerini düzenlemesini sağlar.|Evet|
@@ -173,5 +172,5 @@ Aşağıdaki tablo, Visual Studio Araçları için F # desteği özetler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [F # Kılavuzu (.NET Framework)](/dotnet/fsharp/)
-- [Visual Studio'da F # ile çalışmaya başlama](/dotnet/fsharp/get-started/get-started-visual-studio)
+- [F#Kılavuzu (.NET Framework)](/dotnet/fsharp/)
+- [Kullanmaya başlama F# Visual Studio'da](/dotnet/fsharp/get-started/get-started-visual-studio)

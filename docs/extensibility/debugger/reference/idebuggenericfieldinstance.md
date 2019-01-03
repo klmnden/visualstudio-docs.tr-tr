@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericFieldInstance | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldInstance interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0abc75fa59f19d61ee95194905be678336808b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c265591d1836594b9190e031c1bfe3ab5a93813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990983"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Yönetilen kod genel bir tür için bir alan örneğini temsil eder.  
@@ -30,16 +27,16 @@ IDebugGenericFieldInstance : IUnknown
 ```  
   
 ## <a name="methods"></a>Yöntemler  
- Bu arabirim, aşağıdaki yöntemlerden uygular:  
+ Bu arabirim, aşağıdaki yöntemleri uygular:  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Bu örnek için tür parametre bağımsız değişkenleri alır.|  
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Bu örneğin tür parametresi bağımsız değişkenlerini alır.|  
 |[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Bu örnek için parametre bağımsız değişkenlerini türünün sayısını döndürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: Sh.h  
+ Üst bilgi: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll

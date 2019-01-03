@@ -1,8 +1,6 @@
 ---
 title: MSBuild özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987044"
 ---
 # <a name="msbuild-properties"></a>MSBuild özellikleri
 Özellikler, yapıları yapılandırmak için kullanılabilen ad-değer çiftleridir. Özellikler, değerlerin görevlere geçirilmesinde, koşulların değerlendirilmesinde ve proje dosyası boyunca başvurulacak olan değerlerin depolanmasında yararlıdır.  
@@ -58,7 +56,7 @@ ms.locfileid: "48879207"
 > [!TIP]
 >  Tüm ortam değişkenleri, başlangıç özellikleri olması için okunmaz. Değil geçerli bir MSBuild özellik adı, "386" gibi adları olan tüm ortam değişkenleri göz ardı edilir.  
   
- Daha fazla bilgi için [nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Daha fazla bilgi için [nasıl yapılır: Derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="registry-properties"></a>Kayıt defteri özellikleri  
  Aşağıdaki söz dizimini kullanarak sistem kayıt defteri değerlerini okuyabilirsiniz burada `Hive` kayıt defteri kovanı olduğu (örneğin, **HKEY_LOCAL_MACHINE**), `Key` anahtar adı `SubKey` alt anahtar adı ve `Value`alt değeridir.  
@@ -94,7 +92,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
   
  Genel özellikler, MSBuild görevinin `Properties` özniteliğini kullanarak aynı zamanda çoklu bir proje yapısındaki alt projeler için ayarlanabilir veya değiştirilebilir. Genel özellikler de iletilir alt projeler sürece `RemoveProperties` MSBuild görevinin özniteliği değil iletmek için özelliklerin listesini belirtmek için kullanılır. Daha fazla bilgi için [MSBuild görevi](../msbuild/msbuild-task.md).
   
- Bir proje etiketinde `TreatAsLocalProperty` özniteliğini kullanarak bir özellik belirtirseniz bu genel özellik değeri, proje dosyasında ayarlanan özellik değerini geçersiz kılmaz. Daha fazla bilgi için [proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md) ve [nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
+ Bir proje etiketinde `TreatAsLocalProperty` özniteliğini kullanarak bir özellik belirtirseniz bu genel özellik değeri, proje dosyasında ayarlanan özellik değerini geçersiz kılmaz. Daha fazla bilgi için [proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md) ve [nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
 ## <a name="property-functions"></a>Özellik işlevleri  
  .NET Framework sürüm 4'ten başlayarak, MSBuild komut dosyalarınızı değerlendirmek için özellik işlevlerini kullanabilirsiniz. MSBuild görevlerini kullanmadan, yapı komut dosyanızdaki sistem saatini okuyabilir, dizeleri karşılaştırabilir, normal ifadeleri eşleştirebilir ve başka birçok eylemi gerçekleştirebilirsiniz.  
@@ -141,8 +139,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="see-also"></a>Ayrıca bkz.  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)  
- [Nasıl yapılır: derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md)   
- [Nasıl yapılır: Proje dosyasının konumunu ve adını başvurusu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
- [Nasıl yapılır: farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
+ [Nasıl yapılır: Derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md)   
+ [Nasıl yapılır: Adı veya proje dosyasının konumuna başvurma](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
+ [Nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Özellik öğesi (MSBuild)](../msbuild/property-element-msbuild.md)

@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d49df542dbd134a6164e582459978bb2ef1aee3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989652"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>(WCF Veri Hizmetleri) kavramsal bir modelle çalışma
 
@@ -30,8 +29,8 @@ Bir veritabanındaki verileri tanımlamak için kavramsal model kullandığını
 
 | Konu | Açıklama |
 | - | - |
-| [Nasıl yapılır: veri hizmeti sorguları yürütme](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Veri hizmetinden veri sorgulama işlemleri gösterilir bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] uygulama. |
-| [Nasıl yapılır: sorgu sonuçlarını yansıtma](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Veri Hizmeti sorgusuna ile döndürülen veri miktarını azaltmak nasıl gösterir. |
+| [Nasıl yapılır: Veri Hizmeti sorguları yürütme](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Veri hizmetinden veri sorgulama işlemleri gösterilir bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] uygulama. |
+| [Nasıl yapılır: Proje sorgu sonuçları](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Veri Hizmeti sorgusuna ile döndürülen veri miktarını azaltmak nasıl gösterir. |
 
  Kavramsal bir modeli kullandığınız zaman, ne tür veriler, etki alanıyla eşleşen bir dilde geçerli tanımlayabilirsiniz. Geçerli veri modelinde tanımlayabilir veya bir varlık veya veri hizmeti üzerinde gerçekleştirdiğiniz işlemleri doğrulama ekleyebilirsiniz.
 
@@ -45,8 +44,8 @@ Bir veritabanındaki verileri tanımlamak için kavramsal model kullandığını
 
 |Konu|Açıklama|
 |-----------|-----------------|
-|[Nasıl yapılır: ekleme, değiştirme ve varlıklarını silme](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Oluşturma, güncelleştirme ve varlık verilerini bir veri hizmeti silme işlemi gösterilmektedir.|
-|[Nasıl yapılır: veri ilişkileri tanımlama](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Oluşturma veya bir veri hizmeti ilişkilerini değiştirme işlemi gösterilmektedir.|
+|[Nasıl yapılır: Ekleme, değiştirme ve varlıklarını silme](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Oluşturma, güncelleştirme ve varlık verilerini bir veri hizmeti silme işlemi gösterilmektedir.|
+|[Nasıl yapılır: Veri ilişkileri tanımlama](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Oluşturma veya bir veri hizmeti ilişkilerini değiştirme işlemi gösterilmektedir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

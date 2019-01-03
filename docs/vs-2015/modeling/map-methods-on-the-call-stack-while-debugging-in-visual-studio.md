@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -35,12 +34,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e2917e6871004c9ceab7a37d79fbe9f3d9011afe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d7a4fe3eb8904877aa2ccdd5f2f2035884bfdb9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988494"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklarken çağrı yığınında eşleştirme yöntemleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +54,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
 - Visual C# .NET, Visual Basic .NET, C++, JavaScript veya X ++ gibi hatalarını ayıklayabileceğiniz kod
 
-  Bkz: [Video: (kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418) • [çağrı yığınını eşleme](#MapStack) • [olun kodla ilgili notlar](#MakeNotes) • [eşleme ile güncelleştirme sonraki çağrı yığını](#UpdateMap) • [eşlemeye ilgili kodu ekleyin](#AddRelatedCode) • [Bul eşlemeyi kullanarak hataları](#FindBugs) • [soru- cevap](#QA)
+  Bkz. [Video: (Kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418) • [çağrı yığınını eşleme](#MapStack) • [olun kodla ilgili notlar](#MakeNotes) • [sonrakiçağrıyığınıileharitayıgüncelleştirme](#UpdateMap)• [Eşlemeye ilgili kodu ekleyin](#AddRelatedCode) • [Bul eşlemeyi kullanarak hataları](#FindBugs) • [soru- cevap](#QA)
 
   Komutlar ve kod haritaları ile çalışırken kullanabileceğiniz eylemler için bilgi [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -63,7 +62,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
 1.  Hata ayıklama başlatılamıyor. (Klavye: **F5**)
 
-2.  Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **Ctrl** + **Shift** + **`**)
+2.  Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
 
      ![Çağrı yığınını eşleme başlatmak için kod Haritası seçin](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -86,7 +85,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 ##  <a name="AddRelatedCode"></a> Eşlemeye ilgili kodu ekleyin
  Şimdi bir eşlemeniz var - sırada ne var? Visual C# .NET veya Visual Basic .NET ile çalışıyorsanız, alanlar, özellikler ve kodda neler olduğunu izlemek için diğer yöntemler gibi öğeleri ekleyin.
 
- Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: tuşuna basın ve harita yöntemi seçin **F12**)
+ Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: Tuşuna basın ve harita yöntemi seçin **F12**)
 
  ![Kod haritasında bir yöntem için kod tanımı Git](../debugger/media/debuggermap-gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
@@ -136,7 +135,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
    Haritanın değiştirilmesi, kodu herhangi bir şekilde etkilemez. Haritadaki herhangi bir şeyi rahatça yeniden adlandırabilir, taşıyabilir veya kaldırabilirsiniz.
 
-- **Bu ileti ne anlama gelir: "diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
+- **Bu ileti ne anlama gelir: "Diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
 
    Kod, haritayı son güncelleştirmenizden sonra değişmiş olabilir. Örneğin, harita üzerindeki bir çağrı artık kodda bulunmayabilir. İletiyi kapatın ve haritayı yeniden güncelleştirmeden önce çözümü yeniden oluşturmayı deneyin.
 
@@ -168,7 +167,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
    ![Çağrı yığınını kod Haritası simgeleri ne anlama gelir? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")
 
-  Bkz: [çağrı yığınını eşleme](#MapStack) • [olun kodla ilgili notlar](#MakeNotes) • [harita sonraki çağrı yığınıyla Güncelleştir](#UpdateMap) • [eşlemeye ilgili kodu ekleyin](#AddRelatedCode) • [ Eşlemeyi kullanarak hataları bulun](#FindBugs)
+  Bkz. [Çağrı yığınını eşleme](#MapStack) • [olun kodla ilgili notlar](#MakeNotes) • [harita sonraki çağrı yığınıyla Güncelleştir](#UpdateMap) • [eşlemeye ilgili kodu ekleyin](#AddRelatedCode) • [hataları bulun eşlemesi kullanma](#FindBugs)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md) [kullanmak kod eşlemeleri uygulamalarınızda hata ayıklamak için](../modeling/use-code-maps-to-debug-your-applications.md) [kod kullanarak olası sorunları bulma harita Çözümleyicileri](../modeling/find-potential-problems-using-code-map-analyzers.md) [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md)

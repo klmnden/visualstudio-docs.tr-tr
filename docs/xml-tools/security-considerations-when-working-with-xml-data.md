@@ -2,7 +2,6 @@
 title: XML Verileriyle Çalışırken Dikkat Edilecek Güvenlik Konuları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: gewarren
@@ -10,38 +9,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0f53b3182d238b19abd3b03b02544307718377cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989561"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML verileriyle çalışırken güvenlik konuları
 
-Bu konuda XML Düzenleyicisi'ni veya XSLT hata ayıklayıcısı ile çalışırken hakkında bilmeniz gereken güvenlik konuları anlatılmaktadır.
+Bu konuda hakkında XML Düzenleyicisi'ni veya XSLT hata ayıklayıcısı ile çalışırken bilmeniz gereken güvenlik konuları açıklanmaktadır.
 
 ## <a name="xml-editor"></a>XML Düzenleyicisi
 
- XML Düzenleyicisi'ni üzerinde Visual Studio Metin Düzenleyicisi'ni temel alır. Kullanır. <xref:System.Xml> ve <xref:System.Xml.Xsl> XML işlemlerin çoğunu işlemek için sınıflar.
+ XML Düzenleyicisi Visual Studio Metin Düzenleyicisi üzerinde temel alır. Kullanır <xref:System.Xml> ve <xref:System.Xml.Xsl> XML işlemlerin çoğunu işlemek için sınıflar.
 
--   XSLT dönüştürmeleri yeni bir uygulama etki alanında çalıştırılır. XSLT dönüştürmeleri olan *korumalı*; diğer bir deyişle, bilgisayarınızın kod erişimi güvenlik ilkesi XSLT stil sayfası bulunduğu üzerinde göre kısıtlı izinleri belirlemek için kullanılır. Örneğin, tam güven ile çalışacak sabit diskinize stil sayfaları kopyalanmasını ancak bir Internet konumdan stil sayfaları en kısıtlı izinlere sahip.
+-   XSLT dönüşümleri, yeni bir uygulama etki alanında yürütülür. XSLT dönüşümleri olan *korumalı*; diğer bir deyişle, kod erişimi güvenlik ilkesi bilgisayarınızın XSLT stil sayfası bulunduğu yeri üzerinde temel kısıtlı izinleri belirlemek için kullanılır. Örneğin, stil sayfaları tam güven ile çalışacak sabit diske kopyalanır, ancak bir Internet konumundan stil sayfaları en kısıtlı izinlere sahip.
 
--   <xref:System.Xml.Xsl.XslCompiledTransform> Sınıfı, Microsoft Ara dile yürütme sırasında daha hızlı performans için XSLT derlemek için kullanılır.
+-   <xref:System.Xml.Xsl.XslCompiledTransform> Sınıfı XSLT Microsoft Ara dili yürütme sırasında daha hızlı performans için derlemek için kullanılır.
 
--   XML Düzenleyicisi'ni ilk kez yüklediğinde Katalog dosyasındaki bir dış konuma noktası şemaları otomatik olarak yüklenir. <xref:System.Xml.Schema.XmlSchemaSet> Sınıfı şemaları derlemek için kullanılır. Tüm dış şemaları bağlantılar XML Düzenleyicisi ile birlikte gelen katalog dosyası yok. Şema dosyası XML Düzenleyicisi'ni indirir önce açıkça dış şeması başvuru eklemek kullanıcının vardır. HTTP indirmeyi devre dışı bırakılabilir aracılığıyla **çeşitli Araçlar Seçenekler** sayfa XML Düzenleyicisi için.
+-   XML Düzenleyicisi'ni ilk yüklendiğinde dış bir katalog dosyası konumuna işaret eden şemaları otomatik olarak yüklenir. <xref:System.Xml.Schema.XmlSchemaSet> Sınıfı şemaları derlemek için kullanılır. XML Düzenleyicisi ile birlikte gelen katalog dosyası bağlantılarını herhangi bir Dış şemalara sahip değil. Kullanıcının XML Düzenleyicisi şema dosyası indirir önce dış şema başvuru açıkça eklemeniz gerekir. HTTP indirmeyi devre dışı bırakılabilir aracılığıyla **çeşitli Araçlar Seçenekler** sayfası XML Düzenleyicisi için.
 
--   XML Düzenleyicisi'ni kullanan <xref:System.Net> şemaları indirmek için sınıflar
+-   XML Düzenleyicisi kullanan <xref:System.Net> şemaları indirmek için sınıflar
 
-## <a name="xslt-debugger"></a>XSLT hata ayıklayıcı
+## <a name="xslt-debugger"></a>XSLT hata ayıklayıcısı
 
- XSLT hata ayıklayıcı Visual Studio yönetilen hata ayıklama motorunu kullanır ve gelen sınıfları <xref:System.Xml> ve <xref:System.Xml.Xsl> ad alanı.
+ XSLT hata ayıklayıcı, Visual Studio yönetilen hata ayıklama motorunu kullanır ve gelen sınıflar <xref:System.Xml> ve <xref:System.Xml.Xsl> ad alanı.
 
--   XSLT hata ayıklayıcı her XSLT dönüşümü korumalı uygulama etki alanında çalışır. Kod erişimi güvenlik ilkesi bilgisayarınızın XSLT stil sayfası bulunduğu üzerinde göre kısıtlı izinleri belirlemek için kullanılır. Örneğin, tam güven ile çalışacak sabit diskinize stil sayfaları kopyalanmasını ancak bir Internet konumdan stil sayfaları en kısıtlı izinlere sahip.
+-   XSLT hata ayıklayıcısı, koruma alanlı uygulama etki alanında her XSLT dönüşümü çalıştırır. Kod erişimi güvenlik ilkesi bilgisayarınızın XSLT stil sayfası bulunduğu yeri üzerinde temel kısıtlı izinleri belirlemek için kullanılır. Örneğin, stil sayfaları tam güven ile çalışacak sabit diske kopyalanır, ancak bir Internet konumundan stil sayfaları en kısıtlı izinlere sahip.
 
--   XSLT stil sayfası derlenip <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı.
+-   XSLT stil sayfası kullanılarak derlenmiş <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı.
 
--   XSLT ifade değerlendiricisi yönetilen hata ayıklama altyapısı tarafından yüklenir. Yönetilen hata ayıklama altyapısı tüm kod kullanıcının yerel bilgisayardan çalıştırıldığını varsayar. Buna göre <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT dosyasını kullanıcının yerel bilgisayara yükler. Sınırlı izinlere sahip yeni bir uygulama etki alanındaki tüm XSLT dönüştürmeleri yürüterek yürütme ayrıcalık içinde bir ayrıcalık oluşabilir olasılığı azalır
+-   XSLT ifade değerlendiricisi yönetilen hata ayıklama altyapısı tarafından yüklenir. Yönetilen hata ayıklama altyapısı, tüm kod kullanıcının yerel bilgisayarınızdan çalıştırıldığını varsayar. Buna <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı kullanıcının yerel bilgisayarına XSLT dosyasını indirir. Sınırlı izinler ile yeni bir uygulama etki alanındaki tüm XSLT dönüşümleri yürüterek, yürütme ayrıcalık yükselmesi oluşabilir olasılığı azaltılabilir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d2463c9c81e963494ed6865956b6e9c36934e07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988929"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Nasıl yapılır: istek düzeyi eklentisi oluşturma
+# <a name="how-to-create-a-request-level-plug-in"></a>Nasıl Yapılır: İstek düzeyi eklentisi oluşturma
 
 *İstekleri* web performans testleri oluşturan bildirim deyimleri. Web performans testi eklentileri yalıtmak ve ana bildirim deyimleri, web performans testinde dışındaki kod yeniden kullanımını etkinleştirin. Eklentileri oluşturun ve bunları tek bir istek de içeren web performans testi için farklı ekleyin. Özelleştirilmiş *istek eklentisi* belirli bir istek, bir web performans testi çalıştırırken kodu çağırmak için bir yol sunar.
 
@@ -84,7 +83,7 @@ Web performans testleri kaydettiğiniz özelleştirilmiş web performans testi i
     > [!WARNING]
     > Bir web performans testi ya da eklentisini kullanan yük testi çalıştırdığınızda aşağıdakine benzer bir hata alabilirsiniz:
     >
-    > **İstek başarısız oldu: özel durum \<eklenti > olay: dosyası veya bütünleştirilmiş kod yüklenemedi '\<"Eklenti adı".dll dosyası >, sürüm =\<n.n.n.n >, kültür neutral, PublicKeyToken = = null' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.**
+    > **İstek başarısız oldu: Özel durum \<eklenti > olay: Dosyası veya bütünleştirilmiş kod yüklenemedi '\<"Eklenti adı".dll dosyası >, sürüm =\<n.n.n.n >, kültür = neutral, PublicKeyToken = null' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.**
     >
     > Eklentilerinizi birine kod değişikliği yapmanız ve yeni bir DLL sürümü oluşturursanız Bunun nedeni **(sürüm = 0.0.0.0)**, ancak eklenti hala özgün eklenti sürümüne başvuruyor. Bu sorunu gidermek için şu adımları izleyin:
     >
@@ -126,5 +125,5 @@ namespace RequestPluginNamespace
 - [Özel kod ve yük testleri için eklentiler oluşturma](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Kodu bir web performans testi için özel bir ayıklama kuralı](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kodu bir web performans testi için özel doğrulama kuralı](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Nasıl yapılır: bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md)
+- [Nasıl yapılır: Bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md)
 - [Oluşturma ve bir kodlanmış web performans testini çalıştırma](../test/generate-and-run-a-coded-web-performance-test.md)

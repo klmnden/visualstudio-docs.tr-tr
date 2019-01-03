@@ -2,19 +2,18 @@
 title: Kodlanmış UI Testleriyle Farklı Web Tarayıcıları Kullanma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986147"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI testleriyle farklı web tarayıcıları kullanma
 
@@ -40,14 +39,14 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Kodlanmış UI testleri desteklenen web tarayıcısı kullanarak web uygulamaları üzerinde nasıl kaydederim ve kayıttan yürütürüm?
 
-**Kayıt:** Internet Explorer'ı kullanarak web uygulama testinizi kaydetmek için kodlanmış UI Test Oluşturucusu'nu kullanmanız gerekir. İsteğe bağlı olarak, doğrulama ve kodlanmış UI testleri için normalde yaptığınız gibi önceden tanımlanmış bir özellik kümesi kullanarak sınanmış denetimler için özel kod ekleyebilirsiniz. Daha fazla bilgi için [kodunuzu test etmek için kullanım UI Otomasyonu](../test/use-ui-automation-to-test-your-code.md).
+**Kaydı:** Internet Explorer'ı kullanarak web uygulama testinizi kaydetmek için kodlanmış UI Test Oluşturucusu'nu kullanmanız gerekir. İsteğe bağlı olarak, doğrulama ve kodlanmış UI testleri için normalde yaptığınız gibi önceden tanımlanmış bir özellik kümesi kullanarak sınanmış denetimler için özel kod ekleyebilirsiniz. Daha fazla bilgi için [kodunuzu test etmek için kullanım UI Otomasyonu](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Google Chrome veya Mozilla Firefox tarayıcısı kullanarak kodlanmış UI testleri kaydedemezsiniz.
 
- **Internet Explorer ile kayıttan yürütme:** hiçbir tarayıcı açıkça belirtilmediğinde testler varsayılan olarak Internet Explorer'da çalışır. Açıkça ayarlayarak kullanılacak tarayıcı durum **BrowserWindow.CurrentBrowser** özelliğini test kodunuzda. Internet Explorer için bu özelliği ayarlanmalıdır **IE** veya **Internet Explorer**.
+ **Internet Explorer ile kayıttan yürütme:** Hiçbir tarayıcı açıkça belirtilmediğinde testler varsayılan olarak Internet Explorer'da çalışır. Açıkça ayarlayarak kullanılacak tarayıcı durum **BrowserWindow.CurrentBrowser** özelliğini test kodunuzda. Internet Explorer için bu özelliği ayarlanmalıdır **IE** veya **Internet Explorer**.
 
- **Geri Internet Explorer web tarayıcılarıyla çalma:** Internet Explorer web tarayıcılarında çalmak için BrowserWindow.CurrentBrowser özelliğini test kodunuzda ya da değiştirin **Firefox** veya **Chrome** .
+ **Geri Internet Explorer web tarayıcılarıyla çalma:** Internet Explorer web tarayıcılarında çalmak için BrowserWindow.CurrentBrowser özelliğini test kodunuzda ya da değiştirin **Firefox** veya **Chrome**.
 
  Testleri IE olmayan web tarayıcılarında çalmak için yüklemelisiniz **kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini**.
 

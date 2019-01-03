@@ -1,8 +1,6 @@
 ---
 title: StartTrackingContextWithRoot | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - StartTrackingContextWithRoot
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df0fc520d1d3f37800f08198e6dc08deac5c6a6f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 721d50b4e710e19c759bb418197d82c4828e6961
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990006"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Bir kök işaret belirten bir yanıt dosyası kullanarak bir izleme bağlamına başlatır.  
@@ -47,7 +45,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** *FileTracker.h*  
+ **Üst bilgi:** *FileTracker.h*  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

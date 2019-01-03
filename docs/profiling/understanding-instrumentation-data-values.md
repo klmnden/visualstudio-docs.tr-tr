@@ -1,8 +1,6 @@
 ---
 title: İzleme veri değerlerini anlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation
@@ -12,92 +10,92 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 10353dabf0ae0e0bbee726c2f816a04c2af99f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991103"
 ---
 # <a name="understand-instrumentation-data-values"></a>İzleme veri değerlerini anlama
 
-*Araçları* ayrıntılı zamanlama bilgileri işlev çağrıları, satırları ve profili uygulama yönergeleri için profil oluşturma Visual Studio kayıtların yöntemi
+*İzleme* ayrıntılı zamanlama bilgileri işlev çağrıları, satırlar ve profili oluşturulan uygulama yönergeleri için profil oluşturma Visual Studio kayıt yöntemi
 
-İzleme yöntemi başında ve diğer işlevleri bu işlevler tarafından hedef işlevleri profili ikili ve önce ve sonra her çağrısı sonunu kod yerleştirir. Eklenen kod, aşağıdaki bilgileri kaydeder:
+Araçlar yöntemini başlangıç ve son işlevlerin hedef profili oluşturulan ikili ve önceki ve sonraki her çağrının diğer işlevlere bu işlevleri tarafından kodu ekler. Eklenen kodu, aşağıdaki bilgileri kaydeder:
 
-- Bu koleksiyon olay öncekinin arasındaki aralığı.
+- Bu koleksiyon olay ve önceki bir zaman aralığıdır.
 
-- İşletim sistemi bir işlem aralığı sırasında gerçekleştirilip. Örneğin, işletim sistemi okuma veya yazma disk veya anahtar hedef iş parçacığı ve başka bir işlem başka bir iş parçacığında arasında.
+- Olup bir işletim sistemi aralığı sırasında bir işlem gerçekleştirdi. Örneğin, işletim sistemi okuma veya yazma disk veya anahtar hedef iş parçacığı ve başka bir işlem başka bir iş parçacığı arasında.
 
-Her aralık için profil oluşturucu analiz Aralık sonunda yoktu çağrı yığını yeniden yapılandırır. Çağrı yığını zamanında bir noktada bir işlemci üzerinde etkin olan işlevler listesi verilmiştir. Yalnızca bir işlevi (geçerli işlevi) kod yürütüyor; Diğer (çağrı yığını) geçerli işlevi çağrısı ile sonuçlandı işlev çağrılarını zincirine işlevlerdir.
+Her aralık için profil oluşturucu analiz aralığın sonunda mevcut çağırma yığınını yeniden oluşturur. Çağrı yığını, zaman içinde bir noktadaki bir işlemci üzerinde etkin olan işlevlerin listesidir. Yalnızca bir işlev (geçerli işlev) kodu yürütülüyor; diğer işlevler (çağrı yığınını) geçerli işlev çağrısında sonuçlanan işlev çağrıları zinciri içindedir.
 
-Aralık kaydedilirken çağrı yığınında her işlevi için profil oluşturucu analiz aralığı bir veya daha fazla işlev için dört veri değerlerini ekler. Analiz iki ölçütü temel alarak bir işlev için veri değeri aralığı ekler:
+Aralık kaydedildiği çağrı yığınında her işlev için profil oluşturucu analiz aralığı bir veya daha fazla işlev için dört veri değerlerinin ekler. Analiz iki ölçütleri temel alarak bir işlev için bir veri değer aralığı ekler:
 
-- Aralık kod işlevinin ya da buna oluşup oluşmadığını bir *alt işlevi* (işlev tarafından çağrıldı işlevi).
+- Aralık kodu işlevin veya olup oluştu bir *alt işlevi* (işlev tarafından çağrılan bir işlev).
 
-- Bir işletim sistemi olay aralığındaki oluşup oluşmadığını.
+- Olup bir işletim sistemi olay aralığındaki oluştu.
 
-Bir aralık bir işlevi veya veri aralığı için veri değerleri adlı *geçen dahil*, *geçen özel*, *uygulama dahil*, ve  *Uygulama özel*:
+Bir işlev veya veri aralığı zaman aralığı için veri değerleri adlı *geçen kapsamlı*, *geçen dışlamalı*, *uygulama kapsamlı*, ve  *Uygulama özel*:
 
-- Bir işlevin tüm aralıkları geçen dahil veri değerine eklenir.
+- Bir işlevin tüm aralıkları geçen kapsamlı veri değerine eklenir.
 
-- Aralık kod işlevin yer alan ve alt işlevi oluştuysa, aralık işlevi geçen özel veri değeri eklenir.
+- Aralık işlevinin kodundaki ve bir alt işlevindeki oluştuysa, aralığı işlevi geçen özel veri değerine eklenir.
 
-- Bir işletim sistemi olay aralığında gerçekleşmedi aralığı uygulama dahil veri değerine eklenir.
+- Bir işletim sistemi olay aralığında gerçekleşmedi aralığı uygulama kapsamlı veri değerine eklenir.
 
-- Bir işletim sistemi olay aralığında gerçekleşmedi ve işlev kodu doğrudan yürütme aralığı oluştu (diğer bir deyişle, bu alt işlevinde oluşmadı), uygulama özel veri değeri aralık eklenir.
+- Bir işletim sistemi olay aralığında gerçekleşmedi ve doğrudan işlev kodunuzun yürütülmesine aralık oluştu (diğer bir deyişle, bir alt işlevde gerçekleşmedi), uygulama özel veri değerine aralık eklenir.
 
-Profil oluşturma araçları raporları profil oluşturma oturumu kendisini işlevlerde toplam değerlerini ve işlemler, iş parçacıkları ve oturum ikili dosyaları topla.
+Profil oluşturma araçları raporları profil oluşturma oturumu kendisini işlevlerin toplam değerleri ve işlemler, iş parçacıkları ve oturumun ikili dosyaları toplama.
 
-## <a name="elapsed-inclusive-values"></a>Geçen dahil değerleri
+## <a name="elapsed-inclusive-values"></a>Geçen kapsamlı değerleri
 
-Bir işlev ve onun alt işlevleri yürütme harcanan toplam süre.
+Bir işlev ve alt işlevleri yürütülürken harcanan toplam süre.
 
-Geçen dahil değerler doğrudan işlev kodu ve hedef işlevi alt işlevlerini yürütme harcanan aralıkları yürütme harcanan aralıkları içerir. İşlevin veya işletim sistemi için bekleme içeren alt işlevleri aralıkları geçen dahil değerleri de dahil edilir.
+Geçen kapsamlı değerler, işlev kodunu ve hedef işlevi alt işlevlerini yürütülürken harcanan aralıkları doğrudan yürütülürken harcanan aralıklarını içerir. Geçen kapsamlı değerleri, işlev veya işletim sistemi için bekleme içeren alt işlevleri de dahil edilir.
 
-## <a name="elapsed-exclusive-values"></a>Geçen özel değerler
+## <a name="elapsed-exclusive-values"></a>Geçen dışlamalı değerleri
 
-Alt işlevlerde geçen süre dışında bir işlev yürütülürken harcanan süre.
+Alt işlevlerde geçen zaman dışında bir işlev yürütülürken harcanan süre.
 
-Geçen özel değerler, doğrudan bir işletim sistemi olay aralığındaki oluşup oluşmadığını bağımsız olarak işlev kodu yürütme harcanan aralıkları içerir. Tüm aralıkları hedef işlevi tarafından adı veriliyordu alt işlevleri harcadığı geçen özel değerler dahil edilmez.
+Geçen dışlamalı değerler doğrudan olup bir işletim sistemi aralığında olay bağımsız olarak işlev kod yürütülürken harcanan aralıklarını içerir. Geçen dışlamalı değerleri hedef işlev tarafından çağrılan alt işlevler harcanan tüm aralıkları dahil edilmez.
 
-## <a name="application-inclusive-values"></a>Uygulama (bunlar dahil) değerleri
+## <a name="application-inclusive-values"></a>Uygulama kapsamlı değerlerini
 
-Bir işlev ve işletim sistemi olayları harcanan zamanın hariç olmak üzere kendi alt işlevleri yürütme harcanan süre.
+Bir işlev ve alt işlevleri işletim sistemi olayları harcanan zaman hariç, yürütülürken harcanan süre.
 
-Uygulama (bunlar dahil) değerleri, işletim sistemi olayları içeren aralıkları dahil etmeyin. Uygulama dahil değerler işlevi kodu doğrudan yürütmesini aralığı olup harcandığını bağımsız olarak, bir işlev yürütülürken harcanan veya harcandığını tüm diğer aralıkları hedef işlevi alt işlevlerde içerir.
+Uygulama kapsamlı değerlerini, işletim sistemi olaylarını içeriyor aralıkları içermez. Uygulama kapsamlı değerlerini doğrudan işlev kodu yürütme aralığı olup harcandığını bakılmaksızın, bir işlev yürütülürken harcanan veya harcandığını diğer tüm aralıkları hedef işlevin alt işlevleri içerir.
 
 ## <a name="application-exclusive-values"></a>Uygulama özel değerler
 
-Alt işlevlerde geçen süre ve işletim sistemi olayları harcanan zamanın hariç, bir işlev yürütülürken harcanan süre.
+Alt işlevlerde harcanan zaman ve işletim sistemi olayları harcanan zamanı hariç, bir işlev yürütülürken harcanan süre.
 
-Uygulama özel değerleri, işletim sistemi olayları içeren aralıkları veya işlev tarafından çağrılan işlevler yürütmek harcanan aralıkları dahil etmeyin. Uygulama özel değerler, doğrudan işlev kodu yürütme harcanan ve bir işletim sistemi olay içermiyordu yalnızca bu aralıkların içerir.
+Uygulama özel değerlerini, işletim sistemi olaylarını içeriyor aralıkları veya işlev tarafından çağrılan işlevler yürütülürken harcanan aralıkları içermez. Uygulama özel değerleri olan doğrudan işlev kod yürütülürken harcanan ve bir işletim sistemi olay içermiyordu yalnızca bu aralıkları içerir.
 
-## <a name="elapsed-inclusive-percent"></a>Geçen dahil yüzde
+## <a name="elapsed-inclusive-percent"></a>Geçen kapsamlı yüzde
 
-Modül, iş parçacığı veya işlem işlevi geçen dahil değerleri olan toplam geçen dahil değerlerini profil oluşturma oturumu yüzdesi.
+Geçen kapsamlı değeri işlevi, modülün, iş parçacığı veya işlem toplam geçen kapsamlı değerleri profil oluşturma oturumunun yüzdesi.
 
-100 * işlevi geçen dahil / oturum geçen (bunlar dahil)
+100 * işlevi geçen kapsamlı / oturum geçen kapsamlı
 
-## <a name="elapsed-exclusive-percent"></a>Geçen özel yüzde
+## <a name="elapsed-exclusive-percent"></a>Geçen dışlamalı yüzde
 
-Modül, iş parçacığı veya işlem işlevi geçen özel değerleri olan toplam geçen dahil değerlerini profil oluşturma oturumu yüzdesi.
+İşlevi, modül, iş parçacığı ve işlem geçen özel değerleri olan toplam geçen kapsamlı değerleri profil oluşturma oturumunun yüzdesi.
 
-100 * geçen özel işlev / oturum geçen (bunlar dahil)
+100 * geçen özel işlev / oturum geçen kapsamlı
 
-## <a name="application-inclusive-percent"></a>Uygulama dahil yüzde
+## <a name="application-inclusive-percent"></a>Uygulama kapsamlı yüzde
 
-İşlev, modül, iş parçacığı veya işlem uygulama dahil değerleri olan toplam uygulama dahil değerlerini profil oluşturma oturumu yüzdesi.
+İşlevi, modül, iş parçacığı ve işlem uygulama kapsamlı değerleri olan toplam uygulama kapsamlı değerleri profil oluşturma oturumunun yüzdesi.
 
-100 * işlev dahil uygulama / oturum uygulama (bunlar dahil)
+100 * işlev uygulama kapsamlı / oturum uygulama kapsamlı
 
 ## <a name="application-exclusive-percent"></a>Uygulama özel yüzde
 
-Uygulama özel aralıklarına modülü, iş parçacığı veya işlem işlevi olan toplam uygulama dahil değerlerini profil oluşturma oturumu yüzdesi.
+İşlevi, modül, iş parçacığı ve işlem uygulaması özel aralıkları olan toplam uygulama kapsamlı değerleri profil oluşturma oturumunun yüzdesi.
 
-100 * işlev uygulama özel / oturum uygulama (bunlar dahil)
+100 * işlev uygulamasını özel / oturum uygulama kapsamlı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)  
-[Nasıl yapılır: Toplama metotlarını seçme](../profiling/how-to-choose-collection-methods.md)
+[Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)

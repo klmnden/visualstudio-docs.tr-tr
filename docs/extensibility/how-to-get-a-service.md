@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: hizmet alma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: Hizmet alma | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990035"
 ---
-# <a name="how-to-get-a-service"></a>Nasıl yapılır: hizmet alma
+# <a name="how-to-get-a-service"></a>Nasıl Yapılır: Hizmet alma
 Genellikle farklı özelliklere erişmek için Visual Studio Hizmetleri almanız gerekir. Genel olarak, Visual Studio hizmeti, kullanabileceğiniz bir veya daha fazla arabirimleri sağlar. VSPackage çoğu Hizmetleri elde edebilirsiniz.  
   
  Öğesinden türetilen herhangi bir VSPackage <xref:Microsoft.VisualStudio.Shell.Package> ve, doğru tarihli için herhangi bir genel hizmeti isteyebilir. Çünkü `Package` sınıfının Implements <xref:System.IServiceProvider>, türetilen herhangi bir VSPackage `Package` de bir hizmet sağlayıcısıdır.  
@@ -42,7 +39,7 @@ Genellikle farklı özelliklere erişmek için Visual Studio Hizmetleri almanız
   
    ```  
   
-    Bu kod bir SVsActivityLog hizmeti alır ve kendisine bıraktığı bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> etkinlik günlüğüne yazmak için kullanılan arabirim. Bir örnek için bkz. [nasıl yapılır: etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
+    Bu kod bir SVsActivityLog hizmeti alır ve kendisine bıraktığı bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> etkinlik günlüğüne yazmak için kullanılan arabirim. Bir örnek için bkz [nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği açılır.  
   
@@ -53,7 +50,7 @@ Genellikle farklı özelliklere erişmek için Visual Studio Hizmetleri almanız
   
  Statik <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> sınıfından türetilen herhangi VSPackage'ı ilk kez başlatılan bir önbelleğe alınan hizmet sağlayıcısı dayanır yöntemi <xref:Microsoft.VisualStudio.Shell.Package> tarihli.  
   
- VSPackage Oluşturucusu VSPackage tarihli önce çağrıldığından, küresel hizmetler VSPackage oluşturucu içinde genellikle gelen kullanılamaz. Bkz: [nasıl yapılır: hizmetlerde sorun giderme](../extensibility/how-to-troubleshoot-services.md) geçici bir çözüm için.  
+ VSPackage Oluşturucusu VSPackage tarihli önce çağrıldığından, küresel hizmetler VSPackage oluşturucu içinde genellikle gelen kullanılamaz. Bkz: [nasıl yapılır: Sorun Giderme Hizmetleri](../extensibility/how-to-troubleshoot-services.md) geçici bir çözüm için.  
   
  Bir hizmet bir araç penceresi ya da diğer VSPackage olmayan öğe yolu bir örneği aşağıda verilmiştir.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Hizmet DTE nesnesini Al açıklanmıştır.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: bir hizmeti sağlama](../extensibility/how-to-provide-a-service.md)   
+ [Nasıl yapılır: Bir hizmeti sağlama](../extensibility/how-to-provide-a-service.md)   
  [Hizmetleri sağlamak ve kullanın](../extensibility/using-and-providing-services.md)   
  [Hizmet temel bileşenleri](../extensibility/internals/service-essentials.md)

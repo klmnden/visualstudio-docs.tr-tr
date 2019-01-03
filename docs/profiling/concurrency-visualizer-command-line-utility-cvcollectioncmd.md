@@ -1,8 +1,6 @@
 ---
 title: Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986849"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kullanabilirsiniz (*CVCollectionCmd.exe*) bunları Visual Studio eşzamanlılık görselleştiricisi içinde görüntüleyebilmek komut satırından izlemeleri toplamak için. Araçlar, Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
@@ -29,7 +27,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
  Komut satırı yardımcı programını yüklemek ve indirmek için Git [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak, *CVCollectionCmd.exe* %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde x64 bilgisayarlar).  
 
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd ile bir izleme toplamak  
- Uygulama ile CVCollectionCmd başlatarak veya eklemeyi, bir izleme toplayabilirsiniz. Aşağıdaki komut başvurusu seçenekleri için bkz. Örneğin  
+ Uygulama ile CVCollectionCmd başlatarak veya eklemeyi, bir izleme toplayabilirsiniz. Aşağıdaki komut başvurusu seçenekleri için bkz. Örneğin:  
 
 ```cmd  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
@@ -42,7 +40,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
 
 |Seçenek|Açıklama|Parametreler|Döndürülen değerler|  
 |------------|-----------------|----------------|-------------------|  
-|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Yok.|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](/dotnet/framework/wcf/samples/etw-tracing) oturumları zaten etkin.|  
+|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Hiçbiri|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](/dotnet/framework/wcf/samples/etw-tracing) oturumları zaten etkin.|  
 |Başlat|Belirtilen işlem eşzamanlılık görselleştiricisi altında çalışır.|Yürütülebilir dosyanın yolu.|çalıştırma başarılı olursa 0.<br /><br /> Hedef uygulama başlatılamadı çünkü çalıştırma başarısız olmuşsa 1.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan çalıştırma başarısız olmuşsa 13.|  
 |İliştir|Sistem genelinde izleme toplama başlar; belirtilmişse, aksi takdirde, bir işleme iliştirir.|Yok.|Ek başarılı olursa 0.<br /><br /> 1 ek belirtilen işlemi geçersiz veya belirsiz olduğundan başarısız oldu.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan başarısız oldu, 13.|  
 |Ayır|Koleksiyonu durdurur.|Yok.|ayrılmayı başarılı olursa 0.<br /><br /> 1 ayrılmayı koleksiyonu şu anda devam eden olmadığından başarısız oldu.<br /><br /> 2 toplama durdurulamadı ayrılmayı başarısız oldu.|  

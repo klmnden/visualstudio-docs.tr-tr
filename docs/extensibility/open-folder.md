@@ -1,9 +1,6 @@
 ---
 title: Visual Studio açık klasör genişletilebilirlik genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
@@ -11,42 +8,42 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb2d1d922b4ebd4943c42c478400c5873af9cc4
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986017"
 ---
 # <a name="open-folder-extensibility"></a>Açık klasör genişletilebilirliği
 
-[Klasörünü Aç](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) özelliği sağlar açmak kullanıcıların herhangi bir Visual Studio Proje ya da çözüm dosyaları gerek kalmadan codebase. Klasör Aç özellikler kullanıcılar Visual Studio'dan gibi bekler sağlar:
+[Klasörünü Aç](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) özelliği sağlar, kullanıcıların proje veya çözüm dosyaları gerek kalmadan Visual Studio'da codebase herhangi. Klasör Aç özellikler kullanıcılar Visual Studio'dan gibi bekler sağlar:
 
-* Çözüm Gezgini tümleştirme ve arama
+* Çözüm Gezgini tümleştirmesi ve arama
 * Düzenleyici renklendirme
-* Git gezinme
-* Dosyaları aramada Bul
+* Gezinti Git
+* Dosya arama bulun
 
-.NET ve C++ geliştirme ettirilmesi gibi iş yükleri ile kullanıldığında, kullanıcılar ayrıca alın:
+Hem .NET hem de C++ geliştirme gibi iş yükleri ile kullanıldığında, kullanıcılar ayrıca Al:
 
 * Zengin IntelliSense
 * Dile özgü işlevi
 
-Açık klasörüyle uzantısı yazarlar Zengin özellikleri herhangi bir dil için oluşturabilirsiniz. Kullanıcının bir kullanıcı herhangi bir dosyada codebase yapı, hata ayıklama ve sembol arama desteği için API'ler vardır. Geçerli Extender'larının kodu projeleri veya bir çözüm yedekleme olmadan anlamak için mevcut Visual Studio özelliklerine güncelleştirebilirsiniz.
+Açık klasör ile uzantı yazarları Zengin özellikleri herhangi bir dil için oluşturabilirsiniz. API'ları, bir kullanıcı herhangi bir dosyada kod tabanına oluşturma, hata ayıklama ve sembol arama desteği vardır. Geçerli Genişleticileri destekleyen proje veya çözüm olmadan kod anlamak için mevcut Visual Studio özellikleri güncelleştirebilirsiniz.
 
 ## <a name="an-api-without-project-systems"></a>Proje sistemleri olmadan bir API
 
-Tarihsel olarak, Visual Studio, yalnızca bir çözüm ve proje sistemleri kullanarak projeleri dosyalarında anladım. Proje sistemi yüklenen bir proje için işlevselliği ve kullanıcı etkileşimler sorumludur. Proje içeriğinin başka proje bağımlılıkları görsel gösterimi, proje dosyaları, içerir ve arka plandaki değişikliği proje dosyası bilir. Bu hiyerarşileri ve diğer bileşenler, kullanıcı adına çalışır özellikleri aracılığıyla olmadığı. Tümü olarak kullanılabilecek kod temeli iyi bir proje ve çözüm yapısında sunulur. Komut dosyası dili ve Linux için C++ ile yazılmış açık kaynak kodu iyi verilebilir. Açık klasörüyle Visual Studio, kullanıcıların kendi kaynak kodu ile etkileşmek için yeni bir yol sağlar.
+Tarihsel olarak, Visual Studio, yalnızca bir çözüm ve proje sistemleri kullanarak projeleri dosyalarında anladım. Proje sistemi yüklü bir proje için işlevselliği ve kullanıcı etkileşimlerini sorumludur. Görsel temsilini proje içeriği, diğer projeleri, bağımlılıkları, proje dosyaları, içerir ve arka plandaki değişiklik proje dosyası anlar. Bu, bu hiyerarşiler ve diğer bileşenleri kullanıcı adına çalışan özellikleri aracılığıyla olur. Tüm kod tabanlarında bir proje ve çözüm yapısında de temsil edilir. Komut dosyası dilleri ve Linux için C++ dilinde yazılmış açık kaynaklı kod için iyi örneklerdir. Açık klasör ile Visual Studio, kullanıcılara kendi kaynak kod ile etkileşim için yeni bir yolunu sağlar.
 
-Açık klasörü altında apı'leridir `Microsoft.VisualStudio.Workspace.*` ad alanı ve Extender'larının üretmek ve veri veya açık klasördeki dosyalar geçici eylemlerini kullanmak kullanılabilir. Uzantıları dahil olmak üzere birçok alanlar için işlevselliği sağlamak için bu API'leri kullanabilirsiniz:
+Açık klasör altında apı'lerdir `Microsoft.VisualStudio.Workspace.*` ad alanı oluşturmak ve verileri veya açık klasördeki dosyaları geçici bir çözüm eylemleri Genişleticileri için kullanılabilir. Uzantılar da dahil olmak üzere çok sayıda alanlar için işlevselliği sağlamak için bu API'leri kullanabilirsiniz:
 
-- [Çalışma alanları](workspaces.md) - açık klasörü noktası genişletilebilirlik başlayarak olduğunu çalışma ve API'lerini.
-- [Dosya içerikleri ve eylemleri](workspace-file-contexts.md) -dosya dosya bağlamları sağlanan belirli bir kod gösterimi.
-- [Dizin oluşturma](workspace-indexing.md) - toplamak ve klasör Aç çalışma alanları hakkında veri kalır.
-- [Dil Hizmetleri](workspace-language-services.md) -Klasör Aç çalışma alanları halinde dil services tümleştirme.
-- [Yapı](workspace-build.md) -yapı Klasör Aç çalışma alanları için destek.
+- [Çalışma alanları](workspaces.md) - çalışma alanı ve API'lerini olan açık klasör noktası genişletilebilirlik başlatılıyor.
+- [Dosya bağlamları ve Eylemler](workspace-file-contexts.md) -dosya dosya bağlamları sağlanan özel kod gösterimi.
+- [Dizin oluşturma](workspace-indexing.md) - toplamak ve klasör Aç çalışma alanları hakkında daha fazla veriyi kalıcı olarak.
+- [Dil Hizmetleri](workspace-language-services.md) -Klasör Aç çalışma alanları halinde dil Hizmetleri tümleştirin.
+- [Derleme](workspace-build.md) -derleme klasörü aç çalışma alanları için destek.
 
-Aşağıdaki türler kullanan özellikler Klasör Aç desteklemek için yeni API benimsemeyi gerekir:
+Aşağıdaki türleri kullanan özellikler, açık klasör desteklemek için yeni API'ler benimsemeye gerekir:
 
 - `IVsHierarchy`
 - `IVsProject`
@@ -54,7 +51,7 @@ Aşağıdaki türler kullanan özellikler Klasör Aç desteklemek için yeni API
 
 ## <a name="feedback-comments-issues"></a>Geri bildirim, yorumlar, sorunları
 
-Klasörü açın ve `Microsoft.VisualStudio.Workspace.*` apı'leridir etkin geliştirme aşamasındadır. Beklenmeyen davranışları görürseniz, ilgi sürüm için bilinen sorunlar bakın. [Geliştirici topluluğu](https://developercommunity.visualstudio.com) oy verin ve sorunları oluşturmak için önerilen yerdir. Her görüş için sorununuzu ayrıntılı bir açıklaması öneririz. İçin geliştirirken Visual Studio sürümü, (ne uyguladık ve ile etkileşim) kullandığınız API'leri, beklenen sonucu ve gerçek sonucunu içerir. Mümkünse, devenv.exe işlemin dökümünü içerir. GitHub'ın sorun geri Bu bildirimde için izleme kullanın ve ilgili belgelere.
+Klasör Aç ve `Microsoft.VisualStudio.Workspace.*` etkin geliştirilme apı'lerdir. Beklenmeyen davranışı görürseniz, daha sonra ilgilendiğiniz sürüm için bilinen sorunlar bakın. [Geliştirici topluluğu](https://developercommunity.visualstudio.com) oylamak ve herhangi bir sorun oluşturmak için önerilen yerdir. Her görüş için ayrıntılı sorun açıklamasını öneririz. Geliştirmekte Visual Studio sürümü, (hem ne uyguladık ve ile etkileşim) kullandığınız API'leri, beklenen sonuç ve gerçek sonuç içerir. Mümkünse, döküm devenv.exe işleminin ekleyin. Geri bildirim bu vermek için GitHub'ın sorun kullanın ve ilgili belgeleri.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

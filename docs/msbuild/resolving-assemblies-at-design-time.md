@@ -1,8 +1,6 @@
 ---
 title: Tasarım zamanında derlemeleri çözme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad24bcf461dab05444f0e26ffd4e0c826f3f2bed
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986082"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Tasarım zamanında derlemeleri çözme
 Bir derlemeye bir başvuru eklediğinizde **.NET** sekmesinde **Başvuru Ekle** iletişim kutusunda, bir ara başvuru bütünleştirilmiş kodu başvuru işaret eder; diğer bir deyişle, tüm türü içeren bir bütünleştirilmiş kod ve imza bilgilerini ancak mutlaka içermediğinden herhangi bir kod. **.NET** sekmesi, .NET Framework çalışma zamanı derlemeleri karşılık gelen başvuru derlemelerini listeler. Ayrıca, çalışma zamanı derlemeleri üçüncü taraflar tarafından kullanılan kayıtlı AssemblyFoldersEx klasörlerdeki karşılık gelen başvuru derlemelerini listeler.  

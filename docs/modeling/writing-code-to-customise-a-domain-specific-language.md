@@ -1,5 +1,5 @@
 ---
-title: Bir etki alanına özgü dil özelleştirme
+title: Bir etki alanına özgü dili özelleştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,37 +10,36 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7fd63546f7d85ddbcc7661ac600a56bd340e6ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991210"
 ---
-# <a name="write-code-to-customize-a-domain-specific-language"></a>Bir etki alanına özgü dil özelleştirmek için kod yazma
+# <a name="write-code-to-customize-a-domain-specific-language"></a>Alana Özgü Dil Özelleştirmek için Kod yazma
 
-Bu bölümde özel kod erişim, değiştirme veya bir etki alanına özgü dil bir model oluşturmak için nasıl kullanılacağını gösterir.
+Bu bölümde erişim, değiştirme veya bir etki alanına özgü dili bir model oluşturmak için özel kod kullanma gösterilmektedir.
 
-DSL ile çalışan kod yazabilirsiniz birkaç bağlamları vardır:
+Bir DSL ile çalışan kod yazabileceğiniz birkaç bağlamları vardır:
 
--   **Özel komutlar.** Kullanıcıların Diyagramı sağ tıklayarak çağırabileceği ve hangi model değiştirebilirsiniz bir komutu kullanabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: bir komut için kısayol menüsü ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+-   **Özel komutlar içerir.** Kullanıcı diyagramda sağ tıklayarak çağırabilir ve model değişiklik yapabilir, bir komut oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
--   **Doğrulama.** Model doğru bir durumda olduğunu doğrular kod yazabilirsiniz. Daha fazla bilgi için bkz: [bir etki alanına özgü dil doğrulama](../modeling/validation-in-a-domain-specific-language.md).
+-   **Doğrulama.** Model doğru bir durumda olduğunu doğrulayan bir kod yazabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).
 
--   **Varsayılan davranışı geçersiz kılma.** Birçok yönünü DslDefinition.dsl oluşturulan kodu değiştirebilirsiniz. Daha fazla bilgi için bkz: [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).
+-   **Varsayılan davranışı geçersiz kılma.** DslDefinition.dsl oluşturulan kodu birçok yönünü değiştirebilirsiniz. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).
 
--   **Metin dönüştürmeyi.** Bir model erişir ve bu örneğin program kodu oluşturmak bir metin dosyası oluşturur kodu içeren metin şablonları yazabilirsiniz. Daha fazla bilgi için bkz: [bir etki alanına özgü dil oluşturma koddan](../modeling/generating-code-from-a-domain-specific-language.md).
+-   **Metin dönüştürme.** Bir model erişen ve örneğin program kodu oluşturmak bir metin dosyası oluşturur, kodu içeren metin şablonlarınızı yazabilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dilden kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md).
 
--   **Diğer Visual Studio uzantıları.** Modelleri okumak ve değiştirmek ayrı VSIX uzantıları yazabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: Program kodundaki dosyasından bir Model açın](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+-   **Diğer Visual Studio uzantıları.** Okuma ve değiştirme modelleri ayrı VSIX uzantıları yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
-İçinde DslDefinition.dsl tanımlayan sınıflar örneklerini adlı bir veri yapısında tutulur *bellek içi deposu* (IMS) veya *deposu*. Her zaman bir DSL tanımlayın sınıfları mağaza oluşturucuya bağımsız değişken olarak alın. Örneğin, DSL örnek adlı bir sınıf tanımlar:
+DslDefinition.dsl tanımlayan sınıf örneklerini adlı bir veri yapısı içinde tutulur *bellek içi Store* (IMS) veya *Store*. Bir DSL içinde her zaman tanımladığınız sınıfları bir Store oluşturucusuna bağımsız değişken olarak yararlanın. Örneğin DSL'nizi örnek adlı bir sınıf tanımlar:
 
 `Example element = new Example (theStore);`
 
-nesneler (yerine yalnızca olarak normal nesneler) deposunda tutmak birkaç avantaj sağlar.
+Store (yalnızca olarak sıradan nesneler) yerine, nesneleri tutma çeşitli avantajlar sağlar.
 
--   **İşlemler**. Bir dizi ilgili değişikliği bir hareket halinde gruplayabilirsiniz.
+-   **İşlem**. Bir dizi ilgili diğer değişiklikleri bir hareket halinde gruplayabilirsiniz.
 
      `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
 
@@ -52,27 +51,27 @@ nesneler (yerine yalnızca olarak normal nesneler) deposunda tutmak birkaç avan
 
      `}`
 
-     Bir özel durum değişiklikleri sırasında oluşursa, böylece son Commit() gerçekleştirilemiyor Store önceki durumuna geri sıfırlanır. Bu, hataları modeli tutarsız bir durumda bırakmadığından emin olmak için yardımcı olur. Daha fazla bilgi için bkz: [gezinme ve Program kodundaki bir modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Son Commit() yapılmaz, böylece değişiklik sırasında bir özel durum oluşursa, Store önceki durumuna sıfırlar. Bu, hataları modeli tutarsız bir durumda bırakmadığından emin olmak için yardımcı olur. Daha fazla bilgi için [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **İkili ilişkileri**. İki sınıf arasında bir ilişki tanımlamak, her iki örnek diğer uçtaki gider bir özelliği vardır. İki ucu her zaman eşitlenir. Örneğin, üst ve alt öğeleri adlı rolleriyle parenthood ilişki tanımlarsanız yazabilirsiniz:
+-   **İkili ilişkileri**. İki sınıf arasında bir ilişki tanımlarsanız, her iki End'i örnekleri diğer uçtaki ızgaranın bir özelliği vardır. İki ucu her zaman eşitlenir. Üst ve alt adlı rolleriyle parenthood ilişki tanımlarsanız, örneğin, şunu yazabilirsiniz:
 
      `John.Children.Add(Mary)`
 
-     Aşağıdaki ifadeler her ikisi de true sunulmuştur:
+     Her ikisi de aşağıdaki deyimleri artık doğrudur:
 
      `John.Children.Contains(Mary)`
 
      `Mary.Parents.Contains(John)`
 
-     Aynı sonucu elde yazarak:
+     Aynı etkiyi elde yazarak:
 
      `Mary.Parents.Add(John)`
 
-     Daha fazla bilgi için bkz: [gezinme ve Program kodundaki bir modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Daha fazla bilgi için [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Kurallar ve olayları**. Belirtilen değişiklik yapıldığında, yangın kurallar tanımlayabilirsiniz. Kurallar, örneğin, Şekil diyagramı bunlar sunmak model öğelerini ile güncel tutmak için kullanılır. Daha fazla bilgi için bkz: [yanıtlama ve yayılıyor değişiklikleri](../modeling/responding-to-and-propagating-changes.md).
+-   **Kuralları ve olayları**. Belirtilen değişiklikler yapıldığında yangın kuralları tanımlayabilirsiniz. Kuralları, örneğin, diyagramdaki şekilleri sundukları model öğeleriyle güncel tutmak için kullanılır. Daha fazla bilgi için [yanıt verme ve değişiklikleri yayma](../modeling/responding-to-and-propagating-changes.md).
 
--   **Seri hale getirme**. Deponun bir dosyaya içindeki nesneleri serileştirmek için standart bir yol sağlar. Seri hale getirme ve seri durumdan kuralları özelleştirebilirsiniz. Daha fazla bilgi için bkz: [özelleştirme dosya depolama ve XML serileştirme](../modeling/customizing-file-storage-and-xml-serialization.md).
+-   **Serileştirme**. Store bir dosyayı içeren nesneleri serileştirmek için standart bir yolunu sunar. Serileştirme ve seri durumdan çıkarılırken kurallarını özelleştirebilirsiniz. Daha fazla bilgi için [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

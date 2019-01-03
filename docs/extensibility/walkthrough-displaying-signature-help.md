@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: İmza yardımını görüntüleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc260fe45bf4c6cf801718c2f4c3bbaa98842dd6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986732"
 ---
 # <a name="walkthrough-display-signature-help"></a>İzlenecek yol: İmza Yardımı görüntüleme
 İmza Yardımı (diğer adıyla *parametre bilgisi*) kullanıcı parametre listesi başlangıç karakteri (genellikle bir açma ayracı) yazdığında bir yöntem imzası bir araç ipucunda görüntüler. Bir parametre ve parametre ayırıcı (genellikle bir virgül) yazılı olarak araç ipucu bir sonraki parametreyi kalın olarak göstermek için güncelleştirilir. Aşağıdaki yollarla imza Yardımı tanımlayabilirsiniz: bir dil hizmeti bağlamında, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu tür için imza Yardımı'nı görüntülemek veya mevcut bir içerik türünü (örneğin, "metin") için imza Yardımı'nı görüntülemek. Bu yönerge "metin" içerik türü için imza Yardımı'nı görüntülemek nasıl gösterir.  
@@ -248,4 +245,4 @@ ms.locfileid: "39498914"
 4.  Açma parantezinden yazdıktan sonra iki imzaları listesini görüntüleyen bir araç ipucu görmelisiniz `add()` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -2,7 +2,6 @@
 title: My Extensions Sayfası, Proje Tasarımcısı (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
@@ -15,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b6c22910b29279d9109c35cdcc93c795dc9abd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6d8f6d2dff7c02c8e77cfe95050d32ed6257a23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989704"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>My Extensions Sayfası, Proje Tasarımcısı (Visual Basic)
-Kullanım **My Extensions** sayfasında **Proje Tasarımcısı** yönetmek için `My` projenizdeki ad alanı uzantıları. `My` ad alanı uzantılarını etkinleştirme özelleştirmenizi `My` kendi özel üye eklemek için ad alanı. Özel oluşturma hakkında daha fazla bilgi için `My` ad alanı uzantılarını görmek [Visual Basic'te My Namespace genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
+Kullanım **My uzantılarını** sayfasının **Proje Tasarımcısı** yönetmek için `My` projenizdeki ad alanı uzantıları. `My` ad alanı uzantılarını etkinleştirme özelleştirmenizi `My` kendi özel üye eklemek için ad alanı. Özel oluşturma hakkında daha fazla bilgi için `My` ad alanı uzantılarını görmek [Visual Basic'te My Namespace genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
- Erişim için **My Extensions** sayfasında, çift **My proje** 'nde, proje düğümüne için **Çözüm Gezgini**. Zaman **Proje Tasarımcısı** görünen tıklatın **My Extensions** sekmesi.
+ Erişim için **My uzantılarını** sayfasında, çift **Projem** proje düğümü için **Çözüm Gezgini**. Zaman **Proje Tasarımcısı** görünen tıklayın **My uzantılarını** sekmesi.
 
 ## <a name="uielement-list"></a>UIElement Listesi
- Eklemek veya kaldırmak aşağıdaki seçenekleri etkinleştirmeniz `My` projenizdeki ad alanı uzantıları. A `My` ad uzantısı eklemek kullanılabilir olması için Visual Studio öğe şablon olarak ilk yüklenmelidir. Yayımlama ve yükleme hakkında bilgi için `My` ad alanı uzantılarını görmek [paketleme ve dağıtma özel My Extensions](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
+ Eklemek veya kaldırmak aşağıdaki seçenekleri etkinleştirmeniz `My` projenizdeki ad alanı uzantıları. A `My` ad alanı uzantısı eklenecek kullanılabilir olması için Visual Studio öğesi şablon olarak önce yüklenmelidir. Yayımlama ve yükleme hakkında bilgi için `My` ad alanı uzantılarını görmek [paketleme ve dağıtma özel My uzantılarını](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
- **My namespace uzantıları**
+ **My ad alanı uzantıları**
 
  Bu liste tüm gösterir `My` projede yüklü ad alanı uzantıları.
 
- **Uzantısı Ekle**
+ **Uzantı Ekle**
 
- Yüklü bir eklemek için bu düğmeye tıkladığınızda `My` projenize ad alanı uzantı. Olası tüm listesi `My` ad alanı uzantılarını görünecektir. Seçin `My` tıklatıp projenize eklemek istediğiniz ad alanı uzantı **Tamam** ekleyin.
+ Yüklü bir eklemek için bu düğmeye tıklayın `My` projenize ad alanı uzantısı. Tüm olası listesini `My` ad alanı uzantıları görünür. Seçin `My` tıklatıp projenize eklemek istediğiniz ad alanı uzantısı **Tamam** ekleyin.
 
  **Uzantısını kaldırma**
 
- Bir veya daha fazla başvurularında seçin **My ad alanı uzantılarını** listeleyin ve ardından kaldırmak için bu düğmeye tıkladığınızda `My` proje ad alanı uzantı.
+ Bir veya daha fazla başvurularını seçin **My ad alanı uzantılarını** listeleyin ve ardından kaldırmak için bu düğmeye tıkladığınızda `My` projesinden ad alanı uzantısı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

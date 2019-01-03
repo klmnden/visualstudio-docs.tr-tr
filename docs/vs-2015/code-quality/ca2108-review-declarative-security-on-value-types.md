@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b437fa656c2a2d0650463fd0ab78119f67099ac7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 471766de167ac4d01d99dbb223828234abefaa34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989224"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Değer türleri üzerinde bildirimsel güvenliği gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +60,8 @@ ms.locfileid: "49889673"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **Özel oluşturucu yapısı: istek başarısız oldu. ** 
+ **Özel oluşturucu yapısı: İstek başarısız oldu. ** 
  **Yeni değerleri SecuredTypeStructure 100 100**
 **yeni değerleri SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

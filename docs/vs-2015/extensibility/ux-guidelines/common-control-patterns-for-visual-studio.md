@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2de92d2b6083fd587dc38a67e189fa9ca24b660d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ea22577acc6c0a50c0f4639ebd6877890a8ce79d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991197"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio için yaygın denetim desenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +52,7 @@ ms.locfileid: "53052144"
 
 -   **Standart (yardımcı programı) iletişim kutuları:** temalı değil. Re-template yapın. Temel denetim stili varsayılan ayarları kullanın.
 
--   **Aracı, windows, belge düzenleyicileri, tasarım yüzeyleriyle ve temalı iletişim kutuları:** renk hizmetini kullanan özel temalı görünümünü kullanın.
+-   **Araç pencereleri, belge düzenleyicileri, tasarım yüzeyleriyle ve temalı iletişim kutuları:** Renk hizmetini kullanan özel temalı görünümünü kullanın.
 
 ###  <a name="BKMK_Scrollbars"></a> Kaydırma çubukları
  Kaydırma çubukları izlemelidir [Windows kaydırma çubukları için ortak etkileşim desenleri](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) bunlar içerik bilgilerle gibi Kod Düzenleyicisi'nde genişletilmiş sürece.
@@ -73,13 +72,13 @@ ms.locfileid: "53052144"
 
 -   Alanların gerekli  **\<gerekli >** olarak Filigran belgeler bunları içinde. Nadir durumlarda dışında bir arka plan rengini değiştirmemesi gerekir.
 
--   Doğrulama hatası: bkz [bildirimler ve Visual Studio için ilerleme durumu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+-   Doğrulama hatası: Bkz: [bildirimler ve Visual Studio için ilerleme durumu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
 -   Giriş alanlarını, bunlar gösterilir penceresinin genişliğini uygun değil ya da bir yol gibi uzun bir alan uzunluğunu rasgele eşleştirilecek içeriği sığdıracak şekilde boyutlandırılmalıdır. Uzunluğu bir göstergesi kullanıcıya karakterlerinin kaçının tutulacağını alana izin için sınırlamalar olabilir.
 
-     ![Hatalı giriş alanı denetim genişliği](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **hatalı giriş alan uzunluğu: adı bu kadar uzun olacağını düşüktür.**
+     ![Hatalı giriş alanı denetim genişliği](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **hatalı giriş alan uzunluğu: Ad bu kadar uzun olacağını düşüktür.**
 
-     ![Giriş alanı denetim genişliği düzeltmek](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **doğru giriş alan uzunluğu: beklenen içeriğe için makul bir genişlik giriş alandır.**
+     ![Giriş alanı denetim genişliği düzeltmek](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **doğru giriş alan uzunluğu: Giriş alanını beklenen içerik için makul bir genişliğidir.**
 
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Birleşik giriş kutusu ve aşağı açılır listeler
  Tipik etkileşim davranışını izleyin [açılan listeler ve birleşik giriş kutuları için Windows Masaüstü yönergeleri](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
@@ -116,9 +115,9 @@ ms.locfileid: "53052144"
 
 -   Onay kutularını metnin ilk satırı taban çizgisi ile hizalar.
 
-     ![Yanlış onay kutusu hizalama](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **yanlış onay kutusu hizalama: onay kutusu metni ortalanır.**
+     ![Yanlış onay kutusu hizalama](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **yanlış onay kutusu hizalama: Onay kutusu metni ortalanır.**
 
-     ![Onay kutusu hizalama düzeltmek](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **onay kutusunu hizalama düzeltin: onay kutusunu, metnin ilk satırı taban çizgisi ile hizalanır.**
+     ![Onay kutusu hizalama düzeltmek](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **onay kutusunu hizalama düzeltin: Onay kutusu ilk metin satırının taban çizgisi ile hizalanır.**
 
 ###  <a name="BKMK_RadioButtons"></a> Radyo düğmeleri
  Tipik etkileşim davranışını izleyin [radyo düğmeleri için Windows Masaüstü yönergelerini](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
@@ -425,24 +424,24 @@ ms.locfileid: "53052144"
 ##### <a name="tree-view-control"></a>Ağaç görünümü denetimi
  Visual Studio ağaç denetimleri ortak klavye gezintisi izlemelidir:
 
--   **Yukarı Ok:** ağacın taşıyarak öğeleri seçin
+-   **Yukarı Ok:** Ağacın taşıyarak öğeleri seçin
 
--   **Aşağı ok:** ağacının taşıyarak öğeleri seçin
+-   **Aşağı ok:** Ağacının taşıyarak öğeleri seçin
 
--   **Sağ ok:** ağacında bir düğümü genişletin
+-   **Sağ ok:** Bir ağaç düğümünü genişletin
 
--   **Sol Ok:** ağacında bir düğümü Daralt
+-   **Sol Oka Dönüştür:** Ağacında bir düğümü Daralt
 
--   **Anahtarı girin:** başlatmak, yükleme, yürütme seçili öğe
+-   **Anahtarı girin:** Başlatma, yükleme, yürütme seçili öğe
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (ağaç görünümü ve ızgara görünümü)
  Bir grid'in içindeki ağaç görünümünde içeren karmaşık bir denetim trid denetimidir. Ağaç görünümünde, aşağıdaki eklemelerle olarak aynı klavye komutlarını ağacında doğru genişletme ve daraltma saygı:
 
-- **Sağ ok:** bir düğümünü genişletin. Düğüm genişletildikten sonra en yakın sütuna sağ taraftaki gezinme devam etmelidir. Gezinti satırının sonundaki durdurmanız gerekir.
+- **Sağ ok:** Bir düğümünü genişletin. Düğüm genişletildikten sonra en yakın sütuna sağ taraftaki gezinme devam etmelidir. Gezinti satırının sonundaki durdurmanız gerekir.
 
-- **Sekmesi:** yakın hücrenin sağ taraftaki gitmenizi sağlar.  Satırın sonunda, gezinti ve bir sonraki satıra devam eder.
+- **Sekmesi:** En yakın hücreye sağ taraftaki gider.  Satırın sonunda, gezinti ve bir sonraki satıra devam eder.
 
-- **SHIFT + Tab:** yakın hücrenin soldaki gitmenizi sağlar.  Satırın başlangıcında, gezinti önceki satırdaki en sağındaki hücreyi devam eder.
+- **SHIFT + Tab:** Sol taraftaki yakın hücreye gider.  Satırın başlangıcında, gezinti önceki satırdaki en sağındaki hücreyi devam eder.
 
   ![Visual Studio'da Trid denetimi](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")
 

@@ -1,9 +1,6 @@
 ---
 title: Eski dil hizmetini geçirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
@@ -13,36 +10,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 412b09016a3f889e0d6c5e40ff75895d5ae8ff48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c260a8ebfd925b9da1210482b519aacddfa77ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986862"
 ---
-# <a name="migrating-a-legacy-language-service"></a>Eski dil hizmetini geçirme
-Visual Studio sonraki bir sürüme eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest dosyası projeye ekleyerek geçirebilirsiniz. Visual Studio düzenleyicisinde, uyum için dil hizmeti önceki gibi çalışmaya devam eder.  
+# <a name="migrating-a-legacy-language-service"></a>Eski Dil Hizmetini Geçirme
+Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest dosyası projeye eklenirken Visual Studio'nun sonraki bir sürüme geçiş yapabilirsiniz. Visual Studio Düzenleyicisi, uyum için dil hizmeti önceki gibi çalışmaya devam eder.  
   
- Eski dil hizmetler bir VSPackage bir parçası olarak uygulanır, ancak dil hizmet özellikleri uygulamak için daha yeni MEF uzantıları kullanmak için bir yoludur. Bir dil hizmeti uygulamak için yeni yolu hakkında daha fazla bilgi için bkz: [Düzenleyicisi ve dil hizmeti uzantılarını](../../extensibility/editor-and-language-service-extensions.md).  
+ Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Dil hizmeti uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [düzenleyici ve dil hizmeti uzantıları](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Yeni Düzenleyicisi API mümkün olan en kısa sürede kullanmaya başlamanızı öneriyoruz. Bu dil hizmetinizin performansını ve yeni Düzenleyicisi özelliklerden yararlanmak sağlar.  
+>  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
-## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Bir Visual Studio 2008 dil hizmeti çözümü daha sonraki bir sürüme geçiş  
- Aşağıdaki adımlar RegExLanguageService adlı bir Visual Studio 2008 örnek uyarlamak nasıl gösterir. Bu örnek, bir Visual Studio 2008 SDK'sı yükleme bulabilirsiniz *Visual Studio SDK yükleme yolu*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ klasör.  
+## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Bir Visual Studio 2008 dil hizmeti çözümü sonraki bir sürüme geçirme  
+ Aşağıdaki adımlarda, uyum RegExLanguageService adlı bir Visual Studio 2008 örneği gösterilmektedir. Bu örnek, bir Visual Studio 2008 SDK'sını yükleme bulabilirsiniz *Visual Studio SDK yükleme yolunu*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ klasör.  
   
 > [!IMPORTANT]
->  Dil hizmetinizi renkleri tanımlamıyorsa, açıkça ayarlamalısınız <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> için `true` VSPackage üzerinde:  
+>  Dil hizmetinizi renkleri tanımlamıyorsa, açıkça ayarlamalısınız <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> için `true` VSPackage'ı üzerinde:  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  
 ```  
   
-#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Visual Studio 2008 dil hizmeti daha sonraki bir sürüme geçirmek için  
+#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Bir Visual Studio 2008 dil hizmeti sonraki bir sürüme geçirmek için  
   
-1.  Visual Studio ve Visual Studio SDK'sı daha yeni sürümlerini yükleyin. SDK yükleme yolları hakkında daha fazla bilgi için bkz: [Visual Studio SDK'sını yükleme](../../extensibility/installing-the-visual-studio-sdk.md).  
+1.  Visual Studio ve Visual Studio SDK'ın daha yeni sürümlerini yükleyin. SDK'sını yükleme yöntemleri hakkında daha fazla bilgi için bkz. [Visual Studio SDK'sını yükleme](../../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  (Bunu Visual Studio'da yüklemeden. RegExLangServ.csproj dosyayı düzenleyin.  
+2.  (Bunu Visual Studio'da yüklenmeden. RegExLangServ.csproj dosyayı Düzenle  
   
      İçinde `Import` Microsoft.VsSDK.targets dosyaya düğüm değeri aşağıdaki metinle değiştirin.  
   
@@ -56,53 +53,53 @@ Visual Studio sonraki bir sürüme eski dil hizmeti projesini güncelleştirmek 
   
 5.  **Tek yönlü yükseltme** penceresi görüntülenir. **Tamam**'ı tıklatın.  
   
-6.  Proje özelliklerini güncelleştirin. Açık **proje özelliklerini** proje düğümünde seçerek penceresi **Çözüm Gezgini**, sağ ve seçme **özellikleri**.  
+6.  Proje özelliklerini güncelleştirin. Açık **proje özellikleri** 'nde proje düğümüne seçerek penceresi **Çözüm Gezgini**, sağ ve seçme **özellikleri**.  
   
-    -   Üzerinde **uygulama** sekmesinde, değiştirmek **hedef framework** için **4.6.1**.  
+    -   Üzerinde **uygulama** sekmesinde, **hedef Framework'ü** için **4.6.1**.  
   
-    -   Üzerinde **hata ayıklama** sekmesinde **başlangıç dış program** kutusuna  **\<Visual Studio yükleme yolu > \Common7\IDE\devenv.exe.**.  
+    -   Üzerinde **hata ayıklama** sekmesinde **harici program Başlat** kutusuna  **\<Visual Studio yükleme yolu > \Common7\IDE\devenv.exe.**.  
   
          İçinde **komut satırı bağımsız değişkenleri** kutusuna /**rootsuffix Exp**.  
   
 7.  Aşağıdaki başvuruları güncelleştirin:  
   
-    -   Microsoft.VisualStudio.Shell.9.0.dll başvurusunu kaldırın, ardından Microsoft.VisualStudio.Shell.14.0.dll ve Microsoft.VisualStudio.Shell.Immutable.11.0.dll başvurular ekleyin.  
+    -   Microsoft.VisualStudio.Shell.9.0.dll başvurusunu kaldırın, sonra Microsoft.VisualStudio.Shell.14.0.dll ve Microsoft.VisualStudio.Shell.Immutable.11.0.dll başvurular ekleyin.  
   
-    -   Microsoft.VisualStudio.Package.LanguageService.9.0.dll başvurusunu kaldırın, ardından Microsoft.VisualStudio.Package.LanguageService.14.0.dll bir başvuru ekleyin.  
+    -   Microsoft.VisualStudio.Package.LanguageService.9.0.dll başvurusunu kaldırın, sonra Microsoft.VisualStudio.Package.LanguageService.14.0.dll bir başvuru ekleyin.  
   
     -   Microsoft.VisualStudio.Shell.Interop.10.0.dll bir başvuru ekleyin.  
   
-8.  VsPkg.cs dosyasını açın ve değerini değiştirmek `DefaultRegistryRoot` özniteliğini  
+8.  VsPkg.cs dosyasını açın ve değeri değiştirin `DefaultRegistryRoot` özniteliğini  
   
     ```  
     "Software\\Microsoft\\VisualStudio\\14.0Exp"  
     ```  
   
-9. Aşağıdaki öznitelik için VsPkg.cs eklemelisiniz özgün örnek onun dil hizmeti kaydetmez.  
+9. Aşağıdaki özniteliği için VsPkg.cs eklemelisiniz özgün örnek kendi dil hizmeti kaydetmez.  
   
     ```  
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]  
     ```  
   
-10. Source.extension.vsixmanifest dosyayı eklemeniz gerekir.  
+10. Source.extension.vsixmanifest dosyası eklemeniz gerekir.  
   
-    -   Bu dosya mevcut bir uzantı, proje dizinine kopyalayın. (Bu dosya almanın bir yolu olan bir VSIX proje oluşturmak için (altında **dosya**, tıklatın **yeni**, ardından **proje**. Altında Visual Basic veya C# tıklatın **genişletilebilirlik**seçeneğini belirleyip **VSIX proje**.)  
+    -   Bu dosya, var olan bir uzantı, proje dizinine kopyalayın. (Bu dosya yapmanın bir yolu olan bir VSIX projesi oluşturmak için (altında **dosya**, tıklayın **yeni**, ardından **proje**. Altında Visual Basic veya C# tıklatın **genişletilebilirlik**, ardından **VSIX projesi**.)  
   
     -   Dosyayı projenize ekleyin.  
   
-    -   Dosyanın içinde **özellikleri**ayarlayın **yapı eylemi** için **hiçbiri**.  
+    -   Dosyanın içinde **özellikleri**ayarlayın **derleme eylemi** için **hiçbiri**.  
   
     -   Dosyasını açın **VSIX bildirim Düzenleyicisi**.  
   
     -   Aşağıdaki alanları değiştirin:  
   
-    -   **Kimliği**: RegExLangServ  
+    -   **KİMLİĞİ**: RegExLangServ  
   
     -   **Ürün adı**: RegExLangServ  
   
-    -   **Açıklama**: bir normal ifade dili hizmeti.  
+    -   **Açıklama**: Bir normal ifade dil hizmeti.  
   
-    -   Altında **varlıklar**, tıklatın **yeni**seçin **türü** için **Microsoft.VisualStudio.VsPackage**ayarlayın **kaynak** için **geçerli çözümdeki bir proje ile**ve ardından **proje** için **RegExLangServ**.  
+    -   Altında **varlıklar**, tıklayın **yeni**seçin **türü** için **Microsoft.VisualStudio.VsPackage**ayarlayın **kaynak** için **mevcut çözümde bir proje**ve ardından **proje** için **RegExLangServ**.  
   
     -   Dosyayı kaydedin ve kapatın.  
   

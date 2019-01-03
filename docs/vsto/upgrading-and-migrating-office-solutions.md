@@ -1,9 +1,6 @@
 ---
 title: Office çözümlerini geçirme ve yükseltme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0f8a1ca1fa9c3d59b7fa95a12d08d5bb82ab422b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988371"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office çözümlerini geçirme ve yükseltme
   Visual Studio'nun önceki bir sürümde oluşturulan Microsoft Office projeniz varsa, geçerli Visual Studio sürümlerinde kullanmak için projeyi yükseltmeniz gerekir. Microsoft Office projesini yükseltmek için bir Microsoft Office geliştirici araçlarını içeren Visual Studio sürümünde açın. Microsoft Office geliştirici araçlarını içeren Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,8 +85,6 @@ ms.locfileid: "50671748"
  VSTO eklenti dağıtmak için ClickOnce kullanmak istiyorsanız, Kurulum veya InstallShield Limited Edition projesini tamamen silebilirsiniz. VSTO eklentileri ClickOnce kullanarak dağıtma hakkında daha fazla bilgi için bkz. [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: yükseltme Office çözümleri](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Nasıl yapılır: Office çözümlerini yükseltme](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Office çözümlerini .NET Framework 4 veya sonraki sürümlere geçirme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Proje yükseltme, Seçenekler iletişim kutusu](../vsto/project-upgrade-options-dialog-box.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Şerit, çalışma zamanında erişme
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989496"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Şerit, çalışma zamanında erişme
   Gösterme, gizleme ve Şerit değiştirme için kod yazma ve bir özel görev bölmesi, Eylemler bölmesi veya Outlook form bölgesi denetimlerinden kodu çalıştırmak kullanıcıları etkinleştirin.  
@@ -63,6 +61,6 @@ ms.locfileid: "52304629"
  [Şerit XML](../vsto/ribbon-xml.md)   
  [Şerit nesne modeline genel bakış](../vsto/ribbon-object-model-overview.md)   
  [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [İzlenecek yol: çalışma zamanında Şerit denetimlerini güncelleştirme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [İzlenecek yol: Çalışma zamanında Şerit denetimlerini güncelleştirme](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)  

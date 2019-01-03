@@ -1,8 +1,6 @@
 ---
-title: 'Nasıl yapılır: işlemler görünümünde işlem arama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl Yapılır: İşlemler görünümünde işlem arama | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988760"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl Yapılır: İşlemler Görünümünde İşlem Arama
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl Yapılır: İşlemler görünümünde işlem arama
 Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. Alanları iletişim kutusunda işlem ağacında seçilen işlem özniteliklerini gösterir.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>İşlemler görünümünde işlem aramak için  

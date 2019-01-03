@@ -1,8 +1,6 @@
 ---
 title: Stiller sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccccced77f508bdced130012645aa475124e87b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 464f2908784011074754ca68a29edbd52d992c95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990327"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Stiller Sekmesi, Pencere Özellikleri İletişim Kutusu
-Kullanım **stilleri** sekmesi seçili penceresine uygulanan stilleri gösterir. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı taşımak [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin, sonra seçin **özellikleri** gelen **Görünüm** menüsü.  
+Kullanım **stilleri** Seçilen pencereyi uygulanan alan stilleri göstermek için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **stilleri** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **stilleri** sekmesinde:  
   
 |Giriş|Açıklama|  
 |-----------|-----------------|  
-|**Pencere stilleri**|Pencere bileşimini kodları stil ve stilleri kontrol.|  
-|**Genişletilmiş stilleri**|Genişletilmiş pencere stili kodları birleşimi.|
+|**Pencere stilleri**|Pencere bir birleşimini kodları stil ve stilleri kontrol.|  
+|**Genişletilmiş stiller**|Genişletilmiş pencere stili kodları birleşimi.|

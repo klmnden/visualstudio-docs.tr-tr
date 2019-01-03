@@ -2,7 +2,6 @@
 title: Görüntü Kitaplığı
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: sample
 helpviewer_keywords:
 - animation [Visual Studio]
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d4a75c8ded0db82070d04745bcc10c4083c2073
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 984f36ea98c0e61be7236407c9188211bdb2fe60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987498"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio görüntü kitaplığı
 
@@ -31,7 +30,7 @@ Visual Studio görüntü kitaplığı, Microsoft Visual Studio, Microsoft Window
 
 [Visual Studio görüntü kitaplığı'nı indirin](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Görüntü kitaplığı beş kategoriye ayrılır: ortak öğeler, Eylemler, ek açıklamalar, simgeler ve nesneler. Benioku dosyaları ortak öğeler ve simge türleri için PDF biçiminde dahil edilir. Bunlar, bu görüntüler, uygun şekilde uygulamalarınızda kullanma hakkında bilgi içerir.
+Görüntü kitaplığı beş kategoriye ayrılmıştır: Ortak öğeler, Eylemler, ek açıklamalar, simgeler ve nesneler. Benioku dosyaları ortak öğeler ve simge türleri için PDF biçiminde dahil edilir. Bunlar, bu görüntüler, uygun şekilde uygulamalarınızda kullanma hakkında bilgi içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

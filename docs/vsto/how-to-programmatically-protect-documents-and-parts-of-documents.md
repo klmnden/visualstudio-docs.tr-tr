@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: program aracılığıyla belgeleri ve belge parçalarını koruma'
-ms.custom: ''
+title: 'Nasıl Yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991116"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl yapılır: program aracılığıyla belgeleri ve belge parçalarını koruma
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl Yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma
   Kullanıcılar belgeyi düzenlemeler yapmasını önlemek için Microsoft Office Word belgeleri koruma ekleyebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35676678"
 > [!NOTE]  
 >  Aşağıdaki örnek, parola koruması kullanmaz; Ancak, bir parola belge koruması eklerken göz önünde bulundurmak isteyebilirsiniz. Daha fazla bilgi için belge koruyucu örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).  
   
- İçerik denetimleri, belge bölümlerini koruma için de kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ İçerik denetimleri, belge bölümlerini koruma için de kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Belge düzeyi özelleştirmesi parçası olan bir belgeyi koru  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35676678"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
  [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
- [Nasıl yapılır: kodun kısıtlı izinle belgelerin arkasında çalıştırmak için izin verme](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

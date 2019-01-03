@@ -1,8 +1,6 @@
 ---
-title: Otomatik işaret | Microsoft Docs
-ms.custom: ''
+title: Otomatik işaret zamanının | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
 author: mikejo5000
@@ -10,17 +8,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f63ee0e28a432e43f30377b9f876004b69cd13dc
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 1c2120fc6aa546261077aa19de5de298feddfec7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987738"
 ---
 # <a name="automark"></a>AutoMark
-**Otomatik işaret** seçeneği, Windows yazılım performans sayacı olaylarını toplama arasındaki milisaniye sayısını belirtir. Windows performans sayaçlarını belirtilir **WinCounter** seçeneği.  
+**AutoMark** seçeneği, Windows yazılım performansı sayaç olaylarını koleksiyonunu arasındaki milisaniye sayısını belirtir. Windows performans sayaçları belirtilir **WinCounter** seçeneği.  
   
- Yalnızca bir **otomatik işaret** seçeneği komut satırında belirtilebilir. Unutmayın **WinCounter** tarafından belirtilen örnekleme aralığı **otomatik işaret** ana örnekleme aralığı bağımsızdır.  
+ Yalnızca bir **AutoMark** seçeneği, komut satırında belirtilebilir. Unutmayın **WinCounter** örnekleme aralığı tarafından belirtilen **AutoMark** ana örnekleme aralığı bağımsızdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,14 +28,14 @@ VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
   
 #### <a name="parameters"></a>Parametreler  
  `Milliseconds`  
- Windows performansı sayaç olaylarını koleksiyonları arasındaki milisaniye sayısını belirtir.  
+ Windows performansı sayaç olaylarını koleksiyonları arasında geçen milisaniye sayısını belirtir.  
   
-## <a name="required-options"></a>Gerekli seçenekler  
+## <a name="required-options"></a>Gerekli seçenekleri  
  **WinCounter:** `Path`  
- Windows performans sayacı toplamak için belirtir. İzleme yöntemi kullanırken, birden çok Windows sayaçları belirtilebilir. Örnekleme yöntemi kullanırken, yalnızca bir yazılım sayaç belirtilebilir. **WinCounter** içeren bir komut satırı seçeneği belirtilen **Başlat** seçeneği.  
+ Toplanacak Windows performans sayacı belirtir. Araçlar yöntemini kullanırken, birden çok Windows sayaçları belirtilebilir. Örnekleme yöntemini kullanırken, yalnızca bir yazılım sayacı belirtilebilir. **WinCounter** içeren bir komut satırı seçeneği belirtilen **Başlat** seçeneği.  
   
 ## <a name="example"></a>Örnek  
- Bu örnekte, iki Windows performans sayaçları için bir örnekleme aralığı 1000 milisaniye olarak ayarlanır.  
+ Bu örnekte, iki Windows performans sayaçları için 1000 milisaniye cinsinden örnekleme aralığı ayarlanır.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /WinCounter:"\Process(*)\% Processor Time" /WinCounter:"\ASP.NET\Pages/sec" /AutoMark:1000  
@@ -48,4 +46,4 @@ VSPerfCmd.exe /Launch:TestApp.exe
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)
+ [Profil hizmetler](../profiling/command-line-profiling-of-services.md)

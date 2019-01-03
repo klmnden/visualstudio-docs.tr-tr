@@ -1,8 +1,6 @@
 ---
 title: BC doku sıkıştırma çeşidi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8149c6d544d6967b454c7c307e01bdfa3f3afbfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986433"
 ---
 # <a name="bc-texture-compression-variant"></a>BC Doku Sıkıştırma Çeşidi
 Etkinleştirir sıkıştırma B8G8R8X8, B8G8R8A8 veya R8G8B8A8 çeşididir bir piksel biçimi dokular hakkında engelleyin.  

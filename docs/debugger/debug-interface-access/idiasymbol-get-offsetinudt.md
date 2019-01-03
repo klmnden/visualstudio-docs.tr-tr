@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_offsetınudt | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48b13de8a9d1680ae4e2a6a94a4fda120a74a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 286565200cba61e5c2fd990de8d6ddb19c3e5ff1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985754"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 Bir kullanıcı tanımlı tür (UDT) üyesi udt'de başlangıcına uzaklık alır.  
@@ -27,7 +25,7 @@ Bir kullanıcı tanımlı tür (UDT) üyesi udt'de başlangıcına uzaklık alı
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT get_offsetInUdt(   
+HRESULT get_offsetInUdt(   
    DWORD* pRetVal)  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_offsetInUdt(
  Bu işlev yalnızca yerel kayıt en iyi duruma getirilmiş bir yapı içinde kullanılır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

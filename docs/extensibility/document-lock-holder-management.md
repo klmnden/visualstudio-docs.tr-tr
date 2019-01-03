@@ -1,9 +1,6 @@
 ---
 title: Belge kilit tutucusu Yönetimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986446"
 ---
 # <a name="document-lock-holder-management"></a>Belge kilit tutucusu Yönetimi
 Çalıştırılan Belge tablosu (RDT) açık belgeler veya sahip oldukları herhangi bir düzenleme kilitleri sayısını tutar. Bu program aracılığıyla arka planda bir belge penceresi açık bir belgede görmeye kullanıcı olmadan düzenlendiğinde RDT belgede bir düzenleme kilidi yerleştirebilirsiniz. Bu işlev, genellikle grafik kullanıcı arabirimi aracılığıyla birden çok dosyayı değiştiren tasarımcılar tarafından kullanılır.

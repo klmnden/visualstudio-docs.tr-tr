@@ -1,8 +1,6 @@
 ---
 title: '&lt;Komutları&gt; öğesi (Önyükleyici) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 785df23b3d76573182eeb97efc5b359e7298a009
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2370f8e394727c0a4f83488a77096b10cb36746c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990457"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Komutları&gt; öğesi (Önyükleyici)
 `Commands` Öğesi uygular öğelerce açıklanan testleri `InstallChecks` öğesi ve hangi paket bildirir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önyükleyici, test başarısız olursa yüklemelisiniz.  

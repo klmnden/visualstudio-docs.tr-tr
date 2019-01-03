@@ -3,19 +3,18 @@ title: R için değişken Gezgini
 description: Değişken Gezgini Visual Studio'da tüm değişkenleri belirli bir kapsamda geçerli R oturumda gösterir.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988942"
 ---
 # <a name="variable-explorer"></a>Değişken Gezgini
 
@@ -71,7 +70,7 @@ Hata ayıklayıcı bir kesme noktasında durdurulduğunda bir işlev kapsamı i�
 
 ## <a name="import-data-into-variable-explorer"></a>Değişken Gezgini ile veri alma
 
-İki komutları **değişken Gezgini** aracılığıyla da kullanılabilir olan araç çubuğu **R Araçları** > **veri** menüsünde, içeri aktarma dış CSV kümelerine R oturum: **Web URL'si oturumundan R alma kümesine** ve **R oturumu metin dosyasından içeri aktarma kümesine**.
+İki komutları **değişken Gezgini** aracılığıyla da kullanılabilir olan araç çubuğu **R Araçları** > **veri** menüsünde, içeri aktarma dış CSV kümelerine R oturum:  **Web URL'si oturumundan R içine veri kümesini içeri aktarma** ve **içe veri kümesi R oturuma metin dosyasından**.
 
 İçeri aktarmak için CSV dosyası belirledikten sonra Visual Studio görüntüler bir **veri kümesini içeri aktarma** o veri dosyasını nasıl ayrıştırılır denetlemek için seçenekleri sahip iletişim (diğer bir deyişle, gelen alan ayırıcısı nedir ve nasıl işleneceğini tırnak işareti). Ayrıca, içeri aktarılan veri çerçevesi ile özgün veri dosyasının önizlemesini görebilirsiniz:
 

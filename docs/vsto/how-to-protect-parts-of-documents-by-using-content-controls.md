@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma'
-ms.custom: ''
+title: 'Nasıl Yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989263"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl yapılır: içerik denetimlerini kullanarak belge bölümlerini koruma
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl Yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma
   Belgenin bir bölümünü koruduğunuzda, kullanıcıların belgenin bu bölümü içeriğini silme veya değiştirme engeller. İçerik denetimlerini kullanarak bir Microsoft Office Word belgesi kısımlarını korumak için birkaç yol vardır:  
   
 - Bir içerik denetimi koruyabilirsiniz.  
@@ -112,4 +109,3 @@ ms.locfileid: "49850366"
  [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)   
  [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

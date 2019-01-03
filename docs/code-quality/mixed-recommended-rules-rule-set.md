@@ -2,19 +2,18 @@
 title: Karışık Önerilen Kurallar kural kümesi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e155457b250eaa03f56d0009ee434bd1ecb39b63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ec485979eb4c8736260acfa5906b8465b5326f38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988384"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Karışık Önerilen Kurallar kural kümesi
 
@@ -227,7 +226,7 @@ Microsoft karışık önerilen kurallar potansiyel güvenlik boşluklarını, uy
 |[C28286](../code-quality/c28286.md)|İşlevi, sonunun yakınında sözdizimi hatası|
 |[C28287](../code-quality/c28287.md)|İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (tanınmayan parametre adı)|
 |[C28288](../code-quality/c28288.md)|İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (geçersiz parametre adı)|
-|[C28289](../code-quality/c28289.md)|İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değil|
+|[C28289](../code-quality/c28289.md)|İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değildi|
 |[C28290](../code-quality/c28290.md)|işlevi için ek açıklama gerçek parametre sayısından daha fazla External içeriyor|
 |[C28291](../code-quality/c28291.md)|POST null/notnull deref düzeyi 0 işlevi için anlamsız olur.|
 |[C28300](../code-quality/c28300.md)|İşleci için uyumsuz olan türlerde ifade işlenenleri|

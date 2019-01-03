@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce6d1a39f568986dfd77ed47fc2da18bf3da7ee4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a553119fe8cfbd9013357b63be07b300b59f9530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989078"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio düzeni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +41,11 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
  ![Etiketleri yukarıda denetimleri için iletişim aralığı](../../extensibility/ux-guidelines/media/0801-a-utilityspacingabove.png "0801 a_UtilitySpacingAbove")
 
- **Şekil 08.01-a: yönergeleri denetimleri yukarıda etiketlerle yardımcı programı iletişim kutuları için Boşluklandırma**
+ **Şekil 08.01-a: Denetimleri yukarıda etiketlerle yardımcı programı iletişim kutuları için aralığı yönergeleri**
 
  ![Denetimleri solundaki etiketlerin iletişim aralığı](../../extensibility/ux-guidelines/media/0801-b-utilityspacingleft.png "0801 b_UtilitySpacingLeft")
 
- **Şekil 08.01-b: yönergeleri denetimleri solundaki etiketlerle yardımcı programı iletişim kutuları için Boşluklandırma**
+ **Şekil 08.01-b: Denetimleri solundaki etiketlerle yardımcı programı iletişim kutuları için aralığı yönergeleri**
 
 ### <a name="layout-details"></a>Düzen ayrıntıları
 
@@ -89,14 +88,14 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
  ![Denetimler arasındaki uzaklığı önerilen](../../extensibility/ux-guidelines/media/0801-d-controldistance.png "0801 d_ControlDistance")
 
- **Şekil 08.01-d: Denetimler arasındaki uzaklığı önerileri**
+ **Şekil 08.01-d: Denetimler arasındaki uzaklığı için öneriler**
 
 #### <a name="control-indentation"></a>Denetim girinti
  Denetimleri iç içe geçmiş, iç denetimleri denetimi yukarıdaki genellikle etiket sol kenarı ile yatay olarak hizalayın.
 
  ![İç içe geçmiş denetim hizalaması](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801 e_ControlAlign")
 
- **Şekil 08.01-e: İç içe geçmiş denetim hizalaması**
+ **Şekil 08.01-e: İç içe geçmiş denetim hizalama**
 
 #### <a name="control-width"></a>Denetim genişliği
  Bir metin kutusu veya benzer diğer denetimlerin genişliğini ortalama giriş alanı için daha uzun olmamalıdır. Ortalama İngilizce word beş karakterdir. Örneğin, bir uzun yol adı gerekli bir metin kutusu yatay düzeni sağlar, sürece olmalıdır çalışırken bir açılır platform adları yalnızca uzun girişini sağlayan bir uzunlukta olmalıdır.
@@ -122,7 +121,7 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
   ![Dikey Tamam ve İptal düğmeleri](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")
 
-  **Şekil 08.01-g: Yatay iç düğmeleriyle dikey Tamam/iptal**
+  **Şekil 08.01-g: Yatay iç dikey Tamam/iptal düğmesi**
 
 #### <a name="browse-button"></a>[Gözat...] Düğme
  **[Gözat...]**  izleyen bir metin kutusu düğmeleri nokta dahil olmak üzere, tam olarak "Gözat..." Yazım. Alanı sıkı veya birden fazla varsa **[Gözat...]**  ekrandaki düğmeye düğmeleri yalnızca üç nokta sınırlı.
@@ -147,11 +146,11 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 ### <a name="themed-dialog-layout-examples"></a>Temalı iletişim düzeni örnekleri
  ![Temalı iletişim düzeni](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")
 
- **Şekil 08.01-h: Temalı iletişim**
+ **Şekil 08.01-y: Temalı iletişim**
 
  ![Temalı iletişim boyutları](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801 i_ThemedDialogDimensions")
 
- **Şekil 08.01-ı: Temalı iletişim – boyutları**
+ **Şekil 08.01-i: Temalı iletişim – boyutları**
 
  ![Temalı iletişim kutusu yazı tipleri](../../extensibility/ux-guidelines/media/0801-j-themeddialogfonts.png "0801 j_ThemedDialogFonts")
 
@@ -159,7 +158,7 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
  ![Renk teması iletişim](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801 k_ThemedDialogColors")
 
- **Şekil 08.01-k: Temalı iletişim – renkleri**
+ **Şekil 08.01 kesi: Temalı iletişim – renkleri**
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Visual Studio için uygulama desenleri](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md) [denetimleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [iletişim kutuları (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)

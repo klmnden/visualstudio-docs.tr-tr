@@ -1,9 +1,6 @@
 ---
 title: 'Test alanı 8: Eklenti değiştirme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
@@ -14,22 +11,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec4bc16cea19a1d2eeea68d7d38797d8ea5b312
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e62885b117e8b5fe42b1078c6fb8fbb4b68bf03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986238"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Test Alanı 8: Eklenti Değiştirme
+# <a name="test-area-8-plug-in-switching"></a>Test alanı 8: Eklenti değiştirme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE), geçerli kaynak denetimi eklentisi değiştirmek için kullanıcı arabirimi (UI) sahiptir. Bu test alanı kullanmak için çözüm kaynak denetimi eklentisi, çekme işlemini test çalışmalarını sağlar.  
 
 ## <a name="command-menu-access"></a>Komut menü erişimi  
  Aşağıdaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır.  
 
--   Geçerli kaynak denetimi Eklentisi: **Araçları** -> **seçenekleri** -> **kaynak denetimi** -> **Eklenti Seçimi** .  
+-   Geçerli kaynak denetimi Eklentisi: **Araçlar** -> **seçenekleri** -> **kaynak denetimi** -> **Eklenti Seçimi**.  
 
--   Değişiklik kaynak denetim bağlantısı: **dosya** -> **kaynak denetimi** -> **kaynak denetimini Değiştir**...  
+-   Değişiklik kaynak denetim bağlantısı: **Dosya** -> **kaynak denetimi** -> **değiştirmek kaynak denetimi**...  
 
 ## <a name="common-expected-behavior"></a>Ortak beklenen davranışı  
  Visual Studio çıkmadan veya çözümü yeniden kaynak denetimi için bir çözüm eklentisi değiştirmek mümkündür. Ayrıca, geçerli kaynak denetimi eklentisi Bu çözüm yüklendiğinde bir çözüm tarafından kullanılan bir otomatik olarak değiştirir.  
@@ -37,7 +34,7 @@ ms.locfileid: "49920163"
 ## <a name="test-cases"></a>Test çalışmaları  
  Belirli test çalışmaları için eklenti geçiş test alanı aşağıda verilmiştir.  
 
-### <a name="case-8a-automatic-change"></a>Case 8a: otomatik değiştirme  
+### <a name="case-8a-automatic-change"></a>Büyük/küçük harf 8a: Otomatik değiştirme  
 
 #### <a name="expected-behavior"></a>Beklenen davranış  
  Bir kullanıcı, kaynak denetimi altında bir çözüm yüklediğinde, çözüm otomatik olarak yüklenir ve ilgili kaynak denetimi eklentisi geçerli olarak seçilir.  
@@ -47,7 +44,7 @@ ms.locfileid: "49920163"
 | - | - | - |
 | Otomatik kaynak denetimi eklentisini Değiştir | 1.  Geçerli olarak test altındaki eklenti seçin (**Araçları** -> **seçenekleri** -> **kaynak denetimi** -> **eklentisi Seçimi**.)<br />2.  Yeni bir proje oluşturun.<br />3.  Çözüm kaynak denetimine ekleyin.<br />4.  Başka bir eklentiyi seçin (örneğin, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Kaldırılırken çözüm istemi kabul edin.<br />6.  Diskten çözümü yeniden açın. | Çözüm açılır.<br /><br /> Geçerli kaynak denetimi eklentisi altında test eklentisidir. |
 
-### <a name="case-8b-solution-based-change"></a>Case 8b: Çözüm tabanlı Değiştir  
+### <a name="case-8b-solution-based-change"></a>Büyük/küçük harf 8b: Çözüm tabanlı Değiştir  
 
 #### <a name="expected-behavior"></a>Beklenen davranış  
  Çözüm değiştirilmesi, ilişkili kaynak denetimi eklentisi olabilir.  

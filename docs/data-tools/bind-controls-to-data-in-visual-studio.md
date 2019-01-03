@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e27f5ce9536e7128330ebe932709a9be408b7e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: a84fb954d0d632c217e9a4282f7c33fd6226d677
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987226"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere denetimler bağlama
 
@@ -43,7 +42,7 @@ Veri bağlama bağlamında Kullanıcı Arabiriminizin bağlı bellek verileri bi
 
 1. Kullanarak modeli oluşturma **varlık veri modeli** Sihirbazı'nı, ardından bu nesneleri tasarımcıya sürükleyebilirsiniz.
 
-2. LINQ to SQL sınıfları görünmez **veri kaynakları** penceresi. Ancak LINQ to SQL sınıflarını temel alan yeni bir nesne veri kaynağı ekleyin ve ardından bu nesneleri tasarımcıya verilere bağlı denetimler oluşturmak için sürükleyin. Daha fazla bilgi için [izlenecek yol: oluşturma LINQ to SQL sınıfları (O R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. LINQ to SQL sınıfları görünmez **veri kaynakları** penceresi. Ancak LINQ to SQL sınıflarını temel alan yeni bir nesne veri kaynağı ekleyin ve ardından bu nesneleri tasarımcıya verilere bağlı denetimler oluşturmak için sürükleyin. Daha fazla bilgi için [izlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>Veri Kaynakları penceresi
 

@@ -1,9 +1,6 @@
 ---
 title: FeatureProperty öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3dc58683d2cff7e6c25493924b63666c390cdffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991194"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty öğesi
-  SharePoint'e dağıtıldığında, sahip bir özellik bulunan özel bir özelliği temsil eder. Bir özellik dağıtıldıktan sonra kodunuzda özelliği erişebilirsiniz.  
+  SharePoint'te dağıtıldığında bir özellikle birlikte eklenen değer özel bir özelliği temsil eder. Bir özellik dağıtıldıktan sonra kodunuzdaki özellik erişebilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,7 +36,7 @@ ms.locfileid: "36325988"
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Key**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve özellik değerini almak için kullanılan anahtar. Her bir özellik özellik içinde benzersiz olduğu bir anahtara sahip olmalıdır.|  
+|**Key**|Gerekli **xs: String** özniteliği.<br /><br /> Depolamak ve özellik değerini almak için kullanılan anahtar. Her bir özellik, özelliğin benzersiz olan bir anahtar olması gerekir.|  
 |**Değer**|Gerekli **xs: String** özniteliği.<br /><br /> Özellik değeri.|  
   
 ### <a name="child-elements"></a>Alt öğeleri
@@ -49,7 +46,7 @@ ms.locfileid: "36325988"
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint için dağıtıldığında sahip bir özellik dahil olan özellik değerlerini koleksiyonunu temsil eder.|  
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint'te dağıtıldığında bir özellikle birlikte eklenen özellik değerleri koleksiyonunu temsil eder.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Özellik özellikleri hakkında daha fazla bilgi için bkz: [proje öğelerinde paketleme ve dağıtım bilgileri sağlama](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
@@ -59,12 +56,10 @@ ms.locfileid: "36325988"
 |||  
 |-|-|  
 |**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
-|**Şema adı**|SharePoint proje öğesi şeması|  
-|**Dosya doğrulama**|ProjectItemModelSchema.xsd|  
-|**Boş olamaz**|Hayır|  
+|**Şema adı**|SharePoint proje öğesi şema|  
+|**Doğrulama dosyası**|ProjectItemModelSchema.xsd|  
+|**Boş olabilir**|Hayır|  
   
 ## <a name="see-also"></a>Ayrıca bkz.
  [SharePoint proje öğesi şema başvurusu](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Proje öğelerinde paketleme ve dağıtım bilgileri sağlayın](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  
