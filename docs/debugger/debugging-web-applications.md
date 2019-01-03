@@ -1,8 +1,6 @@
 ---
 title: Web uygulamalarında hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923050"
 ---
 # <a name="debugging-web-applications"></a>Web Uygulamalarında Hata Ayıklama
 Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktadır.  
@@ -39,7 +37,7 @@ Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktad�
  Hata ayıklamayı etkinleştirmek için gereken adımları açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulamalar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında ve betikte hata ayıklama](../debugger/debugging-web-applications-and-script.md)   
+ [Web uygulamalarında ve betikte hata ayıklama](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [Visual Studio'da hata ayıklama](../debugger/index.md)  
  [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)

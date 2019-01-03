@@ -3,7 +3,6 @@ title: Visual Studio için Blend - kullanıcı Arabirimi oluşturma
 titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934511"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 
@@ -47,7 +46,7 @@ Kullanabileceğiniz **Araçları** uygulamanızdaki nesneleri oluşturup değiş
 |![Varlık araçları](../designers/media/b1_5.png)|**Varlık Araçları** erişim **varlıklar** paneli ve en son göstermek için kitaplıktan varlık kullanılır.|![Belirtme çizgisi E](../designers/media/b5_label_e.png)|**Metin denetimi**|
 |||![Belirtme çizgisi F](../designers/media/b5_label_f.png)|**Ortak Denetimler**|
 
-**Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+**Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="tour-of-the-assets-panel"></a>Varlıklar panelini turu
 
@@ -116,7 +115,7 @@ Bir nesnenin özelliklerini görüntüleme ve değiştirme için bu paneli kulla
 |![Belirtme çizgisi 16](../designers/media/b5_label_16.png)|**Gradyan kaydırıcı** yalnızca bir gradyan fırçası seçtiyseniz görünür.|
 |![Gelişmiş özellikleri göster](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Gelişmiş özellikleri göster** daha az yaygın olarak kullanılan özellikleri kategorilerini görüntüleyin.|
 
-**Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [özellikler panelini](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+**Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [özellikler panelini](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -2,7 +2,6 @@
 title: Sınıf Tasarımcısı hataları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
@@ -30,22 +29,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: cfafcedae225522ec71e0bc35854d827047af2fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33963639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901694"
 ---
 # <a name="class-designer-errors"></a>Sınıf Tasarımcısı hataları
 
-**Sınıf Tasarımcısı** böylece proje yapınızı değiştirerek veya projedeki kaynak dosyalarını neden olabilecek taşıyarak, kaynak dosyalarının konumunu izlemez **Sınıf Tasarımcısı** türü kaybetmesine, örneğin, ortak şekli bir typedef, temel sınıfları ve ilişki türleri kaynak türünü değiştirin. Hata gibi alabilirsiniz **Sınıf Tasarımcısı bu tür görüntüleyemiyor**. Hatayı gidermek için yeniden görüntülemek için sınıf diyagramı konumlandırılan veya değiştirilen kaynak kodunu sürükleyin.
+**Sınıf Tasarımcısı** böylece proje değiştirme ya da projeyi kaynak dosyaları açabilir taşıma, kaynak dosyalarının konumunu izlemez **Sınıf Tasarımcısı** türünün kaybetmesine gibi ortak olur typedef, temel sınıfları ve ilişki türleri kaynak türünü değiştirin. Gibi bir hata alabilirsiniz **Sınıf Tasarımcısı bu türü görüntüleyemiyor**. Hatayı gidermek için değiştirilmiş ya da yeni yerlerine kaynak kodu yeniden görüntülemek için sınıf diyagramına sürükleyin.
 
 ## <a name="resources"></a>Kaynaklar
 
-Aşağıdaki kaynakları diğer hataları ve Uyarıları ile Yardım bulabilirsiniz:
+Ortamındaki aşağıdaki kaynaklara diğer hatalar ve uyarılar konusunda Yardım bulabilirsiniz:
 
-- [Visual C++ kodu ile çalışma](working-with-visual-cpp-code.md) sorun giderme C++ sınıf diyagramında görüntüleme hakkında bilgi içerir.
+- [Visual C++ kodu ile çalışma](working-with-visual-cpp-code.md) sorun giderme bir sınıf diyagramında C++ görüntüleme hakkında bilgi içerir.
 - [Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?LinkId=160754) hakkında sorular için bir forum sağlar **Sınıf Tasarımcısı**.
 
 ## <a name="see-also"></a>Ayrıca bkz.

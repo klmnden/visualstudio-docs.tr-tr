@@ -2,7 +2,6 @@
 title: Bir çalışan işlemi bir kullanıcı hesabı altında Çalıştır | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893259"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl Yapılır: Çalışan İşlemi Kullanıcı Hesabı Altında Çalıştırma
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl Yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma
 Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] bir kullanıcı hesabı altında çalışan işlemi (aspnet_wp.exe veya w3wp.exe) aşağıdaki adımları izleyin.  
 
  > [!IMPORTANT]
@@ -78,7 +77,7 @@ Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[
   
     **Kullanıcı seç, bilgisayar veya Grup iletişim kutusunda** görünür.  
   
-10. Kullanıcı adını yazın **Seçilecek nesne adını girin** kutusuna ve ardından **Tamam**. Kullanıcı adı şu biçimde olmalıdır: Etkialanıadı\kullanıcıadı.  
+10. Kullanıcı adını yazın **Seçilecek nesne adını girin** kutusuna ve ardından **Tamam**. Kullanıcı adı şu biçimde olmalıdır: Etki alanı\kullanıcı adı.  
   
 11. İçinde **ASP.NET dosyaları için izin girdisi** iletişim kutusunda, kullanıcıya vermek **tam denetim**ve ardından **Tamam** kapatmak için **geçici ASP için giriş .NET dosyaları** iletişim kutusu.  
   
@@ -88,5 +87,4 @@ Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
-[ASP.NET hata ayıklama: Sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md)  
-  
+[ASP.NET hata ayıklaması: Sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md)  

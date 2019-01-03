@@ -1,8 +1,6 @@
 ---
 title: Yerel klasöre dağıtma
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854041"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio kullanarak yerel bir klasöre uygulama dağıtma
 
@@ -39,7 +37,7 @@ Kullanabileceğiniz **Yayımla** ASP.NET, ASP.NET Core, .NET Core ve Python uygu
 
 1. Bir yol girin veya seçin **Gözat** yerel klasörü belirtin.
 
-1. Seçin **yayımlama**. Visual Studio projeyi oluşturur ve belirtilen klasöre yayımlar. Proje özelliklerini **Yayımla** bir profili bölmesi görünür, Özet gösteriliyor.
+1. **Yayımla**’yı seçin. Visual Studio projeyi oluşturur ve belirtilen klasöre yayımlar. Proje özelliklerini **Yayımla** bir profili bölmesi görünür, Özet gösteriliyor.
 
     ![Yayımlama profili Özet gösteren özellik bölmesi](../deployment/media/quickstart-publish-folder-summary.png)
 

@@ -1,8 +1,7 @@
 ---
-title: 'Nasıl yapılır: 3B Arazi modeli oluşturma'
+title: 'Nasıl Yapılır: Model 3B Arazi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 65590bb387b2f752a11f60bae82891a8ea3a713f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902597"
 ---
-# <a name="how-to-model-3d-terrain"></a>Nasıl yapılır: 3B Arazi modeli oluşturma
+# <a name="how-to-model-3d-terrain"></a>Nasıl Yapılır: 3B arazi modeli oluşturma
 
 Bu makalede, 3B Arazi modeli oluşturmak için Model Düzenleyicisi'ni kullanma gösterilmektedir.
 
@@ -55,7 +54,7 @@ Arazi modeli tamamlanmıştır. İşte son modelin yeniden uygulanan Phong gölg
 
 ![3&#45;Arazi modeli gösteren D Sahne](../designers/media/digit-terrain-model.png)
 
-Bu Arazi modeli açıklanan gradyan gölgelendirici etkisini göstermek için kullanabileceğiniz [nasıl yapılır: geometri tabanlı gradyan gölgelendirici oluşturma](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Bu Arazi modeli açıklanan gradyan gölgelendirici etkisini göstermek için kullanabileceğiniz [nasıl yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

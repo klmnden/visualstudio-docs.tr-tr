@@ -2,7 +2,6 @@
 title: Visual C++ kod parçacıkları
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5069d1b92b9c4f73fdb8eca50eabce170f42cef1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937445"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ kod parçacıkları
 
@@ -32,7 +31,7 @@ Kod parçacığını eklemek için bir C++ kod dosyasını açın (*.cpp* veya *
 
 - İçinde **Düzenle / IntelliSense** menüsünde **kod parçacığı Ekle**
 
-- Kısayol tuşlarını kullanın: **Ctrl**+**K**+**X**
+- Kısayol tuşlarını kullanın: **CTRL**+**K**+**X**
 
 Sürümünden itibaren seçenekleri listesini görmelisiniz **#if**. Seçtiğinizde, **#if**, dosyaya eklenen aşağıdaki kodu görmeniz gerekir:
 
@@ -52,7 +51,7 @@ Seçili kod kapsamak için kod parçacığı kullanmak için bir satır (veya bi
 
 - Gelen **Düzenle** > **IntelliSense** menüsünde **Surround With**
 
-- Klavyeyi kullanarak, tuşuna basın: **Ctrl**+**K**+**S**
+- Klavyeyi kullanarak, tuşuna basın: **CTRL**+**K**+**S**
 
 Seçin **#if**. Bunun gibi bir şey görmeniz gerekir:
 

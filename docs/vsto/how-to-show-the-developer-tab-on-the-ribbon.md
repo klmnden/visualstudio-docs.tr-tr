@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme'
-ms.custom: ''
+title: 'Nasıl Yapılır: Şeritte Geliştirici sekmesini gösterme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906806"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl Yapılır: Şeritte Geliştirici sekmesini gösterme
   Erişim için **Geliştirici** sekmesini bir Office uygulamasının Şerit üzerinde varsayılan olarak görünmez sekmenin gösterileceği şekilde yapılandırmanız gerekir. Örneğin, eklemek istediğiniz sekmenin Göster gerekir bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word için belge düzeyi özelleştirmeyi için.  
   
 > [!NOTE]  
@@ -69,5 +66,3 @@ ms.locfileid: "51349630"
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)  
-  
-  

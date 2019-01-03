@@ -1,9 +1,6 @@
 ---
-title: 'Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları'
-ms.custom: ''
+title: 'Nasıl Yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845908"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Nasıl yapılır: birincil birlikte çalışma derlemeleriyle hedef Office uygulamaları
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Nasıl Yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme
   Yeni bir Office projesi oluşturduğunuzda, Visual Studio, projenizi yaratmanız için gerekli olan Microsoft Office birincil birlikte çalışma derlemeleri (PIA) başvurular otomatik olarak ekler. Aşağıdaki senaryolarda diğer pıa'lara başvuru eklemeniz gerekir:  
   
 - Projenizde diğer Microsoft Office uygulamasının özelliklerini kullanmak istiyorsunuz. Örneğin, Microsoft Office Word için Microsoft Office Excel özelliklerinin bir projede kullanmak isteyebilirsiniz.  
@@ -58,6 +55,4 @@ ms.locfileid: "49863756"
  [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)   
  [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)   
  [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)   
- [Nasıl yapılır: yükleme Office birincil birlikte çalışma derlemeleri](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  

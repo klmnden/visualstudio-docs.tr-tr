@@ -1,8 +1,6 @@
 ---
 title: Idiastackwalkframe::searchforreturnaddress | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34aaf4b7136bb81086ad095fa9a0af2167ebbd30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a78d79c84c24b20a37b0ee9b580447e1153bfa98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926853"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
 Belirtilen yığın çerçevesinin yakın işlevi dönüş adresi arar.  
@@ -27,7 +25,7 @@ Belirtilen yığın çerçevesinin yakın işlevi dönüş adresi arar.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT searchForReturnAddress (   
+HRESULT searchForReturnAddress (   
    IDiaFrameData* frame,  
    ULONGLONG*     returnAddress  
 );  

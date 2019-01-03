@@ -2,7 +2,6 @@
 title: Güvenlik
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e9cb7e9400253713caab17da04c44eb11f5ed1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 74643454c4e96f5f4c1faa98b26fa1f26bd2790b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904636"
 ---
 # <a name="secure-applications"></a>Uygulamaları güvenli hale getirme
 
@@ -26,23 +25,23 @@ Uygulama geliştirme sürecinizde, tasarımdan geliştirmeye kadar her yönüyle
 
 Etkin bir şekilde güvenli uygulamalar geliştirmenize yardımcı olması için, geliştirmekte olduğunuz platformların güvenlik kavramları ve güvenlik özellikleri hakkında temel bilgiye sahip olmanız gerekir. Güvenli kodlama tekniklerini de anlamanız gerekir.
 
-## <a name="code-for-security"></a>Kod güvenliği
+## <a name="code-for-security"></a>Güvenlik kodu
 
-Güvenlik açıklarına neden çoğu kodlama hataları kullanıcı girişi ile çalışırken, geliştiricilerin yanlış varsayımlar olun çünkü ya da, bunlar geliştirirken platform tam olarak anlamadığınız nedeniyle oluşur.
+Bu güvenlik açıklarına neden olan çoğu kodlama hatası, geliştiricilerin kullanıcı girdisiyle çalışırken yanlış varsayımlarda bulunmaları olun veya bulunmadığından, kendisi için geliştirmekte olduğunuz platform tam olarak anlamadığınız oluşur.
 
-- [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines) .NET kodu güvenlik sistemi ile çalışmak için tasarlanmış farklı yolları açıklanmaktadır.
-- [C++ için en iyi yöntemler](/cpp/top/security-best-practices-for-cpp) C++ geliştiricileri için güvenlik araçları ve yöntemleri hakkında bilgi içerir.
+- [Güvenli kodlama yönergeleri](/dotnet/standard/security/secure-coding-guidelines) .NET kodu güvenlik sistemi ile çalışacak şekilde tasarlanmıştır farklı yollarını açıklar.
+- [C++ için en iyi güvenlik uygulamaları](/cpp/top/security-best-practices-for-cpp) C++ geliştiricilerine yönelik güvenlik araçları ve uygulamaları hakkında bilgi içerir.
 
-## <a name="build-for-security"></a>Güvenlik için derleme
+## <a name="build-for-security"></a>Derleme için güvenlik
 
-Güvenlik de önemli bir yapı işlemine konudur. Bazı ek adımlar, dağıtılmış bir uygulamayı güvenliğini artırmak ve yetkisiz ters mühendislik, yanıltma veya diğer saldırılara önlemeye yardımcı olur:
+Güvenliği, ayrıca yapı işleminde önemli bir husus vardır. Bazı ek adımlar, dağıtılmış bir uygulamayı güvenliğini artırmak ve yetkisiz tersine mühendislik, yanıltma veya diğer saldırıları önlemeye yardımcı olmak:
 
 - [Dotfuscator](dotfuscator/index.md) ücretsizdir ve .NET derlemelerini yetkisiz hata ayıklama gibi ters mühendislik ve yetkisiz kullanıma karşı korunmasına yardımcı olur.
-- [Tanımlayıcı ad imzası](managing-assembly-and-manifest-signing.md) benzersiz olarak yazılım bileşenlerini belirlemek ve adına kimlik sahtekarlığı önlemek için kullanılabilir.
+- [Tanımlayıcı ad imzalama](managing-assembly-and-manifest-signing.md) benzersiz ad sahtekarlığını önlemeye ve yazılım bileşenlerini tanımlamak için kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [.NET Framework güvenliği](/dotnet/standard/security/index)
+- [.NET Framework'te güvenlik](/dotnet/standard/security/index)
 - [Azure güvenlik](/azure/security/)
 - [Windows 10 Mobile Güvenlik Kılavuzu](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Apache Cordova platform güvenlik özellikleri](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

@@ -2,7 +2,6 @@
 title: Gölgelendiricilerle Çalışma
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5371483661702e77f9639aae457a47910eda8101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850615"
 ---
 # <a name="work-with-shaders"></a>Gölgelendiricilerle çalışma
 
 Visual Studio'da tasarım özel gölgelendirici efektleri için grafik tabanlı gölgelendirici Tasarımcısı'nı kullanabilirsiniz. Bu gölgelendiricileri DirectX tabanlı oyunlarda veya uygulamalarda de kullanabilirsiniz.
 
-## <a name="shaders"></a>Gölgelendiricileri
+## <a name="shaders"></a>Gölgelendiriciler
 
 A *gölgelendirici* grafik hesaplamalar yapan bir bilgisayar program — dönüşümleri köşe veya piksel renklendirme gibi — ve genellikle CPU yerine bir grafik işlem birimi (GPU) çalıştırır. Çoğu geleneksel, sabit işlevi grafik ardışık düzen aşamaları artık gölgelendirici programlar tarafından gerçekleştirildiğinden, uygulamanızın ihtiyaçlarına özel bir işlem hattı oluşturmak için kullanabilirsiniz.
 

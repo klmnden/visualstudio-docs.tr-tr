@@ -1,9 +1,6 @@
 ---
 title: 'İzlenecek yol: Özel bir eylem proje öğesi öğe şablonu ile oluşturma, bölüm 1 | Microsoft Docs'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b07cfe78c7139d754e199a1f96974924b55531a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e3cae6558bdce8206340f10d570a620ba0fb1972
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932330"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>İzlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma
   Visual Studio'da SharePoint Proje sistemi kendi proje öğesi türleri oluşturarak genişletebilirsiniz. Bu kılavuzda, bir SharePoint sitesinde özel eylem oluşturmak için bir SharePoint projesine eklenen bir proje öğesi oluşturur. Bir menü öğesi özel eylemi ekler **Site eylemleri** SharePoint sitesinin menüsü.

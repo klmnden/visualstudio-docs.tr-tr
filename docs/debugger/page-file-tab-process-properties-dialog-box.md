@@ -1,8 +1,6 @@
 ---
 title: Sayfa dosyası sekmesi, işlem özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -12,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624be76badf8d57b060198c2ee910ead17b5efcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ded332b68ee4ae4d628bc272b563e973da6154e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913349"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Sayfa Dosyası Sekmesi, İşlem Özellikleri İletişim Kutusu
-Kullanım **sayfa dosyası** sekmesinde bir işlemin disk belleği dosyasını inceleyin. Görüntülenecek [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md), odağı taşımak bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Ağaçta herhangi bir işlem düğümü seçin ve ardından **özellikleri** gelen **Görünüm** menüsü.  
+Kullanım **sayfa dosyası** işleminin disk belleği dosyasını incelemek için sekmesinde. Görüntülenecek [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md), odağı Taşı bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Herhangi bir işlem düğümü ağacında seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
   
- Aşağıdaki ayarlar kullanılabilir **sayfa dosyası** sekmesi:  
+ Aşağıdaki ayarlar kullanılabilir **sayfa dosyası** sekmesinde:  
   
 |Giriş|Açıklama|  
 |-----------|-----------------|  
-|**Disk belleği bayt**|Bu işlem disk belleği dosyasındaki kullanarak sayfa geçerli sayısı. Disk belleği dosyası sayfa işlem tarafından kullanılan ancak diğer dosyalar bulunmayan veri depolar. Disk belleği dosyası tüm işlemler tarafından kullanılan ve diğer işlemler çalışırken disk belleği dosyası alanı yetersizliği hatalara neden olabilir.|  
-|**En yüksek disk belleği dosyası bayt**|Bu işlem disk belleği dosyasında kullanılan sayfa maksimum sayısı.|  
-|**Sayfa hataları**|Bu işlemde çalışan iş parçacıkları tarafından sayfa hatalarının sayısı. Bir iş parçacığı çalışma ana bellekte kümesinde olmayan bir sanal bellek sayfasına başvurduğunda bir sayfa hatası oluşur. Bekleme listede ise, bu nedenle, sayfanın diskten alınmayacak ve bu nedenle ana bellek içinde zaten veya bunu bir başkası tarafından kullanılıp kullanılmadığını işlem sayfası paylaşılan ile.|
+|**Sayfa dosyası baytları**|Bu işlem, disk belleği dosyasını kullanarak sayfa geçerli sayısı. Disk belleği dosyası, sayfa işlemi tarafından kullanılan, ancak diğer dosyaları bulunmayan veri depolar. Disk belleği dosyası tüm işlemler tarafından kullanılır ve diğer işlemleri çalışırken yetersiz disk belleği dosyasında alan, hatalara neden olabilir.|  
+|**Tepedeki sayfa dosyası baytları**|Bu işlem disk belleği dosyasında kullanılan sayfa sayısı.|  
+|**Sayfa hataları**|Bu işlemde çalışan iş parçacığı tarafından sayfa hataları sayısı. Bir iş parçacığı çalışma ana belleğe kümesinde olmayan bir sanal bellek sayfa başvurduğunda bir sayfa hatası oluşur. Bekleme listesinde ise, bu nedenle, sayfa diskten alınmayacak ve bu nedenle zaten bellekte ana ya da bunu bir başkası tarafından kullanılıp kullanılmadığını işlemek sayfa paylaşılan ile.|

@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ae6e3aaf204b54e413a76a8d07e0391a214b007d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900736"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da test ayarlarını kullanarak ağ öykünmesini yapılandırma
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Test ayarlarını kullanarak ağ öykünmesini yapılandırma
 
 Uygulamanızı Visual Studio'dan farklı ağ ortamlarında test etmek için tanılama veri bağdaştırıcısını yapılandırabilirsiniz. Ayrıca, testlerinizi çalıştırdığınızda bir yapay ağ yükünü veya performans sorununu test etmek için de yapılandırılabilir.
 
@@ -80,7 +79,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarla
 
     -   **Microsoft Visual Studio Test Aracısı ile yüklenmiş ağ öykünme sürücüsü:** Microsoft Visual Studio Test Aracısı hem uzak makinelerde hem de yerel makinenizde kullanılabilir. Visual Studio Test aracısı yüklediğinizde, yükleme işlemi ağ öykünmesi sürücüsünü ağ kartınıza bağlayan bir yapılandırma adımı içerir. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Microsoft Visual Studio Test Professional ile yüklenmiş ağ öykünme sürücüsü:** ağ öykünmesini ilk kez kullanırken, ağ öykünme sürücüsünü bir ağ kartına bağlamanız istenir.
+    -   **Microsoft Visual Studio Test Professional ile yüklenmiş ağ öykünme sürücüsü:** Ağ öykünmesini ilk kez kullanırken, ağ öykünme sürücüsünü bir ağ kartına bağlamanız istenir.
 
     > [!TIP]
     > Ayrıca ağ öykünmesi sürücüsü komut satırından yerel makinenizde aşağıdaki komutu kullanarak Visual Studio test aracısı yüklemeden yükleyebilirsiniz: **VSTestConfig NETWORKEMULATION/Install**

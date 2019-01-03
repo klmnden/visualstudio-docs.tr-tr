@@ -1,9 +1,6 @@
 ---
-title: Aracı Windows kayıt defterinde | Microsoft Docs
-ms.custom: ''
+title: Windows kayıt defterinde aracı | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234a3f50865e77f2c6b5a4057e6766b26d7ff521
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f49a7d4298dbd387a2fb6a91d5030002eaec8a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956498"
 ---
-# <a name="tool-windows-in-the-registry"></a>Kayıt defterinde araç pencereleri
-Araç pencereleri sağlamak VSPackages kaydetmeniz gerekir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] olarak araç penceresi sağlayıcıları. Varsayılan olarak bunu Visual Studio Paketi şablonu kullanılarak oluşturulan araç pencereleri. Araç penceresi sağlayıcıları varsayılan aracı pencere boyutunu ve konumunu, aracı pencere bölmesine ve yerleştirme stilini hizmet veren penceresinin GUID gibi görünürlük öznitelikleri belirtin sistem kayıt defteri anahtarlarının vardır.  
+# <a name="tool-windows-in-the-registry"></a>Aracı Windows kayıt defteri
+Araç pencereleri sağlayan VSPackages kaydetmeniz gerekir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gibi araç penceresi sağlayıcıları. Varsayılan olarak bunu Visual Studio Paketi şablonu kullanılarak oluşturulan araç pencereleri. Araç penceresi sağlayıcıları gibi varsayılan araç penceresi boyut ve konum, GUID araç penceresi bölmesi ve yerleştirme stilini olarak hizmet veren penceresinin görünürlük özniteliklerini belirtin sistem kayıt defteri anahtarları vardır.  
   
- Geliştirme sırasında öznitelikleri kaynak koduna ekleyerek ve ardından sonuç derlemesinde RegPkg.exe yardımcı programını çalıştırarak aracı windows yönetilen aracı penceresi sağlayıcılarını kaydedin. Daha fazla bilgi için bkz: [araç penceresi kaydetme](../extensibility/registering-a-tool-window.md).  
+ Geliştirme sırasında kaynak koduna öznitelikleri ekleyerek ve ardından sonuç derlemesinde RegPkg.exe yardımcı programı çalıştırmaya araç pencereleri yönetilen aracı penceresi sağlayıcılarını kaydedin. Daha fazla bilgi için [araç penceresi kaydetme](../extensibility/registering-a-tool-window.md).  
   
-## <a name="registering-unmanaged-tool-window-providers"></a>Yönetilmeyen araç penceresi sağlayıcıların kaydedilmesi  
- Yönetilmeyen araç penceresi sağlayıcıları kaydetmeniz gerekir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem kayıt defteri ToolWindows bölümünde. Aşağıdaki .reg dosyasını parça nasıl dinamik araç penceresi kayıtlı gösterir:  
+## <a name="registering-unmanaged-tool-window-providers"></a>Yönetilmeyen araç penceresi sağlayıcılar kaydediliyor  
+ Yönetilmeyen araç penceresi sağlayıcıları ile kaydetmeniz gerekir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem kayıt defterine ToolWindows bölümünde. Dinamik araç penceresini nasıl kaydedilmiş olabilir aşağıdaki .reg dosyasını parçası gösterir:  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\<version number>\ToolWindows\{f0e1e9a1-9860-484d-ad5d-367d79aabf55}]  
@@ -39,9 +36,9 @@ Araç pencereleri sağlamak VSPackages kaydetmeniz gerekir [!INCLUDE[vsprvs](../
 "{f1536ef8-92ec-443c-9ed7-fdadf150da82}"=dword:00000000  
 ```  
   
- Yukarıdaki örnekte ilk anahtarında, sürüm numarası sürümüdür [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]7.1 veya 8.0, {f0e1e9a1-9860-484d-ad5d-367d79aabf55} alt aracı pencere bölmesine (DynamicWindowPane) ve varsayılan değeri {GUID gibi 01069cdd-95ce-4620-ac21-ddff6c57f012} araç penceresi sağlama VSPackage GUID'dir. Float ve DontForceCreate alt anahtarlarının açıklaması için bkz: [araç penceresi ekran yapılandırması](../extensibility/tool-window-display-configuration.md).  
+ Yukarıdaki örnekte ilk anahtarında, sürüm numarası sürümüdür [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]7.1 veya 8.0, {f0e1e9a1-9860-484d-ad5d-367d79aabf55} alt araç penceresi bölmesi (DynamicWindowPane) ve varsayılan değer {GUID gibi 01069cdd-95ce-4620-ac21-ddff6c57f012} sağlayan araç penceresi VSPackage GUID'dir. Kayan ve DontForceCreate anahtarlarını açıklaması için bkz: [araç penceresi ekran yapılandırması](../extensibility/tool-window-display-configuration.md).  
   
- İkinci isteğe bağlı anahtar ToolWindows\Visibility, görünür duruma getirilmek üzere araç penceresi gerektiren komutlar GUID'lerini belirtir. Bu durumda, belirtilen hiçbir komut vardır. Daha fazla bilgi için bkz: [araç penceresi ekran yapılandırması](../extensibility/tool-window-display-configuration.md).  
+ İkinci isteğe bağlı anahtar ToolWindows\Visibility, görünür hale sağlayan araç penceresi gerektiren komutlarının GUID'leri belirtir. Bu durumda, belirtilen herhangi bir komut vardır. Daha fazla bilgi için [araç penceresi ekran yapılandırması](../extensibility/tool-window-display-configuration.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackage’lar](../extensibility/internals/vspackages.md)

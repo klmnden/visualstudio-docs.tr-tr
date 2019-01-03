@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenEx | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5304c77dd772a1aa74b90d89df7eb73361ab7561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7014bf0b42e9fcaab313c6b89d0caf1f1678a297
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928717"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Alt simge alır. Program üzerinde iyileştirme ile derlenmişse döndürülen yerel semboller dinamik aralık bilgiler içerir.  
@@ -27,7 +25,7 @@ Alt simge alır. Program üzerinde iyileştirme ile derlenmişse döndürülen y
 ## <a name="syntax"></a>Sözdizimi  
   
 ```C++  
-HRESULT findChildrenEx (   
+HRESULT findChildrenEx (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -55,7 +53,7 @@ HRESULT findChildrenEx (
  Bu yöntem genişletilmiş sürümüdür [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Dia2.h  
+ Üst bilgi: dia2.h  
   
  Kitaplık: diaguids.lib  
   

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio için Düzen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898758"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio düzeni
 Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), bu izleme standart iletişim kutuları unthemed olduğu [Windows Masaüstü iletişim düzeni ilkeleri](/windows/desktop/uxguide/win-dialog-box). Visual Studio kullanıcı arabirimini yenilemek hareket ettikçe daha belirgin iletişim kutularının bunları olarak ürün tanımlama deneyimler oluşturur, yeni bir tasarım vardır. Bunlar [temalı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) konulu bir görünüme sahip.  
@@ -38,11 +35,11 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
   
  ![Etiketleri yukarıda denetimleri için iletişim aralığı](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **Şekil 08.01-a: yönergeleri denetimleri yukarıda etiketlerle yardımcı programı iletişim kutuları için Boşluklandırma**  
+ **Şekil 08.01-a: Denetimleri yukarıda etiketlerle yardımcı programı iletişim kutuları için aralığı yönergeleri**  
   
  ![Denetimleri solundaki etiketlerin iletişim aralığı](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **Şekil 08.01-b: yönergeleri denetimleri solundaki etiketlerle yardımcı programı iletişim kutuları için Boşluklandırma**  
+ **Şekil 08.01-b: Denetimleri solundaki etiketlerle yardımcı programı iletişim kutuları için aralığı yönergeleri**  
   
 ### <a name="layout-details"></a>Düzen ayrıntıları  
   
@@ -85,14 +82,14 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
   
  ![Denetimler arasındaki uzaklığı önerilen](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **Şekil 08.01-d: Denetimler arasındaki uzaklığı önerileri**  
+ **Şekil 08.01-d: Denetimler arasındaki uzaklığı için öneriler**  
   
 #### <a name="control-indentation"></a>Denetim girinti  
  Denetimleri iç içe geçmiş, iç denetimleri denetimi yukarıdaki genellikle etiket sol kenarı ile yatay olarak hizalayın.  
   
  ![İç içe geçmiş denetim hizalaması](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **Şekil 08.01-e: İç içe geçmiş denetim hizalaması**  
+ **Şekil 08.01-e: İç içe geçmiş denetim hizalama**  
   
 #### <a name="control-width"></a>Denetim genişliği  
  Bir metin kutusu veya benzer diğer denetimlerin genişliğini ortalama giriş alanı için daha uzun olmamalıdır. Ortalama İngilizce word beş karakterdir. Örneğin, bir uzun yol adı gerekli bir metin kutusu yatay düzeni sağlar, sürece olmalıdır çalışırken bir açılır platform adları yalnızca uzun girişini sağlayan bir uzunlukta olmalıdır.  
@@ -118,7 +115,7 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
   
   ![Dikey Tamam ve İptal düğmeleri](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
-  **Şekil 08.01-g: Yatay iç düğmeleriyle dikey Tamam/iptal**  
+  **Şekil 08.01-g: Yatay iç dikey Tamam/iptal düğmesi**  
   
 #### <a name="browse-button"></a>[Gözat...] Düğme  
  **[Gözat...]**  izleyen bir metin kutusu düğmeleri nokta dahil olmak üzere, tam olarak "Gözat..." Yazım. Alanı sıkı veya birden fazla varsa **[Gözat...]**  ekrandaki düğmeye düğmeleri yalnızca üç nokta sınırlı.  
@@ -143,11 +140,11 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 ### <a name="themed-dialog-layout-examples"></a>Temalı iletişim düzeni örnekleri  
  ![Temalı iletişim düzeni](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")  
   
- **Şekil 08.01-h: Temalı iletişim**  
+ **Şekil 08.01-y: Temalı iletişim**  
   
  ![Temalı iletişim boyutları](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")  
   
- **Şekil 08.01-ı: Temalı iletişim - boyutları**  
+ **Şekil 08.01-i: Temalı iletişim - boyutları**  
   
  ![Temalı iletişim kutusu yazı tipleri](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")  
   
@@ -155,7 +152,7 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
   
  ![Renk teması iletişim](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
- **Şekil 08.01-k: Temalı iletişim - renkleri**  
+ **Şekil 08.01 kesi: Temalı iletişim - renkleri**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio için uygulama desenleri](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

@@ -1,8 +1,6 @@
 ---
-title: HTML ve CSS örnek kodda hata ayıklama | Microsoft Docs
-ms.custom: ''
+title: HTML ve CSS örnek kod hatalarını ayıklama | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947562"
 ---
-# <a name="debug-html-and-css-sample-code"></a>HTML ve CSS örnek kodda hata ayıklama
+# <a name="debug-html-and-css-sample-code"></a>HTML ve CSS örnek kod hatalarını ayıklama
   
- Bu konudaki kodu örnek dosyası [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md). Hızlı başlangıcı tasarım gereği mevcut hataları bu kodu sürümünde düzeltilmiştir.  
+ Örnek dosyası için bu konudaki koddur [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md). Bu hızlı başlangıçta tasarım gereği mevcut hataları kodun bu sürümünde düzeltilen.  
   
-## <a name="sample-code"></a>Örnek kod  
- Aşağıdaki HTML kodu kullanılıyor \<gövde > hızlı başlangıç etiketinde.  
+## <a name="sample-code"></a>Örnek Kod  
+ Aşağıdaki HTML kodu kullanılıyor \<gövdesi > Hızlı Başlangıç etiketi.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -41,7 +39,7 @@ ms.locfileid: "31456799"
 </div>  
 ```  
   
- Aşağıdaki CSS default.css için yapılan eklemeler gösterir.  
+ Aşağıdaki CSS default.css için yapılan eklemeleri gösterir.  
   
 ```css  
 #fView {  
@@ -51,7 +49,7 @@ ms.locfileid: "31456799"
 }  
 ```  
   
- Aşağıdaki kod örneğinde default.js tam JavaScript kodu gösterir. Bu kodun WinJS ad alanlarına başvurular şablonun default.html dosyasında yer alır.  
+ Aşağıdaki kod örneği, tüm JavaScript kod içinde default.js gösterir. WinJS ad alanları için bu kod şablonun default.html dosyasındaki başvurusudur.  
   
 ```javascript  
 (function () {  
@@ -103,4 +101,4 @@ ms.locfileid: "31456799"
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlı Başlangıç: HTML ve CSS hata ayıklama](../debugger/quickstart-debug-html-and-css.md)
+ [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)

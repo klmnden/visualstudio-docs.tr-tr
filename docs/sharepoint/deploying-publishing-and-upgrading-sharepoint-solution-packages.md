@@ -1,16 +1,11 @@
 ---
-title: Dağıtma, yayımlama ve SharePoint çözüm paketlerini yükseltme | Microsoft Docs
-ms.custom: ''
+title: Yükseltme SharePoint çözüm paketlerini dağıtma ve yayımlama | Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SharePointProjectPropertyTab
 - VS.SharePointTools.Project.Publishing
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,53 +16,52 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17578fbfb58d354f06e91c78f067d228b92860fe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8bef002d1d32abf4f97a63f284545cbaa6eee403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853465"
 ---
-# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Dağıtma, yayımlama ve SharePoint çözüm paketlerini yükseltme
-  Visual Studio'da SharePoint çözüm geliştirmek sonra kendi paketi (.wsp) dosyasını yerel bir SharePoint sunucusuna dağıtma veya bir uzak veya yerel SharePoint sunucuya yayımlayın. Dosyaları dağıtırsanız, paket dosyalarını (.wsp) nasıl dağıtıldığını özelleştirebilirsiniz.  
+# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>SharePoint çözüm paketleri yükseltme dağıtma ve yayımlama
+  Bir SharePoint çözümünü Visual Studio'da geliştirdiğiniz sonra paket (.wsp) dosyası yerel SharePoint sunucusuna dağıtın veya bir uzak veya yerel SharePoint sunucusuna yayımlama. Dosyaları dağıtırsanız, paket dosyaları (.wsp) nasıl dağıtılacağını özelleştirebilirsiniz.  
   
 > [!NOTE]  
->  Şu anda, yalnızca korumalı çözümler uzak SharePoint sunucularına yayımlanabilir. Daha fazla bilgi için bkz: [Korumalı çözüm değerlendirmeleri](../sharepoint/sandboxed-solution-considerations.md).  
+>  Şu anda yalnızca korumalı çözümler için Uzak SharePoint sunucularını yayımlanabilir. Daha fazla bilgi için [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).  
   
 ## <a name="deploy-publish-and-upgrade"></a>Dağıtma, yayımlama ve yükseltme
- *Dağıtma* Visual Studio'da SharePoint projeden yerel ana bilgisayara yerleşik bir SharePoint çözüm dosyasını kopyalamak için başvuruyor. Dağıtılan bir çözümde dağıtımdan sonra çözüm etkinleştirilirken Internet Information Services (IIS) havuzu geri dönüştürme gibi dağıtım adımları yapılandırmak ve benzeri. Dağıtmak için kullandığınız **dağıtma** komutunu **yapı** menüsü. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) ve [nasıl yapılır: dağıtma ve bir SharePoint çözümünü yerel SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+ *Dağıtımı* bir SharePoint Proje Visual Studio'da bir yerel ana bilgisayarı için oluşturulmuş bir SharePoint çözüm dosyası kopyalama işlemini ifade eder. Dağıtılmış bir çözümde dağıtımdan sonra çözümün etkinleştirilmesi Internet Information Services (IIS) havuzu geri dönüştürülüyor gibi dağıtım adımları, yapılandırma ve VS. Dağıtmak için **Dağıt** komutunu **derleme** menüsü. Daha fazla bilgi için [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) ve [nasıl yapılır: Dağıtma ve bir SharePoint çözümünü yerel bir SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- *Yayımlama* uzak bir SharePoint korumalı bir SharePoint çözüm dosyasını karşıya yükleme için başvuruyor site; diğer bir deyişle, başka bir sistem üzerinde bulunan bir site. Bir SharePoint Korumalı çözüm dosya yerel bir SharePoint sitesine yayımlayabilirsiniz ancak yayımlanan site yerel veya uzak olup olmadığına bakılmaksızın, kendi dağıtım adımları yapılandıramazsınız.  
+ *Yayımlama* gelir için uzak bir SharePoint korumalı bir SharePoint çözüm dosyası site; diğer bir deyişle, başka bir sistemde bulunan bir site. SharePoint Korumalı çözüm dosyası yerel bir SharePoint sitesinde yayımlayabilirsiniz ancak yayımlanan site yerel veya uzak olup bağımsız olarak, dağıtım adımlarını yapılandıramazsınız.  
   
- *Yükseltme* var olan uzaktan veya yerel olarak yayımlanan SharePoint çözüm güncelleştirmeye başvuruyor. Visual Studio'da SharePoint çözüm için herhangi bir değişiklik yapıldıktan sonra çözümü yeniden yayımlamanız çözümün paket dosyası adı değiştirin ve sonra başarıyla yeniden yayımlar çözümünü Yükselt. Yerel olarak yayımlanmış bir çözüm yeniden yayımlarsanız, varolan çözüm dosyasını üzerine yazabilirsiniz.  
+ *Yükseltme* var olan uzaktan veya yerel olarak yayımlanmış SharePoint çözüm güncelleştirmeye ifade eder. Visual Studio'da SharePoint çözüm için herhangi bir değişiklik yapıldıktan sonra çözümü yeniden yayımlamanız çözümün paketi dosya adını değiştirin ve sonra başarıyla yeniden yayımlar ardından çözüm yükseltin. Yerel olarak yayımlanmış bir çözüm yeniden yayımlarsanız, var olan çözüm dosyası geçersiz kılabilirsiniz.  
   
-## <a name="deploy-packages"></a>Paketlerini dağıtma
- Geliştirme bilgisayarınızda test ve hata ayıklama için SharePoint sunucusuna paket dosyalarını dağıtabilirsiniz. Seçerek başka bir bilgisayara yüklemek için bir paket dosyası da oluşturabilirsiniz **dosya sistemi Yayımla** seçenek düğmesini **Yayımla** iletişim kutusu. Paket oluşturulur ve belirtilen yerel dosya yolu kopyalanır. Bir SharePoint çözümünü yerel sunucuya dağıtmak için kullandığınız **dağıtma** komutunu **yapı** menüsü. Daha fazla bilgi için bkz: [nasıl yapılır: dağıtma ve bir SharePoint çözümünü yerel bir SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+## <a name="deploy-packages"></a>Paketleri Dağıt
+ Paket dosyaları, test ve hata ayıklama için geliştirme bilgisayarınızda SharePoint sunucusuna dağıtabilirsiniz. Başka bir bilgisayarda seçerek kurabileceğiniz bir paket dosyası da oluşturabilirsiniz **dosya sistemi Yayımla** seçenek düğmesini **Yayımla** iletişim kutusu. Paket oluşturulur ve belirtilen yerel dosya yoluna kopyalanır. Bir SharePoint çözümünü yerel sunucuya dağıtmak için kullanın **Dağıt** komutunu **derleme** menüsü. Daha fazla bilgi için [nasıl yapılır: Dağıtma ve bir SharePoint çözümünü yerel bir SharePoint sitesi için Yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- Bir listesi tanımını dağıtma, olay alıcı eklemek ve özellik Tasarımcısı ve paket tasarımcısını kullanmak öğrenmek için bkz: [izlenecek yol: Proje Görev listesi tanımını dağıtma](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
+ Listesi tanımını dağıtma, bir olay alıcısı Ekle ve özellik Tasarımcısı ve paket Tasarımcısı'nı kullanma hakkında bilgi edinmek için [izlenecek yol: Proje Görev listesi tanımını dağıtma](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
   
-## <a name="customize-the-deployment-process"></a>Dağıtım işlemi özelleştirme
- Aşağıdaki tabloda, hata ayıklama ve bir SharePoint çözümünü dağıtırken kullanabileceğiniz iki dağıtım yapılandırması gösterilmektedir.  
+## <a name="customize-the-deployment-process"></a>Dağıtım işlemini özelleştirme
+ Aşağıdaki tabloda iki dağıtım yapılandırması hata ayıklama ve bir SharePoint çözümünü dağıtırken kullanabileceğiniz kullanabileceğiniz gösterilmektedir.  
   
 |Dağıtım Yapılandırması|Açıklama|  
 |------------------------------|-----------------|  
-|Varsayılan|Varsayılan dağıtım yapılandırması. Aşağıdaki dağıtım adımlar gerçekleştirilir:<br /><br /> 1.  Dağıtım öncesi komutunu çalıştırın.<br />2.  IIS uygulama havuzu geri dönüşüm.<br />3.  Çözümünü ayıkla.<br />4.  Çözümü ekleyin.<br />5.  Özellikleri etkinleştirin.<br />6.  Dağıtım sonrası komutunu çalıştırın.<br /><br /> Bir paketi kaldırıldığında, aşağıdaki geri çekilmesi adımlar gerçekleştirilir.<br /><br /> 1.  IIS uygulama havuzu geri dönüşüm.<br />2.  Çözümünü ayıkla.|  
+|Varsayılan|Varsayılan dağıtım yapılandırması. Aşağıdaki dağıtım adımları gerçekleştirilir:<br /><br /> 1.  Dağıtım öncesi komutu çalıştırın.<br />2.  IIS uygulama havuzunu geri dönüştürün.<br />3.  Çözüm geri çekilir.<br />4.  Çözüme ekleyin.<br />5.  Özelliklerini etkinleştirin.<br />6.  Dağıtım sonrası komutu çalıştırın.<br /><br /> Bir paket kaldırıldığında, aşağıdaki geri çekme adımları gerçekleştirilir.<br /><br /> 1.  IIS uygulama havuzunu geri dönüştürün.<br />2.  Çözüm geri çekilir.|  
 |Etkinleştirme yok|Bu dağıtım yapılandırması aynı adımları varsayılan yapılandırma olarak çalışır, ancak etkinleştirme adımı atlar.|  
   
- Tek bir adım tamamlamak ya da dağıtım işlemindeki adımları sırasını değiştirmek için kendi dağıtım yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
+ Tek bir adımda tamamlayın veya dağıtım işlemindeki adımları sırasını değiştirmek için kendi dağıtım yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
 
- Önce ve dağıtımdan sonra çalıştırılacak komut de ekleyebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: ayarlama SharePoint dağıtım komutlarını](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
+ Önce ve dağıtımdan sonra çalıştırılacak komutları da ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: SharePoint dağıtım komutlarını ayarlama](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
-## <a name="publish-packages-to-a-remote-or-local-server"></a>Paketleri bir uzak veya yerel sunucuya yayımlayın
- Menü çubuğunda, uzak bir sunucuya korumalı bir SharePoint çözüm yayımlamaya seçin **yapı**, **Yayımla**ve ardından **Yayımla** iletişim kutusunda, seçin**SharePoint sitesi için Yayımlama** seçenek düğmesi, uzak sunucunun URL'sini gibi sağlama **https://someremoteserver.sharepoint.microsoftonline.com**.  
+## <a name="publish-packages-to-a-remote-or-local-server"></a>Uzak veya yerel bir sunucuya paketleri yayımlama
+ Korumalı bir SharePoint çözüm menü çubuğunda, bir uzak sunucuya yayımlamayı tercih **derleme**, **Yayımla**ve ardından **Yayımla** iletişim kutusunda,**SharePoint sitesi için Yayımlama** seçenek düğmesini, uzak sunucunun URL'sini gibi sağlama **https://someremoteserver.sharepoint.microsoftonline.com**.  
   
- Bir SharePoint çözümünü yerel bir sunucuya yayımlamak için **Yayımla** iletişim kutusunda, seçin **dosya sistemi Yayımla** seçenek düğmesi, bir yerel sistem yolu sağlar.  
+ Bir SharePoint çözümünü yerel bir sunucuya yayımlamak için **Yayımla** iletişim kutusunda **dosya sistemi Yayımla** seçenek düğmesi, bir yerel sistem yol sağlama.  
   
- Bir çözüm başarıyla SharePoint'e yayımlar sonra çözüm görünür **çözüm Galerisi** Burada, etkinleştirebilir. Daha fazla bilgi için bkz: [nasıl yapılır: dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltme](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+ Çözüme bir çözüm SharePoint'e başarıyla yayımlar sonra görünür **çözüm Galerisi** Burada, etkinleştirebilir. Daha fazla bilgi için [nasıl yapılır: Dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltmek](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ### <a name="upgrade-published-packages"></a>Yükseltme yayımlanan paketleri
- Visual Studio'da SharePoint projesi için herhangi bir değişiklik yaparsanız yayımlandıktan sonra yayımlanan paket değişiklikleri içerecek şekilde yükseltilmesi gerekir. Başarıyla yükseltmek için bir paket benzersiz bir ad olmalıdır. Aynı ada sahip bir paketi bir hata uyarısı - var olan bir uygulama güncelleştirilirken hangi oluşabilir - SharePoint sitesinde bulunursa, dosya adına çakışıyor ve paketi yeniden adlandırın olanak tanır. Yayınlanmasını sonra yeni paketi SharePoint sitesinde görünür ve yükseltilebilir. Yükseltilen paket eski paketi verileri kullanarak çözüm güncelleştirir ve SharePoint çözümde etkinleştirir. Daha fazla bilgi için bkz: [nasıl yapılır: dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltme](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
+ Visual Studio'da bir SharePoint projesine herhangi bir değişiklik yaparsanız yayımlandıktan sonra değişikliklerin eklenmesi için yayımlanan paket yükseltilmelidir. Başarılı bir şekilde yükseltmek için bir paket adları benzersiz olmalıdır. Aynı ada sahip bir paket hatası uyarıları - var olan bir uygulamayı güncelleştirirken, oluşabilir - SharePoint sitesinde bulunursa, dosya adı çakışıyor ve paketi yeniden adlandır olanak tanır. Yayınlanmasını sonra yeni paketi SharePoint sitesinde görünen ve yükseltilebilir. Yükseltilmiş bir paket eski paketi verileri kullanarak çözüm güncelleştirir ve sonra çözüm SharePoint etkinleştirir. Daha fazla bilgi için [nasıl yapılır: Dağıtma, yayımlama ve uzak bir sunucudaki SharePoint çözümlerini yükseltmek](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
 ## <a name="see-also"></a>Ayrıca bkz.
- [Paket ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+ [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

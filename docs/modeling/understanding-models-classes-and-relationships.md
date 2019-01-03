@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908650"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile birlikte, DSL tanımı dosyası tarafından tanımlanır. DSL çözüm program kodunda çoğu bu dosyadan oluşturulur.
@@ -54,9 +53,9 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
 
  ![Başvuru ekleme ve ilişkileri](../modeling/media/music_classes.png)
 
- Çizimde dört etki alanı sınıflarını göstermektedir: müzik, albüm, sanatçının ve şarkı. Etki alanı sınıf adı, başlık ve benzeri gibi etki alanı özellikleri tanımlayın. Örnek modelinde, bu özelliklerin bazıları değerlerini diyagramda görüntülenir.
+ Çizimde, dört alan sınıfları gösterilmektedir: Müzik, albüm, sanatçının ve şarkı. Etki alanı sınıf adı, başlık ve benzeri gibi etki alanı özellikleri tanımlayın. Örnek modelinde, bu özelliklerin bazıları değerlerini diyagramda görüntülenir.
 
- Etki alanı ilişkileri sınıflardır: MusicHasAlbums, MusicHasArtists AlbumbHasSongs ve ArtistAppearedOnAlbums. Çeşitlilikler 1..1 gibi ilişkilerine sahip 0.. *. Örneğin, her bir şarkıyı için tam olarak bir albüm AlbumHasSongs ilişkisi üzerinden ilişkili olmalıdır. Albümlerini şarkıya herhangi bir sayıda olabilir.
+ Sınıflar etki alanı ilişkileri şunlardır: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs ve ArtistAppearedOnAlbums. Çeşitlilikler 1..1 gibi ilişkilerine sahip 0.. *. Örneğin, her bir şarkıyı için tam olarak bir albüm AlbumHasSongs ilişkisi üzerinden ilişkili olmalıdır. Albümlerini şarkıya herhangi bir sayıda olabilir.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>DSL tanım diyagramı yeniden düzenleme
  Albüm Bu resimde olduğu gibi bir alan sınıfına DSL tanım diyagramı üzerinde birkaç kez görünebilir dikkat edin. Her zaman bir ana görünüm yoktur ve olabilir bazı *başvuru* görünümleri.

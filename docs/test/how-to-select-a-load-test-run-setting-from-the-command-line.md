@@ -10,19 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 47caaa39a1783588994277ba079e64e353a167a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925111"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Nasıl yapılır: yük testi çalıştırması komut satırından kullanmak için ayarı seçin
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Nasıl Yapılır: Yük testi çalıştırması komut satırından kullanmak için ayarı seçin
 
 Bir yük testi içerebilir *çalıştırma ayarları*, yük testinin çalışma biçimini etkileyen özellikler şunlardır. Çalıştırma ayarları kategorilere göre düzenlenir **özellikleri** penceresi. Bir yük testi çalıştırdığınızda, şu anda etkin olarak ayarlanmış çalıştırma ayarını kullanır.
 
-Yük testiniz yalnızca bir çalışma ayarı içeriyorsa, her zaman etkin düğüm olur. Yük testi çalıştırma ayarları birden çok düğüm içeriyorsa, komut satırından bir yük testi çalıştırdığınızda kullanılacak seçebilirsiniz. Bkz: [nasıl yapılır: bir yük testine ek çalışma ayarları ekleme](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Yük testiniz yalnızca bir çalışma ayarı içeriyorsa, her zaman etkin düğüm olur. Yük testi çalıştırma ayarları birden çok düğüm içeriyorsa, komut satırından bir yük testi çalıştırdığınızda kullanılacak seçebilirsiniz. Bkz: [nasıl yapılır: Bir yük testine ek çalışma ayarları ekleme](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,5 +39,5 @@ Yük testiniz yalnızca bir çalışma ayarı içeriyorsa, her zaman etkin düğ
 
 - [Yük testi çalıştırma ayarlarını yapılandırma](../test/configure-load-test-run-settings.md)
 - [Sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testi içinde belirtin.](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Nasıl yapılır: bir yük testine ek çalışma ayarları ekleme](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [Nasıl yapılır: etkin çalışma yük testi için ayarı seçin](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [Nasıl yapılır: Bir yük testine ek çalışma ayarları ekleme](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Nasıl yapılır: Etkin çalışma yük testi için ayarı seçin](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

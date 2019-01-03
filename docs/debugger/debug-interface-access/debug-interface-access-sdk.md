@@ -1,8 +1,6 @@
 ---
 title: Arabirim erişimi SDK'SINDA hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: bdc5a980c9019fdaf330db9602f0b8445456c7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889572"
 ---
 # <a name="debug-interface-access-sdk"></a>Arabirim Erişimi SDK'sında Hata Ayıklama
 

@@ -1,8 +1,6 @@
 ---
 title: Diğer iletişim kutuları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, Spy++
@@ -13,29 +11,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957aa30141a68335e72359cd3ea55b5a59950461
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a50cc84f4bbe7feb266f7e6c412dfcff3f2911ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905130"
 ---
 # <a name="other-dialog-boxes"></a>Diğer İletişim Kutuları
-Bu iletişim kutularından Spy ++ programla ilgili bilgileri görüntüler.  
+Bu iletişim kutularından Spy ++ programı hakkında bilgi görüntüler.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Microsoft Spy++ Hakkında](../debugger/about-microsoft-spy-increment.md)  
- Spy ++ programının sahipliği hakkında bilgiler.  
+ Spy ++ programın sahipliği hakkında bilgiler.  
   
- [Spy ++ Yardımı için telif hakkı bildirimi](../debugger/copyright-notice-for-spy-increment-help.md)  
- Telif Hakkı yasal dikkat edin.  
+ [Spy++ Yardımı İçin Telif Hakkı Bildirimi](../debugger/copyright-notice-for-spy-increment-help.md)  
+ Yasal telif hakkı bildirimi.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
- Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümleri içerir.  
+ Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümler içerir.  
   
  [Spy++ kullanma](../debugger/using-spy-increment.md)  
  Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
   
  [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
- Windows, iletileri, işlemleri ve iş parçacıklarının Spy ++ ağaç görünümler açıklanmaktadır.
+ Spy ++ ağaç görünümlerini windows, iletileri, süreçleri ve iş parçacıkları açıklar.
