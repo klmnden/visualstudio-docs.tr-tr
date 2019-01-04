@@ -2,7 +2,6 @@
 title: Sembol (.pdb) ve kaynak dosyaları hata ayıklayıcısı'nda ayarlayın
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892461"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtin (C#, C++, Visual Basic F#)
 
@@ -77,11 +76,11 @@ Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
       
      Kullanabileceğinize sembol sunucuları şunlardır:  
       
-     **Genel Microsoft sembol sunucuları**: bir sistem DLL Dosyasına veya bir üçüncü taraf kitaplığı için bir çağrı sırasında oluşan bir çökme hatasını gidermek için genellikle sistem gerekir *.pdb* dosyaları. Sistem *.pdb* dosyaları Windows DLL'leri için semboller içeren *.exe* dosyaları ve cihaz sürücüleri. Windows işletim sistemlerinde, MDAC, IIS, ISA sembolleri alabilirsiniz ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] genel Microsoft sembol sunucularından. 
+     **Microsoft Genel sembol sunucuları**: Bir sistem DLL Dosyasına veya bir üçüncü taraf kitaplığı için bir çağrı sırasında oluşan bir çökme hatasını gidermek için genellikle sistem gerekir *.pdb* dosyaları. Sistem *.pdb* dosyaları Windows DLL'leri için semboller içeren *.exe* dosyaları ve cihaz sürücüleri. Windows işletim sistemlerinde, MDAC, IIS, ISA sembolleri alabilirsiniz ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] genel Microsoft sembol sunucularından. 
       
-     **Sembol sunucularını bir iç ağdaki veya yerel makinenizde**: ekibiniz veya şirketiniz, kendi ürünleriniz için ve sembollerin önbelleği olarak sembol sunucuları dış kaynaklardan oluşturabilirsiniz. Kendi makineniz üzerinde bir sembol sunucusu olabilir. 
+     **Sembol sunucularını bir iç ağdaki veya yerel makinenizde**: Ekibiniz veya şirketiniz, kendi ürünleriniz için ve sembollerin önbelleği olarak sembol sunucuları dış kaynaklardan oluşturabilirsiniz. Kendi makineniz üzerinde bir sembol sunucusu olabilir. 
       
-     **Üçüncü taraf sembol sunucuları**: Windows uygulamaları ve kitaplıkları, üçüncü taraf sağlayıcılar, Internet üzerinden sembol sunucusuna erişim sağlayabilir. 
+     **Üçüncü taraf sembol sunucuları**: Üçüncü taraf Windows uygulamaları ve kitaplıkları sağlayıcılar internet üzerinden sembol sunucusuna erişim sağlayabilir. 
     
      > [!WARNING]
      > Genel Microsoft sembol sunucuları farklı bir sembol sunucusu kullanıyorsanız, sembol sunucusunun ve yolunun güvenilir olduğundan emin olun. Sembol dosyası rastgele yürütülebilir kod içerebileceğinden güvenlik tehditlerine karşı sunulabilir.  
@@ -156,7 +155,7 @@ Ek sembol seçenekleri, seçtiğiniz **Araçları** > **seçenekleri** > **hata 
   Komutlar sınırlandırabilir, *srcsrv.dll* uygulamanın yürütebilir *.pdb* adlı dosyadaki izin verilen komutları listesi dosyasını *srcsrv.ini*. Bir yerde *srcsrv.ini* dosya aynı klasörde *srcsrv.dll* ve *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Rastgele komutlar uygulamanın içinde gömülebilir *.pdb* dosya, bu nedenle yalnızca içine yürütmek istediğiniz komutları yerleştirdiğinizden emin olun bir *srcsrv.ini* dosya. İçinde olmayan bir komutu yürütmek yapmaya *srcsvr.ini* dosya bir onay iletişim kutusunda görünmesine neden olur. Daha fazla bilgi için [güvenlik uyarısı: hata ayıklayıcı gerekir yürütme güvenilmeyen komut](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Rastgele komutlar uygulamanın içinde gömülebilir *.pdb* dosya, bu nedenle yalnızca içine yürütmek istediğiniz komutları yerleştirdiğinizden emin olun bir *srcsrv.ini* dosya. İçinde olmayan bir komutu yürütmek yapmaya *srcsvr.ini* dosya bir onay iletişim kutusunda görünmesine neden olur. Daha fazla bilgi için [güvenlik uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Komut parametrelerinde bir doğrulama yapılmadı, bu nedenle güvenilir komutlara dikkat edin. Örneğin, listelenen *cmd.exe* içinde *srcsrv.ini*, kötü niyetli bir kullanıcı şirket parametreler belirtebilir *cmd.exe* olun, tehlikeli.  
   
