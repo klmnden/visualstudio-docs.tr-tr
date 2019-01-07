@@ -2,7 +2,7 @@
 title: Flask Öğreticisi 3. adımda Visual Studio, statik dosyalar ve sayfalar öğrenin
 titleSuffix: ''
 description: Visual Studio projeleri, özellikle statik dosyaları işleme, uygulamaya sayfaları ekleyin ve şablonu devralma gösterimi bağlamında Flask temel bilgileri bir kılavuz
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 22d498ea38494baa12539039960685bb0abda056
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917561"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060796"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. Adım: Statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın
 
