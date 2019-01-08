@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791774"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092553"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Komut dosyası için ad alanı için bir tür kitaplığı ekler. Bu benzer `#include` C/c++ yönergesi. Sınıf tanımları gibi önceden tanımlanmış öğeleri kümesi sağlar `typedefs`ve komut dosyası çalışma zamanı ortamı eklenecek sabitleri adlı.  
+Komut dosyası için ad alanı için bir tür kitaplığı ekler. Bu benzer `#include` C/C++'ta yönergesi. Sınıf tanımları gibi önceden tanımlanmış öğelerin kümesi sağlayan `typedefs`ve komut dosyası çalışma zamanı ortamına eklenecek sabitleri adlı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -41,7 +41,7 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parametreler  
  `guidTypeLib`  
- [in] Eklenecek CLSID tür kitaplığı.  
+ [in] Eklenecek CLSID tür kitaplığının.  
   
  `dwMaj`  
  [in] Ana sürüm numarası.  
@@ -50,11 +50,11 @@ HRESULT AddTypeLib(
  [in] İkincil sürüm numarası.  
   
  `dwFlags`  
- [in] Bayrakları seçeneği. Aşağıdakiler olabilir:  
+ [in] Seçeneğini işaretler. Aşağıdakiler olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|Tür kitaplığını ana bilgisayar tarafından kullanılan bir ActiveX denetimini açıklar.|  
+|SCRIPTTYPELIB_ISCONTROL|Ana bilgisayar tarafından kullanılan bir ActiveX denetimi tür kitaplığını açıklar.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -62,8 +62,8 @@ HRESULT AddTypeLib(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_INVALIDARG`|Bağımsız değişken geçersiz.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, komut dosyası altyapısı henüz yüklenen başlatılmadı veya).|  
+|`E_INVALIDARG`|Bir bağımsız değişken geçersiz.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, komut dosyası altyapısı henüz yüklenen başlatıldı veya).|  
 |`TYPE_E_CANTLOADLIBRARY`|Belirtilen tür kitaplığı yüklenemedi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

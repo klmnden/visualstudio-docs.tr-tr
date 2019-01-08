@@ -14,19 +14,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03ed7f13b4e57f9e44ca147810614f980b24b9a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8ff283b52d15310304fb60c322bdb51c33ed33ac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796385"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096947"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY Yapısı
 Bir dizi [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md) nesneleri. Üyeleri CoTaskMemAlloc ile ayrılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef struct tagTEXT_DOCUMENT_ARRAY{    DWORD dwCount;    [size_is(dwCount)] IDebugDocumentText **Members;} TEXT_DOCUMENT_ARRAY;  
 ```  
   
@@ -35,7 +35,7 @@ typedef struct tagTEXT_DOCUMENT_ARRAY{    DWORD dwCount;    [size_is(dwCount)] I
  Belge sayısı.  
   
  `Members`  
- Belgeleri kümesidir.  
+ Belge kümesini.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

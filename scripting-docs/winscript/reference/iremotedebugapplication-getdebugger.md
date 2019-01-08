@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 908d6b43ca33a3b9c35d2690ccb5453032ce151a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ddb6ac5ab9f8597b1f8d22924bdd57204f66c359
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794912"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095452"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
 Geçerli hata ayıklayıcı uygulamaya bağlı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDebugger(  
    IApplicationDebugger**  pad  
 );  
@@ -38,10 +38,10 @@ HRESULT GetDebugger(
   
 #### <a name="parameters"></a>Parametreler  
  `pad`  
- [out] Geçerli hata ayıklayıcı uygulamaya bağlı.  
+ [out] Geçerli hata ayıklayıcı, uygulamaya bağlı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT GetDebugger(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
- [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication Arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)

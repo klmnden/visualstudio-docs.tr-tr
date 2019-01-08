@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e93d3bd48a544d5bb446e1bff102268a7624e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fe0ce2d55a945c5c35dc82700aa45e1849d6a2c0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794372"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096349"
 ---
 # <a name="idebugsessionproviderstartdebugsession"></a>IDebugSessionProvider::StartDebugSession
 Belirtilen uygulama ile bir hata ayıklama oturumu başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT StartDebugSession(  
    IRemoteDebugApplication*  pda  
 );  
@@ -38,17 +38,17 @@ HRESULT StartDebugSession(
   
 #### <a name="parameters"></a>Parametreler  
  `pda`  
- [in] Hata ayıklama uygulama belirtir.  
+ [in] Hata ayıklama uygulamayı belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belirtilen uygulama ile bir hata ayıklama oturumu başlatır. Hata ayıklayıcı çağırmalıdır `IRemoteDebugApplication::ConnectDebugger` bu çağrısından dönmeden önce.  
+ Bu yöntem, belirtilen uygulama ile bir hata ayıklama oturumu başlatır. Hata ayıklayıcı çağırmalıdır `IRemoteDebugApplication::ConnectDebugger` bu çağrısından önce.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugsessionprovider arabirimi](../../winscript/reference/idebugsessionprovider-interface.md)   

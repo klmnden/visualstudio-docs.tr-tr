@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274f09ae2a8851b897a825c32f18091c2f4250d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: af8b063f86bd08f293518b1494b41e4f01d61b2c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793964"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093320"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 Bir işlem iptal eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Abort();  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT Abort();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -46,7 +46,7 @@ HRESULT Abort();
 |E_NOTIMPL|İşlem iptal edilemez.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem genellikle bir yanıt işlemini iptal etmek için hata ayıklayıcı iş parçacığı içinde çağrılır. Bu yöntem neden `InProgressAbort` yöntemi `IDebugSyncOperation` çağrılacak nesnesi.  
+ Bu yöntem genellikle bir yanıt işlemi iptal etmek için hata ayıklayıcı iş parçacığı içinde çağrılır. Bu yöntem neden `InProgressAbort` metodunda `IDebugSyncOperation` çağrılacak nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugasyncoperation arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)   

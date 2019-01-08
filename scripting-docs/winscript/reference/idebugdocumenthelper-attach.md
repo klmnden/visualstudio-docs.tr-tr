@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97ddb49f61e9df4044eb6e16b853e6cf8155162a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0f397f70d994d0997163a06766d32c35e9b2ab7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794246"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090148"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-Bu belge için belge ağacında ekler.  
+Bu belge için belge ağacı ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugDocumentHelper*  pddhParent  
 );  
@@ -41,15 +41,15 @@ HRESULT Attach(
  [in] Bu belge ekleneceği belge ağacı. NULL olabilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bu belgeyi belgeye ekler ağaç, kullanarak `pddhParent` üst olarak. Varsa `pddhParent` olan `NULL`, bu belge üst düzey belge olacaktır.  
+ Bu yöntem, bu belgede belgeye ekler. ağaç, kullanarak `pddhParent` üst öğe olarak. Varsa `pddhParent` olduğu `NULL`, bu belge üst düzey belge olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
- [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper Arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)

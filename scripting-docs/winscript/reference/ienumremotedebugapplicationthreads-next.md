@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8ce0dc7c77cd3b58f388ab63a9d5a3573c93419
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b2aaa1882b5699343d82ecae5fe236574802d7d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794894"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092397"
 ---
 # <a name="ienumremotedebugapplicationthreadsnext"></a>IEnumRemoteDebugApplicationThreads::Next
-`Next` Yöntemi numaralandırma sırası segmentlerinde belirtilen sayıda alır.  
+`Next` Yöntemi sabit listesi sırası kesimleri belirtilen bir sayı alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                            celt,  
    IRemoteDebugApplicationThread**  pprdat,  
@@ -40,23 +40,23 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametreler  
  `celt`  
- [in] Almak için Segment sayısı.  
+ [in] Alınacak Segment sayısı.  
   
  `pprdat`  
- [out] Bir dizi döndürür `IRemoteDebugApplicationThread` alınan kesimleri temsil eden arabirimler.  
+ [out] Bir dizi döndürür `IRemoteDebugApplicationThread` alınmasını segmentleri temsil eden arabirim.  
   
  `pceltFetched`  
- [out] Numaralandırıcı tarafından alınan kesimleri gerçek sayısı.  
+ [out] Numaralandırıcı tarafından alınan parçaları gerçek sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem numaralandırma sırası segmentlerinde belirtilen sayıda alır.  
+ Bu yöntem, belirtilen sayıda sabit listesi sırası segmentler alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumremotedebugapplicationthreads arabirimi](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)
+ [IEnumRemoteDebugApplicationThreads Arabirimi](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 153655966f3be59f1d01fd375b8669fb7207e2d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4c16c94924459a2331a8aea41d74f561d0ecb905
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793928"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097480"
 ---
 # <a name="idebugdocumenthelpersetlongname"></a>IDebugDocumentHelper::SetLongName
-Belge için uzun ad ayarlar.  
+Belge için uzun adını ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetLongName(  
    LPCOLESTR  pszLongName  
 );  
@@ -38,17 +38,17 @@ HRESULT SetLongName(
   
 #### <a name="parameters"></a>Parametreler  
  `pszLongName`  
- [in] Belgenin uzun adını içeren null ile sonlandırılmış bir dize.  
+ [in] Belge uzun adını içeren null ile sonlandırılmış bir dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belge için yeni bir uzun ad ayarlar.  
+ Bu yöntem, yeni bir uzun ad belge için ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper Arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)

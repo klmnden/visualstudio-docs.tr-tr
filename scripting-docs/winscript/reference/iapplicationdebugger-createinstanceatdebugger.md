@@ -18,22 +18,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6495c2d8782d1128700bdfb6d4081b80ffae878
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a6af315f25aa333ace4be7bb8e3584573f0cfd1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793886"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090928"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Nesneleri hata ayıklayıcı işlem kodu tarafından sağlar. diğer bir deyişle zaman-işlem hata ayıklayıcı için.  
+Nesneleri oluşturma hata ayıklayıcı işleminde kodla sağlar. yani giden işlem hata ayıklayıcı.  
   
 > [!IMPORTANT]
->  Bu yöntem bir güvenilir hata ayıklayıcı iş parçacığı, rasgele nesneler oluşturmak için güvenilmeyen kodu izin verdiğinden uygulanmamalıdır.  
+>  Bu yöntem bir güvenilir hata ayıklayıcı iş parçacığında rastgele nesneleri oluşturmak, güvenilmeyen kod izin verdiğinden uygulanmamalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateInstanceAtDebugger(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -45,22 +45,22 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Parametreler  
  `rclsid`  
- [in] Sınıf oluşturmak için nesne tanımlayıcısı (CLSID).  
+ [in] Oluşturulacak nesne tanımlayıcısı (CLSID) sınıfı.  
   
  `pUnkOuter`  
- [in] Varsa `NULL`, nesne bir toplama bir parçası olarak oluşturuluyor değil. Aksi takdirde, `pUnkOuter` gösteren bir işaretçidir toplama nesnenin `IUnknown` arabirimi (denetleme `IUnknown`).  
+ [in] Varsa `NULL`, nesne bir toplamanın parçası oluşturuluyor değil. Aksi takdirde, `pUnkOuter` toplama nesnesinin işaretçisidir `IUnknown` arabirimi (denetleme `IUnknown`).  
   
  `dwClsContext`  
- [in] Yürütülebilir kod çalıştırmak için bağlamı. Değerler numaralandırma içinden alınır `CLSCTX`.  
+ [in] Yürütülebilir kodu çalıştırmak için bağlam. Değerleri, sabit listesinden alınmış alınır `CLSCTX`.  
   
  `riid`  
- [in] Nesnesi ile iletişim kurmak için kullanılan arabirim tanımlayıcısı.  
+ [in] Nesne ile iletişim kurmak için kullanılan arabirim tanımlayıcısı.  
   
  `ppvObject`  
- [out] İçinde istenen arabirim işaretçisi alan işaretçi değişkeninin adresi `riid`. Başarılı bir geri döndürme bağlı *`ppvObject` istenen arabirim işaretçisi içerir. Başarısızlık durumunda, \* `ppvObject` içeren `NULL`.  
+ [out] İçinde istenen arabirim işaretçisi alır, işaretçi değişkeninin adresi `riid`. Başarılı bir geri döndürme üzerine *`ppvObject` istenen arabirim işaretçisi içerir. Başarısızlık durumunda, \* `ppvObject` içeren `NULL`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -69,7 +69,7 @@ HRESULT CreateInstanceAtDebugger(
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem için temsilci `CoCreateInstance`.  
   
- Metot şu anda uygulanmadı.  
+ Yöntem henüz uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iapplicationdebugger arabirimi](../../winscript/reference/iapplicationdebugger-interface.md)
+ [IApplicationDebugger Arabirimi](../../winscript/reference/iapplicationdebugger-interface.md)

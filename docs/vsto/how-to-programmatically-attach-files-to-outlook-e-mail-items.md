@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Outlook e-posta öğelerine program aracılığıyla dosya ekleme'
+title: 'Nasıl yapılır: Outlook e-posta öğelerine program aracılığıyla dosya ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8290d354f811795ba83975c406565d17817fa0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff75135169bbe2fd138a5e55dedbc859194d4455
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866471"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090746"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Nasıl Yapılır: Outlook e-posta öğelerine program aracılığıyla dosya ekleme
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Nasıl yapılır: Outlook e-posta öğelerine program aracılığıyla dosya ekleme
   Bu örnek, bir dosya için yeni bir posta öğesi ekler ve Armando Pinto gönderir. Örnekte, alıcı olarak Armando Pinto adlı bir kişi var. varsayılır.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  

@@ -14,24 +14,24 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5abd4ee4237991714bfe3d8ba21b083f1a1920cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b307352a3ba6d10ec3ae434536dee82d22504d33
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793418"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091292"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
-Profil Oluşturucu, tüm geçerli komut dosyası motorlarına profil başlattığınız bildirir. Bu yöntemi kullanarak, tam çağrı yığını edinebilirsiniz [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] profil başlattığınızda çalışır.  
+Profil Oluşturucu, tüm geçerli komut dosyası motorlarına profil oluşturma başlatıldı bildirir. Bu yöntemi kullanarak, tam çağrı yığınını edinebilirsiniz [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] profil oluşturma işlemini başlattığınızda çalışıyor.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CompleteProfilerStart();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Yöntemi, herhangi bir parametre almaz.  
+ Yöntem herhangi bir parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  HRESULT döndürür. Olası değerler aşağıdaki gibidir:  
@@ -39,14 +39,14 @@ HRESULT CompleteProfilerStart();
 |Dönüş değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_FAIL`|Profil oluşturma başlatılamıyor.|  
-|`S_FALSE`|Bir komut dosyası değil çalıştırılırken profil başlatıldı.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profil oluşturma etkin değil. Geri arama yok ayarlandı.|  
-|`E_OUTOFMEMORY`|Bellek durum nedeniyle çağrı yığını alınamıyor.|  
+|`E_FAIL`|Profil oluşturma başlatılamaz.|  
+|`S_FALSE`|Bir komut dosyası değil çalıştırılırken, profil oluşturma başlatıldı.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Profil oluşturma etkin değil. Hiçbir geri çağırma ayarlandı.|  
+|`E_OUTOFMEMORY`|Bir bellek yetersiz durum nedeniyle çağrı yığını alınamıyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağırma `IActiveScriptProfilerControl2::CompleteProfilerStart` zaten çağrı yığınındaki işlevler için olayları gönderilmesini sağlar. Bu yöntem, geçerli sekmesinde herhangi bir komut dosyası altyapısı başlar profil sonra çağrılacak sahiptir. Her komut dosyası altyapısı yöntemi çağrılabilir.  
+ Çağırma `IActiveScriptProfilerControl2::CompleteProfilerStart` zaten çağrı yığınındaki işlevler için olayları gönderilmesini sağlar. Bu yöntem, geçerli sekmesinde herhangi bir komut dosyası altyapısı başlangıçlara profil oluşturduktan sonra çağrılacak sahiptir. Yöntem herhangi bir komut dosyası altyapısı için çağrılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
- [Iactivescriptprofilercontrol2 arabirimi](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)
+ [IActiveScriptProfilerControl2 Arabirimi](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

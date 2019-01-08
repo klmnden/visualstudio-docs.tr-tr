@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d21dafcd8cdb762e39f0cfcbde1162dd66c275ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2f21814d0739b304921108fcfdb3c3da80bee9b6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796319"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093125"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-Bu yöntem komut yorumlayıcı yürütebilir sonraki kod bağlam güncelleştirir.  
+Bu yöntem, komut yorumlayıcı yürütebilen sonraki kod bağlamı güncelleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,13 +37,13 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parametreler  
  `pStackFrame`  
- [in] Yığın çerçevesi nesnesine işaretçi.  
+ [in] Bir yığın çerçevesi nesne işaretçisi.  
   
  `pCodeContext`  
  [in] Kod kapsamı nesnesine işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT SetNextStatement(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Isetnextstatement arabirimi](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement Arabirimi](../../winscript/reference/isetnextstatement-interface.md)

@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e2d3ad50c1be5da0f4e93748227933d5f1ffd92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a614bbfdde117ba223ca3f8f3d8b9b77c44c4393
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794582"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089147"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>IJsDebugProcess::PerformAsyncBreak Yöntemi
-Sonraki komut dosyası yönerge ayırmak için bunu neden kesme modunda betik altyapısı koyar.  
+Komut dosyası altyapısı sonraki komut dosyası yönergesi üzerinde kesmesine neden, kesme moduna koyar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT PerformAsyncBreak(  
    DWORD threadId  
 );  
@@ -36,7 +36,7 @@ HRESULT PerformAsyncBreak(
   
 #### <a name="parameters"></a>Parametreler  
  `threadId`  
- [in] İş parçacığı kimliği  
+ [in] İş parçacığı kimliği.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
@@ -44,4 +44,4 @@ HRESULT PerformAsyncBreak(
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugprocess arabirimi](../../winscript/reference/ijsdebugprocess-interface.md)
+ [IJsDebugProcess Arabirimi](../../winscript/reference/ijsdebugprocess-interface.md)

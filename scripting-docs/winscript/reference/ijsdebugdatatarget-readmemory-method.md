@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc1b67b33e17761a675d6ced9e175b4206ede2e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 66d3709dadfc8da2feb7e6845a7aeaa357235d9e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794705"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089186"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>IJsDebugDataTarget::ReadMemory Yöntemi
-Hedef işlemin bellek okur.  
+Hedef işlemin belleğini okur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ReadMemory(  
    UINT64 address,  
    JsDebugReadMemoryFlags flags,  
@@ -40,27 +40,27 @@ HRESULT ReadMemory(
   
 #### <a name="parameters"></a>Parametreler  
  `address`  
- [in] Hedef işlemin bellek okunacak temel adres.  
+ [in] Hedef işlemin belleğinin okunacağı temel adres.  
   
  `flags`  
- [in] ReadMemory davranışını denetleme bayraklar.  
+ [in] ReadMemory davranışını denetleyen bayraklar.  
   
  `pBuffer`  
- [out] Hedef işlemin adres alanından içeriği alır arabelleği. Üzerinde bu arabellek içeriğini belirtilmeyen hatasıdır.  
+ [out] Hedef işlemin adres alanından içerikleri alan arabellek. Hata olduğunda, bu arabelleğin içeriği belirtilmez.  
   
  `size`  
  [in] İşlemden okunacak bayt sayısı.  
   
  `pBytesRead`  
- [out] Hedef işleminden okunan bayt sayısını gösterir. Başarı JsDebugAllowPartialRead boş olduğunda, bu değer her zaman tam olarak giriş boyutuna eşit olacaktır. JsDebugAllowPartialRead belirtilmişse, başarı, bu değer sıfırdan büyük olacaktır.  
+ [out] Hedef işlemden okunan bayt sayısını gösterir. Başarı JsDebugAllowPartialRead açık ise, bu değer her zaman tam olarak girdi boyutuna eşit olur. JsDebugAllowPartialRead belirtilirse, başarı durumunda bu değer sıfırdan büyük olacaktır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Başarı ve hata kodlarını döndürür S_OK herhangi bir hata için kullanılır. Adres geçerli değilse E_JsDEBUG_INVALID_MEMORY_ADDRESS döndürür. Daha fazla bilgi için JsDebugAllowPartialRead bakın.  
+ Başarılıysa S_OK döndürür başarı ve hata kodları herhangi bir hata için kullanılır. Adres geçerli değilse, e_jsdebug_ınvalıd_memory_address döndürür. Daha fazla bilgi için bkz. JsDebugAllowPartialRead.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

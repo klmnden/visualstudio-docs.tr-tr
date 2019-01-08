@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Veri ve biçimlendirme çalışma sayfaları arasında program aracılığıyla kopyalama'
+title: 'Nasıl yapılır: Veri ve biçimlendirme çalışma sayfaları arasında program aracılığıyla kopyalama'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - data [Office development in Visual Studio], copying across worksheets
 - copying data, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9995b347fdfcb60acf72c79b0e1bddc20bab717b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: babf55cd7728734e6ab6575c960a2b821f510154
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924871"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087873"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Nasıl Yapılır: Veri ve biçimlendirme çalışma sayfaları arasında program aracılığıyla kopyalama
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Nasıl yapılır: Veri ve biçimlendirme çalışma sayfaları arasında program aracılığıyla kopyalama
   Verileri bir sayfada bir aralıktan çalışma kitabındaki diğer tüm sayfaları kullanarak kopyalayabilirsiniz <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> yöntemi. Bir aralığı belirtin ve verileri, biçimlendirme veya her ikisi de kopyalamak istediğiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

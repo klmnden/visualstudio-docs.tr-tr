@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c171b894856141d8c42ae641f1d08b058cd3d9c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794276"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087041"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
-Belgede satır sayısı ve karakter sayısını döndürür.  
+Belgede, satır sayısı ve karakter sayısını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  
@@ -39,20 +39,20 @@ HRESULT GetSize(
   
 #### <a name="parameters"></a>Parametreler  
  `pcNumLines`  
- [out] Belgedeki satır sayısı. Bu parametre NULL ise, yöntemi bir değer döndürmüyor.  
+ [out] Belge içindeki satırların sayısı. Bu parametre NULL ise, yöntem bir değer döndürmez.  
   
  `pcNumChars`  
- [out] Belgenin karakter sayısı. Bu parametre NULL ise, yöntemi bir değer döndürmüyor.  
+ [out] Belgenin karakter sayısı. Bu parametre NULL ise, yöntem bir değer döndürmez.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belgede satır sayısı ve karakter sayısını döndürür.  
+ Bu yöntem, belgeye satır sayısı ve karakter sayısını döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText Arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f042fa0f8fb087b796e306074152f11afd7fed4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794531"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091487"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
-Üyenin adını alır.  
+Bir üyenin adını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetMemberName(  
    DISPID id,  
    BSTR *pbstrName  
@@ -39,10 +39,10 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>Parametreler  
  `id`  
- Üyeyi tanımlar. Kullanan `GetDispID` veya `GetNextDispID` gönderme tanımlayıcısı alınamadı.  
+ Üyeyi tanımlar. Kullanan `GetDispID` veya `GetNextDispID` gönderme tanımlayıcısının elde edilir.  
   
  `pbstrName`  
- Adres bir `BSTR` üyenin adını alır. Çağıran uygulama, bu değer boşaltma sorumludur.  
+ Adresi bir `BSTR` , üyenin adını alır. Çağıran uygulama, bu değer boşaltma için sorumludur.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -54,7 +54,7 @@ HRESULT GetMemberName(
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 248d89f7e1c29633a447bef672877682bfa44def
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fdef51ca1318e3513ca5a4ca49652ed066088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794315"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093060"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
-Belgeye yeni bir metin ekler.  
+Yeni metin belgeye ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT InsertText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToInsert,  
@@ -46,17 +46,17 @@ HRESULT InsertText(
  [in] Eklenecek karakter sayısı.  
   
  `pcharText[]`  
- [in] Eklemek istediğiniz karakterleri içeren bir arabellek.  
+ [in] Eklemek istediğiniz karakterleri içeren arabellek.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yeni metin belgeye ekler.  
+ Bu yöntem, belgeye yeni bir metin ekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenttextauthor arabirimi](../../winscript/reference/idebugdocumenttextauthor-interface.md)   

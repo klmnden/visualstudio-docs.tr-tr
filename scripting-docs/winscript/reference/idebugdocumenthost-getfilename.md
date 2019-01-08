@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909c431a389a2589d48b6228534b16675ea41383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55b3518b6d73793df712ed9deccb5e27c320a9d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793994"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097155"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
 Yol bilgisi olmadan belgenin adını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  
@@ -38,17 +38,17 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstrShortName`  
- [out] Belgenin kısa adını içeren dize.  
+ [out] Belge kısa adını içeren bir dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belgenin yol bilgisi olmadan kısa adını döndürür. Kısa ad genellikle durumlarda gibi kullanılır **Kaydet...**  iletişim kutusu.  
+ Bu yöntem, kısa yol bilgisi olmadan belgenin adını döndürür. Kısa ad genellikle durumlarda gibi kullanılan **Farklı Kaydet...**  iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthost arabirimi](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost Arabirimi](../../winscript/reference/idebugdocumenthost-interface.md)

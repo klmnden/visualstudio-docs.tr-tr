@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15612330f160f694202bb2158f970e0633fe53bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793730"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090005"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-Betik altyapısı çağıran bir belirtilen özel durumu işleyebilir belirler.  
+Komut dosyası altyapısı çağıran bir belirtilen bir özel durumu işleyebilir belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CanHandleException(  
    EXCEPINFO*  pExcepInfo,  
    VARIANT*    pvar  
@@ -39,21 +39,21 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>Parametreler  
  `pExcepInfo`  
- [in] İşaretçi bir `EXCEPINFO` hiçbir özel durum işleyicisi bulunursa bildirilecek bilgileri içeren yapısı.  
+ [in] İşaretçi bir `EXCEPINFO` hiçbir özel durum işleyicisi bulunursa bildirilir bilgileri içeren yapısı.  
   
  `pvar`  
- [in] Tarafından oluşturulan değer gibi özel durum ile ilişkili bir değere bir `throw` deyimi. Bu parametre olabilir `NULL`.  
+ [in] Tarafından oluşturulan değeri gibi bir özel durumla ilişkili bir değer bir `throw` deyimi. Bu parametre olabilir `NULL`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Çağıran özel durumu işleyebilecek|  
-|`E_FAIL`|Çağıran özel işleyemez.|  
+|`E_FAIL`|Çağıran özel durum işleyemiyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrı, `IDispatchEx::InvokeEx`, veya benzer bir yöntem sonuçları bir özel durum, çağıran destekleyen betiğin çağıran zincirindeki komut dosyası altyapısı denetler `ICanHandleException` arabirim ve özel durumu işleyebilecek gösterir. Hiçbir çağıran özel durumu işleyebilecek, betik altyapısı durur.  
+ Bir çağrı, `IDispatchEx::InvokeEx`, veya benzer bir yöntem, bir özel durum, bir çağıranın destekleyen betiğin arayan zincirindeki betik altyapısı denetler sonuçlanıyor `ICanHandleException` arabirim ve özel durum işleyebileceğini belirtir. Hiçbir çağıran özel durumu işleyebilecek, komut dosyası altyapısı durdurur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Icanhandleexception arabirimi](../../winscript/reference/icanhandleexception-interface.md)   

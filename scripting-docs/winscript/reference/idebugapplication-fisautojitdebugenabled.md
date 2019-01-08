@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a10cc829e2d217bb9a90b355405dd8f3b15b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793691"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090551"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Tam zamanında (JIT) hata ayıklayıcı otomatik-debug dumb konakları için kayıtlı olup olmadığını belirler.  
+Just-ın-time (JIT) hata ayıklayıcı otomatik hata ayıklama dumb Konaklara kayıtlı olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 BOOL FIsAutoJitDebugEnabled();  
 ```  
   
@@ -38,10 +38,10 @@ BOOL FIsAutoJitDebugEnabled();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı ve JIT hata ayıklayıcı otomatik-debug dumb ana kaydedilir, yöntemi döndürür `TRUE`. Aksi takdirde, döndürür `FALSE`.  
+ Yöntem başarılı olursa ve JIT hata ayıklayıcı otomatik hata ayıklama dumb Konaklara kaydedilir, yöntem döndürür `TRUE`. Aksi halde `FALSE`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- JIT hata ayıklayıcı otomatik-debug dumb ana bilgisayar kayıtlı değilse, bu yöntem belirler.  
+ JIT hata ayıklayıcı otomatik hata ayıklama dumb Konaklara kayıtlıysa, bu yöntem belirler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication Arabirimi](../../winscript/reference/idebugapplication-interface.md)

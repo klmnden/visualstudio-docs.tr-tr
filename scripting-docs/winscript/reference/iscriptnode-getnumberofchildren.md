@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdb46527ca78d56b3c03a454c6194e80be19e945
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a6c1cd7ee65f4bd01373d112bc7afdcf0dd06d2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796244"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094685"
 ---
 # <a name="iscriptnodegetnumberofchildren"></a>IScriptNode::GetNumberOfChildren
-Alt öğelerinin sayısını döndürür `IScriptNode` nesnesi.  
+Alt düğümleri sayısını döndürür `IScriptNode` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetNumberOfChildren(  
    ULONG              *pcsn  
 );  
@@ -38,7 +38,7 @@ HRESULT GetNumberOfChildren(
   
 #### <a name="parameters"></a>Parametreler  
  `pcsn`  
- [out] Alt düğümleri sayısı, `IScriptNode` nesnesi sahiptir.  
+ [out] Alt düğüm sayısını, `IScriptNode` nesnesi vardır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -50,4 +50,4 @@ HRESULT GetNumberOfChildren(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)

@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a3343c7e3747c48a4c43a1c1ac17fe6502aee3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb3f71e9a8a383e2362bacb17698f4eec58f464e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793505"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092215"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Profil Oluşturucu nesnesi bir çağrı belge nesne modeli (DOM) içine değil bir işlev yürütülürken tamamlanmış komut dosyası altyapısı çağrısı olduğunu bildirir.  
+Profil Oluşturucu bir işlev yürütülürken tamamlanmış komut dosyası altyapısı çağrı, nesne bir çağrı belge nesne modeli (DOM) içine değil bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnFunctionExit(  
     [in] PROFILER_TOKEN scriptId,   
     [in] PROFILER_TOKEN functionId);  
@@ -36,17 +36,17 @@ HRESULT OnFunctionExit(
   
 #### <a name="parameters"></a>Parametreler  
  `scriptId`  
- [in] İşlev parçası olan komut dosyası benzersiz kimliği. Bu kimlik komut dosyası altyapısı tarafından atanır.  
+ [in] İşlev parçasıdır betik benzersiz kimliği. Bu kimlik, komut dosyası altyapısı tarafından atanır.  
   
  `functionId`  
- [in] İşlev benzersiz kimliği. Bu kimlik komut dosyası altyapısı tarafından atanır.  
+ [in] İşlev benzersiz kimliği. Bu kimlik, komut dosyası altyapısı tarafından atanır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin dönüş değeri komut dosyası altyapısı tarafından göz ardı edilir.  
+ Bu yöntemin dönüş değerini komut dosyası altyapısı tarafından göz ardı edilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- DOM için komut dosyası altyapısı aramaları [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) yerine `IActiveScriptProfilerCallback::OnFunctionExit`. Çok sayıda benzersiz yöntemleri ve DOM özelliklerinde nedeniyle budur  
+ DOM için komut dosyası altyapısı aramaları [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) yerine `IActiveScriptProfilerCallback::OnFunctionExit`. Bu çok sayıda benzersiz yöntemleri ve özellikleri sayısında kaynaklanır  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
- [Iactivescriptprofilercallback arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback Arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)

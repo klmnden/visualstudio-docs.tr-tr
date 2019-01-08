@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cd0f2953483e23636c3a17d7726bc2c438b303
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794099"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090395"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
-DBCS dize bu belgenin sonuna ekler.  
+Bir DBCS dize bu belgenin sonuna ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddDBCSText(  
    LPCSTR  pszText  
 );  
@@ -38,23 +38,23 @@ HRESULT AddDBCSText(
   
 #### <a name="parameters"></a>Parametreler  
  `pszText`  
- [in] Metin içeren bir null ile sonlandırılmış dize işaretçi.  
+ [in] Metni içeren null ile sonlandırılmış bir dize işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_FAIL`|Yöntemi, karakterleri ekleyemedi.|  
+|`E_FAIL`|Yöntem karakterleri ekleyemedi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem oluşturur `IDebugDocumentTextEvents` bildirimleri.  
   
 > [!NOTE]
->  Bu yöntem sonra çağrılırsa `IDebugDocumentHelper::AddDeferredText` çağrıldı, `E_FAIL` döndürülür.  
+>  Sonra bu yöntemi çağrılırsa `IDebugDocumentHelper::AddDeferredText` çağrıldı, `E_FAIL` döndürülür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
- [Idebugdocumenttextevents arabirimi](../../winscript/reference/idebugdocumenttextevents-interface.md)
+ [IDebugDocumentTextEvents Arabirimi](../../winscript/reference/idebugdocumenttextevents-interface.md)

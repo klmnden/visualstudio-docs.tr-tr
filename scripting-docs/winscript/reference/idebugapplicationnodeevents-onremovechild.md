@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793952"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092216"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
 Hata ayıklama uygulama düğüm nesnesinden bir alt düğüm kaldırıldığında olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -38,21 +38,21 @@ HRESULT onRemoveChild(
   
 #### <a name="parameters"></a>Parametreler  
  `prddpChild`  
- [in] Kaldırıldı alt uygulama düğümü.  
+ [in] Kaldırılan alt uygulama düğümü.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir hata ayıklama uygulama düğüm nesnesinden bir alt düğüm kaldırıldığında olayını işler.  
+ Bu yöntem, hata ayıklama uygulama düğüm nesnesinden bir alt düğüm kaldırıldığında olayını işler.  
   
  Uygulayıcılar, `IDebugApplicationNode` arabirimi bu olay Yükselt.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplicationnodeevents arabirimi](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
- [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode Arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)

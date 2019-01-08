@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc956c7d2d65d20788a79c9f685e386aba97a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4c67567b4dc4df74b43d8003104e8f47455b5f5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793793"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095413"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
-Hata ayıklayıcı tümleşik geliştirme ortamı (IDE) tarafından görüntülenmesine izin verilen dize neden olur.  
+Hata ayıklayıcı tümleşik geliştirme ortamı (IDE) tarafından görüntülenecek verilen dize neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT DebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -38,17 +38,17 @@ HRESULT DebugOutput(
   
 #### <a name="parameters"></a>Parametreler  
  `pstr`  
- [in] Hata ayıklayıcıda görüntülenecek dize.  
+ [in] Hata Ayıklayıcısı'nda görüntülenecek dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem dile özgü hata ayıklama çıktı desteğini uygulamak bir dil altyapısı sağlar. Dize genellikle hata ayıklayıcı'nın çıktı penceresinde görüntülenir.  
+ Bu yöntem, dile özgü hata ayıklama çıktı desteği uygulamak bir dil altyapısı sağlar. Dize, genellikle hata ayıklayıcının çıkış penceresinde görüntülenir.  
   
  Bu yöntem neden `IApplicationDebugger::onDebugOutput` çağrılabilir.  
   

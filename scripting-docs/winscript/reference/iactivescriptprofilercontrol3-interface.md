@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eed00579acfb09217183a1dd1d858a1e99257a2c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793397"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097142"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3 Arabirimi
-Bir komut dosyası altyapısı ile ilişkili GC yığın nesneleri üzerinden numaralandırmak için bir yöntem sağlar.  
+Üzerinden bir komut dosyası motoruyla ilişkili GC yığın nesnelerini numaralandırmak için bir yöntem sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl3 : IActiveScriptProfilerControl2  
 ```  
   
 ## <a name="methods"></a>Yöntemler  
- [Iactivescriptprofilercontrol3::enumheap yöntemi](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)  
- Arabirim döndürür ([Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) ilişkili betik altyapısı bağlamında GC yığın nesneleri üzerinden yinelemek için kullanılabilecek.
+ [IActiveScriptProfilerControl3::EnumHeap Metodu](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)  
+ Bir arabirim döndürür ([Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) üzerinden ilişkili komut dosyası motoru bağlamında GC yığın nesnelerini yinelemek için kullanılabilecek.

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b56ca147c4484b00bfac5d1876ac58361901a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dd53cf1b91ae7eb18ccc88763437ecda44a574c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793559"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091357"
 ---
 # <a name="iactivescriptstatsresetstats"></a>IActiveScriptStats::ResetStats
-Bu komut dosyası istatistiklerini sıfırlar.  
+Bu betik istatistikleri sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ResetStats();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT ResetStats();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bu komut dosyası istatistikleri sıfırlar.  
+ Bu yöntem, bu betik istatistikleri sıfırlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptstats arabirimi](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats Arabirimi](../../winscript/reference/iactivescriptstats-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4992b68d0644e6183e62577bdec9be86f50df592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794096"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086963"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-Bu belge üst hata ayıklayıcı için kullanıcı arabirimi getirir.  
+Bu belge üst hata ayıklayıcı kullanıcı arabirimi sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT BringDocumentToTop();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT BringDocumentToTop();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem zaten başlatılmadığında hata ayıklayıcı başlatır.  
+ Bu yöntem, zaten başlatılmadığında hata ayıklayıcıyı başlatır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper Arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)

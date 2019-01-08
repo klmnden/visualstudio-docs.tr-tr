@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796361"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088510"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-Her olay için ad ve DISPID olayların belirtilen aralıkta döndürür.  
+Olaylar belirtilen bir aralıktaki DISPID ve her olay için adı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -45,7 +45,7 @@ HRESULT DescribeEvents(
  [in] Alınacak ilk olay dizini.  
   
  `cEvents`  
- [in] Alınacak olay sayısıdır.  
+ [in] Alınacak olay sayısı.  
   
  `prgid`  
  [out] Olay DISPID değerleri dizisi.  
@@ -54,19 +54,19 @@ HRESULT DescribeEvents(
  [out] Olay adları dizisi.  
   
  `pcEventsFetched`  
- [out] Alınan olayların gerçek sayı.  
+ [out] Alınan olayları gerçek sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`S_FALSE`|Daha fazla olay bulunmamaktaydı daha istendi. Kullanılamayan olayları DISPID_NULL ve null BSTR ile temsil edilir.|  
-|`E_INVALIDARG`|Öğe getirilen.|  
+|`S_FALSE`|Daha fazla olay, kullanılabilir olan çok istendi. Kullanılabilir olaylar DISPID_NULL ve null BSTR ile temsil edilir.|  
+|`E_INVALIDARG`|Hiçbir öğe getirilmeden.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belirtilen olayları aralığında DISPID ve her olay için adı döndürür.  
+ Bu yöntem, olayları belirtilen bir aralıktaki her olay için adı ve DISPID döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Isimpleconnectionpoint arabirimi](../../winscript/reference/isimpleconnectionpoint-interface.md)
+ [ISimpleConnectionPoint Arabirimi](../../winscript/reference/isimpleconnectionpoint-interface.md)

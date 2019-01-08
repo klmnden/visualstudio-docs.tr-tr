@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 922f95206d341773632b84c3922ea3b240d8d1ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 629ecb8427539069bb9e235e733140331875288c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794546"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091825"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Sınıf veya hataya neden uygulama için dile bağlı programlı tanımlayıcısını döndürür.  
+Sınıf veya hataya neden olan uygulama için dile bağlı programlı tanımlayıcı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetSource(  
    BSTR*  pbstrSource  
 );  
@@ -38,20 +38,20 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstrSource`  
- [out] Formunda programlı bir tanımlayıcı içeren dize `progname.objectname`.  
+ [out] Biçiminde bir programlı tanımlayıcı içeren dize `progname.objectname`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, özel durumun oluştuğu sınıfı veya uygulama belirlemek için kullanılır. Program tanımlayıcısı çağırma aynı anda sağlanan yerel ayar kimliği (LCID) tarafından belirtilen dilde döndürülebilir.  
+ Bu yöntem, özel durumun oluştuğu sınıf veya uygulamayı belirlemek için kullanılır. Program tanımlayıcısı çağırma sırasındaki sağlanan yerel ayar tanıtıcısı (LCID) tarafından belirtilen dilde döndürülebilir.  
   
 > [!NOTE]
 >  Bu yöntem uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idisperror arabirimi](../../winscript/reference/idisperror-interface.md)
+ [IDispError Arabirimi](../../winscript/reference/idisperror-interface.md)

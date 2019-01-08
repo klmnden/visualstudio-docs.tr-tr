@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56b27d74d5677d41535b0f2dfbc2adcb898af789
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c401ba90e25dc88c4e64abab30bda63d037a3f8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794690"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087210"
 ---
 # <a name="ienumdebugexpressioncontextsnext"></a>IEnumDebugExpressionContexts::Next
-Belirtilen bir numaralandırma sırası segmentlerinde sayısını alır.  
+Belirtilen bir numaralandırma sıralı segmentleri sayısını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                      celt,  
    IDebugExpressionContext**  ppdec,  
@@ -40,23 +40,23 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametreler  
  `celt`  
- [in] Almak için Segment sayısı.  
+ [in] Alınacak Segment sayısı.  
   
  `ppdec`  
- [out] Bir dizi döndürür `IDebugExpressionContext` alınan kesimleri temsil eden arabirimler.  
+ [out] Bir dizi döndürür `IDebugExpressionContext` alınmasını segmentleri temsil eden arabirim.  
   
  `pceltFetched`  
- [out] Numaralandırıcı tarafından alınan kesimleri gerçek sayısı.  
+ [out] Numaralandırıcı tarafından alınan parçaları gerçek sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem numaralandırma sırası segmentlerinde belirtilen sayıda alır.  
+ Bu yöntem, belirtilen sayıda sabit listesi sırası segmentler alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumdebugexpressioncontexts arabirimi](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)
+ [IEnumDebugExpressionContexts Arabirimi](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)

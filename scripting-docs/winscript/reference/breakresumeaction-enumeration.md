@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b830d314b1db40d7b83557d894ad6f8751bdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ac39353d11f327f7940ae5fc03ae2238ddd9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791879"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090474"
 ---
 # <a name="breakresumeaction-enumeration"></a>BREAKRESUMEACTION Listelemesi
-Bir kesme noktası devam etmek için yolları açıklanmaktadır.  
+Bir kesme noktasından devam etmek için yöntemleri açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef enum tagBREAKRESUME_ACTION {  
    BREAKRESUMEACTION_ABORT,  
    BREAKRESUMEACTION_CONTINUE,  
@@ -46,13 +46,13 @@ typedef enum tagBREAKRESUME_ACTION {
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|BREAKRESUMEACTION_ABORT|Uygulama durdurur.|  
+|BREAKRESUMEACTION_ABORT|Uygulamayı durdurur.|  
 |BREAKRESUMEACTION_CONTINUE|Çalışmaya devam eder.|  
-|BREAKRESUMEACTION_STEP_INTO|Bir yordam adımları.|  
+|BREAKRESUMEACTION_STEP_INTO|Bir yordam adımlamayla girin.|  
 |BREAKRESUMEACTION_STEP_OVER|Adım bir yordam boyunca.|  
-|BREAKRESUMEACTION_STEP_OUT|Adımlar geçerli yordamın dışında.|  
-|BREAKRESUMEACTION_IGNORE|Durumu ile çalışmaya devam eder.|  
-|BREAKRESUMEACTION_STEP_DOCUMENT|Sonraki belge adımları.|  
+|BREAKRESUMEACTION_STEP_OUT|Adımları güncel süreçte dışında.|  
+|BREAKRESUMEACTION_IGNORE|Durumuna sahip çalışmaya devam eder.|  
+|BREAKRESUMEACTION_STEP_DOCUMENT|Sonraki belge için adımlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0973b2943ed76a7baa231a287476b237cd45e257
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793301"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095465"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-Bir kod parçacığı metin özniteliklerini döndürür.  
+Bir kod oluşturma metni özniteliklerini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR pszCode,  
    ULONG cch,  
@@ -42,25 +42,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parametreler  
  `pszCode`  
- [içinde size_is (`cch`)] Resimli metin. Bu dize sonlandırıldı null olması gerekmez.  
+ ['de size_is (`cch`)] kod oluşturma yöntemi metni. Bu dize null sonlandırılmış olmak zorunda değil.  
   
  `cch`  
- [in] Kullanılan boyut `pszCode` ve `pattr` parametreleri.  
+ [in] İçin kullanılan boyutu `pszCode` ve `pattr` parametreleri.  
   
  `pszDelimiter`  
- [in] Resimli son sınırlayıcı adresi. Zaman `pszCode` ayrıştırılır metin akışından konak genellikle bir sınırlayıcı (örneğin, iki tek tırnak işareti) Resimli sonuna algılamak için kullanır. Sınırlayıcı Resimli sonuna tanımlamak için kullanılır, bu parametre NULL olarak ayarlayın.  
+ [in] Resimli bitiş sınırlayıcısı adresi. Zaman `pszCode` ayrıştırılır metin akışından ana bilgisayar genellikle bir sınırlayıcı (örneğin, iki tek tırnak işareti) ayrıldığında son algılamak için kullanır. Sınırlayıcı scriptlet sonuna tanımlamak için kullanılıyorsa, bu parametre NULL olarak ayarlayın.  
   
  `dwFlags`  
- [in] Kod parçacığı metin özniteliklerle ilişkili bayraklar. Aşağıdaki değerlerden bir bileşimi olabilir.  
+ [in] Kod oluşturma metni özniteliklerle ilişkili bayraklar. Aşağıdaki değerlerin bir birleşimi olabilir.  
   
 |Sabit|Değer|Açıklama|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0X0001|SOURCETEXT_ATTR_IDENTIFIER özniteliğine sahip tanımlayıcıları tanımlamak ve SOURCETEXT_ATTR_MEMBERLOOKUP özniteliğine sahip nokta işleçleri tanımlayın.|  
-|GETATTRFLAG_THIS|0x0100|SOURCETEXT_ATTR_THIS özniteliğine sahip geçerli nesne tanımlayın.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT özniteliğine sahip dizesi içerik ve açıklama metni tanımlayın.|  
+|GETATTRTYPE_DEPSCAN|0x0001|SOURCETEXT_ATTR_IDENTIFIER özniteliğine sahip tanımlayıcılar tanımlamak ve SOURCETEXT_ATTR_MEMBERLOOKUP özniteliğine sahip bir nokta işleçleri tanımlayın.|  
+|GETATTRFLAG_THIS|0x0100|SOURCETEXT_ATTR_THIS özniteliğine sahip geçerli bir nesneyi tanımlar.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT özniteliğine sahip dizesi içerik ve yorum metnini tanımlayın.|  
   
  `pattr`  
- [out içinde size_is (`cch`)] Resimli kodu için renk bilgileri.  
+ [out içinde size_is (`cch`)] kod oluşturma kodu için renk bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -74,4 +74,4 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
- [SOURCE_TEXT_ATTR numaralandırması](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR Sabit Listesi](../../winscript/reference/source-text-attr-enumeration.md)

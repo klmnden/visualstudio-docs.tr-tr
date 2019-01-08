@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724036182638dbe3d253730c42e835250e6eaa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16f0da202e937a92a8e76dddc27d9da7bc61c4ca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794459"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089420"
 ---
 # <a name="ijsdebug-interface"></a>IJsDebug Arabirimi
-JavaScript hata ayıklama için giriş noktası.  
+JavaScript hata ayıklaması için giriş noktası'nı tıklatın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 IJsDebug : public IUnknown;  
 ```  
   
@@ -34,10 +34,10 @@ IJsDebug : public IUnknown;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Ijsdebug::openvirtualprocess yöntemi](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Yeni bir sanal işlemin nesnesi oluşturmak için kullanılan Üreteç yöntemi.|  
+|[IJsDebug::OpenVirtualProcess Metodu](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Yeni bir sanal işlem nesnesi oluşturmak için kullanılan fabrika yöntemi.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows komut dosyası arabirimleri başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Windows Betik Arabirimleri Başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)

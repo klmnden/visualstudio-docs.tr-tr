@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 098d57a5ff0ba14b1dd493ad772eee595a10ec9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e69ecf79c369b0ac99f0a598681e1a02a5dd21b0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793850"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096544"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-Bu kod içerikle ilişkili belge bağlamını döndürür.  
+Bu kod bağlamı ile ilişkili belge bağlamını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppsc  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>Parametreler  
  `ppsc`  
- [out] Bu kod bağlamla ilişkili belge bağlamı.  
+ [out] Bu kod bağlamı ile ilişkili belge bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Metin belgeleri için tüm deyimi için metin karakterin aralık içermelidir. Bu hata ayıklayıcı geçerli kaynağı deyim vurgulamak için IDE sağlar.  
+ Metin belgeleri için metnin tamamını deyimi için karakter konumu aralık içermelidir. Bu, hata ayıklayıcı geçerli kaynak bildirimi vurgulamak için IDE sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugcodecontext arabirimi](../../winscript/reference/idebugcodecontext-interface.md)
+ [IDebugCodeContext Arabirimi](../../winscript/reference/idebugcodecontext-interface.md)

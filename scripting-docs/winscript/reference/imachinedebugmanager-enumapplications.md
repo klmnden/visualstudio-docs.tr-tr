@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fd7ddd263aab6742e5e6a23c86f7c4480c6561a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be79bbd30a5ec7e177cab9fc7c49161a74b20a46
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794564"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089043"
 ---
 # <a name="imachinedebugmanagerenumapplications"></a>IMachineDebugManager::EnumApplications
-Çalışan uygulamalar geçerli listesinin bir numaralandırıcı döndürür.  
+Çalışan uygulamalar geçerli listenin bir numaralandırıcı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumApplications(  
    IEnumRemoteDebugApplications**  ppeda  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumApplications(
   
 #### <a name="parameters"></a>Parametreler  
  `ppeda`  
- [out] Geçerli çalışan uygulamalar listesini içeren Numaralandırıcı.  
+ [out] Geçerli çalışan uygulamaların listesini içeren bir numaralandırıcı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem çalışan uygulamalar geçerli listesinin bir numaralandırıcı döndürür. Hata ayıklayıcı IDE görüntülemek ve hata ayıklama amacıyla uygulamalar eklemek için bu yöntemi kullanır.  
+ Bu yöntem, çalışan uygulamaların geçerli listenin bir numaralandırıcı döndürür. Hata ayıklayıcı IDE görüntülemek ve hata ayıklama amacıyla uygulamalar eklemek için bu yöntemi kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Imachinedebugmanager arabirimi](../../winscript/reference/imachinedebugmanager-interface.md)
+ [IMachineDebugManager Arabirimi](../../winscript/reference/imachinedebugmanager-interface.md)

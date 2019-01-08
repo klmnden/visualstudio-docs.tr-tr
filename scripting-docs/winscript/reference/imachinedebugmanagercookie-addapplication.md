@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c452c4fe2826c7c5372c7598a14731e14077925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef3dc3bddd0259eb4dd3a1fc874cbadbc16195d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794744"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090668"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Çalışan bir uygulamaya ekler uygulama listesi.  
+Çalışan bir uygulama ekler uygulama listesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwDebugAppCookie,  
@@ -40,23 +40,23 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parametreler  
  `pda`  
- [in] Çalışan uygulamaya uygulama listesi.  
+ [in] Çalışan uygulamayı uygulama listesi.  
   
  `dwDebugAppCookie`  
- [in] Hata ayıklama uygulama tanımlayan bir tanımlama bilgisi.  
+ [in] Hata ayıklama uygulamayı tanımlayan bir çerez.  
   
  `pdwAppCookie`  
- [out] Makine Hata Ayıklama Yöneticisi'nden uygulamayı kaldırmak için kullanılan bir tanımlama bilgisi.  
+ [out] Uygulamayı hata ayıklama Makine Yöneticisi'nden kaldırmak için kullanılan tanımlama bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem işlem hata ayıklama Yöneticisi tarafından çağrılır her `IProcessDebugManager::AddApplication` olarak adlandırılır.  
+ Bu yöntem işlem hata ayıklama Yöneticisi tarafından çağrılır her `IProcessDebugManager::AddApplication` çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Imachinedebugmanagercookie arabirimi](../../winscript/reference/imachinedebugmanagercookie-interface.md)   

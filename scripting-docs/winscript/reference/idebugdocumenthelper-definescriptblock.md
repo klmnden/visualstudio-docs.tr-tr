@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794255"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088003"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Yardımcıya belirli bir aralıktaki karakterleri verilen betik altyapısı tarafından işlenen bir betik bloğu gösterir.  
+Yardımcıya belirli bir karakter aralığı belirtilen betik altyapısı tarafından işlenen bir betik bloğu olduğunu gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -42,33 +42,33 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Parametreler  
  `ulCharOffset`  
- [in] Betik bloğu başlangıç konumu.  
+ [in] Betik bloğundaki başlangıç konumu.  
   
  `cChars`  
  [in] Betik bloğundaki karakter sayısı.  
   
  `pas`  
- [in] Bu komut dosyası bloğunda komut dosyası altyapısı.  
+ [in] Bu betik bloğu için komut dosyası motoru.  
   
  `fScriptlet`  
- [in] Betik bloğundaki bir kod parçacığı olup olmadığını belirten bayrak.  
+ [in] Betik bloğundaki bir kod oluşturma yöntemi olup olmadığını gösteren bayrak.  
   
  `pdwSourceContext`  
- [out] Betik bloğu için kaynak bağlamı.  
+ [out] Betik bloğundaki kaynak bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kendi belgeleri katıştırılmış komut dosyası blokları içerdiğinde bir akıllı ana bilgisayar bu yöntemi kullanabilirsiniz. Diğer diller için katıştırılmış betikler kendi kod içerdiğinde, bir dil altyapısı bu yöntemi kullanabilirsiniz.  
+ Ekli komut dosyası blokları belgelerini içeren bir akıllı ana bilgisayar bu yöntemi kullanabilirsiniz. Diğer diller için katıştırılmış betik kodunu içerdiğinde, bir dil altyapısı bu yöntemi kullanabilirsiniz.  
   
- Betik altyapısı, tüm söz dizimi renklendirme ve kod bağlam aramaları için betik bloğundaki sorumludur.  
+ Komut dosyası altyapısı, tüm söz dizimi renklendirme ve kod bağlamı aramaları betik bloğundaki sorumludur.  
   
- `DefineScriptBlock` Metin eklendikten sonra yöntemi'nin çağrılabilir (örneğin, kullanarak `IDebugDocumentHelper::AddDBCSText` yöntemi) ancak önce betik bloğu Ayrıştırılan (örneğin, kullanarak `IActiveScriptParse ::ParseScriptText` yöntemi).  
+ `DefineScriptBlock` Metin eklendikten sonra yöntemi'nin çağrılabilir (örnek olarak, `IDebugDocumentHelper::AddDBCSText` yöntemi), ancak önce betik bloğu ayrıştırıldıktan (örnek olarak, `IActiveScriptParse ::ParseScriptText` yöntemi).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f938ad30562cd1131e8a50077106002d33cea2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 87c1bab34ed9988a1fb20e87a2b54401be2a5381
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794990"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090681"
 ---
 # <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
-Uygulamanın yanıt verebilir durumda olup olmadığını gösterir.  
+Uygulama duyarlı olup olmadığını gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT QueryAlive();  
 ```  
   
@@ -38,16 +38,16 @@ HRESULT QueryAlive();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, uygulamanın yanıt verebilir durumda olup olmadığını gösterir. Bu yönteme her zaman döndürmelidir `S_OK`.  
+ Bu yöntem, uygulama duyarlı olup olmadığını gösterir. Bu yönteme ait her zaman döndürmelidir `S_OK`.  
   
- Uygulama işleminin beklenmedik şekilde sona ererse, COM düzenleme proxy bu yönteme çağrıları için bir hata döndürür.  
+ Uygulama işlemi beklenmedik şekilde sonlandırılırsa, COM düzenleme proxy bu yöntem çağrıları için bir hata döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication Arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)

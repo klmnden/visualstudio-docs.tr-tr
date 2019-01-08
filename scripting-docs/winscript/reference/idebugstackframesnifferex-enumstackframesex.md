@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a96a382c1dce73731fdd4326d8b0d1c35b7aa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c34ce267113ae5576a8b3bdca9ac34d4abc00f7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794429"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086977"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Yığın çerçevelerinin geçerli iş parçacığı için bir numaralandırıcı döndürür.  
+Geçerli iş parçacığı için yığın çerçevelerinin bir numaralandırıcı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumStackFramesEx(  
    DWORD_PTR                dwSpMin,  
    IEnumDebugStackFrames**  ppedsf  
@@ -39,20 +39,20 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Parametreler  
  `dwSpMin`  
- [in] Yığın çerçeveleri numaralandırma alt adresi sınırı.  
+ [in] Yığın çerçevelerini numaralandırma alt adresi sınırı.  
   
  `ppedsf`  
- [out] Geçerli iş parçacığı için yığın çerçeveleri Numaralandırıcı.  
+ [out] Geçerli iş parçacığı için yığın çerçevesi için Numaralandırıcı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yığın çerçevesi Numaralandırıcı yığının en yakın zamanda basılmış çerçeve ile üstten başlayarak çerçeveler döndürür. Numaralayıcı yalnızca yığın çerçeveleri değerinden büyük veya eşit adresleriyle içeren `dwSpMin`.  
+ Yığın çerçeve Numaralandırıcı çerçeveleri ile en son gönderilen çerçevenin yığın üstüne başlayarak döndürür. Numaralandırıcı yalnızca büyük veya eşittir adresleriyle yığın çerçeveleri içeriyor `dwSpMin`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugstackframesnifferex arabirimi](../../winscript/reference/idebugstackframesnifferex-interface.md)
+ [IDebugStackFrameSnifferEx Arabirimi](../../winscript/reference/idebugstackframesnifferex-interface.md)

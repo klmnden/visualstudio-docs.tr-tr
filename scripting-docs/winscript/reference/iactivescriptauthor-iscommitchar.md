@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793262"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096180"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Belirli bir karakterin bir deyim tamamlama yürütme uygulama tarafından tetiklemesi gereken olup olmadığını belirten bir değer döndürür.  
+Belirli bir karakterin bir deyim tamamlama işleme uygulama tarafından tetiklemesi gereken olup olmadığını gösteren bir değer döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -42,7 +42,7 @@ HRESULT IsCommitChar(
  [in] Test etmek için karakter.  
   
  `pfcommit`  
- [out] `True` karakteri bir yürütme ise karakter; Aksi takdirde `False`.  
+ [out] `True` karakter işleme değilse karakter; Aksi takdirde `False`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -54,4 +54,4 @@ HRESULT IsCommitChar(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor Arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)

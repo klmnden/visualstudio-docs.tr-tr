@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a165edf2d8f9a0b386daa0035ece1a722401a443
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01c33ab9ef187f5bf9d6146e23c4534a33844cec
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794249"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091786"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
-Hata bilgilerini belirli bir türü alır.  
+Belirli bir tür hata bilgilerini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT QueryErrorInfo(  
    GUID  guidErrorType,  
    IDispError**  ppde  
@@ -39,23 +39,23 @@ HRESULT QueryErrorInfo(
   
 #### <a name="parameters"></a>Parametreler  
  `guidErrorType`  
- [in] GUID belirten hata türü.  
+ [in] Hata türü belirten GUID.  
   
  `ppde`  
  [out] Idisperror nesnesini belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `QueryErrorInfo` Yöntemi hata bilgileri belirli bir türü alır.  
+ `QueryErrorInfo` Yöntemi hata bilgilerinin belirli bir tür alır.  
   
 > [!NOTE]
 >  Bu yöntem uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idisperror arabirimi](../../winscript/reference/idisperror-interface.md)
+ [IDispError Arabirimi](../../winscript/reference/idisperror-interface.md)

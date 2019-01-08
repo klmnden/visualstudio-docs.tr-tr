@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff2ba40d1570e23f0256bd34ca8aff0f8d77ce5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ef4c9318cb13459ab787878218bf7ca68052f29
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795023"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094191"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-Bir kod parçacığı bir alt örneğini ekler bir `IScriptNode`.  
+Bir kod oluşturma ekler alt örnek olarak bir `IScriptNode`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateChildHandler(  
    LPCOLESTR          pszDefaultName,  
    LPCOLESTR          *prgpszNames,  
@@ -47,38 +47,38 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Parametreler  
  `pszDefaultName`  
- [in] Kod parçacığı ile ilişkilendirmek için varsayılan adı adresidir.  
+ [in] Kod oluşturma yöntemiyle ilişkilendirmek için varsayılan adı adresi.  
   
  `prgpszNames`  
- [içinde size_is (`cpszNames`)] tam adı ana bilgisayardaki tanımlayıcılardan listesi.  
+ ['de size_is (`cpszNames`)] tanımlayıcılar tam nitelikli ad konak üzerindeki bir listesi.  
   
  `cpszNames`  
  [in] Tanımlayıcıları sayısı `prgpszNames` parametresi.  
   
  `pszEvent`  
- [in] Kod parçacığı ile ilişkili olay adı tanımlayan arabellek adresi.  
+ [in] Kod oluşturma yöntemiyle ilişkili olay adı tanımlayan arabellek adresi.  
   
  `pszDelimiter`  
- [in] Son olarak betik bloğu ayırıcısı adresi. Ayrıştırma için konak betik bloğu sonuna algılamak için sınırlayıcı (örneğin, iki tek tırnak işareti), genellikle kullanır.  
+ [in] Sonlandırma, betik bloğu sınırlayıcısı adresi. Ayrıştırma için konak betik bloğunun sonu algılamak için bir sınırlayıcı (örneğin, iki tek tırnak), genellikle kullanır.  
   
- Sınırlayıcı altyapısı yazma komut dosyası tarafından ön işleme sağlar. Örneğin, altyapı, tek tırnak işareti ayırıcı olarak kullanmak için iki tek tırnak işareti ile değiştirebilirsiniz. Altyapısını sınırlayıcısı nasıl kullanıldığını belirler.  
+ Sınırlayıcı altyapısı geliştirme komut dosyası tarafından ön işleme sağlar. Örneğin, altyapı, tek tırnak işareti ayırıcı olarak kullanılacak iki tek tırnak işaretleri ile değiştirebilir. Altyapısı sınırlayıcı nasıl kullanıldığını belirler.  
   
- Komut dosyası bloğunun sonunu tanımlamak için sınırlayıcı kullandıysanız NULL olarak ayarlayın.  
+ Betik bloğunun sonu tanımlamak için kullanılan sınırlayıcı NULL olarak ayarlayın.  
   
  `ptiSignature`  
- [in] İşlev nesnesi tür bilgileri.  
+ [in] Bir işlev nesnesi için tür bilgisi.  
   
  `iMethodSignature`  
- [in] İşlev dizinini `ITypeInfo``ptiSignature` parametresi.  
+ [in] İşlevin dizini `ITypeInfo``ptiSignature` parametresi.  
   
  `isn`  
  [in] Üst alt dizini.  
   
  `dwCookie`  
- [in] Giriş konak nesnesi ile ilişkilendirmek için kullanılan bir uygulama tanımlı bir değer.  
+ [in] Giriş konak nesnesiyle ilişkilendirmek için kullanılan bir uygulama tanımlı bir değer.  
   
  `ppse`  
- [out] Bir işaretçi alan değişkenin adresini `IScriptEntry` alt örneğinin arabirimi.  
+ [out] Bir işaretçiye alan değişkenin adresini `IScriptEntry` alt örneğinin arabirimi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -88,8 +88,8 @@ HRESULT CreateChildHandler(
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kod parçacığını bir olay işleyicisi belirtir. Bu yöntem çağrılırsa bir kod parçacığı oluşturur bir `IScriptNode` bir Web sayfasını temsil eden nesne. Diğer arabirimleri tarafından çağrıldıklarında bu yöntem başarılı olmaz.  
+ Bir kod oluşturma yöntemi, bir olay işleyicisi belirtir. Tarafından çağrılır, bu yöntem, bir kod oluşturma yöntemi oluşturur. bir `IScriptNode` Web sayfasını temsil eden nesne. Bu yöntem tarafından diğer arabirimleri çağrılırsa başarılı olmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)   
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

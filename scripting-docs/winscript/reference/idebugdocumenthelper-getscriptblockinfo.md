@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fd12aff51c661c2ba5af9ef909bfa481d22101d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794018"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095296"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-Karakter ve bir betik bloğu karşılık gelen betik altyapısı aralığını alır.  
+Bir dizi karakter ve karşılık gelen bir betik bloğu için komut dosyası altyapısı alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetScriptBlockInfo(  
    DWORD_PTR        dwSourceContext,  
    IActiveScript**  ppasd,  
@@ -41,26 +41,26 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>Parametreler  
  `dwSourceContext`  
- [in] Betik bloğu için kaynak bağlamı.  
+ [in] Betik bloğundaki kaynak bağlamı.  
   
  `ppasd`  
- [out] Bu komut dosyası bloğunda komut dosyası altyapısı.  
+ [out] Bu betik bloğu için komut dosyası motoru.  
   
  `piCharPos`  
- [out] Betik bloğu başlangıç konumu.  
+ [out] Betik bloğundaki başlangıç konumu.  
   
  `cChars`  
  [out] Betik bloğundaki karakter sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem karakter ve bir betik bloğu karşılık gelen betik altyapısı aralığını alır.  
+ Bu yöntem, bir dizi karakter ve karşılık gelen bir betik bloğu için komut dosyası altyapısı alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper Arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)

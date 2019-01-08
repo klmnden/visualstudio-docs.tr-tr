@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e158ced0da6d59bfcadeb87bf206c94a6099ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e14046443ca0560deacb6ddb6e39b1fc25d18fea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794939"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097428"
 ---
 # <a name="ijsdebugdatatarget-interface"></a>IJsDebugDataTarget Arabirimi
-Erişim ve hedef hata ayıklayıcı işlem durumunu değiştirmek için işlevselliği sağlamak için hata ayıklayıcı tarafından uygulanır.  
+Erişim ve hedef hata ayıklayıcı işleme durumunu değiştirme işlevselliği sağlamak için hata ayıklayıcı tarafından uygulanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 IJsDebugDataTarget : public IUnknown;  
 ```  
   
@@ -34,18 +34,18 @@ IJsDebugDataTarget : public IUnknown;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Ijsdebugdatatarget::allocatevirtualmemory yöntemi](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Ayırır ve/veya hedef işleminin sanal adres alanı içinde bellek bölgesi kaydeder.|  
-|[Ijsdebugdatatarget::createstackframeenumerator yöntemi](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Yığın çerçeveleri için bir numaralandırıcı oluşturur.|  
-|[Ijsdebugdatatarget::FreeVirtualMemory yöntemi](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Serbest bırakır ve/veya hedef işleminin sanal adres alanı içinde bellek bölgesi decommits.|  
-|[Ijsdebugdatatarget::getthreadcontext yöntemi](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|İş parçacığı alır bağlamının verilir.|  
-|[Ijsdebugdatatarget::gettlsvalue yöntemi](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Ayıklanacak iş parçacığı, iş parçacığı yerel depolaması (TLS) yuvasındaki belirtilen TLS dizin değeri alır.|  
-|[Ijsdebugdatatarget::readbstr yöntemi](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|BSTR hata ayıklama hedefi okur.|  
-|[Ijsdebugdatatarget::readmemory yöntemi](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Hedef işlemin bellek okur.|  
-|[Ijsdebugdatatarget::readnullterminatedstring yöntemi](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Hedef belirtilen sayıda karakteri okur.|  
-|[Ijsdebugdatatarget::writememory yöntemi](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Hedef işlemin bellek okur.|  
+|[IJsDebugDataTarget::AllocateVirtualMemory Metodu](../../winscript/reference/ijsdebugdatatarget-allocatevirtualmemory-method.md)|Ayırır ve/veya hedef işlemin sanal adres alanı içindeki bellek bölgesini kaydeder.|  
+|[IJsDebugDataTarget::CreateStackFrameEnumerator Metodu](../../winscript/reference/ijsdebugdatatarget-createstackframeenumerator-method.md)|Bir yığın çerçevesi için Numaralandırıcı oluşturur.|  
+|[IJsDebugDataTarget::FreeVirtualMemory Metodu](../../winscript/reference/ijsdebugdatatarget-freevirtualmemory-method.md)|Serbest bırakır ve/veya hedef işlemin sanal adres alanı içindeki bellek bölgesini kaydeder.|  
+|[IJsDebugDataTarget::GetThreadContext Metodu](../../winscript/reference/ijsdebugdatatarget-getthreadcontext-method.md)|Verilen iş parçacığı için bağlamı alır.|  
+|[IJsDebugDataTarget::GetTlsValue Metodu](../../winscript/reference/ijsdebugdatatarget-gettlsvalue-method.md)|Hatası ayıklanmakta olan iş parçacığı, belirli TLS dizini için iş parçacığı yerel depolama (TLS) yuvasındaki değeri alır.|  
+|[IJsDebugDataTarget::ReadBSTR Metodu](../../winscript/reference/ijsdebugdatatarget-readbstr-method.md)|Hata ayıklama hedefinden bir BSTR okur.|  
+|[IJsDebugDataTarget::ReadMemory Metodu](../../winscript/reference/ijsdebugdatatarget-readmemory-method.md)|Hedef işlemin belleğini okur.|  
+|[IJsDebugDataTarget::ReadNullTerminatedString Metodu](../../winscript/reference/ijsdebugdatatarget-readnullterminatedstring-method.md)|Hedeften belirtilen sayıda karakteri okur.|  
+|[IJsDebugDataTarget::WriteMemory Metodu](../../winscript/reference/ijsdebugdatatarget-writememory-method.md)|Hedef işlemin belleğini okur.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows komut dosyası arabirimleri başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Windows Betik Arabirimleri Başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)

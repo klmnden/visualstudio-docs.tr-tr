@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794726"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086664"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess Arabirimi
-İnceleme ve hedef işlem denetleme için yordamlar sağlar.  
+İncelemek ve hedef işlem denetleme için yordamlar sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
@@ -34,12 +34,12 @@ IJsDebugProcess : public IUnknown;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Ijsdebugprocess::createbreakpoint yöntemi](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Kesme noktası belirtilen belge konumuna ayarlar.|  
-|[Ijsdebugprocess::createstackwalker yöntemi](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Yığın walker için Üreteç yöntemi.|  
-|[Ijsdebugprocess::performasyncbreak yöntemi](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Sonraki komut dosyası yönerge ayırmak için bunu neden kesme modunda betik altyapısı koyar.|  
+|[IJsDebugProcess::CreateBreakPoint Metodu](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Belge belirtilen konumda bir kesme noktası ayarlar.|  
+|[IJsDebugProcess::CreateStackWalker Metodu](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Yığın değişkeni için fabrika yöntemi.|  
+|[IJsDebugProcess::PerformAsyncBreak Metodu](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Komut dosyası altyapısı sonraki komut dosyası yönergesi üzerinde kesmesine neden, kesme moduna koyar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows komut dosyası arabirimleri başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Windows Betik Arabirimleri Başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)

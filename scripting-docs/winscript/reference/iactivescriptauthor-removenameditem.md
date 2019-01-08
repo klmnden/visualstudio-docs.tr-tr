@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f3acc7d61d63ce4fb4fe53729ce43324b9718a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64f62acd02e0901af341a571fb09ba81f3a11f28
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793274"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088835"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-Kaldırır bir `NamedItem` altyapısı yazma betik ad nesne.  
+Kaldırır bir `NamedItem` altyapısı yazma betiğin ad alanından nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT RemoveNamedItem(  
    LPCOLESTR          pszName  
 );  
@@ -38,7 +38,7 @@ HRESULT RemoveNamedItem(
   
 #### <a name="parameters"></a>Parametreler  
  `pszName`  
- [in] Adres tanımlayan arabellek `NamedItem` kaldırılacak nesne.  
+ [in] Tanımlayan arabelleğin adresi `NamedItem` kaldırılacak nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -46,10 +46,10 @@ HRESULT RemoveNamedItem(
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`S_FALSE`|`NamedItem` Nesne altyapısı yazma betik ad alanında mevcut değil.|  
+|`S_FALSE`|`NamedItem` Nesne altyapısı geliştirme komut dosyası ad alanında mevcut değil.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) eklemesine kullanılan `NamedItem` altyapısının ad yazma betik nesnesine.  
+ [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) ekleme için kullanılan `NamedItem` altyapısının ad alanı yazma betiğe nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)   

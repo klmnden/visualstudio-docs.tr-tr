@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccb898c14571d1f1fd1fcae7cb0b9a6d322f2754
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793781"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095894"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-İle eklenen bir öğe hakkında bilgi almak komut dosyası altyapısı sağlar [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.  
+İle eklenen bir öğe hakkında bilgi almak komut dosyası altyapısı sağlayan [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetItemInfo(  
     LPCOLESTR pstrName,     // address of item name  
     DWORD dwReturnMask,     // bit mask for information retrieval  
@@ -44,7 +44,7 @@ HRESULT GetItemInfo(
  [in] Belirtilen öğe ile ilişkili adı [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.  
   
  `dwReturnMask`  
- [in] Öğe hakkındaki bilgiler döndürülmelidir belirten bir bit maskesi. Komut dosyası altyapısı bilgileri olası en az miktarda olduğundan isteği bazı dönüş parametreleri (örneğin, `ITypeInfo`) yüklemek veya oluşturması uzun zaman alabilir. Aşağıdaki değerlerden bir bileşimi olabilir:  
+ [in] Öğesinin hangi bilgilerini döndürülmesi gerektiğini belirten bir bit maskesi. Komut dosyası altyapısı en az miktarda bilgi mümkün olduğundan istemelidir bazı dönüş parametreler (örneğin, `ITypeInfo`) yüklemek veya oluşturmak için önemli miktarda zaman alabilir. Aşağıdaki değerlerin bir birleşimi olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
@@ -52,10 +52,10 @@ HRESULT GetItemInfo(
 |SCRIPTINFO_ITYPEINFO|Döndürür `ITypeInfo` bu öğe için arabirim.|  
   
  `ppunkItem`  
- [out] Bir işaretçi alan değişkenin adresini `IUnknown` verilen öğeyle ilişkili arabirimi. Komut dosyası altyapısı kullanabilirsiniz `IUnknown::QueryInterface` elde etmek için yöntemi `IDispatch` öğesi için arabirim. Bu parametre NULL ise alır `dwReturnMask` SCRIPTINFO_IUNKNOWN değer içermez. Ayrıca, öğe adı ile ilişkili hiçbir nesnesi yoksa NULL alır; Bu mekanizma SCRIPTITEM_CODEONLY bayrağı ayarlanmış adlandırılmış öğe eklendiğinde basit bir sınıf oluşturmak için kullanılan [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.  
+ [out] Bir işaretçiye alan değişkenin adresini `IUnknown` verilen öğeyle ilişkili arabirimi. Komut dosyası altyapısı kullanabilirsiniz `IUnknown::QueryInterface` elde etmek için yöntemi `IDispatch` öğe için arabirim. Bu parametre NULL ise alan `dwReturnMask` SCRIPTINFO_IUNKNOWN değeri içermez. Ayrıca, öğe adı ile ilişkili hiçbir nesne yoksa NULL alır. Bu mekanizma kümesinde SCRIPTITEM_CODEONLY bayrağıyla adlandırılmış öğe eklendiğinde, basit bir sınıf oluşturmak için kullanılan [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.  
   
  `ppTypeInfo`  
- [out] Bir işaretçi alan değişkenin adresini `ITypeInfo` öğeyle ilişkili arabirimi. Bu parametre NULL ise alır `dwReturnMask` SCRIPTINFO_ITYPEINFO değer içermez veya bu öğe için tür bilgileri kullanılamıyor. Tür bilgileri kullanılabilir değilse, nesne olayları kaynak olamaz ve ad bağlama gerçekleşen, ile `IDispatch::GetIDsOfNames` yöntemi. Unutmayın `ITypeInfo` alınan arabirimi nesne birden çok arabirimleri ve olay arabirimleri destekleyebilir çünkü maddenin coclass'ı (TKIND_COCLASS) açıklanmaktadır. Öğe destekliyorsa `IProvideMultipleTypeInfo` arabirimi, `ITypeInfo` alınan arabirimidir sıfır dizini ile aynı `ITypeInfo` , elde edilebilir kullanarak `IProvideMultipleTypeInfo::GetInfoOfIndex` yöntemi.  
+ [out] Bir işaretçiye alan değişkenin adresini `ITypeInfo` öğeyle ilişkili arabirimi. Bu parametre NULL ise alan `dwReturnMask` SCRIPTINFO_ITYPEINFO değeri içermez veya bu öğe için tür bilgileri kullanılamıyor. Tür bilgileri kullanılabilir değil, olay kaynağı nesnesi olamaz ve ad bağlaması gerçekleşen, ile `IDispatch::GetIDsOfNames` yöntemi. Unutmayın `ITypeInfo` alınan arabirimi nesnesi birden fazla arabirim ve olay arabirimleri destekleyebilir çünkü öğenin coclass'ı (TKIND_COCLASS) açıklanmaktadır. Öğe destekliyorsa `IProvideMultipleTypeInfo` arabirimi `ITypeInfo` alınan arabirimidir aynı dizin sıfır olarak `ITypeInfo` , elde edilebilir kullanarak `IProvideMultipleTypeInfo::GetInfoOfIndex` yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -63,12 +63,12 @@ HRESULT GetItemInfo(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_INVALIDARG`|Bağımsız değişken geçersiz.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
+|`E_INVALIDARG`|Bir bağımsız değişken geçersiz.|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
 |`TYPE_E_ELEMENTNOTFOUND`|Belirtilen adda bir öğe bulunamadı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca tarafından gösterilen bilgileri alır `dwReturnMask` parametresi; bu performansını artırır. Örneğin, bir `ITypeInfo` arabirimi bir öğe için gerekli değildir, bu yalnızca içinde belirtilmemiş `dwReturnMask`.  
+ Bu yöntem yalnızca tarafından gösterilen bilgileri alır `dwReturnMask` parametre; Bunun yapılması performansı artırır. Örneğin, bir `ITypeInfo` arabirimi bir öğe için gerekli değildir, bu yalnızca belirtilmedi `dwReturnMask`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

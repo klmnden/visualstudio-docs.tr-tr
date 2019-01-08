@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::gettlsvalue yöntemi | Microsoft Docs
+title: Ijsdebugdatatarget::gettlsvalue metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4205adfb24a1a64d4e90f3fdcaf5a5ecbc4028de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f81e9ea6cca9bf54753a496e07903d23bb913fc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794519"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095335"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue Metodu
-Ayıklanacak iş parçacığı, iş parçacığı yerel depolaması (TLS) yuvasındaki belirtilen TLS dizin değeri alır.  
+Hatası ayıklanmakta olan iş parçacığı, belirli TLS dizini için iş parçacığı yerel depolama (TLS) yuvasındaki değeri alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetTlsValue(  
    DWORD threadId,  
    UINT32 tlsIndex,  
@@ -41,18 +41,18 @@ HRESULT GetTlsValue(
  [in] Okunacak hedef işlemde çalışan iş parçacığı.  
   
  `tlsIndex`  
- [in] Hedef işlemin TlsAlloc işlevi çağrıldığında ayrıldı TLS dizini.  
+ [in] Hedef işlem TlsAlloc işlevini çağırdığında, ayrılmış olan TLS dizini.  
   
  `pValue`  
- [out] İş parçacığının TLS yuvasında saklanan işaretçi ölçekli değeri. Hedef iş parçacığı 32 bit ise, bu değer üst 32-bit sıfır olur.  
+ [out] İş parçacığının TLS yuvasında depolanan işaretçi boyutlu değer. Hedef iş parçacığı 32-bit ise, bu değerin üst 32-biti sıfır olacaktır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her iş parçacığı bir işlemin her TLS dizin için kendi yuva vardır.  
+ Bir işlemin her bir iş parçacığı her TLS dizini için kendi yuvasına sahiptir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

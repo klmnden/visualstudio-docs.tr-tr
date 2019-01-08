@@ -16,26 +16,26 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82e599ae94f422352706a0ec6cd9387bfa6799f2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 240df77731b92ebb91cefc3f1a326e7dd77c847a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793385"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094529"
 ---
 # <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
-Bir komut dosyası altyapısı profil oluşturma başlatıldığında profil oluşturucu nesneyi başlatmak için çağrılır.  
+Bir komut dosyası altyapısına profil oluşturma başlatıldığında, profil oluşturucu nesnesini başlatmak üzere çağrılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Initialize(  
     [in] DWORD dwContext);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `dwContext`  
- [in] Geçirilen bir 4 bayt değeri [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
+ [in] Geçirilen bir 4 baytlık değer [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  HRESULT döndürür. Olası değerler aşağıdaki gibidir:  
@@ -45,7 +45,7 @@ HRESULT Initialize(
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yöntem profil oluşturucu nesnesini başlatamıyor, komut dosyası altyapısı bildirmek için bir hata HRESULT döndürmelidir. Bu durumda, komut dosyası altyapısı doğrudan çağırmalıdır [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)HRESULT parametresinde geçirme ve profil oluşturucu nesne serbest bırakın.  
+ Yöntemi, profil oluşturucu nesnesini başlatamıyor, komut dosyası altyapısı bildirmek için bir hata HRESULT döndürmelidir. Bu durumda, komut dosyası altyapısı doğrudan çağırmalıdır [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)HRESULT parametre geçirerek ve sonra Profil Oluşturucu nesnesini serbest bırakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptprofilercallback arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback Arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)

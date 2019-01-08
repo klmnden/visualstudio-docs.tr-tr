@@ -16,26 +16,26 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63d837b0f7a59b1e3efc832c4d98cb7dcab5447c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b65c536c303a9bc0da7d0e29992315c05a61de52
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793430"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092488"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
-Komut dosyası altyapısı profil durdurur. Bu yöntemi çağırır [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) profil oluşturucu nesnesindeki ve ardından serbest bırakır.  
+Komut dosyası altyapısına profil oluşturmayı durdurur. Bu yöntemin çağırdığı [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) profil oluşturucu nesnesindeki ve ardından serbest bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT StopProfiling(  
     [in] HRESULT hrShutdownReason);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `hrShutdownReason`  
- [in] Bir parametre olarak geçirilecek HRESULT [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) profil oluşturucu nesnesinin yöntemi.  
+ [in] Bir parametre olarak geçirilecek HRESULT [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) profil oluşturucu nesnesini yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  HRESULT döndürür. Olası değerler aşağıdaki gibidir:  
@@ -46,4 +46,4 @@ HRESULT StopProfiling(
 |`ACTIVPROF_E_PROFILER_ABSENT`|Profil oluşturma etkin değil.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptprofilercontrol arabirimi](../../winscript/reference/iactivescriptprofilercontrol-interface.md)
+ [IActiveScriptProfilerControl Arabirimi](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

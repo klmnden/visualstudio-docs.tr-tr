@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 075e28f8e9293412492a83c6b04ca4473925e8c1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1335fd0fa71e7263dd0b762d13acbc33ce505eda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794300"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090811"
 ---
 # <a name="ienumdebugpropertyinforeset"></a>IEnumDebugPropertyInfo::Reset
-Bir numaralandırma sırasını başlangıç durumuna sıfırlar.  
+Bir numaralandırma sıralı başlangıç durumuna sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Reset (  
 void  
 );  
@@ -40,4 +40,4 @@ void
  Geçerli bir döndürür `HRESULT`, genellikle `S_OK`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumdebugpropertyınfo arabirimi](../../winscript/reference/ienumdebugpropertyinfo-interface.md)
+ [IEnumDebugPropertyInfo Arabirimi](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -18,21 +18,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793658"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095127"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Ana bilgisayar işlemi hata ayıklarken Yöneticisi bir komut dosyası çalışma zamanı hatası hakkında bir süre yalnızca komut dosyası hata ayıklayıcısı bulamazsa bildirir.  
+Konak işlemde hata ayıklamak, Yöneticisi bir komut dosyası çalışma zamanı hatası hakkında tam zamanında betik hata ayıklayıcısı bulamazsa bildirir.  
   
- Bir hata ayıklayıcısı ana bilgisayarınız uygulamak için işlemelidir [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Bir kullanıcı eylemi bağlı olarak, konak ya da hata ayıklayıcı ekleyebileceğini ve dönün veya OnScriptErrorDebug hata ayıklayıcıda başlangıç dönmek `pfEnterDebugger` parametresi. Ayrıca işlem hata ayıklama Yöneticisi tarafından yorumlanabilen dış hiçbir hata ayıklayıcıları olsa bile çalışma zamanı hata hakkında bildirim almak için bu arabirimi uygulamalıdır.  
+ Bir hata ayıklayıcı, ana bilgisayar uygulamak için işleyeceğini [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Bir kullanıcı eylemine bağlı olarak, konak ya da debugger iliştirebilmek için dönün ve OnScriptErrorDebug hata ayıklayıcıda başlangıç dönüş `pfEnterDebugger` parametresi. Ayrıca, hata ayıklama işlemi Yöneticisi tarafından yorumlanan dış hiçbir hata ayıklayıcıları olsa bile, çalışma zamanı hatası hakkında bildirim almak için bu arabirimi uygulamalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnCanNotJITScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug  
    BOOL *pfCallOnScriptErrorWhenContinuing  
@@ -44,17 +44,17 @@ HRESULT OnCanNotJITScriptErrorDebug(
  [in] Çalışma zamanı hata oluştu.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- [out] Çağrılıp çağrılmayacağını [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) hata ayıklama yapmadan devam etmek kullanıcı karar verirse.  
+ [out] Çağrılıp çağrılmayacağını [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) hata ayıklama olmadan devam etmek kullanıcı karar verirse.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayrıca bir bildirim almak için bu arabirimi uygulamalıdır.  
+ Ayrıca, bir bildirim almak için bu arabirimi uygulamalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsitedebugex arabirimi](../../winscript/reference/iactivescriptsitedebugex-interface.md)
+ [IActiveScriptSiteDebugEx Arabirimi](../../winscript/reference/iactivescriptsitedebugex-interface.md)

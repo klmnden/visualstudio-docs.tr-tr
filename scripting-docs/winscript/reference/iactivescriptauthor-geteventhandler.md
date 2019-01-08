@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b09f900162b6dba82696c946b53ab131691530c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7f6cc265815db4acd847270b28c3e744257fa0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793268"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086690"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Belirtilen öznitelikleri Resimli döndürür.  
+Belirtilen öznitelikleri scriptlet döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetEventHandler(  
    IDispatch          *pdisp,  
    LPCOLESTR          pszItem,  
@@ -42,19 +42,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parametreler  
  `pdisp`  
- [in] `IDispatch` Karşılık gelen nesne `NamedItem` Resimli ekli olduğu için.  
+ [in] `IDispatch` Karşılık gelen nesne `NamedItem` scriptlet ekli olduğu için.  
   
  `pszItem`  
- [in] Ana bilgisayar tam Resimli adlarında en üst düzey tanıtıcısı arabellek adresi.  
+ [in] Üst düzey konak tam kod oluşturma adı tanıtıcısı arabellek adresi.  
   
  `pszSubItem`  
- [in] Ana bilgisayar tam Resimli adlarında ikinci düzey tanıtıcısı arabellek adresi. Ad yalnızca bir düzey varsa NULL olarak ayarlayın.  
+ [in] Ana bilgisayarın tam kod oluşturma adı ikinci düzey tanıtıcısı arabellek adresi. Tek düzey adı varsa, NULL olarak ayarlayın.  
   
  `pszEvent`  
- [in] Olay adı içeren bir arabellek adresi. Kod parçacığı, bu olay için olay işleyicisidir.  
+ [in] Olay adını içeren bir arabellek adresi. Kod oluşturma, bu olay için olay işleyicisidir.  
   
  `ppse`  
- [out] Bir işaretçi alan değişkenin adresini `IScriptEntry` belirtilen öznitelikleri Resimli arabirimi.  
+ [out] Bir işaretçiye alan değişkenin adresini `IScriptEntry` belirtilen öznitelikleri ayrıldığında arabirimi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -67,4 +67,4 @@ HRESULT GetEventHandler(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)   
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

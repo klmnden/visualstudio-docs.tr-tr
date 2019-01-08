@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89faa6481bd5e5934ae2d3b85a0bade83949633a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fa444573e418de1a59219eb48b09e64b08d859a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793823"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089901"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Bir yığın çerçeve Numaralandırıcı sağlayıcısı bu uygulamaya ekler.  
+Bu uygulama için bir yığın çerçevesi Numaralandırıcı sağlayıcısı ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddStackFrameSniffer(  
    IDebugStackFrameSniffer*  pdsfs,  
    DWORD*                    pdwCookie  
@@ -42,19 +42,19 @@ HRESULT AddStackFrameSniffer(
  [in] Bu uygulama eklemek için yığın çerçeve Numaralandırıcı sağlayıcısı.  
   
  `pdwCookie`  
- [out] Bu yığın çerçeve Numaralandırıcı sağlayıcı uygulamadan kaldırmak için kullanılan bir tanımlama bilgisi.  
+ [out] Bu yığın çerçevesi Numaralandırıcı sağlayıcı uygulamayı kaldırmak için kullanılan tanımlama bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Dil motorları genellikle kendi yığın çerçeveleri hata ayıklayıcı için kullanıma sunmak için bu yöntemi çağırın rağmen yığın çerçeveleri kullanıma sunmak diğer varlıklar için mümkündür.  
+ Dil altyapıları genellikle yığın çerçevelerine hata ayıklayıcı kullanıma sunmak için bu yöntemi çağırın, bu yığın çerçevesi ortaya çıkarmak diğer varlıklar için mümkündür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
- [Idebugstackframesniffer arabirimi](../../winscript/reference/idebugstackframesniffer-interface.md)
+ [IDebugStackFrameSniffer Arabirimi](../../winscript/reference/idebugstackframesniffer-interface.md)

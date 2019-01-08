@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b11b8566857bc70aaeac5bdf8e8e357fa5d9c2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2b191f1b70aa522cba0a04e0781ada69a8fe5ca5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791891"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097532"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-Bir komut dosyası iş parçacığı geçerli durumunu alır.  
+Bir betik iş parçacığı geçerli durumunu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetScriptThreadState(  
     SCRIPTTHREADID stidThread,    // identifier of script thread  
     SCRIPTTHREADSTATE *pstsState  // receives state flag  
@@ -39,15 +39,15 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Parametreler  
  `stidThread`  
- [in] İş parçacığı durumu istendiği tanıtıcısı, veya aşağıdaki özel iş parçacığı tanımlayıcıları:  
+ [in] Kendisi için durumu istenen iş parçacığı tanıtıcısı veya aşağıdaki özel iş parçacığı tanımlayıcılarından birini:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|Temel iş parçacığı; diğer bir deyişle, komut dosyası altyapısını iş parçacığı örneğinin başlatılmasından.|  
+|SCRIPTTHREADID_BASE|Temel; iş parçacığı diğer bir deyişle, iş parçacığı, komut dosyası altyapısı örneği.|  
 |SCRIPTTHREADID_CURRENT|Şu anda yürütülen iş parçacığı.|  
   
  `pstsState`  
- [out] Belirtilen iş parçacığı durumu alan değişkenin adresini. Durumu tarafından tanımlanan adlandırılmış sabit değerleri biri tarafından gösterilen [SCRIPTTHREADSTATE numaralandırması](../../winscript/reference/scriptthreadstate-enumeration.md) numaralandırması. Bu parametre geçerli iş parçacığının tanımlamıyorsa durumu herhangi bir zamanda değişebilir.  
+ [out] Belirtilen iş parçacığı durumu alan değişkenin adresi. Durum tarafından tanımlanan adlandırılan sabit değerlerden biri tarafından belirtilen [SCRIPTTHREADSTATE numaralandırması](../../winscript/reference/scriptthreadstate-enumeration.md) sabit listesi. Bu parametre, geçerli iş parçacığı tanımlamaz, durumu herhangi bir zamanda değişebilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -55,11 +55,11 @@ HRESULT GetScriptThreadState(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, komut dosyası altyapısı henüz yüklenen başlatılmadı veya).|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, komut dosyası altyapısı henüz yüklenen başlatıldı veya).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir temel olmayan belirtme çizgisi içinde ana bilgisayar nesneleri veya çok sonuçlanmadan temel olmayan iş parçacığı tarafından çağrılabilir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) arabirimi.  
+ Temel olmayan belirtme ana bilgisayar nesneleri veya çok kaynaklanan olmadan, bu yöntem temel olmayan iş parçacığından çağrılabilir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript](../../winscript/reference/iactivescript.md)

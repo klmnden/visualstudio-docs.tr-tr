@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796445"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088575"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST Yapısı
-Bu yapı, yalnızca işlev nesneleri ile ilişkilidir. Kapsam listesinden Kapatılmak üzere işlevi kapsamların her kapsam her verilen kapsam değişkenleri temsil eden bir ilişkili özellik listesini yığın nesnesiyle olduğu bir liste olarak temsil eder. Bazı durumlarda, kapsam kullanılamayabilir nesneleri ve özellik listesi yalnızca kendi dizine adları kullanılabilir.  
+Bu yapı, işlev nesneleri ile ilişkilidir. Kapsam listesi, her kapsam her verilen kapsam içinde değişkenlere temsil eden bir ilişkili özelliğin listesiyle bir yığın nesnesi olduğu kapsamların listesini olarak işlevin kabini temsil eder. Bazı durumlarda, kapsam kullanılamayabilir nesneleri ve özellik listesi yalnızca kendi dizine adları kullanılabilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   
@@ -32,5 +32,5 @@ typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(coun
   
 |Üye|Tür|Açıklama|  
 |------------|----------|-----------------|  
-|count|UINT|Kapsam sayısı|  
-|kapsamlar|[Profıler_heap_object_ıd türü](../../winscript/reference/profiler-heap-object-id-type.md)|Kapsamları dizisi.|
+|count|UINT|Kapsamların sayısı|  
+|kapsamlar|[PROFILER_HEAP_OBJECT_ID Türü](../../winscript/reference/profiler-heap-object-id-type.md)|Kapsamları dizisi.|

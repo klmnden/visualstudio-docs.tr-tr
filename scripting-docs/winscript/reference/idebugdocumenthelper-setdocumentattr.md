@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0fb7fc506c8ed0284fe7d0f4853c6410218865b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e743242366c040c02595642fd594ae184436d282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793922"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090330"
 ---
 # <a name="idebugdocumenthelpersetdocumentattr"></a>IDebugDocumentHelper::SetDocumentAttr
-Bu belge özniteliklerini ayarlar.  
+Bu belge için öznitelikleri ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetDocumentAttr(  
    TEXT_DOC_ATTR  pszAttributes  
 );  
@@ -41,15 +41,15 @@ HRESULT SetDocumentAttr(
  [in] Belgeye uygulamak için öznitelikler.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bu belgede özniteliklerini ayarlar.  
+ Bu yöntem, bu belge için öznitelikleri ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [TEXT_DOC_ATTR sabitleri](../../winscript/reference/text-doc-attr-constants.md)
+ [TEXT_DOC_ATTR Sabitleri](../../winscript/reference/text-doc-attr-constants.md)

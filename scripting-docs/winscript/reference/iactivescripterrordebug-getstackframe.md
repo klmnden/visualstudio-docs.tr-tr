@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9331738c52453f4ef80b70ab7eebd79907d1f54
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793316"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094139"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
 Çalışma zamanı hataları için geçerli olan yığın çerçevesi sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -38,10 +38,10 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parametreler  
  `ppdsf`  
- [out] Hata yığını çerçevesi.  
+ [out] Hata için yığın çerçevesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetStackFrame(
  Bu yöntem, geçerli çalışma zamanı hataları için yığın çerçevesi sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescripterrordebug arabirimi](../../winscript/reference/iactivescripterrordebug-interface.md)
+ [IActiveScriptErrorDebug Arabirimi](../../winscript/reference/iactivescripterrordebug-interface.md)

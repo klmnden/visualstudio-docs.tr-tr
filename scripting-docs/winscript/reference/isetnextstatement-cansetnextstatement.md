@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5288b0cffc3b8bfca0e995e67d4b3e4bf3a6b2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796277"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090135"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Bu yöntem, belirtilen konuma yürütülecek kod next deyimi belirler, yürütme noktası ayarlanmış olup olmadığını belirler.  
+Bu yöntem, belirtilen konuma belirleyen kodda yürütülecek sonraki deyimin yürütme noktasını ayarlayıp ayarlayamayacağını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CanSetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,20 +37,20 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Parametreler  
  `pStackFrame`  
- [in] Yığın çerçevesi nesnesine işaretçi.  
+ [in] Bir yığın çerçevesi nesne işaretçisi.  
   
  `pCodeContext`  
  [in] Kod kapsamı nesnesine işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`S_OK`|Sonraki deyim, belirtilen kod bağlamına güncelleştirilebilir.|  
-|`S_FALSE`|Sonraki deyim, belirtilen kod bağlamına güncelleştirilemiyor.|  
+|`S_OK`|Sonraki deyim, belirtilen kod bağlamı için güncelleştirilebilir.|  
+|`S_FALSE`|Sonraki deyimi için belirtilen kod bağlamı güncelleştirilemiyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Isetnextstatement arabirimi](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement Arabirimi](../../winscript/reference/isetnextstatement-interface.md)

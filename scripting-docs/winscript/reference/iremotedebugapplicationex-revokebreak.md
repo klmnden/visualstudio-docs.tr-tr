@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8712431dd72cd25e2ba4203d2b076a163e005be6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 537fb9cba51b1a13e82ffd2321bb96514dc16337
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794780"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087626"
 ---
 # <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
-Break komutu iptal eder.  
+Break komutunu iptal eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT RevokeBreak( );  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT RevokeBreak( );
  Yok.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -47,4 +47,4 @@ HRESULT RevokeBreak( );
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationex arabirimi](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+ [IRemoteDebugApplicationEx Arabirimi](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

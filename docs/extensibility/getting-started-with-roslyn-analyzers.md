@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 591e09596c92476b7664b541d74344099d19ecb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70dcdcfbc31434dd09f83951e7d89d9fd1832168
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874541"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091721"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn çözümleyicileriyle çalışmaya başlama
 
@@ -39,4 +39,4 @@ Visual Studio'da canlı, proje temelli kod çözümleyicileriyle API yazarlar, e
 - [Öğretici: İlk Çözümleyicisi ve kod düzeltmenizi yazın](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET derleyici platformu Paket sürümü başvurusu](roslyn-version-support.md)
 - [GitHub OSS sitesinde daha fazla belgeleri](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [Roslyn çözümleyicilerini github'da ile uygulanan FxCop kuralı](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+- [Roslyn çözümleyicileriyle uygulandığı FxCop kuralı](http://roslynanalyzersstatus.azurewebsites.net/)

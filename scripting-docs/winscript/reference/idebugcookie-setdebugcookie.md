@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1155b00750cfe2a91625ba0f531622f381467198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d67ea7f4cc8a27364226a613c77d837f476c2530
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793901"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095049"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
 Hata ayıklama uygulama tanımlama bilgisi ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetDebugCookie(  
    DWORD  dwDebugAppCookie  
 );  
@@ -38,17 +38,17 @@ HRESULT SetDebugCookie(
   
 #### <a name="parameters"></a>Parametreler  
  `dwDebugAppCookie`  
- [in] Hata ayıklama uygulama tanımlayan bir tanımlama bilgisi.  
+ [in] Hata ayıklama uygulamayı tanımlayan bir çerez.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntemi bir işlem eklemek birden fazla hata ayıklayıcı sağlayan hata ayıklama uygulama tanımlama bilgisi ayarlar.  
+ Bu yöntem sağlayan bir işleme birden fazla hata ayıklayıcı hata ayıklama uygulama tanımlama bilgisi ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugcookie arabirimi](../../winscript/reference/idebugcookie-interface.md)
+ [IDebugCookie Arabirimi](../../winscript/reference/idebugcookie-interface.md)

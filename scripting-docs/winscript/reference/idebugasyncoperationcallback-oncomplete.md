@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc55918c25da695f9eab470bf39fc648910ddc97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4909f469b558ef4664a74c4a7926001d20adc40e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793931"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089407"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-Sonuçta bir zaman uyumsuz hata ayıklama işlemi kullanılabilir olduğunu bildirir.  
+Bir zaman uyumsuz hata ayıklama işleminin bir sonucu olduğunu bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT onComplete();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir sonuç bulunduğunu sinyalleri bir `IDebugAsyncOperation` nesnesi. Hata ayıklayıcı iş parçacığında olay ateşlenir.  
+ Bu yöntem bir sonuç kullanılabilir olduğundan emin sinyalleri bir `IDebugAsyncOperation` nesne. Hata ayıklayıcı iş parçacığında olay harekete geçirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugasyncoperationcallback arabirimi](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
- [Idebugasyncoperation arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation Arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)

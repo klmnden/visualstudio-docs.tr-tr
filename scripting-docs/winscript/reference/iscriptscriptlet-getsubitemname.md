@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b8483e8a61c25a3911a35d4721c51f7b558530
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6962edbc1f639e23e159915ca1aa6ef165433ce0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796265"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096648"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Son tanımlayıcı Resimli 's nesne ana bilgisayarın tam adı döndürür.  
+Son tanımlayıcı scriptlet'ın nesne konağının tam adını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetSubItemName(  
    BSTR               *pbstr  
 );  
@@ -38,9 +38,9 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstr`  
- [out] Kod parçacığını ad ana bilgisayar tam birden fazla düzey sahipse `pbstr` ikinci düzeyde tanımlayıcı arabellek adresini döndürür.  
+ [out] Kod oluşturma adı konak tam birden fazla düzeyde sahipse `pbstr` ikinci düzeyde tanımlayıcısının arabellek adresi döndürür.  
   
- Kod parçacığını ad ana bilgisayar tam bir düzey sahipse `pbstr` ilk düzeyinde tanımlayıcı arabellek adresini döndürür.  
+ Kod oluşturma adı konağı tam olarak bir düzey sahipse `pbstr` ilk düzeydeki tanımlayıcısının arabellek adresi döndürür.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -52,4 +52,4 @@ HRESULT GetSubItemName(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptscriptlet arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet Arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)

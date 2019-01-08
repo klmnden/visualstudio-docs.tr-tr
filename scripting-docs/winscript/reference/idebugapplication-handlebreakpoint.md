@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16b05533c566cb90529766d81fb7197dbc284664
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793997"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095374"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Engellemek geçerli iş parçacığının neden olur ve IDE hata ayıklayıcı kesme noktası bir bildirim gönderir.  
+Geçerli iş parçacığını engellemek neden olur ve IDE hata ayıklayıcı kesme noktası bir bildirim gönderir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT HandleBreakPoint(  
    BREAKREASON         br,  
    BREAKRESUMEACTION*  pbra  
@@ -39,23 +39,23 @@ HRESULT HandleBreakPoint(
   
 #### <a name="parameters"></a>Parametreler  
  `br`  
- [in] Break nedeni.  
+ [in] Kesme nedeni.  
   
  `pbra`  
- [out] Hata ayıklayıcı uygulama çıktığında yapılacak eylem.  
+ [out] Hata ayıklayıcı uygulama devam ettiğinde gerçekleştirilecek eylem.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir dil alt yapısı bir kesme noktası isabet bir iş parçacığı bağlamında bu yöntemi çağırır. Bu yöntem, geçerli iş parçacığının engeller ve IDE hata ayıklayıcı bir kesme noktası bildirim gönderir. Hata ayıklayıcı uygulama çıktığında `pbra` parametresi, hangi eylemin yapılacağını belirtir.  
+ Bir dil altyapısı, bir kesme noktasına denk gelir, bir iş parçacığının bağlamında bu yöntemi çağırır. Bu yöntem, geçerli iş parçacığını engeller ve IDE hata ayıklayıcı bir kesme noktası bildirim gönderir. Hata ayıklayıcı, uygulama devam ettiğinde `pbra` parametresi, gerçekleştirilecek eylemi belirtir.  
   
 > [!NOTE]
->  Dil altyapısı yığını listeleme gibi çerçeveleri veya kesme sırasında ifadeleri değerlendirme görevleri gerçekleştirmek için iş parçacığı tarafından çağrılabilir.  
+>  Dil altyapısı, yığın numaralandırma gibi çerçeveleri veya sırasında kesme noktası nevyhodnocovat görevleri gerçekleştirmek için iş parçacığı tarafından çağrılabilir.  
   
  Bu yöntem neden `IApplicationDebugger::onHandleBreakPoint` çağrılabilir.  
   
@@ -63,4 +63,4 @@ HRESULT HandleBreakPoint(
  [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
  [BREAKREASON numaralandırması](../../winscript/reference/breakreason-enumeration.md)   
- [BREAKRESUMEACTION numaralandırması](../../winscript/reference/breakresumeaction-enumeration.md)
+ [BREAKRESUMEACTION Sabit Listesi](../../winscript/reference/breakresumeaction-enumeration.md)

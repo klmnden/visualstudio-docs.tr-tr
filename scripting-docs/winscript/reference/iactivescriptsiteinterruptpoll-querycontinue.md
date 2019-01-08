@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93323d500ae7e99957c365d60741fa612ba0fc34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b43211dca57a404d5625cfc2d7ede67a70a0a40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793679"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087990"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-Bir komut dosyası sonlanmalıdır belirtmek bir konak sağlar.  
+Bir betik sonlandırması gerektiğini belirtmek bir konak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT QueryContinue();  
 ```  
   
@@ -38,17 +38,17 @@ HRESULT QueryContinue();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`S_OK`|Çağrı başarılı oldu ve ana bilgisayar betik çalıştırmaya devam etmesine izin verir.|  
-|`S_FALSE`|Başarılı arama ve betiği konak istekleri.|  
+|`S_OK`|Çağrı başarılı oldu ve konak betiği çalıştırmaya devam etmesine izin verir.|  
+|`S_FALSE`|Başarılı çağrı ve betik sonlandırma konak istekleri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Barındırılan betik sürece sonlanmalıdır dönüş değerini `QueryContinue` yöntemi `S_OK`. Dönüş değeri `S_FALSE` betik sonlandırmak konak açıkça istekleri gösterir.  
+ Barındırılan betik sürece sonlandırması gerektiğini dönüş değerini `QueryContinue` yöntemi `S_OK`. Dönüş değeri `S_FALSE` betik sonlandırma, konak açıkça istekleri gösterir.  
   
- Birden çok iş parçacıklı bir ana bilgisayar kullanabilir `IActiveScript::InterruptScriptThread` bir betiği sonlanmaya yöntemi.  
+ Çok iş parçacıklı bir konak kullanabilir `IActiveScript::InterruptScriptThread` bir betik sonlandırmak için yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptsiteınterruptpoll arabirimi](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eafe5477759dbad109e5ae6294b477d56f9ee14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4190bef0ca5cbedf709e65fafd1f49911ebb6510
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794015"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090200"
 ---
 # <a name="idebugapplicationthreadsetstatestring"></a>IDebugApplicationThread::SetStateString
-İş parçacığı durumu açıklamasını ayarlar.  
+İş parçacığı durumu açıklaması ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetStateString(  
    LPCOLESTR  pstrState  
 );  
@@ -41,14 +41,14 @@ HRESULT SetStateString(
  [in] İş parçacığı durumu açıklaması.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem iş parçacığı durumu açıklamasını ayarlar.  
+ Bu yöntem iş parçacığı durumu açıklaması ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationthread arabirimi](../../winscript/reference/idebugapplicationthread-interface.md)
+ [IDebugApplicationThread Arabirimi](../../winscript/reference/idebugapplicationthread-interface.md)

@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ca7594f4e3c6ef44aa8cde1d92f17d46a9aa30
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f9c39163eae1f3a9bad15697bbc5621661bc781
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794486"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088289"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker Yöntemi
-Yığın walker için Üreteç yöntemi.  
+Yığın değişkeni için fabrika yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateStackWalker(  
    DWORD threadId,  
    IJsDebugStackWalker **ppStackWalker  
@@ -37,18 +37,18 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>Parametreler  
  `threadId`  
- [in] İş parçacığı kimliği  
+ [in] İş parçacığı kimliği.  
   
  `ppStackWalker`  
- [out] Yeni yığın walker nesnesi.  
+ [out] Yeni yığın değişkeni nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- İş parçacığı üzerinde JavaScript yoksa, E_JsDEBUG_UNKNOWN_THREAD döndürür. Bu yöntem, yalnızca hedef işlem durdurulduğunda çağrılabilir.  
+ İş parçacığı üzerinde JavaScript yoksa, E_JsDEBUG_UNKNOWN_THREAD döndürür. Bu yöntem, yalnızca hedef işlem durdurulurken çağrılabilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugprocess arabirimi](../../winscript/reference/ijsdebugprocess-interface.md)
+ [IJsDebugProcess Arabirimi](../../winscript/reference/ijsdebugprocess-interface.md)

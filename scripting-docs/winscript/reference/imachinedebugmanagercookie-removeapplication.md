@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe0849b2f580eac7759db36335823a737a198e55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9ecd3c8f5b5ebed8419e6e916334552a44646fe9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794771"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087262"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
 Bir uygulamanın çalışmasını kaldırır uygulama listesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwDebugAppCookie,  
    DWORD  dwAppCookie  
@@ -39,20 +39,20 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametreler  
  `dwDebugAppCookie`  
- [in] Hata ayıklama uygulama tanımlayan bir tanımlama bilgisi.  
+ [in] Hata ayıklama uygulamayı tanımlayan bir çerez.  
   
  `dwAppCookie`  
  [in] Uygulama uygulama listesine eklendiğinde sağlanan tanımlama bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem işlem hata ayıklama Yöneticisi tarafından çağrılır her `IProcessDebugManager::RemoveApplication` olarak adlandırılır.  
+ Bu yöntem işlem hata ayıklama Yöneticisi tarafından çağrılır her `IProcessDebugManager::RemoveApplication` çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   

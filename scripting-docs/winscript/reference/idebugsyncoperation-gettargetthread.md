@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df3e65d53e20dd51d045f26855c4f5e058dff159
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4ff27e3d91abe19608bbe10051814d7e0f71af7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794219"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096713"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
-Bu zaman uyumlu işlem için hedef uygulama iş parçacığı döndürür.  
+Bu eşzamanlı bir işlem için hedef uygulama iş parçacığı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetTargetThread(  
    IDebugApplicationThread**  ppatTarget  
 );  
@@ -38,17 +38,17 @@ HRESULT GetTargetThread(
   
 #### <a name="parameters"></a>Parametreler  
  `ppatTarget`  
- [out] Hedef uygulama iş parçacığı bu zaman uyumlu işlem için.  
+ [out] Hedef uygulama için iş parçacığı bu eşzamanlı bir işlem.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem hedef uygulama iş parçacığı bu eşzamanlı bir işlem için döndürür.  
+ Hedef uygulama iş parçacığı bu eşzamanlı bir işlem için bu yöntemi döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugsyncoperation arabirimi](../../winscript/reference/idebugsyncoperation-interface.md)
+ [IDebugSyncOperation Arabirimi](../../winscript/reference/idebugsyncoperation-interface.md)

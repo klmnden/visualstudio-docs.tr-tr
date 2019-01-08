@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93e5c27422d6b348d8c961d1555bfce07183e9e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17d27a320eac95445c083c718f5abcebbbc46cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794477"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088848"
 ---
 # <a name="idebugdocumenttextexternalauthorgetpathname"></a>IDebugDocumentTextExternalAuthor::GetPathName
-Belgenin tam yolunu ve dosya adını döndürür.  
+Belgenin tam yolu ve dosya adını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,20 +42,20 @@ HRESULT GetPathName(
  [out] Tam yol ve dosya adını içeren dize.  
   
  `pfIsOriginalFile`  
- [out] Yol ve dosya adı bakın, belirten Boole değeri için özgün belgeye.  
+ [out] Yol ve dosya adı başvuruyorsa, gösteren Boole değeri için özgün belgeye.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_FAIL`|Kaynak dosya oluşturulamıyor veya belirledi.|  
+|`E_FAIL`|Kaynak dosya oluşturulduğunda veya belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belgenin tam yolunu ve dosya adını döndürür.  
+ Bu yöntem, belgenin tam yolu ve dosya adını döndürür.  
   
- Varsa `pfIsOriginalFile` FALSE, yol ve dosya adında `pbstrLongName` yeni oluşturulan bir geçici dosyasına bakın.  
+ Varsa `pfIsOriginalFile` FALSE, yol ve dosya adında `pbstrLongName` yeni oluşturulan geçici dosyasına bakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttextexternalauthor arabirimi](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)
+ [IDebugDocumentTextExternalAuthor Arabirimi](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

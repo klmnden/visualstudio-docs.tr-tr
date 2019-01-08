@@ -10,27 +10,27 @@ ms.assetid: 7c77aa16-f391-4c93-9f1a-4e529a9930b2
 caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 31de8258ae13855741c6dd5ca9e4ff2c589e97bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 685c596caa61a5cbd5042fad3a1bfb39c349c1b1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793331"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094698"
 ---
 # <a name="iactivescriptparse32initnew"></a>IActiveScriptParse32::InitNew
-Komut dosyası altyapısını başlatır.  
+Komut dosyası altyapısı başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT InitNew(void);  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı olursa ya da `E_FAIL` başlatma sırasında bir hata ortaya çıktıysa.  
+ Döndürür `S_OK` başarılı olursa veya `E_FAIL` , başlatma sırasında bir hata oluştu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Komut dosyası altyapısı kullanılabilmesi için aşağıdaki yöntemlerden birini çağrılmalıdır: `IPersist*::Load`, `IPersist*::InitNew`, veya `IActiveScriptParse32::InitNew`. Bu yöntem semantiği özdeş `IPersistStreamInit::InitNew`, bu yöntem kendisine başlatmak için komut dosyası altyapısı söyler. Her ikisi de çağırmak için geçerli olmadığını göz önünde bulundurun `IPersist*::InitNew` veya `IActiveScriptParse32::InitNew` ve `IPersist*::Load`, veya çağırmak için geçerli değil `IPersist*::InitNew`, `IActiveScriptParse32::InitNew`, veya `IPersist*::Load` birden çok kez.  
+ Komut dosyası altyapısı kullanılmadan önce aşağıdaki yöntemlerden birini çağrılmalıdır: `IPersist*::Load`, `IPersist*::InitNew`, veya `IActiveScriptParse32::InitNew`. Bu yöntem semantiği özdeş `IPersistStreamInit::InitNew`bu yöntem kendisine başlatmak için komut dosyası altyapısı söyler. Bu. Her ikisi de çağırmak için geçerli olmadığını göz önünde bulundurun `IPersist*::InitNew` veya `IActiveScriptParse32::InitNew` ve `IPersist*::Load`, veya çağırmak için geçerli değil `IPersist*::InitNew`, `IActiveScriptParse32::InitNew`, veya `IPersist*::Load` birden çok kez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

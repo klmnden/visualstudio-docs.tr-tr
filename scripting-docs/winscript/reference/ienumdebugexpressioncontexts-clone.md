@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f548bf0872d042a131c743554d6f45ccca0ebe98
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: aa3c8c230b22733cf9b36b0674297460fd30c7d0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794312"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088341"
 ---
 # <a name="ienumdebugexpressioncontextsclone"></a>IEnumDebugExpressionContexts::Clone
 Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugExpressionContexts**  ppedec  
 );  
@@ -38,10 +38,10 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parametreler  
  `ppedec`  
- [out] Döndürür `IEnumDebugExpressionContexts` Numaralandırıcı kopyanın arabirimi.  
+ [out] Döndürür `IEnumDebugExpressionContexts` Numaralandırıcı kopya arabirimi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT Clone(
  Bu yöntem, geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumdebugexpressioncontexts arabirimi](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)
+ [IEnumDebugExpressionContexts Arabirimi](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)

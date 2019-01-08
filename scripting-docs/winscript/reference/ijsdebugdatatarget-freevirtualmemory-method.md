@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed5fabfca8ac9b0e9fe0dfba346b0354f4c0576f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794777"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086807"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>IJsDebugDataTarget::FreeVirtualMemory Yöntemi
-Serbest bırakır ve/veya hedef işleminin sanal adres alanı içinde bellek bölgesi decommits.  
+Serbest bırakır ve/veya hedef işlemin sanal adres alanı içindeki bellek bölgesini kaydeder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT FreeVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -38,21 +38,21 @@ HRESULT FreeVirtualMemory(
   
 #### <a name="parameters"></a>Parametreler  
  `address`  
- [in] Bellek serbest burada hedef işlem içinde adres.  
+ [in] Burada belleğin serbest olacağı hedef işlem adres.  
   
  `size`  
- [in] Kaydettikleri bayt sayısı. Bir bölge belleği serbest bırakmak için bu değer sıfır olmalıdır.  
+ [in] Alınacağı bayt sayısı. Bir bellek bölgesini serbest bırakmak için bu değerin sıfır olması gerekir.  
   
  `freeType`  
- [in] Gerçekleştirmek için ücretsiz işlemi türünü belirtir. Bu genellikle sayfaların belirtilen bölge serbest MEM_RELEASE (0x8000) olur. İşleminden sonra sayfaları boş durumda. MEM_DECOMMIT (0x4000), bunun yerine, serbest bırakmadan sayfaları kaydettikleri için de kullanılabilir.  
+ [in] Gerçekleştirilecek ücretsiz işlem türünü belirtir. Genellikle, belirtilen sayfalar bölgesini serbest bırakan MEM_RELEASE (0x8000) budur. İşlemden sonra sayfalar boş durumdadır. Mem_decommıt (0x4000), bunun yerine onları bırakmadan sayfaları kaydetmek için kullanılabilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- VirtualFree Win32 API ek bilgi için bkz.  
+ Ek bilgi için bkz. VirtualFree Win32 API.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

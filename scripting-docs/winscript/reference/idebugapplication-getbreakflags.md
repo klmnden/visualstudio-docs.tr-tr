@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a44f56e4070c159e67b1303514592c5dda25f56d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793820"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087249"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-Uygulama için geçerli sonu bayrakları döndürür.  
+Uygulama için geçerli kesme bayrakları döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetBreakFlags(  
    APPBREAKFLAGS*                   pabf,  
    IRemoteDebugApplicationThread**  pprdatSteppingThread  
@@ -39,21 +39,21 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>Parametreler  
  `pabf`  
- [out] Uygulama geçerli sonunu işaretler.  
+ [out] Uygulama için geçerli kesme bayraklar.  
   
  `pprdatSteppingThread`  
  [out] Şu anda çalışan iş parçacığı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, uygulama için geçerli sonu bayrakları döndürür.  
+ Bu yöntem, uygulama için geçerli kesme bayrakları döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)   
- [APPBREAKFLAGS numaralandırması](../../winscript/reference/appbreakflags-enumeration.md)
+ [APPBREAKFLAGS Sabit Listesi](../../winscript/reference/appbreakflags-enumeration.md)

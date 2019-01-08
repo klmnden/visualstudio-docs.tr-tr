@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b21f906a73a313bf775683ba63738adb25af0007
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62499afe87a3d7dae31e609c9ce88f41e9d993a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793292"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089218"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
-Kök düzeyinde alt sitesi olarak kod Resimli ekler `IScriptNode` nesnesi. Ana bilgisayar Resimli tam adı, yalnızca iki düzeylerine sahip izin verilmez.  
+Kök düzeyinde alt sitesi olarak kod oluşturma yöntemini ekler `IScriptNode` nesne. Konak ayrıldığında tam adı, yalnızca iki düzeylerine sahip izin verilmez.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddScriptlet(  
    LPCOLESTR pszDefaultName,  
    LPCOLESTR pszCode,  
@@ -45,25 +45,25 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parametreler  
  `pszDefaultName`  
- [in] Kod parçacığı ile ilişkilendirmek için varsayılan adı adresidir.  
+ [in] Kod oluşturma yöntemiyle ilişkilendirmek için varsayılan adı adresi.  
   
  `pszCode`  
- [in] Kod parçacığı metin adresi.  
+ [in] Kod oluşturma yöntemi metni adresi.  
   
  `pszItemName`  
- [in] Ana bilgisayar tam Resimli adlarında en üst düzey tanıtıcısı arabellek adresi.  
+ [in] Üst düzey konak tam kod oluşturma adı tanıtıcısı arabellek adresi.  
   
  `pszSubItemName`  
- [in] Ana bilgisayar tam Resimli adlarında ikinci düzey tanıtıcısı arabellek adresi. Ad yalnızca bir düzey varsa NULL olarak ayarlayın.  
+ [in] Ana bilgisayarın tam kod oluşturma adı ikinci düzey tanıtıcısı arabellek adresi. Tek düzey adı varsa, NULL olarak ayarlayın.  
   
  `pszEventName`  
- [in] Kod parçacığını bir olay işleyicisi olduğu olay adını içeren bir arabellek adresi.  
+ [in] Kod oluşturma yöntemi bir olay işleyicisi olduğu olay adını içeren bir arabellek adresi.  
   
  `pszDelimiter`  
- [in] Son olarak betik bloğu ayırıcısı adresi. Zaman `pszCode` ayrıştırılır metin akışından konak genellikle bir sınırlayıcı (örneğin, iki tek tırnak işareti), komut dosyası bloğunun sonunu algılamak için kullanır. Bir sınırlayıcı komut dosyası bloğunun sonunu işaretler değil, bu parametre NULL olarak ayarlayın.  
+ [in] Sonlandırma, betik bloğu sınırlayıcısı adresi. Zaman `pszCode` ayrıştırılır metin akışından ana bilgisayar genellikle bir sınırlayıcı (örneğin, iki tek tırnak işareti) betik bloğunun sonu algılamak için kullanır. Sınırlayıcı betik bloğunun sonu işaretlemez ise bu parametre NULL olarak ayarlayın.  
   
  `dwCookie`  
- [in] Kod parçacığını bir ana bilgisayar nesnesi ile ilişkilendirmek için kullanılan bir uygulama tanımlı bir değer.  
+ [in] Komut dosyasını bir konak nesnesi ile ilişkilendirmek için kullanılan bir uygulama tanımlı bir değer.  
   
  `dwFlags`  
  [in] Kullanılmıyor.  
@@ -78,4 +78,4 @@ HRESULT AddScriptlet(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor Arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)

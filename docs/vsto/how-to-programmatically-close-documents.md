@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla belgeleri kapatma'
+title: 'Nasıl yapılır: Program aracılığıyla belgeleri kapatma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], closing
 - Word [Office development in Visual Studio], closing documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe8e29ea42f92e072e3afffca95d6be59765434
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930240"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087054"
 ---
-# <a name="how-to-programmatically-close-documents"></a>Nasıl Yapılır: Program aracılığıyla belgeleri kapatma
+# <a name="how-to-programmatically-close-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri kapatma
   Etkin belgeyi kapatabilir veya kapatmak için bir belge belirtebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

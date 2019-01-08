@@ -18,34 +18,34 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0631690cbd961273175cf8dfbe35550980d4994d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23f0e804cbbbe6683b89f7b629b9677c7b92c64f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794753"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089563"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
-Bir nesne hala etkin olup olmadığını gösterir.  
+Bir nesne hala etkin olup olmadığını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Alive();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Yöntemin parametre almaz.  
+ Yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`S_OK`|Betik düğümünde hala etkindir.|  
+|`S_OK`|Betik olarak hala etkin düğümüdür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Nesne etkin değilse, Bileşen Nesne Modeli (COM) hazırlama proxy bu yönteme çağrıları için bir hata döndürür.  
+ Nesne etkin değilse, Bileşen Nesne Modeli (COM) sıralama proxy bu yöntem çağrıları için bir hata döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a8ca4ab504a9da2a63d5c70330d50e2c97e09817
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795062"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088237"
 ---
-# <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
+# <a name="iscriptnode-createchildentry"></a>Iscriptnode:: CreateChildEntry
 Bir alt örneğini ekler `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateChildEntry(  
    ULONG              isn,  
    DWORD              dwCookie,  
@@ -44,23 +44,23 @@ HRESULT CreateChildEntry(
  [in] Üst alt dizini.  
   
  `dwCookie`  
- [in] Alt öğe girişi konak nesnesi ile ilişkilendirmek için kullanılan bir uygulama tanımlı bir değer.  
+ [in] Alt giriş konak nesnesiyle ilişkilendirmek için kullanılan bir uygulama tanımlı bir değer.  
   
  `pszDelimiter`  
- [in] Son olarak betik bloğu ayırıcısı adresi. Ayrıştırma için konak betik bloğu sonuna algılamak için sınırlayıcı (örneğin, iki tek tırnak işareti), genellikle kullanır.  
+ [in] Sonlandırma, betik bloğu sınırlayıcısı adresi. Ayrıştırma için konak betik bloğunun sonu algılamak için bir sınırlayıcı (örneğin, iki tek tırnak), genellikle kullanır.  
   
- Sınırlayıcı ön işleme sağlamak için altyapısı yazma komut dosyası sağlar. Örneğin, altyapı, tek tırnak işareti ayırıcı olarak kullanmak için iki tek tırnak işareti ile değiştirebilirsiniz. Altyapısını sınırlayıcısı nasıl kullanıldığını belirler.  
+ Sınırlayıcı betik yazma altyapısı ön işleme sağlamasına olanak sağlar. Örneğin, altyapı, tek tırnak işareti ayırıcı olarak kullanılacak iki tek tırnak işaretleri ile değiştirebilir. Altyapısı sınırlayıcı nasıl kullanıldığını belirler.  
   
- Bir sınırlayıcı betik bloğu sonuna işaretlemez ise NULL olarak ayarlayın.  
+ Bir sınırlayıcıdan betik bloğunun sonu işaretlemez NULL olarak ayarlayın.  
   
  `ppse`  
- [out] Bir işaretçi alan değişkenin adresini `IScriptEntry` alt örneğinin arabirimi.  
+ [out] Bir işaretçiye alan değişkenin adresini `IScriptEntry` alt örneğinin arabirimi.  
   
- İçin `IScriptNode` bir Web sayfasını temsil eden nesneler, bu parametre döndüren bir `IScriptEntry` bir betik bloğu belirtir örneği.  
+ İçin `IScriptNode` Bu parametre bir Web sayfasını temsil eden nesneleri döndüren bir `IScriptEntry` belirten bir betik bloğu örneği.  
   
- İçin `IScriptEntry` bir betik bloğu temsil eden nesneler, bu parametre döndüren bir `IScriptEntry` işlev nesnesi belirtir örneği.  
+ İçin `IScriptEntry` Bu parametre bir betik bloğu temsil eden nesneleri döndüren bir `IScriptEntry` belirten bir işlev nesnesi örneği.  
   
- İçin `IScriptEntry` bir işlevi temsil eden nesneler nesnesi, bu yöntem başarısız olur.  
+ İçin `IScriptEntry` bir işlevi temsil eden nesneleri nesnesi, bu yöntem başarısız olur.  
   
  İçin `IScriptScriptlet` nesneler, bu yöntem başarısız olur.  
   
@@ -76,4 +76,4 @@ HRESULT CreateChildEntry(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)   
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794897"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088589"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Gövdesinde metin ayarlar bir `IScriptEntry` betik bloğu ya da bir `IScriptScriptlet` Resimli.  
+Gövdesinde metin ayarlar bir `IScriptEntry` betik bloğu ya da bir `IScriptScriptlet` kod oluşturma.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -40,9 +40,9 @@ HRESULT SetBody(
  `psz`  
  [in] İçin bir `IScriptEntry` betik bloğu `psz` komut dosyası etiketleri arasına metin.  
   
- İçin bir `IScriptEntry` işlevi blok `psz` işlev gövdesi.  
+ İçin bir `IScriptEntry` işlev bloğu `psz` işlev gövdesidir.  
   
- İçin bir `IScriptScriptlet` nesne (den türetilen `IScriptEntry`), `psz` Resimli komut metni olur.  
+ İçin bir `IScriptScriptlet` nesne (öğesinden türetildiğini `IScriptEntry`), `psz` ayrıldığında betik metindir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  

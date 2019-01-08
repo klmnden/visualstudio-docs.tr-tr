@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23dbc8b4dc0c12a25349ddaf7d8fd711df0a9f4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 46b13c583f4e40b68610e50b37520f3d3882f364
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793763"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089654"
 ---
 # <a name="idebugapplicationnodegetparent"></a>IDebugApplicationNode::GetParent
-Bu uygulama düğümün üst düğümü döndürür.  
+Bu uygulama düğümü üst düğümünün döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetParent(  
    IDebugApplicationNode**  pprddp  
 );  
@@ -38,17 +38,17 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Parametreler  
  `pprddp`  
- [out] Bu uygulama düğümün üst uygulama düğümü.  
+ [out] Bu uygulama düğümü üst uygulama düğümü.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bu uygulama düğümün üst düğümü döndürür.  
+ Bu yöntem, bu uygulama düğümü üst düğümünün döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode Arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)

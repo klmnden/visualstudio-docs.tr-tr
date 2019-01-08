@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794192"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089309"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-Yığın çerçevelerinin geçerli iş parçacığı için bir numaralandırıcı döndürür.  
+Geçerli iş parçacığı için yığın çerçevelerinin bir numaralandırıcı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parametreler  
  `ppedsf`  
- [out] Geçerli iş parçacığı için yığın çerçeveleri Numaralandırıcı.  
+ [out] Geçerli iş parçacığı için yığın çerçevesi için Numaralandırıcı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yığın çerçeve Numaralandırıcı en yakın zamanda basılmış çerçevesiyle başlangıç yığınının üstten başlayarak çerçeveler döndürür.  
+ Yığın çerçeve Numaralandırıcı en yakın zamanda gönderilen çerçeve ile başlayarak yığının üstten başlayarak çerçeveleri döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugstackframesniffer arabirimi](../../winscript/reference/idebugstackframesniffer-interface.md)
+ [IDebugStackFrameSniffer Arabirimi](../../winscript/reference/idebugstackframesniffer-interface.md)

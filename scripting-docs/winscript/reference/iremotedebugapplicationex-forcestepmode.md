@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: add26689122ffe4944b4bbad15106a825d43ccf0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 771c17fdb8f2bea77959bc53b8d98fd10399a142
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794825"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094763"
 ---
 # <a name="iremotedebugapplicationexforcestepmode"></a>IRemoteDebugApplicationEx:ForceStepMode
-Hata ayıklayıcı tek adımlı moduna zorlar.  
+Tek adımlı modda hata ayıklayıcıya zorlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ForceStepMode(  
    IRemoteDebugApplicationThread*  pStepThread  
 );  
@@ -38,10 +38,10 @@ HRESULT ForceStepMode(
   
 #### <a name="parameters"></a>Parametreler  
  `pStepThread`  
- [in] İş parçacığı için adım adım işlem hata ayıklama İzleyicisi. Null ise PDM sürüm kendi iş parçacığı temizler.  
+ [in] İş parçacığı için adım adım işlem hata ayıklama İzleyicisi. Null ise, Adımlama, iş parçacığı PDM temizler.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -50,4 +50,4 @@ HRESULT ForceStepMode(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationex arabirimi](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+ [IRemoteDebugApplicationEx Arabirimi](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

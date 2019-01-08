@@ -10,19 +10,19 @@ ms.assetid: 533d770d-06a4-4693-873e-255c9c6f0df0
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: bb7fdf5a6d0b380a8024cfdfa70282bcf80ba16d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c71e33445db7745f71e374c586d079a9665776b2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793622"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087912"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
-Bu komut dosyasını site ile ilişkili hata ayıklama uygulama nesnesi döndürür.  
+Bu betik sitesiyle ilişkili hata ayıklama uygulama nesnesi döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IDebugApplication**  ppda  
 );  
@@ -30,19 +30,19 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Parametreler  
  `ppda`  
- [out] Komut dosyası site ile ilişkili hata ayıklama uygulama nesnesine işaretçi.  
+ [out] Betik site ile ilişkili hata ayıklama uygulama nesnesi için işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_NOTIMPL`|Konak, hata ayıklama doğrudan desteklemiyor.|  
+|`E_NOTIMPL`|Hata ayıklama konağı doğrudan desteklemez.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `GetApplication` Yöntemi her komut dosyası ait olduğu uygulama nesnesini tanımlamak bir akıllı ana bilgisayar için bir yol sağlar. Komut dosyası motorları içeren uygulamasına alın ve için çözümlemelere için bu yöntemi çağırın dener `IProcessDebugManager::GetDefaultApplication` bu başarısız olursa.  
+ `GetApplication` Yöntemi ait olduğu her betik uygulama nesnesi tanımlamak bir akıllı ana bilgisayar için bir yol sağlar. Komut dosyası motorları içeren uygulamasını almak ve için başvurmadan için bu yöntemi çağıran girişiminde `IProcessDebugManager::GetDefaultApplication` bu başarısız olursa.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IActiveScriptSiteDebug32 arabirimi](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
+ [Iactivescriptsitedebug32 arabirimi](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

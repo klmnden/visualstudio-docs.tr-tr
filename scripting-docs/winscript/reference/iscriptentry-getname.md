@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc518e87414d051e9b1393b60b5874a0204b78b2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795020"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090889"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-(Örneğin, bir işlev) tek bir nesneyi temsil eden girişler için nesnenin adını döndürür.  
+Tek bir nesne (örneğin, bir işlev) temsil eden girdi, nesnenin adını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR               *pbstr  
 );  
@@ -38,9 +38,9 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstr`  
- [out] Tarafından temsil edilen nesne adını `IScriptEntry` betik bloğu. Bir giriş tek bir nesneyi temsil etmiyor NULL döndürülür.  
+ [out] Tarafından temsil edilen nesnenin adını `IScriptEntry` betik bloğu. Bir giriş tek bir nesneyi temsil etmiyor, NULL döndürülür.  
   
- Alt girişleri tek işlev nesnesi temsil eder.  
+ Alt girişleri tek işlev nesnesini temsil eder.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  

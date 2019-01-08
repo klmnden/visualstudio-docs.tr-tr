@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 661e584133f4ec3c4e571d157a63844c5b1145b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794591"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097571"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint Yöntemi
-Kesme noktası belirtilen belge konumuna ayarlar.  
+Belge belirtilen konumda bir kesme noktası ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  
@@ -40,19 +40,19 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>Parametreler  
  `documentId`  
- [in] Idebugdocumenttext işaretçi.  
+ [in] Idebugdocumenttext öğesine işaretçi.  
   
  `characterOffset`  
- [in] Dosya başına karakter uzaklığı.  
+ [in] Dosyanın başından itibaren karakter uzaklığı.  
   
  `characterCount`  
- [in] Kesme noktası içinde ekleneceği belge metnin uzunluğu.  
+ [in] İçinde kesme noktasının ekleneceği belge metninin uzunluğu.  
   
  `isEnabled`  
- [in] Kesme noktası etkinleştirilip etkinleştirilmeyeceğini belirtir.  
+ [in] Kesme noktasının etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
  `ppDebugBreakPoint`  
- [out] Oluşturulan kesme noktası temsil eden nesne.  
+ [out] Oluşturulan kesme noktasını temsil eden nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
@@ -60,4 +60,4 @@ HRESULT CreateBreakPoint(
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugprocess arabirimi](../../winscript/reference/ijsdebugprocess-interface.md)
+ [IJsDebugProcess Arabirimi](../../winscript/reference/ijsdebugprocess-interface.md)

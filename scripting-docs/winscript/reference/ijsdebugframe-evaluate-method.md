@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794390"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091929"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate Yöntemi
-Bu yığını çerçevesi bağlamında bir ifadenin değerlendirin.  
+Bu yığın çerçevesi bağlamında bir ifade değerlendirin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -41,7 +41,7 @@ HRESULT Evaluate(
  [in] Değerlendirilecek ifade.  
   
  `ppDebugProperty`  
- [out] Özellik tarayıcısı temsil eden nesne.  
+ [out] Özellik tarayıcısını temsil eden nesne.  
   
  `pError`  
  [out] Bir hata oluşursa hata iletisi.  
@@ -49,10 +49,10 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki döndürür: S_OK: Değerlendirme başarılı, * ppDebugProperty değerlendirme sonucunu içerir. S_FALSE: Değerlendirme bir hata oluşturur (veya değerlendirme işlem desteklenmiyor) \*pError hata iletisi içerir.  
+ Aşağıdaki döndürür: S_OK: Değerlendirme başarılı, * ppDebugProperty değerlendirme sonucunu içerir. S_FALSE: Değerlendirme, bir hata atar (veya değerlendirme işlemi desteklenmiyor), \*pError hata iletisini içerir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugframe arabirimi](../../winscript/reference/ijsdebugframe-interface.md)
+ [IJsDebugFrame Arabirimi](../../winscript/reference/ijsdebugframe-interface.md)

@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b992b020c0aa42a6f27e484d55fe89a514c0198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e5658f70e6a24151af75f4455fc44c2c756b9e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796418"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091955"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP Yapısı
 Bir yığın nesnesinin bir ilişkiyi temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_ID relationshipId;    PROFILER_RELATIONSHIP_INFO relationshipInfo;    [switch_type(PROFILER_RELATIONSHIP_INFO), switch_is(relationshipInfo)] union    {        [case(PROFILER_PROPERTY_TYPE_NUMBER)] double numberValue;        [case(PROFILER_PROPERTY_TYPE_STRING)] LPCWSTR stringValue;        [case(PROFILER_PROPERTY_TYPE_HEAP_OBJECT)] PROFILER_HEAP_OBJECT_ID objectId;        [case(PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT)] PROFILER_EXTERNAL_OBJECT_ADDRESS externalObjectAddress;    };} PROFILER_HEAP_OBJECT_RELATIONSHIP;  
 ```  
   
@@ -32,10 +32,10 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_
   
 |Üye|Değer|Açıklama|  
 |------------|-----------|-----------------|  
-|RelationshipID|[Profıler_heap_object_name_ıd türü](../../winscript/reference/profiler-heap-object-name-id-type.md)|İlişki kimliği ad alanından [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
-|relationshipInfo|[Profıler_relatıonshıp_ınfo numaralandırması](../../winscript/reference/profiler-relationship-info-enumeration.md)|İlişki hakkında bilgi.|  
-|numberValue|çift|Sayı değeri. Yalnızca tek bir `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` ayarlamak, temel `relationshipInfo` değeri.|  
+|RelationshipID|[PROFILER_HEAP_OBJECT_NAME_ID Türü](../../winscript/reference/profiler-heap-object-name-id-type.md)|İlişki kimliği ad alanından [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
+|Relationshipınfo|[PROFILER_RELATIONSHIP_INFO Sabit Listesi](../../winscript/reference/profiler-relationship-info-enumeration.md)|İlişki hakkında bilgi sağlar.|  
+|numberValue|çift|Sayı değeri. Yalnızca biri `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` ayarlayın, temel `relationshipInfo` değeri.|  
 |stringValue|LPCWSTR|Dize değeri.|  
-|objectID|[Profıler_heap_object_ıd türü](../../winscript/reference/profiler-heap-object-id-type.md)|Yığın nesnesi kimliği.|  
-|externalObjectAddress|[Profıler_external_object_address türü](../../winscript/reference/profiler-external-object-address-type.md)|Dış nesne adresi.|  
-|subString|[PROFILER_PROPERTY_TYPE_SUBSTRING_INFO yapısı](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Substring türü hakkında bilgiler.|
+|objectId|[PROFILER_HEAP_OBJECT_ID Türü](../../winscript/reference/profiler-heap-object-id-type.md)|Yığın nesnesinin kimliği.|  
+|externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS Türü](../../winscript/reference/profiler-external-object-address-type.md)|Dış nesnesi adresi.|  
+|alt dize|[PROFILER_PROPERTY_TYPE_SUBSTRING_INFO Yapısı](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Alt dize türü hakkındaki bilgiler.|

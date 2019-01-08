@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c344f0316bda6ed5ef895c1b88ae7b1a6465e73
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1798d347fff11a49b945519fd20c370eca75d590
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793847"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089927"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-İşlem Hata Ayıklama Yöneticisi'ni çağırıcısına hakkında bilgi döndürmek için bir dil altyapısı tek adımlı modunda olduğunu bildirir.  
+İşlem Hata Ayıklama Yöneticisi tek adımlı modda bir dil altyapısı hakkında arayanına döndürülecek olduğunu bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT StepOutComplete();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT StepOutComplete();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kendi çağırana döndürmeleri önce dil motorları tek adımlı modunda bu yöntemi çağırın. İşlem Hata Ayıklama Yöneticisi'ni bu fırsatı ilk fırsatta bölün diğer tüm komut dosyası motorları bildirmek için kullanır. Bu teknik modları uygulanan nasıl diller arası adımdır.  
+ Kendi çağırana döndürmeleri önce dil altyapıları tek adımlı modda bu yöntemi çağırın. İşlem Hata Ayıklama Yöneticisi bu fırsattan ilk fırsatta sonu diğer tüm komut dosyası motorları bildirmek için kullanır. Bu teknik, modları uygulanır nasıl diller arası adımdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication Arabirimi](../../winscript/reference/idebugapplication-interface.md)

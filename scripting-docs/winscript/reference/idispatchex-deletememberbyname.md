@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794594"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096440"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
-Üye adına göre siler.  
+Bir üye adıyla siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -42,12 +42,12 @@ HRESULT DeleteMemberByName(
  Silinecek üyenin adı.  
   
  `grfdex`  
- Üye adı büyük küçük harfe duyarlı olup olmadığını belirler. Bu aşağıdaki değerlerden biri olabilir:  
+ Üye adı büyük küçük harfe duyarlı olup olmadığını belirler. Bu, aşağıdaki değerlerden biri olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Ad arama büyük küçük harfe duyarlı bir biçimde yapılması istek sayısı. Büyük küçük harfe duyarlı arama desteklemeyen nesnesi tarafından göz ardı edilebilir.|  
-|fdexNameCaseInsensitive|Ad arama büyük küçük harf duyarsız bir biçimde yapılması istek sayısı. Büyük küçük harf duyarsız arama desteklemeyen nesnesi tarafından göz ardı edilebilir.|  
+|fdexNameCaseSensitive|Ad arama, büyük küçük harfe duyarlı bir şekilde yapılması istekler. Büyük küçük harfe duyarlı arama desteği olmayan nesne tarafından göz ardı edilebilir.|  
+|fdexNameCaseInsensitive|Ad arama, büyük küçük harf duyarsız bir şekilde yapılması istekler. Büyük küçük harf duyarsız arama desteği olmayan nesne tarafından göz ardı edilebilir.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -58,13 +58,13 @@ HRESULT DeleteMemberByName(
 |`S_FALSE`|Üye var, ancak silinemez.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Üye silinirse, DISPID için geçerli kalır gerekiyor `GetNextDispID`.  
+ DISPID üye silinirse, için geçerli kalır gerekiyor `GetNextDispID`.  
   
- Verilen ada sahip bir üye silinir ve aynı ada sahip bir üye daha sonra yeniden DISPID aynı olmalıdır. (Yalnızca örneğe göre farklılık üyeleri "aynı" olup olmadığını nesne bağlıdır.)  
+ Belirli bir ada sahip bir üye silinir ve aynı ada sahip bir üye daha sonra yeniden oluşturulur, DISPID aynı olmalıdır. (Yalnızca harfe göre farklılık üyeleri "aynı" olup olmadığını nesne bağlıdır.)  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   
@@ -73,4 +73,4 @@ pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idispatchex arabirimi](../../winscript/reference/idispatchex-interface.md)
+ [IDispatchEx Arabirimi](../../winscript/reference/idispatchex-interface.md)

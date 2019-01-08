@@ -16,29 +16,29 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53ff133fb07d256d00668e499e5996ac650230f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 873f5d285a877e04076859b0230589ced705078b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794507"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094217"
 ---
 # <a name="ijsdebugbreakpointdisable-method"></a>IJsDebugBreakPoint::Disable Yöntemi
-Kesme noktası devre dışı bırakır.  
+Kesme noktasını devre dışı bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Disable(void);  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Silinen bir kesme noktası üzerinde adlı E_UNEXPECTED döndürür. Üzerinde zaten devre dışı bırakılmış bir kesme noktası adlı S_FALSE döndürür.  
+ Silinen bir kesme noktasına çağrılırsa E_UNEXPECTED döndürür. Zaten devre dışı bırakılmış bir kesme noktasına çağrılırsa S_FALSE döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugbreakpoint arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint Arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9afb48ceca742ef736dd8f79ba8c3d96e3a56a82
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c53f19de5fcff4160ed1255435b91c9ad320ad0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794768"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092254"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
 Bir kesme noktası bırakmak için bir olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnLeaveBreakPoint(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -41,14 +41,14 @@ HRESULT OnLeaveBreakPoint(
  [in] Kesme noktası sol uygulama iş parçacığı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir kesme noktası bırakmak için bir olayını işler.  
+ Bu yöntem, bir kesme noktası bırakmak için bir olayını işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationevents arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents Arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md)

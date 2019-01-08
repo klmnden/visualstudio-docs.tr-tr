@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla bir e-posta öğesi oluşturma'
+title: 'Nasıl yapılır: Program aracılığıyla bir e-posta öğesi oluşturma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], creating
 - Outlook [Office development in Visual Studio], creating e-mail
 - mail items [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5b665a5ed281cafaf19017d2cf65a6ab1dd80b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c763e597b192ffe0ae7efdce04c3aba05ab2fa5a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869731"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087795"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Nasıl Yapılır: Program aracılığıyla bir e-posta öğesi oluşturma
+# <a name="how-to-programmatically-create-an-email-item"></a>Nasıl yapılır: Program aracılığıyla bir e-posta öğesi oluşturma
   Bu örnek, Microsoft Office Outlook'ta e-posta iletisi oluşturur.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  

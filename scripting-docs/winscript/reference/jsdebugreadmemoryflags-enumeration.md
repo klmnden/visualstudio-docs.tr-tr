@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7efb5170bf0314e95b1acded39a897c2236a29ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796268"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094035"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>JsDebugReadMemoryFlags Listelemesi
 Bellek okunduğu sıradaki davranışı belirten bayraklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
@@ -38,11 +38,11 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Arayan bellek parçası başarılı okuma yalnızca başarılı olması için okuma işlemi istediği gösterilir. Bu ayarlanırsa 'Adresi' geçersizse E_JsDEBUG_INVALID_MEMORY_ADDRESS hata yalnızca gerçekleştirilecektir. Bu bayrak boş olduğunda, istenen bellek herhangi bir kısmının okunamaz olduysa E_JsDEBUG_INVALID_MEMORY_ADDRESS hata gerçekleştirilecektir.|  
-|`None`|Arayan ReadMemory için varsayılan davranış istediği gösterilir.|  
+|`JsDebugAllowPartialRead`|Arayanın bellek parçası başarılı okuma yalnızca başarılı olması için okuma işlemi istediğini gösterir. Bu ayarlanırsa 'Adres' geçersiz ise bir e_jsdebug_ınvalıd_memory_address hatası yalnızca gerçekleştirilecektir. Bu bayrağı açık ise, istenen belleğin herhangi bir kısmı okunamaz ise bir e_jsdebug_ınvalıd_memory_address hatası oluşur.|  
+|`None`|Arayanın ReadMemory için varsayılan davranışı istediğini gösterir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows komut dosyası arabirimleri başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Windows Betik Arabirimleri Başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)

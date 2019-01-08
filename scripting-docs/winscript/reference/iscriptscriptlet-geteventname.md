@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600eb4aff3bcefea31eb5fec76a2dc3cdce62a05
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bffd1a3d518a5166c81934d5f3c7508f62284d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796256"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097792"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
-Kod parçacığı ile ilişkili olay adını döndürür.  
+Kod oluşturma yöntemiyle ilişkili olay adını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetEventName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstr`  
- [out] İle ilişkili olay adı içeren bir arabellek `IScriptScriptlet` nesnesi.  
+ [out] İlişkili olay adını içeren bir arabellek `IScriptScriptlet` nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -50,4 +50,4 @@ HRESULT GetEventName(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptscriptlet arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet Arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)

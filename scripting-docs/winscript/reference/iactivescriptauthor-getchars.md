@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06e7a7cf276e589aaaa3c00ecab8cbf881942f82
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793289"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094334"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 İstenen tamamlama bağlamı için tamamlama karakter kümesini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -43,15 +43,15 @@ HRESULT GetChars(
   
 |Sabit|Değer|Açıklama|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0X0001|Sol tarafta numaralandırması ister.|  
-|SCRIPT_CMPL_MEMBER_TRIGGER|0X0002|Üye tamamlama bağlam ister.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Sol tarafta numaralandırma ister.|  
+|SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Üye tamamlama bağlam ister.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Parametre listesi ister.|  
-|SCRIPT_CMPL_COMMIT|0X0004|Parametre listesi tamamlanmasından istekleri.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Parametre listesinin isteği tamamlama.|  
   
  `pbstrChars`  
- [out] İstenen tamamlama bağlamına karşılık gelen karakter.  
+ [out] İstenen tamamlama bağlamına karşılık gelen karakterler.  
   
-|`fRequestedList`parametre|Döndürülen karakterler|  
+|`fRequestedList` Parametre|Döndürülen karakterler|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  
@@ -68,4 +68,4 @@ HRESULT GetChars(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor Arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)

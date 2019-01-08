@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fab017ab286957cf2c4be35832b1db877b339bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 890cc1b6c38f44c4140274dcaa19deff1fd276e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793733"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095517"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Hata ayıklayıcı kullanıcı arabiriminde üst verilen belgedeki bağlamına içeren pencere getirir ve bağlam penceresine kaydırır.  
+Üst hata ayıklayıcı kullanıcı arabirimi için belirtilen belge bağlamını içeren bir pencere getirir ve bağlam pencereye kaydırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT BringDocumentContextToTop(  
    IDebugDocumentContext*  pddc  
 );  
@@ -38,18 +38,18 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parametreler  
  `pddc`  
- [in] Hata ayıklayıcı kullanıcı arabiriminde en çok getirmek için belge bağlamı.  
+ [in] Hata ayıklayıcı kullanıcı arabiriminde dön getirmek için belge bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_INVALIDARG`|Belirtilen bağlamı `pddc` bilinmiyor.|  
+|`E_INVALIDARG`|Tarafından belirtilen bağlamı `pddc` bilinmiyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, hata ayıklayıcı kullanıcı arabiriminde üst verilen belgedeki bağlamına içeren pencere getirir ve bağlam penceresine kaydırır.  
+ Bu yöntem, üst hata ayıklayıcı kullanıcı arabirimi için belirtilen belge bağlamını içeren bir pencere getirir ve bağlam pencereye kaydırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iapplicationdebuggeruı arabirimi](../../winscript/reference/iapplicationdebuggerui-interface.md)
+ [IApplicationDebuggerUI Arabirimi](../../winscript/reference/iapplicationdebuggerui-interface.md)

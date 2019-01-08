@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40fd8e2d19d3949ff26811956ae3d203871e5510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: abca643dc4e18f786421959c20804a28cf54ec7b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793271"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097181"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
 Temsilci seçmek için bir akıllı ana bilgisayar tarafından kullanılan `IDebugDocumentContext::EnumCodeContexts` yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumCodeContextsOfPosition(  
    DWORD_PTR                 dwSourceContext,  
    ULONG                     uCharacterOffset,  
@@ -41,26 +41,26 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>Parametreler  
  `dwSourceContext`  
- [in] Sağlanan kaynak bağlam `IActiveScriptParse::ParseScriptText` veya `IActiveScriptParse::AddScriptlet`.  
+ [in] Sağlanan kaynak bağlamı `IActiveScriptParse::ParseScriptText` veya `IActiveScriptParse::AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Betik metin başlangıç göre uzaklığı karakter.  
+ [in] Karakter başlangıç betiği metin göre uzaklığı.  
   
  `uNumChars`  
  [in] Bu bağlamda karakter sayısı.  
   
  `ppescc`  
- [out] Belirtilen aralık kod bağlamlarda numaralandırması.  
+ [out] Belirtilen aralıktaki kod bağlamları bir numaralandırıcı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Akıllı ana bilgisayara temsilci seçmek için bu yöntemi kullanın `IDebugDocumentContext::EnumCodeContexts` yöntemi.  
+ Akıllı ana bilgisayar temsilci seçmek için bu yöntemi kullanın `IDebugDocumentContext::EnumCodeContexts` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptdebug arabirimi](../../winscript/reference/iactivescriptdebug-interface.md)   

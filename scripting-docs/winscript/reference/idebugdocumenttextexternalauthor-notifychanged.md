@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016eda303f5a5a74a20e42112890698a1ca28798
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6338a4f88435f47ef33abe593c0bb4e000ae6ee2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794261"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094113"
 ---
 # <a name="idebugdocumenttextexternalauthornotifychanged"></a>IDebugDocumentTextExternalAuthor::NotifyChanged
-Ana belge kaynağı değiştiğini bildirir.  
+Ana belge kaynağı olarak değiştiğini bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT NotifyChanged();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT NotifyChanged();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Hata ayıklayıcı dosya tabanlı belge değiştiren ve belge kaynağı değişti konak bildirmek için kaydettikten sonra bu yöntem bir dış Düzenleyicisi tarafından çağrılır. Ana bilgisayar ardından kaynak dosyasını belgeden yeniler.  
+ Hata ayıklayıcı dosya tabanlı belge değiştirilmiş ve belge kaynağı değiştirildi ana bilgisayara bildirmek için kaydettikten sonra bu yöntem dış bir düzenleyici tarafından çağrılır. Ana kaynak dosyasından belge ardından yeniler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttextexternalauthor arabirimi](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)
+ [IDebugDocumentTextExternalAuthor Arabirimi](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

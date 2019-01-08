@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2b7a22026090c8b3b8b7ded4c960ebf92689cd4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2d433414e6ec66f72d19525d2e99794149aea793
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795083"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091023"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
-Başka bir iş parçacığında kodu çalıştırmak için çağrıları işler.  
+Başka bir iş parçacığında kod çalıştırmak için çağrılar işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ThreadCallHandler(  
    DWORD_PTR  dwParam1,  
    DWORD_PTR  dwParam2,  
@@ -49,14 +49,14 @@ HRESULT ThreadCallHandler(
  [in] Üçüncü parametre.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem çağrıları kodu hata ayıklayıcı iş parçacığında çalıştırmak için işler.  
+ Bu yöntem hata ayıklayıcı iş parçacığında kodu çalıştırmak için çağrıları işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugthreadcall arabirimi](../../winscript/reference/idebugthreadcall-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19b2d58974e7da7bd40dad1faa9e361b0327e4c6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3565a966b74e6af18b2c397790fcd8d923e6bb15
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794843"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095712"
 ---
 # <a name="iremotedebugapplicationexsetlocale"></a>IRemoteDebugApplicationEx:SetLocale
-Hata ayıklayıcı yerelleştirme için dili ayarlar.  
+Hata ayıklayıcı yerelleştirme dili ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetLocale(  
    DWORD  dwLangID  
 );  
@@ -38,10 +38,10 @@ HRESULT SetLocale(
   
 #### <a name="parameters"></a>Parametreler  
  `dwLangID`  
- [in] Dil kimliği.  
+ [in] Dil Kimliği  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -50,4 +50,4 @@ HRESULT SetLocale(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Isetnextstatement arabirimi](../../winscript/reference/isetnextstatement-interface.md)
+ [ISetNextStatement Arabirimi](../../winscript/reference/isetnextstatement-interface.md)

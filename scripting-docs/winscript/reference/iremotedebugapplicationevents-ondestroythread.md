@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af2d671a6c93cde39c2e3e644243d666e1cd5d46
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e07b7f90068dac5b39b1dedfd2bb91d65540f2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794681"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086487"
 ---
 # <a name="iremotedebugapplicationeventsondestroythread"></a>IRemoteDebugApplicationEvents::OnDestroyThread
-İş parçacığı yok olayını işler.  
+Bir iş parçacığı yok olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnDestroyThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,17 +38,17 @@ HRESULT OnDestroyThread(
   
 #### <a name="parameters"></a>Parametreler  
  `prdat`  
- [in] Zarar görmüş iş parçacığı.  
+ [in] Silinen iş parçacığı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem iş parçacığı yok olayını işler.  
+ Bu yöntem, iş parçacığı yok olayını işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationevents arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents Arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md)

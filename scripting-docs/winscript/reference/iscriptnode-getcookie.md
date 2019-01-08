@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796259"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094243"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-Bir kod parçacığı konak nesnesi ile ilişkilendirmek için kullanılan uygulama tanımlı bir değer döndürür.  
+Bir kod oluşturma konak nesnesiyle ilişkilendirmek için kullanılan uygulama tanımlı bir değer döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -38,9 +38,9 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>Parametreler  
  `pdwCookie`  
- [out] İçin bir `IScriptEntry` nesne, uygulama tanımlı tanımlama bilgisi değerini döndürür.  
+ [out] İçin bir `IScriptEntry` nesne, uygulama tanımlı tanımlama bilgisi değeri döndürür.  
   
- İçin bir `IScriptNode` bir Web sayfasını temsil eden nesne 0 döndürür.  
+ İçin bir `IScriptNode` bir Web sayfasını temsil eden bir nesne, 0 döndürür.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -52,4 +52,4 @@ HRESULT GetCookie(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)

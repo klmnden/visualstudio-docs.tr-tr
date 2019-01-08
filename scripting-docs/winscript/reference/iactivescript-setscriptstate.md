@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146cd5e4f2b6137fc6fe6e32e8ca153c3aab8fd5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58edef17fec1d94a09b327dff626658c42a273ba
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793295"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095036"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
-Komut dosyası altyapısı belirli bir duruma koyar. Bu yöntem bir temel olmayan belirtme çizgisi içinde ana bilgisayar nesneleri veya çok sonuçlanmadan temel olmayan iş parçacığı tarafından çağrılabilir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) arabirimi.  
+Komut dosyası altyapısı belirli bir duruma koyar. Temel olmayan belirtme ana bilgisayar nesneleri veya çok kaynaklanan olmadan, bu yöntem temel olmayan iş parçacığından çağrılabilir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetScriptState(  
     SCRIPTSTATE ss  // identifier of new state  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptState(
   
 #### <a name="parameters"></a>Parametreler  
  `ss`  
- [in] Komut dosyası altyapısı verilen durumuna ayarlar. Tanımlanan değerlerden biri olabilir [SCRIPTSTATE numaralandırması](../../winscript/reference/scriptstate-enumeration.md) numaralandırması.  
+ [in] Komut dosyası altyapısı verilen durumuna ayarlar. İçinde tanımlanan değerlerden biri olabilir [SCRIPTSTATE numaralandırması](../../winscript/reference/scriptstate-enumeration.md) sabit listesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -46,13 +46,13 @@ HRESULT SetScriptState(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_FAIL`|Komut dosyası altyapısı Başlatıldı durumuna geçişi desteklemez. Ana bilgisayar gerekir bu komut dosyası altyapısı atmak ve oluşturma, başlatma ve aynı sonucu elde etmek için yeni bir komut dosyası motoru yük.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, komut dosyası altyapısı henüz yüklenen başlatılmadı veya) ve bu nedenle başarısız oldu.|  
-|`OLESCRIPT_S_PENDING`|Yöntem başarıyla sıraya alındı, ancak durumu henüz değişmemiştir. Ne zaman durum değişiklikleri site çağrılır geri aracılığıyla [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemi.|  
-|`S_FALSE`|Yöntem başarılı oldu, ancak komut dosyası zaten belirtilen durumda olmadığını.|  
+|`E_FAIL`|Komut dosyası altyapısı başlatılmış durumuna geçişi desteklemez. Konak gerekir bu komut dosyası altyapısı AT oluşturmak, başlatmak ve aynı etkiyi elde etmek için yeni bir komut dosyası altyapısı yüklenemiyor.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, komut dosyası altyapısı henüz yüklenen başlatıldı veya) ve bu nedenle başarısız oldu.|  
+|`OLESCRIPT_S_PENDING`|Yöntemi başarıyla kuyruğa alındı, ancak durumu henüz değişmedi. Durum değişikliklerini site çağrılacağı geri aracılığıyla [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemi.|  
+|`S_FALSE`|Yöntem başarılı oldu, ancak komut zaten belirtilen durumda olan.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Altyapısı durumları komut dosyaları hakkında daha fazla bilgi için komut dosyası altyapısı durumları bölümüne bakın [Windows komut dosyası motorları](../../winscript/windows-script-engines.md) .  
+ Komut dosyası motoru durumu bölümü, komut dosyası motoru durumu hakkında daha fazla bilgi için bkz. [Windows betik motorları](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   

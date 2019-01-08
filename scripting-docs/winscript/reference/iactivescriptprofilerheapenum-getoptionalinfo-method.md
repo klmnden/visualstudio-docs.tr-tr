@@ -1,5 +1,5 @@
 ---
-title: Iactivescriptprofilerheapenum::getoptionalınfo yöntemi | Microsoft Docs
+title: Iactivescriptprofilerheapenum::getoptionalınfo metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,30 +12,30 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6ad237f2feb173408e895984dab7e7455004d16
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bcba1214a0c57e738dec41cdc4976f478802fedc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793499"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088809"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>IActiveScriptProfilerHeapEnum::GetOptionalInfo Metodu
-Belirtilen nesne üzerindeki isteğe bağlı bilgileri alır (döndürülen yığın nesneler kümesinden [Iactivescriptprofilercontrol3::enumheap yöntemi](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
+Belirtilen nesnenin isteğe bağlı bilgi alır (yığın nesnelerini döndürüldüğü kümesinden [Iactivescriptprofilercontrol3::enumheap yöntemi](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  
   
- Döndürülen nesnelerin atanan döndürülen bellek boş değil. Bunun yerine, çağırmalıdır [Iactivescriptprofilerheapenum::freeobjectandoptionalınfo yöntemi](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
+ Döndürülen nesneye atanmış döndürülen bellek serbest değil. Bunun yerine, çağırmalıdır [Iactivescriptprofilerheapenum::freeobjectandoptionalınfo yöntemi](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetOptionalInfo (    [in] PROFILER_HEAP_OBJECT* heapObject,    [in] ULONG celt,    [out, size_is(celt)] PROFILER_HEAP_OBJECT_OPTIONAL_INFO* optionalInfo);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `heapObject`  
- [Profıler_heap_object yapısı](../../winscript/reference/profiler-heap-object-structure.md) ilişkin bilgiler.  
+ [Profıler_heap_object yapısı](../../winscript/reference/profiler-heap-object-structure.md) bilgileri döndürülecek.  
   
  `celt`  
- Sayısı [profıler_heap_object_optıonal_ınfo yapısı](../../winscript/reference/profiler-heap-object-optional-info-structure.md) yapıları dönün.  
+ Sayısını [profıler_heap_object_optıonal_ınfo yapısı](../../winscript/reference/profiler-heap-object-optional-info-structure.md) yapılarını döndürmek için.  
   
  `optionalInfo`  
  [out] Bir dizi [profıler_heap_object_optıonal_ınfo yapısı](../../winscript/reference/profiler-heap-object-optional-info-structure.md) yapıları için belirtilen nesne.  

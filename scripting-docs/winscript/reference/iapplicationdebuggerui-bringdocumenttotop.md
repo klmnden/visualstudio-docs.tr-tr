@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793742"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096258"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Kullanıcı arabirimi hata ayıklayıcı üst belirtilen hata ayıklama belgeye içeren pencere getirir.  
+Pencerenin üst hata ayıklayıcı belirtilen hata ayıklama belge içeren kullanıcı arabirimi sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT BringDocumentToTop(  
    IDebugDocumentText*  pddt  
 );  
@@ -38,10 +38,10 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parametreler  
  `pddt`  
- [in] Hata ayıklayıcı kullanıcı arabiriminde en çok getirmek için belge hata ayıklama.  
+ [in] Belgenin en üstüne hata ayıklayıcı kullanıcı arabirimi Getir hata ayıklayın.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|Belge bilinmiyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, kullanıcı arabirimi hata ayıklayıcı üst belirtilen hata ayıklama belgeye içeren pencere getirir.  
+ Bu yöntem, kullanıcı arabirimi içeren belirtilen hata ayıklama belgenin en üstüne hata ayıklayıcı penceresini getirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iapplicationdebuggeruı arabirimi](../../winscript/reference/iapplicationdebuggerui-interface.md)
+ [IApplicationDebuggerUI Arabirimi](../../winscript/reference/iapplicationdebuggerui-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Profıler_relatıonshıp_ınfo numaralandırması | Microsoft Docs
+title: Profıler_relatıonshıp_ınfo sabit listesi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f01ca5e001d45907af70b46b6dc362e8ae0b2044
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e95b11537873d3bfe02bf3fa793b61ace10938aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796334"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095816"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>PROFILER_RELATIONSHIP_INFO Numaralandırması
 İlişki nesnesinde ilgili bilgileri temsil eder. Kullanılan [profıler_heap_object_relatıonshıp yapısı](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PROPERTY_TYPE_STRING = 0x02,    PROFILER_PROPERTY_TYPE_HEAP_OBJECT = 0x03,    PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT = 0x04,    PROFILER_PROPERTY_TYPE_BSTR = 0x05,} PROFILER_RELATIONSHIP_INFO;  
 ```  
   
@@ -34,7 +34,7 @@ typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PR
 |------------|-----------|-----------------|  
 |PROFILER_PROPERTY_TYPE_NUMBER|0x01|Nesne bir sayıdır.|  
 |PROFILER_PROPERTY_TYPE_STRING|0x02|Nesne bir dizedir.|  
-|PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|Bir yığın nesnesi nesnesidir.|  
-|PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|Nesneyi başka bir deyişle, atık toplama yığında dış, değil.|  
-|PROFILER_PROPERTY_TYPE_BSTR|0x05|BSTR nesnesidir.|  
-|PROFILER_PROPERTY_TYPE_SUBSTRING|0x06|Nesne bir alt dizesidir.|
+|PROFILER_PROPERTY_TYPE_HEAP_OBJECT|0x03|Yığın nesnesi bir nesnedir.|  
+|PROFILER_PROPERTY_TYPE_EXTERNAL_OBJECT|0x04|Nesnesi diğer bir deyişle, çöp toplama yığını üzerinde dış değil.|  
+|PROFILER_PROPERTY_TYPE_BSTR|0x05|BSTR nesnedir.|  
+|PROFILER_PROPERTY_TYPE_SUBSTRING|0x06|Bir alt DİZESİ nesnedir.|

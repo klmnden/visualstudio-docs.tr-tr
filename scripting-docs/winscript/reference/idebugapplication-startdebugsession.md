@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea5caead4921206428c2f1f36b74d057c8cef36
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 453286e310a6f16576d947cceb1947945f8627d3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793787"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086495"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Varsayılan hata ayıklayıcı tümleşik geliştirme ortamı (IDE) başlatır ve değil bir zaten bağlıysa, bu uygulama için bir hata ayıklama oturumu ekler.  
+Varsayılan hata ayıklayıcı tümleşik geliştirme ortamı (IDE) başlar ve değil bir zaten bağlıysa, bu uygulama için bir hata ayıklama oturumu ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT StartDebugSession();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT StartDebugSession();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca zamanı hata ayıklama uygulamak için kullanılır.  
+ Bu yöntem, just-ın-time hata ayıklama uygulamak için kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication Arabirimi](../../winscript/reference/idebugapplication-interface.md)

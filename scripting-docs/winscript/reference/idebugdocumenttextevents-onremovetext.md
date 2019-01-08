@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 81d7345d0832d0f9bfc6942fa5a27db82b45bb95
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794432"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097207"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
-Metin belgeden kaldırıldı gösterir.  
+Metin belgesinden kaldırıldığını gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onRemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,20 +39,20 @@ HRESULT onRemoveText(
   
 #### <a name="parameters"></a>Parametreler  
  `cCharacterPosition`  
- [in] Karakter ilk karakterin kaldırıldı.  
+ [in] İlk karakterin karakter konumunu kaldırıldı.  
   
  `cNumToRemove`  
- [in] Karakter sayısını kaldırıldı.  
+ [in] Karakter sayısı kaldırıldı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, metin belgeden kaldırıldı gösterir.  
+ Bu yöntem, metin belgesinden kaldırıldığını gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenttextevents arabirimi](../../winscript/reference/idebugdocumenttextevents-interface.md)   

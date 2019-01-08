@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugbreakpoint::getdocumentposition yöntemi | Microsoft Docs
+title: Ijsdebugbreakpoint::getdocumentposition metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c33751b0173626814f042fdc54a7d496b644573
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2d92a58dabe76e391d55996e511409fb63c9d671
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794438"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097675"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition Metodu
-Kesme noktası burada bağlıydı deyim konumunu döndürür.  
+Kesme noktasının nerede bağlı olduğu deyimin konumunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDocumentPosition(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>Parametreler  
  `pDocumentId`  
- [out] Kaynak belge (Idebugdocumenttext işaretçi) için benzersiz kimlik.  
+ [out] Kaynak belge (Idebugdocumenttext öğesine işaretçi) benzersiz kimliği.  
   
  `pCharacterOffset`  
- [out] Komut dosyası başlangıcı sıfır tabanlı karakter uzaklığı.  
+ [out] Betiğin başlangıcından sıfır tabanlı karakter kaydırma.  
   
  `pStatementCharCount`  
- [out] Başlar geçerli deyimi uzunluğu * karakter pCharacterOffset.  
+ [out] Konumunda başlayan geçerli deyimin uzunluğu * pCharacterOffset, karakter.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
@@ -52,4 +52,4 @@ HRESULT GetDocumentPosition(
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugbreakpoint arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint Arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)

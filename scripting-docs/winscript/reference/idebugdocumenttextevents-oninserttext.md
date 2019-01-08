@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a00adb996711dc6364edd44babf0c3cde1595947
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce5cd786cead548e7a088f362930b2d27d2e8d69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794576"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089394"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
-Yeni metin belgesine eklendiğini belirtir.  
+Belgeye yeni bir metin eklendiğini gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onInsertText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToInsert  
@@ -39,20 +39,20 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Parametreler  
  `cCharacterPosition`  
- [in] Burada yeni metni eklenmiş karakterin konumu.  
+ [in] Yeni metin nereye yerleştirildiğini karakterin konumu.  
   
  `cNumToInsert`  
  [in] Eklenen karakter sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, genellikle aşamalı olarak yükleyen bir ana bilgisayar tarafından içerik bir Web tarayıcısı gibi çağrılır.  
+ Bu yöntem, genellikle, kademeli olarak yükleyen bir ana bilgisayar tarafından içerik bir Web tarayıcısı gibi çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenttextevents arabirimi](../../winscript/reference/idebugdocumenttextevents-interface.md)   

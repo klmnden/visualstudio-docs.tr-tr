@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 300102d75fcfa797e8e073b9a1ce77cc5ee2827a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 47bf36a8d013ffbb3c09214d590960c833e53218
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793916"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086274"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-Bu belge içerikle ilişkili kod bağlamları numaralandırır.  
+Bu belge bağlamı ile ilişkili kod bağlamları numaralandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumCodeContexts(  
    IEnumDebugCodeContexts**  ppescc  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>Parametreler  
  `ppescc`  
- [out] Bu belge içerikle ilişkili kodu bağlamı.  
+ [out] Bu belge bağlamı ile ilişkili kod bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belge bir içerme dosyası ya da şablon olmadıkça belgeye yalnızca bir kod bağlamla genellikle ilişkilidir.  
+ Belge bir içerme dosyası ya da bir şablon olmadığı sürece bir genellikle yalnızca tek bir kod bağlamı ile ilişkili bir belgedir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumentcontext arabirimi](../../winscript/reference/idebugdocumentcontext-interface.md)
+ [IDebugDocumentContext Arabirimi](../../winscript/reference/idebugdocumentcontext-interface.md)

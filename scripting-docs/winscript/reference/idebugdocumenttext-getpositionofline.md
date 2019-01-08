@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0098a78938c745931c529bbc02823d32b8180cde
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ca3a1df414f954dce4398eb8a2e0b7ea68a04a49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794168"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092295"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-Bir satır ilk karakterine karşılık gelen karakterin konumu döndürür.  
+Bir satırın ilk karaktere karşılık gelen karakter konumunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetPositionOfLine(  
    ULONG   cLineNumber,  
    ULONG*  pcCharacterPosition  
@@ -42,17 +42,17 @@ HRESULT GetPositionOfLine(
  [in] Satır numarası.  
   
  `pcCharacterPosition`  
- [out] Satır başına karakterin belge içinde `cLineNumber`.  
+ [out] Belge içindeki satırın karakter konumu `cLineNumber`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir satırı ilk karakterine karşılık gelen karakterin döndürür.  
+ Bu yöntem, bir satırın ilk karaktere karşılık gelen karakter konumunu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText Arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)

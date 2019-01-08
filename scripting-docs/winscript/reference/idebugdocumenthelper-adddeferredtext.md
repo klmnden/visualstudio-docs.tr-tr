@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c92909874429075bebc6a1f0a252573d049584e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba6f945e6c7fa4df83a5e301d73b3fc0bb9da92b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794717"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096089"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Verilen metni kullanılabilir, ancak karakterleri sağlamaz yardımcı bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddDeferredText(  
    ULONG  cChars,  
    DWORD  dwTextStartCookie  
@@ -39,26 +39,26 @@ HRESULT AddDeferredText(
   
 #### <a name="parameters"></a>Parametreler  
  `cChars`  
- [in] Eklemek için (Unicode) karakter sayısı.  
+ [in] Eklenecek karakter (Unicode) sayısı.  
   
  `dwTextStartCookie`  
- [in] Metnin başlangıç konumunu temsil eden ana bilgisayar tarafından tanımlanan tanımlama bilgisi.  
+ [in] Metnin başlangıç konumunu temsil eden ana bilgisayar tanımlı tanımlama bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_FAIL`|Yöntemi başarısız oldu.|  
+|`E_FAIL`|Yöntem başarısız oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, doğru bildirimleri ve boyutu bilgileri oluşturmak yardımcıyı verirken gerekene kadar eklemek için karakterleri sağlama erteleme konak sağlar. `dwTextStartCookie` Metnin başlangıç konumunu temsil eden konak tarafından tanımlanan bir tanımlama bilgisi parametresidir. Sonraki çağrılar `IDebugDocumentText::GetText` bu tanımlama bilgisi sağlamanız gerekir. Örneğin, DBCS metinde temsil eden bir ana bilgisayar, tanımlama bilgisi bayt uzaklığı olabilir.  
+ Bu yöntem, doğru bildirimleri ve boyut bilgileri oluşturmak yardımcıyı verirken gerekene kadar eklemek için karakter sağlama erteleneceği konak sağlar. `dwTextStartCookie` Metnin başlangıç konumunu temsil eden konak tarafından tanımlanan bir tanımlama bilgisi parametredir. Yapılan sonraki çağrılar `IDebugDocumentText::GetText` bu tanımlama bilgisini belirtmeniz gerekir. Örneğin, DBCS içinde metin temsil eden bir ana bilgisayar, bir bayt uzaklığı tanımlama bilgisi olabilir.  
   
- Varsayılır tek bir çağrı `IDebugDocumentText::GetText` karakterleri birden çok çağrılardan alabilirsiniz `AddDeferredText`. Yardımcı sınıfları ayrıca birden çok kez aynı ertelenmiş karakter aralığı için isteyebilir.  
+ Varsayılır tek bir çağrı `IDebugDocumentText::GetText` karakter birden çok çağrı alabilirsiniz `AddDeferredText`. Yardımcı sınıfları da birden çok kez aynı ertelenmiş karakter aralığının isteyebilir.  
   
 > [!NOTE]
->  Çağrılar `AddDeferredText` çağrıları ile karma değil `AddUnicodeText` veya `AddDBCSText`. Bu gerçekleşirse, `E_FAIL` döndürülür.  
+>  Çağrılar `AddDeferredText` çağrılarıyla karma olmayan `AddUnicodeText` veya `AddDBCSText`. Bu meydana gelirse, `E_FAIL` döndürülür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   

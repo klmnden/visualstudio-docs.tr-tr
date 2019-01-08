@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 579d0ef243de7cd9bfcb821e75aa5ca213712a88
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794165"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090603"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
-Belgedeki metin yerini alır.  
+Belge içindeki metni değiştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -40,23 +40,23 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>Parametreler  
  `cCharacterPosition`  
- [in] Konumu değiştirmek için karakter aralığının başlatın.  
+ [in] Değiştirilecek karakter aralığı konumunu başlatın.  
   
  `cNumToReplace`  
- [in] Değiştirilecek karakterler sayısı.  
+ [in] Değiştirilecek karakterlerin sayısı.  
   
  `pcharText[]`  
- [in] Eski karakterlerini değiştirmek için yeni karakterler içeren bir arabellek.  
+ [in] Eski karakterleri değiştirmek için yeni karakterleri içeren arabellek.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem belgedeki metin değiştirir.  
+ Bu yöntem, belge içindeki metni değiştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttextauthor arabirimi](../../winscript/reference/idebugdocumenttextauthor-interface.md)
+ [IDebugDocumentTextAuthor Arabirimi](../../winscript/reference/idebugdocumenttextauthor-interface.md)

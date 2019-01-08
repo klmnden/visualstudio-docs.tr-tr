@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a4e053817ed4c503ebb41e2f3828da421e69ec7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794867"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088744"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
-Bir giriş uzunluğu ve başlangıç konumunu döndürür.  
+Başlangıç konumu ve bir giriş uzunluğunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -39,14 +39,14 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parametreler  
  `pichMin`  
- [out] İçin `IScriptEntry` bir betik bloğu belirtmek nesneleri 0 döndürür.  
+ [out] İçin `IScriptEntry` belirten bir betik bloğu nesneleri 0 döndürür.  
   
- İçin `IScriptEntry` bir işlev nesnesi belirtin nesneleri geçerli komut dosyası bloğunda işlevi başlangıç konumunu döndürür.  
+ İçin `IScriptEntry` bir işlev nesnesi belirtin nesneleri geçerli betik bloğu içinde işlev başlangıç konumunu döndürür.  
   
  İçin `IScriptScriptlet` nesneleri, 0 döndürür.  
   
  `pcch`  
- [out] İçin `IScriptEntry` bir betik bloğu belirtmek nesneleri metnin uzunluğunu döndürür.  
+ [out] İçin `IScriptEntry` belirten bir betik bloğu nesneleri metnin uzunluğunu döndürür.  
   
  İçin `IScriptEntry` bir işlev nesnesi belirtin nesneleri işlev tanımı uzunluğunu döndürür.  
   
@@ -62,4 +62,4 @@ HRESULT GetRange(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

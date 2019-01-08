@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3862a48ff4649f018eec79bf0411f23bc9f6d7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c484d212e2dccf20717aec5dca44d5c3319e15c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796250"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089576"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
-Bir nesne dizinini üst öğenin alt listesinde döndürür.  
+Üst öğenin alt listedeki bir nesnenin dizinini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetIndexInParent(  
    ULONG              pisn,  
 );  
@@ -38,7 +38,7 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Parametreler  
  `pisn`  
- [out] Bir nesne dizinini üst öğenin alt listesinde döndürür.  
+ [out] Üst öğenin alt listedeki bir nesnenin dizinini döndürür.  
   
  Bu yöntem çağrılırsa bir `IScriptNode` nesne Web sayfasını temsil eder, bu parametre 0 döndürür.  
   
@@ -52,4 +52,4 @@ HRESULT GetIndexInParent(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)

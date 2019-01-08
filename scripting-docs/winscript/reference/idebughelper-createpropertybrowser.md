@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3eedf9d6ed07b510d7912a5b28d23e0a1f05dda
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794399"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087756"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Bir değişken saran bir özellik tarayıcısı döndürür.  
+Bir değişken sarmalayan bir özellik tarayıcısı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -44,25 +44,25 @@ HRESULT CreatePropertyBrowser(
  [in] Göz atmak için kök değişken.  
   
  `bstrName`  
- [in] Kök vermek için adı.  
+ [in] Kök vermek adı.  
   
  `pdat`  
- [in] İstek özellikleri, iş parçacığı. Bu parametre NULL ise, hiçbir dizimi gerçekleştirilir.  
+ [in] Hangi özellikleri istemek iş parçacığı. Bu parametre NULL ise, hiçbir taşıma gerçekleştirilir.  
   
  `ppdob`  
  [out] Özellik tarayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir değişken saran bir özellik tarayıcısı döndürür.  
+ Bu yöntem, bir değişken sarmalayan bir özellik tarayıcısı döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
  [Idebughelper arabirimi](../../winscript/reference/idebughelper-interface.md)   
- [Idebugproperty arabirimi](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty Arabirimi](../../winscript/reference/idebugproperty-interface.md)

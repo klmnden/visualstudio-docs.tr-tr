@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d742d1bd57c85aa75c9ccd60479d08c1a559fb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0a02b8a3991ff6d20370cd4a2ea4cd87aa9a1226
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796415"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086586"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Bir değişken değeri alır ve belirtilen bir türe yeni bir değişken oluşturur.  
+Değişken bir değer alır ve belirtilen bir türü ile yeni bir değişken oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ChangeType(  
    VARIANT*  pvarDst,  
    VARIANT*  pvarSrc,  
@@ -41,26 +41,26 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Parametreler  
  `pvarDst`  
- [içinde out] Tarafından temsil edilen değer içeren bir değişken `pvarSrc`, ancak tarafından belirtilen tür ile `vtNew`.  
+ [out içinde] Tarafından temsil edilen değeri içeren bir değişken `pvarSrc`, ancak tarafından belirtilen tür `vtNew`.  
   
  `pvarSrc`  
- [in] Yeni bir türü değiştirmek için bir değişken değeri.  
+ [in] Yeni bir türü değiştirmek için değişken bir değer.  
   
  `lcid`  
- [in] Bağımsız değişkenler için veya dizelerden dönüştürürken kullanılacak yerel ayar bağlamı.  
+ [in] Bağımsız değişkenler için ya da dize dönüştürme işleminde kullanılacak yerel ayar bağlamı.  
   
  `vtNew`  
  [in] Türünü belirtir `pvarDst` olacak.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `pvarDst` Ve `pvarSrc` bağımsız değişkenleri olabilir eşit, özgün değeri; bu durumda üzerine yazılır. Bu yöntem geçirir `pvarDst` için `VariantClear` işlevi, dolayısıyla `pvarDst` geçerli bir değere başlatılması.  
+ `pvarDst` Ve `pvarSrc` bağımsız değişkenleri olabilir eşit, bu durumda, özgün değerin üzerine yazılır. Bu yöntem geçirir `pvarDst` için `VariantClear` işlevi, dolayısıyla `pvarDst` için geçerli bir değer başlatılması.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ivariantchangetype arabirimi](../../winscript/reference/ivariantchangetype-interface.md)
+ [IVariantChangeType Arabirimi](../../winscript/reference/ivariantchangetype-interface.md)

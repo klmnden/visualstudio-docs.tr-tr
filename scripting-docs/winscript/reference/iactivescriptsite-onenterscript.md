@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb4514770faaaad46c8590e6df03488e3d5bc679
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ccef1b2bf63c4421843d3a33cab2e4f471a48251
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793550"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094074"
 ---
 # <a name="iactivescriptsiteonenterscript"></a>IActiveScriptSite::OnEnterScript
-Ana bilgisayara komut dosyası altyapısı kod yürütme başladıktan bildirir.  
+Konak, komut dosyası altyapısı betik kodu yürüten başlatıldığını bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnEnterScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnEnterScript(void);
  Döndürür `S_OK` başarılı olursa.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Komut dosyası altyapısı bu yöntem her bir giriş veya deðiþiklik komut dosyası motoruna çağırmanız gerekir. Örneğin, komut dosyasını bir nesne çağırır sonra komut dosyası altyapısı tarafından işlenen bir olay gönderir, komut dosyası altyapısı çağırmalısınız `IActiveScriptSite::OnEnterScript` önce olayı yürütmek ve çağırmalısınız [IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md) Olay yürütülürken sonra ancak olay harekete nesne dönmeden önce yöntemi. Bu yönteme çağrıları iç içe. Bu yöntem her çağrısına karşılık gelen çağrıyı gerektirir `IActiveScriptSite::OnLeaveScript`.  
+ Komut dosyası altyapısı, bu yöntem her girdi veya deðiþiklik komut dosyası altyapısı çağırmalıdır. Örneğin, betik, bir nesne çağırır, ardından komut dosyası altyapısı tarafından işlenen bir olayı tetikler, komut dosyası altyapısı çağırmalıdır `IActiveScriptSite::OnEnterScript` önce olay yürütme ile çağırmalısınız [IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md) Olay yürütülürken sonra ancak olayı tetikleyen nesne döndürmeden önce yöntemi. Bu yönteme çağrıları yuvalanabilir. Bu yöntem yapılan her çağrı bir çağrı ile gerektirir `IActiveScriptSite::OnLeaveScript`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

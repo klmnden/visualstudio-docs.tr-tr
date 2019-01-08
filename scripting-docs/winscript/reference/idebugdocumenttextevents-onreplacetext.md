@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cbe022113e8a97dc31b4cf5a2286ec0b5096d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f04424eb12d0905c128913e2b0f8abe80ef5655
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794108"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089828"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
 Metin değiştirildiğini gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onReplaceText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToReplace  
@@ -39,13 +39,13 @@ HRESULT onReplaceText(
   
 #### <a name="parameters"></a>Parametreler  
  `cCharacterPosition`  
- [in] Karakter ilk karakterin değiştirildi.  
+ [in] İlk karakterin karakter konumu değiştirildi.  
   
  `cNumToReplace`  
  [in] Değiştirilen karakter sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT onReplaceText(
  Bu yöntem, metin değiştirildiğini gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttextevents arabirimi](../../winscript/reference/idebugdocumenttextevents-interface.md)
+ [IDebugDocumentTextEvents Arabirimi](../../winscript/reference/idebugdocumenttextevents-interface.md)

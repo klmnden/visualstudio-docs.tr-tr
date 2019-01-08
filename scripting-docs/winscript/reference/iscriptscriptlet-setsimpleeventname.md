@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 958478d8c8ead6500711a7866a784235adb869b8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78e1ec5cddd28bc80a29789bf800eb49d0236972
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796283"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091474"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-Kod parçacığı ile ilişkili basit olay adını ayarlar. Bu herhangi bir boşluk içermeyen bir Tek sözcüklü adıdır.  
+Kod oluşturma yöntemiyle ilişkili basit olay adını ayarlar. Bu, herhangi bir boşluk içermeyen Tek sözcüklü adıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetSimpleEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>Parametreler  
  `psz`  
- [in] İle ilişkili basit olay adı içeren bir arabellek `IScriptScriptlet` nesnesi.  
+ [in] İlişkili olduğu basit olay adını içeren bir arabellek `IScriptScriptlet` nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -50,4 +50,4 @@ HRESULT SetSimpleEventName(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptscriptlet arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)
+ [IScriptScriptlet Arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)

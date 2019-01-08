@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 898c80dc4f5ef9010db6396a78c1b17b50603dc2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8d3f50029be8489d05c204c57f50c3f7f1326400
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794222"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096140"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
-Özellik tarayıcısı geçerli çerçevenin döndürür.  
+Geçerli çerçeve için bir özellik tarayıcısı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IDebugProperty**  ppDebugProp  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Parametreler  
  `ppDebugProp`  
- [out] Özellik tarayıcısı geçerli çerçevenin.  
+ [out] Geçerli çerçeve için bir özellik tarayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, özellik tarayıcısı geçerli çerçevenin döndürür.  
+ Bu yöntem, geçerli çerçeve için bir özellik tarayıcısı döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugstackframe arabirimi](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame Arabirimi](../../winscript/reference/idebugstackframe-interface.md)

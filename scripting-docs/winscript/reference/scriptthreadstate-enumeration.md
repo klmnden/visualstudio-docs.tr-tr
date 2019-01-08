@@ -1,5 +1,5 @@
 ---
-title: SCRIPTTHREADSTATE numaralandırması | Microsoft Docs
+title: SCRIPTTHREADSTATE sabit listesi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,31 +18,31 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796331"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094126"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE Numaralandırması
-Bir iş parçacığı durumu bir komut dosyası motoru belirtir. Bu numaralandırma tarafından kullanılan [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) yöntemi.  
+Bir komut dosyası altyapısı bir iş parçacığı durumunu belirtir. Bu sabit listesi tarafından kullanılan [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef enum tagSCRIPTTHREADSTATE {  
     SCRIPTTHREADSTATE_NOTINSCRIPT  = 0,  
     SCRIPTTHREADSTATE_RUNNING      = 1  
 } SCRIPTTHREADSTATE;  
 ```  
   
-## <a name="enumeration-values"></a>Numaralandırma değerleri  
+## <a name="enumeration-values"></a>Sabit listesi değerleri  
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Belirtilen iş parçacığı şu anda işleme hemen yürütülen kod metni komut dosyalı bir olay Bakım veya bir komut dosyası makrosu çalıştırıyor.|  
-|SCRIPTTHREADSTATE_RUNNING|Belirtilen iş parçacığı etkin olarak işleme hemen yürütülen kod metni komut dosyalı bir olay Bakım veya bir komut dosyası makrosu çalıştırıyor.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Belirtilen iş parçacığı henüz hemen yürütülen işlem komut metni komut dosyalı bir olay hizmet veya çalışan bir betik makrosu.|  
+|SCRIPTTHREADSTATE_RUNNING|Belirtilen iş parçacığı etkin olarak komut dosyalı bir olay işleme hemen yürütülen betik metin Bakım veya çalışan bir betik makrosu.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası sabitleri, numaralandırmaları ve hata kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

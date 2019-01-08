@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a1006304974fab4959ad6313ffdc26793cdd345
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 77cc255bcd04754cbfde4638b67a85f6fdc0a922
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794579"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091994"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-Karakter ve/veya bir karakterin aralığı ile ilişkili karakter özniteliklerini alır.  
+Karakterler ve/veya bir karakter konumu aralıkla ilişkili karakter özniteliklerini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetText(  
    ULONG              cCharacterPosition,  
    WCHAR*             pcharText,  
@@ -42,30 +42,30 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parametreler  
  `cCharacterPosition`  
- [in] Karakter konumu aralık konumunu başlatın.  
+ [in] Karakter konumu aralığı konumunu başlatın.  
   
  `pcharText`  
- [içinde out] Bir karakterin metin arabelleği. Arabellek tutmak için yeterince büyük `cMaxChars` karakter. Bu parametre NULL ise, yöntem karakter döndürmez.  
+ [out içinde] Bir karakterin metin arabelleği. Arabellek tutabilecek kadar büyük `cMaxChars` karakter. Bu parametre NULL ise, yöntem karakterleri döndürmedi.  
   
  `pstaTextAttr`  
- [içinde out] Karakter özniteliği arabellek. Arabellek tutmak için yeterince büyük `cMaxChars` karakter. Bu parametre NULL ise, yöntem öznitelikleri döndürmez.  
+ [out içinde] Bir karakter özniteliğini arabelleği. Arabellek tutabilecek kadar büyük `cMaxChars` karakter. Bu parametre NULL ise, yöntem öznitelikleri döndürmez.  
   
  `pcNumChars`  
- [içinde out] Döndürülen karakter/özniteliklerinin sayısı. Bu parametre, bu yöntemi çağırmadan önce sıfır olarak ayarlanması gerekir.  
+ [out içinde] Döndürülen karakter/özniteliklerinin sayısı. Bu parametre, bu yöntemi çağırmadan önce sıfır olarak ayarlanmalıdır.  
   
  `cMaxChars`  
- [in] Karakter konumu aralık karakter sayısı. Ayrıca en fazla döndürülecek karakter sayısını belirtir.  
+ [in] Karakter konumu aralığı karakter sayısı. Döndürülecek karakterlerin sayısı da belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem karakter ve/veya bir karakterin aralığı ile ilişkili karakter özniteliklerini alır. Karakter konumu aralık bir karakterin karakter sayısı ile belirtilir.  
+ Bu yöntem, karakterleri ve/veya bir karakter konumu aralıkla ilişkili karakter özniteliklerini alır. Karakter konumu aralığı karakter konumunu bir karakter sayısı ile belirtilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)   
- [SOURCE_TEXT_ATTR numaralandırması](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR Sabit Listesi](../../winscript/reference/source-text-attr-enumeration.md)

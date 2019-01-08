@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244713cad3cbc67776bd55d657842d0ca70139dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4afa5ded53455edacb23cf5efbb46575ce8ca5b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794111"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093983"
 ---
 # <a name="idebugexpressionabort"></a>IDebugExpression::Abort
 İfade durdurur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Abort();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT Abort();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir ifade değerlendirme fırsatta durdurur.  
+ Bu yöntem, bir ifade değerlendirmesi ilk fırsatta durdurur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugexpression arabirimi](../../winscript/reference/idebugexpression-interface.md)   

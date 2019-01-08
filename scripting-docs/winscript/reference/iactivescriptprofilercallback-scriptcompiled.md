@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ea1823087b323f2acc9b87edfce48bbe9f924bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf653e5623506a68e6353e3d9f97077592e87941
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793508"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091513"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-Profil oluşturucu komut dosyası altyapısını nesne derlenmiş bir komut dosyası bildirir. Bu yöntem derlenir her komut dosyası için çağrılır.  
+Komut dosyası motoru nesne derlenmiş bir komut dosyası profil oluşturucu bildirir. Bu yöntem derlendiğinde her komut için çağrılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ScriptCompiled(  
     [in] PROFILER_TOKEN scriptId,  
     [in] PROFILER_SCRIPT_TYPE type,  
@@ -37,19 +37,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>Parametreler  
  `scriptId`  
- [in] Derlenen betik benzersiz kimliği. Bu kimlik komut dosyası altyapısı tarafından atanır.  
+ [in] Derlenen kodun benzersiz kimliği. Bu kimlik, komut dosyası altyapısı tarafından atanır.  
   
  `type`  
- [in] Derlenen komut dosyası türü. Değerleri tanımlanan [profıler_scrıpt_type numaralandırması](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] Derlenen kodun türü. Değerleri tanımlanan [profıler_scrıpt_type numaralandırması](../../winscript/reference/profiler-script-type-enumeration.md).  
   
  `pIDebugDocumentContext`  
- [in] Mevcut ise, bir işaretçi bir `IUnknown` profil oluşturucu için sorgu gerekir arabirimi bir [Idebugdocumentcontext arabirimi](../../winscript/reference/idebugdocumentcontext-interface.md) işaretçi. Aksi takdirde, bu boş olacaktır.  
+ [in] Mevcut ise, işaretçi bir `IUnknown` profil oluşturucu için faydalanacaksa arabirimi bir [Idebugdocumentcontext arabirimi](../../winscript/reference/idebugdocumentcontext-interface.md) işaretçi. Aksi takdirde, bu null olacaktır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin dönüş değeri komut dosyası altyapısı tarafından göz ardı edilir.  
+ Bu yöntemin dönüş değerini komut dosyası altyapısı tarafından göz ardı edilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yalnızca bu ana bilgisayar tarafından destekleniyorsa komut dosyası altyapısı belge bağlamı sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptprofilercallback arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback Arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: facbe73a404ace07ad91e403a26e94008d0a3e67
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e7146082d0311ec758024fdc4d50e4506bd3ec85
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794915"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094672"
 ---
 # <a name="iremotedebugapplicationdisconnectdebugger"></a>IRemoteDebugApplication::DisconnectDebugger
 Geçerli hata ayıklayıcı uygulamadan bağlantısını keser.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT DisconnectDebugger();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT DisconnectDebugger();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, uygulamanın geçerli hata ayıklayıcı bağlantısını keser.  
+ Bu yöntem, geçerli hata ayıklayıcı uygulamadan bağlantısını keser.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication Arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Ijsdebugdatatarget::getthreadcontext yöntemi | Microsoft Docs
+title: Ijsdebugdatatarget::getthreadcontext metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 50e2bdb7b8720549aac5e5b3c4cebffc4b7ae892
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794609"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090070"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext Metodu
-İş parçacığı alır bağlamının verilir.  
+Verilen iş parçacığı için bağlamı alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -42,13 +42,13 @@ HRESULT GetThreadContext(
  [in] Hedef işlemde çalışan iş parçacığı.  
   
  `contextFlags`  
- [in] Bağlam bayrakları belirtir. Bu bağlam ContextFlags alan (daha fazla bilgi için bkz: winnt.h CONTEXT_ALL arayın) ile aynı olur.  
+ [in] Bağlam bayraklarını belirtir. Bu, Context'in ContextFlags alanıyla aynıdır (daha fazla bilgi için bkz. winnt.h, context_all öğesini arayın) olarak aynıdır.  
   
  `contextSize`  
- [in] PContext tarafından belirtilen arabellek boyutu.  
+ [in] PContext tarafından belirlenen arabellek boyutu.  
   
  `pContext`  
- [out] Platforma özgü içerik yapısı pContext tarafından belirtilen arabellek içine alır.  
+ [out] Platforma özgü CONTEXT yapısını pContext tarafından belirlenen arabelleğine alır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
@@ -56,4 +56,4 @@ HRESULT GetThreadContext(
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

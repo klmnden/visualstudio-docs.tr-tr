@@ -12,22 +12,22 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fe5b308ea75956d9e5826b4daadaef3a823141f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 997c5149467591a7612e6ff10b0efcc3efbc91bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796400"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087808"
 ---
 # <a name="scripterrordebugexceptionthrownkind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND Listelemesi
-Oluşan özel durumun türünü gösterir. Bu numaralandırma tarafından kullanılan [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) yöntemi.  
+Oluşan özel durumun türünü gösterir. Bu sabit listesi tarafından kullanılan [Iactivescripterrordebug110::getexceptionthrownkind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) yöntemi.  
   
 > [!IMPORTANT]
 >  Bu sabitler PDM sürüm 11.0 ve daha sonraki sürümleri tarafından uygulanır. activdbg100.h içinde bulunur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND  
 ```  
   
@@ -40,4 +40,4 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 |ETK_UNHANDLED|0x00000002|Özel durum kodda işlenmez.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescripterrordebug110 arabirimi](../../winscript/reference/iactivescripterrordebug110-interface.md)
+ [IActiveScriptErrorDebug110 Arabirimi](../../winscript/reference/iactivescripterrordebug110-interface.md)

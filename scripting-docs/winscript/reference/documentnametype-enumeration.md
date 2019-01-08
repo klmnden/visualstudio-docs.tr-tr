@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31e304cfbb0ed7cd19b832d7ed7c33ccc2c930c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791684"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094776"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE Listelemesi
 Bir belge için hangi türün alınacağını açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -43,11 +43,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|Uygulama ağacında görünen adını alır.|  
+|DOCUMENTNAMETYPE_APPNODE|Uygulama ağaçta görünen adını alır.|  
 |DOCUMENTNAMETYPE_TITLE|Görüntüleyici başlık çubuğunda görünen adını alır.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Bir yol olmadan dosya adını alır.|  
 |DOCUMENTNAMETYPE_URL|Belge URL'sini alır.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Tanımlama için numaralandırma eklenen başlığını alır.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Tanımlama için numaralandırma protokolün başlığını alır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

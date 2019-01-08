@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8714f4401249d73cf09d241ebf4c2b2115911d6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 30051276b682bdf906db72bc2682e1c5d58c455a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793814"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090707"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
-Belirtilen zaman uyumlu hata ayıklama işlemi zaman uyumsuz erişim sağlar.  
+Belirli bir zaman uyumlu hata ayıklama işlemi zaman uyumsuz erişim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateAsyncDebugOperation(  
    IDebugSyncOperation*    psdo,  
    IDebugAsyncOperation**  ppado  
@@ -45,16 +45,16 @@ HRESULT CreateAsyncDebugOperation(
  [out] Zaman uyumsuz hata ayıklama işlemi nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem açıkça hata ayıklayıcı iş parçacığı ile Eşitleme yapmadan ifadeleri zaman uyumsuz olarak değerlendirilecek dil altyapısı sağlar. Daha fazla bilgi için bkz: [Idebugsyncoperation arabirimi](../../winscript/reference/idebugsyncoperation-interface.md) ve [Idebugasyncoperation arabirimi](../../winscript/reference/idebugasyncoperation-interface.md).  
+ Bu yöntemi açıkça hata ayıklayıcı iş parçacığıyla eşitleme olmadan ifadeleri zaman uyumsuz olarak değerlendirilecek dil altyapısı sağlar. Daha fazla bilgi için [Idebugsyncoperation arabirimi](../../winscript/reference/idebugsyncoperation-interface.md) ve [Idebugasyncoperation arabirimi](../../winscript/reference/idebugasyncoperation-interface.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)   
  [Idebugsyncoperation arabirimi](../../winscript/reference/idebugsyncoperation-interface.md)   
- [Idebugasyncoperation arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation Arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)

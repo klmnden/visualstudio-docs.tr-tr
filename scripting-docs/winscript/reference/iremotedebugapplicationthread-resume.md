@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 265c0a368fc7f0a5faf3ced3f335b3d7d49c1b24
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cd48bc881c9f5ab08fc6e75b2ef7f0b1cf470bbe
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794648"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086885"
 ---
 # <a name="iremotedebugapplicationthreadresume"></a>IRemoteDebugApplicationThread::Resume
-İş parçacığı sürdürür.  
+İş parçacığını sürdürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Resume(  
    DWORD*  pdwCount  
 );  
@@ -38,17 +38,17 @@ HRESULT Resume(
   
 #### <a name="parameters"></a>Parametreler  
  `pdwCount`  
- [out] İş parçacığı için askıya alma sayısı.  
+ [out] İş parçacığı için askıya alma sayımı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, iş parçacığı çıktığında, askıya alma azaltır sayısı.  
+ Bu yöntem iş parçacığı devam ettiğinde, askıya alma sayısını azaltır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationthread arabirimi](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread Arabirimi](../../winscript/reference/iremotedebugapplicationthread-interface.md)

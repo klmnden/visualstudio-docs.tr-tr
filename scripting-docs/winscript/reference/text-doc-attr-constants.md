@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130895e0e70b1044fab5d5ab406f940b036c37f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e3fd21ba720dfed394e497a9a56a1bb6898dc60
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796433"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097259"
 ---
 # <a name="textdocattr-constants"></a>TEXT_DOC_ATTR Sabitleri
 Belgenin özniteliklerini açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef DWORD TEXT_DOC_ATTR;  
 ```  
   
@@ -38,10 +38,10 @@ typedef DWORD TEXT_DOC_ATTR;
   
 |Sabit|Değer|Açıklama|  
 |--------------|-----------|-----------------|  
-|TEXT_DOC_ATTR_READONLY|0x00000001|Belgeyi salt okunur durumdadır.|  
-|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Bu belge ağacının birincil dosya belgedir.|  
-|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Bir çalışan belgedir.|  
-|TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Belge bir komut dosyasıdır.|  
+|TEXT_DOC_ATTR_READONLY|0x00000001|Belge salt okunur.|  
+|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Belge, bu belge ağacının birincil dosyasıdır.|  
+|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Bir çalışan belgesidir.|  
+|TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Belge, bir komut dosyasıdır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

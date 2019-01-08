@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3590fe05ef82f094dd5706f9f527b247d95eda8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794426"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097740"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-Bir değişken sarmalar ve değişken değerleri veya VARTYPE türlerini özel dönüştürme dizeleri için sağlayan bir özellik tarayıcısı döndürür.  
+Bir değişken sarmalar ve değişken değerlerini VARTYPE türleri veya özel dönüştürme dizeleri için sağlayan bir özellik tarayıcısı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowserEx(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -45,28 +45,28 @@ HRESULT CreatePropertyBrowserEx(
  [in] Göz atmak için kök değişken.  
   
  `bstrName`  
- [in] Kök vermek için adı.  
+ [in] Kök vermek adı.  
   
  `pdat`  
- [in] İstek özellikleri, iş parçacığı. Bu parametre NULL ise, hiçbir dizimi gerçekleştirilir.  
+ [in] Hangi özellikleri istemek iş parçacığı. Bu parametre NULL ise, hiçbir taşıma gerçekleştirilir.  
   
  `pdf`  
- [in] Özel biçimlendirme çeşitlerini sağlayan nesne.  
+ [in] Çeşitleri için özel biçimlendirme sağlayan nesne.  
   
  `ppdob`  
  [out] Özellik tarayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir değişken sarmalar ve değişken değerleri veya VARTYPE türlerini özel dönüştürme dizeleri için sağlayan bir özellik tarayıcısı döndürür.  
+ Bu yöntem, bir değişken sarmalar ve değişken değerlerini VARTYPE türleri veya özel dönüştürme dizeleri için sağlayan bir özellik tarayıcısı döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
  [Idebughelper arabirimi](../../winscript/reference/idebughelper-interface.md)   
- [Idebugproperty arabirimi](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty Arabirimi](../../winscript/reference/idebugproperty-interface.md)

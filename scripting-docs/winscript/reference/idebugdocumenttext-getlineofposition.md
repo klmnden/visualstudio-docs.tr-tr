@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2512fa3b56a19ed7396c7a351c8d8f8323fff6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c916f0a76021afea82b4021ed1ce7d411317807
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794141"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087717"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Verilen karakterin konumu için satır numarası ve isteğe bağlı olarak, karşılık gelen satır karakteri uzaklığını döndürür.  
+Satır numarası ve isteğe bağlı olarak, karşılık gelen satır karakter kaydırma için belirli karakter konumunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetLineOfPosition(  
    ULONG   cCharacterPosition,  
    ULONG*  pcLineNumber,  
@@ -40,23 +40,23 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Parametreler  
  `cCharacterPosition`  
- [in] Karakter konumu aralık konumunu başlatın.  
+ [in] Karakter konumu aralığı konumunu başlatın.  
   
  `pcLineNumber`  
- [out] Aralığın satır sayısı.  
+ [out] Satır numarası aralığı.  
   
  `pcCharacterOffsetInLine`  
- [içinde out] Aralık satır içinde karakter uzaklığını `pcLineNumber`. Bu parametre ise `NULL`, yöntemi bir değer döndürmüyor.  
+ [out içinde] Satır aralığında karakter uzaklığı `pcLineNumber`. Bu parametre `NULL`, yöntem bir değer döndürmez.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, verilen karakterin konumu için satır numarası ve isteğe bağlı olarak, karşılık gelen satır karakteri uzaklığını döndürür.  
+ Bu yöntem, satır numarası ve isteğe bağlı olarak, karşılık gelen satır karakter kaydırma için belirli karakter konumunu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)
+ [IDebugDocumentText Arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)

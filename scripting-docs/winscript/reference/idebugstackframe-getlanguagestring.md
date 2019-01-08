@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cc20c3ce2f5d198e167b83ffddb65cedc84402d7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794408"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087743"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Dil kısa veya uzun metinsel açıklaması döndürür.  
+Bu dil kısa veya uzun metin açıklamasını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetLanguageString(  
    BOOL   fLong,  
    BSTR*  pbstrLanguage  
@@ -39,20 +39,20 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Parametreler  
  `fLong`  
- [in] Bayrak, burada `TRUE` uzun açıklama döndürür ve `FALSE` kısa bir açıklaması döndürür.  
+ [in] Bayrağı, burada `TRUE` uzun açıklamasını döndürür ve `FALSE` kısa açıklamasını döndürür.  
   
  `pbstrLanguage`  
  [out] Dil açıklaması.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genellikle, `fLong` olan `FALSE`, bu yöntem yalnızca yığın çerçevesi ile ilişkili dilinin adı sağlar. Zaman `fLong` olan `TRUE`, bu yöntem bir tam ürün açıklama sağlayabilir.  
+ Genellikle, `fLong` olduğu `FALSE`, bu yöntem yalnızca yığın çerçevesiyle ilgili dil adını sağlar. Zaman `fLong` olduğu `TRUE`, bu yöntem, tam ürün açıklamasını sağlayabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugstackframe arabirimi](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame Arabirimi](../../winscript/reference/idebugstackframe-interface.md)

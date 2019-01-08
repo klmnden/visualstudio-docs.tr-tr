@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54d91c4df9d1e478d028e95e5cfc930d69355c54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d91a24a9255ff9ae558e9ff821b358331ef788b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097272"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Yeni bir hata ayıklama belge bağlam oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateDebugDocumentContext(  
    ULONG                    iCharPos,  
    ULONG                    cChars,  
@@ -40,23 +40,23 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parametreler  
  `iCharPos`  
- [in] Hata ayıklama belge içeriği başlangıç konumu.  
+ [in] Hata ayıklama belgesinin içeriği başlangıç konumu.  
   
  `cChars`  
- [in] Bağlamında karakter sayısı.  
+ [in] Bağlam karakter sayısı.  
   
  `ppddc`  
  [out] Yeni hata ayıklama belge bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yeni bir hata ayıklama belge içeriği oluşturmak için ana sağlar.  
+ Bu yöntem, yeni bir hata ayıklama belge içeriği oluşturmak konak sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper Arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)

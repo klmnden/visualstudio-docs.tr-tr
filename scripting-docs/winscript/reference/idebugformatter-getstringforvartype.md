@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 06c4833e2d9a88b63a80b2ee9437dc5547579380
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794324"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087549"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
 Belirtilen VARTYPE değeri temsil eden bir dize döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetStringForVarType(  
    VARTYPE    vt,  
    TYPEDESC*  ptdescArrayType,  
@@ -40,16 +40,16 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>Parametreler  
  `vt`  
- [in] Bir dize olarak göstermek için VARTYPE.  
+ [in] Bir dize olarak temsil etmek için VARTYPE.  
   
  `ptdescArrayType`  
- [in] Türleri açıklanmaktadır yapıları dizisi.  
+ [in] Türleri açıklayan yapıları dizisi.  
   
  `pbstr`  
  [out] Temsil eden dize `vt`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -59,4 +59,4 @@ HRESULT GetStringForVarType(
  Yöntemi, belirtilen VARTYPE değeri temsil eden bir dize döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugformatter arabirimi](../../winscript/reference/idebugformatter-interface.md)
+ [IDebugFormatter Arabirimi](../../winscript/reference/idebugformatter-interface.md)

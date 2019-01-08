@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla karakter sayma sayısı'
+title: 'Nasıl yapılır: Program aracılığıyla karakter sayma sayısı'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - characters, counting in documents
 - counting characters in documents
 - documents [Office development in Visual Studio], counting characters
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c86eade90d36ca62ad361c757660bcada71a6a4c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6ec83d219d8f54691165b7de7008b13d3347d16
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960767"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091422"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Nasıl Yapılır: Program aracılığıyla karakter sayma sayısı
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Nasıl yapılır: Program aracılığıyla karakter sayma sayısı
   İlk karakter bir belge, ekleme noktasını temsil eden karakter 0. konumdadır. Son karakter konumundan belgede toplam karakter sayısı eşittir. Kullanarak bir belgedeki karakter sayısına göre belirleyebilirsiniz <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> özelliği <xref:Microsoft.Office.Interop.Word.Characters> koleksiyonu.  
   
  Boşluk, paragraf işaretlerini ve normalde gizli diğer karakterler dahil olmak üzere belgedeki tüm karakterleri sayılır. Paragraf işaretlerini içerdiği için yeni, boş bir belge bile bir karakter sayısını döndürür.  

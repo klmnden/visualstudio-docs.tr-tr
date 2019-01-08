@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791819"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096804"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON Listelemesi
 Kesilmenin nedenini gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -47,14 +47,14 @@ typedef enum tagBREAKREASON {
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|BREAKREASON_STEP|Sürüm modunda dil altyapısıdır.|  
-|BREAKREASON_BREAKPOINT|Dil altyapısı açık bir kesme noktası karşılaştı.|  
-|BREAKREASON_DEBUGGER_BLOCK|Dil altyapısı hata ayıklayıcı blok başka bir iş parçacığında karşılaştı.|  
-|BREAKREASON_HOST_INITIATED|Konak bir sonu istedi.|  
-|BREAKREASON_LANGUAGE_INITIATED|Dil altyapısı bir sonu istedi.|  
-|BREAKREASON_DEBUGGER_HALT|Hata ayıklayıcı IDE bir sonu istedi.|  
-|BREAKREASON_ERROR|Bir yürütme hatası sonu neden oldu.|  
-|BREAKREASON_JIT|JIT hata ayıklamayı başlatma işlemi tarafından neden oldu.|  
+|BREAKREASON_STEP|Dil altyapısı Adımlama modundadır.|  
+|BREAKREASON_BREAKPOINT|Dil altyapısı, açık bir kesme noktası karşılaştı.|  
+|BREAKREASON_DEBUGGER_BLOCK|Dil altyapısı, başka bir iş parçacığında bir hata ayıklayıcı blok karşılaştı.|  
+|BREAKREASON_HOST_INITIATED|Konak, bir kesme istedi.|  
+|BREAKREASON_LANGUAGE_INITIATED|Dil altyapısı, bir kesme istedi.|  
+|BREAKREASON_DEBUGGER_HALT|IDE hata ayıklayıcı bir kesme istedi.|  
+|BREAKREASON_ERROR|Bir yürütme hatası kesilmenin nedenini.|  
+|BREAKREASON_JIT|JIT hata ayıklama başlatma işlemi tarafından neden oldu.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

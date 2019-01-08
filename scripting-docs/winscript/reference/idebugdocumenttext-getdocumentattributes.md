@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3121538612be48628b24965e118130875c51a0b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f689aa6f930a596239483176e1aa9f2fcc8cdd3e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794045"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086612"
 ---
 # <a name="idebugdocumenttextgetdocumentattributes"></a>IDebugDocumentText::GetDocumentAttributes
-Belge özniteliklerini döndürür.  
+Belgenin özniteliklerini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDocumentAttributes(  
    TEXT_DOC_ATTR*  ptextdocattr  
 );  
@@ -41,7 +41,7 @@ HRESULT GetDocumentAttributes(
  [out] Belge metin öznitelikleri.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT GetDocumentAttributes(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)   
- [TEXT_DOC_ATTR sabitleri](../../winscript/reference/text-doc-attr-constants.md)
+ [TEXT_DOC_ATTR Sabitleri](../../winscript/reference/text-doc-attr-constants.md)

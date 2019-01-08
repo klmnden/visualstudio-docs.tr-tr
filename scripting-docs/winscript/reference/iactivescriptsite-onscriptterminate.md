@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eef8bd2a3f2e2a4eb4fd4b5f0e35fcd9acfe5bc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8ff7c3d531b46fa6681776e79fbb73f6d1efca2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793541"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087119"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-Ana bilgisayar komut dosyası yürütme tamamlandığını bildirir.  
+Konak betik yürütme tamamlandığını bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnScriptTerminate(  
     VARIANT *pvarResult,   // address of script results  
     EXCEPINFO *pexcepinfo  // address of structure with exception information  
@@ -39,16 +39,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>Parametreler  
  `pvarResult`  
- [in] Komut dosyası sonucu içeren değişkenin adresini veya `NULL` komut dosyası hiçbir sonuç oluşturduysa.  
+ [in] Komut dosyası sonucu içeren değişkenin adresini veya `NULL` betik sonuç oluşturduysa.  
   
  `pexcepinfo`  
- [in] Adres bir `EXCEPINFO` betik sonlandırıldı zaman oluşturulan özel durum bilgilerini içeren yapısı veya `NULL` hiçbir özel durum oluşturursa.  
+ [in] Adresi bir `EXCEPINFO` betik sonlandırıldı, oluşturulan özel durum bilgilerini içeren yapısı veya `NULL` hiçbir özel durum oluşturulduysa.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK` başarılı olursa.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırmadan önce komut dosyası altyapısı çağırır [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) SCRIPTSTATE_INITIALIZED bayrağı ayarlanmış yöntemi tamamlandı. Bu yöntem, ana bilgisayara tamamlanma durumunu ve sonuçlarını döndürmek için kullanılabilir. Olayları ana bilgisayardan indirme dayanır, birçok komut dosyası dillerini ana bilgisayar tarafından tanımlanan ömrü olduğunu unutmayın. Bu durumda, hiçbir zaman bu yöntem çağrılabilir.  
+ Komut dosyası altyapısı çağırmadan önce bu yöntemi çağıran [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemiyle SCRIPTSTATE_INITIALIZED bayrağı ayarlanmış tamamlandı. Bu yöntem, konağa tamamlanma durumunu ve sonuçlarını döndürmek için kullanılabilir. Ana bilgisayar tarafından tanımlanan ömrü olayları konaktan indirme üzerinde alan birçok betik dili gerektiğini unutmayın. Bu durumda, bu yöntem hiçbir zaman çağrılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

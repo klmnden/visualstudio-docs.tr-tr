@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69674b5639c7d59a4551192177d9ebdafd27ac99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7014ecc858734a4dea6f9c4c2453f101c28d8996
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793982"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089940"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
-Belge için kısa ad ayarlar.  
+Kısa ad belge için ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetShortName(  
    LPCOLESTR  pszShortName  
 );  
@@ -38,17 +38,17 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>Parametreler  
  `pszShortName`  
- [in] Belgenin kısa adını içeren null ile sonlandırılmış bir dize.  
+ [in] Belge kısa adını içeren null ile sonlandırılmış bir dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belge için yeni bir kısa ad ayarlar.  
+ Bu yöntem, yeni bir kısa ad belge için ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)
+ [IDebugDocumentHelper Arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d293649e3a6a87c7f594e244378dc2a7e15ac6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794435"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093346"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
-İfade değerlendirme başlar.  
+İfadenin değerlendirilmesi başlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugExpressionCallBack*  pdecb  
 );  
@@ -38,10 +38,10 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parametreler  
  `pdecb`  
- [in] İfade değerlendirme tamamlandığında belirten için geri çağırma. Bu parametre ise `NULL`, hiçbir olaylar ve kullanarak, istemci ifadesi durumu yoklaması gerekir `QueryIsComplete`.  
+ [in] İfade değerlendirme ne zaman tamamlandığını belirten geri çağırma. Bu parametre `NULL`, olay tetiklenir ve kullanarak, istemci ifade durum yoklaması gerekir `QueryIsComplete`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -52,4 +52,4 @@ HRESULT Start(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
- [Idebugexpression arabirimi](../../winscript/reference/idebugexpression-interface.md)
+ [IDebugExpression Arabirimi](../../winscript/reference/idebugexpression-interface.md)

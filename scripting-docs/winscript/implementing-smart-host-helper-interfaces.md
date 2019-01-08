@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909828"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088354"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Akıllı Konak Yardımcı Arabirimleri Uygulama
 [Idebugdocumenthelper arabirimi](../winscript/reference/idebugdocumenthelper-interface.md) arabirimi akıllı barındırmak için gereken birçok arabirimler için uygulamaları sağladığından etkin hata ayıklama için bir akıllı ana bilgisayar oluşturma görevini büyük ölçüde basitleştirir.  
@@ -53,7 +53,7 @@ ms.locfileid: "49909828"
   
      Aşağıdaki kod işlem özetlenmektedir, ancak hata denetimi veya sağlam diğer programlama teknikleri içermez.  
   
-    ```  
+    ```cpp
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
           CLSCTX_INPROC_SERVER | CLSCTX_INPROC_HANDLER  
           | CLSCTX_LOCAL_SERVER,  
@@ -80,13 +80,13 @@ ms.locfileid: "49909828"
 ## <a name="implementing-iactivescriptsitedebug"></a>Iactivescriptsitedebug uygulama  
  Uygulamak için [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)belirtilen siteye karşılık gelen Yardımcısı alın ve sonra belirtilen kaynak bağlamı, aşağıdaki gibi kaydırın Başlangıç belgesini alın:  
   
-```  
+```cpp
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
  Ardından, belirli karakter kaydırma için yeni bir belge içeriği oluşturmak için yardımcıyı kullanın:  
   
-```  
+```cpp
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   

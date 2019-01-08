@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: de99e74cf12939a31c99cdc59ce8ad7fd685ae03
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794480"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086872"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
-Bir üyesi tarafından DISPID siler.  
+DISPID bir üyesine siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT DeleteMemberByDispID(  
     DISPID id  
 );  
@@ -38,7 +38,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parametreler  
  `id`  
- Üye tanımlayıcısı. Kullanan `GetDispID` veya `GetNextDispID` gönderme tanımlayıcısı alınamadı.  
+ Üye tanımlayıcısı. Kullanan `GetDispID` veya `GetNextDispID` gönderme tanımlayıcısının elde edilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -49,13 +49,13 @@ HRESULT DeleteMemberByDispID(
 |`S_FALSE`|Üye var, ancak silinemez.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Üye silinirse, DISPID için geçerli kalır gerekiyor `GetNextDispID`.  
+ DISPID üye silinirse, için geçerli kalır gerekiyor `GetNextDispID`.  
   
- Verilen ada sahip bir üye silinir ve aynı ada sahip bir üye daha sonra yeniden DISPID aynı olmalıdır. (Yalnızca örneğe göre farklılık üye adlarının "aynı" olup olmadığını nesne bağlıdır.)  
+ Belirli bir ada sahip bir üye silinir ve aynı ada sahip bir üye daha sonra yeniden oluşturulur, DISPID aynı olmalıdır. (Yalnızca harfe göre farklılık üye adları "aynı" olup olmadığını nesne bağlıdır.)  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp
 BSTR bstrName;  
 DISPID dispid;  
 IDispatchEx *pdex;   

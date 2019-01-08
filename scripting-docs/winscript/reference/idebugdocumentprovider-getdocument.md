@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dd952a63253dbbf6034e0345547e2bec73b60c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afdf039ebac10a407f8ee3b27b5918d97d7e96a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794021"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088783"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
-Belge zaten yoksa, örneğinin oluşturulması neden olur.  
+Zaten yoksa, oluşturulacak belge neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppssd  
 );  
@@ -41,14 +41,14 @@ HRESULT GetDocument(
  [out] Belgeye karşılık gelen hata ayıklama belge.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, zaten yoksa, örneğinin oluşturulması belge neden olur.  
+ Bu yöntem, zaten yoksa, oluşturulacak belge neden olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumentprovider arabirimi](../../winscript/reference/idebugdocumentprovider-interface.md)
+ [IDebugDocumentProvider Arabirimi](../../winscript/reference/idebugdocumentprovider-interface.md)

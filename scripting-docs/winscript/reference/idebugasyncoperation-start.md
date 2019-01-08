@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793937"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094789"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-Başlamak zaman uyumsuz işlemi neden olur.  
+Başlamak zaman uyumsuz işlem neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -38,10 +38,10 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parametreler  
  `padocb`  
- Bu işlemden durum olaylarını alır geri çağırma arabirimi.  
+ Bu işlemden durumu olaylarını alır geri çağırma arabirimi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ HRESULT Start(
 |`E_UNEXPECTED`|Bir işlem zaten beklemede.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem neden `IDebugSyncOperation::Execute` zaman uyumsuz olarak alınan iş parçacığında çağrılacak `IDebugSyncOperation::GetTargetThread`. Bu yöntem yalnızca hata ayıklayıcı iş parçacığının içinden çağrılmalıdır; Aksi takdirde, işlemi tamamlanana kadar bu döndürmez.  
+ Bu yöntem neden `IDebugSyncOperation::Execute` alınan iş parçacığında zaman uyumsuz olarak çağrılan `IDebugSyncOperation::GetTargetThread`. Bu yöntem yalnızca hata ayıklayıcı iş parçacığının içinden çağrılmalıdır; Aksi takdirde işlemi tamamlanana kadar bu döndürmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

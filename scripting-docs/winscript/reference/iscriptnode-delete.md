@@ -18,24 +18,24 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d1404d90cc1edd882505e463938a2c1a5e8aea8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cce802cc1a6d63001cfbed020592b30a9d8dab1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796253"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094802"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
-Bu nesne ağacına siler.  
+Bu nesne ağacının siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Delete();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Yöntemin parametre almaz.  
+ Yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -45,7 +45,7 @@ HRESULT Delete();
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonra `Delete` yöntemi çağrıldığında, [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) yöntemini gösteren bu betik düğümünde etkin değil.  
+ Sonra `Delete` yöntemi çağrıldığında [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) yöntemini gösterir betik düğüm etkin değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)

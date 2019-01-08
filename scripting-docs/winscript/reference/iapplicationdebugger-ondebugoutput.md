@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c660222ebc136c57605dd0fda2c7f5fa88c368c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed29673735038e9664324e9e342be199705348d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793727"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088367"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
-Hata ayıklama çıktı olayını işler.  
+Hata ayıklama çıkış olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -38,19 +38,19 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>Parametreler  
  `pstr`  
- [in] Hata ayıklayıcıda görüntülenecek dize.  
+ [in] Hata Ayıklayıcısı'nda görüntülenecek dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Hata ayıklayıcı genellikle görüntüler `pstr` bir çıktı penceresinde.  
+ Hata ayıklayıcı genellikle görüntüler `pstr` çıktı penceresinde.  
   
- Bu yöntem aldığında çağrılan `IDebugApplication::DebugOutput` olarak adlandırılır.  
+ Bu yöntem olduğunda çağrılır `IDebugApplication::DebugOutput` çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iapplicationdebugger arabirimi](../../winscript/reference/iapplicationdebugger-interface.md)   

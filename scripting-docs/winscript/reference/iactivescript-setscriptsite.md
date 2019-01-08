@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793265"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097441"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Komut dosyası motoru, sizi bilgilendirir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) ana bilgisayarı tarafından sağlanan arabirim site. Diğer önce bu yöntemi çağırabilmeniz [IActiveScript](../../winscript/reference/iactivescript.md) arabirim yöntemleri kullanılır.  
+Komut dosyası altyapısı, bildirir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) ana bilgisayar tarafından sağlanan arabirim site. Diğer önce bu yöntemi çağıran [IActiveScript](../../winscript/reference/iactivescript.md) arabirim yöntemleri kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetScriptSite(  
     IActiveScriptSite *pScriptSite  // address of host script site  
 );  
@@ -38,7 +38,7 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parametreler  
  `pScriptSite`  
- [in] Bu komut dosyası altyapısı örneği ile ilişkili olması için komut dosyası ana bilgisayarı tarafından sağlanan site adresi. Sitenin benzersiz olarak bu komut dosyası motoru örneğine atanması gerekir; diğer komut dosyası motorları ile paylaşılamaz.  
+ [in] Komut dosyası altyapısının Bu örnekle ilişkilendirilecek komut dosyası ana bilgisayarı tarafından sağlanan site adresi. Site, bu komut dosyası altyapısı örneği için benzersiz olarak atanmalıdır; diğer komut dosyası altyapıları ile paylaşılamaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -46,10 +46,10 @@ HRESULT SetScriptSite(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_FAIL`|Belirlenemeyen bir hata oluştu; komut dosyası altyapısı, bir siteyi başlatmak tamamlayamadı.|  
-|`E_INVALIDARG`|Bağımsız değişken geçersiz.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, bir site zaten ayarlanmış).|  
+|`E_FAIL`|Belirtilmeyen bir hata oluştu; komut dosyası altyapısı sitesi başlatılıyor tamamlayamadı.|  
+|`E_INVALIDARG`|Bir bağımsız değişken geçersiz.|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, bir site zaten ayarlanmış).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8c85601709bb727549152ffdb01e15dbd84e510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9e6b0e3499f9420d42660880f616d2d0873d7a0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794801"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086781"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>IJsEnumDebugProperty::Next Yöntemi
-Bu nesne için özellikler okur.  
+Bu nesnenin özelliklerini okur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG count,  
    IJsDebugProperty **ppDebugProperty,  
@@ -38,13 +38,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametreler  
  `count`  
- [in] Okunacak özellikleri sayısı.  
+ [in] Okunacak özellik sayısı.  
   
  `ppDebugProperty`  
- [out] Özellik tarayıcısı temsil eden nesne.  
+ [out] Özellik tarayıcısını temsil eden nesne.  
   
  `pActualCount`  
- [out] Nesnenin özelliklerini gerçek sayısı.  
+ [out] Nesne özelliklerinin gerçek sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
@@ -52,4 +52,4 @@ HRESULT Next(
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsenumdebugproperty arabirimi](../../winscript/reference/ijsenumdebugproperty-interface.md)
+ [IJsEnumDebugProperty Arabirimi](../../winscript/reference/ijsenumdebugproperty-interface.md)

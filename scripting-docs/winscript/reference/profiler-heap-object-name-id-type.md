@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c44a0945cff625d18ad22b4650dfe4a3f430405
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e1996af8f9921ef888c43d807ee11771e5aaa9e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796280"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090096"
 ---
 # <a name="profilerheapobjectnameid-type"></a>PROFILER_HEAP_OBJECT_NAME_ID Türü
-Yığın nesnesinin adını kimliği. Kullanılan [profıler_heap_object yapısı](../../winscript/reference/profiler-heap-object-structure.md).  
+Yığın nesnesi adı kimliği. Kullanılan [profıler_heap_object yapısı](../../winscript/reference/profiler-heap-object-structure.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef UINT PROFILER_HEAP_OBJECT_NAME_ID;  
 ```

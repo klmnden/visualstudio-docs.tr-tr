@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b872e63169f6c2d70cd3476324b3d0071718350
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14c7acc9070edb0e63dee8c71cb0b16c5f85e4cd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794228"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095621"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Yığın çerçevesi ile ilişkili geçerli kod bağlamını döndürür.  
+Yığın çerçevesiyle ilgili geçerli kod bağlamı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetCodeContext(  
    IDebugCodeContext**  ppcc  
 );  
@@ -38,17 +38,17 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>Parametreler  
  `ppcc`  
- [out] Yığın çerçevesi ile ilişkili kodu bağlamı.  
+ [out] Yığın çerçevesiyle ilgili kod bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yığın çerçevesi ile ilişkili geçerli kod bağlamını döndürür.  
+ Bu yöntem, yığın çerçevesiyle ilgili geçerli kod bağlamı döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugstackframe arabirimi](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame Arabirimi](../../winscript/reference/idebugstackframe-interface.md)

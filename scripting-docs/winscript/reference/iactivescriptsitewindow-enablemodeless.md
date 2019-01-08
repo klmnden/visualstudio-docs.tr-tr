@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7099fe7d13a1cb3231e67049104722af9373d7a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4cea23890539ca80abf8e3e58b0f8c48b7ca1fc9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793583"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093021"
 ---
 # <a name="iactivescriptsitewindowenablemodeless"></a>IActiveScriptSiteWindow::EnableModeless
-Etkinleştirmek veya devre dışı kendi ana penceresi yanı sıra tüm kalıcı olmayan iletişim kutuları için ana neden olur.  
+Etkinleştirmek veya kalıcı olmayan iletişim kutuları yanı sıra ana penceresi devre dışı bırakmak için ana neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnableModeless(  
     BOOL fEnable  // enable flag  
 );  
@@ -38,15 +38,15 @@ HRESULT EnableModeless(
   
 #### <a name="parameters"></a>Parametreler  
  `fEnable`  
- [in] Varsa, bayrak `TRUE`, ana pencereyi ve kalıcı olmayan iletişim kutuları sağlar veya `FALSE`, bunları devre dışı bırakır.  
+ [in] Bayrak `TRUE`, kalıcı olmayan iletişim kutuları ve ana pencereyi etkinleştirir veya `FALSE`, bunları devre dışı bırakır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı olursa ya da `E_FAIL` durumunda bir hata oluştu.  
+ Döndürür `S_OK` başarılı olursa veya `E_FAIL` varsa bir hata oluştu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem aynıdır `IOleInPlaceFrame::EnableModeless` yöntemi.  
+ Bu yöntem `IOleInPlaceFrame::EnableModeless` yöntemi.  
   
- Bu yönteme çağrıları iç içe.  
+ Bu yönteme çağrıları yuvalanabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsitewindow](../../winscript/reference/iactivescriptsitewindow.md)
+ [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

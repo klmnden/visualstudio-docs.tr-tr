@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea74d9e9e00485c86d26bb01c486992f85ffeb8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c527881c45a935344aa5444d7397ccdb6d99e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793415"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092501"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
-Bir belge nesne modeli (DOM) işlev çağrısı yürütülecek komut dosyası altyapısı geçiyor profil oluşturucu nesne bildirir.  
+Belge nesne modeli (DOM) işlev çağrısı yürütmek için komut dosyası altyapısı gidip profil oluşturucu nesne bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnFunctionEnterByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -34,17 +34,17 @@ HRESULT OnFunctionEnterByName(
   
 #### <a name="parameters"></a>Parametreler  
  `pwszFunctionName`  
- [in] Yürütülecek komut dosyası altyapısı geçiyor işlevin adı.  
+ [in] Yürütülecek komut dosyası altyapısı geçiyor işlevi adı.  
   
  `scriptType`  
- [in] İşlev türü. Geçerli değerler açıklamaları için bkz: [profıler_scrıpt_type numaralandırması](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] İşlev türü. Geçerli değerler açıklamaları için bkz. [profıler_scrıpt_type numaralandırması](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin dönüş değeri komut dosyası altyapısı tarafından göz ardı edilir.  
+ Bu yöntemin dönüş değerini komut dosyası altyapısı tarafından göz ardı edilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- DOM için komut dosyası altyapısı bu yöntemi çağırmak yerine aramaları [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Çok sayıda benzersiz yöntemleri ve DOM özelliklerinde nedeniyle budur  
+ DOM için komut dosyası altyapısının bu yöntemi çağırmak yerine aramaları [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md). Bu çok sayıda benzersiz yöntemleri ve özellikleri sayısında kaynaklanır  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
- [Iactivescriptprofilercallback2 arabirimi](../../winscript/reference/iactivescriptprofilercallback2-interface.md)
+ [IActiveScriptProfilerCallback2 Arabirimi](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

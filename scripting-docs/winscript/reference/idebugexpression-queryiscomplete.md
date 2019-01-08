@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1d72b2a2d41b748954f2e4b2b4aa9f0011ca670
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0b4fa4b027f0ee8d848f52c063cbfd1f7679d4a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794174"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087158"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
 İşlemi tam olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT QueryIsComplete();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`S_OK`|Yöntem başarılı oldu ve işlemi tamamlanır.|  
-|`S_FALSE`|İşlem devam ediyor bekliyor.|  
+|`S_OK`|Yöntem başarılı oldu ve işlem tamamlandığında.|  
+|`S_FALSE`|İşlemi hala geçerli olduğunu bekleniyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem işlemi tam olup olmadığını belirler.  
+ Bu yöntem, işlem tamamlandığında, belirler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugexpression arabirimi](../../winscript/reference/idebugexpression-interface.md)
+ [IDebugExpression Arabirimi](../../winscript/reference/idebugexpression-interface.md)

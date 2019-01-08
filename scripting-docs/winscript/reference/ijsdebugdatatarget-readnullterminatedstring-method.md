@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795005"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093333"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString Yöntemi
-Hedef belirtilen sayıda karakteri okur.  
+Hedeften belirtilen sayıda karakteri okur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -42,21 +42,21 @@ HRESULT ReadNullTerminatedString(
  [in] Okunacak adresi.  
   
  `characterSize`  
- boyutu her karakterinin dize]  
+ [in] dizedeki her karakterin boyutu  
   
  `maxCharacters`  
- [in] Okunacak karakter sayısı. maxCharacters makul olmalıdır. 128 MB'tan fazla bellek için herhangi bir istek başarısız olur.  Dize maxCharacters büyükse, sonuç dizesini maxCharacters sonra kesilir.  
+ [in] Okunacak karakter sayısı. maxCharacters makul olmalıdır. 128 MB'den fazla bellek isteği başarısız olur.  Dize maxcharacters'ten ise, sonuç dizesi yine maxCharacters ardından kesilecektir.  
   
  `pString`  
- [out] BSTR hedef okuyun.  
+ [out] BSTR hedeften okuyun.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kesirli kısmı S_FALSE döndürür.  
+ Kesilmişse S_FALSE döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

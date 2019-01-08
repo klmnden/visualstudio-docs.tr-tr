@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538b7a3f76e6026297839e4a7a37e6c21a72d7d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e6db85ab30d04ebaf24ec0e955aab529ff8799d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794954"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088861"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
-Bu uygulama için bir hata ayıklayıcısı bağlanır.  
+Bir hata ayıklayıcı bu uygulamaya bağlanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ConnectDebugger(  
    IApplicationDebugger*  pad  
 );  
@@ -38,19 +38,19 @@ HRESULT ConnectDebugger(
   
 #### <a name="parameters"></a>Parametreler  
  `pad`  
- [in] Bu uygulamaya eklemek için hata ayıklayıcı.  
+ [in] Bu uygulamaya iliştirmek için hata ayıklayıcı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_FAIL`|Bu uygulama için bir hata ayıklayıcısı zaten bağlı.|  
+|`E_FAIL`|Bu uygulama için bir hata ayıklayıcı zaten bağlı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir uygulamayı yalnızca bir hata ayıklayıcı aynı anda bağlı olabilir. Bir hata ayıklayıcısı zaten bağlıysa, bu yöntem başarısız olur.  
+ Bir uygulamanın yalnızca bir hata ayıklayıcı bir anda bağlı olabilir. Bir hata ayıklayıcı zaten bağlıysa, bu yöntem başarısız olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
- [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication Arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)

@@ -12,25 +12,25 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e999ad0d40f4d832330fee6db17b64ae9da50f08
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6462597f55b6b0ceee885d207572e9669a350600
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793565"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093650"
 ---
 # <a name="iactivescripttraceinfostartscripttracing-method"></a>IActiveScriptTraceInfo::StartScriptTracing Yöntemi
-Komut dosyası izlemeyi başlatır.  
+Betik izleme başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT StartScriptTracing(     [in] IActiveScriptSiteTraceInfo * pSiteTraceInfo,     [in] GUID guidContextID );   
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `pSiteTraceInfo`  
- Ana bilgisayarın Iactivescriptsitetraceınfo gösteren bir işaretçi.  
+ Ana bilgisayarın Iactivescriptsitetraceınfo işaretçisi.  
   
  `guidContextId`  
  Bağlam GUID.  
@@ -38,8 +38,8 @@ HRESULT StartScriptTracing(     [in] IActiveScriptSiteTraceInfo * pSiteTraceInfo
 ## <a name="return-value"></a>Dönüş Değeri  
  Bu yöntemin dönüş olası değerler şunlardır:  
   
-1.  S_OK: başarılı.  
+1.  S_OK: Başarılı.  
   
-2.  E_POINTER: `pSiteTraceInfo` NULL işaretçi.  
+2.  E_poınter: `pSiteTraceInfo` bir NULL işaretçidir.  
   
-3.  E_NOTIMPL: uygulanmadı.
+3.  E_NOTIMPL: Henüz uygulanmadı.

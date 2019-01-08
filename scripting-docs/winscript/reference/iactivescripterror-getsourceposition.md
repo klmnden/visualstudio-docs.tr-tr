@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d63310a8ba5cfda39d48a482eaf7c345cd492adc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb5adfe508b7b5d3de0cf7f508d8c801a36adf1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793346"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097376"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Komut dosyası altyapısı bir komut dosyası çalıştırılırken bir hata oluştuğu konum kaynak kodundaki alır.  
+Komut dosyası altyapısı bir betik çalıştırılırken bir hata oluştuğu konum kaynak kodundaki alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetSourcePosition(  
     DWORD *pdwSourceContext,  // context cookie  
     ULONG *pulLineNumber,     // line number of error  
@@ -40,16 +40,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>Parametreler  
  `pdwSourceContext`  
- [out] Bağlam tanımlayan bir tanımlama bilgisi alan değişkenin adresini. Bu parametre yorumu konak uygulamaya bağlıdır.  
+ [out] Bağlam tanımlayan bir çerez alan değişkenin adresi. Bu parametrenin yorumu konak uygulamaya bağlıdır.  
   
  `pulLineNumber`  
- [out] Kaynak dosyanın hatanın oluştuğu satır numarası alan değişkenin adresini.  
+ [out] Hatanın oluştuğu kaynak dosyadaki satır numarası alan değişkenin adresi.  
   
  `pichCharPosition`  
- [out] Hatanın oluştuğu karakterin satırda alan değişkenin adresini.  
+ [out] Hatanın oluştuğu satırın içinde karakterin konumu alan değişkenin adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı olursa ya da `E_FAIL` konumu değil alındığında.  
+ Döndürür `S_OK` başarılı olursa veya `E_FAIL` konumu değil almışsa.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescripterror](../../winscript/reference/iactivescripterror.md)
+ [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

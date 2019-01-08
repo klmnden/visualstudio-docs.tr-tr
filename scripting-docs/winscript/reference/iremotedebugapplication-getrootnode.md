@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ef19861e0f386eb7139ec3e732068e4d2b6e7ba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 75b398ddac53f2633cbc090f5d49574bd4d94d36
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794783"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097779"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
-Uygulama ile ilişkili tüm düğümleri altında eklendiği uygulama düğümü döndürür.  
+Uygulamayla ilişkili tüm düğümleri eklendiği uygulama düğümü döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetRootNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -38,17 +38,17 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>Parametreler  
  `ppdanRoot`  
- [out] Hata ayıklama uygulama düğümü altında uygulama ile ilişkili tüm düğümler eklenir.  
+ [out] Hata ayıklama uygulama düğümü altında uygulamayla ilişkili tüm düğümleri eklenir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem uygulama ile ilişkili tüm düğümleri altında eklendiği uygulama düğümü döndürür.  
+ Bu yöntem uygulama ile ilişkili olan tüm düğümleri eklendiği uygulama düğümü döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication Arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)

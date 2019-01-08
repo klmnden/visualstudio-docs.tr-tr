@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a17301842cefac7c7f257a4bc0e437670e28064
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a861e2cbdfedc80747e9390316c47da43b71656
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793805"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087418"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Tüm başvurularını serbest bırakın ve etkin olmayan bir duruma girmek bu uygulamayı neden olur.  
+Tüm başvuruları bırakın ve etkin olmayan bir duruma girmek bu uygulamanın neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT Close();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genellikle, uygulamanın çıkılırken bir uygulama sahibi bu yöntemi çağırır.  
+ Genellikle, uygulama olduğunda uygulama sahibi bu yöntemi çağırır.  
   
  Bu yöntem neden `IApplicationDebugger::onClose` çağrılabilir.  
   

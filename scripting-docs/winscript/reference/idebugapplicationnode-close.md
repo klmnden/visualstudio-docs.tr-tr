@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d50d1e9a22c3d64d65847922090dfab0c33ab32
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f14069f839cf279fcbb997046e34928e59dbfb9a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793802"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094893"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-Tüm başvurularını serbest bırakın ve etkin olmayan bir duruma girmek bu uygulamayı neden olur.  
+Tüm başvuruları bırakın ve etkin olmayan bir duruma girmek bu uygulamanın neden olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
@@ -38,14 +38,14 @@ HRESULT Close();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genellikle, uygulamanın çıkılırken bir uygulama sahibi bu yöntemi çağırır.  
+ Genellikle, uygulama olduğunda uygulama sahibi bu yöntemi çağırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode Arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)

@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 426767b8d4d23964d6bfaa7102ee53b550e7ab9b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793472"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094439"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId Yöntemi
-Profil Oluşturucu bu profil oluşturma oturumu için kullanılacak çalışan kimliği hakkında uyarır. İşlev sayfa bağlamında yürütülmüyor varsa, bu yöntem çağrılır değil. Değeri `webWorkerId` 1'den başlayarak her çalışan için 1 artar. Kimliği değerlerin dışında bir oturum kararlı ve çalışanları oluşturulduğu sırada yalnızca karşılık üzere tasarlanmamıştır.  
+Profil Oluşturucu bu profil oluşturma oturumu için kullanılacak alt kimliği hakkında bilgilendirir. İşlevi, sayfa bağlamında yürütülmüyor, bu yöntem çağrılır değil. Değerini `webWorkerId` 1'den başlayarak, her bir çalışan için 1 artar. Kimliği değerleri bir oturumu kararlı ve çalışanlar oluşturulduğu sırada yalnızca karşılık gelen kullanılmaya yönelik değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetWebWorkerId([in] DWORD webWorkerId);  
 ```  
   
@@ -33,4 +33,4 @@ HRESULT SetWebWorkerId([in] DWORD webWorkerId);
  Web çalışanı kimliği  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin dönüş değeri komut dosyası altyapısı tarafından göz ardı edilir.
+ Bu yöntemin dönüş değerini komut dosyası altyapısı tarafından göz ardı edilir.

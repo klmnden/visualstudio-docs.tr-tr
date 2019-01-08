@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 961483d45c72018bc216306d6c1aba0400a367ad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85b7d94ccb9e2589b10bf705721fc289df9638a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791621"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094165"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-Windows komut dosyası altyapısı ile ilişkili site nesnesi alır.  
+Windows komut dosyası motoruyla ilişkili site nesnesi alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetScriptSite(  
     REFIID iid,           // interface identifier  
     void **ppvSiteObject  // address of host site interface  
@@ -42,7 +42,7 @@ HRESULT GetScriptSite(
  [in] İstenen arabirim tanımlayıcısı.  
   
  `ppvSiteObject`  
- [out] Arabirim işaretçisi ana bilgisayarın site nesnesi için alan konumunun adresi.  
+ [out] Ana bilgisayarın site nesnesi arabirim işaretçisi alır konumu adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -50,10 +50,10 @@ HRESULT GetScriptSite(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_INVALIDARG`|Bağımsız değişken geçersiz.|  
-|`E_NOINTERFACE`|Belirtilen arabirim desteklenmiyor.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
-|`S_FALSE`|Bir site ayarlandı; `ppvSiteObject` parametrenin ayarlanmış `NULL`.|  
+|`E_INVALIDARG`|Bir bağımsız değişken geçersiz.|  
+|`E_NOINTERFACE`|Belirtilen bir arabirim desteklenmiyor.|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
+|`S_FALSE`|Site ayarlandı; `ppvSiteObject` parametrenin ayarlanmış `NULL`.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript](../../winscript/reference/iactivescript.md)

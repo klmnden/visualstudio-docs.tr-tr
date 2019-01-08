@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da369c328c2f92915c60b1c50517938bf76d5202
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3ecde4fbde1a265596a01d7f0f953763363e797
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794132"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097701"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
-Belirtilen belge adını döndürür.  
+Belirtilen belge adı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetName(  
    DOCUMENTNAMETYPE  dnt,  
    BSTR*             pbstrName  
@@ -39,13 +39,13 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parametreler  
  `dnt`  
- [in] Döndürülecek belge adı türü.  
+ [in] Belge adı döndürülecek türü.  
   
  `pbstrName`  
- [out] Adını içeren dize.  
+ [out] Ad içeren dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -53,8 +53,8 @@ HRESULT GetName(
 |`E_FAIL`|Belirtilen belge adı bilinmiyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belirtilen belge adını döndürür.  
+ Bu yöntem, belirtilen belge adı döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumentınfo arabirimi](../../winscript/reference/idebugdocumentinfo-interface.md)   
- [DOCUMENTNAMETYPE numaralandırması](../../winscript/reference/documentnametype-enumeration.md)
+ [DOCUMENTNAMETYPE Sabit Listesi](../../winscript/reference/documentnametype-enumeration.md)

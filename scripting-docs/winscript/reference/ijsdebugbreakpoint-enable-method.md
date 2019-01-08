@@ -16,29 +16,29 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fa66486b479f8bc3e05bad24868392ace121347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a612cc0fb11e8651164dd6b17f945e91659d4bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794567"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093775"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>IJsDebugBreakPoint::Enable Yöntemi
-Kesme noktası sağlar.  
+Kesme noktasını etkinleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Enable(void);  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Silinen bir kesme noktası üzerinde adlı E_UNEXPECTED döndürür.  
+ Silinen bir kesme noktasına çağrılırsa E_UNEXPECTED döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugbreakpoint arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint Arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)

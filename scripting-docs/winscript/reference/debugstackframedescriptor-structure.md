@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 346f039ca96f2160d7ac28686e542b3d88a91dfb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c50c717cad626f4caf634c6a83b2af7213b78f83
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791852"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088484"
 ---
 # <a name="debugstackframedescriptor-structure"></a>DebugStackFrameDescriptor Yapısı
 Yığın çerçevelerini listeler ve aynı iş parçacığındaki çeşitli listeleyicilerden alınan çıktıyı birleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef struct tagDebugStackFrameDescriptor {  
    IDebugStackFrame *pdsf;  
    DWORD_PTR        dwMin;  
@@ -45,19 +45,19 @@ typedef struct tagDebugStackFrameDescriptor {
  Yığın çerçeve nesnesi.  
   
  `dwMin`  
- Bu yığın çerçevesi ile ilişkili fiziksel adreslerini alt aralığı makine bağımlı gösterimi.  
+ Bu yığın çerçevesiyle ilişkili fiziksel adreslerini alt aralığı makine bağımlı gösterimi.  
   
  `dwLim`  
- Bu yığın çerçevesi ile ilişkili fiziksel adreslerini üst aralığı makine bağımlı gösterimi.  
+ Bu yığın çerçevesiyle ilişkili fiziksel adreslerini üst aralığının makine bağımlı gösterimi.  
   
  `fFinal`  
- Çerçeve işlenmekte olduğunu belirten bayrak.  
+ Çerçeve işlenmekte olduğunu gösteren bayrak.  
   
  `punkFinal`  
- Bu parametre değilse `NULL`, birleştirme geçerli Numaralandırıcı durdurmanız gerekir ve yeni bir tane başlatılmalıdır. Nesne yeni numaralandırması başlatmak nasıl gösterir.  
+ Bu parametre değilse `NULL`, birleştirme geçerli Numaralandırıcı durdurmanız gerekir ve yeni bir tane başlatılmış olması. Nesnesine yeni bir sabit listesini Başlat nasıl gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşlem Hata Ayıklama Yöneticisi'ni, birden çok komut dosyası motorları yığını çerçevelerden sıralamak için bu yapı kullanır. Kurala göre yığınları aşağı artar. Sonuç olarak, yığınları büyüdüğü yukarı mimarileri üzerinde ikişer baytının adresleri olmalıdır.  
+ İşlem Hata Ayıklama Yöneticisi, birden çok komut dosyası motorları yığın çerçevelerini sıralamak için bu yapıyı kullanır. Kural gereği, aşağı yığınları büyütün. Sonuç olarak, burada yığınları büyütün mimarilerde yuvarlandığında tamamlanan adresleri olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

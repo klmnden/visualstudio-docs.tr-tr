@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 797476d4892224ad0b27c9caf579c0704693c835
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bd032914605c61b13a0a56a42e510c2af252f7e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793370"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091409"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Profil oluşturucu komut dosyası altyapısını nesnesi, bir komut dosyası derlenirken bir işlev karşılaştı bildirir.  
+Profil oluşturucu komut dosyası motoru nesne bir komut dosyası derlenirken bir işlevle karşılaştığında bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT FunctionCompiled(  
     [in] PROFILER_TOKEN functionId,  
     [in] PROFILER_TOKEN scriptId,  
@@ -39,25 +39,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Parametreler  
  `functionId`  
- [in] İşlev benzersiz kimliği. Bu kimlik komut dosyası altyapısı tarafından atanır.  
+ [in] İşlev benzersiz kimliği. Bu kimlik, komut dosyası altyapısı tarafından atanır.  
   
  `scriptId`  
- [in] İşlev parçası olan komut dosyası benzersiz kimliği.  
+ [in] İşlev parçasıdır betik benzersiz kimliği.  
   
  `pwszFunctionName`  
- [in] Adsız bir işlev adı işlevi ya da null.  
+ [in] Anonim bir işlev adı işlevi ya da null.  
   
  `pwszFunctionNameHint`  
- [in] İşlev veya komut dosyası motoru herhangi bir ad Infer değil yoksa null değerini oluşturulursa adı.  
+ [in] Çıkarsanan adı işlev veya komut dosyası altyapısı herhangi adını çıkarsamak değil yoksa null.  
   
  `pIDebugDocumentContext`  
- [in] Kullanılabiliyorsa, işaretçi bir `IUnknown` profil oluşturucu için sorgu gerekir arabirimi bir [Idebugdocumentcontext arabirimi](../../winscript/reference/idebugdocumentcontext-interface.md) işaretçi. Aksi takdirde null.  
+ [in] Mevcut ise, işaretçi bir `IUnknown` profil oluşturucu için faydalanacaksa arabirimi bir [Idebugdocumentcontext arabirimi](../../winscript/reference/idebugdocumentcontext-interface.md) işaretçi. Aksi takdirde null.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin dönüş değeri komut dosyası altyapısı tarafından göz ardı edilir.  
+ Bu yöntemin dönüş değerini komut dosyası altyapısı tarafından göz ardı edilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yalnızca bu ana bilgisayar tarafından destekleniyorsa komut dosyası altyapısı belge bağlamı sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptprofilercallback arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback Arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)

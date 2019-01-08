@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae7782d713ab226e57e687cda8eb4ccdb54cf20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ee4fd06b00c674c9c50ce253186aeee3165bac66
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793481"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097415"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
-Ana bilgisayara komut dosyası altyapısı durumları değiştiğini bildirir.  
+Konak, komut dosyası altyapısı durumları değiştiğini bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnStateChange(  
     SCRIPTSTATE ssScriptState  // new state of engine  
 );  
@@ -38,10 +38,10 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>Parametreler  
  `ssScriptState`  
- [in] Yeni bir komut dosyası durum belirten değer. Bkz: [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) yöntemi durumları açıklaması.  
+ [in] Yeni betik durumu gösteren değer. Bkz: [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) durumları açıklaması için yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Döndürür `S_OK` başarılı olursa.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

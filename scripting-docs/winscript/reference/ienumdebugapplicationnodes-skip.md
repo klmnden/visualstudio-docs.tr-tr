@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f477617de4562c44483b5d2edcadcc79dee755a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d13f65a33b40d1c1c3d6ed644865b993469fc6d0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794306"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092137"
 ---
 # <a name="ienumdebugapplicationnodesskip"></a>IEnumDebugApplicationNodes::Skip
-Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.  
+Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -38,17 +38,17 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametreler  
  `celt`  
- [in] Atlamak için numaralandırma sırası segmentlerinde sayısı.  
+ [in] Atlamak için numaralandırma sıralı Segment sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.  
+ Bu yöntem, bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumdebugapplicationnodes arabirimi](../../winscript/reference/ienumdebugapplicationnodes-interface.md)
+ [IEnumDebugApplicationNodes Arabirimi](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

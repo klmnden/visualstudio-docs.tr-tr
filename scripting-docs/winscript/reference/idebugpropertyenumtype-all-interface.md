@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75de35bd42ea91e7d27523ba42c392650686041a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2dc5bb84125ca0bf3b25f8f9b8cfe1dad6aeb6d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794198"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097012"
 ---
 # <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All Arabirimi
-`IDebugPropertyEnumType` Arabirimleri, böylece her biri kendi IID'leri bir filtre olarak geçirilebilir tanımlanan `IDebugProperty::EnumMembers` uygun Numaralandırıcı isteyen oluştu.  
+`IDebugPropertyEnumType` Arabirimleri, böylece her biri kendi IID'leri filtre olarak geçirilebilir tanımlanır `IDebugProperty::EnumMembers` uygun Numaralandırıcı isteyen oluştu.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 IDebugPropertyEnumType_All : IUnknown  
 ```  
   
@@ -40,12 +40,12 @@ IDebugPropertyEnumType_All : IUnknown
 |------------|-----------------|  
 |[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Adı açıklayan bir metin dizesi döndürür|  
   
- Aşağıdaki arabirimleri devralınmalıdır `IDebugPropertyEnumType_All`, ve hiçbir ek yöntemleri vardır.  
+ Aşağıdaki arabirimlerinden devralır `IDebugPropertyEnumType_All`, ve hiçbir ek yöntemleri vardır.  
   
-```  
-IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
-IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
+```cpp
+IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_Locals : IDebugPropertyEnumType_All   
+IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All   
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   

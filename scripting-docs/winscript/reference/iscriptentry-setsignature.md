@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ff480f8e5c3192a7e2b355d39825cc3a084370
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 660f667d3542ff2cb9a7e96444d98b3082218a2a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794957"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089511"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-Ayarlar tür bilgilerini için bir `IScriptEntry` işlev nesnesi.  
+Kümeleri tür bilgilerini için bir `IScriptEntry` işlev nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetSignature(  
    ITypeInfo          *pti  
    ULONG              iMethod  
@@ -39,10 +39,10 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>Parametreler  
  `pti`  
- [in] Tür bilgileri.  
+ [in] Tür bilgisi.  
   
  `iMethod`  
- [in] Yöntem dizinde `ITypeInfo` nesnesi.  
+ [in] Yöntemi dizin `ITypeInfo` nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -52,7 +52,7 @@ HRESULT SetSignature(
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tür bilgileri kullanarak ayarlamak `IScriptEntry::SetSignature` veya [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Tür bilgilerini de iç işlev gösterimi göre giriş tarafından oluşturulabilir.  
+ Tür bilgilerini kullanarak ayarlamak `IScriptEntry::SetSignature` veya [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Tür bilgileri, iç işlev gösterimi göre giriş tarafından da oluşturulabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

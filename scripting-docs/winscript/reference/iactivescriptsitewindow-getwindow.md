@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 268a54ccdcbd70ed159758720db0735f16d81492
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793571"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097402"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-Komut dosyası altyapısı görüntülemelidir bir açılır pencere sahibi olarak çalışabilmek için bir pencere tanıtıcısını alır.  
+Komut dosyası altyapısı görüntülemelidir bir açılır pencere sahibi olarak davranıp bir pencere için işleme alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  
@@ -38,13 +38,13 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>Parametreler  
  `phwnd`  
- [out] Bir pencere tanıtıcının alan değişkenin adresini.  
+ [out] Pencere tanıtıcısı alan değişkenin adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı olursa ya da `E_FAIL` durumunda bir hata oluştu.  
+ Döndürür `S_OK` başarılı olursa veya `E_FAIL` varsa bir hata oluştu.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem benzer `IOleWindow::GetWindow` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsitewindow](../../winscript/reference/iactivescriptsitewindow.md)
+ [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

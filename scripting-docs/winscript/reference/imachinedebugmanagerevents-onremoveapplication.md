@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe727b65c8a74962cf6a88ce4ab36ad975b26231
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b4cc2412f88eb4a4224dc96ebc1b993729169071
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794759"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088952"
 ---
 # <a name="imachinedebugmanagereventsonremoveapplication"></a>IMachineDebugManagerEvents::onRemoveApplication
-Bir uygulamanın çalışmasını kaldırıldığında olay işleme uygulama listesi.  
+Bir uygulamanın çalışmasını kaldırıldığında olayı işleyen uygulama listesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onRemoveApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,20 +39,20 @@ HRESULT onRemoveApplication(
   
 #### <a name="parameters"></a>Parametreler  
  `pda`  
- [in] Çalışmasını kaldırıldı uygulama uygulama listesi.  
+ [in] Çalışmasını kaldırıldıktan sonra uygulamayı uygulama listesi.  
   
  `dwAppCookie`  
- [in] Uygulama uygulama listesinden eklendiğinde sağlanan tanımlama bilgisi.  
+ [in] Uygulama listesinden bir uygulama eklendiğinde sağlanan tanımlama bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir uygulamanın çalışmasını kaldırıldığını gösteren uygulama listesi.  
+ Bu yöntem, bir uygulamanın çalışmasını kaldırıldığını gösterir uygulama listesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Imachinedebugmanagerevents arabirimi](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

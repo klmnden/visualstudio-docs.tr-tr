@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e148b5e13bc3d7986451ece11a3a2eada5baa28
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1366a33a9b6ea4bcfe9e0bb61cf8c61500853e7c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794693"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092034"
 ---
 # <a name="ienumdebugstackframesnext"></a>IEnumDebugStackFrames::Next
-Belirtilen bir numaralandırma sırası segmentlerinde sayısını alır.  
+Belirtilen bir numaralandırma sıralı segmentleri sayısını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG                       celt,  
    DebugStackFrameDescriptor*  prgdsfd,  
@@ -40,24 +40,24 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametreler  
  `celt`  
- [in] Almak için Segment sayısı.  
+ [in] Alınacak Segment sayısı.  
   
  `prgdsfd`  
- [out] Bir dizi döndürür `DebugStackFrameDescriptor` alınan kesimleri temsil eden arabirimler.  
+ [out] Bir dizi döndürür `DebugStackFrameDescriptor` alınmasını segmentleri temsil eden arabirim.  
   
  `pceltFetched`  
- [out] Numaralandırıcı tarafından alınan kesimleri gerçek sayısı.  
+ [out] Numaralandırıcı tarafından alınan parçaları gerçek sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem numaralandırma sırası segmentlerinde belirtilen sayıda alır.  
+ Bu yöntem, belirtilen sayıda sabit listesi sırası segmentler alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ienumdebugstackframes arabirimi](../../winscript/reference/ienumdebugstackframes-interface.md)   
- [DebugStackFrameDescriptor yapısı](../../winscript/reference/debugstackframedescriptor-structure.md)
+ [DebugStackFrameDescriptor Yapısı](../../winscript/reference/debugstackframedescriptor-structure.md)

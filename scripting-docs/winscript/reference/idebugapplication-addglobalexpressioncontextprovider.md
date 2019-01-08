@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cf88dfac1d102ace3f132e7ab61265c704c0b18
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a17e952ef48041d8354753d27d7c40fef4599d55
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793769"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086833"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
-Bu uygulama için bir genel ifade içerik sağlayıcı ekler.  
+Bu uygulama için bir genel ifade içeriği sağlayıcısı ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT AddGlobalExpressionContextProvider(  
    IProvideExpressionContexts*  pdsfs,  
    DWORD_PTR*                   pdwCookie  
@@ -39,20 +39,20 @@ HRESULT AddGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>Parametreler  
  `pdsfs`  
- [in] Bu uygulama eklemek için genel bağlam sağlayıcısı.  
+ [in] Bu uygulama eklemek için genel içeriği sağlayıcısı.  
   
  `pdwCookie`  
- [out] Bu genel ifade içerik sağlayıcı uygulamadan kaldırmak için kullanılan bir tanımlama bilgisi.  
+ [out] Uygulamadan bu genel ifade bağlam sağlayıcıyı kaldırmak için kullanılan tanımlama bilgisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bu uygulamaya bir genel ifade içerik sağlayıcı ekler.  
+ Bu yöntem, bu uygulama için bir genel ifade bağlam sağlayıcısı ekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)   

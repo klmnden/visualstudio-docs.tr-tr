@@ -16,29 +16,29 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec47cd5f581c36abb60b662983c6d806a4732f47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bbe5acd75ecf4f004d835490579b1f35c1bf675c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793517"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086820"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
-Profil oluşturma bir komut dosyası altyapısı durduruldu her profil oluşturucu nesne bildirmek için çağrılır. Bu şekilde, profil oluşturucu nesnesi gerekli olursa, temizleme yordamları çağırabilirsiniz. Komut dosyası altyapısı kapatılıyor veya çağrı zaman bu yöntem aynı zamanda komut dosyası altyapısı tarafından çağrılır [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) başarısız olur.  
+Profil oluşturma, bir komut dosyası altyapısına durdurulur zaman profil oluşturucu nesnesini bildirmek için çağırılır. Bu şekilde profil oluşturucu nesnesini gerekirse, temizleme yordamları çağırabilirsiniz. Komut dosyası altyapısı kapatılıyor veya çağrı zaman bu yöntem ayrıca komut dosyası altyapısı tarafından çağrılır [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) başarısız olur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Shutdown(  
     [in] HRESULT hrReason);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `hrReason`  
- [in] Kapatma nedeni. Komut dosyası altyapısı kapatma olmadığını `S_OK` geçirilir. Varsa çağrısı [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) HRESULT hata döndürür, HRESULT geçirilir. Aksi takdirde, bu değer alındığı [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
+ [in] Kapatma açıklaması. Komut dosyası altyapısı kapatma olmadığını `S_OK` geçirilir. Çağrı [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) hata HRESULT döndürür, HRESULT geçirilir. Aksi takdirde, bu değer hizmetinden alınan [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin dönüş değeri komut dosyası altyapısı tarafından göz ardı edilir.  
+ Bu yöntemin dönüş değerini komut dosyası altyapısı tarafından göz ardı edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptprofilercallback arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+ [IActiveScriptProfilerCallback Arabirimi](../../winscript/reference/iactivescriptprofilercallback-interface.md)

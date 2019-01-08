@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17098b4055bb61e9a2f639404edfe2214abc931e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794558"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087496"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Yardım dosyasının yolunu ve hata mümkünse açıklayan konu bağlam Kimliğini döndürür.  
+Yardım dosyasının yolu ve mümkünse, hatayı açıklayan bir konu bağlam Kimliğini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetHelpInfo(  
    BSTR*  pbstrFileName,  
    DWORD*  pdwContext  
@@ -39,26 +39,26 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstrFileName`  
- [out] Yardım dosyasının tam yolunu içeren dize. Yardım dosyası yok veya bir hata oluştuğunda, dönüş değeri NULL olur.  
+ [out] Yardım dosyasının tam yolu içeren dize. Yardım dosyası yok veya bir hata oluşursa, döndürülen değer NULL olur.  
   
  `pdwContext`  
- [out] Hata için Yardım içerik kimliği. Yardım dosyası yoksa (varsa `pbstrFileName` null), bu parametre bir anlamı yoktur.  
+ [out] Hata için Yardım içeriği kimliği. Yardım dosyası yoksa (varsa `pbstrFileName` null), bu parametre bir anlamı yoktur.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
 |`E_FAIL`|Sağlayıcıya özgü bir hata oluştu.|  
-|`E_INVALIDARG`|`pbstrFileName`veya `pdwContext` NULL idi.|  
+|`E_INVALIDARG`|`pbstrFileName` veya `pdwContext` NULL idi.|  
 |`E_OUTOFMEMORY`|Sağlayıcı, Yardım dosyası yol döndürmek yeterli bellek ayıramadı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, Yardım dosyasının yolunu ve hata mümkünse açıklayan konu bağlam Kimliğini döndürür.  
+ Bu yöntem, Yardım dosyasının yolu ve mümkünse, hatayı açıklayan bir konu bağlam Kimliğini döndürür.  
   
 > [!NOTE]
 >  Bu yöntem uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idisperror arabirimi](../../winscript/reference/idisperror-interface.md)
+ [IDispError Arabirimi](../../winscript/reference/idisperror-interface.md)

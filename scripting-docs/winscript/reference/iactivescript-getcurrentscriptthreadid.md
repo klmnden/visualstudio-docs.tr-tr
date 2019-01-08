@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5921dc4d0f9a9bf0d505fece0f47354cb16d440c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bac3b5755328e643c26c8f3746af6648d8ac06aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791750"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094645"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-Şu anda yürütülen iş parçacığı için bir komut dosyası altyapısı-tanımlı tanımlayıcı alır. Tanımlayıcı, komut dosyası iş parçacığı yürütme denetimi yöntemleri yapılan sonraki çağrılar gibi kullanılabilir [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) yöntemi.  
+Şu anda çalışan bir iş parçacığı için bir komut dosyası altyapısı-tanımlı tanımlayıcı alır. Tanımlayıcı betik iş parçacığı yürütme denetimi yöntemleri yapılan sonraki çağrılar gibi kullanılabilir [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetCurrentScriptThreadID(  
     SCRIPTTHREADID *pstidThread  // receives scripting thread identifier  
 );  
@@ -38,13 +38,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>Parametreler  
  `pstidThread`  
- [out] Geçerli iş parçacığı ile ilişkili bir betik iş parçacığı tanımlayıcı alan değişkenin adresini. Bu tanımlayıcı yorumu komut dosyası altyapısı kalır ancak Windows iş parçacığı tanımlayıcısı yalnızca bir kopyasını olabilir. Win32 iş parçacığı sona ererse, bu tanımlayıcı atanmamış haline gelir ve bundan sonra başka bir iş parçacığı atanabilir.  
+ [out] Geçerli iş parçacığıyla ilişkilendirilmiş komut iş parçacığı tanıtıcısını alan bir değişkenin adresidir. Bu tanımlayıcının yorumu komut dosyası altyapısı için kalır, ancak Windows iş parçacığı tanıtıcısını yalnızca bir kopyasını olabilir. Win32 iş parçacığı sonlanır, bu tanımlayıcıyı atanmamış olur ve daha sonra başka bir iş parçacığına atanabilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı olursa ya da `E_POINTER` geçersiz bir işaretçi belirtilmişse.  
+ Döndürür `S_OK` başarılı olursa veya `E_POINTER` durumunda geçersiz işaretçi belirtildi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir temel olmayan belirtme çizgisi içinde ana bilgisayar nesneleri veya çok sonuçlanmadan temel olmayan iş parçacığı tarafından çağrılabilir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) arabirimi.  
+ Temel olmayan belirtme ana bilgisayar nesneleri veya çok kaynaklanan olmadan, bu yöntem temel olmayan iş parçacığından çağrılabilir [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md) arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript](../../winscript/reference/iactivescript.md)

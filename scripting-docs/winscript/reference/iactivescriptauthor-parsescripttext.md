@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e81d96ae817b2117f12cb56fd59759f4c2b849
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c5f9e4969795cedd7da80864c1ad69c0d68f8b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793247"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091812"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Betik metin ayrıştırır, altyapısı yazma komut metni ekler ve oluşturur bir `IScriptEntry` betik bloğu karşılık gelen nesne.  
+Betik metin ayrıştırır, komut dosyası altyapısı yazma metin ekler ve oluşturur bir `IScriptEntry` betik bloğu için karşılık gelen nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
    LPCOLESTR pszCode,  
    LPCOLESTR pszItemName,  
@@ -48,10 +48,10 @@ HRESULT ParseScriptText(
  [in] Betik bloğu ile ilişkili öğe adı içeren arabellek adresi.  
   
  `pszDelimiter`  
- [in] Son olarak betik bloğu ayırıcısı adresi. Zaman `pszCode` ayrıştırılır metin akışından konak genellikle bir sınırlayıcı (örneğin, iki tek tırnak işareti), komut dosyası bloğunun sonunu algılamak için kullanır. Komut dosyası bloğunun sonunu tanımlamak için sınırlayıcı ise bu parametre NULL olarak ayarlayın.  
+ [in] Sonlandırma, betik bloğu sınırlayıcısı adresi. Zaman `pszCode` ayrıştırılır metin akışından ana bilgisayar genellikle bir sınırlayıcı (örneğin, iki tek tırnak işareti) betik bloğunun sonu algılamak için kullanır. Betik bloğunun sonu tanımlamak için sınırlayıcı varsa bu parametre NULL olarak ayarlayın.  
   
  `dwCookie`  
- [in] Yeni ile ilişkilendirilmiş uygulama tanımlı bir değer `IScriptEntry` nesnesi.  
+ [in] Yeni ile ilişkili uygulama tanımlı bir değer `IScriptEntry` nesne.  
   
  `dwFlags`  
  [in] Kullanılmıyor.  
@@ -66,4 +66,4 @@ HRESULT ParseScriptText(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)
+ [IActiveScriptAuthor Arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)

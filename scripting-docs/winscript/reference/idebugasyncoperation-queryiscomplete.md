@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e985697e425ec4966f2260792a9698fa50b4c98d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 90d054eb6f7e98a604815c559bee4e326b19692d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793853"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092944"
 ---
 # <a name="idebugasyncoperationqueryiscomplete"></a>IDebugAsyncOperation::QueryIsComplete
-Hata ayıklama işlemi tamamlanıp tamamlanmadığını belirler.  
+Hata ayıklama işlemi tamamlandı belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT QueryIsComplete();  
 ```  
   
@@ -38,15 +38,15 @@ HRESULT QueryIsComplete();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`S_OK`|İşlemi tamamlanır.|  
+|`S_OK`|İşlemi tamamlanmıştır.|  
 |`S_FALSE`|İşlem tamamlanmadı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, hata ayıklama işlemi tamamlanıp tamamlanmadığını belirler.  
+ Bu yöntem, hata ayıklama işlemi tamamlandı belirler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugasyncoperation arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)
+ [IDebugAsyncOperation Arabirimi](../../winscript/reference/idebugasyncoperation-interface.md)

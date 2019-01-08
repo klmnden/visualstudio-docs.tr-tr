@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794630"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097363"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-Dize ve işlemin dönüş değeri olarak ifade değerlendirme sonucunu döndürür.  
+Dize ve işlemin dönüş değeri olarak ifade değerlendirmesinin sonucu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -42,20 +42,20 @@ HRESULT GetResultAsString(
  [out] İşlemin dönüş değeri.  
   
  `pbstrResult`  
- [out] İfade değerlendirme sonucu.  
+ [out] İfade değerlendirmesinin sonucu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_PENDING`|İşlem devam ediyor bekliyor.|  
+|`E_PENDING`|İşlemi hala geçerli olduğunu bekleniyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir dize ve işlem olarak ifade değerlendirme sonucunu döndürür `HRESULT`.  
+ Bu yöntem bir dize ve işlem olarak ifade değerlendirmesinin sonucu döndürür `HRESULT`.  
   
- Bu yöntem `S_OK` ve `phrResult` döndürür `E_ABORT` varsa `Abort` işlemi durdurur.  
+ Bu yöntem döndürür `S_OK` ve `phrResult` döndürür `E_ABORT` varsa `Abort` işlemi durdurur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugexpression arabirimi](../../winscript/reference/idebugexpression-interface.md)
+ [IDebugExpression Arabirimi](../../winscript/reference/idebugexpression-interface.md)

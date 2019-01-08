@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 483d3cdc1c8b8de9342003a99427fc2c727ad67f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20af0975a4175d10b110ac5e3cef9e0055f4ce1b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794945"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097766"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-Tanımlayan öğesi adını ayarlar bir `IScriptEntry` nesnesi.  
+Tanımlayan öğesi adını ayarlar bir `IScriptEntry` nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>Parametreler  
  `psz`  
- [in] Öğe adı içeren bir arabellek adresi. Öğe adı ana bilgisayar tarafından girişi tanımlamak için kullanılır.  
+ [in] Öğe adı içeren bir arabellek adresi. Öğe adı, ana bilgisayar tarafından girişi tanımlamak için kullanılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -49,9 +49,9 @@ HRESULT SetItemName(
 |`E_FAIL`|Yöntem başarılı olmadı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İçin `IScriptEntry` nesneleri, bu yöntem `S_OK`.  
+ İçin `IScriptEntry` nesneleri, bu yöntemi döndürür `S_OK`.  
   
- İçin `IScriptScriptlet` nesneleri (hangi türetilen `IScriptEntry`), bu yöntem `E_FAIL`. İçin `IScriptScriptlet` nesneleri, öğe adı tarafından belirlenir [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) ve değiştirilemez.  
+ İçin `IScriptScriptlet` nesneleri (hangi türetilen `IScriptEntry`), bu yöntemi döndürür `E_FAIL`. İçin `IScriptScriptlet` nesneler, öğe adı tarafından belirlenir [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) ve değiştirilemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c90b5d089ea6665060944e0a6f720a43aa1295a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791804"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097051"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Şu anda yüklü komut dosyaları abandon, durumuna kaybeder ve böylece kapalı bir durumuna girmesini diğer nesnelere sahip herhangi bir arabirim işaretçileri yayın için komut dosyası altyapısı neden olur. Olay havuzlarını, hemen yürütülen betik metin ve devam etmekte olan makrosu çağrılarını durum değişiklikleri önce tamamlanır (kullanmak [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) çalışan bir komut dosyası iş parçacığının iptal etmek için). Döngüsel başvuru sorunları önlemek için arabirimi yayımlanmadan önce oluşturma ana bilgisayar tarafından bu yöntem çağrılmalıdır.  
+Yüklü tüm betik iptal durumuna kaybetmek ve bu nedenle bir kapalı durumuna girmesini diğer nesnelere sahip herhangi bir arabirim işaretçilerini yayın komut dosyası altyapısı neden olur. Olay havuzlarını hemen çalıştırılan komut metni ve devam etmekte olan makro çağrısı durum değişikliklerini önce tamamlanır (kullanın [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) çalışan bir betik iş parçacığının iptal etmek için). Döngüsel başvuru sorunları önlemek için arabirim yayımlanmadan önce bu yöntemi oluşturma ana bilgisayar tarafından çağrılmalıdır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Close(void);  
 ```  
   
@@ -40,9 +40,9 @@ HRESULT Close(void);
 |Değer|Açıklama|  
 |-----------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, komut dosyası altyapısı zaten kapatılmış durumda olduğu).|  
-|`OLESCRIPT_S_PENDING`|Yöntem başarıyla sıraya alındı, ancak durumu henüz değişmemiştir. Durum değişiklikleri site olduğunda üzerinde geri çağrılması için [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemi.|  
-|`S_FALSE`|Yöntem başarılı oldu, ancak komut dosyası zaten kapatılmış.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, komut dosyası altyapısı zaten kapalı durumda olan).|  
+|`OLESCRIPT_S_PENDING`|Yöntemi başarıyla kuyruğa alındı, ancak durumu henüz değişmedi. Durum değişiklikleri site olduğunda üzerinde aranmak [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemi.|  
+|`S_FALSE`|Yöntem başarılı oldu, ancak komut zaten kapatıldı.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript](../../winscript/reference/iactivescript.md)

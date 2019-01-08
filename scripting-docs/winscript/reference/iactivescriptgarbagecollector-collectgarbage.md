@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07d5a00e04939331f85c4c74727aaf03b62814fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 478a7a39c69e0c2106e3c6cc308f44f8f7aa3201
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793313"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097129"
 ---
 # <a name="iactivescriptgarbagecollectorcollectgarbage"></a>IActiveScriptGarbageCollector::CollectGarbage
-Etkin komut dosyası ana bilgisayarı çöp toplama başlatmak için bu yöntemi çağırır.  
+Etkin komut dosyası ana atık toplama başlatmak için bu yöntemi çağırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CollectGarbage(        SCRIPTGCTYPE scriptgctype    );  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `scriptgctype`  
- [in] [SCRIPTGCTYPE numaralandırması](../../winscript/reference/scriptgctype-enumeration.md) , normal veya ayrıntılı atık toplama işlemi belirtir.  
+ [in] [SCRIPTGCTYPE numaralandırması](../../winscript/reference/scriptgctype-enumeration.md) normal veya ayrıntılı atık toplama etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  HRESULT döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptgarbagecollector arabirimi](../../winscript/reference/iactivescriptgarbagecollector-interface.md)
+ [IActiveScriptGarbageCollector Arabirimi](../../winscript/reference/iactivescriptgarbagecollector-interface.md)

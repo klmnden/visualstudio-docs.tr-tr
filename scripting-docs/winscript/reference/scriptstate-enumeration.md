@@ -1,5 +1,5 @@
 ---
-title: SCRIPTSTATE numaralandırması | Microsoft Docs
+title: SCRIPTSTATE sabit listesi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e062a9c2f3076144063ffb77895c8a03ecc4ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ff935e54e42eef6691948a7e0d91a495c5153adc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796466"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097805"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE Numaralandırması
-Bir komut dosyası motoru durumunu belirtir. Bu numaralandırma tarafından kullanılan [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , ve [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemleri.  
+Bir komut dosyası altyapısı durumunu belirtir. Bu sabit listesi tarafından kullanılan [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , ve [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) yöntemleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef enum tagSCRIPTSTATE {  
     SCRIPTSTATE_UNINITIALIZED = 0,  
     SCRIPTSTATE_INITIALIZED   = 5,  
@@ -41,16 +41,16 @@ typedef enum tagSCRIPTSTATE {
 } SCRIPTSTATE;  
 ```  
   
-## <a name="enumeration-values"></a>Numaralandırma değerleri  
+## <a name="enumeration-values"></a>Sabit listesi değerleri  
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|Komut dosyası, yeni oluşturduğunuz ancak henüz kullanarak başlatılmamış bir `IPersist*` arabirimi ve [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
-|SCRIPTSTATE_INITIALIZED|Komut dosyası başlatıldı, ancak (diğer nesnelere bağlanma veya olayları indirme) çalışmıyor veya herhangi bir kod yürütme. Kod sorgulanan yürütme için çağırarak [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md) yöntemi.|  
-|SCRIPTSTATE_STARTED|Betik kodu, yürütebilir tarafından eklenen nesneleri olayları henüz indirme değil ancak [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.|  
-|SCRIPTSTATE_CONNECTED|Komut dosyası yüklenir ve olayları indirme için bağlı.|  
-|SCRIPTSTATE_DISCONNECTED|Komut dosyası yüklenir ve bir çalışma zamanı yürütme durumuna sahip, ancak geçici olarak olayları indirme bağlantısı kesildi.|  
-|SCRIPTSTATE_CLOSED|Komut dosyası kapatıldı. Komut dosyası altyapısı artık çalışır ve çoğu yöntemleri için hatalar döndürür.|  
+|SCRIPTSTATE_UNINITIALIZED|Betik, yeni oluşturduğunuz ancak henüz kullanarak başlatılmamış bir `IPersist*` arabirimi ve [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
+|SCRIPTSTATE_INITIALIZED|Betik başlatıldı, ancak değil (diğer nesnelere bağlanma veya olayları indirme) çalıştıran veya herhangi bir kod yürütme. Kod sorgulanabilen yürütme için çağırarak [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md) yöntemi.|  
+|SCRIPTSTATE_STARTED|Betik kodu yürütebilir henüz tarafından eklenen nesneleri olaylarını indirme değil ancak [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.|  
+|SCRIPTSTATE_CONNECTED|Betik yüklenir ve olayları indirme için bağlı.|  
+|SCRIPTSTATE_DISCONNECTED|Betik yüklenir ve bir çalışma zamanı yürütme durumu vardır, ancak geçici olarak olayları batmasını bağlantısı kesildi.|  
+|SCRIPTSTATE_CLOSED|Betik kapatıldı. Komut dosyası altyapısı artık çalışır ve çoğu yöntemleri için hataları döndürür.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası sabitleri, numaralandırmaları ve hata kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

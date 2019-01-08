@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794525"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089290"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory Yöntemi
-Hedef işlemin bellek okur.  
+Hedef işlemin belleğini okur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,21 +38,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Parametreler  
  `address`  
- [in] Hedef işlemin bellek yazmak üzere temel adres.  
+ [in] Hedef işlemin belleğinin yazılacağı temel adres.  
   
  `pMemory`  
- [in] Belirtilen işlem adres alanında yazılacak veriler.  
+ [in] Belirli bir işlemin adres alanında yazılacak veriler.  
   
  `size`  
- [in] İşleme yazılacak bayt sayısı.  
+ [in] İşleme yazdırılacak bayt sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Veri aktarımı oluşmadan önce sistem taban adresi ve belirtilen boyut bellek tüm verilerin yazma erişimi için erişilebilir olduğundan ve erişilebilir durumda değilse, işlevi E_JsDEBUG_INVALID_MEMORY_ADDRESS hata başlatır doğrular.  
+ Veri aktarımı gerçekleşmeden önce sistem temel adreste ve belirtilen boyut, bellek, tüm verilerin yazma erişimi için erişilebilir olduğundan ve erişilebilir değilse işlev e_jsdebug_ınvalıd_memory_address hatası verir. doğrular.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55598a4191d421d3aea01d27cc7991b70bd6a019
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0f8ce73e05fa8dd163564184361254fd58163ee
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794171"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096348"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Ana bilgisayar yeni bir belge bağlam oluşturuldu ve isteğe bağlı olarak yeni bağlam için bilinmeyen denetleme dönmek ana bilgisayar tanır bildirir.  
+Konağın, yeni bir belge bağlamına oluşturulmakta olduğundan ve isteğe bağlı olarak yeni bağlam için bilinmeyen denetleme döndürmek konak sağlar bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnCreateDocumentContext(  
    IUnknown**  ppunkOuter  
 );  
@@ -41,15 +41,15 @@ HRESULT OnCreateDocumentContext(
  [out] Yeni bağlam denetleyen bir nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_NOTIMPL`|Ana bilgisayar kontrol eden bir nesne sağlamaz.|  
+|`E_NOTIMPL`|Konak, bir denetim nesnesi sağlamaz.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem için sağlanan yardımcı belge bağlamları yeni işlevler eklemek ana bilgisayar sağlar. Bu yöntem döndürebilir **E_NOTIMPL** veya servis talebi çağıran olduğu bağlam oluşturmaktan sorumlu null dış bir nesne.  
+ Bu yöntem Yardımcısı tarafından sağlanan belge bağlamı için yeni işlevler eklenecek konak sağlar. Bu yöntem döndürebilir **E_NOTIMPL** veya çalışması çağıran olduğu bağlamı oluşturmaktan sorumlu bir null bir dış nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthost arabirimi](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost Arabirimi](../../winscript/reference/idebugdocumenthost-interface.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6e128f5ac5de11b45af59c83750411c35e6efa7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793544"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095010"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-Ana bilgisayarın kullanıcı arabirimiyle ilişkilendirilmiş yerel ayar tanıtıcısını alır. Komut dosyası altyapısı tanımlayıcı hata dizeleri ve altyapısı tarafından oluşturulan diğer kullanıcı arabirimi öğeleri uygun dilde göründüğünden emin olmak için kullanır.  
+Ana bilgisayarın kullanıcı arabirimi ile ilişkilendirilmiş yerel ayar tanımlayıcısını alır. Komut dosyası altyapısı tanımlayıcı hata dizelerini ve altyapı tarafından oluşturulan diğer kullanıcı arabirimi öğeleri uygun dilde göründüğünden emin olmak için kullanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetLCID(  
     LCID *plcid  // address of variable for language identifier  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>Parametreler  
  `plcid`  
- [out] Komut dosyası altyapısı tarafından görüntülenen kullanıcı arabirimi öğeleri için yerel ayar tanıtıcısını alan değişkenin adresini.  
+ [out] Komut dosyası altyapısı tarafından görüntülenen kullanıcı arabirimi öğeleri için yerel ayar tanıtıcısını alan bir değişkenin adresidir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -46,11 +46,11 @@ HRESULT GetLCID(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_NOTIMPL`|Bu yöntem uygulanmadı. Sistem tarafından tanımlanan yerel kullanın.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
+|`E_NOTIMPL`|Bu yöntem uygulanmadı. Sistem tarafından tanımlanan yerel ayarı kullanın.|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem döndürürse `E_NOTIMPL`, sistem tarafından tanımlanan yerel ayar tanımlayıcısı kullanılmalıdır.  
+ Bu yöntem döndürürse `E_NOTIMPL`, sistem tarafından tanımlanan bir yerel ayar tanımlayıcısı kullanılmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

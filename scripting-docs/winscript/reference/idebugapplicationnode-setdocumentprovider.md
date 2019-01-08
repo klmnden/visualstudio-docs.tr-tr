@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c80bf04c129b2410b97b2e01861a1007457239
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 135f5603513905fdc00aa7d720b9d8cc6703cb0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793796"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096167"
 ---
 # <a name="idebugapplicationnodesetdocumentprovider"></a>IDebugApplicationNode::SetDocumentProvider
-Bu uygulama düğümü için belge sağlayıcıyı ayarlar.  
+Bu uygulama düğümü için belge sağlayıcısı ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT SetDocumentProvider(  
    IDebugDocumentProvider*  pddp  
 );  
@@ -38,17 +38,17 @@ HRESULT SetDocumentProvider(
   
 #### <a name="parameters"></a>Parametreler  
  `pddp`  
- [in] Bu uygulama düğümü belge sağlayıcısı.  
+ [in] Bu uygulama düğümü için belge sağlayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bu uygulama düğümü için belge sağlayıcıyı ayarlar.  
+ Bu yöntem, bu uygulama düğümü için belge sağlayıcısı ayarlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode Arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)

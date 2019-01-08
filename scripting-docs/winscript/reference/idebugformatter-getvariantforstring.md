@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f9f783c8fe1864999e017ff348853df5464c93f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1ee40057043751b465c6575575f00dee848a0160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794201"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086625"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
 Belirtilen dizeyi içeren bir Değişken döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetVariantForString(  
    LPCOLESTR  pwstrValue,  
    VARIANT*   pvar  
@@ -39,13 +39,13 @@ HRESULT GetVariantForString(
   
 #### <a name="parameters"></a>Parametreler  
  `pwstrValue`  
- [in] Bir değişken depolamak için dize.  
+ [in] Bir değişken içine depolamak için dize.  
   
  `pvar`  
  [out] DEĞİŞKEN içeren `pwstrValue`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -55,4 +55,4 @@ HRESULT GetVariantForString(
  Bu yöntem, belirtilen dizeyi içeren bir Değişken döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugformatter arabirimi](../../winscript/reference/idebugformatter-interface.md)
+ [IDebugFormatter Arabirimi](../../winscript/reference/idebugformatter-interface.md)

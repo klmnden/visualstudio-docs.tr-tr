@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796247"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090031"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-Döndürür `IScriptNode` nesnenin üst nesnesi.  
+Döndürür `IScriptNode` bir nesnenin üst nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -38,11 +38,11 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Parametreler  
  `ppsnParent`  
- [out] Bir işaretçi alan değişkenin adresini `IScriptNode` üst örneğinin arabirimi.  
+ [out] Bir işaretçiye alan değişkenin adresini `IScriptNode` üst örneğinin arabirimi.  
   
- Sınıf uyguluyorsa `IScriptEntry` veya `IScriptScriptlet`, bir `IScriptNode` nesnesi döndürülür.  
+ Sınıf uyguluyorsa `IScriptEntry` veya `IScriptScriptlet`e `IScriptNode` nesne döndürülür.  
   
- Sınıf uyguluyorsa `IScriptNode` (bir Web sayfasını temsil eder), null değeri döndürülür.  
+ Sınıf uyguluyorsa `IScriptNode` (temsil eden bir Web sayfası), NULL döndürülür.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -54,4 +54,4 @@ HRESULT GetParent(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)
+ [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)

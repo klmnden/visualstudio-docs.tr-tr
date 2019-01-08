@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793943"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091266"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Hata ayıklama uygulama düğümü nesne üst düğüme iliştirildiği gösterir olayını işler.  
+Hata ayıklama uygulama düğüm nesnesi bir üst düğüme iliştirildiği gösteren bir olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -41,18 +41,18 @@ HRESULT onAttach(
  [in] Bu düğümün üst hata ayıklama uygulama düğümü.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, hata ayıklama uygulama düğümü nesne üst düğüme iliştirildiği gösterir bir olayını işler.  
+ Bu yöntem, hata ayıklama uygulama düğüm nesnesi bir üst düğüme iliştirildiği gösteren bir olayını işler.  
   
  Uygulayıcılar, `IDebugApplicationNode` arabirimi bu olay Yükselt.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplicationnodeevents arabirimi](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
- [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode Arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)

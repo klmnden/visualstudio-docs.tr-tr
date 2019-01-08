@@ -12,27 +12,27 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c493acdb2843877c506d9d84e145a79ac2d60d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 21661953edbdba2314b88aad5fb55451b06b51a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793493"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097636"
 ---
 # <a name="iactivescriptprofilercontrol5enumheap2-method"></a>IActiveScriptProfilerControl5::EnumHeap2 Yöntemi
-Arabirim döndürür ([Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) ilişkili betik altyapısı bağlamında GC yığın nesneleri üzerinden yinelemek için kullanılabilecek.  
+Bir arabirim döndürür ([Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) üzerinden ilişkili komut dosyası motoru bağlamında GC yığın nesnelerini yinelemek için kullanılabilecek.  
   
- Toolkit ya da ya da hata ayıklama modunda bu yöntemi çağırın. Kullanıcı Arabirimi iş parçacığı boşta olduğunda bu yöntem çağrılmalıdır. Betik altyapısı dışında karşı yöntemi çağrıldıktan sonra hiçbir işlem gerçekleştirilmelidir [Iactivescriptprofilerheapenum::Next yöntemi](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) kadar [Iactivescriptprofilerheapenum::Next yöntemi](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)S_FALSE döndürür veya [Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) arabirim işaretçisi yayımlanır.  
+ Bu yöntem çağrısı hata ayıklama veya yayınlama modunda. UI iş parçacığı boşta olduğunda bu yöntem çağrılmalıdır. Dışında betik altyapısına karşı yöntemi çağrıldıktan sonra hiçbir işlem gerçekleştirilmelidir [Iactivescriptprofilerheapenum::Next yöntemi](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md) kadar [Iactivescriptprofilerheapenum::Next yöntemi](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)S_FALSE döndürür veya [Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) arabirim işaretçisi serbest.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveScriptProfilerHeapEnum** ppEnum);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  enumFlags  
- Bir nesne ilişkisinde işaret bir nesne hakkında ek bilgi sunulup sunulmadığını belirten değer. Ek bilgi işaret nesnesi bir alıcı veya ayarlayıcı yöntemi olup olmadığını gösterebilir. Daha fazla bilgi için bkz: [profıler_heap_enum_flags numaralandırması](../../winscript/reference/profiler-heap-enum-flags-enumeration.md).  
+ İçin bir nesne ilişkisini işaret eden bir nesne hakkında ek bilgilerin kullanıma sunulan olup olmadığını belirten değer. Ek bilgiler, işaret edilen nesnenin alıcı veya ayarlayıcı yöntemi olup olmadığını gösterebilir. Daha fazla bilgi için bkz. [profıler_heap_enum_flags numaralandırması](../../winscript/reference/profiler-heap-enum-flags-enumeration.md).  
   
  ppEnum  
  [out] Döndürür [Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md).  
@@ -42,6 +42,6 @@ HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveS
   
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
-|`S_OK`|Yığın numaralandırması başarıyla tamamlandı.|  
-|`E_OUTOFMEMORY`|Yığın numaralandırması gerçekleştirmek yeterli bellek yoktu.|  
+|`S_OK`|Bir yığın numaralandırma başarıyla tamamlandı.|  
+|`E_OUTOFMEMORY`|Yığın numaralandırma gerçekleştirmek yeterli bellek yoktu.|  
 |`E_FAIL`|Bir iç hata oluştu.|

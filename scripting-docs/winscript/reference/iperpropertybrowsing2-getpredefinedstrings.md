@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bec9643a89d40a7b1e37d019d4211bd7167ee65
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915974"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088614"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
 Bu özellik için olası değeri temsil eden dize işaretçilerini sayılan bir dizi liste kutusunu doldurmak çağıranın izin verir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetPredefinedStrings(  
    DISPID  dispid,  
    CALPOLESTR*  pCaStrings,  

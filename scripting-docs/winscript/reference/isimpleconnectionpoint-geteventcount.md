@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 523748112d99f000d2eb88a7a64c88b60d5ea44f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ce53089b3dc468043648378d80e54cc2d3188358
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796580"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089810"
 ---
 # <a name="isimpleconnectionpointgeteventcount"></a>ISimpleConnectionPoint::GetEventCount
-Bu arabirimde kullanıma sunulan olayların sayısını döndürür.  
+Bu arabirimde kullanıma sunulan olay sayısını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetEventCount(  
    ULONG*  pulCount  
 );  
@@ -38,17 +38,17 @@ HRESULT GetEventCount(
   
 #### <a name="parameters"></a>Parametreler  
  `pulCount`  
- [out] Bu arabirim sayısı sunulan olay sayısıdır.  
+ [out] Bu arabirim sayısına kullanıma sunulan bir olay sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bu arabirimde kullanıma sunulan olayların sayısını döndürür.  
+ Bu yöntem, bu arabirimdeki gösterilen olay sayısını döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Isimpleconnectionpoint arabirimi](../../winscript/reference/isimpleconnectionpoint-interface.md)
+ [ISimpleConnectionPoint Arabirimi](../../winscript/reference/isimpleconnectionpoint-interface.md)

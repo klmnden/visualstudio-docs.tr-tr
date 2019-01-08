@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb886d5f40042313483dc3b298488d1291c30563
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3186ec3edcdd0c66f06f7b769eff31e8b050c428
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793304"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091708"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-Bir komut dosyası motoru bir komut dosyası çalıştırılırken bir hata oluştuğu kaynak dosyasındaki satır alır.  
+Bir komut dosyası altyapısı bir betik çalıştırılırken bir hata oluştuğu kaynak dosyadaki bir satır alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetSourceLineText(  
     BSTR *pbstrSourceLine  // address of buffer for source line  
 );  
@@ -38,10 +38,10 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>Parametre  
  `pbstrSourceLine`  
- [out] Hatanın gerçekleştiği kaynak kodu satır alan arabellek adresi.  
+ [out] Hatanın gerçekleştiği kaynak kod satırının alan arabellek adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` başarılı olursa ya da `E_FAIL` kaynak dosyasını satırda değil alındığında.  
+ Döndürür `S_OK` başarılı olursa veya `E_FAIL` , kaynak dosyadaki satır alınamıyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescripterror](../../winscript/reference/iactivescripterror.md)
+ [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

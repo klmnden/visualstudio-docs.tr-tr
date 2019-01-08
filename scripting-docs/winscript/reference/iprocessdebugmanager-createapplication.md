@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a051462f32acae238ca5843e283fe6001ec43fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6f182dd92d181067f930f415ec9332df2658c3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794918"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088640"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 Bu uygulama için yeni bir hata ayıklama uygulama nesnesi oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateApplication(  
    IDebugApplication**  ppda  
 );  
@@ -41,14 +41,14 @@ HRESULT CreateApplication(
  [out] Bu uygulama için hata ayıklama uygulama nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından oluşturulan nesne adı yok ve çalışması için eklenmez uygulama listesi. Kullanım `IProcessDebugManager::AddApplication` uygulama listesini hata ayıklama uygulama eklemek için.  
+ Bu yöntem tarafından oluşturulan nesne adı yok ve değişen eklenmez uygulama listesi. Kullanım `IProcessDebugManager::AddApplication` uygulama listesini hata ayıklama uygulama eklemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iprocessdebugmanager arabirimi](../../winscript/reference/iprocessdebugmanager-interface.md)   

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d216bb7b21c8895337b9925007637c00d0deb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795053"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088198"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Bir üyenin özellikleri alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetMemberProperties(  
    DISPID id,  
    DWORD grfdexFetch,  
@@ -40,20 +40,20 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parametreler  
  `id`  
- Üyeyi tanımlar. Kullanan `GetDispID` veya `GetNextDispID` gönderme tanımlayıcısı alınamadı.  
+ Üyeyi tanımlar. Kullanan `GetDispID` veya `GetNextDispID` gönderme tanımlayıcısının elde edilir.  
   
  `grfdexFetch`  
- Almak için hangi özellikleri belirler. Bu altında listelenen değerleri bir bileşimi olabilir `pgrfdex` ve/veya bir birleşimi aşağıdaki değerlerden biri:  
+ Almak için hangi özellikleri belirler. Bunun altında listelenen değerleri bir birleşimi olabilir `pgrfdex` ve/veya aşağıdaki değerleri birleşimi:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
 |grfdexPropCanAll|FdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct ve fdexPropCanSourceEvents birleştirir.|  
 |grfdexPropCannotAll|FdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct ve fdexPropCannotSourceEvents birleştirir.|  
 |grfdexPropExtraAll|FdexPropNoSideEffects ve fdexPropDynamicType birleştirir.|  
-|grfdexPropAll|GrfdexPropCanAll, grfdexPropCannotAll ve grfdexPropExtraAll birleştirir.|  
+|grfdexPropAll|GrfdexPropCanAll ve grfdexPropCannotAll grfdexPropExtraAll birleştirir.|  
   
  `pgrfdex`  
- Adres bir `DWORD` istenen özellikleri alır. Bu bir birleşimi aşağıdaki değerlerden biri olabilir:  
+ Adresi bir `DWORD` , istenen özellikleri alır. Bu, aşağıdaki değerleri birleşimi olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
@@ -63,14 +63,14 @@ HRESULT GetMemberProperties(
 |fdexPropCannotPut|Üye DISPATCH_PROPERTYPUT kullanarak ayarlanamaz.|  
 |fdexPropCanPutRef|Üye DISPATCH_PROPERTYPUTREF kullanarak ayarlayabilirsiniz.|  
 |fdexPropCannotPutRef|Üye DISPATCH_PROPERTYPUTREF kullanarak ayarlanamaz.|  
-|fdexPropNoSideEffects|Üye herhangi yan etkileri yok. Örneğin, güvenli bir şekilde get/set/çağrısı bir hata ayıklayıcısı verebilir ayıklanacak betik durumunu değiştirmeden bu üye.|  
-|fdexPropDynamicType|Üye dinamiktir ve nesnesinin ömrü boyunca değiştirebilirsiniz.|  
-|fdexPropCanCall|Üye DISPATCH_METHOD kullanarak bir yöntem olarak çağrılabilir.|  
-|fdexPropCannotCall|Üye DISPATCH_METHOD kullanarak bir yöntem olarak çağrılamaz.|  
-|fdexPropCanConstruct|Üye DISPATCH_CONSTRUCT kullanarak bir oluşturucu çağrılabilir.|  
-|fdexPropCannotConstruct|Üye DISPATCH_CONSTRUCT kullanarak bir oluşturucu çağrılamaz.|  
-|fdexPropCanSourceEvents|Üye olayları tetikleyebilir.|  
-|fdexPropCannotSourceEvents|Üye olayları harekete olamaz.|  
+|fdexPropNoSideEffects|Yan etkileri üye yok. Örneğin, bir hata ayıklayıcı güvenli bir şekilde alma/ayarlama/çağrısı olabilir ayıklanan betik durumunu değiştirmeden bu üye.|  
+|fdexPropDynamicType|Üye dinamiktir ve nesne yaşam süresi boyunca değiştirebilirsiniz.|  
+|fdexPropCanCall|Üye DISPATCH_METHOD'ı kullanarak bir yöntem çağrılabilir.|  
+|fdexPropCannotCall|Üye DISPATCH_METHOD'ı kullanarak bir yöntem çağrılamaz.|  
+|fdexPropCanConstruct|Üye DISPATCH_CONSTRUCT kullanarak bir oluşturucu olarak çağrılabilir.|  
+|fdexPropCannotConstruct|Üye DISPATCH_CONSTRUCT kullanarak bir oluşturucu olarak çağrılamaz.|  
+|fdexPropCanSourceEvents|Üyeye olayları tetikleyebilir.|  
+|fdexPropCannotSourceEvents|Üye olay başlatamaz.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -82,7 +82,7 @@ HRESULT GetMemberProperties(
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

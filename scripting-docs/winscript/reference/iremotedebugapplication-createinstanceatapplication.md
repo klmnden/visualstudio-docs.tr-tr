@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2185987f6b635dae4d537231fca3327d0aed003
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 29cbcebc5bdc51be4223b2592bbe6ac3ae76525d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794876"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086365"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-Nesneleri uygulama işleminin kodla sağlar. diğer bir deyişle,-işlem dışı uygulama.  
+Nesnelerinin oluşturulması uygulama işleminde kodla sağlar. diğer bir deyişle,-işlem dışı uygulama.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT CreateInstanceAtApplication(  
    REFCLSID    rclsid,  
    IUnknown*   pUnkOuter,  
@@ -42,22 +42,22 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>Parametreler  
  `rclsid`  
- [in] Sınıf oluşturmak için nesne tanımlayıcısı (CLSID).  
+ [in] Oluşturulacak nesne tanımlayıcısı (CLSID) sınıfı.  
   
  `pUnkOuter`  
- [in] Varsa `NULL`, nesne bir toplama bir parçası olarak oluşturuluyor değil. Aksi takdirde, `pUnkOuter` gösteren bir işaretçidir toplama nesnenin `IUnknown` arabirimi (denetleme `IUnknown`).  
+ [in] Varsa `NULL`, nesne bir toplamanın parçası oluşturuluyor değil. Aksi takdirde, `pUnkOuter` toplama nesnesinin işaretçisidir `IUnknown` arabirimi (denetleme `IUnknown`).  
   
  `dwClsContext`  
- [in] Yürütülebilir kod çalıştırmak için bağlamı. Değerler numaralandırma içinden alınır `CLSCTX`.  
+ [in] Yürütülebilir kodu çalıştırmak için bağlam. Değerleri, sabit listesinden alınmış alınır `CLSCTX`.  
   
  `riid`  
- [in] Nesnesi ile iletişim kurmak için kullanılan arabirim tanımlayıcısı.  
+ [in] Nesne ile iletişim kurmak için kullanılan arabirim tanımlayıcısı.  
   
  `ppvObject`  
- [out] İçinde istenen arabirim işaretçisi alan işaretçi değişkeninin adresi `riid`. Başarılı bir geri döndürme bağlı *`ppvObject` istenen arabirim işaretçisi içerir. Başarısızlık durumunda, \* `ppvObject` içeren `NULL`.  
+ [out] İçinde istenen arabirim işaretçisi alır, işaretçi değişkeninin adresi `riid`. Başarılı bir geri döndürme üzerine *`ppvObject` istenen arabirim işaretçisi içerir. Başarısızlık durumunda, \* `ppvObject` içeren `NULL`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -67,4 +67,4 @@ HRESULT CreateInstanceAtApplication(
  Bu yöntem için temsilci `CoCreateInstance`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)
+ [IRemoteDebugApplication Arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)

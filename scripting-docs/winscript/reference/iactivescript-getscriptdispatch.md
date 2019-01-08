@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b2f09934cf6d2bb28f7dae93d0bf49c8dc7437d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a18d6781ca2b7820686b317ad0be5da425ade1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791951"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097688"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
-Alır `IDispatch` arabirim yöntemleri ve özellikleri şu anda çalışan komut dosyasıyla ilişkilidir.  
+Alır `IDispatch` arabirimdeki yöntemleri ve özellikleri şu anda çalışan bir komut dosyasıyla ilişkilidir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetScriptDispatch(  
     LPCOLESTR pstrItemName  // address of item name  
     IDispatch **ppdisp      // receives IDispatch pointer  
@@ -39,10 +39,10 @@ HRESULT GetScriptDispatch(
   
 #### <a name="parameters"></a>Parametreler  
  `pstrItemName`  
- [in] Kendisi için arayan ilişkili dağıtım nesnesi gerekiyor öğesinin adını içeren bir arabellek adresi. Bu parametre ise `NULL`, komut dosyası tarafından tanımlanan tüm genel yöntemleri ve özellikleri üye olarak dağıtım nesnesi içerir. Aracılığıyla `IDispatch` arabirimi ve ilişkili `ITypeInfo` arabirimi, konak betik yöntemleri ya da Görünüm çağırma ve komut dosyası değişkenleri değiştirin.  
+ [in] Kendisi için çağıranın ilişkili dağıtım nesnesi gerekiyor öğesinin adını içeren bir arabellek adresi. Bu parametre `NULL`, dağıtım nesnesi grupların üyeleri komut dosyası tarafından tanımlanan tüm genel yöntemleri ve özellikleri içerir. Aracılığıyla `IDispatch` arabirimi ve ilişkili `ITypeInfo` arabirimi, konak betik yöntemleri veya Görünüm çağırır ve komut dosyası değişkenleri değiştirin.  
   
  `ppdisp`  
- [out] Komut dosyanızın genel yöntemleri ve özellikleri ile ilişkili nesne için bir işaretçi alan değişkenin adresini. Komut dosyası altyapısı böyle bir nesnenin desteklemiyorsa `NULL` döndürülür.  
+ [out] Betiğin genel yöntemleri ve özellikleri ile ilişkili nesneye bir işaretçi alan değişkenin adresi. Komut dosyası altyapısı böyle bir nesnenin desteklemiyorsa `NULL` döndürülür.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -50,13 +50,13 @@ HRESULT GetScriptDispatch(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_INVALIDARG`|Bağımsız değişken geçersiz.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, komut dosyası altyapısı henüz yüklenen başlatılmadı veya).|  
+|`E_INVALIDARG`|Bir bağımsız değişken geçersiz.|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, komut dosyası altyapısı henüz yüklenen başlatıldı veya).|  
 |`S_FALSE`|Komut dosyası altyapısı, dağıtım nesnesi desteklemiyor; `ppdisp` parametresi NULL olarak ayarlanır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yöntemleri ve özellikleri çağırarak eklenebilir olduğundan [Iactivescriptparse](../../winscript/reference/iactivescriptparse.md) arabirimi, `IDispatch` bu yöntem tarafından döndürülen arabirimi yeni yöntemleri ve özellikleri dinamik olarak destekleyebilir. Benzer şekilde, `IDispatch::GetTypeInfo` yöntemi döndürmelidir yeni, benzersiz `ITypeInfo` arabirim yöntemleri ve özellikleri eklendiğinde. Ancak, dil motorları değiştirmemelisiniz unutmayın `IDispatch` arabiriminde bir şekilde uyumlu herhangi bir önceki `ITypeInfo` döndürüldü arabirim. Bu, örneğin, DISPID değerleri hiçbir zaman yüklenmek anlamına gelir.  
+ Yöntemlere ve özelliklere çağırarak eklenebildiği [Iactivescriptparse](../../winscript/reference/iactivescriptparse.md) arabirimi `IDispatch` bu yöntem tarafından döndürülen arabirimi yeni yöntemleri ve özellikleri dinamik olarak destekleyebilir. Benzer şekilde, `IDispatch::GetTypeInfo` yöntemi döndürmelidir yeni, benzersiz `ITypeInfo` arabirim yöntemleri ve özellikleri eklendiğinde. Ancak, dil altyapıları değiştirmemelisiniz unutmayın `IDispatch` arabiriminde bir şekilde uyumlu herhangi önceki `ITypeInfo` arabirimi döndürdü. Bu, örneğin, DISPID değeri hiçbir zaman kullanılabilmeleri anlamına gelir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScript](../../winscript/reference/iactivescript.md)

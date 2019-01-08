@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ca6b990011252bde581168a272da1041dc24f41
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6808c8bb7e27e7b416e79b2f23e323c3ae3a528f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793715"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095361"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-Tam zamanında (JIT) hata ayıklayıcı kayıtlı olup olmadığını belirler.  
+Just-ın-time (JIT) hata ayıklayıcı kayıtlı olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 BOOL FCanJitDebug();  
 ```  
   
@@ -38,10 +38,10 @@ BOOL FCanJitDebug();
  Bu yöntem parametre almaz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem başarılı ve JIT hata ayıklayıcı kayıtlı, yöntem döndürür `TRUE`. Aksi takdirde, döndürür `FALSE`.  
+ Yöntem başarılı olursa ve JIT hata ayıklayıcı kaydedilir, yöntem döndürür `TRUE`. Aksi halde `FALSE`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir JIT hata ayıklayıcısı kayıtlı olup olmadığını belirler.  
+ Bu yöntem, JIT hata ayıklayıcı kayıtlı olup olmadığını belirler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication Arabirimi](../../winscript/reference/idebugapplication-interface.md)

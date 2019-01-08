@@ -16,29 +16,29 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f61da0754147e0a449663cc9815501dc8d38e6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aa838f928aac6985c5c864853c3abd017f7bcf8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794552"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094178"
 ---
 # <a name="ijsdebugbreakpointdelete-method"></a>IJsDebugBreakPoint::Delete Yöntemi
-Kesme noktası siler.  
+Kesme noktasını siler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Delete(void);  
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Silinen bir kesme noktası üzerinde adlı S_FALSE döndürür.  
+ Silinen bir kesme noktasına çağrılırsa S_FALSE döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugbreakpoint arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint Arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)

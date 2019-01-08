@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 393186330979d464fe54bde339806a5d8335a859
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793934"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094958"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Bu uygulama düğümü belirtilen proje ağacına ekler.  
+Bu uygulama düğümü belirtilen projeyi ağacına ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugApplicationNode*  pdanParent  
 );  
@@ -38,18 +38,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parametreler  
  `pdanParent`  
- [in] Bu uygulama düğümü eklenecek olduğu proje ağacı.  
+ [in] Proje ağacında bu uygulama düğümü eklenecek olduğu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bu uygulama düğümü projeye ekler ağaç, kullanarak `pdanParent` üst olarak. Varsa `pdanParent` olan `NULL`, bu uygulama düğümü en üst düzey düğüm olacaktır.  
+ Bu yöntem, bu uygulama düğümü projeye ekler. ağaç, kullanarak `pdanParent` üst öğe olarak. Varsa `pdanParent` olduğu `NULL`, bu uygulama düğümü üst düzey düğüm olacaktır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
- [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode Arabirimi](../../winscript/reference/idebugapplicationnode-interface.md)

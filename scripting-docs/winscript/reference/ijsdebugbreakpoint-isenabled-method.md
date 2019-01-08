@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb7ab887b8e3442a0c38ea403ad43bdea10cdd66
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 22584acafc92b7acaa09432ec9f6cb04e7bab48c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794522"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089390"
 ---
 # <a name="ijsdebugbreakpointisenabled-method"></a>IJsDebugBreakPoint::IsEnabled Yöntemi
-Kesme noktası etkin olup olmadığını belirler.  
+Kesme noktasının etkinleştirilip etkinleştirilmeyeceğini belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT IsEnabled(  
    BOOL *pIsEnabled  
 );  
@@ -36,15 +36,15 @@ HRESULT IsEnabled(
   
 #### <a name="parameters"></a>Parametreler  
  `pIsEnabled`  
- [out] Kesme noktası etkinleştirilmişse, true döndürür; Aksi takdirde yanlış değerini döndürür.  
+ [out] Kesme noktası etkinleştirildiğinde true döndürür; Aksi takdirde false döndürür.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Silinen bir kesme noktası üzerinde adlı E_UNEXPECTED döndürür.  
+ Silinen bir kesme noktasına çağrılırsa E_UNEXPECTED döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugbreakpoint arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)
+ [IJsDebugBreakPoint Arabirimi](../../winscript/reference/ijsdebugbreakpoint-interface.md)

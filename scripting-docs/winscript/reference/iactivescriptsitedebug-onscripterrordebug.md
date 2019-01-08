@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a669d435d84295b22af4298936babf8439eaefa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5680d22ffa5ec648afaced5e98f651e35758f929
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793607"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092124"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-Çalışma zamanı hataların nasıl işleneceğini belirlemek bir akıllı ana bilgisayar sağlar.  
+Çalışma zamanı hatalarının nasıl işleneceğini belirlemek bir akıllı ana bilgisayar sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    BOOL*                     pfEnterDebugger,  
@@ -40,23 +40,23 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>Parametreler  
  `pErrorDebug`  
- [in] Oluştu çalışma zamanı hatası  
+ [in] Çalışma zamanı hata oluştu  
   
  `pfEnterDebugger`  
- [out] JIT hata ayıklama yapmak için hata ayıklayıcı hata geçirmek tutulmayacağını gösteren bayrak.  
+ [out] JIT hata ayıklama yapmak için hata ayıklayıcı hata geçirmek etkinleştirilip etkinleştirilmeyeceğini belirten bayrak.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] Çağrılıp çağrılmayacağını belirten bayrak `IActiveScriptSite::OnScriptError` zaman kullanıcı karar hata ayıklama yapmadan devam etmek.  
+ [out] Çağrılıp çağrılmayacağını belirten bayrak `IActiveScriptSite::OnScriptError` kullanıcı ne zaman karar hata ayıklama olmadan devam etmek.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler dahil, ancak aşağıdaki tabloda değerine sınırlı değildir.  
+ Yöntem döndürür bir `HRESULT`. Olası değerler içerir, ancak aşağıdaki tabloda değeri sınırlı değildir.  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir akıllı ana bilgisayar, çalışma zamanı hataların nasıl işleneceğini belirlemek için bu yöntemi kullanabilirsiniz.  
+ Bir akıllı ana bilgisayar, çalışma zamanı hatalarının nasıl işleneceğini belirlemek için bu yöntemi kullanabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsitedebug arabirimi](../../winscript/reference/iactivescriptsitedebug-interface.md)
+ [IActiveScriptSiteDebug Arabirimi](../../winscript/reference/iactivescriptsitedebug-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Profıler_scrıpt_type numaralandırması | Microsoft Docs
+title: Profıler_scrıpt_type sabit listesi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 279969ec0b50f705e39d2e29e700adc1e833ead3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac387af4601ff822982c10e61f9813b2db7e8047
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796391"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086916"
 ---
 # <a name="profilerscripttype-enumeration"></a>PROFILER_SCRIPT_TYPE Numaralandırması
 Betik türünü belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef enum {  
     PROFILER_SCRIPT_TYPE_USER,  
     PROFILER_SCRIPT_TYPE_DYNAMIC,  
@@ -42,12 +42,12 @@ typedef enum {
 |Üye|Açıklama|  
 |------------|-----------------|  
 |PROFILER_SCRIPT_TYPE_USER|Kullanıcı tarafından yazılan kodu belirtir.|  
-|PROFILER_SCRIPT_TYPE_DYNAMIC|Yürütme sırasında dinamik olarak oluşturulan bir kod belirtir.|  
-|PROFILER_SCRIPT_TYPE_NATIVE|Yerel işlevler ve komut dosyası altyapısı tarafından tanımlanan nesneler için komut dosyası türünü belirtir.|  
-|PROFILER_SCRIPT_TYPE_DOM|Internet Explorer, örneğin, bir çağrı belge nesne modeli (DOM) içine çağrı belirtir `document.getElementById` yöntemi.|  
+|PROFILER_SCRIPT_TYPE_DYNAMIC|Yürütme sırasında dinamik olarak oluşturulan kodu belirtir.|  
+|PROFILER_SCRIPT_TYPE_NATIVE|Yerel işlevleri ve komut dosyası altyapısı tarafından tanımlanan nesneleri için betik türünü belirtir.|  
+|PROFILER_SCRIPT_TYPE_DOM|Bir çağrı, Internet Explorer gibi bir çağrı belge nesne modeli (DOM) içine belirtir `document.getElementById` yöntemi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası profil oluşturucu sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [Etkin komut dosyası Profiler sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
  [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
  [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

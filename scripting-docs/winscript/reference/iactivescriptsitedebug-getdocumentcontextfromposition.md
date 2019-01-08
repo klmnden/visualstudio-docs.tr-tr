@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25ce03a124f246443afd0f5a8540a93e7d474f9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1bcc7469e02ba380ebd6839e9fe55031e52ecd32
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793532"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086990"
 ---
 # <a name="iactivescriptsitedebuggetdocumentcontextfromposition"></a>IActiveScriptSiteDebug::GetDocumentContextFromPosition
 Temsilci seçme için dil altyapısı tarafından kullanılan `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -41,26 +41,26 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parametreler  
  `dwSourceContext`  
- [in] Sağlanan gibi kaynak içerik `ParseScriptText` veya `AddScriptlet`.  
+ [in] Sağlanan kaynak içeriği `ParseScriptText` veya `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Karakter göre betik bloğu ya da Resimli başlangıç uzaklığı.  
+ [in] Karakter göre betik bloğu ya da kod oluşturma başlangıç uzaklığı.  
   
  `uNumChars`  
  [in] Bu bağlamda karakter sayısı.  
   
  `ppsc`  
- [out] Bu karakterin aralığa karşılık gelen belge bağlamı.  
+ [out] Bu karakter konumu aralığına karşılık gelen belge bağlamı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Dil motorları temsilci seçmek için bu yöntemi kullanın `IDebugCodeContext::GetSourceContext`.  
+ Dil altyapıları temsilci seçmek için bu yöntemi kullanın `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsitedebug arabirimi](../../winscript/reference/iactivescriptsitedebug-interface.md)
+ [IActiveScriptSiteDebug Arabirimi](../../winscript/reference/iactivescriptsitedebug-interface.md)

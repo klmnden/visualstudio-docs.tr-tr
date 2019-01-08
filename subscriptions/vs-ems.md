@@ -9,12 +9,12 @@ description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739610"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092072"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 
@@ -62,7 +62,7 @@ EMS kullanmak için bir hesap oluşturabilir veya mevcut bir hesabı kullanarak 
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir:    Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için.  Dışlar: Değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Microsoft iş ortağı ağı (Professional) düşünün.*
+<sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için.  Dışlar: Değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Microsoft iş ortağı ağı (Professional) düşünün.*
 
 <sup>2</sup> *Microsoft iş ortağı ağı (Professional) dışlar*
 
@@ -75,6 +75,6 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  EMS yardıma mı ihtiyacınız var?  Çevrimiçi denetle [EMS belgeleri](/enterprise-mobility-security/).
--  EMS herhangi bir bileşeni, teknik destek için lütfen https://support.microsoft.com/allproducts ve ürün seçin.
+-  EMS herhangi bir bileşeni, teknik destek için lütfen [EMS Desteği SSS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) soru için doğru destek bulunacak.
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

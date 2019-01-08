@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a39ae7100c5567d2b03b7998077b20b1078810aa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c8918e277fa9c7183e6d46a4853824a74fa4548
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796397"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087379"
 ---
 # <a name="scriptprophostkeepalive-property"></a>SCRIPTPROP_HOSTKEEPALIVE Özelliği
-Komut dosyası altyapısı bekleyen başvurular varsa tam olarak işlevsel tutulmalıdır olup olmadığını belirtmek için kullanılır.  
+Komut dosyası altyapısı bekleyen başvuru olduğunda tam işlevsel tutulması gereken olup olmadığını belirtmek için kullanılır.  
   
- Kullanım [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) bu özelliği ayarlamak için `true`. Bu özellik ayarlanmışsa `true`, komut dosyası altyapısı veya için en az bir bekleyen başvuru var olduğu sürece komut dosyası altyapısı tam olarak işlevsel tutulur bir `IDispatch` komut dosyası kullanılarak oluşturulan bir JavaScript nesne işaretçisi altyapısı. Bu özellik ayarlandığında `true`, açıkça kapattığınızda veya komut dosyası altyapısını kullanarak sıfırlamak [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) veya [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) yöntemleri. Bir komut dosyası nesnesi son referansı sürümü betik altyapısı kapanır.  
+ Kullanım [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) bu özellik ayarlanacak `true`. Bu özellik ayarlanırsa `true`, komut dosyası altyapısı veya için en az bir bekleyen başvuru var olduğu sürece komut dosyası altyapısı tam olarak işlevsel tutulur bir `IDispatch` komut dosyası kullanılarak oluşturulan bir JavaScript nesne işaretçisi altyapısı. Bu özelliği ayarlandığında `true`, açıkça kapattığınızda veya komut dosyası altyapısı kullanarak sıfırlama [IActiveScript::Close](../../winscript/reference/iactivescript-close.md) veya [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) yöntemleri. Komut dosyası altyapısı sürümünü bir betik nesnesi son başvuruysa kapanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 #define SCRIPTPROP_HOSTKEEPALIVE 0x70000004  
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- Bu özellik yalnızca ile yüklenen activscp.idl sürümü görünür [!INCLUDE[win8](../../javascript/includes/win8-md.md)], Internet Explorer 8 KB 2707082 ile [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)], veya Internet Explorer 9'e yönelik KB 2722913 ile [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] veya [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)].
+ Bu özellik yalnızca activscp.idl birlikte yüklenen sürümünü görünür [!INCLUDE[win8](../../javascript/includes/win8-md.md)], üzerinde Internet Explorer 8 KB 2707082 ile [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)], veya Internet Explorer 9'da için KB 2722913 [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] veya [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)].

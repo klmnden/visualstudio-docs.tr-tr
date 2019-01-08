@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 24aa5ad2b780d5ff61efcde4d24b6700bb5b353e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794711"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092995"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
-Nesne üyeleri numaralandırır.  
+Bir nesnenin üyelerine numaralandırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetNextDispID(  
    DWORD grfdex,  
    DISPID id,  
@@ -40,20 +40,20 @@ HRESULT GetNextDispID(
   
 #### <a name="parameters"></a>Parametreler  
  `grfdex`  
- Hangi öğeleri kümesidir sıralanması belirler. Bu bir birleşimi aşağıdaki değerlerden biri olabilir:  
+ Numaralandırılacak hangi öğeleri kümesi olduğunu belirler. Bu, aşağıdaki değerleri birleşimi olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|fdexEnumDefault|İstekleri nesne varsayılan öğeleri numaralandırır. Nesne herhangi bir grup öğeyi listeleme izin verilmez.|  
-|fdexEnumAll|İstekleri nesne tüm öğeleri numaralandırır. Nesne herhangi bir grup öğeyi listeleme izin verilmez.|  
+|fdexEnumDefault|İstekler, nesnenin varsayılan öğeleri sıralar. Nesne, herhangi bir öğe kümesini listeleme izin verilmez.|  
+|fdexEnumAll|İstekleri nesne tüm öğeleri sıralar. Nesne, herhangi bir öğe kümesini listeleme izin verilmez.|  
   
  `id`  
- Geçerli üye tanımlar. Getnextdispıd bunu sonra listedeki öğe alır. Bu tanımlayıcı elde etmek için Getdispıd veya önceki bir Getnextdispıd çağrısı kullanır. İlk öğesinin ilk tanımlayıcısını elde etmek için DISPID_STARTENUM değeri kullanır.  
+ Geçerli üye tanımlar. Getnextdispıd numaralandırma sonra bu öğeyi alır. Getdispıd veya önceki bir çağrı Getnextdispıd bu tanımlayıcıyı almak için kullanır. İlk öğenin ilk tanımlayıcısı DISPID_STARTENUM değerini kullanır.  
   
  `pid`  
- Numaralandırmada sonraki öğe tanımlayıcı alan DISPID değişkenin adresini.  
+ Adresi bir DISPID değişkenin numaralandırmada sonraki öğeye tanımlayıcısını alır.  
   
- Bir üyesi tarafından silinirse `DeleteMemberByName` veya `DeleteMemberByDispID`, `DISPID` için geçerli kalır gerekiyor `GetNextDispID`.  
+ Bir üye tarafından silinirse `DeleteMemberByName` veya `DeleteMemberByDispID`, `DISPID` için geçerli kalır gerekiyor `GetNextDispID`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -61,11 +61,11 @@ HRESULT GetNextDispID(
 |||  
 |-|-|  
 |`S_OK`|Başarılı.|  
-|`S_FALSE`|Numaralandırma yapılır.|  
+|`S_FALSE`|Sabit listesi bitti.|  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

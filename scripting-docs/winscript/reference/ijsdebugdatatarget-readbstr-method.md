@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85fbdb556b59c67610ad65b7e1f056399ad6da58
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afd216c869cd88a643f68f0abd1fc095a675e24b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794615"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095803"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR Yöntemi
-BSTR hata ayıklama hedefi okur.  
+Hata ayıklama hedefinden bir BSTR okur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ReadBSTR(  
    UINT64 address,  
    BSTR *pString  
@@ -40,15 +40,15 @@ HRESULT ReadBSTR(
  [in] Okunacak adresi.  
   
  `pString`  
- [out] BSTR hata ayıklama hedefi okuyun.  
+ [out] Hata ayıklama hedefinden bir BSTR okur.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="remarks"></a>Açıklamalar  
- Adres geçerli değilse E_JsDEBUG_INVALID_MEMORY_ADDRESS döndürür.  
+ Adres geçerli değilse, e_jsdebug_ınvalıd_memory_address döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** jscript9diag.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ijsdebugdatatarget arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)
+ [IJsDebugDataTarget Arabirimi](../../winscript/reference/ijsdebugdatatarget-interface.md)

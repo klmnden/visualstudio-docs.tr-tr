@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796412"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097818"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID Sabitleri
 İş parçacığı türünü belirtmek için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
@@ -39,8 +39,8 @@ typedef DWORD SCRIPTTHREADID;
 |Sabit|Değer|Açıklama|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Şu anda yürütülen iş parçacığı.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Temel iş parçacığı; diğer bir deyişle, komut dosyası altyapısını iş parçacığı örneğinin başlatılmasından.|  
-|SCRIPTTHREADID_ALL|0xFFFFFFFF|Tüm iş parçacıklarının.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Temel; iş parçacığı diğer bir deyişle, iş parçacığı, komut dosyası altyapısı örneği.|  
+|SCRIPTTHREADID_ALL|0xFFFFFFFF|Tüm iş parçacıkları.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `SCRIPTTHREADID` Türü tarafından kullanılan `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, ve `IActiveScript::InterruptScriptThread`, ancak sabitler tarafından yalnızca kullanılabilir `IActiveScript::GetScriptThreadState` ve `IActiveScript::InterruptScriptThread`.  

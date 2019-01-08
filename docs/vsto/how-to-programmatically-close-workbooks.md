@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kapatma'
+title: 'Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kapatma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, closing
 - Excel [Office development in Visual Studio], closing workbooks
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0e9cb0402894bc09ff287db1ee42001ee005678
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f188af2ae96cf8622f3614da493891e3dbabe4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893201"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093151"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kapatma
+# <a name="how-to-programmatically-close-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kapatma
   Etkin çalışma kitabının kapatabilir veya kapatmak için bir çalışma kitabı belirtebilirsiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

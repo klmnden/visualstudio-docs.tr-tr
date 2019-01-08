@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3eb78f96d2621eac3794ba5c7c017590a775bd8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3ff45733723395dc80d85c6c3242f24ba1474060
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794660"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088926"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
-İş parçacığı Olay Oluştur işler.  
+Bir oluşturma iş parçacığı olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnCreateThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -41,14 +41,14 @@ HRESULT OnCreateThread(
  [in] Yeni oluşturulan iş parçacığı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem oluşturma iş parçacığı olayını işler.  
+ Bu yöntem, oluşturma iş parçacığı olayını işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationevents arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md)
+ [IRemoteDebugApplicationEvents Arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md)

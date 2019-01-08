@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 548b26be48766fa4eb6c6eba16ae3bca2847a322
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7a01d6df1281a32fee435c80465f148fcc7436a3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794873"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096427"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
-Karşılık gelen bir metin döndüren `IScriptEntry` betik bloğu ya da bulunan kaynak koduna `IScriptScriptlet` olay işleyicisi.  
+Karşılık gelen metni döndürür `IScriptEntry` betik bloğu ya da yer alan kaynak kodu `IScriptScriptlet` olay işleyicisi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetText(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstr`  
- [out] Metin `IScriptEntry` betik bloğu ya da bulunan kaynak koduna `IScriptScriptlet` olay işleyicisi.  
+ [out] Metinde `IScriptEntry` betik bloğu ya da yer alan kaynak kodu `IScriptScriptlet` olay işleyicisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -50,4 +50,4 @@ HRESULT GetText(
 ## <a name="remarks"></a>Açıklamalar  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

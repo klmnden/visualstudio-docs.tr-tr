@@ -16,26 +16,26 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b20b5410af7e48f1b9dadb937e794c1941e74df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 45ded6caec95f5421328be09e299af535765a9c2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793556"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086794"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Komut dosyası altyapısı tetiklemelidir olay türlerini belirtir 4 baytlık bir bit maskesi ayarlar.  
+Komut dosyası altyapısı tetiklemelidir olay türlerini belirten bir 4 baytlık bit maskesi ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-RESULT SetProfilerEventMask(  
+```cpp
+HRESULT SetProfilerEventMask(  
     [in] DWORD dwEventMask);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
  `dwEventMask`  
- [in] Olay türlerini belirtir 4-bayt bit maskesi. BITS tanımlanan [profıler_event_mask numaralandırması](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Olay türlerini belirten bir 4 baytlık bit maskesi. BITS tanımlanan [profıler_event_mask numaralandırması](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  HRESULT döndürür. Olası değerler aşağıdaki gibidir:  
@@ -46,4 +46,4 @@ RESULT SetProfilerEventMask(
 |`ACTIVPROF_E_PROFILER_ABSENT`|Profil oluşturma etkin değil.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptprofilercontrol arabirimi](../../winscript/reference/iactivescriptprofilercontrol-interface.md)
+ [IActiveScriptProfilerControl Arabirimi](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

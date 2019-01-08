@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793718"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095400"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 Standart komut dosyası istatistikleri döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -40,20 +40,20 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>Parametreler  
  `stid`  
- [in] Döndürülecek istatistiği belirtir. Değer olmalıdır:  
+ [in] Döndürülecek istatistik belirtir. Değeri olmalıdır:  
   
 |Sabit|Değer|Açıklama|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1.|Betiği veya istatistikleri sıfırlandı beri yürütülen deyimleri sayısını döndürür.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1.|Betik çalışmaya veya istatistikleri sıfırlandı yürütülen deyimleri sayısını döndürür.|  
   
  `pluHi`  
- [out] İstatistiğin temsil eden bir 64-bit işaretsiz tamsayıyı yüksek 32 bit.  
+ [out] İstatistik temsil eden bir 64-bit işaretsiz tamsayıyı yüksek 32 bit.  
   
  `pluLo`  
- [out] İstatistiğin temsil eden bir 64-bit işaretsiz tamsayıyı düşük 32 bit.  
+ [out] İstatistik temsil eden bir 64-bit işaretsiz tamsayıyı düşük 32 bit.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler dahil, ancak aşağıdaki tabloda değerleri için sınırlı değildir.  
+ Yöntem döndürür bir `HRESULT`. Olası değerler içerir, ancak aşağıdaki tablodaki değerlerle sınırlı değildir.  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -64,4 +64,4 @@ HRESULT GetStat(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
- [Iactivescriptstats arabirimi](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats Arabirimi](../../winscript/reference/iactivescriptstats-interface.md)

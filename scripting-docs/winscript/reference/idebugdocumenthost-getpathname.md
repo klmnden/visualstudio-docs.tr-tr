@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42fffa160a1f5b55dc9ba0287c2fdf3073e27e0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c33844ade2367ffeb7690306a5febbabde2f016
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794156"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096037"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
-Belgenin kaynak dosyasının tam yolunu ve dosya adını döndürür.  
+Belgenin kaynak dosyasının tam yolu ve dosya adını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -39,21 +39,21 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Parametreler  
  `pbstrLongName`  
- [out] Uzun adını içeren dize.  
+ [out] Uzun adı içeren bir dize.  
   
  `pfIsOriginalFile`  
- [out] Bir bayrak diğer bir deyişle kullanılıyorsa `pbstrLongName` Aksi halde false belge için özgün dosya başvuruyor.  
+ [out] Bayrak true ise diğer bir deyişle `pbstrLongName` Aksi takdirde false belgesi için özgün dosyaya başvuruyor.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_FAIL`|Herhangi bir kaynak dosyası oluşturulan veya belirledi.|  
+|`E_FAIL`|Hiçbir kaynak dosya oluşturulduğunda veya belirler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belgenin kaynak dosyasının tam yolunu ve dosya adı döndürür.  
+ Bu yöntem, belgenin kaynak dosyasının tam yolu ve dosya adını döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugdocumenthost arabirimi](../../winscript/reference/idebugdocumenthost-interface.md)
+ [IDebugDocumentHost Arabirimi](../../winscript/reference/idebugdocumenthost-interface.md)

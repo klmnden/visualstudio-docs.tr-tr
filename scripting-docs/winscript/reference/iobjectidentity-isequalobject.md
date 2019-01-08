@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52e386055e458568f8d4076a37489b7b2397f399
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fa233e478c83b723b13d19d27dc4b63ee4700bb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794735"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095062"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
 Bir nesne geçerli nesneye eşit olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT IsEqualObject(  
   IUnknown*punk  
 );  
@@ -38,18 +38,18 @@ HRESULT IsEqualObject(
   
 #### <a name="parameters"></a>Parametreler  
  `punk`  
- [in] Geçerli nesneyle Karşılaştırılacak nesne adresi.  
+ [in] Adresi geçerli nesneyle Karşılaştırılacak nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
-|`S_OK`|Nesneleri eşit.|  
-|`S_FALSE`|Nesneleri eşit değildir.|  
+|`S_OK`|Nesneler eşit olur.|  
+|`S_FALSE`|Nesneler eşit değildir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Uygulaması `IsEqualObject` yöntemi döndürmelidir `S_OK` nesneleri yalnızca özdeş ise.  
+ Uygulanışı `IsEqualObject` yöntemi döndürmelidir `S_OK` yalnızca nesnenin aynı olup olmadığını.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iobjectıdentity arabirimi](../../winscript/reference/iobjectidentity-interface.md)
+ [IObjectIdentity Arabirimi](../../winscript/reference/iobjectidentity-interface.md)

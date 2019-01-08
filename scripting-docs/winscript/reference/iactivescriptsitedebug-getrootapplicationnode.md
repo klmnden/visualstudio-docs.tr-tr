@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abcb7c307513e513f3ba4d3a64d34f1e07e60d74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c837d5ee2e8b75bfe7603370d61385a67080cc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793514"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088523"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Hangi komut dosyası altında belgeleri eklenmelidir uygulama düğümünü alır.  
+Altında hangi betiği belgelerin eklenmesi gereken uygulama düğümünü alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetRootApplicationNode(  
    IDebugApplicationNode**  ppdanRoot  
 );  
@@ -41,7 +41,7 @@ HRESULT GetRootApplicationNode(
  [out] Betik belgelerini tutan hata ayıklama uygulama düğümü. Olabilir `NULL`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT GetRootApplicationNode(
  Bu yöntem, betik belgelerini altında eklenmesi gereken uygulama düğümü döndürür. Yöntem döndürebilir `NULL` için `ppdanRoot` betik belgelerini en üst düzey gerekiyorsa.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsitedebug arabirimi](../../winscript/reference/iactivescriptsitedebug-interface.md)
+ [IActiveScriptSiteDebug Arabirimi](../../winscript/reference/iactivescriptsitedebug-interface.md)

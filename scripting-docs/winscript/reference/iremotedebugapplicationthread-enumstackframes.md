@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20abe2c10a0959f00e67d98ac405b74c35a0c032
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794858"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093283"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-Bu iş parçacığı ile ilişkili yığın çerçeveleri için bir numaralandırıcı döndürür.  
+Bu iş parçacığıyla ilişkilendirilmiş yığın çerçevesi için bir numaralandırıcı döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Parametreler  
  `ppedsf`  
- [out] Bu iş parçacığı ile ilişkili yığın çerçeveleri için bir numaralandırıcı.  
+ [out] Bu iş parçacığıyla ilişkilendirilmiş yığın çerçevesi için bir numaralandırıcı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem bir kesme noktası içinde çağrılmalıdır. Yığın çerçevesi Numaralandırıcı yığınının üstten başlayarak çerçeveleri ile en son basılmış çerçeve başlangıç döndürmelidir.  
+ Bu yöntem içinde bir kesme noktası çağrılmalıdır. Yığın çerçeve Numaralandırıcı, en yakın zamanda gönderilen çerçeve ile başlayan yığınının üstten başlayarak çerçeveleri döndürmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iremotedebugapplicationthread arabirimi](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+ [IRemoteDebugApplicationThread Arabirimi](../../winscript/reference/iremotedebugapplicationthread-interface.md)

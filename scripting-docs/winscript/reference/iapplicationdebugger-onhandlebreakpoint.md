@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3be067d3b8c3e3268ac2caf1614b70efff6f665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ebcb24b437b2c77f0dc76f5e753974c8dd299d17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793739"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090577"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
-Kesme noktası olayını işler.  
+Bir kesme noktası olayını işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT onHandleBreakPoint(  
    IRemoteDebugApplicationThread*  prpt,  
    BREAKREASON                     br,  
@@ -46,22 +46,22 @@ HRESULT onHandleBreakPoint(
  [in] Kesme noktası nedeni.  
   
  `pError`  
- [in] Çalışma zamanı hata bilgileri, sağlanan değeri `br` BREAKREASON_ERROR değil.  
+ [in] Çalışma zamanı hata bilgisi, sağlanan değerini `br` BREAKREASON_ERROR olduğu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir kesme noktası isabet olduğunda çağrılır ve `IDebugApplication::HandleBreakPoint` olarak adlandırılır.  
+ Bu yöntem, bir kesme noktası isabet edildiğinde çağrılır ve `IDebugApplication::HandleBreakPoint` çağrılır.  
   
- Hata ayıklayıcı IDE çağırır kadar uygulama askıya alınmış kalacak `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ IDE hata ayıklayıcı çağırır kadar uygulama askıda kalacak `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iapplicationdebugger arabirimi](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
  [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
- [BREAKREASON numaralandırması](../../winscript/reference/breakreason-enumeration.md)
+ [BREAKREASON Sabit Listesi](../../winscript/reference/breakreason-enumeration.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab58a36110c0f0321bbf490a105bff9cddad009
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fb547e1032be03a6b1e79894dafda7442796592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794213"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090837"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
 Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugApplicationNodes**  pperddp  
 );  
@@ -38,10 +38,10 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parametreler  
  `pperddp`  
- [out] Döndürür `IEnumDebugApplicationNodes` Numaralandırıcı kopyanın arabirimi.  
+ [out] Döndürür `IEnumDebugApplicationNodes` Numaralandırıcı kopya arabirimi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT Clone(
  Bu yöntem, geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumdebugapplicationnodes arabirimi](../../winscript/reference/ienumdebugapplicationnodes-interface.md)
+ [IEnumDebugApplicationNodes Arabirimi](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

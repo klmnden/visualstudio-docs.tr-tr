@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791d6a3a237c36c123aea662dc4bb933b97d35d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793946"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093892"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
-Genel ifade içerik sağlayıcı bu uygulamadan kaldırır.  
+Genel ifade bağlam sağlayıcı bu uygulamadan kaldırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT RemoveGlobalExpressionContextProvider(  
    DWORD_PTR  dwCookie  
 );  
@@ -41,15 +41,15 @@ HRESULT RemoveGlobalExpressionContextProvider(
  [in] Tarafından döndürülen tanımlama bilgisi `AddGlobalExpressionContextProvider` genel bağlam sağlayıcısına eklendiğinde yöntemi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `RemoveGlobalExpressionContextProvider` Yöntemi, bu uygulamadan genel ifade bağlam sağlayıcısına kaldırır.  
+ `RemoveGlobalExpressionContextProvider` Yöntemi genel ifade içeriği sağlayıcısı bu uygulamadan kaldırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
- [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)
+ [IDebugApplication Arabirimi](../../winscript/reference/idebugapplication-interface.md)

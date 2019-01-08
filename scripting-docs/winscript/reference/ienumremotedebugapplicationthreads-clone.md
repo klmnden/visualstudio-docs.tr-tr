@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9c0d745d2404df72961a28c9bc29059b7c2ac57
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e64a83b9cf5184e8a7dfe45cc33b698e5bbdd4f6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794303"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091700"
 ---
 # <a name="ienumremotedebugapplicationthreadsclone"></a>IEnumRemoteDebugApplicationThreads::Clone
 Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -38,10 +38,10 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parametreler  
  `pperdat`  
- [out] Döndürür `IEnumRemoteDebugApplicationThreads` Numaralandırıcı kopyanın arabirimi.  
+ [out] Döndürür `IEnumRemoteDebugApplicationThreads` Numaralandırıcı kopya arabirimi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT Clone(
  Bu yöntem, geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ienumremotedebugapplicationthreads arabirimi](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)
+ [IEnumRemoteDebugApplicationThreads Arabirimi](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

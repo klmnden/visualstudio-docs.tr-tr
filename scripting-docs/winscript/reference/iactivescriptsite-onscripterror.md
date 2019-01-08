@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ae066fe7fa04a5c97dec618c65ccee3f90984a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d2c9cb95615ad0b978cc7fd9943b687e5a7f3cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793484"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088419"
 ---
 # <a name="iactivescriptsiteonscripterror"></a>IActiveScriptSite::OnScriptError
-Ana bilgisayara altyapı komut dosyası çalıştırılırken bir yürütme hatası oluştu bildirir.  
+Ana bilgisayara altyapısı betik çalıştırılırken bir yürütme hatası oluştu bildirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT OnScriptError(  
     IActiveScriptError *pase  // address of error interface  
 );  
@@ -38,10 +38,10 @@ HRESULT OnScriptError(
   
 #### <a name="parameters"></a>Parametreler  
  `pase`  
- [in] Hata nesnesinin adresini [Iactivescripterror](../../winscript/reference/iactivescripterror.md) arabirimi. Bir konak, yürütme hatası hakkında bilgi edinmek için bu arabirimi kullanabilirsiniz.  
+ [in] Hata nesnenin adresini [Iactivescripterror](../../winscript/reference/iactivescripterror.md) arabirimi. Bir konak, yürütme hatası hakkında bilgi edinmek için bu arabirimi kullanabilirsiniz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK` hata doğru işlendiğini ya da bir OLE tanımlanan hata kodu Aksi takdirde.  
+ Döndürür `S_OK` hata doğru işlenmiş ya da OLE tanımlı hata kodu Aksi takdirde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptsite](../../winscript/reference/iactivescriptsite.md)
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

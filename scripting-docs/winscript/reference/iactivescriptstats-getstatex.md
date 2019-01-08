@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 824546b64323f7fb88c4ec016f8420169afa665c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793652"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097337"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
-Bir özel betik istatistik döndürür.  
+Özel betik istatistiği döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -40,16 +40,16 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>Parametreler  
  `guid`  
- [in] Döndürülecek istatistiği belirtir. Semantiğini belirli bir istatistiği karşılık gelen GUID tamamen tanımlanan altyapısıdır.  
+ [in] Döndürülecek istatistik belirtir. Semantiği istatistik karşılık gelen belirli bir GUID tamamen tanımlanan altyapısıdır.  
   
  `pluHi`  
- [out] İstatistiğin temsil eden bir 64-bit işaretsiz tamsayıyı yüksek 32 bit.  
+ [out] İstatistik temsil eden bir 64-bit işaretsiz tamsayıyı yüksek 32 bit.  
   
  `pluLo`  
- [out] İstatistiğin temsil eden bir 64-bit işaretsiz tamsayıyı düşük 32 bit.  
+ [out] İstatistik temsil eden bir 64-bit işaretsiz tamsayıyı düşük 32 bit.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
@@ -57,11 +57,11 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|Yöntem uygulanmadı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem istatistikleri özel bir ana bilgisayara anlamlı döndürmek bir özel komut dosyası altyapısı sağlar.  
+ Bu yöntem için özel bir ana bilgisayar istatistikleri anlamlı döndürmek bir özel betik altyapısı sağlar.  
   
 > [!NOTE]
->  Bu metot şu anda uygulanmadı.  
+>  Bu yöntem henüz uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
- [Iactivescriptstats arabirimi](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats Arabirimi](../../winscript/reference/iactivescriptstats-interface.md)

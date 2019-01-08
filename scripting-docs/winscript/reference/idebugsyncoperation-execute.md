@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69e07c646bfa176f5e2dc07539f301a8ef5c5273
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8c10973bddef45321b9942afef05a696010433f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794240"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090226"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-Zaman uyumlu olarak işlemi gerçekleştirir ve döndürür.  
+Zaman uyumlu işlem gerçekleştirir ve döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Execute(  
    IUnknown**  ppunkResult  
 );  
@@ -41,15 +41,15 @@ HRESULT Execute(
  [out] İşlem tarafından döndürülen nesne parametresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
-|`E_ABORT`|İşlem çağırarak durduruldu `IDebugSyncOperation::InProgressAbort` yöntemi.|  
+|`E_ABORT`|Çağırarak işlemi iptal edildi `IDebugSyncOperation::InProgressAbort` yöntemi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İşlem Hata Ayıklama Yöneticisi'nde hedef iş parçacığı çağrıları `Execute` yöntemi zaman uyumlu olarak.  
+ İşlem Hata Ayıklama Yöneticisi'nde hedef iş parçacığı çağrı `Execute` yöntem zaman uyumlu olarak.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugsyncoperation arabirimi](../../winscript/reference/idebugsyncoperation-interface.md)
+ [IDebugSyncOperation Arabirimi](../../winscript/reference/idebugsyncoperation-interface.md)

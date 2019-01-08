@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 062f069bb6a19c24f26a6a0bc6a9f4de2292d88f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245b5806006ad94740e09e23f881e26e071a3bc1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794951"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092735"
 ---
 # <a name="iscriptentrygetsignature"></a>IScriptEntry::GetSignature
 Döndürür tür bilgilerini için bir `IScriptEntry` işlev nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetSignature(  
    ITypeInfo          **ppti  
    ULONG              *piMethod  
@@ -39,10 +39,10 @@ HRESULT GetSignature(
   
 #### <a name="parameters"></a>Parametreler  
  `ppti`  
- [out] Tür bilgilerini bu ile ilişkili `IScriptEntry` işlev nesnesi.  
+ [out] Tür bilgilerini bununla ilişkili `IScriptEntry` işlev nesnesi.  
   
  `piMethod`  
- [out] Yöntem dizinde `ITypeInfo` nesnesi.  
+ [out] Yöntemi dizin `ITypeInfo` nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
@@ -52,7 +52,7 @@ HRESULT GetSignature(
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tür bilgileri kullanarak ayarlamak [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) veya [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Tür bilgilerini de iç işlev gösterimi göre giriş tarafından oluşturulabilir.  
+ Tür bilgilerini kullanarak ayarlamak [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) veya [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Tür bilgileri, iç işlev gösterimi göre giriş tarafından da oluşturulabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)
+ [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)

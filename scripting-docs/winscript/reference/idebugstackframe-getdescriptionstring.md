@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdc77aa2ef2f9d7c95b0b82d5195a6a73524f055
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1f6479485a508f71797d6965f71edd3253927088
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794966"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097233"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Yığın çerçevesi kısa veya uzun metinsel açıklaması döndürür.  
+Yığın çerçevesinin kısa veya uzun metin açıklamasını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetDescriptionString(  
    BOOL   fLong,  
    BSTR*  pbstrDescription  
@@ -39,20 +39,20 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>Parametreler  
  `fLong`  
- [in] Bayrak, burada `TRUE` uzun açıklama döndürür ve `FALSE` kısa bir açıklaması döndürür.  
+ [in] Bayrağı, burada `TRUE` uzun açıklamasını döndürür ve `FALSE` kısa açıklamasını döndürür.  
   
  `pbstrDescription`  
- [out] Yığın çerçevesi açıklaması.  
+ [out] Yığın çerçevesinin açıklaması.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genellikle, `fLong` olan `FALSE`, bu yöntem yalnızca yığın çerçevesi ile ilişkili işlevi adı sağlar. Zaman `fLong` olan `TRUE`, bu yöntem işlev parametrelerini ve diğer ilgili bilgileri de sağlayabilir.  
+ Genellikle, `fLong` olduğu `FALSE`, bu yöntem yalnızca yığın çerçevesiyle ilgili işlevin adını sağlar. Zaman `fLong` olduğu `TRUE`, bu yöntem işlev parametrelerini ve diğer ilgili bilgileri de sağlayabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugstackframe arabirimi](../../winscript/reference/idebugstackframe-interface.md)
+ [IDebugStackFrame Arabirimi](../../winscript/reference/idebugstackframe-interface.md)

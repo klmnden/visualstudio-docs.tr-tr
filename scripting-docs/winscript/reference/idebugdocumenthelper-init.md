@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45cd57e4ba9e86bf84f927f487c637d61aa5339b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d4bcb64b7bbb1c61e7f031d872f7d1440fd17833
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794051"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086638"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-`Init` Yöntemi bir hata ayıklama belge yardımcı bir ad ve başlangıç özniteliklerini ile başlatır.  
+`Init` Yöntemi hata ayıklama belge yardımcı bir ad ve ilk öznitelikleri ile başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT Init(  
    IDebugApplication*  pda,  
    LPCOLESTR           pszShortName,  
@@ -41,30 +41,30 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Parametreler  
  `pda`  
- [in] Bu belgeyle ilgili hata ayıklama uygulama.  
+ [in] Bu belgeyle ilişkili hata ayıklama uygulama.  
   
  `pszShortName`  
- [in] Belgenin kısa adını içeren null ile sonlandırılmış bir dize.  
+ [in] Belge kısa adını içeren null ile sonlandırılmış bir dize.  
   
  `pszLongName`  
- [in] Belgenin uzun adını içeren null ile sonlandırılmış bir dize.  
+ [in] Belge uzun adını içeren null ile sonlandırılmış bir dize.  
   
  `docAttr`  
- [in] Metin belgesi özniteliklerini belirtir.  
+ [in] Metin belgesi öznitelikleri belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir ad ve başlangıç özniteliklerini ile hata ayıklama belge yardımcıyı başlatır.  
+ Bu yöntem, hata ayıklama belge yardımcı bir ad ve ilk öznitelikleri ile başlatır.  
   
- Bu belge ağacında kadar görünmez `IDebugDocumentHelper::Attach` olarak adlandırılır.  
+ Bu belge ağacında kadar görünmüyor `IDebugDocumentHelper::Attach` çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [TEXT_DOC_ATTR sabitleri](../../winscript/reference/text-doc-attr-constants.md)
+ [TEXT_DOC_ATTR Sabitleri](../../winscript/reference/text-doc-attr-constants.md)
