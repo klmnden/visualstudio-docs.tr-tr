@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875647"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154382"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
@@ -91,7 +91,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 #### <a name="statistical-significance"></a>İstatistiksel önemi  
  Yüksek uygunluğa sahip çeşitlemeleri işleme için dikkat getirmek için çerçeve analizi istatistiksel önemi, her işleme değişken belirler ve önemli olanları kalın olarak görüntüler. Yeşil olarak performansı olanları ve kırmızı olarak performansı düşürebilir olanları gösterir. Bu, normal türü olarak istatistiksel olmayan sonuçlar görüntüler.  
   
- ![Çizim çağrısı değişkeni istatistiksel relevence](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![İstatistiksel ilgi düzeyine ilişkin çizim çağrısı değişken](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Çerçeve analizi istatistiksel uygunluğu belirlemek için kullandığı [öğrencinin t-test](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   

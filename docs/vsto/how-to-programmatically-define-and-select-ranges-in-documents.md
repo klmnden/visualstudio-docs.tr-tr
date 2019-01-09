@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin'
+title: 'Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - sentences, selecting in documents
 - ranges, selecting in documents
 - ranges, defining in documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6922613c7a1493d5b40b807166281ae11eb04d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2955dcf0b205293fc31de65f159b51ece9c22ad9
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835506"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154482"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Nasıl Yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin
   Kullanarak Microsoft Office Word belgesindeki bir aralığın tanımlayabilirsiniz bir <xref:Microsoft.Office.Interop.Word.Range> nesne. Kullanarak, örneğin, bir çeşitli yollarla, tüm belgede seçebilirsiniz <xref:Microsoft.Office.Interop.Word.Range.Select%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Range> içerik özelliğini kullanarak veya nesne <xref:Microsoft.Office.Tools.Word.Document> sınıfta (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Document> sınıfı (içinde bir VSTO eklenti).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ddbc8a221cd883c3f30a583a1c1f03430c5f00ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3179dbff2e39865a706cb1e5a89c8a112de06d2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825509"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154075"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Projeleri Visual Studio için Azure Araçları'nın güncel sürümüne yükseltme
 ## <a name="overview"></a>Genel Bakış
@@ -24,7 +24,7 @@ Azure Araçları (veya 1.6 yeni bir önceki sürüm)'in geçerli sürümünü y�
 ## <a name="how-your-project-changes-when-you-upgrade-it"></a>Bu yükseltme yaptığınızda, projenizin nasıl değiştiğini
 Yükseltmek istediğinizi belirtin veya bir proje otomatik olarak yükseltilir, projeniz belirli bütünleştirilmiş kodların geçerli sürümleri ile çalışacak şekilde değiştirilir ve bu bölümde açıklandığı gibi bazı özellikler de değiştirilir. Projenizi Araçları'nın daha yeni sürümü ile uyumlu olacak şekilde başka değişiklikler gerektiriyorsa, bu değişiklikleri el ile yapmalısınız.
 
-* Web.config dosyası web rolleri ve çalışan rolleri için app.config dosyasında Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitoirTraceListener.dll daha yeni sürümü başvurmak için güncelleştirilmiştir.
+* Web.config dosyası web rolleri ve çalışan rolleri için app.config dosyasında Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll daha yeni sürümü başvurmak için güncelleştirilmiştir.
 * Microsoft.WindowsAzure.StorageClient.dll Microsoft.WindowsAzure.Diagnostics.dll ve Microsoft.WindowsAzure.ServiceRuntime.dll derlemeleri yeni sürümleriyle yükseltilir.
 * Azure projesi (.ccproj) dosyasında depolanan yayımlama profillerine taşınmıştır uzantısı .azurePubXml ile ayrı bir dosya içinde **Yayımla** alt.
 * Yayımlama profili bazı özellikleri, yeni ve değiştirilmiş özellikler destekleyecek şekilde güncelleştirilir. **AllowUpgrade** değiştirilir **DeploymentReplacementMethod** olduğundan, dağıtılmış bir bulut hizmetinde aynı anda veya artımlı olarak güncelleştirebilirsiniz.

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904190"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154069"
 ---
 # <a name="manage-external-tools"></a>Dış araçları yönetme
 
@@ -65,8 +65,8 @@ Dış bir araç tanımlarken kullanılabilir değişkenlerin tam listesi verilmi
 |Hedef Adı|$(TargetName)|Oluşturulacak öğe dosya adı.|
 |Hedef uzantısı|$(TargetExt)|Oluşturulacak öğesinin dosya adı uzantısı.|
 |İkili dizin|$(BinDir)|Oluşturulmakta olan ikili (sürücü + yolu tanımlanan) son konum.|
-|Proje dizini|$(ProjDir)|Geçerli proje (sürücü + yolu) dizini.|
-|Proje dosyası adı|$(ProjFileName)|Geçerli projenin dosya adını (sürücü yolu + dosya adı).|
+|Proje dizini|$(ProjectDir)|Geçerli proje (sürücü + yolu) dizini.|
+|Proje dosyası adı|$(ProjectFileName)|Geçerli projenin dosya adını (sürücü yolu + dosya adı).|
 |Çözüm dizini|$(SolutionDir)|Geçerli çözüme (sürücü + yolu) dizini.|
 |Çözüm dosyası adı|$(SolutionFileName)|Geçerli çözümün dosya adını (sürücü yolu + dosya adı).|
 

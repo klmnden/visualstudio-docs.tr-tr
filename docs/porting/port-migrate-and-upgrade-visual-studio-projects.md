@@ -1,5 +1,5 @@
 ---
-title: Taşıma, geçirme ve projelerini yükseltme
+title: Projeleri taşıma, geçirme ve yükseltme
 description: Visual Studio ve Visual Studio'nın bir projeyi geçirmek gerektiğinde nasıl karar verir, önceki sürümlerinde oluşturulmuş projeleri Visual Studio 2017'de desteklemeye yönelik bir başvuru.
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c1ceaf0fc805ce9fb2b284de203bfde6f418a4a1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
-ms.translationtype: HT
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220846"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "53067067"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -62,13 +62,13 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | SharePoint 2010 | SharePoint çözüm proje ile Visual Studio 2017 açıldığında, SharePoint 2013 veya SharePoint 2016 için yükseltilir. ".NET masaüstü geliştirme" iş yükü yükseltme için Visual Studio 2017'de yüklü olması gerekir.<br/><br/>SharePoint projeleri yükseltme hakkında daha fazla bilgi için bkz. [SharePoint 2013'e yükseltme](https://technet.microsoft.com/library/cc303420.aspx), [güncelleştirme iş akışını SharePoint Server 2013'te](https://technet.microsoft.com/library/dn133867.aspx), ve [SharePoint Server 2016 grubu oluşturma veritabanı için yükseltme ekleme](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | Office geliştirici araçları Önizleme 2'de oluşturulan SharePoint eklentisi projeleri, Visual Studio 2017'de açılamaz. Bu sınırlara yakın çalışmak için güncelleştirme `MinimumVisualStudioVersion` 12.0 için ve `MinimumOfficeToolsVersion` csproj vbproj dosyasında 12.2 için. |
 | Silverlight | Silverlight projeleri Visual Studio 2017'de desteklenmez. Silverlight uygulamalarını korumak için Visual Studio 2015 kullanmaya devam edin. |
-| SQL Server Raporlama Hizmetleri ve SQL Server Analysis Services (SSRS, SSDT, SSAS, MSA'lar) | Desteği bu proje türleri için sağlanan iki uzantılar Visual Studio Galerisi aracılığıyla: [Microsoft Analysis Services modelleme projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) ve [Microsoft Reporting Services projeler](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT'yi destek veri depolama ve işleme iş yüküyle Visual Studio 2017'de de dahildir. |
+| SQL Server Raporlama Hizmetleri ve SQL Server Analysis Services (SSRS, SSDT, SSAS, MSA'lar) | Bu proje türleri için destek, iki uzantılar Visual Studio Galerisi aracılığıyla sağlanır:  [Microsoft Analysis Services modelleme projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) ve [Microsoft Reporting Services projeler](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT'yi destek veri depolama ve işleme iş yüküyle Visual Studio 2017'de de dahildir. |
 | SQL Server Integration Services (SSIS) | Visual Studio 2017 desteği, SQL Server veri Araçları (SSDT) aracılığıyla kullanılabilir. Daha fazla bilgi için [SQL Server Integration Services blogu](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Visual Studio 2017, Visual Studio 2010 için geri Visual Studio'nun önceki sürümlerinde oluşturulmuş projeleri çalışmaya kullanabilirsiniz. Projeyi ilk kez açtığınızda, en son derleyici ve araç takımı yükseltmek veya özgün olanları kullanmaya devam etmek için seçeneğiniz vardır. Özgün olanları kullanmaya devam etmek seçtiğinizde, Visual Studio 2017 proje dosyasını değiştirmez ve projenizi oluşturmak için araç takımı'önceki Visual Studio yükleme kullanır. Özgün seçenekleri anlamına gelir tutma, hala proje Visual Studio özgün sürümünde gerekirse açabilirsiniz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](/cpp/porting/use-native-multi-targeting). |
-| Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
+| Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Laboratuvar Yönetimi | Microsoft Test Yöneticisi ya da Visual Studio 2010 SP1'i kullanabilirsiniz ve daha sonra herhangi bir bu sürümüyle oluşturduğunuz ortamları açabilirsiniz. Ancak, ortamları oluşturmadan önce Microsoft Test Yöneticisi'nin sürümü Team Foundation Server sürümü için Visual Studio 2010 SP1 eşleşmelidir. |
 | Apache Cordova için Visual Studio Araçları | Projeleri Visual Studio 2017'de açılabilir ancak geriye dönük olarak uyumlu değildir. Visual Studio 2015'ten bir proje açıldığında, değişiklikler projenize izin istenir. Bu değişikliği yerine araç takımları kullanacak şekilde projeyi yükseltir bir `taco.json` Cordova kitaplığı, onun platformlar, kendi eklentiler ve düğüm/npm bağımlılıkları, sürüm oluşturmayı yönetmek için dosya. Bkz: [Geçiş Kılavuzu](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) daha fazla bilgi için. |
-| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2017'de eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri (MSDN bloglarında) ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2017'de eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
 | Windows Communication Foundation, Windows Workflow Foundation | Bu projeyi Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 ve Visual Studio 2012 açabilirsiniz |
 | Windows Presentation Foundation | Bu proje, Visual Studio 2013, Visual Studio 2012 ve Visual Studio 2010 SP1 içinde açabilirsiniz. |
 | Windows Store/telefon uygulamaları | Windows Store 8.1 ve 8.0 ve Windows Phone 8.1 ve 8.0 projeleri Visual Studio 2017'de desteklenmez. Bu uygulamaları korumak için Visual Studio 2015 kullanmaya devam edin. Windows Phone 7.x projelerini korumak için Visual Studio 2012 kullanın. |
@@ -95,7 +95,13 @@ Eski sürümlerinde oluşturulmuş projeleri maksimum uyumluluğu korumak için 
 
 El ile güncelleştirin veya bir proje için yeni bir geçiş denemelisiniz olup bu bağlamda soru doğal olarak ortaya `ToolsVersion` değeri. Bu tür bir değişikliğin yapılması gerekli değildir ve büyük olasılıkla çok sayıda hata ve yeniden oluşturmak için proje almak düzeltmek için gereken uyarılar üretir. Ayrıca, Visual Studio için belirli bir destek düşerse `ToolsVersion` gelecekte projeyi açarak project geçiş işlemi olduğundan, özellikle tetikleyecek `ToolsVersion` değer değiştirilmelidir. Böyle bir durumda, bu belirli proje türü için alt tam olarak değiştirilmesi için gerekenler bilir ve bu değişiklikleri otomatik olarak bu makalenin önceki bölümlerinde açıklandığı şekilde yapabilirsiniz.
 
+# <a name="next-steps"></a>Sonraki adımlar
+
 Daha fazla açıklama için şu makalelere göz atın:
 
 - [ToolsVersion Kılavuzu](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework Kılavuzu hedefleme](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Proje geçiş ve yükseltme reference for Visual Studio 2019 Önizleme](port-migrate-upgrade-visual-studio-projects-2019.md)

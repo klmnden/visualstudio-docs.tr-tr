@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232123"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154317"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang projesi özellikleri (Android C++)
 
@@ -60,14 +60,14 @@ Nesne dosyası adı | Varsayılan nesne dosyası adını geçersiz kılacak bir 
 Uyarı düzeyi | Nasıl katı derleyicinin kod hataları hakkında olmasını istediğinizi seçin.  Diğer bayraklar doğrudan ek seçenekler eklenmesi gerekir. (/ w, / weverything). | **Tüm uyarıları Kapat Kapat** -tüm Derleyici uyarılarını devre dışı bırakır.<br>**EnableAllWarnings** -varsayılan olarak devre dışı dahil olmak üzere tüm uyarıları etkinleştirir.<br>
 Uyarıları hata olarak değerlendir | Tüm Derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için tüm derlemelerde /WX kullanmak iyi bir çözüm olabilir; Tüm uyarıların çözümlenmesi, en az sayıda olası bulunur zor kod kusurlarını sağlayacaktır.
 Ayrıntılı modu etkinleştir | Ayrıntılı çıkış kullan ve çalıştırma komutları göster.
-En iyi duruma getirme | Uygulama için iyileştirme düzeyini belirtir. | **Özel** -özel iyileştirme.<br>**Devre dışı bırakılmış** -iyileştirme devre dışı bırakın.<br>**Boyutu en aza indir** -boyutu için İyileştir.<br>**Hızı en** -hız için İyileştir.<br>**Tam iyileştirme** -pahalı iyileştirmeler.<br>
+İyileştirme | Uygulama için iyileştirme düzeyini belirtir. | **Özel** -özel iyileştirme.<br>**Devre dışı bırakılmış** -iyileştirme devre dışı bırakın.<br>**Boyutu en aza indir** -boyutu için İyileştir.<br>**Hızı en** -hız için İyileştir.<br>**Tam iyileştirme** -pahalı iyileştirmeler.<br>
 Katı örtüşme | En katı örtüşme kurallarını varsayın.  Bir türde bir nesne hiçbir zaman farklı türde bir nesne olarak aynı adreste bulunan olduğu kabul edilir.
 Çerçeve işaretçisini atlama | Çağrı yığınında çerçeve işaretçilerinin oluşturulmasını engeller.
 C++ özel durumlarını etkinleştir | Derleyici tarafından kullanılması için özel durum işleme modelini belirtir. | **Hayır** -özel durum işleme devre dışı bırakın.<br>**Evet** -özel durum işlemeyi etkinleştirin.<br>**Tabloları Aç** - gerekli tüm statik verileri oluşturur, ancak oluşturulan kodu etkilemez.<br>
 İşlev düzeyi bağlamayı etkinleştir | Derleyicinin ayrı ayrı işlevleri paketlenmiş işlevler (Comdat'lar) biçiminde sağlar. Düzenleme için gereken ve çalışmaya devam edin.     (ffunction-sections).
 Veri düzeyi bağlamayı etkinleştir | Kullanılmayan verileri her veri öğesini ayrı bir bölümde çıkarma yoluyla kaldırarak yapılan bağlayıcı iyileştirmelerine sağlar.
 Gelişmiş sımd'yi(neon) etkinleştir | NEON kayan nokta donanımı için kod oluşturmayı etkinleştirir. Bu, yalnızca arm mimarisi için geçerlidir.
-Kayan nokta ABI'si | Kayan nokta ABI'sini seçmek için seçenek. | **Yazılım** -'Soft' neden içeren kitaplık çağrıları kayan nokta işlemleri için çıktı üretmek derleyici.<br>**SoftFP** - 'SoftFP', donanım kayan nokta yönergeleri kullanan kod oluşturulmasını sağlar, ancak yine soft-float çağırma kurallarını kullanır.<br>**Sabit** -kayan nokta yönergeleri ve kullanımları FPU'ya özgü çağırma kuralları oluşturma 'Sabit' oluşturulmasına izin verir.<br>
+Kayan nokta ABI'si | Kayan nokta ABI'sini seçmek için seçenek. | **Yazılım** -'Soft' neden içeren kitaplık çağrıları kayan nokta işlemleri için çıktı üretmek derleyici.<br>**SoftFP** - 'SoftFP', donanım kayan nokta yönergeleri kullanan kod oluşturulmasını sağlar, ancak yine soft-float çağırma kurallarını kullanır.<br>**Sabit** - 'Hard' kayan nokta yönergeleri nesil verir ve FPU'ya özgü çağırma kurallarını kullanır.<br>
 Güvenlik denetimi | Güvenlik denetimi, yığın arabelleği üst çalışır, bir ortak bir saldırı denemesi bir programın güvenlik algılamaya yardımcı olur. (fstack-protector). | **Güvenlik denetimini devre dışı bırak** -güvenlik denetimini devre dışı bırakın.<br>**Güvenlik denetimini etkinleştir** -güvenlik denetimini etkinleştir. (fstack-protector)<br>
 Konumdan bağımsız kod | Paylaşılan bir kitaplık kullanmak için konum bağımsız kod (PIC) oluştur.
 Kısa sabit listeleri kullan | Sabit listesi türünü kullanan yalnızca giriş muhtemel değerler kümesini gerektirdiği sayıda bayt.

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla özel klasör öğeleri oluşturma'
+title: 'Nasıl yapılır: Program aracılığıyla özel klasör öğeleri oluşturma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,18 @@ dev_langs:
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], creating
 - Outlook folders [Office development in Visual Studio], custom
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 2e02ad5e021323b2c673263dfbb35173d2372bdf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4500a8888f33440834584ceba1345e0ca78a998
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968290"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153889"
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>Nasıl Yapılır: Program aracılığıyla özel klasör öğeleri oluşturma
+# <a name="how-to-programmatically-create-custom-folder-items"></a>Nasıl yapılır: Program aracılığıyla özel klasör öğeleri oluşturma
   Bu örnek, Microsoft Office Outlook içinde yeni bir klasör oluşturur. Oturum açan kullanıcı adı, klasör adı olarak kullanılır.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  

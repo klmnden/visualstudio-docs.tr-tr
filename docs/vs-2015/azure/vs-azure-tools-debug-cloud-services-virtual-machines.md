@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 465bbd7c410617c0d8f55f60b086d6d46e139b4f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 481097a3b094f4ced4c6d7103e7513b9a3bc6e80
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064989"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154456"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama
 
@@ -40,7 +40,7 @@ Zamandan tasarruf edebilirsiniz ve Azure kullanarak para işlem bulut hizmetiniz
 
 3. Komutları üzerinde seçerek uygulama adımlayın **hata ayıklama** menü ve kodunuzda kesme noktaları ayarlama. Uygulama hata ayıklayıcı adım adım olarak bölmeleri uygulamanın geçerli durumuyla güncelleştirilir. Uygulama dağıtımı hata ayıklamayı durdurduğunuzda silinir. Uygulamanız bir web rolü içerir ve web tarayıcı başlatmak için başlatma eylemi özelliğini ayarladınız, Visual Studio web uygulamanızı tarayıcıda başlatır. Hizmet yapılandırmasının bir rolün örnekleri sayısını değiştirirseniz, bulut hizmetinizi durdurmak ve ardından bu yeni rol örneklerini ayıklayabilirsiniz, hata ayıklamayı yeniden başlatın.
 
-    **Not:** çalıştırılırken veya hata ayıklama hizmetinizi durdurduğunuzda, yerel işlem öykünücüsü ve depolama öykünücüsü durduruldu değildir. Bunları açıkça bildirim alanından durdurmanız gerekir.
+    **Not:** Çalıştırılırken veya hata ayıklama hizmetinizi durdurduğunuzda, depolama öykünücüsü ve yerel işlem öykünücüsü durduruldu değildir. Bunları açıkça bildirim alanından durdurmanız gerekir.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Azure bulut hizmetinde hata ayıklama
 
@@ -79,7 +79,7 @@ Bir bulut hizmeti için uzaktan hata ayıklama etkinleştirirseniz, performans g
 
     ![Kod türünü seç iletişim kutusu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Hata ayıklayıcının bağlı olduğu işlemleri tanımlamak için seçme hata ayıklama, Windows, işlemleri menü çubuğunda, işlemleri iletişim kutusunu açın. (Klavye: Ctrl + Alt + Z) Belirli bir işlem ayırmak için kısayol menüsünü açın ve ardından **ayırma işlemi**. Sistemlerde veya sunucu Gezgini'nde örneği düğümünü bulun, işlemi bulun, kısayol menüsünü açın ve ardından **ayırma işlemi**.
+4. Hata ayıklayıcının bağlı olduğu işlemleri tanımlamak için seçme hata ayıklama, Windows, işlemleri menü çubuğunda, işlemleri iletişim kutusunu açın. (Klavye: Ctrl + Alt + belirli bir işlemden ayrılma, kısayol menüsünü açın ve ardından Z) **ayırma işlemi**. Sistemlerde veya sunucu Gezgini'nde örneği düğümünü bulun, işlemi bulun, kısayol menüsünü açın ve ardından **ayırma işlemi**.
 
     ![Hata Ayıklama İşlemleri](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -146,7 +146,7 @@ Visual Studio ASP.NET projeleri uygulamayı test etmek için kullanabileceğiniz
 
     ![ASP.NET web projesi oluştur iletişim kutusu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Not:** Azure hesabınızda henüz oturum açmadıysanız oturum açmanız istenir.
+    **Not:** Henüz oturum açmadıysanız Azure hesabınızda oturum açmak için istenir.
 
 3. Sanal makine için çeşitli ayarları seçin ve ardından **Tamam**. Bkz: [sanal makineler](http://go.microsoft.com/fwlink/?LinkId=623033) daha fazla bilgi için.
 
@@ -166,7 +166,7 @@ Visual Studio ASP.NET projeleri uygulamayı test etmek için kullanabileceğiniz
 
     ![Azure etkinlik günlüğü](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Açıklandığı şekilde projenizi yayımlamak [nasıl yapılır: bir Web projesi kullanarak tek tıklamayla yayımlama Visual Studio'da dağıtma](https://msdn.microsoft.com/library/dd465337.aspx). Sanal makinede üzerinde hata ayıklamak istediğiniz çünkü **ayarları** sayfasının **Web'i Yayımla** seçin **hata ayıklama** yapılandırma olarak. Bu hata ayıklama sırasında kod sembollerinin kullanılabilir olduğundan emin olur.
+6. Açıklandığı şekilde projenizi yayımlamak [nasıl yapılır: Bir Web dağıtımı kullanarak tek tıklamayla projeyi Visual Studio'da yayımlama](https://msdn.microsoft.com/library/dd465337.aspx). Sanal makinede üzerinde hata ayıklamak istediğiniz çünkü **ayarları** sayfasının **Web'i Yayımla** seçin **hata ayıklama** yapılandırma olarak. Bu hata ayıklama sırasında kod sembollerinin kullanılabilir olduğundan emin olur.
 
     ![Yayımlama ayarları](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 

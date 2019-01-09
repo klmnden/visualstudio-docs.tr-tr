@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla yeni belgeler oluşturma'
+title: 'Nasıl yapılır: Program aracılığıyla yeni belgeler oluşturma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], custom document
 - Word [Office development in Visual Studio], creating documents
 - documents [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b5b7766e58cf420d171c1390546957eba1817c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882183d1e23168e1a3a833cd7cc723f28ce1a139
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918816"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154128"
 ---
-# <a name="how-to-programmatically-create-new-documents"></a>Nasıl Yapılır: Program aracılığıyla yeni belgeler oluşturma
+# <a name="how-to-programmatically-create-new-documents"></a>Nasıl yapılır: Program aracılığıyla yeni belgeler oluşturma
   Bir belge programlı olarak oluşturduğunuzda, yerel bir yeni belge olduğu <xref:Microsoft.Office.Interop.Word.Document> nesne. Bu nesne ek olaylar ve veri bağlama yeteneklerine sahip değil bir <xref:Microsoft.Office.Tools.Word.Document> konak öğesi. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d35a33fcacf57c0d88e7bd7db1112f4ec3db4204
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e2541fe5a4faafbd1ab9c165fc38a960406bd0a
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968319"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154501"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Bir Store uygulamasının yürütülmesini denetleme (JavaScript) Windows Store uygulamaları için Visual Studio hata ayıklama oturumunda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -266,15 +266,13 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
 
 6.  **Adım example4_a ve kendi yerel inceleyin ve kapsam değişkenleri** adımla devam `example4` ve çağrıya dönüştürür `example4_a`. Yerel değişkenler artık arasındadır Not `example4_a`ve **[kapsam]** düğüm devam değişkenleri tutacak `module` işlevi. Olsa da değişkenleri `example4` olan etkin, bunlar ulaşılamıyor tarafından `example4_a` ve kapsam zinciri artık parçasıdır.
 
-7.  **Adım multipyByA ve kendi yerel inceleyin ve kapsam değişkenleri** adım kalanında `example4_a` ve satırına `var x = multilpyByA(b);`.
+7.  **Adım multiplyByA ve kendi yerel inceleyin ve kapsam değişkenleri** adım kalanında `example4_a` ve satırına `var x = multiplyByA(b);`.
 
-     İşlev değişkeni `multipyByA` ayarlanmış `multiplyClosure` olan işlevi bir *kapanış*. `multipyClosure` tanımlar ve bir iç işlevi döndürür `mulitplyXby`ve yakalar (üzerinden kapatır), parametre ve değişken. Bir kapanış döndürülen iç işlev dış işlevin veri erişimi ve bu nedenle kapsam düzeyini oluşturur.
+     İşlev değişkeni `multiplyByA` ayarlanmış `multiplyClosure` olan işlevi bir *kapanış*. `multiplyClosure` tanımlar ve bir iç işlevi döndürür `multiplyXby`ve yakalar (üzerinden kapatır), parametre ve değişken. Bir kapanış döndürülen iç işlev dış işlevin veri erişimi ve bu nedenle kapsam düzeyini oluşturur.
 
-     İçine geçtiğinizde `var x = multilpyByA(b);`, geçmeden `return a * b;` satırına `mulitplyXby` iç işlevi.
+     İçine geçtiğinizde `var x = multiplyByA(b);`, geçmeden `return a * b;` satırına `multiplyXby` iç işlevi.
 
 8.  Yerel öğeler penceresinde, yalnızca parametresini `b` yerel bir değişken olarak listelenen `multiplyXby`, ancak yeni bir **[kapsam]** düzeyi eklendi. Bu düğümü genişletmek, parametreleri, İşlevler ve değişkenler içerdiğini görürsünüz `multiplyClosure`de dahil olmak üzere `a` değişken adı ilk satırı `multiplyXby`. Hızlı bir ikinci denetimini **[kapsam]** düğüm modülü işlevi değişkenleri ortaya çıkarır, `multiplyXby` sonraki satıra erişir.
-
-     ![Yerel öğeler penceresinde bir kapanış kapsamını](../debugger/media/dbg-jsnav-scope-mulitplyxby.png "DBG_JSNAV_scope_mulitplyXby")
 
 9. **Hata ayıklamayı durdurun.** Üzerinde **hata ayıklama** menüsünde seçin **hata ayıklamayı Durdur** (klavye: **Shift + F5**). Bu, hata ayıklama oturumunuzu sonlandırır.
 

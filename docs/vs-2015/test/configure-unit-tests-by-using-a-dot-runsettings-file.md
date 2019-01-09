@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d9b03c3b3e418a59c5cea40d61c1ad4c5024d1d
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817983"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154495"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings dosyasını kullanarak birim testlerini yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
 |Yapılandırma|Varsayılan|Değerler|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|Visual Studio 2012'de, MSTest bağdaştırıcısı daha hızlı ve daha ölçeklenebilir olması için iyileştirilmiştir. Testlerin çalışma sırası gibi bazı davranışlar Visual Studio'nun önceki sürümlerindekiyle aynı olmayabilir. Bu değer `true` eski test bağdaştırıcısı kullanmak için.<br /><br /> Örneğin, birim testi için belirtilen bir app.config dosyanız varsa bunu kullanabilirsiniz.<br /><br /> Daha yeni bağdaştırıcı kullanmanıza olanak vermek için testlerinizi yeniden düzenlemenizi öneririz.|  
-|IgnoreTestImpact|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için [nasıl yapılır: kod değişikliklerinden sonra çalıştırmak, testleri gerektiğini denetlemek için veri toplamaya olması](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için [nasıl yapılır: Kod değişikliklerinden sonra çalıştırmak, testleri gerektiğini denetlemek için veri toplama olması](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Burada MS Test bağdaştırıcısı ile kullanmak için test ayarları dosyası belirtebilirsiniz. Menüsünü kullanarak bir test ayarları dosyası da belirtebilirsiniz **Test**, **Test ayarlarını**, **Test ayarları dosyasını Seç**.<br /><br /> Bu değeri belirtirseniz, aynı zamanda ayarlamalısınız **ForcedlegacyMode** için **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Test çalıştırması tamamlandıktan sonra MSTest kapatılır. Testin bir parçası olarak başlatılan tüm işlemler de şu anda bitirilecek. Test yürütücüsünü canlı tutmak istiyorsanız bu yapılandırmayı doğru olarak etkinleştirin.<br /><br /> Örneğin, tarayıcının kodlanmış UI testleri arasında çalışmasını sürdürmek için bunu kullanabilirsiniz.|  
 |DeploymentEnabled|true|Bunu yanlış olarak ayarlarsanız, test yönteminizde belirttiğiniz dağıtım öğeleri dağıtım dizinine kopyalanmaz.|  

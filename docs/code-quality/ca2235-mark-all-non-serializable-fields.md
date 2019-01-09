@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986576"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154156"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Tüm serileştirilebilir olmayan alanları işaretleyin
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986576"
  Seri hale getirilemeyen bir örnek alan türü seri hale getirilebilir bir tür içinde bildirilir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Seri hale getirilebilir bir tür ile işaretlenmiş biridir <xref:System.SerializableAttribute?displayProperty=fullName> özniteliği. Türü seri olduğunda, bir <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> serileştirilebilir değil bir türde bir örnek alanıyla bir tür içeriyorsa, özel durum harekete geçirilir.
+ Seri hale getirilebilir bir tür ile işaretlenmiş biridir <xref:System.SerializableAttribute?displayProperty=fullName> özniteliği. Türü seri olduğunda, bir <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> serileştirilebilir değil bir tür bir örnek alan türü içeriyorsa, özel durum harekete geçirilir.
+ 
+ Bu konuda bir özel durumdur aracılığıyla özel seri hale getirme türünü kullanan <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> arabirimi. Bu arabirimi uygulayan türleri, kendi serileştirme mantığını sağlamak ve bu nedenle CA2235 gibi türler serileştirilebilir olmayan örnek alanları için tetiklenmez.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Bu kural ihlalini düzeltmek için geçerli <xref:System.NonSerializedAttribute?displayProperty=fullName> getirilemeyen alanına öznitelik.

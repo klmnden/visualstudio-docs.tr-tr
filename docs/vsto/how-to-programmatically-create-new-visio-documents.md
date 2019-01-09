@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma'
+title: 'Nasıl yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], creating Visio documents
 - documents [Office development in Visual Studio], creating Visio documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0962c0d7927fd7b21969b36020e2a40d587cf452
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f22361facb881f7306d4c235a96dab0c79877f86
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872511"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154030"
 ---
-# <a name="how-to-programmatically-create-new-visio-documents"></a>Nasıl Yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma
+# <a name="how-to-programmatically-create-new-visio-documents"></a>Nasıl yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma
   Yeni Microsoft Office Visio çizim belgesi oluşturduğunuzda, ona ekleme `Microsoft.Office.Interop.Visio.Documents` açık Visio belgeleri koleksiyonu. Sonuç olarak, `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi yeni bir Visio çizim belgesi oluşturur. Daha fazla bilgi için bkz: VBA başvuru belgelerine [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) yöntemi.  
   
 ## <a name="create-new-blank-documents"></a>Yeni bir boş belge oluşturma  

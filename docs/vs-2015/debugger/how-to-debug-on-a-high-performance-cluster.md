@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: yüksek performanslı kümede hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Yüksek performanslı kümede hata ayıklama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,27 +16,27 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: c2c17e66bdb8df087e4c8085a835686027f23bae
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747729"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154385"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Nasıl Yapılır: Yüksek Performanslı Kümede Hata Ayıklama
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Nasıl yapılır: Yüksek performanslı kümede hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yüksek performanslı kümede çoklu işlem program hata ayıklama uzak bilgisayardaki sıradan bir programın hata ayıklama gibi değildir. Ancak, bazı ek hususlar vardır. Genel Uzaktan Kurulum gereksinimleri için bkz [uzaktan hata ayıklama](../debugger/remote-debugging.md).  
   
  Yüksek performanslı kümede hata ayıklaması yaparken, tüm kullanabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows ve uzaktan hata ayıklama için kullanılabilir olan teknikleri hata ayıklama. Ancak, uzaktan hata ayıklaması yaptığınızdan, harici konsol penceresi kullanılabilir değil.  
   
- **İş parçacıkları** penceresi ve **işlemleri** penceresi özellikle paralel uygulamalarda hata ayıklama için yararlıdır. Bu windows kullanma hakkında daha fazla ipucu için bkz. [nasıl yapılır: işlemler penceresini kullanma](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) ve [nasıl yapılır: iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-threads-window.md).  
+ **İş parçacıkları** penceresi ve **işlemleri** penceresi özellikle paralel uygulamalarda hata ayıklama için yararlıdır. Bu windows kullanma hakkında daha fazla ipucu için bkz. [nasıl yapılır: İşlemler penceresini kullanma](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) ve [nasıl yapılır: İş parçacıkları penceresini kullanma](../debugger/how-to-use-the-threads-window.md).  
   
  Aşağıdaki yordamlar, yüksek performanslı kümede hata ayıklama için özellikle yararlı olan bazı teknikleri gösterir.  
   
@@ -108,8 +108,8 @@ Yüksek performanslı kümede çoklu işlem program hata ayıklama uzak bilgisay
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Uzaktan hata ayıklama](../debugger/remote-debugging.md)   
- [Nasıl yapılır: işlemler penceresini kullanma](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Nasıl yapılır: iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-threads-window.md)   
+ [Nasıl yapılır: İşlemler penceresini kullanma](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Nasıl yapılır: İş parçacıkları penceresini kullanma](../debugger/how-to-use-the-threads-window.md)   
  [İş parçacıklarında ve işlemlerde](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)
 

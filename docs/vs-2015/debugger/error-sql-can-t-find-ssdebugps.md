@@ -22,12 +22,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47e0557e3ad2022250d54b7bd45844825ff79a03
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 92e09a3dd2d1d70bd2e585e2de6b0fd1cca812b0
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757463"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154388"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Hata: SQL için&#39;SSDEBUGPS'yi bulamıyorum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ SSDEBUGPS.dll SQL Server hata ayıklama konağı bileşendir.
 2.  Açarak kaydetmek bir **komut istemi**ve aşağıdaki komutu çalıştırın:  
   
     ```  
-    regsrv32 ssdebugps.dll  
+    regsvr32 ssdebugps.dll  
     ```
 
 

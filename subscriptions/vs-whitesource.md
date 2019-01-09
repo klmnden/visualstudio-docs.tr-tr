@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil olan WhiteSource Bolt aboneliği
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739990"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154440"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt, Visual Studio abonelikleri
 
@@ -41,20 +41,18 @@ Bulun, açık kaynak güvenlik açıklarını düzeltin ve derlemenizdeki tüm a
    - [Yükleme](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) Microsoft Visual Studio Market'ten WhiteSource Bolt uzantısı. Uzantıları yüklemek için izinlere sahip değilseniz, bkz. [Azure DevOps Hizmetleri için ücretsiz uzantı yükleme](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+Yeşil tıklayın **yükleme** Azure DevOps Hizmetleri kullanıyorsanız düğmesini veya **indirin** Team Foundation Server için düğme.  Bu örnekte, Azure DevOps Hizmetleri kullanacağız.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![WhiteSource avantajı yükleme uzantısı](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- Ardından,'e tıklayın, istediğiniz Azure DevOps kuruluş seçin **Onayla**.  (Azure DevOps Hizmetleri henüz ayarlamadıysanız ziyaret [avantajları](https://my.visualstudio.com/benefits) sayfasında ve DevOps Hizmetleri Azure avantajınızı etkinleştirin.)
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![WhiteSource teklifi, hesap onaylayın](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- Uzantı yüklü ve kullanılmaya hazır bir onay alırsınız.  Tıklayın **başlama** WhiteSource Bolt sayfasına geri dönün ve devam etmek için.
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![WhiteSource avantajı yüklenmesi tamamlandı](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. Azure DevOps projesi panonuzu açın, üzerinde **Azure işlem hatları** menü ve **WhiteSource Bolt**.
    > [!div class="mx-imgBorder"]

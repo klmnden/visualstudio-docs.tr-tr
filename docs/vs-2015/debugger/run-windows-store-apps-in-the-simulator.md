@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 208a127e3b4afb791e7a61becd6ed50bbc66bc23
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775114"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154282"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Windows Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
 ## <a name="pinch-and-zoom"></a>Sıkıştırma ve yakınlaştırma  
  Sıkıştırma ve iki parmağınızı hareket yakınlaştırmak için etkileşim modu ayarlar.  
   
--   ![İki Siimulator parmak hedef](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Simülatör iki parmak hedef](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
      Çift hedef simge cihaz ekranında iki parmağınızı konumunu belirtir.  
   
@@ -117,7 +117,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
      ![Ekran görüntüsü ayarları bağlam menüsü](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Ağ bağlantısı özellikleri benzetimi  
- Uygulamanızın kullanıcılarına tarifeli ağ bağlantılarında maliyetini ağ bağlantı maliyeti veya veri planı durumu değişiklikleri bilincini korumak ve yinelenen Dolaşım veya aşan ek maliyetler oluşmasını önlemek için bu bilgileri kullanmak için uygulamanızı etkinleştirme yönetmesine yardımcı olabilecek bir Belirtilen veri aktarımı sınırı. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API'leri sayesinde yanıt [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) ve [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) oturum olayları. Bkz: [hızlı başlangıç: tarifeli ağ yönetme maliyet kısıtlamaları](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Uygulamanızın kullanıcılarına tarifeli ağ bağlantılarında maliyetini ağ bağlantı maliyeti veya veri planı durumu değişiklikleri bilincini korumak ve yinelenen Dolaşım veya aşan ek maliyetler oluşmasını önlemek için bu bilgileri kullanmak için uygulamanızı etkinleştirme yönetmesine yardımcı olabilecek bir Belirtilen veri aktarımı sınırı. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API'leri sayesinde yanıt [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) ve [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) oturum olayları. Bkz: [hızlı başlangıç: Tarifeli ağ maliyet kısıtlamaları yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Hata ayıklama veya ağ maliyet uyumlu kodunuzu test etmek için simülatör üzerinden sunulan bir ağın özellikleri taklit [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) tarafından döndürülen nesne [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -141,7 +141,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
   
    **Ağ Bağlantıları yönetme hakkında daha fazla bilgi**  
   
-   [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamalarını yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamaları yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Ağ bilgi örnek](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   

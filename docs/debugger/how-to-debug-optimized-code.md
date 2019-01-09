@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: İyileştirilmiş kodda hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: İyileştirilmiş kodda hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843482"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154330"
 ---
-# <a name="how-to-debug-optimized-code"></a>Nasıl Yapılır: En iyi duruma getirilmiş kodda hata ayıklama
+# <a name="how-to-debug-optimized-code"></a>Nasıl yapılır: En iyi duruma getirilmiş kodda hata ayıklama
 
 > [!NOTE]
 > Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).
@@ -74,7 +74,7 @@ ms.locfileid: "53843482"
 
 8. Seçerseniz, `Custom` seçeneğini `Optimization`, artık gösterilen özellikler listesinde bulunan diğer özelliklerden herhangi biri için seçenekleri ayarlayabilirsiniz.
 
-9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve Ekle `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` için **ek seçenekler** metin kutusu.
+9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve ekleyin `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` için **ek seçenekler** metin kutusu.
 
     > [!WARNING]
     >  `/Zo` Visual Studio 2013 güncelleştirme 3 veya sonraki bir sürümü gerektirir.

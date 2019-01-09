@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f90e6db9a86457d0a9a0c7c4f61edac5d997414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a75a425734670267db20bbaf0dc3f7aabb616585
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823927"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154198"
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 Kullanarak yüklü bir ayırma kanca işlevini [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), bellek tahsis, bırakılan veya serbest her zaman çağrılır. Bu tür bir kanca birçok farklı amaçlar için kullanabilirsiniz. Daha sonra çözümlemek için ayırma bilgileri günlüğe kaydetmek veya nasıl bir uygulama yetersiz bellek durumları gibi ayırma desenlerini incelenmesi işleme test kullanın.  
@@ -50,7 +50,7 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);  
 ```  
   
- Çalışma zamanı kitaplığı, kanca çağırdığında *nAllocType* bağımsız değişkeni hangi ayırma gösterir işlemdir hakkında yapılacak (**_HOOK_ALLOC**, **_HOOK_REALLOC**, veya **_HOOK_FREE**). Ücretsiz veya bir reallocation `pvData` kullanıcı makaleyi serbest bırakılacak bloğunun bir işaretçiye sahiptir. Ancak bir ayırma için ayırma oluştuğundan henüz Bu işaretçi null. Kalan bağımsız değişkenleri ayırmanın boyutu söz konusu, blok türü ve dosya adı için bir işaretçi ile ilişkili ardışık istek numarasını içerir. Varsa, bağımsız değişkenlerin de ayırma yapıldığı satır numarasını içerir. Hangi analizi kanca işlevini gerçekleştirir ve diğer görevler, yazar istediği sonra ya da döndürmelidir **TRUE**, ayırma işlemi devam edebilir, gösteren veya **FALSE**gösteren, işlem başarısız olmalıdır. Bu tür bir basit kanca şimdiye ayrılan bellek miktarını denetleyin ve dönüş **FALSE** bu kadar küçük bir sınır aşılırsa. Uygulama türü yalnızca kullanılabilir bellek düşük olduğunda, normalde oluşacak ayırma hatalarının ardından deneyimleyeceği. Daha karmaşık kancaları ayırma desenlerini izlemek, bellek kullanımını analiz etme veya özel durumlar oluştuğunda bildirin.  
+ Çalışma zamanı kitaplığı, kanca çağırdığında *nAllocType* bağımsız değişkeni hangi ayırma gösterir işlemdir hakkında yapılacak (**_HOOK_ALLOC**, **_HOOK_REALLOC**, veya **_HOOK_FREE**). Ücretsiz veya bir reallocation `pvData` kullanıcı makaleyi serbest bırakılacak bloğunun bir işaretçiye sahiptir. Ancak bir ayırma için ayırma oluştuğundan henüz Bu işaretçi null. Kalan bağımsız değişkenleri ayırmanın boyutu söz konusu, blok türü ve dosya adı için bir işaretçi ile ilişkili ardışık istek numarasını içerir. Varsa, bağımsız değişkenler de ayırma yapıldığı satır numarasını içerir. Hangi analizi kanca işlevini gerçekleştirir ve diğer görevler, yazar istediği sonra ya da döndürmelidir **TRUE**, ayırma işlemi devam edebilir, gösteren veya **FALSE**gösteren, işlem başarısız olmalıdır. Bu tür bir basit kanca şimdiye ayrılan bellek miktarını denetleyin ve dönüş **FALSE** bu kadar küçük bir sınır aşılırsa. Uygulama türü yalnızca kullanılabilir bellek düşük olduğunda, normalde oluşacak ayırma hatalarının ardından deneyimleyeceği. Daha karmaşık kancaları ayırma desenlerini izlemek, bellek kullanımını analiz etme veya özel durumlar oluştuğunda bildirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Atama kancaları ve C çalışma zamanı bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923120"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154356"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce güvenliği ve dağıtımı
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklü ve minimum kullanıcı müdahalesiyle çalıştırma kendi kendini güncelleştiren ve Windows tabanlı uygulamalar oluşturmanızı sağlayan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# geliştirdiyseniz, ClickOnce teknolojisi ile dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -51,7 +51,7 @@ ms.locfileid: "53923120"
  Authenticode sertifikalar uygulama yayımcısının özgünlüğünü doğrulamak için kullanılır. ClickOnce, uygulama dağıtımı için Authenticode kullanılarak oluşturulmuş olan güvenilir bir kaynaktan gelen yasal bir program olarak kendisini tanıtmasını zararlı bir programın önlemeye yardımcı olur. İsteğe bağlı olarak, sertifikalar, uygulamayı imzalamak için de kullanılabilir ve dosyaların üzerinde oynanmadığını değil olduğunu ispatlamak üzere dağıtım bildirimleri. Daha fazla bilgi için [ClickOnce ve Authenticode](../deployment/clickonce-and-authenticode.md). Sertifikaları, güvenilen yayımcılar listesi için istemci bilgisayarların yapılandırmak için de kullanılabilir. Uygulamanın güvenilir bir yayımcıdan geliyorsa, hiçbir kullanıcı etkileşimi olmadan yüklenebilir. Daha fazla bilgi için [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Kod erişimi güvenliği  
- Kod erişim secrity kod korumalı kaynaklara sahip olan erişimini sınırlamaya yardımcı olur. Çoğu durumda, izinleri sınırlamak için Internet veya yerel Intranet bölgelerini seçebilirsiniz. Kullanım **güvenlik** sayfasını **ProjectDesigner** uygulama için uygun bölgeyi istemek için. Son kullanıcı deneyimi yaşamak için sınırlı izinler ile uygulamaları hata ayıklaması yapabilirsiniz. Daha fazla bilgi için [ClickOnce uygulamaları için kod erişimi güvenliği](../deployment/code-access-security-for-clickonce-applications.md).  
+ Kod erişimi güvenliği, kod korumalı kaynaklara sahip olan erişimini sınırlamaya yardımcı olur. Çoğu durumda, izinleri sınırlamak için Internet veya yerel Intranet bölgelerini seçebilirsiniz. Kullanım **güvenlik** sayfasını **ProjectDesigner** uygulama için uygun bölgeyi istemek için. Son kullanıcı deneyimi yaşamak için sınırlı izinler ile uygulamaları hata ayıklaması yapabilirsiniz. Daha fazla bilgi için [ClickOnce uygulamaları için kod erişimi güvenliği](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce güven istemi  
  Uygulama bölgenin izin verdiğinden daha fazla izinleri isterse, son kullanıcının bir güven kararı istenecek. Son kullanıcı gibi Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları, konsol uygulamaları, XAML tarayıcı uygulamaları ve Office çözümlerini ClickOnce uygulamaları çalıştırmak için güvenilir olup olmadığına karar verebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  

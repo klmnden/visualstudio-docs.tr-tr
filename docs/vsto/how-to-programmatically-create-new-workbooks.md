@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yeni çalışma kitaplarını program aracılığıyla oluşturma'
+title: 'Nasıl yapılır: Yeni çalışma kitaplarını program aracılığıyla oluşturma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating workbooks
 - workbooks, creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e68b2c955c2e44fb9f721850be2fa4dac9cf875
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af0bfc63c8943a5319d8c991f132f9edf54a7d07
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958283"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154116"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>Nasıl Yapılır: Yeni çalışma kitaplarını program aracılığıyla oluşturma
+# <a name="how-to-programmatically-create-new-workbooks"></a>Nasıl yapılır: Yeni çalışma kitaplarını program aracılığıyla oluşturma
   Bir çalışma kitabı programlı olarak oluşturduğunuzda, yerel olduğu <xref:Microsoft.Office.Interop.Excel.Workbook> nesnesi değil, bir <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038b448c0ecd0b19afd7671a381eb68c9ba8cbbe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0c10c2ba2a5b9da700d698d553cdf49a7a0a136
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854119"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153673"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Hata: SQL için&#39;SSDEBUGPS'yi bulamıyorum
 
@@ -41,5 +41,5 @@ SQL Server 2005 makinede SSDEBUGPS.dll kopyalamak için:
 2. Açarak kaydetmek bir **komut istemi**ve aşağıdaki komutu çalıştırın:
 
     ```cmd
-    regsrv32 ssdebugps.dll
+    regsvr32 ssdebugps.dll
     ```

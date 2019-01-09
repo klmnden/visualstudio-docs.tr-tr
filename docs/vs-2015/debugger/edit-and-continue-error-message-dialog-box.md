@@ -10,7 +10,7 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
-- vs.debug.ENC.SupportedButNotAvaiable
+- vs.debug.ENC.SupportedButNotAvailable
 - vs.debug.ENC.CannotEditWhileException
 dev_langs:
 - FSharp
@@ -24,12 +24,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c311f6243ddbf087fd18fd9209e2e17bbe3065a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: d1407b782e767ca06ce5dbd07d8a088c72f7002f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771321"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154001"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Düzenle ve Devam Et Hata İletisi İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: iyileştirilmiş kodda hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: İyileştirilmiş kodda hata ayıklama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -28,14 +28,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: ae18cda3d3cbba28c53402e7989c83c60007b2fc
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734059"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154304"
 ---
-# <a name="how-to-debug-optimized-code"></a>Nasıl Yapılır: İyileştirilmiş Kodda Hata Ayıklama
+# <a name="how-to-debug-optimized-code"></a>Nasıl yapılır: En iyi duruma getirilmiş kodda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
@@ -82,7 +82,7 @@ ms.locfileid: "51734059"
   
 8. Seçerseniz, `Custom` seçeneğini `Optimization`, artık gösterilen özellikler listesinde bulunan diğer özelliklerden herhangi biri için seçenekleri ayarlayabilirsiniz.  
   
-9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve Ekle `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` için **ek seçenekler** metin kutusu.  
+9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve ekleyin `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` için **ek seçenekler** metin kutusu.  
   
     > [!WARNING]
     >  `/Zo` Visual Studio 2013 güncelleştirme 3 veya sonraki bir sürümü gerektirir.  

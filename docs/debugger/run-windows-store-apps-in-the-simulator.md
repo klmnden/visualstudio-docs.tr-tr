@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a171c0973bdcb71ff05cff38713081acd5ffd68
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886481"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153960"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Simülatörde UWP uygulamaları çalıştırma
 UWP uygulamaları için Visual Studio simulator, UWP uygulaması taklit eden bir masaüstü uygulamasıdır. Genellikle, yerel makine, bağlı bir cihaz veya uzak makinede hata ayıklama istersiniz. Ancak, bazı senaryolarda, farklı fiziksel ekran boyutunu ve çözüm benzetmek için Visual Studio simulator kullanmak isteyebilirsiniz. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimi.
@@ -49,7 +49,7 @@ UWP uygulamaları için Visual Studio simulator, UWP uygulaması taklit eden bir
 ## <a name="pinch-and-zoom"></a>Sıkıştırma ve yakınlaştırma
  Sıkıştırma ve iki parmağınızı hareket yakınlaştırmak için etkileşim modu ayarlar.
 
--   ![İki Siimulator parmak hedef](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+-   ![Simülatör iki parmak hedef](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
 
      Çift hedef simge cihaz ekranında iki parmağınızı konumunu belirtir.
 
