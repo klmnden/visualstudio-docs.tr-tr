@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909879030e5c6d26353d2003279d5c1ca7bacb74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 757c56750ee54e7de50f245b8b643cc5983f3149
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793391"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097558"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
-Rastgele bir kod parçacığı metin özniteliklerini döndürür.  
+Rastgele bir kod oluşturma için metin öznitelikleri döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR          pstrCode,  
    ULONG              uNumCodeChars,  
@@ -42,41 +42,41 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Parametreler  
  `pstrCode`  
- [in] Kod parçacığı metin. Bu dize sonlandırıldı null olması gerekmez.  
+ [in] Kod oluşturma yöntemi metni. Bu dize null sonlandırılmış olması gerekmez.  
   
  `uNumCodeChars`  
- [in] Kod parçacığı metinde karakterlerin sayısı.  
+ [in] Kod oluşturma yöntemi metni karakter sayısı.  
   
  `pstrDelimiter`  
- [in] Resimli son sınırlayıcı adresidir. Zaman `pstrCode` ayrıştırılır gibi iki Resimli sonuna algılamak için tırnak işaretleri ("), tek bir metin akışından ana bilgisayar bir sınırlayıcı genellikle kullanır.. Bu parametre bazı koşullu ilkel ön işleme sağlamak komut dosyası altyapısı izin vererek ana kullanılan sınırlayıcı belirtir (örneğin, tek tırnak işareti ['] ayırıcı olarak kullanmak için iki tek tırnak işareti yerine). Tam olarak nasıl (ve ise) bu bilgileri bağlıdır komut dosyası altyapısı üzerinde komut dosyası altyapısı kullanır. Konak Resimli sonuna işaretlemek için sınırlayıcı kullanmadıysanız, bu parametre NULL olarak ayarlayın.  
+ [in] Resimli bitiş sınırlayıcısı adresi. Zaman `pstrCode` ayrıştırılır metin akışından ayrıldığında son algılamak için tırnak işaretleri ("), iki tek gibi ana bilgisayar genellikle bir ayırıcı kullanır. Bu parametre, bazı koşullu ilkel bir ön işleme sağlamak komut dosyası altyapısı verme konak kullanılan sınırlayıcıyı belirtir (örneğin, tek tırnak işaretini ['] ayırıcı olarak kullanılacak iki tek tırnak işaretleri yerine). Tam olarak nasıl (ve ise) bu bilgileri komut dosyası altyapısına bağlıdır komut dosyası altyapısı kullanır. Ana bilgisayar kod oluşturma sonunu işaretlemek için sınırlayıcı kullanmadıysanız, bu parametre NULL olarak ayarlayın.  
   
  `dwFlags`  
- [in] Kod parçacığı ile ilişkili bayraklar. Bu değerleri bir bileşimi olabilir:  
+ [in] Kod oluşturma yöntemiyle ilişkili bayraklar. Bu değerleri bir birleşimi olabilir:  
   
 |Sabit|Değer|Açıklama|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0X0001|Tanımlayıcılar ve nokta işleçleri, SOURCETEXT_ATTR_IDENTIFIER ve SOURCETEXT_ATTR_MEMBERLOOKUP bayraklarıyla'nin sırasıyla tanımlanan gösterir.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Tanımlayıcıları ve nokta işleçleri SOURCETEXT_ATTR_IDENTIFIER ve SOURCETEXT_ATTR_MEMBERLOOKUP bayraklarıyla sırasıyla tanımlanacağını belirtir.|  
 |GETATTRFLAG_THIS|0x0100|Geçerli nesne tanımlayıcısı SOURCETEXT_ATTR_THIS bayrağıyla tanımlanması gerektiğini gösterir.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Dize içeriği ve açıklama metni SOURCETEXT_ATTR_HUMANTEXT bayrağıyla tanımlanması gerektiğini gösterir.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Dize içerik ve açıklama metni SOURCETEXT_ATTR_HUMANTEXT bayrağıyla tanımlanması gerektiğini gösterir.|  
   
  `pattr`  
- [içinde out] Döndürülen öznitelikleri içeren arabelleği.  
+ [out içinde] Döndürülen öznitelikleri içeren arabellek.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Yöntem bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
+ Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
   
 |Değer|Açıklama|  
 |-----------|-----------------|  
 |`S_OK`|Yöntem başarılı oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Arabirimini uygulayan bir akıllı ana bilgisayar `IDebugDocumentText` arabirimi çağrıları temsilci seçmek için bu yöntemi kullanabilirsiniz `IDebugDocumentText::GetText` yöntemi.  
+ Uygulayan bir akıllı ana bilgisayar `IDebugDocumentText` arabirimi çağrıları için temsilci seçmek için bu yöntemi kullanabilirsiniz `IDebugDocumentText::GetText` yöntemi.  
   
- Kod parçacıklarını ifadeleri olma eğilimindedir ve bir betik bloğu daha farklı bir sözdizimi olabilir çünkü bu çağrıyı sağlanır. Bunlar aynı sözdizimini varsa, bu yöntemin kullanımı uygulanması için aynı `GetScriptTextAttributes` yöntemi.  
+ Kod parçacıklarını ifadeleri olma eğilimindedir ve bir betik bloğu değerinden farklı bir sözdizimi olabilir çünkü bu çağrı sağlanır. Bunlar aynı sözdizimini varsa, bu yöntemin uygulanmasını uygulanması için aynı `GetScriptTextAttributes` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptdebug arabirimi](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
  [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
- [SOURCE_TEXT_ATTR numaralandırması](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR Sabit Listesi](../../winscript/reference/source-text-attr-enumeration.md)

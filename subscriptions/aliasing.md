@@ -76,8 +76,7 @@ Lütfen mevcut bir abone directory hesabıyla güncelleştirmek için aşağıda
 4. Tıklayın **aşağı ok** arama çubuğundaki.
 5. "E-posta adresi" alanını kullanarak aboneyi arayın.
 6. Sonuç listesinden tıklayın **Soyadı** abonenin.
-7. 
-              **Düzenle**‘ye tıklayın.
+7. **Düzenle**‘ye tıklayın.
 8. İstenen dizine adresine e-posta adresi alanından değiştirin ve **Kaydet**.
 9. Abone, aboneliğini kullanarak sağlandığını bildirim e-posta şablonu aşağıda.
 
@@ -118,7 +117,7 @@ Aboneye abonelik atandıktan sonra bunları ziyaret etmek isteyen bir e-posta al
    - Hoş Geldiniz e-postada alınan e-posta adresi girin Someone@example.com kutusu
    - Parola oluşturma
    - Promosyon ayarlarınızı seçin
-   - **İleri**'ye tıklayın.
+   -  **İleri**'ye tıklayın.
 
 3. Doğrulama adımları tamamlayın ve tıklayın **sonraki**.
 

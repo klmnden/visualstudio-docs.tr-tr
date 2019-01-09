@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2a877f6ebc692f9f54d69597e06db501f642802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3ff49652897c106c1629d5f7b3133a66ccf7c981
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793535"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093411"
 ---
 # <a name="iactivescriptparseprocedureparseproceduretext"></a>IActiveScriptParseProcedure::ParseProcedureText
-Verilen kodu yordamı ayrıştırır ve ad alanı yordamı ekler.  
+Verilen kod yordamı ayrıştırır ve yordamı ad alanına ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
+```cpp
 HRESULT ParseProcedureText(  
     LPCOLESTR pstrCode,              // address of procedure text  
     LPCOLESTR pstrFormalParams,      // address of formal parameter names  
@@ -47,40 +47,40 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametreler  
  `pstrCode`  
- [in] Değerlendirilecek yordamı metin adresidir. Bu dize yorumu komut dosyası dile bağlıdır.  
+ [in] Değerlendirilecek yordamı metni adresi. Bu dizenin yorumu komut dosyası diline bağlıdır.  
   
  `pstrFormalParams`  
- [in] Yordam için biçimsel parametresi adları adresidir. Parametre adları, komut dosyası altyapısı için uygun sınırlayıcılar ile ayrılmalıdır. Adlar parantez içine alınmamalıdır.  
+ [in] Yordam için biçimsel parametre adları adresi. Parametre adları, komut dosyası altyapısı için uygun sınırlayıcılar ile ayrılmalıdır. Adlar parantez içine alınmalıdır değil.  
   
  `pstrProcedureName`  
- [in] Ayrıştırılacak yordam adı adresidir.  
+ [in] Ayrıştırılacak yordam adı adresi.  
   
  `pstrItemName`  
- [in] Değerlendirilecek yordamı olduğu bağlamı sağlar öğe adı adresidir. Bu parametre ise `NULL`, kod komut dosyası altyapısının genel bağlamda değerlendirilir.  
+ [in] Yordamı değerlendirilecek bağlamı veren öğe adı adresi. Bu parametre `NULL`, kod genel komut dosyası altyapısının bağlamında değerlendirilir.  
   
  `punkContext`  
- [in] Context nesnesi adresidir. Bu nesne, bu tür bir bağlam etkin bir çalışma zamanı bağlamı temsil etmek için hata ayıklayıcı tarafından sağlanabilir burada bir hata ayıklama ortamında kullanım için ayrılmıştır. Bu parametre ise `NULL`, altyapısını kullanan `pstrItemName` bağlamı belirlemek için.  
+ [in] Bağlam nesnesi adresi. Bu nesne, böyle bir içeriğin etkin bir çalışma zamanı içeriğini temsil etmek üzere hata ayıklayıcı tarafından sağlanabilir burada bir hata ayıklama ortamında kullanım için ayrılmıştır. Bu parametre `NULL`, altyapısını kullanan `pstrItemName` içeriği tanımlamak için.  
   
  `pstrDelimiter`  
- [in] Yordam son sınırlayıcı adresidir. Zaman `pstrCode` ayrıştırılır gibi iki yordamı sonuna algılamak için tırnak işaretleri ("), tek bir metin akışından ana bilgisayar bir sınırlayıcı genellikle kullanır.. Bu parametre bazı koşullu ilkel ön işleme sağlamak komut dosyası altyapısı izin vererek ana kullanılan sınırlayıcı belirtir (örneğin, tek tırnak işareti ['] ayırıcı olarak kullanmak için iki tek tırnak işareti yerine). Tam olarak nasıl (ve ise) bu bilgilerin kullanımı bağlıdır komut dosyası altyapısı üzerinde komut dosyası altyapısı sağlar. Bu parametre kümesine `NULL` konak yordamı sonuna işaretlemek için sınırlayıcı kullanmadıysanız.  
+ [in] Yordam bitiş sınırlayıcısı adresi. Zaman `pstrCode` ayrıştırılır metin akışından gibi iki yordamı sonuna algılamak için tırnak işaretleri ("), tek bir ana bilgisayar genellikle bir ayırıcı kullanır. Bu parametre, bazı koşullu ilkel bir ön işleme sağlamak komut dosyası altyapısı verme konak kullanılan sınırlayıcıyı belirtir (örneğin, tek tırnak işaretini ['] ayırıcı olarak kullanılacak iki tek tırnak işaretleri yerine). Tam olarak nasıl (ve ise) bu bilgilerin kullanılması, komut dosyası altyapısına bağlıdır kullanmayacağı. Bu parametre kümesine `NULL` konak yordamı sonunu işaretlemek için sınırlayıcı kullanmadıysanız.  
   
  `dwSourceContextCookie`  
- [in] Hata ayıklama amacıyla kullanılan uygulama tanımlı bir değer.  
+ [in] Hata ayıklama amacıyla kullanılan uygulama tanımlı değer.  
   
  `ulStartingLineNumber`  
- [in] Ayrıştırma sırasında işlemini başlatacak hangi satır belirten sıfır tabanlı değeri.  
+ [in] Hangi satır ayrıştırmaya başlanacağını belirleyen sıfır tabanlı değer.  
   
  `dwFlags`  
- [in] Yordam ile ilişkili bayraklar. Bu değerleri bir bileşimi olabilir:  
+ [in] Yordamı ile ilişkili bayraklar. Bu değerleri bir birleşimi olabilir:  
   
 |Değer|Açıklama|  
 |-----------|-------------|  
-|SCRIPTPROC_ISEXPRESSION|Belirten kodda `pstrCode` yordamı dönüş değerini temsil eden bir ifade değil. Varsayılan olarak, bir ifade, deyimleri listesini ya da başka bir yordamda komut dosyası dili tarafından izin verilen herhangi bir şey kodu içerebilir.|  
-|SCRIPTPROC_IMPLICIT_THIS|Belirten `this` işaretçi yordamı kapsamında yer almaktadır.|  
-|SCRIPTPROC_IMPLICIT_PARENTS|Belirten üst öğelerini `this` işaretçi yordamı kapsamında dahil edilir.|  
+|SCRIPTPROC_ISEXPRESSION|Bildiren kodda `pstrCode` yordamın dönüş değerini temsil eden bir ifadedir. Varsayılan olarak, bir ifade, deyimlerin listesini veya başka bir yordamda komut dosyası dili tarafından izin verilen herhangi bir şey kod içerebilir.|  
+|SCRIPTPROC_IMPLICIT_THIS|Bildiren `this` işaretçi yordamı kapsamında yer almaktadır.|  
+|SCRIPTPROC_IMPLICIT_PARENTS|Belirten üst öğelerinin `this` işaretçi yordamı kapsamında dahil edilir.|  
   
  `ppdisp`  
- [out] Komut dosyanızın genel yöntemleri ve özellikleri içeren nesneyi işaretçi adresi. Komut dosyası altyapısı böyle bir nesnenin desteklemiyorsa `NULL` döndürülür.  
+ [out] Betiğin genel yöntemleri ve özellikleri içeren bir nesne için işaretçi adresi. Komut dosyası altyapısı böyle bir nesnenin desteklemiyorsa `NULL` döndürülür.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden birini döndürür:  
@@ -88,15 +88,15 @@ HRESULT ParseProcedureText(
 |Dönüş Değeri|Açıklama|  
 |------------------|-------------|  
 |`S_OK`|Başarılı.|  
-|`E_INVALIDARG`|Bağımsız değişken geçersiz.|  
-|`E_POINTER`|Geçersiz bir işaretçi belirtildi.|  
-|`E_NOTIMPL`|Bu yöntem desteklenmiyor. Komut dosyası altyapısı çalışma zamanı yordamları ad alanı için eklenmesini desteklemez.|  
-|`E_UNEXPECTED`|Çağrı beklendiği (örneğin, komut dosyası altyapısı başlatılmamış veya kapalı durumda).|  
+|`E_INVALIDARG`|Bir bağımsız değişken geçersiz.|  
+|`E_POINTER`|Geçersiz işaretçi belirtildi.|  
+|`E_NOTIMPL`|Bu yöntem desteklenmiyor. Komut dosyası altyapısı çalışma zamanı yordamları ad alanına eklenmesini desteklemez.|  
+|`E_UNEXPECTED`|Çağrı beklenmiyordu (örneğin, komut dosyası altyapısı başlatılmamış veya kapatılmış durumdadır).|  
 |`OLESCRIPT_E_SYNTAX`|Yordamda belirtilmeyen sözdizimi hatası oluştu.|  
 |`S_FALSE`|Komut dosyası altyapısı, dağıtım nesnesi desteklemiyor; `ppdisp` parametrenin ayarlanmış `NULL`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Betik kodu, bu çağrı sırasında değerlendirilir; Bunun yerine, yordam Burada, komut dosyası tarafından daha sonra çağrılabilir betik durumuna derlenir.  
+ Bu çağrı sırasında hiçbir betik kodu değerlendirilir; Bunun yerine, yordam, burada, komut dosyası tarafından daha sonra çağrılabilir komut satırı durumuna derlenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptparseprocedure](../../winscript/reference/iactivescriptparseprocedure.md)
+ [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)
