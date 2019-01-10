@@ -110,7 +110,7 @@ Vardır ayrıca ek Python özgü seçenekler **metin düzenleyici** > **Python**
 
 | Seçenek | Varsayılan | Açıklama |
 | --- | --- | --- |
-| **Aşağıdaki karakterleri yazarak işlendi** | **{}\[\]().,:; +-* / % &&#124;^ ~ = <> #@\\** | Bu karakterler bir karakter yazarak tamamlama kaydetmeye uygun olacak şekilde bir tamamlama listeden seçebilirsiniz. tanımlayıcı genellikle izleyin. Kaldırın veya belirli karakter istenen listesine ekleyin.  |
+| **Aşağıdaki karakterleri yazarak işlendi** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Bu karakterler bir karakter yazarak tamamlama kaydetmeye uygun olacak şekilde bir tamamlama listeden seçebilirsiniz. tanımlayıcı genellikle izleyin. Kaldırın veya belirli karakter istenen listesine ekleyin.  |
 | **İşlemeler geçerli tamamlama girin** | Açık | Ayarlandığında, **Enter** anahtar seçer ve şu anda seçilmiş tamamlanma karakterler olarak yukarıdaki uygular (ancak Elbette, karakter için hiç **Enter** bu listesine doğrudan Git uygulanamadı şekilde!). |
 | **Yeni bir satır eklemek, tam yazılmış kelimenin sonuna enter** | Kapalı | Varsayılan olarak görünen tüm sözcük tamamlama açılır ve ENTER tuşuna yazarsanız **Enter**, o tamamlama işleyin. Tanımlayıcı yazmayı bitirdikten sonra bu seçeneği ayarlayarak, etkili bir şekilde tamamlamaları işleme gibi **Enter** yeni bir satır ekler. |
 
