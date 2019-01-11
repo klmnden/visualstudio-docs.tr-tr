@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947419"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204500"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Otolar ve yerel öğeler pencerelerinde değişkenleri denetleyin
 
-**Otolar** ve **Yereller** windows ayıklarken değişken değerleri gösterir. Windows, yalnızca hata ayıklama oturumu sırasında kullanılabilir. **Otolar** geçerli kesme noktası kullanılan değişkenler penceresi gösterir. **Yereller** penceresi, genellikle geçerli işlev veya yöntem olan yerel kapsamda tanımlanan değişkenler gösterir. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
+**Otolar** ve **Yereller** windows ayıklarken değişken değerleri gösterir. Windows, yalnızca hata ayıklama oturumu sırasında kullanılabilir. **Otolar** geçerli kesme noktası kullanılan değişkenler penceresi gösterir. **Yereller** penceresi, genellikle geçerli işlev veya yöntem olan yerel kapsamda tanımlanan değişkenler gösterir. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
 
  **Otolar** penceresi, kullanılabilir C#, Visual Basic, C++ ve Python kodu, ancak JavaScript veya F#.
   

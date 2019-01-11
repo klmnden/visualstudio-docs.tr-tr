@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 717e57a4c4ba739236fa3b66a444dd854d357dcc
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892669"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204300"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web Projeleri Özellik Sayfası Ayarları
 Bir web sitesi hata ayıklama yapılandırmasında özellik ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
   
-### <a name="configuration-properties-folder-start-options-category"></a>Yapılandırma özellikleri klasörü (Başlat seçenekleri kategori)  
+### <a name="start-options-category"></a>Başlangıç seçenekleri kategorisi
   
-| **Ayarı** | **Açıklama** |
+| **Ayar** | **Açıklama** |
 | - | - |
 | **Başlatma eylemi** | Grupları seçenekleri için uygulama başlatma ilgili başlığı. |
 | **Geçerli sayfayı kullanın.** | Hata ayıklama için başlangıç noktası olarak geçerli sayfayı belirtir. |

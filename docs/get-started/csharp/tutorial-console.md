@@ -2,7 +2,7 @@
 title: 'Öğretici: Kullanmaya başlama C# konsol uygulamaları'
 description: Visual Studio'da, adım adım C# konsol uygulaması oluşturmayı öğrenin.
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562223"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204437"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Öğretici: Visual Studio'da C# konsol uygulaması ile çalışmaya başlama
 
@@ -135,9 +135,11 @@ Uygulamayı çalıştırın ve sayı 42 119, sayıya göre bölme aşağıdaki e
 
 Şimdi ondalık işler, böylece kodu düzeltin.
 
+1. Tuşuna **Ctrl** + **F** açmak için **Bul ve Değiştir** denetimi.
+
 1. Her örneğini `int` değişkenini `float`.
 
-   (Kullanabilirsiniz [Bul ve Değiştir](../../ide/finding-and-replacing-text.md#find-and-replace-control) bu görevle yardımcı olmak için denetim. Kod Düzenleyicisi içinde arama denetimi erişmeye basın **Crtl**+**F**. Ardından, **Sonrakini Bul** düğmesini veya **Öncekini Bul** arama denetimin üzerindeki düğme. Değiştirme seçeneklerine erişmek, düğmeyi seçin **Bul** metin kutusu. Aynı anda bir tane değişiklik yapmaya karar **Değiştir** düğmesinin yanındaki **değiştirin** metin kutusu. Tüm eşleşmeleri değiştirmek için seçin **Tümünü Değiştir** düğmesi.)
+    ![Animasyon kayan nokta tamsayı değişkeni değiştirme gösteren Bul ve Değiştir denetimi](./media/find-replace-control-animation.gif)
 
 1. Hesaplayıcı uygulamanızı tekrar çalıştırın ve sayı bölmek **42** numarasıyla **119**.
 
@@ -147,9 +149,7 @@ Uygulamayı çalıştırın ve sayı 42 119, sayıya göre bölme aşağıdaki e
 
 Bununla birlikte, uygulamayı yalnızca ondalık bir sonuç üretir. Uygulama çok ondalık basamak hesaplayabilmeniz birkaç daha fazla tweaks koda olalım.
 
-1. Her örneğini `float` değişkenini `double`.
-
-1. Her örneğini `Convert.ToInt32` yönteme `Convert.ToDouble`.
+1. Kullanım **Bul ve Değiştir** denetimi (**Ctrl** + **F**) her bir örneğini değiştirmek için `float` değişkenini `double`ve her değiştirmek için örneğini `Convert.ToInt32` yönteme `Convert.ToDouble`.
 
 1. Hesaplayıcı uygulamanızı çalıştırın ve sayı bölmek **42,5** numarasıyla **119.75**.
 

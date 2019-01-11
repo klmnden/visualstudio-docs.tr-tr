@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99228f525ae85743834c75aa69bf64609d0b5ede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834158"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204394"
 ---
-# <a name="create-custom-data-visualizers"></a>Özel veri görselleştiriciler oluşturma 
+# <a name="create-custom-data-visualizers"></a>Özel veri görselleştiriciler oluşturma
  A *Görselleştirici* parçasıdır [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] bir değişkeni veya nesneyi, veri türüne uygun şekilde görüntüler hata ayıklayıcı kullanıcı arabirimi. Örneğin, bir HTML Görselleştirici bir HTML dizesi olarak yorumlar ve sonucu bir tarayıcı penceresinde görüneceği şekilde görüntüler. Bit eşlem Görselleştirici bir bit eşlem yapısı yorumlar ve onu gösteren grafiği görüntüler. Bazı görselleştiriciler, yanı sıra veri değiştirmenizi sağlar.
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Hata ayıklayıcı altı standart görselleştiriciler içerir. Metin, HTML, XML ve JSON görselleştiriciler dize nesneler üzerinde çalışır. WPF ağacı görselleştiricisini WPF nesne görsel ağacı özelliklerini görüntüler. Veri kümesi görselleştiricisi veri kümesi, DataView ve DataTable nesneleri için çalışır. 

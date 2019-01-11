@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e6844b92422af42d2aa1098bc649019fb2f1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f3659cd2a77e57f560abb18b0af83549edd0571
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938179"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204170"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Nasıl Yapılır: Bir çalışma zamanı hata raporlama işlevi yazma
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Nasıl yapılır: Yazma çalışma zamanı hata raporlama işlevi (C++)
 Özel raporlama işlevi için çalışma zamanı hataları olarak aynı bildirimde olmalıdır `_CrtDbgReportW`. Hata ayıklayıcısı için 1 değerini döndürmesi gerekir.  
   
  Aşağıdaki örnek, bir özel raporlama fonksiyon tanımlayın gösterilmektedir.  

@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894447"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204261"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Desteklenmeyen bir veritabanı sağlayıcısından bir veritabanı nesnesi seçtiniz
 
@@ -23,17 +23,11 @@ ms.locfileid: "53894447"
 > [!NOTE]
 > SQL Server için .NET Framework veri sağlayıcısı kullanan veri bağlantıları desteklenir.
 
-## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+## <a name="options"></a>Seçenekler
 
-- **Tamam**'ı tıklatın.
+- Tıklayın **Tamam** desteklenmeyen bir veritabanı sağlayıcısı kullanan bağlantı harita varlık sınıfları tasarlama devam etmek için. Desteklenmeyen veritabanı sağlayıcıları kullandığınızda beklenmeyen davranışlarla karşılaşabilirsiniz.
 
-   Desteklenmeyen veritabanı sağlayıcısı kullanan bağlantı harita varlık sınıfları tasarlama devam edebilirsiniz. Desteklenmeyen veritabanı sağlayıcıları kullandığınızda beklenmeyen davranışlarla karşılaşabilirsiniz.
-
-    -veya-
-
-- Tıklayın **iptal**.
-
-   İşlem durduruldu. Oluşturun veya SQL Server için .NET Framework sağlayıcısı kullanan bir veri bağlantısı kullanıyor.
+- Tıklayın **iptal** eylemi durdurmak için. Oluşturun veya SQL Server için .NET Framework sağlayıcısı kullanan farklı bir veri bağlantısı kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

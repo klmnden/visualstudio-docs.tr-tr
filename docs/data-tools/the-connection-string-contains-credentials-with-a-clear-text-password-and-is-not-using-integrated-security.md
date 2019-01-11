@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854769"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204209"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Bağlantı dizesi şifresiz parola içeren kimlik bilgileri içeriyor ve tümleşik güvenliği kullanmıyor
 
@@ -25,15 +25,13 @@ Hassas bilgileri (bağlantı dizesine dahil parolalar) dahil veri bağlantılar�
 > [!WARNING]
 > Açık olarak ayarlama **bağlantı** özellikleri **uygulama ayarları** özelliğini **False** DBML dosyasına parola ekleyeceksiniz.
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Hassas bilgileri projenin uygulama ayarlarında bağlantı dizesini kaydetmek için
+## <a name="save-options"></a>Kaydetme seçenekleri
 
-- **Evet**'i tıklayın.
+- Bağlantı dizesini hassas bilgilerle birlikte kaydetmek için seçin **Evet**.
 
    Bağlantı dizesi, bir uygulama ayarı olarak depolanır. Bağlantı dizesi düz metin olarak hassas bilgiler içerir. DBML dosyasının, hassas bilgileri içermiyor.
 
-## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Projenin uygulama ayarlarında bağlantı dizesini hassas bilgiler olmadan kaydetmek için
-
-- **Hayır**'a tıklayın.
+- Bağlantı dizesini hassas bilgiler olmadan kaydetmek için seçin **Hayır**.
 
    Bağlantı dizesi, bir uygulama ayarı olarak depolanır, ancak parola dahil değildir.
 

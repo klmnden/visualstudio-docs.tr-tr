@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837764"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204353"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Hata ayıklama ayarlayabilir ve yayın yapılandırmaları Visual Studio'da
 
@@ -44,7 +44,7 @@ Visual Studio projeleri ayrı sürümü ve hata ayıklama yapılandırması, pro
 
 Hata ayıklama yapılandırmasında programınızı tam sembolik hata ayıklama bilgileri ve en iyileştirme olmadan derlenir. Kaynak kodu ve oluşturulan yönergeler arasındaki ilişki daha karmaşık olacağından en iyileştirme hata ayıklama, karmaşık hale getirir.
 
-Programınızın sürüm yapılandırması simgesel hata ayıklama bilgisi ve tamamen en iyileştirilmiştir. Hata ayıklama bilgisi .pdb dosyaları oluşturulabilir [derleyici seçeneklerine bağlı olarak](#BKMK_symbols_release) kullanılan. .Pdb dosyaları oluşturmak, daha sonra yayım sürümünüzde hata ayıklama varsa yararlı olabilir.
+Programınızın sürüm yapılandırması simgesel hata ayıklama bilgisi ve tamamen en iyileştirilmiştir. Yönetilen kod ve C++ kodu için hata ayıklama bilgisi .pdb dosyaları oluşturulabilir [derleyici seçeneklerine bağlı olarak](#BKMK_symbols_release) kullanılan. .Pdb dosyaları oluşturmak, daha sonra yayım sürümünüzde hata ayıklama varsa yararlı olabilir.
 
 Derleme yapılandırmaları hakkında daha fazla bilgi için bkz. [anlayın derleme yapılandırmaları](../ide/understanding-build-configurations.md).
 

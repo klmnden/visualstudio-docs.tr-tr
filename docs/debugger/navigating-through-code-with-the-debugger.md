@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931430"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204501"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile kodda gidin
 
-Visual Studio hata ayıklayıcı bir uygulamanın durumunu inceleyebilir ve kendi yürütme akışını göstermek için kod gezinmenize yardımcı olabilir. Hızlı bir şekilde incelemek istediğiniz kodu almak için klavye kısayolları, hata ayıklama komutları, kesme noktaları ve diğer özellikleri kullanabilirsiniz. Hata ayıklayıcı Gezinti komutlarını ve kısayolları konusunda daha hızlı ve kolay bulmak ve uygulama sorunları gidermek yapar.  Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
+Visual Studio hata ayıklayıcı bir uygulamanın durumunu inceleyebilir ve kendi yürütme akışını göstermek için kod gezinmenize yardımcı olabilir. Hızlı bir şekilde incelemek istediğiniz kodu almak için klavye kısayolları, hata ayıklama komutları, kesme noktaları ve diğer özellikleri kullanabilirsiniz. Hata ayıklayıcı Gezinti komutlarını ve kısayolları konusunda daha hızlı ve kolay bulmak ve uygulama sorunları gidermek yapar.  Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
   
 ## <a name="basic-debugging"></a>Temel hata ayıklama  
 

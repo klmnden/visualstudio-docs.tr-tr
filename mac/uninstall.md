@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295676"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204339"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırma
 
@@ -34,10 +34,11 @@ Aşağıdaki bölümlerde, indirme ve betikleri kullanarak bilgi sağlar.
 
 Visual Studio yüklemesini kaldırabilir ve Xamarin bileşenleri bir Git kullanarak [betik kaldırma](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
-Makalede bulabilirsiniz komutların çoğu bu kaldırma betiğini içerir. Komut dosyası iki ana atlamalar vardır ve olası dış bağımlılıklar nedeniyle dahil edilmez:
+Makalede bulabilirsiniz komutların çoğu bu kaldırma betiğini içerir. Komut dosyası üç ana atlamalar vardır ve olası dış bağımlılıklar nedeniyle dahil edilmez. Bu kaldırmak için ilgili aşağıdaki bölüme atlayın ve bunları el ile kaldırın:
 
-- **Mono kaldırma**
-- **Android AVD kaldırma**
+- **[Mono kaldırma](#uninstall-mono-sdk-mdk)**
+- **[Android AVD kaldırma](#uninstall-android-avd)**
+- **[Android SDK ve Java SDK kaldırma](#uninstall-android-sdk-and-java-sdk)**
 
 Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
@@ -45,13 +46,13 @@ Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 2. Terminali açın ve komut dosyasını indirdiğiniz için çalışma dizinini değiştirin:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Yürütülebilir kod ve çalışma ile **sudo**:
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. Son olarak, kaldırma betiğini silin.
 
@@ -65,13 +66,13 @@ Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 2. Terminali açın ve komut dosyasını indirdiğiniz için çalışma dizinini değiştirin:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. Yürütülebilir kod ve çalışma ile **sudo**:
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. Son olarak, .NET Core kaldırma betiğini silin.
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+Çeşitli Xamarin dosya ve klasörleri içeren aşağıdaki dizine kaldırmak isteyebilirsiniz. Bunu yapmadan önce bu dizin imzalama anahtarı Android içerdiğini farkında olmalıdır. Daha fazla bilgi için bölümüne başvurun  **[kaldırma Android SDK ve Java SDK'sı](#uninstall-android-sdk-and-java-sdk)**:
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Mono SDK'sı (MDK) kaldırma
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Android SDK ve Java SDK kaldırma
 
 Android SDK'sı, Android uygulamalarının geliştirilmesini için gereklidir. Android SDK'sı tüm parçalarını tamamen kaldırmak için dosyayı bulun **~/Library/Developer/Xamarin/** ve taşımak **çöp**.
+
+> [!WARNING]
+> Mac için Visual Studio tarafından oluşturulan Android İmzalama anahtarları bulunan farkında olmalıdır `~/Library/Developer/Xamarin/Keystore`. Deponuzu tutmak istiyorsanız, bu dizin kaldırmayı önlemek veya bunları uygun şekilde yedeklemek emin olun.
 
 Bunu zaten Mac OS X bir parçası olarak önceden paketlenmiş olarak Java SDK (JDK) kaldırılması, gerekmez / macOS.
 

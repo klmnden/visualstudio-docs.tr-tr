@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847843"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204063"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Uyarı: Davranışı Yapılandır iletişim kutusunda, uygulanmamış değişiklikler gerçekleştirildi
 
@@ -22,13 +22,11 @@ Uyarı. Henüz uygulanmamış davranışı Yapılandır iletişim kutusu için d
 
 **Davranışı Yapılandır** iletişim kutusu yapılandırmanıza olanak sağlar `Insert`, `Update`, ve `Delete` kullanılabilir tüm sınıflar için davranış. Bu ileti, yeni bir seçtiğinizde görünür **sınıfı** ve **davranışı** birleşimi ve önceki değişikliği değil henüz uygulandı.
 
-## <a name="to-apply-the-change-and-continue"></a>Değişikliği uygulamak ve devam etmek için
+## <a name="change-options"></a>Seçeneklerini değiştir
 
-- Tıklayın **Evet** seçili değişikliği uygulamak için **sınıfı** ve **davranışı**.
+- Değişikliği uygulamak ve devam etmek için tıklatın **Evet**. Değişiklik uygulanır seçili **sınıfı** ve **davranışı**.
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>Önceki değişikliğinizi ve devam etmek için
-
-- Tıklayın **Hayır** seçili değişikliğinizi **sınıfı** ve **davranışı**.
+- Önceki değişikliğinizi ve devam etmek için tıklatın **Hayır**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

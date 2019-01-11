@@ -14,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6bd21116cc62aecbc5f6a5f734f2006551ad199c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5c9d1dd1b17c9e3c301822a2c4a3b5eaae037d2f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443558"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204543"
 ---
-# <a name="tutorial-create-a-simple-application-with-c-or-visual-basic"></a>Öğretici: Basit bir uygulama oluşturacaksınız C# veya Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Öğretici: Visual Basic ile basit uygulama oluşturma
 
 Bu izlenecek yolu tamamlayarak, birçok araçları, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Bir "Hello, World" uygulaması oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında çalışma hakkında bilgi edinirken, hatalarını ayıklama ([IDE](visual-studio-ide.md)).
 

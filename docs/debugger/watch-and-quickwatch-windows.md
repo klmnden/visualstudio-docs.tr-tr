@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936519"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204475"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>İzleme ve QuickWatch değişkenlerle izleyin 
 
@@ -30,7 +30,7 @@ Hata ayıklarken, kullanabileceğiniz **Watch** windows ve **QuickWatch** deği�
 
 **İzleme** windows aynı anda hata ayıklama sırasında birkaç değişkenleri görüntüleyebilir. **QuickWatch** iletişim kutusu, bir kerede tek bir değişken görüntüler ve hata ayıklama devam etmeden önce kapatılması gerekir.
 
-Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) ve [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
+Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
 
 ## <a name="observe-variables-with-a-watch-window"></a>İzleme penceresi değişkenleri gözlemleyin
 

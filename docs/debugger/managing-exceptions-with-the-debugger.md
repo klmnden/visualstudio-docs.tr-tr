@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094827"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204424"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
-Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata durumu göstergesidir. Hangi özel durumları veya kesmek için özel durumlar, kümeleri, hata ayıklayıcı söyleyebilirsiniz ve hangi noktada hata ayıklayıcının istersiniz. Hata ayıklayıcı keserse, size burada özel durumun oluştuğu gösterir. Ayrıca, ekleyin veya özel durumları silebilirsiniz. Çözümünü Visual Studio'da Aç **hata ayıklama > Windows > özel durum ayarları** açmak için **özel durum ayarları** penceresi.
+Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata durumu göstergesidir. Bu noktada hata ayıklayıcının istediğiniz ve hangi özel durumları veya kesmek için özel durumlar, kümeleri, hata ayıklayıcı söyleyebilirsiniz (diğer bir deyişle, hata ayıklayıcıda duraklatma). Hata ayıklayıcı keserse, size burada özel durumun oluştuğu gösterir. Ayrıca, ekleyin veya özel durumları silebilirsiniz. Çözümünü Visual Studio'da Aç **hata ayıklama > Windows > özel durum ayarları** açmak için **özel durum ayarları** penceresi.
 
-Yanıt için en önemli özel durum işleyicileri sağlar. Ayrıca her zaman yürütme bazı özel durumlar için hata ayıklayıcının yapılandırmayı öğrenin.
+Yanıt için en önemli özel durum işleyicileri sağlar. Özel durumlar için işleyiciler eklemek için bkz. nasıl bilmeniz gerekiyorsa [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md). Ayrıca, her zaman yürütme bazı özel durumlar için hata ayıklayıcının yapılandırmayı öğrenin.
 
 Bir özel durum oluştuğunda, hata ayıklayıcı bir özel durum iletisi Yazar **çıkış** penceresi. Aşağıdaki yürütme kesilebilir ne zaman durumlarda:
 

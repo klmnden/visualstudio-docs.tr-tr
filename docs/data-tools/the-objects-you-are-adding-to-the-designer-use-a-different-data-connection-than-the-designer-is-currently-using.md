@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935664"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204313"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Tasarımcıya eklemekte olduğunuz nesneler Tasarımcı değerinden farklı bir veri bağlantısı kullanın.
 
@@ -22,20 +22,18 @@ Tasarımcıya eklemekte olduğunuz nesneler, tasarımcının kullanmakta olduğu
 
 Öğeleri eklediğinizde **Object Relational Designer** (**O/R Tasarımcısı**), tüm öğeleri bir paylaşılan veri bağlantısı kullanıyor. (Tasarım yüzeyini temsil eden <xref:System.Data.Linq.DataContext>, çalışma yüzeyinde tüm nesneleri için tek bir bağlantı kullanır.) Bir nesne tasarımcı tarafından kullanılmakta veri bağlantısı farklı bir veri bağlantısı kullanıyor tasarımcıya eklerseniz, bu ileti görünür. Bu hatayı gidermek için var olan bağlantıyı korumak seçebilirsiniz. Bu seçim yapın, seçili nesnenin eklenmeyecek. Alternatif olarak, nesneyi eklemek ve sıfırlamak seçebilirsiniz <xref:System.Data.Linq.DataContext> yeni bağlantı için bağlantı.
 
-> [!NOTE]
-> Tıklarsanız **Evet**, tüm varlık sınıfları üzerinde **O/R Tasarımcısı** yeni bağlantı eşlenir.
+## <a name="connection-options"></a>Bağlantı seçenekleri
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Seçilen nesne tarafından kullanılan bağlantı var olan bağlantıyı değiştirmek için
+- Seçilen nesne tarafından kullanılan bağlantı ile var olan bağlantıyı değiştirmek için tıklayın **Evet**.
 
-- **Evet**'i tıklayın.
+   Seçili nesneyi eklenir **O/R Tasarımcısı**ve *DataContext.Connection* yeni bir bağlantı ayarlanmadı.
 
-    Seçili nesneyi eklenir **O/R Tasarımcısı**ve *DataContext.Connection* yeni bir bağlantı ayarlanmadı.
+   > [!NOTE]
+   > Tıklarsanız **Evet**, tüm varlık sınıfları üzerinde **O/R Tasarımcısı** yeni bağlantı eşlenir.
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Var olan bağlantıyı kullanın ve seçili nesne eklemeyi iptal etmek devam etmek için
+- Seçili nesne eklemeyi iptal ve varolan bir bağlantıyı kullanmaya devam etmek için tıklayın **Hayır**.
 
-- **Hayır**'a tıklayın.
-
-    Eylemi iptal edildi. *DataContext.Connection* kalır, varolan bağlantı ayarlayın.
+   Eylemi iptal edildi. *DataContext.Connection* kalır, varolan bağlantı ayarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

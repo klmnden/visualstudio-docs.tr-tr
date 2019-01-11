@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baa31b791b3ee76905023d32f92f774ae6c9d5f8
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951686"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204540"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay özniteliğini kullanma
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic"></a>DebuggerDisplay özniteliğini kullanma (C#, Visual Basic)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Hata ayıklayıcı değişken pencerelerinde bir nesne, özelliği veya alanı nasıl görüntüleneceğini denetler. Bu öznitelik türleri, temsilciler, özellikleri, alanları ve derlemeler için uygulanabilir.  
   
  `DebuggerDisplay` Özniteliğine sahip bir dize değeri sütununda görüntülenecek olan tek bir bağımsız değişken, tür örnekleri. Bu dize, küme ayraçları içerebilir (`{` ve `}`). Metin çifti küme ayraçlarının içinde bir alan, özelliği veya yöntemi değerlendirilir.  
