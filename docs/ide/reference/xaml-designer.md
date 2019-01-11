@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d93dc9cf68a70977f82f29b6e5ff1ade25f47bda
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227705"
 ---
 # <a name="xaml-designer-options-page"></a>XAML Tasarımcısı seçenekler sayfası
 
@@ -65,7 +65,7 @@ Bu ayarlar, bir XAML belgesi düzenlenirken Tasarımcısı davranışını belir
 |||
 |-|-|
 |**Oluşumda etkileşimli öğeleri otomatik olarak adlandırın**|Bir tasarımcı eklediğinizde, varsayılan bir ad için yeni bir etkileşimli öğesi sağlanıp sağlanmayacağını belirtir.|
-|**Düzen özelliklerini öğe oluşturma sırasında otomatik olarak Ekle**|Eklediğinizde, Tasarımcı için düzen özelliklerini yeni bir öğe için sağlanan olup olmadığını belirtir.|
+|**Düzen özelliklerini öğe oluşturma sırasında otomatik olarak Ekle**|Eklediğinizde, Tasarımcı için düzen özelliklerini yeni bir öğe için sağlanan olup olmadığını belirtir. Düzen özelliklerini, örneğin, kenar boşlukları ve doldurma gibi bir denetimin düzenini etkileyebilecek olanlardır.|
 |**Başarımız düzeni kullanma**|Şu anda seçili denetimi en yakın üst kapsayıcının kenarlarına hizalar olup olmadığını belirtir. Bu onay kutusu işaretli değilse, Denetim hizalamaları taşıma işlemi sırasında değiştirmeyin veya oluşturma işlemi.|
 |**Araç kutusu öğeleri otomatik olarak doldurur.**|Kullanıcı denetimleri ve geçerli çözüme özel denetimleri araç kutusunda otomatik olarak gösterilip gösterilmeyeceğini belirtir.|
 

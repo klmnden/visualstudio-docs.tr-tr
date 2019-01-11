@@ -1,10 +1,11 @@
 ---
 title: -Edit (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /edit switch
+- Edit Devenv switch
+- Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
@@ -12,43 +13,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ccbd3a693313b870378021e6404424cfb11f199
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb5ae37d3e4dc0973320c68f9db169cdbf7d663a
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227687"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
-Mevcut bir örneğini belirtilen dosyayı açar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+Belirtilen dosya mevcut bir Visual Studio örneğini açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cmd
-Devenv /edit [file1[ file2]]
+```shell
+devenv /Edit [File1[ FileN]...]
 ```
 
 ## <a name="arguments"></a>Arguments
- `file1`
 
- İsteğe bağlı. Mevcut bir örneğini açmak için dosyaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Hiç bir örneği ise [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yoksa, yeni bir örneği bir Basitleştirilmiş pencere düzeni ile oluşturulur ve `file1` yeni bir örneğinde açılmış.
+- *Fıle1'de*
 
- `file2`
+  İsteğe bağlı. Mevcut bir Visual Studio örneğini dosyayı açın. Visual Studio örneği varsa, yeni bir örneği bir Basitleştirilmiş pencere düzeni ile oluşturulur ve aracı açılır *dosya1* yeni örneğinde.
 
- İsteğe bağlı. Var olan örnekte açmak için bir veya daha fazla ek dosyalar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- *Dosyan*
+
+  İsteğe bağlı. Visual Studio'nun var olan örnekte açmak için bir veya daha fazla ek dosyalar.
 
 ## <a name="remarks"></a>Açıklamalar
- Hiçbir dosya belirtilir ve var olan bir örneği [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], var olan örneğinin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] odağı alır. Hiçbir dosya belirtilir ve mevcut hiçbir örneği [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], yeni bir örneğini [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir Basitleştirilmiş pencere düzeni ile oluşturulur.
 
- Varsa mevcut örneğini [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] örneğin kalıcı bir durumda olduğundan, [Seçenekler iletişim kutusu](../../ide/reference/options-dialog-box-visual-studio.md) açık dosya olacak mevcut açık örnek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kalıcı durumdan çıkar.
+Bir dosya belirtilmediğinde, mevcut bir Visual Studio örneği odağı alır. Visual Studio örneği hiçbir dosya belirtilir ve varsa aracı ile Basitleştirilmiş pencere düzenini örneği oluşturur.
+
+Var olan bir Visual Studio örneğini kalıcı bir durumda ise, Visual Studio kalıcı çıktığında dosya var olan örnekte açılır. Örneğin, bu durum ortaya çıkabilir, [Seçenekler iletişim kutusu](../../ide/reference/options-dialog-box-visual-studio.md) açıktır.
 
 ## <a name="example"></a>Örnek
- Bu örnek dosyayı açar `MyFile.cs` var olan bir örneğini [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] veya dosyayı yeni bir örneğini açar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] biri zaten mevcut değilse.
 
-```cmd
+İlk örnek dosyayı açar `MyFile.cs` varolan bir Visual Studio örneğinde. Visual Studio örneği mevcut değilse, araç dosyayı yeni bir örneğinde açar. İkinci örnek, üç dosyayı yerine yalnızca bir dosya açılır dışında benzerdir.
+
+```shell
 devenv /edit MyFile.cs
+
+devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)

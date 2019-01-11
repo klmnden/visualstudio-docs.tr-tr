@@ -1,5 +1,5 @@
 ---
-title: Yönetilen nesnelerin özel görünümlerini oluşturma | Microsoft Docs
+title: Nesnelerin özel görünümlerini oluşturma | Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -10,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a7ff5d534cd343f18d0cf0a841801df434c75e7
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204235"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227648"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Nesnelerin özel görünümlerini oluşturma (C#, Visual Basic, C++)
 Visual Studio hata ayıklayıcı değişken pencerelerinde veri türleri görüntüleme biçimini özelleştirebilirsiniz.  
-  
-## <a name="attributes"></a>Öznitelikler
-
-C# ve Visual Basic kullanarak özel verileri için genişletmeleri ekleyebilirsiniz <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, ve <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
-  
-İçinde [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kod, Visual Basic DebuggerBrowsable özniteliği desteklemiyor. Bu sınırlama, .NET Framework'ün daha yeni sürümlerde kaldırılmıştır.    
 
 ## <a name="native-code"></a>Yerel kod
 
-C++ kodu için Natvis çerçevesini kullanarak özel veri türü genişletmeleri açıklandığı ekleyebilirsiniz [hata ayıklayıcıda yerel nesnesinin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects). Veya özel veri kullanma genişletmeleri de ekleyebilirsiniz <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, ve <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+C++ kodu için Natvis çerçevesini kullanarak özel veri türü genişletmeleri açıklandığı ekleyebilirsiniz [hata ayıklayıcıda yerel nesnesinin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects). C + +/ CLI kodu, ayrıca kullanabileceğiniz burada bu makalede açıklanan öznitelikleri.
+
+## <a name="attributes"></a>Öznitelikler
+
+İçinde C#, Visual Basic ve C++ (C + +/ CLI kodu), özel veri kullanma genişletmeleri ekleyebilirsiniz <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, ve <xref:System.Diagnostics.DebuggerBrowsableAttribute>.  
+  
+İçinde [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kod, Visual Basic DebuggerBrowsable özniteliği desteklemiyor. Bu sınırlama, .NET Framework'ün daha yeni sürümlerde kaldırılmıştır.    
 
 ## <a name="visualizers"></a>Görselleştiriciler
 

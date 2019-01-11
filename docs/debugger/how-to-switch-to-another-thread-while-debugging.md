@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202c153108558d1bf74a10b41b34c5b164ec1587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a8fd2106d4982f8e840974bc659d2296cf8c592
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990707"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227531"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da hata ayıklarken başka bir iş parçacığına geçiş
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Nasıl yapılır: Visual Studio'da hata ayıklarken başka bir iş parçacığına geçiş (C#, Visual Basic, C++)
 Çok iş parçacıklı uygulamada hata ayıklaması yaparken, başka bir iş parçacığına çalıştığınız iş parçacığına geçmek için birkaç yöntemden birini kullanabilirsiniz.
 
 > [!NOTE]

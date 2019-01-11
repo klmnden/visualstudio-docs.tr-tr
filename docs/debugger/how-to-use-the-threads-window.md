@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227674"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>İzlenecek yol: İş parçacıkları penceresini kullanarak bir çok iş parçacıklı uygulamaların hatalarını ayıklama
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>İzlenecek yol: İş parçacıkları penceresini kullanarak bir çok iş parçacıklı uygulamaların hatalarını ayıklama (C#, Visual Basic, C++)
 
 Birçok Visual Studio kullanıcı arabirimi öğeleri birden çok iş parçacıklı uygulamaların hatalarını ayıklamanıza yardımcı olur. Bu makale Kod Düzenleyicisi penceresinde birden çok iş parçacıklı hata ayıklama özellikleri tanıtır **hata ayıklama konumu** araç ve **iş parçacıkları** penceresi. Hata ayıklama çok iş parçacıklı uygulamalar için diğer araçları hakkında daha fazla bilgi için bkz: [birden çok iş parçacıklı uygulamalarında hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md). 
   

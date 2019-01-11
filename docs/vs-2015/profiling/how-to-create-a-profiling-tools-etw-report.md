@@ -39,7 +39,7 @@ Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Window
   
 -   İçinde bir **komut istemi** penceresinde aşağıdaki komutu yazın:  
   
-     *ToolsPath* **VSPerfReport** *VSPFile***/Summary:ETW [/ XML]**   
+     *ToolsPath* **VSPerfReport** *VSPFile* **/Summary:ETW [/ XML]**  
   
     |||  
     |-|-|  

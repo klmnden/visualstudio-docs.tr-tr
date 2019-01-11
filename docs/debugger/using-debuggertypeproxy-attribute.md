@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a2ca6cbeba30f836a4878db569db14ff2af10d
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204260"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227544"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic"></a>DebuggerTypeProxy özniteliğini kullanma (C#, Visual Basic)
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy özniteliğini kullanma (C#, Visual Basic, C + +/ CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> bir proxy ya da bir tür ve tür şeklini hata ayıklayıcı pencerelerinde görüntülenen değişiklikler için stand-in belirtir. Bir proxy sahip bir değişken görüntülediğinizde, proxy özgün türü için anlamına gelir **görüntüleme**. Proxy türü yalnızca genel üyeleri hata ayıklayıcı değişken penceresinde görüntüler. Özel üyeler görüntülenmez.
 
@@ -33,6 +33,9 @@ Bu öznitelik için uygulanabilir:
 - Yapılar
 - Sınıflar
 - Derlemeleri
+
+> [!NOTE]
+> Yerel kod için bu öznitelik yalnızca C + desteklenir +/ CLI kodu.
 
 Proxy yerini alacak türünde bir bağımsız değişken alan bir oluşturucu türü proxy sınıfı olmalıdır. Hedef türünde bir değişken görüntülemek ihtiyaç duyduğu her seferinde hata ayıklayıcı türü proxy sınıfının yeni bir örneğini oluşturur. Bu performans etkileri olabilir. Sonuç olarak, tüm kıyasla daha fazla oluşturucuda kesin olarak gerekmedikçe yapmamanız gerekir.
 

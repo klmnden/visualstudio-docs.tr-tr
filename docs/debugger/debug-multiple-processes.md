@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227388"
 ---
-# <a name="debug-multiple-processes"></a>Birden çok işlemde hata ayıklama
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>Birden çok işlemde hata ayıklama (C#, Visual Basic, C++)
 
 Visual Studio, birçok işlem sahip bir çözüm ayıklayabilirsiniz. Başlatabilir ve işlemler arasında geçiş yapmak, kesme, devam etmek için ve kaynak, hata ayıklamayı Durdur ve son adımla veya bireysel işlemlerden ayırın.  
 

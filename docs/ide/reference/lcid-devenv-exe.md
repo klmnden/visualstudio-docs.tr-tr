@@ -1,47 +1,54 @@
 ---
 title: -LCID (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
+- Devenv, /L switch
 - Devenv, /LCID switch
 - locale IDs
-- /l Devenv switch
+- L Devenv switch
+- /L Devenv switch
 - LCID devenv switch
-- /lcid Devenv switch
+- /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c3f8633721a4568b81fab31d8fe91a4c33be2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42da279a64f04bca7775440f803e7a26e6bd2dc8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227310"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
-Metin, para birimi ve diğer değerleri tümleşik geliştirme ortamında (IDE) için kullanılan varsayılan dili ayarlar.
+
+Metin, para birimi ve diğer değerleri IDE içinde kullanılan varsayılan dili ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cmd
-devenv {/LCID|/l} LocaleID
+```shell
+devenv {/LCID|/L} LocaleID
 ```
 
 ## <a name="arguments"></a>Arguments
- `LocaleID` Gerekli. Dilin LCID (yerel ayar kimliği) belirtirsiniz.
+
+- *LocaleID*
+
+  Gerekli. Belirttiğiniz dil yerel ayar tanımlayıcısını (LCID).
 
 ## <a name="remarks"></a>Açıklamalar
- IDE yükler ve ortam için varsayılan doğal dili ayarlar. Bu değişiklik oturumları arasında kalıcı ve yansıtılan **uluslararası ayarlar** bölmesinde **ortam** seçeneklerini **seçenekleri** iletişim kutusu IDE'de.
 
- Belirtilen dil kullanıcının sisteminde kullanılabilir durumda değilse, / LCID anahtarı yok sayıldı.
+IDE yükler ve ortam için varsayılan doğal dili ayarlar. Bu değişiklik oturumları arasında kalıcıdır ve bu değişikliği IDE gösterir **Araçları** > **seçenekleri** > **ortam**  >  **Uluslararası ayarlar** > **dil** kutusu.
 
- Aşağıdaki tabloda LCID'ler tarafından desteklenen dilleri listeler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Belirtilen dil, sisteminizde mevcut değilse `/LCID` anahtarı yok sayıldı.
+
+Aşağıdaki tabloda LCID'ler Visual Studio tarafından desteklenen dilleri listeler.
 
 |Dil|LCID|
 |--------------|----------|
@@ -56,13 +63,14 @@ devenv {/LCID|/l} LocaleID
 |İspanyolca|3082|
 
 ## <a name="example"></a>Örnek
- Bu örnekte, İngilizce kaynak dizelerini IDE'ye yükler.
 
-```cmd
+Bu örnekte, İngilizce kaynak dizelerini IDE'ye yükler.
+
+```shell
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
 - [Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/international-settings-environment-options-dialog-box.md)

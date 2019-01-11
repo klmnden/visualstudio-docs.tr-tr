@@ -1,58 +1,66 @@
 ---
 title: -Run (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /run Devenv
-- run Devenv switch
+- /Run Devenv
+- Run Devenv switch
 - applications [Visual Studio], running
-- /r Devenv switch
-- Devenv, /run switch
-- r Devenv switch (/r)
+- /R Devenv switch
+- Devenv, /Run switch
+- R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f46afb431b998b5fd937d24178a602f6aea81eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db6653bf0b44d186ad30f3d1dffa367db7fe354b
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227479"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
+
 Derler ve belirtilen proje veya çözüm çalıştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cmd
-devenv {/run|/r} {SolutionName|ProjectName}
+```shell
+devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SolutionName`
 
- Gerekli. Bir çözüm dosyası adını ve tam yolu.
+- *SolutionName*
 
- `ProjectName`
+  Bir çözüm dosyası adını ve tam yolu.
 
- Gerekli. Bir proje dosyasının adını ve tam yolu.
+- *projectName*
+
+  Bir proje dosyasının adını ve tam yolu.
+
+- `/Out` *OutputFilename*
+
+  İsteğe bağlı. Aracı göndermek istediğiniz bir dosya adı için çıkış. Dosya zaten varsa, aracı çıkış dosyasının sonuna ekler.
 
 ## <a name="remarks"></a>Açıklamalar
- Derler ve belirtilen proje veya çözümü etkin çözüm yapılandırması için belirtilen ayarlara göre çalıştırır. Bu anahtar tümleşik geliştirme ortamı (IDE) başlatır ve sonra proje etkin bırakan veya çözüm çalıştırma tamamlandı.
 
--   Çift tırnak içine boşluk dizeleri alın.
+Derler ve belirtilen proje veya çözümü etkin çözüm yapılandırması için belirtilen ayarlara göre çalıştırır. Bu anahtar IDE'yi başlatır ve sonra proje etkin bırakan veya çözüm çalıştırma tamamlandı.
 
--   Hataları dahil olmak üzere Özet bilgileri görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.
+- Çift tırnak içine boşluk dizeleri alın.
+
+- Hataları dahil olmak üzere Özet bilgileri görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/Out` geçin.
 
 ## <a name="example"></a>Örnek
- Bu örnek çözüm çalıştırılır `MySolution` kullanarak etkin dağıtım yapılandırması.
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+Bu örnek çözüm çalıştırılır `MySolution` kullanarak etkin dağıtım yapılandırması.
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.

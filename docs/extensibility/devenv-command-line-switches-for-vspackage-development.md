@@ -1,12 +1,13 @@
 ---
 title: VSPackage geliştirme için Devenv komut satırı anahtarları | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
-- /setup command line switch
-- /resetskippkgs command line switch
-- /noVSIP command line switch
-- /rootsuffix command line switch
+- /Setup command line switch
+- /ResetSkipPkgs command line switch
+- /RootSuffix command line switch
+- /SafeMode command line switch
+- /Splash command line switch
 - command-line switches
 - registry, Visual Studio SDK
 - command line, switches
@@ -17,35 +18,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4333f7e0c892771ffb9b4643f4814cf3352a8f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ed62724cd7d9c957e602975aebb3be8fc6547d1
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227362"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage geliştirme için Devenv komut satırı anahtarları
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yürütülürken komut satırından görevlerini otomatikleştirmek geliştiricilerinin sağlayan *devenv.exe*, dosyayı Visual Studio tümleşik geliştirme ortamı (IDE) başlatır.  
+
+Visual Studio geliştiriciler yürütülürken komut satırından görevlerini otomatikleştirmek tanır `devenv.exe`, Visual Studio IDE başlatıldığında dosya.  
 
  Görevler aşağıdakileri içerir:  
 
--   IDE dışında tasarlanmış yapılandırmalardan uygulamalarda dağıtılıyor.  
+- IDE dışında tasarlanmış yapılandırmalardan uygulamalarda dağıtılıyor.  
 
--   Otomatik olarak önayarını kullanarak proje oluşturma, derleme ayarları veya hata ayıklama yapılandırması.  
+- Otomatik olarak önayarını kullanarak proje oluşturma, derleme ayarları veya hata ayıklama yapılandırması.  
 
--   IDE dışında tüm gelen belirli yapılandırmalar, IDE'de yükleniyor. Buna ek olarak, IDE başlatma sırasında özelleştirebilirsiniz.  
+- IDE dışında tüm gelen belirli yapılandırmalar, IDE'de yükleniyor. IDE başlatma sonrasında de özelleştirebilirsiniz.  
 
-## <a name="guidelines-for-switches"></a>Anahtarlar için yönergeler  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] belgeler, kullanıcı düzeyi devenv komut satırı anahtarları açıklar. Daha fazla bilgi için [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md). Devenv VSPackage geliştirme, dağıtım ve hata ayıklama için yararlı olan ek komut satırı anahtarları da destekler.  
+## <a name="guidelines-for-switches"></a>Anahtarlar için yönergeler
 
+Visual Studio belgeleri açıklayan kullanıcı düzeyi `devenv` komut satırı anahtarları. Daha fazla bilgi için [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md). `devenv` Aracı VSPackage geliştirme, dağıtım ve hata ayıklama için yararlı olan ek komut satırı anahtarları da destekler.  
 
 | Komut satırı anahtarı | Açıklama |
 |---------------------| - |
-| safemode | Başlatan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] güvenli modda, yalnızca varsayılan IDE ve Hizmetleri Yükleniyor. Ne zaman yüklenmesini safemode anahtarı tüm üçüncü taraf VSPackages engeller [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] böylece kararlı yürütme sağlamaya başlar.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. |
-| / resetskippkgs | Ardından Tümünü Atla sorunlu VSPackage yükleme kaçınmak isteyen kullanıcılar tarafından eklenen yükleme seçenekleri temizler başlatır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. SkipLoading etiketinin varlığını VSPackage yüklenmesini devre dışı bırakır. Etiket temizleme VSPackage yükleme yeniden etkinleştirir.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. |
-| /rootsuffix | Başlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] alternatif bir konuma kullanarak. Aşağıdaki komutu tarafından oluşturulan kısayol tarafından çalıştırılan [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] yükleyicisi:<br /><br /> Devenv /RootSuffix üs<br /><br /> Bu durumda, exp, 10.0 yerine örneğin 10.0Exp belirli bir soneki olan bir konum belirtir. Deneysel örneği örneğini listesinden bir VSPackage hatalarını ayıklamanızı sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kod yazmak için kullanmakta olduğunuz.<br /><br /> Bu anahtar VSRegEx.exe kullanarak oluşturduğunuz bir konumu tanımlayan bir dize alabilir. Daha fazla bilgi için [deneysel örneğinde](../extensibility/the-experimental-instance.md). |
-| /Splash | Gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamanki giriş ekranı ve ardından ana IDE göstermeden önce bir ileti kutusu gösterir. İleti kutusu incelemek için bir VSPackage ürün simgesi, örneğin denetlemek için giriş ekranı sağlar.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. |
+| `/ResetSkipPkgs` | Sorunlu VSPackage yükleme engellemek istiyorsanız, sonra Visual Studio başlatılır kullanıcılar tarafından eklenen tüm Atla yükleme seçenekleri temizler. SkipLoading etiketinin varlığını VSPackage yüklenmesini devre dışı bırakır. Etiket temizleme VSPackage yükleme yeniden etkinleştirir.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. |
+| `/RootSuffix` | Visual Studio, alternatif bir konuma kullanarak başlatır. Visual Studio SDK'sı yükleyicisi tarafından oluşturulan kısayol olarak aşağıdaki komutu çalıştırın:<br /><br /> `devenv /RootSuffix exp`<br /><br /> Bu durumda, `exp` belirli bir sonek konumuyla tanımlar (örneğin, `10.0Exp` yerine `10.0`). Deneysel örneği ayrı ayrı kod yazmak için kullandığınız Visual Studio'nun örneğinden VSPackage hatalarını ayıklamanızı sağlar.<br /><br /> Bu anahtar VSRegEx.exe kullanarak oluşturduğunuz bir konumu tanımlayan bir dize alabilir. Daha fazla bilgi için [deneysel örneğinde](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Visual Studio, yalnızca varsayılan IDE ve servisler yüklenirken güvenli modda başlatır. `/SafeMode` Anahtarı tüm üçüncü taraf VSPackages kararlı yürütme sağlayarak Visual Studio başladığında yüklenmesini engeller.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. |
+| `/Setup` | Menüleri, araç çubukları ve tüm kullanılabilir VSPackages komut gruplarından tanımlayan kaynak meta verileri birleştirmek için Visual Studio zorlar. Bu gibi durumlarda, bu komut yalnızca bir yönetici olarak çalıştırabilirsiniz. <br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. `devenv /Setup` Komut genellikle yükleme işleminin son adımı verilir. Kullanım `/Setup` anahtar IDE başlamıyor.|
+| `/Splash` | Visual Studio Karşılama ekranında, her zamanki şekilde ve ana IDE göstermeden önce sonra gösterir bir ileti kutusu gösterir. İleti kutusu, çalışma ekranı (örneğin, bir VSPackage ürün simgesi denetlemek için) sağlar.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır. |
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Komut satırı anahtarları ekleme](../extensibility/adding-command-line-switches.md)   
- [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Komut satırı anahtarları ekleme](../extensibility/adding-command-line-switches.md)
+- [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)

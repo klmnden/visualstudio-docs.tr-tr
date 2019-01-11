@@ -1,9 +1,9 @@
 ---
 title: DebuggerDisplay özniteliğini kullanma | Microsoft Docs
-ms.date: 08/09/2017
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baa31b791b3ee76905023d32f92f774ae6c9d5f8
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228064"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic"></a>DebuggerDisplay özniteliğini kullanma (C#, Visual Basic)
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>DebuggerDisplay özniteliğini kullanma (C#, Visual Basic, C + +/ CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Hata ayıklayıcı değişken pencerelerinde bir nesne, özelliği veya alanı nasıl görüntüleneceğini denetler. Bu öznitelik türleri, temsilciler, özellikleri, alanları ve derlemeler için uygulanabilir.  
   
  `DebuggerDisplay` Özniteliğine sahip bir dize değeri sütununda görüntülenecek olan tek bir bağımsız değişken, tür örnekleri. Bu dize, küme ayraçları içerebilir (`{` ve `}`). Metin çifti küme ayraçlarının içinde bir alan, özelliği veya yöntemi değerlendirilir.  
@@ -30,6 +30,9 @@ ms.locfileid: "54204540"
   
 > [!IMPORTANT]
 >  Varsa **nesnelerin ham yapısını değişkenler pencerelerinde Göster** onay kutusu seçiliyse **Araçlar/Seçenekler / hata ayıklama** iletişim kutusu, ardından `DebuggerDisplay` özniteliği göz ardı edilir.  
+
+> [!NOTE]
+> Yerel kod için bu öznitelik yalnızca C + desteklenir +/ CLI kodu.
   
  Aşağıdaki tablo olası bazı kullanımlarını gösterir `DebuggerDisplay` özniteliği ve örnek çıktı.  
   

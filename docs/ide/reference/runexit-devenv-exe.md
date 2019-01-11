@@ -1,58 +1,66 @@
 ---
-title: -Runexit (devenv.exe)
-ms.date: 11/04/2016
+title: -RunExit (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- runexit Devenv switch
-- Devenv, /runexit switch
-- /runexit Devenv switch
+- RunExit Devenv switch
+- Devenv, /RunExit switch
+- /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa715c97310edc447610b0c0ae61226ab5334f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ebeba5afc1eb50703f62e386f7453d7c0c3c1f6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955126"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227193"
 ---
-# <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
+# <a name="runexit-devenvexe"></a>/ RunExit (devenv.exe)
+
 Derler ve belirtilen proje veya çözüm çalıştırır ve ardından tümleşik geliştirme ortamı (IDE) kapatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-devenv /runexit {SolutionName|ProjectName}
+```shell
+devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Arguments
- `SolutionName`
 
- Gerekli. Bir çözüm dosyası adını ve tam yolu.
+- *SolutionName*
 
- `ProjectName`
+  Bir çözüm dosyası adını ve tam yolu.
 
- Gerekli. Bir proje dosyasının adını ve tam yolu.
+- *projectName*
+
+  Bir proje dosyasının adını ve tam yolu.
+
+- `/Out` *OutputFilename*
+
+  İsteğe bağlı. Aracı göndermek istediğiniz bir dosya adı için çıkış. Dosya zaten varsa, aracı çıkış dosyasının sonuna ekler.
 
 ## <a name="remarks"></a>Açıklamalar
- Derler ve belirtilen proje veya çözümü etkin çözüm yapılandırması için belirtilen ayarlara göre çalıştırır. IDE projeyi sırasında bu anahtar en aza indirir veya çözümü çalıştırın, sonra projeyi IDE'yi kapatır ve çözüm çalışması tamamlandıktan.
 
--   Çift tırnak içine boşluk dizeleri alın.
+Derler ve belirtilen proje veya çözümü etkin çözüm yapılandırması için belirtilen ayarlara göre çalıştırır. IDE projeyi sırasında bu anahtar en aza indirir veya çözümü çalıştırın. Proje sonra IDE'yi kapatır veya çözüm çalıştırma tamamlandı.
 
--   Hataları dahil olmak üzere Özet bilgileri görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.
+- Çift tırnak içine boşluk dizeleri alın.
+
+- Hataları dahil olmak üzere Özet bilgileri görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/Out` geçin.
 
 ## <a name="example"></a>Örnek
- Bu örnek çözüm çalıştırılır `MySolution` simge durumuna küçültülmüş IDE'de etkin dağıtım yapılandırması kullanan ve daha sonra IDE'yi kapatır.
+
+Bu örnek çözüm çalıştırılır `MySolution` simge durumuna küçültülmüş IDE'de etkin dağıtım yapılandırması kullanan ve daha sonra IDE'yi kapatır.
 
 ```
-devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
 - [/ Çalıştırma (devenv.exe)](../../ide/reference/run-devenv-exe.md)

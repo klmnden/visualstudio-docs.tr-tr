@@ -1,6 +1,6 @@
 ---
 title: Hata ayıklayıcıda verilerin özel görünümlerini oluşturma | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -19,22 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234c00bcfd1b46adc260597b5ad438854c45de98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5c5466515e0e58fd94d7a949b04d060a90925d1
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227232"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda verilerin özel görünümlerini oluşturma
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Visual Studio hata ayıklayıcıda verilerin özel görünümlerini oluşturma (C#, Visual Basic, C++)
+
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] İncelemek ve programınızın durumunu değiştirmek için hata ayıklayıcı birçok araç sağlar. Bu araçlar işlevi yalnızca kesme modunda çoğunu.
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Değişken pencereler ve DataTips verilerin özel görünümlerini oluşturma
- Çoğu [windows hata ayıklayıcı](../debugger/debugger-windows.md), gibi **Otolar** ve **izleme** windows, değişkenleri inceleyebilir izin verir. Nasıl yerel türler, yönetilen nesneleri özelleştirebilirsiniz ve hata ayıklayıcı değişken pencerelerinde ve kendi türlerinizi gösterilen [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Daha fazla bilgi için [yerel nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-native-objects.md) ve [yönetilen nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-dot-managed-objects.md).
+
+ Çoğu [windows hata ayıklayıcı](../debugger/debugger-windows.md), gibi **Otolar** ve **izleme** windows, değişkenleri inceleyebilir izin verir. Nasıl yerel türler, yönetilen nesneleri özelleştirebilirsiniz ve hata ayıklayıcı değişken pencerelerinde ve kendi türlerinizi gösterilen [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Daha fazla bilgi için [yerel nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-native-objects.md) ve [nesnelerin özel görünümlerini oluşturma](../debugger/create-custom-views-of-dot-managed-objects.md).
   
-## <a name="create-custom-visualizers"></a>Özel görselleştiriciler oluşturma  
+## <a name="create-custom-visualizers"></a>Özel görselleştiriciler oluşturma
+
  Görselleştiriciler, bir nesnenin veya değişkenin içeriklerini anlamlı bir şekilde görüntülemek etkinleştirin. Visual Studio hata ayıklayıcısının Görselleştirici Büyüteç'i kullanarak açabilirsiniz farklı windows başvuruyor ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Görselleştirici simgesi") simgesi. Örneğin, nasıl bir HTML dizesi yorumlanır ve bir tarayıcıda görüntülenen HTML görselleştiriciyi gösterir. Görselleştiriciler ipuçlarından erişebileceğiniz **izleme** penceresinde **Otolar** penceresinde ve **Yereller** penceresi. **QuickWatch** iletişim kutusu Görselleştirici de sağlar. Daha fazla bilgi için [özel görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md).
   
-## <a name="see-also"></a>Ayrıca bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
+
  [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [komut penceresi](../ide/reference/command-window.md)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)

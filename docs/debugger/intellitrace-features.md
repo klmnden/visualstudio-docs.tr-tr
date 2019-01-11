@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37c90f212233936a6a260b6339effb261f91c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227843"
 ---
-# <a name="intellitrace-features"></a>IntelliTrace Özellikleri
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace özellikleri (C#, Visual Basic, C++)
 
 IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığınını ve yerel değişken değerleri) yürütmesinde farklı noktalarda incelemenize olanak tanır, uygulama yöntemini çağırır. Yalnızca zamanki gibi hata ayıklamaya başlayın. - IntelliTrace varsayılan olarak açıldı ve IntelliTrace kaydı yeni bilgileri görebilirsiniz **tanılama araçları** penceresinin altında **olayları** sekmesi. Bir olay seçin ve tıklayın **etkinleştirmek geçmiş hata ayıklama** bu olay için kaydedilen Yereller ve çağrı yığınını görmek için.
 
@@ -40,19 +40,19 @@ Intellitrace'in açık olduğunu doğrulamak için açık **Araçlar > Seçenekl
 > [!NOTE]
 > Tüm ayarlar kapsamını **IntelliTrace** seçenekler sayfası olan Visual Studio bir bütün, bunları ayrı projeler veya çözümler. Bu ayarlar bir değişiklik, Visual Studio, tüm hata ayıklama oturumları ve tüm projeler veya çözümlerden tüm örneklerine uygulanır.
 
-## <a name="ChooseEvents"></a> (Yalnızca yönetilen kod) Intellitrace'in kaydettiği olayları seçin
+## <a name="ChooseEvents"></a> Intellitrace'in kaydettiği olayları seçin (C#, Visual Basic)
 
 Veya belirli IntelliTrace olaylarının kaydı devre dışı bırakabilirsiniz.
 
 Hata ayıklama, hata ayıklamayı durdurun. Git **Araçlar > Seçenekler > IntelliTrace > IntelliTrace olayları**. Intellitrace'in kaydedeceği olayları seçin.
 
-## <a name="Snapshots"></a> Anlık görüntüleri toplama
+## <a name="Snapshots"></a> Anlık görüntü toplamak (C#, Visual Basic, C++)
 
 Bu varsayılan olarak etkin değildir ancak IntelliTrace anlık görüntüleri uygulamanızın her bir kesme noktası ve hata ayıklayıcı adım olayı yakalayabilir ve bu anlık görüntüler Geçmiş hata ayıklama oturumunda görüntüleyebilirsiniz. Anlık görüntü, tam uygulama durumu görünümünü verir. Anlık görüntü yakalama özelliğini etkinleştirmek için Git **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace anlık görüntülerini (yönetilen ve yerel)**. Daha fazla bilgi için [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md)
 
 Anlık görüntü Visual Studio Enterprise 2017 sürüm 15.5 ve üzeri ve Windows 10 Yıldönümü güncelleştirmesi gerektirir veya üzeri.  .NET Core ve ASP.NET Core uygulamaları için Visual Studio Enterprise 2017 sürüm 15.7 gereklidir. Windows, Visual Studio Enterprise 2017 sürümü 15.9 hedefleyen yerel uygulamalar için Önizleme 2 gereklidir.
 
-## <a name="GoingFurther"></a> IntelliTrace olaylarını toplamak ve çağrı bilgileri (yalnızca yönetilen kod)
+## <a name="GoingFurther"></a> IntelliTrace olaylarını toplamak ve arama bilgileri (C#, Visual Basic)
 
 Bu, varsayılan olarak etkin değildir, ancak IntelliTrace yöntemi çağrılarını olaylarla birlikte kaydedebilir. Yöntem çağrıları Git toplanmasını etkinleştirmek için **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace olayları ve arama bilgileri (sadece yönetilen)**.
 
@@ -92,7 +92,7 @@ Birden çok modül eklemek için dizenin başında veya sonunda * joker karakter
 
 Modül sayısı için en az tutmaya çalışın. Toplanacak verileri daha az olduğundan daha iyi performansı elde edin. Üzerinden geçmek üzere daha az veri olmadığından kullanıcı Arabiriminde daha az gürültü de alırsınız.
 
-## <a name="SaveSession"></a> IntelliTrace verilerini dosyaya kaydet
+## <a name="SaveSession"></a> IntelliTrace verilerini dosyaya kaydet (C#, Visual Basic, C++)
 
 IntelliTrace topladığı verileri kaydedebilirsiniz gidip **hata ayıklama > IntelliTrace > IntelliTrace oturumu kaydetmek** hata ayıklama ve bir kesme durumunda uygulamasıdır. Menü öğesi devre dışı bırakılır ve IntelliTrace uygulama hala çalışıyorsa veya hata ayıklama durdurduysanız toplanan verileri kaydetmek mümkün olmayacaktır.
 

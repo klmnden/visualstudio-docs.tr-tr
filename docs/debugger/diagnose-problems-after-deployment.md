@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860916"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228038"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama (C#, Visual Basic)
 
 IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunları tanılamak için Visual Studio otomatik olarak doğru kaynak dosyalarını ve hata ayıklama IntelliTrace günlüğü için gerekli olan simge dosyalarını Bul izin vermek için sürümle yapı bilgilerini içerir.
 

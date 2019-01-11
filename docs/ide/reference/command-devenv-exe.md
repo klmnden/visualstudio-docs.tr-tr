@@ -1,49 +1,65 @@
 ---
 title: -Command (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /command switch
-- /command Devenv switch
+- Devenv, /Command switch
+- /Command Devenv switch
+- Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6eff1311ac0ae2232d04d8e3fb5c86d711ba179
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfc52c66fd56f2d3d7954584804cfd4e3e75ee24
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227960"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
-Başlatıldıktan sonra belirtilen komutu yürütür [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).
+
+Visual Studio IDE başlatıldıktan sonra belirtilen komutu yürütür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cmd
-devenv /command CommandName
+```shell
+devenv /Command CommandName
 ```
 
 ## <a name="arguments"></a>Arguments
- `CommandName` Gerekli. Tam adı bir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komut ya da çift tırnak işareti içine alınmış, diğer ad. Komut ve diğer ad sözdizimi hakkında daha fazla bilgi için bkz: [Visual Studio komutları](../../ide/reference/visual-studio-commands.md).
+
+- *commandName*
+
+  Gerekli. Visual Studio komut ya da çift tırnak işareti içine alınmış diğer adının, tam adı. Komut ve diğer ad sözdizimi hakkında daha fazla bilgi için bkz: [Visual Studio komutları](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Açıklamalar
- Başlangıç tamamlandıktan sonra IDE adlandırılmış komutu yürütür. Bu anahtarı kullanırsanız, IDE aşağıdaki dotnetclıtools'u görüntülemiyor [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başlangıcında başlangıç sayfası.
 
- Bir eklenti bir komut sunarsa, komut satırından eklentiyi başlatmak için bu anahtarı kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Eklenti Yöneticisi'ni kullanarak eklentileri denetleme](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+Başlangıç tamamlandıktan sonra IDE adlandırılmış komutu yürütür. Bu anahtarı kullanırsanız, IDE başlangıçta Visual Studio Başlangıç sayfası görüntülemez.
+
+Bir eklenti bir komut sunarsa, komut satırından eklentiyi başlatmak için bu anahtarı kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Eklentileri Eklenti Yöneticisi'ni kullanarak denetim](/previous-versions/xwdatdwh(v=vs.140)).
 
 ## <a name="example"></a>Örnek
- Bu örnek başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve makro açık sık kullanılan dosyaları otomatik olarak çalıştırır.
 
-```cmd
+İlk örnek, Visual Studio başlatır ve makro açık sık kullanılan dosyaları otomatik olarak çalıştırır.
+
+İkinci örnek bir web tarama IDE içinde sekme açar ve Microsoft Docs siteye gider.
+
+Üçüncü örnek adlı yeni bir dosya oluşturur `some_file.cs` ve Kod Düzenleyicisi'nde açılır.
+
+```shell
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
+
+devenv /command "navigate https://docs.microsoft.com/"
+
+devenv /command "nf some_file.cs"
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Devenv komut satırı anahtarları](../../ide/reference/devenv-command-line-switches.md)
 - [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)
+- [Komut penceresi](command-window.md)

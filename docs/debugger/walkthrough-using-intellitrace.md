@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4afd2f742918ebe1badd86be0ebf4181fb2ba06
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227999"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>Visual Studio'da IntelliTrace ile olayları görüntüleme
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visual Studio Enterprise'da IntelliTrace ile olayları görüntüleme (C#, Visual Basic)
+
 Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategorilerini hakkında bilgi, ayrıca olayları toplamak için IntelliTrace'i kullanabilirsiniz. Aşağıdaki yordamlar, bunun nasıl yapılacağını gösterir.  
   
- IntelliTrace, Visual Studio Enterprise sürümünde, ancak değil Professional veya Community sürümlerini kullanabilirsiniz.  
+IntelliTrace, Visual Studio Enterprise sürümünde, ancak değil Professional veya Community sürümlerini kullanabilirsiniz.  
   
 ##  <a name="GettingStarted"></a> IntelliTrace yapılandırma  
+
  Yalnızca IntelliTrace olayları ile hata ayıklama deneyebilirsiniz. IntelliTrace olayları hata ayıklayıcı olayları, özel durumlar, .NET Framework olayları ve diğer sistem olaylarıdır ' dir. Açın veya hatalarını ayıklamaya başlamadan önce Intellitrace'in kaydettiği olayları kontrol belirli olayları açmak. Daha fazla bilgi için [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
   
  - Dosya erişimi için IntelliTrace olayı kapatın. Git **Araçlar > Seçenekler > IntelliTrace > IntelliTrace olayları** sayfasında ve genişletin **dosya** kategorisi. Denetleme **dosya** olay kategorisi. Bu, Kontrol edilecek tüm dosya olayları (erişim, Kapat, silme) neden olur.
