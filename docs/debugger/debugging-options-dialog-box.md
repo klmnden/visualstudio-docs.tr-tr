@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d920897c831ca1c92b1db5fe3d649ffd7ee67143
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935118"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268779"
 ---
 # <a name="debugging-options-dialog-box"></a>Hata Ayıklama, Seçenekler İletişim Kutusu
 **Hata ayıklama** klasörü içinde **seçenekleri** iletişim kutusunda **Araçları** menüsünde, hata ayıklayıcı belirtmenize olanak verir sayfalarda araç seçenekleri sağlar.  
@@ -41,5 +41,5 @@ ms.locfileid: "53935118"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md) [Visual Studio'da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)   
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   
  [Kullanıcı arabirim başvurusunda hata ayıklama](../debugger/debugging-user-interface-reference.md)

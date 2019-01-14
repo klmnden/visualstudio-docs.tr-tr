@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929704"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269325"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Renk, Çizgi Stili ve Diğer Şekil Özelliklerini Denetleme
-Renk 'olarak sunulabilir gibi' - bazı Şekil özelliklerini, diğer bir deyişle, şekle bir alan özelliğine bağlı. Başkalarının doğrudan denetlenmesi gerekir.
+
+Renk gibi bazı Şekil özelliklerini 'kullanıma sunulabilecek'. Diğer bir deyişle, özellikleri, şekle bir alan özelliğine bağlanabilir. Başkalarının doğrudan denetlenmesi gerekir.
 
 ## <a name="exposing-a-property"></a>Bir özelliği kullanıma sunma
  Renk gibi bazı Şekil özelliklerini değeri alan özelliği olarak bağlanabilir.
 
- DSL tanımındaki şekil, bağlayıcı veya diyagram sınıfı seçin. Kendi bağlam menüsünde **ekleme kullanıma sunulan**, istediğiniz gibi dolgu rengi özelliği seçin.
+ DSL tanımındaki şekil, bağlayıcı veya diyagram sınıfı seçin. Kendi sağ tıklama menüsünde **ekleme kullanıma sunulan**, istediğiniz gibi dolgu rengi özelliği seçin.
 
  Şekil, program kodu veya bir kullanıcı olarak ayarlanmış bir alan özelliği artık sahiptir.
 

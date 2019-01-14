@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989182"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269988"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -93,7 +93,7 @@ public void Debit(double amount)
 
 5. İçinde **BankTests** projesi, bir başvuru ekleyin **banka** proje.
 
-   İçinde **Çözüm Gezgini**seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle** bağlam menüsünden.
+   İçinde **Çözüm Gezgini**seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle** sağ tıklatma menüsünden.
 
 6. İçinde **başvuru Yöneticisi** iletişim kutusunda **çözüm** iade edin **banka** öğesi.
 
@@ -103,7 +103,7 @@ Doğrulamak için bir test sınıfı oluşturun `BankAccount` sınıfı. Kullana
 
 ### <a name="rename-a-class-file"></a>Bir sınıf dosyasını yeniden adlandırma
 
-İçinde **Çözüm Gezgini**seçin *UnitTest1.cs* BankTests projesindeki dosya. Bağlam menüsünden **Yeniden Adlandır**ve ardından dosyayı yeniden adlandır *BankAccountTests.cs*. Seçin **Evet** kod öğesi için tüm başvuruları yeniden adlandırmak isteyip istemediğinizi soran bir iletişim kutusundaki `UnitTest1` projedeki.
+İçinde **Çözüm Gezgini**seçin *UnitTest1.cs* BankTests projesindeki dosya. Sağ tıklama menüsünden **Yeniden Adlandır**ve ardından dosyayı yeniden adlandır *BankAccountTests.cs*. Seçin **Evet** kod öğesi için tüm başvuruları yeniden adlandırmak isteyip istemediğinizi soran bir iletişim kutusundaki `UnitTest1` projedeki.
 
 Bu adım için sınıfın adını değiştirir `BankAccountTests`. *BankAccountTests.cs* dosyası artık şu kodu içerir:
 

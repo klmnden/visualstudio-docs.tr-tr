@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b899ca08efac05bb58cc119b7e63489c6b8934d5
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 208bc533578d116fe55ad336f4aaee72eec94c3f
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227973"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268583"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -40,7 +40,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - *SolnConfigName*
 
-  İsteğe bağlı. Adlı çözüm yeniden oluşturmak için kullanılacak çözüm yapılandırması adı *SolutionName*. Bu bağımsız değişken kalan, çözümün etkin Yapılandırma Aracı'nı kullanır.
+  İsteğe bağlı. Çözüm Yapılandırması adı (gibi `Debug` veya `Release`) adlı çözüm yeniden oluşturmak için kullanılacak *SolutionName*. Çözüm birden fazla platformu varsa, platform de belirtmeniz gerekir (örneğin, `Debug|Win32`). Bu bağımsız değişken belirtilmezse, ya da boş bir dize (`""`), çözümün etkin Yapılandırma Aracı'nı kullanır.
 
 - `/Project` *ProjName*
 
@@ -48,7 +48,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - `/ProjectConfig` *ProjConfigName*
 
-  İsteğe bağlı. Projenin yapı yapılandırması adı yeniden oluştururken kullanılacak `/Project` adlı. Bu anahtar belirtilirse, onu geçersiz kılar *SolnConfigName* bağımsız değişken.
+  İsteğe bağlı. Projenin yapı yapılandırması adı (gibi `Debug` veya `Release`) yeniden oluştururken kullanılacak `/Project` adlı. Çözüm birden fazla platformu varsa, platform de belirtmeniz gerekir (örneğin, `Debug|Win32`). Bu anahtar belirtilirse, onu geçersiz kılar *SolnConfigName* bağımsız değişken.
 
 - `/Out` *OutputFilename*
 

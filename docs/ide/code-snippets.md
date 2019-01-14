@@ -18,16 +18,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889234"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269421"
 ---
 # <a name="code-snippets"></a>Kod parçacıkları
 
-Küçük bir bağlam menüsü komutu veya bir birleşimini bir kısayol tuşlarını kullanarak bir kod dosyasında eklenebilen yeniden kullanılabilir kod bloklarını kod parçacıkları verilmiştir. Genellikle gibi yaygın olarak kullanılan kod blokları içerdikleri `try-finally` veya `if-else` blokları, ancak tüm sınıfları veya yöntemleri eklemek için kullanılabilir.
+Küçük bir kod dosyasına sağ tıklayın (bağlam menüsü) komutu veya bir birleşimini bir kısayol tuşlarını kullanarak eklenebilen yeniden kullanılabilir kod bloklarını kod parçacıkları verilmiştir. Genellikle gibi yaygın olarak kullanılan kod blokları içerdikleri `try-finally` veya `if-else` blokları, ancak tüm sınıfları veya yöntemleri eklemek için kullanılabilir.
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [kod parçacıkları (Mac için Visual Studio)](/visualstudio/mac/snippets).
@@ -61,7 +61,7 @@ finally
 }
 ```
 
-Tıklayarak, bu kod parçacığı ekleyebilirsiniz **parçacık Ekle** kod penceresinin bağlam menüsünde **Visual C#** , yazın `tryf`ve tuşuna **sekmesini**. Ya da yazabilirsiniz `tryf` basın **sekmesini** iki kez.
+Bu kod parçacığı tıklayarak ekleyebilirsiniz **parçacık Ekle** kod penceresinin sağ tıklama menüsünde (bağlam menüsü) **Visual C#** , yazın `tryf`ve tuşuna  **Sekme**. Ya da yazabilirsiniz `tryf` basın **sekmesini** iki kez.
 
 Surround-with kod parçacığı örneği: c++ kısayol `if` ekleme parçacığı veya bir surround-with kod parçacığı olarak kullanılabilir. Bir kod satırı seçerseniz (örneğin `return FALSE;`) ve ardından **Surround With** > **varsa**, kod parçacığı çizgiyi genişletilir:
 

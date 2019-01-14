@@ -9,12 +9,12 @@ description: Genel müşteri numarasını (PCN) veya yetkilendirme numaranızı 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637025"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269217"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Benim "Genel Müşteri Numaramı (PCN) veya yetkilendirme numarasını nasıl bulabilirim?
 
@@ -22,18 +22,13 @@ Kuruluşunuzun abonelik yönetimi portalında ekleme işlemini tamamlamak için 
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>PCN veya yetkilendirme numaranızı bulmak için
 
-1.  Toplu Lisanslama hizmeti Merkezi'nde için oturum açın: [ https://www.Microsoft.com/licensing/servicecenter ](https://www.Microsoft.com/licensing/servicecenter).
-
-2. Abonelikler sekmesinden seçin **Visual Studio abonelikleri**.
+Toplu Lisanslama hizmet Merkezi'nden, artık PCN'nizi erişim sağlar.  Bunu elde etmek için lütfen Visual Studio abonelikleri desteğe başvurun.
+1. Ziyaret edin https://visualstudio.microsoft.com/subscriptions/support/#talktous
+2. Dokunun **hesap, abonelik ve faturalandırma desteği** düğmesi.
     > [!div class="mx-imgBorder"]
-    > ![VLSC'de abonelikleri seçin](_img/vlsc/vlsc-subscriptions.png)
-
-3. PCN veya genel müşteri numarası yarı yarıya page down bulunur.
-    > [!div class="mx-imgBorder"]
-    > ![VLSC'de PCN'yi bulmanız](_img/vlsc/vlsc-pcn.png)
-
-    
-Yukarıdaki sayfayı görmüyor ve Visual Studio oturum açma sayfasına yönlendirilirsiniz, lütfen kopyalayın ve aşağıdaki bağlantıyı tarayıcınıza yapıştırın: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
+    > ![Abonelik desteği'ni seçin](_img/vlsc/vlsc-pcn.png)
+3. Aşağı açılan listeden ülkenizi seçin.
+4. PCN'NİZİ'ın sizin için araştırma olan bir destek Aracısı başvurmak için sunulan destek seçeneklerini ülkenizde listesinden seçin.  
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Birden çok PCN'ye sahipsem hangisini kullanmalıyım?
 

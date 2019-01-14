@@ -8,12 +8,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff82db5a7ca5c5a18c7d89017dfae892d209fbf
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840888"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270053"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -37,7 +37,7 @@ C++ birim testi projeleri desteği [CodeLens](../ide/find-code-changes-and-other
 
 **Visual Studio 2017 sürüm 15.5**
 
-- **Google Test bağdaştırıcısı** varsayılan bileşeni olarak eklenir **C++ ile masaüstü geliştirme** iş yükü. Bir çözüm ekleyebileceğiniz bir proje şablonu olan **Yeni Proje Ekle** çözüm düğümü bağlam menüsünde **Çözüm Gezgini**ve Seçenekler yoluyla yapılandırabileceğiniz **Araçları**  >  **Seçenekleri**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Google Test kullanmak](how-to-use-google-test-for-cpp.md).
+- **Google Test bağdaştırıcısı** varsayılan bileşeni olarak eklenir **C++ ile masaüstü geliştirme** iş yükü. Bir çözüm ekleyebileceğiniz bir proje şablonu olan **Yeni Proje Ekle** ndeki çözüm düğümüne sağ tıklama menüsünde **Çözüm Gezgini**ve Seçenekler yoluyla yapılandırabileceğiniz **araçları**  >  **Seçenekleri**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Google Test kullanmak](how-to-use-google-test-for-cpp.md).
 
 - **Boost.Test** varsayılan bileşeni olarak eklenir **C++ ile masaüstü geliştirme** iş yükü. İle tümleşik **Test Gezgini** ancak şu anda proje şablonu yok, bu nedenle onu el ile yapılandırılması gerekir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Boost.Test kullanma](how-to-use-boost-test-for-cpp.md).
 

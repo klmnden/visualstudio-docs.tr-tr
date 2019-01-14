@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2b5c13665de3836844b16c405bf85c56f287e39
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 30637a797d8c0845bae9548bb6a48e877d44727b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227401"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269481"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -40,7 +40,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolnConfigName*
 
-  İsteğe bağlı. Adlı çözümü derlemek için kullanılan çözüm yapılandırması adı *SolutionName*. Birden çok çözüm platformları kullanamıyorsanız, platform de belirtmeniz gerekir (örneğin, `Debug|Win32`). Bu bağımsız değişken kalan, çözümün etkin Yapılandırma Aracı'nı kullanır.
+  İsteğe bağlı. Çözüm Yapılandırması adı (gibi `Debug` veya `Release`) adlı bir çözüm oluşturmak için kullanılacak *SolutionName*. Birden çok çözüm platformları kullanamıyorsanız, platform de belirtmeniz gerekir (örneğin, `Debug|Win32`). Bu bağımsız değişken belirtilmezse, ya da boş bir dize (`""`), çözümün etkin Yapılandırma Aracı'nı kullanır.
 
 - `/Project` *ProjName*
 
@@ -48,7 +48,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - `/ProjectConfig` *ProjConfigName*
 
-  İsteğe bağlı. Bir proje adı, adlandırılmış bir proje derlenirken kullanılacak yapılandırması oluşturun. Birden çok proje platformu varsa, aynı zamanda platforma, örneğin belirtmeniz gerekir `Debug|Win32`. Bu anahtar belirtilirse, onu geçersiz kılar *SolnConfigName* bağımsız değişken.
+  İsteğe bağlı. Bir proje adını yapı yapılandırması (gibi `Debug` veya `Release`) adlı bir proje derlenirken kullanılacak. Çözüm birden fazla platformu varsa, platform de belirtmeniz gerekir (örneğin, `Debug|Win32`). Bu anahtar belirtilirse, onu geçersiz kılar *SolnConfigName* bağımsız değişken.
 
 - `/Out` *OutputFilename*
 

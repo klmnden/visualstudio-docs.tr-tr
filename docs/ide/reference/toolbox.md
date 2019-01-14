@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918618"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270001"
 ---
 # <a name="toolbox"></a>Araç Kutusu
 
@@ -40,7 +40,7 @@ Projenizi denetimleri araç kutusunda görünür kümesini de etkiler hedefleyen
 
 Varsayılan olarak **araç kutusu** Visual Studio IDE'nin sol tarafında daraltılmış ve imleci üzerine taşındığında görüntülenir. Sabitleyebilmeniz için **araç kutusu** (tıklayarak **PIN** , araç çubuğundaki simgesini) açık kalması taşıdığınızda imleç. Ayrıca kaldıracağınızı **araç kutusu** penceresi ve ekran üzerinde herhangi bir yere sürükleyin. Yerleştirme, çıkarmaya gizleme ve **araç kutusu** alt araç çubuğunun sağ tıklayıp seçeneklerden birini seçerek.
 
-Öğeleri yeniden düzenleyebilir bir **araç kutusu** sekmesinde veya bağlam menüsünde aşağıdaki komutları kullanarak özel sekme ve öğeleri ekleyin:
+Öğeleri yeniden düzenleyebilir bir **araç kutusu** sekmesinde veya sağ tıklama menüsünde aşağıdaki komutları kullanarak özel sekme ve öğeleri ekleyin:
 
 - **Öğeyi yeniden adlandır** -seçili öğeyi yeniden adlandırır.
 

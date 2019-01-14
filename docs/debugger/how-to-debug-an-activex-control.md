@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir ActiveX denetiminde hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924794"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269689"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Nasıl Yapılır: Bir ActiveX denetiminde hata ayıklama
+# <a name="how-to-debug-an-activex-control"></a>Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama
 
 > [!NOTE]
 > Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).
@@ -62,4 +62,4 @@ ActiveX denetimi hata ayıklamak için bir kapsayıcı (çalıştırmak denetimi
 - [Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [COM ve ActiveX Hata Ayıklaması](../debugger/com-and-activex-debugging.md)
 - [Visual Studio’da hata ayıklama](../debugger/index.md)
-- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

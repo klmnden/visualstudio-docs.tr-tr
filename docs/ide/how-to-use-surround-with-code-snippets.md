@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908819"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270158"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Nasıl Yapılır: Surround-with kod parçacıklarını kullanma
+# <a name="how-to-use-surround-with-code-snippets"></a>Nasıl yapılır: Surround-with kod parçacıklarını kullanma
 
-Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanma işlemini açıklar. Surround-with kod parçacıkları kullanılabilir üç yolu vardır: bir klavye kısayolu aracılığıyla aracılığıyla **Düzenle** menüsünde, bağlam menüsü aracılığıyla.
+Aşağıdaki yordamlar Çevrele kod parçacıklarını kullanma işlemini açıklar. Surround-with kod parçacıkları kullanılabilir üç yolu vardır: bir klavye kısayolu aracılığıyla aracılığıyla **Düzenle** menüsünde ve sağ tıklayın veya bağlam menüsü aracılığıyla.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Surround-with kod parçacıkları klavye kısayolu üzerinden kullanmak için
 

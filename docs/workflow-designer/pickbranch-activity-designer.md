@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860263"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269871"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch Etkinlik Tasarımcısı
 
@@ -32,7 +32,7 @@ Erişim **PickBranch** Tasarımcı içinde **akış denetimi** kategorisi **ara�
 
 İki boş <xref:System.Activities.Statements.PickBranch> nesneleriyle adlarını görüntülemek **Branch1** ve **Branch2** öğeleri olarak varsayılan olarak oluşturulan bir <xref:System.Activities.Statements.Pick> etkinlik zaman **çekme** Etkinlik Tasarımcısı, başlangıçta iş akışı tasarımcısını açın bırakılır. Bu ilgili <xref:System.Activities.Statements.PickBranch.DisplayName%2A> özellik değerlerini düzenlenebilir **PickBranch** Tasarımcı üst bilgi veya içinde **özellikleri** her dal için penceresi.
 
-Eklemek için iki yolu vardır <xref:System.Activities.Statements.PickBranch> nesneler koleksiyonuna bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** nden Tasarımcı **araç kutusu**, bağlam menüsünden kullanarak veya içinde **çekme** tasarım yüzeyine:
+Eklemek için iki yolu vardır <xref:System.Activities.Statements.PickBranch> nesneler koleksiyonuna bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** nden Tasarımcı **araç kutusu**, veya sağ tıklama menüsünden kullanarak içinde **çekme** tasarım yüzeyine:
 
 - **PickBranch** Tasarımcısı oluşturur bir <xref:System.Activities.Statements.PickBranch> zaman bunu sürüklediğiniz gelen **araç kutusu** ve dalları birine bırakılan bir **çekme** üzerinde etkinlik Tasarımcısı İş Akışı Tasarımcısı yüzeyine. Yeni <xref:System.Activities.Statements.PickBranch> nesneleri, içine yerleştirilebilir <xref:System.Activities.Statements.Pick> sola veya sağa var olan herhangi biri Tasarımcı <xref:System.Activities.Statements.PickBranch> zaten koleksiyonda yer alan öğeleri. Sürüklendiğinde bir **PickBranch** üzerine Tasarımcı **çekme** fareyle, tasarımcı **çekme** Tasarımcısı yeri belirtmek üzere bir dikey gri mavi bandı kullanır <xref:System.Activities.Statements.PickBranch> verilen fare yerleştirme için eklenir.
 

@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886377"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270300"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örneklerini güncellemek için kullanabileceğiniz bir API oluşturur. Bu API, DSL tanımını oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.
@@ -191,7 +191,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örnek
 
  `CommandSet.cs`
 
- Diyagramda görünür olan bağlam menüsü komutları. Uyum veya bu kümeye ekleyebilirsiniz. Bu dosya, komutlar için kod içerir. Menü komutlarını konumunu Commands.vsct dosyası tarafından belirlenir. Daha fazla bilgi için [kullanıcı komutları ve eylemleri yazma](../modeling/writing-user-commands-and-actions.md).
+ Diyagramda görülebilir sağ menü komutları. Uyum veya bu kümeye ekleyebilirsiniz. Bu dosya, komutlar için kod içerir. Menü komutlarını konumunu Commands.vsct dosyası tarafından belirlenir. Daha fazla bilgi için [kullanıcı komutları ve eylemleri yazma](../modeling/writing-user-commands-and-actions.md).
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Standart menü komutlarını, menü, diyagram bağlam menüsü gibi bulur **Düzenle** menü ve benzeri. Komutları için CommandSet.cs kodudur. Yerini değiştirmek veya standart komutları değiştirebilir ve kendi komutlar ekleyebilirsiniz. Daha fazla bilgi için [kullanıcı komutları ve eylemleri yazma](../modeling/writing-user-commands-and-actions.md).
+ Menülerdeki diyagramı (bağlam) sağ tıklama menüsünde gibi standart menü komutlarını bulur **Düzenle** menü ve benzeri. Komutları için CommandSet.cs kodudur. Yerini değiştirmek veya standart komutları değiştirebilir ve kendi komutlar ekleyebilirsiniz. Daha fazla bilgi için [kullanıcı komutları ve eylemleri yazma](../modeling/writing-user-commands-and-actions.md).
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  Seçimi model Gezgini'nde diyagram seçimi ile eşitlenmiş tutmak istiyorsanız, aşağıdaki kodu kullanabilirsiniz:
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

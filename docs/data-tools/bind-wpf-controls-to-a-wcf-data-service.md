@@ -16,12 +16,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925189"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269923"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 
@@ -284,7 +284,7 @@ Oluşturun ve görüntüleyin ve güncelleştirme Müşteri kayıtlarını doğr
 
 3. İçinde **Çözüm Gezgini**, sağ **AdventureWorksSalesEditor** proje.
 
-4. Bağlam menüsünde altında **hata ayıklama**, tıklayın **yeni örnek Başlat**.
+4. Sağ tıklama menüsünde (bağlam menüsü) altında **hata ayıklama**, tıklayın **yeni örnek Başlat**.
 
      Uygulama çalışır. Aşağıdakileri doğrulayın:
 

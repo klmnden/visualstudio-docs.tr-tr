@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890715"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269806"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>İzlenecek yol: Kod parçacığı oluşturma
 Yalnızca birkaç adımda bir kod parçacığı oluşturabilirsiniz. Tek yapmak için ihtiyacınız olan bir XML dosyası oluşturun, uygun öğeleri doldurmak ve kodunuzu ekleyin. Kodunuza başvurular ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacığını kullanarak Visual Studio yüklemenize ekleyebilirsiniz **alma** düğmesini **kod parçacıkları Yöneticisi** (**Araçları**  >   **Kod parçacıkları Yöneticisi**).
@@ -77,9 +77,9 @@ Yalnızca birkaç adımda bir kod parçacığı oluşturabilirsiniz. Tek yapmak 
 
 5.  Parçacık aşağıdaki konuma kopyalanır:
 
-     *%USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual Basic\My kod parçacıkları*
+     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Visual Basic projesi açarak ve kod bir dosyası açarak parçacığınızı test. Dosyayı seçin **parçacıkları** > **parçacık Ekle** bağlam menüsünden **kod Parçacıklarım**. Adlı bir parçacık görmelisiniz **My Visual Basic kod parçacığını**. Çift tıklatın.
+6.  Visual Basic projesi açarak ve kod bir dosyası açarak parçacığınızı test. Dosyayı seçin **parçacıkları** > **parçacık Ekle** sağ tıklama menüsünden **kod Parçacıklarım**. Adlı bir parçacık görmelisiniz **My Visual Basic kod parçacığını**. Çift tıklatın.
 
     `Console.WriteLine("Hello, World!")` kod dosyasına eklenir.
 

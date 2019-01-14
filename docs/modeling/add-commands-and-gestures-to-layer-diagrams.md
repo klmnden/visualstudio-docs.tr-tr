@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2322980bcc3cc1c18052b7949cc9e4752ebfaa9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb7dfe94363d757c1ac15a8a44d21d69304c1e60
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940868"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270144"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 
-Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Studio'da bağımlılık diyagramları üzerinde. Bu uzantıları içinde bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılarına dağıtabileceğiniz VSIX) paketleyebilirsiniz.
+Sağ menü komutlarını tanımlama ve hareket işleyicileri Visual Studio'da bağımlılık diyagramları üzerinde. Bu uzantıları içinde bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılarına dağıtabileceğiniz VSIX) paketleyebilirsiniz.
 
 İsterseniz, aynı Visual Studio projesinde birkaç komut ve hareket işleyici tanımlayabilirsiniz. Ayrıca, gibi birçok projeyi bir VSIX içinde birleştirebilirsiniz. Örneğin, katman komutlarını ve bir etki alanına özgü dil içeren tek bir VSIX tanımlayabilirsiniz.
 

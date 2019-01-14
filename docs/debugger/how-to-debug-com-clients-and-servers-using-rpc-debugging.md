@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9df8a9dfeef620ba7afab517bc00e16717e7096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874225"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269273"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Nasıl Yapılır: RPC hata ayıklamasını kullanarak COM istemcilerinde ve sunucularda hata ayıklama
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Nasıl yapılır: RPC hata ayıklamasını kullanarak COM istemcilerinde ve sunucularda hata ayıklama
 COM istemci/sunucu uygulamalarında hata ayıklamak için uzak yordam çağrısı (RPC) hata ayıklama'ı kullanabilirsiniz. RPC kullanmak için hata ayıklamayı etkinleştirmeniz gerekir. RPC hata ayıklama etkin, hata ayıklayıcı istemciden gelen sunucu çağrı geçtiğinizde sunucuya ekler ve kendi kod hatalarını ayıklamanıza olanak tanır. Hata ayıklayıcı eklendiğinde, tüm hata ayıklama özellikleri ile istemci ve sunucu işlemlerini kullanabilirsiniz.  
   
 ### <a name="to-enable-rpc-debugging"></a>RPC hata ayıklamasını etkinleştirmek için  
@@ -54,4 +54,5 @@ COM istemci/sunucu uygulamalarında hata ayıklamak için uzak yordam çağrıs�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM Sunucusunda ve Kapsayıcısında Hata Ayıklama](../debugger/com-server-and-container-debugging.md)  
- [Visual Studio'da hata ayıklama](../debugger/index.md) [hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+ [Visual Studio’da hata ayıklama](../debugger/index.md)  
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

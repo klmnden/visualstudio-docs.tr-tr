@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883032"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269897"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI testlerinde HTML5 denetimleri kullanma
 
@@ -39,11 +39,11 @@ Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denet
 
 |Eylem|Kaydetme|Oluşturulan kod|
 |-|---------------|-|
-|**Ses kaydını oynatın**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Play \<adı > ses 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Ses kaydını oynatın**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Play \<adı > ses 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Ses belirli bir sürede arama**|Arama \<adı > ses 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Duraklatma ses**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Duraklatma \<adı > 00:01:53, ses|HtmlAudio.Pause(TimeSpan)|
-|**Sesi kapa ses**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Sesi kapa \<adı > ses|HtmlAudio.Mute()|
-|**Ses sesi Aç**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Sesi Aç \<adı > ses|HtmlAudio.Unmute()|
+|**Duraklatma ses**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Duraklatma \<adı > 00:01:53, ses|HtmlAudio.Pause(TimeSpan)|
+|**Sesi kapa ses**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi kapa \<adı > ses|HtmlAudio.Mute()|
+|**Ses sesi Aç**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi Aç \<adı > ses|HtmlAudio.Unmute()|
 |**Ses birimi değiştirin**|Ayarlama hacmi \<adı > ses % 79 arasında değişiyor|HtmlAudio.SetVolume(float)|
 
 Bkz: [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) onaylama üzerinde ekleyebileceğiniz özellikler listesi.
@@ -63,11 +63,11 @@ Bkz: [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElem
 
 |Eylem|Kaydetme|Oluşturulan kod|
 |-|---------------|-|
-|**Videoyu oynat**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Play \<adı > Video 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Videoyu oynat**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Play \<adı > Video 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Belirli bir zaman video arama**|Arama \<adı > Video 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Videoyu Duraklat**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Duraklatma \<adı > 00:01:53, Video|HtmlVideo.Pause(TimeSpan)|
-|**Sesi kapa video**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Sesi kapa \<adı > Video|HtmlVideo.Mute()|
-|**Video Sesi Aç**<br /><br /> Doğrudan denetimi veya denetimleri bağlam menüsü.|Sesi Aç \<adı > Video|HtmlVideo.Unmute()|
+|**Videoyu Duraklat**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Duraklatma \<adı > 00:01:53, Video|HtmlVideo.Pause(TimeSpan)|
+|**Sesi kapa video**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi kapa \<adı > Video|HtmlVideo.Mute()|
+|**Video Sesi Aç**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi Aç \<adı > Video|HtmlVideo.Unmute()|
 |**Video toplu değiştirme**|Ayarlama hacmi \<adı > % 79 arasında değişiyor Video||
 
 Bkz: [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) onaylama üzerinde ekleyebileceğiniz özellikler listesi.

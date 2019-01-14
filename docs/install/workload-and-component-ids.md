@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 84711c13270fea4e1b7202d1bd04c8acdde911fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6df4435cf19dc18e2c24e32207b9d3d9bce093a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932687"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269728"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 iş yükü ve Bileşen kimlikleri
 
@@ -37,7 +37,7 @@ Sürüm adlarını aşağıdaki tabloda kullanılabilir iş yükü ve Bileşen k
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Küçük ekipler için profesyonel geliştirici araçları ve Hizmetleri |
 | [Görsel&nbsp;Studio topluluk&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Ücretsiz, tam olarak Öğrenciler, açık kaynak ve bireysel geliştiriciler için özellikli IDE |
 | [Görsel&nbsp;Studio Takım&nbsp;Gezgini&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Visual Studio Geliştirici Araç Seti olmadan Team Foundation Server ve Azure DevOps Hizmetleri ile etkileşim kurma |
-| [Visual Studio Masaüstü Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi ile WPF, WinForms ve Win32 gibi yerel ve yönetilen uygulamalar oluşturun. C#, Visual Basic ve Visual C++ desteği içerir. |
+| [Visual Studio Masaüstü Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Product.WDExpress | Söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi ile WPF, WinForms ve Win32 gibi yerel ve yönetilen uygulamalar oluşturun. C#, Visual Basic ve Visual C++ desteği içerir. |
 | [Görsel&nbsp;Studio derlemesi&nbsp;Araçları&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio derleme araçları Visual Studio IDE'ye gerek kalmadan yerel ve yönetilen MSBuild tabanlı uygulamalar oluşturmanıza olanak tanır. Visual C++ Derleyicileri ve kitaplıkları, MFC, ATL ve C + yüklemek için aşağıdaki seçenek +/ CLI desteği. |
 | [Görsel&nbsp;Studio Test&nbsp;aracı&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Otomatikleştirilmiş testleri ve yük testleri uzaktan çalıştırmak destekler |
 | [Görsel&nbsp;Studio Test&nbsp;denetleyicisi 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Otomatik testleri birden çok makineye dağıtma |

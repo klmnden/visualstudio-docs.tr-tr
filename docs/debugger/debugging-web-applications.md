@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f8827bea4ad3819c7915c34793dfe3b2164d5bb
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923050"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269637"
 ---
 # <a name="debugging-web-applications"></a>Web Uygulamalarında Hata Ayıklama
 Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktadır.  
@@ -37,7 +37,7 @@ Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktad�
  Hata ayıklamayı etkinleştirmek için gereken adımları açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulamalar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında ve betikte hata ayıklama](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [Visual Studio'da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+ [Web Uygulamalarında ve Betikte Hata Ayıklama](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
+ [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)  
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)  
+ [Visual Studio’da hata ayıklama](../debugger/index.md)

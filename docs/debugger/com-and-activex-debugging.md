@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820870"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269617"
 ---
 # <a name="com-and-activex-debugging"></a>COM ve ActiveX Hata Ayıklaması
 Bu bölümde, hata ayıklama COM uygulamaları ve ActiveX denetimleri hakkında ipuçları sağlar.  
@@ -35,14 +35,14 @@ Bu bölümde, hata ayıklama COM uygulamaları ve ActiveX denetimleri hakkında 
  [COM Sunucusunda ve Kapsayıcısında Hata Ayıklama](../debugger/com-server-and-container-debugging.md)  
  Özel durumlar, COM uygulamalarında hata ayıklaması yaparken değinmektedir. Sorunlar şunlardır: COM sunucusunda ve aynı çözüm içinde iki proje kullanarak, işlem sınırları arasında Git çağrıları oturum izleme, geri çağırma işlevlerde kesme noktalarını ayarlamadan ve arasında ve kapsayıcılar ve sunucular içine Adımlama kapsayıcı hata ayıklama.  
   
- [Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama](../debugger/how-to-debug-an-activex-control.md)  
+ [Nasıl yapılır: ActiveX Denetiminde Hata Ayıklama](../debugger/how-to-debug-an-activex-control.md)  
  ActiveX denetimlerinde hata ayıklama hakkında bilgi içerir. Bu içerir: belirli bir kapsayıcıda benzetimi ve kapsayıcının kodun içine Adımlama bir veri bağımlı ActiveX denetiminde hata ayıklama nasıl ActiveX denetiminizin kodu yürütür, görmek hata ayıklama oturumu için bir kapsayıcı belirtme.  
   
  [COM Hata Ayıklama Araçları](../debugger/com-debugging-tools.md)  
  Görüntüleyiciler ve COM uygulamanızı hata ayıklama faydalı olabilecek örnek uygulamaları listeler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)  
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)  
  Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgileri içerir: hata ayıklayıcı, ayarları ve hazırlığı yeni nedir, özel durumları, kesme noktaları, Düzenle ve devam et, hata ayıklama yönetilen kodu, Visual C++ projelerinde hata ayıklama, hata ayıklama COM ve ActiveX, DLL'lerinde hata ayıklama, SQL ve kullanıcı hata ayıklama arabirimi başvuruları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

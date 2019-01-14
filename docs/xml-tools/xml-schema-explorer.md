@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918985"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268506"
 ---
 # <a name="xml-schema-explorer"></a>XML Şema Gezgini
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918985"
 
 -   Kullanıyorsanız [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **XML Şeması Gezgini** bağlantı.
 
--   Kullanıyorsanız [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, seçmek için bağlam menüsünü kullanın **XML Şeması Gezgini**.
+-   Kullanıyorsanız [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, seçmek için (sağ tıklama) bağlam menüsünü kullanın **XML Şeması Gezgini**.
 
 -   Belirleyebilirsiniz **XML Şeması Gezgini** gelen **görünümü** menüsü.
 

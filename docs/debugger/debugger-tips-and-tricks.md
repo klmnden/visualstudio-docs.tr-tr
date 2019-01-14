@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927161"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270066"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
-Visual Studio hata ayıklayıcı için birkaç üretkenlik ipuçları ve püf noktaları öğrenmek için bu konuyu okuyun. Hata ayıklayıcı temel özelliklerine bir bakış için bkz. [hata ayıklayıcısı özellik Turu](../debugger/debugger-feature-tour.md). Bu konu başlığında özellik turu dahil edilmeyen bazı alanlar biz karşılarız.
+Visual Studio hata ayıklayıcı için birkaç üretkenlik ipuçları ve püf noktaları öğrenmek için bu konuyu okuyun. Hata ayıklayıcı temel özelliklerine bir bakış için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md). Bu konu başlığında özellik turu dahil edilmeyen bazı alanlar biz karşılarız.
 
 ## <a name="pin-data-tips"></a>PIN veri ipuçları
 

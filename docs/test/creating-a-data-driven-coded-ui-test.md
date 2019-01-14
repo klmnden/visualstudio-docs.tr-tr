@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968611"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270251"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Verilerle çalışan kodlanmış UI testi oluşturma
 
@@ -64,11 +64,11 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
    }
    ```
 
-5. Kullanım `AddNumbers()` test çalıştırdığını doğrulamak için yöntem. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **çalıştırmak testlerini**. (Klavye kısayolu: **CTRL**+**R**,**T**).
+5. Kullanım `AddNumbers()` test çalıştırdığını doğrulamak için yöntem. Yukarıda gösterilen test yöntemi imleci getirin, sağ tıklama menüsünü açın ve seçin **çalıştırmak testlerini**. (Klavye kısayolu: **Ctrl**+**R**,**T**).
 
     Test başarılı olup gösteren test sonucu görüntülenir **Test Gezgini** penceresi. Gelen Test Gezgini penceresi açmak için **Test** menüsünde seçin **Windows** seçip **Test Gezgini**.
 
-6. Bir veri kaynağı onaylama parametre değerleri için de kullanılabilir olduğundan — beklenen değerlerini doğrulamak için test tarafından kullanılır — iki sayının toplamını doğru olduğunu doğrulamak için onaylama ekleyelim. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **kodlanmış UI testi için kod üret**, ardından **kullanım kodlanmış UI Test Oluşturucusu**.
+6. Bir veri kaynağı onaylama parametre değerleri için de kullanılabilir olduğundan — beklenen değerlerini doğrulamak için test tarafından kullanılır — iki sayının toplamını doğru olduğunu doğrulamak için onaylama ekleyelim. Yukarıda gösterilen test yöntemi imleci getirin, sağ tıklama menüsünü açın ve seçin **kodlanmış UI testi için kod üret**, ardından **kullanım kodlanmış UI Test Oluşturucusu**.
 
     Toplamı görüntüleyen hesaplayıcı metin denetiminde eşleyin.
 
@@ -93,7 +93,7 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
    }
    ```
 
-9. Test kullanarak çalıştığını doğrulamak `ValidateSum()` yöntemi. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **çalıştırmak testlerini**. (Klavye kısayolu: **CTRL**+**R**,**T**).
+9. Test kullanarak çalıştığını doğrulamak `ValidateSum()` yöntemi. Yukarıda gösterilen test yöntemi imleci getirin, sağ tıklama menüsünü açın ve seçin **çalıştırmak testlerini**. (Klavye kısayolu: **Ctrl**+**R**,**T**).
 
      Bu noktada, tüm parametre değerlerini kendi yöntemlerini sabiti olarak tanımlanır. Ardından, veri odaklı bizim test yapmak için bir veri kümesi oluşturalım.
 

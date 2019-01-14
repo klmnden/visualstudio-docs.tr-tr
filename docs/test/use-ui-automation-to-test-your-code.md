@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840648"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270199"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -216,7 +216,7 @@ Onayları kodunu oluşturmak ve UI haritasına denetim eklemek için seçin **ko
 
 Seçmek istediğiniz denetim odağı kaybettiğinde ve seçtiğinizde kaybolur **onaylama Ekle** gelen aracı **kodlanmış UI Test Oluşturucusu**:
 
-Bazı durumlarda, denetimleri eklediğiniz ve bunların özelliklerini doğrulayın, klavyeyi kullanmak gerekebilir. Örneğin, bir bağlam menü denetimini kullanan kodlanmış UI testi kaydetmeyi denediğinizde listesi denetiminde menü öğelerini odağı kaybeder ve seçmek çalıştığınızda kaybolur **onaylama Ekle** gelen aracı **kodlanmış UI testi Oluşturucu**. Bu bağlam menüsü Internet Explorer'da burada odağından ve ile seçmek çalışırsanız kaybolur aşağıdaki çizimde gösterilmiştir **onaylama Ekle** aracı.
+Bazı durumlarda, denetimleri eklediğiniz ve bunların özelliklerini doğrulayın, klavyeyi kullanmak gerekebilir. Örneğin, sağ tıklama menüsünde denetimini kullanan kodlanmış UI testi kaydetmeyi denediğinizde listesi denetiminde menü öğelerini odağı kaybeder ve seçmek çalıştığınızda kaybolur **onaylama Ekle** gelen aracı **kodlanmış kullanıcı Arabirimi Test Oluşturucusu**. Bu Internet Explorer sağ tıklama menüsünü burada odağından ve ile seçmek çalışırsanız kaybolur aşağıdaki çizimde gösterilmiştir **onaylama Ekle** aracı.
 
 ![Sı Codeduıtest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
@@ -250,7 +250,7 @@ Gerekirse, varsayılan atamasını klavye varsa **Ctrl**+**Shift**+**R** , kodla
 
 Klavye atamaları değiştirmek için aşağıdaki yapılandırma dosyasını değiştirin:
 
-*% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
 Yapılandırma dosyasında değerlerini değiştirmek `HoverKeyModifier` ve `HoverKey` anahtarları klavye atamaları değiştirmek için:
 
@@ -269,7 +269,7 @@ Belirli bir denetimin üzerine geldiğinizde birçok Web sitesi, bu ek ayrıntı
 
 Bir web tarayıcısında örtük eklenmemesi kaydını etkinleştirmek için yapılandırma dosyasını açın:
 
-*% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
 Yapılandırma dosyası anahtar olduğunu doğrulayın `RecordImplicitiHovers` ayarlamak bir değerini `true` aşağıdaki örnekte gösterildiği gibi:
 

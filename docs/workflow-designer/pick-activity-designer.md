@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946613"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269507"
 ---
 # <a name="pick-activity-designer"></a>Pick Etkinlik Tasarımcısı
 
@@ -30,7 +30,7 @@ A <xref:System.Activities.Statements.Pick> etkinliği içeren bir koleksiyonu <x
 
 Erişim **çekme** etkinlik Tasarımcısı'nda **akış denetimi** kategorisi **araç kutusu**. **Çekme** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve etkinlik tasarımcıları normalde, örneğin içine yerleştirilen her yerde iş akışı Tasarımcısı yüzeyine açın bırakılan bir  **Dizisi** etkinlik Tasarımcısı. İş Akışı Tasarımcısı'na bırakarak sonra oluşturduğu bir <xref:System.Activities.Statements.Pick> içeren varsayılan olarak iki boş etkinlik <xref:System.Activities.Statements.PickBranch> etkinlikleri öğelerle olarak görünen adlar Branch1 ve Branch2. Bu ilgili <xref:System.Activities.Statements.PickBranch.DisplayName%2A> özellik değerlerini düzenlenebilir **PickBranch** etkinlik Tasarımcısı üst bilgi veya içinde **özellikleri** her dal için penceresi.
 
-Eklemek için iki yolu vardır <xref:System.Activities.Statements.PickBranch> etkinlikleri koleksiyonuna bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** nden Tasarımcı **araç kutusu** veya bağlam menüsünden kullanarak içinde **çekme** tasarım yüzeyi. Ayrıntılar için bkz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) konu. Yalnızca öğesini dikkat edin, içine yerleştirilebilir bir **çekme** etkinlik Tasarımcısı bir **PickBranch** etkinlik Tasarımcısı.
+Eklemek için iki yolu vardır <xref:System.Activities.Statements.PickBranch> etkinlikleri koleksiyonuna bir <xref:System.Activities.Statements.Pick> nesne: sürükleme ve bırakma **PickBranch** nden Tasarımcı **araç kutusu** veya sağ tıklama menüsünü kullanarak içinden **çekme** tasarım yüzeyi. Ayrıntılar için bkz [PickBranch](../workflow-designer/pickbranch-activity-designer.md) konu. Yalnızca öğesini dikkat edin, içine yerleştirilebilir bir **çekme** etkinlik Tasarımcısı bir **PickBranch** etkinlik Tasarımcısı.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>İş akışı tasarımcısında etkinlik özellikleri seçin
 

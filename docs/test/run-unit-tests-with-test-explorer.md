@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858078"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269884"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -46,7 +46,7 @@ Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesi
 
 - Varsayılan bir grupta tüm testleri çalıştırmak için tercih **çalıştırma** ve sonra menüde grubu seçin.
 
-- Seçilmiş test için bağlam menüsünü açın ve ardından çalıştırmak istediğiniz testleri tek tek seçin **seçili Testleri Çalıştır**.
+- Seçilmiş test için sağ tıklama menüsünü açın ve ardından çalıştırmak istediğiniz testleri tek tek seçin **seçili Testleri Çalıştır**.
 
 - Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
@@ -84,7 +84,7 @@ Test başarısız olursa, Ayrıntılar bölmesinde de görüntüler:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Test yönteminin kaynak kodunu görüntüleme
 
- Visual Studio düzenleyicisinde bir test yöntemi için kaynak kodunu görüntülemek için testi seçin ve ardından **testi Aç** bağlam menüsünde (klavye: **F12**).
+ Visual Studio düzenleyicisinde bir test yöntemi için kaynak kodunu görüntülemek için testi seçin ve ardından **testi Aç** sağ tıklama menüsünde (klavye: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Grup ve test listesini Filtrele
 
@@ -165,9 +165,9 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  ![Bir çalma listesini seçin](../test/media/ute_playlist.png)
 
- **Bir çalma listesi oluşturmak için**, Test Gezgini'nde bir veya birden çok test seçin. Bağlam menüsünde **çalma listesine Ekle** > **NewPlaylist**. Dosya adı ve belirttiğiniz konuma kaydetmek **yeni çalma listesi oluştur** iletişim kutusu.
+ **Bir çalma listesi oluşturmak için**, Test Gezgini'nde bir veya birden çok test seçin. Sağ tıklama menüsünde **çalma listesine Ekle** > **NewPlaylist**. Dosya adı ve belirttiğiniz konuma kaydetmek **yeni çalma listesi oluştur** iletişim kutusu.
 
- **Bir çalma listesine testler eklemek için**, Test Gezgini'nde bir veya birden çok test seçin. Bağlam menüsünde **çalma listesine Ekle**, testleri eklemek istediğiniz çalma listesini seçin.
+ **Bir çalma listesine testler eklemek için**, Test Gezgini'nde bir veya birden çok test seçin. Sağ tıklama menüsünde **çalma listesine Ekle**, testleri eklemek istediğiniz çalma listesini seçin.
 
  **Bir çalma listesini açmak için**, seçin **Test** > **çalma listesi** Visual Studio menüsünde ve ya da son kullanılan çalma listesinden seçin veya seçin **açın Çalma listesi** çalma konumunu ve adını belirtmek için.
 
@@ -184,13 +184,13 @@ Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanab
     > [!NOTE]
     > Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.
 
-2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** bağlam menüsünde.
+2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** sağ tıklama menüsünde.
 
    Hata ayıklayıcısı hakkında daha fazla bilgi için bkz. [Visual Studio'da hata ayıklama](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Test yöntemi performans sorunlarını tanılama
 
- Neden bir test yöntemi, çok fazla zaman aldığını tanılamak için yöntemi Test Gezgini'nde seçin ve ardından **profili** bağlam menüsünde. Bkz: [performans Gezgini](../profiling/performance-explorer.md).
+ Neden bir test yöntemi, çok fazla zaman aldığını tanılamak için yöntemi Test Gezgini'nde seçin ve ardından **profili** sağ tıklama menüsünde. Bkz: [performans Gezgini](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Birim testi kod kapsamını analiz etme
 
@@ -216,8 +216,8 @@ Test çalıştırılabilir **Test Gezgini**, Kod düzenleyicisinde bir test üze
 
 |Sık kullanılan komutları| Klavye Kısayolları|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
-|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 
 > [!NOTE]
 > Testleri yalnızca soyut sınıflar tanımlanır ve değil örneği için soyut bir sınıf, bir test çalıştırılamıyor. Soyut sınıflar testleri çalıştırmak için soyut sınıftan türeyen bir sınıf oluşturun.

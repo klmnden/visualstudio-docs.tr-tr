@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859009"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269819"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch Etkinlik Tasarımcısı
 
@@ -34,7 +34,7 @@ Erişim **TryCatch** etkinlik Tasarımcısı'nda **hata işleme** kategorisi **a
 
 Sağ üst köşesindeki genişletme düğmesine **TryCatch** görmek için tasarımcı **deneyin**, **yakalar**, ve **son** kutusu Genişletilmiş Görünüm. Bir catch eklemek için tıklatın **yeni catch ekleme** düğmesini **TryCatch** Tasarımcısı. Düğme türü açılan kutuya değiştirir. Bir özel durum türü seçin ve yakalama eklemek için ENTER tuşuna basın. Ekledikten sonra bir **Catch**, catch alanı genişler ve bir etkinlik yakalama yürütme mantığı tanımlamak için yakalama uygulamasına bırakılabilir. Genişletilmiş catch alanının sağ tarafında bir metin kutusu olduğuna dikkat edin. Bu metin kutusunu kullanarak özel durum değişkeninin adı verebilirsiniz. Özel durum değişkeni yalnızca aynı içindeki etkinlikler için kullanılabilir **Catch**.
 
-**TryCatch** Tasarımcısı düzenlemeyi desteklemiyor **Catch**. Özel durum türü değiştirmek istiyorsanız, silmek sahip **Catch** ve yeni bir tane ekleyin. A **Catch** seçip silerek veya kullanılarak silinebilir **Sil** sağ tıklayarak erişilen bağlam menüsünde menüsü.
+**TryCatch** Tasarımcısı düzenlemeyi desteklemiyor **Catch**. Özel durum türü değiştirmek istiyorsanız, silmek sahip **Catch** ve yeni bir tane ekleyin. A **Catch** seçip silerek veya seçerek silinebilir **Sil** tıklanarak erişilen bağlam menüsünde.
 
 ### <a name="the-trycatch-properties"></a>TryCatch özellikleri
 

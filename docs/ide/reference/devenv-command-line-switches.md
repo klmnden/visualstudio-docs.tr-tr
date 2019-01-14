@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3e1e3b72d8b8dbf298035ab453ffb77ecc2b1c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2c2ea1bfc4cc49378308933dffd5bc3873b25209
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227869"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269676"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv komut satırı anahtarları
 
@@ -71,10 +71,11 @@ Aşağıdaki komut satırı anahtarları, IDE görüntülemek ve açıklandığ�
 |[/Edit](edit-devenv-exe.md)|Belirtilen dosyalar, bu uygulamanın çalışan bir örneğini açar. Varsa çalışan örnek yoksa Basitleştirilmiş pencere düzenini ile yeni bir örneğini başlatır.<br /><br /> `devenv /edit File1 File2`|
 |[/ LCID veya/l](lcid-devenv-exe.md)|IDE için varsayılan dili ayarlar. Belirtilen dil Visual Studio yüklemenizde bulunmaz, bu ayar yoksayılır.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Visual Studio başlatılır ve tüm etkinlik günlük dosyasına kaydeder.<br /><br /> `devenv /log mylogfile.xml`|
-|[/ NoSplash](nosplash-devenv-exe.md)|Karşılama ekranında olmadan IDE açılır.<br /><br /> `devenv /nosplash File1 File2`|
+|[/NoSplash](nosplash-devenv-exe.md)|Karşılama ekranında olmadan IDE açılır.<br /><br /> `devenv /nosplash File1 File2`|
 |[/ Run veya /R](run-devenv-exe.md)|Derler ve belirtilen çözüm çalıştırır.<br /><br /> `devenv /run mysln.sln`|
 |[/ RunExit](runexit-devenv-exe.md)|Derler ve belirtilen çözüm çalıştırır, çözüm çalıştırılır ve çözüm çalışması bittikten sonra IDE'yi kapatır, IDE'nin en aza indirir.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Visual Studio güvenli modda başlatır. Bu anahtar yalnızca varsayılan ortama, varsayılan Hizmetleri ve üçüncü taraf paketlerini sevk edilen sürümlerini yükler.<br /><br /> Bu anahtar hiçbir bağımsız değişkeni alır.|
+|[/UseEnv](useenv-devenv-exe.md)|C++ için derleme yolu, INCLUDE, LIBPATH ve LIB ortam değişkenlerini kullanmak IDE neden olur. Bu anahtar ile birlikte yüklenir **C++ ile masaüstü geliştirme** iş yükü. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Aşağıdaki komut satırı anahtarları IDE gösterme.
 

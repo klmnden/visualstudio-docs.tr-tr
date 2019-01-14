@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c092a4bcb419039b145bccf3f6c0cd952f0ff85
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858662"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269585"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 
@@ -32,16 +32,16 @@ Visual Studio içinde iş akışı Tasarımcısı için genel kısayolları ve h
 
 |Kısayol|Amaç|
 |-|-------------|
-|CTRL + E, A|Bağımsız değişken tasarımcısını gizler veya gösterir.|
+|CTRL+E, A|Bağımsız değişken tasarımcısını gizler veya gösterir.|
 |CTRL+E, C|Seçili etkinlik yerinde daraltır.|
-|CTRL + E, E|Seçili etkinlik yerinde genişletir.|
-|CTRL + E, F|Bir akış grafiğindeki seçili etkinlikler bağlanır.|
-|CTRL + E, I|İçe Aktarılanlar tasarımcısını gizler veya gösterir.|
-|CTRL + E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|
+|CTRL+E, E|Seçili etkinlik yerinde genişletir.|
+|CTRL+E, F|Bir akış grafiğindeki seçili etkinlikler bağlanır.|
+|CTRL+E, I|İçe Aktarılanlar tasarımcısını gizler veya gösterir.|
+|CTRL+E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|
 |CTRL+E, N|Seçili etkinlik (veya en yakın) kapsamında yeni bir değişken oluşturur.|
-|CTRL + E, O|Genel Bakış haritasını gizler veya gösterir.|
-|CTRL + E, P|Seçilen etkinliğin üst gider. Bu içerik haritası gezintisini bir düzey yukarı gider ve tasarımcı yüzeyinde Kök etkinlik değiştirir.|
-|CTRL + E, S|Klavye odağı sahip öğe geçerli seçime ekler.|
+|CTRL+E, O|Genel Bakış haritasını gizler veya gösterir.|
+|CTRL+E, P|Seçilen etkinliğin üst gider. Bu içerik haritası gezintisini bir düzey yukarı gider ve tasarımcı yüzeyinde Kök etkinlik değiştirir.|
+|CTRL+E, S|Klavye odağı sahip öğe geçerli seçime ekler.|
 |CTRL+E, V|Değişken tasarımcısını gizler veya gösterir.|
 |CTRL+E, X|İş akışındaki tüm etkinlikler genişletir.|
 |CTRL+ALT+F6|Klavye odağı geçerli kullanıcı Arabirimi alanından dizideki sonraki alanına taşır. Sırayla aşağıdaki gibidir:<br /><br /> 1.  İçerik haritası gezinme çubuğu.<br />2.  Tasarımcı yüzeyi<br />3.  Bağımsız değişkenler/değişkenler/içe Aktarılanlar tasarımcısını açıksa<br />4.  Kabuk|
@@ -54,7 +54,7 @@ Aşağıdaki liste, bir akış oluşturmak için klavye tarafından kullanılan 
 
 - Bir akış yeniden boyutlandırmak için ok tuşlarını kullanarak akış geçerli kenarlığını geçmiş etkinlik taşıyın. Akış otomatik olarak yeniden boyutlandırılır.
 
-- Etkinlik Başlangıç düğümü olarak ayarlamak için kullanın **BaşlangıçDüğümü ayarlamak** bağlam menüsündeki komutu.
+- Etkinlik Başlangıç düğümü olarak ayarlamak için kullanın **BaşlangıçDüğümü ayarlamak** sağ tıklama menüsünde komutu.
 
 - Etkinlikleri bağlanmak için:
 

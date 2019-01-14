@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955259"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269230"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme
 
@@ -183,13 +183,11 @@ Bu kılavuzda, Microsoft .NET Framework tasarım yönergeleri ile uyumluluk içi
 
 ## <a name="exclude-code-analysis-warnings"></a>Kod Analizi Uyarıları hariç tut
 
-### <a name="to-exclude-code-defect-warnings"></a>Kod hata uyarılarını hariç tutmak için
-
 1. Her kalan uyarılar için aşağıdakileri yapın:
 
     1. Uyarıyı seçin **hata listesi**.
 
-    1. Sağ tıklayın veya bağlam menüsünden seçin **bastır** > **gizleme dosyası içinde**.
+    1. (Bağlam menüsü) sağ tıklama menüsünden seçin **bastır** > **gizleme dosyası içinde**.
 
 1. Projeyi yeniden derleyin.
 

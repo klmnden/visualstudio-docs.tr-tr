@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908898"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269832"
 ---
 # <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
@@ -129,7 +129,7 @@ Geçici bir proje oluşturmak için ilk Git **Araçları** > **seçenekleri** > 
 
 ### <a name="to-permanently-delete-a-solution"></a>Bir çözümü kalıcı olarak silmek için
 
-1. İçinde **Çözüm Gezgini**, silmek istediğiniz çözümünün bağlam menüsünde **klasörü dosya Gezgini'nde Aç**.
+1. İçinde **Çözüm Gezgini**, sağ tıklama menüsünde silmek istediğiniz çözüm (bağlam menüsü), **klasörü dosya Gezgini'nde Aç**.
 
 1. Dosya Gezgini'nde, bir düzey yukarı gidin.
 

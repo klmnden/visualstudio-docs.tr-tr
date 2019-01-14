@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867046"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270212"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 
@@ -38,7 +38,7 @@ Bağımsız değişken olarak belirttiğiniz koşullara test yönetilen koddaki 
 [Visual Basic'de Durdur Deyimleri](../debugger/stop-statements-in-visual-basic.md)  
 Açıklar `Stop` bir kesme noktası ayarlamak için bir alternatif sağlayan bir ifade. Örnek kod ayrıca sağlanan, arasında karşılaştırma birlikte `Stop` deyimi ve `End` arasında iyi gibi olarak bir deyim `Stop` ve `Assert` deyimi.
 
-[İzlenecek yol: Bir Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
+[İzlenecek yol: Windows Formunda Hata Ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
 Bir Windows formu oluşturma ve bu formunda hata ayıklama için adım adım yönergeler sağlar. Windows Form, yönetilen bir Windows uygulamasının standart bir bileşen en yaygın yönetilen uygulamalardan biridir. Bu izlenecek yol, Visual C# ve Visual Basic kullanan, ancak C++ ile bir Windows formu oluşturma tekniklerini genellikle benzerdir.
 
 [OnStart metodunda hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)  
@@ -56,7 +56,7 @@ Hata ayıklamayı JIT iyileştirmesini etkilerini açıklar.
 [LINQ ve DLINQ hata ayıklama](../debugger/debugging-linq.md)  
 LINQ sorguları hata ayıklama teknikleri açıklar.
 
-[İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+[İzlenecek yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
 Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.
 
 ## <a name="related-sections"></a>İlgili Bölümler
@@ -86,7 +86,7 @@ Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgile
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Tasarım zamanında Forms denetimleri özel Windows hata ayıklama](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[hata ayıklayıcı, güvenlik](../debugger/debugger-security.md)
-[Visual Studio'da hata ayıklama](../debugger/index.md) 
- [ Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+[İzlenecek yol: Hata ayıklama özel Windows Forms denetimleri tasarım zamanında](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)  
+[Visual Studio’da hata ayıklama](../debugger/index.md)  
+[Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

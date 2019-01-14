@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825269"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269156"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML şema Tasarımcısı çalışma alanı
 
@@ -30,7 +30,7 @@ Aşağıdaki yollarla çalışma alanına düğüm ekleyebilirsiniz:
 
 -   Genel düğümler, dosya düğümleri ve ad alanı düğümleri sürükleyip **XML Şeması Gezgini** üç görünümlerden herhangi birinde oturum. "Düğüm sürükleme ve bırakma" bölümünde daha fazla bilgi için bkz. [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md).
 
--   Bağlam menüsü kullanma **XML Şeması Gezgini**. Daha fazla bilgi için [bağlam menüleri](../xml-tools/context-menus-xml-schema-explorer.md).
+-   (Sağ tıklama) bağlam menüsü kullanma **XML Şeması Gezgini**. Daha fazla bilgi için [bağlam menüleri](../xml-tools/context-menus-xml-schema-explorer.md).
 
 -   XSD Gezgini'nde bir arama yapın ve tıklayın **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine. Daha fazla bilgi için [şema kümesini arama](../xml-tools/searching-the-schema-set.md).
 
@@ -40,7 +40,7 @@ Görünümler arasında geçiş için aşağıdakilerden birini kullanın:
 
 -   XSD Tasarımcısı araç çubuğu.
 
--   Graf görünümünden ve içerik modeli görünümü bağlam menüleri.
+-   Graf görünümünden ve içerik modeli görünümünü (sağ tıklama) bağlam menüleri.
 
 -   Görünüm başlangıç sayfası ya da boş içerik modeli görünümünü veya graf görünümünü Filigran filigranlar.
 

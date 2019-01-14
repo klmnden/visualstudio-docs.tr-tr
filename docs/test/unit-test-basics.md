@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060809"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270186"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -83,7 +83,7 @@ Genellikle, kod birim testi saptamalar ve birim testi projesi oluşturmak hızl�
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Birim testi projesi oluşturma ve birim testi saptamaları
 
-1. Kod Düzenleyicisi penceresi, sağ tıklatın ve seçin **birim testleri Oluştur** bağlam menüsünden.
+1. Kod Düzenleyicisi penceresi, sağ tıklatın ve seçin **birim testleri Oluştur** sağ tıklatma menüsünden.
 
     ![Bağlam menüsü düzenleyici penceresinde görüntüleme](../test/media/createunittestsrightclick.png)
 
@@ -218,7 +218,7 @@ Ayrıca, arama kutusuna genel düzeyde eşleşen metin veya önceden tanımlanm�
 
 ![Test Gezgini araç çubuğundan Testleri Çalıştır](../test/media/ute_toolbar.png)
 
-Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırmak veya **çalıştırma** bir alt kümesini Çalıştırılacak testleri seçmek için. Bir dizi testi çalıştırdıktan sonra test çalışmasının özetini alt kısmında görünür **Test Gezgini** penceresi. Bu testin ayrıntılarını alt bölmede görüntülemek için bir test seçin. Seçin **açık Test** kaldırabilir bağlam menüsünü (klavye: **F12**) seçilen test için kaynak kodunu görüntülemek için.
+Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırmak veya **çalıştırma** bir alt kümesini Çalıştırılacak testleri seçmek için. Bir dizi testi çalıştırdıktan sonra test çalışmasının özetini alt kısmında görünür **Test Gezgini** penceresi. Bu testin ayrıntılarını alt bölmede görüntülemek için bir test seçin. Seçin **açık Test** sağ tıklatma menüsünden (klavye: **F12**) seçilen test için kaynak kodunu görüntülemek için.
 
 Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880416"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270027"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma
 
@@ -162,7 +162,7 @@ Belge Anahattı penceresi XAML Tasarımcısı'nda bu görevleri gerçekleştirme
 
 - Denetimleri olan öğeler için şablonları oluşturup yeniden açın.
 
-- Seçilen öğeler için bağlam menüsünü kullanın. Aynı menüyü, çalışma yüzeyinde seçilen öğeleri için de kullanılabilir.
+- Seçilen öğeler için sağ tıklama menüsünü (bağlam menüsü) kullanın. Aynı menüyü, çalışma yüzeyinde seçilen öğeleri için de kullanılabilir.
 
 Görüntülemek için **belge anahattı** penceresinde, menü çubuğundan seçin **görünümü** > **diğer Windows** > **BelgeAnahattı**.
 

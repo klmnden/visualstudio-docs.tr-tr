@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866341"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269962"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamada hata ayıklaması yapabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcıyı kullanın.
@@ -122,7 +122,7 @@ ASP.NET ve diğer sunucu ortamlarında hata ayıklama için uzaktan hata ayıkla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Windows Güvenlik Duvarı’nı Uzaktan Hata Ayıklama İçin Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Uzaktan Hata Ayıklayıcı Bağlantı Noktası Atamaları](../debugger/remote-debugger-port-assignments.md)
 - [Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

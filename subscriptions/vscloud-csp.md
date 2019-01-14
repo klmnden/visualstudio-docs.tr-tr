@@ -9,12 +9,12 @@ description: Satın alma ve müşterileriniz için Visual Studio bulut abonelikl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739581"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270014"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
@@ -46,7 +46,7 @@ Hiç kimseyle [sahibi veya katkıda bulunan erişimi](https://na01.safelinks.pro
 0. Seçin **Visual Studio Market**.
 0. Emin olduğunuz müşterinin sağ üst köşedeki adıdır.
 0. Seçin **abonelikleri**.
-0. Enterprise veya Professional'ı seçin ve Visual Studio aylık veya yıllık seçin.
+0. Enterprise veya Visual Studio Professional'ı seçin.
 0. Seçin **satın**.
 0. Satın alma için faturalandırmak için Azure aboneliği seçin.
 0. Müşterinizin gereken kullanıcı sayısını girin.

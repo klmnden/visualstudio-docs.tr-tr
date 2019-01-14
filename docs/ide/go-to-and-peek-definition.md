@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868910"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269845"
 ---
 # <a name="view-type-and-member-definitions"></a>Görünüm türü ve üye tanımları
 
@@ -27,7 +27,7 @@ Geliştiriciler genellikle kendi kodlarında türler veya sınıf üyeleri kulla
 
 ## <a name="go-to-definition"></a>Tanıma Git
 
-**Tanıma** özellik bir türe veya üyeye kaynağına gider ve sonuç yeni bir sekmede açılır. Klavye kullanıcısıysanız yere tuşuna basın ve sembol adını içinde metin imleci yerleştirmeniz **F12**. Fare kullanıcısıysanız seçin **tanıma** bağlam menüsünden veya kullanım **Ctrl tuşuna basıp** aşağıdaki bölümde anlatılan işlevi.
+**Tanıma** özellik bir türe veya üyeye kaynağına gider ve sonuç yeni bir sekmede açılır. Klavye kullanıcısıysanız yere tuşuna basın ve sembol adını içinde metin imleci yerleştirmeniz **F12**. Fare kullanıcısıysanız seçin **tanıma** sağ tıklama menüsünden veya kullanın **Ctrl tuşuna basıp** aşağıdaki bölümde anlatılan işlevi.
 
 ### <a name="ctrl-click-go-to-definition"></a>CTRL tuşunu tanımına Git
 
@@ -41,7 +41,7 @@ Fare tıklatın değiştirici tuş değiştirebilirsiniz **tanıma** giderek **A
 
 ## <a name="peek-definition"></a>Tanıma göz at
 
-**Özet tanım** özellik Düzenleyicisi'nde geçerli konumunuzu çıkmadan bir tür tanımı Önizleme olanak sağlar. Klavye kullanıcısıysanız yere tuşuna basın ve tür veya üye adı içindeki metin imleci yerleştirmeniz **Alt + F12**. Fare kullanıcısıysanız seçebileceğiniz **Özet tanım** bağlam menüsünden. Visual Studio 2017 sürüm 15.4 ve üzeri, yoktur göz atma görünümünde bir tanımı için yeni bir yol fareyi kullanarak. İlk olarak, Git **Araçları** > **seçenekleri** > **metin düzenleyici** > **genel**. Seçeneğini **tanımı Özet Görünümü'nde açın** tıklatıp **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
+**Özet tanım** özellik Düzenleyicisi'nde geçerli konumunuzu çıkmadan bir tür tanımı Önizleme olanak sağlar. Klavye kullanıcısıysanız yere tuşuna basın ve tür veya üye adı içindeki metin imleci yerleştirmeniz **Alt + F12**. Fare kullanıcısıysanız seçebileceğiniz **Özet tanım** sağ tıklatma menüsünden. Visual Studio 2017 sürüm 15.4 ve üzeri, yoktur göz atma görünümünde bir tanımı için yeni bir yol fareyi kullanarak. İlk olarak, Git **Araçları** > **seçenekleri** > **metin düzenleyici** > **genel**. Seçeneğini **tanımı Özet Görünümü'nde açın** tıklatıp **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
 
 ![Fare tıklatın gözlem tanım seçeneği ayarlama](../ide/media/editor_options_peek_view.png)
 

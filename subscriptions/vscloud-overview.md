@@ -9,12 +9,12 @@ description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylı
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740227"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269754"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -37,9 +37,7 @@ Hiç kimseyle [sahibi ve katkıda bulunan erişimi](https://na01.safelinks.prote
 
 1.  Oturum [Visual Studio Market > abonelikler](https://marketplace.visualstudio.com/subscriptions).
 
-2.  Örneğin, satın almak istediğiniz aboneliği seçin:
-    > [!div class="mx-imgBorder"]
-    > ![Visual Studio aboneliği satın alın](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  Satın almak için örneğin - Visual Studio Professional - aylık aboneliği istediğiniz aboneliği seçin.
 
 3.  Faturalama için kullanılacak Azure aboneliğini seçin. Yoksa, yeni bir Azure aboneliği oluşturabilirsiniz.
     > [!div class="mx-imgBorder"]

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831160"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269287"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Çözüm Gezgini’nde dosya iç içe yerleştirmeyi özelleştirme
 
@@ -131,7 +131,7 @@ Aynı düğmeye aracılığıyla kendi özel ayarlar dahil olmak üzere, tüm ay
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>Çözüm ve proje özgü ayarları oluşturma
 
-Her çözüm ve proje bağlam menüsü aracılığıyla çözüm ve proje özgü ayarları oluşturabilirsiniz:
+Her çözüm ve proje sağ tıklama menüsünü (bağlam menüsü) aracılığıyla çözüm ve proje özgü ayarları oluşturabilirsiniz:
 
 ![Çözüm ve proje özel iç içe geçme kuralları](media/filenesting_solutionprojectspecific.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yerel çalışma zamanı denetimlerini kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,14 +37,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830962"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269650"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Nasıl Yapılır: Yerel çalışma zamanı denetimlerini kullanma
+# <a name="how-to-use-native-run-time-checks"></a>Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma
 Visual C++'da yerel kullanabilirsiniz [runtime_checks](/cpp/preprocessor/runtime-checks) gibi ortak çalışma zamanı hataları yakalamak için:  
   
 - İşaretçi Bozulması yığın.  
@@ -79,6 +79,6 @@ Visual C++'da yerel kullanabilirsiniz [runtime_checks](/cpp/preprocessor/runtime
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)   
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [Çalışma Zamanı Hata Denetimi](/cpp/c-runtime-library/run-time-error-checking)

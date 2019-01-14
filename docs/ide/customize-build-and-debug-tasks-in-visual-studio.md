@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836340"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270131"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirme ve hata ayıklama için "Klasör Aç" geliştirme görevleri
 
@@ -32,8 +32,8 @@ Visual Studio, birçok farklı dillerde çalıştırma bilir ve kod tabanlarınd
 
 |Dosya adı|Amaç|
 |-|-|
-|*tasks.vs.json*|Özel derleme komutları ve derleyici anahtarları rastgele (olmayan-ilgili derleme) belirtmek görevleri.<br>Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **yapılandırma görevleri**.|
-|*launch.vs.json*|Hata ayıklama için komut satırı bağımsız değişkenlerini belirtin.<br>Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları**.|
+|*tasks.vs.json*|Özel derleme komutları ve derleyici anahtarları rastgele (olmayan-ilgili derleme) belirtmek görevleri.<br>Aracılığıyla erişilen **Çözüm Gezgini** sağ menü öğesi **yapılandırma görevleri**.|
+|*launch.vs.json*|Hata ayıklama için komut satırı bağımsız değişkenlerini belirtin.<br>Aracılığıyla erişilen **Çözüm Gezgini** sağ menü öğesi **hata ayıklama ve başlatma ayarları**.|
 |*VSWorkspaceSettings.json*|Genel görevleri etkileyebilir ve başlatma ayarları. Örneğin, tanımlama `envVars` içinde *VSWorkspaceSettings.json* dışarıdan komutlarını çalıştırmak için belirtilen ortam değişkenleri ekler.<br>Bu dosyayı el ile oluşturun.|
 
 Bunlar *.json* dosyaları adlı gizli bir klasörde bulunan *.vs* temelinizin kök klasöründeki. *Tasks.vs.json* ve *launch.vs.json* dosyalarının oluşturulduğu Visual Studio tarafından bir gerektiği şekilde ya da seçtiğinizde **yapılandırma görevleri** veya **hata ayıklama ve başlatma ayarları** bir dosya veya klasör üzerinde **Çözüm Gezgini**. Bunlar *.json* dosyaları, kullanıcılar bunları kaynak denetimine kaydetmeye genellikle istemediğinden gizlidir. Ancak, kaynak denetimine denetlemek istiyorsanız, dosyaları burada görünür temelinizin, kök sürükleyin.
@@ -47,7 +47,7 @@ Derleme betikleri veya geçerli çalışma alanınızda doğrudan IDE'de görev 
 
 ![Görevler menüsü yapılandırın](../ide/media/customize-configure-tasks-menu.png)
 
-Oluşturur (veya açılır) *tasks.vs.json* dosyası *.vs* klasör. Bir derleme görevi ya da isteğe bağlı görev bu dosyada tanımlayabilir ve ondan verdiğiniz ad kullanarak çağırma **Çözüm Gezgini** bağlam menüsü.
+Oluşturur (veya açılır) *tasks.vs.json* dosyası *.vs* klasör. Bir derleme görevi ya da isteğe bağlı görev bu dosyada tanımlayabilir ve ondan verdiğiniz ad kullanarak çağırma **Çözüm Gezgini** sağ tıklama menüsü.
 
 Özel görevleri, dosyalara veya belirli bir türdeki tüm dosyalar için eklenebilir. Örneğin, "Paketleri geri yükle" görev için NuGet paket dosyaları yapılandırılabilir veya tüm kaynak dosyaları, tüm bir lint gibi statik analiz yer alan bir görev için yapılandırılabilir *.js* dosyaları.
 
@@ -118,7 +118,7 @@ bin:
 }
 ```
 
-Derleme görevleri tanımladıktan sonra *tasks.vs.json*, karşılık gelen dosyalar için de ek bağlam menüsü öğelerine eklenir **Çözüm Gezgini**. Bu örnekte, "derleme", "yeniden" ve "temiz" seçeneklerini herhangi bağlam menüsüne eklenen *derleme görevleri dosyası* dosyaları.
+Derleme görevleri tanımladıktan sonra *tasks.vs.json*, karşılık gelen dosyalar için de ek sağ tıklama menüsü (bağlam menüsü) öğeleri eklendi **Çözüm Gezgini**. Bu örnekte, "derleme", "yeniden" ve "temiz" seçeneklerini herhangi bağlam menüsüne eklenen *derleme görevleri dosyası* dosyaları.
 
 ![derleme görevleri dosyası bağlam menüsü yapı ile yeniden oluşturun ve temizleme](media/customize-build-rebuild-clean.png)
 
@@ -148,7 +148,7 @@ Aşağıdaki örnekte gösterildiği bir *tasks.vs.json* tek bir görevi tanıml
 }
 ```
 
-- `taskName` bağlam menüsünde görünen adını belirtir.
+- `taskName` sağ tıklama menüsünde görünen adını belirtir.
 - `appliesTo` hangi dosyaların komutu gerçekleştirilebilir belirtir.
 - `command` Özellik çağrılacak komutu belirtir. Bu örnekte, `COMSPEC` ortam değişkeni komut satırı Yorumlayıcı, genellikle tanımlamak için kullanılan *cmd.exe*.
 - `args` Özelliği, çağrılan komutun geçirilecek bağımsız değişkenleri belirtir.

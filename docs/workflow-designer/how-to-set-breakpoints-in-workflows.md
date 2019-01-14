@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd6e10732c0248206810c9690910a8bd2f09ccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 570e7c5b4ec64c4e21b53cef38b89a5846cc1bb7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849638"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269702"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl Yapılır: İş Akışlarında Kesme Noktası Ayarlama
+# <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama
 
 İş Akışı Tasarımcısı kullandığınızda, grafik akışlarınızı Visual Basic'te yaptığınız şekilde kesme noktalarını ayarlayabilir veya C# kod. Beklendiği gibi iş akışı yürütme ayarladığınız her bir kesme noktasında durur.
 
@@ -37,7 +37,7 @@ Bir kesme noktası üç durumu vardır: *Bekleyen*, *bağlı*, ve *hata*. Bir ke
 
 2. Üzerinde **hata ayıklama** menüsünde **iki durumlu kesme noktası**. Etkinlik sol üst kenarına kırmızı bir simge görünür.
 
-   Alternatif olarak, basabilirsiniz **F9** etkinlik veya seçme etkinliğe sağ tıklayın ve da seçin sonra **kesme noktası** > **kesme noktası Ekle** bağlam menüsünden.
+   Alternatif olarak, basabilirsiniz **F9** etkinlik veya seçme etkinliğe sağ tıklayın ve da seçin sonra **kesme noktası** > **kesme noktası Ekle** sağ tıklama menüsünden.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -15,12 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837179"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269541"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Kodlanmış web performans testi oluşturma
 
@@ -86,7 +86,7 @@ Web performans testleri, web uygulamanızla göz atarak kaydedilir. Testler, bir
 ## <a name="qa"></a>SORU- CEVAP
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>S: Aynı anda birden fazla test çalıştırabilir miyim?
- **Y:** Evet, bağlam menüsü kullanma **Çözüm Gezgini**.
+ **Y:** Evet, (bağlam) sağ tıklama menüsünde kullanmak **Çözüm Gezgini**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>S: Bir veri kaynağı miyim kodlanmış test üretmeden önce veya sonra eklemeniz gerekir?
  **Y:** Eklemek daha kolay bir [veri kaynağı](../test/add-a-data-source-to-a-web-performance-test.md) kodu otomatik olarak sizin için oluşturulacağından Kodlanmış testi oluşturmadan önce.

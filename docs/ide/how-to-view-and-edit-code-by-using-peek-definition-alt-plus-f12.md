@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5013e04d1d5b6c73255be907d2b460cb186cea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8fb33e1b6df6cd43aaaba9c38123ff7b941da5c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968715"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269975"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl Yapılır: Görüntüleme ve Özet tanım (Alt + F12) kullanarak kod düzenleme
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Görüntüleme ve Özet tanım (Alt + F12) kullanarak kod düzenleme
 
 Kullanabileceğiniz **Özet tanım** görüntülemek ve kod yazdığınız uzaklaşmadan kod tanımlarını düzenlemek için komutu. **Özet tanım** ve **tanıma** aynı bilgileri gösterir ancak **Özet tanım** bir açılır pencerede gösterir ve **tanıma** gösterir ayrı bir kod penceresinde kodu. **Tanıma Git** tanım kodu penceresine geçilmesine, bağlamınızın (yani, etkin kod penceresi, geçerli satır ve imleç konumu) neden olur. Kullanarak **Özet tanım**, görüntüleyebilir ve tanımını düzenleyin ve orijinal kod dosyasında yerinizi tutarken tanım dosyası içinde gezinebilirsiniz.
 
@@ -25,7 +25,7 @@ Kullanabileceğiniz **Özet tanım** C#, Visual Basic ve C++ koduna sahip. Visua
 
 ### <a name="to-open-a-peek-definition-window"></a>Bir Özet Tanım penceresi açmak için
 
-1. Seçerek bir tanıma göz atma **Özet tanımı** için keşfetmek istediğiniz bir türü veya bağlam menüsünden. Seçeneği etkinleştirilirse, Visual Studio 2017 sürüm 15.4 ve üzeri, ayrıca fare tuşuna basarak kullanarak bir Özet tanım **Ctrl** (veya başka bir değiştirici) ve üye adına tıklayarak. Veya, klavyeden basın **Alt**+**F12**.
+1. Seçerek bir tanıma göz atma **Özet tanımı** için keşfetmek istediğiniz bir türü veya sağ tıklama menüsünde. Seçeneği etkinleştirilirse, Visual Studio 2017 sürüm 15.4 ve üzeri, ayrıca fare tuşuna basarak kullanarak bir Özet tanım **Ctrl** (veya başka bir değiştirici) ve üye adına tıklayarak. Veya, klavyeden basın **Alt**+**F12**.
 
      Bu resimde **Özet tanım** adlı bir yöntem için pencere `Print()`:
 

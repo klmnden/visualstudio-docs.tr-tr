@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870774"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269521"
 ---
 # <a name="debugging-native-code"></a>Yerel Kodda Hata Ayıklama
 Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için teknikleri kapsar. Bu bölümde yer alan teknikleri, üst düzey tekniklerle aynıdır. Visual Studio hata ayıklayıcısını kullanarak mekanizması için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: En iyi duruma getirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md)  
+ [Nasıl yapılır: İyileştirilmiş Kodda Hata Ayıklama](../debugger/how-to-debug-optimized-code.md)  
  Hata ayıklama, program, hata ayıklama ve yayın yapılandırmaları için varsayılan iyileştirme ayarlarını ve yalnızca en iyi duruma getirilmiş kod (açma görünen hataları bulmaya yönelik ipuçları iyileştirilmemiş bir sürümü neden hata ayıklama ipuçları sağlar, özellikle en iyileştirilmiş kodda iyileştirme hata ayıklama yapısı yapılandırması).  
   
  [DebugBreak ve __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -40,7 +40,7 @@ Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için t
  [C/C++ Onaylamaları](../debugger/c-cpp-assertions.md)  
  Onaylama deyimleri, nasıl çalıştıklarını, (bir işleminin sonuçlarını denetleme ve hata koşulları test çalýþýrçalýþma yakalama mantık hataları,), bunları kullanmanın avantajları anlatılmaktadır kendi etkileşim `_DEBUG`, desteklenen bir onayları türleri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- [Nasıl yapılır: Satır içi derleme kodunda hata ayıklama](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Nasıl yapılır: Satır İçi Derleme Kodunda Hata Ayıklama](../debugger/how-to-debug-inline-assembly-code.md)  
  YAZMAÇ içerikleri görüntülemek için derleme yönergeleri ve yazmaçlar penceresini görüntülemek için Ayrıştırılmış kod penceresini kullanma hakkında kısa yönerge sağlar ve bu windows ile ilgili konulara bağlantılar sağlar.  
   
  [MFC Hata Ayıklama Teknikleri](../debugger/mfc-debugging-techniques.md)  
@@ -55,10 +55,10 @@ Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için t
  [COM ve ActiveX Hata Ayıklaması](../debugger/com-and-activex-debugging.md)  
  COM için kullanabileceğiniz araçları da dahil olmak üzere, COM ve ActiveX uygulamalarında hata ayıklama ve ActiveX hata ayıklaması hakkında bilgi sağlar.  
   
- [Nasıl yapılır: Püskürtülen kodda hata ayıklama](../debugger/how-to-debug-injected-code.md)  
+ [Nasıl yapılır: Eklenen Kodda Hata Ayıklama](../debugger/how-to-debug-injected-code.md)  
  Öznitelikleri kullanan kod hata ayıklamayı konusunda rehberlik yapmaktadır. Kaynak ek açıklama üzerinde devre dışı bırakma, eklenen kodu görüntüleme ve geçerli yürütme noktasına ayrıştırılmış kodu görüntüleme yönergeleri içerir.  
   
- [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [İzlenecek yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -67,9 +67,9 @@ Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için t
 
  [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) yerel ve yönetilen DLL'lerin hata ayıklama hakkında bilgi sağlar.
   
- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)  
+ [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)  
  Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgileri içeren hata ayıklayıcı, ayarlar ve hazırlık, kesme noktaları, özel durumların işlenmesi yenilikler Düzenle ve devam et, yönetilen kodda hata ayıklama, yerel kodda hata ayıklama, SQL ve kullanıcı arabirimi başvuruları hata ayıklama.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)  
- [Visual Studio'da hata ayıklama](../debugger/index.md) [hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+ [Visual Studio’da hata ayıklama](../debugger/index.md) 

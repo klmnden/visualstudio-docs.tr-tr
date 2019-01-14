@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8c3a225b4e8f4e65826c1db0c806c716d8fb0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a14f2d38ddbb5f24ef3906ea00f7569629b1f64
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903870"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268519"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve bir kaynağı uygulama
 Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adlı yeniden kullanılabilir varlıklarda depolanır. Stilleri öğesi özellikleri ayarlamanızı ve birden çok öğe arasında tutarlı bir görünüm için bu ayarları yeniden etkinleştirin. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) denetiminin görünümünü tanımlar ve ayrıca bir kaynak olarak uygulanabilir. Daha fazla bilgi için [hızlı başlangıç: Stil denetimleri](http://go.microsoft.com/fwlink/?LinkID=248239) ve [hızlı başlangıç: Denetim şablonları](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -58,10 +58,10 @@ Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adl�
 
       Görmeyi beklediğiniz bir kaynak görmüyorsanız, kaynak türünü özelliğinin türü eşleşmediği için olabilir.
 
-   - Bir stil veya denetim şablon kaynağı, bir denetim için geçerlidir. Açık Belge Anahattı penceresi denetiminde için bağlam menüsünü seçin **şablonu Düzen** veya **Düzenle ek şablonlar**, seçin **kaynağı Uygula**seçin Görüntülenen listeden denetim şablonunun adı.
+   - Bir stil veya denetim şablon kaynağı, bir denetim için geçerlidir. Belge Anahattı penceresi bir denetim için sağ tıklama menüsünü (bağlam menüsü) açık seçin **Şablonu Düzenle** veya **Düzenle ek şablonlar**, seçin **kaynağı Uygula**, ' i tıklatın ve görüntülenen listeden denetim şablonunun adını seçin.
 
      > [!NOTE]
-     >  **Şablonu Düzen** denetim şablonları için geçerlidir. **Ek şablonlar Düzenle** diğer şablonu türleri için geçerlidir.
+     > **Şablonu Düzen** denetim şablonları için geçerlidir. **Ek şablonlar Düzenle** diğer şablonu türleri için geçerlidir.
 
      Uyumlu oldukları yerde kaynaklara uygulayabilirsiniz. Örneğin, bir fırça kaynağı için uygulayabileceğiniz **ön plan** özelliği bir <xref:Windows.UI.Xaml.Controls.TextBox> denetimi.
 
