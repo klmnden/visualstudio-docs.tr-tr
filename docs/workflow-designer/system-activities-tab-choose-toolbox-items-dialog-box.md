@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372c1c613aca71f72e57a3a5c9a5d2e82726a03b
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868189"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269559"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities Sekmesi, Araç Kutusu Öğelerini Seç İletişim Kutusu
 
@@ -30,11 +30,11 @@ Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, Windows Workflow F
 
  Filtreleme, her bir sekmede gerçekleştirilir. Bu iş akışı etkinlikleri aracılığıyla eklemek mümkün değildir anlamına gelir **.NET bileşeni** sekmesi. Aracılığıyla eklenmesi sahip oldukları **System.Activities** kendisini sekmesi.
 
- Tüm öğeleri görmek için istemediğiniz işaretini kaldırarak **araç kutusu** bu iletişim kutusundan sekmesinde veya alternatif olarak, bunu kullanarak yapabilirsiniz **Sil** bağlam menüsü seçeneği **araç kutusu** ve serbest bir derlemeye başvuran öğesinden kaldırmaz **araç kutusu**.
+ Tüm öğeleri görmek için istemediğiniz işaretini kaldırarak **araç kutusu** bu iletişim kutusundan sekmesinde veya alternatif olarak, bunu kullanarak yapabilirsiniz **Sil** menü seçeneğini sağ tıklayın **araç kutusu**ve serbest bir derlemeye başvuran öğesinden kaldırmaz **araç kutusu**.
 
  Tasarımcıda bırakarak etkinlik örnekleme başvurulan bütünleştirilmiş kodların listesi öğesine otomatik olarak içeren derlemeyi ekler. Etkinlik derleme C başvuruyorsa, ayrıca, C başvurulan derleme listesine eklemez. C derlemeyi GAC'ye veya etkinlik b ile aynı dizinde olması gerekir Tek başına durumda, derlemeyi GAC veya VS araştırma yollarını olması gerekir. Ancak bundan sonra sürükleyip bırakabilirsiniz etkinlik iş akışı Tasarımcı yüzeyinde.
 
- **Araç kutusu** ayarları kullanıcı seçenekleri varsayılan olarak kaydedileceği böylece olduğunda, sonraki açışınızda, **araç kutusu**, özelleştirilmiş iş akışı etkinlikleri listesini görüntüler. Bu bir yan etkisi olan, belirli bir etki alanı öğelerinizi eklediyseniz **araç kutusu** aracılığıyla **araç kutusu öğelerini Seç** iletişim kutusu, yine de devam, çalışırken bu öğeleri görmek bir De iş akışı konsol uygulaması. Bunları görmek istemiyorsanız, sonra bağlam menüsünü kullanarak bunları silin veya aracılığıyla işaretini kaldırın **araç kutusu öğelerini Seç** daha önce belirtildiği gibi iletişim kutusu.
+ **Araç kutusu** ayarları kullanıcı seçenekleri varsayılan olarak kaydedileceği böylece olduğunda, sonraki açışınızda, **araç kutusu**, özelleştirilmiş iş akışı etkinlikleri listesini görüntüler. Bu bir yan etkisi olan, belirli bir etki alanı öğelerinizi eklediyseniz **araç kutusu** aracılığıyla **araç kutusu öğelerini Seç** iletişim kutusu, yine de devam, çalışırken bu öğeleri görmek bir De iş akışı konsol uygulaması. Bunları görmek istemiyorsanız, sonra sağ tıklama menüsünü kullanarak bunları silin veya aracılığıyla işaretini kaldırın **araç kutusu öğelerini Seç** daha önce belirtildiği gibi iletişim kutusu.
 
  Sütunları bu iletişim kutusunda aşağıdaki bilgileri içerir:
 
