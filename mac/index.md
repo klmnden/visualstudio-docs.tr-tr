@@ -1,33 +1,33 @@
 ---
-title: Mac için Visual Studio ile tanışın
+title: Mac için Visual Studio’ya Giriş
 description: Bu makale, Mac için Visual Studio özelliklerini tanıtır
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59e349b1d784e68c3ef6842834d875ce5d1917bb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895684"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315559"
 ---
-# <a name="introducing-visual-studio-for-mac"></a>Mac için Visual Studio ile tanışın
+# <a name="visual-studio-for-mac"></a>Mac için Visual Studio
 
 Mac için Visual Studio mobil, masaüstü ve web uygulamaları oluşturmak için bir modern, sofistike birçok özelliği bir ıde'dir. Bu geliştirme aşağıdaki türlerini destekler:
 
-* .NET ile mobil: Android, iOS, tvOS, watchOS
-* Mac Masaüstü uygulamaları
-* .NET core uygulamaları
-* ASP.NET Core web uygulamaları
-* Platformlar arası Unity oyunları
+- .NET ile mobil: Android, iOS, tvOS, watchOS
+- Mac Masaüstü uygulamaları
+- .NET core uygulamaları
+- ASP.NET Core web uygulamaları
+- Platformlar arası Unity oyunları
 
 Bu, hata ayıklama, iOS, Mac ve Android ile yerel platform tümleştirme, zengin bir düzenleyici gibi özellikler içerir ve tümleşik kaynak denetimi.
 
 Bu makale, Mac için Visual Studio çeşitli bölümlerini araştırmalarını ve platformlar arası uygulamalar oluşturmak için güçlü bir araç sağlayan özellikler sunar.
 
 > [!TIP]
-> Visual Studio 2019 Mac preview için test etmek için kullanıma sunulmuştur. Aşağıdaki adımları [yükleme yönergeleri](install-preview.md) atın [IDE Turu](ide-tour.md).
+> **Önizleme Mac için Visual Studio 2019** artık test etmek için kullanılabilir. Aşağıdaki adımları [yükleme yönergeleri](/visualstudio/mac/installation/?view=vsmac-2019) atın [2019 IDE Turu](/visualstudio/mac/ide-tour/?view=vsmac-2019).
 
 ## <a name="installation"></a>Yükleme
 
@@ -55,16 +55,16 @@ F#bir türü kesin belirlenmiş işlevsel programlama dili, .NET üzerinde çal�
 
 .NET Core desteği şunları içerir:
 
-* C# ve F# IntelliSense.
-* Konsol, kitaplık ve web uygulamaları için .NET Core proje şablonları.
-* Kesme noktaları, çağrı yığını ve izleme penceresi gibi özellikler de dahil olmak üzere tam hata ayıklama desteği.
-* NuGet PackageReferences ve MSBuild tabanlı geri yükleme.
-* Tümleşik birim testleri çalıştırma ve hata ayıklama desteği ile .NET Core SDK'sı ile birlikte Visual Studio Test platformu test eder.
-* Eski project.json biçiminden geçiş.
+- C# ve F# IntelliSense.
+- Konsol, kitaplık ve web uygulamaları için .NET Core proje şablonları.
+- Kesme noktaları, çağrı yığını ve izleme penceresi gibi özellikler de dahil olmak üzere tam hata ayıklama desteği.
+- NuGet PackageReferences ve MSBuild tabanlı geri yükleme.
+- Tümleşik birim testleri çalıştırma ve hata ayıklama desteği ile .NET Core SDK'sı ile birlikte Visual Studio Test platformu test eder.
+- Eski project.json biçiminden geçiş.
 
 Başlamak için ASP.NET Core web uygulamalarına göz denetleyin [uygulamalı laboratuvarı](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
-## <a name="xamarin"></a>Xamarin
+## <a name="xamarin-mobile-app-development"></a>Xamarin mobil uygulama geliştirme
 
 [Xamarin](https://developer.xamarin.com/) için birinci sınıf destekle Android, macOS, iOS, tvOS ve watchOS için zengin yerel deneyimler geliştirebilirsiniz. Xamarin.Forms platformlar arası uygulamaları, yerel işlevselliğe erişimi sınırlamadan Android, iOS ve macOS arasında XAML tabanlı UI kodunu paylaşmanıza yardımcı olur.
 
@@ -121,8 +121,8 @@ Daha fazla bilgi için [Xamarin Inspector'ı](https://developer.xamarin.com/guid
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* **Turu alma** - Mac için Visual Studio'da büyük özelliklerin çoğunu özetini almak için Mac için Visual Studio bkz [IDE Turu](ide-tour.md).
-* **Ayarlanan** - indirin ve Visual Studio'yu yüklemek için bkz: hakkında bilgi almak için [yükleme](installation.md) Kılavuzu.
-* **Xamarin eğitim** - Xamarin ile kod geliştirin, Xamarin için Git hakkında daha fazla bilgi edinmek için [Geliştirici Merkezi](https://developer.xamarin.com).
-* **Videoları** - Mac için diğer özellikler ve Visual Studio yönleri hakkında daha fazla bilgi edinmek için videoları kontrol [Xamarin University](https://university.xamarin.com) Web sitesi.
-* **Uygulamalı laboratuvarlar** - Mac için Visual Studio'ya dahil çeşitli iş yükleri ile çalışmaya başlamak için kullanıma [uygulamalı laboratuvarlara](https://github.com/Microsoft/vs4mac-labs).
+- **Turu alma** - Mac için Visual Studio'da büyük özelliklerin çoğunu özetini almak için Mac için Visual Studio bkz [IDE Turu](/visualstudio/mac/ide-tour/).
+- **Ayarlanan** - indirin ve Mac için Visual Studio 2017'yi yüklemek için bkz: hakkında bilgi almak için [yükleme](/visualstudio/mac/installation/?view=vsmac-2017) Kılavuzu.
+- **Xamarin eğitim** - Xamarin ile kod geliştirin, Xamarin için Git hakkında daha fazla bilgi edinmek için [Geliştirici Merkezi](https://developer.xamarin.com).
+- **Videoları** - Mac için diğer özellikler ve Visual Studio yönleri hakkında daha fazla bilgi edinmek için videoları kontrol [Xamarin University](https://university.xamarin.com) Web sitesi.
+- **Uygulamalı laboratuvarlar** - Mac için Visual Studio'ya dahil çeşitli iş yükleri ile çalışmaya başlamak için kullanıma [uygulamalı laboratuvarlara](https://github.com/Microsoft/vs4mac-labs).

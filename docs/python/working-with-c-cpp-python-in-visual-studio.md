@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947848"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315637"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -127,7 +127,7 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
     | | **Genel** > **hedef uzantısı** | **.pyd** |
     | | **Proje Varsayılanları** > **yapılandırma türü** | **Dinamik kitaplık (.dll)** |
     | **C/C++** > **genel** | **Ek içeren dizinler** | Python'u eklediğinizden *dahil* klasör, bu gibi bir durumda yükleme için uygun şekilde `c:\Python36\include`.  |
-    | **C/C++** > **önişlemci** | **Önişlemci tanımları** | Ekleme `Py_LIMITED_API;` (noktalı virgül dahil) dize başlangıcına. Bu tanımı bazı işlevlere Python'dan çağırabilir ve kod Python farklı sürümleri arasında daha taşınabilir hale getirir kısıtlar. |
+    | **C/C++** > **önişlemci** | **Önişlemci tanımları** | **CPython yalnızca**: ekleme `Py_LIMITED_API;` (noktalı virgül dahil) dize başlangıcına. Bu tanımı bazı işlevlere Python'dan çağırabilir ve kod Python farklı sürümleri arasında daha taşınabilir hale getirir kısıtlar. PyBind11 ile çalışıyorsanız, bu tanımı, aksi takdirde görürsünüz eklemeyin derleme hataları. |
     | **C/C++** > **kod oluşturma** | **Çalışma Zamanı Kitaplığı** | **Çok iş parçacıklı DLL (/ MD)** (uyarı aşağıya bakın) |
     | **Bağlayıcı** > **genel** | **Ek Kitaplık dizinleri** | Python'u eklediğinizden *libs* içeren klasörü *.lib* Örneğin, yükleme için uygun şekilde dosyaları `c:\Python36\libs`. (İşaret edecek şekilde mutlaka *libs* içeren klasörü *.lib* dosyaları ve *değil* *LIB* içeren klasörü *.py*  dosyalarını.) |
 
@@ -135,7 +135,7 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
     > Proje Özellikleri'nde C/C++ sekmesini görmüyorsanız, proje, C/C++ kaynak dosyaları tanımlayan hiçbir dosya içermiyor olmasıdır. Olmayan bir kaynak dosyası oluşturursanız, bu durum ortaya çıkabilir bir *.c* veya *.cpp* uzantısı. Örneğin, yanlışlıkla girdiğiniz `module.coo` yerine `module.cpp` yeni öğe iletişim kutusunda daha önce ardından Visual Studio dosyayı oluşturur ancak dosya türü olarak ayarlayıp ayarlamadığını "C / C + kod," olduğu ne C/C++ Özellikleri sekmesi etkinleştirir. Dosyayı yeniden adlandırın bile durum böyle misidentification kalır `.cpp`. Dosya türü düzgün bir şekilde ayarlamak için dosyaya sağ **Çözüm Gezgini**seçin **özellikleri**, ardından **dosya türü** için **C/C++ kodu**.
 
     > [!Warning]
-    > Her zaman **C/C++** > **kod oluşturma** > **çalışma zamanı kitaplığı** seçeneğini **çok iş parçacıklı DLL (/ MD)** olsa bile bir hata ayıklama yapılandırması için bu ayarı olduğundan hata ayıklama olmayan Python ikili dosyaları ile oluşturulur. Ayarlamak için MSDN aboneliğine **hata ayıklama çok iş parçacıklı DLL (/ MDd)** oluşturma seçeneği bir **hata ayıklama** yapılandırma hata üreten **C1189: Py_LIMITED_API Py_DEBUG Py_TRACE_REFS ve Py_REF_DEBUG ile uyumsuz**. Ayrıca, kaldırırsanız `Py_LIMITED_API` derleme hatayı önlemek için Python modülü içe aktarmaya çalışıldığında çöküyor. (Kilitlenme DLL'nin çağrısı içinde olur `PyModule_Create` daha sonra çıktı iletisi ile açıklandığı **önemli Python hata: PyThreadState_Get: geçerli iş parçacığının**.)
+    > Her zaman **C/C++** > **kod oluşturma** > **çalışma zamanı kitaplığı** seçeneğini **çok iş parçacıklı DLL (/ MD)** olsa bile bir hata ayıklama yapılandırması için bu ayarı olduğundan hata ayıklama olmayan Python ikili dosyaları ile oluşturulur. CPython, ayarlamak için MSDN aboneliğine sahip **hata ayıklama çok iş parçacıklı DLL (/ MDd)** oluşturma seçeneği bir **hata ayıklama** yapılandırma hata üreten **C1189: Py_LIMITED_API Py_DEBUG Py_TRACE_REFS ve Py_REF_DEBUG ile uyumsuz**. Ayrıca, kaldırırsanız `Py_LIMITED_API` (CPython, ancak değil PyBind11 gerekli olan) derleme hatayı önlemek için Python modülü içe aktarmaya çalışıldığında çöküyor. (Kilitlenme DLL'nin çağrısı içinde olur `PyModule_Create` daha sonra çıktı iletisi ile açıklandığı **önemli Python hata: PyThreadState_Get: geçerli iş parçacığının**.)
     >
     > / MDd seçeneği Python hata ayıklama ikililerini derlemek için kullanılan (gibi *python_d.exe*), ancak bir uzantı DLL'si seçerek hala neden şu yapı hatasıyla `Py_LIMITED_API`.
 

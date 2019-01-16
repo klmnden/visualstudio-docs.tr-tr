@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d93dc9cf68a70977f82f29b6e5ff1ade25f47bda
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227705"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315546"
 ---
 # <a name="xaml-designer-options-page"></a>XAML Tasarımcısı seçenekler sayfası
 
@@ -57,15 +57,15 @@ Yakınlaştırma bir XAML belgesi düzenlenirken nasıl çalıştığını belir
 |||
 |-|-|
 |**Fare tekerleği**|XAML Tasarımcısı'nda, fare tekerleğini kaydırarak yakınlaştırın.|
-|**CTRL + fare tekerleği**|XAML Tasarımcısı'nda, fare tekerleğini kaydırma yaparken CTRL tuşuna basarak yakınlaştırın.|
-|**Alt + fare tekerleği**|XAML Tasarımcısı'nda, fare tekerleğini kaydırma yaparken ALT tuşuna basarak yakınlaştırın.|
+|**CTRL + fare tekerleği**|XAML Tasarımcısı'nda tuşlarına basarak yakınlaştırma **Ctrl** fare tekerleğini kaydırma tuşunu.|
+|**Alt + fare tekerleği**|XAML Tasarımcısı'nda tuşlarına basarak yakınlaştırma **Alt** fare tekerleğini kaydırma tuşunu.|
 
 Bu ayarlar, bir XAML belgesi düzenlenirken Tasarımcısı davranışını belirler.
 
 |||
 |-|-|
 |**Oluşumda etkileşimli öğeleri otomatik olarak adlandırın**|Bir tasarımcı eklediğinizde, varsayılan bir ad için yeni bir etkileşimli öğesi sağlanıp sağlanmayacağını belirtir.|
-|**Düzen özelliklerini öğe oluşturma sırasında otomatik olarak Ekle**|Eklediğinizde, Tasarımcı için düzen özelliklerini yeni bir öğe için sağlanan olup olmadığını belirtir. Düzen özelliklerini, örneğin, kenar boşlukları ve doldurma gibi bir denetimin düzenini etkileyebilecek olanlardır.|
+|**Düzen özelliklerini öğe oluşturma sırasında otomatik olarak Ekle**|Eklediğinizde, Tasarımcı için düzen özelliklerini yeni bir öğe için sağlanan olup olmadığını belirtir. Düzen özelliklerini kenar boşluğu ve VerticalAlignment bir denetimin düzenini etkileyebilecek olanlardır. Aşağıdaki XAML bir düğme ile ve bu seçenek olmadan nasıl oluşturulacağını gösterir:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Başarımız düzeni kullanma**|Şu anda seçili denetimi en yakın üst kapsayıcının kenarlarına hizalar olup olmadığını belirtir. Bu onay kutusu işaretli değilse, Denetim hizalamaları taşıma işlemi sırasında değiştirmeyin veya oluşturma işlemi.|
 |**Araç kutusu öğeleri otomatik olarak doldurur.**|Kullanıcı denetimleri ve geçerli çözüme özel denetimleri araç kutusunda otomatik olarak gösterilip gösterilmeyeceğini belirtir.|
 
@@ -75,7 +75,7 @@ Blend kullanarak XAML dosyalarını düzenlerken ayarlarını belirlemek için b
 
 |||
 |-|-|
-|**Kullanarak Yakınlaştır**|XAML Tasarımcısı'nda, fare tekerleğini kaydırarak veya fare tekerleğini kaydırma yaparken CTRL ya da ALT tuşuna basarak yakınlaştırın.|
+|**Kullanarak Yakınlaştır**|XAML Tasarımcısı'nda basarak veya fare tekerleğini kaydırarak yakınlaştırma **Ctrl** veya **Alt** fare tekerleğini kaydırma tuşunu.|
 |**Birim türü**|Tasarımcı üzerinde ölçümleri noktaları veya piksel göre belirtir. Evrensel Windows uygulamaları noktaları desteklenmediği, birimi otomatik olarak piksel ise dönüştürülür **noktaları** seçilir.|
 
 ## <a name="artboard-blend-only"></a>Çalışma yüzeyine (yalnızca Blend)

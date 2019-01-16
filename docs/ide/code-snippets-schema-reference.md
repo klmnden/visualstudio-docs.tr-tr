@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864724"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315598"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
@@ -547,7 +547,7 @@ Kod parçacığı için başvuruları, içeri aktarımları, bildirimleri ve kod
 |[Kod öğesi](../ide/code-snippets-schema-reference.md#code-element)|Gerekli öğe. Bir belge dosyasına eklemek istediğiniz kodu belirtir. Olmalıdır tam olarak bir `Code` öğesinde bir `Snippet` öğesi.|
 |[Declarations öğesi](../ide/code-snippets-schema-reference.md#declarations-element)|İsteğe bağlı öğe. Bir kod parçacığının düzenleyebileceğiniz bölümlerini oluşturan değişmez değerleri ve nesneleri belirtir. Sıfır veya bir olabilir `Declarations` öğelerinde bir `Snippet` öğesi.|
 |[Imports öğesi](../ide/code-snippets-schema-reference.md#imports-element)|İsteğe bağlı öğe. Grupları tek tek `Import` öğeleri. Sıfır veya bir olabilir `Imports` öğelerinde bir `Snippet` öğesi.|
-||İsteğe bağlı öğe. Grupları tek tek `Reference` öğeleri. Sıfır veya bir olabilir `References` öğelerinde bir `Snippet` öğesi.|
+|[References öğesi](../ide/code-snippets-schema-reference.md#references-element)|İsteğe bağlı öğe. Grupları tek tek `Reference` öğeleri. Sıfır veya bir olabilir `References` öğelerinde bir `Snippet` öğesi.|
 
 |Üst öğe|Açıklama|
 | - |-----------------|
