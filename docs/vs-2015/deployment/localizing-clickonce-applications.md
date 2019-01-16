@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49261475"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce Uygulamalarını Yerelleştirme
@@ -59,7 +59,7 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
  Bu yaklaşımın avantajı, tek bir dağıtımı oluşturur ve yerelleştirilmiş dağıtım sürecinizi basitleştirir içindir. Çalışma zamanında, uygun bir uydu derlemesini, kullanıcının Windows işletim sistemine bağlı olarak kullanılan varsayılan kültürü kullanılır. Bu yaklaşımın bir dezavantajı, uygulama yüklendiğinde veya güncelleştirildiğinde bir istemci bilgisayar üzerinde olduğunda, tüm uydu derlemeleri indirir ' dir. Uygulamanız çok sayıda dizeleri veya müşterilerinizin yavaş ağ bağlantınız varsa bu işlem sırasında uygulama güncelleştirmesi performansını etkileyebilir.  
   
 > [!NOTE]
->  Bu yaklaşım, uygulamanızın yüksekliğini, genişliğini ve farklı kültürler farklı bir metin dizesi boyutlarının otomatik olarak uyum sağlayacak şekilde denetimleri konumunu ayarlar varsayar. Windows Forms denetimleri ve kolayca yerelleştirilebilir dahil olmak üzere bir form Tasarım olanak tanıyan teknolojileri çeşitli içeren <xref:System.Windows.Forms.FlowLayoutPanel> ve <xref:System.Windows.Forms.TableLayoutPanel> denetimlerin yanı sıra <xref:System.Windows.Forms.Control.AutoSize%2A> özelliği.  Ayrıca bkz: [nasıl yapılır: Windows Forms kullanarak AutoSize ve TableLayoutPanel denetimini destek yerelleştirme](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+>  Bu yaklaşım, uygulamanızın yüksekliğini, genişliğini ve farklı kültürler farklı bir metin dizesi boyutlarının otomatik olarak uyum sağlayacak şekilde denetimleri konumunu ayarlar varsayar. Windows Forms denetimleri ve kolayca yerelleştirilebilir dahil olmak üzere bir form Tasarım olanak tanıyan teknolojileri çeşitli içeren <xref:System.Windows.Forms.FlowLayoutPanel> ve <xref:System.Windows.Forms.TableLayoutPanel> denetimlerin yanı sıra <xref:System.Windows.Forms.Control.AutoSize%2A> özelliği.  Ayrıca bkz: [nasıl yapılır: AutoSize ve TableLayoutPanel denetimini kullanarak Windows Forms'ta yerelleştirmeyi destekleme](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Her bir kültür için bir dağıtım oluşturun  
  Bu dağıtım stratejisini içinde birden çok dağıtım oluşturun. Her dağıtımda, yalnızca belirli bir kültür için gereken uydu derleme içerir ve dağıtım kültüre özgü olarak işaretleyin.  
@@ -73,9 +73,9 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
 ## <a name="downloading-satellite-assemblies-on-demand"></a>Uydu derlemelerini indirme  
  Tüm uydu derlemeleri tek bir dağıtımda karar verirseniz, bu sayede derlemeleri isteğe bağlı olarak işaretlemek isteğe bağlı indirme, kullanarak performansı artırabilirsiniz. Uygulama yüklendiğinde veya işaretlenen derlemeler yüklenmeyecektir. Çağırarak gerektiğinde derlemeleri yükleyebilirsiniz <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> metodunda <xref:System.Deployment.Application.ApplicationDeployment> sınıfı.  
   
- Uydu derlemelerini indirme biraz isteğe bağlı derlemeleri diğer türleri farklıdır. Bu senaryoyu kullanarak etkinleştirme hakkında daha fazla bilgi ve kod örnekleri için [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] araçlarını [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], bakın [izlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı uydu derlemelerini indirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ Uydu derlemelerini indirme biraz isteğe bağlı derlemeleri diğer türleri farklıdır. Bu senaryoyu kullanarak etkinleştirme hakkında daha fazla bilgi ve kod örnekleri için [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] araçlarını [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], bkz: [izlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Bu senaryoda da etkinleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Ayrıca bkz: [izlenecek yol: ClickOnce dağıtım API'sini kullanarak tasarımcı ile isteğe bağlı uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) veya [izlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı uydu derlemelerini indirme Tasarımcı kullanarak](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Bu senaryoda da etkinleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Ayrıca bkz: [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) veya [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>ClickOnce uygulamaları dağıtmadan önce test yerelleştirilmiş  
  Bir Windows Forms uygulaması yalnızca şu durumlarda için bir uydu derlemesine kullanılacak <xref:System.Threading.Thread.CurrentUICulture%2A> özelliği uygulamanın ana iş parçacığı için uydu bütünleştirilmiş kodun kültüre ayarlayın. Yerel bir pazarda müşteri büyük olasılıkla zaten Windows yerelleştirilmiş bir sürümünü kültüre uygun varsayılan olarak ayarlanmış olan çalıştırırsınız.  

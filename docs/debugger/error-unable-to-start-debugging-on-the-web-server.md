@@ -27,10 +27,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 804249700ff813de5a45e44787af4f39d4a82ad2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53856689"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web sunucusunda hata ayıklama başlatılamıyor
@@ -85,7 +85,7 @@ Denetleme, [IIS günlük dosyası](https://support.microsoft.com/help/943891/the
 Ayrıca, bazı yaygın hata kodlarını ve bazı öneriler şunlardır.
 - (403) Yasak. Bu hata birçok olası nedenleri vardır, bu nedenle, günlük dosyası ve web sitesi için IIS güvenlik ayarlarını denetleyin. Sunucunun web.config içerdiğinden emin olun `debug=true` derleme öğesinde. Web uygulama klasörünüzdeki doğru izinlere sahip olduğunu ve uygulama havuzu yapılandırmanızı (parola değiştirmiş olabilir) doğru olduğundan emin olun. Bkz: [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck). Bu ayarları zaten doğru olduğundan ve yerel olarak hata ayıklama, ayrıca doğru sunucu türü ve URL bağlandığınızı doğrulayın (içinde **özellikleri > Web > sunucuları** veya **özellikleri > hata ayıklama**, proje türüne bağlı olarak).
 - (503) sunucusu kullanılamıyor. Bir hata veya yapılandırma değişikliği nedeniyle uygulama havuzu durdurulmuş. Uygulama havuzu yeniden başlatın.
-- (404) bulunamadı. Uygulama havuzu ASP.NET sürümü için doğru yapılandırıldığından emin olun.
+- (404) Not Found. Uygulama havuzu ASP.NET sürümü için doğru yapılandırıldığından emin olun.
 
 ## <a name="aspnet"></a> ASP.NET hata ayıklama başlatılamadı
 
@@ -160,4 +160,4 @@ IIS yapılandırma sorunu neden, aşağıdaki adımları deneyin:
     Hata ayıklayıcısı ile çalışmak için uygulamanızı alınamıyor, temel bir ASP.NET uygulaması sunucu üzerinde yerel olarak oluşturmayı deneyin ve temel uygulama hatalarını ayıklamayı deneyin. (Varsayılan ASP.NET MVC şablonu kullanmak isteyebilirsiniz.) Temel bir uygulama hatalarını ayıklayabilir, bu iki yapılandırma arasında farklıdır belirlemenize yardımcı olabilir. URL yeniden yazma kuralları gibi ayarları farklılıkları web.config dosyasında arayın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

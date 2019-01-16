@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51764066"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET
@@ -64,7 +64,7 @@ Yüklendikten sonra uzaktan hata ayıklayıcı hedef makinede çalıştığında
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    Windows Server 2008 R2'de ASP.NET 4'ü bunun yerine şu komutu kullanarak yükleyin: **\v4.0.30319\aspnet_regiis.exe C:\Windows\Microsoft.NET\Framework (64) - IR**
+    Windows Server 2008 R2'de, bunun yerine şu komutu kullanarak ASP.NET 4'ü yükleyin:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. ASP.NET proje dizini Visual Studio bilgisayarı yerel bir dizine kopyalayın (hangi sizi ararız **C:\Publish**) Windows Server bilgisayarında. Projeyi el ile kopyalayın, Xcopy, Web dağıtımı, Robocopy, Powershell veya diğer seçenekleri kullanın.
 
     > [!CAUTION]

@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5f177508e1e314da8df8a2123edd91517cdcc935
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51737717"
 ---
 # <a name="com-debugging-tools"></a>COM Hata Ayıklama Araçları
@@ -49,8 +49,8 @@ Bu konu, test ve COM programlar denetlemenize yardımcı olabilecek araçları l
  [COM ve ActiveX hata ayıklaması](../debugger/com-and-activex-debugging.md)   
  [COM hata ayıklama araçları](../debugger/com-debugging-tools.md)   
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   
- [OCLIENT örnek: Bir görsel kapsayıcı uygulaması gösterir.](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
- [SUPERPAD örneği: CEditView kullanarak metin düzenlemeleri sunucu düzenleyen Visual gösterir](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)
+ [OCLIENT örneği: Bir görsel kapsayıcı uygulaması gösterir](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
+ [SUPERPAD örneği: CEditView kullanarak metin düzenlemeleri sunucu düzenleme bir görsel gösterir](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)
 
 
 

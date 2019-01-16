@@ -19,10 +19,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227986"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama (C#, Visual Basic, C++)

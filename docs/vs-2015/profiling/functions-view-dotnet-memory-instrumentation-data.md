@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51730182"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>İşlevler Görünümü - .NET Bellek İzleme Verileri
@@ -105,7 +105,7 @@ ms.locfileid: "51730182"
 |**Minimum dışlamalı uygulama süresi**|Bu işlev çağrısına en düşük uygulama dışlamalı süre.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
  [İşlevler Görünümü](../profiling/functions-view-sampling-data.md)

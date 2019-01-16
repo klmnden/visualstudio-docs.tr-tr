@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Saklı yordamları ve işlevleri (O R Designer) için eşlenen DataContext-metotları oluşturma'
+title: 'Nasıl yapılır: Saklı yordamları ve işlevleri (O R Designer) için eşlenen DataContext-metotları oluşturma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -10,13 +10,13 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: bda01cec76629bd69d0e3773d99da0b34773f4ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53868520"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Nasıl Yapılır: Saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Nasıl yapılır: Saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma
 
 Saklı yordamları ve işlevleri için ekleyebileceğiniz **O/R Tasarımcısı** olarak <xref:System.Data.Linq.DataContext> yöntemleri. Yöntemini çağırarak ve gerekli parametrelerin geçirme veritabanında saklı yordamı veya işlevi çalıştırır ve verileri dönüş türünü döndüren <xref:System.Data.Linq.DataContext> yöntemi. İlgili ayrıntılı bilgi için <xref:System.Data.Linq.DataContext> yöntemleri bkz [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
 

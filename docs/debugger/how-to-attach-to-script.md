@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Betiğe ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Betiğe ekleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934910"
 ---
-# <a name="how-to-attach-to-script"></a>Nasıl Yapılır: Betiğe ekleme
+# <a name="how-to-attach-to-script"></a>Nasıl yapılır: Betiğe ekleme
 Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayıcısını el ile ekleme açıklanmaktadır.  
   
 ### <a name="to-attach-to-a-running-process"></a>Çalışan bir işleme iliştirmek için  

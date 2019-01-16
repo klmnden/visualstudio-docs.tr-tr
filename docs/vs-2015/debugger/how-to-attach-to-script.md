@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Betiğe ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Betiğe ekleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e0fbdbf31c4ff504011a4ab80d50746d87ac3dac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53858032"
 ---
-# <a name="how-to-attach-to-script"></a>Nasıl Yapılır: Betiğe ekleme
+# <a name="how-to-attach-to-script"></a>Nasıl yapılır: Betiğe ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayıcısını el ile ekleme açıklanmaktadır.  

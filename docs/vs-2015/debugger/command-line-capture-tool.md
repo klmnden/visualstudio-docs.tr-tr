@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51770685"
 ---
 # <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı
@@ -170,15 +170,15 @@ DXCap.exe –e map
   
  **"Microsoft.BingMaps" paketi:**  
  **Installdirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **Tam adı: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Ad: Microsoft.BingMaps**  
+ **Adı: Microsoft.BingMaps**  
  **Yayımcı: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Sürüm: 2.1.2914.1734**  
  **Başlatılabilir uygulamalar:**  
- **ID: AppexMaps**  
- **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: Hayır**  
+ **Kimliği: AppexMaps**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: Yok**  
  **(Başlatmak için) AppSpec: DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** , grafik bilgilerini yakalamak için kullanabileceğiniz komut çıktı numaralandırılmış her uygulama için son satırının görüntüler.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Belirli çerçeveleri ya da belirli zamanları arasında çerçeveleri yakalayın.  

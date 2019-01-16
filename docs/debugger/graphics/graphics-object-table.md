@@ -13,10 +13,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e89ae75a3e3ea43e9354df828410a0bdb6f2e79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53902717"
 ---
 # <a name="graphics-object-table"></a>Grafik Nesnesi Tablosu
@@ -88,7 +88,7 @@ Visual Studio grafik analizi grafik nesnesi tablosu oyunlarda veya uygulamalarda
 |**2 bayt**|Bir 16 bitlik işaretli tamsayı değeri.|  
 |**4 bayt**|Bir 32 bitlik işaretli tamsayı değeri. Aynı **int**.|  
 |**8 bayt**|Bir 64-bit imzalı bir tamsayı değeri. Aynı **Int64**.|  
-|**xbyte kullanılıyor**|Bir 8 bit onaltılık değeri.|  
+|**xbyte**|Bir 8 bit onaltılık değeri.|  
 |**x2byte**|Bir 16 bitlik onaltılık değer.|  
 |**x4byte**|Bir 32 bit onaltılık değer. Aynı **xint**.|  
 |**x8byte**|Bir 64-bit onaltılık değer. Aynı **xint64**.|  
@@ -111,4 +111,4 @@ Visual Studio grafik analizi grafik nesnesi tablosu oyunlarda veya uygulamalarda
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik tanılama (DirectX grafik hata ayıklama)](visual-studio-graphics-diagnostics.md)   
- [İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-device-state.md)
+ [İzlenecek yol: Cihaz Durumu Nedeniyle Eksik Nesneler](walkthrough-missing-objects-due-to-device-state.md)

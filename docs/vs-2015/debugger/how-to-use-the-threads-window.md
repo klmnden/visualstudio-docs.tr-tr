@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: iş parçacıkları penceresini kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: İş parçacıkları penceresini kullanma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -30,20 +30,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51791706"
 ---
-# <a name="how-to-use-the-threads-window"></a>Nasıl Yapılır: İş Parçacıkları Penceresini Kullanma
+# <a name="how-to-use-the-threads-window"></a>Nasıl yapılır: İş parçacıkları penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçinde **iş parçacıkları** penceresini inceleyin ve uygulamada hata ayıklaması yaptığınız iş parçacıkları ile çalışır.  
   
  **İş parçacıkları** penceresi, her satır bir iş parçacığında uygulamanızı temsil ettiği bir tablo içerir. Varsayılan olarak, uygulamanızı tüm iş parçacıklarının tabloda listelenir, ancak yalnızca sizi ilgilendiren iş parçacıklarını gösterilecek listeyi filtreleyebilirsiniz. Her sütun, farklı türde bilgi içerir. Ayrıca, bazı sütunları gizleyebilirsiniz. Tüm sütunları görüntülemek, aşağıdaki bilgileri, soldan sağa doğru görünür:  
   
--   Burada, özen istediğiniz bir iş parçacığını işaretleyebileyeceğiniz Bayrak sütunu. Bir iş parçacığı bayrak hakkında daha fazla bilgi için bkz: [nasıl yapılır: bayrağı ve iş parçacıklarını bayrakla](../debugger/how-to-flag-and-unflag-threads.md).  
+-   Burada, özen istediğiniz bir iş parçacığını işaretleyebileyeceğiniz Bayrak sütunu. Bir iş parçacığı bayrak hakkında daha fazla bilgi için bkz: [nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md).  
   
 -   Sarı okun etkin bir iş parçacığında burada gösterir etkin iş parçacığı sütunu. Burada hata ayıklayıcıya yürütmeyi kesmeden iş parçacığı bir ok bir özetini gösterir.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "51791706"
      Bu eylem, seçili iş parçacıklarını etkiler **iş parçacıkları** penceresi.  
   
 ## <a name="displaying-flagged-threads"></a>Bayraklı iş parçacıklarını görüntüleme  
- Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları** penceresi. Daha fazla bilgi için [nasıl yapılır: bayrağı ve iş parçacıklarını bayrakla](../debugger/how-to-flag-and-unflag-threads.md). İş parçacıkları penceresinde tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını görüntülemeyi tercih edebilirsiniz.  
+ Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları** penceresi. Daha fazla bilgi için [nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md). İş parçacıkları penceresinde tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını görüntülemeyi tercih edebilirsiniz.  
   
 #### <a name="to-display-only-flagged-threads"></a>Yalnızca bayraklı iş parçacıklarını görüntülemek için  
   
@@ -167,7 +167,7 @@ ms.locfileid: "51791706"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [İzlenecek Yol: Çok İş Parçacıklı Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [İzlenecek yol: Çok İş Parçacıklı Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-multithreaded-application.md)
 
 
 

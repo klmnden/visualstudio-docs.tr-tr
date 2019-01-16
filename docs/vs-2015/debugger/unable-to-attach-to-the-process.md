@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f0075050b6d24b63ed8380644ad9ec50dd4aa8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51737662"
 ---
 # <a name="unable-to-attach-to-the-process"></a>İşleme İliştirilemiyor
@@ -35,7 +35,7 @@ ms.locfileid: "51737662"
   
  Bu hataya neden iki yaygın senaryo vardır:  
   
- **Senaryo 1:** makine bir Windows XP çalıştıran. Windows Server 2003 çalıştıran makine B. Makine B üzerinde kayıt defterini, aşağıdaki DWORD değerini içerir:  
+ **Senaryo 1:** Makine Windows XP çalışıyor. Windows Server 2003 çalıştıran makine B. Makine B üzerinde kayıt defterini, aşağıdaki DWORD değerini içerir:  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
@@ -43,7 +43,7 @@ ms.locfileid: "51737662"
   
  Her iki makinede yönetici de olan, kullanıcı 2, makine A. kaydediliyor Burada, makine b 1 oturumda çalışan bir uygulamaya eklemek izinli çalışır  
   
- **Senaryo 2:** bir kullanıcı oturum açmışken makinelere iki, A ve B, aynı çalışma grubunda iki makinelerde aynı parola kullanarak. Hata ayıklayıcı bir makine üzerinde çalışan ve makine b makine A üzerinde çalışan yönetilen bir uygulamaya iliştirmeye **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** kümesine **Konuk**.  
+ **Senaryo 2:** Bir kullanıcı her iki makinelerde aynı parola kullanarak makinelere iki, A ve B aynı çalışma kaydedilir. Hata ayıklayıcı bir makine üzerinde çalışan ve makine b makine A üzerinde çalışan yönetilen bir uygulamaya iliştirmeye **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** kümesine **Konuk**.  
   
 ### <a name="to-solve-scenario-1"></a>Senaryo 1 çözmek için  
   

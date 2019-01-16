@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: IIS özellik ayarlarını doğrulama | Microsoft Docs'
+title: 'Nasıl yapılır: IIS özellik ayarlarını doğrulama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,13 +20,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53926891"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Nasıl Yapılır: IIS özellik ayarlarını doğrulama
+# <a name="how-to-verify-iis-property-settings"></a>Nasıl yapılır: IIS özellik ayarlarını doğrulama
 
 IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarlayabilirsiniz. Bu ayarlar doğrulanıyor genellikle sorun giderme gerekli bir adım, bu nedenle bu özellikleri çalıştırmak, uygulama için doğru şekilde ayarlamanız gerekir.
 

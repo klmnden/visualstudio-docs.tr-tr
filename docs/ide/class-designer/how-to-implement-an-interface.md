@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Arabirimi uygulama (Sınıf Tasarımcısı)'
+title: 'Nasıl yapılır: Arabirimi uygulama (Sınıf Tasarımcısı)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -13,13 +13,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f427a78c11696253bdd418f5c8f7ac86b906bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53916325"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı'nda arabirimi uygulama
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda arabirimi uygulama
 
 İçinde **Sınıf Tasarımcısı**, arabirim yöntemleri için kod sağlayan bir sınıf bağlanarak, sınıf diyagramı üzerinde bir arabirim uygulayabilir. **Sınıf Tasarımcısı** bir arabirim uygulaması oluşturur ve arabirim ve sınıfları arasındaki ilişki devralma ilişkisi görüntüler. Devralım çizgisi sınıf ve arabirim arasında çizim veya sınıf görünümünden arabirimi sürükleyerek bir arabirim uygulayabilir.
 

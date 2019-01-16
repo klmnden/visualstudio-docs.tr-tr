@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: O R Tasarımcısı kullanarak devralmayı yapılandırma'
+title: 'Nasıl yapılır: O R Tasarımcısı kullanarak devralmayı yapılandırma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -10,13 +10,13 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 99f353da4b6269ebf9fac425a12dfce5b5917df6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53923763"
 ---
-# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl Yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma
 **Object Relational Designer** (**O/R Tasarımcısı**) ilişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler. Tek tablo devralma işleminde üst bilgi hem de alt bilgi için alanları içeren bir tek veritabanı tablosu yok. İlişkisel verilerle bir ayrıştırıcı sütunu her kaydın ait olduğu sınıfı belirleyen bir değer içerir.
 
 Örneğin, bir `Persons` herkesin şirket tarafından kullanılan içeren tablo. Bazı kişiler çalışanlar ve bazı kişiler yöneticileri. `Persons` Tablo adlı bir sütun içeren `EmployeeType` 1 değeri, yöneticileri ve 2 değerini çalışanlar için sahip; bu ayrıştırıcı sütunu. Bu senaryoda, çalışanların öğesinin oluşturabilir ve sınıf olan kayıtlar ile doldurmak bir `EmployeeType` değeri 2'dir. Ayrıca her sınıfların geçerli olmayan sütunları kaldırabilirsiniz.

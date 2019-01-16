@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "50220384"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
@@ -72,7 +72,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-create-the-service-project"></a>Hizmet projesi oluşturmak için  
   
-1.  Visual Studio'yu başlatın.  
+1.  Visual Studio’yu çalıştırın.  
   
 2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
@@ -246,7 +246,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-load-the-data-from-the-service"></a>Verileri hizmetten yükleme için  
   
-1.  Oluşturulacak Tasarımcısı'nda `Window_Loaded` olay işleyicisi, yazan metnin çift: **MainWindow**.  
+1.  Oluşturulacak Tasarımcısı'nda `Window_Loaded` olay işleyicisi, yazan metnin çift tıklayın: **MainWindow**.  
   
 2.  Olay işleyicisi aşağıdaki kodla değiştirin. Değiştirdiğinizden emin olun *localhost* bu kodda adresi ile geliştirme bilgisayarınızda yerel ana bilgisayar adresi.  
   
@@ -324,7 +324,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 -   Nasıl kullanacağınızı öğrenin **veri kaynakları** WPF bağlama için Visual Studio penceresinde başka türde veri kaynaklarını denetler. Daha fazla bilgi için [bağlama WPF denetimlerini bir veri kümesine](../data-tools/bind-wpf-controls-to-a-dataset.md).  
   
--   Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+-   Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

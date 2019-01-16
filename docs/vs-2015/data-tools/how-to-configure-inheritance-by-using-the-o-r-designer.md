@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 7a6c8e4b2da87185c41157b8d03bd59b37188a43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49222697"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma
@@ -27,7 +27,7 @@ ms.locfileid: "49222697"
   
  Örneğin, herkesin şirket tarafından kullanılan içeren bir kişi tabloya göz önünde bulundurun. Bazı kişiler çalışanlar ve bazı kişiler yöneticileri. Kişiler tablo adlı bir sütun içeren `EmployeeType` 1 değeri, yöneticileri ve 2 değerini çalışanlar için sahip; bu ayrıştırıcı sütunu. Bu senaryoda, çalışanların öğesinin oluşturabilir ve sınıf olan kayıtlar ile doldurmak bir `EmployeeType` değeri 2'dir. Ayrıca her sınıfların geçerli olmayan sütunları kaldırabilirsiniz.  
   
- Devralma kullanır (ve ilişkisel verilere karşılık gelir) nesne modeli oluşturma biraz kafa karıştırıcı olabilir. Aşağıdaki yordam devralma O/R Tasarımcısı ile yapılandırmak için gereken adımlar açıklanmaktadır. Sağlanan verileri kullanan bir kılavuz için var olan bir tablo ve sütunlara başvuruda bulunmadan aşağıdaki genel adımları zor olabilir. Devralma kullanarak yapılandırmaya yönelik ayrıntılı adım adım yönergeler için [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], bkz: [izlenecek yol: oluşturma LINQ to SQL sınıfları kullanarak tek tablolu devralma (O/R Tasarımcısı) tarafından](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
+ Devralma kullanır (ve ilişkisel verilere karşılık gelir) nesne modeli oluşturma biraz kafa karıştırıcı olabilir. Aşağıdaki yordam devralma O/R Tasarımcısı ile yapılandırmak için gereken adımlar açıklanmaktadır. Sağlanan verileri kullanan bir kılavuz için var olan bir tablo ve sütunlara başvuruda bulunmadan aşağıdaki genel adımları zor olabilir. Devralma kullanarak yapılandırmaya yönelik ayrıntılı adım adım yönergeler için [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], bkz: [izlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
   
 ### <a name="to-create-inherited-data-classes"></a>Devralınan veri sınıfları oluşturmak için  
   
@@ -42,10 +42,10 @@ ms.locfileid: "49222697"
     > [!NOTE]
     >  Tıklayın **devralma** öğesi **araç kutusu** ve fare düğmesini bırakın, 3. adımda oluşturulan sınıf ikinci bir kopyası tıklatın ve 2. adımda oluşturduğunuz ilk sınıf'ye tıklayın. Devralım çizgisi üzerindeki oku ilk sınıfa işaret etmesini sağlayacaksınız.  
   
-5.  Her sınıfta görünmesini istemiyorsanız ve ilişkileri için kullanılmayan tüm nesne özellikleri silin. Nesne özellikleri ilişkilendirmeler için kullanılan silmeye çalışıyorsanız, bir hata alırsınız: [özelliği \<özellik adı > ilişkilendirmesine katıldığından silinemiyor \<ilişkilendirme adı >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5.  Her sınıfta görünmesini istemiyorsanız ve ilişkileri için kullanılmayan tüm nesne özellikleri silin. İlişkileri için kullanılan nesne özellikleri silmek çalışırsanız hata alırsınız: [Özellik \<özellik adı > ilişkilendirmesine katıldığından silinemiyor \<ilişkilendirme adı >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
-    >  Türetilmiş bir sınıf kendi temel sınıfta tanımlanan özellikleri devraldığından, aynı sütunlara her sınıfında tanımlanamaz. (Sütunları özellikleri olarak uygulanır.) Temel sınıf özelliğini temel alan ait devralma değiştiricisinin ayarlayarak türetilmiş sınıftaki sütunları oluşturulmasını etkinleştirebilirsiniz. Daha fazla bilgi için [NOT ın derleme: geçersiz kılma özellikleri ve yöntemleri](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    >  Türetilmiş bir sınıf kendi temel sınıfta tanımlanan özellikleri devraldığından, aynı sütunlara her sınıfında tanımlanamaz. (Sütunları özellikleri olarak uygulanır.) Temel sınıf özelliğini temel alan ait devralma değiştiricisinin ayarlayarak türetilmiş sınıftaki sütunları oluşturulmasını etkinleştirebilirsiniz. Daha fazla bilgi için [NOT ın derleme: Özellikleri ve yöntemleri geçersiz kılan](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
 6.  İçinde devralım çizgisini seçin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -63,7 +63,7 @@ ms.locfileid: "49222697"
  [PAVE veri uygulaması geliştirme Visual Studio 2012'deki yenilikler](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
  [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [İzlenecek yol: Tek tablolu devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [DEĞİL IN derleme: Visual Basic'te devralma](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
+ [DERLEME İÇİNDE DEĞİL: Visual Basic kalıtımı](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
  [Devralma](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
 

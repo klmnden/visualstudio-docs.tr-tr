@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1fbb6c294b6de0a19a8915487e830cb092a7ada7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51732396"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
@@ -109,7 +109,7 @@ void ShowFrameData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** Dia2.h  
+ **Üst bilgi:** dia2.h  
   
  **Kitaplığı:** diaguids.lib  
   

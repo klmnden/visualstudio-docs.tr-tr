@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e6c4c60265fda66f7506fe6d886fa671527c1587
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51785462"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Dağıtımdan sonra sorunları tanılama
@@ -38,7 +38,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 -   Tanılama verilerini gözden geçirmek ve kodunuzu IntelliTrace ile hata ayıklamak için Visual Studio Enterprise'ı (ancak Professional veya Community sürümlerini)  
   
-##  <a name="SetUpBuild"></a> 1. adım: Dahil, sürüm bilgileri oluşturun  
+##  <a name="SetUpBuild"></a> 1. adım: Sürümünüzü ile derleme bilgileri ekleyin  
  Web projeniz için bir derleme bildirimi (Buildınfo.config dosyası) oluşturmak için yapı işleminizi ayarlayın ve sürümünüzü ile bu bildirimi içerir. Bu bildirimi, proje, kaynak denetimi ve belirli bir yapı oluşturmak için kullanılan derleme sistemi hakkında bilgi içerir. Bu bilgiler, kayıtlı olayları gözden geçirmek için IntelliTrace günlük açtıktan sonra eşleşen kaynak ve simgeleri bulmak Visual Studio yardımcı olur.  
   
 ###  <a name="AutomatedBuild"></a> Team Foundation Server kullanarak otomatik bir yapı için derleme bildirimi oluşturma  
@@ -65,7 +65,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 4. Yapı bildirim dosyası, TFS ve simge konumları eklemek için bu MSBuild bağımsız değişkenini ekleyin:  
   
-    **/p:IncludeServerNameInBuildInfo = true**  
+    **/p:IncludeServerNameInBuildInfo=True**  
   
     Web sunucunuza erişebilen herkes bu konumlar derleme bildiriminde görebilirsiniz. Kaynak sunucunuzun güvenli olduğundan emin olun.  
   
@@ -85,7 +85,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 6. Yeni bir yapı çalıştırın.  
   
-   **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
+   **2. adım:** [2. adım: Uygulamanızı sürüm](#DeployRelease)  
   
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 veya 2010  
  Otomatik olarak projeniz için derleme bildirimini (Buildınfo.config dosyası) oluşturun ve dosyayı projenizin çıkış klasörüne yerleştirmek için aşağıdaki adımları izleyin. Dosya olarak görünür "*ProjectName*. "Çıktı klasöründe Buildınfo.config ancak olan uygulamanızı yayımladıktan sonra dağıtım klasörü" Buildınfo.config"olarak yeniden adlandırıldı.  
@@ -98,19 +98,19 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 3. Yapı tanımınıza bu MSBuild bağımsız değişkenlerini ekleyin:  
   
-   -   **/p:VisualStudioVersion 12.0 =**  
+   -   **/p:VisualStudioVersion=12.0**  
   
    -   **/p:MSBuildAssemblyVersion 12.0 =**  
   
-   -   **/TV:12.0**  
+   -   **/tv:12.0**  
   
-   -   **/p:IncludeServerNameInBuildInfo = true**  
+   -   **/p:IncludeServerNameInBuildInfo=True**  
   
    -   **buildsymbolstorepath =**\<*sembol yolu*>  
   
 4. Yeni bir yapı çalıştırın.  
   
-   **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
+   **2. adım:** [2. adım: Uygulamanızı sürüm](#DeployRelease)  
   
 ###  <a name="ManualBuild"></a> Visual Studio kullanarak el ile bir derleme için derleme bildirimi oluşturma  
  Otomatik olarak projeniz için derleme bildirimini (Buildınfo.config dosyası) oluşturun ve dosyayı projenizin çıkış klasörüne yerleştirmek için aşağıdaki adımları izleyin. Dosya olarak görünür "*ProjectName*. "Çıktı klasöründe Buildınfo.config ancak olan uygulamanızı yayımladıktan sonra dağıtım klasörü" Buildınfo.config"olarak yeniden adlandırıldı.  
@@ -137,26 +137,26 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 4. Yeni bir yapı çalıştırın.  
   
-   **2. adım:** [2. adım: uygulamanızı dağıtın](#DeployRelease)  
+   **2. adım:** [2. adım: Uygulamanızı sürüm](#DeployRelease)  
   
 ###  <a name="MSBuild"></a> MSBuild.exe kullanarak elle bir yapı için derleme bildirimi oluşturma  
  Bir yapı çalıştırdığınızda bu bağımsız değişkenleri ekleyin:  
   
- **/p:GenerateBuildInfoConfigFile = true**  
+ **/p:GenerateBuildInfoConfigFile=True**  
   
- **/p:IncludeServerNameInBuildInfo = true**  
+ **/p:IncludeServerNameInBuildInfo=True**  
   
  **buildsymbolstorepath =**\<*sembol yolu*>  
   
-##  <a name="DeployRelease"></a> 2. adım: uygulamanızı dağıtın  
+##  <a name="DeployRelease"></a> 2. adım: Uygulamanızı sürüm  
  Kullanırsanız [Web.Deploy paketini](http://msdn.microsoft.com/library/dd394698.aspx) gelen derleme bildirimi otomatik olarak yeniden adlandırılır, uygulamanızı dağıtmak için derleme işleminiz tarafından oluşturulan "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucunuz üzerinde uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.  
   
  Uygulamanızı dağıtmak için diğer yöntemleri kullanıyorsanız, derleme bildirimi gelen adlandırılır emin olun "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucusundaki uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.  
   
-## <a name="step-3-monitor-your-app"></a>Adım 3: Uygulamanızı izleyin  
+## <a name="step-3-monitor-your-app"></a>3. Adım: Uygulamanızı izleme  
  Uygulamanızı sorunlarını izleme, tanılama olaylarını kaydedin ve bu olayları bir IntelliTrace günlük dosyasına kaydetmek için uygulama performans web sunucunuzda izlemeyi ayarlayın. Bkz: [sürümünüzü dağıtım sorunları için izleme](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-##  <a name="InvestigateEvents"></a> Adım 4: sorunu bulma  
+##  <a name="InvestigateEvents"></a> 4. adım: Sorun bulunamadı  
  Visual Studio Enterprise geliştirme bilgisayarınıza veya başka bir bilgisayarda kayıtlı olayları gözden geçirmek ve kodunuzu IntelliTrace kullanarak hata ayıklama için gerekir. CodeLens, hata ayıklayıcı eşlemleri gibi araçları da kullanabilirsiniz ve sorunu tanılamanıza yardımcı olacak kod eşlemeleri.  
   
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>IntelliTrace günlüğünü ve eşleşen çözümü açın  
@@ -181,7 +181,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
      Belirli eşleşmeler veya bilgisayarınızın adı olmayan bir ad ile bir çalışma alanı oluşturmak için seçin **Yönet**.  
   
-     [S: neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?](#IneligibleWorkspace)  
+     [S: Neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?](#IneligibleWorkspace)  
   
      [S: Ben bir takım koleksiyonu veya farklı bir koleksiyon seçinceye kadar niçin devam edemiyorum?](#ChooseTeamProject)  
   
@@ -237,7 +237,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
 ###  <a name="FAQ"></a> SORU- CEVAP  
   
-####  <a name="WhyInclude"></a> S: neden proje, kaynak denetimi, derleme ve sürümüm sembolleriyle hakkında bilgi dahil edilsin mi?  
+####  <a name="WhyInclude"></a> S: Proje, kaynak denetimi, derleme ve sürümüm sembolleriyle hakkında bilgi neden dahil edilsin mi?  
  Visual Studio, kaynak ve eşleşen çözümü, hata ayıklama çalıştığınız sürümü bulmak için bu bilgileri kullanır. IntelliTrace günlüğünü açın ve hata ayıklamayı başlatmak için bir olay seçin sonra Visual Studio sembolleri bulun ve olayın gerçekleştiği kodu göstermek için kullanır. Ardından, kaydedilmiş değerlere göz ve kodunuzun yürütme ileteceğini veya geriye doğru bir şekilde taşıyabilirsiniz.  
   
  TFS ve bu bilgileri kullanıyorsanız, derleme bildirimi (Buildınfo.config dosyası), Visual Studio arar eşleşen kaynağa ve sembollere şu anda bağlı TFS üzerinde değil. Visual Studio doğru TFS veya eşleşen kaynağı bulamıyorsanız, farklı bir TFS seçmenizi istenir.  
@@ -267,9 +267,9 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
     - **ProjectCollectionUri**: Team Foundation Server ve proje koleksiyonunuz için URI  
   
-    - **Projectıtemspec**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
+    - **Projectıtemspec**: Uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
   
-    - **ProjectVersionSpec**: projeniz için yeni sürümü  
+    - **ProjectVersionSpec**: Projeniz için yeni sürümü  
   
       Örneğin:  
   
@@ -285,13 +285,13 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
   - **Git**  
   
-    - **GitSourceControl**: konumunu **GitSourceControl** şeması  
+    - **GitSourceControl**: Konumunu **GitSourceControl** şeması  
   
     - **RepositoryUrl**: Team Foundation Server, proje koleksiyonu ve Git deposu için URI  
   
-    - **ProjectPath**: uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
+    - **ProjectPath**: Uygulamanızın proje dosyasına (.csproj veya .vbproj) yolu  
   
-    - **Commitıd**: kaydınızı kimliği  
+    - **Commitıd**: Kaydınızı kimliği  
   
       Örneğin:  
   
@@ -309,15 +309,15 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
    Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:  
   
-  - **BuildLabel** (TeamBuild için için): derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+  - **BuildLabel** (TeamBuild için için): Derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
-  - **SymbolPath** (önerilen): URI listesi için Sembol (PDB dosyası) konumlarınıza noktalı virgüllerle ayrılmış. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.  
+  - **SymbolPath** (önerilen): URI listesi noktalı virgüllerle ayrılmış sembol (PDB dosyası) konumlarınıza için. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.  
   
-  - **BuildReportUrl** (için TeamBuild için): TFS'de yapı raporunun konumu  
+  - **BuildReportUrl** (TeamBuild için için): TFS'de yapı raporunun konumu  
   
-  - **Buildıd** (için TeamBuild için): TFS'de yapı için URI ayrıntıları. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.  
+  - **Buildıd** (TeamBuild için için): TFS derleme ayrıntıları için URI. Bu URI, ayrıca dağıtım Olay No olarak kullanılır. Bu kimliği TeamBuild kullanmıyorsanız, benzersiz olmalıdır gerekir.  
   
-  - **BuiltSolution**: Visual Studio çözüm dosyasının yolu bulmak ve eşleşen çözümü açmak için kullanır. Bu içeriği, **SolutionPath** MsBuild özelliği.  
+  - **BuiltSolution**: Visual Studio bulmak ve eşleşen çözümü açmak için kullandığı çözüm dosyasının yolu. Bu içeriği, **SolutionPath** MsBuild özelliği.  
   
     Örneğin:  
   
@@ -346,8 +346,8 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
     </Build>  
     ```  
   
-####  <a name="IneligibleWorkspace"></a> S: neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?  
- **Y:** seçilen çalışma alanı, kaynak denetim klasörü ve yerel klasör arasında herhangi bir eşlemeye sahip değil. Bu çalışma alanına ilişkin bir eşleme oluşturmak için seçin **Yönet**. Aksi halde, zaten eşleşmiş bir çalışma alanı seçin veya yeni bir çalışma alanı oluşturun.  
+####  <a name="IneligibleWorkspace"></a> S: Neden Visual Studio seçili çalışma alanımın uygun olmadığını söylüyor?  
+ **Y:** Seçilen çalışma alanı, kaynak denetim klasörü ve yerel klasör arasında herhangi bir eşlemeye sahip değil. Bu çalışma alanına ilişkin bir eşleme oluşturmak için seçin **Yönet**. Aksi halde, zaten eşleşmiş bir çalışma alanı seçin veya yeni bir çalışma alanı oluşturun.  
   
  ![Eşleşmiş bir çalışma alanı ile kaynak denetiminden Aç](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
   
@@ -368,13 +368,13 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
      ![Kaynak Denetiminden Aç &#45; geçişi](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
-####  <a name="WhatWorkspace"></a> S: bir çalışma alanı nedir?  
- **Y:** , [çalışma alanı, kaynak kopyasını depoladığından](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) geliştirebilir ve bunu ayrı olarak önce onay çalışmanızı test edebilirsiniz. Bulunan çözümle veya projeyle özel olarak eşleşen bir çalışma alanı yoksa, Visual Studio varsayılan çalışma alanı adı olarak bilgisayar adınızla birlikte yeni bir çalışma alanı oluşturmanızı veya mevcut bir çalışma alanı seçmenizi ister.  
+####  <a name="WhatWorkspace"></a> S: Çalışma alanı nedir?  
+ **Y:** [Çalışma alanı, kaynak kopyasını depoladığından](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) geliştirebilir ve bunu ayrı olarak önce onay çalışmanızı test edebilirsiniz. Bulunan çözümle veya projeyle özel olarak eşleşen bir çalışma alanı yoksa, Visual Studio varsayılan çalışma alanı adı olarak bilgisayar adınızla birlikte yeni bir çalışma alanı oluşturmanızı veya mevcut bir çalışma alanı seçmenizi ister.  
   
-####  <a name="UntrustedSymbols"></a> Güvenilmeyen simgeler hakkında bu iletiyi neden alıyorum?  
+####  <a name="UntrustedSymbols"></a> S: Bu güvenilmeyen simgeler hakkındaki iletiyi neden alıyorum?  
  ![Güvenilmeyen simgeler yolu ile hata ayıklama? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
- **Y:** bu ileti görüntülenir yapı bildirim dosyası içindeki semboller yolu (\<*ProjectName*>. Buildınfo.config) güvenilir sembol yolları listesine dahil değildir. Hata ayıklama seçeneklerindeki sembol yolu listesine yolu ekleyebilirsiniz.
+ **Y:** Bu ileti görüntülenir yapı bildirim dosyası içindeki semboller yolu (\<*ProjectName*>. Buildınfo.config) güvenilir sembol yolları listesine dahil değildir. Hata ayıklama seçeneklerindeki sembol yolu listesine yolu ekleyebilirsiniz.
 
 
 

@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c2efe3801639fb85e1331fc77cc27cbb42717a12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53926115"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan bir MSBuild proje dosyası oluşturma
@@ -390,7 +390,7 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
   
      **Hedef "Derleme", tüm çıktı dosyalarının göre giriş dosyaları güncel olduğu için atlanıyor.**  
   
-     **Giriş dosyaları: HelloWorld.cs olarak**  
+     **Giriş dosyaları: HelloWorld.cs**  
   
      **Çıktı dosyaları: BinMSBuildSample.exe**  
   

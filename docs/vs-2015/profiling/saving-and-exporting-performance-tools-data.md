@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768500"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Verileri kaydetme ve dışarı aktarma performans araçları
@@ -28,7 +28,7 @@ ms.locfileid: "51768500"
 
 Bu konuda, kaydedin ve performans veri dosyalarını dışarı aktarma açıklanmaktadır.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Nasıl yapılır: performans veri dosyalarını analiz edilmiş raporu dosyaları olarak kaydedin  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Nasıl Yapılır: Performans veri dosyalarını analiz edilmiş raporu dosyaları olarak kaydedin  
  Filtrelenmiş veya filtrelenmemiş görünümlerini profil oluşturma veri (.vsp) dosyalarını analiz edilmiş raporu (.vsps) dosyası olarak kaydedebilirsiniz. Bir analiz edilmiş raporu dosya rapor görünümü penceresindeki görüntülenebilir ve özgün .vsp dosyasından daha önemli ölçüde daha küçük. Ancak, verileri .vsps dosyası için bir filtre uygulayamazsınız. Tümleşik geliştirme ortamında (IDE) dosyayı açmaya gerek kalmadan performans Gezgini'nden bir analiz edilmiş raporu dosyası oluşturabilir veya açın ve .vsp dosyasının filtreleyebilir ve ardından sonuçları kaydedin.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Performans Gezgini'nden bir analiz edilen performans raporu kaydetmek için  
@@ -51,7 +51,7 @@ Bu konuda, kaydedin ve performans veri dosyalarını dışarı aktarma açıklan
   
 5.  Tıklayın **kaydedin.**  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Nasıl yapılır: dışarı aktarma profil oluşturma araçları raporları bir. XML veya. CSV dosyası  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Nasıl yapılır: Dışarı aktarma profil oluşturma araçları raporları bir. XML veya. CSV dosyası  
  Bir veya daha fazla rapor görünümlerini .vsp dosyasının veya .vsps profil oluşturma veri dosyası ya da bir virgülle ayrılmış olarak veya bir XML dosyasını dışarı aktarabilirsiniz. Rapor Görünümü penceresi verileri dışarı veya rapor görünümlerini tüm veri dosyasından dışarı aktarabilirsiniz önce filtreleyebilirsiniz **performans Gezgini** penceresi.  
   
 > [!NOTE]

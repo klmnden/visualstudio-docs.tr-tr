@@ -9,10 +9,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54228038"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama (C#, Visual Basic)
@@ -68,7 +68,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 4.  Yapı bildirim dosyası, TFS ve simge konumları eklemek için bu MSBuild bağımsız değişkenini ekleyin:
 
-     **/p:IncludeServerNameInBuildInfo = true**
+     **/p:IncludeServerNameInBuildInfo=True**
 
      Web sunucunuza erişebilen herkes bu konumlar derleme bildiriminde görebilirsiniz. Kaynak sunucunuzun güvenli olduğundan emin olun.
 
@@ -103,13 +103,13 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 3.  Bu MSBuild bağımsız değişkenleri yapı ardışık düzeninize ekleyin:
 
-    -   **/p:VisualStudioVersion 12.0 =**
+    -   **/p:VisualStudioVersion=12.0**
 
     -   **/p:MSBuildAssemblyVersion 12.0 =**
 
-    -   **/TV:12.0**
+    -   **/tv:12.0**
 
-    -   **/p:IncludeServerNameInBuildInfo = true**
+    -   **/p:IncludeServerNameInBuildInfo=True**
 
     -   **buildsymbolstorepath =**\<*sembol yolu*>
 
@@ -147,9 +147,9 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 ###  <a name="MSBuild"></a> MSBuild.exe kullanarak elle bir yapı için derleme bildirimi oluşturma
  Bir yapı çalıştırdığınızda bu bağımsız değişkenleri ekleyin:
 
- **/p:GenerateBuildInfoConfigFile = true**
+ **/p:GenerateBuildInfoConfigFile=True**
 
- **/p:IncludeServerNameInBuildInfo = true**
+ **/p:IncludeServerNameInBuildInfo=True**
 
  **buildsymbolstorepath =**\<*sembol yolu*>
 

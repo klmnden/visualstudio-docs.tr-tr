@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51794601"
 ---
 # <a name="historical-debugging"></a>Geçmiş Hata Ayıklama
@@ -36,7 +36,7 @@ Geçmiş hata ayıklama IntelliTrace tarafından toplanan bilgiler bağımlı ha
  Geçici uygulamanızdaki dolaşan ve kesme noktaları ayarlayın, hata ayıklamayı yeniden başlatmak zorunda kalmadan (çağrı yığını ve yerel değişkenler) durumunu incelemek için IntelliTrace ve geçmiş hata ayıklama kullanın ve test adımları yineleyin. Bu, çok fazla kaydedebilirsiniz süresini, özellikle zaman hata bulunan yürütmek için uzun zaman alan derin bir testi senaryosunda.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>Geçmiş hata ayıklama kullanmaya nasıl başlarım?  
- IntelliTrace varsayılan olarak açıktır. Tek yapmanız gereken olan hangi olayların ve işlev çağrılarının ilginizi çeken karar verin. Aramak istediğiniz tanımlama hakkında daha fazla bilgi için bkz. [IntelliTrace özellikleri](../debugger/intellitrace-features.md). Adım adım bir hesabı IntelliTrace ile hata ayıklama bilgi için bkz: [izlenecek yol: IntelliTrace'i kullanarak](../debugger/walkthrough-using-intellitrace.md).  
+ IntelliTrace varsayılan olarak açıktır. Tek yapmanız gereken olan hangi olayların ve işlev çağrılarının ilginizi çeken karar verin. Aramak istediğiniz tanımlama hakkında daha fazla bilgi için bkz. [IntelliTrace özellikleri](../debugger/intellitrace-features.md). Adım adım bir hesabı IntelliTrace ile hata ayıklama bilgi için bkz: [izlenecek yol: IntelliTrace kullanarak](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Geçmiş hata ayıklama ile kodunuzda gezinme  
  Bir hata için basit bir program başlayalım. Bir C# konsol uygulamasında, aşağıdaki kodu ekleyin:  

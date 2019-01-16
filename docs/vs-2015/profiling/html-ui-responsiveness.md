@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51760713"
 ---
 # <a name="html-ui-responsiveness"></a>HTML kullanıcı Arabirimi yanıt hızı
@@ -79,7 +79,7 @@ Bu konu, uygulamalarınızı Windows Evrensel uygulamaları için bir performans
 6.  Profil Oluşturucu toplanan uygulama ve verileri profil oluşturmayı durdurmak için seçin **koleksiyonu Durdur**.  
   
 ##  <a name="IsolateAnIssue"></a> Bir sorunu  
- Aşağıdaki bölümde, performans sorunlarını yalıtmak yardımcı olacak öneriler sunar. Uygulamasının performansını test etme bir örnek kullanarak performans sorunlarını belirleyin ve nasıl hakkında adım adım açıklama için bkz: [izlenecek yol: iyileştirme UI yanıtlama hızı (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ Aşağıdaki bölümde, performans sorunlarını yalıtmak yardımcı olacak öneriler sunar. Uygulamasının performansını test etme bir örnek kullanarak performans sorunlarını belirleyin ve nasıl hakkında adım adım açıklama için bkz: [izlenecek yol: UI yanıtlama hızı (HTML) geliştirme](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Bir kullanıcı Arabirimi yanıt hızı sorununu gidermek  
  UI yanıtlama hızı Profiler daha etkili bir şekilde kullanmanıza yardımcı olabilecek bir önerilen iş akışı adımları sağlayın:  
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
 -   Farklı bir sayfasına gittiğinizde oluşan bir gezinti olayı. Olay için bir araç ipucu hedef sayfası URL'si gösterilir.  
   
 ###  <a name="CPUUtilization"></a> Görünüm CPU kullanımı  
- CPU kullanım grafiği aşırı CPU etkinliği olduğu süre tanımlamanızı sağlar. Uygulamanın bir süre boyunca ortalama CPU kullanımı hakkında bilgi sağlar. Bilgi aşağıdaki kategorileri göstermek için renk kodlu: **Yükleniyor**, **komut dosyası**, çöp toplama (**GC**), **stil**, **İşleme**, ve **görüntü kodu çözme**. Bu kategorileri hakkında daha fazla bilgi için bkz. [Profiler olay başvuru](#ProfilerEvents) bu konuda.  
+ CPU kullanım grafiği aşırı CPU etkinliği olduğu süre tanımlamanızı sağlar. Uygulamanın bir süre boyunca ortalama CPU kullanımı hakkında bilgi sağlar. Bilgi aşağıdaki kategorileri göstermek için renk kodludur: **Yükleme**, **komut dosyası**, çöp toplama (**GC**), **stil**, **işleme**, ve **görüntüsü kod çözme**. Bu kategorileri hakkında daha fazla bilgi için bkz. [Profiler olay başvuru](#ProfilerEvents) bu konuda.  
   
  CPU kullanım grafiği, CPU kullanımı değerleri tek bir yüzde değeri bir veya daha fazla CPU için birleştirme tüm uygulama iş parçacığı üzerinde harcanan süreyi gösterir. Birden fazla CPU kullanımda olduğunda değerin CPU kullanımı yüzde 100 aşabilir.  
   
@@ -353,8 +353,8 @@ if (performance.mark && performance.measure) {
 |Atık toplama|GC|Artık kullanımda olan nesneler için bellek toplamaya harcanan süre.|  
 |CSS hesaplama|Stil oluşturma|Hesaplanacak etkilenen tüm öğelerin stil özelliklerinin gerekli DOM'da değişiklikler yapıldı.|  
 |Düzen|Stil oluşturma|Boyutunun ve/veya konumunun hesaplanmasını etkilenen tüm öğelerin DOM'da değişiklikler yapıldı.|  
-|Boyama|işleme|DOM'da görsel değişiklikler yapıldı ve sayfasının bölümlerini yeniden oluşturmak için bir girişimde bulunuldu.|  
-|İşleme katmanı|işleme|DOM (katman olarak bilinir) bağımsız olarak işlenen bir parçasında görsel değişiklikler yapıldı ve işlenecek sayfasının bir bölümü değişiklik gerekli.|  
+|Boyama|İşleme|DOM'da görsel değişiklikler yapıldı ve sayfasının bölümlerini yeniden oluşturmak için bir girişimde bulunuldu.|  
+|İşleme katmanı|İşleme|DOM (katman olarak bilinir) bağımsız olarak işlenen bir parçasında görsel değişiklikler yapıldı ve işlenecek sayfasının bir bölümü değişiklik gerekli.|  
 |Görüntü kodu çözme|Görüntü kodu çözme|Görüntü DOM eklenmiştir ve sıkıştırmasını açın ve özgün biçiminde görüntüden bir bit eşleme kodunu çözmek için bir girişimde bulunuldu.|  
 |Çerçeve|Yok|DOM'da etkilenen tüm bölümleri sayfasının yeniden çizilmesini gerektiren görsel değişiklikler yapıldı. Gruplandırma için kullanılan bir araç tarafından oluşturulan olay budur.|  
 |Kullanıcı ölçümü|Yok|Uygulamaya özel bir senaryo kullanma ölçülmüştür `performance.measure` yöntemi. Kod çözümlemesi için kullanılan bir araç tarafından oluşturulan olay budur.|  

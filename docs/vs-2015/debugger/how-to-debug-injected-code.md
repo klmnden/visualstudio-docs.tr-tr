@@ -32,13 +32,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ff81b082c877098acec78e56ef9ef211cae8854
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51778156"
 ---
-# <a name="how-to-debug-injected-code"></a>Nasıl Yapılır: Püskürtülen Kodda Hata Ayıklama
+# <a name="how-to-debug-injected-code"></a>Nasıl yapılır: Püskürtülen kodda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]

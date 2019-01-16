@@ -29,10 +29,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51792866"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Verilerin özel Görselleştiricilerini oluşturma
@@ -53,13 +53,13 @@ Görselleştiriciler bileşenlerinin [!INCLUDE[vs_current_short](../includes/vs-
 >  Hata ayıklama görselleştiricileri kısmi güven uygulama tarafından izin verilenden daha yüksek ayrıcalıklar gerektirir. Sonuç olarak, kısmi güven ile koddaki durdurulduğunda görselleştiriciler yüklenmiyor. Görselleştirici kullanarak hata ayıklama için tam güven ile kodu çalıştırmanız gerekir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl Yapılır: Görselleştirici Yazma](../debugger/how-to-write-a-visualizer.md)  
+ [Nasıl yapılır: Görselleştirici Yazma](../debugger/how-to-write-a-visualizer.md)  
   
- [İzlenecek Yol: C# ile Görselleştirici Yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [İzlenecek yol: C# Dilinde Görselleştirici Yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
- [Nasıl Yapılır: Görselleştirici Yükleme](../debugger/how-to-install-a-visualizer.md)  
+ [Nasıl yapılır: Görselleştiriciyi Yükleme](../debugger/how-to-install-a-visualizer.md)  
   
- [Nasıl Yapılır: Görselleştiriciyi Test Etme ve Hata Ayıklama](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Nasıl yapılır: Görselleştiriciyi Test Etme ve Hatalarını Ayıklama](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [Görselleştirici API Başvurusu](../debugger/visualizer-api-reference.md)  
   

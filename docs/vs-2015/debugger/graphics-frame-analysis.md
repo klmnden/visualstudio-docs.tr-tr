@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ac0fedd5c78af474e37079f640f74a0d5e0bf8b
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54154498"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi

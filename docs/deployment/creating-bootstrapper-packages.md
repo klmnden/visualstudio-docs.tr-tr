@@ -21,10 +21,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53878396"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
@@ -83,7 +83,7 @@ Aşağıdaki tablo önyükleyici tarafından otomatik olarak doldurulan özellik
 |Özellik|Açıklama|  
 |--------------|-----------------|  
 |ApplicationName|Uygulamanın adı.|  
-|ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen platformun. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen platformun. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-   IA64<br />-AMD64|  
 |[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
 |[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows Installer derlemesinin (msi.dll) yükleme sırasında çalıştırılacak sürümü.|  

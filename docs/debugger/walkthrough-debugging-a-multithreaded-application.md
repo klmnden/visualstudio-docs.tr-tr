@@ -24,10 +24,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54228025"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Görüntüleme iş parçacıkları Visual Studio hata ayıklayıcıda iş parçacıkları penceresini kullanarak (C#, Visual Basic, C++)

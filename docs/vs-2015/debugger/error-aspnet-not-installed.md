@@ -27,13 +27,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51739587"
 ---
-# <a name="error-aspnet-not-installed"></a>Hata: ASP.NET Yüklü Değil
+# <a name="error-aspnet-not-installed"></a>Hata: ASP.NET yüklü değil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu hata oluştuğunda, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] doğru hata ayıklamaya çalıştığınız bilgisayarda yüklü değil. Bu gelebilir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] hiç yüklenmemiş ya da [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ilk yüklenen ve IIS daha sonra yüklendi.  

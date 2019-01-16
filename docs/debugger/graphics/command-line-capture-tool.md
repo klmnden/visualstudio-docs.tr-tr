@@ -9,10 +9,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53960660"
 ---
 # <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı

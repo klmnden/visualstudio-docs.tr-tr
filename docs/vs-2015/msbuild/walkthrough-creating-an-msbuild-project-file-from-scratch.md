@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: Sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913897"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek Yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ ms.locfileid: "49913897"
   
 - Artımlı olarak derleyin.  
   
-  Bu izlenecek yol, komut isteminde projeyi oluşturun ve sonuçları inceleyin işlemi gösterilmektedir. MSBuild ve MSBuild komut isteminde çalıştırmak hakkında daha fazla bilgi için bkz. [izlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md).  
+  Bu izlenecek yol, komut isteminde projeyi oluşturun ve sonuçları inceleyin işlemi gösterilmektedir. MSBuild ve MSBuild komut isteminde çalıştırmak hakkında daha fazla bilgi için bkz. [izlenecek yol: MSBuild kullanarak](../msbuild/walkthrough-using-msbuild.md).  
   
   İzlenecek yolu tamamlamak için gözden geçirme için gerekli olan MSBuild ve Visual C# derleyicisi, içerdiği için yüklü .NET Framework (sürüm 2.0, 3.5, 4.0 veya 4.5) olması gerekir.  
   
@@ -146,10 +146,10 @@ ms.locfileid: "49913897"
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ ms.locfileid: "49913897"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ ms.locfileid: "49913897"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -399,9 +399,9 @@ ms.locfileid: "49913897"
   
      **Hedef "Derleme", tüm çıktı dosyalarının göre giriş dosyaları güncel olduğu için atlanıyor.**  
   
-     **Giriş dosyalarını: HelloWorld.cs olarak**  
+     **Giriş dosyaları: HelloWorld.cs**  
   
-     **Çıkış dosyalarını: BinMSBuildSample.exe**  
+     **Çıktı dosyaları: BinMSBuildSample.exe**  
   
      Uygulamanın son oluşturulmasında beri kaynak dosyaların hiçbiri değişiklik yapılmadığından MSBuild yapı hedefini atlar.  
   
@@ -484,7 +484,7 @@ ms.locfileid: "49913897"
 ```  
   
 ## <a name="whats-next"></a>Sırada ne var?  
- Visual Studio otomatik olarak bu izlenecek yolda gösterilen işin çoğunu gerçekleştirebilirsiniz. Oluşturma, düzenleme, derleme ve MSBuild proje dosyaları test etmek için Visual Studio'u kullanmayı öğrenmek için bkz: [izlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md).  
+ Visual Studio otomatik olarak bu izlenecek yolda gösterilen işin çoğunu gerçekleştirebilirsiniz. Oluşturma, düzenleme, derleme ve MSBuild proje dosyaları test etmek için Visual Studio'u kullanmayı öğrenmek için bkz: [izlenecek yol: MSBuild kullanarak](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [MSBuild'e genel bakış](msbuild.md)  

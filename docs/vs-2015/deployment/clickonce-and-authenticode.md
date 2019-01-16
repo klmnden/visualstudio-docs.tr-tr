@@ -25,10 +25,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49289491"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
@@ -61,7 +61,7 @@ Authenticode * uygulama kodu uygulama yayımcısının özgünlüğünü doğrul
 ### <a name="timestamps"></a>Zaman damgaları  
  Oturum açmak için kullanılan sertifikaları [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamaları süresi zaman bir belirli bir süre sonra genellikle on iki aylık. Yeni sertifikalar uygulamaları sürekli yeniden imzalama için gereken kaldırmak için [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zaman damgası destekler. Bir uygulama zaman damgasıyla imzalandığında sertifikasını sürdürecektir kabul dolduktan sonra bile, zaman damgası geçerli sağlanır. Böylece [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] süresi dolmuş sertifikaları, ancak karşıdan yüklemek ve çalıştırmak için geçerli zaman damgaları uygulamalarla. Ayrıca, güncelleştirmeleri indirmek ve yüklemek devam etmek yüklenmiş uygulamalara sahip süresi dolmuş sertifikaları sağlar.  
   
- Uygulama sunucusuna bir zaman damgası eklemek için zaman damgası sunucusunun kullanılabilir olması gerekir. Zaman damgası sunucusu seçme hakkında daha fazla bilgi için bkz: [nasıl yapılır: oturum uygulama ve dağıtım bildirimlerini](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Uygulama sunucusuna bir zaman damgası eklemek için zaman damgası sunucusunun kullanılabilir olması gerekir. Zaman damgası sunucusu seçme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="updating-expired-certificates"></a>Süresi dolan sertifikaları güncelleştirme  
  Önceki .NET Framework sürümlerinde, sertifikanın süresi dolmuş uygulamayı güncelleştirme, Uygulama çalışmayı durdurmasına neden olabilir. Bu sorunu çözmek için aşağıdaki yöntemlerden birini kullanın:  

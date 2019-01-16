@@ -26,13 +26,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4639055fe9320c8fd1bf1b2575bca323642dd17f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51742070"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>Nasıl Yapılır: IIS Özellik Ayarlarını Doğrulama
+# <a name="how-to-verify-iis-property-settings"></a>Nasıl yapılır: IIS özellik ayarlarını doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarlayabilirsiniz. Bu ayarlar doğrulanıyor genellikle sorun giderme gerekli bir adım, bu nedenle bu özellikleri çalıştırmak, uygulama için doğru şekilde ayarlamanız gerekir.  
@@ -42,7 +42,7 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>IIS Web uygulamasının ayarlarını denetlemek için  
   
-1.  Açık **Yönetimsel Araçlar** penceresi: üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.  
+1.  Açık **Yönetimsel Araçlar** penceresi: Üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.  
   
     -   Windows 2000'de seçin **Internet Hizmetleri Yöneticisi'ni**.  
   
@@ -66,7 +66,7 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
   
     3.  Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.  
   
-5.  Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: uzantı ile hata ayıklama fiili ilişkilendirmek](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5.  Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6.  İçin bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama, uygulama kümesinde bir uygulama adı için sanal klasör emin **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni** veya  **Internet Information Services**.  
   

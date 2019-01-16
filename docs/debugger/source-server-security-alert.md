@@ -16,10 +16,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: e01f9c06ec989829a27c58b7dae9b128512911e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53909924"
 ---
 # <a name="source-server-security-alert"></a>Kaynak Sunucu Güvenlik Uyarısı

@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9abf64864c9b722f344662200dfc923cc3e192b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53914189"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak bir ASP.NET Web Uygulaması için Eşzamanlılık Verileri Toplama
@@ -33,7 +33,7 @@ Eşzamanlılık yöntemi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kaynak çe
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme|-   [Nasıl Yapılır: Profiler eşzamanlılık verileri toplamak için bir ASP.NET uygulamasına ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Çalışan bir ASP.NET uygulamasına profil oluşturucu ekleme|-   [Nasıl Yapılır: Eşzamanlılık Verileri Toplamak için ASP.NET Uygulamasına Profil Oluşturucu Ekleme](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Başvuru  
  [Komut Satırı Profil Oluşturma Araçları Başvurusu](../profiling/command-line-profiling-tools-reference.md)  

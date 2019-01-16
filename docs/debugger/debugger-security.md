@@ -18,10 +18,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 59d4e3fedbee4a1af1de1137e63712825eb51dbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53887951"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
@@ -80,4 +80,4 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

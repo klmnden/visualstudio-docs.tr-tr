@@ -18,10 +18,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "54227674"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>İzlenecek yol: İş parçacıkları penceresini kullanarak bir çok iş parçacıklı uygulamaların hatalarını ayıklama (C#, Visual Basic, C++)

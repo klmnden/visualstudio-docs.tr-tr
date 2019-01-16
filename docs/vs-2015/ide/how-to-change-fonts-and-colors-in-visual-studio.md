@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yazı tiplerini ve renkleri değiştirme'
+title: 'Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53915367"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl Yapılır: Yazı tipleri ve renkler Visual Studio'da değiştirme
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl yapılır: Yazı tipleri ve renkler Visual Studio'da değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IDE çerçevesinin ve araç pencerelerinin Visual Studio'da çeşitli şekillerde rengini özelleştirebilirsiniz.
