@@ -1,9 +1,9 @@
-# [Mac için Visual Studio’ya Giriş](index.md)
-# [IDE Turu](ide-tour.md)
+# [Mac için Visual Studio](index.md)
+# [IDE Turu](/visualstudio/mac/ide-tour/)
 
-# [Yükleme](installation.md)
+# [Yükleme](/visualstudio/mac/installation/)
 ## [Bir güvenlik duvarı veya ara sunucunun arkasına yükleme ve burada kullanma](install-behind-a-firewall-or-proxy-server.md)
-## [Bir Önizleme sürümünü yükleme](install-preview.md)
+## [Bir önizleme sürümünü yükleme](install-preview.md)
 ## [Güncelleştir](update.md)
 ## [Kaldır](uninstall.md)
 
@@ -65,6 +65,7 @@
 ### [Unity Araçlarını Kullanma](using-vsmac-tools-unity.md)
 ### [Unity’de .NET 4.x kullanma](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Değişiklik Günlüğü](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [Xamarin ile mobil uygulamalar](/xamarin/)
 
 # [Erişilebilirlik](accessibility.md)
 
