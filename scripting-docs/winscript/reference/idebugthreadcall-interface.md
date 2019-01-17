@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794237"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346273"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall Arabirimi
-`IDebugThreadCall` Arabirimi iş parçacıkları arası çağrılar ile bir bileşen tarafından uygulanan genellikle `IDebugThread` işlem hata ayıklama Yöneticisi (PDM) tarafından sağlanan uygulama dizimi.  
+`IDebugThreadCall` Arabirimi iş parçacıkları arası çağrılar ile bir bileşen tarafından uygulanan genellikle `IDebugThread` işlem hata ayıklama Yöneticisi (PDM) tarafından sağlanan uygulama taşıma.  
   
- PDM çağrıları `IDebugThreadCall` istenen iş parçacığı arabiriminde ve `IDebugThreadCall` arabirimi istediğiniz uygulamayı çağrısı gönderir. `IDebugThreadCall` Arabirimi parametrelerinde uygun dön geçirilen parametre bilgileri çevirir.  
+ PDM çağrıları `IDebugThreadCall` istenen iş parçacığı, arabirimi ve `IDebugThreadCall` arabirimi çağrısı istenen uygulamaya gönderir. `IDebugThreadCall` Arabirimi yayınlar için uygun üst parametrelerinde geçirilen parametre bilgileri.  
   
- `IDebugThreadCall` Ücretsiz iş parçacıklı bir nesne bir arabirimdir.  
+ `IDebugThreadCall` Arabirimidir ücretsiz iş parçacıklı bir nesne.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugThreadCall` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugThreadCall` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Başka bir iş parçacığında kodu çalıştırmak için çağrıları işler.|
+|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Başka bir iş parçacığında kod çalıştırmak için çağrılar işler.|

@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56d6e63c41db274634b2593989800ea0392b93a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76f10d6bbb34c61e87a1be0f61dcd7db168274e7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794183"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348496"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>IDebugStackFrameSnifferEx Arabirimi
-Bir bileşen tarafından bilinen mantıksal yığın çerçeveleri numaralandırmak için bir yol sağlar. Komut dosyası motorları, genellikle bu arabirimi uygular. Bu arabirim tüm yığın çerçeveleri bulmak için işlemi hata ayıklama Yöneticisi kullanır, belirli bir iş parçacığı ile ilişkilendirilmiş.  
+Bir bileşen tarafından bilinen mantıksal yığın çerçevelerini numaralandırmak için bir yol sağlar. Komut dosyası motorları, genellikle bu arabirimi uygulayın. Bu arabirim tüm yığın çerçevelerini bulmak için işlemi hata ayıklama Yöneticisi kullanır, belirli bir iş parçacığı ile ilişkili.  
   
 > [!NOTE]
->  Bu arabirime ilgilendiğiniz iş parçacığı içinde çağrılır. Arabirim uygulaması, geçerli iş parçacığının tanımlamak ve uygun bir numaralandırıcı döndürür.  
+>  Bu arabirim ilgilendiğiniz iş parçacığı içinde çağrılır. Arabirimi uygulama, geçerli iş parçacığını tanımlamak ve uygun bir numaralandırıcı döndürür.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IDebugStackFrameSniffer`, `IDebugStackFrameSnifferEx` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IDebugStackFrameSniffer`, `IDebugStackFrameSnifferEx` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Yığın çerçevelerinin geçerli iş parçacığı için bir numaralandırıcı döndürür.|
+|[IDebugStackFrameSnifferEx::EnumStackFramesEx](../../winscript/reference/idebugstackframesnifferex-enumstackframesex.md)|Geçerli iş parçacığı için yığın çerçevelerinin bir numaralandırıcı döndürür.|

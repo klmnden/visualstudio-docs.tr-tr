@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220228"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345493"
 ---
 # <a name="active-script-debugging-overview"></a>Etkin Komut Dosyası Hata Ayıklamaya Genel Bakış
 Etkin betik hata ayıklama arabirimleri, dilden bağımsız, konak nötr hata ayıklamaya izin verecek ve çok çeşitli geliştirme ortamlarında destekler.  
@@ -39,7 +39,7 @@ Etkin betik hata ayıklama arabirimleri, dilden bağımsız, konak nötr hata ay
  **Dil altyapısı**  
  Ayrıştırma, yürütme ve soyutlama belirli bir dil için hata ayıklama sağlayan bir bileşendir.  
   
- **hata ayıklayıcı IDE**  
+ **Hata ayıklayıcı IDE**  
  Konak uygulama ve dil altyapıları ile iletişim kurarak UI hata ayıklaması sağlayan uygulama.  
   
  **Makine Hata Ayıklama Yöneticisi** hata ayıklanabilir uygulama işlemlerinin bir kayıt defteri tutar bir bileşen.  

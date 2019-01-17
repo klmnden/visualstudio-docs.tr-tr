@@ -21,25 +21,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788930"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346143"
 ---
 # <a name="undefined-identifier"></a>Tanımlanmamış tanımlayıcı
-Bir tanımlayıcı kullanın girişiminde bulunuldu, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] derleyici tanımıyor. Kullandığınız her Tanımsız değer döndürdü:  
+Bir tanımlayıcı kullanma girişiminde bulunuldu, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] derleyici tanımıyor. Her kullandığınızda da tanımlanmamış değer döndürülür:  
   
 -   var olmayan bir değişken  
   
--   bildirilmiş, ancak hiçbir zaman sahip bir değişken kendisine atanmış bir değer  
+-   bildirilmiş, ancak hiçbir zaman sahip bir değişken bir değer atanabilir  
   
 -   var olmayan bir nesne özelliği.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Değişkenle bildirme bir **var** deyimi (olarak `var` x;).  
+-   Değişkenle bildirmek bir **var** deyimi (olarak `var` x;).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Değişkenleri](../../javascript/variables-javascript.md)   
- [Değişken kapsamı](../../javascript/advanced/variable-scope-javascript.md)
+ [Değişken Kapsam](../../javascript/advanced/variable-scope-javascript.md)

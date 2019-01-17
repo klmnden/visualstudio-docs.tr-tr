@@ -14,32 +14,32 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 788be3fe9cb5ba529e3d1ca653d4f0f5c35b5932
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8897d783f8a101b41dd7263061604fb1d82ec56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796289"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344622"
 ---
 # <a name="iscriptnode-interface"></a>IScriptNode Arabirimi
-Arabirimini uygulayan bir nesneye `IScriptNode` arabirimi bir Web sayfasını temsil eder.  
+Uygulayan bir nesne `IScriptNode` arabirimi bir Web sayfasını temsil eder.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IScriptNode` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IScriptNode` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Bir nesne hala etkin olup olmadığını gösterir.|  
+|[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Bir nesne hala etkin olup olmadığını belirtir.|  
 |[Iscriptnode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Bir alt örneğini ekler `IScriptEntry`.|  
-|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Bir kod parçacığı bir alt örneğini ekler bir `IScriptNode`.|  
-|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Nesne ağacına siler.|  
-|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Belirtilen dizinde düğümünde olan alt öğesini döndürür.|  
-|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Bir kod parçacığı konak nesnesi ile ilişkilendirmek için kullanılan uygulama tanımlı bir değer döndürür.|  
-|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Bir nesne dizinini üst öğenin alt listesinde döndürür.|  
-|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Geçerli komut dosyası düğüm tarafından kullanılan komut dosyası dilini döndürür.|  
-|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Alt öğelerinin sayısını döndürür `IScriptNode` nesnesi.|  
-|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Döndürür `IScriptNode` nesnenin üst nesnesi.|  
+|[IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)|Bir kod oluşturma ekler alt örnek olarak bir `IScriptNode`.|  
+|[IScriptNode::Delete](../../winscript/reference/iscriptnode-delete.md)|Nesne ağacının siler.|  
+|[IScriptNode::GetChild](../../winscript/reference/iscriptnode-getchild.md)|Belirtilen dizin düğümünde en alt öğesini döndürür.|  
+|[IScriptNode::GetCookie](../../winscript/reference/iscriptnode-getcookie.md)|Bir kod oluşturma konak nesnesiyle ilişkilendirmek için kullanılan uygulama tanımlı bir değer döndürür.|  
+|[IScriptNode::GetIndexInParent](../../winscript/reference/iscriptnode-getindexinparent.md)|Üst öğenin alt listedeki bir nesnenin dizinini döndürür.|  
+|[IScriptNode::GetLanguage](../../winscript/reference/iscriptnode-getlanguage.md)|Geçerli betik düğümü tarafından kullanılan kodlama dilini döndürür.|  
+|[IScriptNode::GetNumberOfChildren](../../winscript/reference/iscriptnode-getnumberofchildren.md)|Alt düğümleri sayısını döndürür `IScriptNode` nesne.|  
+|[IScriptNode::GetParent](../../winscript/reference/iscriptnode-getparent.md)|Döndürür `IScriptNode` bir nesnenin üst nesnesi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası yazma arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)
+ [Etkin Betik Yazma Arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)

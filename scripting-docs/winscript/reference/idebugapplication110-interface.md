@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7c283e925db5b42b4d04bfc42ea087ecc22b6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b13208d6a507ea4ed3157606f358b6b0168180cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793973"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349562"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 Arabirimi
-`IDebugApplication110` Arabirimi işlevselliğini genişleten [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md). Bu arabirim örneği uygulaması üzerinde QueryInterface çağırarak alabilirsiniz [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md).  
+`IDebugApplication110` Arabirimi işlevselliğini genişleten [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md). Uygulaması QueryInterface çağırarak bu arabirimin örneğini alabilirsiniz [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
 >  Bu arabirim PDM v11.0 ve sonraki sürümler tarafından uygulanır. activdbg100.h içinde bulunur.  
@@ -32,6 +32,6 @@ ms.locfileid: "24793973"
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Zaman uyumlu bir çağrı ana iş parçacığı üzerinde yapar.|  
-|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Zaman uyumsuz bir çağrı ana iş parçacığı üzerinde yapar.|  
-|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Herhangi bir yandan bildirilmesini belirtilen tanıtıcıları bekler bu iş parçacığına gönderilen çağrıları iş parçacıkları arası. Bu yöntem, hata ayıklayıcı iş parçacığından çağrılmalıdır.|
+|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Ana iş parçacığında zaman uyumlu bir çağrı yapar.|  
+|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Ana iş parçacığında zaman uyumsuz bir çağrı yapar.|  
+|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|İzin verirken sinyal belirtilen tutamaçlardan birini bekler bu iş parçacığına yayımlanacak çağrıları iş parçacıkları arası. Bu yöntem, hata ayıklayıcı iş parçacığında çağrılmalıdır.|

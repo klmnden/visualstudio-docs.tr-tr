@@ -1,5 +1,5 @@
 ---
-title: İşlev geçerli bir prototip nesnesi yok | Microsoft Docs
+title: İşlevi, geçerli bir prototip nesnesi yok | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4e2cbf198a452cd61f1355682ea3041436d2a27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788732"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346702"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>İşlevin geçerli bir prototip nesnesi yok
-Kullanma girişiminde **instanceof** bir nesne bir belirli işlevi sınıfından türetilen ancak nesnenin yeniden tanımlandı belirlemek için `prototype` özelliği olarak ya da `null`, veya bir dış nesne türü (her iki geçersiz [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nesneleri). Dış nesne host nesne modeli (örneğin, Internet Explorer'ın belge veya pencere nesnesi) nesneden veya dış COM nesne olabilir.  
+Kullanma girişiminde **instanceof** bir nesne belirli bir işlevi sınıfından türetilmiş ancak nesnenin yeniden belirlemek için `prototype` özelliği olarak ya da `null`, veya bir dış nesne türü (her iki geçersiz [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nesneleri). Bir dış nesne konak nesne modeli (örneğin, Internet Explorer'ın belge veya pencere nesnesi) bir nesneden veya dış bir COM nesnesi olabilir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   İşlevin olun `prototype` özelliği geçerli bir başvurur [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nesnesi.  
+-   İşlevin olun `prototype` özelliği geçerli bir başvuruyor [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlev nesnesi](../../javascript/reference/function-object-javascript.md)   
- [prototype özelliği (nesne)](../../javascript/reference/prototype-property-object-javascript.md)
+ [prototype Özelliği (Nesne)](../../javascript/reference/prototype-property-object-javascript.md)

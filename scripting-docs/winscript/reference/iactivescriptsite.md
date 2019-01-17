@@ -14,29 +14,29 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23dba403a7889fe46817a21ed8e4be65b1c05b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7ebbd5301ea1d8ea7cabf235ae3f3c7bb1ba3b2
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793613"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346897"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
-Windows komut dosyası altyapısı için bir site oluşturmak için ana bilgisayar tarafından uygulanır. Genellikle, bu site (örneğin, ActiveX denetimleri) komut dosyası için görünür olan tüm nesneler kapsayıcısı ile ilişkilendirilecek. Genellikle, bu kapsayıcı, belge veya görüntülenmesini sayfasına karşılık gelir. Microsoft Internet Explorer, örneğin, bu tür bir kapsayıcı için görüntülenen her HTML sayfası oluşturur. Her ActiveX denetimi (veya diğer Otomasyon nesnesi) sayfası ve komut dosyası altyapısı kendisini olacaktır bu kapsayıcıda numaralandırılabilir.  
+Windows komut dosyası altyapısı için bir site oluşturmak için ana bilgisayar tarafından uygulanır. Genellikle, bu site (örneğin, ActiveX denetimlerini) komut dosyası için görünür olan tüm nesnelerin kapsayıcısı ile ilişkilendirilecek. Genellikle, bu kapsayıcı, belge veya görüntülenen sayfasına karşılık gelir. Microsoft Internet Explorer, örneğin, görüntülenen her bir HTML sayfası için bir tür bir kapsayıcı oluşturursunuz. Her bir ActiveX denetimi (veya diğer Otomasyon nesnesi) sayfasında ve komut dosyası altyapısı kendisini bu kapsayıcıda numaralandırılabilir.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |||  
 |-|-|  
 |Yöntem|Açıklama|  
-|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Kullanıcı arabirimi öğeleri görüntülemek için konağın kullandığı yerel ayar kimliği alır.|  
-|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Altyapının çağrısıyla eklendi bir öğe hakkında bilgi edinir [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.|  
-|[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Geçerli belge sürümü açısından ana bilgisayarın benzersiz olarak tanımlayan ana bilgisayar tarafından tanımlanan bir dize alır.|  
-|[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|Komut dosyası yürütme tamamlandıktan sonra çağrılır.|  
-|[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|Ana bilgisayara komut dosyası altyapısı durumları değiştiğini bildirir.|  
-|[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|Ana bilgisayara altyapı komut dosyası çalıştırılırken bir yürütme hatası oluştu bildirir.|  
-|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|Ana bilgisayara komut dosyası altyapısı kod yürütme başladıktan bildirir.|  
-|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|Ana bilgisayar komut dosyası altyapısı kod yürütülmesini döndürdüğünü bildirir.|  
+|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Kullanıcı arabirimi öğelerini görüntülemek için konağın kullandığı yerel ayar tanımlayıcısını alır.|  
+|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Altyapının yapılan bir çağrıyla eklenmiş olan bir öğe hakkında bilgi edinir [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) yöntemi.|  
+|[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Geçerli belge sürümü ana bilgisayarın açısından benzersiz olarak tanımlayan ve ana bilgisayar tanımlı bir dize alır.|  
+|[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|Betik yürütmeyi tamamladığında çağrılır.|  
+|[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|Konak, komut dosyası altyapısı durumları değiştiğini bildirir.|  
+|[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|Ana bilgisayara altyapısı betik çalıştırılırken bir yürütme hatası oluştu bildirir.|  
+|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|Konak, komut dosyası altyapısı betik kodu yürüten başlatıldığını bildirir.|  
+|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|Konak, komut dosyası altyapısı betik kodu yürütülmesini döndürdüğünü bildirir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası arabirimleri](../../winscript/reference/active-script-interfaces.md)
+ [Etkin Betik Arabirimleri](../../winscript/reference/active-script-interfaces.md)

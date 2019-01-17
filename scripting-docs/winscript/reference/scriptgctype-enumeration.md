@@ -1,5 +1,5 @@
 ---
-title: SCRIPTGCTYPE numaralandırması | Microsoft Docs
+title: SCRIPTGCTYPE sabit listesi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d42187cc7467bea9d777f35bb208c4e42cabb31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b25ffb530bf16fff0008bb73b55ecb0c523efe0d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796406"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349107"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE Numaralandırması
-Çöp toplama gerçekleştirmek için türü. Kullanılan [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) yöntemi.  
+Gerçekleştirilecek çöp toplama türü. Kullanılan [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) yöntemi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -28,12 +28,12 @@ ms.locfileid: "24796406"
 typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGCTYPE_EXHAUSTIVE       = 1,} SCRIPTGCTYPE;  
 ```  
   
-## <a name="enumeration-values"></a>Numaralandırma değerleri  
+## <a name="enumeration-values"></a>Sabit listesi değerleri  
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Normal çöp toplama yapın. Tamsayı değeri 0'dır.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Ayrıntılı atık toplama yapın. Tamsayı değeri 1'dir.|  
+|SCRIPTGCTYPE_NORMAL|Normal çöp toplama işlemi. Tamsayı değeri 0'dır.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Ayrıntılı atık toplama işlemi. Tamsayı değeri 1'dir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası sabitleri, numaralandırmaları ve hata kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

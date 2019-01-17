@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0174839a25695e9594b4cbbf4db6a302f5a2446
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ad0910971e96a70d894fc0e0244e8799b6c525c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794657"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349744"
 ---
 # <a name="ienumdebugstackframes-interface"></a>IEnumDebugStackFrames Arabirimi
-İş parçacığı için karşılık gelen yığın çerçeveleri numaralandırır.  
+Karşılık gelen bir iş parçacığı için yığın çerçevelerini listeler.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IEnumDebugStackFrames` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IEnumDebugStackFrames` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Belirtilen bir numaralandırma sırası segmentlerinde sayısını alır.|  
-|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.|  
-|[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Belirtilen bir numaralandırma sıralı segmentleri sayısını alır.|  
+|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.|  
+|[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IEnumDebugStackFrames::Clone](../../winscript/reference/ienumdebugstackframes-clone.md)|Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.|

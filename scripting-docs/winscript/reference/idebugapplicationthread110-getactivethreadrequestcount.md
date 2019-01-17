@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4d19bb77a4380c3c0a04f7e7808b82ca3f6ae4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bd776aedd4df61797419795afb8dcc8afeb9318
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794039"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348197"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-İş parçacığı isteği sayısı, şu anda işlenmekte olan mekanizmaları geçiş PDM'ın iş parçacığından döndürür. Bu sayı genellikle 0 veya 1 ' dir. Bir iş parçacığı çağrı işlemeye başlıyor ancak, iş parçacığı dışında bir zaman uyumlu çağrıyı tetikler veya aksi halde iş parçacığı askıya alır ve yeniden işlenmek üzere gelen çağrıları sağlar ancak sayı daha yüksek olabilir (örneğin, tetikleme tarafından bir [ Iremotedebugapplicationevents arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md) hata ayıklayıcı iş parçacığı üzerinde yayınlanan olay).  
+İş parçacığı istek sayısı, şu anda işlenmekte olan mekanizmaları geçiş PDM'ın iş parçacığından döndürür. Bu sayı genellikle 0 veya 1 olur. Bir iş parçacığı çağrı işlemeye başlıyor ancak iş parçacığı dışında bir zaman uyumlu çağrıyı tetikler veya aksi halde iş parçacığını askıya alır ve yeniden işlenmek üzere gelen çağrıları sağlar ancak sayı daha yüksek olabilir (örneğin, tetikleme tarafından bir [ Iremotedebugapplicationevents arabirimi](../../winscript/reference/iremotedebugapplicationevents-interface.md) hata ayıklayıcı iş parçacığı üzerinde veren olay).  
   
 > [!IMPORTANT]
 >  [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -35,7 +35,7 @@ HRESULT GetActiveThreadRequestCount([out, annotation("_Out_")] UINT * puiThreadR
   
 #### <a name="parameters"></a>Parametreler  
  `puiThreadRequests`  
- [out] İş parçacığı istek sayısı.  
+ [out] İş parçacığı isteklerinin sayısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md)
+ [IDebugApplicationThread110 Arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md)

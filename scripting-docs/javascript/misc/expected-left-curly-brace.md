@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348375"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349406"
 ---
 # <a name="expected-"></a>'{' bekleniyor
 İşlev gövdesi başlangıcını işaretleyen sol ayraç içermiyordu. Tek bir satır, olsa bile, bir işlev gövdesini oluşturan yapan kod sol ve sağ küme ayraçları içinde yer almalıdır. Küme ayraçları içine işlev gövdeleri kullanımını Döngülerde katı olduğuna dikkat edin.  

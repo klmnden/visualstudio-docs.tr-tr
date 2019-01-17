@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 191402a9ba265e5acfb15d1931e260f6b366687e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 73e7e8fb43bb45e4c97b6bb5ec6c739c16a4423a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804558"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349866"
 ---
 # <a name="expected-"></a>'@' bekleniyor
 Kullanarak koşullu derleme deyimleri ile kullanılmak üzere bir değişken oluşturmaya çalıştı `@set` deyimi, ancak değil yerleştirin bir at işareti "**@**" önce değişken adı.  

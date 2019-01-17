@@ -14,39 +14,39 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07964292785634212099a0bfcf8174ebb55e8713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b3483bea94d7a53fabf3f552df97a681307b885c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794387"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349731"
 ---
 # <a name="idebugapplication-interface"></a>IDebugApplication Arabirimi
-Uzaktan olmayan hata ayıklama yöntemlerini kullanmak için dil motorları ve ana bilgisayar tarafından gösterir.  
+Uzaktan olmayan hata ayıklama yöntemleri kullanmak için dil altyapıları ve konakları kullanımına sunar.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IRemoteDebugApplication`, `IDebugApplication` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IRemoteDebugApplication`, `IDebugApplication` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugApplication::SetName](../../winscript/reference/idebugapplication-setname.md)|Uygulamanın adını ayarlar.|  
-|[IDebugApplication::StepOutComplete](../../winscript/reference/idebugapplication-stepoutcomplete.md)|İşlem Hata Ayıklama Yöneticisi'ni çağırıcısına hakkında bilgi döndürmek için bir dil altyapısı tek adımlı modunda olduğunu bildirir.|  
-|[IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)|Hata ayıklayıcı IDE görüntülenmesine izin verilen dize neden olur.|  
-|[IDebugApplication::StartDebugSession](../../winscript/reference/idebugapplication-startdebugsession.md)|Varsayılan hata ayıklayıcısı IDE başlatır ve değil bir zaten bağlıysa, bu uygulama için bir hata ayıklama oturumu ekler.|  
-|[IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)|Engellemek geçerli iş parçacığının neden olur ve IDE hata ayıklayıcı kesme noktası bir bildirim gönderir.|  
-|[IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)|Tüm başvurularını serbest bırakın ve etkin olmayan bir duruma girmek bu uygulamayı neden olur.|  
-|[IDebugApplication::GetBreakFlags](../../winscript/reference/idebugapplication-getbreakflags.md)|Uygulama için geçerli sonu bayrakları döndürür.|  
+|[IDebugApplication::SetName](../../winscript/reference/idebugapplication-setname.md)|Uygulama adını ayarlar.|  
+|[IDebugApplication::StepOutComplete](../../winscript/reference/idebugapplication-stepoutcomplete.md)|İşlem Hata Ayıklama Yöneticisi tek adımlı modda bir dil altyapısı hakkında arayanına döndürülecek olduğunu bildirir.|  
+|[IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)|IDE hata ayıklayıcı tarafından görüntülenecek verilen dize neden olur.|  
+|[IDebugApplication::StartDebugSession](../../winscript/reference/idebugapplication-startdebugsession.md)|IDE varsayılan hata ayıklayıcıyı başlatır ve değil bir zaten bağlıysa, bu uygulama için bir hata ayıklama oturumu ekler.|  
+|[IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)|Geçerli iş parçacığını engellemek neden olur ve IDE hata ayıklayıcı kesme noktası bir bildirim gönderir.|  
+|[IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)|Tüm başvuruları bırakın ve etkin olmayan bir duruma girmek bu uygulamanın neden olur.|  
+|[IDebugApplication::GetBreakFlags](../../winscript/reference/idebugapplication-getbreakflags.md)|Uygulama için geçerli kesme bayrakları döndürür.|  
 |[IDebugApplication::GetCurrentThread](../../winscript/reference/idebugapplication-getcurrentthread.md)|Şu anda çalışan iş parçacığı ile ilişkili iş parçacığı döndürür.|  
-|[IDebugApplication::CreateAsyncDebugOperation](../../winscript/reference/idebugapplication-createasyncdebugoperation.md)|Belirtilen zaman uyumlu hata ayıklama işlemi zaman uyumsuz erişim sağlar.|  
-|[IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)|Bir yığın çerçeve Numaralandırıcı sağlayıcısı bu uygulamaya ekler.|  
-|[IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)|Yığın çerçevesi Numaralandırıcı sağlayıcı bu uygulamadan kaldırır.|  
+|[IDebugApplication::CreateAsyncDebugOperation](../../winscript/reference/idebugapplication-createasyncdebugoperation.md)|Belirli bir zaman uyumlu hata ayıklama işlemi zaman uyumsuz erişim sağlar.|  
+|[IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)|Bu uygulama için bir yığın çerçevesi Numaralandırıcı sağlayıcısı ekler.|  
+|[IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)|Bir yığın çerçevesi Numaralandırıcı sağlayıcısı bu uygulamadan kaldırır.|  
 |[IDebugApplication::QueryCurrentThreadIsDebuggerThread](../../winscript/reference/idebugapplication-querycurrentthreadisdebuggerthread.md)|Geçerli çalışan iş parçacığı hata ayıklayıcı iş parçacığı olup olmadığını belirler.|  
-|[IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)|Çağıran kodu hata ayıklayıcı iş parçacığında çalıştırmak için bir mekanizma sağlar.|  
+|[IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)|Çağıran kod hata ayıklayıcı iş parçacığında çalıştırmak bir mekanizma sağlar.|  
 |[IDebugApplication::CreateApplicationNode](../../winscript/reference/idebugapplication-createapplicationnode.md)|Belirli bir belge sağlayıcı ile ilişkili yeni bir uygulama düğümü oluşturur.|  
 |[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Hata Ayıklayıcı'nın için genel bir olay harekete `IApplicationDebugger` arabirimi.|  
-|[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Engellemek geçerli iş parçacığının neden olur ve IDE hata ayıklayıcısı hata bir bildirim gönderir.|  
-|[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Tam zamanında (JIT) hata ayıklayıcı kayıtlı olup olmadığını belirler.|  
-|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|JIT hata ayıklayıcı otomatik-debug dumb konakları için kayıtlı olup olmadığını belirler.|  
-|[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Bu uygulama için bir genel ifade içerik sağlayıcı ekler.|  
-|[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Genel ifade içerik sağlayıcı bu uygulamadan kaldırır.|
+|[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Geçerli iş parçacığını engellemek neden olur ve hata ayıklayıcıya IDE hatanın bir bildirim gönderir.|  
+|[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Just-ın-time (JIT) hata ayıklayıcı kayıtlı olup olmadığını belirler.|  
+|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|JIT hata ayıklayıcı otomatik hata ayıklama dumb Konaklara kayıtlıysa belirler.|  
+|[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Bu uygulama için bir genel ifade içeriği sağlayıcısı ekler.|  
+|[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Genel ifade bağlam sağlayıcı bu uygulamadan kaldırır.|

@@ -1,5 +1,5 @@
 ---
-title: Windows komut dosyası arabirimleri başvurusu | Microsoft Docs
+title: Windows betik arabirimleri başvurusu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,28 +14,28 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce1f8beb9a17d6109ec4d199393fcb3f8a8d7761
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e37c7957024a46522438e3ac625e5b14c09b178f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796343"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348028"
 ---
 # <a name="windows-script-interfaces-reference"></a>Windows Komut Dosyası Arabirimleri Başvurusu
-Aşağıdaki bölümlerde Windows komut dosyası arabirimleri kapsar.  
+Aşağıdaki bölümlerde Windows betik arabirimleri kapsar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Etkin komut dosyası arabirimleri](../../winscript/reference/active-script-interfaces.md)  
+ [Etkin Betik Arabirimleri](../../winscript/reference/active-script-interfaces.md)  
   
- [Etkin komut dosyası yazma arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)  
+ [Etkin Betik Yazma Arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)  
   
- [Etkin komut dosyası hata ayıklayıcı arabirimleri](../../winscript/reference/active-script-debugger-interfaces.md)  
+ [Etkin Betik Hata Ayıklayıcı Arabirimleri](../../winscript/reference/active-script-debugger-interfaces.md)  
   
- [Etkin komut dosyası profil oluşturucu arabirimleri](../../winscript/reference/active-script-profiler-interfaces.md)  
+ [Etkin Betik Profil Oluşturucu Arabirimleri](../../winscript/reference/active-script-profiler-interfaces.md)  
   
- [Hata ayıklama özelliği arabirimleri](../../winscript/reference/debug-property-interfaces.md)  
+ [Hata Ayıklama Özelliği Arabirimleri](../../winscript/reference/debug-property-interfaces.md)  
   
- [Uzantı arabirimlerini Dağıt](../../winscript/reference/dispatch-extension-interfaces.md)  
+ [Uzantı Arabirimlerini Dağıt](../../winscript/reference/dispatch-extension-interfaces.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows komut dosyası arabirimleri](../../winscript/windows-script-interfaces.md)
+ [Windows Komut Dosyası Arabirimleri](../../winscript/windows-script-interfaces.md)

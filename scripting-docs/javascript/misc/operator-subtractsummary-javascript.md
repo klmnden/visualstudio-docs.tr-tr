@@ -18,32 +18,32 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753581"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349328"
 ---
 # <a name="operator-summary-javascript"></a>İşleç Özeti (JavaScript)
-Aşağıdaki tablolar listesini [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kendi ilgili kategorilerine işleçleri.  
+Aşağıdaki tablo listesi [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kendi ilgili kategorilerine işleçler.  
   
 ## <a name="computational-operators"></a>Hesaplama İşleçleri  
   
-|İşleç|Simgesi|  
+|İşleç|Sembol|  
 |--------------|------------|  
 |[Toplama](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Azaltma](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[bölme](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
+|[Bölme](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[Artırma](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Kalan](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Çarpma](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Çıkarma](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
-|[Tekli değilleme](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[Tekli olumsuzlama](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
 ## <a name="logical-operators"></a>Mantıksal İşleçler  
   
-|İşleç|Simgesi|  
+|İşleç|Sembol|  
 |--------------|------------|  
 |[Virgül](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Koşullu (üçlü)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
@@ -53,7 +53,7 @@ Aşağıdaki tablolar listesini [!INCLUDE[javascript](../../javascript/includes/
 |[Kimlik](../../javascript/reference/comparison-operators-javascript.md)|===|  
 |[Eşitsizlik](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Küçüktür](../../javascript/reference/comparison-operators-javascript.md)|<|  
-|[Küçük veya eşit](../../javascript/reference/comparison-operators-javascript.md)|<=|  
+|[Küçük veya eşittir](../../javascript/reference/comparison-operators-javascript.md)|<=|  
 |[Mantıksal AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[Mantıksal değil](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Mantıksal veya](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
@@ -61,11 +61,11 @@ Aşağıdaki tablolar listesini [!INCLUDE[javascript](../../javascript/includes/
   
 ## <a name="bitwise-operators"></a>Bitwise İşleçleri  
   
-|İşleç|Simgesi|  
+|İşleç|Sembol|  
 |--------------|------------|  
 |[Bit düzeyinde AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
-|[Bitsel sola kaydırma](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
-|[Bit düzeyinde değil](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
+|[Bit düzeyinde sola kaydırma](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
+|[Bit düzeyinde NOT](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
 |[Bit düzeyinde veya](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
 |[Bitwise sağ kaydırma](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
 |[Bit düzeyinde XOR](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  

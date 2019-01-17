@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17d1d0f2ab22ef8ae37d41159779ccd00c8b66da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 078fd67b73cec29d14287246a13cca4375d27061
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794654"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346182"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>IEnumRemoteDebugApplications Arabirimi
-Uygulama nesneleri numaralandırır. Bu arabirim, bir "uygulamasına ekleme" iletişim kutusu için bir makinede çalışan uygulamaları numaralandırmak için kullanılabilir.  
+Uygulama nesneleri numaralandırır. Bu arabirim, bir "uygulamasına" iletişim kutusu için bir makinede çalışan uygulamaları numaralandırmak için kullanılabilir.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IEnumRemoteDebugApplications` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IEnumRemoteDebugApplications` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IEnumRemoteDebugApplications::Clone](../../winscript/reference/ienumremotedebugapplications-clone.md)|Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.|  
-|[IEnumRemoteDebugApplications::Next](../../winscript/reference/ienumremotedebugapplications-next.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayısını alır.|  
-|[IEnumRemoteDebugApplications::Reset](../../winscript/reference/ienumremotedebugapplications-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
-|[IEnumRemoteDebugApplications::Skip](../../winscript/reference/ienumremotedebugapplications-skip.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.|
+|[IEnumRemoteDebugApplications::Next](../../winscript/reference/ienumremotedebugapplications-next.md)|Belirtilen bir Segmentte bir sabit listesi sırası sayısını alır.|  
+|[IEnumRemoteDebugApplications::Reset](../../winscript/reference/ienumremotedebugapplications-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
+|[IEnumRemoteDebugApplications::Skip](../../winscript/reference/ienumremotedebugapplications-skip.md)|Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.|

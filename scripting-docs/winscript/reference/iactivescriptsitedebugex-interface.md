@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cf5849ff1fca282bace97774c6b7ac9e4510226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1e462630f7bf52c4ca94aa59df22616e9a335a7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793628"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345883"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx Arabirimi
-İle birlikte bu arabirimi uygulayan `IActiveScriptSiteDebug` bir uygulamada bir çalıştırma hatası gösteren bir bildirim almak ve hata ayıklama için uygulamayı isteğe bağlı olarak eklemek için gereken bir ana bilgisayar yazıyorsanız arabirim. Hata ayıklama işlemi Yöneticisi üzerinden bildirim sağlar `IActiveScriptDebug` Just-ın-Time hata ayıklayıcı komut dosyası, bilgisayarda bulunamadı. Hiçbir sadece zamanında hata ayıklayıcı komut dosyası ise, bulunan PDM sağlar üzerinden bildirim `IActiveScriptDebugEx` yerine.  
+İle birlikte bu arabirimi uygulayan `IActiveScriptSiteDebug` bir uygulamada bir çalışma zamanı hatası bir bildirim alın ve hata ayıklama için uygulamayı isteğe bağlı olarak eklemek için gereken bir konak yazıyorsanız arabirim. Hata ayıklama işlemi Yöneticisi üzerinden bildirim sağlayan `IActiveScriptDebug` Just-ın-Time hata ayıklayıcı komut dosyası, bilgisayarda bulunur. Hiçbir Just-ın-Time hata ayıklayıcı komut dosyası ise, bulundu, PDM sağlar üzerinden bildirim `IActiveScriptDebugEx` yerine.  
   
- Bir çalıştırma hatası gösteren bir bildirim almak için ana bilgisayarınız işlemelidir [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Bir kullanıcı eylemi bağlı olarak, daha sonra iç hata ayıklayıcı ve return ekleme ya da OnScriptErrorDebug hata ayıklayıcıda başlayarak döndürülecek karar verebilir `pfEnterDebugger` parametresi.  
+ Bir çalışma zamanı hatası ilişkin bir bildirim almak için ana işlemelidir [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). Bir kullanıcı eylemine bağlı olarak, ardından return ve iç hata ayıklayıcı iliştirmek için ya da hata ayıklayıcıda OnScriptErrorDebug başlangıç döndürülecek karar verebilir `pfEnterDebugger` parametresi.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Ana bilgisayar işlemi hata ayıklarken Yöneticisi bir komut dosyası çalışma zamanı hatası hakkında bir dış süre yalnızca hata ayıklayıcı bulamazsa bildirir.|
+|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Konak işlemde hata ayıklamak, Yöneticisi bir komut dosyası çalışma zamanı hatası hakkında bir dış tam zamanında hata ayıklayıcı bulamazsa bildirir.|

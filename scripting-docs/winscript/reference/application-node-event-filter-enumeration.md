@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0446265d40fb6277fd155f3ed5822c506ae30bc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791849"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344557"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER Numaralandırması
-Kod belge filtreleme, dışarıda tutulacak düğüm türlerini belirtir. Kullanılan [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) ve [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+Kod belgeleri filtrelerken dışlanacak düğümleri türlerini belirtir. Kullanılan [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) ve [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Bu sabitleri ve büyük PDM v10.0 tarafından uygulanır. activdbg100.h içinde bulunur.  
+>  Bu sabitler PDM v10.0 ve büyük uygulanır. activdbg100.h içinde bulunur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,9 +37,9 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 |Üye|Değer|Açıklama|  
 |------------|-----------|-----------------|  
-|FILTER_EXCLUDE_NOTHING|0x00000000|Tüm olayları gönderin.|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Anonim kod düğümlerinin hariç tutun. Bu düğümler için JScript çalışma zamanı tarafından kullanılan `new Function([args,] <code>)'`.|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Eval kod düğümlerinin hariç tutun. Bu düğümler eval desteği JScript çalışma zamanı tarafından kullanılır.|  
+|FILTER_EXCLUDE_NOTHING|0x00000000|Tüm olaylar gönderin.|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Anonim kod düğümleri hariç tutun. Bu düğümler için JScript çalışma zamanı tarafından kullanılan `new Function([args,] <code>)'`.|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|Değerlendirme kodu düğümleri hariç tutun. Bu düğümler eval desteği JScript çalışma zamanı tarafından kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

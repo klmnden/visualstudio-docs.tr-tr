@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0834abbedf88b911dd952c1f3928c5da3414abec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794414"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348548"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame Arabirimi
-İş parçacığı yığında mantıksal yığın çerçevesi temsil eder. Çağrı `IDebugStackFrame::QueryInterface` elde etmek için yöntemi `IDebugExpressionContext` ifade windows değerlendirme ve izleme sağlayan arabirim.  
+İş parçacığı yığınında bir mantıksal yığın çerçevesini temsil eder. Çağrı `IDebugStackFrame::QueryInterface` elde etmek için yöntemi `IDebugExpressionContext` ifade değerlendirme ve İzle pencereleri sağlayan arabirim.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugStackFrame` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugStackFrame` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Yığın çerçevesi ile ilişkili geçerli kod bağlamını döndürür.|  
-|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Yığın çerçevesi kısa veya uzun metinsel açıklaması döndürür.|  
-|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Dil kısa veya uzun metinsel açıklaması döndürür.|  
-|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Bu yığın çerçevesi ile ilişkili iş parçacığı döndürür.|  
-|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Özellik tarayıcısı geçerli çerçevenin döndürür.|
+|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Yığın çerçevesiyle ilgili geçerli kod bağlamı döndürür.|  
+|[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Yığın çerçevesinin kısa veya uzun metin açıklamasını döndürür.|  
+|[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Bu dil kısa veya uzun metin açıklamasını döndürür.|  
+|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Bu yığın çerçevesiyle ilgili iş parçacığı döndürür.|  
+|[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Geçerli çerçeve için bir özellik tarayıcısı döndürür.|

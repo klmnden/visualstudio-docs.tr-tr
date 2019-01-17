@@ -14,18 +14,18 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dab78619635f9603fa33794810deef9685a7d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067d690b463d80c5aa76394be8dabe08ad39baad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796295"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344089"
 ---
 # <a name="iwebappdiagnosticsobjectinitializationinitialize"></a>IWebAppDiagnosticsObjectInitialization::Initialize
 İle oluşturulan nesneler başlatır [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md).  
   
 > [!IMPORTANT]
->  [Iwebappdiagnosticsobjectınitialization arabirimi](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md) activdbg100.h içinde bulunamadı.  
+>  [Iwebappdiagnosticsobjectınitialization arabirimi](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md) activdbg100.h içinde bulunur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,7 +35,7 @@ HRESULT Initialize(        [in, annotation("__in")] HANDLE_PTR hPassedHandle,   
   
 #### <a name="parameters"></a>Parametreler  
  `hPassedHandle`  
- Geçirilmedi tanıtıcı [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) yönteminde `hPassToObject` parametresi.  
+ Geçildi tanıtıcı [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) yönteminde `hPassToObject` parametresi.  
   
  `pDebugApplication`  
- Nesnenin oluşturulduğu PDM uygulama.
+ Nesne oluşturulduğu PDM uygulama.

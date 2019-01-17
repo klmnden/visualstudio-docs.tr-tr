@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8ec9ca99a75b4e439cecab8ecc36193d04997b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e97b5755a8ea9fefb7456d255a2c0b417c3395cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794117"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347586"
 ---
 # <a name="idebugexpressioncallback-interface"></a>IDebugExpressionCallBack Arabirimi
-İlerleme durumunu ilgili durum olaylarını sağlayan bir `IDebugExpression` değerlendirme.  
+İlerleme durumunu ilgili durum olayları sağlayan bir `IDebugExpression` değerlendirme.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugExpressionCallBack` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugExpressionCallBack` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|İfade değerlendirme tam olduğunu gösterir.|
+|[IDebugExpressionCallBack::onComplete](../../winscript/reference/idebugexpressioncallback-oncomplete.md)|İfade değerlendirme tamamlandığını gösterir.|

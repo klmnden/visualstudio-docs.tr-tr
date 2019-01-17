@@ -20,12 +20,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f6a0128bb73e69a151415518ae6c019be0e4df9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f9736e7195d8594e881aa778b0683959fe5d4c88
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804675"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346208"
 ---
 # <a name="expected--javascript"></a>Beklenen ')' (JavaScript)
 Bir ifadeyi parantez kümesi içinde içine erişmeyi denedi, ancak kapatma parantezinden içermiyordu. Bazı ifade açılış ve kapanış ayraçlarını kümesi içinde içine alınması gerekir. Aşağıdaki örnekte ayraç dikkat edin.  

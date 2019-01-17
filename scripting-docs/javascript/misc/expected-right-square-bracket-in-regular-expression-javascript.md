@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804422"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349432"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Normal ifadede ']' bekleniyor (JavaScript)
 Bir karakter sınıfı için bir normal ifade eşleştirmesi oluşturulmaya çalışıldı, ancak sağ köşeli ayraç içermiyordu. Köşeli ayraçlar yerleştirerek tek değişmez bir karakter birleşimleri karakter sınıflara birleştirilebilecek. Bir karakter sınıfı, içerdiği herhangi bir karakterle eşleşir. Örneğin, / [abc] / "a", "b", herhangi bir harf ile eşleşir veya "c".  

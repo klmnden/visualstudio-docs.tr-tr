@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794663"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347599"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts Arabirimi
-Bir koleksiyonu numaralandırır `IDebugExpressionContexts` nesneleri.  
+Bir koleksiyonu sıralar `IDebugExpressionContexts` nesneleri.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IEnumDebugExpressionContexts` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IEnumDebugExpressionContexts` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Belirtilen bir numaralandırma sırası segmentlerinde sayısını alır.|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.|  
-|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Belirtilen bir numaralandırma sıralı segmentleri sayısını alır.|  
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.|  
+|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.|

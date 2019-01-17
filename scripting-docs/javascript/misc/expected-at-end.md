@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9138a7152dae44ff5f293e1a06de146d66bb125
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803705"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344154"
 ---
 # <a name="expected-end"></a>Beklenen '\@bitiş '
 Koşullu olarak derlenmiş bir kod bloğu oluşturulmaya çalışıldı, ancak içermediği <strong>@end</strong> sonunda deyimi. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] deyimleri koşullu olarak derlenmesi içinde kapsayan tarafından bir <strong>@if/ @end</strong> blok.  

@@ -14,21 +14,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5676044e9adb17e0c477c40f9045c4a2bb656b89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bec6696a40868ad3cc64cf41efe5ab6bfc9d95ec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793283"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349627"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure Arabirimi
-Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IScriptAuthorProcedure` arabirimi aşağıdaki yöntemi kullanıma sunar.  
+Devralınan yöntemleri yanı sıra `IUnknown`, `IScriptAuthorProcedure` arabirimi aşağıdaki yöntemi kullanıma sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Bir kod yordamı ayrıştırır, altyapısı yazma komut dosyası için kod yordam metin ekler ve oluşturur bir `IScriptEntry` kodu yordama karşılık gelen nesne.|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|Bir kod yordam ayrıştırır, komut dosyası altyapısı yazma kod yordam metin ekler ve oluşturur bir `IScriptEntry` kod yordama karşılık gelen nesne.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası yazma arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)
+ [Etkin Betik Yazma Arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)

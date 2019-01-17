@@ -21,23 +21,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788753"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346986"
 ---
 # <a name="label-not-found"></a>Etiket bulunamadı
-Var olmayan bir etiket başvuru yapılmış. Etiketleri blokları kod, ancak belirtilen kapsam içinde işaretlemek için kullanılan, benzersiz olması gerekir.  
+Var olmayan bir etiket için bir başvuru yapılan. Etiketleri kodun, ancak belirtilen kapsam içinde blokları işaretlemek için kullanılan, benzersiz olması gerekir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Etiket adı yanlış yazarsanız değil emin olmak için kontrol edin.  
+-   Etiket adı yazsanız değil emin olmak için kontrol edin.  
   
--   Tüm etiket başvuruları (iletme tanımlarını içerir) geçerli kapsamda tanımlı etiketlere yapıldığından emin olun.  
+-   (İlet tanımları içerir) geçerli kapsamda tanımlanan etiketler için tüm etiket başvuruları yapıldığından emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etiketli deyim](../../javascript/reference/labeled-statement-javascript.md)   
  [switch deyimi](../../javascript/reference/switch-statement-javascript.md)   
  [break deyimi](../../javascript/reference/break-statement-javascript.md)   
- [continue deyimi](../../javascript/reference/continue-statement-javascript.md)
+ [continue Deyimi](../../javascript/reference/continue-statement-javascript.md)

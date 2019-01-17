@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788696"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350160"
 ---
 # <a name="illegal-assignment-javascript"></a>Geçersiz atama (JavaScript)
-Bir salt okunur tanımlayıcı için bir değer atamaya çalıştı. Bir salt okunur tanımlayıcı için bir değer atayamazsınız. Örneğin, ana bilgisayar ve dış COM nesneleri tanımlı.  
+Bir değer atamak için bir salt okunur tanımlayıcı çalışıldı. Bir salt okunur tanımlayıcı için bir değer atanamaz. Örneğin, ana bilgisayar nesneleri ve COM nesneleri dış tanımlı.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Değer salt okunur tanımlayıcı atamayın.  
+-   Değerleri için salt okunur tanımlayıcıları atamayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Atama işleci (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)
+ [Atama İşleci (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

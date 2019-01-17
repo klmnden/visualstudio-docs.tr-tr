@@ -21,26 +21,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788978"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348483"
 ---
 # <a name="invalid-character-javascript"></a>Geçersiz karakter (JavaScript)
-Tanımlayıcı oluşan bir karakter (veya karakter) kullanmayan tanınan tarafından geçerli [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] derleyici. Geçerli karakterler aşağıdaki kuralları kullanın:  
+Bir tanımlayıcı oluşan bir karakter (veya karakterler) kullanmayan tarafından geçerli kabul [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] derleyici. Geçerli karakterler şu kuralları kullan:  
   
--   İlk karakterin (büyük veya küçük harf) bir ASCII harf veya alt çizgiyle (_) olmalıdır.  
+-   İlk karakter bir ASCII harf (büyük veya küçük harf) veya alt çizgi (_) olmalıdır.  
   
--   Sonraki karakterler ASCII harfler, sayılar veya alt çizgi olabilir.  
+-   Sonraki karakter, ASCII harf, rakam veya alt çizgi olabilir.  
   
 -   Tanımlayıcı adı ayrılmış bir sözcük olamaz.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Karakterler kullanmaktan kaçının parçası [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dil tanımı.  
+-   Olmayan karakterler kullanmaktan kaçının parçası [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dil tanımı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Değişkenleri](../../javascript/variables-javascript.md)   
  [Özel karakterler](../../javascript/advanced/special-characters-javascript.md)   
- [Veri türleri](../../javascript/data-types-javascript.md)
+ [Veri Türleri](../../javascript/data-types-javascript.md)

@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d4275d42ec102557cce12127f47a33a53c4dba6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2392d34a4971389b293e44a6223c2159d6d6a9cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793991"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345857"
 ---
 # <a name="idebugapplicationthread110asynchronouscallintothread"></a>IDebugApplicationThread110::AsynchronousCallIntoThread
-Zaman uyumsuz bir çağrı ana iş parçacığı üzerinde yapar.  
+Ana iş parçacığında zaman uyumsuz bir çağrı yapar.  
   
 > [!IMPORTANT]
 >  [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -33,19 +33,19 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>Parametreler  
  `pptc`  
- [Idebugthreadcall arabirimi](../../winscript/reference/idebugthreadcall-interface.md) çağırmak için nesne.  
+ [Idebugthreadcall arabirimi](../../winscript/reference/idebugthreadcall-interface.md) aranacak nesne.  
   
  `dwParam1`  
- Çağrı ilk parametresi.  
+ Çağrısının ilk parametresi.  
   
  `dwParam1`  
- Çağrı ilk parametresi.  
+ Çağrısının ilk parametresi.  
   
  `dwParam2`  
- Çağrı ikinci parametre.  
+ Çağrı, ikinci parametre.  
   
  `dwParam3`  
- Çağrı üçüncü parametresi.  
+ Çağrı'öğesinin üçüncü parametresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplication110 arabirimi](../../winscript/reference/idebugapplication110-interface.md)
+ [IDebugApplication110 Arabirimi](../../winscript/reference/idebugapplication110-interface.md)

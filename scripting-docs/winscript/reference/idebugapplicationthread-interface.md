@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e731ba866504c9a3c3c9ad081a90a12b161355d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 262174d0daecd2c37bafbecee13532ba62e9967f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793940"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347794"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread Arabirimi
-Dil motorları ve ana iş parçacığı eşitleme sağlamak ve iş parçacığına özgü hata ayıklama durum bilgilerini saklamak için sağlar. Bu arabirim genişletir `IRemoteDebugApplicationThread` iş parçacığı olmayan uzaktan erişim sağlamak için arabirim.  
+Dil altyapıları ve ana iş parçacığı eşitleme sağlamak ve iş parçacığına özgü hata ayıklama durum bilgilerini korumak için sağlar. Bu arabirim genişletir `IRemoteDebugApplicationThread` iş parçacığı olmayan uzaktan erişim sağlamak için arabirim.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IRemoteDebugApplicationThread`, `IDebugApplicationThread` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IRemoteDebugApplicationThread`, `IDebugApplicationThread` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Çağıran kodu uygulama iş parçacığında çalıştırmak için bir mekanizma sağlar.|  
+|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Çağıran uygulama iş parçacığında kodu çalıştırmak bir mekanizma sağlar.|  
 |[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Bu iş parçacığı şu anda çalışan iş parçacığının olup olmadığını belirler.|  
 |[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Bu iş parçacığı hata ayıklayıcı iş parçacığı olup olmadığını belirler.|  
-|[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Bu iş parçacığı açıklaması ayarlar.|  
-|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|İş parçacığı durumu açıklamasını ayarlar.|
+|[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Bu iş parçacığının açıklaması ayarlar.|  
+|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|İş parçacığı durumu açıklaması ayarlar.|

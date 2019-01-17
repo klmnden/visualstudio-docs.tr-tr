@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 435ea678133755d02ab9a3f757f0947a83278e45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3ce1510ad9e7b4560a7aaafb8d65d5b0e6143cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793862"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349644"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-İş parçacığı bir kesme noktası için tam olarak askıya aldı ve henüz normal yürütme sürdürdü değil olup olmadığını belirler.  
+İş parçacığı bir kesme noktası için tam olarak askıya aldı ve henüz normal yürütmenin ettirdi değil olup olmadığını belirler.  
   
 > [!IMPORTANT]
 >  [Idebugapplicationthreadevents110 arabirimi](../../winscript/reference/idebugapplicationthreadevents110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -34,7 +34,7 @@ HRESULT OnSuspendForBreakPoint( void );
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bu yöntem hiç parametre yok.  
+ Bu yöntem, hiç parametre yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationthreadevents110 arabirimi](../../winscript/reference/idebugapplicationthreadevents110-interface.md)
+ [IDebugApplicationThreadEvents110 Arabirimi](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

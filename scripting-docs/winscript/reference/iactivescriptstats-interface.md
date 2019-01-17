@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793634"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350147"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats Arabirimi
-Çalışan bir komut dosyası istatistiklerini sorgulamak ana bilgisayar sağlar. Konak, komut dosyası tamamlanması çok uzun sürdü, belirlemek için bu bilgileri kullanabilirsiniz.  
+Sorgu istatistikleri çalışan bir komut dosyası için bir konak sağlar. Konak, betik tamamlanması çok uzun sürdü, belirlemek için bu bilgileri kullanabilirsiniz.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IActiveScriptStats` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IActiveScriptStats` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Standart komut dosyası istatistikleri döndürür.|  
-|[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Bir özel betik istatistik döndürür.|  
-|[IActiveScriptStats::ResetStats](../../winscript/reference/iactivescriptstats-resetstats.md)|Bu komut dosyası istatistiklerini sıfırlar.|
+|[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Özel betik istatistiği döndürür.|  
+|[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-resetstats.md)|Bu betik istatistikleri sıfırlar.|

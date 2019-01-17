@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aaf312b1730696b812172aeea175619e911d03a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: db20440d4dc797ce9a0f21c3ac0c6c89c5d4e036
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794036"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348249"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 Arabirimi
-Daha fazla iş parçacığı olayları ekler. Bu olaylar yalnızca yerel. Diğer bir deyişle, onlara yalnızca süreci içinde abone olabilirsiniz hata ayıklaması, kullanarak [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) bildirmek ve yöntemleri PDM uygulama iş parçacığı nesneleri üzerinde unadvise (nesneleri uygulayan [Idebugapplicationthread Arabirim](../../winscript/reference/idebugapplicationthread-interface.md)). ' Ten gelen iş parçacığı üzerinde oluşur.  
+Daha fazla iş parçacığı olaylar ekler. Bu olaylar yalnızca büyük/küçük harf yereldir. Diğer bir deyişle, yalnızca süreci içinde abone olursanız hata ayıklama, kullanarak [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) önerilerde bulunabilir ve PDM uygulama iş parçacığı nesneleri üzerinde yöntemleri eşlemesindeki (uygulayan nesneler [Idebugapplicationthread Arabirim](../../winscript/reference/idebugapplicationthread-interface.md)). Nereden geldiğini iş parçacığı üzerinde oluşur.  
   
 > [!IMPORTANT]
 >  Bu arabirim PDM v11.0 ve sonraki sürümler tarafından uygulanır. activdbg100.h içinde bulunur.  
@@ -32,7 +32,7 @@ Daha fazla iş parçacığı olayları ekler. Bu olaylar yalnızca yerel. Diğer
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Idebugapplicationthreadevents110:: OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Çağrı PDM'ın iş parçacığı kullanarak akışına geçiş başladı.|  
-|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|İş parçacığı bir kesme noktası'na devam ediliyor ve bir kez daha etkin olacaktır.|  
-|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|İş parçacığı bir kesme noktası için askıya alma ve tam olarak askıya alınmasına iş parçacığı gerektiren çağrıları işleyebilir.|  
-|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Çağrı PDM'ın iş parçacığı kullanarak akışına geçişi tamamlandı.|
+|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Çağrı akışına PDM'ın iş parçacığı kullanarak geçiş başladı.|  
+|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|İş parçacığı bir kesme noktasından sürdürme ve bir kez daha etkin olacaktır.|  
+|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|İş parçacığı, bir kesme noktası için askıya alma ve tam olarak yakında askıya alınacak iş parçacığını gerektiren çağrılarını işleyebilir.|  
+|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Çağrı akışına PDM'ın iş parçacığı kullanarak geçişi tamamlandı.|

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825510"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348704"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Dizi uzunluğuna sonsuz olmayan pozitif bir sayı atanmalıdır
 Ayarlarken **uzunluğu** , varolan bir özellik **dizi** nesnesi, pozitif bir sayı veya sıfır olmayan bir dizi uzunluğu belirtildi. Bir değer atadığınızda, bu hata oluşur **uzunluğu** özelliği bir `Array` negatif nesnesini veya sayı olmayan (`NaN`). Unutmayın [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kesirli sayılar tüm tamsayılar için otomatik olarak dönüştürür.  

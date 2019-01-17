@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377eb51d2cdccd021d04bc1bbfaf2f9ea009624d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5885f6a01ab09ef2d21277c875ff700712cc00fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793811"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349611"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
-Belirler olup olmadığını [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) bu iş parçacığında çağrılır ve henüz tamamlanmadı.  
+Belirler olmadığını [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) bu iş parçacığı üzerinde çağrılmış var ve henüz tamamlanmadı.  
   
 > [!IMPORTANT]
 >  [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -35,7 +35,7 @@ HRESULT IsSuspendedForBreakPoint([out, annotation("_Out_")] BOOL * pfIsSuspended
   
 #### <a name="parameters"></a>Parametreler  
  `pfIsSuspended`  
- [out] `true` iş parçacığı bir kesme noktası için Aksi takdirde askıya varsa `false`.  
+ [out] `true` iş parçacığı bir kesme noktası için Aksi takdirde askıda değilse `false`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md)
+ [IDebugApplicationThread110 Arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md)

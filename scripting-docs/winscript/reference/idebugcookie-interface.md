@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793949"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344050"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie Arabirimi
-İle kullanılmak üzere ayarlanması hata ayıklama tanımlama bilgisi sağlar `IMachineDebugManagerCookie` arabirimi. Daha fazla bilgi için bkz: [Imachinedebugmanagercookie arabirimi](../../winscript/reference/imachinedebugmanagercookie-interface.md). Bu arabirim işlem hata ayıklama Yöneticisi (PDM) tarafından uygulanan ve komut dosyası hata ayıklayıcıları tarafından tüketilen.  
+İle kullanılmak üzere ayarlanması hata ayıklama tanımlama bilgisini sağlayan `IMachineDebugManagerCookie` arabirimi. Daha fazla bilgi için [Imachinedebugmanagercookie arabirimi](../../winscript/reference/imachinedebugmanagercookie-interface.md). Bu arabirim işlem hata ayıklama Yöneticisi (PDM) tarafından uygulanan ve komut dosyası hata ayıklayıcıları tarafından tüketilen.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugCookie` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugCookie` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|Hata ayıklama uygulama tanımlama bilgisi ayarlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Imachinedebugmanagercookie arabirimi](../../winscript/reference/imachinedebugmanagercookie-interface.md)
+ [IMachineDebugManagerCookie Arabirimi](../../winscript/reference/imachinedebugmanagercookie-interface.md)

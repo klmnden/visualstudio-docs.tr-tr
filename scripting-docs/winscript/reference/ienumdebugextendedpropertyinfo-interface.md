@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794606"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346039"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo Arabirimi
-Sıralar `ExtendedDebugPropertyInfo` yapıları.  
+Numaralandırır `ExtendedDebugPropertyInfo` yapıları.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IEnumDebugExtendedPropertyInfo`.  
@@ -34,13 +34,13 @@ Sıralar `ExtendedDebugPropertyInfo` yapıları.
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Sayısını alır `ExtendedDebugPropertyInfo` yapılarını bir numaralandırıcı.|  
-|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Belirtilen sayıda alır `ExtendedDebugPropertyInfo` numaralandırma dizisi yapılarda.|  
-|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Belirtilen sayıda atlar `ExtendedDebugPropertyInfo` numaralandırma dizisi yapılarda.|  
-|[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|Numaralandırma dizisi başına sıfırlar.|  
+|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|Sayısını alır `ExtendedDebugPropertyInfo` yapılarda bir numaralandırıcı.|  
+|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|Belirtilen sayıda alır `ExtendedDebugPropertyInfo` yapıları, bir sabit listesi sırası.|  
+|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Belirtilen sayıda atlar `ExtendedDebugPropertyInfo` yapıları, bir sabit listesi sırası.|  
+|[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|Sabit listesi sırası başlangıç durumuna sıfırlar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: dbgprop.h  
+ Üstbilgi: dbgprop.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Extendeddebugpropertyınfo yapısı](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo Yapısı](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

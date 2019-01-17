@@ -1,5 +1,5 @@
 ---
-title: SCRIPTLANGUAGEVERSION numaralandırması | Microsoft Docs
+title: SCRIPTLANGUAGEVERSION sabit listesi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4cee2966b326ca7b4c258ffdb85b6fa71d90992
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 374025b7564c058ae89064b6a27384c9075a30f9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796376"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350108"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>SCRIPTLANGUAGEVERSION Numaralandırması
-Sürümleri scripting olası belirtir.  
+Sürümleri betik olası belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -28,14 +28,14 @@ Sürümleri scripting olası belirtir.
 typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    SCRIPTLANGUAGEVERSION_5_7  = 1,    SCRIPTLANGUAGEVERSION_5_8  = 2,    SCRIPTLANGUAGEVERSION_MAX  = 255} SCRIPTLANGUAGEVERSION ;  
 ```  
   
-## <a name="enumeration-values"></a>Numaralandırma değerleri  
+## <a name="enumeration-values"></a>Sabit listesi değerleri  
   
 |||  
 |-|-|  
 |SCRIPTLANGUAGEVERSION_DEFAULT|Varsayılan sürümü. Tamsayı değeri 0'dır.|  
-|SCRIPTLANGUAGEVERSION_5_7|Windows sürüm 5.7 komut dosyası. Tamsayı değeri 1'dir.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows sürümü 5.7 komut dosyası. Tamsayı değeri 1'dir.|  
 |SCRIPTLANGUAGEVERSION_5_8|Windows sürüm 5.8 komut dosyası. Tamsayı değeri 2'dir.|  
 |SCRIPTLANGUAGEVERSION_MAX|En yüksek sürüm. Tamsayı değeri 255'tir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası sabitleri, numaralandırmaları ve hata kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

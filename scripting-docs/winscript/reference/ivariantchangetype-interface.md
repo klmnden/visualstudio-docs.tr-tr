@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c0bbd5ec7795498d9f04cc516a56d01c78bdb7c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796304"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349263"
 ---
 # <a name="ivariantchangetype-interface"></a>IVariantChangeType Arabirimi
-Arayanın bir değişken değeri bir türden diğerine dönüştürün izin verir.  
+Arayan bir değişken değeri bir türden diğerine dönüştürme sağlar.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IVariantChangeType` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IVariantChangeType` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|Bir değişken değeri alır ve belirtilen bir türe yeni bir değişken oluşturur.|
+|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|Değişken bir değer alır ve belirtilen bir türü ile yeni bir değişken oluşturur.|

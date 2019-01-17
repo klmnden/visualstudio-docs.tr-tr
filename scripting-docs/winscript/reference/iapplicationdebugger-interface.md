@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16cd1bc891c7d682cc1097cd1b6cb5efd5438db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793778"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348327"
 ---
 # <a name="iapplicationdebugger-interface"></a>IApplicationDebugger Arabirimi
-Hata ayıklayıcı tarafından kullanıma sunulan birincil arabirimdir. Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IApplicationDebugger` arabirimi aşağıdaki yöntemleri sunar.  
+Hata ayıklayıcı tarafından kullanıma sunulan birincil arabirim. Devralınan yöntemleri yanı sıra `IUnknown`, `IApplicationDebugger` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|Hata ayıklayıcı duyarlı olup olmadığını gösterir.|  
-|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Nesneleri hata ayıklayıcı işlem kodu tarafından sağlar. diğer bir deyişle zaman-işlem hata ayıklayıcı için.|  
-|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Hata ayıklama çıktı olayını işler.|  
-|[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Kesme noktası olayını işler.|  
+|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|Nesneleri oluşturma hata ayıklayıcı işleminde kodla sağlar. yani giden işlem hata ayıklayıcı.|  
+|[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|Hata ayıklama çıkış olayını işler.|  
+|[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|Bir kesme noktası olayını işler.|  
 |[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|Hata ayıklama uygulama Kapat olayını işler.|  
 |[IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)|Özel uygulama olayını işler.|

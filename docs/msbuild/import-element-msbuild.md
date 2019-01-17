@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd8cdf4b97285b1c0793bb3e80ec85def432bdb4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900879"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348756"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.  
@@ -71,10 +71,6 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 
  Şema içeri aktarılan bir proje, standart bir proje için aynıdır. Ancak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] olabilir bir içeri aktarılan proje genellikle kümesi veya hedefleri çalıştırın sırayı hangi özellikleri hakkında bilgi içermiyor içeri aktarılan bir proje oluşturmak kullanabilirsiniz, olası olmasıdır. İçeri aktarılan proje içine bu bilgileri sağlamak için aktarılır projeye bağlıdır.  
 
-> [!NOTE]
->  Koşullu içeri aktarma deyimlerini komut satırı MSBuilds içinde çalışırken, bunlar ile Msbuild'de çalışmaz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Proje yüklendiğinde ayarlanır yapılandırma ve platform değerleri kullanarak koşullu içeri aktarmalar değerlendirilir. Daha sonra proje dosyasında koşullar'ın bir yeniden değerlendirme gerektiren değişiklikler, örneğin, platform değiştirme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özellikleri ve öğeleri, ancak içeri aktarmalar koşulları reevaluates. İçeri aktarma, içeri aktarma koşullu değerlendirilmez çünkü atlanır.  
-> 
->  Bu sorunu çözmek için koşullu içeri aktarmalar koymak *.targets* dosyaları veya put kodu koşullu gibi engelleyecek bir [Seç öğesi (MSBuild)](../msbuild/choose-element-msbuild.md) blok.  
 
 ## <a name="wildcards"></a>Joker karakterler  
  .NET Framework 4'te MSBuild proje öznitelik joker karakterler sağlar. Joker karakterler olduğunda, tüm eşleşme bulundu (için yeniden üretilebilirliğini) sıralanır ve sırasını açıkça ayarlanmış olarak daha sonra bu sırayla aktarıldıkları.  

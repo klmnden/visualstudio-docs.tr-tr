@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788768"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349042"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Oluşan özel durum yakalanmadı
-Bulunan bir `throw` kodunuzu, ancak deyiminde değil içinde içine bir **deneyin** bloğu veya Hayır ilişkili **catch** hata bloğunun. Özel durumlar içinden **deneyin** kullanarak engelleme **throw** deyimi ve yakalanan dışında **deneyin** ile engelleme bir **catch** deyimi.  
+Dahil edilen bir `throw` kodunuzu, ancak deyiminde çevrilmeyen içinde bir **deneyin** bloğu veya oluştu Hayır ilişkili **catch** bloğunun Hata. Özel durumlar içinden **deneyin** kullanarak block **throw** deyimi ve yakalanan dışında **deneyin** ile engelleyecek bir **catch** deyimi.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Bir özel durum kod içine bir **deneyin** engelleme ve karşılık gelen olduğundan emin olun. **catch** bloğu.  
+-   Bir özel durum oluşturabilecek kod içine bir **deneyin** engellemek ve buna karşılık gelen bulunduğundan emin olun **catch** blok.  
   
--   Özel durum doğru biçimde catch deyimi bekliyor emin olun.  
+-   Catch deyimi özel durumu doğru biçimde bekliyor emin olun.  
   
--   Özel durum işlenemezse, başka bir karşılık gelen catch deyimi olduğundan emin olun.  
+-   Özel durum yeniden oluşur, ilgili başka bir catch deyimi olduğundan emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata nesnesi](../../javascript/reference/error-object-javascript.md)   
- [throw deyimi](../../javascript/reference/throw-statement-javascript.md)   
- [try... catch... finally deyimi](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+ [Throw deyimi](../../javascript/reference/throw-statement-javascript.md)   
+ [try...catch...finally Deyimi](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

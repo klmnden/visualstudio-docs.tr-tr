@@ -14,23 +14,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 159b81a336accea4e4e8c035119d5525de71ae90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c892d3eceea65f16c69bfd2202b1f64181773532
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796313"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348054"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>IWebAppDiagnosticsObjectInitialization Arabirimi
-Bu arabirimi uygulayan sınıflar üzerinde uygulanabilir [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [Iwebappdiagnosticssetup arabirimi](../../winscript/reference/iwebappdiagnosticssetup-interface.md) uygulayan nesne tarafından uygulanan [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md). Çoğu durumda bu, PDM nesnesidir.  
+Bu arabirimi uygulayan sınıflar uygulanabilir [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [Iwebappdiagnosticssetup arabirimi](../../winscript/reference/iwebappdiagnosticssetup-interface.md) uygulayan bir nesne tarafından uygulanan [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md). Çoğu durumda bu PDM nesnedir.  
   
- Nesne oluşturulduktan sonra [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM hata ayıklama uygulama başvuru olarak adlandırılır ve `hPassToObject` parametresinin `CreateObjectWithSiteAtWebApp`.  
+ Nesne oluşturulduktan sonra [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM hata ayıklama uygulama başvurusuyla çağrılır ve `hPassToObject` parametresinin `CreateObjectWithSiteAtWebApp`.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization`activdbg100.h içinde bulunur.  
+>  `IWebAppDiagnosticsObjectInitialization` activdbg100.h içinde bulunur.  
   
 ## <a name="methods"></a>Yöntemler  
- Bu arabirim aşağıdaki yöntemlerini gösterir.  
+ Bu arabirim, aşağıdaki yöntemi kullanıma sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  

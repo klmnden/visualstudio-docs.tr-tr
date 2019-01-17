@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 5f873cdf2ebd394e48c1513135f1acdcd700c283
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089979"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345649"
 ---
 # <a name="profilerpropertytypesubstringinfo-structure"></a>Profıler_property_type_substrıng_ınfo yapısı
 İlişkisinde kullanılan alt dize türü ile ilgili bilgileri temsil eder. Kullanılan [profıler_heap_object_relatıonshıp yapısı](../../winscript/reference/profiler-heap-object-relationship-structure.md).  

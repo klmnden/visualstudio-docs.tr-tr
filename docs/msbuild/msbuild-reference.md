@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8966512e2d2ad58edaff41ac21301dfce437152c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872271"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347704"
 ---
 # <a name="msbuild-reference"></a>MSBuild başvurusu
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  
@@ -71,9 +71,6 @@ ms.locfileid: "53872271"
 ## <a name="see-also"></a>Ayrıca bkz.  
  [MSBuild'e genel bakış](../msbuild/msbuild.md)     
  Tanıtır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ve nasıl projeleri derlemek için kullanılacağını açıklayan konulara bağlantılar sağlar.  
-  
- [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
- Dönüştürme ad alanı başvurusu içeriyor.  
   
  [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Değerlendirme ad alanı başvurusu içeriyor.  

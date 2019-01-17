@@ -14,40 +14,40 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794447"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347807"
 ---
 # <a name="idispatchex-methods"></a>IDispatchEx Yöntemleri
 Idispatchex yöntemleri aşağıda verilmiştir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
- Bir üyesi tarafından DISPID siler.  
+ DISPID bir üyesine siler.  
   
  [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)  
- Üye adına göre siler.  
+ Bir üye adıyla siler.  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
- Bir tek üye adı sonra IDispatchEx::InvokeEx yapılan sonraki çağrılar kullanılabilir, karşılık gelen DISPID eşler.  
+ Tek bir üyenin adını IDispatchEx::InvokeEx yapılan sonraki çağrılar üzerinde kullanılabilir, karşılık gelen DISPID eşlenir.  
   
  [IDispatchEx::GetMemberName](../../winscript/reference/idispatchex-getmembername.md)  
- Üyenin adını alır.  
+ Bir üyenin adını alır.  
   
  [IDispatchEx::GetMemberProperties](../../winscript/reference/idispatchex-getmemberproperties.md)  
  Bir üyenin özellikleri alır.  
   
  [IDispatchEx::GetNameSpaceParent](../../winscript/reference/idispatchex-getnamespaceparent.md)  
- Arabirim için ad alanı üst nesnenin alır.  
+ Bir nesnenin ad alanı üst arabirimini alır.  
   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)  
- Nesne üyeleri numaralandırır.  
+ Bir nesnenin üyelerine numaralandırır.  
   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)  
- Özellikleri ve yöntemleri Idispatchex nesne tarafından sunulan erişim sağlar.  
+ Özellikleri ve yöntemleri bir Idispatchex nesne tarafından sunulan erişim sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Idispatchex arabirimi](../../winscript/reference/idispatchex-interface.md)
+ [IDispatchEx Arabirimi](../../winscript/reference/idispatchex-interface.md)

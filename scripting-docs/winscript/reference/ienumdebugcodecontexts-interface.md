@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45e28f91b6637142fabfdb3680479c474a75f03d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e35fbb0f35915b2c531bdf2052aa8263c49a798a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794678"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344102"
 ---
 # <a name="ienumdebugcodecontexts-interface"></a>IEnumDebugCodeContexts Arabirimi
-Bir belge bağlamına karşılık gelen kod bağlamları numaralandırır.  
+Bir belge bağlamına karşılık gelen kod bağlamı numaralandırır.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IEnumDebugCodeContexts` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IEnumDebugCodeContexts` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IEnumDebugCodeContexts::Next](../../winscript/reference/ienumdebugcodecontexts-next.md)|Belirtilen bir numaralandırma sırası segmentlerinde sayısını alır.|  
-|[IEnumDebugCodeContexts::Skip](../../winscript/reference/ienumdebugcodecontexts-skip.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.|  
-|[IEnumDebugCodeContexts::Reset](../../winscript/reference/ienumdebugcodecontexts-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IEnumDebugCodeContexts::Next](../../winscript/reference/ienumdebugcodecontexts-next.md)|Belirtilen bir numaralandırma sıralı segmentleri sayısını alır.|  
+|[IEnumDebugCodeContexts::Skip](../../winscript/reference/ienumdebugcodecontexts-skip.md)|Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.|  
+|[IEnumDebugCodeContexts::Reset](../../winscript/reference/ienumdebugcodecontexts-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IEnumDebugCodeContexts::Clone](../../winscript/reference/ienumdebugcodecontexts-clone.md)|Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.|

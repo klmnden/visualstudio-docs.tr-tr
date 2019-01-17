@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788621"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345363"
 ---
 # <a name="array-or-arguments-object-expected"></a>Dizi ya da bağımsız değişkenler nesnesi bekleniyor
-Bağımsız değişken olarak bir dizi sağlamadı. Bu hata uygulandığı **Function.prototype.apply** yalnızca yöntemi. Belirtilmişse, bu işlevin ikinci bağımsız değişkeni ya da olmalıdır bir `Array` nesnesi veya bir **bağımsız değişkenleri** nesnesi.  
+Bağımsız değişken olarak bir dizi sağlamadınız. Bu hata uygulandığı **Function.prototype.apply** yalnızca yöntemi. Bu seçenek belirtilmişse, bu işlevin ikinci bağımsız değişkeni olmalıdır bir `Array` nesnesi veya bir **bağımsız değişkenleri** nesne.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Belirtin ya da bir `Array` veya bir **bağımsız değişkenleri** nesne ikinci bağımsız değişkeni olarak.  
+-   Belirtin ya da bir `Array` veya **bağımsız değişkenleri** ikinci bağımsız değişkeni olarak.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dizileri kullanma](../../javascript/advanced/using-arrays-javascript.md)   

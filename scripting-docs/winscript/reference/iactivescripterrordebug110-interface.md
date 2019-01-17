@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067a62ec8b87c448577cfd6e5789ae5e073b5fb8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793322"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345909"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 Arabirimi
-İşlevlerini ekler [Iactivescriptdebug arabirimi](../../winscript/reference/iactivescriptdebug-interface.md). Bu arabirim, JavaScript altyapısı tarafından, bir BREAKREASON_ERROR olayının neden meydana geldiğini belirlemek amacıyla uygulanır.  
+İşlevsellik ekler [Iactivescriptdebug arabirimi](../../winscript/reference/iactivescriptdebug-interface.md). Bu arabirim, JavaScript altyapısı tarafından, bir BREAKREASON_ERROR olayının neden meydana geldiğini belirlemek amacıyla uygulanır.  
   
 > [!IMPORTANT]
 >  Bu arabirim PDM v11.0 ve sonraki sürümler tarafından uygulanır. activdbg100.h içinde bulunur.  

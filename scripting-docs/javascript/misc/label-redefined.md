@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788735"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347820"
 ---
 # <a name="label-redefined"></a>Etiket yeniden tanımlandı
-Yeni bir etiket oluşturuldu, ancak var olan bir etiketi adı vermiş. Etiketleri kod bloklarını işaretlemek için kullanılabilir, ancak belirtilen bir kapsamı içinde benzersiz olmaları gerekir.  
+Yeni bir etiket oluşturuldu, ancak varolan bir etiketin adını verdiğiniz. Kod bloğu işaretlemek için etiketleri kullanılabilir, ancak bir belirtilen kapsamında benzersiz olmaları gerekir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Tüm etiketleri programlarınıza kullandığınız kendi ilgili kapsamlarında benzersiz olduğundan emin olun.  
+-   Programlarınızda kullandığınız tüm etiketleri, ilgili kapsam içinde benzersiz olduğundan emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etiketli deyim](../../javascript/reference/labeled-statement-javascript.md)   
  [switch deyimi](../../javascript/reference/switch-statement-javascript.md)   
  [break deyimi](../../javascript/reference/break-statement-javascript.md)   
- [continue deyimi](../../javascript/reference/continue-statement-javascript.md)
+ [continue Deyimi](../../javascript/reference/continue-statement-javascript.md)

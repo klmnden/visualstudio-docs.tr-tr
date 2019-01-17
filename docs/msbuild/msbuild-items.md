@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898706"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345610"
 ---
 # <a name="msbuild-items"></a>MSBuild öğeleri
 MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder (dosyaları belirtilen `Include` özniteliği). Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Ayrıca bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
+ [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md)   
  [Nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Nasıl yapılır: Virgülle ayrılmış bir öğe listesini görüntüleme](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Öğe tanımları](../msbuild/item-definitions.md)   
- [Toplu işleme](../msbuild/msbuild-batching.md)   
- [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Toplu İşleme](../msbuild/msbuild-batching.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936899"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349510"
 ---
 # <a name="custom-document-properties-overview"></a>Özel belge özelliklerine genel bakış
 
@@ -38,7 +38,7 @@ Bu özellik bir arabirim, Office çözüm yükleyicisi bileşeninin CLSID içere
 
 Bu özellik, özelleştirme için dağıtım bildirimi hakkında daha fazla ayrıntı sağlayan bir dize içerir. Bildirimleri hakkında daha fazla bilgi için bkz. [uygulama ve dağıtım bildirimlerini Office çözümlerinde](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- The_AssemblyLocation özellik değeri, çözümün nasıl dağıtıldığına bağlı olarak farklı biçimlerde olabilir:
+ \_AssemblyLocation özellik değeri, çözümün nasıl dağıtıldığına bağlı olarak farklı biçimlerde olabilir:
 
 - Çözüm, bir Web sitesi, UNC yolu ya da bir CD veya USB sürücüsüne yüklenecek yayımladıysanız _AssemblyLocation özelliğini biçimdedir *DeploymentManifestPath*|*SolutionID*. Aşağıdaki dize örneği şöyledir:
 
@@ -46,7 +46,7 @@ Bu özellik, özelleştirme için dağıtım bildirimi hakkında daha fazla ayr�
 
 - Çalışan veya Visual Studio çözümünden hata ayıklama, _AssemblyLocation özelliğini biçimdedir *DeploymentManifestName*|*SolutionID*| vstolocal. Aşağıdaki dize örneği şöyledir:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9 & lt | vstolocal
+     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
   *SolutionID* bir GUID, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] çözümü belirlemek için kullanır. *SolutionID* projeyi oluşturduğunuzda otomatik olarak oluşturulur. **Vstolocal** terimi gösterir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] derlemenin belgeyle aynı klasörde bulunan yüklenmesi.
 

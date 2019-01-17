@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 353a85ab51252c92086fa478d95b2e29ab3db62d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794906"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348041"
 ---
 # <a name="idebugformatter-interface"></a>IDebugFormatter Arabirimi
-Bir dil veya değişken değerleri veya VARTYPE türler ile dizeler arasındaki dönüştürme özelleştirmek için IDE'yi sağlar.  
+Bir dil veya değişken değerleri veya VARTYPE türler ile dizeler arasında dönüştürme özelleştirmek için IDE sağlar.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugFormatter` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugFormatter` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   

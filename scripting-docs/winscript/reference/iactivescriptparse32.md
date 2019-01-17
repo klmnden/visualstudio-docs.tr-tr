@@ -10,20 +10,20 @@ ms.assetid: c39c14aa-beb7-4eca-8b8c-2181da1c2e3e
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 688a89515179912c1ed3ac815f0febf50ab4db0f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9f44239b4e423588b8455b93b87e4084a9c7d1c4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793379"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347651"
 ---
 # <a name="iactivescriptparse32"></a>IActiveScriptParse32
-Windows altyapısı komut dosyasına eklenecek ham metni kod kod parçacıklarını sağlar veya çalışma zamanında değerlendirilecek ifade text sağlayan komut dosyası, bunu uygulayan olup `IActiveScriptParse32` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IPersist*`) komut dosyası motoruna bir kod almak için ve komut dosyası parçalarını çeşitli nesnesine eklemek için olaylar.  
+Windows altyapısı komut dosyasına eklenecek kod kod parçacıklarını ham metni sağlar veya çalışma zamanında değerlendirilecek ifade metin sağlayan komut bunu uygulayan olup `IActiveScriptParse32` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IPersist*`) komut dosyası altyapısı kod almak ve kod parçacıkları için çeşitli nesne iliştirmek için olaylar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IActiveScriptParse32::AddScriptlet](../../winscript/reference/iactivescriptparse32-addscriptlet.md)|Kod Resimli komut dosyasına ekler.|  
-|[IActiveScriptParse32::InitNew](../../winscript/reference/iactivescriptparse32-initnew.md)|Komut dosyası altyapısını başlatır.|  
-|[IActiveScriptParse32::ParseScriptText](../../winscript/reference/iactivescriptparse32-parsescripttext.md)|Ad alanına bildirimleri ekleme ve uygun şekilde kodu değerlendirme verilen kodu Resimli ayrıştırır.|
+|[IActiveScriptParse32::AddScriptlet](../../winscript/reference/iactivescriptparse32-addscriptlet.md)|Kod oluşturma yöntemini komut dosyasına ekler.|  
+|[IActiveScriptParse32::InitNew](../../winscript/reference/iactivescriptparse32-initnew.md)|Komut dosyası altyapısı başlatır.|  
+|[IActiveScriptParse32::ParseScriptText](../../winscript/reference/iactivescriptparse32-parsescripttext.md)|Ad alanına bildirimler ekleyerek ve kodu uygun şekilde değerlendirerek verilen kod oluşturma yöntemini ayrıştırır.|

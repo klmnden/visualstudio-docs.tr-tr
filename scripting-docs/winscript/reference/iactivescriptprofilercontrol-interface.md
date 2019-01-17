@@ -12,23 +12,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0d598302ae78ca0b2a1e7c1f94c949800378a2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7caa09f384ce460a3e73b21b10d6d8022182dde7
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793496"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349497"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl Arabirimi
-Profil oluşturma destekler komut dosyası altyapısı tarafından uygulanır. Genellikle, uygulayan bir nesne `IActiveScriptProfilerControl` de uygulayan [IActiveScript](../../winscript/reference/iactivescript.md) arabirimi. Bu durumda, bir tanıtıcı elde edebilirsiniz `IActiveScriptProfilerControl` çağırarak arabirim `IUnknown::QueryInterface` nesnesi üzerinde yöntemi. Arabirim durdurma ve komut dosyası altyapısı profil başlatma için gereken yöntemleri sağlar.  
+Profil oluşturmayı destekler komut dosyası altyapısı tarafından uygulanır. Genellikle, uygulayan bir nesne `IActiveScriptProfilerControl` ayrıca uygulayan [IActiveScript](../../winscript/reference/iactivescript.md) arabirimi. Bu durumda, yönelik bir tanıtıcı elde edebilirsiniz `IActiveScriptProfilerControl` çağırarak arabirim `IUnknown::QueryInterface` nesnesi üzerinde yöntemi. Arabirimi, durdurma ve başlatma komut dosyası altyapısına profil oluşturma için gereken yöntemleri sağlar.  
   
 ## <a name="methods"></a>Yöntemler  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|Komut dosyası altyapısı profil başlatır.|  
-|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|Profil oluşturucu komut dosyası altyapısı olay maskesi ayarlar.|  
-|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|Komut dosyası altyapısı profil durdurur.|  
+|[IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)|Komut dosyası altyapısına'profil oluşturmaya başlar.|  
+|[IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)|Profil oluşturucu komut dosyası altyapısı içinde olay maskesini ayarlar.|  
+|[IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md)|Komut dosyası altyapısına profil oluşturmayı durdurur.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası profil oluşturucu arabirimleri](../../winscript/reference/active-script-profiler-interfaces.md)
+ [Etkin Betik Profil Oluşturucu Arabirimleri](../../winscript/reference/active-script-profiler-interfaces.md)

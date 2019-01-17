@@ -1,5 +1,5 @@
 ---
-title: Tanımlayıcı için gelecekte ayrılmış bir sözcük kullanımı geçersiz | Microsoft Docs
+title: Tanımlayıcı için gelecekte ayrılmış bir sözcük kullanımı geçersiz. | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f628ca84bf9c36e6be49d283481a06addf61bcca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788720"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348860"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>Tanımlayıcı için gelecekte kullanım için ayrılmış bir sözcük kullanımı geçersiz
-1049: bir tanımlayıcı için gelecekte ayrılmış bir sözcük kullanımı geçersiz  
+1049: Tanımlayıcı için gelecekte kullanım için ayrılmış bir sözcük kullanımı geçersiz  
   
- Gelecekteki ayrılmış bir sözcük bir değişken, işlev veya başka bir kullanıcı tarafından tanımlanan tanımlayıcı adı olarak kullanamazsınız.  
+ Gelecek ayrılmış bir sözcük bir değişken, işlev veya başka bir kullanıcı tanımlı tanımlayıcı adı olarak kullanamazsınız.  
   
- Gelecekteki ayrılmış sözcükler hakkında daha fazla bilgi için bkz: [JavaScript gelecekteki ayrılmış sözcükler](../../javascript/reference/javascript-future-reserved-words.md).
+ Gelecek ayrılmış sözcükler hakkında daha fazla bilgi için bkz. [JavaScript gelecekte ayrılmış sözcükler](../../javascript/reference/javascript-future-reserved-words.md).

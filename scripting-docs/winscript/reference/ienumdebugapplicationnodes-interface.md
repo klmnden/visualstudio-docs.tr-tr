@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf9c4fe6a8d789b1988a9a47b17adcba64b28827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e14b5567d96bccd0badb95f75558e0af329a62a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794450"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344242"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>IEnumDebugApplicationNodes Arabirimi
-Bir uygulama ile ilişkili bir düğümün alt öğelerinin numaralandırır.  
+Bir uygulama ile ilişkili bir düğümünün alt düğümleri numaralandırır.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IEnumDebugApplicationNodes` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IEnumDebugApplicationNodes` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayısını alır.|  
-|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.|  
-|[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|Belirtilen bir Segmentte bir sabit listesi sırası sayısını alır.|  
+|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.|  
+|[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.|

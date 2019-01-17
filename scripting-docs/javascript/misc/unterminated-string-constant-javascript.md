@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fd4dc6ff9008b03c3e8cc81385d6ebe0fe89396
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788747"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349575"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Sonlandırılmamış dize sabiti (JavaScript)
-Dize sabit kapanış tırnak işareti ile bitmez. Dize sabitleri çift tırnak işaretini içinde alınmalıdır.  
+Dize sabit kapanış tırnak işareti ile bitmez. Dize sabitleri bir çift tırnak işaretleri alınmalıdır.  
   
 > [!NOTE]
->  Tek veya çift tırnak işaretleri eşleşen çiftlerini kullanabilirsiniz. Çift tırnak işaretleri dizeler tek tırnak işaretleri içindeki bulunabilir ve tek tırnak işaretleri çift tırnak işaretleri Dizelerdeki bulunabilir.  
+>  Tek veya çift tırnak işaretleri eşleşen çiftlerini kullanabilirsiniz. Çift tırnak işareti içinde tek tırnak işareti içine alınmış dizeler içinde bulunabilir ve tek tırnak işaretleri çift tırnak işaretleri içine alınmış dizeler içinde bulunabilir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Dizenin sonunda kapanış tırnak işareti ekleyin.  
+-   Kapanış tırnak işareti, dizenin sonuna ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dize nesnesi](../../javascript/reference/string-object-javascript.md)   
- [toString yöntemi (nesne)](../../javascript/reference/tostring-method-object-javascript.md)
+ [toString Metodu (Nesne)](../../javascript/reference/tostring-method-object-javascript.md)

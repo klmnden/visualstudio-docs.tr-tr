@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5706d868f0096d486629c18c3d700349af92cc92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df9296ac251d93105229fc0af365f6797a413f2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796349"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349692"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-Bu uygulamaya tanılama desteklenip desteklenmediğini belirler. Varsa [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) değeri NULL olmayan arabirimi uygulayan nesne üzerinde adlı [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) döndürür `true`. Değilse, döndürürse `false` ve çağrılar [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) başarısız.  
+Bu uygulamayı tanılama desteklenip desteklenmediğini belirler. Varsa [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) boş olmayan bir değer ile bu arabirimi uygulayan nesne çağrıldıktan [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) döndürür `true`. Değilse, bunu döndürürse `false` ve çağrılar [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) başarısız.  
   
 > [!IMPORTANT]
 >  [Iwebappdiagnosticssetup arabirimi](../../winscript/reference/iwebappdiagnosticssetup-interface.md) PDM v11.0 tarafından uygulanan ve büyük. Activdbg100 içinde bulunamadı.  
@@ -35,4 +35,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- Varsa [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) değeri NULL olmayan arabirimi uygulayan nesne üzerinde adlı [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) döndürür `true`. Değilse, döndürürse `false`ve çağrılar [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) başarısız.
+ Varsa [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) boş olmayan bir değer ile bu arabirimi uygulayan nesne çağrıldıktan [DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) döndürür `true`. Değilse, bunu döndürürse `false`ve çağrılar [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) başarısız.

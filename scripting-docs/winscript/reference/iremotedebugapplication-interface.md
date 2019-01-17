@@ -14,30 +14,30 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 02ddf409bf25cb86fc742cdc004e2f1b664d22e3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795035"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348769"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication Arabirimi
-Çalışan bir uygulama temsil eder. Bir işletim sistemi işlemine karşılık gelecek şekilde gerekmez. Genellikle, bir hata ayıklayıcısı hata ayıklama için bir uygulama hedefler. Hata ayıklama işlem yöneticisi, genellikle uygulama nesnesi uygular.  
+Çalışan bir uygulamayı temsil eder. Bir işletim sistemi işlemine karşılık olarak gerekmez. Genellikle, bir hata ayıklayıcı hata ayıklama için bir uygulama hedefler. Hata ayıklama işlemi Yöneticisi eleman genellikle uygular.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IRemoteDebugApplication` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IRemoteDebugApplication` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|İçinde bir kesme noktası şu anda bir uygulama devam eder.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Uygulamanın hata ayıklayıcı fırsatta içine çalışmamasına neden olur.|  
-|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Bu uygulama için bir hata ayıklayıcısı bağlanır.|  
+|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Bir kesme noktasına şu anda bir uygulama devam eder.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Uygulamanın ilk fırsatta hata ayıklayıcısına çalışmamasına neden olur.|  
+|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Bir hata ayıklayıcı bu uygulamaya bağlanır.|  
 |[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Geçerli hata ayıklayıcı uygulamadan bağlantısını keser.|  
 |[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Geçerli hata ayıklayıcı uygulamaya bağlı döndürür.|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Hata ayıklayıcı IDE, çalışan giden işlem dışı uygulama işleminin nesneleri oluşturmak için bu uygulamaya için bir mekanizma sağlar.|  
-|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Uygulamanın yanıt verebilir durumda olup olmadığını gösterir.|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Hata ayıklayıcının IDE, çalışan giden işlem uygulama işleminde nesneleri oluşturmak için uygulama için bir mekanizma sağlar.|  
+|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Uygulama duyarlı olup olmadığını gösterir.|  
 |[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Uygulama ile ilişkili olduğu bilinen tüm iş parçacıklarının numaralandırır.|  
-|[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Bu uygulama düğümün adını döndürür.|  
-|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Uygulama ile ilişkili tüm düğümleri altında eklendiği uygulama düğümü döndürür.|  
-|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Bu uygulamayı çalıştıran tüm diller için genel ifade bağlamları numaralandırır.|
+|[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Bu uygulama düğümü adını döndürür.|  
+|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Uygulamayla ilişkili tüm düğümleri eklendiği uygulama düğümü döndürür.|  
+|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Bu uygulama içinde çalışan tüm diller için genel ifade bağlamları numaralandırır.|

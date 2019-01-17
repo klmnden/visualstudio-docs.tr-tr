@@ -14,26 +14,26 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3360cea0d1649348a795356ad827b32b6f8ebc19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2fd51d5bdd076199167e52f685f16572756f9740
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794975"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346559"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>IRemoteDebugApplicationEx Arabirimi
-Çalışan bir uygulama temsil eder. Bir işletim sistemi işlemi karşılık gelecek şekilde gerekmez. Genellikle, bir hata ayıklayıcısı hata ayıklama için bir uygulama hedefler. Hata ayıklama işlem yöneticisi, genellikle uygulama nesnesi uygular.  
+Çalışan bir uygulamayı temsil eder. Bir işletim sistemi işlemine karşılık olarak gerekmez. Genellikle, bir hata ayıklayıcı hata ayıklama için bir uygulama hedefler. Hata ayıklama işlemi Yöneticisi eleman genellikle uygular.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IRemoteDebugApplicationEx` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IRemoteDebugApplicationEx` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Ana bilgisayar uygulaması için işlem kimliği döndürür.|  
-|GetHostMachineName|Ana bilgisayar uygulamasını çalıştıran bilgisayarın adını döndürür.|  
-|[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Hata ayıklayıcı yerelleştirme için dili ayarlar.|  
-|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Hata ayıklayıcı tek adımlı moduna zorlar.|  
-|[IRemoteDebugApplicationEx:RevokeBreak](../../winscript/reference/iremotedebugapplicationex-revokebreak.md)|Break komutu iptal eder.|  
-|SetProxyBlanketAndAddRef|Windows 95 tabanlı işletim sistemlerinden uzaktan hata ayıklama ile uyumluluğu sağlamak için bir hata ayıklayıcı nesnesi için bir proxy üzerinde COM güvenlik bilgilerini güncelleştirir.|  
-|ReleaseFromSetProxyBlanket|SetProxyBlanketAndAddRef gelen AddRef serbest bırakır.|
+|[IRemoteDebugApplicationEx:GetHostPid](../../winscript/reference/iremotedebugapplicationex-gethostpid.md)|Konak uygulamanın işlem Kimliğini döndürür.|  
+|GetHostMachineName|Konak uygulamanın üzerinde çalıştığı bilgisayarın adını döndürür.|  
+|[IRemoteDebugApplicationEx:SetLocale](../../winscript/reference/iremotedebugapplicationex-setlocale.md)|Hata ayıklayıcı yerelleştirme dili ayarlar.|  
+|[IRemoteDebugApplicationEx:ForceStepMode](../../winscript/reference/iremotedebugapplicationex-forcestepmode.md)|Tek adımlı modda hata ayıklayıcıya zorlar.|  
+|[IRemoteDebugApplicationEx:RevokeBreak](../../winscript/reference/iremotedebugapplicationex-revokebreak.md)|Break komutunu iptal eder.|  
+|SetProxyBlanketAndAddRef|Windows 95 tabanlı işletim sistemlerinden uzaktan hata ayıklama ile uyumluluğu sağlamak için hata ayıklayıcı nesne için bir proxy üzerinde COM güvenlik bilgilerini güncelleştirir.|  
+|ReleaseFromSetProxyBlanket|Yayınları AddRef SetProxyBlanketAndAddRef öğesinden.|

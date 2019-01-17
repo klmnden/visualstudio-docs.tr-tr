@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796370"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349211"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED Hata Kodu
-Komut dosyası altyapısı aracılığıyla konak işlenmeyen bir özel durum bildirdi [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Konak bu hatayı yoksayabilirsiniz.  
+Komut dosyası altyapısı konağa işlenmeyen bir özel durum bildirdi [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Konak, bu hatayı yoksayabilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -29,4 +29,4 @@ SCRIPT_E_REPORTED   0x80020101L
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası sabitleri, numaralandırmaları ve hata kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+ [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

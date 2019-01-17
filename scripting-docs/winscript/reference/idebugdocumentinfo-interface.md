@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5f6bf756a5df5f94804efec40822ed500c0e7f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e0c01803f49204d2f0de40bec07b368f176fb80
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794069"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349341"
 ---
 # <a name="idebugdocumentinfo-interface"></a>IDebugDocumentInfo Arabirimi
-Bilgi olabilir veya değil örneği bir belge üzerinde sağlar.  
+Örneği değil veya bir belge hakkında bilgi sağlar.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugDocumentInfo` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugDocumentInfo` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugDocumentInfo::GetName](../../winscript/reference/idebugdocumentinfo-getname.md)|Belirtilen belge adını döndürür.|  
-|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Belge türünü tanımlayan bir CLSID döndürür.|
+|[IDebugDocumentInfo::GetName](../../winscript/reference/idebugdocumentinfo-getname.md)|Belirtilen belge adı döndürür.|  
+|[IDebugDocumentInfo::GetDocumentClassId](../../winscript/reference/idebugdocumentinfo-getdocumentclassid.md)|Belge türü tanımlayan bir CLSID döndürür.|

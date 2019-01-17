@@ -1,5 +1,5 @@
 ---
-title: Etkin komut dosyası arabirimleri geliştirme | Microsoft Docs
+title: Etkin komut dosyası yazma arabirimleri | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,28 +15,28 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8140ba8991b02879d2fc586001f4ea8f7d1d004b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 787dbfab822990c94867bd7e3932c59559daa917
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791738"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346533"
 ---
 # <a name="active-script-authoring-interfaces"></a>Etkin Komut Dosyası Yazma Arabirimleri
-Bu bölümde listelenen arabirimler ActivAut.h üstbilgi dosyası sağlar.  
+Bu bölümde listelenen arabirimler ActivAut.h üstbilgi dosyasını sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- Web sayfası yazma aşağıdaki arabirimleri etkinleştirin:  
+ Web sayfası yazma aşağıdaki arabirimlerinden etkinleştir:  
   
--   [Iactivescriptauthor arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)  
+-   [IActiveScriptAuthor Arabirimi](../../winscript/reference/iactivescriptauthor-interface.md)  
   
--   [Iactivescriptauthorprocedure arabirimi](../../winscript/reference/iactivescriptauthorprocedure-interface.md)  
+-   [IActiveScriptAuthorProcedure Arabirimi](../../winscript/reference/iactivescriptauthorprocedure-interface.md)  
   
--   [Iscriptentry arabirimi](../../winscript/reference/iscriptentry-interface.md)  
+-   [IScriptEntry Arabirimi](../../winscript/reference/iscriptentry-interface.md)  
   
--   [Iscriptnode arabirimi](../../winscript/reference/iscriptnode-interface.md)  
+-   [IScriptNode Arabirimi](../../winscript/reference/iscriptnode-interface.md)  
   
--   [Iscriptscriptlet arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)  
+-   [IScriptScriptlet Arabirimi](../../winscript/reference/iscriptscriptlet-interface.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows komut dosyası arabirimleri başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Windows Betik Arabirimleri Başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)

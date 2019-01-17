@@ -18,24 +18,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794672"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344049"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>Iperpropertybrowsing2 arabirimi 1
-Erişimleri özellik sayfaları bilgilerinde bir nesne tarafından sunulan.  
+Erişim bilgiler özellik sayfaları, bir nesne tarafından sunulan.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |`GetDisplayString`|Belirtilen özellik açıklayan bir metin dizesi döndürür.|  
-|`MapPropertyToPage`|Belirtilen özellik işlenmesini sağlar özellik sayfası CLSID döndürür.|  
-|`GetPredefinedStrings`|Dizeleri sayılan bir dizi döndürür (`LPOLESTR` işaretçileri) belirtilen özellik kabul edebilir izin verilen değerler açıklamalarını listesi.|  
-|`SetPredefinedValue`|Özelliğinin değeri belirtecin tarafından tanımlanan tanımlanmış bir değer ayarlar`dwCookie.`|  
+|`MapPropertyToPage`|Belirtilen özellik işlenmesini izin veren özellik sayfasını CLSID değeri döndürür.|  
+|`GetPredefinedStrings`|Sayılan bir dizisini döndürür (`LPOLESTR` işaretçiler) açıklamaları belirtilen özellik kabul edebilen izin verilen değerler listesi.|  
+|`SetPredefinedValue`|Özelliğinin değeri, belirteci tarafından tanımlanan önceden tanımlanmış değere ayarlar. `dwCookie.`|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Başlık: dbgprop.h
+ Üstbilgi: dbgprop.h

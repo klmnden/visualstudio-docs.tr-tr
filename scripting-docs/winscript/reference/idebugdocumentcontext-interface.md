@@ -14,21 +14,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 432fbe9de5b1ab19c64ae1b9eeee36f3b1156d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 998a219e8a58927ca62ec90e6b105586a64bbf2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794024"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349588"
 ---
 # <a name="idebugdocumentcontext-interface"></a>IDebugDocumentContext Arabirimi
-Ayıklanacak belgenin bir bölümünü soyut bir gösterimini sağlar. Metin belgeleri için bu gösterim karakterin çeşitli oluşur.  
+Hatası ayıklanmakta olan belgenin bir bölümünü soyut bir gösterimini sağlar. Metin belgeleri için bu gösterim bir karakter konumu dizi oluşur.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugDocumentContext` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugDocumentContext` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugDocumentContext::GetDocument](../../winscript/reference/idebugdocumentcontext-getdocument.md)|Bu bağlamda içeren belgeyi döndürür.|  
-|[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Bu belge içerikle ilişkili kod bağlamları numaralandırır.|
+|[IDebugDocumentContext::GetDocument](../../winscript/reference/idebugdocumentcontext-getdocument.md)|Bu bağlam içeren belgeyi döndürür.|  
+|[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Bu belge bağlamı ile ilişkili kod bağlamları numaralandırır.|

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836183"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346052"
 ---
 # <a name="expected-hexadecimal-digit"></a>Beklenen onaltılık basamak
 Yanlış bir Unicode kaçış dizisi oluşturduğunuz. Unicode kaçış dizileri \u, tam olarak dört onaltılık basamağın (daha fazla ve en az) geldiği başlar. Unicode onaltılık basamak yalnızca sayı 0-9, A-F büyük harf ve küçük harf a-f içerebilir. Aşağıdaki örnek, doğru biçimlendirilmiş bir Unicode çıkış dizisi gösterir.  

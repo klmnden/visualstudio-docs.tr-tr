@@ -14,23 +14,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bc0dfa31b37a6bf99427c8eddfe2bd038da9b9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9dad5d4a90eecdc6c93d86df9f9b18273bc471a4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793523"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349770"
 ---
 # <a name="iactivescriptprofilercontrol2-interface"></a>IActiveScriptProfilerControl2 Arabirimi
-Başlat veya bir komut dosyası çalıştırılırken profil oluşturmayı durdurmak yeteneğini yöntemleri sağlar.  
+Başlatma veya durdurma bir komut dosyası çalıştırılırken profil oluşturma olanağı eklemek için yöntemler sağlar.  
   
 ## <a name="methods"></a>Yöntemler  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Profil Oluşturucu, tüm geçerli komut dosyası motorlarına profil başlattığınız bildirir. Bu, tam çağrı yığını elde edilir sağlar [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] profil başlattığınızda çalışır.|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Profil Oluşturucu, tüm geçerli komut dosyası motorlarına profil oluşturmayı durdurmak zorunda kalacaklarını bildirir. Bu, tam çağrı yığını elde edilir sağlar [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] profil durdurduğunuzda çalışıyor.|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Profil Oluşturucu, tüm geçerli komut dosyası motorlarına profil oluşturma başlatıldı bildirir. Bu, tam çağrı yığınını almanızı sağlayan [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] profil oluşturma işlemini başlattığınızda çalışıyor.|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Profil Oluşturucu, tüm geçerli komut dosyası motorlarına profil oluşturmayı durdurmak için önerilere şu bildirir. Bu, tam çağrı yığınını almanızı sağlayan [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] profil oluşturma durdurduğunuzda çalışıyor.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iactivescriptprofilercontrol arabirimi](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   
- [Etkin komut dosyası profil oluşturucu arabirimleri](../../winscript/reference/active-script-profiler-interfaces.md)
+ [Etkin Betik Profil Oluşturucu Arabirimleri](../../winscript/reference/active-script-profiler-interfaces.md)

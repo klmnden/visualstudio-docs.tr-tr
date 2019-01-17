@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f139d317db5aa00f03f8e9abd71020e5ff35b03
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b717ebfe740a9b356513bb0f15e90c629a14e147
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794588"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345844"
 ---
 # <a name="idisperror-interface"></a>IDispError Arabirimi
-Bağlamsal ayrıntılı hata bilgileri sağlar.  
+Ayrıntılı bağlamsal hata bilgilerini sağlar.  
   
 > [!NOTE]
->  Bu arabirim uygulanmadı.  
+>  Bu arabirim gerçekleştirilmedi.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDispError` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDispError` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Hata bilgilerini belirli bir türü alır.|  
-|[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Sonraki alır `IDispError` nesnesi.|  
-|[IDispError::GetHresult](../../winscript/reference/idisperror-gethresult.md)|Gelen hata kodunu alır `IDispError` nesnesi.|  
-|[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Sınıf veya hataya neden uygulama için dile bağlı programlı tanımlayıcısını döndürür.|  
-|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Yardım dosyasının yolunu ve hata mümkünse açıklayan konu bağlam Kimliğini döndürür.|  
+|[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Belirli bir tür hata bilgilerini alır.|  
+|[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Sonraki alır `IDispError` nesne.|  
+|[IDispError::GetHresult](../../winscript/reference/idisperror-gethresult.md)|Gelen hata kodunu alır `IDispError` nesne.|  
+|[IDispError::GetSource](../../winscript/reference/idisperror-getsource.md)|Sınıf veya hataya neden olan uygulama için dile bağlı programlı tanımlayıcı döndürür.|  
+|[IDispError::GetHelpInfo](../../winscript/reference/idisperror-gethelpinfo.md)|Yardım dosyasının yolu ve mümkünse, hatayı açıklayan bir konu bağlam Kimliğini döndürür.|  
 |[IDispError::GetDescription](../../winscript/reference/idisperror-getdescription.md)|Hata metinsel açıklaması döndürür.|

@@ -23,14 +23,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 595cc441f5e2dfde25c6fa4dcbcb016829176625
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788837"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350134"
 ---
 # <a name="true-keyword"></a>True Anahtar Sözcüğü
-**True** anahtar sözcüğü -1 olarak eşit bir değer içeriyor.  
+**True** anahtar sözcüğü, -1 değerine eşit bir değere sahip.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [False (Windows betik teknolojileri)](../../javascript/misc/false-windows-script-technologies.md)
+ [False (Windows Betik Teknolojileri)](../../javascript/misc/false-windows-script-technologies.md)

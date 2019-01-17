@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097051"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348809"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Yüklü tüm betik iptal durumuna kaybetmek ve bu nedenle bir kapalı durumuna girmesini diğer nesnelere sahip herhangi bir arabirim işaretçilerini yayın komut dosyası altyapısı neden olur. Olay havuzlarını hemen çalıştırılan komut metni ve devam etmekte olan makro çağrısı durum değişikliklerini önce tamamlanır (kullanın [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) çalışan bir betik iş parçacığının iptal etmek için). Döngüsel başvuru sorunları önlemek için arabirim yayımlanmadan önce bu yöntemi oluşturma ana bilgisayar tarafından çağrılmalıdır.  

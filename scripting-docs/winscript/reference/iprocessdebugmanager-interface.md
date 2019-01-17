@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26c97fda6fc8657164e22d51eb041017a6239d98
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5feb67b1a616eeaa855b27cb12ea9b3146545ebd
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794921"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345129"
 ---
 # <a name="iprocessdebugmanager-interface"></a>IProcessDebugManager Arabirimi
-İşlem Hata Ayıklama Yöneticisi'ni birincil arabirim. Bu arabirim oluşturmak, eklemek veya bir sanal uygulamayı bir işlemden kaldırın. Yığın çerçeveleri ve uygulama iş parçacığı sıralayabilirsiniz.  
+İşlem Hata Ayıklama Yöneticisi birincil arabirim. Bu arabirim, oluşturma, ekleme veya bir sanal uygulama bir işlemden kaldırma. Yığın çerçeveleri ve uygulama iş parçacığı sıralayabilirsiniz.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IProcessDebugManager` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IProcessDebugManager` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
@@ -32,6 +32,6 @@ ms.locfileid: "24794921"
 |------------|-----------------|  
 |[IProcessDebugManager::CreateApplication](../../winscript/reference/iprocessdebugmanager-createapplication.md)|Bu uygulama için yeni bir hata ayıklama uygulama nesnesi oluşturur.|  
 |[IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)|Geçerli işlem için bir varsayılan uygulama nesnesi döndürür.|  
-|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Çalışan uygulamalar Makine Hata Ayıklama Yöneticisi'nin listesine bir uygulama ekler.|  
+|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Çalışan uygulamalar bir uygulama makinesi ayıklama manager'ın listesine ekler.|  
 |[IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)|Bir uygulamanın çalışmasını kaldırır uygulama listesi.|  
 |[IProcessDebugManager::CreateDebugDocumentHelper](../../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)|Bu uygulama için yeni bir hata ayıklama belge Yardımcısı oluşturur.|

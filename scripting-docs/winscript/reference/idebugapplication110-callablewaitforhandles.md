@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 31802d8b86f007139959f3ece3bd1a0260599181
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793760"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350030"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Herhangi bir yandan bildirilmesini belirtilen tanıtıcıları bekler bu iş parçacığına gönderilen çağrıları iş parçacıkları arası. Bu yöntem, hata ayıklayıcı iş parçacığından çağrılmalıdır.  
+İzin verirken sinyal belirtilen tutamaçlardan birini bekler bu iş parçacığına yayımlanacak çağrıları iş parçacıkları arası. Bu yöntem, hata ayıklayıcı iş parçacığında çağrılmalıdır.  
   
 > [!IMPORTANT]
 >  [Idebugapplication110 arabirimi](../../winscript/reference/idebugapplication110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -41,7 +41,7 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
  Bekleme tanıtıcıları kümesi.  
   
  `pIndex`  
- HRESULT değeri S_OK, dizine olduğunda `pHandles` işaret tutamacı için.  
+ HRESULT değerini S_OK, dizine olduğunda `pHandles` sinyal işleyici için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplication110 arabirimi](../../winscript/reference/idebugapplication110-interface.md)
+ [IDebugApplication110 Arabirimi](../../winscript/reference/idebugapplication110-interface.md)

@@ -1,7 +1,7 @@
 ---
 title: Yükleme için komut satırı parametresi örnekleri
 description: Bu örnekleri kendi Visual Studio komut satırı yüklemesi oluşturmak için özelleştirin.
-ms.date: 11/14/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59dfe6ebb9518bbdea6edf11108f1cb27cd5d6a3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989993"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345532"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri
 
@@ -28,7 +28,7 @@ Her örnekte `vs_enterprise.exe`, `vs_professional.exe` ve `vs_community.exe` in
 > Tüm komutlar, yönetimsel ayrıcalık ve işlemin yükseltilmiş isteminden başlamamışsa istemi görüntülenecek olan bir kullanıcı hesabı denetimi gerektirir.
 >
 > [!NOTE]
->  Kullanabileceğiniz `^` birden fazla satır tek bir komutta birleştirmek için komut satırının sonunda karakter. Alternatif olarak, yalnızca bu satırlara birlikte tek bir satır yerleştirebilirsiniz. PowerShell'de vurgulamasını belirtir eşdeğerdir (`` ` ``) karakter.
+> Kullanabileceğiniz `^` birden fazla satır tek bir komutta birleştirmek için komut satırının sonunda karakter. Alternatif olarak, yalnızca bu satırlara birlikte tek bir satır yerleştirebilirsiniz. PowerShell'de vurgulamasını belirtir eşdeğerdir (`` ` ``) karakter.
 
 ## <a name="using---installpath"></a>--İnstallPath kullanma
 
@@ -83,13 +83,15 @@ Her örnekte `vs_enterprise.exe`, `vs_professional.exe` ve `vs_community.exe` in
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>--İncludeRecommended kullanma
+## <a name="using---all"></a>Kullanarak--tüm
 
 * Etkileşimli bir yükleme, tüm iş yükleri ve Visual Studio 2017 Enterprise sürümünde kullanılabilir olan bileşenleri başlatın:
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>--İncludeRecommended kullanma
 
 * Visual Studio 2017 Professional'ın ikinci, adlandırılmış bir örnek ile Visual Studio 2017 Community edition, Node.js geliştirme desteği ile yüklü bir makineye yükleyin:
 

@@ -14,22 +14,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77aaa60942855a71f7d71037fbefb06462336a13
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78db05160adef51c414f4c4804f33d47812a9b38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793361"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349549"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-Kaynak kodu metnin komut dosyasına eklenecek yordamlar için Windows komut dosyası altyapısı izin veriyorsa, uygulayan `IActiveScriptParseProcedure` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IActiveScriptParse` veya `IPersist`*) komut dosyası yordamlarını ad alanına eklemek için.  
+Kaynak kod metni komut dosyasına eklenecek yordamlar için Windows komut dosyası altyapısı izin veriyorsa, bunu uygulayan `IActiveScriptParseProcedure` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IActiveScriptParse` veya `IPersist`*) betik yordamları ad alanına eklemek için.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |||  
 |-|-|  
 |Yöntem|Açıklama|  
-|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Verilen kodu yordamı ayrıştırır ve yordam, ad alanına ekler.|  
+|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Verilen kod yordamı ayrıştırır ve yordam, ad alanına ekler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası arabirimleri](../../winscript/reference/active-script-interfaces.md)
+ [Etkin Betik Arabirimleri](../../winscript/reference/active-script-interfaces.md)

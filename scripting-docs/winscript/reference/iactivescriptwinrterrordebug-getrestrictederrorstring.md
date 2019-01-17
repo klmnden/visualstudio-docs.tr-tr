@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade51ae9852519d6a059193aacbfdde49ae82d19
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e739d12674d64d5e47915c9f9e4c525e68d8b061
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793673"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349848"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorstring"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
-Döndürür Windows çalışma zamanı hata dizesi varsa kısıtlı.  
+Varsa, döndürür Windows çalışma zamanı hata dizesi kısıtlı.  
   
 > [!IMPORTANT]
 >  [Iactivescriptwinrterrordebug arabirimi](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -38,4 +38,4 @@ HRESULT GetRestrictedErrorString([out] BSTR * errorString);
  [out] Yasak hata dizesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Iactivescriptwinrterrordebug arabirimi](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)
+ [IActiveScriptWinRTErrorDebug Arabirimi](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

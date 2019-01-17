@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280323"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346117"
 ---
 # <a name="regular-expression-object-expected"></a>Normal ifade nesnesi bekleniyor
 Çağırmaya çalıştığınız **RegExp.prototype.toString** veya **RegExp.prototype.valueOf** yöntemi dışında bir türde bir nesne üzerinde `RegExp`. Bu tür çağrısının nesne türünde olmalıdır `RegExp`.  

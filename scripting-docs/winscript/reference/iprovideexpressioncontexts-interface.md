@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 402b439da6f1fa369accacb27f987ac77119e343
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 91f4251fec57001ba6c7a4ea1804ec72371418bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794585"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345103"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>IProvideExpressionContexts Arabirimi
-Belirli bir bileşen tarafından bilinen ifade bağlamları numaralandırmak için bir yol sağlar. Komut dosyası motorları, genellikle bu arabirimi uygular.  
+Belirli bir bileşen tarafından bilinen ifade bağlamları listelemek için bir yol sağlar. Komut dosyası motorları, genellikle bu arabirimi uygulayın.  
   
- İşlem Hata Ayıklama Yöneticisi'ni, belirli bir iş parçacığı ile ilişkili tüm genel ifade bağlamları bulmak için bu arabirimi kullanır.  
+ İşlem Hata Ayıklama Yöneticisi bu arabirimi belirli bir iş parçacığıyla ilişkilendirilmiş tüm genel ifade içerikleri bulmak için kullanır.  
   
 > [!NOTE]
->  Bu arabirime ilgilendiğiniz iş parçacığı içinde çağrılır. Geçerli iş parçacığının tanımlamak ve uygun bir numaralandırıcı dönmek için uygulayan kadar olur.  
+>  Bu arabirim ilgilendiğiniz iş parçacığı içinde çağrılır. Bu, geçerli iş parçacığı tanımlamak ve uygun bir numaralandırıcıyı döndürmek için en fazla uygulayan olur.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IProvideExpressionContexts` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IProvideExpressionContexts` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Bu bileşen tarafından bilinen ifade bağlamlarının bir numaralandırıcı döndürür.|
+|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Bu bileşen tarafından bilinen ifade bağlamları bir numaralandırıcı döndürür.|

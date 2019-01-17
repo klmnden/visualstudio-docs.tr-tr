@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600981f2b395627e5ece597c637da500072ff94f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6bad504bf1fc417e185759b1def641d366c778c5
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793655"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346858"
 ---
 # <a name="ibindeventhandler-interface"></a>IBindEventHandler Arabirimi
-Belirtilen olay işleyicisi işleyen nesneyi sağlamak arayan sağlar.  
+Belirtilen olay işleyicisi işleyen nesneyi sağlamak çağıranın sağlar.  
   
 ## <a name="methods"></a>Yöntemler  
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IBindEventHandler` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IBindEventHandler` arabirimi aşağıdaki yöntemleri sunar.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|Bir olay bir nesneye bağlar.|
+|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|Bir olay, bir nesneye bağlar.|

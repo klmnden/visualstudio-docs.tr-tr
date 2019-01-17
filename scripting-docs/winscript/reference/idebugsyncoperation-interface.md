@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6705c2aa990aef3cf551a94546bf78a64026cecc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3724ad50771ca49460e130bf93ebc244681bd782
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794258"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349614"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation Arabirimi
-Belirli bir engellenmiş iş parçacığı, iç içe geçmiş sırada gerçekleştirilmesi gerekir (örneğin, ifade değerlendirme) bir işlem soyut için bir komut dosyası altyapısı sağlar. Arabirim ayrıca yanıt vermeyen işlemleri iptal ediliyor için bir mekanizma sağlar.  
+Belirli bir engellenmiş iş parçacığı, iç içe geçmiş sırada gerçekleştirilmesi gerekir (örneğin, ifade değerlendirme için) bir işlem soyutlamak bir komut dosyası altyapısı sağlar. Arabirimin de yanıt vermeyen işlemleri iptal etmek için bir mekanizma sağlar.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugSyncOperation` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugSyncOperation` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)|Bu zaman uyumlu işlem için hedef uygulama iş parçacığı döndürür.|  
-|[IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)|Zaman uyumlu olarak işlemi gerçekleştirir ve döndürür.|  
-|[IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)|Devam eden başka bir iş parçacığı üzerinde bir işlemi iptal eder.|
+|[IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)|Bu eşzamanlı bir işlem için hedef uygulama iş parçacığı döndürür.|  
+|[IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)|Zaman uyumlu işlem gerçekleştirir ve döndürür.|  
+|[IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)|Bir başka bir iş parçacığı üzerinde devam eden işlemi iptal eder.|

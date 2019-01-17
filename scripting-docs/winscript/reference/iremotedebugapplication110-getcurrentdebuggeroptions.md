@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89223cb283a31ea01610bd70a8f64187947cacc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74ea3b3dbfa15dabdc57dffe85693c3b5fdf5a3b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794666"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344869"
 ---
 # <a name="iremotedebugapplication110getcurrentdebuggeroptions"></a>IRemoteDebugApplication110::GetCurrentDebuggerOptions
-Şu anda etkin seçenekler kümesini döndürür.  
+Şu anda etkin seçenekleri kümesi döndürür.  
   
 > [!IMPORTANT]
 >  [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -39,4 +39,4 @@ HRESULT GetCurrentDebuggerOptions([out] enum SCRIPT_DEBUGGER_OPTIONS* pCurrentOp
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Iremotedebugapplication110 arabirimi](../../winscript/reference/iremotedebugapplication110-interface.md)
+ [IRemoteDebugApplication110 Arabirimi](../../winscript/reference/iremotedebugapplication110-interface.md)

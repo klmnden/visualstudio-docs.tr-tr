@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545b60f13e86e59143ce0e57f454b13f61041f11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794234"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349224"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx Arabirimi
-Hata ayıklayıcı IDE ana bilgisayar ve dil başlatılan hata ayıklamayı etkinleştirmek için sağlanan birincil arabirimi. Çalışan bir uygulama için bir hata ayıklama oturumu oluşturur. Bu arabirim Makine Hata Ayıklama Yöneticisi tarafından uygulanır.  
+Hata ayıklayıcı IDE konak ve dil başlatılan hata ayıklamayı etkinleştirmek için sağlanan birincil arabirim. Bu, bir hata ayıklama oturumu için çalışan bir uygulama oluşturur. Bu arabirim, hata ayıklama Machine Manager tarafından uygulanır.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugSessionProviderEx` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugSessionProviderEx` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Süre yalnızca hata ayıklama belirtilen uygulaması ile mümkün olup olmadığını belirler.|  
+|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Tam zamanında hata ayıklama ile belirtilen uygulama mümkün olup olmadığını belirler.|  
 |[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|Belirtilen uygulama ile bir hata ayıklama oturumu başlatır.|

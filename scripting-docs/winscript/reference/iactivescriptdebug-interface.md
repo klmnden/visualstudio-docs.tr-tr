@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942094"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344583"
 ---
 # <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug Arabirimi
 Destek hata ayıklama komut dosyası motoru tarafından uygulanır. Genellikle, uygulayan bir nesne `IActiveScriptDebug` arabirimini de uygular `IActiveScript` arabirimi. Bu durumda, çağrı `IActiveScript::QueryInterface` elde etmek için yöntemi `IActiveScriptDebug` arabirimi.  

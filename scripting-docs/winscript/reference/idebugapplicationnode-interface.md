@@ -14,25 +14,25 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 110e04d1c990f1b22f9740d8118a47f485dd041e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d7bd38a0fbbdd596f6a1f6bb040190dddca78bf9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793955"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349003"
 ---
 # <a name="idebugapplicationnode-interface"></a>IDebugApplicationNode Arabirimi
-`IDebugApplicationNode` Arabirimi işlevselliğini genişleten `IDebugDocumentProvider` proje ağacı bağlamında sağlayarak arabirimi.  
+`IDebugApplicationNode` Arabirimi işlevselliğini genişleten `IDebugDocumentProvider` proje ağacı içinde bir bağlam sağlayarak arabirimi.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IDebugDocumentProvider`, `IDebugApplicationNode` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IDebugDocumentProvider`, `IDebugApplicationNode` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|Bu uygulama düğümün alt öğelerinin numaralandırır.|  
-|[IDebugApplicationNode::GetParent](../../winscript/reference/idebugapplicationnode-getparent.md)|Bu uygulama düğümün üst düğümü döndürür.|  
-|[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Bu uygulama düğümü için belge sağlayıcıyı ayarlar.|  
-|[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Tüm başvurularını serbest bırakın ve etkin olmayan bir duruma girmek bu uygulamayı neden olur.|  
-|[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Bu uygulama düğümü belirtilen proje ağacına ekler.|  
+|[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|Bu uygulama düğümünün alt düğümleri numaralandırır.|  
+|[IDebugApplicationNode::GetParent](../../winscript/reference/idebugapplicationnode-getparent.md)|Bu uygulama düğümü üst düğümünün döndürür.|  
+|[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|Bu uygulama düğümü için belge sağlayıcısı ayarlar.|  
+|[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|Tüm başvuruları bırakın ve etkin olmayan bir duruma girmek bu uygulamanın neden olur.|  
+|[IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)|Bu uygulama düğümü belirtilen projeyi ağacına ekler.|  
 |[IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)|Bu uygulama düğümü proje ağacından kaldırır.|

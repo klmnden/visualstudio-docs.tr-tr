@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348315"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350121"
 ---
 # <a name="expected-"></a>'}' bekleniyor
 Değil işlev gövdesi, döngü, kod bloğunun sonunu işaretleyen sağ küme ayracı içerir veya nesne Başlatıcı. Bu hatanın bir örnek olabilir bir **için** yalnızca döngü gövdesinin işaretleme sol ayraç ile döngüsü.  

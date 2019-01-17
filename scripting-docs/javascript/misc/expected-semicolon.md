@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804344"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347209"
 ---
 # <a name="expected-"></a>';' bekleniyor
 Birden fazla deyimi bir satıra Yerleştir erişmeyi denedi, ancak noktalı virgül ile ayırarak değil. Noktalı virgül deyimleri sonlandırmak için kullanılır. Birkaç ifadeleri tek bir satıra koyabilirsiniz ancak her bir sonraki noktalı virgül ile sınırlanması gerekir.  

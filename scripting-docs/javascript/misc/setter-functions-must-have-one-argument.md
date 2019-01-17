@@ -21,13 +21,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e2a84ce078abfc053ed190f53c9ccbed3277928
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788570"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346650"
 ---
 # <a name="setter-functions-must-have-one-argument"></a>Setter işlevlerinde bir bağımsız değişken olmalıdır
-1051: setter işlevlerinde bir bağımsız değişken olmalıdır  
+1051: Setter işlevlerinde bir bağımsız değişken olmalıdır  
   
- Ayarlayıcı işlevi için yalnızca bir bağımsız olması gerekir.
+ Bir ayarlayıcı işlevine yönelik tek bir bağımsız değişken olmalıdır.

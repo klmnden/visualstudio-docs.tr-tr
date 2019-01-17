@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793520"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348314"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug Arabirimi
-Akıllı ana uygulama `IActiveScriptSiteDebug` belge yönetimi gerçekleştirmek ve hata ayıklamaya katılmak için arabirim. `IActiveScriptSite` Nesnesi genellikle uygulaması sağlar `IActiveScriptSiteDebug` arabirimi. Bu yapıldığında, çağrı `IActiveScriptSite::QueryInterface` elde etmek için yöntemi `IActiveScriptSiteDebug` arabirimi.  
+Akıllı ana uygulama `IActiveScriptSiteDebug` belge yönetimi gerçekleştirmek ve hata ayıklamaya katılmak için arabirim. `IActiveScriptSite` Nesne, genellikle uygulanmasını sağlar `IActiveScriptSiteDebug` arabirimi. Bu yapıldığında çağrı `IActiveScriptSite::QueryInterface` elde etmek için yöntemi `IActiveScriptSiteDebug` arabirimi.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IActiveScriptSiteDebug` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IActiveScriptSiteDebug` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Temsilci seçme için dil altyapısı tarafından kullanılan `IDebugCodeContext::GetSourceContext`.|  
-|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Bu komut dosyasını site ile ilişkili hata ayıklama uygulama nesnesi döndürür.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Hangi komut dosyası altında belgeleri eklenmelidir uygulama düğümünü alır.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Çalışma zamanı hataların nasıl işleneceğini belirlemek bir akıllı ana bilgisayar sağlar.|
+|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Bu betik sitesiyle ilişkili hata ayıklama uygulama nesnesi döndürür.|  
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Altında hangi betiği belgelerin eklenmesi gereken uygulama düğümünü alır.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Çalışma zamanı hatalarının nasıl işleneceğini belirlemek bir akıllı ana bilgisayar sağlar.|

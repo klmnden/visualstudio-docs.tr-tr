@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdd71a427a8ef2c57684eef75a044d0cedf42415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ac2d6dd0da14be5a624cff0b55985770b8d70fdf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796241"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344063"
 ---
 # <a name="isetnextstatement-interface"></a>ISetNextStatement Arabirimi
-Bu arabirim geçerli deyimi güncelleştirmek işlem hata ayıklama Yöneticisi izin vermek için bir yorumlayıcısı tarafından uygulanır. Bir yığın çerçeve nesneden uygulanır ve bu arabirimi QueryInterface üzerinden PDM alır.  
+Bu arabirim, geçerli deyimin güncelleştirmek işlem hata ayıklama Yöneticisi izin vermek için yorumlayıcıyı tarafından uygulanır. Bir yığın çerçevesi nesneden uygulanır ve QueryInterface aracılığıyla bu arabirim PDM alır.  
   
- Arabirim yürütülecek next deyimi belirler yürütme noktası ayarlamak için kullanışlı yöntemler sağlar.  
+ arabirim belirler yürütülecek sonraki deyimin yürütme noktasını ayarlamak için kullanışlı yöntemler sağlar.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `ISetNextStatement` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `ISetNextStatement` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[ISetNextStatement::CanSetNextStatement](../../winscript/reference/isetnextstatement-cansetnextstatement.md)|Belirtilen konuma yürütme noktası ayarlanmış olup olmadığını belirler.|  
-|[ISetNextStatement::SetNextStatement](../../winscript/reference/isetnextstatement-setnextstatement.md)|Yürütme noktası belirtilen konuma ayarlar.|
+|[ISetNextStatement::CanSetNextStatement](../../winscript/reference/isetnextstatement-cansetnextstatement.md)|Yürütme noktasını belirtilen konuma ayarlayıp ayarlayamayacağını belirler.|  
+|[ISetNextStatement::SetNextStatement](../../winscript/reference/isetnextstatement-setnextstatement.md)|Yürütme noktasını belirtilen konuma ayarlar.|

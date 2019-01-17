@@ -24,14 +24,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ddf7ae6d3328f00ea3d143251f7fa44e364560a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788678"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344505"
 ---
 # <a name="false-windows-script-technologies"></a>False (Windows Betik Teknolojileri)
-**Yanlış** anahtar sözcüğü 0'a eşit bir değer içeriyor.  
+**False** anahtar sözcüğü, 0'a eşit bir değere sahip.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [TRUE anahtar sözcüğü](../../javascript/misc/true-keyword.md)
+ [True Anahtar Sözcüğü](../../javascript/misc/true-keyword.md)

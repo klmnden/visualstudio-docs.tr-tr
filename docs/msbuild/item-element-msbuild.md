@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908286"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345623"
 ---
 # <a name="item-element-msbuild"></a>Öğe unsuru (MSBuild)
 Kullanıcı tanımlı bir öğe ve meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
@@ -83,7 +83,7 @@ MSBuild 15.1 veya sonraki sürümlerde, herhangi bir meta veri öznitelikleri ge
 
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[Itemmetadata](../msbuild/itemmetadata-element-msbuild.md)|Öğe meta veri değeri içeren bir kullanıcı tanımlı meta veri, öğe anahtarı. Sıfır veya daha fazla olabilir `ItemMetadata` öğeleri bir öğe.|  
+|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Öğe meta veri değeri içeren bir kullanıcı tanımlı meta veri, öğe anahtarı. Sıfır veya daha fazla olabilir `ItemMetadata` öğeleri bir öğe.|  
 
 ### <a name="parent-elements"></a>Üst öğeler  
 
@@ -122,5 +122,5 @@ Aşağıdaki kod örneği kullanma işlemini gösterir `Update` adlı bir dosyay
 
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Öğeleri](../msbuild/msbuild-items.md)   
- [MSBuild özellikleri](../msbuild/msbuild-properties.md)   
+ [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md) [MSBuild özellikleri](../msbuild/msbuild-properties.md)   
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

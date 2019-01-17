@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 89f773ee24c2b50499d7d89bf590250f599b0edb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794888"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349952"
 ---
 # <a name="ienumremotedebugapplicationthreads-interface"></a>IEnumRemoteDebugApplicationThreads Arabirimi
-Bir uygulama içinde çalışan iş parçacıkları numaralandırır.  
+Bir uygulamada çalışan iş parçacıkları numaralandırır.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IEnumRemoteDebugApplicationThreads` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IEnumRemoteDebugApplicationThreads` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayısını alır.|  
-|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Bir numaralandırma sırası segmentlerinde belirtilen sayıda atlar.|  
-|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Bir numaralandırma sırasını başlangıç durumuna sıfırlar.|  
+|[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Belirtilen bir Segmentte bir sabit listesi sırası sayısını alır.|  
+|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.|  
+|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
 |[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Geçerli Numaralandırıcı ile aynı duruma içeren bir numaralandırıcı oluşturur.|

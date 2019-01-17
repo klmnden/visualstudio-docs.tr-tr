@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16782329de6268b309710e60e707d629fd9929a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74662b6cfcfb641a59ac93c862bd38c6fa16a900
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794969"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346780"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-Hata ayıklayıcısı seçeneklerini güncelleştirmek için çağrılır. Sonra bu yöntem çağrılmalıdır [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) yöntemi, varsayılan seçenekleri otomatik olarak sıfırlar. Seçenekleri varsayılan 0 (SDO_NONE).  
+Hata ayıklayıcısı Seçenekleri güncelleştirmek için çağrıldı. Bu yöntem, sonra çağrılmalıdır [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) yöntemi için varsayılan seçenekleri otomatik olarak sıfırlar. Seçenekleri varsayılan olarak 0 (SDO_NONE).  
   
 > [!IMPORTANT]
 >  [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -35,11 +35,11 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
   
 #### <a name="parameters"></a>Parametreler  
  `mask`  
- [Scrıpt_debugger_optıons listelemesi](../../winscript/reference/script-debugger-options-enumeration.md) maske.  
+ [Scrıpt_debugger_optıons listelemesi](../../winscript/reference/script-debugger-options-enumeration.md) maskesi.  
   
  `value`  
  [Scrıpt_debugger_optıons listelemesi](../../winscript/reference/script-debugger-options-enumeration.md) değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Iremotedebugapplication arabirimi](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Iremotedebugapplication110 arabirimi](../../winscript/reference/iremotedebugapplication110-interface.md)
+ [IRemoteDebugApplication110 Arabirimi](../../winscript/reference/iremotedebugapplication110-interface.md)

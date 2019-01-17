@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794444"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344048"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents Arabirimi
-Sinyalleri çalışmasını değişiklikleri Makine Hata Ayıklama Yöneticisi tarafından tutulan uygulama listesi. Bu arabirim, uygulamaların dinamik bir listesini görüntülemek için IDE hata ayıklayıcı tarafından kullanılabilir.  
+Sinyalleri çalışmasını değişiklikleri uygulama listesi Makine Hata Ayıklama Yöneticisi tarafından korunur. Bu arabirim, uygulamaların dinamik bir listesini görüntülemek için IDE hata ayıklayıcı tarafından kullanılabilir.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IMachineDebugManagerEvents` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IMachineDebugManagerEvents` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Çalışan bir uygulama eklendiğinde olay işleme uygulama listesi.|  
-|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Bir uygulamanın çalışmasını kaldırıldığında olay işleme uygulama listesi.|
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Çalışan bir uygulama eklendiğinde, olayı işleyen uygulama listesi.|  
+|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Bir uygulamanın çalışmasını kaldırıldığında olayı işleyen uygulama listesi.|

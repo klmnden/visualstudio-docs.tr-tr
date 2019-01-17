@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 46e6525a79ed866b9c714913f11fcbbe13066208
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788744"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346130"
 ---
 # <a name="number-expected"></a>Sayı bekleniyor
-Çağrılacak çalıştı **Number.prototype.toString** veya **Number.prototype.valueOf** dışında bir türde bir nesne üzerinde yöntemi **numarası**. Bu tür çağırma nesne türünde olmalıdır **numarası**.  
+Çağırmaya çalıştığınız **Number.prototype.toString** veya **Number.prototype.valueOf** yöntemi dışında bir türde bir nesne üzerinde **numarası**. Bu tür çağrısının nesne türünde olmalıdır **numarası**.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Yalnızca çağırma **Number.prototype.toString** veya **Number.prototype.valueOf** türündeki nesneleri yöntemlere **numarası**.  
+-   Yalnızca çağırma **Number.prototype.toString** veya **Number.prototype.valueOf** türünden nesnelerin yöntemleri **numarası**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayı nesnesi](../../javascript/reference/number-object-javascript.md)   
- [Number özelliği (hata)](../../javascript/reference/number-property-error-javascript.md)
+ [number Özelliği (Hata)](../../javascript/reference/number-property-error-javascript.md)

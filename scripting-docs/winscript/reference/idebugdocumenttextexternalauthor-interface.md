@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f85ef798a6507c92130cbddae98de87a9924415
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794264"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344237"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor Arabirimi
-Kaynak dosya değiştirildiğinde belge bildirerek dosya tabanlı hata ayıklayıcı belgeleri güvenli bir şekilde düzenlemek dış düzenleyicileri sağlar.  
+Dış düzenleyicilerin güvenli bir şekilde belge kaynak dosya değiştirildiğinde bildirerek dosya tabanlı hata ayıklayıcısı belgeleri düzenlemesine izin verir.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IDebugDocumentTextExternalAuthor` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IDebugDocumentTextExternalAuthor` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugDocumentTextExternalAuthor::GetPathName](../../winscript/reference/idebugdocumenttextexternalauthor-getpathname.md)|Belgenin tam yolunu ve dosya adını döndürür.|  
+|[IDebugDocumentTextExternalAuthor::GetPathName](../../winscript/reference/idebugdocumenttextexternalauthor-getpathname.md)|Belgenin tam yolu ve dosya adını döndürür.|  
 |[IDebugDocumentTextExternalAuthor::GetFileName](../../winscript/reference/idebugdocumenttextexternalauthor-getfilename.md)|Yol bilgisi olmadan belgenin adını döndürür.|  
-|[IDebugDocumentTextExternalAuthor::NotifyChanged](../../winscript/reference/idebugdocumenttextexternalauthor-notifychanged.md)|Ana belge kaynağı değiştiğini bildirir.|
+|[IDebugDocumentTextExternalAuthor::NotifyChanged](../../winscript/reference/idebugdocumenttextexternalauthor-notifychanged.md)|Ana belge kaynağı olarak değiştiğini bildirir.|

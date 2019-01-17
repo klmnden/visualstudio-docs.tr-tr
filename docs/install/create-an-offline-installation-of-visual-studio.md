@@ -1,7 +1,7 @@
 ---
 title: Çevrimdışı yüklemesini oluşturma
 description: Visual Studio bir güvenilir bir internet bağlantısı veya düşük bant genişliğine sahip olduğunuzda çevrimdışı yüklemeyi öğrenin.
-ms.date: 08/28/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be6077d89ffc302ae556c94ed270f8cfd760c38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952406"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345259"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017'in çevrimdışı yüklemesini oluşturma
 
@@ -65,6 +65,9 @@ Bu adımı tamamlamak için bir internet bağlantısı olması gerekir.
 
 Bir komut istemi açın ve aşağıdaki örneklerde komutlardan birini kullanın. Visual Studio Community sürümünü kullanıyorsanız, burada listelenen örnekler varsayılır; komut sürümünüz için uygun şekilde ayarlayın.
 
+> [!TIP]
+> Bir hatayı önlemek için tam yükleme yolu 80 karakterden uzun daha az olduğundan emin olun.
+
 - .NET web ve .NET masaüstü geliştirme için çalıştırın:
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
@@ -81,10 +84,10 @@ Bir komut istemi açın ve aşağıdaki örneklerde komutlardan birini kullanın
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-İngilizce dışında bir dil yüklemek isterseniz değiştirme `en-US` yerel için [dil yerel ayarlar listesini](#list-of-language-locales). Ardından, [kullanılabilir iş yükleri ve bileşenlerin listesini](workload-and-component-ids.md) yükleme önbelleğiniz daha fazla özelleştirmek için.
+  > [!NOTE]
+  > Visual Studio 2017 Düzen tamamlanamadı, en az 35 GB disk alanı gerektirir. Bkz: [Visual Studio 2017'yi yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) yüklemek istediğiniz bileşenleri ile yalnızca bir düzen oluşturma hakkında bilgi için.
 
-> [!IMPORTANT]
-> Visual Studio 2017 Düzen tamamlanamadı, en az 35 GB disk alanı gerektirir ve indirmek için biraz zaman alabilir. Bkz: [Visual Studio 2017'yi yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) yüklemek istediğiniz bileşenleri ile yalnızca bir düzen oluşturma konusunda bilgi için.
+İngilizce dışında bir dil yüklemek isterseniz değiştirme `en-US` yerel için [dil yerel ayarlar listesini](#list-of-language-locales). Ardından, [kullanılabilir iş yükleri ve bileşenlerin listesini](workload-and-component-ids.md) yükleme önbelleğiniz daha fazla özelleştirmek için.
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Adım 3 - yerel önbellekten Visual Studio yükleme
 

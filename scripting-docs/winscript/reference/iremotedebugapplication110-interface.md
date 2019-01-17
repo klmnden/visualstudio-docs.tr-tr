@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d384cea22b79b2a7ca9af3424d053fb3062d79a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f280e2b869a3046ecb2d3fac37facdcc1bfeb7fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795017"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349887"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110 Arabirimi
-Komut dosyası hata ayıklayıcıları tarafından çağrılır ve işlem arayanlar yeni özellikler sağlamak için kullanılır.  
+Betik hata ayıklayıcıları tarafından çağrılabilir ve işlem içi çağıranlar yeni özellikler sağlamak için kullanılır.  
   
 > [!IMPORTANT]
 >  Bu arabirim PDM v11.0 ve sonraki sürümler tarafından uygulanır. activdbg100.h içinde bulunur.  
@@ -32,6 +32,6 @@ Komut dosyası hata ayıklayıcıları tarafından çağrılır ve işlem arayan
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|Hata ayıklayıcısı seçeneklerini güncelleştirmek için çağrılır. Seçenekleri varsayılan 0 (SDO_NONE).|  
-|[IRemoteDebugApplication110::GetCurrentDebuggerOptions](../../winscript/reference/iremotedebugapplication110-getcurrentdebuggeroptions.md)|Etkinleştirilen seçenekleri geçerli kümesini döndürür.|  
-|[IRemoteDebugApplication110::GetMainThread](../../winscript/reference/iremotedebugapplication110-getmainthread.md)|Ana iş parçacığı SetSite çağrısı konakları için döndürür.|
+|[IRemoteDebugApplication110::SetDebuggerOptions](../../winscript/reference/iremotedebugapplication110-setdebuggeroptions.md)|Hata ayıklayıcısı Seçenekleri güncelleştirmek için çağrıldı. Seçenekleri varsayılan olarak 0 (SDO_NONE).|  
+|[IRemoteDebugApplication110::GetCurrentDebuggerOptions](../../winscript/reference/iremotedebugapplication110-getcurrentdebuggeroptions.md)|Geçerli etkin seçenekleri kümesi döndürür.|  
+|[IRemoteDebugApplication110::GetMainThread](../../winscript/reference/iremotedebugapplication110-getmainthread.md)|Ana iş parçacığı SetSite çağıran ana bilgisayarlar için döndürür.|

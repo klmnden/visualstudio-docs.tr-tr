@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802348"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347430"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>Normal ifadede ')' bekleniyor (JavaScript)
 Bir normal ifade yakalama, onaylama veya grup oluşturmaya çalıştı, ancak kapatma parantezinden içermiyordu. Parantez içinde normal ifadeler birkaç amacı vardır. Alt ifadeler, onaylamalar belirtin veya öğeler tarafından tek bir birim olarak davranılıp desenleri birlikte gruplanacağını yakalamak için öncelikle, kullanılan *, +,?, vs.  

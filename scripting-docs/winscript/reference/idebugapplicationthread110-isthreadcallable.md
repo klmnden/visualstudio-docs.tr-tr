@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34e2c45d7e94c72ade62780f46f4b5c7c22405e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f3edf7e8a1495be99d2c5130c307acae92a96b11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793826"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344229"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Bu iş parçacığı SynchronousCallInThread gibi mekanizmaları geçiş PDM'ın iş parçacığı kullanılarak yapılan çağrıları işleyecek bir durumda olup olmadığını belirler.  
+Bu iş parçacığı PDM'ın iş parçacığı SynchronousCallInThread rehberlik gibi keşif mekanizmaları geçiş kullanarak yapılan çağrılar işleyecek bir durumda olup olmadığını belirler.  
   
 > [!IMPORTANT]
 >  [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -35,7 +35,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Parametreler  
  `pfIsCallable`  
- [out] `true` iş parçacığı aksi aranabilir, ise `false`.  
+ [out] `true` iş parçacığı çağrılabilir, yanlışsa `false`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Idebugapplicationthread110 arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md)
+ [IDebugApplicationThread110 Arabirimi](../../winscript/reference/idebugapplicationthread110-interface.md)

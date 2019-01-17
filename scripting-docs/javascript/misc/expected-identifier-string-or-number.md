@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855137"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345246"
 ---
 # <a name="expected-identifier-string-or-number"></a>Tanımlayıcı, dize veya sayı bekleniyor
 Değişmez değer sözdizimi yanlış bir nesne değişmez değeri bildirmek için kullanılır. Nesne sabit değeri özelliklerini, bir tanımlayıcı, dize veya sayı olması gerekir. Özellik: değer eşlerini, parantez içinde kapatılan tüm virgülle ayrılmış bir listesini nesne sabit değeri ("nesne başlatıcı" olarak da bilinir) oluşur. Örneğin:  

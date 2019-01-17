@@ -14,30 +14,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a03b959a7eb09f3b85530bbba07d1d2dc7f8948a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4d315f4ff99d8de6d4e29a40f3d5e134d1274062
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795041"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347092"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie Arabirimi
-Benzer şekilde `IMachineDebugManager` arabirimi, `IMachineDebugManagerCookie` arabirimi hata ayıklama tanımlama bilgilerini destekler.  
+Benzer şekilde `IMachineDebugManager` arabirimi `IMachineDebugManagerCookie` arabirimi hata ayıklama tanımlama bilgilerini destekler.  
   
- Bu arabirim (ile birlikte `IDebugCookie` arabirimi) betiğinin hata ayıklayıcı bu komut dosyalarını izlemek, gerek kalmadan bir komut dosyası hata ayıklayıcı işlem çalıştırılmasına izin verin.  
+ Bu arabirim (ile birlikte `IDebugCookie` arabirimi) hata ayıklayıcı bu komut dosyalarını izlemek, gerek kalmadan bir komut dosyası hata ayıklayıcı işlemi çalıştırmaya betiklere izin vermek.  
   
- Bir komut dosyası hata ayıklayıcısı çağırır `IDebugCookie::SetDebugCookie` yöntemi üzerinde işlem hata ayıklama Yöneticisi (PDM). Ardından, yöntemleri kullanılarak PDM eklemek veya kaldırmak için veya gelen Makine Hata Ayıklama Yöneticisi (MDM), bir komut dosyası uygulama için herhangi bir istek yanı sıra bu tanımlama bilgisi gönderir `IMachineDebugManagerCookie` arabirimi. MDM, ardından her hata ayıklayıcı dışında bu tanımlama bilgisi varsa bir değişikliğin bildirir.  
+ Bir komut dosyası hata ayıklayıcı çağırır `IDebugCookie::SetDebugCookie` yöntemi üzerinde işlem hata ayıklama Yöneticisi (PDM). Ardından, PDM yöntemlerini kullanarak bu tanımlama bilgisi eklemek veya kaldırmak için veya gelen Makine Hata Ayıklama Yöneticisi'ni (MDM), bir betik uygulaması için herhangi bir istekle birlikte gönderir `IMachineDebugManagerCookie` arabirimi. MDM sonra her hata ayıklayıcı konusu tanımlama bilgisine sahip dışındaki bir değişikliği bildirir.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IUnknown`, `IMachineDebugManagerCookie` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IUnknown`, `IMachineDebugManagerCookie` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Çalışan bir uygulamaya ekler uygulama listesi.|  
-|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Çalışan uygulamalar geçerli listesinin bir numaralandırıcı döndürür.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Çalışan bir uygulama ekler uygulama listesi.|  
+|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Çalışan uygulamalar geçerli listenin bir numaralandırıcı döndürür.|  
 |[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Bir uygulamanın çalışmasını kaldırır uygulama listesi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Imachinedebugmanager arabirimi](../../winscript/reference/imachinedebugmanager-interface.md)   
- [Idebugcookie arabirimi](../../winscript/reference/idebugcookie-interface.md)
+ [IDebugCookie Arabirimi](../../winscript/reference/idebugcookie-interface.md)

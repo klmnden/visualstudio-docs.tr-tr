@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794120"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344076"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>IDebugDocumentTextAuthor Arabirimi
-Bu destek düzenleme metin belgeleri tarafından sağlanır.  
+Metin belgeleri tarafından düzenleme desteği sağlanır.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IDebugDocumentText`, `IDebugDocumentTextAuthor` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IDebugDocumentText`, `IDebugDocumentTextAuthor` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Belgeye yeni bir metin ekler.|  
+|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|Yeni metin belgeye ekler.|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|Metin belgeden kaldırır.|  
-|[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Belgedeki metin yerini alır.|
+|[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|Belge içindeki metni değiştirir.|

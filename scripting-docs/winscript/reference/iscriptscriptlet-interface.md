@@ -14,28 +14,28 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3fa3253997d3a09a7170f3795bf8a7bbf8a182c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3b7c4af7769a1a2851e9be4e2639a324a3c06fb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796298"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345922"
 ---
 # <a name="iscriptscriptlet-interface"></a>IScriptScriptlet Arabirimi
-Arabirimini uygulayan bir nesneye `IScriptScriptlet` arabirimi, olay işleyici komut dosyasını temsil eder.  
+Uygulayan bir nesne `IScriptScriptlet` arabirimi, olay işleyici komut dosyasını temsil eder.  
   
- Kaynağından devralındı yöntemleri yanı sıra `IScriptEntry`, `IScriptScriptlet` arabirimi aşağıdaki yöntemleri sunar.  
+ Devralınan yöntemleri yanı sıra `IScriptEntry`, `IScriptScriptlet` arabirimi aşağıdaki yöntemleri sunar.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Kod parçacığı ile ilişkili olay adını döndürür.|  
-|[Iscriptscriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Kod parçacığı ile ilişkili basit olay adını döndürür. Bu herhangi bir boşluk içermeyen bir Tek sözcüklü adıdır.|  
-|[IScriptScriptlet::GetSubItemName](../../winscript/reference/iscriptscriptlet-getsubitemname.md)|Son tanımlayıcı Resimli 's nesne ana bilgisayarın tam adı döndürür.|  
-|[IScriptScriptlet::SetEventName](../../winscript/reference/iscriptscriptlet-seteventname.md)|Kod parçacığı ile ilişkili olay adını ayarlar.|  
-|[IScriptScriptlet::SetSimpleEventName](../../winscript/reference/iscriptscriptlet-setsimpleeventname.md)|Kod parçacığı ile ilişkili basit olay adını ayarlar. Bu herhangi bir boşluk içermeyen bir Tek sözcüklü adıdır.|  
-|[IScriptScriptlet::SetSubItemName](../../winscript/reference/iscriptscriptlet-setsubitemname.md)|Son tanımlayıcı Resimli 's nesne ana bilgisayarın tam adını ayarlar.|  
+|[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Kod oluşturma yöntemiyle ilişkili olay adını döndürür.|  
+|[Iscriptscriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Kod oluşturma yöntemiyle ilişkili basit olay adını döndürür. Bu, herhangi bir boşluk içermeyen Tek sözcüklü adıdır.|  
+|[IScriptScriptlet::GetSubItemName](../../winscript/reference/iscriptscriptlet-getsubitemname.md)|Son tanımlayıcı scriptlet'ın nesne konağının tam adını döndürür.|  
+|[IScriptScriptlet::SetEventName](../../winscript/reference/iscriptscriptlet-seteventname.md)|Kod oluşturma yöntemiyle ilişkili olay adını ayarlar.|  
+|[IScriptScriptlet::SetSimpleEventName](../../winscript/reference/iscriptscriptlet-setsimpleeventname.md)|Kod oluşturma yöntemiyle ilişkili basit olay adını ayarlar. Bu, herhangi bir boşluk içermeyen Tek sözcüklü adıdır.|  
+|[IScriptScriptlet::SetSubItemName](../../winscript/reference/iscriptscriptlet-setsubitemname.md)|Son tanımlayıcı scriptlet'ın nesne konağının tam adını ayarlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası yazma arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)
+ [Etkin Betik Yazma Arabirimleri](../../winscript/reference/active-script-authoring-interfaces.md)

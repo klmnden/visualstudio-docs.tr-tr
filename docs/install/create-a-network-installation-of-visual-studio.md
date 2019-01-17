@@ -1,7 +1,7 @@
 ---
 title: Bir ağ tabanlı yüklemesini oluşturma
 description: Visual Studio içinde bir kuruluş dağıtımı için bir ağ yükleme noktasını oluşturmayı öğrenin.
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966738"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349926"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ oluşturun
 
@@ -30,7 +30,7 @@ Genellikle, bir kuruluş yöneticisi istemci iş istasyonları için dağıtım 
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Visual Studio önyükleyicisini yükleyin
 
-**İndirme** istediğiniz Visual Studio sürümü. Tıkladığınızdan emin olun **Kaydet**ve ardından **Klasör Aç**.
+İstediğiniz Visual Studio sürümünü indirin. Tıkladığınızdan emin olun **Kaydet**ve ardından **Klasör Aç**.
 
 Kurulumunuzu yürütülebilir&mdash;veya daha özel bir önyükleyici dosya&mdash;aşağıdakilerden biriyle eşleşmesi gerekir.
 
@@ -115,11 +115,15 @@ Varolan bir düzen bir tam düzeni güncelleştirmek istiyorsanız, kullanın al
 
 Yöneticiler, bir yükleme betiğinin bir parçası istemci iş istasyonlarında Visual Studio dağıtabilirsiniz. Veya yönetici haklarına sahip kullanıcılar, makinede Visual Studio'yu yüklemek için doğrudan paylaşımından Kurulumu çalıştırın.
 
-- Kullanıcılar, çalıştırarak yükleyebilirsiniz: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Yöneticiler, katılımsız modda çalıştırarak yükleyebilirsiniz: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* Kullanıcılar, çalıştırarak yükleyebilirsiniz: <br>```\\server\products\VS2017\vs_enterprise.exe```
+* Yöneticiler, katılımsız modda çalıştırarak yükleyebilirsiniz: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> Bir hatayı önlemek için tam yükleme yolu 80 karakterden uzun daha az olduğundan emin olun.
+>
 > [!TIP]
 > Bir toplu iş dosyası bir parçası olarak çalıştırıldığında `--wait` seçeneği sağlar `vs_enterprise.exe` işlem çıkış kodu döndürür önce yükleme işlemi tamamlanana kadar bekler. Daha fazla tamamlanmış bir yüklemeyi eylemleri gerçekleştirmek Kurumsal Yönetici isterse kullanışlıdır (örneğin, [yüklemenin başarılı olabilmesi için bir ürün anahtarını uygulayan](automatically-apply-product-keys-when-deploying-visual-studio.md)) ancak yükleme işlemek için tamamlanıncaya kadar beklemeniz gerekir Bu yükleme dönüş kodu.  Kullanmıyorsanız, `--wait`, `vs_enterprise.exe` işlem çıkar önce yükleme tamamlandıktan ve yükleme işleminin durumunu temsil etmez, hatalı çıkış kodu döndürür.
+
 
 Bir düzenden yükleme sırasında düzeninde yüklü içeriği alınır. Düzende değil bir bileşeni seçtiğinizde, ancak bunu internet'ten gerekilir.  Visual Studio kurulumunu kullanın, düzende eksik herhangi bir içerik indirmesini önlemek istiyorsanız `--noWeb` seçeneği.  Varsa `--noWeb` kullanılır ve düzenini seçili yüklenmesi başarısız kurulum için herhangi bir içeriği eksik.
 

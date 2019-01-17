@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792029"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349029"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS Numaralandırması
 Uygulamalar ve iş parçacıkları için geçerli hata ayıklama durumunu gösterir.  
@@ -38,19 +38,19 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |Üye|Değer|Açıklama|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Dil altyapısı hemen tüm iş parçacıklarında BREAKREASON_DEBUGGER_BLOCK ile çalışmamasına neden.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Dil altyapısı hemen BREAKREASON_DEBUGGER_HALT ile kesme.|  
-|APPBREAKFLAG_STEP|0x00010000|Dil altyapısı hemen BREAKREASON_STEP sürüm parçacığıyla bozan.|  
-|APPBREAKFLAG_NESTED|0x00020000|Bir kesme noktası üzerindeki iç içe geçmiş yürütmesinde uygulamasıdır.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Hata ayıklayıcı kaynak düzeyinde atlama.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Hata ayıklayıcı bayt kodu düzeyinde atlama.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Hata ayıklayıcı makine düzeyinde atlama.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Adım türleri Finansman maske.|  
-|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Bir kesme noktası devam ediyor.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Dil altyapısı ile BREAKREASON_DEBUGGER_BLOCK tüm iş parçacıkları üzerinde kesme hemen.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Dil altyapısı ile BREAKREASON_DEBUGGER_HALT hemen kesilmesine.|  
+|APPBREAKFLAG_STEP|0x00010000|Dil altyapısı hemen BREAKREASON_STEP ile Adımlama iş parçacığında Kes.|  
+|APPBREAKFLAG_NESTED|0x00020000|Bir kesme noktasında iç içe geçmiş yürütmesinde uygulamasıdır.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Hata ayıklayıcı kaynak düzeyinde Adımlama.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Hata ayıklayıcı bayt kod düzeyinde Adımlama.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Hata ayıklayıcı, makine düzeyinde Adımlama.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Hesaba katacak şekilde adım türleri için maske.|  
+|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Bir kesme noktası işlemi devam ediyor.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bazı bayrakları diğer bayraklar hata ayıklayıcı sürüm modu belirtirken dil motorları sonraki fırsatta bölün belirtin.  
+ Bazı bayrakları diğer bayraklar atlama modu hata ayıklayıcının belirtirken dil altyapıları ilk fırsatta sonu belirtin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
- [BREAKREASON numaralandırması](../../winscript/reference/breakreason-enumeration.md)
+ [BREAKREASON Sabit Listesi](../../winscript/reference/breakreason-enumeration.md)

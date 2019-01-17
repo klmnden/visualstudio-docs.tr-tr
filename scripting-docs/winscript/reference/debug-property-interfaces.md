@@ -15,34 +15,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45800a1c8fa570299dc8950b3e8979fe949faaf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791867"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344609"
 ---
 # <a name="debug-property-interfaces"></a>Hata Ayıklama Özelliği Arabirimleri
-Bu bölümde listelenen arabirimler DbgProp.h üstbilgi dosyası sağlar.  
+Bu bölümde listelenen arabirimler DbgProp.h üstbilgi dosyasını sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- Aşağıdaki arabirimleri, yapılar ve numaralandırmalar hiyerarşik ayıklanacak uygulamanın özelliklerini açıklamaktadır:  
+ Aşağıdaki arabirimleri, yapılar ve numaralandırmalar hiyerarşik özelliklerini ayıklanan uygulamayı açıklar:  
   
--   [Idebugproperty arabirimi](../../winscript/reference/idebugproperty-interface.md)  
+-   [IDebugProperty Arabirimi](../../winscript/reference/idebugproperty-interface.md)  
   
--   [Idebugextendedproperty arabirimi](../../winscript/reference/idebugextendedproperty-interface.md)  
+-   [IDebugExtendedProperty Arabirimi](../../winscript/reference/idebugextendedproperty-interface.md)  
   
--   [Ienumdebugpropertyınfo arabirimi](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+-   [IEnumDebugPropertyInfo Arabirimi](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
   
--   [Ienumdebugextendedpropertyınfo arabirimi](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+-   [IEnumDebugExtendedPropertyInfo Arabirimi](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
   
--   [Iperpropertybrowsing2 arabirimi 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
+-   [IPerPropertyBrowsing2 Arabirimi 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
   
--   [Idebugpropertyenumtype_all arabirimi](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+-   [IDebugPropertyEnumType_All Arabirimi](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
   
--   [Debugpropertyınfo yapısı](../../winscript/reference/debugpropertyinfo-structure.md)  
+-   [DebugPropertyInfo Yapısı](../../winscript/reference/debugpropertyinfo-structure.md)  
   
--   [Extendeddebugpropertyınfo yapısı](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
+-   [ExtendedDebugPropertyInfo Yapısı](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
   
 -   [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
   

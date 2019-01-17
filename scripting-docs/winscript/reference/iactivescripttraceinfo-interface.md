@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb286b60bb3c883ae0809882a04b8be96fd9a560
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ec8ef67220a70e8eb38ca8f66f7397337fb87a9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793574"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349198"
 ---
 # <a name="iactivescripttraceinfo-interface"></a>IActiveScriptTraceInfo Arabirimi
-İzlemeyi durdurmak ve başlatmak için yöntemleri sağlar.  
+İzlemeyi durdurmak ve başlatmak için yöntemler sağlar.  
   
 ## <a name="methods"></a>Yöntemler  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Iactivescripttraceınfo::startscripttracing yöntemi](../../winscript/reference/iactivescripttraceinfo-startscripttracing-method.md)|Komut dosyası izlemeyi başlatır.|  
-|[Iactivescripttraceınfo::stopscripttracing yöntemi](../../winscript/reference/iactivescripttraceinfo-stopscripttracing-method.md)|İzlemeyi durdurur.|
+|[IActiveScriptTraceInfo::StartScriptTracing Metodu](../../winscript/reference/iactivescripttraceinfo-startscripttracing-method.md)|Betik izleme başlatır.|  
+|[IActiveScriptTraceInfo::StopScriptTracing Metodu](../../winscript/reference/iactivescripttraceinfo-stopscripttracing-method.md)|İzlemeyi durdurur.|

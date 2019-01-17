@@ -1,5 +1,5 @@
 ---
-title: Tanıtıcı (JavaScript) | Microsoft Docs
+title: Beklenen tanımlayıcı (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788690"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349237"
 ---
 # <a name="expected-identifier-javascript"></a>Tanımlayıcı bekleniyor (JavaScript)
-Tanımlayıcı dışında bir bağlamında, bir gerekli olduğu kullanılır. Bir tanımlayıcı olabilir:  
+Bir tanımlayıcı dışında bir şey, bir bağlamda, bir gerekli olduğu kullanılır. Bir tanımlayıcı olabilir:  
   
 -   bir değişken  
   
@@ -36,11 +36,11 @@ Tanımlayıcı dışında bir bağlamında, bir gerekli olduğu kullanılır. Bi
   
 -   bir dizi  
   
--   veya işlev adı.  
+-   veya bir işlev adı.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Tanımlayıcı eşittir işaretinden solunda görünür şekilde ifadeyi değiştirin.  
+-   Bir tanımlayıcı eşittir işareti solunda görünecek şekilde ifadeyi değiştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizileri kullanma](../../javascript/advanced/using-arrays-javascript.md)
+ [Dizileri Kullanma](../../javascript/advanced/using-arrays-javascript.md)

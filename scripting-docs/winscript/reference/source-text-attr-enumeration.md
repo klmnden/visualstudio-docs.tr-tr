@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f21bbfacc4918ff0e67731d5efd5521f371cbdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dc5e7a7bb6c91bd852a8fd2024b708166c085209
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796454"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349783"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR Numaralandırması
 Kaynak metnin tek bir karakterinin özniteliklerini açıklar.  
@@ -34,22 +34,22 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
   
 |Üye|Değer|Açıklama|  
 |------------|-----------|-----------------|  
-|SOURCETEXT_ATTR_KEYWORD|0X0001|Dil anahtar sözcük, örneğin, VBScript anahtar sözcüğü parçası karakterdir `While`.|  
-|SOURCETEXT_ATTR_COMMENT|0X0002|Karakter açıklama bloğu bir parçasıdır.|  
-|SOURCETEXT_ATTR_NONSOURCE|0X0004|Karakter derlenmiş dil kaynak metni parçası değildir. Örneğin, bir betik bloğu çevreleyen HTML.|  
-|SOURCETEXT_ATTR_OPERATOR|0X0008|Karakter dil işleci bir parçasıdır. Örneğin:, aritmetik işleç  **+** .|  
-|SOURCETEXT_ATTR_NUMBER|0x0010|Karakter dil sayısal sabit bir parçasıdır.  Örneğin, sabit 3.14159.|  
-|SOURCETEXT_ATTR_STRING|0x0020|Karakter dil dize sabiti bir parçasıdır. Örneğin, dize "Hello World".|  
-|SOURCETEXT_ATTR_FUNCTION_START|0x0040|Bir işlev blok başlangıcı karakteri gösterir|  
+|SOURCETEXT_ATTR_KEYWORD|0x0001|Karakter, bir dil anahtar sözcüğü, örneğin, VBScript anahtar sözcük parçasıdır `While`.|  
+|SOURCETEXT_ATTR_COMMENT|0x0002|Karakter, bir açıklama bloğu bir parçasıdır.|  
+|SOURCETEXT_ATTR_NONSOURCE|0x0004|Karakter derlenmiş dil kaynak metin parçası değil. Örneğin, bir komut dosyası bloğu çevreleyen HTML.|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|Karakter, bir dil işleci bir parçasıdır. Örneğin:, aritmetik işleç **+**.|  
+|SOURCETEXT_ATTR_NUMBER|0x0010|Karakter, bir dil sayısal sabit bir parçasıdır.  Örneğin, sabit olarak 3,14159.|  
+|SOURCETEXT_ATTR_STRING|0x0020|Karakter, bir dil dizesi sabit bir parçasıdır. Örneğin, dize "Hello World".|  
+|SOURCETEXT_ATTR_FUNCTION_START|0x0040|İşlev bloğu başlangıcı karakteri gösterir|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Genellikle, `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, ve `IActiveScriptDebug::GetScriptTextAttributes` yöntemleri sürece her karakter, bir metin özniteliği döndürür:  
   
--   Yöntem SOURCETEXT_ATTR_IDENTIFIER ve SOURCETEXT_ATTR_MEMBERLOOKUP bayrakları; bu durumda döndürebilir GETATTRTYPE_DEPSCAN bayrağı ayarlandığından,  
+-   Bu durumda yöntem SOURCETEXT_ATTR_IDENTIFIER ve SOURCETEXT_ATTR_MEMBERLOOKUP bayrakları döndürebilir GETATTRTYPE_DEPSCAN bayrağı ayarlandığından,  
   
--   Yöntem SOURCETEXT_ATTR_THIS bayrağı; bu durumda döndürebilir GETATTRFLAG_THIS bayrağı ayarlandığından,  
+-   Bu durumda yöntem SOURCETEXT_ATTR_THIS bayrağı döndürebilir GETATTRFLAG_THIS bayrağı ayarlandığından,  
   
--   Yöntem SOURCETEXT_ATTR_HUMANTEXT bayrağı; bu durumda döndürebilir GETATTRFLAG_HUMANTEXT bayrağı ayarlanır.  
+-   Bu durumda yöntem SOURCETEXT_ATTR_HUMANTEXT bayrağı döndürebilir GETATTRFLAG_HUMANTEXT bayrağı ayarlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin komut dosyası hata ayıklayıcı sabitleri, numaralandırmaları ve yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+ [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

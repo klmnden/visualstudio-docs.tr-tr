@@ -20,22 +20,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788684"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346221"
 ---
 # <a name="invalid-replacer-argument"></a>Geçersiz değiştirici bağımsız değişken
-Çağırmak için bir girişimde bulunuldu `JSON.stringify` geçerli olmayan bağımsız değişkenine sahip. `replacer` Bağımsız değişkeni bir işlevi veya bir dizi olmalıdır.  
+Çağırmak için bir girişimde bulunuldu `JSON.stringify` bağımsız değişkeni geçerli değil. `replacer` Bağımsız değişkeni bir işlev veya dizi olması gerekir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Değişiklik `replacer` bağımsız değişkeni bir işlev veya bir dizi.  
+-   Değişiklik `replacer` bağımsız değişkeni bir işlev veya dizi.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kodda bir çalışma zamanı hatası neden olur `memberfilter` bir işlevi veya dizi yerine bir nesnedir.  
+ Bu örnekteki kod bir çalışma zamanı hatasına neden olur `memberfilter` bir işlev veya dizi yerine bir nesnedir.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -52,4 +52,4 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [JSON nesnesi](../../javascript/reference/json-object-javascript.md)   
  [JSON.parse işlevi](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript çalışma zamanı hataları](../../javascript/reference/javascript-run-time-errors.md)
+ [JavaScript Çalışma zamanı Hataları](../../javascript/reference/javascript-run-time-errors.md)
