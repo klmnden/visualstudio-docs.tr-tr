@@ -1,11 +1,4 @@
 ---
-ms.openlocfilehash: ae9e416186764e447065061aad4d0449eefb7b1d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348964"
----
 # ['{' bekleniyor](expected-left-curly-brace.md)
 # [Tanımlayıcı, dize veya sayı bekleniyor](expected-identifier-string-or-number.md)
 # [İşlev bekleniyor](function-expected.md)
