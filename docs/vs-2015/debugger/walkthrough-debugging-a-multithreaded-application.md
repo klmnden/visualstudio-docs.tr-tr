@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: çok iş parçacıklı uygulamada hata ayıklama | Microsoft Docs'
+title: 'İzlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -23,13 +23,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51798650"
 ---
-# <a name="walkthrough-debugging-a-multithreaded-application"></a>İzlenecek Yol: Çok İş Parçacıklı Uygulamada Hata Ayıklama
+# <a name="walkthrough-debugging-a-multithreaded-application"></a>İzlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Gelişmiş sağlar **iş parçacıkları** penceresi ve diğer kullanıcı arabirimi hata ayıklama çok iş parçacıklı uygulamalarda daha kolay hale getirmek için iyileştirmeler. Bu izlenecek yol yalnızca birkaç dakika sürer, ancak bunu tamamlamaya, çok iş parçacıklı uygulamalarda hata ayıklama için yeni arabirimi özellikleri ile alışmanızı.  
@@ -40,9 +40,9 @@ ms.locfileid: "51798650"
   
 1.  Üzerinde **dosya** menüsünde seçin **yeni** ve ardından **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+     **Yeni Proje** iletişim kutusu görünür.  
   
-2.  İçinde **proje türü**s kutusunda, tercih ettiğiniz dili: **Visual Basic**, **Visual C#**, veya **Visual C++**.  
+2.  İçinde **proje türü**s kutusunda, tercih ettiğiniz dili seçin: **Visual Basic**, **Visual C#** , veya **Visual C++**.  
   
 3.  İçinde **şablonları** kutusunda **konsol uygulaması** veya **CLR konsol uygulaması**.  
   
@@ -129,7 +129,7 @@ Thread::Sleep(3000);
 2.  Git **hata ayıklama konumu** araç çubuğu ve tıklatın **iş parçacığı** listesi.  
   
     > [!NOTE]
-    >  Bu araç tarafından üç tanınmış listeleri tanıyabilmesi: **işlem**, **iş parçacığı**, ve **yığın çerçevesi**.  
+    >  Bu araç üç tanınmış listeleri tarafından tanınmasını sağlayabilir: **İşlem**, **iş parçacığı**, ve **yığın çerçeve**.  
   
 3.  Ne kadar iş parçacığı listede göründüğüne dikkat edin.  
   
@@ -143,7 +143,7 @@ Thread::Sleep(3000);
   
 7.  İşaretçiyi, bayrak simgesinin üzerine gelin.  
   
-     Bir açılır pencere görüntülenir. Bu açılır pencere modu söyler **iş parçacığı** listesi konusu: **yalnızca bayraklı iş parçacıklarını Göster**.  
+     Bir açılır pencere görüntülenir. Bu açılır pencere modu söyler **iş parçacığı** listesi konusu: **Yalnızca bayraklı iş parçacıklarını Göster**.  
   
 8.  Geri geçiş yapmak için bayrağı düğmesine **tüm iş parçacıklarını Göster** modu.  
   
@@ -263,7 +263,7 @@ Thread::Sleep(3000);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl Yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Nasıl yapılır: Hata Ayıklarken Başka Bir İş Parçacığına Geçme](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
 
 
