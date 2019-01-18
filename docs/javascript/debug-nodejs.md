@@ -1,6 +1,6 @@
 ---
-title: Node.js uygulamasında hata ayıklama
-description: Visual Studio hata ayıklama Visual Studio'da Node.js uygulamaları için destek sağlar.
+title: JavaScript veya TypeScript uygulamasında hata ayıklama
+description: Visual Studio, JavaScript ve TypeScript uygulamaları Visual Studio'da hata ayıklama için destek sağlar
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,16 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955899"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398240"
 ---
-# <a name="debug-a-nodejs-app-in-visual-studio"></a>Visual Studio'da bir Node.js uygulamasında hata ayıklama
+# <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio JavaScript veya TypeScript bir uygulamada hata ayıklama
 
 Visual Studio kullanarak, JavaScript ve TypeScript kodu hata ayıklaması yapabilirsiniz. Ayarlayabilir ve kesme noktaları isabet, hata ayıklayıcının, değişkenlerini incelemek, çağrı yığınını görüntüleme ve diğer hata ayıklama özelliklerini kullanın.
+
+> [!TIP]
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
 
 ## <a name="debug-server-side-script"></a>Sunucu tarafı komut dosyası hata ayıklama
 

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967433"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398292"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -26,9 +26,6 @@ Bu kısa giriş Kod Düzenleyicisi'nde Visual Studio için Visual Studio yazma, 
 > Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
 
 Bu makalede, zaten JavaScript geliştirme ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Siz değilseniz, öğreticiye bakın gibi öneririz [bir Node.js ve Express uygulaması oluşturma](../javascript/tutorial-nodejs.md) ilk.
-
-> [!TIP]
-> Bu makaleyi izlemek için JavaScript ayarları için Visual Studio seçili olduğundan emin olun. Tümleşik geliştirme ortamı (IDE) için ayarları seçme hakkında daha fazla bilgi için bkz: [ortam ayarları](../ide/environment-settings.md). Ayarları içeri aktardığınızda, içeri aktarma **JavaScript** ayarları.
 
 ## <a name="add-a-new-project-file"></a>Yeni bir proje dosyanıza ekleyin
 
@@ -96,7 +93,7 @@ Sağ `render` ve **Özet tanım** içerik menüsünde. Veya basın **Alt**+**F12
 
    ![Özet tanım penceresi](../javascript/media/write-code-peek-definition.png)
 
-1. Açılır pencerenin sağ üst köşedeki "x" işareti olan küçük kutusunu seçerek baktı tanım penceresini kapatın.
+Açılır pencerenin sağ üst köşedeki "x" işareti olan küçük kutusunu seçerek baktı tanım penceresini kapatın.
 
 ## <a name="use-code-snippets"></a>Kod parçacıkları kullanma
 

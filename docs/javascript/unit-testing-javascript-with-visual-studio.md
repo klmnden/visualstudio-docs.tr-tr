@@ -1,6 +1,6 @@
 ---
-title: Birim testi node.js'de
-description: Visual Studio, Visual Studio için Node.js araçları kullanarak JavaScript koduna birim testi uygulama desteği sağlar.
+title: JavaScript ve TypeScript birim testi
+description: Visual Studio, Visual Studio için Node.js araçları kullanarak JavaScript ve TypeScript koduna birim testi uygulama desteği sağlar.
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952770"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398227"
 ---
-# <a name="unit-testing-in-nodejs"></a>Birim testi node.js'de
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>JavaScript ve TypeScript Visual Studio'da birim testi
 
 Node.js için Visual Studio Araçları, yazma ve komut istemine geçiş yapmak için bazı gerek kalmadan daha popüler JavaScript çerçevesini kullanarak birim testleri çalıştırmak izin verin.
 

@@ -1,6 +1,6 @@
 ---
 title: Seçenekler, Metin Düzenleyici, C#, Gelişmiş
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887912"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398305"
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
 
@@ -109,13 +109,17 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
 
 - Yordam satır ayıraçlarını Göster
 
-   Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizilir *.vb* konumlarda projenizin kaynak dosyaları aşağıdaki tabloda listelenen:
+   Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizilir *.cs* konumlarda projenizin kaynak dosyaları aşağıdaki tabloda listelenen:
 
-   |.Vb kaynak dosya konumu|Satır konumu örneği|
+   |.Cs kaynak dosya konumu|Satır konumu örneği|
    |---------------------------------|------------------------------|
    |Sonra bir blok bildirimi yapısı kapatma|-Sonunda sınıfı, yapısı, modülü, arabirim veya numaralandırma<br />-Özelliği, işlev veya alt after<br />-Get ve set değil arasında bir özellikte yan tümceleri|
    |Tek satır yapıları bir dizi sonra|-İçeri aktarma deyimlerini after, önce bir sınıf dosyası içinde bir tür tanımı<br />-Bir sınıftaki tüm yordamları önce tanımlanan değişkenleri after|
    |Tek satır bildirimlerinden sonra (blok düzey bildirimleri)|-İçeri aktarma deyimlerini aşağıdaki deyimleri, değişken bildirimleri, olay bildirimleri, temsilci bildirimleri devralır ve DLL ifadeleri bildirme|
+
+## <a name="block-structure-guides"></a>Blok yapısı kılavuzları
+
+Süslü ayraçlar arasında noktalı dikey çizgileri görüntülemek için bu onay kutularını seçin (**{}**) kod. Daha sonra kolayca kod blokları tek tek bildirimi düzeyinizi görebilirsiniz ve kod düzeyi oluşturur.
 
 ## <a name="editor-help"></a>Düzenleyici Yardımı
 

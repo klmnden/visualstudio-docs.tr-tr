@@ -1,6 +1,6 @@
 ---
 title: Gelişmiş Seçenekler, metin düzenleyici, Basic (VB)
-ms.date: 11/04/2016
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -19,19 +19,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871245"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398253"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Gelişmiş Seçenekler, metin düzenleyici, temel (Visual Basic)
-**VB belirli** özellik sayfasında **temel** klasörü **metin düzenleyici** klasörü **seçenekleri** (**araçları** menüsü) iletişim kutusu aşağıdaki özellikleri içerir:
+**VB belirli** özellik sayfasında **temel** klasörü **metin düzenleyici** klasörü **seçenekleri** (**araçları** menüsü) iletişim kutusunda, aşağıdaki özellikleri içerir:
+
+## <a name="analysis"></a>Çözümleme
+
+- Tam çözüm analizini etkinleştirme
+
+   Çözümdeki tüm dosyalarda etkinleştirir kod analizi, yalnızca kod dosyaları açın. Daha fazla bilgi için [tam çözüm analizini](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+## <a name="using-directives"></a>Using yönergeleri
+
+- Using deyimlerini sıralarken önce 'System' yönergelerini Yerleştir
+
+   Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünde sıralar komutunu `using` yönergeleri ve yerde listenin üst kısmındaki 'System' ad.
+   
+- Yönerge gruplarını kullanarak Ayır
+
+   Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünü komutta ayıran `using` aynı kök ad alanına sahip yönergeleri grupları arasında boş bir satıra ekleyerek yönergeleri.
+   
+- Reference bütünleştirilmiş kodlarında türler için using Öner 
+- NuGet paketlerinde türler için using Öner 
+
+   Bu seçenek seçildiğinde, bir [hızlı eylem](../quick-actions.md) NuGet paketini yüklemek ve eklemek kullanılabilir bir `using` başvurulmayan türleri için yönerge.
+
+   ![Visual Studio'da NuGet paketini yüklemek için hızlı eylem](media/nuget-lightbulb.png)
+  
+
+## <a name="highlighting"></a>Vurgulama
 
  **Başvuruları ve anahtar sözcükleri vurgulamasını etkinleştirmenin**
 
-Metin Düzenleyicisi gibi bir simgenin tüm örnekleri veya tüm yan tümcesindeki anahtar sözcüklerin vurgulayabilirsiniz `If..Then`, `While...End While`, veya `Try...Catch...Finally`. Vurgulanan başvurulara veya anahtar sözcükler tuşlarına basarak gezinebilirsiniz **Ctrl** + **Shift** + **aşağı ok** veya **Ctrl**   +  **Shift** + **yukarı ok**.
+Metin Düzenleyicisi gibi bir simgenin tüm örnekleri veya bir yan tümcesindeki tüm anahtar sözcükler vurgulayabilirsiniz `If..Then`, `While...End While`, veya `Try...Catch...Finally`. Vurgulanan başvurulara veya anahtar sözcükler tuşlarına basarak gezinebilirsiniz **Ctrl** + **Shift** + **aşağı ok** veya **Ctrl**   +  **Shift** + **yukarı ok**.
+
+## <a name="outlining"></a>Anahat Oluşturma
 
 **Anahat oluşturma modunu etkinleştir**
 
@@ -47,7 +75,13 @@ Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizil
 |Tek satır yapıları bir dizi sonra|-İçeri aktarma deyimlerini after, önce bir sınıf dosyası içinde bir tür tanımı<br />-Bir sınıftaki tüm yordamları önce tanımlanan değişkenleri after|
 |Tek satır bildirimlerinden sonra (blok düzey bildirimleri)|-İçeri aktarma deyimlerini aşağıdaki deyimleri, değişken bildirimleri, olay bildirimleri, temsilci bildirimleri devralır ve DLL ifadeleri bildirme|
 
- **(Kodu yeniden biçimlendirme) düzgün listeleme** metin düzenleyici, uygun şekilde kodunuzu yeniden biçimlendirir. Bu seçenek belirlendiğinde, Kod Düzenleyici olur:
+## <a name="block-structure-guides"></a>Blok yapısı kılavuzları
+
+Süslü ayraçlar arasında noktalı dikey çizgileri görüntülemek için bu onay kutularını seçin (**{}**) kod. Bunun yapılması, tek tek bildirimi düzeyinize kod bloklarını kolayca görmenize olanak sağlar ve kod düzeyi oluşturur.
+
+## <a name="editor-help"></a>Düzenleyici Yardımı
+
+**(Kodu yeniden biçimlendirme) düzgün listeleme** metin düzenleyici, uygun şekilde kodunuzu yeniden biçimlendirir. Bu seçenek belirlendiğinde, Kod Düzenleyici olur:
 
 -   Kodunuz doğru sekme konumuna Hizala
 
@@ -65,7 +99,7 @@ Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizil
 
 **Bitiş yapılarını otomatik ekleme**
 
- Yazdığınızda — Örneğin, bir yordam bildirimi ilk satırını `Sub Main—`tuşuna basın **Enter**, eşleşen bir metin düzenleyicisi ekler `End Sub` satır. Benzer şekilde, eklerseniz bir [için](/dotnet/visual-basic/language-reference/statements/for-next-statement) döngüsü, metin düzenleyici ekler eşleşen `Next` deyimi. Bu seçenek belirlendiğinde, Kod Düzenleyicisi bitiş yapısı otomatik olarak ekler.
+Yazdığınızda — Örneğin, bir yordam bildirimi ilk satırını `Sub Main`— tuşuna basın **Enter**, eşleşen bir metin düzenleyicisi ekler `End Sub` satır. Benzer şekilde, eklerseniz bir [için](/dotnet/visual-basic/language-reference/statements/for-next-statement) döngüsü, metin düzenleyici ekler eşleşen `Next` deyimi. Bu seçenek belirlendiğinde, Kod Düzenleyicisi bitiş yapısı otomatik olarak ekler.
 
 **Interface ve MustOverride üyelerinin otomatik ekleme**
 
@@ -75,7 +109,7 @@ Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizil
 
 Metin düzenleyici, sık karşılaşılan çözümler önermek ve uygun düzeltmeyi kodunuza sonra uygulanır seçmenize olanak tanır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
 - [Seçenekler, Metin Düzenleyici, Tüm Diller, Sekmeler](../../ide/reference/options-text-editor-all-languages-tabs.md)
