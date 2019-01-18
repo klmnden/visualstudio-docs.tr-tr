@@ -9,12 +9,12 @@ description: Azure DevOps Visual Studio abonesi olarak nasıl kullanabileceğini
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 17210efba6e4505bbf4dc46fcd779be407f0c27e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 631683b48faed4e5b967e060b66123aaf685889b
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740211"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380019"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Azure DevOps avantajları
 
@@ -33,7 +33,7 @@ Oturum açtığınızda Azure kullanarak DevOps için Visual Studio aboneliğini
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Azure panoları & depoları (Temel), Azure Test planları                                              |  Evet          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Azure panoları & depoları (Temel), Azure Test planları                                              |  Evet          |
 
-<sup>1</sup>*içerir:    Yeniden Satılamaz (NFR), Microsoft Professional (MVP), bölge Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılımı ve Hizmetleri Geliştirici değerli. Dışlar: MCT yazılım ve Hizmetleri düşünün.*
+<sup>1</sup>*içerir:  Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılım ve geliştirici Hizmetleri için. Dışlar: MCT yazılım ve Hizmetleri düşünün.*
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.

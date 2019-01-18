@@ -16,18 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e387485d2a11867944e980a9bad26261fd4a707c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdf75278ea1b048ca7663876f626ec5b3358a9d9
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848554"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380323"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Hangi&#39;Visual Studio 2019 Preview'daki yenilikler
 
 **İçin güncelleştirilmiş [16,0 Önizleme 1 sürüm](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 Visual Studio 2019 Preview Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.
+
+>[!div class="button"]
+>[Önizlemeyi indirin](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?ch=pre&sku=Enterprise&rel=16)
 
 Visual Studio sunmak olan, üst düzey bir özeti aşağıda verilmiştir:
 
@@ -110,7 +113,7 @@ Visual Studio 2019 Preview 1'ın yayınlanmasıyla birlikte, size Visual Studio 
 
    ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](../ide/media/per-monitor-aware-dpi-scaling.png)
 
-### <a name="visual-studio-intellicode"></a>Visual Studio Intellicode
+### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
 [Visual Studio Intellicode](/visualstudio/intellicode/) artifical zeka (AI) kullanarak yazılım geliştirme çalışmalarınızı geliştiren bir uzantısıdır. GitHub üzerinde 2.000 açık kaynak projeler arasında Intellicode trenler&mdash;her 100'den fazla Yıldıza sahip&mdash;önerilerini oluşturmak için.
 
@@ -138,5 +141,5 @@ Neden Visual Studio ekibine geri bildirim gönderilsin mi? Size müşteri geri b
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2019 sürüm notları](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
-* [Microsoft Connect(); 2018 konferansı](https://www.microsoft.com/connectevent)
+* [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017'deki yenilikler](whats-new-in-visual-studio.md)

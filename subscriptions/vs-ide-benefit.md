@@ -9,12 +9,12 @@ description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip ö�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2e721c8c944bec0741f55c05a510ef02628c6b97
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739805"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380059"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Visual Studio 2017 avantajının kullanılmasıyla
 
@@ -69,7 +69,7 @@ IDE indirmek için:
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Dev Essentials | Yok  | Visual Studio Community |Evet |
 
-<sup>1</sup>*içerir:    Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).  Dışlar: MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  Dışlar: MCT yazılım ve Hizmetleri.*
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.

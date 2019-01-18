@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SO
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739675"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379952"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri de Parasoft Sanallaştırılacak/SOAtest Professional Desktop
 
@@ -83,7 +83,7 @@ Daha önce ve daha sık test edin.  Benzetimini gerçekleştirmek ve gelişen ku
 | Visual Studio Dev Essentials | Yok  | Yok|Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir:   Microsoft iş ortağı ağı (Kurumsal).  Dışlar:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 
 > [!NOTE]

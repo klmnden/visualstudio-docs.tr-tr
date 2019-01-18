@@ -9,12 +9,12 @@ description: Dahil edilen seçili Visual Studio abonelikleri ile Pluralsight eğ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8e077db1aa369198f015f68e0e61efbc30697659
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740344"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380316"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Pluralsight eğitim avantajları
 
@@ -79,7 +79,7 @@ Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Stu
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) |       Azure       | Yok |       Yok       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Yok |       Yok       |
 
-<sup>1</sup>*içerir:    Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve hizmeti, Microsoft değerli Professional (MVP) için bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
+<sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet, en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 
 <sup>2</sup>*Pluralsight avantajdır tek bir kullanım için ayrı ayrı bağlanır.  Abonelik teklifi kullanır, sonra sıfırlanmaz.*
 
@@ -101,7 +101,7 @@ Y: Evet, Visual Studio abonesi olarak, Uzman kanalları Pluralsight eğitimi tek
 
 • Donovan Brown (DevOps) - [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
 
-• James Montemagno (Mobility) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+•   James Montemagno (Mobility) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>S: Pluralsight Aboneliğimi dolduğunda ne olur?

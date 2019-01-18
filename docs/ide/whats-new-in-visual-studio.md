@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881029"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380091"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Hangi&#39;Visual Studio 2017'deki yenilikler
 
 **İçin güncelleştirilmiş [15,9 sürüm](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? Hangi Visual Studio 2017, sunabileceğiniz aşağıda verilmiştir: Herhangi bir geliştirme, herhangi bir uygulama ve tüm platformlar için eşsiz üretkenlik. Android, iOS, Windows, Linux, web ve bulut için uygulamalar geliştirmek için Visual Studio 2017'yi kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimi kullanın, Çevik ve bu sürümle birlikte verimli bir şekilde işbirliği yapın!
+
+>[!div class="button"]
+>[Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Önceki sürümden itibaren Visual Studio 2015 yapılan değişiklikler üst düzey bir özeti aşağıda verilmiştir:
 
@@ -50,11 +53,9 @@ Bazı en önemli geliştirmeler ve Visual Studio 2017'de yeni özellikler hakkı
 
 ### <a name="a-new-setup-experience"></a>Yeni bir kurulum deneyimi
 
-[Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [denetleyin Visual Studio sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
+Visual Studio, daha kolay ve yalnızca ihtiyacınız olduğunda, ihtiyacınız olan özellikleri yüklemek için daha hızlı bir şekilde getirir. Ve iz bırakmadan, çok kaldırılır.
 
- Visual Studio, daha kolay ve yalnızca ihtiyacınız olduğunda, ihtiyacınız olan özellikleri yüklemek için daha hızlı bir şekilde getirir. Ve iz bırakmadan, çok kaldırılır.
-
- Visual Studio yüklediğinizde dikkat edilecek en önemli yeni kurulum deneyimini farklıdır. Üzerinde **iş yükleri** sekmesi, ortak çerçeveleri, dilleri ve platformları temsil etmek için gruplandırılır yükleme seçenekleri göreceksiniz. .NET masaüstü geliştirme için Windows, Linux ve iOS uygulama geliştirmeyi C++ kadar her şeyi kapsar.
+Visual Studio yüklediğinizde dikkat edilecek en önemli yeni kurulum deneyimini farklıdır. Üzerinde **iş yükleri** sekmesi, ortak çerçeveleri, dilleri ve platformları temsil etmek için gruplandırılır yükleme seçenekleri göreceksiniz. .NET masaüstü geliştirme için Windows, Linux ve iOS uygulama geliştirmeyi C++ kadar her şeyi kapsar.
 
 İş yükleri gerekir ve gerektiğinde bunları değiştirin seçin.
 

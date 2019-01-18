@@ -1,7 +1,7 @@
 ---
 title: Yükleme için komut satırı parametresi örnekleri
 description: Bu örnekleri kendi Visual Studio komut satırı yüklemesi oluşturmak için özelleştirin.
-ms.date: 01/15/2019
+ms.date: 01/16/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59dfe6ebb9518bbdea6edf11108f1cb27cd5d6a3
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345532"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380152"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri
 
@@ -29,6 +29,8 @@ Her örnekte `vs_enterprise.exe`, `vs_professional.exe` ve `vs_community.exe` in
 >
 > [!NOTE]
 > Kullanabileceğiniz `^` birden fazla satır tek bir komutta birleştirmek için komut satırının sonunda karakter. Alternatif olarak, yalnızca bu satırlara birlikte tek bir satır yerleştirebilirsiniz. PowerShell'de vurgulamasını belirtir eşdeğerdir (`` ` ``) karakter.
+
+Komut satırını kullanarak yükleyebileceğiniz bileşenleri ve iş yüklerini listelerini görmek [Visual Studio iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
 ## <a name="using---installpath"></a>--İnstallPath kullanma
 
@@ -171,3 +173,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

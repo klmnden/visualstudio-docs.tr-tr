@@ -9,12 +9,12 @@ description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium abone
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739542"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380219"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -102,7 +102,7 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 | Visual Studio Dev Essentials | Yok  | 3 ay |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
-<sup>1</sup>*içerir:    Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar:  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) düşünün.  MCT yazılım ve Hizmetleri.*
+<sup>1</sup>*içerir:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar:  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
 
 > [!NOTE]

@@ -9,12 +9,12 @@ description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Av
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740042"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380124"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
@@ -68,12 +68,12 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok           |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Dev Essentials | Yok  | Yok | Yok |
-| Visual Studio Enterprise (standart, yıllık bulut)  | NFR<sup>1</sup> |Yok  | Yok |
+| Visual Studio Enterprise (standart)  | NFR<sup>1</sup> |Yok  | Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 
 
 
-<sup>1</sup>*içerir:    Değil for Resale (NFR), Trainer, BizSpark FTE, değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
+<sup>1</sup>*içerir:  Değil for Resale (NFR), Trainer, BizSpark FTE, en değerli Professional (MVP), bölgesel Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
 
 
 > [!NOTE]

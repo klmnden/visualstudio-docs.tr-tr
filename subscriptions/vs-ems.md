@@ -9,12 +9,12 @@ description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092072"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380041"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 
@@ -62,7 +62,7 @@ EMS kullanmak için bir hesap oluşturabilir veya mevcut bir hesabı kullanarak 
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için.  Dışlar: Değerli Microsoft Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Microsoft iş ortağı ağı (Professional) düşünün.*
+<sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark için.  Dışlar: En değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Microsoft iş ortağı ağı (Professional) düşünün.*
 
 <sup>2</sup> *Microsoft iş ortağı ağı (Professional) dışlar*
 

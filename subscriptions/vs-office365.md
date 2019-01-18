@@ -9,12 +9,12 @@ description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkın
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968397"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380142"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus Visual Studio abonelikleri
 
@@ -63,7 +63,7 @@ Office için uygulama geliştirmek üzere planlıyorsanız etkinleştirmek istey
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |
 
-<sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri için BizSpark, Microsoft değerli Professional (MVP), bölge Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine, Microsoft İş ortağı ağı.*
+<sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri için BizSpark, en değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine, Microsoft İş ortağı ağı.*
 
 
 > [!NOTE]

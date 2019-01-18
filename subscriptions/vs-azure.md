@@ -9,12 +9,12 @@ description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme h
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739818"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380134"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -43,7 +43,7 @@ Visual Studio abonesi olarak, Microsoft Azure, başka bir ücret ödemeden kulla
 |      Visual Studio Enterprise – MCT yazılım ve Hizmetleri      |     100 ABD Doları aylık kredi     |                             Evet                             |
 | Visual Studio Enterprise – MCT yazılım ve geliştirici Hizmetleri |     150 ABD Doları aylık kredi     |                             Evet                             |
 
-* Değil satışıyla (NFR), Microsoft değerli Professional (MVP), bölge Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
+* Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
 
 
 > [!NOTE]
