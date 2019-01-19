@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869667"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403973"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
 
@@ -77,7 +77,8 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `--help, --?, -h, -?` | Bu sayfanın çevrimdışı bir sürümünü görüntüler. |
 | `--config <path>` | **İsteğe bağlı** ve **15.9 yeni**: Bir yükleme sırasında veya değiştirme işlemi, bu iş yükleri belirler ve bileşenleri eklemek için temel bir önceden kaydedilmiş yükleme yapılandırma dosyası. . Bu işlem eklenebilir ve bunlar dosyasında mevcut değilse herhangi bir iş yükü veya bileşen kaldırmaz. Ayrıca, ürün için geçerli olmayan öğeler eklenmeyecek. Dışa aktarma işlemi sırasında bu yükleme yapılandırma dosyasını kaydetmek istediğiniz konumu belirler. |
 
-> Not: Birden çok iş yüklerinin ve bileşenlerin belirtirken tekrarlamalısınız `--add` veya `--remove` her öğe için komut satırı anahtarı.
+> [!IMPORTANT]
+> Birden çok iş yüklerinin ve bileşenlerin belirtirken tekrarlamalısınız `--add` veya `--remove` her öğe için komut satırı anahtarı.
 
 | **Düzen Seçenekleri** | **Açıklama** |
 | ----------------------- | --------------- |

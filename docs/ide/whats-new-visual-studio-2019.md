@@ -16,21 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf75278ea1b048ca7663876f626ec5b3358a9d9
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: ef844e9e72c5fb0a4bcd40bfe5edad1c3deed894
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380323"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403921"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Hangi&#39;Visual Studio 2019 Preview'daki yenilikler
 
 **İçin güncelleştirilmiş [16,0 Önizleme 1 sürüm](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
-Visual Studio 2019 Preview Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.
-
 >[!div class="button"]
 >[Önizlemeyi indirin](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?ch=pre&sku=Enterprise&rel=16)
+
+Visual Studio 2019 Preview Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.<br/><br/>
+
+>[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
 Visual Studio sunmak olan, üst düzey bir özeti aşağıda verilmiştir:
 
