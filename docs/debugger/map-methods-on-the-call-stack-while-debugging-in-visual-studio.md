@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960845"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417934"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Hata ayıklama sırasında çağrı yığınının görsel haritasını oluşturma 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Hata ayıklama sırasında çağrı yığınının görsel haritasını oluşturma (C#, Visual Basic, C++, JavaScript)
 
 Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Haritası oluşturun. Kodun ne yaptığını, böylece hata bulmaya odaklanabilirsiniz izlemek için harita üzerinde not alabilirsiniz.
 
@@ -53,7 +53,7 @@ Bir kod Haritası hızlı bir bakış şu şekildedir:
 
 ##  <a name="MapStack"></a> Çağrı yığınını eşleme
 
-1. Bir Visual Studio Enterprise'da C#, Visual Basic, C++, JavaScript veya X seçerek hata ayıklamaya başlayın, proje ++ **hata ayıklama** > **hata ayıklamayı Başlat** ya basarak **F5**.
+1. Bir Visual Studio Enterprise'da C#, Visual Basic, C++ veya JavaScript proje, seçerek hata ayıklamayı Başlat **hata ayıklama** > **hata ayıklamayı Başlat** ya basarak **F5**.
    
 1. Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **hata ayıklama** > **kod Haritası**, veya basın **Ctrl**+**kaydırma** +**`**.
 

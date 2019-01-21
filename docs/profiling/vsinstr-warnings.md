@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888602"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417869"
 ---
 # <a name="vsinstr-warnings"></a>Vsınstr uyarıları
 Aşağıdaki tabloda tarafından verilen uyarılar *VSInstr.exe* aracı. Uyarıyı görüntülenmesini engellemek için uyarı numaralarını NOWARN seçeneğiyle kullanabilirsiniz.  
   
 |Uyarı numarası|Açıklama|  
 |--------------------|-----------------|  
+|**VSP1026**|Kapsamı MSCorLib başvurma kitaplıklar üzerinde desteklenmiyor. Bu genellikle taşınabilir kitaplıklar için geçerlidir.|  
 |**VSP2000**|İç Hata. Bu yürütülebilir dosya için modülün dosya adı alınamıyor.|  
 |**VSP2001**|\<derleme adı > kesin adlandırılmış bir derlemedir. Yürütülmek üzere önce onu yeniden imzalanması gerekir.<br /><br /> İmzalı bir derleme işaretlenmiş durumda olduğunda bu uyarı oluşur. Kullanabileceğiniz *sn.exe* aracı ikili çekilmeye veya geçici olarak devre dışı tanımlayıcı ad gereksinim kapatmak için. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|İşlevi bulunamadı \<funcname > dosyasındaki \<dosya adı ><br /><br /> Bir işlev içinde belirtilen dosya bulunamıyorsa, bu uyarı oluşur.|  

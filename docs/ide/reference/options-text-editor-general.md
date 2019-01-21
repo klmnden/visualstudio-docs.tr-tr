@@ -1,40 +1,22 @@
 ---
 title: Seçenekler, Metin Düzenleyici, Genel
-ms.date: 11/04/2016
+ms.date: 01/18/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -48,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871336"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417804"
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
 
@@ -75,7 +57,17 @@ Kod Düzenleyicisi seçili olduğunda, dosyanın en son kaydedildiğinden beri d
 
 ### <a name="auto-detect-utf-8-encoding-without-signature"></a>UTF-8 kodlamasını otomatik algıla
 
-Varsayılan olarak, düzenleyici bayt sırası işaretleri veya charset etiketler için arama yaparak kodlama algılar. Bunların hiçbiri geçerli belgede bulunursa, Kod Düzenleyicisi bayt dizileri tarayarak UTF-8 kodlamasını otomatik algıla dener. Kodlama otomatik algılama devre dışı bırakmak için bu seçeneği temizleyin.
+Varsayılan olarak, düzenleyici bayt sırası işaretleri veya charset etiketler için arama yaparak kodlama algılar. Hiçbiri geçerli belgede bulunursa, Kod düzenleyicisinde otomatik algıla UTF-8 kodlamasını bayt dizileri tarayarak çalışır. Kodlama intellisense devre dışı bırakmak için bu seçeneği temizleyin.
+
+### <a name="follow-project-coding-conventions"></a>Proje kodlama kuralları izleyin
+
+Bu onay kutusu seçildiğinde, projenin belirtilen kodlama kurallarını kişisel projeler üzerinde kullanmak istediğiniz kodlama kuralları geçersiz kılar.
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Tanıma Git işlemini gerçekleştirmek fare tıklamasını etkinleştir
+
+Bu onay kutusu seçildiğinde, basabilirsiniz **Ctrl** ve fare tıklatın, bir öğenin üzerine gelin. Bunun yapılması seçilen öğenin açıklamasını alır. Ya da seçebilirsiniz **Alt** veya **Ctrl** + **Alt** gelen **değiştiricisi anahtar kullan** açılır.
+
+Seçin **tanımı Özet Görünümü'nde açın** Kod düzenleyicisinde, konumunuzu uzağa gitmeden öğe tanımının bir pencerede görüntülemek için onay kutusunu. 
 
 ## <a name="display"></a>Ekran
 
@@ -89,11 +81,15 @@ Bu onay kutusu seçildiğinde, metin alanı düzenleyicinin sol kenarda dikey bi
 
 ### <a name="indicator-margin"></a>Belirteç kenar boşluğu
 
-Bu onay kutusu seçildiğinde, metin alanı düzenleyicinin sol kenarı dışında dikey bir kenar boşluğu görüntüler. Bu kenar boşluğu tıkladığınızda bir simge ve metin için ilgili araç ipucu görünür. Örneğin, kesme noktası veya görev listesini kısayolları gösterge kenar boşluğunda görünür. Gösterge kenar boşluğu bilgi yazdırılmaz.
+Bu onay kutusu seçildiğinde, metin alanı düzenleyicinin sol kenarı dışında dikey bir kenar boşluğu görüntüler. Bu kenar boşluğu tıkladığınızda bir simge ve metin için ilgili araç ipucu görünür. Örneğin, kesme noktası veya görev listesini kısayolları gösterge kenar boşluğunda görünür. Gösterge kenar boşluğu bilgileri yazdırma değil.
 
 ### <a name="highlight-current-line"></a>Geçerli satırı Vurgula
 
 Bu onay kutusu seçildiğinde, imlecin bulunduğu kod satırının çevresine gri kutu görüntüler.
+
+### <a name="show-structure-guide-lines"></a>Yapı kılavuz çizgilerini göster
+
+Seçili olduğunda, dikey çizgileri Düzenleyicisi'nde bu satırı Yukarı tek bir kod bloklarını kolayca belirlemenize olanak sağlayan yapılandırılmış kod blokları ile görünür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
