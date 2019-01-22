@@ -1,4 +1,3 @@
----
 # [Windows Betik Arabirimleri](windows-script-interfaces.md)
 # [Windows Betik Konakları](windows-script-hosts.md)
 # [Windows Betik Motorları](windows-script-engines.md)
