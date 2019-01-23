@@ -1,4 +1,3 @@
----
 # [Mac için Visual Studio](index.md)
 # [IDE Turu](/visualstudio/mac/ide-tour/)
 

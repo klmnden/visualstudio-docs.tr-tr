@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: a4e7ebc12419567fb5a5fe8499fb33cbb0d63d9e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348691"
----
 # [Windows Betik Arabirimleri Başvurusu](windows-script-interfaces-reference.md)
 ## [Etkin Betik Arabirimleri](active-script-interfaces.md)
 ### [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](active-script-constants-enumerations-and-error-codes.md)

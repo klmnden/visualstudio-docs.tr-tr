@@ -1,4 +1,3 @@
----
 # ['{' bekleniyor](expected-left-curly-brace.md)
 # [Tanımlayıcı, dize veya sayı bekleniyor](expected-identifier-string-or-number.md)
 # [İşlev bekleniyor](function-expected.md)
