@@ -1,26 +1,21 @@
 ---
 title: Web sitesi destek şablonları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760227"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801982"
 ---
 # <a name="web-site-support-templates"></a>Web Sitesi Destek Şablonları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "51760227"
   
      Yeni Web sitesi için varsayılan giriş sayfası. Language özniteliği codebehind dilini belirtir ve bu sayfayla ilişkili codebehind kodu içeren bağımlı dosya CodeFile özniteliği belirtir.  
   
--   Default.aspx. *uzantısı*  
+-   Default.aspx.*extension*  
   
      Bağımlı dosya varsayılan giriş sayfasını codebehind kodunu içerir. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
@@ -83,7 +78,7 @@ ms.locfileid: "51760227"
 ### <a name="web-service-projects"></a>Web hizmeti projelerini Microsoft Azure  
  Bu dosyalar, yanıt olarak yeni bir Web sitesi oluşturma **ASP.NET Web hizmeti** işaret sonra kullanılabilir olan komut **yeni Web sitesi** üzerinde **dosya** menüsü:  
   
--   QuoteService.asmx'e değiştirin  
+-   Service.asmx  
   
      Yeni bir Web hizmeti için HTML sayfası. Language özniteliği codebehind dilini belirtir ve bu hizmetle ilişkili codebehind kodu içeren bağımlı dosya CodeBehind özniteliğinin belirtir.  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760227"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Web Sitesi Desteği](../../extensibility/internals/web-site-support.md)
-

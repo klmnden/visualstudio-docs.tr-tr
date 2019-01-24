@@ -1,24 +1,19 @@
 ---
 title: Bir yazılım geliştirme seti oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797607"
 ---
 # <a name="creating-a-software-development-kit"></a>Yazılık Geliştirme Seti Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 |Tasarım zamanı klasörü|Yalnızca öncesi-run/hata ayıklama sırasında gereken dosyaları içerir. Bu XML belgeleri, kitaplıklar, üst bilgiler, araç kutusu tasarım zamanı ikili dosyalarını, MSBuild yapıtları ve diğerleri dahil olabilir<br /><br /> XML belgeleri ideal olarak, \DesignTime klasörüne yerleştirilmesi ancak XML belgeleri başvurular için referans dosyasını Visual Studio'da yanı sıra yerleştirilecek devam edecektir. Örneğin, XML belge için bir başvuru \References\\[yapılandırma]\\[arch]\sample.dll \References olacaktır\\[yapılandırma]\\[arch]\sample.xml ve bu belge yerelleştirilmiş sürümünü \Referencesolacaktır\\[yapılandırma]\\[arch]\\[locale]\sample.xml.|  
 |Yapılandırma klasörü|Yalnızca üç klasör olabilir: hata ayıklama, perakende ve CommonConfiguration. SDK dosyalarını aynı kümesini, SDK'sı tüketici hedefleyen yapılandırmayı bağımsız olarak kullanılması SDK yazarlar dosyalarına CommonConfiguration altında koyabilirsiniz.|  
 |Mimari klasörü|Herhangi bir desteklenen mimari klasör bulunabilir. Visual Studio aşağıdaki mimarilerine destekler: x86, x64, ARM ve neutral. Not: Win32 için x86 eşlenir ve buna AnyCPU için nötr eşler.<br /><br /> MSBuild için Platform SDK'ları yalnızca \CommonConfiguration\neutral altında görünür.|  
-|SDKManifest.xml|Bu dosya, Visual Studio SDK'yı nasıl tüketmesi gereken açıklar. SDK bildirimi için bakın [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** değerin Nesne Tarayıcısı göz atma listesinde görüntülenir.<br /><br /> **PlatformIdentity:** bu öznitelik varlığını Visual Studio ve MSBuild SDK'sı bir platform SDK'sı olduğunu ve ondan eklenen başvuruları kopyalanan olmamalıdır yerel olarak bildirir.<br /><br /> **TargetFramework:** bu öznitelik, yalnızca hedefleyen projelerde bu değeri belirtildiği gibi aynı çerçeveleri emin olmak için Visual Studio tarafından kullanılan öznitelik, SDK'sını kullanabilir.<br /><br /> **MinVSVersion:** bu öznitelik için geçerli olan SDK'lar kullanmak için Visual Studio tarafından kullanılır.<br /><br /> **Başvuru:** bu öznitelik denetimler içeren yalnızca bu başvuruları için belirtilmesi gerekir. Bir başvuru denetimleri içerip içermediğini belirtme hakkında daha fazla bilgi için aşağıya bakın.|  
+|SDKManifest.xml|Bu dosya, Visual Studio SDK'yı nasıl tüketmesi gereken açıklar. SDK bildirimi için bakın [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Nesne Tarayıcısı göz atma listesinde gösteren değer.<br /><br /> **PlatformIdentity:** Bu öznitelik varlığını Visual Studio ve platform SDK'sı, SDK ve ondan eklenen başvuruları kopyaladığınız olmamalıdır MSBuild yerel olarak bildirir.<br /><br /> **TargetFramework:** Bu öznitelik, yalnızca hedefleyen projelerde bu değeri belirtildiği gibi aynı çerçeveleri emin olmak için Visual Studio tarafından kullanılan öznitelik, SDK'sını kullanabilir.<br /><br /> **MinVSVersion:** Bu öznitelik için geçerli olan SDK'lar kullanmak için Visual Studio tarafından kullanılır.<br /><br /> **Başvuru:** Bu öznitelik denetimler içeren yalnızca bu başvuruları için belirtilmesi gerekir. Bir başvuru denetimleri içerip içermediğini belirtme hakkında daha fazla bilgi için aşağıya bakın.|  
   
 ##  <a name="ExtensionSDKs"></a> Uzantı SDK'ları  
  Aşağıdaki bölümlerde, uzantı SDK dağıtmak için yapmanız gerekenler açıklanmaktadır.  
@@ -133,7 +128,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
   
      XML başvuru belgeleri başvurusu dosyasını yerleştirilir. Örneğin, başvuru için XML belgesi **\References\\< yapılandırma\>\\< arch\>\sample.dll** derleme **\References\\ < yapılandırma\>\\< arch\>\sample.xml**, ve bu belge yerelleştirilmiş sürümünü **\References\\< yapılandırma\>\\< arch\>\\< yerel ayar\>\sample.xml**.  
   
-5.  Yapılandırma klasörü: üç alt klasörleri: hata ayıklama, perakende ve CommonConfiguration. SDK dosyalarını aynı kümesini, SDK'sı tüketici tarafından hedeflenen yapılandırma bağımsız olarak kullanılması zaman, SDK yazarlar dosyalarına CommonConfiguration altında yerleştirebilirsiniz.  
+5.  Yapılandırma klasörü: üç alt klasörleri: Hata ayıklama, perakende ve CommonConfiguration. SDK dosyalarını aynı kümesini, SDK'sı tüketici tarafından hedeflenen yapılandırma bağımsız olarak kullanılması zaman, SDK yazarlar dosyalarına CommonConfiguration altında yerleştirebilirsiniz.  
   
 6.  Mimari klasör: aşağıdaki mimarilerine desteklenir: x86, x64, ARM, nötr. Win32 için x86 eşlenir ve buna AnyCPU için nötr eşler.  
   
@@ -174,9 +169,9 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 5.  MinVSVersion: en düşük Visual Studio sürümü.  
   
-6.  MaxPlatformVerson: Uzantı SDK'nızı değil çalışır platform sürümlerini belirtmek için en fazla hedef platform sürümü kullanılması gerekir. Örneğin, Microsoft Visual C++ Runtime Package v11. 0 yalnızca Windows 8 projeleri tarafından başvurulması gerekir. Bu nedenle, Windows 8 projenin MaxPlatformVersion 8.0 ' dir. Bu başvuru Yöneticisi, Windows 8.1 projesi için Microsoft Visual C++ Runtime Package filtreler ve MSBuild, bir hata oluşturur anlamına gelir, bir [!INCLUDE[win81](../includes/win81-md.md)] projeye başvuruyor. Not: Bu öğe itibariyle desteklenir [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
+6.  MaxPlatformVerson: Uzantı SDK'nızı değil çalışır platform sürümlerini belirtmek için en fazla hedef platform sürümü kullanılmalıdır. Örneğin, Microsoft Visual C++ Runtime Package v11. 0 yalnızca Windows 8 projeleri tarafından başvurulması gerekir. Bu nedenle, Windows 8 projenin MaxPlatformVersion 8.0 ' dir. Bu başvuru Yöneticisi, Windows 8.1 projesi için Microsoft Visual C++ Runtime Package filtreler ve MSBuild, bir hata oluşturur anlamına gelir, bir [!INCLUDE[win81](../includes/win81-md.md)] projeye başvuruyor. Not: Bu öğe itibariyle desteklenir [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
-7.  AppliesTo: geçerli Visual Studio Proje türleri belirterek başvuru Yöneticisi'nde kullanılabilir SDK'lar belirtir. Dokuz değer tanınıyor:; WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, yönetilen ve yerel. SDK'sı yazarı kullanabilirsiniz ve ("+'), veya ("&#124;") değil ("! ") tam olarak SDK'SININ geçerli proje türleri kapsamını belirtmek için işleçler.  
+7.  AppliesTo: geçerli Visual Studio Proje türleri belirterek başvuru Yöneticisi'nde kullanılabilir SDK'lar belirtir. Dokuz değer tanınmaktadır: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, yönetilen ve yerel. SDK'sı yazarı kullanabilirsiniz ve ("+'), veya ("&#124;") değil ("! ") tam olarak SDK'SININ geçerli proje türleri kapsamını belirtmek için işleçler.  
   
      WindowsAppContainer tanıtan projeler için [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar.  
   
@@ -190,7 +185,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 12. CopyRedistToSubDirectory: uygulama paket köküne göreli \redist klasörü altındaki dosyaları nereye kopyalanacağını belirtir. (diğer bir deyişle, **paket konumu** uygulama paketi oluşturma Sihirbazı'nda seçilen) ve çalışma zamanı Düzen kökü. Varsayılan konumu F5 düzenini ve uygulama paketi köküdür.  
   
-13. DependsOn: Bu SDK'sı bağımlı olduğu SDK'ları tanımlama SDK kimliklerinin bir listesi. Bu öznitelik başvuru Yöneticisi'nin ayrıntılar bölmesinde görüntülenir.  
+13. DependsOn: Bu SDK'sı bağımlı olduğu SDK'ları tanımlama SDK kimlikleri listesi. Bu öznitelik başvuru Yöneticisi'nin ayrıntılar bölmesinde görüntülenir.  
   
 14. Daha fazla bilgi: Yardım ve daha fazla bilgi sağlayan web sayfası URL'si. Bu değer, başvuru Yöneticisi'nin sağ bölmede daha fazla bilgi bağlantısındaki kullanılır.  
   
@@ -271,6 +266,5 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: C++ kullanarak SDK oluşturma](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [İzlenecek yol: C# veya Visual Basic kullanarak SDK oluşturma](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
-
