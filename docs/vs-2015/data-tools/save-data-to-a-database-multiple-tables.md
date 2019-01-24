@@ -1,12 +1,9 @@
 ---
 title: Verileri bir veritabanına (birden çok tablo) kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 116dfd687fbf80488073276a37d706486bd299e0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764541"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
  Çağırarak veritabanına uygulamanızdaki verileri kaydedebilirsiniz `Update` TableAdapter bağdaştırıcısının yöntemi. Tablodan sürüklediğinizde **veri kaynakları** forma, verileri kaydetmek için gereken kod penceresi otomatik olarak eklenir. Bir forma eklenmiş herhangi bir ek tablolar bu kodu el ile eklenmesi gerekir. Bu izlenecek yol, birden fazla tablodan güncelleştirmeleri kaydetmek için kod ekleme işlemi gösterilmektedir.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
@@ -87,7 +84,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
     -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
   
-         veya  
+         -veya-  
   
     -   Seçin **yeni bağlantı** açmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
   

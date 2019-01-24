@@ -1,23 +1,20 @@
 ---
 title: Salt okunur kesimler oluşturmak için kilitleme ilkesi tanımlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773210"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,10 +79,10 @@ partition.SetLocks(Locks.Delete);
   
 |Değer|Yani `IsLocked(Value)` geçerlidir|  
 |-----------|------------------------------------------|  
-|Yok.|Kısıtlama yok.|  
+|Hiçbiri|Kısıtlama yok.|  
 |Özellik|Öğelerin etki alanı özellikleri değiştirilemez. Bu rolü ilişkisinde bir etki alanı sınıfı tarafından oluşturulan özellikler için geçerli değildir.|  
 |Ekle|Bir bölümde yeni öğeleri ve bağlantılarına oluşturulamıyor veya depolar.<br /><br /> Uygulanamaz `ModelElement`.|  
-|Taşıma|Öğesi, bölümler arasında taşınamaz `element.IsLocked(Move)` true ise veya `targetPartition.IsLocked(Move)` geçerlidir.|  
+|Taşı|Öğesi, bölümler arasında taşınamaz `element.IsLocked(Move)` true ise veya `targetPartition.IsLocked(Move)` geçerlidir.|  
 |Sil|Bu kilit öğe üzerinde ayarlanır veya herhangi bir öğelerine silme işlemi, katıştırılmış öğeleri ve şekiller gibi yayar bir öğe silinemiyor.<br /><br /> Kullanabileceğiniz `element.CanDelete()` öğenin silinip silinemeyeceği bulunacak.|  
 |Yeniden sıralama|Bir roleplayer bağlantıları sıralama değiştirilemez.|  
 |İçinde RolePlayer|Bu öğede kaynaklanan bağlantı kümesi değiştirilemez. Örneğin, yeni öğeler altında bu öğe eklenemiyor. Bu, bu öğenin hedefi olan bağlantılar etkilemez.<br /><br /> Bu öğe bir bağlantı varsa, kaynak ve hedef etkilenmez.|  
@@ -193,6 +190,3 @@ namespace Company.YourDsl.DslPackage // Change
     }  
 }  
 ```
-
-
-

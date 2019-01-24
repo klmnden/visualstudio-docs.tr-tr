@@ -1,14 +1,9 @@
 ---
 title: 'İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - managed code, analyzing
@@ -18,14 +13,14 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ee957d6be2cfc75a0ecdd780862c34eb5a1c540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791201"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod Hataları İçin Yönetilen Kodu Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen bir proje çözümleyin.  
@@ -98,7 +93,7 @@ Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen 
   
 4.  Uyarıları gidermek için aşağıdakileri kullanın:  
   
-- [CA1014: Derlemeleri CLSCompliantAttribute ile işaretle](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'Tanıtım' CLSCompliantAttribute ile işaretlenmemelidir ve değeri true olmalıdır.  
+- [CA1014: Derlemeleri CLSCompliantAttribute ile işaretle](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): CLSCompliantAttribute ile işaretlenmelidir Microsoft.Design: 'Tanıtım' ve değeri true olmalıdır.  
   
   -   Kod ekleme `using``System;` AssemblyInfo.cs dosyası için.  
   
@@ -128,19 +123,19 @@ Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen 
   
        Projeyi yeniden derleyin.  
   
-- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode için' değiştirerek ad alanı adı 'testCode' büyük küçük harfleri düzeltin.  
+- [CA1709: Tanımlayıcıları büyük/küçük harfleri doğru](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'TestCode için' değiştirerek ad alanı adı 'testCode' büyük küçük harfleri düzeltin.  
   
   -   Ad alanı büyük küçük harfleri değiştirme `testCode` için `TestCode`.  
   
-- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Tanıtıma' değiştirerek tür adı 'Tanıtım' büyük küçük harfleri düzeltin.  
+- [CA1709: Tanımlayıcıları büyük/küçük harfleri doğru](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Tanıtıma' değiştirerek tür adı 'Tanıtım' büyük küçük harfleri düzeltin.  
   
   -   Üye adını değiştirmek `Demo`.  
   
-- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Öğesine' değiştirerek üyesi adı 'öğesini' büyük küçük harfleri düzeltin.  
+- [CA1709: Tanımlayıcıları büyük/küçük harfleri doğru](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: 'Öğesine' değiştirerek üyesi adı 'öğesini' büyük küçük harfleri düzeltin.  
   
   -   Üye adını değiştirmek `Item`.  
   
-- [CA1710: Tanımlayıcıların sonekleri doğru soneki olmalıdır](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: '' özel durum' sonlandırmak için yeniden adlandırma testCode.demo'.  
+- [CA1710: Tanımlayıcılar doğru soneki olmalıdır](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: 'TestCode.demo' end 'Özel durum' içinde yeniden adlandırın.  
   
   -   Sınıfı için kendi oluşturucular adını değiştirip `DemoException`.  
   
@@ -166,7 +161,7 @@ Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen 
   
        Projeyi yeniden derleyin.  
   
-- [CA2237: ISerializable türleri SerializableAttribute ile](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Bu türü ISerializable uyguladığı 'gösteri' türüne [Serializable] özniteliğini ekleyin.  
+- [CA2237: İşareti ISerializable türleri SerializableAttribute ile](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Bu türü ISerializable uyguladığı 'gösteri' türüne [Serializable] özniteliğini ekleyin.  
   
   -   Ekleme `[Serializable ()]` öznitelik sınıfına `demo`.  
   
@@ -208,11 +203,8 @@ namespace TestCode
   
    2. Seçin **eylemleri**, ardından **ileti Gizle**ve ardından **proje gizleme dosyası**.  
   
-      Daha fazla bilgi için [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Daha fazla bilgi için [nasıl yapılır: Menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
 2. Projeyi yeniden derleyin.  
   
     Projeyi herhangi bir uyarı veya hata derler.
-
-
-

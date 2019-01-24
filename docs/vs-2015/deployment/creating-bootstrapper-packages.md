@@ -1,14 +1,9 @@
 ---
 title: Önyükleyici paketleri oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 89bb8b28333bd7607dda9515a137bd75283a9e5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49910933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779827"
 ---
 # <a name="creating-bootstrapper-packages"></a>Önyükleyici Paketleri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,6 +129,3 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md)   
  [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)   
  [Yüklemenize başlamak için Visual Studio 2005 Bootstrapper kullanın](http://go.microsoft.com/fwlink/?LinkId=107537)
-
-
-

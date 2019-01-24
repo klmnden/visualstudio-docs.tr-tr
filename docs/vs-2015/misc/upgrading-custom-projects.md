@@ -1,27 +1,22 @@
 ---
 title: Özel projelerini yükseltme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading project systems
 - projects [Visual Studio SDK], upgrading
 - project system upgrades [Visual Studio]
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
-manager: douge
-ms.openlocfilehash: 12b99770a7ab884e077ad6ba051a35d6e5316a49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b222da27d07cc08774a525819edf2d462bd28844
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795498"
 ---
 # <a name="upgrading-custom-projects"></a>Özel projelerini yükseltme
 Değiştirirseniz, ürünün farklı Visual Studio sürümleri arasında proje dosyasındaki bilgileri kalıcı sonra proje dosyası eski sürümden yeni sürüme yükseltme desteklemeniz gerekiyor. Katılmak izin veren yükseltmeyi desteklediği için **Visual Studio Dönüştürme Sihirbazı**, uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> arabirimi. Bu arabirim, kopyalama yükseltmek için yalnızca mekanizması kullanılabilir içerir. Proje yükseltme açılır çözümün bir parçası olarak gerçekleşir. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Arabirimi proje fabrikası tarafından uygulanan ya da proje fabrikadan elde edilebilir en az olmalıdır.  
@@ -114,7 +109,7 @@ Değiştirirseniz, ürünün farklı Visual Studio sürümleri arasında proje d
   4.  Ortam çağrıları `IVsProjectUpgrade::UpgradeProject` project nesnesini yükseltilmesi olup olmadığını belirlemek ikinci bir kez. Ancak, bu çağrı yeni, ikinci projesi Project2 örneğini yapılır. Bu çözümde açık projedir.  
   
       > [!NOTE]
-      >  İlk projenizi, Project1, etkin olmayan duruma yerleştirilir ve ardından döndürmesi gereken örneğinde <xref:Microsoft.VisualStudio.VSConstants.S_OK> ilk çağrısından, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> uygulaması. Bkz: [temel proje](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) uygulaması için `IVsProjectUpgrade::UpgradeProject`.  
+      >  İlk projenizi, Project1, etkin olmayan duruma yerleştirilir ve ardından döndürmesi gereken örneğinde <xref:Microsoft.VisualStudio.VSConstants.S_OK> ilk çağrısından, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> uygulaması. Bkz: [temel proje](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) uygulaması için `IVsProjectUpgrade::UpgradeProject`.  
   
   5.  Çağırmanızı <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ve bir değer geçirmek <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> için `rgfQueryEdit` parametresi.  
   
@@ -123,6 +118,6 @@ Değiştirirseniz, ürünün farklı Visual Studio sürümleri arasında proje d
   Yükseltme başarısız olursa, dönüş <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> gelen `IVsProjectUpgrade::UpgradeProject`. Yükseltme gerekli olan veya yükseltme, kabul için seçtiğiniz `IVsProjectUpgrade::UpgradeProject` bir İşlemsiz çağırın. Size dönüş yaparsa <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, çözüm projeniz için bir yer tutucu düğümünün eklenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Dönüştürme Sihirbazı](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio Dönüştürme Sihirbazı](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Proje öğeleri yükseltme](../misc/upgrading-project-items.md)   
  [Projeler](../extensibility/internals/projects.md)

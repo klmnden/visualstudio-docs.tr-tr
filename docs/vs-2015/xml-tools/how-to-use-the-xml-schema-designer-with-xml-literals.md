@@ -1,27 +1,22 @@
 ---
 title: 'Nasıl yapılır: XML şema tasarımcısını XML değişmez değerleri ile kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794717"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Nasıl yapılır: XML şema tasarımcısını XML değişmez değerleri ile kullanma
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Nasıl yapılır: XML Şema Tasarımcısını XML Değişmez Değerleri ile Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -31,7 +26,7 @@ Bu konuda, bir Visual Basic projesinde sabit değeri bir XML ile ilişkili bir �
   
 1.  Visual Studio 2010'u başlatın.  
   
-2.  Gelen **dosya** menüsünde **yeni**ve ardından **proje**. **Yeni proje** iletişim kutusu görüntülenir. İçin **proje türleri**seçin **diğer diller** seçip **Visual Basic**. İçin **şablonları**, konsol uygulaması'nı seçin. Yazarak `XMLLiterals` içinde **adı** alan ve bir proje konumda **konumu** alan. **Tamam**'ı tıklatın.  
+2.  Gelen **dosya** menüsünde **yeni**ve ardından **proje**. **Yeni Proje** iletişim kutusu görünür. İçin **proje türleri**seçin **diğer diller** seçip **Visual Basic**. İçin **şablonları**, konsol uygulaması'nı seçin. Yazarak `XMLLiterals` içinde **adı** alan ve bir proje konumda **konumu** alan. **Tamam**'ı tıklatın.  
   
      Yeni poject oluşturulur. XMLLiterals proje bir Visual Basic kaynak dosyası, Module1.vb içeriyor.  
   
@@ -43,7 +38,7 @@ Bu konuda, bir Visual Basic projesinde sabit değeri bir XML ile ilişkili bir �
   
 3.  Çözüm Gezgini'nde proje adına sağ tıklayın, seçin **Ekle**ve ardından **mevcut öğe...** . **AddExisting öğesi** iletişim kutusu görüntülenir. PurchaseOrderSchema.xsd dosyasına gidin, seçin ve ardından **Ekle**.  
   
-     XMLLiterals proje artık iki dosya içeriyor: Module1.vb ve PurchaseOrderSchema.xsd.  
+     XMLLiterals proje artık iki dosya içerir: Module1.vb ve PurchaseOrderSchema.xsd.  
   
 ### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Projeye dahil XSD dosyası göre bir XML değişmez değer, Visual Basic kodunu eklemek için  
   
@@ -79,6 +74,3 @@ Bu konuda, bir Visual Basic projesinde sabit değeri bir XML ile ilişkili bir �
 2.  Herhangi bir XML değişmez değeri ya da bir XML ad alanı alma XML düğümünü sağ tıklatın ve seçin **şema Gezgini'nde Göster**.  
   
      XML şema Gezgini'ni ayarlama XML değişmez değer assotiated XML şeması ile sahip bir Visual Basic dosyası ile yan yana görüntülenir.
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: '9. adım: Gözden geçirme, açıklama ve kodunuzu test etmek | Microsoft Docs'
-ms.custom: ''
+title: '9. Adım: Gözden geçirme, açıklama ve kodunuzu test etmek | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796743"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
   
 - Ne zaman tıklattığınız **resim Göster** düğmesini Windows Form Tasarımcısı'nda, IDE otomatik olarak eklenen bir *yöntemi* program kodunuza için.  
   
-- Yöntemlerdir nasıl kodunuzu düzenleme şeklinizdir: nasıl kodunuzun gruplandırılma şeklidir.  
+- Kodunuzu düzenleme şeklinizdir nasıl yöntemler şunlardır: Bunu nasıl kodunuzun gruplandırılma şeklidir.  
   
 - Çoğu zaman bir yöntem bir küçük birçok şeyi nasıl gibi belirli bir sırayla yapar, `showButton_Click()` yöntemi bir iletişim kutusu gösterir ve bir resim yükler.  
   
@@ -50,7 +45,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
   
    Deyimleri ne programlarınızın şeyler yaptıran şeydir. Visual C# içinde bir ifade her zaman noktalı virgülle biter. Visual Basic'te, bir satırın sonuna bir deyimin sonudur. (Visual Basic'de noktalı virgül gerekiyor.) Önceki deyim söyler, `PictureBox` ile kullanıcının seçtiği dosyayı yüklemek için Denetim **OpenFileDialog** bileşeni.  
   
-  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+  ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-add-comments"></a>Yorum eklemek için  
   
@@ -90,15 +85,12 @@ Resim Görüntüleyici
     > [!NOTE]
     >  Herhangi bir görüntü görmüyorsanız **bir resim dosyası seçin** iletişim kutusunda, olduğundan emin olun "tüm dosyalar (*.\*)" filtresinin seçili iletişim kutusunun alt sağ tarafındaki aşağı açılan listesinde.  
   
-3.  Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle TableLayoutPanel ve FlowLayoutPanel kapsayıcılarını kullandınız: Bunlar formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.  
+3.  Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle TableLayoutPanel ve FlowLayoutPanel kapsayıcılarını kullandınız: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.  
   
      Şimdi, daha büyük resimler, resim görüntüleyicinizin kenarlıklarının dışına gider. Sonraki adımda, resimleri pencereye sığdırmak için kod ekleyeceksiniz.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 10: ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [adım 8: bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

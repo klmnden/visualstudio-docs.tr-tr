@@ -1,12 +1,9 @@
 ---
-title: 'Katman diyagramları: Başvuru | Microsoft Docs'
-ms.custom: ''
+title: 'Katman diyagramları: Referans | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,15 +21,15 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783226"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803838"
 ---
-# <a name="layer-diagrams-reference"></a>Katman Diyagramları: Başvuru
+# <a name="layer-diagrams-reference"></a>Katman diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst düzey, mantıksal mimarisini görselleştirmek için. Bir katman diyagramı fiziksel yapıları sisteminizde adı verilen mantıklı, soyut gruplar halinde düzenler *katmanları*. Bu katmanlar, yapıların gerçekleştirdiği temel görevleri veya sistemin ana bileşenlerini açıklar. Her katman aynı zamanda daha ayrıntılı görevleri açıklayan iç içe katmanlar içerebilir.  
@@ -51,7 +48,7 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
   
 - İadeniz doğrulama dahil ederek geliştirme ve kodunuzun bakım sırasında hedeflenen mimariyi güçlendirmek ve yapı işlemleri.  
   
-  Bu konuda, bir katman diyagramı üzerinde kullanabileceğiniz öğeleri açıklar. Oluşturun ve katman diyagramları çizmek için bkz hakkında daha ayrıntılı bilgi için [katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md). Katman desenleri hakkında daha fazla bilgi için ziyaret [desenler ve uygulamalar site](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Bu konuda, bir katman diyagramı üzerinde kullanabileceğiniz öğeleri açıklar. Oluşturun ve katman diyagramları çizmek için bkz hakkında daha ayrıntılı bilgi için [katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md). Katman desenleri hakkında daha fazla bilgi için ziyaret [desenler ve uygulamalar site](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Katman diyagramları okuma  
  ![Katman diyagramlarındaki öğeler](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -77,7 +74,7 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
   
   Katmanlar ve yapılar bağlama hakkında daha fazla bilgi için bkz:  
   
-- [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
+- [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)  
   
 - [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
@@ -94,11 +91,8 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
     |----------------------------------|---------------------|  
     |**Kategorileri**|Sınıfı, ad alanı, kaynak dosyasını ve benzeri gibi bir yapı türü|  
     |**Katman**|Yapıya katmanı|  
-    |**Doğrulamayı destekler**|Varsa **True**, sonra da katman doğrulama işlemine proje ya da bu öğeden bağımlılıklara uygun olduğunu doğrulayabilirsiniz.<br /><br /> Varsa **False**, sonra bağlantının katman doğrulama işleminde yer almaz.<br /><br /> Daha fazla bilgi için [katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).|  
+    |**Doğrulamayı destekler**|Varsa **True**, sonra da katman doğrulama işlemine proje ya da bu öğeden bağımlılıklara uygun olduğunu doğrulayabilirsiniz.<br /><br /> Varsa **False**, sonra bağlantının katman doğrulama işleminde yer almaz.<br /><br /> Daha fazla bilgi için [katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md).|  
     |**tanımlayıcı**|Bağlantılı yapıt başvurusu|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)
-
-
-

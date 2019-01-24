@@ -1,12 +1,9 @@
 ---
-title: 'UML Bileşen Diyagramları: Yönergeler | Microsoft Docs'
-ms.custom: ''
+title: 'UML Bileşen Diyagramları: Yönergeleri | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801486"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787392"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>UML Bileşen Diyagramları: Yönergeler
+# <a name="uml-component-diagrams-guidelines"></a>UML Bileşen Diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin yapısını göstermek için. Video gösterimi için bkz. [Bileşen diyagramları kullanarak fiziksel yapıyı tasarlama](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -49,13 +46,13 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 |Başka diyagram|Tasarımınızın bu yönlerini tartışmanıza ve iletişim kurmanıza yardımcı olur|  
 |-------------------|--------------------------------------------------------------------|  
-|UML Sıralı Diyagramı|-Sistemin bileşenleri arasındaki etkileşimler<br />-Etkileşimler ve bileşen içindeki bölümlerin arasında.<br /><br /> Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|UML Sınıf Diyagramı|-Bir bileşenin arabirimleri. Sınıf diyagramı arabirimin yöntemlerini ayrıntılı olarak incelemenizi sağlar.<br />-Bileşenlerin arabirimleri arasında parametrelerde gönderilen verileri.<br /><br /> Daha fazla bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).|  
-|Etkinlik Diyagramları|-Gelen iletilere yanıt olarak bir bileşen tarafından gerçekleştirilen iç işleme.<br /><br /> Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Katman Diyagramları|-Mantıksal mimari katmanları bileşenleriniz için.<br /><br /> Daha fazla bilgi için [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md).|  
+|UML Sıralı Diyagramı|-Sistemin bileşenleri arasındaki etkileşimler<br />-Etkileşimler ve bileşen içindeki bölümlerin arasında.<br /><br /> Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|UML Sınıf Diyagramı|-Bir bileşenin arabirimleri. Sınıf diyagramı arabirimin yöntemlerini ayrıntılı olarak incelemenizi sağlar.<br />-Bileşenlerin arabirimleri arasında parametrelerde gönderilen verileri.<br /><br /> Daha fazla bilgi için [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md).|  
+|Etkinlik Diyagramları|-Gelen iletilere yanıt olarak bir bileşen tarafından gerçekleştirilen iç işleme.<br /><br /> Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Katman Diyagramları|-Mantıksal mimari katmanları bileşenleriniz için.<br /><br /> Daha fazla bilgi için [katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Bileşen diyagramları çizmek için temel adımlar  
- Bileşen diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md).  
+ Bileşen diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md).  
   
  Tasarım aşamasında Bileşen diyagramlarının nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
   
@@ -149,7 +146,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 -   Ndeki arabirimi bulun **UML Model Gezgini** ve onu buradan bileşene sürükleyin.  
   
-     veya  
+     -veya-  
   
 -   Başvuruyu diyagramdan arabirime kopyalayıp yapıştırın.  
   
@@ -279,7 +276,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 1.  Yeni bir sıralı diyagram oluşturun.  
   
-     Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Dış bileşen, kullanıcı, cihaz veya bu bileşene iletiler gönderen diğer aktör (1) için yaşam çizgisi oluşturun.  
   
@@ -301,7 +298,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
  Ayarlayarak bu modelde gösterebilir **dolaylı olarak Örneklendirilmiş** bileşenin özelliği. Bu durumda, bileşenin tüm arabirimleri yetki iç parçalara aktarılarak bağlantı noktaları üzerinde olmalıdır.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Her Parça İçindeki İşlemi Açıklama  
- Etkinlik diyagramlarını bileşenin gelen her iletiyi nasıl işlediğini göstermek için kullanabilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+ Etkinlik diyagramlarını bileşenin gelen her iletiyi nasıl işlediğini göstermek için kullanabilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Etkinlik diyagramı veri arabelleği ile](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
  [Video: Bileşen diyagramları kullanarak fiziksel yapıyı tasarlama](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-
