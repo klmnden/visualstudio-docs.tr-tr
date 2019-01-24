@@ -1,25 +1,22 @@
 ---
 title: Modelleri ve diyagramları diğer Visual Studio sürümlerinde okuma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766164"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +59,12 @@ Bir model oluşturmayı desteklemiyor Visual Studio sürümünde bir modeli açt
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Bir katman diyagramı, mevcut ya da önerilen bir mimari yapısı gösterilmektedir. Kodu yazıldığında otomatik olarak bir katman diyagramına karşı doğrulanabilir.|  
-|[UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|Etkinlik diyagramı, iş sürecini veya yazılım, iş akışı gösterir.|  
-|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|Türleri ve ilişkiler kod, veritabanı şemaları, protokolleri veya iş etki alanını tanımlamak için kullanılan terimler sözlüğü gibi birçok bağlamlarda kullanılan bir sınıf diyagramı gösterir.|  
+|[Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Bir katman diyagramı, mevcut ya da önerilen bir mimari yapısı gösterilmektedir. Kodu yazıldığında otomatik olarak bir katman diyagramına karşı doğrulanabilir.|  
+|[UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|Etkinlik diyagramı, iş sürecini veya yazılım, iş akışı gösterir.|  
+|[UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|Türleri ve ilişkiler kod, veritabanı şemaları, protokolleri veya iş etki alanını tanımlamak için kullanılan terimler sözlüğü gibi birçok bağlamlarda kullanılan bir sınıf diyagramı gösterir.|  
 |[UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)|Bir bileşen diyagramı ayrılabilir parçaların bir yazılım tasarımı ve arabirimlerini gösterir.|  
-|[UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|Sıralı diyagram, yazılım tasarımı öğeler arasındaki etkileşimler gösterilmektedir.|  
-|[UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|Bir kullanım durumu diyagramı, sistemi ve belirli hedeflere ulaşmak için gerçekleştirebileceği etkinlikleri kullanıcıları gösterir.|  
+|[UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|Sıralı diyagram, yazılım tasarımı öğeler arasındaki etkileşimler gösterilmektedir.|  
+|[UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|Bir kullanım durumu diyagramı, sistemi ve belirli hedeflere ulaşmak için gerçekleştirebileceği etkinlikleri kullanıcıları gösterir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)
-
-
-

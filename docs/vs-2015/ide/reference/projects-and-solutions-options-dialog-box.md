@@ -1,14 +1,9 @@
 ---
 title: Projeler ve çözümler, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -16,13 +11,13 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246200"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758207"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projeler ve Çözümler, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,17 +26,17 @@ ms.locfileid: "49246200"
 Varsayılan yolunu ayarlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje klasörleri ve varsayılan davranışını belirler **çıkış** penceresinde **görev listesi**, ve **Çözüm Gezgini** olarak projeleri geliştirilen ve derlenen. Bu iletişim kutusuna erişmek için tıklayın **Araçlar / Seçenekler** genişletin **projeler ve çözümler**, tıklatıp **genel**.  
   
 > [!NOTE]
->  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **genel geliştirme ayarları** unutmayın. Ayarlarınızı değiştirmek veya görüntülemek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **genel geliştirme ayarları** unutmayın. Ayarlarınızı değiştirmek veya görüntülemek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ayarlar  
  **Projeleri konumu**  
  Yeni proje ve çözüm klasörleri ve dizinleri oluşturulduğu varsayılan konumunu ayarlar. Birçok iletişim kutusu da başlangıç noktaları klasörü için bu seçeneği ayarlamak konumu kullanın. Örneğin, Proje Aç iletişim kutusu için Projelerim kısayol bu konumu kullanır.  
   
  **Kullanıcı proje şablonları konumu**  
- Tarafından kullanılan varsayılan konumu ayarlar **yeni proje** listesini oluşturmak için iletişim kutusu **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: bulun ve düzenleme şablonlarını](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Tarafından kullanılan varsayılan konumu ayarlar **yeni proje** listesini oluşturmak için iletişim kutusu **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Kullanıcı öğe Şablonları konumu**  
- Tarafından kullanılan varsayılan konumu ayarlar **Yeni Öğe Ekle** listesini oluşturmak için iletişim kutusu **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: bulun ve düzenleme şablonlarını](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Tarafından kullanılan varsayılan konumu ayarlar **Yeni Öğe Ekle** listesini oluşturmak için iletişim kutusu **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Hata listesi bir derleme hatayla bittiğinde her zaman göster**  
  Açılır **hata listesi** derleme tamamlandığında, yalnızca bir projeyi oluşturmak başarısız olursa penceresi. Derleme işlemi sırasında oluşan hatalar görüntülenir. Bu seçenek işaretli değilse, hataları oluşmaya ancak yapı tamamlandığında pencerenin açılmaz. Bu seçenek varsayılan olarak etkindir.  
@@ -64,13 +59,10 @@ Varsayılan yolunu ayarlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje
  Yeni bir proje oluşturun veya tam olarak (örneğin, bir UNC yolu veya HTTP yolu) güvenli olmayan bir konumda mevcut bir projeyi açmayı denerseniz, bir ileti görüntülenir. İleti oluşturmak veya tam olarak güvenilmeyen bir konumda bir projeyi açmayı denemek her zaman görüntülenip görüntülenmeyeceğini belirtmek için bu seçeneği kullanın.  
   
  **Derleme başladığında çıkış penceresini göster**  
- Otomatik olarak çıktı penceresinde çözümünün gizliliğe IDE görüntüler oluşturur. Daha fazla bilgi için [nasıl yapılır: çıkış penceresini denetleme](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Bu seçenek varsayılan olarak etkindir.  
+ Otomatik olarak çıktı penceresinde çözümünün gizliliğe IDE görüntüler oluşturur. Daha fazla bilgi için [nasıl yapılır: Çıkış penceresini denetleme](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Bu seçenek varsayılan olarak etkindir.  
   
  **Sembolik yeniden adlandırmayı olduğunda yeniden adlandırmayı sor**  
  Bu onay kutusu seçildiğinde, isteyen bir ileti kutusu görüntüler olup olmadığını [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projedeki tüm başvuruları kod öğesine de yeniden adlandırmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Seçenekler İletişim Kutusu, Projeler ve Çözümler, Derleme ve Çalıştırma](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-
-
-

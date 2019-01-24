@@ -1,14 +1,9 @@
 ---
 title: MSBuild dönüşümleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
@@ -16,13 +11,13 @@ ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223712"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773091"
 ---
 # <a name="msbuild-transforms"></a>MSBuild Dönüşümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Dönüşüm bir bire bir öğe listesinin başka bir dönüştürmedir. Bir proj
 ## <a name="dependency-analysis"></a>Bağımlılık çözümlemesi  
  Dönüşümler dönüştürülmüş öğe listesi ve özgün öğe listesi arasında bire bir eşleme garanti. Bu nedenle, bir hedef oluşturur girişlere dönüştürmeler çıkışları [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zaman damgaları girişler ve çıkışlar, analiz ve atlayın, yapı veya kısmen hedef yeniden karar.  
   
- İçinde [kopyalama görevi](../msbuild/copy-task.md) aşağıdaki örnekte, her bir dosyanın `BuiltAssemblies` öğe listesi eşleyen bir dönüştürme kullanılarak belirtilen görev, hedef klasörde bir dosyaya `Outputs` özniteliği. Bir dosya varsa `BuiltAssemblies` öğe listesi değişikliklerinin `Copy` yalnızca değiştirilen dosya için görev çalıştırılır ve diğer tüm dosyalar atlanacak. Bağımlılık analizi ve dönüşümler kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: artımlı olarak derleme](../msbuild/how-to-build-incrementally.md).  
+ İçinde [kopyalama görevi](../msbuild/copy-task.md) aşağıdaki örnekte, her bir dosyanın `BuiltAssemblies` öğe listesi eşleyen bir dönüştürme kullanılarak belirtilen görev, hedef klasörde bir dosyaya `Outputs` özniteliği. Bir dosya varsa `BuiltAssemblies` öğe listesi değişikliklerinin `Copy` yalnızca değiştirilen dosya için görev çalıştırılır ve diğer tüm dosyalar atlanacak. Bağımlılık analizi ve dönüşümler kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Artımlı olarak derleme](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -117,7 +112,4 @@ extension: .xsd
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [Nasıl Yapılır: Artımlı Olarak Derleme](../msbuild/how-to-build-incrementally.md)
-
-
-
+ [Nasıl yapılır: Artımlı olarak derleme](../msbuild/how-to-build-incrementally.md)

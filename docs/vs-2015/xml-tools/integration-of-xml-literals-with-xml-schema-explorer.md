@@ -1,25 +1,20 @@
 ---
 title: XML değişmez değerlerini XML Şeması Gezgini ile tümleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 60b778ae46dbd44f85973f96baab6e474f60a1f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52d0fe19390703f3c5262de1dbcc9a52ff108fe7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784867"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML değişmez değerlerini XML Şeması Gezgini ile tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,4 @@ Visual Basic, Visual Basic kodunuzda doğrudan XML parçalarının birleştirebi
  Bu özellik, Visual Studio 2008 SP1'de sunulmuştur. Bu özellik ayrıntılı olarak açıklanmıştır Röportaj izlemek için bkz [Channel 9 görüşme: Visual Studio 2008 SP1'de XML Şeması Gezgini](http://go.microsoft.com/fwlink/?LinkId=140183).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl Yapılır: XML Şema Tasarımcısını XML Değişmez Değerleri ile Kullanma](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)
-
-
-
+ [Nasıl yapılır: XML şema tasarımcısını XML değişmez değerleri ile kullanma](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

@@ -1,29 +1,27 @@
 ---
 title: .NET için Visual Studio veri araçları | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 6fd1d55b74997e855cbbc4a3cdfe9288f19806a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49859713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799409"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına bağlanma, bellekte veri modelleme ve veri kullanıcı arabiriminde görüntülemek için desteği sağlar.  Veri erişimi işlevleri sağlayan .NET Framework sınıfları olarak bilinen [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Visual Studio'da araçları verileriyle birlikte bir ADO.NET, başlangıçta öncelikli olarak ilişkisel veritabanı ve XML desteklemek için tasarlanmıştır. Bugünlerde çoğu NoSQL veritabanı satıcıların veya üçüncü taraflar, ADO.NET sağlayıcılar sunar.  
   
- Visual Studio 2015 güncelleştirme 2, en son güncelleştirmeleri içeren [SQL Server veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), azure'daki en son özelliklere yönelik desteği etkinleştiren [SQL veritabanı](https://azure.microsoft.com/en-us/services/sql-database/) ve [SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) ADO.NET veri kümeleri ve ilgili türler hariç destekler. .NET Core'u hedefleyen ve bir nesne ilişkisel eşleme (ORM) katmanı gerektirir, kullanmanız [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 güncelleştirme 2, en son güncelleştirmeleri içeren [SQL Server veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), azure'daki en son özelliklere yönelik desteği etkinleştiren [SQL veritabanı](https://azure.microsoft.com/services/sql-database/) ve [SQL Server 2016](https://www.microsoft.com/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) ADO.NET veri kümeleri ve ilgili türler hariç destekler. .NET Core'u hedefleyen ve bir nesne ilişkisel eşleme (ORM) katmanı gerektirir, kullanmanız [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Aşağıdaki diyagram, temel mimarisinin basitleştirilmiş bir görünümünü gösterir:  
   
@@ -69,10 +67,3 @@ Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

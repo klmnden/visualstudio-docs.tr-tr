@@ -1,27 +1,22 @@
 ---
-title: 'İzlenecek yol: Visual C# veya Visual Basic ile basit uygulama oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Görselle basit bir uygulama oluşturma C# veya Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802622"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Visual C# veya Visual Basic ile Basit Uygulama Oluşturma
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Görselle basit bir uygulama oluşturma C# veya Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz birçok araç, iletişim kutusu ve tasarımcı hakkında bilgi sahibi olacaksınız. Tümleşik geliştirme ortamında (IDE) çalışma hakkında daha fazla bilgi edinirken, basit bir "Merhaba Dünya" stili uygulama oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyecek ve hataları ayıklayacaksınız.  
@@ -35,18 +30,18 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
  [Hata ayıklama ve uygulamayı test etme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Bu izlenecek yol, Visual Studio Prosessional sürümünü temel almaktadır ve bu sürüm, bu izlenecek yol için projeyi oluştururken temel olarak kullanacağınız WPF Uygulaması şablonunu sunar. Windows Masaüstü için Visual Studio Express sürümü de bu şablonu sağlar, ancak Windows için Visual Studio Express ve Web için Visual Studio Express sağlamaz. Visual Studio Express için Windows kullanımı hakkında tanıtıcı bilgiler için bkz [Windows Store uygulamaları için Geliştirici Merkezi](http://msdn.microsoft.com/windows/apps/br229519). Web için Visual Studio Express kullanımı hakkında tanıtıcı bilgiler için bkz [ASP.NET ile çalışmaya başlama](http://www.asp.net/get-started). Ayrıca, Visual Studio sürümünüz ve kullandığınız ayarlar, kullanıcı arabiriminin bazı öğelerinin adlarını ve bulundukları yerleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Bu izlenecek yol, Visual Studio Prosessional sürümünü temel almaktadır ve bu sürüm, bu izlenecek yol için projeyi oluştururken temel olarak kullanacağınız WPF Uygulaması şablonunu sunar. Windows Masaüstü için Visual Studio Express sürümü de bu şablonu sağlar, ancak Windows için Visual Studio Express ve Web için Visual Studio Express sağlamaz. Visual Studio Express için Windows kullanımı hakkında tanıtıcı bilgiler için bkz [Windows Store uygulamaları için Geliştirici Merkezi](http://msdn.microsoft.com/windows/apps/br229519). Web için Visual Studio Express kullanımı hakkında tanıtıcı bilgiler için bkz [ASP.NET ile çalışmaya başlama](http://www.asp.net/get-started). Ayrıca, Visual Studio sürümünüz ve kullandığınız ayarlar, kullanıcı arabiriminin bazı öğelerinin adlarını ve bulundukları yerleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_ConfigureIDE"></a> IDE'yi yapılandırma  
  Visual Studio'yu ilk kez başlattığınızda, Visual Studio, bir Microsoft hizmeti hesabı (MSA oturum), oturum ister [Visual Studio'ya oturum](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Oturum açın ve gerekmez, daha sonra yapın.  
   
  Visual Studio başlatma, sonraki bir dizi önceden tanımlı bir özelleştirmeler grubunu IDE'ye uygulayan ayarlar bileşimini seçmelisiniz. Her bir ayarlar bileşimi, uygulamaları geliştirmenizi kolaylaştırmak amacıyla tasarlanmıştır.  
   
- Bu izlenecek yol, uyguladığınız varsayılmaktadır **genel geliştirme ayarları**, IDE'ye en az miktarda özelleştirmeyi uygulayan. Zaten C# veya Visual Basic (her ikisi de iyi bir seçenek olan) seçtiyseniz, ayarlarınızı değiştirmeniz gerekmez.  Ayarlarınızı değiştirmek istiyorsanız, kullanabileceğiniz **içeri ve dışarı aktarma ayarları Sihirbazı**. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Bu izlenecek yol, uyguladığınız varsayılmaktadır **genel geliştirme ayarları**, IDE'ye en az miktarda özelleştirmeyi uygulayan. Zaten C# veya Visual Basic (her ikisi de iyi bir seçenek olan) seçtiyseniz, ayarlarınızı değiştirmeniz gerekmez.  Ayarlarınızı değiştirmek istiyorsanız, kullanabileceğiniz **içeri ve dışarı aktarma ayarları Sihirbazı**. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Visual Studio'yu açtıktan sonra araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını tanıyabilirsiniz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Uygulama penceresinin ortasında olup **başlangıç sayfası**. Bir çözüm veya projeyi yüklediğinizde, alanda görünür düzenleyiciler ve tasarımcılar burada **başlangıç sayfası** olduğu. Uygulama geliştirirken zamanınızın çoğunu bu orta alanda geçireceksiniz.  
   
- Şekil 2: Visual Studio IDE'si  
+ Şekil 2: Visual Studio IDE  
   
  ![Genel Ayarları uygulanmış IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE IDEwithgeneralsettings")  
   
@@ -72,7 +67,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
    ![IDE ile uygulanan koyu tema](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
   
-   Bu kılavuzda kalan resimler için kullanılan renk teması açık temadır. IDE'yi özelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Bu kılavuzda kalan resimler için kullanılan renk teması açık temadır. IDE'yi özelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Basit bir uygulama oluşturma  
   
@@ -97,7 +92,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
     ![Visual C oluşturma&#35; WPF projesi, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE NewProjectcsharp")  
   
-   HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. WPF Tasarımcısı, bölünmüş bir görünüm halinde bir MainWindow.XAML'in XAML görünümünü ve Tasarım görünümünü gösterir. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün.  Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. (Daha fazla bilgi için [Windows Forms geliştiriciler için WPF Tasarımcısı](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)). Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
+   HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. WPF Tasarımcısı, bölünmüş bir görünüm halinde bir MainWindow.XAML'in XAML görünümünü ve Tasarım görünümünü gösterir. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün.  Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. (Daha fazla bilgi için [Windows Forms geliştiriciler için WPF Tasarımcısı](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
   
    Şekil 5: Proje öğeleri  
   
@@ -195,7 +190,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
    Pencereniz aşağıdaki gösterime benzemelidir.  
   
-   Şekil 9: Son Greetings Kullanıcı Arabirimi  
+   Şekil 9: Son Greetings kullanıcı Arabirimi  
   
    ![Greetings form denetimi etiketleriyle](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE Greetingswithconrollabels")  
   
@@ -264,7 +259,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
     ![Hata ayıklama menüsünden hata ayıklamayı Başlat](../ide/media/exploreide-startdebugging.png "ExploreIDE StartDebugging")  
   
-    Bir ileti kutusu görüntülenerek IOException hatası oluştuğu belirtilir: 'mainwindow.xaml' kaynağının yeri belirlenemiyor.  
+    Bir Ioexception oluştu belirten bir iletişim kutusu görüntülenir: 'Mainwindow.xaml' kaynağının yeri belirlenemiyor.  
   
 2. Seçin **Tamam** düğmesini ve ardından hata ayıklayıcıyı durdurun.  
   
@@ -340,6 +335,3 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
  [Visual Studio 2015'teki yenilikler](../what-s-new-in-visual-studio-2015.md)   
  [Visual Studio ile geliştirmeye başlayın](../ide/get-started-developing-with-visual-studio.md)   
  [Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)
-
-
-

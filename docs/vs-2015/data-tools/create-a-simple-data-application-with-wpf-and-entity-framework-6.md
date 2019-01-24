@@ -1,23 +1,20 @@
 ---
 title: WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0237555a3e1aceb6a444300c5470f1c83a52d94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774470"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +27,9 @@ Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entit
 ## <a name="install-and-connect-to-northwind"></a>Yükleme ve Northwind olarak bağlanma  
  Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır. ADO.NET veri sağlayıcısının bu ürün için Entity Framework destekliyorsa, aynı zamanda diğer SQL veritabanı ürünlerle çalışması gerekir.  
   
-1.  Henüz yapmadıysanız, SQL Server 2014 LocalDB Express gelen 32 bit yükleme [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Henüz yapmadıysanız, SQL Server 2014 LocalDB Express gelen 32 bit yükleme [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
   
-2.  Buradaki yönergeleri izleyerek Northwind örnek veritabanını yüklemek: [yüklemek SQL Server örnek veritabanları](../data-tools/install-sql-server-sample-databases.md).  
+2.  Northwind örnek veritabanıyla kurulan Buradaki yönergeleri izleyerek yükleyin: [SQL Server örnek veritabanlarını yüklemek](../data-tools/install-sql-server-sample-databases.md).  
   
 3.  [Yeni bağlantı ekleme](../data-tools/add-new-connections.md) Northwind için.  
   
@@ -50,7 +47,7 @@ Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entit
   
 4.  Northwind veritabanına dayalı bir model oluşturmak için Visual Studio artık kullanabiliriz.  
   
-## <a name="create-the-model"></a>Model oluşturma  
+## <a name="create-the-model"></a>Modeli oluşturma  
   
 1. Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle &#124; yeni öğe**. Sol bölmede, C# düğümü seçin **veri** ve Orta bölmede seçin **ADO.NET varlık veri modeli**.  
   
@@ -709,4 +706,3 @@ Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entit
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework belgeleri](https://msdn.microsoft.com/data/ee712907.aspx)
-

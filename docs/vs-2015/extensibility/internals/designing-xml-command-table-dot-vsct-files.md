@@ -1,26 +1,21 @@
 ---
 title: XML komut tablosu tasarlama (. Vsct) dosyaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764012"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML komut tablosu tasarlama (. Vsct) dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ VSPackage için komut öğelerin Görünüm ve düzeninin bir XML komut tablosu 
   
  Çalıştırarak yeni bir VSPackage'ı oluşturduğunuzda [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] paketi şablonu şablon gerekli öğelerle .vsct dosyası için bir menü komutu, araç penceresi ya da özel bir düzenleyici, seçimlerinize bağlı olarak oluşturur. Bu .vsct dosyası, belirli bir VSPackage gereksinimlerini karşılamak için daha sonra değiştirilebilir. .Vsct dosyası değiştirme örnekleri görmek için örneklerde [genişletme menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).  
   
- Yeni, boş .vsct dosyası oluşturma için bkz: [nasıl yapılır: oluşturma bir. Vsct dosya](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). XML öğeleri, öznitelikleri ve değerleri oluşturulduktan sonra komut öğesi düzeni tanımlamak için dosyaya ekleyin. Ayrıntılı bir XML şeması için bkz: [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md).  
+ Yeni, boş .vsct dosyası oluşturma için bkz: [nasıl yapılır: Oluşturma bir. Vsct dosya](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). XML öğeleri, öznitelikleri ve değerleri oluşturulduktan sonra komut öğesi düzeni tanımlamak için dosyaya ekleyin. Ayrıntılı bir XML şeması için bkz: [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc ve .vsct dosyaları arasındaki farklar  
  Şimdi de .ctc dosya biçimi kullanım dışı olarak anlamı .vsct dosyası XML etiketleri arkasındaki aynı olsa da, kendi uygulama biraz farklıdır.  
@@ -71,7 +66,7 @@ VSPackage için komut öğelerin Görünüm ve düzeninin bir XML komut tablosu 
   
   Yeni derleyici, vsct.exe, .ctc hem .vsct dosyaları derler. Eski ctc.exe derleyicinin ancak tanımak ne .vsct dosyaları derleyin.  
   
-  Varolan .cto dosyasını bir .vsct dosyasına dönüştürmek için vsct.exe derleyici kullanabilirsiniz. Bu konu hakkında daha fazla bilgi için bkz. [nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Varolan .cto dosyasını bir .vsct dosyasına dönüştürmek için vsct.exe derleyici kullanabilirsiniz. Bu konu hakkında daha fazla bilgi için bkz. [nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct dosyası öğeleri  
  Komut tablosu aşağıdaki hiyerarşi ve öğeleri sahiptir:  
@@ -130,4 +125,3 @@ VSPackage için komut öğelerin Görünüm ve düzeninin bir XML komut tablosu 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Menüleri ve Komutlari Genişletme](../../extensibility/extending-menus-and-commands.md)
-

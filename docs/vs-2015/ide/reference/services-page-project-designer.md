@@ -1,14 +1,9 @@
 ---
 title: Hizmetler Sayfası, Proje Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3a968283a8836c9a31c1d7f1e6552c8302d87140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 412dc2adaa168cce8d11e4181537a7ccf3908e8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243704"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756430"
 ---
 # <a name="services-page-project-designer"></a>Hizmetler Sayfası, Proje Tasarımcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49243704"
 >  İstemci uygulama hizmetleri, .NET Framework'ün tam sürümünü gerektirir ve .NET Framework istemci profili içinde desteklenmez. Varsa **istemci uygulama hizmetlerini etkinleştirmek** onay kutusunu devre dışı bırakıldı, doğrulayın **hedef Framework'ü** .NET Framework 3.5 veya sonraki bir sürüme ayarlayın. Görüntülenecek **hedef Framework'ü** C# ' de ayarı, Proje Tasarımcısı'nı açın ve ardından **uygulama** sayfası. Görüntülenecek **hedef Framework'ü** Visual Basic'te ayarlama, Proje Tasarımcısı'nı açın, **derleme** sayfasında ve ardından **Gelişmiş derleme seçenekleri**.  
   
 ## <a name="task-list"></a>Görev Listesi  
- [Nasıl Yapılır: İstemci Uygulama Servislerini Yapılandırma](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
+ [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Yapılandırma**  
@@ -56,7 +51,7 @@ ms.locfileid: "49243704"
  Kimlik doğrulama sağlayıcısı Windows tabanlı kimlik doğrulaması, diğer bir deyişle, Windows işletim sistemi tarafından sağlanan kimlik kullanacağını gösterir.  
   
  **Forms kimlik doğrulaması kullan**  
- Kimlik doğrulama sağlayıcısı form kimlik doğrulaması kullandığını gösterir. Başka bir deyişle, uygulamanız için oturum açma kullanıcı arabirimi sağlamanız gerekir. Daha fazla bilgi için [nasıl yapılır: istemci uygulama hizmetleri ile kullanıcı oturumu uygulama](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
+ Kimlik doğrulama sağlayıcısı form kimlik doğrulaması kullandığını gösterir. Başka bir deyişle, uygulamanız için oturum açma kullanıcı arabirimi sağlamanız gerekir. Daha fazla bilgi için [nasıl yapılır: İstemci uygulama hizmetleri ile kullanıcı oturum açma adını](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
   
  **Kimlik doğrulama hizmet konumu**  
  Yalnızca form kimlik doğrulaması ile kullanılır. Kimlik doğrulama hizmetinin konumunu belirtir.  
@@ -76,10 +71,7 @@ ms.locfileid: "49243704"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İstemci uygulama hizmetleri](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [Hizmetleri iletişim kutusu için Gelişmiş ayarları](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
- [Nasıl yapılır: istemci uygulama servislerini yapılandırma](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
+ [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
  [Derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Derleme sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
- [Proje Tasarımcısı giriş](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)
-
-
-
+ [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

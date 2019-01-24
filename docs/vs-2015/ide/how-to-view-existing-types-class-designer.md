@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758149"
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Nasıl Yapılır: Varolan Türleri Görüntüleme (Sınıf Tasarımcısı)
+# <a name="how-to-view-existing-types-class-designer"></a>Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şeklini ekleyin.  
@@ -38,7 +33,7 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Projedeki türleri bir sınıf diyagramı üzerinde görmek için  
   
-1. Çözüm Gezgini'ndeki bir projeden varolan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+1. Çözüm Gezgini'ndeki bir projeden varolan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
 2. Çözüm Gezgini'ndeki projeden bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.  
   
@@ -55,7 +50,7 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
    Sınıf Görünümü'ndeki proje düğümünden bir veya daha fazla türü sınıf diyagramına sürükleyerek projedeki türleri de görüntüleyebilirsiniz.  
   
 > [!TIP]
->  Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+>  Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Türleri diyagram üzerinde varsayılan konumlarda görüntülemek için Sınıf Görünümü'nde bir veya daha fazla tür seçin, seçili türlere sağ tıklayın ve seçin **sınıf diyagramını görüntüle**.  
   
@@ -72,8 +67,5 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralmayı görüntüleme](../ide/how-to-view-inheritance-between-types-class-designer.md)   
- [Nasıl yapılır: sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)](../ide/how-to-customize-class-diagrams-class-designer.md)   
+ [Nasıl yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [Türleri ve İlişkilendirmeleri Görüntüleme (Sınıf Tasarımcısı)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

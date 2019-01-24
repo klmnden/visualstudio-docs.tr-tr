@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: satır içi derleme kodunda hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Satır içi derleme kodunda hata ayıklama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
 dev_langs:
@@ -25,19 +20,19 @@ ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 208d0166ad5d6197b63630fc9499dde1d2b3fb3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766643"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Nasıl Yapılır: Satır İçi Derleme Kodunda Hata Ayıklama
+# <a name="how-to-debug-inline-assembly-code"></a>Nasıl yapılır: Satır içi derleme kodunda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
->  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Satır içi derleme kodunda hata ayıklamak için hata ayıklayıcı iki windows sağlar **ayrıştırılmış kodu** penceresi ve **kaydeder** penceresi.  
   
@@ -52,6 +47,3 @@ ms.locfileid: "51809083"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: derlemede ortam değişkenlerini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Derlemede ortam değişkenlerini kullanma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
 - projects [.NET Framework], environment variables
@@ -17,15 +12,15 @@ ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 463acc185a73b9a483bf74c98d4bde1cf0f42494
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780979"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl Yapılır: Derlemede Ortam Değişkenlerini Kullanma
+# <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl yapılır: Derlemede Ortam Değişkenlerini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -77,6 +72,4 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
 
 [MSBuild Özellikleri](../msbuild/msbuild-properties1.md)
 
-[Nasıl Yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
-
-
+[Nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

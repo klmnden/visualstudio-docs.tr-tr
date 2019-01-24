@@ -1,27 +1,22 @@
 ---
 title: Visual Studio komut tablosu (. Vsct) dosyaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a68d9f5dac293cc9048cb4b84aaa487c5079250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759616"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio Komut Tablosu (.Vsct) Dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ Bir komut tablosu yapılandırma dosyası içeren bir VSPackage'ı komut kümesi
  [XML Komut Tablosu (.Vsct) Dosyaları Tasarlama](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  .Vsct dosyaları tasarlanacağını açıklar.  
   
- [Nasıl Yapılır: .Vsct Dosyası Oluşturma](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Nasıl yapılır: Oluşturma bir. Vsct dosyası](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  .Vsct dosyası oluşturma yöntemleriyle karşılaştırır. El ile yeni bir .vsct dosyası oluşturma işlemi açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md)  
  Komut tablosu XML yapılandırma dosyasını her bir bölümünü hakkında ayrıntılar sağlar.  
   
- [Komut tablosu yapılandırma (. Ctc) dosyaları](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Komut tablosu yapılandırma (. Ctc) dosyaları](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Kullanım dışı .ctc dosya biçimi'ne genel bakış sunar.  
   
  [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
@@ -52,4 +47,3 @@ Bir komut tablosu yapılandırma dosyası içeren bir VSPackage'ı komut kümesi
   
  [Komutlar, Menüler ve Araç Çubukları](../../extensibility/internals/commands-menus-and-toolbars.md)  
  Menüleri, araç çubukları ve komut birleşik giriş kutuları içeren bir kullanıcı Arabirimi oluşturma açıklanmaktadır.
-

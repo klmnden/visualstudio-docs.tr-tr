@@ -1,12 +1,9 @@
 ---
 title: T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,13 +16,13 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777463"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -339,7 +336,7 @@ Warning("A warning message");
     |||  
     |-|-|  
     |**Özel araç =**|**TextTemplatingFileGenerator**|  
-    |**Build Action =**|**Yok**|  
+    |**Build Action =**|**Yok.**|  
   
 5.  Dosyanın başına aşağıdaki satırları ekleyin:  
   
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [T4 Metin Şablonları Yazma Yönergeleri](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

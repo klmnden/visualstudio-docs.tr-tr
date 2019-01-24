@@ -2,7 +2,7 @@
 title: Geliştirme ve Test ortamları için yayımlamak için Windows PowerShell betiklerini kullanarak | Microsoft Docs
 description: Windows PowerShell betikleri Visual Studio'dan yayımlamak için geliştirme ve test ortamları kullanmayı öğrenin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 9d0142c52fbe40256fc0ab6ec0d5d9fdade243b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 63334168625e0f864206d5e2662ed9b58b7c3f1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761898"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell betiklerini kullanarak geliştirme ve test ortamlarına yayımlama
 

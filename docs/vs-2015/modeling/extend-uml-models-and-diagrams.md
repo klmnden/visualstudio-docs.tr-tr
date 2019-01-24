@@ -1,14 +1,9 @@
 ---
 title: UML modellerini ve diyagramları genişletme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6670f6dc0415c8234a0032fdc5bcf7a941998816
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758415"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML modellerini ve diyagramları genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ Bu konu UML modelleme araçları Visual Studio'ya dahil edildi genişletebilece�
   
  Fabrikam'ın Geliştirici otomatik olarak bir öğenin rengini, stereotip bağımlı ayarlayan kodu oluşturur. Bu, kullanıcıların modellerdeki öğeler tarafından yürütülen farklı rollere ayırt etmek kolaylaştırır.  
   
- Daha fazla bilgi için [nasıl yapılır: bir UML modelindeki değişikliklere yanıt](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Daha fazla bilgi için [nasıl yapılır: Bir UML modelindeki değişikliklere yanıt](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Model veri yolu  
  Model veri yolu başka bir diyagrama veya başka bir diyagrama veya model erişmenize olanak sağlayan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantısı. Birleşik model üzerinde aynı anda birkaç kişinin çalışabilmek yanı sıra, bu, birden fazla model arasında bilgi yaymak sağlar.  
@@ -118,7 +113,7 @@ Bu konu UML modelleme araçları Visual Studio'ya dahil edildi genişletebilece�
   
 |**Kategori**|**Bağlantılar**|  
 |------------------|---------------|  
-|**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML Visual Studio ile](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio ile UML](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Bloglar**|[Visual Studio ALM + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ Bu konu UML modelleme araçları Visual Studio'ya dahil edildi genişletebilece�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)   
  [UML Genişletilebilirlik Modellemesi için API Başvurusu](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
-title: 'Nasıl yapılır: etkinlik kitaplığı oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Etkinlik kitaplığı oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 341e87459cbaae204baba66108a5944eb1f7f97f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776199"
 ---
-# <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: etkinlik kitaplığı oluşturma
+# <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: Etkinlik Kitaplığı Oluşturma
 Özel etkinlikler, bir iş akışındaki belirli İş süreçlerinizi modelleyin için kullanılır. Etkinlik kitaplığı şablonu [!INCLUDE[vs2010](../includes/vs2010-md.md)] sağlamak görsel olarak kullanarak bu tür özel etkinlikler oluşturmak sağlanan [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Bir iş akışı etkinlik kitaplığı oluşturma  
@@ -51,5 +48,5 @@ ms.locfileid: "49271838"
     >  Yalnızca bir alt etkinlik özel etkinliğinizin gövdesinde izin verilir; Ancak, bu alt etkinlik bileşik bir etkinlik gibi olabilir bir <xref:System.Activities.Statements.Sequence> etkinlik veya <xref:System.Activities.Statements.Flowchart> etkinlik.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: bir etkinliği oluşturma](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Nasıl yapılır: Bir etkinlik oluşturma](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)

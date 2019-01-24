@@ -1,14 +1,9 @@
 ---
-title: "Nasıl yapılır: bir ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtme | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl yapılır: ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtme | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772742"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Nasıl yapılır: Bir ClickOnce Dağıtımı'nda Bağımsız Önkoşullar için Destek URL'sini Belirtme
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Nasıl yapılır: ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemci bilgisayardaki kullanılabilir olması gereken önkoşulları test [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] çalıştırmak için uygulama. Gerekli en düşük sürümü bunlar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], işletim sistemi ve genel derleme önbelleğinde (GAC) yüklenmiş herhangi bir derleme sürümü. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], bu önkoşulları hiçbirini kendisini; ancak, yükleyemezsiniz bir önkoşul bulunamadı, yalnızca yükleme durdurur ve yükleme neden başarısız olduğunu açıklayan bir iletişim kutusu görüntüler.  
@@ -67,7 +62,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,7 +79,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
     </compatibleFrameworks>  
     ```  
   
-7.  El ile uygulama bildirimini değiştirmiş sonra gerekir, dijital sertifikayı kullanarak uygulama bildirimini yeniden imzalamanız sonra güncelleştirme ve de dağıtım bildirimini yeniden imzalamanız. Mage.exe kullanmalısınız veya MageUI.exe SDK araçlarını kullanarak bu dosyaları yeniden olarak bağlı olarak, bu görevi gerçekleştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el ile yaptığınız değişiklikleri siler. Bildirimleri yeniden imzalamak için Mage.exe kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: yeniden imzalama uygulama ve dağıtım bildirimlerini](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  El ile uygulama bildirimini değiştirmiş sonra gerekir, dijital sertifikayı kullanarak uygulama bildirimini yeniden imzalamanız sonra güncelleştirme ve de dağıtım bildirimini yeniden imzalamanız. Mage.exe kullanmalısınız veya MageUI.exe SDK araçlarını kullanarak bu dosyaları yeniden olarak bağlı olarak, bu görevi gerçekleştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el ile yaptığınız değişiklikleri siler. Bildirimleri yeniden imzalamak için Mage.exe kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework Güvenliği  
  Uygulama kısmi güvende çalıştırmak için işaretlendiyse, destek URL'sini iletişim kutusunda görüntülenmez.  
@@ -95,6 +90,3 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
  [\<compatibleFrameworks > öğesi](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce ve Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Uygulama Dağıtımının Önkoşulları](../deployment/application-deployment-prerequisites.md)
-
-
-

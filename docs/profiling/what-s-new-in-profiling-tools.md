@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32a628cd5279d0f80ac7af0de5adaf8ddda6c31c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773198"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>İçinde profil oluşturma araçlarındaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -24,7 +24,7 @@ Tanılama araçları, uygulamanızdaki düzeltme gereken sorunları belirlemeniz
 
 Ek bilgi için bkz: [sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
 
-A **özeti** sekmesinde, performans analizi için anahtar alanları odaklanmanıza yardımcı olan araçlar eklendi. Bu sekme kaç tane olay meydana gösterir, yığın anlık görüntüleri yararlanmanıza imkan sağlar ve CPU kullanım verilerini toplamayı hızlı bir şekilde etkinleştirmenize olanak tanır. Bu görünüm tüm gösterir [Application ınsights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) veya [UI analizi](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) olayları. Ayrıca, Visual Studio Enterprise için bu görünüm IntelliTrace olaylarını da gösterir.
+A **özeti** sekmesinde, performans analizi için anahtar alanları odaklanmanıza yardımcı olan araçlar eklendi. Bu sekme kaç tane olay meydana gösterir, yığın anlık görüntüleri yararlanmanıza imkan sağlar ve CPU kullanım verilerini toplamayı hızlı bir şekilde etkinleştirmenize olanak tanır. Bu görünüm tüm gösterir [Application ınsights](/azure/azure-monitor/app/visual-studio) veya [UI analizi](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) olayları. Ayrıca, Visual Studio Enterprise için bu görünüm IntelliTrace olaylarını da gösterir.
 
 ![Tanılama araçları özeti sekmesi](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

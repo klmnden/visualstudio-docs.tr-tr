@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir C# projesine uygulama yapılandırma dosyası ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 9caf6bb0-c2fc-4ab6-ba69-bed3b880fbf8
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 43245704a2393b298f0f1d948d8a8829a4ef9bc4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775265"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Nasıl yapılır: C# Projesine Uygulama Yapılandırma Dosyası Ekleme
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyerek, ortak dil çalışma zamanının nasıl bulur ve derleme dosyalarını yükler özelleştirebilirsiniz. Uygulama yapılandırma dosyaları hakkında daha fazla bilgi için bkz. [çalışma zamanı derlemeleri nasıl konumlandırır](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
@@ -39,7 +34,7 @@ Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyere
   
 1.  Menü çubuğunda, **proje**, **Yeni Öğe Ekle**.  
   
-     **Yeni Öğe Ekle** iletişim kutusu görüntülenir.  
+     **Yeni Öğe Ekle** iletişim kutusu görünür.  
   
 2.  Genişletin **yüklü**, genişletme **Visual C# öğeleri**ve ardından **uygulama yapılandırma dosyası** şablonu.  
   
@@ -51,5 +46,5 @@ Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyere
  [Uygulama ayarları (.NET) yönetme](../ide/managing-application-settings-dotnet.md)   
  [Yapılandırma dosyası şeması](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Uygulamaları yapılandırma](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Nasıl yapılır: bir uygulamayı .NET Framework sürümünü hedefleyecek şekilde yapılandırma](http://msdn.microsoft.com/en-us/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Nasıl yapılır: Bir uygulamayı .NET Framework sürümünü hedefleyecek şekilde yapılandırma](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

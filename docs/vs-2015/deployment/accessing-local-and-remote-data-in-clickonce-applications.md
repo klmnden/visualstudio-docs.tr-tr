@@ -1,14 +1,9 @@
 ---
 title: ClickOnce uygulamalarında yerel ve uzak veri erişimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761779"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49218849"
   
 -   Diğer yerel dosyaları  
   
-### <a name="clickonce-data-directory"></a>ClickOnce veri dizini  
+### <a name="clickonce-data-directory"></a>ClickOnce Data Directory  
  Her [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yerel bir bilgisayarda yüklü uygulama kullanıcının belgeler ve ayarlar klasöründe depolanan bir veri dizinine sahip. Dahil herhangi bir dosyayı bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama ve işaretli bir "veri" dosyası, bir uygulama yüklendiğinde bu dizine kopyalanır. Veri dosyaları en sık kullanılan bir dosya türünde olabilir metin, XML ve Microsoft Access .mdb dosyaları gibi veritabanı dosyaları.  
   
  Veri dizini uygulama açıkça depolar ve tutar veriler, yönetilen uygulama verileri için tasarlanmıştır. Tüm statik uygulama bildiriminde "veri" olarak işaretlenen değil (nondependency) dosyalar yerine uygulama dizininde bulunur. Uygulamanın yürütülebilir (.exe) dosyaları ve derlemeleri bulunduğu bu dizindir.  
@@ -51,7 +46,7 @@ ms.locfileid: "49218849"
 >  Olduğunda bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulaması kaldırıldığında, kendi veri dizini de kaldırılır. Hiçbir zaman son kullanıcı tarafından yönetilen belgeler gibi verilerini depolamak için veri dizini kullanın.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>ClickOnce dağıtım veri dosyalarında işaretleme  
- Mevcut bir dosyayı veri dizini içine koymak için var olan dosyayı bir veri dosyası olarak işaretlemelisiniz, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamanın uygulama bildirim dosyası. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasına bir veri dosyası dahil](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Mevcut bir dosyayı veri dizini içine koymak için var olan dosyayı bir veri dosyası olarak işaretlemelisiniz, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamanın uygulama bildirim dosyası. Daha fazla bilgi için [nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Okuma ve yazma için veri dizini  
  Veri dizini okuma gerektirir, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama isteği okuma izni; benzer şekilde, dizine yazma izni gerektirir. Tam güven ile çalışacak şekilde yapılandırılmışsa, uygulamanızın otomatik olarak bu izne sahip. İzin yükseltilmesi ya da güvenilir uygulama dağıtımı'nı kullanarak uygulamanız için yükseltme yaptığınıza izinler hakkında daha fazla bilgi için bkz. [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).  
@@ -64,7 +59,7 @@ ms.locfileid: "49218849"
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- Veri dosyaları olarak dağıtımınızdaki dosyalardan işaretleme daha fazla bilgi için bkz: [nasıl yapılır: ClickOnce uygulamasına bir veri dosyası dahil](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Veri dosyaları olarak dağıtımınızdaki dosyalardan işaretleme daha fazla bilgi için bkz: [nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  İlgili değişkenleri kullanarak veri dizini yolunu de edinebilirsiniz <xref:System.Windows.Forms.Application> gibi sınıf <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -117,6 +112,3 @@ ms.locfileid: "49218849"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: ClickOnce Uygulamasına bir Veri Dosyası Dahil Etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
-
-
-

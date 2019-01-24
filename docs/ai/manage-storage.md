@@ -1,4 +1,19 @@
 ---
+title: Verileri karşıya yüklemeye, depolamaya Gözat
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: 44803eea573860074f67d2e97f1160614f452ac5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766387"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Karşıya veri yükleme veya modelleri ve günlükleri indirmek için depolamaya Gözat
 

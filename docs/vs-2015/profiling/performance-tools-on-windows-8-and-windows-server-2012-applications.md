@@ -1,25 +1,20 @@
 ---
 title: Windows 8 ve Windows Server 2012 uygulamalarında performans araçları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e02ce9a9ef06574de999620017b96d470a76e6c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757977"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,11 +68,11 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
 - [JavaScript işlev zamanlaması verilerini çözümleme](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Profili Visual C++, Visual C# ve Visual Basic kodu yerel makinede Windows Store uygulamalarında](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profili Visual C++, Visual C# ve Visual Basic kodu yerel makinede Windows Store uygulamalarında](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Uzak bir cihazdaki Windows Store uygulamalarında profil Visual C++, Visual C# ve Visual Basic kodu](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Uzak bir cihazdaki Windows Store uygulamalarında profil Visual C++, Visual C# ve Visual Basic kodu](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Windows Store uygulamalarında Visual C++, Visual C# ve Visual Basic kodu için performans verilerini çözümleme](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Windows Store uygulamalarında Visual C++, Visual C# ve Visual Basic kodu için performans verilerini çözümleme](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Bu konudaki](#BKMK_In_this_topic)  
   
@@ -153,6 +148,3 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
  [Performans Gezgini](../profiling/performance-explorer.md)   
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
  [Komut Satırından Profil Oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

@@ -1,13 +1,8 @@
 ---
 title: Geliştirme sürecinizde modelleri kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 618978d56a6d8a06d2ed2258f1d0bae93a125bab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768078"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yardımcı olmak için bir model kullanabilirsiniz. Bir model, sisteminizin çalıştığı dünyanın görselleştirin, kullanıcıların ihtiyaçlarını açıklamak, sisteminizin mimarisini tanımlayın, kod çözümleme ve kodunuzu gereksinimleri karşıladığından emin olun yardımcı olabilir. Bkz: [kanal 9 videosu: mimariyi modelleme aracılığıyla geliştirmek](http://go.microsoft.com/fwlink/?LinkID=252078).  
+Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yardımcı olmak için bir model kullanabilirsiniz. Bir model, sisteminizin çalıştığı dünyanın görselleştirin, kullanıcıların ihtiyaçlarını açıklamak, sisteminizin mimarisini tanımlayın, kod çözümleme ve kodunuzu gereksinimleri karşıladığından emin olun yardımcı olabilir. Bkz: [kanal 9 Video: Mimariyi modelleme aracılığıyla geliştirmek](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Visual Studio'nun hangi sürümlerinin her model türünü desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -104,7 +99,7 @@ Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yard
   
 -   Kullanım örnekleri. Bir kullanım durumu, uygulama geliştirme görevleri bağlayabilirsiniz.  
   
--   Uzantılar büyük/küçük harf kullanın. Yalnızca bir kullanım örneği tek bir yönüne yinelemeyi uygulanacak bir veya daha fazla uzantıları ile birlikte temel bir kullanım örneği içine ayırabilirsiniz. «Genişletmek» ilişki temel çalışmasıyla bağlantılı kullanım örnekleri uzantılarıdır. Kullanım örneği uzantıları hakkında daha fazla bilgi için bkz. [UML kullanma durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md).  
+-   Uzantılar büyük/küçük harf kullanın. Yalnızca bir kullanım örneği tek bir yönüne yinelemeyi uygulanacak bir veya daha fazla uzantıları ile birlikte temel bir kullanım örneği içine ayırabilirsiniz. «Genişletmek» ilişki temel çalışmasıyla bağlantılı kullanım örnekleri uzantılarıdır. Kullanım örneği uzantıları hakkında daha fazla bilgi için bkz. [UML örneği diyagramları kullanın: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
   
 -   İş kuralları veya hizmet gereksinimlerinin kalitesini açıklayan yorumlar. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
@@ -137,18 +132,15 @@ Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yard
   
 |**Kategori**|**Bağlantılar**|  
 |------------------|---------------|  
-|**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [videoları MSDN Nasıl Yaparım: oluşturma ve kullanma UML modellerini ve diyagramları (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Videolar**|![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yaparım videolar: Oluşturma ve UML modellerini ve diyagramları (Visual Studio 2010 Ultimate) kullanın](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo") [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Bloglar**|[Visual Studio ALM + Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Mimari Araç Kullanımı Kılavuzu](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)   
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)   
  [Model aracılığıyla test geliştirme](../modeling/develop-tests-from-a-model.md)   
  [Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)
-
-
-

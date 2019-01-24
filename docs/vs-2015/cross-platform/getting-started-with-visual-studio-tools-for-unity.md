@@ -1,25 +1,20 @@
 ---
 title: Unity için Visual Studio Araçları ile çalışmaya başlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
+ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764615"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,4 +114,3 @@ Bu bölümde, Unity için Visual Studio Araçları yükleme ve Unity projeniz Vi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unity giriş sayfası](http://unity3d.com)
-

@@ -1,14 +1,9 @@
 ---
 title: VSPerfASPNETCmd ile Hızlı Web sitesi profili oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,18 +11,18 @@ ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760012"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760303"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Hızlı Web Sitesi Profili Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**VSPerfASPNETCmd** komut satırı aracı sayesinde profiline bir kolayca [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamaları. Comparison için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracı seçenekleri sınırlı, hiçbir ortam değişkenlerini ayarlamak sahip ve bilgisayarın yeniden başlatılması gerekli değildir. Kullanarak **VSPerfASPNETCmd** bağımsız Profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: tek başına Profiler yükleme](../profiling/how-to-install-the-stand-alone-profiler.md).  
+**VSPerfASPNETCmd** komut satırı aracı sayesinde profiline bir kolayca [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamaları. Comparison için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracı seçenekleri sınırlı, hiçbir ortam değişkenlerini ayarlamak sahip ve bilgisayarın yeniden başlatılması gerekli değildir. Kullanarak **VSPerfASPNETCmd** bağımsız Profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: Tek başına Profiler yükleme](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
 >  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -85,7 +80,7 @@ ms.locfileid: "51760012"
   
  Katman etkileşim verileri ile .NET bellek verileri toplamak için:  
   
- **vsperfaspnetcmd /memory**[**: ömür**] **/İpucu**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
 ##  <a name="UsingNoWait"></a> / Nowait seçeneğini kullanma  
  Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Döndürülecek komut istemi zorlamak için aşağıdaki sözdizimi seçeneğini kullanabilirsiniz. Ardından, komut istemi penceresinde diğer işlemleri gerçekleştirebilirsiniz. Profil oluşturma sona erdirmek için kullanmak **/shutdown** seçeneği ayrı bir **vsperfaspnetcmd** komutu.  
@@ -105,6 +100,3 @@ ms.locfileid: "51760012"
 |------------|-----------------|  
 |**/ Çıktı:** `VspFile`|Varsayılan olarak, profil oluşturma veri (.vsp) dosyasının dosya adı geçerli dizinde oluşturulan **PerformanceReport.vsp**. / Output seçeneği farklı bir konum, dosya adı veya her ikisini de belirtmek için kullanın.|  
 |**/ PackSymbols: kapalı**|Varsayılan olarak, VsPerfASPNETCmd (işlev ve parametre adları, vb.) semboller .vsp dosyasına katıştırır. Simgeler ekleme, profil oluşturma veri dosyası çok büyük hale getirebilirsiniz. Erişim verilerini çözümlediğinizde semboller içeren .pdb dosyaları olacaksa, packsymbols kullanın: kapalı simgelerini ekleme devre dışı bırakma seçeneği.|
-
-
-

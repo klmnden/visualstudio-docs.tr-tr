@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777667"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>İzlenecek Yol: XML Düzenleyicisi Özelliklerini Kullanma
+# <a name="walkthrough-using-xml-editor-features"></a>İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini göstermektedir. İzlenecek yol bazı XML yazmak için değerli hale getiren XML Düzenleyicisi'nin özelliklerini kullanır.  
@@ -77,7 +72,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
   
 5.  Tür `>` etiketi kapatın.  
   
-6.  Düzenleyici bitiş etiketi ekler. Bitiş etiketi, bir doğrulama hatası gösteren dalgalı alt çizgi ile eklenir. Araç ipucu görüntülenir: ' % s'öğesine 'çalışanı' içeriği eksik sahip. 'ID' bekleniyor.  
+6.  Düzenleyici bitiş etiketi ekler. Bitiş etiketi, bir doğrulama hatası gösteren dalgalı alt çizgi ile eklenir. Araç ipucu görüntülenir: ' % S'öğesi 'çalışanı' içeriği eksik sahip. 'ID' bekleniyor.  
   
 7.  Tür `<` seçip **kimliği** üye listesinde. Yazarak `>`.  
   
@@ -85,7 +80,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
   
 8.  Tür **abc**.  
   
-     **Abc** metin dalgalı çizgi vardır. Araç ipucu görüntülenir: 'ID' öğesi kendi veri türüne göre geçersiz bir değere sahip.  
+     **Abc** metin dalgalı çizgi vardır. Araç ipucu görüntülenir: 'ID' öğesi, kendi veri türüne göre geçersiz bir değere sahip.  
   
 9. Kimlik öğesi üzerinde sağ tıklatın ve seçin **tanıma**.  
   
@@ -93,7 +88,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
   
 10. XML dosyasına dönün ve Değiştir **abc** metinle **123**.  
   
-     Araç ipucu ve dalgalı çizgi altında ID öğesinin değerine temizlenir. Çalışan bitiş etiketi için araç ipucu artık iletisini görüntüler: ' % s'öğesine 'çalışanı' içeriği eksik sahip. Beklenen 'alım tarih'.  
+     Araç ipucu ve dalgalı çizgi altında ID öğesinin değerine temizlenir. Araç ipucu için çalışan bitiş etiketi, artık şu ileti görüntülenir: ' % S'öğesi 'çalışanı' içeriği eksik sahip. Beklenen 'alım tarih'.  
   
 11. Yazın, sonra kimliği bitiş etiketi imleci `<`, işe alım tarihi üye listesinden seçin ve ardından yazın `>`.  
   
@@ -136,4 +131,3 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)
-

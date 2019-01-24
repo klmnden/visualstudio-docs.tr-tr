@@ -1,14 +1,9 @@
 ---
 title: Dosya özellikleri, JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780375"
 ---
 # <a name="file-properties-javascript"></a>Dosya Özellikleri, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49909740"
   
 Dosya özellikleri, proje sistemi dosyalarda gerçekleştirmesi gereken eylemleri belirtmek için kullanabilirsiniz. Örneğin, bir dosya için paket kaynak dosyası olarak eklenmesi gerekip gerekmediğini belirtmek için dosya özelliklerini ayarlayabilirsiniz.  
   
- Çözüm Gezgini'nde herhangi bir dosya seçin ve ardından Özellikler penceresindeki özelliklerini inceleyin. JavaScript dosyaları dört özellikleri vardır: **çıkış dizinine Kopyala**, **paket eylemi**, **dosya adı**, ve **dosya yolu**.  
+ Çözüm Gezgini'nde herhangi bir dosya seçin ve ardından Özellikler penceresindeki özelliklerini inceleyin. JavaScript dosyaları dört özelliklere sahiptir: **Çıkış Dizinine Kopyala**, **paket eylemi**, **dosya adı**, ve **dosya yolu**.  
   
 ## <a name="file-properties"></a>Dosya özellikleri  
  Bu bölümde, JavaScript dosyaları için ortak olan özellikleri açıklanmaktadır.  
@@ -102,7 +97,4 @@ Dosya özellikleri, proje sistemi dosyalarda gerçekleştirmesi gereken eylemler
  Başvurunun sürümü görüntüler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NIB: Proje Özellikleri (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB: Proje Özellikleri (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

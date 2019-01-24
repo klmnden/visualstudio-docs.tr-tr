@@ -1,11 +1,8 @@
 ---
-title: 'Nasıl yapılır: kesme noktası ayarlama (eski) iş akışlarında | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: (Eski) akışlarında kesme noktası ayarlama | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - breakpoints, setting in workflows
@@ -16,20 +13,20 @@ ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803577"
 ---
-# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Nasıl yapılır: (eski) akışlarında kesme noktası ayarlama
+# <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama (Eski)
 Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!INCLUDE[wf](../includes/wf-md.md)] uygulamaları oluşturmak eski kullanarak [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] olduğunda, [!INCLUDE[wf2](../includes/wf2-md.md)] uygulamanın gerekir ya da hedeflemek [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Eski kullandığınızda [!INCLUDE[wfd2](../includes/wfd2-md.md)] içinde [!INCLUDE[vs2010](../includes/vs2010-md.md)] oluşturmak için bir [!INCLUDE[wf2](../includes/wf2-md.md)] uygulama ayarlayabileceğiniz kesme noktaları C# ve Visual Basic kodu Visual Studio'da yaptığınız gibi. Beklendiği gibi iş akışı yürütme ayarladığınız her bir kesme noktasında durur.  
   
- Bir kesme noktası üç durumu vardır: *bekleyen*, *bağlı*, ve *hata*. Bir kesme noktası ayarlarsanız, bekleyen ve boş kırmızı bir simge ile temsil edilir. Çalışma zamanı iş akışı türü yüklendiğinde bağlı olur ve düz kırmızı bir simge ile temsil edilir. Yanlış bir biçimde kesme noktası için geçersiz bir etkinlik adı olarak belirtirseniz, hata penceresinde görünür. Kesme noktası hala kesme noktası penceresine eklenir, ancak küçük "x" ile işaretlenir.  
+ Bir kesme noktası üç durumu vardır: *Bekleyen*, *bağlı*, ve *hata*. Bir kesme noktası ayarlarsanız, bekleyen ve boş kırmızı bir simge ile temsil edilir. Çalışma zamanı iş akışı türü yüklendiğinde bağlı olur ve düz kırmızı bir simge ile temsil edilir. Yanlış bir biçimde kesme noktası için geçersiz bir etkinlik adı olarak belirtirseniz, hata penceresinde görünür. Kesme noktası hala kesme noktası penceresine eklenir, ancak küçük "x" ile işaretlenir.  
   
  Aşağıdaki yollarla bir etkinlik iş akışı tasarım yüzeyinde kesme noktaları ayarlayabilirsiniz:  
   

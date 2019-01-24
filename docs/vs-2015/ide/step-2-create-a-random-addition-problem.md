@@ -1,33 +1,28 @@
 ---
-title: '2. adım: rasgele bir toplama problemi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: '2. Adım: Rasgele bir toplama problemi oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 47429cb995dd7374276a9e2872d1b80ed452281a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804662"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rasgele bir Toplama Problemi Oluşturma
+# <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rastgele Bir Toplama Problemi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matematik soruları ekleyerek olun. Adlı bir yöntem de oluşturduğunuz `StartTheQuiz()` ve problemleri dolduran ve geri sayım Zamanlayıcısını başlatır. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorularını ekleyeceksiniz.  
   
 > [!NOTE]
->  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: bir zaman aşımına matematik sınavı oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-random-addition-problem"></a>Rasgele bir toplama problemi oluşturma  
   
@@ -102,9 +97,6 @@ Rasgele bir toplama problemi
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [1. adım: bir proje oluşturup bilgisayarınızı forma etiketler ekleyin](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

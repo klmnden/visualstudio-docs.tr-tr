@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: Grafik bilgilerini programla yakalama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747674"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779849"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek Yol: Grafik Bilgilerini Programla Yakalama
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek yol: Grafik bilgilerini programla yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılama Direct3D uygulamadan grafik bilgilerini programla yakalama.  
@@ -207,6 +202,3 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
  [İzlenecek yol: Grafik bilgilerini yakalama](../debugger/walkthrough-capturing-graphics-information.md)   
  [Grafik bilgilerini yakalama](../debugger/capturing-graphics-information.md)   
  [Komut satırı Yakalama Aracı](../debugger/command-line-capture-tool.md)
-
-
-

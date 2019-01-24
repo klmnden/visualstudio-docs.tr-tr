@@ -1,27 +1,22 @@
 ---
 title: UsedCommand öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b34c2dbafe9126339638691bc345cab1d347924
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778351"
 ---
 # <a name="usedcommand-element"></a>UsedCommand Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ VSPackage'ı başka bir .vsct dosyası içinde tanımlanan bir komutuna erişmek
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|Yok.||  
+|Hiçbiri||  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
@@ -73,4 +68,3 @@ VSPackage'ı başka bir .vsct dosyası içinde tanımlanan bir komutuna erişmek
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UsedCommands öğesi](../extensibility/usedcommands-element.md)   
  [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

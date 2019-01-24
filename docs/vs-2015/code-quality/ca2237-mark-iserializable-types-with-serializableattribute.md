@@ -1,13 +1,9 @@
 ---
 title: 'CA2237: İşareti ISerializable türleri SerializableAttribute ile | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2237
 - MarkISerializableTypesWithSerializable
@@ -19,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b8fe5a3441e4094dbc78f1b5193647046e7fcbf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9d75a75449a07a5e9f651be0ba61598a29674ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761343"
 ---
-# <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: İşareti ISerializable türleri SerializableAttribute ile işaretleyin
+# <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: ISerializable türleri SerializableAttribute ile işaretleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

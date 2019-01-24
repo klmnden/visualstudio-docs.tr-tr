@@ -1,14 +1,9 @@
 ---
 title: Kodu görselleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
@@ -17,13 +12,13 @@ ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 841e2f1324fa5519937cf40b977eebf7d48b65ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758299"
 ---
 # <a name="visualize-code"></a>Kodu görselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +42,8 @@ Görselleştirme ve modelleme araçlarını Visual Studio'da, mevcut kodu anlama
 |||  
 |-|-|  
 |**Kod ve ilişkilerini anlayın:**<br /><br /> Belirli kod parçaları arasındaki ilişkileri eşleyin.<br /><br /> Çözümün tamamını kodunuzdaki ilişkileri genel bir bakış görürsünüz.<br /><br /> **Not**: Visual Studio'nun bu sürümünde terimi *kod Haritası* yerine kullanılan *bağımlılık grafiği*.|-   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Sınıf yapıları anlayın:**<br /><br /> Koddan sınıf diyagramları oluşturarak bir projedeki sınıf yapısını görselleştirin.|[Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Üst düzey sistem tasarımı tanımlamak ve bu tasarım karşı kodu doğrulayın:**<br /><br /> Katman diyagramları oluşturarak, üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını açıklar. Kodu bir koddaki bağımlılıkları tasarım ile tutarlı kalmasını sağlamak için bu tasarım karşı doğrulayın.|-   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Sınıf yapıları anlayın:**<br /><br /> Koddan sınıf diyagramları oluşturarak bir projedeki sınıf yapısını görselleştirin.|[Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Üst düzey sistem tasarımı tanımlamak ve bu tasarım karşı kodu doğrulayın:**<br /><br /> Katman diyagramları oluşturarak, üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını açıklar. Kodu bir koddaki bağımlılıkları tasarım ile tutarlı kalmasını sağlamak için bu tasarım karşı doğrulayın.|-   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Mimarisi ve kullanıcı gereksinimleri iletişim kurar:**<br /><br /> Yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri aşağıdaki UML diyagramları çizerek modeli: etkinlik, bileşen, sınıfı, dizisi ve kullanım örneği.|-   [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)<br />-   [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)<br />-   [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
@@ -66,6 +61,3 @@ Görselleştirme ve modelleme araçlarını Visual Studio'da, mevcut kodu anlama
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)   
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)
-
-
-

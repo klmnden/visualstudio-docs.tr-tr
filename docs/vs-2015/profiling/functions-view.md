@@ -1,14 +1,9 @@
 ---
 title: İşlevler görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functions
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 207daebe03327216095c8e6b45798d3cf3fb43d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08fd68d99841d2877a2b32fe71968ea05e8db427
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774667"
 ---
 # <a name="functions-view"></a>İşlevler Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51817639"
   
  Varsayılan olarak, İşlevler adına göre listelenmiştir. Modülü tarafından işlevleri görüntülemek için İşlevler Görünümü penceresine sağ tıklatın ve ardından **Modül Görünümü Göster**. Bu modül görünümü görüntülenir.  
   
- Sütun ekleme veya kaldırma için rapor penceresindeki sağ tıklayın ve ardından **sütunları Ekle/Kaldır**. Ayrıca, bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
+ Sütun ekleme veya kaldırma için rapor penceresindeki sağ tıklayın ve ardından **sütunları Ekle/Kaldır**. Ayrıca, bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
   
  İşlevler görünümünde kullanılabilen sütunların veri toplamak için kullanılan profil oluşturma yöntemine (örnekleme veya Araçlar) bağlıdır ve .NET bellek verileri profil oluşturma çalışmasında toplanan açmasa da Çalıştır.  
   
@@ -44,6 +39,3 @@ ms.locfileid: "51817639"
  [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
  [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [İşlevler Görünümü- Örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)
-
-
-

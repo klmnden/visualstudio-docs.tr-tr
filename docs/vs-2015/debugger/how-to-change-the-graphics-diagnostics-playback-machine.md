@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: grafik tanılama kayıttan yürütme makinesini değiştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769940"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Nasıl Yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yerel makinenizi kullanarak veya bir uzak makine ya da aygıt kullanarak grafik bilgilerini kayıttan yürütme.  
@@ -58,6 +53,3 @@ Yerel makinenizi kullanarak veya bir uzak makine ya da aygıt kullanarak grafik 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Grafik Günlük Belgesi](../debugger/graphics-log-document.md)
-
-
-

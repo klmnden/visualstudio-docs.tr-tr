@@ -1,11 +1,8 @@
 ---
-title: 'Nasıl yapılır: boş iş akışı projesinde (eski) oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Boş iş akışı projesinde (eski) oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, empty workflow
@@ -15,20 +12,20 @@ ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5a64506fd5d634b140c6e27916ea873afbef1c08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72614233a0b01f263201670d0f9f70c96559e40c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767754"
 ---
-# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Nasıl yapılır: bir boş iş akışı projesi (eski) oluşturun
+# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Nasıl yapılır: Boş İş Akışı Projesi Oluşturma (Eski)
 Eski kullanarak boş bir iş akışı projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-an-empty-workflow-project"></a>Boş iş akışı projesi oluşturmak için  
   
-1.  Visual Studio'yu başlatın.  
+1.  Visual Studio’yu çalıştırın.  
   
 2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   

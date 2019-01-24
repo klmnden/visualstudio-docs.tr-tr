@@ -1,29 +1,24 @@
 ---
-title: 'Nasıl yapılır: yerleşik renklendirilebilir öğeleri kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9b168eee5f5f8a8a9775d9326cb9a7dda6287792
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2546d9e9c864772bf1a2d3063e8ce4adc1cd7605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782683"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Nasıl yapılır: yerleşik renklendirilebilir öğeleri kullanma
+# <a name="how-to-use-built-in-colorable-items"></a>Nasıl yapılır: Yerleşik Renklendirilebilir Öğeleri Kullanma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Yerleşik renklendirilebilir öğeleri kullanmadan önce öncelikle tümleşik geliştirme ortamı (IDE), bu durumda, kendi özel renklendirilebilir öğeler sağlamıyorsunuz sinyal gerekir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> nesneleri. Dil hizmeti bir kayıt defteri anahtarını ayarlayarak bunu yapabilirsiniz.  
@@ -45,4 +40,3 @@ Yerleşik renklendirilebilir öğeleri kullanmadan önce öncelikle tümleşik g
  [Söz dizimi renklendirmesi uygulama](../../extensibility/internals/implementing-syntax-coloring.md)   
  [Özel renklendirilebilir öğeler](../../extensibility/internals/custom-colorable-items.md)   
  [Eski Dil Hizmeti Kaydetme](../../extensibility/internals/registering-a-legacy-language-service2.md)
-

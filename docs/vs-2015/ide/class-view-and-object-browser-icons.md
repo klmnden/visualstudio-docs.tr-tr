@@ -1,14 +1,9 @@
 ---
 title: Sınıf Görünümü ve Nesne Tarayıcısı simgeleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,13 +17,13 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785055"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Sınıf Görünümü ve Nesne Tarayıcısı Simgeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,14 +36,14 @@ Sınıf Görünümü ** ve **Nesne Tarayıcısı** kod varlıklar, örneğin tem
 |![Simge sınıfı](../ide/media/vxclass-icon.gif "vxClass_Icon")|örneği|![İşlecin](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|İşleç|  
 |![Lolipop arabirimini sembolü](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Arabirim|![Özellik simgesi](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Özellik|  
 |![Yapı sembol](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Yapı|![Alan simgesi](../ide/media/vxfield-icon.gif "vxField_Icon")|Alan veya değişken|  
-|![Birleşim sembol](../ide/media/vxunion-icon.gif "vxUnion_Icon")|UNION|![Olay simgesi](../ide/media/vxevent-icon.gif "vxEvent_Icon")|Olay|  
+|![Birleşim sembol](../ide/media/vxunion-icon.gif "vxUnion_Icon")|UNION|![Event Symbol](../ide/media/vxevent-icon.gif "vxEvent_Icon")|Olay|  
 |![Sabit listesi sembol](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![Sabit simgesi](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Sabit|  
 |![Tür tanımı sembol](../ide/media/vxtypedef-icon.gif "vxTypeDef_Icon")|Tür tanımı|![Öğe numaralandırma sembolü](../ide/media/vxenumitem-icon.gif "vxEnumItem_Icon")|Sabit listesi öğesi|  
 |![Visual Studio modülü sembol](../ide/media/vxmodule-icon.gif "vxModule_Icon")|Modül|![Eşleme öğesi sembolü](../ide/media/vxmapitem-icon.gif "vxMapItem_Icon")|Eşleme öğesi|  
 |![Uzantı metodu sembolü](../ide/media/extensionmethod.gif "ExtensionMethod")|Genişletme yöntemi|![Bildirim sembolü](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Dış bildirimi|  
 |![Sembol temsilci](../ide/media/vxdelegate-icon.gif "vxDelegate_Icon")|Temsilci|![Sınıf Görünümü ve nesne tarayıcısı hata simgesi](../ide/media/erroricon.gif "ErrorIcon")|Hata|  
 |![Özel durum sembol](../ide/media/vxexception-icon.gif "vxException_Icon")|Özel Durum|![Şablon sembol](../ide/media/vxtemplate-icon.gif "vxTemplate_Icon")|Şablon|  
-|![Eşleme Sembolü](../ide/media/vxmap-icon.gif "vxMap_Icon")|Harita|![Hata ünlem simgesi](../ide/media/vxerror-icon.gif "vxError_Icon")|Bilinmiyor|  
+|![Eşleme Sembolü](../ide/media/vxmap-icon.gif "vxMap_Icon")|Eşleme|![Hata ünlem simgesi](../ide/media/vxerror-icon.gif "vxError_Icon")|Bilinmiyor|  
 |![Tür iletme sembol](../ide/media/ob-type-forward.gif "ob_type_forward")|Tür iletme|||  
   
 ## <a name="signal-icons"></a>Sinyal simgeleri  
@@ -68,6 +63,3 @@ Sınıf Görünümü ** ve **Nesne Tarayıcısı** kod varlıklar, örneğin tem
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Yapısını Görüntüleme](../ide/viewing-the-structure-of-code.md)
-
-
-

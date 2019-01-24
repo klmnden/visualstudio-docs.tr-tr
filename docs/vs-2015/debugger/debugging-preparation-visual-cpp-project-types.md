@@ -1,14 +1,9 @@
 ---
 title: 'Hata ayıklama hazırlığı: Visual C++ proje türleri | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 802b34d47501d3538008838f9bb6ddec93ac827a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761111"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Hata Ayıklama Hazırlığı: Visual C++ Proje Türleri
+# <a name="debugging-preparation-visual-c-project-types"></a>Hata ayıklama hazırlığı: Visual C++ Proje Türleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıklamaktadır [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] proje şablonları.  
@@ -105,7 +100,7 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
    [Bu konudaki](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms uygulamaları (.NET)  
- **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms uygulaması. Daha fazla bilgi için [nasıl yapılır: bir Windows uygulaması projesi oluşturmak](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms uygulaması. Daha fazla bilgi için [nasıl yapılır: Bir Windows uygulaması projesi oluşturmak](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yönetilen Windows Forms uygulamalarında benzer.  
   
@@ -122,7 +117,4 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Çalışan bir Program veya birden çok programlara ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Nasıl yapılır: bir Windows uygulaması projesi oluşturma](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)
-
-
-
+ [Nasıl yapılır: Bir Windows uygulaması projesi oluşturma](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

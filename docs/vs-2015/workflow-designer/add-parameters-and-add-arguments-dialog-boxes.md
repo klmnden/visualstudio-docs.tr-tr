@@ -1,11 +1,8 @@
 ---
 title: Parametreler ve bağımsız değişkenler iletişim kutularını ekleyin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - AddParameters.UI
@@ -13,13 +10,13 @@ ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: d01eb02a68666007021aad9d789502e58f684528
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64698ba801254f05ce0d51502a1290952109a383
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196711"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766095"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Parametreler ve Bağımsız Değişkenler Ekle İletişim Kutuları
 Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **parametreler ekleme** iletişim kutusu tarafından kullanılan <xref:System.Activities.Statements.InvokeMethod> Tasarımcısı.  
@@ -27,7 +24,7 @@ Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **parametr
 |||  
 |-|-|  
 |**Yönü**|Parametresi yöntemi veya her ikisi de dışında yöntemi içine veri akışını temsil edip etmediğini belirtir.|  
-|**Türü**|Yeni bir parametre türü adı.|  
+|**Tür**|Yeni bir parametre türü adı.|  
 |**Değer**|Yeni parametre bir varsayılan değer atamak için kullanılan bir VB ifadesi|  
   
  Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **bağımsız değişkenleri eklemek** iletişim kutusu tarafından kullanılan <xref:System.Activities.Statements.InvokeDelegate> Tasarımcısı.  
@@ -36,5 +33,5 @@ Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **parametr
 |-|-|  
 |**Ad**|Bağımsız değişkenin adı.|  
 |**Yönü**|Bağımsız değişken, temsilci veya her ikisini de dışında temsilci içine veri akışını temsil edip etmediğini belirtir.|  
-|**Türü**|Yeni bağımsız değişken türü adı.|  
+|**Tür**|Yeni bağımsız değişken türü adı.|  
 |**Değer**|Temsilci bağımsız değişkeni, bu örneği için kullanılacak değer.|

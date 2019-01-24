@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: yapılandırmaları oluşturma ve düzenleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -23,15 +18,15 @@ ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767337"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme
+# <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: Yapılandırmaları Oluşturma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örneğin, test edicilerinizin bulmak ve sorunları gidermek için kullanabileceğiniz bir hata ayıklama derlemesi yapılandırabilirsiniz ve farklı türde yapılar farklı müşterilere dağıttığınız yapılandırabilirsiniz.  
@@ -58,7 +53,7 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
   
      **Özellik sayfaları** penceresi açılır.  
   
-     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir sürüm yapılandırması için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simgesi bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [Proje Tasarımcısı giriş](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir sürüm yapılandırması için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simgesi bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Oluşturma ve proje yapılandırmalarını değiştirme  
   
@@ -131,7 +126,4 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
  [Projeleri ve Visual Studio çözümleri oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB nasıl yapılır: Proje özelliklerini ve yapılandırma ayarlarını değiştirme](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [NIB nasıl yapılır: Proje özellikleri ve yapılandırma ayarlarını değiştirme](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

@@ -1,14 +1,9 @@
 ---
 title: DOM Gezgini'ni kullanarak Düzen hatalarını ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763914"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM Gezgini'ni kullanarak düzen hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 > [!TIP]
 >  Yaptığınız değişiklikler **Düzen** sekmesini kalıcı değildir. Kaynak kodunuzu kalıcı değişiklikler yapın ve ardından kullanarak uygulamanızı yenileyin **Yenile Windows uygulama** hata ayıklama araç çubuğu düğmesini (yalnızca Windows Store ve Windows Phone Store uygulamaları). Bu şekilde, hata ayıklayıcı yeniden başlatmayı önleyebilirsiniz.  
   
- Kutusu modelinde gösterilmeyen düzen özelliklerini değiştirmek için DOM Gezgini'ni kullanmak için bkz: [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md) ve [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Kutusu modelinde gösterilmeyen düzen özelliklerini değiştirmek için DOM Gezgini'ni kullanmak için bkz: [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md) ve [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Bir düzen sorunu düzeltme örneği  
  Bu örnekte, bir liste öğesinin Hub/Pivot şablonu, bulunan kutu modeli değerleri yorumlar gösterilmektedir **Düzen** sekmesini ve sonra bir düzen sorununu düzeltmek için özellik değerlerini değiştirin.  
@@ -88,7 +83,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 8.  Seçin ve Visual Studio'ya **öğe seçin** DOM Gezgini (veya Ctrl + B tuşuna basın). Böylece seçim modu değişir ve öğeyi tıklatarak seçebilirsiniz ve uygulama da önplana gelir. Tek tıklatmadan sonra mod geri döner.  
   
     > [!TIP]
-    >  HTML öğelerini doğrudan DOM Gezgini'nde seçmek için ok tuşlarını ya da diğer yöntemleri kullanabilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  HTML öğelerini doğrudan DOM Gezgini'nde seçmek için ok tuşlarını ya da diğer yöntemleri kullanabilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Phone öykünücü veya benzetici, gri sağ yarısında yarıya inmiştir görüntülerden birini seçin. Vurgulama seçilen öğe, Windows Phone öykünücüsü'nde burada gösterildiği gibi görünür:  
   
@@ -135,6 +130,3 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)   
  [DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama](../debugger/debug-css-styles-using-dom-explorer.md)   
  [DOM olayı dinleyicilerini görüntüleme](../debugger/view-dom-event-listeners.md)
-
-
-

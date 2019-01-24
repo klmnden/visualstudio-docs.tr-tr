@@ -1,13 +1,9 @@
 ---
 title: 'CA2241: Biçimlendirme yöntemlerine doğru bağımsız değişkenleri sağlayın | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2241
 - Provide correct arguments to formatting methods
@@ -20,14 +16,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1fc9e521ec693af74a590261b0cd2d9dbc81deae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a139db3fb1ece41c1d3f18471a286c72a7a576c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783119"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Biçimlendirme yöntemlerine doğru bağımsız değişkenleri sağlayın
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Biçimlendirme metotlarına doğru bağımsız değişkenleri sağlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

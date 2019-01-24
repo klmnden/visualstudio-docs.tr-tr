@@ -1,14 +1,9 @@
 ---
 title: Anonim metotlar ve kod çözümleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
 - code analysis, anonymous methods
@@ -18,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 73ff8dfca29f1ed9896462725886baa87e729100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756082"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonim Metotlar ve Kod Çözümleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,6 +154,3 @@ class Class
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen Kod Kalitesini Analiz Etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-
-
-

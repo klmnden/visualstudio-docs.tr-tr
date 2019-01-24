@@ -1,14 +1,9 @@
 ---
 title: COM ve ActiveX hata ayıklaması | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec2230511b9a058f1c35ce0c34dbe93a69317f4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766060"
 ---
 # <a name="com-and-activex-debugging"></a>COM ve ActiveX Hata Ayıklaması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Bu bölümde, hata ayıklama COM uygulamaları ve ActiveX denetimleri hakkında 
  [COM Sunucusunda ve Kapsayıcısında Hata Ayıklama](../debugger/com-server-and-container-debugging.md)  
  Özel durumlar, COM uygulamalarında hata ayıklaması yaparken değinmektedir. Sorunlar şunlardır: COM sunucusunda ve aynı çözüm içinde iki proje kullanarak, işlem sınırları arasında Git çağrıları oturum izleme, geri çağırma işlevlerde kesme noktalarını ayarlamadan ve arasında ve kapsayıcılar ve sunucular içine Adımlama kapsayıcı hata ayıklama.  
   
- [Nasıl Yapılır: ActiveX Denetiminde Hata Ayıklama](../debugger/how-to-debug-an-activex-control.md)  
+ [Nasıl yapılır: ActiveX Denetiminde Hata Ayıklama](../debugger/how-to-debug-an-activex-control.md)  
  ActiveX denetimlerinde hata ayıklama hakkında bilgi içerir. Bu içerir: belirli bir kapsayıcıda benzetimi ve kapsayıcının kodun içine Adımlama bir veri bağımlı ActiveX denetiminde hata ayıklama nasıl ActiveX denetiminizin kodu yürütür, görmek hata ayıklama oturumu için bir kapsayıcı belirtme.  
   
  [COM Hata Ayıklama Araçları](../debugger/com-debugging-tools.md)  
@@ -58,6 +53,3 @@ Bu bölümde, hata ayıklama COM uygulamaları ve ActiveX denetimleri hakkında 
  [COM'a giriş](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [ActiveX denetimleri](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [SDI Sunucu Uygulamaları](../debugger/sdi-server-applications.md)
-
-
-

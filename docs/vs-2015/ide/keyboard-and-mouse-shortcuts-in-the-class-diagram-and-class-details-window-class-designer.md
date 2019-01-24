@@ -1,14 +1,9 @@
 ---
 title: Klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775833"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Sınıf Diyagramında ve Sınıf Ayrıntıları Penceresinde Klavye ve Fare Kısayolları (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,21 +70,21 @@ Sınıf Tasarımcısı ve gezinme eylemleri gerçekleştirmek için fare yanı s
 |Ok tuşları|İç tür şekilleri|Şekil içeriği ağaç stili ezinti (Şekil çevresinde kaydırma desteklenir). Sol ve sağ tuşlarını Genişlet/geçerli öğe Genişletilebilir ise Daralt ve üst öğeye gidin değilse (ayrıntılı davranışı için ağaç görünümü Gezinti bakın).|  
 ||Üst düzey şekiller|Şekilleri diyagram üzerinde taşınıyor.|  
 |SHIFT + ok tuşları|İç tür şekilleri|Şekil öğelerine üyeleri, iç içe geçmiş türler veya bölmeleri gibi oluşan yapı sürekli seçimi. Bu kısayollar çevresinde kaydırma desteklemez.|  
-|GİRİŞ|İç tür şekilleri|Üst düzey şekli başlığı gidin.|  
+|HOME|İç tür şekilleri|Üst düzey şekli başlığı gidin.|  
 ||Üst düzey şekiller|Diyagram üzerinde ilk şekli gidin.|  
 |END|İç tür şekilleri|Şekil içinde son görünür öğesine gidin.|  
 ||Üst düzey şekiller|Son şekli diyagram üzerinde gidin.|  
-|SHIFT + HOME|İç tür şeklini|Geçerli öğe ile başlayan ve aynı şekilde en üst öğede ile biten bir şeklin içindeki öğeleri seçer.|  
+|SHIFT+HOME|İç tür şeklini|Geçerli öğe ile başlayan ve aynı şekilde en üst öğede ile biten bir şeklin içindeki öğeleri seçer.|  
 |SHIFT + END|İç tür şeklini|Aynı SHIFT + HOME ancak yukarıdan aşağı yönde.|  
 |ENTER|Tüm bağlamları|Ayrıca çift kullanılabilir olan şekil varsayılan eylemini çağırır. Çoğu durumda bu kodu görüntüle ancak bazı öğelerin farklı tanımlayın (elma şekerleri, bölme üstbilgileri, lollipop etiketlerini).|  
 |+/-|Tüm bağlamları|O anda odaklanılan öğeyi Genişletilebilir ise, bu anahtarlar Genişlet/öğeyi Daralt.|  
 |>|Tüm bağlamları|Daraltılmış ve ilk alt öğesine gider öğelerde alt öğe içeren bu öğe genişletir.|  
 |<|Tüm bağlamları|Üst öğesine gider.|  
-|ALT + SHIFT + L|Tür şekillerini içinde + tür şekilleri.|Varsa, şu anda Seçilen şekil lolipopa gider.|  
-|ALT + SHIFT + B|Tür şekillerini içinde + tür şekilleri.|Temel tür listesi tür şeklini gösterilir ve birden fazla öğe varsa, bu listenin (daraltma/genişletme) genişletme durumunu değiştirir.|  
+|ALT+SHIFT+L|Tür şekillerini içinde + tür şekilleri.|Varsa, şu anda Seçilen şekil lolipopa gider.|  
+|ALT+SHIFT+B|Tür şekillerini içinde + tür şekilleri.|Temel tür listesi tür şeklini gösterilir ve birden fazla öğe varsa, bu listenin (daraltma/genişletme) genişletme durumunu değiştirir.|  
 |DELETE|Diyagramdaki şekilleri türü ve açıklama|Çağıran **diyagramdan Kaldır** komutu.|  
 ||Diğer her şey üzerinde.|Çağıran **koddan Sil** komut (üyeleri, parametreleri, ilişkilendirmeler, devralma, lollipop etiketlerini).|  
-|CTRL + DELETE|Tüm bağlamları|Çağıran **koddan Sil** seçimi komutu.|  
+|CTRL+DELETE|Tüm bağlamları|Çağıran **koddan Sil** seçimi komutu.|  
 |TAB|Tüm bağlamları|Sonraki alt (kaydırma destekler) aynı üst içinde gider.|  
 |SHIFT+TAB|Tüm bağlamları|Önceki alt (kaydırma destekler) aynı üst içinde gider.|  
 |ALANI|Tüm bağlamları|Seçim geçerli öğe yapar.|  
@@ -116,6 +111,3 @@ Sınıf Tasarımcısı ve gezinme eylemleri gerçekleştirmek için fare yanı s
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür Üyeleri Oluşturma ve Yapılandırma (Sınıf Tasarımcısı)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

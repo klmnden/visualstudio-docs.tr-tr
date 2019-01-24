@@ -1,12 +1,9 @@
 ---
 title: UML modelleme projeleri ve diyagramları oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764819"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML modelleme projeleri ve diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
 |**Sorunu**|**Neden olur**|**Çözümleme**|  
 |---------------|----------------|--------------------|  
-|Modelleme projesi açılamıyor veya çözümün içine yüklenir.<br /><br /> Aşağıdaki ileti görüntülenir:<br /><br /> "Çözümdeki bir veya daha fazla proje doğru şekilde yüklenmedi. Lütfen ayrıntılar için çıkış penceresine bakın."<br /><br /> Çıkış penceresi, şu iletiyi görüntüler:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: hata: Tanınmayan bir GUID biçimi."|Bir modelleme projesi, aynı ada sahip ve aynı çözüm içinde projelerine başvurular var.<br /><br /> Örneğin, aynı ada sahip ve aynı çözümdeki projeleri için katman bağlanır.|Modelleme projesini açmak için bir metin düzenleyicisi kullanın dosya başvuruları kaldırın ve ardından modelleme projesinin yeniden açmayı deneyin.<br /><br /> Bu sorunu önlemek için aynı ada sahip projelerine başvurular eklemeyin. Projeleri benzersiz adlara sahip olduğundan emin olun.|  
+|Modelleme projesi açılamıyor veya çözümün içine yüklenir.<br /><br /> Aşağıdaki ileti görüntülenir:<br /><br /> "Çözümdeki bir veya daha fazla proje doğru şekilde yüklenmedi. Lütfen ayrıntılar için çıkış penceresine bakın."<br /><br /> Çıkış penceresi, şu iletiyi görüntüler:<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj: error: Tanınmayan bir GUID biçimi."|Bir modelleme projesi, aynı ada sahip ve aynı çözüm içinde projelerine başvurular var.<br /><br /> Örneğin, aynı ada sahip ve aynı çözümdeki projeleri için katman bağlanır.|Modelleme projesini açmak için bir metin düzenleyicisi kullanın dosya başvuruları kaldırın ve ardından modelleme projesinin yeniden açmayı deneyin.<br /><br /> Bu sorunu önlemek için aynı ada sahip projelerine başvurular eklemeyin. Projeleri benzersiz adlara sahip olduğundan emin olun.|  
 |Eksik eklenen kopyalanmış veya diğer modelleme projeleri veya iş çözümdeki diğer konumlara sürüklediğiniz diyagramlarından öğeleridir.<br /><br /> - veya -<br /><br /> Bir diyagramı açmaya çalıştığınızda, aşağıdaki ileti görüntülenir:<br /><br /> -"Tanımlarını bu projede mevcut değildir çünkü bazı Şekil veya diyagram üzerinde bağlayıcıları eksik. Ya da tanımları modelden diyagram kapatıldı ya da diyagramda bu tanımları içermeyen başka bir projeye kopyalanan silindi."<br /><br /> - veya -<br /><br /> -"Bu belge başka bir projede açıldı."|Diyagramı dosyası eklenir, sürüklenen veya bir modelleme projesinden başka bir modelleme projesine veya çözüm içindeki başka bir konuma kopyalanır.|Bir diyagram dosyasını kopyalamak için yeni bir diyagram oluşturun ve ardından öğeleri kaynak diyagramdan yeni diyagrama kopyalayın.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
  [Modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)
-
-
-

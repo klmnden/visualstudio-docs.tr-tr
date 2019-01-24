@@ -1,26 +1,21 @@
 ---
 title: VSPackage yönetilen | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, managed
 - managed VSPackages
 ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
-manager: douge
-ms.openlocfilehash: 44507112ceb3e7bed452ef4ced7633001224ad82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bde7742bc9165413abcf98bfb475c19ec0e45f51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753459"
 ---
 # <a name="managed-vspackages"></a>Yönetilen VSPackage'ları
 Aşağıdaki konular, bir VSPackage'ı oluşturma işlemleri açıklanmaktadır. Bir VSPackage'ı genişleten bir yazılım modülüdür [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kullanıcı arabirimi (UI) öğeleri, hizmetleri, projeler, düzenleyiciler ve tasarımcılar sağlayarak Tümleşik geliştirme ortamı (IDE). Daha fazla bilgi için [VSPackages](../extensibility/internals/vspackages.md).  

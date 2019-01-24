@@ -1,23 +1,20 @@
 ---
-title: 'Nasıl yapılır: sürükle ve bırak işleyicisi ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775839"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ DSL'nizi için sürükle ve bırak olayları için işleyiciler ekleyebilirsiniz
   
 -   [Özgün alma sürüklenen öğe](#getOriginal). Bir DSL öğesi sürüklenen öğe ise kaynak modeli açmak ve öğesine erişme.  
   
--   [Fare eylemlerini kullanma: Bölme öğeleri sürükleme](#mouseActions). Bu örnek, bir şeklin alanlarda fare işlemlerini durdurur bir alt düzey işleyici gösterir. Örneğin, kullanıcının fare ile sürükleyerek bir bölme öğeleri yeniden sıralamak olanak tanır.  
+-   [Farenizi kullanarak: Bölme öğeleri sürükleyerek](#mouseActions). Bu örnek, bir şeklin alanlarda fare işlemlerini durdurur bir alt düzey işleyici gösterir. Örneğin, kullanıcının fare ile sürükleyerek bir bölme öğeleri yeniden sıralamak olanak tanır.  
   
 ##  <a name="overrideShapeElement"></a> Hareket işleyicileri ShapeElement yöntemi geçersiz kılarak tanımlama  
  Yeni bir kod dosyası DSL projenize ekleyin. Bir hareket işleyicisi için genellikle en az aşağıdaki olmalıdır `using` ifadeleri:  
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> Fare eylemleri kullanarak: Bölme öğeleri sürükleme  
+##  <a name="mouseActions"></a> Farenizi kullanarak: Bölme öğeleri sürükleme  
  Bir şeklin alanlarda fare işlemlerini durdurur bir işleyici yazabilirsiniz. Aşağıdaki örnek, kullanıcının fare ile sürükleyerek bir bölme öğeleri yeniden sıralamak olanak tanır.  
   
  Bu örneği oluşturmak için bir çözüm kullanarak oluşturma **sınıf diyagramları** çözüm şablonu. Bir kod dosyası ekleyin ve aşağıdaki kodu ekleyin. Ad alanı olarak kendi aynı olacak şekilde ayarlayın.  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md)   
  [Etki Alanına Özgü Dil Çözümlerini Dağıtma](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Kod oluşturma ve T4 metin şablonları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: acaa2473556057a631718f5149212139e320f9da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779301"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Kod Oluşturma ve T4 Metin Şablonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +110,7 @@ namespace Fabrikam.FirstJob
  [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)  
  Bir metin şablonu dosyasının söz dizimi.  
   
- [İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [İzlenecek yol: Metin şablonları kullanarak kod oluşturma](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Kod oluşturmayı kullan yollarından biri Tanıtımı.  
   
  [Bir T4 Metin Şablonuna İlişkin Hata Ayıklama](../modeling/debugging-a-t4-text-template.md)  
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir UML modelinden dosyalar oluşturma](../modeling/generate-files-from-a-uml-model.md)   
  [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

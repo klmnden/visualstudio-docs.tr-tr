@@ -1,24 +1,19 @@
 ---
 title: Xamarin uygulamalarıyla uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793817"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla Uygulama Yaşam Döngüsü Yönetimi (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
  Aşağıdaki tablolarda, Visual Studio ALM özellikleri tanımlayan bir Xamarin projesi ile düzgün çalışması bekleyebilirsiniz ve hangilerinin sınırlamaları vardır. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.  
   
 ## <a name="agile-tools"></a>Çevik Araçlar  
- Başvuru bağlantısı: **[iş](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services veya Team Explorer Everywhere dahil TFS'nin kullanarak)  
+ Başvuru bağlantısı: **[İş](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (Visual Studio Team Services veya Team Explorer Everywhere dahil TFS'nin kullanarak)  
   
  Genel Açıklama: tüm planlama ve izleme özellikleri proje türü ve dilleri kodlama bağımsız olarak çalışır.  
   
@@ -48,7 +43,7 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
 |Rapor ve ilerleme durumunu görselleştirin|Evet||  
   
 ## <a name="modeling"></a>Modelleme  
- Başvuru bağlantısı:  **[çözümleme ve modelleme mimarisi](../modeling/analyze-and-model-your-architecture.md)**  
+ Başvuru bağlantısı: **[Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)**  
   
  Tasarım özellikleri kodlama dilini bağımsız veya C# .NET dilleri ile çalışır. Bkz: [rolleri mimari ve modelleme diyagramları yazılım geliştirmede](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) hangi yönlerini kodla ilişkili için.  
   
@@ -74,18 +69,18 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
 |[Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)|Evet||  
   
 ## <a name="build"></a>Derleme  
- Başvuru bağlantısı:  **[oluşturun](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Başvuru bağlantısı: **[Derleme](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
 |Şirket içi TFS sunucusu|Evet|Derleme makinesi Xamarin yüklü olması ve iOS için oluşturmak için bir OSX bilgisayara bağlanabilir. Bkz: [Xamarin için TFS Yapılandırma](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin Web sitesi)|  
 |Visual Studio Team Services bağlı şirket içi yapı sunucusu|Evet|Bkz: [yapı sunucusu](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) yönergeler için.|  
-|Visual Studio Team Services, barındırılan denetleyici hizmeti|Evet|Bkz: [Xamarin uygulamanızı derleyin](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin).|  
+|Visual Studio Team Services, barındırılan denetleyici hizmeti|Evet|Bkz: [Xamarin uygulamanızı derleyin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Tanımlarla öncesi ve sonrası betikleri oluşturun|Evet||  
 |Sürekli Tümleştirme dahil olmak üzere Geçitli iade|Evet|TFVC için Geçitli iade yalnızca Git iadeler yerine bir çekme isteği model üzerinde çalışır.|  
   
 ## <a name="testing"></a>Sınama  
- Başvuru bağlantısı:  **[uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Başvuru bağlantısı: **[Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
@@ -97,7 +92,7 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
 |[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)|Yalnızca Windows|Visual Studio'nun kullanıcı Arabirimi Testi Kaydedicisi, yalnızca Windows olur. Tüm platformlar için bkz [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme  
- Başvuru bağlantısı:  **[kod kalitesini iyileştirmek](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Başvuru bağlantısı: **[Kod kalitesini geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
@@ -108,7 +103,7 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
 |[.NET Framework bellek sorunlarını çözümleme](../misc/analyze-dotnet-framework-memory-issues.md)|Hayır|Visual Studio Araçları, profil oluşturma için Mono framework uygulamasına kancaları yoktur.|  
   
 ## <a name="release-management"></a>Yayın yönetimi  
- Başvuru bağlantısı:  **[sürüm yönetimi ile dağıtımları otomatikleştirme](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Başvuru bağlantısı: **[Sürüm yönetimi ile dağıtımları otomatikleştirme](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
@@ -117,9 +112,8 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
 |App Store'a yükle|Kısmi|Kullanılabilir uzantılar bazı uygulama mağazaları için bu işlemi otomatikleştirmek.  Bkz: [için Visual Studio Team Services uzantıları](https://marketplace.visualstudio.com/VSTS); Örneğin, [uzantısı için Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp ile izleme  
- Başvuru bağlantısı:  **[HockeyApp ile izleme](https://www.hockeyapp.net/features/)**  
+ Başvuru bağlantısı: **[HockeyApp ile izleme](https://www.hockeyapp.net/features/)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
 |Kilitlenme analizi, telemetri ve beta dağıtım|Evet||
-

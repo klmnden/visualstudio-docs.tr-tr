@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir Web sitesi için performans verileri toplama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir Web sitesi için performans verilerini toplama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,15 +18,15 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766158"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: bir Web sitesi için performans verileri toplama
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: Bir Web sitesi için performans verilerini topla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplamak için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması. Açık olan bir Web uygulaması profilini oluşturabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya profil bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] yerel bilgisayarınızda bulunan ve açık değil Web sitesi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
@@ -112,6 +107,3 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
  [İzleme veri değerlerini anlama](../profiling/understanding-instrumentation-data-values.md)   
  [Örnekleme Veri Değerlerini Anlama](../profiling/understanding-sampling-data-values.md)
-
-
-

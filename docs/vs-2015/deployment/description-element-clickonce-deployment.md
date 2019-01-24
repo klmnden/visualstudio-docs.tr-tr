@@ -1,14 +1,9 @@
 ---
 title: '&lt;Açıklama&gt; öğesi (ClickOnce dağıtımı) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8ddba6356ab051dbad27e55eefd53a517b47a21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cadf4a0b525e5603247748edd63516dc26d8a0b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776220"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Açıklama&gt; öğesi (ClickOnce dağıtımı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +33,8 @@ Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımla
   
 ```  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  
@@ -71,6 +66,3 @@ Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımla
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Dağıtım Bildirimi](../deployment/clickonce-deployment-manifest.md)
-
-
-

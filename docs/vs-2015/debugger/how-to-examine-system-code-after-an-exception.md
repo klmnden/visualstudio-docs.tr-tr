@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: özel durumdan sonra sistem kodunu İnceleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Özel durumdan sonra sistem kodunu İnceleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8cbaff38cdd6d769140f135d319a88d6098f294b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289ef1825e8034566e2a9595a46919a3c498108d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755949"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Nasıl Yapılır: Özel Durumdan Sonra Sistem Kodunu İnceleme
+# <a name="how-to-examine-system-code-after-an-exception"></a>Nasıl yapılır: Özel durumdan sonra sistem kodunu İnceleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir özel durum oluştuğunda, özel durumun nedenini belirlemek için bir sistem çağrısı içinde kod İnceleme gerekebilir. Aşağıdaki yordam, sistem kodu için yüklenen semboller yoksa bunun nasıl yapılacağını ya da yalnızca kendi kodum etkin olup olmadığını açıklar.  
@@ -52,8 +47,3 @@ Bir özel durum oluştuğunda, özel durumun nedenini belirlemek için bir siste
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Durumları Hata Ayıklayıcısı ile Yönetme](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

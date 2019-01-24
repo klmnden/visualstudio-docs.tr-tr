@@ -1,27 +1,22 @@
 ---
 title: 'Uyarı: bağımlılık &#39;dosya&#39; projesinde &#39;proje&#39; bunu başvurusunun üzerine yazacağından çalıştırma dizinine kopyalanamıyor &#39;dosya. &#39; | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.tasklisterror.copy_version_warning
 ms.assetid: 116819f3-a4d4-48b5-9e71-7c54660d38ef
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3b24a14636726be15aa52a50d56c381781f492fc
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771172"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Uyarı: bağımlılık &#39;dosya&#39; projesinde &#39;proje&#39; bunu başvurusunun üzerine yazacağından çalıştırma dizinine kopyalanamıyor &#39;dosya.&#39;
 Bağımlılıkları arasında bir çakışma yoktur; aynı ada sahip birden fazla ayrı derleme dosyaları, uygulamayı çalıştırmak için bin dizinine kopyalanmalıdır. Çalıştırma dizinine Bağımlılıklardan biri birincil başvuru olduğundan çakışmayı kuramıyor.  
@@ -30,7 +25,7 @@ Bağımlılıkları arasında bir çakışma yoktur; aynı ada sahip birden fazl
   
  Bu uyarı bir bağımlılık olur ancak etrafında çakışan Bağımlılıklardan biri ile ilgili bir başvuru olarak eklemeye çalıştı oluşur. Ya bir sürüm 1 başvuru gerekiyordu ve ardından ikinci bir başvuru eklendi ilk başvurunun sürümü 2 hangi kendine başvuruyor.  
   
- Diğer bir deyişle, çözümünüzdeki projelerin birbirine başvurmuş ancak başvuruları dosya başvuruları oluşturulmuş olduğundan bu hata oluşur (kullanarak **Gözat** düğmesine [Başvuru Ekle](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) iletişim kutusunda, projeden projeye başvurular yerine) (kullanarak **proje** sekmesinde **Başvuru Ekle** iletişim kutusunda). Projeden projeye başvuru avantajlarından başvuran proje oluşturulan son daraltılmasından değiştiyse bağımlı proje oluşturulacak böylece, yapı sistemindeki projeler arasında bir bağımlılık oluşturmasıdır. Bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz olabilmesi için bir dosya başvurusu bir yapı bağımlılığı oluşturmaz; bir proje, projenin önceden oluşturulmuş bir sürümüne başvuruda bulunabilir. Bu mümkün değildir ve bu hata mesajıyla sonuçlanır bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir.  
+ Diğer bir deyişle, çözümünüzdeki projelerin birbirine başvurmuş ancak başvuruları dosya başvuruları oluşturulmuş olduğundan bu hata oluşur (kullanarak **Gözat** düğmesine [Başvuru Ekle](http://msdn.microsoft.com/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) iletişim kutusunda, projeden projeye başvurular yerine) (kullanarak **proje** sekmesinde **Başvuru Ekle** iletişim kutusunda). Projeden projeye başvuru avantajlarından başvuran proje oluşturulan son daraltılmasından değiştiyse bağımlı proje oluşturulacak böylece, yapı sistemindeki projeler arasında bir bağımlılık oluşturmasıdır. Bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz olabilmesi için bir dosya başvurusu bir yapı bağımlılığı oluşturmaz; bir proje, projenin önceden oluşturulmuş bir sürümüne başvuruda bulunabilir. Bu mümkün değildir ve bu hata mesajıyla sonuçlanır bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir.  
   
  Bu ileti, bin dizinindeki bir çakışma var ve uygulama düzgün çalışmayabilir her zaman görünür. Bu sorunu geçici olarak çalışmış olabilir, ancak proje sistemi bir bağımlılık sürümünü tüm bileşenleri doğru şekilde çalışıp çalışmayacağını belirleyemediğinden yine de bu uyarı görüntülenir.  
   

@@ -1,27 +1,22 @@
 ---
 title: Alan sekmesi, işlem özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2cab2263da44ba46d7fbbe301f61e51b5308ba73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de5df4c55feba8c9aaba0def7585029cc71426b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800066"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Alan Sekmesi, İşlem Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Kullanım **alanı** bir işlemin adres alanı incelemek için sekmesinde. Gör�
 |**Salt okunur baytlar**|Seçilen kategori, yürütülen okuma yanı sıra, tüm adres alanının toplamı.|  
 |**Oku-yaz baytları**|Seçilen kategori, okuma ve yazma sağlayan tüm adres alanının toplamı.|  
 |**Yazma kopyası baytları**|Seçilen kategori için tüm adres alanının toplamı, bellek, okuma yazma için ancak paylaşım sağlar. İşlemler bu bellek okurken, aynı bellek paylaşabilirler. Ancak, paylaşan bir işlem bu paylaşılan bellek, okuma/yazma erişimi istediğinde, yazma için belleğin bir kopyası yapılır.|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Kaynak bastırmaya genel bakış içindeki | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793668"
 ---
 # <a name="in-source-suppression-overview"></a>Kaynak Bastırmaya Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Kaynak gizleme özelliği ekleyerek yönetilen kodda Kod Analizi ihlallerini gö
  Kaynak gizlemeleri yayın derlemelerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Kaynak gizleme işlem maliyetini nedeniyle, kaynak gizleme meta veriler dahil ederek uygulamanızın performansını da düşebilir.  
   
 > [!NOTE]
->  El kod bu öznitelikler kendiniz erişiminiz yok. Daha fazla bilgi için [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Menü öğesi, C++ kodu için kullanılamıyor.  
+>  El kod bu öznitelikler kendiniz erişiminiz yok. Daha fazla bilgi için [nasıl yapılır: Menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Menü öğesi, C++ kodu için kullanılamıyor.  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage özniteliği  
  Kod Analizi uyarı olarak sağ tıkladığınızda **hata listesi** ve ardından **iletileri gösterme**, **SuppressMessage** özniteliği, kodunuzda veya çok eklenir Projenin genel dosyası.  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>Oluşturulan kod  
  Yönetilen kod derleyicileri ve bazı üçüncü taraf araçları hızlı kod geliştirme kolaylaştırmak için kod oluşturur. Kaynak dosyalarında görünür, derleyicinin ürettiği kodu ile işaretlenmiş genellikle **GeneratedCodeAttribute** özniteliği.  
   
- Kod Analizi uyarıları ve hataları üretilen kod için engellenip engellenmeyeceğini seçebilirsiniz. Bu tür uyarılar ve hatalar gösterme hakkında daha fazla bilgi için bkz. [nasıl yapılır: üretilen kod için uyarıları bastır](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ Kod Analizi uyarıları ve hataları üretilen kod için engellenip engellenmeyeceğini seçebilirsiniz. Bu tür uyarılar ve hatalar gösterme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Üretilen kod için uyarıları bastırma](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
  Kod Analizi yoksayar Not **GeneratedCodeAttribute** zaman uygulandığı bütünleştirilmiş tamamını veya tek bir parametre. Bu durum nadiren oluşur.  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  Hedef, her zaman tam öğe adı içerir.  
   
 ## <a name="global-suppression-file"></a>Küresel bir gizleme dosyası  
- Küresel bir gizleme dosyası genel düzeyi gizlemelerinin ya da bir hedef belirtmeyin gizlemeleri gizlemeleri tutar. Örneğin, derleme düzeyi ihlalleri gizlemeleri bu dosyada depolanır. Ayrıca, proje düzeyi ayarları bir formun arkasındaki kod için kullanılabilir olmadığından bazı ASP.NET gizlemeleri bu dosyada depolanır. Küresel bir gizleme oluşturulur ve projeniz için seçtiğiniz ilk kez eklendi **proje gizleme dosyası** seçeneği **iletileri gösterme** Hata Listesi penceresindeki komutu. Daha fazla bilgi için [nasıl yapılır: menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ Küresel bir gizleme dosyası genel düzeyi gizlemelerinin ya da bir hedef belirtmeyin gizlemeleri gizlemeleri tutar. Örneğin, derleme düzeyi ihlalleri gizlemeleri bu dosyada depolanır. Ayrıca, proje düzeyi ayarları bir formun arkasındaki kod için kullanılabilir olmadığından bazı ASP.NET gizlemeleri bu dosyada depolanır. Küresel bir gizleme oluşturulur ve projeniz için seçtiğiniz ilk kez eklendi **proje gizleme dosyası** seçeneği **iletileri gösterme** Hata Listesi penceresindeki komutu. Daha fazla bilgi için [nasıl yapılır: Menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

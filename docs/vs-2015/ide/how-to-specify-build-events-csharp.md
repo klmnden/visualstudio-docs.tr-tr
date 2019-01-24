@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: derleme olayları belirtme (C#) | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Derleme olayları belirtme (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -19,15 +14,15 @@ ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781091"
 ---
-# <a name="how-to-specify-build-events-c"></a>Nasıl Yapılır: Derleme Olayları Belirtme (C#)
+# <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: Derleme Olayları Belirtme (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için derleme olaylarını kullanma. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütülür.  
@@ -65,7 +60,7 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
   
      **Not** ön derleme veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.  
   
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgileri değiştirmek üzere nasıl  
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgileri değiştirme  
  Aşağıdaki yordamda, bir derleme sonrası olay çağrılan bir .exe komutunu kullanarak uygulama bildiriminde en düşük işletim sistemi sürümünü ayarlama işlemi gösterilmektedir (. exe.manifest dosya proje dizininde). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört kısımlı bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildiriminin:  
   
 ```  
@@ -191,8 +186,5 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme olayları sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Nasıl yapılır: derleme olayları belirtme (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

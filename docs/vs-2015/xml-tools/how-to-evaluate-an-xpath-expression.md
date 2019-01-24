@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: bir XPath ifadesini değerlendirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir XPath ifadesini değerlendirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804478"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>Nasıl yapılır: bir XPath ifadesini değerlendirme
+# <a name="how-to-evaluate-an-xpath-expression"></a>Nasıl yapılır: Bir XPath İfadesini Değerlendirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XPath ifadeleri ile değerlendirebilirsiniz **QuickWatch** iletişim kutusu. XPath ifadesi W3C XPath 1.0 öneri göre geçerli olmalıdır. Geçerli XSLT bağlam — diğer bir deyişle, `self::node()` düğümünde **Yereller** penceresi — için XPath ifadesini değerlendirme bağlamı sağlar.  
@@ -35,7 +30,7 @@ XPath ifadeleri ile değerlendirebilirsiniz **QuickWatch** iletişim kutusu. XPa
 -   Kullanıcı tanımlı işlevleri desteklenmez.  
   
 > [!NOTE]
->  Aşağıdaki yordam belowAvg.xsl ve books.xml dosyalarından kullanır [izlenecek yol: bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.  
+>  Aşağıdaki yordam belowAvg.xsl ve books.xml dosyalarından kullanır [izlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Bir XPath ifadesini değerlendirme  
   
@@ -59,4 +54,3 @@ XPath ifadeleri ile değerlendirebilirsiniz **QuickWatch** iletişim kutusu. XPa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)
-

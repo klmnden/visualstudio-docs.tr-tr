@@ -1,25 +1,20 @@
 ---
 title: XML şemaları iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769607"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML Şemaları İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49899597"
  Erişebildiğiniz **XML şemaları** ya tıklayarak iletişim kutusunu **şemaları** düğmesini seçerek veya belge Özellikler penceresinde **şemaları** gelen**XML** menüsü.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Kullanın**  
+ **Kullanma**  
  XML Şeması nasıl kullanıldığının seçin.  
   
 - **Otomatik**. Bu şema geçerli belgede tarafından'kullanımda değildir, ancak otomatik ilişkilendirmesi için kullanılabilir. XML belgesi eşleşen bir ad alanı bildirirse `targetNamespace` bu şema şema otomatik olarak ilişkilendirilir ve şema kümesindeki dahil edilir.  
@@ -55,6 +50,3 @@ ms.locfileid: "49899597"
  [XML Düzenleyicisi bileşenleri](../xml-tools/xml-editor-components.md)   
  [Nasıl yapılır: XML şemalarını seçme](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Şema Önbelleği](../xml-tools/schema-cache.md)
-
-
-

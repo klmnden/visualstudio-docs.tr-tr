@@ -1,14 +1,9 @@
 ---
 title: Seçenekler sayfası, metin düzenleyici düğümü özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767998"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
 |WordWrap|Get/Set (Boole)|Görünümün, uzun satırları sözcük sınırlarından kaydırıp kaydırmayacağını belirler. Bu ayar `true` neden `VirtualSpace` özellik ayarlamak için (Bu listede) öğesinin `false`.|  
 |WordWrapGlyphs|Get/Set (Boole)|Satırın sonunda bir karakter (glif) görüntüler; bu da satırın bir sonraki satıra kaydırılacağını gösterir.|  
 |EnableLeftClickForURLs|Get/Set (Boole)|Düzenleyicinin URL'lerin altını çizip çizmeyeceğini ve tek sol tıklamanın ilgili URL'yi sistemde kayıtlı Web tarayıcısında açmayı sağlayıp sağlamayacağını belirler.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Girintilendirme stilini belirler: Varsayılan, Akıllı veya Yok.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Girintilendirme stilini belirler: Varsayılan, akıllı veya yok.|  
 |TabSize|Get/Set (Long)|Bir sekmeye eşit gelen boşluk sayısını temsil eder. 1 ila 60 aralığı (sınırlar dahil) dışında bir tamsayı ayarlanması hata verir.|  
 |InsertTabs|Get/Set (Boole)|Varsa `True`, girintilendirme yaparken sekme karakterleri kullanılır.|  
 |IndentSize|Get/Set (Long)|Tek bir girinti düzeyine eşit boşluk sayısını temsil eder. 1 ila 60 aralığı (sınırlar dahil) dışında bir tamsayı değeri ayarlanması hata verir.|  
@@ -76,6 +71,3 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
  [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Seçenekler sayfası, ortam düğümü özellikleri](../../ide/reference/options-page-environment-node-properties.md)   
  [Seçenekler Sayfası, Yazı Tipleri ve Renkler Düğümü Özellikleri](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

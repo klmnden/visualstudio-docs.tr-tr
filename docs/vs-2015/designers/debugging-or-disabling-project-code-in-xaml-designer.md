@@ -1,22 +1,20 @@
 ---
 title: XAML Tasarımcısı'nda proje kodu devre dışı bırakma veya hata ayıklama | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-designers
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: afe3b2fd5bdae86d0b5046775c695766594ae9b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795143"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>XAML Tasarımcısı'nda proje kodu devre dışı bırakma veya hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,8 +89,3 @@ ms.locfileid: "49837587"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio ve Visual Studio İçin Blend Uygulamalarında XAML Tasarlama](../designers/designing-xaml-in-visual-studio.md)
-
-
-
-
-

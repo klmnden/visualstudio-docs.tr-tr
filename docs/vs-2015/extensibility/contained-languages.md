@@ -1,26 +1,21 @@
 ---
 title: Dil yer alan | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - contained languages
 ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c4ff50fe0fe156c548351c378ba3a256e230ec43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 670c1b751e5f1023530fe1f0c73ab16d24fd5328
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772033"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766646"
 ---
 # <a name="contained-languages"></a>Kapsanan dilleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
@@ -44,4 +39,3 @@ ms.locfileid: "51772033"
      Bir dizide dil geçirir <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> yapısı, şu anda yalnızca bir birincil ve ikincil bir yayılma içerir.  
   
 5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Yöntemi ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> yöntem birincil ikincil arabelleğe ve eşleme sağlar.
-

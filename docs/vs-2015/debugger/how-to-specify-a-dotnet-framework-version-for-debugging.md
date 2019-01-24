@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: hata ayıklama için bir .NET Framework sürümü belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c6d6601c5b3affdd57d49d0461c4f3d8e487c67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b3e5d7ebb1f61ffdbff98f49f83025115c80f64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771261"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Nasıl Yapılır: Hata Ayıklama İçin .NET Framework Sürümü Belirtme
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Nasıl yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Hata ayıklayıcı, hata ayıklama Microsoft eski sürümlerini destekler [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] geçerli sürümü yanı sıra. Visual Studio'dan bir uygulamayı başlatırsanız, hata ayıklayıcı her zaman doğru sürümünü tanımlayabilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayıkladığınız uygulama için. Uygulama zaten çalışıyor ve kullanırsanız **ekleme**, hata ayıklayıcı her zaman daha eski bir sürümünü belirlemek mümkün olmayabilir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Böyle bir durumda bildiren bir hata iletisi alırsınız,  
@@ -50,7 +45,7 @@ ms.locfileid: "51769058"
   
 3.  İçinde **Kayıt Defteri Düzenleyicisi'ni**, HKEY_LOCAL_MACHINE klasörü açın.  
   
-4.  Gidin: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4.  Şuraya gidin: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
      Anahtar mevcut değilse HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine sağ tıklayın ve **yeni anahtar**. Yeni anahtar adı `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51769058"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Dizin arama ipuçları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_index
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: f9ffa8e9-3ece-419d-a465-f9c2c21fd4ba
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6183fbf2a7ec7c32282f4dbe6c4a497e5ba3bff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a05e767330f0c1df5b30af6660a3f6e5ba4971e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764984"
 ---
 # <a name="index-search-tips"></a>Dizin Arama İpuçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,6 +63,3 @@ Anahtar sözcükleri girerek dizin bilgileri bulabilirsiniz. Bu konuda Yardım d
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tam metin arama ipuçları](../ide/full-text-search-tips.md)   
  [Bilgilerin Konumunu Bulma](../ide/locate-information.md)
-
-
-

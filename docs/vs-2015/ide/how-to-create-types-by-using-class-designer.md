@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,15 +17,15 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772160"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı Kullanarak Tür Oluşturma
+# <a name="how-to-create-types-by-using-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C# .NET ve Visual Basic .NET projeleri için yeni türleri tasarımı için bir sınıf diyagramı üzerinde oluşturun. Varolan türleri görmek için bkz: [nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)](../ide/how-to-view-existing-types-class-designer.md).  
@@ -102,10 +97,7 @@ Visual C# .NET ve Visual Basic .NET projeleri için yeni türleri tasarımı iç
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralma oluşturma](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında ilişkilendirme oluşturma](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında ilişkilendirme oluşturma](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Tür üyeleri (Sınıf Tasarımcısı) oluşturma ve yapılandırma](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Sınıf diyagramları (Sınıf Tasarımcısı) ile çalışma](../ide/working-with-class-diagrams-class-designer.md)   
  [Sınıfları ve Türleri Tasarlama (Sınıf Tasarımcısı)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

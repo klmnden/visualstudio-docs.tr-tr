@@ -1,11 +1,7 @@
 ---
 title: Diğer diller için düzenleyici desteği ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -18,13 +14,13 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758821"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Diğer diller için Visual Studio Düzenleyicisi desteği ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +80,7 @@ Okuma ve farklı bir bilgisayara dil arasında gezinme Visual Studio Düzenleyic
 
  Windows % USERPROFILE % yolunu Çözümler: c:\Users\\*\<kullanıcı adı >*. Uzantılar klasörünün sisteminizde mevcut değilse, oluşturmanız gerekir. Klasör zaten varsa, gizlenir.
 
- TextMate dil bilgisi oluşturma hakkında daha fazla bilgi için bkz [TextMate – dil dilbilgisi giriş: HTML kaynak kod söz dizimi vurgulama ekleme katıştırılmış](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [dil dilbilgisi ve özel oluşturma ile ilgili notlar Textmate paketi için tema](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ TextMate dil bilgisi oluşturma hakkında daha fazla bilgi için bkz. [TextMate – dil dilbilgisi giriş: HTML kaynak kod söz dizimi vurgulama ekleme katıştırılmış](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [bir Textmate paketi için bir dil dilbilgisi ve özel tema oluşturma hakkında notlar](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio 2013'ün Git geliştirmeleri](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md) [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013'ün Git geliştirmeleri](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md) [izlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)

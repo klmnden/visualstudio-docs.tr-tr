@@ -1,14 +1,9 @@
 ---
 title: Hata ayıklayıcı proje ayarları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776590"
 ---
 # <a name="debugger-project-settings"></a>Hata Ayıklayıcı Proje Ayarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ Belirli hata ayıklama proje ayarları da etkiler. Bu ayarlar, hata ayıklayıc�
  Bu bölümde, hangi seçenekleri mevcuttur ve bunların nasıl ayarlanacağını açıklar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl Yapılır: Hata Ayıklayıcısı Ayarlarını Belirtme](../debugger/how-to-specify-debugger-settings.md)  
+ [Nasıl yapılır: Hata Ayıklayıcısı Ayarlarını Belirtme](../debugger/how-to-specify-debugger-settings.md)  
  Hata ayıklayıcı ayarlarında açıklar **seçenekleri** iletişim kutusu.  
   
- [Nasıl Yapılır: Hata Ayıklama ve Dağıtım Yapılandırmalarını Ayarlama](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Nasıl yapılır: Hata Ayıklama ve Dağıtım Yapılandırmalarını Ayarlama](../debugger/how-to-set-debug-and-release-configurations.md)  
  Açıklar **hata ayıklama** ve **yayın** ayarları ve bunlar arasında geçiş yapma.  
   
  [C++ Hata Ayıklama Yapılandırması Proje Ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -70,6 +65,3 @@ Belirli hata ayıklama proje ayarları da etkiler. Bu ayarlar, hata ayıklayıc�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
-
-
-

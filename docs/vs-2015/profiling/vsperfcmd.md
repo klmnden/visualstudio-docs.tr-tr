@@ -1,14 +1,9 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -19,13 +14,13 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e8cd602a005026c8dec4bf5a309d6f04044b960d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766662"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776104"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,8 +61,8 @@ VSPerfCmd [/U] [/options]
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|[Başlatma](../profiling/launch.md) **:** *yürütülebilir dosya*|Belirtilen uygulamayı başlatır ve profil oluşturma başlar.|  
-|[Args](../profiling/args.md) **:** *bağımsız değişkenleri*|Başlatılan uygulamaya geçirilecek komut satırı bağımsız değişkenleri belirtir.|  
+|[Başlatma](../profiling/launch.md) **:** *yürütülebilir*|Belirtilen uygulamayı başlatır ve profil oluşturma başlar.|  
+|[Args](../profiling/args.md) **:** *bağımsız değişkenler*|Başlatılan uygulamaya geçirilecek komut satırı bağımsız değişkenleri belirtir.|  
 |[Console](../profiling/console.md)|Belirtilen komut yeni bir komut istemi penceresinde başlatır.|  
 |[Ekleme](../profiling/attach.md) **:** *PID*[**,**_PID_]|Belirtilen işlemler için profil oluşturma başlar. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir.|  
 |[Ayırma](../profiling/detach.md)[**:**_PID_[,_PID_]]|Belirtilen işlemler profil oluşturmayı durdurur. İşlemler işlem kimliği veya işlem adına göre tanımlanabilir. Hiçbir işlem belirtilmezse, profil oluşturma için tüm işlemler durdurulur.|  
@@ -91,8 +86,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:security** \< **izin&#124;REDDET**> *sağ*[ *sağ*] \< *kullanıcı*  &#124; *Grubu*>|Erişim izni verdiği veya belirtilen kullanıcı veya profil oluşturma hizmetleri için Grup erişimi engeller.<br /><br /> `Right` aşağıdakilerden biri olabilir:<br /><br /> CrossSession - hizmete profil oluşturma oturumunu kesecek şekilde kullanıcı erişimi sağlar.<br /><br /> SampleProfiling - kullanıcı erişim örnekleme profil oluşturmayı etkinleştirmek için bir sürücü için sağlar. İzleme profil oluşturma sırasında çekirdek geçiş bilgilere erişmek için de kullanılır.<br /><br /> FullAccess - kullanıcı verir CrossSession hem SampleProfiling erişim.|  
 |**Admin:Security, listesi**|Profil oluşturma hizmetleri geçerli durumunu listeler ve kullanıcı izinleri listeler.|  
-|**Yönetici:** \< *hizmet*&#124;*sürücü*>\<**Başlat**&#124;**Durdur**  &#124; **Yükleme**&#124;**Kaldır**>|Başlatır, durdurur, yükler veya profil oluşturma hizmet bileşenini (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) kaldırır.|  
-|**Yönetici:** \< *hizmet*&#124;*sürücü*>**AutoStart**\<**üzerinde** &#124; **Kapalı**>|Etkinleştirir veya yeniden başlatmadan sonra profil oluşturma hizmetinin (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) otomatik olarak başlatılmasını devre dışı bırakır.|  
+|**Yönetici:** \<*Hizmet*&#124;*sürücü*>\<**Başlat**&#124;**Durdur**&#124;**Yükleme** &#124; **Kaldır**>|Başlatır, durdurur, yükler veya profil oluşturma hizmet bileşenini (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) kaldırır.|  
+|**Yönetici:** \<*Hizmet*&#124;*sürücü*>**AutoStart**\<**ON**&#124;**kapalı**>|Etkinleştirir veya yeniden başlatmadan sonra profil oluşturma hizmetinin (hizmet) veya çekirdek modu cihaz sürücüsünü (sürücü) otomatik olarak başlatılmasını devre dışı bırakır.|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd Driver/Driver  
  **VSPerfCmd Driver/Driver** seçeneği kullanılmıyor şimdi. Kullanım **VsPerfCmdAdmin** bu işlevselliği için Seçenekler.  
@@ -101,6 +96,3 @@ VSPerfCmd [/U] [/options]
  [Vsınstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

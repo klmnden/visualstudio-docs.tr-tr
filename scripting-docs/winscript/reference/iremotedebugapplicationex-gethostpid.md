@@ -18,37 +18,43 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7570abb8436a49fb80f548d1a7136bf0fe7e0814
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 62033169e10585015b5f1439067aa0cbc42447a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754646"
 ---
 # <a name="iremotedebugapplicationexgethostpid"></a>IRemoteDebugApplicationEx:GetHostPid
-Konak uygulamanın işlem Kimliğini döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Konak uygulamanın işlem Kimliğini döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT GetHostPid(  
-   DWORD*  dwHostPid  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `dwHostPid`  
- [out] Ana bilgisayar işlemi tanımlayıcısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  
-  
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|`S_OK`|Yöntem başarılı oldu.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- IDE tarafından kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IRemoteDebugApplicationEx Arabirimi](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+HRESULT GetHostPid(
+   DWORD*  dwHostPid
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+`dwHostPid`
+
+[out] Ana bilgisayar işlemi tanımlayıcısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Yöntem döndürür bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:
+
+|Değer|Açıklama|
+|-----------|-----------------|
+|`S_OK`|Yöntem başarılı oldu.|
+
+## <a name="remarks"></a>Açıklamalar
+
+IDE tarafından kullanılır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [IRemoteDebugApplicationEx Arabirimi](iremotedebugapplicationex-interface.md)

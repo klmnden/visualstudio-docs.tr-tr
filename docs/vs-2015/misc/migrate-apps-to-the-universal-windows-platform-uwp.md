@@ -1,25 +1,20 @@
 ---
 title: Evrensel Windows Platformu (UWP) uygulamaları geçirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766371"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Uygulamaları Evrensel Windows Platformu’na (UWP) geçirme
 Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ya da Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için gerekli el ile değişiklikleri yapın. (Windows 8.1 Evrensel uygulamasıyla bir Windows uygulaması projesi ve Windows Phone projesi varsa, her projeyi geçirmek için adımları izlemeniz gerekir.)  
@@ -93,11 +88,11 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
     1.  Değerini \<Platform > öğesine: **x86**.  
   
-    2.  Ekleme bir \<Targetplatformıdentifier > öğesi ve onun değerine: **UAP**.  
+    2.  Ekleme bir \<Targetplatformıdentifier > öğesi ve değeri ayarlayın: **UAP**.  
   
     3.  Mevcut değiştirin \<TargetPlatformVersion > öğesi değeri Evrensel Windows platformu sürümünün yüklü olması. Ayrıca bir \<TargetPlatformMinVersion > öğesi ve aynı değeri verin.  
   
-    4.  Değiştirin \<MinimumVisualStudioVersion > öğesine: **14**.  
+    4.  Değiştirin \<MinimumVisualStudioVersion > öğesi: **14**.  
   
     5.  Değiştirin \<ProjectTypeGuids > aşağıda gösterildiği gibi bir öğe:  
   
@@ -273,7 +268,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
     2.  8.1 ApplicationTypeRevision öğesinden 10.0 için değeri güncelleştirin.  
   
-    3.  Değiştirin \<MinimumVisualStudioVersion > öğesine: 14.  
+    3.  Değiştirin \<MinimumVisualStudioVersion > öğesi: 14.  
   
     4.  Ekleme bir \<EnableDotNetNativeCompatibleProfile > öğesi ve onun değerine: true.  
   
@@ -337,7 +332,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 2. Güncelleştirmeye gerek duyduğunuz \<paket > Yeni şemaları öğeyle mevcut proje türünüz temel. İlk Windows Store veya Windows Phone projesi olup olmadığına göre aşağıdaki şemaları kaldırın.  
   
-    **Windows Store projesi için eski:** , \<paket > öğesi şuna benzer görünür.  
+    **ESKİ Windows Store projesi için:** \<Paket > öğesi şuna benzer görünür.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
    ```  
   
-    **Windows Phone projesi için eski:** , \<paket > öğesi şuna benzer görünür.  
+    **ESKİ Windows Phone projesi için:** \<Paket > öğesi şuna benzer görünür.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **Evrensel Windows platformu için yeni:** aşağıdaki şema eklemek, \<paket > öğesi. Tüm ilişkili ad alanı tanımlayıcısı ön ekleri için az önce kaldırdığınız şemaları öğeleri kaldırın. IgnorableNamespaces özelliğini güncelleştirin: uap mp. Yeni \<paket > öğesi şuna benzer görünmelidir.  
+    **Yeni Evrensel Windows platformu için:** Aşağıdaki şema eklemek, \<paket > öğesi. Tüm ilişkili ad alanı tanımlayıcısı ön ekleri için az önce kaldırdığınız şemaları öğeleri kaldırın. IgnorableNamespaces özelliğini güncelleştirin: uap mp. Yeni \<paket > öğesi şuna benzer görünmelidir.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
    ```  
   
-3. Ekleme bir \<bağımlılıkları > alt öğe \<paket > öğesi. Ardından Ekle bir \<TargetDeviceFamily > alt öğe bu \<bağımlılıkları > öğesi adı, MinVersion ve MaxVersionTested özniteliklere sahip. Ad özniteliği değeri vermek: Windows.Universal. MinVersion ve MaxVersionTested yüklediğiniz Evrensel Windows platformu sürümü değerini verin. Bu öğe, şuna benzer görünmelidir:  
+3. Ekleme bir \<bağımlılıkları > alt öğe \<paket > öğesi. Ardından Ekle bir \<TargetDeviceFamily > alt öğe bu \<bağımlılıkları > öğesi adı, MinVersion ve MaxVersionTested özniteliklere sahip. Ad özniteliği değeri verin: Windows.Universal. MinVersion ve MaxVersionTested yüklediğiniz Evrensel Windows platformu sürümü değerini verin. Bu öğe, şuna benzer görünmelidir:  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
    </Dependencies>  
    ```  
   
-4. **Yalnızca Windows Store için:** eklemenize gerek bir \<mp:PhoneIdentity > alt öğe \<paket > öğesi. Bir PhoneProductId ve PhonePublisherId özniteliklerini ekleyin. Ad özniteliği ile aynı değere sahip PhoneProductId ayarlamak \<kimlik > öğesi. PhonePublishedId değerini şuna ayarlayın: 00000000-0000-0000-0000-000000000000. Böyle:  
+4. **Yalnızca Windows Store için:** Eklemek istediğiniz bir \<mp:PhoneIdentity > alt öğe \<paket > öğesi. Bir PhoneProductId ve PhonePublisherId özniteliklerini ekleyin. Ad özniteliği ile aynı değere sahip PhoneProductId ayarlamak \<kimlik > öğesi. PhonePublishedId değerini şuna ayarlayın: 00000000-0000-0000-0000-000000000000. Böyle:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 5. Bulma \<önkoşulları > öğesi ve bu öğeyi ve bunun tüm alt öğeleri silin.  
   
-6. Ekleme **uap** ad alanına aşağıdaki \<kaynak > öğeleri: DXFeatureLevel, ölçeklendirin. Örneğin:  
+6. Ekleme **uap** ad alanına aşağıdaki \<kaynak > öğeleri: Ölçek, DXFeatureLevel. Örneğin:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
    ```  
   
-    **Yalnızca Windows Store için geçerlidir:** döşeme boyutu adları değiştirilmiştir. Öznitelikleri değiştirmek \<VisualElements > yakınsanmış kutucuk boyutlarından seçim yaparak yeni yansıtacak şekilde öğesi. 70 x 70 71 x 71 haline gelir ve 30 x 30 44 x 44 haline gelir.  
+    **Yalnızca Windows Store için geçerlidir:** Döşeme boyutu adları değiştirilmiştir. Öznitelikleri değiştirmek \<VisualElements > yakınsanmış kutucuk boyutlarından seçim yaparak yeni yansıtacak şekilde öğesi. 70 x 70 71 x 71 haline gelir ve 30 x 30 44 x 44 haline gelir.  
   
     **Eski:** döşeme boyutu adları  
   
@@ -487,7 +482,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 12. Çerçeve bağımlılıklarını değiştirin. Bir yayımcı adı tümüne Ekle \<PackageDependency > öğeleri ve bir MinVersion zaten belirtilmişse belirtin.  
   
-     **Eski:** \<PackageDependency > öğesi  
+     **ESKİ:** \<PackageDependency > öğesi  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
     ```  
   
-     **Yeni:** \<PackageDependency > öğesi  
+     **YENİ:** \<PackageDependency > öğesi  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
     </Extension>  
     ```  
   
-     **Yeni:** Bluetooth türü görev ile.  
+     **YENİ:** Bluetooth türü görev ile.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -552,7 +547,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
     </Capabilities>  
     ```  
   
-     **Yeni:** genel bir Bluetooth özelliği ile değiştirildi.  
+     **YENİ:** Genel bir Bluetooth özelliği ile değiştirildi.  
   
     ```xml  
     <Capabilities>  
@@ -826,7 +821,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> C# /VB birim testi projelerini güncelleştirme  
   
-1. Visual Studio ile C# /VB birim testi projesi içeren çözümünüzü açın. Değiştirin \<OuttputType > öğesine: AppContainerExe.  
+1. Visual Studio ile C# /VB birim testi projesi içeren çözümünüzü açın. Değiştirin \<OuttputType > öğesi: AppContainerExe.  
   
    ```xml  
   

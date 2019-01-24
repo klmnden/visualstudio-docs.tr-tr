@@ -1,14 +1,9 @@
 ---
 title: Uzaktan hata ayıklama Web uygulamaları önkoşulları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1cd777b5-6d20-4ca6-a0df-51653b118469
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 72fef031e0e1b9c07c96f683cecb520c8924de53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eda777fa335cc844eedc13f350aa44319f587fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767967"
 ---
 # <a name="prerequistes-for-remote-debugging-web-applications"></a>Uzak Hata Ayıklama Web Uygulamaları Önkoşulları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ ms.locfileid: "51799463"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Sistem Gereksinimleri](../debugger/aspnet-debugging-system-requirements.md)
-
-
-

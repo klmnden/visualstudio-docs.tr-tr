@@ -2,7 +2,7 @@
 title: Hizmet yapılandırması ve profillerini yönetme | Microsoft Docs
 description: Hizmet yapılandırmalarını ve profilleri yapılandırma dosyaları ile çalışma hakkında bilgi edinin | hangi dağıtım ortamlarının ayarlarını depolamak ve bulut Hizmetleri için ayarları yayımlama.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 3f7c7341b115f0899ac4c90d574a65dfdb4087bc
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: d1e21642f8ff707c81dcf2e493e0784c1c04b7ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780063"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Hizmet yapılandırmalarını ve profillerini yönetme
 ## <a name="overview"></a>Genel Bakış
@@ -45,7 +45,7 @@ Ayrıca açabilirsiniz **yapılandırmaları yönetme** rolün özellik sayfalar
    
     **Hizmet yapılandırmalarını Yönet** iletişim kutusu görüntülenir.
 2. Hizmet yapılandırmasını silmek için silmek için istediğiniz yapılandırmayı seçin **adı** listeleyin ve ardından **Kaldır**. Bu yapılandırmayı silmek istediğinizi doğrulamak için bir iletişim kutusu görüntülenir.
-3. Seçin **Sil**.
+3. **Sil**’i seçin.
    
      Hizmet yapılandırma dosyası, Çözüm Gezgini'nde bir Azure projesi kaldırılır.
 
@@ -99,4 +99,3 @@ Sihirbazı ilk kez çalıştırdığınızda, bir varsayılan profili oluşturul
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Azure Visual Studio projenizden diğer bölümlerini yapılandırma hakkında bilgi edinmek için [bir Azure projesi yapılandırma](http://go.microsoft.com/fwlink/p/?LinkID=623075)
-

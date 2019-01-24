@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: nesne yöneticisine kitaplık kaydetme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Nesne yöneticisine kitaplık kaydetme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6be7c1fc8f615ccbf29b8c085fecf6f4d6689404
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791910"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Nasıl yapılır: nesne yöneticisine kitaplık kaydetme
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Nasıl yapılır: Nesne Yöneticisine Kitaplık Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Sembol tarama araçlarını, gibi **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrı tarayıcısı** ve **sembol sonuçları Bul**, etkinleştirdiğiniz görüntülemek Projenizdeki veya dış bileşenler semboller. Simgeler, ad alanları, sınıflar, arabirimler, yöntemleri ve diğer dil öğelerini içerir. Kitaplıkları bu sembolleri izlemek ve bunlara üzerinden kullanıma sunacaksınız [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] araçları verilerle dolduran Nesne Yöneticisi.  
@@ -174,5 +169,4 @@ Sembol tarama araçlarını, gibi **sınıf görünümü**, **Nesne Tarayıcıs�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmeti genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Sembol tarama araçlarını destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Nasıl Yapılır: Kitaplık Tarafından Sağlanan Sembollerin Listelerini Nesne Yöneticisine Sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-
+ [Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

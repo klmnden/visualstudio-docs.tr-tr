@@ -1,12 +1,9 @@
 ---
 title: Nesneleri bağlama
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 875ea4491fa91063339008362d132b4416afe2af
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776879"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio'da nesne bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 -   Veri nesneleri veritabanına geri kaydediliyor.
 
 > [!NOTE]
->  Daha iyi anlamanıza ve bu sayfadaki örnekleri için bağlam sağlamak için aşağıdaki tamamlamanızı öneririz: [izlenecek yol: nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Bu izlenecek yol, burada tartışılan nesneleri oluşturur.
+>  Daha iyi anlamanıza ve bu sayfadaki örnekleri için bağlam sağlamak için aşağıdaki tamamlamanızı öneririz: [İzlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Bu izlenecek yol, burada tartışılan nesneleri oluşturur.
 
 ### <a name="loaddata-into-objects"></a>LoadData nesnelere
  Bu örnek için TableAdapter'ı kullanarak, nesneleri verileri yükleyin. Varsayılan olarak, TableAdapter bağdaştırıcıları veritabanından veri getirir ve veri tablolarını doldurmak yöntemleri iki tür oluşturulur.
@@ -96,9 +93,9 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 ### <a name="addobjects-to-a-collection"></a>Bir koleksiyona Addobjects
  Çağırarak bir koleksiyona eklediğiniz nesneleri `Add` yöntemi özel bir koleksiyona sınıfınızın veya, <xref:System.Windows.Forms.BindingSource>.
 
- Bir koleksiyon kullanarak ekleme örneği için bir <xref:System.Windows.Forms.BindingSource>, bakın `LoadCustomers` yönteminde [izlenecek yol: nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Bir koleksiyon kullanarak ekleme örneği için bir <xref:System.Windows.Forms.BindingSource>, bakın `LoadCustomers` yönteminde [izlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Nesne özel bir koleksiyona ekleme örneği için bkz. `LoadOrders` yönteminde [izlenecek yol: nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Nesne özel bir koleksiyona ekleme örneği için bkz: `LoadOrders` yönteminde [izlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 >  `Add` Öğesinden devraldığı durumlarda yöntemi özel koleksiyonunuz için otomatik olarak sağlanan <xref:System.ComponentModel.BindingList%601>.

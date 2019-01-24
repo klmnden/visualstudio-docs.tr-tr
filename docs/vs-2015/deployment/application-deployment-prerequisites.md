@@ -1,14 +1,9 @@
 ---
 title: Uygulama dağıtımının önkoşulları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776235"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama Dağıtımının Önkoşulları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] eksik Önkoşullar algılayabilir ve bir önyükleyici kullanarak önkoşulları yükleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Bildirimleri gibi araçları tarafından oluşturulan değerleri değiştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] MageUI.exe ihtiyacınız ve uygulama bildirimi bir metin düzenleyicisinde düzenleyin ve ardından uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: yeniden imzalama uygulama ve dağıtım bildirimlerini](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Bildirimleri gibi araçları tarafından oluşturulan değerleri değiştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] MageUI.exe ihtiyacınız ve uygulama bildirimi bir metin düzenleyicisinde düzenleyin ve ardından uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Uygulamanızı dağıtmak için Visual Studio ve ClickOnce kullanırsanız, varsayılan olarak seçili önyükleyici paketleri çözümdeki .NET Framework sürümü bağlıdır. Ancak, hedef .NET Framework sürümünü değiştirirseniz seçeneklerinde güncelleştirmeniz gerekir **Önkoşullar iletişim kutusu** el ile.  
   
@@ -82,9 +77,9 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
 |---------------------------|-----------------|  
 |**-?, -h, - Yardım**|Yardım iletişim kutusunu görüntüler.|  
 |**-url, - componentsurl**|Saklı URL'yi ve bu kurulum bileşenleri URL'sini gösterir.|  
-|**-url =** `location`|Burada Setup.exe/sfw URL'sini ayarlar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.|  
+|**-url=** `location`|Burada Setup.exe/sfw URL'sini ayarlar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.|  
 |**-componentsurl =** `location`|Burada Setup.exe bağımlılıklar için aşağıdaki gibi görünür URL'sini ayarlar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
-|**-homesite =** `true`**&#124;** `false`|Zaman `true`, satıcının sitesinden tercih edilen konum bağımlılıkları indirir. Bu geçersiz kılmaları **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**.|  
+|**-homesite=** `true` **&#124;** `false`|Zaman `true`, satıcının sitesinden tercih edilen konum bağımlılıkları indirir. Bu geçersiz kılmaları **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>İşletim sistemi desteği  
  Windows Server 2008 Sunucu Çekirdeği veya Windows Server 2008 R2 Server sınırlı işlevsellikle düşük bakım sunucusu ortamı sağlayan Core, Visual Studio önyükleyicisi desteklenmiyor. Örneğin, Sunucu Çekirdeği yükleme seçeneği, yalnızca .NET Framework üzerinde tam bağlı olan Visual Studio özellikleri çalıştırılamıyor .NET Framework 3.5 Sunucu Çekirdeği profilini destekler.  
@@ -92,6 +87,3 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması sağla
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)
-
-
-

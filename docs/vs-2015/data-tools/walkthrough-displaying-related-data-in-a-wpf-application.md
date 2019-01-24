@@ -1,12 +1,9 @@
 ---
-title: 'İzlenecek yol: WPF uygulamasında ilgili verileri görüntüleme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763905"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>İzlenecek Yol: Bir WPF Uygulamasında İlgili Verileri Görüntüleme
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri görüntüleyen bir WPF uygulaması oluşturacaksınız. Veri varlıkları bir varlık veri modeli içinde kapsüllenir. Üst varlığın siparişler bir dizi için genel bakış bilgileri içerir. Bu varlığın her bir özellik, farklı bir denetime uygulamadaki bağlıdır. Alt varlık her sipariş ayrıntılarını içerir. Bu veri kümesini bağlı bir <xref:System.Windows.Controls.DataGrid> denetimi.  
@@ -55,7 +52,7 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
 - Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 - WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
@@ -64,7 +61,7 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
 #### <a name="to-create-a-new-wpf-project"></a>Yeni bir WPF projesi oluşturmak için  
   
-1.  Visual Studio'yu başlatın.  
+1.  Visual Studio’yu çalıştırın.  
   
 2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
@@ -97,7 +94,7 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
    - AdventureWorksLT örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir haldeyse, onu seçin.  
   
-      veya  
+      -veya-  
   
    - Tıklayın **yeni bağlantı** ve AdventureWorksLT veritabanına bağlantı oluşturun.  
   

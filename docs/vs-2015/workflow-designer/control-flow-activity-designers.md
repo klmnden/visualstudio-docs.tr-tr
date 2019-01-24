@@ -1,23 +1,20 @@
 ---
 title: Akış etkinliği tasarımcılarını denetleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3db0a9d4457fce6f170b2a58733ca0bf0da678cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796636"
 ---
 # <a name="control-flow-activity-designers"></a>Akış Etkinliği Tasarımcılarını denetleme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikler içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.  
@@ -26,7 +23,7 @@ ms.locfileid: "49303621"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Belirtilen bir koşulu olana kadar kendi gövdesinde en az bir kez yer alan bir etkinliği yürütür **true**.  
   
- [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T >](http://msdn.microsoft.com/a680cddd-2760-497a-b27b-c023fcbc6f33)  
  Belirtilen koleksiyondaki her öğe için gövdesinde yer alan bir etkinliği yürütür.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -47,7 +44,7 @@ ms.locfileid: "49303621"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Sırayla yürütülen bir alt etkinlik sıralı bir koleksiyonunu içerir.  
   
- [Anahtar\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Anahtar\<T >](http://msdn.microsoft.com/ce1aa634-c4db-4475-a1c8-a88478a57212)  
  Belirtilen ifadeyi hesaplar ve bir koleksiyon değerlendirmesinden gelen alınan değer ilişkili anahtarı eşleşen etkinlik gelen bir etkinliği yürütür.  
   
  [While](../workflow-designer/while-activity-designer.md)  

@@ -1,27 +1,22 @@
 ---
 title: Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752919"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programının (CVC
  Komut satırı yardımcı programını yüklemek ve indirmek için Git [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde CVCollectionCmd.exe yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde x64 bilgisayarlar).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd ile bir izleme toplamak  
- Uygulama ile CVCollectionCmd başlatarak veya eklemeyi, bir izleme toplayabilirsiniz. Aşağıdaki komut başvurusu seçenekleri için bkz. Örneğin  
+ Uygulama ile CVCollectionCmd başlatarak veya eklemeyi, bir izleme toplayabilirsiniz. Aşağıdaki komut başvurusu seçenekleri için bkz. Örneğin:  
   
 ```  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
@@ -48,7 +43,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programının (CVC
   
 |Seçenek|Açıklama|Parametreler|Döndürülen değerler|  
 |------------|-----------------|----------------|-------------------|  
-|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Yok.|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) oturumları zaten etkin.|  
+|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Hiçbiri|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) oturumları zaten etkin.|  
 |Başlat|Belirtilen işlem eşzamanlılık görselleştiricisi altında çalışır.|Yürütülebilir dosyanın yolu.|çalıştırma başarılı olursa 0.<br /><br /> Hedef uygulama başlatılamadı çünkü çalıştırma başarısız olmuşsa 1.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan çalıştırma başarısız olmuşsa 13.|  
 |İliştir|Sistem genelinde izleme toplama başlar; belirtilmişse, aksi takdirde, bir işleme iliştirir.|Yok.|Ek başarılı olursa 0.<br /><br /> 1 ek belirtilen işlemi geçersiz veya belirsiz olduğundan başarısız oldu.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan başarısız oldu, 13.|  
 |Ayır|Koleksiyonu durdurur.|Yok.|ayrılmayı başarılı olursa 0.<br /><br /> 1 ayrılmayı koleksiyonu şu anda devam eden olmadığından başarısız oldu.<br /><br /> 2 toplama durdurulamadı ayrılmayı başarısız oldu.|  
@@ -84,14 +79,14 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programının (CVC
 |Ad|İşaretleyici sağlayıcı açıklamasını belirtir.|Bir dize.|  
 |Kategoriler|İşaretleyici sağlayıcı için toplanan kategorileri belirtir.|Virgülle ayrılmış bir dize sayı veya sayı aralığı.|  
 |IsEnabled|İşaretleyici sağlayıcısını koleksiyon için etkin olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|FilterConfig|Koleksiyondan filtrelenir ETW olayları yapılandırma seçeneklerinin listesini belirtir.|Bu öğeleri içerebilir:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO|  
+|FilterConfig|Koleksiyondan filtrelenir ETW olayları yapılandırma seçeneklerinin listesini belirtir.|Bu öğeleri içerebilir:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-   CollectFileIO|  
 |CollectClrEvents|CLR olayları toplanır olup olmadığını belirleyen bir değer ayarlayın.|-True<br />-Yanlış|  
-|ClrCollectionOptions|Yerel uygulamalar için CLR olayları toplamak etkinleştirilip etkinleştirilmeyeceğini ve NGEN azaltma olaylarını toplamak etkinleştirilip etkinleştirilmeyeceğini belirtir.|Biri, her ikisi de veya hiçbiri bu değerleri içerebilir:<br /><br /> -CollectForNative<br />-DisableNGenRundown|  
+|ClrCollectionOptions|Yerel uygulamalar için CLR olayları toplamak etkinleştirilip etkinleştirilmeyeceğini ve NGEN azaltma olaylarını toplamak etkinleştirilip etkinleştirilmeyeceğini belirtir.|Biri, her ikisi de veya hiçbiri bu değerleri içerebilir:<br /><br /> -CollectForNative<br />-   DisableNGenRundown|  
 |CollectSampleEvents|Örnek olaylar toplanan olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
 |CollectGpuEvents|DX tarafından oluşturulan olaylar toplanan olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
 |CollectFileIO|Dosya g/ç olayları toplanır olup olmadığını belirleyen bir değer ayarlar.|-True<br />-Yanlış|  
-|UserBufferSettings|Kullanıcı arabelleği ayarlarını parametrelerin listesini belirtir.|Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers|  
-|KernelBufferSettings|Çekirdek arabelleği ayarlarını parametrelerin listesini belirtir.|Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers|  
+|UserBufferSettings|Kullanıcı arabelleği ayarlarını parametrelerin listesini belirtir.|Bu öğeleri içermelidir:<br /><br /> -   BufferFlushTimer<br />-   BufferSize<br />-MinimumBuffers<br />-MaximumBuffers|  
+|KernelBufferSettings|Çekirdek arabelleği ayarlarını parametrelerin listesini belirtir.|Bu öğeleri içermelidir:<br /><br /> -   BufferFlushTimer<br />-   BufferSize<br />-MinimumBuffers<br />-MaximumBuffers|  
 |BufferFlushTimer|Temizleme Zamanlayıcısı ETW arabellek belirtir.|Pozitif bir tamsayı.|  
 |BufferSize|İçin kilobayt cinsinden, her olay izleme oturumu arabellek atanan bellek miktarı.|1024 numarası 0.|  
 |MinimumBuffers|Olay izleme oturumu arabellek havuzu için ayrılan arabellekler en küçük sayısı.|Pozitif bir tamsayı en az iki kez mantıksal çekirdek sayısı.|  
@@ -158,6 +153,3 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programının (CVC
 </LocalConfig>  
   
 ```
-
-
-

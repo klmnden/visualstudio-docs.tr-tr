@@ -1,25 +1,22 @@
 ---
 title: Bir UML modeli diyagramlar üzerinde görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770666"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Diyagramlar üzerinde model görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +34,14 @@ Program kodunda uzantı Visual Studio için diyagramlar üzerinde model öğeler
   
 -   [Açma ve diyagramları oluşturma](#Opening)  
   
--   [Örnek: şekiller hizalamak için komutu](#AlignCommand)  
+-   [Örnek: Şekilleri Hizalama komutu](#AlignCommand)  
   
 ##  <a name="Display"></a> Diyagramdaki bir öğe görüntülemek için  
  Kullanım örneği veya bir eylem gibi bir öğe oluşturduğunuzda, kullanıcı UML Model Gezgini'nde görebilirsiniz, ancak bir diyagramda her zaman otomatik olarak görüntülenmez. Bazı durumlarda, görüntülenmesi için kod yazmanız gerekir. Aşağıdaki tabloda seçenekler özetlenmektedir.  
   
-|Öğe türü|Örneğin|Bunu görüntülemek için kodunuzu gerekir.|  
+|Öğe türü|Örneğin:|Bunu görüntülemek için kodunuzu gerekir.|  
 |---------------------|-----------------|-------------------------------------|  
-|Sınıflandırıcısı|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Belirtilen diyagramlarda ilişkili şekiller oluşturun. Herhangi bir sayıda her sınıflandırıcı şekilleri oluşturabilirsiniz.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ayarlama `parentShape` için `null` diyagramın üst düzeyinde bir şekil için.<br /><br /> İçinde başka bir şekil görüntülenecek:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Not:** içinde görünen gerçekleştirirseniz bir **ILinkedUndo** işlem, yöntem bazen Hayır döndürür `IShape`. Ancak şekli doğru oluşturulur ve kullanarak erişilebilir. `IElement.Shapes().`|  
+|Sınıflandırıcısı|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Belirtilen diyagramlarda ilişkili şekiller oluşturun. Herhangi bir sayıda her sınıflandırıcı şekilleri oluşturabilirsiniz.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ayarlama `parentShape` için `null` diyagramın üst düzeyinde bir şekil için.<br /><br /> İçinde başka bir şekil görüntülenecek:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Not:**  İçinde görünen gerçekleştirirseniz bir **ILinkedUndo** işlem, yöntem bazen Hayır döndürür `IShape`. Ancak şekli doğru oluşturulur ve kullanarak erişilebilir. `IElement.Shapes().`|  
 |Alt sınıflandırıcı|Öznitelik, işlem,<br /><br /> Bölümü, bağlantı noktası|Otomatik - kod gerekmez.<br /><br /> Bu, üst bir parçası olarak görüntülenir.|  
 |Davranış|Etkileşim (dizi)<br /><br /> Etkinlik|Davranışı, uygun bir diyagrama bağlayın.<br /><br /> Her davranışı aynı anda en fazla bir diyagrama bağlı olabilir.<br /><br /> Örneğin:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Alt davranışı|Yaşam çizgilerini, iletileri, Eylemler, nesne düğümleri|Otomatik - kod gerekmez.<br /><br /> Üst bir diyagrama bağlıysa görüntülenir.|  
@@ -165,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Örnek: şekiller hizalamak için komutu  
+##  <a name="AlignCommand"></a> Örnek: Şekilleri Hizalama komutu  
  Aşağıdaki kod, şekilleri düzgünce hizalayan bir menü komutu uygular. Kullanıcının ilk iki veya daha fazla şekil yaklaşık uyum içinde dikey veya yatay yerleştirmeniz gerekir. Ardından Hizala komutu merkezlerini hizalamak için kullanılabilir.  
   
  Komutunu kullanabilmek için bu kodu bir menü komutu projesine ekleyin ve sonra elde edilen uzantısı kullanıcılarınıza dağıtın. Daha fazla bilgi için [modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -384,8 +381,5 @@ namespace AlignCommand
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)   
  [UML modelinde gezinme](../modeling/navigate-the-uml-model.md)   
- [Örnek: Şekilleri diyagram komutu Hizala.](http://go.microsoft.com/fwlink/?LinkId=213809)   
+ [Örnek: Şekilleri diyagram komutu Hizala](http://go.microsoft.com/fwlink/?LinkId=213809)   
  [Örnek: Öğe, şekiller ve stereotipler oluşturma](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-

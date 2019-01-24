@@ -1,13 +1,8 @@
 ---
 title: Biçim belirleyiciler c++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769677"
 ---
 # <a name="format-specifiers-in-c"></a>C++ içindeki Biçim Belirticileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +132,8 @@ int main() {
 |Sembol|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 ASCII karakteri|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.... 4... 0 ". 0W &...|  
-|**mb**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.... 4... 0 ". 0W &...|  
+|**m**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mb**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
 |**mw**|8 sözcükler|0x0012ffac|0X0012FFAC 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**MD**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
@@ -149,9 +144,4 @@ int main() {
   
 |Belirleyici|Biçimi|İfade|Görüntülenen değer|  
 |---------------|------------|----------------|---------------------|  
-|n|Ondalık tamsayı|pBuffer [32]|Görüntüler `pBuffer` 32 öğe dizisi olarak.|
-
-
-
-
-
+|n|Ondalık tamsayı|pBuffer[32]|Görüntüler `pBuffer` 32 öğe dizisi olarak.|

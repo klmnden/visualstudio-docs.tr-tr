@@ -1,14 +1,9 @@
 ---
 title: Yaygın MSBuild proje özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758476"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Aşağıdaki tabloda, sık kullanılan Visual Studio proje dosyalarında tanıml
 |DisableFastUpToDateCheck|Geçerli bir Boole değeri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yalnızca. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yöneticisi kullanan bir proje, güncel olması için yeniden oluşturulması olup olmadığını belirlemek için FastUpToDateCheck adlı bir işlem oluşturun. Bu işlem, kullanmaktan daha hızlıdır [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bunu belirlemek için. DisableFastUpToDateCheck özelliğini `true` atlamasına olanak tanır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yapı yöneticisini ve kullanmak için onu zorla [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projenin güncel olup olmadığını belirlemek için.|  
 |DocumentationFile|XML belgeleri dosyası olarak oluşturulacak dosyanın adı. Bu ad, yalnızca dosya adını içerir ve hiçbir yol bilgisi içermez.|  
 |ErrorReport|Derleyici görevinin iç derleyici hatalarını nasıl raporlayacağını belirtir. Geçerli değerler: "prompt," "send" ya da "none". Bu özellik değerine eşdeğer olan `/errorreport` derleyici anahtarı.|  
-|ExcludeDeploymentUrl|[GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md) proje dosyası aşağıdaki öğeleri herhangi birini içeriyorsa, dağıtım bildirimine bir deploymentProvider etiketi ekler:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Excludedeploymenturl'yi kullanarak, Bununla birlikte, deploymentProvider etiketi yukarıdaki URL'lerden herhangi birini belirtilse bile dağıtım bildirimine eklenmesini engelleyebilirsiniz. Bunu yapmak için aşağıdaki özelliği proje dosyanıza ekleyin:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Not:** Excludedeploymenturl'yi gösterilmese de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE ve yalnızca el ile proje dosyasını düzenleyerek ayarlanabilir. Bu özelliğin ayarlanması dahilinde yayımlamayı etkilemez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; yani deploymentProvider etiketi hala PublishUrl tarafından belirtilen URL'ye eklenir.|  
+|ExcludeDeploymentUrl|[GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md) proje dosyası aşağıdaki öğeleri herhangi birini içeriyorsa, dağıtım bildirimine bir deploymentProvider etiketi ekler:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-   PublishUrl<br /><br /> Excludedeploymenturl'yi kullanarak, Bununla birlikte, deploymentProvider etiketi yukarıdaki URL'lerden herhangi birini belirtilse bile dağıtım bildirimine eklenmesini engelleyebilirsiniz. Bunu yapmak için aşağıdaki özelliği proje dosyanıza ekleyin:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Not:**  ExcludeDeploymentUrl gösterilmese de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE ve yalnızca el ile proje dosyasını düzenleyerek ayarlanabilir. Bu özelliğin ayarlanması dahilinde yayımlamayı etkilemez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; yani deploymentProvider etiketi hala PublishUrl tarafından belirtilen URL'ye eklenir.|  
 |Filealignment değerini|, Çıktı dosyasının bölümlerinin hizalanacağı yeri bayt cinsinden belirtir. Geçerli değerler: 512, 1024, 2048, 4096, 8192. Bu özellik değerine eşdeğer olan `/filealignment` derleyici anahtarı.|  
 |FrameworkPathOverride|Mscorlib.dll'nin ve Microsoft.VisualBasic.dll'nin konumunu belirtir. Bu parametre değerine eşdeğer olan `/sdkpath` vbc.exe derleyicisinin anahtar.|  
 |GenerateDocumentation|Belgeleri yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole parametresi. Varsa `true`, yapı, belgelendirme bilgilerini üretir ve bunu yapı görevinin ürettiği kitaplığı ve yürütülebilir dosya adı ile birlikte bir .xml dosyasına yerleştirir.|  
@@ -91,7 +86,7 @@ Aşağıdaki tabloda, sık kullanılan Visual Studio proje dosyalarında tanıml
 |OptionInfer|Bir Boole değeri ayarlandığında `true`, etkinleştirir değişkenlerin tür girişimini. Bu özellik değerine eşdeğer olan `/optioninfer` derleyici anahtarı.|  
 |OptionStrict|Bir Boole değeri ayarlandığında `true`, yapı görevinin katı tür semantiği örtük tür dönüştürmelerini kısıtlamak için zorunlu neden olur. Bu özellik değerine eşdeğer olan `/optionstrict` vbc.exe derleyicisinin anahtar.|  
 |OutputPath|Örneğin "bin\Debug" proje dizinine göreli olarak çıktı dizini yolunu belirtir.|  
-|OutputType|Çıkış dosyasının dosya biçimini belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> -Kitaplığı. Bir kod kitaplığı oluşturur. (Varsayılan değer)<br />-Exe. Bir konsol uygulaması oluşturur.<br />-Module. Bir modül oluşturur.<br />-Winexe. Windows tabanlı bir program oluşturur.<br /><br /> Bu özellik değerine eşdeğer olan `/target` vbc.exe derleyicisinin anahtar.|  
+|OutputType|Çıkış dosyasının dosya biçimini belirtir. Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> -Kitaplığı. Bir kod kitaplığı oluşturur. (Varsayılan değer)<br />-Exe. Bir konsol uygulaması oluşturur.<br />-Module. Bir modül oluşturur.<br />-   Winexe. Windows tabanlı bir program oluşturur.<br /><br /> Bu özellik değerine eşdeğer olan `/target` vbc.exe derleyicisinin anahtar.|  
 |OverwriteReadOnlyFiles|Salt okunur dosyaların üzerine yaz veya bir hata tetiklemesini sağlayan isteyip istemediğinizi belirten bir Boole değeri.|  
 |PdbFile|Oluşturmakta olduğunuz .pdb dosyasının dosya adı. Bu özellik değerine eşdeğer olan `/pdb` csc.exe derleyicisinin anahtar.|  
 |Platform|Derlemede hedeflediğiniz işletim sistemi. Geçerli değerler şunlardır: "Any CPU", "x 86" ve "x64".|  
@@ -136,6 +131,3 @@ Aşağıdaki tabloda, sık kullanılan Visual Studio proje dosyalarında tanıml
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yaygın MSBuild Proje Öğeleri](../msbuild/common-msbuild-project-items.md)
-
-
-

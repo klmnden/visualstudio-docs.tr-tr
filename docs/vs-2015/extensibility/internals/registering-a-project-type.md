@@ -1,14 +1,9 @@
 ---
 title: Proje türü kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785332"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774310"
 ---
 # <a name="registering-a-project-type"></a>Proje Türü Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -200,7 +195,7 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|Yok.|Çeşitli dosyalar projeleri girişleri aşağıdaki girişleri gösterir varsayılan değeri.|  
+|`@`|REG_SZ|Hiçbiri|Çeşitli dosyalar projeleri girişleri aşağıdaki girişleri gösterir varsayılan değeri.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Yeni öğe ekleme şablon dosyaları için kaynak kimliği değeri.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Varsayılan yol olarak görüntülenen öğelerin **Yeni Öğe Ekle** iletişim kutusu.|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Ağaç düğümünde görüntülemek için sıralama düzeni oluşturur **Yeni Öğe Ekle** iletişim kutusu.|  
@@ -229,7 +224,7 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
-|CLSID_Package %|REG_SZ|`,1000,1`|Menü bilgilerini almak için kaynak.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|Menü bilgilerini almak için kaynak.|  
   
  Aşağıdaki örnekler kayıt defteri anahtarı [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] altında yer alır.  
   
@@ -275,4 +270,3 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
  [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md)   
  [Proje Üreteçlerini Kullanarak Proje Örnekleri Oluşturma](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

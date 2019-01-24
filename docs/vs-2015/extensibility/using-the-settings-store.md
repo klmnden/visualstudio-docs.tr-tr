@@ -1,26 +1,21 @@
 ---
 title: Ayarları Store kullanarak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764946"
 ---
 # <a name="using-the-settings-store"></a>Ayarlar Deposu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,4 +87,3 @@ Ayarları depolar iki tür vardır:
     >  \14.0Exp_Config\ ve değil \14.0_Config içeren anahtar baktığınızdan emin olun\\. Visual Studio'nun deneysel örneği çalıştırdığınızda, yapılandırma kayıt defteri kovanında "14.0Exp_Config" ayarlarıdır.  
   
 3.  \Installed Products\ düğümünü genişletin. İleti, önceki adımlarda ise **Microsoft Windows Phone geliştirici araçları yüklü: True**, \Installed Products\ bir Microsoft Windows Phone geliştirici araçları düğüm içermelidir. İleti ise **Microsoft Windows Phone geliştirici araçları yüklü: False**, sonra da bir Microsoft Windows Phone geliştirici araçları düğüm \Installed Products\ içermemelidir.
-

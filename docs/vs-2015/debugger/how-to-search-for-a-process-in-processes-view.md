@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: işlemler görünümünde işlem arama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İşlemler görünümünde işlem arama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -16,15 +11,15 @@ ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c187089c8aeec3b2c0409adbab1f262893720d87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765355"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl Yapılır: İşlemler Görünümünde İşlem Arama
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl yapılır: İşlemler görünümünde işlem arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. Alanları iletişim kutusunda işlem ağacında seçilen işlem özniteliklerini gösterir.  
@@ -49,6 +44,3 @@ Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi 
 6. **Tamam**'ı tıklatın.  
   
    Eşleşen işlem bulunamadı, içinde vurgulanır **işlem görünümü** penceresi.
-
-
-

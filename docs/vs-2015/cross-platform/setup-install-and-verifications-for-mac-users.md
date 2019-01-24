@@ -1,21 +1,17 @@
 ---
 title: Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fca4f8ef2d3fb1272dc835b4bedd7dcdcc83725f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772839"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772041"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac kullanıcıları için kurulum, yükleme ve doğrulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ Bu konuda, Mac'te bir Windows sanal makine içinde Visual Studio isteğe bağlı
   
 - Aşağıdaki yapılandırmalardan biri:  
   
-  -   **Xamarin Studio doğrudan Mac üzerinde çalıştırmak için:** Xamarin Studio yapı destekleyen Xamarin'in geliştirme ortamı, C# kullanarak Android, iOS ve Windows uygulamaları.  Xamarin Studio hızlı bir genel bakış için bkz [Xamarin Studio genel bakış](https://xamarin.com/studio) (xamarin.com).  
+  -   **Doğrudan Mac üzerinde çalışan Xamarin Studio için:** Xamarin Studio, yapı destekleyen Xamarin'in geliştirme ortamı kullanarak Android, iOS ve Windows uygulamaları C#.  Xamarin Studio hızlı bir genel bakış için bkz [Xamarin Studio genel bakış](https://xamarin.com/studio) (xamarin.com).  
   
   -   **Zaten sahip olduğunuz Parallels ya da VMWare Mac'inizde yapılandırılmış:** Visual Studio 2015 ve Xamarin 4 Parallels veya VMWare içinde Windows çalıştırın.  Bu yapılandırma ile Xamarin, C# kullanarak Android, iOS ve WinPhone uygulamalarını oluşturmak için Visual Studio geliştirme ortamı olarak kullanma olanağı sağlayan Visual Studio ile yüklenen bir uzantısıdır.  Visual Studio Geliştirici temel bileşenleri programı kapsamında ücretsiz 3 aylık Parallels abonelik edinebilirsiniz unutmayın. Bkz: [Microsoft Visual Studio Dev Essentials olacak dahil Parallels Desktop Pro ve Parallels erişim](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (Parallels blog).  
   
@@ -57,7 +53,7 @@ Bu konuda, Mac'te bir Windows sanal makine içinde Visual Studio isteğe bağlı
   
 ##  <a name="windows"></a> Windows Kurulum içinde Parallels (Visual Studio ve Xamarin)  
   
-1.  / VMWare, Parallels içinde yapılandırdığınız Windows Masaüstü'nü kullanarak [indirin ve herhangi bir sürümünü Visual Studio 2015 için yükleyiciyi başlatın](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional veya Enterprise). Visual Studio 2015 Community ücretsiz bir sürümüdür; Professional ve Enterprise sürümleri deneme olarak 30 gün boyunca kullanılabilir.  
+1.  / VMWare, Parallels içinde yapılandırdığınız Windows Masaüstü'nü kullanarak [indirin ve herhangi bir sürümünü Visual Studio 2015 için yükleyiciyi başlatın](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional veya Enterprise). Visual Studio 2015 Community ücretsiz bir sürümüdür; Professional ve Enterprise sürümleri deneme olarak 30 gün boyunca kullanılabilir.  
   
 2.  Yükleyici içinde seçin bir **özel** yükleyin:  
   
@@ -138,4 +134,3 @@ Bu konuda, Mac'te bir Windows sanal makine içinde Visual Studio isteğe bağlı
    3.  Aşağıda gösterildiği gibi Visual Studio'nun hata ayıklama açılır listeden bir iPhone hedefini seçin ve F5 tuşuna basarak hata ayıklayıcıyı başlatın. Bu, simülatör burada Visual Studio'da hata ayıklama işlem sırasında uygulamayla etkileşim kuracağınızı Mac üzerinde çalıştırır.  
   
         ![Bir iPhone hata ayıklama hedefi seçme](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 6 doğrulayın")
-

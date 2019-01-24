@@ -1,26 +1,21 @@
 ---
 title: Eski dil hizmetini geçirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 826a27fd3e3041e99f34acce0474a8e71837c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4739565408a16ecaeee668264595ec48620ec847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807614"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761014"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Eski Dil Hizmetini Geçirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,11 +95,11 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
   
     -   Aşağıdaki alanları değiştirin:  
   
-    -   **Kimliği**: RegExLangServ  
+    -   **KİMLİĞİ**: RegExLangServ  
   
     -   **Ürün adı**: RegExLangServ  
   
-    -   **Açıklama**: bir normal ifade dil hizmeti.  
+    -   **Açıklama**: Bir normal ifade dil hizmeti.  
   
     -   Altında **varlıklar**, tıklayın **yeni**seçin **türü** için **Microsoft.VisualStudio.VsPackage**ayarlayın **kaynak** için **mevcut çözümde bir proje**ve ardından **proje** için **RegExLangServ**.  
   
@@ -116,4 +111,3 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski Dil Hizmeti Genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md)
-

@@ -1,12 +1,9 @@
 ---
-title: 'Nasıl yapılır: etki alanına özgü bir dilde standart menü komutunu değiştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir etki alanına özgü bir dilde standart menü komutunu değiştirme | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,15 +11,15 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776040"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dilde Standart Menü Komutunu Değiştirme
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları davranışını değiştirebilirsiniz. Örneğin, değiştirebilir **Kes** böylece hassas bilgileri içermez. Bunu yapmak için bir komut kümesi sınıftaki yöntemleri geçersiz kılın. Bu sınıfların DslPackage projesinde CommandSet.cs dosyasında tanımlanır ve türetilmiş <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -38,7 +35,7 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
    Bu konu, bu yordamı açıklar.  
   
 > [!NOTE]
->  Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+>  Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ##  <a name="what"></a> Hangi komutların, değişiklik yapabilirsiniz?  
   
@@ -83,7 +80,7 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
      **Not** yeni dosyayı oluşturmak için sınıf dosyası şablonu kullandıysanız, hem ad alanı ve sınıf adını düzeltmeniz gerekir.  
   
 ##  <a name="override"></a> Komut yöntemleri geçersiz kılın  
- Çoğu komutlarının ilişkili iki yöntem vardır: yöntem bir adla ister `ProcessOnStatus`... komutu görünür ve etkin olup olmayacağını belirler. Kullanıcı diyagramda sağ tıkladığı zaman çağrılır hızlı bir şekilde yürütün ve herhangi bir değişiklik yapın. `ProcessOnMenu`... kullanıcı komutu tıkladığında ve komutun işlevi gerçekleştirmeniz gereken çağrılır. Bir ya da bu yöntemlerin ikisi de geçersiz kılmak isteyebilirsiniz.  
+ Komutların çoğu ilişkili iki yöntem vardır: Bir ada sahip yöntem ister `ProcessOnStatus`... komutu görünür ve etkin olup olmayacağını belirler. Kullanıcı diyagramda sağ tıkladığı zaman çağrılır hızlı bir şekilde yürütün ve herhangi bir değişiklik yapın. `ProcessOnMenu`... kullanıcı komutu tıkladığında ve komutun işlevi gerçekleştirmeniz gereken çağrılır. Bir ya da bu yöntemlerin ikisi de geçersiz kılmak isteyebilirsiniz.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Komut bir menü görüntülendiğinde değiştirmek için  
  Geçersiz kılma ProcessOnStatus... yöntemi. Bu yöntem, Visible ayarlamanız gerekir ve özelliklerini, parametresinin MenuCommand etkin. Genellikle komut şu anda arar. Komut seçilen öğeleri için geçerlidir ve komut geçerli durumlarını uygulanabilir olup olmadığını belirlemek için özelliklerini, görünebilir olup olmadığını belirlemek için CurrentSelection.  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [Bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Nasıl yapılır: kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
  [İzlenecek yol: Seçilen bir bağlantıdan bilgi alma](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML Şeması Başvurusu](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK – devre diyagramları örnek. Kapsamlı DSL özelleştirme](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Örnek kod: bağlantı hattı diyagramları](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Örnek kod: Bağlantı hattı diyagramları](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

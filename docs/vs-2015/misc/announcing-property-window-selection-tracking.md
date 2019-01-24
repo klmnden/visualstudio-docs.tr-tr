@@ -1,14 +1,9 @@
 ---
 title: Özellik penceresi seçimi izleme ile tanışın | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], property pages support
 - property pages, tracking selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], Properties window support
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
-manager: douge
-ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767544"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>İzleme özelliği pencere seçimi ile tanışın
 Çalışmak istiyorsanız **özellikleri** penceresi veya **özelliği** , örneğin, form, metin ve istediğiniz özelliklerini görmek nasıl eksiksiz bilinmesini olmalıdır sonra bir seçim sayfaları, Seçimi koordine edin. Örneğin, tek bir seçim veya birden çok seçimin sahip olup olmadığını bilmeniz gerekir. Daha sonra IDE kullanarak seçimi türünüzü (tek veya birden çok) duyurmaktan gerek <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> arabirimi. Bu arabirim tarafından gerekli olan bilgileri sağlar **özellikleri** penceresi.  

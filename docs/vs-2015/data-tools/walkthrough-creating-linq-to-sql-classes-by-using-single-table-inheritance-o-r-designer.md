@@ -1,29 +1,26 @@
 ---
-title: 'İzlenecek yol: Tek tablolu devralma (O R Designer) kullanarak LINQ to SQL sınıfları oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Tek tablo devralma (O R Designer) kullanarak LINQ to SQL sınıfları oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd8572900e181da1b33b26638f15aa04845008e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788143"
 ---
-# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablolu devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma
+# <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-[LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı veriler sağlar [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+[LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı verileri sağlayan [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
  Bu kılavuz boyunca aşağıdaki görevleri gerçekleştireceksiniz:  
   
@@ -56,9 +53,9 @@ ms.locfileid: "49260734"
     |Sütun adı|Veri Türü|Null değerlere izin ver|  
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
-    |**Türü**|**int**|**TRUE**|  
-    |**FirstName**|**Nvarchar(200)**|**False**|  
-    |**Soyadı**|**Nvarchar(200)**|**False**|  
+    |**Tür**|**int**|**TRUE**|  
+    |**FirstName**|**nvarchar(200)**|**False**|  
+    |**Soyadı**|**nvarchar(200)**|**False**|  
     |**Yöneticisi**|**int**|**TRUE**|  
   
 3.  Kimlik sütunu birincil anahtar olarak ayarlayın.  
@@ -76,7 +73,7 @@ ms.locfileid: "49260734"
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Türü**|**FirstName**|**Soyadı**|**Yöneticisi**|  
+    |**ID**|**Tür**|**FirstName**|**Soyadı**|**Yöneticisi**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
@@ -194,7 +191,6 @@ ms.locfileid: "49260734"
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Nasıl yapılır: LINQ to SQL sınıfları (O R Designer) projeye Ekle](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
  [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [Nasıl yapılır: güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Nasıl yapılır: Visual Basic veya C# içinde Nesne Modeli Oluşturma](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
-
+ [Nasıl yapılır: Visual Basic'de nesne modeli oluşturmak veyaC#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

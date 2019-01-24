@@ -1,29 +1,24 @@
 ---
 title: 'Nasıl yapılır: Bulucu Aracı kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771636"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Nasıl yapılır: Bulucu Aracı Kullanma
+# <a name="how-to-use-the-finder-tool"></a>Nasıl yapılır: Bulucu aracını kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bulucu Aracı kullanabileceğiniz **Bul penceresi** penceresi özellikleri ve iletileri görüntülemek için iletişim kutusu. Bulucu aracını da devre dışı bırakılmış bir alt öğe pencerelerini bulun ve varsa vurgulamak için hangi pencerenin alt pencereler çakışıyorsa devre dışı keşfedilir.  
@@ -62,6 +57,3 @@ Pencere Bul iletişim kutusunda Bulucu Aracı
  [Spy ++ görünümleri](../debugger/spy-increment-views.md)   
  [Spy ++ kullanma](../debugger/using-spy-increment.md)   
  [Spy++ Başvurusu](../debugger/spy-increment-reference.md)
-
-
-

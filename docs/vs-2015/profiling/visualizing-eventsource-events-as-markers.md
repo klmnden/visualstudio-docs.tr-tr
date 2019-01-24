@@ -1,25 +1,20 @@
 ---
 title: EventSource olaylarını işaretleyici olarak Görselleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801498"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>EventSource Olaylarını İşaretleyici Olarak Görselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,16 +26,16 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
   
 ### <a name="marker-type"></a>İşaret türü  
   
-1.  Sahip olayları [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) kazanma: Başlangıç ya da kazanın: Stop kabul edilir başına veya sonuna bir aralık sırasıyla.  İç içe geçmiş veya yayılma çakışan görüntülenemiyor. Bir iş parçacığı üzerinde başlayan ve başka birinde son olay çifti görüntülenemiyor.  
+1.  Sahip olayları [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) kazanma: Başlangıç ya da kazanın: Stop kabul edilir başına veya sonuna bir aralık sırasıyla.  İç içe geçmiş veya yayılma çakışan görüntülenemiyor. Bir iş parçacığı üzerinde başlayan ve başka birinde son olay çifti görüntülenemiyor.  
   
-2.  Sürece, Opcode kazanma: Başlangıç ne kazanma: Stop bir olay işaretçisi bayrak olarak kabul edilir, [düzeyi](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD alanı. EVENT_HEADER. EVENT_DESCRIPTOR) olan kazanma: ayrıntılı veya üzeri.  
+2.  Sürece, Opcode kazanma: Başlangıç ne kazanma: Stop bir olay işaretçisi bayrak olarak kabul edilir, [düzeyi](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD alanı. EVENT_HEADER. EVENT_DESCRIPTOR) olan kazanma: ayrıntılı veya üzeri.  
   
 3.  Diğer durumlarda, olay iletisi olarak kabul edilir.  
   
 ### <a name="importance"></a>Önem derecesi  
  Aşağıdaki tabloda, olay düzeyi işaret önemini nasıl eşlendiğini tanımlar.  
   
-|ETW düzeyi|Eşzamanlılık görselleştiricisi önem derecesi|  
+|ETW Level|Eşzamanlılık görselleştiricisi önem derecesi|  
 |---------------|---------------------------------------|  
 |Kazanma: LogAlways|Normal|  
 |Kazanma: kritik|Kritik|  
@@ -103,6 +98,3 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Görselleştiricisi İşaretleyicileri](../profiling/concurrency-visualizer-markers.md)
-
-
-

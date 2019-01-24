@@ -1,14 +1,9 @@
 ---
 title: Öykünücüde Windows Phone uygulamaları çalıştırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761770"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Öykünücüde Windows Phone uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisayarınızdaki Windows Phone uygulamalarını test etmek için sanallaştırılmış bir ortam sağlar. Ortak dokunma ve döndürme olaylarının benzetimini yapma ve fiziksel ekran boyutunu ve taklit etmek istediğiniz çözümü seçin. Ayrıca, konum, ağ, bildirimler, sensörlerden, ivme ölçer ve isteğe bağlı bir SD kart gibi birçok yaygın olarak kullanılan özellik test edebilirsiniz.  
   
- Öykünücüde test etme özellikleri hakkında daha fazla bilgi için bkz. [uygulama özelliklerini Windows Phone öykünücüsü'nde Test](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Öykünücüde test etme özellikleri hakkında daha fazla bilgi için bkz. [uygulama özelliklerini Windows Phone öykünücüsü'nde Test](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Visual Studio ile birlikte öykünücü içinde tasarlayabilir, geliştirme, hata ayıklama ve Windows Phone uygulamalarını test etmek için eksiksiz bir ortam sağlar.  
   
@@ -157,18 +152,18 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 |F2|BAŞLANGIÇ|Uzun basma işlemlerine beklendiği gibi çalışmayabilir.|  
 |F3|ARAMA||  
 |F4|Windows 10 öykünücüsünde yerel bilgisayarın Klavyesi kullanılmadan değil ve yerel bilgisayarın Klavyesi kullanılmadan arasında geçiş yapar.|Windows 8/8.1 öykünücüsü geçerli değildir.|  
-|F5|Yok.||  
+|F5|Uygulanamaz.||  
 |F6|KAMERA YARI|Olan sürenin yarısına ulaşıldığında basıldığında adanmış kamera düğme.|  
-|F7|KAMERA TAM|Adanmış kamera düğme.|  
-|F8|Yok.||  
+|F7|CAMERA FULL|Adanmış kamera düğme.|  
+|F8|Uygulanamaz.||  
 |F9|BİRİMİ||  
 |F10|BİRİM AŞAĞI||  
-|F11|Yok.||  
+|F11|Uygulanamaz.||  
 |F12|GÜÇ|Kilit ekranında iki kez etkinleştirmek için F12 tuşuna basın.<br /><br /> Uzun basma işlemlerine beklendiği gibi çalışmayabilir.|  
 |ESC|GERİ|Uzun basma işlemlerine beklendiği gibi çalışmayabilir.|  
 |PAUSE/BREAK|İki durumlu klavye (yalnızca windows 8/8.1 öykünücüsü).|Windows 10 öykünücüsü için geçerli değildir.|  
 |AYARLAMA SAYFASI|Donanım klavye (yalnızca Windows 8/8.1 öykünücünüzde) sağlar.|Windows 10 öykünücüsü için geçerli değildir.|  
-|SAYFA AŞAĞI|Donanım klavye (yalnızca Windows 8/8.1 öykünücünüzde) devre dışı bırakır.|Windows 10 öykünücüsü için geçerli değildir.|  
+|PAGE DOWN|Donanım klavye (yalnızca Windows 8/8.1 öykünücünüzde) devre dışı bırakır.|Windows 10 öykünücüsü için geçerli değildir.|  
   
 ##  <a name="BKMK_checkpoints"></a> Kaydetme ve özel kontrol noktaları yükleme  
  Öykünücü'nın durumunun bir anlık görüntüsünü kullanarak kaydedin **kontrol noktaları** öykünücü'nın sekmesinde **ek araçlar**. Bu özellik, sık sık aynı verileri ve ayarları ile uygulamanızı test yararlıdır.  
@@ -225,6 +220,3 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 -   Visual Studio'da bir yayın yapısı belirtmek. Yayın derlemesi belirttikten sonra uygulamanızı seçerek başlatın. **Dağıt _[uygulama adı]_**  bağlantısını **derleme** menüsü.  
   
 -   Alternatif olarak, değerini ayarlar app.xaml.cs veya app.xaml.vb dosyasında kod satırı yorum yapabilecek `EnableFrameRateCounter` için `true`.
-
-
-

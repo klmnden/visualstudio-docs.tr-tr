@@ -1,32 +1,27 @@
 ---
 title: Genel metotlar için birim testleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771471"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Metotlar için birim testleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi genel metotlar için birim testleri oluşturabilirsiniz [nasıl yapılır: birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve örnekleri, genel metotlar için birim testleri oluşturma hakkında bilgi sağlar.  
+Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi genel metotlar için birim testleri oluşturabilirsiniz [nasıl yapılır: Birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve örnekleri, genel metotlar için birim testleri oluşturma hakkında bilgi sağlar.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Tür bağımsız değişkeni ve tür kısıtlamaları  
  Zaman [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gibi birim testi için genel bir sınıf oluşturur `MyList<T>`, iki yöntem oluşturur: bir genel yardımcı ve bir test yöntemi. Varsa `MyList<T>` bir veya daha fazla tür kısıtlamaları var, tür bağımsız değişkeni tür kısıtlamaları karşılaması gerekir. İzin verilen tüm girişleri için beklendiği gibi genel test works altında kod emin olmak için test yöntemini test etmek istediğiniz tüm kısıtlamalar ile genel yardımcı yöntemi çağırır.  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -124,7 +119,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 >  Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Örnek 2: bir tür kısıtlaması kullanma  
+###  <a name="TypeConstraintNotSatisfied"></a> Örnek 2: Bir tür kısıtlaması kullanma  
  Bu örnek, bir birim testi karşılanmadı bir tür kısıtlaması kullanan bir genel yöntem için gösterir. İlk bölüm, kod test altındaki kod projesi gösterir. Tür kısıtlaması vurgulanır.  
   
  İkinci bölümde test projesinden kod gösterilmektedir.  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir birim testinin anatomisi](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Bir birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)
-
-
-

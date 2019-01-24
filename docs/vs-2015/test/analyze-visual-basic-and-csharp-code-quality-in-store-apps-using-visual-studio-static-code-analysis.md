@@ -2,7 +2,7 @@
 title: Visual Basic çözümlemek ve C# kod kalitesi statik kod analizini kullanarak Store uygulamalarında
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
@@ -10,13 +10,13 @@ ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a3a3d753f9e2dd3b046159d191149b7af062fe16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795682"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarında Visual Basic ve C# kod kalitesini analiz etme
 
@@ -98,12 +98,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ##  <a name="BKMK_Warnings"></a> Visual Basic ve C# Kod Analizi uyarılarının
  Kod Analizi aşağıdaki uyarılar oluşturur:
 
- [CA1001: Atılabilir alanlara sahip olan türler atılabilir olmalıdır](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Atılabilir alanlara sahip türler atılabilir olmalıdır](http://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Boş sonlandırıcıları kaldırın](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Boş Sonlandırıcıları kaldırın](http://msdn.microsoft.com/library/bb264476.aspx)
 
  [CA2213: Atılabilen alanlar atılmalıdır](http://msdn.microsoft.com/library/ms182328.aspx)
 
  [CA2229: Serileştirme oluşturucularını uygulayın](http://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: ValueType.Equals değerini geçersiz kılmada eşittir işlecini aşırı yükle](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Eşittir işlecini ValueType.equals'ı geçersiz kılarak üzerinde](http://msdn.microsoft.com/library/ms182359.aspx)

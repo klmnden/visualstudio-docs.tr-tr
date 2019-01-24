@@ -1,26 +1,21 @@
 ---
 title: Düzenleyici içeri aktarımları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779876"
 ---
 # <a name="editor-imports"></a>Düzenleyici İçeri Aktarımları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +44,17 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  İçeri aktarmalar kullanarak daha fazla örnek için aşağıdaki izlenecek yollara bakın:  
   
- [İzlenecek Yol: Dış Boşluk Karakteri Oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [İzlenecek yol: Bir dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [İzlenecek Yol: Metin Görünümünü Özelleştirme](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [İzlenecek yol: Metin görünümünü özelleştirme](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [İzlenecek Yol: Metni Vurgulama](../extensibility/walkthrough-highlighting-text.md)  
+ [İzlenecek yol: Metni vurgulama](../extensibility/walkthrough-highlighting-text.md)  
   
- [İzlenecek Yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [İzlenecek Yol: İmza Yardımını Görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
+ [İzlenecek yol: İmza yardımını görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [İzlenecek Yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [İzlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [İzlenecek yol: Akıllı etiketler görüntüleme](../misc/walkthrough-displaying-smarttags.md)  
   
@@ -76,7 +71,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Hizmetler  
  Düzenleyici, bir hizmet sağlayan ve birden çok bileşen arasında paylaşılan genellikle tek varlıklar hizmetleridir.  
   
-|{1&gt;İçeri Aktar&lt;1}|Sağlar|  
+|İçeri Aktarma|Sağlar|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Dosya uzantıları arasındaki ilişki ve <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Koleksiyonu <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|  
@@ -118,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Diğer içeri aktarmalar  
  Sağlayıcı üreteçlerinin ve aracıya genellikle birden çok bileşeni birden çok örneği olan varlıklardır.  
   
-|{1&gt;İçeri Aktar&lt;1}|Sağlar|  
+|İçeri Aktarma|Sağlar|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|Bir <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) belirtilen arabellek için.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Bir metin işaretçisi etiketlerde (bir <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)
-

@@ -1,14 +1,9 @@
 ---
 title: MFC hata ayıklama tekniklerine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 950252347de78839e7d0db979179de3a0818857f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781356"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC Hata Ayıklama Teknikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Bellek anlık görüntü alma  
   
-1. Oluşturma bir [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) nesne ve çağrı [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) üye işlevi. Bu ilk bellek anlık görüntüsünü oluşturur.  
+1. Oluşturma bir [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) nesne ve çağrı [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) üye işlevi. Bu ilk bellek anlık görüntüsünü oluşturur.  
   
 2. Programınızı bellek ayırmayı ve ayırmayı kaldırma işlemlerini gerçekleştirdikten sonra başka bir oluşturma `CMemoryState` nesne ve çağrı `Checkpoint` bu nesne. Bu, ikinci bir bellek kullanımı anlık görüntüsünü alır.  
   
@@ -443,9 +438,9 @@ pMyPerson->Dump( afxDump );
   
    1.  İçinde  **\<Proje > özellik sayfaları** iletişim kutusu, tıklayın **Configuration Manager** düğmesi.  
   
-   2.  İçinde [Configuration Manager iletişim kutusu](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >**.  
+   2.  İçinde [Configuration Manager iletişim kutusu](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >**.  
   
-   3.  İçinde [yeni proje yapılandırması iletişim kutusu](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), "Kısmi Debug" gibi yeni yapılandırma için bir ad yazın **proje yapılandırması adı** kutusu.  
+   3.  İçinde [yeni proje yapılandırması iletişim kutusu](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), "Kısmi Debug" gibi yeni yapılandırma için bir ad yazın **proje yapılandırması adı** kutusu.  
   
    4.  İçinde **Ayarları Şuradan Kopyala:** listesinde **yayın**.  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ hata ayıklama](../debugger/debugging-native-code.md)
-
-
-

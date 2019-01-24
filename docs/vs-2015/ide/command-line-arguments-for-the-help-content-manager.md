@@ -1,25 +1,20 @@
 ---
 title: Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778636"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +54,10 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |Vendor|Hayır|Kaldırılacak ürün içeriği için satıcıyı belirtir (örneğin, `Microsoft`). Bu anahtar için varsayılan değişken Microsoft'tur.|  
 |/ ProductName|Hayır|Kaldırılacak kitapların ürün adını belirtir. Ürün adı içerik ile gönderilen helpcontentsetup.msha veya books.html dosyaları ile tanımlanır. Aynı anda yalnızca tek bir üründen kitap kaldırabilirsiniz. Kitapları birden çok üründen kaldırmak için birden çok yükleme gerçekleştirmeniz gerekir.|  
 |/ booklist|Hayır|Yönetilecek, boşluklarla ayrılmış kitap adlarını belirtir. Değerler, yükleme medyasında listelendiği gibi kitap adları eşleşmelidir.<br /><br /> Bu bağımsız değişkeni belirtmezseniz, önerilen tüm kitaplar / sourceurı içinde belirtilen ürün için yüklenir yükleme kaynağı [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] biçimi.<br /><br /> Bir kitap adını, bir veya daha fazla boşluk içeriyorsa, listenin uygun şekilde ayrılması çift tırnak (") içine alın.<br /><br /> Geçerli veya ulaşılabilir olmayan bir/sourceurı belirtirseniz, hata iletileri kaydedilir.|  
-|/ skuıd|Hayır|Stok birimini (STB) ürününü yükleme kaynağından tutma belirtir ve/sourceurı anahtarının tanıttığı kitaplara filtre uygular.|  
+|/skuId|Hayır|Stok birimini (STB) ürününü yükleme kaynağından tutma belirtir ve/sourceurı anahtarının tanıttığı kitaplara filtre uygular.|  
 |/Membership|Hayır|-   **En düşük**--üzerinde/skuıd anahtarını kullanarak belirttiğiniz SKU temelli Yardım içeriğinin minimum kümesini yükler. SKU ve İçerik kümesi arasındaki eşleme hizmet API'SİNDE gösterilir.<br />-   **Önerilen**— / skuıd bağımsız değişkenini kullanarak belirttiğiniz SKU için önerilen kitaplar kümesini yükler. Hizmet API'si yükleme kaynağı olan veya. MSHA.<br />-   **Tam**--/ skuıd bağımsız değişkenini kullanarak belirttiğiniz SKU için tüm kitaplar kümesini yükler. Hizmet API'si yükleme kaynağı olan veya. MSHA.|  
 |/ locationpath|Hayır|Yerel Yardım içeriğini için varsayılan klasörü belirtir. Yalnızca içeriği yüklemek veya taşımak için bu anahtarı kullanmanız gerekir. Bu anahtarı belirtirseniz, / silent de belirtmeniz gerekir geçin.|  
-|/silent|Hayır|Yükler veya olmadan kullanıcıya sormadan veya durum bildirim alanında simgesi dahil olmak üzere herhangi bir UI görüntülemeden Yardım içeriğini kaldırır. Çıktı % Temp % dizininde bir dosyaya kaydedilir. **Önemli:** içeriği sessizce yüklemek için .mshc dosyaları değil, dijital olarak imzalanmış .cab dosyaları kullanmanız gerekir.|  
+|/silent|Hayır|Yükler veya olmadan kullanıcıya sormadan veya durum bildirim alanında simgesi dahil olmak üzere herhangi bir UI görüntülemeden Yardım içeriğini kaldırır. Çıktı % Temp % dizininde bir dosyaya kaydedilir. **Önemli:**  İçeriği sessizce yüklemek için .mshc dosyaları değil, dijital olarak imzalanmış .cab dosyaları kullanmanız gerekir.|  
 |/launchingApp|Hayır|Yardım Görüntüleyici ana uygulama olmadan başlatıldığında uygulama ve Katalog bağlamını tanımlar. Bu anahtar için bağımsız değişkenler *CompanyName*, *ProductName*, ve *VersionNumber* (örneğin, `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Bu/silent içeriği yüklemek için gerekli parametre. "|  
 |/ wait *saniye*|Hayır|Duraklatır yükleme, kaldırma ve yenileme işlemlerini. Bir işlem zaten devam eden kataloğuna yönelik ise, işlem belirtilen sayıda devam etmek için saniye bekler. Süresiz beklemesi için 0 kullanın.|  
 |/?|Hayır|Anahtarları ve açıklamaları için Yardım içeriği Yöneticisi komut satırı aracı için listeler.|  
@@ -96,6 +91,3 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md)   
  [Yardım İçerik Yöneticisi Geçersiz Kılmaları](../ide/help-content-manager-overrides.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
-title: 'Nasıl yapılır: LINQ to SQL sınıfları (O R Designer) arasında bir ilişkilendirme (ilişki) oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: LINQ to SQL sınıfları (O R Designer) arasındaki ilişkiyi (ilişki) oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797381"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında bir ilişki (ilişki) oluşturun
+# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasındaki ilişkiyi (ilişki) oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -57,5 +54,4 @@ Varlık sınıfları arasındaki ilişkilendirmeleri [!INCLUDE[vbtecdlinq](../in
  [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Nasıl yapılır: Birincil Anahtarları Temsil Etme](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)
-
+ [Nasıl yapılır: Birincil anahtarları temsil eder](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)

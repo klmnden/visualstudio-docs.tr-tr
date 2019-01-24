@@ -1,25 +1,22 @@
 ---
 title: Model öğelerine başvuru dizelerini iliştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - UML - extending, reference strings
 ms.assetid: 15dbed99-efce-42fe-a768-714a5804e7d1
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cf8a9e7e023e9c75f61fdf9a6bfb608edc3a7123
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd5a1ae4abc2e0b5c508b7b77160bbf8da3bb45e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804592"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764968"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Model öğelerine başvuru dizeleri ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +46,3 @@ Model öğelerine rastgele dize eklemek için kod yazabilirsiniz. Bir dize, örn
  [Bir iş öğesi bağlantı işleyicisini tanımlama](../modeling/define-a-work-item-link-handler.md)   
  [Modelleme Uzantısı Tanımlama ve yükleme](../modeling/define-and-install-a-modeling-extension.md)   
  [UML API ile programlama](../modeling/programming-with-the-uml-api.md)
-
-
-

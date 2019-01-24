@@ -1,14 +1,9 @@
 ---
 title: Microsoft Yardım Görüntüleyicisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755044"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Yardım Görüntüleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Yükleme ve Microsoft Yardım Görüntüleyicisi'ni kullanarak yerel bilgisayar�
 |-|-|  
 |Gezinti|Kullanarak **içeriği** sekmesi, yüklü içeriği hiyerarşi olarak görüntülemek ve görünen başlıklar için filtre uygulamak üzere ölçütler belirleyebilirsiniz.<br /><br /> Kullanarak **arama** sekmesi, kod ve konu başlıkları da dahil olmak üzere herhangi bir yeri içeriğe terimlerini arayabilirsiniz.<br /><br /> Kullanarak **dizin** sekmesi, dizin arama, girdiler için filtre uygulamak üzere ölçütler belirleyebilir ve bu dizin girdileri içeren veya belirttiğiniz metni içeren başlangıç gerektirir.<br /><br /> Kullanarak **Sık Kullanılanlar** sekmesi, sık kullandığınız konulara bağlantılar kaydedebilir ve en son görüntülediğiniz konuların listesini görüntüleyebilirsiniz.|  
 |Konu görüntüleme|Her konu sekmede görünür ve aynı anda birden çok konu açabilirsiniz.|  
-|İçeriği yönetme|Yükleme, güncelleştirme, taşıma ve içerik kullanarak silme **içeriği Yönet** sekmesi. Sekmenin üstünde, kullandığınız **yükleme kaynağı** denetimi kitapları bir ağ konumundan veya diskten ya da URI yüklenip yüklenmeyeceğini belirtin. **Yerel depo yolu** kutusunda burada kitapları yerel bilgisayarda yüklü ve seçerek bunları farklı bir konuma taşıyabilirsiniz gösterir **taşıma** düğmesi.<br /><br /> İçerik listesi hangi kitapları yükleyebilir veya zaten yüklediyseniz, bir güncelleştirme kullanıma hazır ve her bir kitabın ne kadar büyük olduğunu gösterir. Yüklediğinizde veya bir veya daha fazla kitap uygun olanını kaldırmak **Ekle** veya **Kaldır** bağlantılar ve ardından **güncelleştirme** düğmesini **bekleyen değişiklikleri** bölmesi. Yüklemiş olduğunuz herhangi bir kitap için güncelleştirme mevcutsa seçerek içeriği yenileyebilirsiniz **şimdi indirmek için buraya tıklayın** pencerenin alt kısmındaki bağlantı. Ayrıca, ek kitaplar yüklediğinizde güncelleştirmeler mevcutsa tüm yüklü kitaplar yenilenecektir. **Not:** işlevselliğini **içeriği Yönet** sekmesi Yardım Görüntüleyici Yöneticisi bu özellikleri devre dışı bırakmışsa veya internet erişimi varsa farklı olabilir.|  
+|İçeriği yönetme|Yükleme, güncelleştirme, taşıma ve içerik kullanarak silme **içeriği Yönet** sekmesi. Sekmenin üstünde, kullandığınız **yükleme kaynağı** denetimi kitapları bir ağ konumundan veya diskten ya da URI yüklenip yüklenmeyeceğini belirtin. **Yerel depo yolu** kutusunda burada kitapları yerel bilgisayarda yüklü ve seçerek bunları farklı bir konuma taşıyabilirsiniz gösterir **taşıma** düğmesi.<br /><br /> İçerik listesi hangi kitapları yükleyebilir veya zaten yüklediyseniz, bir güncelleştirme kullanıma hazır ve her bir kitabın ne kadar büyük olduğunu gösterir. Yüklediğinizde veya bir veya daha fazla kitap uygun olanını kaldırmak **Ekle** veya **Kaldır** bağlantılar ve ardından **güncelleştirme** düğmesini **bekleyen değişiklikleri** bölmesi. Yüklemiş olduğunuz herhangi bir kitap için güncelleştirme mevcutsa seçerek içeriği yenileyebilirsiniz **şimdi indirmek için buraya tıklayın** pencerenin alt kısmındaki bağlantı. Ayrıca, ek kitaplar yüklediğinizde güncelleştirmeler mevcutsa tüm yüklü kitaplar yenilenecektir. **Not:**  İşlevselliğini **içeriği Yönet** sekmesi Yardım Görüntüleyici Yöneticisi bu özellikleri devre dışı bırakmışsa veya internet erişimi varsa farklı olabilir.|  
   
  Yardım Görüntüleyici penceresinde araç çubuğu şu düğmeleri içerir:  
   
@@ -84,6 +79,3 @@ Yükleme ve Microsoft Yardım Görüntüleyicisi'ni kullanarak yerel bilgisayar�
  [Yerel içeriği yükleme ve yönetme](../ide/install-and-manage-local-content.md)   
  [Bilgi bulun](../ide/locate-information.md)   
  [Yardım Görüntüleyici'de Sorun Giderme](../ide/troubleshooting-the-help-viewer.md)
-
-
-

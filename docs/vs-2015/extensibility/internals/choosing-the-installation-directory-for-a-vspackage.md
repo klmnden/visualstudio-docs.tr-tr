@@ -1,26 +1,21 @@
 ---
 title: VSPackage için yükleme dizinini seçme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 385877b8a682574946bfd43e1e51acd771d00a2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755566"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>VSPackage için Yükleme Dizinini Seçme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ VSPackage ve Tamamlayıcı dosyaları, bir kullanıcının dosya sisteminde olma
   
  Yan yana düzeninizi tutulan VSPackage kullanıyorsa, farklı sürümlerini depolamanıza gerek alt dizinleri kullanabilirsiniz. Örneğin:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2002\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2002\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2003\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2003\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2005\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>Yönetilen VSPackage'ları  
  Yönetilen VSPackage'ları herhangi bir konumda da yüklenebilir. Ancak, genel derleme önbelleğine (GAC) derleme yükleme sürelerini kısaltmak için her zaman yüklemeden düşünmelisiniz. Yönetilen VSPackages tanımlayıcı adlı derlemeler her zaman olduğundan GAC'de yüklemeden, tanımlayıcı ad imzası doğrulaması yalnızca yükleme sırasında sürdüğü anlamına gelir. Başka bir dosya sisteminde yüklü tanımlayıcı adlandırılmış derlemeler yüklü oldukları her zaman doğrulanmış imzaları olması gerekir. Regpkg Aracı'nın GAC'de yönetilen VSPackage yükleme sırasında kullanmak **/Assembly** derlemenin tanımlayıcı adına işaret eden bir kayıt defteri girdilerini Yaz geç.  
@@ -69,5 +64,4 @@ VSPackage ve Tamamlayıcı dosyaları, bir kullanıcının dosya sisteminde olma
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Paylaşılan ve sürümü tutulan Vspackage'lar arasında seçim yapma](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [VSPackage'ları yönetme](../../extensibility/managing-vspackages.md)   
- [Yönetilen paket kaydı](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Yönetilen paket kaydı](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

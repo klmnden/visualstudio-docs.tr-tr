@@ -1,27 +1,22 @@
 ---
 title: Proje yapılandırması nesnesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, object
 - objects, project configuration
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 27b64e6b11e6a8d01cd06886d902c8032f8605d2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d84dd905c09b0bcc19833198b925f66dea245b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779667"
 ---
 # <a name="project-configuration-object"></a>Proje Yapılandırması Nesnesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ Proje yapılandırması özellik sayfaları
  [Çıkış için proje yapılandırması](../../extensibility/internals/project-configuration-for-output.md)   
  [Özellik sayfaları](../../extensibility/internals/property-pages.md)   
  [Çözüm Yapılandırması](../../extensibility/internals/solution-configuration.md)
-

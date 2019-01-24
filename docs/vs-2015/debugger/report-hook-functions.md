@@ -1,14 +1,9 @@
 ---
 title: Kanca işlevlerini rapor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3b7916f729f0d1ea1a254ecde8e5c53ea8b8a51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38d553abd50d1b5870adc31e08d349f9f84c0579
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777267"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786321"
 ---
 # <a name="report-hook-functions"></a>Kanca İşlevlerini Raporla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama kanca işlevi yazma](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 örnek](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
-
-
-
+ [crt_dbg2 örnek](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

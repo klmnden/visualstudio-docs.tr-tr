@@ -1,27 +1,22 @@
 ---
 title: Uzantılar ve güncelleştirmeler, ortam, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0b51d3b5f61a256a440673b9770f10efecb7b0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8eaf16ac81f5b8347955e97d71f82e37e7feff38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756341"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Uzantılar ve Güncelleştirmeler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Visual Studio güncelleştirmelerini nasıl gerçekleştirir ve uzantıları nas
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
-
-
-

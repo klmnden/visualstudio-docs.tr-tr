@@ -1,14 +1,9 @@
 ---
 title: ClickOnce ile COM bileşenleri dağıtma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9422d1c2a185e223b35bc16ad892282ca1c2a420
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786163"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,6 +176,3 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)
-
-
-
