@@ -1,14 +1,9 @@
 ---
 title: Visual C# kod parçacıkları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787111"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# Kod Parçacıkları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,10 +78,7 @@ Kod parçacıkları, kullanıma hazır, kodunuza hızla ekleyebilirsiniz kod par
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod parçacığı işlevleri](../ide/code-snippet-functions.md)   
  [Kod parçacıkları](../ide/code-snippets.md)   
- [Nasıl yapılır: değişiklik ile yeni bir kod parçacığı oluşturma](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Nasıl yapılır: Değişiklik ile yeni bir kod parçacığı oluşturma](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Şablon parametreleri](../ide/template-parameters.md)   
  [Nasıl yapılır: Surround-with kod parçacıklarını kullanma](../ide/how-to-use-surround-with-code-snippets.md)   
- [Nasıl Yapılır: C# Yeniden Düzenleme Kod Parçacıklarını Geri Yükleme](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Nasıl yapılır: Geri yükleme C# yeniden düzenleme kod parçacıklarını](../ide/how-to-restore-csharp-refactoring-snippets.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: mevcut şablonları güncelleştirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Mevcut şablonları güncelleştirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating existing templates
 - Visual Studio templates, updating existing templates
@@ -17,15 +12,15 @@ ms.assetid: d585e45b-7fe2-45fa-9cf3-7f2bc060f3c4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5b1ffd20fb33048427ba4cacdbbd9360313db089
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771119"
 ---
-# <a name="how-to-update-existing-templates"></a>Nasıl Yapılır: Varolan Şablonları Güncelleme
+# <a name="how-to-update-existing-templates"></a>Nasıl yapılır: Mevcut şablonları güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir şablonu oluşturun ve dosyalarını bir .zip dosyası olarak sıkıştırıp sonra şablonu değiştirmek isteyebilirsiniz. Şablon dosyaları el ile değiştirerek veya bir projeden şablonu temel alan yeni bir şablon vererek bunu yapabilirsiniz.  
@@ -73,7 +68,4 @@ Bir şablonu oluşturun ve dosyalarını bir .zip dosyası olarak sıkıştırı
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Şablon parametreleri](../ide/template-parameters.md)   
- [Nasıl Yapılır: Başlangıç Paketleri Oluşturma](../ide/how-to-create-starter-kits.md)
-
-
-
+ [Nasıl yapılır: Başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)

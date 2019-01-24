@@ -1,31 +1,26 @@
 ---
 title: 'İzlenecek yol: Kullanıcı ayarlarını başlangıç sayfasına kaydetme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799132"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>İzlenecek Yol: Kullanıcı Ayarlarını Başlangıç Sayfasına Kaydetme
+# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>İzlenecek yol: Kullanıcı Ayarlarını Başlangıç Sayfasına Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebilirsiniz. Bu izlenecek yolu takip ederek, kullanıcı bir düğmeye tıkladığında ve ardından başlangıç sayfası yükleyen her zaman bu ayarı alır bir ayarı kayıt defterine kaydeder bir denetim oluşturabilirsiniz. Başlangıç sayfası proje şablonu özelleştirilebilir kullanıcı denetimini içerir ve söz konusu denetim varsayılan başlangıç sayfası XAML çağrıları olduğundan, başlangıç sayfası kendisini değişiklik gerekmez.  
   
- Bu izlenecek yolda örneği ayarlar deposu örneğidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> okuyan ve bunu çağrıldığında aşağıdaki kayıt defteri konumuna yazma arabirimi: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  
+ Bu izlenecek yolda örneği ayarlar deposu örneğidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> okuyan ve bunu çağrıldığında aşağıdaki kayıt defteri konumuna yazma arabirimi: HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
   
  Visual Studio'nun deneysel örneğinde çalıştığı sırada ayarlar deposu okur ve yazar için HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
   
@@ -210,4 +205,3 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
  [Kendi başlangıç sayfası oluşturma](../misc/creating-your-own-start-page.md)   
  [Başlangıç Sayfasına Visual Studio Komutları Ekleme](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
-

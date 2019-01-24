@@ -1,14 +1,9 @@
 ---
 title: Özet görünümü - örnekleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method, Summary view
 - Summary view
@@ -16,13 +11,13 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5e470cee87a2d83f72df369d79ac337fce5412ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8570692ec620ee50cd24f3fa95ceec8b21172919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803091"
 ---
 # <a name="summary-view---sampling-data"></a>Özet Görünümü - Örnekleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,6 +56,3 @@ ms.locfileid: "51775244"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özet görünümü](../profiling/summary-view-dotnet-memory-data.md)   
  [Özet Görünümü](../profiling/summary-view-instrumentation-data.md)
-
-
-

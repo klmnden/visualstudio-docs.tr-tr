@@ -1,26 +1,21 @@
 ---
 title: Eski API'yi kullanarak görünüm ayarlarını değiştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df84fa92cb0da8dd408b1cc8717628afa3d5ba19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ddca5f9159c2cb20eeb8525bd37730a88f64fb43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730626"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774152"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Eski API'yi kullanarak görünüm ayarlarını değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +48,3 @@ Sözcük kaydırma ve seçim boşluğu sanal alanı gibi temel Düzenleyici öze
  [Çekirdek Düzenleyicisi içinde](../extensibility/inside-the-core-editor.md)   
  [Eski API'yi kullanarak erişen erişimcisinde görüntüle](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [Seçenekler İletişim Kutusu](../ide/reference/options-dialog-box-visual-studio.md)
-

@@ -1,34 +1,29 @@
 ---
 title: Eski dil hizmetinde deyim tamamlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781362"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Deyim Tamamlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Deyim tamamlama tarafından dil hizmeti bir dil anahtar sözcüğü veya çekirdek Düzenleyicisi'nde yazarak başlatılan öğenin son kullanıcılara yardımcı olur işlemidir. Bu konuda, deyim tamamlama nasıl çalıştığını ve dil hizmetinizde nasıl ele alır.  
   
- Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Deyim tamamlama uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: deyim tamamlamayı görüntüleme](../../extensibility/walkthrough-displaying-statement-completion.md).  
+ Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Deyim tamamlama uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Deyim tamamlamayı görüntüleme](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
 >  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
@@ -45,4 +40,3 @@ Deyim tamamlama tarafından dil hizmeti bir dil anahtar sözcüğü veya çekird
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski Dil Hizmeti Komutlarını Kesme](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

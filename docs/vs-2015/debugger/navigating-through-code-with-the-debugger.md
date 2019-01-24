@@ -1,13 +1,8 @@
 ---
 title: Hata ayıklayıcısı ile kodlarda gezinme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771516"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Hata Ayıklayıcısı ile Kodlarda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,8 +186,3 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Yönetilen kod içindeki özellikler ve işleçlerin içine adımla  
  Varsayılan olarak hata ayıklama adımlarında yönetilen kod içindeki özellikler ve işleçlerin üzerinden. Çoğu durumda, bunu bir daha iyi hata ayıklama deneyimi sunar. Özellikleri veya işleçleri adımlamak için seçin **hata ayıklama** / **seçenekleri**. Üzerinde **hata ayıklama** / **genel** sayfasında, NET **özellikleri ve işleçleri (sadece yönetilen) üzerinden adımla** onay kutusu
-
-
-
-
-

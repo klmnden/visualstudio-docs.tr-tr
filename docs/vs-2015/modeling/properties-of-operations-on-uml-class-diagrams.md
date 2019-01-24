@@ -1,12 +1,9 @@
 ---
 title: UML işlemlerin özellikleri sınıf diyagramları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.operation.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790518"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki işlemlerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *işlemleri* sınıfları ve a
 ## <a name="signature-of-an-operation"></a>Bir işlemin imzası  
  Bir işlemin imza, bir sınıfta veya arabirimde bir UML sınıf diyagramı temsil eden metin satırının değil. Bunu, aşağıdaki biçime sahiptir:  
 
- \+ OperationName (parametre1: Type1 [*],...): ReturnType [\*]  
+ \+ OperationName (parametre1: Type1 [*]...) : ReturnType [\*]  
 
  \+ Genel görünürlük gösterir. Bir izin verilen değerler: - (özel), (korumalı), # ~ (paket).  
 
@@ -74,11 +71,8 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *işlemleri* sınıfları ve a
 |    **Benzersiz**    |    False     |                                                                                                                                         TRUE ise, koleksiyonda yinelenen değerler yoktur. İçin **Çoğulluk** 1'den fazla.                                                                                                                                         |
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki İlişkilendirmelerin Özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)

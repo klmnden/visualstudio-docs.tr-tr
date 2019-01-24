@@ -1,13 +1,9 @@
 ---
 title: 'CA2136: Üyeler çakışan saydamlık ek açıklamalarına sahip olmamalıdır | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2127
 - SecurityTransparentAssembliesShouldNotContainSecurityCriticalCode
@@ -20,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 315725a1cc14373ecf955be38dde07a7df608496
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b18ee5c048b0214779cdbe2635f5b7a14db8c28e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939080"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761342"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Üyeler çakışan saydamlık ek açıklamalarına sahip olmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

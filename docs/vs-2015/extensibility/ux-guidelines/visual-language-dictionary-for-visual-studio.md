@@ -1,23 +1,19 @@
 ---
 title: Görsel Dil Sözlüğü
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 498c653800618a5f7a41f68df92e7345ea04cd8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dc64cd1d1a4fae8703f95aa4c2da9b2bb5b363cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796591"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için görsel dil sözlüğü
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

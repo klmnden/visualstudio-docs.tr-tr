@@ -1,25 +1,20 @@
 ---
-title: '1. adım: Proje oluşturma ve formunuza etiketler ekleme | Microsoft Docs'
-ms.custom: ''
+title: '1. Adım: Proje oluşturma ve formunuza etiketler ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b29944ac31498710b1d97f75d96d3bc3cbbca696
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786063"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49207005"
 Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etiketler, bir düğme ve diğer denetimleri ekleyin. Ayrıca eklediğiniz her denetimin özelliklerini ayarlarsınız. Proje formu, denetimleri, içerir ve (öğreticide daha ilerideki) kodu. Etiketler sınav sorularını gösterir düğme sınavı başlatır ve diğer denerimler ise sınav yanıtlarını ve sınavı bitirmek için kalan süreyi gösterir.  
   
 > [!NOTE]
->  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: bir zaman aşımına matematik sınavı oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Bir proje oluşturun ve bir formun özelliklerini ayarlamak için  
   
@@ -180,9 +175,6 @@ Matematik sınavının ilk satırı
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [2. adım: rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [2. adım: Rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).  
   
--   Genel Bakış konusuna dönmek için bkz: [öğretici 2: bir zaman aşımına matematik sınavı oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
-
-
-
+-   Genel Bakış konusuna dönmek için bkz: [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).

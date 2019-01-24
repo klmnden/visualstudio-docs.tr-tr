@@ -1,26 +1,21 @@
 ---
 title: .NET Framework bellek sorunlarını çözümleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769022"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework bellek sorunlarını çözümleme
 Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET Framework kodu içindeki bellek sızıntılarını ve verimsiz bellek kullanımını bulun. En düşük .NET Framework sürümü hedef kodun .NET Framework 4. 5 ' dir.  
@@ -189,6 +184,6 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
    ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VS ALM TFS Blog: Üretimde .NET bellek sorunlarını tanılamak için Visual Studio 2013 kullanarak.](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
+ [VS ALM TFS Web günlüğü: Üretimde .NET bellek sorunlarını tanılamak için Visual Studio 2013 kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
  [Channel 9 &#124; Visual Studio TV &#124; yönetilen bellek analizi](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
  [Channel 9 &#124; Visual Studio araç kutusu &#124; yönetilen bellek analizi Visual Studio 2013](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

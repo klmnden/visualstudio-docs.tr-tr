@@ -1,14 +1,9 @@
 ---
 title: WPF araç kutusu denetimi oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4f98a58d78adc081ba574cab05edb29e1f42eabb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786034"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798330"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>WPF Araç Kutusu Denetimi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,4 +100,3 @@ ms.locfileid: "51786034"
 3.  .Vsix dosyasını bir ağa veya bir Web sitesine yükleyin.  
   
      Dosyayı karşıya yükleme durumunda [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesinin diğer kullanıcıların kullanabileceği **araçları / Uzantılar ve güncelleştirmeler** denetimi çevrimiçi bulmak ve yüklemek için Visual Studio'da.
-

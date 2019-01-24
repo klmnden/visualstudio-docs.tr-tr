@@ -1,12 +1,9 @@
 ---
 title: Katman diyagramları ile kodu doğrulama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792898"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Katman diyagramları ile kod doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
   
   Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-  Visual Studio'daki açık bir katman diyagramından veya komut isteminden kodu el ile doğrulayabilirsiniz. Ayrıca yerel yapıları veya Team Foundation Yapısı'nı çalıştırırken kodu otomatik olarak doğrulayabilirsiniz. Bkz: [kanal 9 videosu: tasarım ve katman diyagramlarını kullanarak Mimarinizi geçerli](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Visual Studio'daki açık bir katman diyagramından veya komut isteminden kodu el ile doğrulayabilirsiniz. Ayrıca yerel yapıları veya Team Foundation Yapısı'nı çalıştırırken kodu otomatik olarak doğrulayabilirsiniz. Bkz: [kanal 9 Video: Tasarlama ve doğrulama katman diyagramlarını kullanarak Mimarinizi](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Team Foundation Yapısı ile katman doğrulaması çalıştırmak istiyorsanız, yapı sunucunuzda ayrıca Visual Studio'nun aynı sürümünü yüklemeniz gerekir.  
@@ -156,7 +153,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
   
   Doğrulama hatalarını yönetmek için bu görevleri kullanın **hata listesi** penceresi:  
   
-|**Hedef**|**Aşağıdaki adımları izleyin**|  
+|**Alıcı**|**Aşağıdaki adımları izleyin**|  
 |------------|----------------------------|  
 |Doğrulama sırasında seçili hataları gizleme|Bir veya birden çok seçili hataya sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **Hataları Gizle**.<br /><br /> Gizlenen hatalar üstü çizili biçimde görünür. Doğrulamayı daha sonra çalıştırdığınızda bu hatalar görünmez.<br /><br /> Gizlenen hatalar, ilgili katman diyagramı dosyası için .gizlenenler dosyasında izlenir.|  
 |Seçili hataların gizlenmesini durdurma|Seçili gizlenen hata veya hatalara sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **hataları gizlemeyi Durdur**.<br /><br /> Doğrulamayı daha sonra çalıştırdığınızda seçili gizlenen hatalar görünecektir.|  
@@ -237,17 +234,14 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
   
 |**Hata sözdizimi**|**Hata açıklaması**|  
 |----------------------|---------------------------|  
-|AV0001: Geçersiz bağımlılık: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Katmanlar: *LayerName1*, *LayerName2* &#124; bağımlılıkları: *DependencyType*|*Artifact1* içinde *LayerName1* bir bağımlılık olmamalıdır *Artifact2* içinde *LayerName2* çünkü *LayerName1* doğrudan bir bağımlılık yok *LayerName2*.|  
-|AV1001: Geçersiz Namespace: *Yapıt*<br /><br /> Katman: *LayerName* &#124; gerekli Namespace: *NamespaceName1* &#124; geçerli Namespace: *NamespaceName2*|*LayerName* , ilişkilendirilmiş yapılarının öğesine ait olmasını gerektirir *NamespaceName1*. *Yapıt* bulunduğu *NamespaceName2*değil *NamespaceName1*.|  
+|AV0001: Geçersiz bağımlılık: *Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> Katmanlar: *LayerName1*, *LayerName2* &#124; bağımlılıkları: *DependencyType*|*Artifact1* içinde *LayerName1* bir bağımlılık olmamalıdır *Artifact2* içinde *LayerName2* çünkü *LayerName1* doğrudan bir bağımlılık yok *LayerName2*.|  
+|AV1001: Geçersiz Namespace: *Yapıt*<br /><br /> Katman: *LayerName* &#124; gerekli Namespace: *NamespaceName1* &#124; Current Namespace: *NamespaceName2*|*LayerName* , ilişkilendirilmiş yapılarının öğesine ait olmasını gerektirir *NamespaceName1*. *Yapıt* bulunduğu *NamespaceName2*değil *NamespaceName1*.|  
 |AV1002: Yasak Namespace üzerinde bağlıdır: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Katman: *LayerName* &#124; Namespace Yasak: *NamespaceName* &#124; bağımlılıkları: *DependencyType*|*LayerName* gerektirir, ilişkilendirilmiş yapılarının bağımlı olduğunu *NamespaceName*. *Artifact1* bağlı olamaz *Artifact2* çünkü *Artifact2* bulunduğu *NamespaceName*.|  
-|AV1003: Yasak Namespace içinde: *Yapıt*(*ArtifactType*)<br /><br /> Katman: *LayerName* &#124; Namespace Yasak: *NamespaceName*|*LayerName* , ilişkilendirilmiş yapılarının öğesine ait olmamasını gerektirir *NamespaceName*. *Yapıt* ait *NamespaceName*.|  
-|AV3001: eksik bağlantı: katman '*LayerName*'bağlantı'*Yapıt*' bulunamıyor. Eksik bir derleme başvurunuz mu var?|*LayerName* , bulunamayan bir yapıya bağlanır. Örneğin, sınıfla kurulan bir bağlantı kayıp olabilir; çünkü modelleme projesinde sınıfı içeren derlemeye yapılan bir başvuru yoktur.|  
+|AV1003: Yasak Namespace içinde: *Yapıt*(*ArtifactType*)<br /><br /> Katman: *LayerName* &#124; Namespace Yasak: *namespaceName*|*LayerName* , ilişkilendirilmiş yapılarının öğesine ait olmamasını gerektirir *NamespaceName*. *Yapıt* ait *NamespaceName*.|  
+|AV3001: Eksik bağlantı: Katman '*LayerName*'bağlantı'*Yapıt*' bulunamıyor. Eksik bir derleme başvurunuz mu var?|*LayerName* , bulunamayan bir yapıya bağlanır. Örneğin, sınıfla kurulan bir bağlantı kayıp olabilir; çünkü modelleme projesinde sınıfı içeren derlemeye yapılan bir başvuru yoktur.|  
 |AV9001: Mimari çözümleme iç hatalar buldu. Sonuçlar tamamlanmamış olabilir. Daha fazla bilgi için ayrıntılı yapı olay günlüğü veya çıkış penceresine bakın.|Daha fazla ayrıntı için yapı olay günlüğü veya çıkış penceresine bakın.|  
   
 ## <a name="security"></a>Güvenlik  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)
-
-
-

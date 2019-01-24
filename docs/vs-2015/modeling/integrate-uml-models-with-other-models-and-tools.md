@@ -1,25 +1,22 @@
 ---
 title: UML modellerini diğer modeller ve araçlarla tümleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795327"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>UML modellerini diğer modeller ve araçlarla tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,12 +65,12 @@ UML modellerini diğer modeller ve etki alanına özgü diller ile tümleştiril
   
 2. **VMSDK olayları** değişiklikleri – modelin dışına örneğin yayılması, bağlı bir belgenin dosya adını değiştirmek için veya başka bir modelinde bir öğedeki değiştirmek için kullanılabilir.  
   
-   Bu iki mekanizmaları hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir UML modelindeki değişikliklere yanıt](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Bu iki mekanizmaları hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir UML modelindeki değişikliklere yanıt](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Öğeleri bir modelden diğerine kopyalamak için sürükleyin  
    Öğeleri bir UML diyagram üzerine sürükleyerek öğeleri oluşturmalarına izin verebilirsiniz. Bir kopyası özgün olarak oluşturulan öğe yok. Örneğin, etkinlik diyagramı yeni bir eylem oluşturmak için çözüm gezgininden başka bir etkinlik diyagramı, sürükleyin kullanıcı izin verebilirsiniz.  
   
-   Daha fazla bilgi için [modelleme diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) ve [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   Daha fazla bilgi için [modelleme diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) ve [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="samples"></a>Örnekler  
  Kod örneği, lütfen bakın [diyagramlara veya diğer dosyaları bağlantı UML öğelerini](http://go.microsoft.com/fwlink/?LinkId=213813). Örnek bir dosya herhangi bir UML öğesi üzerine sürükleyin ve daha sonra öğeyi çift tıklayarak dosyayı açmak olanak sağlar. Örneğin, etkinlik diyagramı bir kullanım örneği öğesine bağlayabilirsiniz. Hangi öğelerin bağlantılara sahip bir simge gösterilir.  
@@ -88,7 +85,7 @@ UML modellerini diğer modeller ve etki alanına özgü diller ile tümleştiril
   
    Örnek bir görüntü dekoratör UML şekillere ekler.  
   
-- [Nasıl yapılır: bir UML modelindeki değişikliklere yanıt verme](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Nasıl yapılır: Bir UML modelindeki değişikliklere yanıt verme](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    Örnek bir diyagram üzerinde görünen yeni şekiller yanıt veren bir kural tanımlamak nasıl gösterir.  
   
@@ -98,15 +95,12 @@ UML modellerini diğer modeller ve etki alanına özgü diller ile tümleştiril
   
    Örnek üstesinden nasıl gelineceğini gösterir öğeleri, Windows Explorer (veya dosya Gezgini), Çözüm Gezgini ve diğer UML öğeleri sürüklediğiniz.  
   
-  DSL tarafından okunan bir UML modeli olduğu bir örnek için bkz: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+  DSL tarafından okunan bir UML modeli olduğu bir örnek için bkz: [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Modelleme Diyagramında hareket işleyicisi tanımlama](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Nasıl yapılır: bir UML modelindeki değişikliklere yanıt verme](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Nasıl yapılır: Bir UML modelindeki değişikliklere yanıt verme](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
  [Örnek: UML profilleri](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Bağlantı UML öğeleri diyagramlara veya diğer dosyaları](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

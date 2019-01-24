@@ -1,24 +1,19 @@
 ---
 title: Kodlanmış UI testleriyle Windows UWP ve 8.1 Phone uygulamalarını test | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765105"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Windows UWP ve 8.1 Phone Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -319,26 +314,26 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ## <a name="q--a"></a>Soru - Yanıt  
   
-### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>UI denetimine eşlemek için Windows Phone öykünücüsünde uygulamayı dağıtmak zorunda s:?  
- **A**: Evet, kodlanmış UI test Oluşturucusu bir öykünücü çalışıyor olmalıdır ve uygulama için dağıtılabilir gerektirir. Aksi takdirde, hiçbir çalışan öykünücüsü bulunamadı hata mesajını durum oluşturur.  
+### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>S: UI denetimine eşlemek için Windows Phone öykünücüsünde uygulamayı dağıtmak zorunda mıyım?  
+ **A**: Evet, kodlanmış UI test Oluşturucusu bir öykünücü çalıştırması ve uygulama dağıtılmış gerekir. Aksi takdirde, hiçbir çalışan öykünücüsü bulunamadı hata mesajını durum oluşturur.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Testleri yalnızca öykünücü üzerinde yürütülen miyim ya da fiziksel bir cihaz kullanabilir miyim?  
- **A**: her iki seçenek desteklenir. Test yürütmesi için hedef öykünücü türünü değiştirme veya cihaz cihaz araç çubuğunda seçerek seçilir. Cihaz seçiliyse, telefon mavi bir cihaz makinenin USB bağlantı noktalarından birine bağlanması gerekir.  
+###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> S: Testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim?  
+ **A**: Her iki seçenek desteklenir. Test yürütmesi için hedef öykünücü türünü değiştirme veya cihaz cihaz araç çubuğunda seçerek seçilir. Cihaz seçiliyse, telefon mavi bir cihaz makinenin USB bağlantı noktalarından birine bağlanması gerekir.  
   
  ![Physcial cihaz veya öykünücü sürümü seçin](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
   
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?  
- **A**: kaydedilecek seçenek Windows Phone uygulamaları için desteklenmez.  
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>S: Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?  
+ **A**: Kaydedilecek seçenek Windows Phone uygulamaları için desteklenmiyor.  
   
-### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>Kodlanmış UI testi için Windows Phone uygulamalarım WinJS, Silverlight veya HTML5 tabanlı oluşturabilirim miyim?  
+### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>S: WinJS, Silverlight veya HTML5 tabanlı Windows Phone uygulamalarım için kodlanmış UI testi oluşturabilir miyim?  
  **A**: Hayır, yalnızca XAML tabanlı uygulamalar desteklenir.  
   
-### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Kodlanmış UI testleri, Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde Windows Phone uygulamalarım için oluşturabilirim miyim?  
- **A**: Hayır, kodlanmış UI Test projesi şablonlar yalnızca Windows 8.1 ve Windows 10'da kullanılabilir. Otomasyon için evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Windows 10 gerekir.  
+### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>S: Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde Windows Phone uygulamalarım için kodlanmış UI testleri oluşturabilir miyim?  
+ **A**: Hayır, kodlanmış UI Test projesi şablonları yalnızca Windows 8.1 ve Windows 10'da kullanılabilir. Otomasyon için evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Windows 10 gerekir.  
 
 <a name="uwpapps"></a>  
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>S: Evrensel Windows Platformu (UWP) uygulamaları için kodlanmış UI testleri nasıl oluşturulur?  
- **A**: Burada test UWP uygulamanızın platforma bağlı olarak, aşağıdaki yöntemlerden biriyle kodlanmış UI test projesi oluşturun:  
+ **A**: UWP uygulamanızın nerede test ettiğiniz platforma bağlı olarak, aşağıdaki yöntemlerden biriyle kodlanmış UI test projesi oluşturun:  
   
 - Yerel makine üzerinde çalışan UWP uygulaması bir Store uygulaması olarak çalışır. Bu test için kullanmanız gerekir **kodlanmış UI Test projesi (Windows)** şablonu. Yeni bir proje oluşturduğunuzda, bu şablonu bulmak için Git **Windows**, **Evrensel** düğümü. Veya Git **Windows**, **Windows 8**, **Windows** düğümü.  
   
@@ -346,19 +341,19 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
   Projeyi oluşturduktan sonra bir test yazma önceki ile aynı kalır.  
   
-### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Öykünücü dışında olan denetimler seçtiğim miyim?  
+### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>S: Ben öykünücü denetimleri seçebilir miyim?  
  **A**: Hayır, oluşturucu bunları algılamaz.  
   
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>S: kodlanmış UI test Oluşturucusu'nu fiziksel phone cihazı kullanarak denetimleri eşlemek için kullanabilir miyim?  
- **A**: uygulamanızı öykünücüde dağıttıysanız Hayır, oluşturucu yalnızca kullanıcı Arabirimi öğeleri eşleyebilirsiniz.  
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>S: Bir fiziksel phone cihazı kullanarak denetimleri eşlemek için kodlanmış UI test Oluşturucusu kullanabilir miyim?  
+ **A**: Hayır, uygulamanızı öykünücüde dağıttıysanız Oluşturucu yalnızca kullanıcı Arabirimi öğeleri eşleyebilirsiniz.  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?  
- **A**: UIMap - Kodlanmış UI Test Oluşturucusu kullanarak kodu üretmek her zaman UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliği üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>S: UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?  
+ **A**: UIMap - Kodlanmış UI Test Oluşturucusu kullanarak kodu her oluşturduğunuzda, UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
   
-### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>Kodlanmış UI testi Windows Phone uygulamamı komut satırından çalıştırabilir miyim?  
- **A**: Evet, siz runsettings dosyası test yürütmesi için hedef cihazla belirtmek için kullanın. Örneğin:  
+### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>S: Kodlanmış UI testi Windows Phone uygulamamı komut satırından çalıştırabilir miyim?  
+ **A**: Evet, runsettings dosyası, test yürütmesi için hedef cihazla belirtmek için kullanın. Örneğin:  
   
- **vstest.Console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**  
+ **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
   
  Örnek runsettings dosyası:  
   
@@ -366,7 +361,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
 <MSPhoneTest>  
-<!--to specify test execution on device, use a TargetDevice option as follows-->  
+<!--to specify test execution on device, use a TargetDevice option as follows-->  
 <TargetDevice>Device</TargetDevice>  
 <!--to specify an emulator instead, use a TargetDevice option like below-->  
 <!--<TargetDevice>Emulator 8.1 WVGA 4 inch 512MB</TargetDevice>-->  
@@ -375,11 +370,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```  
   
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>S: XAML tabanlı Windows Store uygulamaları için kodlanmış UI testleri ve Windows Phone uygulamaları arasındaki farklar nelerdir?  
- **A**: bazı temel farklar şunlardır:  
+ **A**: Bazı temel farklar şunlardır:  
   
 |Özellik|Windows Mağazası uygulamaları|Windows Phone uygulamaları|  
 |-------------|------------------------|------------------------|  
-|Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş test çalışmasına kullandığınızda, uzak bilgisayarlara belirtilebilir. Bkz: [Microsoft Test Yöneticisi'nde bir test çalışmasını otomatikleştirme](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Öykünücü veya cihaz. Bkz, [s: testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim?](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
+|Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş test çalışmasına kullandığınızda, uzak bilgisayarlara belirtilebilir. Bkz: [Microsoft Test Yöneticisi'nde bir test çalışmasını otomatikleştirme](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Öykünücü veya cihaz. Bkz, [s: Testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim? ](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
 |Komut satırından yürütmek|Ayarlar dosyası hedef belirtmek için gerekli değildir.|Runsettings dosyası hedef belirtmek için gereklidir.|  
 |Kabuk denetimleri için özel sınıflar|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |WebView denetiminde XAML uygulama|Html * kullanırsanız desteklenen özel HTML öğeleri ile etkileşim kurmak için sınıflar. Bkz. <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Desteklenmez.|  
@@ -387,10 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Veri tabanlı testler|Bkz: [veri tabanlı testler](../test/creating-a-data-driven-coded-ui-test.md) dış veri kaynakları kullanarak ve veri kaynağı kullanma hakkında bilgi için bir test yönteminde öznitelik.|Verileri, bir test metodunda DataRow özniteliğini kullanarak, belirtilen içindedir. Bkz: [kullanım verilerle çalışan kodlanmış UI testleri Windows Phone uygulamalarını](#TestingPhoneAppsCodedUI_DataDriven) bu konuda.|  
   
 ## <a name="external-resources"></a>Dış kaynaklar  
- Microsoft Visual Studio uygulama yaşam döngüsü yönetimi blogunda: [XAML tabanlı Windows Phone uygulamalarını test etmek için kodlanmış UI kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
+ Microsoft Visual Studio uygulama yaşam döngüsü yönetimi blogunda: [XAML tabanlı Windows Phone uygulamalarını test etmek için kodlanmış kullanıcı Arabirimi kullanma](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)
-
-
-

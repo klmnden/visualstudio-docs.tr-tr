@@ -1,26 +1,21 @@
 ---
 title: Proje türü temel bileşenleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a719ea26473874cb0d771b46ee05ea15092fb17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdb6aabe2e7379c063e7347389deb467d724be3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794579"
 ---
 # <a name="project-type-essentials"></a>Proje Türü Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51746452"
   
 - Proje türleridir kümesi arabirimleri uygulayan nesneler vspackage'ta [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bekliyor. C# proje türü geliştirmek için kullanıyorsanız, yönetilen paket çerçevesini proje sınıfları için gerekli arabirimleri uygulayabilir ve bu uygulamayı devral olanak verir. Daha fazla bilgi için [bir proje türü (C#) uygulamak için yönetilen paket çerçevesini kullanarak](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- C++ geliştiricileri için HierUtil Kitaplığı'nda sınıflar benzer bir şekilde çalışır. Daha fazla bilgi için [derleme içinde değil: Proje türü (C++) uygulamak için HierUtil7 proje sınıfları kullanarak](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- C++ geliştiricileri için HierUtil Kitaplığı'nda sınıflar benzer bir şekilde çalışır. Daha fazla bilgi için [derleme içinde değil: Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanarak](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Bir .exe veya .dll derleme tipik kaynak kodu dosyaları dışında veri proje türlerini destekler. Örneğin, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] veritabanı projeleri diskte depolanan dosyaların komut ve sorgu için başvurular içerir ve komutları ekleme **Çözüm Gezgini** yürütmek için betikleri ve bir veritabanı, ancak projeleri sorguları desteklemez davranış oluşturun. Daha fazla bilgi için [açma ve kaydetme proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md).  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51746452"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Türlerini Dağıtma](../../extensibility/internals/deploying-project-types.md)
-

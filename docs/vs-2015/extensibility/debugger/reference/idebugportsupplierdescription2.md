@@ -1,26 +1,21 @@
 ---
 title: IDebugPortSupplierDescription2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1bb6813992e616d964f3e86f8f42645d50700058
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3da559a2d843ddb1129236966093b8a41f4234b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756021"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,9 +39,8 @@ IDebugPortSupplierDescription2 : IUnknown
 |[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Bağlantı noktası sağlayıcısı için bir açıklama ve açıklama meta verilerini alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Msdbg.h  
+ Üst bilgi: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
-

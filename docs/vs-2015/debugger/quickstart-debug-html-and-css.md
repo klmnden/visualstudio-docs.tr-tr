@@ -1,14 +1,9 @@
 ---
 title: 'Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50c6899699bc8186c3cc1979b86d6659d9e3f13d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777688"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 - [WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)  
   
-  Diğer JavaScript kullanarak JavaScript Konsolu penceresi ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz. [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
+  Diğer JavaScript kullanarak JavaScript Konsolu penceresi ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz: [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Dinamik DOM'u inceleniyor  
  DOM Gezgini işlenen sayfanın bir görünümü gösterir ve değerleri değiştirebilir ve sonuçları hemen görmek için DOM Gezgini'ni kullanabilirsiniz. Bu, hata ayıklayıcıyı durdurup yeniden olmadan değişiklikleri test etmek sağlar. Bu yöntemi kullanarak sayfa ile etkileşim kurduğunuzda, kaynak kodu, projenizdeki değişmez istenen kod düzeltmeleri bulduğunuzda, kaynak kodunuzda değişiklikler yaparsınız.  
@@ -76,7 +71,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 - CSS stilleri sayfa öğeleri için nasıl uygulanmış incelemenize ve henüz uygulanmamış kuralları izleme.  
   
-  Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **stilleri**, **hesaplanan**, **Düzen**. Windows Store apps de destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
+  Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **Stilleri**, **hesaplanan**, **Düzen**. Windows Store apps de destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
   
 > [!TIP]
 >  DOM Gezgini penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **DOM Gezgini** yeniden açın. Pencere, yalnızca bir betik hata ayıklama oturumu sırasında görünür.  
@@ -236,7 +231,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
     - Simülatör için: 320px (kaydırma) ve 320px (kenar boşluğu).  
   
-    - Phone öykünücüsü: 100px (kaydırma) ve 100px (kenar boşluğu).  
+    - Phone öykünücüsü için: 100px (kaydırma) ve 100px (kenar boşluğu).  
   
       Aşağıdaki çizimde gösterildiği nasıl **Düzen** sekmesi, Phone öykünücüsü (100px uzaklığı ve kenar boşluğu) kullanıyorsanız, arar.  
   
@@ -258,7 +253,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 2.  Default.HTML açın ve yüksekliğini ve genişliğini değiştirerek kaynak kodunuzu değiştirmeniz `"fView"` % 100 DIV öğesi.  
   
-3.  Seçin **Yenile Windows uygulama** hata ayıklama araç çubuğundan düğme (veya F4 tuşuna basın). Düğme şöyle görünür: ![Yenile Windows uygulama düğmesine](../debugger/media/js-refresh.png "JS_Refresh").  
+3.  Seçin **Yenile Windows uygulama** hata ayıklama araç çubuğundan düğme (veya F4 tuşuna basın). Düğme şöyle görünür: ![Windows uygulama düğmesine Yenile](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Uygulama sayfaları yeniden ve ön plana simülatörü veya Phone öykünücüsünde döndürür.  
   
@@ -312,6 +307,3 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)   
  [HTML, CSS ve JavaScript örnek kod hatalarını ayıklama](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Ürün desteği ve erişilebilirlik](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

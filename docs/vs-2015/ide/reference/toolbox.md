@@ -1,14 +1,9 @@
 ---
 title: Araç kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -20,13 +15,13 @@ ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799804"
 ---
 # <a name="toolbox"></a>Araç Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49241481"
  **Araç kutusu** içinde çalıştığınız dosya türü için uygun olan öğeleri görüntüler. Daha fazla filtre uygulamak için araç kutusu içinde görüntülenen öğe arayabilirsiniz. Projenize istemci profili tarafından desteklenmeyen bir denetim gerekiyorsa, projenizin proje özelliklerini düzenleyerek tüm çerçeveyi hedeflemek üzere ayarlayabilirsiniz.  
   
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Araç kutusu sekmelerindeki Yardım  
  Aşağıdaki belgeler özel hakkında daha fazla bilgi sağlayan **araç kutusu** sekmeler.  
@@ -58,6 +53,3 @@ ms.locfileid: "49241481"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Kutusunu Kullanma](../../ide/using-the-toolbox.md)
-
-
-

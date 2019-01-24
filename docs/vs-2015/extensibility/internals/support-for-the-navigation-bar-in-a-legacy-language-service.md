@@ -1,27 +1,22 @@
 ---
 title: Eski dil hizmetinde gezinti çubuğu desteği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81d2217be730803c1daedc37c3bac1a8d4154eea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781384"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Gezinti Çubuğu için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,4 +91,3 @@ namespace TestLanguagePackage
      Edinilen bildirimleri geçerli giriş işareti konumunu içeren bir üye için 1. adımda arayın ve ardından üye listesinde üye listesine dizinini belirlemek bu üye için arama yapın.  
   
 6.  Dönüş `true` listeleri ya da her iki listesinden seçim için herhangi bir değişiklik yapılmadıysa.
-

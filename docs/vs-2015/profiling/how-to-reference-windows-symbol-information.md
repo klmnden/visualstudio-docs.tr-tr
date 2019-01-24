@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: başvuru Windows sembol bilgilerini | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Başvuru Windows bilgi simgesi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
 - servers, symbol servers
@@ -18,15 +13,15 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c18825a27bfefdd1a6c817951983d85ac459b78b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801706"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: Başvuru Pencereleri Sembol Bilgileri
+# <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: Başvuru Windows sembol bilgileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio profil oluşturma araçları, işlev adlarını program ikili dosyalar gibi sembolik adlarını çözümlemek için Sembol (.pdb) dosyalarını kullanın. Otomatik olarak yükle ve yerel bilgisayardaki Windows sürümü için doğru .pdb dosyaları güncelleştirmek için aşağıdaki adımları izleyebilirsiniz.  
@@ -56,7 +51,4 @@ Visual Studio profil oluşturma araçları, işlev adlarını program ikili dosy
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [Nasıl Yapılır: Sembol Bilgilerini Seri Hale Getirme](../profiling/how-to-serialize-symbol-information.md)
-
-
-
+ [Nasıl yapılır: Sembol Bilgilerini Seri Hale Getirme](../profiling/how-to-serialize-symbol-information.md)

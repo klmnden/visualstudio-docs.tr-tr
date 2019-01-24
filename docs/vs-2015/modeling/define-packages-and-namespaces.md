@@ -1,12 +1,9 @@
 ---
 title: Paketleri ve ad alanlarını tanımlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, namespaces
 - UML, namespaces
@@ -16,13 +13,13 @@ ms.assetid: 79147068-02d5-4b70-933d-f647c1da3829
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b9295b5af83270069df11e6460ee85dfe0fd9c73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766412"
 ---
 # <a name="define-packages-and-namespaces"></a>Paketleri ve ad alanlarını tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -227,9 +224,6 @@ Visual Studio'da bir *paket* UML öğelerini sınıfları, kullanım örnekleri 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
  [Sürüm denetimi altındaki modelleri ve diyagramları yönetme](../modeling/manage-models-and-diagrams-under-version-control.md)
-
-
-

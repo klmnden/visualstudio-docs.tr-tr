@@ -1,25 +1,20 @@
 ---
 title: Bellek kullanımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f62137fcbc71df87fb0569ed0516a7ae36d8a30a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766123"
 ---
 # <a name="memory-usage"></a>Bellek kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,12 +131,8 @@ Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntıla
 ## <a name="blogs-and-videos"></a>Bloglar ve videolar  
  [Visual Studio 2015'te tanılama araçları hata ayıklayıcı penceresi](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [Blog: Visual Studio 2015'te hata ayıklama bellek kullanımı aracı](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [Blog: Visual Studio 2015'te hata ayıklama sırasında bellek kullanımı aracı](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
- [Visual C++ blogu: VS2015 preview'da yerel Bellek Tanılama](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Visual C++ blogu: VS2015 önizlemede yerel Bellek Tanılama](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Visual C++ blogu: Visual Studio 2015 CTP yerel Bellek Tanılama araçları](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
-
-
-
-
+ [Visual C++ blogu: Visual Studio 2015 CTP için yerel Bellek Tanılama araçları](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)

@@ -1,14 +1,9 @@
 ---
 title: Eski dil hizmetinde hızlı bilgi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797214"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796224"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Hızlı Bilgiler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hızlı bilgi IntelliSense kullanıcı giriş işaretini bir tanımlayıcıda yerleştirir ve seçer bu tanımlayıcının hakkında bilgileri kaynakta gösterir **hızlı bilgi** gelen **IntelliSense** menüsü veya fare tutar tanımlayıcı imleci. Bu tanımlayıcı bilgiler görüntülenecek araç ipucu neden olur. Bu bilgiler genellikle tanımlayıcı türü oluşur. Hata ayıklama altyapısı etkin olduğunda, bu bilgiler, geçerli değer içerebilir. Dil hizmeti yalnızca, tanımlayıcıları işlerken hata ayıklama altyapısı ifade değerleri sağlar.  
   
- Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz. [izlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz: [izlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
 >  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
@@ -49,4 +44,3 @@ Hızlı bilgi IntelliSense kullanıcı giriş işaretini bir tanımlayıcıda ye
  Çoğu Çözümleyicileri tüm kaynak dosyasının ilk bir ayrıştırma yapın ve sonuçları bir ayrıştırma ağacı içinde depolamak. Tam ayrıştırma zaman taşınan <xref:Microsoft.VisualStudio.Package.ParseReason> geçirilir <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi. Diğer türleri ayrıştırma, ayrıştırma ağacı istenen bilgileri edinmek için daha sonra kullanabilirsiniz.  
   
  Örneğin, ayrıştırma neden değerini <xref:Microsoft.VisualStudio.Package.ParseReason> kaynak konumundaki tanımlayıcısını bulmak ve arayın tür bilgilerini almak için ayrıştırma ağacı. Bu tür bilgiler geçirilerek <xref:Microsoft.VisualStudio.Package.AuthoringScope> sınıfı ve tarafından döndürülen <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> yöntemi.
-

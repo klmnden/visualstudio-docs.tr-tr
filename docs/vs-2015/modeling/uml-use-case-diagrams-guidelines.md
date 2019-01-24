@@ -1,12 +1,9 @@
 ---
-title: 'UML Kullanım durumu diyagramları: Yönergeler | Microsoft Docs'
-ms.custom: ''
+title: 'UML Kullanım durumu diyagramları: Yönergeleri | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,15 +14,15 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780701"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım Durumu Diyagramları: Yönergeler
+# <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım durumu diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygulama ya da sistemin ve onunla neler özetlemek için. Bir UML Kullanım durumu diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
@@ -44,7 +41,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
   Ayrıntılı kullanım örneklerinin bir kullanım durumu diyagramı göstermiyor: Bu yalnızca bazı kullanım örnekleri, aktörler ve sistemler arasındaki ilişkileri özetlenmektedir. Özellikle, diyagram, her kullanım örneği hedeflere ulaşmak için adımlar gerçekleştirildiği sırada göstermez. Bu ayrıntıları başka diyagramları ve her kullanım örneğine bağlayabilirsiniz belgelerini tanımlayabilirsiniz. Daha fazla bilgi için [kullanım örneklerini açıklayan ayrıntılı](#Details) bu konuda.  
   
-  Kullanım durumları için sağladığınız açıklamaları sistem çalıştığı, satış, menü, müşteri ve benzeri gibi etki alanı ile ilgili çeşitli koşulları kullanır. Bu hüküm ve aralarındaki ilişkiler açıkça tanımlamak önemlidir ve UML sınıf diyagramı yardımıyla bunu yapabilirsiniz. Daha fazla bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
+  Kullanım durumları için sağladığınız açıklamaları sistem çalıştığı, satış, menü, müşteri ve benzeri gibi etki alanı ile ilgili çeşitli koşulları kullanır. Bu hüküm ve aralarındaki ilişkiler açıkça tanımlamak önemlidir ve UML sınıf diyagramı yardımıyla bunu yapabilirsiniz. Daha fazla bilgi için [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md).  
   
   Kullanım örnekleri, yalnızca bir sistem işlevsel gereksinimlerini de ilgilidir. İş kuralları, hizmet gereksinimleri ve uygulama kısıtlamaları kalitesi gibi diğer gereksinimleri ayrı ayrı gösterilmelidir. Mimari ve dahili ayrıntılar da ayrı olarak tanımlanmış olmalıdır. Kullanıcı gereksinimlerini tanımlama hakkında daha fazla bilgi için bkz. [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
@@ -91,13 +88,13 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
     -   Aktör, kullanıcılar ve kuruluşlar sisteminizi etkileşimli dış sistemlerle sınıfları temsil eder.  
   
-    -   Bunları yeniden adlandırın. Örneğin: **müşteri, Restoran, kredi kartı kurumu.**  
+    -   Bunları yeniden adlandırın. Örneğin: **Müşteri, Restoran, kredi kartı kurumu.**  
   
 3.  Sürükleme **kullanım durumları** ilgili sistemlere araç kutusundan.  
   
     -   Kullanım örnekleri, sisteminizin yardımıyla aktörler gerçekleştiren etkinlikler temsil eder.  
   
-    -   Bunları aktörlerin öğrenmesi başlıklarını kullanarak yeniden adlandırın. Kodunuz ile ilgili başlıkları kullanmayın. Örneğin: **Yemek Sipariş Et, Yemek yemek sunmak için ödeme**.  
+    -   Bunları aktörlerin öğrenmesi başlıklarını kullanarak yeniden adlandırın. Kodunuz ile ilgili başlıkları kullanmayın. Örneğin: **Yemek için ödeme, teslim etmek, Yemek yemek siparişi**.  
   
     -   Gibi önemli işlemler ile başlayan **Yemek Sipariş Et**, bırakma gibi daha küçük etkileşimler **seçin menü öğesi**.  
   
@@ -233,9 +230,9 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 - Kullanım örneği başka bir diyagramı veya diyagramları projedeki bağlayın.  
   
-  -   Etkinlik diyagramı daha karmaşık bir işlem açıklayan yardımcı olan döngü, dal ve paralel iş parçacığı olduğu. Ayrıca, işlem bölümleri arasındaki veri akışını da gösterebilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Etkinlik diyagramı daha karmaşık bir işlem açıklayan yardımcı olan döngü, dal ve paralel iş parçacığı olduğu. Ayrıca, işlem bölümleri arasındaki veri akışını da gösterebilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Sıralı diyagram, farklı aktör arasındaki etkileşimler karmaşık bir dizi açıklayan yardımcı olur. Sistem her kullanım örneğine yanıt içinde neler göstermek için de kullanabilirsiniz. Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Sıralı diyagram, farklı aktör arasındaki etkileşimler karmaşık bir dizi açıklayan yardımcı olur. Sistem her kullanım örneğine yanıt içinde neler göstermek için de kullanabilirsiniz. Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Kullanım örneği bir OneNote sayfası, bölüm veya ayrıntılı kullanım örneğini açıklanacak paragraf bağlayın.  
   
@@ -337,7 +334,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 - Etkinlik diyagramı eylemleri, kullanım örnekleri dahil olarak aynı ada sahip.  
   
-  Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+  Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
   ![Bağlı etkinlik diyagramında gösterilen kullanım örneği adımları](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
- [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)   
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)   
  [Video: Kullanım örneklerine özelliklerini düzenleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-

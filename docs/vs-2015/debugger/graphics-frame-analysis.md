@@ -1,27 +1,22 @@
 ---
 title: Grafik çerçevesi analizi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7ac0fedd5c78af474e37079f640f74a0d5e0bf8b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54154498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781276"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,6 +202,3 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 |**BC doku sıkıştırma**|Etkinleştirir sıkıştırma B8G8R8X8, B8G8R8A8 veya R8G8B8A8 piksel biçimi değişken tüm dokular hakkında engelleyin. B8G8R8X8 biçimi çeşitleri BC1 kullanarak sıkıştırılır; B8G8R8A8 ve R8G8B8A8 biçimi çeşitleri BC3 kullanarak sıkıştırılır.<br /><br /> Daha fazla bilgi için [BC doku sıkıştırma değişken](../debugger/bc-texture-compression-variant.md).|  
   
  Düzenleyici çoğu çeşitleri için oluşur: "Yarısı göre azalan doku boyutu daha hızlı yüzde 25" veya "Etkinleştirme 2 x MSAA yalnızca 2 yüzde daha yavaş". Daha fazla yorumu diğer çeşitleri gerektirebilir; 1 x 1 Görünüm penceresi boyutları değişiklikleri değişken büyük performans kazancı gösterir, örneğin, işleme göre düşük doldurma oranı; performansı düşürdüğünü gösterir olmadığını olduğunu gösterebilir Alternatif olarak, performansı önemli bir değişiklik varsa, işleme göre köşe işleme performansı düşürdüğünü gösterir emin olduğunu gösterebilir.
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Modelleme Diyagramında hareket işleyicisi tanımlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778850"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
     Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
   
-    **Sorun giderme**: yeni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
+    **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
   
    -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
@@ -256,7 +253,7 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
 4. Bir öğe, UML Gezgini'nde diyagram üzerine sürükleyin. Sürükleme işleyiciniz çağrılmalıdır.  
   
-   **Sorun giderme**: hareket işleyicisi çalışmıyorsa emin olun:  
+   **Sorun giderme**: Hareket işleyicisi çalışmıyorsa emin olun:  
   
 -   Hareket işleyicisi projesini MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
   
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md)   
  [UML API ile programlama](../modeling/programming-with-the-uml-api.md)
-
-
-

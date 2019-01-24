@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: Düzenleyici uzantısı ile Kabuk komutu kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir düzenleyici uzantısı ile Kabuk komutu kullanma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754072"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>İzlenecek Yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma
+# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 VSPackage düzenleyiciye menü komutları gibi özellikleri ekleyebilirsiniz. Bu kılavuzda bir kenarlığı düzenleyici metin görünümünde bir menü komutunu çağırarak nasıl ekleneceğini gösterir.  
@@ -729,5 +724,4 @@ VSPackage düzenleyiciye menü komutları gibi özellikleri ekleyebilirsiniz. Bu
      Fourscore...  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

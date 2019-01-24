@@ -1,26 +1,21 @@
 ---
 title: 'Örnek Excel uzantısı: ActionFilter sınıfı | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 87bffbbd3d463de19c923e6d1bd9f865aca37851
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 86c1dda46ed0e62649a576a12c9f9e48561ec891
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767850"
 ---
-# <a name="sample-excel-extension-actionfilter-class"></a>Örnek Excel Uzantısı: ActionFilter Sınıfı
+# <a name="sample-excel-extension-actionfilter-class"></a>Örnek Excel uzantısı: ActionFilter Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu iç sınıfını genişleten <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> sınıfı ve test işlemleri için bir filtre üzerinde temsil eder bir [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] öğesi.  
@@ -38,6 +33,3 @@ Bu iç sınıfını genişleten <xref:Microsoft.VisualStudio.TestTools.UITest.Co
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.IUITestActionStack>   
  [Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

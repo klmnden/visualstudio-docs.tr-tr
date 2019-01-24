@@ -1,32 +1,27 @@
 ---
 title: Gölgelendiricilerle çalışma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 72325522886ed1bc6ab262152c84fc3660231d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795916"
 ---
 # <a name="working-with-shaders"></a>Gölgelendiricilerle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Grafik tabanlı gölgelendirici Tasarımcısı'nda kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tasarım özel gölgelendirici efektleri için. Bu gölgelendiricileri DirectX tabanlı oyunlarda veya uygulamalarda de kullanabilirsiniz.  
   
-## <a name="shaders"></a>Gölgelendiricileri  
+## <a name="shaders"></a>Gölgelendiriciler  
  A *gölgelendirici* grafik hesaplamalar yapan bir bilgisayar program — dönüşümleri köşe veya piksel renklendirme gibi — ve genellikle CPU yerine bir grafik işlem birimi (GPU) çalıştırır. Çoğu geleneksel, sabit işlevi grafik ardışık düzen aşamaları artık gölgelendirici programlar tarafından gerçekleştirildiğinden, uygulamanızın ihtiyaçlarına özel bir işlem hattı oluşturmak için kullanabilirsiniz.  
   
  Gölgelendiricileri en yaygın tür olan *köşe gölgelendiricileri*, köşe başına hesaplamalar ve sabit işlevi dönüştürme ve programlanabilir olmayan grafik donanımı aydınlatma devresi değiştirin ve *piksel gölgelendiricileri*, bir piksel rengi belirler ve sabit işlevi renk-Birleştirici devresi programlanabilir olmayan grafik donanımı değiştirme piksel başına hesaplamalar gerçekleştirin. Modern grafik donanımının vermiştir gölgelendiricileri daha da fazla tür mümkün —*Kabuk gölgelendirici*, *etki alanı gölgelendirici*, ve *geometri gölgelendirici* vegrafikhesaplamaları*gölgelendiricileri işlem* grafik olmayan hesaplamalar için. Bu aşamalar hiçbiri, programlanabilir olmayan grafik donanımının, hatta kullanılabilir değil. Gölgelendiricileri özgün veri-paralel (SIMD) ve grafik merkezli (nokta çarpımını) yönergeler sağlayan bir derleme benzeri bir dil kullanarak oluşturulur. Şimdi, gölgelendiriciler genellikle HLSL (yüksek düzey gölgelendirici dili) gibi üst düzey, C benzeri diller kullanılarak oluşturulur.  
@@ -45,6 +40,3 @@ Grafik tabanlı gölgelendirici Tasarımcısı'nda kullanabileceğiniz [!INCLUDE
 |[Gölgelendirici Tasarımcısı](../designers/shader-designer.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gölgelendiricilerle çalışmak için gölgelendirici Tasarımcısı.|  
 |[Gölgelendirici Tasarımcısı Düğümleri](../designers/shader-designer-nodes.md)|Grafik efektler elde etmek için kullanabileceğiniz gölgelendirici Tasarımcısı düğümleri türlerini açıklar.|  
 |[Gölgelendirici Tasarımcısı Örnekleri](../designers/shader-designer-examples.md)|Gölgelendirici Tasarımcısı ortak grafik efektler elde etmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|
-
-
-

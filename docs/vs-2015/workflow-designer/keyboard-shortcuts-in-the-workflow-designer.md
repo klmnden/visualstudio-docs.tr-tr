@@ -1,11 +1,8 @@
 ---
 title: Klavye kısayolları iş akışı tasarımcısında | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895346"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803636"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafından erişilebilir.  
@@ -32,16 +29,16 @@ Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafın
   
 |Kısayol|Amaç|  
 |--------------|-------------|  
-|CTRL + E, A|Bağımsız değişken tasarımcısını gizler veya gösterir.|  
+|CTRL+E, A|Bağımsız değişken tasarımcısını gizler veya gösterir.|  
 |CTRL+E, C|Seçili etkinlik yerinde daraltır.|  
-|CTRL + E, E|Seçili etkinlik yerinde genişletir.|  
-|CTRL + E, F|Bir akış grafiğindeki seçili etkinlikler bağlanır.|  
-|CTRL + E, I|İçe Aktarılanlar tasarımcısını gizler veya gösterir.|  
-|CTRL + E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|  
+|CTRL+E, E|Seçili etkinlik yerinde genişletir.|  
+|CTRL+E, F|Bir akış grafiğindeki seçili etkinlikler bağlanır.|  
+|CTRL+E, I|İçe Aktarılanlar tasarımcısını gizler veya gösterir.|  
+|CTRL+E, M|Klavye odağını sekme sırasında bir sonraki öğeye taşır.|  
 |CTRL+E, N|Seçili etkinlik (veya en yakın) kapsamında yeni bir değişken oluşturur.|  
-|CTRL + E, O|Genel Bakış haritasını gizler veya gösterir.|  
-|CTRL + E, P|Seçilen etkinliğin üst gider. Bu içerik haritası gezintisini bir düzey yukarı gider ve tasarımcı yüzeyinde Kök etkinlik değiştirir.|  
-|CTRL + E, S|Klavye odağı sahip öğe geçerli seçime ekler.|  
+|CTRL+E, O|Genel Bakış haritasını gizler veya gösterir.|  
+|CTRL+E, P|Seçilen etkinliğin üst gider. Bu içerik haritası gezintisini bir düzey yukarı gider ve tasarımcı yüzeyinde Kök etkinlik değiştirir.|  
+|CTRL+E, S|Klavye odağı sahip öğe geçerli seçime ekler.|  
 |CTRL+E, V|Değişken tasarımcısını gizler veya gösterir.|  
 |CTRL+E, X|İş akışındaki tüm etkinlikler genişletir.|  
 |CTRL+ALT+F6|Klavye odağı geçerli kullanıcı Arabirimi alanından dizideki sonraki alanına taşır. Sırayla aşağıdaki gibidir:<br /><br /> 1.  İçerik haritası gezinme çubuğu.<br />2.  Tasarımcı yüzeyi<br />3.  Bağımsız değişkenler/değişkenler/içe Aktarılanlar tasarımcısını açıksa<br />4.  Kabuk|  

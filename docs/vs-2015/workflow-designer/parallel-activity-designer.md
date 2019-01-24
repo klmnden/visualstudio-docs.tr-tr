@@ -1,11 +1,8 @@
 ---
 title: Paralel etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
@@ -13,13 +10,13 @@ ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f557eb013cb313321b336fb22fd1299e51faaa82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 627a99fec632871b815904abd798c0e4bbfd6505
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791851"
 ---
 # <a name="parallel-activity-designer"></a>Parallel Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Parallel> Etkinliği çocuk etkinliklerinin bir koleksiyonu aynı anda yürütür.  
@@ -39,7 +36,7 @@ ms.locfileid: "49221597"
 ### <a name="parallel-activity-properties-in-the-workflow-designer"></a>İş akışı tasarımcısında paralel etkinlik özellikleri  
  Aşağıdaki tabloda, paralel etkinlik özelliklerini gösterir ve Tasarımcısı'nda nasıl kullanıldığını açıklar.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Üst bilgide etkinlik Tasarımcısı kolay görünen adını belirtir. Varsayılan değer **paralel**. Değer, isteğe bağlı olarak düzenlenebilir **özellikleri** kılavuz veya doğrudan etkinlik Tasarımcısı başlığı.|  
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Doğru|Yürütülecek çocuk etkinliklerinin koleksiyonunu içerir.|  

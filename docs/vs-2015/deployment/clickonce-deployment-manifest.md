@@ -1,14 +1,9 @@
 ---
 title: ClickOnce dağıtım bildirimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 96ce7d873c20b8c29e5586a54c577a5d744b0caa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790875"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce Dağıtım Bildirimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Bir dağıtım bildirimi açıklayan bir XML dosyasıdır bir [!INCLUDE[ndpteccl
 |[\<compatibleFrameworks > öğesi](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Gerekli. Burada bu uygulamayı yükleyip çalıştırabileceği bir .NET Framework sürümlerini tanımlar.|`SupportUrl`|  
 |[\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-deployment.md)|Gerekli. Dağıtım için yüklemek için uygulama sürümü ve uygulama bildiriminin konumunu tanımlar.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[\<publisherIdentity > öğesi](../deployment/publisheridentity-element-clickonce-deployment.md)|İmzalı bildirimler için gereklidir. Bu dağıtım bildirimi imzalayan yayımcı hakkında bilgi içerir.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<İmza > öğesi](../deployment/signature-element-clickonce-deployment.md)|İsteğe bağlı. Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir.|Yok.|  
+|[\<İmza > öğesi](../deployment/signature-element-clickonce-deployment.md)|İsteğe bağlı. Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir.|Hiçbiri|  
 |[\<customErrorReporting > öğesi](../deployment/customerrorreporting-element-clickonce-deployment.md)|İsteğe bağlı. Bir hata oluştuğunda göstermek için bir URI belirtir.|URI|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -52,7 +47,7 @@ Bir dağıtım bildirimi açıklayan bir XML dosyasıdır bir [!INCLUDE[ndpteccl
   
  Daha fazla bilgi için [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
   
-## <a name="file-location"></a>Dosya konumu  
+## <a name="file-location"></a>Dosya Konumu  
  Dağıtım bildirimi dosyasının doğru uygulama bildirimi geçerli uygulama sürümü için başvuruda bulunuyor. Bir uygulama dağıtımının yeni bir sürüm kullanılabilir duruma getirdiğinizde, yeni bir uygulama bildirimi başvurmak için dağıtım bildirimi güncelleştirmeniz gerekir.  
   
  Dağıtım dosyası bildiriminin kesin adlandırılmış olmalıdır ve sertifikalar için yayımcı doğrulama de içerebilir.  
@@ -127,6 +122,3 @@ Bir dağıtım bildirimi açıklayan bir XML dosyasıdır bir [!INCLUDE[ndpteccl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulamalarını Yayımlama](../deployment/publishing-clickonce-applications.md)
-
-
-

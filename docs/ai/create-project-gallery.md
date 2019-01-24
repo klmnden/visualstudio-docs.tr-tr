@@ -1,5 +1,5 @@
 ---
-title: Yapay ZEKA araçları için Visual studio projesi oluşturma
+title: Proje oluşturma
 description: örneğini kullanarak azure machine learning Galeriden proje oluşturma
 keywords: yapay zeka, visual studio, azure machine learning
 author: lisawong19
@@ -11,14 +11,14 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797469"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Yapay ZEKA proje Visual Studio'da Azure Machine Learning Galerisi oluşturma
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Yapay ZEKA proje Visual Studio'da Azure Machine Learning Galerisi oluşturma
 
 Azure Machine Learning, yapay ZEKA için Visual Studio Araçları ile tümleşiktir. Machine learning gibi Azure sanal makineleri, Spark kümelerine ve daha fazla uzak bilgisayar hedefine göndermek için kullanabilirsiniz. Daha fazla bilgi edinin [Azure Machine Learning denemesi](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 

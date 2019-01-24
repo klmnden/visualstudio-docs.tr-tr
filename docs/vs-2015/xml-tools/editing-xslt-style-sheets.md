@@ -1,25 +1,20 @@
 ---
 title: XSLT stil sayfalarını düzenleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7dd25a531682c74284a74f065dc729f37ac7fb1a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a442612d3eb4845def1a82712ac01c6b90d4047c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805342"
 ---
 # <a name="editing-xslt-style-sheets"></a>XSLT Stil Sayfalarını Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ XML Düzenleyicisi XSLT stil sayfalarını düzenlemek için de kullanılabilir.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)
-
-
-

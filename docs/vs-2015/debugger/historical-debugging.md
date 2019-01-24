@@ -1,25 +1,20 @@
 ---
 title: Geçmiş hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51794601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801286"
 ---
 # <a name="historical-debugging"></a>Geçmiş Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,8 +87,3 @@ private static int AddInt(int add)
 7. Artık adımla `AddInt()` yöntemi. Bu kodda hata hemen görmeniz gerekir.  
   
    Bu yordam, yalnızca geçmiş hata ayıklama ile yapabilecekleriniz yüzey çizik. Farklı ayarlar ve gezinti cilt payını farklı düğmeler etkileri hakkında daha fazla bilgi için bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
-
-
-
-
-

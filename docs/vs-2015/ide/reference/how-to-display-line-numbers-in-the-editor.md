@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: düzenleyicide satır numaralarını görüntüleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - line numbers, displaying
 - Code Editor, line numbers
@@ -18,22 +13,22 @@ ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 175abe3eb597289c3e546aaec17aad9379981260
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f4b38f39fbb7b1f72622be58ee049554cb04f02f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800749"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide Satır Numaralarını Görüntüleme
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 Görüntülemek veya satır kodunuzu numaralarını gösterip gizleyebilirsiniz.  
   
 > [!NOTE]
->  Etkin ayarlarınıza bağlı olarak, iletişim kutuları ve görüntülenen menü komutları burada anlatılanlardan farklı olabilir. Ayarlarınızı değiştirmek için **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Etkin ayarlarınıza bağlı olarak, iletişim kutuları ve görüntülenen menü komutları burada anlatılanlardan farklı olabilir. Ayarlarınızı değiştirmek için **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Kod içinde satır numaralarını görüntüleyin  
  Satır numaraları kodunuza eklenmez; Bunlar yalnızca başvuru için hedeflenmiştir. Buna yazdırılacak satır numaraları istiyorsanız **yazdırma** iletişim kutusunda **satır numaralarını dahil etme** onay kutusu.  
@@ -51,6 +46,3 @@ Görüntülemek veya satır kodunuzu numaralarını gösterip gizleyebilirsiniz.
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   
  [Metin Düzenleyici Seçenekleri iletişim kutusu](../../ide/reference/text-editor-options-dialog-box.md)   
  [Kod Yazma](../../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-

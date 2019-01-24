@@ -1,14 +1,9 @@
 ---
 title: Belgeler, ortam, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,13 +32,13 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778584"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Belgeler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49246213"
 Bu sayfanın kullanın **seçenekleri** tümleşik geliştirme ortamında (IDE) belgeler görüntülenmesini denetlemek ve dış değişiklikler belgelerinizi ve dosyalarınızı yönetmek için iletişim kutusu. Bu iletişim kutusuna tıklayarak erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **belgeleri** içinde **ortam** düğümü. Varsa **belgeleri** listesinde seçin görünmüyor **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
->  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Kaydedilmiş ise mevcut belge penceresini yeniden kullanma**  
  Kaydedilmiş olan ve yeni bir belge aynı pencerede açılır seçildiğinde, geçerli belge kapatır. Geçerli belgeyi kaydedilmemiş açık kalır ve yeni belge ayrı bir pencerede açılır. Bu seçenek işaretli değilse, yeni belgeler, her zaman ayrı bir pencerede açabilirsiniz.  
@@ -95,6 +90,3 @@ Bu sayfanın kullanın **seçenekleri** tümleşik geliştirme ortamında (IDE) 
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   
  [Çeşitli dosyalar](../../ide/reference/miscellaneous-files.md)   
  [Metin Bulma ve Değiştirme](../../ide/finding-and-replacing-text.md)
-
-
-

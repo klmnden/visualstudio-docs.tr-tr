@@ -1,14 +1,9 @@
 ---
 title: Grafik günlük belgesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
 - vs.graphics.experiment
@@ -17,13 +12,13 @@ ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 097f431446ed2148e2a61c6f85266843fe7ada44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797793"
 ---
 # <a name="graphics-log-document"></a>Grafik Günlük Belgesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
 ## <a name="playback-machine"></a>Kayıttan yürütme makinesi  
  Ayrıca sağ üst köşesinde görüntülenen **çerçeve listesi** olduğu **kayıttan yürütme makinesi**. Kayıttan yürütme makinesi, bir makine ya da grafik olaylarını bir grafik günlüğü dosyasından daha yeni bir grafik Tanılama oturumu sırasında kayıttan yürütmek için kullanılan cihaz ' dir. Yakalanan olaylar kayıttan yürütmek için geliştirme makinenizi yerine farklı bir cihaz kullanarak tarafından sorun oluştuğu yürütme ortamı daha doğru bir şekilde üretebileceği — Örneğin, farklı grafik donanımının veya sürücüleri olan bir makine kullanabilirsiniz. Geliştirme makinenizde kullanan olanları veya diğer tür cihazlar, bir tablet ARM tabanlı Windows RT veya Windows Phone cihazı gibi.  
   
- Kayıttan yürütme makinesi belirtme hakkında daha fazla bilgi için bkz: [nasıl yapılır: grafik tanılama kayıttan yürütme makinesini değiştirme](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Kayıttan yürütme makinesi belirtme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="graphics-log-summary-information"></a>Grafik günlük özet bilgileri  
  Grafik günlük dosyası etkin belgede olduğunda **özellikleri** penceresi, grafik tanılama yakalama oturumu barındırılan ortamıyla ilgili bilgileri görüntüler. Bilgi çeşitli kategorilerde görüntülenir.  
@@ -84,7 +79,7 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|**Yolu**|.Vsglog dosyasının yolu. **Not:** eski yakalama altında bu özellik kullanılmıyor.|  
+|**Yolu**|.Vsglog dosyasının yolu. **Not:**  Eski yakalama altında bu özellik kullanılmıyor.|  
   
  **Modül bilgilerini**  
  Yakalama oturumu sırasında uygulama tarafından yüklenmiş dinamik bağlantı kitaplıklarını (DLL'ler) sürümünü ve adını listeler.  
@@ -121,7 +116,4 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
- [İzlenecek Yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
-
-
-
+ [İzlenecek yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

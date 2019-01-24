@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: Hesaplayıcı Gölgelendiricisinde hata ayıklamak için grafik tanılamayı kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 55f0b9de879011110d8df46c0e4d738265b0fa34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 001827c1b37596228221d6b4285abb2915ec5b8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788716"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>İzlenecek Yol: Hesaplayıcı Gölgelendiricisinde Hata Ayıklamak İçin Grafik Tanılamayı Kullanma
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>İzlenecek yol: Hesaplayıcı Gölgelendiricisinde hata ayıklamak için grafik tanılamayı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol, Visual Studio grafik tanılama araçları hatalı sonuçlar üreten bir compute gölgelendiriciyi incelemek için nasıl kullanılacağını gösterir.  
@@ -115,6 +110,3 @@ Bu izlenecek yol, Visual Studio grafik tanılama araçları hatalı sonuçlar ü
    Hesaplayıcı gölgelendiricileri çalışma zamanında derlendiğinden nasıl bunların benzetim üzerindeki etkisini gözlemlemek için değişiklikler yaptıktan sonra bu senaryoda, yalnızca uygulamayı yeniden başlatabilirsiniz. Uygulamayı yeniden oluşturmanız gerekmez. Uygulamayı çalıştırdığınızda, şimdi Benzetimin doğru olduğunu keşfedin.  
   
    ![Benzetimli sıvı doğru şekilde davranır. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
-
-
-

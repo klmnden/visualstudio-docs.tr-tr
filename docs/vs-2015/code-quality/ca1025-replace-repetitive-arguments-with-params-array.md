@@ -1,13 +1,9 @@
 ---
 title: 'CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1025
 - ReplaceRepetitiveArgumentsWithParamsArray
@@ -19,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 22e0597d84e6261de95210a8234c2f90d6b83036
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83d36f1f5cd31b1ad1833dd805f4386ac71a3ed1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804943"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin.
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Yinelenen bağımsız değişkenleri params dizisiyle değiştirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

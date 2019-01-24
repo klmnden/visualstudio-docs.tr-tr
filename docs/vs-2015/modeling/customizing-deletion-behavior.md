@@ -1,12 +1,9 @@
 ---
 title: Silme davranışını özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768001"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +143,7 @@ partial class MusicLibDeleteClosure
   
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> öğe silindiğinde çağırılır. Böylece gerekirse geri alma gerçekleştirilebilir, ancak diğer öğelerden bağlantısı kesilmişse ve kaldırılmasını CLR yığınında kalır `store.ElementDirectory`. İlişki için roller hala eski rol oyuncuları başvuru.`IsDeleted` geçerlidir.  
   
-3. Kullanıcının bir öğenin oluşturduktan sonra geri çağırır ve önceki bir silme işlemi Yinele için tekrarlandığında OnDeleting ve OnDeleted adı verilir. Kullanım `this.Store.InUndoRedoOrRollback` bu gibi durumlarda mağazası öğeleri güncelleştirme önlemek için. Daha fazla bilgi için [nasıl yapılır: modeli güncelleştirmek için kullanım işlemleri](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. Kullanıcının bir öğenin oluşturduktan sonra geri çağırır ve önceki bir silme işlemi Yinele için tekrarlandığında OnDeleting ve OnDeleted adı verilir. Kullanım `this.Store.InUndoRedoOrRollback` bu gibi durumlarda mağazası öğeleri güncelleştirme önlemek için. Daha fazla bilgi için [nasıl yapılır: Modeli güncelleştirmek için işlemleri kullanma](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
    Örneğin, son alt şarkı silindiğinde aşağıdaki kod, albüm siler:  
   
@@ -303,6 +300,3 @@ partial class NestedShapesSampleDocData
  [Kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md)   
  [Öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md)   
  [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

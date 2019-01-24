@@ -1,12 +1,9 @@
 ---
 title: Verilere erişme
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 dev_langs:
@@ -23,14 +20,14 @@ ms.assetid: 9812a6d5-23d2-4427-8b98-70a2abfec3bc
 caps.latest.revision: 103
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 20efcabb39049f1cfced3b6f941bc7e5bbd984d5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8647817df0a63d42a126123e8654b9a277ae8e05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757557"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da verilere erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 
  JavaScript, Python, PHP, Ruby ve C++ için uygulamalar, başka herhangi bir şey kitaplıkları alma ve kod yazmaya yaptığı gibi verilere bağlanın. .NET uygulamaları için Visual Studio veri kaynakları keşfedin, depolamak ve bellekte verileri işlemek ve veri kullanıcı arabirimine bağlamak için nesne modelleri oluşturmak için kullanabileceğiniz araçlar sağlar.     Microsoft Azure Azure depolamaya bağlanmak için .NET, Java, Node.js, PHP, Python, Ruby ve mobil uygulamalar ve Visual Studio Araçları için SDK'lar sağlar.
 
- Aşağıdaki listelerde, Visual Studio'dan kullanılabilecek çok sayıda veritabanı ve depolama sistemlerini birkaçı gösterilir. [Microsoft Azure](https://azure.microsoft.com/en-us/) tüm sağlama ve yönetim temel alınan veri deposu içeren veri hizmetleri tekliflerdir.  [Visual Studio için Azure Araçları](https://www.visualstudio.com/en-us/features/azure-tools-vs.aspx) doğrudan Visual Studio'dan Azure veri depoları ile çalışmanıza olanak sağlayan isteğe bağlı bir bileşendir. Burada listelenen SQL ve NoSQL veritabanı ürünlerin çoğunu, yerel bir makinede, Microsoft azure'da veya yerel ağdaki bir sanal makine üzerinde barındırılabilir. Bu senaryoda, veritabanı yönetmekten sorumlu olursunuz.
+ Aşağıdaki listelerde, Visual Studio'dan kullanılabilecek çok sayıda veritabanı ve depolama sistemlerini birkaçı gösterilir. [Microsoft Azure](https://azure.microsoft.com/) tüm sağlama ve yönetim temel alınan veri deposu içeren veri hizmetleri tekliflerdir.  [Visual Studio için Azure Araçları](https://www.visualstudio.com/features/azure-tools-vs.aspx) doğrudan Visual Studio'dan Azure veri depoları ile çalışmanıza olanak sağlayan isteğe bağlı bir bileşendir. Burada listelenen SQL ve NoSQL veritabanı ürünlerin çoğunu, yerel bir makinede, Microsoft azure'da veya yerel ağdaki bir sanal makine üzerinde barındırılabilir. Bu senaryoda, veritabanı yönetmekten sorumlu olursunuz.
 
  **Microsoft Azure**
 
@@ -74,7 +71,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
  Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketlerini Visual Studio tümleştirmesini desteklemiyor. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla tekliflerini keşfedin (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketler**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin.   Bu teklifler Visual Studio Galerisi'nde giderek göz atabilirsiniz **Araçları** > **Uzantılar ve güncelleştirmeler** seçip **çevrimiçi** sol iletişim kutusunun bölmesi.  Daha fazla bilgi için [veritabanı sistemleri, araçları ve örnek yükleme](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
->  SQL Server 2005'e yönelik genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi.   Veri araçları Visual Studio 2015 ve sonraki sürümlerinde bu tarihten sonra SQL Server 2005 ile çalışmaya devam edeceği kesin değildir. Daha fazla bilgi için [SQL Server 2005'e yönelik uç destek Duyurusu](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2005/).
+>  SQL Server 2005'e yönelik genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi.   Veri araçları Visual Studio 2015 ve sonraki sürümlerinde bu tarihten sonra SQL Server 2005 ile çalışmaya devam edeceği kesin değildir. Daha fazla bilgi için [SQL Server 2005'e yönelik uç destek Duyurusu](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
 
 ### <a name="net-languages"></a>.NET dilleri
  .NET Core dahil olmak üzere tüm .NET veri erişimi, ADO.NET, veri kaynağı, ilişkisel ve ilişkisel olmayan herhangi bir türden erişmek için bir arabirim tanımlayan bir sınıf kümesi dayanır. Visual Studio çeşitli araçları vardır ve veritabanlarına bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri sunar. Bu bölümdeki belgeler bu araçlarının nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'lerini doğrudan çağırma hakkında daha fazla bilgi için bkz. [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN Kitaplığı'nda.
@@ -85,7 +82,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 
  Yerel makinede veri depolama için önerilen yaklaşım uygulama ile aynı işlemde çalışan SQLite kullanmaktır. Bir nesne ilişkisel eşleme (ORM) katman gerekiyorsa, Entity Framework kullanabilirsiniz. Daha fazla bilgi için [veri erişimi](https://msdn.microsoft.com/windows/uwp/data-access/index) Windows Geliştirici Merkezi'nde.
 
- En son sürümünü indirin emin olun, Azure hizmetlerine bağlanıyorsanız [Azure SDK Araçları](https://azure.microsoft.com/en-us/downloads/).
+ En son sürümünü indirin emin olun, Azure hizmetlerine bağlanıyorsanız [Azure SDK Araçları](https://azure.microsoft.com/downloads/).
 
 #### <a name="data-providers"></a>Veri sağlayıcıları
  ADO.NET kullanılabilir olması için bir veritabanı için özel bir olmalıdır *ADO.NET veri sağlayıcısının* veya başka bir ODBC ve OLE DB arabirimi kullanıma sunması gerekir. Microsoft'un sağladığı bir [ADO.NET veri sağlayıcıları listesini](https://msdn.microsoft.com/data/dd363565) SQL Server ürünlerinin yanı sıra, ODBC ve OLE DB sağlayıcıları.
@@ -122,14 +119,14 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 ## <a name="in-this-section"></a>Bu bölümde
  [Veritabanı sistemleri, araçları ve örnek yükleme](../data-tools/installing-database-systems-tools-and-samples.md) veritabanı ürünleri ve Visual Studio uzantıları veya bunları destekleyen sürücüleri edinme ve örnek veritabanları için deneme ve öğrenme amacıyla nerede bulunacağı açıklanır.
 
- [.NET için Visual Studio veri Araçları](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) veri kaynaklarına bağlanmak, veri kümeleri veya Entity Framework modelleri oluşturma ve kullanıcı arabirimi denetimlerine veri bağlama için Visual Studio araç pencereleri kullanmayı açıklar.
+ [.NET için Visual Studio veri Araçları](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) veri kaynaklarına bağlanmak, veri kümeleri veya Entity Framework modelleri oluşturma ve kullanıcı arabirimi denetimlerine veri bağlama için Visual Studio araç pencereleri kullanmayı açıklar.
 
 ## <a name="related-topics"></a>İlgili konular
  [Veriler, cihazlar ve analiz](https://msdn.microsoft.com/data-and-devices) Cortana Analytics Suite ve nesnelerin interneti için destek dahil olmak üzere Microsoft Akıllı bulut tanıtır.
 
- [Microsoft Azure depolama](https://azure.microCsoft.com/en-us/documentation/services/storage/) açıklar Azure depolama ve Azure BLOB'ları, tabloları, kuyrukları ve dosyalarını kullanarak uygulama oluşturma.
+ [Microsoft Azure depolama](https://azure.microCsoft.com/documentation/services/storage/) açıklar Azure depolama ve Azure BLOB'ları, tabloları, kuyrukları ve dosyalarını kullanarak uygulama oluşturma.
 
- [Azure SQL veritabanı](https://azure.microsoft.com/en-us/documentation/services/sql-database/) hizmet olarak ilişkisel bir veritabanı olan Azure SQL Database'e bağlanma işlemini açıklamaktadır.
+ [Azure SQL veritabanı](https://azure.microsoft.com/documentation/services/sql-database/) hizmet olarak ilişkisel bir veritabanı olan Azure SQL Database'e bağlanma işlemini açıklamaktadır.
 
  [SQL Server veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) tasarımı, test ve veri bağlı uygulamalar ve veritabanları dağıtma araştırma basitleştiren araçlar açıklanmaktadır.
 

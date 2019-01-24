@@ -1,28 +1,23 @@
 ---
 title: 'İzlenecek yol: Bir özel düzenleyiciye özellik ekleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805336"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>İzlenecek Yol: Bir Özel Düzenleyiciye Özellik Ekleme
+# <a name="walkthrough-adding-features-to-a-custom-editor"></a>İzlenecek yol: Özel Düzenleyiciye Özellik Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Özel bir düzenleyici oluşturduktan sonra daha fazla özellik ekleyebilirsiniz.  
@@ -31,7 +26,7 @@ ms.locfileid: "51737047"
   
 1.  Visual Studio Paketi proje şablonunu kullanarak bir özel düzenleyici oluşturma.  
   
-     Daha fazla bilgi için [izlenecek yol: özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Daha fazla bilgi için [izlenecek yol: Bir özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Düzenleyici tek bir görünüm veya birden çok görünüm desteklemek için istediğinize karar verin.  
   
@@ -122,7 +117,7 @@ ms.locfileid: "51737047"
   
 12. Bağlama duyarlı Yardım desteği uygulayın.  
   
-     Bu, öğeleri düzenleyicinizde dinamik Yardım penceresi F1 Yardımı ve desteği sağlamak sağlar. Bunun hakkında daha fazla bilgi için bkz. [nasıl yapılır: düzenleyiciler için bağlam sağlayın](../extensibility/how-to-provide-context-for-editors.md).  
+     Bu, öğeleri düzenleyicinizde dinamik Yardım penceresi F1 Yardımı ve desteği sağlamak sağlar. Bunun hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bağlam sağlamak için düzenleyicileri](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Otomasyon nesne modeli, düzenleyicisinden uygulayarak kullanıma `IDispatch` arabirimi.  
   
@@ -161,5 +156,4 @@ ms.locfileid: "51737047"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon modeline katkıda bulunma](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Nasıl Yapılır: Düzenleyiciler İçin Bağlam Sağlama](../extensibility/how-to-provide-context-for-editors.md)
-
+ [Nasıl yapılır: Düzenleyiciler için bağlam sağlayın](../extensibility/how-to-provide-context-for-editors.md)

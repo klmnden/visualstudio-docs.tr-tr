@@ -1,27 +1,22 @@
 ---
-title: '2. adım: rasgele nesne ve simge listesi ekleme | Microsoft Docs'
-ms.custom: ''
+title: '2. Adım: Rasgele nesne ve simge listesi ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bfdedd3c6666ca6535237de11eb08a9b013fe8c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226661"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766347"
 ---
-# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. Adım: Rasgele Nesne ve Simge Listesi Ekleme
+# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. Adım: Rastgele Nesne ve Simge Listesi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, form üzerindeki TableLayoutPanel denetiminde rasgele iki hücreye eklenir. Bunu yapmak için iki kullandığınız `new` deyimleri iki nesne oluşturmak için. İlki bir `Random` matematik sınavı oyununda kullanılan gibi bir nesne. Bu koddaki kullanım amacıysa, TableLayoutPanel denetiminde rasgele hücre seçmektir. İçin yeni olabilecek ikinci nesne bir `List` rasgele seçilen simgeleri depolamak için kullanılan nesne.  
@@ -49,7 +44,7 @@ IntelliSense penceresi
   
      Kodu (ve açıklamaları) küçük bölümler halinde incelerseniz anlaması daha kolay olur. Programlarınız `List` farklı türlerde öğeler izlemek için nesneleri. Bir liste; sayıları, doğru/yanlış değerlerini, metinleri veya diğer nesneleri barındırabilir. Bile olabilir bir `List` diğer tutan nesne `List` nesneleri. Bir listedeki öğeler adlı *öğeleri*, ve her liste yalnızca öğesi bir tür tutar. Öyleyse, bir sayı listesi yalnızca sayıları tutabilir; bu listeye metin ekleyemezsiniz. Benzer şekilde, doğru/yanlış değerlerini içeren bir listeye sayı ekleyemezsiniz.  
   
-     Oluştururken bir `List` kullanarak nesne bir `new` deyimi içinde depolamak istediğiniz veri türünü belirtmeniz gerekir. İşte bu nedenle en üstündeki araç ipucu **IntelliSense** penceresi listesinde öğelerin türlerini gösterir. Ayrıca, budur `List<string>` (Visual C#) ve `List(Of String)` (Visual Basic'te) anlamına gelir: Bu bir `List` öğelerini tutan nesne `string` veri türü. Programınızın metin depolamak için kullandığı bir dizedir hangi sağındaki araç ipucu olduğu **IntelliSense** penceresi, unsurdur.  
+     Oluştururken bir `List` kullanarak nesne bir `new` deyimi içinde depolamak istediğiniz veri türünü belirtmeniz gerekir. İşte bu nedenle en üstündeki araç ipucu **IntelliSense** penceresi listesinde öğelerin türlerini gösterir. Ayrıca, budur `List<string>` (görselde C#) ve `List(Of String)` (Visual Basic'te) anlamına gelir: Bu bir `List` öğelerini tutan nesne `string` veri türü. Programınızın metin depolamak için kullandığı bir dizedir hangi sağındaki araç ipucu olduğu **IntelliSense** penceresi, unsurdur.  
   
 4.  Visual Basic'te önce geçici bir dizin oluşturulması gerekmesine karşın, Visual C# ortamında listenin tek bir deyimle oluşturulabilmesinin nedenini bir düşünün. Visual C# diline sahip olmasıdır *koleksiyon başlatıcıları*, liste değerleri kabul etmek için hazırlayın. Visual Basic'te bir koleksiyon başlatıcısı kullanabilirsiniz. Ancak, önceki Visual Basic sürümü ile uyumluluk açısından önceki kodu kullanmanızı öneririz.  
   
@@ -60,9 +55,6 @@ IntelliSense penceresi
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [3. adım: Her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve tablo bilgisayarınızı formuna ekleme](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza tablo ekleme](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

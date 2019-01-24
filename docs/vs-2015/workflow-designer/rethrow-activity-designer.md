@@ -1,11 +1,8 @@
 ---
 title: Rethrow etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
@@ -13,13 +10,13 @@ ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 724e0b69fb14735682d437c9f21906560b15a590
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8b023a42da1c862927606c4bec0215120a5e5a11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767745"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow Etkinlik Tasarımcısı
 **Rethrow** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Rethrow> etkinlik.  
@@ -35,7 +32,7 @@ ms.locfileid: "49280689"
 ### <a name="the-rethrow-properties"></a>Rethrow özellikleri  
  Aşağıdaki tabloda <xref:System.Activities.Statements.Rethrow> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı belirtir <xref:System.Activities.Statements.Rethrow> etkinlik. Rethrow varsayılandır.|  
   

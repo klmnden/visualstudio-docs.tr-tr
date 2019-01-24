@@ -1,30 +1,25 @@
 ---
 title: Hizmetleri kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775524"
 ---
 # <a name="registering-services"></a>Hizmetleri kaydediliyor
 İsteğe bağlı yükleme desteklemek için bir hizmet sağlayıcısı, küresel hizmetler ile kaydetmelisiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Geliştirme sırasında paketler için kaynak koduna öznitelikleri ekleyerek ve ardından paketlerini derlemek Hizmetleri ve hizmeti geçersiz kılmaları yönetilen hizmet sağlayıcıları kaydetme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Bu paket kaydetme ve dağıtımı için hazırlanma elde edilen derleme üzerinde RegPkg.exe yardımcı programı çalıştırır. Daha fazla bilgi için [nasıl yapılır: Hizmet kayıt](../misc/how-to-register-a-service.md).  
+ Geliştirme sırasında paketler için kaynak koduna öznitelikleri ekleyerek ve ardından paketlerini derlemek Hizmetleri ve hizmeti geçersiz kılmaları yönetilen hizmet sağlayıcıları kaydetme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Bu paket kaydetme ve dağıtımı için hazırlanma elde edilen derleme üzerinde RegPkg.exe yardımcı programı çalıştırır. Daha fazla bilgi için [nasıl yapılır: Bir hizmet kaydı](../misc/how-to-register-a-service.md).  
   
  Yönetilmeyen hizmet sağlayıcıları ile sağladıkları hizmetler kaydetmeniz gerekir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hizmetleri'nde sistem kayıt defterine bölümünü geçersiz kılar, bölüm veya hizmet. Aşağıdaki .reg dosyasını parçası nasıl SVsTextManager, hizmete kayıtlı gösterir:  
   

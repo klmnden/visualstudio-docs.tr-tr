@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: öğe şablonları oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Öğe şablonları oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,18 +13,18 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788255"
 ---
-# <a name="how-to-create-item-templates"></a>Nasıl Yapılır: Öğe Şablonları Oluşturma
+# <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Adımları [ilk yordam](../ide/how-to-create-item-templates.md#export_template) Bu konuyu kullanarak bir öğe şablonu oluşturma işlemi gösterilmektedir **şablonu dışarı aktar** Sihirbazı. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md).  
+Adımları [ilk yordam](../ide/how-to-create-item-templates.md#export_template) Bu konuyu kullanarak bir öğe şablonu oluşturma işlemi gösterilmektedir **şablonu dışarı aktar** Sihirbazı. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: Çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).  
   
  Birçok iş temel şablon oluşturmak için sihirbaz yapar, ancak çoğu durumda şablon verdikten sonra .vstemplate dosyasını el ile değiştirmeniz gerekir. Örneğin, öğe görünmesini istiyorsanız **Yeni Öğe Ekle** iletişim kutusu için bir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulaması projesinde sahip olacaksınız birkaç fazladan adım gerçekleştirmeniz. [İkinci yordam](../ide/how-to-create-item-templates.md#modify_template) bu konuda, o görevi gerçekleştirmenize yardımcı olur.  
  
@@ -43,7 +38,7 @@ Adımları [ilk yordam](../ide/how-to-create-item-templates.md#export_template) 
   
 2.  Projeye bir öğe ekleyin ve isterseniz bunu değiştirebilirsiniz.  
   
-3.  Burada parametre değişikliğini gerçekleşmesi belirtmek için kod dosyasını değiştirin. Daha fazla bilgi için [nasıl yapılır: şablonda parametreleri ikame](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Burada parametre değişikliğini gerçekleşmesi belirtmek için kod dosyasını değiştirin. Daha fazla bilgi için [nasıl yapılır: Bir şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md).  
   
 4.  Üzerinde **dosya** menüsünü tıklatın **şablonu dışarı aktar**.  
   
@@ -150,7 +145,7 @@ Adımları [ilk yordam](../ide/how-to-create-item-templates.md#export_template) 
   
 2.  Proje öğesi şablon olarak kaydedilecek hazır olana kadar değiştirin.  
   
-3.  Burada parametre değişikliği gerçekleşmesi gerektiğini belirtmek için kod dosyasını uygun bir şekilde değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: nasıl yapılır: şablonda parametreleri ikame.  
+3.  Burada parametre değişikliği gerçekleşmesi gerektiğini belirtmek için kod dosyasını uygun bir şekilde değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: nasıl yapılır: Bir şablonda parametreleri değiştirin.  
   
 4.  Bir XML dosyası oluşturun ve bir .vstemplate dosya adı uzantısı, yeni bir öğe şablonu ile aynı dizinde kullanarak kaydedin.  
   
@@ -160,9 +155,9 @@ Adımları [ilk yordam](../ide/how-to-create-item-templates.md#export_template) 
   
 7.  Windows Gezgini'nde, şablona dahil, seçime sağ tıklayın, göndermek için tıklayın ve ardından sıkıştırılmış klasöre tıklayın istediğiniz dosyaları seçin. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
   
-8.  .Zip dosyasını kopyalayın ve kullanıcı öğe şablonu konuma yapıştırın. Visual Studio 2015'te varsayılan dizin... \Users\\< kullanıcı adı\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Daha fazla bilgi için bkz: nasıl yapılır: bulun ve düzenleme proje ve öğe şablonları.  
+8.  .Zip dosyasını kopyalayın ve kullanıcı öğe şablonu konuma yapıştırın. Visual Studio 2015'te varsayılan dizin... \Users\\< kullanıcı adı\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Daha fazla bilgi için bkz: nasıl yapılır: Bulma ve düzenleme proje ve öğe şablonları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md)   
+ [Nasıl yapılır: Çok dosyalı öğe şablonları oluşturma](../ide/how-to-create-multi-file-item-templates.md)   
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)

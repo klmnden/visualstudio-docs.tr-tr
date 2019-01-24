@@ -1,14 +1,9 @@
 ---
 title: Sabitler (arabirim erişimi SDK'SINDA hata ayıklama) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dab1689d06332bd1c3ac93279289cfc002af0abc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 931e1ab46793a5ff7e0434949330eaf4dbc820e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791059"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Sabitler (Arabirim Erişimi SDK'sında Hata Ayıklama)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Bu dize sabitleri, program hata ayıklama veritabanı (PDB) dosyası DIA SDK'sı
 |`DiaTable_Sections`|L "Bölümler"|  
 |`DiaTable_SrcFiles`|L "Kaynakdosyalar"|  
 |`DiaTable_LineNums`|L "Lınenumbers"|  
-|`DiaTable_SegMap`|L "SegmentMap"|  
+|`DiaTable_SegMap`|L"SegmentMap"|  
 |`DiaTable_Dbg`|L "Dbg"|  
 |`DiaTable_InjSrc`|L "InjectedSource"|  
 |`DiaTable_FrameData`|L "FrameData"|  
@@ -68,6 +63,3 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
  [Sabit listeleri ve yapıları](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
-
-
-

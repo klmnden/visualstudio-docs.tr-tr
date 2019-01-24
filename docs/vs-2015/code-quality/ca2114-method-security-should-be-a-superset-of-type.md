@@ -1,13 +1,9 @@
 ---
 title: 'CA2114: Yöntem güvenliği türün bir üst kümesi olmalıdır | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MethodSecurityShouldBeASupersetOfType
 - CA2114
@@ -19,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2695cd49522524c4fcc804ac528099923362994b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788893"
 ---
-# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Yöntem güvenliği türün bir üst kümesi olmalıdır
+# <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Metot güvenliği türün bir üst kümesi olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -37,7 +33,7 @@ ms.locfileid: "53932807"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bildirim temelli güvenlik türünde yöntemlerinden birine sahip aynı güvenlik eylemi için bildirime dayalı güvenlik ve güvenlik eylem [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) veya [devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)ve izinleri işaretli tür tarafından yöntemi tarafından iade izinler kümesini değildir.
+ Bildirim temelli güvenlik türünde yöntemlerinden birine sahip aynı güvenlik eylemi için bildirime dayalı güvenlik ve güvenlik eylem [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) veya [devralma taleplerini](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)ve izinleri işaretli tür tarafından yöntemi tarafından iade izinler kümesini değildir.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Hem yöntem düzeyine hem de tür düzeyine bir bildirim temelli güvenlik aynı eylem için bir yöntem olmamalıdır. İki denetimleri birleştirilmez; yöntem düzeyi isteğe uygulanır. Örneğin, bir tür izin talep ederse `X`, ve yöntemlerinden birini talepleri izni `Y`, kod izni yok `X` metodunu yürütmek için.
@@ -66,4 +62,4 @@ ms.locfileid: "53932807"
  **[yazma izni (talep türüne göre)] kişisel bilgileri: 6/16/1964 12:00:00 AM'den**
  **[(yöntemi tarafından talep) okuma izni yok], kişisel bilgi erişilemedi: İstek başarısız oldu.**
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [devralma taleplerini](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

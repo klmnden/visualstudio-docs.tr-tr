@@ -1,25 +1,22 @@
 ---
 title: Özellikler penceresini özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782261"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49845751"
 ## <a name="names-descriptions-and-categories"></a>Adları ve açıklamaları kategorileri  
  **Adı ve görünen adı**. Bir alan özelliği tanımında, özellik görünen adı Özellikler penceresinde çalışma zamanında görüntülenen adıdır. Özellik Güncelleştirme için program kodu yazarken aksine, adı kullanılır. Adın doğru bir CLR alfasayısal adı olması gerekir, ancak görünen adı boşluk içeremez.  
   
- DSL tanımındaki bir özelliğin adını ayarladığınızda, onun görünür ismini adının bir kopyasını otomatik olarak ayarlanır. "FuelGauge" gibi bir Pascal cased adını yazarsanız, görünen adı otomatik olarak bir boşluk içeriyor: "Yakıt ölçer". Ancak, görünen ad başka bir değere açıkça ayarlayabilirsiniz.  
+ DSL tanımındaki bir özelliğin adını ayarladığınızda, onun görünür ismini adının bir kopyasını otomatik olarak ayarlanır. "FuelGauge" gibi bir Pascal cased adını yazarsanız, görünen adı otomatik olarak bir boşluk içerir: "Yakıt ölçer". Ancak, görünen ad başka bir değere açıkça ayarlayabilirsiniz.  
   
  **Açıklama**. Bir etki alanı özelliğin açıklamasını iki yerde görüntülenir:  
   
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Program Kodunda Modeli Gezinme ve Güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: VSPackage'ı temel bileşenleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, overview
 ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: cc9bc58209fb176c20d7ad2a8a6fca565de6380e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7b9f8dc80f7985e7b9b7545dd0c8e78d748cd4d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790362"
 ---
 # <a name="vspackage-essentials"></a>VSPackage'ı temel bileşenleri
 VSPackage oluşturan ve Visual Studio UI öğeleri, hizmetleri, projeler, düzenleyiciler ve tasarımcılar ile genişleten yazılım modülleri olan. VSPackage'ları Merkezi mimari birimi olan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kendisini koleksiyonu çoğunlukla VSPackages yazılır.  

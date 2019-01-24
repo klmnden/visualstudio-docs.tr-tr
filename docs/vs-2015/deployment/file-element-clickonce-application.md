@@ -1,14 +1,9 @@
 ---
 title: '&lt;Dosya&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -27,13 +22,13 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791035"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Dosya&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +163,7 @@ ms.locfileid: "49270744"
   
  Bir bildirim değil karma bir dosya içeriyorsa, bu bildirimi dijital olarak olamaz kullanıcılar bütün bir dosyanın içeriğini doğrulayamadığı için imzalanmış.  
   
-## <a name="dsigtransforms"></a>dsig:TRANSFORMS  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
@@ -208,6 +203,3 @@ ms.locfileid: "49270744"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulama Bildirimi](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -3,21 +3,18 @@ title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780685"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +111,7 @@ Visual Studio 2015'te yeni özellikler hakkında bilgi edinmek, bkz: [Visual Stu
 
  ![Kod düzenleyicisinde GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C ++ IDE_EditorLineNumbersWordWrapOn")
 
- Metin düzenleyici, yüksek oranda (olmasını istiyorsanız) ile birçok üretkenlik yardımcı daha iyi daha hızlı kod yazmanızı etkileşimlidir. Dile göre farklı özellikler ve özelliklerini aç veya kapat için bunlardan (türü "Düzenleyicisinde" Hızlı Başlat) herhangi birini kullanmak zorunda değilsiniz: ortak üretkenlik özelliklerinden bazıları şunlardır:
+ Metin düzenleyici, yüksek oranda (olmasını istiyorsanız) ile birçok üretkenlik yardımcı daha iyi daha hızlı kod yazmanızı etkileşimlidir. Dile göre farklı özellikler ve herhangi biri (türü "Düzenleyicisinde" Hızlı Başlat) özelliklerini aç veya kapat için kullanmanız gerekmez: Bazı ortak üretkenlik özellikleri şunlardır:
 
 1. [Yeniden düzenleme](../ide/refactoring-in-visual-studio.md) akıllı değişkenler taşıma, yeniden adlandırma kod satırlarını başka konumlara, redordering işlev parametrelerini ve daha fazla kod taşıma ayrı bir işleve seçildi. gibi işlemleri içerir.
 
@@ -136,7 +133,7 @@ Visual Studio 2015'te yeni özellikler hakkında bilgi edinmek, bkz: [Visual Stu
 
 8. **Tanıma** bağlam menüsü seçeneği, doğrudan bir işlevin veya nesnenin tanımlandığı yer alır. Başka gezinme komutları da Düzenleyicisi'nde sağ tıklayarak kullanılabilir.
 
-9. İlgili bir aracı [Nesne Tarayıcısı](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)içeren görmek için .NET veya Windows çalışma zamanı derlemeleri sisteminize incelemek için türleri bunlar etkinleştirir ve yöntemleri ve özellikleri bu türler bulunur.
+9. İlgili bir aracı [Nesne Tarayıcısı](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)içeren görmek için .NET veya Windows çalışma zamanı derlemeleri sisteminize incelemek için türleri bunlar etkinleştirir ve yöntemleri ve özellikleri bu türler bulunur.
 
      ![Nesneyi gösteren Nesne Tarayıcısı](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
 
  [Komut penceresi](../ide/reference/immediate-window.md) bir ifade yazın ve sonucu hemen görmenize olanak sağlar.
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) penceresi her yöntem çağrısının kaydeder ve bir çalışan .NET programı ve diğer olayları bir sorun kaynaklandığı hızla bulmanıza yardımcı olmak.
+ [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) penceresi her yöntem çağrısının kaydeder ve bir çalışan .NET programı ve diğer olayları bir sorun kaynaklandığı hızla bulmanıza yardımcı olmak.
 
  Daha fazla bilgi için [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
 
@@ -196,7 +193,7 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
 |||
 |-|-|
 |[Kullanıcı Hesapları ve Güncelleştirmeler](../ide/user-accounts-and-updates.md)|[IDE’yi Kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)|
-|[Nasıl Yapılır: IDE'de Gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)|
+|[Nasıl yapılır: IDE'de gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)|
 |[Visual Studio Uzantıları’nı bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|[Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)|
 |[Profil Araçları](../profiling/profiling-tools.md)|[Kod Kalitesini Geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

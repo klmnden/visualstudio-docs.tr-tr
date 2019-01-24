@@ -1,23 +1,19 @@
 ---
 title: Düzen
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a553119fe8cfbd9013357b63be07b300b59f9530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 27d38a1e984f5705c52d8c6b310ead7a522f4ecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753749"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio düzeni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

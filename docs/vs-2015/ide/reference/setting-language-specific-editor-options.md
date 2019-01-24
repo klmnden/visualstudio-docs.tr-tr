@@ -1,14 +1,9 @@
 ---
 title: Dile özgü Düzenleyici seçeneklerini ayarlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editor options
 - configure editor
@@ -17,13 +12,13 @@ ms.assetid: ba64d517-a60d-409b-9860-5d75065a5bb7
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f2f8b540d61191b436c5d030729777dad8f84dc1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b854ef07804af884e4486d2fbeb54b5ff9ebd455
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755259"
 ---
 # <a name="setting-language-specific-editor-options"></a>Dile Özgü Düzenleyici Seçeneklerini Ayarlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,8 +58,5 @@ ms.locfileid: "49299097"
  [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)  
  Tercihleri belirleyebileceğiniz düzenleyicinin birçok yönünü açıklayan konuların bağlantılarını verir.  
   
- [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Ayarlarınızı, anahtar bağlamaları ve tümleşik geliştirme ortamının (IDE) diğer özelliklerini nasıl ayarlayacağınızı açıklayan konuların bağlantılarını verir.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Komut penceresi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802680"
 ---
 # <a name="immediate-window"></a>Komut Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "49850431"
   
     **Hemen** penceresi çalıştırılacağı `MyFunction` ve görüntüleme `4`.  
   
-   İşlev veya alt yordam bir kesme noktası içeriyorsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).  
+   İşlev veya alt yordam bir kesme noktası içeriyorsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: Tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değerlendirmesi kullanamazsınız dahil olmak üzere [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projeleri, Web projeleri, akıllı cihaz projeleri ve SQL projeleri.  
   
@@ -136,6 +131,3 @@ ms.locfileid: "49850431"
  [İzlenecek yol: Tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio'da Normal İfadeler Kullanma](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

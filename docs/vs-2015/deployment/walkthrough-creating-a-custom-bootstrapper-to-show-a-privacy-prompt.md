@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: bir gizlilik istemi göstermek için özel bir önyükleyici oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir gizlilik istemi göstermek için özel bir önyükleyici oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781338"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir Gizlilik İstemi Göstermek için Özel Bir Önyükleyici Oluşturma
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemi göstermek için özel bir önyükleyici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda otomatik olarak güncelleştirmek için ClickOnce uygulamaları yapılandırabilirsiniz. Müşterileriniz için bu davranış kabul ettiğinden emin olmak için bunları bir gizlilik istemi görüntüleyebilirsiniz. Ardından, bunlar otomatik olarak güncelleştirmek için uygulamaya izin verilip verilmeyeceğini seçebilirsiniz. Uygulamayı otomatik olarak güncelleştirmesine izin verilmiyorsa yüklemez.  
@@ -154,7 +149,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 -   Yazılım Lisans Koşulları'nı bir belge.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>1. adım: önyükleyici dizini oluşturmak için  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>1. Adım: Önyükleyici dizini oluşturmak için  
   
 1.  Adlı bir dizin oluşturmak **UpdateConsentDialog** SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft içinde.  
   
@@ -166,7 +161,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
     > [!NOTE]
     >  Her yerel ayar için yeni bir dizin oluşturun. Örneğin, fr ve de yerel ayarlar için alt ekleyebilirsiniz. Bu dizinler, dil paketlerini ve Fransızca ve Almanca dizeleri gerekirse içerecektir.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. adım: product.xml bildirim dosyası oluşturmak için  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. Adım: Product.xml bildirim dosyası oluşturmak için  
   
 1.  Adlı bir metin dosyası oluşturma `product.xml`.  
   
@@ -198,7 +193,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 3.  Dosyayı UpdateConsentDialog önyükleyici dizine kaydedin.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3. adım: package.xml bildirimi oluşturmak için dosya ve yazılım lisans koşulları  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3. Adım: Package.xml bildirim dosyası ve Yazılım Lisans Koşulları'nı oluşturmak için  
   
 1.  Adlı bir metin dosyası oluşturma `package.xml`.  
   
@@ -272,13 +267,13 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 6.  Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
   
-     Güncelleştirme Onayı iletişim uygulaması görünür ve aşağıdaki metni gösterir: Web üzerindeki en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
+     Güncelleştirme Onayı iletişim uygulaması görüntülenir ve aşağıdaki metni gösterir: Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
   
 7.  Uygulamayı kapatın veya İptal'e tıklayın.  
   
-     Uygulama bir hatayı gösterir: için sistem bileşenleri yüklenirken bir hata oluştu *ApplicationName*. Tüm sistem bileşenleri başarıyla yükleninceye kadar kurulum devam edemiyor.  
+     Uygulama, bir hatayı gösterir: İçin sistem bileşenleri yüklenirken bir hata oluştu *ApplicationName*. Tüm sistem bileşenleri başarıyla yükleninceye kadar kurulum devam edemiyor.  
   
-8.  Aşağıdaki hata iletisini göstermek için Ayrıntılar'ı tıklatın: Bileşen Güncelleştirme Onayı iletişim kutusu aşağıdaki hata iletisiyle başarısız oldu: "otomatik güncelleştirme anlaşmayı kabul edilmez." Aşağıdaki bileşenler yüklenemedi:-Güncelleştirme Onayı iletişim  
+8.  Aşağıdaki hata iletisini göstermek için Ayrıntılar'a tıklayın: Bileşen Güncelleştirme Onayı iletişim, şu hata iletisiyle başarısız oldu: "Otomatik güncelleştirme anlaşmayı kabul edilmiyor." Aşağıdaki bileşenler yüklenemedi:-Güncelleştirme Onayı iletişim  
   
 9. **Kapat**'ı tıklatın.  
   
@@ -298,7 +293,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
 6.  Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
   
-     Güncelleştirme Onayı iletişim uygulaması görünür ve aşağıdaki metni gösterir: Web üzerindeki en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
+     Güncelleştirme Onayı iletişim uygulaması görüntülenir ve aşağıdaki metni gösterir: Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
   
 7.  Tıklayın **ediyorum**ve ardından **İlerle**.  
   
@@ -312,6 +307,3 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
  [Nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md)   
  [Nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md)   
  [Ürün ve Paket Şema Başvurusu](../deployment/product-and-package-schema-reference.md)
-
-
-

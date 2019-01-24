@@ -1,29 +1,24 @@
 ---
-title: 'Yeni proje oluşturma: altyapı öğeleri, bir bölüm | Microsoft Docs'
-ms.custom: ''
+title: 'Yeni proje oluşturma: Bir altyapı öğeleri, bölüm | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792936"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777634"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm Bir
+# <a name="new-project-generation-under-the-hood-part-one"></a>Yeni proje oluşturma: Bir altyapı öğeleri, bölüm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hiç kendi proje türünüzü oluşturmak hakkında düşündüğünüz? Yeni bir proje oluşturduğunuzda, gerçekte ne olacağını merak ediyorsunuz? Şimdi başlık altında bir göz atalım ve gerçekten neler olup bittiğini bakın.  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Bu alt anahtar yoksa kök düğümü konumunu Geliştirici Ayarları iletişim kutusu tarafından kontrol edilir. Örneğin,  
   
- VC # DeveloperActivity REG_SZ  
+ DeveloperActivity REG_SZ VC#  
   
  Visual Studio için ayarlanmışsa Visual C# bir kök düğümü olacağını belirtir [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] geliştirme. Aksi takdirde, bir alt düğüm olacak **diğer diller**.  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   Sıralama düzenini değiştirilebilir.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Bir proje türü için kök düğümü bulma  
- Visual Studio ProjectTemplates klasörleri erişir, tüm .zip dosyalarını açan ve herhangi bir .vstemplate dosyaları ayıklanır. .Vstemplate dosyası bir uygulama şablonunu açıklayan XML kullanır. Daha fazla bilgi için [yeni proje oluşturma: başlık altında ikinci Kısım](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Visual Studio ProjectTemplates klasörleri erişir, tüm .zip dosyalarını açan ve herhangi bir .vstemplate dosyaları ayıklanır. .Vstemplate dosyası bir uygulama şablonunu açıklayan XML kullanır. Daha fazla bilgi için [yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > etiketi uygulama için proje türü belirler. Örneğin, bu etikete sahip bir EmptyProject.vstemplate dosyası \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip dosya içeriyor:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** Visual C# ' in Windows düğümü altında yalnızca bir alt düğüm olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeni Proje Oluşturma: Altyapı Öğeleri, Bölüm İki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

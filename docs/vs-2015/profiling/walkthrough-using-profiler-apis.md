@@ -1,14 +1,9 @@
 ---
 title: "İzlenecek yol: Profiler API'lerini kullanarak | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -16,15 +11,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3ab545d338defb3876145c8ac648574484fbf89a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769641"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profilini Oluşturucu API'ler Kullanma
+# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profiler API'leri kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İzlenecek yol, nasıl kullanılacağını göstermek için bir C# uygulaması kullanır. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Araçları API'leri. Profil Oluşturucu API izleme profil oluşturma sırasında toplanan veri miktarını sınırlamak için kullanın.  
@@ -44,9 +39,9 @@ ms.locfileid: "51749078"
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzda, hata ayıklama ve örnekleme desteklemek üzere tercih ettiğiniz geliştirme ortamında yapılandırılmış varsayılır. Aşağıdaki konular bu Önkoşullar genel bir bakış sağlar:  
   
- [Nasıl Yapılır: Toplama Metotlarını Seçme](../profiling/how-to-choose-collection-methods.md)  
+ [Nasıl yapılır: Toplama Yöntemlerini Seçme](../profiling/how-to-choose-collection-methods.md)  
   
- [Nasıl Yapılır: Başvuru Pencereleri Sembol Bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Nasıl yapılır: Başvuru Pencereleri Sembol Bilgileri](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Profil Oluşturucu başlatıldığında, varsayılan olarak, profil oluşturucu genel düzeyde veri toplar. Aşağıdaki kod programın başında, profil oluşturma genel kapatır.  
   
@@ -171,6 +166,3 @@ DataCollection.CurrentId);
  [Visual Studio Profiler API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Çalışmaya başlama](../profiling/getting-started-with-performance-tools.md)   
  [Komut Satırından Profil Oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

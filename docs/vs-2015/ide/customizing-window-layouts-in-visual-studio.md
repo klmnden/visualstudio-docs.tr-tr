@@ -1,13 +1,9 @@
 ---
 title: Pencere düzenlerini özelleştirme
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -27,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934381"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802035"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio’da pencere düzenlerini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +77,7 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
   Araç ve belge pencereleri düzenlenmiş, komutlar kullanılarak sürükleyerek **penceresi** menüsünde ve düzenlenmesini pencerenin başlık çubuğuna sağ tıklanarak.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Windows yerleştirme
  ' A tıklayın ve bir araç penceresinin başlık çubuğunda veya belge penceresi için sekmesinde sürükleyin, kılavuz elmas görünür. Fare imleci üzerine elmas okları olduğunda sürükleme işlemi sırasında artık fare düğmesini serbest bırakırsanız penceresi nereye yerleştirilir gösteren gölgeli bir alanı görünür.
@@ -186,4 +182,4 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 |[Windows türleri](../misc/kinds-of-windows.md)|IDE'de araç pencereleri ve belge pencereleri arasındaki farkları ele alır.|
 |[Nasıl yapılır: Pencereleri düzenleme ve Windows yerleştirme](../misc/how-to-arrange-and-dock-windows.md)|Pencereleri nasıl sabitleyeceğiniz, otomatik olarak gizleyeceğiniz, döşeyeceğiniz ve ayrıca pencere düzenini nasıl sıfırlayacağınız açıklanır.|
 |[Nasıl yapılır: IDE'de gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE'de, kullanım sırasına göre, açık pencereler arasında nasıl geçiş yapacağınız açıklanır. Ayrıca belirli belgelere nasıl atlayabileceğinizi açıklar.|
-|[Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Ayar bileşimleri ve ayarların pencere düzenlerini, klavye kısayollarını ve IDE'deki diğer öğeleri nasıl etkilediği hakkında bilgi içerir.|
+|[Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Ayar bileşimleri ve ayarların pencere düzenlerini, klavye kısayollarını ve IDE'deki diğer öğeleri nasıl etkilediği hakkında bilgi içerir.|

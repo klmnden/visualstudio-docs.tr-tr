@@ -1,13 +1,9 @@
 ---
 title: 'CA1820: Dize uzunluğunu kullanarak boş dizeleri test | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
@@ -19,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bd9b7c3d254607efb118af3a1ee27856e6f3c523
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bebd3b78881f9e1a2f4908ea667f80cbd7b98dd6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776854"
 ---
-# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Dize uzunluğunu kullanarak boş dizeler için sınayın
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Dize uzunluğunu kullanarak boş dizeleri test edin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

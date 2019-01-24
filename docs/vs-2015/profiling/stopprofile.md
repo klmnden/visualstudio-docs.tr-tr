@@ -1,27 +1,22 @@
 ---
 title: StopProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
 ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd575ef19e4934bc9704aba7531192af67cb079a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b8be45de29f379161845cc7ba8ec58d2d1bc9285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756447"
 ---
 # <a name="stopprofile"></a>StopProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>İşlev bilgisi  
- Başlık: VSPerf.h içinde bildirilen  
+ Üst bilgi: Bildirilmiş VSPerf.h  
   
  İçeri aktarma kitaplığı: VSPerf.lib  
   
@@ -116,6 +111,3 @@ void ExerciseStopProfile()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Profil Oluşturucu API Başvurusu (Yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

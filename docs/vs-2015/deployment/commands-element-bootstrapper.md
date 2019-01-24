@@ -1,14 +1,9 @@
 ---
 title: '&lt;Komutları&gt; öğesi (Önyükleyici) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777719"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Komutları&gt; öğesi (Önyükleyici)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,6 +209,3 @@ ms.locfileid: "49276581"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks > öğesi](../deployment/installchecks-element-bootstrapper.md)
-
-
-

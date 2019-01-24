@@ -1,27 +1,22 @@
 ---
 title: VSPackage sorunlarını giderme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a19962a3e403246d2c68648c3be20a4a0b126a61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761401"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51764004"
   
 3.  VSPackage'ı kayıt defteri girişlerinizi kontrol edin.  
   
-     Daha fazla bilgi için [VSPackage kaydetme](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) ve [yönetme VSPackages](../extensibility/managing-vspackages.md).  
+     Daha fazla bilgi için [VSPackage kaydetme](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd) ve [yönetme VSPackages](../extensibility/managing-vspackages.md).  
   
 4.  Açık **çıkış** penceresi örneğinin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage'ı yüklemek başarısız. VSPackage'ı yüklemek neden başarısız olduğunu hakkında bilgi pencerede görüntülenebilir.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51764004"
   
 5.  Etkinlik günlüğünü inceleyin.  
   
-     Daha fazla bilgi için [nasıl yapılır: etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
+     Daha fazla bilgi için [nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
   
 6.  IDE tarafından oluşturulan özel durumları hakkında daha fazla bilgi için tıklayın **özel durumları** üzerinde **hata ayıklama** özel durumlarını etkinleştirmek için menü. İçinde **özel durumları** iletişim kutusu hakkında daha fazla bilgi istediğiniz özel durum türlerini seçin.  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51764004"
   
 2.  Etkinlik günlüğü'nü kullanın.  
   
-     Temel etkinlik günlüğü bilgilerini yazarak VSPackage davranışını izleme. Bir perakende ortamında bir VSPackage'ı çalıştırdığınızda bu özellikle yararlı bir tekniktir. Daha fazla bilgi için [nasıl yapılır: etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
+     Temel etkinlik günlüğü bilgilerini yazarak VSPackage davranışını izleme. Bir perakende ortamında bir VSPackage'ı çalıştırdığınızda bu özellikle yararlı bir tekniktir. Daha fazla bilgi için [nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Ortak semboller kullanın.  
   
@@ -132,4 +127,3 @@ ms.locfileid: "51764004"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackage’lar](../extensibility/internals/vspackages.md)
-

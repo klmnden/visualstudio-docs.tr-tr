@@ -1,11 +1,8 @@
 ---
 title: 'Nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları oluşturma (eski) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - console applications, state machine workflows
@@ -15,20 +12,20 @@ ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a879838cceecc5229abf2c09b76208e4f42c5db8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb6026def60be27535843a51d78c4c05657d385f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767748"
 ---
-# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları oluşturma (eski)
+# <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Nasıl yapılır: Durum Makinesi İş Akışı Konsol Uygulamaları Oluşturma (Eski)
 Eski kullanarak bir Durum makinesi iş akışı konsol uygulaması projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-state-machine-application-project"></a>Bir Durum makinesi uygulaması projesi oluşturmak için  
   
-1.  Visual Studio'yu başlatın.  
+1.  Visual Studio’yu çalıştırın.  
   
 2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
@@ -53,4 +50,4 @@ Eski kullanarak bir Durum makinesi iş akışı konsol uygulaması projesi oluş
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışı projeleri oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Nasıl yapılır: Durum Makinesi İş Akışı Kitaplığı Oluşturma (Eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
+ [Nasıl yapılır: Bir Durum makinesi iş akışı kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)

@@ -1,13 +1,10 @@
 ---
-title: 'Nasıl Yapılır: Burada Visual Studio 2015 kopyaları dosyaları belirtin. | Microsoft Docs'
+title: 'Nasıl yapılır: Burada Visual Studio 2015 kopyaları dosyaları belirtin. | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,15 +16,15 @@ ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 9aff9fbb93f7dc6ba2fc1ee906d316c4d300e046
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6b9f44f3d4f1a9d1b110501d0178e0e2e8dc4e47
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798562"
 ---
-# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Nasıl Yapılır: Visual Studio'nun Dosyaları Nereye Kopyalayacağını Belirtme
+# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Nasıl yapılır: Visual Studio'nun Dosyaları Nereye Kopyalayacağını Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce kullanarak bir uygulamayı yayımladığınızda `Publish Location` özelliği burada bildirimini ve uygulama dosyalarını isimlerine konumunu belirtir. Bu, bir dosya yolu veya bir FTP sunucusuna bir yolu olabilir.
@@ -52,4 +49,4 @@ ClickOnce kullanarak bir uygulamayı yayımladığınızda `Publish Location` ö
      Metin mevcut olması gerektiğini unutmayın **yayımlama konumu** Gözat sırayla kutusuna (**...** ) çalışmaya düğmesi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md) [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md) [nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

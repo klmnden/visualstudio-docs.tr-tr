@@ -1,25 +1,20 @@
 ---
 title: Birden çok kullanıcı hesabıyla çalışma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802648"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,6 +72,3 @@ Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Sunucu Gezgini ve bağlı hizmetler Ekleme Sihirbazı'nı yeniden ziyaret  
  Artık Git **Sunucu Gezgini** tekrar Azure düğümüne sağ tıklayın ve seçin **yönetin ve filtre abonelikleri**. Yeni hesap açılan geçerli hesap yanındaki oka tıklayarak seçin ve ardından sunucu Gezgini'nde görüntülemek istediğiniz abonelikleri seçin. Belirtilen aboneliği ile ilişkili tüm hizmetlerini görmelisiniz. Şu anda Visual Studio IDE ikinci hesabı ile oturum olsa bile, bu hesabın hizmetlerine ve kaynaklarına oturum açtınız. Aynı true **Proje > bağlı hizmet Ekle** ve **takım > Team Foundation Server'a Bağlan**.
-
-
-

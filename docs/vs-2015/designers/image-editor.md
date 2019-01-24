@@ -1,14 +1,9 @@
 ---
 title: Görüntü Düzenleyicisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768309"
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 |Biçim adı|Dosya Adı Uzantısı|  
 |-----------------|-------------------------|  
-|Taşınabilir Ağ Grafikleri|.PNG|  
+|Taşınabilir Ağ Grafikleri|.png|  
 |JPEG|.jpg, .jpeg, .jpe, .jfif|  
 |Doğrudan çizim yüzeyi|.DDS|  
 |Grafik Değişim Biçimi|.gif|  
 |Bit eşlem|.bmp, .dib|  
 |Etiketli Resim dosyası biçimi|.tif, .tiff|  
-|TGA (Targa)|.TGA|  
+|TGA (Targa)|.tga|  
   
 ## <a name="getting-started"></a>Başlarken  
  Bu bölümde, görüntüye eklemeyi açıklar, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje ve gereksinimleriniz için yapılandırın.  
@@ -68,7 +63,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
  **GIF resmi (.gif)**  
  Grafik Değişim Biçimi (GIF) görüntü biçimi. 256 renk destekler LZW sıkıştırılmış, kayıpsız bir görüntü biçimi. Uygun fotoğraflar ve renk ayrıntısını önemli miktarda var, ancak yüksek düzeyde bir renk modellenmiş sahip düşük-color görüntüler için iyi sıkıştırma oranları sağlar görüntüler.  
   
- **JPG Resmi (.jpg)**  
+ **JPG Image (.jpg)**  
  Birleşik Fotoğraf Experts grubu (JPEG) görüntü biçimi. 24 bit renk destekleyen ve renk modellenmiş yüksek derecede sahip görüntülerin genel amaçlı sıkıştırma için uygun bir yüksek oranda sıkıştırılmış, kayıplı görüntü biçimi.  
   
  **PNG resmi (.png)**  
@@ -116,10 +111,10 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |**Kılavuz**|Etkinleştirir veya piksel sınırları gösteren Kılavuzu devre dışı bırakır. Görüntüye yakınlaştırma kadar kılavuz görünmeyebilir.|  
 |**Sonraki MIP düzeyini görüntüle**|MIP harita zincirindeki büyük sonraki MIP düzeyine etkinleştirir. Tasarım yüzeyinde etkin MIP düzeyi görüntülenir. Bu öğe yalnızca MIP düzeyleri dokular için kullanılabilir.|  
 |**Önceki MIP düzeyini görüntüle**|MIP harita zincirdeki sonraki daha küçük MIP düzeyine etkinleştirir. Tasarım yüzeyinde etkin MIP düzeyi görüntülenir. Bu öğe yalnızca MIP düzeyleri dokular için kullanılabilir.|  
-|**Kırmızı kanal**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alfa kanalı**|Etkinleştirir veya belirli renk kanal devre dışı bırakır. **Not:** sistematik olarak etkinleştirme veya renk kanallarını devre dışı bırakarak, bir veya daha fazlası için ilgili sorunları ayırabilirsiniz. Örneğin, yanlış Alfa Saydamlığı tanımlayabilirsiniz.|  
+|**Kırmızı kanal**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alpha Channel**|Etkinleştirir veya belirli renk kanal devre dışı bırakır. **Not:**  Sistematik olarak etkinleştirme veya renk kanallarını devre dışı bırakarak, bir veya daha fazlası için ilgili sorunları ayırabilirsiniz. Örneğin, yanlış Alfa Saydamlığı tanımlayabilirsiniz.|  
 |**Arka plan**|Etkinleştirir veya arka plan resmi saydam kısımları aracılığıyla görüntülenmesini devre dışı bırakır. Aşağıdaki seçeneklerden birini seçerek arka planı nasıl görüntüleneceğini yapılandırabilirsiniz:<br /><br /> **Dama Tahtası**<br /> Belirtilen arka plan rengi ile birlikte yeşil renk, arka planda bir dama tahtası desenini görüntülemek için kullanır. Resmin saydam kısımları daha belirgin hale getirmek için bu seçeneği kullanabilirsiniz.<br /><br /> Beyaz arka plan<br /> Rengi beyaz arkaplan görüntülenmesi için kullanır.<br /><br /> Siyah arka plan<br /> Arka plan görüntülemek için siyah renk kullanır.<br /><br /> Arka plana animasyon ekle<br /> Dama Tahtası desenini yavaş yatay kaydırır. Resmin saydam kısımları daha belirgin hale getirmek için bu seçeneği kullanabilirsiniz.|  
 |**Özellikler**|Alternatif olarak, açar veya kapatır **özellikleri** penceresi.|  
-|**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreler**<br /><br /> Birçok ortak görüntü filtreler sağlar: **siyah beyaz**, **bulanıklaştıran**, **Brighten**, **Koyulaştır**, **Kenaralgılama**, **Kabartma**, **renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirin**.<br /><br /> **Grafik motorları**<br /><br /> **D3d11 ile işle**<br /> Görüntü Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**<br /> Görüntü Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Araçlar**<br /><br /> **Yatay Çevir**<br /> Görüntü, yatay ya da x ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Dikey Çevir**<br /> Görüntü, dikey ya da y ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Mips üret**<br /> MIP düzeyleri görüntü oluşturur. MIP düzeyleri zaten varsa, en büyük MIP düzeyini yeniden oluşturulur. Daha küçük MIP düzeylerine yapılan tüm değişiklikler kaybolur. Ürettiğiniz MIP düzeylerini kaydetmek için görüntüsünü kaydetmek için .dds biçimi kullanmanız gerekir.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:** seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.|  
+|**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreler**<br /><br /> Birçok ortak görüntü filtreler sağlar: **Siyah beyaz**, **bulanıklaştıran**, **parlaklaştırma**, **koyu**, **kenar algılama**, **kabartma**, **Renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirin**.<br /><br /> **Grafik motorları**<br /><br /> **D3d11 ile işle**<br /> Görüntü Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**<br /> Görüntü Düzenleyicisi tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Araçlar**<br /><br /> **Yatay Çevir**<br /> Görüntü, yatay ya da x ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Dikey Çevir**<br /> Görüntü, dikey ya da y ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Mips üret**<br /> MIP düzeyleri görüntü oluşturur. MIP düzeyleri zaten varsa, en büyük MIP düzeyini yeniden oluşturulur. Daha küçük MIP düzeylerine yapılan tüm değişiklikler kaybolur. Ürettiğiniz MIP düzeylerini kaydetmek için görüntüsünü kaydetmek için .dds biçimi kullanmanız gerekir.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:**  Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.|  
   
  İşte **Resim Düzenleyicisi** araç çubuğu.  
   
@@ -141,7 +136,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |**Kırpma**|Etkin seçimin görüntüye kırpar.|  
   
 ### <a name="working-with-mip-levels"></a>MIP düzeyleri ile çalışma  
- Bazı görüntü biçimleri — Örneğin, doğrudan çizim yüzeyi (.dds) — MIP düzeyleri doku alanı düzeyi ayrıntı düzeyi için (LOD) destekler. Oluşturma ve MIP düzeyleri ile çalışma hakkında daha fazla bilgi için bkz [nasıl yapılır: oluşturma ve değiştirme MIP düzeyleri](../designers/how-to-create-and-modify-mip-levels.md)  
+ Bazı görüntü biçimleri — Örneğin, doğrudan çizim yüzeyi (.dds) — MIP düzeyleri doku alanı düzeyi ayrıntı düzeyi için (LOD) destekler. Oluşturma ve MIP düzeyleri ile çalışma hakkında daha fazla bilgi için bkz. [nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Saydamlık ile çalışma  
  Bazı görüntü biçimleri — Örneğin, doğrudan çizim yüzeyi (.dds) — saydamlık destekler. Saydamlık, kullandığınız araç bağlı olarak kullanılabileceğini birkaç yolu vardır. Bir renk seçimi için saydamlık düzeyini belirtmek için **özellikleri** penceresinde **A** renk seçimi bileşeninin (alfa). Saydamlık nasıl uygulanacağını araçları denetimi nasıl farklı tür aşağıda verilmiştir:  
@@ -192,10 +187,10 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 ##### <a name="resizing-selections"></a>Seçimleri yeniden boyutlandırma  
  Bir bölge seçin, sonra seçimi işaretin boyutunu değiştirerek veya görüntü içeriğini boyutlandırabilirsiniz. Seçili bölge yeniden boyutlandırdığınız olsa da, aşağıdaki değiştirici tuşları (basılı yeniden boyutlandırma anahtar, olarak) yeniden boyutlandırma sırasında seçilen bölge davranışını değiştirmek için kullanabilirsiniz.  
   
- CTRL  
+ Ctrl  
  Bu yeniden boyutlandırıldığı önce seçilen bölge içeriğini kopyalar. Kopyalama yeniden boyutlandırıldığını ancak orijinal görüntünün olduğu gibi bırakır.  
   
- Kaydırma  
+ Shift  
  Seçili bölge derlemekten özgün boyutuna göre yeniden boyutlandırır.  
   
  Alt  
@@ -203,14 +198,14 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
  Geçerli değiştirici tuş bileşimlerini şunlardır:  
   
-|CTRL|Kaydırma|Alt|Açıklama|  
+|Ctrl|Shift|Alt|Açıklama|  
 |----------|-----------|---------|-----------------|  
 ||||Seçili bölge içeriğini yeniden boyutlandırır.|  
-||Kaydırma||Orantılı olarak seçili bölge içeriğini yeniden boyutlandırır.|  
+||Shift||Orantılı olarak seçili bölge içeriğini yeniden boyutlandırır.|  
 |||Alt|Seçili bölgeye göre yeniden boyutlandırır. Bu, yeni bir seçim bölgesi tanımlar.|  
-||Kaydırma|Alt|Orantılı olarak seçili bölgeye göre yeniden boyutlandırır. Bu, yeni bir seçim bölgesi tanımlar.|  
-|CTRL|||Kopyalar ve ardından seçili bölgeye içeriğini yeniden boyutlandırır.|  
-|CTRL|Kaydırma||Kopyalar ve seçili bölgeye içeriğini orantılı olarak yeniden boyutlandırır.|  
+||Shift|Alt|Orantılı olarak seçili bölgeye göre yeniden boyutlandırır. Bu, yeni bir seçim bölgesi tanımlar.|  
+|Ctrl|||Kopyalar ve ardından seçili bölgeye içeriğini yeniden boyutlandırır.|  
+|Ctrl|Shift||Kopyalar ve seçili bölgeye içeriğini orantılı olarak yeniden boyutlandırır.|  
   
 ####  <a name="ToolProperties"></a> Araç Özellikleri  
  Bir araç seçiliyken, kullanabileceğiniz **özellikleri** penceresinin görüntüsünü nasıl etkilediği hakkında ayrıntıları belirtin. Örneğin, kalınlığı ayarlayabilirsiniz **kalem** aracını veya rengini **fırça** aracı.  
@@ -222,7 +217,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |Aracı|Özellikler|  
 |----------|----------------|  
 |Tüm araçlar ve seçimleri|**Döndür:**<br /> Seçimi veya aracı etkisi saat yönünde döndürüldüğüne derece miktarı tanımlar.|  
-|**Kalem**, **fırça**, **kabı**, **Silgi**|**Kalınlığı**<br /> Araç tarafından etkilenen alanının boyutunu tanımlar.|  
+|**Pencil**, **Brush**, **Airbrush**, **Eraser**|**Kalınlığı**<br /> Araç tarafından etkilenen alanının boyutunu tanımlar.|  
 |**Metin**|**Yumuşatma**<br /> Yumuşatılmış kenarları metin çizer. Bu metin daha sorunsuz bir görünümünü sağlar.<br /><br /> **Değer**<br /> Çizilecek metin.<br /><br /> **Yazı tipi**<br /> Metin çizmek için kullanılan yazıtipi.<br /><br /> **Boyutu**<br /> Metin boyutu.<br /><br /> **Kalın**<br /> Yazı tipinin kalın yapar.<br /><br /> **İtalik**<br /> İtalik yazı yapar.<br /><br /> **Altı çizili**<br /> Altı çizili yazı tipi yapar.|  
 |**2B temel**|**Yumuşatma**<br /> Yumuşatılmış kenarları sahip temelleri çizer. Bu onları daha sorunsuz bir görünümünü sağlar.<br /><br /> **Kalınlığı**<br /> Sınırları temel forms çizginin kalınlığını tanımlar.<br /><br /> **Yarıçap X**<br /> (Yalnızca Yuvarlatılmış dikdörtgen) Yuvarlama RADIUS temel üst ve alt kenarları için tanımlar.<br /><br /> **Yarıçap Y**<br /> (Yalnızca Yuvarlatılmış dikdörtgen) Yuvarlama RADIUS temel sol ve sağ kenarları için tanımlar.|  
 |**Kalem**, **fırça**, **kabı**, **2B temel**|**Kanallar**<br /> Etkinleştirir veya belirli renk kanallarını görüntüleme ve çizim için devre dışı bırakır. Varsa **görünümü** kanal için bir belirli renk kanal olarak ayarlı, görüntüde görünür; Aksi takdirde, görünür değil. Varsa **çizmek** ayarlanmış belirli renk kanal için kanal işlemleri çizim tarafından etkilenen; Aksi takdirde, bu değildir.|  
@@ -239,23 +234,23 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |Geçerli seçimi sil|Sil|  
 |Geçerli seçimi iptal et|Esc|  
 |Yakınlaştır|Ctrl+Fare tekerleği ileriye doğru<br /><br /> Ctrl+PageUp<br /><br /> Artı İşareti (+)|  
-|Uzaklaştır|CTRL-fare tekerleği geriye doğru<br /><br /> CTRL-PageDown<br /><br /> Eksi İşareti (-)|  
+|Uzaklaştır|CTRL-fare tekerleği geriye doğru<br /><br /> Ctrl-PageDown<br /><br /> Eksi İşareti (-)|  
 |Görüntü yukarı kaydır|Fare tekerleği geriye doğru<br /><br /> PageDown|  
 |Görüntüyü aşağı kaydır|Fare tekerleği ileriye doğru<br /><br /> PageUp|  
-|Görüntünün sola kaydır|Shift+Fare tekerleği geriye doğru<br /><br /> Fare tekerleği sol<br /><br /> Shift + PageDown|  
-|Görüntü sağa kaydır|Shift+Fare tekerleği ileriye doğru<br /><br /> Fare tekerleği sağ<br /><br /> Shift + PageUp|  
+|Görüntünün sola kaydır|Shift+Fare tekerleği geriye doğru<br /><br /> Fare tekerleği sol<br /><br /> Shift+PageDown|  
+|Görüntü sağa kaydır|Shift+Fare tekerleği ileriye doğru<br /><br /> Fare tekerleği sağ<br /><br /> Shift+PageUp|  
 |Gerçek boyutuna Yakınlaştır|CTRL + 0 (sıfır)|  
 |Resmi pencereye sığdır|CTRL + G, Ctrl + F|  
-|Pencere genişliği Sığdır görüntüye|CTRL + G, Ctrl + ı|  
-|Kılavuzu Aç/Kapat|CTRL + G, Ctrl + G|  
-|Geçerli seçimi görüntüsünü Kırp|CTRL + G, Ctrl + C|  
-|Görünümü İleri (daha ayrıntılı) MIP düzeyi|CTRL + G, Ctrl + 6|  
-|Görüntüleme önceki (alt ayrıntılı) MIP düzeyi|CTRL + G, Ctrl + 7|  
-|İki durumlu kırmızı renk kanalı|CTRL + G, Ctrl + 1|  
-|İki durumlu yeşil renk kanalı|CTRL + G, Ctrl + 2|  
-|İki durumlu mavi renk kanalı|CTRL + G, Ctrl + 3|  
-|İki durumlu (saydam) alfa kanalı|CTRL + G, Ctrl + 4|  
-|Alfa dama tahtası desenini Aç/Kapat|CTRL + G, Ctrl + B|  
+|Pencere genişliği Sığdır görüntüye|Ctrl+G, Ctrl+I|  
+|Kılavuzu Aç/Kapat|Ctrl+G, Ctrl+G|  
+|Geçerli seçimi görüntüsünü Kırp|Ctrl+G, Ctrl+C|  
+|Görünümü İleri (daha ayrıntılı) MIP düzeyi|Ctrl+G, Ctrl+6|  
+|Görüntüleme önceki (alt ayrıntılı) MIP düzeyi|Ctrl+G, Ctrl+7|  
+|İki durumlu kırmızı renk kanalı|Ctrl+G, Ctrl+1|  
+|İki durumlu yeşil renk kanalı|Ctrl+G, Ctrl+2|  
+|İki durumlu mavi renk kanalı|Ctrl+G, Ctrl+3|  
+|İki durumlu (saydam) alfa kanalı|Ctrl+G, Ctrl+4|  
+|Alfa dama tahtası desenini Aç/Kapat|Ctrl+G, Ctrl+B|  
 |Düzensiz seçim aracı arasında geçiş|L|  
 |Değnek seçim aracını geçiş|M|  
 |Kalem aracı geç|P|  
@@ -279,6 +274,3 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |[Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Kullanabileceğiniz araçları genel bakışını sağlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokular ve resimler, 3B modeller ve gölgelendirici efektleri gibi grafik varlıklarıyla çalışmak için.|  
 |[Model Düzenleyicisi](../designers/model-editor.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 3B modellerle çalışmak için Model Düzenleyicisi.|  
 |[Gölgelendirici Tasarımcısı](../designers/shader-designer.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gölgelendiricilerle çalışmak için gölgelendirici Tasarımcısı.|
-
-
-

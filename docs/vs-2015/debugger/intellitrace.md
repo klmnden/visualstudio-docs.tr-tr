@@ -1,14 +1,9 @@
 ---
 title: IntelliTrace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.overview
 helpviewer_keywords:
@@ -26,13 +21,13 @@ ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a2b3e8aa60304589d4ed04826441a7cc09c7f290
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737209"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794750"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
 |||  
 |-|-|  
-|**Uygulamamın IntelliTrace ile hata ayıklama:**<br /><br /> -Geçmişteki olayları göster.<br />-Geçmiş olaylar ile ilgili çağrı bilgilerini göster.<br />-IntelliTrace Oturumumu Kaydet.<br />-Intellitrace'in topladığı verileri kontrol et.|-   [İzlenecek yol: IntelliTrace'i kullanma](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace Özellikleri](../debugger/intellitrace-features.md)<br />-   [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Geçmiş hata ayıklama](../debugger/historical-debugging.md)|  
+|**Uygulamamın IntelliTrace ile hata ayıklama:**<br /><br /> -Geçmişteki olayları göster.<br />-Geçmiş olaylar ile ilgili çağrı bilgilerini göster.<br />-IntelliTrace Oturumumu Kaydet.<br />-Intellitrace'in topladığı verileri kontrol et.|-   [İzlenecek yol: IntelliTrace’i Kullanma](../debugger/walkthrough-using-intellitrace.md)<br />     [IntelliTrace Özellikleri](../debugger/intellitrace-features.md)<br />-   [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Geçmiş hata ayıklama](../debugger/historical-debugging.md)|  
 |**Test Yöneticisi'nde bir sınama oturumu sırasında IntelliTrace verisi Topla**|-   [El ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Dağıtılmış uygulamalardan IntelliTrace verilerini toplama**|-   [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Bir IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı başlatın.**|-   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|  
@@ -62,7 +57,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
 |||  
 |-|-|  
-|**Desteklenen**|-.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br />     IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: bir SharePoint uygulaması tarafından IntelliTrace kullanarak hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).|  
+|**Destekleniyor**|-.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br />     IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).|  
 |**Sınırlı destek**|- F# Deneysel olarak uygulamalar<br />-Yalnızca olaylar için desteklenen Windows Store uygulamaları|  
 |**Desteklenmiyor**|-C++, diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../includes/winmobile-md.md)] uygulamaları|  
   
@@ -109,7 +104,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 ##  <a name="WhatData"></a> IntelliTrace hangi verileri toplar?  
  **Olay bilgilerini toplama**  
   
- Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata ayıklayıcı olayları, özel durumlar, .NET Framework olayları ve hata ayıklamaya yardımcı olabilecek diğer sistem olaylarıdır. Hata ayıklayıcı olayları ve her zaman toplanan özel durumlar dışında toplamak istediğiniz IntelliTrace olaylarının türlerini seçebilirsiniz. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata ayıklayıcı olayları, özel durumlar, .NET Framework olayları ve hata ayıklamaya yardımcı olabilecek diğer sistem olaylarıdır. Hata ayıklayıcı olayları ve her zaman toplanan özel durumlar dışında toplamak istediğiniz IntelliTrace olaylarının türlerini seçebilirsiniz. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **Hata ayıklayıcı olayları**  
   
@@ -151,7 +146,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
   -   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [İzlenecek yol: IntelliTrace'i Kullanarak SharePoint Uygulamasında Hata Ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **İşlev çağrısı bilgilerini toplama**  
   
@@ -168,21 +163,21 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 > [!NOTE]
 >  IntelliTrace yalnızca dizilerdeki ilk 256 nesneyi ve dizelerdeki ilk 256 karakteri toplar.  
   
- Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
  **Modül bilgilerini toplama**  
   
- IntelliTrace'in ne kadar çağrı bilgisi topladığını denetlemek için, yalnızca istediğiniz modülleri belirtin. Bu uygulamanızın toplama esnasındaki performansını iyileştirmeye yardımcı olabilir. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ IntelliTrace'in ne kadar çağrı bilgisi topladığını denetlemek için, yalnızca istediğiniz modülleri belirtin. Bu uygulamanızın toplama esnasındaki performansını iyileştirmeye yardımcı olabilir. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ##  <a name="AffectPerformance"></a> IntelliTrace uygulamamı yavaş?  
  Varsayılan olarak, IntelliTrace yalnızca seçili IntelliTrace olaylarının verilerini toplar. Bu işlem sonrasında veya aşağı yapısı ve kuruluşuna kodunuzun bağlı olarak uygulamanızı yavaşlatabilir değil. Örneğin, IntelliTrace bir olayı sıklıkla kaydediyorsa, bu sizin uygulamanızı yavaşlatabilir. Bu ayrıca, uygulamanızı yeniden düzenlemeyi düşünmenizi neden olabilir.  
   
- Çağrı bilgilerini toplama uygulamanızı önemli ölçüde yavaşlatabilir. Diske kaydettiğiniz IntelliTrace herhangi bir günlük dosyasının (.iTrace dosyaları) boyutunu da artırabilir. Bu etkileri en aza indirmek için yalnızca ilginiz dahilinde olan modüller için çağrı bilgilerini toplayın.  .İTrace dosyalarınızın en büyük boyutunu değiştirmek için Git **Araçları**, **seçenekleri**, **IntelliTrace**, **Gelişmiş**. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Çağrı bilgilerini toplama uygulamanızı önemli ölçüde yavaşlatabilir. Diske kaydettiğiniz IntelliTrace herhangi bir günlük dosyasının (.iTrace dosyaları) boyutunu da artırabilir. Bu etkileri en aza indirmek için yalnızca ilginiz dahilinde olan modüller için çağrı bilgilerini toplayın.  .İTrace dosyalarınızın en büyük boyutunu değiştirmek için Git **Araçları**, **seçenekleri**, **IntelliTrace**, **Gelişmiş**. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>Bu bölümde  
  [IntelliTrace Özellikleri](../debugger/intellitrace-features.md)  
   
- [IntelliTrace yapılandırma](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
  [Yeniden oluşturması zor olan hatalarda Tanılama izleme verilerini dahil olmak üzere](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
@@ -195,8 +190,3 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
 ### <a name="forums"></a>Forumlar  
  [Visual Studio tanılama](http://go.microsoft.com/fwlink/?LinkId=262263)
-
-
-
-
-

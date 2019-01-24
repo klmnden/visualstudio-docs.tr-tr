@@ -1,27 +1,22 @@
 ---
 title: Profil oluşturma araçları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782108"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780850"
 ---
 # <a name="profiling-tools"></a>Profil Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +79,22 @@ Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uy
  [IntelliTrace](../debugger/intellitrace.md) kayıt belirli olayları, verileri incelemek sayesinde **Yereller** penceresi sırasında hata ayıklayıcı olayları ve işlev çağrıları ve yeniden oluşturulması zor olan hata ayıklama hataları.  IntelliTrace, hata ayıklama aracı öncelikle olmakla birlikte, performans verileri araştırmak için kullanılan bilgileri de sağlar. Visual Studio Enterprise bu aracın yalnızca, masaüstü, Windows evrensel ve ASP.NET C# uygulamaları ile kullanabilirsiniz. IntelliTrace içinde bulabilirsiniz **tanılama araçları** ayıklarken penceresi (**hata ayıklama / Windows / tanılama araçlarını Göster**).  
   
 ## <a name="profiling-in-production"></a>Üretim ortamında profil oluşturma  
- Üretim ortamında profil oluşturma için önerilen profilinden yaklaşımdır [vsperf.exe kullanarak komut satırı](../profiling/using-the-profiling-tools-from-the-command-line.md) CPU profili toplanacak. Azure App Service'te uzaktan profil oluşturma desteği için aracılığıyla profilini oluşturabilirsiniz [Sunucu Gezgini veya Kudu portalı](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ Üretim ortamında profil oluşturma için önerilen profilinden yaklaşımdır [vsperf.exe kullanarak komut satırı](../profiling/using-the-profiling-tools-from-the-command-line.md) CPU profili toplanacak. Azure App Service'te uzaktan profil oluşturma desteği için aracılığıyla profilini oluşturabilirsiniz [Sunucu Gezgini veya Kudu portalı](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Hangi aracı kullanmalıyım?  
  Farklı araçlar sunan Visual Studio listeleyen bir tablo işte ve farklı proje türleri ile kullanabilirsiniz:  
   
-|Performans aracı|Windows Masaüstü|Windows Evrensel/Store|ASP.NET|  
+|Performans aracı|Windows masaüstü|Windows Evrensel/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[Bellek Kullanımı](../profiling/memory-usage.md)|Evet|Evet|Yok|  
-|[CPU Kullanımı](../profiling/cpu-usage.md)|Evet|Evet|Yalnızca Azure uygulama hizmeti|  
-|[GPU Kullanımı](../debugger/gpu-usage.md)|Evet|Evet|Yok|  
-|[Uygulama Zaman Çizelgesi](../profiling/application-timeline.md)|Evet|Evet|Yok|  
-|[PerfTips](../profiling/perftips.md)|Evet|XAML, HTML için Hayır için Evet|Yok|  
-|[Performans Gezgini](../profiling/performance-explorer.md)|Evet|Yok|Evet|  
+|[Bellek Kullanımı](../profiling/memory-usage.md)|evet|evet|Yok|  
+|[CPU Kullanımı](../profiling/cpu-usage.md)|evet|evet|Yalnızca Azure uygulama hizmeti|  
+|[GPU Kullanımı](../debugger/gpu-usage.md)|evet|evet|Yok|  
+|[Uygulama Zaman Çizelgesi](../profiling/application-timeline.md)|evet|evet|Yok|  
+|[PerfTips](../profiling/perftips.md)|evet|XAML, HTML için Hayır için Evet|Yok|  
+|[Performans Gezgini](../profiling/performance-explorer.md)|evet|Yok|evet|  
 |[IntelliTrace](../debugger/intellitrace.md)|Yalnızca .NET Enterprise|Yalnızca .NET Enterprise|Yalnızca .NET Enterprise|  
 |[HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok|  
 |[JavaScript Belleği](../profiling/javascript-memory.md)|Yok|Evet, HTML için XAML için Hayır|Yok|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

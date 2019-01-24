@@ -1,14 +1,9 @@
 ---
 title: Kod çözümleme kural kümesi başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786644"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Kod çözümleme kural kümesi başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Yönetilen kod projeleri için Kod Analizi yapılandırdığınızda [!INCLUDE[v
 |[Yerel Minimum Kurallar kural kümesi](../code-quality/native-minimum-rules-rule-set.md)|Bu kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi yerel, kodunuzda en kritik sorunlara odaklanır. Doğal projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.|  
 |[Yerel Önerilen Kurallar kural kümesi](../code-quality/native-recommended-rules-rule-set.md)|Bu kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi yerel kodda en önemli ve en yaygın sorunları odaklanır.  Doğal projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.  Bu kural Seti Visual Studio Professional sürümü ve üzeri sürümlerde çalışmak üzere tasarlanmıştır.|  
 |[Yönetilen kod için Güvenlik Kuralları kural kümesi](../code-quality/security-rules-rule-set-for-managed-code.md)|Bu kural kümesi, tüm Microsoft Güvenlik kuralları içerir. Bu kural raporlanan olası güvenlik sorunlarını sayısı en üst düzeye çıkarmak için kümesi içerir.|
-
-
-

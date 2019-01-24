@@ -1,14 +1,9 @@
 ---
 title: Yazı tipleri ve renkler kullanarak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b49c5172a75e0abec8084892346a2fb0da877b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729606"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763104"
 ---
 # <a name="using-fonts-and-colors"></a>Yazı tipleri ve renkler kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51729606"
   
  VSPackage'ı uygulamak bu yaklaşım gerektirir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> ve ilgili arabirim.  
   
- [Nasıl Yapılır: Yerleşik Yazı Tipi ve Renk Şemasına Erişme](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Nasıl yapılır: Yerleşik yazı tipi ve renk şeması erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Tanımlamak ve bir kategori yerleşik yazı tipleri ve renkler kullanarak kaydetmek ve sistem tarafından sağlanan yazı tipleri ve renkler kullanımı başlatmak nasıl ele alınmaktadır.  
   
 ## <a name="reference"></a>Başvuru  
@@ -80,4 +75,3 @@ ms.locfileid: "51729606"
   
  [Visual Studio’nun Diğer Bölümlerini Genişletme](../extensibility/extending-other-parts-of-visual-studio.md)  
  Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geri kalanını eşleşen kullanıcı Arabirimi öğeleri oluşturmak için Sertifika Hizmetleri'ni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
-

@@ -1,14 +1,9 @@
 ---
 title: Simgeler ve simge etiketleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67fbe790eaded11806f1ca1fbfcaaeee38a36116
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 625752125d3c68e9f03afd41cd549995fbc3272e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732198"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765326"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simgeler ve Simge Etiketleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Derlenmiş bir program hata ayıklama bilgilerini program veritabanı (.pdb) dos
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arabirim Erişimi SDK'sında Hata Ayıklama](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
-
-
-

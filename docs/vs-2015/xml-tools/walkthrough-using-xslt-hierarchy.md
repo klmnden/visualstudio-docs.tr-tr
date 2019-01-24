@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: XSLT hiyerarşisi kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b72213ab2c7dd9fa15fb639b6ef2212f56aa141f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280968"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786318"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>İzlenecek Yol: XSLT Hiyerarşisi Kullanma
+# <a name="walkthrough-using-xslt-hierarchy"></a>İzlenecek yol: XSLT hiyerarşisi kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -121,7 +116,4 @@ XSLT hiyerarşisi araç birçok XML geliştirme görevlerinizi basitleştirir. G
 6.  Hata ayıklayıcı yönerge durduğunda `<xsl:include href="xslincludefile.xsl" />`, adımla düğmesine basın. Hata ayıklama başvurulan stil sayfasına devam ettirilemez olduğunu unutmayın. Hiyerarşi görünür ve tasarımcı doğru yolunu görüntüler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: XSLT Profil Oluşturucusu](../xml-tools/walkthrough-xslt-profiler.md)
-
-
-
+ [İzlenecek yol: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)

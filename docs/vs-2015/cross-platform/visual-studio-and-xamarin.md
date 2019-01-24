@@ -1,24 +1,19 @@
 ---
 title: Visual Studio ve Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d43a76f6ae795017ca8e0d4dc898faca1ee2b48b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 99f36287c6ab1aa6b8157e6dde2a84bb97233fcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766967"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio ve Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ Xamarin yerel iOS, Android ve Windows uygulamaları için mobil uygulama gelişt
   
 > [!NOTE]
 >  HTML ve CSS tabanlı bir platformlar arası geliştirme çözümü arıyorsanız, Visual Studio Araçları Apache Cordova için açıklandığı gibi kontrol [Visual Studio'da platformlar arası geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
-

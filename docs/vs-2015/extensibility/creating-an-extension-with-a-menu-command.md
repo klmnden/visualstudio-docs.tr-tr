@@ -1,14 +1,9 @@
 ---
 title: Bir menü komutuyla uzantı oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774257"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Bir Menü Komutuyla Uzantı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +119,18 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
   
 1. Basit bir menü komutu ile pek çok şey yapabilirsiniz:  
   
-   1.  Kendi simgesi ekleyin: [menü komutları için simgeler ekleme](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Kendi simgesi ekleyin: [Menü Komutlarına Simge Ekleme](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Menü komutunun metnini değiştirme: [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Menü komutunun metnini değiştirme: [Bir Menü Komutunun Metnini Değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Komut menüsünde bir kısayol eklemek: [menü öğelerine klavye kısayolları bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Bir komutu menüsü kısayolundan ekleyin: [Menü Öğelerine Klavye Kısayolları Bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Farklı türde komutlar, menüler ve araç çubuklarını ekleme: [genişletme menüler ve komutlar](../extensibility/extending-menus-and-commands.md)  
+2. Farklı türde komutlar, menüler ve araç çubukları ekleyin: [Menüleri ve Komutlari Genişletme](../extensibility/extending-menus-and-commands.md)  
   
-3. Yerleşik Visual Studio araç pencerelerini genişletme ve araç pencerelerini Ekle: [genişletme ve aracı Windows özelleştirme](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Araç pencereleri ekleyin ve yerleşik Visual Studio araç pencerelerini genişletme: [Araç Pencerelerini Genişletme ve Özelleştirme](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. IntelliSense, kod önerileri ekleyebilir ve kod düzenleyicileri mevcut diğer özellikleri: [düzenleyiciyi ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)  
+4. IntelliSense, kod önerileri ve diğer özellikler için mevcut kod düzenleyicilerinden ekleyin: [Düzenleyiciyi ve Dil Hizmetlerini Genişletme](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Uzantınız için seçenekleri ve özellik sayfaları ve kullanıcı ayarlarını ekleyin: [genişletme özellikleri ve özellik penceresini](../extensibility/extending-properties-and-the-property-window.md) ve [genişletme kullanıcı ayarları ve seçenekleri](../extensibility/extending-user-settings-and-options.md)  
+5. Uzantınız için seçenekleri ve özellik sayfaları ve kullanıcı ayarlarını ekleyin: [Özellikleri ve özellik penceresini genişletme](../extensibility/extending-properties-and-the-property-window.md) ve [kullanıcı ayarlarını ve seçeneklerini genişletme](../extensibility/extending-user-settings-and-options.md)  
   
-   Yeni türde bir proje oluşturma gibi daha fazla iş, diğer tür uzantıların gerektirir ([genişletme projeleri](../extensibility/extending-projects.md)), yeni türde bir düzenleyici oluşturma ([oluşturma özel düzenleyiciler ve tasarımcılar](../extensibility/creating-custom-editors-and-designers.md)), veya uzantınızı bir yalıtılmış Kabuğu'nda Uygulama: [Visual Studio yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)
-
+   Yeni türde bir proje oluşturma gibi daha fazla iş, diğer tür uzantıların gerektirir ([genişletme projeleri](../extensibility/extending-projects.md)), yeni türde bir düzenleyici oluşturma ([oluşturma özel düzenleyiciler ve tasarımcılar](../extensibility/creating-custom-editors-and-designers.md)), veya uzantınızı bir yalıtılmış Kabuğu'nda Uygulama: [Visual Studio Yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)

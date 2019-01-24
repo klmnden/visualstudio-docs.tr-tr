@@ -1,14 +1,9 @@
 ---
 title: Visual Studio SDK'sı içindeki | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49ec5ab372b5b7117dcab374c3420b1e76112825
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757101"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,7 +103,7 @@ Visual Studio mimari genelleştirilmiş görünümü
  Daha fazla bilgi için [ekleme proje ve proje öğesi şablonları](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Özellikleri ve seçenekleri  
- **Özellikleri** penceresi tek veya birden çok Seçili öğelerin özelliklerini görüntüler: [genişletme özellikleri](../../extensibility/internals/extending-properties.md) seçenekler sayfaları gibi belirli bir bileşene ait seçenekleri kümesi içeren bir programlama dili veya VSPackage: [seçenekler ve Seçenekler sayfaları](../../extensibility/internals/options-and-options-pages.md). Ayarları içeri ve dışarı genellikle kullanıcı Arabirimi güvenlikle ilgili özellikler şunlardır: [kullanıcı ayarları desteği](../../extensibility/internals/support-for-user-settings.md).  
+ **Özellikleri** penceresi tek veya birden çok Seçili öğelerin özelliklerini görüntüler: [Özellikleri genişletme](../../extensibility/internals/extending-properties.md) seçenekler sayfaları bir programlama dili veya VSPackage gibi belirli bir bileşene ait seçenekleri kümesi içerir: [Seçenekler ve Seçenekler sayfaları](../../extensibility/internals/options-and-options-pages.md). Ayarları içeri ve dışarı genellikle kullanıcı Arabirimi güvenlikle ilgili özellikler şunlardır: [Kullanıcı ayarları desteği](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Visual Studio Hizmetleri  
  Bir hizmet arabirimleri tüketmeye bileşenleri için belirli bir kümesini sağlar. Visual Studio uzantıları dahil olmak üzere tüm bileşenleri tarafından kullanılabilecek Hizmetleri kümesi sağlar. Örneğin, araç pencerelerini gösterilecek veya dinamik olarak gizli Yardım, durum çubuğu veya UI olayları erişmesini sağlamak Visual Studio hizmetleri sağlar. Visual Studio Düzenleyicisi, düzenleyici uzantıları tarafından içe aktarılabilir hizmetleri de sağlar. Daha fazla bilgi için [kullanma ve sağlama Hizmetleri](../../extensibility/using-and-providing-services.md).  
@@ -133,4 +128,3 @@ Visual Studio mimari genelleştirilmiş görünümü
   
 ## <a name="help-viewer"></a>Yardım Görüntüleyicisi  
  Yardım Görüntüleyicisi'ne kendi Yardım ve F1 sayfaları tümleştirebilirsiniz. Daha fazla bilgi için [Microsoft Yardım Görüntüleyicisi SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).
-

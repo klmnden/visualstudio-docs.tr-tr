@@ -1,14 +1,9 @@
 ---
 title: Yalnızca kendi kodum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777899"
 ---
 # <a name="just-my-code"></a>Yalnızca Kendi Kodum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,7 @@ ms.locfileid: "51798657"
   Kendi oluşturabilirsiniz `.natstepfilter` ve `.natjmc` Adımlama özelleştirip çağrı yığını penceresi davranışı `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Atlama davranışını  
- Olduğunda, **içine adımla** (klavye kısayolu: F11) kullanıcı kodundan kullanıcı olmayan kod, kod üzerinde hata ayıklama adımlarında kullanıcı kodu sonraki satırına. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı sonraki satıra kullanıcı kodu çalıştırır. Hiç kullanıcı kodu karşılaşıldıktan sonra yürütülmeye kadar uygulama çıkar, bir kesme noktasına isabet ya da bir özel durum oluşur.  
+ Olduğunda, **içine adımla** (klavye kısayolu: Kullanıcı kodu, kod üzerinde hata ayıklama adımlarında kullanıcı kodu sonraki satırına F11) kullanıcı olmayan kod. Olduğunda, **Step Out** (klavye: Shift + F11), hata ayıklayıcı sonraki satıra kullanıcı kodu çalıştırır. Hiç kullanıcı kodu karşılaşıldıktan sonra yürütülmeye kadar uygulama çıkar, bir kesme noktasına isabet ya da bir özel durum oluşur.  
   
  Hata ayıklayıcı kullanıcı olmayan kodu keserse (örneğin tümünü Kes komutu kullanıcı dışındaki kodda durdurursa), Adımlama kullanıcı dışındaki kodda devam eder.  
   
@@ -213,13 +208,13 @@ ms.locfileid: "51798657"
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Atlama davranışını  
   
--   Bir işlev kullanıcı değilse (**MyCode**) kodu **içine adımla** (klavye kısayolu: F11) gibi davranır **Step Over** (klavye: F10).  
+-   Bir işlev kullanıcı değilse (**MyCode**) kodu **içine adımla** (klavye kısayolu: F11) davranışını olarak **Step Over** (klavye: F10).  
   
 -   Bir adım kullanıcı olmayan başlıyorsa (**LibraryCode** veya **UnrelatedCode**) kod geçici olarak Adımlamayı yalnızca kendi kodum etkin değilse gibi davranır. Kullanıcı koda geri, yalnızca kendi kodum adım hemen sonra Adımlama tekrar etkinleştirilecektir.  
   
 -   Bir adım olduğunda (örneğin, bir olay işleyicisi son satırının bir adımda yapılması) geçerli yürütme bağlamı bırakarak kullanıcı kodu sonuçları hata ayıklayıcı kullanıcı kodunun yürütülen sonraki satıra durdurur. Örneğin, bir geri çağırmayı yürütür, **LibraryCode** kodu hata ayıklayıcının kullanıcı kodun sonraki satırına yürütülene kadar devam eder.  
   
--   **Step Out** (klavye: Shift + F11) kullanıcı kodun sonraki satırında durdurur. Hiç kullanıcı kodu karşılaşıldıktan sonra yürütülmeye kadar uygulama çıkar, bir kesme noktasına isabet ya da bir özel durum oluşur.  
+-   **Dışına adımla** (klavye: Shift + F11) kullanıcı kodun sonraki satırında durdurur. Hiç kullanıcı kodu karşılaşıldıktan sonra yürütülmeye kadar uygulama çıkar, bir kesme noktasına isabet ya da bir özel durum oluşur.  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Kesme noktası davranışı  
   
@@ -312,8 +307,3 @@ ms.locfileid: "51798657"
 |**İlişkisiz**|Bir dizi olarak sınıflandırılan dosyalar veya URL'ler **UnrelatedCode**.|  
   
  Url veya dosya dizesi, bir veya daha fazla içerebilir `*` karakter sıfır veya daha fazla karakterini eşleştirin. `*` normal ifadenin eşdeğeri `.*`.
-
-
-
-
-

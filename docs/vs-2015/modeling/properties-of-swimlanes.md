@@ -1,12 +1,9 @@
 ---
 title: Kulvarların özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 47edbc2d-09e4-48ac-b4d1-5268a06a27e6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804143"
 ---
 # <a name="properties-of-swimlanes"></a>Kulvarların Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir d
 |Özellik|Açıklama|Varsayılan|  
 |--------------|-----------------|-------------|  
 |Gövde dolgu rengi|Kulvar gövdesinin dolgu rengi.|Beyaz|  
-|Başlık dolgu rengi|Kulvar üst bilgisinin dolgu rengi.|Koyu gri|  
+|Başlık dolgu rengi|Kulvar üst bilgisinin dolgu rengi.|DarkGray|  
 |Ayırıcı rengi|Ayırıcı çizginin rengi.|LightGray|  
 |Ayırıcı çizgi stili|Ayırıcı çizginin stili (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, veya `Custom`).|`Dash`|  
 |Ayırıcı kalınlığı|İnç ayırıcı çizginin kalınlığı.|0.03125|  
@@ -53,12 +50,9 @@ Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir d
 |Başlangıç genişliği|Bu kulvarın inç cinsinden başlangıç genişliği. Yalnızca dikey Kulvarlar için geçerlidir.|0|  
 |Kullanıma sunan metin rengi|Varsa `True`, kullanıcı oluşturulan tasarımcıdaki bir Kulvar rengini ayarlayabilirsiniz. Bunu ayarlamak için Kulvar şekle sağ tıklayın ve **ekleme kullanıma sunulan**.|False|  
 |Açıklama|Oluşturulan tasarımcının belge için kullanılır.|\<yok >|  
-|Görünen ad|Bu kulvarın sınıfa başvurmak için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|  
+|Görünen Ad|Bu kulvarın sınıfa başvurmak için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|  
 |Sabit araç ipucu metni|Sabit bir araç ipucu için kullanılan metin.|\<yok >|  
 |Yardım anahtar sözcüğü|Bu kulvarın için F1 Yardımı dizini oluşturmak için kullanılan anahtar sözcüğü.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

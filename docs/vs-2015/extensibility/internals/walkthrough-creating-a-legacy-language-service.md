@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: eski dil hizmeti oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Eski dil hizmeti oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d80b40aa1db779c233dea846b49dbbc66084015
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 044e9d1102ac5e7415eafdead35c834296621bcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788986"
 ---
-# <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek Yol: Eski Dil Hizmeti Oluşturma
+# <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: Eski dil hizmeti oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıfları kullanarak [!INCLUDE[csprcs](../../includes/csprcs-md.md)] oldukça basittir. Dil hizmeti ve dil hizmeti diliniz için bir ayrıştırıcı barındırmak için bir VSPackage ihtiyacınız vardır.  
@@ -139,4 +134,3 @@ Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıflar�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski Dil Hizmeti Uygulama](../../extensibility/internals/implementing-a-legacy-language-service1.md)
-

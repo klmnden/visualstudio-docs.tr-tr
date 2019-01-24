@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800054"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>2. Bölüm temel proje sistemi oluşturma
 Bu serideki ilk izlenecek [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistemi oluşturma işlemi gösterilmektedir. Bu izlenecek yol, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek üzerinde temel proje sistemi oluşturur. Bu bir başlamadan önce ilk izlenecek yolu tamamlamanız gerekir.  
@@ -223,7 +223,7 @@ ZipProjects:
   
 5.  İçinde *.csproj* ekleyin \<OutputSubPath > ZipProject öğelerin her biri için. Önce olarak da projeyi kaldırmak ve proje dosyasını düzenleyin.  
   
-6.  Bulun \<ZipProject > öğeleri. Her \<ZipProject > öğesini ekleyin bir \<OutputSubPath > öğesi ve bu değeri konsol verin. ZipProject  
+6.  Bulun \<ZipProject > öğeleri. Her \<ZipProject > öğesini ekleyin bir \<OutputSubPath > öğesi ve bu değeri konsol verin. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr proje özellik sayfası  
+## <a name="create-a-project-property-page"></a>Proje özellik sayfası oluşturma  
  Böylece kullanıcıların görüntüleyebileceği ve projelerinde, şablonunuzu temel alan özelliklerini değiştirmek, proje türü için özellik sayfası oluşturabilirsiniz. Bu bölümde bağımsız yapılandırma özellik sayfası oluşturma işlemini gösterir. Bu temel özellik sayfası özellikler Kılavuzu, özellik sayfası sınıfının içinde kullanıma sunan genel özelliklerini görüntülemek için kullanır.  
   
  Özellik sayfasında sınıfından türetilir `SettingsPage` temel sınıfı. Tarafından sağlanan özellikler Kılavuzu `SettingsPage` sınıfı en temel veri türlerini farkındadır ve bunları görüntülemek nasıl bilir.  Ayrıca, `SettingsPage` sınıfı özellik değerleri proje dosyasına kalıcı hale getirmek nasıl bilir.  

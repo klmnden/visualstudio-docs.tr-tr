@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: Sıfırdan MSBuild proje dosyası oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "49913897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769438"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -489,5 +484,3 @@ ms.locfileid: "49913897"
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [MSBuild'e genel bakış](msbuild.md)  
  [MSBuild Başvurusu](../msbuild/msbuild-reference.md)
-
-

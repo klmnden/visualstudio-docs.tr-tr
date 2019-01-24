@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: içerik modeli görünümünü kullanarak düğümlerin içerik modelini İnceleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İçerik modeli görünümünü kullanarak düğümlerin içerik modelini İnceleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800007"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Nasıl yapılır: içerik modeli görünümünü kullanarak düğümlerin içerik modelini İnceleme
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Nasıl yapılır: İçerik Modeli Görünümünü Kullanarak Düğümlerin İçerik Modelini İnceleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -33,7 +28,7 @@ Bu konuda düğümlerinizi kullanarak keşfedin açıklar [içerik modeli görü
   
 2.  Tıklayın **görüntülemek ve temel alınan XML şema dosyasını düzenlemek için XML Düzenleyicisi'ni kullanma** başlangıç görünümü.  
   
-3.  XML şema örnek koddan kopyalama [XML şema örnek: Satınalma siparişi şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md) ve varsayılan olarak yeni bir XSD dosyasına eklenen kodu değiştirmek için yapıştırın.  
+3.  XML şema örnek koddan kopyalama [örnek XML şeması: Satınalma siparişi şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md) ve varsayılan olarak yeni bir XSD dosyasına eklenen kodu değiştirmek için yapıştırın.  
   
 4.  Seçin `purchaseOrder` sağ tıklanarak şema Gezgini öğesinde `purchaseOrder` öğesi XML Düzenleyicisi'ni seçerek **XML Gezgini'nde Göster**.  
   
@@ -50,6 +45,3 @@ Bu konuda düğümlerinizi kullanarak keşfedin açıklar [içerik modeli görü
 8.  Tıklayın **Göster belgeleri** platformlarının geçiş yapmak için XSD araç çubuğu düğmesi. Ayrıca, belgeleri açıp kapatmak için tasarım yüzeyine sağ tıklayabilirsiniz.  
   
 9. Rick tıklamayla `purchaseOrder` düğümünü seçip alt **örnek XML oluşturmak** XML örneği görmek için.
-
-
-

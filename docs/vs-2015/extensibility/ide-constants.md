@@ -1,14 +1,9 @@
 ---
 title: IDE sabitleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789499"
 ---
 # <a name="ide-constants"></a>IDE Sabitleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ ms.locfileid: "51743311"
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil sonuna belirten yöntemi.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> komut çubuğu ölçümleri değiştiğini gösteren yöntemi.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Visual Studio için bir tanımlama bilgisi ayarlanmamışsa gösteren belirli bir sabit değer.|  
-|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
+|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
 |[VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Bir proje hiyerarşisinin kökü temsil eder ve tek bir öğe yerine tüm bir hiyerarşiye tanımlamak için kullanılan bir Visual Studio öğe tanımlayıcısı.|
 |[VSITEMID. Seçimi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Seçili öğenin veya hiyerarşisinin kökü içerebilen öğeleri temsil eden bir Visual Studio öğe tanımlayıcısı.| 
   
@@ -124,4 +119,3 @@ ms.locfileid: "51743311"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Sistemlerini Genişletmeye Yönelik IDE Tanımlı Komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

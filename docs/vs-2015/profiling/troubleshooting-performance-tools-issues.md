@@ -1,25 +1,20 @@
 ---
 title: Sorunları araçları performans sorunlarını giderme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93e9f75ad953ff9c6cd08e8eb78bcfbf01542223
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f6a069e98b751ac9314a22562063ea763955d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784557"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Performans sorunlarını giderme araçları sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Profil oluşturma Araçları'nı kullandığınızda aşağıdaki sorunlardan bi
   
 -   Örnekleme veya .NET bellek yöntemi kullanarak profili oluşturulmuş bir işlem uygulama işi yapar işlem haline gelen bir alt işlemi başlatır. Örneğin, bazı uygulamalar, bir Windows uygulaması veya bir komut satırı uygulaması olarak başlatılmış olup olmadığını belirlemek için komut satırını okur. Bir Windows uygulaması istendi, özgün işlem bir Windows uygulaması olarak yapılandırılmış yeni bir işlem başlatır ve ardından özgün işlem çıkar. Profil oluşturma araçları otomatik olarak alt işlemleri için veri toplama için hiçbir veri toplanır.  
   
-     Bu durumda profil oluşturma verilerini toplamak için profil oluşturucu uygulamaya Profil Oluşturucu ile başlatma yerine alt işlem ekleme. Daha fazla bilgi için [nasıl yapılır: Attach ve Detach, çalışan işlemler için performans araçları](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) ve [İliştir (VSPerfCmd)](../profiling/attach.md)  
+     Bu durumda profil oluşturma verilerini toplamak için profil oluşturucu uygulamaya Profil Oluşturucu ile başlatma yerine alt işlem ekleme. Daha fazla bilgi için [nasıl yapılır: Ekleme ve ayırma performans araçlarını çalışan işlemlere](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) ve [(VSPerfCmd) ekleme](../profiling/attach.md)  
   
 ##  <a name="NoSymbols"></a> Performans görünümleri ve raporlar için işlev adlarını sayıları görüntüleme  
  Bir uygulamanın profilini sonra raporları ve görünümleri işlev adları yerine numaraları görürsünüz.  
@@ -54,6 +49,3 @@ Profil oluşturma Araçları'nı kullandığınızda aşağıdaki sorunlardan bi
   
 > [!NOTE]
 >  Analiz altyapısı, .pdb dosyasını derlenmiş uygulama dosyası aynı sürümde olmasını gerektirir. Önceki veya sonraki bir derleme uygulama dosyasının .pdb dosyasından çalışmaz.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'İzlenecek yol: ClickOnce uygulaması için özel bir yükleyici oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795089"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>İzlenecek Yol: ClickOnce Uygulaması için Özel bir Yükleyici Oluşturma
+# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>İzlenecek yol: ClickOnce uygulaması için özel bir yükleyici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir .exe dosyasını temel alan herhangi bir ClickOnce uygulaması sessizce yüklü ve özel bir yükleyici tarafından güncelleştirildi. Özel bir yükleyici özel iletişim kutuları için güvenlik ve Bakım işlemlerine dahil olmak üzere yüklemesi sırasında özel bir kullanıcı deneyimi uygulayabilirsiniz. Özel yükleyici yükleme işlemlerini gerçekleştirmek için kullandığı <xref:System.Deployment.Application.InPlaceHostingManager> sınıfı. Bu yönerge, sessiz bir ClickOnce uygulamasını yükleyen özel bir yükleyici oluşturma işlemini gösterir.  
@@ -86,6 +81,3 @@ Bir .exe dosyasını temel alan herhangi bir ClickOnce uygulaması sessizce yük
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)   
  [\<entryPoint > öğesi](../deployment/entrypoint-element-clickonce-application.md)
-
-
-

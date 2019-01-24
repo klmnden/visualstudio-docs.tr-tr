@@ -1,29 +1,24 @@
 ---
-title: 'Nasıl yapılır: bir Atom oluşturmak için özel bir galeriyi akış | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Atom oluşturmak için özel bir galeriyi akış | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f720c4297ab2ff31abe90365b0e25209762dba1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796243"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: bir Atom oluşturmak için özel bir galeriyi akışı
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: Özel Bir Galeri için Atom Akışı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** özel bir galeri olarak. Daha fazla bilgi için [özel galeriler](../extensibility/private-galleries.md).  
@@ -82,4 +77,3 @@ Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS a
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Galeriler](../extensibility/private-galleries.md)
-

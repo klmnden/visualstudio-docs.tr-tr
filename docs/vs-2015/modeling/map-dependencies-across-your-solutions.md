@@ -1,11 +1,8 @@
 ---
 title: Çözümlerinizdeki bağımlılıkları eşleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792200"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
 ##  <a name="GetStarted"></a> Kod haritaları ile çalışmaya başlama  
  **Kod haritaları kullanmak için ya da ihtiyaç duyarsınız**:  
   
--   Visual Studio Enterprise: kod Haritaları, Kod Düzenleyicisi'nde, Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı oluşturun.  
+-   Visual Studio Enterprise: Kod Haritaları, Kod Düzenleyicisi'nde, Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı oluşturun.  
   
--   Visual Studio Professional: kod haritalarını açmak, sınırlı düzenlemeler yapmak ve koda gitmek.  
+-   Visual Studio Professional: Kod haritalarını açmak, sınırlı düzenlemeler yapmak ve koda gitmek.  
   
 > [!WARNING]
 >  Visual Studio Professional kullanan Visual Studio Enterprise'da başkalarıyla oluşturulan haritalar paylaşmadan önce (örneğin, gizli öğeler, genişletilmiş gruplar ve çapraz grup bağlantılarını) eşlemedeki tüm öğelerin görünür yapıldığından emin olun.  
@@ -72,7 +69,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
   
 - X ++ projeleri ve Microsoft Dynamics AX için .NET modüllerinden yapılan derlemeler  
   
-  **Not:** dışında C# veya Visual Basic .NET projeleri için kod Haritası başlatma veya mevcut bir kod haritası için öğe ekleme için daha az seçenek vardır. Örneğin, bir C++ projesinin metin düzenleyicisinde bir nesneye sağ tıklayın ve bir kod haritasına ekleyin. Ancak, sürükleyin ve Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı'ndan ayrı bir kod öğeleri veya dosyaları bırakın.  
+  **Not:** Projelerin dışında C# veya Visual Basic .NET, bir kod Haritası başlatılıyor veya mevcut bir kod haritası için öğe ekleme için daha az seçenek vardır. Örneğin, bir C++ projesinin metin düzenleyicisinde bir nesneye sağ tıklayın ve bir kod haritasına ekleyin. Ancak, sürükleyin ve Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı'ndan ayrı bir kod öğeleri veya dosyaları bırakın.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Çözümünüzü arasında genel bağımlılıkları görmek için  
   
@@ -347,7 +344,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Harita diğer Visual Studio kullanıcılarıyla paylaşma  
  Kullanım **dosya** harita kaydetmek için menü.  
   
- veya  
+ -veya-  
   
  Haritanın harita araç çubuğunda belirli projenin bir parçası kaydetmek için seçin **paylaşımı**, **taşıma** \< *CodeMapName*>**.dgml içine**, harita kaydetmek istediğiniz projeyi seçin.  
   
@@ -376,7 +373,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
   
 2.  Dosyayı kaydetmek istediğiniz yere göz atın.  
   
-3.  Kod Haritası adı. Emin olun **farklı kaydetme türü** kutusu ayarlandığında **XPS dosyaları (\*.xps)**. Seçin **Kaydet**.  
+3.  Kod Haritası adı. Emin olun **farklı kaydetme türü** kutusu ayarlandığında **XPS dosyaları (\*.xps)**. **Kaydet**’i seçin.  
   
 ## <a name="what-else-can-i-do"></a>Başka ne yapabilirim?  
   
@@ -389,6 +386,3 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
 -   [Kod haritalarına göz atma ve bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [DGML dosyalarını düzenleyerek kod haritalarını özelleştirme](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

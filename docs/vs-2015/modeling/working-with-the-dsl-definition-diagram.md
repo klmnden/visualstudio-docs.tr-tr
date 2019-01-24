@@ -1,12 +1,9 @@
 ---
 title: DSL tanım diyagramı ile çalışma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792120"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL Tanım Diyagramı ile Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +75,4 @@ Diyagramı bir [!INCLUDE[dsl](../includes/dsl-md.md)] tanımı etki alanına öz
  Bir etki alanı ilişkisi ilişkileri türetilmiş ya da diğer etki alanı ilişkileri gömme veya başvuru ilişkileri varsa, ilişkiyi sınıf olarak ilişkiye sağ tıklayın ve ardından görüntüleyebilirsiniz **sınıf olarak göster** . İlişki ile görüntülenen bir **etki alanı özellikleri** bölme ve devralma ve ilişkiler ağaçları gösterilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,14 +1,9 @@
 ---
 title: MSBuild görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772343"
 ---
 # <a name="msbuild-task"></a>MSBuild Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,8 +46,8 @@ Yapılar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] başka projele
 |`SkipNonexistentProjects`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, disk üzerinde mevcut proje dosyaları atlanacak. Aksi takdirde, bu gibi projeler hataya neden olur.|  
 |`StopOnFirstFailure`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, bir proje oluşturmak, başarısız olduğunda daha fazla proje oluşturulacaktır. Şu anda bu (ile birden çok işlemci) paralel derlerken desteklenmez.|  
 |`TargetAndPropertyListSeparators`|İsteğe bağlı `String[]` parametresi.<br /><br /> Hedefleri ve özellikleri olarak listesini belirtir `Project` öğe meta verileri). Ayırıcılar önce işleme kaçılmamış olacaktır. Örneğin % 3B (Atlanan ';') bir kaçılmamış gibi kabul edilir;'.|  
-|`TargetOutputs`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıkış parametresi.<br /><br /> Oluşturulan hedeflerin çıkışları tüm proje dosyaları döndürür. Yalnızca belirtilen hedef çıkışları döndürüldüğü, hedeflerin bağımlı hedeflerde mevcut olmayan herhangi bir çıkış.<br /><br /> `TargetOutputs` Parametresi, aşağıdaki meta verileri de içerir:<br /><br /> -   `MSBuildSourceProjectFile`[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Çıkışları ayarlanan hedefi içeren proje dosyası.<br />-   `MSBuildSourceTargetName`: Hedef çıkışları ayarlayın. **Not:** her proje dosyası çıkışları tanımlamak veya ayrı olarak hedef, çalıştırmak istediğiniz varsa `MSBuild` her bir proje dosyası veya hedef için ayrı ayrı görev. Çalıştırırsanız `MSBuild` yalnızca tüm proje dosyaları oluşturmak için hedef çıkışları bir diziye toplandıktan sonra görev.|  
-|`Targets`|İsteğe bağlı `String` parametresi.<br /><br /> Hedef veya hedefleri, proje dosyalarını oluşturmak için belirtir. Hedef adlarının bir listesini ayırmak için noktalı virgül kullanın. Hiçbir hedef belirtilirse `MSBuild` görev, proje dosyalarında belirtilen varsayılan hedefler oluşturulur. **Not:** hedefleri tüm proje dosyaları içinde gerçekleşmelidir. Aksi takdirde, bir derleme hatası oluşur.|  
+|`TargetOutputs`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıkış parametresi.<br /><br /> Oluşturulan hedeflerin çıkışları tüm proje dosyaları döndürür. Yalnızca belirtilen hedef çıkışları döndürüldüğü, hedeflerin bağımlı hedeflerde mevcut olmayan herhangi bir çıkış.<br /><br /> `TargetOutputs` Parametresi, aşağıdaki meta verileri de içerir:<br /><br /> -   `MSBuildSourceProjectFile`: [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Çıkışları ayarlanan hedefi içeren proje dosyası.<br />-   `MSBuildSourceTargetName`: Çıktıları ayarlanan hedef. **Not:**  Her proje dosyası çıkışları tanımlamak veya ayrı olarak hedef, çalıştırmak istediğiniz varsa `MSBuild` her bir proje dosyası veya hedef için ayrı ayrı görev. Çalıştırırsanız `MSBuild` yalnızca tüm proje dosyaları oluşturmak için hedef çıkışları bir diziye toplandıktan sonra görev.|  
+|`Targets`|İsteğe bağlı `String` parametresi.<br /><br /> Hedef veya hedefleri, proje dosyalarını oluşturmak için belirtir. Hedef adlarının bir listesini ayırmak için noktalı virgül kullanın. Hiçbir hedef belirtilirse `MSBuild` görev, proje dosyalarında belirtilen varsayılan hedefler oluşturulur. **Not:**  Hedefler proje dosyalarının bulunması gerekir. Aksi takdirde, bir derleme hatası oluşur.|  
 |`ToolsVersion`|İsteğe bağlı `String` parametresi.<br /><br /> Belirtir `ToolsVersion` bu göreve geçirilen projeler oluşturma sırasında kullanılacak.<br /><br /> Sağlayan bir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] farklı bir sürümünü hedefleyen bir proje oluşturmak için görev [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] projede belirtilenden. Geçerli değerler `2.0`, `3.0` ve `3.5`. Varsayılan değer `3.5`.|  
 |`UnloadProjectsOnCompletion`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, işlem tamamlandıktan sonra projenin yüklemesi kaldırılır.|  
 |`UseResultsCache`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, önbelleğe alınan sonuç, varsa, döndürülür. TheMSBuild görevi çalıştırırsanız, sonuç bir kapsamda (ProjectFileName, GlobalProperties) önbelleğe alınır [TargetNames]<br /><br /> Yapı öğeleri listesi olarak|  
@@ -198,6 +193,3 @@ Yapılar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] başka projele
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

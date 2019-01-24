@@ -11,20 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800962"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilir Hizmetlerin Listesi
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve Visual Studio SDK'sı, aşağıdaki hizmetleri destekler. Bazı paketler, burada listelenmeyen kendi hizmetler sunan — Örneğin, dil Hizmetleri tek bir hizmet GUID yoktur. Kayıt defterinde dil hizmetinin GUID'i bulmak için dil adını kullanmanız gerekir.  
-  
- Her hizmet gösterilen arabirimleri ve birincil arabirim edinmek için burada listelenen veya başka bir kaynaktan (örneğin, dil Hizmetleri) alınan hizmet GUID'i saklama kullanın.  
-  
-## <a name="the-services"></a>Hizmetleri  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve Visual Studio SDK'sı, aşağıdaki hizmetleri destekler. Bazı paketler, burada listelenmeyen kendi hizmetler sunan — Örneğin, dil Hizmetleri tek bir hizmet GUID yoktur. Kayıt defterinde dil hizmetinin GUID'i bulmak için dil adını kullanmanız gerekir.
+
+Her hizmet gösterilen arabirimleri ve birincil arabirim edinmek için burada listelenen veya başka bir kaynaktan (örneğin, dil Hizmetleri) alınan hizmet GUID'i saklama kullanın.
+
+## <a name="the-services"></a>Hizmetleri
+
 | Hizmet | Arabirim | Visual Studio | Visual Studio 2005 | Açıklama |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Evet | Evet | VSPackage'ları tarafından elde etmek için kullanılan bir <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> zaman uyumsuz veri aktarımları kolaylaştırmak için bir ActiveX denetiminden arabirimi. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964643"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Evet | Evet | Bir URL URL'lerin en son kullanılanlar (MRU) listeye ekleyin ve MRU listesindeki tüm URL'lerin listesini almak için bir VSPackage sağlar. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Evet | Evet | VSPackage'ı, paket veya paket bölümü yer pencere çerçevesi almak etkinleştirir. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Evet | Evet | Belirli bir meta veri dosyası ile ilişkili olan XML biçimli belge dosyaları erişim sağlar. |
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [COM ve yönetilen hizmetler](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Hizmetleri Kullanma ve Sağlama](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Hizmetleri Kullanma ve Sağlama](../../extensibility/using-and-providing-services.md)

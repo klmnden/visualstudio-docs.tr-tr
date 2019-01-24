@@ -1,11 +1,8 @@
 ---
 title: 'Nasıl yapılır: ASP.NET tabanlı iş akışları (eski) hata ayıklama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - ASP.NET, debugging workflows
@@ -16,15 +13,15 @@ ms.assetid: 79b21edc-9e7d-410d-af68-09c1598b9c30
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b9da40b0b40216fc36ea45b199ecde9c6dc4a89d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766217"
 ---
-# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Nasıl yapılır: hata ayıklama ASP.NET tabanlı iş akışları (eski)
+# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Nasıl yapılır: ASP.NET Tabanlı İş Akışlarında Hata Ayıklama (Eski)
 Bu konu, hata ayıklamak açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-tabanlı [!INCLUDE[wf](../includes/wf-md.md)] ya da hedefleyen uygulamalar [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] eski içinde [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
  ASP.NET'te başlatılan eski iş akışı veya iş akışı barındıran işleme ekleyerek bir Web hizmeti olarak yayımlanır eski iş akışı hata ayıklaması yapabilirsiniz.  
@@ -57,5 +54,5 @@ Bu konu, hata ayıklamak açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.m
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Workflow Foundation (eski) için Visual Studio hata ayıklayıcısını çağırma](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
- [Nasıl yapılır: (eski) akışlarında kesme noktası ayarlama](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
+ [Nasıl yapılır: (Eski) iş akışlarında kesme noktaları ayarlama](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [Eski İş Akışlarında Hata Ayıklama](../workflow-designer/debugging-legacy-workflows.md)

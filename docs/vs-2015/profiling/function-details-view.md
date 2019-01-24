@@ -1,14 +1,9 @@
 ---
 title: İşlev Ayrıntıları görünümünde | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784476"
 ---
 # <a name="function-details-view"></a>İşlev Ayrıntıları Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,6 +114,3 @@ ms.locfileid: "51799598"
 |-|-|  
 |**Kapsamlı Çekişmeler (Çekişme)**|-İçin bir **işlevi çağırma**, çağrılan işlev seçili işlev durumlarda oluşan kaynak Çekişme olayları sayısı. Çekişme olayları seçili işlev çağıran işlevler içerir.<br />-İçin **işlev gövdesi**, işlev, kendi kod yürütülürken oluşan Çekişme olaylarının toplam sayısı. Seçili işlev tarafından çağrılan işlevler gerçekleşen Çekişme dahil edilmez.<br />-Çağrılan işlev için seçili işlev tarafından çağrılan işlev örneklerinde oluştu Çekişme olayları sayısı. Çekişme olayları işlevi çağıran işlevler içerir.|  
 |**Kapsamlı engellenen zaman (engellenme süresi)**|-Bir arama işlevi için kaynak harcanan süreyi olayların seçili örnekleri için işlev Çekişme işlevi çağrılır. Saat çağrılan işlev seçili işlevlerde engellenme süresi içeriyor.<br />-İçin **işlev gövdesi**, işlev, kendi kod yürütülürken oluşan Çekişme olayları harcanan toplam süre. Seçili işlev çağıran işlevler içinde oluşan çakışmaları dahil edilmez.<br />-Çağrılan işlev için kaynak Çekişme olayları seçili işlevi çağıran işleve örnekleri için harcanan süre. Saat işlevi çağıran işlevler oluştu engellenme süresi içeriyor.|
-
-
-

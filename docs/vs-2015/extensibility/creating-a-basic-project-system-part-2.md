@@ -1,14 +1,9 @@
 ---
 title: Temel Proje sistemi oluşturma, bölüm 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755523"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje Sistemi Oluşturma, Bölüm 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +188,7 @@ ZipProjects:
   
     Üzerinde [!INCLUDE[win7](../includes/win7-md.md)]: Başlat menüsünde bulma **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** klasöre tıklayın ve ardından **Microsoft Visual Studio Deneysel örneğini sıfırlama**.  
   
-    Sonraki Windows sürümlerinde: Başlangıç ekranında, türü **Microsoft Visual Studio sıfırlama \<sürüm > deneysel örneğinde**.  
+    Sonraki Windows sürümlerinde: Başlangıç ekranında **Microsoft Visual Studio sıfırlama \<sürüm > deneysel örneğinde**.  
   
 2. Bir komut istemi penceresi görüntülenir. Sözcükleri gördüğünüzde `Press any key to continue`, ENTER'ı tıklatın. Pencere kapandıktan sonra Visual Studio'yu açın.  
   
@@ -230,7 +225,7 @@ ZipProjects:
   
 5.  .Csproj dosyasında, ekleme \<OutputSubPath > ZipProject öğelerin her biri için. Önce olarak da projeyi kaldırmak ve proje dosyasını düzenleyin.  
   
-6.  Bulun \<ZipProject > öğeleri. Her \<ZipProject > öğesini ekleyin bir \<OutputSubPath > öğesi ve bu değeri konsol verin. ZipProject  
+6.  Bulun \<ZipProject > öğeleri. Her \<ZipProject > öğesini ekleyin bir \<OutputSubPath > öğesi ve bu değeri konsol verin. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$, bir kullanıcı tarafından sağlanan adıdır **yeni proje** iletişim kutusu, tüm güvenli olmayan karakterleri ve boşlukları kaldırmak için değiştirildi.  
   
-  Şablon parametreleri tam bir listesi için bkz. [şablon parametreleri](../ide/template-parameters.md).  Kendi özel bir şablon parametresi oluşturmak istiyorsanız, bkz. [NIB: nasıl yapılır: özel parametreleri geçirmek şablonlarına](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Şablon parametreleri tam bir listesi için bkz. [şablon parametreleri](../ide/template-parameters.md).  Kendi özel bir şablon parametresi oluşturmak istiyorsanız, bkz. [NIB: Nasıl yapılır: Şablonlara özel parametreleri geçirmek](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Proje şablonu parametreleri değiştirmek için  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Visual Studio'nun deneysel örneği kapatın.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

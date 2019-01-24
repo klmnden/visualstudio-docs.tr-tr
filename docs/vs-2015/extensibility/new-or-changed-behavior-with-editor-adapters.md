@@ -1,26 +1,21 @@
 ---
 title: Yeni veya değiştirilen davranışı Düzenleyicisi bağdaştırıcısıyla | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758951"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Düzenleyici bağdaştırıcıları ile yeni veya değiştirilen davranışı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış
   
 ## <a name="features"></a>Özellikler  
   
-#### <a name="using-setsite"></a>SetSite() kullanma  
+#### <a name="using-setsite"></a>Using SetSite()  
  Çağırmalısınız <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> zaman işlemi metin arabelleğini metin görünümleri ve bunlar üzerinde herhangi bir işlem gerçekleştirmeden önce windows kod. Ancak, bu kullanırsanız, gerekli değildir <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> bu hizmetin Create() yöntemleri kendilerini çağırmak için onları oluşturmak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  
   
 #### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>Kendi içeriğinizi IVsCodeWindow ve Ivstextview barındırma  
@@ -150,4 +145,3 @@ Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> Anahat oluşturma kullanıcı Arabirimi tarafından yok sayıldı ancak bağdaştırıcılarında uygulanır.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> Anahat oluşturma kullanıcı Arabirimi tarafından yok sayıldı ancak bağdaştırıcılarında uygulanır.|
-

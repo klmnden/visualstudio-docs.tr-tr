@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: GPU iş parçacıkları penceresini kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -23,15 +18,15 @@ ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8afd9cd09cf5977f58ee3a48b891f5291869b49c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee086109faa43976c9c8172cbc3af677ac140b5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796099"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma
+# <a name="how-to-use-the-gpu-threads-window"></a>Nasıl yapılır: GPU iş parçacıkları penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 GPU iş parçacıkları penceresinde inceleyin ve uygulamada hata ayıklaması yaptığınız GPU üzerinde çalışan iş parçacıklarının çalışın. GPU üzerinde çalışan uygulamalar hakkında daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
@@ -76,7 +71,7 @@ GPU iş parçacıkları penceresinde inceleyin ve uygulamada hata ayıklaması y
   
 ### <a name="to-change-to-a-different-active-thread"></a>Farklı bir etkin iş parçacığı değiştirmek için  
   
--   Sütununu çift tıklatın. (Klavye: satırı seçin ve ENTER tuşuna basın.)  
+-   Sütununu çift tıklatın. (Klavye: Satırı seçin ve ENTER tuşuna basın.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Belirli döşeme ve iş parçacığı görüntülemek için  
   
@@ -112,8 +107,5 @@ GPU iş parçacıkları penceresinde inceleyin ve uygulamada hata ayıklaması y
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl yapılır: paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)   
- [İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-
+ [Nasıl yapılır: Paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

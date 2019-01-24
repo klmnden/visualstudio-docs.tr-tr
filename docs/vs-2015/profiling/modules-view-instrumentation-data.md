@@ -1,27 +1,22 @@
 ---
 title: Modüller görünümü - izleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 55a01dab80d15bcd7356bc059db2be6d10f504a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4455f850ad533f17cd9f6cb33e7e874621d0bb2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787687"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modüller Görünümü - İzleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,6 +87,3 @@ Modüller görünümü, profil oluşturma verileri olan modüller tarafından gr
  [Modüller görünümü](../profiling/modules-view-sampling-data.md)   
  [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modüller Görünümü- Örnekleme](../profiling/modules-view-dotnet-memory-sampling-data.md)
-
-
-

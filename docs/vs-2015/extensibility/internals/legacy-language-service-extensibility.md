@@ -1,27 +1,22 @@
 ---
 title: Eski dil hizmeti genişletilebilirliği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6481dfd425f549742ad208df0d2cd04dd182c82f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9346311aac4bc5833005423e90c2eb92faddcb84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770160"
 ---
 # <a name="legacy-language-service-extensibility"></a>Eski Dil Hizmeti Genişletilebilirliği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ Dil hizmeti, IDE içindeki kaynak kodu düzenleme için dile özgü destek sağl
   
  [Hata Ayıklama için Dil Hizmeti Desteği](../../extensibility/internals/language-service-support-for-debugging.md)  
  Visual Studio hata ayıklama oluşturmak ve programların hatalarını ayıklamak için kullanılan hata ayıklayıcı bileşenleri özelleştirmek için gerekli bilgileri içeren SDK için bağlantı ve hakkında bilgi sağlar.
-

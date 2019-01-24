@@ -1,25 +1,22 @@
 ---
-title: 'Nasıl yapılır: tanımlama ve iş akışı tasarımcısında etkinlik temsilcileri kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Tanımlama ve iş akışı tasarımcısında etkinlik temsilcileri kullanma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 37adb6cf6462887010b1c06c7d5af4a539203b15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803602"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl yapılır: tanımlama ve iş akışı tasarımcısında etkinlik temsilcileri kullanma
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl yapılır: İş Akışı Tasarımcısında etkinlik temsilcileri tanımlama ve kullanma
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] için yeni bir out-of-box Tasarımcı içerir <xref:System.Activities.Statements.InvokeDelegate> etkinlik. Bu tasarımcı, türetilen etkinlik temsilcileri atamak için kullanılabilir <xref:System.Activities.ActivityDelegate>, gibi <xref:System.Activities.ActivityAction> veya <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Bir etkinlik temsilci tanımlama  

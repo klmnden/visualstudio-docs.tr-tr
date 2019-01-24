@@ -1,14 +1,9 @@
 ---
 title: Sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776386"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   
 - .deploy  
   
-  Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.  
+  Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.  
   
   IIS olmayan yüklü kullanıyorsanız .manifest ve .application .deploy, örneğin, yapılandırma gerekecektir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], veya başka bir Web sunucusu (örn. Apache) kullanıyorsanız.  
   
@@ -109,15 +104,15 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
 |https://|Yükleyebileceğiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bu protokolü kullanarak uygulama.|  
 |File://|Yükleyebileceğiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bu protokolü kullanarak uygulama.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2'de: Windows Güvenlik Duvarı  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows Güvenlik Duvarı  
  Varsayılan olarak, Windows XP SP2, Windows Güvenlik Duvarı'nı etkinleştirir. Windows XP yüklü olduğu bir bilgisayarda uygulama geliştiriyorsanız, yayımlama ve çalıştırmak koruyabilmeyi [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] IIS çalıştıran sunucunun yerel uygulamalar. Ancak, Windows Güvenlik Duvarı açık değilse, IIS çalıştıran başka bir bilgisayardan o sunucuya erişemez. Windows Güvenlik Duvarı'nı yönetme hakkında yönergeler için Windows yardımına bakın.  
   
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: FrontPage sunucu uzantılarını etkinleştir  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server için: FrontPage sunucu uzantılarını etkinleştir  
  Microsoft FrontPage Server Extensions HTTP kullanan bir Windows Web sunucusundaki uygulama yayımlama için gereklidir.  
   
  Varsayılan olarak, FrontPage Server Extensions yüklü Windows Server yok. Kullanmak istiyorsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] FrontPage Server Extensions ile HTTP kullanan bir Windows Server Web sunucusuna yayımlamak için FrontPage Server Extensions önce yüklemelisiniz. Windows Server'da sunucunuzu yönetin Yönetim Aracı'nı kullanarak yükleme gerçekleştirebilirsiniz.  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Kilitli içerik türleri  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server için: Kilitlenmiş içerik türleri  
  IIS üzerinde [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] belirli bilinen içerik türü (örneğin, .htm, .html, .txt ve benzeri) hariç tüm dosya türlerini kilitler. Dağıtımını etkinleştirmek için [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bu sunucuyu kullanan uygulamalar, .application, .manifest ve uygulamanız tarafından kullanılan başka bir özel dosya türleri dosyalarının yüklenmesine izin verecek IIS ayarlarını değiştirmeniz gerekir.  
   
  Bir IIS sunucusu kullanarak dağıtırsanız, inetmgr.exe çalıştırın ve yeni dosya türleri için varsayılan Web Sayfası Ekle:  
@@ -144,6 +139,3 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
  [ClickOnce dağıtım sorunlarını giderme](../deployment/troubleshooting-clickonce-deployments.md)   
  [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Uygulama Dağıtımının Önkoşulları](../deployment/application-deployment-prerequisites.md)
-
-
-

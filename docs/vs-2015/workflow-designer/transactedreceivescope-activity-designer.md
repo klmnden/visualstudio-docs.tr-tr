@@ -1,11 +1,8 @@
 ---
 title: TransactedReceiveScope etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.TransactedReceiveScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e718aaf754e9b4617aeb733196a73aa1bc125a9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f4864a19cf48b468abed90e120e4924237653cec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799331"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope Etkinlik Tasarımcısı
 **TransactedReceiveScope** Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.TransactedReceiveScope> etkinlik.  
@@ -37,7 +34,7 @@ ms.locfileid: "49245251"
 ### <a name="the-transactedreceivescope-properties"></a>TransactedReceiveScope özellikleri  
  Aşağıdaki tabloda <xref:System.ServiceModel.Activities.TransactedReceiveScope> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bunlar <xref:System.Activities.Activity.DisplayName%2A> özelliği, özellik kılavuzu veya Cihazınızda düzenlenebilir [!INCLUDE[wfd2](../includes/wfd2-md.md)] surface, ama sıklıkla başkalarını gerekir düzenlenmesi tasarım yüzeyinde.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı <xref:System.ServiceModel.Activities.TransactedReceiveScope> etkinlik. TransactedReceiveScope varsayılandır.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> adı kesinlikle gerekli değil, görünen adı kullanmak için en iyi bir uygulamadır.|  
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Doğru|Bırakılanlar bir <xref:System.ServiceModel.Activities.Receive> etkinliğini **istek** etkinlik tasarımcısının yüzeyine blok.|  

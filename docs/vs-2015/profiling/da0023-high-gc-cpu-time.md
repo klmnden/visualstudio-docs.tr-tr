@@ -1,14 +1,9 @@
 ---
 title: 'DA0023: Yüksek GC CPU süresi | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0023
 - vs.performance.23
@@ -17,13 +12,13 @@ ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6aab85fcead879aa719879cd0d3c53cf9db4ffa3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: acfb3a5c88ba730960ac0f90a7b9263c2d02a204
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794166"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Yüksek GC CPU süresi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,12 +42,9 @@ Kural Kimliği | DA0023 |
  Bu kural, çöp toplamaya harcanan süreyi toplam uygulama işleme süresi ile karşılaştırıldığında önemli olduğunda tetikler.  
   
 > [!NOTE]
->  Toplam uygulama işleme süresi ile karşılaştırıldığında oranı çöp toplamaya harcanan süresinin aşırı olduğunda [DA0024: aşırı GC CPU zamanı](../profiling/da0024-excessive-gc-cpu-time.md) yerine bu kural uyarı ateşlenir.  
+>  Toplam uygulama işleme süresi ile karşılaştırıldığında oranı çöp toplamaya harcanan süresinin aşırı olduğunda [DA0024: Aşırı GC CPU zamanı](../profiling/da0024-excessive-gc-cpu-time.md) yerine bu kural uyarı ateşlenir.  
   
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
  Hata Listesi penceresindeki iletiyi gitmek için çift tıklatın [işaret görünümü](../profiling/marks-view.md) profil oluşturma verilerinin. Bulma **.NET CLR bellek\\% gc'de zaman** sütun. Varsa belirli program yürütme aşamaları çöp toplamanın yönetilen bellek yükü diğer aşamaları ağır olduğu belirleyin. Gc'de zaman % değerlerini değer çöp toplama oranını karşılaştırma bildirilen içinde **Gen 0 toplamaları sayısı**, **Gen 1 toplamaları sayısı**, **Gen 2 toplamaları sayısı** değerleri .  
   
  Bir uygulama işleme toplam tutarı orantılı gerçekleştirme çöp toplama için harcadığı süreyi bildirmek % GC değerindeki zamanı çalışır. Bazı durumlarda % GC değerindeki zamanı çok yüksek bir değere bildirebilirsiniz, ancak nedeniyle aşırı çöp toplama değil unutmayın. % GC değerindeki zamanı hesaplanır biçimi hakkında daha fazla bilgi için bkz. [fark arasındaki performans verileri tarafından bildirilen farklı araçları – 4](http://go.microsoft.com/fwlink/?LinkId=177863) girişi **Maoni'nın blog** MSDN'de. Sayfa hataları ortaya çıkan veya uygulama tarafından diğer daha yüksek öncelikli iş makinede çöp toplama sırasında geçersiz kılınırsa, GC sayacı zaman % bu ek gecikmelere ücreti yansıtılır.
-
-
-

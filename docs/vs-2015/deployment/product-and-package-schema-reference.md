@@ -1,14 +1,9 @@
 ---
 title: Ürün ve paket şema başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775311"
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve Paket Şema Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
   
 |Öğe|Açıklama|Öznitelikler|  
 |-------------|-----------------|----------------|  
-|[\<Ürün > öğesi](../deployment/product-element-bootstrapper.md)|Ürün dosyaları için gerekli en üst düzey öğe.|Yok.|  
+|[\<Ürün > öğesi](../deployment/product-element-bootstrapper.md)|Ürün dosyaları için gerekli en üst düzey öğe.|Hiçbiri|  
 |[\<Paket > öğesi](../deployment/package-element-bootstrapper.md)|Paket dosyaları için gerekli en üst düzey öğe.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > öğesi](../deployment/relatedproducts-element-bootstrapper.md)|Ürün dosyaları için isteğe bağlı öğe. Bu ürünü yükleyen veya bağımlı diğer ürünleri.|Yok.|  
-|[\<InstallChecks > öğesi](../deployment/installchecks-element-bootstrapper.md)|Gerekli öğe. Listeler, yükleme sırasında yerel bilgisayarda gerçekleştirmek için bağımlılık denetler.|Yok.|  
-|[\<Komutları > öğesi](../deployment/commands-element-bootstrapper.md)|Gerekli öğe.  Bir veya daha fazla yükleme denetimleri tarafından açıklandığı şekilde yürütür `InstallChecks`ve yüklenecek gerektiğini gösterir başarısız.|Yok.|  
-|[\<PackageFiles > öğesi](../deployment/packagefiles-element-bootstrapper.md)|Gerekli öğe. Bu yükleme işlemi tarafından yüklenmiş olabilecek paketleri listeler.|Yok.|  
-|[\<Dizeleri > öğesi](../deployment/strings-element-bootstrapper.md)|Gerekli öğe. Depoları, ürün adı ve hata dizelerini sürümlerini yerelleştirilmiş.|Yok.|  
+|[\<RelatedProducts > öğesi](../deployment/relatedproducts-element-bootstrapper.md)|Ürün dosyaları için isteğe bağlı öğe. Bu ürünü yükleyen veya bağımlı diğer ürünleri.|Hiçbiri|  
+|[\<InstallChecks > öğesi](../deployment/installchecks-element-bootstrapper.md)|Gerekli öğe. Listeler, yükleme sırasında yerel bilgisayarda gerçekleştirmek için bağımlılık denetler.|Hiçbiri|  
+|[\<Komutları > öğesi](../deployment/commands-element-bootstrapper.md)|Gerekli öğe.  Bir veya daha fazla yükleme denetimleri tarafından açıklandığı şekilde yürütür `InstallChecks`ve yüklenecek gerektiğini gösterir başarısız.|Hiçbiri|  
+|[\<PackageFiles > öğesi](../deployment/packagefiles-element-bootstrapper.md)|Gerekli öğe. Bu yükleme işlemi tarafından yüklenmiş olabilecek paketleri listeler.|Hiçbiri|  
+|[\<Dizeleri > öğesi](../deployment/strings-element-bootstrapper.md)|Gerekli öğe. Depoları, ürün adı ve hata dizelerini sürümlerini yerelleştirilmiş.|Hiçbiri|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Paketin şemanın Setup.exe, kendi sabit kodlanmış az mantığı içeren MS Build'e önyükleme görev tarafından oluşturulan bir saplama programı tarafından kullanılır. Şema her yönüyle yükleme işlemini yürütür.  
@@ -168,6 +163,3 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Uygulama Bildirimi](../deployment/clickonce-application-manifest.md)
-
-
-

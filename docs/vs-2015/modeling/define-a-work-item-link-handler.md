@@ -1,25 +1,22 @@
 ---
 title: Bir iş öğesi bağlantı işleyicisini tanımlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767964"
 ---
 # <a name="define-a-work-item-link-handler"></a>İş öğesi bağlantı işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +160,7 @@ namespace WorkItems
   
      Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
   
-     **Sorun giderme**: yeni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] değil başlatın, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
+     **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] değil başlatın, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
 2.  Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun.  
   
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  Çalışma öğesinin artık kırmızı renk olduğunu doğrulayın. Bu gösterir `OnWorkItemLinked()` örnek kodda.  
   
-     **Sorun giderme**: işleyici yöntemler çalışmadıysa doğrulayın:  
+     **Sorun giderme**: İşleyici yöntemler çalışmadıysa, aşağıdakileri doğrulayın:  
   
     -   Sınıf Kitaplığı projesini MEF Bileşeni olarak listelenir **içerik** listesinde **source.extensions.manifest** VSIX projesinde.  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Model öğelerine başvuru dizelerini iliştirme](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Modelleme Uzantısı Tanımlama ve yükleme](../modeling/define-and-install-a-modeling-extension.md)   
  [UML API ile programlama](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: UML modelleri için doğrulama kısıtlamaları tanımlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782420"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780604"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML modelleri için doğrulama kısıtlamaları tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
   
-     **Sorun giderme**: yeni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
+     **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
   
     -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  Hata raporuna çift tıklayın. Raporda belirtilen öğeler ekranda görünür durumdaysa vurgulanacaklardır.  
   
-     **Sorun giderme**: varsa **doğrulama** komut görünmez menüde emin olun:  
+     **Sorun giderme**: Varsa **doğrulama** komut görünmez menüde emin olun:  
   
     -   Doğrulama projesi, bir MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
   
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modelleme Uzantısı Tanımlama ve yükleme](../modeling/define-and-install-a-modeling-extension.md)   
  [UML API ile programlama](../modeling/programming-with-the-uml-api.md)
-
-
-

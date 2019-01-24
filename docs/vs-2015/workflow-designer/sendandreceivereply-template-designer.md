@@ -1,11 +1,8 @@
 ---
 title: SendAndReceiveReply şablon Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
@@ -14,13 +11,13 @@ ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e2b7ffb52979c0899949806ae97b562f76b0b3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804946"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply Şablon Tasarımcısı
 **SendAndReceiveReply** şablon çifti oluşturmak için kullanılan önceden yapılandırılmış <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> içindeki etkinlikleri bir <xref:System.Activities.Statements.Sequence> istek/yanıt iletisi exchange bir parçası olarak bağıntılı olan etkinliği istemci üzerinde deseni.  
@@ -47,7 +44,7 @@ ms.locfileid: "49884959"
  Aşağıdaki tabloda <xref:System.ServiceModel.Activities.ReceiveReply> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri Özellikler Kılavuzu ' düzenlenebilir ve bazı şirket düzenlenebilir [!INCLUDE[wfd2](../includes/wfd2-md.md)]Tasarımcı yüzeyine bırakın.  
 
 
-|                                 Özellik adı                                 | Gerekli |                                                                                                                                                                                                                                                                                                                                                        Kullanım                                                                                                                                                                                                                                                                                                                                                        |
+|                                 Özellik Adı                                 | Gerekli |                                                                                                                                                                                                                                                                                                                                                        Kullanım                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |               <xref:System.Activities.Activity.DisplayName%2A>                |  False   |                                                                                                                                                                                            İsteğe bağlı kolay adı <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik. ReceiveReplyForSend varsayılandır.<br /><br /> Ancak kolay için varsayılan olmayan bir değeri kullanımını <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil gibi bir değer kullanmak için en iyi bir uygulamadır.                                                                                                                                                                                            |
 |         <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A>         |   Doğru   | Başvuru <xref:System.ServiceModel.Activities.Send> etkinlik ile eşleştirilmiş <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik. Bu özellik olmamalıdır **null**. <xref:System.ServiceModel.Activities.Send> ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler birlikte istemcide bir istek/yanıt Mesajlaşma modeli model için kullanılır. Bu özellik belirten <xref:System.ServiceModel.Activities.Send> etkinlik eşleştirilmiştir. Tasarımcıda için otomatik olarak bağlı olduğundan bu özellik düzenlenemiyor <xref:System.ServiceModel.Activities.Send> oluşturduğunuz etkinlik <xref:System.ServiceModel.Activities.ReceiveReply> etkinlik. |

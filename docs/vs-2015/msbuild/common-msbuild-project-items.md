@@ -1,14 +1,9 @@
 ---
 title: Yaygın MSBuild proje öğeleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796883"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild Proje Öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +121,7 @@ ms.locfileid: "49238413"
 |Görünür|İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Yok.  
+### <a name="none"></a>Hiçbiri  
  Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.  
   
 |Öğe adı|Açıklama|  
@@ -145,11 +140,8 @@ ms.locfileid: "49238413"
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
  İçeri aktarmak için FxCop projesi temsil eder.  
   
-### <a name="import"></a>{1&gt;İçeri Aktar&lt;1}  
+### <a name="import"></a>İçeri Aktarma  
  Ad uzayları, tarafından aktarılacaksa derlemeleri temsil [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] derleyici.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yaygın MSBuild Proje Özellikleri](../msbuild/common-msbuild-project-properties.md)
-
-
-

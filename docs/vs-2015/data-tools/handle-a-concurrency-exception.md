@@ -1,12 +1,9 @@
 ---
 title: Bir eşzamanlılık özel durumunu işleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c784bbcb73190abd2b12bf6cc7768d27087b2e14
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758051"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 4.  Bir veri kümesini verilerle doldurmak `Customers` Northwind veritabanındaki tablo.  
   
-5.  Kullanım [Visual veritabanı araçları](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) doğrudan erişmek için Visual Studio'da `Customers` veri tablosu ve bir kaydı değiştirin.  
+5.  Kullanım [Visual veritabanı araçları](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) doğrudan erişmek için Visual Studio'da `Customers` veri tablosu ve bir kaydı değiştirin.  
   
 6.  Aynı kaydı başka bir değerle değiştirmek, veri kümesini güncelleştirin ve değişiklikleri gerçekleştirilen bir eşzamanlılık hatası sonuçları veritabanına yazma girişimi.  
   
@@ -59,7 +56,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
 -   Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim.
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  İzlenecek yol, yeni bir Windows uygulaması oluşturarak başlayın.  

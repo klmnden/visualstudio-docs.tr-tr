@@ -1,26 +1,21 @@
 ---
 title: 'İzlenecek yol: Kod parçacıkları uygulama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752056"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763338"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>İzlenecek Yol: Kod Parçacıkları Uygulama
+# <a name="walkthrough-implementing-code-snippets"></a>İzlenecek yol: Kod Parçacıklarını Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi kod ekleyebilmeniz bunları bir düzenleyici uzantısına dahil etme.  
@@ -37,7 +32,7 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
 3. Kod parçacığı genişletme uygulayın.  
   
-   Bu izlenecek yolda dayanır [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Bu izlenecek yolda dayanır [izlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -116,7 +111,7 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Kod parçacıkları için belirli bir GUID kaydetmek için  
   
-1.  Açık **CompletionTest** proje. Bu proje oluşturma hakkında daha fazla bilgi için bkz: [izlenecek yol: deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
+1.  Açık **CompletionTest** proje. Bu proje oluşturma hakkında daha fazla bilgi için bkz: [izlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 2.  Projede aşağıdaki derlemelere başvurular ekleyin:  
   
@@ -124,7 +119,7 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   Microsoft.MSXML  
+    -   microsoft.msxml  
   
 3.  Projede source.extension.vsixmanifest dosyasını açın.  
   
@@ -254,4 +249,3 @@ Kod parçacıklarınızı oluşturmak ve uzantının kullanıcılar için kendi 
 7.  Metni farklı bir parçası, "test" yazın ve sonra SEKME tuşuna basın. "Test" kod parçacığı kısayol olduğundan, kod parçacığı yeniden eklenmelidir.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar
-

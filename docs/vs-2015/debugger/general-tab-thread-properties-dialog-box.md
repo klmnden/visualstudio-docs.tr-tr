@@ -1,14 +1,9 @@
 ---
 title: Genel sekmesi, iş parçacığı Özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -16,13 +11,13 @@ ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2777096e13ef649f2a340d3b3cae92d050d9531f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773934"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Genel Sekmesi, İş Parçacığı Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Belirli bir iş parçacığı hakkında daha fazla bilgi için bu iletişim kutu
 |**Başlangıç adresi**|Bu iş parçacığı için sanal adres başlatılıyor.|  
 |**Kullanıcı PC'si**|İş parçacığı için kullanıcı program sayacının.|  
 |**Bağlam geçişleri**|Bir iş parçacığından anahtarlara sayısı. İş parçacığı anahtarlar, tek bir işlem içinde veya işlemler arasında ortaya çıkabilir. Bir iş parçacığı anahtarı bilgilerini soran başka bir iş parçacığı tarafından ya da daha yüksek öncelikli iş parçacığı çalışmaya hazır hale geldiğinde boşaltılması bir iş parçacığı tarafından kaynaklanabilir.|
-
-
-

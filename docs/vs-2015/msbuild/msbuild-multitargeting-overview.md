@@ -1,25 +1,20 @@
 ---
 title: MSBuild çoklu sürüm desteğine genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800386"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild Çoklu Sürüm Desteğine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ MSBuild kullanarak, .NET Framework'ün çeşitli sürümlerinden herhangi birini
   
 ## <a name="troubleshooting"></a>Sorun giderme  
  Hedef bağlam parçası olmayan bir derleme başvurusu çalışırsanız hatalarla karşılaşabilirsiniz. Bu hataları ve bunlarla ilgili yapılması gerekenler hakkında daha fazla bilgi için bkz. [.NET Framework hedefleme hataları giderme](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
-
-
-

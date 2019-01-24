@@ -1,27 +1,22 @@
 ---
 title: Azure SDK'yı etkinleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-azure
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-azure
+ms.topic: conceptual
 helpviewer_keywords:
 - azure
 - cloud
 ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b5831bfe9ef722e2253b35255ec23304068bab9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c67b33ec4c948698796856301783ce6536071984
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769878"
 ---
 # <a name="enabling-the-azure-sdk"></a>Azure SDK'yı etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ Azure SDK için oluşturma, yapılandırma, derleme, hata ayıklama, çalıştı
  [Azure](http://go.microsoft.com/fwlink?LinkID=164788)   
  [Azure kullanmaya başlama](http://go.microsoft.com/fwlink?LinkID=159361)   
  [Azure Topluluğu](http://go.microsoft.com/fwlink?LinkID=159370)
-

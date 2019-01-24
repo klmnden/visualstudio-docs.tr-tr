@@ -1,29 +1,24 @@
 ---
-title: 'Nasıl yapılır: kod parçacıklarını dağıtma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Kod parçacıklarını dağıtma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185711"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799038"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Nasıl Yapılır: Kod Parçacıklarını Dağıtma
+# <a name="how-to-distribute-code-snippets"></a>Nasıl yapılır: Kod parçacıklarını dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yalnızca, kod parçacıklarınız arkadaşlarınıza verebilir ve bunları kod parçacıkları Yöneticisi'ni kullanarak kendi bilgisayarlarındaki parçacıkları yükleyin. Bununla birlikte, dağıtılacak çok sayıda kod olması ya da daha yaygın olarak dağıtmak istiyorsanız, Visual Studio kullanıcıları yükleyebilmeniz için Visual Studio uzantısı kod parçacığı dosyanızı içerir.  
@@ -31,7 +26,7 @@ Yalnızca, kod parçacıklarınız arkadaşlarınıza verebilir ve bunları kod 
  Visual Studio uzantıları oluşturmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio yüklemenizle eşleşen VSSDK sürümünü bulun [Visual Studio 2015 indirmeleri](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  
   
 ## <a name="setting-up-the-extension"></a>Uzantı ayarlama  
- Bu yordamda oluşturulan Hello World kod parçacığını kullanacağız [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). Geri dönün ve bir yapmak zorunda kalmamak için Biz .snippet metin kullanacaksınız.  
+ Bu yordamda oluşturulan Hello World kod parçacığını kullanacağız [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). Geri dönün ve bir yapmak zorunda kalmamak için Biz .snippet metin kullanacaksınız.  
   
 1.  Adlı yeni bir VSIX projesi oluşturun **TestSnippet**. (**Dosya / yeni / Project / Visual C# (veya Visual Basic / genişletilebilirlik**)  
   
@@ -109,6 +104,3 @@ Yalnızca, kod parçacıklarınız arkadaşlarınıza verebilir ve bunları kod 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Parçacıkları](../ide/code-snippets.md)
-
-
-

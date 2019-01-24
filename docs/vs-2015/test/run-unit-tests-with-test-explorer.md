@@ -1,26 +1,21 @@
 ---
 title: Test Gezgini ile birim testleri çalıştırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805114"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,8 +130,8 @@ Test Gezgini, Visual Studio veya üçüncü taraf birim testi projelerini birim 
   
 |Grup|Açıklama|  
 |-----------|-----------------|  
-|**Süresi**|Yürütme süresine göre testi gruplandırır: **hızlı**, **orta**, ve **yavaş**.|  
-|**Sonucu**|Yürütme sonuçlarına göre testleri gruplandırır: **başarısız testler**, **Atlanan testler**, **başarılı testler**.|  
+|**Süresi**|Yürütme süresine göre testi gruplandırır: **Hızlı**, **orta**, ve **yavaş**.|  
+|**Sonucu**|Yürütme sonuçları tarafından grupları testler: **Başarısız testler**, **testler atlandı**, **testler geçildi**.|  
 |**Nitelikler**|Tanımladığınız kategori/değer çiftlerine göre testi gruplandırır. Nitelik kategorileri ve değerlerini belirtmek için sözdizimi birim test çerçevesi tarafından tanımlanır.|  
 |**Project**|Projelerin adına göre testi gruplandırır.|  
   
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Dosya yolu**|Test kaynak dosyaları tam olarak nitelenmiş dosya adını eşleşmelerini arar.|  
 |**Tam adı**|Test ad alanları, sınıflar ve yöntemler tam olarak nitelenmiş dosya adını eşleşmelerini arar.|  
 |**Output**|Standart çıkış (stdout) veya standart hata (stderr) yazılmış kullanıcı tanımlı hata iletileri arar. Çıktı iletilerini belirtmek için sözdizimi birim test çerçevesi tarafından tanımlanmıştır.|  
-|**Sonucu**|Eşleşmeleri için Test Gezgini kategori adlarını arar: **başarısız testler**, **Atlanan testler**, **başarılı testler**.|  
+|**Sonucu**|Eşleşmeleri için Test Gezgini kategori adlarını arar: **Başarısız testler**, **testler atlandı**, **testler geçildi**.|  
   
  Bir alt kümesini bir filtre sonuçlarını tutmak için aşağıdaki sözdizimini kullanın:  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Dış Kaynaklar  
   
 ###  <a name="BKMK_Guidance"></a> Kılavuzu  
- [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: birim testi: iç testler](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: Birim testi: İç testler](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
  [64 bitlik bir işlem olarak birim testi çalıştırma](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Koda bildirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788174"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,10 +29,10 @@ Kod aracı bildirime .imagemanifest dosya için Visual Studio Görüntü hizmeti
 |-|-|-|  
 |**Anahtar adı**|**Notlar**|**Gerekli veya isteğe bağlı**|  
 |bildirim /|Oluşturulacak veya güncelleştirilecek bir kod sarmalayıcısını kullanılacak görüntü bildiriminin yolu.|Gerekli|  
-|/Language|İçinde bir kod sarmalayıcısını üretileceği dil.<br /><br /> Geçerli değerler: CPP, C++, CS, CSharp, C#, VB veya VSCT değerler büyük küçük harf duyarsız.<br /><br /> VSCT dilini seçeneği /monikerClass, /classAccess ve/Namespace seçenekleri göz ardı edilir.|Gerekli|  
-|/imageIdClass|İmageIdClass ve aracı tarafından oluşturulan ilişkili dosya adı. C++ dil seçeneği için yalnızca .h dosyaları oluşturulur.<br /><br /> Varsayılan: \<bildirim yolu > \MyImageIds.\< Lang Ext >|İsteğe Bağlı|  
-|/monikerClass|MonikerClass ve aracı tarafından oluşturulan ilişkili dosya adı. C++ dil seçeneği için yalnızca .h dosyaları oluşturulur. VSCT dilini göz ardı edilir.<br /><br /> Varsayılan: \<bildirim yolu > \MyMonikers.\< Lang Ext >|İsteğe Bağlı|  
-|/classAccess|İmageIdClass ve monikerClass ait erişim değiştiricisinin. Erişim değiştiricisi verilen dil için geçerli olduğundan emin olun. VSCT dil seçeneğini göz ardı edilir.<br /><br /> Varsayılan: Genel|İsteğe Bağlı|  
+|/Language|İçinde bir kod sarmalayıcısını üretileceği dil.<br /><br /> Geçerli değerler: CPP, C++, CS, CSharp C#, VB veya VSCT değerleri büyük/küçük harfe duyarsızdır.<br /><br /> VSCT dilini seçeneği /monikerClass, /classAccess ve/Namespace seçenekleri göz ardı edilir.|Gerekli|  
+|/imageIdClass|İmageIdClass ve aracı tarafından oluşturulan ilişkili dosya adı. C++ dil seçeneği için yalnızca .h dosyaları oluşturulur.<br /><br /> Varsayılan: \<Bildirim yolu > \MyImageIds. \<Lang Ext >|İsteğe Bağlı|  
+|/monikerClass|MonikerClass ve aracı tarafından oluşturulan ilişkili dosya adı. C++ dil seçeneği için yalnızca .h dosyaları oluşturulur. VSCT dilini göz ardı edilir.<br /><br /> Varsayılan: \<Bildirim yolu > \MyMonikers. \<Lang Ext >|İsteğe Bağlı|  
+|/classAccess|İmageIdClass ve monikerClass ait erişim değiştiricisinin. Erişim değiştiricisi verilen dil için geçerli olduğundan emin olun. VSCT dil seçeneğini göz ardı edilir.<br /><br /> Varsayılan: Ortak|İsteğe Bağlı|  
 |/ namespace|Bir kod sarmalayıcısını içinde tanımlanan ad alanı. VSCT dil seçeneğini göz ardı edilir. Her iki '.' veya '::' seçtiğiniz dil seçeneğini bağımsız olarak geçerli ad alanı ayırıcısı olan.<br /><br /> Varsayılan: Myımages|İsteğe Bağlı|  
 |/ nologo|Bu bayrak ayarlandığında, ürün ve telif hakkı bilgileri yazdırmasının durdurur.|İsteğe Bağlı|  
 |/?|Yardım bilgi yazdırır.|İsteğe Bağlı|  
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: Görselleştirici yazma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766460"
 ---
-# <a name="how-to-write-a-visualizer"></a>Nasıl Yapılır: Görselleştirici Yazma
+# <a name="how-to-write-a-visualizer"></a>Nasıl yapılır: Görselleştirici yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dışında herhangi bir yönetilen sınıfın bir nesnesi için özel Görselleştirici yazabileceğiniz <xref:System.Object> veya <xref:System.Array>.  
@@ -63,7 +58,7 @@ Dışında herhangi bir yönetilen sınıfın bir nesnesi için özel Görselle�
   
   Özel görselleştiriciler, güvenlik konuları olabilir. Bkz: [Görselleştirici güvenlik konuları](../debugger/visualizer-security-considerations.md).  
   
-  Aşağıdaki yordamlar Görselleştirici oluşturmak için yapmanız gerekenleri gösteren üst düzey bir görünüm sağlar. Daha ayrıntılı bir açıklaması için bkz. [izlenecek yol: C# ile Görselleştirici yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Aşağıdaki yordamlar Görselleştirici oluşturmak için yapmanız gerekenleri gösteren üst düzey bir görünüm sağlar. Daha ayrıntılı bir açıklaması için bkz. [izlenecek yol: Görselleştirici yazma C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Hata ayıklayıcı yan oluşturmak için  
   
@@ -84,8 +79,5 @@ Dışında herhangi bir yönetilen sınıfın bir nesnesi için özel Görselle�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   
  [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)   
- [Nasıl yapılır: Görselleştiriciyi hata ayıklama ve Test](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [Nasıl yapılır: Test ve hata ayıklama Görselleştirici](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Görselleştirici Güvenlik Konuları](../debugger/visualizer-security-considerations.md)
-
-
-

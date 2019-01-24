@@ -1,29 +1,24 @@
 ---
-title: 'Nasıl yapılır: bir kitaplıktaki sembolleri tanımlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir kitaplıktaki sembolleri tanımlama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34b5480aebbe59ef9b023bf4350b2bdd35725c47
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5dcdbd6d9f9f24b094d62289b0b058edde8c156b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801960"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Nasıl yapılır: bir kitaplıktaki sembolleri tanımlama
+# <a name="how-to-identify-symbols-in-a-library"></a>Nasıl yapılır: Bir Kitaplıktaki Sembolleri Tanımlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Sembol tarama araçlarını hiyerarşik görünümleri simgeleri görüntüler. Simgeler, ad alanları, nesneler, sınıflar, sınıf üyeleri ve diğer dil öğelerini temsil eder.  
@@ -36,7 +31,7 @@ Sembol tarama araçlarını hiyerarşik görünümleri simgeleri görüntüler. 
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- Hiyerarşideki simgenin konumunu sembol ayırır. Belirli bir simgeye gitmek sembol tarama araçlarını sağlar. Simgeyi benzersiz, tam yolunu konumunu belirler. Her öğe yolunda bir düğümdür. Yolu, üst düzey düğüm ile başlar ve belirli bir sembolün ile sona erer. Örneğin, M1 yöntemi C1 sınıfın bir üyesidir ve C1 N1 ad alanında ise, tam M1 yöntemin N1 yoludur. C1. M1. Bu yol üç düğüm içeriyor: N1, C1 ve M1.  
+ Hiyerarşideki simgenin konumunu sembol ayırır. Belirli bir simgeye gitmek sembol tarama araçlarını sağlar. Simgeyi benzersiz, tam yolunu konumunu belirler. Her öğe yolunda bir düğümdür. Yolu, üst düzey düğüm ile başlar ve belirli bir sembolün ile sona erer. Örneğin, M1 yöntemi C1 sınıfın bir üyesidir ve C1 N1 ad alanında ise, tam M1 yöntemin N1 yoludur. C1. M1. Bu yol üç düğümü içerir: N1, C1 ve M1.  
   
  Gezinti bilgileri sağlayan [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Nesne Yöneticisi'ni bulun, seçin ve tutmak için hiyerarşi içinde simgeleri seçili. Bir tarama aracını başka gezinme sağlar. Kullanırken **Nesne Tarayıcısı** sembolleri göz atmak için bir [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proje, bir yöntem sağ tıklatın ve Başlat **çağrı tarayıcısı** yöntemi çağrısı grafikte görüntülenecek aracı.  
   
@@ -53,7 +48,7 @@ N1
   
 ```  
   
- Bu örnekte, C2 sınıfı kurallı yolunu, N1 + C2 şeklindedir. C2 sunu yolunu C1 ve "Tabanları ve arabirimleri" düğümleri içerir: N1 C1 + "Tabanları ve arabirimleri" + C2.  
+ Bu örnekte, C2 sınıfı kurallı yolunu, N1 + C2 şeklindedir. C2 sunu yolunu C1 ve "Tabanları ve arabirimleri" düğümleri içerir: N1 + C1 + "tabanları ve arabirimleri" + C2.  
   
  Nesne manager çağrılarını sunu form bilgi almak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> yöntemi.  
   
@@ -90,6 +85,5 @@ N1
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sembol tarama araçlarını destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Nasıl yapılır: nesne yöneticisine kitaplık kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Nasıl Yapılır: Kitaplık Tarafından Sağlanan Sembollerin Listelerini Nesne Yöneticisine Sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-
+ [Nasıl yapılır: Nesne yöneticisine kitaplık kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

@@ -1,14 +1,9 @@
 ---
 title: Bir araç çubuğuna menü denetleyicisi ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781310"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Araç Çubuğuna Menü Denetleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,4 +229,3 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu ekleme](../extensi
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç penceresine araç çubuğu ekleme](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Araç Çubuğu Ekleme](../extensibility/adding-a-toolbar.md)
-

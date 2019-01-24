@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
@@ -16,15 +11,15 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760272"
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)
+# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tasarlamak için Visual C# .NET, Visual Basic .NET veya C++ projenize bir sınıf diyagramı düzenleme ve yeniden düzenleme sınıfları ve diğer türleri ekleyin. Kod projesinde farklı parçalarını görselleştirmek için birden fazla sınıf diyagramı projeye ekleyin.  
@@ -45,7 +40,7 @@ Tasarlamak için Visual C# .NET, Visual Basic .NET veya C++ projenize bir sını
   
 1.  Çözüm Gezgini'nde sınıf dosyası bağlam menüsünü açın ve ardından **sınıf diyagramını görüntüle**.  
   
-     veya  
+     -veya-  
   
      İçinde **sınıf görünümü**, ad alanı veya tür bağlam menüsünü açın ve ardından seçin **sınıf diyagramını görüntüle**.  
   
@@ -61,6 +56,3 @@ Tasarlamak için Visual C# .NET, Visual Basic .NET veya C++ projenize bir sını
  [Sınıfları ve türleri tasarlama (Sınıf Tasarımcısı)](../ide/designing-classes-and-types-class-designer.md)   
  [Türleri ve ilişkiler (Sınıf Tasarımcısı) görüntüleme](../ide/viewing-types-and-relationships-class-designer.md)   
  [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

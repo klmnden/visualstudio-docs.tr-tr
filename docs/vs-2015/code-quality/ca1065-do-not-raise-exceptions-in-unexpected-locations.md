@@ -1,13 +1,9 @@
 ---
 title: 'CA1065: Beklenmedik konumlarda özel durumlar harekete geçirmeyin | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -19,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cee2ce8b3f5a0f61f65001ac09772a0f40c04f64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773422"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmedik konumlarda özel durumlar harekete geçirmeyin
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,7 +44,7 @@ ms.locfileid: "53865748"
 
 - Equals yöntemi
 
-- GetHashCode yöntemleri
+- GetHashCode Methods
 
 - ToString yöntemi
 
@@ -97,7 +93,7 @@ ms.locfileid: "53865748"
 
   Bir **eşittir** yöntemi döndürmelidir `true` veya `false` yerine bir özel durum. Örneğin, eşittir geçirilir, eşleşmeyen iki tür yalnızca döndürmelidir `false` oluşturmak yerine bir <xref:System.ArgumentException>.
 
-### <a name="gethashcode-methods"></a>GetHashCode yöntemleri
+### <a name="gethashcode-methods"></a>GetHashCode Methods
  Aşağıdaki **GetHashCode** yöntemleri genellikle özel durum oluşturmamalıdır:
 
 - <xref:System.Object.GetHashCode%2A>

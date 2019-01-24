@@ -1,12 +1,9 @@
 ---
 title: Bir T4 metin şablonuna ilişkin hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298915"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770738"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +71,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |Gerekli parametre '{0}'for 'yönergesine{1}' bulunamadı. Yönerge yoksayılacak.|Sistem, gerekli bir yönerge parametre sağlamaz oluşur. Eksik parametre adı, yönerge adı ve satır numarası ileti sağlar.|Eksik parametre belirtin.|  
 |Adlı İşlemci '{0}'adlı yönergeyi desteklemiyor'{1}'. Yönerge yoksayılacak.|Bir yönerge işlemcisi bir yönergeyi desteklemiyor oluşur. İleti adı yönerge işlemcisinin yanı sıra sorunlu yönergesi adı ve satır sayısını sağlar.|Yönergenin adı düzeltin.|  
 |Dosyasının içerme yönergesi '{0}' sonsuz bir döngüye neden olur.|Döngüsel yönergelerinde görüntülenir belirtilen (örneğin, dosya bir dosya içerir B, dosya içerir).|Döngüsel belirtmeyin yönergeleri içerir.|  
-|Dönüştürme çalıştırılıyor:|Tüm hatalar veya dönüştürme çalıştırılırken üretilen uyarılar için bu dize ekler.|Yok.|  
+|Dönüştürme çalıştırılıyor:|Tüm hatalar veya dönüştürme çalıştırılırken üretilen uyarılar için bu dize ekler.|Uygulanamaz.|  
 |Bir blok içinde beklenmeyen başlangıç veya bitiş etiketi bulundu. Bir başlangıç veya bitiş etiketini yanlış yazmadınız ve şablonda iç içe geçmiş bir bloğu yok emin olun.|Beklenmeyen bir olduğunda görüntülenen \<# veya #>. Diğer bir deyişle, varsa bir \<# değil kapatılmış olan başka bir açık etiketinden sonra veya sahip bir #> önceki kapatılmamış bir açma etiketi yok olduğunda. İleti eşleşmeyen etiketi satır sayısını sağlar.|Eşleşmeyen başlangıç veya bitiş etiketi kaldırmak veya kaçış karakterini kullanın.|  
 |Bir yönerge yanlış biçimde belirtildi. Yönerge yoksayılacak. Lütfen yönerge biçiminde belirtin `<#@ name [parametername="parametervalue"]*  #>`|Bir yönerge doğru biçimde belirtilmemiş ayrıştırıcı tarafından görüntülenir. İletinin hatalı yönergenin satır numarası sağlar.|Tüm yönergeleri biçiminde olduğundan emin olun `<#@ name [parametername="parametervalue"]*  #>`. Daha fazla bilgi için [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).|  
 |Bütünleştirilmiş kodu yüklenemedi '{0}'for 'kayıtlı yönerge işlemcisi{1}'<br /><br /> {2}|Bir yönerge işlemcisine ana bilgisayar tarafından yüklenemedi oluşur. Yönerge işlemcisini ve yönerge işlemcisinin adı için sağlanan derleme ileti tanımlar.|Yönerge işlemcisini doğru şekilde kaydedildiğini ve derleme var olduğundan emin olun.|  
@@ -84,6 +81,3 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |Adlı yönerge işlenirken bir özel durum '{0}'.|Bir yönerge işlemcisi, bir yönerge işlenirken bir özel durum oluşturduğunda gerçekleşir.|Yönerge işlemcisini parametrelerinin doğru olduğundan emin olun.|  
 |Ana bilgisayar bütünleştirilmiş kod başvurusu çözümlenmeye çalışılırken hata özel durum oluşturdu '{0}'.|Ana bilgisayar bütünleştirilmiş kod başvurusu çözümlemeye çalışırken bir özel durum oluşturduğunda gerçekleşir. Derleme ileti sağlar başvuru dizesi.|Bütünleştirilmiş kod başvuruları geldiğini \<@# assembly #> yönergeleri ve yönerge işlemcilerine. Derleme parametresinde sağlanan 'name' parametresi doğru olduğundan emin olun.|  
 |Belirtilmeye çalışıldı desteklenmeyen {1} değeri '{0}' yönergesi {2}|Gerçekleşir RequiresProvidesDirectiveProcessor (tümü bizim oluşturulan yönerge işlemcileri ondan türetilen), sağladığınız desteklenmeyen gerektirir veya bağımsız değişken sağlar.|Name = adlarında 'çiftleri sağlanan değer,' emin olmanız gerekir ve parametreleri doğru sağlar.|
-
-
-

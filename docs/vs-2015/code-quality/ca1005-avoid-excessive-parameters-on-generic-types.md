@@ -1,13 +1,9 @@
 ---
 title: 'CA1005: Genel türlerde aşırı parametrelerden kaçının | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidExcessiveParametersOnGenericTypes
 - CA1005
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a390d44af2e15cb45c0a51c5ffa0cb2b983fc08c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68631328fb95489f6f81e7f527f1e46a2ce54d44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773126"
 ---
-# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Genel türlerde aşırı parametrelerden kaçının
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Genel türlerde aşırı parametre kullanmaktan kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

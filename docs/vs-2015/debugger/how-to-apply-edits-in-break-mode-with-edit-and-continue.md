@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: Düzen ile kesme modunda düzenlemeleri uygulayın ve devam et | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -28,15 +23,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794567"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Nasıl Yapılır: Düzenle ve Devam Et ile Kesme Modunda Düzenlemeleri Uygulama
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Nasıl yapılır: Düzen ile kesme modunda düzenlemeleri uygulayın ve devam et
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Düzenle ve devam et, kesme modunda kodunuzu düzenleyin ve ardından durdurup yeniden başlatmadan yürütme devam etmek için kullanabilirsiniz.  
@@ -89,6 +84,3 @@ Düzenle ve devam et, kesme modunda kodunuzu düzenleyin ve ardından durdurup y
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Basic'de desteklenmeyen düzenlemeler Düzenle ve devam et](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [Düzenle ve Devam Et (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

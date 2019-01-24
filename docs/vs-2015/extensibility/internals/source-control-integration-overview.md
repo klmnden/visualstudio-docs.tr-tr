@@ -1,26 +1,21 @@
 ---
 title: Kaynak denetimini tümleştirmeye genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761522"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794540"
 ---
 # <a name="source-control-integration-overview"></a>Kaynak Denetimini Tümleştirmeye Genel Bakış
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki şekilde 
   
 1. Belirtilen işlevleri uygulayan bir DLL'yi oluşturmak [kaynak denetimi eklentileri](../../extensibility/source-control-plug-ins.md).  
   
-2. Uygun kayıt defteri girişlerini yaparak DLL'yi kaydetme (açıklanan [nasıl yapılır: kaynak denetimi eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Uygun kayıt defteri girişlerini yaparak DLL'yi kaydetme (açıklanan [nasıl yapılır: Kaynak Denetimi Eklentisi yükleme](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Kullanıcı Arabirimi ve kaynak denetimi bağdaştırıcısı paketi (kaynak denetimi eklentileri aracılığıyla kaynak denetimi işlevlerini işleyen Visual Studio bileşeni) tarafından istendiğinde görünen bir Yardımcısı oluşturma  
   
@@ -85,4 +80,3 @@ Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki şekilde 
  [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Bir kaynak denetimi VSPackage'ı oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [Kaynak Denetimindeki Yenilikler](../../extensibility/internals/what-s-new-in-source-control.md)
-

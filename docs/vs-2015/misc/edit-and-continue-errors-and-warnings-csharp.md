@@ -1,14 +1,9 @@
 ---
 title: Düzenle ve devam et hataları ve Uyarıları (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.enc.error_4001
 - vs.csharp.enc.error_4034
@@ -65,13 +60,13 @@ helpviewer_keywords:
 ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ca47a7b7ea5a330176b6f75862819a4c0a5c64d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805521"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Düzenle ve Devam Et Hataları ve Uyarıları (C#)
 Visual C# Düzenle ve devam et'te izin verilmiyor kodun bir bölümünü bir düzenleme yaptığınız.  
@@ -86,7 +81,7 @@ Visual C# Düzenle ve devam et'te izin verilmiyor kodun bir bölümünü bir dü
   
 1.  Üzerinde **hata ayıklama** menüsünde seçin **geri** değişikliği geri almak için.  
   
-     veya  
+     -veya-  
   
 2.  Hata ayıklama oturumunu durdurmak, düzenlemelerinizi yapın ve yeni bir hata ayıklama oturumu başlatın.  
   

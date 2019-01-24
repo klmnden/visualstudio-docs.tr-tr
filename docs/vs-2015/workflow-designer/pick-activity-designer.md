@@ -1,11 +1,8 @@
 ---
 title: Pick etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Pick.UI
@@ -13,13 +10,13 @@ ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f0a3d5487d60a796f8bf9727c07df1afc959de5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7de5d9189906d72c96372acb1a361d315f973df6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795888"
 ---
 # <a name="pick-activity-designer"></a>Pick Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Pick> Olay tabanlı denetim akış etkinliği sağlar. Etkinlik birden fazla dalları birini bir tetikleyici olaya yanıt olarak yürütür.  
@@ -37,7 +34,7 @@ ms.locfileid: "49221526"
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>İş akışı tasarımcısında etkinlik özellikleri seçin  
  Aşağıdaki tabloda <xref:System.Activities.Statements.Pick> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı belirtir <xref:System.Activities.Statements.Pick> üst bilgisindeki etkinlik Tasarımcısı. Seçim varsayılan değerdir. Değer özellik kılavuzunda veya etkinlik Tasarımcısı başlığındaki doğrudan düzenleyebilirsiniz.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|  
   

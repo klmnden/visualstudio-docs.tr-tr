@@ -1,26 +1,21 @@
 ---
 title: 'Örnek Excel uzantısı: ExtensionPackage sınıfı | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6e45410a-1819-4d54-ac21-7280152f7e3a
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64e6d838172325bb00cdd8a28ef6adb6d1a345b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 668913d231115e955cc50df10de045eab3d4ac92
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792027"
 ---
-# <a name="sample-excel-extension-extensionpackage-class"></a>Örnek Excel Uzantısı: ExtensionPackage Sınıfı
+# <a name="sample-excel-extension-extensionpackage-class"></a>Örnek Excel uzantısı: ExtensionPackage Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu sınıf genişletir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> sınayan bir kodlanmış UI testi için giriş noktası sağlar ve sınıfı bir [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] çalışma.  
@@ -46,6 +41,3 @@ Bu sınıf genişletir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.U
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
  [Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

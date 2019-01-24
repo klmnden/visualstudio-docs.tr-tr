@@ -1,25 +1,20 @@
 ---
 title: Klavye kısayolları ve değiştirici tuşlar blend'de | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96e68794346b32c5117ff06c8e90f05293460203
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789239"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend’de klavye kısayolları ve değiştirici tuşlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Klavye kısayolları, bir tek klavye kısayolu birden çok fare düğmesi tıkla
   
    Çoğu klavye kısayollarını kullanıcı arabiriminde kolayca [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]; bunlar menü komutları sağında görüntülenir. Örneğin, **dosya** menüsünde **Proje Aç** CTRL + SHIFT + O klavye kısayol menü komutunu içerir. Bir aracı için kısayol tuşlarını görmek için **Araçları** panelinde, aracı işaretçisini.  
   
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4E8A-8039-bead80a3e595")  
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")  
   Kısayollar menü öğelerini yanında görüntülenen kısayol tuşları  
   
   Erişilebilirlik ve özellikler hakkında daha fazla bilgi için bkz. [erişilebilirlik Microsoft'ta](http://go.microsoft.com/fwlink/?LinkId=75069).  
@@ -50,6 +45,3 @@ Klavye kısayolları, bir tek klavye kısayolu birden çok fare düğmesi tıkla
 -   [Kalem aracı değiştirici tuşları](../designers/pen-tool-modifier-keys-in-blend.md)  
   
 -   [Doğrudan Seçim aracı değiştirici tuşları](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-
-
-

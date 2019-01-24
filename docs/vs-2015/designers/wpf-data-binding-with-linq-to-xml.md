@@ -1,25 +1,20 @@
 ---
 title: LINQ to XML ile WPF verilerini bağlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 356c2cef-3468-495d-b4bd-f6b7f883446b
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 78e30d010621397d12c5580fdc6089aea0d2f5e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 47040aab2969f2480db8a35d1740babdf3093666
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769513"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>LINQ to XML ile WPF verilerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Bu bölümde, LINQ to XML Windows Presentation Foundation (WPF) uygulamalarında
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gelişmiş LINQ to XML Programlama](http://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)
-
-
-

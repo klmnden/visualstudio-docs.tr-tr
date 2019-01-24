@@ -1,14 +1,9 @@
 ---
 title: Hızlı Başlatma, ortam, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
 - vs.quicklaunch
@@ -19,13 +14,13 @@ ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e012e5ec4d9326cb1e6732ed78a8de8a60aeda8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782287"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Kullanabileceğiniz **hızlı başlatma** hızlıca arayıp seçenekleri, şablo
  **Hızlı başlatma** Visual Studio'yu yüklediğinizde varsayılan olarak etkindir. Menü çubuğunda göster gizle veya istediğiniz **hızlı başlatma** seçerek **Araçları**, **seçenekleri**. Genişletin **ortamları** düğümünü seçip **hızlı başlatma**. Seçin veya temizleyin **Hızlı Başlat'ı etkinleştirme** onay kutusu. Etkinleştirin veya bu sayfadaki arama kategorileri devre dışı bırakın.  
   
 ## <a name="category-list"></a>Kategori Listesi  
- Hızlı Başlatma arama sonuçları dört kategorilerde görüntülenir: **en son kullanılan**, **menüleri**, **seçenekleri**, ve **açık belgeler**, ile birlikte kategorideki öğelerin sayısı. Kategoriye göre arama sonuçlarıyla geçirmek için İleri kategorisinden tüm sonuçları göstermek için Ctrl + Q anahtarları seçin. Sonra son kategori, Ctrl + Q her kategori birkaç sonuçlarını gösteren görünür. Ctrl + Shift + Q kategorilerinizin ters sırada gitmek için kullanabilirsiniz. Bir kategori altında tüm arama sonuçlarını görüntülemek için kategori adı seçin.  
+ Hızlı Başlatma arama sonuçları dört kategorilerde görüntülenir: **En son kullanılan**, **menüleri**, **seçenekleri**, ve **açık belgeler**, birlikte kategorideki öğelerin sayısı. Kategoriye göre arama sonuçlarıyla geçirmek için İleri kategorisinden tüm sonuçları göstermek için Ctrl + Q anahtarları seçin. Sonra son kategori, Ctrl + Q her kategori birkaç sonuçlarını gösteren görünür. Ctrl + Shift + Q kategorilerinizin ters sırada gitmek için kullanabilirsiniz. Bir kategori altında tüm arama sonuçlarını görüntülemek için kategori adı seçin.  
   
  Aramanızı belirli kategorileri sınırlandırmak için aşağıdaki kısayolları kullanabilirsiniz.  
   
@@ -58,6 +53,3 @@ Kullanabileceğiniz **hızlı başlatma** hızlıca arayıp seçenekleri, şablo
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel kullanıcı arabirimi öğeleri (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
-
-
-

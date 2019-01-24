@@ -1,14 +1,9 @@
 ---
 title: Uygulamaları Genelleştirme ve yerelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -20,13 +15,13 @@ ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 66634bf6c14e316140e001fd8bb147504736981b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246109"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794376"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Uygulamaları Genelleştirme ve Yerelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,4 +58,3 @@ Uluslararası bir hedef kitle için uygulamanızı dağıtmayı planlıyorsanız
   
  <xref:System.Resources>  
  Sınıflar ve arabirimler geliştiricilerin oluşturmasını sağlar, bu ad alanındaki noktaları depolayın ve bir uygulamada kullanılan çeşitli kültüre özgü kaynakları yönetin.
-

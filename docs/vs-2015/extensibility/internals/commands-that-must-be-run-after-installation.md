@@ -1,26 +1,21 @@
 ---
 title: Yükleme sonrasında çalıştırılması gereken komutları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724200"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794819"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Yükleme Sonrasında çalıştırılması Gereken Komutlar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -89,4 +84,3 @@ Uzantınızı bir .msi dosyası aracılığıyla dağıtırsanız, çalıştırm
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Installer ile VSPackage Yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

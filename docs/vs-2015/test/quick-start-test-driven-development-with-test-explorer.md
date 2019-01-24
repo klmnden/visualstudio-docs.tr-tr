@@ -1,26 +1,21 @@
 ---
-title: 'Hızlı Başlangıç: Test güdümlü geliştirme ile Test Gezgini | Microsoft Docs'
-ms.custom: ''
+title: 'Hızlı Başlangıç: Test temelli Test Gezgini ile geliştirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797971"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere birim testleri yazmak için kullanabileceğiniz birkaç çerçeve vardır. Bazı test çerçeveleri, farklı dillerde veya platformlarda test için özel hazırlanmıştır. Test Gezgini bu çerçevelerin herhangi birinde yapılan birim testleri için tek bir arabirim sağlar. En sık kullanılan çerçeveler için bağdaştırıcılar bulunmaktadır ve diğer çerçeveler için kendi bağdaştırıcılarınızı yazabilirsiniz.  
@@ -58,13 +53,13 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
     Test Gezgini açılır ve sonuçları özetini görüntüler.  
   
-   **Testlerin tam bir listesini görmek için:** Seç **Tümünü Göster** herhangi bir kategoride.  
+   **Testlerin tam bir listesini görmek için:** Seçin **Tümünü Göster** herhangi bir kategoride.  
   
-   **Bir test sonucunun ayrıntılarını görmek için:** , Ayrıntılar bölmesinde özel durum iletileri gibi ayrıntıları görüntülemek için Test Gezgini'nde testi seçin.  
+   **Bir test sonucunun ayrıntılarını görmek için:** Ayrıntılar bölmesinde özel durum iletileri gibi ayrıntıları görüntülemek için Test Gezgini'nde testi seçin.  
   
    **Bir testin koduna gitmek için:** Test Gezgini'nde teste çift tıklayın ya da seçin **testi Aç** kısayol menüsünde.  
   
-   **Bir testte hata ayıklamak için:** bir veya daha fazla testin kısayol menüsünü açın ve ardından **seçilen Testlerde Hata Ayıkla**.  
+   **Bir testte hata ayıklamak için:** Bir veya daha fazla testin kısayol menüsünü açın ve ardından **seçilen Testlerde Hata Ayıkla**.  
   
 > [!IMPORTANT]
 >  Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.  
@@ -72,7 +67,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 > [!NOTE]
 >  Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [Test Gezgini ile farklı Test çerçeveleri kullanma](#frameworks).  
   
-##  <a name="walkthrough"></a> İzlenecek yol: Birim testlerini bir yöntemi geliştirmek için kullanma.  
+##  <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testlerini kullanma  
  Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [farklı Test çerçeveleri kullanma](#frameworks).  
   
 #### <a name="creating-the-test-and-method"></a>Testi ve yöntemi oluşturma  
@@ -109,7 +104,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
    1.  İmleci üzerine getirin `Rooter`, kısayol menüsünden seçin **Oluştur**, **yeni türü**.  
   
-   2.  İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte olduğu `MyMath`.  
+   2.  İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte bu değer `MyMath`’dur.  
   
    3.  İmleci üzerine getirin `SquareRoot`, kısayol menüsünden seçin **Oluştur**, **metot taslağı**.  
   
@@ -293,6 +288,3 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
      Tüm testler hala başarılı.  
   
      ![Birim Test Gezgini 3 geçen testler gösteriliyor. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-
-
-

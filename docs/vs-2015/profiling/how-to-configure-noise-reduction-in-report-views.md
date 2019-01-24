@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: rapor görünümlerinde gürültü azaltmayı yapılandırma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Rapor görünümlerinde gürültü azaltmayı yapılandırma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e85e765ed80b37c7c688f9c0f25e3b7e8782a42f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a532a4ddf877e49a6cf355d182d41ed723b2f5d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800335"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Nasıl yapılır: Rapor Görünümlerinde Gürültü Azaltmayı Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +81,6 @@ Performans raporları çağrı ağacı görünümü ve ayırma görünümünde g
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Rapor görünümlerini özelleştirme performans araçları](../profiling/customizing-performance-tools-report-views.md)   
- [Nasıl yapılır: kısa işlevleri izlemeden dahil veya hariç](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Nasıl yapılır: Hariç tutma veya kısa işlevleri izlemeden içerir](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Çağrı ağacı görünümü](../profiling/call-tree-view.md)   
  [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)
-
-
-

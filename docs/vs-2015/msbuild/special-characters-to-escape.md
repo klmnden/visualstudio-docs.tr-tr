@@ -1,14 +1,9 @@
 ---
 title: Kaçış için özel karakterler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c851c6968418356626a69830ea89a918edc2cadf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e2701c698d795f1af1f888e677362bb2cf248111
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782468"
 ---
 # <a name="special-characters-to-escape"></a>Kaçış İçin Özel Karakterler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ Yalnızca özel bir anlamı, kullanıldıkları bağlam içinde oluşturulduysa 
 |*|Yıldız işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: özel msbuild'de kaçış karakterleri](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [Nasıl yapılır: Msbuild'de kaçış özel karakterleri](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild Başvurusu](../msbuild/msbuild-reference.md)
-
-
-

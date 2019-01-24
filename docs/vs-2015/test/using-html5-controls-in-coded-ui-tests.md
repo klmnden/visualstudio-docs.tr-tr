@@ -1,24 +1,19 @@
 ---
 title: Kodlanmış UI testleri HTML5 denetimleri kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805082"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +77,9 @@ string Volume
   
 ```  
   
- **Arama özellikleri:** arama özelliklerini `HtmlAudio` olan `Id`, `Name` ve `Title`.  
+ **Arama özellikleri:** Arama özelliklerini `HtmlAudio` olan `Id`, `Name` ve `Title`.  
   
- **Filtre özellikleri:** filtre özelliklerini `HtmlAudio` olan `Src`, `Class`, `ControlDefinition` ve `TagInstance`.  
+ **Filtre özellikleri:** Filtre özelliklerini `HtmlAudio` olan `Src`, `Class`, `ControlDefinition` ve `TagInstance`.  
   
 > [!NOTE]
 >  Arama ve duraklatma süreyi önemli ölçüde fazla olabilir. Kayıttan yürütme sırasında kodlanmış UI testi belirtilen süre içinde kadar bekleyin `(TimeSpan)` ses duraklatmadan önce. Bazı özel durumda tarafından duraklatma komutunu ulaşmaktan önce belirtilen zaman geçtiyse, bir özel durum oluşturulur.  
@@ -112,9 +107,9 @@ string VideoWidth
   
 ```  
   
- **Arama özellikleri:** arama özelliklerini `HtmlVideo` olan `Id`, `Name` ve `Title`.  
+ **Arama özellikleri:** Arama özelliklerini `HtmlVideo` olan `Id`, `Name` ve `Title`.  
   
- **Filtre özellikleri:** filtre özelliklerini `HtmlVideo` olan `Src`, `Poster`, `Class`, `ControlDefinition` ve `TagInstance`.  
+ **Filtre özellikleri:** Filtre özelliklerini `HtmlVideo` olan `Src`, `Poster`, `Class`, `ControlDefinition` ve `TagInstance`.  
   
 > [!NOTE]
 >  Geri veya ileri sarma-30s veya +30s etiketleri kullanarak video, bu uygun zaman aramak için toplanacak.  
@@ -126,7 +121,7 @@ string VideoWidth
   
 |Eylem|Kaydetme|Oluşturulan kod|  
 |------------|---------------|--------------------|  
-|**Kaydırıcı konumda ayarlayın**|Kümesine konumu \<x > içinde \<adı > kaydırıcı|HtmlSlider.ValueAsNumber=\<x >|  
+|**Kaydırıcı konumda ayarlayın**|Kümesine konumu \<x > içinde \<adı > kaydırıcı|HtmlSlider.ValueAsNumber=\<x>|  
   
  Aşağıdaki özellikler HtmlSlider için kullanılabilir ve onaylama hepsinde eklenebilir:  
   
@@ -140,7 +135,7 @@ string ValueAsNumber
 ```  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **ProgreesBar denetimi:** ProgressBar olan interactable olmayan bir denetim. Onaylamalar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini.  
+ **ProgreesBar denetimi:** ProgressBar interactable olmayan bir denetimdir. Onaylamalar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini.  
   
  ![HTML5 ProgressBar denetimi](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
   
@@ -150,6 +145,3 @@ string ValueAsNumber
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Kodlanmış UI testleri özelleştirme](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Bir Windows Evrensel uygulaması CPU kullanımını analiz etme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,14 +13,14 @@ ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 11e8587176ecc452f8f97132d296cff93b09b5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777442"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Bir Windows Evrensel uygulaması CPU kullanımını analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Ayrıntılarını görüntülemek için zaman çizelgesi Segment seçin  
  Seçim çubuklarını kullanın **Tanılama oturumu** GetMaxNumberButton_Click verilere odaklanmak için zaman çizelgesi:  
   
- ![GetMaxNumberButton&#95;seçili tıklatın](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
+ ![GetMaxNumberButton&#95;Click selected](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
   
  **Tanılama oturumu** zaman çizelgesi artık seçili Segmentte (bit 2 saniyeden fazla Bu raporda) için harcanan süreyi görüntüler ve seçimdeki çalışan bu yöntemlere yapılan çağrı ağacını filtreler.  
   
@@ -101,7 +96,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Çağrı ağacı bilgileri anlama kullanmaya başlamak için yeniden `GetMaxNumberButton_Click` segmentlere ayırın ve çağrı ağacı ayrıntılarını inceleyin.  
   
 ####  <a name="BKMK_Call_tree_structure"></a> Çağrı ağacı yapısı  
- ![GetMaxNumberButton&#95;tıklayın çağrı ağacı](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
@@ -321,6 +316,3 @@ namespace CpuUseDemo
 }  
   
 ```
-
-
-

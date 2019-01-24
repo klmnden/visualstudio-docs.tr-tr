@@ -1,14 +1,9 @@
 ---
 title: Kod parçacıkları şema başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
 - snippets [Visual Studio], schema reference
@@ -18,13 +13,13 @@ ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188147"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753569"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod Parçacıkları Şema Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -280,7 +275,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|  
 |[Author öğesi](../ide/code-snippets-schema-reference.md#author)|İsteğe bağlı öğe. Kod parçacığını yazan kişinin veya şirketin adı. Sıfır veya bir olabilir `Author` öğelerinde bir `Header` öğesi.|  
 |[Description öğesi](../ide/code-snippets-schema-reference.md#description)|İsteğe bağlı öğe. Kod parçacığının açıklaması. Sıfır veya bir olabilir `Description` öğelerinde bir `Header` öğesi.|  
-|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` bir Header öğesinde öğeleri. **Not:** Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|  
+|[HelpUrl öğesi](../ide/code-snippets-schema-reference.md#helpurl)|İsteğe bağlı öğe. Kod parçacığı hakkında daha fazla bilgi içeren URL. Sıfır veya bir olabilir `HelpURL` bir Header öğesinde öğeleri. **Not:**  Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.|  
 |[Keywords öğesi](../ide/code-snippets-schema-reference.md#keywords)|İsteğe bağlı öğe. Grupları `Keyword` öğeleri. Sıfır veya bir olabilir `Keywords` öğelerinde bir `Header` öğesi.|  
 |[Shortcut öğesi](../ide/code-snippets-schema-reference.md#shortcut)|İsteğe bağlı öğe. Kod parçacığını eklemek için kullanılabilecek kısayol metnini belirtir. Sıfır veya bir olabilir `Shortcut` öğelerinde bir `Header` öğesi.|  
 |[SnippetTypes öğesi](../ide/code-snippets-schema-reference.md#snippettypes)|İsteğe bağlı öğe. Grupları `SnippetType` öğeleri. Sıfır veya bir olabilir `SnippetTypes` öğelerinde bir `Header` öğesi. Varsa hiçbir `SnippetTypes` öğeleri, kod parçacığı her zaman geçerli.|  
@@ -665,7 +660,4 @@ is a great color. I love Blue.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod parçacıkları](../ide/code-snippets.md)   
- [İzlenecek Yol: Kod Parçacığı Oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
-
-
-
+ [İzlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)

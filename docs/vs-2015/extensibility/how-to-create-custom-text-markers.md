@@ -1,28 +1,23 @@
 ---
-title: 'Nasıl yapılır: özel metin işaretçileri oluştur | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Özel metin işaretçileri oluştur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b0a280b44ad468ba44baf81efcc4e4569638e8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd79d91dbf9705bf0faf743e66b4da40008307ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799272"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: özel metin işaretçileri oluşturma
+# <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: Özel metin işaretçileri oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak istiyorsanız, aşağıdaki adımları izlemelisiniz:  
@@ -33,7 +28,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 - Diğer işlemler tarafından yapmak için kullanılabilecek bir hizmet oluşturma metin işaret kullanın  
   
-  Bir bölge kodu bir metin işaretçisi uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: kullanım metin işaretçileri](../extensibility/how-to-use-text-markers.md).  
+  Bir bölge kodu bir metin işaretçisi uygulama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Özel işaret kaydetmek için  
   
@@ -70,7 +65,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 ### <a name="to-create-a-custom-text-marker"></a>Bir özel metin işaretçisi oluşturmak için  
   
-1.  Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> arabirimi.  
+1.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> arabirimini gerçekleştirin.  
   
      Bu arabirim, uygulamanız özel işaretçi türünüz görünümünü ve davranışını tanımlar.  
   
@@ -96,7 +91,6 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Nasıl yapılır: standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
- [Nasıl yapılır: uygulama, hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
- [Nasıl Yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md)
-
+ [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
+ [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
+ [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)

@@ -1,27 +1,22 @@
 ---
 title: Genişletme ve aracı Windows özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7aac774f64d79d2d28cc690550abb7a84b7d3674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797718"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Araç Pencerelerini Genişletme ve Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ Visual Studio, windows, örneğin araç pencereleri, belge pencereleri ve ileti�
   
  Araç pencere bölmeleri, WPF kullanıcı denetimleri barındırmak ve araç çubukları destekler. Geçersiz kılabilirsiniz <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> özelliği denetimden tanıtıcısını döndürür.  
   
- Araç pencereleri için birçok farklı özelliği ekleyebilirsiniz. Örneğin, bir araç çubuğu ekleyebilirsiniz: [araç penceresine araç çubuğu ekleme](../extensibility/adding-a-toolbar-to-a-tool-window.md) veya bir kısayol menüsü: [araç penceresine kısayol menüsü ekleme](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Araç penceresi içinde öğeleri aramasına izin veren bir arama denetimi ekleyebilirsiniz: [araç penceresine arama ekleme](../extensibility/adding-search-to-a-tool-window.md).  
+ Araç pencereleri için birçok farklı özelliği ekleyebilirsiniz. Örneğin, bir araç çubuğu ekleyebilirsiniz: [Araç penceresine araç çubuğu ekleme](../extensibility/adding-a-toolbar-to-a-tool-window.md) veya bir kısayol menüsü: [Araç penceresine kısayol menüsü ekleme](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Araç penceresi içinde öğeleri aramasına izin veren bir arama denetimi ekleyebilirsiniz: [Araç penceresine arama ekleme](../extensibility/adding-search-to-a-tool-window.md).  
   
- Araç penceresi olaylarına abone olabilirsiniz: [bir olaya abone olma](../extensibility/subscribing-to-an-event.md).  
+ Araç penceresi olaylarına abone olabilirsiniz: [Bir olaya abone olma](../extensibility/subscribing-to-an-event.md).  
   
 ## <a name="extending-existing-tool-windows"></a>Mevcut araç Windows genişletme  
  Bilgi, araç penceresi hakkında yeni bir ekleyebileceğiniz **seçenekleri** sayfası ve yeni bir ayar **özellikleri** sayfasında, yazma **görev listesi** ve **çıkış**  windows. Daha fazla bilgi için [özellikleri, görev listesi, çıktı ve Seçenekler Windows genişletme](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) ve [özellikleri, görev listesi, çıktı ve Seçenekler Windows genişletme](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
@@ -55,4 +50,3 @@ Visual Studio, windows, örneğin araç pencereleri, belge pencereleri ve ileti�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Penceresi İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
-

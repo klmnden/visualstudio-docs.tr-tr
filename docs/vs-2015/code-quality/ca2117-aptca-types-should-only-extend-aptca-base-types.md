@@ -1,13 +1,9 @@
 ---
 title: 'CA2117: APTCA türleri APTCA taban türlerini yalnızca genişleten | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2117
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
@@ -19,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5a8400e99d7b45a20021880628cb5152b6cef3a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786527"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ ms.locfileid: "53913319"
  Bir ortak veya korumalı tür ile bir derlemede <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> özniteliğine sahip bir derlemede bildirilmiş bir tür özniteliğini devralır.
 
 ## <a name="rule-description"></a>Kural Tanımı
- Varsayılan olarak, ortak veya korumalı tür tanımlayıcı ada sahip derlemelerde örtük olarak tarafından korunan bir [devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) tam güven için. Tanımlayıcı adlandırılmış derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> özniteliği (APTCA) Bu koruma sahip değil. Öznitelik devralma talebi devre dışı bırakır. Bu, tam güven olmayan türleri tarafından sunulan türleri derlemesinde devralınabilir bildirilen sağlar.
+ Varsayılan olarak, ortak veya korumalı tür tanımlayıcı ada sahip derlemelerde örtük olarak tarafından korunan bir [devralma taleplerini](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) tam güven için. Tanımlayıcı adlandırılmış derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> özniteliği (APTCA) Bu koruma sahip değil. Öznitelik devralma talebi devre dışı bırakır. Bu, tam güven olmayan türleri tarafından sunulan türleri derlemesinde devralınabilir bildirilen sağlar.
 
  APTCA özniteliği tam olarak güvenilen bir derlemede yapılandırıldığında ve derlemedeki tür, kısmen güvenilmeyen çağrıcılara izin vermeyen tür tarafından devralındığında güvenlik yararlanması mümkündür. İki yazdığında `T1` ve `T2` zararlı çağıranlar türü kullanabilir, aşağıdaki koşullara uyması `T1` korur örtük tam güven devralma talebi atlamak için `T2`:
 
@@ -88,4 +84,4 @@ ms.locfileid: "53913319"
  [CA2116: APTCA yöntemleri yalnızca APTCA yöntemlerini çağırmalıdır](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [kısmen güvenilen kod tarafından çağrılabilen .NET Framework derlemeleri](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [güvenilen kod kitaplıklarından kısmen kullanarak](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [devralma talepleri](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [kısmen güvenilen kod tarafından çağrılabilen .NET Framework derlemeleri](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [güvenilen kod kitaplıklarından kısmen kullanarak](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [devralma talepleri](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

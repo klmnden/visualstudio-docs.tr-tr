@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 206a6ecf028497e63a7fe3e0d6bb320febd8bde5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764673"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Gelişmiş Seçenekler, metin düzenleyici, temel (Visual Basic)
 **VB belirli** özellik sayfasında **temel** klasörü **metin düzenleyici** klasörü **seçenekleri** (**araçları** menüsü) iletişim kutusunda, aşağıdaki özellikleri içerir:
@@ -77,7 +77,7 @@ Metin düzenleyici, yordamların görsel kapsamını belirtir. Bir çizgi çizil
 
 ## <a name="block-structure-guides"></a>Blok yapısı kılavuzları
 
-Süslü ayraçlar arasında noktalı dikey çizgileri görüntülemek için bu onay kutularını seçin (**{}**) kod. Bunun yapılması, tek tek bildirimi düzeyinize kod bloklarını kolayca görmenize olanak sağlar ve kod düzeyi oluşturur.
+Seçili olduğunda, dikey çizgileri Düzenleyicisi'nde bu satırı Yukarı tek bir kod bloklarını kolayca belirlemenize olanak sağlayan yapılandırılmış kod blokları ile görünür. Örneğin, bir satırı arasındaki bkz `Sub` ve `EndSub` içinde bir `Sub` deyimi.
 
 ## <a name="editor-help"></a>Düzenleyici Yardımı
 

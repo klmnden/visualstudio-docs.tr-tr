@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: derlemeden projeleri hariç tutma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Projeleri derlemeden hariç tutma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6419d2aa216f625aaf82087f0dc8f453e0d0d475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 04a3a45af932a34b89feb2726e7a137ceea2ac5a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780132"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Nasıl yapılır: Derlemeden Projeleri Hariç Tutma
+# <a name="how-to-exclude-projects-from-a-build"></a>Nasıl yapılır: Projeleri Derlemeden Hariç Tutma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçerdiği tüm projeleri oluşturmaya gerek kalmadan, bir çözüm oluşturabilirsiniz. Örneğin, yapı sonları bir proje hariç. Sorunları araştırmak, sonra projeyi ve adresi ardından oluşturabilirsiniz.  
@@ -62,8 +57,5 @@ ms.locfileid: "49941847"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
- [Nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)   
- [Nasıl yapılır: Aynı Anda Birden Fazla Yapılandırma Derleme](../ide/how-to-build-multiple-configurations-simultaneously.md)
-
-
-
+ [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)   
+ [Nasıl yapılır: Aynı anda birden fazla yapılandırma derleme](../ide/how-to-build-multiple-configurations-simultaneously.md)

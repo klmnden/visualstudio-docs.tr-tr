@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: İzleme metodunu kullanarak komut satırı profil | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: İzleme metodunu kullanarak komut satırı profili oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,15 +12,15 @@ ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755439"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>İzlenecek yol: İzleme Yöntemini Kullanarak Komut Satırı Profili Oluşturma
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>İzlenecek yol: Komut satırı araçları kullanarak profil oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayrıntılı zamanlama toplayıp çağrı sayısı verileri profil oluşturma Araçları'nın izleme metodunu kullanarak tek başına uygulama. Bu kılavuzda, aşağıdaki görevleri yerine getirmiş olacaksınız:  
@@ -48,7 +43,7 @@ Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../inc
   
 -   Bir kopyasını [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir. Daha fazla bilgi için [nasıl yapılır: başvuru Windows sembol bilgilerini](../profiling/how-to-reference-windows-symbol-information.md).  
+-   Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir. Daha fazla bilgi için [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Komut satırı izleme metodunu kullanarak profili oluşturma  
  İzleme profili oluşturulmuş ikili dosyalar özel olarak oluşturulmuş sürümleri işaretlenmiş modülde işlevlere giriş ve çıkış zamanlama bilgilerini toplamak araştırma işlevleri içerir bir profil oluşturma yöntemidir. Bu profil oluşturma yöntemi örnekleme değerinden daha bozucu olduğu için büyük miktarda bir ek yük doğurur. İzlenen ikili dosyaların hatalarını ayıklama veya ikili dosyaları sürüm ve dağıtım için hedeflenmemiş büyük.  
@@ -134,6 +129,3 @@ Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../inc
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)   
  [Performans Raporu Görünümleri](../profiling/performance-report-views.md)
-
-
-

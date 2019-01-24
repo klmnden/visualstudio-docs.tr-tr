@@ -1,24 +1,19 @@
 ---
 title: Kodlanmış UI testleriyle Windows UWP ve 8.1 Store uygulamaları test | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799303"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Store uygulamaları test etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -299,22 +294,22 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
   
 ## <a name="q--a"></a>Soru - Yanıt  
   
--   **Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?**  
+-   **S: Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?**  
   
-     **A**: kaydedilecek seçenek Windows Store uygulamaları için desteklenmez.  
+     **A**: Kaydedilecek seçenek Windows Store uygulamaları için desteklenmiyor.  
   
--   **Kodlanmış UI testi için Windows Store uygulamalarım üzerinde WinJS oluşturabilirim miyim?**  
+-   **S: WinJS üzerinde temel Windows Store uygulamalarım için kodlanmış UI testi oluşturabilir miyim?**  
   
      **A**: Hayır, yalnızca XAML tabanlı uygulamalar desteklenir.  
   
--   **Kodlanmış UI testleri için Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde Windows Store uygulamalarım oluşturabilirim miyim?**  
+-   **S: Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde Windows Store uygulamalarım için kodlanmış UI testleri oluşturabilir miyim?**  
   
-     **A**: Hayır, kodlanmış UI Test projesi şablonlar yalnızca Windows 8.1 ve Windows 10'da kullanılabilir. Otomasyon için evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Windows 10 gerekir.  
+     **A**: Hayır, kodlanmış UI Test projesi şablonları yalnızca Windows 8.1 ve Windows 10'da kullanılabilir. Otomasyon için evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Windows 10 gerekir.  
 
 <a name="uwpapps"></a>
 - **S: Evrensel Windows Platformu (UWP) uygulamaları için kodlanmış UI testleri nasıl oluşturulur?**  
   
-   **A**: Burada test UWP uygulamanızın platforma bağlı olarak, aşağıdaki yöntemlerden biriyle kodlanmış UI test projesi oluşturun:  
+   **A**: UWP uygulamanızın nerede test ettiğiniz platforma bağlı olarak, aşağıdaki yöntemlerden biriyle kodlanmış UI test projesi oluşturun:  
   
   - Yerel makine üzerinde çalışan UWP uygulaması bir Store uygulaması olarak çalışır. Bu test için kullanmanız gerekir **kodlanmış UI Test projesi (Windows)** şablonu. Yeni bir proje oluşturduğunuzda, bu şablonu bulmak için Git **Windows**, **Evrensel** düğümü. Veya Git **Windows**, **Windows 8**, **Windows** düğümü.  
   
@@ -322,13 +317,10 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
   
     Projeyi oluşturduktan sonra bir test yazma önceki ile aynı kalır.  
   
-- **UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?**  
+- **S: UIMap.Designer dosyasındaki kodu neden değiştiremiyorum?**  
   
-   **A**: UIMap - Kodlanmış UI Test Oluşturucusu kullanarak kodu üretmek her zaman UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliği üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
+   **A**: UIMap - Kodlanmış UI Test Oluşturucusu kullanarak kodu her oluşturduğunuzda, UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
  [Test yapma amacıyla Windows Mağazası Denetimleri için Benzersiz Otomasyon Özelliği ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
-
-

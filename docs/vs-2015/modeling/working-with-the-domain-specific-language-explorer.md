@@ -1,25 +1,22 @@
 ---
 title: Etki alanına özgü dil Gezgini ile çalışma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 ms.assetid: ca0e8550-bb55-4218-92e2-f79ab5308d4f
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e6a1f4d9ef5e34b85aafbe7bacb14df85d29ac2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d305fdfa74ff680a9d5ef0b12b1a84be10958204
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210593"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803809"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Etki Alanına Özgü Dil Gezgini ile Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,4 @@ ms.locfileid: "49210593"
 -   **XML serileştirme davranışı**. Model için serileştirme ayarlar. Seri hale getirme hakkında daha fazla bilgi için bkz: [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

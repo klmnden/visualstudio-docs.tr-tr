@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: temel doku gölgelendiricisi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Temel doku gölgelendiricisi oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793440"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Nasıl Yapılır: Temel Doku Gölgelendiricisi Oluşturma
+# <a name="how-to-create-a-basic-texture-shader"></a>Nasıl yapılır: Temel doku gölgelendiricisi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu belge, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) bir tek doku gölgelendiricisi oluşturmak için nasıl kullanılacağını gösterir. Bu gölgelendiriciyi RGB ve dokudan örneklenen alfa değerleri için doğrudan son rengini ayarlar.  
@@ -75,6 +70,3 @@ Bu belge, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendir
  [Görüntü Düzenleyicisi](../designers/image-editor.md)   
  [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)   
  [Gölgelendirici Tasarımcısı Düğümleri](../designers/shader-designer-nodes.md)
-
-
-

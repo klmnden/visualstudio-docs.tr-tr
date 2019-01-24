@@ -1,24 +1,19 @@
 ---
 title: Test etmek için Windows Store denetimleri için benzersiz Otomasyon özelliği ayarlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 25890adaf22d1855426813c35e69766bba02a1c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789085"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Test yapma amacıyla Windows Mağazası Denetimleri için Benzersiz Otomasyon Özelliği ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ XAML tabanlı Windows Store uygulamanız için kodlanmış UI testlerini çalı�
  AutomationProperties.AutomationId kümesine **ButtonX** açıkça denetimi için XAML içinde.  
   
 ```xaml  
-<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
+<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
@@ -76,13 +71,13 @@ XAML tabanlı Windows Store uygulamanız için kodlanmış UI testlerini çalı�
 ###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Visual Studio veya Blend için Visual Studio kullanarak benzersiz Otomasyon özelliklerini atayın  
  Visual Studio veya Visual Studio için Blend, düğmeler, liste kutuları, birleşik giriş kutuları ve metin kutuları gibi etkileşimli öğeleri benzersiz bir ad atamak için kullanabilirsiniz. Bu denetimin AutomationProperties.Name için benzersiz bir değer sağlar.  
   
- **Visual Studio:** üzerinde **Araçları** menüsünde **seçenekleri** seçip **metin düzenleyici**, ardından **XAML**ve son olarak **Çeşitli**.  
+ **Visual Studio:** Üzerinde **Araçları** menüsünde **seçenekleri** seçip **metin düzenleyici**, ardından **XAML**ve son olarak **çeşitli** .  
   
  Seçin **oluşumda etkileşimli öğeleri'otomatik olarak ad** seçip **Tamam**.  
   
  ![XAML çeşitli seçenekleri](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
- **Visual Studio için Blend:** Visual Studio için Blend Bunu yapmak için aşağıdaki yöntemlerden birini kullanın.  
+ **Visual Studio için blend:** Visual Studio için Blend Bunu yapmak için aşağıdaki yöntemlerden birini kullanın.  
   
 > [!NOTE]
 >  Yalnızca statik olarak XAML kullanılarak oluşturulan denetimler için bu yöntemi kullanabilirsiniz.  
@@ -133,7 +128,7 @@ XAML tabanlı Windows Store uygulamanız için kodlanmış UI testlerini çalı�
                         </Setter.Value>  
                     </Setter>  
                 </Style>  
-            </ListBox.ItemContainerStyle>           
+            </ListBox.ItemContainerStyle>           
         </ListBox>  
   
 ```  
@@ -206,7 +201,3 @@ private void CreateCheckBox(string txt, StackPanel panel)
     }  
   
 ```  
-
-
-
-

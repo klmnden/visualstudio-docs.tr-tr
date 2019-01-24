@@ -1,27 +1,22 @@
 ---
-title: '7. adım: Çiftleri görünür kılma | Microsoft Docs'
-ms.custom: ''
+title: '7. Adım: Çiftleri görünür kılma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766319"
 ---
-# <a name="step-7-keep-pairs-visible"></a>7. Adım: Çiftleri Görünür Kılma
+# <a name="step-7-keep-pairs-visible"></a>7. Adım: Çiftleri Görünür Durumda Tutma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün çalışır. Ancak oyuncu eşleşen bir çift seçtiğinde ne olması gerektiğini bir düşünün. Zamanlayıcıyı açarak yerine simgelerin kaybolmasını (kullanarak `Start()` yöntemi), böylece, artık kullanarak etiketleri izlemek oyun kendisini sıfırlamalı `firstClicked` ve `secondClicked` başvuru değişkenlerini sıfırlamadan Seçilen iki etiketlerinin renk.  
@@ -66,9 +61,6 @@ Eşleştirme oyunu ve görünür simge çiftleri
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 8: doğrulama olmadığını oyuncunun kazanıp için bir yöntem ekleyin](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 8: Oyuncunun kazanıp kazanmadığını doğrulamak için yöntem ekleme](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [6. adım: Zamanlayıcı ekleme](../ide/step-6-add-a-timer.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [adım 6: Bir zamanlayıcı ekleyin](../ide/step-6-add-a-timer.md).

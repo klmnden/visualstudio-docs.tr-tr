@@ -1,14 +1,9 @@
 ---
 title: 'DA0022: Yüksek oranda Gen 2 çöp koleksiyonları | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0022
 - vs.performance.rules.DA0022
@@ -17,13 +12,13 @@ ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8da44ab48ae468c5b71bcd08d106548f40d04aa8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755304"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Yüksek oranda Gen 2 çöp koleksiyonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Kural Kimliği | DA0022 |
  Uygulamanın düzeni yönetilen bellek kullanımını anlamak için profil dotfuscato bellek ayırma profili tekrar çalışır ve nesne ömür seçeneği seçin.  
   
  Çöp toplama performansını artırma hakkında daha fazla bilgi için bkz. [çöp toplayıcı temelleri ve performans ipuçları](http://go.microsoft.com/fwlink/?LinkId=148226) Microsoft Web sitesinde. Otomatik çöp toplama yükü hakkında daha fazla bilgi için bkz. [büyük nesne yığını Kapatılmamışa](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

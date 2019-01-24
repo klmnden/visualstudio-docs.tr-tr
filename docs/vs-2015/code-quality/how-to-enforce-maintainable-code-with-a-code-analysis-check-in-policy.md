@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir kod analizi iade ilkesi ile Bakımı yapılabilir kodu zorlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir kod analizi iade ilkesi ile Bakımı yapılabilir kodu zorlama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
@@ -16,14 +11,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753021"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Nasıl yapılır: Bir Kod Çözümleme İade İlkesi ile Bakımı Yapılabilir Kodu Zorlama
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Nasıl yapılır: Bir Kod Analizi İade İlkesi ile Bakımı Yapılabilir Kodu Zorlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Geliştiriciler, karmaşıklığı ve bakımı kodlarını ölçmek için kod ölçümleri araç kullanabilirsiniz, ancak iade ilkesinin parçası olarak kod ölçümleri çağrılamaz. Ancak, bir takım, kodun kod ölçümleri standartlarıyla uyumluluğu doğrulamak ve iade etme ilkeleri aracılığıyla kuralları zorunlu Kod Analizi kuralları etkinleştirebilirsiniz. Kod ölçümleri hakkında daha fazla bilgi için bkz: [kod ölçüm değerleri](../code-quality/code-metrics-values.md).  
@@ -52,13 +47,13 @@ Geliştiriciler, karmaşıklığı ve bakımı kodlarını ölçmek için kod ö
   
 2.  Aşağıdaki kurallar için onay kutularını seçin:  
   
-    -   Devralma derinliği: **CA1501 AvoidExcessiveInheritance** -eşiği: fazla 5 düzey derinliğinde uyarı  
+    -   Devralma derinliği: **CA1501 AvoidExcessiveInheritance** -eşiği: Fazla 5 düzey derinliğinde uyarı  
   
-    -   Karmaşıklık: **CA1502 AvoidExcessiveComplexity** -eşiği: 25'den fazla uyarı  
+    -   Karmaşıklığı: **CA1502 AvoidExcessiveComplexity** -eşiği: 25'ten fazla uyarı  
   
-    -   Bakım dizini: **CA1505 AvoidUnmaintainableCode** -eşiği: az 20 uyarı  
+    -   Bakım dizini: **CA1505 AvoidUnmaintainableCode** -eşiği: 20'den daha az uyarı  
   
-    -   Sınıf bağlantısı: **CA1506 AvoidExcessiveClassCoupling** -eşiği: bir sınıf için 80'den fazla ve 30 bir yöntem için birden fazla uyarı  
+    -   Sınıf bağlantısı: **CA1506 AvoidExcessiveClassCoupling** -eşiği: Bir sınıf için 80'den fazla ve 30 bir yöntem için birden fazla uyarı  
   
     -   Ayrıca, bir derleme önlemek için bir kuralı ihlali istiyorsanız seçin **uyarı bir hata olarak değerlendir** kural açıklaması yanındaki onay kutusunu.  
   
@@ -67,6 +62,3 @@ Geliştiriciler, karmaşıklığı ve bakımı kodlarını ölçmek için kod ö
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod ölçüm değerleri](../code-quality/code-metrics-values.md)   
  [Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
-
-
-

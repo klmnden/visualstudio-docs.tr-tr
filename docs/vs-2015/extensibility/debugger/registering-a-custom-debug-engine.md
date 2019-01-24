@@ -1,26 +1,21 @@
 ---
 title: Hata ayıklama motoru özel bir kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ce7faf0ad538478d3291b48ac7306a39558663b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b840d262849fc59f3868451f201316094f2e5346
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795994"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Özel Bir Hata Ayıklama Altyapısını Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51732644"
 Hata ayıklama altyapısı gereken kendisini COM kurallarına uygun bir sınıf üreteci kaydetmek yanı sıra Visual Studio kayıt defteri alt anahtarı Visual Studio ile kaydedin.  
   
 > [!NOTE]
->  Hata ayıklama altyapısını kaydetme örneği bir parçası olarak oluşturulan TextInterpreter örneği bulunabilir [öğretici: bir hata ayıklama altyapısı kullanılarak ATL COM oluşturmaya](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Hata ayıklama altyapısını kaydetme örneği bir parçası olarak oluşturulan TextInterpreter örneği bulunabilir [Öğreticisi: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>DLL sunucu işlemi  
  Genellikle, hata ayıklama altyapısı kendi DLL'de bir COM sunucusu olarak uygulanır. Başka bir deyişle, hata ayıklama altyapısı Visual Studio erişebilmeniz için önce COM ile kendi sınıf üreteci CLSID'si kaydetmelisiniz. Hata ayıklama altyapısı kendi Visual Studio ile kendisi herhangi bir özelliği (Aksi ölçümler olarak bilinen) oluşturmak için hata ayıklama kaydetmelisiniz sonra altyapısını destekler. Visual Studio kayıt defteri alt anahtarı'hata ayıklama altyapısı için yazılan ölçümler seçimi, hata ayıklama altyapısı destekler özelliklerine bağlıdır.  
@@ -58,5 +53,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Öğretici: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
-
+ [Öğretici: ATL COM kullanarak bir hata ayıklama altyapısı oluşturma](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)

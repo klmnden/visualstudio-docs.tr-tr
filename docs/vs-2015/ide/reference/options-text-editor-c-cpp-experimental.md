@@ -1,11 +1,7 @@
 ---
 title: Seçenekler, metin düzenleyici, C / C++, Deneysel | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
@@ -14,13 +10,13 @@ ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41be21f3b28cccfe735a2a908851ebe3b181ce7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762901"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +29,7 @@ Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense v
  Bu özellikler, Visual Studio 2015 güncelleştirme 1 RC yüklemesinde kullanılabilir.  
   
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Gözatma Gezinti  
  **Yeni veritabanı altyapısını etkinleştir**  
@@ -72,6 +68,3 @@ Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense v
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dile özgü Düzenleyici seçeneklerini ayarlama](../../ide/reference/setting-language-specific-editor-options.md)   
  [C++'da (VC blogunda) yeniden düzenleme](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-
-
-
