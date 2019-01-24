@@ -1,28 +1,24 @@
 ---
-title: 'Nasıl Yapılır: Belirli bir sürüm yükleyin | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Belirli bir sürüm yükleyin | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - install a specific release, Visual Studio
 ms.assetid: d69ad0f8-f0a0-438e-a0ef-777c4868f139
 caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 42776c20cd6634903344569f9ce1f35a776c5f86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756366"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Nasıl Yapılır: Visual Studio'nun belirli bir sürüm yükleyin
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Nasıl yapılır: Visual Studio'nun belirli bir sürüm yükleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İsteğe bağlı özelliklerimizi en güncel ve iyileştirilmiş sürümünü elde etmeniz Visual Studio kurulumunu sık sık güncelleştiriyoruz.  Ancak Visual Studio 2015'in önceki bir sürümünü yüklemek istiyorsanız — örneğin, bir güncelleştirme 1 öncesi sürümünden Visual Studio iOS desteği — daha sonra kendi özellik bildirim dosyaları önceki bir sürümünü kullanmak için Visual Studio kurulumunu zorlamanız gerekir. Bu makalede bunun nasıl yapılacağı açıklanmaktadır.
@@ -43,7 +39,7 @@ ms.locfileid: "53959930"
 |Visual Studio Enterprise (daha fazla güncelleştirme 2-dönem güncelleştirmelerden olmadan özgün Update 2)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio Kurulumu güncelleştirme 2 yayımlandığında kullanılabilir feed.xml kullanır|
 |Visual Studio Enterprise güncelleştirme (özgün güncelleştirme 1 ancak önceden tarihi bu güncelleştirme 2 ile güncelleştirmeleri) 1|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|Visual Studio Kurulum güncelleştirmesini yayımlanan 2'den önce geçerli feed.xml kullanır|
 |Visual Studio Enterprise güncelleştirme 1 (daha fazla güncelleştirme dönemi 1 güncelleştirmelerden olmadan özgün güncelleştirme 1)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|Visual Studio Kurulum Güncelleştirmesi 1 yayınlandığı zaman, kullanılabilir feed.xml kullanır|
-|Visual Studio Enterprise (özgün RTM, ancak, önceden tarihi bu güncelleştirme 1'güncelleştirmeleri)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/en-us/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio Kurulum Güncelleştirmesi 1 önce piyasaya Sürüldü geçerli feed.xml kullanır|
+|Visual Studio Enterprise (özgün RTM, ancak, önceden tarihi bu güncelleştirme 1'güncelleştirmeleri)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio Kurulum Güncelleştirmesi 1 önce piyasaya Sürüldü geçerli feed.xml kullanır|
 |Visual Studio Enterprise (özgün RTM ile güncelleştirme yok)|Visual Studio Enterprise RTM (kullanılabilir [MSDN Abonelikleri indirme sayfasına](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Visual Studio Kurulumu RTM yayınlandığı zaman, kullanılabilir feed.xml kullanır|
 
 > [!IMPORTANT]

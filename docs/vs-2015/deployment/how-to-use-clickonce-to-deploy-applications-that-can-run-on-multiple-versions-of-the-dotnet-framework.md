@@ -1,14 +1,9 @@
 ---
-title: "Nasıl yapılır: .NET Framework'ün birden çok sürümü üzerinde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl yapılır: '.NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 7731526b09ab3014b9f3256ee1f4e4d0dd653a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803677"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: .NET Framework'ün Birden Çok Sürümünde Çalışan Uygulamaları Dağıtmak için ClickOnce'ı Kullanma
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: '.NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürümünü hedefleyen bir uygulama dağıtabilirsiniz. Bu, oluşturmak ve uygulama ve dağıtım bildirimlerini güncelleştirme gerektirir.  
@@ -53,7 +48,7 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimleri oluşturmak için  
   
--   Uygulamayı yayımlamak ve uygulama ve dağıtım bildirim dosyaları oluşturmak için yayınlama Sihirbazı'nı veya yayımlama sayfası Proje Tasarımcısı'nı kullanın. Daha fazla bilgi için [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) veya [yayımlama sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md).  
+-   Uygulamayı yayımlamak ve uygulama ve dağıtım bildirim dosyaları oluşturmak için yayınlama Sihirbazı'nı veya yayımlama sayfası Proje Tasarımcısı'nı kullanın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) veya [yayımlama sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Birden çok .NET Framework sürümü listelemek için dağıtım bildirimini değiştirmek için  
   
@@ -81,7 +76,7 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
     |.NET framework çalışma zamanı sürümü|XML|  
     |------------------------------------|---------|  
-    |4 istemcisi|\<supportedRuntime sürümü = "v4.0.30319" sku = ". NETFramework, sürüm = v4.0, profil istemci = "/ >|  
+    |4 istemcisi|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
     |4 tam|\<supportedRuntime sürümü = "v4.0.30319" sku = ". NETFramework, sürüm = v4.0 "/ >|  
     |3.5 tam|\<supportedRuntime version="v2.0.50727"/ >|  
     |3.5 istemci|\<supportedRuntime sürümü = "v2.0.50727" sku = "İstemci" / >|  
@@ -108,7 +103,7 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Bildirimlerini güncelleştirin ve uygulama ve dağıtım yeniden imzalamak için  
   
--   Güncelleştirme ve uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: yeniden imzalama uygulama ve dağıtım bildirimlerini](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Güncelleştirme ve uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
@@ -116,6 +111,3 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
  [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
  [Yapılandırma Dosyası Şeması](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
-
-
-

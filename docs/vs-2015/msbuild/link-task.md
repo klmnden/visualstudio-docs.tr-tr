@@ -1,14 +1,9 @@
 ---
 title: Bağlantı görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
 - VC.Project.VCLinkerTool.LinkStatus
@@ -35,13 +30,13 @@ ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f2ca9c721567d89bddad4a9ee61639bd3a82f10d
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+manager: jillfra
+ms.openlocfilehash: 4575516304862b4d50060a101a08a74f88db4597
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768520"
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -762,11 +757,11 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
   - **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI Önyükleme servisi sürücüsü** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
   - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
   - **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**  
   
@@ -934,6 +929,3 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

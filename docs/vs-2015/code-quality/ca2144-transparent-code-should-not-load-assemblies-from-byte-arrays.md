@@ -1,13 +1,9 @@
 ---
 title: 'CA2144: Saydam kod yüklenmemesi derlemeleri bayt dizileri | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2144
 ms.assetid: 777b1310-6e16-4413-b4ee-5f3136304f82
@@ -15,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02feb0fab6c8cfa4c1e25549639a09a403f88ac4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87c786f39e4bd9b55e81ae17e6e92b15aa36039b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919712"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786521"
 ---
-# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Saydam kod derlemeleri bayt dizilerinden değil
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Saydam kod derlemeleri bayt dizilerinden yüklememelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

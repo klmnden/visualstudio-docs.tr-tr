@@ -1,12 +1,9 @@
 ---
-title: 'UML sıralı diyagramlar: Başvuru | Microsoft Docs'
-ms.custom: ''
+title: 'UML sıralı diyagramlar: Referans | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,15 +18,15 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755160"
 ---
-# <a name="uml-sequence-diagrams-reference"></a>UML Sıralı Diyagramlar: Başvuru
+# <a name="uml-sequence-diagrams-reference"></a>UML sıralı diyagramlar: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da bir *sıralı diyagram* etkileşimi temsil eden sınıfları, bileşenleri, alt sistemler veya aktör örnekleri arasında iletiler dizisini gösterir. Zaman diyagram akar ve denetim akışını bir katılımcıdan diğerine gösterir. Nesneler ve sınıflar ve yöntemler yerine olayları görselleştirmek üzere sıralı diyagramlar kullanın. Aynı türde birden fazla örneği çok diyagramda görünebilir. Aynı mesajın birden fazla yinelenmiş de görünür.  
@@ -61,15 +58,12 @@ Visual Studio'da bir *sıralı diyagram* etkileşimi temsil eden sınıfları, b
 |14|**Parça koruması**|Bir koşul parça meydana gelir için ilgili durum için kullanılabilir.<br /><br /> Ayarlamak için bir bölümünü seçin sonra guard'ı seçin ve bir değer yazın.|  
 |**X**|**Yok etme olayı**|Nesne silinmiş veya erişilemez olduğu noktasını temsil eder. Her yaşam çizgisi altında görüntülenir.|  
 ||**Etkileşimi**|Sıralı Diyagramda gösterilen koleksiyonu yaşam çizgilerini ve iletileri. Etkileşim özelliklerini görüntülemek için projeyi seçmelisiniz **UML Model Gezgini**.|  
-||**Sıralı diyagram**|Etkileşim gösteren diyagram. Özelliklerini görüntülemek için diyagramın boş bir bölümüne tıklatın. **Not:** adlarını sıralı diyagram, etkileşim görüntüler ve diyagramı içeren dosyanın farklı olabilir.|  
+||**Sıralı diyagram**|Etkileşim gösteren diyagram. Özelliklerini görüntülemek için diyagramın boş bir bölümüne tıklatın. **Not:**  Sıralı diyagram, görüntüler ve diyagramı içeren dosyanın farklı olabilir etkileşimi adları.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)
-
-
-

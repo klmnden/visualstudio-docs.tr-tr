@@ -1,14 +1,9 @@
 ---
 title: Visual Studio SDK'sı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ae83be9e2013a8aef1f9e17f4ba35cde4f7d9bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753739"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +77,7 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2015'e geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [SSS: Eklentileri VSPackage uzantılarına dönüştürme](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Yönetilen kodda birden çok iş parçacığı yönetme](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Menüleri ve komutlari genişletme komutları](../extensibility/extending-menus-and-commands.md)   
@@ -103,4 +98,3 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
  [Visual Studio SDK desteği](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Arşiv](../extensibility/archive.md)   
  [Visual Studio SDK Başvurusu](../extensibility/visual-studio-sdk-reference.md)
-

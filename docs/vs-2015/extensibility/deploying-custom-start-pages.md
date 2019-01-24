@@ -1,27 +1,22 @@
 ---
 title: Özel başlangıç sayfaları dağıtma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 32527208fc33f1868ff13e7fda84bc4082126c00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795121"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781498"
 ---
 # <a name="deploying-custom-start-pages"></a>Özel Başlangıç Sayfaları Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51795121"
   
 - Özel başlangıç sayfası dosyalarınızı boş bir VSIX projesine ekleniyor. Daha fazla bilgi için [VSIX proje şablonu](../extensibility/vsix-project-template.md).  
   
-- Bir .vsix dosyasını el ile oluşturarak. Daha fazla bilgi için [nasıl yapılır: el ile bir uzantı (VSIX dağıtımı) paketi](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Bir .vsix dosyasını el ile oluşturarak. Daha fazla bilgi için [nasıl yapılır: El ile bir uzantı (VSIX dağıtımı) paketi](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Bir başlangıç sayfası tanımak Visual Studio için `Content Element` VSIX bildirim içermelidir bir `CustomExtension Element` olan `Type` özniteliğini `"StartPage"`. VSIX dağıtımı kullanarak yüklü olan bir başlangıç sayfası uzantısı görünür **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında olarak **[yüklü uzantı]** *Uzantı adı*.  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51795121"
   
 4.  Varsayılan başlangıç sayfasını HKLM altında aşağıdakileri ekleyerek ayarlamak için .pkgdef değiştirme burada *MyStartPage.xaml* başlangıç sayfası içeren .xaml dosyasının adıdır.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "URI"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -98,4 +93,3 @@ ms.locfileid: "51795121"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Başlangıç Sayfasına Kullanıcı Denetimi Ekleme](../extensibility/adding-user-control-to-the-start-page.md)
-

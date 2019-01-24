@@ -1,12 +1,9 @@
 ---
 title: Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - services, WCF Data
 - WCF services, binding to
@@ -35,13 +32,13 @@ ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3cabee0dce9120dcfcc6d31e6f1541eaca72b5ea
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4176e01d4419dc777e8381ebcd7dcef0b2c77b14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786839"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +103,7 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
  WCF hizmet konağı hakkında daha fazla bilgi için bkz: [WCF hizmet Konağı (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>WCF Test İstemcisi
- WCF Test İstemcisi aracı test parametreleri giriş, bir WCF hizmeti için girdi gönderme sağlar ve hizmet geri gönderir yanıtı görüntüleyin. Bu deneyimi ile WCF hizmet konağı birleştirdiğinizde test uygun bir hizmet sağlar. Aracı sürücüde yüklü Visual Studio 2015 için C: İşte \Common7\IDE klasöründe bulunabilir: **C:\Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\\**.
+ WCF Test İstemcisi aracı test parametreleri giriş, bir WCF hizmeti için girdi gönderme sağlar ve hizmet geri gönderir yanıtı görüntüleyin. Bu deneyimi ile WCF hizmet konağı birleştirdiğinizde test uygun bir hizmet sağlar. Araç, Visual Studio 2015 için sürücü C: İşte \Common7\IDE klasöründe bulunabilir: **C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  Bir WCF Hizmeti projede hata ayıklamak için F5 tuşuna bastığınızda, WCF Test İstemcisi açılır ve yapılandırma dosyasında tanımlanan hizmet uç noktaları listesini görüntüler. Test parametreleri ve hizmeti başlatın ve sürekli olarak test edin ve hizmetinizi doğrulamak için bu işlemi yineleyin.
 
@@ -119,7 +116,7 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
 
  **Yapılandırma hizmet başvuruları** iletişim kutusu, hizmet yapılandırmasını özelleştirmenizi sağlar. Hizmet adresini değiştirmek, erişim düzeyi, zaman uyumsuz davranış ve ileti anlaşması türleri belirtin ve tür yeniden yapılandırın.
 
-## <a name="how-to-select-a-service-endpoint"></a>Nasıl yapılır: bir hizmet uç noktası seçin
+## <a name="how-to-select-a-service-endpoint"></a>Nasıl yapılır: Hizmet uç noktası seçin
  Bazı Windows Communication Foundation (WCF) Hizmetleri bir istemci hizmeti ile iletişim kurabilir birden çok uç noktalarını kullanıma sunar. Örneğin, bir hizmeti bir HTTP bağlaması ve kullanıcı adını kullanan bir uç nokta kullanıma sunabileceğinize / parola güvenlik ve FTP ve Windows kimlik doğrulaması kullanan ikinci bir uç nokta. İkinci bir intranet üzerinde kullanılabilir ise ilk uç hizmeti bir güvenlik duvarı dışından erişen uygulamalar tarafından kullanılıyor olabilir.
 
  Böyle bir durumda, belirttiğiniz `endpointConfigurationName` bir parametresi olarak bir hizmet başvurusu için oluşturucu.
@@ -162,7 +159,7 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
 
 4.  İçinde `<EndPoint>` bulacaksınız etiketi bir `name="` *SomeService* `"` parametresi (burada *SomeService* bir uç nokta adı temsil eder). Geçirilebilir uç nokta unvanıdır `endpointConfigurationName As String` bir hizmet başvurusu için bir oluşturucu aşırı yüklemesi.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Nasıl yapılır: bir hizmet yöntemini zaman uyumsuz olarak çağırma
+## <a name="how-to-call-a-service-method-asynchronously"></a>Nasıl yapılır: Bir hizmet yöntemini zaman uyumsuz olarak çağırma
  Windows Communication Foundation (WCF) hizmetlerini çoğu yöntemleri zaman uyumlu veya zaman uyumsuz olarak çağrılabilir. Zaman uyumsuz bir yöntemi çağırmak uygulamanızın yavaş bir bağlantı üzerinden çalıştığında yöntemi Aranan çalışmaya devam olanak tanır.
 
  Bir hizmet başvurusu için bir proje eklendiğinde varsayılan olarak, zaman uyumlu yöntemleri çağırmak için yapılandırılır. Bir ayarı değiştirerek zaman uyumsuz yöntemleri çağırma davranışını değiştirebilirsiniz **hizmet başvurusu yapılandırma** iletişim kutusu.
@@ -180,7 +177,7 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
 
 3.  İçinde **hizmet başvurusu yapılandırma** iletişim kutusunda **zaman uyumsuz işlemler oluşturma** onay kutusu.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Nasıl yapılır: bir hizmet tarafından döndürülen veri bağlama
+## <a name="how-to-bind-data-returned-by-a-service"></a>Nasıl yapılır: Bir hizmet tarafından döndürülen veri bağlama
  Yalnızca bir denetim için herhangi bir veri kaynağını bağlayabilirsiniz gibi bir denetim için bir Windows Communication Foundation (WCF) hizmeti tarafından döndürülen veriler bağlayabilirsiniz. Hizmet veri döndüren bileşik türler içeriyorsa bir WCF hizmeti bir başvuru eklediğinizde, otomatik olarak eklenen **veri kaynakları** penceresi.
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Bir WCF hizmeti tarafından döndürülen tek bir veri alanı denetim Bağlanılacak
@@ -239,14 +236,14 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[İzlenecek yol: Windows Forms içinde basit bir WCF Hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Oluşturma ve WCF hizmetleri kullanarak adım adım bir gösterim sağlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[İzlenecek Yol: WPF ve Entity Framework ile WCF Veri Hizmeti Oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Oluşturma ve kullanma konusunda adım adım bir gösterim sağlar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Oluşturma ve kullanma konusunda adım adım bir gösterim sağlar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[WCF Geliştirme Araçlarını Kullanma](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|WCF hizmetlerinde oluşturup anlatılmaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Nasıl yapılır: ekleme, güncelleştirme veya hizmet başvurusunu Kaldır](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Ekleme, güncelleştirme veya WCF hizmetleri projeden açıklar.|
-|[Nasıl Yapılır: WCF Veri Hizmeti Başvurusunu Güncelleme veya Kaldırma](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Nasıl başvurulacağını ve anlatılmaktadır [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Nasıl yapılır: Ekleme, güncelleştirme veya hizmet başvurusunu Kaldır](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Ekleme, güncelleştirme veya WCF hizmetleri projeden açıklar.|
+|[Nasıl yapılır: WCF Veri Hizmeti Başvurusunu Ekleme, Güncelleştirme ve Kaldırma](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Nasıl başvurulacağını ve anlatılmaktadır [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Hizmet Başvurularında Sorun Giderme](../data-tools/troubleshooting-service-references.md)|Hizmet başvuruları ve bunların nasıl ile ortaya çıkabilecek bazı yaygın hatalar gösterir.|
 |[WCF Hizmetlerinde Hata Ayıklama](../debugger/debugging-wcf-services.md)|Genel hata ayıklama sorunları ve WCF hizmetlerinde hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.|
 |[Windows Communication Foundation kimlik doğrulama hizmeti genel bakış](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|WCF Web sitesi için bir rol hizmeti sağlamak için nasıl kullanılacağını açıklar.|
-|[İzlenecek Yol: N Katmanlı Bir Veri Uygulaması Oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Türü belirtilmiş veri kümesi oluşturma ve birden çok projelere TableAdapter ve veri kümesi kodunu ayırmak için adım adım yönergeler sağlar.|
+|[İzlenecek yol: N Katmanı Veri Uygulaması Oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Türü belirtilmiş veri kümesi oluşturma ve birden çok projelere TableAdapter ve veri kümesi kodunu ayırmak için adım adım yönergeler sağlar.|
 |[Hizmet Başvurusu Yapılandır İletişim Kutusu](../data-tools/configure-service-reference-dialog-box.md)|Kullanıcı arabirimi öğelerini açıklar **hizmet başvurusu yapılandırma** iletişim kutusu.|
 
 ## <a name="reference"></a>Başvuru

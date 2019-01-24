@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: kod parçacığı oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Kod parçacığı oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,15 +15,15 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790119"
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek Yol: Kod Parçacığı Oluşturma
+# <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek yol: Kod parçacığı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yalnızca birkaç adımda bir kod parçacığı oluşturabilirsiniz. Tek yapmak için ihtiyacınız olan bir XML dosyası oluşturun, uygun öğeleri doldurmak ve kodunuzu ekleyin. Kodunuza başvurular ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacığını kod parçacıkları yöneticisindeki İçe Aktar düğmesini kullanarak Visual Studio yüklemenize ekleyebilirsiniz (**Araçlar/kod parçacıkları Yöneticisi**).  
@@ -268,6 +263,3 @@ Yalnızca birkaç adımda bir kod parçacığı oluşturabilirsiniz. Tek yapmak 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)
-
-
-

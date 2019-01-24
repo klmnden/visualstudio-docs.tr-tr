@@ -1,14 +1,9 @@
 ---
 title: Shell (yalıtılmış veya tümleşik) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792573"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (yalıtılmış veya tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Tümleşik veya yalıtılmış modda, kendi Visual Studio tabanlı bir uygulama 
  Tümleşik veya yalıtılmış Kabuk uygulamanızı dağıtmak için uygulamanız, bir özel tümleşik veya yalıtılmış Kabuk yeniden dağıtılabilir ve bir yükleme programı eklemeniz gerekir. Dağıtım ve yükleme hakkında daha fazla bilgi için bkz: [yalıtılmış kabuk uygulamaları dağıtma](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  [Son kullanıcı lisans sözleşmesi (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) Kabukları Visual Studio tümleşik ve yalıtılmış bir bölüm veri toplamayı içerir (**bölüm 3. Veri**).  Bu, kullanıcıların uygulamanıza yapı tümleşik veya yalıtılmış Kabuk yazılım ya da Microsoft tarafından toplanabilir müşteri kullanım verilerini açıklar. Daha fazla bilgi için [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/en-us/dn948229).  
+>  [Son kullanıcı lisans sözleşmesi (EULA)](https://www.visualstudio.com/support/legal/mt171552) Kabukları Visual Studio tümleşik ve yalıtılmış bir bölüm veri toplamayı içerir (**bölüm 3. Veri**).  Bu, kullanıcıların uygulamanıza yapı tümleşik veya yalıtılmış Kabuk yazılım ya da Microsoft tarafından toplanabilir müşteri kullanım verilerini açıklar. Daha fazla bilgi için [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).  
 > 
 >  Uygulamanızı müşterilerinizin ayrı kullanım verilerini toplamak, uygun dikkat edin, Topla, uygulamanızın kullanıcılara sağlamanız gerekir.  Visual Studio Yazılım Geliştirme Seti lisans göre uygulamanızın bir parçası olarak yalıtılmış veya tümleşik Kabuk yazılım dağıttığınızda aşağıdakilerden birini içermelidir:  
 > 
@@ -64,4 +59,3 @@ Tümleşik veya yalıtılmış modda, kendi Visual Studio tabanlı bir uygulama 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)
-

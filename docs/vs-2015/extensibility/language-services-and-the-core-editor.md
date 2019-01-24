@@ -1,26 +1,21 @@
 ---
 title: Dil Hizmetleri ve çekirdek Düzenleyicisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 503924f435dda2d4432c915f9566846f0f4dd964
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756723"
 ---
 # <a name="language-services-and-the-core-editor"></a>Dil Hizmetleri ve çekirdek Düzenleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ Visual Studio düzenleyicilerinde sık dil hizmeti ile ilişkilendirilmiştir. D
  [IntelliSense barındırma](../extensibility/intellisense-hosting.md)   
  [Kapsanan dilleri](../extensibility/contained-languages.md)   
  [Eski Dil Hizmeti Geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)
-

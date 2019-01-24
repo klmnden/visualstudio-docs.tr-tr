@@ -1,27 +1,22 @@
 ---
 title: Çağrı ağacı görünümü - .NET bellek izleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed87363751c18794d9cf4c00e156d75760e0bf8d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dfcee55882ee90af6ed13072a7e557a9c1763ae8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792999"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Çağrı Ağacı Görünümü - .NET Bellek İzleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51782511"
 |**İşlem adı**|İşleme atanan ad.|  
 |**Zaman dışlamalı araştırma ek yükü**|Zaman ek yükü bu işlev, ölçümlü izlemeyle neden olur. Tüm özel sürelerinden çıkarıldığında araştırma ek yükü.|  
 |**Zaman kapsamlı araştırma ek yükü**|İzleme tarafından neden olduğu zaman ek yükü Bu işlevde ve alt işlevleri. Tüm kapsamlı sürelerinden çıkarıldığında araştırma ek yükü.|  
-|**Türü**|İşlevin bağlamı:<br /><br /> -   **0** -geçerli işlevi<br />-   **1** -geçerli işlevi çağıran bir işlev<br />-   **2** -geçerli işlev tarafından çağrılan bir işlev<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
+|**Tür**|İşlevin bağlamı:<br /><br /> -   **0** -geçerli işlevi<br />-   **1** -geçerli işlevi çağıran bir işlev<br />-   **2** -geçerli işlev tarafından çağrılan bir işlev<br /><br /> Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
 |**Kök işlev adı**|Geçerli işlevin adı. Yalnızca [VSPerfReport](../profiling/vsperfreport.md) komut satırı raporlar.|  
   
 ## <a name="net-memory-values"></a>.NET bellek değerleri  
@@ -111,6 +106,3 @@ ms.locfileid: "51782511"
 |**Ortalama dışlamalı uygulama süresi**|Ortalama uygulama dışlamalı süre, çağrı ağacında üst işlevi tarafından çağrıldığında, bu işlev çağrısı.|  
 |**Maksimum dışlamalı uygulama süresi**|En fazla uygulama dışlamalı süre, çağrı ağacında üst işlevi tarafından çağrıldığında, bu işlev çağrısı.|  
 |**Minimum dışlamalı uygulama süresi**|En düşük uygulama dışlamalı süre, çağrı ağacında üst işlevi tarafından çağrıldığında, bu işlev çağrısı.|
-
-
-

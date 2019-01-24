@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: Kod kusurları için C / C++ kodunu analiz etme | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Kusurları için C / C++ kodunu analiz etme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754898"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: Kod Kusurları için C/C++ Kodunu Analiz Etme
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: C/C++ Kodunda Hata Olup Olmadığını Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları için C/C++ kodunu analiz etme gösterir.  
@@ -83,7 +78,7 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
 2.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
-     Uyarı C6230: anlamsal olarak farklı türleri arasında örtük atama: Boole bağlamında HRESULT kullanma.  
+     Uyarı C6230: Anlamsal olarak farklı türleri arasında örtük atama: Boole bağlamında HRESULT kullanma.  
   
      Kod Düzenleyicisi uyarıya yol açan işlev satır görüntüler `bool``ProcessDomain()`. Bu uyarı, bir HRESULT bir 'If' deyimi bir Boolean sonucu beklenen yeri kullanılmakta olduğunu gösterir.  
   
@@ -95,7 +90,7 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
 4.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
-     Uyarı C6282: Yanlış işleç: test bağlamında sabit atama. Hedeflenen == oldu?  
+     C6282 Uyarı: Hatalı operatör: test bağlamında sabit atama. Hedeflenen == oldu?  
   
 5.  Bu uyarı, eşitlik için test ederek düzeltin. Kodunuzu aşağıdaki koda benzemelidir:  
   
@@ -179,7 +174,7 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
 3.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
-     Uyarı C6011: NULL işaretçi 'düğümü' başvurusunu kaldırma.  
+     Uyarı C6011: 'Düğümü' NULL işaretçisinin başvurusunun kaldırılması.  
   
      Bu uyarı işleve geçirilen düğüm null olabileceğini gösterir ve burada uyarı tetiklendi satır numarasını gösterir.  
   
@@ -200,7 +195,4 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
      Projeyi herhangi bir uyarı veya hata derler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Kod Kusurları için Yönetilen Kodu Analiz Etme](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

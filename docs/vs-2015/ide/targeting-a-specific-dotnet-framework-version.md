@@ -1,14 +1,9 @@
 ---
 title: Belirli bir .NET Framework sürümünü hedefleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -18,13 +13,13 @@ ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755157"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Belirli Bir .NET Framework Sürümünü Hedefleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,8 @@ Visual Studio sürümünü veya profilini projenizi hedefleyecek şekilde istedi
  [Visual Studio Çoklu Sürüm Desteğine Genel Bakış](../ide/visual-studio-multi-targeting-overview.md)  
  Visual Studio çoklu sürüm desteğinin özelliklerine genel bakış sağlar.  
   
- [Nasıl Yapılır: .NET Framework Sürümü Hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
- Belirli bir belirleme konusunda ayrıntıları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Visual Basic, Visual C# veya Visual F # projeniz için.  
+ [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ Belirli bir belirleme konusunda ayrıntıları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , Visual Basic, Visual C# veya görsel F# proje.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [.NET framework çoklu sürüm desteği için ASP.NET Web projeleri](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
@@ -50,8 +45,5 @@ Visual Studio sürümünü veya profilini projenizi hedefleyecek şekilde istedi
  [Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Açıklar **hedef Framework'ü** denetimi için Proje Tasarımcısı'nda [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri.  
   
- [Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  .NET Framework'ün farklı sürümlerini hedeflemek için ve farklı platform araç takımları kullanacak şekilde ayarlarının Visual C++ projeleri için nasıl değiştirileceğini açıklar.
-
-
-

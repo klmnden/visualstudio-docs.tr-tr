@@ -1,33 +1,28 @@
 ---
 title: Tek ve çoklu sekme görünümleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758073"
 ---
 # <a name="single-and-multi-tab-views"></a>Tek ve Çoklu Sekme Görünümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Farklı türde bir düzenleyici oluşturabilirsiniz. Bir örnek bir kod düzenleyicisi penceresi, başka bir form tasarımcısı.  
   
- Birden çok sekmeli bir görünüm, birden çok sekme bulunur bir görünümüdür. Örneğin, HTML düzenleyicisinin alt kısmında iki sekme bulunur: **tasarım** ve **kaynak**, her bir mantıksal görünümü. Tasarım görünümü diğer web sayfası oluşturan HTML görüntüler işlenen bir web sayfası görüntülenir.  
+ Birden çok sekmeli bir görünüm, birden çok sekme bulunur bir görünümüdür. Örneğin, HTML düzenleyicisinin alt kısmında iki sekme bulunur: **Tasarım** ve **kaynak**, her bir mantıksal görünümü. Tasarım görünümü diğer web sayfası oluşturan HTML görüntüler işlenen bir web sayfası görüntülenir.  
   
 ## <a name="accessing-physical-views"></a>Fiziksel görünümler erişme  
  Fiziksel görünümler her veri arabellekteki kod ya da bir form gibi bir görünümünü temsil eden belge görünümü nesneleri barındırır. Buna göre her belge görünümü nesnesi (fiziksel görünüm dize olarak bilinen bir şey tarafından tanımlanır) fiziksel bir görünümü ve genellikle tek bir mantıksal görünüm vardır.  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birden çok belge görünümünü destekleme](../extensibility/supporting-multiple-document-views.md)   
- [Nasıl yapılır: belge verilerine görünüm ekleme](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Nasıl yapılır: Belge verilerine görünüm ekleme](../extensibility/how-to-attach-views-to-document-data.md)   
  [Özel Düzenleyiciler ve Tasarımcılar Oluşturma](../extensibility/creating-custom-editors-and-designers.md)
-

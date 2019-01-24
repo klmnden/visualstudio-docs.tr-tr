@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: uygulama simgesi (Visual Basic, C#) belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Uygulama simgesi belirtme (Visual Basic C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -17,15 +12,15 @@ ms.assetid: ad8e14ed-adc2-45b6-a0be-818b16d5616f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 97c452cbdf4d8f0393160ad15e0bb192998961a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788171"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Nasıl Yapılır: Uygulama Simgesi Belirtme (Visual Basic C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Nasıl yapılır: Uygulama simgesi belirtme (Visual Basic C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 `Icon` Proje özelliği, dosya Gezgini ve Windows görev çubuğunda görüntülenecek simge dosyası (.ico) için derlenmiş uygulama belirtir.  
@@ -51,7 +46,4 @@ ms.locfileid: "49235436"
  [Uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Uygulama özelliklerini yönetme](../ide/application-properties.md)  
- [Nasıl yapılır: ekleme veya kaldırma kaynakları](http://msdn.microsoft.com/en-us/7b77bc06-3952-4799-b029-def3f8f7f88d)
-
-
-
+ [Nasıl yapılır: Kaynak ekleme veya kaldırma](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

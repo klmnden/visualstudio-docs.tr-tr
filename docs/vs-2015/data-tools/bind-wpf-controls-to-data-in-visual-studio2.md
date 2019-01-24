@@ -1,12 +1,9 @@
 ---
 title: Verilere WPF denetimleri bağlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 00dd5147-db0b-4b59-8d6c-8229b09ca9dd
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6cf08391084fdcfd5236212d098b25130aadcda7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9ea4cb1b8c1a31c31d06cf6cc59cef20036a6674
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789254"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,4 +121,4 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
     >  Denetim verileri zaten bağlıysa, veri bağlama denetimi için denetimin en son sürüklenen öğeye sıfırlanır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-wpf-applications.md) [WPF uygulamalarında ilgili verileri görüntüleyen](../data-tools/display-related-data-in-wpf-applications.md) [denetimleriverikümesineWPFbağlama](../data-tools/bind-wpf-controls-to-a-dataset.md) [Denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [izlenecek yol: WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+ [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-wpf-applications.md) [WPF uygulamalarında ilgili verileri görüntüleyen](../data-tools/display-related-data-in-wpf-applications.md) [denetimleriverikümesineWPFbağlama](../data-tools/bind-wpf-controls-to-a-dataset.md) [Denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

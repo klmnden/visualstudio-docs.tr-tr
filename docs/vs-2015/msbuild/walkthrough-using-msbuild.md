@@ -1,29 +1,24 @@
 ---
-title: 'İzlenecek yol: MSBuild kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: MSBuild kullanarak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841428"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792226"
 ---
-# <a name="walkthrough-using-msbuild"></a>İzlenecek Yol: MSBuild Kullanma
+# <a name="walkthrough-using-msbuild"></a>İzlenecek yol: MSBuild Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -79,7 +74,7 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
 - Görev, işin en küçük birimdir; başka bir deyişle yapının "atom" öğesidir. Görevler, girdileri ve çıktıları olabilen bağımsız yürütülebilir bileşenlerdir. Şu anda proje dosyasında başvurulan veya tanımlanan görev yoktur. Aşağıdaki bölümlerde proje dosyasına görevler ekleyin. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md) konu.  
   
-- Hedef, görevlerin adlandırılmış bir dizisidir. Şu anda, proje dosyasının sonunda HTML yorumlarında bulunan iki hedef vardır: BeforeBuild ve AfterBuild.  
+- Hedef, görevlerin adlandırılmış bir dizisidir. Proje dosyasının sonunda HTML yorumlarında bulunan şu anda içine alınan iki hedefi vardır: BeforeBuild ve AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -250,7 +245,7 @@ $(PropertyName)
  MSBuild, proje dosyası ve MSBuild ikili dosyaları hakkındaki bilgileri depolamak için bazı özellik adlarını saklar. MSBuildToolsPath ayrılmış bir özellik örneğidir. Ayrılmış özelliklere, diğer tüm özellikler gibi $ gösterimi ile başvurulur. Daha fazla bilgi için [nasıl yapılır: Proje dosyasının konumunu ve adını başvuru](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) ve [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Ortam Değişkenleri  
- Proje dosyalarındaki ortam değişkenlerine yapı özellikleriyle aynı şekilde başvurabilirsiniz. Örneğin, proje dosyanızda PATH ortam değişkenini kullanmak için $(Yol) işaretini kullanın. Proje, ortam değişkeniyle ile aynı ada sahip bir özellik tanımı içeriyorsa projedeki özellik, ortam değişkeninin değerini geçersiz kılar. Daha fazla bilgi için [nasıl yapılır: bir yapı içinde kullanımı ortam değişkenlerini](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Proje dosyalarındaki ortam değişkenlerine yapı özellikleriyle aynı şekilde başvurabilirsiniz. Örneğin, proje dosyanızda PATH ortam değişkenini kullanmak için $(Yol) işaretini kullanın. Proje, ortam değişkeniyle ile aynı ada sahip bir özellik tanımı içeriyorsa projedeki özellik, ortam değişkeninin değerini geçersiz kılar. Daha fazla bilgi için [nasıl yapılır: Derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Komut Satırı'ndan Özellikleri Ayarlama  
  Özellikler, /property veya /p komut satırı anahtarı kullanılarak komut satırında tanımlanabilir. Komut satırından alınan özellik değerleri, proje dosyasında ve ortam değişkenlerinde ayarlanan özellik değerlerini geçersiz kılar.  
@@ -312,7 +307,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- iki öğe içeren bir öğe grubunu tanımlar. Derleme öğe türü iki değere sahiptir: "Program.cs" ve "Properties\AssemblyInfo.cs".  
+ iki öğe içeren bir öğe grubunu tanımlar. Derleme öğe türü iki değere sahiptir: "Program.cs" ve "Properties\assemblyınfo.cs".  
   
  Aşağıdaki kod, virgülle ayrılmış şekilde her iki dosyayı tek bir Dahil Etme özniteliğinde bildirerek aynı öğe türünü oluşturur.  
   
@@ -408,7 +403,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- resimler klasöründeki ve tüm alt klasörlerindeki ".jpeg" uzantılı tüm dosyaları Fotoğraflar öğe türüne ekler. Daha fazla örnek için bkz. [nasıl yapılır: derlenecek dosyaları seçme](../msbuild/how-to-select-the-files-to-build.md).  
+ resimler klasöründeki ve tüm alt klasörlerindeki ".jpeg" uzantılı tüm dosyaları Fotoğraflar öğe türüne ekler. Daha fazla örnek için bkz. [nasıl yapılır: Derlenecek dosyaları seçme](../msbuild/how-to-select-the-files-to-build.md).  
   
  Öğeler bildirildiğinde öğe türüne eklenir, buna dikkat edin. Örneğin,  
   
@@ -429,7 +424,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- adı "Tasarımcı" dizesini içeren dosyalar dışında ".cs" dosya uzantısına sahip tüm dosyaları Derleme öğe türüne ekler. Daha fazla örnek için bkz. [nasıl yapılır: dosyaları derlemeden Dışla](../msbuild/how-to-exclude-files-from-the-build.md).  
+ adı "Tasarımcı" dizesini içeren dosyalar dışında ".cs" dosya uzantısına sahip tüm dosyaları Derleme öğe türüne ekler. Daha fazla örnek için bkz. [nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  Hariç Tutma özniteliği, sadece Dahil Etme özniteliği tarafından her iki öğeyi de içeren item öğesine eklenen öğeleri etkiler. Örneğin,  
   
@@ -582,10 +577,8 @@ $(PropertyName)
    Bu söz diziminde ifade edilen meta verilerin toplu işlemeye neden olmadığını unutmayın.  
   
 ## <a name="whats-next"></a>Sırada ne var?  
- Basit bir proje dosyası bir adım teker teker oluşturmayı öğrenmek için denemenin [izlenecek yol: sıfırdan bir MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Basit bir proje dosyası bir adım teker teker oluşturmayı öğrenmek için denemenin [izlenecek yol: Sıfırdan MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.
 [MSBuild'e genel bakış](msbuild.md)  
  [MSBuild Başvurusu](../msbuild/msbuild-reference.md)
-
-

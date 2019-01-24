@@ -1,28 +1,23 @@
 ---
 title: Yazma. Vsct dosyaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9500aa0d35c0bf74e63c50d84d2e4aae4dfd543
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776441"
 ---
-# <a name="authoring-vsct-files"></a>Yazma. Vsct dosyaları
+# <a name="authoring-vsct-files"></a>Authoring .Vsct Files
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI) öğeleri Visual Studio tümleşik geliştirme ortamı (IDE) eklemek için .vsct dosyası yazma işlemi gösterilmektedir. Visual Studio .vsct dosyası zaten sahip olmayan pakete (VSPackage'ı) kullanıcı Arabirimi öğeleri eklediğinizde, bu adımları kullanın.  
@@ -30,14 +25,14 @@ Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI
  Yeni projeler için seçimlerinizi bağlı olarak, bir menü komutu, bir araç penceresi ya da özel bir düzenleyici için gerekli öğeler zaten sahip olan bir .vsct dosyası oluşturur çünkü Visual Studio Paket şablon kullanmanızı öneririz. Bu .vsct dosyası, VSPackage gereksinimlerini karşılayacak şekilde değiştirebilirsiniz. Örneklerde .vsct dosyası değiştirme hakkında daha fazla bilgi için bkz. [genişletme menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="authoring-the-file"></a>Dosya yazma  
- Bu aşamada .vsct dosyası Yazar: dosyalara ve kaynaklara yapısını oluşturmak, kullanıcı Arabirimi öğeleri bildirmek, IDE'de kullanıcı Arabirimi öğeleri yerleştirmek ve özel davranışları ekleyin.  
+ Bu aşamada .vsct dosyası oluşturacaksınız: Dosyalara ve kaynaklara yapısını oluşturmak, kullanıcı Arabirimi öğeleri bildirmek, IDE içinde kullanıcı Arabirimi öğeleri yerleştirmek ve özel davranışları ekleyin.  
   
 ### <a name="file-structure"></a>Dosya yapısı  
  .Vsct dosyasının temel yapısı bir [CommandTable](../../extensibility/commandtable-element.md) içeren kök öğesi bir [komutları](../../extensibility/commands-element.md) öğesi ve bir [sembolleri](../../extensibility/symbols-element.md) öğesi.  
   
 ##### <a name="to-create-the-file-structure"></a>Dosya yapısı oluşturmak için  
   
-1.  İçindeki adımları izleyerek .vsct dosyası projenize ekleyin [nasıl yapılır: oluşturma bir. Vsct dosya](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  İçindeki adımları izleyerek .vsct dosyası projenize ekleyin [nasıl yapılır: Oluşturma bir. Vsct dosya](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2.  Gerekli ad alanları için ekleme `CommandTable` öğesi, aşağıdaki örnekte gösterildiği gibi.  
   
@@ -244,4 +239,3 @@ Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI
  [Menüleri ve komutlari genişletme komutları](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md)
-

@@ -1,14 +1,9 @@
 ---
 title: (C#) yeniden düzenlemeyi yeniden adlandırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783292"
 ---
 # <a name="rename-refactoring-c"></a>Yeniden Düzenlemeyi (C#) yeniden adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274969"
 |Sınıf Görünümü|Sınıf Görünümü'nde bir tanımlayıcı seçin, yeniden adlandırma düzenlemesi kısayol menüsünden kullanılabilir ve **yeniden düzenleme** menüsü.|  
 |Nesne Tarayıcısı|Nesne Tarayıcısı'nda bir tanımlayıcı seçin, yeniden adlandırma düzenlemesi yalnızca kullanılabilir **yeniden düzenleme** menüsü.|  
 |Windows Form Tasarımcısı'nın özellik Kılavuzu|İçinde **özellik kılavuzunda** Windows Forms tasarımcısına denetim adının değiştirilmesi bu denetim için bir yeniden adlandırma işlemi başlatır. **Yeniden Adlandır** iletişim kutusu görünmez.|  
-|Çözüm Gezgini|İçinde **Çözüm Gezgini**, **Yeniden Adlandır** komutu kısayol menüsünde kullanılabilir. Seçili kaynak dosyasının dosya adı ile aynı sınıf adı olan bir sınıf içeriyorsa, aynı anda kaynak dosyayı yeniden adlandırın ve yeniden adlandırma düzenlemesi yürütmek için bu komutu kullanabilirsiniz.<br /><br /> Örneğin, varsayılan Windows tabanlı bir uygulama oluşturup, ardından Form1.cs TestForm.cs için yeniden adlandırın TestForm.cs ve Form1 sınıfı için kaynak dosya adı Form1.cs değiştirir ve tüm başvuruları sınıfı için TestForm adlandırılacak. **Not:** **geri** komut (CTRL + Z) yalnızca kodda yeniden adlandırma düzenlemesi Geri Al ve dosya adı, özgün adına geri değişiklik olur. <br /><br /> Seçili kaynak dosyası adı dosya adıyla aynı olan bir sınıf içermiyorsa **Yeniden Adlandır** komutunu **Çözüm Gezgini** yalnızca kaynak dosyayı yeniden adlandırır ve yeniden adlandırma yürütülmez yeniden düzenleme.|  
+|Çözüm Gezgini|İçinde **Çözüm Gezgini**, **Yeniden Adlandır** komutu kısayol menüsünde kullanılabilir. Seçili kaynak dosyasının dosya adı ile aynı sınıf adı olan bir sınıf içeriyorsa, aynı anda kaynak dosyayı yeniden adlandırın ve yeniden adlandırma düzenlemesi yürütmek için bu komutu kullanabilirsiniz.<br /><br /> Örneğin, varsayılan Windows tabanlı bir uygulama oluşturup, ardından Form1.cs TestForm.cs için yeniden adlandırın TestForm.cs ve Form1 sınıfı için kaynak dosya adı Form1.cs değiştirir ve tüm başvuruları sınıfı için TestForm adlandırılacak. **Not:**  **Geri** komut (CTRL + Z) yalnızca kodda yeniden adlandırma düzenlemesi Geri Al ve dosya adı, özgün adına geri değişiklik olur. <br /><br /> Seçili kaynak dosyası adı dosya adıyla aynı olan bir sınıf içermiyorsa **Yeniden Adlandır** komutunu **Çözüm Gezgini** yalnızca kaynak dosyayı yeniden adlandırır ve yeniden adlandırma yürütülmez yeniden düzenleme.|  
   
 ## <a name="rename-operations"></a>İşlemleri yeniden adlandırın.  
  Yürüttüğünüzde **Yeniden Adlandır**, yeniden düzenleme altyapısı aşağıdaki tabloda açıklandığı gibi her kod simge için belirli bir yeniden adlandırma işlemi gerçekleştirir.  
@@ -53,8 +48,8 @@ ms.locfileid: "49274969"
 |-----------------|----------------------|  
 |Alan|Bildirimler ve kullanımları alan yeni bir adla değiştirir.|  
 |yerel değişken|Bildirimler ve değişken kullanımları yeni bir adla değiştirir.|  
-|Yöntem|Yeni bir adla adı yöntemi ve bu yöntem tüm başvurularını değiştirir. **Not:** kapsamda genişletme yöntemi statik bir yöntem veya bir örnek yöntemi kullanılıp kullanılmadığı bağımsız olarak tüm örneklerine yöntemin bir genişletme yöntemi yeniden adlandırdığınızda, yeniden adlandırma işlemi yayar. Daha fazla bilgi için [genişletme yöntemleri](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Ad Alanı|Yeni adın bildiriminde ad değişikliklerini tüm `using` deyimleri ve tam olarak nitelenmiş adlar. **Not:** bir ad alanı yeniden adlandırılırken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de güncelleştirir **varsayılan Namespace** özelliği **uygulama** sayfasının **Proje Tasarımcısı**. Bu özellik, seçerek sıfırlanamaz **geri** gelen **Düzenle** menüsü. Sıfırlamak için **varsayılan Namespace** özellik değeri özelliğinde değiştirmelisiniz **Proje Tasarımcısı**. Daha fazla bilgi için [uygulama sayfası](../ide/reference/application-page-project-designer-csharp.md).|  
+|Yöntem|Yeni bir adla adı yöntemi ve bu yöntem tüm başvurularını değiştirir. **Not:**  Bir genişletme yöntemi yeniden adlandırdığınızda, yöntem kapsamda genişletme yöntemi statik bir yöntem veya bir örnek yöntemi kullanılıp kullanılmadığı bağımsız olarak tüm örneklerini yeniden adlandırma işlemi yayar. Daha fazla bilgi için [genişletme yöntemleri](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Ad Alanı|Yeni adın bildiriminde ad değişikliklerini tüm `using` deyimleri ve tam olarak nitelenmiş adlar. **Not:**  Bir ad alanı yeniden adlandırılırken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de güncelleştirir **varsayılan Namespace** özelliği **uygulama** sayfasının **Proje Tasarımcısı**. Bu özellik, seçerek sıfırlanamaz **geri** gelen **Düzenle** menüsü. Sıfırlamak için **varsayılan Namespace** özellik değeri özelliğinde değiştirmelisiniz **Proje Tasarımcısı**. Daha fazla bilgi için [uygulama sayfası](../ide/reference/application-page-project-designer-csharp.md).|  
 |Özellik|Bildirimler ve kullanımları özelliğinin yeni ad ile değiştirir.|  
 |Tür|Tüm bildirimleri ve türdeki tüm kullanımları oluşturucular ve Yıkıcılar dahil olmak üzere yeni ad ile değiştirir. Kısmi türler için yeniden adlandırma işlemi için tüm bölümleri yayılır.|  
   
@@ -125,13 +120,13 @@ ms.locfileid: "49274969"
   
 3.  SHIFT + ALT + F10 klavye kısayolunu yazın ve ardından akıllı etiket menüsündeki görüntülemek için aşağı ok tuşuna basın.  
   
-     veya  
+     -veya-  
   
      Akıllı etiketi görüntülemek için akıllı etiketin üzerine fare işaretçisini taşıyın. Ardından akıllı etiket üzerine fare işaretçisini Taşı ve aşağı akıllı etiket menüsündeki görüntülemek için OKA tıklayın.  
   
 4.  Seçin **Yeniden Adlandır '\<identifer1 >' için '\<identifier2 >'** kodunuzda değişiklik önizlemesi olmadan yeniden adlandırma düzenlemesi çağırmak için menü öğesi. Tüm başvuruları  **\<identifer1 >** şekilde otomatik olarak güncelleştirilecek  **\<identifier2 >**.  
   
-     veya  
+     -veya-  
   
      Seçin **Önizleme ile yeniden adlandır** kodunuzda değişiklik önizlemesi ile yeniden adlandırma düzenlemesi çağırmak için menü öğesi. **Değişiklikleri Önizle** iletişim kutusu görüntülenir.  
   

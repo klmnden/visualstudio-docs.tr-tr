@@ -1,13 +1,9 @@
 ---
 title: 'CA2208: Bağımsız değişken özel durumlarını doğru örnekleyin | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2208
 - InstantiateArgumentExceptionsCorrectly
@@ -19,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f714dce2691012ae5f5b4cf6dc015160acb0c5ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae3bb98e91904debfd3c238e70ce0ff0127e82b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793698"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Bağımsız değişken özel durumlarını doğru örnekleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

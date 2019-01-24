@@ -1,25 +1,20 @@
 ---
 title: Graf görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764917"
 ---
 # <a name="graph-view"></a>Graf Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
 ## <a name="breadcrumb-bar"></a>İçerik haritası çubuğu  
  Graf görünümünü alt kısmındaki içerik haritası çubuğu, seçili düğümü şema kümesinde nerede bulunduğunu gösterir. İçerik haritası çubuğu, birden çok öğe seçili ise, boş olarak görüntülenir.  
   
-## <a name="context-menu"></a>Bağlam menüsü  
+## <a name="context-menu"></a>Bağlam Menüsü  
  Aşağıdaki tabloda, graf görünümünü tasarım yüzeyinde tüm düğümler için kullanılabilir seçenekleri açıklar.  
   
 |Seçenek|Açıklama|  
@@ -111,8 +106,8 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
 |**Çalışma alanından kaldırma**|Çalışma alanını ve tasarım serface seçilen düğümleri kaldırır.|  
 |**Çalışma alanı seçimi dışında tümünü Kaldır**|Çalışma alanını ve tasarım serface seçili olmayan düğümleri kaldırır. Bu seçenek, graf görünümünden ve içerik modeli görünümünü etkindir.|  
 |**Soldan sağa**|Soldan sağa hiyerarşik bir sunumunu düğümleri için graf görünümünü, düzenini değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + sağ ok**.|  
-|**Sağdan sola**|Sağdan sola hiyerarşik bir sunumunu düğümleri için graf görünümünü, düzenini değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + Sol Ok**.|  
-|**Üstten alta**|Üst-alt hiyerarşik bir sunumunu düğümleri için graf görünümünü, düzenini değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + Aşağı ok**.|  
+|**Sağdan sola**|Sağdan sola hiyerarşik bir sunumunu düğümleri için graf görünümünü, düzenini değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + sol ok**.|  
+|**Üstten alta**|Üst-alt hiyerarşik bir sunumunu düğümleri için graf görünümünü, düzenini değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + aşağı ok**.|  
 |**Aşağıdan yukarıya**|Alt-üst hiyerarşik bir sunumunu düğümleri için graf görünümünü, düzenini değiştirir. Bu seçenek, klavye kısayolunu kullanarak erişilebilir: **Alt + Yukarı ok**.|  
   
 ## <a name="panscroll"></a>PAN/kaydırma  
@@ -145,6 +140,3 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tasarım yüzeyi](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

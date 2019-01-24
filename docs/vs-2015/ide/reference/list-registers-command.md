@@ -1,14 +1,9 @@
 ---
 title: Liste kayıtları komut | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listregisters
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e52b7de812be9168c30093b16041db42ea4676b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763045"
 ---
 # <a name="list-registers-command"></a>Yazmaçları Listele Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```  
   
 ## <a name="switches"></a>Anahtarlar  
- / Görüntüleme [{`register`&#124;`registerGroup`}...]  
+ /Display [{`register`&#124;`registerGroup`}...]  
  Belirtilen değerleri görüntüler `register` veya `registerGroup`. Hayır ise `register` veya `registerGroup` belirtilirse, kayıtları varsayılan listesi görüntülenir. Hiçbir anahtarı belirtilmişse davranışı aynıdır. Örneğin:  
   
  `Debug.ListRegisters /Display eax`  
@@ -57,7 +52,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
  / İzleme [{`register`&#124;`registerGroup`}...]  
  Bir veya daha fazla ekler `register` veya `registerGroup` değerleri listesi.  
   
- / Unwatch [{`register`&#124;`registerGroup`}...]  
+ /Unwatch [{`register`&#124;`registerGroup`}...]  
  Bir veya daha fazla kaldırır `register` veya `registerGroup` listedeki değerler.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -72,8 +67,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
- [Hata ayıklama temelleri: Yazmaçlar penceresi](../../debugger/debugging-basics-registers-window.md)   
- [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../../debugger/how-to-use-the-registers-window.md)
-
-
-
+ [Hata Ayıklamanın Temelleri: Yazmaçlar penceresi](../../debugger/debugging-basics-registers-window.md)   
+ [Nasıl yapılır: Yazmaçlar Penceresi Hakkında](../../debugger/how-to-use-the-registers-window.md)

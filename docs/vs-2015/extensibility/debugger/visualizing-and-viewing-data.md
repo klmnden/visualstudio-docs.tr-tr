@@ -1,27 +1,22 @@
 ---
 title: Verileri Görselleştirme ve görüntüleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f26ed20eccbff52afdc4f8b5060ad426cc100b71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40f06ee57c5c889c2004dbd5b85e269bfd0841ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785042"
 ---
 # <a name="visualizing-and-viewing-data"></a>Verileri Görselleştirme ve Görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ Tür görselleştiricileri ve özel görüntüleyiciler mevcut verileri hızlı 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)   
  [Tür Görselleştiricisi ve Özel Görüntüleyici](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

@@ -1,26 +1,21 @@
 ---
 title: Kullanarak yalıtılmış Kabuğu değiştirme. Vsct dosya | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode%2C .vsct file
 ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0eb5b110386f4a696c228e746223d745df6b18f7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817613"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792503"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Kullanarak yalıtılmış Kabuğu değiştirme. Vsct dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ UI proje bir Visual Studio yalıtılmış Kabuğu projesi için hangi uygulama g
   
 ```  
   
- Bu özelleştirmeler örnek daha ayrıntılı için bkz: [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Bu özelleştirmeler örnek daha ayrıntılı için bkz: [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="referenced-files"></a>Başvurulan dosyaları  
  Bir uygulama için varsayılan .vsct dosyası aşağıdaki dosyaları başvuruyor. Bu dosyalar Visual Studio SDK yükleme dizini \VisualStudioIntegration\Common\Inc\ alt dizinde bulunur.  
@@ -63,4 +58,3 @@ UI proje bir Visual Studio yalıtılmış Kabuğu projesi için hangi uygulama g
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Yalıtılmış Kabuğu](../extensibility/visual-studio-isolated-shell.md)
-

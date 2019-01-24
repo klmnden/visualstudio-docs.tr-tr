@@ -1,12 +1,9 @@
 ---
-title: 'Nasıl yapılır: yönetilen kod için tam çözüm analizini devre | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yönetilen kod için tam çözüm analizini devre | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755790"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Nasıl yapılır: yönetilen kod için tam çözüm analizini devre
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
@@ -59,6 +56,3 @@ ms.locfileid: "49221877"
  Varsayılan olarak, tam çözüm analizini Visual Basic için etkinleştirilir ve Visual C# için devre dışı.  
   
  Visual Studio güncelleştirme 3 RC, önemli ölçüde bellek kullanımını azaltır ve tam çözüm analizini etkin olsa bile, boşta için CPU süresini azaltır bir Gelişmiş kod Çözümleyicisi v2 Tanılama Altyapısı içerir.
-
-
-

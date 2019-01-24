@@ -1,25 +1,22 @@
 ---
-title: 'Nasıl yapılır: bir etki alanına özgü dili yeni sürüme geçirme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir etki alanına özgü dili yeni sürüme geçirme | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784199"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Etki Alanına Özgü Dili Yeni Sürüme Geçirme
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Alana Özgü Dili Yeni Sürüme Geçirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!INCLUDE[vs2010](../includes/vs2010-md.md)] sürümünden [!INCLUDE[dsl](../includes/dsl-md.md)] , ile dağıtılan [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
@@ -28,7 +25,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
   
  Geçiş Aracı açıkça çalıştırmanız gerekir: bir çözümde açtığınızda otomatik olarak başlatılmaz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ayrıntılı yönergeler belge ve araç bu yolda bulunabilir:  
   
- **% Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>DSL projelerinizin geçiş önce  
  Geçiş Aracı değiştirir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje dosyaları (**.csproj**) ve çözüm dosyaları (**.sln**).  
@@ -47,7 +44,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
   
    -   Windows Explorer (veya dosya Gezgini) araca çift tıklayın veya bir komut istemi'nden aracını başlatın. Bu konumda aracıdır:  
   
-        **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+        **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2. Dönüştürmek istediğiniz projeler ve çözümler içeren bir klasör seçin.  
   
@@ -81,7 +78,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
    2.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini başlığını düğmesi.  
   
        > [!NOTE]
-       >  Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Özel kodunuz dönüştürülmüş projelerinde güncelleştirin.  
   
@@ -91,6 +88,3 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görselleştirme ve SDK Modellemedeki yenilikler](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

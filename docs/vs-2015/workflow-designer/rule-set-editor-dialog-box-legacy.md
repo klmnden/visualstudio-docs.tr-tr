@@ -1,11 +1,8 @@
 ---
 title: Kural kümesi Düzenleyicisi iletişim kutusu (eski) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797488"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Kural Kümesi Düzenleyicisi İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -31,7 +28,7 @@ Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusun
 > [!NOTE]
 >  .Rules dosyasıyla açmak isteyip istemediğiniz **kodlama ile XML Düzenleyicisi**, etkinlik ve iş akışı için ilişkili Tasarımcı penceresini kapatın.  
   
- Nasıl erişileceği hakkında daha fazla bilgi için **kural kümesi Düzenleyicisi** iletişim kutusu, bakın [nasıl yapılır: bir PolicyActivity kural kümesi (eski) oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ Nasıl erişileceği hakkında daha fazla bilgi için **kural kümesi Düzenleyicisi** iletişim kutusu, bkz: [nasıl yapılır: (Eski) PolicyActivity kural kümesi oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
 >  Eski kural düzenleyiciyi [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek için kullanılan [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] çoklu hedefleme desteklemez.  
@@ -73,13 +70,13 @@ Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusun
   
 - Aritmetik işleçler: +, -, *, /, MOD  
   
-- Mantıksal işleçler: ve, & &, OR &#124; &#124;değil,!  
+- Mantıksal işleçler: VE &AMP; &AMP;, OR &AMP;#124; &AMP;#124;DEĞİL,!  
   
 - Bit düzeyinde işleçler: &,&#124;  
   
   İfadenin İşleç önceliği, C# İşleç önceliği kurallarını izler.  
   
-  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Durdurmak ve güncelleştirme işlevleri  
  **Ardından Eylemler:** ve **başka eylemler:** ifadeleri Destek **durdurmak** ve **güncelleştirme** işlevleri. Kullanılacak **durdurmak** işlev, yazın **durdurmak** içine bir **eylemi:** veya **başka eylem:** metin kutusu. **Durdurmak** eylem hemen durdurmak kural kümesi yürütmenin neden olur ve denetim için arama kodunu döndürür. Kullandığınız **güncelleştirme** İleri zincirleme ile işlevi.  

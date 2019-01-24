@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: İyileştirilmiş kodda hata ayıklama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ae18cda3d3cbba28c53402e7989c83c60007b2fc
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790751"
 ---
 # <a name="how-to-debug-optimized-code"></a>Nasıl yapılır: En iyi duruma getirilmiş kodda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
 >  [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)derleyici seçeneği (Visual Studio güncelleştirme 3'te sunulmuştur) en iyi duruma getirilmiş kodu için daha zengin hata ayıklama bilgileri oluşturur (ile oluşturulmamış projeleri **/Od** derleyici seçeneği. Bkz: [/O seçenekler (kodu İyileştir)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Bu yerel değişkenleri ve satır içine alınmış işlevlerin hata ayıklama için gelişmiş destek içerir.  
@@ -95,11 +90,8 @@ ms.locfileid: "54154304"
 for (x=0; x<10; x++)  
 ```  
   
- Bu satırında bir kesme noktası ayarlamak varsayalım. Kesme noktası 10 kez ulaşılmasına beklediğiniz ancak kodun en iyilenmesi, yalnızca bir kez kesme noktasına erişildiğinde. İlk yönerge değerini ayarlar çünkü `x` 0. Derleyici, bu yalnızca bir kez gerçekleştirilmesi gerekir ve döngü dışında hareket olduğunu algılar. Kesme noktası ile taşır. Karşılaştırın ve Artır yönergeleri `x` döngünün içinde kalır. Görüntülediğinizde **ayrıştırılmış kodu** penceresinde [adım birim](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) yönerge için en iyi duruma getirilmiş kodda adım adım bağlandığınızda yararlıdır daha fazla denetim için otomatik olarak ayarlanır.  
+ Bu satırında bir kesme noktası ayarlamak varsayalım. Kesme noktası 10 kez ulaşılmasına beklediğiniz ancak kodun en iyilenmesi, yalnızca bir kez kesme noktasına erişildiğinde. İlk yönerge değerini ayarlar çünkü `x` 0. Derleyici, bu yalnızca bir kez gerçekleştirilmesi gerekir ve döngü dışında hareket olduğunu algılar. Kesme noktası ile taşır. Karşılaştırın ve Artır yönergeleri `x` döngünün içinde kalır. Görüntülediğinizde **ayrıştırılmış kodu** penceresinde [adım birim](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) yönerge için en iyi duruma getirilmiş kodda adım adım bağlandığınızda yararlıdır daha fazla denetim için otomatik olarak ayarlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
-
-
-

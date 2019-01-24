@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: hata ayıklayıcısı ayarlarını belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799129"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Nasıl Yapılır: Hata Ayıklama Ayarlarını Belirtme
+# <a name="how-to-specify-debugger-settings"></a>Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], hata ayıklayıcı davranış değişkenleri gösterilme biçimini, belirli uyarılar olup olmadığını sunulur, kesme noktaları nasıl ayarlanacağını ve bozucu çalışan programları nasıl etkilediğini dahil olmak üzere, çeşitli ayarları belirtebilirsiniz. Hata ayıklayıcı ayarlarında belirttiğiniz **seçenekleri** iletişim kutusu.  
@@ -57,6 +52,3 @@ ms.locfileid: "51757618"
  [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Genel Derleme Komutları ve Özellikler Makroları](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
-
-
-

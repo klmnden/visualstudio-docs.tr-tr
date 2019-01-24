@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: kaydırma çubuğunu özelleştirerek kodunuzu izleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788212"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Nasıl yapılır: kaydırma çubuğunu özelleştirerek kodunuzu izleme
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız zor olabilir. Kaydırma çubuğu kodunuzda olup bitenleri bir Kuşbakışı görünüm sağlamak için kod penceresinin özelleştirebilirsiniz.  
@@ -59,4 +54,3 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
      ![Bir araç ipucu ile kaydırma çubuğunu](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Davranış ve önizleme araç ipucunu kaydırma eşleme modunu tutmak istiyor, ancak kaynak kod genel bakış görmek istemediğiniz ayarlayabileceğiniz **kaynak genel bakış** için **kapalı**.
-

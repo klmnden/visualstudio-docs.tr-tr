@@ -1,25 +1,22 @@
 ---
 title: Model aracılığıyla test geliştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787191"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799284"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
  Oluşturun ve sistem testleri ve gereksinimler modeli arasında bir ilişki korumak. Bu ilişki kurmak için gereksinimler modelinin ana öğelere karşılık gelen testler yazın. Visual Studio testleri ve model bölümleri arasında bağlantılar oluşturmanıza imkan vererek bu ilişkiyi tutmanıza yardımcı olur. Gereksinim modelleri hakkında daha fazla bilgi için bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Her kullanım örneği için testleri yazma  
- Kullanırsanız [!INCLUDE[TCMext](../includes/tcmext-md.md)], gereksinimleri modelinizde tanımlı her kullanım örneği için testleri bir grup oluşturabilirsiniz. Örneğin, bir kullanım örneği oluştur ve sipariş Ekle öğesine içerir, yemek siparişi varsa her iki genel testler oluşturabilirsiniz ve bunların daha ayrıntılı kullanım örnekleri. Kullanım örnekleri hakkında daha fazla bilgi için bkz [UML kullanma durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Kullanırsanız [!INCLUDE[TCMext](../includes/tcmext-md.md)], gereksinimleri modelinizde tanımlı her kullanım örneği için testleri bir grup oluşturabilirsiniz. Örneğin, bir kullanım örneği oluştur ve sipariş Ekle öğesine içerir, yemek siparişi varsa her iki genel testler oluşturabilirsiniz ve bunların daha ayrıntılı kullanım örnekleri. Kullanım örnekleri hakkında daha fazla bilgi için bkz. [UML örneği diyagramları kullanın: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
  Bu yönergeler yararlı olabilir:  
   
@@ -59,7 +56,7 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
   
     -   Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.  
   
--   Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: giriş; seçin Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.  
+-   Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.  
   
 #### <a name="linking-tests-to-use-cases"></a>Kullanım örnekleri için testleri bağlama  
  Kullanıyorsanız [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] tasarlama ve testleri çalıştırmak için testlerinizin gereksinimi, kullanım durumu ve kullanıcı hikayesi iş öğeleri altında düzenleyebilirsiniz. Bu bağlantı iş öğeleri, modelinizde kullanım için. Bu hızlı bir şekilde izleme gereksinimleri değişiklikler testleri sağlar ve kullanım örneği her ilerlemesini izlemenize yardımcı olur.  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Bu tür sabit bir kuralı, yalnızca şu anda tanımlanmış tüm kullanım durumlarını ancak daha sonra yeniden tanımlanacak ayrıca diğer kullanım örneklerini yönetir. Bu nedenle, ayrı olarak herhangi bir kullanım örneğinden yazma ve kullanım örneklerinden ayrı olarak test etmek için yararlı olur.  
   
- Bir sabit iş kuralı, bir sınıf diyagramı yorum olarak yazabilirsiniz. Daha fazla bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
+ Bir sabit iş kuralı, bir sınıf diyagramı yorum olarak yazabilirsiniz. Daha fazla bilgi için [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md).  
   
  Bir iş kuralına testleri, bir test paketinde bağlayabilirsiniz bir gereksinim ya da kullanıcı hikayesi iş öğesi yorum bağlayarak bağlayabilirsiniz [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Daha fazla bilgi için [Model öğeleri için Test çalışmaları ekleme](#Attaching).  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  Her ileti veya eylem sistemin durumunu doğrulamak bu seçeneği deneyin. Bu, ek izleme gerektirebilir.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>Alt sistem testleri modellerinden türetme  
- İçinde üst düzey tasarım büyük bir sistemin bileşenler veya alt sistemlerin tanımlayabilirsiniz. Bunlar, birçok bakımdan tasarlanabilen yeniden kullanılabilir modüller ayrı olarak tasarlanmış veya farklı bilgisayarlarda bulunan bölümleri temsil eder. Daha fazla bilgi için [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
+ İçinde üst düzey tasarım büyük bir sistemin bileşenler veya alt sistemlerin tanımlayabilirsiniz. Bunlar, birçok bakımdan tasarlanabilen yeniden kullanılabilir modüller ayrı olarak tasarlanmış veya farklı bilgisayarlarda bulunan bölümleri temsil eder. Daha fazla bilgi için [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md).  
   
  Tam bir sistem için kullandığınız her ana bileşene aynı ilkeler uygulayabilirsiniz. Büyük bir projenin her bileşenin kendi gereksinimler modelini olabilir. Daha küçük projelerinde, ana bileşenleri ve bunların etkileşimleri göstermek için mimari model veya üst düzey tasarım oluşturulabilir. Daha fazla bilgi için [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)   
  [Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)
-
-
-

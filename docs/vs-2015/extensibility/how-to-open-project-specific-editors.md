@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: projeye özgü düzenleyicileri açma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Projeye özgü düzenleyicileri açma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790769"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Nasıl yapılır: projeye özgü düzenleyicileri açma
+# <a name="how-to-open-project-specific-editors"></a>Nasıl yapılır: Projeye Özgü Düzenleyicileri Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir proje tarafından açılmış bir öğe dosyası doğası gereği bu proje için belirli düzenleyiciye bağlıysa, proje dosyası bir projeye özgü Düzenleyicisi'ni kullanarak açmanız gerekir. Dosya bir düzenleyicide seçme IDE'nin mekanizması aşağı temsilci olarak seçilemez. Örneğin, standart bir bit eşlem Düzenleyicisi kullanmak yerine, projeniz için benzersiz olan bilgileri tanıdığı bir belirli bir bit eşlem Düzenleyicisi belirtmek için bu projeye özgü Düzenleyicisi seçeneği kullanabilirsiniz.  
@@ -60,6 +55,5 @@ Bir proje tarafından açılmış bir öğe dosyası doğası gereği bu proje i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açma ve proje öğelerini kaydetme](../extensibility/internals/opening-and-saving-project-items.md)   
- [Nasıl yapılır: standart düzenleyicileri açma](../extensibility/how-to-open-standard-editors.md)   
- [Nasıl Yapılır: Açık Belgeler için Düzenleyicileri Açma](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [Nasıl yapılır: Açık standart düzenleyicileri](../extensibility/how-to-open-standard-editors.md)   
+ [Nasıl yapılır: Açık açık belgeler için düzenleyicileri](../extensibility/how-to-open-editors-for-open-documents.md)

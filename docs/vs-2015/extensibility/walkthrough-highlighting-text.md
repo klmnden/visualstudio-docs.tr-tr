@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: Metni vurgulama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Metin vurgulama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d4fad243b109cb8522f15e30d628d5eb27c09c07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5600f30df21e73fb4474839aee3bc6ab1eced761
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752792"
 ---
-# <a name="walkthrough-highlighting-text"></a>İzlenecek Yol: Metni Vurgulama
+# <a name="walkthrough-highlighting-text"></a>İzlenecek yol: Metni Vurgulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına oluşturarak farklı görsel efektler Düzenleyicisi'ne ekleyebilirsiniz. Bu izlenecek yol, bir metin dosyasındaki geçerli kelimenin her geçtiği vurgulamak gösterilmektedir. Bir sözcük, bir metin dosyasına birden fazla kez gerçekleşir ve giriş işaretini bir yineleme getirin, her oluşumu vurgulanır.  
@@ -413,5 +408,4 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına oluştu
 4.  "Hello" oluşumlarını birinde imleci getirin. Her oluşumu mavi renkle vurgulanmış olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

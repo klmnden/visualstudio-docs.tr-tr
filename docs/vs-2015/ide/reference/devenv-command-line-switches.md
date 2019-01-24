@@ -1,14 +1,9 @@
 ---
 title: Devenv komut satırı anahtarları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - builds [Team System], command-line
@@ -25,13 +20,13 @@ ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215040"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754977"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +77,7 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
 |[/ Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Başlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve tüm etkinlik günlük dosyasına kaydeder.|  
 |[/ Çalıştırın (devenv.exe)](../../ide/reference/run-devenv-exe.md) veya `/r`|Derler ve belirtilen çözüm çalıştırır.|  
 |[/ Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Derler ve belirtilen çözüm çalıştırır, çözüm çalıştırılır ve çözüm çalışması bittikten sonra IDE'yi kapatır, IDE'nin en aza indirir.|  
-|[/ UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|YOL, Ekle ve kitaplığı ortam değişkenlerini kullanmak IDE neden [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] VC ++ dizinleri kısmında belirtilen ayarlara yerine derleme **projeleri** seçeneklerini **seçenekleri** iletişim kutusu. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|YOL, Ekle ve kitaplığı ortam değişkenlerini kullanmak IDE neden [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] VC ++ dizinleri kısmında belirtilen ayarlara yerine derleme **projeleri** seçeneklerini **seçenekleri** iletişim kutusu. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/ Düzenle (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Belirtilen dosyalar, bu uygulamanın çalışan bir örneğini açar. Çalışan örnek yoksa varsa, yeni bir örneği bir Basitleştirilmiş pencere düzeni ile başlar.|  
 |[/ ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Belirtilen eklenti yüklemeden Visual Studio IDE bir örneğini başlatır.|  
 |[/ SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Başlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] güvenli modda ve yalnızca varsayılan ortama ve hizmetler yükler ve üçüncü taraf paketi sürümlerini birlikte gönderilir.|  
@@ -96,7 +91,7 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Devenv anahtarları için yardımı görüntüler **komut istemi penceresi**.<br /><br /> **Devenv /?**|  
 |[/ Derleme (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Belirtilen çözüm veya projeyi yapılandırmasına göre belirtilen çözümü derler.<br /><br /> **Myproj.csproj. / Build Devenv**|  
 |[/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Kaynak dosyaları etkilemeden oluşturma komutu tarafından oluşturulan tüm dosyaları siler.<br /><br /> **Devenv myproj.csproj / Temizle**|  
-|[/ (Devenv.exe) dağıtma](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına bir dağıtım için gerekli dosyaları ile birlikte çözümü derler.<br /><br /> **Devenv myproj.csproj / dağıtma**|  
+|[/ (Devenv.exe) dağıtma](../../ide/reference/deploy-devenv-exe.md)|Çözümleri yapılandırmasına bir dağıtım için gerekli dosyaları ile birlikte çözümü derler.<br /><br /> **Devenv myproj.csproj /deploy**|  
 |[/Diff](../../ide/reference/diff.md)|İki dosyayı karşılaştırır.  Dört parametreleri: Kaynakdosya, Hedefdosya, SourceDisplayName(optional),TargetDisplayName(optional) alır.|  
 |[/ Installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Bulunan proje veya öğe şablonları kaydeder  *\<VisualStudioInstallDir >* \Common7\IDE\ProjectTemplates veya  *\<VisualStudioInstallDir >* \Common7 \IDE\ItemTemplates aracılığıyla erişilebilir olacak şekilde **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları.<br /><br /> **Devenv /InstallVSTemplates**|  
 |[/ (Devenv.exe out)](../../ide/reference/out-devenv-exe.md)|Oluşturma sırasında hatalar almak için bir dosya belirtmenizi sağlar.<br /><br /> **Myproj.csproj. / Build Devenv/out log.txt**|  
@@ -109,6 +104,3 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

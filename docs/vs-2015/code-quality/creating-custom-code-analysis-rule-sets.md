@@ -1,25 +1,20 @@
 ---
 title: Özel kod çözümlemesi kural kümeleri oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6d848c2f32f51a14c03d8b321f05b6b60143a87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786605"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Özel Kod Çözümlemesi Kural Kümeleri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ Bir veya daha fazla kuralı içeren bir kural kümesi belirterek yönetilen kod 
  İki birleştiren bir özel kural kümesi de oluşturabilirsiniz veya daha fazla standart kural kümeleri veya, bir veya daha fazla standart kural kümelerinden kuralları belirtir. Özel kural kaydettiğinizde bir .ruleset dosyası için ayarlar ve kod olarak birden çok proje belirtebilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Özel Kural Kümesi Oluşturma](../code-quality/how-to-create-a-custom-rule-set.md)  
+ [Nasıl yapılır: Bir özel kural kümesi oluşturma](../code-quality/how-to-create-a-custom-rule-set.md)  
  Bir veya daha fazla standart kural kümelerinden değiştirerek bir özel kural oluşturma işlemini açıklar.  
   
  [Kural Kümesi Düzenleyici'de Çalışma](../code-quality/working-in-the-code-analysis-rule-set-editor.md)  
@@ -39,6 +34,3 @@ Bir veya daha fazla kuralı içeren bir kural kümesi belirterek yönetilen kod 
  [Kod çözümleme kural kümesi başvurusu](../code-quality/code-analysis-rule-set-reference.md)   
  [Yönetilen kod kalitesini analiz etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [Kod Çözümlemesi ile C/C++ Kod Kalitesini Çözümleme](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)
-
-
-

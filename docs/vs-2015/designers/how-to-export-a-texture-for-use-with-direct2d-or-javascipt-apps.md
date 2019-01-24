@@ -1,27 +1,22 @@
 ---
 title: 'Nasıl yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e2b08760e567f6e000e191703695ee0703da7215
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781486"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript Uygulamaları Kullanmak için Doku Dışa Aktarma
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile uyumlu dokular oluşturabilir. Bu tür dokular Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan Windows Store uygulamalarında kullanım için uygundur.  
@@ -41,7 +36,7 @@ Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile 
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D içindeki işleme kuralları  
  Direct2D bağlamında kullanılan dokular bu Direct2D iç işleme kurallarına uymalıdır:  
   
--   Direct2D ön çarpımlı alfa kullanarak saydamlığı ve yarı saydamlığı uygular. Direct2D ile kullanılan dokular, doku geçirgenlik veya translucency kullanmıyor olsa bile, önceden çoğaltılmış alfa içermesi gerekir. Önceden çoğaltılmış alfa hakkında daha fazla bilgi için bkz. [nasıl yapılır: ön Çarpımlı alfa kullanan doku dışa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
+-   Direct2D ön çarpımlı alfa kullanarak saydamlığı ve yarı saydamlığı uygular. Direct2D ile kullanılan dokular, doku geçirgenlik veya translucency kullanmıyor olsa bile, önceden çoğaltılmış alfa içermesi gerekir. Önceden çoğaltılmış alfa hakkında daha fazla bilgi için bkz. [nasıl yapılır: Ön Çarpımlı alfa kullanan doku dışa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).  
   
 -   Doku bu blok sıkıştırma biçimlerinden biri kullanılarak .dds biçiminde sağlanmalıdır:  
   
@@ -55,7 +50,7 @@ Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile 
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Direct2D işleme kuralları ile uyumlu olan bir doku oluşturmak için  
   
-1. Temel doku ile başlayın. Varolan bir resim yükleyin ya da açıklandığı gibi yeni bir tane oluşturun [nasıl yapılır: temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). .Dds biçimde blok sıkıştırmayı desteklemek için genişliği ve yüksekliği olan boyutu, örneğin, 100 x 100, 128 x 128 veya 256 x 192 gibi dördün katları olan bir doku belirtin. Mipeşlem desteklenmediğinden dokunun kare olması gerekmez ve boyut olarak ikinin kuvveti olması gerekmez.  
+1. Temel doku ile başlayın. Varolan bir resim yükleyin ya da açıklandığı gibi yeni bir tane oluşturun [nasıl yapılır: Temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). .Dds biçimde blok sıkıştırmayı desteklemek için genişliği ve yüksekliği olan boyutu, örneğin, 100 x 100, 128 x 128 veya 256 x 192 gibi dördün katları olan bir doku belirtin. Mipeşlem desteklenmediğinden dokunun kare olması gerekmez ve boyut olarak ikinin kuvveti olması gerekmez.  
   
 2. Doku dosyasını yapılandırarak, böylece görüntü içeriği ardışık düzeni tarafından işlenir. İçinde **Çözüm Gezgini**, yeni oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri**, **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**ve ardından  **Uygulama** düğmesi. **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.  
   
@@ -71,6 +66,3 @@ Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile 
 6. Seçin **Tamam** düğmesi.  
   
    Proje oluşturduğunuzda, görüntü içeriği ardışık düzeni kaynak görüntüyü çalışma biçiminden sizin belirttiğiniz çıkış biçimine dönüştürür — dönüştürme ön çarpımlı alfa oluşturulmasını içerir — ve sonuç projenin çıkış dizinine kopyalanır.
-
-
-

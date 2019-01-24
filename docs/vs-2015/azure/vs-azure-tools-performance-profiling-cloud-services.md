@@ -2,7 +2,7 @@
 title: Bir bulut hizmetinin performansını test etme | Microsoft Docs
 description: Visual Studio profil oluşturucu kullanılarak bir bulut hizmetinin performansını test etme
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.tgt_pltfrm: multiple
@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 25b60e5e4072a0523d17082a5c5646e5bb1ade6a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 1b860739b82ddf64b07e1c154170e3992ec9ad81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785136"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
@@ -111,4 +111,3 @@ Bulut hizmetinizde bir rolünün her örneği için profil oluşturma oturumunu 
 [Bulut hizmetlerinde hata ayıklama](https://msdn.microsoft.com/library/azure/ee405479.aspx)
 
 [Bir Azure bulut hizmetinde Visual Studio'dan yayımlama](https://msdn.microsoft.com/library/azure/ee460772.aspx)
-

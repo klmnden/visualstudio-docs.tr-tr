@@ -1,12 +1,9 @@
 ---
-title: 'UML sınıf diyagramları: Yönergeler | Microsoft Docs'
-ms.custom: ''
+title: 'UML sınıf diyagramları: Yönergeleri | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,15 +16,15 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773305"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>UML Sınıf Diyagramları: Yönergeler
+# <a name="uml-class-diagrams-guidelines"></a>UML sınıf diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerini ve ilişkilerini uygulamalarından ayrı olarak açıklamak için. Diyagram, sınıfların uygulamaları yerine mantıksal yönlerine odaklanmak için kullanılır.  
@@ -59,7 +56,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Giriş ve çıkış sabitleyicileri ve etkinlik parametresi düğümlerinin türleri.  
   
- Bkz: [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+ Bkz: [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
  Sıralı diyagram  
   
@@ -67,22 +64,22 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Yaşam çizgilerinin türleri. Bir yaşam çizgisi sınıfı alabileceği tüm iletiler için işlemler içermelidir.  
   
- Bkz: [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Bkz: [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  Bileşen diyagramı  
   
  İşlemlerini listeleyen bileşen arabirimleri.  
   
- Bkz: [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
+ Bkz: [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md).  
   
  Kullanım örneği diyagramı  
   
  Amaçların açıklamalarında ve kullanım örneğinin adımlarında bahsedilen türler.  
   
- Bkz: [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Bkz: [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Sınıf diyagramları çizmek için temel adımlar  
- UML sınıf diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md).  
+ UML sınıf diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML Class Diagrams: Başvuru](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
 >  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
@@ -149,13 +146,13 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Bileşen diyagramında bileşenlerdeki arabirimleri tanımladıysanız, bir arabirimden sürükleyebilirsiniz **UML Model Gezgini** sınıf diyagramına sürükleyebilirsiniz. Sınıf diyagramında, arabirimin içerdiği yöntemleri tanımlayabilirsiniz.  
   
- Bkz: [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
+ Bkz: [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md).  
   
  UML Sıralı Diyagramı  
   
  Sınıfları ve arabirimleri yaşam çizgilerinden sıralı diyagramda oluşturabilirsiniz ve sınıftan sürükleyin **UML Model Gezgini** UML sınıf diyagramına. Sıralı diyagramdaki her yaşam çizgisi bir nesnenin, bileşenin veya aktörün bir örneğini gösterir.  
   
- Yaşam çizgisinden bir sınıf oluşturmak için Yaşam çizgisinin kısayol menüsünü açın ve ardından **Sınıf Oluştur** veya **oluşturma arabirimi**. Bkz: [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Yaşam çizgisinden bir sınıf oluşturmak için Yaşam çizgisinin kısayol menüsünü açın ve ardından **Sınıf Oluştur** veya **oluşturma arabirimi**. Bkz: [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ##  <a name="AttributesAndOperations"></a> Öznitelikler ve işlemler  
  Bir öznitelik (4) bir türün her örneğinin sahip olabileceği adlandırılmış değerdir. Bir özniteliğe erişme, örneğin durumunu değiştirmez.  
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)
-
-
-

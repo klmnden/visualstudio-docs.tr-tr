@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846171"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761420"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Kodunuz aracılığıyla bağımlılık diyagramları oluşturma
 
-Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek için oluşturma bir *bağımlılık diyagramı* Visual Studio'da. Kodunuzun tasarımla tutarlı kalmasını sağlamak için kodunuzu bir bağımlılık diyagramıyla doğrulayın. Visual C# ve Visual Basic projeleri için bağımlılık diyagramları oluşturabilirsiniz. Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek için oluşturma bir *bağımlılık diyagramı* Visual Studio'da. Kodunuzun tasarımla tutarlı kalmasını sağlamak için kodunuzu bir bağımlılık diyagramıyla doğrulayın. Visual C# ve Visual Basic projeleri için bağımlılık diyagramları oluşturabilirsiniz. Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Bir bağımlılık diyagramı oluşturma](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -159,6 +159,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü bir modelle p
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
+- [Mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Gerçek zamanlı mimari bağımlılıklarınızı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
 - [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)

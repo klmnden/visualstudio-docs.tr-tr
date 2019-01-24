@@ -1,14 +1,9 @@
 ---
 title: GenerateResource görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796912"
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma 
 |`PublicClass`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, bir türü kesin belirlenmiş kaynak sınıfı olarak genel bir sınıf oluşturur.|  
 |`References`|İsteğe bağlı `String[]` parametresi.<br /><br /> Başvurular, .resx dosyaları içindeki türler yüklenemedi. Resx dosyası veri öğeleri, bir .NET türü olabilir. .Resx dosyasını okuduğunda, bu çözülmesi gerekir. Genellikle, bu kuralları yükleniyor standart türünü kullanarak başarılı bir şekilde çözülür. Derlemelerde sağlarsanız `References`, bunlar daha önceliklidir.<br /><br /> Bu parametre, kesin olarak belirlenmiş kaynaklar için gerekli değildir.|  
 |`SdkToolsPath`|İsteğe bağlı `String` parametresi.<br /><br /> Resgen.exe gibi SDK Araçları yolunu belirtir.|  
-|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Öğeleri dönüştürmek için belirtir. Bu parametreye geçirilen öğe, şu dosya uzantılarından biri olmalıdır:<br /><br /> -   `.txt`: Dönüştürülecek bir metin dosyası uzantısı belirtir. Metin dosyaları yalnızca dize kaynakları içerebilir.<br />-   `.resx`: Dönüştürülecek XML tabanlı kaynak dosyası için bir uzantı belirtir.<br />-   `.restext`: .txt aynı biçimi belirtir. Bu farklı uzantı, diğer kaynak dosyaları, yapı işleminizde kaynakları içeren kaynak dosyalarını NET bir ayrım yapmak istiyorsanız kullanışlıdır.<br />-   `.resources`: Dönüştürmek bir kaynak dosya uzantısı belirtir.|  
+|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Öğeleri dönüştürmek için belirtir. Bu parametreye geçirilen öğe, şu dosya uzantılarından biri olmalıdır:<br /><br /> -   `.txt`: Dönüştürülecek bir metin dosyası uzantısı belirtir. Metin dosyaları yalnızca dize kaynakları içerebilir.<br />-   `.resx`: Dönüştürülecek XML tabanlı kaynak dosyası için bir uzantı belirtir.<br />-   `.restext`: .Txt aynı biçimi belirtir. Bu farklı uzantı, diğer kaynak dosyaları, yapı işleminizde kaynakları içeren kaynak dosyalarını NET bir ayrım yapmak istiyorsanız kullanışlıdır.<br />-   `.resources`: Dönüştürülecek bir kaynak dosyası uzantısı belirtir.|  
 |`StateFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Giriş dosyalarını .resx bağlantılar denetimi bağımlılık hızlandırmak için kullanılan bir isteğe bağlı önbellek dosyası yolunu belirtir.|  
 |`StronglyTypedClassName`|İsteğe bağlı `String` parametresi.<br /><br /> Türü kesin belirlenmiş kaynak sınıfı için sınıf adını belirtir. Bu parametre belirtilmezse, kaynak dosyanın temel adı kullanılır.|  
 |`StronglyTypedFilename`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Kaynak dosyası için dosya adını belirtir. Bu parametre belirtilmezse, sınıfın adını dile bağlı olarak değişir uzantılı temel dosya adı olarak kullanılır. Örneğin: `MyClass.cs`|  
@@ -94,7 +89,7 @@ Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma 
  Aşağıdaki kod, derleme myAssembly adlı varsayarak someQualifier.someResource.resources adlı katıştırılmış bir kaynağı oluşturur:  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Olmadan \<LogicalName > meta verileri, kaynak adı myAssembly.myResource.resources.  Bu örnekte, yalnızca Visual Basic ve Visual C# yapı işlemi için geçerlidir.  
@@ -102,6 +97,3 @@ Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

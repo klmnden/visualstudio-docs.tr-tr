@@ -1,27 +1,22 @@
 ---
 title: Özellikleri ve öğeleri karşılaştırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758466"
 ---
 # <a name="comparing-properties-and-items"></a>Özellikleri ve Öğeleri Karşılaştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşul
 </PropertyGroup>  
 ```  
   
- OutputDir sahip öğe türü bir `Include` değerine sahip öznitelik "KeyFiles\\; Sertifikaları\\". MSBuild, iki öğeyi bu dizeyi ayrıştırır: KeyFiles\ ve sertifikaları\\. Öğe türü OutputDir OutputDirList özelliğinin değeri kullanıldığında, MSBuild dönüştürür veya "öğe türü noktalı virgülle ayrılmış dizesi düzleştirir" "KeyFiles\\; Sertifikaları\\".  
+ OutputDir sahip öğe türü bir `Include` değerine sahip öznitelik "KeyFiles\\; Sertifikaları\\". MSBuild iki öğeyi bu dizeyi ayrıştırır: Sertifikaları ve KeyFiles\\\. Öğe türü OutputDir OutputDirList özelliğinin değeri kullanıldığında, MSBuild dönüştürür veya "öğe türü noktalı virgülle ayrılmış dizesi düzleştirir" "KeyFiles\\; Sertifikaları\\".  
   
 ## <a name="properties-and-items-in-tasks"></a>Özellikleri ve öğeleri görevler  
  Özellikleri ve öğeleri, girdileri ve çıktıları MSBuild görevleri olarak kullanılır. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md).  
@@ -189,6 +184,3 @@ KeyFileVersion: 1.0.0.3
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gelişmiş Kavramlar](../msbuild/msbuild-advanced-concepts.md)
-
-
-

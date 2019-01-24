@@ -1,14 +1,9 @@
 ---
-title: 'CA1715: Tanımlayıcıların sonekleri doğru öneki olmalıdır | Microsoft Docs'
-ms.custom: ''
+title: 'CA1715: Tanımlayıcılar doğru öneki olmalıdır | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -20,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0e3d1290f95872c176447fb834c09bef036e784
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f91571cc1830efb9ea5e644444ae856162f854e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772868"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Tanımlayıcıların önekleri doğru olmalıdır
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Tanımlayıcılar doğru ön eke sahip olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1715: tanımlayıcılar doğru öneki olmalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) docs.microsoft.com'da.  
+Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1715: Tanımlayıcılar doğru öneki olmalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) docs.microsoft.com'da.  
   
 |||  
 |-|-|  
@@ -42,7 +37,7 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1715: tanımlayıcı
 ## <a name="cause"></a>Sebep  
  Dışarıdan görünen bir arabirimin adını bir büyük harf 'ı' başlamıyor.  
   
- veya  
+ -veya-  
   
  Genel tür parametresi dışarıdan görünen tür veya yöntem adı ile bir büyük harf 'T başlamıyor '.  
   
@@ -91,4 +86,3 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1715: tanımlayıcı
   
 ## <a name="related-rules"></a>İlgili kuralları  
  [CA1722: Tanımlayıcıların önekleri yanlış olmamalıdır](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
-

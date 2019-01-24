@@ -1,25 +1,22 @@
 ---
 title: 'Nasıl yapılır: O R tasarımcısı tarafından oluşturulan kodu genişletme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14fd1f950d50f2cb71e56fc8b1e75ff60f3da0ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6aedac18548112335da49012d471fb98eef2ef2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786903"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Nasıl yapılır: bir O/R tasarımcısı tarafından oluşturulan kodu genişletme
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Nasıl yapılır: O/R Tasarımcısı Tarafından Oluşturulan Kodu Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -56,4 +53,3 @@ Tarafından oluşturulan kodu [!INCLUDE[vs_ordesigner_short](../includes/vs-orde
  [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [İzlenecek yol: Varlık sınıflarına doğrulama ekleme](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
-

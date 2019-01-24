@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796976"
 ---
 # <a name="set-up-a-git-repository"></a>Bir Git deposu ayarlama
 
@@ -68,7 +68,10 @@ Mevcut bir proje varsa _değil_ zaten sürüm denetiminde Git'te ayarlamak için
 
 6. Tıklayın **Tamam**, ardından **Yayımla** uyarı iletişim.
 
-7. Git kimlik bilgilerinizi Visual Studio'da Mac tercihleri için girdiğiniz değil, şimdi girin. İlk olarak, bir erişim bir parola yerine kullanılan belirteç, oluşturmanız gerekir. Bir erişim belirteci oluşturmadıysanız, Git adımları [erişim belirteci](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) belgeleri.
+7. İçinde **Git kimlik bilgileri** penceresinde GitHub kullanıcı adınızı ve parolanızı girin. 
+
+> [!NOTE]
+> Hesabınızı etkin iki öğeli kimlik doğrulamayı (2FA) varsa, bir erişim bir parola yerine kullanılan belirteç oluşturmak gerekir. Bir erişim belirteci oluşturmadıysanız, Git adımları [erişim belirteci](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) belgeleri.
 
 8. Kullanıcı adı ve kişisel erişim belirteci, girin ve basın **Tamam**:
 

@@ -1,21 +1,17 @@
 ---
 title: Kurulum ve yükleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f3a72c197963332ad433f88e6cb7fffde5a9a41b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781715"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +59,7 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
 > [!TIP]
 >  Bu yönergeler, Visual Studio 2015 için geçerlidir. Xamarin ile Visual Studio 2013 kullanmak için (güncelleştirme 2 gereklidir) yönergelerini izleyin [doğrudan Xamarin yükleme](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
-1. [İndirin ve herhangi bir sürümünü Visual Studio 2015 için yükleyiciyi başlatın](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional veya Enterprise). Visual Studio 2015 Community ücretsiz bir sürümüdür; Professional ve Enterprise sürümleri 30 gün sonra bir lisans satın almanız gerekecektir deneme olarak kullanılabilir.  
+1. [İndirin ve herhangi bir sürümünü Visual Studio 2015 için yükleyiciyi başlatın](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional veya Enterprise). Visual Studio 2015 Community ücretsiz bir sürümüdür; Professional ve Enterprise sürümleri 30 gün sonra bir lisans satın almanız gerekecektir deneme olarak kullanılabilir.  
   
    1.  Zaten Visual Studio yüklü değilse açın **Denetim Masası > Programlar ve Özellikler**, seçin **Visual Studio 2015** öğesi ekleyin ve tıklayın **değişiklik**. Yükleyici açıldığında tıklayın **Değiştir** ve aşağıdaki 3. adımına geçin.  
   
@@ -77,7 +73,7 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
   
         ![Xamarin seçeneğini altında çapraz&#45;Platform mobil geliştirme](../cross-platform/media/cross-plat-xamarin-setup-2.png "çapraz-Plat Xamarin Kurulum 2")  
   
-   2.  Windows 8 +: **platformlar arası mobil geliştirme > Android için Microsoft Visual Studio öykünücüsü**. Not: bir Windows 7 veya önceki bir bilgisayar kullanarak veya Windows çalıştıran bir Mac bilgisayarda, bu olduğundan emin olun *denetlenmeyen*. "Windows bilgisayarlarda öykünücüleri hakkında not" 5. adım sonra bakın. Yalnızca fiziksel Android cihazlarda hata ayıklamak istiyorsanız, siz de bu işaretlenmemiş olarak bırakabilirsiniz.  
+   2.  Windows 8 +: **Platformlar arası mobil geliştirme > Android için Microsoft Visual Studio öykünücüsü**. Not: bir Windows 7 veya önceki bir bilgisayar kullanarak veya Windows çalıştıran bir Mac bilgisayarda, bu olduğundan emin olun *denetlenmeyen*. "Windows bilgisayarlarda öykünücüleri hakkında not" 5. adım sonra bakın. Yalnızca fiziksel Android cihazlarda hata ayıklamak istiyorsanız, siz de bu işaretlenmemiş olarak bırakabilirsiniz.  
   
    3.  (İsteğe bağlı) Windows cihazları hedefleyen üzerinde planlıyorsanız, ayrıca denetleyin **Windows ve Web geliştirme > Evrensel Windows uygulama geliştirme araçları** ve/veya **Windows 8.1 ve Windows Phone 8.0/8.1 Araçları**. Bu indirme daha uzun sürer öykünücü görüntüleri yükleme seçenekleri içerir. Ayrıca, daha sonra eklemek için Visual Studio yükleyicisi her zaman geri dönebilirsiniz.  
   
@@ -94,7 +90,7 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
       
 6. Mac'te önceki ya da çalışan Windows ve Windows 7 kullanan [Android SDK öykünücüsü](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/) fiziksel cihazlar yoksa. Aşağıdaki nota bakın.  
   
-   **Windows bilgisayarlarda öykünücüleri ilgili Not:** CPU aynı anda yalnızca bir sanallaştırma teknolojisi desteklediğinden, yalnızca biri kullanımda geliştirme bilgisayarında yüklü en iyisidir. Hyper-V (Android ve Windows Phone öykünücüsü için Visual Studio öykünücüsü tarafından kullanılan), Virtual Box (Genymotion tarafından kullanılır) ve (Android SDK öykünücüsü tarafından kullanılan) Intel HAXM teknolojilerdir üç ana virtualizations vardır. Hyper-V ve Virtual Box arasında çeşitli sorunları nedeniyle herhangi belirli bir bilgisayarda, bu nedenle, yalnızca bir öykünücü kullanmak için en iyi, Hyper-V, Windows 8 ve üzeri bilgisayarlar ve Windows 7 öykünücülerde Intel HAXM kullanmak için yukarıdaki ve ne zaman yanı sıra önceki öneriler yazın. Windows çalıştıran bir Mac üzerinde  
+   **Windows öykünücülerde hakkında bilgisayarlar dikkat edin:** CPU aynı anda yalnızca bir sanallaştırma teknolojisi desteklediğinden, yalnızca biri kullanımda geliştirme bilgisayarında yüklü en iyisidir. Hyper-V (Android ve Windows Phone öykünücüsü için Visual Studio öykünücüsü tarafından kullanılan), Virtual Box (Genymotion tarafından kullanılır) ve (Android SDK öykünücüsü tarafından kullanılan) Intel HAXM teknolojilerdir üç ana virtualizations vardır. Hyper-V ve Virtual Box arasında çeşitli sorunları nedeniyle herhangi belirli bir bilgisayarda, bu nedenle, yalnızca bir öykünücü kullanmak için en iyi, Hyper-V, Windows 8 ve üzeri bilgisayarlar ve Windows 7 öykünücülerde Intel HAXM kullanmak için yukarıdaki ve ne zaman yanı sıra önceki öneriler yazın. Windows çalıştıran bir Mac üzerinde  
   
 ##  <a name="mac"></a> Mac kurulumu (Apple kimliği, Xcode ve Xamarin)  
   
@@ -107,4 +103,3 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
 4.  Xamarin hem Windows hem de Mac bilgisayarlara yükleme işlemini tamamladıktan sonra yönergeleri takip edin [Mac bilgisayara bağlayarak](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com) Windows bilgisayarda iOS ve Mac Visual Studio'dan ile çalışabilirsiniz.  
   
      Her iki bilgisayar aynı yerel ağda olması gerektiğini unutmayın.
-

@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralmayı görüntüleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -19,18 +14,18 @@ ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782242"
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Nasıl Yapılır: Türler Arasında Devralmayı Görüntüleme (Sınıf Tasarımcısı)
+# <a name="how-to-view-inheritance-between-types-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralmayı görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir taban türü ve Sınıf Tasarımcısı'nda bir sınıf diyagramında, türetilmiş türler arasında varsa devralma ilişkisi bulabilirsiniz. Bkz: hiçbiri, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için [nasıl yapılır: devralma arasında türleri oluşturmak (Sınıf Tasarımcısı)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+Bir taban türü ve Sınıf Tasarımcısı'nda bir sınıf diyagramında, türetilmiş türler arasında varsa devralma ilişkisi bulabilirsiniz. Bkz: hiçbiri, iki tür arasında yoksa bir devralma ilişkisi oluşturmak için [nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralma oluşturma](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>Temel tür bulmak için  
   
@@ -53,8 +48,5 @@ Bir taban türü ve Sınıf Tasarımcısı'nda bir sınıf diyagramında, türet
    Ayrıca türetilmiş türlerini görmek ve istediğiniz tür sağ **türetilmiş sınıfları Göster** veya **türetilmiş arabirimleri göster**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında ilişkilendirme oluşturma](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında ilişkilendirme oluşturma](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Türleri ve İlişkilendirmeleri Görüntüleme (Sınıf Tasarımcısı)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

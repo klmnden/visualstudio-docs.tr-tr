@@ -1,12 +1,9 @@
 ---
 title: Denetim akışını UML sıralı diyagramlar üzerinde açıklayan | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782258"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Denetim akışını UML sıralı diyagramlarında parçalarla açıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
  Bir veya daha fazla birleştirilmiş parça oluşur *etkileşim işlenenleri*, ve bunların her biri bir veya daha fazla iletiler, etkileşim kullanımları veya birleştirilmiş parçaları barındırır.  
   
 > [!NOTE]
->  Bu konu, sıralı diyagramlar parçalarında hakkındadır. UML sıralı diyagramlar okuma hakkında daha fazla bilgi için bkz. [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md). UML sıralı diyagramlar çizin hakkında daha fazla bilgi için bkz. [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Bu konu, sıralı diyagramlar parçalarında hakkındadır. UML sıralı diyagramlar okuma hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Başvuru](../modeling/uml-sequence-diagrams-reference.md). UML sıralı diyagramlar çizin hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Birleşik iki Etkileşim İşleneniyle parça](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -134,9 +131,6 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
 |**Neg**|Bu parçasında gösterilen dizisi olmaması gerekir. Genellikle, bir veya Ignore parça içinde kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)   
- [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: Oluşturma ve Windows Store uygulamaları için birim testleri çalıştıran | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Oluşturma ve Windows Store uygulamaları için birim testleri çalıştırma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754880"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>İzlenecek yol: Windows Mağazası Uygulamaları için Birim Testleri Oluşturma ve Çalıştırma
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>İzlenecek yol: Oluşturma ve Windows Store uygulamaları için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar ve Visual C#, Visual Basic ve Visual C++ için birim sınaması kitaplığı şablonları içerir.  
@@ -93,7 +88,7 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
   
      Bildirim Tasarımcısı hakkında daha fazla bilgi için bkz: [bildirim Tasarımcısını kullanarak bir Windows 8.1 uygulama paketini Yapılandır](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
-     ![Birim Test bildirimi](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
+     ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Birim testini kodlama  
   
@@ -119,7 +114,7 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
     >  Test Gezgini'nde birim testleri listesini güncelleme çözümünü oluşturmanız gerekir.  
   
     > [!WARNING]
-    >  Visual Studio bilinen sorun: test projesini oluşturmadan önce Test Gezgini'ni açmanız gerekir.  
+    >  Visual Studio bilinen sorun: Test Gezgini test projesini oluşturmadan önce açmanız gerekir.  
   
 3.  Test Gezgini'nde oluşturduğunuz birim sınamayı seçin.  
   
@@ -144,7 +139,7 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
 ## <a name="external-resources"></a>Dış Kaynaklar  
   
 ### <a name="videos"></a>Videolar  
- [Kanal 9: XAML kullanılarak oluşturulan, Windows Store uygulamalarını test etme birim](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Kanal 9: Birim testi XAML kullanılarak oluşturulan, Windows Store uygulamaları](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Forumlar  
  [Visual Studio birim testi](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -155,6 +150,3 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio ile Store uygulamalarını test etme](../test/testing-store-apps-with-visual-studio.md)   
  [Yapı ve test Team Foundation Yapısı kullanarak Windows Store uygulaması](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

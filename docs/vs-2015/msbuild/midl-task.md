@@ -1,14 +1,9 @@
 ---
 title: MIDL görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -31,13 +26,13 @@ ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782481"
 ---
 # <a name="midl-task"></a>MIDL Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,9 +117,9 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**Yok**|**/ Error none**|  
+    |**Yok.**|**/ Error none**|  
     |**EnableCustom**|**/ Error**|  
-    |**Tüm**|**/ Error tüm**|  
+    |**Tümü**|**/ Error tüm**|  
   
      Daha fazla bilgi için **/Error** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -178,7 +173,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**Yok**|**/ Client yok**|  
+    |**Yok.**|**/ Client yok**|  
     |**Stub**|**/ Client saptama**|  
   
      Daha fazla bilgi için **/Client** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
@@ -193,7 +188,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
     |Değer|Komut satırı seçeneği|  
     |-----------|--------------------------|  
-    |**Yok**|**/ Server yok**|  
+    |**Yok.**|**/ Server yok**|  
     |**Stub**|**/ Server saptama**|  
   
      Daha fazla bilgi için **/Server** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
@@ -428,6 +423,3 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

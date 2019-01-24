@@ -1,25 +1,22 @@
 ---
 title: Özel tanımlama Modelleme araç kutusu öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770757"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Özel bir modelleme araç kutusu öğesi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
 4.  Araç kutusu tanımlarınıza projeye ekleyin. Dahil **.tbxinfo** dosyası, diyagram dosyaları, bit eşlem dosyaları ve herhangi bir kaynak dosyasını ve VSIX içine dahil edildiğinden emin olun.  
   
-    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **Ekle**, **var olan öğe**. İletişim kutusunda ayarlanan **tür nesneleri: tüm dosyalar**. Dosyaları bulun, tüm bunları seçin ve ardından **Ekle**.  
+    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **Ekle**, **var olan öğe**. İletişim kutusunda ayarlanan **tür nesneleri: Tüm dosyaları**. Dosyaları bulun, tüm bunları seçin ve ardından **Ekle**.  
   
         > [!NOTE]
         >  Bu projede model Düzenleyicisi, diyagram dosyaları açamaz.  
@@ -200,7 +197,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
      Deneysel örneği oluşturun veya ilgili türün bir UML diyagram açın. Doğru öğeleri oluşturur ve yeni aracınızın araç kutusunda görüntülendiğini doğrulayın.  
   
-10. **Dağıtım için bir VSIX dosya elde edilir:** klasörü Windows Gezgini'nde açın **.\bin\Debug** veya **.\bin\Release** bulunacak **.vsix** dosya. Bu bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantı dosyası. Bilgisayarınızda yüklü ve olması da diğer Visual Studio kullanıcılarına gönderilebilir.  
+10. **Dağıtım için bir VSIX dosya elde edilir:** Windows Gezgini'nde klasörü açın **.\bin\Debug** veya **.\bin\Release** bulunacak **.vsix** dosya. Bu bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantı dosyası. Bilgisayarınızda yüklü ve olması da diğer Visual Studio kullanıcılarına gönderilebilir.  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Visual Studio Uzantısı'ndan özel araçlarını yüklemek için  
   
@@ -241,6 +238,3 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
  [UML genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)   
  [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

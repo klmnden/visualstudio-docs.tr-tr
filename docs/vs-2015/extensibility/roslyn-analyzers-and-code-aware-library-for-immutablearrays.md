@@ -1,24 +1,19 @@
 ---
 title: Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4c5b7f145438d6c61ae58a18176d2dae579b128
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+manager: jillfra
+ms.openlocfilehash: ec3304ca0da49e5a72d97e4b04b3fd4aff6b13dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799647"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArray’ler için Roslyn Çözümleyicileri ve Kod Algılayan Kitaplık
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -320,4 +315,3 @@ Tüm tamamlanan kodu gördüğünüz [burada](https://github.com/DustinCampbell/
 [çeşitli örnekler github'da Çözümleyicileri üç tür gruplandırılmış](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)  
  [GitHub OSS sitesindeki diğer docs](https://github.com/dotnet/roslyn/tree/master/docs/analyzers) 
 [Roslyn Çözümleyicileri github'da ile uygulanan FxCop kuralı](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
-

@@ -1,14 +1,9 @@
 ---
 title: Takım projesi iade ilkeleri ile kod kalitesini arttırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code quality, using check-in policies
 - team-based development, enhancing code quality
@@ -17,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753186"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Takım Projesi İade İlkeleriyle Kod Kalitesini Arttırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,13 @@ Team Foundation sürüm denetimi (TFVC) kullandığınızda, takım projeleriniz
   
  Bu takım projesi iade ilkeleri belirtebilirsiniz:  
   
--   **Yapılar**: derleme sırasında oluşturulan yapı aralarının bir yeni iadeden önce düzeltilmesi gereken gerektirir.  
+-   **Yapılar**: Bir derleme sırasında oluşturulan yapı aralarının bir yeni iadeden önce düzeltilmesi gereken gerektirir.  
   
--   **Değişiklik kümesi açıklamalarını**: kullanıcıların değişiklikler iade edilirken açıklama sağlamanızı gerektirir.  
+-   **Değişiklik kümesi açıklamalarını**: Kullanıcılar değişiklikler iade edilirken açıklama sağlamanızı gerektirir.  
   
--   **Kod Analizi**: Kod Analizi iade etme önce çalışmasını gerektirir.  
+-   **Kod Analizi**: Kod Analizi iade önce çalışmasını gerektirir.  
   
--   **İş öğeleri**: iş öğelerinin biri veya daha fazla onay-'ile ilişkili olmasını gerektirir.  
+-   **İş öğelerini**: İş öğelerinin biri veya daha fazla onay-'ile ilişkili olmasını gerektirir.  
   
 > [!IMPORTANT]
 >  İade ilkelerini kullanmak için bağlanmalıdır [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  
@@ -46,22 +41,19 @@ Team Foundation sürüm denetimi (TFVC) kullandığınızda, takım projeleriniz
   
 |Görev|Destekleyici İçerik|  
 |----------|------------------------|  
-|**İade etme ilkeleri oluşturun ve kullanın:** takım proje ayarlarını kullanarak iade ilkeleri oluşturma [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Ayarlama ve kalite kapıları](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
-|**Kod çözümleme iade ilkeleri oluşturup:** standart kod analizi kuralları kümesinden seçebilir veya özel bir grup oluşturabilirsiniz.|[Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
+|**Oluşturup iade ilkeleri kullanabilirsiniz:** Takım proje ayarlarını kullanarak iade ilkeleri oluşturma [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Ayarlama ve kalite kapıları](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Oluşturma ve kod çözümleme iade ilkeleri kullanın:** Kod çözümleme kuralların standart kümesinden seçebilir veya özel bir grup oluşturabilirsiniz.|[Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   
 |Görev|Destekleyici İçerik|  
 |----------|------------------------|  
-|**Geliştirme ortamınızı ayarlama:** oluşturabilir veya kod değiştirme önce uygun kaynak kodu kullanarak geliştirme ve test ortamlarınızı ayarlamanız gerekir. Veritabanları ile çalışıyorsanız, ayrıca veritabanlarının çevrimdışı gösterimine erişiminiz olmalıdır.|[Geliştirme ortamlarını ayarlama](http://msdn.microsoft.com/en-us/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
-|**Kod Analizi geliştirme sürecine kullanın:** takım üyeleri, Kod Analizi çözümlemelerini geliştiricinin bilgisayarında çalıştırın. Visual Studio'da geliştiriciler yapılandırmak ve bireysel kod projeleri için Kod Analizi yürütmeleri çalıştırın, görüntüleme ve sorunlarını analiz etmenize bulunan ve Uyarılar için iş öğeleri oluşturun.|[Uygulama Kalitesini Analiz Etme](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
-|**Birim testleri oluşturma ve çalıştırma:** birim testleri, C#, Visual Basic .NET ve C++ projelerindeki sınıfların yöntemlerinde mantık hataları aramak için hızlı bir şekilde geliştiricilere ve test edicilere verin. Birim test bir kez oluşturulabilir ve kaynak kodun hiçbir hatanın emin emin olmak için değiştirildiği her seferde çalıştırın.|[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|  
-|**İş öğelerini ve kusurları izleyin:** iş öğelerini takım projesi hakkındaki işleri ve bilgileri yönetmek ve izlemek için kullanabilirsiniz. Bir iş öğesi bir veritabanıdır bu kayıt [!INCLUDE[esprfound](../includes/esprfound-md.md)] atamasını ve çalışmanın ilerlemesini izlemek için kullanır. Farklı türlerde iş öğeleri, iş, müşteri gereksinimleri, ürün hataları ve geliştirme görevleri gibi farklı türlerde izlemek için kullanabilirsiniz.|[İş izleme ve iş akışını yönetme &#91;yönlendirildi&#93;](http://msdn.microsoft.com/en-us/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**Geliştirme ortamınızı ayarlayın:** Oluşturma veya kod değiştirme önce geliştirme sürecinizi ve uygun kaynak kodu kullanarak test ortamları. Veritabanları ile çalışıyorsanız, ayrıca veritabanlarının çevrimdışı gösterimine erişiminiz olmalıdır.|[Geliştirme ortamlarını ayarlama](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**Kod analizini, geliştirme sürecine kullanın:** Ekip üyeleri kendi geliştirme bilgisayarlarına kod analizini Çalıştır. Visual Studio'da geliştiriciler yapılandırmak ve bireysel kod projeleri için Kod Analizi yürütmeleri çalıştırın, görüntüleme ve sorunlarını analiz etmenize bulunan ve Uyarılar için iş öğeleri oluşturun.|[Uygulama Kalitesini Analiz Etme](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
+|**Oluşturma ve birim testleri çalıştırma:** Birim testleri, sınıfların yöntemlerinde mantık hataları aramak için hızlı bir şekilde geliştiricilere ve test edicilere vermek C#, Visual Basic .NET ve C++ projeleri. Birim test bir kez oluşturulabilir ve kaynak kodun hiçbir hatanın emin emin olmak için değiştirildiği her seferde çalıştırın.|[Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)|  
+|**İş öğelerini ve kusurları izleyin:** İş öğeleri, takım projesi hakkındaki işleri ve bilgileri yönetmek ve izlemek için kullanabilirsiniz. Bir iş öğesi bir veritabanıdır bu kayıt [!INCLUDE[esprfound](../includes/esprfound-md.md)] atamasını ve çalışmanın ilerlemesini izlemek için kullanır. Farklı türlerde iş öğeleri, iş, müşteri gereksinimleri, ürün hataları ve geliştirme görevleri gibi farklı türlerde izlemek için kullanabilirsiniz.|[İş izleme ve iş akışını yönetme &#91;yönlendirildi&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>Dış kaynaklar  
   
 ### <a name="guidance"></a>Kılavuz  
- [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: birim testi: iç testler](http://go.microsoft.com/fwlink/?LinkID=255188)
-
-
-
+ [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: Birim testi: İç testler](http://go.microsoft.com/fwlink/?LinkID=255188)

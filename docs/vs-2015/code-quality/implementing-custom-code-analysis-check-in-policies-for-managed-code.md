@@ -1,14 +1,9 @@
 ---
 title: Yönetilen kod için özel kod çözümleme iade ilkelerini uygulama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752789"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
  Bir takım projesi için özel bir kural oluşturmak için önce kümesinde iade ilkesi kuralı için özel bir klasör oluşturun **Kaynak Denetim Gezgini**. Ardından, kural kümesi dosyası oluşturun ve dosyayı sürüm denetimine ekleyin. Son olarak, kural olarak kod çözümleme iade ilkesi takım projesi için kümesi belirtin.  
   
 > [!NOTE]
->  Bir takım projesinde bir klasör oluşturmak için önce takım projesi kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için [oluşturma ve çalışma alanları (eski) ile çalışma](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Bir takım projesinde bir klasör oluşturmak için önce takım projesi kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için [oluşturma ve çalışma alanları (eski) ile çalışma](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Sürüm denetimi klasörü İade İlkesi kural kümesi oluşturmak için  
   
@@ -124,6 +119,3 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
 7.  İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
   
 8.  İade İlkesi kural kümesi dosyası yerel sürümünü belirtin.
-
-
-

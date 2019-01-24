@@ -1,14 +1,9 @@
 ---
 title: '&lt;entryPoint&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
 - urn:schemas-microsoft-com:asm.v2#entryPoint
@@ -23,13 +18,13 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790966"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ Gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../includes
 ## <a name="remarks"></a>Açıklamalar  
  Bu öğe için derleme ve giriş noktasını tanımlar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.  
   
- Kullanamazsınız `commandLine` uygulamanıza çalışma zamanında parametreleri geçirmek için. Sorgu dizesi parametreleri için erişebileceğiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamanın dağıtımından <xref:System.AppDomain>. Daha fazla bilgi için [nasıl yapılır: çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Kullanamazsınız `commandLine` uygulamanıza çalışma zamanında parametreleri geçirmek için. Sorgu dizesi parametreleri için erişebileceğiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamanın dağıtımından <xref:System.AppDomain>. Daha fazla bilgi için [nasıl yapılır: Bir çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneğinde gösterilmiştir bir `entryPoint` öğesi için bir uygulama bildiriminde bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md) konu.  
@@ -121,6 +116,3 @@ Gereken derleme tanımlayan yürütülmesi bu [!INCLUDE[ndptecclick](../includes
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulama Bildirimi](../deployment/clickonce-application-manifest.md)
-
-
-

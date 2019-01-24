@@ -1,27 +1,22 @@
 ---
-title: 'PTVS kullanmaya Başlarken: etkileşimli Python | Microsoft Docs'
-ms.custom: ''
+title: 'PTVS kullanmaya Başlarken: Etkileşimli Python | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: fa594314-bdd0-4da5-874a-57b03414b675
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 7d9438d7d80480349dd53384c2538742a22b4d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780992"
 ---
-# <a name="getting-started-with-ptvs-interactive-python"></a>PTVS Kullanmaya Başlarken: Etkileşimli Python
+# <a name="getting-started-with-ptvs-interactive-python"></a>PTVS kullanmaya Başlarken: Etkileşimli Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Etkileşimli bir komut istemlerini veya okuma-eval-print döngüler (REPLs) bir anahtar üretken programlama dillerini araçlardır.  Bunlar keşfedin ve API'ler hakkında bilgi edinmek için API kullanarak denemeler için kod parçacıkları yürütmek izin ve etkileşimli olarak çalışan kodu, program veya projeleri içerecek şekilde geliştirin.  
@@ -41,4 +36,3 @@ Etkileşimli bir komut istemlerini veya okuma-eval-print döngüler (REPLs) bir 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Wiki belgeleri](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
  [PTVS kullanmaya başlama ve kapsamlı videolar alma](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

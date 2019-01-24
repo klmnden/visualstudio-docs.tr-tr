@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: a7f3cd8d039f8ba313b32d74555fb61945042503
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786958"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
 
@@ -46,7 +46,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 (Değiştir `vs_enterprise.exe` ürün sürümü için uygun şekilde yüklemekte.)
 
 >[!TIP]
-> Visual Studio 2017'yi yüklemek için komut satırını kullanmayı daha fazla örnek için bkz. [komut satırı parametresi örnekleri](command-line-parameter-examples.md) sayfası.)
+> Visual Studio 2017'yi yüklemek için komut satırını kullanmayı daha fazla örnek için bkz. [komut satırı parametresi örnekleri](command-line-parameter-examples.md) sayfası.
 
 | **Komutu** | **Açıklama** |
 | ----------------------- | --------------- |
@@ -56,6 +56,8 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `repair` | Yüklü bir ürün onarır. |
 | `uninstall` | Yüklü bir ürün kaldırır. |
 | `export` | **Yeni 15.9**: Yükleme seçimi bir yükleme yapılandırma dosyasına dışarı aktarır. **Not**: Yalnızca vs_installer.exe ile kullanılabilir. |
+
+### <a name="install-options"></a>Yükleme Seçenekleri
 
 | **Yükleme seçeneği** | **Açıklama** |
 | ----------------------- | --------------- |
@@ -79,6 +81,8 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 
 > [!IMPORTANT]
 > Birden çok iş yüklerinin ve bileşenlerin belirtirken tekrarlamalısınız `--add` veya `--remove` her öğe için komut satırı anahtarı.
+
+### <a name="layout-options"></a>Düzen Seçenekleri
 
 | **Düzen Seçenekleri** | **Açıklama** |
 | ----------------------- | --------------- |

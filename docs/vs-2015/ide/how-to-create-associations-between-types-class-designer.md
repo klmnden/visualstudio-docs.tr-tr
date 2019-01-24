@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında ilişkilendirme oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında ilişkilendirme oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
 helpviewer_keywords:
@@ -21,15 +16,15 @@ ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8a1126427a1454ec09f0460cb9da1eb65fb72b31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856801"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764804"
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Nasıl yapılır: türler (Sınıf Tasarımcısı) arasında ilişkilendirme oluşturma
+# <a name="how-to-create-associations-between-types-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında ilişkilendirme oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sınıf Tasarımcısı'nda ilişkilendirme çizgileri, bir diyagramdaki sınıfların nasıl ilişkili olduğunu gösterir. İlişkilendirme çizgisi, projenizdeki başka bir sınıfın özellik veya alan türü olan bir sınıfı temsil eder. İlişkilendirme çizgileri genellikle, projenizdeki sınıflar arasında en önemli ilişkileri göstermek için kullanılır.  
@@ -62,7 +57,4 @@ Sınıf Tasarımcısı'nda ilişkilendirme çizgileri, bir diyagramdaki sınıfl
      Adı güncelleştirilmiştir **sınıf ayrıntıları** penceresinde, ilişkilendirme çizgisi, Özellikler penceresinde ve kod.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl Yapılır: Üye Gösterimi ile İlişkilendirme Gösterimi Arasında Geçiş (Sınıf Tasarımcısı)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
-
-
-
+ [Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi (Sınıf Tasarımcısı) arasında geçiş](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

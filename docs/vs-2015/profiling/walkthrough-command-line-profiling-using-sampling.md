@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: Örnekleme metodunu kullanarak komut satırı profil | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Örnekleme kullanarak komut satırı profili oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,15 +12,15 @@ ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b46af3a5485f896e1a5014c094646f364876d0d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783540"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Örnekleme Yöntemini Kullanarak Komut Satırı Profili Oluşturma
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Komut satırı kullanarak örnekleme profili oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu yönerge, nasıl bir uygulama komut satırı araçlarını kullanarak ve performans sorunlarını belirlemek için örnekleme profili gösterir.  
@@ -116,6 +111,3 @@ Bu yönerge, nasıl bir uygulama komut satırı araçlarını kullanarak ve perf
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)   
  [Performans Raporu Görünümleri](../profiling/performance-report-views.md)
-
-
-

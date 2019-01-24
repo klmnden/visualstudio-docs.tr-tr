@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: Görselleştirici kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773645"
 ---
-# <a name="how-to-use-a-visualizer"></a>Nasıl Yapılır: Görselleştirici Kullanma
+# <a name="how-to-use-a-visualizer"></a>Nasıl yapılır: Görselleştirici kullanma
 Görselleştirici, veri türü için anlamlı bir şekilde bir değişken veya nesne içeriğini görüntülemek için kullanabilirsiniz. Görselleştiriciler dan kullanabileceğiniz **DataTips**, **izleme** penceresinde **Otolar** penceresinde veya **Yereller** penceresi.  
   
  Görselleştiriciler Compact Framework'te desteklenmez.  
@@ -59,7 +54,7 @@ Görselleştirici, veri türü için anlamlı bir şekilde bir değişken veya n
   
      *Visual Studio yükleme yolu* `\Common7\Packages\Debugger\Visualizers`  
   
-     veya  
+     -veya-  
   
      `My Documents\Visual Studio 2010\Visualizers` *Visual Studio sürümü* `\Visualizers`  
   

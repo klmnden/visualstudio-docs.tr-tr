@@ -3,10 +3,7 @@ title: Visual Studio 2015'i yükleyin | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799183"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015'i yükleyin
 
@@ -83,7 +80,7 @@ Biz ayrıntılara inmek önce en sık istenen bizim bağlantıların bir listesi
 |Program hata ayıklama|SeDebugPrivilege|
 |Denetim ve güvenlik günlüğünü yönetme|SeSecurityPrivilege|
 
- Bu yerel yönetici hesabı gereksinimi hakkında daha fazla bilgi için bkz. Bilgi Bankası makalesi [Kurulum hesabı belirli kullanıcı haklarına sahip değilse SQL Server yüklemesi başarısız olur](https://support.microsoft.com/en-us/kb/2000257).
+ Bu yerel yönetici hesabı gereksinimi hakkında daha fazla bilgi için bkz. Bilgi Bankası makalesi [Kurulum hesabı belirli kullanıcı haklarına sahip değilse SQL Server yüklemesi başarısız olur](https://support.microsoft.com/kb/2000257).
 
 ###  <a name="BKMK_Media"></a> Yükleme ortamını kullanarak
  Yüklenecek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kök dizininde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yükleme medyasında, istediğiniz sürümü için yükleme dosyasını çalıştırın:

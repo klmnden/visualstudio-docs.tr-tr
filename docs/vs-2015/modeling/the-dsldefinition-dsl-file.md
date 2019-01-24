@@ -1,25 +1,22 @@
 ---
 title: DslDefinition.dsl dosyası | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937660"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800501"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +87,7 @@ Bu konuda Dsl projedeki DslDefinition.dsl dosyası yapısını açıklayan bir [
   
  Bilinen ad sistem XML ağacındaki eşdüzey farklı adlara sahip olmasını gerektirir. Örneğin, iki sınıf aynı ada sahip bir etki alanına özgü dil tanımı kaydetmeyi denerseniz, bu nedenle, doğrulama hataları oluşur. Böylece, doğru bir şekilde daha sonra yeniden yükleyebilirsiniz DslDefinition.dsl dosyası kaydetmeden önce her zaman böyle yinelenen ad hataları düzeltmeniz gerekir.  
   
- Bilinen ad türünün her türünde: DomainClassMoniker, DomainRelationshipMoniker, ve benzeri.  
+ Her tür kendi ad türü vardır: DomainClassMoniker, DomainRelationshipMoniker ve benzeri.  
   
 ## <a name="types"></a>Türler  
  Türler bölümüne DslDefinition.dsl dosyası içeren tüm özelliklerin türleri belirtir. İki tür içinde bu tür ayrılır: System.String gibi dış türler ve numaralandırılmış türler.  
@@ -214,7 +211,7 @@ Bu konuda Dsl projedeki DslDefinition.dsl dosyası yapısını açıklayan bir [
 ### <a name="source-and-target-roles"></a>Kaynak ve hedef rolleri  
  Her ilişki aşağıdaki özniteliklere sahip bir kaynak ve hedef rolleri içerir:  
   
--   `RolePlayer` Özniteliği başvuruda bağlı örnek etki alanı sınıfı: OutPort kaynağı için hedef InPort.  
+-   `RolePlayer` Özniteliği başvuruda bağlı örnek etki alanı sınıfı: OutPort InPort hedef kaynağı için.  
   
 -   `Multiplicity` Özniteliğine sahip dört olası değerler (ZeroMany, ZeroOne, tek ve OneMany). Bu öznitelik, bir rol oyuncusu ile ilişkilendirilebilir bu ilişkisine ait bağlantıların sayısını ifade eder.  
   
@@ -281,7 +278,7 @@ Bu konuda Dsl projedeki DslDefinition.dsl dosyası yapısını açıklayan bir [
  C# bu modelinde yazarken, tek bir adımda bir bağlantı üzerinden her, ilişkili sınıfları ilişki oluşturan özelliğini kullanarak atlayabilirsiniz:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  Ancak, iki atlama yolu sözdiziminde açıkça yapmanız gerekir. Bu gereksinimden dolayı Ara Bağlantı daha kolay erişebilirsiniz. Aşağıdaki kod, bağlantıdan atlama bileşenine tamamlar:  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Bağlayıcı eşlemesi, dekoratör eşlemeleri de içerebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
  [Modelleri, Sınıfları ve İlişkileri Anlama](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

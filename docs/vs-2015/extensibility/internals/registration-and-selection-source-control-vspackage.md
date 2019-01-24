@@ -1,27 +1,22 @@
 ---
 title: Kayıt ve seçim (kaynak denetimi VSPackage'ı) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790805"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve Seçim (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,16 +35,16 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
   
 - Paket GUID'si: (Bu bölümde ID_Package olarak adlandırılır) kaynak denetimi uyarlamasını içeren paket için ana GUID budur.  
   
-- Kaynak Denetim GUID'i: Bu kaynak denetimi VSPackage'ı ile Visual Studio kaynak denetimi saplama kaydetmek için kullanılan bir GUID değeridir ve ayrıca komut UI bağlamı GUID olarak kullanılır. Kaynak denetimi hizmetini GUID GUID kaynak denetiminde kayıtlı. Örnekte, kaynak denetim GUID'i ID_SccProvider çağrılır.  
+- Kaynak Denetim GUID'i: Bu, kaynak denetimi VSPackage'ı ile Visual Studio kaynak denetimi saplama kaydetmek için kullanılan bir GUID değeridir ve komut UI bağlamı GUID olarak da kullanılır. Kaynak denetimi hizmetini GUID GUID kaynak denetiminde kayıtlı. Örnekte, kaynak denetim GUID'i ID_SccProvider çağrılır.  
   
-- Kaynak denetimi hizmeti GUID: özel hizmet (Bu bölümde SID_SccPkgService olarak adlandırılır) Visual Studio tarafından kullanılan GUID budur. Buna ek olarak, diğer GUID'leri VSPackages, araç pencerelerini tanımlamak ve benzeri kaynak denetim paketi gerekir.  
+- Kaynak denetimi hizmetini GUID'si: Özel hizmet (Bu bölümde SID_SccPkgService olarak adlandırılır) Visual Studio tarafından kullanılan GUID budur. Buna ek olarak, diğer GUID'leri VSPackages, araç pencerelerini tanımlamak ve benzeri kaynak denetim paketi gerekir.  
   
   Aşağıdaki kayıt defteri girdilerini kaynak denetimi VSPackage'ı tarafından yapılması gerekir:  
   
 |Anahtar adı|Girdileri|  
 |--------------|-------------|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(varsayılan) rg_sz =: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(varsayılan) rg_sz =:\<paketin kolay adı ><br /><br /> Hizmet rg_sz =: {SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(varsayılan) rg_sz =:\<paketin kolay adı ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(varsayılan) rg_sz =: #\<kaynak kimliği için yerelleştirilmiş adı ><br /><br /> Paket rg_sz =: {ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Unutmayın anahtar adı `SourceCodeControl`, tarafından kullanılan [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve bir seçimi olarak kullanılamıyor \<PackageName >.)|(varsayılan) rg_sz =: {ID_Package}|  
   
@@ -91,4 +86,3 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
  [Özellikleri](../../extensibility/internals/source-control-vspackage-features.md)   
  [Kaynak Denetimi Eklentisi oluşturma](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [VSPackage’lar](../../extensibility/internals/vspackages.md)
-

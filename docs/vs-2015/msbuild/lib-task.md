@@ -1,14 +1,9 @@
 ---
 title: LIB görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -30,13 +25,13 @@ ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 141c153fa65d9858991061c79dc423f18227a381
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763399"
 ---
 # <a name="lib-task"></a>LIB Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar lib.exe. Kitaplık Yö
 |           **OutputFile**           |                                                                                                                                                                                                                                                                                                                                                       İsteğe bağlı **dize** parametresi.<br /><br /> Geçersiz kılmalar varsayılan adını ve konumunu programın bu lib.exe oluşturur.<br /><br /> Bu parametre için karşılık gelen **/OUT** alan lib.exe seçeneği bir `filename` bağımsız değişken.                                                                                                                                                                                                                                                                                                                                                       |
 |         **RemoveObjects**          |                                                                                                                                                                                                                                                                             İsteğe bağlı **String []** parametresi.<br /><br /> Belirtilen nesneyi çıkış kitaplığında atlar. Lib.exe tüm nesneleri (elinizin altında nesne dosyalarında veya kitaplıklarındaki) birleştirerek ve ardından bu seçeneği tarafından belirtilen nesneleri silerek bir çıkış kitaplığı oluşturur.<br /><br /> Bu parametre için karşılık gelen **/REMOVE** alan lib.exe seçeneği bir `membername` bağımsız değişken.                                                                                                                                                                                                                                                                              |
 |            **Kaynakları**             |                                                                                                                                                                                                                                                                                                                                                                                                                      Gerekli `ITaskItem[]` parametresi.<br /><br /> Kaynak dosyaları boşluklarla ayrılmış bir listesini belirtir.                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|           **Alt sistem**            | İsteğe bağlı **dize** parametresi.<br /><br /> Yürütülebilir dosya için ortamı belirtir. Alt sistem seçimi giriş noktası sembolünü ya da giriş noktası işlevini etkiler.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **Konsol** -   **/Subsystem: Console**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Yerel** - **natıve**<br />-   **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Önyükleme servisi sürücüsü** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Daha fazla bilgi için [/Subsystem (alt sistemi belirtin)](http://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b). |
+|           **Alt sistem**            | İsteğe bağlı **dize** parametresi.<br /><br /> Yürütülebilir dosya için ortamı belirtir. Alt sistem seçimi giriş noktası sembolünü ya da giriş noktası işlevini etkiler.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **Konsol** -   **/Subsystem: Console**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Yerel** - **natıve**<br />-   **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**ReplaceThisText<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Daha fazla bilgi için [/Subsystem (alt sistemi belirtin)](http://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b). |
 |     **SuppressStartupBanner**      |                                                                                                                                                                                                                                                                                                                      İsteğe bağlı **Boole** parametresi.<br /><br /> Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisinin görüntülenmesini engeller.<br /><br /> Daha fazla bilgi için bkz. **/nologo** adresindeki seçeneği [çalıştıran LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                                                                                                                                                                                                      |
 |         **TargetMachine**          |                           İsteğe bağlı **dize** parametresi.<br /><br /> Program veya DLL için hedef platformu belirtir.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X 64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Daha fazla bilgi için [/Machine (hedef Platform belirtin)](http://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).                           |
 |      **TrackerLogDirectory**       |                                                                                                                                                                                                                                                                                                                                                                                                                             İsteğe bağlı **dize** parametresi.<br /><br /> İzleyici günlüğü dizini belirtir.                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -79,6 +74,3 @@ Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar lib.exe. Kitaplık Yö
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

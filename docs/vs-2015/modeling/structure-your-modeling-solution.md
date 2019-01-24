@@ -1,23 +1,20 @@
 ---
 title: Modelleme çözümünüzün yapısını | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 995192b372b9c1909ad3a7f164474cfaf63f07bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04a06b1b78c89538ec62957d1b7503f5fb96b4a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787531"
 ---
 # <a name="structure-your-modeling-solution"></a>Modelleme çözümünüzün yapısını oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ Modelleri geliştirme projesindeki etkili bir şekilde kullanmak için ekip üye
   
 2. Oluşturma bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözümü mimarisi çözümü diyoruz. Bu çözüm, genel sistem tasarımı oluşturmak için kullanılır. Modelleri, ancak hiçbir kodu içerecek.  
   
-    Bir katman diyagramı, bu çözüme ekleyin. Katman diyagramı üzerinde uygulamanız için seçtiğiniz mimarisi çizin. Örneğin, diyagramda bu katmanlar ve aralarındaki bağımlılıkları gösterebilir: sunu; İş mantığı; ve verileri.  
+    Bir katman diyagramı, bu çözüme ekleyin. Katman diyagramı üzerinde uygulamanız için seçtiğiniz mimarisi çizin. Örneğin, diyagramda şu katmanları ve aralarındaki bağımlılıkları gösterebilir: Sunu; İş mantığı; ve verileri.  
   
     Kullanarak aynı anda katman diyagramına ve yeni bir Visual Studio çözümü oluşturabilirsiniz **yeni UML veya katman diyagramı** komutunu **mimarisi** menüsü.  
   
@@ -83,7 +80,7 @@ Modelleri geliştirme projesindeki etkili bir şekilde kullanmak için ekip üye
   
    1. Her katmanın çözümde mimari modelleme projesine ekleyin. Çözüm Gezgini'nde çözüm düğümüne sağ tıklayın, fareyle **Ekle**ve ardından **mevcut proje**. Tek bir modelleme projesi artık her bir çözümden erişilebilir: Mimari proje ve her katman için geliştirme projesi.  
   
-   2. Paylaşılan UML modelinde, her katman için paket oluşturma: Çözüm Gezgini'nde modelleme projesini seçin. UML Model Gezgini'nde model kök düğümünü sağ tıklatın, **Ekle**ve ardından **paket**.  
+   2. Paylaşılan UML modelinde, her katman için bir paket oluşturun: Çözüm Gezgini içinde modelleme projesini seçin. UML Model Gezgini'nde model kök düğümünü sağ tıklatın, **Ekle**ve ardından **paket**.  
   
        Her paket gereksinimleri ve ilgili katmanı tasarımını açıklayan UML diyagramları içerir.  
   
@@ -119,6 +116,3 @@ Modelleri geliştirme projesindeki etkili bir şekilde kullanmak için ekip üye
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sürüm denetimi altındaki modelleri ve diyagramları yönetme](../modeling/manage-models-and-diagrams-under-version-control.md)   
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)
-
-
-

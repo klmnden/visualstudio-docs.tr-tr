@@ -1,28 +1,23 @@
 ---
-title: 'Nasıl yapılır: oluşturma bir. Vsct dosya | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Oluşturma bir. Vsct dosya | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bbfdcf605a1c4346874ec222937a458225788151
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794507"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Nasıl yapılır: oluşturma bir. Vsct dosyası
+# <a name="how-to-create-a-vsct-file"></a>Nasıl yapılır: .Vsct Dosyası Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bir XML tabanlı Visual Studio komut tablosu (.vsct) yapılandırma dosyası oluşturmanın birkaç yolu vardır.  
@@ -102,7 +97,6 @@ Bir XML tabanlı Visual Studio komut tablosu (.vsct) yapılandırma dosyası olu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yazma. Vsct dosyaları](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Visual Studio komut tablosu (. Vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Ctc dosyası](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosyası](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [Nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Ctc dosyası](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [Nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Cto dosyası](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA1822: Üyeleri statik olarak işaretleyin | Microsoft Docs'
-ms.custom: ''
+title: 'CA1822: Üyeleri statik olarak işaretleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cac22ddf4d1f0b61ae176649d562306a4343df7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774356"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: Üyeleri statik olarak işaretleyin
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Üyeleri static olarak işaretleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1822: üyeleri statik olarak işaretlemek](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) docs.microsoft.com'da.  
+Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1822: Üyeleri statik olarak işaretlemek](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) docs.microsoft.com'da.  
   
 |||  
 |-|-|  
@@ -54,7 +49,6 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1822: üyeleri stati
 ## <a name="related-rules"></a>İlgili kuralları  
  [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: Örneklendirilmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812: Örneklenmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
  [CA1804: Kullanılmayan yerel öğeleri kaldırın](../code-quality/ca1804-remove-unused-locals.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'DA0502: Maksimum CPU kullanımının profili oluşturuluyor işlem tarafından | Microsoft Docs'
-ms.custom: ''
+title: 'DA0502: Profili oluşturulan işlemin maksimum CPU kullanımının | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0502
 - vs.performance.DA0502
@@ -17,15 +12,15 @@ ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dd2665e9b8055812678fc1a17c0b9df0f0405e42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a47a9c5964ccf15d2c609233eb600f39bc3ad2d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787361"
 ---
-# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: İşlemin maksimum CPU kullanımının profili oluşturuluyor
+# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Profil oluşturulan işlem tarafından en fazla CPU kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0502 |  
@@ -41,6 +36,3 @@ Kural Kimliği | DA0502 |
   
 ## <a name="how-to-use-the-rule-data"></a>Kural verileri kullanma  
  Kural değeri, farklı sürümlerin performans veya programın yapıları karşılaştırmak veya farklı bir profil oluşturma senaryoları altında uygulama performansını anlamanın kullanın.
-
-
-

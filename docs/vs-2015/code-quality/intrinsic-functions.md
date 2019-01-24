@@ -1,14 +1,9 @@
 ---
 title: İç işlevler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _String_length_
 - _Param_
@@ -20,20 +15,20 @@ ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 7258092b79ca0c10079a986e2a80b34c25660054
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788114"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759442"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ ifade olabilir — örneğin, ++,--ve işlev çağrıları bu bağlamda tümüne sahip yan etkiler.  SAL ancak, bazı işlev benzeri nesnelerin ve SAL ifadelerde kullanılabilir ayrılmış bazı semboller sağlar. Bunlar olarak adlandırılır *iç işlevleri*.  
   
-## <a name="general-purpose"></a>Genel amaçlı  
+## <a name="general-purpose"></a>Genel Amaçlı  
  Aşağıdaki instrinsic işlevi ek açıklamalar için SAL genel yardımcı programını sağlar.  
   
 |Ek Açıklama|Açıklama|  
@@ -63,6 +58,3 @@ SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ i
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [Açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
-
-
-

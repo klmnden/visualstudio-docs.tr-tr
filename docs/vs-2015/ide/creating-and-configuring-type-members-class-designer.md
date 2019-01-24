@@ -1,14 +1,9 @@
 ---
 title: Tür üyeleri (Sınıf Tasarımcısı) oluşturma ve yapılandırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,20 +29,20 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795309"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tür Üyeleri Oluşturma ve Yapılandırma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma ekleyebileceğiniz **sınıf ayrıntıları** penceresi:  
   
-|**Türü**|**İçerebileceği üyeler**|  
+|**Tür**|**İçerebileceği üyeler**|  
 |--------------|--------------------------------|  
 |örneği|yöntem, özellik (C# ve Visual Basic için), alan, olay (C# ve Visual Basic için), oluşturucu (yöntem), yıkıcı (yöntem), sabit|  
 |Enum|üye|  
@@ -64,11 +59,11 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
 |Görev|Destekleyici İçerik|  
 |----------|------------------------|  
-|**Kullanmaya başlayın:** oluşturun ve tür üyeleri'ı yapılandırmadan önce sınıf ayrıntıları penceresini açmalısınız.|-   [Sınıf ayrıntıları penceresini açma](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Sınıf ayrıntıları kullanım notları](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Salt okunur bilgileri görüntüleme](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
-|**Oluşturma ve tür üyelerini değiştirme:** yeni üyeler oluşturabilir, üyeleri değiştirebilir ve sınıf ayrıntıları penceresini kullanarak bir yönteme parametre ekleyin.|-   [Üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Tür üyelerini değiştirme](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Yöntemlere parametreler ekleme](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
+|**Kullanmaya başlayın:** Oluşturma ve tür üyeleri'ı yapılandırmadan önce sınıf ayrıntıları penceresini açmalısınız.|-   [Sınıf ayrıntıları penceresini açma](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Sınıf ayrıntıları kullanım notları](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Salt okunur bilgileri görüntüleme](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
+|**Oluşturma ve tür üyelerini değiştirme:** Yeni üyeler oluşturabilir, üyeleri değiştirebilir ve sınıf ayrıntıları penceresini kullanarak bir yönteme parametre ekleyin.|-   [Üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Tür üyelerini değiştirme](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Yöntemlere parametreler ekleme](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
 ##  <a name="OpenClassDetails"></a> Sınıf ayrıntıları penceresini açma  
- Varsayılan olarak, yeni bir sınıf diyagramı açtığınızda sınıf Ayrıntıları penceresi otomatik olarak görünür. (bkz [nasıl yapılır: sınıf diyagramlarına ekleme (Sınıf Tasarımcısı) projeleri](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Ayrıca, aşağıdaki yollarla, Sınıf Ayrıntıları penceresini doğrudan da açabilirsiniz.  
+ Varsayılan olarak, yeni bir sınıf diyagramı açtığınızda sınıf Ayrıntıları penceresi otomatik olarak görünür. (bkz [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Ayrıca, aşağıdaki yollarla, Sınıf Ayrıntıları penceresini doğrudan da açabilirsiniz.  
   
 #### <a name="to-open-the-class-details-window"></a>Sınıf Ayrıntıları penceresini açmak için  
   
@@ -133,10 +128,10 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
 4.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
   
-     **Not:** üye oluşturmak için klavye kısayollarını kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
+     **Not:** Üye oluşturmak için klavye kısayollarını da kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ##  <a name="ModifyTypeMembers"></a> Tür üyelerini değiştirme  
- Sınıf Tasarımcısı, diyagram görüntülenen türlerin üyelerinde değişiklik yapmanıza olanak sağlar. Sınıf diyagramında görüntülenen ve salt okunur olmayan her türün üyelerini değiştirebilirsiniz. (Bkz [(Sınıf Tasarımcısı) salt okunur bilgileri görüntüleme](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Tür üyelerini tasarım yüzeyinde, Özellikler penceresinde ve Sınıf Ayrıntıları penceresinde yerinde düzenleme yaparak değiştirirsiniz.  
+ Sınıf Tasarımcısı, diyagram görüntülenen türlerin üyelerinde değişiklik yapmanıza olanak sağlar. Sınıf diyagramında görüntülenen ve salt okunur olmayan her türün üyelerini değiştirebilirsiniz. (Bkz [(Sınıf Tasarımcısı) salt okunur bilgileri görüntüleme](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Tür üyelerini tasarım yüzeyinde, Özellikler penceresinde ve Sınıf Ayrıntıları penceresinde yerinde düzenleme yaparak değiştirirsiniz.  
   
  Sınıf Ayrıntıları penceresinde görüntülenen tüm üyeler sınıf diyagramındaki türlerin üyelerini temsil eder. Dört üye türü vardır: yöntemler, özellikler, alanlar ve olaylar.  
   
@@ -200,7 +195,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
    Parametre adını işaret eden görüntüler parametrenin adını **adı** sütunu adın tamamını görüntüleyemeyecek kadar darsa.  
   
-- **Türü**  
+- **Tür**  
   
    **Parametre türü** hücresi geçerli projede veya başvurulan projelerde kullanılabilen tüm türlerin listesinden seçim yapmanıza izin IntelliSense özelliğini kullanır.  
   
@@ -218,7 +213,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
   **Özellikler penceresindeki parametre özellikleri**  
   
-  Özellikler penceresi sınıf Ayrıntıları penceresinde görüntülenen parametre özelliklerinin görüntüler: **adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).  
+  Özellikler penceresi sınıf Ayrıntıları penceresinde görüntülenen parametre özelliklerinin görüntüler: **Adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).  
   
 > [!NOTE]
 >  Bir temsilciye parametre eklemek için bkz [üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,7 +263,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
  Bir kaç özel durum dışında, Sınıf Ayrıntıları penceresindeki tüm hücreler düzenlenebilir:  
   
-- Türün tamamı salt okunur olduğunda, örneğin başvurulan bir derlemede yer alıyor (bkz [salt okunur bilgilerini görüntüleme (Sınıf Tasarımcısı)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sınıf Tasarımcısı'nda şekli seçtiğinizde, Sınıf Ayrıntıları penceresi ilgili ayrıntıları salt okunur halde görüntüler.  
+- Türün tamamı salt okunur olduğunda, örneğin başvurulan bir derlemede yer alıyor (bkz [salt okunur bilgilerini görüntüleme (Sınıf Tasarımcısı)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sınıf Tasarımcısı'nda şekli seçtiğinizde, Sınıf Ayrıntıları penceresi ilgili ayrıntıları salt okunur halde görüntüler.  
   
 - Dizin oluşturucular için, ad bilgisi salt okunur ve geri kalanı (tür, değiştirici, özet) düzenlenebilir özelliktedir.  
   

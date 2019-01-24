@@ -1,28 +1,23 @@
 ---
 title: 'İzlenecek yol: Akıllı etiketler görüntüleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783361"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>İzlenecek yol: Akıllı etiketler görüntüleme
-Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [izlenecek yol: ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [izlenecek yol: Ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Akıllı etiketler, bir dizi eylemi gösterecek şekilde genişletmek metni etiketlerdir. Örneğin, bir Visual Basic veya Visual C# projesinde bir değişken adı gibi bir tanımlayıcıyı yeniden adlandırdığınızda Word'ün altında kırmızı bir çizgi görünür. Alt çizginin işaretçiyi bir düğme imlecini görüntülenir. Düğmeye tıklarsanız, önerilen eylem, örneğin, görüntülenir **IsRead yeniden adlandırmak için IsReady**. Eylem tıklarsanız, başvurularını **IsRead** projede yeniden adlandırılır **IsReady**.  
   
@@ -31,7 +26,7 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
 > [!NOTE]
 >  Benzer şekilde diğer türlerdeki etiketler uygulanabilir.  
   
- Aşağıdaki örneklerde, geçerli sözcüğü görüntülenen akıllı etiket oluşturma işlemi gösterilmektedir ve iki sahip önerilen eylemler: **büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
+ Aşağıdaki örneklerde, iki önerilen eylemleri geçerli kelimenin görünür ve bir akıllı etiket oluşturma işlemi gösterilmektedir: **Büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -185,7 +180,7 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
   
      Bir düğme imlecini görüntülenmesi gerekir.  
   
-5.  Düğmeye tıkladığınızda, iki eylemleri görüntülenecek önerilen: **büyük harfe Dönüştür** ve **küçük harfe Dönüştür**. İlk eylem tıklarsanız, geçerli kelimenin tüm metni büyük harfe dönüştürülmelidir. İkinci eylem tıklarsanız, bütün metni küçük harflere dönüştürülmelidir.  
+5.  Düğmeye tıkladığınızda, iki önerilen eylemleri görüntülenmesi gerekir: **Büyük harfe Dönüştür** ve **küçük harfe Dönüştür**. İlk eylem tıklarsanız, geçerli kelimenin tüm metni büyük harfe dönüştürülmelidir. İkinci eylem tıklarsanız, bütün metni küçük harflere dönüştürülmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

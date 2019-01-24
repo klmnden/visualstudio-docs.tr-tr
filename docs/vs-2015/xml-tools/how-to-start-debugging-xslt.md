@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: XSLT hatalarını ayıklamaya başlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: XSLT hata ayıklamayı Başlat | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8358335a-fcb0-45e0-a37e-45b43e49ec0a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 22a2ad1a37b67b2ac2120bfef9975e2a780d737f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771188"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Nasıl yapılır: XSLT hatalarını ayıklamaya başlama
+# <a name="how-to-start-debugging-xslt"></a>Nasıl yapılır: XSLT hata ayıklamayı Başlat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XSLT hata ayıklayıcı bir XSLT stil sayfası veya XSLT uygulamanın hatalarını ayıklamak için kullanılabilir. Hata ayıklama sırasında içine Adımlama, üzerinden Adımlama veya kodların dışına Adımlama aynı anda bir satır kod yürütebilir. XSLT hata ayıklayıcının bir Visual Studio olduğu gibi aynı hata ayıklayıcıları kodu Adımlama işlevselliği kullanmak için komutlar bulunmaktadır. XSLT hata ayıklayıcı, hata ayıklamayı başlattıktan sonra giriş belge ve XSLT çıkış göstermek için windows açılır.  
@@ -93,6 +88,5 @@ namespace ConsoleApplication
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Kod Adımlamaya genel bakış](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
-
+ [İzlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
+ [Kod Adımlamaya genel bakış](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

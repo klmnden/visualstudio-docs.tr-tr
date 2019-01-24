@@ -1,14 +1,9 @@
 ---
 title: Profil oluşturma HPC (yüksek performanslı hesaplama) kümelerinde | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802320"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,17 +46,17 @@ ms.locfileid: "51809164"
   
 2.  Ayrı bir komut istemlerinde aşağıdaki komutları yazın:  
   
-    1.  `clusrun /all /scheduler:` *% Baş ayıklaması FxPath %* `/q /norestart`  
+    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *Baş düğüm %* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
     3.  `clusrun /all /scheduler:` *% Baş ayıklaması ProfilerPath %* `/q /norestart`  
   
 |||  
 |-|-|  
 |*%HeadNode%*|Küme baş düğümü adı.|  
-|*%FxPath%*|Yolu [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] yükleyici. Üzerinde [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] yolu yükleme medyası: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Üzerinde [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] yolu yükleme medyası: tek başına Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Yolu [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] yükleyici. Üzerinde [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] yükleme medyasında yolu: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Üzerinde [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] yükleme medyasında yolu: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profil oluşturma  
  Profil oluşturma oturumunu, HPC Kümesi ve hedef bilgileri belirtmek için HPC performans Sihirbazı'nı kullanarak yapılandırın. Performans oturumu özellik sayfaları'nda ek seçenekler ayarlayabilirsiniz. Profil oluşturma araçları, otomatik olarak gerekli hedef ikili dosyaları dağıttıktan ve profil oluşturucu ve HPC uygulaması başlatın.  
@@ -155,6 +150,3 @@ ms.locfileid: "51809164"
 |**Profil öncesi betik bağımsız değişkenleri**|Ön profili betiğe geçirilecek bağımsız değişkenleri belirtir.|  
 |**Sonrası komut dosyası profil**|Profil oluşturma oturumu sona erdikten sonra yerel geliştirme bilgisayarınızda çalıştırılacak bir komut dosyası yolu ve dosya adını belirtir.|  
 |**Profil sonrası betik bağımsız değişkenleri**|Sonrası profili betiğe geçirilecek bağımsız değişkenleri belirtir.|
-
-
-

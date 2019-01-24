@@ -1,26 +1,21 @@
 ---
 title: Yapılar ve birleşimler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab670d64f82f76170e83ff75a52d30a3bf4eae5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f882eae12e700fe86ab747cc7ffbe3b5744298af
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758992"
 ---
 # <a name="structures-and-unions"></a>Yapılar ve Birleşimler
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -198,10 +193,9 @@ Yapılar ve birleşimler hata ayıklama Visual Studio SDK'sında aşağıda veri
 ## <a name="requirements"></a>Gereksinimler  
  Başlık: msdbg.h, sh.h veya ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

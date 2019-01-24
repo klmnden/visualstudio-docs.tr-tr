@@ -1,14 +1,9 @@
 ---
 title: ClickOnce güvenliği ve dağıtımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753931"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ ms.locfileid: "49898180"
  Çekirdek [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım mimarisi, iki XML bildirim dosyaları dayanır: uygulama bildirimi ve bir dağıtım bildirimi. Dosyaları, ClickOnce uygulamalarının gelen yüklendiği, nasıl güncelleştirilir ve ne zaman güncelleştirileceği tanımlamak için kullanılır.  
   
 ### <a name="publishing-clickonce-applications"></a>ClickOnce Uygulamalarını Yayımlama  
- Uygulama bildirimi uygulamanın kendisinin açıklar. Bu derlemeler, bağımlılıklar ve uygulama, gerekli izinlere ve burada güncelleştirmelerinin kullanılabilir olacağını konumun oluşturan dosyaları içerir. Uygulama geliştiricisi Yayımlama Sihirbazı'nda Visual Studio ya da bildirim oluşturma ve düzenleme aracı (Mage.exe) kullanarak uygulama bildirimini Yazar [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Daha fazla bilgi için [nasıl yapılır: yayımlama sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ Uygulama bildirimi uygulamanın kendisinin açıklar. Bu derlemeler, bağımlılıklar ve uygulama, gerekli izinlere ve burada güncelleştirmelerinin kullanılabilir olacağını konumun oluşturan dosyaları içerir. Uygulama geliştiricisi Yayımlama Sihirbazı'nda Visual Studio ya da bildirim oluşturma ve düzenleme aracı (Mage.exe) kullanarak uygulama bildirimini Yazar [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
  Dağıtım bildirimi, uygulamanın nasıl dağıtılacağını açıklar. Bu, uygulama bildiriminin konumu ve istemcilerin çalışması gereken uygulama sürümünü içerir.  
   
@@ -85,7 +80,7 @@ ms.locfileid: "49898180"
 > [!NOTE]
 >  Uygulamanın eklenmesini önlemek mümkündür **Başlat** menü ve **Program Ekle veya Kaldır** grup, etkin bir Web uygulaması gibi davranır kolaylaştırır. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
-### <a name="updating-clickonce-applications"></a>ClickOnce uygulamaları güncelleştirme  
+### <a name="updating-clickonce-applications"></a>Updating ClickOnce Applications  
  Uygulama geliştiricileri, uygulamanın güncelleştirilmiş sürümünü oluşturduğunuzda, bunlar yeni bir uygulama bildirimi oluşturmak ve bir dağıtım konuma dosyaları kopyalayın — genellikle bir kardeş klasör özgün uygulamanın dağıtım klasörü. Yönetici, dağıtım bildirimi, uygulamanın yeni sürümü konumunu işaret edecek şekilde güncelleştirir.  
   
 > [!NOTE]
@@ -124,6 +119,3 @@ ms.locfileid: "49898180"
  [ClickOnce ile COM bileşenleri dağıtma](../deployment/deploying-com-components-with-clickonce.md)   
  [Komut satırından ClickOnce uygulamalarını derleme](../deployment/building-clickonce-applications-from-the-command-line.md)   
  [System.Deployment.Application Kullanan ClickOnce Uygulamalarında Hata Ayıklama](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
-
-
-

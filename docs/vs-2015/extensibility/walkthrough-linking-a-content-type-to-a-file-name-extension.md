@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: bir içerik türü için bir dosya adı uzantısına bağlama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788974"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantılarını kullanarak bağlamak için bir dosya adı uzantısı. Bazı durumlarda, dosya adı uzantısı zaten bir dil hizmeti tarafından tanımlandı; Bununla birlikte, MEF ile kullanmak için yine de bunu bir içerik türüyle bağlamanız gerekir.  
@@ -97,7 +92,7 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>İçerik türü Düzenleyicisi vermeyi ekleme  
   
-1.  Düzenleyici uzantısı oluşturun. Örneğin, açıklanan kenar boşluğu glif uzantısı kullanabilirsiniz [izlenecek yol: dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Düzenleyici uzantısı oluşturun. Örneğin, açıklanan kenar boşluğu glif uzantısı kullanabilirsiniz [izlenecek yol: Bir dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Bu yordamda tanımlanan sınıfı ekleyin.  
   
@@ -110,4 +105,3 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)
-

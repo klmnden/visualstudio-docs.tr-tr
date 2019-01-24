@@ -1,11 +1,8 @@
 ---
 title: Visual Studio iş akışı Windows (eski) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, designer windows
@@ -13,13 +10,13 @@ ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801243"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio İş Akışı Pencereleri (Eski)
 Eski [!INCLUDE[wfd2](../includes/wfd2-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)] kullanılabilir hedef [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Eski Tasarımcı, bir iş akışı oluşturmak için kullanabileceğiniz bir Görsel Tasarımcı ' dir. Etkinlikler sürükleyebilirsiniz **araç kutusu** tasarım yüzeyine ve ardından var. yapılandırın. Olarak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyicisi penceresinde, tarafından kullanılan ana pencere alanını kaplar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] düzenleyici pencereleri. İş akışının adı görüntülenen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] penceresinin başlık çubuğu.  

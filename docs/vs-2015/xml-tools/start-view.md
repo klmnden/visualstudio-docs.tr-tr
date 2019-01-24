@@ -1,25 +1,20 @@
 ---
 title: Başlangıç görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798283"
 ---
 # <a name="start-view"></a>Başlangıç Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ Başlangıç görünümü, XML Şeması (XSD) Tasarımcısı için başlatma nok
  [Graf görünümü](../xml-tools/graph-view.md)   
  [İçerik modeli görünümü](../xml-tools/content-model-view.md)   
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)
-
-
-

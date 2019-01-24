@@ -1,14 +1,9 @@
 ---
 title: Düzenle ve devam et iletişim kutusu (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.failed.commit
 - vs.debug.ENC.failed.build
@@ -24,13 +19,13 @@ ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce41b3ba317fbdc05db5c81cef2720748b0d9e16
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d7ea0ea688ae9702c7107b33ff87437ebd3656e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779820"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803300"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Düzenle ve devam et iletişim kutusu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Düzenle ve devam yerel koda yapılan değişiklikleri uygulanamadı. Bu geçici
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
-
-
-

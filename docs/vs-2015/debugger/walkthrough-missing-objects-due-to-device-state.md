@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795903"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>İzlenecek Yol: Cihaz Durumu Nedeniyle Nesnelerin Eksikliği
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nedeni eksik bir nesne incelemek için grafik Tanılama, cihaz durumu yanlış.  
@@ -113,6 +108,3 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../inc
    İşleme sorunun nedenini yapılandırılmış derinliği işlevi olabilir belirledikten sonra burada derinliği işlevi yanlış ayarlanmış bulmak için kod bilginizi birlikte bu bilgileri kullanın ve ardından sorunu gidermek. Kodla alışkın değilseniz, sorun için hata ayıkladığınız sırada topladığınız ipuçları kullanarak arayabilir — Örneğin, temel **derinlik kalıbı açıklaması** Bu senaryoda, kod sözcükleri arayabilir. "ayrıntılı" veya "Daha büyük" gibi. Kod giderdikten sonra yeniden oluşturmak ve uygulamayı yeniden işleme sorunun çözüldüğünü bulmak için çalıştırın:  
   
    ![Sorun düzeltildikten sonra uygulama](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

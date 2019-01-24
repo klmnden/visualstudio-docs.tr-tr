@@ -1,25 +1,20 @@
 ---
-title: '7. adım: Çarpma ve bölme problemleri ekleme | Microsoft Docs'
-ms.custom: ''
+title: '7. Adım: Çarpma ve bölme problemleri ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0c0c2b069ebb75cbe4547528317544172b1d7ae2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a558372c69aaf5aeb76685cae3eae4f30a6b9737
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795274"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7. Adım: Çarpma ve Bölme Problemleri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +54,6 @@ Dört Sorulu matematik sınavı
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 8: testi özelleştirme](../ide/step-8-customize-the-quiz.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 8: Testi özelleştirme](../ide/step-8-customize-the-quiz.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [6. adım: çıkarma problemi ekleme](../ide/step-6-add-a-subtraction-problem.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [adım 6: Çıkarma problemi ekleme](../ide/step-6-add-a-subtraction-problem.md).

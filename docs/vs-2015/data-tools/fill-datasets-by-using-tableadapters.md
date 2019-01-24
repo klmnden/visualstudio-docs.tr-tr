@@ -1,12 +1,9 @@
 ---
 title: TableAdapters'ı kullanarak veri kümelerini doldurma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790090"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters'ı kullanarak veri kümelerini doldurma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +60,7 @@ Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>İlişkili DataTable şeması  
- Bir TableAdapter oluşturduğunuzda, ilk sorgu kullanın veya saklı yordamı TableAdapter şemasını tanımlamak için ilişkili zaman <xref:System.Data.DataTable>. Bu başlangıç sorgusunu çalıştırın veya saklı yordamı TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi (tablosu doldurulur ilişkili <xref:System.Data.DataTable>). TableAdapter bağdaştırıcısının ana sorgusunda yapılan değişiklikler ilişkili veri tablosunun şemada yansıtılır. Örneğin, ana sorgudan bir sütun kaldırılması da sütunu ilişkili veri tablosundan kaldırır. TableAdapter üzerindeki ek sorgular ana sorguda bulunmayan sütunları döndüren SQL deyimleri kullanıyorsanız, Tasarımcı ana sorgu ve ek sorgular arasındaki sütun değişikliklerini eşitlemeye çalışır. Daha fazla bilgi için [nasıl yapılır: Edit TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Bir TableAdapter oluşturduğunuzda, ilk sorgu kullanın veya saklı yordamı TableAdapter şemasını tanımlamak için ilişkili zaman <xref:System.Data.DataTable>. Bu başlangıç sorgusunu çalıştırın veya saklı yordamı TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi (tablosu doldurulur ilişkili <xref:System.Data.DataTable>). TableAdapter bağdaştırıcısının ana sorgusunda yapılan değişiklikler ilişkili veri tablosunun şemada yansıtılır. Örneğin, ana sorgudan bir sütun kaldırılması da sütunu ilişkili veri tablosundan kaldırır. TableAdapter üzerindeki ek sorgular ana sorguda bulunmayan sütunları döndüren SQL deyimleri kullanıyorsanız, Tasarımcı ana sorgu ve ek sorgular arasındaki sütun değişikliklerini eşitlemeye çalışır. Daha fazla bilgi için [nasıl yapılır: TableAdapters düzenleme](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>TableAdapter güncelleştirme komutları  
  TableAdapter bağdaştırıcısının güncelleştirme işlevleri TableAdapter Sihirbazı'nı ana sorgusunda kullanılabilir ne kadar bilgi olduğuna bağlıdır. Örneğin, değerleri birden çok tablodan (JOIN), skalar değerden veya görünümden ya da toplu işlevlerin sonuçlarından alacak şekilde yapılandırılan TableAdapter bağdaştırıcıları, başlangıçta güncelleştirmeleri temel alınan veritabanına geri gönderebilme özelliğiyle oluşturulmaz. Ancak INSERT, UPDATE ve DELETE komutlarını el ile yapılandırabilirsiniz **özellikleri** penceresi.  
@@ -117,4 +114,3 @@ Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)
-

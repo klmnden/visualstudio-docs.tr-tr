@@ -1,11 +1,8 @@
 ---
 title: Eski etkinlik Tasarımcısını kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790549"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Eski Etkinlik Tasarımcısını Kullanma
 Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski Tasarımcı hedeflenirken kullanın [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -44,7 +41,7 @@ Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[
   
 3. Bir etkinlik adı yazın veya varsayılan adı bırakın ve ardından **Ekle**.  
   
-   Yeni bir proje türünde oluşturarak özel etkinlikler kümesi oluşturabilirsiniz **iş akışı etkinlik Kitaplığı**. Bu proje türü hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir iş akışı etkinlik kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Yeni bir proje türünde oluşturarak özel etkinlikler kümesi oluşturabilirsiniz **iş akışı etkinlik Kitaplığı**. Bu proje türü hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir iş akışı etkinlik kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Bir etkinlik yapılandırma  
  Etkinlik Tasarımcısı etkin olsa da, aşağıdaki tabloda listelenen özellikleri yapılandırmak için özellik tarayıcısı kullanabilirsiniz.  
@@ -64,5 +61,5 @@ Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[
  [Özel etkinlik oluşturma](http://go.microsoft.com/fwlink?LinkID=65021)   
  [Eski iş akışı etkinlikleri](../workflow-designer/legacy-workflow-activities.md)   
  [Özel etkinlikler örnekleri](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Nasıl yapılır: bir iş akışı etkinlik kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Nasıl yapılır: Bir iş akışı etkinlik kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
  [Eski İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-legacy-workflow-designer.md)

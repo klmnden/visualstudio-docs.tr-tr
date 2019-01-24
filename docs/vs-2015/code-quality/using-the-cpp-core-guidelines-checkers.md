@@ -1,24 +1,22 @@
 ---
 title: C++ temel yönergeleri denetleyicilerini kullanma | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791229"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>C++ temel yönergeleri denetleyicilerini kullanma
+# <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcılar tarafından oluşturulan c++ kodlama hakkında en iyi taşınabilir bir kümesidir.  Visual Studio artık ek kuralları için kod çözümleme araçları, C++ temel yönergeleri ile uyumluluk için kodunuzu denetlemek ve geliştirmeleri önermek için oluşturduğunuz eklenti paketlerinin destekler.  
@@ -81,32 +79,29 @@ int main()
   
  Bu örnek, C++ temel denetimi kuralları bulabilirsiniz uyarıları birkaçını göstermektedir:  
   
-- C26494 olan kural Type.5: bir nesneyi her zaman başlatın.  
+- C26494 kuralı Type.5 gösterilmiştir: Bir nesneyi her zaman başlatın.  
   
-- C26485 olan kural Bounds.3: hiçbir dizi işaretçiye azalma gerçekleştirmeyin.  
+- C26485 kuralı Bounds.3 gösterilmiştir: Hiçbir dizi işaretçiye bozunma gerçekleştirmeyin.  
   
-- C26481 olan kural Bounds.1: işaretçi aritmetiği kullanmayın. Bunun yerine `span` kullanın.  
+- C26481 kuralı Bounds.1 gösterilmiştir: İşaretçi aritmetiği kullanmayın. Bunun yerine `span` kullanın.  
   
   C++ temel denetimi Kod Analizi rulesets yüklediyseniz ve bu kodu derlerken etkin ilk iki uyarıları çıktısı alınır, ancak üçüncü bastırılır. Örnek kod derleme çıktısı şöyledir:  
   
-  **1 >---derleme başladı: Proje: CoreCheckExample, yapılandırma: hata ayıklama Win32--**  
+  **1 >---derleme başlatıldı: Proje: CoreCheckExample, yapılandırma: Win32 hata ayıklama--**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P ->**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P ->**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (tam PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): C26494 Uyarı: 'arr' değişkendir uninitializ**  
+**ckexample\corecheckexample.cpp(6): C26494 Uyarı: 'Arr' uninitializ değişkendir**  
 **Ed. her zaman bir nesneyi başlatır. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **KİMLİĞİ 620421 =)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): C26485 Uyarı: 'arr' ifadesi: diziden**  
+**ckexample\corecheckexample.cpp(7): C26485 Uyarı: 'Arr' ifadesi: Diziden**  
  **işaretçiye bozunma gerçekleştirmeyin. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**=== Yapı: 1 başarılı, 0, 0 güncel, başarısız oldu 0 atladı ===** C++ temel yönergeleri bulunduğundan daha iyi ve daha güvenli kod yazmanıza yardımcı olacak. Ancak, bir kuralı ya da profili burada uygulanan olmamalıdır örneği varsa, doğrudan kodunda gizlemek kolaydır. Kullanabileceğiniz `gsl::suppress` C++ temel denetimi algılama ve bir kural aşağıdaki kod bloğu, herhangi bir ihlali raporlama tutmak için özniteliği. Belirli kurallar bastırmak için ayrı deyimler işaretleyebilirsiniz. Yazarak bile tüm sınırların profil gizleyebilirsiniz `[[gsl::suppress(bounds)]]` bir özel kural numarası dahil olmak üzere olmadan.  
+**=== Derleme: 1 başarılı, 0 başarısız, 0 güncel, 0 atladı ===** C++ temel yönergeleri bulunduğundan daha iyi ve daha güvenli kod yazmanıza yardımcı olacak. Ancak, bir kuralı ya da profili burada uygulanan olmamalıdır örneği varsa, doğrudan kodunda gizlemek kolaydır. Kullanabileceğiniz `gsl::suppress` C++ temel denetimi algılama ve bir kural aşağıdaki kod bloğu, herhangi bir ihlali raporlama tutmak için özniteliği. Belirli kurallar bastırmak için ayrı deyimler işaretleyebilirsiniz. Yazarak bile tüm sınırların profil gizleyebilirsiniz `[[gsl::suppress(bounds)]]` bir özel kural numarası dahil olmak üzere olmadan.  
   
 ## <a name="use-the-guideline-support-library"></a>Kılavuzu destek kitaplığını kullanma  
  Microsoft.CppCoreCheck NuGet paketini de Microsoft'un uygulamasına yönerge desteği kitaplığı (GSL) içeren bir paketi yükler. GSL tek başına form içinde de kullanılabilir [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Bu kitaplık, temel yönergeleri takip etmek istiyorsanız yararlıdır. GSL hataya yapıları ile daha güvenli alternatifler değiştirmenizi sağlayan tanımlarını içerir. Örneğin, değiştirebileceğiniz bir `T*, length` parametrelerle çiftinin `span<T>` türü. GSL olan açık kaynaklı, göz atın istiyorsanız, kitaplık kaynaklarını açıklama satırı yapın veya katkıda bulunan, bu nedenle proje adresinde bulunabilir [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

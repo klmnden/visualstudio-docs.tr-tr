@@ -1,14 +1,9 @@
 ---
 title: Birim testi kod | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2dfde0684e721b1ed4834d23fb9fc56363f9fb0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782714"
 ---
 # <a name="unit-test-your-code"></a>Kodunuza Birim Testi Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +43,19 @@ Birim testleri, sınıfların yöntemlerinde mantık hataları aramak için hız
   
 |Görevler|İlişkili Konular|  
 |-----------|-----------------------|  
-|**Hızlı başlangıçlar ve izlenecek yollar:** birim kod örneklerini kullanarak Visual Studio'da testi gerçekleştirmeyi öğrenmek için aşağıdaki konuları kullanın.|-   [Yönetilen kod için birim testleri izlenecek yol: Oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Hızlı Başlangıç: Test güdümlü geliştirme ile Test Gezgini](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
-|**Test Gezgini ile birim testi:** Test Gezgini'nin daha üretken ve verimli birim testleri oluşturma nasıl yardımcı olabileceğini öğrenin.|-   [Birim testi temel bilgileri](../test/unit-test-basics.md)<br />-   [Bir birim testi projesi oluşturma](../test/create-a-unit-test-project.md)<br />-   [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)<br />-   [Üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)<br />-   [Visual Studio 2010'dan birim testlerini yükseltme](http://msdn.microsoft.com/en-us/9bb75856-f68a-4de2-a084-b08a947a1172)|  
+|**Hızlı başlangıçlar ve izlenecek yollar:** Birim kod örneklerini kullanarak Visual Studio'da testi gerçekleştirmeyi öğrenmek için aşağıdaki konulara bakın.|-   [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
+|**Test Gezgini ile birim testi:** Test Gezgini'nin daha üretken ve verimli birim testleri oluşturma nasıl yardımcı olabileceğini öğrenin.|-   [Birim testi temel bilgileri](../test/unit-test-basics.md)<br />-   [Bir birim testi projesi oluşturma](../test/create-a-unit-test-project.md)<br />-   [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)<br />-   [Üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)<br />-   [Visual Studio 2010'dan birim testlerini yükseltme](http://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|  
 |**Birim testleri yönetilen kodu:**|-   [Yönetilen kod için Microsoft birim testi çerçevesi ile .NET Framework için birim testleri yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|  
 |**Birim testleri C++ kodu**|-   [C++ için Microsoft birim testi çerçevesi ile C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|  
 |**Birim testlerini yalıtma**|-   [Microsoft Fakes ile Test edilen kodu yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)|  
-|**Birim testleriyle ne oranda proje kodunuzun edildiğini belirlemek için kod kapsamı kullanın:** kod kapsamı özelliği hakkında bilgi edinin [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] test araçları.|-   [Edildiğini belirlemek ne kadar kodun için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
-|**Birim testleriniz için yük testlerini kullanarak stres ve performans analizleri gerçekleştirin:** yük testi oluşturma ve birim testlerinizi buna ekleyerek uygulamanızdaki performans ve stres sorularınızın yardımcı ekleyin. **Not:** oluşturma ve yük testlerini kullanarak Visual Studio Enterprise gerekiyor.|-   [Yük testleri oluşturma ve düzenleme](http://msdn.microsoft.com/en-us/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Nasıl yapılır: bir yük testi senaryosu için Web performans testleri ve birim testleri ekleme](http://msdn.microsoft.com/en-us/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Nasıl yapılır: bir yük testi senaryosu Web testleri ve birim testleri Kaldır](http://msdn.microsoft.com/en-us/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
-|**Ayarlama ve kalite kapıları:** testleri kod kodun kalitesini sağlamaya yardımcı olmak için iade edilmeden önce çalışmaya zorlamak için kalite kapıları oluşturabilirsiniz.|-   [Ayarlama ve kalite kapıları](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
-|**Birim test türünü genişletin:** testlerinize Birim Test çerçevesinde bulunmayan olmayabilir işlevler ekleyebilirsiniz. Örneğin, bir testin normal kullanıcı olarak çalışıp çalışmayacağını belirten bir test özelliği ekleyebilirsiniz. Veya çerçeveyi, bir yönteme satır öznitelikleri eklemek ve bu satırda bulunan verileri testin içinde kullanmak üzere genişletebilirsiniz.|Birim testi çerçevesinin nasıl genişletileceğine örnek kod için aşağıdakilere bakın [Microsoft Web sitesine](http://go.microsoft.com/fwlink/?LinkId=185591).|  
-|**Test seçeneklerini belirleyin:** örneğin test sonuçlarının nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
+|**Birim testleriyle ne oranda proje kodunuzun edildiğini belirlemek için kod kapsamı kullanın:** Kod kapsamı özelliği hakkında bilgi edinin [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] test araçları.|-   [Edildiğini belirlemek ne kadar kodun için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
+|**Birim testleriniz için yük testlerini kullanarak stres ve performans analizleri gerçekleştirin:** Yük testi oluşturma ve performans yalıtmak ve stres sorularınızın gidermek için birim testleri ekleyin. **Not:**  Oluşturma ve yük testlerini kullanarak Visual Studio Enterprise'ı gerektirir.|-   [Yük testleri oluşturma ve düzenleme](http://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Nasıl Yapılır: Bir yük testi senaryosu için Web performans testleri ve birim testleri ekleme](http://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Nasıl Yapılır: Web testleri ve birim testleri yük testi senaryodan Kaldır](http://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
+|**Ayarlama ve kalite kapıları:** Testleri kod kodun kalitesini sağlamaya yardımcı olmak için iade edilmeden önce çalışmaya zorlamak için kalite kapıları oluşturabilirsiniz.|-   [Ayarlama ve kalite kapıları](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Birim test türünü genişletin:** Testlerinize Birim Test çerçevesinde bulunmayan olmayabilir işlevler ekleyebilirsiniz. Örneğin, bir testin normal kullanıcı olarak çalışıp çalışmayacağını belirten bir test özelliği ekleyebilirsiniz. Veya çerçeveyi, bir yönteme satır öznitelikleri eklemek ve bu satırda bulunan verileri testin içinde kullanmak üzere genişletebilirsiniz.|Birim testi çerçevesinin nasıl genişletileceğine örnek kod için aşağıdakilere bakın [Microsoft Web sitesine](http://go.microsoft.com/fwlink/?LinkId=185591).|  
+|**Test seçeneklerini belirleyin:** Örneğin, test sonuçlarının nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
- [Microsoft Test Yöneticisi'nde test sonuçlarını gözden geçirme](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
+ [Microsoft Test Yöneticisi'nde test sonuçlarını gözden geçirme](http://msdn.microsoft.com/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
   
  Test sonuçları ve nasıl görüntülendiği, kaydedildiği ve silindiği de dahil bunlarla çalışma yollarını açıklar.  
   
@@ -78,13 +73,13 @@ Birim testleri, sınıfların yöntemlerinde mantık hataları aramak için hız
 ## <a name="external-resources"></a>Dış kaynaklar  
   
 ### <a name="videos"></a>Videolar  
- [Kanal 9: XAML kullanılarak oluşturulan, Windows Store uygulamalarını test etme birim](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Kanal 9: Birim testi XAML kullanılarak oluşturulan, Windows Store uygulamaları](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Forumlar  
  [Visual Studio birim testi](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="guidance"></a>Kılavuz  
- [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: birim testi: iç testler](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: Birim testi: İç testler](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="reference"></a>Başvuru  
  [Birim testleri için içerik dizini](http://go.microsoft.com/fwlink/?LinkID=254719)  
@@ -92,6 +87,3 @@ Birim testleri, sınıfların yöntemlerinde mantık hataları aramak için hız
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod kalitesini geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)   
  [Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
-
-
-
