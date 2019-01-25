@@ -1,12 +1,9 @@
 ---
 title: Kullanıcı gereksinimlerini modelleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03f1fe9f2cb159e4a6d6db5ded46907b5944471e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758440"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın ihtiyaçlarını anlamanıza, tartışın ve visual Studio yardımcı sisteminizi hedeflerine elde etmelerine yardımcı oynadığı. Her biri farklı bir açısını Kullanıcıların ihtiyaçlarını üzerinde odaklanır. Bu diyagramları kümesi gereksinimleri modelidir. Video gösterimi için bkz: [iş etki alanı modelleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
+Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın ihtiyaçlarını anlamanıza, tartışın ve visual Studio yardımcı sisteminizi hedeflerine elde etmelerine yardımcı oynadığı. Her biri farklı bir açısını Kullanıcıların ihtiyaçlarını üzerinde odaklanır. Bu diyagramları kümesi gereksinimleri modelidir. Video gösterimi için bkz: [İş etki alanı modelleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Visual Studio'nun hangi sürümlerinin her model türünü desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -92,8 +89,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Nasıl oluşturulacağı hakkında daha ayrıntılı bilgi kullanım örnekleri|[UML Kullanım Durumu Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Kullanım örneği diyagramındaki öğeler|[UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|  
+|Nasıl oluşturulacağı hakkında daha ayrıntılı bilgi kullanım örnekleri|[UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Kullanım örneği diyagramındaki öğeler|[UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|  
 |Kullanım örneklerinden kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="RequirementsClasses"></a> Gereksinimlerini tanımlamak için kullanılan terimleri tanımlama  
@@ -137,11 +134,11 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Gereksinimler sınıflarını bulma hakkında daha ayrıntılı bilgi|[UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
-|Kavramsal sınıf diyagramındaki öğeler|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
+|Gereksinimler sınıflarını bulma hakkında daha ayrıntılı bilgi|[UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
+|Kavramsal sınıf diyagramındaki öğeler|[UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
 |Kavramsal sınıflardan kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
- Kavramsal bir sınıf diyagramında, bunu genellikle oklar gezinebilirliği ilişkilendirmeleri yerleştirmek kullanışlı değildir. Diyagram uygulaması göstermiyor olmasıdır. İlişkilendirmeleri gerçek nesneler arasındaki ilişkileri temsil eder. Aşağıdaki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı olmayan yönlü oklar varsayılan yap: [örnek: etki alanı UML modelleme özellikleri](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ Kavramsal bir sınıf diyagramında, bunu genellikle oklar gezinebilirliği ilişkilendirmeleri yerleştirmek kullanışlı değildir. Diyagram uygulaması göstermiyor olmasıdır. İlişkilendirmeleri gerçek nesneler arasındaki ilişkileri temsil eder. Aşağıdaki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı olmayan yönlü oklar varsayılan yap: [Örnek: Etki alanı UML modelleme özellikleri](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> İş kurallarını gösterme  
  Bir iş kuralı, belirli kullanım örneği ile ilişkili değil ve sistem genelinde gözlenmelidir bir gereksinimdir.  
@@ -160,8 +157,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Bulma ve statik iş kurallarını kaydetme hakkında daha ayrıntılı bilgi|[UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
-|Kavramsal sınıf diyagramındaki öğeler|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
+|Bulma ve statik iş kurallarını kaydetme hakkında daha ayrıntılı bilgi|[UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
+|Kavramsal sınıf diyagramındaki öğeler|[UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
 |İş kurallarının aynılarını kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan  
@@ -185,7 +182,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Hizmet gereksinimlerinin kalitesini kaydetme hakkında daha ayrıntılı bilgi|[Kalite hizmet gereksinimlerini tanımlama yönergeleri](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
+|Hizmet gereksinimlerinin kalitesini kaydetme hakkında daha ayrıntılı bilgi|[Kalite hizmet gereksinimlerini tanımlama yönergeleri](http://msdn.microsoft.com/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Kullanım örnekleri için ek belgelere ekleme|[Kullanım örneğini belgelere ve diyagramlara bağlama](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Hizmet gereksinimlerinin kalitesini için uyar kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
@@ -206,8 +203,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|İş iş akışları tanımlama hakkında daha fazla bilgi|[UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Bir etkinlik diyagramındaki öğeler|[UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|  
+|İş iş akışları tanımlama hakkında daha fazla bilgi|[UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Bir etkinlik diyagramındaki öğeler|[UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|  
 |Etkinlik diyagramları koddan geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Sequences"></a> Kullanıcılar ve sistem arasındaki etkileşimler gösteriliyor  
@@ -223,8 +220,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Etkileşimler tanımlama hakkında daha fazla bilgi|[UML Sıralı Diyagramlar: Yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Bir sıralı diyagram üzerindeki öğeleri|[UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|  
+|Etkileşimler tanımlama hakkında daha fazla bilgi|[UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Bir sıralı diyagram üzerindeki öğeleri|[UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|  
 |Sıralama diyagramları koddan geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>Tutarsızlıkları azaltmak için bir modeli kullanma  
@@ -248,10 +245,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)   
  [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)   
  [Örnek VS uzantısı: Etki alanı UML modelleme özellikleri](http://go.microsoft.com/fwlink/?LinkId=213849)   
- [Örnek VS uzantısı: Renkli UML öğeleri Sterotipe göre](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [Örnek VS uzantısı: Bağlantı UML öğelerini diyagramları, dosyalarına ve diğer öğeleri](http://go.microsoft.com/fwlink/?LinkID=213813)   
- [Örnek VS uzantısı: UML diyagramında şekilleri Hizala](http://go.microsoft.com/fwlink/?LinkID=213809)   
- [Video: iş etki alanı modelleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-
+ [Örnek VS uzantısı: Sterotipe göre renkli UML öğeleri](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Örnek VS uzantısı: Bağlantı diyagramları, dosyalarına ve diğer öğeleri UML öğeleri](http://go.microsoft.com/fwlink/?LinkID=213813)   
+ [Örnek VS uzantısı: Bir UML diyagramında şekilleri Hizala](http://go.microsoft.com/fwlink/?LinkID=213809)   
+ [Video: İş etki alanı modelleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)

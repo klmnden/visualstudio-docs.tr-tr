@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cb7f3e98f0860d05c879a81fb14f05142678baae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c419800a92f25ce4531c351d4131acf119633ccb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770278"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Hangi&#39;'teki Visual Studio 2015 SDK'sı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,12 +65,12 @@ Visual Studio 2017'den itibaren özel Proje ve öğe şablonları için tarama a
 > [!NOTE]
 >  Projelerinizi VS SDK'sı başvuru derlemelerini kullanmaya devam edebilirsiniz (altında bulunan \<Visual Studio yükleme konumu > \ VSSDK\VisualStudioIntegration\Common\Assemblies) ve mevcut genişletilebilirlik projeleri olması gerekmez NuGet paketlerini kullanacak şekilde yükseltildi.  Proje **başvuran / başvuru ekleme** VS SDK'sı başvuru bütünleştirilmiş kodlarını kullanan iletişim devam etmektedir.
 >
->  Mevcut projelerinizi NuGet kullanmak üzere değiştirmek istiyorsanız, [nasıl yapılır: Visual Studio 2015 Vspackages'a geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) genişletilebilirlik projeleri için NuGet paketlerini güncelleştirme bir bölümü vardır.
+>  Mevcut projelerinize NuGet kullanmak üzere değiştirmek istiyorsanız, [nasıl yapılır: VSPackage'ı Visual Studio 2015'e geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) genişletilebilirlik projeleri için NuGet paketlerini güncelleştirme bir bölümü vardır.
 
 ## <a name="light-bulbs"></a>Ampuller
  Uzantı kod yazmayı en heyecan verici yeni yollardan biriyle Roslyn proje tarafından sağlanır. Daha fazla bilgi için [Roslyn](https://github.com/dotnet/Roslyn).
 
- Ampuller VSSDK ile birlikte gelen yeni bir özelliktir. Visual Studio Düzenleyicisi'nde kullanılan simgeler, kod yeniden düzenleme işlemleri veya yerleşik kod çözümleyicileri tarafından tanımlanan sorunlar için düzeltmeler gösterecek şekilde genişletmek değildirler. Daha fazla bilgi için [izlenecek yol: ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
+ Ampuller VSSDK ile birlikte gelen yeni bir özelliktir. Visual Studio Düzenleyicisi'nde kullanılan simgeler, kod yeniden düzenleme işlemleri veya yerleşik kod çözümleyicileri tarafından tanımlanan sorunlar için düzeltmeler gösterecek şekilde genişletmek değildirler. Daha fazla bilgi için [izlenecek yol: Ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
 
 ## <a name="updated-user-experience-guidelines"></a>Güncelleştirilmiş kullanıcı deneyimi yönergeleri
  Visual Studio için yeni uzantıları veya özellikler tasarlama? Güncelleştirilmiş genişletilmiş kullanıma alıp [Visual Studio kullanıcı deneyimi yönergeleri](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Bölümünde bulabilirsiniz [renk belirteçleri](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [yazı tipi boyutlarını](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [iletişim düzeni belirtimleri](../extensibility/ux-guidelines/layout-for-visual-studio.md)ve yeni kullanıcı Arabirimi Visual Studio ile sorunsuz bir şekilde tümleştirmek için ihtiyacınız olan diğer Kılavuzlar.

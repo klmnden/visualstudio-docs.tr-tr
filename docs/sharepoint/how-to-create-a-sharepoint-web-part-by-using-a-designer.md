@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Tasarımcı kullanarak bir SharePoint Web Bölümü oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Tasarımcı kullanarak bir SharePoint Web Bölümü oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], adding
 - Web Parts [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55104f4e1728208c93dc80080a42059963e3c7a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a109ee84cc79596323dcdceff2ad86c4de15b0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858454"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870720"
 ---
-# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Nasıl Yapılır: Tasarımcı kullanarak bir SharePoint Web Bölümü oluşturma
+# <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Nasıl yapılır: Tasarımcı kullanarak bir SharePoint Web Bölümü oluşturma
   Bir web bölümü ekleyerek oluşturabileceğiniz bir **görsel Web Bölümü** öğesi herhangi bir SharePoint projesine. Bu, Visual Studio'da web bölümüne, denetimleri ile kod ekleyebileceğiniz Visual Web Developer Tasarımcısı'nı açar. Görsel web bölümleri, Web Bölümleri olduğu gibi aynı şekilde işlev. Tek fark, görsel web bölümleri Visual Web Developer tasarımcısında Tasarım ' dir.  
   
 ### <a name="to-create-a-project-for-visual-web-parts"></a>Görsel web bölümleri için bir proje oluşturmak için  

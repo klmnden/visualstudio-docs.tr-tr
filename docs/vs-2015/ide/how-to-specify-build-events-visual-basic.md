@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: derleme olayları belirtme (Visual Basic) | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Derleme olayları belirtme (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -19,15 +14,15 @@ ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f80067224be1cc5dfa72b23dbfb7414b023f793a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779207"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Nasıl Yapılır: Derleme Olayları Belirtme (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: Derleme Olayları Belirtme (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler derleme işleminin bir parçası olarak çalıştırmak için kullanılabilir. Derleme öncesi olayları önce derleme oluşur; derleme sonrası olayları derleme sonra oluşur.  
@@ -55,7 +50,7 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
     > [!NOTE]
     >  Derleme öncesi veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.  
   
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Örnek: derleme sonrası olay kullanarak bildirim bilgileri değiştirmek üzere nasıl  
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgilerini değiştirme  
  Aşağıdaki yordamda, bir derleme sonrası olay olarak adlandırılan bir .exe komutunu kullanarak uygulama bildiriminde en düşük işletim sistemi sürümünü ayarlama işlemi gösterilmektedir (. exe.manifest dosya proje dizininde). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört kısımlı bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildiriminin:  
   
 ```  
@@ -68,7 +63,7 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir .exe komutu oluşturmak için  
   
-1. Komut için bir konsol uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
+1. Komut için bir konsol uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.  
   
 2. İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **konsol uygulaması** şablonu. Projeyi adlandırın `ChangeOSVersionVB`.  
   
@@ -131,7 +126,7 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için  
   
-1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**ve ardından **proje**.  
+1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.  
   
 2.  İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **Windows uygulama** şablonu. Projeyi adlandırın `VBWinApp`.  
   
@@ -170,11 +165,8 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme özelliklerini yönetme](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Derleme özelliklerini yönetme](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Derleme sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Yayımlama Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)   
  [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Nasıl Yapılır: Derleme Olayları Belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)
-
-
-
+ [Nasıl yapılır: Derleme olayları belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: bir veri temelli birim testi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Veri temelli birim testi oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -19,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779168"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
+# <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri Temelli Birim Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kaynağından test yönteminde kullanılan değerleri almak için bir birim test yöntemi ayarlayabilirsiniz. Yöntemi, tek bir yöntemi kullanarak giriş çeşitli test kolaylaştırır veri kaynağındaki her satır için sırayla çalıştırılır.  
@@ -151,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Bir parametre ile bir oluşturucu, çözüm için app.config dosyasında depolanan bağlantı bilgilerini kullanır. *DataSourceSettingsName* bağlantı bilgilerini belirten yapılandırma dosyasında Xml öğesi adı.  
   
- App.config dosyasını kullanarak birim testinin kendisi için değişiklik yapmadan veri kaynağının konumunu değiştirmenize izin verir. Bir app.config dosyası oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [izlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
+ App.config dosyasını kullanarak birim testinin kendisi için değişiklik yapmadan veri kaynağının konumunu değiştirmenize izin verir. Bir app.config dosyası oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -192,10 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Nasıl yapılır: birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Nasıl yapılır: Birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
  [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)   
  [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-
-
-

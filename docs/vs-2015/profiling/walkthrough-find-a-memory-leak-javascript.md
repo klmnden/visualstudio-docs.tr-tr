@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: Bellek sızıntısını (JavaScript) bulma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: (JavaScript) Bellek sızıntısını bulma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780940"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>İzlenecek yol: Bellek sızıntısını bulma (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>İzlenecek yol: Bir Bellek sızıntısını bulma (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -224,7 +219,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
     - Bu nesne anlık görüntü # 2 arta kalan bir nesne ve olası bellek sızıntısı temsil eder.  
   
-      Uygulamayı biraz bilgi bu noktada yardımcı olur: seçme **bellek sızıntısı** düğmesi bir DIV öğesine kaldırmak ve kod sağ çalışıyor gibi görünüyor bir öğe ekleyin (diğer bir deyişle, bellek sızıntıları). Sonraki bölümde bunu düzeltelim açıklanmaktadır.  
+      Uygulamayı biraz bilgi bu noktada yardımcı olur: Seçme **bellek sızıntısı** düğmesi bir DIV öğesine kaldırmak ve kod sağ çalışıyor gibi görünüyor bir öğe ekleyin (diğer bir deyişle, bellek sızıntıları). Sonraki bölümde bunu düzeltelim açıklanmaktadır.  
   
     > [!TIP]
     >  Bazı durumlarda, bir nesne olarak bulma `Global` nesne, nesneyi tanımlamak yardımcı olabilir. Bunu yapmak için tanımlayıcısı için kısayol menüsünü açın ve ardından **kök görünümünde göster**.  
@@ -293,6 +288,3 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [JavaScript Belleği](../profiling/javascript-memory.md)
-
-
-

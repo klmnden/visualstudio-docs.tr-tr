@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d02871b991c999c490aac8aaeafc677711c95266
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecb6df8b7d6207336404d5e2f7562a88a18895bc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959978"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872592"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint proje öğelerini genişletme
   Visual Studio'da yüklü SharePoint proje öğesi türü için işlevsellik eklemek istediğinizde bir proje öğesi uzantısı oluşturma. Örneğin, yerleşik bir uzantı oluşturabilirsiniz **olay alıcısı** veya **liste tanımı** proje öğelerini Visual Studio'da ya da özel proje öğesi türü için bir uzantı oluşturabilirsiniz. Bir uzantı tüm SharePoint proje öğesi türleri için de oluşturabilirsiniz.  

@@ -1,23 +1,20 @@
 ---
 title: Kopyalama davranışını özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786009"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ partial class MyDslClipboardCommandSet
  Geçersiz kılma *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` DslPackage projedeki.  
   
  **Şekil düzenini kopyalama aracılığıyla korumak ve yapıştırın.**  
- Kullanıcı birden çok şekil kopyaladığında, bunlar yapıştırıldığında göreli konumlarını koruyabilirsiniz. Bu teknik örneğe tarafından gösterilen [VMSDK: bağlantı hattı diyagramları örnek](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Kullanıcı birden çok şekil kopyaladığında, bunlar yapıştırıldığında göreli konumlarını koruyabilirsiniz. Bu teknik örneğe tarafından gösterilen [VMSDK: Bağlantı hattı diyagramları örnek](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Bu etkiyi elde etmek için şekilleri ve bağlayıcıları için kopyalanan ElementGroupPrototype ekleyin. ElementOperations.CreateElementGroupPrototype() geçersiz kılmak için en uygun yöntemdir. Bunu yapmak için Dsl projesine aşağıdaki kodu ekleyin:  
   
@@ -151,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```  
   
  **Şekiller geçerli imleç konumu gibi seçtiğiniz bir konuma yapıştırın.**  
- Kullanıcı birden çok şekil kopyaladığında, bunlar yapıştırıldığında göreli konumlarını koruyabilirsiniz. Bu teknik örneğe tarafından gösterilen [VMSDK: bağlantı hattı diyagramları örnek](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Kullanıcı birden çok şekil kopyaladığında, bunlar yapıştırıldığında göreli konumlarını koruyabilirsiniz. Bu teknik örneğe tarafından gösterilen [VMSDK: Bağlantı hattı diyagramları örnek](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Bu etkiyi elde etmek için geçersiz kılma `ClipboardCommandSet.ProcessOnMenuPasteCommand()` konuma özgü sürümünü kullanacak şekilde `ElementOperations.Merge()`. Bunu yapmak için DslPackage projesinde aşağıdaki kodu ekleyin:  
   
@@ -218,7 +215,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **Öğeleri sürükleyip kullanıcı sağlar.**  
- Bkz: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Bkz: [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ##  <a name="customizeLinks"></a> Bağlantı kopyalama davranışını özelleştirme  
  Kullanıcının bir öğe kopyalarken standart katıştırılmış öğeleri de kopyalanır davranışıdır. Standart kopyalama davranışı değiştirebilirsiniz. DSL tanımındaki bir ilişkinin ve Özellikler penceresinde kümedeki bir tarafındaki bir rol seçin **yayar kopyalama** değeri.  
@@ -290,7 +287,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```  
   
 ## <a name="receiving-items-dragged-from-other-models"></a>Diğer modellerinden sürüklenen öğe alma  
- ElementOperations, kopyalama ve taşıma, silme ve sürükle ve bırak davranışını tanımlamak için de kullanılabilir. ElementOperations kullanımına bir örnek, burada verilen örnek özel sürükle ve bırak davranışını tanımlar. Ancak, bu amaç için açıklanan alternatif bir yaklaşım göz önünde tutabileceğiniz [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md), olduğu daha genişletilebilir.  
+ ElementOperations, kopyalama ve taşıma, silme ve sürükle ve bırak davranışını tanımlamak için de kullanılabilir. ElementOperations kullanımına bir örnek, burada verilen örnek özel sürükle ve bırak davranışını tanımlar. Ancak, bu amaç için açıklanan alternatif bir yaklaşım göz önünde tutabileceğiniz [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md), olduğu daha genişletilebilir.  
   
  İki yöntem ElementOperations sınıfınızda tanımlayın:  
   
@@ -378,7 +375,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Standart kopyalama davranışı  
  Bu bölümdeki kod yapabilecekleriniz yöntemleri kopyalama davranışı değiştirmek için geçersiz kılabilirsiniz gösterir. Kendi özelleştirmeleri elde etmeyi öğrenmek yardımcı olmak için bu bölümde kopyalanırken yöntemleri geçersiz kılan kodunu göstermektedir, ancak standart davranışını değiştirmez.  
   
- Kullanıcı CTRL + C tuşuna bastığında veya yöntem kopyalama menü komutunu kullanan <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> çağrılır. Nasıl bu ayarlanır gördüğünüz **DslPackage\Generated Code\CommandSet.cs**. Ayarlanan komutlar şeklini hakkında daha fazla bilgi için bkz. [nasıl yapılır: kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Kullanıcı CTRL + C tuşuna bastığında veya yöntem kopyalama menü komutunu kullanan <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> çağrılır. Nasıl bu ayarlanır gördüğünüz **DslPackage\Generated Code\CommandSet.cs**. Ayarlanan komutlar şeklini hakkında daha fazla bilgi için bkz. [nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
  Kısmi sınıf tanımının ekleyerek ProcessOnMenuCopyCommand geçersiz kılabilirsiniz *MyDsl* `ClipboardCommandSet` DslPackage projedeki.  
   
@@ -568,9 +565,6 @@ namespace Company.MyDsl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md)   
- [Nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Silme davranışını özelleştirme](../modeling/customizing-deletion-behavior.md)   
  [Örnek: VMSDK devre diyagramları örnek](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-

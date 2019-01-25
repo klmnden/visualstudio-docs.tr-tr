@@ -1,12 +1,9 @@
 ---
 title: Etki alanına özgü dil Tanımıma izleme özelliği ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793300"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Etki Alanına Özgü Dil Tanımıma İzleme Özelliği Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
   
  Örneğin, etki alanına özgü dil Araçları (DSL araçları), bir alan sınıfının özelliği etki alanı sınıfı, ancak bir kullanıcı adını kullanarak hesaplanan bir varsayılan değere sahip görünen ad değeri tasarım zamanında değiştirebilir veya hesaplanan değere sıfırlayın.  
   
- Bu kılavuzda, modelin varsayılan Namespace özelliği temelinde bir varsayılan değere sahip özellik izleme bir Namespace sahip bir etki alanına özgü dil (DSL) oluşturun. İzleme özellikleri hakkında daha fazla bilgi için bkz. [izleme özellikleri tanımlama](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Bu kılavuzda, modelin varsayılan Namespace özelliği temelinde bir varsayılan değere sahip özellik izleme bir Namespace sahip bir etki alanına özgü dil (DSL) oluşturun. İzleme özellikleri hakkında daha fazla bilgi için bkz. [izleme özellikleri tanımlama](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - Özellik tanımlayıcılarının izleme DSL araçları desteği. Ancak, DSL Tasarımcısı izleme özelliği için bir dil eklemek için kullanılamaz. Bu nedenle, izleme özelliği tanımlaması ve özel kod eklemeniz gerekir.  
   
@@ -766,8 +763,5 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
- [Nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md)   
- [İzlenecek yol: etki alanına özgü dil tanımını özelleştirme](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-
+ [Nasıl yapılır: Bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [İzlenecek yol: Etki alanına özgü dil tanımını özelleştirme](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

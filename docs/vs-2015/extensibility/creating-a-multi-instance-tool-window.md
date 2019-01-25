@@ -1,27 +1,22 @@
 ---
 title: Çok örnekli araç penceresi oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2dc658024447b433b8bc0b5a8dac59234554509f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 77363b0ed4635559007680e9923575eac222fbcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793427"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Çok Örnekli Araç Penceresi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,4 +78,3 @@ Böylece aynı anda birden çok örneğini açılabilir bir araç penceresi prog
         }  
     }  
     ```
-

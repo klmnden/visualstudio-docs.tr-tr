@@ -1,27 +1,22 @@
 ---
 title: Proje türleri oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58b31e363d78af7902e6174c9683b7e794031263
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801951"
 ---
 # <a name="creating-project-types"></a>Proje Türleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Genişletebileceğiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oluştura
  [Proje Türü Tasarım Kararları](../../extensibility/internals/project-type-design-decisions.md)  
  Öğesi, proje dosya kalıcılığına ve yeni bir proje türü oluşturmadan önce yapmanız taahhüt teknisyenin tasarım kararları açıklar.  
   
- [Denetim Listesi: Yeni Proje Türleri Oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Kod düzenleme ve derleme, derleme, hata ayıklama ve projenizdeki dağıtmaya olarak programlama görevlerini destekleyen yeni bir proje türü oluşturmak için izlemeniz gereken adımlara genel bir bakış sağlar.  
   
  [Proje Üreteçlerini Kullanarak Proje Örnekleri Oluşturma](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  
@@ -65,4 +60,3 @@ Genişletebileceğiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oluştura
   
  [Proje Türleri](../../extensibility/internals/project-types.md)  
  Projeleri kodu değiştirmek, derleme ve kod, derleme ve çalıştırma ve kod hatalarını ayıklamak için nasıl kullanılacağını açıklar ve proje türleri oluşturma konusunda ayrıntılı konulara bağlantılar sağlar.
-

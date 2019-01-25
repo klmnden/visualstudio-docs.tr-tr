@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: MSBuild hedeflerini kullanarak SharePoint çözüm paketini özelleştirme | Microsoft Docs'
+title: 'Nasıl yapılır: MSBuild hedeflerini kullanarak SharePoint çözüm paketini özelleştirme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 814af35e452bce86dd2a6ba780b9fca5fe9bb4d4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873203"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Nasıl Yapılır: MSBuild hedeflerini kullanarak SharePoint çözüm paketini özelleştirme
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Nasıl yapılır: MSBuild hedeflerini kullanarak SharePoint çözüm paketini özelleştirme
   Bir komut isteminde MSBuild hedeflerini kullanarak Visual Studio SharePoint paket dosyaları nasıl oluşturduğunu özelleştirebilirsiniz (*.wsp*). Örneğin, paketleme Ara dizin ve numaralandırılmış dosyaları belirttiğiniz MSBuild öğesi gruplarını değiştirmek için MSBuild özelliklerini de özelleştirebilirsiniz.  
   
 ## <a name="customize-and-run-msbuild-targets"></a>Özelleştirme ve MSBuild hedefleri çalıştırın  

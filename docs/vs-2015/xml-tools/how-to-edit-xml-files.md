@@ -1,27 +1,22 @@
 ---
 title: 'Nasıl yapılır: XML dosyalarını düzenleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3864b3d3a3074f9b6be2529e8f674df90532c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779507"
 ---
-# <a name="how-to-edit-xml-files"></a>Nasıl yapılır: XML dosyalarını düzenleme
+# <a name="how-to-edit-xml-files"></a>Nasıl yapılır: XML Dosyalarını Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -66,7 +61,7 @@ XML Düzenleyicisi'ni XML dosyaları için yeni düzenleyicisidir. Visual Studio
   
 1.  Gelen **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+     **Yeni Proje** iletişim kutusu görünür.  
   
 2.  Select dilediğiniz kod dilini seçin. **boş proje**, tıklatıp **Tamam**.  
   
@@ -77,7 +72,4 @@ XML Düzenleyicisi'ni XML dosyaları için yeni düzenleyicisidir. Visual Studio
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)   
  [XML belge özellikleri, özellik penceresi](../xml-tools/xml-document-properties-properties-window.md)   
- [Nasıl Yapılır: XML Belgesinden XML Şeması Oluşturma](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
-
-
-
+ [Nasıl yapılır: Bir XML belgesinden XML şeması oluşturma](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

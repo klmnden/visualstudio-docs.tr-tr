@@ -1,11 +1,8 @@
 ---
 title: Hata ayıklama Adımlama seçenekleri (eski) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - branch stepping
@@ -17,13 +14,13 @@ ms.assetid: 3e9e3041-68c7-4f16-9bd6-da5e5144744b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7dfaa4fb659418c26d5aa0144fac4188ef4b16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899389"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754855"
 ---
 # <a name="debug-stepping-options-legacy"></a>Hata Ayıklama Adımlama Seçenekleri (Eski)
 Bu konu, hata ayıklamak açıklar [!INCLUDE[wf](../includes/wf-md.md)] eşzamanlı etkinliğin eski uygulamaları [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -40,4 +37,4 @@ Bu konu, hata ayıklamak açıklar [!INCLUDE[wf](../includes/wf-md.md)] eşzaman
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışlarında hata ayıklama](../workflow-designer/debugging-legacy-workflows.md)   
- [Nasıl Yapılır: Hata Ayıklama Adımlama Seçeneğini Değiştirme (Eski)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Nasıl yapılır: Hata ayıklama Adımlama seçeneğini (eski) değiştirme](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

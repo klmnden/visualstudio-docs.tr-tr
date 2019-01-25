@@ -1,32 +1,27 @@
 ---
 title: 'Nasıl yapılır: Derleyici uyarılarını gizleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 90a5624997a3f2a6719ccd174abee39798f1c488
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782093"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici Uyarılarını Gizleme
+# <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici Uyarılarını Engelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Derleyici uyarılarını içerecek şekilde istemediğiniz bir veya daha fazla tür belirterek bir yapı günlüğüne declutter. Örneğin, bazı gözden geçirmek için bu teknik, ancak Normal, ayrıntılı ya da tanılama günlük derleme ayrıntı ayarladığınızda, otomatik olarak oluşturulan bilgilerin tümünü kullanabilirsiniz. Ayrıntı düzeyi hakkında daha fazla bilgi için bkz. [nasıl yapılır: görünümü, kaydetme ve yapılandırma derleme günlük dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).  
+Derleyici uyarılarını içerecek şekilde istemediğiniz bir veya daha fazla tür belirterek bir yapı günlüğüne declutter. Örneğin, bazı gözden geçirmek için bu teknik, ancak Normal, ayrıntılı ya da tanılama günlük derleme ayrıntı ayarladığınızda, otomatik olarak oluşturulan bilgilerin tümünü kullanabilirsiniz. Ayrıntı düzeyi hakkında daha fazla bilgi için bkz. [nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# veya F # için belirli uyarıları bastırmak için  
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Görsel için belirli uyarıları bastırmak için C# veyaF#  
   
 1.  İçinde **Çözüm Gezgini**, uyarıları bastırmak istediğiniz projeyi seçin.  
   
@@ -112,9 +107,6 @@ Derleyici uyarılarını içerecek şekilde istemediğiniz bir veya daha fazla t
    Daha fazla bilgi için [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)   
- [Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)   
+ [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md)   
+ [Nasıl yapılır: Görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

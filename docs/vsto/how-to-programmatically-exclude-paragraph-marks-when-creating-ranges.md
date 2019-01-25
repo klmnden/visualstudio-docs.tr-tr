@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri'
+title: 'Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - ranges, excluding paragraph marks in Word
 - documents [Office development in Visual Studio], paragraph marks
 - paragraphs, controlling structure
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8dc8e41983e6dd4bef8b3f7ba550853e32addd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20227318063a2b9a2c7b64384d7c31b7fb956946
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847101"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872072"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Nasıl Yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri
   Oluşturduğunuz her bir <xref:Microsoft.Office.Interop.Word.Range> bir paragraf paragraf işaretlerini gibi tüm yazdırılamayan karakterler temel nesne aralığında dahil edilir. Kaynak paragrafı hedef paragrafa metin eklemek isteyebilirsiniz. Hedef paragraf farklı paragraflara ayırmak istemiyorsanız, ilk paragraf işaretlerini kaynak paragrafın kaldırmalısınız. Ayrıca, paragraf işaretleri içinde paragraf biçimlendirme bilgilerini depolandığından, varolan paragrafa aralığı eklediğinizde bu içerecek şekilde istemeyebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

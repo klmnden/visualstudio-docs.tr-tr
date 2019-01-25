@@ -11,12 +11,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e7a94acd9fb758c722374b4ef2317cd2043c03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790052"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -85,7 +85,7 @@ Değiştiriciler adlandırma kuralı uygulamak istediğiniz simgeleri tanımlama
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırarak birden çok değer belirtebilirsiniz.
+Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırarak birden çok değer belirtebilirsiniz. Bir adlandırma kuralı yalnızca belirtilen tüm değiştiricilere sahip imzaları eşleşecektir `required_modifiers`. Bu özelliği atarsanız, varsayılan değer olan boş bir listeyle kullanılır, diğer bir deyişle, hiçbir özel değiştiriciler eşleştirmek için gereklidir. Bu sembolün değiştiriciler olsun veya olmasın bu kuralın uygulanacağı üzerinde hiçbir etkisi yok anlamına gelir.
 
 - `abstract` veya `must_inherit`
 - `async`

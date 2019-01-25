@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
@@ -16,15 +11,15 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 15c57de4a8f51283692b21bcaa148c86bb4deb2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775798"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl Yapılır: Sınıfı Kısmi Sınıflara Bölme (Sınıf Tasarımcısı)
+# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanarak bir sınıf veya yapı çeşitli bildirimler arasında bildirimi bölebilirsiniz `Partial` Visual Basic'teki veya `partial` anahtar sözcüğü Visual C#. İstediğiniz sayıda farklı kaynak dosyaları veya bir kaynak dosyasında istediğiniz sayıda kısmi bildirimleri kullanabilirsiniz. Ancak, tüm bildirimler aynı derleme ve aynı ad olmalıdır.  
@@ -85,6 +80,3 @@ public partial class Employee
  [partial (tür)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
  [partial (yöntem) (C# Başvurusu)](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
  [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
-
-
-

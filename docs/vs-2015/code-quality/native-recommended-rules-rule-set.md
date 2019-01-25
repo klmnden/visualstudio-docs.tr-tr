@@ -1,25 +1,20 @@
 ---
 title: Yerel önerilen kurallar kural kümesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 8d845b5a-1b75-4e9d-861a-7c59cb7752af
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2976dc2a8690ba9bb5f623662b71fca0d82e942b
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a360d0f9e486adf9ff5f121a91537ca77c176ead
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788778"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Yerel Önerilen Kurallar kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +117,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                       [C6504](../code-quality/c6504.md)                        |                                                         İşaretçi olmayan değişkende null                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          Void üzerinde MustCheck                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 İşaretçi olmayan veya dizi değişkende arabellek boyutu                                                 |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Null uyumsuzluğu sıfır başvurma                                                  |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Null uyumsuzluğu sıfır başvurma                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      Sabit üzerinde yazma erişimi                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     Önkoşulda return kullanıldı                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   İşaretçi olmayan değişkende null                                                    |
@@ -133,12 +128,12 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                       [C6516](../code-quality/c6516.md)                        |                                                     Öznitelikte özellik yok                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  Okunabilir olmayan arabellekte geçerli boyut                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                Yazılabilir olmayan arabellekte yazılabilir boyut                                                 |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                             Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değer olmalıdır Evet veya Hayır                              |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Geçersiz boyut dize başvurma                                                   |
+| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                             Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değer olmalıdır Evet veya Hayır                              |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Geçersiz boyut dize başvurma                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      Geçersiz boyut dize türü                                                       |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Geçersiz boyut dize parametresi                                                    |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Geçersiz boyut dize parametresi                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              Geçersiz boyutta dize ulaşılamayan konumu                                               |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Geçersiz boyut dize arabellek türü                                                   |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Geçersiz boyut dize arabellek türü                                                   |
 |                       [C6527](../code-quality/c6527.md)                        |                         Geçersiz ek açıklama: 'NeedsRelease' özelliği void türünün değerleri üzerinde kullanılamaz                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  Biçim dizesi stili tanınmıyor                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            Bu işlev üzerindeki öznitelik ek açıklamaları kullanımı tüm, var olan __declspec ek açıklamalarını geçersiz kılar             |
@@ -228,7 +223,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                      [C28254](../code-quality/c28254.md)                       |                                          ek açıklamalarda dynamic_cast <> (') desteklenmiyor                                           |
 |                      [C28262](../code-quality/c28262.md)                       |                               İşlevi, ek açıklaması için Ek açıklamada bir söz dizimi hatası bulundu                                |
 |                      [C28263](../code-quality/c28263.md)                       |                            İç ek açıklaması için koşullu Ek açıklamada bir söz dizimi hatası bulundu                            |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                               Sonuç listesi değerlerini sabit olması gerekir.                                                |
+| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                               Sonuç listesi değerlerini sabit olması gerekir.                                                |
 |                      [C28267](../code-quality/c28267.md)                       |                               Açıklamalarda bir söz dizimi hatası, ek açıklama işlevi bulunamadı.                               |
 |                      [C28272](../code-quality/c28272.md)                       |                 İşlev için ek açıklama, incelerken parametresi işlev bildirimiyle tutarsız                 |
 |                      [C28273](../code-quality/c28273.md)                       |                               İşlev için ipuçları işlev bildirimiyle tutarsız                                |
@@ -240,7 +235,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                      [C28286](../code-quality/c28286.md)                       |                                               İşlevi, sonunun yakınında sözdizimi hatası                                               |
 |                      [C28287](../code-quality/c28287.md)                       |                           İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (tanınmayan parametre adı)                           |
 |                      [C28288](../code-quality/c28288.md)                       |                             İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (geçersiz parametre adı)                              |
-|                      [C28289](../code-quality/c28289.md)                       |                           İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değil                           |
+|                      [C28289](../code-quality/c28289.md)                       |                           İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değildi                           |
 |                      [C28290](../code-quality/c28290.md)                       |                      işlevi için ek açıklama gerçek parametre sayısından daha fazla External içeriyor                       |
 |                      [C28291](../code-quality/c28291.md)                       |                                   POST null/notnull deref düzeyi 0 işlevi için anlamsız olur.                                   |
 |                      [C28300](../code-quality/c28300.md)                       |                                       İşleci için uyumsuz olan türlerde ifade işlenenleri                                        |
@@ -253,4 +248,3 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |                      [C28307](../code-quality/c28307.md)                       |                                             Parametre üzerindeki ek açıklama eskimiş durumda                                              |
 |                      [C28350](../code-quality/c28350.md)                       |                             Ek açıklama koşullu olarak uygun olmayan bir durumu betimliyor.                              |
 |                      [C28351](../code-quality/c28351.md)                       |                    Ek açıklama bir dinamik değerin (değişkenin) koşulda burada kullanılamaz açıklar.                     |
-

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], resource file
 - BDC [SharePoint development in Visual Studio], resource strings
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c61e996380ff2cca6ddc3c60ad4c6d13d10c93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e128a3d6f0dca07f9f2092af882532f7e07cd7eb
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819474"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873541"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Nasıl Yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma
+# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma
   Bir kaynak dosyası kullanarak, yerelleştirilmiş adlar sağlamak, özelliklerini tanımlayın ve bir iş verileri bağlantısı (BDC) modelde tanımlı izinleri tor nesneleri geçerli. Bu bilgileri belirtmek için eklediğiniz bir **iş verileri bağlantısı kaynak** içeren bir proje öğesine bir **iş verileri bağlantı modeli** öğesi. Ardından, adları, özellikler ve izinleri XML kaynak dosyası için düzenleyerek belirtin.  
   
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Bir BDC kaynak dosyasını bir SharePoint projesine eklemek için  

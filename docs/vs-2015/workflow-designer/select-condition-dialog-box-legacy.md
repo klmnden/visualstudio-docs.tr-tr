@@ -1,11 +1,8 @@
 ---
 title: Koşul iletişim kutusu (eski) seçin. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790496"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Koşul Seç İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **koşulu seçin** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +33,7 @@ Bu konu açıklar nasıl **koşulu seçin** eski iletişim kutusunda [!INCLUDE[w
   
 - [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  Nasıl erişileceği hakkında daha fazla bilgi için **koşulu seçin** iletişim kutusu, bkz: [nasıl yapılır: bildirim temelli bir kural koşulu (eski) oluşturma](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Nasıl erişileceği hakkında daha fazla bilgi için **koşulu seçin** iletişim kutusu, bkz: [nasıl yapılır: Bildirime dayanan Kural koşulu (eski) oluşturma](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
   Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **koşulu seçin** iletişim kutusu.  
   
@@ -55,7 +52,7 @@ Bu konu açıklar nasıl **koşulu seçin** eski iletişim kutusunda [!INCLUDE[w
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kural Koşulu Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Nasıl yapılır: bildirime dayanan Kural koşulu (eski) oluşturma](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
+ [Nasıl yapılır: Bildirime dayanan Kural koşulu (eski) oluşturma](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [İş akışlarında koşullar kullanma](http://go.microsoft.com/fwlink?LinkID=65009)   
  [ConditionedActivityGroup etkinliğini kullanma](http://go.microsoft.com/fwlink?LinkID=65066)   
  [Öğeye etkinliğini kullanma](http://go.microsoft.com/fwlink?LinkID=65075)   

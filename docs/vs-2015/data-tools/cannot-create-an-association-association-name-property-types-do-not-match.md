@@ -1,23 +1,20 @@
 ---
 title: Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik türleri eşleşmiyor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787645"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik türleri eşleşmiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,6 @@ Bir ilişki oluşturulamıyor \<ilişkilendirme adı >-özellik türleri eşleş
 4.  **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında bir ilişki (ilişki) oluşturun](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasındaki ilişkiyi (ilişki) oluşturma](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
  [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

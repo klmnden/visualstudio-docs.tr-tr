@@ -1,27 +1,22 @@
 ---
-title: "Nasıl yapılır: bir ARM cihazla grafik Tanılama'yı kullanma | Microsoft Docs"
-ms.custom: ''
+title: "Nasıl yapılır: Bir ARM cihazla grafik Tanılama'yı kullanma | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 003f17ad34219a21b69578902e5f48716c917789
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797784"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Nasıl yapılır: bir ARM cihazla grafik Tanılama'yı kullanma
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Nasıl yapılır: Bir ARM cihazla grafik Tanılama'yı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Grafik tanılama Direct3D uygulamaların ARM tabanlı ve Windows RT 8.1 veya Windows Phone 8.1 çalıştıran cihazlarda uzaktan hata ayıklamayı destekler. Bir cihazda çalıştığı sırada Direct3D uygulamanızdan grafik bilgilerini yakalama veya cihaz için daha önce yakalanan grafik bilgilerini kayıttan yürütme makinesi olarak kullanın.  
@@ -52,7 +47,4 @@ Grafik tanılama Direct3D uygulamaların ARM tabanlı ve Windows RT 8.1 veya Win
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzak makinede Windows Store uygulamaları çalıştırma](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
- [Nasıl Yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-
+ [Nasıl yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

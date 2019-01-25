@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: Ana hat oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Anahat oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798364"
 ---
-# <a name="walkthrough-outlining"></a>İzlenecek Yol: Ana Hat Oluşturma
+# <a name="walkthrough-outlining"></a>İzlenecek yol: Anahat Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin bölgeleri türleri tanımlayarak anahat oluşturma gibi uygulayabilirsiniz. Bir dil hizmeti bağlamında bölgeleri tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bölge tanımı yalnızca bu türü için geçerli veya mevcut bir içerik türüyle (örneğin, "metin") bölge tanımları uygulayabilirsiniz. Bu izlenecek yol, tanımlamak ve ana hat oluşturma bölgeleri görüntülemek gösterilmektedir.  
@@ -139,5 +134,4 @@ Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin b
 4.  Her iki küme ayraçları içeren bir anahat oluşturma bölgesi olmalıdır. Anahat oluşturma bölge daraltmak için eksi işaretini açık küme ayracı solundaki olması gerekir. Ne zaman bölgesi daraltıldığında, üç nokta simgesine (...) daraltılmış bölgeye ve metni içeren bir açılır pencere solunda görünmesi gereken **gelin metin** üç nokta üzerinde işaretçiyi getirdiğinizde görünmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Bir İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

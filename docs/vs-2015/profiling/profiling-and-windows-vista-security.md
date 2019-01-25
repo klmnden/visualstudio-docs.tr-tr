@@ -1,14 +1,9 @@
 ---
 title: Profil oluşturma ve Windows Vista güvenliği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
 - performance tools, security
@@ -16,13 +11,13 @@ ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 32605cb21b79e035bba9d234cdb7b3d513417363
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b5e82777b0d2f6134f99cabf42030943d4ea9a8a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772927"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profil Oluşturma Windows Vista Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,4 @@ Yapılandırmanıza bağlı olarak [!INCLUDE[wiprlhext](../includes/wiprlhext-md
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Nasıl yapılır: bir çalışan işleme ekleme](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
-
-
-
+ [Nasıl yapılır: Bir çalışan işleme ekleme](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

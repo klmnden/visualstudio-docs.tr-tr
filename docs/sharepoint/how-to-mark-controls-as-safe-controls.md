@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Denetimleri güvenli denetim olarak işaretleme | Microsoft Docs'
+title: 'Nasıl yapılır: Denetimleri güvenli denetim olarak işaretleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989380"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875474"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Nasıl Yapılır: Denetimleri güvenli denetim olarak işaretleme
+# <a name="how-to-mark-controls-as-safe-controls"></a>Nasıl yapılır: Denetimleri güvenli denetim olarak işaretleme
   Güvenlik için SharePoint, betik ekleme karşı korumalı Web denetimleri ve olmayan Web denetimleri ayırır. Denetimler, korumalı veya *güvenli denetimler*, güvenilir olmayan kullanıcılar tarafından erişilebilir. Denetimleri güvenli denetim girdileri özelliğini bir SharePoint Proje öğesinin veya güvende olarak işaretleyebilirsiniz **paket Tasarımcısı** eklediğinizde bir derleme paketi. Daha fazla bilgi için bkz.  
   
  [Web.config dosyasının ayarlarını değiştir](http://go.microsoft.com/fwlink/?LinkId=178965) ve [güvenli denetim olarak bir Web Bölümü derlemeyi Kaydettirdikten](http://go.microsoft.com/fwlink/?LinkId=171013).  

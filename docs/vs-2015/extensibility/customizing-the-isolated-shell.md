@@ -1,26 +1,21 @@
 ---
 title: Yalıtılmış Kabuğu özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786692"
 ---
 # <a name="customizing-the-isolated-shell"></a>Yalıtılmış Kabuğu özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Visual Studio kullanıcı arabirimini farklı yönlerini değiştirme ve özel u
  Yalıtılmış Kabuk şablonu çözümü içeren bir *SolutionName*. Aşağıdaki özellikleri değiştirmenize olanak tanıyan Application.pkgdef dosyası:  
   
 ##### <a name="the-application-title"></a>Uygulama Başlığı  
- "AppName" satırın değerini değiştirerek uygulama başlık çubuğunda görüntülenen addır uygulama başlığı özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ "AppName" satırın değerini değiştirerek uygulama başlık çubuğunda görüntülenen addır uygulama başlığı özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
  Şu anda yüklü olan projenin görüntülenecek uygulama başlığı istemiyorsanız "ShowHierarchyRootInTitle" satırın değerini değiştirmek *SolutionName*. DWORD: 00000001 dosyasından Application.pkgdef DWORD: 00000000 için.  
   
 ##### <a name="the-application-icon"></a>Uygulama simgesi  
- Uygulama adı uygulama başlık çubuğunda görüntülenen simge uygulama simgesine özelleştirebilirsiniz. Farklı bir simgeye simgesi dizinine kopyalayın. İçinde **Çözüm Gezgini**, kaynak dosyaları klasöre simgesi ekleyin. Ardından VSShellStub.rc dosyasını açın ve IDI_STUBPROGRAM yeni simgesine adıyla değiştirin. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Uygulama adı uygulama başlık çubuğunda görüntülenen simge uygulama simgesine özelleştirebilirsiniz. Farklı bir simgeye simgesi dizinine kopyalayın. İçinde **Çözüm Gezgini**, kaynak dosyaları klasöre simgesi ekleyin. Ardından VSShellStub.rc dosyasını açın ve IDI_STUBPROGRAM yeni simgesine adıyla değiştirin. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Komut satırı logosu  
- Uygulama "CommandLineLogo" satırın değerini değiştirerek komut satırından başlatıldığında görüntülenen metni komut satırı logosu, özelleştirebileceğiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Uygulama "CommandLineLogo" satırın değerini değiştirerek komut satırından başlatıldığında görüntülenen metni komut satırı logosu, özelleştirebileceğiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Kullanıcı dosyaları alt klasör adı  
  Uygulamanız için kullanıcı dosyaları "UserFilesSubFolderName" satırın değerini değiştirerek tutar klasörün adını değiştirebilirsiniz *SolutionName*. Application.pkgdef dosyası.  
@@ -63,7 +58,7 @@ Visual Studio kullanıcı arabirimini farklı yönlerini değiştirme ve özel u
  Web tarayıcısı penceresi açıldığında, "DefaultSearchPage" satırın değerini değiştirerek, görüntülenen sayfadır web tarayıcı sayfası özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası.  
   
 ##### <a name="the-default-home-page"></a>Varsayılan giriş sayfası  
- Giriş sayfasında "DefaultHomePage" satırın değerini değiştirerek özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Giriş sayfasında "DefaultHomePage" satırın değerini değiştirerek özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Çözüm kavramı Gizle gerekip gerekmediğini  
  "HideSolutionConcept" satırın değerini değiştirerek uygulamanızdaki çözüm Gizle gerekip gerekmediğini belirtin *SolutionName*. Application.pkgdef dosyası. Çözüm gizlemek için değer ayarlama `dword:00000001`ve çözüm göstermek için değeri ayarlayın `dword:00000000`.  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- Çeşitli dosyalar projeleri görüntülenen proje şablonları kümesini kaldırır. **yeni proje** iletişim. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Çeşitli dosyalar projeleri görüntülenen proje şablonları kümesini kaldırır. **yeni proje** iletişim. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="enabledisable-menu-commands"></a>Menü komutlarını etkinleştir/devre dışı bırak  
- *SolutionName*UI.vsct dosyası derleme dışı bırakılan listesini yalıtılmış kabuğu için kullanılabilir tüm menü komutlarını içerir. Belirli bir komut devre dışı bırakmak için karşılık gelen satırı açıklamadan çıkarın. Örneğin, pencere/bölünmüş açıklama devre dışı bırakmak için açıklama durumundan çıkarın `<Define name="No_SplitCommand"/>` satır. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ *SolutionName*UI.vsct dosyası derleme dışı bırakılan listesini yalıtılmış kabuğu için kullanılabilir tüm menü komutlarını içerir. Belirli bir komut devre dışı bırakmak için karşılık gelen satırı açıklamadan çıkarın. Örneğin, pencere/bölünmüş açıklama devre dışı bırakmak için açıklama durumundan çıkarın `<Define name="No_SplitCommand"/>` satır. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>Karşılama ekranında kullanılan bit eşlem  
- Uygulama başlatıldığında "SplashScreenBitmap" satırın değerini değiştirerek, görüntülenen pencere Karşılama ekranında kullanılan bit eşlem özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Uygulama başlatıldığında "SplashScreenBitmap" satırın değerini değiştirerek, görüntülenen pencere Karşılama ekranında kullanılan bit eşlem özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-helpabout-window"></a>Yardım/penceresi hakkında  
- Yalıtılmış Kabuk şablonda Yardım'ı özelleştirmek için kullanabileceğiniz ayrı bir proje yok/hakkında kutusu uygulamanız için. Daha fazla ayrıntı için [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-
+ Yalıtılmış Kabuk şablonda Yardım'ı özelleştirmek için kullanabileceğiniz ayrı bir proje yok/hakkında kutusu uygulamanız için. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).

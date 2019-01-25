@@ -2,6 +2,7 @@
 title: Parametreleştirilmiş TableAdapter sorguları oluşturma
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], TableAdapters
@@ -14,13 +15,13 @@ ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2e282da8d8c7f19f73309b37add3e10182e8ae9c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785545"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +34,13 @@ Sizin parametreleştirilmiş TableAdapter sorguları veri kümesi Tasarımcısı
 > Parametreli sorgu oluşturulurken karşı kodlama veritabanına özgü parametre gösterimini kullanın. Örneğin, soru işareti Access ve OleDb veri kaynakları kullan '?' parametreleri belirtmek için bu nedenle WHERE yan tümcesi şuna benzeyecektir: `WHERE City = ?`.  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana içinde etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Git **Araçları** menü ve select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana içinde etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Git **Araçları** menü ve select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-parameterized-tableadapter-query"></a>Parametreleştirilmiş TableAdapter sorgu oluşturma 
   
 - SQL deyimi için istenen parametrelere sahip bir WHERE yan tümcesi ekleyerek yeni bir TableAdapter'ı oluşturun. Daha fazla bilgi için [oluştur ve TableAdapter yapılandırma](../data-tools/create-and-configure-tableadapters.md).  
   
-     veya  
+     -veya-  
   
 - Bir sorgu, WHERE yan tümcesi istenen parametrelerle SQL deyiminde ekleme, var olan bir TableAdapter ekleyin.
   

@@ -9,26 +9,26 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764854"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015'te Hata Ayıklamaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleşik sunmaktadır. Bu konu başlığında, en temel hata ayıklama kullanıcı Arabirimi özellikleri kümesi kullanmaya başlamak nasıl öğrenin.
 
- Not: Bu sayfanın alt kısmında daha gelişmiş özellikleri ve platform veya özelliğe özgü konulara bağlantılar vardır.
+ Not: Daha gelişmiş özelliklerinden ve platform veya özelliğe özgü konuları bağlantı, bu sayfanın alt kısmında mevcuttur.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Benim kodumu çalışmaz. Me, Visual Studio 2015 yardımcı olun!
  Böylece düzenleyicisini verdi ve bazı kod oluşturdunuz. Artık, kod hata ayıklamayı başlatmak istediğiniz. Visual Studio 2015'te çoğu ıde'lerle gibi hata ayıklama için iki aşama vardır: yakalayın ve proje ve derleme hatalarını; kod oluşturma Bu kodu yakalamak ve çalışma zamanı ve dinamik hatalarını gidermek için ortamında ve çalıştırma.
 
 ### <a name="configuring-a-build"></a>Bir derleme yapılandırma
- İki temel tür yapı yapılandırması vardır: **hata ayıklama** ve **yayın**. İlk Yapılandırma bir daha zengin etkileşimli çalışma zamanı hata ayıklama deneyimi sağlar, ancak hiçbir zaman sevk edilmesi gereken bir yavaş, daha büyük çalıştırılabilir dosyası oluşturur. İkinci göndermeye uygun olan daha hızlı, daha en iyi duruma getirilmiş bir çalıştırılabilir derlemeleri (en az derleyici perspektifinden).
+ İki temel tür yapı yapılandırması vardır: **Hata ayıklama** ve **yayın**. İlk Yapılandırma bir daha zengin etkileşimli çalışma zamanı hata ayıklama deneyimi sağlar, ancak hiçbir zaman sevk edilmesi gereken bir yavaş, daha büyük çalıştırılabilir dosyası oluşturur. İkinci göndermeye uygun olan daha hızlı, daha en iyi duruma getirilmiş bir çalıştırılabilir derlemeleri (en az derleyici perspektifinden).
 
  Varsayılan yapı yapılandırma **hata ayıklama**.
 
@@ -44,7 +44,7 @@ Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleş
 
  Kullanmanız yeterlidir, başlangıç **hata ayıklama** ve **x86** derleme yapılandırması ve platformu, sırasıyla. Kodlama ve hata ayıklama işiniz bittiğinde yapılandırmayı değiştirmek **yayın** ve belirli bir platforma hedefleyebilirsiniz. (Sağlanan Visual Studio'nun eski sürümlerini bir **AnyCPU** .Net kod projeleri için varsayılan platform.)
 
- Not: projenizi yapılandırdığınızda, yapılandırma ve platform değerler da yürütülebilir dosya depolamak için hangi proje dizin yolu oluşturulup belirlemek için kullanılır. Bu genellikle  **\<yolu Proje >\\< proje adı >\\< yapılandırma\>\\< platform\>**. Örneğin, proje yapılandırmasıyla `Debug` ve bir platformda `x86` altında bulunabilir `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Bu, kendi araçları veya bu yerleşik yürütülebilir dosyaları yönetme betikleriniz varsa yararlı olabilir.
+ Not: Projenizi yapılandırdığınızda, yapılandırma ve platform değerler hangi proje dizin yolu yürütülebilir depolamak için oluşturduğunuz belirlemek için de kullanılır. Bu genellikle  **\<yolu Proje >\\< proje adı >\\< yapılandırma\>\\< platform\>**. Örneğin, proje yapılandırmasıyla `Debug` ve bir platformda `x86` altında bulunabilir `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Bu, kendi araçları veya bu yerleşik yürütülebilir dosyaları yönetme betikleriniz varsa yararlı olabilir.
 
 ### <a name="building-your-code"></a>Kod oluşturma
  Yapınızı ile yapılandırılmış, aslında derleme zamanı geldi. F7, ancak basmak için bunu yapmanın en kolay yolu da yapı seçerek başlatabilirsiniz **Yapı Çözümü Derle ->** ana menüden.

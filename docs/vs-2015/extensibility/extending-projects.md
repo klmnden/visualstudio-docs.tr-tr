@@ -1,34 +1,29 @@
 ---
 title: Projeleri genişletme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ad4218447e6cc910ff98970d14a53d83ccc8497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72841d1f0bbc812d80528858384b14ced2048857
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773712"
 ---
 # <a name="extending-projects"></a>Projeleri Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Projeler ve çözümler, Visual Studio kodu ve kaynak dosyaları derleme ve dağıtım birimler halinde düzenler yöntemleri sunulmaktadır. Projeler hakkında daha fazla bilgi bulabilirsiniz [projeleri (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Visual Studio SDK'sı ve yönetilen paket çerçevesini adresinden indirebilirsiniz projeleri için kendi proje türleri oluşturma [projeleri için yönetilen paket çerçevesini](http://mpfproj12.codeplex.com/). Anlamak için özel projeler uygulanan edinmek bkz [yeni proje oluşturma: başlık altında Kısım](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) ve [yeni proje oluşturma: başlık altında ikinci Kısım](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Visual Studio SDK'sı ve yönetilen paket çerçevesini adresinden indirebilirsiniz projeleri için kendi proje türleri oluşturma [projeleri için yönetilen paket çerçevesini](http://mpfproj12.codeplex.com/). Anlamak için özel projeler uygulanan edinmek bkz [yeni proje oluşturma: Bir altyapı öğeleri, bölüm](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) ve [yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Bu bölümdeki konular, özel Proje nasıl oluşturulacağını ve Visual Studio çözümünün farklı türlerini yönetme açıklar.  
   
@@ -58,4 +53,3 @@ Projeler ve çözümler, Visual Studio kodu ve kaynak dosyaları derleme ve dağ
  Evrensel projelerinin nasıl yönetildiği açıklanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler
-

@@ -1,25 +1,20 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802635"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ Visual Studio 2015'te IntelliSense de tek bir kod dosyaları için proje dosyala
 - Satırı 12 mor dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda etkin olmayan Android.NativeActivity projesinde tanımlanmadı.  
   
 ## <a name="single-file-intellisense"></a>Tek dosya IntelliSense  
- Tek bir dosyayı dışında herhangi bir projeyi açtığınızda, IntelliSense almaya devam. Etkinleştirebilir veya giderek belirli özellikleri devre dışı bırak **metin düzenleyici, C/C++, Gelişmiş** etkinleştirmek veya IntelliSense özelliklerini devre dışı bırakmak için. Bir projenin parçası olmayan tek dosyalar için IntelliSense yapılandırmak için Ara **IntelliSense ve gözatma proje dışı dosyalar için** içinde **Gelişmiş** bölümü. Bkz: [Visual C++ Kılavuzlu Tur](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Tek bir dosyayı dışında herhangi bir projeyi açtığınızda, IntelliSense almaya devam. Etkinleştirebilir veya giderek belirli özellikleri devre dışı bırak **metin düzenleyici, C/C++, Gelişmiş** etkinleştirmek veya IntelliSense özelliklerini devre dışı bırakmak için. Bir projenin parçası olmayan tek dosyalar için IntelliSense yapılandırmak için Ara **IntelliSense ve gözatma proje dışı dosyalar için** içinde **Gelişmiş** bölümü. Bkz: [Visual C++ Kılavuzlu Tur](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Visual C&#43; &#43; tek dosya IntelliSense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -102,6 +97,3 @@ Visual Studio 2015'te IntelliSense de tek bir kod dosyaları için proje dosyala
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IntelliSense Kullanma](../ide/using-intellisense.md)
-
-
-

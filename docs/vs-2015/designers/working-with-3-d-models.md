@@ -1,25 +1,20 @@
 ---
 title: 3B modelleriyle çalışma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd22a3efecab0e544ddab7fff4ab795020ba0a4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d5d52f517e40ff7f61db904b81104bf1940938d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798458"
 ---
 # <a name="working-with-3-d-models"></a>3B Modelleriyle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Model Düzenleyicisi'nde kullanabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-
 |-----------|-----------------|  
 |[Model Düzenleyicisi](../designers/model-editor.md)|3B modellerle çalışmak için Model Düzenleyicisi'ni kullanmayı açıklar.|  
 |[Model Düzenleyici Örnekleri](../designers/model-editor-examples.md)|Model Düzenleyicisi ortak 3B model oluşturma görevleri gerçekleştirmek için nasıl kullanılacağını gösteren konulara bağlantılar sağlar.|
-
-
-

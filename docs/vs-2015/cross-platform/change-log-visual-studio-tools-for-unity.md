@@ -1,24 +1,20 @@
 ---
 title: Değişiklik günlüğü (Unity için Visual Studio Araçları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e21fdbd55ddfe6088a6b8a7ff4127a05b1fa4ce1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791972"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Değişiklik günlüğü (Unity için Visual Studio Araçları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -688,7 +684,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   Size sunduğumuz simgesi Visual Studio durum çubuğunda eklenemiyor, sabit kilitlenme.
 
-## <a name="1010"></a>zamanlarını 1.0.10
+## <a name="1010"></a>1.0.10
  Yayımlanan 2012-10-09
 
 ### <a name="bug-fixes"></a>Hata Düzeltmeleri
@@ -701,7 +697,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   Sabit dosyalar kilitlenmesini önlemek ve Unity yapı işlemi karıştırır Unity'de derlemeleri nasıl alınır.
 
-## <a name="109"></a>zamanlarını 1.0.9
+## <a name="109"></a>1.0.9
  Yayımlanan 2012-10-03
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
@@ -720,7 +716,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   UV'leri 21 hata düzeltildi: Unity matematik API için bir yöntem çağırmayla hesaplanırken geçersiz işaretçi.
 
-## <a name="108"></a>zamanlarını 1.0.8
+## <a name="108"></a>1.0.8
  Yayımlanan 2012-09-26
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri

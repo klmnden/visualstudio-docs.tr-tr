@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yerleşik bir sekmeyi özelleştirme'
+title: 'Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 939c9c6d2d50e9feb6a50d9b49b84620d96a03cc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859418"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872228"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>Nasıl Yapılır: Yerleşik bir sekmeyi özelleştirme
+# <a name="how-to-customize-a-built-in-tab"></a>Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme
   Yerleşik bir sekmeye grup ve denetim ekleyebilirsiniz. Yerleşik bir sekmeyi bir Microsoft Office uygulamasının Şerit üzerinde zaten var olan bir sekmedir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir. Özel bir grup oluşturduğunuzda, son sekmede görünür, ancak grubunuzun sekmesinde istediğiniz yere taşıyabilirsiniz.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  

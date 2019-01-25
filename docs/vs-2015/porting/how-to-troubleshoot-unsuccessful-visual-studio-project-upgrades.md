@@ -1,13 +1,9 @@
 ---
-title: 'Nasıl Yapılır: Başarısız bir proje yükseltmelerinde sorun giderme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Başarısız bir proje yükseltmelerinde sorun giderme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 f1_keywords:
 - VisualStudio.SourceControl.CannotOpenFromSourceControlDSW
 - vs.UpgradeProjectSolution.8.0
@@ -21,15 +17,15 @@ ms.assetid: 842fe448-c044-4343-8eae-d81711cf48ba
 caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 2e21feda11ef4d3405fa1488740fefe7c7238dc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942024"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804269"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Nasıl Yapılır: Başarısız Visual Studio Proje yükseltmelerinde sorun giderme
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Nasıl yapılır: Başarısız Visual Studio Proje yükseltmelerinde sorun giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bazı durumlarda Visual Studio tam olarak bir proje önceki bir sürümünü dönüştürülemiyor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aşağıdaki bölümlerde ipuçları belirli sorununuzu çözmezse, daha ayrıntılı bilgi TechNet'te olanağınız olabilir [Wiki: Geliştirme portalı](http://go.microsoft.com/fwlink/?LinkId=254808).

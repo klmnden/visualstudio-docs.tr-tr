@@ -1,14 +1,9 @@
 ---
 title: Biçim belirleyiciler C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -31,13 +26,13 @@ ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af24417bccd91bb55112d4da5e7896809169b9c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794729"
 ---
 # <a name="format-specifiers-in-c"></a>C# içindeki Biçim Belirticileri #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,8 +73,3 @@ ms.locfileid: "51754162"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
-
-
-
-

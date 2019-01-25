@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio, extending tools
 - extensibility [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, extending tools
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01a595536b85bac6948cee607af2e0897a7be1c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d70d9b5bac260dc0731d06ebb11780114f0edf5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867175"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>SharePoint araçlarını Visual Studio'da genişletme
   Visual Studio'da SharePoint araçları birçok uygulama geliştirme senaryosu gereksinimlerini karşılayın. Ancak, bunlar burada, sizin veya diğer geliştiriciler gerektiren işlevleri sağlamaz çalışmaları fark edebilirsiniz. Bu durumlarda, ihtiyacınız olan işlevleri oluşturmak için SharePoint araçları genişletebilirsiniz.

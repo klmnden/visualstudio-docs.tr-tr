@@ -1,13 +1,9 @@
 ---
 title: XML Araçları
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -36,13 +32,13 @@ ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d67412130bfe28b2d344634493f70f4136d060d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2812e45460778a3527f55522c6d3fc98285a548d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786306"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +60,7 @@ Genişletilebilir Biçimlendirme Dili (XML) * veri tanımlamak için bir biçim 
 ## <a name="reference"></a>Başvuru
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) sunan [XML Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=228249) ayrıştırma ağacı aracılığıyla [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) XML belgeleri için.
 
- [XML standartları başvurusu](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
+ [XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
 
  <xref:System.Xml?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklayan <xref:System.Xml> ad alanı ve her bir öğede daha ayrıntılı bilgi için bağlantılar sağlar.
 
@@ -73,9 +69,9 @@ Genişletilebilir Biçimlendirme Dili (XML) * veri tanımlamak için bir biçim 
 ## <a name="related-sections"></a>İlgili Bölümler
  [XML belge nesne modeli (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Describes nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (çekirdek) Düzey 1 ve 2. düzey ad alanı desteği belirtimleri ile uyumlu.
 
- [XmlReader okuma XML](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182) Describes nasıl <xref:System.Xml.XmlReader> Önbelleklenmemiş, iletme yalnızca, salt okunur erişim XML verilerini bir XML akışı sağlar.
+ [XmlReader okuma XML](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Describes nasıl <xref:System.Xml.XmlReader> Önbelleklenmemiş, iletme yalnızca, salt okunur erişim XML verilerini bir XML akışı sağlar.
 
- [XML XmlWriter ile yazma](http://msdn.microsoft.com/en-us/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) Describes nasıl <xref:System.Xml.XmlWriter> Önbelleklenmemiş, sağlar. yalnızca XML akışlarını ve W3C standardı ile uyum XML belgeleri oluşturmanıza yardımcı olur oluşturma yolu iletin.
+ [XML XmlWriter ile yazma](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) Describes nasıl <xref:System.Xml.XmlWriter> Önbelleklenmemiş, sağlar. yalnızca XML akışlarını ve W3C standardı ile uyum XML belgeleri oluşturmanıza yardımcı olur oluşturma yolu iletin.
 
  [XSLT dönüşümleri](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) Describes nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
 

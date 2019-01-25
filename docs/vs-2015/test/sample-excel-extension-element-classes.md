@@ -1,26 +1,21 @@
 ---
 title: 'Örnek Excel uzantısı: Öğe sınıfları | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796047"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Örnek Excel Eklentisi: Öğe Sınıfları
+# <a name="sample-excel-extension-element-classes"></a>Örnek Excel uzantısı: Öğe Sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Öğesinden türetilen sınıflarda uzantı kullanır <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> ve çalışma ve hücre denetimi içinde temsil [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
@@ -33,7 +28,7 @@ ms.locfileid: "49811952"
 #### <a name="simple-properties-and-methods"></a>Basit özellikleri ve yöntemleri  
  Bu üyeler dönüş değerini gibi basit değerleri `Name` özelliği veya değerinin `ClassName` özelliği ve kod NET ve kolay okunur. Bazı değerler kullanarak döndürülür `Utility` daha sonra açıklanan sınıfı. Başkalarının dönüş `null` olduğundan bu örnek uzantıyla ilgili değildir. İki üyesi diğerlerine göre daha ilgi çekici: <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A> özelliği ve <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.CacheProperties%2A> yöntemi.  
   
-#### <a name="queryid-property"></a>QueryId özelliği  
+#### <a name="queryid-property"></a>QueryId Property  
  Bu özellik benzersiz olarak tanımlanabilmesi denetim kayıttan yürütme sırasında özellik ad-değer çiftleri yapılan bir koşul döndürür. Her denetim türetilmiş sınıf için geliştirici döndürmek için bu özellik geçersiz kılmanız gerekir bir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> framework denetimin kullanıcı Arabiriminde bulmak için kullanabileceğiniz nesne.  
   
 #### <a name="cacheproperties-method"></a>CacheProperties yöntemi  
@@ -58,6 +53,3 @@ ms.locfileid: "49811952"
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

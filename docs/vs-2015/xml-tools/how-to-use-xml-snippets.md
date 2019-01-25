@@ -1,27 +1,22 @@
 ---
 title: 'Nasıl yapılır: XML kod parçacıklarını kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798464"
 ---
-# <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML kod parçacıklarını kullanma
+# <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML Kod Parçacıklarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -113,12 +108,9 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
   
  ENTER veya ESC tuşuna basarak alan düzenleme iptal eder ve düzenleyici normale döner.  
   
- Düzenlenebilir bir kod parçacığı alanlar için varsayılan renkleri, kod parçacığı alanı ayarı değiştirerek değiştirilebilir **yazı tipleri ve renkler** bölmesinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: değişiklik yazı tipleri ve renkler Düzenleyicisi'nde](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ Düzenlenebilir bir kod parçacığı alanlar için varsayılan renkleri, kod parçacığı alanı ayarı değiştirerek değiştirilebilir **yazı tipleri ve renkler** bölmesinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Yazı tipleri ve renkler düzenleyicisinde değişiklik](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML kod parçacıkları](../xml-tools/xml-snippets.md)   
  [Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Nasıl Yapılır: XML Kod Parçacıkları Oluşturma](../xml-tools/how-to-create-xml-snippets.md)
-
-
-
+ [Nasıl yapılır: XML kod parçacıkları oluşturma](../xml-tools/how-to-create-xml-snippets.md)

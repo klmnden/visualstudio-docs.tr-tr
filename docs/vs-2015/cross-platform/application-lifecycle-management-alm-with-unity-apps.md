@@ -1,25 +1,20 @@
 ---
 title: Unity uygulamaları ile uygulama yaşam döngüsü yönetimi (ALM) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778597"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
  Aşağıdaki tablolarda, Visual Studio ALM özelliklerini nasıl uygulamak veya Unity ile çalışırken, uygulama tanımlar. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.  
   
 ## <a name="agile-tools"></a>Çevik Araçlar  
- Başvuru bağlantısı: **[iş](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services veya Team Explorer Everywhere dahil TFS'nin kullanarak)  
+ Başvuru bağlantısı: **[İş](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (Visual Studio Team Services veya Team Explorer Everywhere dahil TFS'nin kullanarak)  
   
  Genel Açıklama: tüm planlama ve izleme özellikleri proje türü ve dilleri kodlama bağımsız olarak çalışır.  
   
@@ -45,9 +40,9 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
 |Rapor ve ilerleme durumunu görselleştirin|Evet||  
   
 ## <a name="modeling"></a>Modelleme  
- Başvuru bağlantısı:  **[çözümleme ve modelleme mimarisi](../modeling/analyze-and-model-your-architecture.md)**  
+ Başvuru bağlantısı: **[Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)**  
   
- Genel Açıklama: Bu tasarım özellikleri kodlama dili ya da bağımsız olduğundan veya C# .NET dilleri ile çalışır, ancak bunlar bir geleneksel uygulama paradigma nesne hiyerarşileri ve sınıf ilişkiler üzerinde çalışır. İçinde Unity oyun tasarlama gerektirir farklı paradigma tamamen, yani ilişkileri grafik nesneleri, ses, gölgelendiricilerin, betikler ve benzeri. Bu nedenle, Visual Studio diyagramı modelleme araçları bir Unity proje bütün özellikle ilgili değildir. C# betiklerini içindeki ilişkileri yönetmek için büyük olasılıkla kullanılabilir, ancak tüm yalnızca bir parçası olan.  
+ Genel Açıklama: Bu tasarım özellikleri kodlama dili ya da bağımsız olduğundan veya .NET dilleri ile iş istiyor ancak C#, bir nesne hiyerarşileri ile geleneksel uygulama paradigma üzerinde çalışır ve sınıf ilişkileri. İçinde Unity oyun tasarlama gerektirir farklı paradigma tamamen, yani ilişkileri grafik nesneleri, ses, gölgelendiricilerin, betikler ve benzeri. Bu nedenle, Visual Studio diyagramı modelleme araçları bir Unity proje bütün özellikle ilgili değildir. C# betiklerini içindeki ilişkileri yönetmek için büyük olasılıkla kullanılabilir, ancak tüm yalnızca bir parçası olan.  
   
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
@@ -79,7 +74,7 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
 3.  Unity proje ikili varlıkları — dokular ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkileyen çeşitli Git gibi kaynak denetimi sistemlerini yapılmış her değişiklik için bir dosyanın benzersiz bir kopyasını depolar. Bu, Git deposu bloated olacak neden olabilir. Bunu ele almak için Unity geliştiricileri genellikle yalnızca son varlıklar, depoya ekleyebilir ve kendi varlıklar, OneDrive, DropBox veya git-annex gibi çalışma geçmişini tutmak farklı bir yol seçin. Bu yaklaşım çalışır, çünkü bu tür varlıklar genellikle kaynak kodu değişiklikleri birlikte tutulan olmanız gerekmez. Geliştiriciler ayrıca genellikle zorla kaynak denetiminde birleştirmeleri izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için metin proje Düzenleyicisi'nin varlık serileştirme modunu ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belgeleri).  
   
 ## <a name="build"></a>Derleme  
- Başvuru bağlantısı:  **[oluşturun](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Başvuru bağlantısı: **[Derleme](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
@@ -90,7 +85,7 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
 |Sürekli Tümleştirme dahil olmak üzere Geçitli iade|Evet|TFVC için Geçitli iade yalnızca Git iadeler yerine bir çekme isteği model üzerinde çalışır.|  
   
 ## <a name="testing"></a>Sınama  
- Başvuru bağlantısı:  **[uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Başvuru bağlantısı: **[Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
@@ -102,7 +97,7 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
 |[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)|Hayır|Kodlanmış UI testleri, uygulamanın kullanıcı arabiriminde okunabilir denetimleri dayanır; Unity uygulamaları doğası gereği grafik ve böylece içerik kodlanmış UI test araçları tarafından okunabilir değil.|  
   
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme  
- Başvuru bağlantısı:  **[kod kalitesini iyileştirmek](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Başvuru bağlantısı: **[Kod kalitesini geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
@@ -113,7 +108,7 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
 |[.NET Framework bellek sorunlarını çözümleme](../misc/analyze-dotnet-framework-memory-issues.md)|Hayır|Visual Studio Araçları, profil oluşturma için Mono framework (olarak Unity tarafından kullanılan) içine kancaları yoktur. Kullanım [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity belgeleri).|  
   
 ## <a name="release-management"></a>Yayın yönetimi  
- Başvuru bağlantısı:  **[sürüm yönetimi ile dağıtımları otomatikleştirme](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Başvuru bağlantısı: **[Sürüm yönetimi ile dağıtımları otomatikleştirme](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
@@ -122,11 +117,8 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
 |App Store'a yükle|Kısmi|Kullanılabilir uzantılar bazı uygulama mağazaları için bu işlemi otomatikleştirmek.  Bkz: [için Visual Studio Team Services uzantıları](https://marketplace.visualstudio.com/VSTS); Örneğin, [uzantısı için Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp ile izleme  
- Başvuru bağlantısı:  **[HockeyApp ile izleme](https://www.hockeyapp.net/features/)**  
+ Başvuru bağlantısı: **[HockeyApp ile izleme](https://www.hockeyapp.net/features/)**  
   
 |Özellik|Unity ile desteklenen|Ek Açıklamalar|  
 |-------------|--------------------------|-------------------------|  
 |Kilitlenme analizi, telemetri ve beta dağıtım|Evet|HockeyApp, beta dağıtım işleme ve kilitlenme raporları elde etmek için özellikle yararlıdır.<br /><br /> C# komut dosyalarından daha fazla telemetri için koşuluyla Unity tarafından kullanılan .NET sürümünü çalıştıran herhangi bir analiz çerçeveyi kullanmak da mümkündür. Ancak, bu yalnızca içinde oyun betikleri ve Unity altyapısı içinde değil daha derin analizi sağlar. Şu anda hiçbir eklentisi için Application Insights yoktur, ancak diğer analiz çözümleri için kullanılabilir gibi olan eklentiler [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) ve [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Unity proje yapısını anlamak Unity analiz eder, Elbette gibi hizmetleri genel çerçeveleri daha çok daha anlamlı analizi sağlar.|
-
-
-

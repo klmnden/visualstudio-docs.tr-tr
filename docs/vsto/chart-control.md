@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Chart control [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edeaa0df7841795548637cabbd471daad9d2e878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f31cfeab76018658ada9cc449af287cfca4abf4f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826211"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867058"
 ---
 # <a name="chart-control"></a>Grafik denetimi
   <xref:Microsoft.Office.Tools.Excel.Chart> Olayları ortaya koyan bir çizelge nesnesine bir denetimdir. Visual Studio bir grafik çalışma sayfasına eklediğinizde, oluşturur bir <xref:Microsoft.Office.Tools.Excel.Chart> Microsoft Office Excel nesne modeline geçiş yapmak zorunda kalmadan doğrudan programlayabileceğiniz, nesne.  

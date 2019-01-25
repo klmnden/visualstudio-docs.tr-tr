@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: artımlı olarak derleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Artımlı olarak derleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,15 +12,15 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844631"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803916"
 ---
-# <a name="how-to-build-incrementally"></a>Nasıl Yapılır: Artımlı Olarak Derleme
+# <a name="how-to-build-incrementally"></a>Nasıl yapılır: Artımlı Olarak Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -67,9 +62,9 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri 
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, Yardım dosyaları kuramsal bir Yardım sistemine için oluşturan bir proje kullanır. Proje, kaynak .txt dosyaları Yardım sistemi tarafından kullanılan son .help dosyası üretmek için XML meta veri dosyaları ile birleştirilen Ara .content dosyaları dönüştürerek çalışır. Proje aşağıdaki kuramsal görevleri kullanır:  
   
-- `GenerateContentFiles`: .txt dosyaları .content dosyalarına dönüştürür.  
+- `GenerateContentFiles`: .Txt dosyalarını .content dosyalarına dönüştürür.  
   
-- `BuildHelp`: .content ve son .help dosyasını oluşturmak için XML meta veri dosyaları birleştirir.  
+- `BuildHelp`: .Content ve son .help dosyasını oluşturmak için XML meta veri dosyaları birleştirir.  
   
   Proje dönüşümler girdi arasında bire bir eşleme oluşturmak için kullanır ve içinde çıkaran `GenerateContentFiles` görev. Daha fazla bilgi için [dönüştüren](../msbuild/msbuild-transforms.md). Ayrıca, `Output` öğesi çıkışları otomatik olarak kullanmak üzere ayarlanmış `GenerateContentFiles` görevi için girişler olarak `BuildHelp` görev.  
   
@@ -116,6 +111,3 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri 
  [Dönüşümler](../msbuild/msbuild-transforms.md)   
  [CSC görevi](../msbuild/csc-task.md)   
  [Vbc Görevi](../msbuild/vbc-task.md)
-
-
-

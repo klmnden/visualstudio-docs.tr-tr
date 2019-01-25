@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belgelere yönetilen kod uzantıları ekleme'
+title: 'Nasıl yapılır: Belgelere yönetilen kod uzantıları ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e54e8f4b2cb4e94a83446497c24f9f808210f7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a2c218453edfa29d79ae4acb8dcf4ccd0010eab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849800"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865651"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Nasıl Yapılır: Belgelere yönetilen kod uzantıları ekleme
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Nasıl yapılır: Belgelere yönetilen kod uzantıları ekleme
   Bir mevcut Microsoft Office Word belgesi veya Microsoft Office Excel çalışma kitabını özelleştirme bütünleştirilmiş kodu ekleyebilirsiniz. Belge veya çalışma kitabı Microsoft Office projeleri ve Visual Studio geliştirme araçları tarafından desteklenen herhangi bir dosya biçiminde olabilir. Daha fazla bilgi için [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

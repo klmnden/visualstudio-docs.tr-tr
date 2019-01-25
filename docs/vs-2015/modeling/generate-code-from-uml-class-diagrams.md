@@ -1,12 +1,9 @@
 ---
 title: UML sınıf diyagramlarından kod oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802169"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML sınıf diyagramları aracılığıyla kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
  Visual Studio'da UML sınıf diyagramları hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
 
-- [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
+- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
 
-- [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)  
 
   UML sınıf diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -240,9 +237,6 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 - `<#= Expressions #>` değerlendirilir ve dizelere dönüştürülür.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
  [UML modeli aracılığıyla dosya oluşturma](../modeling/generate-files-from-a-uml-model.md)
-
-
-

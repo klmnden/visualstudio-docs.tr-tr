@@ -1,14 +1,9 @@
 ---
 title: 'Hızlı Başlangıç: C / C++ için Kod Analizi | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,15 +11,15 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758190"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789867"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ İçin Kod Çözümleme
+# <a name="quick-start-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ için Kod Analizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kalitesini artırabilir. Bu yaygın sorunlar, iyi bir programlama uygulama ya da test sürecinde bulmak zor olan hataları ihlalleri bulmanıza yardımcı olabilir. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için Kod Analizi arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir.  
@@ -130,11 +125,8 @@ Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kali
 ##  <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme  
  Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.  
   
-1.  **Başlık veya Uyarı Kimliği Filtresi uyarılarını için**: anahtar sözcüğü girin **filtre** metin kutusu.  
+1.  **Başlık veya Uyarı Kimliği Filtresi uyarılarını için**: Anahtar sözcüğü girin **filtre** metin kutusu.  
   
-2.  **Proje tarafından Filtresi uyarılarını için**: çok projeli bir çözüm, listenin en üstünde bir veya daha fazla projelerinde seçin Kod Analizi penceresinin sağ. Tüm uyarıları görüntülemek için çözüm adı seçin.  
+2.  **Proje tarafından Filtresi uyarılarını için**: Listenin en üstünde bir veya daha fazla projelerinde çok projeli bir çözüm içinde seçin Kod Analizi penceresinin sağ. Tüm uyarıları görüntülemek için çözüm adı seçin.  
   
-3.  **Filtre Uyarıları önem derecesine göre için**: varsayılan olarak, Kod Analizi ileti önem derecesi atanan **uyarı**. Bir veya daha fazla ileti olarak önemi atamak için **hata** özel bir kuralda ayarlayın. Seçin ya da **uyarı** veya **hata** ilgili önem atanmış olan iletileri görüntülemek için. Seçin **tüm** tüm iletileri görüntülemek için.
-
-
-
+3.  **Filtre Uyarıları önem derecesine göre için**: Varsayılan olarak, Kod Analizi ileti önem derecesi atanan **uyarı**. Bir veya daha fazla ileti olarak önemi atamak için **hata** özel bir kuralda ayarlayın. Seçin ya da **uyarı** veya **hata** ilgili önem atanmış olan iletileri görüntülemek için. Seçin **tüm** tüm iletileri görüntülemek için.

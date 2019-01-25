@@ -1,14 +1,9 @@
 ---
 title: ClickOnce Uygulama bildirimi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795098"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Uygulama Bildirimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +34,19 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi kull
 |-------------|-----------------|----------------|  
 |[\<derleme > öğesi](../deployment/assembly-element-clickonce-application.md)|Gerekli. En üst düzey öğe.|`manifestVersion`|  
 |[\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-application.md)|Gerekli. Birincil derlemenin tanımlayan [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo > öğesi](../deployment/trustinfo-element-clickonce-application.md)|Uygulama güvenlik gereksinimlerini tanımlar.|Yok.|  
+|[\<trustInfo > öğesi](../deployment/trustinfo-element-clickonce-application.md)|Uygulama güvenlik gereksinimlerini tanımlar.|Hiçbiri|  
 |[\<entryPoint > öğesi](../deployment/entrypoint-element-clickonce-application.md)|Gerekli. Uygulama kodu giriş noktasını tanımlar.|`name`|  
-|[\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md)|Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar.|Yok.|  
+|[\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md)|Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar.|Hiçbiri|  
 |[\<Dosya > öğesi](../deployment/file-element-clickonce-application.md)|İsteğe bağlı. Uygulama tarafından kullanılan her nonassembly dosyayı tanımlar. Dosya ile ilgili Bileşen Nesne Modeli (COM) yalıtım veriler içerebilir.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > öğesi](../deployment/fileassociation-element-clickonce-application.md)|İsteğe bağlı. Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Açıklamalar  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Kullanarak dağıtılmış bir uygulamada uygulama bildirim dosyasını tanımlayan [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Hakkında daha fazla bilgi için [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], bkz: [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  
   
-## <a name="file-location"></a>Dosya konumu  
+## <a name="file-location"></a>Dosya Konumu  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi dağıtımı tek bir sürümüne özeldir. Bu nedenle, bunlar ayrı olarak dağıtım bildirimlerinden depolanması gerekir. Genel kural bunları ilişkili sürümü adlı bir alt dizinde yerleştirmektir.  
   
- Uygulama bildirimini her zaman dağıtımdan önce oturum açmanız gerekir. Bir uygulama bildirimi el ile değiştirirseniz, mage.exe uygulama bildirimini yeniden imzalamanız, dağıtım bildirimini güncelleştirin ve ardından dağıtım bildirimini yeniden imzalamanız için kullanmanız gerekir. Daha fazla bilgi için [izlenecek yol: ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Uygulama bildirimini her zaman dağıtımdan önce oturum açmanız gerekir. Bir uygulama bildirimi el ile değiştirirseniz, mage.exe uygulama bildirimini yeniden imzalamanız, dağıtım bildirimini güncelleştirin ve ardından dağıtım bildirimini yeniden imzalamanız için kullanmanız gerekir. Daha fazla bilgi için [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="file-name-syntax"></a>Dosya adı sözdizimi  
  Adı bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirim dosyası olmalıdır tam adını ve uzantısını uygulamanın tanımlandığı gibi `assemblyIdentity` uzantısı .manifest tarafından izlenen öğe. Örneğin, aşağıdaki dosya adı sözdizimi Example.exe uygulamasını bir uygulama bildirimi kullanmanız gerekir.  
@@ -124,6 +119,3 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi kull
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulamalarını Yayımlama](../deployment/publishing-clickonce-applications.md)
-
-
-

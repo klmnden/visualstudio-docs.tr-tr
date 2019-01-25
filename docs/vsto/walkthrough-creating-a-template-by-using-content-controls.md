@@ -9,17 +9,17 @@ helpviewer_keywords:
 - building blocks [Office development in Visual Studio]
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b2bc96a9df16c43c8fe4e66dbed4079a1ae3a40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931992"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874187"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>İzlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma
   Bu yönerge, yapılandırılmış ve yeniden kullanılabilir içerik bir Microsoft Office Word şablonu oluşturmak için içerik denetimlerini kullanan bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.  

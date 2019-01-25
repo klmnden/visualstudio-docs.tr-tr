@@ -1,14 +1,9 @@
 ---
-title: "İzlenecek yol: Görselleştiriciyi C# ' de yazma | Microsoft Docs"
-ms.custom: ''
+title: 'İzlenecek yol: Görselleştirici yazma C# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e265810e30423064e27b1650f57fb054743341ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a179ae7fbfc0a947725bf47a2e2c86187e0adebd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777725"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek Yol: C# ile Görselleştirici Yazma #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek yol: C# ile Görselleştirici yazma #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu kılavuz, C# kullanarak basit Görselleştirici yazma işlemi gösterilmektedir. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici kendisi özellikle kullanışlı değildir, ancak diğer veri türleri için daha faydalı görselleştiriciler oluşturmak için izlemeniz gereken temel adımlarda gösterilir.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Git **Araçları** menüsünü seçip **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Git **Araçları** menüsünü seçip **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Görselleştirici kod bir DLL'de hata ayıklayıcı tarafından okunacak yerleştirilmelidir. Bu nedenle, ilk adım bir sınıf kitaplığı projesi DLL için oluşturmaktır.  
   
@@ -266,6 +261,3 @@ Bu kılavuz, C# kullanarak basit Görselleştirici yazma işlemi gösterilmekted
  [Görselleştirici mimarisi](../debugger/visualizer-architecture.md)   
  [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)   
  [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
-
-
-

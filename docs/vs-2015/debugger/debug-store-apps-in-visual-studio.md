@@ -1,13 +1,9 @@
 ---
 title: Hata ayıklama Store uygulamaları
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,13 +13,13 @@ ms.assetid: 48a85bcf-290b-4390-9993-f6f9dd73ad03
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1798d0b9d228cd2547ab596edfc3a4c8f6b69a56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f1f8824000c56fbd74f6ca069eb0535559698bf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797494"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Visual Studio'da Store uygulamalarının hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +33,7 @@ Visual Studio hata ayıklayıcı, bir programın yürütülmesini denetlemenize 
 |[Hata ayıklama oturumu başlatma (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|Hata ayıklama oturumu başlatmak yapılandırma ve bir JavaScript uygulaması için hata ayıklama oturumu başlatmak için farklı seçenekleri açıklar.|
 |[Hata ayıklama oturumunda yürütmeyi denetleme (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|Hata ayıklayıcı gezintisi nasıl Başlat ve hata ayıklamayı durdurmak, kodu nasıl gittiğini ve program durumunu görüntülemek nasıl erişileceğini gösteren basit bir uygulama alır.|
 |[Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)|Hata ayıklama HTML ve CSS göstermektedir etkileşimli bir JavaScript uygulamasında, görüntülemek ve HTML ve CSS değiştirmek için Canlı DOM İnceleme araçları kullanarak hata ayıklama.|
-|[Hızlı Başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|Konsolu kullanarak JavaScript hata ayıklama, etkileşimli bir JavaScript uygulamasını kullanarak hata ayıklama gösterir [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).|
+|[Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|Konsolu kullanarak JavaScript hata ayıklama, etkileşimli bir JavaScript uygulamasını kullanarak hata ayıklama gösterir [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).|
 |[Hata ayıklama oturumu başlatma (VB, C#, C++ ve XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|Nasıl (Visual C++, Visual C# ve Visual Basic) hata ayıklama oturumu başlatmak için yapılandırma ve Visual C++, Visual C# veya Visual Basic ile yazılan bir uygulama için hata ayıklama oturumu başlatmak için farklı seçenekleri açıklar.|
 |[Bir hata ayıklama oturumunda gezinme (Xaml ve C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|Hata ayıklayıcı gezintisi nasıl Başlat ve hata ayıklamayı durdurmak, kodu nasıl gittiğini ve görüntüleme ve programın durumunu değiştirebilir gösteren basit bir uygulama alır.|
 |[Windows Mağazası için askıya alma, sürdürme ve arka plan olaylarını tetikleme)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Hata ayıklayıcı askıya alma, sürdürme ve uygulamaları sonlandırın olayları Windows işlem ömrü Yönetimi (PLM) devre dışı bırakır. Hata ayıklayıcı araç çubuğundan bu olayları tetikleyebilir.<br /><br /> Arka plan görevleri, uygulama askıya alındı, önemli bir işlemi gerçekleştirmeye olanak sağlar. Hata ayıklayıcı etkinleştirir başlatın ve bu hata ayıklama arka plan görevi.|

@@ -1,25 +1,20 @@
 ---
-title: '6. adım: çıkarma problemi ekleme | Microsoft Docs'
-ms.custom: ''
+title: '6. Adım: Çıkarma problemi ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 793204bf4a08d09d7ce6e48e37254dd311ac6a08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796630"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6. Adım: Çıkarma Problemi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,9 +83,6 @@ Intellisense'da Next() yöntemi için aşırı yükleme
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [7. adım: ekleme çarpma ve bölme problemleri](../ide/step-7-add-multiplication-and-division-problems.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 7: Çarpma ve bölme problemleri ekleme](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [5. adım: ekleme girmek için olay işleyicileri NumericUpDown denetimleri](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [5. adım: Ekleme NumericUpDown denetimleri için giriş olay işleyicileri girin](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

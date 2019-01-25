@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: bulma ve düzenleme proje ve öğe şablonları | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bulma ve düzenleme proje ve öğe şablonları | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,15 +15,15 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778532"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl Yapılır: Proje ve Öğe Şablonlarını Bulma ve Düzenleme
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl yapılır: Bulma ve düzenleme proje ve öğe şablonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Şablon dosyaları, Visual Studio tanır ve böylece şablonları görünür bir konumda yerleştirilmelidir **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları. Alt kategoriler, ayrıca kullanıcı arabiriminde görünmesi için şablonları için özel alt kategorileri oluşturabilirsiniz.  
@@ -122,7 +117,7 @@ ms.locfileid: "49830983"
   
 1. Özel proje şablonu dizini dil klasöründe bir klasör oluşturun. Örneğin, bir HelloWorld kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] şablonları, şu dizin oluşturma:  
   
-    \My belgeleri\\< Visual Studio sürümü\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
   
@@ -182,7 +177,4 @@ ms.locfileid: "49830983"
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio şablonları)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)   
- [Nasıl Yapılır: Öğe Şablonları Oluşturma](../ide/how-to-create-item-templates.md)
-
-
-
+ [Nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)

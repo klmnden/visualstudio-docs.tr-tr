@@ -1,25 +1,20 @@
 ---
 title: Bağlam menüleri (XML Şeması Gezgini) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756794"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Bağlam menüleri (XML Şeması Gezgini)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlem
 |**Genel öğeler Göster**|Bulur ve şema kümesindeki tüm genel öğeler vurgulanır.|  
 |**Özellik Penceresi**|Açılır **özellikleri** penceresi (Bunu zaten açık değilse). Bu pencere, düğüm hakkında bilgi görüntüler.|  
   
-## <a name="node-type-namespace"></a>Düğüm türü: Namespace  
+## <a name="node-type-namespace"></a>Düğüm türü: Ad Alanı  
  Aşağıdaki tabloda, bir ad alanı düğümü için kullanılabilir seçenekleri açıklar.  
   
 |Seçenek|Açıklama|  
@@ -48,7 +43,7 @@ Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlem
 |**Genel öğeler Göster**|Bulur ve seçilen ad alanındaki tüm genel öğeler vurgulanır.|  
 |**Özellik Penceresi**|Açılır **özellikleri** penceresi (Bunu zaten açık değilse). Bu pencere, düğüm hakkında bilgi görüntüler.|  
   
-## <a name="node-type-file"></a>Düğüm türü: dosya  
+## <a name="node-type-file"></a>Düğüm türü: Dosya  
  Aşağıdaki tabloda, bir dosya düğümü için kullanılabilir seçenekleri açıklar.  
   
 |Seçenek|Açıklama|  
@@ -70,7 +65,7 @@ Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlem
 |**Kodu Görüntüle**|XML Düzenleyicisi'nde seçili düğümü içeren dosyayı açar. XML şema Gezgini içinde seçili öğenin XML Düzenleyicisi'nde da seçilir.|  
 |**Özellik Penceresi**|Açılır **özellikleri** penceresi (Bunu zaten açık değilse). Bu pencere, düğüm hakkında bilgi görüntüler.|  
   
-## <a name="node-type-element"></a>Düğüm türü: öğesi  
+## <a name="node-type-element"></a>Düğüm türü: Öğe  
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra öğe düğümlerinin için bağlam menüsünü aşağıdaki seçeneklere sahiptir:  
   
 |Seçenek|Açıklama|  
@@ -92,7 +87,7 @@ Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlem
 |**Tüm türetilmiş türleri Göster**|Bulur ve doğrudan ve dolaylı olarak seçilen türünden türetilen tüm türler vurgular.|  
 |**Tüm üst öğeleri göster**|Tüm (Temel) üst türleri gösterir.|  
   
-## <a name="node-type-attribute"></a>Düğüm türü: özniteliği  
+## <a name="node-type-attribute"></a>Düğüm türü: Öznitelik  
  Yukarıda açıklanan genel düğüm seçeneklerinin yanı sıra, öznitelik düğümleri için bağlam menüsünü aşağıdaki seçeneklere sahiptir:  
   
 |Seçenek|Açıklama|  
@@ -122,6 +117,3 @@ Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlem
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML şema Gezgini](../xml-tools/xml-schema-explorer.md)   
  [Şema Kümesini Arama](../xml-tools/searching-the-schema-set.md)
-
-
-

@@ -1,11 +1,8 @@
 ---
-title: 'Nasıl yapılır: ifade düzenleyicisini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İfade düzenleyicisini kullanma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
@@ -13,15 +10,15 @@ ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800341"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: ifade düzenleyicisini kullanma
+# <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: İfade Düzenleyicisini Kullanma
 İfade Düzenleyicisi olduğu bir [!INCLUDE[wfd1](../includes/wfd1-md.md)] birçok iş akışı etkinliklerinde girme ve şu ifadeleri değerlendirme bir yol kullanılan bir denetim. İfade Düzenleyicisi düzenleme deneyimi, IntelliSense dahil olmak üzere tam özellikli bir IDE sağlar, renklendirme Paramınfo, diğer özellikler arasında hata ilişkilendirmelerini. Bunu girildikten sonra derleyici ifadesini doğrular. İfade geçersizse, bir hata simgesi görüntülenir. Düzenleyici olarak de açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.  
   
  İfadelerdir değişmez değerler veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kod bağlı bağımsız değişkenler veya özellikleri. Yeni bir değer yield işlemleriyle birlikte değeri öğeleri (örneğin değişkenleri, sabitleri, sabit değerleri, özellikleri) içerirler. İfadeler, C# kullanarak bir programda uygulaması olsa bile VB.NET söz dizimini kullanarak yazılır. Büyük/küçük harf önemli değildir, karşılaştırma kullanarak gerçekleştirilir yani tek bir eşittir ("=") işareti ("==") yerine, Boole işleçleri sözcüklerdir "ve" ve "veya" sembolleri yerine "& &" ve "&#124;&#124;", ve **hiçbir şey**  yerine kullanılan **null**. İfadeler ve işleçler hakkında daha fazla bilgi için [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve bazı örnekler için bkz: [işleçler ve ifadeler Visual Basic'te](http://go.microsoft.com/fwlink/?LinkId=186818).  

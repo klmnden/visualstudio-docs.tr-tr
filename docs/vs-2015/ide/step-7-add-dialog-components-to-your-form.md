@@ -1,25 +1,20 @@
 ---
-title: '7. adım: Formunuza iletişim kutusu bileşenleri ekleme | Microsoft Docs'
-ms.custom: ''
+title: '7. Adım: Formunuza iletişim kutusu bileşenleri ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 051f88f81f443b1748ce3d8b0c9ce33e89fac77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796665"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7. Adım: Formunuza İletişim Kutusu Bileşenleri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
   
  Bazı açılardan denetim gibi bir bileşenidir. Formunuza bir bileşen eklemek için araç kutusunu kullanın ve kullanarak onun özelliklerini ayarlarsınız **özellikleri** penceresi. Ancak denetimden farklı olarak formunuza bir bileşen eklemek, kullanıcının formda görebileceği görünür bir öğe eklemez. Bunun yerine, kod ile tetikleyebileceğiniz belirli davranışlar sağlar. Açılır bir bileşendir bir **açık dosya** iletişim kutusu.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 3 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205213) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+ ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 3 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205213) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-add-dialog-components-to-your-form"></a>Formunuza iletişim kutusu bileşenleri eklemek için  
   
@@ -50,7 +45,7 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*  
         ```  
   
-    -   Ayarlama **başlık** özelliğini aşağıdaki: **bir resim dosyası seçin**  
+    -   Ayarlama **başlık** özelliğini aşağıdaki: **Bir resim dosyası seçin**  
   
          **Filtre** özellik ayarları görüntülenecek dosya türlerinin çeşitlerini belirtir **Resim Seç** dosya iletişim kutusu.  
   
@@ -59,9 +54,6 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 8: bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [6. adım: ad bilgisayarınızı düğme denetimleri](../ide/step-6-name-your-button-controls.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [adım 6: Düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md).

@@ -1,27 +1,22 @@
 ---
 title: Durum Kalıcılık desteği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - state persistence, managed package framework support
 - managed package framework, state persistence support
 - state, persistence
 ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
-manager: douge
-ms.openlocfilehash: 2b7eb294b38a5fb19303a175347adcdaa0f0ba22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6dc542d2e410b79a21e436a1881c06bd3cc4eef8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801814"
 ---
 # <a name="support-for-state-persistence"></a>Durum Kalıcılık desteği
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortak nesneleri durumunu koruyabilir. Örneğin, çözüm ve proje özellikleri için kaydedilir ve çözüm ve proje dosyalarından geri. Kullanıcı ayarları için dışarı ve ayarları dosyalarından içeri aktarıldı.  

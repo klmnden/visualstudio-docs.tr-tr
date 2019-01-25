@@ -11,15 +11,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], counting characters
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6ec83d219d8f54691165b7de7008b13d3347d16
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 57babe4379482c4718990bac936c8bc7f930e112
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091422"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872631"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Nasıl yapılır: Program aracılığıyla karakter sayma sayısı
   İlk karakter bir belge, ekleme noktasını temsil eden karakter 0. konumdadır. Son karakter konumundan belgede toplam karakter sayısı eşittir. Kullanarak bir belgedeki karakter sayısına göre belirleyebilirsiniz <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> özelliği <xref:Microsoft.Office.Interop.Word.Characters> koleksiyonu.  

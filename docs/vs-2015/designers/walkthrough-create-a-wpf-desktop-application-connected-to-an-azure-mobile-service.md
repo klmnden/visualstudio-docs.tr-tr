@@ -1,27 +1,22 @@
 ---
-title: 'İzlenecek yol: bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270620"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803737"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sağlamak için bir Azure mobil hizmet kullanan modern bir masaüstü uygulaması oluşturmak için kullanabilirsiniz.  
@@ -576,6 +571,3 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: İlk WPF Masaüstü Uygulamam](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

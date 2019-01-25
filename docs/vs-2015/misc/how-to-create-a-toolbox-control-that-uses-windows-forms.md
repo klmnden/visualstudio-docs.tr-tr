@@ -1,27 +1,22 @@
 ---
 title: 'Nasıl yapılır: Windows Forms kullanan bir araç kutusu denetimi oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1a303e18f573ab806687bf238fa5557ecd6e91fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787494"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Nasıl yapılır: Windows Forms kullanan bir araç kutusu denetimi oluşturma
 Windows Forms araç kutusu denetimi şablonun yer aldığı [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] otomatik olarak eklenen Windows Forms denetimleri oluşturmanıza olanak tanır **araç kutusu** uzantısı yüklü olduğunda. Bu konuda şablonu oluşturmak için nasıl kullanılacağını gösterir. bir **araç kutusu** diğer kullanıcılara dağıtabilirsiniz denetimi...  

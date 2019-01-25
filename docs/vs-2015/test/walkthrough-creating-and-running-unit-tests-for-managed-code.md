@@ -1,14 +1,9 @@
 ---
 title: 'İzlenecek yol: Oluşturma ve çalıştırma için birim testleri yönetilen kodu | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784666"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio Test Gezgini'yle için Microsoft birim testi çerçevesini kullanarak birim testleri bir dizi özelleştirme size adım adım anlatır. Geliştirilmekte olan bir C# projesi ile başlayın, kodunu, testleri çalıştırmak ve sonuçları inceleyin testleri oluşturun. Daha sonra proje kodunu değiştirin ve testi yeniden çalıştırın.  
@@ -67,7 +62,7 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
   
 2. Üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.  
   
-    **Yeni proje** iletişim kutusu görüntülenir.  
+    **Yeni Proje** iletişim kutusu görünür.  
   
 3. Altında **yüklü şablonlar**, tıklayın **Visual C#**.  
   
@@ -113,7 +108,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Bir birim testi projesi oluşturma  
- **Önkoşul**: yordamdaki adımları [Yönergeyi Hazırla](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Önkoşul**: Yordamdaki adımları [Yönergeyi Hazırla](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Birim testi projesi oluşturmak için  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  Bu son bölümde, biz test kodumuzu geliştirme çalışmalarımız daha sağlam ve bilgilendirici test yöntemlerimiz olmasını sağladı. Ancak daha da önemlisi, ek olarak yapılan çözümlemeler aynı zamanda test altındaki Projemizin daha iyi kodlama yönlendirdi.
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma sayfalarından program aracılığıyla korumayı kaldırma'
+title: 'Nasıl yapılır: Çalışma sayfalarından program aracılığıyla korumayı kaldırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document protection
 - document protection, removing from worksheets
 - Unprotect method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b94375b54e7e0c0c774adc7b8054fc4219456a40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956146"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870093"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Nasıl Yapılır: Çalışma sayfalarından program aracılığıyla korumayı kaldırma
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Nasıl yapılır: Çalışma sayfalarından program aracılığıyla korumayı kaldırma
   Ayrıca, Microsoft Office Excel çalışma sayfasından program aracılığıyla korumayı kaldırma.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

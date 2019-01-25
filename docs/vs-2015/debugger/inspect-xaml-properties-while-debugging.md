@@ -1,14 +1,9 @@
 ---
 title: Hata ayıklama sırasında XAML özelliklerini denetleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a30f04c3d2b2d109816ff8bcfbf17fe483f24886
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758852"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779800"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,6 +110,3 @@ private void button_Click(object sender, RoutedEventArgs e)
 3.  Uygulama çalışmaya başlar.  
   
 4.  Visual Studio'nun ikinci örnekte, Aç **Live Visual Tree** (**hata ayıklama / Windows / Canlı görsel ağaç**). Görmelisiniz **TestXaml** kullanıcı Arabirimi öğeleri ve olmalıdır uygulama doğrudan hata ayıklarken gibi bunları yönetmek kullanabilirsiniz.
-
-
-

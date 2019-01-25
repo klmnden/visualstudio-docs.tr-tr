@@ -1,13 +1,9 @@
 ---
 title: İletişim kutusu seçenekleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages
 helpviewer_keywords:
@@ -19,13 +15,13 @@ ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8d4e147f79805493294e33c3d3f13eb9e42b5f3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 5ca970fbd31d85b74a5be7c3f23c5d77e1d5f764
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787740"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Seçenekler İletişim Kutusu (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +30,7 @@ ms.locfileid: "53911396"
 **Seçenekleri** iletişim kutusu ihtiyaçlarınıza tümleşik geliştirme ortamı (IDE) yapılandırmanıza olanak sağlar. Örneğin, projeleriniz için bir varsayılan kaydetme konumu kurmak, varsayılan görünümünü ve davranışını Windows alter ve sık kullanılan komutlar için kısayollar oluşturmanıza. Ayrıca seçenekleri geliştirme diliniz ve platformunuz için özgü vardır. Erişebildiğiniz **seçenekleri** gelen **Araçları** menüsü.
 
 > [!NOTE]
->  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+>  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="layout-of-the-options-dialog-box"></a>Seçenekler iletişim kutusu düzeni
  **Seçenekleri** iletişim kutusu, iki bölüme ayrılmıştır: sol ve sağ taraftaki görüntüleme alanı bir gezinti bölmesi. Ağaç denetimi Gezinti bölmesinde, ortam, metin düzenleyici, kaynak denetimi, projeler ve çözümler gibi klasör düğümleri içerir. İçerdiği seçenekler sayfalarını listelemek için herhangi bir klasör düğümünü genişletin. Belirli bir sayfa için düğümü seçin, seçeneklerini görünüm alanında görünür.

@@ -1,14 +1,9 @@
 ---
 title: Yerel makinede çalıştırma Windows Store apps | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753743"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Yerel makinede Windows Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
  **Çalışan bir örneğini bir Windows Store uygulaması Visual Studio'ya geçmek için**  
   
  Yerel makine üzerindeki bir Windows Store uygulaması çalıştırın ve yalnızca tek bir izleyici kullandığınızda, uygulamayı çalıştıran bırakarak Visual Studio'ya dönün geçiş yapmak isteyebilirsiniz. Örneğin, uygulama tarafından bir olay bekleniyor gibi bir kesme noktasına ulaşıldı veya uzun veya sonsuz bir döngüde yakalanan bir durumda olabilir. Visual Studio'ya dönmek için ALT + SEKME tuşuna basın.
-
-
-

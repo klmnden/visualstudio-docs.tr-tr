@@ -1,14 +1,9 @@
 ---
 title: Derleme sayfası, Proje Tasarımcısı (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778918"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +40,21 @@ Kullanım **derleme** derleme yönergeleri belirtmek için Proje Tasarımcısı'
  Aşağıdaki ayarlar, görüntülenecek veya değiştirilecek platform ve yapılandırmayı seçmenize olanak sağlar.  
   
 > [!NOTE]
->  Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. Bu nedenle, **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+>  Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. Bu nedenle, **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Yapılandırma**  
- Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) ve [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md).  
+ Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) ve [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Platform**  
- Platform ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Belirtebileceğiniz **herhangi bir CPU** (varsayılan), **x64**, veya **x86**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Platform ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Belirtebileceğiniz **herhangi bir CPU** (varsayılan), **x64**, veya **x86**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Derleyici yapılandırma seçenekleri  
  Aşağıdaki ayarlar, derleyici yapılandırma seçenekleri ayarlamanızı sağlar.  
   
  **Yapı çıkış yolu**  
- Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Yapı çıkış yolunu bu kutuya yazın ya da tıklayın **Gözat** düğmesini bir yolu seçin. Yolun göreli olduğuna dikkat edin; mutlak bir yol girerseniz, göreli olarak kaydedilecektir. Varsayılan yol bin\Debug\ veya bin\Release olan\\. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Yapı çıkış yolunu bu kutuya yazın ya da tıklayın **Gözat** düğmesini bir yolu seçin. Yolun göreli olduğuna dikkat edin; mutlak bir yol girerseniz, göreli olarak kaydedilecektir. Varsayılan yol bin\Debug\ veya bin\Release olan\\. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. **Derleme** komutunu **hata ayıklama** menüsündeki (F5) bağımsız olarak, hata ayıklama konumuna derleme koyacaktır **çıkış yolu** belirtirsiniz. Ancak, **derleme** komutunu **derleme** menü, belirttiğiniz konuma koyar. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. **Derleme** komutunu **hata ayıklama** menüsündeki (F5) bağımsız olarak, hata ayıklama konumuna derleme koyacaktır **çıkış yolu** belirtirsiniz. Ancak, **derleme** komutunu **derleme** menü, belirttiğiniz konuma koyar. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Seçeneği açık**  
  Örtük bir değişken bildirimi izin verilip verilmeyeceğini belirtir. Seçin **üzerinde** değişkenleri açık bildirimini gerektiren. Bunlar kullanılmadan önce değişkenleri bildirilmedikçe derleyici hatalarını raporlamak için bu neden olur. Seçin **kapalı** örtük bir değişken bildirimi izin vermek için.  
@@ -175,11 +170,8 @@ Kullanım **derleme** derleme yönergeleri belirtmek için Proje Tasarımcısı'
   Erişim için bu düğmeye tıklayın **AdvancedCompiler ayarları** iletişim kutusu. Kullanım **AdvancedCompiler ayarları** Gelişmiş yapı yapılandırma özellikleri iletişim kutusu, bir projeyi belirtmek için. Bu iletişim kutusu, yalnızca Visual Basic projeleri için geçerlidir. Daha fazla bilgi için [Gelişmiş derleyici Ayarları iletişim kutusu (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Derleme özelliklerini yönetme](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Nasıl yapılır: derleme olayları belirtme (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Hata ayıklama ve yayın proje yapılandırmaları](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Derleme özelliklerini yönetme](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic komut satırı derleyicisi](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [Nasıl Yapılır: Yapılandırmaları Oluşturma ve Düzenleme](../../ide/how-to-create-and-edit-configurations.md)
-
-
-
+ [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md)

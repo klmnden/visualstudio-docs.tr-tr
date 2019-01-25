@@ -2,7 +2,7 @@
 title: Azure Araçları'nın geçerli sürümüne projeleri yükseltme | Microsoft Docs
 description: Azure Visual Studio projesinde Azure Araçları'nın geçerli sürümüne yükseltmeyi öğrenin
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: b7faf80371a48ad2ddf6c13b879525b65a3eb299
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781558"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Projeleri Visual Studio için Azure Araçları'nın güncel sürümüne yükseltme
 ## <a name="overview"></a>Genel Bakış
@@ -44,4 +44,3 @@ Yükseltmek istediğinizi belirtin veya bir proje otomatik olarak yükseltilir, 
     **Uygulama** sekmesi, projeyle ilişkili Araçlar sürümü gösterir. Azure Araçları'nın geçerli sürümü varsa, proje zaten yükseltildi. Hangi sekmesini gösteren daha araçları daha yeni bir sürümünü yüklediyseniz bir **yükseltme** düğmesi görünür.
 3. Seçin **yükseltme** Araçları'nın geçerli sürümüne bir projeyi yükseltmesine düğmesi.
 4. Projeyi oluşturmak ve ardından API değişikliklerden kaynaklanan hataları çözün. Kodunuz için yeni sürümü değiştirme hakkında daha fazla bilgi için özel API belgelerine bakın.
-

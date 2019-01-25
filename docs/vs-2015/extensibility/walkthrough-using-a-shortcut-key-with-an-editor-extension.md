@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: Düzenleyici uzantısı ile kısayol tuşu kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir düzenleyici uzantısı ile kısayol tuşu kullanma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763021"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>İzlenecek Yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kısayol tuşları için düzenleyici uzantı yanıt verebilir. Aşağıdaki örneklerde, bir kısayol tuşu kullanarak görünüm kenarlığı metin görünümü ekleme işlemi gösterilmektedir. Bu izlenecek yol, Görünüm penceresi kenarlığı Düzenleyicisi şablonunu temel alıyorsa ve kenarlığı kullanarak eklemek imkan + karakter.  
@@ -248,4 +243,3 @@ private void CreateVisuals(ITextViewLine line)
 2.  Oluşturun veya bir metin dosyası açın. Karakter içeren bazı sözcükleri yazın 'a', Anahtar'a tıklayın ve metin görünümünü herhangi bir yerindeki +.  
   
      Mor kare dosyasındaki 'bir' her bir karakter görünmelidir.
-

@@ -1,27 +1,22 @@
 ---
 title: Grafik olay listesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93054404894ab21522728d00d33f2c862ed127b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768016"
 ---
 # <a name="graphics-event-list"></a>Grafik Olay Listesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,10 +85,10 @@ Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş
   
 |API tanımı|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Kullanıcı tanımlı olay kullanılabilirliğini denetle|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|Olay grubu başlayın|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|Son olay grubu|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|Bir olay işaretçisi oluşturma|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|Kullanıcı tanımlı olay kullanılabilirliğini denetle|[PIXGetStatus](http://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|Olay grubu başlayın|[PIXBeginEvent](http://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|Son olay grubu|[PIXEndEvent](http://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|Bir olay işaretçisi oluşturma|[PIXSetMarker](http://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11'de ve önceki kullanıcı tanımlı olayları  
  Grupları ve Direct3D 11 veya önceki işaretçileri oluşturmak için bu bölümde açıklanan API'leri kullanın. Aşağıdaki tabloda farklı sürümlerini Direct3D 11 ve Direct3D önceki sürümleri için kullanabileceğiniz API'ler özetler.  
@@ -107,7 +102,4 @@ Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş
  Direct3D sürümünüz destekleyen bu API dilediğinizi kullanabilirsiniz — Direct3D 11.1 API hedefliyorsanız, örneğin, kullanabilirsiniz `SetMarker` veya `D3DPerf_SetMarker` bir olay işaretçisi değil oluşturmak için `SetMarkerInt` çünkü Direct3D, yalnızca kullanılabilir 11.2 — ve Direct3D'ün farklı sürümlerini birlikte aynı uygulamada destekleyen olanlar bile karıştırabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Cihaz Durumu Nedeniyle Nesnelerin Eksikliği](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-
+ [İzlenecek yol: Cihaz Durumu Nedeniyle Eksik Nesneler](../debugger/walkthrough-missing-objects-due-to-device-state.md)

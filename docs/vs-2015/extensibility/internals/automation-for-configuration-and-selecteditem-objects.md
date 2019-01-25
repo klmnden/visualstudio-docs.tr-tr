@@ -1,27 +1,22 @@
 ---
 title: Yapılandırma ve SelectedItem nesneleri için Otomasyon | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 612916da7922900a1054d785dad86ed448aa1f12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42faf8127c1ab70d3470aa497a0cdab6058060f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777857"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Yapılandırma ve SelectedItem Nesneleri için Otomasyon
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,4 +35,3 @@ Derleme ve seçili öğe işlemlerini otomatik hale getirebilirsiniz [!INCLUDE[v
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [Otomasyon modeline katkıda bulunma](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [Derleme Yapılandırmalarını Anlama](../../ide/understanding-build-configurations.md)
-

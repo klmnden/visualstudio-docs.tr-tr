@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme'
+title: 'Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9267e340d62def2660f807670dc9804dd531c8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74e63f34a7285fc035ae2acd338a73725a77e6ce
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988773"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867214"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl Yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme
   Office çalışma zamanı için Visual Studio 2010 Araçları, Microsoft Office geliştirici araçları kullanarak oluşturulan çözümleri çalıştıran her bilgisayara yüklenmelidir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Yükleme sırasında çalışma zamanı otomatik olarak yüklenen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
  Aşağıdaki durumlarda aşağıdaki el ile yükleme yönergeleri takip etmeniz gerekebilir:  

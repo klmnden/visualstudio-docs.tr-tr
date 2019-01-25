@@ -1,29 +1,24 @@
 ---
-title: "İzlenecek yol: XAML Tasarımcısı'nda verileri bağlama | Microsoft Docs"
-ms.custom: ''
+title: "İzlenecek yol: XAML Tasarımcısı'nda verilere bağlama | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 ms.assetid: 1a99aeae-c3ef-407d-ba79-b8055489a43d
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 597145da912c8d80508b67f4ff47c901f5ccac1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 74b628c1c3295cee94435c975f89420fcb097538
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802818"
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda verileri bağlama
+# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda verilere bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullanarak veri bağlama özellikleri ayarlayabilirsiniz. Bu kılavuzda örnek veriyi denetime bağlama gösterilmektedir. Özellikle, gözden geçirme sahip basit bir alışveriş sepeti sınıfı oluşturma işlemini gösterir ve bir [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) adlı `ItemCount`ve ardından `ItemCount` özelliğini **metin** özelliği bir [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) denetimi.  
@@ -99,13 +94,10 @@ XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullana
   
      ![Oluştur iletişim kutusu veri bağlama](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")  
   
-8.  Uygulamayı çalıştırmak için F5 tuşuna basın.  
+8.  Uygulamayı çalıştırmak için F5'e basın.  
   
      `TextBlock` Denetim 0 varsayılan değerini metin olarak göstermelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Değer dönüştürücü iletişim kutusu Ekle](http://msdn.microsoft.com/en-us/c5f3d110-a541-4b55-8bca-928f77778af8)
-
-
-
+ [NIB: Değer dönüştürücüsü iletişim kutusu Ekle](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

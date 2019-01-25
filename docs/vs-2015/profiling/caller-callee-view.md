@@ -1,14 +1,9 @@
 ---
 title: Arayan-Aranan görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788950"
 ---
 # <a name="callercallee-view"></a>Arayan/Aranan görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil
   
  Rapor görünümü Orta kısmındaki geçerli işlevin herhangi bir görünümün diğer iki bölümü listelenen işlevlerin çift tıklayarak gereken farklı işlevi seçebilirsiniz. Rapor görünümü, değişiklikleri yansıtacak şekilde otomatik olarak güncelleştirilir.  
   
- Sütun adları tıklayarak verileri yeniden sıralayabilirsiniz. Ek sütunları çağıran/çağrılan görünümü eklenebilir. Daha fazla bilgi için [nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
+ Sütun adları tıklayarak verileri yeniden sıralayabilirsiniz. Ek sütunları çağıran/çağrılan görünümü eklenebilir. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Arayan / Aranan görünümü - örnekleme verileri](../profiling/caller-callee-view-sampling-data.md)   
@@ -51,6 +46,3 @@ Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil
  [Arayan/Aranan görünümü - .NET bellek izleme verileri](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Arayan/Aranan görünümü - .NET bellek örnekleme verileri](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Arayan / Aranan görünümü - çakışma verileri](../profiling/caller-callee-view-contention-data.md)
-
-
-

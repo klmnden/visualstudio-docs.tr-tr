@@ -1,25 +1,20 @@
 ---
 title: Ayrıntılı Profiler komut satırından izleme metodunu kullanarak hizmetler için zamanlama verileri toplama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8946d57b2aecaeef167579275ccedd6ce984e2f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805451"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırından İzleme Metodunu Kullanarak Hizmetler için Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +25,9 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Bir .NET hizmetine profil**|-   [Nasıl Yapılır: Aracı bir .NET hizmetine ve toplama ayrıntılı zamanlama verileri](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Bir .NET hizmetine profil**|-   [Nasıl Yapılır: .NET Hizmetini İzleme ve Ayrıntılı Zamanlama Verileri Toplama](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**C/C++ hizmetin profilini**|-   [Nasıl Yapılır: İzleme bir yerel hizmet ve ayrıntılı zamanlama verileri toplama](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**C/C++ hizmetin profilini**|-   [Nasıl Yapılır: Yerel Hizmeti İzleme ve Ayrıntılı Zamanlama Verileri Toplama](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   
@@ -53,6 +48,3 @@ Bu bölümde yordamları ve ayrıntılı performans toplama seçeneklerini açı
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Ölçümlü izleme verilerini analiz etme, görünümleri ve raporlar  
  [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)
-
-
-

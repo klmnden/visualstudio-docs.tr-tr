@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "53067067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768838"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -95,7 +95,7 @@ Eski sürümlerinde oluşturulmuş projeleri maksimum uyumluluğu korumak için 
 
 El ile güncelleştirin veya bir proje için yeni bir geçiş denemelisiniz olup bu bağlamda soru doğal olarak ortaya `ToolsVersion` değeri. Bu tür bir değişikliğin yapılması gerekli değildir ve büyük olasılıkla çok sayıda hata ve yeniden oluşturmak için proje almak düzeltmek için gereken uyarılar üretir. Ayrıca, Visual Studio için belirli bir destek düşerse `ToolsVersion` gelecekte projeyi açarak project geçiş işlemi olduğundan, özellikle tetikleyecek `ToolsVersion` değer değiştirilmelidir. Böyle bir durumda, bu belirli proje türü için alt tam olarak değiştirilmesi için gerekenler bilir ve bu değişiklikleri otomatik olarak bu makalenin önceki bölümlerinde açıklandığı şekilde yapabilirsiniz.
 
-# <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-steps"></a>Sonraki adımlar
 
 Daha fazla açıklama için şu makalelere göz atın:
 

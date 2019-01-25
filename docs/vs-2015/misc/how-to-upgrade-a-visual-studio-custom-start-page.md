@@ -1,24 +1,20 @@
 ---
-title: 'Nasıl Yapılır: Özel başlangıç sayfası yükseltme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Özel başlangıç sayfası yükseltme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: 59756adb803c054dbee3a425a9230346aa3a8325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8afcf73c827976f01bbc71abf5eaddb4713c47a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764879"
 ---
-# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Nasıl Yapılır: Visual Studio özel başlangıç sayfası yükseltme
+# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme
 Visual Studio 2010 yükseltebilir veya Visual Studio 2012 özel başlangıç sayfasına Visual Studio 2015 için aşağıda listelenen adımları izleyin.
 
 > [!WARNING]

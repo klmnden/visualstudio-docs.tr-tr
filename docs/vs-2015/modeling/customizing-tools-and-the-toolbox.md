@@ -1,12 +1,9 @@
 ---
 title: Araçları ve araç kutusunu özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847818"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790597"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  Ayarlama **araç kutusu simgesi** 16 x 16 bit eşleme başvurmak için özellik.  
   
-     Rapordaki yeni simge tanımlamak istiyorsanız, Çözüm Gezgini içindeki bir bit eşlem dosyası oluştur **Dsl\Resources** klasör. Dosyada, aşağıdaki özellik değerlerini olmalıdır: **derleme eylemi** = **içerik**; **Çıkış dizinine Kopyala** = **kopyalamayın**.  
+     Rapordaki yeni simge tanımlamak istiyorsanız, Çözüm Gezgini içindeki bir bit eşlem dosyası oluştur **Dsl\Resources** klasör. Dosyada, aşağıdaki özellik değerlerini olmalıdır: **Derleme eylemi** = **içerik**; **Çıkış dizinine Kopyala** = **kopyalamayın**.  
   
-4.  **Bir öğe aracı:** ayarlayın **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.  
+4.  **Öğe araç için:** Ayarlama **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.  
   
-     **Bağlayıcı aracı:** ayarlamak **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.  
+     **Bağlayıcı aracı için:** Ayarlama **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.  
   
 5.  DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], örnek model dosyasını açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.  
   
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md)   
  [Kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md)   
- [Nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Gezinme ve Program kodundaki modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Bağlantı hattı diyagramları örneği DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

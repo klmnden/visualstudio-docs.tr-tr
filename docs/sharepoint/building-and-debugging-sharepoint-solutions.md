@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building and debugging
 - SharePoint development in Visual Studio, debugging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1cdcf71821bd0f7e9739bc194834500c2dfc6fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987200"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871569"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Derleme ve SharePoint çözümlerinde hata ayıklama
   Genel olarak, derleme ve hata ayıklama SharePoint çözümleri derleme ve hata ayıklama proje türlerinde aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Bu bölümdeki konular, mevcut farkları açıklamaktadır.  

@@ -1,38 +1,33 @@
 ---
 title: Kodlanmış UI yapma, kayıttan yürütme sırasında belirli olaylar için bekleme testleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0042be9e22b4143021b78cb96b6032144bd624f5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bb5648bfc823230998a324aedb0e21cf6606174d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779210"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan Yürütme Sırasında Belirli Olaylar için Kodlanmış UI Testlerini Bekletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için aşağıdaki tabloda açıklandığı gibi uygun UITestControl.WaitForControlXXX() yöntemi kullanın. Bir denetimi kullanarak etkin olmasını bekler bir kodlanmış UI testine ilişkin bir örnek <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> yöntemi bkz [izlenecek yol: oluşturma, düzenleme ve bir kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için aşağıdaki tabloda açıklandığı gibi uygun UITestControl.WaitForControlXXX() yöntemi kullanın. Bir denetimi kullanarak etkin olmasını bekler bir kodlanmış UI testine ilişkin bir örnek <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> yöntemi bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Gereksinimler**  
   
  Visual Studio Enterprise  
   
 > [!TIP]
->  Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: bir gecikme önce bir UI eylemini kullanarak kodlanmış UI Test Düzenleyicisi Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+>  Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
- **UITestControl.WaitForControlXXX() yöntemleri**  
+ **UITestControl.WaitForControlXXX() Methods**  
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>  
   
@@ -40,7 +35,7 @@ Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için iler
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>  
   
- Denetimi Sihirbazı sunucuya çağrıları yaparak bazı zaman uyumsuz doğrulama giriş, etkin olmasını bekler. Beklenecek yöntemi gibi yapabilecekleriniz **sonraki** düğmesi etkin () olacak şekilde Sihirbazı. Bu yöntem bir örnek için bkz [izlenecek yol: oluşturma, düzenleme ve bir kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+ Denetimi Sihirbazı sunucuya çağrıları yaparak bazı zaman uyumsuz doğrulama giriş, etkin olmasını bekler. Beklenecek yöntemi gibi yapabilecekleriniz **sonraki** düğmesi etkin () olacak şekilde Sihirbazı. Bu yöntem bir örnek için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>  
   
@@ -114,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  **Kılavuz**  
   
- Ek bilgi için bkz: [Testing for Continuous Delivery ile Visual Studio 2012 – Chapter 5: otomatikleşen sistem testleri](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ Ek bilgi için bkz: [Visual Studio 2012 – Chapter 5 ile sürekli teslimat testi: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
@@ -122,7 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)   
  [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Nasıl yapılır: kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
-
-
-
+ [Nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

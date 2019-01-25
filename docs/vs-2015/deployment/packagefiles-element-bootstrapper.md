@@ -1,14 +1,9 @@
 ---
 title: '&lt;PackageFiles&gt; öğesi (Önyükleyici) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783853"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; öğesi (Önyükleyici)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ ms.locfileid: "49302789"
  [\<Ürün > öğesi](../deployment/product-element-bootstrapper.md)   
  [\<Paket > öğesi](../deployment/package-element-bootstrapper.md)   
  [Ürün ve Paket Şema Başvurusu](../deployment/product-and-package-schema-reference.md)
-
-
-

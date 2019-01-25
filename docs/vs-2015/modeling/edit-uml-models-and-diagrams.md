@@ -1,12 +1,9 @@
 ---
 title: UML modellerini ve diyagramları düzenleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777451"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML modellerini ve diyagramları düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
  **Her bir modelleme projesi tek bir yığın değişiklikleri var.** Model ve diyagramlara yaptığınız tüm değişiklikler bu yığın üzerinde tutulur. Yığın, bir diyagramdaki odağı değişiklikleri de içerir. Undo komutu değişiklikleri bu yığın üzerinde tersine çevirir.  
   
- Örneğin, bu işlemleri gerçekleştirmek varsayalım: Diyagram1 için; bir değişiklik yapın Odak diyagramı 2'ye değiştirin; Diyagram2'yi değiştirin. Değişiklikleri Geri Al, ilk geri son değişikliği geri; sonraki geri alma odak diyagramı 1'e kaydırır; ve üçüncü geri alma değişikliği diyagramı 1'e geri alacaksınız.  
+ Örneğin, bu işlemleri gerçekleştirmek varsayalım: Bir değişiklik için Diyagram1 yapın; Odak diyagramı 2'ye değiştirin; Diyagram2'yi değiştirin. Değişiklikleri Geri Al, ilk geri son değişikliği geri; sonraki geri alma odak diyagramı 1'e kaydırır; ve üçüncü geri alma değişikliği diyagramı 1'e geri alacaksınız.  
   
  **Bir diyagram kapanış değişikliklerin yığınını keser.** Bir diyagram kapatırsanız, şemada yapılan değişiklikleri geri al ve model ve diyagramlarını hiçbirini önceki değişiklikler geri alınamıyor.  
   
@@ -219,7 +216,7 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
      Model öğesinin bir görünümü açılır sağlayan bir şekil, diğer diyagramlara veya aynı diyagram görünümlerini yanı sıra olabilecek.  
   
     > [!NOTE]
-    >  Bir sınıf veya bileşeni bir sıralama diyagramına sürüklediğinizde etkisi farklıdır. Bu durumda, bu sınıf ya da bileşen türü olan yeni bir yaşam çizgisi oluşturulur. Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+    >  Bir sınıf veya bileşeni bir sıralama diyagramına sürüklediğinizde etkisi farklıdır. Bu durumda, bu sınıf ya da bileşen türü olan yeni bir yaşam çizgisi oluşturulur. Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Başvuruyu Yapıştır kullanarak bir model öğesini yeni bir görünümünü eklemek için  
   
@@ -274,7 +271,7 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
    Çözüm Gezgini'nde yapıştırarak diyagram çoğaltamazsınız.  
   
 ##  <a name="Deleting"></a> Bir Model öğesi veya görünümlerini silme  
- Bazı tür öğeler, özellikle sınıflandırıcılar, diyagramdan modelden silmeden kaldırılabilir. Sınıflandırıcılar, kullanım örneği diyagramları ve sınıf diyagramları, Bileşen diyagramları görüntülenir başlıca öğeleridir. Bunlar, birden çok diyagramda görünebilir. Bu tür öğeler için iki ayrı komutlar vardır: **diyagramdan Kaldır** ve **modelden silmek**.  
+ Bazı tür öğeler, özellikle sınıflandırıcılar, diyagramdan modelden silmeden kaldırılabilir. Sınıflandırıcılar, kullanım örneği diyagramları ve sınıf diyagramları, Bileşen diyagramları görüntülenir başlıca öğeleridir. Bunlar, birden çok diyagramda görünebilir. Bu tür öğeler için iki ayrı komutlar vardır: **Diyagramdan Kaldır** ve **modelden silmek**.  
   
  Aksine, bir ilişki diyagramdan sildiğinizde, bu her zaman modelden siliyorsunuz.  
   
@@ -323,7 +320,7 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 -   Notlar ve açıklamalar model öğelerine eklemek için açıklamaları oluşturma ve bunları öğelerine bağlayın.  
   
--   Bir sütun veya satır şekilleri diyagram üzerinde düzgünce hizalamak için şekilleri Hizala komutu yükleyebilirsiniz. Bu örnek UML Uzantısı kullanılabilir: [UML: şekiller Hizala komutu](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   Bir sütun veya satır şekilleri diyagram üzerinde düzgünce hizalamak için şekilleri Hizala komutu yükleyebilirsiniz. Bu örnek UML Uzantısı kullanılabilir.  [UML: Şekilleri hizalamak için komutu](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>Bir diyagramı görüntü olarak dışarı aktarmak için  
  Daha fazla bilgi için [diyagramlarını görüntü dışarı aktarma](../modeling/export-diagrams-as-images.md).  
@@ -345,6 +342,3 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
  [UML modelleme projeleri ve diyagramları oluşturma](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)   
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)
-
-
-

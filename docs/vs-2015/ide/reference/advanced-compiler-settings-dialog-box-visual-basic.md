@@ -1,14 +1,9 @@
 ---
 title: Gelişmiş derleyici Ayarları iletişim kutusu (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c1932f3b9a065115c7977207b0678fbcd44c2e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758896"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Kullanım **AdvancedCompiler ayarları** iletişim kutusunun **Proje Tasarımcı
   
 2. Üzerinde **proje** menüsünü tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **derleme** sekmesi.  
   
-3. Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3. Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 4. Tıklayın **Gelişmiş derleme seçenekleri**.  
   
@@ -70,7 +65,7 @@ Kullanım **AdvancedCompiler ayarları** iletişim kutusunun **Proje Tasarımcı
  Varsayılan olarak, TRACE sabitini ayarlanması belirterek bu onay kutusu seçilidir.  
   
  **Özel sabitleri**  
- Bu metin kutusunda, uygulamanızın herhangi özel bir sabit girin. Girişleri bu formu kullanarak virgülle ayrılmış: **Name1 "Value1", Name2 = "Value2", Name3 = "Value3"**.  
+ Bu metin kutusunda, uygulamanızın herhangi özel bir sabit girin. Girişleri bu formu kullanarak virgülle ayrılmış olması: **Name1="Value1",Name2="Value2",Name3="Value3"**.  
   
 ## <a name="other-settings"></a>Diğer ayarlar  
  **Serileştirme bütünleştirilmiş kodları üret**  
@@ -78,6 +73,3 @@ Kullanım **AdvancedCompiler ayarları** iletişim kutusunun **Proje Tasarımcı
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme Sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: Projeler ve Çözümler
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -53,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a4e50e386be097338207a2ef66904347f9170d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795258"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio’da Çözümler ve Projeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +75,7 @@ Oluşturduğunuz sırada bir uygulama, uygulama, Web sitesi, Web uygulaması, be
  Özel proje ve öğe şablonlarını da oluşturabilirsiniz. Daha fazla bilgi için [oluşturma proje ve öğe şablonları](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Yeni proje oluşturma
- Önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları temel kümesinden oluşan bir önceden tanımlanmış proje şablonu ile başlatmak için yeni bir proje oluşturmak için en kolay yolu olan ve size ayarları başlatılan uygulama veya Web sitesinde belirli bir tür oluşturarak bir belirli programlama dili. Bu şablonları bölümüne bakın, **yeni proje iletişim kutusu** seçtiğinizde **dosya &#124; yeni &#124; proje** veya **dosya &#124; yeni &#124; Web sitesi** gelen ana menü ve ardından gidin. Daha fazla bilgi için [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md) ve [NIB oluşturma proje şablonları](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları temel kümesinden oluşan bir önceden tanımlanmış proje şablonu ile başlatmak için yeni bir proje oluşturmak için en kolay yolu olan ve size ayarları başlatılan uygulama veya Web sitesinde belirli bir tür oluşturarak bir belirli programlama dili. Bu şablonları bölümüne bakın, **yeni proje iletişim kutusu** seçtiğinizde **dosya &#124; yeni &#124; proje** veya **dosya &#124; yeni &#124; Web sitesi** gelen ana menü ve ardından gidin. Daha fazla bilgi için [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md) ve [NIB oluşturma proje şablonları](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Çözüm Gezgini'nde projeleri yönetme
  Yeni bir proje oluşturduğunuzda, kullandığınız **Çözüm Gezgini** projeleri ve çözümleri ve onların ilişkilendirilmiş öğelerini görüntülemek ve yönetmek için. Aşağıdaki çizimde, iki proje içeren bir C# çözümü ile Sunucu Gezgini gösterir.

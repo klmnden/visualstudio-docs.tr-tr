@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Varlıklar arasında ilişkilendirme oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Varlıklar arasında ilişkilendirme oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], relate entities
 - BDC [SharePoint development in Visual Studio], relate entities
 - BDC [SharePoint development in Visual Studio], associate external content types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eaaa3f86cc0751b0b80d61555a69aa6bfecda2f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1870d8965947c1ee8adce5b7839c732d2d590daa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867981"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>Nasıl Yapılır: Varlıklar arasında ilişkilendirme oluşturma
+# <a name="how-to-create-an-association-between-entities"></a>Nasıl yapılır: Varlıklar arasında ilişkilendirme oluşturma
   İlişkilendirmeleri oluşturarak iş verileri bağlantısı (BDC) modelinizdeki varlıklar arasında ilişkiler tanımlayabilirsiniz. Visual Studio model tüketicilerinin her ilişkilendirmesi hakkında bilgi sağlayan yöntemler oluşturur. Bu yöntemler, SharePoint web bölümleri, liste veya bir kullanıcı arabirimi (UI) veri ilişkileri görüntülemek için özel uygulamaları tarafından kullanılabilecek.  
   
  İki tür ilişkilerini BDC tasarımcısında oluşturabilirsiniz: yabancı anahtar tabanlı ilişkilendirmeleri ve yabancı anahtarsız ilişkileri. Daha fazla bilgi için [varlıklar arasında ilişkilendirme oluşturma](../sharepoint/creating-an-association-between-entities.md).  

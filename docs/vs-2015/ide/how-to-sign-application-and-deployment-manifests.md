@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -22,15 +17,15 @@ ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3162d65f8712c7db55be1bced9f815ecfaa866f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0ccd3d6b6f9c1d995a0aebb4bc1e3007e025ca5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784190"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl Yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile imzalanmış olması gerekir ve Authenticode teknolojisi kullanılarak. Windows sertifika deposu veya bir anahtar dosyasından bir sertifika kullanarak bildirimleri imzalayabilirsiniz.  
@@ -39,7 +34,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
   
  ClickOnce bildirimlerini imzalanması, .exe tabanlı uygulamalar için isteğe bağlıdır. Daha fazla bilgi için bu belgedeki "İmzalanmamış bildirimler üretme" bölümüne bakın.  
   
- Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .pfx uzantılı yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.  
@@ -98,7 +93,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
   
 2.  Üzerinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala** onay kutusu.  
   
-3.  Yayınlama sürümünü, uygulamanızın yalnızca bir sürümü kalacak şekilde sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için [nasıl yapılır: ClickOnce yayımla sürümünü ayarlama](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Yayınlama sürümünü, uygulamanızın yalnızca bir sürümü kalacak şekilde sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için [nasıl yapılır: Kümesi ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4.  Uygulamayı yayınlayın.  
   
@@ -115,9 +110,6 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tanımlayıcı adlı derlemeler](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Nasıl yapılır: genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Nasıl yapılır: Genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [İmzalama sayfası, Proje Tasarımcısı](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)
-
-
-

@@ -2,7 +2,7 @@
 title: Geçiş ve Azure bulut hizmeti için bir Web uygulaması yayımlama
 description: Visual Studio kullanarak web uygulamanızı bir Azure bulut hizmetinde yayımlama ve geçirme hakkında bilgi edinin
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: dd81e33d34cd3e61c01e62f941edd074304499be
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 90e98f22cabcc15287a5bfffc07ff1a3538835b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53072791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805543"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: geçirme ve Azure bulut hizmetinde Visual Studio'dan bir Web uygulaması yayımlama
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: Visual Studio'dan Azure Bulut Hizmetine Bir Web Uygulaması Geçirme ve Yayımlama
 
 Barındırma hizmetlerinin avantajlarından ve Azure ölçekleme yeteneğini yararlanmak için geçirme ve web uygulamanızı bir Azure bulut hizmeti dağıtmak isteyebilirsiniz. Sadece küçük değişiklikler gereklidir. Bu makalede, yalnızca bulut hizmetlerini dağıtma ele alınmıştır; App Service için bkz: [Azure App Service'te bir web uygulaması dağıtma](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Barındırma hizmetlerinin avantajlarından ve Azure ölçekleme yeteneğini yar
 
 Herhangi bir uyarı veya hatalar gibi eksik derlemeleri Azure'a dağıtmadan önce düzeltmek için sorunları gösterir.
 
-Uygulamanızı çalıştırın ve işlem öykünücüsü kullanarak yerel olarak veya Azure'a yayımlama varsa aşağıdaki hatayı görebilirsiniz: "Belirtilen yol, dosya adı veya her ikisi çok uzun." Bu hata, tam Azure proje adının uzunluğu 146 karakterden uzun olduğunu gösterir. Bu sorunu çözmek için çözümünüz daha kısa bir yol ile farklı bir klasöre taşıyın.
+Uygulamanızı, bu işlem öykünücüsü kullanarak yerel olarak çalıştırmak veya Azure'da yayımlama, aşağıdaki hatayı görebilirsiniz: "Belirtilen yol, dosya adı veya her ikisi çok uzun." Bu hata, tam Azure proje adının uzunluğu 146 karakterden uzun olduğunu gösterir. Bu sorunu çözmek için çözümünüz daha kısa bir yol ile farklı bir klasöre taşıyın.
 
 Tüm uyarıları hata olarak değerlendir hakkında daha fazla bilgi için bkz. [Visual Studio ile bir Azure bulut hizmeti projesi yapılandırma](vs-azure-tools-configuring-an-azure-project.md).
 

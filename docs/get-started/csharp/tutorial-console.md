@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 71a465b80f56cba56d0c20d3484765ca1837b167
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204437"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872514"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Öğretici: Visual Studio'da C# konsol uygulaması ile çalışmaya başlama
 
@@ -46,15 +46,38 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
 ## <a name="create-the-app"></a>Uygulama oluşturma
 
-İlk olarak, temel hesaplayıcı oluşturmak için kod ekleyeceğiz. Ardından, biz işlevselliği eklemek için kod ince ayar. Bundan sonra uygulamayı bulun ve hataları düzeltmek için hata ayıklama. Son olarak, size daha verimli hale getirmek için kod geliştireceksiniz.
+İlk olarak, bazı temel tamsayı matematik şunları keşfedeceğiz C#. Ardından, temel hesaplayıcı oluşturmak için kod ekleyeceğiz. Ardından, biz işlevselliği eklemek için kod ince ayar. Bundan sonra uygulamayı bulun ve hataları düzeltmek için hata ayıklama. Ve son olarak, size daha verimli hale getirmek için kod geliştireceksiniz.
 
-Temel hesaplayıcı kod projenize ekleyerek başlayalım.
+İçinde bazı tamsayı matematiğini başlayalım C#.
 
 1. Kod Düzenleyicisi'nde, varsayılan "Hello World" kod silin.
 
     ![Yeni hesaplayıcı uygulamanızdan varsayılan Merhaba Dünya kodu Sil](./media/csharp-console-calculator-deletehelloworld.png)
 
-   Özellikle, Kod düzenleyicisinde gördüğünüz kodu silin.
+   Özellikle, yazan satırı silin `Console.WriteLine("Hello World!");`.
+
+1. Bunun yerine, aşağıdaki kodu yazın:
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. Seçin **hesaplayıcı** , programınızı çalıştırmak için veya basın **F5**.
+
+   ![Araç çubuğunda uygulamayı çalıştırmak için hesap makinesi düğmesini seçin](./media/csharp-console-calculator-button.png)
+
+   42 + 119 toplamını gösteren bir konsol penceresi açılır.  
+
+1. Artık değiştirmeyi deneyin `int c = a + b;` gibi farklı bir işleç kullanarak kod satırının `-` çıkarma için `*` çarpma için veya */* bölme.
+
+    İşleç değiştirmek ve programı çalıştırın, sonuç, çok değiştiğine dikkat edin.
+
+Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
+
+1. Kod düzenleyicisinde gördüğünüz kodu silin.
 
 1. Aşağıdaki yeni kodu kod düzenleyicisine yapıştırın veya girin:
 

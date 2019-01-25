@@ -1,14 +1,9 @@
 ---
 title: SccGetParentProjectPath işlevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetParentProjectPath
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0e75c3e39f2d4f56d40ca546291b2f86bd185f88
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a631936dee7608306edfcd86f686b788e57133f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775515"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,4 +98,3 @@ SCCRTN SccGetParentProjectPath(
  [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'DA0504: En büyük çalışma kümesinin profili oluşturuluyor işlem için bayt cinsinden | Microsoft Docs'
-ms.custom: ''
+title: 'DA0504: En yüksek çalışma kümesi profil oluşturulan işlem için bayt cinsinden | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0504
 - vs.performance.504
@@ -17,15 +12,15 @@ ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a39171c8786f3b2149a50bd3c4a6915575f050ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a990b428cfa03722ee5e02884344d96844825ee8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787197"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: İşlem için izin verilen Bayt Cinsinden En Büyük Çalışma Kümesinin profili oluşturuluyor
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: En yüksek çalışma kümesi profil oluşturulan işlem için bayt cinsinden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0504 |  
@@ -47,6 +42,3 @@ Kural Kimliği | DA0504 |
  Kural Windows performansı izleme olanağı Bu ölçüm verilerini toplar ve yalnızca bilgi bildirir. Bunu, farklı sürümlerin performans veya programın yapıları karşılaştırmak veya farklı test senaryoları altında uygulama performansını anlamak için kullanın.  
   
  Hata Listesi penceresindeki iletiyi gitmek için çift tıklatın [işaret görünümü](../profiling/marks-view.md) profil oluşturma verilerinin. Bulma **Process\Working ayarlamak** ve **Bellek\Sayfa/sn** sayaç sütun. Ardından en büyük değerini bulmak **Process\Working ayarlamak** ve karşılaştırmak için **Bellek\Sayfa/sn** değeri. Genellikle, özellikle makine bellek kısıtlı olduğunda maksimum küme çalışma azalan sayfalama g/ç etkinliğini olduğu zaman aralığı ile ilişkilidir.
-
-
-

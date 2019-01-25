@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cc42ed418de78ee5f75ab51b63c7e1ccdf29911
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9af36ee6db8421b52978c12c4933e174c71c6fd1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872943"
 ---
 # <a name="extend-sharepoint-projects"></a>SharePoint projeleri genişletme
   SharePoint projeleri için proje düzeyi özelliklerini özelleştirmek istediğinizde bir proje uzantısı oluşturma. Örneğin, özel Proje Özellikleri ekleyebilir veya kullanıcı bir SharePoint çözümünü Visual Studio'da geliştirdiğinde başlatan proje düzeyinde olaylara yanıt verme.  

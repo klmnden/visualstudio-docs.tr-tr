@@ -2,7 +2,7 @@
 title: Cloud Explorer ile Azure kaynaklarını yönetme | Microsoft Docs
 description: Visual Studio içinden Azure kaynaklara göz atıp yönetmek için cloud Explorer'ı kullanmayı öğrenin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: f387a4a0bb8c9555bc1ca1f8b3cc800cecd7637d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 25995eacc961474fcb6486668c918d2e5be5ba76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779704"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer'da Azure hizmetlerinizle ilişkilendirilmiş kaynakları yönetme
 
@@ -26,7 +26,7 @@ Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2015 ile [.NET 2.9 için Microsoft Azure SDK'sı](https://www.microsoft.com/en-us/download/details.aspx?id=51657).
+* Visual Studio 2015 ile [.NET 2.9 için Microsoft Azure SDK'sı](https://www.microsoft.com/download/details.aspx?id=51657).
 * Microsoft Azure hesabı - bir hesabınız yoksa, şunları yapabilirsiniz [ücretsiz deneme için kaydolun](http://go.microsoft.com/fwlink/?LinkId=623901) veya [Visual Studio abone Avantajlarınızı etkinleştirebilirsiniz](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

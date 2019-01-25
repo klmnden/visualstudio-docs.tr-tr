@@ -1,30 +1,25 @@
 ---
-title: 'İzlenecek yol: Benim ilk WPF Masaüstü Uygulama2 dizinlerini | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: My ilk WPF Masaüstü Uygulama2 dizinlerini | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795951"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliştirme tanıtır. Çoğu WPF Masaüstü uygulamaları için ortak olan öğeler içeren temel bir uygulama oluşturacaksınız: XAML biçimlendirme, arka plan kod, uygulama tanımları, denetimler, düzen, veri bağlama ve stilleri.  
+name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliştirme tanıtır. Çoğu WPF Masaüstü uygulamaları için ortak olan öğeler içeren temel bir uygulama oluşturacaksınız: XAML işaretleme, arka plan kod, uygulama tanımları, denetimler, düzen, veri bağlama ve stilleri.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Uygulama projesi oluşturma  
  Bu bölümde, proje ana penceresi veya form içeren uygulama altyapısı oluşturacaksınız.  
@@ -647,17 +642,17 @@ name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliş
   
      Bu XAML aşağıdaki stilleri ekler:  
   
-    -   `headerTextStyle`: Sayfa başlığı biçimine `Label`.  
+    -   `headerTextStyle`: Sayfa başlığı biçimlendirmek için `Label`.  
   
-    -   `labelStyle`: Biçimine `Label` kontrol eder.  
+    -   `labelStyle`: Biçimlendirilecek `Label` kontrol eder.  
   
-    -   `columnHeaderStyle`: Biçimine `DataGridColumnHeader`.  
+    -   `columnHeaderStyle`: Biçimlendirilecek `DataGridColumnHeader`.  
   
-    -   `listHeaderStyle`: List üstbilgisi biçimine `Border` kontrol eder.  
+    -   `listHeaderStyle`: List üstbilgisi biçimlendirmek için `Border` kontrol eder.  
   
-    -   `listHeaderTextStyle`: List üstbilgisi biçimine **etiket**.  
+    -   `listHeaderTextStyle`: List üstbilgisi biçimlendirmek için **etiket**.  
   
-    -   `buttonStyle`: Biçimine `Button` üzerinde **ExpenseItHome.XAML** pppage.  
+    -   `buttonStyle`: Biçimlendirilecek `Button` üzerinde **ExpenseItHome.XAML** pppage.  
   
 3.  Açık **ExpenseItHome.XAML** ve arasındaki her şeyi değiştirin `<Grid>` ve `</Grid>` aşağıdaki XAML ile öğeleri  
   
@@ -981,8 +976,5 @@ name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliş
 - [WPF'deki Belgeler](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

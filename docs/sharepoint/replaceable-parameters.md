@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989171"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871955"
 ---
 # <a name="replaceable-parameters"></a>Değiştirilebilir parametreler
   Değiştirilebilir parametreler veya *belirteçleri*, gerçek değerleri, tasarım zamanında bilinen olmayan SharePoint çözüm öğeleri için değerler sağlamak için proje dosyaları içinde kullanılabilir. Bunlar standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablon belirteçleri. Daha fazla bilgi için [şablon parametreleri](../ide/template-parameters.md).  
@@ -65,8 +65,8 @@ ms.locfileid: "53989171"
 |$SharePoint.Feature.DeploymentPath$|Paket özelliği içeren klasörün adı. Bu belirteç, özellik Tasarımcısı'nda "Dağıtım yolu" özelliğine karşılık gelir. Örnek değer olduğundan, "Project1_Feature1".|  
 |$SharePoint.Feature.Id$|İçeren özelliğin SharePoint kimliği. Bu belirteç tüm özellik düzeyinde belirteçleri ile yalnızca bir özelliği aracılığıyla bir pakette bulunan dosyalar tarafından kullanılan bir özellik dışında bir paket için doğrudan eklenmedi.|  
 |$SharePoint.ProjectItem.Name$|Öğesinden alınan olarak (kendi dosya adı değil), proje öğesinin adını **ISharePointProjectItem.Name**.|  
-|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Türü eşleşen derleme nitelenmiş adı [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] belirtecin. Biçimi [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] küçük harf ve Guid.ToString("D") biçimine karşılık gelir (yani xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. FullName$|Belirteçteki GUID eşleşen türü tam adı. GUID biçimi küçük harf ve Guid.ToString("D") biçimine karşılık gelir (yani xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|Türü eşleşen derleme nitelenmiş adı [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] belirtecin. Biçimi [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] küçük harf ve Guid.ToString("D") biçimine karşılık gelir (yani xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.FullName$|Belirteçteki GUID eşleşen türü tam adı. GUID biçimi küçük harf ve Guid.ToString("D") biçimine karşılık gelir (yani xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Belirteç değiştirme dosya uzantıları listesi için uzantılar ekleme
  Belirteçleri teorik olarak bir SharePoint proje öğesi, varsayılan olarak, pakete ait olduğu herhangi bir dosyayı tarafından kullanılabilmesine rağmen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] belirteçleri yalnızca şu uzantılara sahip dosyalar paket dosyalarını ve bildirim dosyaları arar:  

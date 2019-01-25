@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Eylemler bölmelerindeki Düzen denetim yönetme'
+title: 'Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87ec74628bad3d4c0e2031b8399e279bc9b5229d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991181"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873125"
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>Nasıl Yapılır: Eylemler bölmelerindeki Düzen denetim yönetme
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme
   Eylemler bölmesi varsayılan belge veya çalışma sağa yerleştirilir; Ancak, sol, üst veya alt yerleştirilmiş olabilir. Birden çok kullanıcı denetimleri kullanıyorsanız, Eylemler bölmesinde kullanıcı denetimleri düzgün yığın için kod yazabilirsiniz. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

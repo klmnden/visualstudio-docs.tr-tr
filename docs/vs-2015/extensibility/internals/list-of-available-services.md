@@ -1,27 +1,22 @@
 ---
 title: Kullanılabilen hizmetlerin listesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6eef832ae8b8bc912b79185cbc9cc6271ccb9924
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768356"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilir Hizmetlerin Listesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51730700"
 |Hizmet|Arabirim|Visual Studio|Visual Studio 2005|Açıklama|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Evet|Evet|VSPackage'ları tarafından elde etmek için kullanılan bir <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> zaman uyumsuz veri aktarımları kolaylaştırmak için bir ActiveX denetiminden arabirimi.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Hayır|Evet|Otomasyon için kullanılan tasarım zamanı genişletilebilirlik (DTE) nesnesi alır.<br /><br /> C/C++ KODU: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Hayır|Evet|Otomasyon için kullanılan tasarım zamanı genişletilebilirlik (DTE) nesnesi alır.<br /><br /> C/C++ KİMLİĞİ: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Evet|Evet|Bir denetim için varsayılan olay işleyicisini görüntülemek için bir form tasarımcısı tarafından uygulanır.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Evet|Evet|Otomasyon arabirimine başka bir VSPackage'ı ya da bir denetimi VSPackage'ı etkinleştirir.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Evet|Evet|VSPackage'ı eklemek veya bir genişletilmiş tür kitaplığı oluşturmak sağlar.|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730700"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Evet|Evet|Belirli bir meta veri dosyası ile ilişkili olan XML biçimli belge dosyaları erişim sağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM ve yönetilen hizmetler](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM ve yönetilen hizmetler](http://msdn.microsoft.com/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
  [Hizmetleri Kullanma ve Sağlama](../../extensibility/using-and-providing-services.md)
-

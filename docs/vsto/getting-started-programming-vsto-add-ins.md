@@ -12,15 +12,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef79de32a467bee1d96972da0ccdfd91eede350
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7827f76703964d76b8a9f217dd781c3f85be6db
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853050"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874441"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO eklentileri programlama kullanmaya başlayın
   VSTO eklentileri, Microsoft Office uygulamalarını otomatikleştirmek, uygulamanın özelliklerini genişletmek ve uygulamanın kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. Visual Studio kullanarak oluşturabileceğiniz nasıl VSTO Eklentileri Office çözümlerinin diğer türleri için karşılaştırma hakkında bilgi için bkz [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  

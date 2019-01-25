@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Ekleme listesi güvenliğini yapılandırma'
+title: 'Nasıl yapılır: Ekleme listesi güvenliğini yapılandırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895583"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868686"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>Nasıl Yapılır: Ekleme listesi güvenliğini yapılandırma
+# <a name="how-to-configure-inclusion-list-security"></a>Nasıl yapılır: Ekleme listesi güvenliğini yapılandırma
   Yönetici izinleriniz varsa, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümlerine güven kararı listesine kaydederek yükleme seçeneğiniz verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz. [ekleme listelerini kullanarak Office güven çözümleri](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  

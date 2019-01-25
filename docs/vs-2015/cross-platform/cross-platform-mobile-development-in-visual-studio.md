@@ -1,23 +1,19 @@
 ---
 title: Platformlar arası Mobil Geliştirme
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c259a8c84a59f99f647f908ded8b272ed4e943a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789300"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio’da Platformlar Arası Mobil Geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,7 +117,7 @@ Visual Studio kullanarak Android, iOS ve Windows cihazlar için uygulamalar olu�
 |**Daha fazla bilgi edinin**|
 |--------------------|
 |[Visual Studio yükleme](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
+|[Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[Android için Visual Studio öykünücüsü öğrenin](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Android ve Windows (C++) için uygulama oluşturma
@@ -167,7 +163,7 @@ Visual Studio kullanarak Android, iOS ve Windows cihazlar için uygulamalar olu�
 
 |**Daha fazla bilgi edinin**|
 |--------------------|
-|[Unity Visual Studio ile oyun oluşturma hakkında daha fazla bilgi edinin](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Unity Visual Studio ile oyun oluşturma hakkında daha fazla bilgi edinin](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[Unity için Visual Studio Araçları hakkında daha fazla bilgiyi](../cross-platform/visual-studio-tools-for-unity.md) (MSDN Kitaplığı)|
 |[Unity için Visual Studio Araçları kullanmaya başlayın](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (MSDN Kitaplığı)|
 |[Son geliştirmeler hakkında Unity 2.0 önizlemesi için Visual Studio Araçları okuma](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (Visual Studio blogu)|

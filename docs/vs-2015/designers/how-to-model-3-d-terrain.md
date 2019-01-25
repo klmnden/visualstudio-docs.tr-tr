@@ -1,27 +1,22 @@
 ---
 title: 'Nasıl yapılır: 3B Arazi modeli oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764122"
 ---
-# <a name="how-to-model-3-d-terrain"></a>Nasıl Yapılır: Model 3B Arazi
+# <a name="how-to-model-3-d-terrain"></a>Nasıl yapılır: Model 3B Arazi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu belge, 3B Arazi modeli oluşturmak için Model Düzenleyicisi nasıl yapılacağı açıklanır.  
@@ -73,10 +68,7 @@ Bu belge, 3B Arazi modeli oluşturmak için Model Düzenleyicisi nasıl yapılac
   
    ![3&#45;Arazi modeli gösteren D Sahne](../designers/media/digit-terrain-model.png "basamak Arazi modeli")  
   
-   Bu Arazi modeli açıklanan gradyan gölgelendirici etkisini göstermek için kullanabileceğiniz [nasıl yapılır: geometri tabanlı gradyan gölgelendirici oluşturma](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
+   Bu Arazi modeli açıklanan gradyan gölgelendirici etkisini göstermek için kullanabileceğiniz [nasıl yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Model Düzenleyicisi](../designers/model-editor.md)
-
-
-

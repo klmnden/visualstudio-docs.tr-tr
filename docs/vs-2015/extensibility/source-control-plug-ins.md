@@ -1,26 +1,21 @@
 ---
 title: Kaynak denetimi eklentileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780119"
 ---
 # <a name="source-control-plug-ins"></a>Kaynak Denetimi Eklentileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,11 @@ Kaynak Denetimi Eklentisi SDK başvuru bölümüne ile tümleşik kaynak denetim
  [Sözlük](../extensibility/source-control-plug-in-glossary.md)  
  Yararlı hüküm ve kaynak denetimi eklentisi SDK belgeleri okumak için tanımlarını sağlar.  
   
- [Nasıl Yapılır: Kaynak Denetimi Eklentileri için Uyumluluk Uyarılarını Kapatma](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Nasıl yapılır: Kaynak denetimi eklentileri için uyumluluk uyarılarını kapatma](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Uyarıları devre dışı bırakma açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Kaynak Denetimi Eklentisi örneği](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Kaynak Denetimi Eklentisi örneği](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Kaynak Denetimi Eklentisi işlevlerini bir örnek sağlar.  
   
  [Kaynak Denetimi Eklentileri için Test Kılavuzu](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
@@ -76,4 +71,3 @@ Kaynak Denetimi Eklentisi SDK başvuru bölümüne ile tümleşik kaynak denetim
   
  [Visual Studio SDK Başvurusu](../extensibility/visual-studio-sdk-reference.md)  
  Başvuru konuları bir listesini sunar.
-

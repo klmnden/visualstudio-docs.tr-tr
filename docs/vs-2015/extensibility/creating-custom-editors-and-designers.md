@@ -1,27 +1,22 @@
 ---
 title: Özel düzenleyiciler ve tasarımcılar oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777522"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Özel Düzenleyiciler ve Tasarımcılar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +72,10 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
      Gömülü olması, bir ana penceresi için dış düzenleyici oluşturma ve sonra çağrı gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> yöntemi ve kümesi <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> numaralandırma değerini `DP_External`. Düzenleyici eklenemiyor, IDE otomatik olarak için ayrı bir pencere oluşturur.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İzlenecek Yol: Özel Düzenleyici Oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [İzlenecek yol: Bir özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Bir özel düzenleyici oluşturma açıklanır.  
   
- [İzlenecek Yol: Bir Özel Düzenleyiciye Özellik Ekleme](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [İzlenecek yol: Bir özel düzenleyiciye özellik ekleme](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Özellikler için özel bir düzenleyici ekleme işlemi açıklanmaktadır.  
   
  [Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

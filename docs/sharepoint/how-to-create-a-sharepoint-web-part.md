@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir SharePoint Web Bölümü oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Bir SharePoint Web Bölümü oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], adding
 - Web Parts [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b66cd0b380612502bb982efd464607a4759f9c4b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858429"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870798"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>Nasıl Yapılır: Bir SharePoint web bölümü oluşturma
+# <a name="how-to-create-a-sharepoint-web-part"></a>Nasıl yapılır: Bir SharePoint web bölümü oluşturma
   Oluşturma ve bir web bölümü ekleyerek özelleştirin bir **Web Bölümü** öğesi herhangi bir SharePoint projesine ve ardından bir Tasarımcısını kullanarak veya web bölümü için kod dosyasını düzenleme. Daha fazla bilgi için [nasıl yapılır: Tasarımcı kullanarak bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ### <a name="to-create-a-sharepoint-web-part"></a>Bir SharePoint web bölümü oluşturmak için

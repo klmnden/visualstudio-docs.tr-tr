@@ -1,11 +1,8 @@
 ---
 title: Eski Durum makinesi iş akışı Tasarımcısı'nı kullanarak | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752686"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Eski Durum Makinesi İş Akışı Tasarımcısını Kullanma
-Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../includes/vs2010-md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], ya da kullanmayı da tercih edebilirsiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makine proje şablonlarından birini seçerseniz, durum makine Tasarımcı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski Durum makinesi proje şablonları hakkında daha fazla bilgi için bkz: [nasıl yapılır: oluşturma Durum makinesi iş akışı konsol uygulamaları (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: Durum makinesi iş akışı kitaplığı (eski)oluşturma](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../includes/vs2010-md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], ya da kullanmayı da tercih edebilirsiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makine proje şablonlarından birini seçerseniz, durum makine Tasarımcı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski Durum makinesi proje şablonları hakkında daha fazla bilgi için bkz: [nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları oluşturma (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: Bir Durum makinesi iş akışı kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Bir Durum makinesi iş akışı durumlarının bir kümesinden oluşur. Bir durum başlangıç durumu gösterilir. Her durum, belirli bir etkinlik kümesi alabilir. Etkinliğe göre başka bir duruma geçiş yapılabilir. Durum makinesi iş akışı, bir son duruma sahip olabilir. Son duruma geçiş yapıldığında, iş akışı tamamlanır.  
   
@@ -62,7 +59,7 @@ Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları oluşturma (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Nasıl yapılır: bir Durum makinesi iş akışı kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Nasıl yapılır: Bir Durum makinesi iş akışı kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Durum makinesi iş akışları](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Buraya StateActivity etkinliğini kullanma](http://go.microsoft.com/fwlink?LinkID=65083)   
  [StateInitializationActivity etkinliğini kullanma](http://go.microsoft.com/fwlink?LinkID=65006)   

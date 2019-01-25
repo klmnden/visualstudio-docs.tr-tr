@@ -1,12 +1,9 @@
 ---
 title: Program kodunda katman modellerini gezinme ve güncelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805339"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Program kodunda katman modellerini gezinme ve güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu konu, öğeleri ve ilişkileri gidin ve program kodunu kullanarak katman modellerini açıklar. Kullanıcı açısından katman diyagramları hakkında daha fazla bilgi için bkz: [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md) ve [katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md).  
+Bu konu, öğeleri ve ilişkileri gidin ve program kodunu kullanarak katman modellerini açıklar. Kullanıcı açısından katman diyagramları hakkında daha fazla bilgi için bkz: [katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md) ve [katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md).  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Bu konuda açıklanan hakkında daha genel bir cephe modelidir <xref:Microsoft.VisualStudio.GraphModel> modeli. Yazıyorsanız bir [menü komut veya hareket uzantısı](../modeling/add-commands-and-gestures-to-layer-diagrams.md), kullanın `Layer` modeli. Yazıyorsanız bir [katman doğrulama uzantısı](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), kullanımı daha kolay olan `GraphModel`.  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [Katman diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Katman diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Katman diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)   
- [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)   
+ [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)   
+ [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)   
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

@@ -1,11 +1,8 @@
 ---
 title: Flowchart etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
@@ -15,13 +12,13 @@ ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784864"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Flowchart> Etkinliği iş akışlarını tanımlamak ve yönetmek karmaşık akış denetimleri oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> veya kod kullanarak yazılabilir [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Bu konu belgeleri [!INCLUDE[wfd2](../includes/wfd2-md.md)] karşılaşırsınız. [!INCLUDE[wfd1](../includes/wfd1-md.md)] İş akışı etkinlik Tasarımcısı, doğal bir şekilde iş akışları yazabilirsiniz geliştiricilerin sağlar.  
@@ -39,7 +36,7 @@ ms.locfileid: "49226245"
 ### <a name="flowchart-activity-properties"></a>Akış Çizelgesi etkinlik özellikleri  
  Aşağıdaki tabloda <xref:System.Activities.Statements.Flowchart> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler, özellik kılavuzu veya tasarımcı yüzeyine düzenlenebilir.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Üst bilgide etkinlik Tasarımcısı görünen adını belirtir. Akış varsayılan değerdir. Değer içinde düzenlenebilir **özellikleri** penceresi veya doğrudan etkinlik Tasarımcısı başlığı.<br /><br /> Ancak <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|  
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|İçinde bu kapsamlı değişkenlerinin koleksiyonunu <xref:System.Activities.Statements.Flowchart> alt etkinlikleriyle arasında durum paylaşma için.|  

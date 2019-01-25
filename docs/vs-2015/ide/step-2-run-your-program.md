@@ -1,32 +1,27 @@
 ---
-title: '2. adım: Programınızı çalıştırma | Microsoft Docs'
-ms.custom: ''
+title: '2. Adım: Programınızı çalıştırmak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 689d577f0d8ac626094391be0f3767f441854093
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242196"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778571"
 ---
 # <a name="step-2-run-your-program"></a>2. Adım: Programınızı Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşik. Çok henüz — yalnızca gösteren boş bir pencere görüntüler **Form1** başlık çubuğundaki. Ancak hakkında bilgi edinmek için oluşturuyoruz, çalıştırın.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma 1 video](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+ ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 1 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205209) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-run-your-program"></a>Programınızı çalıştırmak için  
   
@@ -64,9 +59,6 @@ Hata ayıklama araç çubuğu
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: bilgisayarınızı Form özelliklerini ayarla](../ide/step-3-set-your-form-properties.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Windows Forms uygulaması projesi oluşturma](../ide/step-1-create-a-windows-forms-application-project.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [1. adım: Bir Windows Forms uygulaması projesi oluşturma](../ide/step-1-create-a-windows-forms-application-project.md).

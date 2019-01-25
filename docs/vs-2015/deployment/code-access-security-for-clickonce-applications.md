@@ -1,14 +1,9 @@
 ---
 title: ClickOnce uygulamaları için kod erişimi güvenliği | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
 - vb.XBAProjectPropertiesSecurity.HowTo
@@ -28,13 +23,13 @@ ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816072"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773694"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce Uygulamaları İçin Kod Erişimi Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
   
  Ayrıca, kod yazdığınızda, IntelliSense özelliği Kod Düzenleyicisi'nde, yapılandırmış olduğunuz güvenlik izinlerini bulunmayan herhangi bir üye devre dışı bırakır.  
   
- Daha fazla bilgi için [nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Daha fazla bilgi için [nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Tarayıcıda tutulan uygulamalar için güvenlik izinleri  
  Visual Studio, Windows Presentation Foundation (WPF) uygulamaları için aşağıdaki proje türlerini sağlar:  
@@ -103,9 +98,6 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
  [Nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştirme](../deployment/how-to-enable-clickonce-security-settings.md)   
  [Nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Nasıl yapılır: sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Güvenilir Uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md)   
  [Güvenlik Sayfası, Proje Tasarımcısı](../ide/reference/security-page-project-designer.md)
-
-
-

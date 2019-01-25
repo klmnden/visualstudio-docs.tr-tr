@@ -1,14 +1,9 @@
 ---
 title: Visual Studio yalıtılmış Kabuğu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], shell-based applications%2C isolated mode
 - Visual Studio shell, isolated mode
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784861"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio yalıtılmış Kabuğu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Visual Studio yalıtılmış Kabuğu yan yana çalıştırabileceğiniz tek baş
 >  Yalıtılmış Kabuk yeniden dağıtılabilir paketi erişebilmeniz için önce bir kısa bir müşteri anketini doldurmanız istenir.  Anketi doldurduktan sonra yeniden dağıtılabilir paket indirme bağlantılarının ile Visual Studio Connect sayfasına yönlendirilirsiniz.  Visual Studio Connect sitesi altında daha sonra gerçekleştirdiğiniz ziyaretlerde indirme bağlantıları bulabilirsiniz **programlar &#124; VISUAL STUDIO 2015 TÜMLEŞİK ve YALITILMIŞ KABUK** sekmesi.  
   
 > [!NOTE]
->  Yalıtılmış kabuk tabanlı bir uygulama dağıtma hakkında daha fazla bilgi için bkz. [izlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+>  Yalıtılmış kabuk tabanlı bir uygulama dağıtma hakkında daha fazla bilgi için bkz. [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Yalıtılmış Kabuk ile çalışma  
  Visual Studio yalıtılmış Kabuk uygulaması, Visual Studio services tam erişimi olduğundan ve özel özelleştirme ve markalama destekler. Yalıtılmış Kabuk uygulaması özelleştirebilirsiniz birkaç yolu vardır:  
@@ -65,9 +60,8 @@ Visual Studio yalıtılmış Kabuğu yan yana çalıştırabileceğiniz tek baş
 |Düzenleyici/Tasarımcısı|Koda göz atma (birleştirilmiş arama, kaynak tanımı, devralma) araçları<br /><br /> IntelliSense<br /><br /> Akıllı etiketler<br /><br /> Kod parçacıkları Yöneticisi<br /><br /> Kod Parçacıkları<br /><br /> Yeniden Düzenle<br /><br /> Düzgün listeleme<br /><br /> IntelliSense filtreleme<br /><br /> Kod tanımı penceresi<br /><br /> Uygulama Tasarımcısı<br /><br /> Windows Form Tasarımcısı<br /><br /> Windows Presentation Foundation (WPF) Tasarımcısı|  
 |Hata Ayıklama|C# ifade değerlendiricisi<br /><br /> Yerel hata ayıklama<br /><br /> Yönetilen hata ayıklama<br /><br /> Düzenle ve Devam Et<br /><br /> Çoklu iş parçacığı hata ayıklama<br /><br /> görselleştirmeler<br /><br /> DataTips<br /><br /> Yerel hata ayıklama<br /><br /> Betik hata ayıklama<br /><br /> Birlikte çalışma hata ayıklama<br /><br /> Just-in-time (JIT) hata ayıklama<br /><br /> Çok işlemli hata ayıklama<br /><br /> XSLT hata ayıklama<br /><br /> Yerel işleme<br /><br /> İzleme noktaları<br /><br /> Kesme noktası kısıtlamaları|  
 |Veri|Sunucu Gezgini (Basitleştirilmiş - yalnızca verileri)<br /><br /> Veri bağlama için yerel veri (. MDF veya. MDB)<br /><br /> Nesne veri bağlama<br /><br /> Web hizmeti için veri bağlama<br /><br /> Eksiksiz bir veri denetimleri listesi<br /><br /> XML Düzenleyicisi<br /><br /> Verilerin bağlanacağı yerel veritabanı sunucusu<br /><br /> Veri Kaynakları penceresi|  
-|Web|HTML Düzenleyicisi<br /><br /> Web tarayıcısı<br /><br /> Web formları Tasarımcısı<br /><br /> Web sitesi projesi<br /><br /> Web uygulama projesi|  
+|Web|HTML Düzenleyicisi<br /><br /> Web tarayıcısı<br /><br /> Web formları Tasarımcısı<br /><br /> Web sitesi projesi<br /><br /> Web Application Project|  
 |Genişletilebilirlik|VSPackages ve MEF Bileşenleri kullanır|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kabuk (Yalıtılmış veya Tümleşik)](../extensibility/shell-isolated-or-integrated.md)
-

@@ -1,11 +1,8 @@
 ---
 title: Etkinlik görünümleri (eski) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, activity views
@@ -15,13 +12,13 @@ ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777658"
 ---
 # <a name="activity-views-legacy"></a>Etkinlik Görünümleri (Eski)
 Tarafından sağlanan etkinliklerinin birçok [!INCLUDE[wf](../includes/wf-md.md)], hangi iş akışları öğesinden oluşur, çeşitli tasarım görünümlerini eski içinde kullanılabilir olan [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Bir etkinlik Tasarımcısı'ndan sürüklediğinizde **araç kutusu** tasarım yüzeyine ve bundan sonra etkinliği seçtiğinizde kullanın ya da farklı tasarım görünümler arasında geçiş yapabilirsiniz **iş akışı**menü veya sağ tıklayarak seçili etkinlik. Seçili etkinlik adı üzerinde işaretçiyi getirdiğinizde, ayrıca, farklı görünümler arasında geçiş yapmak için kullanabileceğiniz bir sekme açılır kümesi görünür.  

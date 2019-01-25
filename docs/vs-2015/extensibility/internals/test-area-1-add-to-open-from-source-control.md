@@ -1,27 +1,22 @@
 ---
-title: 'Test alanı 1: İçin-açık kaynak denetiminden Ekle | Microsoft Docs'
-ms.custom: ''
+title: 'Test alanı 1: İçin açık kaynak denetiminden Ekle | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789692"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Test alanı 1: / Açık kaynak denetiminden Ekle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Bu kaynak denetimi eklentisi test çözümlerin veya projelerin kaynak denetimi 
 ## <a name="command-menu-access"></a>Komut menü erişimi  
  Aşağıdaki [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır:  
   
--   İçin [!INCLUDE[vsvss](../../includes/vsvss-md.md)], kaynak denetiminden Aç: **dosya**, **açın**, **proje**/**çözüm**; arama içinde[!INCLUDE[vsvss](../../includes/vsvss-md.md)] konumu.  
+-   İçin [!INCLUDE[vsvss](../../includes/vsvss-md.md)], kaynak denetiminden Aç: **Dosya**, **açık**, **proje**/**çözüm**; arama içinde [!INCLUDE[vsvss](../../includes/vsvss-md.md)] konumu.  
   
--   Diğer kaynak denetimi eklentileri için kaynak denetiminden açmak: **dosya**, **kaynak denetimi**, **kaynak denetiminden açmak**.  
+-   Diğer kaynak denetimi eklentileri için kaynak denetiminden Aç: **Dosya**, **kaynak denetimi**, **kaynak denetiminden Aç**.  
   
--   Kaynak denetimine ekleyin: **dosya**, **kaynak denetimi**, **çözüm kaynak denetimi dosyası Ekle**, **kaynak denetimi**, **Ekle Seçili projeler kaynak denetimine**.  
+-   Kaynak denetimine ekleyin: **Dosya**, **kaynak denetimi**, **çözüm kaynak denetimi dosyasına ekleme**, **kaynak denetimi**, **Seçilen projeler kaynak denetimineEkle**.  
   
 -   Kısayol menüsünü (Proje/çözüm) **kaynak denetimine Çözüm Ekle**.  
   
--   Kaynak denetiminden Ekle: **dosya**, **kaynak denetimi**, **kaynak denetiminden Proje Ekle**.  
+-   Kaynak denetiminden ekleyin: **Dosya**, **kaynak denetimi**, **kaynak denetiminden Proje Ekle**.  
   
 -   İçin [!INCLUDE[vsvss](../../includes/vsvss-md.md)], ekleme kaynak denetimi ayrıca kullanılabilir **dosya**, **Ekle**, **mevcut proje**; arama içinde [!INCLUDE[vsvss](../../includes/vsvss-md.md)] konumu.  
   
@@ -61,7 +56,7 @@ Bu kaynak denetimi eklentisi test çözümlerin veya projelerin kaynak denetimi 
 ## <a name="test-cases"></a>Test çalışmaları  
  Belirli test çalışmaları Ekle şunlardır / açık kaynak denetimine test alanından.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Case 1a: kaynak denetimine Çözüm Ekle  
+### <a name="case-1a-add-solution-to-source-control"></a>Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle  
  Bu test çalışması, çözümleri kaynak denetimine eklemeye ilişkin odaklanır.  
   
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  
@@ -81,7 +76,7 @@ Bu kaynak denetimi eklentisi test çözümlerin veya projelerin kaynak denetimi 
 |Bir yerel veya kaynak denetiminden IIS Web projesi içeren bir çözüm açın|1.  Yerel veya IIS Web projesi oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Çözümü kapatın.<br />4.  Çözümü kaynak denetiminden yeni bir konuma açın.|Kaynak denetiminden açtığınız çözüm/proje.|  
 |Kaynak denetiminden bir uzak Site Web projesi içeren bir çözüm açın|1.  Uzak Site Web projesi oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin. Bu adım başarılı olursa, sonraki adıma geçin.<br />3.  Çözümü kapatın.<br />4.  Çözümü kaynak denetiminden yeni bir konuma açın.|`Result from Step 2:`<br /><br /> Uzak Site Web kaynak denetimi altında değil.<br /><br /> `Result from Step 4:`<br /><br /> Kaynak denetiminden açtığınız çözüm.<br /><br /> Uzak Site proje yüklendi, ancak kaynak denetimi altında değil.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Case 1c: kaynak denetiminden çözüm ekleyin  
+### <a name="case-1c-add-solution-from-source-control"></a>Durum 1c: Kaynak denetiminden çözüm ekleyin  
  Bu test çalışması, çözümleri kaynak denetiminden ekleme üzerinde odaklanır.  
   
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  
@@ -92,4 +87,3 @@ Bu kaynak denetimi eklentisi test çözümlerin veya projelerin kaynak denetimi 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

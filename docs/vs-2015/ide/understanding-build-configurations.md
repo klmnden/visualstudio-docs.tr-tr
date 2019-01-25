@@ -1,14 +1,9 @@
 ---
 title: Derleme yapılandırmalarını anlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -30,13 +25,13 @@ ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799316"
 ---
 # <a name="understanding-build-configurations"></a>Derleme Yapılandırmalarını Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +39,9 @@ ms.locfileid: "49304141"
 Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Bunu, menü çubuğundan açmak için seçin **derleme**, **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** içinde **Hızlı Başlat** kutusu. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.  
   
 > [!NOTE]
->  Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış ile yapılandırmaları yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+>  Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
- Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanılarak oluşturulan projeleri dahil edilecek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] şablonları. Uygulamayı hata ayıklama hata ayıklama yapılandırmasını destekler ve bir sürüm yapılandırması dağıtılabilir uygulamanın bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: ayarlama hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel bir çözüm yapılandırmaları ve proje yapılandırmalarını da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).  
+ Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanılarak oluşturulan projeleri dahil edilecek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] şablonları. Uygulamayı hata ayıklama hata ayıklama yapılandırmasını destekler ve bir sürüm yapılandırması dağıtılabilir uygulamanın bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel bir çözüm yapılandırmaları ve proje yapılandırmalarını da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="solution-configurations"></a>Çözüm yapılandırmaları  
  Bir çözüm yapılandırması, çözümdeki projelerden oluşturulan ve dağıtılan şeklini belirtir. Bir çözüm yapılandırması değiştirmek veya yeni bir tane tanımlamak için **Configuration Manager**altında **etkin çözüm yapılandırması**, seçin **Düzenle** veya **yeni** .  
@@ -90,11 +85,8 @@ ms.locfileid: "49304141"
 -   Bir proje birden çok platform destekliyorsa, bir çözüm yapılandırması bulunamadı veya desteklenen her platform için eklendi. Her çözüm yapılandırması adını hem proje yapılandırması adı hem de platform adı içerir ve formundadır  *\<proje yapılandırması adı > \<platform adı >*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)   
+ [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md)   
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   
  [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)   
  [C/C++ oluşturma başvurusu](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Devenv Komut Satırı Anahtarları](../ide/reference/devenv-command-line-switches.md)
-
-
-

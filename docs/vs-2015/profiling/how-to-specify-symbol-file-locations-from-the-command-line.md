@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: komut satırından sembol dosyası konumlarını belirtme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Komut satırından sembol dosyası konumlarını belirtme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d138166bc0dfdf93df5d4e340fc0d0a62d1828b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776184"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl yapılır: Simge Dosyası Konumlarını Komut Satırından Belirtme
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl yapılır: Sembol dosyası konumlarını komut satırından belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İşlev adları ve satır numaraları gibi sembol bilgilerini görüntülemek için profili oluşturulan bileşenlerin sembol (.pdb) dosyalarını ve Windows sistem dosyalarını erişim VSPerfReport komut satırı aracı gerektirir. Bir bileşen derlendiğinde sembol dosyaları oluşturulur. Daha fazla bilgi için [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sembol dosyaları için aşağıdaki konumlar otomatik olarak arar:  
@@ -43,7 +38,7 @@ ms.locfileid: "51721194"
   Bu yöntemlerin her ikisi de kullanabilirsiniz.  
   
 > [!NOTE]
->  Varsa [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows simge dosyaları büyük olasılıkla belirtilmedi için zaten bir konuma yerel bilgisayarda yüklü. Daha fazla bilgi için [nasıl yapılır: başvuru Windows sembol bilgilerini](../profiling/how-to-reference-windows-symbol-information.md). Hala VSPerfReport konumu ve bu konunun ilerleyen bölümlerinde açıklandığı sunucusu kullanmak için yapılandırmanız gerekir.  
+>  Varsa [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows simge dosyaları büyük olasılıkla belirtilmedi için zaten bir konuma yerel bilgisayarda yüklü. Daha fazla bilgi için [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md). Hala VSPerfReport konumu ve bu konunun ilerleyen bölümlerinde açıklandığı sunucusu kullanmak için yapılandırmanız gerekir.  
   
 ## <a name="specifying-windows-symbol-files"></a>Windows sembol dosyalarını belirtme  
   
@@ -63,11 +58,8 @@ ms.locfileid: "51721194"
 ## <a name="example"></a>Örnek  
  Aşağıdaki komut satırı kümeleri **_NT_SYMBOL_PATH** ortam değişkenini Windows sembol sunucusu ve yerel dizine **C:\Symbols**.  
   
- **ayarlama _NT_SYMBOL_PATH srv =\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
+ **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
  VSPerfReport komut satırını kullanarak C:\Projects\Symbols dizin arama yolunu ekler **/symbolpath** seçeneği.  
   
- **VSPerfReport***MyApp* **.exe /SymbolPath:C:\Projects\Symbols userrulesdirectory**
-
-
-
+ **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

@@ -1,13 +1,9 @@
 ---
 title: 'CA1700: Sabit listesi değerlerini adlandırmayın &#39;ayrılmış&#39; | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1700
 - DoNotNameEnumValuesReserved
@@ -19,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3558e263cd8f2c359109298bf6069d408edbf7f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5446d21b51f57b4a614e8931b154654bee99cd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783015"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Sabit listesi değerlerini adlandırmayın &#39;ayrılmış&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -2,7 +2,7 @@
 title: C++ statik kod analizi Store uygulamaları
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
@@ -10,13 +10,13 @@ ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805572"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,7 +206,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                      [C28286](../code-quality/c28286.md)                       |                                    İşlevi, sonunun yakınında sözdizimi hatası                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (tanınmayan parametre adı)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (geçersiz parametre adı)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değil                |
+|                      [C28289](../code-quality/c28289.md)                       |                İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değildi                |
 |                      [C28290](../code-quality/c28290.md)                       |           işlevi için ek açıklama gerçek parametre sayısından daha fazla External içeriyor            |
 |                      [C28291](../code-quality/c28291.md)                       |                        POST null/notnull deref düzeyi 0 işlevi için anlamsız olur.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            İşleci için uyumsuz olan türlerde ifade işlenenleri                             |

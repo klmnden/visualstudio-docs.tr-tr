@@ -1,14 +1,9 @@
 ---
 title: WCE hata ayıklamasında sınırlamalar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c1d569712547144067cbfcfd894e31e1b41964e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777914"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCE Hata Ayıklamasında Sınırlamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,14 +77,11 @@ Bir WCF Hizmeti hatasını ayıklamaya başlayabilmeniz için üç yol vardır:
     ```  
   
 ## <a name="self-hosting"></a>Kendi kendine barındırma  
- A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışmaz bir WCF hizmeti veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme sunucusu. Şirket içinde barındırılan hizmetinde hata ayıklama hakkında daha fazla bilgi için bkz: [nasıl yapılır: şirket içinde barındırılan WCF hizmetinde hata ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışmaz bir WCF hizmeti veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme sunucusu. Şirket içinde barındırılan hizmetinde hata ayıklama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Kendini barındıran WCF hizmetinde hata ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>Kendi kendine barındırma  
  Hata ayıklamayı etkinleştirmek için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 veya 3.5 uygulamaları [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] önce 3.0 veya 3.5 yüklenmelidir [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] yüklenir. Varsa [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] önce yüklü [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 veya 3.5, hata oluşursa hata ayıklamayı denediğinizde bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 veya 3.5 uygulama. Hata iletisidir "için otomatik olarak sunucuda oturum adım." Bu sorunu gidermek için Windows kullanın **Denetim Masası**, **programlar ve Özellikler** onarmak için [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] yükleme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)   
- [Nasıl Yapılır: Kendini Barındıran WCF Hizmetinde Hata Ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
-
-
-
+ [Nasıl yapılır: Kendini Barındıran WCF Hizmetinde Hata Ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

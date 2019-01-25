@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: COM sunucularında hata ayıklama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 527356ba788e7e69ba3e1542e3b98ead8efbf331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786130"
 ---
-# <a name="how-to-debug-com-servers"></a>Nasıl Yapılır: COM Sunucularında Hata Ayıklama
+# <a name="how-to-debug-com-servers"></a>Nasıl yapılır: COM sunucularında hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 COM sunucu uygulamalarında hata ayıklama, bir dizi benzersiz olmayan her zaman kolay çözmek sorun oluşturur.  
@@ -55,6 +50,3 @@ COM sunucu uygulamalarında hata ayıklama, bir dizi benzersiz olmayan her zaman
  [Nasıl yapılır: RPC hata ayıklamasını kullanarak COM istemcilerinde ve sunucularda hata ayıklama](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM sunucusunda ve kapsayıcısında hata ayıklama](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)
-
-
-

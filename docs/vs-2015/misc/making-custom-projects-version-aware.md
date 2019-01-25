@@ -1,23 +1,18 @@
 ---
 title: Özel projeler sürüm ile uyumlu hale getirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768044"
 ---
 # <a name="making-custom-projects-version-aware"></a>Özel projeler sürüm ile uyumlu hale getirme
 Özel proje sisteminizi projeleri Visual Studio birden çok sürümünü yüklemek için bu türdeki izin verebilirsiniz. Bu tür projeleri, Visual Studio'nun bir önceki sürümünde yüklenmesini de engelleyebilirsiniz. Proje Proje Onar, dönüştürme ya da kullanımdan kaldırma gerektiriyor durumunda sonraki bir sürüme kendisini tanımlamak de etkinleştirebilirsiniz.  
@@ -31,15 +26,15 @@ ms.locfileid: "49833011"
   
 1.  `SPUVF_PROJECT_NOREPAIR`: Hiçbir onarım gerektirir.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Projenin daha önceki bir sürümü ile uyumlu sahip olabileceğiniz önceki ürün sürümleriyle sorunlarla olmadan yapar.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`: Sahip olduğunuz ürünün önceki sürümleriyle sorunlarla olmadan projeyi daha önceki bir sürümü ile uyumlu hale getirir.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Bazı karşılaşmış sorunları riskini önceki ürün sürümleriyle geriye dönük uyumlu ancak proje yapar. Örneğin, proje üzerinde farklı SDK sürümleri bağımlı olduğu uyumlu olmayacaktır.  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Proje karşılaşmış sorunların riskiyle önceki ürün sürümleriyle geriye dönük uyumlu ancak yapar. Örneğin, proje üzerinde farklı SDK sürümleri bağımlı olduğu uyumlu olmayacaktır.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Projenin daha önceki bir sürümü ile uyumsuz hale getiriyor.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Projeyi önceki bir sürümü ile uyumsuz hale getiriyor.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Bu projenin geçerli sürümü desteklemediğini gösterir.  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Geçerli sürümü bu proje desteklemediğini gösterir.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: Bu proje artık desteklenip desteklenmediğini belirtir.  
+6.  `VSPUVF_PROJECT_DEPRECATED`: Bu proje artık desteklenip desteklenmediğini gösterir.  
   
 > [!NOTE]
 >  Bunları ayarladığınızda, Karışıklığı önlemek için yükseltme bayraklarını birleştirmek yok. Örneğin, belirsiz bir yükseltme durumu gibi oluşturmayın `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  

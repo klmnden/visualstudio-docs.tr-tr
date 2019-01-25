@@ -1,28 +1,25 @@
 ---
-title: 'Nasıl yapılır: iş akışlarında kesme noktası ayarlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İş akışlarında kesme noktası ayarlama | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803235"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: iş akışlarında kesme noktası ayarlama
+# <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama
 Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodunda yaptığınız gibi grafik iş akışlarında kesme noktalarını ayarlayabilir. Beklendiği gibi iş akışı yürütme ayarladığınız her bir kesme noktasında durur.  
   
- Bir kesme noktası üç durumu vardır: *bekleyen*, *bağlı*, ve *hata*. Bir kesme noktası ayarlarsanız, bekleyen ve düz kırmızı bir simge ile temsil edilir. Çalışma zamanı iş akışı türü yüklendiğinde bağlı olur. Geçerli olmayan bir etkinliği adı gibi kesme noktası için yanlış biçim belirtirseniz bir hata penceresinde görünür. Kesme noktası hala kesme noktası penceresine eklenir, ancak küçük "x" ile işaretlenir.  
+ Bir kesme noktası üç durumu vardır: *Bekleyen*, *bağlı*, ve *hata*. Bir kesme noktası ayarlarsanız, bekleyen ve düz kırmızı bir simge ile temsil edilir. Çalışma zamanı iş akışı türü yüklendiğinde bağlı olur. Geçerli olmayan bir etkinliği adı gibi kesme noktası için yanlış biçim belirtirseniz bir hata penceresinde görünür. Kesme noktası hala kesme noktası penceresine eklenir, ancak küçük "x" ile işaretlenir.  
   
 > [!NOTE]
 >  Çağrılan iş akışlarında kesme noktaları ayarlama desteklenmiyor.  
@@ -42,6 +39,6 @@ Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodu
      Alternatif olarak, aynı zamanda kısayol tuşlarına basabilirsiniz **F9** etkinlik veya seçerek etkinliğe sağ tıklayın ve da seçin sonra anahtar **kesme noktası** ardından **kesme noktası Ekle**bağlam menüsünden.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: iş akışı hata ayıklayıcısını çağırma](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
+ [Nasıl yapılır: İş akışı hata ayıklayıcısını çağırma](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [İş Akışı Tasarımcısı ile iş akışlarında hata ayıklama](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Nasıl Yapılır: İş Akışı Tasarımcısı ile XAML Hatalarını Ayıklama](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Nasıl yapılır: İş Akışı Tasarımcısı ile XAML hatalarını ayıklama](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

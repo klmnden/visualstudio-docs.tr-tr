@@ -1,11 +1,8 @@
 ---
 title: Initializecorrelation etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.InitializeCorrelation.UI
@@ -13,13 +10,13 @@ ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 9dd9d622785fbfebd8560daf9bf459716381ddbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 383a2e892c8f0962ab8c09d5e8984d3cc570ebaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783232"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation Etkinlik Tasarımcısı
 **Initializecorrelation** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.InitializeCorrelation> gönderme veya alma bunları önce iletileri arasında bir bağıntı kurmak için kullanılan etkinlik.  
@@ -39,7 +36,7 @@ ms.locfileid: "49234032"
 ### <a name="the-initializecorrelation-properties"></a>Initializecorrelation özellikleri  
  Aşağıdaki tabloda <xref:System.ServiceModel.Activities.InitializeCorrelation> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri de düzenlenebilen **özellikleri** penceresi veya [!INCLUDE[wfd2](../includes/wfd2-md.md)] yüzeyi.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.ServiceModel.Activities.InitializeCorrelation> etkinlik. Initializecorrelation varsayılan değerdir.<br /><br /> Ancak kolay için varsayılan olmayan bir değeri kullanımını <xref:System.Activities.Activity.DisplayName%2A> kati şekilde gerekli değil gibi bir değer kullanmak için en iyi bir uygulamadır.|  
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> İş akışı etkinliklerinde bağıntı ilişkilendirmek için kullanılır.|  

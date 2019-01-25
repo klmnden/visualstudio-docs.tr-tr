@@ -1,14 +1,9 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750869"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779433"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|İleti dize ile gönderilir.|  
 |`SCC_MSG_STARTCANCEL`|Görüntüleme başlangıcı bir **iptal** düğmesi.|  
 |`SCC_MSG_STOPCANCEL`|Görüntüleme durdurur bir **iptal** düğmesi.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Arka plan işlemi iptal edilip edilmeyeceğini IDE ister: IDE döndürür `SCC_MSG_RTN_CANCEL` işlem iptal edildi; Aksi halde döndürür `SCC_MSG_RTN_OK`. `display_string` Parametresi olarak atandığında bir [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) yapısı, kaynak denetimi eklentisi tarafından sağlanır.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|IDE, arka plan işlemi iptal edilip edilmeyeceğini ister: IDE döndürür `SCC_MSG_RTN_CANCEL` işlem iptal edildi; Aksi halde döndürür `SCC_MSG_RTN_OK`. `display_string` Parametresi olarak atandığında bir [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) yapısı, kaynak denetimi eklentisi tarafından sağlanır.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Sürüm denetiminden alınmadan önce bir dosya hakkında IDE söyler. `display_string` Parametresi olarak atandığında bir [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) yapısı, kaynak denetimi eklentisi tarafından sağlanır.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Sürüm denetiminden aldıktan sonra IDE bir dosya hakkında söyler. `display_string` Parametresi olarak atandığında bir [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) yapısı, kaynak denetimi eklentisi tarafından sağlanır.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Arka plan işlemi şu andaki durumu IDE'yi söyler. `display_string` Parametresi olarak atandığında bir [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) yapısı, kaynak denetimi eklentisi tarafından sağlanır.|  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDE tarafından uygulanan geri çağırma işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)
-

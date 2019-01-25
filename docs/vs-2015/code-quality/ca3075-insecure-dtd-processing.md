@@ -1,25 +1,21 @@
 ---
 title: 'CA3075: Güvensiz DTD işleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 37aeec3ffc0505ee37e1658d01912837f06096d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785121"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD işleme
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD İşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -63,7 +59,7 @@ ms.locfileid: "53953432"
 
 - Güvenilmeyen kaynaklarıyla ayarlayarak uğraşıyorsanız DTD işlemeyi devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğini **true** .
 
-- Tam güven devralma talebi XmlTextReader sınıfı vardır. Bkz: [devralma taleplerini](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) daha fazla bilgi için.
+- Tam güven devralma talebi XmlTextReader sınıfı vardır. Bkz: [devralma taleplerini](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) daha fazla bilgi için.
 
   .NET 4 ve üzeri
 

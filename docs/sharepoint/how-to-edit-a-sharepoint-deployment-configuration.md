@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: SharePoint dağıtım yapılandırmasını düzenleme | Microsoft Docs'
+title: 'Nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,19 +9,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98cdc452663fd32508496c1fc52a49033a0b4381
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843599"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870067"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Nasıl Yapılır: SharePoint dağıtım yapılandırmasını düzenleme
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme
   Bir dağıtım yapılandırması oluşturun veya var olan bir dağıtım yapılandırmasını Değiştir. Örneğin, tek bir adım çalıştırın veya dağıtım işlemindeki adımları sırasını değiştirin. Yapılandırmaları oluşturmak veya yerleşik ve program aracılığıyla eklenen yapılandırmaları değiştirilemediğinden dağıtım değiştirmek isteyebilirsiniz.  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>SharePoint dağıtım yapılandırmasını oluşturma  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97bcd23bd4ac3f69ab39a31a48dabc62e00a3a1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961315"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876037"
 ---
 # <a name="ribbon-object-model-overview"></a>Şerit nesne modeline genel bakış
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve çalışma zamanında Şerit denetimlerinin özelliklerini ayarlamak için kullanabileceğiniz sağlam biçimde yazılmış nesne modeli sunar. Örneğin, dinamik olarak menü denetimlerini doldurmak veya gösterebilir ve bağlamsal denetimlerini gizle. Şerit, ancak yalnızca Şerit tarafından Office uygulamasına yüklenmeden önce sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için [salt okunur özelliklerini ayarlama](#SettingReadOnlyProperties).  

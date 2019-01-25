@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8787e79744dc52d3907f502b5696f4ca91522e01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86db84122876603ccea44be5fc1cd65b47263a92
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921792"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867487"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint çözümleri oluşturma
   Bunları SharePoint Tasarımcı'da oluşturmaya alternatif olarak, SharePoint uygulamalarını Visual Studio'da oluşturabilirsiniz. Visual Studio hata ayıklama araçları Gelişmiş, IntelliSense, ifade tamamlama ve proje şablonları gibi özellikler sağlayarak hızlı SharePoint geliştirmesi yükseltir. Visual Studio, .NET Framework tabanlı Gelişmiş araçları ve dilleri de yararlanır. Visual Basic veya Visual C# kullanarak SharePoint projeleri geliştirebilir ve JavaScript kullanarak SharePoint projeleri için uygulama geliştirebilirsiniz.  

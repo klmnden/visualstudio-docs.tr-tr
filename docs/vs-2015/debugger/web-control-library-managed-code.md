@@ -1,14 +1,9 @@
 ---
 title: Web denetim kitaplığı (yönetilen kod için) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +16,18 @@ ms.assetid: 2413883f-9e88-406d-b874-0ed743b75d40
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a523d593b4c61a7ca730cc60a6ed22a1be541f9c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797346"
 ---
 # <a name="web-control-library-managed-code"></a>Web Kontrol Kitaplığı (Yönetilen Kod)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web Denetim Kitaplığı proje şablonu, bir DLL oluşturur. Sınıf kitaplığının DLL olduğundan, doğrudan çalıştıramazsınız. Oluşturmalısınız bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] denetim katıştırır sayfası. Daha fazla bilgi için [Web denetim kitaplığı şablonu](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+Web Denetim Kitaplığı proje şablonu, bir DLL oluşturur. Sınıf kitaplığının DLL olduğundan, doğrudan çalıştıramazsınız. Oluşturmalısınız bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] denetim katıştırır sayfası. Daha fazla bilgi için [Web denetim kitaplığı şablonu](http://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Bir Web denetim kitaplığı (yöntemi 1) hata ayıklamak için  
   
@@ -58,6 +53,3 @@ Web Denetim Kitaplığı proje şablonu, bir DLL oluşturur. Sınıf kitaplığ�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET Web Uygulamaları](../debugger/debugging-preparation-aspnet-web-applications.md)
-
-
-

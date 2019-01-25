@@ -1,28 +1,23 @@
 ---
-title: 'İzlenecek yol: dış boşluk karakteri oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir dış boşluk karakteri oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 172ac543f8777219bb7c5adc94d19e1baeea24e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d22607dd4e32ac29a773b6217056c2484121cd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794594"
 ---
-# <a name="walkthrough-creating-a-margin-glyph"></a>İzlenecek Yol: Dış Boşluk Karakteri Oluşturma
+# <a name="walkthrough-creating-a-margin-glyph"></a>İzlenecek yol: Dış Boşluk Karakteri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Özel düzenleyici uzantıları kullanarak, düzenleyici kenar boşlukları görünümünü özelleştirebilirsiniz. "Todo" sözcüğü kod açıklamada göründüğü her durumda bu kılavuzda bir özel karakter gösterge kenar boşluğu koyar.  
@@ -146,4 +141,3 @@ ms.locfileid: "51783213"
 4.  Açıklamaları olan bir kod dosyası açın. "Todo" sözcüğü açıklama bölümlerden birine ekleyin.  
   
 5.  Koyu mavi anahat sahip bir açık mavi daireye gösterge kenar boşluğunda kod penceresinin sol görüntülenmesi gerekir.
-

@@ -1,12 +1,9 @@
 ---
 title: Bir komut dosyası kullanarak SQL veritabanı oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266597"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773893"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Bir komut dosyası kullanarak SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -233,7 +230,7 @@ Bu izlenecek yolda, Visual Studio için örnek kod içeren küçük bir veritaba
   
 1.  Menü çubuğunda, seçin **dosya** > **yeni** > **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+     **Yeni Proje** iletişim kutusu görünür.  
   
 2.  Altında **yüklü**, genişletme **şablonları** düğümünü genişletin **diğer diller** düğümünü **SQL Server** kategorisi ve ardından seçin **SQL Server veritabanı projesi** şablonu.  
   
@@ -276,4 +273,3 @@ Bu izlenecek yolda, Visual Studio için örnek kod içeren küçük bir veritaba
   
 ##  <a name="DeployDatabase"></a> Veritabanı dağıtma  
  Bastığınızda **F5** anahtar dağıttığınızda (veya yayımlama) bir LocalDB veritabanına varsayılan veritabanı. Proje için Özellikler sayfasını açarak veritabanını farklı bir konuma dağıtabilirsiniz seçerek **hata ayıklama** sekmesini ve sonra bağlantı dizesini değiştirerek.
-

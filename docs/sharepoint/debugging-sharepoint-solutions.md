@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04c80b0986d9a5bfa85a69994f96b56db337634f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c602654b5d9a8aac16f671db4e68063ad15a2d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892893"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874464"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint çözümlerinde hata ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklamayı başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyaları SharePoint sunucusuna dağıtır ve ardından Web tarayıcısında SharePoint sitesine bir örneğini açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama işlemleri açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

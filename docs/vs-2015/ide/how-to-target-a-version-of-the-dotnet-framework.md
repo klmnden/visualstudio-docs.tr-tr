@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: .NET Framework sürümü hedefleme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -16,21 +11,21 @@ ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3370c62535f2bb915115533ea79f4b913c3ac347
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ee322255cbb737aa4503517c599c62c9151937ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782313"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl Yapılır: .NET Framework Sürümü Hedefleme
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl yapılır: .NET Framework sürümü hedefleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir projenin nasıl oluşturulacağını ve varolan bir Visual Basic, Visual C# veya Visual F# projesinde hedeflenen sürümün nasıl değiştirileceğini belirtir.  
   
 > [!IMPORTANT]
->  C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+>  C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **Bu konudaki**  
   
@@ -58,16 +53,16 @@ Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir pro
      Şablon listesi yalnızca seçtiğiniz .NET Framework sürümünün desteklediği projeleri gösterir.  
   
 ##  <a name="bkmk_existing"></a> Hedef sürümü değiştirme  
- Visual Basic, Visual C# veya Visual F # projesinde .NET Framework'ün hedeflenen sürümünü bu yordamı izleyerek değiştirebilirsiniz.  
+ Hedeflenen görsel bir Visual Basic .NET Framework sürümünü değiştirebilirsiniz C#, veya Visual F# bu yordamı izleyerek proje.  
   
 #### <a name="to-change-the-targeted-version"></a>Hedeflenen sürümü değiştirmek için  
   
 1.  İçinde **Çözüm Gezgini**, değiştirin ve ardından istediğiniz projenin kısayol menüsünü **özellikleri**.  
   
-     ![Visual Studio Çözüm Gezgini özellikleri](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
+     ![Visual Studio Solution Explorer Properties](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    >  C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2.  Özellikler penceresinin sol sütununda seçin **uygulama** sekmesi.  
   
@@ -92,7 +87,4 @@ Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir pro
  [Uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Projeleri yapılandırma](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
-
-
-
+ [Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

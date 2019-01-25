@@ -1,25 +1,20 @@
 ---
 title: XAML Tasarımcısı'nda nesnelere animasyon ekleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805515"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>XAML Tasarımcısı’nda nesnelere animasyon ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Nesneleri taşıma kısa animasyonlar oluşturma veya içeri ve dışarı Soldur
   
  Bu videoları izleyerek animasyonları oluşturmayı öğrenin.  
   
-|Kısa bir video izleyin:|Bilgi edinmek için nasıl:|  
+|Kısa bir video izleyin:|Şunları nasıl yapacağınızı öğrenin:|  
 |--------------------------|-------------------|  
 |![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [zaman çizelgesini oluşturun](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Bir zaman çizelgesi oluşturun ve zaman çizelgesi nesneleri ile çalışır.|  
 |![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ana kareleri ekleyin ve animasyonu yineleme](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Ana kareleri ekleyin ve her bir kareden özelliklerini ayarlayın. Ardından, animasyon ve izleme nesneleri sorunsuz geçiş aralarında çalıştırın.|  
@@ -47,6 +42,3 @@ Nesneleri taşıma kısa animasyonlar oluşturma veya içeri ve dışarı Soldur
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

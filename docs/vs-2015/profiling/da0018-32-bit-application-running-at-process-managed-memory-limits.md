@@ -1,14 +1,9 @@
 ---
-title: 'DA0018: 32 bit uygulama çalışan yönetilen bellek sınırlarında | Microsoft Docs'
-ms.custom: ''
+title: 'DA0018: çalışan 32 bit uygulama yönetilen bellek sınırlarında | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,15 +12,15 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722254"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773293"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 bitlik Uygulama işlem tarafından yönetilen bellek sınırlarında çalışıyor
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: yönetilen bellek sınırlarında çalışan 32 bit uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0018 |  
@@ -59,7 +54,7 @@ Kural Kimliği | DA0018 |
   
 - uygulamanın yönetilen bellek kaynaklarının kullanımını en iyi duruma getirme  
   
-   veya  
+   -veya-  
   
 - sanal bellek 32 bitlik bir işlem için en büyük boyutunu mimari kısıtlamalar hafifletmek için gerekli adımların atılmasından  
   
@@ -74,6 +69,3 @@ Kural Kimliği | DA0018 |
   Mimari Tahliye boyutu sanal bellek kısıtlamalardan işlemi adres alanı özel kısmının kazanmak için bu 32 bit işlemin 64-bit bir makineye çalıştığı deneyin.  Bir 64-bit makinedeki 32 bitlik bir işlem en fazla 4 GB özel sanal bellek elde edebilirsiniz.  
   
   Bir 64 bit makine üzerinde çalışan 64 bitlik bir işlem 8 TB'a kadar sanal belleğin elde edebilirsiniz. Yerel bir 64 bit uygulama olarak yürütmek için uygulamayı yeniden derlemeyi düşünün. Bu kural yalnızca bilgi amaçlıdır ve düzeltici eylem gerekli değil.
-
-
-

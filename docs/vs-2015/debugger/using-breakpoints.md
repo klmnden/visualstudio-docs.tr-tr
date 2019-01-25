@@ -1,13 +1,8 @@
 ---
 title: Kesme noktalarını kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805502"
 ---
 # <a name="using-breakpoints"></a>Kesme Noktalarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ ms.locfileid: "51765956"
   
  Bu noktada değerini `testInt` hala 1'dir.  
   
- Değişken değerleri ve çağrı yığını da dahil olmak üzere uygulama geçerli durumda bakabilirsiniz. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını penceresinde kullanmak](../debugger/how-to-use-the-call-stack-window.md).  
+ Değişken değerleri ve çağrı yığını da dahil olmak üzere uygulama geçerli durumda bakabilirsiniz. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md).  
   
  Herhangi bir yürütülebilir kod satırında bir kesme noktası ayarlayabilirsiniz. Örneğin, C# dilinde kod yukarıdaki bir kesme noktası Değişken bildiriminde ayarlayabilirsiniz `for` döngü ya da herhangi bir kod içinde `for` döngü, ancak ayarlayamıyor bir kesme noktası ad alanı veya sınıf bildirimlerine veya yöntem imzası.  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51765956"
  Kesme noktaları, çağrı yığınındaki, ayrıştırma penceresinde ve, yerel C++ kod, bir veri koşul veya bir bellek adresi de ayarlayabilirsiniz.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Çağrı yığını penceresinde bir kesme noktası ayarlama  
- Yönerge ya da bir kesme noktası ayarlayarak için çağıran işlevin döndürdüğü satır yürütmeyi kesebilirsiniz **çağrı yığını** penceresi. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: çağrı yığını penceresinde kullanmak](../debugger/how-to-use-the-call-stack-window.md). Hata ayıklayıcı, yürütmeyi durdurdu.  
+ Yönerge ya da bir kesme noktası ayarlayarak için çağıran işlevin döndürdüğü satır yürütmeyi kesebilirsiniz **çağrı yığını** penceresi. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md). Hata ayıklayıcı, yürütmeyi durdurdu.  
   
 1. Uygulama hata ayıklamayı başlatmak ve (örneğin, bir kesme noktasında) bekleme yürütme durduruldu. Açık **çağrı yığını** penceresi (**hata ayıklama / Windows / çağrı yığını**, veya **CTRL + ALT + C**).  
   
@@ -155,7 +150,7 @@ ms.locfileid: "51765956"
   
    İade **koşullar** penceresi kutusunu genişletir çeşitli koşullar göstermek için.  
   
-   **Koşullu ifade:** koşullu ifade seçtiğinizde, iki koşuldan sonra seçebilirsiniz: **true** ve **değiştirildiğinde**. Seçin **true** kesmek istiyorsanız ne zaman ifadesi karşılanmadı veya seçin **değiştirildiğinde** ifade değeri değiştiğinde kesmek istiyorsanız.  
+   **Koşullu ifade:** Koşullu ifade seçtiğinizde, iki koşul sonra seçebilirsiniz: **True** ve **değiştirildiğinde**. Seçin **true** kesmek istiyorsanız ne zaman ifadesi karşılanmadı veya seçin **değiştirildiğinde** ifade değeri değiştiğinde kesmek istiyorsanız.  
   
    Aşağıdaki örnekte biz yalnızca isabet kesme noktasını ayarlamanız değerini `testInt` olduğu **4**:  
   
@@ -259,6 +254,3 @@ ms.locfileid: "51765956"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklayıcısı ile Kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

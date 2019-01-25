@@ -1,14 +1,9 @@
 ---
 title: "İzlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı derlemeleri indirme | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796173"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce Dağıtım API'si ile İsteğe Bağlı Derlemeleri İndirme
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı derlemeleri indirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamayı ilk kez çalıştırdığınızda, uygulama yüklenir. Ancak, kullanıcıların küçük bir kümesi tarafından kullanılan uygulamanızın parçalarını olabilir. Bu durumda, yalnızca türlerinden oluşturduğunuzda bir derlemeyi indirmek istediğiniz. Aşağıdaki örneklerde, belirli bütünleştirilmiş kodların "isteğe bağlı" olarak, uygulamanızda işaretlenecek gösterilmiştir ve yer alan kullanarak indirmek nasıl sınıfları <xref:System.Deployment.Application> ortak dil çalışma zamanı (CLR) onları talep ettiğinde ad alanı.  
@@ -108,7 +103,7 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../includ
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>MageUI.exe kullanarak isteğe bağlı olarak, ClickOnce uygulamanızı derlemeleri işaretlemek için  
   
-1.  MageUI.exe kullanarak oluşturduğunuz uygulama bildiriminde açıklandığı [izlenecek yol: ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Uygulama bildirimi için aşağıdaki ayarları kullanın:  
+1.  MageUI.exe kullanarak oluşturduğunuz uygulama bildiriminde açıklandığı [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Uygulama bildirimi için aşağıdaki ayarları kullanın:  
   
     -   Uygulama bildirimi adı `ClickOnceOnDemand`.  
   
@@ -116,7 +111,7 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../includ
   
     -   Üzerinde **dosyaları** ClickOnceLibrary.dll satırda, türü sayfası `ClickOnceLibrary.dll` içinde **grubu** sütun.  
   
-2.  MageUI.exe kullanarak oluşturduğunuz bir dağıtım bildirimi açıklandığı [izlenecek yol: ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım bildirimi için aşağıdaki ayarları kullanın:  
+2.  MageUI.exe kullanarak oluşturduğunuz bir dağıtım bildirimi açıklandığı [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım bildirimi için aşağıdaki ayarları kullanın:  
   
     -   Dağıtım bildiriminin adı `ClickOnceOnDemand`.  
   
@@ -136,6 +131,3 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../includ
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-

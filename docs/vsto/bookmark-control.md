@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10594bb52ca8bfad14acb162b46d86b3b80fdd31
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960423"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873684"
 ---
 # <a name="bookmark-control"></a>Yer işareti denetimi
   <xref:Microsoft.Office.Tools.Word.Bookmark> Verilere bağlı benzersiz bir ada sahip ve olayları ortaya koyan bir yer işareti bir denetimdir. Yer işareti, bir öğe veya Microsoft Office Word belgesindeki bir konumu işaretlemek için yer tutucu olarak kullanılabilir. <xref:Microsoft.Office.Tools.Word.Bookmark> Denetimi bir birleşimi olan bir <xref:Microsoft.Office.Interop.Word.Bookmark> nesnesi ve bir <xref:Microsoft.Office.Interop.Word.Range> nesne.
