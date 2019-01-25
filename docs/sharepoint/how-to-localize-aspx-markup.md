@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ASPX işaretlemesini yerelleştirme | Microsoft Docs'
+title: 'Nasıl yapılır: ASPX işaretlemesini yerelleştirme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - localizing XML [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df6e4be288e957708ba7339383d8e80e82f27e40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959882"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870275"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Nasıl Yapılır: ASPX işaretlemesini yerelleştirme
+# <a name="how-to-localize-aspx-markup"></a>Nasıl yapılır: ASPX işaretlemesini yerelleştirme
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) sayfası genellikle sabit kodlanmış dize değerleri kullanır. Bu dizelerini yerelleştirmek için yerelleştirilmiş kaynaklara başvuran deyimleri ile değiştirin.  
   
 ## <a name="localize-aspx-markup"></a>ASPX işaretlemesini yerelleştirme  

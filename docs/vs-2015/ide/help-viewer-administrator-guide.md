@@ -1,25 +1,20 @@
 ---
 title: Yardım Görüntüleyicisi Yönetici Kılavuzu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799711"
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
      C:\Program dosyaları (x86) \Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation yüklemek/catalogname VisualStudio14/Locale en-us  
   
-3.  ENTER tuşuna basın.  
+3.  Press ENTER.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>İstemci bilgisayarlarda önceden yüklenmiş yerel Yardım içeriğini dağıtma  
  İçerik kümesi Online'dan tek bir bilgisayara yükleyin ve ardından, yüklenen içerik kümesini başka bilgisayarlara kopyalayabilirsiniz.  
@@ -132,7 +127,7 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
 4.  Aşağıdakileri yazın:  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *KlasörAdı*> \ /y /e /k /o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o  
   
      Örneğin: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.  
   
@@ -209,6 +204,3 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Yardım İçerik Yöneticisi Geçersiz Kılmaları](../ide/help-content-manager-overrides.md)
-
-
-

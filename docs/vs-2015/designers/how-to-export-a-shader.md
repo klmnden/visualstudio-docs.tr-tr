@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: gölgelendiriciyi dışarı aktarma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Gölgelendiriciyi dışarı aktarma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e8c3a6ea90b43caeb1140cbb9ab7c699bdb09c3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802799"
 ---
-# <a name="how-to-export-a-shader"></a>Nasıl Yapılır: Gölgelendiriciyi Dışarı Aktarma
+# <a name="how-to-export-a-shader"></a>Nasıl yapılır: Gölgelendiriciyi dışarı aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu belgede, böylece uygulamanızda kullanabilirsiniz yönlendirilmiş grafik gölgelendirici dili (DGSL) gölgelendiriciyi dışarı aktarma için gölgelendirici Tasarımcısı'nı nasıl yapılacağı açıklanır.  
@@ -37,7 +32,7 @@ Bu belgede, böylece uygulamanızda kullanabilirsiniz yönlendirilmiş grafik g�
   
 1.  İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açık bir **görsel gölgelendirici grafiği (.dgsl)** dosya.  
   
-     Yoksa bir **görsel gölgelendirici grafiği (.dgsl)** açın, içinde açıklandığı gibi oluşturmak için dosya [nasıl yapılır: temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md).  
+     Yoksa bir **görsel gölgelendirici grafiği (.dgsl)** açın, içinde açıklandığı gibi oluşturmak için dosya [nasıl yapılır: Temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md).  
   
 2.  Üzerinde **gölgelendirici Tasarımcısı** araç seçin **Gelişmiş**, **dışarı**, **dışarı aktarma olarak**. **Gölgelendiriciyi dışarı aktarma** iletişim kutusu görüntülenir.  
   
@@ -57,8 +52,5 @@ Bu belgede, böylece uygulamanızda kullanabilirsiniz yönlendirilmiş grafik g�
 4.  İçinde **dosya adı** birleşik giriş kutusu, dışarı aktarılan gölgelendirici için bir ad belirtin ve ardından **Kaydet** düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md)   
+ [Nasıl yapılır: Temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md)   
  [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
-
-
-

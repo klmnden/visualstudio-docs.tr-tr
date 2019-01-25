@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Office projelerinde olay işleyicileri oluşturma'
+title: 'Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2a7661a1bce8e1ff6152040fe5b8d5567b55c7e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859847"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863844"
 ---
-# <a name="how-to-create-event-handlers-in-office-projects"></a>Nasıl Yapılır: Office projelerinde olay işleyicileri oluşturma
+# <a name="how-to-create-event-handlers-in-office-projects"></a>Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma
   Visual Basic'te olay işleyicileri oluşturmanın birkaç yolu vardır ve C#. Tasarım görünümünde, varsayılan olay işleyicileri denetimleri için denetimi çift tıklayarak oluşturabilir, veya olayları bölmesini kullanarak **özellikleri** herhangi bir olay işleyicileri denetimi oluşturmak için pencere. Ancak, kod Görünümü'nde, bir olay işleyicisi oluşturmak için Tasarım görünümüne geçiş yapmak istemeyebilirsiniz.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  

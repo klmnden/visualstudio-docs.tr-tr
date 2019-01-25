@@ -1,13 +1,9 @@
 ---
 title: 'CA1009: Olay işleyicilerini doğru bildirin | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
@@ -19,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba96dbced72ae4d1cd51e05f55670186eb72def6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f3764e7e7965fb9efe46a8404273de9adde4a34
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785289"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Olay işleyicilerini doğru bildirin
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Olay işleyicileri doğru olarak bildirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -62,4 +58,4 @@ ms.locfileid: "53893493"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.EventArgs?displayProperty=fullName><xref:System.Object?displayProperty=fullName>
- [NIB: Olaylar ve temsilciler](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [NIB: Olaylar ve temsilciler](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

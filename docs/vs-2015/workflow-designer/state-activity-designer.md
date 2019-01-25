@@ -1,11 +1,8 @@
 ---
 title: State etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
@@ -13,13 +10,13 @@ ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cc6d0d13b1bb924847c52ae8e41e2b859d2e7b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9cb5185bdef35d383e92082160e9f4b1dda5451f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786081"
 ---
 # <a name="state-activity-designer"></a>State Etkinlik Tasarımcısı
 A <xref:System.Activities.Statements.State> içinde bir Durum makinesi olabilir bir durumu temsil eder.  
@@ -30,7 +27,7 @@ A <xref:System.Activities.Statements.State> içinde bir Durum makinesi olabilir 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>İş akışı tasarımcısında State etkinlik özellikleri  
  Aşağıdaki tabloda <xref:System.Activities.Statements.State> iş akışı Tasarımcısı'nı kullanarak ayarlanabilir ve Tasarımcısı'nda nasıl kullanıldığını açıklar. Bu özelliklerin bazıları özellik kılavuzunda düzenlenebilir ve bazı Tasarımcı yüzeyinde düzenlenebilir.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|Kolay adı belirtir <xref:System.Activities.Statements.State> üst bilgisindeki etkinlik Tasarımcısı. Varsayılan değer **durumu**. Değer özellik kılavuzunda veya etkinlik Tasarımcısı başlığındaki doğrudan düzenleyebilirsiniz. <xref:System.Activities.Statements.State.DisplayName%2A> İş akışı Tasarımcısı üst kısmında görüntülenen içerik haritalı gezinme kullanılır.<br /><br /> Ancak <xref:System.Activities.Statements.State.DisplayName%2A> kati şekilde gerekli değil kullanmak için en iyi bir uygulamadır.|  
 |<xref:System.Activities.Statements.State.Entry%2A>|False|Bu durum için geçirildiğinde basıldığında uygulanacak eylemi belirtir. Zaman <xref:System.Activities.Statements.State> etkinlik genişletilir, bu değer, bir etkinlikten sürükleyerek ayarlanabilir **araç kutusu** üzerine sürükleyip bırakarak **giriş** durumu bölümü.|  

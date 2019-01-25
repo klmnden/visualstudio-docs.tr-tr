@@ -1,34 +1,29 @@
 ---
 title: Symbols öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784669"
 ---
 # <a name="symbols-element"></a>Symbols Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar. Yönetilmeyen kod için bu bilgiler genellikle tarafından belirtilen üst bilgi dosyaları geldiği [Extern öğesi](../extensibility/extern-element.md). Kod kullanan bu bilgileri tanımlamak için semboller öğenin alt öğeleri yönetilen.  
   
- Mevcut bir .cto dosyadan .vsct dosyası oluşturma simgeleri Symbols öğesi alt öğesi olarak oluşturulur. Daha fazla bilgi için [nasıl yapılır: oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ Mevcut bir .cto dosyadan .vsct dosyası oluşturma simgeleri Symbols öğesi alt öğesi olarak oluşturulur. Daha fazla bilgi için [nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Cto dosya](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
  Symbols öğesi ile karıştırılmamalıdır [tanımlama öğesi](../extensibility/define-element.md), önişlemci tarafından kullanılmak üzere ad-değer çiftleri tanımlar.  
   
@@ -48,7 +43,7 @@ GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar.
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|Yok.||  
+|Hiçbiri||  
   
 ### <a name="child-elements"></a>Alt Öğeler  
   
@@ -78,4 +73,3 @@ GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,26 +1,21 @@
 ---
 title: VSPackage Kurulum senaryoları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
 ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34181e5b03b29662188e368561b0f43049629ec1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799905"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage Kurulum Senaryoları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -84,4 +79,3 @@ Yan yana VSPackage güncelleştirme yükleyicisi
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Visual Studio'nun Birden Çok Sürümünü Destekleme](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
-

@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: temel 3B Model oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Temel 3B Model oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760777"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Nasıl Yapılır: Temel 3B Model Oluşturma
+# <a name="how-to-create-a-basic-3-d-model"></a>Nasıl yapılır: Temel 3B Model oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu belge, temel 3B model oluşturmak için Model Düzenleyicisi nasıl yapılacağı açıklanır.  
@@ -82,9 +77,6 @@ Bu belge, temel 3B model oluşturmak için Model Düzenleyicisi nasıl yapılaca
    Sonraki adım olarak, bu 3B modele gölgelendirici uygulayabilirsiniz. Bilgi için [nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: 3B Arazi modeli oluşturma](../designers/how-to-model-3-d-terrain.md)   
+ [Nasıl yapılır: Model 3B Arazi](../designers/how-to-model-3-d-terrain.md)   
  [Model Düzenleyicisi](../designers/model-editor.md)   
  [Gölgelendirici Tasarımcısı](../designers/shader-designer.md)
-
-
-

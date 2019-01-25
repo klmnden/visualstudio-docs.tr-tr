@@ -1,13 +1,9 @@
 ---
 title: Taşıma, geçirme ve projelerini yükseltme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -22,13 +18,13 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805559"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |Diğer|Çoğu proje türleri açabileceğiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]ve Visual Studio 2010 SP1.|
 |FrontPage Web Siteleri|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] proje türünü desteklemediğinden.|
 |Taşınabilir Sınıf Kitaplığı|Visual Studio'nun projeyi otomatik olarak güncelleştirmesine izin verirseniz projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya Visual Studio 2010 SP1.<br /><br /> -Silverlight 4'ü hedefleyen projeler Silverlight 5 hedefleyecektir.<br />-Windows Phone 7.0 veya Windows Phone 7.5 hedefleyen projeler Windows Phone 8 hedefleyecektir.<br />-Xbox 360'ı hedefleyen projeler bundan böyle Xbox 360 hedefleyecektir.|
-|.Deployproj uzantısıyla projeler (.ccproj uzantısı) ve Azure Resource Manager projeleri (bulut dağıtımı projelerini) Azure projeleri gibi bulut hizmeti|Bu proje türleri'ni açmak için ilk yükleme [.NET için Azure SDK'sı](http://azure.microsoft.com/en-us/downloads/), sonra projeyi açabilirsiniz.|
+|.Deployproj uzantısıyla projeler (.ccproj uzantısı) ve Azure Resource Manager projeleri (bulut dağıtımı projelerini) Azure projeleri gibi bulut hizmeti|Bu proje türleri'ni açmak için ilk yükleme [.NET için Azure SDK'sı](http://azure.microsoft.com/downloads/), sonra projeyi açabilirsiniz.|
 
 ## <a name="troubleshooting-project-compatibility-issues"></a>Proje uyumluluk sorunlarını giderme
  Yapabileceğiniz bir proje içinde açılmadığında yapabileceklerinizden bazıları şunlardır [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:

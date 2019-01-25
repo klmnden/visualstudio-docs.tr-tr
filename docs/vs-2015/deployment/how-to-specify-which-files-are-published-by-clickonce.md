@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776325"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl yapılır: ClickOnce Tarafından Hangi Dosyaların Yayımlandığını Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
   
 -   SQL veritabanı (.mdf ve .mdb) dosyalarını ve XML dosyaları gibi veri dosyalarını varsayılan veri dosyaları olarak işaretlenir.  
   
--   Başvuru derlemeleri (.dll dosyaları) için bir başvuru eklediğinizde, şu şekilde atanır: varsa **Yereli Kopyala** olduğu **False**, varsayılan olarak bir önkoşul derleme olarak işaretlenmiş (**önkoşul ( Otomatik)**), bulunmalıdır GAC'de uygulama yüklenmeden önce. Varsa **Yereli Kopyala** olduğu **True**, derleme varsayılan olarak bir uygulama derleme olarak işaretlenir (**Ekle (otomatik)**) ve yükleme sırasında uygulama klasörüne kopyalanır. Bir COM başvurusu görünür **uygulama dosyaları** iletişim kutusu (.ocx dosyası) olarak yalnızca şu durumlarda onun **yalıtılmış** özelliği **True**. Varsayılan olarak dahil edilir.  
+-   Bir başvuru eklediğinizde, derlemeleri (.dll dosyaları) başvurular gibi atanır: Varsa **Yereli Kopyala** olduğu **False**, varsayılan olarak bir önkoşul derleme olarak işaretlenmiş (**önkoşul (otomatik)**), bulunmalıdır GAC'de uygulama yüklenmeden önce. Varsa **Yereli Kopyala** olduğu **True**, derleme varsayılan olarak bir uygulama derleme olarak işaretlenir (**Ekle (otomatik)**) ve yükleme sırasında uygulama klasörüne kopyalanır. Bir COM başvurusu görünür **uygulama dosyaları** iletişim kutusu (.ocx dosyası) olarak yalnızca şu durumlarda onun **yalıtılmış** özelliği **True**. Varsayılan olarak dahil edilir.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Uygulama dosyaları iletişim kutusu için dosyaları ekleme  
   
@@ -124,6 +119,3 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
  [Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

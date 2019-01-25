@@ -1,25 +1,22 @@
 ---
 title: Uygulamanızı model&#39;s mimarisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800426"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   Bu bölümün geri kalanında bu noktaları ayrıntılandırılmıştır.  
   
 ### <a name="components"></a>Bileşenler  
- Merkezi bir mimari modeli sistem ve birbirine nasıl bağlı olan başlıca parçaları Göster Bileşen diyagramları görünümleridir. Bileşen diyagramları hakkında daha fazla bilgi için bkz: [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md).  
+ Merkezi bir mimari modeli sistem ve birbirine nasıl bağlı olan başlıca parçaları Göster Bileşen diyagramları görünümleridir. Bileşen diyagramları hakkında daha fazla bilgi için bkz: [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md).  
   
  ![UML bileşen diyagramı bölümleri gösteren](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
   Bileşenler arasındaki bağımlılıkları doğrudan gösterebilir veya gerekli ve sağlanan bileşenlere iliştirilmiş arabirimleri arasındaki bağımlılıkları gösterebilirsiniz. Arabirimler kullanarak hangi işlemleri her bir bağımlılığın içinde kullanılan tanımlayabilirsiniz. Genellikle, bağımlılıkları diyagramları çizilmiş önce ve sonra daha fazla bilgi eklendikçe arabirimleri arasındaki bağımlılıkları yerini bileşenleri arasında gösterilir. Her iki sürümü yazılım doğru açıklamalardır ancak arabirimleri sürümle önceki sürümden daha fazla ayrıntı sağlar.  
   
-  Bağımlılık Yönetimi yazılım sürdürülebilir üretim için en önemli şey. Bileşen diyagramları, kodunuzdaki tüm bağımlılıkları yansıtmalıdır. Kodu zaten varsa, tüm bağımlılıkları diyagramlara gösterildiğinden emin olun. Kod geliştirilen, onu değil planlanan bağımlılıkları bileşen diyagramında içermediğinden emin olun. Bir koddaki bağımlılıkları keşfetmenize yardımcı olmak için katman diyagramları oluşturabilirsiniz. Planlanan bağımlılık kısıtlamaları karşılandığından emin olun yardımcı olmak için kodu katman diyagramlarına karşı doğrulayabilir. Daha fazla bilgi için [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md).  
+  Bağımlılık Yönetimi yazılım sürdürülebilir üretim için en önemli şey. Bileşen diyagramları, kodunuzdaki tüm bağımlılıkları yansıtmalıdır. Kodu zaten varsa, tüm bağımlılıkları diyagramlara gösterildiğinden emin olun. Kod geliştirilen, onu değil planlanan bağımlılıkları bileşen diyagramında içermediğinden emin olun. Bir koddaki bağımlılıkları keşfetmenize yardımcı olmak için katman diyagramları oluşturabilirsiniz. Planlanan bağımlılık kısıtlamaları karşılandığından emin olun yardımcı olmak için kodu katman diyagramlarına karşı doğrulayabilir. Daha fazla bilgi için [katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Arabirimler  
  Arabirimleri bileşenlerinizin üzerine yerleştirerek, ayırın ve her bir bileşen tarafından sağlanan işlemlerinin büyük grup adı. Örneğin, web tabanlı bir satış sistemine bileşenlerde bir arabirim üzerinden müşterilere mal satın alma, bir arabirim üzerinden tedarikçileri, katalog güncelleştirmesi ve sistem yönetilen aracılığıyla üçüncü arabirim olabilir.  
@@ -161,7 +158,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 ### <a name="decomposing-a-component-into-parts"></a>Bir bileşeni parçalara ayırma  
  Her bileşen için önceki bölümlerde açıklanan yordamı uygulayabilirsiniz.  
   
- Her bir bileşen içinde alt bileşenlerinden parçaları olarak gösterebilirsiniz. Bir bölümü etkin bir türde bir sınıfı, ana bileşeninin bir özniteliğidir. Her parça bir bileşen olan kendi türü vardır. Bu bileşen bir diyagram üzerinde yerleştirebilir ve onun parçalarını gösterir. Daha fazla bilgi için [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
+ Her bir bileşen içinde alt bileşenlerinden parçaları olarak gösterebilirsiniz. Bir bölümü etkin bir türde bir sınıfı, ana bileşeninin bir özniteliğidir. Her parça bir bileşen olan kendi türü vardır. Bu bileşen bir diyagram üzerinde yerleştirebilir ve onun parçalarını gösterir. Daha fazla bilgi için [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md).  
   
  Bu teknik tüm sisteme uygulamak kullanışlıdır. Tek bir bileşen olarak çizme ve ana bileşenlerini parçaları olarak göster. Bu arabirimler sisteminizin dış dünya ile açıkça belirlemenize yardımcı olur.  
   
@@ -199,7 +196,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 ### <a name="identifying-the-initiating-events"></a>Başlatma olaylarını belirleme  
  Çoğu yazılım sistemleri tarafından çalışmanın, kolayca, farklı giriş veya olayları için verdiği yanıtlar tarafından da bölünebilir. Başlatma olayı, aşağıdaki olaylardan biri olabilir:  
   
--   Kullanım örneği ilk eylem. Gereksinimler modelinde, bir kullanım örneği bir adım veya bir eylem diyagramındaki bir eylem olarak görünebilir. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md) ve [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+-   Kullanım örneği ilk eylem. Gereksinimler modelinde, bir kullanım örneği bir adım veya bir eylem diyagramındaki bir eylem olarak görünebilir. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md) ve [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
 -   Bir programlama arabirimi bir ileti. Geliştirmekte olduğunuz sistem daha büyük bir sistemde bir bileşeni ise, bir bileşenin arabirimleri işlem olarak açıklanmalıdır. Bkz: [bileşenlerini ve bunların](#Components).  
   
@@ -210,9 +207,9 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Tipik bir sırayla bölümü alır her bileşen örneği için yaşam çizgisi çizin. Bazı durumlarda, her türden birden fazla örneği olabilir. Tek bir bileşeni olarak tüm sisteminizi açıklanan içerdiği her bir bölümü için bir yaşam çizgisi olmalıdır.  
   
- Daha fazla bilgi için [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
- Faaliyet diyagramları, bazı durumlarda da kullanışlıdır. Örneğin, sürekli bir veri akışı bileşenleriniz varsa, nesne akışı olarak tanımlayabilirsiniz. Bir karmaşık algoritma Bileşeniniz varsa, denetim akışı olarak tanımlayabilirsiniz. Bu bileşeni açıklamaları kullanarak her eylem, örneğin gerçekleştirir. Temizle yaptığınızdan emin olun. Daha fazla bilgi için [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+ Faaliyet diyagramları, bazı durumlarda da kullanışlıdır. Örneğin, sürekli bir veri akışı bileşenleriniz varsa, nesne akışı olarak tanımlayabilirsiniz. Bir karmaşık algoritma Bileşeniniz varsa, denetim akışı olarak tanımlayabilirsiniz. Bu bileşeni açıklamaları kullanarak her eylem, örneğin gerçekleştirir. Temizle yaptığınızdan emin olun. Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ### <a name="specify-the-operations"></a>İşlemleri belirtin  
  Her bir bileşen tarafından gerçekleştirilen işlemleri diyagramlarda da gösterildiği bir sıralı diyagram veya eylemleri bir eylem diyagramındaki iletileri olarak ya da gösterilen.  
@@ -247,7 +244,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
 -   Başlıca parçaları ve aralarındaki ilişkiler modeli. Bunlar, sınıfları veya bileşenleri ve arabirimler, ilişkileri ve aralarındaki bağımlılıkları olabilir. Öğeleri genellikle iki kategoriye ayrılır:  
   
-    -   Her desen kullanıldığı kod bölümünde Geliştirici çoğaltmalıdır öğeleri. Bunları açıklamak için şablon türleri kullanabilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md).  
+    -   Her desen kullanıldığı kod bölümünde Geliştirici çoğaltmalıdır öğeleri. Bunları açıklamak için şablon türleri kullanabilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
   
     -   Geliştirici kullanması gereken framework sınıfları tanımlayan öğeler.  
   
@@ -265,6 +262,3 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Model aracılığıyla test geliştirme](../modeling/develop-tests-from-a-model.md)   
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)
-
-
-

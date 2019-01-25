@@ -1,12 +1,9 @@
 ---
 title: Özellik türleri UML sınıf diyagramları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803408"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki türlerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +28,9 @@ UML sınıf diyagramında bir *türü* bir sınıf, arabirim veya numaralandırm
 > [!NOTE]
 >  Bu konu UML sınıf diyagramlarındaki türlerin özellikleri hakkındadır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
+-   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)  
   
 -   [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
@@ -49,7 +46,7 @@ UML sınıf diyagramında bir *türü* bir sınıf, arabirim veya numaralandırm
 |**Özelliği**|**Default**|Görünür|Açıklama|  
 |------------------|-----------------|----------------|-----------------|  
 |**Ad**|Varsayılan bir ad|Tüm öğeleri|Öğeyi tanımlar.|  
-|**Tam adı**|İçeren paketi:: Tür adı|Tüm öğeleri|Öğeyi benzersiz şekilde tanımlar. İle içerdiği paket tam adı öneki.|  
+|**Tam adı**|Paket içeren:: Tür adı|Tüm öğeleri|Öğeyi benzersiz şekilde tanımlar. İle içerdiği paket tam adı öneki.|  
 |**Renk**|Türünü için varsayılan|Tüm öğeleri|Bu şeklin rengi. Diğer özelliklerin aksine, bu temel alınan model öğesinin bir özellik değil. Aynı türde farklı görünümleri farklı renkler olabilir.|  
 |**Özet**|False|örneği|TRUE ise, sınıf oluşturulamaz ve bir temel sınıf olarak kullanıma yöneliktir.|  
 |**Yaprak**|False|Sınıf, arabirim|TRUE ise, türü türetilmiş türleri için tasarlanmamıştır.|  
@@ -64,7 +61,4 @@ UML sınıf diyagramında bir *türü* bir sınıf, arabirim veya numaralandırm
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki İlişkilendirmelerin Özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)

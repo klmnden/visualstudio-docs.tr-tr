@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: ekleme veya kaldırma (Visual Basic) içeri aktarılan ad uzaylarını | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İçeri aktarılan ad alanlarını (Visual Basic) ekleyip | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
 - removing imported namespaces
@@ -19,15 +14,15 @@ ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c24f9cec4a599a8131ad41cdadb6d00946921922
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798965"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl Yapılır: İçeri Aktarılan Ad Uzaylarını Ekleme veya Kaldırma (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl yapılır: Ekleme veya kaldırma içeri aktarılan ad alanlarını (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir ad alanı içeri aktarma öğesi tam olarak niteleme olmadan kodunuzda bu ad alanından öğeler kullanmanıza olanak tanır. Örneğin erişmek istiyorsanız, `Create` yönteminde `System.Messaging.MessageQueue` alabileceğiniz sınıfı `System.Messaging` ad alanı ve yalnızca gereksinim duyduğunuz kod öğesi bakın `MessageQueue.Create`.  
@@ -43,7 +38,7 @@ Bir ad alanı içeri aktarma öğesi tam olarak niteleme olmadan kodunuzda bu ad
 3.  İçinde **içeri aktarılan ad alanlarını** listesinde, eklemek istediğiniz ad alanı için onay kutusunu seçin.  
   
     > [!NOTE]
-    >  Ad alanı içeri aktarılması için başvurulan bir bileşen olarak olması gerekir. Ad alanı listede görünmüyorsa, içerdiği bileşenine bir başvuru eklemeniz gerekir. Daha fazla bilgi için [nasıl NIB: başvurular ekleme veya kaldırma Başvurusu Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Ad alanı içeri aktarılması için başvurulan bir bileşen olarak olması gerekir. Ad alanı listede görünmüyorsa, içerdiği bileşenine bir başvuru eklemeniz gerekir. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Bir içeri aktarılan ad alanı kaldırmak için  
   
@@ -85,6 +80,3 @@ Bir ad alanı içeri aktarma öğesi tam olarak niteleme olmadan kodunuzda bu ad
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
-
-
-

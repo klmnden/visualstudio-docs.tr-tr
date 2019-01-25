@@ -1,14 +1,9 @@
 ---
 title: Generatetrustınfo görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a20a50e74f702c1c015f29abde81b2e24a5551b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4f1cf52286de97980eb269c3b52055be4455c38d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790158"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +47,3 @@ Uygulama güvenini taban bildirimini ve gelen oluşturur `TargetZone` ve `Exclud
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

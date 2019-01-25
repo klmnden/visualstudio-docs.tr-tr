@@ -1,33 +1,28 @@
 ---
 title: Eski API'yi kullanarak bir dil hizmetinin bağlamına sağlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781939"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802083"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Eski API'yi kullanarak bir dil hizmetinin bağlamına sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanıcı bağlamı kullanarak sağlamak için bir dil hizmeti için iki seçenek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çekirdek Düzenleyicisi: metin işaretçisi bağlam sağlamak ya da tüm kullanıcı bağlamı sağlar. Her arasındaki farklar aşağıda özetlenmiştir.  
   
- Bağlam sağlamak için kendi düzenleyicinizi bağlı bir dil hizmeti ile ilgili daha fazla bilgi için bkz: [nasıl yapılır: bağlam sağlamak düzenleyiciler için](../extensibility/how-to-provide-context-for-editors.md).  
+ Bağlam sağlamak için kendi düzenleyicinizi bağlı bir dil hizmeti ile ilgili daha fazla bilgi için bkz: [nasıl yapılır: Bağlam sağlamak için düzenleyicileri](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Düzenleyici metin işaretçisi bağlam sağlayın  
  Derleyici hataları metin işaretçilerini tarafından belirtilen bağlam sağlamak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çekirdek Düzenleyicisi, uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi. İmleç üzerinde bir metin işaretçisi olduğunda bu senaryoda, Dil Hizmet bağlamı sağlar. Bu anahtar sözcüğü için imlecin sağlamak üzere Düzenleyicisi sağlar **dinamik Yardım** penceresi özniteliği yok.  
@@ -56,4 +51,3 @@ Kullanıcı bağlamı kullanarak sağlamak için bir dil hizmeti için iki seçe
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Düzenleyiciler ve tasarımcılar için bağlam yönergeleri  
  Tasarımcılar ve düzenleyiciler bir genel anahtar sözcük Düzenleyici veya tasarımcı penceresini sağlamanız gerekir. Bu, böylece kullanıcı F1 tuşuna bastığında genel, ancak uygun bir Yardım konusu Tasarımcı veya düzenleyicide için görüntüler gerçekleştirilir. Bir düzenleyici gerekir Buna ek olarak, geçerli anahtar sözcüğü imlecin sağlayın veya geçerli seçime dayanan bir anahtar terimi sağlayın. Bu, metin veya kullanıcı Arabirimi öğesi için bir Yardım konusu işaret veya kullanıcı F1 tuşuna bastığında görüntüler seçili emin olmak için gerçekleştirilir. Bir tasarımcı, bir düğme gibi bir tasarımcıdan seçili bir öğe için bağlam sağlar. Düzenleyiciler ve tasarımcılar de bağlanması için bir dil hizmeti açıklandığı şekilde [eski dil hizmeti temel bileşenleri](../extensibility/internals/legacy-language-service-essentials.md).
-

@@ -1,12 +1,9 @@
 ---
 title: Veritabanları ve veri katmanı uygulamaları oluşturma ve yönetme
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
@@ -16,13 +13,13 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ed31f442a1ca30c34554549e1d186cb2c320ee
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4c3a8a1f4b0c6e242e3999d870fdfcdc764d8336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766898"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Veritabanlarını ve Visual Studio'daki veri katmanı uygulamaları oluşturma ve yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ ms.locfileid: "53061248"
 
 |Üst düzey görev|Destekleyici İçerik|
 |----------------------|------------------------|
-|**Veri katmanı uygulaması geliştirmeye başla:** A DAC ile sunulan yeni bir kavram olan [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] tanımını içeren bir [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] veritabanını ve destekleyen bir istemci-sunucu veya 3 katmanlı tarafından kullanılan nesneleri örneği uygulama. Bir DAC, tablolar ve görünümler, oturum açma bilgileri gibi örnek varlıkları birlikte gibi nesneleri içerir. Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DAC projesi oluşturmak için bir DAC paket dosyası derleme ve dağıtım örneği için bir veritabanı yöneticisi bu DAC paket dosyası göndermek [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] veritabanı altyapısı.|-   [Veri katmanı uygulamaları oluşturma ve yönetme](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web sitesi)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Yinelemeli veritabanı geliştirme gerçekleştirme:** bir geliştirici veya test edici ise, proje bölümlerini denetleyin ve ardından bunları bir yalıtılmış geliştirme ortamında güncelleştirin. Bu ortam türünü kullanarak, diğer takım üyeleri etkilemeden değişikliklerinizi test edebilirsiniz. Değişiklik tamamlandıktan sonra burada diğer takım üyelerinin yaptığınız değişiklikleri alabilir ve yapı ve bunları bir test sunucusuna dağıtmak geri sürüm denetimine, dosyaları denetleyin.|-   [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web sitesi)<br />-   [Transact-SQL hata ayıklayıcısını](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web sitesi)|
-|**Doğrulama prototip oluşturma, test sonuçları ve değiştirme veritabanı betikleri ve nesneleri:** kullanabileceğiniz [!INCLUDE[tsql](../includes/tsql-md.md)] herhangi biri şu genel görevleri gerçekleştirmek için düzenleyici.|-   [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web sitesi)|
+|**Bir veri katmanı uygulaması geliştirmeyi başlatın:** Bir DAC ile sunulan yeni bir kavram olan [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] tanımını içeren bir [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] veritabanını ve destekleyen bir istemci-sunucu veya 3 katmanlı uygulama tarafından kullanılan nesneleri örneği. Bir DAC, tablolar ve görünümler, oturum açma bilgileri gibi örnek varlıkları birlikte gibi nesneleri içerir. Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DAC projesi oluşturmak için bir DAC paket dosyası derleme ve dağıtım örneği için bir veritabanı yöneticisi bu DAC paket dosyası göndermek [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] veritabanı altyapısı.|-   [Veri katmanı uygulamaları oluşturma ve yönetme](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web sitesi)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Yinelemeli veritabanı geliştirme gerçekleştirme:** Bir geliştirici veya test edici ise projesi bölümlerini denetleyin ve ardından bunları bir yalıtılmış geliştirme ortamında güncelleştirin. Bu ortam türünü kullanarak, diğer takım üyeleri etkilemeden değişikliklerinizi test edebilirsiniz. Değişiklik tamamlandıktan sonra burada diğer takım üyelerinin yaptığınız değişiklikleri alabilir ve yapı ve bunları bir test sunucusuna dağıtmak geri sürüm denetimine, dosyaları denetleyin.|-   [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web sitesi)<br />-   [Transact-SQL hata ayıklayıcısını](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web sitesi)|
+|**Prototip oluşturma,: test sonuçlarını ve değiştirme veritabanı betikleri ve nesneleri doğrulanıyor** Kullanabileceğiniz [!INCLUDE[tsql](../includes/tsql-md.md)] herhangi biri şu genel görevleri gerçekleştirmek için düzenleyici.|-   [Sorgu ve metin düzenleyiciler (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web sitesi)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [.NET için Visual Studio veri araçları](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,26 +1,21 @@
 ---
 title: IDebugComPlusSymbolProvider | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 036d545b6bc8f2b59b76fdbc777680d0307f6972
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b70701aa9c4b339749554601e2a565c17697c6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721986"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781347"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- İfade değerlendiricisi (EE) için faydalı olan arabirimler ve hata ayıklama altyapısı (DE) tarafından kullanılması amaçlanır o arasında hiçbir ayrım olsa da, aşağıdaki yöntemlerden yalnızca geliştiricileri DE büyük olasılıkla ilginizi çekecek: AreSymbolsLoaded, GetAddressesInModuleFromPosition GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols ve UpdateSymbols.  
+ İfade değerlendiricisi (EE) için faydalı olan arabirimler ve hata ayıklama altyapısı (DE) tarafından kullanılması amaçlanır o arasında hiçbir ayrım olsa da, aşağıdaki yöntemlerden yalnızca geliştiricileri DE büyük olasılıkla ilginizi çekecek: AreSymbolsLoaded GetAddressesInModuleFromPosition, GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols ve UpdateSymbols.  
   
 ## <a name="methods"></a>Yöntemler  
  Yöntemlere ek olarak [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) arabirimi bu arabirim, aşağıdaki yöntemleri uygular:  
@@ -65,9 +60,8 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|Hata ayıklama sembolleri bellekte olanlar belirtilen veri akışını güncelleştirir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: Sh.h  
+ Üst bilgi: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
-

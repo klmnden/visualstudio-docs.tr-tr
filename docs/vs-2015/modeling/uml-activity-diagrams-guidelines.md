@@ -1,12 +1,9 @@
 ---
-title: 'UML etkinlik diyagramları: Yönergeler | Microsoft Docs'
-ms.custom: ''
+title: 'UML etkinlik diyagramları: Yönergeleri | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,18 +14,18 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784450"
 ---
-# <a name="uml-activity-diagrams-guidelines"></a>UML Etkinlik Diyagramları: Yönergeler
+# <a name="uml-activity-diagrams-guidelines"></a>UML etkinlik diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eylem iş akışı olarak tanımlamak için bir etkinlik diyagramı çizebilirsiniz. Kişiler, yazılım bileşenleri ve cihazları bu eylemleri gerçekleştirebilirsiniz. Video gösterimi için bkz: [etkinlik diyagramları kullanarak iş akışlarını yakalama](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
+Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eylem iş akışı olarak tanımlamak için bir etkinlik diyagramı çizebilirsiniz. Kişiler, yazılım bileşenleri ve cihazları bu eylemleri gerçekleştirebilirsiniz. Video gösterimi için bkz: [Etkinlik diyagramları kullanarak iş akışlarını yakalama](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -38,13 +35,13 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
 - Bir iş sürecini veya kullanıcılar ve sistem arasındaki iş akışını tanımlamak için. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
-- Adımları açıklamak için bir kullanım örneği, gerçekleştirdi. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Adımları açıklamak için bir kullanım örneği, gerçekleştirdi. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Yöntemi, işlev veya yazılım işlemi tanımlamak için. Daha fazla bilgi için [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
   
   Etkinlik diyagramı çizme işlem geliştirmenize yardımcı olabilir. Mevcut bir işlemi diyagramı çok karmaşık olduğu durumlarda, işlemin nasıl Basitleştirilmiş düşünebilirsiniz.  
   
-  Etkinlik diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz. [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md).  
+  Etkinlik diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz. [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Diğer diyagramlarla ilişki  
  Bir iş sürecini veya kullanıcıların sistemi kullanma bir şekilde açıklamak için bir etkinlik diyagramı çizme, aynı bilgilerle farklı bir görünüm göstermek için bir kullanım durumu diyagramı çizebilirsiniz. Kullanım durumu diyagramı, kullanım örnekleri gibi eylemler çizin. Kullanım örneklerine karşılık gelen eylem olarak aynı adı verin. Kullanım örneği görünümünün avantajları şunlardır:  
@@ -57,7 +54,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
   Ayrıca, bir yazılım işleminin ayrıntılı tasarım açıklamak için bir etkinlik diyagramı çizebilirsiniz.  
   
-  Bir etkinlik diyagramı, eylemler arasında geçen veri akışını gösterebilirsiniz. Bölümüne [açıklayan veri akışı](#DataFlows). Ancak, bir etkinlik diyagramı, veri yapısını açıklamaz. Bu amaç için UML sınıf diyagramı çizebilirsiniz. Bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
+  Bir etkinlik diyagramı, eylemler arasında geçen veri akışını gösterebilirsiniz. Bölümüne [açıklayan veri akışı](#DataFlows). Ancak, bir etkinlik diyagramı, veri yapısını açıklamaz. Bu amaç için UML sınıf diyagramı çizebilirsiniz. Bilgi için [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Etkinlik diyagramları çizmek için temel adımlar  
  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
@@ -185,7 +182,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 -   Kullanım bir **çıkış PIN** ve **PIN girişi**. Bu yöntem, ayrı ayrı bir eylem ve başka bir girişleri çıkışları açıklamak sağlar. PIN, programdaki parametreler gibidir. PIN burada nesneleri girin ve bir eylem bırakın bağlantı noktalarını gösterir.  
   
     > [!NOTE]
-    >  Bu bölümde kullanılan öğelere genel bakış için bkz. veri akışları konunun bölümüne bakın [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md).  
+    >  Bu bölümde kullanılan öğelere genel bakış için bkz. veri akışları konunun bölümüne bakın [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Nesne düğümleri ile veri akışını açıklama  
  Çoğu denetim akışları veri taşır. Örneğin, "Müşteri ayrıntıları sağlar" eylem çıkış akışından teslimat adresini başvuru yapar.  
@@ -198,7 +195,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
  Nesne düğümü düğüm rolünü veya anabelleği eylemler arasında akan nesnelerin olarak yansıtan bir ad verin.  
   
- Ayarlayabileceğiniz **türü** Özellikler penceresindeki nesne düğümünün. Tür, tamsayı veya sınıf, arabirim veya tanımladığınız bir sınıf diyagramında sabit listesi'gibi basit bir tür olabilir. Örneğin, bir sınıf sevkiyat adresi sokak adresi, şehir ve müşteri adlı başka bir sınıf için bir ilişkilendirme birlikte öznitelikleriyle oluşturabilirsiniz. Daha fazla bilgi için [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md).  
+ Ayarlayabileceğiniz **türü** Özellikler penceresindeki nesne düğümünün. Tür, tamsayı veya sınıf, arabirim veya tanımladığınız bir sınıf diyagramında sabit listesi'gibi basit bir tür olabilir. Örneğin, bir sınıf sevkiyat adresi sokak adresi, şehir ve müşteri adlı başka bir sınıf için bir ilişkilendirme birlikte öznitelikleriyle oluşturabilirsiniz. Daha fazla bilgi için [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
 >  Altında henüz tanımlanmadı bir türün adını yazarsanız, öğeyi eklenecek **belirtilmemiş türler** UML Model Gezgini'nde. Bir sınıf diyagramında bir tür adı daha sonra tanımlarsanız, böylece yeni türe başvurur nesne düğümü türü sıfırlamalısınız.  
@@ -363,7 +360,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
  ![Paralel nesne akışlar](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- "Müşteri ayrıntıları sağlar" eylem tamamlandığında, iki nesne oluşturur: "Sevkiyat adresi" ve "Kredi kartı detayları." İki nesne, farklı eylemler tarafından işlenmek üzere İleri gidin.  
+ "Müşteri ayrıntıları sağlar" eylem tamamlandığında, iki nesne üretir: "Sevkiyat adresi" ve "Kredi kartı detayları." İki nesne, farklı eylemler tarafından işlenmek üzere İleri gidin.  
   
  Başlatabilmeniz için önce kullanılabilir olan tüm girişleri bir eylem gerektirdiğinden, son eylemi için tüm eylemlerde tamamlanana kadar başlatılmaz.  
   
@@ -431,12 +428,9 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
  [Video: Etkinlik diyagramları kullanarak iş akışlarını yakalama](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-

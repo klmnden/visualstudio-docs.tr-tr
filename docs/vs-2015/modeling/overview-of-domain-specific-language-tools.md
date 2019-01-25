@@ -1,25 +1,22 @@
 ---
 title: Etki alanına özgü dil araçlarına genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: overview
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802981"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49839329"
   
   Sihirbazın oluşturduğu bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aşağıdaki projeleri içeren bir çözümü:  
   
-- DSL  
+- Dsl  
   
    Dsl projesi, etki alanına özgü dil ve işlemek ve düzenleme araçları tanımlar.  
   
@@ -71,7 +68,7 @@ ms.locfileid: "49839329"
 ## <a name="validation-in-dsl-tools"></a>DSL araçları doğrulama  
  DSL bir etki alanı modeli, kod oluşturma için temel gereksinimleri karşıladığından emin olmak için doğrulama düzeyini sağlar. Genellikle, kendi etki alanına özgü dil oluşturduğunuzda, iş mantığı kurallarınızı ifade etmek için kendi doğrulama ekleyin. Özel doğrulama hakkında daha fazla bilgi için bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).  
   
- Bunu tasarlarken, etki alanına özgü dil genellikle doğrulamak önerilir. Alana özgü dilinizi doğrulama hatası varsa, kaynak kod üretilemiyor. Şablonlar'dan kaynak kodu oluşturma işleminin tıklayarak gerçekleştirilir **tüm Şablonları Dönüştür** Çözüm Gezgini araç çubuğundaki. Dil tanımı değişiklik olduğunda da emin olun **tüm Şablonları Dönüştür**. Daha fazla bilgi için [nasıl yapılır: bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Bunu tasarlarken, etki alanına özgü dil genellikle doğrulamak önerilir. Alana özgü dilinizi doğrulama hatası varsa, kaynak kod üretilemiyor. Şablonlar'dan kaynak kodu oluşturma işleminin tıklayarak gerçekleştirilir **tüm Şablonları Dönüştür** Çözüm Gezgini araç çubuğundaki. Dil tanımı değişiklik olduğunda da emin olun **tüm Şablonları Dönüştür**. Daha fazla bilgi için [nasıl yapılır: Bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="customization-of-dsl-tools"></a>DSL araçları özelleştirme  
  Ek kod modeli davranışlarını iyileştirmek ve dilinizi kısıtlamaları tanımlamak için sağlayabilir. Zorunlu kılınırsa, metin şablonlarını değiştirerek önemli değişiklik yapabilirsiniz.  
@@ -83,7 +80,4 @@ ms.locfileid: "49839329"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Deneysel örneği](../extensibility/the-experimental-instance.md)   
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

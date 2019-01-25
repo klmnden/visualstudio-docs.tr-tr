@@ -1,27 +1,22 @@
 ---
 title: Genel sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41b2c0410944e9a28a4ff13f51e99592dff4f756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b8733ef63a60baa1b268c42c8780cdf80f2674b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797790"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Genel Sekme, Pencere Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ Kullanım **genel** seçilen pencere hakkındaki bilgileri görüntülemek için
 |**Denetim Kimliği ya da menü tanıtıcısı**|Alt pencere görüntülenmesini penceresi ise denetim kimliği etiketi görüntülenir. Denetim Kimliği bu alt pencerenin denetim kimliğini belirten bir tamsayı olduğu Görüntülenen penceresinin alt pencere değilse, menü işlemek etiketi görüntülenir. Menü tanıtıcısı Bu pencere ile ilgili menü tanıtıcısı tanımlayan bir tamsayıdır.|  
 |**Kullanıcı verileri**|Bu pencere yapısına bağlı uygulamaya özgü verileri.|  
 |**Pencere baytları**|Bu pencere ile ilgili ek bayt sayısı. Bu bayt anlamını uygulama tarafından belirlenir. Liste kutusu DWORD biçimde bayt değerleri görmek için genişletin.|
-
-
-

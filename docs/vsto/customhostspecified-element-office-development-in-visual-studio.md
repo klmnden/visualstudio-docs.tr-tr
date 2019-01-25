@@ -13,15 +13,15 @@ helpviewer_keywords:
 - customHostSpecified element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0880e0ddf4763cf2c67c10871992a24b76f59ef2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896649"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874386"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; öğesi (Visual Studio'da Office Geliştirme)
   `customHostSpecified` Öğesi olmadığını Bu çözüm bağımsız bir uygulama olduğunu belirtir. Office çözümleri, Microsoft Office uygulamalarında barındırılan bileşenler içeriyor.

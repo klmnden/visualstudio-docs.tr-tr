@@ -1,14 +1,9 @@
 ---
 title: Yerel nesnelerin özel görünümlerini oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756404"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Yerel nesnelerin özel görünümlerini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -638,6 +633,3 @@ Visual Studio Natvis çerçevesi Visual Studio hata ayıklayıcı değişken pen
  `CustomVisualizer` Visual Studio'da çalışan kod görselleştirmede denetlemek için yazabileceğiniz bir VSIX uzantısı belirten bir genişletilebilirlik noktası niteliğindedir. VSIX uzantılarını yazma hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Özel Görselleştirici yazma natvis XML tanımını yazmaya daha çok daha fazla iş olmakla birlikte, hangi natvis desteklediği veya desteklemediği hakkında kısıtlamalardan ücretsizdir. Özel görselleştiriciler sorgulayabilir ve hata ayıklanan işlemin değiştirmek veya Visual Studio'nun diğer bölümleriyle iletişim kurmak için kullanılan API'ler, hata ayıklayıcı genişletilebilirliği tam kümesini erişebilir.  
 
  Kullanabileceğiniz `Condition`, `IncludeView`, ve `ExcludeView` CustomVisualizer öğelerde öznitelikler.
-
-
-

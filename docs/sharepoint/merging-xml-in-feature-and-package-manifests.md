@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3697fe85d13e1131c58f28d572e443affa77a81
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914442"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875569"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>XML özellik ve paket Bildirimlerde Birleştir
   Özellikleriniz ve paketleriniz tarafından tanımlanmıştır [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bildirim dosyaları. Bu paket bildirimleri tasarımcıları ve özel oluşturulan verileri bir bileşimidir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bildirim şablonunda kullanıcı tarafından girilen. Paketleme zaman [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] özel birleştirir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] tasarımcısı tarafından sağlanan ifadelerle [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket oluşturmak üzere [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bildirim dosyası. Benzer öğeleri daha sonra birleştirme özel durumları, belirtilen özel durum ile birleştirilir önlemek için [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] dosyaları SharePoint'e dağıtmanıza ve bildirim yapmak için daha küçük ve daha verimli dosyaları sonra doğrulama hataları.  
@@ -49,7 +49,7 @@ ms.locfileid: "53914442"
 |------------------|----------------|  
 |Özellik (tüm öznitelikler)|*Öznitelik adı* (her özniteliği özellik öğesi benzersiz bir anahtar adıdır.)|  
 |ElementFile|Konum|  
-|ElementManifests/elementmanifest öğesini|Konum|  
+|ElementManifests/ElementManifest|Konum|  
 |Properties/özelliği|Anahtar|  
 |CustomUpgradeAction|Ad|  
 |CustomUpgradeActionParameter|Ad|  

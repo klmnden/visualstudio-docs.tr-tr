@@ -1,14 +1,9 @@
 ---
 title: ClickOnce Dağıtımları içinde belirli hataları giderme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -24,13 +19,13 @@ ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770246"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,9 +59,9 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
   
  Ayrıca içerik türü (MIME türleri olarak da bilinir) uygun şekilde .application, .manifest ve .deploy dosya için ayarlamanız gerekir. Daha fazla bilgi için Web-server belgelerinize bakın.  
   
- Daha fazla bilgi için "Windows Server 2003: yansıtır içerik türleri" konusuna bakın. [sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Daha fazla bilgi için bkz. "Windows Server 2003: Kilitlenmiş içerik türleri" [sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Hata iletisi: "Uygulama yanlış biçimlendirilmiş;" "XML imzası geçersiz" günlük dosyası içerir.  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Hata iletisi: "Uygulama hatalı biçimlendirilmiş;" "XML imzası geçersiz" günlük dosyası içerir.  
  Bildirim dosyası güncelleştirildi ve yeniden imzalanmış emin olun. Uygulamanızı kullanarak yeniden yayımlamanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya uygulamayı yeniden imzalamak için Mage kullanın.  
   
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Sunucu uygulama güncelleştirildi, ancak istemci güncelleştirme karşıdan yüklemez  
@@ -78,13 +73,13 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
   
 -   Uygulama başlangıç menüsünde yeniden başlatmayı deneyin. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Güncelleştirme arka planda tespit ettik ancak sonraki etkinleştirme BITS yüklemek isteyip istemediğinizi sorar.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Güncelleştirme sırasında aşağıdaki günlük Giriş bir hata alırsınız: "başvuru dağıtımdaki uygulama bildiriminde tanımlanan kimlik eşleşmiyor."  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Güncelleştirme sırasında aşağıdaki günlük Giriş bir hata alırsınız: "Başvuru dağıtımdaki uygulama bildiriminde tanımlanan kimlik eşleşmiyor."  
  El ile dağıtım ve uygulama bildirimleri düzenlediniz ve açıklamayı bir derlemenin kimliğinin bir bildirim ile eşitlenmemiş neden olduğundan, bu hata oluşabilir. Bir derlemenin kimliğini, adını, sürüm, kültür ve ortak anahtar belirteci oluşur. Bildirimlerinizi kimlik açıklamasında inceleyin ve farkları düzeltin.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>İlk kez yerel bir disk veya CD-ROM'u etkinleştirme başarılı, ancak Başlat menüsünden sonraki etkinleştirme başarılı  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama için güncelleştirmeleri almak için dağıtım sağlayıcı URL'sini kullanır. URL işaret ettiği konum doğru olduğundan emin olun.  
   
-#### <a name="error-cannot-start-the-application"></a>Hata: "uygulama başlatılamıyor"  
+#### <a name="error-cannot-start-the-application"></a>Hata: "Uygulama başlatılamıyor"  
  Bu hata iletisi, genellikle bu uygulamaya yüklenmesinde bir sorun olduğunu gösterir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] depolayın. Uygulamada hata var ya da deposu bozuk. Günlük dosyası hatanın oluştuğu söyleyebilir.  
   
  Şunları yapmanız:  
@@ -112,8 +107,8 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Hata iletisi: Web sitesi oluşturulamadı. '\<site >'. FrontPage Server Extensions'ı ile iletişim kurmak için bileşenler yüklü değil.  
  Microsoft Visual Studio Web geliştirme yayımlamakta olduğunuz makinede bileşeninin yüklü olduğundan emin olun. Hızlı kullanıcılar için varsayılan olarak bu bileşen yüklü değil. Daha fazla bilgi için bkz. [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Hata iletisi: dosya bulunamadı. ' Microsoft.Windows.Common-denetimleri, sürüm= 6.0.0.0, kültür =\*, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture =\*, türü= win32'  
- Görsel stiller etkinken WPF uygulaması yayımlama açmaya çalıştığında bu hata iletisi görünür. Bu sorunu çözmek için bkz: [nasıl yapılır: görsel stiller etkin bir WPF uygulaması yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Hata iletisi: Dosya bulunamadı ' Microsoft.Windows.Common-denetimleri, sürüm 6.0.0.0, Culture = = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture = =\*, tür = win32'  
+ Görsel stiller etkinken WPF uygulaması yayımlama açmaya çalıştığında bu hata iletisi görünür. Bu sorunu çözmek için bkz: [nasıl yapılır: Görsel stiller etkinken WPF uygulaması yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Görüntü kullanma  
   
@@ -130,7 +125,7 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 ## <a name="additional-errors"></a>Ek hataları  
  Aşağıdaki tablo kullanıcı yüklediğinde, bir istemci bilgisayar kullanıcısının alabilirsiniz bazı yaygın hata iletilerini gösterir bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Her hata iletisi, hatanın en olası neden açıklamasını yanındaki listelenir.  
   
-|hata iletisi|Açıklama|  
+|Hata iletisi|Açıklama|  
 |-------------------|-----------------|  
 |Uygulama başlatılamıyor. Uygulama yayımcısına başvurun.<br /><br /> Uygulama başlatılamıyor. Yardım için uygulama satıcısına başvurun.|Uygulama başlatılamıyor ve belirli herhangi bir nedenle bulunabilir ortaya genel hata iletileri şunlardır. Sık sık uygulama bir şekilde bozulmuş anlamına gelir veya [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deposu bozuk.|  
 |Devam edemiyor. Uygulama, yanlış biçimlendirilmiş. Yardım için uygulama yayımcısına başvurun.<br /><br /> Uygulama doğrulaması başarılı olmadı. Devam edilemiyor.<br /><br /> Uygulama dosyaları alınamadı. Dağıtımda bozuk dosyalar.|Dağıtım bildirim dosyalarında biri sözdizimsel olarak geçerli değil veya karşılık gelen dosya ile mutabık kılınamayan bir karma değer içerir. Bu hata ayrıca bir derleme içine gömülü bildirimi bozuk olduğunu gösterebilir. Dağıtımınızı yeniden oluşturun ve uygulamanızı yeniden derleyin veya bulun ve hataları bildirimlerinizi içinde el ile düzeltin.|  
@@ -147,6 +142,3 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce Dağıtım Sorunlarını Giderme](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: Ayrıştırılmış kod penceresini kullanma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,15 +24,15 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803331"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Nasıl Yapılır: Ayrıştırılmış Kod Penceresini Kullanma
+# <a name="how-to-use-the-disassembly-window"></a>Nasıl yapılır: Ayrıştırılmış kod penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü. Betik veya SQL hata ayıklama için kullanılabilir değil.  
@@ -65,7 +60,7 @@ Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabili
   Büyük olasılıkla hiçbir zaman isteğine sahip veya kendi ham, sayısal bir form yerine derleme dili yönergeleri makine kodu görüntülemeniz gerekir. Ancak, bunu yapmak istiyorsanız, bu amaç için bellek penceresini kullanma veya kod bayt ayrıştırma penceresinde kısayol menüsünden seçin.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Ayrıştırılmış kod penceresini görüntülemek için  
   
@@ -83,9 +78,4 @@ Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabili
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
- [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Nasıl yapılır: Yazmaçlar Penceresi Hakkında](../debugger/how-to-use-the-registers-window.md)

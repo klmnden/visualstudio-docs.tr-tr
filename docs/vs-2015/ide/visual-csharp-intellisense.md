@@ -1,14 +1,9 @@
 ---
 title: Visual C# IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862209"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800881"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   Tamamlanma listesine dâhil C# ilgisiz belirteçleri filtrelemek ve bağlamına dayalı bir belirteç önceden seçmek akıllı. Daha fazla bilgi için [C# ' de filtrelenmiş tamamlanma listeleri](../misc/filtered-completion-lists-in-csharp.md) ve [Pre-selected tamamlanma listesi öğeleri, C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Kod parçacıkları tamamlanma listeleri  
- Visual C# içinde önceden tanımlanmış gövdeleri kodu programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [Shortcut öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).  
+ Visual C# içinde önceden tanımlanmış gövdeleri kodu programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [Shortcut öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).  
   
 ###  <a name="Keywords"></a> Tamamlanma listeleri dil anahtar sözcükleri  
  Visual C# ' ta tamamlanma listesi dil anahtar sözcükleri de içerir. C# dil anahtar sözcükleri hakkında daha fazla bilgi için bkz: [C# anahtar sözcükleri](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
@@ -66,19 +61,19 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   
 -   **Arabirimleri ve temel sınıfları.** IntelliSense arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildiriminin temel ve arabirimi listeler, hem de kısıtlaması listeleri öğeleri otomatik olarak kaldırır. Örneğin, sabit listeleri için temel sınıflar kullanılamadığı için temel sınıflar için tamamlama listesinde numaralandırmalar görünmez. Taban sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanları içerir. Listede bir öğe seçin ve ardından virgül girin, IntelliSense Visual C#, birden çok devralma desteklemediği için temel sınıflar tamamlama listesinden kaldırır. Aynı davranışı için kısıtlama yan tümceleri de gerçekleşir.  
   
--   **Öznitelikleri**: bir türe öznitelik uyguladığınızda, liste yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türleri içeren tamamlanma listesi filtrelenir <xref:System.Attribute>.  
+-   **Öznitelikleri**: Bir türe öznitelik uyguladığınızda, liste yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türleri içeren tamamlanma listesi filtrelenir <xref:System.Attribute>.  
   
 -   `as` ve `is` işleçleri.  
   
 -   **Yan tümceleri yakalayın.**  
   
--   **Nesne başlatıcıları:** yalnızca başlatılabilir üyeleri tamamlama listesinde görünür.  
+-   **Nesne başlatıcıları:** Yalnızca başlatılabilir üyeleri tamamlama listesinde görünür.  
   
--   **Yeni anahtar sözcük**: yazdığınızda `new` ve tamamlanma listesi görünür boşluk tuşuna basın. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesinde otomatik olarak seçilir.  
+-   **Yeni anahtar sözcük**: Yazdığınızda `new` ve tamamlanma listesi görünür boşluk tuşuna basın. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesinde otomatik olarak seçilir.  
   
--   **olarak ve is işleçlerini:** filtrelenmiş tamamlanma listesini otomatik olarak yazdığınız sonra boşluk tuşuna bastığınızda görüntülenen `as` veya `is` anahtar sözcüğü.  
+-   **olarak ve is işleçlerini:** Filtrelenmiş tamamlanma listesini otomatik olarak yazdığınız sonra boşluk tuşuna bastığınızda görüntülenen `as` veya `is` anahtar sözcüğü.  
   
--   Olayları: Yazdığınızda anahtar sözcüğü `event`, tamamlanma listesi yalnızca temsilci türleri içerir.  
+-   Olayları: Anahtar sözcüğü yazdığınızda `event`, tamamlanma listesi yalnızca temsilci türleri içerir.  
   
 -   Parametre Yardımı, onları girerken, parametrelerle eşleşen ilk yöntem aşırı yüklemesi için otomatik olarak sıralar. Birden çok yöntem aşırı yükleme varsa, yukarı ve aşağı oklarını sonraki olası aşırı yükleme listesindeki gidin.  
   
@@ -114,7 +109,7 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
 ### <a name="implement-abstract-base-class"></a>Soyut taban sınıfı uygulama  
  IntelliSense, Kod Düzenleyicisi'nde çalışırken Özet temel sınıf üyelerinin otomatik olarak Uygula yardımcı olması için bir seçenek sunar. Normalde, bir soyut üye uygulamak için temel sınıfı soyut temel sınıf yeni yöntem tanımının her bir yöntemin türetilmiş sınıfınızın oluşturmak gerekir. Bir sınıf bildiriminde bir soyut temel sınıf adını yazdıktan sonra IntelliSense'i kullanarak, bir akıllı etiket görüntülenir. Akıllı etiket otomatik olarak taban sınıf yöntemlerini uygulamak için seçeneği sunar.  
   
- Uygulama soyut temel sınıf özelliği tarafından oluşturulan yöntem saptamalar MethodStub.snippet dosyasında tanımlanan kod parçacığı tarafından modellenir. Kod parçacıkları değiştirilebilir. Daha fazla bilgi için [izlenecek yol: kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).  
+ Uygulama soyut temel sınıf özelliği tarafından oluşturulan yöntem saptamalar MethodStub.snippet dosyasında tanımlanan kod parçacığı tarafından modellenir. Kod parçacıkları değiştirilebilir. Daha fazla bilgi için [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md).  
   
 ### <a name="generate-from-usage"></a>Kullanımdan oluştur  
  **Kullanımından Oluştur** özellik tanımlamadan önce sınıflar ve üyeler kullanmanıza olanak sağlar. Herhangi bir sınıfı, oluşturucu, yöntemi, özelliği, alan veya kullanabilirsiniz ancak henüz tanımlanmamış istediğiniz sabit listesi için bir saplama oluşturabilirsiniz. Yeni türler ve üyeler, kodun geçerli konumu çıkmadan oluşturabilirsiniz. Bu, iş akışınızdaki en aza indirir.  
@@ -164,6 +159,3 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: GUID'leri ve kimlikleri menüleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
 - visual studio groups
@@ -18,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3884097f24309b1f73e7e74bcecf0659352c1ab8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940962"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803752"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio Menülerinin GUID’leri ve Kimlikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

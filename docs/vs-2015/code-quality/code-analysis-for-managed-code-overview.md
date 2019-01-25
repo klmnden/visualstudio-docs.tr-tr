@@ -1,14 +1,9 @@
 ---
 title: Kod Analizi için yönetilen kod genel bakış | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: overview
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -19,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5024e03fc48a4055cabba1e91dac42d61d6de805
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755974"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Çözümlemesine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (tümleşik geliştirme ortamı) Tümleştirmesi  
  Bir geliştirici olarak projenizde kod analizi otomatik olarak çalıştırabilir veya el ile çalıştırabilirsiniz.  
   
- Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçtiğiniz **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı otomatik kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçtiğiniz **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
- Kod analizini el ile bir proje üzerinde çalışma **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır**_ProjectName_. Daha fazla bilgi için [nasıl yapılır: etkinleştirme ve devre dışı otomatik kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Kod analizini el ile bir proje üzerinde çalışma **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır**_ProjectName_. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
   
 ## <a name="rule-sets"></a>Kural Kümeleri  
  Yönetilen kod için Kod Analizi kuralları halinde gruplanır *kural kümeleri*. Microsoft Standart kural kümelerinden birini kullanabilir veya belirli bir gereksinimi karşılamak için özel bir kural oluşturabilirsiniz. Daha fazla bilgi için [Kod Analizi kurallarını gruplandırmak için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
@@ -72,7 +67,4 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Analizi kurallarını gruplandırmak için kural kullanarak ayarlar](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
- [Nasıl Yapılır: Otomatik Kod Çözümlemesini Etkinleştirme ve Devre Dışı Bırakma](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
-
-
-
+ [Nasıl yapılır: Etkinleştirme ve otomatik kod analizini devre dışı](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

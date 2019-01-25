@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir özelliği yerelleştirme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir özelliği yerelleştirme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26eb3a1352228d48fb451e3a3520162cdea18b73
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887684"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867383"
 ---
-# <a name="how-to-localize-a-feature"></a>Nasıl Yapılır: Bir özelliği yerelleştirme
+# <a name="how-to-localize-a-feature"></a>Nasıl yapılır: Bir özelliği yerelleştirme
   Varsayılan olarak, sabit kodlanmış dize değerleri özellik başlıkları ve açıklamaları kullanın. Özellik başlığı ve açıklamayı yerelleştirmek için dizeleri yerelleştirilmiş kaynaklara başvuran deyimleri ile değiştirin.  
   
 ## <a name="localize-a-feature"></a>Bir özelliği yerelleştirme  

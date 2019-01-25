@@ -1,32 +1,27 @@
 ---
-title: '5. adım: Formunuza denetimler ekleme | Microsoft Docs'
-ms.custom: ''
+title: '5. Adım: Formunuza denetimler ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7f7c65577a08b9aa9d6750b857e2c38939031f38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 37e73beaadb5c8ce3b289676fc3fd7a7d1f18e0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780630"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5. Adım: Formunuza Denetimler Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu adımda, denetimleri gibi eklediğiniz bir `PictureBox` denetimi ve bir `CheckBox` form denetimi. Ardından formunuza düğmeler ekleyin.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 2 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205211) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Videoyu 2](http://go.microsoft.com/fwlink/?LinkId=205200). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+ ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 2 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205211) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-add-controls-to-your-form"></a>Formunuza denetimler ekleme  
   
@@ -86,9 +81,6 @@ Dört düğmeli Resim Görüntüleyici
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [6. adım: ad bilgisayarınızı düğme denetimleri](../ide/step-6-name-your-button-controls.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 6: Düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [4. adım: düzenleme kullanıma bilgisayarınızı Form bir TableLayoutPanel denetimiyle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [4. adım: TableLayoutPanel denetimi ile formunuzu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).

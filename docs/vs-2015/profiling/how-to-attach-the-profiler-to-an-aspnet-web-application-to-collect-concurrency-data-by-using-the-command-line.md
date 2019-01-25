@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET Web uygulamasına Profiler ekleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET Web uygulamasına Profiler ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea6f642f3178e06127dc21bc115d70c68525bf0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801769"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Profil Oluşturucu Komut Satırını Kullanarak Eşzamanlılık Verileri Toplamak için bir ASP.NET Web Uygulamasına Profil Oluşturucu Ekleme
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Profiler komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir ASP.NET uygulamasına Profiler ve işlem ve iş parçacığı eşzamanlılık verileri toplamak için profil oluşturma araçları komut satırı araçları.  
@@ -90,6 +85,3 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET Web uygulamalarında profil oluşturma](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [VSPerfASPNETCmd ile Hızlı Web Sitesi Profili Oluşturma](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
-
-
-

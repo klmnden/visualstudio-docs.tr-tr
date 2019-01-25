@@ -1,21 +1,17 @@
 ---
 title: VSIX renk derleyicisi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794552"
 ---
 # <a name="vsix-color-compiler"></a>VSIX Renk Derleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -114,7 +110,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 |||  
 |-|-|  
 |**Öznitelik**|**Tanım**|  
-|Tür|[Gerekli] Renk türü. Aşağıdakilerden biri olabilir:<br /><br /> *CT_INVALID:* geçersiz ya da ayarlanmadığından rengi.<br /><br /> *CT_RAW:* bir ham ARGB değeri.<br /><br /> *CT_COLORINDEX:* KULLANMAYIN.<br /><br /> *CT_SYSCOLOR:* SysColor Windows sistem renk.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX Visual Studio renk.<br /><br /> *CT_AUTOMATIC:* otomatik rengi.<br /><br /> *CT_TRACK_FOREGROUND:* KULLANMAYIN.<br /><br /> *CT_TRACK_BACKGROUND:* KULLANMAYIN.|  
+|Tür|[Gerekli] Renk türü. Aşağıdakilerden biri olabilir:<br /><br /> *CT_INVALID:* Geçersiz ya da ayarlanmadığından rengi.<br /><br /> *CT_RAW:* Ham ARGB değeri.<br /><br /> *CT_COLORINDEX:* KULLANMAYIN.<br /><br /> *CT_SYSCOLOR:* Bir Windows sistem renk SysColor.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX bir Visual Studio renk.<br /><br /> *CT_AUTOMATIC:* Otomatik rengi.<br /><br /> *CT_TRACK_FOREGROUND:* KULLANMAYIN.<br /><br /> *CT_TRACK_BACKGROUND:* KULLANMAYIN.|  
 |Kaynak|[Gerekli] Rengin onaltılık olarak temsil edilen değeri|  
   
  Tür özniteliği yer alan şemada __VSCOLORTYPE numaralandırması tarafından desteklenen tüm değerleri desteklenir. Ancak, yalnızca CT_RAW ve CT_SYSCOLOR kullanmanızı öneririz.  
@@ -146,7 +142,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 |-|-|-|  
 |**Anahtar adı**|**Notlar**|**Gerekli veya isteğe bağlı**|  
 |Adlandırılmamış (.xml dosyası)|Bu ilk adlandırılmamış parametre ve dönüştürmek için XML dosyasının yolu.|Gerekli|  
-|Adlandırılmamış (.pkgdef dosyası)|Bu ikinci adlandırılmamış parametreyi ve oluşturulan .pkgdef dosyası için çıkış yolu.<br /><br /> Varsayılan: \<XML dosya adı > .pkgdef|İsteğe Bağlı|  
+|Adlandırılmamış (.pkgdef dosyası)|Bu ikinci adlandırılmamış parametreyi ve oluşturulan .pkgdef dosyası için çıkış yolu.<br /><br /> Varsayılan: \<XML Filename>.pkgdef|İsteğe Bağlı|  
 |/ nologo|Bu bayrak ayarlandığında, ürün ve telif hakkı bilgileri yazdırmasının durdurur.|İsteğe Bağlı|  
 |/?|Yardım bilgi yazdırır.|İsteğe Bağlı|  
 |/help|Yardım bilgi yazdırır.|İsteğe Bağlı|  
@@ -173,4 +169,3 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

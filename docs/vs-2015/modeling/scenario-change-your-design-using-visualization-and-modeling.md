@@ -1,13 +1,8 @@
 ---
 title: 'Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -21,13 +16,13 @@ ms.assetid: ccc80825-a4a0-44fa-a0bb-f95254785a3b
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4dface8e157e44aa09b271446dba68b2779d0a6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5392548e094edbdc5c946c1b0389de697216b9eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804256"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
 - [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)  
   
 ##  <a name="ScenarioOverview"></a> Senaryoya genel bakış  
- Bu senaryo, iki hayali şirketin yazılım geliştirme proje süreçlerinden açıklar: Şimdi Akşam Yemeği ve Lucerne Publishing. Şimdi Akşam Yemeği Seattle'da Web tabanlı bir yiyecek teslim hizmet sağlar. Müşteriler, yemek siparişi ve Şimdi Akşam Yemeği Web sitesinde bunlar için ödeme yaparsınız. Siparişler, ardından teslimi için üzere uygun yerel restoranlara gönderilir. Lucerne Publishing, New York, şirketinizin Web üzerinde ve dışında birçok müessese çalıştırır. Örneğin, müşterilerin restoran görüşlerini gönderebileceği bir Web sitesini çalıştırır.  
+ Bu senaryo, iki hayali şirketin yazılım geliştirme proje süreçlerinden açıklanmaktadır: Şimdi Akşam Yemeği ve Lucerne yayımlama. Şimdi Akşam Yemeği Seattle'da Web tabanlı bir yiyecek teslim hizmet sağlar. Müşteriler, yemek siparişi ve Şimdi Akşam Yemeği Web sitesinde bunlar için ödeme yaparsınız. Siparişler, ardından teslimi için üzere uygun yerel restoranlara gönderilir. Lucerne Publishing, New York, şirketinizin Web üzerinde ve dışında birçok müessese çalıştırır. Örneğin, müşterilerin restoran görüşlerini gönderebileceği bir Web sitesini çalıştırır.  
   
  Lucerne, kısa süre önce Dinner Now girişimini satın ve aşağıdaki değişiklikleri yapmak istiyor:  
   
@@ -108,7 +103,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  
   
-- [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 - [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
@@ -120,7 +115,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 - [Kodun tasarımla tutarlılığını koruma](#ValidatingCode)  
   
-- [Mantıksal mimarisi açıklanmıştır: katman diyagramları](#DescribeLayers)  
+- [Mantıksal mimarisi açıklanmıştır: Katman diyagramları](#DescribeLayers)  
   
 - [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
   
@@ -175,9 +170,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklar**|  
 |-----------------|-------------------|  
-|*Kullanım örneği diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|-Şimdi Akşam Yemeği sisteminin desteklediği etkinlikleri<br />-İnsanlar ve etkinlikleri gerçekleştiren dış sistemler<br />-Tüm etkinlikleri destekleyen ana bileşenleri sistem<br />-Geçerli sistemin kapsamı dışında Örneğin, yiyecek dağıtımı bölümleri iş sürecinin|  
-|*Etkinlik diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|Bir müşteri bir sipariş oluştururken ortaya çıkan adımların akışı|  
-|*Sınıf diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|İş varlıklarını ve tartışmalar ve bu varlıkları arasındaki ilişkileri kullanılan terimler. Örneğin, sıralama ve menü öğesi bu senaryoda sözlüğün parçasıdır.|  
+|*Kullanım örneği diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|-Şimdi Akşam Yemeği sisteminin desteklediği etkinlikleri<br />-İnsanlar ve etkinlikleri gerçekleştiren dış sistemler<br />-Tüm etkinlikleri destekleyen ana bileşenleri sistem<br />-Geçerli sistemin kapsamı dışında Örneğin, yiyecek dağıtımı bölümleri iş sürecinin|  
+|*Etkinlik diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|Bir müşteri bir sipariş oluştururken ortaya çıkan adımların akışı|  
+|*Sınıf diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|İş varlıklarını ve tartışmalar ve bu varlıkları arasındaki ilişkileri kullanılan terimler. Örneğin, sıralama ve menü öğesi bu senaryoda sözlüğün parçasıdır.|  
   
  Örneğin, Lucerne Şimdi Akşam Yemeği Web sitesinde yapılan ve onları görevleri anlamak için aşağıdaki kullanım çalışması diyagramı oluşturur:  
   
@@ -202,9 +197,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklar**|  
 |-----------------|-------------------|  
-|*Kullanım örneği diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|"Bir restoran incelemesi yazın" için yeni bir kullanım örneği|  
-|*Etkinlik diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|Bir müşteri bir restoran incelemesi yazmak istediğinde oluşan adımlar|  
-|*Sınıf diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|Bir incelemeyi saklamak için gerekli verileri|  
+|*Kullanım örneği diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|"Bir restoran incelemesi yazın" için yeni bir kullanım örneği|  
+|*Etkinlik diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|Bir müşteri bir restoran incelemesi yazmak istediğinde oluşan adımlar|  
+|*Sınıf diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|Bir incelemeyi saklamak için gerekli verileri|  
   
  Örneğin, aşağıdaki kullanım çalışması diyagramı yeni gereksinimi göstermek için yeni bir "İnceleme Yaz" kullanım çalışması içermektedir. Bunu daha kolay tanımlanmak için diyagramda turuncu ile vurgulanmıştır:  
   
@@ -247,7 +242,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
 |**Harita veya diyagram**|**Gösterir**|  
 |------------------------|---------------|  
 |*Kod Haritası*<br /><br /> Bkz.<br /><br /> -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Gözat ve kod haritaları bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)<br />-   [DGML dosyalarını düzenleyerek kod haritalarını özelleştirme](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Bağımlılıklar ve diğer koddaki ilişkileri.<br /><br /> Örneğin, Şimdi Akşam Yemeği derlemeler ve bağımlılıklarına bir genel bakış için derleme kod haritaları gözden geçirilmesiyle başlayabilir. Ad alanlarını ve sınıfları bu derlemelerde bulunan keşfetmek için haritalarını halinde inebilir.<br /><br /> Şimdi Akşam Yemeği aynı zamanda belirli alanları ve diğer tür kod içindeki ilişkileri keşfetmek için maps oluşturabilirsiniz. Bunlar, bulmak ve onları ilgilendiren ilişkileri ve alanları seçmek için Çözüm Gezgini'ni kullanın.|  
-|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar|  
+|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar|  
   
  Örneğin, geliştirici bir kod Haritası oluşturur. Filiz kapsamını yeni senaryodan etkilenecek alanlara odaklanmak için ayarlar. Bu alanlar seçilir ve harita üzerinde vurgulanır:  
   
@@ -267,11 +262,11 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramları**|**Açıklar**|  
 |------------------|-------------------|  
-|*Etkinlik diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|Sistem bir müşterinin yeniden bir restorana sipariş isteyen bir inceleme yazmasını istediğinde ortaya çıkan adımların akışı.|  
-|*Sınıf diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|Mantıksal sınıflar ve ilişkileri. Örneğin, yeni bir sınıf tanımlamak için eklenen bir **gözden geçirme** ve diğer varlıklarla ilişkilerini gibi **Restoran**, **menü**, ve **müşteri**.<br /><br /> İncelemeler, bir müşteri ile ilişkilendirmek için sistemin müşteri detaylarını saklaması gerekir. Bir UML sınıf diyagramı, bu ayrıntıların açıklanmasına yardımcı olabilir.|  
-|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar.|  
-|*Bileşen diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)|Sistemin Şimdi Akşam Yemeği Web sitesi ve arabirimlerini gibi üst düzey bölümleri. Bu arabirimler nasıl bileşenleri her biri diğerine kullandıkları ve sağladıkları hizmetler veya yöntemler etkileşim tanımlar.|  
-|*Sıralı diyagram (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)|Örnekler arasındaki etkileşimler dizesi dizisi.|  
+|*Etkinlik diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|Sistem bir müşterinin yeniden bir restorana sipariş isteyen bir inceleme yazmasını istediğinde ortaya çıkan adımların akışı.|  
+|*Sınıf diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|Mantıksal sınıflar ve ilişkileri. Örneğin, yeni bir sınıf tanımlamak için eklenen bir **gözden geçirme** ve diğer varlıklarla ilişkilerini gibi **Restoran**, **menü**, ve **müşteri**.<br /><br /> İncelemeler, bir müşteri ile ilişkilendirmek için sistemin müşteri detaylarını saklaması gerekir. Bir UML sınıf diyagramı, bu ayrıntıların açıklanmasına yardımcı olabilir.|  
+|*Kod tabanlı sınıf diyagramı*<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Kod üzerinde varolan sınıflar.|  
+|*Bileşen diyagramı (UML)*<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)|Sistemin Şimdi Akşam Yemeği Web sitesi ve arabirimlerini gibi üst düzey bölümleri. Bu arabirimler nasıl bileşenleri her biri diğerine kullandıkları ve sağladıkları hizmetler veya yöntemler etkileşim tanımlar.|  
+|*Sıralı diyagram (UML)*<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)|Örnekler arasındaki etkileşimler dizesi dizisi.|  
   
  Örneğin, aşağıdaki bileşen diyagramı Şimdi Akşam Yemeği Web sitesi bileşeninin bir parçasıdır yeni bileşeni gösterir. ReviewProcessing bileşeni değerlendirmeleri oluşturmaya ilişkin işlevselliği ele alır ve turuncu renkte vurgulanarak görüntülenir:  
   
@@ -290,7 +285,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklar**|  
 |-----------------|-------------------|  
-|*Katman diyagramı*<br /><br /> Bkz.<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir katman diyagramı düzenler ve yapılar eşleyen bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm adı verilen soyut gruplarla *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Katman diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için katman diyagramı yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|  
+|*Katman diyagramı*<br /><br /> Bkz.<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir katman diyagramı düzenler ve yapılar eşleyen bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm adı verilen soyut gruplarla *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Katman diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için katman diyagramı yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|  
   
  Örneğin, aşağıdaki katman diyagramı katmanlar ve her bir katman ile ilişkili yapıların sayısı arasındaki bağımlılıkları açıklanmaktadır:  
   
@@ -375,19 +370,19 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
 ##  <a name="UpdatingSystem"></a> Güncelleştirme kullanarak sistem Görselleştirme ve modelleme  
  Lucerne ve Dinner Now ödeme sistemleri bütünleştirilmelidir. Aşağıdaki bölümlerde, modelleme diyagramları Visual Studio'da bu görevi yerine getirmede yardımcı gösterilmektedir:  
   
-- [Kullanıcı gereksinimlerini anlayın: kullanım örneği diyagramları](#UnderstandUseCases)  
+- [Kullanıcı gereksinimlerini anlayın: Kullanım örneği diyagramları](#UnderstandUseCases)  
   
-- [İş sürecini anlayın: etkinlik diyagramları](#UnderstandActivities)  
+- [İş sürecini anlayın: Etkinlik diyagramları](#UnderstandActivities)  
   
 - [Sistem yapısı açıklanmıştır: Bileşen diyagramları](#DescribeComponents)  
   
-- [Etkileşimler açıklanmıştır: sıralı diyagramlar](#DescribeSequence)  
+- [Etkileşimler açıklanmıştır: Sıralı diyagramlar](#DescribeSequence)  
   
 - [Varolan kodu görselleştirin: Kod haritaları](#VisualizeCode)  
   
-- [Bir türler sözlüğü tanımlayın: sınıf diyagramları](#DefineClasses)  
+- [Bir türler sözlüğü tanımlayın: Sınıf diyagramları](#DefineClasses)  
   
-- [Mantıksal mimarisi açıklanmıştır: katman diyagramları](#DescribeLayers)  
+- [Mantıksal mimarisi açıklanmıştır: Katman diyagramları](#DescribeLayers)  
   
   Bkz.  
   
@@ -401,7 +396,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 - [Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Kullanıcı gereksinimlerini anlayın: kullanım örneği diyagramları  
+###  <a name="UnderstandUseCases"></a> Kullanıcı gereksinimlerini anlayın: Kullanım örneği diyagramları  
  Kullanım örneği diyagramları bir sistemin desteklediği ve bu etkinlikleri kimin gerçekleştirdiğini özetler. Lucerne bir kullanım durumu diyagramı aşağıdaki Dinner Now sistemi hakkında bilgi edinmek için kullanır:  
   
 - Müşteriler sipariş oluşturur.  
@@ -424,9 +419,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)  
+- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)  
   
-- [UML Kullanım Durumu Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>Kullanım çalışması diyagramı çizme  
  Bir kullanım durumu diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -445,9 +440,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [UML Kullanım Durumu Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)  
+- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)  
   
-- [UML Kullanım Durumu Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Özet: Kullanım örneği diyagramları gücü  
  Kullanım örneği diyagramları görselleştirmenize yardımcı olur:  
@@ -464,11 +459,11 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklar**|  
 |-----------------|-------------------|  
-|Etkinlik diyagramı|Kullanım örneği ve o bu adımları gerçekleştiren kullanım adımların akışı.<br /><br /> Kullanım durumlarının adları sıklıkla bir eylem diyagramındaki adımları yansıtır. Etkinlik diyagramları kararları, birleştirme, girişler ve çıkışlar, eşzamanlı akışlar ve benzeri gibi öğeleri destekler.<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Sıralı diyagram|Bir kullanım durumunda katılımcılar arasındaki etkileşimler dizisini.<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Sınıf diyagramı (UML)|Varlıklar veya kullanım örneğine katılan türleri.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
+|Etkinlik diyagramı|Kullanım örneği ve o bu adımları gerçekleştiren kullanım adımların akışı.<br /><br /> Kullanım durumlarının adları sıklıkla bir eylem diyagramındaki adımları yansıtır. Etkinlik diyagramları kararları, birleştirme, girişler ve çıkışlar, eşzamanlı akışlar ve benzeri gibi öğeleri destekler.<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Sıralı diyagram|Bir kullanım durumunda katılımcılar arasındaki etkileşimler dizisini.<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Sınıf diyagramı (UML)|Varlıklar veya kullanım örneğine katılan türleri.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> İş sürecini anlayın: etkinlik diyagramları  
+###  <a name="UnderstandActivities"></a> İş sürecini anlayın: Etkinlik Diyagramları  
  Faaliyet diyagramları, bir iş sürecindeki adım akışını açıklar ve iş akışıyla iletişim kurmak için basit bir yol sağlar. Geliştirme projesinin birden çok faaliyet diyagramı olabilir. Genellikle, bir etkinlik, Yemek Sipariş etmek, bir menüyü güncelleştirmek veya yeni bir restoran eklemek gibi bir dış eylem sonucunda tüm eylemleri kapsar. Bir etkinlik, karmaşık bir işlemin ayrıntılarını da açıklayabilir.  
   
  Lucerne, Lucerne ödemeyi işleme aldığını ve restorana ödeme olduğunu göstermek için aşağıdaki etkinlik diyagramı güncelleştirir. Bunlar Dinner Now ödeme sistemini Lucerne Ödeme sistemiyle vurgulandığı gibi değiştirin:  
@@ -485,9 +480,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)  
+-   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)  
+-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Etkinlik diyagramı çizme  
  Bir faaliyet diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -510,9 +505,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)  
+- [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)  
   
-- [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)  
+- [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>Özet: Etkinlik Şemalarının Gücü  
  Etkinlik diyagramları görselleştirmenize ve denetimi ve bir iş, sistem veya programa ait Eylemler arasındaki bilgi akışını açıklayan yardımcı olur. Diğer kişilerle iletişim kurarken iş akışını açıklamak için basit ve kullanışlı bir yolu budur.  
@@ -521,8 +516,8 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklama**|  
 |-----------------|---------------------|  
-|Kullanım örneği diyagramı|Her bir etkin nesnenin gerçekleştirdiği etkinliklerini özetleyin.<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Bileşen diyagramı|Sistem koleksiyonu bir iyi tanımlanmış arabirim kümeleri üzerinden davranış sağlayan veya tüketen bir grup yeniden kullanılabilir parça olarak görselleştirin.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)|  
+|Kullanım örneği diyagramı|Her bir etkin nesnenin gerçekleştirdiği etkinliklerini özetleyin.<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Bileşen diyagramı|Sistem koleksiyonu bir iyi tanımlanmış arabirim kümeleri üzerinden davranış sağlayan veya tüketen bir grup yeniden kullanılabilir parça olarak görselleştirin.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)|  
   
 ###  <a name="DescribeComponents"></a> Sistem yapısı açıklanmıştır: Bileşen diyagramları  
  Bileşen diyagramları bir sistemin, bir iyi tanımlanmış arabirim kümeleri üzerinden davranış sağlayan veya tüketen ayrılabilir parçalar koleksiyonu olarak açıklar. Parçalar herhangi bir ölçeğe ait olabilir ve herhangi bir şekilde bağlanabilir.  
@@ -561,7 +556,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 - [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)  
   
-- [UML Bileşen Diyagramları: Yönergeler](../modeling/uml-component-diagrams-guidelines.md)  
+- [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>Bileşen diyagramı çizme  
  Bir bileşen diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -582,7 +577,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 - [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)  
   
-- [UML Bileşen Diyagramları: Yönergeler](../modeling/uml-component-diagrams-guidelines.md)  
+- [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>Özet: Bileşen Şemalarının Gücü  
  Bileşen diyagramları görselleştirmenize yardımcı olur:  
@@ -596,10 +591,10 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
 |**Diyagramı**|**Açıklama**|  
 |-----------------|---------------------|  
 |Kod Haritası|Kuruluş ve mevcut koddaki ilişkileri görselleştirin.<br /><br /> Bileşenler için adayları belirlemek için bir kod Haritası ve Grup öğeleri sistemdeki işlevlerine göre oluşturun.<br /><br /> Bkz.<br /><br /> -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)|  
-|Sıralı diyagram|Bileşenler veya bileşen içindeki bölümlerin arasında etkileşim sırasını görselleştirin.<br /><br /> Bir bileşenden bir dizi diyagramına bir yaşam çizgisi oluşturmak için bileşene sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Sınıf diyagramı (UML)|Sağlanan veya gerekli bağlantı noktaları ve bileşenlerin işlevselliğini uygulayan sınıflar arabirimleri tanımlayabilirsiniz.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
-|Katman diyagramı|Bileşenlerle bağlantılı olarak sistemin mantıksal mimarisini açıklar. Kodun tasarımla tutarlı kalmasını sağlamak için katman doğrulaması kullanın.<br /><br /> Bkz.<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
-|Etkinlik diyagramı|Bileşenleri gelen iletilere yanıt olarak gerçekleştirdiği iç işlemeyi görselleştirin.<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Sıralı diyagram|Bileşenler veya bileşen içindeki bölümlerin arasında etkileşim sırasını görselleştirin.<br /><br /> Bir bileşenden bir dizi diyagramına bir yaşam çizgisi oluşturmak için bileşene sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Sınıf diyagramı (UML)|Sağlanan veya gerekli bağlantı noktaları ve bileşenlerin işlevselliğini uygulayan sınıflar arabirimleri tanımlayabilirsiniz.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
+|Katman diyagramı|Bileşenlerle bağlantılı olarak sistemin mantıksal mimarisini açıklar. Kodun tasarımla tutarlı kalmasını sağlamak için katman doğrulaması kullanın.<br /><br /> Bkz.<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
+|Etkinlik diyagramı|Bileşenleri gelen iletilere yanıt olarak gerçekleştirdiği iç işlemeyi görselleştirin.<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|  
   
 ###  <a name="VisualizeCode"></a> Varolan kodu görselleştirin: Kod haritaları  
  Kod Haritaları, mevcut organizasyon ve ilişkileri kod içerisinde gösterir. Öğeleri tarafından temsil edilir *düğümleri* haritasında ve ilişkiler *bağlantıları*. Kod Haritaları, aşağıdaki türde görevleri gerçekleştirmenize yardımcı olabilir:  
@@ -654,7 +649,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
      Örneğin, kod üzerinde katman oluşturmayı görselleştirmek için bir ağaç düzeni seçin. Bkz: [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).  
   
-#### <a name="summary-strengths-of-code-maps"></a>Özeti: Kod haritaları gücü  
+#### <a name="summary-strengths-of-code-maps"></a>Özet: Kod haritaları gücü  
  Kod haritaları yardımcı:  
   
 -   Mevcut koddaki ilişkileri ve kuruluş hakkında bilgi edinin.  
@@ -667,12 +662,12 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklar**|  
 |-----------------|-------------------|  
-|Katman diyagramı|Sistemin mantıksal mimarisi. Kodun tasarımla tutarlı kalmasını sağlamak için katman doğrulaması kullanın.<br /><br /> Varolan veya hedeflenen katmanları tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir katman diyagramı oluşturmak için bkz:<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)|  
-|Bileşen diyagramı|Bileşenleri, arabirimler ve aralarındaki ilişkiler.<br /><br /> Bileşenleri tanımlamanıza yardımcı olması için bir kod Haritası ve Grup öğeleri sistemdeki işlevlerine göre oluşturun.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)|  
-|Sınıf diyagramı (UML)|Sınıfları, öznitelikleri ve işlemleri ve ilişkilerini.<br /><br /> Bu öğeleri tanımlamanıza yardımcı olması için bu öğeleri gösteren bir UML sınıf diyagramı oluşturun.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
-|Sınıf diyagramı (kod tabanlı)|Belirli bir proje için kod üzerinde varolan sınıflar.<br /><br /> Görselleştirme ve kod içinde varolan bir sınıf değiştirmek için Sınıf Tasarımcısı'nı kullanın.<br /><br /> Bkz: [nasıl yapılır: sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
+|Katman diyagramı|Sistemin mantıksal mimarisi. Kodun tasarımla tutarlı kalmasını sağlamak için katman doğrulaması kullanın.<br /><br /> Varolan veya hedeflenen katmanları tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir katman diyagramı oluşturmak için bkz:<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)|  
+|Bileşen diyagramı|Bileşenleri, arabirimler ve aralarındaki ilişkiler.<br /><br /> Bileşenleri tanımlamanıza yardımcı olması için bir kod Haritası ve Grup öğeleri sistemdeki işlevlerine göre oluşturun.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)|  
+|Sınıf diyagramı (UML)|Sınıfları, öznitelikleri ve işlemleri ve ilişkilerini.<br /><br /> Bu öğeleri tanımlamanıza yardımcı olması için bu öğeleri gösteren bir UML sınıf diyagramı oluşturun.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
+|Sınıf diyagramı (kod tabanlı)|Belirli bir proje için kod üzerinde varolan sınıflar.<br /><br /> Görselleştirme ve kod içinde varolan bir sınıf değiştirmek için Sınıf Tasarımcısı'nı kullanın.<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="DescribeSequence"></a> Etkileşimler açıklanmıştır: sıralı diyagramlar  
+###  <a name="DescribeSequence"></a> Etkileşimler açıklanmıştır: Sıralı diyagramlar  
  Sıralı diyagramları bir sistemin bölümleri arasındaki etkileşimlerin sırasını tanımlar. Parçalar herhangi bir ölçeğe ait olabilir. Örneğin, bunlar bir programdaki ayrı nesneler geniş alt sistemler veya harici aktörler arasında değişebilir. Etkileşimler herhangi bir ölçek ve türden olabilir. Örneğin, bireysel iletiler ile genişletilmiş işlemlere arasında değişebilir ve işlev çağrıları veya Web hizmeti iletileri olabilir.  
   
  Lucerne ve Şimdi Akşam Yemeği İşlem Ödemesi kullanım örneğindeki adımları tanımlamak ve gidermek için bileşen diyagramından aşağıdaki sıralı diyagramı bunlar oluşturur. Yaşam çizgileri Şimdi Akşam Yemeği Web sitesi bileşeni ve onun parçalarını yansıtır. Yaşam çizgileri arasında görünen iletiler bileşeni diyagramlarda bağlantıları izleyin:  
@@ -687,9 +682,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)  
+-   [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML Sıralı Diyagramlar: Yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)  
+-   [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  
   
@@ -708,9 +703,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)  
+- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)  
   
-- [UML Sıralı Diyagramlar: Yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Özet: Sıra Şemalarının Gücü  
  Sıralama diyagramları görselleştirmenize yardımcı olur:  
@@ -723,11 +718,11 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklama**|  
 |-----------------|---------------------|  
-|Sınıf diyagramı (UML)|Yaşam çizgilerinin temsil ettiği sınıfları ve parametreleri tanımlayın ve yaşam çizgileri arasında gönderilen iletilerde kullanılan değerleri döndürür.<br /><br /> Yaşam çizgisinden bir sınıf oluşturmak için yaşam çizgisine sağ tıklayın ve ardından **Sınıf Oluştur** veya **oluşturma arabirimi**. Bir sınıf diyagramında bir türden bir yaşam çizgisi oluşturmak için türe sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
-|Bileşen diyagramı|Yaşam çizgilerinin temsil ettiği bileşenler ve sağlayan ve iletiler tarafından temsil edilen davranışı tüketen arabirimler açıklanmaktadır.<br /><br /> Bir bileşen diyagramından bir yaşam çizgisi oluşturmak için bileşene sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)|  
-|Kullanım örneği diyagramı|Bir kullanıcının amacını temsil eden bir kullanım durumu olarak kullanıcılar ve sıralı diyagram bileşenler arasındaki etkileşimleri özetleyin.<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Sınıf diyagramı (UML)|Yaşam çizgilerinin temsil ettiği sınıfları ve parametreleri tanımlayın ve yaşam çizgileri arasında gönderilen iletilerde kullanılan değerleri döndürür.<br /><br /> Yaşam çizgisinden bir sınıf oluşturmak için yaşam çizgisine sağ tıklayın ve ardından **Sınıf Oluştur** veya **oluşturma arabirimi**. Bir sınıf diyagramında bir türden bir yaşam çizgisi oluşturmak için türe sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)<br />-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
+|Bileşen diyagramı|Yaşam çizgilerinin temsil ettiği bileşenler ve sağlayan ve iletiler tarafından temsil edilen davranışı tüketen arabirimler açıklanmaktadır.<br /><br /> Bir bileşen diyagramından bir yaşam çizgisi oluşturmak için bileşene sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)|  
+|Kullanım örneği diyagramı|Bir kullanıcının amacını temsil eden bir kullanım durumu olarak kullanıcılar ve sıralı diyagram bileşenler arasındaki etkileşimleri özetleyin.<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> Bir türler sözlüğü tanımlayın: sınıf diyagramları  
+###  <a name="DefineClasses"></a> Bir türler sözlüğü tanımlayın: Sınıf diyagramları  
  Sınıf diyagramları, varlıkları, koşulları veya sistem ve birbirleriyle olan ilişkilerine katılmak kavramları tanımlayın. Örneğin, öznitelikler ve işlemler için dil veya stil uygulamalarına bakılmaksızın, her sınıf tanımlamak için geliştirme sırasında bu diyagramları kullanabilirsiniz.  
   
  İşlem Ödemesi kullanım örneğine katılan varlıkları tanımlamak ve Lucerne yardımcı olmak için bunlar aşağıdaki sınıf diyagramı çizmek:  
@@ -746,9 +741,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
--   [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
+-   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+-   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Sınıf diyagramı çizme  
  Bir sınıf diyagramı aşağıdaki önemli özelliklere sahiptir:  
@@ -785,11 +780,11 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
+- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
-- [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)  
   
-- [Nasıl Yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Özet: Sınıf Şemalarının Gücü  
  Sınıf diyagramları, tanımlamanıza yardımcı olur:  
@@ -804,14 +799,14 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 |**Diyagramı**|**Açıklama**|  
 |-----------------|---------------------|  
-|Kullanım örneği diyagramı|Hedeflerinizi açıklamak için kullanılan türleri tanımlar ve çalışmaları içindeki adımları kullanın.<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Etkinlik diyagramı|Nesne düğümleri, giriş sabitleyicileri, çıkış sabitleyicileri ve etkinlik parametre düğümleri geçen veri türlerini tanımlayın.<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Bileşen diyagramı|Bileşenler, arabirimleri ve aralarındaki ilişkiler açıklanmaktadır. Bir sınıf, ayrıca tam bir bileşeni açıklayabilir.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)|  
-|Katman diyagramı|Sınıflarla bağlantılı olarak sistemin mantıksal mimarisini tanımlayın.<br /><br /> Kodun tasarımla tutarlı kalmasını sağlamak için katman doğrulaması kullanın.<br /><br /> Bkz.<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: yönergeler](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
-|Sıralı diyagram|Yaşam çizgilerini işlem, parametre türlerini tanımlamak ve dönüş değerlerini yaşam çizgisinin alabileceği tüm iletiler için.<br /><br /> Bir sınıf diyagramında bir türden bir yaşam çizgisi oluşturmak için türe sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Kullanım örneği diyagramı|Hedeflerinizi açıklamak için kullanılan türleri tanımlar ve çalışmaları içindeki adımları kullanın.<br /><br /> Bkz.<br /><br /> -   [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Etkinlik diyagramı|Nesne düğümleri, giriş sabitleyicileri, çıkış sabitleyicileri ve etkinlik parametre düğümleri geçen veri türlerini tanımlayın.<br /><br /> Bkz.<br /><br /> -   [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Bileşen diyagramı|Bileşenler, arabirimleri ve aralarındaki ilişkiler açıklanmaktadır. Bir sınıf, ayrıca tam bir bileşeni açıklayabilir.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)|  
+|Katman diyagramı|Sınıflarla bağlantılı olarak sistemin mantıksal mimarisini tanımlayın.<br /><br /> Kodun tasarımla tutarlı kalmasını sağlamak için katman doğrulaması kullanın.<br /><br /> Bkz.<br /><br /> -   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
+|Sıralı diyagram|Yaşam çizgilerini işlem, parametre türlerini tanımlamak ve dönüş değerlerini yaşam çizgisinin alabileceği tüm iletiler için.<br /><br /> Bir sınıf diyagramında bir türden bir yaşam çizgisi oluşturmak için türe sağ tıklayın ve ardından **yaşam çizgisi Oluştur**.<br /><br /> Bkz.<br /><br /> -   [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Kod Haritası|Kuruluş ve mevcut koddaki ilişkileri görselleştirin.<br /><br /> Sınıfları, ilişkilerini ve yöntemlerini tanımlamak için bu öğeleri gösteren bir kod Haritası oluşturun.<br /><br /> Bkz.<br /><br /> -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> Mantıksal mimarisi açıklanmıştır: katman diyagramları  
+###  <a name="DescribeLayers"></a> Mantıksal mimarisi açıklanmıştır: Katman Diyagramları  
  Katman diyagramları, çözümünüzdeki açıklamaları soyut gruplar düzenleyerek sistemin mantıksal mimarisini açıklar veya *katmanları*. Yapılar ad alanları, projeler, sınıflar, yöntemler vb. gibi birçok şey olabilir. Katmanlar, temsil ve rolleri veya yapıların sistemde gerçekleştirdiği görevleri tanımlayın. Katman doğrulama, derleme ve kodun tasarımıyla uyumlu kalmasını sağlamak için iade etme işlemleri de içerebilir.  
   
  Kodun tasarımla tutarlılığını korumak için Şimdi Akşam Yemeği ve Lucerne aşağıdaki katman diyagramını geliştikçe kodlarını doğrulamak için kullanın:  
@@ -863,9 +858,9 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
 - [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
-- [Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
+- [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
   
-- [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
+- [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)  
   
 - [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
   
@@ -881,7 +876,7 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
 |**Diyagramı**|**Açıklama**|  
 |-----------------|---------------------|  
 |Kod Haritası|Kuruluş ve mevcut koddaki ilişkileri görselleştirin.<br /><br /> Katmanlar oluşturmak için kod haritası oluşturmak ve sonra harita üzerinde öğeleri olası Katmanlar olarak gruplayın. Grupları eşlemesinden katman diyagramına sürükleyin.<br /><br /> Bkz.<br /><br /> -   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Gözat ve kod haritaları bunları yeniden düzenleme](../modeling/browse-and-rearrange-code-maps.md)|  
-|Bileşen diyagramı|Bileşenler, arabirimleri ve aralarındaki ilişkiler açıklanmaktadır.<br /><br /> Katmanlar görselleştirmek için sistemdeki farklı bileşenlerin işlevselliğini açıklayan bir bileşen diyagramı oluşturun.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)|  
+|Bileşen diyagramı|Bileşenler, arabirimleri ve aralarındaki ilişkiler açıklanmaktadır.<br /><br /> Katmanlar görselleştirmek için sistemdeki farklı bileşenlerin işlevselliğini açıklayan bir bileşen diyagramı oluşturun.<br /><br /> Bkz.<br /><br /> -   [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)<br />-   [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)|  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  
   
@@ -893,9 +888,6 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
  [Kodu görselleştirme](../modeling/visualize-code.md)   
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)   
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)   
- [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)   
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

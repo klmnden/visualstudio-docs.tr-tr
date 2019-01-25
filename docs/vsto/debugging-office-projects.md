@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958403"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867980"
 ---
 # <a name="debug-office-projects"></a>Office projelerinde hata ayıklama
   Office projeleri aynı Microsoft kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diğer için kullandığınız araçları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı, kesme noktaları yerleştirin ve değişkenleri görüntüleme olanağı gibi özellikleri **Yereller** penceresinde, Office projelerinde hata ayıklaması yaparken de kullanılabilir. Hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklama araçları, bkz: [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
@@ -85,7 +85,7 @@ ms.locfileid: "53958403"
 
  Bir VSTO Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan eklentisi bir Office uygulaması sabit devre dışı bırakır, yalnızca VSTO hata nedeniyle eklenti uygulama devre dışı bırakır. Diğer VSTO, Office uygulamaları için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulmuş eklentileri yüklemeye devam eder.
 
-### <a name="soft-disabling"></a>Geçici olarak devre dışı bırakma
+### <a name="soft-disabling"></a>Soft disabling
  Bir VSTO eklentisi beklenmedik bir şekilde kapatmak uygulamanın neden olmayan bir hata oluşturursa, geçici olarak devre dışı bırakma ortaya çıkabilir. Sırasında işlenmeyen bir özel durum oluşturursa, bir uygulama geçici bir VSTO eklentisi devre dışı bırakabilir <xref:Microsoft.Office.Tools.AddIn.Startup> olay işleyicisi yürütüyordur. Bir VSTO eklentisi geçici olarak devre dışı olduğunda görünür **etkin olmayan uygulama eklentileri** uygulama ve uygulama listesinde değerini değiştirir **LoadBehavior** kayıt defteri girdisi için VSTO eklentisi yüklenmemiş olduğunu belirtmek için. Hakkında daha fazla bilgi için **LoadBehavior** kayıt defteri girdisi bkz [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ## <a name="troubleshoot-installation-errors-by-using-the-event-viewer"></a>Olay Görüntüleyicisi'ni kullanarak yükleme hatalarını giderme

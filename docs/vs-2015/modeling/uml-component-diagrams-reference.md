@@ -1,12 +1,9 @@
 ---
-title: 'UML Bileşen Diyagramları: Başvuru | Microsoft Docs'
-ms.custom: ''
+title: 'UML Bileşen Diyagramları: Referans | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,13 +18,13 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798780"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML Bileşen Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
  Tasarım aşamasında Bileşen diyagramlarının nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Bu konuda, bileşeni diyagramlarda kullanabileceğiniz öğeleri açıklar. Daha ayrıntılı Bileşen diyagramlarının nasıl hakkında daha fazla bilgi için bkz. [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md). Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+>  Bu konuda, bileşeni diyagramlarda kullanabileceğiniz öğeleri açıklar. Daha ayrıntılı Bileşen diyagramlarının nasıl hakkında daha fazla bilgi için bkz: [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md). Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Bileşen diyagramları okuma  
  Aşağıdaki tabloda, bileşen diyagramında ana özellikleri ile birlikte kullandığınız öğeleri açıklar. Öğelerin özelliklerinin tam listesi için bkz. [Bileşen diyagramlarındaki öğelerin özellikleri](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
@@ -64,12 +61,9 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md)   
+ [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)   
  [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML etkinlik diyagramları: başvuru](../modeling/uml-activity-diagrams-reference.md)   
- [UML Sıralı Diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)
-
-
-
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)   
+ [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)

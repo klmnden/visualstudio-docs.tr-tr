@@ -1,14 +1,9 @@
 ---
 title: 'İzlenecek yol: Yapılandırma ve kullanma özel bir kural kümesi | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,14 +12,14 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780104"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıklarını Kod Analizi araçları nasıl kullanacağınızı gösterir *kural kümesi* üzerinde bir sınıf kitaplığı. Eski kod bölünemez şekilde düzeltilen sorunlar için tarama gibi belirli bir gereksinimi karşılamak için alternatif bir kural kümeleri seçimi yapabilir veya çözümünüz için belirtilen proje türü için ilişkili bir kural kümesini seçebilirsiniz. Her iki durumda da kural kümelerini de bunları proje gereksinimlerinizi ince özelleştirilebilir.  
@@ -77,7 +72,7 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
    > [!TIP]
    >  Gerçek bir durumda, Kod Analizi ile hedeflemek için hangi sorunların öncelik için kullanılacak bir başlamak alışkanlıktır **önerilen Minimum kurallar** kural kümesi ve istenen sorunları düzeltin ve artımlı olarak ekleyin Daha fazla kural veya kural bulmak ve ek sorunları düzeltmek için ayarlar.  
   
-   Sonra CA1704 ihlallerini göstermek için kullanılan sınıf kitaplığı için bazı kodlar ekleyeceksiniz "Tanımlayıcıları yazıldığından" Kod Analizi kural. Daha fazla bilgi için [CA1704: tanımlayıcılar yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+   Sonra CA1704 ihlallerini göstermek için kullanılan sınıf kitaplığı için bazı kodlar ekleyeceksiniz "Tanımlayıcıları yazıldığından" Kod Analizi kural. Daha fazla bilgi için [CA1704: Tanımlayıcıları yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
 #### <a name="add-your-own-code"></a>Kendi kodunuzu ekleyin  
   
@@ -158,8 +153,5 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
 2.  ' A tıkladığınızda dikkat Hata Listesi penceresindeki **uyarıları**, CA1704 uyarı ihlalleri "Tanımlayıcılar doğru yazılmalıdır" kuralı için artık bkz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Nasıl yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Kod çözümleme kural kümesi başvurusu](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

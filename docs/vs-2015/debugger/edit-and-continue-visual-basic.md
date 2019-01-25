@@ -1,14 +1,9 @@
 ---
 title: Düzenle ve devam et (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750623"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795035"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Düzenle ve Devam Et (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Düzenle ve devam et özelliği olan [!INCLUDE[vbprvb](../includes/vbprvb-md.md)
  Bu bölümdeki konularda, bu özelliği kullanmak nasıl ve ne tür değişiklikler hakkında ek ayrıntılar izin verilmeyen sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl Yapılır: Düzenle ve Devam Et ile Kesme Modunda Düzenlemeleri Uygulama](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Nasıl yapılır: Düzenle ve Devam Et ile Kesme Modunda Düzenleme Uygulama](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Kodu kesme modunda düzenlemeleri uygulama açıklanmaktadır.  
   
  [Visual Basic Düzenle ve Devam Et Özelliğinde Desteklenmeyen Düzenlemeler](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
@@ -58,6 +53,3 @@ Düzenle ve devam et özelliği olan [!INCLUDE[vbprvb](../includes/vbprvb-md.md)
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Düzenle ve Devam Et](../debugger/edit-and-continue.md)  
  Düzenle ve devam et üzerinde konuların listesini sağlar.
-
-
-

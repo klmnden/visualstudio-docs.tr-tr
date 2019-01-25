@@ -1,11 +1,8 @@
 ---
 title: Eski iş akışı etkinlikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802387"
 ---
 # <a name="legacy-workflow-activities"></a>Eski İş Akışı Etkinlikleri
 [!INCLUDE[wf](../includes/wf-md.md)] Varsayılan işlevler sağlayan denetim akışı koşulları, olay işleme, durum yönetimi ve iletişim için uygulamalar ve hizmetler ile etkinlik kümesini içerir. İş akışları tasarlarken tarafından sağlanan sistem tarafından sağlanan etkinlikler kullanabileceğiniz [!INCLUDE[wfd1](../includes/wfd1-md.md)], veya özel etkinliklerinizi oluşturabilirsiniz.  
@@ -74,19 +71,19 @@ ms.locfileid: "49205424"
  [Etkinlik Görünümleri (Eski)](../workflow-designer/activity-views-legacy.md)  
  Etkinliklerin farklı tasarım görünümler açıklanır.  
   
- [Nasıl Yapılır: Araç Kutusuna Etkinlik Ekleme (Eski)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
+ [Nasıl yapılır: (Eski) araç kutusuna etkinlik ekleme](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
  Araç kutusuna etkinlik ekleme işlemi gösterilmektedir.  
   
- [Nasıl Yapılır: Bildirime Dayanan Kural Koşulu Oluşturma (Eski)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
+ [Nasıl yapılır: Bildirime dayanan Kural koşulu (eski) oluşturma](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
  Bildirime dayanan Kural koşulu oluşturma adımları gösterilmektedir.  
   
- [Nasıl Yapılır: PolicyActivity Kural Kümesi Oluşturma (Eski)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
+ [Nasıl yapılır: (Eski) PolicyActivity kural kümesi oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  PolicyActivity kural kümesi oluşturma adımları gösterilmektedir.  
   
- [Nasıl Yapılır: WCF Bütünleştirme İşlemi Gerçekleştirme (Eski)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Nasıl yapılır: Bir WCF sözleşmesi işlemi (eski) uygulama](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Uygulamak için bu adımları gösteren bir [!INCLUDE[indigo2](../includes/indigo2-md.md)] sözleşme işlemi.  
   
- [Nasıl Yapılır: WCF Bütünleştirme İşlemi Çağırma (Eski)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Nasıl yapılır: Bir WCF sözleşmesi işlemi (eski) Çağır](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Çağrılacak adımları gösteren bir [!INCLUDE[indigo2](../includes/indigo2-md.md)] sözleşme işlemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

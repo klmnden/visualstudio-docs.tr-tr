@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Ekleme ve kaldırma özellikler ve öğeler pakete paketleme Gezgini'ni kullanarak | Microsoft Docs"
+title: "Nasıl yapılır: Ekleme ve kaldırma özellikler ve öğeler pakete paketleme Gezgini'ni kullanarak | Microsoft Docs"
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,19 +9,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cbcdc11eab419c6f98ab1ec823c6073286ffe2f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880867"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868137"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Nasıl Yapılır: Ekleme ve özellikler ve öğeler pakete paketleme Gezgini'ni kullanarak kaldırma
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Nasıl yapılır: Ekleme ve özellikler ve öğeler pakete paketleme Gezgini'ni kullanarak kaldırma
   SharePoint öğeleri ve özellikleri dağıtacağınız bir paket yapılandırmak için paketleme Gezgini'ni kullanabilirsiniz. .Wsp dosyanız içinde SharePoint Proje öğeleri ve özellikleri ayarlayabilirsiniz.  
   
  Alternatif olarak, görüntülemek ve etkinleştirme sırasını değiştirmek için özellikleri yeniden sıralamak için paketleme tasarımcısını kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Ekleme ve paket Tasarımcısını kullanarak, özellikler ve öğeler pakete kaldırma](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  

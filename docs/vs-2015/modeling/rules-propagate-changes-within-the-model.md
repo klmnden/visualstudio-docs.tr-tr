@@ -1,12 +1,9 @@
 ---
 title: Değişiklikleri modelin içinde yayan kurallar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800422"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Değişiklikleri Modelin İçinde Yayan Kurallar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             Temel sınıf                              |                                                                                                                                                                                                                                                                                                                                                                              Tetikleyici                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Bir öğe, bağlantı veya şekil eklenir.<br /><br /> Yeni öğelerin yanı sıra yeni ilişkiler algılamak için bunu kullanın.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Bir etki alanı özellik değeri değiştirilir. Yöntem bağımsız değişkenleri, eski ve yeni değerleri sağlar.<br /><br /> Şekiller için bu kural tetiklenir, yerleşik `AbsoluteBounds` şekli taşınırsa özellik değişiklikleri.<br /><br /> Çoğu durumda, geçersiz kılmak daha kullanışlı olan `OnValueChanged` veya `OnValueChanging` özellik işleyicisi. Bu yöntemler hemen önce ve değişiklikten sonra çağrılır. Aksine, kural, genellikle işlem sonunda çalışır. Daha fazla bilgi için [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md). **Not:** bağlantı oluşturulduğunda veya bu kural tetiklenir değil. Bunun yerine, yazma bir `AddRule` ve `DeleteRule` alan ilişkisine yönelik. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Bir etki alanı özellik değeri değiştirilir. Yöntem bağımsız değişkenleri, eski ve yeni değerleri sağlar.<br /><br /> Şekiller için bu kural tetiklenir, yerleşik `AbsoluteBounds` şekli taşınırsa özellik değişiklikleri.<br /><br /> Çoğu durumda, geçersiz kılmak daha kullanışlı olan `OnValueChanged` veya `OnValueChanging` özellik işleyicisi. Bu yöntemler hemen önce ve değişiklikten sonra çağrılır. Aksine, kural, genellikle işlem sonunda çalışır. Daha fazla bilgi için [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md). **Not:**  Bu kural, bir bağlantı oluşturulduğunda veya tetiklenmiyor. Bunun yerine, yazma bir `AddRule` ve `DeleteRule` alan ilişkisine yönelik. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Bir öğe veya bağlantı silinmek üzere olduğunda tetiklenir. ' % S'özelliği ModelElement.IsDeleting işlemin sonuna kadar geçerlidir.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Bir öğe veya bağlantı silindiğinde gerçekleştirdi. Kural DeletingRules dahil olmak üzere diğer tüm kurallar yürütüldüğünü sonra yürütülür. ModelElement.IsDeleting yanlış ve ModelElement.IsDeleted geçerlidir. Bir sonraki geri alma için izin vermek için öğe gerçekten bellekten kaldırılmaz, ancak Store.ElementDirectory kaldırılır.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Bir öğenin bir depo bölümünden diğerine taşınır.<br /><br /> (Bu bir şekil grafik konumuna ilgili olmadığını unutmayın.)                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Değişiklikleri modelin dışına yayan olay işleyicileri](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules Şekil Konumunu ve Boyutunu Kısıtlamama](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

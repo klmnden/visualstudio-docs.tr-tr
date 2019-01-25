@@ -1,14 +1,9 @@
 ---
 title: İmzalama sayfası, Proje Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
 - ResolveKeySource.KeyFileForSignAssemblyNotImported
@@ -24,13 +19,13 @@ ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788732"
 ---
 # <a name="signing-page-project-designer"></a>İmzalama Sayfası, Proje Tasarımcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
   
 ## <a name="application-and-deployment-manifest-signing"></a>Uygulama ve dağıtım bildirimlerini imzalama  
  **ClickOnce bildirimlerini imzala** onay kutusu  
- Uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile oturum açmak için bu onay kutusunu seçin. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: oturum uygulama ve dağıtım bildirimlerini](../../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile oturum açmak için bu onay kutusunu seçin. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama](../../ide/how-to-sign-application-and-deployment-manifests.md).  
   
  **Store arasından seçim** düğmesi  
  Mevcut bir sertifikayı geçerli kullanıcının kişisel sertifika depolama alanından seçmenizi sağlar. Bu sertifikalar, uygulama ve dağıtım bildirimlerini imzalamak için birini seçebilirsiniz.  
@@ -72,9 +67,9 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
   
 ## <a name="assembly-signing"></a>Derleme imzalama  
  **Derlemeyi imzalamayı** onay kutusu  
- Derlemeyi imzalamak ve kesin adlandırılmış bir anahtar dosyası oluşturmak için bu onay kutusunu seçin. Derlemeyi kullanarak imzalama hakkında daha fazla bilgi için **Proje Tasarımcısı**, bkz: [nasıl yapılır: bir derleme (Visual Studio) oturum](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Derlemeyi imzalamak ve kesin adlandırılmış bir anahtar dosyası oluşturmak için bu onay kutusunu seçin. Derlemeyi kullanarak imzalama hakkında daha fazla bilgi için **Proje Tasarımcısı**, bkz: [nasıl yapılır: Bir derleme (Visual Studio) oturum](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Bu seçenek, Al.exe araç tarafından sağlanan kullanır [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] derlemeyi imzalamak için. Al.exe hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir derlemeyi tanımlayıcı bir adla imzalamak](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Bu seçenek, Al.exe araç tarafından sağlanan kullanır [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] derlemeyi imzalamak için. Al.exe hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir derlemeyi katı bir adla imzalamak](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  **Tanımlayıcı ad anahtar dosyası seç** listesi  
  Derleme imzalamak için kullanılan bir yeni veya mevcut kesin adlandırılmış anahtar dosyası belirtmenize olanak sağlar. Seçin  **\<Gözat … >** var olan bir anahtar dosyası seçin.  
@@ -97,11 +92,8 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Özellikleri başvurusu](../../ide/reference/project-properties-reference.md)   
  [Derleme ve bildirim imzalamayı yönetme](../../ide/managing-assembly-and-manifest-signing.md)   
- [Tanımlayıcı ad imzalama için yönetilen uygulamalar](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Nasıl yapılır: uygulama ve dağıtım bildirimlerini imzalama](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Nasıl yapılır: bir derleme (Visual Studio) oturum açın](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Nasıl yapılır: derlemeyi tanımlayıcı bir adla imzalama](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Tanımlayıcı ad imzalama için yönetilen uygulamalar](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini](../../ide/how-to-sign-application-and-deployment-manifests.md)   
+ [Nasıl yapılır: Bir derleme (Visual Studio) oturum açın](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Nasıl yapılır: Derlemeyi tanımlayıcı bir adla imzalama](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Kesin Adlandırılmış Bütünleştirilmiş Kodlar](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
-
-
-

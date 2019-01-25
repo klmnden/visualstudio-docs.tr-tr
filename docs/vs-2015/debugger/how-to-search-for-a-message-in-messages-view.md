@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: iletiler görünümünde ileti arama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İletiler görünümünde ileti arama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
 - Messages view
@@ -17,15 +12,15 @@ ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08a2a08014d0927ecea29b1acb6bb36620f1a15a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34f50b457dcc8b6db8e48e7072e8956fa78f6a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802112"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761681"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Nasıl Yapılır: İletiler Görünümünde İleti Arama
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Nasıl yapılır: İletiler görünümünde ileti arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Arama ölçütü olarak kendi tanıtıcı, tür veya ileti kimliği'ni kullanarak iletiler görünümünde belirli bir ileti için arama yapabilirsiniz. Bunlardan herhangi birini — veya bir birleşimini — geçerli arama ölçütleri olacaktır. İlk arama yönünü de belirtilebilir. Alanları iletişim kutusunda, seçili ileti özniteliklerle önceden yüklenir.  
@@ -58,6 +53,3 @@ Arama ölçütü olarak kendi tanıtıcı, tür veya ileti kimliği'ni kullanara
 6. **Tamam**'ı tıklatın.  
   
    Eşleşen bir ileti bulunursa iletileri Görünüm penceresinde vurgulanır. Bkz: [iletiler görünümünü](../debugger/messages-view.md).
-
-
-

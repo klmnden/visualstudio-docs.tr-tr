@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: yerelleştirilmiş önyükleyici paketi oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,20 +12,20 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790975"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş Önyükleyici Paketi Oluşturma
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazla dosya oluşturarak yerelleştirilmiş önyükleyici paketi sürümlerini oluşturabilirsiniz: dosya (örneğin, bir eula.rtf) ve bir paket bildirimi (package.xml) bir yazılım lisans koşulları.  
   
- Varsayılan olarak, yalnızca .NET Framework 4, .NET Framework 4 istemci profili, F # çalışma zamanı 2.0 ve F # çalışma zamanı 4.0 için Visual Studio 2010 yerelleştirilmiş önyükleyici paketleri içerir. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.  
+ Varsayılan olarak, Visual Studio 2010 yalnızca .NET Framework 4 için .NET Framework 4 istemci profili, yerelleştirilmiş önyükleyici paketleri içerir F# çalışma zamanı 2.0 ve F# çalışma zamanı 4.0. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.  
   
 1.  Yerel adı \Program SDKs\Windows\v7.0A\Bootstrapper\Packages sonra adlı bir klasör oluşturun\\*BootstrapperPackageName*.  
   
@@ -72,7 +67,7 @@ Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazl
   
 2.  Önyükleyici paketini Yazılım Lisans Koşulları'nı içeren bir dosya oluşturun ve yeni klasöre yerleştirin.  
   
-3.  Package.xml adlı paket bildirimi oluşturma ve yeni klasöre yerleştirin. Daha fazla bilgi için [nasıl yapılır: bir paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).  
+3.  Package.xml adlı paket bildirimi oluşturma ve yeni klasöre yerleştirin. Daha fazla bilgi için [nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Güncelleştirme `<Strings>` paketin bölümünü bildirim yerel ayarı için doğru dilde dizelerdir.  
   
@@ -102,6 +97,3 @@ Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazl
  [Önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md)   
  [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md)   
  [Nasıl yapılır: Paket Bildirimi Oluşturma](../deployment/how-to-create-a-package-manifest.md)
-
-
-

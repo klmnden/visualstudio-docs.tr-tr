@@ -1,25 +1,22 @@
 ---
 title: DSL kodunu anlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777457"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +68,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
   
  `ConnectionBuilders.cs`  
   
- Bir bağlantı Oluşturucu ilişkileri oluşturan bir sınıftır. Bağlantı aracını arkasında kodudur. Bu dosya, bir çift her bağlantı aracı için sınıflar içerir. Adları etki alanı ilişkisi ve bağlantı aracını adlarından türetilir: *ilişki*oluşturucusu ve *ConnectorTool*ConnectAction.  
+ Bir bağlantı Oluşturucu ilişkileri oluşturan bir sınıftır. Bağlantı aracını arkasında kodudur. Bu dosya, bir çift her bağlantı aracı için sınıflar içerir. Adları etki alanı ilişkisi ve bağlantı aracını adlarından türetilir: *İlişki*oluşturucusu ve *ConnectorTool*ConnectAction.  
   
  (Bileşen çözüm örnekte, bağlantı oluşturucular birini ConnectionBuilder çağrılır, etki alanı ilişkisi bağlantısı adında bir rastlantı olmasıdır.)  
   
@@ -138,7 +135,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
 > [!NOTE]
 >  Bu modelin kök sınıfı ile aynı değildir.  
   
- Kopyalama ve Sil kapanışlar tanımlamak diğer öğeleri olması gereken bir öğe kopyalandığında veya dahil. Ayarlayarak bu davranışı denetleyebilirsiniz **yayar kopyalama** ve **yayar Sil** rollerinin her ilişkinin her iki tarafındaki özellikleri. Değerleri dinamik olarak belirlendiği istiyorsanız, kapanış sınıflarının yöntemleri geçersiz kılmak için kod yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Program kopyalama ve yapıştırma davranışını - yeniden yönlendirme](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
+ Kopyalama ve Sil kapanışlar tanımlamak diğer öğeleri olması gereken bir öğe kopyalandığında veya dahil. Ayarlayarak bu davranışı denetleyebilirsiniz **yayar kopyalama** ve **yayar Sil** rollerinin her ilişkinin her iki tarafındaki özellikleri. Değerleri dinamik olarak belirlendiği istiyorsanız, kapanış sınıflarının yöntemleri geçersiz kılmak için kod yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kopyalama ve yapıştırma davranışını programlama - yeniden yönlendirme](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
  `DomainModelResx.resx`  
   
@@ -356,6 +353,3 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  [Modelleri, sınıfları ve ilişkileri anlama](../modeling/understanding-models-classes-and-relationships.md)   
  [Bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

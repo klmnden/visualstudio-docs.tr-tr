@@ -1,12 +1,9 @@
 ---
-title: 'UML sınıf diyagramları: Başvuru | Microsoft Docs'
-ms.custom: ''
+title: 'UML sınıf diyagramları: Referans | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,15 +23,15 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741058"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796752"
 ---
-# <a name="uml-class-diagrams-reference"></a>UML Sınıf Diyagramları: Başvuru
+# <a name="uml-class-diagrams-reference"></a>UML sınıf diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim yapıları, uygulamanız tarafından kullanılan bilgileri açıklar. Bu, belirli bir uygulamaya başvuru olmadan bilgiler açıklanmaktadır. Alt sınıflar ve ilişkiler, veritabanı tablolarını, XML düğümüyle veya yazılım nesnelerin bileşimleri gibi pek çok yolla uygulanabilir.  
@@ -42,7 +39,7 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
 > [!NOTE]
 >  Bu konu UML sınıf diyagramları hakkındadır. Başka tür bir sınıf diyagramı, program kodunu görselleştirmek için kullanılan .NET sınıf diyagramı vardır. Daha fazla bilgi için [tasarlama ve görüntüleme sınıfları ve türleri](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
- Bir UML sınıf diyagramı oluşturmak için **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**. UML sınıf diyagramları çizmek hakkında daha fazla bilgi için bkz. [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md). Modelleme diyagramları çizmek ve oluşturma hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+ Bir UML sınıf diyagramı oluşturmak için **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**. UML sınıf diyagramları çizmek hakkında daha fazla bilgi için bkz. [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md). Modelleme diyagramları çizmek ve oluşturma hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -65,7 +62,7 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
 |     1.     |        Sınıflandırıcısı        |                                                                                                             Bir sınıf, arabirim veya numaralandırma genel adı. Bileşenler, kullanım örnekleri ve aktörler de sınıflandırıcıdır.                                                                                                             |
 |     2     | Daraltma / genişletme denetimi |                                                                                         Sınıflandırıcı ayrıntılarını göremiyorsanız, genişletici sınıflandırıcı sol konumunda tıklayın. Öğesine tıklamanız her bir kesim üzerinde [+] olabilir.                                                                                         |
 |     3     |      **Öznitelik**       |   Her bir sınıflandırıcı örneğine bağlı türü belirtilmiş bir değer.<br /><br /> Bir öznitelik eklemek için tıklatın **öznitelikleri** bölüm ve tuşuna **ENTER**. Öznitelik imzası yazın. Daha fazla bilgi için [özelliklerini öznitelikleri UML sınıf diyagramları](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
-|     4     |      **İşlemi**       | Bir yöntem veya işlev, sınıflandırıcı örneklerinin tarafından gerçekleştirilebilir. Bir işlem eklemek için tıklatın **işlemleri** bölüm ve tuşuna **ENTER**. İşlemin imzasını yazın. Daha fazla bilgi için [UML işlemlerin özellikleri sınıf diyagramları](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     4     |      **İşlem**       | Bir yöntem veya işlev, sınıflandırıcı örneklerinin tarafından gerçekleştirilebilir. Bir işlem eklemek için tıklatın **işlemleri** bölüm ve tuşuna **ENTER**. İşlemin imzasını yazın. Daha fazla bilgi için [UML işlemlerin özellikleri sınıf diyagramları](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
 |     5     |     **İlişkilendirme**      |                                                                  Üyeleri, iki sınıflandırıcı arasındaki ilişki. Daha fazla bilgi için [UML İlişkilendirmelerin Özellikleri sınıf diyagramları](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
 |    5a     |     **Toplama**      |                                                                                                    Paylaşılan sahiplik ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **paylaşılan**.                                                                                                     |
 |    5b     |     **Oluşturma**      |                                                                                                      Bütün parça ilişkisini gösteren bir ilişkilendirmedir. **Toplama** özelliği sahip rolünün **bileşik**.                                                                                                      |
@@ -93,11 +90,8 @@ Bir UML sınıf diyagramı nesne ve hem iç hem de kullanıcılar ile iletişim 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML sınıf diyagramları: yönergeler](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
  [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

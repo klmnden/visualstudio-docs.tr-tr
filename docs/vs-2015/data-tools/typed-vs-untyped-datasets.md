@@ -1,22 +1,20 @@
 ---
 title: Yazılmayan veri kümelerinin karşılaştırması yazılan | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790818"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılan ve yazılmayan veri kümelerinin karşılaştırması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +40,3 @@ Yazılan veri kümesi temel ilk türetilmiş bir veri kümesidir <xref:System.Da
  Türü belirtilmiş datasets birçok avantaj olsa bile yazılmamış bir veri kümesi çeşitli durumlarda yararlı olur. Şema veri kümesi için kullanılabilir olduğunda en belirgin senaryodur. Uygulamanız bir veri kümesi döndüren bir bileşeni ile etkileşim kurma Bu, örneğin, meydana gelebilir ancak önceden yapısını ne olduğunu bildiğiniz değil. Benzer şekilde, ne zaman bir statik, öngörülebilir yapısına sahip değil verilerle çalışma zamanları vardır. Türü belirtilmiş veri kümesi sınıfı her değişikliği veri yapısı ile yeniden oluşturmanız gerekirdi bu durumda, türü belirlenmiş bir veri kümesini kullanmak için pratik olmasıdır.  
   
  Daha genel olarak kullanılabilir bir şema zorunda kalmadan bir veri kümesini dinamik olarak oluşturabilir, birden çok kez vardır. Bu durumda, verileri ilişkisel bir biçimde temsil edilebilir olduğu sürece veri kümesi yalnızca bilgileri saklamak uygun bir yapı ' dir. Aynı anda bilgileri başka bir işleme geçirmek veya bir XML dosyasına yazmak için seri hale getirme olanağı gibi veri kümesinin özelliklerinden yararlanabilirsiniz.
-

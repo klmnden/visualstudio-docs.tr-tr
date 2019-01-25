@@ -1,14 +1,9 @@
 ---
 title: Kod ve metin düzenleyici içinde kod yazma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794247"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Kod ve Metin Düzenleyici'de Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ Visual Studio Düzenleyicisi, yazmak ve kodunuzu yönetmenizi kolaylaştıran bi
 
  ![İleri ve geri gezinti düğmeleri](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Kodunuzun kuş bakışı görünümünü almak için bir kod penceresinde Gelişmiş kaydırma çubuğunu da kullanabilirsiniz. Harita modunda kod önizlemeler imleç Yukarı Taşı ve aşağı kaydırma çubuğunun, daha fazla bilgi için bkz, bkz: [nasıl yapılır: izleme kaydırma çubuğunu özelleştirerek kodunuzu](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Kodunuzun kuş bakışı görünümünü almak için bir kod penceresinde Gelişmiş kaydırma çubuğunu da kullanabilirsiniz. Harita modunda kod önizlemeler imleç Yukarı Taşı ve aşağı kaydırma çubuğunun, daha fazla bilgi için bkz, bkz: [nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  Aşağıdaki komutlar, koda özgü Gezinti yöntemleridir:  
 
 |||  
 |-|-|  
-|Git \<satır numarası >|(**Düzenle/Git** ya da CTRL + G): Etkin belgede belirli bir satıra taşıyın.|  
-|Gidin|(**Düzenle/Git** ya da CTRL +,): etkin bir çözümde sembol veya dosya bulur. Eşleşen sorgu sonuçlarından düzgün bir küme seçmenize yardımcı olur. Sembolü anahtar sözcüklere bölmek için camel casing ve alt çizgi karakterleri kullanarak bir sembol içinde bulunan anahtar sözcükleri arayabilirsiniz.|  
-|Tüm Başvuruları Bul|(bağlam menüsü): çözümde seçilen öğenin tüm başvurularını bulur.|  
-|Tanıma Git|(bağlam menüsü veya F12): seçilen öğenin açıklamasını bulur.|  
-|Tanıma göz at|(bağlam menüsü veya Alt + F12): seçilen öğenin açıklamasını bulur ve açılır pencerede görüntüler. Daha fazla bilgi için [nasıl yapılır: görünümü ve düzenleme kodu kullanarak Özet tanım (Alt + F12) tarafından](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Git \<satır numarası >|(**Düzenle/Git** ya da CTRL + G): Etkin belgedeki belirli bir satıra taşır.|  
+|Gidin|(**Düzenle/Git** ya da CTRL +,): Etkin bir çözümde sembol veya dosya bulur. Eşleşen sorgu sonuçlarından düzgün bir küme seçmenize yardımcı olur. Sembolü anahtar sözcüklere bölmek için camel casing ve alt çizgi karakterleri kullanarak bir sembol içinde bulunan anahtar sözcükleri arayabilirsiniz.|  
+|Tüm Başvuruları Bul|(bağlam menüsü): Çözümde seçilen öğenin tüm başvurularını bulur.|  
+|Tanıma Git|(bağlam menüsü veya F12): Seçilen öğenin açıklamasını bulur.|  
+|Tanıma göz at|(bağlam menüsü veya Alt + F12): Seçilen öğenin açıklamasını bulur ve açılır pencerede görüntüler. Daha fazla bilgi için [nasıl yapılır: Kodu görüntüleme ve düzenleme (Alt + F12) Özet tanımı kullanarak](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Sonraki yöntem, önceki yöntem|(**Düzenle/sonraki yöntem, önceki yöntem**) Visual Basic kod dosyaları, bu komutlar ekleme noktasını farklı yöntemlere kullanın.|  
 |Başvuru vurgulama|Kaynak koddaki bir simge tıkladığınızda, o simgenin tüm örnekleri belgede vurgulanır. Vurgulanan simgeler bildirimleri ve başvurular içerebilir ve diğer pek çok simgeyi **tüm başvuruları Bul** döndürür. Bu sınıf, nesneler, değişkenler, yöntemleri ve özellik adlarını içerir. Visual Basic kodu içinde birçok denetim yapıları için anahtar sözcükler ayrıca vurgulanır. Sonraki veya önceki vurgulanan simgeye gitmek için CTRL + SHIFT + Aşağı Ok veya CTRL + SHIFT + Yukarı Ok tuşuna basın. Vurgulama rengini değiştirebilirsiniz **Araçlar/Seçenekler/ortam/yazı tipi ve renk/vurgulanan başvuru.**|  
 |Kodla ilgili bilgiyi bulun|Değişiklikleri ve bu değişiklikler, başvurular, hatalar, iş öğeleri, kod incelemeleri ve birim test durumu, Kod Düzenleyicisi'nde CodeLens kullandığınızda kimin yaptığını gibi belirli kod hakkında bilgi bulabilirsiniz. Team Foundation Server ile Visual Studio Enterprise kullandığınızda CodeLens ekran gibi çalışır. Bkz: [kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -188,7 +183,7 @@ Kodunuzda camel casing kullanır, yalnızca büyük harf kod öğe adı girerek 
 Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 ## <a name="customize-the-editor"></a>Düzenleyiciyi özelleştirme  
- **İçeri ve dışarı aktarma ayarları**: başka bir paylaşım ayarlarını, ayarlarınızı standarda ya da kullanarak Visual Studio varsayılan ayarlarına geri döndürmeye **içeri ve dışarı aktarma ayarları Sihirbazı** üzerinde **Araçları** menüsü. Genel ayarları veya dili ve projeye özgü ayarları değiştirebilirsiniz.  
+ **İçeri ve dışarı aktarma ayarları**: Başka bir paylaşım ayarlarını, ayarlarınızı standarda ya da kullanarak Visual Studio varsayılan ayarlarına geri döndürmeye **içeri ve dışarı aktarma ayarları Sihirbazı** üzerinde **Araçları** menüsü. Genel ayarları veya dili ve projeye özgü ayarları değiştirebilirsiniz.  
 
  **Klavye eşleme**: Yeni kısayol tuşlarını tanımlayabilir veya varolanları Araçlar/Seçenekler/ortam/klavye ayarları yeniden tanımlama. Kısayol tuşları hakkında daha fazla bilgi için bkz. [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
@@ -216,9 +211,9 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 -   [Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)  
 
--   [Nasıl Yapılır: Kaydırma Çubuğunu Özelleştirerek Kodunuzu İzleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [Nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Nasıl yapılır: Özet Tanımı'nı Kullanarak Kodu Görüntüleme ve Düzenleme (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Nasıl yapılır: Görüntüleme ve Özet tanımı (Alt + F12) kullanarak kod düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -236,5 +231,3 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-

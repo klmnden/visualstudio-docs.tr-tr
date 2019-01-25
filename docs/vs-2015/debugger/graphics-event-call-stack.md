@@ -1,27 +1,22 @@
 ---
 title: Grafik olay Çağırma yığını | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785178"
 ---
 # <a name="graphics-event-call-stack"></a>Grafik Olay Çağırma Yığını
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,4 @@ Grafik olay çağrı yığını'nı Visual Studio grafik Çözümleyicisi sorunl
  Seçilen grafik olay anlamak için ilişkili Direct3D nesneleri hakkındaki bilgileri gerekebilir. **Grafik olay çağrı yığını** penceresi bu bilgilere bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Köşe Gölgeleme Nedeniyle Nesnelerin Eksikliği](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
-
-
-
+ [İzlenecek yol: Köşe Gölgeleme Nedeniyle Eksik Nesneler](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)

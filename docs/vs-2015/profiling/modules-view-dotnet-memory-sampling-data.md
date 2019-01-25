@@ -1,27 +1,22 @@
 ---
 title: Modüller görünümü - .NET bellek örnekleme verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b9a02e5579eb5dc82f2e1f21a10444c329a317f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804101"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modüller Görünümü - .NET Bellek Örnekleme Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +44,7 @@ ms.locfileid: "51765532"
 |**Dışlamalı bayt yüzdesi**|Dışlamalı bayt modülü, işlev, satır veya yönerge olan, profil oluşturma çalışmasında ayrılan tüm baytların yüzdesi.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [Modüller görünümü - izleme](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Modüller görünümü](../profiling/modules-view-sampling-data.md)   
  [Modüller Görünümü](../profiling/modules-view-instrumentation-data.md)
-
-
-

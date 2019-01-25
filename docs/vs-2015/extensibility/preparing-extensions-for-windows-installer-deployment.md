@@ -1,26 +1,21 @@
 ---
 title: Uzantıları Windows Installer dağıtımı için hazırlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90dc7fb0ca361e6c1994cfd7108b171cda2ad1f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9576b220ed3624ee1ee5dbf83630affc38041231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804509"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Uzantıları Windows Installer Dağıtımı için Hazırlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,5 @@ Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazs
 5.  Kalan dosyaları kurulum projenize ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Installer dağıtımı](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [İzlenecek yol: özel bir eylem oluşturma](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
-
+ [Visual Studio Installer dağıtımı](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [İzlenecek yol: Bir özel eylem oluşturma](http://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)

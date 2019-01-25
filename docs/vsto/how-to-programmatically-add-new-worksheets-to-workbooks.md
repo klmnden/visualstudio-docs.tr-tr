@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla çalışma kitapları için yeni çalışma sayfaları ekleme'
+title: 'Nasıl yapılır: Program aracılığıyla çalışma kitapları için yeni çalışma sayfaları ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - worksheets, adding to workbooks
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c5cfd48cf65ea8eed18606377cde2092ddaf302
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d357fd6028fd080f2c1e37895c8d4256bea56a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867676"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865248"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Nasıl Yapılır: Program aracılığıyla çalışma kitapları için yeni çalışma sayfaları ekleme
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Nasıl yapılır: Program aracılığıyla çalışma kitapları için yeni çalışma sayfaları ekleme
   Program aracılığıyla çalışma sayfası oluşturmak ve ardından çalışma kitabındaki koleksiyonu çalışma sayfası ekleyin.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

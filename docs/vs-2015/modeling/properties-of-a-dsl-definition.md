@@ -1,25 +1,22 @@
 ---
 title: Bir DSL tanımının özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: 38debcfe-e1a6-4a3f-9d69-3ab07520f2b6
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50b4325d2329bbaf402dcf2f059c51b5a796bdcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 804236cadf97dda0b21cf145a4cd4c932e08b097
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796504"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL Tanımının Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +39,7 @@ DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü n
 |Ürün Adı|İçin kaydedilen ürün adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu DSL için oluşturulan paket.|\<yok >|  
 |Notlar|Bu alan sınıfıyla ilişkili notları.|\<yok >|  
 |Açıklama|Bu etki alanı sınıfı için açıklama.|\<yok >|  
-|Görünen ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|  
+|Görünen Ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|  
 |Yardım anahtar sözcüğü|Bu alan sınıfıyla ilişkili Yardım anahtar sözcüğü.|\<yok >|  
 |Derleme|Bu etki alanına özgü dil tanımı için artımlı derleme numarası.|0|  
 |Ana sürüm|Bu etki alanına özgü dil tanımı için artımlı başlıca yapı numarası.|1.|  
@@ -50,7 +47,4 @@ DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü n
 |Gözden geçirme|Artımlı düzeltme numarası için bu etki alanına özgü dil tanımı oluşturun.|0|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

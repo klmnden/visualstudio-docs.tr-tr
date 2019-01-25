@@ -1,18 +1,18 @@
 ---
-title: Dosya Ekle
-description: Dosya Ekle
+title: include dosyası
+description: include dosyası
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
-manager: douge
-ms.openlocfilehash: 425b07127fdd65d7caaa1fd4f2c82b1087f5e299
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f1adbda62f71712edde67489b16fb53ddfb40fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805483"
 ---
 > [!Note]
 > Bu makale, Visual Studio 2015 için geçerlidir. Visual Studio 2017 belgeleri arıyorsanız, sürüm Seçici sol üst köşede kullanın. Visual Studio 2017'ye yükseltme yapmanızı öneririz. [Buradan indirin](https://www.visualstudio.com/downloads?utm_source=web&utm_medium=documentation&utm_campaign=vs2017upgrade&utm_term=vs2017).

@@ -1,25 +1,20 @@
 ---
 title: Profiler örnekleme yöntemini kullanarak hizmetler için uygulama istatistikleri toplama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 076a8f5fb376914998030c194d55bf505a5ed953
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794179"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Profil Oluşturucu Örnekleme Yöntemini Kullanarak Hizmetler için Uygulama İstatistikleri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ Bu bölümde, Windows Hizmetleri komut satırından örnekleme yöntemini kullan
   
 |Görev|İlgili içerik|  
 |----------|---------------------|  
-|**Bir .NET hizmetine profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profiler uygulama istatistikleri toplamak için bir .NET hizmetine ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Bir .NET hizmetine profil oluşturucu ekleme**|-   [Nasıl Yapılır: Uygulama İstatistikleri Toplamak için Bir .NET Hizmetine Profil Oluşturucu Ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**C/C++ hizmete profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profiler uygulama istatistikleri toplamak için yerel bir hizmete ekleme](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**C/C++ hizmete profil oluşturucu ekleme**|-   [Nasıl Yapılır: Uygulama İstatistikleri Toplamak için Yerel Hizmete Profil Oluşturucu Ekleme](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>İlişkili görevler  
   
@@ -56,6 +51,3 @@ Bu bölümde, Windows Hizmetleri komut satırından örnekleme yöntemini kullan
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Görünümleri ve raporları örnekleme verileri analiz etme  
  [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)
-
-
-

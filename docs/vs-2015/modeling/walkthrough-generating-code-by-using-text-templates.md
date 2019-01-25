@@ -1,12 +1,9 @@
 ---
 title: 'İzlenecek yol: Metin şablonları kullanarak kod oluşturma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,15 +11,15 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782484"
 ---
-# <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek Yol: Metin Şablonları Kullanarak Kod Oluşturma
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek yol: Metin şablonları kullanarak kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kod oluşturma, türü kesin olarak belirtilmiş kaynak modeli değiştiğinde henüz kolayca değiştirilebilir program kodunu oluşturmak sağlar. Bunu daha esnek bir yapılandırma dosyası, kabul eden tamamen genel bir program yazma Alternatif yöntem ile karşılaştırın ancak ne kodu sonuçlarında çok kolay okumak ve değiştirmek ya da bu tür iyi bir performans sahiptir. Bu yönerge, bu Avantajdan gösterir.  
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)
-
-
-

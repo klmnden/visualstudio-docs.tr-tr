@@ -1,29 +1,24 @@
 ---
-title: 'Nasıl yapılır: standart düzenleyicileri açma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Standart düzenleyicileri açma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6829ba4d1267d7a17c609f973b5ee6b570e9ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f75a64929074be45645de529ccb05f52f9d04ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781876"
 ---
-# <a name="how-to-open-standard-editors"></a>Nasıl yapılır: standart düzenleyicileri açma
+# <a name="how-to-open-standard-editors"></a>Nasıl yapılır: Standart Düzenleyicileri Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Standart Düzenleyici açıldığında, dosyayı bir projeye özgü Düzenleyici belirtmek yerine bir dosya türü için standart bir düzenleyici belirlemek IDE sağlar.  
@@ -59,7 +54,6 @@ Standart Düzenleyici açıldığında, dosyayı bir projeye özgü Düzenleyici
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Açma ve proje öğelerini kaydetme](../extensibility/internals/opening-and-saving-project-items.md)   
- [Nasıl yapılır: projeye özgü düzenleyicileri açma](../extensibility/how-to-open-project-specific-editors.md)   
- [Nasıl yapılır: açık belgeler için düzenleyicileri açma](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../extensibility/how-to-open-project-specific-editors.md)   
+ [Nasıl yapılır: Açık açık belgeler için düzenleyicileri](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Dosya Aç Komutunu Kullanarak Dosyaları Görüntüleme](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-

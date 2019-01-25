@@ -1,25 +1,22 @@
 ---
 title: Modelleri, sınıfları ve ilişkileri anlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271797"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805454"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +56,9 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
   
  ![Başvuru ekleme ve ilişkileri](../modeling/media/music-classes.png "Music_Classes")  
   
- Çizimde dört etki alanı sınıflarını göstermektedir: müzik, albüm, sanatçının ve şarkı. Etki alanı sınıf adı, başlık ve benzeri gibi etki alanı özellikleri tanımlayın. Örnek modelinde, bu özelliklerin bazıları değerlerini diyagramda görüntülenir.  
+ Çizimde, dört alan sınıfları gösterilmektedir: Müzik, albüm, sanatçının ve şarkı. Etki alanı sınıf adı, başlık ve benzeri gibi etki alanı özellikleri tanımlayın. Örnek modelinde, bu özelliklerin bazıları değerlerini diyagramda görüntülenir.  
   
- Etki alanı ilişkileri sınıflardır: MusicHasAlbums, MusicHasArtists AlbumbHasSongs ve ArtistAppearedOnAlbums. Çeşitlilikler 1..1 gibi ilişkilerine sahip 0.. *. Örneğin, her bir şarkıyı için tam olarak bir albüm AlbumHasSongs ilişkisi üzerinden ilişkili olmalıdır. Albümlerini şarkıya herhangi bir sayıda olabilir.  
+ Sınıflar etki alanı ilişkileri şunlardır: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs ve ArtistAppearedOnAlbums. Çeşitlilikler 1..1 gibi ilişkilerine sahip 0.. *. Örneğin, her bir şarkıyı için tam olarak bir albüm AlbumHasSongs ilişkisi üzerinden ilişkili olmalıdır. Albümlerini şarkıya herhangi bir sayıda olabilir.  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>DSL tanım diyagramı yeniden düzenleme  
  Albüm Bu resimde olduğu gibi bir alan sınıfına DSL tanım diyagramı üzerinde birkaç kez görünebilir dikkat edin. Her zaman bir ana görünüm yoktur ve olabilir bazı *başvuru* görünümleri.  
@@ -157,7 +154,4 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üretilen API'de etki alanı ilişkileri](../misc/domain-relationships-in-the-generated-api.md)   
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,25 +1,20 @@
 ---
 title: SAL'ı Anlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804709"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  Bu işlevin ne yaptığını anlayabilirsiniz? Bir işlev uygulanan ya da adlı programı doğruluğunu sağlamak için belirli özellikleri korunmalıdır. Yalnızca bir örnekteki gibi bir bildirim bakarak, bunların ne olduğunu bilmiyorum. SAL ek açıklamalar olmadan, belge veya kod açıklamaları dayalı etmesi gerekir. İçin MSDN belgelerine işte `memcpy` söylüyor:  
   
 > "Kopya kaynak hedefe kopyalanmaya bayt sayısı. Kaynak ve hedef çakışırsa, memcpy davranışı tanımsızdır. Çakışan bölgeleri işlemek için memcpy kullanın.   
-> **Güvenlik Notu:** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için arabellek taşmalarını bkz."  
+> **Güvenlik Notu:** Boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için arabellek taşmalarını bkz."  
   
  Belgeler, birkaç kodunuzu program doğruluğunu sağlamak için belirli özelliklerini korumak sahip Öner bit bilgi içerir:  
   
@@ -126,7 +121,7 @@ wchar_t * wmemcpy(
    > **C6387 Geçersiz parametre değeri**   
    > 'pInt', '0' olabilir: Bu 'InCallee' işlevinin belirtimine bağlı kalmıyor.  
   
-### <a name="example-the-in-annotation"></a>Örnek: \_içinde\_ ek açıklaması  
+### <a name="example-the-in-annotation"></a>Örnek: \_İçinde\_ ek açıklaması  
  `_In_` Ek açıklama gösterir:  
   
 -   Parametresi, geçerli olması gerekir ve değiştirilmeyecek.  
@@ -192,7 +187,7 @@ void InOptCaller()
   
  Visual Studio Kod Analizi arabellek erişmeden önce işlevi için NULL denetimleri doğrular.  
   
-### <a name="example-the-out-annotation"></a>Örnek: \_kullanıma\_ ek açıklaması  
+### <a name="example-the-out-annotation"></a>Örnek: \_Kullanıma\_ ek açıklaması  
  `_Out_` bir öğeyi buffer'a işaret eden bir NULL olmayan işaretçi geçirilir ve işlev öğe başlatır sık karşılaşılan bir senaryodur destekler. Çağıranın çağırmadan önce arabellek başlatmak zorunda değildir; Çağrılan işlev döndürülmeden önce başlatmak üzere vaat eder.  
   
 ```cpp  
@@ -373,7 +368,7 @@ void OutPtrOptCaller()
   
  Visual Studio Kod Analizi doğrulama Bu işlev null önce denetler `*pInt` referans edildi ve döndürülmeden önce arabellek işlevi tarafından başlatılır.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Örnek: \_başarı\_ birlikte ek açıklama \_çıkış\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Örnek: \_Başarı\_ birlikte ek açıklama \_çıkış\_  
  Ek açıklamalar, çoğu nesnelere uygulanabilir.  Özellikle, tam bir işlev açıklama ekleyebilirsiniz.  Bir işlev en belirgin özelliklerini, başarılı veya başarısız, biridir. Ancak bir arabellek boyutuna arasındaki ilişkiyi gibi C/C++ işlevi başarı veya başarısızlık express olamaz. Kullanarak `_Success_` ek açıklama, bir işlev için hangi başarının neye benzediğini söyleyebilirsiniz.  Parametre `_Success_` ek açıklama olduğunu da true olduğunda işlevi başarılı olduğunu belirten bir ifade. İfade, ek açıklama ayrıştırıcının işleyebilir herhangi bir şey olabilir. İşlev başarılı olduğunda işlev döndürdükten sonra ek açıklamalar etkilerini yalnızca geçerlidir. Bu örnek gösterir nasıl `_Success_` etkileşimde `_Out_` doğru şeyleri yapacakları konusunda. Anahtar sözcüğünü kullanabilirsiniz `return` dönüş değerini göstermek için.  
   
 ```cpp  
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Kilitlenme davranışını yorumlama](../code-quality/annotating-locking-behavior.md)   
  [Açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
-
-
-

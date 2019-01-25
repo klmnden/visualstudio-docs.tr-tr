@@ -1,25 +1,22 @@
 ---
 title: Bir etki alanına özgü dili özelleştirme ve genişletme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767970"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,13 +59,13 @@ Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları
 |Şekil düzeninin ve görünümünün kopyalama ve sürükle-bırak korur.|Şekilleri ve bağlayıcıları kopyalanan ekleme `ElementGroupPrototype`. Geçersiz kılmak için en uygun yöntemi `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Bkz: [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
 |Şekiller geçerli imleç konumu gibi seçtiğiniz bir konuma yapıştırın.|Geçersiz kılma `ClipboardCommandSet.ProcessOnCopy()` konuma özgü sürümünü kullanacak şekilde `ElementOperations.Merge().` bkz [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).|  
 |Yapıştırırken ek bağlantılar oluşturma|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Sürükle ve bırak Bu diyagram ile başka bir DSL veya UML etkinleştirmek diyagramları ve Windows öğeleri|Bkz: [nasıl yapılır: sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Sürükle ve bırak Bu diyagram ile başka bir DSL veya UML etkinleştirmek diyagramları ve Windows öğeleri|Bkz: [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Üst sürüklediğiniz gibi bir şekil veya bir bağlantı noktası gibi bir alt Şekil'üzerine sürüklenerek aracı sağlar.|Öğe birleştirme yönergesinde, bırakılan nesne üst iletmek için hedef nesne sınıfı üzerinde tanımlayın. Bkz: [öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md).|  
 |Bir şekil veya ek bağlantılar ve şeklin üzerine sürüklenerek aracını izin verin veya oluşturulan nesneler. Örneğin, bir yorum, bağlı durumda olan bir öğe kesilmesine izin vermek için.|Öğe birleştirme yönergesinde hedef etki alanı sınıfını tanımlamak ve oluşturulacak bağlantılara tanımlayın. Karmaşık durumlarda, özel kod ekleyebilirsiniz. Bkz: [öğe oluşturma ve hareketini özelleştirme](../modeling/customizing-element-creation-and-movement.md).|  
 |Bir aracıyla öğeleri bir grup oluşturun. Örneğin, sabit bir dizi bağlantı noktası ile bir bileşen.|ToolboxHelper.cs araç kutusu başlatma yöntemi yok sayın. Bir öğe grubu prototip (öğeleri ve bunların ilişki bağlantılarını içeren EGP) oluşturun. Bkz: [araçları ve araç kutusunu özelleştirme](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Asıl ve bağlantı noktası şekiller EGP içeriyor ya da bağlantı noktası şekilleri EGP örneği oluşturulduğunda konumlandırmak için BoundsRules tanımlayın. Bkz: [BoundsRules şekil konumunu ve boyutunu Kısıtlamama](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Birden fazla ilişki oluşturmak için bir bağlantı aracını kullanın.|Bağlantı bağlama yönergesi (LCD) araç tarafından çağrılan bağlantı oluşturucuyu ekleyin. LCD'ler iki öğe türleri arasında ilişki türünü belirler. Bu öğelerin durumlarını bağımlı hale getirmek için özel kod ekleyebilirsiniz. Bkz: [araçları ve araç kutusunu özelleştirme](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Yapışkan araçları – kullanıcı, çok sayıda şekilleri veya bağlayıcıları art arda oluşturmak için herhangi bir aracı çift tıklayabilirsiniz.|DSL Gezgini içinde seçin `Editor` düğümü. Özellikler penceresinde ayarlayın **kullanan Yapışkan araç kutusu öğeleri**.|  
-|Menü komutlarını tanımlama|Bkz: [nasıl yapılır: standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Menü komutlarını tanımlama|Bkz: [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Model doğrulama kuralları ile sınırlama|Bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md)|  
 |Bir DSL kod, yapılandırma dosyaları ve belgeleri oluşturur.|[Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Modelleri nasıl kaydedileceğini özelleştirme dosyası için.|Bkz: [dosya depolamayı ve XML serileştirmeyi özelleştirme](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
  [Bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

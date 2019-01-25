@@ -1,14 +1,9 @@
 ---
 title: Gölgelendirici Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805467"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |Biçim Adı|Dosya Uzantısı|Desteklenen işlemler (görüntüleme, düzenleme, dışarı aktarma)|  
 |-----------------|--------------------|-------------------------------------------------|  
 |Yönlü graf gölgelendirici dili|.dgsl|Görüntüle, Düzenle|  
-|HLSL gölgelendirici (kaynak kodu)|.hlsl|Dışarı aktarma|  
-|HLSL gölgelendirici (bayt)|.CSO|Dışarı aktarma|  
-|C++ üst bilgisi (HLSL bayt dizesi)|.h|Dışarı aktarma|  
+|HLSL gölgelendirici (kaynak kodu)|.hlsl|Dışarı Aktarma|  
+|HLSL gölgelendirici (bayt)|.CSO|Dışarı Aktarma|  
+|C++ üst bilgisi (HLSL bayt dizesi)|.h|Dışarı Aktarma|  
   
 ## <a name="getting-started"></a>Başlarken  
  Bu bölüm için bir DGSL gölgelendirici ekleme işlemi açıklanmaktadır, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje ve başlamanıza yardımcı olmak için temel bilgiler sağlar.  
@@ -86,7 +81,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |**Düzlem ile Önizleme**|Etkin olduğunda, bir uçak modelinin gölgelendiricinin önizlemesini görüntülemek için kullanılır. Aynı anda yalnızca bir önizleme şekli etkinleştirilebilir.|  
 |**Araç Kutusu**|Alternatif olarak gösterir veya gizler **araç kutusu**.|  
 |**Özellikler**|Alternatif olarak gösterir veya gizler **özellikleri** penceresi.|  
-|**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Dışarı aktarma**: gölgelendiriciyi çeşitli biçimlerde verilmesini sağlar.<br /><br /> **Dışarı aktarma olarak**: Gölgelendirici ya da HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarır. Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik motorları**: tasarım yüzeyinde görüntülemek için kullanılan Oluşturucu seçimini etkinleştirir.<br /><br /> **D3d11 ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**: kullanan Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için WARP).<br /><br /> **Görünüm**: Gölgelendirici Tasarımcısı hakkında ek bilgi sağlar.<br /><br /> **Kare hızı**: etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde bulunan geçerli kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır.  Bu seçenek, etkinleştirdiğinizde kullanışlıdır **gerçek zamanlı işleme modu** seçeneği.|  
+|**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Dışarı aktarma**: Gölgelendirici çeşitli biçimlerde verilmesini sağlar.<br /><br /> **Dışarı Aktar**: Gölgelendirici ya da HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarır. Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik motorları**: Tasarım yüzeyinde görüntülemek için kullanılan Oluşturucu seçimini etkinleştirir.<br /><br /> **D3d11 ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Görünüm**: Gölgelendirici Tasarımcısı hakkında ek bilgi sağlar.<br /><br /> **Kare hızı**: Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde bulunan geçerli kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır.  Bu seçenek, etkinleştirdiğinizde kullanışlıdır **gerçek zamanlı işleme modu** seçeneği.|  
   
 > [!TIP]
 >  Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.  
@@ -133,12 +128,12 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 |Parametre|Özellikler|  
 |---------------|----------------|  
-|**Doku 1** – **doku 8**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Filename**: Bu doku kaydı ile ilişkili doku dosyasının tam yolu.|  
-|**Malzeme ortam**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: dolaylı – veya ortam – aydınlatması nedeniyle geçerli pikselin yayınık rengi.|  
-|**Malzeme Yayınık**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: geçerli pikselin doğrudan aydınlatmayı nasıl pürüzlü açıklayan bir renk.|  
-|**Malzeme Yayımlatıcı**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: kendi kendine sağlanan aydınlatma nedeniyle geçerli pikselin renk katkısı.|  
-|**Malzeme Yansımalı**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: geçerli pikselin doğrudan aydınlatmayı nasıl yansıttığını açıklayan bir renk.|  
-|**Malzeme Yansımalı güç**|**Erişim**: **genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: geçerli pikselin Yansımalı vurgular yoğunluğunu tanımlayan üs.|  
+|**Doku 1** – **doku 8**|**Erişim**:                             **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Filename**: Bu doku kaydı ile ilişkili doku dosyasının tam yolu.|  
+|**Malzeme ortam**|**Erişim**:                             **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Dolaylı – veya ortam – aydınlatması nedeniyle geçerli pikselin yayınık rengi.|  
+|**Malzeme Yayınık**|**Erişim**: **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**:  Geçerli pikselin doğrudan aydınlatmayı nasıl pürüzlü açıklayan bir renk.|  
+|**Malzeme Yayımlatıcı**|**Erişim**:                              **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Kendi kendine sağlanan aydınlatma nedeniyle geçerli pikselin renk katkısı.|  
+|**Malzeme Yansımalı**|**Erişim**:                              **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Geçerli pikselin doğrudan aydınlatmayı nasıl yansıttığını açıklayan bir renk.|  
+|**Malzeme Yansımalı güç**|**Erişim**:                             **Genel** özelliğin Model Düzenleyicisi'nden Ayarla; tersi durumda, izin vermek için **özel**.<br /><br /> **Değer**: Geçerli pikselin Yansımalı vurgular yoğunluğunu tanımlayan üs.|  
   
 #### <a name="time-based-effects"></a>Zamana bağlı etkileri  
  Bazı gölgelendirici efekti canlandırır zamana bağlı bir bileşen var. Etkin uygulamada nasıl göründüğünü görmek için önizleme birkaç kez saniyede güncelleştirilmesi gerekir. Gölgelendirici değiştirildiğinde, varsayılan olarak, yalnızca önizleme güncelleştirilir; zamana bağlı etkileri görüntüleyebilmesi için bu davranışı değiştirmek için gerçek zamanlı işleme olanağı vardır.  
@@ -159,7 +154,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
  Gölgelendiricileri HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarabilirsiniz. HLSL kaynak kodu .hlsl dosya adı uzantısına sahip bir metin dosyasına aktarılır. Gölgelendirici bytecode'una .cso dosya adı uzantısına sahip bir ham ikili dosyaya veya bir diziye gölgelendirici bytecode'una kodlayan bir C++ üstbilgi (.h) dosyasına dışarı aktarılabilir.  
   
- Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).  
+ Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).  
   
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları  
   
@@ -175,8 +170,8 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |Uzaklaştır|CTRL-fare tekerleği geriye doğru<br /><br /> Eksi İşareti (-)|  
 |Tasarım yüzeyine yukarı kaydır|Fare tekerleği geriye doğru<br /><br /> PageDown|  
 |Tasarım yüzeyine aşağı kaydır|Fare tekerleği ileriye doğru<br /><br /> PageUp|  
-|Tasarım yüzeyine sola kaydır|Shift+Fare tekerleği geriye doğru<br /><br /> Fare tekerleği sol<br /><br /> Shift + PageDown|  
-|Tasarım yüzeyine sağa kaydır|Shift+Fare tekerleği ileriye doğru<br /><br /> Fare tekerleği sağ<br /><br /> Shift + PageUp|  
+|Tasarım yüzeyine sola kaydır|Shift+Fare tekerleği geriye doğru<br /><br /> Fare tekerleği sol<br /><br /> Shift+PageDown|  
+|Tasarım yüzeyine sağa kaydır|Shift+Fare tekerleği ileriye doğru<br /><br /> Fare tekerleği sağ<br /><br /> Shift+PageUp|  
 |Klavye odağı başka bir düğüme taşı|Ok tuşları|  
 |Klavye odağı (düğümü seçimi gruba ekler) olan düğümü seçin|Shift + Ara çubuğu|  
 |Klavye girintisine sahip düğümün Seçimi Değiştir|Ctrl+Ara Çubuğu|  
@@ -193,6 +188,3 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |[Oyunlar ve Uygulamalar için 3B Varlıklarla Çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md)|Genel bir bakış sağlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokular ve resimler, 3B modeller ve gölgelendirici efektleri ile çalışmak için kullanabileceğiniz araçları.|  
 |[Görüntü Düzenleyicisi](../designers/image-editor.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokularla ve görüntülerle çalışma için görüntü Düzenleyicisi.|  
 |[Model Düzenleyicisi](../designers/model-editor.md)|Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 3B modellerle çalışmak için Model Düzenleyicisi.|
-
-
-

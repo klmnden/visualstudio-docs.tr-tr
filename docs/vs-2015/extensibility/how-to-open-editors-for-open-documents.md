@@ -1,28 +1,23 @@
 ---
-title: 'Nasıl yapılır: açık belgeler için düzenleyicileri açma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Açık belgeler için düzenleyicileri açma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8238ce632f8552b36ccb259af683636732b469
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788751"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Nasıl yapılır: açık belgeler için düzenleyicileri açma
+# <a name="how-to-open-editors-for-open-documents"></a>Nasıl yapılır: Açık Belgeler için Düzenleyicileri Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir belge penceresi bir proje açmadan önce proje önce dosyanın zaten başka bir düzenleyici belge penceresinde açık olup olmadığını belirlemeniz gerekir. Dosya ya da açık bir projeye özgü düzenleyicisinde olabilir ya da standart düzenleyicileri birini kayıtlı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -57,10 +52,9 @@ Bir belge penceresi bir proje açmadan önce proje önce dosyanın zaten başka 
   
      Bu yöntem ilk belge zaten çağırarak açık olmadığını doğrular <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Belge zaten açık değilse, düzenleyici penceresinde resurfaced.  
   
-2.  Belgenin açık değilse, ardından bölümünde bulunan adımları tamamladığınızdan [nasıl yapılır: standart düzenleyicileri açma](../extensibility/how-to-open-standard-editors.md).  
+2.  Belgenin açık değilse, ardından bölümünde bulunan adımları tamamladığınızdan [nasıl yapılır: Standart düzenleyicileri açma](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açma ve proje öğelerini kaydetme](../extensibility/internals/opening-and-saving-project-items.md)   
- [Nasıl yapılır: projeye özgü düzenleyicileri açma](../extensibility/how-to-open-project-specific-editors.md)   
- [Nasıl Yapılır: Standart Düzenleyicileri Açma](../extensibility/how-to-open-standard-editors.md)
-
+ [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../extensibility/how-to-open-project-specific-editors.md)   
+ [Nasıl yapılır: Open Standard Editors](../extensibility/how-to-open-standard-editors.md)

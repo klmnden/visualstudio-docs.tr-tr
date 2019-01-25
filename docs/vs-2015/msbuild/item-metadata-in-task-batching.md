@@ -1,14 +1,9 @@
 ---
 title: Toplu Görev işlemede meta veri öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -18,13 +13,13 @@ ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c83f499560bf747843fe74ede4d2187a544bee8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923790"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769174"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev İşlemede Öğe Meta Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -229,10 +224,7 @@ Items in ExampColl: Item2;Item5
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md)   
  [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)   
- [Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
+ [ItemMetadata Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Toplu işleme](../msbuild/msbuild-batching.md)   
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
  [MSBuild Başvurusu](../msbuild/msbuild-reference.md)
-
-
-

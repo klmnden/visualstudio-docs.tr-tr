@@ -1,21 +1,17 @@
 ---
 title: Kaynaklardan bildirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798234"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +28,11 @@ Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyalar
 ||||  
 |-|-|-|  
 |**Anahtar adı**|**Notlar**|**Gerekli veya isteğe bağlı**|  
-|/Resources|Görüntüleri veya dizinlerin noktalı virgülle ayrılmış listesi. Bu liste her zaman bildirimde olacak görüntü tam listesini içermelidir. Yalnızca kısmi bir liste verilirse, dahil edilmeyen girişleri kaybolur.<br /><br /> Belirtilen kaynak dosyasının bir görüntü şeridi ise, araç, ayrı görüntülere her subimage bildirime eklemeden önce bölecektir.<br /><br /> Resim .png dosyası ise, böylece aracı görüntünün doğru özniteliklerini doldurabilirsiniz adı gibi bu biçime önerilir: \<adı >.\< Genişlik >. \<Yükseklik > .png.|Gerekli|  
+|/Resources|Görüntüleri veya dizinlerin noktalı virgülle ayrılmış listesi. Bu liste her zaman bildirimde olacak görüntü tam listesini içermelidir. Yalnızca kısmi bir liste verilirse, dahil edilmeyen girişleri kaybolur.<br /><br /> Belirtilen kaynak dosyasının bir görüntü şeridi ise, araç, ayrı görüntülere her subimage bildirime eklemeden önce bölecektir.<br /><br /> Resim .png dosyası ise, böylece aracı görüntünün doğru özniteliklerini doldurabilirsiniz ad şunun gibi biçimlendirme önerilir: \<Adı >. \<Genişliği >. \<Yükseklik > .png.|Gerekli|  
 |/ Assembly|Yönetilen bütünleştirilmiş kod (uzantısı dahil değil) veya çalışma zamanı yolunu (göreli bildirim çalışma zamanının konumu) kaynakları barındıran yerel bütünleştirilmiş kodun adı.|Gerekli|  
-|bildirim /|Oluşturulan .imagemanifest dosyaya vermek için adı. Ayrıca, farklı bir konumda dosya oluşturmak için mutlak veya göreli bir yol da içerebilir. Varsayılan adını derleme adı eşleşir.<br /><br /> Varsayılan: \<geçerli dizin >\\< derleme\>.imagemanifest|İsteğe Bağlı|  
+|bildirim /|Oluşturulan .imagemanifest dosyaya vermek için adı. Ayrıca, farklı bir konumda dosya oluşturmak için mutlak veya göreli bir yol da içerebilir. Varsayılan adını derleme adı eşleşir.<br /><br /> Varsayılan: \<Geçerli dizin >\\< derleme\>.imagemanifest|İsteğe Bağlı|  
 |/guidName|Tüm görüntüleri oluşturulan bildirim için GUID sembol vermek için adı.<br /><br /> Varsayılan: AssetsGuid|İsteğe Bağlı|  
-|/rootPath|Yönetilen Kaynak URI'leri oluşturmadan önce çıkarılır gereken kök yolu. (Bu bayrağı araç göreli URI yolu yanlış kaynakları yüklemek başarısız olmasına neden alır burada çalışmalarıyla yardımcı olmaya yöneliktir.)<br /><br /> Varsayılan: \<geçerli dizin >|İsteğe Bağlı|  
+|/rootPath|Yönetilen Kaynak URI'leri oluşturmadan önce çıkarılır gereken kök yolu. (Bu bayrağı araç göreli URI yolu yanlış kaynakları yüklemek başarısız olmasına neden alır burada çalışmalarıyla yardımcı olmaya yöneliktir.)<br /><br /> Varsayılan: \<Geçerli dizin >|İsteğe Bağlı|  
 |/ Recursive|Bu bayrak ayarlandığında, yinelemeli olarak araç söyler /resources bağımsız değişkendeki herhangi bir dizin arayın. Bu bayrak atlama dizinleri top-düzey yalnızca Search'te neden olur.|İsteğe Bağlı|  
 |/isNative|Derleme bağımsız değişken yerel bir derleme için bir yol olduğunda bu bayrağı ayarlayın. Derleme bağımsız değişken yönetilen derlemenin adını olduğunda bu bayrağı yoksayın. (Bu bayrağı hakkında ek bilgi için Notlar bölümüne bakın.)|İsteğe Bağlı|  
 |/newGuids|Bu bayrak ayarlandığında, varolan bir bildirimi adresinden birleştirme yerine görüntüleri GUID sembol için yeni bir değer oluşturmak için aracı söyler.|İsteğe Bağlı|  
@@ -163,4 +159,3 @@ Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyalar
   <ImageLists />  
 </ImageManifest>  
 ```
-

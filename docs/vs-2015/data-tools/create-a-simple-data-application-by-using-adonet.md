@@ -1,12 +1,9 @@
 ---
 title: ADO.NET kullanarak basit veri uygulaması oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805518"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
 ## <a name="prerequisites"></a>Önkoşullar  
  Uygulama oluşturmak için gerekir:  
   
-- Visual Studio Community sürümü.  
+- Visual Studio Community Edition.  
   
 - SQL Server Express LocalDB.  
   
@@ -221,7 +218,7 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
     |-------------|-----------------|  
     |Kullanımı-1|Ekleme `System.Configuration` ad alanı.|  
     |Kullanımı-2|Bir değişken tanımlayın `returnValue`ve kendisine başlatma `null` (C#) veya `Nothing` (Visual Basic).|  
-    |Kullanımı-3|Girdiğiniz olsa bile `connString` bağlantı dizesinin adı olarak **özellikleri** penceresinde belirtmelisiniz `"SimpleDataApp.Properties.Settings.connString"` (C#) veya `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) kod.|  
+    |Util-3|Girdiğiniz olsa bile `connString` bağlantı dizesinin adı olarak **özellikleri** penceresinde belirtmelisiniz `"SimpleDataApp.Properties.Settings.connString"` (C#) veya `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) kod.|  
   
 ##  <a name="BKMK_writethecodefortheforms"></a> Formlar için kodu yazın  
  Bu bölüm, neleri her bir form mu ve formları oluşturan kodu gösterir kısa genel bakış bilgileri içerir. Numaralandırılmış açıklamalar kod bölümlerini tanımlar.  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|Bir müşteri adının mevcut olduğunu doğrulamak için bir yöntem tanımlayın.<br /><br /> -Metin kutusu boş ise, bir ileti görüntüler ve dönüş `false`, hesabı oluşturmak için bir ad gereklidir.<br />-Metin kutusu boş değilse, dönüş `true`.|  
 |NC-17|Tıklama olay işleyicisine kod ekleyin `btnPlaceOrder` düğmesi.|  
 |NC-18|Çağrısını sarmalamak `isPlaceOrderReady` etrafında `btnPlaceOrder_Click` olay kodu böylece `uspPlaceNewOrder` gerekli giriş mevcut olmadığında çalışmasın.|  
-|NC-19 ila NC-25|Bu bölümler için eklediğiniz koda benzer `btnCreateAccount_Click` olay işleyicisi.<br /><br /> -NC-19. Oluşturma `SqlCommand` nesnesi `cmdNewOrder`, belirtin `Sales.uspPlaceOrder` saklı yordam olarak.<br />-NC-20 ila NC-23 saklı yordam için giriş parametreleridir.<br />-NC-24. `@RC` veritabanından oluşturulan sipariş kimliği bir dönüş değeri içerir. Bu parametrenin yönü olarak belirtilen `ReturnValue`.<br />-NC-25. Sipariş Kimliği değerini Store `orderID` NC-2 ve görüntüleme değeri bir ileti kutusu içinde bildirilen değişken.|  
+|NC-19 ila NC-25|Bu bölümler için eklediğiniz koda benzer `btnCreateAccount_Click` olay işleyicisi.<br /><br /> -   NC-19. Oluşturma `SqlCommand` nesnesi `cmdNewOrder`, belirtin `Sales.uspPlaceOrder` saklı yordam olarak.<br />-NC-20 ila NC-23 saklı yordam için giriş parametreleridir.<br />-   NC-24. `@RC` veritabanından oluşturulan sipariş kimliği bir dönüş değeri içerir. Bu parametrenin yönü olarak belirtilen `ReturnValue`.<br />-   NC-25. Sipariş Kimliği değerini Store `orderID` NC-2 ve görüntüleme değeri bir ileti kutusu içinde bildirilen değişken.|  
 |NC-26|Bir müşteri Kimliğinin var olduğunu ve bir süre içinde belirtilen doğrulamak için bir yöntem tanımlayın `numOrderAmount`.|  
 |NC-27|Çağrı `ClearForm` yönteminde `btnAddAnotherAccount` tıklama olay işleyicisi.|  
 |NC-28|Oluşturma `ClearForm` başka bir müşteri eklemek istiyorsanız formdan değerleri temizlemek için yöntemi.|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Uygulamanızı test edin  
  Yapı ve her Click olay işleyicisini kodladıktan sonra uygulamanızı test etmek için F5 tuşunu seçin ve yine kodlamayı bitirdikten sonra sonra.
-

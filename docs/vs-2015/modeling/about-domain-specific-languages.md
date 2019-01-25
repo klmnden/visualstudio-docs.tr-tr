@@ -1,25 +1,22 @@
 ---
 title: Etki alanına özgü diller hakkında | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796886"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +75,7 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
 ### <a name="notation"></a>Gösterim  
  Bir etki alanına özgü dil makul küçük bir kolayca tanımlanabilir ve etki alanına özgü yapıları temsil etmek için genişletilmiş öğeler olması gerekir. Bir gösterimi öğelerini temsil eden, şekiller ve bağlayıcıları, bir grafik diyagram yüzeyinde öğeleri arasındaki ilişkileri gösteren oluşur. İçinde [!INCLUDE[dsl](../includes/dsl-md.md)], şekiller genişletilmiş ve, etki alanına özgü dil öğelerini temsil eden için iyileştirilmiştir.  
   
-### <a name="domain-model"></a>Etki alanı modeli  
+### <a name="domain-model"></a>Domain Model  
  Bir etki alanına özgü dil öğelerini ve bunları tutarlı dilbilgisi arasındaki ilişkileri kümesini birleştirmeniz gerekir. Öğeleri ve ilişkileri birleşimlerini geçerli olup olmadığını tanımlamalısınız. Örneğin, programlama dilleri, genellikle ikinci sınıftan türetilmiş bir sınıf ve saniye sınıfının ilk sınıfından türetilmiş döngüsel devralmaya engelleyin. Kısıtlamaları, iş mantığı ifade etmek için de kullanılabilir; örneğin, bir kişi, kendisine bağımlı bir olamaz. [!INCLUDE[dsl](../includes/dsl-md.md)] tür en etki alanına özgü diller gerektiren kısıtlamalar express için kısıtlamalar kullanır.  
   
 ### <a name="artifact-generation"></a>Yapıt oluşturma  
@@ -119,6 +116,3 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
 -   Yazılım geliştiricisi veya Mimarı ekip oluşturan çeşitli uygulamaların geliştiricileri için etki alanına özgü dil dağıtır.  
   
 -   Her geliştirici, belirli bir uygulamaya uygulanan bir model oluşturur.
-
-
-

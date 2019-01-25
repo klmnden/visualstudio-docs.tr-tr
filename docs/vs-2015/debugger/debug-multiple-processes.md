@@ -1,14 +1,9 @@
 ---
 title: Birden çok işlemde hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752693"
 ---
 # <a name="debug-multiple-processes"></a>Birden çok işlemde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "51793054"
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Kaynak ve sembol (.pdb) dosyalarını bulun  
  Bir işlemin kaynak koduna gitmek için hata ayıklayıcı kaynak dosyaları ve sembol dosyalarını işleminin erişim gerekir. Bkz: [sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- Bir işlem için dosyalara erişemiyorsanız, ayrıştırma penceresini kullanarak gidebilirsiniz. Bkz: [nasıl yapılır: Ayrıştırılmış kod penceresini kullanma](../debugger/how-to-use-the-disassembly-window.md)  
+ Bir işlem için dosyalara erişemiyorsanız, ayrıştırma penceresini kullanarak gidebilirsiniz. Bkz: [nasıl yapılır: Ayrıştırılmış Kod Penceresini Kullanma](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
@@ -73,7 +68,7 @@ ms.locfileid: "51793054"
 > 
 > - Başlatıldıktan sonra alt işleme ekleyin.  
 > 
->   veya  
+>   -veya-  
 >   -   Windows alt işlem hata ayıklayıcının yeni bir örneğinde otomatik olarak başlayacak şekilde yapılandırın.  
   
 ###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Visual Studio çözümünde birden çok işlem hata ayıklamayı Başlat  
@@ -218,7 +213,7 @@ ms.locfileid: "51793054"
 |**Hata ayıklama** menüsü:<br /><br /> -   **Tümünü Ayır**|Hata ayıklayıcı tüm işlemden ayrılır.|  
 |**İşlemler** penceresi bağlam menüsü:<br /><br /> -   **İşlem ayırma**|Hata ayıklayıcı seçilen işlemden ayrılır.<br /><br /> Diğer işlemler varolan durum (askıya alınmış veya çalışıyor) korur.|  
 |**İşlemler** penceresi bağlam menüsü:<br /><br /> -   **İşlemi Sonlandır**|Seçilen işlem sonlandırıldı.<br /><br /> Diğer işlemler varolan durum (askıya alınmış veya çalışıyor) korur.|  
-|**İşlemler** penceresi bağlam menüsü:<br /><br /> -   **Hata ayıklama durdurulduğunda ayırma**|Davranışını değiştirir **hata ayıklama**, **hata ayıklamayı Durdur** seçilen işlem için:<br /><br /> -Checked: Hata ayıklayıcı işlemden ayırır.<br />-Temizlenmiş: İşlem sonlandırıldı.|  
+|**İşlemler** penceresi bağlam menüsü:<br /><br /> -   **Hata ayıklama durdurulduğunda ayırma**|Davranışını değiştirir **hata ayıklama**, **hata ayıklamayı Durdur** seçilen işlem için:<br /><br /> -Denetleme: Hata ayıklayıcı işlemden ayrılır.<br />-Temizlenmiş: İşlem sonlandırıldı.|  
   
  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [hata ayıklamayı durdurun, sonlandırın işlemlerden ayırın](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
@@ -230,6 +225,3 @@ ms.locfileid: "51793054"
  [Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)   
  [Just-ın-Time hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Çok İş Parçacıklı Uygulamaların Hatalarını Ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

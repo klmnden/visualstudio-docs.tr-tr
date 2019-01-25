@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla çalışma sayfası aralıklarında metin arama'
+title: 'Nasıl yapılır: Program aracılığıyla çalışma sayfası aralıklarında metin arama'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - worksheets, searching
 - text [Office development in Visual Studio], searching in worksheets
 - text searches, worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37f59f2888fc5a572029f4c21116281df008706e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826133"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868595"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Nasıl Yapılır: Metin için çalışma sayfası aralıklarında program aracılığıyla arama yapma
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Nasıl yapılır: Metin için çalışma sayfası aralıklarında program aracılığıyla arama yapma
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne aralık içinde metin araması olanak sağlar. Bu metin herhangi bir çalışma sayfası hücresinde gibi görünebilir hata dizelerini de olabilir `#NULL!` veya `#VALUE!`. Hata dizeleri hakkında daha fazla bilgi için bkz. [hücre hata değerlerini](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

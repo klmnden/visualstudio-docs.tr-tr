@@ -1,12 +1,9 @@
 ---
-title: 'UML etkinlik diyagramları: Başvuru | Microsoft Docs'
-ms.custom: ''
+title: 'UML etkinlik diyagramları: Referans | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,15 +19,15 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803372"
 ---
-# <a name="uml-activity-diagrams-reference"></a>UML Etkinlik Diyagramları: Başvuru
+# <a name="uml-activity-diagrams-reference"></a>UML etkinlik diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem iş akışı olarak gösterilir. Kişiler, yazılım bileşenlerini veya bilgisayarların bu eylemleri gerçekleştirebilirsiniz.  
@@ -39,13 +36,13 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 - Bir iş sürecini veya kullanıcıların sisteminizi arasındaki iş akışı. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
-- Bir kullanım örneği, adımların. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Bir kullanım örneği, adımların. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Yazılım protokol, diğer bir deyişle, izin verilen dizileri bileşenleri arasındaki etkileşimler dizesi.  
   
 - Bir yazılım algoritması.  
   
-  Bu konuda, etkinlik diyagramlarını kullanabilirsiniz öğeleri açıklar. Daha ayrıntılı etkinlik çizim hakkında bilgi için bkz [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md). UML etkinlik diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**. Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+  Bu konuda, etkinlik diyagramlarını kullanabilirsiniz öğeleri açıklar. Daha ayrıntılı etkinlik çizim hakkında bilgi için bkz [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md). UML etkinlik diyagramı oluşturmak için **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**. Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Etkinlik diyagramları okuma  
  Aşağıdaki bölümlerde tablolar etkinlik diyagramı ve ana özelliklerini kullandığınız öğeleri açıklar. Öğelerin özelliklerinin tam listesi için bkz. [etkinlik diyagramlarındaki öğelerin özellikleri](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  
@@ -55,7 +52,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
  Bir diyagram okumak için bir belirteç veya iş parçacığı denetimin bağlayıcılar boyunca bir eylemden geçirir olduğunu hayal edin.  
   
 ### <a name="simple-control-flows"></a>Basit bir denetim akışı  
- Bir dizi eylem dallar ve döngüler ile gösterebilirsiniz. Akış denetimi açıklayan bölümüne burada açıklanan öğeleri kullanma hakkında daha fazla bilgi için bkz. [UML etkinlik diyagramları: yönergeler](../modeling/uml-activity-diagrams-guidelines.md).  
+ Bir dizi eylem dallar ve döngüler ile gösterebilirsiniz. Akış denetimi açıklayan bölümüne burada açıklanan öğeleri kullanma hakkında daha fazla bilgi için bkz. [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Basit bir iş akışı](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
@@ -73,7 +70,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
 |9|**Davranış eylem çağrısı**|Başka bir etkinlik diyagramı'nda daha ayrıntılı bir şekilde tanımlanan bir eylem.<br /><br /> -   **IsSynchronous** - etkinlik kapsayıcınızın doğru eylemi bekler.<br />-   **Davranış** -etkinlik çağrılır.|  
 |(gösterilmez)|**İşlem eylem çağrısı**|Bir sınıfın bir örneği üzerinde bir işlem çağıran eylem.|  
 ||**Etkinlik**|Bir etkinlik diyagramı tarafından düzenlenmiş iş akışı. Bir etkinlik özelliklerini görmek için bunu seçmelisiniz **UML Model Gezgini**.<br /><br /> -   **Salt okunur** - true ise etkinlik herhangi bir nesne durumunu değiştirmemesi gerekir.<br />-   **Tek yürütme** - true ise en fazla Bu diyagramda, tek bir yürütme birer birer.|  
-||**UML etkinlik diyagramı**|Bir etkinlik gösteren diyagram. Özelliklerini görmek için diyagramın boş bir kısmına tıklayın. **Not:** adları etkinlik diyagramı, Diyagram ve diyagram tarafından görüntülenen etkinlik içeren dosyayı farklı olabilir.|  
+||**UML etkinlik diyagramı**|Bir etkinlik gösteren diyagram. Özelliklerini görmek için diyagramın boş bir kısmına tıklayın. **Not:**  Etkinlik diyagramı adlarını, Diyagram ve diyagram tarafından görüntülenen etkinlik içeren dosyayı farklı olabilir.|  
   
 ### <a name="concurrent-flows"></a>Eşzamanlı Akışlar  
  Aynı anda yürütmek Eylemler dizisi tanımlayabilirsiniz. Çizim eşzamanlı akışlar daha fazla bilgi için bkz.  
@@ -104,7 +101,4 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)

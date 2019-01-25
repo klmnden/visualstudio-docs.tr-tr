@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: yönetilen kod projesi için kod çözümlemesini yapılandırma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
@@ -19,20 +14,20 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790897"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Çözümlemesini Yapılandırma
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Analizini Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçinde [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ve [!INCLUDE[vsPro](../includes/vspro-md.md)], Kod Analizi listesinden seçtiğiniz *kural kümeleri* yönetilen kod projesi için uygulanacak. Varsayılan kuralı Microsoft en az önerilen kurallar kümesidir. Başka bir kural bir proje veya Çözümdeki tüm projeleri kümesi uygulayabilirsiniz.  
   
 > [!NOTE]
->  ASP.NET Web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: ASP.NET Web uygulaması için Kod Analizi yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+>  ASP.NET Web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET Web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework projesi için bir kural yapılandırmak için  
   
@@ -60,7 +55,4 @@ ms.locfileid: "49239193"
          Daha fazla bilgi için [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-
-
-
+ [İzlenecek yol: Yapılandırma ve bir özel kural kullanarak ayarlayın](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

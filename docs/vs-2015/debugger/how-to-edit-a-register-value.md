@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: yazmaç değerini düzenleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: YAZMAÇ değerini düzenleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c41b54ea075415dac7114413f9cdc15cc6a07a12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798339"
 ---
-# <a name="how-to-edit-a-register-value"></a>Nasıl Yapılır: Yazmaç Değerini Düzenleme
+# <a name="how-to-edit-a-register-value"></a>Nasıl yapılır: YAZMAÇ değerini düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü.  
@@ -53,9 +48,4 @@ Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değils
     >  Kayan nokta değerlerini düzenlemek, kesirli bileşenlerin ondalıktan ikiliye dönüştürülmesi nedeniyle küçük yanlışlıklara neden olabilir. Görünüşte zararsız bir düzenleme bile, kayan nokta kaydı en az önemli bitlerin bazılarının değişiklikleri neden olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl Yapılır: Yazmaçlar Penceresini Kullanma](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Nasıl yapılır: Yazmaçlar Penceresi Hakkında](../debugger/how-to-use-the-registers-window.md)

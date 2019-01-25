@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: iade takım projesi ilkesiyle kod proje kural kümelerini eşitleme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İade takım projesi ilkesiyle kod proje kural kümelerini eşitleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263126"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771708"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Nasıl yapılır: Takım Projesi İade İlkesiyle Kod Proje Kural Kümelerini Eşitleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ Takım projesi için iade ilkesiyle kod projeleri için Kod Analizi ayarları, e
 6.  İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
   
 7.  İçinde **açık** iletişim kutusunda, kural kümesi dosyası belirtin.
-
-
-

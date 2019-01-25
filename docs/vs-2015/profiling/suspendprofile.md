@@ -1,27 +1,22 @@
 ---
 title: SuspendProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - SuspendProfile
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a21358e63ff30a88351607ae4f474a485b7059ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b40b37c8c0ee97b5d7e0cc33773af140bd1010b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790275"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>İşlev bilgisi  
- Başlık: VSPerf.h içinde bildirilen  
+ Üst bilgi: Bildirilmiş VSPerf.h  
   
  İçeri aktarma kitaplığı: VSPerf.lib  
   
@@ -114,6 +109,3 @@ void ExerciseSuspendProfile()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Profil Oluşturucu API Başvurusu (Yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

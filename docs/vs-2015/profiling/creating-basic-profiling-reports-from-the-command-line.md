@@ -1,25 +1,20 @@
 ---
 title: Basic raporları komut satırından profil oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30361f0f4ae147458252400a5232a657574553d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804020"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Komut Satırından Temel Profil Oluşturma Raporları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +50,7 @@ Bu konu, .vsp veya .vsps profil oluşturma veri dosyasından virgülle ayrılmı
 |**Module**|Modüller için profil oluşturma verilerini listeler.|-   [Örnekleme verileri](../profiling/modules-view-sampling-data.md)<br />-   [Ölçümlü izleme verileri](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET bellek örnekleme verileri](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET bellek izleme verileri](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Çakışma verileri](../profiling/modules-view-contention-data.md)|  
 |**İşlem**|İşlemler için profil oluşturma verilerini listeler.|-   [İşlem görünümü](../profiling/process-view.md)<br />-   [Çakışma verileri](../profiling/process-view-contention-data.md)|  
 |**iş parçacığı**|İş parçacıkları için profil oluşturma verilerini listeler.|-   [İşlem görünümü](../profiling/process-view.md)|  
-|**Türü**|Ayırma profil oluşturma verileri türe göre listelenmektedir.|-   [Ayırma görünümü](../profiling/dotnet-memory-allocations-view.md)|  
+|**Tür**|Ayırma profil oluşturma verileri türe göre listelenmektedir.|-   [Ayırma görünümü](../profiling/dotnet-memory-allocations-view.md)|  
 |**Çekişme**|Kaynak çakışmaları.|-   [Kaynak çakışmaları](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Performans kural sorunlarını listeler.|-Checkıd, açıklama ve kural sorununun kaynak kod konumunu listeler.|  
 |**ETW**|Olay izleme için Windows (ETW) olayları, profil oluşturma çalışmasında toplanan.|-   [ETW raporu](../profiling/event-tracing-for-windows-etw-report.md)|
-
-
-

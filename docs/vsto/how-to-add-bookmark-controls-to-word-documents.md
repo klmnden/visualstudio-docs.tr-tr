@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Word belgelerine yer işareti denetimi ekleme'
+title: 'Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c89e922f41104be880d598354440a4c6665a39e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 019319a2f4f2eb7da8646317796e89b2d3322d28
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904818"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874217"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl Yapılır: Word belgelerine yer işareti denetimi ekleme
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme
   Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

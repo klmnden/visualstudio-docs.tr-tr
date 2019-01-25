@@ -1,25 +1,22 @@
 ---
 title: Özel T4 metin şablonu yönerge işlemcileri oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776238"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,14 +63,11 @@ ms.locfileid: "49852752"
   
 - `string GetClassCodeForProcessingRun()` -Yöntemler, özellikler ve şablon kodunu kullanabileceğiniz diğer bildirimleri kodunu döndürür. Bunu yapmanın en kolay yolu, C# veya Visual Basic kodunu içeren bir dize oluşturmaktır. Yönerge işlemciniz herhangi bir CLR dil kullanan bir şablondan çağrılan özellikli hale getirmek için ifadeleri bir CodeDom ağacını oluşturmak ve ardından şablon tarafından kullanılan dilde ağacı seri hale getirme sonucunu döndürür.  
   
-- Daha fazla bilgi için [izlenecek yol: özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Daha fazla bilgi için [izlenecek yol: Özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Özel Yönerge İşlemcisi Dağıtma](../modeling/deploying-a-custom-directive-processor.md)  
  Özel yönerge işlemcisi kaydetmek açıklanmaktadır.  
   
- [İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
+ [İzlenecek yol: Özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  Özel yönerge işlemcisi oluşturma, kayıt ve yönerge işlemcisini sınamak ve HTML çıktı dosyası biçimine açıklar.
-
-
-
