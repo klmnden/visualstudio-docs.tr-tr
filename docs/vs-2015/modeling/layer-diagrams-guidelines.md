@@ -1,12 +1,9 @@
 ---
-title: 'Katman diyagramları: Yönergeler | Microsoft Docs'
-ms.custom: ''
+title: 'Katman diyagramları: Yönergeleri | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,23 +13,23 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803580"
 ---
-# <a name="layer-diagrams-guidelines"></a>Katman Diyagramları: Yönergeler
+# <a name="layer-diagrams-guidelines"></a>Katman diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramları* Visual Studio'da. Kodunuzu katman diyagramıyla doğrulayarak kodunuzun tasarımla tutarlı kalmasını sağlayın. Ayrıca yapı işleminizde katman doğrulama ekleyebilirsiniz. Bkz: [kanal 9 videosu: tasarım ve katman diyagramlarını kullanarak Mimarinizi geçerli](http://go.microsoft.com/fwlink/?LinkID=252073).  
+Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramları* Visual Studio'da. Kodunuzu katman diyagramıyla doğrulayarak kodunuzun tasarımla tutarlı kalmasını sağlayın. Ayrıca yapı işleminizde katman doğrulama ekleyebilirsiniz. Bkz: [kanal 9 Video: Tasarlama ve doğrulama katman diyagramlarını kullanarak Mimarinizi](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-layer-diagram"></a>Bir katman diyagramı nedir?  
- Gibi geleneksel mimarisi diyagramı, katman diyagramına ana bileşenlerini veya tasarım ve onların bağımlılıklarını işlevsel birimi tanımlar. Diyagramdaki her bir düğüm olarak adlandırılan bir *katman*, ad alanları, projeler ve diğer yapıtları oluşan mantıksal bir grubu temsil eder. Tasarımınızı bulunması gereken bağımlılıklar çizebilirsiniz. Geleneksel mimarisi diyagramı, kaynak kodunda gerçek bağımlılıkları belirttiğiniz istenen bağımlılıkları için uygun doğrulayabilirsiniz. Üzerinde doğrulama parçası normal bir derleme yaparak [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], program kodu gelecek değişiklikler sisteminin mimarisine bağlı olarak devam etmesini sağlayabilirsiniz. Bkz: [katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md).  
+ Gibi geleneksel mimarisi diyagramı, katman diyagramına ana bileşenlerini veya tasarım ve onların bağımlılıklarını işlevsel birimi tanımlar. Diyagramdaki her bir düğüm olarak adlandırılan bir *katman*, ad alanları, projeler ve diğer yapıtları oluşan mantıksal bir grubu temsil eder. Tasarımınızı bulunması gereken bağımlılıklar çizebilirsiniz. Geleneksel mimarisi diyagramı, kaynak kodunda gerçek bağımlılıkları belirttiğiniz istenen bağımlılıkları için uygun doğrulayabilirsiniz. Üzerinde doğrulama parçası normal bir derleme yaparak [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], program kodu gelecek değişiklikler sisteminin mimarisine bağlı olarak devam etmesini sağlayabilirsiniz. Bkz: [katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md).  
   
 ##  <a name="Update"></a> Tasarım veya katman diyagramları ile uygulamanızı güncelleştirin  
  Aşağıdaki adımlar, geliştirme süreci içinde katman diyagramları kullanma hakkında genel bakış sağlar. Bu konunun sonraki bölümlerinde, her bir adım hakkında daha ayrıntılı açıklanmaktadır. Yeni bir tasarım geliştiriyorsanız varolan koda başvuran adımları atlayın.  
@@ -99,7 +96,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
 ##  <a name="EditArchitecture"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
  İçin sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için katman diyagramı düzenlemek için aşağıdaki adımları kullanın. Kod yapısını genişletmeden önce iyileştirmek için yeniden düzenleme bazı değişiklikler de göz önünde bulundurabilirsiniz. Bkz: [kod yapısını iyileştirme](#Improving).  
   
-|**Hedef**|**Aşağıdaki adımları gerçekleştirin**|  
+|**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
 |Var olmaması gereken bir bağımlılık Sil|Bağımlılık tıklatın ve sonra basın **Sil**.|  
 |Bağımlılık yönünü değiştirme veya kısıtlama|Ayarlama, **yönü** özelliği.|  
@@ -118,7 +115,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
 ##  <a name="NewAreas"></a> Uygulamanızın yeni alanları tasarlama  
  Yeni projede yeni bir proje veya yeni bir alan geliştirme başlattığınızda, katmanları ve bağımlılıkları kod geliştirmeye başlamadan önce ana bileşenleri belirlemenize yardımcı olması için çizebilirsiniz.  
   
--   **Tanımlanabilen mimari desenleri Göster** Mümkünse, katman diyagramları. Örneğin, bir masaüstü uygulamasını tanımlayan bir katman diyagramı Katmanlar sunusu, etki alanı mantığı ve veri Store gibi içerebilir. Bir uygulama içinde tek bir özellik kapsayan bir katman diyagramı Katmanlar gibi Model, Görünüm ve denetleyici olabilir. Desenler hakkında daha fazla bilgi için bkz. [desenler ve uygulamalar: uygulama mimarisi](http://go.microsoft.com/fwlink/?LinkId=145794).  
+-   **Tanımlanabilen mimari desenleri Göster** Mümkünse, katman diyagramları. Örneğin, bir masaüstü uygulamasını tanımlayan bir katman diyagramı Katmanlar sunusu, etki alanı mantığı ve veri Store gibi içerebilir. Bir uygulama içinde tek bir özellik kapsayan bir katman diyagramı Katmanlar gibi Model, Görünüm ve denetleyici olabilir. Desenler hakkında daha fazla bilgi için bkz. [desenler ve uygulamalar: Uygulama Mimarisi](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
      Sık de benzer modeller oluşturursanız, özel bir araç oluşturabilir. Bkz: [tanımlayan özel bir modelleme araç kutusu öğesi](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
@@ -166,8 +163,5 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
  Kodda gelecekteki yapılan değişiklikler için katman diyagramları uyumlu olmasını sağlamak için katman doğrulaması çözümünüzün standart derleme işlemini içerir. Çözüm diğer takım üyelerinin yapı olduğunda, kodda bağımlılıklar hem de katman diyagramını arasındaki farklılıkları derleme hataları olarak bildirilir. Derleme işleminde katman doğrulama ekleme hakkında daha fazla bilgi için bkz. [katman diyagramları ile kodu doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Katman diyagramları: başvuru](../modeling/layer-diagrams-reference.md)   
+ [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)   
  [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-

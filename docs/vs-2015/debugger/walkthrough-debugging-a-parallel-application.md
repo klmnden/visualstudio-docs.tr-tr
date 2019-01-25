@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: paralel uygulamada hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Paralel uygulamada hata ayıklama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f7c580ed07198f47776ee1edbad23918c03d564
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771321"
 ---
-# <a name="walkthrough-debugging-a-parallel-application"></a>İzlenecek Yol: Paralel Uygulamada Hata Ayıklama
+# <a name="walkthrough-debugging-a-parallel-application"></a>İzlenecek yol: Paralel uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) veya [eşzamanlılık çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  
@@ -88,7 +83,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
     Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Kullanarak Paralel Yığınlar penceresi: iş parçacıkları görünümü  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Paralel Yığınlar penceresini kullanma: İş Parçacıkları Görünümü  
  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**. İlk kesme noktasına isabet tamamlanmasını bekleyin.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Tek bir iş parçacığı çağrı yığınını görüntülemek için  
@@ -317,6 +312,3 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
  [Eşzamanlılık Çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)   
  [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)
-
-
-

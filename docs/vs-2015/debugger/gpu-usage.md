@@ -1,25 +1,20 @@
 ---
 title: GPU kullanımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817509"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771650"
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +94,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
 |--------------------|-----------------|  
 |**İşlem**|İlgilendiğiniz işlemin adı. Bu açılır menüde GPU Tanılama oturumu sırasında kullanılan tüm işlemler dahildir. Bu açılan işlemi ile ilişkili rengi aşağıdaki zaman çizelgeleri iş parçacığının etkinlik renktir.|  
 |**iş parçacığı**|İlgilendiğiniz iş parçacığı kimliği. Çok iş parçacıklı bir uygulamada, bu, ilgilendiğiniz iş akışına ait belirli bir iş parçacığı ayırmanıza yardımcı olabilir. Seçili iş parçacığıyla ilişkilendirilmiş olayları, her zaman çizelgesinde vurgulanır.|  
-|**Görüntüleme**|Yenileme hızı görüntülenir görüntüleme sayısını **Not:** bazı sürücüler tek ve büyük sanal bir görüntü birden çok fiziksel görüntüler sunmak için yapılandırılabilir. Makine bağlı birden çok ekran olsa bile, listelenen, yalnızca bir görüntü görebilirsiniz.|  
+|**Görüntüleme**|Yenileme hızı görüntülenir görüntüleme sayısını **Not:**  Bazı sürücüler, birden çok fiziksel görüntüler tek ve büyük sanal bir görüntü sunmak için yapılandırılabilir. Makine bağlı birden çok ekran olsa bile, listelenen, yalnızca bir görüntü görebilirsiniz.|  
 |**Filtre**|İlgilendiğiniz anahtar sözcükler. Raporun alt kısmında olayları tam veya kısmi bir anahtar sözcükle eşleşen olanlar dahil edilir. Birden çok anahtar sözcüklerini noktalı virgülle (;) ayırarak belirtebilirsiniz.|  
 |**Hiyerarşi sıralama**|Kullanıcı işaretleri--tanımlanan olay hiyerarşilerde--korunur veya göz ardı olduğunu gösteren bir onay kutusu.|  
   
@@ -140,7 +135,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
   
 |Satıcı|GPU açıklaması|Gerekli sürücü sürümü|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4. nesil Intel® Çekirdek işlemcileri ('Haswell')<br /><br /> -Intel® HD grafikleri (GT1)<br />-Intel® HD grafik 4200 (GT2)<br />-Intel® HD grafik 4400 (GT2)<br />-Intel® HD grafik 4600 (GT2)<br />-Intel® HD grafik P4600 (GT2)<br />-Intel® HD grafik P4700 (GT2)<br />-Intel® HD grafik 5000 (GT3)<br />-Intel® Iris™ grafik 5100 (GT3)<br />-Intel® Iris™ Pro grafik 5200 (GT3e)|--(en son sürücüleri kullanan)|  
+|Intel®|4. nesil Intel® Çekirdek işlemcileri ('Haswell')<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|--(en son sürücüleri kullanan)|  
 |AMD®|Çoğu beri AMD Radeon™ HD 7000-Serisi (AMD Radeon™ HD 7350 7670 hariç)<br /><br /> AMD Radeon™ GPU, AMD FirePro™ GPU'ları ve AMD FirePro GPU Hızlandırıcısı özelliklerine sahip grafik çekirdek sonraki (GCN) mimarisi.<br /><br /> AMD® E serisi ve AMD A serisi hızlandırılmış işleme grafik çekirdek sonraki (GCN) mimarisi ('Kaveri', 'Kabini', 'Temash', 'Beema', 'Mullins') içeren birim (APUs)|14.7 RC3 veya üzeri|  
 |NVIDIA®|Çoğu NVIDIA® GeForce 400 serisi itibaren.<br /><br /> NVIDIA® GeForce® GPU'ları, NVIDIA Quadro® GPU'ları ve NVIDIA® Tesla™ GPU Hızlandırıcısı Fermi™, Kepler™ veya Maxwell™ mimarisi özelliklerine sahip.|343.37 veya üzeri|  
   
@@ -155,6 +150,3 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
 -   [GPU kullanımı Aracı'nda Visual Studio 2013 güncelleştirme 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [(Blog) Visual Studio'da DirectX GPU kullanımı](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

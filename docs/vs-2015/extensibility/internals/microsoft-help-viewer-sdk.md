@@ -1,23 +1,19 @@
 ---
 title: Microsoft Yardım Görüntüleyicisi SDK'sı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7014e59b41ff4d8e75fd5f983e6bf07c1e11378d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874050"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764694"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -549,7 +545,7 @@ some F# code
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||(stil adı, styleValue) styleRectify||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||subtitle(id)||
 
@@ -561,21 +557,21 @@ some F# code
 |-|-|-|
 |**Dosya**|**Kullanma**|**Görüntülenen içerik kaynağı**|
 |homepage.htm|Şu anda yüklü içeriği ve içeriklerini hakkında kullanıcıya göstermek uygun başka iletisi görüntüleyen bir sayfa budur.  Bu dosya ek meta veri özniteliği "Microsoft.Help.Id" içeriğe sahip olan yerel içerik TOC üst kısmında bu içerik yerleştirir "-" 1 =.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, etiket \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Bölüm Branding.xml etiketi başlık\<HomePageInstalledBooks >, uygulamasından oluşturulan veriler \<HomePageNoBooksInstalled > hiçbir books yüklü olduğunda.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Bölüm Branding.xml etiketi başlık \<HomePageHelpSettings >, bölümünde metin \<HomePageHelpSettingsText >.|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.XML, etiket \<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, etiket \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.XML, etiket \<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Bölüm Branding.xml etiketi başlık\<HomePageInstalledBooks >, uygulamasından oluşturulan veriler \<HomePageNoBooksInstalled > hiçbir books yüklü olduğunda.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Bölüm Branding.xml etiketi başlık \<HomePageHelpSettings >, bölümünde metin \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Yerel kümede bir konu varsa, ancak herhangi bir nedenle görüntülenemiyor (bozuk içeriği).||
 ||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, etiket \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, etiket \<TopicCorruptedViewOnlineText >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.XML, etiket \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Ne zaman bir konu yerel içeriği çevrimiçi ayarlayın ya da kullanılabilir bulunamadı||
 ||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundTitle >|
 ||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundText >|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.XML, etiket \<TopicNotFoundText >|
 |contentnotinstalled.htm|Ürün için yüklenmiş yerel içerik olmadığında.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledDownloadContentText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, etiket \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.XML, etiket \<ContentNotInstalledDownloadContentText >|
 ||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledText >|
 
  **CSS dosyaları**

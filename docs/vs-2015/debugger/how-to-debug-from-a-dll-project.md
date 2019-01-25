@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: DLL projesinde hata ayıklama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir DLL projesinde hata ayıklama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,20 +19,20 @@ ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782948"
 ---
-# <a name="how-to-debug-from-a-dll-project"></a>Nasıl Yapılır: DLL Projesinde Hata Ayıklama
+# <a name="how-to-debug-from-a-dll-project"></a>Nasıl yapılır: Bir DLL projesinde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DLL projesinde hata ayıklamayı başlatmak için proje özelliklerinde çağıran uygulama belirtmeniz gerekir. C++ özellik sayfaları, düzeni ve içerikleri C# ve Visual Basic özellik sayfaları farklılık gösterir.  
   
- Yönetilen bir DLL'yi yerel kod tarafından çağrılır ve her ikisi de hata ayıklamak istiyorsanız, proje özelliklerinde belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md).  
+ Yönetilen bir DLL'yi yerel kod tarafından çağrılır ve her ikisi de hata ayıklamak istiyorsanız, proje özelliklerinde belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
 >  Visual Studio'nun Express sürümlerinde, bir dış çağıran uygulama belirtemezsiniz. Bunun yerine, çözüme bir yürütülebilir proje ekleyin için başlangıç projesi olarak ayarla ve yöntemler DLL dosyanız içinde yürütülebilir projeden çağırın.  
@@ -79,6 +74,3 @@ DLL projesinde hata ayıklamayı başlatmak için proje özelliklerinde çağır
  [Hata ayıklama yapılandırması proje ayarları C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [C++ Hata Ayıklama Yapılandırması Proje Ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-
-
-

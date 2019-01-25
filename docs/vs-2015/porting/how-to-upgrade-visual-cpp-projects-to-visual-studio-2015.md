@@ -1,28 +1,25 @@
 ---
-title: "Nasıl Yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme | Microsoft Docs"
+title: "Nasıl yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme | Microsoft Docs"
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [C++], upgrading
 ms.assetid: 9a283ebb-f6d8-49c0-a73e-323979ff56a2
 caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 047cb8733e1f1fa32e67b2fc7b6c53edb6174fcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797059"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Nasıl Yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Nasıl yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2017 için kullanılabileceği en son belgeler için bkz [Visual C++ taşıma ve yükseltme Kılavuzu](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).

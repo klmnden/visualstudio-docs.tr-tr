@@ -1,14 +1,9 @@
 ---
 title: Hata ayıklama için SDK Yardımcıları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764587"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Hata Ayıklama için SDK Yardımcıları
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>Ölçüm tanımları  
  Bu tanımları için önceden tanımlanmış ölçüm adları kullanılabilir. Çeşitli kayıt defteri anahtarları ve değer adlarını ve geniş karakter dizesi olarak tanımlanmış olan tüm adlar karşılık gelir: Örneğin, `extern LPCWSTR metrictypeEngine`.  
   
-|Önceden tanımlanmış bir metrik türleri|Açıklama: Temel anahtar için...|  
+|Önceden tanımlanmış bir metrik türleri|Açıklama: Ana anahtarı için...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|Tüm altyapısı ölçümleri hata ayıklayın.|  
 |metrictypePortSupplier|Tüm bağlantı noktası tedarikçi ölçümleri.|  
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Verilerde yapılan değişiklikler üzerinde kesme noktaları ayarı için destek belirtmek için sıfır olarak ayarlayın.|  
 |metricDisassembly|Ayrıştırılmış kodu listesini üretimi için destek belirtmek için sıfır olarak ayarlayın.|  
 |metricDumpWriting|Döküm (bir çıktı cihazına bellek dökümü alma) yazma desteği belirtmek için sıfır olarak ayarlayın.|  
-|metricENC|Düzenle ve devam et desteğini belirtmek için sıfır olarak ayarlayın. **Not:** bir özel hata ayıklama altyapısı hiçbir zaman bu ayarlamanız gerekir ya da her zaman 0 olarak ayarlamanız gerekir.|  
+|metricENC|Düzenle ve devam et desteğini belirtmek için sıfır olarak ayarlayın. **Not:**  Bir özel hata ayıklama altyapısı, hiçbir zaman ayarlamalıdır veya her zaman 0 olarak ayarlamanız gerekir.|  
 |metricExceptions|Özel durumlar için destek belirtmek için sıfır olarak ayarlayın.|  
 |metricFunctionBP|Adlı kesme (belirli bir işlev adı çağrıldığında kesebileceğiniz kesme noktaları) için destek belirtmek için sıfır olarak ayarlayın.|  
 |metricHitCountBP|Kesme noktaları (yalnızca belirli sayıda bir kez isabet olan sonra tetiklenen kesme noktaları) "nokta isabet" ayarı için destek belirtmek için sıfır olarak ayarlayın.|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Bu program sağlayıcı her zaman yerel olarak yüklenmiş olması gerektiğini belirtmek için sıfır olmayan bir ayarlayın.|  
 |metricEngineCanWatchProcess|Bu program sağlayıcı yerine olayları işlemek için hata ayıklama altyapısı izleyecek belirtmek için sıfır olarak ayarlayın.|  
 |metricRemoteDebugging|Bu uzaktan hata ayıklama desteği belirtmek için sıfır olarak ayarlayın.|  
-|metricEncUseNativeBuilder|Düzenle ve devam Yöneticisi hata ayıklama altyapısının encbuild.dll Düzenle ve devam et için oluşturulacak kullanması gerektiğini belirtmek için için sıfır olmayan bir ayarlayın. **Not:** bir özel hata ayıklama altyapısı hiçbir zaman bu ayarlamanız gerekir ya da her zaman 0 olarak ayarlamanız gerekir.|  
+|metricEncUseNativeBuilder|Düzenle ve devam Yöneticisi hata ayıklama altyapısının encbuild.dll Düzenle ve devam et için oluşturulacak kullanması gerektiğini belirtmek için için sıfır olmayan bir ayarlayın. **Not:**  Bir özel hata ayıklama altyapısı, hiçbir zaman ayarlamalıdır veya her zaman 0 olarak ayarlamanız gerekir.|  
 |metricLoadUnderWOW64|Sıfır dışında hata ayıklama altyapısı WOW altında hata ayıklanan işlem içindeki bir 64-bit işlem hata ayıklama sırasında yükleneceğini göstermek için bunu; Aksi takdirde, Visual Studio işlemindeki (Bu WOW64 altında çalışan) hata ayıklama altyapısı yüklenir.|  
 |metricLoadProgramProviderUnderWOW64|Bu program sağlayıcısı WOW altında 64 bitlik bir işlem hata ayıklama sırasında hata ayıklanan işlemin yüklenmesi gerektiğini belirtmek için sıfır olmayan ayarlayın; Aksi takdirde Visual Studio işleminde yüklenir.|  
 |metricStopOnExceptionCrossingManagedBoundary|Bu işlem, yönetilen ve yönetilmeyen kod sınırları arasında işlenmeyen bir özel durum oluşturulursa durması gerektiğini belirtmek için sıfır olarak ayarlayın.|  
@@ -270,7 +265,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[kayıt defteri anahtarı]*|`HKEY_CURRENT_USER` veya `HKEY_LOCAL_MACHINE`.|  
 |*[sürüm kök]*|Visual Studio sürümü (örneğin, `7.0`, `7.1`, veya `8.0`). Ancak, bu kök ayrıca kullanılarak değiştirilebilir **/rootsuffix** geçin **devenv.exe**. VSIP için bu genellikle bir değiştiricidir **Exp**, sürüm kök, örneğin, 8.0Exp olacaktır.|  
-|*[ölçüm kök]*|Bu `AD7Metrics` veya `AD7Metrics(Debug)`dbgmetric.lib hata ayıklama sürümünü kullanılıp kullanılmadığını bağlı olarak. **Not:** dbgmetric.lib kullanılır olup olmadığına, hata ayıklama ve yayın arasındaki farklar varsa bu adlandırma kuralı için bağlı kayıt defterinde yansıtılan sürümleri.|  
+|*[ölçüm kök]*|Bu `AD7Metrics` veya `AD7Metrics(Debug)`dbgmetric.lib hata ayıklama sürümünü kullanılıp kullanılmadığını bağlı olarak. **Not:**  Dbgmetric.lib kullanılır olup olmadığına, hata ayıklama ve yayın arasındaki farklar varsa bu adlandırma kuralı için bağlı kayıt defterinde yansıtılan sürümleri.|  
 |*[ölçüm türü]*|Yazılacak ölçüm türü: `Engine`, `ExpressionEvaluator`, `SymbolProvider`vb. Bunlar tüm dbgmetric.h olduğu gibi tanımlanır `metricTypeXXXX`burada `XXXX` belirli tür adıdır.|  
 |*[ölçü]*|Ölçüm ayarlamak için bir değer atanması için bir giriş adı. Ölçüm gerçek kuruluş Ölçüm türüne bağlıdır.|  
 |*[ölçüm değeri]*|Ölçüm için atanan değer. Değeri (dize, sayı, vb.) olmamalıdır türüne ölçüme göre değişir.|  
@@ -427,10 +422,9 @@ HRESULT EnumMetricSections(
 ## <a name="requirements"></a>Gereksinimler  
  Bu dosyalar bulunur [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] SDK yükleme dizini (varsayılan olarak, *[sürücü]* \Program Visual Studio 2010 SDK\\).  
   
- Üstbilgi: includes\dbgmetric.h  
+ Header: includes\dbgmetric.h  
   
- Kitaplığı: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

@@ -1,25 +1,20 @@
 ---
 title: Unity için Visual Studio araçlarını kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777387"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Unity Proje Gezgini görüntülemek için  
   
-- Visual Studio'da ana menüde seçin **görünümü**, **Unity Proje Gezgini**. Klavye: **Alt + SHIFT + E**  
+- Visual Studio'da ana menüde seçin **görünümü**, **Unity Proje Gezgini**. Klavye: **Alt+Shift+E**  
   
    ![Unity Proje Gezgini penceresini görüntüleyin. ](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
@@ -135,7 +130,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
  **Makine**  
  Unity'nın bu örneğinin çalıştığı cihaz ve bilgisayar adı.  
   
- **Türü**  
+ **Tür**  
  **Düzenleyici** Unity'nın bu örneğinin Unity Düzenleyicisi'nin; bir parçası olarak çalışıyorsa **Player** Unity'nın bu örneğinin bir oynatıcı ise.  
   
  **Bağlantı noktası**  
@@ -174,7 +169,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Unity projenizde kullanılan yönetilen DLL projesinde hata ayıklamak için  
   
-1. Unity için Visual Studio Araçları tarafından oluşturulan Visual Studio çözümünü mevcut DLL projenize ekleyin. Daha az yaygın olarak, Unity projenizde kod bileşenlerini içerecek yeni bir yönetilen DLL proje başlatılıyor; Bu durumda, Visual Studio çözümüne yeni bir yönetilen DLL projesi bunun yerine ekleyebilirsiniz. Bir çözüme yeni veya mevcut bir proje ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir çözüme projeler ekleme](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Unity için Visual Studio Araçları tarafından oluşturulan Visual Studio çözümünü mevcut DLL projenize ekleyin. Daha az yaygın olarak, Unity projenizde kod bileşenlerini içerecek yeni bir yönetilen DLL proje başlatılıyor; Bu durumda, Visual Studio çözümüne yeni bir yönetilen DLL projesi bunun yerine ekleyebilirsiniz. Bir çözüme yeni veya mevcut bir proje ekleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Çözüme projeler ekleme](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
     ![Mevcut DLL projenize ekleyin. ](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
@@ -193,4 +188,3 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
      PDB dosyaları, çünkü bunlar DLL'nin hata ayıklama sembolleri içeren ve kaynak kod hâli DLL kod eşleme hata ayıklama için gereklidir. Unity için Visual Studio Araçları, bir DLL'yi oluşturmak için DLL ve PDB bilgileri kullanır. Unity betik altyapısı tarafından kullanılan hata ayıklama sembol biçimi MDB dosyası.  
   
 4. Kodunuzdaki hataları ayıklamanıza. Artık, hata ayıklama DLL kaynak kodunuzu birlikte Unity projenizin kaynak kodunu ve tüm hata ayıklama özellikleri gibi kesme noktaları için kullanılır ve kod içerisinde ilerlemeye kullanabilirsiniz.
-

@@ -1,14 +1,9 @@
 ---
 title: DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750144"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780003"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +103,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 6.  Visual Studio'ya geçip tıklatın **öğe seçin** DOM Gezgini (veya Ctrl + B tuşuna basın). Böylece seçim modu değişir ve öğeyi tıklatarak seçebilirsiniz ve uygulama da önplana gelir. Tek tıklatmadan sonra mod geri döner. İşte **öğe seçin** düğmesi. ![DOM Gezgini'nde öğe düğmesini seçme](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  HTML öğelerini doğrudan DOM Gezgini'nde de seçebilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  HTML öğelerini doğrudan DOM Gezgini'nde de seçebilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
   
 7.  Simulator'da, listedeki ilk öğeyi başlığının üzerine geldiğinizde **grup başlığı: 1**, giriş sayfasının sol bölmesinde. Başlık aşağıda gösterildiği gibi vurgulanır:  
   
@@ -166,6 +161,3 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  [DOM Gezgini'ni kullanarak Düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)   
  [DOM olayı dinleyicilerini görüntüleme](../debugger/view-dom-event-listeners.md)   
  [Ürün desteği ve erişilebilirlik](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Şekiller ve yollar çizin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775359"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,12 +99,12 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 ##  <a name="Convert"></a> Bir şekli bir yola Dönüştür  
  Bir şekli bir yolu değiştirmek yollarla değiştirmek için şekli bir yola Dönüştür.  
   
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: bir şekli bir yola dönüştürmek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: Bir şekli bir yola dönüştürmek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
 ##  <a name="Combine"></a> Yolları Birleştir  
  Tek bir yol, yol ve Şekil birleştirebilirsiniz.  
   
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-A338-4ef4-96c5-dae51cc1ca8a")  
+ ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
   
 |||||  
 |-|-|-|-|  
@@ -117,26 +112,23 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 |![](../designers/media/b1-2.png "B1_2")|Birleştir|![](../designers/media/b1-5.png "B1_5")|Örtüşmeyi Dışla|  
 |![](../designers/media/b1-3.png "B1_3")|Bölme|![](../designers/media/b1-6.png "B1_6")|Çıkarma|  
   
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: Yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
 ##  <a name="Compound"></a> Bileşik yol Oluştur  
  Bileşik yol oluşturduğunuzda, yolların herhangi bir kesişen bölümleri sonuçtan çıkartılır ve sonuçlanan yol en alt yolun görsel özelliklerini kabul eder.  
   
  Bileşik yol oluşturduktan sonra istediğiniz zaman parçalara ayırabilirsiniz.  
   
- ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8DE5-b10d28f08a84")  
+ ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: Bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
 ##  <a name="Clipping"></a> Bir kırpma yolunu oluşturun  
  Bir kırpma yolu, kırpma yolu dışına düşen maskelenmiş nesnenin kısımlarını saklayarak, diğer nesneye uygulanan bir yol veya şekildir.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **Kısa bir video izleyin:** ![yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: bir kırpma yolunu oluşturun](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
+ **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: Bir kırpma yolunu oluşturun](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-
