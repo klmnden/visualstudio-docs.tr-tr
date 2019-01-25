@@ -844,6 +844,10 @@ items:
           href: ide/reference/options-text-editor-javascript-linting.md
         - name: Metin Düzenleyici - JavaScript, Proje
           href: ide/reference/options-text-editor-javascript-project.md
+        - name: Metin Düzenleyici - U-SQL, Biçimlendirme
+          href: ide/reference/options-text-editor-usql-formatting.md
+        - name: Metin Düzenleyici - U-SQL, IntelliSense
+          href: ide/reference/options-text-editor-usql-intellisense.md
         - name: Metin Düzenleyici - XAML, Biçimlendirme
           href: ide/reference/options-text-editor-xaml-formatting.md
         - name: Metin Düzenleyicisi - XAML, Çeşitli
@@ -1098,10 +1102,8 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Kaynaklar
   items:
-  - name: Visual Studio 2017’deki yenilikler
-    href: ide/whats-new-in-visual-studio.md
-  - name: Visual Studio 2019’daki yenilikler
-    href: ide/whats-new-visual-studio-2019.md
+  - name: Visual Studio’daki yenilikler
+    href: ide/whats-new-visual-studio.md
   - name: Sürüm notları ve sistem gereksinimleri
     items:
     - name: Güncel sürüm notları
@@ -1142,9 +1144,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Bizimle iletişime geçin
     href: ide/talk-to-us.md
-ms.openlocfilehash: c4ffd16d72a865f17e758c515bb344e26ca121dc
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 240f0069093e2db2ed4bf74c88aed8d0244bb8c1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398344"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834246"
