@@ -1,12 +1,9 @@
 ---
 title: Dosya depolamayı ve XML serileştirmeyi özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760801"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -277,7 +274,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
 |Özellik|Açıklama|  
 |Özel bir öğe şeması olup|TRUE ise alan sınıfında özel bir öğe şeması olup gösterir.|  
 |Özel|Bu ayar **True** , bu etki alanı sınıfı için serileştirme ve seri durumundan çıkarma kendi kodunuzu yazma istiyorsanız.<br /><br /> Çözümü derleyin ve ayrıntılı yönergeler bulmak için hataları inceleyin.|  
-|Etki alanı sınıfı|Bu sınıf veri düğümü geçerli olduğu etki alanı sınıfı. Salt okunur.|  
+|Domain Class|Bu sınıf veri düğümü geçerli olduğu etki alanı sınıfı. Salt okunur.|  
 |Öğe adı|Bu sınıfına ait öğelerin XML düğümü adı. Varsayılan değer, etki alanı sınıfı adı küçük harflerden sürümüdür.|  
 |Bilinen ad özniteliği adı|Başvuruyu içerecek bilinen ad öğelerinde kullanılan özniteliğin adı. Boş ise anahtar özelliğinin ve kimliğin adı kullanılır.<br /><br /> Bu örnekte, "name" verilmiştir:  `<personMoniker name="/Mike Nash"/>`|  
 |Bilinen ad öğesi adı|Başvurmak için bu sınıfın öğelerine ait bilinen adlar için kullanılan xml öğesinin adı.<br /><br /> Varsayılan değer "Moniker" ile ve sonra sınıf adı küçük bir sürümüdür. Örneğin: `personMoniker`|  
@@ -292,7 +289,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
 |||  
 |-|-|  
 |Özellik|Açıklama|  
-|Etki alanı özelliği|Xml serileştirme yapılandırması verilerinin geçerli olduğu özellik. Salt okunur.|  
+|Domain Property|Xml serileştirme yapılandırması verilerinin geçerli olduğu özellik. Salt okunur.|  
 |Bilinen ad anahtarı|TRUE ise özellik bu etki alanı sınıf örneklerini başvuru bilinen adlar oluşturmaya yönelik anahtar olarak kullanılır.|  
 |Bilinen ad niteleyicisi olduğundan|TRUE ise özellik bilinen Adlardaki niteleyiciyi niteleyici oluşturmak için kullanılır. False ise ve Serializeıd bu etki alanı sınıfı için doğru değilse, bilinen adlar katıştırma ağacında üst öğe bilinen adı tarafından yetkili olan.|  
 |Temsili|Attribute ise özellik bir xml özniteliği olarak serileştirilir Öğesi, eğer ise bir öğesi olarak; seri Ignore ise serileştirilmiş.|  
@@ -313,6 +310,3 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gezinme ve Program kodundaki modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

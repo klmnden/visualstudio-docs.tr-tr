@@ -1,14 +1,9 @@
 ---
 title: Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761633"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220241"
 **Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçlar / Seçenekler**seçip **ortam / yazı tipleri ve renkler**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Renk düzenini değişiklikler, yapmanızın oturumu sırasında etkili olmaz. Renk değişiklikleri başka bir Visual Studio örneği açma ve yaptığınız değişiklikleri uygulamak için altında beklediğiniz koşullar üretme değerlendirebilirsiniz.  
   
@@ -241,7 +236,4 @@ ms.locfileid: "50220241"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   
  [Seçenekler iletişim kutusu](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Nasıl Yapılır: Yazı Tiplerini ve Renkleri Değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-
+ [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -1,26 +1,21 @@
 ---
 title: 'İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c110ace4eba116c578d9d675eeafe4f678ac9d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792239"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek
+# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini ve korunduğunu göstermek üzere basit bir Windows Presentation Foundation (WPF) oluşturacaksınız. İzlenecek yol çeşitli zamanlama sorunları ve yeniden düzenlemeyi denetleme tarafından kırılan testleri düzeltmeye ilişkin çözümler sağlar.  
@@ -34,7 +29,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
 1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-     **Yeni proje** iletişim kutusu görüntülenir.  
+     **Yeni Proje** iletişim kutusu görünür.  
   
 2.  İçinde **yüklü** bölmesini genişletin **Visual C#** ve ardından **Windows Masaüstü**.  
   
@@ -46,7 +41,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
 6.  Projeyi kaydetmek için bir klasör seçin. İçinde **konumu** metin kutusuna, klasörün adını yazın.  
   
-7.  Seçin **Tamam**.  
+7.  **Tamam**’ı seçin.  
   
      Visual Studio için WPF Tasarımcısı açılır ve projenin MainWindow öğesini görüntüler.  
   
@@ -138,7 +133,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
 5.  Orta bölmede seçin **kodlanmış UI Test projesi** şablonu.  
   
-6.  Seçin **Tamam**.  
+6.  **Tamam**’ı seçin.  
   
      Çözüm Gezgini içinde yeni kodlanmış UI test projesi adlı **Codeduıtestproject1** çözümünüze eklenir.  
   
@@ -393,9 +388,6 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [WPF Tasarımcısı ile çalışmaya başlama](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [WPF Tasarımcısı ile çalışmaya başlama](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
-
-
-

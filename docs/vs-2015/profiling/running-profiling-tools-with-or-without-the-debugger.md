@@ -1,25 +1,20 @@
 ---
 title: Profil oluşturma araçları ile veya hata ayıklayıcı olmadan çalışan | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783396"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>İle veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,19 +127,16 @@ Sunan Visual Studio artık, bir performans, tercih ettiğiniz araçları, bazıl
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blog gönderileri ve tanılama geliştirme ekibinin MSDN makaleleri  
  [MSDN Magazine: Visual Studio 2015'te hata ayıklama sırasında performansını çözümleme](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN Magazine: IntelliTrace sorunlarını daha hızlı bir şekilde tanılamak için kullanın.](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN Magazine: Sorunları daha hızlı bir şekilde tanılamak için IntelliTrace'i kullanın](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Blog gönderisi: olay işleyicisi sızıntılarını ile bellek kullanımı aracı Visual Studio 2015'te tanılama](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Blog postası: Visual Studio 2015'te bellek kullanımı aracı ile olay işleyicisi sızıntılarını tanılama](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [Video: Geçmiş Microsoft Visual Studio'da IntelliTrace ile hata ayıklama Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Video: Microsoft Visual Studio içinde IntelliTrace geçmiş hata ayıklama Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Video: Visual Studio 2015'i kullanarak performans sorunlarını hata ayıklama](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Video: Visual Studio 2015'i kullanarak performans sorunlarını ayıklama](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Performans bilgilerini bir bakışta Visual Studio ile hata ayıklama sırasında](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Performans bilgileri bir Visual Studio ile hata ayıklarken bakışta](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Visual Studio 2015'te tanılama araçları hata ayıklayıcı penceresi](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Visual Studio Enterprise 2015'te IntelliTrace](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: tercih edilen terimleri kullanın | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726: Tercih edilen terimleri kullanın | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf1050716bb38f8b43aa8be7d88c474960544b2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770540"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Tercih edilen terimleri kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1726: tercih edilen terimleri kullanın](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) docs.microsoft.com'da.  
+Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1726: Tercih edilen terimleri kullanın](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) docs.microsoft.com'da.  
   
 |||  
 |-|-|  
@@ -52,8 +47,8 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1726: tercih edilen 
 |ComPlus|EnterpriseServices|  
 |Sonucun|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|Bilgilerine|  
-|Yok|Bağlama|  
+|Doesnt|DoesNot|  
+|Yok|DoNot|  
 |Bayrağı veya bayrakları|Hiçbir değişiklik terimi yoktur. Kullanmayın.|  
 |yüklediniz|HadNot|  
 |Henüz|HasNot|  
@@ -67,7 +62,7 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1726: tercih edilen 
 |Oturumu kapatma|Oturum kapatma|  
 |Wasnt|WasNot|  
 |derlemedeki|WereNot|  
-|Yapmıyor|Olmadı|  
+|Yapmıyor|WillNot|  
 |Wouldnt|Görmeyecektir|  
 |Yazılabilir|Yazılabilir|  
   
@@ -79,4 +74,3 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1726: tercih edilen 
   
 ## <a name="related-rules"></a>İlgili kuralları  
  [Adlandırma Uyarıları](../code-quality/naming-warnings.md)
-

@@ -1,14 +1,9 @@
 ---
 title: HTML, CSS ve JavaScript örnek kod hatalarını ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,22 +13,22 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752082"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>HTML, CSS ve JavaScript örnek kod hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Örnek dosyası için bu konudaki koddur [hızlı başlangıç: hata ayıklama HTML ve CSS](../debugger/quickstart-debug-html-and-css.md). Bu hızlı başlangıçta tasarım gereği mevcut hataları kodun bu sürümünde düzeltilen.  
+ Örnek dosyası için bu konudaki koddur [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md). Bu hızlı başlangıçta tasarım gereği mevcut hataları kodun bu sürümünde düzeltilen.  
   
-## <a name="sample-code"></a>Örnek kod  
+## <a name="sample-code"></a>Örnek Kod  
  Aşağıdaki HTML kodu kullanılıyor \<gövdesi > Hızlı Başlangıç etiketi.  
   
 ```html  
@@ -110,7 +105,4 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)

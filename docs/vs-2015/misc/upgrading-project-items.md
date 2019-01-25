@@ -1,27 +1,22 @@
 ---
 title: Proje öğeleri yükseltme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading project items
 - projects [Visual Studio SDK], upgrading items
 - project items [Visual Studio], upgrading
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
-manager: douge
-ms.openlocfilehash: a9bf5307e2eabc2ba15c8e2dc8e1b1e0fadb11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 04cfbdc9da180dc35278e723da8ce203bdf26ac6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802651"
 ---
 # <a name="upgrading-project-items"></a>Proje öğeleri yükseltme
 Ekler veya öğeleri uygulamaz proje sistemleri içinde yönetmek, proje yükseltme işlemine katılmasını gerekebilir. Crystal Reports, proje sistemi için eklenebilir bir öğenin bir örnektir.  
@@ -43,5 +38,5 @@ Ekler veya öğeleri uygulamaz proje sistemleri içinde yönetmek, proje yüksel
 2.  Zaman, proje öğesi proje yükseltme bir bildirim alır. **Visual Studio Dönüştürme Sihirbazı** gösterilmeye devam eder. Bu nedenle, yöntemlerini kullanmanız gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> arabirimi yükseltme iletileri Sihirbazı kullanıcı Arabirimi sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Dönüştürme Sihirbazı](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio Dönüştürme Sihirbazı](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Özel projelerini yükseltme](../misc/upgrading-custom-projects.md)

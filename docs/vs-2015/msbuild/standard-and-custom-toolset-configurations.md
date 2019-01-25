@@ -1,14 +1,9 @@
 ---
 title: Standart ve özel araç takımı yapılandırmaları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
@@ -16,13 +11,13 @@ ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a1d57903ec2a8c3afb439f27433898467028eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801680"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standart ve Özel Araç Takımı Yapılandırmaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluştur
 |     2,0      |           *Windows yükleme yolu*\Microsoft.Net\Framework\v2.0.50727\            |
 |     3.5      |              *Windows yükleme yolu*\Microsoft.NET\Framework\v3.5\               |
 |     4.0      |           *Windows yükleme yolu*\Microsoft.NET\Framework\v4.0.30319\            |
-|     12.0     |                          *% ProgramFiles %* \MSBuild\12.0\bin                           |
+|     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
  `ToolsVersion` Değeri belirleyen araç takımı tarafından kullanılan bir projeyi Visual Studio oluşturur. İçinde [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] varsayılan değer (olsun, proje dosyasında belirtilen hangi sürümü) "12.0" dır ancak kullanarak bu özniteliği geçersiz kılabilirsiniz **/toolsversion** geçiş komut isteminde. Bu öznitelik ve belirtmek üzere diğer yöntemler hakkında bilgi için `ToolsVersion`, bkz: [ToolsVersion ayarlarını geçersiz kılma](../msbuild/overriding-toolsversion-settings.md).  
 
@@ -110,6 +105,3 @@ Bir MSBuild araç takımı, görevleri ve hedefleri uygulaması projesi oluştur
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-
-
-

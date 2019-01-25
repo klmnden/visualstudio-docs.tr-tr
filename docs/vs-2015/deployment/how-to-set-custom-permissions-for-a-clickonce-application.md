@@ -1,14 +1,9 @@
 ---
 title: 'Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 27302c3b2b925e66ca4b30f858fc8a54362451a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786352"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Özel İzinleri Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,12 +49,9 @@ Dağıtabileceğiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 
 7.  Önce `</applicationRequestMinimum>` öğesi, uygulamanızın gerektirdiği izinler için XML kodunu ekleyin.  
   
     > [!NOTE]
-    >  Kullanabileceğiniz `ToXml` yöntemi bir izin kümesi XML kodunu uygulama bildirimini oluşturmak için. Örneğin, için XML oluşturmak için <xref:System.Security.Permissions.EnvironmentPermission> izin kümesi, çağrı <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> yöntemi. XML yapısı hakkında daha fazla bilgi için bkz [NIB: nasıl yapılır: bir izin kümesi, bir XML dosyası kullanarak içeri](http://msdn.microsoft.com/en-us/dea16b54-c108-408a-ac36-cdc05f746236).  
+    >  Kullanabileceğiniz `ToXml` yöntemi bir izin kümesi XML kodunu uygulama bildirimini oluşturmak için. Örneğin, için XML oluşturmak için <xref:System.Security.Permissions.EnvironmentPermission> izin kümesi, çağrı <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> yöntemi. XML yapısı hakkında daha fazla bilgi için bkz [NIB: Nasıl yapılır: Bir izin kümesinin bir XML dosyası kullanarak içeri aktarma](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   
  [ClickOnce uygulamaları için kod erişimi güvenliği](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce Uygulamalarının Güvenliğini Sağlama](../deployment/securing-clickonce-applications.md)
-
-
-

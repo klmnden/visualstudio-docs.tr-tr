@@ -1,32 +1,27 @@
 ---
-title: '4. adım: TableLayoutPanel denetimi ile formunuzu | Microsoft Docs'
-ms.custom: ''
+title: '4. Adım: TableLayoutPanel denetimi ile formunuzu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763277"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4. Adım: TableLayoutPanel Denetimi ile Formunuzu Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu adımda eklediğiniz bir `TableLayoutPanel` form denetimi. TableLayoutPanel, özel olarak daha sonra ekleyeceksiniz formda denetimleri düzgün şekilde hizalamaya yardımcı olur.  
   
- ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 2 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205211) veya [öğretici 1: Resim Görüntüleyici C# ' - oluşturma Videoyu 2](http://go.microsoft.com/fwlink/?LinkId=205200). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
+ ![video bağlantısı](../data-tools/media/playvideo.gif "PlayVideo")bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 2 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205211) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Formunuzu bir TableLayoutPanel denetimiyle düzenlemek için  
   
@@ -67,7 +62,7 @@ Doldur seçili Özellikler penceresi
 7.  TableLayoutPanel ayarladıktan sonra **Dock** özelliğini **dolgu**, panel formun tamamını kaplar. Formu yeniden boyutlandırırsanız, TableLayoutPanel takılı kalır ve kendisini sığacak şekilde yeniden boyutlandırır.  
   
     > [!NOTE]
-    >  TableLayoutPanel, Microsoft Office Word'ün bir tablo gibi çalışır: satırları ve sütunları vardır ve tek bir hücre birçok satırı ve sütunu kapsayabilir. Her hücre bir denetimi kontrol eder (düğme, onay kutusu veya etiket) barındırabilir. TableLayoutPanel denetiminiz olur bir `PictureBox` denetimi üst satırı, kapsayan bir `CheckBox` denetimi, sol alttaki hücreye ve dört `Button` kendi sağ alt hücresinde denetimleri.  
+    >  TableLayoutPanel, Microsoft Office Word'ün bir tablo gibi çalışır: Satırları ve sütunları vardır ve tek bir hücre birçok satırı ve sütunu kapsayabilir. Her hücre bir denetimi kontrol eder (düğme, onay kutusu veya etiket) barındırabilir. TableLayoutPanel denetiminiz olur bir `PictureBox` denetimi üst satırı, kapsayan bir `CheckBox` denetimi, sol alttaki hücreye ve dört `Button` kendi sağ alt hücresinde denetimleri.  
   
 8.  Şu anda TableLayoutPanel, iki eşit boyutta satıra ve iki eşit boyutta sütuna sahiptir. Size en üst satır ve sağ sütun için bunları yeniden boyutlandırın gerekiyor. Windows Form Tasarımcısı'nda Tablelayoutpanel'i seçin. Sağ üst köşedeki gibi görünen bir küçük siyah üçgen düğme yoktur.  
   
@@ -95,9 +90,6 @@ Yeniden boyutlandırılan TableLayoutPanel ile Form1
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [5. adım: bilgisayarınızı formu için denetimler Ekle](../ide/step-5-add-controls-to-your-form.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [3. adım: bilgisayarınızı Form özelliklerini ayarla](../ide/step-3-set-your-form-properties.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).

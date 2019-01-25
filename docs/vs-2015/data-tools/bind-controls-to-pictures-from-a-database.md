@@ -1,12 +1,9 @@
 ---
 title: Bir veritabanından resimlere denetim bağlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e50a3126407c9306e2a1f00a411e08f69c69602
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773815"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Bir veritabanından resimlere denetim bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

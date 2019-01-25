@@ -17,14 +17,14 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9ab08479485769121de276b5889603b984e39ef8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54399993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786977"
 ---
-# <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017'de JavaScript
+# <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017’de JavaScript
 
 JavaScript, Visual Studio'da birinci sınıf bir dildir. Visual Studio IDE'de JavaScript kodu yazarken standart düzenleme yardımlarının (kod parçacıkları, IntelliSense, vb.) çoğunu veya tümünü kullanabilirsiniz. Birçok uygulama türleri ve hizmetler için JavaScript kodu yazabilirsiniz.
 
@@ -206,7 +206,8 @@ Aşağıdaki kullanabileceğinizi `tsconfig.json` dil emin olmak için hizmet ya
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>JavaScript dil hizmeti sorun giderme şu projeler için devre dışı bırakıldı
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>JavaScript dil hizmeti sorun giderme şu projeler için devre dışı bırakıldı
 İçeriği çok büyük miktarda olan bir JavaScript projesini açtığınızda "JavaScript language service şu projeler için devre dışı bırakıldı" yazan bir ileti alabilirsiniz. Çok büyük miktarda JavaScript kaynak sahip olmak için en yaygın nedeni, 20 MB proje limiti aşan kaynak koduyla birlikte kitaplıkları dahil olmak üzere nedeniyle olmasıdır.
 
 Projenizi en iyi duruma getirmek için basit bir yol eklemektir bir `tsconfig.json` hangi dosyaları yoksaymak güvenli olduğunu bildiğiniz dil hizmeti sağlamak için proje kökünüze dosyasında. Kitaplıkları depolandığı en yaygın dizinleri hariç tutmak için aşağıdaki örneği kullanın:
@@ -231,7 +232,7 @@ Projenizi en iyi duruma getirmek için basit bir yol eklemektir bir `tsconfig.js
 }
 ```
 
-Gördüğünüz gibi dizin ekleyin. Bazı diğer örnekleri, "Satıcı" veya "wwwroot/lib" dizinleri içerir. 
+Gördüğünüz gibi dizin ekleyin. Bazı diğer örnekleri, "Satıcı" veya "wwwroot/lib" dizinleri içerir.
 
 > [!NOTE]
 > Derleyici özelliği `disableSizeLimit` 20 MB onay sınırını devre dışı bırakmak için de kullanılabilir. Dil hizmeti sınırını devre dışı bırakma çökebilir çünkü bu özelliği kullanırken özel önlemleri alın.

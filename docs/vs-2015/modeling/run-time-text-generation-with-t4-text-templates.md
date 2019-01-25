@@ -1,12 +1,9 @@
 ---
 title: T4 metin şablonları ile çalışma süresi metni oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9fabefec48ee44e58754f360364491df1a14961d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777426"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Çalışma zamanı metin şablonları arasında devralmayı  
  Çalışma zamanı şablonları, soyut bir temel sınıf şablonu yazarak arasında içerik paylaşabilirsiniz. Kullanım `inherits` parametresinin `<@#template#>` başka bir çalışma zamanı Şablon sınıfı başvurmak için yönergesi.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Devralma deseni: temel yöntemlerini parçaları  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Devralma deseni: Parçalanma taban yöntemi  
  Aşağıdaki örnekte kullanılan deseni, aşağıdaki noktalara dikkat edin:  
   
 - Temel sınıf `SharedFragments` sınıf özelliği bloklarını içinde yöntemlerini `<#+ ... #>`.  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>Devralma deseni: Temel gövdesinde metin  
+#### <a name="inheritance-pattern-text-in-base-body"></a>Devralma deseni: Temel gövde metni  
  Şablon devralma kullanarak bu alternatif yaklaşım içinde metnin toplu temel şablonunda tanımlanır. Türetilmiş şablonlara veri sağlar ve metin temel içeriğinize uyan parça.  
   
  **AbstractBaseTemplate1.tt:**  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>İlgili Konular  
- Tasarım zamanı şablonları: kod üretmek için bir şablon kullanmak istiyorsanız, uygulamanızın bir parçası haline gelir, bkz: [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+ Tasarım zamanı şablonları: Kodu oluşturmak için bir şablon kullanmak istiyorsanız, uygulamanızın bir parçası haline gelir, bkz: [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
  Çalışma zamanı şablonları, şablonları ve bunların içeriğini derleme zamanında burada belirlenir, herhangi bir uygulamada kullanılabilir. Ancak yazmak istiyorsanız bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metin oluşturur, çalışma zamanında değiştirmek şablonlardan uzantısı [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md)   
  [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)   
- [Anlama T4: Oleg Sych tarafından önceden işlenmiş metin şablonlarını](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [T4 anlama: Önceden işlenmiş metin şablonlarını Oleg Sych tarafından](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

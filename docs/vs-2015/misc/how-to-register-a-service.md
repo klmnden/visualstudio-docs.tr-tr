@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: bir hizmet kaydı | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir hizmet kaydı | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: a1f8026a648b2a0809af17664d4399f815c329be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 14124e84ad7f49326bb9e5346868c177e9d32087
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761620"
 ---
-# <a name="how-to-register-a-service"></a>Nasıl yapılır: bir hizmeti kaydedin
+# <a name="how-to-register-a-service"></a>Nasıl yapılır: Bir hizmeti kaydedin
 Yönetilen paket çerçevesini (MPF), yönetilen hizmetler kaydını denetlemek için öznitelikleri sağlar. RegPkg yardımcı programı bir hizmetiyle kaydetmek için bu öznitelikler kullanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="example"></a>Örnek  
@@ -46,5 +41,5 @@ Yönetilen paket çerçevesini (MPF), yönetilen hizmetler kaydını denetlemek 
 >  Hizmet ve arabirimi için aynı türe veya GUID kullanabilirsiniz, ancak bir hizmet farklı arabirimleri kullanıma sunabileceğinden iki ayrı öneririz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackage'ları kaydetme](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [VSPackage'ları kaydetme](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [Hizmet Temel Bileşenleri](../extensibility/internals/service-essentials.md)

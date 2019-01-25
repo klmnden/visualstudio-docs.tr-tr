@@ -1,21 +1,17 @@
 ---
 title: DPI Issues2 adresleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759790"
 ---
 # <a name="addressing-dpi-issues"></a>DPI Sorunlarını Çözme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Her bir görüntü öğesi görüntülemek için bu çift ölçeklendirme, XAML biçimlendirmesi kullanılacak kullanıcı arabirimini etkinleştirmek için değiştirilmesi gerekir. Aşağıdaki örnekler, WPF içinde çift ölçeklendirme Shell.12/14 ve DpiHelper kitaplığı kullanarak Visual Studio'da kullanımını göstermektedir.  
   
- 1. adım: görüntü % 200, %300 Prescale vb. NearestNeighbor kullanma.  
+ 1. Adım: % 200, %300 vb. NearestNeighbor kullanarak görüntüyü prescale.  
   
  XAML işaretleme uzantısı ile veya bir bağlama uygulanan dönüştürücü kullanarak görüntüyü prescale. Örneğin:  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 2. adım: son boyutu için geçerli DPI doğru olduğundan emin olun.  
+ 2. Adım: Son boyutu için geçerli DPI doğru olduğundan emin olun.  
   
  WPF kullanıcı Arabirimi için üzerinde UIElement BitmapScalingMode özelliği kullanarak geçerli DPI ölçeklendirme olduğundan, iki veya üç kez büyük kaynağına nasıl görüneceğini prescaled bir görüntü kullanarak bir görüntü denetimi gerekir. Bu etkiyi sayaç birkaç yolu şunlardır:  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

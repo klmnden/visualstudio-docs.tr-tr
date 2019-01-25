@@ -1,27 +1,22 @@
 ---
-title: 'İzlenecek yol: bir uygulama oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Uygulama oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220215"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799161"
 ---
-# <a name="walkthrough-building-an-application"></a>İzlenecek yol: Uygulama Oluşturma
+# <a name="walkthrough-building-an-application"></a>İzlenecek yol: Uygulama oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yapılandırabileceğiniz birçok seçeneği daha tanıdık hale gelirler. Özel bir yapı yapılandırması oluşturacak, belirli uyarı iletilerini gizleyecek ve örnek uygulama için diğer görevlere ek yapı çıktı bilgisini artırın.  
@@ -80,7 +75,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
 4.  Seçin **Tamam** düğmesi.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Özel bir yapı yapılandırması oluşturma  
- Bir çözüm oluşturduğunuzda, hata ayıklama ve yayın derleme yapılandırmaları ve varsayılan platform hedefleri, çözüm için otomatik olarak tanımlanır. Ardından, bu yapılandırmaları özelleştirebilir veya kendinizinkini oluşturun. Derleme yapılandırmaları derleme türünü belirtir. Derleme platformları, bir uygulamanın bu yapılandırma için hedeflediği işletim sistemini belirtin. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md), [derleme platformlarını anlama](../ide/understanding-build-platforms.md), ve [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Bir çözüm oluşturduğunuzda, hata ayıklama ve yayın derleme yapılandırmaları ve varsayılan platform hedefleri, çözüm için otomatik olarak tanımlanır. Ardından, bu yapılandırmaları özelleştirebilir veya kendinizinkini oluşturun. Derleme yapılandırmaları derleme türünü belirtir. Derleme platformları, bir uygulamanın bu yapılandırma için hedeflediği işletim sistemini belirtin. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md), [derleme platformlarını anlama](../ide/understanding-build-platforms.md), ve [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  Değiştirme veya yapılandırma ve platform Ayarları'nı kullanarak oluşturma **Configuration Manager** iletişim kutusu. Bu yordamda, test etmek için bir yapı yapılandırması oluşturacaksınız.  
   
@@ -125,7 +120,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
   
   ![Çıkış penceresi Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  Şekil 2: Visual C# uyarıları  
+  Şekil 2: Görsel C# uyarıları  
   
   ![Çıkış penceresi Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -172,7 +167,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
   
    ![Çıktı penceresinde, Visual Basic derleme uyarılarını](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
-   Daha fazla bilgi için [nasıl yapılır: Derleyici uyarılarını Gizle](../ide/how-to-suppress-compiler-warnings.md).  
+   Daha fazla bilgi için [nasıl yapılır: Derleyici uyarılarını gizleme](../ide/how-to-suppress-compiler-warnings.md).  
   
 ##  <a name="BKMK_outputdetails"></a> Çıkış penceresinde ek yapı ayrıntılarını görüntüle  
  Yapı işlemi hakkında ne kadar bilgi gözükeceğini değiştirebilirsiniz **çıkış** penceresi. Derleme ayrıntısı genellikle Minimal olarak ayarlanır, yani **çıkış** penceresi yalnızca yüksek öncelikli uyarıları veya hataları yanı sıra yapı işleminin bir özetini görüntüler. Kullanarak yapı hakkında daha fazla bilgi görüntüleyebilirsiniz [Seçenekler iletişim kutusu, projeler ve çözümler, derleme ve çalıştırma](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md).  
@@ -203,12 +198,12 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
    > [!TIP]
    >  İçeriğini arayabilirsiniz **çıkış** görüntülerseniz penceresi **Bul** Ctrl + F tuşlarını seçerek iletişim kutusu.  
   
-   Daha fazla bilgi için bkz. [nasıl yapılır: görünümü, kaydetme ve yapılandırma derleme günlük dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).  
+   Daha fazla bilgi için [nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ##  <a name="BKMK_releasebuild"></a> Yayın derlemesi oluşturma  
  Sevkiyat için optimize edilmiş örnek uygulamanın bir sürümünü oluşturabilirsiniz. Sürüm yapısı için yapı başlatılmadan önce çalıştırılabilir bir ağ paylaşımına kopyalandığını belirteceksiniz.  
   
- Daha fazla bilgi için [nasıl yapılır: Derleme çıktı dizinini değiştirme](../ide/how-to-change-the-build-output-directory.md) ve [oluşturma ve temizleme projeler ve çözümler Visual Studio'da](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
+ Daha fazla bilgi için [nasıl yapılır: Derleme çıktı dizinini değiştirme](../ide/how-to-change-the-build-output-directory.md) ve [projeleri ve Visual Studio çözümleri oluşturma ve Temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Visual Basic için bir yayın yapısı belirtmek için  
   
@@ -229,7 +224,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
     > [!IMPORTANT]
     >  Belirttiğiniz ağ paylaşımı güvenilir olmayabilir sizi uyaran bir ileti kutusu görünebilir. Belirttiğiniz konuma güveniyorsanız seçin **Tamam** ileti kutusunda düğmesi.  
   
-6.  Uygulamayı oluşturun.  
+6.  Uygulamayı derleyin.  
   
      ![Derleme çözümü komutu yapı menüsünde](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
@@ -252,7 +247,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
    > [!IMPORTANT]
    >  Belirttiğiniz ağ paylaşımı güvenilir olmayabilir sizi uyaran bir ileti kutusu görünebilir. Belirttiğiniz konuma güveniyorsanız seçin **Tamam** ileti kutusunda düğmesi.  
   
-6. Uygulamayı oluşturun.  
+6. Uygulamayı derleyin.  
   
     ![Derleme çözümü komutu yapı menüsünde](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
@@ -261,9 +256,6 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
    Tebrikler: Bu kılavuzda başarıyla tamamladınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: bir proje derleme (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [ASP.NET Web uygulaması projesi ön derleme genel bakış](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
- [İzlenecek Yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)
-
-
-
+ [İzlenecek yol: Proje derleme (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
+ [ASP.NET Web uygulaması projesi ön derleme genel bakış](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
+ [İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md)

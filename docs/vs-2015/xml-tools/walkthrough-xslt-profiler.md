@@ -1,27 +1,22 @@
 ---
 title: 'İzlenecek yol: XSLT Profiler | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757212"
 ---
-# <a name="walkthrough-xslt-profiler"></a>İzlenecek Yol: XSLT Profil Oluşturucusu
+# <a name="walkthrough-xslt-profiler"></a>İzlenecek yol: XSLT Profil Oluşturucusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -82,11 +77,11 @@ XSLT Profiler ölçülmesine yardımcı olmak, değerlendirme ve performans ile 
   
 2.  **Çağıran/çağrılan** görünümü, aşağıdaki üç ayrı bölümü vardır:  
   
-    -   **Çağıran işlevler**: belirli bir işlevi çağrılan tüm işlevleri görünümün üst kısmında listelenir.  
+    -   **Çağıran işlevler**: Belirli bir işlevi çağrılan tüm işlevleri görünümün üst kısmında listelenir.  
   
-    -   **Geçerli işlev**: çağrıldı olan belirli işlev görünümü orta bölümünde listelenir.  
+    -   **Geçerli işlev**: Belirli işlev çağrıldı görünümün orta bölümünde listelenir.  
   
-    -   **Tarafından çağrılan işlevler** : belirli bir işlev tarafından çağrılan tüm işlevleri görünümün alt kısmında listelenir.  
+    -   **Tarafından çağrılan işlevler** : Belirli işlev tarafından çağrılan tüm işlevleri görünümün alt kısmında listelenir.  
   
 3.  Adlı bir işlev ise `SyncToNavigator` çağrılan tüm işlevleri görünümü ikinci kısmında görünür `SyncToNavigator` işlevi Görünüm ve tarafından çağrılan tüm işlevler üst kısmında görünür `SyncToNavigator` görünümün alt kısmında görüntülenir.  
   
@@ -115,7 +110,4 @@ XSLT Profiler ölçülmesine yardımcı olmak, değerlendirme ve performans ile 
 4.  İşlem görünümü içeren bir tablo görüntüler **işlem kimliği**, **işlem adı**, **başlaması zamanı**ve **bitiş zamanı**. Veri sütunu adları tıklayarak sıralanabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek Yol: XSLT Hiyerarşisi Kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-
+ [İzlenecek yol: XSLT hiyerarşisi kullanma](../xml-tools/walkthrough-using-xslt-hierarchy.md)

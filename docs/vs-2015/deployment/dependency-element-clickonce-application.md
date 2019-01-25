@@ -1,14 +1,9 @@
 ---
 title: '&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765180"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +104,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 |`supportUrl`|İsteğe bağlı. Bağımlı bir platform için destek URL'sini belirtir. Bu URL, gerekli platformda bulunursa kullanıcıya gösterilir.|  
 |`description`|İsteğe bağlı. Açıklar, insan tarafından okunabilir formda tarafından tanımlanan işletim sistemini `dependentOS` öğesi.|  
   
-### <a name="osversioninfo"></a>OSVERSIONINFO  
+### <a name="osversioninfo"></a>osVersionInfo  
  Gerekli. Bu öğenin alt öğesi olan `dependentOS` öğesi ve içeren `os` öğesi. Bu öğenin öznitelikleri yok.  
   
 ### <a name="os"></a>işletim sistemi  
@@ -134,7 +129,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 |---------------|-----------------|  
 |`dependencyType`|Gerekli. Bağımlılık türünü belirtir. Geçerli değerler `preprequisite` ve `install`. Bir `install` derlemenin bir parçası olarak yüklü [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. A `prerequisite` derleme genel derleme önbelleğinde (GAC) önce mevcut olmalıdır [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama yükleyebilirsiniz.|  
 |`allowDelayedBinding`|Gerekli. Derleme programlı olarak çalışma zamanında yüklenebilir olup olmadığını belirtir.|  
-|`group`|İsteğe bağlı. Varsa `dependencyType` özniteliği `install`, isteğe bağlı olarak yalnızca yükleme derlemelerin adlandırılmış bir grubu belirtir. Daha fazla bilgi için [izlenecek yol: ClickOnce dağıtım API'sini kullanarak tasarımcı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Varsa kümesine `framework` ve `dependencyType` özniteliği `prerequisite`, .NET Framework'ün bir parçası olarak derlemeyi belirtir. Genel Derleme Önbelleği (GAC) Bu derleme için yüklerken işaretlenmediği [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] ve sonraki sürümler.|  
+|`group`|İsteğe bağlı. Varsa `dependencyType` özniteliği `install`, isteğe bağlı olarak yalnızca yükleme derlemelerin adlandırılmış bir grubu belirtir. Daha fazla bilgi için [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Varsa kümesine `framework` ve `dependencyType` özniteliği `prerequisite`, .NET Framework'ün bir parçası olarak derlemeyi belirtir. Genel Derleme Önbelleği (GAC) Bu derleme için yüklerken işaretlenmediği [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] ve sonraki sürümler.|  
 |`codeBase`|Ne zaman gerekli `dependencyType` özniteliği `install`. Bağımlı derleme yolu. Mutlak bir yol veya bildirim kodunun göreli bir yol, temel olabilir. Bu yol, geçerli olması için bütünleştirilmiş kod bildirimi sırada geçerli bir URI olmalıdır.|  
 |`size`|Ne zaman gerekli `dependencyType` özniteliği `install`. Bağımlı derlemenin bayt cinsinden boyutu.|  
   
@@ -154,7 +149,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma güvenlik denetimi, dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için kullanır. Varsa `hash` öğesi dahil değildir, bu denetimi gerçekleştirilmeyecek. Bu nedenle, atlama `hash` öğesi önerilmez.  
   
-### <a name="dsigtransforms"></a>dsig:TRANSFORMS  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.  
   
 ### <a name="dsigtransform"></a>dsig:Transform  
@@ -227,6 +222,3 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)   
  [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-deployment.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: UML genişletmek için profil tanımlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770763"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>UML’yi genişletmek için profil tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +220,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
 7.  Uzantı Projesini oluşturarak veya önceki bölümlerde açıklandığı gibi tüm dosyaları sıkıştırarak Visual Studio uzantısı oluşturun.  
   
 ##  <a name="Schema"></a> Bir profilin yapısı  
- UML profilleri için XSD dosyası aşağıdaki örnekte bulunabilir: [ayar stereotipleri ve profilleri XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Profil dosyalarını düzenlemenize yardımcı olmak için yükleme `.xsd` dosyası:  
+ UML profilleri için XSD dosyası, aşağıdaki örnekte bulunabilir: [Ayar stereotipleri ve profilleri XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Profil dosyalarını düzenlemenize yardımcı olmak için yükleme `.xsd` dosyası:  
   
  **%ProgramFiles%\Microsoft visual Studio [sürüm] \Xml\Schemas**  
   
@@ -345,7 +342,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
  Stereotiplerim my UML modellerimde görünmüyor.  
  Profilinizi bir paket veya model seçmek zorunda. Stereotipler sonra model veya paketin içinde öğelerin üzerinde görünür. Daha fazla bilgi için [Ekle stereotipler için UML model öğelerini](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- UML modelini açtığımda aşağıdaki hata görünür: **VS1707: seri hale getirme hata oluştuğu için aşağıdaki profilleri yüklenemiyor: MyProfile.profile**  
+ UML modelini açtığımda aşağıdaki hata görünür: **VS1707: Profiller bir seri hale getirme hatası oluştuğundan yüklenemiyor: MyProfile.profile**  
  1.  Profili, temel XML sözdiziminin doğru olduğundan emin olun.  
   
 2. Her Takma adın form/ProfileName/nodename içinde olduğundan emin olun. ProfileName kök profil düğümündeki ad özniteliğinin değeridir. NodeName metaclass, externalType veya enumerationType ad özniteliğinin değeridir.  
@@ -358,7 +355,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
   
 5. VSIX dosyasını yeniden oluşturun ve tekrar yüklemek için Windows Gezgini'nde açın. Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   Uzantı, Uzantı Yöneticisi'nde görünmez, ancak yeniden yüklemeye çalıştığınızda, aşağıdaki ileti görünür: **uzantı zaten uygun tüm ürünler için yüklü.**  
+   Uzantı, Uzantı Yöneticisi'nde görünmez, ancak yeniden yüklemeye çalıştığınızda, aşağıdaki ileti görünür: **Uzantı zaten uygun tüm ürünler için yüklü.**  
    1.  Uzantı dosyasını kaldırın, bir alt *LocalAppData*\Microsoft\VisualStudio\\[sürüm] \Extensions\  
   
    -   Görmek için *LocalAppData*, Windows Gezgini Klasör Seçenekleri'nin Görünüm sekmesinde gizli dosyaları göster ayarlamanız gerekir.  
@@ -371,8 +368,5 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
  [Model öğelerine stereotipler ekleme](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [UML modelleri için standart stereotipler](../modeling/standard-stereotypes-for-uml-models.md)   
- [Örnek: Renkli UML öğeleri Sterotipe göre](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Örnek: Sterotipe göre renkli UML öğeleri](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Örnek: Ayar Sterotipleri, XSD profili](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-

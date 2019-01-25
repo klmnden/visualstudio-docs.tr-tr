@@ -1,27 +1,22 @@
 ---
 title: Kendi oluşturma başlangıç sayfasının | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Create start page
 - custom start page
 - customize start page
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
-manager: douge
-ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dc01d4d635d297f1597d900687673dd4d35d049f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761551"
 ---
 # <a name="creating-your-own-start-page"></a>Kendi başlangıç sayfası oluşturma
 Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sayfası oluşturarak, özel bir başlangıç sayfası oluşturabilirsiniz.  
@@ -36,7 +31,7 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
 1.  İndirme ve yükleme [başlangıç sayfası proje şablonu](http://go.microsoft.com/fwlink/?LinkId=186204) Visual Studio Galerisi.  
   
     > [!WARNING]
-    >  Şu anda Visual Studio 2010 Başlangıç sayfası proje şablonu yükseltilmedi. Bu şablon yükseltme hakkında daha fazla bilgi için bkz: [nasıl yapılır: bir Visual Studio özel başlangıç sayfası yükseltme](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    >  Şu anda Visual Studio 2010 Başlangıç sayfası proje şablonu yükseltilmedi. Bu şablon yükseltme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2.  Şablonunu yükledikten sonra yeni bir başlangıç sayfası projesi oluşturur.  
   
@@ -48,7 +43,7 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
   
 5.  Gelen **Çözüm Gezgini**açın **StartPage.xaml**.  
   
-6.  StartPage.xaml düzenleyin.  
+6.  Edit StartPage.xaml.  
   
      Özel başlangıç yüklü sayfası ile Visual Studio deneysel örneği açmak için F5 tuşuna basarak iş görüntüleyebilirsiniz.  
   
@@ -106,4 +101,4 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   
- [İzlenecek Yol: Başlangıç Sayfasına Özel XAML Ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

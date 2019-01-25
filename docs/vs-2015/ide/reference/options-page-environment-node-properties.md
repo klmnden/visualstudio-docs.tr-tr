@@ -1,14 +1,9 @@
 ---
 title: Seçenekler sayfası, ortam düğümü özellikleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
@@ -16,13 +11,13 @@ ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753522"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -141,7 +136,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
   
 |Özellik Öğesi Adı|Değer|Açıklama|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -0: giriş sayfasını açın<br />-1: yük en son yüklenen çözümü<br />-2: Göster **açık proje** iletişim kutusu<br />-3: Göster **yeni proje** iletişim kutusu<br />-4: boş ortamı Göster<br />-5: başlangıç sayfasını göster|  
+|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -   0: Giriş sayfasını aç<br />-   1: Son yüklenen çözümü yükleme<br />-   2: Göster **açık proje** iletişim kutusu<br />-   3: Göster **yeni proje** iletişim kutusu<br />-   4: Boş ortamı Göster<br />-   5: Başlangıç sayfasını göster|  
 |StartPageRSSUrl|Get/Set (dize)|RSS, akış URL'sini başlatma sırasında kullanılır.|  
 |StartPageRefreshDownloadedContent|Get/Set (Boole)|Başlangıç sayfası StartPageRefreshInterval içinde belirtilen aralık her ilgi çekici sonra yeniler.|  
 |StartPageRefreshInterval|Get/Set (kısa)|Aralığının başlangıç sayfası yenilemek için dakika cinsinden değeri.|  
@@ -154,7 +149,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |ConfirmTaskDeletion|Get/Set (Boole)|Bir onay kutusu görevlerden silerken görüntülenip görüntülenmeyeceğini belirtir **görev listesi**.|  
 |WarnOnAddingHiddenItem|Get/Set (Boole)|Bir kullanıcı eklerken uyarı olup olmadığını belirtir gösterilmeyecek bir görevi.|  
 |DontShowFilePaths|Get/Set (Boole)|Görev listesinde tam dosya yollarını gösterilip gösterilmeyeceğini belirtir.|  
-|CommentTokens|SAFEARRAY'i|SafeArray yorum belirteci değerlerini döndürür. Her alan yok `Name` (dize) ve `Priority` (<xref:EnvDTE.vsTaskPriority>, yüksek, Orta veya düşük).|  
+|CommentTokens|SafeArray|SafeArray yorum belirteci değerlerini döndürür. Her alan yok `Name` (dize) ve `Priority` (<xref:EnvDTE.vsTaskPriority>, yüksek, Orta veya düşük).|  
   
 ## <a name="web-browser"></a>Web tarayıcısı  
  `DTE.Properties("Environment", "WebBrowser")`  
@@ -172,6 +167,3 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
  [Seçenekler sayfası, yazı tipleri ve renkler düğümü özellikleri](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Seçenekler sayfası, metin düzenleyici düğümü özellikleri](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
-
-
-

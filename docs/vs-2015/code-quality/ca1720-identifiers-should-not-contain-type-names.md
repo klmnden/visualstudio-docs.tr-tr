@@ -1,13 +1,9 @@
 ---
 title: 'CA1720: Tanımlayıcılar tür adları içermemelidir | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -19,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 158de56c254c58f1d8a566e4170310a060b0a884
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785124"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Tanımlayıcılar tür adları içermemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ ms.locfileid: "53822245"
 
 - Nesne
 
-- obj
+- Obj
 
 - Boole değeri
 

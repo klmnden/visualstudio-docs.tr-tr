@@ -1,14 +1,9 @@
 ---
 title: Açma ve proje öğelerini kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], file persistence
 - files [Visual Studio], opening and saving
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767194"
 ---
 # <a name="opening-and-saving-project-items"></a>Proje Öğelerini Açma ve Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ Yeni bir proje türü eklediğinizde, proje dosyalarınızı kaydetme ve açma y
  [Birlikte Aç Komutunu Kullanarak Dosyaları Görüntüleme](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Sunar IDE'nin nasıl işleyeceğini bir ayrıntılı, adım adım açıklama **birlikte Aç** bazı standart düzenleyicileri, tercih ettiğiniz bir dosya açma isteyen komutu.  
   
- [Nasıl Yapılır: Projeye Özgü Düzenleyicileri Açma](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md)  
  Bir projeye özgü Düzenleyicisi'ni kullanarak belirli bir tür, projenizdeki dosyaları açılması gerektiğini belirtmek için adım adım yönergeler sağlar.  
   
- [Nasıl Yapılır: Standart Düzenleyicileri Açma](../../extensibility/how-to-open-standard-editors.md)  
+ [Nasıl yapılır: Open Standard Editors](../../extensibility/how-to-open-standard-editors.md)  
  Dosyalar için standart bir düzenleyici proje türünüzü açmak IDE etkinleştirme belirtmek için adım adım yönergeler sağlar.  
   
- [Nasıl Yapılır: Açık Belgeler için Düzenleyicileri Açma](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Nasıl yapılır: Açık açık belgeler için düzenleyicileri](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Açık bir dosya için bir projeye özgü düzenleyicisini açmak için adım adım yönergeler sağlar.  
   
  [Standart Belge Kaydetme](../../extensibility/internals/saving-a-standard-document.md)  
@@ -60,4 +55,3 @@ Yeni bir proje türü eklediğinizde, proje dosyalarınızı kaydetme ve açma y
   
  [Proje Türleri](../../extensibility/internals/project-types.md)  
  Proje öğeleri nasıl biçimlendirileceğini nasıl projeleri kod derlenmiş ve yerleşik denetlenmesine ve düzenleyicileri nasıl açıldığı gibi ele alınmaktadır.
-

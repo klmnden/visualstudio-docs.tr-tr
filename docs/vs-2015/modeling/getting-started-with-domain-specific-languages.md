@@ -1,30 +1,27 @@
 ---
 title: Etki alanına özgü dillerle çalışmaya başlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac9b92921ba180c3f986a28d9fc47ee9acfdeb78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752903"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Etki Alanına Özgü Dillerle Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir etki alanına özgü dil (DSL) kullanarak temel kavramları açıklar.  
   
- DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabileceğiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Bir etki alanına özgü dil ile ne yapabilirsiniz?  
  Belirli bir amaç için kullanılmak üzere tasarlanmış bir gösterim, genellikle grafik etki alanına özgü dilidir. Bunun aksine, UML gibi dilleri genel amaçlı. Bir DSL model öğesi ve ilişkilerini ve ekranda nasıl sunulan türlerini tanımlayabilirsiniz.  
@@ -107,7 +104,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 1. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç. Bu, çoğu DslDefinition.dsl kaynak kodundan yeniden oluşturur.  
   
    > [!NOTE]
-   >  DslDefinition.dsl değiştirdiğinizde tıklatmalısınız **tüm Şablonları Dönüştür** önce çözümü yeniden oluşturun. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   >  DslDefinition.dsl değiştirdiğinizde tıklatmalısınız **tüm Şablonları Dönüştür** önce çözümü yeniden oluşturun. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. F5 tuşuna basın veya **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
@@ -377,7 +374,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 ## <a name="validation-and-commands"></a>Doğrulama ve komutlar  
  Doğrulama kısıtlamaları ekleyerek bu DSL daha fazla geliştirebilir. Bu kısıtlamaları, model doğru durumda olduğundan emin olun, tanımlayabilirsiniz, yöntemlerdir. Örneğin, doğum tarihi bir alt öğelerinden bundan sonraki olan emin olmak için bir kısıtlama tanımlayabilirsiniz. DSL kullanıcı kısıtlamaların hiçbirini keser bir model kaydetmeye çalıştığında doğrulama özelliği bir uyarı görüntüler. Daha fazla bilgi için [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).  
   
- Ayrıca kullanıcının çağırabileceği menü komutları tanımlayabilirsiniz. Komutlar, model değiştirebilirsiniz. Ayrıca diğer modellerinde etkileşim kurabildikleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve dış kaynaklara sahip. Daha fazla bilgi için [nasıl yapılır: bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Ayrıca kullanıcının çağırabileceği menü komutları tanımlayabilirsiniz. Komutlar, model değiştirebilirsiniz. Ayrıca diğer modellerinde etkileşim kurabildikleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve dış kaynaklara sahip. Daha fazla bilgi için [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>DSL dağıtma  
  Diğer kullanıcıların etki alanına özgü dil kullanmasına izin vermek için dağıttığınız bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı (VSIX) dosyası. DSL çözümü oluşturduğunuzda oluşturulur.  
@@ -405,6 +402,3 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
  [Modelleri, sınıfları ve ilişkileri anlama](../modeling/understanding-models-classes-and-relationships.md)   
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

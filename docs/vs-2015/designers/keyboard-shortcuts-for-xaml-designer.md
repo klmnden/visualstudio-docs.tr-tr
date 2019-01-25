@@ -1,25 +1,20 @@
 ---
 title: XAML Tasarımcısı için klavye kısayolları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 53eef64f396b6c9362a42d351bd546d97f8d205a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f59853d91d5e3f18ba662c722a5c47b7114e364e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757614"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML Tasarımcısı için klavye kısayolları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Klavye kısayolları XAML Tasarımcısı'nda, bir tek klavye kısayolu birden ç
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-
-
-

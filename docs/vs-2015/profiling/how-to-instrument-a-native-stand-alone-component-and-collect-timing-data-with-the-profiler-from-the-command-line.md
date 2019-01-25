@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 075d493b87203f3aacf8afb8811e3f8544882d25
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757114"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl yapılır: Yerel bir Bağımsız Bileşeni İzleme ve Komut Satırından Profil Oluşturucu ile Zamanlama Verileri Toplama
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Araçları komut satırı araçlarının C++ .exe veya .dll dosyası gibi yerel bir bileşeni izleme ve ayrıntılı zamanlama verileri toplamak için.  
@@ -91,6 +86,3 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağımsız uygulamaların profilini oluşturma](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)
-
-
-

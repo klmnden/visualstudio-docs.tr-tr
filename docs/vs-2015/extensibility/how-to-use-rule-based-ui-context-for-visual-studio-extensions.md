@@ -1,22 +1,18 @@
 ---
-title: 'Nasıl yapılır: uzantıları için kural tabanlı UI bağlamı kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Uzantıları için kural tabanlı UI bağlamı kullanma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: 431f9b53fd9b678e16e7fddeeb997ddfcfea6f11
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759799"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio Uzantıları için Kural Tabanlı UI Bağlamı Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref:Microsoft.VisualStudio.Shell.UIContext>s etkinleşir. Ancak, bu UI bağlamları sertifikalarıdır, uzantı yazarları bırakarak seçeneği yoktur çok iyi değildir ancak noktasından önce etkinleştirir kullanılabilir bir UI bağlamı seçmek için gerçekten yüklenecek VSPackage'ı istedikleri. İyi bilinen UI bağlamı bir listesi için bkz. <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
@@ -47,7 +43,7 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    Öznitelikler için aşağıdakileri ekleyin: (bu özniteliklerin ayrıntıları daha sonra verilecektir)
+    Öznitelikler için aşağıdakileri ekleyin: (Bu özniteliklerin ayrıntıları daha sonra açıklanacaktır)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]

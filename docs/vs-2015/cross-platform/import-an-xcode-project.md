@@ -1,22 +1,18 @@
 ---
 title: Bir XCode projesini içeri aktarma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: b0e42c167e87f19781f9544e20e7870789af4ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d04c82a5122aae263676a43367105d44e3aa75a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788804"
 ---
 # <a name="import-an-xcode-project"></a>Bir XCode Projesini İçeri Aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,4 +76,3 @@ Microsoft Visual C++ platformlar arası Mobil Geliştirme için Visual Studio'yl
     Sihirbazın ayarlarını kullanarak XCode projesini içeri aktarmayı tercih **alma**.  
   
    İçeri Aktar Sihirbazı XCode projeleri seçili XCode Proje hedefleri için karşılık gelen Visual Studio'da oluşturur. Diğer C++ projeleriyle paylaşılan kodu ayrı bir paylaşılan kod ve statik kitaplık projeleri içinde bölünür. Geri kalan kod iOS uzaktan Visual Studio tarafından oluşturulan kitaplık ve uygulama projeleri yerleştirilir. XCode ve Visual Studio arasında kod taşıma hakkında daha fazla bilgi için bkz. [arasındaki eşitleme değişiklikleri XCode ve Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
-

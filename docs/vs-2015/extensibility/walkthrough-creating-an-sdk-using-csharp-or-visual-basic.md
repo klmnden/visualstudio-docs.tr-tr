@@ -1,26 +1,21 @@
 ---
-title: 'İzlenecek yol: C# veya Visual Basic kullanarak SDK oluşturma | Microsoft Docs'
-ms.custom: ''
+title: "İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f6ee9bb57b99978e720cc3fa0ab8a647f675a4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763148"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>İzlenecek Yol: C# veya Visual Basic Kullanarak SDK Oluşturma
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic Kullanarak SDK Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak oluşturma ve sonra bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:  
@@ -120,7 +115,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 22. İçinde **Çözüm Gezgini**, seçin **SimpleMath.winmd**.  
   
-23. Menü çubuğunda, **görünümü**, **özellikleri** (klavye: F4 tuşuna basın).  
+23. Menü çubuğunda, **görünümü**, **özellikleri** (klavye: F4 tuşuna basın:).  
   
 24. İçinde **özellikleri** penceresinde değişiklik **derleme eylemi** özelliğini **içerik**ve ardından değiştirmek **VSIX Ekle** özelliği **True**.  
   
@@ -180,6 +175,5 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: C++ kullanarak SDK oluşturma](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [İzlenecek yol: JavaScript kullanarak SDK oluşturma](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [İzlenecek yol: JavaScript kullanarak SDK oluşturma](http://msdn.microsoft.com/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
  [Yazılık Geliştirme Seti Oluşturma](../extensibility/creating-a-software-development-kit.md)
-

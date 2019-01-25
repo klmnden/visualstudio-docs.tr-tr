@@ -1,28 +1,23 @@
 ---
 title: 'Nasıl yapılır: Düzenleyici dosya türlerini kaydetme | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801948"
 ---
-# <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Düzenleyici dosya türlerini kaydetme
+# <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Register Editor dosya türleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri Düzenleyicisi kaydetmek için en kolay yolu olan [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] yönetilen paket framework (MPF) sınıfları. Yerel paketinizi uyguluyorsanız [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], düzenleyici ve ilişkili uzantıları kaydeden bir kayıt defteri betik da yazabilirsiniz.  
@@ -133,4 +128,3 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
     ```  
   
      GUID dizeleri BscEdit proje Resource.h dosyasında tanımlanır.
-

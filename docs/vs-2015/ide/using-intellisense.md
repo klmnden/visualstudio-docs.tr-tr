@@ -1,14 +1,9 @@
 ---
 title: IntelliSense kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -29,18 +24,18 @@ ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758834"
 ---
 # <a name="using-intellisense"></a>IntelliSense Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense; Üyeleri Listeleme, Parametre Bilgisi, Hızlı Bilgi ve Tam Sözcük gibi bir dizi özellik için kullanılan genel bir terimdir. Bu özellikler, yalnızca birkaç tuş vuruşu ile kullandığınız kod hakkında daha fazla bilgi edinmenize, yazmakta olduğunuz parametreleri izlemenize ve özellik ve yöntem çağrıları eklemenize yardımcı olur.  
+IntelliSense özellikleri sayısı için genel bir terimdir: Üyeleri listeleme, parametre bilgisi, hızlı bilgi ve tam sözcük. Bu özellikler, yalnızca birkaç tuş vuruşu ile kullandığınız kod hakkında daha fazla bilgi edinmenize, yazmakta olduğunuz parametreleri izlemenize ve özellik ve yöntem çağrıları eklemenize yardımcı olur.  
   
  IntelliSense'in birçok yönü dile özgüdür. Farklı dillere yönelik IntelliSense hakkında daha fazla bilgi için Ayrıca Bkz. altında listelenen konulara bakın.  
   
@@ -111,6 +106,3 @@ MessageBox( hWnd, "String literal|") )
  [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [XML Kodu Açıklamalarını Sağlama](../ide/supplying-xml-code-comments.md)
-
-
-

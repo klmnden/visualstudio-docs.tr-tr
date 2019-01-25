@@ -1,12 +1,9 @@
 ---
 title: Verilere Windows Forms denetimleri bağlama
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5fff4a06ab49caea8ad307ba24d88a46eae87692
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786833"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere Windows Forms denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

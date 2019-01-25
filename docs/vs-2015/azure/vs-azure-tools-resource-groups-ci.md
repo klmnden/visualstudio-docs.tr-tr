@@ -2,19 +2,19 @@
 title: Azure DevOps hizmetlerinde, Azure kaynak grubu projeleri kullanarak sürekli tümleştirme | Microsoft Docs
 description: Azure kaynak grubu dağıtım projeleri Visual Studio kullanarak Azure DevOps Hizmetleri'nde sürekli tümleştirmeyi ayarlama açıklanır.
 author: mlearned
-manager: douge
+manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
 ms.service: azure-resource-manager
 ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 03be89d9de68d3d0ced5252582a2bce05fb08b8f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 01793705d5d89d31b82a84d1ccca192d043db5a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775564"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure DevOps hizmetlerinde, Azure kaynak grubu dağıtım projeleri kullanarak sürekli tümleştirme
 Azure şablonu dağıtmak için çeşitli aşamalarda görevleri gerçekleştirin: Azure yapı, Test, Kopyala (aynı zamanda "Hazırlama" olarak adlandırılır) ve şablonu dağıtın. Azure DevOps hizmetler için şablonları dağıtmak için iki farklı yolu vardır. Her iki yöntem de aynı sonuçları sağlar, bu nedenle, iş akışınızı en uygun olanı seçin.

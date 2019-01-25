@@ -1,14 +1,9 @@
 ---
 title: Ayrıştırılmış kodu komut listesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4cbdc3ee566135fe86301deefe1e8be8db431f9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff87add99fb618eaa45d6f9a71a68d82149884e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256665"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753401"
 ---
 # <a name="list-disassembly-command"></a>Ayrıştırılmış Kodu Listele Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  /symbolnames:`yes` &#124; `no` [veya] /names:`yes` &#124; `no` [veya] / n:`yes`&#124;`no`  
  İsteğe bağlı. Sembol adları görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `yes`.  
   
- [/ lınenumbers:`yes`&#124;`no`]  
+ [/linenumbers:`yes`&#124;`no`]  
  İsteğe bağlı. Kaynak koduyla ilişkili satır numaralarını görüntülemesini sağlar. / Source switch değerini içermelidir. `yes` /linenumbers anahtar kullanacak şekilde.  
   
 ## <a name="example"></a>Örnek  
@@ -74,6 +69,3 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   
  [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)
-
-
-
