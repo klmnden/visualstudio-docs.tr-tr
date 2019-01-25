@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d815178e772e391eb19eb43b5870fbcd9dbdaa6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef03779b541e4d6de99caf402793d62eeee68f3a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858110"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866235"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Sunucudaki belgelerde verilere
   Microsoft Office Word veya Microsoft Office Excel nesne modelini kullanmak zorunda kalmadan belge düzeyinde özelleştirme veriye karşı programlama yapabilirsiniz. Bu belgede sözcük olmayan bir sunucuda bulunan verilere erişebilir veya Excel yüklü anlamına gelir. Örneğin, bir sunucu üzerinde kod (örneğin, bir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfası) bir belgedeki verileri özelleştirebilir ve özelleştirilmiş belgeyi bir son kullanıcıya gönderin. Son kullanıcıya belgeyi açtığında, çözüm derlemesine veri bağlama kodunu belgeye özelleştirilmiş veri bağlar. Belgedeki verileri kullanıcı arabiriminden ayrıldığı için bu olasıdır. Daha fazla bilgi için [veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md).

@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: ''
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67a1f330862ad6156d85a8f86afcfe863d776850
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 267e2ec1b2ec2dbb5b72a100185ce6b68d455c39
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924455"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865899"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Yönetilen bir VSTO Eklenti yüklendiğinde çağrılır.  

@@ -14,17 +14,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, list instances
 - SharePoint development in Visual Studio, fields
 - SharePoint development in Visual Studio, content types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9742f314ff3f2e6b980eaa2fd914def3b05e0a51
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852537"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874594"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma
   Aşağıdaki yordamlar özel SharePoint sitesi sütunlar oluşturma işlemini göstermektedir: veya *alanları*— site sütunlarını kullanan bir içerik türü yanı sıra. Ayrıca, yeni içerik türü kullanan bir liste oluşturma işlemini gösterir.  

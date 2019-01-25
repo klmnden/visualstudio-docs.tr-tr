@@ -1,27 +1,22 @@
 ---
 title: HLSL gölgelendirici hata ayıklayıcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2c79491703ba2e20ae7bbb8c1303cfd5496a686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763950"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL Gölgelendirici Hata Ayıklayıcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +78,4 @@ Visual Studio grafik Çözümleyicisi, HLSL hata ayıklayıcısı, HLSL gölgele
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
- [İzlenecek Yol: Hesaplayıcı Gölgelendiricisinde Hata Ayıklamak İçin Grafik Tanılamayı Kullanma](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
-
-
-
+ [İzlenecek yol: Hesaplayıcı Gölgelendiricisinde Hata Ayıklamak İçin Grafik Tanılamayı Kullanma](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

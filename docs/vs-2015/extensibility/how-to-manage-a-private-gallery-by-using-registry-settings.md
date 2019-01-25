@@ -1,29 +1,24 @@
 ---
-title: 'Nasıl yapılır: kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fea42e1e59907c08d0a7e51a56875c1b73537
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744454"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834291"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Nasıl yapılır: kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Nasıl yapılır: Bir Özel Galeriyi Kayıt Defteri Ayarlarını Kullanarak Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir yönetici veya Geliştirici yalıtılmış kabuk uzantısı, denetimleri, şablonlar ve araçlar Visual Studio Galerisi, Örnekler Galerisi veya özel galeriler erişimi denetleyebilirsiniz. Bir galeri kullanılabilir veya kullanılamaz hale getirmek için değiştirilmiş kayıt defteri anahtarları ve değerlerini açıklayan .pkgdef dosyası oluşturun.  
@@ -76,4 +71,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Galeriler](../extensibility/private-galleries.md)
-

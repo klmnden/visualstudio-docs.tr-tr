@@ -1,27 +1,22 @@
 ---
 title: Üst kapsayıcı klasörleri oluşturma çözümleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762541"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834111"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Çözümler için Üst Kapsayıcı Klasörleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ Kaynak Denetimi Eklentisi API sürümü 1.2, bir kullanıcı bir çözüm içind
 |Özellik|Tkaynak denetimi eklentisi API sürüm 1.1|Kaynak Denetimi Eklentisi API sürümü 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
 |SCC için çözüm ekleyin|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Kaynak-denetimli çözüme proje ekleme|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Not:** Visual Studio çözüm Sur doğrudan alt olduğunu varsayar|  
+|Kaynak-denetimli çözüme proje ekleme|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Not:**  Visual Studio çözüm Sur doğrudan alt olduğunu varsayar|  
   
 ## <a name="examples"></a>Örnekler  
  Aşağıdaki tabloda, iki örnek listeler. Her iki durumda da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı kadar kaynak denetimi altında bir çözüm için bir hedef konum istenir *user_choice* hedef olarak belirtilir. User_choice belirtildiğinde, çözüm ve iki proje kaynak denetimi hedefler için kullanıcıya sormadan eklenir.  
@@ -73,4 +68,3 @@ Kaynak Denetimi Eklentisi API sürümü 1.2, bir kullanıcı bir çözüm içind
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API Sürümü 1.2’deki Yenilikler](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

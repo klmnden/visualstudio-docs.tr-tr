@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Program aracılığıyla okunmamış iletileri Kutusu'ndan alma"
+title: "Nasıl yapılır: Program aracılığıyla okunmamış iletileri Kutusu'ndan alma"
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], unread mail
 - unread e-mail
 - mail items [Office development in Visual Studio], unread mail
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89354170aeb312442c9db1ae993954fb2e4f0bde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bfacd89330b7f32cecf3670afe7184104e1e7f5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935482"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876167"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Nasıl Yapılır: Program aracılığıyla okunmamış iletileri Kutusu'ndan alma
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Nasıl yapılır: Program aracılığıyla okunmamış iletileri Kutusu'ndan alma
   Bu örnek, Outlook'tan okunmamış e-posta iletilerini alır **gelen** ve öğe sayısını görüntüler.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  

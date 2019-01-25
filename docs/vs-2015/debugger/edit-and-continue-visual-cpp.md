@@ -1,14 +1,9 @@
 ---
 title: Düzenle ve devam et (Visual C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748358"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834025"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklen
   
  [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) Visual Studio 2013 güncelleştirme 3'te kullanılmaya başlanan derleyici seçeneği olmadan ikili dosyaları derlenmiş için bu ek bilgiler için .pdb (simge) dosyaları ekler [/Od (devre dışı bırak (Hata Ayıkla)) ](http://msdn.microsoft.com/library/aafb762y.aspx) seçeneği.  
   
- **/ZO** devre dışı bırakır, Düzenle ve devam et. Bkz: [nasıl yapılır: iyileştirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md).  
+ **/ZO** devre dışı bırakır, Düzenle ve devam et. Bkz: [nasıl yapılır: İyileştirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Düzenle ve Devam Et'i devre dışı bırakmak veya etkinleştirmek  
  Geçerli hata ayıklama oturumu sırasında uygulanan istemediğiniz kod düzenlemeler yapmasını durumunda Düzenle ve devam et otomatik çağrılmasını devre dışı bırakmak isteyebilirsiniz. Ayrıca otomatik Düzenle ve devam et yeniden etkinleştirebilirsiniz.  
@@ -84,6 +79,3 @@ Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklen
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Desteklenen Kod Değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

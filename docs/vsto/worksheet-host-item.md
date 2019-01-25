@@ -15,17 +15,17 @@ helpviewer_keywords:
 - worksheets, Excel
 - worksheets
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b89b91e8a1fd93953dae6dad28019b2203cf537
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866744"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876284"
 ---
 # <a name="worksheet-host-item"></a>Çalışma sayfası konak öğesi
   <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi olan bir türü genişleten <xref:Microsoft.Office.Interop.Excel.Worksheet> Excel için birincil birlikte çalışma bütünleştirilmiş koddan tür. <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesne, ancak ayrıca ek olayları ortaya koyan ve konak denetimleri ve Windows Forms denetimleri için kapsayıcı işlevi görür.  

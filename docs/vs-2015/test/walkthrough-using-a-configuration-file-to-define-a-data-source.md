@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanarak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843047"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835127"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek Yol: Bir Veri Kaynağı Tanımlamak için Yapılandırma Dosyası Kullanma
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir veri kaynağı kullanılması gösterilmektedir. Tarafından kullanılan bir veri kaynağı tanımlayan bir app.config dosyası oluşturma hakkında bilgi edineceksiniz <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> sınıfı. Bu izlenecek yolda gösterilen görevler aşağıdakileri içerir:  
@@ -214,7 +209,7 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
   
 3.  İki sütun üst bilgilerini oluşturabilir ve bunları `Val1` ve `Val2` içinde `Sheet1`.  
   
-4.  Beş varlıklara ekleyin `Sheet1` için aşağıdaki değerlerle `Val1` ve `Val2`sırasıyla: (1,1), (2,2) (3,3) (4,4) ve (5,0).  
+4.  Beş varlıklara ekleyin `Sheet1` için aşağıdaki değerlerle `Val1` ve `Val2`sırasıyla: (1,1), (2,2), (3,3), (4,4) and (5,0).  
   
 5.  Kaydet ve elektronik kapatın.  
   
@@ -224,7 +219,7 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
   
 1.  Birim testi için test projesi ekleyin.  
   
-     Daha fazla bilgi için [oluşturma ve var olan kod için birim testleri çalıştıran](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Daha fazla bilgi için [oluşturma ve var olan kod için birim testleri çalıştıran](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2.  Birim testi, otomatik olarak oluşturulan içeriğini aşağıdaki kodla değiştirin:  
   
@@ -275,9 +270,6 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
- [Oluşturma ve varolan kod için birim testleri çalıştırma](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Oluşturma ve varolan kod için birim testleri çalıştırma](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-
+ [Nasıl yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

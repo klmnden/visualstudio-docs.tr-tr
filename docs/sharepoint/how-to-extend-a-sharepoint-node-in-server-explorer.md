@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme | Microsoft Docs'
+title: 'Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39d108d78782413cd120e2a00b97f85784004b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5eb475c5311ecbe578f169ae07e156e0aa85c068
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940433"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870837"
 ---
-# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl Yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme
   Altındaki düğümleri genişletebilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Yeni alt düğümleri, kısayol menü öğeleri ve özellikleri için var olan bir düğüm eklemek istediğinizde bu kullanışlıdır. Daha fazla bilgi için [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint düğümünü genişletme  

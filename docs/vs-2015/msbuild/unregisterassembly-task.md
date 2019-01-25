@@ -1,14 +1,9 @@
 ---
 title: UnregisterAssembly görevi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 497a767a1cd67c08e82a743d0665a152c5dd7062
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298616"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833725"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Belirtilen derlemeleri COM birlikte çalışma amacıyla kaydını siler. Gerçe
 |---------------|-----------------|  
 |`Assemblies`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Sona erdirilecek bütünleştirilmiş kodları belirtir.|  
 |`AssemblyListFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Arasında durumu hakkındaki bilgileri içeren `RegisterAssembly` görev ve `UnregisterAssembly` görev. Bu görev kaydetmek için başarısız bir derleme kaydını denemelerini engeller `RegisterAssembly` görev.<br /><br /> Bu parametre belirtilmezse, `Assemblies` ve `TypeLibFiles` parametreleri yok sayılır.|  
-|`TypeLibFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Belirtilen derlemedeki belirtilen tür kitaplığının kaydını siler. **Not:** Bu parametre, yalnızca tür kitaplığı dosyasının adını derleme adından farklıysa gereklidir.|  
+|`TypeLibFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Belirtilen derlemedeki belirtilen tür kitaplığının kaydını siler. **Not:**  Bu parametre yalnızca, tür kitaplığı dosyasının adını derleme adından farklıysa gereklidir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu derlemenin başarılı olması bu görev için mevcut gerekli. Var olmayan bir derleme kaydını çalışırsanız, görev bir uyarıyla başarılı olur. Derleme kayıt defterinden kaldırmak için bu görev iş oluşur. Derleme mevcut değilse, kayıt defterinde değildir ve bu nedenle, görev başarılı oldu.  
@@ -73,6 +68,3 @@ Belirtilen derlemeleri COM birlikte çalışma amacıyla kaydını siler. Gerçe
  [RegisterAssembly görevi](../msbuild/registerassembly-task.md)   
  [Görevleri](../msbuild/msbuild-tasks.md)   
  [Görev Başvurusu](../msbuild/msbuild-task-reference.md)
-
-
-

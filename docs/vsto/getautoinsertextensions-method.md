@@ -7,15 +7,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9716f6adcee1d443e342074f3c46a57a1ace26db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: debe61f07a8aa8711f1bb0b75ff0c2b39a528b21
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915896"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875842"
 ---
 # <a name="getautoinsertextensions-method"></a>Getautoınsertextensions metodu
   Hata ayıklama sırasında otomatik olarak eklenmesi için Office için uygulamalar hakkında bilgi alır.  

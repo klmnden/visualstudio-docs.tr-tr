@@ -1,23 +1,20 @@
 ---
 title: Oluşturma ve uygulamanızı modeller aracılığıyla yapılandırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806366"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758344"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Uygulamanızı modeller aracılığıyla oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Oluşturma veya modelden uygulamanızın parçalarını yapılandırın. Model, 
   
 - [Program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md)  
   
-- [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Bu yöntem aynı zamanda artımlı olarak uygulanabilir, ancak daha fazla iş başında yoktur. Modeli okumak ve değişken parçaları için erişilebilir olmasını değerleri olanak tanıyan bir altyapı ayarlamak kod yazmanız gerekir. Değişken parçaları genel yapma, kod oluşturmaktan daha pahalıdır.  
   
@@ -87,6 +84,3 @@ Oluşturma veya modelden uygulamanızın parçalarını yapılandırın. Model, 
  [Bir etki alanına özgü dilden kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)   
  [Nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

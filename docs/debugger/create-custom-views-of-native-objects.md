@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe692f7f9cc00fa90d15ccf43b2526becc24b24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821198"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864429"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Hata ayıklayıcıda yerel nesnelerin özel görünümlerini oluşturma
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework özelleştirir yerel türler hata ayıklayıcı
 
 Natvis değiştirir *autoexp.dat* dosya Visual Studio'nun önceki sürümlerinde XML sözdizimi, daha iyi tanılama, sürüm oluşturma ve birden çok dosya desteği.  
 
-Natvis için geçerli değildir:
-
-- C++ Windows Masaüstü projeleri ile **hata ayıklayıcı türü** kümesine **karma** altında **yapılandırma özellikleri** > **hata ayıklama**. 
-- [Karışık mod hata ayıklama](how-to-debug-in-mixed-mode.md) yönetilen uyumluluk modu Windows Masaüstü uygulamaları için (**Araçları** > **seçenekleri** > **hataayıklama**  >  **Genel** > **yönetilen Uyumluluk modunu kullan**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Natvis görselleştirmeler
 

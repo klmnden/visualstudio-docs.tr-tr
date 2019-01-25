@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], reuse a model
 - BDC [SharePoint development in Visual Studio], import a model
 - BDC [SharePoint development in Visual Studio], remove a model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9efe862fcd0844d6b6e0c050d4c647b2d9c705a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa799e54f2fc8be22b78eca837d6aee2e683b1d3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950127"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863909"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Nasıl Yapılır: Bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Nasıl yapılır: Bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme
   Özelleştirme, paket ve model dosyası eklemek için Visual Studio kullanarak bir iş verileri bağlantısı (BDC) modeli yeniden (*.bdcm*) herhangi bir SharePoint grubu projesine. Daha fazla bilgi için [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Bir SharePoint projesine bir BDC modeli dosyası ekleme  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma'
+title: 'Nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - document protection [Office development in Visual Studio]
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f12eb0e43b1868d93a155354756b10b9661e560
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989263"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875530"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl Yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma
   Belgenin bir bölümünü koruduğunuzda, kullanıcıların belgenin bu bölümü içeriğini silme veya değiştirme engeller. İçerik denetimlerini kullanarak bir Microsoft Office Word belgesi kısımlarını korumak için birkaç yol vardır:  
   
 - Bir içerik denetimi koruyabilirsiniz.  

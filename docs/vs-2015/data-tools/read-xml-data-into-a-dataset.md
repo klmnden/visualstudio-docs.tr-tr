@@ -1,12 +1,9 @@
 ---
 title: Okuma XML veri kümesine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 68c565091deeef19436d3a2efaeb9ccbc15aa1d3
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648661"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755028"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
 5.  XML şeması görüntülemek için kod ekleme temel XML dosyasında bir <xref:System.Windows.Forms.TextBox> denetimi  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları Yardım menüsünde açıklanana etkin ayarlarınıza veya sürüm bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde**içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları ve menü komutları Yardım menüsünde açıklanana etkin ayarlarınıza veya sürüm bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde**içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  Bu adımda, bu izlenecek yolda içeren bir Visual Basic veya Visual C# projesi oluşturun.  

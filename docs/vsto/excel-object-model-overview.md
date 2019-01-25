@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4dc2f62a80865fa441a18fc80d0c8e4bd792e8db
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821775"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872098"
 ---
 # <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilirsiniz. Bu konuda en önemli nesneleri sunar:  

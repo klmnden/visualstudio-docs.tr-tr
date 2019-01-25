@@ -1,14 +1,9 @@
 ---
 title: Hata ayıklama ve uyarı iletişim kutuları | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766565"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Hataları Ayıklama ve Uyarı İletişim Kutuları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata a
   
  [Geçerli konum iletişim kutusu için kaynak kodu yok](../debugger/no-source-available.md)  
   
- [Simgesel bilgiler iletişim kutusu](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Simgesel bilgiler iletişim kutusu](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Belirsizliği Çöz İletişim Kutusu](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -65,17 +60,14 @@ Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata a
  [Hata: Sistemde Çekirdek Hata Ayıklayıcı Etkinleştirildiğinden Hata Ayıklama Mümkün Değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Betik ve Web hata ayıklama: hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Betik ve Web hata ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Uzaktan hata ayıklama hataları](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Ekleme hataları](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Ekleme hataları](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [SQL hata ayıklama Kurulumu sorunlarını giderme](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [SQL hata ayıklama Kurulumu sorunlarını giderme](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [Visual C++ hata ayıklama SSS](../debugger/debugging-native-code-faqs.md)  
   
  [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
-
-
-

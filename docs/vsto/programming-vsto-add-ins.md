@@ -27,17 +27,17 @@ helpviewer_keywords:
 - ThisAddIn_Startup
 - application-level add-ins [Office development in Visual Studio], programming
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef06079322b521abca2aa1fb6becf720c4ad86c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830657"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867253"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO eklentilerini programlama
   Bir VSTO eklentisi oluşturma tarafından bir Microsoft Office uygulamasının genişlettiğinizde, karşı doğrudan kod yazma `ThisAddIn` projenizdeki sınıfı. Bu sınıf, Microsoft Office konak uygulamanın nesne modeline erişme, uygulamanın kullanıcı arabirimini (UI) özelleştirmek ve diğer Office çözümleri için VSTO eklenti içinde nesnelerini kullanıma sunma gibi görevleri gerçekleştirmek için kullanabilirsiniz.  
@@ -65,7 +65,7 @@ ms.locfileid: "53830657"
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|  
 |Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|  
 |Microsoft Office PowerPoint|<xref:Microsoft.Office.Interop.PowerPoint.Application>|  
-|Microsoft Office projesini|Microsoft.Office.Interop.MSProject.Application|  
+|Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|  
 |Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|  
 |Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|  
   

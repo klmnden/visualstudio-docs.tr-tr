@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Varolan belgeleri program aracılığıyla açma'
+title: 'Nasıl yapılır: Varolan belgeleri program aracılığıyla açma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], opening
 - Word [Office development in Visual Studio], opening documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2163ddc7db3f0fbcf32abaa8c845b3838e9d2c98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 670c4855806dcc5d781da8479963f6705ba99fd3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932161"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869154"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Nasıl Yapılır: Varolan belgeleri program aracılığıyla açma
+# <a name="how-to-programmatically-open-existing-documents"></a>Nasıl yapılır: Varolan belgeleri program aracılığıyla açma
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Yöntemi, bir tam yol ve dosya adıyla belirtilen mevcut Microsoft Office Word belgesi açar. Bu yöntem döndürür bir <xref:Microsoft.Office.Interop.Word.Document> , açılan Belge temsil eder.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

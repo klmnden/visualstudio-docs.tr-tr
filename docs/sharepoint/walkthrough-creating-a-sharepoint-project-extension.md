@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd142b71de2919f1f44f36134ce286e58229bae5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885906"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866119"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>İzlenecek yol: Bir SharePoint proje uzantısı oluşturma
   Bu izlenecek yol, bir SharePoint proje uzantısı oluşturma işlemini gösterir. Bir proje ne zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyinde olaylara yanıt vermek için bir proje uzantısı'nı kullanabilirsiniz. Ayrıca, özel özellikler ekleme veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantıları, proje uzantılarını belirli bir SharePoint proje türüyle ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir türden SharePoint projesi açıldığında uzantınızı yüklediği [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

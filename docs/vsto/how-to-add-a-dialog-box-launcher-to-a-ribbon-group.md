@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir Şerit grubuna iletişim kutusu başlatıcısı ekleme'
+title: 'Nasıl yapılır: Bir Şerit grubuna iletişim kutusu başlatıcısı ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac39cd45c566d837d34cf8e7be0cf94ded8de419
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846210"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862544"
 ---
-# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Nasıl Yapılır: Bir Şerit grubuna iletişim kutusu başlatıcısı ekleme
+# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Nasıl yapılır: Bir Şerit grubuna iletişim kutusu başlatıcısı ekleme
   Herhangi bir Şerit grubuna iletişim kutusu başlatıcısı ekleyebilirsiniz. İletişim kutusu başlatıcısı içinde bir grup görünür küçük bir simgedir. Kullanıcılar, ilgili iletişim kutusu veya Grup ile ilgili daha fazla seçenek sağlayan görev bölmeleri açmak için bu simgeye tıklayın.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  

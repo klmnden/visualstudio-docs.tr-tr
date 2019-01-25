@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Özel belge özelliklerini oluşturma ve değiştirme'
+title: 'Nasıl yapılır: Özel belge özelliklerini oluşturma ve değiştirme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - document properties [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a3dd497bc2c63c58e6072cd48f58cba071ea4f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e890cedb774527ba49c6061ee36c5efc091f3188
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891595"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865820"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Nasıl Yapılır: Özel belge özelliklerini oluşturma ve değiştirme
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Nasıl yapılır: Özel belge özelliklerini oluşturma ve değiştirme
   Yukarıda listelenen Microsoft Office uygulamaları ile belgeleri depolanan yerleşik özellikler sağlar. Ayrıca, oluşturun ve belge ile depolamak istediğiniz ek bilgiler varsa, özel belge özelliklerini değiştirin.  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  

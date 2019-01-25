@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], updating using controls
 - controls [Office development in Visual Studio], updating documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 512edf8c6f694c0c8dc22c3b614f4f9b47145db8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943242"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871422"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>İzlenecek yol: Radyo düğmelerini kullanarak belgede grafik güncelleştir
   Bu yönerge, radyo düğmeleri Microsoft Office Word için belge düzeyi özelleştirmesinde kullanıcıların belgeye grafik türlerini seçmek için seçenek sunmak için nasıl kullanılacağını gösterir.  

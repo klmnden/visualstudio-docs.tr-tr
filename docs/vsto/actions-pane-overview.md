@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821133"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875959"
 ---
 # <a name="actions-pane-overview"></a>Eylemler bölmesine genel bakış
   Eylemler bölmesi bir özelleştirilebilirdir **belge eylemleri** görev bölmesi, belirli Microsoft Office Word belgesi ya da Microsoft Office Excel çalışma kitabına eklenmiş. Eylemler bölmesinde içindeki diğer yerleşik görev bölmeleri yanı sıra Office görev bölmesi gibi barındırılan **XML kaynağı** görev bölmesinde Excel veya **stilleri ve biçimlendirme** Word görev bölmesinde. Windows Forms veya WPF denetimleri, Eylemler bölmesi kullanıcı arabirimini tasarlamak için kullanabilirsiniz.

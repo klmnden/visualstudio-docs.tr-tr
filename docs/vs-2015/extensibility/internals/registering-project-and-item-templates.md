@@ -1,14 +1,9 @@
 ---
 title: Proje ve öğe şablonlarını kaydetme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771388"
 ---
 # <a name="registering-project-and-item-templates"></a>Proje ve Öğe Şablonlarını Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
 ### <a name="registering-file-filters"></a>Dosya filtreleri kaydediliyor  
  İsteğe bağlı olarak, filtre kaydedebilirsiniz, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dosya adları için istediğinde kullanır. Örneğin, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtre **açık dosya** iletişim kutusudur:  
   
- **Visual C# dosyaları (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   
  Birden çok filtre kaydını desteklemek için her bir filtrenin hkey_local_machıne\software\microsoft\visualstudio altında kendi alt kayıtlı\\<*sürüm*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*alt*>. Alt anahtar adı isteğe bağlıdır; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] alt anahtarının adı yoksayar ve yalnızca değerlerini kullanır.  
   
@@ -117,7 +112,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
   
  \Form  
   
- \Web Sayfası  
+ \Web Page  
   
  \HelperFiles (çok dosyalı proje öğelerinde kullanılan dosyaları içerir)  
   
@@ -128,4 +123,3 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
  [Sihirbazlar](../../extensibility/internals/wizards.md)   
  [Uygulamaları yerelleştirme](../../ide/localizing-applications.md)   
  [Genişletme Projeleri için Genellikle Kullanılan Nesnelerin CATID’leri](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

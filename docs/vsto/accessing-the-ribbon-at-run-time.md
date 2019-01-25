@@ -12,15 +12,15 @@ helpviewer_keywords:
 - RibbonManager class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989496"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876232"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Şerit, çalışma zamanında erişme
   Gösterme, gizleme ve Şerit değiştirme için kod yazma ve bir özel görev bölmesi, Eylemler bölmesi veya Outlook form bölgesi denetimlerinden kodu çalıştırmak kullanıcıları etkinleştirin.  

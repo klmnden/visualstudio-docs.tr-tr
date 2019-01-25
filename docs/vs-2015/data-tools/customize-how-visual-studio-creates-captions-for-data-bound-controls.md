@@ -3,10 +3,8 @@ title: Visual Studio 2015 açıklamalı alt yazılar verilere bağlı denetimler
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,13 @@ ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 38d2e1241c3b16e5bb5cc66531515688d75d52d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065386"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834961"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +57,7 @@ ms.locfileid: "53065386"
 > [!CAUTION]
 >  Kayıt Defteri Düzenleyicisi'nde her şeyi yaparken çok dikkatli olmanız gerekir. Düzenlemeden önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sistemini yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözülebilir garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.
 >
->  Yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeler aşağıdaki Bilgi Bankası makalesi içerir: [Microsoft Windows kayıt defterine açıklama](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+>  Aşağıdaki Bilgi Bankası makalesi, yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterine açıklama](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresi akıllı açıklamalı alt yazı davranışını değiştirmek için
 

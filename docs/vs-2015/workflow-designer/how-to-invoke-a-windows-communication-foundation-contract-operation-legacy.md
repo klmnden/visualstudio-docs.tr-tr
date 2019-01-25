@@ -1,25 +1,22 @@
 ---
-title: 'Nasıl yapılır: bir Windows Communication Foundation sözleşme işlemi (eski) çağırma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir Windows Communication Foundation sözleşme işlemi (eski) çağırma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5e59d5ed9617d4be71a0542e35dd509d9035ae33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761693"
 ---
-# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: bir Windows Communication Foundation sözleşme işlemi (eski) Çağır
+# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: Windows Communication Foundation Sözleşme İşlemi Çağırma (Eski)
 Bu konu nasıl çağrılacağını açıklar bir [!INCLUDE[indigo1](../includes/indigo1-md.md)] sözleşme işlemi kullanılarak [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Sürükleme sonra bir **SendActivity** etkinlik iş akışı tasarım yüzeyine araç kutusundan, var olan bir sözleşmeyi içeri aktarabilir ve hangi işlemi, çağrılacak belirlemek **SendActivity** Etkinlik. Sözleşmeniz ve aracılığıyla işlemlerini belirleyin [seçin işlemi iletişim kutusu (eski)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
@@ -52,5 +49,5 @@ Bu konu nasıl çağrılacağını açıklar bir [!INCLUDE[indigo1](../includes/
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlem iletişim kutusu (eski) seçin](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Nasıl yapılır: bir WCF sözleşmesi işlemi (eski) uygulama](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Nasıl yapılır: Bir WCF sözleşmesi işlemi (eski) uygulama](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Eski İş Akışı Etkinlikleri ](../workflow-designer/legacy-workflow-activities.md)

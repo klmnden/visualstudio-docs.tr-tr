@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964656"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868280"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerdeki önbelleğe alınmış veriler
   Belge düzeyi özelleştirmeleri işleminin birincil amacı, Office belgeleri görünümden veri ayırmaktır. Veri, sayı ve metin içeren belge içinde depolanan bilgileri ifade eder. Görünümü kullanıcı arabirimi hem de Microsoft Office Excel ve Microsoft Office Word nesne modeli anlamına gelir.  
@@ -56,7 +56,7 @@ ms.locfileid: "53964656"
   
 ||Veri önbelleği|Özel XML bölümleri|  
 |-|----------------|----------------------|  
-|Office uygulamaları bu kullanabilir miyim?|Aşağıdaki uygulamalar için belge düzeyi özelleştirmeleri:<br /><br /> -Excel<br />-Word|Aşağıdaki uygulamalar için belge düzeyi ve uygulama düzeyi Çözümler:<br /><br /> -Excel<br />-PowerPoint<br />-Word|  
+|Office uygulamaları bu kullanabilir miyim?|Aşağıdaki uygulamalar için belge düzeyi özelleştirmeleri:<br /><br /> -Excel<br />-Word|Aşağıdaki uygulamalar için belge düzeyi ve uygulama düzeyi Çözümler:<br /><br /> -Excel<br />-   PowerPoint<br />-Word|  
 |Hangi veri türlerini depolayabilir miyim?|Belirli gereksinimleri karşılayan, özelleştirme bütünleştirilmiş kodu genel nesne. Daha fazla bilgi için [veriyi önbelleğe alma](../vsto/caching-data.md).|Herhangi bir XML verisi.|  
 |Microsoft Office uygulamaları başlatmadan verilere erişebilir?|Kullanarak Evet, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|Evet, de sınıfları kullanarak <xref:System.IO.Packaging> ad veya Open XML biçimi SDK'sını kullanarak.|  
   

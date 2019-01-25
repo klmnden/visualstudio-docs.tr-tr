@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879140"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865898"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint için Web bölümleri oluşturma
   Web Bölümleri'ni kullanarak, içeriğini, görünümünü ve davranışını bir SharePoint sitesi sayfalarının bir tarayıcı kullanarak değiştirebilirsiniz. Web Bölümleri olan bir web bölümü sayfasının içinde çalışan sunucu tarafı denetimleri: bir SharePoint sitesinde görünen sayfaların yapı taşları oldukları. Bkz: [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkID=182097).  

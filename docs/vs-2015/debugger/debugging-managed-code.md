@@ -1,14 +1,9 @@
 ---
 title: Yönetilen kodda hata ayıklama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: fa3aff01-c271-4aa7-b5b1-def560471c84
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84e41d06fb490cf3528f19eade08000f1ae27587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f65b0308729e19cd43f0c01b9ce6856a3b4d54ea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760503"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [Visual Basic'de Durdur Deyimleri](../debugger/stop-statements-in-visual-basic.md)  
  Açıklar `Stop` bir kesme noktası ayarlamak için bir alternatif sağlayan bir ifade. Örnek kod ayrıca sağlanan, arasında karşılaştırma birlikte `Stop` deyimi ve `End` arasında iyi gibi olarak bir deyim `Stop` ve `Assert` deyimi.  
   
- [İzlenecek yol: Bir Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [İzlenecek yol: Windows Formunda Hata Ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)  
  Bir Windows formu oluşturma ve bu formunda hata ayıklama için adım adım yönergeler sağlar. Windows Form, yönetilen bir Windows uygulamasının standart bir bileşen en yaygın yönetilen uygulamalardan biridir. Bu izlenecek yol, Visual C# ve Visual Basic kullanan, ancak C++ ile bir Windows formu oluşturma tekniklerini genellikle benzerdir.  
   
  [OnStart metodunda hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)  
@@ -66,7 +61,7 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [LINQ ve DLINQ hata ayıklama](../debugger/debugging-linq.md)  
  LINQ sorguları hata ayıklama teknikleri açıklar.  
   
- [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [İzlenecek yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -98,6 +93,3 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [İzlenecek yol: Hata ayıklama özel Windows Forms denetimleri tasarım zamanında](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)
-
-
-

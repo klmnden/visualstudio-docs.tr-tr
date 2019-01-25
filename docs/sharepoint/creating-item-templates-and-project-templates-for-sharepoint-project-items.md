@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, creating custom project and item templates
 - project items [SharePoint development in Visual Studio], creating custom templates
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 134d1f02fe8fc05449d75eddc9156b0d96694030
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842849"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869907"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma
   Özel bir SharePoint proje öğesi türü tanımladığınızda, öğe şablonu veya bir proje şablonu ile ilişkilendirebilirsiniz. Bu ilişkilendirme, proje öğesi Visual Studio'da kullanmak diğer geliştiricilerin sağlar. Ayrıca, şablon için bir sihirbaz oluşturabilirsiniz.
@@ -48,8 +48,8 @@ ms.locfileid: "53842849"
 | İsteğe bağlı dosya | Açıklama |
 |----------------------| - |
 | *Elements.XML* | A *özellik öğesinin* dosya. Bu dosya, kullanıcı Arabirimi ve proje öğesi tarafından oluşturulan özelleştirme davranışını tanımlar. Özelleştirme, liste örnekleri, içerik türleri veya özel eylemler gibi her tür, bu dosyanın içeriğini tanımlayan farklı bir şeması vardır. Daha fazla bilgi için [yapı taşı: Özellikleri](http://go.microsoft.com/fwlink/?LinkId=169183) ve [özellik şemaları](http://go.microsoft.com/fwlink/?LinkId=169192). |
-| *Schema.XML* | Liste tanımları için şema dosyası. Daha fazla bilgi için [yapı taşı: Listeleri ve belge kitaplıklarını](http://go.microsoft.com/fwlink/?LinkId=177792) ve [Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793). |
-| *.WebPart* | A *Web Bölümü tanımı* dosya. Bu dosya, bir Web Bölümü için özellik ayarlarını içerir. Daha fazla bilgi için [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkId=177791). |
+| *Schema.xml* | Liste tanımları için şema dosyası. Daha fazla bilgi için [yapı taşı: Listeleri ve belge kitaplıklarını](http://go.microsoft.com/fwlink/?LinkId=177792) ve [Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793). |
+| *.webpart* | A *Web Bölümü tanımı* dosya. Bu dosya, bir Web Bölümü için özellik ayarlarını içerir. Daha fazla bilgi için [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkId=177791). |
 | *.ascx* | Bir ASP.NET UserControl dosyası. Bu dosya, bir görsel Web Bölümü, kullanıcı arabirimini tanımlar. |
 | *.aspx* | ASP.NET sayfası dosyası. Bu dosya, bir uygulama sayfası tanımlayan XML işaretlemesini içerir. |
 | *.cs* veya *.vb* dosyaları | Bu kod dosyaları Görselden erişilebilir bir programlama modeli olan SharePoint özelleştirmeleri davranışını tanımlamak C# veya uygulama sayfaları, Web Bölümleri ve iş akışları gibi Visual Basic kodu. |

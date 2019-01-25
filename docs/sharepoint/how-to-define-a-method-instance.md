@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Metot örneği tanımlama | Microsoft Docs'
+title: 'Nasıl yapılır: Metot örneği tanımlama | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method instance
 - BDC [SharePoint development in Visual Studio], method
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84a03fe6066911b12ba0e5a413ea3521033bc283
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 630709bd674677d636abe471b8ff63b7f7339abc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952569"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867929"
 ---
-# <a name="how-to-define-a-method-instance"></a>Nasıl Yapılır: Metot örneği tanımlama
+# <a name="how-to-define-a-method-instance"></a>Nasıl yapılır: Metot örneği tanımlama
   Her yöntem için en az bir metot örneği modelinizde tanımlamanız gerekir.  
   
  Kullanarak bir metot örneği Ekle **BDC yöntem ayrıntıları** penceresi. Metot örneği eklediğinizde, Visual Studio ekler bir `<MethodInstance>` model dosyası projenize XML öğesi. Öznitelikleri hakkında daha fazla bilgi için bir `<MethodInstance>` öğesi bkz [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  

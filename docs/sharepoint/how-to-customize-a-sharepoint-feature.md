@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir SharePoint özelliğini özelleştirme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir SharePoint özelliğini özelleştirme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,19 +11,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 867eb1fd64a7318d460a387ededd39e4f188d445
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835480"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868111"
 ---
-# <a name="how-to-customize-a-sharepoint-feature"></a>Nasıl Yapılır: Bir SharePoint özelliğini özelleştirme
+# <a name="how-to-customize-a-sharepoint-feature"></a>Nasıl yapılır: Bir SharePoint özelliğini özelleştirme
   Oluşturun ve Visual Studio özellik Tasarımcısı kullanarak SharePoint özelliklerini özelleştirin. Örneğin, özellik kapsamı ayarlayın ve diğer özellikleri bağımlılıkları olarak ekleyin. Çözüm Gezgini veya SharePoint paket Gezgini içinde yeni bir özellik eklediğinizde, varsayılan olarak, özellik Tasarımcısı açılır.  
   
 ## <a name="opening-the-feature-designer"></a>Özellik Tasarımcısı açma  

@@ -1,11 +1,8 @@
 ---
 title: CorrelationScope etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4a46c50a888808932d071622d83b871761977259
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95c8422d53903c3c7b81db9f6ef042c5ea9ff1c1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173205"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833816"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope Etkinlik Tasarımcısı
 **CorrelationScope** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.CorrelationScope> alt Mesajlaşma etkinlikleri kullanarak örtük yönetimini sağlayan etkinlik bir <xref:System.ServiceModel.Activities.CorrelationHandle> nesne.  
@@ -39,7 +36,7 @@ ms.locfileid: "49173205"
 ### <a name="the-correlationscope-properties"></a>CorrelationScope özellikleri  
  Aşağıdaki tabloda <xref:System.ServiceModel.Activities.CorrelationScope> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler olabilir ya da düzenlenebilir **özellikleri** penceresi veya [!INCLUDE[wfd2](../includes/wfd2-md.md)] Tasarımcı yüzeyi ve çoğunlukla her ikisinde de.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|İsteğe bağlı kolay adı <xref:System.ServiceModel.Activities.InitializeCorrelation> etkinlik.|  
 |<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Belirtir <xref:System.ServiceModel.Activities.CorrelationHandle> alt Mesajlaşma etkinlikleri yönetmek için kullanılır. Bu özelliği ayarlamazsanız <xref:System.ServiceModel.Activities.CorrelationScope> örtük oluşturur <xref:System.ServiceModel.Activities.CorrelationHandle> otomatik olarak.|  

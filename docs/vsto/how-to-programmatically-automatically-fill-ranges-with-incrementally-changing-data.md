@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 867f59c04e9d0f99b36e6a067ad9a5cbc1041f46
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 94652358e18b18255a92444672cc59528cb0b2e2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088328"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866503"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Nasıl yapılır: Program aracılığıyla otomatik biçimde aralıkları artımlı şekilde değişen verilerle ile doldurun.
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne değerlerle otomatik olarak çalışma sayfasındaki bir aralığı doldurmanıza olanak sağlar. Çoğu zaman <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> yöntemi artımlı olarak artan veya azalan bir aralıktaki değerleri depolamak için kullanılır. Gelen isteğe bağlı bir sabit sağlanarak davranış belirtebilirsiniz <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> sabit listesi.  

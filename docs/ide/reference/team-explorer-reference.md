@@ -6,12 +6,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b4ab4677e8fe8fec9f1915d79cbcf841787cb48
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840758"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834173"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer başvurusu
 
@@ -80,8 +80,12 @@ Bkz: [Ekle/görünüm dosya ve klasörleri](/azure/devops/repos/tfvc/add-files-s
 - [Outlook'u kullanarak e-posta sorgu sonuçları listesi](/azure/devops/boards/queries/share-plans)
 - [Excel'de sorgudan raporlar oluşturma](/azure/devops/report/excel/create-status-and-trend-excel-reports) (yalnızca TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > Yeni bir [iş öğelerini deneyimi](/azure/devops/boards/work-items/set-work-item-experience-vs) Visual Studio 2019 Önizleme 1. Visual Studio 2019 Preview 1'de iş öğelerini görüntüleme hakkında daha fazla bilgi için bkz: [görünümü ve iş öğelerini eklemek](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Yapılar sayfasında
 

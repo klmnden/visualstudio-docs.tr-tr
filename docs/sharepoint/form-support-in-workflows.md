@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cda1d413eac76136e3ea40bfec02322927c2368
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857977"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868807"
 ---
 # <a name="form-support-in-workflows"></a>İş akışlarında form desteği
   Bir iş akışında formlarının dört türleri kullanılabilir: İlişkilendirme ve başlatma, görev ve değiştirme. Bu form türleri ASPX form ya da bir InfoPath formunu temel alabilir. Destek düzeyini [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] belirli bir form aşağıdaki tablolarda açıklanan çeşitli etkenlere bağlıdır sağlar. İş akışı form türleri hakkında daha fazla bilgi için bkz. [iş akışı Forms'a genel bakış](http://go.microsoft.com/fwlink/?LinkId=185228).  

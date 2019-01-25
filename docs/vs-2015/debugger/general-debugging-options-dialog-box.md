@@ -1,14 +1,9 @@
 ---
 title: Genel, hata ayıklama, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.General
 - VS.ToolsOptionsPages.Debugger.General
@@ -26,13 +21,13 @@ ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3a9e0b8008da5b648ae156235a20964fc0952b1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742776"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834904"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51742776"
   
  1\) yerel kod, COM birlikte çalışabilirliği kullanılarak yönetilen kodu çağırır ve yönetilen kod bir özel durum oluşturduğunda. Bkz: [COM birlikte çalışma'ya giriş](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) ne zaman 1 uygulama etki alanında çalışan yönetilen kod 2 uygulama etki alanındaki yönetilen kodu çağırır ve 2 uygulama etki alanındaki kod bir özel durum oluşturur. Bkz: [uygulama etki alanlarıyla programlama](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) ne zaman 1 uygulama etki alanında çalışan yönetilen kod 2 uygulama etki alanındaki yönetilen kodu çağırır ve 2 uygulama etki alanındaki kod bir özel durum oluşturur. Bkz: [uygulama etki alanlarıyla programlama](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
  3\) zaman kod, yansıma kullanarak bir işlev çağırdığında ve işlev bir özel durum oluşturur. Bkz: [yansıma](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
@@ -191,6 +186,3 @@ ms.locfileid: "51742776"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)
-
-
-

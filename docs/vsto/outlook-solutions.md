@@ -13,17 +13,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], Outlook
 - Outlook [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], Outlook solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1849a832bcc2bda8ea63b9939968ea44f5cd5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5537b07263cbdf48da9a0ce2e5705b8bd71941e9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868702"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870028"
 ---
 # <a name="outlook-solutions"></a>Outlook çözümleri
   Visual Studio, Microsoft Office Outlook için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, Outlook otomatikleştirmek, Outlook özellikleri genişletmek veya Outlook kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. VSTO eklentileri hakkında daha fazla bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).  

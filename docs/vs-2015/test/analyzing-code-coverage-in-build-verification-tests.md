@@ -1,24 +1,19 @@
 ---
 title: Derleme doğrulama testlerinde kod kapsamını çözümleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b67986e42a914c73dea99f97611967aa6ee24097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7525fe8e01922880199275576a8b12ec29bc029
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905460"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834939"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Derleme Doğrulama Testlerinde Kod Kapsamını Çözümleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Microsoft Visual Studio kod kapsamı analizi, kodunuzun ne kadarını otomatik s
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

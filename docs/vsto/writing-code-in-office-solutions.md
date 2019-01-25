@@ -28,17 +28,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], writing code
 - Office applications [Office development in Visual Studio], programming model
 - managed code extensions [Office development in Visual Studio], writing code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942979"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864078"
 ---
 # <a name="write-code-in-office-solutions"></a>Office çözümlerinde kod yazma
   Visual Studio'da proje türlerinde farklı Office projelerinde kod yazma bazı yönlerini vardır. Bu farklılıkların birçoğu, Office nesne modelleri, yönetilen kod için sunulan şekilde ilgilidir. Diğer farklar Office projeleri tasarımını ilgilidir.

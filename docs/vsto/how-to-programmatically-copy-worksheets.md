@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], copying worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4763565e426560178d697723257c1a22bb50ca0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 64121ffcb69eb4bc3cdaa901ffe3d52014630779
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087782"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865391"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla kopyalama
   Çalışma kopyasını oluşturma ve çalışma önce veya sonra mevcut bir çalışma kitabında ekleyin. Çalışma sayfası ekleneceği konum belirtmezseniz, Excel çalışma sayfası yeni içeren yeni bir çalışma kitabı oluşturur.  

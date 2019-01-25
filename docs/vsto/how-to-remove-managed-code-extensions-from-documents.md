@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belgelerden yönetilen kod uzantılarını kaldırma'
+title: 'Nasıl yapılır: Belgelerden yönetilen kod uzantılarını kaldırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f1acdec565a2d03b98a2423f500d527934235bd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964779"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874885"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Nasıl Yapılır: Belgelerden yönetilen kod uzantılarını kaldırma
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Nasıl yapılır: Belgelerden yönetilen kod uzantılarını kaldırma
   Bir belge veya Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirmesinde parçası olan bir çalışma kitabı özelleştirme bütünleştirilmiş kodu programlı olarak kaldırabilirsiniz. Kullanıcılar, ardından belgeleri açın ve içeriğini görüntülemek, ancak belgeye eklediğiniz herhangi bir özel kullanıcı arabirimi (UI) görüntülenmez ve kodunuzu çalışmaz.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

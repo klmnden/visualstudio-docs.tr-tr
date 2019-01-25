@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26ea7bb1cc9dcea4c5bdc0c43a68a05e8211b40c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913942"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873853"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: Bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve Visual Studio'da bir öğe şablonunu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonunuzu yeni bir proje öğesi örneğini bir projeye eklemek için kullandıkları, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
@@ -43,7 +43,7 @@ ms.locfileid: "53913942"
   
 - Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
   
-- Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- The Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
   Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   

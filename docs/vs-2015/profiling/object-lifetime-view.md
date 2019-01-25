@@ -1,14 +1,9 @@
 ---
 title: Nesne ömrü görünümü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -21,20 +16,20 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756440"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833693"
 ---
 # <a name="object-lifetime-view"></a>Nesne Ömrü Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri toplayın** performans oturumu özellikleri sayfasında denetlenir.  
   
- Çöp toplayıcı, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için, yönetilen yığın üç nesle ayrılır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.  
+ Çöp toplayıcı, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için Yönetilen yığın üç kuşaklar halinde ayrılmıştır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.  
   
  Çöp toplayıcı tüm nesneleri nesil serbest bırakarak belleği geri kazanır. Profili oluşturulan uygulama tarafından oluşturulan nesneler için nesne ömrü görünümü sayısına ve boyutuna nesneleri ve geri alındığını nesil görüntüler.  
   
@@ -81,6 +76,3 @@ Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)
-
-
-

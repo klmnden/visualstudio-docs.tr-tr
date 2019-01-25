@@ -1,26 +1,21 @@
 ---
 title: Projeler ve düzenleyiciler için ek kaynak denetimi yönergeleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c52244aa91217ae57d4265ce37a530b2e48d0e93
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 376b297e94cc8e5f429254bdc981aea994b27130
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770697"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758980"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Projeler ve Düzenleyiciler için Ek Kaynak Denetimi Yönergeleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,4 +37,3 @@ Projeler ve düzenleyiciler için kaynak denetimi desteklemek için uyması kura
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimini Destekleme](../../extensibility/internals/supporting-source-control.md)
-

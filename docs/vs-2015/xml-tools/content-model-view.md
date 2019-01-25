@@ -1,25 +1,20 @@
 ---
 title: İçerik modeli görünümünü | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790600"
 ---
 # <a name="content-model-view"></a>İçerik Modeli Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,6 +118,3 @@ Yerel ve genel şema düğümlerini ve basit ve karmaşık türler, öğe, model
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Şema Tasarımcısı Çalışma Alanı](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

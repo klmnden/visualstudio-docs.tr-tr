@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma'
+title: 'Nasıl yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
 - worksheets [Office development in Visual Studio], scrolling records
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47a95db3797592f4c8d55ffa72e0e7323d251378
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897476"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863610"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl Yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
   Aşağıdaki yordam bir Microsoft Office Excel çalışma sayfasındaki tüm kayıtlarda gezinin son kullanıcının etkinleştirme denetimleri ile bir veritabanı tablosundan tek bir alan görüntülemek için tasarımcı kullanmayı gösterir.  
   
  Tasarımcı yalnızca belge düzeyinde projelerde kullanabilirsiniz. Ancak, ayrıca denetimler ekleme ve bunları programlı olarak çalışma zamanında verilere bağlayın. Daha fazla bilgi için [izlenecek yol: VSTO eklenti projesinde basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  

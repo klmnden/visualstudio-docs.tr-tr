@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postAction> element
 - <postAction> element
 - postAction element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958806"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867128"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; öğesi (Visual Studio'da Office Geliştirme)
   `postAction` Öğesinin `vstav3` ad alanı içerir `entrypoint` öğeleri ve tüm `postActionData` Office çözümleri yüklendikten sonra çalışan dağıtım sonrası eylemleri ile ilişkili olan öğeler.

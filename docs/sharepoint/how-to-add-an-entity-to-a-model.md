@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Modele bir varlık ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Modele bir varlık ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], adding an entity
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity
 - BDC [SharePoint development in Visual Studio], adding an entity
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 347728ac4f096359f06ca7823adfcd1b25ff527a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b269bb18580784fb08d9b081a37935c7b3f37627
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964040"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864669"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>Nasıl Yapılır: Modele bir varlık ekleme
+# <a name="how-to-add-an-entity-to-a-model"></a>Nasıl yapılır: Modele bir varlık ekleme
   Bir varlık oluşturmak için Visual Studio'dan bir varlık denetimi ekleme **araç kutusu** İş Verileri Bağlantısı (BDC) tasarımcıya.  
   
 ### <a name="to-add-an-entity-to-the-model"></a>Modele bir varlık eklemek için  

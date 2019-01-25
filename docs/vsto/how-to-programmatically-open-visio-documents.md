@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla Visio belgelerini açma'
+title: 'Nasıl yapılır: Program aracılığıyla Visio belgelerini açma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], opening Visio documents
 - Visio [Office development in Visual Studio], opening Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c9e9eb6a298270deb4f66c38662b0c52d7ee76f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875728"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864455"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Nasıl Yapılır: Program aracılığıyla Visio belgelerini açma
+# <a name="how-to-programmatically-open-visio-documents"></a>Nasıl yapılır: Program aracılığıyla Visio belgelerini açma
   Mevcut Microsoft Office Visio belgelerini açma için iki yöntem vardır: Açık ve OpenEx. OpenEx yöntemi, çağırana nasıl belge açılır belirtebilirsiniz bağımsız değişkenleri sağlar dışında açık yönteme aynıdır.  
   
  Nesne modeli hakkında daha fazla ayrıntı için VBA başvuru belgelerine bakın [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Documents.Open) yöntemi ve [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) yöntem.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Eşlenmiş klasörler ekleme ve kaldırma | Microsoft Docs'
+title: 'Nasıl yapılır: Eşlenmiş klasörler ekleme ve kaldırma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, mapped folders
 - mapped folders [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 357eb8c16487f625d4c2a7c675e3709f2190ca03
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823935"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871864"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Nasıl yapılır: eşlenmiş klasörler ekleme ve kaldırma
   Görüntüleri ve düzenleri, katıştırılmış derin bir şekilde dosya hiyerarşide olarak bazı klasörler SharePoint, yaygın olarak kullanılan. Bu klasörleri daha kolay erişmek için bir SharePoint projesine eşleyebilirsiniz. Eşlenen klasörler SharePoint Server'ın yükleme dosyalarının fiziksel konuma karşılık gelen SharePoint Proje klasörlerdir.  

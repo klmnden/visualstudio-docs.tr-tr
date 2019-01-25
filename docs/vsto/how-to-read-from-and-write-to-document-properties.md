@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Okuma ve yazma için belge özellikleri'
+title: 'Nasıl yapılır: Okuma ve yazma için belge özellikleri'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], properties
 - document properties [Office development in Visual Studio]
 - Excel [Office development in Visual Studio], document properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51add739e6303a62eb3333c4a173fa0d2e58f2f1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825428"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862635"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Nasıl Yapılır: Okuma ve yazma için belge özellikleri
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Nasıl yapılır: Okuma ve yazma için belge özellikleri
   Bir belge yanı sıra belge özellikleri depolayabilirsiniz. Office uygulamaları birkaç yazar, başlık ve konu gibi yerleşik özellikler sağlar. Bu konu, Microsoft Office Excel ve Microsoft Office Word belgesi özelliklerini ayarlamak gösterilmektedir.  
   
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Erişim ve Microsoft Word özel belge özelliklerini değiştirmek mi? ](http://go.microsoft.com/fwlink/?LinkId=136772).  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df3efc1bce5cccc88425735e50daba63f31ee922
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869525"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862622"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook form bölgelerindeki özel eylemler
   Bir Microsoft Office Outlook öğesine yanıt vermesine olanak sağlayan bir düğme eylemleri görüntüler. Örneğin, bir posta öğesine yanıt vermek için kullanıcılar'ı tıklatın **yanıt**, **Tümünü Yanıtla**, veya **İleri** eylem düğmeleri. Bu eylemlerin her biri yeni bir posta öğesi oluşturur ve öğenin alan özgün öğeden bilgileri kullanarak doldurur.  

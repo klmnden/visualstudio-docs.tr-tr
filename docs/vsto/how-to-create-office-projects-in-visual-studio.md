@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Visual Studio'da Office projeleri oluşturma"
+title: "Nasıl yapılır: Visual Studio'da Office projeleri oluşturma"
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -20,17 +20,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38be1ae60dd86160bc9b107ffc0bdd19f7a1e56d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902246"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867188"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Office projeleri oluşturma
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  

@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847424"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873216"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Kullanmaya başlama (SharePoint geliştirme için Visual Studio'da) alma
   Bu bölüm ile çalışmaya başlamanıza yardımcı olur. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] yararlanan SharePoint çözümleri geliştirmek üzere [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].

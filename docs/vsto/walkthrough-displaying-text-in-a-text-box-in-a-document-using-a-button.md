@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - text boxes, displaying text in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd685ea02dc8943edc1aa214b97b61d0fa9ff35b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910145"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863623"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme
   Bu yönerge, düğmeler ve belge düzeyi özelleştirmesinde metin kutuları için Microsoft Office Word nasıl kullanılacağını gösterir.  
@@ -70,7 +70,7 @@ ms.locfileid: "53910145"
   
    |Özellik|Değer|  
    |--------------|-----------|  
-   |**Ad**|**E:System.Windows.Forms.Control.Click**|  
+   |**Ad**|**insertText**|  
    |**Metin**|**Metin Ekle**|  
   
    Artık düğmesine tıklandığında çalıştırılacak olan kodu yazabilirsiniz.  

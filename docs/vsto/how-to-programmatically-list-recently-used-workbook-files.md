@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Son çalışma kitabı dosyalarını program aracılığıyla listesi kullanılan'
+title: 'Nasıl yapılır: Son çalışma kitabı dosyalarını program aracılığıyla listesi kullanılan'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - RecentFiles property
 - Excel [Office development in Visual Studio], recently used files listing
 - recent file list, Excel
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6451aa5427799f0905d19b7b90e87f8cca3d0bbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989639"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863194"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Nasıl Yapılır: Son çalışma kitabı dosyalarını program aracılığıyla listesi kullanılan
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Nasıl yapılır: Son çalışma kitabı dosyalarını program aracılığıyla listesi kullanılan
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Özelliği, Microsoft Office Excel son kullanılan dosyalar listesinde görünen tüm dosyaların adlarını içeren bir koleksiyon döndürür. Liste uzunluğu korumak için kullanıcının seçtiği dosyaları sayısına bağlı olarak değişir. Bir aralıktaki sonuçlarını görüntüleyebilirsiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

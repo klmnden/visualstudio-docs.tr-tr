@@ -1,25 +1,20 @@
 ---
-title: '5. adım: Etiket başvuruları ekleme | Microsoft Docs'
-ms.custom: ''
+title: '5. Adım: Etiket başvuruları ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 829911bc2f08010b9e0d3d9c710862097720d4df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: baae597f606b6333f15ba114d31af2cb0cf28836
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285230"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833671"
 ---
 # <a name="step-5-add-label-references"></a>5. Adım: Etiket Başvuruları Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +48,6 @@ Tek bir simgeyi gösteren eşleştirme oyunu
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [6. adım: Zamanlayıcı ekleme](../ide/step-6-add-a-timer.md).  
+-   Sonraki öğretici adımına gitmek için bkz: [adım 6: Bir zamanlayıcı ekleyin](../ide/step-6-add-a-timer.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [4. adım: her etikete bir tıklayın olay işleyicisi ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md).
-
-
-
+-   Önceki öğretici adımına dönmek için bkz: [4. adım: Her etikete Click olay işleyicisi ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md).

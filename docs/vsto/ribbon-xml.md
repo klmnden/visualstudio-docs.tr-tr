@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929581"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869443"
 ---
 # <a name="ribbon-xml"></a>Şerit XML
   Şerit (XML) öğesini Şerit XML kullanarak özelleştirmenize olanak sağlar. Şerit (Görsel Tasarımcı) öğesi tarafından desteklenmeyen bir biçimde Şerit özelleştirmek istiyorsanız Şerit (XML) öğesini kullanın. Her bir öğeyle neler yapabileceğinizi bir karşılaştırması için bkz [Şerite Genel Bakış](../vsto/Ribbon-overview.md).  

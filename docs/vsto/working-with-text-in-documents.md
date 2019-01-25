@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], text
 - text [Office development in Visual Studio]
 - documents [Office development in Visual Studio], text
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31b6acfaa4ff971b9b5fbf4be5e4509a91df60a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac4ca433a942222134705af3b71e6dcace6d60ca
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960897"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865001"
 ---
 # <a name="work-with-text-in-documents"></a>Belgelerde metinle çalışma
   Bu bölümdeki konularda, metin Office projeleri ile çalışmak için Microsoft Office Word nesne modeli kullandığınız için adım adım yordamları ve kod örneklerini sağlar.  

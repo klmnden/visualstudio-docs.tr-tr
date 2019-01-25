@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 384b96364af71436c3f769ea1da3a7515185696c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904159"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863870"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma
   Bu izlenecek yol, bir SharePoint özel ana sayfasını ve görüntüye sahip bir site sayfasını içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.  
@@ -40,7 +40,7 @@ ms.locfileid: "53904159"
 
 -   Visual Studio.  
 
--   SharePoint Designer 2010'u.  
+-   SharePoint Designer 2010.  
 
 ## <a name="create-items-in-sharepoint-designer"></a>SharePoint Tasarımcısı'nda öğeleri oluşturma
  Bu örnekte, üç öğeye dışarı aktarma için SharePoint Tasarımcısı'nda oluşturma işlemi gösterilmektedir: özel bir ana sayfa, özel ana sayfa ve site sayfasında görünecek bir resim dosyası başvuran bir site sayfası. Görüntü, SharePoint /images/ klasörüne eklenir.  

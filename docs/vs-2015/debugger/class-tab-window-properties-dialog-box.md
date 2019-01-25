@@ -1,27 +1,22 @@
 ---
 title: Sınıf sekmesi, pencere Özellikleri iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eba6a12714c1b4f58ae9d6bb17f696c3c452411
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a7f81a100b2c2311444732434df0f5c5599742a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773586"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Sınıf Sekmesi, Pencere Özellikleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,6 +38,3 @@ Kullanım **sınıfı** seçilen pencere sınıf üzerinde bilgi göstermek içi
 |**Simge tanıtıcı**|Windows, bu sınıfın ("none" herhangi bir simge varsa) ile ilişkili simge tanıtıcı.|  
 |**İmleç tanıtıcı**|Windows, bu sınıfın ("none" Hiçbir imleç varsa) ile ilişkili imleci için tanıtıcı.|  
 |**Arka plan Fırçası**|Windows Bu sınıf ya da bir pencere arkaplanı ("none" fırça yok ise) boyama için önceden tanımlanmış COLOR_ * renge ilişkilendirildiği arkaplan Fırçası için tanıtıcı.|
-
-
-

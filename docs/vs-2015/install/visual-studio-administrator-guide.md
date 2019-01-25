@@ -1,14 +1,9 @@
 ---
 title: Visual Studio Yönetici Kılavuzu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,13 +12,13 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722817"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834883"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağ�
 ## <a name="controlling-what-is-installed"></a>Yüklenenler denetleme  
  Son kullanıcınızın yükleyebilmek için denetlemek istiyorsanız, iki seçenek vardır: yönetici dosya yükleme ve komut satırı seçenekleri. Amacınız ne, son kullanıcı kendi Visual Studio yükleyicisi deneyiminden seçebilir kısıtlamak için ise yönetici Dosya Yükleme'yi seçin. Bir başlangıç yapılandırması oluşturma, ancak kendi Visual Studio yükleyicisi deneyiminizi seçmek, son kullanıcı izin vermek istiyorsanız, komut satırı parametreleri seçin.  
   
- Yönetici dosya deneyimi hakkında daha fazla bilgi için bkz [nasıl yapılır: bir katılımsız yükleme Visual Studio'nun oluşturup](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) ve [nasıl yapılır:VisualStudio'yudağıtırkenürünanahtarlarınıotomatikolarakuygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Komut satırı denetimleri hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin komut satırı parametreleri kullanmak](../install/use-command-line-parameters-to-install-visual-studio.md) sayfası.  
+ Yönetici dosya deneyimi hakkında daha fazla bilgi için bkz. [nasıl yapılır: Oluşturma ve Visual Studio katılımsız yükleme çalıştırma](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) ve [nasıl yapılır: Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Komut satırı denetimleri hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin komut satırı parametreleri kullanmak](../install/use-command-line-parameters-to-install-visual-studio.md) sayfası.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Müşteri geri bildirim ayarlarını belirtme  
  Varsayılan olarak, Visual Studio yüklemesini müşteri geri bildirim sağlar. "0" dizesi için aşağıdaki kayıt defteri anahtarının değerini değiştirerek tek tek bilgisayarlarda müşteri geri bildirimleri devre dışı bırakmak için Visual Studio yapılandırabilirsiniz:  
@@ -73,8 +68,8 @@ Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağ�
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl Yapılır: Visual Studio’nun Belirli Bir Sürümünü Yükleme](../install/how-to-install-a-specific-release-of-visual-studio.md)|Geçerli sürümde olan belirli yapılandırmalar yüklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Nasıl Yapılır: Katılımsız Visual Studio Yüklemesi Oluşturma ve Çalıştırma](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Nasıl yüklendiğini açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katılımsız modda.|  
-|[Nasıl Yapılır: Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Birden çok makineye dağıtırken ürün anahtarlarını uygulama açıklar.|  
+|[Nasıl yapılır: Visual Studio'nun belirli bir sürüm yükleyin](../install/how-to-install-a-specific-release-of-visual-studio.md)|Geçerli sürümde olan belirli yapılandırmalar yüklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Nasıl yapılır: Oluşturma ve Visual Studio katılımsız yükleme çalıştırma](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Nasıl yüklendiğini açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katılımsız modda.|  
+|[Nasıl yapılır: Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Birden çok makineye dağıtırken ürün anahtarlarını uygulama açıklar.|  
 |[Yardım Görüntüleyicisi Yönetici Kılavuzu](../ide/help-viewer-administrator-guide.md)|Yerel Yardım yüklemelerini olması ya da internet erişimi olmaması ağ ortamları yönetme hakkında bilgi sağlar.|  
 |[Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)|Yönergeler ve nasıl yükleneceğini açıklayan konulara bağlantılar sağlamaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

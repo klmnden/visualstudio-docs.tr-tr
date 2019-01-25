@@ -12,17 +12,17 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9d4fe908e372a478d382a1087a7d7e1363dbef5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824742"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864390"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma
   Bu yönerge, ilişki ve başlatma formlarını kullanımını içeren bir temel sıralı iş akışının nasıl oluşturulacağını gösterir. Öncelikle SharePoint Yöneticisi tarafından (İlişkilendirme formu) ilişkili ve iş akışı (başlatma formu) kullanıcı tarafından yeniden başlatıldığında, bir iş akışına eklenecek parametrelerini etkinleştirme ASPX forms şunlardır.  

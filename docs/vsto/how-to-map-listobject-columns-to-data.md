@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ListObject sütunlarıyla verileri eşleme'
+title: 'Nasıl yapılır: ListObject sütunlarıyla verileri eşleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - ListObject control, mapping data
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 508a0fa8df58e70eb216f722ee96395c7a9c21ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 276b606bbd4f87898916a6e7ca1dbf57ce3d6716
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899989"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873788"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Nasıl Yapılır: ListObject sütunlarıyla verileri eşleme
+# <a name="how-to-map-listobject-columns-to-data"></a>Nasıl yapılır: ListObject sütunlarıyla verileri eşleme
   Bağladığınızda bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi bir <xref:System.Data.DataTable>, listedeki tüm sütunları görüntülemek istemeyebilirsiniz veya verilerine bağlı olmayan bazı sütunları olabilir. Görünmesini istediğiniz sütunları eşlemeniz <xref:Microsoft.Office.Tools.Excel.ListObject> çağırdığınızda <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> yöntemi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

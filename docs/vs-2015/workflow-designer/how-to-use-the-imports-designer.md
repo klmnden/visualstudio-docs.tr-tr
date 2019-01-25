@@ -1,11 +1,8 @@
 ---
-title: 'Nasıl yapılır: içeri aktarmalar Tasarımcısını kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: İçeri aktarmalar Tasarımcısını kullanma | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,15 +10,15 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6eed27b9bfef272035f299af1a68a3788587f3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875508"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759927"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Nasıl yapılır: içeri aktarmalar Tasarımcısını kullanma
+# <a name="how-to-use-the-imports-designer"></a>Nasıl yapılır: İçeri Aktarmalar Tasarımcısını Kullanma
 İçe Aktarılanlar tasarımcısını Deyimlerinizde kullanın türler için ad alanları girmenizi sağlar. Benzer şekilde **aktarır** veya **kullanarak** anahtar sözcükleri Visual Basic .NET ve ad alanlarını içeri aktarmalar Tasarımcısı'nda belirtme #c, ifadeniz yerine tam nitelikli tür adı girmeniz yeterlidir etkinleştir Sürüm türü adı.  
   
  İçe Aktarılanlar tasarımcısını, her iki değişiklik kullanıcı arabiriminde ve iş akışı kaydedildiğinde yapılan değişiklikleri tepki verir. İş akışı kaydedildikten sonra ad alanları için içeri aktarmalar tasarımcısını otomatik olarak eklenebilir. Bunlar aşağıdakileri içerir:  

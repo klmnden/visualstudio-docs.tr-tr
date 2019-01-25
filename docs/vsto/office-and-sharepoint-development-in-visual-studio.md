@@ -16,17 +16,17 @@ helpviewer_keywords:
 - programming [Office development in Visual Studio]
 - VSTO, see Office development in Visual Studio
 - Office, development with Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76043da9815becd6b5cb25a2117b4ff746d6d242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9757593040ca440fdaafc59409b0f4eb68846248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872846"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio'da Office ve SharePoint geliştirme
   Microsoft Office ve SharePoint basit bir uygulama oluşturarak genişletebilir veya kullanıcılar indirir, eklenti [Office Store](https://store.office.com/) veya Kurumsal katalog veya yüklemek, kullanıcıların .NET Framework tabanlı bir çözüm oluşturarak bir bilgisayar.  

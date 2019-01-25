@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b678d0a4a148bbd8a7414c8a7585b50fbc9c01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52d1940b38fbf2cbe24e1e35bc56fb7372f50c89
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855172"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865911"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Özel SharePoint proje öğesi türlerini tanımlama
   Yeni bir SharePoint proje öğesi türünü oluşturmak istediğinizde, yeni bir SharePoint proje öğesi türü tanımlar. Örneğin, Visual Studio SharePoint Proje öğeleri için alanlar ekleyerek veya bir SharePoint sitesi için özel eylemler dahil değildir. Kendi türlerinizi alanları, özel eylemler veya diğer SharePoint bileşenlerini türleri oluşturmak için SharePoint Proje öğeleri tanımlayabilirsiniz.  

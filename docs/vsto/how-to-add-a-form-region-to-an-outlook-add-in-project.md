@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir Outlook eklenti projesine form bölgesi ekleme'
+title: 'Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5e5a549a912a84634c2025a3cfa71e4f6688ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adc1b788c01dca16663fa769ffd69904b04e8a98
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846327"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871006"
 ---
-# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Nasıl Yapılır: Bir Outlook eklenti projesine form bölgesi ekleme
+# <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme
   Bir standart veya özel Microsoft Office Outlook biçimini kullanarak genişletmek için bir form bölgesi oluşturabilir **yeni Outlook Form bölgesi** Sihirbazı. Yeni bir form bölgesi oluşturabilir ve Visual Studio kullanıcı arabiriminde tasarım ya da Outlook'ta tasarlanan form bölgesini içeri aktarabilir ve Visual Basic ekleyin veya C# kod.  
   
  Başka bir Outlook projesinde kullanılan Outlook form bölgesi varsa, onu geçerli Outlook VSTO eklenti projenizde kullanarak tekrar kullanabilirsiniz **varolan öğeyi Ekle** iletişim kutusu. Daha fazla bilgi için [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  

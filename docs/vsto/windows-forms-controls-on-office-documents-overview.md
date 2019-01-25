@@ -22,17 +22,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - Windows Forms controls [Office development in Visual Studio], about Windows Forms controls
 - Office applications [Office development in Visual Studio], Windows Forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbadf9f2e431cfe441b2cd3ef3694f38e019de49
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902499"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872345"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms denetimlerine Office belgeleri genel bakış
   Windows Forms denetimlerini, kullanıcıların girin veya verileri işlemek için etkileşim kurabilir nesnelerdir. Microsoft Office Excel ve Microsoft Office Word için belge düzeyi projeleri, Windows Forms denetimleri belge veya çalışma kitabındaki projenizde tasarım zamanında ekleyebileceğiniz veya program aracılığıyla çalışma zamanında bu denetimler ekleyebilirsiniz. Program aracılığıyla bu denetimleri herhangi bir açık belge veya çalışma zamanında VSTO eklenti Excel veya Word için ekleyebilirsiniz.  

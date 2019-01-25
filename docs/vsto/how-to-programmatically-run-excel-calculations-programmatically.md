@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla Excel hesapları çalıştırma'
+title: 'Nasıl yapılır: Program aracılığıyla Excel hesapları çalıştırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - calculations, running in Excel
 - Excel [Office development in Visual Studio], running calculations programmatically
 - workbooks, running calculations
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e2cbd2f3e74e50c7ff01f6943fdb62e11f1525
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d1a896a7c09a7ce8c84297757d31c31deb49aa6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821067"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871708"
 ---
-# <a name="how-to-programmatically-run-excel-calculations"></a>Nasıl Yapılır: Program aracılığıyla Excel hesapları çalıştırma  
+# <a name="how-to-programmatically-run-excel-calculations"></a>Nasıl yapılır: Program aracılığıyla Excel hesapları çalıştırma  
   Benzer bir süreç hesaplamaları çalıştırmak için kullandığınız bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

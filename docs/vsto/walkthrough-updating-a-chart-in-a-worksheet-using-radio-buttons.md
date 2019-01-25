@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleme'
+title: 'İzlenecek yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae451b42642cd3c124b3fe9d5df627c2306a2020
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891951"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873879"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek yol: Radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleme
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme
   Bu izlenecek yol, kullanıcı seçenekleri arasında kolayca geçiş yapmak için bir yol sağlamak için Microsoft Office Excel çalışma sayfasında radyo düğmeleri kullanmanın temellerini gösterir. Bu durumda, bir grafik stilini seçeneklerini değiştirin.  
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  

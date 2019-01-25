@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], content controls
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123282862f8ab6e7400f14a1aa07942885257e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899658"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864741"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama
   Bu yönerge, içerik denetimleri belge içinde depolanan XML verilerini Word için belge düzeyi özelleştirmesinde bağlamak nasıl gösterir.  

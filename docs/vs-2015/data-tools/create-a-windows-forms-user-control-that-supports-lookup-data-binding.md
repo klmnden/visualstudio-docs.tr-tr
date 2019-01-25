@@ -1,12 +1,9 @@
 ---
 title: Arama verileri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturun | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 786895d045b4ee43d9fbb8cb519fdd47d76b057a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792618"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Arama verileri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,10 +175,9 @@ Windows Forms'ta veri görüntüleme, mevcut denetimleri seçebilirsiniz **araç
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Uygulamayı çalıştırmak için F5 tuşuna basın.  
+-   Uygulamayı çalıştırmak için F5'e basın.  
   
 -   Bazı kayıtlarda gezinmek ve doğrulayın `CompanyName` görünür `LookupBox` denetimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

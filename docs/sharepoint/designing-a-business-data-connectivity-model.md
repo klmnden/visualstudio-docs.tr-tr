@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designing a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d44654e223c24d3040997bdbd7b7bb0e193263a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858389"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865170"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli tasarlama
   Varlıklar ve yöntemleri için bir model dosyası ekleyerek iş verileri bağlantısı (BDC) hizmeti için bir model geliştirebilirsiniz. Bir varlık koleksiyonu veri alanlarını açıklar. Örneğin, bir varlık, bir veritabanındaki bir tabloda temsil edebilir. Bir yöntemi ekleme, silme veya varlıklar tarafından temsil edilen veri güncelleştirme gibi bir görevi gerçekleştirir. Daha fazla bilgi için [iş verilerini SharePoint ile tümleştirmeyi](../sharepoint/integrating-business-data-into-sharepoint.md).  

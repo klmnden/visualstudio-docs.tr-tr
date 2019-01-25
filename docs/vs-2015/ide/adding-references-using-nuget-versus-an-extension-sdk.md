@@ -1,14 +1,9 @@
 ---
 title: Başvuru eklerken NuGet karşı uzantı SDK kullanma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.nuget_package_manager.general
 - vs.toolsoptionspages.nuget_package_manager.package_sources
@@ -16,13 +11,13 @@ ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 29590b96a8d8d2ad8fbddaf0d97b9ed55e6aadf2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763604"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Bir paketi, Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme
 ## <a name="which-mechanism-should-i-use"></a>Hangi mekanizması kullanmalıyım?  
  Aşağıdaki tablo başvuru özelliklerinin bir SDK'sı NuGet başvuru özellikleriyle karşılaştırmanıza yardımcı olur.  
   
-|Özellik|SDK desteği|SDK notları|NuGet desteği|NuGet notları|  
+|Özellik|SDK desteği|SDK notları|NuGet Support|NuGet notları|  
 |-------------|-----------------|---------------|-------------------|-----------------|  
 |Bir varlığı mekanizması başvuruyor ve tüm dosyaları ve işlevsellik sonra kullanılabilir.|Y|Kullanarak bir SDK'sı ekleme **başvuru Yöneticisi** iletişim kutusunu ve tüm dosyaları ve işlevleri geliştirme iş akışı sırasında kullanılabilir.|Y||  
 |MSBuild, derlemeleri ve Windows meta veri (.winmd) dosyalarını otomatik olarak kullanır.|Y|SDK'de başvuruların derleyicinin otomatik olarak geçirilir.|Y||  
@@ -77,6 +72,3 @@ Bir paketi, Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
-
-
-

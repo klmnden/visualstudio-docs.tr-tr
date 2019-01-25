@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belirli bir Bulucu yöntemi ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Belirli bir Bulucu yöntemi ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], return an entity
 - BDC [SharePoint development in Visual Studio], Specific Finder
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93819bea0db3011ed8241389f59e0550d8a3ff84
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913471"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868920"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Nasıl Yapılır: Belirli bir Bulucu yöntemi ekleme
+# <a name="how-to-add-a-specific-finder-method"></a>Nasıl yapılır: Belirli bir Bulucu yöntemi ekleme
   Tek varlık örneğini oluşturarak döndürebilir bir *belirli Bulucu* yöntemi. Bir kullanıcı, bir iş verileri web bölümü veya dış listedeki bir varlık seçtiğinde belirli Bulucu metodunu İş Verileri Bağlantısı (BDC) hizmeti yürütür. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-specific-finder-method"></a>Belirli bir Bulucu yöntemi oluşturmak için

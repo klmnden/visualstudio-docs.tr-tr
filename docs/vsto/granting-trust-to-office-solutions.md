@@ -12,15 +12,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1acc6f73dd52bacdfd62aff3b2da62e559c4fda6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b07aea10d2b1d55e98239d6dd804a506390f1974
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890475"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871383"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Office çözümlerine güven verme
   Kazandırmanız çözüm derlemesini, uygulama bildirimi, dağıtım bildirimini ve belge güvenmeyi her hedef bilgisayarın güvenlik ilkesini değiştirmek Office çözümleri anlamına gelir. Güven Office çözümü için siz veya son kullanıcı tarafından verilebilir.

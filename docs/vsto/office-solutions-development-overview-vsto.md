@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies, Office
 - Office development in Visual Studio, about developing solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 632a584e4c49a28d1f68af726a8f32b270ffca81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4b8378b8f0986e7a02955a9aa0e011c12485ca6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880370"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867097"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office çözümleri geliştirmesine genel bakış (VSTO)
   Çözümleri Microsoft Office'in ön ucu olarak kullanarak, tanıdık Microsoft Office kullanıcı arabirimleri ve sözcük işlem özellikleri Word, Excel verilerini analiz özelliklerini ve Outlook e-posta yönetimi özelliklerini gibi araçları yararlanabilir . Office uygulamalarını özelleştirin ve iş süreçleriniz için gereken belirli özellikleri eklemek için Visual Studio çözümleri geliştirebilirsiniz. Örneğin, Word'ün kullanıma sözleşmeleri düzenlenebilir veya düzenlenemez yapılabilmesi için önceden varolan parçaların çeviren bir sözleşme oluşturucuyu kapatabilirsiniz. Excel ile farklı projeler için özelleştirilmiş bir otomatik bütçe çalışma sayfası oluşturabilirsiniz. Kullanıcılarınızın, karmaşık çözümleri web tabanlı bir mimari kullanırsanız, duruma göre daha pratik hale getiren office çözümlerini çevrimdışı da yararlanabilirsiniz.  

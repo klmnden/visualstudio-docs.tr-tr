@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe8572ea5ac6f2c100d203063dd43b02c78749b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921555"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864195"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Çözüme dosyaları dahil etmek için modül kullanma
   Ne zaman dosyalarını yeni ana sayfalar gibi dosya türlerinin bakılmaksızın SharePoint sunucusuna dağıtmak isteyebilirsiniz zamanlar olabilir. Bunu yapmak için kullanabileceğiniz *modülleri* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] kod modülleri). Modüller, dosyaları bir SharePoint çözümünü kapsayıcılardır. Çözüm dağıtılırken, modül dosyalarında SharePoint sunucusundaki belirtilen klasöre kopyalanır.  

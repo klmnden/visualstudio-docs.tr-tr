@@ -12,17 +12,17 @@ helpviewer_keywords:
 - customizing the Ribbon, tabs
 - custom Ribbon, tabs
 - Custom tab [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30d05c39c9216385d4255055c5d660f79b529ab6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917598"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876102"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma
   Şerit Tasarımcısını kullanarak, özel bir sekme oluşturabilir ve ardından ekleyin ve üzerinde denetimleri konumlandırma.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla çalışma sayfası hücresinde bir dizeyi görüntüleme'
+title: 'Nasıl yapılır: Program aracılığıyla çalışma sayfası hücresinde bir dizeyi görüntüleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - text [Office development in Visual Studio], adding to worksheets
 - worksheets, displaying text in cells
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d97e57f35298a14da5c4098b464f8248b93a0592
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849774"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871812"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Nasıl Yapılır: Program aracılığıyla çalışma sayfası hücresinde bir dizeyi görüntüleme
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Nasıl yapılır: Program aracılığıyla çalışma sayfası hücresinde bir dizeyi görüntüleme
   Bu örnek, bir hücresinde program aracılığıyla metin görüntüleme gösterilmiştir. Metni hücrede görüntülemek için kullanın bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

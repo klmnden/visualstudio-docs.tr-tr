@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir parola korumalı belgede veriyi önbelleğe alma'
+title: 'Nasıl yapılır: Bir parola korumalı belgede veriyi önbelleğe alma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 627469dd3227d82ce1cc97af25d2b8a4537541e5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968423"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868453"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>Nasıl Yapılır: Bir parola korumalı belgede veriyi önbelleğe alma
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>Nasıl yapılır: Bir parola korumalı belgede veriyi önbelleğe alma
   Bir belge veya parola korumalı çalışma kitabı verileri önbelleğe veri eklerseniz, önbelleğe alınan verilerde yapılan değişiklikleri otomatik olarak kaydedilmez. Projenizdeki iki yöntemi geçersiz kılarak, önbelleğe alınan verilerde yapılan değişiklikleri kaydedebilirsiniz.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

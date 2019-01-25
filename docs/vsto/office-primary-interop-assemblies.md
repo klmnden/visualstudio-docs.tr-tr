@@ -9,17 +9,17 @@ helpviewer_keywords:
 - primary interop assemblies
 - assemblies [Office development in Visual Studio], primary interop assemblies
 - Office primary interop assemblies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79651c3404256b3abd7750cdfc20b33abe44c477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926743"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876115"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
 
@@ -115,7 +115,7 @@ Aşağıdaki tablo, kullanılabilen birincil birlikte çalışma derlemelerini l
 |Microsoft Visio 14.0 Web tür kitaplığı olarak Kaydet<br /><br /> Microsoft Visio 15.0 Web tür kitaplığı olarak Kaydet|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Microsoft Visio 14.0 çizim denetimi tür kitaplığı<br /><br /> Microsoft Visio 15.0 çizim denetimi tür kitaplığı|Microsoft.Office.Interop.VisOcx.dll|  
 |Microsoft Word 14.0 Nesne Kitaplığı<br /><br /> Microsoft Word 15.0 Nesne Kitaplığı|[Microsoft.Office.Interop.Word.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.word?view=word-pia)|  
-|Microsoft Visual Basic, uygulama genişletilebilirliği 5.3|Microsoft.VBE.Interop.dll|  
+|Microsoft Visual Basic, uygulama genişletilebilirliği 5.3|Microsoft.Vbe.Interop.dll|  
   
 ### <a name="binding-redirect-assemblies"></a>Bağlama yeniden yönlendirme derlemeleri  
 

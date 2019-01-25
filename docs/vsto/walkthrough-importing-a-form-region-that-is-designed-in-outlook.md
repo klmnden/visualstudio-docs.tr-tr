@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeac6711691de4113ace572790df0bf6ac674dae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956185"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870236"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma
   Bu izlenecek yol, bir Microsoft Office Outlook form bölgesi tasarlama ve kullanarak bu form bölgesini Outlook VSTO eklenti projesi almak gösterilmiştir **Yeni Form bölgesi** Sihirbazı. Outlook form bölgesi tasarlama, yerel Outlook denetimleri form bölgesini Outlook verilere bağlama eklemek mümkün kılar. Form bölgesini içeri aktardıktan sonra her denetim olayları işleyebilir.  

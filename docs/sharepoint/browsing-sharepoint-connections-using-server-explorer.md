@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 825bf975d877cd6b0844e86aabff605daa30a900
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931365"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875491"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın
   Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu tekniği kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. SharePoint site bileşenlerini liste tanımları ve içerik türleri gibi görünen adlı bir düğüm **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda, **görünümü** > **Sunucu Gezgini**. SharePoint site bileşenlerini görüntülenmesinin yanı sıra öğeleri kaldırma, özelliklerini görüntülemek veya kısayol menüsünden komutlarını kullanarak ağaç görünümü yenileyin.  

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864611"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>İzlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma
   SharePoint projeleri, bir veya daha fazla SharePoint Proje öğeleri için kapsayıcılardır. Visual Studio'da SharePoint Proje sisteminin, kendi SharePoint proje öğesi türleri oluşturarak ve ardından bunları bir proje şablonu ile ilişkilendirerek genişletebilirsiniz. Bu kılavuzda, bir site sütunu oluşturmak için bir proje öğesi türü tanımlayacağınızı ve bir site sütunu proje öğesi içeren yeni bir proje oluşturmak için kullanılan bir proje şablonu oluşturup.
@@ -111,7 +111,7 @@ ms.locfileid: "53832157"
 
     -   *Settings.Designer.vb*
 
-    -   Settings.Settings
+    -   Settings.settings
 
 #### <a name="to-create-the-extension-project"></a>Uzantı projesini oluşturmak için
 
@@ -183,7 +183,7 @@ ms.locfileid: "53832157"
 
    - *\Field1\SharePointProjectItem.spdata*
 
-   - *\Features\Feature1\Feature1.Feature*
+   - *\Features\Feature1\Feature1.feature*
 
    - *\Features\Feature1\Feature1.Template.XML*
 

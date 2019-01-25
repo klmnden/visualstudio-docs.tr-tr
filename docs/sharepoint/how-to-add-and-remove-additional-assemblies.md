@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Ek derlemeler ekleme ve kaldırma | Microsoft Docs'
+title: 'Nasıl yapılır: Ek derlemeler ekleme ve kaldırma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,19 +9,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 242ba7fa389a832b1299f00c47ba22a67efc5fbc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887016"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873646"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl Yapılır: Ekleme ve ek bütünleştirilmiş kodları Kaldır
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl yapılır: Ekleme ve ek bütünleştirilmiş kodları Kaldır
   SharePoint paketinin, diğer derlemelerdeki işlevi veya verileri bağlıysa, derlemeleri, çözüm paketine (.wsp) ekleyebilirsiniz. Bu şekilde, SharePoint server özel derlemeler ile bir pakete yüklenmesini sağlar.  
   
  Ayrıca, ekleyin ve güvenli denetimler ve derlemeleri ile ilişkili sınıf kaynak dosyaları değiştirin.  

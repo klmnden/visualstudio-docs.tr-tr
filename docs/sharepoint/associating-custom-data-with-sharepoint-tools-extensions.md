@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint project items, associating custom data
 - SharePoint projects, associating custom data
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 754f5f92dcaf6d19a226f4d1f69ebcbdd8f7d5aa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951046"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875504"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint araç uzantıları ile özel verileri ilişkilendirme
   SharePoint araç uzantıları belirli nesneleri özel veri ekleyebilirsiniz. Daha sonra uzantınızı diğer koddan erişmek istediğiniz uzantınızı bir bölümünde veriniz olduğunda bu kullanışlıdır. Depolamak ve verilere erişmek için özel bir yol uygulamak yerine, verileri aynı nesneden daha sonra almak ve verileri uzantınızı bir nesne ile ilişkilendirin.  

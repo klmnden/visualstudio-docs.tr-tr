@@ -12,15 +12,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aba47e277b1c109bf4b0d03efb5694733f45760c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912365"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871890"
 ---
 # <a name="grant-trust-to-documents"></a>Belgelere güven verme
   Belge düzeyi projesi aynı uygulama düzeyi projelere güvenlik gereksinimlerine sahiptir: bir sertifika ile bildirimleri imzalama veya güven istemi tıklayarak. Ayrıca, belge veya çalışma kitabı güvenli bir konuma atanan bir dizinde yer almalıdır.  

@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938205"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865836"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: Bir uygulama sayfasını bir iş akışına ekleme
   Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).

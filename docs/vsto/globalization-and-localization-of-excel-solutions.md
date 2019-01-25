@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856416"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866837"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Genelleştirme ve yerelleştirme Excel çözümleri
   Bu bölüm Windows ayarları İngilizce dışındaki bilgisayarlarda çalışan Microsoft Office Excel çözümleri ilgili özel konular hakkında bilgi içerir. Diğer Visual Studio kullanarak çözüm türlerini oluşturduğunuzda karşılaşabileceğinizi birçok yönden Genelleştirme ve yerelleştirme Microsoft Office çözümleri aynı değildir. Genel bilgi için bkz. [Globalize ve uygulamalarını yerelleştirme](../ide/globalizing-and-localizing-applications.md).

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 946a8dc884db4492e9bb557fa6000059d9912fd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91349edaeb864e913351e79846825fb67f2d7d97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966057"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864091"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer kullanarak Office çözümü dağıtma
 Office çözümünüz için bir Windows Installer kullanarak oluşturmayı öğrenin [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -67,7 +67,7 @@ Bu konu aşağıdaki indirilebilir örneklere başvurur.
 
 |Örnek<br /><br />|Açıklama<br /><br />|  
 |----------|---------------|  
-|[Exceladdın](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Bir Excel VSTO Office'in 32 bit veya 64-bit sürümü çalıştıran bir bilgisayara yükleyebilirsiniz eklenti.<br /><br />|  
+|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|Bir Excel VSTO Office'in 32 bit veya 64-bit sürümü çalıştıran bir bilgisayara yükleyebilirsiniz eklenti.<br /><br />|  
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|Office'in 32 bit veya 64-bit sürümü çalıştıran bir bilgisayara yüklediğiniz bir Excel belge düzeyi özelleştirmesi.<br /><br />|  
 
 ## <a name="ApplySecurity"></a>Çözüme güven kazandırmak için nasıl karar verme  

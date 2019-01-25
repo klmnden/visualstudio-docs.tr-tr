@@ -1,14 +1,9 @@
 ---
 title: Çıkış penceresindeki tanılama iletileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.output
 dev_langs:
@@ -33,13 +28,13 @@ ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c963a93e2d1b882fd38db1a546cc49cb1bfedcd6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6cf5025fdbb640b9f77e0782a7db77503fc618a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769469"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Çıkış Penceresindeki Tanılama İletileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,9 +64,6 @@ Hata ayıklama sınıfı veya izleme sınıfını kullanarak çıkış penceresi
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Çıkış penceresi](../ide/reference/output-window.md)   
  [İzleme ve İşaretleme uygulamaları](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [İzlemeye giriş](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
+ [İzlemeye giriş](http://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
  [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
-
-
-

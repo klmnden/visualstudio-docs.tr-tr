@@ -1,14 +1,9 @@
 ---
-title: 'CA1702: Bileşik sözcüklerin doğru yazılmalıdır | Microsoft Docs'
-ms.custom: ''
+title: 'CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1702
 - CompoundWordsShouldBeCasedCorrectly
@@ -20,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cfc723e94b8be2f427be7b42d676218b0d9aa68d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab14293960173e35c9bb00a9784356c3e63c6e36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772456"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bileşik sözcüklerin küçük/büyük harfleri doğru yazılmalıdır
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1702: bileşik sözcüklerin büyük küçük harfleri doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) docs.microsoft.com'da.  
+Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) docs.microsoft.com'da.  
   
 |||  
 |-|-|  
@@ -54,13 +49,12 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1702: bileşik sözc
  Bileşik sözcük kısımlarını yazım sözlüğüyle tanınır ve amacı iki kelimeye kullanmaktır. Bu kuraldan bir uyarıyı bastırmak güvenlidir.  
   
 ## <a name="related-rules"></a>İlgili kuralları  
- [CA1701: Kaynak dize bileşik sözcüklerinin küçük/büyük harfleri doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+ [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
- [CA1709: Tanımlayıcıların büyük/küçük harfleri doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Adlandırma kuralları](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
  [Büyük/Küçük Harf Kuralları](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
-

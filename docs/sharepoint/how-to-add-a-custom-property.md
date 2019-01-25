@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Özel özellik ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Özel özellik ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
 - BDC [SharePoint development in Visual Studio], custom properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9821b2ba9602c86916487bf3444eb74e2c0850c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913303"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873840"
 ---
-# <a name="how-to-add-a-custom-property"></a>Nasıl Yapılır: Özel özellik ekleme
+# <a name="how-to-add-a-custom-property"></a>Nasıl yapılır: Özel özellik ekleme
   Kullanarak modele özel özellikler ekleyebilirsiniz **Özellik Düzenleyici**. Bağlantı dizeleri gibi bilgileri ve diğer verileri çalışma zamanında almak için kod içinde bu özelliklere erişebilirsiniz.  
   
 ### <a name="to-add-a-custom-property"></a>Özel bir özellik eklemek için  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Word tablolarına program aracılığıyla satır ve sütun ekleme'
+title: 'Nasıl yapılır: Word tablolarına program aracılığıyla satır ve sütun ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], adding to Word tables
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 122a30b25099d924702012bf1e2d7b8adcbafdca
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909092"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875426"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Nasıl Yapılır: Word tablolarına program aracılığıyla satır ve sütun ekleme
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Nasıl yapılır: Word tablolarına program aracılığıyla satır ve sütun ekleme
   Bir Microsoft Office Word tablodaki hücre satırlar ve sütunlar halinde düzenlenir. Kullanabileceğiniz <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Rows> tabloya satır eklemek için nesne ve <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Columns> sütunlar eklenecek nesne.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

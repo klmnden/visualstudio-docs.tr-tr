@@ -1,27 +1,22 @@
 ---
 title: Proje özelliklerini alma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d7137012fb5b1a562257134ae7f87b19068db165
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af78a1c8e89710af73bf5f6d25cf3446cd0d50af
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749240"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834369"
 ---
 # <a name="getting-project-properties"></a>Proje Özelliklerini Alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,4 +100,3 @@ Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntül
 6.  İçinde **görünüm / diğer Windows** tıklayın **ProjectPropertiesToolWindow**.  
   
      Tüm Proje Özellikleri'nin ve ilk proje adı ile birlikte araç penceresindeki ağaç denetimi görmeniz gerekir.
-

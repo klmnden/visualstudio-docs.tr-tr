@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectOutputFile element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea476c2d2b73ec9c59f7d3f7cfbc9a0b0cab5bd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69af1992ba07fb75859a8f71bd0ee3eecadeaa0d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948621"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865339"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile öğesi
   SharePoint'te dağıtıldığında ile proje öğesi eklemek için ayrı bir proje çıktısını temsil eder.  
@@ -62,7 +62,7 @@ ms.locfileid: "53948621"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Şema adı**|SharePoint proje öğesi şema|  
 |**Doğrulama dosyası**|ProjectItemModelSchema.xsd|  
 |**Boş olabilir**|Hayır|  

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce13d0154e2cbd04a593500e14a3c1dd43a870dd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898641"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863818"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office çözümlerinde denetimlere veri bağlama
   Windows Forms denetimlerine bağlayabilirsiniz ve *konak denetimlerini* Microsoft Office Word belgesi veya Microsoft Office Excel çalışma sayfasındaki denetimleri otomatik olarak verileri görüntülemek için bir veri kaynağı. Verileri, uygulama düzeyinde hem belge düzeyi projeler denetimlere bağlayabilirsiniz.  

@@ -2,11 +2,8 @@
 title: Visual Studio sürümlerini yan yana yükleme | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
@@ -15,13 +12,13 @@ ms.assetid: 4d00f240-4910-4699-aaf3-cda6461f0c29
 caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: f2bbf63e45996d41889109c7423611bfe3218f0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838391"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834867"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio sürümlerini yan yana yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,12 +51,12 @@ Visual Studio'nun bu sürümü zaten daha önceki bir sürümün yüklü olduğu
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Uygulama Sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[Projeleri Yapılandırma](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ortak dil çalışma zamanının önceki bir sürümünde JScript uygulaması çalıştırma](http://msdn.microsoft.com/en-us/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |C++|[Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ortak dil çalışma zamanının önceki bir sürümünde JScript uygulaması çalıştırma](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)
 - [Taşıma, geçirme ve Visual Studio projelerini yükseltme](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
 - [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 474c0085851d826b4b15f5f7c84600e0dd04bcb1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986407"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862186"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office uygulaması ve proje türüne göre kullanılabilen özellikler
   Visual Studio Proje şablonları, farklı iş senaryoları aşağıdaki türleri dahil olmak üzere Microsoft Office uygulamaları için destek birçok tür içerir:  
@@ -53,8 +53,8 @@ ms.locfileid: "53986407"
 |-------------|--------------------------------------------|---------------------|  
 |Eylemler bölmesi.|Belge düzeyi projeler.|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)|  
 |ClickOnce dağıtımı.|VS ve belge düzeyi projeler.|[Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)|  
-|Özel görev bölmeleri.|VSTO eklentisi projeleri şu uygulamalar için:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 ve InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Word|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
-|Özel XML bölümleri.|Belge düzeyi projeler.<br /><br /> Aşağıdaki uygulamalar için uygulama düzeyi projeleri:<br /><br /> -Excel<br />-PowerPoint<br />-Word|[Özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md)|  
+|Özel görev bölmeleri.|VSTO eklentisi projeleri şu uygulamalar için:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 ve InfoPath 2010)<br />-   Outlook<br />-   PowerPoint<br />-Word|[Özel görev bölmeleri](../vsto/custom-task-panes.md)|  
+|Özel XML bölümleri.|Belge düzeyi projeler.<br /><br /> Aşağıdaki uygulamalar için uygulama düzeyi projeleri:<br /><br /> -Excel<br />-   PowerPoint<br />-Word|[Özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md)|  
 |Veri önbelleği.|Belge düzeyi projeler.|[Belge düzeyi özelleştirmelerdeki önbelleğe alınmış veriler](../vsto/cached-data-in-document-level-customizations.md)|  
 |Bir nesneyi VSTO eklentisi diğer Microsoft Office çözümleri için kullanıma sunar.|VSTO eklentisi projeleri.|[VSTO eklentilerinde diğer Office Çözümlerinden kod arama](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Aşağıdaki konak denetimleri:<br /><br /> -Grafik<br />-ListObject<br />-NamedRange<br />-İçerik denetimleri<br />-Yer işareti|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projelerine Word ve Excel için.|[Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)|  
@@ -62,7 +62,7 @@ ms.locfileid: "53986407"
 |Birden çok proje dağıtımı.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri.|[İzlenecek yol: Tek bir ClickOnce yükleyicisi birden çok Office çözümlerini dağıtma](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook form bölgeleri.|VSTO eklentisi projelerine Outlook.|[Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)|  
 |Dağıtım sonrası eylemler.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri.|[İzlenecek yol: Bir belge ClickOnce yüklemeden sonra son kullanıcının bilgisayarına kopyalayın.](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|Şerit özelleştirmeleri.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri şu uygulamalar için:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 ve InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Proje<br />-Visio<br />-Word|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
+|Şerit özelleştirmeleri.|Belge düzeyi projeler.<br /><br /> VSTO eklentisi projeleri şu uygulamalar için:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 ve InfoPath 2010)<br />-   Outlook<br />-   PowerPoint<br />-   Project<br />-Visio<br />-Word|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|  
 |Görsel belge Tasarımcısı.|Belge düzeyi projeler.|[Visual Studio ortamında Office projeleri](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Ayrıca bkz.  

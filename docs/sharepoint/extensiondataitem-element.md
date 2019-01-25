@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ExtensionDataItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95459be48b6d5e87b1a312e68e6ebea2645cb29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f5a547194de87a7fe151c3530720a078ca01438
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916945"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873086"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem öğesi
   Anahtar/değer biçiminde SharePoint proje öğesi ile ilişkili bir özel veri öğesi. Dize, anahtar ve değer olmalıdır.  
@@ -55,7 +55,7 @@ ms.locfileid: "53916945"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel| 
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
 |**Şema adı**|SharePoint proje öğesi şema|  
 |**Doğrulama dosyası**|ProjectItemModelSchema.xsd|  
 |**Boş olabilir**|Hayır|  

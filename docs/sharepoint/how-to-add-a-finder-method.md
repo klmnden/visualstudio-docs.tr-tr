@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir Bulucu yöntemi ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir Bulucu yöntemi ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Finder method
 - Business Data Connectivity service [SharePoint development in Visual Studio], get entities
 - BDC [SharePoint development in Visual Studio], Finder method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ae5b1dfca8a083f12aa05d96378c3df348766a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963466"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872891"
 ---
-# <a name="how-to-add-a-finder-method"></a>Nasıl Yapılır: Bir Bulucu yöntemi ekleme
+# <a name="how-to-add-a-finder-method"></a>Nasıl yapılır: Bir Bulucu yöntemi ekleme
   Bir web bölümü veya listedeki varlıkların listesini görüntülemek İş Verileri Bağlantısı (BDC) hizmeti etkinleştirmek için oluşturmalısınız bir *Bulucu* yöntemi. Varlığın örneklerinin bir koleksiyonunu döndüren özel bir yöntem bir Bulucu metodudur. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-finder-method"></a>Bir Bulucu yöntemi oluşturmak için  

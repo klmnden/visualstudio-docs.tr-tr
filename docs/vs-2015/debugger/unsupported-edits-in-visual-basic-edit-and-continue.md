@@ -1,14 +1,9 @@
 ---
 title: Visual Basic'de desteklenmeyen düzenlemeler Düzenle ve devam et | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787906"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834294"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic Düzenle ve Devam Et'de Desteklenmeyen Düzenlemeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ Düzenle ve kesme modunda programın yürütülmesini durdurur, kod için deği�
  Desteklenmeyen bir değişiklik yapmanız gerekirse, hata ayıklamayı durdurmak, değişiklikleri yapın ve yeni bir hata ayıklama oturumu başlatın.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Yöntem ve özellik gövdesi düzenlemeleri  
- **Desteklenmeyen statik yerel değişkenler değişiklikleri**: ekleme veya bir yerel değişken güncelleştirmek veya statik bir yerel değişken, bir derleme hatasına neden olacaksa kaldırılıyor.  
+ **Desteklenmeyen statik yerel değişkenler değişiklikleri**: Ekleme veya güncelleştirme yerel bir değişken veya statik bir yerel değişken durumunda kaldırma, bir derleme hatasına neden olur.  
   
- **Desteklenmeyen genel türlere değişiklikleri**: genel yöntem kendisini veya genel yöntemin gövdesi değişiklikleri desteklenmez. Genel bir tür veya varolan genel yöntemlere yapılan çağrılar örneğinin eklenen, değiştirilen veya silinebilir.  
+ **Desteklenmeyen genel türlere değişiklikleri**: Genel yöntem kendisini veya genel yöntemin gövdesi değişiklikleri desteklenmez. Genel bir tür veya varolan genel yöntemlere yapılan çağrılar örneğinin eklenen, değiştirilen veya silinebilir.  
   
  **Desteklenmeyen diğer değişiklikler**  
   
@@ -225,6 +220,3 @@ Düzenle ve kesme modunda programın yürütülmesini durdurur, kod için deği�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Düzen ile kesme modunda düzenlemeleri uygulayın ve devam et](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Düzenle ve Devam Et (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

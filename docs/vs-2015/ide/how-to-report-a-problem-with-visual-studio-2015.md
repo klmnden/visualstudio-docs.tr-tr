@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064066"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834445"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 ile ilgili bir sorun bildirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017'de bir s
 
 Visual Studio 2015 ile ilgili bir sorun yaşarsanız, böylece biz de tanılayın ve düzeltin bunu bilmek istiyoruz.  Kullanarak **sorun bildir** aracı, sorun hakkında ayrıntılı bilgi toplamak ve birkaç düğme tıklamasıyla Microsoft'a gönderin.
 
- Microsoft, gizliliğinize saygı duyar. Biz bize gönderdiğiniz verileri nasıl kabul hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/en-us/dn948229).
+ Microsoft, gizliliğinize saygı duyar. Biz bize gönderdiğiniz verileri nasıl kabul hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Sorun raporu açın
  Kullanıcı geri bildirim simgesine tıklayın **hızlı başlatma** başlık çubuğunda veya tıklayarak **yardımcı &#124; geri bildirim gönder &#124; sorun bildir**.

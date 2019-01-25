@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: SharePoint Proje hizmetini alma | Microsoft Docs'
+title: 'Nasıl yapılır: SharePoint Proje hizmetini alma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint project service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26f6b2c86b58e2faf2c4a0f37277c271d77e7f02
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891608"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869011"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Nasıl Yapılır: SharePoint Proje hizmetini alma
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Nasıl yapılır: SharePoint Proje hizmetini alma
   SharePoint Proje hizmeti çözümleri aşağıdaki türden erişebilirsiniz:  
   
 -   SharePoint Proje sistemi proje uzantısı, proje öğesi uzantısını veya proje öğesi tür tanımı gibi bir uzantısıdır. Bu tür uzantılar hakkında daha fazla bilgi için bkz: [SharePoint Proje sistemini genişletmek](../sharepoint/extending-the-sharepoint-project-system.md).  

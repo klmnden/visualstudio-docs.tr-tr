@@ -21,17 +21,17 @@ helpviewer_keywords:
 - user interfaces [Office development in Visual Studio], Word
 - Office documents [Office development in Visual Studio, Word
 - document-level customizations [Office development in Visual Studio], Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9c5f5bc13a8ca77268c5333cbe44a8b6729df4d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986758"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874854"
 ---
 # <a name="word-solutions"></a>Word çözümleri
   Visual Studio, Microsoft Office Word için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Word'ü otomatikleştirmek, Word özelliklerini genişletmek ve Word kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  

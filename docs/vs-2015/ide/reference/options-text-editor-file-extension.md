@@ -1,14 +1,9 @@
 ---
 title: Seçenekler, metin düzenleyici, dosya uzantısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755012"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyalar
  Bir seçenek "ile kodlama" seçtiğinizde, bu belge için bir kodlama düzeni seçmenize olanak sağlar, bu türdeki bir belge açtığınızda bir iletişim kutusu görüntülenir. Bu, farklı platformlarda veya farklı hedef dilde kullanmak için proje belgelerinizi sürümlerini hazırlanma istediğinizde yararlı olabilir.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Uzantı**  
@@ -62,7 +57,4 @@ Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyalar
  Aynı liste olarak sağlar **Düzenleyicisi**. Dosya uzantıları olmadan belgeleri açılacağı Tasarımcısı ve IDE Düzenleyicisi'ni seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl Yapılır: Düzenleyici Modlarını Yönetme](../../ide/how-to-manage-editor-modes.md)
-
-
-
+ [Nasıl yapılır: Düzenleyici modlarını yönetme](../../ide/how-to-manage-editor-modes.md)

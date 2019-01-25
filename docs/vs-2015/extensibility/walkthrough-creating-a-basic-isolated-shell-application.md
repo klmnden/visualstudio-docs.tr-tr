@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: temel bir oluşturma yalıtılmış Kabuk uygulaması | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776208"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>İzlenecek yol: temel yalıtılmış Kabuk uygulaması oluşturma
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>İzlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu araç penceresi özelleştirme ve yalıtılmış Kabuk yükleyen bir Kurulum programı oluşturma işlemi gösterilmektedir.  
@@ -62,7 +57,7 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
   
 #### <a name="to-customize-the-application-name-and-icon"></a>Uygulama adı ve simgesi özelleştirmek için  
   
-1.  MyVSShellStub projesinde \Shell Customization\MyVSShellStub.Application.pkgdef açın.  
+1.  In the MyVSShellStub project, open \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
 2.  Değişiklik `AppName` öğe değeri **"AppName" = "Fabrikam müzik Editor"**  
   
@@ -120,7 +115,7 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
   
 2.  Aşağıdaki satırı açıklamadan çıkarın:  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın. Örneğin, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct bir XML dosyasını açın. XML dosyasındaki anahtar sözcükleri yok renklendirilmiş doğrulayın ve söz konusu yazarak "<" bir satıra XML tooltips neden olmaz.  
   
@@ -265,4 +260,3 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
   
 ## <a name="testing-the-installation-program"></a>Yükleme programını test etme  
  Test kurulumu için setup.exe dosyasını farklı bir bilgisayara kopyalayın ve kurulum yürütülebilir dosyayı çalıştırmak. Yalıtılmış Kabuk uygulaması çalıştırın olması gerekir.
-

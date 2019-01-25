@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], developing
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53f94016eb354b3c3e5255e37b8399b3687352dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aa7be95b0812b27c302500bd166abcb00c7089d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856611"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874538"
 ---
 # <a name="develop-office-solutions"></a>Office çözümleri geliştirme
   Sonra Visual Studio'da Office geliştirme araçlarını kullanarak bir proje tasarlayın ve proje dosyalarını kurduğunuzda, özel kullanıcı arabirimi (UI) ve kod uygulama hakkında yoğunlaşabilirsiniz başlayabilirsiniz.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kaydetme'
+title: 'Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kaydetme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - workbooks, saving in XML format
 - workbooks, saving
 - workbooks, saving backup copies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcc0869b8d255ba91e1a1fd017c93cdb24346b27
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829177"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874555"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla kaydetme
+# <a name="how-to-programmatically-save-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kaydetme
   Bir çalışma kitabını kaydetmek için çeşitli yollar vardır. Bir çalışma kitabı yolu değiştirmeden kaydedebilirsiniz. Çalışma kitabını önce kaydedilmedi, yolu belirterek, çalışma kitabını kaydetmeniz gerekir. Açık bir yol Microsoft Office Excel dosya oluşturulduğunda verilen ada sahip geçerli klasöre kaydeder. Ayrıca, çalışma kitabını Aç bellekte değiştirmeden çalışma kitabının bir kopyasını kaydedebilirsiniz.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma'
+title: 'Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - managed controls, resizing
 - worksheets, resizing
 - Windows Forms controls [Office development in Visual Studio], resizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe63ef8be7c17482f0af864c45b29d8e2dd51189
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927356"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863883"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl Yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma
   Çalışma sayfasında satırları veya sütunları yeniden boyutlandırdığınızda, hücreleri içinde herhangi bir ana bilgisayar denetimleri yeniden boyutlandırılmış hücre genişliği veya yüksekliği otomatik olarak yeniden boyutlandırın. Windows Forms denetimleri varsayılan olarak otomatik olarak yeniden boyutlandırma değil.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  

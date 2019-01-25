@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma sayfasında satırları program aracılığıyla Grup'
+title: 'Nasıl yapılır: Çalışma sayfasında satırları program aracılığıyla Grup'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - worksheets, ungrouping rows and columns
 - rows [Office development in Visual Studio], ungrouping
 - columns [Office development in Visual Studio], ungrouping
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5249edccaed24dbdc6eb42b5da3e78825f1a2053
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896792"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874424"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Nasıl Yapılır: Çalışma sayfasında satırları program aracılığıyla Grup
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Nasıl yapılır: Çalışma sayfasında satırları program aracılığıyla Grup
   Bir veya daha fazla satırı gruplayabilirsiniz. Çalışma grubu oluşturmak için bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

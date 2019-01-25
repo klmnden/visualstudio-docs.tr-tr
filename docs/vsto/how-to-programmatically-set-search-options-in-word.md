@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama'
+title: 'Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], search options
 - Word, searching options
 - searching, Word options
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec5b2f797371d19fea1b4fedc2064ab355ffac10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66bd4258d04259c5356ce459328012d50445de62
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853393"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874373"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>Nasıl Yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama
+# <a name="how-to-programmatically-set-search-options-in-word"></a>Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama
   Microsoft Office Word belgelerinde seçimleri için arama seçeneklerini ayarlamak için iki yolu vardır:  
   
 - Özelliklerini ayarlamak bir <xref:Microsoft.Office.Interop.Word.Find> nesne.  

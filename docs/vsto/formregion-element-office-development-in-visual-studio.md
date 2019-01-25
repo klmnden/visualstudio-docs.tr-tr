@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegion> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86aa6b715a99c962a2f0fd627dd6d3fb7618108a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33bc2ce58f90f37a1219427558a01bd13e5654df
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987699"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875345"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; öğesi (Visual Studio'da Office Geliştirme)
   `formRegion` Öğesinin `vstov4` ad alanı, VSTO eklentisi ile ilişkilendirilen bir Microsoft Office Outlook form bölgesi tanımlar.

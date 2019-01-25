@@ -1,6 +1,6 @@
 ---
 title: Kod çözümleme uyarılarını bastırma
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932892"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835064"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
@@ -66,17 +66,19 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **MessageID** -bir sorun için her iletinin benzersiz tanımlayıcısı.
 
-- **Kapsam** -hedef üzerinde uyarı engellenir. Hedef belirtilmemişse, özniteliğin hedef ayarlanır. Desteklenen kapsamları aşağıdakileri içerir:
+- **Kapsam** -hedef üzerinde uyarı engellenir. Hedef belirtilmemişse, özniteliğin hedef ayarlanır. Desteklenen [kapsamları](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) şunları içerir:
 
-    - Modül
+   - `module`
 
-    - Ad Alanı
+   - `resource`
 
-    - Kaynak
+   - `type`
 
-    - Tür
+   - `member`
 
-    - Üye
+   - `namespace` -Bu kapsam ad karşı uyarıları bastırır. Ad alanı içindeki türleri karşı uyarılarını engellemez.
+
+   - `namespaceanddescendants` -(Yeni Visual Studio 2019 için) bu kapsamı bir ad alanı ve tüm alt simgeleri uyarıları bastırır. `namespaceanddescendants` Değeri yalnızca Roslyn Çözümleyicileri için geçerlidir ve ikili, FxCop tabanlı statik analiz tarafından göz ardı edilir.
 
 - **Hedef** - üzerinde uyarı engellenir hedef belirtmek için kullanılan tanımlayıcı bir. Tam öğe adı içermelidir.
 
@@ -151,7 +153,7 @@ Yönetilen kod analizi aracı inceler `SuppressMessage` derleme, modül, tür, �
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Ad alanı kapsamında bir uyarıyla gizlediğinizde, ad karşı uyarı bastırır. Ad alanı içindeki türleri karşı uyarı engellemez.
+> Gösterme ne zaman bir uyarı ile `namespace` kapsam ad karşı uyarı bastırır. Ad alanı içindeki türleri karşı uyarı engellemez.
 
 Açık bir kapsam belirterek herhangi bir gizleme ifade edilebilir. Bu gizlemeleri genel düzeyde bulunmalıdır. Bir tür tasarlayarak üye düzeyinde gizleme belirtemezsiniz.
 
@@ -168,5 +170,6 @@ Küresel bir gizleme dosyası genel düzeyi gizlemelerinin ya da bir hedef belir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Roslyn çözümleyicilerini kullanın](../code-quality/use-roslyn-analyzers.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: İçinde VBA kodu ortaya bir C# proje'
+title: 'Nasıl yapılır: İçinde VBA kodu ortaya bir C# proje'
 ms.custom: seodec18
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f49ccc064f06908ed9c965f20773bd15d4753b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3734fab9915d1a1940789a52f278cb0b4f4c7063
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872589"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866236"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl Yapılır: Bir görselde VBA kodu ortaya C# proje
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl yapılır: Bir görselde VBA kodu ortaya C# proje
   Bir görseldeki kodunu getirebilir C# iki birbiriyle etkileşim kurmak için kod istiyorsanız, Visual Basic Applications (VBA) kodu için proje.  
   
  Görsel C# işlem Visual Basic işleminden farklıdır. Daha fazla bilgi için [nasıl yapılır: Visual Basic projesinde kodu VBA ortaya](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  

@@ -1,27 +1,22 @@
 ---
 title: Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755224"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama
 Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod tarafından çağrılmak gerekebilir. Genellikle, yöntem bağımsız değişkenleri dönüştürülmüş veya otomatik olarak birlikte çalışma sıralayıcısı göre sıralanır. Ancak, bazen bağımsız değişkenleri basit bir şekilde dönüştürülemez. Bu gibi durumlarda birlikte çalışma derlemesi yöntemi prototip parametreleri COM işlev parametrelerini mümkün olduğunca yakın eşleştirmek için kullanılır. Daha fazla bilgi için [birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Bu tür arabirimleri çağıran yönetilen yöntemleri ilk öğe dışında [out] dizi çekmelidir. Bu öğe olarak bulunuyorlarmış işlenebilir bir `retval` karşılık gelen bir COM arabiriminden değeri döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Birlikte çalışma hazırlama](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Birlikte çalışma hazırlama](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Birlikte çalışabilirlik sorunlarını giderme](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Yönetilen VSPackage'ları](../misc/managed-vspackages.md)

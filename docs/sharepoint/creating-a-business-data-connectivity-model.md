@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], creating a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 - SharePoint development in Visual Studio, Business Data Connectivity service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcfac4855320f420f2f123568498957ad8d84814
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863974"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli oluşturma
   Bir iş verileri bağlantısı (BDC) modeli oluşturabilir veya Visual Studio kullanarak mevcut bir BDC modelini özelleştirin. Her SharePoint projesi, yalnızca bir modeli içerebilir. Daha fazla bilgi için [iş verilerini SharePoint ile tümleştirmeyi](../sharepoint/integrating-business-data-into-sharepoint.md).  

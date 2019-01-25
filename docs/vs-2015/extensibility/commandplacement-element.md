@@ -1,27 +1,22 @@
 ---
 title: CommandPlacement öğesi | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741541"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758998"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ CommandPlacement öğesi düğmeler, grupları ve menüler birden fazla grup vey
 |---------------|-----------------|  
 |GUID|Gerekli. Sınıfında tanımlandığı gibi komut kümesi GUID'si [Symbols öğesi](../extensibility/symbols-element.md).|  
 |kimlik|Gerekli. Menü, Grup veya sınıfında tanımlandığı gibi yerleştirilmesini komut kimliğini `Symbols Element`.|  
-|önceliği|Gerekli. Üst öğesi görsel öğe konumunu belirler.|  
+|öncelik|Gerekli. Üst öğesi görsel öğe konumunu belirler.|  
 |Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Alt Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|Üst|Gerekli. Menü veya yerleştirilecek öğesi barındıran grup.|  
+|Üst öğe|Gerekli. Menü veya yerleştirilecek öğesi barındıran grup.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
@@ -76,4 +71,3 @@ CommandPlacement öğesi düğmeler, grupları ve menüler birden fazla grup vey
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CommandPlacements öğesi](../extensibility/commandplacements-element.md)   
  [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

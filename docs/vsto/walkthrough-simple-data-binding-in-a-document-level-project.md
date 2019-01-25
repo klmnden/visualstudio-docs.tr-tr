@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Database field [Office development in Visual Studio]
 - data [Office development in Visual Studio], binding data
 - simple data binding [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ae634a87e8b105df88fed4168b6a70909efbc7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895499"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869010"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede basit veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede veri bağlama ilişkin temel bilgileri gösterir. Bir SQL Server veritabanı bir tek veri alanında Microsoft Office Excel adlandırılmış aralıkta bağlıdır. İzlenecek yol, ayrıca tablodaki tüm kayıtları arasında kaydırma olanak tanıyan denetimlerin nasıl ekleneceğini gösterir.  

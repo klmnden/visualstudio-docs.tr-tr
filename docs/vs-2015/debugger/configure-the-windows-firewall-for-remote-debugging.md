@@ -1,25 +1,20 @@
 ---
 title: Uzaktan hata ayıklama için Windows Güvenlik Duvarı yapılandırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734593"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753045"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,8 +80,8 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
 |-|-|-|-|  
 |**Bağlantı Noktaları**|**Gelen ve giden**|**Protokolü**|**Açıklama**|  
 |3702|Giden|UDP|Uzaktan hata ayıklayıcı bulma işlemi için gereklidir.|  
-|4020||TCP|VS 2015 için. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
-|4021||TCP|VS 2015 için. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
+|4020||TCP|For VS 2015. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
+|4021||TCP|For VS 2015. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>Yönetilen veya yerel uyumluluk modunda uzaktan hata ayıklamayı etkinleştirme bağlantı noktalarını uzak bilgisayarda  
   
@@ -118,6 +113,3 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)
-
-
-

@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Visual Studio, Office documents in
 - worksheets [Office development in Visual Studio]
 - VST.Designer.ExcelVST.Designer.Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9a0ac865dff8ec1eb0fe8a2b97cad9b6ab5e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842727"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865989"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio ortamında Office projeleri
   Microsoft Office projeleri, Visual Studio'daki diğer proje türlerine (Windows Forms projeleri gibi) benzer bir geliştirme deneyimine sahiptir. Proje öğeleri oluşturduğunuzda veya bir Office projesi görünür **Çözüm Gezgini**. Belge düzeyinde projeler için, belge (yani, Word belgesi veya Excel çalışma kitabı) Visual Studio'da açılır ve belge bir görsel tasarımcı gibi davranır.

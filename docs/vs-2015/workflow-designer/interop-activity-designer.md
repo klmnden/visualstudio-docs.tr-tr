@@ -1,11 +1,8 @@
 ---
 title: Interop etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
@@ -13,13 +10,13 @@ ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 587f9017e7f2c76018fbb5eb98645f5e4c19216c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767535"
 ---
 # <a name="interop-activity-designer"></a>Interop Etkinlik Tasarımcısı
 **Interop** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.Interop> etkinlik.  
@@ -43,7 +40,7 @@ ms.locfileid: "49283041"
 ### <a name="the-interop-properties"></a>Birlikte çalışma özellikleri  
  Aşağıdaki tabloda <xref:System.Activities.Statements.Interop> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikler düzenlenebilir, özellik kılavuzu veya Cihazınızda [!INCLUDE[wfd2](../includes/wfd2-md.md)] yüzeyi.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.Interop> etkinlik. Birlikte çalışma varsayılandır. Görünen ad kesinlikle gerekli olmamakla birlikte, bir görünen ad kullanmak için en iyi bir uygulamadır.|  
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|Doğru|Tarafından bulunan bir etkinlik türünü belirten <xref:System.Activities.Statements.Interop> etkinlik. Bu tür belirtilen öğesinden türetilmelidir <xref:System.Workflow.ComponentModel.Activity>.|  

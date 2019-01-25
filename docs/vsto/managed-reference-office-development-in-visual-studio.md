@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - reference [Office development in Visual Studio], 2007 Microsoft Office system
 - Office development in Visual Studio, reference
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96737b2c5ad7196df873f38b87a6cdd6f11dc10b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aba08ad315c9e3165728b01c552c888f53c94a62
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865238"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871617"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Yönetilen başvuru (Visual Studio'da Office Geliştirme)
   Bu bölümde, ad alanları için API başvuru belgeleri bulunur ve Office içinde kullanılan türleri hedefleyen projeleri [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Visual Studio belgelerinde aşağıdaki başvuru bölümüne .NET Framework 3. 5'i hedefleyen Office projelerinde kullanılan türler ve ad alanları hakkında API başvuru belgeleri için bkz: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  

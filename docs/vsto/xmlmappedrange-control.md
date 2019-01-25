@@ -9,17 +9,17 @@ helpviewer_keywords:
 - XMLMappedRange control, data binding
 - XMLMappedRange control
 - XMLMappedRange control, events
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f19bf36b145a5f2c1b4e841a96cdd485a0fb6ac1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b9fa7e9ef2a7c5466315e56ca0ebdded0dc8d69
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946710"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874720"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange denetimi
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Yalnızca yinelenmeyen bir şema öğesine Microsoft Office Excel'de eşlendiğinde oluşturan bir aralık denetimidir. Örneğin, `maxOccurs` bir şema öğesinin özniteliği, 1 değerine eşittir. Visual Studio XML eşlenmiş aralığı oluşturduktan sonra Excel nesne modeline geçiş yapmak zorunda kalmadan doğrudan karşı programlama yapabilirsiniz. Yalnızca silebilirsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> öğe eşlemesi kaldırıldığında Excel'den denetimi.  

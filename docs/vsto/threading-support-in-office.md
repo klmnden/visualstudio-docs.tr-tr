@@ -10,17 +10,17 @@ helpviewer_keywords:
 - threading [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], threading support
 - object models [Office development in Visual Studio], threading support
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0dae42e2648af1212a676c8956122b4fde072d20
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866132"
 ---
 # <a name="threading-support-in-office"></a>Office'te iş parçacığı desteği
   Bu makalede, iş parçacığı Microsoft Office nesne modeli içinde nasıl desteklendiği hakkında bilgi sağlar. Office nesne modeli iş parçacığı güvenli değildir, ancak Office bir çözümde birden çok iş parçacığı ile çalışmaya mümkündür. Office uygulamaları, Bileşen Nesne Modeli (COM) sunucularıdır. COM istemcilerinin COM sunucuları rastgele iş parçacıklarında arama olanak tanır. İş parçacığı güvenli olmayan COM sunucuları için COM yalnızca tek bir mantıksal iş parçacığı herhangi bir zamanda sunucuda yürütür, böylece eş zamanlı çağrılar serileştirmek için bir mekanizma sağlar. Bu mekanizma tek iş parçacıklı grup (STA) model olarak bilinir. Çağrıları seri hale getirilmiş olduğundan sunucu meşgul veya diğer çağrılar arka plan iş parçacığında işleme sırasında çağıranlar süre engellenebilir.  

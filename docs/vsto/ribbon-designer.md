@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928873"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867266"
 ---
 # <a name="ribbon-designer"></a>Şerit Tasarımcısı
   Şerit Tasarımcısı bir görsel tasarım tuvalidir. Bir Microsoft Office uygulamasının Şeritine özel sekmeler, gruplar ve denetimler eklemek için Şerit Tasarımcısını kullanın.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e92d200a440b093e6c3be3e143993df230ab9fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829913"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870980"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve bir proje şablonu Visual Studio'da ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonu proje öğesi içeren yeni bir proje oluşturmak için kullanıldığında, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.  
@@ -47,7 +47,7 @@ ms.locfileid: "53829913"
   
 - Windows, SharePoint ve Visual Studio'nun desteklenen sürümleri.
   
-- Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- The Visual Studio SDK. Bu izlenecek yolda **VSIX projesi** proje öğesini dağıtmak üzere bir VSIX paketi oluşturmak için SDK'sı şablonunda. Daha fazla bilgi için [Visual Studio'da SharePoint araçlarını genişletmek](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
   Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenecek yolu tamamlamak için:  
   

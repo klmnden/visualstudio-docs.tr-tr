@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd493a1448276dcf151a862771546a31f201c761
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f28825f5b2924a561d5315f2b1478e152e395c5d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909287"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863662"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word Klavyesi, Microsoft Office Klavyesi ayarları, Seçenekler iletişim kutusu
   Kısayol tuşları, Microsoft Office Word ve Visual Studio hem de işler. Aynı kısayol tuş bileşimi Word ve Visual Studio'da farklı komutlar için bildirimde bulunabilir. Word belge düzeyi projede Visual Studio açık olduğunda, aynı anda yalnızca bir uygulama kısayol tuşu komutlarını alır. Varsayılan olarak, Visual Studio tüm kısayol tuşu komutlarını alır, ancak Word belgesi seçerek odağa sahip olduğunda bildirim ve mesajları alacak yapabileceğiniz **dinamik klavye düzeni**.  

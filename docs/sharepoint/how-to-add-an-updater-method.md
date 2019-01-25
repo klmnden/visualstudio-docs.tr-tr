@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir güncelleyici metodu ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir güncelleyici metodu ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Updater
 - Business Data Connectivity service [SharePoint development in Visual Studio], updating entity instances
 - BDC [SharePoint development in Visual Studio], updating entity instances
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 435674325acdb8b415f0a706f3bca8753d704160
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864169"
 ---
-# <a name="how-to-add-an-updater-method"></a>Nasıl Yapılır: Bir güncelleyici metodu ekleme
+# <a name="how-to-add-an-updater-method"></a>Nasıl yapılır: Bir güncelleyici metodu ekleme
   Kullanıcılar oluşturarak dış bir SharePoint listesindeki iş verileri güncelleştirmek etkinleştirebilirsiniz bir *güncelleştirici* yöntemi. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Bir güncelleyici yöntemi oluşturmak için  

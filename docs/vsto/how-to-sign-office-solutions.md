@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Office çözümlerini imzalama'
+title: 'Nasıl yapılır: Office çözümlerini imzalama'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829053"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871669"
 ---
-# <a name="how-to-sign-office-solutions"></a>Nasıl Yapılır: Office çözümlerini imzalama
+# <a name="how-to-sign-office-solutions"></a>Nasıl yapılır: Office çözümlerini imzalama
   Bir çözüm oturum açarsanız, kanıt olarak sertifika kullanarak çözüme güven verebilirsiniz. Birden çok çözüm için aynı sertifikayı kullanabilirsiniz ve tüm çözümleri hiçbir ek güvenlik ilkesi güncelleştirmeleriyle güvenilen olacaktır.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]

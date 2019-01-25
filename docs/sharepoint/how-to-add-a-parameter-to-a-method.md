@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir yönteme parametre eklemek | Microsoft Docs'
+title: 'Nasıl yapılır: Bir yönteme parametre eklemek | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter
 - Business Data Connectivity service [SharePoint development in Visual Studio], method parameters
 - BDC [SharePoint development in Visual Studio], method parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d55c345d9cd0e57d7af2ed359cf4bd9a4f06cd9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866263"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868124"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Nasıl Yapılır: Bir yönteme bir parametre ekleyin
+# <a name="how-to-add-a-parameter-to-a-method"></a>Nasıl yapılır: Bir yönteme bir parametre ekleyin
   Bir parametre bilgileri yönteme geçirmek için veya bir yöntemden bilgi almak için kullanın. Tüm yöntemler, en az bir parametreye sahip olmalıdır. Oluşturmak istediğiniz yöntemi türünü desteklemek için bir parametre tasarlama hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Bir yönteme parametre eklemek, Visual Studio model dosyası projenize XML parametre öğesi ekler. Parametre öğesi öznitelikleri hakkında daha fazla bilgi için bkz. [parametre](http://go.microsoft.com/fwlink/?LinkId=169284).  

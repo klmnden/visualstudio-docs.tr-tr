@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belgeleri nesne verileriyle doldurma'
+title: 'Nasıl yapılır: Belgeleri nesne verileriyle doldurma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5333b3d6f9ba107bde21bbc23566940ee5dbf80d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960621"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865794"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Nasıl Yapılır: Belgeleri nesne verileriyle doldurma
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Nasıl yapılır: Belgeleri nesne verileriyle doldurma
 
 Windows Forms projelerinde olduğu gibi bir veri nesnesi içinde veri belirtilmemelidir Microsoft Office Word için belge düzeyi projelerine aynı şekilde çalışır. Verileri bir nesneden çözümünüze getirmek için aynı araçları ve kodu kullanın ve verileri görüntülemek için Windows Forms denetimleri kullanabilirsiniz. Ayrıca, konak denetimleri kullanarak verileri görüntüleyebilirsiniz. Konak denetimleri, olayları ve veri bağlama özelliğiyle ile zenginleştirilmiştir yerel Microsoft Office Word nesnelerdir. Daha fazla bilgi için [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
 

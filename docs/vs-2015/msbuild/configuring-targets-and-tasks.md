@@ -1,25 +1,20 @@
 ---
 title: Hedefleri ve görevleri yapılandırma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1bb82483b0adef6343423984e3b0d6fa21d0d678
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 304ebde1c30a78ab000a1fae4a16b5082b0aeecf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263522"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769272"
 ---
 # <a name="configuring-targets-and-tasks"></a>Hedefleri ve Görevleri Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +30,7 @@ MSBuild hedefleri ve görevleri çalıştırmak için yapılandırabilirsiniz gi
 ## <a name="targets-and-tasks"></a>Hedefler ve Görevler  
  MSBuild çalıştırmaları belirli bağlamları daha büyük bir hedef için işlem dışı Görevler oluşturun.  Örneğin, 32-bit MSBuild 64 bit bilgisayar hedeflemek için 64-bit işlem içinde derleme görevi çalışabilir. Bu tarafından denetlenir `UsingTask` bağımsız değişkenleri ve `Task` parametreleri. Bu bağımsız değişkenleri ve parametreleri tarafından .NET Framework 4.5 yüklü hedeflerini ayarlayın ve değişiklik çeşitli hedef bağlamları yönelik uygulamalar oluşturmak için gerekli değildir.  
   
- Kendi hedef bağlam oluşturmak istiyorsanız, bu bağımsız değişkenleri ve parametreleri uygun şekilde ayarlamanız gerekir. .NET Framework 4.5 Microsoft.Common.targets dosyasına ve örnekler için Microsoft.Common.Tasks dosyasına bakın.  Birden fazla hedef bağlamı ile çalışabilmeniz için özel bir görev oluşturma veya var olan görevleri değişiklik yapma hakkında daha fazla bilgi için bkz. [nasıl yapılır: yapılandırma hedefleri ve görevleri](../msbuild/how-to-configure-targets-and-tasks.md).  
+ Kendi hedef bağlam oluşturmak istiyorsanız, bu bağımsız değişkenleri ve parametreleri uygun şekilde ayarlamanız gerekir. .NET Framework 4.5 Microsoft.Common.targets dosyasına ve örnekler için Microsoft.Common.Tasks dosyasına bakın.  Birden fazla hedef bağlamı ile çalışabilmeniz için özel bir görev oluşturma veya var olan görevleri değişiklik yapma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedefleri ve görevleri yapılandırma](../msbuild/how-to-configure-targets-and-tasks.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

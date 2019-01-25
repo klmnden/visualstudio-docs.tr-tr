@@ -1,12 +1,9 @@
 ---
 title: Öğe oluşturma ve hareketini özelleştirme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853837"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768103"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +76,7 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
 >   
 >  Yeni bir öğe veya yeni ilişki her zaman özel kodunuz tarafından işlendiğinden emin olmak istiyorsanız, tanımlama göz önünde bir `AddRule` gömme ilişkisinde ve `DeleteRule` öğenin etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>Örnek: bir EMD özel kod olmadan tanımlama  
+## <a name="example-defining-an-emd-without-custom-code"></a>Örnek: Özel kod olmadan bir EMD tanımlama  
  Aşağıdaki örnek, bir öğe ve bir bağlayıcı aynı anda var olan bir şekil araç kutusundan sürükleyip oluşturmasına olanak verir. Örneğin DSL tanımı için bir EMD ekler. Bu değişiklikten önce kullanıcıların araçları mevcut şekiller üzerine değil ancak diyagram üzerine sürükleyebilirsiniz.  
   
  Kullanıcılar ayrıca öğeleri diğer öğeler üzerine yapıştırabilirsiniz.  
@@ -94,7 +91,7 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
   
    1.  İçinde **DSL Gezgini**, genişletme **alan sınıfları**. Sağ `ExampleElement` ve ardından **yeni öğe birleştirme yönergesinde ekleme**.  
   
-   2.  Emin olun **DSL ayrıntıları** penceresi açıkken, böylece yeni EMD ayrıntılarını görebilirsiniz. (Menü: **görünümü**, **diğer Windows**, **DSL ayrıntıları**.)  
+   2.  Emin olun **DSL ayrıntıları** penceresi açıkken, böylece yeni EMD ayrıntılarını görebilirsiniz. (Menü: **Görüntüleme**, **diğer Windows**, **DSL ayrıntıları**.)  
   
 3. Ayarlama **dizin oluşturma sınıfı** hangi sınıfın öğelerin üzerine birleştirilebilir tanımlamak için DSL Ayrıntıları penceresinde `ExampleElement` nesneleri.  
   
@@ -163,7 +160,7 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
   
 4.  Çözümü yeniden derleyin. Oluşturulan kod modelinden güncelleştirilecek çünkü bu normalden daha uzun sürer.  
   
-     Bir yapı hatası bildirilen, benzer olacaktır: "Company.ElementMergeSample.ExampleElement içermiyor bir tanımı için CanMergeExampleElement..."  
+     Bir yapı hatası bildirilen, benzer olacaktır: "Company.ElementMergeSample.ExampleElement bir için CanMergeExampleElement neobsahuje platnou definici..."  
   
      Yöntemini uygulamalıdır `CanMergeExampleElement`.  
   
@@ -211,7 +208,7 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
   
     3.  Modele dörtten fazla öğeleri eklemek için şu adımlardan herhangi birini kullanamazsınız doğrulayın. Tüm öğe birleştirme yönergesinde kullandıkları olmasıdır.  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Örnek: Özel birleştirme kodu için bir EMD ekleme  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Örnek: Bir EMD için birleştirme özel kod ekleme  
  Özel birleştirme kodu, kullanıcı bir araç sürüklediğinde veya bir öğenin üstüne yapıştırır ne tanımlayabilirsiniz. Özel bir birleştirme tanımlamak için iki yolu vardır:  
   
 1. Ayarlama **kullanan özel birleştirme** ve gerekli kodu sağlayın. Kodunuzu oluşturulan birleştirme kodu değiştirir. Birleştirme yaptığı tamamen tanımlanacak istiyorsanız bu seçeneği kullanın.  
@@ -324,6 +321,3 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
  [Gezinme ve Program kodundaki modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Araçları ve araç kutusunu özelleştirme](../modeling/customizing-tools-and-the-toolbox.md)   
  [Bağlantı hattı diyagramları örneği DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

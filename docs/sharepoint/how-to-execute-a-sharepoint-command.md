@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir SharePoint komutu yürütme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir SharePoint komutu yürütme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], executing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acf9ec69c308c62d55899351594fca01ac18bf97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953124"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865326"
 ---
-# <a name="how-to-execute-a-sharepoint-command"></a>Nasıl Yapılır: Bir SharePoint komutu yürütme
+# <a name="how-to-execute-a-sharepoint-command"></a>Nasıl yapılır: Bir SharePoint komutu yürütme
   Sunucu nesne modeli SharePoint Araçlar uzantısından kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'sini çağırmak için. Komut tanımlayıp, SharePoint Araçlar uzantısından ile dağıttıktan sonra uzantınızı komutu SharePoint sunucusu nesne modeline çağrı yürütebilir. Komutu yürütmek için ExecuteCommand yöntemlerinden birini kullanın: bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne.  
   
  SharePoint komutları amacı hakkında daha fazla bilgi için bkz. [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).  

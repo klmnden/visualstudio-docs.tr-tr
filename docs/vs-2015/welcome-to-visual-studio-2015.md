@@ -3,10 +3,7 @@ title: Visual Studio 2015 Hoş Geldiniz | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805152"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835092"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015’e Hoş Geldiniz
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,7 +50,7 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 ## <a name="build-apps-for-android-ios-and-windows"></a>Android, iOS ve Windows için uygulamalar oluşturun
  Android, iOS ve Windows cihazlar için uygulamalar oluşturmak için Visual Studio'yu kullanabilirsiniz. Adresinden hakkında daha fazla bilgi [platformlar arası mobil geliştirme](./cross-platform/cross-platform-mobile-development-in-visual-studio.md).
 
- Evrensel Windows uygulamaları (UWP) hakkında daha fazla bilgi için bkz: [Evrensel Windows uygulamaları](https://dev.windows.com/en-us/windows-apps).
+ Evrensel Windows uygulamaları (UWP) hakkında daha fazla bilgi için bkz: [Evrensel Windows uygulamaları](https://dev.windows.com/windows-apps).
 
  Uygulama gereksinimlerinize ve kullanmak istediğiniz dil, ihtiyacınız olan araçları göre seçin.
 
@@ -99,7 +96,7 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015'teki yenilikler](./what-s-new-in-visual-studio-2015.md)|[Visual C# için yenilikler nelerdir?](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 için yenilikler nelerdir?](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM'deki yenilikler](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Visual Studio 2015'teki yenilikler](./what-s-new-in-visual-studio-2015.md)|[Visual C# için yenilikler nelerdir?](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 için yenilikler nelerdir?](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM'deki yenilikler](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[C++ için yenilikler nelerdir?](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic’teki Yenilikler](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript için yenilikler nelerdir?](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

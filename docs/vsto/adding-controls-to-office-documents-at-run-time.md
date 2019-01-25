@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842794"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869193"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Office belgelerine çalışma zamanında denetimler ekleme
   Microsoft Office Word belgesi ve Microsoft Office Excel çalışma zamanında denetimler ekleyebilirsiniz. Ayrıca bunları çalışma zamanında kaldırabilirsiniz. Çalışma zamanında ekleyip denetimleri çağrılır *Dinamik denetimleri*.  

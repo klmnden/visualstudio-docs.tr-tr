@@ -1,23 +1,18 @@
 ---
 title: VSSDK örnekleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
-manager: douge
-ms.openlocfilehash: 9b085befc0d54a639510c3bd8b884389f193e209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 47e99e64e96c0572f7b3c9e93c0ee034afcfd9f1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292116"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834662"
 ---
 # <a name="vssdk-samples"></a>VSSDK örnekleri
 Visual Studio genişletilebilirlik örnekleri için resmi platformdur [MSDN Kod Galerisi](http://go.microsoft.com/fwlink/?LinkID=127810) Web sitesi. Site tanıtım örnekleri, Visual Studio, yakından belgeleri, paylaşılan kaynak projeleri için bağlantıları ve diğer kaynakları Visual Studio'yu genişletin yardımcı olması için yeni özellikleri gösteren örnekleri içerir. Bu kaynakların bir listesini görmek için şunu yazın **VSX** içinde **örnekleri Ara** giriş sayfasında kutusu.  

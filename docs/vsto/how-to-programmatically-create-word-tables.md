@@ -10,15 +10,15 @@ helpviewer_keywords:
 - tables [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 995e2ed35334c0e3022d7d48dd57add7e2e45198
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 1e0b75230ccce5004d1f764db7c7ea39775f3a4f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869937"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Nasıl yapılır: Program aracılığıyla Word tabloları oluşturma
   <xref:Microsoft.Office.Interop.Word.Tables> Koleksiyon üyesi olduğu <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, ve <xref:Microsoft.Office.Interop.Word.Range> sınıflarıyla bu içeriklerden herhangi birinde bir tablo oluşturabileceğiniz anlamına gelir. Kullandığınız <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Tables> belirli bir aralıkta bir tablo eklemek için koleksiyonu.  

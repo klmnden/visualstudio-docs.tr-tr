@@ -1,25 +1,20 @@
 ---
 title: WPF'ye giriş | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756015"
 ---
 # <a name="introduction-to-wpf"></a>WPF'ye Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,16 +86,16 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi, görsel olarak etkil
 ```  
   
 ```csharp  
-using System.Windows; // Window, RoutedEventArgs, MessageBox   
+using System.Windows; // Window, RoutedEventArgs, MessageBox   
   
 namespace SDKSample  
 {  
-    public partial class AWindow : Window  
+    public partial class AWindow : Window  
     {  
         public AWindow()  
         {  
-            // InitializeComponent call is required to merge the UI   
-            // that is defined in markup with this class, including    
+            // InitializeComponent call is required to merge the UI   
+            // that is defined in markup with this class, including    
             // setting properties and registering event handlers  
             InitializeComponent();  
         }  
@@ -117,28 +112,28 @@ namespace SDKSample
 ```vb  
 Namespace SDKSample  
   
-    Partial Public Class AWindow  
+    Partial Public Class AWindow  
         Inherits System.Windows.Window  
   
-        Public Sub New()  
+        Public Sub New()  
   
-            ' InitializeComponent call is required to merge the UI   
-            ' that is defined in markup with this class, including    
+            ' InitializeComponent call is required to merge the UI   
+            ' that is defined in markup with this class, including    
             ' setting properties and registering event handlers  
             InitializeComponent()  
   
-        End Sub   
+        End Sub   
   
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
   
             ' Show message box when button is clicked  
             MessageBox.Show("Hello, Windows Presentation Foundation!")  
   
-        End Sub   
+        End Sub   
   
-    End Class   
+    End Class   
   
-End Namespace  
+End Namespace  
   
 ```  
   
@@ -194,13 +189,13 @@ End Namespace
   
  Temel WPF sınıflarıyla alt denetimler için Düzen sistemi kullanıma sunulur. Kılavuz, yığın ve takma gibi ortak düzenleri için çeşitli düzen denetimleri WPF içerir:  
   
-- <xref:System.Windows.Controls.Canvas>: Kendi düzen alt denetimleri sağlar.  
+- <xref:System.Windows.Controls.Canvas>: Alt denetimler, kendi düzen sağlar.  
   
 - <xref:System.Windows.Controls.DockPanel>: Alt denetimler bölmesinin kenarlarını hizalanır.  
   
 - <xref:System.Windows.Controls.Grid>: Alt denetimler, satırlar ve sütunlarla yerleştirilir.  
   
-- <xref:System.Windows.Controls.StackPanel>: Dikey veya yatay alt denetimler yığılır.  
+- <xref:System.Windows.Controls.StackPanel>: Alt denetimler dikey veya yatay Yığılmış değil.  
   
 - <xref:System.Windows.Controls.VirtualizingStackPanel>: Alt denetimler sanallaştırılmış ve yatay veya dikey yönlendirilmiş olan tek bir satıra düzenlenir.  
   
@@ -526,6 +521,3 @@ End Namespace
  [WPF ile çalışmaya başlama](../designers/getting-started-with-wpf.md)   
  [Windows Presentation Foundation ile modern masaüstü uygulamaları oluşturun](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)
-
-
-

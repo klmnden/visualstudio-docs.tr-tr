@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla koruma'
+title: 'Nasıl yapılır: Çalışma kitaplarını program aracılığıyla koruma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - document protection, removing from workbooks
 - document protection, adding to workbooks
 - workbooks, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5333504ed534373b6bb65902edb2566953de7a59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900783"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863688"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Nasıl Yapılır: Çalışma kitaplarını program aracılığıyla koruma
+# <a name="how-to-programmatically-protect-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla koruma
   Kullanıcıların ekleme yapılamıyor veya çalışma sayfaları silme ve ayrıca da programlı olarak çalışma kitabının korumasını kaldırmak, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, isterseniz (kullanıcılar sayfası taşınamıyor şekilde) korunan yapı ve korumalı çalışma kitabının windows isteyip istemediğinizi belirtin olup olmadığını gösterir.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

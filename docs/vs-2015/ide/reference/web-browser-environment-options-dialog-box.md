@@ -1,14 +1,9 @@
 ---
 title: Web tarayıcısı, ortam, Seçenekler iletişim kutusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
@@ -28,13 +23,13 @@ ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755319"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49931844"
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **ortam** klasörünü açın ve seçin **Web tarayıcısı**.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
 >  Belirli dosyaları veya bileşenleri, Web'ten bilgisayarınızda kod yürütebilir.  
@@ -63,7 +58,7 @@ ms.locfileid: "49931844"
   
 - **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.  
   
-  Internet Explorer Seçenekleri  
+  Internet Explorer Options  
   Internet Explorer seçeneklerini değiştirmek için tıklayın **Internet Özellikleri** iletişim kutusu. Bu iletişim kutusunda yapılan değişiklikler, iç Web tarayıcısı ve Internet Explorer'ın dışında (örneğin, Başlat menüsünden) Visual Studio IDE başlatılan örneklerini etkiler.  
   
 > [!NOTE]
@@ -73,6 +68,3 @@ ms.locfileid: "49931844"
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   
  [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML Tasarımcısı](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
-
-
-

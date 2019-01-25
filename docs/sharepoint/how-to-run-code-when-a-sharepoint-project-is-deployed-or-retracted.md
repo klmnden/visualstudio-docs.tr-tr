@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma kodu bir SharePoint projesi dağıtıldığında veya geri çekildiğinde olan | Microsoft Docs'
+title: 'Nasıl yapılır: Çalışma kodu bir SharePoint projesi dağıtıldığında veya geri çekildiğinde olan | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e3663ec203c7b445c60b17627f1458fcd231a25
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866099"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Nasıl Yapılır: Bir SharePoint projesine dağıtılan ya da geri çekilebilir kodu çalıştırın.
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Nasıl yapılır: Bir SharePoint projesine dağıtılan ya da geri çekilebilir kodu çalıştırın.
   Bir SharePoint projesine dağıtılan ya da geri çekilebilir ek görevleri gerçekleştirmek istiyorsanız, Visual Studio tarafından oluşturulan olayları işleyebilir. Daha fazla bilgi için [genişletmek SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Bir SharePoint projesi kodu çalıştırmak için dağıtılan geri çekilebilir veya  

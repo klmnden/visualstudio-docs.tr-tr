@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: SharePoint dağıtım komutlarını ayarlama | Microsoft Docs'
+title: 'Nasıl yapılır: SharePoint dağıtım komutlarını ayarlama | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e76a1e4e19f8f3280b6da71dffa19d3a7e2c16a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920371"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871786"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Nasıl Yapılır: SharePoint dağıtım komutlarını ayarlama
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Nasıl yapılır: SharePoint dağıtım komutlarını ayarlama
   Dağıtım öncesi ve dağıtım sonrası komutları ayarlayarak, dağıtım işlemi özelleştirebilirsiniz. SharePoint çözümleri Visual Studio'dan hata ayıklaması yaparken önce ve sonra diğer dağıtım eylemleri şu komutları çalıştırın.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Dağıtım öncesi komut ekleme  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950822"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875725"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Uzantıları Visual Studio'da SharePoint araçları için hata ayıklama
   SharePoint araç uzantıları deneysel örneğinde veya normal örneğinde Visual Studio'nun hata ayıklaması yapabilirsiniz. Uzantının davranış sorun gidermeniz gerekiyorsa, ek hata bilgileri görüntülemek ve Visual Studio'nun SharePoint komutlarını nasıl yürüteceğini yapılandırmak için kayıt defteri değerlerini de değiştirebilirsiniz.

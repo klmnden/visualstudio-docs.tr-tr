@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla çalışma sayfaları seçme'
+title: 'Nasıl yapılır: Program aracılığıyla çalışma sayfaları seçme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, selecting
 - Excel projects, selecting worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ecb6872d56d4dc7f54f3ef73e0f8dafed06d2e6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924481"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863129"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Nasıl Yapılır: Program aracılığıyla çalışma sayfaları seçme
+# <a name="how-to-programmatically-select-worksheets"></a>Nasıl yapılır: Program aracılığıyla çalışma sayfaları seçme
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Yöntemi yeni nesneye kullanıcının seçimi taşır belirtilen nesneyi seçer. Kullanım <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> yöntemi, kullanıcının seçimini değiştirmeden nesnesine odaklanmak istiyorsanız.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

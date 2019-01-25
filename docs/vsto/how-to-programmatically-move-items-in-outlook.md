@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Outlook'ta program aracılığıyla öğeleri taşıma"
+title: "Nasıl yapılır: Outlook'ta program aracılığıyla öğeleri taşıma"
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], moving items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51123937fd26b6d6decf3770affd83b1d58d5bfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4551a7e1228203977cf04dc205445f3fe7d250c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875747"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870746"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>Nasıl Yapılır: Outlook'ta program aracılığıyla öğeleri taşıma
+# <a name="how-to-programmatically-move-items-in-outlook"></a>Nasıl yapılır: Outlook'ta program aracılığıyla öğeleri taşıma
   Bu örnekte okunmamış e-posta iletileri taşır **gelen** adlı bir klasöre **Test**. Örneğin, yalnızca Word'ün iletileri taşır **Test** içinde `Subject` alan.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  

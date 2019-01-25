@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Şeritteki sekmenin konumunu değiştirme'
+title: 'Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a10e7d48bf44305285d13c3b20fa4c1854e2bb59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863792"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Nasıl Yapılır: Şeritteki sekmenin konumunu değiştirme
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme
   Kullanarak bir Şeritteki özel sekmelerin sırasını değiştirebilirsiniz **Sekme Derlemi Düzenleyicisi**. Önce veya sonra Şeritteki yerleşik bir sekmeyi özel sekmeler konumlandırabilirsiniz. Yerleşik bir sekmeyi bir Microsoft Office uygulamasının Şerit üzerinde zaten var olan bir sekmedir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  

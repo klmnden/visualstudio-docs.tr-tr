@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Silici metodu ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Silici metodu ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting entity instances
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting data
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cad4de5ed1b31d02d9136b5ec2b46be71f54fea4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924182"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870889"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Nasıl Yapılır: Silici metodu ekleme
+# <a name="how-to-add-a-deleter-method"></a>Nasıl yapılır: Silici metodu ekleme
   Modele bir Silici metodu ekleme tarafından bir SharePoint sitesinde dış bir listeden bir veri kaydı silmek bir son kullanıcı etkinleştirebilirsiniz. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Silici yöntemi oluşturmak için  

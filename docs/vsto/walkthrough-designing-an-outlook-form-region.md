@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942378"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867370"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>İzlenecek yol: Outlook form bölgesi tasarlama
   Özel form bölgeleri, standart veya özel Microsoft Office Outlook formlarına genişletin. Bu kılavuzda, yeni bir sayfa denetçisi penceresinde bir kişi öğesinin görüntülenen özel form bölgesi tasarlama. Bu form bölgesini kişi için Windows Live yerel arama Web sitesine adres bilgilerini göndererek listelenen her adresinin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).  
@@ -153,8 +153,8 @@ ms.locfileid: "53942378"
   
     |Adres türü|Adres|  
     |------------------|-------------|  
-    |**İş**|**4567 Main St İstanbul, NY**|  
-    |**Giriş**|**1234 Kuzey St. İstanbul, NY**|  
+    |**İş**|**4567 Main St. Buffalo, NY**|  
+    |**Giriş**|**1234 North St. Buffalo, NY**|  
     |**Diğer**|**3456 Main St Seattle, WA**|  
   
 4.  Kaydet ve kişi öğesini kapatın.  

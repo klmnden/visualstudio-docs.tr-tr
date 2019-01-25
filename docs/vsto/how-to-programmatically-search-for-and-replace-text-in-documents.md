@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme'
+title: 'Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - text searches, documents
 - text [Office development in Visual Studio], searching in documents
 - text [Office development in Visual Studio], text searches
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 677a7484a6c0356635dd2d6f8353e8b27c38a562
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823681"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864039"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Nasıl Yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme
   <xref:Microsoft.Office.Interop.Word.Find> Nesnedir hem de bir üyesi <xref:Microsoft.Office.Interop.Word.Selection> ve <xref:Microsoft.Office.Interop.Word.Range> nesneleri ve bunlardan birini Microsoft Office Word belgelerinde metin aramak için kullanabilirsiniz. Replace komutu FIND komutu bir uzantısıdır.  
   
  Kullanan bir <xref:Microsoft.Office.Interop.Word.Find> Microsoft Office Word belgesi ve belirli bir metni, biçimlendirme ve stil Ara döngü nesnesini ve kullanmak <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> bulunan öğelerden herhangi birini değiştirmek için özellik.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belgeleri hizmet verileriyle doldurma'
+title: 'Nasıl yapılır: Belgeleri hizmet verileriyle doldurma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e935501e2e38c7e6c3abdb1c16e351342cf52a8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838300"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865027"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>Nasıl Yapılır: Belgeleri hizmet verileriyle doldurma
+# <a name="how-to-populate-documents-with-data-from-services"></a>Nasıl yapılır: Belgeleri hizmet verileriyle doldurma
 
 Windows Forms projelerinde olduğu gibi veri erişimi için Microsoft Office belge düzeyinde projelerde aynı şekilde çalışır. Çözümünüze verileri getirmek için aynı araçları ve kodu kullanın ve verileri görüntülemek için Windows Forms denetimleri bile kullanabilirsiniz. Ayrıca, olayları ve veri bağlama özelliğiyle ile zenginleştirilmiştir yerel nesneler Microsoft Office Excel ve Microsoft Office Word konak kontrollerinden yararlanabilir. Daha fazla bilgi için [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
 

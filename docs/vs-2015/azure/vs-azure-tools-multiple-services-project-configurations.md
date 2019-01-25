@@ -2,7 +2,7 @@
 title: Birden çok hizmet yapılandırması'nı kullanarak Azure projenizi yapılandırma | Microsoft Docs
 description: Bir Azure bulut hizmeti projesi ServiceDefinition.csdef ve ServiceConfiguration.Local.cscfg ServiceConfiguration.Cloud.cscfg dosyaları değiştirerek yapılandırmayı öğrenin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ab42c241e1d87d2de31c4fde3aba81294be0520a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 9da83c8c2e3b3cd86022b8fcc54f1c90a417cada
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766886"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 

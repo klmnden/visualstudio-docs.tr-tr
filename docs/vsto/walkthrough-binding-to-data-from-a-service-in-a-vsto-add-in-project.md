@@ -9,17 +9,17 @@ helpviewer_keywords:
 - databases [Office development in Visual Studio], scrolling records
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b56a23fdc29a7b6f9656ba1e065ffb097461aeaf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892296"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876193"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: Bir VSTO eklenti projesinde bir hizmetten verilere bağlama
   Verileri, VSTO eklentisi projelerine konak denetimlere bağlayabilirsiniz. Bu izlenecek yol, bir Microsoft Office Word belgesi için denetimler ekleme, MSDN içerik hizmetinden alınan verilere denetimler bağlama ve çalışma zamanında olaylara yanıt gösterilmektedir.  

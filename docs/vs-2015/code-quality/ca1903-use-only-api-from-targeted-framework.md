@@ -1,14 +1,9 @@
 ---
-title: 'CA1903: Yalnızca hedeflenen çerçeveden API kullanın. | Microsoft Docs'
-ms.custom: ''
+title: 'CA1903: Yalnızca hedeflenen çerçeveden API kullanın | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f0b2849c6ac10be6663628ca1964eaa490e0d78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191587"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759902"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Yalnızca hedeflenen çerçeveden API kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,8 +45,8 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1903: Yalnızca hede
 |||  
 |-|-|  
 |Hedef Framework'ü olduğunda|Kullanımları sürümünde üyeleri üzerinde harekete geçirilir|  
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
-|.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
+|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
+|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
 |.NET Framework 3.5|.NET Framework 3.5 SP1 |  
 |.NET Framework 4|Yok|  
   
@@ -76,4 +71,3 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1903: Yalnızca hede
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Taşınabilirlik uyarıları](../code-quality/portability-warnings.md)   
  [Belirli Bir .NET Framework Sürümünü Hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md)
-

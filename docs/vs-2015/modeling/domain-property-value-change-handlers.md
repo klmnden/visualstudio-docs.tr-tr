@@ -1,25 +1,22 @@
 ---
 title: Etki alanı özellik değeri değişiklik işleyicileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ad8cc11947bdaa99fa7d3ee1d48576896859e598
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232732"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835073"
 ---
 # <a name="domain-property-value-change-handlers"></a>Etki Alanı Özellik Değeri Değişiklik İşleyicileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +94,7 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>Alternatif yöntem: hesaplanan özellikleri  
+### <a name="alternative-technique-calculated-properties"></a>Alternatif yöntem: Hesaplanan özellikleri  
  Önceki örnekte, bir etki alanı özelliğinden değerlere yayılması OnValueChanged()'ın nasıl kullanılabileceğini gösterir. Her bir özellik depolanan değerine sahiptir.  
   
  Bunun yerine, türetilen özelliği hesaplanan özellik tanımlama düşünebilirsiniz. Durumda, özelliği, kendi hiçbir depolama alanına sahip ve tanımlanıyor işlevi değeri gerekli olduğunda değerlendirilir. Daha fazla bilgi için [hesaplanan ve özel depolama özellikleri](../modeling/calculated-and-custom-storage-properties.md).  
@@ -106,7 +103,7 @@ if (newValue > 10)
   
  Ancak, olası bir dezavantajı hesaplanan özellikler, ifade değeri, bir performans sorunu sayacağı kullanıldığı her zaman değerlendirilir olur. Ayrıca, hiçbir OnValueChanging() ve yoktur OnValueChanged() hesaplanan bir özellik.  
   
-### <a name="alternative-technique-change-rules"></a>Alternatif yöntem: kuralları Değiştir  
+### <a name="alternative-technique-change-rules"></a>Alternatif yöntem: Kuralları Değiştir  
  Bir ChangeRule tanımlarsanız, bir özelliğin değerini değiştirir, bir işlem sonunda yürütülür.  Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).  
   
  Bir işlemde birkaç değişiklik yapılırsa, tüm tamamlandığı zaman ChangeRule yürütür. Bunun aksine, OnValue... tarafından yöntemleri, bazı değişiklikler gerçekleştirilmemiş olduğunda yürütülür. Elde etmek istediğinize bağlı olarak, bu bir ChangeRule daha uygun hale getirebilirsiniz.  
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-

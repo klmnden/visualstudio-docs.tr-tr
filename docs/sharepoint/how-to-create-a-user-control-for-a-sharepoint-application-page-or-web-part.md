@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir kullanıcı denetimi oluşturmak için bir SharePoint uygulama sayfası veya Web Bölümü | Microsoft Docs'
+title: 'Nasıl yapılır: Bir kullanıcı denetimi oluşturmak için bir SharePoint uygulama sayfası veya Web Bölümü | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], creating
 - user controls [SharePoint development in Visual Studio], adding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ed93a92f50920382e551521a6889ee2ed42f7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58288f482b7b32319d8c45c9b12e75899541b81e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820754"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865053"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Nasıl Yapılır: Bir SharePoint uygulama sayfası veya web bölümü için bir kullanıcı denetimi oluşturma
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Nasıl yapılır: Bir SharePoint uygulama sayfası veya web bölümü için bir kullanıcı denetimi oluşturma
   SharePoint çözümünüz için özel işlevler sağlayan özel kullanıcı denetimi oluşturabilir ve projenize içinde bu işlevi kullanabilirsiniz. Bir web bölümü veya uygulamadaki kullanıcı denetimleri dahil edebileceğiniz sayfasında, diğer ASP.NET denetimleri ve SharePoint denetimleri ekleyin ve denetimi için özellikleri ve yöntemleri tanımlar. Kullanıcı denetimleri hakkında daha fazla bilgi için bkz: [web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) ve [kullanıcı denetimleri ve SharePoint Server denetimlerinde](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).  
   
 ### <a name="to-create-a-user-control-for-sharepoint"></a>SharePoint için bir kullanıcı denetimi oluşturmak için  

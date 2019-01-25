@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma'
+title: 'Nasıl yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], dialog boxes
 - dialog boxes, Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e954533957fc655c49145fec9505679d376eedb9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829069"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872540"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Nasıl Yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Nasıl yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma
   Microsoft Office Word ile çalışırken, kullanıcı girişi için iletişim kutularını görüntülemek için gerektiğinde zamanlar vardır. Kendi oluşturabilirsiniz, ancak aynı zamanda sunulan yerleşik Word iletişim kutularını, kullanarak yaklaşımı isteyebileceğiniz <xref:Microsoft.Office.Interop.Word.Dialogs> koleksiyonunu <xref:Microsoft.Office.Interop.Word.Application> nesne. Bu, 200'den fazla yerleşik iletişim kutuları, sabit listeleri temsil edilen erişmenize olanak sağlar.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

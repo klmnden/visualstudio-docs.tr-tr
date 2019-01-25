@@ -1,12 +1,9 @@
 ---
-title: 'UML sıralı diyagramlar: Yönergeler | Microsoft Docs'
-ms.custom: ''
+title: 'UML sıralı diyagramlar: Yönergeleri | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.linktosequencediagram
 - vs.teamarch.logicalclassdiagram.createlifeline
@@ -25,15 +22,15 @@ ms.assetid: 5990ef7c-ba60-4e20-a36d-e29c1fa6c8bb
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56ecc5c54611f94cdbfb0f08ec54a4e0722f0cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774654"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sıralı Diyagramlar: Yönergeler
+# <a name="uml-sequence-diagrams-guidelines"></a>UML sıralı diyagramlar: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek için. Etkileşim, sınıflar, bileşenleri, alt sistemler veya aktörler tipik örnekleri arasında iletileri dizisidir.  
@@ -60,9 +57,9 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
 ##  <a name="Using"></a> UML sıralı diyagramları kullanma  
  Çeşitli amaçlarla farklı program ayrıntı düzeylerinde için sıralı diyagramlar kullanabilirsiniz. Sıralı diyagram çizmek için tipik durumlar aşağıdaki gibidir:  
   
-- Sisteminizin kullanıcıları ve onların hedeflerini özetleyen bir kullanım durumu diyagramı varsa, her kullanım örneği amacı karşılamak için sistemin ana bileşenlerini nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Sisteminizin kullanıcıları ve onların hedeflerini özetleyen bir kullanım durumu diyagramı varsa, her kullanım örneği amacı karşılamak için sistemin ana bileşenlerini nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-- Bir arabirimin bir bileşenin gelen iletiler belirlediyseniz, bileşenin iç parçalarını gelen her ileti için gereken sonucu elde etmek üzere nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Bileşen Diyagramları: yönergeler](../modeling/uml-component-diagrams-guidelines.md).  
+- Bir arabirimin bir bileşenin gelen iletiler belirlediyseniz, bileşenin iç parçalarını gelen her ileti için gereken sonucu elde etmek üzere nasıl etkileşimde bulunduğunu açıklamak için sıralı diyagramlar çizebilirsiniz. Daha fazla bilgi için [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md).  
   
   Sıralı diyagram çizmenin birçok faydası vardır:  
   
@@ -80,10 +77,10 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
  Bir UML sınıf diyagramında parametre türleri de tanımlayabilirsiniz ve yaşam çizgileri arasında gönderilen iletilerde kullanılan değerleri döndürdü.  
   
 #### <a name="use-case-details"></a>Servis talebi ayrıntıları  
- Kullanım örneği, bir kullanıcının hedef, hedefe ulaşmak için adımlar dizisini temsil eder. Adımların sırasını birkaç şekilde açıklanabilir. Kullanıcılar ve sistemin ana bileşenleri arasındaki etkileşimler gösteren sıralı diyagram çizmek bir seçenektir. Daha fazla bilgi için [UML Kullanım durumu diyagramları: yönergeler](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Kullanım örneği, bir kullanıcının hedef, hedefe ulaşmak için adımlar dizisini temsil eder. Adımların sırasını birkaç şekilde açıklanabilir. Kullanıcılar ve sistemin ana bileşenleri arasındaki etkileşimler gösteren sıralı diyagram çizmek bir seçenektir. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Sıralama diyagramları çizmek için temel adımlar  
- Öğeleri sıralı diyagramlar üzerinde tam bir listesi için bkz. [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md).  
+ Öğeleri sıralı diyagramlar üzerinde tam bir listesi için bkz. [UML Sequence Diagrams: Başvuru](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
 >  Herhangi bir modelleme diyagramının oluşturulması için ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
@@ -118,7 +115,7 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
 3.  Bilinmeyen olay kaynağından (9) gelir ve yayınlar bir ileti bilinmeyen bir alıcıya (10) göstermek için diyagramda ya da boş alan için bir zaman uyumsuz ileti çizin. Bu iletiler olarak adlandırılan *bulunan iletileri* (9) ve *kayıp iletiler* (10).  
   
     > [!NOTE]
-    >  Kayıp veya bulunan iletileri olan yaşam çizgileri grubu taşımak için yaşam çizgilerini taşımadan önce seçmek için aşağıdaki adımları izleyin: Bu yaşam çizgileri veya basılı tutarak çevresinde bir dikdörtgen çizin **CTRL** her yaşam çizgisi tıklatırken anahtar. Kullanırsanız **Tümünü Seç** veya **CTRL**+**A** tüm yaşam çizgilerini seçin ve ardından bunları taşımak için kayıp veya bulunan bu yaşam çizgilerine iliştirilmiş iletiler taşınmayacaktır. Bu senaryo ortaya çıkarsa, bu iletileri ayrı olarak taşıyabilirsiniz.  
+    >  Kayıp veya bulunan iletileri olan bir grup yaşam çizgisini taşımak için aşağıdaki adımları uygulayarak yaşam çizgilerini taşımadan önce seçin: Bu yaşam çizgileri veya basılı tutarak çevresinde bir dikdörtgen çizin **CTRL** her yaşam çizgisi tıklatırken anahtar. Kullanırsanız **Tümünü Seç** veya **CTRL**+**A** tüm yaşam çizgilerini seçin ve ardından bunları taşımak için kayıp veya bulunan bu yaşam çizgilerine iliştirilmiş iletiler taşınmayacaktır. Bu senaryo ortaya çıkarsa, bu iletileri ayrı olarak taşıyabilirsiniz.  
   
 4.  Aynı bileşen veya sistemin ana her ileti için sıralı diyagramlar çizin.  
   
@@ -147,7 +144,7 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
   - Yaşam çizgisine sağ tıklayın ve ardından **Sınıf Oluştur**.  
   
-     veya  
+     -veya-  
   
   - Tuşuna yaşam çizgisi seçin **F4**ve ardından **özellikleri** penceresinde **türü** mevcut bir özellik yazın veya yeni bir tür adını belirtin. İleti etiketi sağ tıklatın ve ardından **oluşturma işlemi**.  
   
@@ -446,13 +443,10 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
 5.  Yeni iletiler için bir parça eklemek için ileti araçlarını kullanın veya kopyalayıp yapıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sıralı diyagramlar: başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Kullanım durumu diyagramları: başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML Bileşen Diyagramları: başvuru](../modeling/uml-component-diagrams-reference.md)   
- [Video: Sıralı diyagramlar kullanarak etkileşimleri tasarlamaktan](http://go.microsoft.com/fwlink/?LinkId=201113)
-
-
-
+ [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
+ [Video: Sıralı diyagramlar kullanarak tasarlamaktan etkileşimleri](http://go.microsoft.com/fwlink/?LinkId=201113)

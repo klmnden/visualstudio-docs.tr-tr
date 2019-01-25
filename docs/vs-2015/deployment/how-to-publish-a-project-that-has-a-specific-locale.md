@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Bir özel yerel ayara sahip olan bir projeyi yayımlama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +20,13 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+manager: jillfra
+ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753770"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,9 +166,6 @@ Farklı yerel ayarlara sahip bileşenleri içeren bir uygulama için durumdur. B
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
- [Makrolar geliştirme ortamı](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Makro Gezgini penceresi](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Nasıl yapılır: Düzenle ve makroları program aracılığıyla oluşturma](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
-
-
-
+ [Makrolar geliştirme ortamı](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Makro Gezgini penceresi](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Nasıl yapılır: Düzenleme ve makroları program aracılığıyla oluşturma](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

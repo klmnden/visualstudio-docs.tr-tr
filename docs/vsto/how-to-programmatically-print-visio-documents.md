@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla Visio belgelerini yazdırma'
+title: 'Nasıl yapılır: Program aracılığıyla Visio belgelerini yazdırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], printing Visio documents
 - documents [Office development in Visual Studio], printing Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f5e8ff7f7577c779349b49fc291f91d02c90094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abcf439abfe240bace83ca7ecb88ef5b9940944
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845531"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872488"
 ---
-# <a name="how-to-programmatically-print-visio-documents"></a>Nasıl Yapılır: Program aracılığıyla Visio belgelerini yazdırma
+# <a name="how-to-programmatically-print-visio-documents"></a>Nasıl yapılır: Program aracılığıyla Visio belgelerini yazdırma
   Tam bir Microsoft Office Visio belgesi ya da yalnızca belirli bir sayfa yazdırabilir.  
   
  Yazdırma yöntemleri hakkında daha fazla ayrıntı için VBA başvuru belgelerine bakın [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) yöntemi ve [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) yöntemi .  

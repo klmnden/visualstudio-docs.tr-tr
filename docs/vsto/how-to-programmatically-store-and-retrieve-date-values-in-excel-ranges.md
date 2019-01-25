@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve'
+title: 'Nasıl yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - dates, storing in Excel ranges
 - ranges, storing date values
 - date values
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a28a357aa6a01615d269c6fba41c690f41c7b93d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24155f9ea8703d7089714a9b0adce9310612a4ea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863910"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872722"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Nasıl Yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Nasıl yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve
   Değerleri depolanıp bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

@@ -1,14 +1,9 @@
 ---
 title: '&lt;Dağıtım&gt; öğesi (ClickOnce dağıtımı) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -26,13 +21,13 @@ ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753776"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Dağıtım&gt; öğesi (ClickOnce dağıtımı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +38,25 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
   
 ```  
   
-      <deployment   
+      <deployment   
    install  
    minimumRequiredVersion  
    mapFileExtensions  
    disallowUrlActivation  
    trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
+>   
+   <subscription>   
+         <update>   
+            <beforeApplicationStartup/>   
             <expiration  
                maximumAge  
                unit  
             />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
+         </update>    
+   </subscription>   
+   <deploymentProvider   
+      codebase   
+   />   
 </deployment>  
 ```  
   
@@ -74,11 +69,11 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
 |`minimumRequiredVersion`|İsteğe bağlı. İstemci üzerinde çalışabilen bu uygulamanın en düşük sürümü belirtir. Sürüm numarası uygulamanın dağıtım bildiriminde sağlanan sürüm numarasından daha küçükse, uygulama çalışmaz. Sürüm numaraları biçiminde belirtilmelidir `N.N.N.N`burada `N` işaretsiz bir tamsayıdır. Varsa `install` özniteliği `false`, `minimumRequiredVersion` ayarlanmamalıdır.|  
 |`mapFileExtensions`|İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`, Dağıtımdaki tüm dosyaları .deploy uzantısını olmalıdır. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Bu Web sunucusundan indirir hemen sonra bu uzantı bu dosyalardan çıkarır. Uygulamanızı kullanarak yayımlarsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bu uzantıyı tüm dosyalar için otomatik olarak ekler. İçindeki tüm dosyalar bu parametreyi sağlar bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] "güvenli" uzantılar .exe gibi sonlanan dosyaların aktarımını engelleyen bir Web sunucusundan yüklenecek dağıtım.|  
 |`disallowUrlActivation`|İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`, yüklü bir uygulama URL'si tıklayarak ya da Internet Explorer'a URL girilerek başlatılmasını önler. Varsa `install` öznitelik yoksa, bu öznitelik yoksayılır.|  
-|`trustURLParameters`|İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`URL'nin uygulamanın içine geçirilen sorgu dizesi parametreleri içermesine izin verir, çok benzer bir komut satırı bağımsız değişkenlerini komut satırı uygulamaya geçirilir. Daha fazla bilgi için [nasıl yapılır: çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Varsa `disallowUrlActivation` özniteliği `true`, `trustUrlParameters` bildirimden hariç, veya açıkça `false`.|  
+|`trustURLParameters`|İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`URL'nin uygulamanın içine geçirilen sorgu dizesi parametreleri içermesine izin verir, çok benzer bir komut satırı bağımsız değişkenlerini komut satırı uygulamaya geçirilir. Daha fazla bilgi için [nasıl yapılır: Bir çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Varsa `disallowUrlActivation` özniteliği `true`, `trustUrlParameters` bildirimden hariç, veya açıkça `false`.|  
   
  `deployment` Öğesi şu alt öğelerden de içerir.  
   
-## <a name="subscription"></a>Abonelik  
+## <a name="subscription"></a>aboneliği  
  İsteğe bağlı. İçeren `update` öğesi. `subscription` Öğesi özniteliklere sahip değildir. Varsa `subscription` öğesi mevcut değil, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama hiçbir zaman güncelleştirmeleri için tarama. Varsa `install` özniteliği `deployment` öğesi `false`, `subscription` öğesi göz ardı edilir, çünkü bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ağdan başlatılan her zaman uygulamanın en son sürümünü kullanır.  
   
 ## <a name="update"></a>Güncelleştirme  
@@ -131,6 +126,3 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Dağıtım Bildirimi](../deployment/clickonce-deployment-manifest.md)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: SharePoint çözümleri için özel özellik ve paket doğrulama kuralları oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: SharePoint çözümleri için özel özellik ve paket doğrulama kuralları oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 794974991216a521bf2ca4afb1e958716a3bf735
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939234"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874087"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Nasıl Yapılır: Özel özellik ve paket doğrulama kuralları için SharePoint çözümleri oluşturma
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Nasıl yapılır: Özel özellik ve paket doğrulama kuralları için SharePoint çözümleri oluşturma
   Visual Studio tarafından oluşturulan çözüm paketi doğrulamak için özel doğrulama kuralları oluşturabilirsiniz. Seçerek bir özelliğin tamamı veya paketin tam doğrulama gerçekleştirebilirsiniz **doğrulama** bir paket veya özelliği, bağlam menüsünden **PackagingExplorer**. Özellik ve paket geçerli bir durumda olmaya istekli olup olmadığını belirlemek için projeye yeni özellik veya SharePonit proje öğeleri eklediğinizde, kısmi doğrulama gerçekleştirilir.  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>Özel paket doğrulama kuralı oluşturmak için  

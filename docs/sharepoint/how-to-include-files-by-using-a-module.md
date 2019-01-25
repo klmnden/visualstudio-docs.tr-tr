@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir modül kullanarak dosyaları içerme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir modül kullanarak dosyaları içerme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c08e04dd6ca95e691c33ce77bdedf6a655ee5b4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923503"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871734"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>Nasıl Yapılır: Bir modül kullanarak dosyaları içerme
+# <a name="how-to-include-files-by-using-a-module"></a>Nasıl yapılır: Bir modül kullanarak dosyaları içerme
   *Modüller* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modülleri) dosyaları gibi ASPX ana sayfalar, metin dosyaları ya da görüntülerini SharePoint'e dağıtmanıza olanak tanıyan kapsayıcılardır.  
   
  Belge kitaplığına veya normal bir dosya (örneğin, default.aspx) gibi bir dosya dağıtmak bir belge kitaplığı dışında seçebilirsiniz. Bir belge kitaplığına bir dosya eklemek için belirtin `Type="GhostableInLibrary"` özniteliği olarak **dosya** öğesi. SharePoint kitaplığına eklendiğinde dosyanızla gitmek için bir liste öğesi oluşturmak için bu ayarı bildirir. Bir belge kitaplığının dışındaki bir dosya dağıtmak için seçeneklerinden birini belirtin `Type="Ghostable"` veya yalnızca çıkarın **türü** özniteliği.  

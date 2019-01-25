@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir Office çözümü için yapılandırma bilgilerini ayarlama'
+title: 'Nasıl yapılır: Bir Office çözümü için yapılandırma bilgilerini ayarlama'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - solutions [Office development in Visual Studio], configuration files
 - configuration files [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9db171b038178c9fe0bd4ffc4fbb98b221b9b4d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916646"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864481"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Nasıl Yapılır: Bir Office çözümü için yapılandırma bilgilerini ayarlama
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Nasıl yapılır: Bir Office çözümü için yapılandırma bilgilerini ayarlama
   Office çözümünüzü özgü ayarları yapılandırmak için yapılandırma dosyalarını kullanabilirsiniz. Derleme bağlama ilkesi, uzaktan iletişim nesneleri, hata ayıklama ve izleme ayarları gibi ayarları belirtebilirsiniz.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 924199174e03842937b4add6a39300c718a7c161
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 798cb2e7a8526e97a3d97240e181ef2e35ed21b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869089"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;özelleştirme&gt; öğesi (Visual Studio'da Office Geliştirme)
   `customization` Öğesinin `vstov4` ad belirli bir Office çözümünü açıklar. Belge düzeyi özelleştirmeleri ve VSTO eklentileri için farklı alt öğeleridir.

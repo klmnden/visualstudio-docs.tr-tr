@@ -1,11 +1,8 @@
 ---
 title: AddToCollection&lt;T&gt; etkinlik Tasarımcısı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 009f9f90c5cd22e5cf0da4240d008ce3dc1bb4ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4e63486ca7e057fdd1bfe0de73e44dc4951462e2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304434"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834562"
 ---
 # <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; etkinlik Tasarımcısı
 **AddToCollection\<T >** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.AddToCollection%601> etkinlik.  
@@ -35,7 +32,7 @@ ms.locfileid: "49304434"
 ### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > Özellikleri  
  Aşağıdaki tabloda <xref:System.Activities.Statements.AddToCollection%601> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır.  
   
-|Özellik adı|Gerekli|Kullanım|  
+|Özellik Adı|Gerekli|Kullanım|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Kolay adı <xref:System.Activities.Statements.AddToCollection%601> etkinlik. AddToCollection varsayılandır\<Int32 >. Ancak <xref:System.Activities.Activity.DisplayName%2A> değeri kesinlikle gerekli değil, kullanmak için en iyi bir uygulamadır.|  
 |<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Doğru|Koleksiyona eklenecek öğe\<T >. Bu öğe türünde *T*, türünde *TypeArgument*. Öğesini belirtmek için bir Visual Basic ifadesinin özellik kılavuzunda yazın.|  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90ad45aa77ce5e383f258c0fcaa10030b46dd1c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867741"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864325"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;eklenti&gt; öğesi (Visual Studio'da Office Geliştirme)
   **Eklentisi** öğesinin `vstav3` ad alanı, Microsoft Office, VSTO eklentileri ve Visual Studio ile geliştirilen belge düzeyi özelleştirmeleri için özel bilgiler içerir.

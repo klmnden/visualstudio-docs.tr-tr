@@ -14,15 +14,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c347000d75beb628c01c5a8f8275d4755db776f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ea47b000adb3f60a0925659ff869d25e8ed8f4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910275"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874889"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO eklentilerinde diğer Office Çözümlerinden kod arama
   Bir nesne için diğer Microsoft Office çözümleri gibi diğer çözümlerle VSTO eklenti içinde kullanıma sunabilirsiniz. VSTO eklenti diğer çözümleri kullanmayı etkinleştirmek istediğiniz bir hizmet sağlar, bu yöntem kullanışlıdır. Bir Web hizmetinden Finansal veriler üzerinde hesaplamalar yapan Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar zamanında Excel VSTO eklentisi içinde çağırarak gerçekleştirebilirsiniz.  

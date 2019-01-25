@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Backstage görünümüne denetimler ekleme '
+title: 'Nasıl yapılır: Backstage görünümüne denetimler ekleme '
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5334a931709f4ddfb0206c86f84f49f535a540fa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924663"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871695"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>Nasıl Yapılır: Backstage görünümüne denetimler ekleme
+# <a name="how-to-add-controls-to-the-backstage-view"></a>Nasıl yapılır: Backstage görünümüne denetimler ekleme
   Şerit Tasarımcısı tıkladığınızda açılan menüye denetimler eklemek için kullanabileceğiniz **dosya** sekmesi. Eklediğiniz denetimler uygulama çalıştırıldığında **dosya** sekmesinde görünen adlı bir grubu **eklentileri**.  
   
  Visual Studio'da Şerit Tasarımcısını kullanarak, önce veya sonra yerleşik denetimlerin denetimler yerleştiremezsiniz. Yerleşik denetim, Backstage görünümünde önceden görüntülenen bir denetimdir. Önce veya sonra yerleşik denetimlerin yerleştirmenize istiyorsanız Şerit XML kullanmalısınız. Hakkında daha fazla bilgi için **Ribbon (XML)**, bkz: [Ribbon XML](../vsto/ribbon-xml.md). Backstage görünümünü özelleştirme hakkında daha fazla bilgi için bkz. [geliştiriciler için Office 2010 Backstage görünümüne giriş](http://go.microsoft.com/fwlink/?LinkId=182189) ve [geliştiriciler için Office 2010 Backstage görünümünü özelleştirme](http://go.microsoft.com/fwlink/?LinkId=182188).  

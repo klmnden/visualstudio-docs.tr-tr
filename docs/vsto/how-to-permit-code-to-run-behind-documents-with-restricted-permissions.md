@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin'
+title: 'Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6030165e7b24bdba5c7fa6e223b915e5cf4c85c8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949342"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870262"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl Yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin
   Microsoft Office Bilgi Hakları Yönetimi (IRM) özelliğini, bir belge veya çalışma kitabı izinlerini kısıtlamak için kullanabilirsiniz. Varsayılan olarak, kısıtlı Microsoft Office Word belgesi veya Microsoft Office Excel çalışma kitabını arkasındaki kodun, çalışmasına izin verilmez. Varsayılan nesne modeli, yönetilen kod uzantıları erişebilir ve çözümünüzü çalışır böylece değiştirebilirsiniz.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

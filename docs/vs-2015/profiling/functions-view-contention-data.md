@@ -1,27 +1,22 @@
 ---
 title: İşlevler görünümü - çakışma verileri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ada92736312501d05504cf7b69ad07b549f31df
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762997"
 ---
 # <a name="functions-view---contention-data"></a>İşlevler Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,12 +45,9 @@ ms.locfileid: "51765263"
 |**Kaynak dosyası**|Bu işlevin tanımını içeren kaynak dosya.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
+ [Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md)   
  [İşlevler görünümü](../profiling/functions-view.md)   
  [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
  [İşlevler Görünümü](../profiling/functions-view-sampling-data.md)
-
-
-

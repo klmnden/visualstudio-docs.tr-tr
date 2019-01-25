@@ -1,12 +1,9 @@
 ---
 title: Veri kümelerindeki ilişkiler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755494"
 ---
 # <a name="relationships-in-datasets"></a>Veri kümelerindeki ilişkiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ ms.locfileid: "49935412"
 |Yabancı anahtar kısıtlaması kuralı|Eylem|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|Üst kayıtta yapılan değişiklik (güncelleştirme veya silme) alt tablosundaki ilgili kayıtlar da gerçekleştirilir.|  
-|<xref:System.Data.Rule>|Alt kayıtları silinmez, ancak alt kayıtlardaki yabancı anahtarı kümesine <xref:System.DBNull>. Bu ayar, "artık" alt kayıtları bırakılabilir — diğer bir deyişle, bunlar hiç üst kayıtlar ilişkisi. **Not:** bu kullanarak alt tablosunda geçersiz veri sonuçlanabilir.|  
+|<xref:System.Data.Rule>|Alt kayıtları silinmez, ancak alt kayıtlardaki yabancı anahtarı kümesine <xref:System.DBNull>. Bu ayar, "artık" alt kayıtları bırakılabilir — diğer bir deyişle, bunlar hiç üst kayıtlar ilişkisi. **Not:**  Bu kural kullanarak alt tabloda geçersiz veriler neden olabilir.|  
 |<xref:System.Data.Rule>|İlgili alt kayıtları yabancı anahtarının varsayılan değerine ayarlanır (sütun tarafından belirlenen <xref:System.Data.DataColumn.DefaultValue%2A> özelliği).|  
 |<xref:System.Data.Rule>|İlgili alt kayıtları değişiklik yapılmaz. Bu ayar, başvuruları geçersiz üst kayıtlar için alt kayıtları içerebilir.|  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49935412"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>İki veri tabloları arasında bir ilişki oluşturmak için  
   
-1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: bir veri kümesini veri kümesi Tasarımcısı'nda açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Sürükleme bir **ilişkisi** nesnesinden **veri kümesi** ilişki alt veri tablosunda toolbox.  
   
@@ -112,7 +109,6 @@ ms.locfileid: "49935412"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Veri kümesi Tasarımcısı'nda bir ilişki adı görüntülemek için  
   
-1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: bir veri kümesini veri kümesi Tasarımcısı'nda açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Gelen **veri** menüsünde **ilişki etiketlerini göster** ilişki adı görüntülenecek komutu. İlişki adı gizlemek için bu komutu temizleyin.
-

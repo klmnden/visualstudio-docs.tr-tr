@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir parametrenin tür tanımlayıcısını tanımlama | Microsoft Docs'
+title: 'Nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953163"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866798"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl Yapılır: Bir parametrenin tür tanımlayıcısını tanımlama
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama
   Bir tür tanımlayıcı bir parametrenin veri türünü tanımlayan özellikler içerir. Tür tanımlayıcısını bir alan, bir varlık veya varlık koleksiyonunu tanımlayabilirsiniz. Daha fazla bilgi için [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Bir parametrenin tür tanımlayıcısını tanımlamak için  

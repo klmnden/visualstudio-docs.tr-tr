@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SafeControl element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a05fe8be5097933351eec4816ee3faa0f92a3e37
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864144"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869532"
 ---
 # <a name="safecontrol-element"></a>SafeControl öğesi
   ASPX denetim ya da herhangi bir SharePoint sitesinde ASPX sayfasında erişmek herhangi bir kullanıcı için güvenli olarak tasarlanmış bir Web Bölümü temsil eder.  
@@ -63,7 +63,7 @@ ms.locfileid: "53864144"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Şema adı**|SharePoint proje öğesi şema|  
 |**Doğrulama dosyası**|ProjectItemModelSchema.xsd|  
 |**Boş olabilir**|Hayır|  

@@ -5,17 +5,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc4a65a0b09a706eebad04c90e1779d00c7f3801
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a06022075086ad4792d35761c3af0e14f8f96e56
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937289"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867474"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Bir VSTO eklentisinin performansını iyileştirme
   Office uygulamaları kapatın ve böylece bunlar, hızlı başlangıç için oluşturduğunuz VSTO Add-Ins iyileştirerek kullanıcılarınıza daha iyi bir deneyim sunmak, öğeleri ve diğer görevleri gerçekleştirebilirsiniz. Ayrıca, VSTO eklentisi için Outlook ise, VSTO eklenti olacak olasılığını azaltabilirsiniz kötü performans nedeniyle devre dışı. Aşağıdaki stratejileri uygulayarak, VSTO eklentisinin performansını artırabilirsiniz:

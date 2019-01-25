@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla klasörü ada göre alma'
+title: 'Nasıl yapılır: Program aracılığıyla klasörü ada göre alma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,19 +7,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e31a5016ae4dadbf14a80cce891bee0b8e5a0b4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872680"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872423"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Nasıl Yapılır: Program aracılığıyla klasörü ada göre alma
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Nasıl yapılır: Program aracılığıyla klasörü ada göre alma
   Bu örnekte, özel adlandırılmış bir klasör için bir başvuru alır ve ardından klasörün içeriğini görüntüler.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  

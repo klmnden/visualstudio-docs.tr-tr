@@ -1,13 +1,9 @@
 ---
 title: Hata ayıklama oturumunda gezinme (Xaml ve C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,13 +13,13 @@ ms.assetid: 1da33203-333f-4a05-b4e2-8d407c497233
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37af3c995e3dde5ad33e8135e8a648b6c0f6a962
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870277"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773357"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio’da (Xaml ve C#) bir hata ayıklama oturumunda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

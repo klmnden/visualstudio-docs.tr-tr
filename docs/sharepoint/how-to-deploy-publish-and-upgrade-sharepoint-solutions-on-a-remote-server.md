@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yükseltme uzak bir sunucudaki SharePoint çözümlerini dağıtma ve yayımlama | Microsoft Docs'
+title: 'Nasıl yapılır: Yükseltme uzak bir sunucudaki SharePoint çözümlerini dağıtma ve yayımlama | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, remote deployment
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aafc503ff2b8dffed5b70d17f4eb488baf72704
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835678"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865092"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Nasıl Yapılır: Uzak bir sunucudaki SharePoint çözümlerini yükseltmek dağıtma ve yayımlama
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Nasıl yapılır: Uzak bir sunucudaki SharePoint çözümlerini yükseltmek dağıtma ve yayımlama
   SharePoint çözümleri için yerel sistem dağıtmanın yanı sıra, uzak sitelerin veya yerel SharePoint sitelerine korumalı SharePoint çözümlerine yayımlayabilirsiniz. Uzaktan yayımlama işlemi kopyaları *.wsp* dosyasını SharePoint sunucusuna çözümü yükler ve ardından çözümü etkinleştirmek sağlar. Ona değişiklikler yapıldıktan sonra uzak bir SharePoint çözüm yükleme yükseltebilirsiniz.  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Korumalı bir SharePoint çözüm uzak bir SharePoint sunucusuna yayımlama  

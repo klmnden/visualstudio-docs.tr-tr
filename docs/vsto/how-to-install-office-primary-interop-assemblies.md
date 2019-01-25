@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Office birincil birlikte çalışma derlemelerini yükleme'
+title: 'Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office primary interop assemblies, installing
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a37c93cfe1d0bb03a022e69e2be31f354017c2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3967ef285aff57c84cd5d43fa1812218dbe0d0e6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914653"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876089"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Nasıl Yapılır: Office birincil birlikte çalışma derlemelerini yükleme
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme
   Office yüklediğinizde, Microsoft Office birincil birlikte çalışma derlemeleri (PIA) yükleyin.  
   
 ## <a name="to-install-the-pias-when-you-install-office"></a>Office yüklediğinizde, PIA'lar yüklemek için  

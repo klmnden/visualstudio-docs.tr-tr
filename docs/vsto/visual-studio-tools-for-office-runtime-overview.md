@@ -21,17 +21,17 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio], about VSTO runtime
 - solution loader [Office development in Visual Studio]
 - runtime [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdae6b7f08ec442d7bca0b0aa3b46b8825385767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7d3ba962a214f1f1ac9bf134a3408b38e8cb018
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878789"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868293"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Office çalışma zamanına genel bakış için Visual Studio Araçları
   Visual Studio'da Microsoft Office geliştirici araçlarını kullanarak oluşturulan çözümleri çalıştırmak için son kullanıcı bilgisayarlarında Office çalışma zamanı için Visual Studio 2010 Araçları yüklenmesi gerekir. Daha fazla bilgi için [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Office çalışma zamanı için Visual Studio 2010 Araçları iki ana bileşenden oluşur:  

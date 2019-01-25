@@ -1,14 +1,9 @@
 ---
 title: "İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme | Microsoft Docs"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,28 +21,28 @@ ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e6de316fd0ff66e0815da7fa935d21e23a8285e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306338"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834958"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kültürde yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürünü dışındaki bir kültür için uygulama kaynaklarını içeren bir derlemedir.  
   
  Bölümünde açıklandığı gibi [ClickOnce uygulamalarını yerelleştirme](../deployment/localizing-clickonce-applications.md), birden çok uydu derlemeleri aynı birden çok kültürde içerebilir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım. Varsayılan olarak, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tek bir istemci, büyük olasılıkla yalnızca bir uydu derlemesine gereksinim duyacak olmanıza rağmen tüm uydu derlemeler, dağıtımınızdaki istemci makineye indirir.  
   
- Bu yönerge, uydu derlemeleri isteğe bağlı olarak işaretleme ve istemci makinesi, geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi indirme nasıl gösterir. Aşağıdaki yordam kullanılabilen araçlar kullanır [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Bu görev ile de gerçekleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Ayrıca bkz: [izlenecek yol: ClickOnce dağıtım API'sini kullanarak tasarımcı ile isteğe bağlı uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) veya [izlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı uydu derlemelerini indirme Tasarımcı kullanarak](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Bu yönerge, uydu derlemeleri isteğe bağlı olarak işaretleme ve istemci makinesi, geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi indirme nasıl gösterir. Aşağıdaki yordam kullanılabilen araçlar kullanır [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Bu görev ile de gerçekleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Ayrıca bkz: [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) veya [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
 >  Test amacıyla, aşağıdaki kod örneği programlı olarak kültürü ayarlar `ja-JP`. Bir üretim ortamı için bu kodu ayarlama konusunda bilgi için bu konunun ilerleyen bölümlerindeki "Sonraki adımlar" bölümüne bakın.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- Bu konuda, Visual Studio'yu kullanarak uygulamanıza yerelleştirilmiş kaynaklar ekleme bildiğiniz varsayılır. Ayrıntılı yönergeler için bkz. [izlenecek yol: Windows formlarını yerelleştirme](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
+ Bu konuda, Visual Studio'yu kullanarak uygulamanıza yerelleştirilmiş kaynaklar ekleme bildiğiniz varsayılır. Ayrıntılı yönergeler için bkz. [izlenecek yol: Windows formlarının konumunu bulma](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Uydu derlemelerini yüklemek için  
   
@@ -75,6 +70,3 @@ Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kül
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulamalarını Yerelleştirme](../deployment/localizing-clickonce-applications.md)
-
-
-

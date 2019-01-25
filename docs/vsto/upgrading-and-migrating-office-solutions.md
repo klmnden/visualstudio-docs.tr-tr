@@ -11,17 +11,17 @@ helpviewer_keywords:
 - upgrading applications [Office development in Visual Studio]
 - upgrading Office solutions in Visual Studio
 - migrating Office solutions in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f8a1ca1fa9c3d59b7fa95a12d08d5bb82ab422b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ec4df2ad88f94703c5c25810495d0d5786b9e47
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988371"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866106"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office çözümlerini geçirme ve yükseltme
   Visual Studio'nun önceki bir sürümde oluşturulan Microsoft Office projeniz varsa, geçerli Visual Studio sürümlerinde kullanmak için projeyi yükseltmeniz gerekir. Microsoft Office projesini yükseltmek için bir Microsoft Office geliştirici araçlarını içeren Visual Studio sürümünde açın. Microsoft Office geliştirici araçlarını içeren Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

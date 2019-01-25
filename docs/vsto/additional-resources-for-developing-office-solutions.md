@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, additional resources
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 699ae68db1c9f28cd5cd164cc027ac5b6bd65fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6626f9dbc6f0b17ba3e02a66d2f104873089a616
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883275"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873398"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Office çözümleri geliştirmek için ek kaynaklar
   Visual Studio'da Microsoft Office geliştirici araçları yalnızca bir Office uygulamalarını genişletmek için birçok yol gösterir. Office uygulamaları, ayrıca Open XML Visual Studio ya da bu belgeleri Office geliştirici araçları tarafından kapsanmayan biçimleri gibi bazı yerleşik özellikler vardır.  

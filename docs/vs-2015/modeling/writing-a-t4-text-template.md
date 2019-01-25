@@ -1,12 +1,9 @@
 ---
 title: T4 metin şablonu yazma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775910"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Ana bilgisayar tarafından sağlanan diğer hizmetlere de edinebilirsiniz. Daha fazla bilgi için [erişme Visual Studio'ya veya diğer Konaklara bir şablondan](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Ana bilgisayar tarafından sağlanan diğer hizmetlere de edinebilirsiniz. Daha fazla bilgi için [erişme Visual Studio'ya veya diğer Konaklara bir şablondan](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Tasarım zamanı metin şablonları ayrı bir AppDomain içinde çalıştırın  
  Farkında olmalıdır, bir [tasarım zamanı metin şablonu](../modeling/design-time-code-generation-by-using-t4-text-templates.md) ana uygulamadan ayrı bir AppDomain içinde çalışır. Çoğu durumda bu önemli değildir, ancak belirli karmaşık durumlarda kısıtlamaları keşfedebilirsiniz. Örneğin, ayrı bir hizmetten veri ya da şablonu dışına geçirmek istiyorsanız, hizmet seri hale getirilebilir bir API sağlamanız gerekir.  
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |Metin oluşturma dışında çalıştırmak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[TextTransform Yardımcı Programı ile Dosya Oluşturma](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Bir etki alanına özgü dil biçiminde verilerinizi dönüştürün.|[Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Kendi veri kaynaklarınızı dönüştürmek için yönerge işlemcileri yazın.|[T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)|
-
-
-

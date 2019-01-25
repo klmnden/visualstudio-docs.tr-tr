@@ -1,13 +1,9 @@
 ---
 title: 'CA1719: Parametre adları üye adları değil eşleşmelidir | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
 - CA1719
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b79c446218a2ea30abdc68c3b094c38c3a4d9aeb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: daaa856ccbc5915bcaad937a504ea2600a089c1d
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822054"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834650"
 ---
-# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Parametre adları üye adlarıyla eşleşmemelidir
+# <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Parametre adları üye adları ile eşleşmemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

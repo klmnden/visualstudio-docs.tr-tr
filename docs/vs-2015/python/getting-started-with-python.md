@@ -1,25 +1,20 @@
 ---
 title: Python ile çalışmaya başlama | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275294"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833949"
 ---
 # <a name="getting-started-with-python"></a>Python’ı Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Python kendisini yüklemek için ziyaret [ https://www.python.org/download/ ](ht
   
 ## <a name="python-tools-for-visual-studio"></a>Visual Studio için Python Araçları
   
-Yükleyebilmek için Visual Studio için Python Tools [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), aşağıdaki özellikleri sağlar:  
+Yükleyebilmek için Visual Studio için Python Tools [visualstudio.com](https://www.visualstudio.com/explore/python-vs), aşağıdaki özellikleri sağlar:  
   
 - Birden çok yorumlayıcılarını desteği: çeşitli sürümlerini CPython, IronPython ve IPython  
 - Python kodu bir klasör yapısı örtük olarak seçer ve uygulama kodu, test kodu, web sayfaları, JavaScript, derleme betikleri ve VS. belirleyebilmeniz açık denetim de izin veren bir proje sistemi.  
@@ -99,9 +94,8 @@ Ipython ve bilimsel hesaplama kitaplıkları (matplotlib, scipy, numpy, vb.) alm
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
 [PTVS kullanmaya Başlarken: Visual Studio'yu ayarlama](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS ile çalışmaya başlama: Başlat (Projeler) kodlama](../python/getting-started-with-ptvs-start-coding-projects.md)
-[PTVS ile çalışmaya başlama: kod düzenleme](../python/getting-started-with-ptvs-editing-code.md) 
- [PTVS kullanmaya Başlarken: hata ayıklama](../python/getting-started-with-ptvs-debugging.md)
-[PTVS kullanmaya Başlarken: etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)
-[alma PTVS kullanmaya başladı: azure'da bir Web sitesi oluşturma](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[PTVS ile çalışmaya başlama: (Projeler) kodlamaya başlayın](../python/getting-started-with-ptvs-start-coding-projects.md)
+[PTVS kullanmaya Başlarken: Kod düzenleme](../python/getting-started-with-ptvs-editing-code.md)
+[PTVS kullanmaya Başlarken: Hata ayıklama](../python/getting-started-with-ptvs-debugging.md)
+[PTVS kullanmaya Başlarken: Etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)
+[PTVS kullanmaya Başlarken: Azure'da bir Web sitesi oluşturma](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

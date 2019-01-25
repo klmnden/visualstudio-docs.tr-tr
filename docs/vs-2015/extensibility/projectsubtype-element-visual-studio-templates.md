@@ -1,14 +1,9 @@
 ---
 title: ProjectSubType öğesi (Visual Studio şablonları) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bfc64d4f5a1de6223178321eecb3050478ed9960
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786069"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +60,15 @@ ms.locfileid: "51807770"
   
  `ProjectSubType` Öğesi bir alt kategoriye sağlar [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) öğesi. Bu değer içerebilir:  
   
-- `SmartDevice-NETCFv1`: Belirtir, şablon hedefleri [!INCLUDE[Compact](../includes/compact-md.md)] sürüm 1.0.  
+- `SmartDevice-NETCFv1`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../includes/compact-md.md)] sürüm 1.0.  
   
 - `SmartDevice-NETCFv2`: Belirten tempalate hedefleri [!INCLUDE[Compact](../includes/compact-md.md)] sürüm 2.0.  
   
   Bir şablon içeriyorsa, bir `ProjectType` öğe değerini `Web`, `ProjectSubType` öğe şablonunun programlama dilini belirtir. Bu öğe, aşağıdaki değerlere sahip olabilir:  
   
-- `CSharp`: Belirtir şablon oluşturur, bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] Web proje veya öğe.  
+- `CSharp`: Şablon oluşturur belirtir bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] Web proje veya öğe.  
   
-- `VisualBasic`: Belirtir şablon oluşturur, bir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Web proje veya öğe.  
+- `VisualBasic`: Şablon oluşturur belirtir bir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Web proje veya öğe.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, bir proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] cihazı hedefleyen uygulama [!INCLUDE[Compact](../includes/compact-md.md)] sürüm 2.0.  
@@ -107,4 +102,3 @@ ms.locfileid: "51807770"
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
  [ProjectType Öğesi (Visual Studio Şablonları)](../extensibility/projecttype-element-visual-studio-templates.md)
-

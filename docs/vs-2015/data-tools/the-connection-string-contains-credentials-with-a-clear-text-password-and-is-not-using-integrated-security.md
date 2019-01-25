@@ -1,23 +1,20 @@
 ---
 title: Bağlantı dizesi şifresiz parola içeren kimlik bilgileri içeriyor ve tümleşik güvenlik kullanmıyor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1ec13cab1b8c41225cb1934740b8dd3e7f59ac0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 02805bc9951c682c654b47ae49c15c7682bd60ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764624"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Bağlantı dizesi şifresiz parola içeren kimlik bilgileri içeriyor ve tümleşik güvenliği kullanmıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +41,3 @@ Bağlantı dizesini geçerli DBML dosyasının ve uygulama yapılandırma dosyal
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'daki LINQ to SQL Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-

@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd968d0c963ae4aa46872bf19e97f357361cf248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989036"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871318"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>İzlenecek yol: Bir görselde VBA'dan Kod Çağırma C# proje
   Bu yönerge, bir yöntem belge düzeyi özelleştirmesinde Microsoft Office Excel için Visual Basic for Applications (VBA) kodu çalışma kitabı nasıl çağrılacağını gösterir. Yordamı üç temel adımdan oluşur: bir yöntem ekleyin `Sheet1` konak öğesi sınıfına, çalışma kitabını VBA koduna yöntemi kullanıma sunar ve sonra çalışma kitabının VBA kodu yöntemini çağırın.  

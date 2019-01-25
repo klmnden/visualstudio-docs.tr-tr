@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kod çalıştırmadan Office çözümlerini açma'
+title: 'Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c6d80a6d2d9c9ee63d13eca6bcb8a479ea2aad
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930118"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867760"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl Yapılır: Kod çalıştırmadan Office çözümlerini açma
+# <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma
   Yönetilen kod uzantıları ile oluşturulan Microsoft Office çözümü son kullanıcı Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği, Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.  
   
  Ancak, kod çalıştırmadan bir belgeyi açmak için ne zaman isteyebileceğiniz zamanlar vardır. Örneğin, belge açıldığında çalıştırılan kod içeriği değiştirebilir, ancak önce kod değişiklikleri, belgenin görünümünü güncelleştirmek istediğiniz. Belirli bilgiler belge içinde göndermek isteyebilirsiniz veya kod çalıştırın ve büyük olasılıkla içeriği alter istiyor musunuz.  

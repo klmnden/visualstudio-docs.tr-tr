@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9c15d7435fa6f5267e413e3afd0fd6e4c7ea17c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950640"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873710"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office çözümleri için uygulama bildirimleri
   Bir uygulama bildirimi, Microsoft Office çözümü yüklenen derlemeler açıklayan bir XML dosyasıdır. Microsoft Office geliştirme araçlarını Visual Studio'da kullanmak [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] tanımlanan uygulama bildirim şeması [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md) başvuru.

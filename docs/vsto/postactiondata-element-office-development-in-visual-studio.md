@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <postActionData> element
 - application manifests [Office development in Visual Studio], <postActionData> element
 - postActionData element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27cf59f157c0760ea0c204a8c079dd4616777da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cda7829fc615c64be75f295a0cbc26b2ebbc7eea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947276"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865443"
 ---
 # <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData&gt; öğesi (Visual Studio'da Office Geliştirme)
   `postActionData` Öğesinin `vstav3` Office çözümleri yüklendikten sonra çalıştırılan bir dağıtım sonrası eylemi ile ilişkili verileri ad alanını belirtir.

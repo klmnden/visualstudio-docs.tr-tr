@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942193"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834259"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 
@@ -25,7 +25,7 @@ Live Unit Testing .NET Framework veya .NET Core hedef çözümlerini test etmek 
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 Tam C# çözümünü indirilebileceğini [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) github deposu.
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 Visual Basic çözümü indirilebileceğini [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) github deposu.
 
 ---
@@ -78,7 +78,7 @@ Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çöz�
 
 1.  Seçin **derleme** > **Çözümü Derle** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızı oluşturması gerekir.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. İçinde **Çözüm Gezgini**, sağ `UtilityLibraries` çözüm ve select **Ekle** > **yeni proje**.
 
 1. İçinde **Yeni Proje Ekle** iletişim kutusunda Visual Basic düğümünü seçin ve ardından **.NET Standard**.
@@ -153,7 +153,7 @@ Sonraki adım, test etmek için birim test projesi oluşturmaktır `StringLibrar
 
 1. Birim test projesi seçerek derleyin **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. İçinde **Çözüm Gezgini**, sağ `UtilityLibraries` çözüm ve select **Ekle** > **yeni proje**.
 
@@ -210,7 +210,7 @@ Testlerinizi çalıştıran tamamlandığında **Test Gezgini** hem genel sonuç
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![Live Unit testing'i başlatma sonra Test Gezgini ve kod penceresi](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 ![Live Unit testing'i başlatma sonra Test Gezgini ve kod penceresi](media/lut-start/lut-results-vb.png)
 
 ---
@@ -226,7 +226,7 @@ Kod penceresinde belirli kod kapsamı simgesini seçerek kapsamı ve test sonuç
 
    ![Return deyimi için kod kapsamı](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Yeşil bir onay işareti yazan satıra tıklayın `If (String.IsNullOrWhiteSpace(s)) Then` içinde `StartsWithUpper` yöntemi. Aşağıdaki şekilde gösterildiği gibi Live Unit Testing üç testleri kodun o satırına kapsar ve tüm başarıyla yürüttünüz gösterir.
 
    !['If' koşul deyimi için kod kapsamı](media/lut-start/code-coverage-vb1.png)
@@ -262,7 +262,7 @@ Kod kapsamını genişletmek için `StartsWithLower` yöntemi, aşağıdakileri 
 
     ![Kod kapsamı StartsWithLower yöntemi](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Aşağıdaki `TestStartsWithLower` ve `TestDoesNotStartWithLower` projenizin test kaynak kodunu yöntemleri:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -322,7 +322,7 @@ Bu bölümde, nasıl Live Unit Testing belirlemek, sorun giderme ve test hatalar
 
 1. Seçin **hata ayıklama** > **devam**, basın **F5**, veya **devam** yürütmeye devam araç çubuğunda Test programı. İşlenmeyen bir özel durum oluştuğundan test sonlandırır.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Test dosyanıza aşağıdaki yöntemi ekleyin:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -370,7 +370,7 @@ Bu hatanın bir ön araştırma için yeterli bilgi sağlar. Her iki `TestHasEmb
 
     ![Başarılı HasEmbeddedSpaces test.](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. Karşılaştırmada bakın `HasEmbeddedSpaces` yöntemi. Bunu, U + 0020 olmasını katıştırılmış bir boşluk olarak kabul eder. Ancak, Unicode standardı diğer boşluk karakterleri içerir. Bu, kitaplık kodu yanlış bir boşluk karakteri sınadığı önerir.
 
 1. Eşitlik karşılaştırma çağrısı ile Değiştir <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> yöntemi:

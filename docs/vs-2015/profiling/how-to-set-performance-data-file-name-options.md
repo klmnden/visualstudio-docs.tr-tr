@@ -1,27 +1,22 @@
 ---
-title: 'Nasıl yapılır: performans veri dosyası adlandırma seçeneklerini ayarlama | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Performans veri dosyası adlandırma seçeneklerini ayarlama | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06751d510c38f055036865a8f368c4e0c3298a30
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801995"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760420"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Nasıl yapılır: performans veri dosyası adlandırma seçeneklerini ayarlama
+# <a name="how-to-set-performance-data-file-name-options"></a>Nasıl yapılır: Performans veri dosyası adı seçeneklerini ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Varsayılan olarak, aşağıdaki söz dizimini kullanarak bir profil oluşturma veri (.vsp) dosyasını kaydedin:  
@@ -56,6 +51,3 @@ Varsayılan olarak, aşağıdaki söz dizimini kullanarak bir profil oluşturma 
     |**Yeni raporlar oturuma otomatik olarak Ekle**|Veri dosyası için performans oturumu otomatik olarak eklemek için onay kutusunu işaretleyin.|  
     |**Oluşturulan raporlar için artan bir sayı Ekle**|Aynı ada sahip birden fazla dosya varsa, artan bir sayı için dosya adı eklemek için onay kutusunu işaretleyin. Varolan dosyanın üzerine yazmak için bu onay kutusunu temizleyin.|  
     |**Numara için zaman damgasını kullanın**|Dosya adına bir tarih damgası eklemek için onay kutusunu işaretleyin.|
-
-
-

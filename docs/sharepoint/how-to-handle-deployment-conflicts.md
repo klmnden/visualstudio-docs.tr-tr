@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Dağıtım çakışmalarını işleme | Microsoft Docs'
+title: 'Nasıl yapılır: Dağıtım çakışmalarını işleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd28e7a9f0fc04a704d6d3600fb80390d9509de1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898888"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863051"
 ---
-# <a name="how-to-handle-deployment-conflicts"></a>Nasıl Yapılır: Dağıtım çakışmalarını işleme
+# <a name="how-to-handle-deployment-conflicts"></a>Nasıl yapılır: Dağıtım çakışmalarını işleme
   Bir SharePoint proje öğesi için dağıtım çakışmalarını işleme için kendi kodunuzu sağlayabilir. Örneğin, geçerli proje öğesi klasördeki tüm dosyaları konumunda zaten mevcut ve geçerli proje öğesi dağıtılmadan önce dağıtılan dosyaları silin olup olmadığını belirlemek. Dağıtım çakışmalarını hakkında daha fazla bilgi için bkz: [genişletme SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
 ### <a name="to-handle-a-deployment-conflict"></a>Dağıtım çakışma işlemek için  

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47b60628ccafe78c90782e6cebd4e1d52b3836c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b994206c1721c09f3b1729762ae589293dbae15
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938585"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872670"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek
   Visual Studio'daki Excel çözümleri geliştirirken kullanabileceğiniz *konak öğelerini* ve *konak kontrolü*Çözümlerinizdeki s. Bunlar gibi Excel nesne modeli (Excel için birincil birlikte çalışma derlemesi tarafından sunulan diğer bir deyişle, nesne modeli) yaygın olarak kullanılan belirli nesneleri genişleten nesnelerdir <xref:Microsoft.Office.Interop.Excel.Worksheet> ve <xref:Microsoft.Office.Interop.Excel.Range> nesneleri. Genişletilmiş nesneler temel Excel nesneleri gibi davranırlar, ancak bunlar yeni olaylar ve veri bağlama becerileri gibi ek özellikler sahiptirler.  

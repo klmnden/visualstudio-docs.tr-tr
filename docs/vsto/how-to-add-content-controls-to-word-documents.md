@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: İçerik ekleme denetimlerine Word belgeleri'
+title: 'Nasıl yapılır: İçerik ekleme denetimlerine Word belgeleri'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbb481fffecc6a6b4848fd4cd771cb5b16406d9a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905286"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871214"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Nasıl Yapılır: İçerik ekleme denetimlerine Word belgeleri
+# <a name="how-to-add-content-controls-to-word-documents"></a>Nasıl yapılır: İçerik ekleme denetimlerine Word belgeleri
   Belge düzeyi Word projelerinde, içerik denetimleri belgeye projenizde tasarım zamanında veya çalışma zamanında ekleyebilirsiniz. Word VSTO eklenti projesinde herhangi bir açık belgeye çalışma zamanında içerik denetimlerine ekleyebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

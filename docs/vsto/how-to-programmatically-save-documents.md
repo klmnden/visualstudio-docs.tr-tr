@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla belgeleri kaydetme'
+title: 'Nasıl yapılır: Program aracılığıyla belgeleri kaydetme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], saving
 - Word [Office development in Visual Studio], saving documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6031d301db3592434afcb06f19c34677ab510d68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821600"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866643"
 ---
-# <a name="how-to-programmatically-save-documents"></a>Nasıl Yapılır: Program aracılığıyla belgeleri kaydetme
+# <a name="how-to-programmatically-save-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri kaydetme
   Microsoft Office Word belgeleri kaydetmek için çeşitli yollar vardır. Belge adını değiştirmeden bir belgeyi kaydedebilirsiniz veya yeni bir adla bir belgeyi kaydedebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma'
+title: 'Nasıl yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - document protection
 - documents [Office development in Visual Studio], document protection
 - Word documents, protection
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d72f7c0136921592c8327dc0c101acd63388631
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991116"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872579"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl Yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma
   Kullanıcılar belgeyi düzenlemeler yapmasını önlemek için Microsoft Office Word belgeleri koruma ekleyebilirsiniz.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Bir Şerit Şerit Tasarımcısından Şerit XML'ine verebilir."
+title: "Nasıl yapılır: Bir Şerit Şerit Tasarımcısından Şerit XML'ine verebilir."
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - exporting Ribbon
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 706c200a1327ed63cc0a37f002f6bb745cbea3ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894067"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876219"
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Nasıl Yapılır: Bir Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Nasıl yapılır: Bir Şerit Şerit Tasarımcısından Şerit XML'ine verebilir.
   **Şerit (Görsel Tasarımcı)** öğesi, tüm olası şeridi özelleştirme türlerini desteklemez. Şerit Gelişmiş şekilde özelleştirmek için Şerit Tasarımcısından Şerit XML'ine verebilir ve XML doğrudan düzenlemek.  
   
 > [!NOTE]  

@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: düzenleyicide sözcük kaydırmayı yönetme | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - word wrap
 - editors, text viewing
@@ -17,24 +12,24 @@ ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 011bae45760e01d6b3cb8ed55e7d0afdf017e7cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271810"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753252"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide Sözcük Kaydırmayı Yönetme
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ayarlandığında, geçerli Kod Düzenleyicisi penceresinin genişliğini aşan bir uzun satır bölümü ve sonraki satırda görüntülenir. Örneğin, numaralandırma, satır kullanımını kolaylaştırmak için bu seçeneği temizlenirse, uzun satırları ucunda görmek için sağa kaydırma yapabilirsiniz.  
   
- Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Yordam  
   
@@ -61,6 +56,3 @@ Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ay
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   
  [Metin Düzenleyici Seçenekleri iletişim kutusu](../../ide/reference/text-editor-options-dialog-box.md)   
  [Kod Yazma](../../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-

@@ -2,7 +2,7 @@
 title: Yayımlama WebApplicationWebSite (Windows PowerShell Betiği) | Microsoft Docs
 description: Bir Azure Web sitesine bir web projesi yayımlamayı öğrenin. Bu betik, mevcut olmaması durumunda Azure aboneliğinizde gerekli kaynakları oluşturur.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 175181d5d866e9d7fab51eaf7c3262e47d0ed6a8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: daf3e22176ef950177ebdb22ae6a9e36bcb5dd83
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771561"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell betiği)
 ## <a name="syntax"></a>Sözdizimi
@@ -122,4 +122,3 @@ Ne dağıtılır değiştirmek için JSON yapılandırma dosyasını düzenleyeb
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Daha fazla bilgi için [Yayımla-WebApplicationVM (Windows PowerShell komut dosyası)](vs-azure-tools-publish-webapplicationvm.md)
-

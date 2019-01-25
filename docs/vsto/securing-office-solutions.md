@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - security [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5f5577fc1c8e51ddac8b51b64cae1891dfbee6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820844"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871188"
 ---
 # <a name="secure-office-solutions"></a>Office çözümleri güvenliğini sağlama
   Office çözümleri için güvenlik modeli birçok teknoloji içerir: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Microsoft Office ve Internet Explorer Yasak siteler bölgesi Güven Merkezi'nde. Aşağıdaki bölümlerde, farklı güvenlik özelliklerinin nasıl çalıştığı açıklanmaktadır:

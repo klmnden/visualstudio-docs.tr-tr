@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kod yerelleştirme | Microsoft Docs'
+title: 'Nasıl yapılır: Kod yerelleştirme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - localizing code [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d61f9f0dff98d25185233fcf07bc937de3a6455
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990798"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862805"
 ---
-# <a name="how-to-localize-code"></a>Nasıl Yapılır: Kod yerelleştirme
+# <a name="how-to-localize-code"></a>Nasıl yapılır: Kod yerelleştirme
   Yerelleştirilmemiş kod, sabit kodlanmış dize değerleri kullanır. Kod dizelerini yerelleştirmek için bunları çağrılarıyla değiştirin <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, yerelleştirilmiş kaynaklara başvuran bir yöntemi.  
   
 ## <a name="localize-code"></a>Kod yerelleştirme  

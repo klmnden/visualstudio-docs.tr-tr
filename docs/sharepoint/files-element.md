@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Files element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25bb220d3c22af280a486de115193af38c85dbe
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922318"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864533"
 ---
 # <a name="files-element"></a>Dosyalar öğesi
   SharePoint olmayan bağımlı proje çıktısı gibi özellik öğesi dosyaları SharePoint proje öğesi ile dağıtmak için dosyaları belirtir.  
@@ -57,7 +57,7 @@ ms.locfileid: "53922318"
   
 |||  
 |-|-|  
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointTools/2010/SharePointProjectItemModel|  
+|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Şema adı**|SharePoint proje öğesi şema|  
 |**Doğrulama dosyası**|ProjectItemModelSchema.xsd|  
 |**Boş olabilir**|Hayır|  

@@ -1,14 +1,9 @@
 ---
-title: 'İzlenecek yol: ortam derleme birden çok bilgisayarda oluşturma | Microsoft Docs'
-ms.custom: ''
+title: 'İzlenecek yol: Oluşturma birden çok bilgisayarda derleme ortamı | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,15 +11,15 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769084"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden Çok Bilgisayarda Derleme Ortamı Oluşturma
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı oluşturabilirsiniz ve böylece katılabilmesi çeşitli dosya ve ayarları başka bir bilgisayara ardından kopyalama oluşturur. Visual Studio'yu diğer bilgisayara yüklemeniz gerekmez.  
@@ -130,37 +125,37 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
 2. Aşağıdaki klasörleri yinelemeli olarak ana bilgisayardan yapı bilgisayarına kopyalayın:  
   
-   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\ içinde  
+   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-   -   %ProgramFiles%\Common Files\Merge modules\ konumuna  
+   -   %ProgramFiles%\Common Files\Merge Modules\  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\VC\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
 3. Bu dosyaları ana bilgisayardan yapı bilgisayarına kopyalayın:  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\msobj110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\Tools\makehm.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-   -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
 4. Yapı bilgisayarında yapı çıkışları çalıştırırsanız aşağıdaki Visual C++ çalışma zamanı kitaplıkları gereklidir; Örneğin, otomatikleştirilmiş test işleminin parçası olarak. Dosyalar genellikle %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ veya sistem mimarisine bağlı olarak %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\ klasörü altındaki alt bulunur. X86 sistemleri, kopyalama x86 ikili dosyalarını \Windows\System32\ klasörüne. X64 sistemleri, kopyalama x86 ikili dosyalarını Windows\SysWOW64\ klasörüne ve x64 ikili dosyalarını da Windows\System32\ klasörüne.  
   
@@ -303,7 +298,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
 1. Komut satırı ortamını el ile yapılandırmak için bu yolu PATH ortam değişkenine ekleyin:  
   
-   -   % Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
+   -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
   
 2. İsteğe bağlı olarak, çözümlerinizi derlemek için MSBuild kullanmak daha kolay hale getirmek için PATH değişkenini aşağıdaki yolları da ekleyebilirsiniz.  
   
@@ -315,7 +310,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
      Yerel 64-bit MSBuild kullanmak istiyorsanız, bu yolları PATH değişkenine ekleyin:  
   
-   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
   
    - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
@@ -326,11 +321,11 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
 1.  Aşağıdaki derlemeleri ana bilgisayardan yapı bilgisayarına kopyalayın. GAC'ye yüklenecek çünkü burada bunları yapı bilgisayarında yerleştirdiğiniz önemi yoktur.  
   
-    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.common.V110.dll  
+    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
   
-    -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
+    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
   
-    -   %ProgramFiles%\Microsoft visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
+    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
   
 2.  Derlemeleri GAC'ye yüklemek için yapı bilgisayarında gacutil.exe bulun — genellikle %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 araçlarında olduğu\\. Bu klasörü bulamıyorsanız, adımları yineleyin [dosyaları ana bilgisayardan yapı bilgisayarına kopyalamak](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) Bu anlatım bölümü.  
   
@@ -353,7 +348,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
 > [!NOTE]
 >  Oluşturulacak [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projeleri, "v110" Platform araç takımını kullanmanız gerekir. Düzenlenecek istemiyorsanız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] proje dosyaları, bu komut satırı bağımsız değişkenini kullanarak Platform araç takımını ayarlayabilirsiniz:  
 >   
->  **MSBuild** *solution.sln* **/p:PlatformToolset v110 =**  
+>  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ##  <a name="CreatingForSourceControl"></a> Böylece kaynak denetimine iade derleme ortamı oluşturma  
  GAC'ing dosyalarını gerektirmeyen veya kayıt defteri ayarlarının değiştirilmesini gerektirmeyen ve çeşitli bilgisayarlara dağıtılan bir yapı ortamı oluşturabilirsiniz. Aşağıdaki adımlarda bunu yapmanın tek yoludur. Bu adımları yapı ortamınızın benzersiz karakteristiğine uyarlayın.  
@@ -361,7 +356,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
 > [!NOTE]
 >  Tracker.exe derleme sırasında bir hata oluşturmayacaksa, artımlı oluşturmayı devre dışı bırakmanız gerekir. Artımlı oluşturmayı devre dışı bırakmak için bu yapı parametresini ayarlayın:  
 >   
->  **MSBuild** *solution.sln* **/p:TrackFileAccess = false**  
+>  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Kaynak denetimine iade edilebilen bir yapı ortamı oluşturmak için  
   
@@ -375,21 +370,21 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
     -   % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ve \Microsoft.CppCommon.targets\\, her örneğini değiştirin ,  
   
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, sürüm 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ="  
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
          to  
   
-         AssemblyFile = "$(VCTargetsPath11) Microsoft.Build.CppTasks.Common.v110.dll".  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
          Önceki Adlandırma gac'lenen derlemeye dayanır.  
   
     -   % Depot % \msbuild\microsoft.cpp\v4.0\v110\microsoft.cppclean.targets'ta her örneğini değiştirin:  
   
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, sürüm 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ="  
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
          to  
   
-         AssemblyFile = "$(VCTargetsPath11) Microsoft.Build.CppTasks.Common.v110.dll".  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
 4.  Bir .props dosyası oluşturun — Örneğin, Partner.autoımports.props—ve bunu projelerinizi içeren klasörün kökünde koyun. Bu dosya, çeşitli kaynakları bulmak amacıyla MSBuild tarafından kullanılan değişkenleri ayarlamak için kullanılır. Değişkenler bu dosya tarafından ayarlanmazsa, diğer .props dosyaları ve kayıt defteri değerlerine dayanan .targets dosyaları tarafından ayarlanırlar. Biz herhangi bir kayıt defteri değeri ayarı olmayan olduğundan, bu değişkenler boş ve yapı başarısız olur. Bunun yerine, bunu Partner.autoımports.props öğesine ekleyin:  
   
@@ -431,6 +426,3 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yürütülebilir hata ayıklamayı çalıştırmak için Test Makinesi hazırlama](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Komut Satırı Başvurusu](../msbuild/msbuild-command-line-reference.md)
-
-
-

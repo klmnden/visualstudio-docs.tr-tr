@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma sayfalarına Grafik denetimleri ekleme'
+title: 'Nasıl yapılır: Çalışma sayfalarına Grafik denetimleri ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89da5b9c960c3df426a4ae96c99e2628540fc6ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967472"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873801"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>Nasıl Yapılır: Çalışma sayfalarına Grafik denetimleri ekleme
+# <a name="how-to-add-chart-controls-to-worksheets"></a>Nasıl yapılır: Çalışma sayfalarına Grafik denetimleri ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> tasarım zamanında ve belge düzeyi özelleştirmeleri çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler. Ayrıca ekleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.Chart> VSTO eklentileri çalışma zamanında denetimler.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

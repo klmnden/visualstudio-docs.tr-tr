@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belge özellikleriyle Word tablolarını program aracılığıyla doldurma'
+title: 'Nasıl yapılır: Belge özellikleriyle Word tablolarını program aracılığıyla doldurma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - document properties, inserting in Word tables
 - documents [Office development in Visual Studio], document properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aeb4d61211f6b65bf700adf1a52ee4b17ed36008
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfc5885ffc3c16c937781b991e1d8d83b632bbb6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893898"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862856"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Nasıl Yapılır: Belge özellikleriyle Word tablolarını program aracılığıyla doldurma
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Nasıl yapılır: Belge özellikleriyle Word tablolarını program aracılığıyla doldurma
   Aşağıdaki örnek, belgenin üst kısmında bir Microsoft Office Word tablo oluşturur ve ana belgenin özellikleri ile doldurur.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  

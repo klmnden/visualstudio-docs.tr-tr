@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], multiple Ribbons
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4022720a787801405915fe92a10b93a850a0d2f3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989209"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867734"
 ---
 # <a name="ribbon-overview"></a>Şerite Genel Bakış
   Şerit, bunlar daha kolay olacak şekilde ilgili komutları düzenlemek için bir yoldur. Komutlar, Şerit üzerindeki denetimleri olarak görünür. Denetimler halinde düzenlenir *grupları* uygulama penceresinin üst kenarındaki yatay bir çubuk boyunca. Sekmelerde ilgili gruplar halinde düzenlenir.  

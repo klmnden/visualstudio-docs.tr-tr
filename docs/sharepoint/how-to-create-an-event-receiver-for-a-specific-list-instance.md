@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belirli bir liste örneği için olay alıcı oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Belirli bir liste örneği için olay alıcı oluşturma | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00d92665fd34dda82e521cb8459b71412a6edc9e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818868"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865274"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Nasıl Yapılır: Belirli bir liste örneği için olay alıcı oluşturma
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Nasıl yapılır: Belirli bir liste örneği için olay alıcı oluşturma
   Bir liste örneği olay alıcısı, herhangi bir örneğini liste tanımı gerçekleşen olaylara yanıt verir. Olay alıcısı şablonu belirli bir liste örneğini hedefleme etkinleştirmez olsa da, belirli bir liste örneği olaylara yanıt vermek için bir liste tanımı için kapsamlı bir olay alıcısı değiştirebilirsiniz.  
   
  Belirli bir liste örneği, hedeflemek için *Elements.xml* değiştirmek için olay alıcı `ListTemplateId` ile `ListUrl` ve liste örneği URL'sini ekleyin.  

@@ -29,15 +29,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62007fc37efb6659e156c5d99d49076c59bfdca8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929894"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868423"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu, çeşitli olay işleyicileri otomatik olarak oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentileri için olay işleyicileri biraz farklıdır.  

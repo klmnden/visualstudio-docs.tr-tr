@@ -22,15 +22,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3bb4f99c4a77a398cb1f5e3765ee6353a367fb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2898f4ed7c10e46801def2f409074f41004b343
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923159"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875855"
 ---
 # <a name="custom-task-panes"></a>Özel görev bölmeleri
   Görev bölmeleri, genellikle bir Microsoft Office uygulamasının bir pencerede bir tarafı yerleştirilmiş kullanıcı arabirimi bölmeleri bulunur. Özel görev bölmeleri size kendi görev bölmesi oluşturun ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgeleri değiştirmek veya bir veri kaynağından verileri görüntülemek için kodu çalıştırmak denetimleri içerebilir.  

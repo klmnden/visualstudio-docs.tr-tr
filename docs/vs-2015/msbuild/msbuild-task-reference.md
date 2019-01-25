@@ -1,14 +1,9 @@
 ---
 title: MSBuild görev başvurusu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bd6df873bf1aadbec4b12763369c60f127819c0
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193999"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834429"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild Görev Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |`Condition`|İsteğe bağlı `String` parametresi.<br /><br /> A `Boolean` ifade eden [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] altyapısı bu görevi yürüten olup olmadığını belirlemek için kullanır. Tarafından desteklenen koşullar hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], bkz: [koşullar](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|İsteğe bağlı parametre. Aşağıdaki değerlerden birini içerebilir:<br /><br /> -   **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.<br />-   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.<br />-   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.<br /><br /> .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.<br /><br /> Daha fazla bilgi için [nasıl yapılır: görevlerdeki hataları yoksayma](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|İsteğe bağlı parametre. Aşağıdaki değerlerden birini içerebilir:<br /><br /> -   **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.<br />-   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.<br />-   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.<br /><br /> .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Görevlerdeki hataları yoksayma](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Task Temel Sınıfı](../msbuild/task-base-class.md)  
@@ -174,7 +169,7 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
  [RequiresFramework35SP1Assembly Görevi](../msbuild/requiresframework35sp1assembly-task.md)  
  Uygulama .NET Framework 3.5 SP1 isteyip istemediğini belirler.  
   
- ResGen görevi  
+ ResGen Task  
  Kullanımdan kalktı. Kullanım [GenerateResource görevi](../msbuild/generateresource-task.md) .txt ve .resx dosyaları için ve ortak dil çalışma zamanı ikili .resources dosyalarına dönüştürmek için görev.  
   
  [ResolveAssemblyReference Görevi](../msbuild/resolveassemblyreference-task.md)  
@@ -235,6 +230,3 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
  [Görev yazma](../msbuild/task-writing.md)   
  [Görevler](../msbuild/msbuild-tasks.md)
-
-
-

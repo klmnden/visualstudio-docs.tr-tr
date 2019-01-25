@@ -1,27 +1,22 @@
 ---
 title: Proje türleri | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd9828b947c9df8d86a7d66aff96990fbf753505
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e32778e6c1ab82eddb50bbac1e79430d827716e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768337"
 ---
 # <a name="project-types"></a>Proje Türleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,4 +69,3 @@ ms.locfileid: "51720981"
   
  [Projeler](../../extensibility/internals/projects.md)  
  Nasıl genişletileceğini açıklar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje sistemi.
-

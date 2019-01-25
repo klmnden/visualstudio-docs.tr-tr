@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36e99b5d239b48add1de5c281c35e698607500d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c10906f21a6379d0f1797fa7986e33a401de32f5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933933"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876141"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme
   Visual Studio'da geliştirme bilgisayarında yerel SharePoint sitelerine kullanarak bağlanabilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini** penceresi. Bu düğüm, birçok yerel SharePoint sitelerine bileşenlerinin bir hiyerarşik ağaç görünümünde görüntüler. Örneğin, yerel sitelerinde listeler, belge kitaplıkları ve içerik türlerini görüntüleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **Sunucu Gezgini** yerel SharePoint sitelerine bağlanmak için bkz: [Sunucu Gezgini kullanarak SharePoint Gözat bağlantıları](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  

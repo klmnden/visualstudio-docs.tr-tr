@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868332"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874048"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
   SharePoint Site tanımı projesi içinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanızı sağlar bir *site tanım*, yeni bir SharePoint sitesi için bir temel olarak görev gören. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımında önceden yapılandırılmış listeler, içerik türleri, Olay alıcıları, görüntüleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint, BLOG gibi bazı site tanımları içerir. BLOG site tanımını temel alan bir site oluşturduğunuzda, site, listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.  
@@ -36,9 +36,9 @@ ms.locfileid: "53868332"
   
 |Dosya Adı|Açıklama|  
 |---------------|-----------------|  
-|*Default.aspx*|Varsayılan ASPX giriş sayfasına yeni bir SharePoint sitesi için.|  
+|*default.aspx*|Varsayılan ASPX giriş sayfasına yeni bir SharePoint sitesi için.|  
 |*Onet.XML*|Yeni sitenin yapılandırmasını, bileşenleri site tanımı şablonu ve varsayılan davranışını belirtir. Bu ayarlar, öznitelikler, etkinleştirilmiş içerik türleri gibi varsayılan liste görünümleri belge şablonu dosyaları içerir ve Web Bölümleri siteyle dahil. Varsayılan olarak, `Modules` bölümü SharePoint sitesine ve nasıl yapılandırılacağını eklenecek dosyaları listeler.|  
-|*webtemp_\<SiteDefinitionName > .xml*|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
+|*webtemp_\<SiteDefinitionName>.xml*|Görünür site tanımı yapılandırmaları belirtir **Şablon Seçimi** bölümünü **yeni SharePoint sitesi** sayfası.|  
   
  Varsayılan olarak, tüm site tanımları depolanan  *\<sürücü: > \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* klasör. Her bir site tanımı kendi alt vardır.  
   

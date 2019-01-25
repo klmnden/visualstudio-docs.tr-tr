@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82f1d7e73683fe60052093d1c5434e1298d73261
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4502d938b9f268c389e224fe9040a99d24516d77
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886695"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869339"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Nasıl Yapılır: Bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme
+# <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Nasıl yapılır: Bir SharePoint Proje öğe uzantısına bir kısayol menü öğesi ekleme
   Bir proje öğesi uzantısını kullanarak mevcut bir SharePoint proje öğesi için bir kısayol menü öğesi ekleyebilirsiniz. Bir kullanıcı proje öğesine tıkladığında menü öğesi görünür **Çözüm Gezgini**.  
   
  Aşağıdaki adımlar, bir proje öğesi uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint proje öğesi uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  

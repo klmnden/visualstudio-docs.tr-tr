@@ -16,17 +16,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], relate entities
 - BDC [SharePoint development in Visual Studio], relate entities
 - BDC [SharePoint development in Visual Studio], associate external content types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf5c914ba998c7690a20d4e1a573f8344f976061
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842985"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870733"
 ---
 # <a name="create-an-association-between-entities"></a>Varlıklar arasında ilişkilendirme oluşturma
   İlişkilendirmeleri oluşturarak iş verileri bağlantısı (BDC) modelinizdeki varlıklar arasında ilişkiler tanımlayabilirsiniz. Visual Studio model tüketicilerinin her ilişkilendirmesi hakkında bilgi sağlayan yöntemler oluşturur. Bu yöntemler, SharePoint web bölümleri, liste veya bir kullanıcı arabirimi (UI) veri ilişkileri görüntülemek için özel uygulamaları tarafından kullanılabilecek.  

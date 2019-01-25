@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Çalışma sayfalarını program aracılığıyla gizleme'
+title: 'Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,19 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - hidden worksheets
 - worksheets, hiding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e03ce17e41c81a6d3cfda4f66d1ecee1946fa3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 188c7fbf16002086a4968b91c068cd67357292de
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821454"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870499"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>Nasıl Yapılır: Çalışma sayfalarını program aracılığıyla gizleme
+# <a name="how-to-programmatically-hide-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme
   Göstermek veya çalışma kitabındaki gizle. Bir çalışma sayfasını gizlemek için çalışma sayfası konak öğesi kullanın veya çalışma kitabını sayfaları koleksiyonunu kullanarak çalışma sayfasına erişin.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

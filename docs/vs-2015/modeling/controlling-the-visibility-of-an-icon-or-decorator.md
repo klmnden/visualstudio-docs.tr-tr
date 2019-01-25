@@ -1,23 +1,20 @@
 ---
 title: Bir simgenin veya Dekoratörün görünürlüğünü denetleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766281"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +88,7 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
 5.  Göründü hata raporuna çift tıklayın: "*YourClass* bir için GetDecoratorControlValue neobsahuje platnou definici...".  
   
-     Metin Düzenleyici üzerinde Dsl\GeneratedCode\DomainClasses.cs açılır. Vurgulanan hata bir yöntem eklemek için istek bir açıklamadır.  
+     The text editor opens on Dsl\GeneratedCode\DomainClasses.cs. Vurgulanan hata bir yöntem eklemek için istek bir açıklamadır.  
   
 6.  Ad alanı, sınıf ve metod eksik olan unutmayın.  Örneğin, Company.FamilyTree.Person.GetDecoratorControlValue().  
   
@@ -115,6 +112,3 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
  [Diyagram üzerinde arka plan görüntüsü ayarlama](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Gezinme ve Program kodundaki modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-
