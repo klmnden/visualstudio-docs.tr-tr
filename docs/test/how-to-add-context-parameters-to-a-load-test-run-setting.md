@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27ad32dc88253fcbe9be3f6f3aae1b3618c9ae5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966991"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl Yapılır: Bir yük testi çalışma ayarı için bağlam parametreleri ekleme
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: Bir yük testi çalışma ayarı için bağlam parametreleri ekleme
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için.
 

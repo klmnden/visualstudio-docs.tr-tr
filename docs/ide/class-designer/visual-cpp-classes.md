@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b768fa059d3933ef75c5ff58e050c8c1521f770a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1914c406cbe8b74ce3dc8f736c209b183ce47c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013346"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf tasarımcısında Visual C++ sınıfları
 
@@ -159,7 +159,7 @@ Aşağıdaki tabloda, şablon işlevleri kısmi özelleştirmede bazı örnekler
 |------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> FUNC\<T, U > (+ 1 aşırı yükleme)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Şablon sınıfı<br /><br /> `B<T2>`<br /><br /> Şablon sınıfı<br /><br /> (B altında bir sınıf içinde barındırılan **iç içe türler**)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> örneği<br /><br /> C ->\<int ><br /><br /> `C<T>`<br /><br /> Şablon sınıfı|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> örneği<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Şablon sınıfı|
 
 Aşağıdaki tabloda, şablon devralma bazı örnekler gösterilmektedir.
 
@@ -171,7 +171,7 @@ Aşağıdaki tabloda, kurallı özel sınıfın bağlantı bazı örnekler göst
 
 |Kod öğesi|Sınıf Tasarımcısı görünümü|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> örneği<br /><br /> C ->\<int ><br /><br /> `C<int>`<br /><br /> örneği<br /><br /> `C<T>`<br /><br /> Şablon sınıfı<br /><br /> `D`<br /><br /> örneği<br /><br /> C ->\<kayan noktalı sayı >|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> örneği<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> örneği<br /><br /> `C<T>`<br /><br /> Şablon sınıfı<br /><br /> `D`<br /><br /> örneği<br /><br /> C ->\<kayan noktalı sayı >|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> Min \<T >|
 
 ## <a name="see-also"></a>Ayrıca bkz.

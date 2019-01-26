@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000815"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>İzlenecek yol: Bir başlangıç sayfasında kullanıcı ayarlarını Kaydet
 Başlangıç sayfası için kullanıcı ayarlarını kalıcı hale getirebilirsiniz. Bu izlenecek yolu takip ederek, kullanıcı bir düğmeye tıkladığında ve ardından başlangıç sayfası yükleyen her zaman bu ayarı alır bir ayarı kayıt defterine kaydeder bir denetim oluşturabilirsiniz. Başlangıç sayfası proje şablonu özelleştirilebilir kullanıcı denetimini içerir ve söz konusu denetim varsayılan başlangıç sayfası XAML çağrıları olduğundan, başlangıç sayfası kendisini değiştirmek zorunda değilsiniz.  
   
- Bu izlenecek yolda örneği ayarlar deposu örneğidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> okuyan ve bunu çağrıldığında aşağıdaki kayıt defteri konumuna yazma arabirimi: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<KoleksiyonAdı >**  
+ Bu izlenecek yolda örneği ayarlar deposu örneğidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> okuyan ve bunu çağrıldığında aşağıdaki kayıt defteri konumuna yazma arabirimi: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**  
   
  Visual Studio'nun deneysel örneğinde çalıştığı sırada ayarlar deposu okuyan ve yazan **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<KoleksiyonAdı >.**  
   

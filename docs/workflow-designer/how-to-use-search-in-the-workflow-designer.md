@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: İş Akışı Tasarımcısında Aramayı kullanma'
+title: 'Nasıl yapılır: İş Akışı Tasarımcısında Aramayı kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52adbded9f570689cd5749cc620ca8f74222e308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8a7a58e51706b5bd4d353595487984dd137c361
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854678"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043394"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Nasıl Yapılır: İş Akışı Tasarımcısında Aramayı kullanma
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Nasıl yapılır: İş Akışı Tasarımcısında Aramayı kullanma
 
 Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak için anahtar sözcüğe göre öğeleri bulmak için iş akışı Tasarımcısı içinde arama yapabilirsiniz. Tasarımcıyı Değiştir desteklemiyor unutmayın.
 

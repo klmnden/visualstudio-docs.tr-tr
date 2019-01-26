@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62bbcabe25a4cbefed3e1e928eaac8942e3c8de2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3979f455be670b6d730da5f908ed9c57f9c2e5c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905195"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010317"
 ---
 # <a name="known-issues-for-containers"></a>Kapsayıcılar için bilinen sorunlar
 
@@ -33,7 +33,7 @@ Aşağıdaki bilinen sorunlar ortaya çıkar Visual Studio derleme araçları 20
 * Geçirmek `--norestart` komut satırında. Bu yazma olduğu gibi bir Windows kapsayıcı içinden başlatmayı denemeden kapsayıcı döndürür `ERROR_TOO_MANY_OPEN_FILES` konağa.
 * Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklenmeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Örneğin, gibi MSBuild ile derleme yaparken bir hata görebilirsiniz:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): hata MSB6003: Belirtilen görev yürütülebilir "csc.exe" çalıştırılamadı. Dosya veya derleme yüklenemedi ' System.IO.FileSystem, sürüm 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): error MSB6003: Belirtilen görev yürütülebilir "csc.exe" çalıştırılamadı. Dosya veya derleme yüklenemedi ' System.IO.FileSystem, sürüm 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.
 
 * Visual Studio 2017 sürüm 15,8 veya önceki bir sürümünü yükleyemezsiniz (herhangi bir ürünü) mcr üzerinde<span></span>.microsoft.com/windows/servercore:1809 veya üzeri. Daha fazla bilgi edinmek için bkz. https://aka.ms/setup/containers/servercore1809.
 

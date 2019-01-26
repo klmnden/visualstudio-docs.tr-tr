@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010213"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Nasıl bir proje için bir Python ortamı seçin
 
@@ -46,7 +46,7 @@ Bağlam menüsünde **Python ortamları** düğüm ayrıca ek komutlar sağlar:
 
 ## <a name="use-virtual-environments"></a>Sanal ortamları kullanma
 
-Bir sanal ortam belirli bir Python yorumlayıcısı eşsiz bir bileşimiyle ve diğer genel ve conda ortamları farklı olan belirli bir kümesini kitaplıkları ' dir. Bir sanal ortam, projeye özgü ve proje klasöründe saklanır. Ortamının yüklü kitaplıkları ile birlikte bu klasörde bir *pyvenv.cfg* ortamın yolunu belirtir dosya *temel yorumlayıcı* dosya sistemindeki başka bir yerde. (Diğer bir deyişle, bir sanal ortamın bir kopyasını Yorumlayıcı, yalnızca bir bağlantı içermiyor.) 
+Bir sanal ortam belirli bir Python yorumlayıcısı eşsiz bir bileşimiyle ve diğer genel ve conda ortamları farklı olan belirli bir kümesini kitaplıkları ' dir. Bir sanal ortam, projeye özgü ve proje klasöründe saklanır. Ortamının yüklü kitaplıkları ile birlikte bu klasörde bir *pyvenv.cfg* ortamın yolunu belirtir dosya *temel yorumlayıcı* dosya sistemindeki başka bir yerde. (Diğer bir deyişle, bir sanal ortamın bir kopyasını Yorumlayıcı, yalnızca bir bağlantı içermiyor.)
 
 Bir sanal ortam kullanmanın bir avantajı, zaman içinde proje geliştirirken, sanal ortamı her zaman tam proje bağımlılıkları yansıtır ' dir. (Bunları projenizde veya olmanızdan bağımsız bir paylaşılan genel ortam, diğer taraftan, herhangi bir sayıda kitaplıkları içerir.) Daha sonra kolayca oluşturabilirsiniz bir *requirements.txt* dosyadan sonra bu bağımlılıkları başka bir geliştirme veya üretim bilgisayarına yeniden yüklemek için kullanılan sanal ortamı. Daha fazla bilgi için [requirements.txt ile gerekli paketleri yönetme](managing-required-packages-with-requirements-txt.md).
 

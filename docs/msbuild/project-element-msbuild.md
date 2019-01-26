@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f04a3d8e960b63dec4771c749ab6404cf1c01d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921071"
 ---
 # <a name="project-element-msbuild"></a>Proje öğesi (MSBuild)
 Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.  

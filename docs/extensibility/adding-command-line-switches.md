@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a3dbe187407380c338488b0006b186d6875bfbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68e8cb770bdad809ffc6b8f150ddba2070dc4190
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009147"
 ---
 # <a name="add-command-line-switches"></a>Komut satırı anahtarları ekleme
 Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *devenv.exe* yürütülür. Kullanım <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını anahtar ve özelliklerini bildirmek için. Bu örnekte, MySwitch anahtar VSPackage adlı bir alt sınıfı için eklenen **AddCommandSwitchPackage** bağımsız değişken olmadan ile otomatik olarak yüklenecek VSPackage'ı.  

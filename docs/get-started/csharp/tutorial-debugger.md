@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1590bbbe53a164ff9e59b887f7161b45a7d62361
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 3e3936af89d7f59a47f01a68d17a672e67a5752e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988967"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: Hata ayıklamayı öğrenin C# kullanarak Visual Studio code
 
@@ -93,7 +93,7 @@ Bu öğreticide şunları yapacaksınız:
         public int Y { get; private set; }
         public int Height { get; set; }
         public int Width { get; set; }
-   
+
         // Virtual method
         public virtual void Draw()
         {
@@ -192,7 +192,7 @@ Bu öğreticide şunları yapacaksınız:
 
     Kesme noktasının ayarlandığı kırmızı bir daire görünür.
 
-    Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız ya da bir dal kod getting run olup olmadığını gösterir. 
+    Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız ya da bir dal kod getting run olup olmadığını gösterir.
 
 2. Tuşuna **F5** veya **hata ayıklamayı Başlat** düğmesi ![hata ayıklamayı Başlat](../../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat"), uygulama başlatılır ve hata ayıklayıcı çalışan satırına kodu kesme noktası ayarladığınız yerdir.
 

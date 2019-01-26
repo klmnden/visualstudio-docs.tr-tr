@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Eski dil hizmetinde ana hat oluşturma desteği | Microsoft Docs'
+title: 'Nasıl yapılır: Eski dil hizmetinde ana hat oluşturma desteği | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3e51b973a358f34c14592a241129ac5fdc7c80d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992977"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Nasıl Yapılır: Eski dil hizmetinde ana hat oluşturma desteği
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Nasıl yapılır: Eski dil hizmetinde ana hat oluşturma desteği
 Anahat oluşturma, genişletme veya daraltma farklı bölgelerdeki metin için kullanılır. Anahat oluşturma şekilde kullanılan tarafından farklı dillerde farklı şekilde tanımlanabilir. Daha fazla bilgi için [anahat](../../ide/outlining.md).  
   
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Anahat oluşturma uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Anahat oluşturma](../../extensibility/walkthrough-outlining.md).  

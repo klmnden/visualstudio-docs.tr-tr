@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7be386a7d792c99ba361d70af1f8aac34c809cf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88689df3b1dad671f56b42e9c8523c6f85169c9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976439"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C#)
  Düzenle ve devam et için C# ile hata ayıklama sırasında kodunuzda kesme modunda değişiklik yapabilirsiniz. Değişiklikleri durdurmak ve hata ayıklama oturumunu yeniden başlatmak zorunda kalmadan uygulanabilir. Çalışma modunda Kaynak Düzenleyici salt okunur.  

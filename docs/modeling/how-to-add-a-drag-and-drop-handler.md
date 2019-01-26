@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Sürükle ve Bırak İşleyicisi Ekleme'
+title: 'Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70aceff2ab56e4b884d4746cc2ba582138fe7f3b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876399"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990322"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl Yapılır: Sürükle ve Bırak İşleyicisi Ekleme
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 
 Sürükle ve bırak olayları için işleyiciler DSL'nizi için ekleyebilirsiniz, böylece kullanıcılar öğeleri, diyagram üzerine diğer diyagramlardan veya Visual Studio'nun diğer kısımlarından sürükleyebilirsiniz. Olayları gibi çift tıklamaları birbirinden ayırma için de işleyicileri ekleyebilirsiniz. Sürükle ve bırak ve çift işleyicileri olarak birlikte bilinen *hareket işleyicileri*.
 

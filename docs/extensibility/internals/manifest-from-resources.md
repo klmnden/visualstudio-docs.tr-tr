@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 286ec5b71691777af601c00e26c2db5772bd5f1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959384"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993981"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyaları) bir listesini alır ve Visual Studio Görüntü hizmeti ile kullanılmak üzere bu görüntüleri izin veren bir .imagemanifest dosyası oluşturur bir konsol uygulamasıdır. Ayrıca, bu aracı için mevcut bir .imagemanifest görüntüleri eklemek için kullanılabilir. Bu araç, Visual Studio uzantısı görüntülere yüksek DPI ve Tema oluşturma desteği eklemek için yararlıdır. Oluşturulan .imagemanifest dosya dahil ve Visual Studio Uzantısı (.vsix) bir parçası olarak dağıtılabilir.  

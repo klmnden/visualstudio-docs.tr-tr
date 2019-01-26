@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b18e3b52105679f9b6a82083d6ffd7fe9268d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831790"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969817"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject işlevi
 Bu işlev tarafından belirtilen var olan bir üst projesi altında verilen ada sahip bir alt proje oluşturur. `lpParentProjPath` bağımsız değişken.  

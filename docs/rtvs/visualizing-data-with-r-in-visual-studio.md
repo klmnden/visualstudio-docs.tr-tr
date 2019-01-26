@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc568c6e2e28d27516ac5a92d7ccd01d3704bb7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859087"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009940"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Görsel verileri çizimleri R ile oluşturma
 
@@ -38,7 +38,7 @@ Teknik terimlerle açıklamak gerekirse, R `plot` komutları işlemek çıktıla
 
 Bir çizim oluşturma kullanır "etkin" bir çizim penceresinde önceki herhangi bir kaydetme çizim, çizim geçmişi (bkz [çizim geçmişi](#plot-history)). Örneğin, `plot(100:1)` ve ilk çizim aşağıya bir satır ile değiştirilir.
 
-Diğer tüm Visual Studio windows gibi. Özel düzenler çizim pencereyi destekler (bkz [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md). Çizim windows Visual Studio çerçeve içinde farklı konumlara yerleştirilmiş, çerçeveye yeniden boyutlandırılmış veya tamamen bağımsız bir yeniden boyutlandırma için çerçevenin dışında çekilir. 
+Diğer tüm Visual Studio windows gibi. Özel düzenler çizim pencereyi destekler (bkz [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md). Çizim windows Visual Studio çerçeve içinde farklı konumlara yerleştirilmiş, çerçeveye yeniden boyutlandırılmış veya tamamen bağımsız bir yeniden boyutlandırma için çerçevenin dışında çekilir.
 
 Her zaman bir çizim penceresi yeniden boyutlandırma çizim en iyi kalite görüntü sağlamak üzere yeniden işler. Genellikle, bir çizim, çizim bir dosyaya veya sonraki bölümde açıklanan komutları kullanarak Pano dışarı aktarmadan önce yeniden boyutlandırmak istediğiniz.
 
@@ -46,7 +46,7 @@ Her zaman bir çizim penceresi yeniden boyutlandırma çizim en iyi kalite gör�
 
 Çizim pencerenin araç çoğunu aracılığıyla da uygulanabilir komutları tutan **R Araçları** > **çizimleri** menüsü.
 
-| Düğme | Komut | Açıklama | 
+| Düğme | Komut | Açıklama |
 | --- | --- | --- |
 | ![Yeni bir çizim penceresi düğmesi](media/plotting-toolbar-01-new-plot-window.png) | Yeni bir çizim penceresi | Ayrı çizim penceresi ile kendi geçmişini oluşturur. Bkz: [birden çok çizim windows](#multiple-plot-windows). |
 | ![Çizim penceresi düğmeyi etkinleştirin](media/plotting-toolbar-02-activate-plot-window.png) | Çizim penceresini etkinleştir | Etkin pencereyi, bu nedenle, sonraki geçerli çizim pencerenin ayarlar `plot` komutları pencereye işlenir. Bkz: [birden çok çizim windows](#multiple-plot-windows). Bkz: [birden çok çizim windows](#multiple-plot-windows). |
@@ -54,8 +54,8 @@ Her zaman bir çizim penceresi yeniden boyutlandırma çizim en iyi kalite gör�
 | ![Geçmişi düğmeleri çizilecek](media/plotting-toolbar-04-plot-history-arrows.png) | Önceki/sonraki çizim |  Önceki veya sonraki çizim geçmişi gider. Ctrl + Alt + F11 (önceki) ve Ctrl + Alt + F12 (İleri) ile geçmiş da gidebilirsiniz. Bkz: [çizim geçmişi](#plot-history). |
 | ![Görüntüyü düğme olarak Kaydet](media/plotting-toolbar-05-save-as-image.png)| Görüntü olarak Kaydet | Bir dosya adı için ister ve geçerli çizim (penceresi içeriği, pencere boyutu) bir görüntü dosyasına kaydeder. Kullanılabilir biçimler `.png`, `.jpg`, `.bmp`, ve `.tif`. |
 | ![PDF düğme olarak Kaydet](media/plotting-toolbar-06-save-as-pdf.png)| PDF olarak Kaydet | Geçerli pencere boyutunu kullanarak bir PDF dosyası için geçerli çizim kaydeder. PDF ölçeklendirilirse çizim yeniden işlenir. |
-| ![Bit eşlem düğmesi olarak Kopyala](media/plotting-toolbar-07-copy-as-bitmap.png)| Bit eşlem olarak Kopyala | Çizim, geçerli pencere boyutunu kullanarak bir tarama bit eşlem olarak panoya kopyalar. | 
-| ![Meta dosyası düğme olarak Kopyala](media/plotting-toolbar-08-copy-as-metafile.png)| Meta dosyası olarak Kopyala | Çizim panoya kopyalar bir [Windows Meta dosyası](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Bit eşlem düğmesi olarak Kopyala](media/plotting-toolbar-07-copy-as-bitmap.png)| Bit eşlem olarak Kopyala | Çizim, geçerli pencere boyutunu kullanarak bir tarama bit eşlem olarak panoya kopyalar. |
+| ![Meta dosyası düğme olarak Kopyala](media/plotting-toolbar-08-copy-as-metafile.png)| Meta dosyası olarak Kopyala | Çizim panoya kopyalar bir [Windows Meta dosyası](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
 | ![Çizim düğmeyi kaldırma](media/plotting-toolbar-09-remove-plot.png)| Odebrat Diagram | Geçerli çizim Geçmişi'nden kaldırır. |
 | ![Tümünü çizimleri Temizle düğmesi](media/plotting-toolbar-10-clear-all-plots.png) | Tüm çizimleri Temizle | Tüm çizimleri (onay istemleri) geçmişini kaldırır. |
 
@@ -84,7 +84,7 @@ Tüm windows üzerinde çizim geçmişinizi ömrünü etkileşimli R oturumunuz 
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Çizim windows programsal
 
-Diagram R kodunu Windows'dan özel çizim windows tanımlamak için cihaz numaralarını kullanarak program aracılığıyla yönetebilirsiniz. 
+Diagram R kodunu Windows'dan özel çizim windows tanımlamak için cihaz numaralarını kullanarak program aracılığıyla yönetebilirsiniz.
 
 - `dev.list()`: Tüm grafik aygıtların geçerli R oturumunda listelenmektedir.
 - `dev.new()`: Yeni bir grafik cihazı (yeni bir çizim pencere) oluşturun.

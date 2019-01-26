@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4876cee807f38d141aa7aa3cb4166c54c3b91cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828413"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017051"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gölgelendirici hata nedeniyle yanlış renklendirilmiştir nesneyi incelemek için grafik tanılama.  

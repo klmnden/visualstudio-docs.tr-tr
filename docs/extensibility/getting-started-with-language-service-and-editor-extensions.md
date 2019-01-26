@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831764"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010070"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Dil hizmeti ve düzenleyici uzantılarıyla çalışmaya başlama
 Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ayraç eşleştirme, IntelliSense ve ampuller gibi dil hizmeti özellikleri eklemek için düzenleyici Uzantıları'nı kullanabilirsiniz. Ayrıca, Visual Studio Düzenleyicisi, Örneğin Renklendirme, kenar boşlukları, kenarlıklar ve diğer görsel öğelere metin davranışını ve görünümünü özelleştirebilirsiniz. Ayrıca, kendi içerik türünü tanımlayın ve görünümünü ve davranışını içeriğinizi göründüğü metin görünümlerinin belirtin.  
@@ -64,7 +64,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
 ## <a name="run-extensions-in-the-experimental-instance"></a>Deneysel örneğinde uzantıların çalıştırma  
  Aşağıdaki Deneysel klasöründe (Windows Vista ve Windows 7) dağıtarak bir uzantı geliştirirken çalışma sürümünüz, Visual Studio'nun verenlerden:  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{şirket}\\{Extensionıd}*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  Burada *% LOCALAPPDATA %* oturum açan kullanıcı adı *şirket* uzantısına sahip bir şirket adı ve *Extensionıd* uzantı kimliğidir.  
   

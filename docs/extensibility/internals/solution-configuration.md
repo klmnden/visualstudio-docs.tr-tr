@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831a35fe910a906a29e8b0a6a48377efb3569b11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937892"
 ---
 # <a name="solution-configuration"></a>Çözüm Yapılandırması
 Çözüm yapılandırmalarını çözüm düzeyi özellikleri depolar. Bunlar davranışını doğrudan **Başlat** (F5) anahtarı ve **derleme** komutları. Varsayılan olarak, bu komutlar, derleme ve hata ayıklama Yapılandırması'nı başlatın. Bir çözüm yapılandırması bağlamında her iki komutu yürütün. Bu, başlangıç ve derleme Ayarları'nda yapılandırılmış herhangi bir etkin çözüm için kullanıcı F5 bekleyebileceğiniz anlamına gelir. Ortam oluşturmak ve çalıştırmak için söz konusu olduğunda projeleri yerine çözümleri için en iyi duruma getirmek için tasarlanmıştır.  

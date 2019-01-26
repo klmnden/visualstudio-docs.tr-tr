@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Geçerli oturumu ayarlama | Microsoft Docs'
+title: 'Nasıl yapılır: Geçerli oturumu ayarlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba98d1d2a4a427632487e2b96663c5c40ad0a052
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c082abccc6201bd0e0af2152767dd61ce1e720c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841813"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042510"
 ---
-# <a name="how-to-set-the-current-session"></a>Nasıl Yapılır: Geçerli oturumu ayarlama
+# <a name="how-to-set-the-current-session"></a>Nasıl yapılır: Geçerli oturumu ayarlama
 
 İçinde birden çok performans oturumu açabilirsiniz **performans Gezgini**ve ardından geçerli oturum olarak ayarlanacak görünür performans oturumları birini seçebilirsiniz.
 

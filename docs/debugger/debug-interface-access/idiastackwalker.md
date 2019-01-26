@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae33fc6c135322e6b6a0a965188848ddac363cbc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993679"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 .pdb dosyasını bilgileri kullanarak bir yığın yapmak için yöntemleri yol sağlar.  

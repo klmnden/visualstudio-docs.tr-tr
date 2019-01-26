@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: 3B modelin Pivot noktasını değiştirme'
+title: 'Nasıl yapılır: 3B modelin Pivot noktasını değiştirme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c66d7b16451a2ee3e545b4737b0ecd12c47d413
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 870c08210ff16b92cd44be580cad57576f7b7628
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822310"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008263"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Nasıl Yapılır: 3B modelin pivot noktasını değiştirme
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Nasıl yapılır: 3B modelin pivot noktasını değiştirme
 
 Bu makalede değiştirmek için Model Düzenleyicisi'ni kullanmayı gösteren *pivot noktası* 3B modeli. Pivot noktası matematik nesnenin döndürme ve ölçeklendirme merkezini tanımlayan alanında noktasıdır.
 

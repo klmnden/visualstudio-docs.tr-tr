@@ -2,7 +2,7 @@
 title: Filtre dizeleri oluşturmak için Tablo Tasarımcısı | Microsoft Docs
 description: Filtre dizeleri oluşturmak için Tablo Tasarımcısı
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 9010e3f08499b235d4cd4b02e929ab042dca2216
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c09b743396f18cbe9d7a3bf46799e32e17317175
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002277"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Tablo Tasarımcısı için Filtre Dizelerini Oluşturma
 ## <a name="overview"></a>Genel Bakış

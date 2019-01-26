@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55c65b7344169f14679d8eb9493cec2e4569af65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956848"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010005"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Kullanıcı bir kaynak denetim işleminde tümleşik geliştirme ortamı (IDE) içinde yürütüldüğünde, kaynak denetimi eklentisi işlemi ile ilgili durum veya hata iletilerini iletmek isteyebilirsiniz. Eklenti kendi ileti kutularını bu amaçla görüntüleyebilirsiniz. Ancak, daha fazla sorunsuz tümleştirme için eklenti dizeler ardından bunları durum bilgisini görüntüleme, kendi yerel biçiminde görüntüler IDE geçirebilirsiniz. Bu mekanizma `LPTEXTOUTPROC` işlev işaretçisi. IDE hata ve durum görüntüleme (Aşağıda daha ayrıntılı olarak açıklanmıştır) Bu işlev uygular.  

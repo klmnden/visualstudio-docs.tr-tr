@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9540fd6ec203b990f53294e41ee829c9e3be897b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1348e958fa4b4871036794238ea3fb19fddb5745
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914993"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983826"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl Yapılır: Araç Kutusuna Etkinlik Ekleme
+# <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl yapılır: Araç Kutusuna Etkinlik Ekleme
 
 Etkinlikleri eklenebilir **araç kutusu** çözümünüzdeki birkaç farklı yolla. Bunları içinde geçerli projenize ekleyin, bunları farklı bir proje başvurusu veya bunları farklı bir derlemeden başvurulacak.
 

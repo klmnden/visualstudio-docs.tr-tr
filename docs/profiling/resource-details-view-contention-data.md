@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a1522b86d19622ee69e5cff583e4162318b64a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a010e2a9105c8b2ccbe27123025bab981b66f3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896311"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987160"
 ---
 # <a name="resource-details-view---contention-data"></a>Kaynak Ayrıntıları Görünümü - Çakışma Verileri
 Kaynak Ayrıntıları görünümü çakışması tarafından seçilen bir kaynak üzerinde kaynaklanan engelleme olayların bir zaman çizelgesi grafiği gösterir. Bir iş parçacığı başka bir iş parçacığının kaynağa erişim kilitlediği için yürütmeyi askıya almak zorunda engelleyen bir olayı oluşur.  

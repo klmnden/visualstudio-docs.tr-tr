@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Bir XSD Şemasını Temel Alan XML Belgesi Oluşturma'
+title: 'Nasıl yapılır: Bir XSD Şemasını Temel Alan XML Belgesi Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2425febfe13aef2797c78251f53a244445be175
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820205"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026093"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl Yapılır: Bir XSD şemasını temel alan XML belgesi oluşturma
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl yapılır: Bir XSD şemasını temel alan XML belgesi oluşturma
 
 **Örnek XML oluşturmak** özelliği XML Şeması (XSD) dosyanız tabanlı bir örnek XML dosyası oluşturur.
 

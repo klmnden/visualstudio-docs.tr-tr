@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Bir DataContext yöntemi (O R Designer) dönüş türünü değiştirme'
+title: 'Nasıl yapılır: Bir DataContext yöntemi (O R Designer) dönüş türünü değiştirme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7b98367e343f90827429ad50be91527f7f303
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 297f4df8c34f7289cb39dfaf2b5d1d9c8c88314e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004714"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Nasıl Yapılır: Bir DataContext yöntemi (O/R Tasarımcısı) dönüş türünü değiştirme
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Nasıl yapılır: Bir DataContext yöntemi (O/R Tasarımcısı) dönüş türünü değiştirme
 Dönüş türü bir <xref:System.Data.Linq.DataContext> yöntemi (bir saklı yordamı veya işlevi temel alarak oluşturduğunuz) farklı bağlı olarak burada bırak saklı yordamı veya işlevi **O/R Tasarımcısı**. Bir öğeyi doğrudan mevcut bir varlık sınıfı üzerine sürükleyip bıraktığınızda bir <xref:System.Data.Linq.DataContext> varlık sınıfı için dönüş türüne sahip yöntemi (saklı yordamı veya işlevi tarafından döndürülen veri şeması varlık sınıfı şeklini eşleşiyorsa) oluşturulur. Boş bir alanının bir öğeyi bırak varsa **O/R Tasarımcısı**, <xref:System.Data.Linq.DataContext> otomatik olarak oluşturulan bir tür döndüren yöntem oluşturulur. Dönüş türünü değiştirebilirsiniz bir <xref:System.Data.Linq.DataContext> yöntemleri bölmesine ekledikten sonra yöntemi. İnceleme veya dönüş türünü değiştirmek için bir <xref:System.Data.Linq.DataContext> yöntemi seçin ve **dönüş türü** özelliğinde **özellikleri** penceresi.
 
 > [!NOTE]
@@ -45,4 +45,4 @@ Dönüş türü bir <xref:System.Data.Linq.DataContext> yöntemi (bir saklı yor
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Nasıl yapılır: Saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [Nasıl yapılır: Saklı yordamlara eşlenen DataContext metotları oluşturma (O/R Tasarımcısı)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

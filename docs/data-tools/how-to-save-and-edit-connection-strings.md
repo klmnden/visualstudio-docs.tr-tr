@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Kaydetme ve bağlantı dizeleri düzenleme'
+title: 'Nasıl yapılır: Kaydetme ve bağlantı dizeleri düzenleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96c55b44e6e6ebbfba27c4daf10512cefe1fd393
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60253ada78391c48543e81093136da15e1446f91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000425"
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>Nasıl Yapılır: Bağlantı dizelerini kaydetme ve düzenleme
+# <a name="how-to-save-and-edit-connection-strings"></a>Nasıl yapılır: Bağlantı dizelerini kaydetme ve düzenleme
 Visual Studio uygulamalarında bağlantı dizeleri (uygulama ayarları da bilinir) uygulama yapılandırma dosyasında kaydedilen veya doğrudan uygulamanıza sabit kodlanmış. Uygulama yapılandırma dosyasında bağlantı dizelerini kaydetme, uygulamanızın sürdürme görevini basitleştirir. Bağlantı dizesi değiştirilmesi gerekiyorsa (aksine, kaynak kodunda değiştirin ve uygulamayı yeniden derlemenize gerek) uygulama ayarları dosyasında güncelleştirebilirsiniz.
 
 (Parola gibi) hassas bilgiler bağlantı dizesi içinde depolamak, uygulamanızın güvenliğini etkileyebilir. Bağlantı dizeleri uygulama yapılandırma dosyasına kaydedildi şifrelenmez veya gizlenmiş birisi için dosyaya erişim ve içeriğini görüntülemek mümkün olabilir. Windows tümleşik güvenlik'i kullanarak bir veritabanına erişimi denetlemek için daha güvenli bir yoludur.

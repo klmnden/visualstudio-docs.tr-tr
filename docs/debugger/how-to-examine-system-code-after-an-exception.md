@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea7f4223a6d61faa852d7985f77f4f672d26d17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d76cdf699e21286a9ece8053b8463c371bfc13d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008172"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Nasıl Yapılır: Özel durumdan sonra sistem kodunu İnceleme
+# <a name="how-to-examine-system-code-after-an-exception"></a>Nasıl yapılır: Özel durumdan sonra sistem kodunu İnceleme
 Bir özel durum oluştuğunda, özel durumun nedenini belirlemek için bir sistem çağrısı içinde kod İnceleme gerekebilir. Aşağıdaki yordam, sistem kodu için yüklenen semboller yoksa bunun nasıl yapılacağını ya da yalnızca kendi kodum etkin olup olmadığını açıklar.  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Bir özel durumdan sonra sistem kodunu İnceleme  

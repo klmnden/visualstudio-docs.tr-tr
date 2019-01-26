@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef27cae8825fc77f49f5201ef03615227e383e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb2e2f735ec6c3f280cd0de79844f078ed0727d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027388"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Arayan/Aranan görünümü - .NET bellek örnekleme verileri
 Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil oluşturma verilerini .NET bellek görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir.  

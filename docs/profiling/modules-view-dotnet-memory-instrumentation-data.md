@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4519d9a70b085cf3a5f5ea6a6687bff3cd21346
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ca3e5ff5c80083d9124fa2cedee46a4a579e41a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000412"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Modüller görünümü - .NET bellek izleme verileri
 .NET bellek ayırma verisini izleme metodunu kullanarak toplanan modülleri görünümünü, profil oluşturma çalıştırmasını içinde yürütülen modüller tarafından bellek ve zamanlama verileri gruplandırır. Modülün işlevleri için profil oluşturma verilerini modülü düğümünün altında listelenir.  

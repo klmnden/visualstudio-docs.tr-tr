@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51dea272a595f56abe254eda74dea67415f157a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851358"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020249"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>İzlenecek yol: Dış boşluk karakteri oluşturma
 Özel düzenleyici uzantıları kullanarak, düzenleyici kenar boşlukları görünümünü özelleştirebilirsiniz. "Todo" sözcüğü kod açıklamada göründüğü her durumda bu kılavuzda bir özel karakter gösterge kenar boşluğu koyar.  

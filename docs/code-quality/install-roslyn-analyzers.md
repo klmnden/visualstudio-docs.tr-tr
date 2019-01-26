@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d828fbf2bce435c067b6bc1cc66ce379f3304988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6a9c2dcbbee307578f837b8472b1026c0aa7a2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969587"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET derleyici platformu çözümleyicilerini yükleme
 
@@ -31,7 +31,7 @@ Visual Studio 2017'yi içeren bir dizi temel .NET derleyici Platformu (*Roslyn*)
 
    > [!NOTE]
    > Her bir çözümleyici paket www.nuget.org sayfa yapıştırmak için komutu gösterir **Paket Yöneticisi Konsolu**. Metni panoya kopyalamak için kullanışlı bir düğme bile yoktur.
-   > 
+   >
    > ![NuGet.org sayfasında Paket Yöneticisi Konsolu komut gösteriliyor](media/nuget-install-command.png)
 
    Çözümleyici bütünleştirilmiş kodlarının yüklenir ve görünür **Çözüm Gezgini** altında **başvuruları** > **Çözümleyicileri**.

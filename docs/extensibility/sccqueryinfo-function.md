@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eefee11ed4db6e359688f2220c330bdbe81be1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eccb75d593208b63681f585a37daa1665cdf9f4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006834"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo İşlevi
 Bu işlev, seçili dosyaları kaynak denetimi altında bir dizi için durum bilgilerini alır.  

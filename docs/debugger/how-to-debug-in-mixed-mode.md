@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Karışık modda hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Karışık modda hata ayıklama | Microsoft Docs'
 ms.date: 11/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968537"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Nasıl Yapılır: Karışık modda hata ayıklama (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Nasıl yapılır: Karışık modda hata ayıklama (C#, C++, Visual Basic)
 
 Aşağıdaki yordamlar, yönetilen ve yerel kod birlikte, olarak da bilinen karışık mod hata ayıklama için hata ayıklamayı nasıl etkinleştireceğinizi açıklar. İki karma mod hata ayıklama senaryoları şunlardır:
 

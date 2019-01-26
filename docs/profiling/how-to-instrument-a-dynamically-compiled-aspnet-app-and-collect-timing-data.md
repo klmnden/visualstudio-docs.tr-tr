@@ -1,20 +1,20 @@
 ---
-title: 'Nasıl Yapılır: Bir dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri Profiler ile komut satırını kullanarak toplama | Microsoft Docs'
+title: 'Nasıl yapılır: Bir dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri Profiler ile komut satırını kullanarak toplama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 54aed21b3f2a4d2ac7ac837bd001731c98ada987
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8daab493a867d2a62d85ecafc57420dfa195c68d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925790"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000802"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Nasıl Yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET web uygulamasını ve komut satırını kullanarak profil oluşturucu ile toplama ayrıntılı zamanlama verileri
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Nasıl yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET web uygulamasını ve komut satırını kullanarak profil oluşturucu ile toplama ayrıntılı zamanlama verileri
 
 Bu makalede, dinamik olarak derlenmiş için ayrıntılı zamanlama verileri toplamak için Visual Studio Profil Araçları komut satırı araçlarını kullanmayı açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] yöntemi profil oluşturma Araçları'nı kullanarak uygulama.
 

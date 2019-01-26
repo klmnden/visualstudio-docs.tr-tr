@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81bc9c82c2e6056284e63a7391c202c760022b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7649d644926edaf77e4c8c49ce159b4519218aeb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951098"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972631"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 Belirtilen adla eşleşen tüm satır içine alınmış işlevlerin satır numarası bilgisi yineleme yapmak bir istemci sağlayan bir sabit listesi alır.  

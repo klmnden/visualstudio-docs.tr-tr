@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f761bd99fe13822c0e3a5abdb35be85bd3395ef
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: d6053c01908df9f1c2884e81c8610a989ac89294
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227921"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030684"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Nasıl yapılır: Atom akışı için özel bir galeri oluşturun
 Bir Atom (uzantıları içeren ve akışa ekleme bir intranet konumu için RSS akışı) oluşturabileceğiniz **Uzantılar ve güncelleştirmeler** özel bir galeri olarak. Daha fazla bilgi için [özel galeriler](../extensibility/private-galleries.md).  

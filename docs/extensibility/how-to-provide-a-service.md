@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir hizmetin | Microsoft Docs'
+title: 'Nasıl yapılır: Bir hizmetin | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 818e086b5b4f02ad37614ca40d38560176088fc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010096"
 ---
-# <a name="how-to-provide-a-service"></a>Nasıl Yapılır: Bir hizmeti sağlama
+# <a name="how-to-provide-a-service"></a>Nasıl yapılır: Bir hizmeti sağlama
 VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak amacıyla bir VSPackage hizmeti Visual Studio ile kaydedin ve hizmet eklemeniz gerekir.  
   
  <xref:Microsoft.VisualStudio.Shell.Package> Sınıfı her ikisini birden uygular <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> ve <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> İsteğe bağlı hizmetler sağlayan bir geri çağırma yöntemleri içerir.  

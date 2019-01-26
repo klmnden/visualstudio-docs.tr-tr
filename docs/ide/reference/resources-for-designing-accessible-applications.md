@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b00574fe94e2b439540fd12d16957126e29c065a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011162"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir uygulamalar tasarlama için kaynaklar
 
 Erişilebilir bir Windows uygulamaları ve Web siteleri geliştirmek için erişilebilir tasarım yanı sıra ipuçları ve örnekleri destekleyen teknolojileri hakkında bilgi için aşağıdaki bağlantıları kullanın. Erişilebilirlik hakkında genel bilgiler bulunabilir çevrimiçine [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).
 
-## <a name="technologies"></a>Teknolojileri
+## <a name="technologies"></a>Technologies
 
 * **Microsoft Active Accessibility** şekilde erişilebilirliği arttırır bir COM tabanlı teknoloji Microsoft Windows üzerinde çalışan uygulamalarla iş kolaylaştırır. Bu, işletim sistemi ve bir COM arabirimi eklenen dinamik bağlantı kitaplıkları sağlar. Ayrıca, kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için yöntemler sağlayan bir uygulama programlama öğeleri bulunur. Daha fazla bilgi için [Microsoft etkin erişilebilirliği](/windows/desktop/WinAuto/microsoft-active-accessibility).
 

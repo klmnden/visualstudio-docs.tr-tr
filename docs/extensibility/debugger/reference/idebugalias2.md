@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aa60d4bd187776d58e64a40fe4676f20c36140f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 489050b09dde0e0ca43ac4a24cc5951a89bf01e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915688"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979796"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ IDebugAlias2 : IDebugAlias
  Bir diğer ad, sonrasında # karakteri, örneğin, 1001 # dize biçiminde bir ondalık sayıdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Üst bilgi: EE.h  
+ Üst bilgi: Ee.h  
   
  Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   

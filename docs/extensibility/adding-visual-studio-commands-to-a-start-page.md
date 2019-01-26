@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499b6cb593dd29d9bd881203daab19fc319ff1a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de713065b61df07a791fa81e89425481227676ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006717"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Visual Studio komutları için bir başlangıç sayfası Ekle
 Özel başlangıç sayfası oluşturduğunuzda, Visual Studio komutları ekleyebilirsiniz. Bu belge, Visual Studio komutları bir başlangıç sayfası XAML nesnelerde bağlamak için farklı yolları açıklanmaktadır.  
@@ -80,7 +80,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
 3.  Komut ayarlayarak çağırma `Command` aşağıdaki örnekte gösterildiği gibi bir XAML nesnesinin özelliği.  
   
-     XAML  
+     Xaml  
   
     ```  
     <vs:Button Text="Hide me" Command="{x:Static vsc:HideControl}" .../>  

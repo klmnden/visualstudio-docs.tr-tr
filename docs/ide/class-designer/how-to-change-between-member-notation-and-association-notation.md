@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Üye gösterimi ile ilişkilendirme gösterimi (Sınıf Tasarımcısı) arasında geçiş'
+title: 'Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi (Sınıf Tasarımcısı) arasında geçiş'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 822e846188b70994732473e66fe5bad3b5677164
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005754"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Nasıl Yapılır: Üye gösterimi ile ilişkilendirme gösterimi arasında sınıf tasarımcısında değiştirme
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi arasında sınıf tasarımcısında değiştirme
 
 İçinde **Sınıf Tasarımcısı**, sınıf diyagramı temsil eden iki türden ilişkilendirme gösterimi ve bunun tersi de üye gösterimi arasında bir ilişkilendirme ilişkisi şeklini değiştirebilirsiniz. Üyeleri ilişkilendirme çizgileri genellikle görüntülenen türleri nasıl ilişkili olduğunu, kullanışlı bir görselleştirme sağlar.
 

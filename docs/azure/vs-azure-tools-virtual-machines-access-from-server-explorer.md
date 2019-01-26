@@ -2,7 +2,7 @@
 title: Sunucu Gezgini'nden Azure sanal makinelere erişen | Microsoft Docs
 description: Görüntülemek nasıl bir genel bakış oluşturun ve Azure sanal makinelerini (VM) Visual Studio sunucu Gezgini'ndeki alın.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 317103b1367f5181f8a806925df67b88215ce6a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 996950b2ed7a6281f489a6842b2472fee1039f64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003012"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Sunucu Gezgini'nden Azure Sanal Makineler'e erişme
 
@@ -34,7 +34,7 @@ Azure tarafından barındırılan sanal makineler varsa, sunucu Gezgini'nde eri�
    | Durum |Değerleri başlatma, Başlarken, durdurma, durduruldu ve durumu alınırken içerir. Durum alınıyor görünürse, geçerli durumu bilinmiyor. Bu özellik için değerleri üzerinde kullanılan değerleri farklı [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | Subscriptionıd |Azure hesabınızda abonelik kimliği. Şirket bu bilgiyi gösterebilirsiniz [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040) abonelik özelliklerini görüntüleyerek. |
 2. Bir uç nokta düğümünü seçin ve ardından görüntülemek **özellikleri** penceresi.
-3. Uç nokta kullanılabilir özellikler aşağıdaki tabloda açıklanmaktadır, ancak salt okunurdur. Ekleme veya düzenleme uç noktaları bir sanal makine için kullanmak [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. Uç nokta kullanılabilir özellikler aşağıdaki tabloda açıklanmaktadır, ancak salt okunurdur. Ekleme veya düzenleme uç noktaları bir sanal makine için kullanmak [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Özellik | Açıklama |
    | --- | --- |

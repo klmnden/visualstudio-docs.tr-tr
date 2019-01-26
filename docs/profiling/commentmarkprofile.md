@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0415836ea4bf0c6544de95ebe0b6e4b9679d16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ef69d4830e413fe225841941778ad8e62897f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000594"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` İşlev, sayısal bir işaret ve bir metin dizesi ekler. *Vsp* dosya. Eklenecek, açıklama ve işareti için içeren iş parçacığı profil oluşturma `CommentMarkProfile` işlevi açık olması gerekir.  
@@ -67,7 +67,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |||  
 |-|-|  
 |**Üst bilgi**|VSPerf.h içerir|  
-|**Kitaplık**|VSPerf.lib kullanın|  
+|**Kitaplık**|Use VSPerf.lib|  
 |**Unicode**|Olarak uygulanan `CommentMarkProfileW` (Unicode) ve `CommentMarkProfileA` (ANSI).|  
   
 ## <a name="example"></a>Örnek  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003272"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Özel komutlar tarafından kullanılan bit bayrakları
 Kaynak Denetimi Eklentisi API işlevleri bir dizi davranışını bir veya daha fazla BITS tek bir değer olarak ayarlayarak değiştirilebilir. Bu değerleri bit bayrakları bilinir. Kaynak Denetimi Eklentisi API tarafından kullanılan çeşitli bit bayrakları, bunları kullanan bir işlev tarafından gruplandırılmış burada açıklanmıştır.  

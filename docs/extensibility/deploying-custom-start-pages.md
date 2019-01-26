@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a350cb906d38baf3b82bf688b431718dab75b376
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982773"
 ---
 # <a name="deploy-custom-start-pages"></a>Özel başlangıç sayfaları dağıtma
 
@@ -75,7 +75,7 @@ Başlangıç sayfası proje şablonu kullanarak edinebilirsiniz **Uzantı Yönet
 
 4.  Değiştirme *.pkgdef* aşağıdakileri ekleyerek HKLM altında varsayılan başlangıç sayfasını ayarlama burada *MyStartPage.xaml* adıdır *.xaml* başlatma içeren dosya Sayfa.
 
-     [$RootKey$ \StartPage\Default]
+     [$RootKey$\StartPage\Default]
 
      "URI"="$PackageFolder$\\*MyStartPage.xaml*"
 

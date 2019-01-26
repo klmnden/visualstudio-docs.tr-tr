@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901616"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987330"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Düzenleyici bağdaştırıcıları ile yeni veya değiştirilen davranışı
 Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış kodu güncelleştirmekte olduğunuz ve yeni API kullanmak yerine Düzenleyicisi bağdaştırıcıları (veya dolgular) kullanmayı planlıyorsanız, düzenleyici bağdaştırıcılarının davranışta aşağıdaki farklar farkında olmalıdır önceki çekirdek Düzenleyici göre.  
   
 ## <a name="features"></a>Özellikler  
   
-### <a name="use-setsite"></a>SetSite() kullanın  
+### <a name="use-setsite"></a>Use SetSite()  
  Çağırmalısınız <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> zaman işlemi metin arabelleğini metin görünümleri ve bunlar üzerinde herhangi bir işlem gerçekleştirmeden önce windows kod. Ancak, bu kullanırsanız, gerekli değildir <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> çünkü onları oluşturmak için bu hizmetin `Create()` kendilerini yöntemleri çağırmak <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  
   
 ### <a name="host-ivscodewindow-and-ivstextview-in-your-own-content"></a>Konak IVsCodeWindow ve kendi içerik Ivstextview  

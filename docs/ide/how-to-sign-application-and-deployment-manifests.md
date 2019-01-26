@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Uygulama ve dağıtım bildirimlerini imzalama'
+title: 'Nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f394acb8ef939b3d550ed0966fe002aab75b6b22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852920"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001962"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl Yapılır: Uygulama ve dağıtım bildirimlerini imzalama
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama
 
 Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız uygulama ve dağıtım bildirimlerinin ortak/özel anahtar çifti ile imzalanmış olması gerekir ve Authenticode teknolojisi kullanılarak. Windows sertifika deposu veya bir anahtar dosyasından bir sertifika kullanarak bildirimleri imzalayabilirsiniz.
 

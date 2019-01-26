@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Oluşturma bir. Vsct dosya | Microsoft Docs'
+title: 'Nasıl yapılır: Oluşturma bir. Vsct dosya | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b7c050022f129369962c572cbb5a60a27cca547
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979692"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Nasıl Yapılır: .Vsct dosyası oluşturma  
+# <a name="how-to-create-a-vsct-file"></a>Nasıl yapılır: .Vsct dosyası oluşturma  
   
 Bir XML tabanlı Visual Studio komut tablosu yapılandırması oluşturmanın birkaç yolu vardır (*.vsct*) dosyası.  
   
@@ -53,7 +53,7 @@ Bir XML tabanlı Visual Studio komut tablosu yapılandırması oluşturmanın bi
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Nasıl Yapılır: Varolan .ctc dosyasından bir .vsct dosyası oluşturma  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Nasıl yapılır: Varolan .ctc dosyasından bir .vsct dosyası oluşturma  
   
 XML tabanlı oluşturabilirsiniz *.vsct* var olan bir komut tablosu dosyasından *.ctc* kaynak dosyası. Bunu yaptığınızda yeni avantajlarından yararlanabilirsiniz XML tabanlı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] komut tablosu (VSCT) derleyici biçimi.  
   
@@ -84,7 +84,7 @@ XML tabanlı oluşturabilirsiniz *.vsct* var olan bir komut tablosu dosyasından
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Nasıl Yapılır: Mevcut bir .cto dosyadan .vsct dosyası oluşturma  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Nasıl yapılır: Mevcut bir .cto dosyadan .vsct dosyası oluşturma  
   
 XML tabanlı oluşturabilirsiniz *.vsct* var olan bir ikili dosyadan *.cto* dosya. Bunun yapılması, yeni komut tablosu derleyici biçimi yararlanmak sağlar. Bu işlem works bile *.cto* dosya gelen derlenmiş bir *.ctc* dosya. Düzenle ve derleme *.vsct* .cto dosyasına başka bir dosya.  
   

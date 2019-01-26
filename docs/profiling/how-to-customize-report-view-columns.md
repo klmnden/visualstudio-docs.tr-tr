@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Rapor görünümü sütunlarını özelleştirme | Microsoft Docs'
+title: 'Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a5da139d9d4e1ddc797f48f55e120906f03109b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861166"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019729"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Nasıl Yapılır: Rapor görünümü sütunlarını özelleştirme
+# <a name="how-to-customize-report-view-columns"></a>Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme
 Visual Studio Team System geliştirme sürümü Performans araçları tümleşik geliştirme ortamına (IDE) kesintisiz bir kullanıcı deneyimi sağlamak için tam olarak tümleşiktir. Aşağıdaki listede ekleme, kaldırma ve sütunları yeniden düzenleme özelleştirilmiş görünümleri etmektedir:  
   
 -   [Modüller Görünümü](../profiling/modules-view.md)  

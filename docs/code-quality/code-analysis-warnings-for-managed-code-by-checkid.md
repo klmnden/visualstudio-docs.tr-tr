@@ -256,15 +256,15 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba3d5d157cebe48212128a6eeb0312f9f67c2f3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a4f53915e50275df0876d50564b3f30add1d5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010330"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Checkıd tarafından yönetilen kod için kod çözümleme uyarıları
 

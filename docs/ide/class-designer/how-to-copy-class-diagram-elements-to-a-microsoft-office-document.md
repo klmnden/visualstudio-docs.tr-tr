@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir (Sınıf Tasarımcısı) Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama'
+title: 'Nasıl yapılır: Bir (Sınıf Tasarımcısı) Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f1b105f0e5cc566acb09d999c2341e4edaf0692
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991326"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Nasıl Yapılır: Sınıf diyagramı öğelerini Microsoft Office belgesine kopyalama
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Nasıl yapılır: Sınıf diyagramı öğelerini Microsoft Office belgesine kopyalama
 
 .NET sınıf diyagramından şekil kopyalayabilirsiniz (*.cd* dosya) diğer belgeler. Ya da şekli veya yapıştırdığınız nerede belge türüne göre temelini oluşturan kodu, bir kopyasını elde edersiniz. Modelleme projesindeki UML sınıf diyagramlarından şekiller kopyalamak için bkz: [diyagramlarını görüntü dışarı aktarma](../../modeling/export-diagrams-as-images.md).
 

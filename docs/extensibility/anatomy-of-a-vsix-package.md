@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 724c78ab566e56dd8d6281819a58fa4baf00563c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971246"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX paketinin anatomisi
 Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bir veya daha fazla Visual Studio uzantıları, Visual Studio meta verileri ile birlikte içeren bir dosya kullanır. Meta verilerin yer alan VSIX bildirimi içinde ve *[Content_Types] .xml* dosya. Bir VSIX paketi de bir veya daha fazla içerebilir *Extension.vsixlangpack* sağlamak üzere dosyaları Kurulum metninde yerelleştirilmiş ve bağımlılıklarını yüklemek için ek VSIX paketleri içerebilir.  

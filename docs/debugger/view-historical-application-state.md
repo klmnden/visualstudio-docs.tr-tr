@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: f8d1026ca2ac677a98d36dbf4fffe12428151885
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992704"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio'da (Visual Studio Enterprise) IntelliTrace geri adım atmayı kullanarak önceki uygulama durumlarını İnceleme
 
@@ -111,7 +111,7 @@ Genel Adımlama performansı üzerindeki etkisini, uygulamaya bağlıdır. Bir a
   * Alternatif olarak: 
     1. Visual Studio yükleyicisinden masaüstü için VC++ 2015.3 v140 araç seti (x86, x64) bileşenini yükleyin.
     2. Hedef uygulamayı derleyin.
-    3. Komut satırından, editbin aracını ayarlamak için kullanın. `Largeaddressaware` hedef yürütülebilir için bayrak. Örneğin, (yol güncelleştirdikten sonra), bu komutu kullanabilirsiniz: "C:\Program dosyaları (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+    3. Komut satırından, editbin aracını ayarlamak için kullanın. `Largeaddressaware` hedef yürütülebilir için bayrak. Örneğin, (yol güncelleştirdikten sonra), bu komutu kullanabilirsiniz: "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Hata ayıklamayı başlatmak için basın **F5**. Artık, hata ayıklama adımlarında ve kesme noktalarında anlık görüntü alınır.
 
        > [!Note]

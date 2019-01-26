@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08402735781cfa4a74f853034cd1fba01233ef24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3f38290d382e8259090ee99214b8199812091a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006973"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 Belirtilen özel özniteliğin tanımlı olup olmadığını belirler.  

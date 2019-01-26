@@ -9,17 +9,17 @@ helpviewer_keywords:
 - app.config files, adding to C# projects
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 11bc55316414298cf61a27854182f4831feb1ded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c34a0d8f2a04718ff409ed5256eea1c07287f95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992483"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Nasıl Yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje
 
 Bir uygulama yapılandırma dosyasına ekleyerek (*app.config* dosyası) için bir C# projesi, ortak dil çalışma zamanının nasıl bulur ve derleme dosyalarını yükler özelleştirebilirsiniz. Uygulama yapılandırma dosyaları hakkında daha fazla bilgi için bkz. [çalışma zamanı (.NET Framework) derlemeleri nasıl bulur](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
 

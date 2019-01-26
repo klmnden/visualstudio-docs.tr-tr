@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 838e35c0be5ed9cc0e8e7cb34e118b1f57da4689
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961916"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 
@@ -42,7 +42,7 @@ Bu kayıt defteri değerleri için iç varsayılan ayarları aşağıdaki tablod
 
 |Kayıt defteri öğesi|Varsayılan değer|Açıklama|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Ardından bir büyük harf veya alt çizgi, küçük harfli bir karakterle eşleşir.|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Ardından bir büyük harf veya alt çizgi, küçük harfli bir karakterle eşleşir.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** ifadenin ilk parantez içinde eşleşen herhangi bir karakteri temsil eder ve **$2** ikinci parantez içinde eşleşen herhangi bir karakteri temsil eder. Değişiklik, ilk eşleşme, boşluk ve ikinci Eşleştir ' dir.|
 |**SmartCaptionSuffix**|**:**|Döndürülen dize için eklenmiş bir karakteri temsil eder. Örneğin, açıklamalı alt yazı ise `Company Name`, sonek kolaylaştırır `Company Name:`|
 

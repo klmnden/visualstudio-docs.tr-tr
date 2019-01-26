@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 789a830b281d7905d8b067c1d69665cc6de3c610
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001793"
 ---
 # <a name="link-task"></a>Bağlantı görevi
 Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi (COFF) nesne dosyaları ve yürütülebilir bir dosya oluşturmak için kitaplıklar bağlayıcı aracı bağlantılar (*.exe*) dosya veya dinamik bağlantı kitaplığı (DLL). Daha fazla bilgi için [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).  
@@ -753,11 +753,11 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
   
     -   **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-    -   **EFI Önyükleme servisi sürücüsü** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
     -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**  
   

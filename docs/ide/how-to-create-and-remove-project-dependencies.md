@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Proje bağımlılıklarını oluşturma ve kaldırma'
+title: 'Nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 832fb93788ebd0b1f7fbcefdf25646ad011a474d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985664"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Nasıl Yapılır: Proje bağımlılıklarını oluşturma ve kaldırma
+# <a name="how-to-create-and-remove-project-dependencies"></a>Nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma
 
 Birden çok proje içeren bir çözüm derlerken, belirli projeleri ilk oluşturulacak, diğer projeleri tarafından kullanılan kodu oluşturmak için gerekli olabilir. Bir proje başka bir proje tarafından oluşturulan yürütülebilir kodu kullanırken, kodu oluşturan proje kodu kullanan projenin proje bağımlılık olarak adlandırılır. Bu bağımlılık ilişkiler tanımlanabilir **proje bağımlılıkları** iletişim kutusu.
 

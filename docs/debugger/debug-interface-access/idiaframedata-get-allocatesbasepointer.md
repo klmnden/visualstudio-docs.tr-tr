@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8a33db5d-008c-4fe5-b64f-210c9b77f686
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ce39d0fb64cdd89139bb4506c9b95719a3f172
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3aa3150efe4dffb1df2090e8381d471c720c690
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009784"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 Taban işaretçisi, bu adres aralığı, kod için ayrılmış olup olmadığını gösteren bir bayrak alır. Bu metot kullanımdan kaldırılmıştır.  

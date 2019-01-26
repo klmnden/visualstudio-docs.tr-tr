@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf diyagramları (Sınıf Tasarımcısı) görüntü dışarı aktarma'
+title: 'Nasıl yapılır: Sınıf diyagramları (Sınıf Tasarımcısı) görüntü dışarı aktarma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a14220d3a66db1528ac19a8f1fa263b7244b4cd0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988070"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Nasıl Yapılır: Sınıf diyagramlarını görüntü olarak dışarı aktarma
+# <a name="how-to-export-class-diagrams-as-images"></a>Nasıl yapılır: Sınıf diyagramlarını görüntü olarak dışarı aktarma
 
 Bir projedeki koddan oluşturulan bir sınıf diyagramı dışarı aktarmak için diyagramı görüntü olarak kaydedin. UML sınıf diyagramları yerine dışarı aktarmak istiyorsanız, bkz. [diyagramlarını görüntü dışarı aktarma](../../modeling/export-diagrams-as-images.md).
 

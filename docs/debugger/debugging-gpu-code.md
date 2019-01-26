@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 938d2a81f60b86904d0334380734979c2a39cc43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6344d37566fb37fcb7b35d005aa6bef66d18dd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964268"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yapabilirsiniz. GPU hata ayıklama desteği Visual Studio'da yarış algılama işlemlerini başlatma ve bunları ve hata ayıklama Windows tümleştirme ekleme içerir.  
@@ -53,11 +53,11 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
   
 -   [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)  
   
--   [Nasıl yapılır: Paralel İzleme penceresini kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Nasıl yapılır: Paralel İzleme Penceresini Kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md) (hata ayıklama konumu araç çubuğu)  
   
--   [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Nasıl yapılır: GPU İş Parçacıkları Penceresini Kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Veri eşitleme özel durumları  
  Hata ayıklayıcı yürütme sırasında birkaç veri eşitleme koşullar tanımlayabilirsiniz. Bir koşul algılandığında, hata ayıklayıcı kesme durumuna girer. İki seçeneğiniz vardır —**sonu** veya **devam**. Kullanarak **özel durumları** iletişim kutusu, hata ayıklayıcı Bu koşullar algılar ve ayrıca hangi koşullar Bu için keser olup olmadığını yapılandırabilirsiniz. Daha fazla bilgi için [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md). Ayrıca **seçenekleri** yazılan veriler veri değerini değiştirmez, hata ayıklayıcısını özel durumlar yoksayması gerektiğini belirtmek için iletişim kutusu. Daha fazla bilgi için [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  

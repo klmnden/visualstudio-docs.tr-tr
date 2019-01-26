@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Artımlı olarak derleme | Microsoft Docs'
+title: 'Nasıl yapılır: Artımlı olarak derleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5866ae345aaa8b28cdc0ff448500104ba946f504
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010148"
 ---
-# <a name="how-to-build-incrementally"></a>Nasıl Yapılır: Artımlı olarak derleme
+# <a name="how-to-build-incrementally"></a>Nasıl yapılır: Artımlı olarak derleme
 Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri yerleşik olmayan yeniden önemlidir. Her yapı, her zaman tüm hedefleri oluşturulduysa, tamamlanması uzun sürer. Artımlı derlemeleri Etkinleştir için (hangi derlemelerde yalnızca önce oluşturulmuş değil veya hedefleyen bu hedefleri güncel yeniden), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırabilirsiniz ve atlayın, yapı ya da kısmi bir hedef yeniden belirleyin. Ancak, giriş ve çıkışları arasında bire bir eşleme olmalıdır. Dönüşümleri, doğrudan bu eşleme tanımlamak hedefleri etkinleştirmek için kullanabilirsiniz. Dönüşümler hakkında daha fazla bilgi için bkz. [dönüştüren](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specify-inputs-and-outputs"></a>Giriş ve çıkışları belirtin  

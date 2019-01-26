@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 908a31a50b1af99f7123f292f250f9262a7da62e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a4f5cb3da152c3ac3870d7f4024001663b8f4ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990270"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
 
@@ -511,4 +511,4 @@ Dolgular, .NET temel sınıf kitaplığı'ndan tüm türlerde kullanılamaz **ms
 
 - [Microsoft Fakes ile test edilen kodu Ayır](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost'ın blog: Visual Studio 2012 dolgular](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Video (1 saat 16): Visual Studio 2012'de untestable kodu fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Video (1h16): Visual Studio 2012'de untestable kodu fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)

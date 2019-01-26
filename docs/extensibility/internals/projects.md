@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893dbdb8a1ff92d338b6e8ee654f60578990c7e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 901e45867c263547ab8c268c9d28e03776e88740
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876750"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970389"
 ---
 # <a name="projects"></a>Projeler
 Visual Studio'da projeler kaynak kodu dosyaları ve görüntülenen diğer kaynakları düzenlemek için geliştiricilerin kullanan kapsayıcılardır **Çözüm Gezgini**. Genellikle depolama başvurularının kaynak kod dosyalarını ve kaynak bit eşlem dosyaları gibi dosyalar (örneğin, bir C# projesi için .csproj dosyası) projelerdir. Düzenleme, derleme, hata ayıklama ve kaynak kodunu Dağıt let projeleri, Web Hizmetleri ve veritabanları ve diğer kaynaklara başvuruyor. VSPackage'ları, Visual Studio Proje sistemi üç temel şekilde genişletebilir: *proje türleri*, *proje alt türleri*, ve *özel Araçlar*.  

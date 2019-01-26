@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86942dda1990fe8a681ec2832b2474d42d418a63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c8e94f0018cadbfcc26b781637c478fa9768ca8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842063"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012813"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1. Adım: Bir Windows Forms uygulaması projesi oluşturma
 Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Application projesi oluşturmaktır.

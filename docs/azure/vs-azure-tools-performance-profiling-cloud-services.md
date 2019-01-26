@@ -2,19 +2,19 @@
 title: Bir bulut hizmetinin performansını test etme | Microsoft Docs
 description: Visual Studio profil oluşturucu kullanılarak bir bulut hizmetinin performansını test etme
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 05af766e3e138c8dd83978d5ae359b6662ba73bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e58548bddfbb9426b459fe3260129a14b6eba87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976241"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
@@ -59,8 +59,8 @@ Visual Studio'da performans profili oluşturma hakkında daha fazla bilgi için 
 
 > [!NOTE]
 > IntelliTrace veya Bulut hizmetinizi yayımlayın, profil oluşturma etkinleştirebilirsiniz. Her ikisi de etkinleştirilemiyor.
-> 
-> 
+>
+>
 
 ### <a name="profiler-collection-methods"></a>Profiler koleksiyon metotları
 Farklı bir koleksiyon metotları, performans sorunlarına temel profil oluşturma için kullanabilirsiniz:
@@ -78,8 +78,8 @@ Aşağıdaki resimde, Azure uygulamasını Yayımla iletişim kutusu, profil olu
 
 > [!NOTE]
 > Etkinleştirmek için **profil oluşturmayı etkinleştir** onay kutusu, profil oluşturucu bulut hizmetinizi yayımlayın için kullandığınız yerel bilgisayarda yüklü olması gerekir. Varsayılan olarak, profil oluşturucu, Visual Studio'yu yüklediğinizde yüklenir.
-> 
-> 
+>
+>
 
 ### <a name="to-configure-profiling-settings"></a>Profil oluşturma ayarlarını yapılandırmak için
 1. Çözüm Gezgini'nde, Azure projeniz için kısayol menüsünü açın ve ardından **Yayımla**. Bir bulut hizmeti yayımlama hakkında ayrıntılı adımlar için bkz: [Azure araçlarını kullanarak bir bulut hizmeti yayımlama](http://go.microsoft.com/fwlink/p?LinkId=623012).
@@ -89,7 +89,7 @@ Aşağıdaki resimde, Azure uygulamasını Yayımla iletişim kutusu, profil olu
 5. Gelen **hangi profil oluşturma yöntemini kullanmak istediğiniz** seçenek düğmelerini, gereksinim, profil oluşturma türünü seçin.
 6. Katman etkileşimi profil oluşturma verilerini toplamak için seçin **Katman etkileşimi profil oluşturmayı etkinleştir** onay kutusu.
 7. Ayarları kaydetmek için seçin **Tamam** düğmesi.
-   
+
     Bu uygulama yayımladığınızda, bu ayarlar, her rol için profil oluşturma oturumu oluşturmak için kullanılır.
 
 ## <a name="viewing-profiling-reports"></a>Profil oluşturma raporları görüntüleme
@@ -101,7 +101,7 @@ Bulut hizmetinizde bir rolünün her örneği için profil oluşturma oturumunu 
 1. Visual Studio'da Sunucu Gezgini penceresini görüntülemek için menü çubuğundaki Sunucu Gezgini görünümü seçin.
 2. Azure bilgi işlem düğümünü seçin ve ardından Visual Studio'dan yayımlandığında, profil için seçili bulut hizmetini Azure dağıtım düğümünü seçin.
 3. Bir örneği için profil oluşturma raporları görüntülemek için rol hizmeti seçin, belirli bir örneği için kısayol menüsünü açın ve ardından **profili oluşturma raporu görüntüle**.
-   
+
     Rapor, bir .vsp dosya artık Azure'dan indirilir ve yükleme durumu, Azure etkinlik günlüğü'nde görünür. Yükleme tamamlandığında, profil oluşturma raporunun bir düzenleyici adlı Visual Studio için sekmesinde görünür <Role name> *<Instance Number>* <identifier>.vsp. Rapor için Özet veriler görüntülenir.
 4. Geçerli Görünüm listesinde, raporun farklı görünümleri görüntülemek için istediğiniz görünümü türünü seçin. Daha fazla bilgi için [profil oluşturma araçları rapor görünümlerini](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 

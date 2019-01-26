@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - azure
-ms.openlocfilehash: 937f5f1606e24a40c0c5ffe90f739cc68df7e4b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6a8592950fafa1d0ffc564aafaab4371b315088
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041639"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI, yapay ZEKA modellerini eğitme
 
@@ -34,7 +34,7 @@ Dinamik olarak Azure eğitimi modellerini ölçeği genişletebilirsiniz için y
 
 3. Seçin **Görüntüle > Takım Gezgini...**  açmak için **Takım Gezgini** penceresi içinde GitHub veya Azure DevOps bağlanabilir, ya da bir depoyu kopyalayın.
 
-    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media/train-model/team-explorer.png)
+    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media/train-model/team-explorer-devops.png)
 
 4. Altında alanına **yerel Git depoları**, girin `https://github.com/Microsoft/samples-for-ai`, kopyalanan dosyalar için bir klasör girin ve seçin **kopya**.
 

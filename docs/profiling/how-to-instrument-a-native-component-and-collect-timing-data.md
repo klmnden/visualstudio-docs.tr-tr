@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
+title: 'Nasıl yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından Profiler ile zamanlama verileri toplama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8f98e0c9e0277849b967bbba784b4b81395c713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4fc93e6481763c7970a5b7b962692b4d8d3b3ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997786"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl Yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından profil oluşturucu ile zamanlama verileri toplama
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Nasıl yapılır: Yerel bir tek başına bileşeni izleme ve komut satırından profil oluşturucu ile zamanlama verileri toplama
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir C++ gibi yerel bir bileşeni izleme Profil Araçları komut satırı araçlarının. *exe* veya. *dll* dosyası ve ayrıntılı zamanlama verileri toplamak için.  
 
 > [!NOTE]

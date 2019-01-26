@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 872fc4de05b4f6349db0a2d54a7dfb7c282ab6e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345610"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004441"
 ---
 # <a name="msbuild-items"></a>MSBuild öğeleri
 MSBuild öğeleri yapı sistemine girdi ve bunlar genelde dosyaları temsil eder (dosyaları belirtilen `Include` özniteliği). Öğeleri öğesi adlarına dayalı öğe türlerine gruplanır. Öğe türleri parametre olarak görevleri için kullanılabilir öğe listeleri içeren adlandırılır. Görevler, derleme işleminin adımları gerçekleştirmek için öğe değerlerini kullanın.  

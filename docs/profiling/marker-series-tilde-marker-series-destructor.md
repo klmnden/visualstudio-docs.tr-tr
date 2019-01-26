@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5632523b-fd58-40aa-8523-f29ee9083a65
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e743ebf7032768570b2cea1fd262789bbd35f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77f52485b24ebd1929a63c1055b4c6839fe22361
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907587"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991547"
 ---
 # <a name="markerseriesmarkerseries-destructor"></a>marker_series:: ~ marker_series yok Edicisi
 Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.  
@@ -29,9 +29,9 @@ Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** *cvmarkersobj.h*  
+ **Header:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [marker_series sınıfı](../profiling/marker-series-class.md)
+ [marker_series class](../profiling/marker-series-class.md)

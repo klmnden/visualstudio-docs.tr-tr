@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206a6ecf028497e63a7fe3e0d6bb320febd8bde5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998267"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Gelişmiş Seçenekler, metin düzenleyici, temel (Visual Basic)
 **VB belirli** özellik sayfasında **temel** klasörü **metin düzenleyici** klasörü **seçenekleri** (**araçları** menüsü) iletişim kutusunda, aşağıdaki özellikleri içerir:
@@ -40,18 +40,18 @@ ms.locfileid: "54764673"
 - Using deyimlerini sıralarken önce 'System' yönergelerini Yerleştir
 
    Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünde sıralar komutunu `using` yönergeleri ve yerde listenin üst kısmındaki 'System' ad.
-   
+
 - Yönerge gruplarını kullanarak Ayır
 
    Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünü komutta ayıran `using` aynı kök ad alanına sahip yönergeleri grupları arasında boş bir satıra ekleyerek yönergeleri.
-   
-- Reference bütünleştirilmiş kodlarında türler için using Öner 
-- NuGet paketlerinde türler için using Öner 
+
+- Reference bütünleştirilmiş kodlarında türler için using Öner
+- NuGet paketlerinde türler için using Öner
 
    Bu seçenek seçildiğinde, bir [hızlı eylem](../quick-actions.md) NuGet paketini yüklemek ve eklemek kullanılabilir bir `using` başvurulmayan türleri için yönerge.
 
    ![Visual Studio'da NuGet paketini yüklemek için hızlı eylem](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Vurgulama
 

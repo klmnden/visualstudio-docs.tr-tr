@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63fca3051ce50f728cf83976f6ef6a5204ad35b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c6d2bf026295d899f2bd0aee05eccb8013eedf0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967264"
 ---
-# <a name="how-to-use-the-expression-editor"></a>Nasıl Yapılır: İfade Düzenleyicisini Kullanma
+# <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: İfade Düzenleyicisini Kullanma
 
 İfade Düzenleyicisi'ni girin ve ifadeleri değerlendirmek için kullanılan birçok iş akışı etkinliklerinde bir iş akışı Tasarımcısı denetimidir. İfade Düzenleyicisi düzenleme deneyimi de dahil olmak üzere IntelliSense, renklendirme, tam özellikli bir IDE sağlar Paramınfo, diğer özellikler arasında hata ilişkilendirmelerini. Bunu girildikten sonra derleyici ifadesini doğrular. İfade geçersizse, bir hata simgesi görüntülenir. Düzenleyici olarak de açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.
 

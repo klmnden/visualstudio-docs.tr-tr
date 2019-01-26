@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003424"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Hangi&#39;Visual Studio aboneliklerinde yenilikler
 
@@ -29,11 +29,11 @@ S2'de yenilikler, hızlı bir özeti aşağıda verilmiştir.
 
 Bulut abonelikleri yönetmek kolaylaştıran Bulut yöneticileri için yeni işlevler ekledik:
 
-* [**Toplu atama**](/visualstudio/subscriptions/assign-license#bulk-assignments): ekleyin ve toplu birden çok aboneyi karşıya yükleme.
+* [**Toplu atama**](/visualstudio/subscriptions/assign-license#bulk-assignments): Ekleme ve toplu birden çok aboneyi karşıya yükleyin.
 
   ![Toplu Ekleme düğmesini kullanarak birden çok kullanıcı ekleme](media/bulk-add-multiple-subscribers.png)
 
-* [**Dışarı aktarma**](/visualstudio/subscriptions/exporting-subscriptions): Kullanıcıları ve onların atamaları hakkında daha fazla ayrıntı listesini dışarı aktarma. Atamalar ve sona erme tarihleri izlemek istediğinizde bu gibi bir liste yararlı olabilir.
+* [**Dışarı aktarma**](/visualstudio/subscriptions/exporting-subscriptions): Kullanıcılarınızı ve onların atamaları hakkında daha fazla ayrıntı listesini dışarı aktarın. Atamalar ve sona erme tarihleri izlemek istediğinizde bu gibi bir liste yararlı olabilir.
 
    ![Abone listesini Dışarı Aktar düğmesini kullanarak Excel'e aktarma](media/export-subscriber-list-to-csv.png)
 
@@ -44,23 +44,23 @@ Bulut abonelikleri yönetmek kolaylaştıran Bulut yöneticileri için yeni işl
 
 * Kullanılabilen yeni alanlar keşfedin [ **Abonelik Ekle** deneyimi](assign-license.md):
 
-  * **Bildirim e-posta**: kuruluşunuz Azure AD kullanmıyor ve dışındaki oturum açma e-posta bildirimleri için farklı bir e-posta kullanmak istiyorsanız, bunu ekleyebilirsiniz.
+  * **Bildirim e-posta**: Kuruluşunuz Azure AD kullanmıyor ve dışındaki oturum açma e-posta bildirimleri için farklı bir e-posta kullanmak istiyorsanız, bunu ekleyebilirsiniz.
 
     ![Yeni bir bildirim e-posta adresi ekleyin](media/add-new-subscriber-notification-email.png)
 
-  * **İletişim tercihleri**: atama e-postaları göndermek için kullanmak istediğiniz dili seçin.
+  * **İletişim tercihleri**: Atama e-postaları göndermek için kullanmak istediğiniz dili seçin.
 
     ![Bildirim e-postalar gönderildiğinde kullanılacak dili](media/change-subscriber-communication-preference.png)
 
-  * **Başvuru Ekle**: Başvuru Ekle yönettiğiniz abonelikleri notlar.
+  * **Başvuru ekleme**: Yönettiğiniz abonelikleri başvuru notlar ekleyin.
 
     ![Her abonelik için kendi başvuru Not Ekle](media/add-subscriber-reference-notes.png)
 
-* [**Atama e-postasını yeniden gönder**](resend-assignment-email.md): Herkes abone listenizin ve istediğiniz kadar çok kez yeniden bildirim e-posta gönderin.
+* [**Atama e-postasını yeniden gönder**](resend-assignment-email.md): Bir bildirim e-posta, herkesin abone listenizin ve istediğiniz kadar çok kez yeniden gönderin.
 
   ![İstediğiniz zaman etkinleştirme e-posta bir veya birden çok kullanıcıya yeniden gönder](media/resend-subscriber-activation-emails.png)
 
-* [**Filtre**](search-license.md): düzenlemek ve ihtiyaçlarınıza en uygun için abone verileriniz filtreleyin.
+* [**Filtre**](search-license.md): Düzenleme ve ihtiyaçlarınıza en uygun için abone verileriniz filtreleyin.
 
   ![Abone veri gibi mevcut alanlara göre filtrele](media/filter-subscriber-data.png)
 

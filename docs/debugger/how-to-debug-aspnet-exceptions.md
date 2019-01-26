@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ASP.NET özel durumlarında hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: ASP.NET özel durumlarında hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 002f100f11bd88e31b94283e7efe5e25299448bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d2d536b672a8d9328e117e754b861bf7f900142
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944304"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009225"
 ---
-# <a name="how-to-debug-aspnet-exceptions"></a>Nasıl Yapılır: ASP.NET özel durumlarında hata ayıklama
+# <a name="how-to-debug-aspnet-exceptions"></a>Nasıl yapılır: ASP.NET özel durumlarında hata ayıklama
 Özel durumların hatalarının ayıklanması, güçlü bir geliştirme önemli bir parçası olduğu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama. Özel durumları hata ayıklama hakkında genel bilgilerine [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md).  
   
  Hata ayıklamak için işlenmemiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] özel durumları, hata ayıklayıcının onlar için durduğundan emin olmalısınız. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Çalışma zamanı bir üst düzey özel durum işleyicisine sahiptir. Bu nedenle, hata ayıklayıcı varsayılan olarak hiçbir zaman işlenmeyen özel durumları keser. Bir özel durum oluştuğunda hata ayıklayıcıyı durdurmak için seçmelisiniz **bir özel durum olduğunda Kes: Durum** o özel duruma ayarını **özel durumları** iletişim kutusu.  

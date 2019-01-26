@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1a5c3fd3e4960381edc390ba473c53b9e4b62d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fd0c71e9f426c5591f9ac3ecd135c1b230ca5e20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771449"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986065"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio'da Python kodunun bir depoyu kopyalama
 
@@ -25,16 +25,16 @@ Kaydederler [yapay ZEKA için Visual Studio Araçları yüklü](installation.md)
 
 2. Visual Studio'yu başlatın.
 
-3. Seçin **Görüntüle > Takım Gezgini...**  açmak için **Takım Gezgini** penceresi içinde GitHub veya Azure DevOps bağlanabilir, ya da bir depoyu kopyalayın.
+3. Seçin **Görüntüle > Takım Gezgini** açmak için **Takım Gezgini** penceresi içinde GitHub veya Azure DevOps bağlanabilir, ya da bir depoyu kopyalayın.
 
-    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media/create-project-repo/team-explorer.png)
+    ![Azure DevOps, GitHub'ı gösteren ve bir depo kopyalama Takım Gezgini penceresi](media/create-project-repo/team-explorer-devops.png)
 
 4. Altında alanına **yerel Git depoları**, girin `https://github.com/Microsoft/samples-for-ai`, kopyalanan dosyalar için bir klasör girin ve seçin **kopya**.
 
     > [!Tip]
     > Takım Gezgini'nde belirttiğiniz klasör, kopyalanan dosyalar almak için belirli bir klasördür. Farklı `git clone` komutunu, Ekip Gezgini'nde bir kopya oluşturma otomatik olarak oluşturmaz bir alt klasör deponun adını.
 
-5. Kopyalama tamamlandığında, Team Explorer'ı depo panosuna gitmek için sayfanın alt kısmında depo klasörü çift tıklatın. Altında **çözümleri**seçin **yeni...** .
+5. Kopyalama tamamlandığında, Team Explorer'ı depo panosuna gitmek için sayfanın alt kısmında depo klasörü çift tıklatın. Altında **çözümleri**seçin **yeni**.
 
     ![Takım Gezgini penceresinde, bir kopya yeni proje oluşturma](media/create-project-repo/team-explorer-new-project.png)
 
@@ -44,7 +44,7 @@ Kaydederler [yapay ZEKA için Visual Studio Araçları yüklü](installation.md)
 
 8. Çözüm Gezgini'nde `TensorFlow Examples> MNIST` düğümünü sağ `convolutional.py`seçip **başlangıç dosyası olarak ayarla**. Bu adım, Visual Studio projeyi çalışırken kullanması gereken hangi dosya söyler.
 
-9. Tuşuna **Ctrl**+**F5** veya **hata ayıklama > hata ayıklama olmadan Başlat** programı çalıştırmak için. Görürseniz bir ', önceki adımda ayarı çalışma dizini yeniden denetleyin.
+9. Tuşuna **Ctrl**+**F5** veya **hata ayıklama > hata ayıklama olmadan Başlat** programı çalıştırmak için. Bir hata görürseniz, önceki adımda çalışma dizini ayarı yeniden denetleyin.
 
 10. Program başarıyla çalıştırıldığında, eğitim indirin ve veri kümesi, test sonra modeli eğitmek ve çıkış, hata oranı Başlat görürsünüz. İstediğiniz zaman içinde azaltmak için hata oranı
 

@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920662"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması)
 Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.  
@@ -101,7 +101,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 |`supportUrl`|İsteğe bağlı. Bağımlı bir platform için destek URL'sini belirtir. Bu URL, gerekli platformda bulunursa kullanıcıya gösterilir.|  
 |`description`|İsteğe bağlı. Açıklar, insan tarafından okunabilir formda tarafından tanımlanan işletim sistemini `dependentOS` öğesi.|  
 
-### <a name="osversioninfo"></a>OSVERSIONINFO  
+### <a name="osversioninfo"></a>osVersionInfo  
  Gerekli. Bu öğenin alt öğesi olan `dependentOS` öğesi ve içeren `os` öğesi. Bu öğenin öznitelikleri yok.  
 
 ### <a name="os"></a>işletim sistemi  
@@ -147,7 +147,7 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma güvenlik denetimi, dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için kullanır. Varsa `hash` öğesi dahil değildir, bu denetimi gerçekleştirilmeyecek. Bu nedenle, atlama `hash` öğesi önerilmez.  
 
-### <a name="dsigtransforms"></a>dsig:TRANSFORMS  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  `dsig:Transforms` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.  
 
 ### <a name="dsigtransform"></a>dsig:Transform  

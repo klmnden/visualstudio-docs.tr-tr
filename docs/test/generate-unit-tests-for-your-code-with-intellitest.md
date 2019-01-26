@@ -6,16 +6,16 @@ ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a9f13493b93dde73726253edf43d66f41bd2ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958832"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006040"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
 
@@ -27,7 +27,7 @@ Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve on
 
 **Intellitest oluşturma** ve **Intellitest Çalıştır** menü komutları:
 
-* Kullanılabilir yalnızca Enterprise Edition, Visual Studio 2015 ve sonraki yapılandırılır.
+* Yalnızca, Enterprise Edition, Visual Studio 2015 ve sonraki'dır.
 
 * .NET Framework'ü hedefleyen yalnızca C# kodunu destekler.
 

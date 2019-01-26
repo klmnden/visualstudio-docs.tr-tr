@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66428fa389b3adc152524d3d17ce7dd8135b1dbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7986a05ed090141734948404cb8580633c50e74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940686"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004363"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] köşe gölgelendirici aşaması sırasında oluşan bir hata nedeniyle eksik bir nesne incelemek için grafik tanılama araçları.  

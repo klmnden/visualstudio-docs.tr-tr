@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme | Microsoft Docs'
+title: 'Nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 673b22dfbde5497f6be7b24bf04773f6cddf4a01
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999671"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Nasıl Yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme
 Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklediğiniz bir uygulama, bir veri dizini hedef bilgisayarın yerel diskte, burada uygulama yönetebilir, kendi veri atanır. Veri dosyaları, tüm dosya türlerini içerebilir: metin dosyalarını, XML dosyaları veya hatta bir Microsoft Access veritabanına (*.mdb*) dosyaları. Aşağıdaki yordamlar bir veri dosyası herhangi bir tür ekleme gösterir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe kullanarak bir veri dosyası eklemek için  

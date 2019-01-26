@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e63a85ecbf42d0d4091a7ce9315c91184078ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8aa34553f4fb6d4524357f830dbbeabe3296354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981122"
 ---
 # <a name="error-site-uses-ip-address"></a>Hata: Site IP adresi kullanıyor
 Hata ayıklayıcı bir IP adresi kullanarak bir Web uygulaması için otomatik iliştirme çalıştığında bu hata oluşur. Değiştirirseniz böyle **Web sitesi kimliği** için **belirli IP adreslerini kullanan** IIS'de.  
@@ -37,4 +37,4 @@ Hata ayıklayıcı bir IP adresi kullanarak bir Web uygulaması için otomatik i
 2.  Değişiklik **IIS Web sitesi kimliği** ayarı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

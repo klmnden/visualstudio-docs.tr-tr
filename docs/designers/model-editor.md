@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 686d5a52b7cbf3a442d2ec330089331018a9716d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966039"
 ---
 # <a name="model-editor"></a>Model düzenleyicisi
 
@@ -32,7 +32,7 @@ Kullanabileceğiniz **Model Düzenleyicisi** sıfırdan temel 3B model oluşturm
 |Biçim Adı|Dosya Uzantısı|Desteklenen İşlemler (Görüntüleme, Düzenleme, Oluşturma)|
 |-----------------| - | - |
 |AutoDesk FBX Değişim Dosyası|*.fbx*|Görüntüleme, Düzenleme, Oluşturma|
-|Collada DAE Dosyası|*.DAE*|Görüntüleme, Düzenleme (Collada DAE dosyalarında yapılan değişiklikler FBX biçimi kullanılarak kaydedilir.)|
+|Collada DAE Dosyası|*.dae*|Görüntüleme, Düzenleme (Collada DAE dosyalarında yapılan değişiklikler FBX biçimi kullanılarak kaydedilir.)|
 |OBJ|*.obj*|Görüntüleme, Düzenleme (OBJ dosyalarında yapılan değişiklikler FBX biçimi kullanılarak kaydedilir.)|
 
 ## <a name="get-started"></a>Kullanmaya başlayın
@@ -294,39 +294,39 @@ Model Düzenleyicisi, ilk seçilen nesneyi (üst öğe haline gelen) tanımlamak
 
 |Komut|Klavye kısayolları|
 |-------------| - |
-|Geçiş **seçin** modu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
-|Geçiş **yakınlaştırma** modu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Geçiş **Pan** modu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Geçiş **seçin** modu|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Geçiş **yakınlaştırma** modu|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Geçiş **Pan** modu|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Tümünü seç|**CTRL**+**A**|
 |Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**Kaçış** (**Esc**)|
 |Yakınlaştır|**Fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**fare tekerleği ileriye doğru**<br /><br /> **Shift**+**fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**PageUp**<br /><br /> Artı işareti (**+**)|
-|Uzaklaştır|**Fare tekerleği geriye doğru**<br /><br /> **CTRL**+**fare tekerleği geriye doğru**<br /><br /> **Shift**+**fare tekerleği geriye doğru**<br /><br /> **CTRL**+**PageDown**<br /><br /> Eksi işareti (**-**)|
+|Uzaklaştır|**Fare tekerleği geriye doğru**<br /><br /> **CTRL**+**fare tekerleği geriye doğru**<br /><br /> **Shift**+**fare tekerleği geriye doğru**<br /><br /> **Ctrl**+**PageDown**<br /><br /> Eksi işareti (**-**)|
 |Kamerayı yukarı kaydır|**PageDown**|
 |Kamerayı aşağı kaydır|**PageUp**|
-|Kamerayı sola kaydır|**Fare tekerleği sol**<br /><br /> **CTRL**+**PageDown**|
-|Kamerayı sağa kaydır|**Fare tekerleği sağ**<br /><br /> **CTRL**+**PageDown**|
+|Kamerayı sola kaydır|**Fare tekerleği sol**<br /><br /> **Ctrl**+**PageDown**|
+|Kamerayı sağa kaydır|**Fare tekerleği sağ**<br /><br /> **Ctrl**+**PageDown**|
 |Modelin üst kısmını görüntüle|**CTRL**+**L**, **Ctrl**+**T**<br /><br /> **T**|
-|Modelin alt kısmını görüntüle|**CTRL**+**L**, **Ctrl**+**U**|
-|Modelin sol tarafını görüntüle|**CTRL**+**L**, **Ctrl**+**m**|
-|Modelin sağ tarafını görüntüle|**CTRL**+**L**, **Ctrl**+**R**|
-|Modelin önünü görüntüle|**CTRL**+**L**, **Ctrl**+**F**|
-|Modelin arkasını görüntüle|**CTRL**+**L**, **Ctrl**+**B**|
+|Modelin alt kısmını görüntüle|**Ctrl**+**L**, **Ctrl**+**U**|
+|Modelin sol tarafını görüntüle|**Ctrl**+**L**, **Ctrl**+**L**|
+|Modelin sağ tarafını görüntüle|**Ctrl**+**L**, **Ctrl**+**R**|
+|Modelin önünü görüntüle|**Ctrl**+**L**, **Ctrl**+**F**|
+|Modelin arkasını görüntüle|**Ctrl**+**L**, **Ctrl**+**B**|
 |Nesneyi pencere içinde çerçevele|**F**|
-|Tel çerçeve modunu aç/kapat|**CTRL**+**L**, **Ctrl**+**W**|
-|Kılavuza uydurmayı aç/kapat|**CTRL**+**G**, **Ctrl**+**N**|
-|Pivot modunu aç/kapat|**CTRL**+**G**, **Ctrl**+**V**|
-|X ekseni kısıtlamasını aç/kapat|**CTRL**+**L**, **Ctrl**+**X**|
+|Tel çerçeve modunu aç/kapat|**Ctrl**+**L**, **Ctrl**+**W**|
+|Kılavuza uydurmayı aç/kapat|**Ctrl**+**G**, **Ctrl**+**N**|
+|Pivot modunu aç/kapat|**Ctrl**+**G**, **Ctrl**+**V**|
+|X ekseni kısıtlamasını aç/kapat|**Ctrl**+**L**, **Ctrl**+**X**|
 |Y ekseni kısıtlamasını aç/kapat|**CTRL**+**L**, **Ctrl**+**Y**|
-|Z ekseni kısıtlamasını aç/kapat|**CTRL**+**L**, **Ctrl**+**Z**|
-|Çeviri moduna geçiş yap|**CTRL**+**G**, **Ctrl**+**W**<br /><br /> **W**|
-|Ölçek moduna geçiş yap|**CTRL**+**G**, **Ctrl**+**E**<br /><br /> **E**|
-|Döndürme moduna geçiş yap|**CTRL**+**G**, **Ctrl**+**R**<br /><br /> **R**|
+|Z ekseni kısıtlamasını aç/kapat|**Ctrl**+**L**, **Ctrl**+**Z**|
+|Çeviri moduna geçiş yap|**Ctrl**+**G**, **Ctrl**+**W**<br /><br /> **W**|
+|Ölçek moduna geçiş yap|**Ctrl**+**G**, **Ctrl**+**E**<br /><br /> **E**|
+|Döndürme moduna geçiş yap|**Ctrl**+**G**, **Ctrl**+**R**<br /><br /> **R**|
 |Nokta seçme moduna geçiş yap|**CTRL**+**L**, **Ctrl**+**1**|
 |Kenar seçme moduna geçiş yap|**CTRL**+**L**, **Ctrl**+**2**|
 |Yüz seçme moduna geçiş yap|**CTRL**+**L**, **Ctrl**+**3**|
 |Nesne seçme moduna geçiş yap|**CTRL**+**L**, **Ctrl**+**4**|
-|Yörünge (kamera) moduna geçiş yap|**CTRL**+**G**, **Ctrl**+**O**|
+|Yörünge (kamera) moduna geçiş yap|**Ctrl**+**G**, **Ctrl**+**O**|
 |Sahnede sonraki nesneyi seç|**sekmesi**|
 |Sahnede önceki nesneyi seç|**Shift**+**sekmesi**|
 |Geçerli araca bağlı olarak seçili nesneyi düzenle.|**Ok** anahtarları|

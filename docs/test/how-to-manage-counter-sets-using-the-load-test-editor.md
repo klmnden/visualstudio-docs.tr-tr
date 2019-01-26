@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 89e582c4377d3948f5ed0cfdb1e23a3259bde27e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e3dd1d3ffb22a7b6ea3940578345a8b616358e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941157"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976942"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Nasıl Yapılır: Yük Testi Düzenleyicisini kullanılarak sayaç kümelerini yönetme
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanılarak sayaç kümelerini yönetme
 
 İle bir yük testi oluşturduğunuzda, **Yeni Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için ön tanımlı sayaç kümeleri kümesini sunar.
 

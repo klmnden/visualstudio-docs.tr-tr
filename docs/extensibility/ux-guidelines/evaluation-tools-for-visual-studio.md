@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3167f0243fb723483a5729698a271db854e86cdb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b180aa62236fa2644f3a7476e8580e73dae48e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008861"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio için değerlendirme araçları
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio için craftsmanship denetim listesi  

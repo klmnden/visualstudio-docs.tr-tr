@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d0981a5803f4b04f564fcea934f040d34db7b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0e3c3488c54477a9517263bf363cede3198fc3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007639"
 ---
 # <a name="preemption-time"></a>Önalım zamanı
 Bu segmentlerde faaliyet zaman çizelgesi ön alım kategorilere engelleme zamanı ile ilişkilidir. Bu kategori, bir iş parçacığı çıkış aşağıdaki nedenlerden biri nedeniyle geçiş, gelir:  

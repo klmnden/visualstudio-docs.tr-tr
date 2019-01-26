@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009901"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı C++ için biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** biçim belirticilerini kullanarak pencere.  
@@ -75,7 +75,7 @@ int main() {
 |alt|Unicode (UTF-16 kodlaması) dizesi (tırnak işareti)|\<Konum > L "Merhaba Dünya"|Merhaba Dünya|  
 |bstr|BSTR ikili dosya dizesine (tırnak işaretleriyle)|\<Konum > L "Merhaba Dünya"|L "Merhaba Dünya"|  
 |env|Ortam bloğuna (çift null sonlandırılan dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: C =:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
-|**s32**|UTF-32 dizesiyle (tırnak işareti)|\<konumu > "hello world" U|"hello world" u|  
+|**s32**|UTF-32 dizesiyle (tırnak işareti)|\<konumu > "hello world" U|U"hello world"|  
 |**s32b**|UTF-32 dize (tırnak işareti)|\<konumu > "hello world" U|Merhaba Dünya|  
 |**tr**|enum|Saturday(6)|Cumartesi|  
 |**hv**|İşaretçi türü - Denetlenmekte olan işaretçi değeri bir dizi yığın ayırma sonucunu örneğin olduğunu gösterir `new int[3]`.|\<Konum > {\<ilk üye >}|\<Konum > {\<ilk üye >, \<ikinci üye >,...}|  
@@ -127,8 +127,8 @@ int main() {
 |Sembol|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|64 ASCII karakteri|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.... 4... 0 ". 0W &...|  
-|**mb**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.... 4... 0 ". 0W &...|  
+|**m**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mb**|ardından 16 ASCII karakter, onaltılık biçimde 16 bayt|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
 |**mw**|8 sözcükler|0x0012ffac|0X0012FFAC 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**MD**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
@@ -139,4 +139,4 @@ int main() {
   
 |Belirleyici|Biçimi|İfade|Görüntülenen değer|  
 |---------------|------------|----------------|---------------------|  
-|n|Ondalık tamsayı|pBuffer [32]|Görüntüler `pBuffer` 32 öğe dizisi olarak.|
+|n|Ondalık tamsayı|pBuffer[32]|Görüntüler `pBuffer` 32 öğe dizisi olarak.|

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bedde155fdfa37ea1616e2f79e5dba54a449dd74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1230d4ed6caf7d44c7cef384bcbffc59103f84dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998332"
 ---
 # <a name="get-a-port"></a>Bir bağlantı noktası alma
 Bir bağlantı noktası işlemleri çalıştırdığınız bir makine bağlantısını temsil eder. Bu makineyi, yerel veya uzak bir makinede olabilir (büyük olasılıkla çalışan Windows tabanlı olmayan bir işletim sistemi; bkz [bağlantı noktaları](../../extensibility/debugger/ports.md) daha fazla bilgi için).  

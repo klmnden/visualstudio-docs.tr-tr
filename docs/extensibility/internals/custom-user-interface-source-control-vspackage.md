@@ -8,22 +8,22 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3fa5972a520825b8c7622bd07e23d53910339ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7ae9333fd0e003bae6c823f7ae778dfc4b3770c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041210"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Özel kullanıcı arabirimi (kaynak denetimi VSPackage'ı)
 Alt menü öğelerini ve varsayılan durumlarına Visual Studio komut tablosu aracılığıyla VSPackage bildirir (*.vsct*) dosyası. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) VSPackage yüklenene kadar bu menü öğeleri varsayılan durumlarını görüntüler. Sonuç olarak, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> etkinleştirmek ya da menü öğelerini devre dışı yöntemi çağrılır.  
   
  VSPackage VSPackage bağlı olarak bir komut kullanıcı arabirimi (UI) bağlamı otomatik olarak yüklenebilmesi için kayıt defteri anahtarını ayarlayabilirsiniz, ancak genellikle bir kaynak denetimi VSPackage'ı yalnızca belirli bir kullanıcı Arabirimi bağlamına geçiş yerine isteğe bağlı yüklenecektir. Hakkında daha fazla bilgi için **AutoLoadPackages** kayıt defteri anahtarı, bkz: [yönetme VSPackages](../../extensibility/managing-vspackages.md).  
   
-## <a name="vspackage-ui"></a>VSPackage kullanıcı Arabirimi  
+## <a name="vspackage-ui"></a>VSPackage UI  
  Paket kaynak denetimi VSPackage uygulanır ve herhangi bir UI kullanmaz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Her kaynak denetimi VSPackage'ı seçenekler belirli kaynak denetimi VSPackage'ı ayarlamak için menü öğeleri, menü grupları, araç pencerelerini, araç çubukları ve gerekli herhangi bir UI gibi kendi kullanıcı Arabirimi öğeleri belirtmeniz gerekir. Bu kullanıcı Arabirimi öğeleri, statik veya dinamik olarak etkinleştirilebilir. Statik kullanıcı Arabirimi öğeleri tanımlanmış bir *.vsct* dosya ve VSPackage'ı veya yüklü olup olmadığını görüntülenir. Dinamik kullanıcı Arabirimi öğeleri olabilir görünür bir komuta UI bağlama bağlı olarak gibi <xref:EnvDTE.Constants.vsContextNoSolution>, veya yapılan bir çağrının sonucu olarak <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi. Dinamik kullanıcı Arabirimi öğeleri görünürlüğünü VSPackages Gecikmeli yüklemeyi stratejisini ile uyumludur.  
   
 ## <a name="ui-constraints-on-source-control-vspackages"></a>Kaynak denetimi VSPackage'ları kısıtlamalar kullanıcı Arabirimi  

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81f0e9bb20e7024a06c2db7c073b4d2a1d92fecc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd628869d8a642cc6debad726f6c82df71a3b1ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014035"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>DLL'ler ve yürütülebilir dosyalar modüller penceresini görüntüleyin (C#, C++, Visual Basic F#)
  

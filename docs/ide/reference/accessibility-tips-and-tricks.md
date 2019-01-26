@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010395"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 
@@ -51,7 +51,7 @@ Visual Studio IDE, birçok araç pencereleri gibi araç çubukları sahiptir. A�
 
 |Özellik|Açıklama|Tuş bileşimi|
 |-------------|-----------------| - |
-|IDE araç çubukları|Standart araç çubuğundaki ilk düğmeyi seçin.|**ALT**, **CTRL** + **SEKMESİ**|
+|IDE araç çubukları|Standart araç çubuğundaki ilk düğmeyi seçin.|**ALT**, **CTRL** + **TAB**|
 |Araç penceresi araç çubukları|Araç penceresi araç çubuklarını odağı taşıyın. <br> <br> **NOT:** Bu, çoğu araç pencerelerinin, ancak yalnızca odak araç penceresinde olduğunda çalışır. Ayrıca, ALT tuşunu önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin, ALT tuşunu seçerek önce kısa bir süre için SHIFT tuşunu basılı gerekir.|**SHIFT** + **ALT**|
 |Araç Çubukları|Sonraki araç ilk öğenin (araç odağa sahip olduğunda) gidin.|**CTRL** + **SEKMESİ**|
 
