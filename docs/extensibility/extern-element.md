@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bac2f7e5611e8e87dd3ad6c268c0fd2ea6292c14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924197"
 ---
 # <a name="extern-element"></a>Extern öğesi
 Extern öğesi herhangi bir dış başlığını başvurur (*.h*) ile birleştirmek için dosyaları *.vsct* dosya derleme zamanında. VSCT derleyici için verilen ya da başvurduğu yoluna birleştirilecek dosyaları olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Diğer dosyalar olabilir *.vsct* veya C++ üst bilgi dosyaları.  

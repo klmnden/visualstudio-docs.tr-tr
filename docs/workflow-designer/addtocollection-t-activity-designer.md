@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd8e92baa4192d0b40acdc1d51d01ea339b528c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc59628de24af3d0e4910f3ff566791a508127fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926756"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953545"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > etkinlik Tasarımcısı
 

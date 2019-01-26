@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Performans veri dosyalarını karşılaştırma | Microsoft Docs'
+title: 'Nasıl yapılır: Performans veri dosyalarını karşılaştırma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743184a0f28df90e703ce355ecf5c2642036d2ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 868ee74ba01014514f5b6bec10fba0fc044f34e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928548"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Nasıl Yapılır: Performans veri dosyalarını karşılaştırma
+# <a name="how-to-compare-performance-data-files"></a>Nasıl yapılır: Performans veri dosyalarını karşılaştırma
 İki farklı profil oluşturucu veri dosyalarının sonuçları karşılaştırmak (. *Vsp* veya. *vsps*) bir karşılaştırması ("fark") oluşturarak, rapor veya görüntüleyin. Farklar, performans gerilemeleri ve bir profil oluşturma oturumundan diğerine oluştu iyileştirmeleri karşılaştırmasını gösterir.  
   
  Fark rapor verilerin tablo bir görünümünü sunar. Tablo, delta veya taban çizgisinden Değiştir sunar. Bu, eski değeri, temel değeri ve sonuç değeri arasındaki farkı yeni analiz belirleyerek hesaplanır.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bacf652d1fd691f17e721851b5b49d0da7acca0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb47398b4627558c6f00935b1e7819f06ed6302
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935091"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage’lardaki Kaynaklar
 Yerel Uydu DLL'leri kullanıcı Arabirimi, yönetilen Uydu DLL'leri, veya bir yönetilen VSPackage yerelleştirilmiş kaynaklar ekleyebilirsiniz.  
@@ -87,4 +87,4 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPackage'ları yönetme](../../extensibility/managing-vspackages.md)   
- [MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   
+ [MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   

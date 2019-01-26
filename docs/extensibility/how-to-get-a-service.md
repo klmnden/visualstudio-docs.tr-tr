@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Hizmet alma | Microsoft Docs'
+title: 'Nasıl yapılır: Hizmet alma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e848b3e54d1e3beb6b9681112cd55b74caa6a482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949875"
 ---
-# <a name="how-to-get-a-service"></a>Nasıl Yapılır: Hizmet alma
+# <a name="how-to-get-a-service"></a>Nasıl yapılır: Hizmet alma
 Genellikle farklı özelliklere erişmek için Visual Studio Hizmetleri almanız gerekir. Genel olarak, Visual Studio hizmeti, kullanabileceğiniz bir veya daha fazla arabirimleri sağlar. VSPackage çoğu Hizmetleri elde edebilirsiniz.  
   
  Öğesinden türetilen herhangi bir VSPackage <xref:Microsoft.VisualStudio.Shell.Package> ve, doğru tarihli için herhangi bir genel hizmeti isteyebilir. Çünkü `Package` sınıfının Implements <xref:System.IServiceProvider>, türetilen herhangi bir VSPackage `Package` de bir hizmet sağlayıcısıdır.  

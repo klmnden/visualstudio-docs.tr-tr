@@ -13,15 +13,15 @@ helpviewer_keywords:
 - kernel debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8a0e615f1283a1aaf742a70961c26c3b6b35037
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c35910a7682d4e9a6d848f270dd8d6c86e4bd850
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832837"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954156"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Birincile hata ayıklama&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t
 Yönetilen kod hata ayıklaması yaparken, aşağıdaki hata iletisini alabilirsiniz:  

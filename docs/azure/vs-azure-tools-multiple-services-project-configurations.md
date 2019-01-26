@@ -2,7 +2,7 @@
 title: Birden çok hizmet yapılandırması'nı kullanarak Azure projenizi yapılandırma | Microsoft Docs
 description: Bir Azure bulut hizmeti projesi ServiceDefinition.csdef ve ServiceConfiguration.Local.cscfg ServiceConfiguration.Cloud.cscfg dosyaları değiştirerek yapılandırmayı öğrenin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 1df5ce686fef0a48f9bd58cb966332d7d8c00d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e12c7c321022672283c2e202829d53fcebacfe02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924171"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 
@@ -88,7 +88,7 @@ Hizmet yapılandırması güncelleştirme hakkında daha fazla bilgi için bkz [
 Bir web rolü, 80 numaralı bağlantı noktasında genellikle tek bir HTTP uç noktası vardır. Bir çalışan rolü, diğer taraftan, HTTP, HTTPS veya TCP uç noktaları herhangi bir sayıda olabilir. Uç noktalar dış istemciler için kullanılabilir olan giriş uç noktaları veya hizmet üzerinde çalışan diğer rollerin kullanılabilir iç uç nokta olabilir.
 
 - Dış istemciler ve Web tarayıcıları için bir HTTP uç noktası kullanılabilir olması için giriş uç noktası türü değiştirme ve bir ad ve bir genel bağlantı noktası numarası belirtin.
-- Dış istemciler ve Web tarayıcıları için HTTPS uç noktasının kullanılabilir olması için uç nokta türüne değiştirin **giriş**, bir ad, bir genel bağlantı noktası numarası ve bir yönetim sertifikası adı belirtin. Sertifika üzerinde tanımlamalıdır **sertifikaları** bir yönetim sertifikası belirtebilmeniz için önce özellik sayfası. 
+- Dış istemciler ve Web tarayıcıları için HTTPS uç noktasının kullanılabilir olması için uç nokta türüne değiştirin **giriş**, bir ad, bir genel bağlantı noktası numarası ve bir yönetim sertifikası adı belirtin. Sertifika üzerinde tanımlamalıdır **sertifikaları** bir yönetim sertifikası belirtebilmeniz için önce özellik sayfası.
 - Bir uç nokta diğer rolleri bulut hizmetindeki iç erişimi için kullanılabilir yapmak için uç nokta türü için iç değiştirmek ve bir ad ve bu uç nokta için olası özel bağlantı noktalarını belirtin.
 
 ## <a name="local-storage-page"></a>Yerel depolama sayfası

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c4fb207fc5404c0540324a3d32281db14cc6ac65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34e9358dbe84f93e107a28298e6657df801ea6f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829322"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938951"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Nasıl Yapılır: Bir web performans testi eklentisi oluşturma
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Nasıl yapılır: Bir web performans testi eklentisi oluşturma
 
 Web performans testleri eklentileri yalıtmak ve ana bildirim deyimleri, web performans testinde dışındaki kod yeniden kullanımını etkinleştirin. Özelleştirilmiş web performans testi eklentisi web performans testini çalıştırma gibi bazı kod çağırmak için bir yol sunar. Web performans testi eklentisi, her test yinelemesi için bir kez çalıştırılır. Testi Eklentisi PreRequest veya PostRequest yöntemlerini geçersiz kılarsanız, ayrıca, bu istek eklentileri önce veya sonra her bir istek sırasıyla çalışır.
 

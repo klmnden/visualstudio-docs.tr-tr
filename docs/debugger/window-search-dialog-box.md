@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a57e0bacdbe12b889879eaca417127953f90beb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc95b38e755ec9d8e1b14be3c1045d5be0f0bd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951501"
 ---
 # <a name="window-search-dialog-box"></a>Pencere Arama İletişim Kutusu
 Bulmak ve belirli bir pencere içinde düğümü seçmek için bu iletişim kutusunu kullanın [Windows görünümü](../debugger/windows-view.md). Bu iletişim kutusunu görüntülemek için Windows görünüm penceresine odağı Taşı. Ardından **Bul penceresi** gelen **arama** menüsü.  

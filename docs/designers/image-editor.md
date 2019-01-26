@@ -8,15 +8,15 @@ f1_keywords:
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be73a9d17125c1b0186afbb12a20ce07c899ebe5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935221"
 ---
 # <a name="image-editor"></a>Görüntü düzenleyicisi
 
@@ -30,13 +30,13 @@ Kullanabileceğiniz **Resim Düzenleyicisi** DirectX uygulaması geliştirmede k
 
 |Biçim adı|Dosya Adı Uzantısı|
 |-----------------| - |
-|Taşınabilir Ağ Grafikleri|*.PNG*|
+|Taşınabilir Ağ Grafikleri|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |Doğrudan çizim yüzeyi|*.DDS*|
 |Grafik Değişim Biçimi|*.gif*|
 |Bit eşlem|*.bmp*, *.dib*|
 |Etiketli Resim dosyası biçimi|*.tif*, *.tiff*|
-|TGA (Targa)|*.TGA*|
+|TGA (Targa)|*.tga*|
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
@@ -73,7 +73,7 @@ Bit eşlem resim biçimi. 24 bit renk destekleyen bir sıkıştırılmamış gö
 
 Grafik Değişim Biçimi (GIF) görüntü biçimi. 256 renk destekler LZW sıkıştırılmış, kayıpsız bir görüntü biçimi. Uygun fotoğraflar ve renk ayrıntısını önemli miktarda var, ancak yüksek düzeyde bir renk modellenmiş sahip düşük-color görüntüler için iyi sıkıştırma oranları sağlar görüntüler.
 
-**JPG Resmi (.jpg)**
+**JPG Image (.jpg)**
 
 Birleşik Fotoğraf Experts grubu (JPEG) görüntü biçimi. 24 bit renk destekleyen ve renk modellenmiş yüksek derecede sahip görüntülerin genel amaçlı sıkıştırma için uygun bir yüksek oranda sıkıştırılmış, kayıplı görüntü biçimi.
 
@@ -125,7 +125,7 @@ Durumunu etkileyen komutlar **Resim Düzenleyicisi** bulunan **resim düzenleyic
 |**Kılavuz**|Etkinleştirir veya piksel sınırları gösteren Kılavuzu devre dışı bırakır. Görüntüye yakınlaştırma kadar kılavuz görünmeyebilir.|
 |**Sonraki MIP düzeyini görüntüle**|MIP harita zincirindeki büyük sonraki MIP düzeyine etkinleştirir. Tasarım yüzeyinde etkin MIP düzeyi görüntülenir. Bu öğe yalnızca MIP düzeyleri dokular için kullanılabilir.|
 |**Önceki MIP düzeyini görüntüle**|MIP harita zincirdeki sonraki daha küçük MIP düzeyine etkinleştirir. Tasarım yüzeyinde etkin MIP düzeyi görüntülenir. Bu öğe yalnızca MIP düzeyleri dokular için kullanılabilir.|
-|**Kırmızı kanal**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alfa kanalı**|Etkinleştirir veya belirli renk kanal devre dışı bırakır. **Not:**  Sistematik olarak etkinleştirme veya renk kanallarını devre dışı bırakarak, bir veya daha fazlası için ilgili sorunları ayırabilirsiniz. Örneğin, yanlış Alfa Saydamlığı tanımlayabilirsiniz.|
+|**Kırmızı kanal**<br /><br /> **Yeşil kanal**<br /><br /> **Mavi kanal**<br /><br /> **Alpha Channel**|Etkinleştirir veya belirli renk kanal devre dışı bırakır. **Not:**  Sistematik olarak etkinleştirme veya renk kanallarını devre dışı bırakarak, bir veya daha fazlası için ilgili sorunları ayırabilirsiniz. Örneğin, yanlış Alfa Saydamlığı tanımlayabilirsiniz.|
 |**Arka plan**|Etkinleştirir veya arka plan resmi saydam kısımları aracılığıyla görüntülenmesini devre dışı bırakır. Aşağıdaki seçeneklerden birini seçerek arka planı nasıl görüntüleneceğini yapılandırabilirsiniz:<br /><br /> **Dama Tahtası**<br /> Belirtilen arka plan rengi ile birlikte yeşil renk, arka planda bir dama tahtası desenini görüntülemek için kullanır. Resmin saydam kısımları daha belirgin hale getirmek için bu seçeneği kullanabilirsiniz.<br /><br /> Beyaz arka plan<br /> Rengi beyaz arkaplan görüntülenmesi için kullanır.<br /><br /> Siyah arka plan<br /> Arka plan görüntülemek için siyah renk kullanır.<br /><br /> Arka plana animasyon ekle<br /> Dama Tahtası desenini yavaş yatay kaydırır. Resmin saydam kısımları daha belirgin hale getirmek için bu seçeneği kullanabilirsiniz.|
 |**Özellikler**|Alternatif olarak, açar veya kapatır **özellikleri** penceresi.|
 |**Gelişmiş**|Ek komutlar ve seçenekler içerir.<br /><br /> **Filtreler**<br /><br /> Birçok ortak görüntü filtreler sağlar: **Siyah beyaz**, **bulanıklaştıran**, **parlaklaştırma**, **koyu**, **kenar algılama**, **kabartma**, **Renkleri ters çevir**, **Ripple**, **sepya**, ve **keskinleştirin**.<br /><br /> **Grafik motorları**<br /><br /> **D3d11 ile işle**<br /> İşlemek için Direct3D 11 kullanır **Resim Düzenleyicisi** tasarım yüzeyi.<br /><br /> **D3d11warp ile işle**<br /> İşlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır **Resim Düzenleyicisi** tasarım yüzeyi.<br /><br /> **Araçlar**<br /><br /> **Yatay Çevir**<br /> Görüntü, yatay ya da x ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Dikey Çevir**<br /> Görüntü, dikey ya da y ekseni etrafında kendisini veya sırasını değiştirir.<br /><br /> **Mips üret**<br /> MIP düzeyleri görüntü oluşturur. MIP düzeyleri zaten varsa, en büyük MIP düzeyini yeniden oluşturulur. Daha küçük MIP düzeylerine yapılan tüm değişiklikler kaybolur. Ürettiğiniz MIP düzeylerini kaydetmek için kullanmanız gerekir *.dds* görüntüsünü kaydetmek için kullanılan biçim.<br /><br /> **Görünümü**<br /><br /> **Kare hızı**<br /> Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır. **İpucu:** Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.|
@@ -215,7 +215,7 @@ Bir bölge seçin, sonra seçimi işaretin boyutunu değiştirerek veya görünt
 
 Aşağıdaki tablo, geçerli değiştirici tuş birleşimlerini açıklar:
 
-|CTRL|Shift|Alt|Açıklama|
+|Ctrl|Shift|Alt|Açıklama|
 |----------|-----------|---------|-----------------|
 ||||Seçili bölge içeriğini yeniden boyutlandırır.|
 ||**Kaydırma**||Orantılı olarak seçili bölge içeriğini yeniden boyutlandırır.|
@@ -235,7 +235,7 @@ Aşağıdaki tabloda, araç özellikleri açıklanmaktadır:
 |Aracı|Özellikler|
 |----------|----------------|
 |Tüm araçlar ve seçimleri|**Döndür:**<br /> Seçimi veya aracı etkisi saat yönünde döndürüldüğüne derece miktarı tanımlar.|
-|**Kalem**, **fırça**, **kabı**, **Silgi**|**Kalınlığı**<br /> Araç tarafından etkilenen alanının boyutunu tanımlar.|
+|**Pencil**, **Brush**, **Airbrush**, **Eraser**|**Kalınlığı**<br /> Araç tarafından etkilenen alanının boyutunu tanımlar.|
 |**Metin**|**Yumuşatma**<br /> Yumuşatılmış kenarları metin çizer. Bu metin daha sorunsuz bir görünümünü sağlar.<br /><br /> **Değer**<br /> Çizilecek metin.<br /><br /> **Yazı tipi**<br /> Metin çizmek için kullanılan yazıtipi.<br /><br /> **Boyutu**<br /> Metin boyutu.<br /><br /> **Kalın**<br /> Yazı tipinin kalın yapar.<br /><br /> **İtalik**<br /> İtalik yazı yapar.<br /><br /> **Altı çizili**<br /> Altı çizili yazı tipi yapar.|
 |**2B temel**|**Yumuşatma**<br /> Yumuşatılmış kenarları sahip temelleri çizer. Bu onları daha sorunsuz bir görünümünü sağlar.<br /><br /> **Kalınlığı**<br /> Sınırları temel forms çizginin kalınlığını tanımlar.<br /><br /> **Yarıçap X**<br /> (Yalnızca Yuvarlatılmış dikdörtgen) Yuvarlama RADIUS temel üst ve alt kenarları için tanımlar.<br /><br /> **Yarıçap Y**<br /> (Yalnızca Yuvarlatılmış dikdörtgen) Yuvarlama RADIUS temel sol ve sağ kenarları için tanımlar.|
 |**Kalem**, **fırça**, **kabı**, **2B temel**|**Kanallar**<br /> Etkinleştirir veya belirli renk kanallarını görüntüleme ve çizim için devre dışı bırakır. Varsa **görünümü** kanal için bir belirli renk kanal olarak ayarlı, görüntüde görünür; Aksi takdirde, görünür değil. Varsa **çizmek** ayarlanmış belirli renk kanal için kanal işlemleri çizim tarafından etkilenen; Aksi takdirde, bu değildir.|
@@ -252,23 +252,23 @@ Aşağıdaki tabloda, araç özellikleri açıklanmaktadır:
 |Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**ESC** (çıkış)|
 |Yakınlaştır|**CTRL**+**fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**PageUp**<br /><br /> Artı işareti (**+**)|
-|Uzaklaştır|**CTRL**-**fare tekerleği geriye doğru**<br /><br /> **CTRL**-**PageDown**<br /><br /> Eksi işareti (**-**)|
+|Uzaklaştır|**CTRL**-**fare tekerleği geriye doğru**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Eksi işareti (**-**)|
 |Görüntü yukarı kaydır|**Fare tekerleği geriye doğru**<br /><br /> **PageDown**|
 |Görüntüyü aşağı kaydır|**Fare tekerleği ileriye doğru**<br /><br /> **PageUp**|
 |Görüntünün sola kaydır|**Shift**+**fare tekerleği geriye doğru**<br /><br /> **Fare tekerleği sol**<br /><br /> **Shift**+**PageDown**|
 |Görüntü sağa kaydır|**Shift**+**fare tekerleği ileriye doğru**<br /><br /> **Fare tekerleği sağ**<br /><br /> **Shift**+**PageUp**|
 |Gerçek boyutuna Yakınlaştır|**CTRL**+**0** (sıfır)|
-|Resmi pencereye sığdır|**CTRL**+**G**, **Ctrl**+**F**|
+|Resmi pencereye sığdır|**Ctrl**+**G**, **Ctrl**+**F**|
 |Pencere genişliği Sığdır görüntüye|**CTRL**+**G**, **Ctrl**+**ediyorum**|
-|Kılavuzu Aç/Kapat|**CTRL**+**G**, **Ctrl**+**G**|
-|Geçerli seçimi görüntüsünü Kırp|**CTRL**+**G**, **Ctrl**+**C**|
-|Görünümü İleri (daha ayrıntılı) MIP düzeyi|**CTRL**+**G**, **Ctrl**+**6**|
-|Görüntüleme önceki (alt ayrıntılı) MIP düzeyi|**CTRL**+**G**, **Ctrl**+**7**|
-|İki durumlu kırmızı renk kanalı|**CTRL**+**G**, **Ctrl**+**1**|
-|İki durumlu yeşil renk kanalı|**CTRL**+**G**, **Ctrl**+**2**|
-|İki durumlu mavi renk kanalı|**CTRL**+**G**, **Ctrl**+**3**|
-|İki durumlu (saydam) alfa kanalı|**CTRL**+**G**, **Ctrl**+**4**|
-|Alfa dama tahtası desenini Aç/Kapat|**CTRL**+**G**, **Ctrl**+**B**|
+|Kılavuzu Aç/Kapat|**Ctrl**+**G**, **Ctrl**+**G**|
+|Geçerli seçimi görüntüsünü Kırp|**Ctrl**+**G**, **Ctrl**+**C**|
+|Görünümü İleri (daha ayrıntılı) MIP düzeyi|**Ctrl**+**G**, **Ctrl**+**6**|
+|Görüntüleme önceki (alt ayrıntılı) MIP düzeyi|**Ctrl**+**G**, **Ctrl**+**7**|
+|İki durumlu kırmızı renk kanalı|**Ctrl**+**G**, **Ctrl**+**1**|
+|İki durumlu yeşil renk kanalı|**Ctrl**+**G**, **Ctrl**+**2**|
+|İki durumlu mavi renk kanalı|**Ctrl**+**G**, **Ctrl**+**3**|
+|İki durumlu (saydam) alfa kanalı|**Ctrl**+**G**, **Ctrl**+**4**|
+|Alfa dama tahtası desenini Aç/Kapat|**Ctrl**+**G**, **Ctrl**+**B**|
 |Düzensiz seçim aracı arasında geçiş|**L**|
 |Değnek seçim aracını geçiş|**M**|
 |Kalem aracı geç|**P**|

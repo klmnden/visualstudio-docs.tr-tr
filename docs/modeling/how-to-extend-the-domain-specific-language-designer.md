@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Alana Özgü Dil Tasarımcısını Genişletme'
+title: 'Nasıl yapılır: Alana Özgü Dil Tasarımcısını Genişletme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d1cec12a7a97ffa23f2eb75ffd9fc53da8ad2ed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ecc34d0e64b020541940ebffb854f733ce8b39d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940712"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918634"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl Yapılır: Alana Özgü Dil Tasarımcısını Genişletme
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl yapılır: Alana Özgü Dil Tasarımcısını Genişletme
 
 DSL tanımlarına düzenlemek için kullandığınız Tasarımcı için Uzantılar yapabilirsiniz. Menü komutları, ekleme, işleyiciler için sürükleyin ve hareketlerini ve belirli tür değerleri veya ilişkileri değiştirdiğinizde tetiklenen kuralları ekleme yapabileceğiniz uzantı türleri. Uzantılar, paketlenmiş bir Visual Studio Tümleştirme Uzantısı (VSIX olarak) ve diğer kullanıcılara dağıtılır.
 

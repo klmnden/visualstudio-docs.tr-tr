@@ -1,5 +1,5 @@
 ---
-title: 'CA1814: Basit diziler çok boyutlu dizilere tercih edin'
+title: 'CA1814: Çok boyutlu diziler yerine basit dizileri tercih edin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 281f29c82eed9133f1ee89ee7ac369bafdf6603a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ae26b9c9fdce13566a1110d9dda9554556efb3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926702"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Basit diziler çok boyutlu dizilere tercih edin
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Çok boyutlu diziler yerine basit dizileri tercih edin
 
 |||
 |-|-|

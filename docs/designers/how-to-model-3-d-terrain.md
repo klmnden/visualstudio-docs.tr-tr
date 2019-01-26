@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Model 3B Arazi'
+title: 'Nasıl yapılır: Model 3B Arazi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65590bb387b2f752a11f60bae82891a8ea3a713f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab1439ecc388624ef9027ac726a55c8871876a83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953084"
 ---
-# <a name="how-to-model-3d-terrain"></a>Nasıl Yapılır: 3B arazi modeli oluşturma
+# <a name="how-to-model-3d-terrain"></a>Nasıl yapılır: 3B arazi modeli oluşturma
 
 Bu makalede, 3B Arazi modeli oluşturmak için Model Düzenleyicisi'ni kullanma gösterilmektedir.
 

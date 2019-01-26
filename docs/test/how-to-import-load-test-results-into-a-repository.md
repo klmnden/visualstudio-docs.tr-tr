@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir depoda alma yük testi sonuçları'
+title: 'Nasıl yapılır: Bir depoda alma yük testi sonuçları'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 491c09a73d1a6a1ff8d4c5356901aba21c7ed140
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c264a709b8eef3068be4440c21573b245d356cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923577"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Nasıl Yapılır: Bir depoda alma yük testi sonuçları
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Nasıl yapılır: Bir depoda alma yük testi sonuçları
 
 Çalıştırma sırasında toplanan bilgileri, bir yük testi çalıştırdığınızda, yük testi sonuçları deposunda depolanır. Yük testi sonuçları deposu, performans sayacı verileri ve hatalar hakkında bilgi içerir. Daha fazla bilgi için [Yönet yük testi sonuçları yük testi sonuçları deposunda](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

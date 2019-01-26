@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701bb929bae7b5103e274810cf0ad3a222118781
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951280"
 ---
 # <a name="elimination-of-sak-files"></a>Saydamlığından ~ SAK dosyalarının
 Kaynak Denetimi Eklentisi API 1.2 içindeki *~ SAK* özellik bayraklarının dosyalar değiştirildi ve bir kaynak olup olmadığını algılayan yeni işlevleri denetim eklentisini destekler *MSSCCPRJ* dosya ve paylaşımlı kullanıma Almalarla.  

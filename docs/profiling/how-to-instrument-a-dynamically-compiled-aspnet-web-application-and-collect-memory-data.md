@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Profiler komut satırını kullanarak dinamik olarak derlenmiş ASP.NET web uygulamasını ve bellek verileri toplamak izleme | Microsoft Docs'
+title: 'Nasıl yapılır: Profiler komut satırını kullanarak dinamik olarak derlenmiş ASP.NET web uygulamasını ve bellek verileri toplamak izleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: da1c1ad76802496108284dcb6fc037bfd7443180
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0098db138aa476a9ec66c7d9f79f6c112f256e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940920"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923918"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl Yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET web uygulamasını ve profil oluşturucu komut satırını kullanarak bellek verilerini toplamak
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET web uygulamasını ve profil oluşturucu komut satırını kullanarak bellek verilerini toplamak
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ayrıntılı .NET bellek ayırma ve nesne yaşam süresi verilerini dinamik olarak derlenmiş toplamak için profil oluşturma araçları komut satırı araçlarının [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını izleme profili oluşturma yöntemi kullanarak.  
 
 > [!NOTE]

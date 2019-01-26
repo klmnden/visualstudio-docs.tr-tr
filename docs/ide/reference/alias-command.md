@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa8b14618085ddae67616f5ef3e30fb1b030e45a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7572a77568ce6d3e8e1a2da721d6d851ac2d92cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933165"
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
 Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.

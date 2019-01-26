@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 956aa3e87863ca39127c1f8579128f7cb408977c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f311705a6cb898ee9bff81a3bbad3890aea92c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947315"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] böylece kullanıcı o türden bir dosyayı açtığında uygulamayı otomatik olarak başlatılacak bir veya daha fazla dosya adı uzantılarına sahip uygulamalar ilişkilendirilebilir. Dosya adı uzantısı desteği için ekleme bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamasıdır basit.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma  

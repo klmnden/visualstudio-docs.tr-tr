@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953191"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Hızlı Başlangıç: Bir Cookiecutter şablonundan proje oluşturma
 
@@ -26,7 +26,7 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
 1. Visual Studio'yu başlatın.
 
-1. Seçin **dosya** > **yeni** > **Cookiecutter gelen**. Bu komut şablonları burada göz atabilirsiniz Visual Studio'da bir pencere açılır. 
+1. Seçin **dosya** > **yeni** > **Cookiecutter gelen**. Bu komut şablonları burada göz atabilirsiniz Visual Studio'da bir pencere açılır.
 
     ![Cookiecutter şablonundan yeni proje](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
 1. İşlem tamamlandığında, ileti gördüğünüz **dosyaları başarıyla oluşturuldu.** Komutu seçin **Çözüm Gezgini'nde açın** projeyi açmak için.
 
-1. Tuşuna **Ctrl**+**F5** veya **hata ayıklama** > **hata ayıklama olmadan Başlat** programı çalıştırmak için. 
+1. Tuşuna **Ctrl**+**F5** veya **hata ayıklama** > **hata ayıklama olmadan Başlat** programı çalıştırmak için.
 
     ![Python sklearn sınıflandırıcı cookiecutter şablonu projenin çıkışı](media/projects-from-cookiecutter4.png)
 

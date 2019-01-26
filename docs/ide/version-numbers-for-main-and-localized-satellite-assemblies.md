@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5489aea1-57b4-4561-9bb4-24d490269602
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a22978ee432f4de261932808589e92c9738a8b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6776df2bd0edf6fc639604e6b00502dbf83f657
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880487"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925558"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Ana ve yerelleştirilmiş yardımcı derlemeler için sürüm numaraları
 <xref:System.Resources.SatelliteContractVersionAttribute> Sınıfını kullanan bir ana derlemeye yerelleştirilmiş kaynakları Resource Manager yoluyla sürüm oluşturma desteği sağlar. Uygulama <xref:System.Resources.SatelliteContractVersionAttribute> bir uygulamanın ana derlemeye güncelleştirin ve derlemenin uydu derlemelerini güncelleştirmeden yeniden olanak tanır. Örneğin, kullanabileceğiniz <xref:System.Resources.SatelliteContractVersionAttribute> yeni kaynakların yeniden oluşturulmasını ve uydu bütünleştirilmiş kodlarınızı yeniden dağıtmaya gerek olmadan tanıtan olmayan bir hizmet paketi sınıfı. Kullanılabilir olması, yerelleştirilmiş kaynaklar için ana derlemenin uydu sözleşme sürümü eşleşmelidir <xref:System.Reflection.AssemblyVersionAttribute> uydu bütünleştirilmiş kodlarınızı sınıfı. Bir tam sürüm numarası belirtin <xref:System.Resources.SatelliteContractVersionAttribute>; gibi joker karakterlere "*" izin verilmez. Daha fazla bilgi için [almak kaynakları](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

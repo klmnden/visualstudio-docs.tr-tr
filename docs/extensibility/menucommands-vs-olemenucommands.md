@@ -7,13 +7,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-manager: douge
-ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0923b179c3a2237c6923a7f889c802239d824fb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926245"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935715"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Öğesinden türetme, menü komutlarını oluşturabilirsiniz <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesne ve ilgili olay işleyicileri uygulama. Çoğu durumda, kullanabileceğiniz <xref:System.ComponentModel.Design.MenuCommand>VSPackage proje şablonu yapar, ancak bazen kullanmanız gerekebilir gibi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  

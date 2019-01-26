@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64cab3dde38f3008a097e89b17b2d61921332ed6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcbee53b2f3d0a5a4fc45ab7e55bbb2a0cbe106a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931134"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 Meta verileri ve çekirdek sembol arabirimleri doğrudan erişimi olan bir sembol sağlayıcısını temsil eder.  
