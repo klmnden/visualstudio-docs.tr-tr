@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0f82526a217325e0003bfb66c50f9df24d68bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c1fe16951bee79dbda033101043406491d4a56f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991976"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Bir bölüm katkı açıklayan alır verileri, diğer bir deyişle, bitişik bir bellek bloğu tarafından bir derlenecek görüntüye katkıda.  

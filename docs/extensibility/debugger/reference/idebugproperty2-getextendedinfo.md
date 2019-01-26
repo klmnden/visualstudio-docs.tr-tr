@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0366d547dea7f181c42fd5cccbacb568418c203
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c32ae9b5dfbf2559eeb1ec58c1a291a4865d8391
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003208"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Genişletilmiş özelliği bilgilerini.  
@@ -56,7 +56,7 @@ int GetExtendedInfo ( 
 |Ad|GUID|Açıklama|  
 |----------|----------|-----------------|  
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Döndürür bir `IUnknown` belge arabirimi. Genellikle, [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) arabirimi elde edilebilir buradan `IUnknown` arabirimi.|  
-|guidCodeContext|{e2fc65e 56ce - 11d 1-b528-00aax004a8797}|Döndürür bir `IUnknown` arabirimi belge içeriği. Genellikle, [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) arabirimi elde edilebilir buradan `IUnknown` arabirimi.|  
+|guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Döndürür bir `IUnknown` arabirimi belge içeriği. Genellikle, [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) arabirimi elde edilebilir buradan `IUnknown` arabirimi.|  
 |guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Genellikle bir ifade değerlendiricisi tarafından uygulanan özel bir görüntüleyicinin CLSID içeren bir dize döndürür.|  
 |guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Bu özellik bir yönetilen kodun yerel adresi temsil ediyorsa, istenen Yuva sayısını temsil eden 32 bit bir sayı döndürür.|  
 |guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|İmza özelliği nesneyle ilişkili değişken içeren bir dize döndürür.|  

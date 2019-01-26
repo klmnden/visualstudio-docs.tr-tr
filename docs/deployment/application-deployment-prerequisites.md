@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995693"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama dağıtımının önkoşulları
 
@@ -76,9 +76,9 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması için 
 | - | - |
 | **-?, -h, - Yardım** | Yardım iletişim kutusunu görüntüler. |
 | **-url, - componentsurl** | Saklı URL'yi ve bu kurulum bileşenleri URL'sini gösterir. |
-| **-url =** `location` | URL'sini ayarlar burada *Setup.exe* arar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. |
+| **-url=** `location` | URL'sini ayarlar burada *Setup.exe* arar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. |
 | **-componentsurl =** `location` | URL'sini ayarlar burada *Setup.exe* bağımlılıklar için aşağıdaki gibi görünür [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Zaman `true`, satıcının sitesinden tercih edilen konum bağımlılıkları indirir. Bu ayar geçersiz kılar **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**. |
+| **-homesite=** `true` **&#124;** `false` | Zaman `true`, satıcının sitesinden tercih edilen konum bağımlılıkları indirir. Bu ayar geçersiz kılar **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>İşletim sistemi desteği  
  Sınırlı işlevsellikle sağladıkları düşük bakım sunucu ortamı olarak Visual Studio önyükleyicisi Windows Server 2008 Sunucu Çekirdeği veya Windows Server 2008 R2 Server Core üzerinde desteklenmiyor. Örneğin, Sunucu Çekirdeği yükleme seçeneği, yalnızca tam .NET Framework'e bağlı Visual Studio özellikleri çalıştırılamaz .NET Framework 3.5 Sunucu Çekirdeği profilin destekler.  

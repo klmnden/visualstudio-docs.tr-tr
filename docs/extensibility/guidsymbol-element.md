@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a010a4ea3e135dab9d80cf84edf651df966bf271
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8b36df3fe4e546e8391d23ccadc33faf9f2a642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992886"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol öğesi
 `GuidSymbol` Öğeyi içeren bir menü, Grup veya komutu temsil eden GUID:ID çiftinin GUID. Kimliği geldiği bir `IDSymbol` öğesinde `GuidSymbol` öğesi. `GuidSymbol` Öğeye sahip bir `name` bulunan GUID için kolay bir ad sağlar özniteliği `value` özniteliği.  

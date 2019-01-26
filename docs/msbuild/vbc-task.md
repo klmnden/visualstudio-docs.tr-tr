@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969674"
 ---
 # <a name="vbc-task"></a>Vbc görevi
 Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağlantı kitaplıklarını (*.dll*), veya kod modüllerini (*.netmodule*). Daha fazla bilgi için *vbc.exe*, bkz: [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index).  

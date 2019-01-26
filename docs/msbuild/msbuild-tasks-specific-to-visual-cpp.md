@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9bfb0755c394bf7b3a0c8da5e125b4c3c0b1623
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0d6485ecec44bfafd286b4e0df6f1b476b219be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986429"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++'ye özgü MSBuild görevleri
 Görevler, derleme işlemi sırasında çalışan kodu sağlar. Visual C++ yüklü olduğunda, aşağıdaki görevleri ile birlikte yüklenen listelenenlere kullanılabilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](/cpp/build/msbuild-visual-cpp-overview).  

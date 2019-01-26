@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc7d567f-b655-4539-810c-6506e7852121
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a8356befd8afd6c3057ecf9005ce0af16d800b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02add685cc3045fedca5bff8c8bf5efde17d371e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846931"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945053"
 ---
 # <a name="timeline-caret"></a>Zaman Çizelgesi düzeltme işareti
 Bir noktası zaman çizelgesi üzerinde yürütülen bir iş parçacığı segmenti seçtiğinizde, bir zaman çizelgesi düzeltme işareti görünür. Geçerli yığın sekmesinde görüntülenen çağrı yığını zaman en yakın kesim tıklattığınız için olur. Giriş işaretini altında görüntülenir çağrı yığını ilişkilendirmek için kullanılan **geçerli** sekmesiyle bunu örneklendiğinde anlık. Giriş işaretini kullanıcı seçili konuma yakın çağrı yığını çağrı yığını kesin konumunu gösterir.  

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a14f2d38ddbb5f24ef3906ea00f7569629b1f64
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 32b39cbdd98aa58c369fed3dee7347dc66383b2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54268519"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042016"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve bir kaynağı uygulama
 Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adlı yeniden kullanılabilir varlıklarda depolanır. Stilleri öğesi özellikleri ayarlamanızı ve birden çok öğe arasında tutarlı bir görünüm için bu ayarları yeniden etkinleştirin. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) denetiminin görünümünü tanımlar ve ayrıca bir kaynak olarak uygulanabilir. Daha fazla bilgi için [hızlı başlangıç: Stil denetimleri](http://go.microsoft.com/fwlink/?LinkID=248239) ve [hızlı başlangıç: Denetim şablonları](http://go.microsoft.com/fwlink/?LinkID=247982).

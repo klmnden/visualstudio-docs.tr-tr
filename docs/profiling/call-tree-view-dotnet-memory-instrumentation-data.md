@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 51bdbe7f36b37ffbc0e1c911a8aa122cd3a44dd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0211dda6590591a8a701389e1f3a99a316dbe458
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037518"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Çağrı ağacı görünümü - .NET bellek izleme verileri
 Çağrı ağacı görünümü izleme metodunu kullanarak toplanan .NET bellek ayırma profil oluşturma verilerinin geçiş işlev yürütme yolları profili oluşturulan uygulamada görüntüler. Ağacının kökü, uygulamanın veya bileşenin içine giriş noktasıdır. Her işlev düğümü adlı, tüm işlevlere ve .NET bellek ve işlev için zamanlama verileri listeler.  

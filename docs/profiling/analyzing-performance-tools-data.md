@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521be9d9d0d4e6ecd34547219ef0d7aa81b402f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa0b3cfa9ef43e6e93058958c27d0d2992de723c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031658"
 ---
 # <a name="analyze-performance-tools-data"></a>Performans araçları verilerini analiz etme
 Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları görüntüleyip uygulama performans sorunlarını analiz etmek etkinleştirin. Bu bölümde, performans verileri incelemek için kullanılabilir görünümleri ve performans raporları hakkında genel bir bakış sağlar.  

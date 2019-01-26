@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Ürün bildirimi oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Ürün bildirimi oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39c24f35ec68fdfda173cf24d8018102a42ea81b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824606"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976556"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Nasıl Yapılır: Ürün bildirimi oluşturma
+# <a name="how-to-create-a-product-manifest"></a>Nasıl yapılır: Ürün bildirimi oluşturma
 Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluşturabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Paket bildirimi paketinin yerelleştirme özgü özelliklerini içerir. Bu dizeler, son kullanıcı lisans sözleşmelerini ve dil paketlerini içerir.  
   
  Ürün bildirimleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).  

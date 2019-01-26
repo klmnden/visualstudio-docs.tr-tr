@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 948b27aa9e2b800929d9f507535aee1395d45344
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e9949d158afb0dfd2f13a2ed62da34b3960e4a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871232"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997071"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName görevi
 Oluşturur bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-stili bildirim adından bir verilen *.resx* dosya adı veya diğer kaynak.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4f482a1e-e85f-4173-98de-8e5f7622554b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5376e0822d45bcfff238235e5256c484f48e29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7efaa94c24c6f814de5058865664cf7b1b106ba3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003324"
 ---
 # <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
 Bu satırı katkıda bulunan kaynak dosyası için bir benzersiz kaynak dosya tanımlayıcısı alır.  

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0ed047ed1c77638aed1128d8a73dc3347fd2e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4dde58462d1f9fd985b99a6abf943ee21de51a96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905578"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982955"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7. Adım: Formunuza iletişim kutusu bileşenleri ekleme
 Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan rengini seçin etkinleştirmek için bir <xref:System.Windows.Forms.OpenFileDialog> bileşeni ve bir <xref:System.Windows.Forms.ColorDialog> formunuza bileşen.

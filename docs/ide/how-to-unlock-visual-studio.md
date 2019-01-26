@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Visual Studio kilidini açma'
+title: 'Nasıl yapılır: Visual Studio kilidini açma'
 ms.date: 07/20/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2cf3980e92f6e95b058b51667f584492ecf9aea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44e2d7fab75527f6c038889656a9d132bd785324
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989084"
 ---
-# <a name="how-to-unlock-visual-studio"></a>Nasıl Yapılır: Visual Studio kilidini açma
+# <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
 Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum imzalama için 90 günlük deneme süresi genişletir. Visual Studio kullanmaya devam etmek için ya da IDE kilidini:
 

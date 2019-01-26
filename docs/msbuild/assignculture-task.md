@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d1a08ba56c9b8fb80182d2b02b12fb6a560b09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b67fb585c6e006b76417fec91d5eaf80288ba9a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001858"
 ---
 # <a name="assignculture-task"></a>AssignCulture görevi
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcı dizesi içerebilir öğelerinin bir listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üretir `Culture` karşılık gelen içeren kültür tanımlayıcısı. Örneğin, dosya adı *Form1.fr-fr.resx* bu görev meta verilerle aynı dosya adını içeren bir öğe oluşturur tanımlayıcı "fr-fr", katıştırılmış bir kültür bulunduğundan `Culture` eşit `fr-fr`. Görev, dosya adları listesini de dosya kaldırıldı kültürüyle üretir.  
@@ -72,8 +72,8 @@ Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanım
   
 |Öğe koleksiyonu|İçindekiler|  
 |---------------------|--------------|  
-|`OutAssignedFiles`|*MyResource1.fr.resx* (kültür = "fr")<br /><br /> *MyResource2.XX.resx* (ek meta veri yok)|  
-|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (kültür = "fr")|  
+|`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (ek meta veri yok)|  
+|`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|  
 |`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (ek meta veri yok)|  
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (kültür = "fr")<br /><br /> *MyResource2.XX.resx* (ek meta veri yok)|  
   

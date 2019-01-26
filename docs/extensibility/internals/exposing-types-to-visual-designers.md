@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 713b44c9ccf360af04086b32c121f7e26c0e67d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8330ab390a80f882ee8a72f04e70d50e55595752
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859376"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986845"
 ---
 # <a name="expose-types-to-visual-designers"></a>Türleri görsel tasarımcıların kullanıma sunma
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sınıfı ve tür tanımlarını tasarım zamanında bir görsel tasarımcı görüntülemek için erişiminiz olmalıdır. Geçerli proje (başvurular ve bunların bağımlılıklarını) tam bağımlılık kümesini içeren derlemeler önceden tanımlanmış kümesinden sınıfları yüklenir. Görsel tasarımcılar için gerekli erişim sınıfları ve özel araçları tarafından oluşturulan dosyaları içinde tanımlanan türler için de olabilir.  

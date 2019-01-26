@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırakma | Microsoft Docs'
+title: 'Nasıl yapılır: ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırakma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 611bb0d2c3c828be5f8eaa10f3baeaafca1c8f37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854782"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999983"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Nasıl Yapılır: ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırak
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Nasıl yapılır: ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırak
 
 Genellikle, bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir Web sunucusundan yükledikten hemen sonra otomatik olarak başlatılır. Güvenlik nedeniyle, bu davranışı devre dışı bırakmak ve kullanıcıların uygulamayı başlatacağı karar verebilir **Başlat** menü yerine. Aşağıdaki yordam, URL etkinleştirmeyi devre dışı bırakmak açıklar.
 

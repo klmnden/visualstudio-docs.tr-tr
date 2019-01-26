@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96230edb35c5dcfa0b0b85bc76ffebf7329d0ded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd10b658d7f217c9e76f2c82723af49f9754eb62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930615"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994426"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru eklerken NuGet karşı uzantı SDK kullanma
 
@@ -27,7 +27,7 @@ NuGet veya bir yazılım geliştirme seti (SDK) kullanarak Visual Studio projele
 
 Aşağıdaki tablo başvuru özelliklerinin bir SDK'sı NuGet başvuru özellikleriyle karşılaştırmanıza yardımcı olur.
 
-| Özellik | SDK desteği | SDK notları | NuGet desteği | NuGet notları |
+| Özellik | SDK desteği | SDK notları | NuGet Support | NuGet notları |
 | - | - | - |---------------| - |
 | Bir varlığı mekanizması başvuruyor ve tüm dosyaları ve işlevsellik sonra kullanılabilir. | Y | Kullanarak bir SDK'sı ekleme **başvuru Yöneticisi** iletişim kutusunu ve tüm dosyaları ve işlevleri geliştirme iş akışı sırasında kullanılabilir. | Y | |
 | MSBuild derlemeleri ve Windows meta verileri otomatik olarak kullanır (*.winmd*) dosyaları. | Y | SDK'de başvuruların derleyicinin otomatik olarak geçirilir. | Y | |

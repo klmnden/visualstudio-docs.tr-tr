@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea993233409f7df9f99b345184634e4de6e59618
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95167a5b9b07d7aa446a756e31c267925ee79349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852433"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012159"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild proje dosyası şema başvurusu
 Tüm bir tablo sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML Şeması öğeleri kullanılabilir öznitelikler ve alt öğeleri.  
@@ -35,7 +35,7 @@ Tüm bir tablo sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includ
 |[Öğe Seç (MSBuild)](../msbuild/choose-element-msbuild.md)|Aksi takdirde<br /><br /> Ne zaman|--|  
 |[İçeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md)|--|Koşul<br /><br /> Proje|  
 |[Importgroup öğesi](../msbuild/importgroup-element.md)|İçeri Aktarma|Koşul|  
-|[Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)|*Itemmetadata*|Koşul<br /><br /> Hariç tutma<br /><br /> Şunları Dahil Et:<br /><br /> Kaldır|  
+|[Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|Koşul<br /><br /> Hariç tutma<br /><br /> Şunları Dahil Et:<br /><br /> Kaldır|  
 |[Itemdefinitiongroup öğesi (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Öğesi*|Koşul|  
 |[ItemGroup öğesi (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Öğesi*|Koşul|  
 |[Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Öğesi*|Koşul|  

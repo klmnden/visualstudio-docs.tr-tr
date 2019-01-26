@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ClickOnce uygulaması için özel izinleri ayarlama | Microsoft Docs'
+title: 'Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfacf983af73ba8acb1f8f9ed2705ad5cd8e544
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25abaf7010178110891ee7a5e75161cde56dcb9b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983514"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulaması için özel izinleri ayarlama
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama
 Dağıtabileceğiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Internet veya yerel Intranet bölgeleri için varsayılan izinler kullanan bir uygulama. Alternatif olarak, uygulamanız için gereken belirli izinleri için özel bir bölge oluşturabilirsiniz. Bunu şirket güvenlik izinlerini özelleştirerek yapmak **güvenlik** sayfasının **Proje Tasarımcısı**.  
   
 ### <a name="to-customize-a-permission"></a>Bir izni özelleştirmek için  

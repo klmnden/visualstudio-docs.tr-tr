@@ -17,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffa05e3333d2fba1a1ac8a454b3a6e890ad8b605
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985623"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl Yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma
 Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] bir kullanıcı hesabı altında çalışan işlemi (aspnet_wp.exe veya w3wp.exe) aşağıdaki adımları izleyin.  
 
  > [!IMPORTANT]
@@ -77,7 +77,7 @@ Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[
   
     **Kullanıcı seç, bilgisayar veya Grup iletişim kutusunda** görünür.  
   
-10. Kullanıcı adını yazın **Seçilecek nesne adını girin** kutusuna ve ardından **Tamam**. Kullanıcı adı şu biçimde olmalıdır: Etki alanı\kullanıcı adı.  
+10. Kullanıcı adını yazın **Seçilecek nesne adını girin** kutusuna ve ardından **Tamam**. Kullanıcı adı şu biçimde olmalıdır: DomainName\UserName.  
   
 11. İçinde **ASP.NET dosyaları için izin girdisi** iletişim kutusunda, kullanıcıya vermek **tam denetim**ve ardından **Tamam** kapatmak için **geçici ASP için giriş .NET dosyaları** iletişim kutusu.  
   

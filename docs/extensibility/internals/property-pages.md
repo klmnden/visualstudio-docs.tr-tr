@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b450c6aca73ccef253e2006df485a530664b4c66
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837894"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002533"
 ---
 # <a name="property-pages"></a>Özellik Sayfaları
 Kullanıcılar, görüntüleyin ve özellik sayfalarını kullanma proje yapılandırma bağımlı ve - bağımsız özelliklerini değiştirin. A **özellik sayfaları** düğmesi etkin **özellikleri** penceresi veya bir özellik sayfası görünümü seçili nesnenin sağlayan nesneleri için Çözüm Gezgini araç çubuğu. Özellik sayfaları ortamı tarafından oluşturulur ve çözümler ve projeler için kullanılabilir. Ancak, aynı zamanda olabilirler oluşturan Proje öğeleri yapılandırmaya bağlı özelliklerinin kullanımı için kullanılabilir. Dosyaları bir proje içinde düzgün bir şekilde oluşturmak farklı bir derleyici anahtarı ayarları gerektirdiğinde bu özellik kullanılabilir.  

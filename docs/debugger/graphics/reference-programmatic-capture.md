@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826b399aa0ad0b5a45bc6fd80eb73b555cb3f01c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 892831423ccc3607db1b3f162fb79f4508764afa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006757"
 ---
 # <a name="reference-programmatic-capture"></a>Başvuru (Programlı Yakalama)
 Grafik tanılama yakalama özelliklerini programlı yakalama bir API aracılığıyla programlı denetime destekler. Geçiş ve iletileri grafik tanılama baş üstü (baş yukarı Göster) eklemek, başlatmak ve grafik günlük dosyaları oluşturmak ve grafik bilgilerini yakalamak için bu API'yi kullanabilirsiniz.  

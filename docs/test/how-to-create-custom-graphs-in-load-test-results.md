@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yük testi sonuçlarında özel grafikler oluşturma'
+title: 'Nasıl yapılır: Yük testi sonuçlarında özel grafikler oluşturma'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fd80a4d7cbfeb7cf79ae3dddad9aa1da367fd87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992782"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Nasıl Yapılır: Test sonuçları yükleme özel grafikler oluşturma
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Nasıl yapılır: Test sonuçları yükleme özel grafikler oluşturma
 
 Yük testi sonuçları hakkında belirli bilgi görüntüleyen grafikleri tasarlayabilirsiniz. Özel bir grafik, graf görüntüleyen yük testi sayacı belirterek tasarlayın.
 

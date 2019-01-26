@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8b6ea7865bdf9a6fcf3b57f7a463fab83cbbf75b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc5cf725b47c740bc14a57870e589c5de4e8c1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980434"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Etki Alanına Özgü Dil Araçları Kullanıcı Arabirimine Genel Bakış
 Visual Studio'da bir etki alanına özgü dil Araçları (DSL araçları) çözümü ilk kez açtığınızda, kullanıcı arabirimi aşağıdaki resme benzeyecektir.
@@ -42,7 +42,7 @@ Visual Studio'da bir etki alanına özgü dil Araçları (DSL araçları) çöz�
 
 |**Terim**|**Tanım**|
 |-|-|
-|Etki alanı sınıfı|Etki alanı, modellerinizde öğelerin türlerini sınıflardır.<br /><br /> Birden fazla ilişki hedefinin ise bir alan sınıfına bir diyagramda, birden fazla kez görünebilir.<br /><br /> Bir etki alanı sınıfı eklemek için etki alanı sınıfı aracından sürükleyin **araç kutusu** için **sınıflar ve ilişkiler** tarafında diyagram.|
+|Domain Class|Etki alanı, modellerinizde öğelerin türlerini sınıflardır.<br /><br /> Birden fazla ilişki hedefinin ise bir alan sınıfına bir diyagramda, birden fazla kez görünebilir.<br /><br /> Bir etki alanı sınıfı eklemek için etki alanı sınıfı aracından sürükleyin **araç kutusu** için **sınıflar ve ilişkiler** tarafında diyagram.|
 |Etki alanı ilişkisi|Etki alanı ilişkileri Modellerinizi öğeler arasında bağlantılar türleridir.<br /><br /> Bir *gömme ilişkisi* hedef öğenin sahibi olduğu veya kaynak öğe tarafından içerilen gösterir ve düz bir çizgi olarak görünür. Bir ağaç modeli forms modeldeki her öğe bir gömme ilişkisi hedef olmalıdır. A *başvuru ilişkisi* model öğeleri arasında genel bir bağlantı gösterir ve kesikli bir çizgi olarak görünür. Herhangi bir öğeye referans bağlantıları herhangi bir sayıda olabilir.<br /><br /> Aracı'nı tıklatarak bir ilişki oluşturmak **araç kutusu**, kaynak etki alanı sınıfı ve ardından hedef sınıf'nı tıklatın.|
 |Şekilleri ve bağlayıcıları|Şekiller nasıl model öğelerini bir DSL diyagramı. görüntüleneceğini belirtmek, bağlayıcılar satırları ilişkileri görüntülemek için kullanılan bir DSL diyagramında belirtin.<br /><br /> Bir şekil veya bağlayıcının oluşturmak için araç sürükleyin **diyagram öğelerine** tarafında diyagram.|
 |Şekil eşlemeleri|Şekil Haritası bir şekil bağlama görüntüler, etki alanı sınıfı için etki alanı modeli diyagramı ya da bağlayıcıyı görüntüler etki alanı ilişkisi üzerinde bir çizgi görünür.|

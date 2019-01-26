@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Derleme için önce hangi hedefin belirtme | Microsoft Docs'
+title: 'Nasıl yapılır: Derleme için önce hangi hedefin belirtme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc6e8ec70c941035caa0e4b3569f82013a829f15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967037"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970584"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Nasıl Yapılır: İlk olarak oluşturmak için hangi hedef belirtin
+# <a name="how-to-specify-which-target-to-build-first"></a>Nasıl yapılır: İlk olarak oluşturmak için hangi hedef belirtin
 Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluşturulduğunu tanımlayan öğeler. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı yapılar ilk proje dosyası içermedikçe bulur ve tüm bağımlılıkları, proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği veya bir hedef belirtilen komut satırını kullanarak **- Hedef** geçin.  
   
 ## <a name="use-the-initialtargets-attribute"></a>InitialTargets özniteliğini kullanın  

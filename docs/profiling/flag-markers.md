@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a879114f21cfa23eab66cca507c3a2b960872c7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ecac740035cc6de49a5651b20f2408eddd27ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986832"
 ---
 # <a name="flag-markers"></a>Bayrak işaretleyicileri
 Bayrak işareti anlık uygulama zamanda gerçekleşen bir sorun temsil eder. Bayrak pek çok uygulama olayları temsil edebilir. Örneğin, belirli iş öğesi zaman zamanlanan veya özel durum oluştuğunda bir bayrak gösterebilirsiniz. Görev paralel kitaplığı gibi çalışma zamanları bayrakları da oluşturabilirsiniz.  

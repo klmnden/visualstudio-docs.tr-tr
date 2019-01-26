@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: bir derlemeden projeleri hariç tutma'
+title: 'Nasıl yapılır: Projeleri derlemeden hariç tutma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -7,56 +7,56 @@ ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e203fd9f1515e212591afe11c246cdeb78201b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74d938ead94444edd74bd9afdbc6021211b6ba0b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949990"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001949"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Nasıl yapılır: bir derlemeden projeleri hariç tutma
+# <a name="how-to-exclude-projects-from-a-build"></a>Nasıl yapılır: Projeleri derlemeden hariç tutma
 
-İçerdiği tüm projeleri oluşturmadan bir çözüm oluşturabilirsiniz. Örneğin, yapıyı durduran bir proje hariç. Ardından, araştırmanız sonra projeyi ve adres sorunları oluşturabilir.
+İçerdiği tüm projeleri oluşturmaya gerek kalmadan, bir çözüm oluşturabilirsiniz. Örneğin, yapı sonları bir proje hariç. Sorunları araştırmak, sonra projeyi ve adresi ardından oluşturabilirsiniz.
 
-Aşağıdaki yaklaşımlardan gerçekleştirerek bir proje dışlayabilirsiniz:
+Bir proje, aşağıdaki yaklaşımlardan yararlanarak dışlayabilirsiniz:
 
--   Geçici olarak, etkin çözüm yapılandırmasından kaldırılıyor.
+-   Etkin çözüm yapılandırmasını geçici olarak kaldırma.
 
--   Bir çözüm yapılandırması oluşturma proje içermez.
+-   Bir çözüm yapılandırması oluşturma, proje içermez.
 
-Daha fazla bilgi için bkz: [anlayın yapı yapılandırmaları](../ide/understanding-build-configurations.md).
+Daha fazla bilgi için [anlayın derleme yapılandırmaları](../ide/understanding-build-configurations.md).
 
-## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Geçici olarak bir proje etkin çözüm yapılandırmasından kaldırmak için
+## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Bir projenin etkin çözüm yapılandırmasını geçici olarak kaldırmak için
 
-1.  Menü çubuğunda seçin **yapı** > **Configuration Manager**.
+1.  Menü çubuğunda, **derleme** > **Configuration Manager**.
 
-2.  İçinde **proje bağlamları** tablo, derlemeden hariç tutmak istediğiniz projeyi bulun.
+2.  İçinde **proje bağlamları** tablo, derlemeden hariç tutmak istediğiniz proje bulun.
 
-3.  İçinde **yapı** sütunu proje için onay kutusunu temizleyin.
+3.  İçinde **derleme** sütun proje için onay kutusunu temizleyin.
 
-4.  Seçin **Kapat** düğmesine tıklayın ve ardından çözümü yeniden derleyin.
+4.  Seçin **Kapat** düğmesini ve ardından çözümü yeniden oluşturun.
 
-## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Bir proje dışlar bir çözüm yapılandırması oluşturmak için
+## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Bir proje dışlayan bir çözüm yapılandırmasını oluşturmak için
 
-1.  Menü çubuğunda seçin **yapı** > **Configuration Manager**.
+1.  Menü çubuğunda, **derleme** > **Configuration Manager**.
 
-2.  İçinde **etkin çözüm yapılandırması** listesinde, seçin  **\<yeni >**.
+2.  İçinde **etkin çözüm yapılandırması** listesinde  **\<yeni >**.
 
-3.  İçinde **adı** kutusunda, çözüm yapılandırması için bir ad girin.
+3.  İçinde **adı** kutusuna, çözüm yapılandırması için bir ad girin.
 
-4.  İçinde **ayarları kopyalamak** listesinde, yeni yapılandırma temel almak istediğiniz çözüm yapılandırması seçin (örneğin, **hata ayıklama**) ve ardından **Tamam** düğmesi .
+4.  İçinde **Ayarları Şuradan Kopyala** listesinde, yeni yapılandırmayı temel almak istediğiniz çözüm yapılandırması seçin (örneğin, **hata ayıklama**) ve ardından **Tamam** düğmesi .
 
-5.  İçinde **Configuration Manager** iletişim kutusu, onay kutusunu temizleyin **yapı** sütunu dışlayın ve ardından istediğiniz proje için **Kapat** düğmesi.
+5.  İçinde **Configuration Manager** iletişim kutusu, onay kutusunu temizleyin **derleme** sütununu hariç tutun ve ardından istediğiniz proje için **Kapat** düğmesi.
 
-6.  Üzerinde **standart** araç, yeni çözüm yapılandırma etkin yapılandırmasında olduğundan emin olun **çözüm yapılandırmaları** kutusu.
+6.  Üzerinde **standart** araç, yeni çözüm yapılandırması etkin yapılandırmada olduğundan emin olun **çözüm yapılandırmaları** kutusu.
 
-7.  Menü çubuğunda seçin **yapı** > **çözümü yeniden derle**.
+7.  Menü çubuğunda, **derleme** > **çözümü yeniden derle**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)
-- [Nasıl yapılır: oluşturma ve düzenleme yapılandırmaları](../ide/how-to-create-and-edit-configurations.md)
-- [Nasıl yapılır: derleme aynı anda birden çok yapılandırmaları](../ide/how-to-build-multiple-configurations-simultaneously.md)
+- [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)
+- [Nasıl yapılır: Aynı anda birden fazla yapılandırma derleme](../ide/how-to-build-multiple-configurations-simultaneously.md)

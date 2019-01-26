@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab243a79d4e0b79150b86fb4a6fbdf3424f3624
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d2fe6b19312714815efc1e499bf89eacdaaff67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898797"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992587"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Kesme Noktaları Seç İletişim Kutusu
 **Kesme noktalarını Seç** iletişim kutusu açılır, belirsiz girişten bir kesme noktası ayarlamak çalıştığınızda **yeni kesme noktası** iletişim kutusu. Belirsiz girişe ortak bir örnek aşırı yüklenmiş işlev adıdır.  

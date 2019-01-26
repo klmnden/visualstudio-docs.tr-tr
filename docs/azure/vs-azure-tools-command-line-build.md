@@ -2,7 +2,7 @@
 title: Azure komut satırı ile derlemeyi | Microsoft Docs
 description: Azure komut satırı derleme
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: d5d1465253095d069b0c1e62ad6712a60b9e2489
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 713e9ac777a29ed4cb5de07c51f733a2b375e0e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943321"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Komut satırından Azure projeler derleme
 Microsoft Build Engine (MSBuild) kullanarak, Visual Studio yüklü olduğu yapı Laboratuvar ortamlarında ürünleri oluşturabilirsiniz. MSBuild, genişletilebilir ve tamamen Microsoft tarafından desteklenen proje dosyaları için bir XML biçimini kullanır. MSBuild dosyası biçimini kullanarak, hangi öğe olmalıdır açıklayabilirsiniz bir veya daha fazla platform ve yapılandırmaları için yerleşik.

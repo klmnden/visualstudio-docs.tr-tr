@@ -9,15 +9,15 @@ helpviewer_keywords:
 - data sources, defining with configuration files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70312472a11c0a0ea2cce6e760db9987858990c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935234"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
@@ -211,7 +211,7 @@ Artık bir *app.config* dosyasında tanımlanan, tanımlanan veri kaynaklarında
 
 3. İki sütun üst bilgilerini oluşturabilir ve bunları `Val1` ve `Val2` içinde `Sheet1`.
 
-4. Beş varlıklara ekleyin `Sheet1` için aşağıdaki değerlerle `Val1` ve `Val2`sırasıyla: (1,1), (2,2) (3,3) (4,4) ve (5,0).
+4. Beş varlıklara ekleyin `Sheet1` için aşağıdaki değerlerle `Val1` ve `Val2`sırasıyla: (1,1), (2,2), (3,3), (4,4) and (5,0).
 
 5. Kaydet ve elektronik kapatın.
 
@@ -271,4 +271,4 @@ Artık bir *app.config* dosyasında tanımlanan, tanımlanan veri kaynaklarında
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Birim testi kod](../test/unit-test-your-code.md)
-- [Nasıl Yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)
+- [Nasıl yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

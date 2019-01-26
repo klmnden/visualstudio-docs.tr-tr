@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 892c9f3b200466b22d847063ce2a60cf63301e5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 285ec62b5cfa0fbff081ccf994633663f69b847a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987530"
 ---
 # <a name="symbol-locations"></a>Simge Konumları
 Çoğu sembolleri resim dosyası içinde tanımlanan bir konuma sahip. Sembolün konumu arasında bir değer ile belirtilen [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md) sabit listesi. Simgenin konumuna bağlı olarak ek özellikleri desteklemiyor olabilir.  
@@ -48,7 +48,7 @@ ms.locfileid: "53915081"
  [Idiasymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
  [Idiasymbol::get_registerıd](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
  [Idiasymbol::get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
- [Idiasymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
+ [IDiaSymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
  [Idiasymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
  [Idiasymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
  [Idiasymbol::get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   

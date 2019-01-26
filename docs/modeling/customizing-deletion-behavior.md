@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e72d5165319eab7062c6a3f4106f232dca23808
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969609"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 Genellikle bir öğeyi silme ilgili öğeleri de silinmesine neden olur. Tüm ilişkiler bağlı ve herhangi bir alt öğe silindi. Bu davranış adlı *yayma Sil*. Örneğin ek ilgili öğeler silinir düzenlemek delete yayma özelleştirebilirsiniz. Program kodunu yazarak silme yayma model durumuna bağlı yapabilirsiniz. Ayrıca, yanıt bir silme işlemi için başka değişiklik neden olabilir.

@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: XML Belgesinden XML Şeması Oluşturma'
+title: 'Nasıl yapılır: XML Belgesinden XML Şeması Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32072a25a57988c0cf1273518e5c0a5d4745fe20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033810"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Nasıl Yapılır: Bir XML belgesinden XML şeması oluşturma
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Nasıl yapılır: Bir XML belgesinden XML şeması oluşturma
 
 XML Düzenleyicisi, bir XML Şeması Tanım Dili (XSD) şeması bir XML belgesinden oluşturmanıza olanak sağlar. Örnek XML Belge Şeması aşağıdaki şekilde nasıl oluşturulacağını belirler:
 

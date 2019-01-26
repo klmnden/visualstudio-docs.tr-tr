@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d075657ca034ebfd6d35418aa30f5c5ad85414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c730ff3ee9f5c8301c2c518ccb76a4a84faa919
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934803"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999541"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 Hatası ayıklanmakta olan bir programda bir iş parçacığı oluşturulduğunda bu arabirimi hata ayıklama altyapısı (DE) oturum hata ayıklama Yöneticisi (SDM) gönderilir.  

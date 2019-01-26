@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2011c86fbb9df95ce47075982e89c64bcf73c8c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bcfa95f456fb383dae42416985656163bec8a03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978574"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Performans kurallarını kullanarak verileri analiz etme
 Performans uyarılarını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, program yürütme yavaşlatabilir profili oluşturulmuş bir uygulamada sorunları gösterir. Uyarı toplama metotlarını daha kullanışlı verileri toplamak için değiştirmeniz gerekebilir de belirtebilir. Performans uyarıları, bir profil oluşturma oturumu otomatik olarak oluşturulur. Uyarı görünür **hata listesi** bir profil oluşturma veri dosyasını Visual Studio'da açıldığında penceresi. Gelen **hata listesi** penceresi, sorunun kaynak kodunu bulabilirsiniz ve sorunun nasıl giderileceği hakkındaki bilgiler gibi hata hakkında ayrıntılı bilgileri görüntüleyebilirsiniz. Ayrıca, ilgilendiğiniz değil uyarıları devre dışı bırakabilirsiniz.  

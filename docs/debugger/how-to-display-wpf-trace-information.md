@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: WPF izleme bilgilerini görüntüleme | Microsoft Docs'
+title: 'Nasıl yapılır: WPF izleme bilgilerini görüntüleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63708c133a4ce8c7deafc9c6861a9960d8327061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2458efb35218c2b8dd76eda58a342055479032e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981044"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Nasıl Yapılır: WPF izleme bilgilerini görüntüleme
+# <a name="how-to-display-wpf-trace-information"></a>Nasıl yapılır: WPF izleme bilgilerini görüntüleme
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] WPF uygulamaları hata ayıklama izleme bilgilerini alabilir ve bu bilgileri görüntülemek **çıkış** penceresi. Hata ayıklama izleme bilgilerini görüntülemek için WPF izleme etkinleştirilmesi gerekir.  
   
  App.Config dosyanızda veya programlama aracılığıyla kullanarak WPF izlemeyi etkinleştirebilirsiniz <xref:System.Diagnostics.PresentationTraceSources> sınıfı. WPF izlemeyi etkinleştirmek için daha kolay bir yolu kullanmaktır **seçenekleri** penceresi. WPF izleme web uygulamaları için desteklenmez.  

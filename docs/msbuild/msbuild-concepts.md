@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aaaf8dfae7ed0fd3626779fa1ba33e795d9f1d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7226476942497121fd94fbfdf8c902ad5ec4c05f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987862"
 ---
 # <a name="msbuild-concepts"></a>MSBuild kavramları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Yapı platformunu yazılım nasıl oluşturduğunu denetler için kullanabileceğiniz temel bir XML Şeması sağlar. Bileşenleri derleme ve nasıl oluşturulacak oldukları belirtmek için bu MSBuild dört bölümden kullanın: özellikler, öğeler, görevleri ve hedefleri.  

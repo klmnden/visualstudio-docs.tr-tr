@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe98206e5183cbfbcacfe0a2849d09308bc7dba2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988369"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>İzlenecek yol: Visual Basic'de Görselleştirici yazma
 Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows Forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici nasıl görselleştiriciler diğer veri türleri için daha uygun projelerinize oluşturacağınızı göstermek için basit bir örnektir.
@@ -228,5 +228,5 @@ Görselleştirici kod, hata ayıklayıcı tarafından okunacak DLL'de yerleştir
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Görselleştirici Mimarisi](../debugger/visualizer-architecture.md)
-- [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)
+- [Nasıl yapılır: Görselleştiriciyi Yükleme](../debugger/how-to-install-a-visualizer.md)
 - [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Duraklatma ve sürdürme performans veri toplama | Microsoft Docs'
+title: 'Nasıl yapılır: Duraklatma ve sürdürme performans veri toplama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 094b2c345cc308b822e13f9a2f4381a583a74824
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebcfead4fa7e4192a45dab4d4d34f45d2e4717cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845453"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961864"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Nasıl Yapılır: Performans verileri toplamayı duraklatma ve sürdürme
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Nasıl yapılır: Performans verileri toplamayı duraklatma ve sürdürme
 Profil oluşturma oturumu sayfa penceresinden verileri etkileşimli olarak profil oluşturma koleksiyonu denetleyebilirsiniz.  
   
  Veri toplama denetlenmesi size profili veri dosyasının boyutunu azaltın ve yalnızca ilgilendiğiniz işlemler için veri toplamanızı sağlar. Duraklatma ve birden çok kez bir performans oturumu profil oluşturmayı sürdürün.  

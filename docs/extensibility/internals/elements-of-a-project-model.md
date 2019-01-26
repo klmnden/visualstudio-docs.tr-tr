@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c1f058e1da1e4d425dc3748f20ec14ecd363855
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962616"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993903"
 ---
 # <a name="elements-of-a-project-model"></a>Proje modeli öğeleri
 Arabirimleri ve tüm projelerde uygulamaları [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] temel yapısını paylaşır: Proje türünüz için proje modeli. Geliştirdiğiniz VSPackage'ı olan proje modelinde tasarım kararlarınızı ile uyumlu ve IDE tarafından sağlanan genel işlevleri ile birlikte çalışan nesnelerin oluşturun. Örneğin, bir proje öğesi nasıl kalıcı denetim olsa da, bir dosya kalıcı gerekir bildirim kontrol edebilirim. Ne zaman bir kullanıcı bir açık proje öğesi üzerinde odağı yerleştirir ve seçer **Kaydet** üzerinde **dosya** menüsünde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menü çubuğu, proje türü kodunuzu gerekir IDE komuttan ıntercept, dosya kalıcı hale getirmek ve bildirimi, dosya artık değiştirildi IDE geri gönderin.  

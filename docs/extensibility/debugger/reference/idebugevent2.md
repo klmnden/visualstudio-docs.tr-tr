@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5bcb9d1adb03ad92e1c7df4fe3d61814718cccc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870170"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038246"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Bu arabirim, bir kesme noktasında durdurma gibi kritik hata ayıklama bilgileri hem hata ayıklama iletisi gibi kritik olmayan bilgileri iletişim kurmak için kullanılır.  

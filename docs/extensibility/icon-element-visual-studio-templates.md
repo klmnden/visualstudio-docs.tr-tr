@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db50dd4fa62bb1d6a3947d0c7091c94b2138efff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 145974e3e9eefd92f052940834079ad05f3d3849
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013949"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon öğesi (Visual Studio şablonları)
 Yol ve dosya adı ya da görünür simge olarak hizmet veren bir görüntü dosyasının belirtir **yeni proje** veya **Yeni Öğe Ekle** şablon için bir iletişim kutusu.  

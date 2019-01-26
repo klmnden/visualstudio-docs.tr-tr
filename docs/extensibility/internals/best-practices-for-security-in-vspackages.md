@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93ff8f6cd9423212a64404b55b38751d095b260f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30c234994fae5799bbb44369edadf9d2f3b82d26
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913392"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991144"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Vspackage'larda güvenlik için en iyi uygulamalar
 Yüklenecek [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] bilgisayarınızda yönetici kimlik bilgilerine sahip bir bağlamda çalıştırıyor olmalısınız. Güvenliği ve dağıtımı temel birimini bir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uygulama [VSPackage](../../extensibility/internals/vspackages.md). Bir VSPackage'ı kullanarak kaydedilmelidir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], gerektiren yönetici kimlik bilgileri.  

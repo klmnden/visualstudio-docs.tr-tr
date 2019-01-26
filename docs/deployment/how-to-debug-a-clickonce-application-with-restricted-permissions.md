@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373fa21a0ec588768017bcbcd8b0fdc4587bf091
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976530"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Nasıl Yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama
 Bir geliştirici olarak, büyük olasılıkla son kullanıcı, kısıtlı izinlerle çalıştırırken görebilirsiniz bir ClickOnce uygulamasında hata ayıklarken aynı güvenlik özel durumları görmezsiniz için geliştirme bilgisayarınıza tam güven izinleri ile çalışıyor.  
   
  Bu özel durumları yakalamak için son kullanıcı olarak aynı izinlere sahip bir uygulamada hata ayıklamak gerekir. Sınırlı izinler ile hata ayıklama etkinleştirilebilir **güvenlik** sayfasının **Proje Tasarımcısı**.  

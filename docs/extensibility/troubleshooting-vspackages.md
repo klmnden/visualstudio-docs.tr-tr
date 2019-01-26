@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9e8b271f98774e8bda0121b94b37e0266bf028
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982474"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 İle VSPackage olabilir ve bu sorunları çözmek için ipuçları yaygın sorunlar aşağıda verilmiştir.  

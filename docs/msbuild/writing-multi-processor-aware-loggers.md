@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefd76da0fef3b0ab19dae3b4b2064f83eaa0531
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887561"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005273"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Birden çok işlemciye duyarlı günlükçüler yazma
 Yeteneğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemci yararlanmak için süre oluşturmanın proje azaltabilir, ancak ayrıca olay günlüğü oluşturmak için karmaşıklık ekler. Bir tek işlemcili ortamda olaylar, iletiler, uyarıları ve hataları sırasında Günlükçü sıralı tahmin edilebilir bir şekilde ulaşır. Ancak, bir çok işlemcili ortamda farklı kaynaklardan gelen olaylar aynı anda veya sıra dışı ulaşır. Bunun için sağlamak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemciye duyarlı bir Günlükçü ve yeni bir günlük modeli sağlar ve özel "iletme günlükçüleri." oluşturmanıza olanak sağlar  

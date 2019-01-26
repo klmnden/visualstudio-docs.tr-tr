@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e83bea1cf503f7b2b7ffaf19452a4f819f023089
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030606"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>İfade değerlendirme (Visual Studio hata ayıklama SDK)
 Kesme modu sırasında birkaç program değişkenleri içeren basit ifadeler IDE değerlendirmelidir. Kendi değerlendirme gerçekleştirmek için hata ayıklama altyapısı (DE) ayrıştırma ve IDE windows birine girilen bir ifadeyi değerlendirir. 

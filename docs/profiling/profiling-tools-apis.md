@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8bc3326bfe194815f043233120f3e2ee5fae571
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8577cb0c456d3cf3ea295928a9bfd1df59d65c03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040235"
 ---
 # <a name="profiling-tools-apis"></a>Profil Araçları API'leri
 Yönetilen veya yerel yöntemlerinin API'lerinin ekleyebilirsiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları için de bir profil oluşturma veri toplamayı denetleme. Bu bölümde, API'lerin yöntemleri açıklar ve bunların nasıl kullanılacağını açıklar.  
@@ -25,7 +25,7 @@ Yönetilen veya yerel yöntemlerinin API'lerinin ekleyebilirsiniz [!INCLUDE[vspr
  <xref:Microsoft.VisualStudio.Profiler>  
  .NET profil oluşturma araçları yöntemleri açıklar.  
   
- [İzlenecek yol: Profiler API'leri kullanma](../profiling/walkthrough-using-profiler-apis.md)  
+ [İzlenecek yol: Profil Oluşturucu API'lerini Kullanma](../profiling/walkthrough-using-profiler-apis.md)  
  Bu tam bir örnek .NET profil oluşturma araçları yöntemlerini kullanmayı öğrenin.  
   
 ## <a name="related-sections"></a>İlgili bölümler  

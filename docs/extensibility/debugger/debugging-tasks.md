@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa719871e075a5448fa2d351c5bd7950a833601a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19777ec9020fb5e4e825652cbea8034755a0ebac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900158"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937106"
 ---
 # <a name="debug-tasks"></a>Hata ayıklama görevleri
 Bir programda hata ayıklamak için onu başlatan gerekir ve bir hata ayıklama altyapısı (DE) bağlı gerekir, aksi takdirde DE daha önce başlatılan bir program için'e bağlı olması gerekir. Bağlandıktan sonra DE bazı başlangıç olayları oluşturmanız gerekir. Yanıt olarak, hata ayıklama paketi IDE içinde ayarlanan kesme noktaları bağlama dener. Programı ilişkili bir kesme noktasına ulaştığında, durdurur ve kullanıcı girdisini bekler.  

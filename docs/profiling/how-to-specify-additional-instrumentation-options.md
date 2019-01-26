@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Ek izleme seçeneklerini belirtme | Microsoft Docs'
+title: 'Nasıl yapılır: Ek izleme seçeneklerini belirtme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e93a249572c34d801426b9919a274aa133639a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963729"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Nasıl Yapılır: Ek izleme seçeneklerini belirtme
+# <a name="how-to-specify-additional-instrumentation-options"></a>Nasıl yapılır: Ek izleme seçeneklerini belirtme
 
 İkili dosyaları Visual Studio IDE kullanarak veya komut satırı araçlarını kullanarak izleyebilirsiniz. IDE içinde bir ikili izleme, ek izleme seçeneklerini belirterek izleme sırasında toplanan verilerin hacmini denetleyebilirsiniz [Vsınstr](../profiling/vsinstr.md) aracı. Bu seçenekler, oturum veya hedef düzeyinde kullanılabilir. Örneğin, dahil etmek veya izleme işlemi sırasında belirli işlevleri hariç tutmak için hedef düzeyinde ek izleme seçeneği kullanın.
 

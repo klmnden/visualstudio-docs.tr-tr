@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Görsel stiller etkinken WPF uygulaması yayımlama | Microsoft Docs'
+title: 'Nasıl yapılır: Görsel stiller etkinken WPF uygulaması yayımlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9569ca48ac95ff1f2f99948f6fc700ea6dd8902
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029316"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl Yapılır: Görsel stiller etkinken WPF uygulaması yayımlama
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel stiller etkinken WPF uygulaması yayımlama
 Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü etkinleştirin. El ile etkinleştirmeniz gerekir, böylece varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stillerin etkin değil. Ancak, bir WPF uygulaması için görsel stilleri etkinleştirme ve ardından çözüm yayımlama bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](/windows/desktop/Controls/visual-styles-overview). Hata iletisi hakkında daha fazla bilgi için bkz. [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Hatayı çözün ve Çözümü yayımlamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f1838aa2dcfcdd9ac070d3b1c03c4e177c195d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1650d11c4af758a38d6778b17f61447c0d8485a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993851"
 ---
 # <a name="process-properties-dialog-box"></a>İşlem Özellikleri İletişim Kutusu
 Belirli bir işlemle ilgili daha fazla bilgi için bu iletişim kutusunu kullanın. Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir [işlemler görünümü](../debugger/processes-view.md) penceresi. Herhangi bir işlem düğümü ağacında seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  

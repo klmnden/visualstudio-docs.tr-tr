@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c3e4c896a4460ebdfa7b88e25b24e698b325c84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a9a7c1ef5a4eb36ee6d35edc89f47b17a0f38e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979536"
 ---
 # <a name="add-a-tool-window"></a>Araç penceresi ekleme
 Bu kılavuzda bir araç penceresi oluşturun ve aşağıdaki yollarla Visual Studio ile tümleştirme hakkında bilgi edinin:  

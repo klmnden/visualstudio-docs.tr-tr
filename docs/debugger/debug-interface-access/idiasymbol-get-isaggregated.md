@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e288c0bf36b3899ec6398187f87af3a366083da6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3026dc8b228d16ecdd5b41379c180a2a3a5f0502
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986728"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Veri simgenin bir toplama veya semboller koleksiyonunu parçası olup olmadığını belirten bir bayrak alır; Derleyici, toplanan sembolleri ayrı varlıklar olarak değerlendirir, ancak bunlar gerçekten tek bir büyük simge bir parçası.  

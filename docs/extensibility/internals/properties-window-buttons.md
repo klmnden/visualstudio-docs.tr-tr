@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3229f95f81fe839b0dd84cd7d1294600c21bbc0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d21e8d13ef8af83b12d30b6c78c253f371a11c30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934011"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973869"
 ---
 # <a name="properties-window-buttons"></a>Özellikler Penceresi Düğmeleri
 Bir geliştirme dilini ve ürün türüne bağlı olarak, belirli düğmelere varsayılan araç çubuğunda görüntülenen **özellikleri** penceresi. Tüm durumlarda **kategorilere göre**, **Alphabetized**, **özellikleri**, ve **özellik sayfaları** düğmeleri görüntülenir. Visual C# ve Visual Basic **olayları** düğmesi de görüntülenir. Belirli Visual C++ projelerinde **VC ++ iletileri** ve **VC geçersiz kılmalar** düğmeleri görüntülenir. Ek düğmeler, diğer proje türleri için görüntülenebilir. Düğmeler hakkında daha fazla bilgi için **özellikleri** penceresinde görmek [Özellikler penceresi](../../ide/reference/properties-window.md).  

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 0c39e3652e2f519a95420d58d855924ccc94174c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53878396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980342"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
 Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri yüklemek ve algılamak için yapılandırılabilen genel bir yükleyicidir (*.msi*) dosyaları ve yürütülebilir programlar. Yükleyici bir önyükleyici de denir. Bu bileşenin yüklenmesini yönetmek için meta verileri belirleyen XML bildirimleri kümesi programlanır.  Her yeniden dağıtılabilir bileşeni, ya da önkoşul, görünür **önkoşulları** iletişim kutusu için ClickOnce önyükleyici paketi olur. Bir önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyalarını içeren dosyaları grubudur. 

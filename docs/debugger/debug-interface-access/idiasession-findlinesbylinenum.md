@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d34539d84e359366fa0ecc06b87f2a6c8b1fd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1e59970a35da4671ae5002d5e125e48fc72a3fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944923"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 Belirtilen satır numarası kaynak dosyada içinde ya da yakın bulunma derlenecek satır numaralarını belirler.  

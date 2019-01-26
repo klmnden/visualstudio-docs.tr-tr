@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17e63c220dcf7677dbc62d9607e21bfbb11b42fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973986"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Nasıl Yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme (C#, Visual Basic F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Nasıl yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme (C#, Visual Basic F#)
 
 Visual Studio hata ayıklayıcısını destekleyen Microsoft eski sürümlerini hata ayıklama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] geçerli sürümü yanı sıra. Visual Studio'dan bir uygulamayı başlatırsanız, hata ayıklayıcı her zaman doğru sürümünü tanımlayabilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayıkladığınız uygulama için. Uygulama zaten varsa ancak çalışan ve kullanarak hata ayıklamayı Başlat **ekleme**, hata ayıklayıcı her zaman daha eski bir sürümünü belirlemek mümkün olmayabilir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Böyle bir durumda bildiren bir hata iletisi alırsınız,  
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Düzenleyici dosya türlerini kaydetme | Microsoft Docs'
+title: 'Nasıl yapılır: Düzenleyici dosya türlerini kaydetme | Microsoft Docs'
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f26b7421676081b32060dd4f342ee05098d90a7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980329"
 ---
-# <a name="how-to-register-editor-file-types"></a>Nasıl Yapılır: Düzenleyici dosya türlerini kaydetme
+# <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Düzenleyici dosya türlerini kaydetme
 Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri Düzenleyicisi kaydetmek için en kolay yolu olan [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] yönetilen paket framework (MPF) sınıfları. Yerel paketinizi uyguluyorsanız [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], düzenleyici ve ilişkili uzantıları kaydeden bir kayıt defteri betik da yazabilirsiniz.
 
 ## <a name="registration-using-mpf-classes"></a>Kayıt MPF sınıflarını kullanma

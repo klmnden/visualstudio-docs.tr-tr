@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: OnStart metodunda hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: OnStart metodunda hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53106b0d933c25d69ecd0b455b89f68c09b9a169
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bf37bef11c4d07ac0cb2c218f03f344a02ed4e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822955"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005574"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>Nasıl Yapılır: OnStart metodunda hata ayıklama
+# <a name="how-to-debug-the-onstart-method"></a>Nasıl yapılır: OnStart metodunda hata ayıklama
 Bir Windows hizmeti, hizmete ve hata ayıklayıcı hizmet işlemine iliştirme ayıklayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Windows hizmet uygulamalarında hata ayıklama](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Ancak, hata ayıklamak için <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> yöntemi bir Windows hizmetinin ayıklayıcısından yöntemi içinde başlatmak gerekir.  
   
 1.  Bir çağrı ekleyin <xref:System.Diagnostics.Debugger.Launch%2A> başındaki `OnStart()`yöntemi.  

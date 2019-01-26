@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme | Microsoft Docs'
+title: 'Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf4e015da7f5661f0964e9f60d65f39b665fe9d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907858"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973973"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Nasıl Yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme
 Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları gerektirir çalıştırılabilmesi için önce .NET Framework sürümünü doğru bir bilgisayara yüklenir; pek çok uygulama diğer Önkoşullar da sahip. Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, bir dizi önkoşul bileşenlerinin yanı sıra müşterilerinizin uygulamanıza paketlenmiş seçebilirsiniz. Yükleme sırasında her önkoşulu zaten mevcut olup olmadığını belirlemek bir denetim gerçekleştirilir. Bu yüklemeden önce değil yüklenecekse [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.  
   
  Paketleme ve önkoşulları yerine bileşenler için indirme konumu belirtebilirsiniz. Örneğin, yayımladığınız her uygulamasına Önkoşullar dahil olmak üzere yerine, bir merkezi dosya paylaşımı veya tüm önkoşulların için yükleyicileri içeren Web konumu kullanabilirsiniz — yükleme zamanında bileşenler indirilir ve Bu konumdan yüklü.  

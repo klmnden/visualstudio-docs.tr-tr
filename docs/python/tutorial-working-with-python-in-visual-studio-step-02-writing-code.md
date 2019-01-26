@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a378efd38a4ccd415276cb1a10f24ff39600894f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988681"
 ---
 # <a name="step-2-write-and-run-code"></a>2. Adım: Yazma ve kod çalıştırma
 
@@ -46,7 +46,7 @@ Ancak **Çözüm Gezgini** proje dosyaları, yönettiği yerdir *Düzenleyicisi*
     ![IntelliSense söz dizimi renklendirme ve hata vurgulama](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Birinin geliştirme ortamı çok kişisel bir konudur çünkü Visual Studio, Visual Studio'nun görünümünü ve davranışını üzerinde tam denetim sağlar. Seçin **Araçları** > **seçenekleri** menü komutu ve ayarları keşfedin **ortam** ve **metin düzenleyici** Sekmeler. Varsayılan olarak yalnızca sınırlı sayıda seçenekleri görebilirsiniz; her programlama dili için tüm seçenekleri görmek için seçin **tüm ayarları göster** iletişim kutusunun alt kısmındaki. 
+    > Birinin geliştirme ortamı çok kişisel bir konudur çünkü Visual Studio, Visual Studio'nun görünümünü ve davranışını üzerinde tam denetim sağlar. Seçin **Araçları** > **seçenekleri** menü komutu ve ayarları keşfedin **ortam** ve **metin düzenleyici** Sekmeler. Varsayılan olarak yalnızca sınırlı sayıda seçenekleri görebilirsiniz; her programlama dili için tüm seçenekleri görmek için seçin **tüm ayarları göster** iletişim kutusunun alt kısmındaki.
 
 1. Kodu, yazılan bu noktada tuşuna basarak çalıştırın **Ctrl**+**F5** veya seçerek **hata ayıklama** > **hata ayıklama olmadan Başlat**  menü öğesi. Visual Studio, kodunuzdaki hataları hala olup olmadığını sizi uyarır.
 

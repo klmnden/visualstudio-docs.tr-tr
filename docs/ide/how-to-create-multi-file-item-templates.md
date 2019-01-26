@@ -9,15 +9,15 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 52d66f06dc5364780ea31ea8845b5654c4df155f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985777"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Nasıl Yapılır: Çok dosyalı şablonlar oluşturma
+# <a name="how-to-create-multi-file-item-templates"></a>Nasıl yapılır: Çok dosyalı şablonlar oluşturma
 
 Öğe şablonları, yalnızca bir öğe belirtebilirsiniz, ancak öğe birden çok dosya bazen oluşur. Örneğin, bir Windows Forms öğe şablonu, aşağıdaki üç dosyayı gerektirir:
 

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ee66a15788e9ae640142c269e388846a59311190
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fddd81ae64a53943e08457f4ed4a8c19f5d62ab0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926063"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970896"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Nasıl Yapılır: Yük testi API'si kullanma
+# <a name="how-to-use-the-load-test-api"></a>Nasıl yapılır: Yük testi API'si kullanma
 
 Visual Studio Yük testi denetlemek veya geliştiren bir yük testi eklentileri destekler. Yük testi eklentileri olan kullanıcı tanımlı uygulayan sınıflar <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> arabirimi bulunan <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ad alanı. Yük testi eklentileri, özel bir yük testi denetimi için gibi bir sayaç veya hata eşiğine ulaşıldığında bir yük testi iptal ediliyor izin verin. Özellikleri kullanın <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> almak veya yük testi parametrelerine kullanıcıdan ayarlamak için sınıf tanımlanan kod. Olayları kullanın <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> yük testi çalışırken, bildirimler için temsilciler eklemek için sınıfı.
 

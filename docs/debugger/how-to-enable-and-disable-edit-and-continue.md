@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme | Microsoft Docs"
+title: "Nasıl yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme | Microsoft Docs"
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -22,18 +22,18 @@ helpviewer_keywords:
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: bcdedfb513d9e10f030df4a6e9ba68b807210669
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a201dab58084476f0993304d961fc5afa5693782
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002235"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Nasıl Yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Nasıl yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme (C#, VB, C++)
 
 Devre dışı bırakma veya etkinleştirme **Düzenle ve devam et** Visual Studio'daki **seçenekleri** tasarım zamanında iletişim kutusu. **Düzenle ve devam et** yalnızca hata ayıklama çalışır oluşturur. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md). 
   

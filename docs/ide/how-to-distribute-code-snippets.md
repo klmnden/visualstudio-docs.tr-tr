@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kod parçacıklarını dağıtma'
+title: 'Nasıl yapılır: Kod parçacıklarını dağıtma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -8,19 +8,19 @@ helpviewer_keywords:
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985714"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Nasıl Yapılır: Kod parçacıklarını dağıtma
+# <a name="how-to-distribute-code-snippets"></a>Nasıl yapılır: Kod parçacıklarını dağıtma
 
 Kod parçacıklarınızı arkadaşlarınıza verebilir ve bunları kullanarak kendi bilgisayarlarındaki parçacıkları yükleme **kod parçacıkları Yöneticisi**. Bununla birlikte, dağıtılacak çok sayıda kod olması ya da daha yaygın olarak dağıtmak istiyorsanız, kod parçacığı dosyanızı bir Visual Studio uzantısına dahil etme. Visual Studio kullanıcılarına, uzantıyı daha sonra yükleyebilirsiniz.
 

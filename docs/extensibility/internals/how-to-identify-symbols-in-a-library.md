@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir kitaplıktaki sembolleri tanımlama | Microsoft Docs'
+title: 'Nasıl yapılır: Bir kitaplıktaki sembolleri tanımlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b62a9207a7a676d10152f8b66dccdcbd7060e8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc57f481d7552e428c5d6df2ae934a2c028d4e35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001023"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Nasıl Yapılır: Bir kitaplıktaki sembolleri tanımlama
+# <a name="how-to-identify-symbols-in-a-library"></a>Nasıl yapılır: Bir kitaplıktaki sembolleri tanımlama
 Sembol tarama araçlarını hiyerarşik görünümleri simgeleri görüntüler. Simgeler, ad alanları, nesneler, sınıflar, sınıf üyeleri ve diğer dil öğelerini temsil eder.  
   
  Hiyerarşideki her bir simge için simge kitaplığı tarafından geçirilen Gezinti bilgileri belirlenebilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aşağıdaki arabirimleri aracılığıyla Nesne Yöneticisi:  
