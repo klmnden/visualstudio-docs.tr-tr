@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Komut satırından sembol dosyası konumlarını belirtme | Microsoft Docs'
+title: 'Nasıl yapılır: Komut satırından sembol dosyası konumlarını belirtme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0791019ce71a7d0fe6276ef9345284662ca31e00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ee2b0c335167abfb0ca940023b88c5e713be7e4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917153"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947913"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl Yapılır: Komut satırından sembol dosyası konumlarını belirtme
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl yapılır: Komut satırından sembol dosyası konumlarını belirtme
 İşlev adları ve satır numaraları gibi sembol bilgilerini görüntülemek için VSPerfReport komut satırı aracı sembol erişim gerektirir (. *pdb*) profili oluşturulan bileşenleri ve Windows sistem dosyalarını dosya. Bir bileşen derlendiğinde sembol dosyaları oluşturulur. Daha fazla bilgi için [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sembol dosyaları için aşağıdaki konumlar otomatik olarak arar:  
   
 - Belirtilen yollar **/symbolpath** seçeneği veya **_NT_SYMBOL_PATH** ortam değişkeni.  
@@ -55,8 +55,8 @@ ms.locfileid: "53917153"
 ## <a name="example"></a>Örnek  
  Aşağıdaki komut satırı kümeleri **_NT_SYMBOL_PATH** ortam değişkenini Windows sembol sunucusu ve yerel dizine **C:\Symbols**.  
   
- **ayarlama _NT_SYMBOL_PATH srv =\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
+ **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
  VSPerfReport komut satırını ekler *C:\Projects\Symbols* dizin kullanılarak arama yoluna **/symbolpath** seçeneği.  
   
- **VSPerfReport***MyApp* **.exe /SymbolPath:C:\Projects\Symbols userrulesdirectory**
+ **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990863"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948407"
 ---
 # <a name="vsix-color-compiler"></a>VSIX Renk Derleyicisi
 Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'da bu renkleri kullanılabilir olacak şekilde dönüştürür ve mevcut Visual Studio Tema renkleri temsil eden bir .xml dosyasına götüren bir konsol uygulamasına bir araçtır. .Xml dosyaları arasındaki farkları karşılaştırmak kolay olduğundan, bu kaynak denetiminde özel renkler yönetmek için kullanışlı bir araçtır. Böylece yapı çıkışını geçerli .pkgdef dosyası derleme ortamlara da bağlanabilir.  
@@ -142,7 +142,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 |-|-|-|  
 |**Anahtar adı**|**Notlar**|**Gerekli veya isteğe bağlı**|  
 |Adlandırılmamış (.xml dosyası)|Bu ilk adlandırılmamış parametre ve dönüştürmek için XML dosyasının yolu.|Gerekli|  
-|Adlandırılmamış (.pkgdef dosyası)|Bu ikinci adlandırılmamış parametreyi ve oluşturulan .pkgdef dosyası için çıkış yolu.<br /><br /> Varsayılan: \<XML dosya adı > .pkgdef|İsteğe Bağlı|  
+|Adlandırılmamış (.pkgdef dosyası)|Bu ikinci adlandırılmamış parametreyi ve oluşturulan .pkgdef dosyası için çıkış yolu.<br /><br /> Varsayılan: \<XML Filename>.pkgdef|İsteğe Bağlı|  
 |/ nologo|Bu bayrak ayarlandığında, ürün ve telif hakkı bilgileri yazdırmasının durdurur.|İsteğe Bağlı|  
 |/?|Yardım bilgi yazdırır.|İsteğe Bağlı|  
 |/help|Yardım bilgi yazdırır.|İsteğe Bağlı|  

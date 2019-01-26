@@ -4,15 +4,15 @@ ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 893383d8260a3b7904921e12175f81741a7978b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941092"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948914"
 ---
 # <a name="gpu-usage"></a>GPU kullanımı
 
@@ -145,7 +145,7 @@ Aşağıdaki GPU donanım ve sürücüler desteklenir:
 
 |Satıcı|GPU açıklaması|Gerekli sürücü sürümü|
 |------------|---------------------|-----------------------------|
-|Intel®|4. nesil Intel® Çekirdek işlemcileri ('Haswell')<br /><br /> -Intel® HD grafikleri (GT1)<br />-Intel® HD grafik 4200 (GT2)<br />-Intel® HD grafik 4400 (GT2)<br />-Intel® HD grafik 4600 (GT2)<br />-Intel® HD grafik P4600 (GT2)<br />-Intel® HD grafik P4700 (GT2)<br />-Intel® HD grafik 5000 (GT3)<br />-Intel® Iris™ grafik 5100 (GT3)<br />-Intel® Iris™ Pro grafik 5200 (GT3e)|--(en son sürücüleri kullanan)|
+|Intel®|4. nesil Intel® Çekirdek işlemcileri ('Haswell')<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|--(en son sürücüleri kullanan)|
 |AMD®|Çoğu beri AMD Radeon™ HD 7000-Serisi (AMD Radeon™ HD 7350 7670 hariç)<br /><br /> AMD Radeon™ GPU, AMD FirePro™ GPU'ları ve AMD FirePro GPU Hızlandırıcısı özelliklerine sahip grafik çekirdek sonraki (GCN) mimarisi.<br /><br /> AMD® E serisi ve AMD A serisi hızlandırılmış işleme grafik çekirdek sonraki (GCN) mimarisi ('Kaveri', 'Kabini', 'Temash', 'Beema', 'Mullins') içeren birim (APUs)|14.7 RC3 veya üzeri|
 |NVIDIA®|Çoğu NVIDIA® GeForce 400 serisi itibaren.<br /><br /> NVIDIA® GeForce® GPU'ları, NVIDIA Quadro® GPU'ları ve NVIDIA® Tesla™ GPU Hızlandırıcısı Fermi™, Kepler™ veya Maxwell™ mimarisi özelliklerine sahip.|343.37 veya üzeri|
 

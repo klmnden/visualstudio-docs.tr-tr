@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948212"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio'da npm paketlerini yönetme
 
@@ -36,7 +36,7 @@ Npm paket yükleme penceresi npm paketlerini yüklemek için en kolay yoludur. B
 
 ![Çözüm Gezgini'nden yeni npm paketini yükleme](../javascript/media/solution-explorer-install-package.png)
 
-Bu pencerede bir paket için arama seçenekleri belirtin ve yükleyin. 
+Bu pencerede bir paket için arama seçenekleri belirtin ve yükleyin.
 
 ![Arama npm paketi](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ Ayrıca `.npm` npm komutları yürütmek için Node.js etkileşimli penceresini 
 Pencerede, paketi yüklemek için aşağıdaki gibi komutları kullanabilirsiniz:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Varsayılan olarak, projenizin giriş dizininde npm yürütülür. Çözümünüz içinde birden çok proje varsa, köşeli ayraç içinde adı veya projesinin yolunu belirtin. 
+ > Varsayılan olarak, projenizin giriş dizininde npm yürütülür. Çözümünüz içinde birden çok proje varsa, köşeli ayraç içinde adı veya projesinin yolunu belirtin.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Projenize bir package.json dosyası içermiyor kullanırsanız `.npm init -y` varsayılan girişleri ile yeni bir package.json dosyası oluşturmak için. 
+ > Projenize bir package.json dosyası içermiyor kullanırsanız `.npm init -y` varsayılan girişleri ile yeni bir package.json dosyası oluşturmak için.
