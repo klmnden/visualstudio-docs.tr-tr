@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8b18ee5c1c84b8e6480ffa9f91f739796f0991
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c192128ff4995a551b50df9347981405e321b703
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834418"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933236"
 ---
 # <a name="custom-tools"></a>Özel Araçlar
 *Özel Araçlar* bir aracı bir projede bir öğe ile ilişkilendirmek ve dosyanın kaydedildiği zaman bu aracı sağlar. Bazı özel araçları, bazen olarak adlandırılan *tek dosya oluşturucular*, verilerden ve kod oluşturma çevirmenler uygulamak için sıkça kullanılır. Örneğin, tek dosya oluşturucular oluşturma [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kaynak kodunun dışında *.settings* ve *.resx* dosyaları. Oluşturulan kaynak kod verilere erişim türü kesin belirlenmiş sağlar *.settings* ve *.resx* dosyaları. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] özel araçlar; proje türleri desteği [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proje türleri yapın. Özel Araçlar kendi proje türleri de destekler.  

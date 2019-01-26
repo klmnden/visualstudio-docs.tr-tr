@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4d2463c9c81e963494ed6865956b6e9c36934e07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aece31feb6e9b84fd2a23900f1a5da4d1194b05a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988929"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917876"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Nasıl Yapılır: İstek düzeyi eklentisi oluşturma
+# <a name="how-to-create-a-request-level-plug-in"></a>Nasıl yapılır: İstek düzeyi eklentisi oluşturma
 
 *İstekleri* web performans testleri oluşturan bildirim deyimleri. Web performans testi eklentileri yalıtmak ve ana bildirim deyimleri, web performans testinde dışındaki kod yeniden kullanımını etkinleştirin. Eklentileri oluşturun ve bunları tek bir istek de içeren web performans testi için farklı ekleyin. Özelleştirilmiş *istek eklentisi* belirli bir istek, bir web performans testi çalıştırırken kodu çağırmak için bir yol sunar.
 

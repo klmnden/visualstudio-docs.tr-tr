@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918374"
 ---
 # <a name="debug-r-in-visual-studio"></a>Visual Studio'da R hata ayıklama
 
 R araçları için Visual Studio (RTVS), Visual Studio'nun tam hata ayıklama deneyimi ile tümleştirilir (bkz [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugger-feature-tour). Kesme noktaları, çağrı yığınını incelemek ve çalışan işlemleri, inceleme ve izleme değişkenleri eklemek destekler. Bu makalede, ardından, R ve RTVS özgü hata ayıklama bu özellikleri keşfediyor.
 
-Projekt R R başlangıç dosyasında aynı diğer proje türleri için hata ayıklayıcı başlatılıyor: kullanın **hata ayıklama** > **hata ayıklamayı Başlat**, **F5** anahtarı veya **Kaynak başlangıç dosyası** hata ayıklama araç çubuğundaki: 
+Projekt R R başlangıç dosyasında aynı diğer proje türleri için hata ayıklayıcı başlatılıyor: kullanın **hata ayıklama** > **hata ayıklamayı Başlat**, **F5** anahtarı veya **Kaynak başlangıç dosyası** hata ayıklama araç çubuğundaki:
 
 ![R için hata ayıklayıcı Başlat düğmesi](media/debugger-start-button.png)
 

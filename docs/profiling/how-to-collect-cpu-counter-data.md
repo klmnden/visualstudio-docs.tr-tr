@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: CPU sayaç verileri toplama | Microsoft Docs'
+title: 'Nasıl yapılır: CPU sayaç verileri toplama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - performance tools, portable CPU counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae991730caf5e83e9632d7b9a871a62778463098
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928574"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Nasıl Yapılır: CPU sayaç verileri toplama
+# <a name="how-to-collect-cpu-counter-data"></a>Nasıl yapılır: CPU sayaç verileri toplama
 
 CPU olay sayaç donanıma özgü performans verilerini toplamak için kullanılır. Bu makalede, yöntemi profil oluşturma Araçları'nı kullandığınızda, olay sayacı verilerini toplama işlemini göstermektedir.
 

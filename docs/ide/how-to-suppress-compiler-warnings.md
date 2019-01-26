@@ -6,19 +6,19 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 353cd36f1a45f1d9d63319b4cc951d3033137ac7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060371"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926494"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici uyarılarını gizleme
+# <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici uyarılarını engelleme
 
-Derleyici uyarılarını bir veya daha fazla tür filtreleyerek yapı günlüğüne declutter. Örneğin, derleme günlük ayrıntı düzeyini ayarlamak, oluşturulan çıktıyı yalnızca bir bölümünü incelemek isteyebilirsiniz **Normal**, **ayrıntılı**, veya **tanılama**. Ayrıntı düzeyi hakkında daha fazla bilgi için bkz. [nasıl yapılır: görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).
+Derleyici uyarılarını bir veya daha fazla tür filtreleyerek yapı günlüğüne declutter. Örneğin, derleme günlük ayrıntı düzeyini ayarlamak, oluşturulan çıktıyı yalnızca bir bölümünü incelemek isteyebilirsiniz **Normal**, **ayrıntılı**, veya **tanılama**. Ayrıntı düzeyi hakkında daha fazla bilgi için bkz. [nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Görsel için belirli uyarıları gösterme C# veyaF# #
 
@@ -134,5 +134,5 @@ Bazı durumlarda, bir projenin tamamı için yerine tek bir NuGet paketi için N
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md)
-- [Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Nasıl yapılır: Görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)

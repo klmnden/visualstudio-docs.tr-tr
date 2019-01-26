@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4fa39ad3ce07792819544738185164fef8c985
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 451a989729e18338ae3bc7e0b615b256ab806664
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844531"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924064"
 ---
 # <a name="set-current-stack-frame-command"></a>Geçerli Yığın Çerçevesini Ayarla Komutu
 Belirli bir yığın çerçevesini ayarlamanıza olanak tanır.

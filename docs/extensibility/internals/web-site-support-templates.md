@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961604"
 ---
 # <a name="web-site-support-templates"></a>Web Sitesi Destek Şablonları
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web sitesi proje ve öğe şablonları, yeni Web sitesi projeleri ve öğeleri sıfırdan oluşturma gereksinimini ortadan kaldırarak geliştirme sürecini hızlandırmak Web sitesini yeniden kullanılabilir ve özelleştirilebilir proje ve öğe saptamalar sağlar. Daha fazla bilgi için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] şablonları, [oluşturma proje ve öğe şablonları](../../ide/creating-project-and-item-templates.md).
@@ -57,7 +57,7 @@ ms.locfileid: "53875238"
 
      Yeni Web sitesi için varsayılan giriş sayfası. Language özniteliği codebehind dilini belirtir ve bu sayfayla ilişkili codebehind kodunu içeren bağımlı dosya CodeFile özniteliği belirtir.
 
--   Default.aspx. *uzantısı*
+-   Default.aspx.*extension*
 
      Bağımlı dosya varsayılan giriş sayfasını codebehind kodunu içerir. Codebehind dili belirler *uzantısı* bu dosyanın.
 
@@ -76,7 +76,7 @@ ms.locfileid: "53875238"
 ### <a name="web-service-projects"></a>Web hizmeti projelerini Microsoft Azure
  Bu dosyalar, yanıt olarak yeni bir Web sitesi oluşturma **ASP.NET Web hizmeti** seçtikten sonra kullanılabilir olan komut **dosya** > **yeni Web sitesi**:
 
--   QuoteService.asmx'e değiştirin
+-   Service.asmx
 
      Yeni bir Web hizmeti için HTML sayfası. Language özniteliği codebehind dilini belirtir ve CodeBehind özniteliğinin bu hizmetle ilişkili codebehind kodu içeren bağımlı dosyasını belirtir.
 

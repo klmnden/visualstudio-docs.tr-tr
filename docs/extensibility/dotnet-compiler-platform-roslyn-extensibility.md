@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc687421123769e36594a11b2c34dd86fe0ebf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26196b18c6e44ec8f0697fbc656f2934eff1904b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918816"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET derleyici Platformu (&quot;Roslyn&quot;) genişletilebilirliği
 .NET derleyici Platformu ("Roslyn"), çekirdek görev açma C# ve Visual Basic derleyicileri ve araçları sağlayan ve programlar hakkında zengin bilgiler derleyicilerde paylaşmak geliştiricilere vardır. Kod çözümleme araçları, kod kalitesini geliştirin ve oluşturucuları yardımcı uygulama yapı içinde kod. Araçları daha akıllıca kararlar alın gibi daha fazla ve daha fazla yalnızca derleyiciler sahip ayrıntılı kod bilgi erişim. Donuk çevirmenler (kaynak kodu ve nesne kodu) olan yerine Roslyn derleyicileri, araçları ve uygulamaları kodla ilgili görevler için kullanabileceğiniz API'ler sunar.

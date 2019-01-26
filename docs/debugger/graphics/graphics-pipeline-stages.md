@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b782b3abaf92eedccb43104987d16668794d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e54f3e485425b90a8ff0b6b0dbbca63d02574dc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898001"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940251"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafik Ardışık Düzen Aşamaları
 Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağrısı Direct3D grafik Ardışık düzenin her aşaması tarafından nasıl dönüştürdüğünü anlamanıza yardımcı olur.  
@@ -125,4 +125,4 @@ Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağr�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [İzlenecek yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)

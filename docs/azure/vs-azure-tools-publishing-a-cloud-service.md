@@ -2,7 +2,7 @@
 title: Azure araçlarını kullanarak bir bulut hizmeti yayımlama | Microsoft Docs
 description: Visual Studio kullanarak Azure bulut hizmeti projelerini Microsoft Azure yayımlama hakkında bilgi edinin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: eee8ca669384f202fe430f4ec836f8e4b1fea9c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bfc284b06274bfae625dcaa0dbebb5fc7d414b64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923892"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio kullanarak bulut hizmetini yayımlama
 

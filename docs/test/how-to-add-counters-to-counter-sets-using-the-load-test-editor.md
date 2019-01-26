@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: bed707fe5677467e66ff83678675ffdb40a5e081
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29ca2518e56adf95d11fcaf750d8ddd9aa15a3f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950257"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916520"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Nasıl Yapılır: Yük Testi Düzenleyicisini kullanarak sayaç kümelerine sayaç ekleme
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak sayaç kümelerine sayaç ekleme
 
 İle bir yük testi oluşturduğunuzda, **Yük Testi Sihirbazı**, bir başlangıç sayaç kümesini ekleyin. Bu, Yük testiniz için ön tanımlı sayaç kümeleri kümesini sunar. Daha fazla bilgi için [sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtin](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

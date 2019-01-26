@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a842caf3-d635-4620-bc81-1d4a6ea06ed6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec2b4c518223d308f27a853c28c97b99b5ff7188
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922448"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917479"
 ---
 # <a name="help-menu-commands"></a>Yardım Menü Komutları
 **Yardımcı** menü komutları Yardım dosyaları açmak için sağlar.  

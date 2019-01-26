@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875812"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916627"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio hata ayıklayıcı Windows hakkında bilgi edinin
 
@@ -30,23 +30,23 @@ Programınızın hata ayıklama sırasında çoğu hata ayıklayıcı penceresin
 |QuickWatch|SHIFT + F9|[İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)|
 |İfade ve değişkenler|CTRL+ALT+V, A|[Otomatikler ve Yereller Pencereleri](../debugger/autos-and-locals-windows.md)|
 |Yerel öğeler|CTRL+ALT+V, L|[Otomatikler ve Yereller Pencereleri](../debugger/autos-and-locals-windows.md)|
-|Çağrı yığınları|CTRL+ALT+C|[Nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md)|
+|Çağrı yığınları|CTRL+ALT+C|[Nasıl yapılır: Çağrı Yığını Penceresini Kullanma](../debugger/how-to-use-the-call-stack-window.md)|
 |Hemen|CTRL+ALT+I|[Komut Penceresi](../ide/reference/immediate-window.md)|
 |Paralel Yığınlar|CTRL: + SHIFT + D, S|[Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)|
 |Paralel izleme|CTRL: + SHIFT + D, (1, 2, 3, 4)|[Alma çok iş parçacıklı uygulamalarda hata ayıklama başlatıldı](../debugger/get-started-debugging-multithreaded-apps.md)|
 |İş Parçacıkları|CTRL + ALT + H|[İş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md)|
-|Modüller|CTRL+ALT+U|[Nasıl yapılır: Modüller penceresini kullanma](../debugger/how-to-use-the-modules-window.md)|
-|GPU iş parçacıkları|-|[Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Modüller|CTRL+ALT+U|[Nasıl yapılır: Modüller Penceresini Kullanma](../debugger/how-to-use-the-modules-window.md)|
+|GPU iş parçacıkları|-|[Nasıl yapılır: GPU İş Parçacıkları Penceresini Kullanma](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Görevler|CTR:+SHIFT+D, K|[Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)|
 |Python etkileşimli hata ayıklama|SHIFT+ALT+I|[Python etkileşimli REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript Konsolu|CTRL+ALT+V, C|[Hızlı Başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|JavaScript Konsolu|CTRL+ALT+V, C|[Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Gezgini|CTRL+ALT+V, D|[DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Canlı görsel ağaç|-|[Hata ayıklama sırasında XAML özelliklerini denetleme](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Canlı özellik Gezgini|-|[Hata ayıklama sırasında XAML özelliklerini denetleme](../debugger/inspect-xaml-properties-while-debugging.md)|
 |İşlemler|CTRL+ALT+Z|[İş Parçacıklarında ve İşlemlerde Hata Ayıklama](../debugger/debug-threads-and-processes.md)|
 |Bellek|CTRL + ALT + M, (1, 2, 3, 4)|[Bellek Pencereleri](../debugger/memory-windows.md)|
-|Ayrıştırılmış kodu|CTRL + ALT + D|[Nasıl yapılır: Ayrıştırılmış kod penceresini kullanma](../debugger/how-to-use-the-disassembly-window.md)|
-|Kaydeder|CTRL+ALT+G|[Nasıl yapılır: Yazmaçlar penceresini kullanma](../debugger/how-to-use-the-registers-window.md)|
+|Ayrıştırılmış kodu|CTRL + ALT + D|[Nasıl yapılır: Ayrıştırılmış Kod Penceresini Kullanma](../debugger/how-to-use-the-disassembly-window.md)|
+|Kaydeder|CTRL+ALT+G|[Nasıl yapılır: Yazmaçlar Penceresi Hakkında](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
