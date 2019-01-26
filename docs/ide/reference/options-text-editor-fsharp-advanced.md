@@ -7,15 +7,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f3831581aa81e12a5d7ff0cbe6dbdcd6a29bc98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9a3158708215303be4dc0bd66202a165cf3a5d4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955719"
 ---
 # <a name="options-text-editor-f-advanced"></a>Seçenekler, metin düzenleyici, F#, Gelişmiş
 
@@ -24,11 +24,11 @@ Kullanım **Gelişmiş** bazı metin düzenleyici ayarları değiştirmek için 
 ## <a name="block-structure-guides"></a>Blok yapısı kılavuzları
 
 Seçili olduğunda, dikey çizgileri Düzenleyicisi'nde bu satırı Yukarı tek bir kod bloklarını kolayca belirlemenize olanak sağlayan yapılandırılmış kod blokları ile görünür.
-  
+
 ## <a name="outlining"></a>Anahat Oluşturma
 
 Otomatik olarak daraltılabilir kod bloklarını oluşturan kod dosyası ana hatlarını belirlemek için bu onay kutusunu seçin.
-  
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)

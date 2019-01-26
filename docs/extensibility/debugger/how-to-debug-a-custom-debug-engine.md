@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Özel hata ayıklama altyapısında hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Özel hata ayıklama altyapısında hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ecd36719170fdc027667e15c6b3913fba86cd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958985"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl Yapılır: Özel hata ayıklama altyapısında hata ayıklama
+# <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: Özel hata ayıklama altyapısında hata ayıklama
 Bir proje türü, gelen hata ayıklama altyapısı (DE) başlatır. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> yöntemi. Yani DE örneğini denetiminde başlatılır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proje türü denetleme. Ancak, söz konusu örneğine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE hata ayıklaması yapılamıyor. Aşağıda, özel DE hata ayıklama olanak tanıyan adımlardır.  
   
 > [!NOTE]

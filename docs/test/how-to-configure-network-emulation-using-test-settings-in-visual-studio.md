@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ae6e3aaf204b54e413a76a8d07e0391a214b007d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d421324b389c33eef50f51f1016b68777b4192b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900736"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917880"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Nasıl Yapılır: Visual Studio'da Test ayarlarını kullanarak ağ öykünmesini yapılandırma
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Test ayarlarını kullanarak ağ öykünmesini yapılandırma
 
 Uygulamanızı Visual Studio'dan farklı ağ ortamlarında test etmek için tanılama veri bağdaştırıcısını yapılandırabilirsiniz. Ayrıca, testlerinizi çalıştırdığınızda bir yapay ağ yükünü veya performans sorununu test etmek için de yapılandırılabilir.
 

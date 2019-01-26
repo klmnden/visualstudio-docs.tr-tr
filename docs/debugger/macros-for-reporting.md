@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8453f00dda843f6940c518b7ed3ea83c8c261476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f185aebdd23bffbcf7b793a9e3fbda4a0b55271
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989980"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959375"
 ---
 # <a name="macros-for-reporting"></a>Raporlama Makroları
 Kullanabileceğiniz hata ayıklama için **_RPTn** ve **_RPTFn** CRTDBG içinde tanımlı makrolar,. Kullanımını değiştirmek için H `printf` deyimleri. Bunları inclose gerekmez **#ifdef**s, çünkü bunlar otomatik olarak, bu sürümde kaybolur ne zaman yapı **_DEBUG** tanımlanmadı.  

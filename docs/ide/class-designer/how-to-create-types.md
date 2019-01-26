@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma'
+title: 'Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131c09b170e86858d8a2855092404208fe06fa91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f71ea519a8eddfc28fbf8bb0d15bdc228050e56a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916474"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960951"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
+# <a name="how-to-create-types-by-using-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
 
 İçin yeni türleri tasarımı için C# ve Visual Basic projeleri, bunları bir sınıf diyagramı üzerinde oluşturun. Varolan türleri görmek için bkz: [nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md).
 

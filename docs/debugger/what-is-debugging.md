@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919336"
 ---
 # <a name="what-is-debugging"></a>Hata ayıklama nedir?
 
@@ -54,4 +54,4 @@ Bu makalede, birkaç genel hata ayıklama kavramları öğrendiniz. Ardından, V
 > [Yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [Daha iyi yazarak hataları düzeltmek C# kod](../debugger/write-better-code-with-visual-studio.md)
+> [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)

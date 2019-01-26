@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73d4d32af6e3aa76dd586f665c66d3ef014518ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961630"
 ---
 # <a name="process-search-dialog-box"></a>İşlem Arama İletişim Kutusu
 Bulmak ve belirli bir işlem düğümü seçmek için bu iletişim kutusunu kullanın [işlemler görünümü](../debugger/processes-view.md). Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir **işlemleri** Görünümü penceresi. Ardından **bulma işlemi** gelen **arama** menüsü.  

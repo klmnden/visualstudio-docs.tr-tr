@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Çarpımlı alfa kullanan doku dışa aktarma'
+title: 'Nasıl yapılır: Çarpımlı alfa kullanan doku dışa aktarma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26bf0eabe0b938f7b5896349f1ff73ee2be255e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988011"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071052"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Nasıl Yapılır: Ön çarpımlı alfa kullanan dokuyu dışarı aktarma
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Nasıl yapılır: Ön çarpımlı alfa kullanan dokuyu dışarı aktarma
 
 Görüntü içeriği ardışık düzeni bir kaynak görüntüden önceden çoğaltılmış alfa dokular oluşturabilir. Bunlar, kullanımı daha basit ve daha sağlamdır ön çarpımlı alfa içermeyen dokular olabilir.
 

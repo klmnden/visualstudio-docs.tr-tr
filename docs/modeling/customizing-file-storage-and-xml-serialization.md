@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918585"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dosya Depolama ve XML Serileştirmeyi Özelleştirme
 
@@ -272,7 +272,7 @@ Bu öğeleri DSL Gezgini altında bulunan **Xml serileştirme Behavior\Class ver
 |Özellik|Açıklama|
 |Özel bir öğe şeması olup|TRUE ise alan sınıfında özel bir öğe şeması olup gösterir.|
 |Özel|Bu ayar **True** , bu etki alanı sınıfı için serileştirme ve seri durumundan çıkarma kendi kodunuzu yazma istiyorsanız.<br /><br /> Çözümü derleyin ve ayrıntılı yönergeler bulmak için hataları inceleyin.|
-|Etki alanı sınıfı|Bu sınıf veri düğümü geçerli olduğu etki alanı sınıfı. Salt okunur.|
+|Domain Class|Bu sınıf veri düğümü geçerli olduğu etki alanı sınıfı. Salt okunur.|
 |Öğe adı|Bu sınıfına ait öğelerin XML düğümü adı. Varsayılan değer, etki alanı sınıfı adı küçük harflerden sürümüdür.|
 |Bilinen ad özniteliği adı|Başvuruyu içerecek bilinen ad öğelerinde kullanılan özniteliğin adı. Boş ise anahtar özelliğinin ve kimliğin adı kullanılır.<br /><br /> Bu örnekte, "name" verilmiştir:  `<personMoniker name="/Mike Nash"/>`|
 |Bilinen ad öğesi adı|Başvurmak için bu sınıfın öğelerine ait bilinen adlar için kullanılan xml öğesinin adı.<br /><br /> Varsayılan değer "Moniker" ile ve sonra sınıf adı küçük bir sürümüdür. Örneğin: `personMoniker`|
@@ -288,7 +288,7 @@ XML özellik düğümleri sınıfı düğümleri altında bulunur.
 |||
 |-|-|
 |Özellik|Açıklama|
-|Etki alanı özelliği|Xml serileştirme yapılandırması verilerinin geçerli olduğu özellik. Salt okunur.|
+|Domain Property|Xml serileştirme yapılandırması verilerinin geçerli olduğu özellik. Salt okunur.|
 |Bilinen ad anahtarı|TRUE ise özellik bu etki alanı sınıf örneklerini başvuru bilinen adlar oluşturmaya yönelik anahtar olarak kullanılır.|
 |Bilinen ad niteleyicisi olduğundan|TRUE ise özellik bilinen Adlardaki niteleyiciyi niteleyici oluşturmak için kullanılır. False ise ve Serializeıd bu etki alanı sınıfı için doğru değilse, bilinen adlar katıştırma ağacında üst öğe bilinen adı tarafından yetkili olan.|
 |Temsili|Attribute ise özellik bir xml özniteliği olarak serileştirilir Öğesi, eğer ise bir öğesi olarak; seri Ignore ise serileştirilmiş.|

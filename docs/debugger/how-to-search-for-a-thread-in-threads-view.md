@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: İş parçacıkları görünümünde iş parçacığı arama | Microsoft Docs'
+title: 'Nasıl yapılır: İş parçacıkları görünümünde iş parçacığı arama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c3b7805f54275c1f2370f981cdd97bdeabfa58c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832170"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069806"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Nasıl Yapılır: İş parçacıkları görünümünde iş parçacığı arama
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Nasıl yapılır: İş parçacıkları görünümünde iş parçacığı arama
 Belirli bir iş parçacığı iş parçacıkları görünümünde iş parçacığı kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. İletişim kutusunda alanları iş parçacığı ağacında seçilen iş parçacığı öznitelikleri gösterir.  
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>İş parçacıkları görünümünde iş parçacığı aramak için  

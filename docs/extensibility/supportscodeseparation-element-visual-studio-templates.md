@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf9747ac8918166f08aa087640160805d850629
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d054348ea88fda4e6e6f7102aaddf49acfe1100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959862"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070480"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation Öğesi (Visual Studio Şablonları)
 Belirtir olup olmadığını **kod ayrı dosyaya Yerleştir** onay kutusunu etkin **Yeni Öğe Ekle** iletişim kutusu.  

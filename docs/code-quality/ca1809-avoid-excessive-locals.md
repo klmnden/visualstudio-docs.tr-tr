@@ -1,5 +1,5 @@
 ---
-title: 'CA1809: Aşırı yerel öğelerden Kaçın'
+title: 'CA1809: Aşırı yerellerden kaçının'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 5c81ea43-cb49-448f-980f-a1dd9764043c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824517aa7d5dc05f9a0297ca44cd235f5800653
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5adce9ea32cb29154d88538d7b142e29b3e29761
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904025"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957682"
 ---
-# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Aşırı yerel öğelerden Kaçın
+# <a name="ca1809-avoid-excessive-locals"></a>CA1809: Aşırı yerellerden kaçının
 
 |||
 |-|-|

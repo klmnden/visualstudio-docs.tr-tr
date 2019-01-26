@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959820"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **ortam** kategori `DTE.Properties("Environment", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı özellikler koleksiyonuna erişmek için kullanılan çağrıdır ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
@@ -133,7 +133,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -0: Giriş sayfasını aç<br />-1: Son yüklenen çözümü yükleme<br />-2: Göster **açık proje** iletişim kutusu<br />-3: Göster **yeni proje** iletişim kutusu<br />-4: Boş ortamı Göster<br />-5: Başlangıç sayfasını göster|
+|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -   0: Giriş sayfasını aç<br />-   1: Son yüklenen çözümü yükleme<br />-   2: Göster **açık proje** iletişim kutusu<br />-   3: Göster **yeni proje** iletişim kutusu<br />-   4: Boş ortamı Göster<br />-   5: Başlangıç sayfasını göster|
 |StartPageRSSUrl|Get/Set (dize)|RSS, akış URL'sini başlatma sırasında kullanılır.|
 |StartPageRefreshDownloadedContent|Get/Set (Boole)|Başlangıç sayfası StartPageRefreshInterval içinde belirtilen aralık her ilgi çekici sonra yeniler.|
 |StartPageRefreshInterval|Get/Set (kısa)|Aralığının başlangıç sayfası yenilemek için dakika cinsinden değeri.|
@@ -146,7 +146,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |ConfirmTaskDeletion|Get/Set (Boole)|Bir onay kutusu görevlerden silerken görüntülenip görüntülenmeyeceğini belirtir **görev listesi**.|
 |WarnOnAddingHiddenItem|Get/Set (Boole)|Bir kullanıcı eklerken uyarı olup olmadığını belirtir gösterilmeyecek bir görevi.|
 |DontShowFilePaths|Get/Set (Boole)|Görev listesinde tam dosya yollarını gösterilip gösterilmeyeceğini belirtir.|
-|CommentTokens|SAFEARRAY'i|SafeArray yorum belirteci değerlerini döndürür. Her alan yok `Name` (dize) ve `Priority` (<xref:EnvDTE.vsTaskPriority>, yüksek, Orta veya düşük).|
+|CommentTokens|SafeArray|SafeArray yorum belirteci değerlerini döndürür. Her alan yok `Name` (dize) ve `Priority` (<xref:EnvDTE.vsTaskPriority>, yüksek, Orta veya düşük).|
 
 ## <a name="web-browser"></a>Web tarayıcısı
  `DTE.Properties("Environment", "WebBrowser")`

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 992fd9a6f45d607538f1091eb7a652984595cc34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3986a90754f073fa28ecce11ff0053ecad512289
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954506"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957929"
 ---
 # <a name="model-for-source-control-packages"></a>Kaynak Denetimi Paketleri için Model
 Şu model, bir kaynak denetim uygulaması örneğini temsil eder. Modelde, uygulamanız gereken arabirimleri ve çağırmalısınız Ortam Hizmetleri bakın. Tüm hizmetleri gibi aslında hizmeti yoluyla elde belirli bir arabirim yöntemlerini çağırın. Sınıfların adlarını, kaynak denetimi nasıl gerçekleştirildiği görmeyi kolaylaştırmak için tanımlanır.  

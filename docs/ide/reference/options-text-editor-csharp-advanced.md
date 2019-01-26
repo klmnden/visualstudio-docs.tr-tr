@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398305"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959729"
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
 
@@ -47,7 +47,7 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Sıraladıktan sonra:
 
    ```csharp
@@ -58,7 +58,7 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Yönerge gruplarını kullanarak Ayır
 
    Bu onay kutusu seçildiğinde, **kullanımları Kaldır ve Sırala** sağ tıklama menüsünü komutta ayıran `using` aynı kök ad alanına sahip yönergeleri grupları arasında boş bir satıra ekleyerek yönergeleri.
@@ -73,28 +73,28 @@ Kullanım **Gelişmiş** Düzenleyici biçimlendirme ayarlarını değiştirmek,
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Sıraladıktan sonra:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Reference bütünleştirilmiş kodlarında türler için using Öner 
-- NuGet paketlerinde türler için using Öner 
+
+- Reference bütünleştirilmiş kodlarında türler için using Öner
+- NuGet paketlerinde türler için using Öner
 
    Bu seçenek seçildiğinde, bir [hızlı eylem](../quick-actions.md) NuGet paketini yüklemek ve eklemek kullanılabilir bir `using` başvurulmayan türleri için yönerge.
 
    ![Visual Studio'da NuGet paketini yüklemek için hızlı eylem](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Vurgulama
 
 - İmlecin altındaki sembole başvuruları Vurgula

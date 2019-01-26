@@ -1,23 +1,23 @@
 ---
-title: 'Nasıl Yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama'
+title: 'Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 799e6fdc50cad91ebd5ee5081b1d80fa296f5a7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb87e8785d58354b837896e4a5af580d348e61f2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954170"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>Nasıl Yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama
+# <a name="how-to-access-and-constrain-the-current-selection"></a>Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama
 
 Bir komut veya hareket işleyici alana özgü dilinizi yazarken, hangi öğe kullanıcı sağ belirleyebilirsiniz. Bazı şekilleri veya alanları seçilmesini de engelleyebilir. Örneğin, kullanıcı bir simge dekoratör tıkladığında, içerdiği şekli yerine seçili düzenleyebilirsiniz. Seçim bu şekilde sınırlama yazmanız gereken işleyicileri sayısını azaltır. Ayrıca şeklinde dekoratör önlemek gerek kalmadan herhangi bir yere tıklayın kullanıcı, kolaylaştırır.
 

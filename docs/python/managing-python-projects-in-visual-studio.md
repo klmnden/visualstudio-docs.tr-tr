@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 384c966c9553ac07131eb74d065df17640305421
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961643"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -113,7 +113,7 @@ Bağlantılı dosyaları aşağıdaki koşullardan herhangi biri altında göz a
 
 Var olan bir öğeye bir bağlantı olarak eklemek istediğiniz dosyayı ekleyin, ardından seçin proje klasöre sağ tıklayın **Ekle** > **var olan öğe**. Görüntülenen iletişim kutusunda, bir dosya seçip **bağlantı olarak Ekle** açılır listeden **Ekle** düğmesi. Koşuluyla çakışan dosya yok, bu komut, seçili klasörde bulunan bir bağlantı oluşturur. Ancak, bu dosyanın bir bağlantısını projesinde zaten var veya aynı ada sahip bir dosya zaten var. bağlantı eklenmez.
 
-Proje klasörleri zaten var olan bir bağlantı çalışırsanız, bir bağlantı değil de, normal bir dosya olarak eklenir. Bir dosya bir bağlantıya dönüştürülecek seçin **dosya** > **Kaydet** dosyası; proje hiyerarşisi dışındaki bir konuma kaydetmek için Visual Studio otomatik olarak bağlantıya dönüştürür. Benzer şekilde, bir bağlantı geri kullanarak dönüştürülebilir **dosya** > **Kaydet** dosyayı proje hiyerarşisi içinde herhangi bir yerde kaydetmek için. 
+Proje klasörleri zaten var olan bir bağlantı çalışırsanız, bir bağlantı değil de, normal bir dosya olarak eklenir. Bir dosya bir bağlantıya dönüştürülecek seçin **dosya** > **Kaydet** dosyası; proje hiyerarşisi dışındaki bir konuma kaydetmek için Visual Studio otomatik olarak bağlantıya dönüştürür. Benzer şekilde, bir bağlantı geri kullanarak dönüştürülebilir **dosya** > **Kaydet** dosyayı proje hiyerarşisi içinde herhangi bir yerde kaydetmek için.
 
 Bir bağlı dosya taşırsanız **Çözüm Gezgini**, bağlantıyı taşınır, ancak gerçek dosyayı etkilenmez. Benzer şekilde, bir bağlantının silinmesi bağlantı dosyasını etkilemeden kaldırır.
 

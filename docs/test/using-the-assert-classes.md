@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Assert methods
 - unit tests, Assert classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8e6dcd374426cc8f5e7fd218ac33e570f1ef57dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 617f5f82f2d6ff2388325f8b623c87e0210ab340
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989522"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070662"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Birim testi için onay sınıflarını kullanma
 

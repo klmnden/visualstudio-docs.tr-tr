@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae45cde013615cd0363f1a97158a178e4b0348c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95308f286506aa9e032e3923bbff23c90d464d48
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943440"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070675"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Şeması koşullu öznitelikleri
 Tüm listeleri ve öğeleri koşullu öznitelikleri uygulayabilirsiniz. Mantıksal işleçler ve sembol genişletme ifadeler true veya false olarak değerlendirin. TRUE ise sonuçta elde edilen çıktıda ilişkili liste veya öğe dahildir.  

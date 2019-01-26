@@ -32,16 +32,16 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847934"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919947"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 
@@ -130,7 +130,7 @@ Visual Studio, WCF istemcileri otomatik olarak bir ara sunucu ve aracılığıyl
 
 **Yapılandırma hizmet başvuruları** iletişim kutusu, hizmet yapılandırmasını özelleştirmenizi sağlar. Hizmet adresini değiştirmek, erişim düzeyi, zaman uyumsuz davranış ve ileti anlaşması türleri belirtin ve tür yeniden yapılandırın.
 
-## <a name="how-to-select-a-service-endpoint"></a>Nasıl Yapılır: Hizmet uç noktası seçin
+## <a name="how-to-select-a-service-endpoint"></a>Nasıl yapılır: Hizmet uç noktası seçin
 
 Bazı Windows Communication Foundation (WCF) Hizmetleri bir istemci hizmeti ile iletişim kurabilir birden çok uç noktalarını kullanıma sunar. Örneğin, bir hizmeti bir HTTP bağlaması ve kullanıcı adı ve parola güvenlik kullanan bir uç nokta ve FTP ve Windows kimlik doğrulaması kullanan ikinci bir uç nokta doğurabilir. İkinci bir intranet üzerinde kullanılabilir ise ilk uç hizmeti bir güvenlik duvarı dışından erişen uygulamalar tarafından kullanılıyor olabilir.
 
@@ -174,7 +174,7 @@ Böyle bir durumda, belirttiğiniz `endpointConfigurationName` bir parametresi o
 
 4.  İçinde `<EndPoint>` etiketlemek, size bir `name="` *SomeService* `"` parametresi (burada *SomeService* bir uç nokta adı temsil eder). Geçirilebilir uç nokta unvanıdır `endpointConfigurationName As String` bir hizmet başvurusu için bir oluşturucu aşırı yüklemesi.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Nasıl Yapılır: Bir hizmet yöntemini zaman uyumsuz olarak çağırma
+## <a name="how-to-call-a-service-method-asynchronously"></a>Nasıl yapılır: Bir hizmet yöntemini zaman uyumsuz olarak çağırma
 
 Windows Communication Foundation (WCF) hizmetlerini çoğu yöntemleri zaman uyumlu veya zaman uyumsuz olarak çağrılabilir. Zaman uyumsuz bir yöntemi çağırmak uygulamanızın yavaş bir bağlantı üzerinden çalıştığında yöntemi Aranan çalışmaya devam olanak tanır.
 
@@ -193,7 +193,7 @@ Bir hizmet başvurusu bir projeye eklendiğinde varsayılan olarak, zaman uyumlu
 
 3.  İçinde **hizmet başvurusu yapılandırma** iletişim kutusunda **zaman uyumsuz işlemler oluşturma** onay kutusu.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Nasıl Yapılır: Bir hizmet tarafından döndürülen veri bağlama
+## <a name="how-to-bind-data-returned-by-a-service"></a>Nasıl yapılır: Bir hizmet tarafından döndürülen veri bağlama
 
 Yalnızca bir denetim için herhangi bir veri kaynağını bağlayabilirsiniz gibi bir denetim için bir Windows Communication Foundation (WCF) hizmeti tarafından döndürülen veriler bağlayabilirsiniz. Hizmet veri döndüren bileşik türler içeriyorsa bir WCF hizmeti bir başvuru eklediğinizde, otomatik olarak eklenen **veri kaynakları** penceresi.
 
@@ -227,7 +227,7 @@ Yalnızca bir denetim için herhangi bir veri kaynağını bağlayabilirsiniz gi
 
 5.  Düğümü form üzerine sürükleyin. İle birlikte formu için denetimler ekleninceye bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Nasıl Yapılır: Varolan türleri yeniden kullan bir hizmetini yapılandırma
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Nasıl yapılır: Varolan türleri yeniden kullan bir hizmetini yapılandırma
 
 Bir hizmet başvurusu için bir proje eklendiğinde, hizmette tanımlanan herhangi bir türü yerel projede oluşturulur. Çoğu durumda, bu hizmet ortak .NET Framework türleri kullanıyorsa veya türleri bir paylaşılan kitaplıkta tanımlandığında yinelenen türleri oluşturur.
 
@@ -255,7 +255,7 @@ Bu sorunu önlemek için bütünleştirilmiş kodlardaki türleri varsayılan ol
 
 | Başlık | Açıklama |
 | - | - |
-| [İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Oluşturma ve Visual Studio'da WCF hizmetleri kullanarak adım adım bir gösterim sağlar. |
+| [İzlenecek yol: Windows Forms içinde basit bir WCF Hizmeti oluşturma](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Oluşturma ve Visual Studio'da WCF hizmetleri kullanarak adım adım bir gösterim sağlar. |
 | [İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Oluşturma ve Visual Studio'da WCF veri hizmetlerini kullanmak için adım adım bir gösterim sağlar. |
 | [WCF geliştirme araçlarını kullanma](/dotnet/framework/wcf/using-the-wcf-development-tools) | Oluşturma ve WCF hizmetlerini Visual Studio'da test anlatılmaktadır. |
 | | [Nasıl yapılır: Ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |

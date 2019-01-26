@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968371"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918608"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Visual Studio'da R kodunu Düzenle
 
@@ -40,7 +40,7 @@ Bu davranışı değiştirmek için bkz: **Gelişmiş** > **sözdizimi denetimi*
 
 ## <a name="edit-and-organize-code"></a>Düzenleme ve kod düzenleme
 
-Kod yazarken RTVS otomatik tamamlama üzerinde açıklandığı şekilde sağlar [IntelliSense](r-intellisense.md) sayfası. Ayrıca, otomatik biçimlendirme küme ayraçları ve ayraç tamamlama gibi yapar: 
+Kod yazarken RTVS otomatik tamamlama üzerinde açıklandığı şekilde sağlar [IntelliSense](r-intellisense.md) sayfası. Ayrıca, otomatik biçimlendirme küme ayraçları ve ayraç tamamlama gibi yapar:
 
 ![Satır içi biçimlendirme animasyon](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Seçeneklerinden **R** > **Gelişmiş** RTVS için sekmesinde özeldir:
 | | Tamamlama listesinde ilk karakteri | Açık | Tamamlanma listesi üzerinde ilk karakter türleri gösterir. Kapalı olduğunda içeren tamamlanma listesi görüntülenir **Düzenle** > **IntelliSense** > **üyeleri Listele** (**Ctrl** + **J**). |
 | | Tamamlama listesinde **sekmesini** anahtarı | Kapalı | Bir veya daha fazla karakter yazarak ve basarak tamamlanma listesi çağırır **sekmesini**. |
 | | Eşleşen bağımsız değişken adları kısmen türleri | Kapalı | Bir işlev çağrısında bağımsız değişken adlarını yazarak, imza Yardımı en iyi eşleşme olan bağımsız değişken için bir açıklama gösterir. |
-| Etkileşimli pencere | Kontrola syntaxe v Konzole R | Kapalı | Söz dizimi etkileşimli pencerede denetimi için geçerlidir. Söz dizimi denetimini, çok satırlı ifadeleri ile doğru şekilde çalışmayabilir. | 
+| Etkileşimli pencere | Kontrola syntaxe v Konzole R | Kapalı | Söz dizimi etkileşimli pencerede denetimi için geçerlidir. Söz dizimi denetimini, çok satırlı ifadeleri ile doğru şekilde çalışmayabilir. |
 | Anahat Oluşturma | Anahat oluşturma kodu | Açık | Çok satırlı ifadeleri gibi alanlar için daraltılabilir bölgeleri otomatik olarak oluşturur. |
 | Sözdizimi denetimi | Zobrazovat chyby syntaxe | Açık | Otomatik söz dizimi kod denetimi sağlar. |

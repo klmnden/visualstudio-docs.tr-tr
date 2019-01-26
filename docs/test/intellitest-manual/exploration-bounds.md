@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935469"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069921"
 ---
 # <a name="exploration-bounds"></a>Keşif sınırları
 
@@ -106,7 +106,7 @@ Bağlı Bu araştırma arkasında motivasyon sırasında Intellitest keşfediyor
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ Intellitest, inceleme sırasında dikkate alacaktır benzersiz yollara maksimum 
 
 Bu araştırma bağlı arkasında motivasyon döngüler veya bir özyinelemede içeren herhangi bir kod yürütme yolları sonsuz sayıda olabilir ve bu nedenle Intellitest olmalıdır sırasında sınırlı olduğu [giriş oluşturma](input-generation.md).
 
-İki ayar **MaxRuns** ve **MaxRunsWithUniquePaths** gibi ilgili: 
+İki ayar **MaxRuns** ve **MaxRunsWithUniquePaths** gibi ilgili:
 
 * Intellitest çağıracaktır parametreli bir test yönteminin en fazla **MaxRuns** zamanlarla farklı test girdileri.
-* Intellitest, yürütülen kodun belirleyici ise, farklı yürütme yolu her zaman alabilir. Ancak, bazı koşullar altında yürütülen kodun izleyin ve bu da, daha önce farklı girişlerle denetlendiği bir yürütme yolu. 
+* Intellitest, yürütülen kodun belirleyici ise, farklı yürütme yolu her zaman alabilir. Ancak, bazı koşullar altında yürütülen kodun izleyin ve bu da, daha önce farklı girişlerle denetlendiği bir yürütme yolu.
 * Intellitest bulduğu kaç tane benzersiz yürütme yolları sayar; Bu sayı sınırlıdır **MaxRunsWithUniquePaths** seçeneği.
 
 <a name="maxexceptions"></a>

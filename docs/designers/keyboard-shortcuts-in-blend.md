@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f60d0643c5c81a1d351d3be8ba29ee8b97ba86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bdb4100efa49394f1a428fc9b367c65534707d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965966"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070442"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend'de klavye kısayolları
 
@@ -40,7 +40,7 @@ ms.locfileid: "53965966"
 |Tüm belgeleri kaydetmek|**CTRL**+**Shift**+**S**|
 |Etkin belgeyi Kapat|**Ctrl**+**W**|
 |Tüm açık belgeleri kapatma|**CTRL**+**Shift**+**W**|
-|Son eylemi geri al|**CTRL**+ Z|
+|Son eylemi geri al|**Ctrl**+Z|
 |Geri alınmış son eylemi yinele|**CTRL**+ Y veya **Ctrl**+**Shift**+**Z**|
 |Tasarım zamanı ek açıklama oluşturma|**CTRL**+**Shift**+**T**|
 |Kes|**CTRL**+**X**|
@@ -76,7 +76,7 @@ ms.locfileid: "53965966"
 |Seçili nesne Öne Getir|**CTRL**+**Shift**+**]**|
 |Öne Getir|**CTRL**+**]**|
 |Seçili nesne Arkaya Gönder|**CTRL**+**Shift**+**[**|
-|Bir geri gönder|**CTRL**+**[**|
+|Bir geri gönder|**Ctrl**+**[**|
 |Bir kullanıcı denetiminin seçili nesnelerin (WPF)|**F8**|
 |Nesneleri oranlarını sınırlamak|Basılı **Shift** nesneyi sürüklerken|
 |15 derecelik artışlarla nesne döndürme|Basılı **Shift** sırasında nesne döndürme|

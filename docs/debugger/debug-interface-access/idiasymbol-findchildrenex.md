@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e045045-da8c-4338-9423-81a1ca20c405
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7014bf0b42e9fcaab313c6b89d0caf1f1678a297
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d816e45aed914390b96cd716a2319b50f9ed959e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928717"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069583"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Alt simge alır. Program üzerinde iyileştirme ile derlenmişse döndürülen yerel semboller dinamik aralık bilgiler içerir.  

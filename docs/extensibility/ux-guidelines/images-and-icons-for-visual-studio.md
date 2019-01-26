@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a49445445388a6db0e6dae9c09b50137c04c4ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880708"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954130"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Görüntüler ve Visual Studio için simgeler
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio görüntü kullanımda  

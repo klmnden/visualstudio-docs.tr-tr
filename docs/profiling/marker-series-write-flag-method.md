@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba32b08de607f28a32cedf4050c4b4db439c1a39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f70f6b357e8baaf721c751c57b21924afaff90e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840505"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069791"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag yöntemi
 Bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.  
@@ -58,9 +58,9 @@ void write_flag(
  Kategori.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** *cvmarkersobj.h*  
+ **Header:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [marker_series sınıfı](../profiling/marker-series-class.md)
+ [marker_series class](../profiling/marker-series-class.md)

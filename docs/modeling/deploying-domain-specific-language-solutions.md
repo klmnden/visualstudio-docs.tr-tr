@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, deployment
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 96718a0a8c3693dd5ff57a356a1da2ddaa1ab5bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 668e6e2866e1d2edfa6e04659b42a653e6769ba9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960639"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Etki Alanına Özgü Dil Çözümlerini Dağıtma
 Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. Visual Studio, hedef bilgisayarda zaten yüklü olmalıdır.
