@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma'
+title: 'Nasıl yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7f094d08403b4410aa3075f90b8ff7c5e5491cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018494"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl Yapılır: Direct2D veya Javascript uygulamaları kullanmak için dokuyu dışarı aktarma
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript uygulamaları kullanmak için dokuyu dışarı aktarma
 
 Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile uyumlu dokular oluşturabilir. Bu tür dokular Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan UWP uygulamalarında kullanım için uygundur.
 

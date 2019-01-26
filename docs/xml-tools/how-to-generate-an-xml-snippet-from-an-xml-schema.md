@@ -1,22 +1,22 @@
 ---
-title: 'Nasıl Yapılır: XML Şemasından XML Kod Parçacığı Oluşturma'
+title: 'Nasıl yapılır: XML Şemasından XML Kod Parçacığı Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31e1805a38d51315c4f0753f363334d1df37ece6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54f8a689c83fc0eb370e2e48a9421071151c9271
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030437"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl Yapılır: XML şemasından XML kod parçacığı oluşturma
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma
 
 XML Düzenleyicisi'ni XML Şeması Tanım Dili (XSD) şemasından XML kod parçacıklarını oluşturma özelliğine sahiptir. Örneğin, öğe adı yanındaki konumlandırılmış olsa bir XML dosyasına yazma gibi basabilirsiniz **sekmesini** öğenin o öğe için şema bilgileri üretilen XML verileri ile doldurmak için.
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041093"
 ---
 # <a name="registering-project-and-item-templates"></a>Proje ve Öğe Şablonlarını Kaydetme
 Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinleri kaydetmeniz gerekir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gösterilecek belirlemek için proje türleri ile ilişkili kayıt bilgileri kullanır **Yeni Proje Ekle** ve **Yeni Öğe Ekle** iletişim kutuları.  
@@ -66,7 +66,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
 ### <a name="registering-file-filters"></a>Dosya filtreleri kaydediliyor  
  İsteğe bağlı olarak, filtre kaydedebilirsiniz, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dosya adları için istediğinde kullanır. Örneğin, [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtre **açık dosya** iletişim kutusudur:  
 
- **Visual C# dosyaları (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
 
  Birden çok filtre kaydını desteklemek için her bir filtrenin hkey_local_machıne\software\microsoft\visualstudio altında kendi alt kayıtlı\\<*sürüm*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*alt*>. Alt anahtar adı isteğe bağlıdır; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] alt anahtarının adı yoksayar ve yalnızca değerlerini kullanır.  
 
@@ -111,7 +111,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
 
  \Form  
 
- \Web Sayfası  
+ \Web Page  
 
  \HelperFiles (çok dosyalı proje öğelerinde kullanılan dosyaları içerir)  
 

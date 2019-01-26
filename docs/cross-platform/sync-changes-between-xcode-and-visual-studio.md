@@ -7,15 +7,15 @@ ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
 ms.technology: vs-ide-mobile
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xamarin
-ms.openlocfilehash: a32d72869a14e22ba8707036cd4b549ef5228d3b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 665eafb9a564ffc140e2784665b5f872eaf0eec9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034122"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>XCode ve Visual Studio arasındaki eşitleme değişiklikleri
 Microsoft Visual C++ mobil geliştirme bileşeni için PC ve Mac arasındaki iş eşitlenmesi uzak yetenekleri içerir Visual Studio ve Mac makinelerinizin birlikte kullanıldığında, iOS projenizi XCode içinde açmak için kullanabileceğiniz Visual Studio'da Uygulama projeleri için yeni seçenekler kullanılabilir kodunuzu XCode ile Visual Studio arasında taşıma ve geçici XCode proje dizinini Temizle.

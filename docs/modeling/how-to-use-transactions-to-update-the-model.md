@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma'
+title: 'Nasıl yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70ec77254ec4d76e978b685441bb8d6e3df1b802
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938348"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921228"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Nasıl Yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma
+# <a name="how-to-use-transactions-to-update-the-model"></a>Nasıl yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma
 İşlem depoya yapılan değişiklikler bir grup olarak kabul edilir emin olun. Gruplandırılmış değişiklikler kaydedilmiş veya tek bir birim olarak geri alındı.
 
  Her program kodunuza değiştirir, ekler veya Visual Studio Görselleştirme ve modelleme SDK'sı Store içindeki herhangi bir öğeyi siler. Bunu bir işlem içinde yapmalısınız. Etkin örneği olmalıdır <xref:Microsoft.VisualStudio.Modeling.Transaction> değişiklik gerçekleştiğinde Store ile ilişkili. Bu, tüm model öğelerini, ilişkiler, şekiller, diyagramları ve özellikleri için geçerlidir.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fba22a2b2dacec57439b66abe6607c248ed1914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b67df621b4eb82529a4b17470e31946476becdfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005936"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Eski kod düzenleyicisine uyum
 Visual Studio düzenleyicisinde, mevcut kod bileşenlerini erişebileceğiniz birçok özelliğe sahiptir. Aşağıdaki yönergeler, olmayan MEF Bileşeni, düzenleyici işlevselliği kullanmak için örneğin, bir VSPackage, uyum gösterilmektedir. Yönergeler ayrıca hem yönetilen hem de yönetilmeyen kod düzenleyicisinin Hizmetleri almak için bağdaştırıcıları kullanmayı gösterir.  

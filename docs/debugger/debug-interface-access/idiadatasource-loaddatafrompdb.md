@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02159073-8144-47f8-a0b0-aa0edcb92b5b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d5433fea2350b8270611ad9145420b9d1ec688
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cc7ce21633fc4f7cb5ad3f4dff141a7a0e46d3b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964461"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023021"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 Açılır ve hata ayıklama veri kaynağı olarak bir program veritabanı (.pdb) dosyası hazırlar.  

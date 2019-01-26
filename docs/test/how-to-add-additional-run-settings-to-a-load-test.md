@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81e745ff44e01f0e699b590cc573c7a1d4c4c9c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022986"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Nasıl Yapılır: Bir yük testine ek çalışma ayarları ekleme
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Nasıl yapılır: Bir yük testine ek çalışma ayarları ekleme
 
 Çalıştırma ayarları yük testinin çeşitli diğer ayarları belirleyin. Bunlar, test sonuçları koleksiyon ayrıntı düzeyi ve test çalıştığında toplanan sayaç kümeleri süresini içerir. Oluşturun ve her bir yük testi için birden çok çalışma ayarlarını depolamak ve ardından test çalıştırması sırasında kullanmak için belirli bir ayar seçin. İlk çalıştırma ayarı kullanarak yük testi oluşturduğunuzda, yük testinize eklenir **Yeni Yük Testi Sihirbazı**.
 

@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad568f43e1064fe264c528d68a39b072bf905db
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 7f629a0b8d9f149ee10f7a35c75e351a6c3abfd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031779"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Seçenekler, metin düzenleyici, HTML (Web formları), doğrulama
 
@@ -27,7 +27,7 @@ Kullanım **doğrulama** nasıl HTML düzenleyicisinin belgenizdeki HTML biçiml
 - **Doğrulama şeması tespiti için doctype kullan**
 
    Hangi öğe, öznitelik ve büyük/küçük harf Bu şemayı geçerli şema belirler. Ayrıca IntelliSense içinde kullanılabilir olan öznitelikler ve etiketler belirler.
-  
+
    Sayfanın içeriğini kullanmak için Visual Studio istiyorsanız bu seçeneği belirleyin **<! DOCTYPE >** bildirimi ve **html** şema belirlemek için öğesi. Bu seçenek ve sayfa seçerseniz bildirimi gibi sahiptir `<!DOCTYPE html>`, Visual Studio, HTML5 şemayı kullanır. Ancak, varsa **html** etiketine sahip bir **xmlns** gibi öznitelik `<html xmlns="http://www.w3.org/1999/xhtml">`, Visual Studio XHTML5 şemayı kullanır.
 
 - **Hiçbir doctype bulunmadığındaki hedef**
@@ -37,7 +37,7 @@ Kullanım **doğrulama** nasıl HTML düzenleyicisinin belgenizdeki HTML biçiml
   - **Hataları göster**
 
      Doğrulamayı etkinleştirmek için onay kutusunu seçin. Onay kutusu seçili değilse, doğrulama hataları Düzenleyici işaretlemiyor.
-    
+
      Bir onay kutularını doğrulama işaretlemek için düzenleyici istediğiniz hataları tek tek tür belirterek ince ayar olanak tanır.
 
      > [!NOTE]

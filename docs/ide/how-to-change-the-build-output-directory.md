@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Derleme çıktı dizinini değiştirme'
+title: 'Nasıl yapılır: Derleme çıkış dizinini değiştirme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,24 +9,24 @@ helpviewer_keywords:
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e74dfb3c9a5e5ccd4a1e61e15a12991433032e6e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379695"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989516"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Nasıl yapılır: Derleme çıktı dizinini değiştirme
+# <a name="how-to-change-the-build-output-directory"></a>Nasıl yapılır: Derleme çıkış dizinini değiştirme
 
 (Hata ayıklama, yayın veya her ikisi için) yapılandırma olarak projeniz tarafından oluşturulan çıkış konumunu belirtebilirsiniz.
 
 > [!NOTE]
 > Varsa bir **Kurulum** proje, bu makalenin sonundaki nota bakın.
 
-## <a name="change-the-build-output-directory"></a>Derleme çıktı dizinini değiştirme
+## <a name="change-the-build-output-directory"></a>Derleme çıkış dizinini değiştirme
 
 1.  Menü çubuğunda, **proje** > **\<uygulamaadı > Özellikleri**. Ayrıca'nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**.
 

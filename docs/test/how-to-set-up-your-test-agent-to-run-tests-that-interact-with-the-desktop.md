@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5fdfa625404ff934faf8e8901bf133d6bc7f873f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57ab5a2971255d943dfe8101ed144c3adecbcec4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016869"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Nasıl Yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Nasıl yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama
 
 Masaüstü ile etkileşmesi gereken otomatik testleri çalıştırmak istiyorsanız, aracınızı hizmet yerine işlem olarak çalıştırmak için ayarlamanız gerekir. Örneğin, uzaktan test denetleyicisi ve test aracısı kullanarak kodlanmış UI testi çalıştırmak istediğiniz ya da bir test çalıştırın ve video, çalıştırdığınızda kaydını yakalamak istiyorsanız, aracınızı işlem olarak çalışacak şekilde ayarlamanız gerekir. Visual Studio kullanarak test ayarlarınızda rollere aracılar atadığınızda, veya rollere aracılar için ortamınızda Microsoft Test Yöneticisi'ni kullanarak atadığınızda, masaüstüyle etkileşimde olması gereken rollere atanmış her aracı için kurulumu değiştirmeniz gerekir.
 

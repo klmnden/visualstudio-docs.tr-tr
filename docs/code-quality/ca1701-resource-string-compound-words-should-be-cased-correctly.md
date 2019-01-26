@@ -1,5 +1,5 @@
 ---
-title: 'CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır'
+title: 'CA1701: Kaynak dizesi bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4ddbe09f-24b8-4c47-9373-a06f4487ca0d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2cc74bb7d3cc15e593d465a8c8d0d55275954ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf671e8c948f4554225278982c4db794fedb974d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023385"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Kaynak dizesi bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır
 
 |||
 |-|-|

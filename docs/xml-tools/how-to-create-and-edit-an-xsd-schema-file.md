@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015523e35f3593523ee362faeb6aa544139e1103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0792149950e3cf1d1e358aac17ae45a3365eda4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977297"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Nasıl Yapılır: Bir XSD şema dosyası oluşturma ve düzenleme
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme
 
 Bu konuda, yeni bir XML Şeması (XSD) dosyası oluşturun ve ardından içerik için XSD dosyası ekleme açıklanmaktadır.
 

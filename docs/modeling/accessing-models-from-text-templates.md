@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966809"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak rapor dosyaları, kaynak kodu dosyaları ve etki alanına özgü dil modelleri tabanlı diğer metin dosyaları oluşturabilirsiniz. Temel metin şablonları hakkında daha fazla bilgi için [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonlarını DSL'nizi ayıklanırken Deneysel modda çalışır ve DSL dağıtmış olan bir bilgisayar üzerinde de çalışır.

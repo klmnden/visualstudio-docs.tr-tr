@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Görünümü yenilemek | Microsoft Docs'
+title: 'Nasıl yapılır: Görünümü yenilemek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 2ed0ba66-7259-486b-a518-aab6e45030aa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc7510986c87115a0f93078fb6788644c984460b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 479b778fb61199a19974d98a5b9910f04f995d54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965633"
 ---
-# <a name="how-to-refresh-the-view"></a>Nasıl Yapılır: Görünümü yenileyin
+# <a name="how-to-refresh-the-view"></a>Nasıl yapılır: Görünümü yenileyin
 Spy ++ sistem tablolarının "snapshot" alır ve bu bilgilere dayanarak bir görünümü yeniler. Düzenli aralıklarla, sistem görünümleri yenileme önemlidir. Açın ve görünüm yenilenmemiş Spy ++ görünüm varsa, bu işlemler, iş parçacıkları ve daha sonra oluşturulan windows tarafından görülmez. Ayrıca, artık öğeleri görebilirsiniz. **Yenile** komutu, iletiler görünümünü dışında tüm görünümlerde kullanılabilir.  
   
 ### <a name="to-refresh-the-currently-active-view"></a>Şu anda etkin görünümü yenilemek için  

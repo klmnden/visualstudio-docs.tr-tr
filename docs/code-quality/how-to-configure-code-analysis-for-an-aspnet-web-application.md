@@ -7,17 +7,17 @@ f1_keywords:
 - vs.codeanalysis.propertypages.asp
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a781e918a925ebd43110339e03d528a4cf6b3c70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1483ba4ea8e726ed61dc7c65ec486d420dbeb8a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853037"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021942"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Nasıl Yapılır: Bir ASP.NET Web Uygulaması İçin Kod Analizini Yapılandırma
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Nasıl yapılır: Bir ASP.NET Web Uygulaması İçin Kod Analizini Yapılandırma
 
 Visual Studio'da Kod Analizi listesinden seçebilirsiniz *kural kümeleri* uygulamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması. Varsayılan kuralı Microsoft en az önerilen kurallar kümesidir. Başka bir kural web sitesine uygulamak için kümesini seçebilirsiniz.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b28d78a-1974-4d8a-8bb7-781bf630f2f4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13669c7a93141f3b54c15a20a5faee43d5a8747
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a9edc2f6e4c8d37aa6c491fcd10e02f0ea285d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953215"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017081"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Bir işlev dönüştürücü türünü alır.  

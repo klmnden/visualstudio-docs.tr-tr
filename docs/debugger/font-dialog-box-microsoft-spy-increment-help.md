@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9c900ac24821a68cdba537771e2e8b24c379960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4716443ae2225428980306beb1c3be0e23b4306e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019326"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Yazı Tipi İletişim Kutusu (Microsoft Spy++ Yardımı)
 Kullanılan karakter yazı tipi yapılandırmak için bu iletişim kutusunu kullanın. bir [Spy ++ görünümleri](../debugger/spy-increment-views.md) penceresi. Bu iletişim kutusunu görüntülemek için genişletin **görünümü** menüsünü seçip **yazı tipi**.  

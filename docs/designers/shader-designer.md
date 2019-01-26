@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8ce5bb964b3d774a7030bfeb1909d8e9042de69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043563"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 
@@ -177,9 +177,9 @@ Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nas
 
 |Komut|Klavye kısayolları|
 |-------------| - |
-|Geçiş **seçin** modu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
-|Geçiş **yakınlaştırma** modu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Geçiş **Pan** modu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Geçiş **seçin** modu|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Geçiş **yakınlaştırma** modu|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Geçiş **Pan** modu|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Tümünü seç|**CTRL**+**A**|
 |Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**Kaçış** (**Esc**)|

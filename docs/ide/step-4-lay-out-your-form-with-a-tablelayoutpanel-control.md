@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eda2189af9fd564c6240909e44db91f297b46b5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821358"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985974"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4. Adım: TableLayoutPanel denetimi ile formunuzu düzenleme
 Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form denetimi. TableLayoutPanel, özel olarak daha sonra ekleyeceksiniz formda denetimleri düzgün şekilde hizalamaya yardımcı olur.

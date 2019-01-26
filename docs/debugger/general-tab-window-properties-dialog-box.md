@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac2cbdea0f5ff8fc14ab2901772cd3b77372d471
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 455706670424bdeb1119036df98bac91e6cc9355
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874621"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018767"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Genel Sekme, Pencere Özellikleri İletişim Kutusu
 Kullanım **genel** seçilen pencere hakkındaki bilgileri görüntülemek için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  

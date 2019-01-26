@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b2699c0c7097eca29cd853d68c8a0e2d910a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1302b2e035bc884bd6b3e914b848eada79e45236
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875582"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014997"
 ---
 # <a name="properties-window"></a>Özellikler Penceresi
 Tasarım zamanı özelliklerini ve düzenleyicilerde ve tasarımcılarda bulunan seçilen nesnelerin olaylarını görüntülemek ve değiştirmek için bu pencereyi kullanın. Ayrıca **özellikleri** düzenlemek ve dosya, proje ve çözüm özelliklerini görüntülemek için penceresi. Bulabilirsiniz **özellikleri** penceresinde **görünümü** menüsü. Ayrıca, F4 tuşuna basarak veya yazarak açabileceğiniz **özellikleri** içinde **hızlı başlatma** penceresi.

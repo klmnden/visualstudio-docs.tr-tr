@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204475"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002541"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>İzleme ve QuickWatch değişkenlerle izleyin 
 
@@ -30,7 +30,7 @@ Hata ayıklarken, kullanabileceğiniz **Watch** windows ve **QuickWatch** deği�
 
 **İzleme** windows aynı anda hata ayıklama sırasında birkaç değişkenleri görüntüleyebilir. **QuickWatch** iletişim kutusu, bir kerede tek bir değişken görüntüler ve hata ayıklama devam etmeden önce kapatılması gerekir.
 
-Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
+Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
 
 ## <a name="observe-variables-with-a-watch-window"></a>İzleme penceresi değişkenleri gözlemleyin
 
@@ -280,5 +280,5 @@ Gözlemlemek için `a` değişkeni
 
 ## <a name="see-also"></a>Ayrıca bkz.
  [Hata ayıklıyor?](../debugger/what-is-debugging.md)  
- [Daha iyi yazarak hataları düzeltmek C# kod](../debugger/write-better-code-with-visual-studio.md)  
+ [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)  
  [Hata ayıklama sırasında ilk bakış](../debugger/debugger-feature-tour.md) [windows hata ayıklayıcı](../debugger/debugger-windows.md)

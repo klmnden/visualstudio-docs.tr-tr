@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Teknik destek için bir bağlantı belirtme | Microsoft Docs'
+title: 'Nasıl yapılır: Teknik destek için bir bağlantı belirtme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f90c020f5bfed1c6b4bd3c63aed67b8ffede7b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933946"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016533"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Nasıl Yapılır: Teknik destek için bir bağlantı belirtme
+# <a name="how-to-specify-a-link-for-technical-support"></a>Nasıl yapılır: Teknik destek için bir bağlantı belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama **destek URL'si** özelliği, bir Web sayfası veya kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımı tanımlar. Bu özellik isteğe bağlıdır; URL sağlanırsa, uygulamanın girişinde görüntülenir **Program Ekle veya Kaldır** iletişim kutusu.  
   
  **Destek URL'si** özelliği, üzerinde ayarlanabilir **Yayımla** sayfasının **Proje Tasarımcısı**.  

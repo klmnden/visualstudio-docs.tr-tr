@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: projeleri hedef birden çok platform için yapılandırma'
+title: 'Nasıl yapılır: Projeleri birden çok platformu hedefleyecek şekilde yapılandırma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4f5a2346a6ae246f9a7676709e35074d71b1437
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930225"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028701"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Nasıl yapılır: projeleri hedef birden çok platform için yapılandırma
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Nasıl yapılır: Projeleri birden çok platformu hedefleyecek şekilde yapılandırma
 
 Visual Studio aynı anda birçok farklı CPU mimarileri veya platformlarını hedeflemek bir çözüm için bir yol sağlar. Ayarlamak için bu özellikleri aracılığıyla erişilen **Configuration Manager** iletişim kutusu.
 
@@ -64,6 +64,6 @@ Ayarlarını yapılandırma ve platform ayarları birleşimi göre değişebilec
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)
+- [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)
 - [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)
 - [Derleme ve temizleme projeleri ve Visual Studio çözümleri](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942759"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Derleme ve temizleme projeleri ve Visual Studio çözümleri
 
-Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projeler veya bir çözümde proje öğeleri temizleyin. Adım adım bir öğretici için bkz [izlenecek yol: uygulama oluşturma](../ide/walkthrough-building-an-application.md).
+Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projeler veya bir çözümde proje öğeleri temizleyin. Adım adım bir öğretici için bkz [izlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [derleme ve temizleme projeleri ve Visual Studio çözümleri için Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -114,11 +114,11 @@ Aşağıdaki adımlardan birini gerçekleştirin:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Nasıl yapılır: Görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
 - [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)
-- [Nasıl yapılır: Hata ayıklama ve dağıtım yapılandırmalarını ayarlama](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Nasıl yapılır: Hata ayıklama ayarlayabilir ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)
 - [C/C++ oluşturma başvurusu](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)
 - [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)

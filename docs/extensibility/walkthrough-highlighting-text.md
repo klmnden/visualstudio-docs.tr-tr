@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab42147b8600b2c17e3454f545c5d3148e31ba9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 272c460b4ee0f171548c29793470b7fccfab601b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945258"
 ---
 # <a name="walkthrough-highlight-text"></a>İzlenecek yol: Metni vurgulama
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına oluşturarak farklı görsel efektler Düzenleyicisi'ne ekleyebilirsiniz. Bu izlenecek yol, bir metin dosyasındaki geçerli kelimenin her geçtiği vurgulamak gösterilmektedir. Bir sözcük, bir metin dosyasına birden fazla kez gerçekleşir ve giriş işaretini bir yineleme getirin, her oluşumu vurgulanır.  

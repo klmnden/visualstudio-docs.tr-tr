@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma | Microsoft Docs'
+title: 'Nasıl yapılır: Görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dabfb6b9209ff57249ceb79460c2bc75e7d63bf6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026203"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma
 
 Visual Studio IDE içinde bir projeyi derledikten sonra bu yapı hakkındaki bilgileri görüntüleyebilirsiniz **çıkış** penceresi. Bu bilgileri kullanarak, örneğin, bir derleme hatası giderme olabilir. C++ projeleri için de aynı bilgileri görüntüleyebileceğiniz bir *.txt* dosyası oluşturulur ve otomatik olarak kaydedilir. Yönetilen kod projeleri için kopyalayın ve yapıştırın bilgilerinden **çıkış** penceresine bir *.txt* dosya ve dosyayı kaydedin. IDE, hangi tür bilgileri, her yapı hakkındaki görüntülemek istediğinizi belirtmek için de kullanabilirsiniz.
 

@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme | Microsoft Docs"
+title: "Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0939fd9499f9699d5672fe5bb7ef580ffe75489
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021487"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Nasıl Yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme
 Uzantınızı yükseltme açıklanmıştır.  
   
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ Uzantınızı yükseltme açıklanmıştır.
   
 2.  Yükseltme tamamlandıktan sonra en yeni sürümüne dış program yolunu değiştirmek *devenv.exe*. ' Nde proje düğümüne sağ **Çözüm Gezgini**, ardından **özellikleri**. İçinde **hata ayıklama** sekmesinde, metin kutusu tarafından Bul **harici program Başlat** ve yolunu değiştirmek *devenv.exe* Visual Studio 2015 yoluna hangi görünmelidir aşağıdakine benzer:  
   
-     *%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe*  
+     *%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe*  
   
 3.  Bir başvuru ekleyin *Microsoft.VisualStudio.Shell.14.0.dll*. ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **Ekle** > **başvuru**. Select **uzantıları** sekmesini ve ardından **Microsoft.VisualStudio.Shell.14.0**.)  
   

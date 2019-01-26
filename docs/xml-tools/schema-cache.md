@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 574de335bdc7be6cbef658009645efbd6bc6620d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 131926011a12f397310fe6d4a70836a4972b48bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026820"
 ---
 # <a name="schema-cache"></a>Şema önbelleği
 
@@ -29,21 +29,21 @@ Aşağıdaki tablo, XML Düzenleyicisi ile yüklenen şemaları açıklar.
 |-| - |
 | *catalog.xsd* | XML Düzenleyicisi şema katalog dosyaları için şema. Şema kataloglarının hakkında daha fazla bilgi için aşağıya bakın. |
 | *DotNetConfig.xsd* | Web.Config dosyaları için şema "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild.xsd* | MSBuild oluşturma dosyaları için şema "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *MSDATA.xsd* | Tarafından eklenen XSD ek açıklamalar şeması <xref:System.Data.DataSet> sınıfı, "urn: schemas-microsoft-schemas-msdata". |
+| *msbuild.xsd* | MSBuild oluşturma dosyaları için şema "<http://schemas.microsoft.com/developer/msbuild/2003>". |
+| *msdata.xsd* | Tarafından eklenen XSD ek açıklamalar şeması <xref:System.Data.DataSet> sınıfı, "urn: schemas-microsoft-schemas-msdata". |
 | *msxsl.xsd* | Şema Microsoft XSLT betik bloğu uzantıları urn: schemas-microsoft-com:xslt. |
 | *SnippetFormat.xsd* | Kod parçacığı XML dosyaları için şema. Örnekler için bkz *%InstallDir%\VC#\Expansions*. |
 | *Soap1.1.xsd* | Basit Nesne Erişim Protokolü (SOAP) 1.1 şeması http://schemas.xmlsoap.org/soap/envelope/. |
 | *Soap1.2.xsd* | Basit Nesne erişim protokolü 1.2 şeması. |
 | *SiteMapSchema.xsd* | ASP.NET site haritası XML dosyası için şema "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL.xsd* | Web hizmeti Açıklama dili için şema http://schemas.xmlsoap.org/wsdl/. |
+| *wsdl.xsd* | Web hizmeti Açıklama dili için şema http://schemas.xmlsoap.org/wsdl/. |
 | *xenc.xsd* | XML şifreleme şeması http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML.xsd* | XHTML için şema http://www.w3.org/1999/xhtml. |
-| *XLink.xsd* | XLink1.0 için şema http://www.w3.org/1999/xlink. |
-| *XML.xsd* | Şema XML: Space ve XML: lang özniteliklerini açıklayan http://www.w3.org/XML/1998/namespace. |
+| *xhtml.xsd* | XHTML için şema http://www.w3.org/1999/xhtml. |
+| *xlink.xsd* | XLink1.0 için şema http://www.w3.org/1999/xlink. |
+| *xml.xsd* | Şema XML: Space ve XML: lang özniteliklerini açıklayan http://www.w3.org/XML/1998/namespace. |
 | *xmlsig.xsd* | XML dijital imzalar için şema http://www.w3.org/2000/09/xmldsig#. |
 | *xsdschema.xsd* | XSD kendisini tanımlayan bir şema http://www.w3.org/2001/XMLSchema. |
-| *XSLT.xsd* | XML Şeması dönüştürür, http://www.w3.org/1999/XSL/Transform. |
+| *xslt.xsd* | XML Şeması dönüştürür, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Önbellekte güncelleştirme
  XML Düzenleyicisi paket yüklenir ve çalışırken değişiklikler için izleyen Düzenleyicisi şema önbellek dizini yükler. Bir şema eklediyseniz bilinen şemalar bir bellek içi dizine otomatik olarak yüklenir. Bir şema kaldırılmışsa, bellek içi dizinden otomatik olarak kaldırılır. Bir şema güncelleştirildiyse, bu şema bellek içi önbellek otomatik olarak çıkarır.

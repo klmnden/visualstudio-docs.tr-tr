@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 486d25b8-a590-41c1-bdb5-faff3ae35632
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba69f49650c1c90233a6fda44529d0bd9f2f913
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c2d2567eac66e15b3c096f3b4d6932347c65fac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998813"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Yığın çerçevesinin özellikleri sunar.  

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921189"
 ---
 # <a name="work-with-the-r-interactive-window"></a>R etkileşimli pencere ile çalışma
 
@@ -51,24 +51,24 @@ Etkileşimli pencere ile kendi araç çubuğu şöyledir:
 
 Araç çubuğu komutlarını gibidir, çoğunu klavye eşdeğerleri ve üzerinde de kullanılabilir **R Araçları** > **oturumu** ve **R Araçları**  >  **Çalışma dizini** menüleri (ya da belirtildiği gibi):
 
-| Düğme | Komut | Tuş bileşimi | Açıklama | 
+| Düğme | Komut | Tuş bileşimi | Açıklama |
 | --- | --- | --- | --- |
 | ![Sıfırla düğmesi](media/repl-toolbar-01-reset.png) | Sıfırlama | **CTRL**+**Shift**+**F10** | Tüm değişkenler ve geçmişi temizleniyor etkileşimli penceresi oturumu sıfırlar. |
 | ![Temizle düğmesi](media/repl-toolbar-02-clear.png) | Temizle | **CTRL**+**m** | Etkileşimli pencerede gösterilen çıktıya temizler; oturum değişkenleri veya geçmiş etkilemez. |
 | ![Geçmişi düğmeleri](media/repl-toolbar-03-history.png) | Önceki History komutu<br/>Sonraki History komutu | **Yukarı**, **aşağı**<br/>**Alt**+**yukarı**, **Alt**+**aşağı** | Çok satırlı kod blokları için belirli davranışlarla geçmişi kayar. Bkz: [geçmişi](#history). |
 | ![Yük çalışma düğmesi](media/repl-toolbar-04-load-workspace.png) | Çalışma alanı yükleme | yok | Bir önceki çalışma kaydedilen yükler (bkz [çalışma alanları ve oturumları](#workspaces-and-sessions). |
 | ![Düğme olarak çalışma alanını kaydetme](media/repl-toolbar-05-save-workspace-as.png)| Çalışma alanı olarak Kaydet | yok | Bir çalışma alanı olarak oturum geçerli durumunu kaydeder (bkz [çalışma alanları ve oturumları](#workspaces-and-sessions). |
-| ![Kaynak R betiği düğmesi](media/repl-toolbar-06-source-r-script.png) | Source Skript R | **CTRL**+**Shift**+**S** | Çağrıları `source` etkin R betiği ile Visual Studio düzenleyicisinde, kodun çalıştığı.  Bu düğme, yalnızca bir R dosyası Visual Studio Düzenleyicisi'nde açık olduğunda görünür. | 
+| ![Kaynak R betiği düğmesi](media/repl-toolbar-06-source-r-script.png) | Source Skript R | **CTRL**+**Shift**+**S** | Çağrıları `source` etkin R betiği ile Visual Studio düzenleyicisinde, kodun çalıştığı.  Bu düğme, yalnızca bir R dosyası Visual Studio Düzenleyicisi'nde açık olduğunda görünür. |
 | ![Source skript R echo düğmesi](media/repl-toolbar-07-source-r-script-with-echo.png) | Source Skript R Echo | **CTRL**+**Shift**+**girin** | Kaynak R betiği ile aynı ancak betiğin içeriklerini etkileşimli pencerede görüntüler. |
 | ![R düğmesi kesme](media/repl-toolbar-08-interrupt-r.png)| Kesme R | **ESC** | Etkileşimli pencerede, hiçbir çalışan kodu gibi durdurur `while` döngü ekran görüntüsünde, bu bölümün başında gösterir. |
-| ![Hata ayıklayıcı düğmesi ekleme](media/repl-toolbar-09b-attach-debugger.png)| Hata ayıklayıcının | yok | Ayrıca kullanılarak **hata ayıklama** > **R etkileşimli ekleme** komutu. | 
+| ![Hata ayıklayıcı düğmesi ekleme](media/repl-toolbar-09b-attach-debugger.png)| Hata ayıklayıcının | yok | Ayrıca kullanılarak **hata ayıklama** > **R etkileşimli ekleme** komutu. |
 | ![Kaynak dosya konumu düğmesi için çalışma dizinini Ayarla](media/repl-toolbar-10-set-working-directory-source.png)| Çalışma dizini için kaynak dosya konumu ayarlayın | **CTRL**+**Shift**+**E** | En son kaynaklı dosyası çalışma dizinine yüklenen etkileşimli pencereye kümeleri (kullanarak `source`). Bkz: [çalışma dizini](#working-directory). |
 | ![Proje konumu düğmesi için çalışma dizinini ayarlayın](media/repl-toolbar-11-set-working-directory-to-project.png) | Çalışma dizini proje konumuna ayarlayın | **CTRL**+**Shift**+**P** | Visual Studio'da yüklü proje kök çalışma dizinini ayarlar. Bkz: [çalışma dizini](#working-directory). |
 | (Metin alanı) | Çalışma seçin dizini | yok | Çalışma dizini için doğrudan giriş alanı. Bkz: [çalışma dizini](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Çalışma alanları ve oturumlar
 
-Etkileşimli pencerede kod çalıştıran bir bağlamı geçerli oturumunuzdaki oluşturur. Genel değişkenler, işlev tanımları, kitaplık yükler ve benzeri bağlam oluşur. Bu bağlam topluca adlı bir *çalışma*, kaydedin ve herhangi bir zamanda çalışma alanları yüklemek. 
+Etkileşimli pencerede kod çalıştıran bir bağlamı geçerli oturumunuzdaki oluşturur. Genel değişkenler, işlev tanımları, kitaplık yükler ve benzeri bağlam oluşur. Bu bağlam topluca adlı bir *çalışma*, kaydedin ve herhangi bir zamanda çalışma alanları yüklemek.
 
 Seçme **çalışma Kaydet** düğme veya kullanarak **R Araçları** > **oturumu** > **çalışma Kaydet**komut sizden bir konum ve dosya adı için (varsayılan uzantısı *. RData*).
 

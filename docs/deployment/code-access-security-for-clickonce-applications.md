@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018351"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce uygulamaları için kod erişimi güvenliği
 ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sınırlamalarına tabi olan. Bu nedenle, uygulamaları kod erişim güvenliği ve ClickOnce uygulamalarınızı buna göre yazma anlamak önemlidir.  

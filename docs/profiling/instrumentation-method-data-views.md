@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 266f342253fd19098f9d889faa10f6df1bf38c78
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02f41220860d4147ef2185d1b44dd7645454a082
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018208"
 ---
 # <a name="instrumentation-method-data-views"></a>İzleme metodu veri görünümleri
 Bu bölüm, görünümleri ve raporları araç haline getirme yöntemi kullanılarak üretilen Profil Oluşturucu veri dosyalarının yönelik başvuru bilgileri içerir.  

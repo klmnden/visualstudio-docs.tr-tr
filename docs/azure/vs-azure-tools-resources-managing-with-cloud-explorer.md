@@ -2,7 +2,7 @@
 title: Cloud Explorer ile Azure kaynaklarını yönetme | Microsoft Docs
 description: Visual Studio içinden Azure kaynaklara göz atıp yönetmek için cloud Explorer'ı kullanmayı öğrenin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,18 +10,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 443e2ac54782dd3807f6b165757cf231ebea6bae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa424c54ee9aaa0ba32dedc0bc49ee870095661a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031264"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer'da Azure hizmetlerinizle ilişkilendirilmiş kaynakları yönetme
 
-Bulut Gezgini, Azure kaynaklarını ve kaynak gruplarını görüntüleme, özelliklerini inceleme ve Visual Studio içinde temel Geliştirici tanılama eylemleri gerçekleştirmek sağlar. 
+Bulut Gezgini, Azure kaynaklarını ve kaynak gruplarını görüntüleme, özelliklerini inceleme ve Visual Studio içinde temel Geliştirici tanılama eylemleri gerçekleştirmek sağlar.
 
-Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer, Azure Resource Manager yığını üzerinde oluşturulur. Bu nedenle, Cloud Explorer, Azure kaynak grupları gibi kaynakları ve Logic apps ve API apps gibi Azure hizmetlerinin anlar ve desteklediği [rol tabanlı erişim denetimi](/azure/role-based-access-control/role-assignments-portal) (RBAC). 
+Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud Explorer, Azure Resource Manager yığını üzerinde oluşturulur. Bu nedenle, Cloud Explorer, Azure kaynak grupları gibi kaynakları ve Logic apps ve API apps gibi Azure hizmetlerinin anlar ve desteklediği [rol tabanlı erişim denetimi](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -33,19 +33,19 @@ Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Bir Azure ekleme hesabı için Cloud Explorer
 
-Bir Azure hesabı ile ilişkili kaynakları görüntülemek için hesap için Cloud Explorer eklemeniz gerekir. 
+Bir Azure hesabı ile ilişkili kaynakları görüntülemek için hesap için Cloud Explorer eklemeniz gerekir.
 
 1. İçinde **Cloud Explorer**seçin **Azure hesap ayarları**.
 
    ![Cloud Explorer Azure hesap ayarları simgesi](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Seçin **hesapları yönetme**. 
+1. Seçin **hesapları yönetme**.
 
    ![Cloud Explorer ekleme hesabının bağlantısı](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
-1. Gözatmak istediğiniz kaynakları Azure hesabında oturum açın. 
+1. Gözatmak istediğiniz kaynakları Azure hesabında oturum açın.
 
-1. Bir Azure hesabı için oturum açtıktan sonra ilgili hesapla ilişkili abonelikleri görüntüleyin. Göz atın ve ardından istediğiniz hesap aboneliklerinin onay kutularını işaretleyin **Uygula**. 
+1. Bir Azure hesabı için oturum açtıktan sonra ilgili hesapla ilişkili abonelikleri görüntüleyin. Göz atın ve ardından istediğiniz hesap aboneliklerinin onay kutularını işaretleyin **Uygula**.
 
    ![Cloud Explorer: görüntülemek için Azure aboneliklerini seçin](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
@@ -53,7 +53,7 @@ Bir Azure hesabı ile ilişkili kaynakları görüntülemek için hesap için Cl
 
    ![Cloud Explorer kaynak için bir Azure hesabı listeleme](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
-## <a name="remove-an-azure-account-from-cloud-explorer"></a>Bir Azure hesabı bulut gezgininden Kaldır 
+## <a name="remove-an-azure-account-from-cloud-explorer"></a>Bir Azure hesabı bulut gezgininden Kaldır
 
 1. İçinde **Cloud Explorer**seçin **hesap yönetimi**.
 
@@ -75,9 +75,9 @@ Azure kaynaklarınızı görüntülemek için ya da seçebilirsiniz **kaynak tü
 
    ![İstenen kaynak görünümü seçmek için bulut Gezgini açılır listesi](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
-1. Bağlam menüsünden istenen görünümü seçin: 
+1. Bağlam menüsünden istenen görünümü seçin:
 
-   * **Kaynak türleri** görünümü: kullanılan genel görünümü [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Azure kaynaklarınızın, sanal makineler web uygulamaları ve depolama hesapları gibi türlerine göre kategorilere gösterir. 
+   * **Kaynak türleri** görünümü: kullanılan genel görünümü [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Azure kaynaklarınızın, sanal makineler web uygulamaları ve depolama hesapları gibi türlerine göre kategorilere gösterir.
    * **Kaynak grupları** görüntüleme - kategorilere ayıran Azure kaynakları ile bunların ilişkili Azure kaynak grubu tarafından. Bir kaynak grubu, genellikle belirli bir uygulama tarafından kullanılan Azure kaynakları paketidir. Azure kaynak grupları hakkında daha fazla bilgi edinmek için [Azure Resource Manager'a genel bakış](/azure/azure-resource-manager/resource-group-overview).
 
    Aşağıdaki görüntüde bir karşılaştırma iki kaynağın görünüm gösterilmektedir:

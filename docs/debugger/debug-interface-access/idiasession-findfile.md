@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b010b60ef911dea970bf68567fc75a8c29e04f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d36847416801965841d79b5be9e9a654487b96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986910"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 Derlenecek dosya ve ada göre kaynak dosyaları alır.  

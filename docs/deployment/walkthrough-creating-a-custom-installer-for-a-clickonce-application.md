@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcf81d6ddba8fdd4fbdbc3e1ea9ca15b7682498
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0e16ec76a6c820afc672bf38729c18b92cf2cdf8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991012"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025663"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>İzlenecek yol: ClickOnce uygulaması için özel bir yükleyici oluşturma
 Herhangi bir ClickOnce uygulaması temel bir *.exe* dosya sessizce yüklenebilir ve özel bir yükleyici tarafından güncelleştirildi. Özel bir yükleyici özel iletişim kutuları için güvenlik ve Bakım işlemlerine dahil olmak üzere yüklemesi sırasında özel bir kullanıcı deneyimi uygulayabilirsiniz. Özel yükleyici yükleme işlemlerini gerçekleştirmek için kullandığı <xref:System.Deployment.Application.InPlaceHostingManager> sınıfı. Bu yönerge, sessiz bir ClickOnce uygulamasını yükleyen özel bir yükleyici oluşturma işlemini gösterir.  

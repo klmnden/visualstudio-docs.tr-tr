@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 514e3efe56c18288a596d4414512064ed4dcc157
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a9d7c2713e7bc37a47cce91ef2da4acade45b88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920337"
 ---
-# <a name="how-to-use-xml-snippets"></a>Nasıl Yapılır: XML kod parçacıklarını kullanma
+# <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML kod parçacıklarını kullanma
 
 XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML kod parçacıklarını çağırabilirsiniz. **Parçacık Ekle** komut İmleç konumuna XML kod parçacığı ekler. **Surround With** komut XML kod parçacığı seçili metin etrafına sarmalar. Her XML kod parçacığı, kod parçacığı türleri atadığı. Kod parçacığı türleri, kod parçacığı ile kullanılabilir olup olmadığını belirlemek **parçacık Ekle** komutu **Surround With** komut veya her ikisi de.
 

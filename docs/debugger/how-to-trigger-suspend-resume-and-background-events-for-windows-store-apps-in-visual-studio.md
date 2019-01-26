@@ -12,15 +12,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9c5543150708238ecc0026bcb1acb012feaaf37d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1fa94c632ad4296eac4eb81ca3e172ad0893b86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018585"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Nasıl tetikleyeceğinizi askıya alma, sürdürme ve UWP uygulamaları Visual Studio'da hata ayıklarken arka plan olayları
 Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uygulamanızın yürütme durumunu denetler — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve cihaz durumu olarak sonlandırılıyor. Windows hata ayıklaması yapıyorsanız, bu etkinleştirme olaylarını devre dışı bırakır. Bu konu, hata ayıklayıcı bu olayları tetiklemesine açıklar.  

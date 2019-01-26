@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Web sayfalarında JavaScript kod profil | Microsoft Docs'
+title: 'Nasıl yapılır: Web sayfalarında JavaScript kod profil | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043524"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Nasıl Yapılır: Web sayfalarında JavaScript kodu profili
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Nasıl yapılır: Web sayfalarında JavaScript kodu profili
 
 Visual Studio profil oluşturma araçları, yürütülen JavaScript kodu için performans verilerini toplayabilir bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, bir rastgele web sayfası veya yöntemi profil oluşturma Araçları'nı kullanarak JavaScript uygulaması. Internet Explorer 8 veya sonraki sürümünü gerektirir.
 

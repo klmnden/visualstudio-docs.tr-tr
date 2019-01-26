@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05a1cc9e4847b9ffa2c873b137c35bfbf6f83f83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5dc69ca726ddf2f2167be7c52038f3963492281
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014867"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu
 Erişim için **Just-ın-Time** sayfasında, Git **Araçları** menüsüne ve ardından **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **hata ayıklama** düğümünü seçip alt **Just-ın-Time**. Bu sayfa, Just-ın-yönetilen kod, yerel kod ve betik hata ayıklama Time etkinleştirmenize izin verir. Daha fazla bilgi için [tam zamanında hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md).  
@@ -57,4 +57,4 @@ Erişim için **Just-ın-Time** sayfasında, Git **Araçları** menüsüne ve ar
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama, Seçenekler iletişim kutusu](../debugger/debugging-options-dialog-box.md)   
- [Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme](../debugger/how-to-specify-debugger-settings.md)
+ [Nasıl yapılır: Hata Ayıklayıcısı Ayarlarını Belirtme](../debugger/how-to-specify-debugger-settings.md)

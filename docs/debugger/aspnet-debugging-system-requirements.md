@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 334f2887b85cf0c58ace27cfca65984b29067246
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d86b27a27884c0b8764c28a25ffb8ea9623efd9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025383"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
 Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hata ayıklama senaryoları:  
@@ -53,4 +53,4 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [Nasıl yapılır: Bir Kullanıcı Hesabı Altında Çalışan İşlemini Çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

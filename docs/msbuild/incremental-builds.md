@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fb67169fa2ac563dd813ce505b93776761736c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a8543f98778bfdcf1b1a7ae14c12a7d92058947
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035295"
 ---
 # <a name="incremental-builds"></a>Artımlı derlemeler
 Artımlı derlemeleri en iyi duruma getirilir ve böylece göre ilgili giriş dosyaları güncel olduğundan Çıkış dosyalarını olan hedefleri yürütülmez derlemeleri ' dir. Hedef öğe olabilir bir `Inputs` hangi hedef öğeler gösteren özniteliği, giriş olarak bekliyor ve bir `Outputs` ne üretir çıktı olarak öğelerini gösteren özniteliği. MSBuild, bu öznitelik değerleri, 1-1 eşlemesini bulmayı dener. 1-1 eşleme varsa, her giriş öğesinin zaman damgası için çıkış karşılığı zaman damgası MSBuild karşılaştırır. 1-1 eşleme sahip Çıkış dosyalarını, tüm giriş dosyaları için karşılaştırılır. Kendi çıktı dosyasını aynı yaş ise güncel veya kendi girdi dosyası veya dosya daha yeni bir öğe olarak kabul edilir.  

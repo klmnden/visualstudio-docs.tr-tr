@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e86b6163a581a2bd7233596b3871a82f356b3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930719"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988772"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve Seçim (Kaynak Denetimi VSPackage’ı)
 Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Birden fazla kaynak denetimi VSPackage'ı kayıtlı değilse, kullanıcı uygun zamanlarda yüklemek için hangi VSPackage'ı seçebilirsiniz. Bkz: [VSPackages](../../extensibility/internals/vspackages.md) VSPackages ve bunları kaydetme hakkında daha fazla bilgi.  
@@ -42,7 +42,7 @@ Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCL
 | Anahtar adı | Girdileri |
 | - | - |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (varsayılan) rg_sz =: {ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (varsayılan) rg_sz =:\<paketin kolay adı ><br /><br /> Hizmet rg_sz =: {SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (varsayılan) rg_sz =:\<paketin kolay adı ><br /><br /> Service = rg_sz:{SID_SccPkgService} |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (varsayılan) rg_sz =: #\<kaynak kimliği için yerelleştirilmiş adı ><br /><br /> Paket rg_sz =: {ID_Package} |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Unutmayın anahtar adı `SourceCodeControl`, tarafından kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve bir seçimi olarak kullanılamıyor \<PackageName >.) | (varsayılan) rg_sz =: {ID_Package} |
   

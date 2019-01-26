@@ -8,16 +8,16 @@ dev_langs:
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cdb8f4a419bfaa2d4e5d6c93bad4daede6c10990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be750ec83c10b5b052b7ac378d4e77438e60edbe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988183"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042562"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak SQL sınıflarına LINQ oluşturma
 [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı verileri sağlayan [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -54,8 +54,8 @@ ms.locfileid: "53988183"
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Tür**|**int**|**TRUE**|
-    |**FirstName**|**Nvarchar(200)**|**False**|
-    |**Soyadı**|**Nvarchar(200)**|**False**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**Soyadı**|**nvarchar(200)**|**False**|
     |**Yöneticisi**|**int**|**TRUE**|
 
 3.  Kimlik sütunu birincil anahtar olarak ayarlayın.
@@ -190,6 +190,6 @@ ms.locfileid: "53988183"
 
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [İzlenecek yol: (O R Designer) SQL sınıflarına LINQ oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama (O/R Tasarımcısı)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Nasıl yapılır: Visual Basic'de nesne modeli oluşturmak veyaC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

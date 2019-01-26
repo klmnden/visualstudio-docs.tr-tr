@@ -5,18 +5,18 @@ ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65ec6298b9bdc2aeaec6df0f209cd460f4e70b4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860458"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001336"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Nasıl Yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma
 Varlık sınıfları arasındaki ilişkilendirmeleri [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] veritabanındaki tablolar arasında ilişki benzer. Kullanarak varlık sınıfları arasında ilişkiler oluşturabilirsiniz **ilişkilendirme Düzenleyicisi** iletişim kutusu.
 
 Kullandığınızda, bir üst ve alt sınıfı seçmelisiniz **ilişkilendirme Düzenleyicisi** ilişkilendirme oluşturmak için iletişim kutusu. Birincil anahtarı içeren varlık sınıfı üst sınıftır; yabancı anahtar içeren varlık sınıfı alt sınıfıdır. Örneğin, varlık sınıfları eşleştiren oluşturulup oluşturulmadığını `Northwind Customers` ve `Orders` tablolar `Customer` sınıfı üst sınıfın olacaktır ve `Order` sınıfı alt sınıfı olması.

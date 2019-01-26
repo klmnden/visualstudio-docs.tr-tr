@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9c458891a13a28d9b13ec9674a4a9e829b95a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba089ace95308ddcf6067920da8484064e797ecd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015114"
 ---
 # <a name="graphics-log-document"></a>Grafik Günlük Belgesi
 Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalışırken oluşan bir grafik olaylarını kaydıdır. Kaydedilen sonra Visual Studio grafik Çözümleyicisi aygıtını işleme ve performans sorunlarını tanılama günlüğüne inceleyebilirsiniz.  
@@ -114,4 +114,4 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [İzlenecek yol: Gölgeleme Nedeniyle Çıkan Oluşturma Hatalarını Ayıklama](walkthrough-debugging-rendering-errors-due-to-shading.md)

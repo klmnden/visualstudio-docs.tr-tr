@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a44ec16fb88f031701ffbdd08ca972486684a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eef3d0732921bdd22b5753db6d7f769371bc335a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898157"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021604"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  

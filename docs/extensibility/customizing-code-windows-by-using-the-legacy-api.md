@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44ff4fb8a8a2e60b047361624ae805910906c19e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022059"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Eski API'sini kullanarak kod windows özelleştirme
 Bir kod penceresinde bir veya daha fazla metin görünümlerini destekleyen bir belge penceresi nesnesidir. Tam bir kod penceresi özelliklerini ilişkili dil hizmetine bağlıdır. Çok Belgeli Arabirim (MDI) modunda kod penceresinde MDI alt çerçeve ' dir.  

@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bce8ffbfc1aebe10bd6bd9a84fe59c51dcaa273
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827448"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027561"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Nasıl Yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma
 Sembol tarama araçlarını **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrı tarayıcısı** ve **sembol sonuçları Bul**, yeni veriler için istekleri geçirin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi. Nesne yöneticisine uygun kitaplıkları bulur ve simgelerin yeni listeleri ister. İstenen veriler için sağlayarak kitaplıkları yanıt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nesnesi Yöneticisi üzerinden <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi çağrıları yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> verileri almak için arabirim ve doldurmak veya sembol tarama araçlarını görünümlerini güncelleştirmek için kullanır.  
   
  Bir kitaplık, aracı çağrılır, düğümün genişletilmiş veya görünümün yenilenmesi veri istekleri alabilirsiniz. Bir sembol Tarama Aracı ilk kez çağrıldığında, nesne yöneticisine kitaplık en üst düzey listesi sağlamak için ister. Kullanıcı bir liste düğümünü genişlettiğinde, kitaplığı alt düğüm altında bir listesini sağlar. Her nesne Yöneticisi'ni sorgulama, ilgi alanı öğenin dizinini içerir. Yeni bir listesini görüntülemek için nesne yöneticisine kaç öğelerdir listeden öğeleri, adları, erişilebilirlik ve diğer özellikleri türünü belirlemeniz gerekir.  

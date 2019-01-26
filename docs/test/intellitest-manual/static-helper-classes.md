@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56493da196a0d53ead738b2eff6d10a2f9328c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897806"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929331"
 ---
 # <a name="static-helper-classes"></a>Statik yardımcı sınıfları
 
@@ -131,7 +131,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +149,8 @@ Normalde, Intellitest tüm yürütme yolları kod yürütme sırasında kapsayac
 
 **Örnek**
 
-Bu örnek uygulamasını gösterir **PexAssume.Arrays.ElementsAreNotNull** yöntemi. Yönteminde farklı boyutlarda dizinin oluşturulmaya çalışılırken Intellitest önlemek için dizi değeri lengh kısıtlamalar yoksayın. Kısıtlamalar yalnızca burada göz ardı edilir. Test edilen kod için farklı dizisi uzunluklarının farklı davranır, Intellitest farklı boyutlu diziler kısıtlamaları test edilmiş kod üretilemiyor.
+Bu örnek uygulamasını gösterir **PexAssume.Arrays.ElementsAreNotNull** yöntemi.
+Yönteminde farklı boyutlarda dizinin oluşturulmaya çalışılırken Intellitest önlemek için dizi değeri lengh kısıtlamalar yoksayın. Kısıtlamalar yalnızca burada göz ardı edilir. Test edilen kod için farklı dizisi uzunluklarının farklı davranır, Intellitest farklı boyutlu diziler kısıtlamaları test edilmiş kod üretilemiyor.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

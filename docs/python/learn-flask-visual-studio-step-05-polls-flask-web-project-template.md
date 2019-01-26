@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ecbfb1c9b399327bede2fe479f0518a26e107e7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d49567e9a152d044b8529d01f3c33de0889fa662
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026925"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. Adım: Polls – Flask Web projesi şablonunu kullanma
 

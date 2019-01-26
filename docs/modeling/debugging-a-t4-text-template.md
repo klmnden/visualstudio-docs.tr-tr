@@ -7,16 +7,16 @@ helpviewer_keywords:
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93990d8437df75ff290d6c471f5f2ff38f710959
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033914"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonunda hata ayıklama için metin şablonu dosyasını kaydedin ve ardından **T4 şablonunda Hata Ayıkla** Çözüm Gezgini içinde dosyanın kısayol menüsünde. Bir çalışma zamanı metin şablonunda hata ayıklama için yalnızca ait olduğu uygulama hata ayıklama.

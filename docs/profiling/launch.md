@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336c655a7a8e36ca7aee68d34f175d3b70a58bb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fcd6a5d9008a53e1ae6cd25954d047b68e3168de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033225"
 ---
 # <a name="launch"></a>Başlat
 **Başlatma** seçeneği profil oluşturucu örnekleme metodu kullanılarak başlatılır ve ayrıca belirtilen uygulamayı başlatır.  
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Yeni bir pencerede belirtilen komut satırı uygulamasını başlatır.  
   
- **Bağımsız değişkenleri:** `ArgList`  
+ **Args:** `ArgList`  
  Uygulamaya devredilecek bağımsız değişkenler listesini belirtir.  
   
  **LineOff**  
@@ -60,7 +60,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Örnekleme seçenekleri  
  Örnekleme aralığı şunlardan biri belirtilebilir üzerinde **başlatma** komut satırı. Varsayılan örnekleme aralığı 10.000.000 işlemci saat döngülerini ' dir.  
   
- **Zamanlayıcı**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Sayaç**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**ayırma** &#124;  **yaşam süresi**]  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
  Sayısı ve örnekleme aralığı türünü belirtir.  
   
 -   **Zamanlayıcı** -örnekleri her `Cycles` durdurulmamış işlemci saat döngüsü. Varsa `Cycles` belirtilmezse, 10.000.000 döngüleri kullanılır.  

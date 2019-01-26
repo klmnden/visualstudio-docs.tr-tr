@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ed748ab3353dc8f5164c562b3523ee49930931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e9df8057c7360a8e2a79ad7d826ba1fc90c3c5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015764"
 ---
 # <a name="performance-report-overview"></a>Performans raporuna genel bakış
 Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **performans raporu** penceresi Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamının (IDE). Profil oluşturma verilerinin .vsp .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntüleme ve uygulama performans sorunlarını analiz etmenize olanak sağlar.  

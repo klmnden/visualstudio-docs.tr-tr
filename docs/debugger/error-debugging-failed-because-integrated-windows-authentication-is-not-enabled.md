@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7235985db460c4cddf53c8e9d30c33b5b298bf44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018468"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Hata: Tümleşik Windows kimlik doğrulaması etkinleştirilmediğinden hata ayıklama başarısız oldu
 Hata ayıklama isteyen kullanıcının kimlik doğrulaması, kimlik doğrulama hatası tarafından engellendi. Bir Web uygulaması veya bir XML Web hizmeti adımlamak çalıştığınızda ortaya çıkabilir. Bu hatanın bir nedeni, tümleşik Windows kimlik doğrulamasının etkin olduğunu. Bunu etkinleştirmek için "Tümleşik Windows kimlik doğrulamasını etkinleştirmek için." bulunan adımları izleyin.  
@@ -114,6 +114,6 @@ Hata ayıklama isteyen kullanıcının kimlik doğrulaması, kimlik doğrulama h
 10. Kapat **Internet Information Services (IIS) Yöneticisi'ni** penceresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft Özet kimlik doğrulaması](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [Windows Vista ile IIS 7.0 Web uygulamaları ve Visual Studio çalıştıran](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

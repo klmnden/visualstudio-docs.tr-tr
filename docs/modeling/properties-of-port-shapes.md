@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d53e6c512b6f026772339c79c46eeb6854fb0095
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5559bd3b27f66ab54a05ca7be184b8aff34ae636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938412"
 ---
 # <a name="properties-of-port-shapes"></a>Bağlantı Noktası Şekillerinin Özellikleri
 Bağlantı noktası şekiller oluşturulan tasarımcıda alan sınıfları temsil etmek için kullanabilirsiniz.

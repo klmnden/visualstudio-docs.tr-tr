@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f2c95b2275389bf02755440745ad3b788956722
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8f759e24671bd397fba691a45f2b0417521064d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023748"
 ---
 # <a name="when-to-create-project-types"></a>Proje Türlerinin Oluşturulacağı Durumlar
 Yeni bir proje türü oluşturmayı sağlayan temel özelleştirmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcılarınız için. Ancak, yeni bir proje türü oluşturmak için tüm gerekli değildir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] özelleştirmeler. Aşağıdaki yönergeler, yeni bir proje türü senaryonuz için gerekli olup olmadığını belirlemenize yardımcı olmalıdır.  

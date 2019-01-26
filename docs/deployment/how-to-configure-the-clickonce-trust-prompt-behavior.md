@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ClickOnce güven istemi davranışını yapılandırma | Microsoft Docs'
+title: 'Nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e9e0f9f0af2ba8dd30a64810bfa655001ef38a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb27334fdbee014937b52df628d6c8e128cc5ac0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976829"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl Yapılır: ClickOnce güven istemi davranışını yapılandırma
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce güven istemi davranışını yapılandırma
 Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları, konsol uygulamaları, WPF tarayıcısı gibi ClickOnce uygulamaları yükleme seçeneğine izin verilip verilmeyeceğini denetlemek için ClickOnce güven istemi yapılandırabilirsiniz. uygulamaları ve Office çözümleri. Güven istemi, her bir son kullanıcının bilgisayarında bulunan kayıt defteri anahtarlarını ayarlayarak yapılandırın.  
   
  Aşağıdaki tabloda her beş bölgeleri (Internet, UntrustedSites, Bilgisayarım, LocalIntranet ve TrustedSites) uygulanan yapılandırma seçenekleri gösterilmektedir.  

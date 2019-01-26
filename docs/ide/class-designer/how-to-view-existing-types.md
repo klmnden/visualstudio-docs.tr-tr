@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)'
+title: 'Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78e92e5d6f8b21dde2660491a944620ac19069b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb594bd1096dbf2908ed2daa21706f60d329264e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038363"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Nasıl Yapılır: Sınıf Tasarımcısı'nda varolan türleri görüntüleme
+# <a name="how-to-view-existing-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda varolan türleri görüntüleme
 
 Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şeklini ekleyin.
 

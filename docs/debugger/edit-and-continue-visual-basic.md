@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3e1305a67fa4347a8b39b677c5be31ada257b65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d36ab4ed41b790fd43cfe97c67f39b07782ab0ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016544"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Düzenle ve Devam Et (Visual Basic)
 Düzenle ve devam et özelliği olan [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] , hata ayıklama kesme modunda yürütülürken kodunuzu değiştirmenize olanak sağlar. Kod düzenlemeler uygulandıktan sonra yeni düzenlemeler yerinde ile kod yürütmeyi devam etmek ve etkisine bakın.  
@@ -45,7 +45,7 @@ Düzenle ve devam et özelliği olan [!INCLUDE [vbprvb](../code-quality/includes
  Bu bölümdeki konularda, bu özelliği kullanmak nasıl ve ne tür değişiklikler hakkında ek ayrıntılar izin verilmeyen sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Düzen ile kesme modunda düzenlemeleri uygulayın ve devam et](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Nasıl yapılır: Düzenle ve Devam Et ile Kesme Modunda Düzenleme Uygulama](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Kodu kesme modunda düzenlemeleri uygulama açıklanmaktadır.  
   
  [Desteklenen kod değişiklikleri (C# ve Visual Basic)](../debugger/supported-code-changes-csharp.md)   

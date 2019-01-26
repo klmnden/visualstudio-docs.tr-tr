@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f67a8e354addef7aca298ebac3740702951a17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db1b4ec3c2ae5fa0b24c3981e2b0296b54aec3cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869914"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016375"
 ---
 # <a name="messages-view"></a>İletiler Görünümü
 Her pencere bir ilişkili ileti akışı içerir. İletiler Görünümü penceresi bu ileti akışı görüntüler. Pencere tanıtıcısı, ileti kodu ve ileti gösterilir. Bir iş parçacığı veya işlem de bir iletiler görünümü oluşturabilirsiniz. Bu, belirli bir işlem veya pencere Başlatma iletilerinin yakalamak için özellikle yararlıdır iş parçacığı tarafından sahip olunan tüm windows gönderilen iletileri görüntülemenize olanak sağlar.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7b594e87780e1b81ea24ee1f1a94b43eba2095
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dca2db30d923fafa000828c0942bbc7d730cb587
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021721"
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 Bu arabirim, bir işlem sonlandırılır, beklenmedik şekilde çıkar veya öğesinden ayrıldı gönderilir.  

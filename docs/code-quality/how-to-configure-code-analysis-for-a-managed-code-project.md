@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb5e667e92f4dc580a0224c1cc3fce099ed5533
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003363"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl Yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Analizini Yapılandırma
 
 Visual Studio'da, Kod Analizi listesinden seçim yapabilir [kural kümeleri](../code-quality/rule-set-reference.md)) yönetilen kod projesi için uygulanacak. Varsayılan olarak, **Microsoft en az önerilen kurallar** kural kümesi işaretli, ancak isterseniz kümesi farklı bir kural uygulayabilirsiniz. Bir çözümde bir veya birden çok proje için kural kümeleri uygulanabilir.
 

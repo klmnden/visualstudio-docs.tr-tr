@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)'
+title: 'Nasıl yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac0ff3943d1209b0442c29785408c70b55cef43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae44c349fac2b299d1533ffb6081e5bd04cafb44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009657"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Nasıl Yapılır: Sınıf diyagramlarını özelleştirme
+# <a name="how-to-customize-class-diagrams"></a>Nasıl yapılır: Sınıf diyagramlarını özelleştirme
 
 Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsiniz. Tüm diyagramı veya tasarım yüzeyinde tek tek türleri özelleştirebilirsiniz.
 

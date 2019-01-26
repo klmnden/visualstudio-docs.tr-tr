@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Derlemeyi temizleme | Microsoft Docs'
+title: 'Nasıl yapılır: Derlemeyi temizleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddd4158561b0bac7ea3347738f13f0f9530002ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1dab142315a7d243caf6604c5f2745244ff166e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027938"
 ---
-# <a name="how-to-clean-a-build"></a>Nasıl Yapılır: Derlemeyi temizleme
+# <a name="how-to-clean-a-build"></a>Nasıl yapılır: Derlemeyi temizleme
 Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve Çıkış dosyalarını silinir. Proje ve bileşen dosyalarından yeni örneklerini Ara ve çıkış dosyalarının sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevleri Kitaplığı hakkında daha fazla bilgi için bkz. [görev başvurusu](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturun  

@@ -8,13 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-manager: douge
-ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870066"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016245"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 
@@ -189,7 +189,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF000000 örneğini](../../extensibility/ux-guidelines/media/000000.png "#FF000000 örneği")<br />`#FF000000` | ![WindowText örneğini](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText örneği")<br />`WindowText` |
 | Arka Plan | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FFEEEEF2` | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30` | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
 
-## <a name="codelens-ui"></a>CodeLens kullanıcı Arabirimi
+## <a name="codelens-ui"></a>CodeLens UI
 
 ![CodeLens UI](../../extensibility/ux-guidelines/media/codelens.png "CodeLens kullanıcı Arabirimi")
 

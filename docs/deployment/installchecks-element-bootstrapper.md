@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023583"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; öğesi (Önyükleyici)
 `InstallChecks` Öğesinin desteklediği tüm uygulama için uygun önkoşulların yüklendiğinden emin olmak için yerel bilgisayara karşı testler çeşitli başlatılıyor.  
@@ -168,7 +168,7 @@ ms.locfileid: "53865987"
 |Özellik|Notlar|Olası değerler|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Windows 9 X işletim sistemi sürüm numarası.|4.10 Windows 98 =|  
-|`VersionNT`|Windows NT tabanlı bir işletim sistemi sürüm numarası.|Major.Minor.ServicePack<br /><br /> 5.0 Windows 2000 =<br /><br /> 5.1.0 Windows XP =<br /><br /> 5.1.2 Windows XP Professional SP2 =<br /><br /> 5.2.0 Windows Server 2003 =|  
+|`VersionNT`|Windows NT tabanlı bir işletim sistemi sürüm numarası.|Major.Minor.ServicePack<br /><br /> 5.0 Windows 2000 =<br /><br /> 5.1.0 Windows XP =<br /><br /> 5.1.2 Windows XP Professional SP2 =<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|64 bit Windows NT tabanlı bir işletim sistemi sürüm numarası.|Aynı daha önce bahsedilen.|  
 |`VersionMsi`|Windows Installer hizmeti sürüm numarası.|2.0 Windows Installer 2.0 =|  
 |`AdminUser`|Bir kullanıcının Windows NT tabanlı bir işletim sistemi üzerinde yönetici ayrıcalıklarına sahip olup olmadığını belirtir.|0 = yönetici ayrıcalığı yok<br /><br /> 1 = yönetici ayrıcalıkları|  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b373fd51087526c30243391b6b0b32ad27e15ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027431"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenler
 Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri birleştirin. Tutarlılık açısından en önemli bileşik desenler Visual Studio'da bazıları şunlardır:  

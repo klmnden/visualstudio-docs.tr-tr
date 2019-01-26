@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 387c00fa9440bd8a6ffdc862e9b91110dadcfd69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4dcd9806459a1cdc92d3eb698fcae7b4a7e0fa6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016466"
 ---
 # <a name="security-issues"></a>Güvenlik sorunları
 Visual Studio kullanarak bir programda hata ayıklamak için gerekli olan tek izinlere olanları programı çalıştırmak için bir geliştirici gerektirir aynıdır. Bu, çoğu durum için uzaktan hata ayıklamayı içerir. Internet bilgi hizmeti gibi diğer hizmetlerle ilgili bazı durumlarda, daha yüksek bir izin düzeyi gerektirebilir.  

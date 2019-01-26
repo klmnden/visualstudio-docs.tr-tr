@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yönetilen kodda iş parçacığı adı ayarlama | Microsoft Docs'
+title: 'Nasıl yapılır: Yönetilen kodda iş parçacığı adı ayarlama | Microsoft Docs'
 ms.date: 04/27/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b555c324de9ffc26bbe7a6c9231614deb279bfa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994611"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Nasıl Yapılır: Yönetilen kodda iş parçacığı adı ayarlama
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Nasıl yapılır: Yönetilen kodda iş parçacığı adı ayarlama
 İş parçacığı adlandırma herhangi bir sürümünü Visual Studio mümkündür. İş parçacığı adlandırma, iş parçacığı izlemek için kullanışlıdır **iş parçacıkları** penceresi.
   
  Yönetilen kodda iş parçacığı adı ayarlamak için kullanın <xref:System.Threading.Thread.Name%2A> özelliği.  
@@ -77,4 +77,4 @@ End Sub
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Nasıl yapılır: Yerel kodda iş parçacığı adı ayarlama](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Nasıl yapılır: Yerel Kodda İş Parçacığı Adı Ayarlama](../debugger/how-to-set-a-thread-name-in-native-code.md)

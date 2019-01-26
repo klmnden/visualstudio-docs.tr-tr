@@ -6,15 +6,15 @@ f1_keywords:
 - vs.performance.property.general
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3dce2f53ef0e16563ff73d188e5d475c42bf0fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc99869276588da43a897e7b087f6e1251651b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896415"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026781"
 ---
 # <a name="set-general-performance-session-options"></a>Genel performans oturumunu ayarlama seçenekleri
 
@@ -45,4 +45,4 @@ Altında seçeneklerden birini seçerek temel koleksiyonu yöntemi ayarlamak **p
 
 |||
 |-|-|
-|**Rapor**. Varsayılan olarak, profil oluşturma veri (.vsp) dosyasının profillenen uygulamanın adı verilir ve çözüm veya proje klasöründe bulunur. Bir tarih dizesini de adının sonuna eklenir ve artan bir sayı, aksi halde yinelenen adlara sahip olabileceği veri dosyalarına eklenir. Bu seçenekleri değiştirebilirsiniz.|- [Nasıl Yapılır: Performans veri dosyası adı seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)|
+|**Rapor**. Varsayılan olarak, profil oluşturma veri (.vsp) dosyasının profillenen uygulamanın adı verilir ve çözüm veya proje klasöründe bulunur. Bir tarih dizesini de adının sonuna eklenir ve artan bir sayı, aksi halde yinelenen adlara sahip olabileceği veri dosyalarına eklenir. Bu seçenekleri değiştirebilirsiniz.|- [Nasıl Yapılır: Performans Veri Dosyası Adlandırma Seçeneklerini Ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)|

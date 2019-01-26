@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1145c1369f13c04957b4b0f4c4ccf84569773986
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e6214ec04dbf45e7d6b5a973babe4c7d95b571b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882993"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020093"
 ---
 # <a name="assembly-information-dialog-box"></a>Derleme Bilgileri İletişim Kutusu
 **Derleme bilgileri** iletişim kutusu değerlerini belirtmek için kullanılır [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] genel bütünleştirilmiş kod öznitelikleri, projenize otomatik olarak oluşturulan AssemblyInfo dosyasında depolanır. İçinde **Çözüm Gezgini**, dosya bulunan **Projem** düğümünde [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (tıklayın **tüm dosyaları göster** görüntülemek için); altında bulunan  **Özellikleri** içinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Derleme öznitelikleri hakkında daha fazla bilgi için bkz: [öznitelikleri](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).

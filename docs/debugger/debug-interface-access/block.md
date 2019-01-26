@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec49d3c147d6666c81e5ba1ef6d092de5baf0ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40fc3c1ecd68177fdc032f634b73e65c8b41c443
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832547"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033836"
 ---
 # <a name="block"></a>Blok
 Her kod bloğu tarafından tanımlanan bir `SymTagBlock` sembol. Blok simgeler işlevlerdeki iç içe kapsamları tanımlamak için kullanılır.  

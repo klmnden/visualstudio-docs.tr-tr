@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c02e529740bdfe5e2b0ed9bdfecd077ee05f4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaa02f87a0bb9737112121343226c2dc0e45937a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824333"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015478"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Sınıf Sekmesi, Pencere Özellikleri İletişim Kutusu
 Kullanım **sınıfı** seçilen pencere sınıf üzerinde bilgi göstermek için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  

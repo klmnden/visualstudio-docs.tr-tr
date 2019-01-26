@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e67d5ed5fbab83edb9b2aeea99e22a71c52424e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e6969d8bf49390e0dd79a1a201e272bc0aae84e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015296"
 ---
 # <a name="com-server-and-container-debugging"></a>COM Sunucusunda ve Kapsayıcısında Hata Ayıklama
 COM uygulamaları programcının doğrudan denetimi dışında görevleri gerçekleştirin. DLL'ler arasındaki iletişim, kullanım nesneler üzerinde sayar ve beklenmeyen davranışlara burada karşılaşabileceğiniz alanları birkaçı Pano işlemlerdir. Bu durumda, ilk adımınız sorunun kaynağını izlemektir.  

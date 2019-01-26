@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Satır içi derleme kodunda hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Satır içi derleme kodunda hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e5e7eb7dcfe8103370e30b0be18a0fdcda298d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935430"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018676"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Nasıl Yapılır: Satır içi derleme kodunda hata ayıklama
+# <a name="how-to-debug-inline-assembly-code"></a>Nasıl yapılır: Satır içi derleme kodunda hata ayıklama
 
 > [!NOTE]
 > İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).

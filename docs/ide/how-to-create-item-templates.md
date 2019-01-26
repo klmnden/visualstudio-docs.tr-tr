@@ -7,15 +7,15 @@ helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 766df44bc5b793b589120de928f7c21e424e9f69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952267"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003355"
 ---
-# <a name="how-to-create-item-templates"></a>Nasıl Yapılır: Öğe şablonları oluşturma
+# <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 
 Bu makalede bir öğe şablonunu kullanarak oluşturma işlemi gösterilmektedir **şablonu Dışarı Aktarma Sihirbazı**. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: Çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).
 

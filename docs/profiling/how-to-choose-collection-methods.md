@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Koleksiyon metotları seçme | Microsoft Docs'
+title: 'Nasıl yapılır: Koleksiyon metotları seçme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8502f37e02fb668905dec2b548aba9229e8e7051
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43759d33c776e7ca4a6bdd8269df4bee0f882a53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982942"
 ---
-# <a name="how-to-choose-collection-methods"></a>Nasıl Yapılır: Toplama metotlarını seçme
+# <a name="how-to-choose-collection-methods"></a>Nasıl yapılır: Toplama metotlarını seçme
 
 Visual Studio Profil Araçları performans verilerini toplama üç yöntemleri destekler: örnekleme, izleme ve eşzamanlılık. .NET bellek ayırma ve yaşam süresi verilerini toplamak için örnekleme veya Araçlar yöntemi de kullanabilirsiniz.
 

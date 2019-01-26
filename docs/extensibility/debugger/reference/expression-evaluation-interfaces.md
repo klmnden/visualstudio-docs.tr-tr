@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5367d12593ae9789ff0529c76cc0494a6f99ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74e65d56701aaa2e9a864d822cb7b44435e2bb09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024259"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -40,14 +40,14 @@ ms.locfileid: "53932278"
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Bir değişken için sayısal bir diğer adı temsil eder ve bir ifade değerlendiricisi uygulama etki alanı diğer adı için elde edilir (EE) sağlar.|  
 |[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|Bir dizi nesnesi temsil eder.|  
 |[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|Yönetilen dizi nesnesini temsil eder ve bir ifade değerlendiricisi dizisi için temel dizin (alt sınırı) belirlemek için (EE) sağlar.|  
-|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|GİZLE|Hata ayıklama simgeleri gerçek bellek adresleri için bağlamalar bir bağlayıcı temsil eder.|  
-|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|GİZLE|Aynı [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) arabirim türleri, diğer adlar ve özel görselleştiriciler erişim ancak sağlar.|  
+|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|Hata ayıklama simgeleri gerçek bellek adresleri için bağlamalar bir bağlayıcı temsil eder.|  
+|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|Aynı [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) arabirim türleri, diğer adlar ve özel görselleştiriciler erişim ancak sağlar.|  
 |[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)|EE|İfade değerlendirici temsil eder.|  
 |[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|Gelişmiş bir ifade değerlendiricisi (EE) sürümünü temsil eder.|  
 |[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|İfade değerlendiricisi (EE) ile bir Gelişmiş ayrıştırıcı ağacı temsil eder.|  
 |[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|Bir işlevi temsil eder.|  
 |[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|Bir işlevi temsil eder ve geliştirir [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) arabirimi.|  
-|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|GİZLE|Hata ayıklayıcının çıkış penceresinde bir ileti görüntülemek bir ifade değerlendiricisi (EE) sağlar.|  
+|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|Hata ayıklayıcının çıkış penceresinde bir ileti görüntülemek bir ifade değerlendiricisi (EE) sağlar.|  
 |[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|Yönetilen kod nesnesini temsil eder.|  
 |[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|Herhangi bir simge temsil eden temel arabirim bir bellek adresini bağlı.|  
 |[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|Aynı [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) arabirimi, ancak ek bilgilere erişim sağlar.|  

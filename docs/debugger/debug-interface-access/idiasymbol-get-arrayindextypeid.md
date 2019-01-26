@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 013f3283b4a362e05a9fd7d9bf80c70963991b50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e11eccf44699c7c3b482d8f8a50fd338f003974e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990535"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986696"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 Sembol dizi dizini tür tanımlayıcısını alır.  

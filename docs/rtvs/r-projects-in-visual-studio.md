@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66dc3cfcdd8cf815ba8f7744b36e0c04a750d49a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990582"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio'da R projeleri oluşturma
 
@@ -65,14 +65,14 @@ Mevcut bir klasörü varsa *. R* bir projede, yönetmek istediğiniz dosyaları 
 Proje özellik sayfaları'ni açmak için projeye sağ **Çözüm Gezgini** seçip **özellikleri**, ya da seçin **Proje > (proje adı) özellikleri** menüsü öğe. Açılan pencerede, proje özellikleri görüntüler:
 
 
-| Tab | Özellik | Açıklama | 
-| --- | --- | --- | 
-| Çalıştır | Başlangıç dosyası | İle çalıştırılan dosyasının adı **kaynak başlangıç dosyası** komutu **F5**, **hata ayıklama** > **hata ayıklamayı Başlat**, veya  **Hata ayıklama** > **ayıklamadan Başlat**. Proje dosyasına sağ tıklayıp **başlangıç R betiği ayarlamak** başlangıç dosyası olarak da ayarlar. | 
-| | R çalıştırmada etkileşimli sıfırlama | Tüm değişkenler etkileşimli pencerenin çalışma alanından projeyi çalıştırırken temizler. Bunu garanti var, bunu hiçbir denetlerler çalıştırmalardan kalan çalışma içeriğidir. | 
-| | Uzak proje yolu | Bir uzak çalışma alanı yolu. | 
-| | Aktarım dosyalarda Çalıştır | Proje, filtrede tabi dosyalar olup olmadığını gösteren **dosyaları aktarmak için**, her çalıştırma ile uzak bir çalışma alanına kopyalanacak. | 
-| | Dosyaları aktarmak için | Dosya adları ve joker karakterler, bir uzak çalışma alanına kopyalamak için belirli dosyaları belirten **aktarım çalışma dosyalarını** seçilir. | 
-| Ayarlar | (Settings.R dosyası) | R proje ayarları geldiğini *Settings.R* veya **. Settings.R* projede bulunan dosyalar. Ayarlar dosyası yoksa, değişkenler, sayfa ve bir varsayılan kaydetme ekleyebilirsiniz *Settings.R* dosya sizin için oluşturulur. Projeye ayar dosyası ekleyebilirsiniz **dosya** > **Yeni Öğe Ekle** menü komutu. <br/> Ayarları R kodu olarak depolanır ve bu nedenle önceden tanımlı ayarlar ortamıyla önceden doldurma, diğer modüllerin çalıştırmadan önce dosya kaynağı. | 
+| Tab | Özellik | Açıklama |
+| --- | --- | --- |
+| Çalıştır | Başlangıç dosyası | İle çalıştırılan dosyasının adı **kaynak başlangıç dosyası** komutu **F5**, **hata ayıklama** > **hata ayıklamayı Başlat**, veya  **Hata ayıklama** > **ayıklamadan Başlat**. Proje dosyasına sağ tıklayıp **başlangıç R betiği ayarlamak** başlangıç dosyası olarak da ayarlar. |
+| | R çalıştırmada etkileşimli sıfırlama | Tüm değişkenler etkileşimli pencerenin çalışma alanından projeyi çalıştırırken temizler. Bunu garanti var, bunu hiçbir denetlerler çalıştırmalardan kalan çalışma içeriğidir. |
+| | Uzak proje yolu | Bir uzak çalışma alanı yolu. |
+| | Aktarım dosyalarda Çalıştır | Proje, filtrede tabi dosyalar olup olmadığını gösteren **dosyaları aktarmak için**, her çalıştırma ile uzak bir çalışma alanına kopyalanacak. |
+| | Dosyaları aktarmak için | Dosya adları ve joker karakterler, bir uzak çalışma alanına kopyalamak için belirli dosyaları belirten **aktarım çalışma dosyalarını** seçilir. |
+| Ayarlar | (Settings.R dosyası) | R proje ayarları geldiğini *Settings.R* veya **. Settings.R* projede bulunan dosyalar. Ayarlar dosyası yoksa, değişkenler, sayfa ve bir varsayılan kaydetme ekleyebilirsiniz *Settings.R* dosya sizin için oluşturulur. Projeye ayar dosyası ekleyebilirsiniz **dosya** > **Yeni Öğe Ekle** menü komutu. <br/> Ayarları R kodu olarak depolanır ve bu nedenle önceden tanımlı ayarlar ortamıyla önceden doldurma, diğer modüllerin çalıştırmadan önce dosya kaynağı. |
 
 ## <a name="r-specific-project-commands"></a>R özel Proje komutları
 
@@ -84,7 +84,7 @@ Visual Studio projeleri sağ tıklama menüsü aracılığıyla genel komutları
 | İçeren klasörü aç | Seçilen dosya konumunda Windows Explorer'ı açar. |
 | R betiği Ekle | Oluşturur ve yeni bir açılır *. R* varsayılan ada sahip bir dosya. Ayrıca **Ekle** > **yeni öğe** oluşturmak için komut *. R* birkaç diğer dosya türlerinin yanı sıra dosyaları. Bkz: [R özel öğe şablonları](#r-specific-item-templates). |
 | R Markdown Ekle | Oluşturur ve açar Yeni *.rmd* varsayılan ada sahip bir belge. Ayrıca **Ekle** > **yeni öğe** oluşturmak için komut *.rmd* birkaç diğer dosya türlerinin yanı sıra dosyaları. Bkz: [R özel öğe şablonları](#r-specific-item-templates).  |
-| Saklı yordamları Yayımla | R betiklerini yer alan tüm saklı yordamlar yayımlamak için bir işlem başlatır. Bkz: [çalışma ile SQL Server saklı yordamları](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Saklı yordamları Yayımla | R betiklerini yer alan tüm saklı yordamlar yayımlamak için bir işlem başlatır. Bkz: [çalışma ile SQL Server saklı yordamları](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>R özel öğe şablonları
 
@@ -97,7 +97,7 @@ RTVS belirli dosya türleri için şablonlar içerir. Projekt R sağ tıklatıp 
 | --- | --- |
 | R betiği | R komut satırına girilen aynı komutları içeren bir metin dosyası. |
 | R Markdown | Bir dosya içeren bir [R Markdown](rmarkdown-with-r-in-visual-studio.md) belge. |
-| R ayarları | R uygulama ayarlarını içeren bir dosya. | 
+| R ayarları | R uygulama ayarlarını içeren bir dosya. |
 | Dokumentace R | Yalnızca ad, diğer ad ve başlık alanları içeren genel R belge dosyası. |
 | Dokumentace R (Funkce) | Bir işlev tanımlamak için yorum içeren daha fazla alan içeren bir R belge dosyası. |
 | Dokumentace R (veri kümesi) | Bir veri kümesini tanımlamak için yorum içeren daha fazla alan içeren bir R belge dosyası. |

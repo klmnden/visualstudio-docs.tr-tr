@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Beklenmedik konumlarda özel durumlar harekete geçirmeyin'
+title: 'CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4e1bade4-4ca2-4219-abc3-c7b2d741e157
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824f257c19b219f78d226a82469cffb315f3069a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bfdb12dfbe5bf0f0bee035e79f1b8442db0bbf71
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881623"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031532"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmedik konumlarda özel durumlar harekete geçirmeyin
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin
 
 |||
 |-|-|
@@ -45,7 +45,7 @@ ms.locfileid: "53881623"
 
 - Equals yöntemi
 
-- GetHashCode yöntemleri
+- GetHashCode Methods
 
 - ToString yöntemi
 
@@ -97,7 +97,7 @@ Aşağıdaki **eşittir** yöntemleri, özel durum oluşturmamalıdır:
 
 Bir **eşittir** yöntemi döndürmelidir `true` veya `false` yerine bir özel durum. Örneğin, eşittir geçirilir, eşleşmeyen iki tür yalnızca döndürmelidir `false` oluşturmak yerine bir <xref:System.ArgumentException>.
 
-### <a name="gethashcode-methods"></a>GetHashCode yöntemleri
+### <a name="gethashcode-methods"></a>GetHashCode Methods
 
 Aşağıdaki **GetHashCode** yöntemleri genellikle özel durum oluşturmamalıdır:
 

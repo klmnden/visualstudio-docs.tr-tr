@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042068"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı ilk bakış
 
@@ -185,7 +185,7 @@ Bu örnekte, **özel durum Yardımcısı** size gösterir bir `System.Argument` 
 
 Bu örnekte, `DirectoryInfo` çağrı üzerinde depolanan boş bir dize hata verdi `value` değişkeni.
 
-Özel durum Yardımcısı hatalarını ayıklamanıza yardımcı olacak harika bir özelliğidir. Hata ayrıntılarını görüntüleme gibi şeyler ve özel durum Yardımcısı ' bir izleme ekleyin. Veya, gerekirse, belirli özel durum koşullarını değiştirebilirsiniz. Kodunuza özel durumları işleme hakkında daha fazla bilgi için bkz. [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md).
+Özel durum Yardımcısı hatalarını ayıklamanıza yardımcı olacak harika bir özelliğidir. Hata ayrıntılarını görüntüleme gibi şeyler ve özel durum Yardımcısı ' bir izleme ekleyin. Veya, gerekirse, belirli özel durum koşullarını değiştirebilirsiniz. Kodunuza özel durumları işleme hakkında daha fazla bilgi için bkz. [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > Özel durum Yardımcısı özel durum Yardımcısı'nda yerini [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

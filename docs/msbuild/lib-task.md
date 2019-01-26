@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23e57e8bbd87f365ce1c8dcaf1d420059e16cf21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027925"
 ---
 # <a name="lib-task"></a>LIB görevi
 Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar *lib.exe*. Kitaplık Yöneticisi'ni oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyası kitaplığı yönetir. Kitaplık Yöneticisi'ni de dışarı aktarma dosyaları oluşturabilir ve kitaplıkları dışarı başvuru tanımlarını içeri aktarma. Daha fazla bilgi için [LIB başvurusu](/cpp/build/reference/lib-reference) ve [çalıştıran LIB](/cpp/build/reference/running-lib).  
@@ -57,7 +57,7 @@ Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar *lib.exe*. Kitaplık Y
 |**OutputFile**|İsteğe bağlı **dize** parametresi.<br /><br /> Varsayılan adını ve program konumunu geçersiz kılar, *lib.exe* oluşturur.<br /><br /> Bu parametre için karşılık gelen **/OUT** seçeneği *lib.exe* almayan bir `filename` bağımsız değişken.|  
 |**RemoveObjects**|İsteğe bağlı **String []** parametresi.<br /><br /> Belirtilen nesneyi çıkış kitaplığında atlar. *Lib.exe* tüm nesneleri (elinizin altında nesne dosyalarında veya kitaplıklarındaki) birleştirerek ve ardından bu seçeneği tarafından belirtilen nesneleri silerek bir çıkış kitaplığı oluşturur.<br /><br /> Bu parametre için karşılık gelen **/REMOVE** seçeneği *lib.exe* almayan bir `membername` bağımsız değişken.|  
 |**Kaynakları**|Gerekli `ITaskItem[]` parametresi.<br /><br /> Kaynak dosyaları boşluklarla ayrılmış bir listesini belirtir.|  
-|**Alt sistem**|İsteğe bağlı **dize** parametresi.<br /><br /> Yürütülebilir dosya için ortamı belirtir. Alt sistem seçimi giriş noktası sembolünü ya da giriş noktası işlevini etkiler.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **Konsol** -   **/Subsystem: Console**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Yerel** - **natıve**<br />-   **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Önyükleme servisi sürücüsü** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI çalışma zamanı** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Daha fazla bilgi için [/Subsystem (alt belirtin)](/cpp/build/reference/subsystem-specify-subsystem).|  
+|**Alt sistem**|İsteğe bağlı **dize** parametresi.<br /><br /> Yürütülebilir dosya için ortamı belirtir. Alt sistem seçimi giriş noktası sembolünü ya da giriş noktası işlevini etkiler.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **Konsol** -   **/Subsystem: Console**<br />-   **Windows** - **/SUBSYSTEM:WINDOWS**<br />-   **Yerel** - **natıve**<br />-   **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** - **/SUBSYSTEM:POSIX**<br /><br /> Daha fazla bilgi için [/Subsystem (alt belirtin)](/cpp/build/reference/subsystem-specify-subsystem).|  
 |**SuppressStartupBanner**|İsteğe bağlı **Boole** parametresi.<br /><br /> Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisinin görüntülenmesini engeller.<br /><br /> Daha fazla bilgi için bkz. **/nologo** adresindeki seçeneği [çalıştıran LIB](/cpp/build/reference/running-lib).|  
 |**TargetMachine**|İsteğe bağlı **dize** parametresi.<br /><br /> Program veya DLL için hedef platformu belirtir.<br /><br /> Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.<br /><br /> -   **MachineARM** - **/MACHINE:ARM**<br />-   **MachineEBC** - **/MACHINE:EBC**<br />-   **MachineIA64** - **/MACHINE:IA64**<br />-   **MachineMIPS** - **/MACHINE:MIPS**<br />-   **MachineMIPS16** - **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** -**/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** - **/MACHINE:SH4**<br />-   **MachineTHUMB** - **/MACHINE:THUMB**<br />-   **MachineX64** - **/MACHINE:X 64**<br />-   **MachineX86** - **/MACHINE:X86**<br /><br /> Daha fazla bilgi için [/Machine (hedef platformu belirt)](/cpp/build/reference/machine-specify-target-platform).|  
 |**TrackerLogDirectory**|İsteğe bağlı **dize** parametresi.<br /><br /> İzleyici günlüğü dizini belirtir.|  

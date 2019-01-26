@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bee821a1ecd0179d3ea64e3d1e1f7efca92d64f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825922"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928977"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Sağlama türünü alır.  
@@ -40,7 +40,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>Açıklamalar  
  Sağlama toplamı, bir sağlama toplamı algoritması için eşlenmiş bir değer türüdür. Örneğin, standart PDB dosya biçimine genellikle aşağıdaki değerlerden biri olabilir:  
   
-|Sağlama türü|CryptoAPI etiketi|Açıklama|  
+|Sağlama türü|CryptoAPI Label|Açıklama|  
 |-------------------|---------------------|-----------------|  
 |0|\<yok >|Sağlama mevcut.|  
 |1.|`CALG_MD5`|bir MD5 karma algoritması ile oluşturulan bir sağlama toplamı.|  

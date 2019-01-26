@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Olay izleme için Windows (ETW) verilerini toplama | Microsoft Docs'
+title: 'Nasıl yapılır: Olay izleme için Windows (ETW) verilerini toplama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - performance tools, enabling event trace providers
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a619820cd2c6a3a884c7279d4eb9ffc9741619d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f4259a28976f7fc622c0b0cf8948bc2ad891a8b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863661"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024935"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Nasıl Yapılır: Olay izleme için Windows (ETW) verileri toplama
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Nasıl yapılır: Olay izleme için Windows (ETW) verileri toplama
 
 Olay izleme için Windows (ETW), profil oluşturucu günlük çekirdek veya uygulama tarafından tanımlanan olayları sağlayan verimli çekirdek düzeyinde izleme sistemidir. Olay sağlayıcısı'ndan toplanan verileri yalnızca kullanılarak görüntülenebilir /**Summary: ETW** seçeneği [VSPerfReport](../profiling/vsperfreport.md) komut satırı aracı. Performans sorunlarını uygulamada nerede oluştuğunu belirlemek için bu raporu kullanabilirsiniz.
 
