@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9177ed6-9ba8-4384-b411-24cad07d031b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 287a3b87d5a89d2e433113ec7d5de5d6d4a4b7cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ed753a3ead3689aea7dd9806eae68a2ecb8b891
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917256"
 ---
 # <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
 Parametreleri yığına itildi bayt sayısını alır.  

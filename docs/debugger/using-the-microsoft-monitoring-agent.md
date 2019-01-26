@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923785"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent'ı kullanarak (C#, Visual Basic)
 
@@ -118,7 +118,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   
      Kısa sözdizimi şu şekildedir:  
   
-     **Start-WebApplicationMonitoring** *"\<uygulamaadı >"*  *\<monitoringMode >* *"\<outputPath >"*  *\<UInt32 >* *"\<collectionPlanPathAndFileName >"*  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      İşte yalnızca web uygulaması adı ve basit kullanan bir örnek **İzleyici** modu:  
   
@@ -138,7 +138,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
     |*\<monitoringMode >*|İzleme modunu belirtin:<br /><br /> <ul><li>**İzleyici**: Özel durum olayları ve performans olayları hakkında olabildiğince az ayrıntı kaydeder. Bu mod varsayılan toplama planını kullanır.</li><li>**İzleme**: İşlev düzeyi ayrıntıları kaydeder veya SharePoint 2010 ve SharePoint 2013 uygulamalarında belirtilen toplama planını kullanarak izleyin. Bu mod, uygulamanızın daha yavaş çalışmasına neden olabilir.<br /><br /> <ul><li>[S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?](#FullPermissionsITLog)</li><li>[S: Uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?](#Minimizing)</li></ul><br />     Bu örnek, bir SharePoint sitesi üzerindeki SharePoint uygulaması için olayları kaydeder:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" izleme "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml izleme" "C:\IntelliTraceLogs"**</li><li>**Özel**: Özel Toplama planını kullanarak özel ayrıntıları kaydeder belirtildi. İzleme başladıktan sonra toplama planını değiştirirseniz izlemeyi yeniden başlatmanız gerekir.</li></ul>|  
     |*"\<outputPath >"*|IntelliTrace günlüklerinin depolanacağı tam dizin yolunu belirtin. Bu dizini izlemeye başlamadan önce oluşturduğunuzdan emin olun.|  
     |*\<UInt32 >*|IntelliTrace günlüğünün çıkabileceği en büyük boyutu belirtin. IntelliTrace günlüğü için varsayılan en büyük boyut 250 MB'tır.<br /><br /> Günlük bu sınıra ulaştığında, aracı yeni girişlere yer açmak için en eski girişlerin üzerine yazar. Bu sınırı değiştirmek için kullanın **- Maximumfilesizeınmegabytes** seçeneğini veya düzenleme `MaximumLogFileSize` toplama planında özniteliği.|  
-    |*"\<collectionPlanPathAndFileName >"*|Toplama planının tam yolunu veya göreli yolunu ve dosya adını belirtin. Bu plan, aracı için ayarları yapılandıran bir .xml dosyasıdır.<br /><br /> Bu planlar aracıyla birlikte gelir ve web uygulamaları ve SharePoint uygulamalarıyla çalışır:<br /><br /> -   **collection_plan.ASP.NET.default.XML**<br />     Yalnızca özel durumlar, performans olayları, veritabanı çağrıları ve Web sunucusu istekleri gibi olayları toplar.<br />-   **collection_plan.ASP.NET.Trace.XML**<br />     Varsayılan toplama planındaki verilere ek olarak işlev düzeyi çağrıları toplar. Bu plan ayrıntılı analiz için iyidir ancak uygulamanızı yavaşlatabilir.<br /><br /> Bu planların yerelleştirilmiş sürümlerini aracının alt klasörlerinde bulabilirsiniz. Ayrıca [bu planları özelleştirebilir veya kendi planlarınızı oluşturabilirsiniz](http://go.microsoft.com/fwlink/?LinkId=227871) uygulamanızı yavaşlatmayı önlemek için. Özel planları aracıyla aynı güvenli konuma yerleştirin.<br /><br /> [S: Uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName>"*|Toplama planının tam yolunu veya göreli yolunu ve dosya adını belirtin. Bu plan, aracı için ayarları yapılandıran bir .xml dosyasıdır.<br /><br /> Bu planlar aracıyla birlikte gelir ve web uygulamaları ve SharePoint uygulamalarıyla çalışır:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Yalnızca özel durumlar, performans olayları, veritabanı çağrıları ve Web sunucusu istekleri gibi olayları toplar.<br />-   **collection_plan.ASP.NET.Trace.XML**<br />     Varsayılan toplama planındaki verilere ek olarak işlev düzeyi çağrıları toplar. Bu plan ayrıntılı analiz için iyidir ancak uygulamanızı yavaşlatabilir.<br /><br /> Bu planların yerelleştirilmiş sürümlerini aracının alt klasörlerinde bulabilirsiniz. Ayrıca [bu planları özelleştirebilir veya kendi planlarınızı oluşturabilirsiniz](http://go.microsoft.com/fwlink/?LinkId=227871) uygulamanızı yavaşlatmayı önlemek için. Özel planları aracıyla aynı güvenli konuma yerleştirin.<br /><br /> [S: Uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?](#Minimizing)|  
   
      Tam söz dizimi ve diğer örnekler hakkında daha fazla bilgi için çalıştırma **get-help Start-WebApplicationMonitoring-ayrıntılı** komutu veya **get-help Start-WebApplicationMonitoring-örnekler** komutu.  
   
@@ -249,7 +249,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   
     -veya-  
   
-    **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
     Daha fazla bilgi için **Checkpoint-WebApplicationMonitoring get-help-ayrıntılı** komutu veya **Checkpoint-WebApplicationMonitoring get-help-örnekler** komutu.  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccb49abc1251b489807efcb4d7e9ce89b25dcd16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c43dc4892f1cf2a938a4ed29fc68bc55e99cc05e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948134"
 ---
 # <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>Geri alma yönetmek ve eski API'yi kullanarak yineleme
 Düzenleyiciler, bunlar kod değiştirdiğinizde, son değişikliklerini ters kullanıcıların geri alma işlemlerinin desteklemesi gerekir. Çoğu düzenleyicileri altında uygulanan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] otomatik olarak tümleşik geliştirme ortamı (IDE) tarafından sağlanan geri alma desteği sağlayabilirsiniz.  

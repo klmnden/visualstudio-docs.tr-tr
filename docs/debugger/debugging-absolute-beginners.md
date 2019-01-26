@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918215"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -64,7 +64,7 @@ Normal bir uygulama çalıştırdığınızda, yalnızca kod çalıştırıldık
 
 Bir hata ayıklayıcısı içinde bir uygulamayı çalıştıran olarak da adlandırılır *hata ayıklama modu*, hata ayıklayıcı etkin bir şekilde program çalışırken gerçekleştiği her şeyi izlediğini anlamına gelir. Ayrıca uygulamayı herhangi bir noktada durumunu inceleyin ve sonra da olduğu sürece her ayrıntısını izlemek için satır kodunuzda adım adım ilerleyin duraklatmanıza da olanak sağlar.
 
-Visual Studio'da hata ayıklama modunu kullanarak girdiğiniz **F5** (veya **hata ayıklama** > **hata ayıklamayı Başlat** menü komutu veya **hata ayıklamayı Başlat**  düğmesi ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat") hata ayıklama araç çubuğundaki). Özel durumlar oluşursa, Visual Studio'nun özel durum Yardımcısı burada özel durum oluştu ve başka yararlı bilgiler sağlayan tam noktasına götürür. Kodunuza özel durumları işleme hakkında daha fazla bilgi için bkz. [düzeltme hataları daha iyi yazarak C# kod](../debugger/write-better-code-with-visual-studio.md).
+Visual Studio'da hata ayıklama modunu kullanarak girdiğiniz **F5** (veya **hata ayıklama** > **hata ayıklamayı Başlat** menü komutu veya **hata ayıklamayı Başlat**  düğmesi ![hata ayıklamayı Başlat](../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat") hata ayıklama araç çubuğundaki). Özel durumlar oluşursa, Visual Studio'nun özel durum Yardımcısı burada özel durum oluştu ve başka yararlı bilgiler sağlayan tam noktasına götürür. Kodunuza özel durumları işleme hakkında daha fazla bilgi için bkz. [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md).
 
 Bir özel durum almadıysanız, kodunuzda sorunun aranacağı büyük olasılıkla iyi bir fikir sahip. Bu, kullandığınız *kesme noktaları* kendiniz kodunuzu daha dikkatli bir şekilde incelemek için bir fırsat vermek için hata ayıklayıcısı ile. Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası, değişkenlerin değerleri veya bellek davranışını veya kod çalıştığı dizisi göz olabilmesi için Visual Studio çalışan kodunuzu nerede duraklatmak gösterir.
 

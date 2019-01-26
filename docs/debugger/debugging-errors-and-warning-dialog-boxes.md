@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 918c59d1da1c1d84b4e9cb2cea8e54b4dc632fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce573c5304e6e785f18dfab4140c6e0382034c53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930738"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Hataları Ayıklama ve Uyarı İletişim Kutuları
 Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata ayıklama sırasında karşılaşabileceğiniz uyarı.  
@@ -54,10 +54,10 @@ Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata a
   
  [Makineye bağlanılamıyor](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [Hata: Hata ayıklama mümkün bir çekirdek hata ayıklayıcısı sistemde etkin](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Hata: Sistemde Çekirdek Hata Ayıklayıcı Etkinleştirildiğinden Hata Ayıklama Mümkün Değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Betik ve Web hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Betik ve Web hata ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Uzaktan hata ayıklama hataları](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   

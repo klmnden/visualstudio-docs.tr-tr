@@ -5,15 +5,15 @@ ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: v-brickg
-manager: douge
+manager: jillfra
 ms.workload:
 - v-brickg
-ms.openlocfilehash: 2dc17a04f5357e07baa4285c703831726a1ce325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b26eb91439547b3d9837c1482e707dcb7ea62cd8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940719"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için görsel dil sözlüğü
 Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramları göstermek için ortak bir görsel dil kullanır. Yeni simgelerin tasarlarken, bu sözlük kendi görüntünüzü belirtmek istediğiniz kavramları tanımlamak için kullanın.  

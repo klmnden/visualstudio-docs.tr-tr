@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6260ac76-4f9d-4144-ba22-32f8620b32c2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 837372903dd1435c9cc5603805a85ce608481fc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97b55dad4ba557e85291d572ef24b1ad12e08a3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930686"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Hata ayıklama sembolleri bir kaynak erişim başlatır.  

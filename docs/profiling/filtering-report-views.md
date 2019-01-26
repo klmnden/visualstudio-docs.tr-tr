@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f64789bafa8fe5077678715a7439cbd1c1bf03b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927209"
 ---
 # <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor dosyasına dışarı profil oluşturma verileri sınırlamak için veri dosyaları için filtre uygulayabilirsiniz. Bir rapor için zaman damgası değerlerini arasındaki verileri sınırlayabilir ve belirli işlem ve iş parçacıkları için verileri sınırlayabilirsiniz. Filtreler bir dosyaya kaydedin ve kaydedilmiş filtre içeri aktararak Bu filtre üzerinde farklı bir profil oluşturma veri dosyasını oluşturun.  
   
  Bir rapor için zaman diliminin Özet görünümü grafik zaman çizelgesini kullanarak da sınırlayabilirsiniz. Bkz: [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Sistem ve üçüncü taraf kodu bir raporundan dışlamak için bkz: [nasıl yapılır: Profil oluşturma araçları rapor görünümlerini yalnızca benim kodumu görüntülemek için filtre](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Sistem ve üçüncü taraf kodu bir raporundan dışlamak için bkz: [nasıl yapılır: Yalnızca Kendi Kodumu Görüntülemek için Profil Oluşturma Araçları Raporu Görünümlerini Filtreleme](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Yordamlar  
   

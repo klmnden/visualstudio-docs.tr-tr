@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Uygulama geri alma Yönetim | Microsoft Docs'
+title: 'Nasıl yapılır: Uygulama geri alma Yönetim | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8d5059ddca1d428f1a1f66cb45e32cdc6f37de3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929542"
 ---
-# <a name="how-to-implement-undo-management"></a>Nasıl Yapılır: Uygulama geri alma yönetimi
+# <a name="how-to-implement-undo-management"></a>Nasıl yapılır: Uygulama geri alma yönetimi
 Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, ortamı tarafından gerçekleştirilir. Geri alma yönetimini desteklemek için ayrı geri alma birimi uygulayın (diğer bir deyişle, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, birden çok tek tek adımları içerebilir.  
   
  Geri alma yönetim nasıl uygulayacağınıza düzenleyiciniz birden çok görünüm veya destekleyip desteklemediğini bağlı olarak değişir. Her uygulama için yordamlar aşağıdaki bölümlerde ayrıntılı şekilde verilmiştir.  

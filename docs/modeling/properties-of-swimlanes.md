@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f89dd915498d2528a0a40a3e7a0af8b5d65a5b4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38bb141c6011739e56c5e7fee0fe77729f472232
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933368"
 ---
 # <a name="properties-of-swimlanes"></a>Kulvarların Özellikleri
 Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir diyagram bölün. Diğer şekiller Kulvarlar içinde görüntülenecek tanımlayabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir d
 |Özellik|Açıklama|Varsayılan|
 |-|-|-|
 |Gövde dolgu rengi|Kulvar gövdesinin dolgu rengi.|Beyaz|
-|Başlık dolgu rengi|Kulvar üst bilgisinin dolgu rengi.|Koyu gri|
+|Başlık dolgu rengi|Kulvar üst bilgisinin dolgu rengi.|DarkGray|
 |Ayırıcı rengi|Ayırıcı çizginin rengi.|LightGray|
 |Ayırıcı çizgi stili|Ayırıcı çizginin stili (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, veya `Custom`).|`Dash`|
 |Ayırıcı kalınlığı|İnç ayırıcı çizginin kalınlığı.|0.03125|

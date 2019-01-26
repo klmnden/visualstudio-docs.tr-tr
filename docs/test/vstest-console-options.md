@@ -8,15 +8,15 @@ helpviewer_keywords:
 - command-line tests
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924022"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe komut satırı seçenekleri
 
@@ -39,13 +39,13 @@ ms.locfileid: "53870761"
 |**/ Parallel**|Testleri paralel olarak yürütüleceğini belirtir. Varsayılan olarak makine üzerindeki tüm mevcut çekirdekler kullanılabilir. Kullanılacak çekirdek sayısı bir ayar dosyası kullanılarak yapılandırılabilir.|
 |**/ Enablecodecoverage**|Veri tanılama bağdaştırıcısı CodeCoverage'test çalıştırması sağlar.<br />Varsayılan ayarlar kullanılır belirtilmezse ayar dosyası kullanılarak.|
 |**/ Inısolation**|Testleri yalıtılmış bir işlemde çalıştırır.<br />Bu yalıtım sağlar *vstest.console.exe* büyük olasılıkla daha az bir hata sırasında durdurulması işlemi, ancak testleri daha yavaş çalıştırabilirsiniz.|
-|**/ UseVsixExtensions**|Bu seçenek yapar *vstest.console.exe* işlem kullanın veya (varsa) test çalıştırmasında yüklü VSIX uzantılarını atlayabilirsiniz.<br />Bu seçeneği kullanım dışı bırakılmıştır. Bu seçenek, Visual Studio'nun sonraki ana sürümüne başlangıç kaldırılabilir. Bir NuGet paketi olarak sunulan uzantıları kullanma için taşıyın.<br />Örnek: `/UseVsixExtensions:true`|
+|**/UseVsixExtensions**|Bu seçenek yapar *vstest.console.exe* işlem kullanın veya (varsa) test çalıştırmasında yüklü VSIX uzantılarını atlayabilirsiniz.<br />Bu seçeneği kullanım dışı bırakılmıştır. Bu seçenek, Visual Studio'nun sonraki ana sürümüne başlangıç kaldırılabilir. Bir NuGet paketi olarak sunulan uzantıları kullanma için taşıyın.<br />Örnek: `/UseVsixExtensions:true`|
 |**/ TestAdapterPath: [*yolu*]**|Zorlar *vstest.console.exe* işleminin test çalıştırmasında özel test bağdaştırıcılarını belirtilen yoldan (varsa) kullanın.<br />Örnek: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*platform türü*]**|Test çalıştırması için kullanılacak hedef platform mimarisi.<br />Geçerli değerler şunlardır: x86, x64 ve ARM.|
 |**/ Framework: [*framework sürümü*]**|Test çalıştırması için kullanılacak hedef .NET Framework sürümü.<br />Geçerli değerler Framework35, Framework40 framework45'tir ve FrameworkUap10:.<br />Hedef Framework'ü olarak belirtilmişse **Framework35**, CLR 4.0 "uyumlu olacak şekilde basitleştirip modu" testleri çalıştırın.<br />Örnek: `/Framework:framework40`|
-|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: ' / TestCaseFilter: "TestCategory = gece|FullyQualifiedName=Namespace.ClassName.MethodName"'<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: ' / TestCaseFilter: "TestCategory = gece|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Kullanım bilgilerini görüntüler.|
-|**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: Bir Visual Studio Test sonuçları dosyası (TRX) içine sonuçlar'ı açmak için kullandığınız **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/Logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform = < varsayılan değer: "Herhangi bir CPU" >]**<br />**[; Flavor = < varsayılan değer: "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
+|**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: Bir Visual Studio Test sonuçları dosyası (TRX) içine sonuçlar'ı açmak için kullandığınız **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform = < varsayılan değer: "Herhangi bir CPU" >]**<br />**[; Flavor = < varsayılan değer: "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
 |**/ ListTests: [*dosya adı*]**|Testleri verili test kapsayıcısından bulunan listeler.|
 |**/ ListDiscoverers**|Yüklü test bulucuları listeler.|
 |**/ ListExecutors**|Yüklü test yürütücüleri listeler.|

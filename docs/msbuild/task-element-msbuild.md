@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9cf8ce8a55c0f83731b7eaeb510b32061379036
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37a843c6e282ca664ed3d2cc87d58aa50e6b5a74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831280"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935429"
 ---
 # <a name="task-element-msbuild"></a>Görev öğesi (MSBuild)
 Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Öğe adı, oluşturulan görev adına göre belirlenir.  

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır'
+title: 'Nasıl yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d00c711a1d26f8fb38acc66d15454bae035bcdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947263"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl Yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır
 A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Kullanım **hizmet Başvurusu Ekle** aramak için iletişim kutusu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] geçerli çözümde, yerel olarak bir yerel ağ veya Internet üzerinde.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]

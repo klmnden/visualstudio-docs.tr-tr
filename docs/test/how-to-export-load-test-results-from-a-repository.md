@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d86925963c156ae66abcf9b100b27bcd54224d75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecb9a41928fecdfb89ac6969abaa234d00be3d7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938652"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Nasıl Yapılır: Yük testi sonuçlarını bir depodan dışarı aktarma
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Nasıl yapılır: Yük testi sonuçlarını bir depodan dışarı aktarma
 
 Çalıştırma sırasında toplanan bilgileri, bir yük testi çalıştırdığınızda, yük testi sonuçları deposunda depolanır. Yük testi sonuçları deposu, performans sayacı verileri ve hatalar hakkında bilgi içerir. Daha fazla bilgi için [Yönet yük testi sonuçları yük testi sonuçları deposunda](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

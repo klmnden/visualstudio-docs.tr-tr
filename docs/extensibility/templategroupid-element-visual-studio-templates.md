@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7eebe25af23a6468bd0dfd4b60957a0b365a368
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be9a74c4aedf49b9ff7f7d56c29f3281c2d4578f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913429"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952814"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID Öğesi (Visual Studio Şablonları)
 Ne tür bir proje öğesi şablonları kategoride görüneceğini belirtir. Bu öğe önemlidir [ShowByDefault (Visual Studio şablonları)](../extensibility/showbydefault-visual-studio-templates.md) ayarlanır `false`. Zaman [ShowByDefault (Visual Studio şablonları)](../extensibility/showbydefault-visual-studio-templates.md) ayarlanır `true`, sonra tüm proje türünde bir öğe şablonu kullanılabilir.  
@@ -66,8 +66,8 @@ Ne tür bir proje öğesi şablonları kategoride görüneceğini belirtir. Bu �
 |VC-Windows|Windows Platformu (yerel/yönetilen/deposu) hedefleyen tüm projeler için kullanılan|  
 |WinRT yerel UAP|Windows 10 mağazası projeleri için kullanılır|  
 |CodeSharing yerel|Paylaşılan öğe projeleri için kullanılır|  
-|WinRT yerel 6.3|Windows 8.1 Store projeler için kullanılan|  
-|Yerel telefon 6.3 WinRT|Windows Phone 8.1 projeleri için kullanılır|  
+|WinRT-Native-6.3|Windows 8.1 Store projeler için kullanılan|  
+|WinRT-Native-Phone-6.3|Windows Phone 8.1 projeleri için kullanılır|  
 |WinRT yerel|Windows 8.0 Store projeler için kullanılan|  
 |VC-Android|Android projeleri için kullanılır|  
   

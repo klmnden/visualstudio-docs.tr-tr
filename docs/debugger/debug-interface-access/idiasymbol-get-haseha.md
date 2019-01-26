@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a075b4447259bfacaf9e31c97f9e51b0b0a730
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca6cc1306fec11033b1430adbb6bd13093d48061
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926826"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 İşlev (yapılandırılmış) zaman uyumsuz özel durum işlemeyi içerip içermediğini belirten bir bayrak alır.  

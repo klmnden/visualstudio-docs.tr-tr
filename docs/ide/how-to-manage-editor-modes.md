@@ -22,17 +22,17 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2bf05eaaa5a61f7614b5d35ac6f8467ad6089a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e288c202bbba093738592c5060ee0d3a4f605c88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943896"
 ---
-# <a name="how-to-manage-editor-modes"></a>Nasıl Yapılır: Düzenleyici modlarını yönetme
+# <a name="how-to-manage-editor-modes"></a>Nasıl yapılır: Düzenleyici modlarını yönetme
 
 Visual Studio Kod Düzenleyicisi'ni çeşitli görüntüleme modlarında görüntüleyebilirsiniz.
 

@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: Etkinlik günlüğü'nün | Microsoft Docs"
+title: "Nasıl yapılır: Etkinlik günlüğü'nün | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9305cf1de6cadc2230b90723ac0f995b425ba3a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b23dd6ffa0e856ef5d5fb14227953cb22dce65e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929358"
 ---
-# <a name="how-to-use-the-activity-log"></a>Nasıl Yapılır: Etkinlik günlüğünü kullanma
+# <a name="how-to-use-the-activity-log"></a>Nasıl yapılır: Etkinlik günlüğünü kullanma
 VSPackage için etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende ortamlarda VSPackages hata ayıklama için özellikle yararlıdır.  
   
 > [!TIP]

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5c6fa30d97c309534486a0ded6bac5b019f56fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b9f80ff04854371a65acd7b50f74d601c59b668
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930101"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio Kullanıcı Deneyimi Yönergeleri
 Visual Studio için yeni özellikler tasarlıyorsanız, Visual Studio kullanıcı deneyimi yönergeleri izleyin. Yeni kullanıcı arabirimi (UI) tasarımcıları sorunsuz ve tutarlı bir geliştirme ortamında kullanıcı deneyimleri oluşturabilirsiniz. böylece bu yönergeleri ortak kullanıcı modeller ve etkileşim desenleri hakkında bilgi içerir.  

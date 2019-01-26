@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b1413acafd4358d4b29435a0cd62edd5a8ce22e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940836"
 ---
 # <a name="registering-a-project-type"></a>Proje Türü Kaydetme
 Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri oluşturmanız gerekir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tanınması ve proje türünüz ile çalışır. Genellikle bir kayıt defteri (.rgs) komut dosyası kullanarak bu kayıt defteri girdilerini oluşturun.  
@@ -222,7 +222,7 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
-|CLSID_Package %|REG_SZ|`,1000,1`|Menü bilgilerini almak için kaynak.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|Menü bilgilerini almak için kaynak.|  
   
  Aşağıdaki örnekler kayıt defteri anahtarı [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] altında yer alır.  
   

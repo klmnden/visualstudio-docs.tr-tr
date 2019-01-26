@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c6c8c543-253e-4c23-a939-3e66f3db0ee2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bef3d87c745beaf7374cdfdc4abfa9ede8f2bfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 206abebe13a6295a387208bb50461ffed4f30b25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867494"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926040"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 Bir işaretçi türü bir rvalue başvurusu olup olmadığını belirten bir bayrak alır. Şu durumlarda kullanın [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) bir işaretçi türüne ayarlanır.  

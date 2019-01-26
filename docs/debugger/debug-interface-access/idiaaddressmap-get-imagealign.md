@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1ba8071-669c-4cf7-9ac0-02f26d99f366
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f288b0da63e3740a2d954aab2100fa97551154
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5731c0ec7ba6b7e6e05205e266ecc91efaba194
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919440"
 ---
 # <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
 Geçerli resim hizalamasını alır.  

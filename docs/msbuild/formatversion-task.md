@@ -10,22 +10,22 @@ dev_langs:
 ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f9b2cf2daff750f626f35b8c98f8269577b4099
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59dd767e36620deb30d3d5ccff361d989c9d3a4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934076"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928782"
 ---
 # <a name="formatversion-task"></a>FormatVersion görevi
 Düzeltme numarası için sürüm numarası ekler.  
   
 -   #1. durum: Giriş: Sürüm =\<tanımlanmamış >;  Gözden geçirme =\<umursamaz >;   Çıkış: OutputVersion "1.0.0.0" =  
   
--   #2. durum: Giriş: Sürüm = "1.0.0.*" düzeltme "5" çıkış =: OutputVersion "1.0.0.5" =  
+-   #2. durum: Giriş: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
   
 -   #3. durum: Giriş: Sürüm = "1.0.0.0" Düzeltme =\<umursamaz >;  Çıkış: OutputVersion "1.0.0.0" =  
   

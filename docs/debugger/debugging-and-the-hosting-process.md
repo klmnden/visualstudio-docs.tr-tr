@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98985877a2a85e56e9e1861c3baeaf0c87ad0f9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852196"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952099"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Hata Ayıklama ve Barındırma İşlemi
 Visual Studio barındırma işlemini, hata ayıklayıcı performansı artırır ve kısmi güven hata ayıklama ve tasarım zamanı ifade değerlendirmesi gibi yeni hata ayıklayıcı özelliklerini etkinleştirir. Gerekirse, barındırma işlemini devre dışı bırakabilirsiniz. Aşağıdaki bölümlerde, barındırma işlemi olmadan ve hata ayıklama arasındaki bazı farklar açıklanmaktadır.
@@ -43,4 +43,4 @@ Visual Studio barındırma işlemini, hata ayıklayıcı performansı artırır 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Kısmen güvenilen uygulamada hata ayıklama](/visualstudio/debugger/debugger-security)
+- [Nasıl yapılır: Kısmen Güvenilen Uygulamada Hata Ayıklama](/visualstudio/debugger/debugger-security)

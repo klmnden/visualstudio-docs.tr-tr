@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927912"
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
@@ -44,7 +44,7 @@ ms.locfileid: "51349055"
 > [!NOTE]
 > Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanılarak oluşturulan projeleri dahil edilecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonları. Uygulamayı hata ayıklama hata ayıklama yapılandırmasını destekler ve bir sürüm yapılandırması dağıtılabilir uygulamanın bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel bir çözüm yapılandırmaları ve proje yapılandırmalarını da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
+Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanılarak oluşturulan projeleri dahil edilecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonları. Uygulamayı hata ayıklama hata ayıklama yapılandırmasını destekler ve bir sürüm yapılandırması dağıtılabilir uygulamanın bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel bir çözüm yapılandırmaları ve proje yapılandırmalarını da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Çözüm yapılandırmaları
 

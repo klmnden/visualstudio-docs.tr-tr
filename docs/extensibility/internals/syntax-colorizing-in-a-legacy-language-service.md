@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948654"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Söz Dizimi Renklendirmesi
 Söz dizimi renklendirme, farklı bir kaynak dosyada farklı renkler ve stil görüntülenecek bir programlama dili öğelerinin neden olan bir özelliktir. Bu özelliği desteklemek için bir ayrıştırıcı veya sözcük temelli öğeler veya belirteçleri dosya türlerini tanımlamak tarayıcı sağlamanız gerekir. Birçok dil anahtar sözcükleri, sınırlayıcılar (örneğin, ayraçlar veya küme ayraçları) ve açıklamaları farklı şekillerde renklendirme tarafından ayırt.  

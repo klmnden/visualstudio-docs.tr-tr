@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Profil oluşturma araçları ETW raporu oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Profil oluşturma araçları ETW raporu oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 304cc9b65ed876e2348a6b96dc1f50e9a6934a4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20b7c92c8cbbf500b44816fbb0f34e0df6f04720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940940"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Nasıl Yapılır: Profil oluşturma araçları ETW raporu oluşturma
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Nasıl yapılır: Profil oluşturma araçları ETW raporu oluşturma
 Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Windows (ETW) raporu listeler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları. İkili dosyada toplanan ETW veriler (. *etl*) dosyası. Bu rapor hakkında daha fazla bilgi için bkz. [olay izleme için Windows (ETW) raporu](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
@@ -31,7 +31,7 @@ Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Window
   
 -   İçinde bir **komut istemi** penceresinde aşağıdaki komutu yazın:  
   
-     *ToolsPath* **VSPerfReport** *VSPFile***/Summary:ETW [/ XML]**   
+     *ToolsPath* **VSPerfReport** *VSPFile* **/Summary:ETW [/ XML]**  
   
     |||  
     |-|-|  

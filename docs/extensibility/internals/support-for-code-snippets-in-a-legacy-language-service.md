@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948992"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kod Parçacıkları için Destek
 Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacığının kendisi bir XML tabanlı bir alan kümesi ile şablonudur. Kod parçacığı eklenir ve, kod parçacığının eklenmiş olduğu bağlama bağlı olarak farklı değerlere sahip olabilir, bu alanlar vurgulanır. Hemen kod parçacığı eklendikten sonra kod parçacığı dil hizmeti biçimlendirebilirsiniz.  
@@ -85,11 +85,11 @@ Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacı
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|LCID %|Yerel ayar kimliği.|  
+|%LCID%|Yerel ayar kimliği.|  
 |InstallRoot %|Visual Studio, örneğin, C:\Program Files\Microsoft Visual Studio 8 yükleme klasörünü kök.|  
-|ProjDir %|Geçerli projeyi içeren klasörü.|  
+|%ProjDir%|Geçerli projeyi içeren klasörü.|  
 |ProjItem %|Geçerli proje öğesi içeren klasör.|  
-|TestDocs %|Klasöründe kullanıcının ayarlarını, örneğin, C:\Documents ve ayarları\\ *[username]* \My Documents\Visual Studio\8.|  
+|%TestDocs%|Klasöründe kullanıcının ayarlarını, örneğin, C:\Documents ve ayarları\\ *[username]* \My Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Kod parçacıkları, dil hizmeti için etkinleştirme  
  Ekleyerek dil hizmetiniz için kod parçacıkları etkinleştirebilirsiniz <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> özniteliği, Vspackage'e (bkz [eski dil hizmetinde kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md) Ayrıntılar için). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> Ve <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametreler isteğe bağlıdır, ancak içermesi gerekir `SearchPaths` haber vermek için parametre adlı **kod parçacıkları Yöneticisi** , kod parçacıkları konumunu.  

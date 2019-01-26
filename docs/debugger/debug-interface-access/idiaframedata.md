@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5152dfc0ed6ef043fe80a060643c660c0f1ec343
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 604b35e61f0ee020512a020c28e5451aa9a9fb5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948452"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924632"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Bir yığın çerçevesini ayrıntılarını sunar.  

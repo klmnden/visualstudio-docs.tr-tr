@@ -4,16 +4,16 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887717"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957448"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl Yapılır: Uzantılardan kaynaklanan kullanıcı arabirimi gecikmelerini tanılama
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl yapılır: Uzantılardan kaynaklanan kullanıcı arabirimi gecikmelerini tanılama
 
 Kullanıcı Arabirimi yanıt vermemeye başlıyor, Visual Studio kullanıcı Arabirimi iş parçacığı çağrı yığınını yaprak ile başlayan ve temel çalışma inceler. Visual Studio çağrı yığını çerçevesi uzantı yüklü ve etkin bir parçası olan bir modüle ait olduğunu belirlerse, bir bildirim gösterilir.
 

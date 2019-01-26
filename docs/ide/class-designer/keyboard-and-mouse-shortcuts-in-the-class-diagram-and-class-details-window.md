@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2541847c82a14099df703e0842e706a1e913315f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826740"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928210"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Sınıf diyagramında ve sınıf Ayrıntıları penceresinde klavye ve Fare kısayolları
 
@@ -91,7 +91,7 @@ Gitmek için aşağıdaki anahtarları kullanmak **sınıf ayrıntıları** penc
 |||
 |-|-|
 |Anahtar|Sonuç|
-|**,** (virgül)|İmleç bir parametre satırındaki içinde ise, virgül yazma imleci sonraki parametre adı alanına taşır. İmleç bir yöntem içinde son parametre satırı varsa imleci hareket \<parametre Ekle > Yeni bir parametre oluşturmak için kullanabileceğiniz bir alan.<br /><br /> İmleç başka bir yerde ise **sınıf ayrıntıları** penceresinde virgül yazarak tam anlamıyla ekler virgül geçerli alanda.|
+|**,** (comma)|İmleç bir parametre satırındaki içinde ise, virgül yazma imleci sonraki parametre adı alanına taşır. İmleç bir yöntem içinde son parametre satırı varsa imleci hareket \<parametre Ekle > Yeni bir parametre oluşturmak için kullanabileceğiniz bir alan.<br /><br /> İmleç başka bir yerde ise **sınıf ayrıntıları** penceresinde virgül yazarak tam anlamıyla ekler virgül geçerli alanda.|
 |**;**  (noktalı virgül) veya **)** (kapanış ayracı)|İmleci sonraki üye satırda adı alanına taşımak **sınıf ayrıntıları** pencere kılavuzunun.|
 |**sekmesi**|İmleç ilk soldan sağa ve yukarıdan ardından üst taşıma sonraki alana taşır. İmleç metin içinde yazdığınız alandan taşıyorsanız **sınıf ayrıntıları** metni işleyen ve bir hata vermezse depolar.<br /><br /> İmleç bir boş alanı gibi olup olmadığını \<parametre Ekle >, sekme, sonraki satırda ilk alanına taşır.|
 |**Ara çubuğu**|İmleç ilk soldan sağa ve yukarıdan ardından üst taşıma sonraki alana taşır. İmleç bir boş alanı gibi olup olmadığını \<parametre Ekle >, sonraki satırda ilk alanına taşır. Unutmayın \<alanı > hemen virgül göz ardı edilir sonra türü belirtilmiş.<br /><br /> İmleç Özet alanında ise, bir boşluk girerek bir boşluk karakteri ekler.<br /><br /> İmleci belirli bir satır Gizle sütununda ise, bir boşluk tuşlarına basarak Gizle onay kutusu değerini değiştirir.|

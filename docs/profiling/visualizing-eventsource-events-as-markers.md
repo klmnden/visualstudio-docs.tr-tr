@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a0edf549686d8b984d937b5970f429fe29f931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8db20a51872af37ce9f7ee655a365efb98d2f687
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938626"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource olaylarını işaretleyici olarak Görselleştirme
 Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olarak görüntüleyebilir ve işaretçileri nasıl görüntüleneceğini denetleyebilirsiniz. EventSource işaretlerinin görüntülemek için kullanarak ETW sağlayıcısı GUID kaydetme [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu. EventSource olaylarını olarak göstermek için varsayılan kuralları eşzamanlılık görselleştiricisi sahip [bayrak işaretleyicileri](../profiling/flag-markers.md), [yayılma işaretçileri](../profiling/span-markers.md), ve [ileti işaretçileri](../profiling/message-markers.md). EventSource olaylarını olaylara özel alanlar ekleyerek nasıl görüntüleneceğini özelleştirebilirsiniz. İşaretçiler hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md). EventSource olaylarını hakkında daha fazla bilgi için bkz: <xref:System.Diagnostics.Tracing>.  
@@ -32,7 +32,7 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
 ### <a name="importance"></a>Önem derecesi  
  Aşağıdaki tabloda, olay düzeyi işaret önemini nasıl eşlendiğini tanımlar.  
   
-|ETW düzeyi|Eşzamanlılık görselleştiricisi önem derecesi|  
+|ETW Level|Eşzamanlılık görselleştiricisi önem derecesi|  
 |---------------|---------------------------------------|  
 |Kazanma: LogAlways|Normal|  
 |Kazanma: kritik|Kritik|  

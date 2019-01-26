@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a654c2d86ed0eb598a963b56cd6e3ef16ad91f19
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: f9432eab55f22bcf18266a10e4e1616997ed8c4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154101"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924184"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Atama Kancaları ve C Çalışma Zamanı Bellek Ayırmaları
 Atama kanca işlevleri çok önemli bir kısıtlama bunlar açıkça yoksayması gereken olduğu `_CRT_BLOCK` engeller. Bu, iç bellek C çalışma zamanı kitaplık işlevleri yapılan her çağrı yaparsanız C çalışma zamanı kitaplığı işlevleri tarafından dahili olarak yapılan bellek ayırmaları taşlarıdır. Yoksayabilirsiniz `_CRT_BLOCK` , ayrılan başına aşağıdaki kodu ekleyerek blok kanca işlevini:  

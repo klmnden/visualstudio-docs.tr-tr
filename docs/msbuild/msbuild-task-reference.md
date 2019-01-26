@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77473f001d3d363309f1ac2403a146d0aa8124cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884730"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951293"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild görev başvurusu
 Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşağıdaki listede bulunan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Zaman [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] yüklenen, ek görevler oluşturmak için kullanılan olan [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeleri. Daha fazla bilgi için [Visual C++ görevleri](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -133,7 +133,7 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
  [GetFrameworkPath görevi](../msbuild/getframeworkpath-task.md)  
  Yolunu alır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemeler.  
 
- [GetFrameworkSdkPath görevi](../msbuild/getframeworksdkpath-task.md)  
+ [GetFrameworkSdkPath task](../msbuild/getframeworksdkpath-task.md)  
  Yolunu alır [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
 
  [GetReferenceAssemblyPaths görevi](../msbuild/getreferenceassemblypaths-task.md)  
@@ -169,7 +169,7 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
  [RequiresFramework35SP1Assembly görevi](../msbuild/requiresframework35sp1assembly-task.md)  
  Uygulama .NET Framework 3.5 SP1 isteyip istemediğini belirler.  
 
- ResGen görevi  
+ ResGen Task  
  Kullanımdan kalktı. Kullanım [GenerateResource görevi](../msbuild/generateresource-task.md) dönüştürmek için görev *.txt* ve *.resx* ortak dil çalışma zamanı ikili dosyaları *.resources* dosyaları.  
 
  [ResolveAssemblyReference görevi](../msbuild/resolveassemblyreference-task.md)  

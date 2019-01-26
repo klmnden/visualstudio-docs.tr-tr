@@ -6,15 +6,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672788"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926686"
 ---
 # <a name="walkthrough-build-an-application"></a>İzlenecek yol: Uygulama oluşturma
 
@@ -26,7 +26,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar oluştururken yap�
 
 ## <a name="create-a-custom-build-configuration"></a>Özel bir yapı yapılandırması oluşturma
 
-Bir çözüm oluşturduğunuzda, hata ayıklama ve yayın derleme yapılandırmaları ve varsayılan platform hedefleri, çözüm için otomatik olarak tanımlanır. Ardından, bu yapılandırmaları özelleştirebilir veya kendinizinkini oluşturun. Derleme yapılandırmaları derleme türünü belirtir. Derleme platformları, bir uygulamanın bu yapılandırma için hedeflediği işletim sistemini belirtin. Daha fazla bilgi için bkz. [anlayın derleme yapılandırmaları](../ide/understanding-build-configurations.md), [derleme platformlarını anlama](../ide/understanding-build-platforms.md), ve [nasıl yapılır: ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md).
+Bir çözüm oluşturduğunuzda, hata ayıklama ve yayın derleme yapılandırmaları ve varsayılan platform hedefleri, çözüm için otomatik olarak tanımlanır. Ardından, bu yapılandırmaları özelleştirebilir veya kendinizinkini oluşturun. Derleme yapılandırmaları derleme türünü belirtir. Derleme platformları, bir uygulamanın bu yapılandırma için hedeflediği işletim sistemini belirtin. Daha fazla bilgi için [anlayın derleme yapılandırmaları](../ide/understanding-build-configurations.md), [derleme platformlarını anlama](../ide/understanding-build-platforms.md), ve [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Değiştirme veya yapılandırma ve platform Ayarları'nı kullanarak oluşturma **Configuration Manager** iletişim kutusu. Bu yordamda, test etmek için bir yapı yapılandırması oluşturacaksınız.
 
@@ -162,7 +162,7 @@ Yapı işlemi hakkında ne kadar bilgi gözükeceğini değiştirebilirsiniz **�
     > [!TIP]
     > İçeriğini arayabilirsiniz **çıkış** görüntülerseniz penceresi **Bul** iletişim kutusunu **Ctrl**+**F** anahtarlar.
 
-Daha fazla bilgi için bkz. [nasıl yapılır: görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).
+Daha fazla bilgi için [nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Yayın derlemesi oluşturma
 
@@ -189,7 +189,7 @@ Daha fazla bilgi için [nasıl yapılır: Derleme çıktı dizinini değiştirme
     > [!IMPORTANT]
     > Belirttiğiniz ağ paylaşımı güvenilir olmayabilir sizi uyaran bir ileti kutusu görünebilir. Belirttiğiniz konuma güveniyorsanız seçin **Tamam** ileti kutusunda düğmesi.
 
-1. Uygulamayı oluşturun.
+1. Uygulamayı derleyin.
 
      ![Yapı menüsünde derleme çözümü komutu](../ide/media/exploreide-buildsolution.png)
 
@@ -214,7 +214,7 @@ Daha fazla bilgi için [nasıl yapılır: Derleme çıktı dizinini değiştirme
 
 1. Üzerinde **standart araç çubuğu**, çözüm yapılandırmaları ayarlamak **yayın** ve çözüm platformları **x86**.
 
-1. Uygulamayı oluşturun.
+1. Uygulamayı derleyin.
 
      ![Yapı menüsünde derleme çözümü komutu](../ide/media/exploreide-buildsolution.png)
 
@@ -224,6 +224,6 @@ Tebrikler! Bu izlenecek yolda başarıyla tamamladınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: derleme proje (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [İzlenecek yol: Bir projeyi (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [ASP.NET web uygulaması projesi ön derleme genel bakış](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md)

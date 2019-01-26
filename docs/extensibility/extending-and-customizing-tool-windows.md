@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e9f9c11faf18c1131e7e50de1747ba0e332d00c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949842"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930374"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Genişletme ve özelleştirme araç pencereleri
 Visual Studio, windows, örneğin araç pencereleri, belge pencereleri ve iletişim windows birkaç farklı türde sağlar. Gibi diğer windows **özellikleri** penceresinde **çıkış** penceresinde ve **görev listesi** penceresinde araç pencereleri türleridir.  

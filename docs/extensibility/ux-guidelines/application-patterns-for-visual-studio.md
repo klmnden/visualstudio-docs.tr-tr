@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898585"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938399"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio için uygulama desenleri
 ##  <a name="BKMK_WindowInteractions"></a> Pencere etkileşimleri  

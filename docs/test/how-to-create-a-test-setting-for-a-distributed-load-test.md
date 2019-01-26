@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4e145834210ea3c9aa2addd0673befe497592cda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37910ab925265a70d8d3b7e96f1b0f07dc698745
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967193"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932642"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Nasıl Yapılır: Dağıtılmış yük testi için bir test ayarı oluşturun
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturun
 
 Yapılandırma *test ayarları* bu testleri test aracıları kullanarak birden çok makine arasında dağıtmak ve test denetleyicilerine yük testleri için. Kullanılacak test ayarlarını da yapılandırabilirsiniz *tanılama veri bağdaştırıcıları*, toplamak istediğiniz veri türlerini belirtmek veya Visual Studio'dan yük testlerinizi çalıştırdığınızda test makinelerini nasıl etkileyeceğinizi.
 

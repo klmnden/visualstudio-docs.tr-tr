@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a2c4c2a80ea5186b4a3036491bd64a6531d753
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7905a9226d120c14a4b9e6472e14714167c1b09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951569"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949395"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 Belirtilen sayıda sabit listesi sırası çerçeve veri öğelerini alır.  

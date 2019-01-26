@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fad8eec19346273a7ea302da4653faa1bdec032
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa010c535b984eb6a00bcb8234815f3d489b87b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939458"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series Oluşturucusu
 Yeni bir örneğini başlatır `marker_series` sınıfı.  
@@ -46,9 +46,9 @@ marker_series(
  Seri sağlayıcısı GUID.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** *cvmarkersobj.h*  
+ **Header:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
- [marker_series sınıfı](../profiling/marker-series-class.md)
+ [marker_series class](../profiling/marker-series-class.md)

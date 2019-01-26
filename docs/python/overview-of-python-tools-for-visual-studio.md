@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ffcf9f1af4e6b23f0d2469d757eeb9ab95f2b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927862"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -40,7 +40,7 @@ Visual Studio'nun **Python ortamları** penceresi (aşağıda bir geniş, Geniş
 
 ![Python ortamları penceresinin Genişletilmiş Görünümü](media/environments-expanded-view.png)
 
-Kullanım **açık etkileşimli pencere** Python etkileşimli olarak Visual Studio bağlamı içinde çalıştırmak için komutu. Kullanım **PowerShell'de açın** komutu seçili ortam klasöründe bir ayrı bir komut penceresi açın. Bu komut penceresinde herhangi bir python betiğini çalıştırabilirsiniz. 
+Kullanım **açık etkileşimli pencere** Python etkileşimli olarak Visual Studio bağlamı içinde çalıştırmak için komutu. Kullanım **PowerShell'de açın** komutu seçili ortam klasöründe bir ayrı bir komut penceresi açın. Bu komut penceresinde herhangi bir python betiğini çalıştırabilirsiniz.
 
 Daha fazla bilgi için:
 

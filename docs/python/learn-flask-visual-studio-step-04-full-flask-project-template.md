@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927522"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4. Adım: Tam bir Flask Web projesi şablonunu kullanma
 
@@ -163,7 +163,7 @@ Tek tek sayfa şablonları *about.html*, *contact.html*, ve *index.html*, her bi
 
 Bu makalenin başında belirtildiği gibi Visual Studio "Flask Web projesi" tarafından üretilen için görsel olarak aynı olan bir uygulama oluşturur bir "Webový projekt Flask/Jade" şablonu sağlar. Dekinden daha birleştiren bir dil ile aynı kavramlar uygulayan Jinja uzantısıdır Jade şablon oluşturma altyapısı kullanmasıdır. Özellikle, içine etiketleri yerine anahtar sözcükler Jade kullanan {ayıklaması sınırlayıcıları, örneğin ve CSS stilleri ve anahtar sözcükleri kullanarak HTML öğeleri için başvuru sağlar.
 
-Jade etkinleştirmek için proje şablonu ilk pyjade paketine ekler *requirements.txt*. 
+Jade etkinleştirmek için proje şablonu ilk pyjade paketine ekler *requirements.txt*.
 
 Uygulamanın  *\_ \_init\_\_.py* dosyası için bir satır içerir
 

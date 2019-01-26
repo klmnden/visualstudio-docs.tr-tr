@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daea7d3c5309ef3486d5605d60dcaa692dd17b66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f21bc2eacdc6886410e03ea80fad451c32abfc3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949408"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension taban sınıfı
 Birçok görevi devralacak <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu devralma zincirini aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.  

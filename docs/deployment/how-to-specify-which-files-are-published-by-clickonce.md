@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme | Microsoft Docs'
+title: 'Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b24cb2b90bdd9e3fad5128a483314d75ffc1672f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826961"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926897"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl Yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projedeki uygulama, tüm kod dışı dosyalara yanı sıra uygulama dağıtılır. Bazı durumlarda değil istediğiniz veya belirli dosyaları yayımlamanız gerekir veya koşullara göre belirli dosyaları yüklemek isteyebilirsiniz. Visual Studio dosyaları dışarıda bırak, dosyalar, veri dosyalarını veya önkoşul olarak işaretleme ve koşullu yüklemek için dosya grupları oluşturmak için özellikler sunar.  
   
  Dosyaları bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama yönetilen **uygulama dosyaları** iletişim kutusu, erişilebilir **Yayımla** sayfasının **Proje Tasarımcısı**.  

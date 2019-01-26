@@ -2,7 +2,7 @@
 title: Yayımlama veya bir bulut hizmeti dağıtmak hazırlama
 description: Bulut ve depolama hesabı Hizmetleri'ni ayarlama ve Azure uygulamanızı yapılandırmak için yordamlar hakkında bilgi edinin.
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,18 +10,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 25f63e2597a8abe837b65920caa8886c0115b685
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5ba083ec762976c744d6cebc9ce3e240f4c9c65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845424"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938574"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio'dan bulut hizmeti yayımlamaya veya dağıtmaya hazırlanma
 
 Bir bulut hizmeti projesini yayımlamak için bu makalede açıklandığı gibi aşağıdaki hizmetleri ayarlamanız gerekir:
 
-* A **bulut hizmeti** rollerinizi Azure ortamında çalıştırmayı ve 
+* A **bulut hizmeti** rollerinizi Azure ortamında çalıştırmayı ve
 * A **depolama hesabı** Blob, kuyruk ve tablo hizmetlerine erişim sağlar.
 
 ## <a name="create-a-cloud-service"></a>Bulut hizmeti oluşturma

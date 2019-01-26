@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kaynaklara sahip olan bir projeyi derleme | Microsoft Docs'
+title: 'Nasıl yapılır: Kaynaklara sahip olan bir projeyi derleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8886f4970a4888d72f0c0f919069c10658e92332
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948966"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Nasıl Yapılır: Kaynaklara sahip olan bir projeyi derleme
+# <a name="how-to-build-a-project-that-has-resources"></a>Nasıl yapılır: Kaynaklara sahip olan bir projeyi derleme
 Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı arabirimi öğeleri kaynak dosyalara farklı diller için ayrılmış olması gerekir. Projeyi yalnızca dizeler kullanıyorsa, kaynak dosyalar metin dosyaları kullanabilirsiniz. Alternatif olarak, *.resx* dosyaları olarak kaynak dosyaları.  
   
 ## <a name="compile-resources-with-msbuild"></a>Kaynakları MSBuild ile Derle  

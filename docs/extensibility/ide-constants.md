@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 337d5dd0e8a167bd4e49f084d819eb4c1145c6a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929564"
 ---
 # <a name="ide-constants"></a>IDE sabitleri
 
@@ -44,8 +44,8 @@ ms.locfileid: "53837478"
 |-----------|-----------------|
 |[CEF.CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Geçersiz bir bayrak bit düzeyinde ilk parametre olarak birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi.|
 |[CEF.OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Bit düzeyinde ilk parametre olarak birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, yöntemi, bu gösterir Düzenleyici fabrikası gerekli düzeltmeleri gerçekleştirmeniz.|
-|[CEF. Openfıle](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Bit düzeyinde ilk parametre olarak birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu bayrağı olduğu birbirini exclusive [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
-|[CEF. Sessiz](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Bit düzeyinde ilk parametre olarak birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu gösterir Düzenleyici fabrikası oluşturmalıdır Düzenleyicisi kullanıcı arabirimi (UI) görüntülemeden.|
+|[CEF.OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|Bit düzeyinde ilk parametre olarak birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu bayrağı olduğu birbirini exclusive [CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>).|
+|[CEF.Silent](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|Bit düzeyinde ilk parametre olarak birleştirilmiş <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> yöntemi, bu gösterir Düzenleyici fabrikası oluşturmalıdır Düzenleyicisi kullanıcı arabirimi (UI) görüntülemeden.|
 
 ## <a name="visual-studio-errors"></a>Visual Studio hataları
 
@@ -73,7 +73,7 @@ ms.locfileid: "53837478"
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil sonuna belirten yöntemi.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> komut çubuğu ölçümleri değiştiğini gösteren yöntemi.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Visual Studio için bir tanımlama bilgisi ayarlanmamışsa gösteren belirli bir sabit değer.|
-|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
+|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
 |[VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Bir proje hiyerarşisinin kökü temsil eder ve tek bir öğe yerine tüm bir hiyerarşiye tanımlamak için kullanılan bir Visual Studio öğe tanımlayıcısı.|
 |[VSITEMID. Seçimi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Seçili öğenin veya hiyerarşisinin kökü içerebilen öğeleri temsil eden bir Visual Studio öğe tanımlayıcısı.|
 

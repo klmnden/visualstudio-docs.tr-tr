@@ -2,7 +2,7 @@
 title: Bir Azure bulut hizmeti projesi oluşturma
 description: Artık Visual Studio ile bir Azure bulut hizmeti projesi oluşturmayı öğrenin
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,18 +10,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: b4b416ebc7124cdbd9ca7d076e94f2649109aec7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52f84cab67fb2f826a4aa26e27cd4ad393dd8bcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930861"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile bir Azure bulut hizmeti projesi oluşturma
 Visual Studio için Azure Araçları oluşturmanıza imkan tanıyan bir proje şablonu sağlar bir [Azure bulut hizmeti](/azure/cloud-services/cloud-services-choose-me), basit bir genel amaçlı Azure hizmet. Visual Studio projesi oluşturulduktan sonra yapılandırma, hata ayıklama ve bulut hizmetini Azure'a dağıtmak sağlar.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Visual Studio'da bir Azure bulut hizmeti projesi oluşturma adımları
-Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut hizmeti projesi oluşturma işleminde size yol gösterir.  
+Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut hizmeti projesi oluşturma işleminde size yol gösterir.
 
 1. Visual Studio'yu yönetici olarak başlatın.
 
@@ -33,7 +33,7 @@ Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut 
 
 1. Hangi proje geliştirmek için kullanmak istediğiniz .NET Framework sürümünü belirtin.
 
-1. Bir ad ve projenizin konumunu ve çözüm için bir ad girin. 
+1. Bir ad ve projenizin konumunu ve çözüm için bir ad girin.
 
 1. Seçin **Tamam**.
 
@@ -47,8 +47,8 @@ Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut 
 
 Visual Studio Azure project ilişkilendirmeleri rolü projeleri için çözüm vardır. Proje yöntemlerine *Hizmet tanım dosyası* ve *hizmet yapılandırma dosyasını*:
 
-- **Hizmet tanım dosyası** -uygulama, hangi roller gereklidir dahil olmak üzere, uç noktaları ve sanal makine boyutu için çalışma zamanı ayarlarını tanımlar. 
-- **Hizmet yapılandırma dosyasını** -kaç rol örneklerini çalıştırma ve bir rol için tanımlanan ayarlara değerleri olan yapılandırır. 
+- **Hizmet tanım dosyası** -uygulama, hangi roller gereklidir dahil olmak üzere, uç noktaları ve sanal makine boyutu için çalışma zamanı ayarlarını tanımlar.
+- **Hizmet yapılandırma dosyasını** -kaç rol örneklerini çalıştırma ve bir rol için tanımlanan ayarlara değerleri olan yapılandırır.
 
 Bu dosyalar hakkında daha fazla bilgi için bkz. [Visual Studio ile bir Azure bulut hizmeti için rolleri yapılandırmak](vs-azure-tools-configure-roles-for-cloud-service.md).
 
