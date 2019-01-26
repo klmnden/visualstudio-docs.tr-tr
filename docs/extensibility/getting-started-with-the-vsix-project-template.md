@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 374b9f447c27dea99d1897bde8ed218a7ffcc394
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0862ee1ca9c9c8fc21771469bf1baddfc2e8d3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841972"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942574"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>VSIX proje şablonu ile çalışmaya başlama
 VSIX proje şablonu, bir uzantı oluşturmak veya mevcut bir uzantı için dağıtım paketini için kullanabilirsiniz. VSIX proje şablonu Visual Basic ve Visual C# sürümü vardır ve Visual Studio SDK'ın bir parçası olarak yüklenir.  

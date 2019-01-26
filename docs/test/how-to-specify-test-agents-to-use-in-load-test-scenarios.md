@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef1325fbe568e82f03d694523a4580f2d61265c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966744"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl Yapılır: Yük testi senaryolarında kullanılacak test aracıları belirtme
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl yapılır: Yük testi senaryolarında kullanılacak test aracıları belirtme
 
 Kullanarak yük testi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde değiştirmek için.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kaynak Denetimi Eklentisi yükleme | Microsoft Docs'
+title: 'Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1e7e60819b9ac10308be26a1f3ea3243cc71c34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58a472ad20bbaee34937fcfd058710b58478dade
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990509"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961695"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>Nasıl Yapılır: Kaynak Denetimi Eklentisi yükleme
+# <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme
 Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:  
 
 1. Bu belge kaynak denetimi eklentisi API başvuru bölümünde tanımlanan işlevleri ile bir dll dosyası oluşturun.  

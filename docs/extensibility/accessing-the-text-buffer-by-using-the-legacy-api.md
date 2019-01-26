@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dfd4535eb0d792e323143bdebd4b5e17a048e1d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972674"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>Erişim eski API'yi kullanarak metin arabelleği
 Metin, metin akışları ve dosya kalıcılığına yönetmekten sorumludur. Arabellek okuma veya yazma diğer biçimlere rağmen arabellek ile tüm sıradan iletişim Unicode kullanılarak gerçekleştirilir. Eski API'leri, metin arabelleğini bir - veya iki boyutlu bir koordinat sistemini arabellekteki karakterin konumlarını belirlemek için kullanabilirsiniz.  

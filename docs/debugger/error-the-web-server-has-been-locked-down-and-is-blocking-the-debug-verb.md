@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 277619cb89003aea9dca58678f251f2f21826046
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941563"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026599"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Hata: Web sunucusu kilitli ve DEBUG fiilini engelliyor
 Bir Web uygulaması veya XML Web hizmeti içine Adımlama, IIS Kilitleme aracını çalıştırın ve URLScan yüklü ve etkin olduğundan başarısız oldu. Bu durum, IIS DEBUG fiilini almasını engeller.  
@@ -49,5 +49,5 @@ Bir Web uygulaması veya XML Web hizmeti içine Adımlama, IIS Kilitleme aracın
 7.  Sunucuyu yeniden başlatın veya IIS'yi yeniden başlatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Hata: Web sunucusu istenen kaynağı bulamadı.](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [Web Uygulamalarında Hata Ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Hata: Web Sunucusu İstenen Kaynağı Bulamadı](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

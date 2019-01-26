@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042407"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek yol: C# ile Görselleştirici yazma #
 Bu kılavuz, C# kullanarak basit Görselleştirici yazma işlemi gösterilmektedir. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici kendisi özellikle kullanışlı değildir, ancak diğer veri türleri için daha faydalı görselleştiriciler oluşturmak için izlemeniz gereken temel adımlarda gösterilir.
@@ -260,5 +260,5 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Görselleştirici Mimarisi](../debugger/visualizer-architecture.md)
-- [Nasıl yapılır: Görselleştiriciyi yükleme](../debugger/how-to-install-a-visualizer.md)
+- [Nasıl yapılır: Görselleştiriciyi Yükleme](../debugger/how-to-install-a-visualizer.md)
 - [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)

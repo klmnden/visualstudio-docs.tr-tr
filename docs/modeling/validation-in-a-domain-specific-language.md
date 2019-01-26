@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f228d1cf68357711d106b9399477badce350f558
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16ff6a60182ec6f3cbaff45bac54a4bec3ffbd52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932330"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan model anlamlı olduğunu doğrulamak için doğrulama kısıtlamalarını tanımlayabilirsiniz. Örneğin, kullanıcılar, kişiler ve kendi üst öğelerinden ailesi ağacının çizmek DSL'nizi izin veriyorsa, alt kendi üst öğeleri sonraki Doğum tarihleri sahip olmasını sağlar bir kısıtlama yazabilirsiniz.

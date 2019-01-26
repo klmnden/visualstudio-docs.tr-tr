@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dbb3c9db722ff335fd8dddadfffed57457d23ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b0c49df0c7412e86c9cabaf8e260e83727689dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969489"
 ---
 # <a name="subscribing-to-an-event"></a>Bir Olaya Abone Olma
 Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bir araç penceresi oluşturma açıklanır. Araç penceresi uygulayan bir kullanıcı denetimi barındıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Yöntemi arabirimi olaylarına bağlanır.  

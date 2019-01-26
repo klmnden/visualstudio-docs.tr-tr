@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 865b5c220a410c9b0d744263820a50dd1bb9395a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945066"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Desteklenen kod değişiklikleri (C# ve Visual Basic)
 Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türde işler. Metot gövdeleri dışında çoğu değişiklikleri ve metot gövdeleri içindeki bazı değişiklikler, ancak hata ayıklama sırasında uygulanamaz. Desteklenmeyen bu değişiklikleri uygulamak için hata ayıklamayı durdurmak ve kod yeni bir sürümle yeniden başlatmanız gerekir.
@@ -106,4 +106,4 @@ Desteklenmeyen uygulamalar ve platformlar, ASP.NET 5, Silverlight 5 ve Windows 8
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve devam et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Nasıl yapılır: Kullanım Düzenle ve devam et (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Nasıl yapılır: Düzenle ve Devam Et’i Kullanma (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

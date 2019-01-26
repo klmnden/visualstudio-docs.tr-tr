@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e8de1edc266489a6260176e0b9e8aec8df62ba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912775"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956707"
 ---
 # <a name="cl-task"></a>CL görevi
 Visual C++ Derleyici aracı sarmalar *cl.exe*. Derleyici çalıştırılabilir dosyası oluşturur (*.exe*) dosyaları, dinamik bağlantı kitaplığı (*.dll*) dosyaları ya da kod modülünü (*.netmodule*) dosyaları. Daha fazla bilgi için [derleyici seçenekleri](/cpp/build/reference/compiler-options).  
@@ -182,7 +182,7 @@ Visual C++ Derleyici aracı sarmalar *cl.exe*. Derleyici çalıştırılabilir d
   
   - **doğru** -   **/CLR**  
   
-  - **Saf** -   **/CLR: pure**  
+  - **Pure** - **/clr:pure**  
   
   - **Safe** - **/clr:safe**  
   

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43a7799c1c2b6d3fed965f6039aa01b7fd29e937
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9759acc597d9a13ed084bdb8111cdd268a80bbc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965659"
 ---
 # <a name="combo-element"></a>Combos öğesi
 Bir açılan kutunun içinde görünen komutlar tanımlar. Şu şekilde birleşik giriş kutuları dört çeşit vardır: Aşağı açılan, DynamicCombo, IndexCombo ve MRUCombo.  
@@ -51,7 +51,7 @@ Bir açılan kutunun içinde görünen komutlar tanımlar. Şu şekilde birleşi
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |Üst öğe|İsteğe bağlı. Düğmenin üst öğe.|  
-|CommandFlag|Gerekli. Bkz: [Command flag öğesi](../extensibility/command-flag-element.md). Bir düğme için geçerli CommandFlag değerler aşağıdaki gibidir.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Süzme<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|Gerekli. Bkz: [Command flag öğesi](../extensibility/command-flag-element.md). Bir düğme için geçerli CommandFlag değerler aşağıdaki gibidir.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Süzme<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Dizeler|Gerekli. Bkz: [Strings öğesi](../extensibility/strings-element.md). Alt ButtonText öğesi tanımlanmalıdır.|  
 |Ek Açıklama|İsteğe bağlı bir açıklama.|  
   

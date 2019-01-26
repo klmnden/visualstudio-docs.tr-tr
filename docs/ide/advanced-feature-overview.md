@@ -6,23 +6,23 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ed82b900c82ecc704a74e39a9ab8e3fa82d49bd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 24a21111ae1f872bfc8517a11730c4bf99f18e30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037609"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017'in özellikleri
 
-[Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md) makale, Visual Studio için temel bir giriş sağlar. Bu makalede, deneyimli geliştiriciler veya zaten Visual Studio ile ilgili bilgi sahibi olan kişiler için daha uygun olabilir özelliklerini açıklar.
+[Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md) makale, Visual Studio için temel bir giriş sağlar. Bu makalede, deneyimli geliştiriciler veya Visual Studio ile ilgili bilgi sahibi olan bu geliştiriciler için daha uygun olabilir özelliklerini açıklar.
 
 ## <a name="modular-installation"></a>Modüler yükleme
 
-Visual Studio modüler yükleyici seçin ve yüklemek etkinleştirir *iş yükleri*, programlama dili veya tercih ettiğiniz platform için gerekli özellikler grupları olduğu. Bu strateji, yükler ve çok daha hızlı güncelleştirmeler ayak izini daha küçük, Visual Studio yüklemesinin kalmasına yardımcı olur.
+Visual Studio modüler yükleyici seçin ve yüklemek tanır *iş yükleri*. İş yükleri programlama dili veya tercih ettiğiniz platform için gerekli özellikleri gruplarıdır. Bu strateji, yükler ve çok daha hızlı güncelleştirmeler ayak izini daha küçük, Visual Studio yüklemesinin kalmasına yardımcı olur.
 
 Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
@@ -72,23 +72,23 @@ Visual Studio, uygulamaları ve oyunları macOS, Linux ve Windows için yanı s�
 
 - Kullanarak C# 2B ve 3B oyunlar oluşturun [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Derleme yerel C++ uygulamaları iOS, Android ve Windows cihazları ve Paylaşım ortak kod kitaplıkları kullanarak iOS, Android ve Windows, yerleşik [C++ platformlar arası geliştirme için](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Yerel C++ uygulamaları iOS, Android ve Windows için derleme cihazlar. Kullanarak iOS, Android ve Windows, yerleşik kitaplıklarda ortak kod paylaşma [C++ platformlar arası geliştirme için](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
 - Dağıtın, test edin ve Android uygulamaları ile hata ayıklama [Android öykünücüsü](../cross-platform/visual-studio-emulator-for-android.md).
 
 ## <a name="connect-to-databases"></a>Veritabanlarına bağlanma
 
-**Sunucu Gezgini** göz atın ve SQL Server örnekleri ve varlıkları yerel olarak, uzaktan ve Azure, Salesforce.com, Office 365 ve Web siteleri üzerinde yönetmenize yardımcı olur. Açmak için **Sunucu Gezgini**, ana menüsünde **görünümü** > **Sunucu Gezgini**. Bkz: [yeni bağlantı ekleme](../data-tools/add-new-connections.md) Sunucu Gezgini kullanma hakkında daha fazla bilgi için.
+**Sunucu Gezgini** göz atın ve SQL Server örnekleri ve varlıkları yerel olarak, uzaktan ve Azure, Salesforce.com, Office 365 ve Web siteleri üzerinde yönetmenize yardımcı olur. Açmak için **Sunucu Gezgini**, ana menüsünde **görünümü** > **Sunucu Gezgini**. Sunucu Gezgini kullanma hakkında daha fazla bilgi için bkz. [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
 
 [SQL Server veri Araçları (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) SQL Server, Azure SQL veritabanı ve Azure SQL veri ambarı için bir güçlü bir geliştirme ortamıdır. Derleme, hata ayıklama, korumak ve veritabanlarını yeniden düzenleme sağlar. Bir veritabanı projesiyle veya doğrudan ile bir bağlı veritabanı örneği veya kapalı-şirket içinde çalışabilir.
 
-**SQL Server Nesne Gezgini** Visual Studio'da veritabanı nesnelerini SQL Server Management Studio'ya benzer bir görünüm sağlar. SQL Server Nesne Gezgini tablo verilerini düzenleme, Şema karşılaştırma, bağlam menülerinden ve SQL Server Nesne Gezgini sağ kullanarak sorgular yürütme dahil olmak üzere light vergileri veritabanı yönetimi ve tasarım işler yapmasını sağlar.
+**SQL Server Nesne Gezgini** Visual Studio'da veritabanı nesnelerini SQL Server Management Studio'ya benzer bir görünüm sağlar. SQL Server Nesne Gezgini light vergileri veritabanı yönetimi ve tasarım işlerini yapmasına imkan sağlar. Tablo verilerini, şemalar, SQL Server nesne Gezgini'nde sağ bağlam menüleri ve daha fazlasını kullanarak sorgular yürütme karşılaştırma düzenleme iş örnek verilebilir.
 
 ![SQL Server Object Explorer](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>Hata ayıklama, test etme ve kodunuzu geliştirme
 
-Kod yazmak, çalıştırmak ve hataları ve performans için test gerekir. Visual Studio'nun en son hata ayıklama sistem projenizdeki yerel veya uzak cihaz üzerinde çalışan kodda hata ayıklamak sağlayan bir [cihaz öykünücüsünü](../cross-platform/visual-studio-emulator-for-android.md). Aynı anda bir deyim kod adım adım ve kullandıkça değişkenleri denetleyin. Belirtilen bir koşul true olduğunda yalnızca isabet kesme noktaları ayarlayabilirsiniz. Kodunuzdan çıkmanıza gerek yoktur, böylece tüm bu kod düzenleyicisinde kendisini yönetilebilir. Visual Studio'da hata ayıklama hakkında daha fazla bilgi edinmek için bkz. [hata ayıklayıcısı özellik Turu](../debugger/debugger-feature-tour.md).
+Kod yazmak, çalıştırmak ve hataları ve performans için test gerekir. Visual Studio'nun en son hata ayıklama sistem projenizdeki yerel veya uzak cihaz üzerinde çalışan kodda hata ayıklamak sağlayan bir [cihaz öykünücüsünü](../cross-platform/visual-studio-emulator-for-android.md). Aynı anda bir deyim kod adım adım ve kullandıkça değişkenleri denetleyin. Belirtilen bir koşul true olduğunda yalnızca isabet kesme noktaları ayarlayabilirsiniz. Hata ayıklama seçenekleri yönetilen kod düzenleyicisinde kendisi, böylece kodunuzdan çıkmanıza gerek yoktur. Visual Studio'da hata ayıklama hakkında daha fazla bilgi edinmek için bkz. [hata ayıklayıcısı özellik Turu](../debugger/debugger-feature-tour.md).
 
 Visual Studio'nun kullanıma kullanıma alma uygulamalarınızın performansını iyileştirme hakkında daha fazla bilgi edinmek için [profil oluşturma](../profiling/profiling-feature-tour.md) özelliği.
 
@@ -96,13 +96,13 @@ Visual Studio'nun kullanıma kullanıma alma uygulamalarınızın performansın�
 
 ## <a name="deploy-your-finished-application"></a>Tamamlanmış uygulama dağıtma
 
-Uygulamanızı kullanıcılarınıza veya müşterilerinize dağıtmaya hazır olduğunda, Visual Studio için Microsoft Store, bir SharePoint sitesine veya InstallShield veya Windows Installer teknolojileriyle dağıtıyorsanız olup olmadığını bunun için araçlar sağlar. Bu, tüm IDE erişilebilir. Daha fazla bilgi için [uygulamaları, hizmetleri ve bileşenleri dağıtma](../deployment/deploying-applications-services-and-components.md).
+Uygulamanızın kullanıcıları veya müşterileri dağıtmak hazır olduğunda, Visual Studio Bunu yapmak için gereken araçları sağlar. Dağıtım seçenekleri için Microsoft Store, bir SharePoint sitesine veya InstallShield veya Windows Installer teknolojileriyle içerir. Bu, tüm IDE erişilebilir. Daha fazla bilgi için [uygulamaları, hizmetleri ve bileşenleri dağıtma](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Kaynak kodunuzu yönetin ve başkalarıyla işbirliği yapın
 
 GitHub dahil olmak üzere herhangi bir sağlayıcı tarafından barındırılan Git depolarındaki kaynak kodunuzu yönetebilirsiniz. Veya [Azure DevOps Hizmetleri](/azure/devops/index) hataların yanında kodu yönetmek ve iş öğelerinin projenizin tamamında. Bkz: [Azure depoları ve Git ile çalışmaya başlama](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Visual Studio'da Takım Gezgini'ni kullanarak Git depoları yönetme hakkında daha fazla bilgi edinmek için. Visual Studio'nun diğer yerleşik kaynak denetimi özellikleri de vardır. Bunlar hakkında daha fazla bilgi edinmek için [yeni Git özellikleri Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
 
-Azure DevOps bulut tabanlı hizmetler için planlama, barındırma, otomatikleştirme, yazılım ve dağıtımı teams'de işbirliğini kolaylaştırırken diğer hizmetlerdir. Azure DevOps Hizmetleri için sürekli derleme ve sürüm denetim sisteminde depolanan kod (CI/CD) yayın işlem hatları yanı sıra hem Git depoları (dağıtılmış sürüm denetimi) hem de Team Foundation sürüm denetimi (merkezi sürüm denetimi) destekler. Azure DevOps hizmetleriyle, Scrum ve CMMI Çevik Geliştirme yöntemleri de destekler.
+Azure DevOps planlamak, ana bilgisayar, otomatikleştirin ve yazılım dağıtma ve teams'de işbirliği etkinleştirmek için bulut tabanlı hizmetlere hizmetleridir. Azure DevOps hizmetleriyle Git depoları (dağıtılmış sürüm denetimi) hem de Team Foundation sürüm denetimi (merkezi sürüm denetimi) destekler. Bunlar için sürekli derleme ve sürüm denetim sisteminde depolanan kod (CI/CD) yayın işlem hatları destekler. Azure DevOps hizmetleriyle, Scrum ve CMMI Çevik Geliştirme yöntemleri de destekler.
 
 Team Foundation Server (TFS) Visual Studio uygulama yaşam döngüsü yönetimi hub ' dir. Tek bir çözüm kullanarak katılmak için geliştirme işlemine dahil olan herkes sağlar. TFS, heterojen takımlara ve projelere, çok yönetimi için avantajlıdır.
 
@@ -110,7 +110,7 @@ Azure DevOps kuruluş veya Team Foundation Server ağınız üzerinde varsa arac
 
 Aşağıdaki görüntüde **Takım Gezgini** penceresi Azure DevOps hizmetlerinde barındırılan bir çözüm.
 
-![Visual Studio Takım Gezgini](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio Takım Gezgini](../ide/media/vs2017_teamexplorer_devops.png)
 
 Sürüm denetimine takımınızdaki geliştiriciler iade etmiş kod oluşturmak için yapı işleminizi otomatik hale getirebilirsiniz. Örneğin, gecelik bir veya daha fazla proje veya kodu iade her zaman oluşturabilirsiniz. Daha fazla bilgi için [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts).
 

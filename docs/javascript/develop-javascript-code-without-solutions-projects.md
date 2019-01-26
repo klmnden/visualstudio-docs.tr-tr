@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899762"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043719"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio'da JavaScript ve TypeScript kodu çözümlerin veya projelerin olmadan geliştirin
 
@@ -32,9 +32,9 @@ Başlamak için seçin **klasörünü Aç** Başlat beliren sayfasından Visual 
 
 ## <a name="npm-integration"></a>npm tümleştirmesi
 
-Açtığınız klasör içeriyorsa bir *package.json* dosyası, sağ *package.json* npm için belirli bir bağlam menüsü (kısayol menüsü) göstermek için. 
+Açtığınız klasör içeriyorsa bir *package.json* dosyası, sağ *package.json* npm için belirli bir bağlam menüsü (kısayol menüsü) göstermek için.
 
-![Çözüm Gezgini'nde npm menüsü](../javascript/media/solution-explorer-npm-ctx.png) 
+![Çözüm Gezgini'nde npm menüsü](../javascript/media/solution-explorer-npm-ctx.png)
 
 Kısayol menüsünde, aynı npm yüklü paketleri yönetebilirsiniz şekilde [npm paketlerini yönetme](npm-package-management.md) bir proje dosyasını kullanırken.
 
@@ -43,7 +43,8 @@ Ayrıca, menü ayrıca tanımlanan betikleri çalıştırmanıza olanak tanır `
 ## <a name="build-and-debug"></a>Derleme ve hata ayıklama
 
 ### <a name="packagejson"></a>Package.JSON
-Varsa *package.json* klasöründe belirtir bir `main` öğesi **hata ayıklama** komutu için sağ tıklama kısayol menüsünde kullanılabilir olacak *package.json*. Bu seçeneğe tıkladığınızda başlayacak *node.exe* kendi bağımsız değişkeni olarak belirtilen komut dosyası.
+Varsa *package.json* klasöründe belirtir bir `main` öğesi **hata ayıklama** komutu için sağ tıklama kısayol menüsünde kullanılabilir olacak *package.json*.
+Bu seçeneğe tıkladığınızda başlayacak *node.exe* kendi bağımsız değişkeni olarak belirtilen komut dosyası.
 
 ### <a name="javascript-files"></a>JavaScript dosyaları
 Dosyaya sağ tıklayarak ve seçerek JavaScript dosyalarının hatalarını ayıklayabilir **hata ayıklama** kısayol menüsünden. Bu başlatır *node.exe* bağımsız değişken olarak bu JavaScript dosya ile.

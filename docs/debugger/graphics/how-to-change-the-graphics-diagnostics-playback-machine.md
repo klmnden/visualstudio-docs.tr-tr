@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme | Microsoft Docs'
+title: 'Nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015878da1d2e8c144787ba94d7f5394ebea4f4c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33768ffd0784d6b1fc406400c2cabb94464cf0a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945898"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Nasıl Yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme
 Yerel makinenizi kullanarak veya bir uzak makine ya da aygıt kullanarak grafik bilgilerini kayıttan yürütme.  
   
 ## <a name="choosing-a-playback-machine"></a>Kayıttan yürütme makinesi seçme  

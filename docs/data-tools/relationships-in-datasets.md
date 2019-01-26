@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822169"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970233"
 ---
 # <a name="create-relationships-between-datasets"></a>Veri kümeleri arasında ilişki oluşturma
 İlgili verileri içeren veri kümeleri tablolar kullanım <xref:System.Data.DataRelation> nesneleri tablolar arasında bir üst/alt ilişkilerini temsil eden ve birbirlerinden ilgili kayıtları döndürmek için. İlişkili tabloları kullanarak veri kümelerine ekleme **veri kaynağı Yapılandırma Sihirbazı**, veya **veri kümesi Tasarımcısı**oluşturur ve yapılandırır <xref:System.Data.DataRelation> nesnesi.

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: .NET Framework çalışma zamanını belirtin. | Microsoft Docs'
+title: 'Nasıl yapılır: .NET Framework çalışma zamanını belirtin. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6baa0e37acb4ba24d0622ad27fe84c47e84da59d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fd60568b0e92e26aa9370e6521a9da9d7d5ed27
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968251"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Nasıl Yapılır: .NET Framework çalışma zamanını belirtme
+# <a name="how-to-specify-the-net-framework-runtime"></a>Nasıl yapılır: .NET Framework çalışma zamanını belirtme
 
 Sürümüyle [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], uygulamalar oluşan farklı sürümleri kullanılarak derlenmiş modüllerin [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] çalışma zamanı. Varsayılan olarak, Visual Studio profil oluşturma araçları, uygulama tarafından yüklenen ilk çalışma zamanı profili. Bir uygulamaya Profil Oluşturucu ile başladığınızda ve profil oluşturucu zaten çalışan bir uygulamaya ekleme yaptığınızda profil için çalışma zamanı belirtebilirsiniz.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12ce11a057884f12466eb5c9c499b0822217b474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b234de491b9e8abbe3ae75fc927923c680ddd9f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962085"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Ana Hat Oluşturma
 Anahat oluşturma, karmaşık bir program bir genel bakış veya anahat Daralt mümkün kılar. Örneğin, C# ' de tüm yöntemler yöntem imzası gösteren tek bir satır için daraltılabilirler. Ayrıca, yapılar ve sınıflar yalnızca yapılar ve sınıflar adlarını göstermek üzere daraltılabilir. Tek bir yöntem içinde deyim yalnızca ilk satır göstererek genel akışını göstermek için karmaşık mantık daratılmadan `foreach`, `if`, ve `while`.  

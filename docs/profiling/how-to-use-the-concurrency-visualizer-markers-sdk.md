@@ -1,21 +1,21 @@
 ---
-title: "Nasıl Yapılır: Eşzamanlılık görselleştiricisi işaretçileri SDK'sını kullanma | Microsoft Docs"
+title: "Nasıl yapılır: Eşzamanlılık görselleştiricisi işaretçileri SDK'sını kullanma | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82815ea756d7f7ae72f15d46c5418adb8eb72c80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a486c275c16a52bda937abab28828ff841f6e4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933599"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921914"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Nasıl Yapılır: Eşzamanlılık görselleştiricisi işaretçileri SDK'yı kullanın
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Nasıl yapılır: Eşzamanlılık görselleştiricisi işaretçileri SDK'yı kullanın
 Bu konu, eşzamanlılık görselleştiricisi SDK'si yayılma oluşturup bayrakları, iletileri ve Uyarılar için nasıl kullanılacağını gösterir.  
   
 ### <a name="to-use-c"></a>C++ kullanmak için  

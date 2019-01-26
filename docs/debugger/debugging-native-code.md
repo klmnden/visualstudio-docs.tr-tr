@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 9b057d10e03274186160fc468da8fbc7714ffe14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034083"
 ---
 # <a name="debugging-native-code"></a>Yerel Kodda Hata Ayıklama
 Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için teknikleri kapsar. Bu bölümde yer alan teknikleri, üst düzey tekniklerle aynıdır. Visual Studio hata ayıklayıcısını kullanarak mekanizması için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)).  

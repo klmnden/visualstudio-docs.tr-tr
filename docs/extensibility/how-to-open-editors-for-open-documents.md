@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Açık belgeler için düzenleyicileri açma | Microsoft Docs'
+title: 'Nasıl yapılır: Açık belgeler için düzenleyicileri açma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4ba9e15a7f7578454aa7b87372ea776399eca57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa6fdbefbcfd23afd88c7f85703fd6f02999840c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967313"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031519"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Nasıl Yapılır: Açık belgeler için düzenleyicileri açma
+# <a name="how-to-open-editors-for-open-documents"></a>Nasıl yapılır: Açık belgeler için düzenleyicileri açma
 Bir belge penceresi bir proje açmadan önce proje önce dosyanın zaten başka bir düzenleyici belge penceresinde açık olup olmadığını belirlemeniz gerekir. Dosya ya da açık bir projeye özgü düzenleyicisinde olabilir ya da standart düzenleyicileri birini kayıtlı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="open-a-project-specific-editor"></a>Bir projeye özgü Düzenleyicisi'ni açın  

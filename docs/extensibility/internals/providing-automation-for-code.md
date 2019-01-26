@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3922de57a275dd24ce3161209b7775db104afada
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4adbc5385923e071e158734500e30a6a05832a1f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976225"
 ---
 # <a name="providing-automation-for-code"></a>Kod için Otomasyon Sağlama
 Kodunuz için bir otomasyon modeli oluşturulması gerekli değildir. Ortamı SDK'sı, bunu yapmak için bir örnek sağlamaz. Kod modelleri hakkında bilgi için bkz: <xref:EnvDTE.CodeModel> nesne.  

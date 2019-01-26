@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: ba64c7bbfaef5b357fd7a903b3eec9cedd469676
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834208"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032221"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -107,7 +107,7 @@ ms.locfileid: "54834208"
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h2>Bir dil seçin</h2>
+                                                <h2>Bir öğreticiyi izleyin</h2>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">

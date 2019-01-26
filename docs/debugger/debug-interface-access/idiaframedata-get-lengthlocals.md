@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 51fe15c3-4cd6-4a06-8a41-a56502209762
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c951baca88804c7259ce8f1bf5e35174be217e87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8ceb41a91f5405d5b9c40e45f6b7995b92f6217
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964814"
 ---
 # <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
 Yerel değişkenler yığına itildi bayt sayısını alır.  

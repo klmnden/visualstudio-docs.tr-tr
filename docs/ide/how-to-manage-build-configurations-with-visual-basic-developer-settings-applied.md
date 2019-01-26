@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90e00c544db2064f55d78de5dad00cc27105451e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 92ff0f0d79657855667c260754bbc4a9857fec83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388692"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985857"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: yönetmek Visual Basic Geliştirici ayarları uygulanmış derleme yapılandırmaları
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış olarak derleme yapılandırmalarını yönetme
 
 Varsayılan olarak, Visual Basic Geliştirici ayarları uygulanmış tüm Gelişmiş derleme yapılandırma seçenekleri gizlidir. Bu makalede, el ile etkinleştirmek açıklanmaktadır bu derleme ayarları.
 

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17a5908ddb6ecdd9f8434de1bd2792c4b86c989d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892309"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981993"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araçları), bir etki alanına özgü dil tasarlayın ve kullanıcıların diline dayalı modeller oluşturmak için gereken her şeyi oluşturmak olanak tanır.
@@ -51,7 +51,7 @@ Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araç
 
   Sihirbaz aşağıdaki projeleri içeren bir Visual Studio çözümü oluşturur:
 
-- DSL
+- Dsl
 
    Dsl projesi, etki alanına özgü dil ve işlemek ve düzenleme araçları tanımlar.
 

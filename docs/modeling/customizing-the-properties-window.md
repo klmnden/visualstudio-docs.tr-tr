@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c02bdb890ed6e65db4916efa9899e967a1ce897c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936300"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde davranışını ve görünümünü özelleştirebilirsiniz. DSL tanımındaki her etki alanı sınıfı üzerinde etki alanı özelliklerini tanımlayın. Diyagram üzerinde veya Model Gezgini'nde sınıfının bir örneğini seçtiğinizde varsayılan olarak, her etki alanı özelliği Özellikler penceresinde listelenir. Bunları diyagramdaki şekil alanları eşlenmedi olsa bile bu görmek ve etki alanı özelliklerinin değerlerini düzenlemek, sağlar.

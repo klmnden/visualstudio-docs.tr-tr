@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b74421d638a99823399a0049b712bc6c54c8a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f34f686b91d6a140e975c13eec72e8703a1b47ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945261"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Nasıl Yapılır: Kod ölçümleri verileri üretme
+# <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod ölçümleri verileri üretme
 
 Kod ölçümleri sonuçları bir veya daha fazla proje veya bütün bir çözüm için oluşturabilirsiniz. Kod ölçümleri kullanılabilir Visual Studio etkileşimli geliştirme ortamında (IDE) ve için C# ve Visual Basic projeleri, komut satırına.
 

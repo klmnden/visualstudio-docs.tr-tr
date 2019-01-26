@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bul penceresinden iletiler görünümünü açma | Microsoft Docs'
+title: 'Nasıl yapılır: Bul penceresinden iletiler görünümünü açma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b31bd0a1eea92fcc881f3be008ce0ea633782de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967199"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Nasıl Yapılır: Bul penceresinden açık iletiler görünümü
+# <a name="how-to-open-messages-view-from-find-window"></a>Nasıl yapılır: Bul penceresinden açık iletiler görünümü
 Kullanılacak kullanışlı bulabileceğiniz **Bul penceresi** iletişim kutusunu hedef penceresi seçin ve ardından o pencereyi iletiler görünümünü açın.  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Pencere Bul iletişim kutusunu kullanarak iletileri görünüm penceresini açmak için  

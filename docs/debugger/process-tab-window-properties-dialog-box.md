@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 557f471a841aa549ecb67fbe99a40b69465fb4b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924866"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>İşlem Sekmesi, Pencere Özellikleri İletişim Kutusu
 Kullanım **işlem** seçili penceresinin işlemi tanımlamak için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  

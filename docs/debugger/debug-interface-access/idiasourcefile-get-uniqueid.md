@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eef4e6f435b60f024067e13c884c7742df0ffa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964424"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 Bu görüntü için benzersiz olan bir basit tamsayı anahtar değeri alır.  

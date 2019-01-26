@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db4874c842775c02fdf50d827aea7daaac008587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f4852556b7938b6e017edc94ddb88ee0267e699
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836245"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033459"
 ---
 # <a name="debug-engine"></a>Hata ayıklama altyapısı
 Hata ayıklama altyapısı (DE), işletim sistemi ve yorumlayıcı yürütme denetimi, kesme noktaları ve ifade değerlendirme gibi hata ayıklama hizmetleri sağlamak için birlikte çalışır. Hata ayıklanan programa durumunu izlemek için DE sorumludur. Bunu yapmak için hangi yöntemler CPU veya API'leri çalışma zamanı tarafından sağlanan olmadığını desteklenen çalışma zamanı için kullanılabilir DE kullanır.  

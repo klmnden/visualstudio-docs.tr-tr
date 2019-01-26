@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 006b5f3ee19eddb528e339a6a056e2ad0d258fa8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1f8d63827b654da4dcd3d609854e0c14201df8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031333"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Kabuğu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuktur tümleştirmesi, birincil aracı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ortak Hizmetleri paylaşan VSPackage'ı etkinleştirmek için gerekli işlevselliği sağlar. Çünkü mimari amacı, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] birincil işlevselliği Vspackage'larda vest kullanmaktır Kabuğu'nu temel işlevleri sağlar ve kendi bileşeni Vspackage'lar arasında arası iletişimi desteklemek için bir çerçevedir.  

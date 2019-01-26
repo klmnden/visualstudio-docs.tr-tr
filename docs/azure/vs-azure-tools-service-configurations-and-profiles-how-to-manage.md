@@ -2,7 +2,7 @@
 title: Hizmet yapılandırması ve profillerini yönetme | Microsoft Docs
 description: Hizmet yapılandırmalarını ve profilleri yapılandırma dosyaları ile çalışma hakkında bilgi edinin | hangi dağıtım ortamlarının ayarlarını depolamak ve bulut Hizmetleri için ayarları yayımlama.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: bfd24092d2f6cf3ff28236fc1dd76ba1d2404d87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c4f359051ba98c75778ccc0d8c8b653558097a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821681"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942733"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Hizmet yapılandırmalarını ve profillerini yönetme
 ## <a name="overview"></a>Genel Bakış
@@ -32,28 +32,28 @@ Ayrıca açabilirsiniz **yapılandırmaları yönetme** rolün özellik sayfalar
 
 ### <a name="to-add-a-service-configuration"></a>Bir hizmet yapılandırması eklemek için
 1. Çözüm Gezgini'nde bir Azure projesi için kısayol menüsünü açın ve ardından **yapılandırmaları yönetme**.
-   
+
     **Hizmet yapılandırmalarını Yönet** iletişim kutusu görüntülenir.
 2. Bir hizmet yapılandırması eklemek için mevcut bir yapılandırmayı bir kopyasını oluşturmanız gerekir. Bunu yapmak için adı listeden kopyalayın ve ardından istediğiniz yapılandırmayı seçin **kopya oluştur**.
 3. (İsteğe bağlı) Hizmet yapılandırması farklı bir ad vermek için yeni hizmet yapılandırması adı listeden seçin ve ardından **Yeniden Adlandır**. İçinde **adı** metin kutusuna, bu hizmet yapılandırması'nı kullanın ve ardından istediğiniz adı yazın **Tamam**.
-   
+
     ServiceConfiguration adlı bir yeni hizmet yapılandırma dosyası. [Yeni adı] .cscfg, Çözüm Gezgini'nde bir Azure projesi eklenir.
 
 ### <a name="to-delete-a-service-configuration"></a>Bir hizmet yapılandırması silinemedi
 1. Çözüm Gezgini'nde bir Azure projesi için kısayol menüsünü açın ve ardından **yapılandırmaları yönetme**.
-   
+
     **Hizmet yapılandırmalarını Yönet** iletişim kutusu görüntülenir.
 2. Hizmet yapılandırmasını silmek için silmek için istediğiniz yapılandırmayı seçin **adı** listeleyin ve ardından **Kaldır**. Bu yapılandırmayı silmek istediğinizi doğrulamak için bir iletişim kutusu görüntülenir.
 3. **Sil**’i seçin.
-   
+
      Hizmet yapılandırma dosyası, Çözüm Gezgini'nde bir Azure projesi kaldırılır.
 
 ### <a name="to-rename-a-service-configuration"></a>Bir hizmet yapılandırması yeniden adlandırmak için
 1. Çözüm Gezgini'nde, bir Azure projesi için kısayol menüsünü açın ve ardından **yapılandırmaları yönetme**.
-   
+
     **Hizmet yapılandırmalarını Yönet** iletişim kutusu görüntülenir.
 2. Yeni hizmet yapılandırmasından bir hizmet yapılandırması yeniden adlandırmak için seçin **adı** listeleyin ve ardından **Yeniden Adlandır**. İçinde **adı** metin kutusuna, bu hizmet yapılandırması'nı kullanın ve ardından istediğiniz adı yazın **Tamam**.
-   
+
     Hizmet yapılandırma dosyasının adını, Çözüm Gezgini'nde Azure projedeki değiştirilir.
 
 ### <a name="to-change-a-service-configuration"></a>Hizmet yapılandırmasını değiştirmek için
@@ -67,16 +67,16 @@ Sihirbazı ilk kez çalıştırdığınızda, bir varsayılan profili oluşturul
 ### <a name="to-add-a-profile"></a>Bir profili eklemek için
 1. Azure, projeniz için kısayol menüsünü açın ve ardından **Yayımla**.
 2. Yanındaki **hedef profil** listesinden **profili Kaydet** düğmesi, aşağıdaki çizimde gösterildiği gibi. Bu profil sizin için oluşturur.
-   
+
     ![Yeni bir profil oluşturun](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Profil oluşturulduktan sonra seçip **< Yönet... >** içinde **hedef profil** listesi.
-   
+
     **Spravovat Profily** iletişim kutusu görüntülenirse, aşağıdaki çizimde gösterildiği gibi.
-   
+
     ![Profilleri Yönet iletişim kutusu](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. İçinde **adı** listesinde, bir profil seçin ve ardından **kopya oluştur**.
 5. Seçin **Kapat** düğmesi.
-   
+
     Yeni profili hedef profil listesinde görüntülenir.
 6. İçinde **hedef profil** listesinde, az önce oluşturduğunuz profili seçin. Yayımlama Sihirbazı ayarları, Seçenekler, seçtiğiniz profilden doldurulur.
 7. Seçin **önceki** ve **sonraki** düğmeler Yayımla Sihirbazı'nın her sayfasında görüntüleyin ve ardından bu profili için ayarları özelleştirebilirsiniz. Bkz: [Azure uygulaması Yayımlama Sihirbazı](http://go.microsoft.com/fwlink/p/?LinkID=623085) bilgi.

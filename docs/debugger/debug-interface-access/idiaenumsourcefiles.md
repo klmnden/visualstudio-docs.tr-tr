@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c0779a6-a2ea-408a-90da-ebdecf2b83c0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac732052c415341cf0cb8f04bfd94c8b1d797cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 522d052cc6f3bdb4fa394f606f58454b194a95ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964827"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Veri kaynağında bulunan çeşitli kaynak dosyaları listeler.  

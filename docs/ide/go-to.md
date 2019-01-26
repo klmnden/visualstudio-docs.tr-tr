@@ -10,15 +10,15 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8ccada5b515c2af99607fe27ad059fbf00c021
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b06bc4e3bc598f57838d633ccf0713338d5f9179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934763"
 ---
 # <a name="find-code-using-go-to-commands"></a>Git komutlarını kullanarak kod bulma
 
@@ -56,8 +56,8 @@ Belirli türde bir kod öğesi için aramanızı daraltmak için arama kutusuna 
 Ön eki | Simge | Kısayol | Açıklama
 :-: | - | - | -
 :| ![Satır simgesi](media/gotoall-line-icon.png) | **CTRL**+**G** | Belirtilen satır numarası gidin
-F| ![Dosyalar simgesi](media/gotoall-files-icon.png) | **CTRL**+**1**, **Ctrl**+**F** | Belirtilen dosyaya Git
-r| ![Son Dosyalar simgesi](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **Ctrl**+**R** | Belirtilen en son ziyaret edilen dosyaya Git
+F| ![Dosyalar simgesi](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Belirtilen dosyaya Git
+r| ![Son Dosyalar simgesi](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Belirtilen en son ziyaret edilen dosyaya Git
 t| ![Tür simgesi](media/gotoall-types-icon.png) | **CTRL**+**1**, **Ctrl**+**T** | Belirtilen türe Git
 m| ![Üye simgesi](media/gotoall-members-icon.png) | **CTRL**+**1**, **Ctrl**+**M** | Belirtilen üyeye Git
 \#| ![Sembol simgesi](media/gotoall-symbols-icon.png) | **CTRL**+**1**, **Ctrl**+**S** | Belirtilen sembol'e Git

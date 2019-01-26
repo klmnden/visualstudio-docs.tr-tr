@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f97e2392-22e1-48da-b7ce-ad94c8b684b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a5dfc19844ee084a03ecbf07070e7ba78fd8220
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7482481c2a57127c89e6313cf4dace855aabb18f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039793"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Veri kaynağında bulunan çeşitli eklenen kaynakları listeleme.  

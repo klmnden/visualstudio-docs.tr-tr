@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Örnekleme olayları seçme | Microsoft Docs'
+title: 'Nasıl yapılır: Örnekleme olayları seçme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb4e501985d5a9043d381e02acbe70a45d0ee22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96e84d459485ef9d9f796cd30b758ebe1613ef2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947575"
 ---
-# <a name="how-to-choose-sampling-events"></a>Nasıl Yapılır: Örnekleme olayları seçme
+# <a name="how-to-choose-sampling-events"></a>Nasıl yapılır: Örnekleme olayları seçme
 Varsayılan olarak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları profili oluşturulmuş bir işlem tarafından kullanılan işlemci döngülerini sayısı olarak belirtilen bir aralıkta performans verilerini toplar. Varsayılan döngüsü bir aralıkta 10,000,000, yaklaşık 1 GH bilgisayarda 0,01 saniye olan sayısıdır. Bir aralıktaki döngüsü sayısını değiştirebilirsiniz ve örnek olay değiştirebilirsiniz. Aşağıdaki örnek olayları kullanılabilir:  
   
 -   Saat döngüsü - CPU bağımlı sorunları için.  

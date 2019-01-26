@@ -11,15 +11,15 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6e7f5e09a1352ee1fdcb6247920c12990c2df19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966117"
 ---
 # <a name="toolbox-html-tab"></a>Araç kutusu, HTML sekmesi
 
@@ -51,7 +51,7 @@ Sürüklediğinizde **giriş (düğme)** Tasarım görünümü yüzeyine HTML bi
 
 **Giriş (Sıfırla)**
 
-![HTMLpageResetButton ekran görüntüsü](../../ide/reference/media/vxreset.gif)
+![HTMLpageResetButton screenshot](../../ide/reference/media/vxreset.gif)
 
 Ekler bir `input` öğesinin `type="reset"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Reset1"` Sıfırla düğmesi, ilk için eklenen `id="Reset2"` saniye vb. için.
 
@@ -132,7 +132,7 @@ Sürüklediğinizde **giriş (onay kutusu)** Tasarım görünümü yüzeyine HTM
 
 **Giriş (radyo)**
 
-![VisualStudioHTMLpageRadioButton ekran görüntüsü](../../ide/reference/media/vxradio.gif)
+![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif)
 
 Ekler bir `input` öğesinin `type="radio"`. Görüntülenen metni değiştirmek için Düzenle `name` özelliği. Varsayılan olarak, `id="Radio1"` ilk radyo düğmesi için eklenen `id="Radio2"` saniye vb. için.
 

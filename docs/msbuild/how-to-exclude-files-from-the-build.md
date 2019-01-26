@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Dosyaları derlemeden dışlama | Microsoft Docs'
+title: 'Nasıl yapılır: Dosyaları derlemeden dışlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4ce4b7108a62e7f16c83d6cdcb637470fb94656
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937200"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Nasıl Yapılır: Dosyaları derlemeden dışlama
+# <a name="how-to-exclude-files-from-the-build"></a>Nasıl yapılır: Dosyaları derlemeden dışlama
 Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz. Ancak, bir dosya dizinine veya bir dizin, iç içe geçmiş bir derleme için giriş olarak dahil etmek istemediğiniz dizinler kümesi olabilir. Açıkça girişleri listesinden söz konusu dosya veya dizin dışlayabilirsiniz. Ayrıca olabilir bir dosyayı yalnızca belirli koşullar altında dahil etmek istediğiniz bir proje. Bir yapı içinde bir dosya dahil koşullar açıkça bildirebilirsiniz.  
   
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Bir dosya veya dizin işlemenin dışında bir derleme için girişler  

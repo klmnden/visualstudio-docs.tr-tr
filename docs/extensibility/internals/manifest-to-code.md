@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895447"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967553"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Kod aracı bildirime .imagemanifest dosya Visual Studio Görüntü hizmeti için alan ve c++'da görüntü bildirim değerleri başvuru için bir sarmalayıcı dosya veya oluşturur bir konsol uygulamasıdır C#, VB veya .vsct dosyaları için Visual Studio uzantıları. Bu araç, Visual Studio Görüntü hizmeti doğrudan isteyen görüntülerden veya kodu kendi kullanıcı Arabirimi ve işleme işlemez API'ler aracılığıyla bildirim değerleri geçirme için kullanılabilir sarmalayıcı dosyaları oluşturur.  

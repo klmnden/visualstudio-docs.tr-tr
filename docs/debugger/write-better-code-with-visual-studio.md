@@ -1,49 +1,176 @@
 ---
-title: Daha iyi C# kodları yazarak hataları düzeltin
-description: Daha az hata ile daha iyi kod yazma işlemini anlama
+title: Hata ayıklama teknikleri ve araçları
+description: Düzeltme özel durumları, hataları düzeltin ve kodunuzu geliştirmek için Visual Studio kullanarak daha az hata ile daha iyi kod yazın
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 11/20/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967582"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961721"
 ---
-# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Daha iyi yazarak hataları düzeltmek C# kullanarak Visual Studio code
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Hata ayıklama teknikleri ve daha iyi kod yazmanıza yardımcı olacak araçlar
 
-Kodda hata ayıklama, zaman alıcı--olabilir ve bazen doðrulamayý--görev. Etkili bir şekilde hata ayıklama hakkında bilgi edinmek için zaman alır, ancak Visual Studio gibi güçlü bir IDE işinizi çok daha kolay hale getirebilirsiniz. Bir IDE, kodunuzun daha hızlı hata ayıklama ve yalnızca, ancak daha az hata ile daha iyi kod yazma Yardım ayrıca yardımcı olabilir. Bu makalede, bir yandan, hata ayıklama işlemi bütüncül bir görünümü için kod Çözümleyicisi kullanmanın ne zaman bilirsiniz, hata ayıklayıcı ve diğer araçları kullanmak ne zaman zaman vermektir.
+Kodunuzdaki hataları ve hata düzeltme zaman--olabilir ve bazen doðrulamayý--görev. Etkili bir şekilde hata ayıklama hakkında bilgi edinmek için zaman alır, ancak Visual Studio gibi güçlü bir IDE işinizi çok daha kolay hale getirebilirsiniz. Bir IDE hataları düzeltin ve kodunuzu daha hızlı hata ayıklama ve yalnızca, ancak daha az hata ile daha iyi kod yazma Yardım ayrıca yardımcı olabilir. Kod Çözümleyicisi kullanmanın ne zaman bilirsiniz için "hatayı düzeltme" işlem bütünsel bir görünümünü sağlamak için bu makalede, bir yandan olduğu zaman hata ayıklayıcı kullanmak nasıl özel durumları ve nasıl hedefi için kod. Hata ayıklayıcı kullanmak üzere ihtiyacınız zaten biliyorsanız [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
-Bu makalede, hata ayıklama oturumlarınızdan daha üretken olmak için IDE yararlanarak hakkında konuşun. Biz gibi çeşitli görevler üzerinde dokunma:
+Bu makalede, kodlama, oturumları daha üretken olmak için IDE yararlanarak hakkında konuşun. Biz gibi çeşitli görevler üzerinde dokunma:
 
 * Kodunuzu IDE'nin kod Çözümleyicisi yararlanarak hata ayıklama için hazırlama
 
 * Özel durumlar (çalışma zamanı hataları) nasıl
 
-* Nasıl hedefini kodlayarak hataları en aza indirmek için
+* Nasıl hedefini (assert kullanma) kodlama yaparak hataları en aza indirmek için
 
 * Hata ayıklayıcıyı kullanma zamanı
 
 Bu görevleri göstermek için sık karşılaşılan hatalar ve uygulamalarınızın hatalarını ayıklamak çalışırken karşılaşabileceğiniz hatalar birkaçını göstereceğiz. Örnek kod olmasına rağmen C#, kavramsal bilgiler için C++, Visual Basic JavaScript genel olarak geçerli olduğunu ve diğer diller (belirtilenler dışında) Visual Studio tarafından desteklenen. Ekran görüntüleri C# ' de var.
 
-## <a name="follow-along-using-the-sample-app"></a>Örneği takip örnek uygulama kullanma
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Bazı hatalar ve hatalar da örnek bir uygulama oluşturun
 
-Tercih ederseniz, tam hataları içeren bir .NET Framework veya .NET Core konsol uygulaması ve burada ve örneği takip etmek ve düzeltmelerin kendiniz yapmanız hataları oluşturabilirsiniz.
+Aşağıdaki kod, Visual Studio IDE kullanarak düzeltebilirsiniz bazı hatalar var. Buradan uygulama bazı işlemi, verileri bir nesne seri durumdan çıkarılırken ve yeni veriler ile basit bir liste güncelleştiriliyor alınırken JSON veri benzetimi gerçekleştiren basit bir uygulamadır.
 
-Uygulama oluşturmak için Visual Studio'yu açın ve seçin **Dosya > Yeni proje**. Altında **Visual C#** , seçin **Windows Masaüstü** veya **.NET Core**seçip Ortadaki bölmeden bir **konsol uygulaması**. Gibi bir ad yazın **Console_Parse_JSON** tıklatıp **Tamam**. Visual Studio projesi oluşturur. Yapıştırma [örnek kod](#sample-code) projenin içine *Program.cs* dosya.
+Uygulama oluşturmak için:
 
-> [!NOTE]
-> Görmüyorsanız **konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** veya **.NET Core çoklu platform geliştirme** iş yükü, ardından **Değiştir**.
+1. Visual Studio açıp seçin **Dosya > Yeni proje**. Altında **Visual C#** , seçin **Windows Masaüstü** veya **.NET Core**seçip Ortadaki bölmeden bir **konsol uygulaması**.
+
+    > [!NOTE]
+    > Görmüyorsanız **konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** veya **.NET Core çoklu platform geliştirme** iş yükü, ardından **Değiştir**.
+
+2. İçinde **adı** alanına **Console_Parse_JSON** tıklatıp **Tamam**. Visual Studio projesi oluşturur.
+
+3. Projenin varsayılan değiştirin *Program.cs* aşağıdaki örnek kod dosyası.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.IO;
+
+namespace Console_Parse_JSON
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var localDB = LoadRecords();
+            string data = GetJsonData();
+
+            User[] users = ReadToObject(data);
+
+            UpdateRecords(localDB, users);
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                List<User> result = localDB.FindAll(delegate (User u) {
+                    return u.lastname == users[i].lastname;
+                    });
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
+                }
+            }
+
+            Console.ReadKey();
+        }
+
+        // Deserialize a JSON stream to a User object.
+        public static User[] ReadToObject(string json)
+        {
+            User deserializedUser = new User();
+            User[] users = { };
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
+
+            users = ser.ReadObject(ms) as User[];
+
+            ms.Close();
+            return users;
+        }
+
+        // Simulated operation that returns JSON data.
+        public static string GetJsonData()
+        {
+            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
+            return str;
+        }
+
+        public static List<User> LoadRecords()
+        {
+            var db = new List<User> { };
+            User user1 = new User();
+            user1.firstname = "Joe";
+            user1.lastname = "Smith";
+            user1.totalpoints = 41;
+
+            db.Add(user1);
+
+            User user2 = new User();
+            user2.firstname = "Pete";
+            user2.lastname = "Peterson";
+            user2.totalpoints = 30;
+
+            db.Add(user2);
+
+            return db;
+        }
+        public static void UpdateRecords(List<User> db, User[] users)
+        {
+            bool existingUser = false;
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                foreach (var item in db)
+                {
+                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
+                    {
+                        existingUser = true;
+                        item.totalpoints += users[i].points;
+
+                    }
+                }
+                if (existingUser == false)
+                {
+                    User user = new User();
+                    user.firstname = users[i].firstname;
+                    user.lastname = users[i].lastname;
+                    user.totalpoints = users[i].points;
+
+                    db.Add(user);
+                }
+            }
+        }
+    }
+
+    [DataContract]
+    internal class User
+    {
+        [DataMember]
+        internal string firstname;
+
+        [DataMember]
+        internal string lastname;
+
+        [DataMember]
+        // internal double points;
+        internal string points;
+
+        [DataMember]
+        internal int totalpoints;
+    }
+}
+```
 
 ## <a name="find-the-red-and-green-squiggles"></a>Kırmızı ve yeşil dalgalı çizgiler öğrenin!
 
@@ -65,9 +192,9 @@ Bu hata sol alt köşesinde bir ampul simgesini gösterdiğine dikkat edin. Torn
 
 Bu öğe tıkladığınızda, Visual Studio ekler `using System.Text` en üstündeki deyimi *Program.cs* dosya ve kırmızı dalgalı çizgi kaybolur. (Önerilen düzeltme ne yapacağını emin değilseniz, seçin **değişiklik önizlemesi** düzeltmeyi uygulamadan önce sağdaki bağlantıyı.)
 
-Önceki hatayı genellikle yeni bir ekleyerek düzeltmek ortak bir adrestir `using` kodunuzda deyimi. Birçok ortak, benzer hatalar var. Bu bir gibi ```The type or namespace `Name` cannot be found.``` eksik bir bütünleştirilmiş kod başvurusu bu tür hatalar gösterebilir (projeye sağ tıklayın, seçin **Ekle** > **başvurusu**), yazılan bir ad veya NuGet kullanma eklemek için gereken eksik kitaplığı (projeye sağ tıklayıp seçin **NuGet paketlerini Yönet**).
+Önceki hatayı genellikle yeni bir ekleyerek düzeltmek ortak bir adrestir `using` kodunuzda deyimi. Birçok ortak, benzer hatalar var. Bu bir gibi ```The type or namespace `Name` cannot be found.``` eksik bir bütünleştirilmiş kod başvurusu bu tür hatalar gösterebilir (projeye sağ tıklayın, seçin **Ekle** > **başvurusu**), yazılan bir ad ya da eklemeniz gerekir. eksik bir kitaplık (için C#, projeye sağ tıklayıp seçin **NuGet paketlerini Yönet**).
 
-## <a name="fix-the-errors-and-warnings"></a>Hataları ve Uyarıları giderin
+## <a name="fix-the-remaining-errors-and-warnings"></a>Kalan hataları ve Uyarıları giderin
 
 Bu kodda bakmak için birkaç daha fazla dalgalı çizgiler vardır. Burada, bir ortak tür dönüştürme hatası görürsünüz. Dalgalı çizgi geldiğinizde, kodun bir dize dönüştürme yapmak için açık kod eklemediğiniz sürece, desteklenmeyen bir int'e dönüştürme çalıştığını görürsünüz.
 
@@ -128,7 +255,7 @@ Bir özel durum ulaştığınızda birkaç soru sormak (ve yanıtlamak) gerekir:
 
 * Bu durum, kullanıcılarınızın karşılaşabileceği bir şey mi?
 
-Eski ise, hata düzeltildi. (Örnek uygulamada, bozuk veri düzeltme anlamına gelir.) İkincisi ise, kod kullanarak özel durumu işlemek üzere ihtiyacınız olabilecek bir `try/catch` blok (baktığımızda, sonraki bölümde diğer olası düzeltmeleri). Örnek uygulamada, aşağıdaki kodu değiştirin:
+Eski ise, hata düzeltildi. (Örnek uygulamada, bozuk veri düzeltme anlamına gelir.) İkincisi ise, kod kullanarak özel durumu işlemek üzere ihtiyacınız olabilecek bir `try/catch` blok (baktığımızda, sonraki bölümde olası diğer stratejiler). Örnek uygulamada, aşağıdaki kodu değiştirin:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -277,131 +404,6 @@ Hata Ayıklayıcı'nın temel özelliklerinin nasıl kullanılacağını öğren
 ## <a name="fix-performance-issues"></a>Performans sorunlarını çözün
 
 Başka bir tür hataları, uygulamanızın yavaş çalışmasına veya çok fazla bellek kullanmasına neden olan verimsiz kodu içerir. Genellikle, performansı en iyi duruma getirme uygulama geliştirmede daha sonra bunu bir şeydir. Ancak, performans sorunlarını erkenden çalıştırabilirsiniz (örneğin, uygulamanızın bir kısmını yavaş çalışıp çalışmadığını), ve uygulamanızı profil oluşturma Araçlar ile erkenden test gerekebilir. Profil oluşturma araçlarında CPU kullanımı aracı ve bellek Çözümleyicisi gibi hakkında daha fazla bilgi için bkz. [ilk profil oluşturma araçları bakış](../profiling/profiling-feature-tour.md).
-
-## <a name="sample-code"></a> Örnek kod
-
-Aşağıdaki kod, Visual Studio IDE kullanarak düzeltebilirsiniz bazı hatalar var. Buradan uygulama bazı işlemi, verileri bir nesne seri durumdan çıkarılırken ve yeni veriler ile basit bir liste güncelleştiriliyor alınırken JSON veri benzetimi gerçekleştiren basit bir uygulamadır.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-using System.IO;
-
-namespace Console_Parse_JSON_DotNetCore
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var localDB = LoadRecords();
-            string data = GetJsonData();
-
-            User[] users = ReadToObject(data);
-
-            UpdateRecords(localDB, users);
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                List<User> result = localDB.FindAll(delegate (User u) {
-                    return u.lastname == users[i].lastname;
-                    });
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
-                }
-            }
-
-            Console.ReadKey();
-        }
-
-        // Deserialize a JSON stream to a User object.
-        public static User[] ReadToObject(string json)
-        {
-            User deserializedUser = new User();
-            User[] users = { };
-            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
-
-            users = ser.ReadObject(ms) as User[];
-
-            ms.Close();
-            return users;
-        }
-
-        // Simulated operation that returns JSON data.
-        public static string GetJsonData()
-        {
-            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
-            return str;
-        }
-
-        public static List<User> LoadRecords()
-        {
-            var db = new List<User> { };
-            User user1 = new User();
-            user1.firstname = "Joe";
-            user1.lastname = "Smith";
-            user1.totalpoints = 41;
-
-            db.Add(user1);
-
-            User user2 = new User();
-            user2.firstname = "Pete";
-            user2.lastname = "Peterson";
-            user2.totalpoints = 30;
-
-            db.Add(user2);
-
-            return db;
-        }
-        public static void UpdateRecords(List<User> db, User[] users)
-        {
-            bool existingUser = false;
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                foreach (var item in db)
-                {
-                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
-                    {
-                        existingUser = true;
-                        item.totalpoints += users[i].points;
-
-                    }
-                }
-                if (existingUser == false)
-                {
-                    User user = new User();
-                    user.firstname = users[i].firstname;
-                    user.lastname = users[i].lastname;
-                    user.totalpoints = users[i].points;
-
-                    db.Add(user);
-                }
-            }
-        }
-    }
-
-    [DataContract]
-    internal class User
-    {
-        [DataMember]
-        internal string firstname;
-
-        [DataMember]
-        internal string lastname;
-
-        [DataMember]
-        // internal double points;
-        internal string points;
-
-        [DataMember]
-        internal int totalpoints;
-    }
-}
-```
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

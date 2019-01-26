@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0568e4c03e53896b21dc725c415bda82da69f487
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956915"
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
 Geçerli çözüme .htm, .css, .txt veya frameset gibi yeni bir çözüm öğesi ekler ve onu açar.
@@ -34,7 +34,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  `filename` İsteğe bağlı. Çözüme eklenecek öğe yolu ve dosya adı.
 
 ## <a name="switches"></a>Anahtarlar
- / t: `templatename` İsteğe bağlı. Oluşturulacak dosya türünü belirtir. Hiçbir şablon adı belirtilmezse, varsayılan olarak bir metin dosyası oluşturulur.
+ /t: `templatename` İsteğe bağlı. Oluşturulacak dosya türünü belirtir. Hiçbir şablon adı belirtilmezse, varsayılan olarak bir metin dosyası oluşturulur.
 
  / T:`templatename` bağımsız değişken söz dizimi içinde bulunan bilgileri yansıtır **yeni çözüm Öğe Ekle** iletişim kutusu. Dosya türü kategori adı bir ters eğik çizgi dosya türünü ayırmak, ardından tam kategori girmeniz gerekir (`\`) ve tırnak dizenin tamamını kapsayan.
 

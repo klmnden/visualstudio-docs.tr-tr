@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61fd298b1bbbf28f7a7fe514a01dc5707c35e04b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef7d3c4f205791811176a669341b10b0284d2627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840940"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043251"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Bu arabirim, kaynak belgedeki bir işlevin soyut bir konumu temsil eder.  

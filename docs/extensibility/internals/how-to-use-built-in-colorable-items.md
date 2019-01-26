@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yerleşik renklendirilebilir öğeleri kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0884ecd265522b2b0f2a222e12cb01c34c7e8c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f0900792b92a185ce7da66440e0b368870e97be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947302"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965961"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Nasıl Yapılır: Yerleşik renklendirilebilir öğeleri kullanma
+# <a name="how-to-use-built-in-colorable-items"></a>Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma
 Yerleşik renklendirilebilir öğeleri kullanmadan önce öncelikle tümleşik geliştirme ortamı (IDE), bu durumda, kendi özel renklendirilebilir öğeler sağlamıyorsunuz sinyal gerekir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> nesneleri. Dil hizmeti bir kayıt defteri anahtarını ayarlayarak bunu yapabilirsiniz.  
   
 ## <a name="to-use-built-in-colorable-items"></a>Yerleşik renklendirilebilir öğeleri kullanmak için  

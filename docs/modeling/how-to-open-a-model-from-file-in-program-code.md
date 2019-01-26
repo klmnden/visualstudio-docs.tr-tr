@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Program Kodunda Dosyadan Model Açma'
+title: 'Nasıl yapılır: Program Kodunda Dosyadan Model Açma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 592dd923b3ad65f81f0bc637d77fc1c635043a97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938076"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921204"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl Yapılır: Program Kodunda Dosyadan Model Açma
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 DSL model herhangi bir uygulama açabilirsiniz.
 
  Bir Visual Studio Uzantısında, bu amaçla Modelbus'ı kullanabilirsiniz. ModelBus bir model veya bir model öğelerini ve taşınmışsa, model bulma için standart mekanizması sağlar. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).

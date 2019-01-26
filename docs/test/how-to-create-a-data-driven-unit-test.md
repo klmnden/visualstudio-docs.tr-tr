@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma'
+title: 'Nasıl yapılır: Veri Temelli Birim Testi Oluşturma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,18 +11,18 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cf09dc02113692b02231fa2f219207a0399ebff1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8092663f7ccc0b6443f392358e7c487d0f6b63f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822884"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968144"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl Yapılır: Veri Temelli Birim Testi Oluşturma
+# <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri Temelli Birim Testi Oluşturma
 
 Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kaynağından test yönteminde kullanılan değerleri almak için bir birim test yöntemi ayarlayabilirsiniz. Yöntemi, tek bir yöntemi kullanarak giriş çeşitli test kolaylaştırır veri kaynağındaki her satır için sırayla çalıştırılır.
 

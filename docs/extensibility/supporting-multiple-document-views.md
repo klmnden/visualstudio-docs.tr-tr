@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e55eed8ffd2651ced96f192972127e710a565eaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba85e4a6974330cf28ce6ef3f1c30c6688765802
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956343"
 ---
 # <a name="supporting-multiple-document-views"></a>Birden Çok Belge Görünümünü Destekleme
 Düzenleyiciniz için ayrı bir belge verileri ve belge görünümü nesneleri oluşturarak, bir belgenin birden fazla görünümü sağlayabilirsiniz. Ek belge görünümü yararlı olabilecek bazı durumlar şunlardır:  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947425"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: Görünüm kenarlığı, komutlar ve ayarlar (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle genişletebilirsiniz. Bu makalede, bir popüler uzantısı özelliği, sütun kılavuzları ile çalışmaya başlama işlemini göstermektedir. Sütun, kodunuzda belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde görsel olarak ışık çizgileri kılavuzlardır. Özellikle, biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya hata raporları örnekleri için önemli olabilir.
@@ -318,7 +318,7 @@ namespace ColumnGuides
 
 ```
 
-Bu kod çoğunu oluşturur ve bu ayarları biçimi ayrıştırır: "RGB (\<int >,\<int >,\<int >) \<int >, \<int >,...".  Son sütun kılavuzları istediğiniz bir tabanlı sütunları tamsayılardır. Sütun kılavuzları uzantısı tek ayar değer dizesi, tüm ayarlarını yakalar.
+Bu kod çoğunu oluşturur ve bu ayarları biçimi ayrıştırır: "RGB(\<int>,\<int>,\<int>) \<int>, \<int>, ...".  Son sütun kılavuzları istediğiniz bir tabanlı sütunları tamsayılardır. Sütun kılavuzları uzantısı tek ayar değer dizesi, tüm ayarlarını yakalar.
 
 Bazı bölümlerini vurgulama değer kod vardır. Aşağıdaki kod satırını ayarları depolama alanı için Visual Studio yönetilen sarmalayıcı alır. Çoğunlukla, bunu Windows kayıt defteri soyutlar, ancak bu API, depolama mekanizması bağımsızdır.
 

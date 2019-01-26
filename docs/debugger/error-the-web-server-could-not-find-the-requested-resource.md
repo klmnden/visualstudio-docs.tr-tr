@@ -11,15 +11,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 798e0892fc78b4ff8f8eb8ed03ee788e4f8f5b25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cba31527af469b897ae178b6b0f810840b7d9cd2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035490"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Hata: Web sunucusu istenen kaynağı bulamadı.
 Güvenlik konuları nedeniyle IIS genel bir hata döndürdü.  
@@ -33,4 +33,4 @@ Bu hatanın olası çok sayıda ek nedenler vardır. Birkaç yaygın nedenlerind
  IIS sorun giderme hakkında daha fazla bilgi için bkz. [IIS Yönetim ve Yönetim](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata: Web sunucusu kilitli ve DEBUG fiilini engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+ [Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

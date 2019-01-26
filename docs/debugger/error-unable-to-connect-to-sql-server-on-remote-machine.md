@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9e2e7c489ace9436f101259cccac144e1a933e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a737c9b993a6ffa523cbaa19929821f7d3c2acaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858532"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023177"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Hata: Uzak makinede SQL Server'a bağlanılamıyor
 Uzak makinede SQL Server'a bağlanılamıyor *adı*. Erişim reddedildi. Uzak makinede uzaktan hata ayıklayıcı yüklediğinizden emin olun. Uzak makine bir etki alanında değilse veya Visual Studio yerel hesabı olarak çalışıyorsa uzak makinede yerel hesap olarak bir hesapla aynı kullanıcı adı ve parola olmalıdır.  

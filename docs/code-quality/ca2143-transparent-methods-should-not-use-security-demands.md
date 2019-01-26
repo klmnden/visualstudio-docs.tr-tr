@@ -1,5 +1,5 @@
 ---
-title: 'CA2143: Saydam yöntemler güvenlik taleplerini kullanmamalıdır'
+title: 'CA2143: Saydam metotlar güvenlik taleplerini kullanmamalıdır'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff92d7ed697db2f692ed17426bdb5dad38164cf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08a7c4d6d7c71954869311b402eed65492391432
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954571"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043083"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Saydam yöntemler güvenlik taleplerini kullanmamalıdır
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Saydam metotlar güvenlik taleplerini kullanmamalıdır
 
 |||
 |-|-|

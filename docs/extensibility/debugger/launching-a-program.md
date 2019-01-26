@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0671a8f0d926cb90419470278f65eedf07486da7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945885"
 ---
 # <a name="launch-a-program"></a>Bir program Başlat
 Bir programda hata ayıklamak istediğiniz kullanıcıları basabilirsiniz **F5** IDE'den hata ayıklayıcıyı çalıştırmak için. Bu, bir dizi nihai olarak hangi sırayla bağlı veya bağlı, programa şu şekilde bir hata ayıklama altyapısı (DE), IDE'nin bağlanırken neden olayı başlar:  

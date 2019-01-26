@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma | Microsoft Docs'
+title: 'Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80896483e0d7d1f3b42fce11ed53cbd253dc1b82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030138"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl Yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
 Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazla dosya oluşturarak yerelleştirilmiş önyükleyici paketi sürümlerini oluşturabilirsiniz: dosya bir yazılım lisans koşulları (gibi bir *eula.rtf*) ve bir paket bildirimi (*package.xml*).  
   
  Varsayılan olarak, Visual Studio 2010 yalnızca .NET Framework 4 için .NET Framework 4 istemci profili, yerelleştirilmiş önyükleyici paketleri içerir F# çalışma zamanı 2.0 ve F# çalışma zamanı 4.0. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.  

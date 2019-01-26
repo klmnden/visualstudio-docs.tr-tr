@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffaadb2ccdf770231abcbbcc5e594644b78ef7e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 241d586e2055b2689dc7586e6212d8aa4cdae1d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922632"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Bir düzenleyici öğesi şablonuyla uzantı oluşturma
 Sınıflandırıcılar, kenarlıklar ve kenar boşlukları Düzenleyici ekleme temel Düzenleyici uzantıları oluşturmak için Visual Studio SDK'sı dahil edilen öğe şablonları kullanabilirsiniz. Düzenleyici öğesi şablonları, Visual C# veya Visual Basic VSIX projeleri için kullanılabilir.  

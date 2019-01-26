@@ -1,23 +1,23 @@
 ---
-title: 'Nasıl Yapılır: Şekil veya Dekoratörde bir Click için Araya Girme'
+title: 'Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d71cb172929fd9d213c0f09be21c1a844acf4462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa5a7b1de4eb656147033e8d06655e3e726fc898
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932265"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl Yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 Aşağıdaki yordamlar bir şekil veya bir simge dekoratörde bir click için araya girme nasıl ekleyebileceğiniz gösterilmektedir. Tıklama kesebilir, çift tıkladığında, sürüklediğinde, ve diğer hareketlerine yanıt öğesi.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Şekilleri tıklama ele alınması için

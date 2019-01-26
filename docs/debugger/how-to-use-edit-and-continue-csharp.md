@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kullanım Düzenle ve devam et (C#) | Microsoft Docs'
+title: 'Nasıl yapılır: Kullanım Düzenle ve devam et (C#) | Microsoft Docs'
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca4d8efda78974be00973ef3f6c5adcc77c2465d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965282"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Nasıl Yapılır: Düzenle ve Devam Et’i kullanma (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Nasıl yapılır: Düzenle ve Devam Et’i kullanma (C#)
 Düzenle ve devam et ile değişiklikler yapabilir ve bu, durdurmak ve hata ayıklama oturumunu yeniden başlatmak zorunda kalmadan hata ayıklama sırasında kodunuzda kesme modunda değişiklikleri uygulayın.  
 
 Düzenle ve devam et için kesme modunda, kod değişiklik yaptığınızda C# otomatik olarak gerçekleşir ardından kullanarak hata ayıklamaya devam **devam**, **adım**, veya **sonraki deyimi Ayarla**, veya hata ayıklayıcı penceresindeki bir işlevi değerlendirin.  

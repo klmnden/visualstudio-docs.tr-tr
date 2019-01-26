@@ -1,22 +1,22 @@
 ---
-title: "Nasıl Yapılır: Belirli DLL'ler için izleme sınırlama | Microsoft Docs"
+title: "Nasıl yapılır: Belirli DLL'ler için izleme sınırlama | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7d8843fe7e23293b0e95ce6b076d8548362fb50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885174"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934844"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Nasıl Yapılır: İzlemeyi belirli DLL'ler ile sınırlama
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Nasıl yapılır: İzlemeyi belirli DLL'ler ile sınırlama
 
 İzleme profil oluşturma metodunu kullanarak bir uygulama bir veya daha fazla dll için profil oluşturma verilerinin toplanmasını sınırlayabilirsiniz. Bir uygulama bir veya daha fazla dll profil için içeren bir performans oturumu oluşturun. *dll* hedefleri olarak dosyaları. Projeleri Visual Studio çözümünde veya bağımsız ikili dosyaları olarak profil oluşturmak istediğiniz DLL'leri belirtebilirsiniz.
 

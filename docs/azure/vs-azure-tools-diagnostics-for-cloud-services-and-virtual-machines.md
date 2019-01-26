@@ -2,19 +2,19 @@
 title: Azure Cloud Services ve sanal makineler için tanılama ayarlama ayarlama | Microsoft Docs
 description: Azure bulut Hizmetleri ve sanal makineleri (VM'ler), Visual Studio'da hata ayıklama tanılama ayarlama konusunda bilgi edinin.
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7fe172d0baf9f27e8cb1a3858b49e1e1be3b9adb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fbbdfa3bbe76a4b09503f619d7a05c89291e5dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829056"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969164"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services ve sanal makineler için tanılamayı ayarlama
 Bir Azure bulut hizmeti veya sanal makine sorunlarını gidermek, ihtiyacınız olduğunda, Visual Studio, daha kolay Azure Tanılama'yı ayarlamak için kullanabilirsiniz. Tanılama sistemi veri ve sanal makineler ve bulut hizmetinizi çalıştıran sanal makine örneği günlük verilerini yakalar. Tanılama verileri, seçtiğiniz bir depolama hesabına aktarılır. Azure'da günlüğe kaydetme Tanılama hakkında daha fazla bilgi için bkz [Azure App Service'te Web uygulamaları için tanılama günlüğünü etkinleştirme](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -69,15 +69,15 @@ Visual Studio öykünücüsü dağıtımdan önce hizmet çalıştırdığınız
 
 1. Rolü için kısayol menüsünden seçin **özellikleri**. Rolün içindeki **özellikleri** iletişim kutusunda **yapılandırma** sekmesi.
 2. İçinde **tanılama** bölümünde, emin **tanılamayı etkinleştir** onay kutusu seçilidir.
-   
+
     ![Tanılamayı etkinleştir seçeneğine erişme](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Depolama hesabı için tanılama verilerini belirtmek için üç nokta (...) düğmesini seçin.
-   
+
     ![Kullanılacak depolama hesabı belirtin](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
 4. İçinde **depolama bağlantı dizesi oluştur** iletişim kutusunda, bir Azure aboneliği ve Azure storage öykünücüsü kullanarak bağlanmak istiyorsanız veya el ile kimlik bilgileri girilen olup olmadığını belirtin.
-   
+
     ![Depolama hesabı iletişim kutusu](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
-   
+
    * Seçerseniz **Microsoft Azure depolama öykünücüsü**, bağlantı dizesini ayarlayalım `UseDevelopmentStorage=true`.
    * Seçerseniz **aboneliğinizi**, kullanmak istediğiniz Azure aboneliğini seçin ve bir hesap adı girin. Azure aboneliklerinizi yönetmek için seçin **hesaplarını yönetme**.
    * Seçerseniz **el ile kimlik bilgileri girilen**, kullanmak istediğiniz Azure hesap anahtarı ve adını girin.
@@ -86,11 +86,11 @@ Visual Studio öykünücüsü dağıtımdan önce hizmet çalıştırdığınız
    > [!NOTE]
    > "MB, Disk kotası" için desteklenen minimum Boyut 4 GB'dir. Bellek dökümleri topluyorsanız, ancak bu daha yüksek bir değere gibi 10 GB artırın.
    >
-  
+
     ![Azure tanılama ve yapılandırmasını etkinleştir](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. Bu örnekte, seçin **özel planı** seçeneği için toplanan verileri özelleştirebilirsiniz.
 7. İçinde **MB Disk kotası** kutusunda tanılama verilerini depolama hesabınızda ayırmak üzere ne kadar alan ayarlayabilirsiniz. Değiştirin veya varsayılan değeri kabul edin.
-8. Her toplamak istediğiniz tanılama veri sekmesinde seçin **etkinleştirme Aktarım, \<günlük türü\>**  onay kutusu. Örneğin, üzerinde uygulama günlüklerini toplamak istiyorsanız **uygulama günlükleri** sekmesinde **etkinleştirme uygulama günlükleri aktarımını** onay kutusu. Ayrıca, her tanılama veri türüne göre gerekli herhangi bir bilgi belirtin. Her sekme için yapılandırma bilgileri için bkz **tanılama veri kaynaklarını'kurmak** bu makalenin ilerleyen bölümlerinde. 
+8. Her toplamak istediğiniz tanılama veri sekmesinde seçin **etkinleştirme Aktarım, \<günlük türü\>**  onay kutusu. Örneğin, üzerinde uygulama günlüklerini toplamak istiyorsanız **uygulama günlükleri** sekmesinde **etkinleştirme uygulama günlükleri aktarımını** onay kutusu. Ayrıca, her tanılama veri türüne göre gerekli herhangi bir bilgi belirtin. Her sekme için yapılandırma bilgileri için bkz **tanılama veri kaynaklarını'kurmak** bu makalenin ilerleyen bölümlerinde.
 9. İstediğiniz tüm tanılama veri koleksiyonu etkinleştirdikten sonra seçin **Tamam**.
 10. Azure bulut hizmeti projenizi Visual Studio'da her zaman olduğu gibi çalıştırın. Uygulamanızı kullandıkça, etkinleştirdiğiniz günlüğü bilgilerini, belirttiğiniz Azure depolama hesabına kaydedilir.
 
@@ -102,32 +102,32 @@ Visual Studio'da Azure sanal makineleri için Tanılama verileri toplayabilirsin
 1. Sunucu Gezgini'nde Azure düğümü seçin ve henüz bağlı değilseniz, ardından Azure aboneliğinize bağlanın.
 2. Genişletin **sanal makineler** düğümü. Yeni bir sanal makine oluşturun veya var olan bir düğüm seçin.
 3. Seçmek istediğiniz sanal makinenin kısayol menüsünde **yapılandırma**. Sanal makine yapılandırma iletişim kutusu görüntülenir.
-   
+
     ![Bir Azure sanal makine yapılandırma](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
 4. Henüz yüklü değilse, Microsoft İzleme Aracısı tanılama uzantısını ekleyin. Bu uzantıya sahip Azure sanal makine için Tanılama verileri toplayabilirsiniz. Altında **yüklü uzantıları**, **kullanılabilir bir uzantı seçin** aşağı açılan liste kutusunda seçin **Microsoft İzleme Aracısı tanılamaları**.
-   
+
     ![Bir Azure sanal makine uzantısı yükleme](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
-   
+
     > [!NOTE]
    > Diğer bir tanılama uzantısı, sanal makineleriniz için kullanılabilir. Daha fazla bilgi için [sanal makine uzantıları ve özellikleri Windows için](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
-   > 
-   > 
+   >
+   >
 5. Uzantı ve görünüm eklemek için kendi **tanılama Yapılandırması** iletişim kutusunda **Ekle**.
 6. Bir depolama hesabı belirtmek için seçin **yapılandırma**ve ardından **Tamam**.
-   
+
     Her sekme (dışında **genel** ve **günlük dizinleri**) toplamak bir tanılama veri kaynağını temsil eder.
-   
+
     ![Azure tanılama ve yapılandırmasını etkinleştir](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
-   
+
     Varsayılan sekmeyi **genel**, aşağıdaki tanılama veri toplama seçeneklerini sunar: **Yalnızca hataları**, **tüm bilgileri**, ve **özel planı**. Varsayılan seçenek **yalnızca hataları**, uyarı veya izleme iletileri aktarmaz çünkü en az miktarda depolama alır. **Tüm bilgileri** seçenek en çok bilgi aktarır ve, bu nedenle, en pahalı depolama açısından bir seçenektir.
 7. Bu örnekte, seçin **özel planı** toplanan verileri özelleştirme olanağı seçeneği.
 8. **MB Disk kotası** ayırmak istediğiniz depolama hesabınız için Tanılama verileri ne kadar alan kutusunu belirtir. Varsayılan değer, isterseniz değiştirebilirsiniz.
 9. Her toplamak istediğiniz tanılama veri sekmesinde seçin, **etkinleştirme Aktarım, \<günlük türü\>**  onay kutusu.
-   
+
     Örneğin, uygulama günlüklerini toplamak istiyorsanız, seçin **aktarımını uygulama günlüklerini etkinleştirin** onay kutusunu **uygulama günlükleri** sekmesi. Ayrıca, her tanılama veri türü için gerekli herhangi bir bilgi belirtin. Her sekme için yapılandırma bilgileri için bkz **tanılama veri kaynaklarını'kurmak** bu makalenin ilerleyen bölümlerinde.
 10. İstediğiniz tüm tanılama veri koleksiyonu etkinleştirdikten sonra seçin **Tamam**.
 11. Güncelleştirilmiş Projeyi kaydedin.
-    
+
     Bir ileti **Microsoft Azure etkinlik günlüğü** penceresi belirten sanal makine güncelleştirildi.
 
 ## <a name="set-up-diagnostics-data-sources"></a>Tanılama veri kaynakları ayarlayın
@@ -202,20 +202,20 @@ Bulut hizmeti veya sanal makine için Tanılama verileri derledik sonra görünt
 ### <a name="to-view-cloud-service-diagnostics-data"></a>Bulut hizmeti tanılama verilerini görüntülemek için
 1. Bulut hizmetinizi normal olarak dağıtın ve çalıştırın.
 2. Visual Studio'nun ürettiği bir raporda veya tablolarda tanılama verilerini depolama hesabınızda görüntüleyebilirsiniz. Cloud Explorer veya Sunucu Gezgini, açık bir raporda veri açın ve ardından rolü için düğümün kısayol menüsünü görüntülemek **görünüm tanılama verilerini**.
-   
+
     ![Tanılama verilerini görüntüle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
-   
+
     Kullanılabilir verileri gösteren bir rapor görüntülenir.
-   
+
     ![Visual Studio'da Microsoft Azure tanılama raporu](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
-   
+
     En son veriler gösterilmiyor aktarım süresi geçmesini beklemeniz gerekebilir.
-   
+
     Verileri hemen güncelleştirmek için seçin **Yenile** bağlantı. Otomatik olarak güncelleştirilen veri sağlamak için bir zaman aralığı seçin **otomatik yenileme** aşağı açılan liste kutusu. Hata verileri dışarı aktarmak için seçin **CSV'ye aktar** bir Excel çalışma sayfasında açabileceğiniz bir virgülle ayrılmış değer dosyası oluşturmak için düğme.
-   
+
     Cloud Explorer veya sunucu Gezgini'nde, dağıtımla ilişkili depolama hesabını açın.
-3. Tanılama tabloları Tablo Görüntüleyicisi'nde açın ve sonra toplanan verileri gözden geçirin. IIS günlükleri ve özel günlükler için bir blob kapsayıcısı açabilirsiniz. Aşağıdaki tabloda, farklı günlük dosyaları için verileri içeren blob kapsayıcıları ve tabloları listeler. Bu günlük dosyası için veri ek olarak tablo girişleri **EventTickCount**, **Deploymentıd**, **rol**, ve **Roleınstance** , hangi sanal makine ve rol verileri oluşturulan tanımlamanıza yardımcı olması için ne zaman. 
-   
+3. Tanılama tabloları Tablo Görüntüleyicisi'nde açın ve sonra toplanan verileri gözden geçirin. IIS günlükleri ve özel günlükler için bir blob kapsayıcısı açabilirsiniz. Aşağıdaki tabloda, farklı günlük dosyaları için verileri içeren blob kapsayıcıları ve tabloları listeler. Bu günlük dosyası için veri ek olarak tablo girişleri **EventTickCount**, **Deploymentıd**, **rol**, ve **Roleınstance** , hangi sanal makine ve rol verileri oluşturulan tanımlamanıza yardımcı olması için ne zaman.
+
    | Tanılama verileri | Açıklama | Konum |
    | --- | --- | --- |
    | Uygulama günlükleri |Kodunuzu yöntemleri çağırarak oluşturduğu günlükleri **System.Diagnostics.Trace** sınıfı. |WADLogsTable |
@@ -231,15 +231,15 @@ Bulut hizmeti veya sanal makine için Tanılama verileri derledik sonra görünt
 
 ### <a name="to-view-virtual-machine-diagnostics-data"></a>Sanal makine tanılama verilerini görüntülemek için
 1. Sanal makine için kısayol menüsünden seçin **tanılama verilerini görüntüle**.
-   
+
     ![Bir Azure sanal makinesinde tanılama verilerini görüntüle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766027.png)
-   
+
     **Souhrn Diagnostiky** iletişim kutusu görüntülenir.
-   
-    ![Azure sanal makinesi tanılama özeti](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)  
-   
+
+    ![Azure sanal makinesi tanılama özeti](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
+
     En son veriler gösterilmiyor aktarım süresi geçmesini beklemeniz gerekebilir.
-   
+
     Verileri hemen güncelleştirmek için seçin **Yenile** bağlantı. Otomatik olarak güncelleştirilen veri sağlamak için bir zaman aralığı seçin **otomatik yenileme** aşağı açılan liste kutusu. Hata verileri dışarı aktarmak için seçin **CSV'ye aktar** bir Excel çalışma sayfasında açabileceğiniz bir virgülle ayrılmış değer dosyası oluşturmak için düğme.
 
 ## <a name="set-up-cloud-service-diagnostics-after-deployment"></a>Dağıtımdan sonra bulut hizmeti tanılama ayarlama ayarlayın
@@ -247,12 +247,12 @@ Zaten çalışan bir bulut hizmeti ile ilgili bir sorun araştırdığınızı, 
 
 ### <a name="to-set-up-diagnostics-for-a-running-cloud-service"></a>Çalışan bir bulut hizmeti için tanılama ayarlamak için
 1. Sunucu Gezgini'nde **Cloud Services** düğümünü ve ardından rolü veya örneği (veya her ikisi de) bulmak için düğümleri listesini genişletin araştırmak istediğiniz.
-   
+
     ![Tanılama Yapılandır](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748913.png)
 2. Bir örnek düğümü veya bir rolü düğümü için kısayol menüsünden seçin **güncelleştirme tanılama ayarları**ve ardından toplamak istediğiniz tanılama ayarlarını seçin.
-   
+
     Yapılandırma ayarları hakkında daha fazla bilgi için bkz **tanılama veri kaynaklarını'kurmak** bu makaledeki. Tanılama verilerini görüntüleme hakkında daha fazla bilgi için bkz **tanılama verilerini görüntüleme** bu makaledeki.
-   
+
     Sunucu Gezgini içinde veri toplama değiştirirseniz, değişiklikler bulut hizmetinizin tam olarak yeniden kadar yürürlükte kalır. Varsayılan kullanırsanız yayımlama ayarları, değişikliklerin üzerine yazılmaz. Varsayılan ayar yayımlama mevcut dağıtımı güncelleştirmek için yerine tam bir yeniden dağıtım yapmak için olan. Ayarlar'ın dağıtım sırasında Temizle emin olmak için Git **Gelişmiş ayarlar** Yayımla Sihirbazı'nda sekmesine ve ardından temizleyin **dağıtım güncelleştirme** onay kutusu. Bu onay kutusu işaretli yeniden dağıtırken, ayarları bulunanlar .wadcfgx (veya .wadcfg) dosyası olarak kümesi üzerinden geri **özellikleri** rolü için düzenleyici. Azure, dağıtımınızı güncelleştirmek, önceki ayarları tutar.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Azure bulut hizmeti sorunları giderme

@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834678"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936625"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Dinamik sembolik yürütme kullanarak giriş oluşturma
 
-Intellitest oluşturur için girişler [parametreli birim testleri](test-generation.md#parameterized-unit-testing) programı dal koşulları analiz tarafından. Test girdileri olup programın yeni dal oluşturma davranışları tetikleyebilir göre seçilir. Analiz artımlı bir işlemdir. Bir koşul iyileştirir **s: Ben -> {true, false}** giriş parametrelerini resmi test **miyim**. **q** Intellitest zaten gözlemlenen davranışların kümesini temsil eder. Başlangıçta **q: = false**, bu yana hiçbir şey henüz gözlenmiştir.
+Intellitest oluşturur için girişler [parametreli birim testleri](test-generation.md#parameterized-unit-testing) programı dal koşulları analiz tarafından.
+Test girdileri olup programın yeni dal oluşturma davranışları tetikleyebilir göre seçilir.
+Analiz artımlı bir işlemdir. Bir koşul iyileştirir **s: Ben -> {true, false}** giriş parametrelerini resmi test **miyim**. **q** Intellitest zaten gözlemlenen davranışların kümesini temsil eder.
+Başlangıçta **q: = false**, bu yana hiçbir şey henüz gözlenmiştir.
 
 Döngünün adımlar şunlardır:
 
-1. Intellitest belirler girişleri **miyim** şekilde **(i) q = false** kullanarak bir [kısıtlama Çözücü](#constraint-solver). 
+1. Intellitest belirler girişleri **miyim** şekilde **(i) q = false** kullanarak bir [kısıtlama Çözücü](#constraint-solver).
    Yapı, giriş olarak **miyim** önce görülmeyen bir yürütme yolu götürür. Başlangıçta, yani **miyim** yürütme yol henüz saptanmamış olduğundan herhangi bir girişi olabilir.
 
 1. Intellitest, seçilen giriş ile test yürütür **miyim**, test ve test edilen programın yürütülmesini izler.
@@ -55,7 +58,8 @@ Intellitest kullanan [Z3](https://github.com/Z3Prover/z3/wiki) kısıtlama Çöz
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Dinamik kod kapsamı
 
-Bir yan etkisi olarak izleme çalışma zamanının, Intellitest dinamik kod kapsamı verilerini toplar. Bu adlandırılır *dinamik* Intellitest yürütülen kod hakkında bildiğinden, başka bir kapsamı araç normalde yaptığınız gibi bu nedenle, mutlak değerler kapsam için aynı şekilde veremez. 
+Bir yan etkisi olarak izleme çalışma zamanının, Intellitest dinamik kod kapsamı verilerini toplar.
+Bu adlandırılır *dinamik* Intellitest yürütülen kod hakkında bildiğinden, başka bir kapsamı araç normalde yaptığınız gibi bu nedenle, mutlak değerler kapsam için aynı şekilde veremez.
 
 Intellitest 5/10 temel taşı olarak dinamik kapsam bildirdiğinde, örneğin, on dışında beş blokları, burada ele alındığını yani analiz tarafından şimdiye ulaştınız tüm yöntemleri bloklarında toplam sayısı (mevcut olan tüm yöntemleri aksine bir test edilen erleme) 10'dur.
 Daha sonra analiz, daha fazla erişilebilir yöntemleri olarak bulunan, hem pay (Bu örnekte 5) ve (10) paydası artırabilir.
@@ -80,8 +84,7 @@ Intellitest, test ve test altındaki program çalıştığında yürütülen yö
 Bu alan değerlerine ayarlayın ve belirli bir türden nesneler oluşturmak için Intellitest gerektiğini anlamına gelir. Sınıf ise [görünür](#visibility) ve bir [görünür](#visibility) varsayılan oluşturucu, Intellitest sınıfının bir örneğini oluşturabilirsiniz.
 Sınıfın tüm alanları [görünür](#visibility), Intellitest alanları otomatik olarak ayarlanır.
 
-Tür görünür değil veya alanları olmayan [görünür](#visibility), Intellitest nesneleri oluşturmak ve bunları düzeyde kod kapsamını elde etmek için ilgi çekici durumlara getirmek için Yardım gerekiyor. Intellitest oluşturma ve isteğe bağlı şekillerde örnekleri başlatma için yansıma kullanabilirsiniz, ancak bu genellikle değil  
-Nesne hiçbir zaman normal program yürütme sırasında oluşabilecek bir duruma getirin çünkü istenmez. Bunun yerine, Intellitest kullanıcıdan ipuçları kullanır.
+Tür görünür değil veya alanları olmayan [görünür](#visibility), Intellitest nesneleri oluşturmak ve bunları düzeyde kod kapsamını elde etmek için ilgi çekici durumlara getirmek için Yardım gerekiyor. Intellitest oluşturma ve isteğe bağlı şekillerde örnekleri başlatma için yansıma kullanabilirsiniz, ancak nesne hiçbir zaman normal program yürütme sırasında oluşabilecek bir duruma getirin çünkü bu genellikle tercih değildir. Bunun yerine, Intellitest kullanıcıdan ipuçları kullanır.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Görünürlük
@@ -108,7 +111,7 @@ Kurallar aşağıdaki gibidir:
 
 Test bir arabirim türünün bir parametresi olan bir yöntemi nasıl? Korumalı olmayan bir sınıfın veya? Intellitest, bu yöntem çağrıldığında, daha sonra hangi uygulamaları kullanılacak bilmez. Ve belki de hiç bile gerçek bir uygulama kullanılabilir test zaman.
 
-Geleneksel yanıt kullanmaktır *sahte nesneler* açık davranış. 
+Geleneksel yanıt kullanmaktır *sahte nesneler* açık davranış.
 
 Sahte bir nesne bir arabirimi uygulayan (veya korumalı olmayan bir sınıfın uzantısı). Gerçek bir uygulama, ancak yalnızca sahte nesnesini kullanarak testlerin yürütmesini sağlayan kısayol temsil etmiyor. Uygulamanın davranışı, kullanıldığı her test çalışmasının bir parçası olarak el ile tanımlanır. Sahte nesneler ve beklenen davranışları tanımlamanızı kolaylaştıran birçok araç vardır, ancak bu davranış yine de el ile tanımlanmalıdır.
 
@@ -129,7 +132,8 @@ Intellitest hakkında akıl **yapı** ilgilenen ile olduğu gibi değerler benze
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Diziler ve dizeler
 
-Intellitest, test ve test altındaki program çalışırken yürütülen yönergeleri izler. Özellikle, ne zaman program bir dize veya bir dizi (alt sınırı ve çok boyutlu bir dizi uzunluğu) uzunluğuna bağlıdır gözlemler. Program bir dize veya dizi listesinin farklı öğelerini nasıl kullanır uyan. Ardından kullanan bir [kısıtlama Çözücü](#constraint-solver) hangi uzunlukları ve öğe değerlerini test ve program test ilginç bir şekilde davranmasına yol açabileceğini saptayabilirsiniz.
+Intellitest, test ve test altındaki program çalışırken yürütülen yönergeleri izler. Özellikle, ne zaman program bir dize veya bir dizi (alt sınırı ve çok boyutlu bir dizi uzunluğu) uzunluğuna bağlıdır gözlemler.
+Program bir dize veya dizi listesinin farklı öğelerini nasıl kullanır uyan. Ardından kullanan bir [kısıtlama Çözücü](#constraint-solver) hangi uzunlukları ve öğe değerlerini test ve program test ilginç bir şekilde davranmasına yol açabileceğini saptayabilirsiniz.
 
 Intellitest ilginç program davranışları tetiklemek için gereken dizeler ve dizi boyutu en aza indirmek çalışır.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b407a8bceca3127bea54470bcab3cc42aa3b81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d12e5514e79a55ae5422f2efdd8a8cdb34479cf6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944780"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Veri kaynağında bulunan çeşitli simgeler numaralandırır.  

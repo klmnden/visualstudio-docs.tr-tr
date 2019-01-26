@@ -2,7 +2,7 @@
 title: Adlandırılmış bir kimlik doğrulama kimlik bilgilerini ayarla | Microsoft Docs
 description: Visual Studio, Visual Studio'dan azure'a uygulama yayımlama ya da mevcut bir bulut hizmetini izlemeyi azure'a isteklerinin kimliğini doğrulamak için kullanabileceğiniz kimlik bilgilerini sağlamanız öğrenin.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b4ae1be3c0c024f7cafb4f1b5ee3e82558cced83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b8b3ab9bc5bd61a4abc983826cc97c3d032e824
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034843"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Adlandırılmış kimlik doğrulama bilgilerini ayarlama
 
@@ -39,6 +39,6 @@ Kendiniz bir sertifika oluşturmak istiyorsanız, yönergeleri başvurabilirsini
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Web Apps'e genel bakış](https://docs.microsoft.com/azure/app-service/)
-- [Uygulamanızı Azure App Service'e dağıtma](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Uygulamanızı Azure App Service'e dağıtma](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Visual Studio kullanarak webjob'ları dağıtma](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Bir bulut hizmeti oluşturma ve dağıtma](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

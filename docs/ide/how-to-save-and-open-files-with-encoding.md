@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Dosyaları kodlamayla kaydetme ve açma'
+title: 'Nasıl yapılır: Dosyaları kodlamayla kaydetme ve açma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93222ee261407d54eb18d61d81eeb5aa93af7b24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042835"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Nasıl Yapılır: Dosyaları kodlamayla kaydetme ve açma
+# <a name="how-to-save-and-open-files-with-encoding"></a>Nasıl yapılır: Dosyaları kodlamayla kaydetme ve açma
 
 Dosyaları belirli karakter çift yönlü dil desteği için kodlama ile kaydedebilirsiniz. Ayrıca, böylece Visual Studio dosyayı doğru görüntüler bir dosyayı açtığınızda kodlama belirtebilirsiniz.
 

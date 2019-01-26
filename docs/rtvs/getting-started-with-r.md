@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024103"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio için R araçları kullanmaya başlayın
 
-R araçları Visual Studio (yüklü için RTVS'yi) aldıktan sonra (bkz [yükleme](installing-r-tools-for-visual-studio.md)), bu araçları sağlayan deneyimi denemek hızlıca elde edebilirsiniz. 
+R araçları Visual Studio (yüklü için RTVS'yi) aldıktan sonra (bkz [yükleme](installing-r-tools-for-visual-studio.md)), bu araçları sağlayan deneyimi denemek hızlıca elde edebilirsiniz.
 
 ## <a name="create-an-r-project"></a>Bir R projesi oluşturma
 
@@ -93,7 +93,7 @@ Kod yazmada bir *. R* dosyasını tek seferde tüm kodunuzu görmenizi sağlar v
 
 > [!Tip]
 > Düzenlemeleri ve basıldığında düzeni öğrenin **Ctrl**+**Enter** (veya olan her şeyi seçerek **Ctrl**+**bir** ve tuşuna basarak **Ctrl**+**Enter**) hızlı bir şekilde kod çalıştırabilir. Bunun yapılması, aynı işlemleri için fare kullanmaktan çok daha verimlidir.
-> 
+>
 > Ayrıca, sürükleyin ve çizim penceresi Visual Studio çerçevenin dışında bırakın ve başka ekranınızda istediğinizde yerleştirin. Ardından istediğiniz ve bir resim veya PDF dosyasını kaydedin boyutlarına çizim pencereyi yeniden boyutlandırabilirsiniz.
 
 1. Birkaç daha fazla satır içeren ikinci bir çizim kodu ekleyin:
@@ -132,7 +132,7 @@ Kod yazmada bir *. R* dosyasını tek seferde tüm kodunuzu görmenizi sağlar v
 
 Daha fazla Düzenleyicisi'nde yapabileceğiniz yoktur. Ayrıntılar için bkz [Düzenle R kodunu](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), ve [kod parçacıkları](code-snippets-for-r.md).
 
-## <a name="debug-your-code"></a>Kodunuzdaki hataları ayıklamanıza
+## <a name="debug-your-code"></a>Kodunuzda hata ayıklama
 
 Anahtar güçleriyle Visual Studio hata ayıklama kullanıcı arabirimini biridir. RTVS bu güçlü bir temel üzerine oluşturur ve yenilikçi UI eklemeler [değişken Gezgini](variable-explorer.md). Burada, yalnızca hata ayıklama bir ilk bakalım.
 

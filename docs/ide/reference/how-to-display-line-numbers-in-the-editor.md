@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Düzenleyicide satır numaralarını görüntüleme'
+title: 'Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b76ac306607dae5fbeaa015bf3f41eb787bf0f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b64d6069c4f1c1fe8a823a7acae30908c438632d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022527"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Nasıl Yapılır: Düzenleyicide satır numaralarını görüntüleme
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme
 
 Görüntülemek veya satır kodunuzu numaralarını gösterip gizleyebilirsiniz.
 

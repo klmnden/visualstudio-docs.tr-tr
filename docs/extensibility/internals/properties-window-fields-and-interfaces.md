@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5b56426b54da6d869aa5fdef2564d83fc501828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962686"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler Penceresi Alanları ve Arabirimleri
 Seçim, hangi bilgilerin görüntüleneceğini belirlemek modelin **özellikleri** penceresi odaklı IDE'de pencerenin temel alır. Her pencere ve seçili penceresi içinde nesne genel seçimi bağlamına gönderildi, Seçim bağlam nesnesi olabilir. Bu pencere odaklandığında ortamı genel seçim bağlamını pencere çerçevesi değerlerini güncelleştirir. Bu nedenle odağı değiştiğinde seçim bağlamını yapar.  

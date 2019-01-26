@@ -7,15 +7,15 @@ helpviewer_keywords:
 - fxcop analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be213d25ca406a8532f00ad88b006c36d369e1a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b82225e075856e068456b5fb86bee679799fce61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043121"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio'da FxCop Çözümleyicileri yükleyin
 

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 799b5d2feafbf4a0e7b6ff54673983a585b0d2fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfa9ba27a338f52e40d063a4c8ceb9774bd9244b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876896"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942457"
 ---
 # <a name="properties-of-domain-classes"></a>Etki Alanı Sınıflarının Özellikleri
 Etki alanı sınıfları aşağıdaki tabloda özelliklere sahiptir. Etki alanı sınıfları hakkında daha fazla bilgi için bkz: [anlama modelleri, sınıfları ve ilişkileri](../modeling/understanding-models-classes-and-relationships.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).

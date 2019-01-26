@@ -1,5 +1,5 @@
 ---
-title: "Nasıl Yapılır: '.NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma | Microsoft Docs"
+title: "Nasıl yapılır: '.NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 790864b44725287774b4ed3d0eefe2cfa9821179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975445"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl Yapılır: '.NET framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: '.NET framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma
 ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürümünü hedefleyen bir uygulama dağıtabilirsiniz. Bu, oluşturmak ve uygulama ve dağıtım bildirimlerini güncelleştirme gerektirir.  
   
 > [!NOTE]
@@ -73,7 +73,7 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
     |.NET framework çalışma zamanı sürümü|XML|  
     |------------------------------------|---------|  
-    |4 istemcisi|\<supportedRuntime sürümü = "v4.0.30319" sku = ". NETFramework, sürüm = v4.0, profil istemci = "/ >|  
+    |4 istemcisi|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
     |4 tam|\<supportedRuntime sürümü = "v4.0.30319" sku = ". NETFramework, sürüm = v4.0 "/ >|  
     |3.5 tam|\<supportedRuntime version="v2.0.50727"/ >|  
     |3.5 istemci|\<supportedRuntime sürümü = "v2.0.50727" sku = "İstemci" / >|  

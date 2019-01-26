@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir yük testi sonuçları deposunu seçme'
+title: 'Nasıl yapılır: Bir yük testi sonuçları deposunu seçme'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fcbe7979765fe921ccc42f7adfa556bc0b52b7d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39b1bcd613860ab889981de86455b92b0d976864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934805"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Nasıl Yapılır: Bir yük testi sonuçları deposunu seçme
+# <a name="how-to-select-a-load-test-results-repository"></a>Nasıl yapılır: Bir yük testi sonuçları deposunu seçme
 
 Bir yerel sonuç deposuyla sınırlı değildir. Sık, yük testleri Aracı bilgisayarların bir uzak kümesi üzerinde çalıştırılır. Aracıları, bir denetleyici ile birlikte tek bir bilgisayardan daha fazla benzetilmiş yük oluşturabilir. Daha fazla bilgi için [Test denetleyicileri ve test aracılarını](configure-test-agents-and-controllers-for-load-tests.md).
 

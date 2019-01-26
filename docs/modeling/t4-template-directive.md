@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974259"
 ---
 # <a name="t4-template-directive"></a>T4 Şablon Yönergesi
 
@@ -36,7 +36,7 @@ Metin şablonlarını yazmayla ilgili genel bilgiler için bkz: [T4 metin şablo
 `compilerOptions="optimize+"`
 
 Geçerli değerler:
- 
+
 Tüm geçerli derleyici seçenekleri.
 
 Çalışma zamanı (önceden işlenmiş) şablonları için yok sayılır.
@@ -46,11 +46,11 @@ Tüm geçerli derleyici seçenekleri.
 ## <a name="culture-attribute"></a>culture özniteliği
 
 Örnek:
- 
+
 `culture="de-CH"`
 
 Geçerli değerler:
- 
+
 Sabit kültür olan "" varsayılan değerdir.
 
 xx-XX biçiminde bir dize olarak ifade edilen bir kültür. Örneğin, en-US, ja-JP, de-CH, de-DE. Daha fazla bilgi için bkz. <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Geçerli değerler:
- 
+
 `true`
- 
+
 `false` (varsayılan)
- 
+
 Varsa `debug` özniteliği `true`, Ara kod dosyası hata ayıklayıcının şablonunuzda bir kesme veya özel durumun oluştuğu konumu daha doğru bir şekilde tanımlamak için sağlayan bilgiler içerir.
 
 Tasarım zamanı şablonları için Ara kod dosyası için yazılır, **% TEMP %** dizin.
@@ -88,9 +88,9 @@ hostspecific="true"
 Geçerli değerler:
 
 `true`
- 
+
 `false` (varsayılan)
- 
+
 `trueFromBase`
 
 Bu özniteliğin değerini ayarlarsanız `true`, adlı bir özellik `Host` metin şablonunuz tarafından oluşturulan sınıfa eklenir. Özellik dönüşüm motorunun ana bilgisayarına bir başvurudur ve olarak bildirilen <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Özel bir sunucu tanımladıysanız, bunu özel ana bilgisayar türüne atayabilirsiniz.

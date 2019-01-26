@@ -2,19 +2,19 @@
 title: Çalıştırın ve Azure bulut hizmeti yerel bir makinede hata ayıklamak için emulator Express'i kullanma | Microsoft Docs
 description: Çalıştırın ve bir bulut hizmeti yerel bir makinede hata ayıklamak için emulator Express'i kullanma
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ff35e862c46ed669c104825ac0252b2b67c0bd1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7cc217732c3f058a4a824a2146eb0d7de0ee0f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939527"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964190"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express kullanarak Azure bulut hizmetini yerel makinede çalıştırma ve hatalarını ayıklama
 Emulator Express kullanarak sınamak ve Visual Studio'yu yönetici olarak çalıştırarak olmadan bir bulut hizmeti hata ayıklama. Emulator Express veya tam öykünücü, bulut hizmetinizin gereksinimlerine bağlı olarak kullanmak üzere proje ayarlarınız ayarlayabilirsiniz. Tam öykünücü hakkında daha fazla bilgi için bkz: [işlem öykünücüsü'nde bir Azure uygulama çalıştırmak](/azure/storage/common/storage-use-emulator).
@@ -33,15 +33,15 @@ Azure SDK 2.3 veya üstü bir Azure projesi oluşturduğunuzda, Emulator Express
 1. Altında **yerel geliştirme sunucusu**seçin **IIS Express kullan seçeneği**.
 
 1. Altında **öykünücü**seçin **kullanım Emulator Express**.
-   
-1. Emulator Express başlatmak için komut isteminde aşağıdaki komutu çalıştırın: 
+
+1. Emulator Express başlatmak için komut isteminde aşağıdaki komutu çalıştırın:
 
     ```
     csrun.exe /useemulatorexpress
     ```
 
 ## <a name="emulator-express-limitations"></a>Emulator Express sınırlamaları
-Emulator Express sınırlamaları aşağıdaki sorunlar bilinmektedir: 
+Emulator Express sınırlamaları aşağıdaki sorunlar bilinmektedir:
 
 - Emulator Express, IIS Web sunucusu ile uyumlu değil.
 - Bulut hizmetinizin çoklu roller bulunabilir, ancak her rol için bir örnek sınırlıdır.

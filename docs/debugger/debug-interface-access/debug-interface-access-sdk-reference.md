@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f5cf77194d711baef2663d1c735ff2299d8997e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a4dbcd8de6aeb339fd742b906db890128024b16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842875"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042874"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Arabirim Erişimi SDK Başvurusunda Hata Ayıklama
 Tüm arabirimleri ve destekleyici numaralandırmaları ve yapıları DIA SDK'sı, eksiksiz bir başvuru.  

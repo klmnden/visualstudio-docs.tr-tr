@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Kendini barındıran WCF hizmetinde hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: Kendini barındıran WCF hizmetinde hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f19122407f3105d32ad9dfed182cc237a614f05c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956133"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030294"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Nasıl Yapılır: Kendini barındıran WCF hizmetinde hata ayıklama
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Nasıl yapılır: Kendini barındıran WCF hizmetinde hata ayıklama
 A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışmaz bir WCF hizmeti veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geliştirme sunucusu. Şirket içinde barındırılan bir WCF hata ayıklamak için en kolay yolu yapılandırmaktır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] seçtiğinizde, istemci ve sunucu başlatmak için **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.  
   
  WCF hizmeti içinde veya NT hizmeti gibi bu yolla başlatılamıyor işlem kendi kendine barındırma olduğundan, bu yöntemi kullanamazsınız. Bunun yerine, aşağıdakilerden birini yapabilirsiniz:  
@@ -56,4 +56,4 @@ A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışm
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)   
  [WCE hata ayıklamasında sınırlamalar](../debugger/limitations-on-wcf-debugging.md)   
- [Nasıl yapılır: WCF hizmetleri içine Adımlama](../debugger/how-to-step-into-wcf-services.md)
+ [Nasıl yapılır: WCF Hizmetleri içine adımlama](../debugger/how-to-step-into-wcf-services.md)

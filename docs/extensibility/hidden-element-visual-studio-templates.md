@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 008a46399808eae2921e51099814c7ead4675c78
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a0d12febf6c8529739463e0122cddf8c75379a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896493"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025949"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden öğesi (Visual Studio şablonları)
 Şablon ya da görüntülenip görüntülenmeyeceğini belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 05d2a2cbd3cfe59b1d110fdd8b0b7c5fd042d25c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937333"
 ---
 # <a name="how-to-attach-to-script"></a>Nasıl yapılır: Betiğe ekleme
 Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayıcısını el ile ekleme açıklanmaktadır.  

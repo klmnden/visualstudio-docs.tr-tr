@@ -1,21 +1,21 @@
 ---
-title: 'Nasıl Yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği'
+title: 'Nasıl yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4087ea9d97970621a2ec8b51dc37d38f0306b0e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10d3f93e467d95e11606d8d8e4d27d82abb5dee6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973128"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl Yapılır: LinqToXmlDataBinding oluşturma ve çalıştırma örneği
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: LinqToXmlDataBinding oluşturma ve çalıştırma örneği
 
 Bu konu nasıl oluşturulup LinqToXmlDataBinding Visual Studio projeyi oluşturun ve elde edilen LinqToXmlDataBinding Windows Presentation Foundation (WPF) örnek program çalıştırma gösterir.
 

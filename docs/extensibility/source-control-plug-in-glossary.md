@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdd9cd8ee037b376b086def1464888f1ae6e11f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 167be5f3b29fbab77dadf75aecd77bc799a1e89e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945704"
 ---
 # <a name="source-control-plug-in-glossary"></a>Kaynak Denetimi Eklentisi Sözlüğü
 Aşağıdaki yardımcı terimleri ve tanımları kaynak denetimi eklentisi SDK belgelerine ilgilidir.  

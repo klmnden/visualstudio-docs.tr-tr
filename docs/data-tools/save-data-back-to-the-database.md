@@ -17,16 +17,16 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3bbb8b93eb4b2f0cc1078224118b41caa590df6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989142"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966965"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 
@@ -73,22 +73,22 @@ Veri kümeleri birleştirme işlemi gerçekleştirirken, Boole bir bağımsız d
 
 |DataRowVersion|Hedef veri kümesi|Kaynak veri kümesi|
 | - | - | - |
-|Özgün|James Wilson|James c Wilson|
-|Geçerli|Jim Wilson|James c Wilson|
+|Özgün|James Wilson|James C. Wilson|
+|Geçerli|Jim Wilson|James C. Wilson|
 
 Çağırma <xref:System.Data.DataSet.Merge%2A> yöntemi ile önceki tabloda `preserveChanges=false targetDataset.Merge(sourceDataset)` sonuçları aşağıdaki verileri:
 
 |DataRowVersion|Hedef veri kümesi|Kaynak veri kümesi|
 | - | - | - |
-|Özgün|James c Wilson|James c Wilson|
-|Geçerli|James c Wilson|James c Wilson|
+|Özgün|James C. Wilson|James C. Wilson|
+|Geçerli|James C. Wilson|James C. Wilson|
 
 Çağırma <xref:System.Data.DataSet.Merge%2A> yöntemiyle `preserveChanges = true targetDataset.Merge(sourceDataset, true)` sonuçları aşağıdaki verileri:
 
 |DataRowVersion|Hedef veri kümesi|Kaynak veri kümesi|
 | - | - | - |
-|Özgün|James c Wilson|James c Wilson|
-|Geçerli|Jim Wilson|James c Wilson|
+|Özgün|James C. Wilson|James C. Wilson|
+|Geçerli|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
 > İçinde `preserveChanges = true` senaryosu, varsa <xref:System.Data.DataSet.RejectChanges%2A> hedef dataset kaydı yöntemi çağrılır, ardından özgün verilerin geri döner *kaynak* veri kümesi. Bu, hedef veri kümesi ile özgün veri kaynağını güncelleştirmek çalışırsanız, güncelleştirilecek özgün satır bulmak mümkün olmayabilir, anlamına gelir. Güncelleştirilmiş kayıtları veri kaynağından başka bir dataset doldurma ve ardından bir tutarlılık ihlali önlemek için birleştirme işlemi, bir eşzamanlılık ihlali engelleyebilirsiniz. (Veri kümesi doldurulmuş sonra başka bir kullanıcı bir veri kaynağındaki kaydı değiştirir. eşzamanlılık ihlali meydana gelir.)

@@ -2,7 +2,7 @@
 title: Azure bulut hizmeti yayımlama
 description: Visual Studio Azure uygulaması Yayımlama Sihirbazı çeşitli ayarlarını yapılandırmayı öğrenin
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7eee9eacd9703daf39bbd8a0eda3e1024c8cc0b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce552acb0a261bcd5e21f4c09d4f58047bc8b1ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934779"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio Azure Uygulamasını Yayımlama Sihirbazı'nı kullanma
 
@@ -38,7 +38,7 @@ Azure uygulamasını Yayımla Sihirbazı'nı sahip olduğunuz Visual Studio proj
 
 1. Oluşturun veya bir Azure bulut hizmeti projesini Visual Studio'da açın.
 
-1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve bağlam menüsünden seçin **dönüştürme** > **Azure bulut hizmeti projesine Dönüştür**. 
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve bağlam menüsünden seçin **dönüştürme** > **Azure bulut hizmeti projesine Dönüştür**.
 
 1. İçinde **Çözüm Gezgini**, Azure yeni oluşturulan projeye sağ tıklayın ve bağlam menüsünden seçin **Yayımla**.
 
@@ -56,7 +56,7 @@ Azure uygulamasını Yayımla Sihirbazı'nı sahip olduğunuz Visual Studio proj
 
 **Bulut hizmeti** -açılan listeyi kullanarak ya da mevcut bir bulut hizmeti ya da seçin seçin  **&lt;Yeni Oluştur >** ve bir bulut hizmeti oluşturun. Veri Merkezi, her bir bulut hizmeti için parantez içinde görüntüler. Veriler aynı depolama hesabı (Gelişmiş) için veri merkezi konumu olarak bulut hizmeti için konumu merkezi önerilir.
 
-**Ortam** -seçin **üretim** veya **hazırlama**. Uygulamanızı bir test ortamında dağıtmak istiyorsanız hazırlık ortamı seçin. 
+**Ortam** -seçin **üretim** veya **hazırlama**. Uygulamanızı bir test ortamında dağıtmak istiyorsanız hazırlık ortamı seçin.
 
 **Derleme Yapılandırması** -seçin **hata ayıklama** veya **yayın**.
 
@@ -70,7 +70,7 @@ Azure uygulamasını Yayımla Sihirbazı'nı sahip olduğunuz Visual Studio proj
 
 ![Gelişmiş ayarlar](./media/vs-azure-tools-publish-azure-application-wizard/settings-advanced-settings.png)
 
-**Dağıtım etiketi** -varsayılan adını kabul edin veya seçtiğiniz bir ad girin. Dağıtım etiketi tarihi eklemek için onay kutusunu seçili bırakın. 
+**Dağıtım etiketi** -varsayılan adını kabul edin veya seçtiğiniz bir ad girin. Dağıtım etiketi tarihi eklemek için onay kutusunu seçili bırakın.
 
 **Depolama hesabı** -bu dağıtım için kullanılacak depolama hesabını seçin **&lt;Yeni Oluştur > depolama hesabı oluşturmak için. Veri Merkezi, her depolama hesabı için parantez içinde görüntüler. Depolama hesabı için veri merkezi konumu (ortak ayarları) bulut hizmeti için veri merkezi konumu ile aynı olduğunu önerilir.
 
@@ -78,7 +78,7 @@ Azure depolama hesabı, uygulama dağıtımı için paketi depolar. Uygulama da�
 
 **Hata durumunda dağıtımı Sil** -yayımlama sırasında herhangi bir hatayla karşılaşılmazsa silinmiş dağıtım için bu seçeneği belirleyin. Bulut hizmetiniz için sabit bir sanal IP adresi korumak istiyorsanız bu seçeneği işaretli değil olmalıdır.
 
-**Dağıtım güncelleştirme** -güncelleştirilmiş bileşenleri yalnızca dağıtmak istiyorsanız bu seçeneği belirleyin. Bu dağıtım türünde tam bir dağıtıma göre daha hızlı olabilir. Bulut hizmetiniz için sabit bir sanal IP adresi korumak istiyorsanız bu denetlenmelidir. 
+**Dağıtım güncelleştirme** -güncelleştirilmiş bileşenleri yalnızca dağıtmak istiyorsanız bu seçeneği belirleyin. Bu dağıtım türünde tam bir dağıtıma göre daha hızlı olabilir. Bulut hizmetiniz için sabit bir sanal IP adresi korumak istiyorsanız bu denetlenmelidir.
 
 **Dağıtım güncelleştirmesi - ayarları** -bu iletişim kutusunu daha rollerinin güncelleştirilmesi için nasıl istediğinizi belirtmek için kullanılır. Seçerseniz **Artımlı güncelleştirme**, uygulamanızın her örneği güncelleştirilir birbiri ardına, böylece uygulama her zaman kullanılabilir. Seçerseniz **eşzamanlı güncelleştirme**, uygulamanızın tüm örnekleri aynı anda güncelleştirilir. Eşzamanlı güncelleştirilmesi daha hızlıdır, ancak hizmet uygulamanızın güncelleştirme işlemi sırasında kullanılabilir olmayabilir.
 

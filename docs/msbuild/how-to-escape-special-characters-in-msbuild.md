@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: MSBuild özel karakterleri kaçış | Microsoft Docs'
+title: 'Nasıl yapılır: MSBuild özel karakterleri kaçış | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6af51127548b59646ec7243863491115b77e08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a1188d202fd38ce0f14c5792ba6976b424d0d8c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854626"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937359"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Nasıl Yapılır: Msbuild'de kaçış özel karakterleri
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Nasıl yapılır: Msbuild'de kaçış özel karakterleri
 
 Belirli karakterler özel bir anlamı olmayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. Karakterler örnekleri noktalı virgül (`;`) ve yıldız işaretlerini (`*`). Bu özel karakterlerin tam bir listesi için bkz. [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md).
   

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - DCOM, unable to connect error
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c9bc3c72a2ff97fc67f31f44041feed2185551
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9531151402b5070aaa3a680e09e0082b4e1237f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847379"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972046"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Hata: Makineye bağlanılamıyor &lt;adı&gt;. Makine ağ üzerinde bulunamadı.
 Bu davranış, aşağıdaki koşullardan biri doğru ise oluşur:  

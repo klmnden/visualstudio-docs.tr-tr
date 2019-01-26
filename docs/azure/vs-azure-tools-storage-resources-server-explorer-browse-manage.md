@@ -2,7 +2,7 @@
 title: Gözat ve Sunucu Gezgini kullanarak depolama kaynaklarını yönetme | Microsoft Docs
 description: Göz atma ve Sunucu Gezgini kullanarak depolama kaynaklarını yönetme
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: dc4e5abf5ecc96ea11771158c646d67492f85ec4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97c6bea6fbdb676e33be1bfc9aa40ebbfe9eac85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934633"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Sunucu Gezgini'ni kullanarak depolama kaynaklarına göz atma ve bu kaynakları yönetme
 
@@ -44,7 +44,7 @@ Bir depolama hesabında kaynakları görüntülemek için depolama hesabının S
 ### <a name="to-create-a-blob-container"></a>Bir blob kapsayıcısı oluşturmak için
 
 1. Kısayol menüsünü açın **Blobları** düğümüne tıklayın ve ardından **Blob kapsayıcısı Oluştur**.
-1. İçinde **Blob kapsayıcısı Oluştur** iletişim kutusunda, yeni bir kapsayıcı adını girin.  
+1. İçinde **Blob kapsayıcısı Oluştur** iletişim kutusunda, yeni bir kapsayıcı adını girin.
 1. Enter'ı seçin, klavye veya tıklayabilir veya blob kapsayıcısını kaydetmek için ad alanı dokunun.
 
    > [!NOTE]
@@ -286,7 +286,7 @@ Kullanarak bir depolama hesabı oluşturduysanız **okuma erişimli coğrafi ola
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>Sunucu Gezgini'nden bir depolama hesabını kaldırmak için
 
-Sunucu Gezgini'nde, hesap adı için kısayol menüsünü açın ve ardından **Sil**. 
+Sunucu Gezgini'nde, hesap adı için kısayol menüsünü açın ve ardından **Sil**.
 
 Bir depolama hesabı silerseniz, bu hesap için kaydedilen tüm anahtar bilgilerini de kaldırılır.
 

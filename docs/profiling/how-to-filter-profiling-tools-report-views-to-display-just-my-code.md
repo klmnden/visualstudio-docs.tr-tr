@@ -1,20 +1,20 @@
 ---
-title: "Nasıl Yapılır: Filtre profil oluşturucu Araçlar raporu görünümlerini'yalnızca benim kodumu görüntülemek için | Microsoft Docs"
+title: "Nasıl yapılır: Filtre profil oluşturucu Araçlar raporu görünümlerini'yalnızca benim kodumu görüntülemek için | Microsoft Docs"
 ms.date: 02/15/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c04132dde3f668c007c8fc0bf750c434baa81bbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7d693b1c2948e747532d21d4172cf2e366572ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945482"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Nasıl Yapılır: Sadece benim kodumu görüntülemek için profil oluşturma araçları rapor görünümlerini filtreleme
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Nasıl yapılır: Sadece benim kodumu görüntülemek için profil oluşturma araçları rapor görünümlerini filtreleme
 
 Visual Studio, böylece bunlar yalnızca uyguladıysanız kodunu görüntülemek için performans raporları filtreleme sağlar. Yalnızca kendi kodum adlandırılır, bu özellik varsayılan olarak etkindir. Üzerinden yapılandırılan **yalnızca kendi kodum** seçeneğini **seçenekleri** iletişim kutusu.
 

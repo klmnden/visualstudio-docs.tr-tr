@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme'
+title: 'Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme'
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1f738d1c2480cf97848c17dadfdf1a3ac53380c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866458"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038220"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl Yapılır: Projelere sınıf diyagramları ekleme
+# <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl yapılır: Projelere sınıf diyagramları ekleme
 
 Tasarlama, düzenleme ve sınıfları ve diğer türleri yeniden düzenleme için C#, Visual Basic veya C++ projenize bir sınıf diyagramı ekleyin. Kod projesinde farklı parçalarını görselleştirmek için birden fazla sınıf diyagramı projeye ekleyin.
 

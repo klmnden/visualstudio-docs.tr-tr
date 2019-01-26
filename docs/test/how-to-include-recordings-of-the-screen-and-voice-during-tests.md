@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dc5f35c3c530098b9186d0bb4bba7bb13bfc7db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832144"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024077"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Nasıl Yapılır: Test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Nasıl yapılır: Test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
 
 Visual Studio'daki yapılandırma düzenleyicisinden, testi çalıştıran kullanıcının ses ve ekran kayıtları tanılama veri bağdaştırıcısını yapılandırabilirsiniz. Bu tanılama veri bağdaştırıcısı, test sırasında masaüstü oturumunun bir ekran ve ses kaydını kaydeder. Kayıt test sonucuyla birlikte kaydedilir veya bir hataya iliştirilebilir. Diğer ekip üyeleri, yeniden oluşturulması zor olan uygulama sorunlarını yalıtmak için kaydı kullanabilir.
 

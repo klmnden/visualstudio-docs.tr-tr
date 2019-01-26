@@ -3,19 +3,19 @@ title: Yerel bir Docker kapsayıcısı uygulamalarında hata ayıklama | Microso
 description: Yerel bir Docker kapsayıcısı içinde çalışan bir uygulamayı değiştirmek öğrenin, kapsayıcı düzenleme ve yenileme aracılığıyla yenileyin ve kesme noktaları hata ayıklama ayarlayın
 services: container-service
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.service: multiple
 ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: 784fd5fd4459c77e757cc501ff5f62bce13d5282
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3f78476cc97cad90460d535f04759211540fc8aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962975"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
 ## <a name="overview"></a>Genel Bakış

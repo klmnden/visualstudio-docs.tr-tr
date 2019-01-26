@@ -1,23 +1,25 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: c9110582a80de3031ed4d2698a4f1afcf31e3b72
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 6c68bfe6d5216c6730a4b42713c5124b8075e9e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946431"
 documentType: LandingData
-title: Visual Studio | Visual Basic
+title: Visual Studio öğreticiler | Visual Basic
 metadata:
   title: Visual Basic Visual Studio ile geliştirme | Microsoft Docs
   description: Öğreticiler ve Visual Basic uygulamaları Visual Studio ile geliştirme hakkında kavramsal makaleler.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
   ms.date: 10/30/2018
   ms.author: ghogen
+abstract:
+  description: Bu sayfa, Visual Basic kullanıcıları için Visual Studio öğrenmek için başlangıç öğreticileri bağlantılar içerir. Tam Visual Studio belgeleri için bkz. <a href="/visualstudio/ide/">Visual Studio</a>. Visual Basic dili belgeleri için bkz. <a href=/dotnet/visual-basic>Visual Basic Kılavuzu</a>.
 sections:
 - title: Kullanmaya başlayın
   items:
@@ -76,7 +78,7 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: Yazma ve kod düzenleme
+      title: Kodu yazma ve düzenleme
     - href: ../../ide/compiling-and-building-in-visual-studio.md
       html: <p></p>
       image:
@@ -86,7 +88,7 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: Kodunuzdaki hataları ayıklamanıza
+      title: Kodunuzda hata ayıklama
     - href: ../../test/getting-started-with-unit-testing.md
       html: <p></p>
       image:
@@ -96,4 +98,4 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_generic-database.svg
-      title: Verilere erişin
+      title: Verilere erişme

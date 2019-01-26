@@ -1,32 +1,32 @@
 ---
-title: 'Öğretici: Kullanmaya başlama C# konsol uygulamaları'
+title: 'Öğretici: Basit bir C# konsol uygulaması'
 description: Visual Studio'da, adım adım C# konsol uygulaması oluşturmayı öğrenin.
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 71a465b80f56cba56d0c20d3484765ca1837b167
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936963"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Öğretici: Visual Studio'da C# konsol uygulaması ile çalışmaya başlama
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Öğretici: Basit bir C# Visual Studio'da konsol uygulaması
 
-Bu öğreticide C# konsol uygulaması oluşturun ve bazı özelliklerini Visual Studio kullanacaksınız [Visual Studio tümleşik geliştirme ortamı (IDE)](../visual-studio-ide.md) bunu yaparken.
+Bu öğreticide için C#, bir konsol uygulaması oluşturun ve bunu yaparken bazı Visual Studio tümleşik geliştirme ortamı (IDE) özelliklerini Visual Studio kullanacaksınız.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -42,7 +42,23 @@ Başlamak için oluşturacağız bir C# uygulama projesi. Proje türü bile herh
 
 ### <a name="add-a-workgroup-optional"></a>(İsteğe bağlı) bir çalışma grubu Ekle
 
-Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsiniz, ekleyerek **.NET Core çoklu platform geliştirme** iş yükü. Bunu yapmak nasıl öğrenmek için bkz. "[bir iş yükü nedir ve biri nasıl eklerim?](#workload)" SSS bölümü.
+Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsiniz, ekleyerek **.NET Core çoklu platform geliştirme** iş yükü. İşte nasıl.
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>1. seçenek: Yeni Proje iletişim kutusunu kullanın
+
+1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
+
+   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantıyı seçin](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
+
+   ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>2. seçenek: Araçlar menü çubuğunu kullanın
+
+1. / İptal **yeni proje** iletişim kutusu ve üst menü çubuğundan seçin **Araçları** > **araçları ve özellikleri Al**.
+
+1. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
 ## <a name="create-the-app"></a>Uygulama oluşturma
 
@@ -69,7 +85,7 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
    ![Araç çubuğunda uygulamayı çalıştırmak için hesap makinesi düğmesini seçin](./media/csharp-console-calculator-button.png)
 
-   42 + 119 toplamını gösteren bir konsol penceresi açılır.  
+   42 + 119 toplamını gösteren bir konsol penceresi açılır.
 
 1. Artık değiştirmeyi deneyin `int c = a + b;` gibi farklı bir işleç kullanarak kod satırının `-` çıkarma için `*` çarpma için veya */* bölme.
 
@@ -188,7 +204,10 @@ Temel hesaplayıcı uygulamamız iyileştirdik, ancak bu henüz failsafes yerde 
 
 Örneğin, bir sayı sıfıra bölme veya uygulama bir sayısal karakter beklerken bir alfa karakter girin denerseniz (veya tersi), Uygulama çalışmayı durduruyor ve bir hata döndürür.
 
-Şimdi bazı ortak kullanıcı giriş hatalarını yol, bunları bulun [hata ayıklayıcı](../../debugger/debugger-feature-tour.md), kodda bunları da onarabilir.
+Şimdi bazı ortak kullanıcı giriş hatalarını yol, bunları hata ayıklayıcıda bulun ve bunları kodda düzeltin.
+
+>[!TIP]
+>Hata ayıklayıcı ve nasıl çalıştığı hakkında daha fazla bilgi için bkz. [Visual Studio hata ayıklayıcıya ilk bakış](../../debugger/debugger-feature-tour.md) sayfası.
 
 ### <a name="fix-the-divide-by-zero-error"></a>"Sıfıra" hatayı düzeltin
 
@@ -232,7 +251,7 @@ Bu hatayı düzeltmek için size daha önce girdiğiniz kodun düzenlemelisiniz.
 
 #### <a name="revise-the-code"></a>Kodu gözden geçirin
 
-Dayanan yerine `program` tüm kod işlemek için sınıf, biz uygulamamızı iki sınıflara bölün: `calculator` ve `program`.  
+Dayanan yerine `program` tüm kod işlemek için sınıf, biz uygulamamızı iki sınıflara bölün: `calculator` ve `program`.
 
 `calculator` Sınıfı hesaplama iş toplu işlemek ve `program` sınıfı, kullanıcı arabirimi ve hata yakalama iş işleyecek.
 
@@ -506,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>Hızlı yanıtlar hakkında SSS
-
-İşte bazı temel kavramları vurgulamak için hızlı bir SSS. SSS, ayrıca öğreticide yordamları izleyin, gelen soruların yanıtlarını içerir.
-
-### <a name="what-is-c"></a>C# nedir?
-
-C# .NET Core ve .NET Framework üzerinde çalışan bir tür açısından güvenli bir programlama dilidir. C# ile Windows uygulamaları, istemci-sunucu uygulamaları, veritabanı uygulamaları, XML Web Hizmetleri, dağıtılmış bileşenler ve daha fazla oluşturabilirsiniz.
-
-### <a name="what-is-visual-studio"></a>Visual Studio nedir?
-
-Visual Studio geliştiricileri için üretkenlik aracından oluşan bir tümleşik geliştirme paketidir. Bunu, programları ve uygulamaları oluşturmak için kullanabileceğiniz bir program olarak düşünün.
-
-### <a name="what-is-a-console-app"></a>Bir konsol uygulaması nedir?
-
-Bir konsol uygulaması girdi alır ve çıktı olarak da bilinir bir komut satırı penceresinde görüntüler bir konsol.
-
-### <a name="what-is-net-core"></a>.NET Core nedir?
-
-.NET core .NET Framework'ün gelişime sonraki adımdır. Burada .NET Framework programlama dilleri arasında kod paylaşma izin .NET Core platformlar arasında kod paylaşma olanağı ekler. Daha da iyi açık kaynak olan.
-
-(.NET Framework ve .NET Core önceden oluşturulmuş işlev kitaplıkları içerir. Ayrıca, kodunuzu çalıştırmak için bir sanal makine olarak davranan bir ortak dil çalışma zamanı (CLR) içerirler.)
-
-### <a id="workload"></a>Bir iş yükü nedir ve nasıl bir ekleyebilirim?
-
-Visual Studio'da bir iş yükü programlama seçenekleri ve Visual Studio yüklemenizi özelleştirmek için kullanabileceğiniz şablonları kümesini temsil eder. Bir iş yükü, yalnızca programlama dili ve tercih ettiğiniz platform için ihtiyacınız olan araçları yükler. Yükleneceği açıklanmıştır.
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>1. seçenek: Yeni Proje iletişim kutusunu kullanın
-
-1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
-
-   ![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantıyı seçin](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
-
-   ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>2. seçenek: Araçlar menü çubuğunu kullanın
-
-1. / İptal **yeni proje** iletişim kutusu ve üst menü çubuğundan seçin **Araçları** > **araçları ve özellikleri Al**.
-
-1. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
-
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Bu öğreticiyi tamamlamak Tebrikler! Daha da fazla bilgi edinmek için şu öğretici ile devam edin.
@@ -557,4 +534,5 @@ Bu öğreticiyi tamamlamak Tebrikler! Daha da fazla bilgi edinmek için şu öğ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Video dersi yeni başlayanlar için C# temel](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Video Dersi: C#Yeni başlayanlar için temel](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Hata ayıklamayı öğrenin C# Visual Studio'daki kod](tutorial-debugger.md)

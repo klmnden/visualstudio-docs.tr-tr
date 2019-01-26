@@ -1,5 +1,5 @@
 ---
-title: 'CA1709: Tanımlayıcılar doğru yazılmalıdır'
+title: 'CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cc8ee2f406c858bc06427327a453542fbaed2a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881733"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037545"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Tanımlayıcılar doğru yazılmalıdır
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır
 
 |||
 |-|-|

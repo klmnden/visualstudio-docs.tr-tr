@@ -3,7 +3,7 @@ title: Windows Docker istemcisi hatalarında sorun giderme | Microsoft Docs
 description: Visual Studio oluşturma ve Visual Studio 2017'yi kullanarak web uygulamaları Windows üzerindeki Docker dağıtma kullanırken karşılaştığınız sorunları giderin.
 services: azure-container-service
 author: devinb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.service: multiple
@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: devinb
-ms.openlocfilehash: 0551c67ee86f0d63655c584905a5a6280f450901
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a96f9792fa4922a626d4740625d361751242e39b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972647"
 ---
 # <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Docker ile Visual Studio 2017 geliştirme sorunlarını giderme
 

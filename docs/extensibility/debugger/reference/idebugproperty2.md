@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a74a32a711e26177acb0a50e895ef0b88c82de94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdd5b114e5b34b7c51b210f33d70d831f6188b06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921953"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Bu arabirim, yığın çerçeve özelliği, bir program belge özelliği veya diğer bir özelliği temsil eder. Genellikle bir ifade değerlendirme sonucu özelliğidir.  

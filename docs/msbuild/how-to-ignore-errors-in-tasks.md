@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Görevlerdeki hataları yoksayma | Microsoft Docs'
+title: 'Nasıl yapılır: Görevlerdeki hataları yoksayma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f271c2d6dae3857818505829cf2da8a109613e9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a6d56c1b4e22250f56592e45d56c433c7ad78065
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024805"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>Nasıl Yapılır: Görevlerdeki hataları yoksayma
+# <a name="how-to-ignore-errors-in-tasks"></a>Nasıl yapılır: Görevlerdeki hataları yoksayma
 Bazen bir derleme hatalarının bazı görevler dayanıklı olmasını istersiniz. Kritik olmayan bu görev başarısız olursa yine de gerekli çıktı üretebilir çünkü devam etmek için yapı istediğinizde. Örneğin, bir proje kullanıyorsa bir `SendMail` her bileşenin oluşturulduktan sonra bir e-posta iletisi göndermek için görev posta sunucuları kullanılamaz ve durum iletilerinin gönderilemez bile tamamlanana kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz. Veya Ara dosyaları derleme sırasında genellikle silinir, örneğin, bu dosyaları silinemez, tamamlanana kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz.  
   
 ## <a name="use-the-continueonerror-attribute"></a>ContinueOnError özniteliği kullanın  

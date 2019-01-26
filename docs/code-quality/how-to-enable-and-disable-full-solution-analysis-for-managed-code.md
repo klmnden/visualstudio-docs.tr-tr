@@ -1,23 +1,23 @@
 ---
-title: 'Nasıl Yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme'
+title: 'Nasıl yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme'
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffda04828789a591c0e6dca35ef391fe6b8556d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937890"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035480"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Nasıl Yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme
 
 *Tam çözüm analizini* Kod Analizi sorunlarını yalnızca açık görseldeki görmenize olanak sağlayan bir Visual Studio özellik C# veya Visual Basic dosyaları çözümünüzdeki veya kod dosyalarında kapatılır. Varsayılan olarak, tam çözüm analizini olan *etkin* Visual Basic ve *devre dışı* görsel için C#.
 

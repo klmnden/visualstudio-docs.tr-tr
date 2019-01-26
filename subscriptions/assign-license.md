@@ -2,19 +2,19 @@
 title: Visual Studio abonelikleri için lisans atama | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Yöneticiler abonelere lisansları nasıl atayabilirsiniz öğrenin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970129"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalında lisansları atama
 
@@ -46,7 +46,7 @@ Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual 
 
     Kendi başvuru notları aboneliğe eklemek istiyorsanız, bu nedenle, bunu yapabilirsiniz **Başvurusu Ekle** bölümü.
    > [!div class="mx-imgBorder"]
-   > ![Her abonelik için kendi başvuru Not Ekle](media/add-subscriber-reference-notes.png) 
+   > ![Her abonelik için kendi başvuru Not Ekle](media/add-subscriber-reference-notes.png)
 
     Zaman seçim seçenekleri işiniz bittiğinde ve abone için veri girme seçin **Ekle** kısmındaki **abone ekleme** çıkış.
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual 
 
 4. Abone ekledikten sonra yeni abone ile daha fazla yönerge için otomatik olarak atama e-posta gönderilir. Abone seçerek ve tıklayarak dilediğiniz zaman yeniden atama e-posta gönderebilir **Gönder** üst menü düğmesi.
    > [!div class="mx-imgBorder"]
-   > ![İstediğiniz zaman etkinleştirme e-posta bir veya birden çok kullanıcıya yeniden gönder](media/resend-subscriber-activation-emails.png) 
+   > ![İstediğiniz zaman etkinleştirme e-posta bir veya birden çok kullanıcıya yeniden gönder](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Toplu atama
 
@@ -65,7 +65,7 @@ Abonelik avantajları erişebilmesi için yeni bir kullanıcı için bir Visual 
 2. Toplu atama aboneyi karşıya yükleme için Microsoft Excel şablonu kullanır. Birden çok aboneyi karşıya yükleme iletişim kutusuna tıklayın **indirme** şablonu indirilemedi.
    > [!div class="mx-imgBorder"]
    > ![Excel şablonunu birden çok aboneyi karşıya yükle](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Her zaman bu şablonun en son sürümünü indirin. Eski bir sürümünü kullanıyorsanız, toplu karşıya yükleme işleminiz başarısız olabilir.
 

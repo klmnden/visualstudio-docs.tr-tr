@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d7c7d3710d7bca7fa76b30b7b2d0e97a0dfd50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23214e9a0af3ca506677e5f67b4460fa6d9d8414
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843495"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969005"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simgeler ve Simge Etiketleri
 Derlenmiş bir program hata ayıklama bilgilerini program veritabanı (.pdb) dosyası hata ayıklama arabirimi erişim (DIA) SDK'sı API'leri kullanılarak erişilebilen simgeler olarak depolanır. Tüm sembolleri bir [Idiasymbol::get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) ve [Idiasymbol::get_symındexıd](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) özelliği. `symTag` Özelliği tarafından tanımlanan sembol türü gösterir [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) sabit listesi. `symIndexId` Özelliği bir `DWORD` içeren bir sembolü her örneği için benzersiz tanımlayıcı değeri.  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b7ef894d249c22cf7b97e23568cd607580affb2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922018"
 ---
 # <a name="visualizer-security-considerations"></a>Görselleştirici Güvenlik Konuları
 Görselleştirici yazma, olası güvenlik tehditlerini içerir. Bilinen hiçbir yararlanma şu anda bu olası tehditleri var, ancak geliştiriciler bunları kullanan ve gelecek saldırılara karşı koruma sağlamak için burada açıklandığı gibi uygun güvenlik önlemleri alın.  

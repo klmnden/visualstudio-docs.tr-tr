@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cb11810a8e87dfe2a21538b5c69c027e84f4f4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a92c6356a5d6f382e97abb745412134d22bfa97c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920754"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Gözden geçirme, açıklama ve kodunuzu test
 Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını değiştirmeyen bir nottur. Ne yaptığını anlamak için kodunuzu okuyan kişi için kolaylaştırır. Kodunuza yorumlar eklemek, öğrenmek için iyi bir alışkanlıktır. Visual C# içinde iki İleri eğik çizgi (/ /) satırı bir açıklama olarak işaretler. Visual Basic'te, tek tırnak işareti ('), bir satırı yorum olarak işaretlemek için kullanılır. Bir açıklama ekledikten sonra programınızı test edin. Çalıştırın ve sık yakalayın ve erken önce kod daha karmaşık sorunları düzeltmek için projeler üzerinde çalıştığınız sırada kodunuzu test etmek için iyi bir uygulamadır. Bu adlandırılır *yinelemeli sınama*.
