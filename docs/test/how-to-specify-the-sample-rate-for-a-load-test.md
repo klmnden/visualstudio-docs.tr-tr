@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Bir yük testi çalışma ayarı için örnek hızı belirtme'
+title: 'Nasıl yapılır: Bir yük testi çalışma ayarı için örnek hızı belirtme'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 896975330db08a0121aedd4bf3bea38f660e17fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e637f7692f545ed3ef9e92cae219e9bbbb3d8ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976030"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Nasıl Yapılır: Yük testi çalışma ayarı için örnek hızı belirtme
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Nasıl yapılır: Yük testi çalışma ayarı için örnek hızı belirtme
 
 İle yükleme testinizi oluşturduktan sonra **Yeni Yük Testi Sihirbazı**, kullanabileceğiniz **Yük Testi Düzenleyicisi** test ihtiyaçlarınızı ve hedeflerinizi karşılayacak şekilde özelliklerini değiştirmek için.
 

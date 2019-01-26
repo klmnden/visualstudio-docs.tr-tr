@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Derleme olayları belirtme (C#)'
+title: 'Nasıl yapılır: Derleme olayları belirtme (C#)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc28312784ecf8ae403b8a7d94df074d57474b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975172"
 ---
-# <a name="how-to-specify-build-events-c"></a>Nasıl Yapılır: Derleme olayları belirtme (C#)
+# <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: Derleme olayları belirtme (C#)
 
 Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için derleme olaylarını kullanma. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütülür.
 

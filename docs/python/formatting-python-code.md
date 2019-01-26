@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49733b4a63ccffef64ca2fca3ba1f969eca2609b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012527"
 ---
 # <a name="format-python-code"></a>Python kodu biçimlendirme
 
@@ -44,8 +44,8 @@ Biçimlendirme seçenekleri varsayılan olarak ayarlanmış bir üst eşleştiri
 Örnek çeşitli seçenekleri için aşağıdaki tabloda verilmiştir:
 
 | Sınıf tanımları seçeneği | İşaretli | Temizlenmiş |
-| --- | --- | --- | 
-| **Tabanları listesi ile bir sınıf bildirimin adı arasındaki boşluk Ekle** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **Tabanları listesi ile bir sınıf bildirimin adı arasındaki boşluk Ekle** | `class X (object): pass` | `class X(object): pass` |
 | **Tabanları listesi parantezlerinin içine boşluk Ekle** | `class X( object ): pass` | `class X(object): pass` |
 | **Boş tabanları listesi parantezlerinin içine boşluk Ekle** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +53,7 @@ Biçimlendirme seçenekleri varsayılan olarak ayarlanmış bir üst eşleştiri
 
 | İşlev tanımları seçeneği | İşaretli | Temizlenmiş |
 | --- | --- | --- |
-| **Bir işlev bildiriminin adı ve parametre listesi arasına boşluk Ekle** | `def X (): pass` | `def X(): pass` | 
+| **Bir işlev bildiriminin adı ve parametre listesi arasına boşluk Ekle** | `def X (): pass` | `def X(): pass` |
 | **Parametre listesi parantezlerinin içine boşluk Ekle** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Boş parametre listesi parantezlerinin içine boşluk Ekle** | `def X( ): pass` | `def X(): pass` |
 | **Varsayılan parametre değerlerini '=' çevresinde boşluk Ekle** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

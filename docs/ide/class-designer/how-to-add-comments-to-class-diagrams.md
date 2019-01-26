@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarına açıklamalar ekleme'
+title: 'Nasıl yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarına açıklamalar ekleme'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0c485594b4010bab8d4089e8d42504beccf7a92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916380"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991573"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Nasıl Yapılır: Sınıf diyagramlarına açıklama ekleme
+# <a name="how-to-add-comments-to-class-diagrams"></a>Nasıl yapılır: Sınıf diyagramlarına açıklama ekleme
 
 Açıklama şekilleri sınıf diyagramlarına açıklamalar ekleme için kullanabilirsiniz. Açıklama Şekli bir özelliği olan **metin**, metin içine yazabileceğiniz. Açıklama şekilleri diyagram yüzeyinde yalnızca alan ve kod mevcut.
 

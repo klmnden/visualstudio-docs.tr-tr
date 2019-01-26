@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f728551f97c0b402cb4a9f8294a5401759cb338c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940420"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019365"
 ---
 # <a name="windows-view"></a>Pencereler Görünümü
 İlk kez Spy ++ açtığınızda, Windows görünüm sistemdeki tüm windows ve denetimleri ağacını görüntüler. Pencere tanıtıcısı ve sınıf adı gösterilir. Geçerli masaüstü pencere ağacının en üstünde değil. Diğer tüm windows masaüstünün alt öğesi olan ve standart pencere hiyerarşisi göre listelenir. Eşdüzey pencerelerin ebeveynleri altında girintili expansible listelerde görünür.  
@@ -32,10 +32,10 @@ Spy ++ Windows görüntüle
  Windows görünümü odağa sahip olduğunda, Bulucu Aracı'nda kullanabileceğiniz [pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md) Sisteminizde hiçbir penceresini açık bilgilerini görüntülemek için.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Bulucu aracını kullanma](../debugger/how-to-use-the-finder-tool.md)  
+ [Nasıl yapılır: Bulucu Aracını Kullanma](../debugger/how-to-use-the-finder-tool.md)  
  Bu aracı windows özellikleri ve iletileri için nasıl tarar gösterir.  
   
- [Nasıl yapılır: Windows görünümünde pencere arama](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ [Nasıl yapılır: Pencereler Görünümünde Pencere Arama](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  Windows görünümünde belirli bir pencere Bul açıklanmaktadır.  
   
  [Nasıl yapılır: Pencere özelliklerini görüntüleme](../debugger/how-to-display-window-properties.md) m  

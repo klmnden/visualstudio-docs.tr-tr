@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0154972398656c3ebd1caf8cab112f193c02fd62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bc7895248e8ba201debf4d5020de9cef6b0a836
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014633"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Veri kaynağında bulunan çeşitli hata ayıklama akışları numaralandırır.  

@@ -1,22 +1,22 @@
 ---
-title: "Nasıl Yapılır: Mipmap'leri içeren dokuyu dışa aktarma"
+title: "Nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma"
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bddd2eec1da77ad6f128f6010e485b7efaf1866
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1eb303b29e3994f111aca7eb69740d44c9f3c010
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836643"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979718"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl Yapılır: Mipmap'leri içeren dokuyu dışarı aktarma
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: Mipmap'leri içeren dokuyu dışarı aktarma
 
 Görüntü içeriği ardışık düzeni, projenizin yapı evresinin parçası olarak bir kaynak görüntüden mipmap'leri oluşturabilirsiniz. Bazı efektler elde etmek için bazı durumlarda, her MIP düzeyinin görüntü içeriğini el ile belirtmeniz gerekir. Her MIP düzeyinin görüntü içeriğini el ile belirtmek ihtiyacınız kalmadığında, derleme zamanında mipmap oluşturma mipmap içeriğinin asla eşitleme dışı duruma sağlar. Çalışma zamanında mipmap'leri oluşturmanın performans maliyetini ortadan kaldırır.
 

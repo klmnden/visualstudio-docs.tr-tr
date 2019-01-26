@@ -16,15 +16,15 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df5a05b3ffe4a8ab05fb548a8ca41b6a61f747d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963495"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC (yüksek performanslı hesaplama) profili kümeleri
 
@@ -44,9 +44,9 @@ Bir HPC işlem düğümünde profili oluşturmak için aşağıdakileri yapmanı
 
 2. Ayrı bir komut istemlerinde aşağıdaki komutları yazın:
 
-    1. `clusrun /all /scheduler:` *% Baş ayıklaması FxPath %* `/q /norestart`
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:` *Baş düğüm %* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *% Baş ayıklaması ProfilerPath %* `/q /norestart`
 
@@ -54,7 +54,7 @@ Bir HPC işlem düğümünde profili oluşturmak için aşağıdakileri yapmanı
 |------------------| - |
 | *%HeadNode%* | Küme baş düğümü adı. |
 | *%FxPath%* | Yolu [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] yükleyici. Visual Studio yükleme medyasında yoludur: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Visual Studio yükleme medyasında yoludur: Tek başına Profiler\x64\vs_profiler.exe |
+| *%ProfilerPath%* | Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Visual Studio yükleme medyasında yoludur: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profil
 

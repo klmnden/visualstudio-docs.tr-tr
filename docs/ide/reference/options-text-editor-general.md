@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417804"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989750"
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
 
@@ -67,7 +67,7 @@ Bu onay kutusu seçildiğinde, projenin belirtilen kodlama kurallarını kişise
 
 Bu onay kutusu seçildiğinde, basabilirsiniz **Ctrl** ve fare tıklatın, bir öğenin üzerine gelin. Bunun yapılması seçilen öğenin açıklamasını alır. Ya da seçebilirsiniz **Alt** veya **Ctrl** + **Alt** gelen **değiştiricisi anahtar kullan** açılır.
 
-Seçin **tanımı Özet Görünümü'nde açın** Kod düzenleyicisinde, konumunuzu uzağa gitmeden öğe tanımının bir pencerede görüntülemek için onay kutusunu. 
+Seçin **tanımı Özet Görünümü'nde açın** Kod düzenleyicisinde, konumunuzu uzağa gitmeden öğe tanımının bir pencerede görüntülemek için onay kutusunu.
 
 ## <a name="display"></a>Ekran
 

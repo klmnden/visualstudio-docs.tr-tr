@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc8d0ccac452d82ed1a2f5fbce7c88fd82efc1d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983111"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Uzantılar klasörünün dışına yükleme
 
@@ -21,11 +21,11 @@ Visual Studio 2017 ve VSIX v3 ile başlayan (uzantı varlıklar uzantılar klas�
 
 * [INSTALLDİR] \MSBuild
 * [INSTALLDİR] \Xml\Schemas
-* [INSTALLDİR] \Common7\IDE\PublicAssemblies
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
 * [INSTALLDİR] \Licenses
 * [INSTALLDİR] \Common7\IDE\ReferenceAssemblies
-* [INSTALLDİR] \Common7\IDE\RemoteDebugger
-* [INSTALLDİR] \Common7\IDE\VC\VCTargets
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets
 
 >**Not:** VSIX biçimi VS yükleme klasör yapısını dışında yüklemeye izin vermiyor.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57fc5075ee375ed73b448e8a90e8bb2c3e22e7bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970818"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Kaynak Çakışmaları Görünümü - Çakışma Verileri
 Çekişme olayları kaynağı olan kaynaklar için Çekişme verisi kaynak çakışması görünümü listeler. Bir iş parçacığında bir işlev kaynağa erişim için başka bir iş parçacığı bir işlevde kaynağına özel erişim aldığından beklenecek zorlanır Çekişme olayı oluşur. Her kaynak Çekişme olayıyla sonuçlandı işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümüdür.  

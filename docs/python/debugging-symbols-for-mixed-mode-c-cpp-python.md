@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010161"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Hata ayıklama sembolleri için Python yorumlayıcılarını yükleme
 
@@ -51,7 +51,7 @@ Sembolleri ayrı olarak yüklediyseniz, Visual Studio bunları haberdar olmak i�
 
 1. Seçin **Araçları** > **seçenekleri** menü gidin **hata ayıklama** > **sembolleri**.
 
-1. Seçin **Ekle** düğmesi (aşağıda açıklanan) araç çubuğunda, genişletilmiş burada yüklenen semboller klasörü girin (nerede olduğu *python.pdb* gibi bulunan *c:\python34\Symbols* aşağıda gösterilmiştir) seçip **Tamam**. 
+1. Seçin **Ekle** düğmesi (aşağıda açıklanan) araç çubuğunda, genişletilmiş burada yüklenen semboller klasörü girin (nerede olduğu *python.pdb* gibi bulunan *c:\python34\Symbols* aşağıda gösterilmiştir) seçip **Tamam**.
 
     ![Karışık mod hata ayıklayıcı seçenekleri simgeleri](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Sembolleri ayrı olarak yüklediyseniz, Visual Studio bunları haberdar olmak i�
 
 ## <a name="official-distributions"></a>Resmi dağıtımları
 
-| Python sürümü | İndirmeler | 
-| --- | --- | 
-| 3.5 ve sonraki sürümler | Python yükleyici aracılığıyla sembolleri yükleyin. | 
+| Python sürümü | İndirmeler |
+| --- | --- |
+| 3.5 ve sonraki sürümler | Python yükleyici aracılığıyla sembolleri yükleyin. |
 | 3.4.4 | [32-bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

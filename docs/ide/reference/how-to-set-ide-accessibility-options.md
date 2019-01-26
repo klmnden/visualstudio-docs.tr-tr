@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: IDE erişilebilirlik seçeneklerini ayarlama'
+title: 'Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama'
 description: Visual Studio'da tümleşik geliştirme ortamı (IDE) kullanmak herkes için daha kolay hale getirecek erişilebilirlik seçeneklerini ayarlama görme zorluğu olan kişiler ve zorluğu yazılacak olan kişiler de dahil olmak üzere bilgi edinin.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ac057edf27661403185fb31e5ca9364c629bd38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906780"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982422"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Nasıl Yapılır: IDE erişilebilirlik seçeneklerini ayarlama
+# <a name="how-to-set-ide-accessibility-options"></a>Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama
 
 > [!TIP]
 > Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.

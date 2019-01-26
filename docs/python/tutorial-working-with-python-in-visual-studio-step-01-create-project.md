@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb1c2d460e0b70621924df4d7c32e478aa8a2e86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003163"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Öğretici: Visual Studio'da Python ile çalışma
 
@@ -61,7 +61,7 @@ Bu öğreticide tek ve boş bir kod dosyasını içeren basit bir projeyle başl
 
     (1) kalın olarak vurgulanmış olduğu içinde verdiğiniz ad kullanarak projenize **yeni proje** iletişim. Disk üzerinde bu proje tarafından temsil edilen bir *.pyproj* proje klasörünüzdeki dosya.
 
-    (2 üst düzey) bir *çözüm*, varsayılan olarak, projenizin aynı ada sahip. Tarafından temsil edilen bir çözüm, bir *.sln* dosya diskte, bir veya daha fazla ilgili proje için bir kapsayıcıdır. Örneğin, Python uygulamanız için C++ uzantısı yazıyorsanız, C++ proje aynı çözüm içinde bulunan. Çözüm projeleri için ayrılmış test programlar ile birlikte bir web hizmeti için bir proje de içerebilir. 
+    (2 üst düzey) bir *çözüm*, varsayılan olarak, projenizin aynı ada sahip. Tarafından temsil edilen bir çözüm, bir *.sln* dosya diskte, bir veya daha fazla ilgili proje için bir kapsayıcıdır. Örneğin, Python uygulamanız için C++ uzantısı yazıyorsanız, C++ proje aynı çözüm içinde bulunan. Çözüm projeleri için ayrılmış test programlar ile birlikte bir web hizmeti için bir proje de içerebilir.
 
     (3) altında projenizin kaynak dosyalarına bakın, bu durumda tek bir *.py* dosya. Bir dosya seçmek özelliklerini görüntüler **özellikleri** penceresi. Bir dosyayı çift bu dosya için uygun yolu açılır.
 

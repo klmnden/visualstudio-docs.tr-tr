@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b12ee149fbf092d16b53a79419969e8c8a96ea51
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997864"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>3. Adım: Etkileşimli REPL penceresini kullanma
 
@@ -74,7 +74,7 @@ Visual Studio **etkileşimli** penceresi Python için normal düzenleme-oluştur
     ![Etkileşimli pencerede önceki bir deyim düzenleme](media/vs-getting-started-python-16-interactive6.png)
 
 1. En iyi gibi bir değer bulana kadar farklı adım ayarları ile denemeler için işlemi tekrarlayın. Ayrıca wave aralığı, örneğin, uzatma tarafından tekrar yapabileceğiniz `range(0, 1800, 12)`.
- 
+
 1. Yazılmış kod memnun olduğunuzda **etkileşimli** penceresinde, sağ tıklatın ve seçin seçin **kopyalama kod** (**Ctrl** + **Shift**+**C**) ve ardından düzenleyiciye yapıştırın. Bu özelliği, Visual Studio'nun herhangi bir çıktı otomatik olarak atlar nasıl fark yanı sıra `>>>` ve `...` ister. Örneğin, kullanarak aşağıdaki resimde gösterilmektedir **kopyalama kod** komut istemleri ve çıkış içeren Seçimi:
 
     ![Etkileşimli pencere kopyalama kod komut istemleri ve çıkış seçimi](media/vs-getting-started-python-17-interactive7.png)

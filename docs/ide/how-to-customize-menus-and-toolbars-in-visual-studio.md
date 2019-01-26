@@ -25,17 +25,17 @@ helpviewer_keywords:
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b22309f75e9ffd8a134af1d5ddafacb6d060f100
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b0b8d87aa00523dee2cc3d4d89b490e86fc0cae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940407"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993955"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl Yapılır: Menüleri ve Visual Studio araç çubuklarını özelleştirme
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl yapılır: Menüleri ve Visual Studio araç çubuklarını özelleştirme
 
 Visual Studio yalnızca ekleyerek ve araç çubuklarını ve menü çubuğundaki menüleri kaldırma, aynı zamanda ekleyerek ve herhangi bir araç veya menü komutları kaldırma özelleştirebilirsiniz.
 

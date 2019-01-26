@@ -7,15 +7,15 @@ helpviewer_keywords:
 - editorconfig, supporting in a language service
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3061f1a2efdf05a775f563311ccfbb4c48c49bc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 047545f3b2ab3c08b84fbb4af95a46c44655f1cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830897"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981313"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Dil hizmetiniz için Editorconfig'i destekleme
 
@@ -29,7 +29,7 @@ Genel bir değiştirerek EditorConfig dosyaları desteklemek için bir dil hizme
 
 Dile özgü seçenekleri | Bağlamsal seçenekleri
 -------|--------
-Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|! textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>! textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
+Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|!textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>!textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
 
 ## <a name="indent-size"></a>Girinti boyutu
 

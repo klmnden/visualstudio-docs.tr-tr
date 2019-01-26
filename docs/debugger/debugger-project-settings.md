@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53d03011b779265f7049bbe50317b31daf064d41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865880"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997669"
 ---
 # <a name="debugger-project-settings"></a>Hata Ayıklayıcı Proje Ayarları
 Belirli hata ayıklama proje ayarları da etkiler. Bu ayarlar, hata ayıklayıcı, program ve program için oluşturulan hata ayıklama bilgisinin türünü başlatmak için kullanılan komut satırı bağımsız değişkenlerini ve komut bakan hangi dizinleri gibi şeyler belirler. Bu ayarları değiştirebilirsiniz **özellik sayfaları** iletişim kutusu.  
@@ -29,10 +29,10 @@ Belirli hata ayıklama proje ayarları da etkiler. Bu ayarlar, hata ayıklayıc�
  Bu bölümde, hangi seçenekleri mevcuttur ve bunların nasıl ayarlanacağını açıklar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme](../debugger/how-to-specify-debugger-settings.md)  
+ [Nasıl yapılır: Hata Ayıklayıcısı Ayarlarını Belirtme](../debugger/how-to-specify-debugger-settings.md)  
  Hata ayıklayıcı ayarlarında açıklar **seçenekleri** iletişim kutusu.  
   
- [Nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Nasıl yapılır: Hata Ayıklama ve Dağıtım Yapılandırmalarını Ayarlama](../debugger/how-to-set-debug-and-release-configurations.md)  
  Açıklar **hata ayıklama** ve **yayın** ayarları ve bunlar arasında geçiş yapma.  
   
  [C++ Hata Ayıklama Yapılandırması Proje Ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)  

@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986849"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013073"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kullanabilirsiniz (*CVCollectionCmd.exe*) bunları Visual Studio eşzamanlılık görselleştiricisi içinde görüntüleyebilmek komut satırından izlemeleri toplamak için. Araçlar, Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.  
@@ -77,14 +77,14 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
 | Ad | İşaretleyici sağlayıcı açıklamasını belirtir. | Bir dize. |
 | Kategoriler | İşaretleyici sağlayıcı için toplanan kategorileri belirtir. | Virgülle ayrılmış bir dize sayı veya sayı aralığı. |
 | IsEnabled | İşaretleyici sağlayıcısını koleksiyon için etkin olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
-| FilterConfig | Koleksiyondan filtrelenir ETW olayları yapılandırma seçeneklerinin listesini belirtir. | Bu öğeleri içerebilir:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO |
+| FilterConfig | Koleksiyondan filtrelenir ETW olayları yapılandırma seçeneklerinin listesini belirtir. | Bu öğeleri içerebilir:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-   CollectFileIO |
 | CollectClrEvents | CLR olayları toplanır olup olmadığını belirleyen bir değer ayarlayın. | -True<br />-Yanlış |
-| ClrCollectionOptions | Yerel uygulamalar için CLR olayları toplamak etkinleştirilip etkinleştirilmeyeceğini ve NGEN azaltma olaylarını toplamak etkinleştirilip etkinleştirilmeyeceğini belirtir. | Biri, her ikisi de veya hiçbiri bu değerleri içerebilir:<br /><br /> -CollectForNative<br />-DisableNGenRundown |
+| ClrCollectionOptions | Yerel uygulamalar için CLR olayları toplamak etkinleştirilip etkinleştirilmeyeceğini ve NGEN azaltma olaylarını toplamak etkinleştirilip etkinleştirilmeyeceğini belirtir. | Biri, her ikisi de veya hiçbiri bu değerleri içerebilir:<br /><br /> -CollectForNative<br />-   DisableNGenRundown |
 | CollectSampleEvents | Örnek olaylar toplanan olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
 | CollectGpuEvents | DX tarafından oluşturulan olaylar toplanan olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
 | CollectFileIO | Dosya g/ç olayları toplanır olup olmadığını belirleyen bir değer ayarlar. | -True<br />-Yanlış |
-| UserBufferSettings | Kullanıcı arabelleği ayarlarını parametrelerin listesini belirtir. | Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
-| KernelBufferSettings | Çekirdek arabelleği ayarlarını parametrelerin listesini belirtir. | Bu öğeleri içermelidir:<br /><br /> -BufferFlushTimer<br />-BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
+| UserBufferSettings | Kullanıcı arabelleği ayarlarını parametrelerin listesini belirtir. | Bu öğeleri içermelidir:<br /><br /> -   BufferFlushTimer<br />-   BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
+| KernelBufferSettings | Çekirdek arabelleği ayarlarını parametrelerin listesini belirtir. | Bu öğeleri içermelidir:<br /><br /> -   BufferFlushTimer<br />-   BufferSize<br />-MinimumBuffers<br />-MaximumBuffers |
 | BufferFlushTimer | Temizleme Zamanlayıcısı ETW arabellek belirtir. | Pozitif bir tamsayı. |
 | BufferSize | İçin kilobayt cinsinden, her olay izleme oturumu arabellek atanan bellek miktarı. | 1024 numarası 0. |
 | MinimumBuffers | Olay izleme oturumu arabellek havuzu için ayrılan arabellekler en küçük sayısı. | Pozitif bir tamsayı en az iki kez mantıksal çekirdek sayısı. |

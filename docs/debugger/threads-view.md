@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616a426192b15353b2d30a8f910619f5333cb5fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48babdee829eec50a8b8582e5b48e78b691f1073
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913523"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979055"
 ---
 # <a name="threads-view"></a>İş Parçacıkları Görünümü
 İş Parçacıkları görünümü windows sisteminize ile ilişkili tüm iş parçacıkları düz bir listesi bulunmaktadır. Her iş parçacığı için modül adı ve iş parçacığı kimliği gösterilir. İşlemler dahil edilmez, ancak seçili bir iş parçacığı sahip olan işlemi kolayca bulabilirsiniz.  

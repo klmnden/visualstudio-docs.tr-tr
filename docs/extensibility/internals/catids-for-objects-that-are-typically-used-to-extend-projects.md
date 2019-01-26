@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2b39faae51029eb962a377a5c658af6336bcdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fbfc0856e322e1b05ba6ffeffef691cfdd81f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002736"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Projeleri için genellikle kullanılan nesnelerin Catıdlerini
 Aşağıdaki tabloda genişletmek için kullanılan Catıdlerini `Project` ve `ProjectItem` Otomasyon nesneleri için [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ve [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projeleri. Bu Catıdlerini tanımlanan *VSLangProj.olb*.  

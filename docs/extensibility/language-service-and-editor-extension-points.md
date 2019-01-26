@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abc4824a3e90250401d720aefedda80189419c85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010057"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil hizmeti ve düzenleyici uzantı noktaları
 Düzenleyici, çoğu dil hizmeti özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına genişletebilirsiniz uzantı noktaları sağlar. Ana uzantı noktası kategorileri şunlardır:  
@@ -423,7 +423,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   
@@ -431,7 +431,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   15. Bit eşlem  
   
-  16. DIB  
+  16. Dib  
   
   17. MetafilePicture  
   
@@ -479,7 +479,7 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 internal sealed class TestOption : EditorOptionDefinition<bool>  
 ```  
   
-## <a name="extend-intellisense"></a>IntelliSense genişletme  
+## <a name="extend-intellisense"></a>Extend IntelliSense  
  IntelliSense, yapılandırılmış metin hakkında bilgi sağlayan bir grup için genel bir terim ve deyim tamamlama, için ' dir. Bu özellikler, deyim tamamlama, imza Yardımı, hızlı bilgi ve ampuller içerir. Deyim tamamlama, kullanıcıların bir dil anahtar sözcüğü ya da üye adını doğru şekilde yazın yardımcı olur. İmza Yardımı, imza veya kullanıcının yalnızca yazdığını yöntem imzaları görüntüler. Fareyi üzerine getirildiğinde bir tür veya üye adı için tam imza hızlı bilgi görüntüler. Ampul belirli bağlamlarda, örneğin, belirli tanımlayıcıları için ek eylemler bir oluşum yeniden adlandırıldı sonra bir değişkenin tüm örnekleri yeniden adlandırma sağlar.  
   
  Bir IntelliSense özelliğini tasarımını kadar tüm durumlarda aynıdır:  

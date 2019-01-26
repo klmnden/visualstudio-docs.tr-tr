@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Belirli işlevlere izlemeyi sınırlama | Microsoft Docs'
+title: 'Nasıl yapılır: Belirli işlevlere izlemeyi sınırlama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0135ea7d3a99f54b8bc61fb77c5b1657992033c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf74936fcd4f8529692d6709cdb9c8600f273025
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994348"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Nasıl Yapılır: İzlemeyi belirli araçlarla sınırlama
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Nasıl yapılır: İzlemeyi belirli araçlarla sınırlama
 Bir veya daha fazla işlev için izleme ve veri toplama seçeneklerini ayarlayarak sınırlayabilirsiniz **Gelişmiş** sayfasının **performans oturumu** veya hedef ikili özellik sayfaları:  
   
 - Performans oturumu özelliği sayfasında işlevleri belirtirseniz, bu işlevler yalnızca oturumun tüm izleme eklenmiş ikili dosyalarda algılayıcılarla donatılmıştır.  

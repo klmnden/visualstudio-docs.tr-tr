@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3129fe384dc434f10024336a3e53864babcd5eb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d001e324352c566d71e66ae26d769cc8f3c2f644
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011530"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Sorgu Düzenleme Sorgu Kaydetme (Kaynak Denetimi VSPackage’ı)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Sorgu düzenleme sorgu kaydetme (QEQS) olayları düzenleyicileri yayınlayabilirsiniz. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Alıcı QEQS olayların olmasını kaynak denetimi saplama QEQS hizmet uygular. Bu olaylar, ardından şu anda etkin kaynak denetimi VSPackage'ı verilmiş. Etkin kaynak denetimi VSPackage'ı uygulayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve yöntemleri. Yöntemlerinin `IVsQueryEditQuerySave2` arabirimi genellikle ilk kez ve hemen bir belge kaydedilmeden önce bir belge düzenlenemez hemen önce çağrılır.  
   
-## <a name="queryeditquerysave-events"></a>QueryEditQuerySave olayları  
+## <a name="queryeditquerysave-events"></a>QueryEditQuerySave Events  
  Kaynak denetimi VSPackage'ı uygulayarak QEQS olayları işlemelidir `IVsQueryEditQuerySave2` arabirimi ve gerekli yöntemleri. VSPackage'ı en azından uygulamalıdır iki yöntem kısa bir açıklaması aşağıdadır. Gerçek uygulamalar kaynak denetimi modeli mantığına uygun olarak olmalıdır.  
   
 ### <a name="queryeditfiles-method"></a>QueryEditFiles yöntemi  

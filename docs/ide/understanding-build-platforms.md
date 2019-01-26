@@ -15,28 +15,28 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2a9dabddaddaa6d19bbf6e73e2ddcb0011c559ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012235"
 ---
 # <a name="understand-build-platforms"></a>Derleme platformlarını anlama
 
-Farklı sürümlerini farklı bir hedef platformlar için uygulanan çözüm ve proje özellikleri depolayabilirsiniz. Örneğin, bir x86 hedefleyen bir hata ayıklama yapılandırmasını oluşturabilirsiniz platform ve bir x64 hedefleyen bir hata ayıklama yapılandırmasını platform. Böylece kolayca derleme birden çok yapılandırmaları etkin platform hızlı bir şekilde değiştirebilirsiniz.
+Farklı bir hedef platformlara Uygula çözüm ve Proje Özellikleri'nün farklı sürümlerini depolayabilirsiniz. Örneğin, bir x86 hedefleyen bir hata ayıklama yapılandırması oluşturabilirsiniz platform ve bir x64 hedefleyen bir hata ayıklama yapılandırması platformu. Böylece bir kolayca birden fazla yapılandırma derleme ektin platform hızlı bir şekilde değiştirebilirsiniz.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
- [Nasıl yapılır: projeleri hedef platformlar yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md) belirli bir platformun hedeflemek için bir proje yapılandırma açıklanmaktadır.
+ [Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md) belirli platformları hedefleyen bir proje yapılandırma açıklanmaktadır.
 
- [Nasıl yapılır: projeleri hedef birden çok platform için yapılandırma](../ide/how-to-configure-projects-to-target-multiple-platforms.md) hedef birden çok platform için bir proje yapılandırma açıklanmaktadır.
+ [Nasıl yapılır: Projeleri hedef birden çok platform için yapılandırma](../ide/how-to-configure-projects-to-target-multiple-platforms.md) hedef birden çok platform için bir proje yapılandırma açıklanmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: bir uygulama oluşturma](../ide/walkthrough-building-an-application.md)
-- [Derleme ve projeler ve çözümler Visual Studio'da Temizle](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md)
+- [Derleme ve temizleme projeleri ve Visual Studio çözümleri](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)
