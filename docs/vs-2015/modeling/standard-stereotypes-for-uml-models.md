@@ -1,12 +1,9 @@
 ---
 title: UML modelleri için standart stereotipler | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770703"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML modelleri için standart stereotipler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +79,7 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
 |Stereotip|Uygulandığı öğe:|Açıklama|  
 |----------------|----------------|-------------|  
 |yardımcı|örneği|İlave bir mantık uygulayan başka bir sınıf genellikle destekleyen bir sınıf. Başka bir sınıfın «odak» stereotipi olabilir.|  
-|çağrısı|Bağımlılık|Sağlayıcı işlemlerini istemci sınıfı çağırır.|  
+| çağrısı|Bağımlılık|Sağlayıcı işlemlerini istemci sınıfı çağırır.|  
 |oluşturma|Bağımlılık|İstemci sınıfı, tedarikçi örneklerini oluşturur.|  
 |oluşturma|İleti|Gönderen, alıcı oluşturur.|  
 |oluşturma|Çalışma|Bu işlem bir oluşturucudur.|  
@@ -145,6 +142,3 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
  [Model öğelerine stereotipler ekleme](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [UML’yi genişletmek için profil tanımlama](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

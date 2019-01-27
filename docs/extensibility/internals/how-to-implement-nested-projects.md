@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: İç içe Projeler uygulama | Microsoft Docs'
+title: 'Nasıl yapılır: İç içe Projeler uygulama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945816"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037843"
 ---
-# <a name="how-to-implement-nested-projects"></a>Nasıl Yapılır: İç içe Projeler uygulama
+# <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: İç içe Projeler uygulama
 
 Bir iç içe proje türü oluşturduğunuzda, uygulanması gereken birkaç ek adım vardır. Bazı iç içe geçmiş (alt) projeleri için çözüm olan aynı sorumluluklarını ana proje alır. Ana proje, proje çözüm benzer bir kapsayıcıdır. Özellikle, çözüm ve iç içe projeler hiyerarşisini üst projeleri tarafından oluşturulması gereken çeşitli olaylar vardır. Bu olaylar için iç içe projeler oluşturmaya yönelik aşağıdaki işlem açıklanmaktadır.
 

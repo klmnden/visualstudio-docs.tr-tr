@@ -1,14 +1,9 @@
 ---
-title: 'Nasıl yapılır: paralel İzleme penceresini kullanma | Microsoft Docs'
-ms.custom: ''
+title: 'Nasıl yapılır: Paralel İzleme penceresini kullanma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43783ad2b7d0f08aace55ff3b974d64301a38db2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753119"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779776"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Nasıl Yapılır: Paralel İzleme Penceresini Kullanma
+# <a name="how-to-use-the-parallel-watch-window"></a>Nasıl yapılır: Paralel İzleme penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifade tutan değerleri görüntüleyebilirsiniz. Her satır bir uygulama içinde çalışan bir iş parçacığını temsil eder, ancak bir iş parçacığı içinde birden çok satır gösterilebilir. Daha açık belirtmek gerekirse her satır, işlev imzası geçerli yığın çerçevesinde işlevi eşleşen bir işlev çağrısını temsil eder. Sıralama, yeniden sıralama, kaldırmak ve sütunları olan öğeleri gruplayın. Bayrak, işaretsiz dondurma, (askıya) ve (devam) iş parçacıklarını çözme. Aşağıdaki sütunlar görüntülenir **paralel izleme** penceresi:  
@@ -44,7 +39,7 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
   > [!TIP]
   >  Açmalısınız **paralel görev** görev bilgileri görüntülemek için pencere **paralel izleme** penceresi.  
   
-- **\<Gözcü Ekle >** izlemek için ifadeleri, girebileceğiniz sütunu.  
+-  **\<Gözcü Ekle >** izlemek için ifadeleri, girebileceğiniz sütunu.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -70,7 +65,7 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
   
 ### <a name="to-switch-frames"></a>Çerçeve geçiş yapmak için  
   
--   Çerçeve sütunu çift tıklayın. (Klavye: satırı seçin ve Enter tuşuna basın.)  
+-   Çerçeve sütunu çift tıklayın. (Klavye: Satırı seçin ve Enter tuşuna basın.)  
   
 ### <a name="to-sort-a-column"></a>Bir sütunu sıralamak için  
   
@@ -95,7 +90,4 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md)   
- [İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-
+ [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

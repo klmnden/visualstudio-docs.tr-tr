@@ -1,14 +1,9 @@
 ---
 title: Kodlanmış UI testleri, kodlanmış UI Test düzenleyicisini kullanarak düzenleme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793769"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +120,7 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Önemli sorunlar**  
   
-- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir metodu bölme, ayrıca bu UI hala istiyorsanız oluşturmak üzere olduğunuz yeni yöntem çağırmak için varolan bir yöntem çağırır herhangi bir kodu değiştirmeniz gerekir Eylemler dahildir. Bir metodu bölme, Microsoft Visual Studio iletişim kutusu görüntülenir. Varolan bir yöntem oluşturmak üzere olduğunuz yeni yöntemi de çağrılacak çağıran herhangi bir kodu değiştirmeniz gerekir sizi uyarır. Seçin **Evet**.  
+- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** Bir metodu bölme, varolan bir yöntem de dahil bu UI eylemlerini hala istiyorsanız oluşturmak üzere olduğunuz yeni yöntem çağırmak için çağıran herhangi bir kodu değiştirmeniz gerekir. Bir metodu bölme, Microsoft Visual Studio iletişim kutusu görüntülenir. Varolan bir yöntem oluşturmak üzere olduğunuz yeni yöntemi de çağrılacak çağıran herhangi bir kodu değiştirmeniz gerekir sizi uyarır. Seçin **Evet**.  
   
   **İpuçları**  
   
@@ -133,7 +128,7 @@ Denetim özelliklerini düzenleme
   
 - ![İpucu](../test/media/tip.png "İpucu") yeni yöntem yeniden adlandırabilirsiniz. UI Eylemler bölmesinde seçin ve seçin **Yeniden Adlandır** kodlanmış UI Test Düzenleyicisi araç çubuğu düğmesi.  
   
-   veya  
+   -veya-  
   
    Yeni test yöntemi ve seçin, kısayol menüsünü açın **Yeniden Adlandır**.  
   
@@ -149,7 +144,7 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Önemli sorunlar**  
   
-- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir yöntemi taşıdığınızda, artık kodlanmış UI Test düzenleyicisini kullanarak düzenleyebilirsiniz. Özel kodunuzu eklemeli ve Kod Düzenleyicisi'ni kullanarak korumalısınız. Yöntemi taşıdığınızda, Microsoft Visual Studio iletişim kutusu görüntülenir. Bu, yöntem UIMap.uitest dosyasından UIMap.cs için taşınır veya UIMap.vb dosyasını, kodlanmış UI Test Düzenleyicisi'ni kullanarak yöntemi düzenlemenin mümkün olmayacak sizi uyarır. Seçin **Evet**.  
+- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** Yöntemi taşıdığınızda kodlanmış UI Test Düzenleyicisi'ni kullanarak artık düzenleyebilirsiniz. Özel kodunuzu eklemeli ve Kod Düzenleyicisi'ni kullanarak korumalısınız. Yöntemi taşıdığınızda, Microsoft Visual Studio iletişim kutusu görüntülenir. Bu, yöntem UIMap.uitest dosyasından UIMap.cs için taşınır veya UIMap.vb dosyasını, kodlanmış UI Test Düzenleyicisi'ni kullanarak yöntemi düzenlemenin mümkün olmayacak sizi uyarır. Seçin **Evet**.  
   
   **İpuçları**  
   
@@ -167,7 +162,7 @@ Denetim özelliklerini düzenleme
  *Başka neleri bilmeliyim?*  
  **Önemli sorunlar**  
   
-- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** bir UI denetimini Bul önce test ile ilişkili uygulamanın çalıştığını doğrulayın.  
+- ![Uyarı simgesi](../test/media/caution.gif "uyarı") **uyarısı:** Bir UI denetimini Bul önce test ile ilişkili uygulamanın çalıştığını doğrulayın.  
   
   **İpuçları**  
   
@@ -210,7 +205,7 @@ Denetim özelliklerini düzenleme
 ## <a name="external-resources"></a>Dış kaynaklar  
   
 ### <a name="guidance"></a>Kılavuz  
- [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: birim testi: iç testler](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – bölüm 2 ile sürekli teslimat testi: Birim testi: İç testler](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>SSS  
  [Kodlanmış UI testleri SSS - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -225,7 +220,4 @@ Denetim özelliklerini düzenleme
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Kodlanmış UI testi verilerle oluşturma](../test/creating-a-data-driven-coded-ui-test.md)   
  [Mevcut eylem kaydından bir kodlanmış UI testi oluşturma](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [İzlenecek yol: Kodlanmış Bir UI Testi Oluşturmak Düzenlemek ve Sürdürmek](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-
+ [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

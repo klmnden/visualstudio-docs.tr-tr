@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83e79829caea30ece2c427d851b68d74bf9c586e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943045"
 ---
 # <a name="list-registers-command"></a>Yazmaçları Listele Komutu
 Seçilen değeri kaydeder ve olanak tanır görüntüler liste kayıtları göstermek için değiştirin.
@@ -34,7 +34,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Anahtarlar
- / Görüntüleme [{`register`&#124;`registerGroup`}...]
+ /Display [{`register`&#124;`registerGroup`}...]
 
  Belirtilen değerleri görüntüler `register` veya `registerGroup`. Hayır ise `register` veya `registerGroup` belirtilirse, kayıtları varsayılan listesi görüntülenir. Hiçbir anahtarı belirtilmişse davranışı aynıdır. Örneğin:
 
@@ -52,7 +52,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  Bir veya daha fazla ekler `register` veya `registerGroup` değerleri listesi.
 
- / Unwatch [{`register`&#124;`registerGroup`}...]
+ /Unwatch [{`register`&#124;`registerGroup`}...]
 
  Bir veya daha fazla kaldırır `register` veya `registerGroup` listedeki değerler.
 
@@ -69,5 +69,5 @@ r /Display Flags
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
-- [Hata ayıklama temelleri: Yazmaçlar penceresi](../../debugger/debugging-basics-registers-window.md)
-- [Nasıl yapılır: Yazmaçlar penceresini kullanma](../../debugger/how-to-use-the-registers-window.md)
+- [Hata Ayıklamanın Temelleri: Yazmaçlar Penceresi](../../debugger/debugging-basics-registers-window.md)
+- [Nasıl yapılır: Yazmaçlar Penceresi Hakkında](../../debugger/how-to-use-the-registers-window.md)

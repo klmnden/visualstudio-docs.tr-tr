@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2bd1ec04-e677-4e32-8e32-33334f1eed77
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4be73de8540d89a4c45737aa6bdc2e24c704cd1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3cc898d989c345ba7691252562fac820eec1c18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899005"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924116"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 Bir dizin ile bir simge alır.  

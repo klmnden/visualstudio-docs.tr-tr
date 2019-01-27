@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987057"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023921"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 
@@ -545,7 +545,7 @@ Visual Studio Yardım Görüntüleyicisi marka öğeleri tarafından kullanılan
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||(stil adı, styleValue) styleRectify||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||subtitle(id)||
 
@@ -557,21 +557,21 @@ Bir dizi anahtar bilgileri açıklayan hangi içerik kümelerini yüklü bir bö
 |-|-|-|
 |**Dosya**|**Kullanma**|**Görüntülenen içerik kaynağı**|
 |homepage.htm|Şu anda yüklü içeriği ve içeriklerini hakkında kullanıcıya göstermek uygun başka iletisi görüntüleyen bir sayfa budur.  Bu dosya ek meta veri özniteliği "Microsoft.Help.Id" içeriğe sahip olan yerel içerik TOC üst kısmında bu içerik yerleştirir "-" 1 =.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, etiket \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, etiket \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Bölüm Branding.xml etiketi başlık\<HomePageInstalledBooks >, uygulamasından oluşturulan veriler \<HomePageNoBooksInstalled > hiçbir books yüklü olduğunda.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Bölüm Branding.xml etiketi başlık \<HomePageHelpSettings >, bölümünde metin \<HomePageHelpSettingsText >.|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.XML, etiket \<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, etiket \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.XML, etiket \<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Bölüm Branding.xml etiketi başlık\<HomePageInstalledBooks >, uygulamasından oluşturulan veriler \<HomePageNoBooksInstalled > hiçbir books yüklü olduğunda.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Bölüm Branding.xml etiketi başlık \<HomePageHelpSettings >, bölümünde metin \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Yerel kümede bir konu varsa, ancak herhangi bir nedenle görüntülenemiyor (bozuk içeriği).||
 ||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, etiket \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, etiket \<TopicCorruptedViewOnlineText >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.XML, etiket \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Ne zaman bir konu yerel içeriği çevrimiçi ayarlayın ya da kullanılabilir bulunamadı||
 ||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundTitle >|
 ||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, etiket \<TopicNotFoundText >|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.XML, etiket \<TopicNotFoundText >|
 |contentnotinstalled.htm|Ürün için yüklenmiş yerel içerik olmadığında.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledDownloadContentText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, etiket \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.XML, etiket \<ContentNotInstalledDownloadContentText >|
 ||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, etiket \<ContentNotInstalledText >|
 
 **CSS dosyaları**
