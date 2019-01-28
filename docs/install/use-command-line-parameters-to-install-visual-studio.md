@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6d400410517923665a26ae28e916018643e21f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008549"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089148"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
 
@@ -37,7 +37,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 - [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 - [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
-## <a name="list-of-command-line-parameters"></a>Komut satırı parametrelerinin listesi
+## <a name="command-line-parameters"></a>Komut satırı parametreleri
 
  Visual Studio komut satırı parametreleri büyük/küçük harfe duyarsızdır.
 
@@ -57,7 +57,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `uninstall` | Yüklü bir ürün kaldırır. |
 | `export` | **Yeni 15.9**: Yükleme seçimi bir yükleme yapılandırma dosyasına dışarı aktarır. **Not**: Yalnızca vs_installer.exe ile kullanılabilir. |
 
-### <a name="install-options"></a>Yükleme Seçenekleri
+## <a name="install-options"></a>Yükleme Seçenekleri
 
 | **Yükleme seçeneği** | **Açıklama** |
 | ----------------------- | --------------- |
@@ -82,7 +82,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 > [!IMPORTANT]
 > Birden çok iş yüklerinin ve bileşenlerin belirtirken tekrarlamalısınız `--add` veya `--remove` her öğe için komut satırı anahtarı.
 
-### <a name="layout-options"></a>Düzen Seçenekleri
+## <a name="layout-options"></a>Düzen Seçenekleri
 
 | **Düzen Seçenekleri** | **Açıklama** |
 | ----------------------- | --------------- |

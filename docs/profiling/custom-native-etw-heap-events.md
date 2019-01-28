@@ -10,18 +10,18 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 673f31451d778e288da49f078da0ca4263189586
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021211"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089272"
 ---
 # <a name="custom-native-etw-heap-events"></a>Özel yerel ETW yığın olayları
 
 Visual Studio içeren çeşitli [profil oluşturma ve tanılama araçları](../profiling/profiling-feature-tour.md), bir yerel bellek profili Oluşturucu dahil olmak üzere.  Bu profil oluşturucu kancaları [ETW olayları](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) yığın sağlayıcısından ve bellek nasıl yapılıyor, analizini sağlar ayrılmış ve kullanılan.  Varsayılan olarak, bu araç yalnızca standart Windows yığından yapılan ayırmaların çözümleyebilir ve bu yerel yığın dışında herhangi bir ayırma değil görüntülenir.
 
-Çoğu durumda, kendi özel yığının kullanın ve ayırma ek standart yığın yükünden kaçınmak isteyebilirsiniz vardır.  Örneğin, kullanabilirsiniz [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) büyük miktarda bellek oyun ve uygulama başlangıcında ayırmak ve sonra bu listeyi kendi taşlarına yönetin.  Bu senaryoda, bellek profili Oluşturucu aracı yalnızca bu ilk ayırma ve bellek öbeği içinde yapılan değil özel yönetim görür.  Ancak, özel yerel yığın ETW Sağlayıcısı'nı kullanarak, standart yığın dışında yaptığınız herhangi bir ayırma hakkında bilmeniz aracı sağlayabilirsiniz.
+Çoğu durumda, kendi özel yığının kullanın ve ayırma ek standart yığın yükünden kaçınmak isteyebilirsiniz vardır.  Örneğin, kullanabilirsiniz [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) büyük miktarda bellek oyun ve uygulama başlangıcında ayırmak ve sonra bu listeyi kendi taşlarına yönetin.  Bu senaryoda, bellek profili Oluşturucu aracı yalnızca bu ilk ayırma ve bellek öbeği içinde yapılan değil özel yönetim görür.  Ancak, özel yerel yığın ETW Sağlayıcısı'nı kullanarak, standart yığın dışında yaptığınız herhangi bir ayırma hakkında bilmeniz aracı sağlayabilirsiniz.
 
 Örneğin, aşağıdaki gibi bir projedeki burada `MemoryPool` özel bir yığın Windows yığında yalnızca tek bir ayırma görür:
 

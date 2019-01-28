@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 001827c1b37596228221d6b4285abb2915ec5b8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788716"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089191"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>İzlenecek yol: Hesaplayıcı Gölgelendiricisinde hata ayıklamak için grafik tanılamayı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Bu izlenecek yol, Visual Studio grafik tanılama araçları hatalı sonuçlar ü
   
 1. Üzerinde **grafik tanılama** araç seçin **olay çağrı yığını** açmak için **grafik olay çağrı yığını** penceresi.  
   
-2. Benzetim sonuçlarını işleyen çizim olayından başlayarak her geriye önceki `CSSetShader` olay. Ardından **grafik olay çağrı yığını** penceresinde çağrı sitesine gitmek için en üstteki işlevi seçin. İlk parametresini kullanabilirsiniz çağıran sitede [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) işlev çağrısı hangi compute gölgelendiricisinin yürütüleceğini tarafından sonraki belirlemek için `Dispatch` olay.  
+2. Benzetim sonuçlarını işleyen çizim olayından başlayarak her geriye önceki `CSSetShader` olay. Ardından **grafik olay çağrı yığını** penceresinde çağrı sitesine gitmek için en üstteki işlevi seçin. İlk parametresini kullanabilirsiniz çağıran sitede [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) işlev çağrısı hangi compute gölgelendiricisinin yürütüleceğini tarafından sonraki belirlemek için `Dispatch` olay.  
   
    Bu senaryoda, üç çift vardır `CSSetShader` ve `Dispatch` her çerçevede olayları. Geriye doğru tümleştirme adımını (burada sıvı Parçacıklar gerçekten taşınır) üçüncü çifti temsil çalışırken, ikinci çift hesaplamayı zorla adımını (burada her parçacığı etkileyen güçleri hesaplanır) temsil eder ve ilk çift temsil eder Yoğunluk hesaplama adımını.  
   

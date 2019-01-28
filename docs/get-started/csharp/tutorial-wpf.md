@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15f4d5f09fc5076730689fa58248e47cb775c796
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3aa55ede0d6d36e455a9ab7cc007afede0ff465d
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947302"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089204"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: İle basit uygulama oluşturmaC#
 
@@ -274,5 +274,4 @@ Bu öğreticiyi tamamlamak Tebrikler! Bulabilirsiniz *.exe* çözüm ve proje di
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio 2017'deki yenilikler](../../ide/whats-new-visual-studio.md)
 - [Üretkenlik ipuçları](../../ide/productivity-tips-for-visual-studio.md)
