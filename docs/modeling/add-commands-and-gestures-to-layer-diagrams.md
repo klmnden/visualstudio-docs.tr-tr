@@ -78,7 +78,7 @@ Komutların, katman doğrulayıcılarının ve diğer uzantıların bulunduğu b
 
 3.  İçinde **source.extension.vsixmanifest**altında **varlıklar**Ekle komut veya hareket işleyicisi projesini MEF Bileşeni olarak.
 
-    1.  İçinde **varlıklar***.tab, seçin **yeni**.
+    1.  İçinde **varlıklar**.tab, seçin **yeni**.
 
     2.  Konumunda **türü**seçin **Microsoft.VisualStudio.MefComponent**.
 
