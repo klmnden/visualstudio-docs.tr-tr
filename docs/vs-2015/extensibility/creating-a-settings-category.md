@@ -1,31 +1,26 @@
 ---
 title: Ayarları kategorisi oluşturma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730354"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793499"
 ---
 # <a name="creating-a-settings-category"></a>Ayarlar Kategorisi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kaydedin ve değerleri ayarları dosyasından geri yüklemek için kullanın. Ayarları kategorisi olan bir grup görünür bir "özel ayarları noktası olarak"; ilgili özellikleri diğer bir deyişle, bir onay kutusuna olarak **içeri ve dışarı aktarma ayarları** Sihirbazı. (Üzerinde bulabilirsiniz **Araçları** menü.) Ayarlar kaydedildi veya kategori olarak geri ve ayarlardan sihirbazında görüntülenmez. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kaydedin ve değerleri ayarları dosyasından geri yüklemek için kullanın. Ayarları kategorisi olan bir grup görünür bir "özel ayarları noktası olarak"; ilgili özellikleri diğer bir deyişle, bir onay kutusuna olarak **içeri ve dışarı aktarma ayarları** Sihirbazı. (Üzerinde bulabilirsiniz **Araçları** menü.) Ayarlar kaydedildi veya kategori olarak geri ve ayarlardan sihirbazında görüntülenmez. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Ondan türetilen ayarları kategorisi oluşturma <xref:Microsoft.VisualStudio.Shell.DialogPage> sınıfı.  
   
@@ -160,4 +155,3 @@ Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kayded
 16. Emin olun **ayarlarım** seçilir ve ardından **son**. Zaman **içeri aktarma tamamlandı** sayfası görüntülendikten sonra **Kapat**.  
   
 17. Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **My kategori**, tıklayın **kılavuz sayfam** ve özellik kategorisi değerlerine sahip olduğunuzu doğrulayın geri.
-

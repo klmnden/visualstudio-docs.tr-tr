@@ -1,25 +1,20 @@
 ---
 title: Ağ kullanımı | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759915"
 ---
 # <a name="network-usage"></a>Ağ kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,8 +75,5 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio blogu: Karşınızda Visual Studio'nun ağ denetçisi](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Kanal 9 Video: VS tanılama araçları-yeni ağ Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-
+ [Visual Studio blog'u: Visual Studio'nun ağ Inspector ile tanışın](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Kanal 9 Video: VS tanılama araçları – yeni ağ Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

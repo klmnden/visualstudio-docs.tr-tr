@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ebd1c8363c9801a9ac16a3b10a702de5954a14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023268"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Örnek projeleri Visual Studio için R araçları
 
@@ -48,7 +48,7 @@ Tüm örnekleri ile dosya sayısı arttıkça, üstünde imleci yerleştirin ve 
 
     ![Örnek Kıyaslama çizimi](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` bisiklet kiralama bir geçmiş verileri kullanarak Microsoft ML Server kümesini temel alan için bir talep tahmin modeli oluşturur. 
+- `Bike_Rental_Estimation_with_MRS` bisiklet kiralama bir geçmiş verileri kullanarak Microsoft ML Server kümesini temel alan için bir talep tahmin modeli oluşturur.
 
 - `Data_Exploration` üç betik içerir:
 
@@ -59,7 +59,7 @@ Tüm örnekleri ile dosya sayısı arttıkça, üstünde imleci yerleştirin ve 
       ![Ggplot2 kullanarak çıktı. Örnek R](media/samples-3d-interactive.png)
 
 - `Datasets` üç içeren *.csv* diğer örnekleri tarafından kullanılan dosyalar
-- `Flight_Delays_Prediction_with_R` ve `Flight_Delays_Prediction_with_MRS` uçuş gecikme R, makine öğrenimi ve geçmişteki tarihlere ait zamanında kalkış performansı ve hava durumu verileri kullanarak tahmin işlemi gösterilmektedir. 
+- `Flight_Delays_Prediction_with_R` ve `Flight_Delays_Prediction_with_MRS` uçuş gecikme R, makine öğrenimi ve geçmişteki tarihlere ait zamanında kalkış performansı ve hava durumu verileri kullanarak tahmin işlemi gösterilmektedir.
 - `Machine learning` Uçuş gecikme, konut fiyatları ve bisiklet kiralama tahmin etmek öğrenme için üç örnekleri içerir. Birlikte, bu örnekler Microsoft ML Server ile R ve uygulamayı gerçek dünyadaki sorunları gösterir. Bunlar ayrıca, çeşitli popüler makine öğrenimi modellerini kullanın ve bunları kullanarak Azure Web hizmeti olarak dağıtma hakkında bilgi sağlanmıştır bir [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) çalışma.
 
 - `R_MRO_MRS_Comparison` benzerlikleri ve farkları, R, Microsoft R Open ve Microsoft ML Server komutları, söz dizimi, yapıları ve performans ile gösteren bir Particle karşılaştırmasıdır.
@@ -82,7 +82,7 @@ Aşağıdaki karşılaştırmaya MLS ve MRO MKL ile R ve MRO MKL olmadan belirli
 
 ![MLS ve MRO MKL r ile ve MRO MKL olmadan karşılaştırma](media/samples-speed-comparison.png)
 
-R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
+R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
 
 Aşağıdaki şekilde, lojistik regresyon modellerini oluşturmaya, uçuş gecikme 15 dakikadan fazla tahmin etmek için kullanılan saniye sonra geçen süre karşılaştırır.  Geçen süre CRAN R kullanılan MLS yalnızca yaklaşık iki kez artarken küçük bir satır sayısını artırmak, büyük ölçüde artar. Bu kıyaslama ayrıntılarını gözden geçirin *Kıyaslama/rxGlm_benchmark. R* örnek.
 
