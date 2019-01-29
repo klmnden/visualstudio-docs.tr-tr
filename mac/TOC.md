@@ -52,6 +52,11 @@
 ## [Subversion Deposu Ayarlama](set-up-subversion-repository.md)
 ## [Subversion ile çalışma](working-with-subversion.md)
 
+# [Web Uygulaması Dağıtımı](web-app-deployment.md)
+## [Azure App Service’e yayımlama](publish-app-svc.md)
+## [Klasöre Yayımlama](publish-folder.md)
+
+
 # [İş yükleri](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
