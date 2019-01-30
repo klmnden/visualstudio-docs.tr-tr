@@ -1,6 +1,6 @@
 ---
 title: Visual C++ proje genişletilebilirliği
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013710"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232058"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
@@ -274,6 +274,8 @@ Bu görevleri Microsoft.Cpp.Common.Tasks.dll uygular:
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Bir aracı varsa, var olan bir aracı aynı eylemi gerçekleştirir ve (clang-cl ve CL olduğu gibi) benzer bir komut satırı anahtarları olan, aynı görevi ikisinin için kullanabilirsiniz.
 
 Bir derleme aracı için yeni bir görev oluşturmanız gerekiyorsa, aşağıdaki seçeneklerden birini seçebilirsiniz:
@@ -294,11 +296,14 @@ Bir derleme aracı için yeni bir görev oluşturmanız gerekiyorsa, aşağıdak
 
 Varsayılan MSBuild Artımlı derleme hedefi kullanım `Inputs` ve `Outputs` öznitelikleri. Bunları belirtirseniz, yalnızca herhangi biri varsa, tüm çıktılar daha yeni bir zaman damgası MSBuild hedefi çağırır. Kaynak dosyaları genellikle eklemek veya diğer dosyalarını içeri aktarın ve yapı araçları üretim aracı seçeneklere bağlı olarak farklı çıkışları olduğundan, tüm olası girişleri belirtin zordur ve MSBuild hedeflerini çıkarır.
 
-Bu sorunu yönetmek için C++ derleme artımlı derlemeleri desteklemek için farklı bir teknik kullanır. Çoğu hedefleri olmayan girişler ve çıkışlar belirtin ve sonuç olarak, derleme sırasında her zaman çalıştır. Giriş ve çıkışları içine tüm hakkında bilgi hedeflerini adlı görevler yazma *tlog* .tlog uzantısına sahip dosyalar. Güncel nedir ve .tlog dosyaları daha sonra derleme tarafından ne değişti ve yeniden oluşturulması gerekiyor denetlemek için kullanılır.
+Bu sorunu yönetmek için C++ derleme artımlı derlemeleri desteklemek için farklı bir teknik kullanır. Çoğu hedefleri olmayan girişler ve çıkışlar belirtin ve sonuç olarak, derleme sırasında her zaman çalıştır. Giriş ve çıkışları içine tüm hakkında bilgi hedeflerini adlı görevler yazma *tlog* .tlog uzantısına sahip dosyalar. Güncel nedir ve .tlog dosyaları daha sonra derleme tarafından ne değişti ve yeniden oluşturulması gerekiyor denetlemek için kullanılır. .tlog ayrıca IDE içindeki varsayılan derleme güncellik denetimi için yalnızca kaynak dosyalarıdır.
 
 Tüm girişler ve çıkışlar belirlemek için yerel aracı görevleri tracker.exe kullanın ve [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) MSBuild tarafından sağlanan sınıfı.
 
 Microsoft.Build.CPPTasks.Common.dll tanımlar `TrackedVCToolTask` genel soyut temel sınıf. Yerel aracı görevlerin çoğunu sınıfından türetilir.
+
+Kullanabileceğiniz 15,8 Visual Studio 2017 güncelleştirmesi itibarıyla `GetOutOfDateItems` Microsoft.Cpp.Common.Tasks.dll özel hedefleriyle bilinen giriş ve çıkışları için .tlog dosyaları üretmek için uygulanan görev.
+Alternatif olarak, bunları kullanarak oluşturabileceğiniz `WriteLinesToFile` görev. Bkz: `_WriteMasmTlogs` hedeflemek `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* örnek olarak.
 
 ## <a name="tlog-files"></a>.TLOG dosyaları
 
@@ -314,7 +319,6 @@ MSBuild .tlog dosyalarını okuma ve yazma için bu yardımcı sınıflar sağla
 
 Komut satırı .tlog dosyaları, komut satırları yapıda kullanılan hakkında bilgi içerir. İç biçimi bunları üreten MSBuild görevi tarafından belirlenir. Bu nedenle bunlar yalnızca artımlı derlemeleri, güncel değil denetimleri için kullanılır.
 
-Bir görev tarafından .tlog dosyaları oluşturduysanız, bu yardımcı sınıfları oluşturmak için kullanmak en iyisidir. Varsayılan güncellik denetimi artık yalnızca .tlog dosyalarda kullandığından, ancak bazen, bunları bir hedef olmadan bir görev oluşturmak daha uygundur. Bunları kullanarak yazdığınız `WriteLinesToFile` görev. Bkz: `_WriteMasmTlogs` hedeflemek `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* örnek olarak.
 
 ### <a name="read-tlog-format"></a>Okuma .tlog biçimi
 
