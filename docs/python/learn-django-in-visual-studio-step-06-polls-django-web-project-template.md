@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aeace6446d02301eb7dba8ae861597a9bb812265
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e7b4741bf7b8644182afb666b8683212ab957c56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041054"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232032"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6. Adım: Yoklamalar Django Web projesi şablonu kullanın
 
@@ -375,6 +375,6 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 
 - Birim testleri yazmak *tests.py*; Visual Studio Proje şablonları için başlangıç noktası sağlar ve daha fazla bilgi bulunabilir [ilk Django uygulamanız bölüm 5 - test yazıyor](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) ve [Django içinde test](https://docs.djangoproject.com/en/2.0/topics/testing/) Django belgelerinde.
 
-- Uygulama, PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi bir üretim düzeyinde veri deposuna SQLite değiştirin. Üzerinde açıklandığı [SQLite kullanıldığı durumlar](https://www.sqlite.org/whentouse.html) (sqlite.org) SQLite düşük ile 100 bin isabet sayısı günde en fazla orta düzeyde trafiğe sahip siteler için düzgün çalışır, ancak daha yüksek birimleri için önerilmez. Ayrıca tek bir bilgisayara limited, bu nedenle onu kullanılamaz Yük Dengeleme ve coğrafi çoğaltma gibi herhangi bir çok sunuculu senaryo. Diğer veritabanlarını Django'nın desteği hakkında daha fazla bilgi için bkz: [Veritabanı Kurulumu](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Ayrıca [Python için Azure SDK'sı](azure-sdk-for-python.md) tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
+- Uygulama, PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi bir üretim düzeyinde veri deposuna SQLite değiştirin. Üzerinde açıklandığı [SQLite kullanıldığı durumlar](https://www.sqlite.org/whentouse.html) (sqlite.org) SQLite düşük ile 100 bin isabet sayısı günde en fazla orta düzeyde trafiğe sahip siteler için düzgün çalışır, ancak daha yüksek birimleri için önerilmez. Ayrıca tek bir bilgisayara limited, bu nedenle onu kullanılamaz Yük Dengeleme ve coğrafi çoğaltma gibi herhangi bir çok sunuculu senaryo. Diğer veritabanlarını Django'nın desteği hakkında daha fazla bilgi için bkz: [Veritabanı Kurulumu](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Ayrıca [Python için Azure SDK'sı](/python/azure/?view=azure-python) tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
 
 - Azure DevOps gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (aracılığıyla Azure depoları veya GitHub ya da başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak için bir Azure DevOps projesi yapılandırabilir ve ayrıca işlem hattı için bir hazırlık sunucusu dağıtmak için yapılandırma üretim ortamına dağıtmadan önce ek sınar. Ayrıca, Azure DevOps çözümlerini App Insights gibi izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts) ve ayrıca genel [Azure DevOps belgeleri](/azure/devops/?view=vsts).

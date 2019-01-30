@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d49567e9a152d044b8529d01f3c33de0889fa662
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b265224198cff87f808a946d4fa1397ec1db0e7
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026925"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231928"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>5. Adım: Polls – Flask Web projesi şablonunu kullanma
 
@@ -355,6 +355,6 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 
 - Web uygulamasını Azure App Service gibi bir üretim sunucusuna dağıtın. Bkz: [Azure App Service'e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi başka bir üretim düzeyinde veri deposunu kullanan bir depo uygulaması ekleyin. Ayrıca [Python için Azure SDK'sı](azure-sdk-for-python.md) Cosmos DB yanı sıra tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
+- PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi başka bir üretim düzeyinde veri deposunu kullanan bir depo uygulaması ekleyin. Ayrıca [Python için Azure SDK'sı](/python/azure/?view=azure-python) Cosmos DB yanı sıra tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
 
 - Azure DevOps gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (aracılığıyla Azure depoları veya GitHub ya da başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak için bir Azure DevOps projesi yapılandırabilir ve ayrıca işlem hattı için bir hazırlık sunucusu dağıtmak için yapılandırma üretim ortamına dağıtmadan önce ek sınar. Ayrıca, Azure DevOps çözümlerini App Insights gibi izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts) ve ayrıca genel [Azure DevOps belgeleri](/azure/devops/?view=vsts).

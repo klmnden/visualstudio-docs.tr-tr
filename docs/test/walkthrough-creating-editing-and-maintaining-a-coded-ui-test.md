@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a847e8692c57f4c7b421eb9a6f73b7153d9af9e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d7659de6e90ca13172459b1bcc1e305e14a91cfc
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016388"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231967"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>İzlenecek yol: Oluşturun, düzenleyin ve bir kodlanmış UI testinin
 
@@ -354,11 +354,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
 
 ## <a name="videos"></a>Videolar
 
-![video bağlantı](../data-tools/media/playvideo.gif) [kodlanmış UI testleri ile çalışmaya başlama](http://go.microsoft.com/fwlink/?LinkID=230573)
-
-![video bağlantı](../data-tools/media/playvideo.gif) [kodlanmış UI testleri Bakım ve hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=230574)
-
-![video bağlantı](../data-tools/media/playvideo.gif) [kodlanmış UI testleri el kodlama](http://go.microsoft.com/fwlink/?LinkID=230575)
+![video bağlantı](../data-tools/media/playvideo.gif) [kodlanmış UI testleri ile çalışmaya başlama](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>SSS
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d9b6dd78f30ccc362a26145d66f4983389f8445
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983475"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231828"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML Tasarımcısı’nda nesneleri düzen kapsayıcılarına yerleştirme
 
@@ -30,19 +30,7 @@ Düzen bölmeleri, sayfadaki nesneleri Düzenle yardımcı, ancak, birden fazla 
 
 Sayfanız, bu düzen bölmelerini birini seçerek başlatın. Sayfanız birden fazla olabilir. Örneğin, ile başlayabilir bir **kılavuz** Düzen paneli ve ardından eklemek bir **StackPanel** bir alanda **kılavuz** böylece o öğenin dikey denetimlerinde düzenleyebilirsiniz.
 
-Aşağıdaki Düzen bölmelerini bu özellik en kullanılır, ancak diğerleri vardır. Bunları bulabilirsiniz tümü **varlıklar** paneli.
-
-- [Kılavuz](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Tuval](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Aşağıdaki Düzen bölmelerini bu özellik en kullanılır, ancak diğerleri vardır. Bunları bulabilirsiniz tümü **araç kutusu** Visual Studio'da veya **varlıklar** Visual Studio için blend'de paneli.
 
 ### <a name="grid"></a>Kılavuz
 
@@ -92,15 +80,7 @@ Böylece bunlar kalmasını nesneleri düzenleyin veya *dock*, panelin bir kenar
 
 Nesnelerinizi Düzen denetimlere de ekleyebilirsiniz. Bunlar olarak olmayan özellik açısından zengin gibi bir düzen paneli, ancak bunları belirli senaryolar için yararlı bulabilirsiniz.
 
-Aşağıdaki düzen denetimleri en popüler olduğunu, ancak diğerleri vardır. Bunları bulabilirsiniz tümü **varlıklar** paneli.
-
-- [Kenarlık](#Border)
-
-- [Açılan Pencere](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Aşağıdaki düzen denetimleri en popüler olduğunu, ancak diğerleri vardır. Bunları bulabilirsiniz tümü **araç kutusu** Visual Studio'da veya **varlıklar** Visual Studio için blend'de paneli.
 
 ### <a name="border"></a>Kenarlık
 

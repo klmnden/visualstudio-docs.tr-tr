@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f14fa381a007579d39feafe878d1283635060997
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011533"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231578"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da Visual C++ projesi
 Farklı bir bilgisayarda bir Visual Studio uygulamasında hata ayıklama, yükleme ve uygulamanızı dağıtacağınız bilgisayarda Uzak araçları çalıştırmak için projenizi Visual Studio'dan uzak bilgisayara bağlanın ve ardından dağıtmak ve uygulamanızı çalıştırmak için yapılandırın.
@@ -96,9 +96,11 @@ Desteklenen Windows 7 ve daha yeni uzaktan hata ayıklayıcı (telefon değil) v
 11. Visual Studio bilgisayarda yürütme kesme noktasında durdurulduğunu görmeniz gerekir.  
   
     > [!TIP]
-    >  Alternatif olarak, dosyaların ayrı bir adım olarak dağıtabilirsiniz. İçinde **Çözüm Gezgini** sağ **mymfc** düğümünü seçip **Dağıt**.  
+    > Alternatif olarak, dosyaların ayrı bir adım olarak dağıtabilirsiniz. İçinde **Çözüm Gezgini** sağ **mymfc** düğümünü seçip **Dağıt**.
   
-    Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle > Yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle > var olan öğe**, ardından dosyaları seçin). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.
+    Uygulamanın gerektirdiği kod dışı dosyalara varsa, bunları belirtebilirsiniz **dağıtılacak ek dosyalar** üzerinde **uzaktan Windows hata ayıklayıcı** sayfası.
+
+    Alternatif olarak, dosyaları projenize eklemek ve ayarlama **içerik** özelliğini **Evet** içinde **özellikleri** her dosya için sayfa. Bu dosyalar kopyalanır **dağıtım dizinine** belirtilen **uzaktan Windows hata ayıklayıcı** sayfası. Ayrıca **öğesi türü** için **dosya Kopyala** ve bir alt klasöre kopyalanacak dosyaları gereksiniminiz varsa, ek özellikler belirtmek **dağıtım dizinine**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Uzak simgeleri ile hata ayıklamayı kurma 
 

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 07ffcf9f1af4e6b23f0d2469d757eeb9ab95f2b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927862"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232071"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -140,7 +140,7 @@ Daha fazla bilgi için:
 
 Python iş yükü, Windows, Mac OS X ve Linux uygulamaları Azure hizmetlerinden aramanın basitleştiren, Python için Azure SDK'sı içerir.
 
-Daha fazla bilgi için [Python için Azure SDK'sı](azure-sdk-for-python.md)
+Daha fazla bilgi için [Python için Azure SDK'sı](/python/azure/?view=azure-python).
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy hakkındaki Python eğitim
 

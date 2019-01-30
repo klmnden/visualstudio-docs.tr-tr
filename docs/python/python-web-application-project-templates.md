@@ -1,7 +1,7 @@
 ---
 title: Python Web uygulaması şablonları
 description: Visual Studio, Bottle, Flask ve Django çerçeveleri kullanarak Python web uygulamaları için şablonlar sağlar. hata ayıklama yapılandırmaları ve Azure App Service'te yayımlama desteği içerir.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 13f4d81243ce657b2766aa197d9ef5a74ffb63e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 214db7bcc2dca01917228598f2103a5bd90bbc37
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976306"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231720"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
 

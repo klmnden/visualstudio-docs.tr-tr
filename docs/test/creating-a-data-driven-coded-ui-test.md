@@ -1,5 +1,5 @@
 ---
-title: Verilerle Çalışan Kodlanmış UI Testi Oluşturma
+title: Verilerle çalışan kodlanmış UI testi Öğreticisi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c83ed77a1971b711c4089927998bc27cab403d01
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28ebaad835888577a8616aab771ba30e4e29c61b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964957"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231993"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Verilerle çalışan kodlanmış UI testi oluşturma
 
@@ -59,7 +59,8 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
    [TestMethod]
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       // To generate code for this test, select "Generate Code for Coded UI Test"
+       // from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
    }
    ```
@@ -87,7 +88,6 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
    ```csharp
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
        this.UIMap.ValidateSum();
    }
@@ -131,7 +131,6 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
     }
@@ -150,7 +149,7 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>4. adım - veri kodlanmış UI testi kullanın
 
-1.  Ekleme `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` üstüne *CodedUITest.cs* dosyası:
+1. Ekleme `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` üstüne *CodedUITest.cs* dosyası:
 
     ```csharp
     using System;
@@ -166,16 +165,16 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  Ekleme `TestContext.DataRow[]` içinde `CodedUITestMethod1()` yöntemi değerleri veri kaynağından uygulanır. Veri kaynağı değerleri denetimlerini kullanarak UIMap denetimlerine atanan sabitleri geçersiz kılma `SearchProperties`:
+2. Ekleme `TestContext.DataRow[]` içinde `CodedUITestMethod1()` yöntemi değerleri veri kaynağından uygulanır. Veri kaynağı değerleri denetimlerini kullanarak UIMap denetimlerine atanan sabitleri geçersiz kılma `SearchProperties`:
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
-        this.UIMap.ValidateSum();
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();
+       this.UIMap.UICalculatorWindow.UIItemWindow2.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSumExpectedValues.UIItem3TextDisplayText = TestContext.DataRow["Sum"].ToString();
+       this.UIMap.ValidateSum();
     }
     ```
 
@@ -197,15 +196,15 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
 
 ### <a name="step-5---run-the-data-driven-test"></a>Adım 5 - veri tabanlı test çalıştırma
 
-1.  Test şimdi testi yeniden çalıştırarak veri odaklı olduğunu doğrulayın.
+Test şimdi testi yeniden çalıştırarak veri odaklı olduğunu doğrulayın.
 
-     Test çalıştırması değerleri üç yineleme aracılığıyla görmelisiniz *.csv* dosya. Doğrulama de çalışması gerekir ve test, Test Gezgini'nde geçti olarak görüntülenmelidir.
+Test çalıştırması değerleri üç yineleme aracılığıyla görmelisiniz *.csv* dosya. Doğrulama de çalışması gerekir ve test, Test Gezgini'nde geçti olarak görüntülenmelidir.
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express veya XML gibi diğer veri kaynağı türleri için veri kaynağı öznitelikleri nelerdir?
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express veya XML gibi diğer veri kaynağı türleri için veri kaynağı öznitelikleri nelerdir?
 
-Kodunuza kopyalayarak ve gereken özelleştirmeleri yaparak, aşağıdaki tabloda örnek veri kaynağı dizeleri kullanabilirsiniz.
+**Y:** Kodunuza kopyalayarak ve gereken özelleştirmeleri yaparak, aşağıdaki tabloda örnek veri kaynağı dizeleri kullanabilirsiniz.
 
 **Veri kaynağı türleri ve öznitelikleri**
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3289081a818a4a80fd6f9066144c73b20f509d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917204"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231980"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama (C#, Visual Basic, C++)
 Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticiyi tamamlamak, hata ayıklama çok iş parçacıklı uygulamalar için Visual Studio özellikleriyle alışmanızı.
@@ -106,39 +106,37 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
     ```
   
 7.  Üzerinde **dosya** menüsünde **Tümünü Kaydet**.  
+
+8. (Yalnızca Visual Basic) Çözüm Gezgini'nde (sağ bölme), proje düğümüne sağ tıklayın, seçin **özellikleri**. Altında **uygulama** sekmesinde, **Başlangıç nesnesi** için **basit**.
   
 ## <a name="debug-the-multithreaded-app"></a>Çok iş parçacıklı uygulamaların hatalarını ayıklama  
   
@@ -205,8 +205,8 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
     Console.WriteLine()
     ```
 
-1. Sol tıklatma sol cilt payını `Thread.Sleep` veya `this_thread::sleep_for` deyimini yeni bir kesme noktası ekleyin.  
+1. Sol tıklatma sol cilt payını `Thread.Sleep` veya `std::this_thread::sleep_for` deyimini yeni bir kesme noktası ekleyin.  
   
     Kanalda, kırmızı bir daire bu konumda bir kesme noktasının ayarlandığını gösterir. 
   

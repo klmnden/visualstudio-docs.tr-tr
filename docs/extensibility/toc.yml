@@ -380,7 +380,45 @@ items:
 - name: Visual Studio C++ proje genişletilebilirliği
   href: visual-cpp-project-extensibility.md
 - name: Visual Studio Kullanıcı Deneyimi Yönergeleri
-  href: ux-guidelines/toc.yml
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+  items:
+  - name: UX Temel Bileşenleri
+    href: ux-guidelines/ux-essentials-for-visual-studio.md
+  - name: Yazı Tipleri ve Biçimlendirme
+    href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
+  - name: Renkler ve Stil
+    href: ux-guidelines/colors-and-styling-for-visual-studio.md
+    items:
+    - name: Paylaşılan Renkler
+      href: ux-guidelines/shared-colors-for-visual-studio.md
+    - name: Renk Değeri Başvurusu
+      href: ux-guidelines/color-value-reference-for-visual-studio.md
+  - name: Görüntüler ve Simgeler
+    href: ux-guidelines/images-and-icons-for-visual-studio.md
+    items:
+    - name: Görsel Dil Sözlüğü
+      href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+  - name: Menüler ve Komutlar
+    href: ux-guidelines/menus-and-commands-for-visual-studio.md
+  - name: Etkileşim Desenleri
+    href: ux-guidelines/interaction-patterns-for-visual-studio.md
+    items:
+    - name: Uygulama Desenleri
+      href: ux-guidelines/application-patterns-for-visual-studio.md
+    - name: Yaygın Denetim Desenleri
+      href: ux-guidelines/common-control-patterns-for-visual-studio.md
+    - name: Bileşik Desenler
+      href: ux-guidelines/composite-patterns-for-visual-studio.md
+  - name: UI Metni ve Yardımı
+    href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+  - name: İletişim Kutusu Düzeni
+    href: ux-guidelines/layout-for-visual-studio.md
+  - name: Bildirimler ve İlerleme Durumu
+    href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+  - name: Animasyonlar
+    href: ux-guidelines/animations-for-visual-studio.md
+  - name: Değerlendirme Araçları
+    href: ux-guidelines/evaluation-tools-for-visual-studio.md
 - name: DPI Sorunlarını Çözme
   href: addressing-dpi-issues2.md
 - name: Görüntü Hizmeti ve Kataloğu
@@ -743,9 +781,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Roslyn paketi sürümü başvurusu
     href: roslyn-version-support.md
-ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 14efc710953d669b51b275226885eb9d0f5bbe50
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562366"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232006"
