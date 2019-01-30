@@ -29,34 +29,34 @@ ms.locfileid: "54935637"
 Bu sayfa, Gelişmiş seçenekleri aracılığıyla kullanılabilen bazı başvurular Dotfuscator Community Edition (Dotfuscator CE) özelliklerine odaklanmıştır [yükseltmeleri][upgrades].
 
 Dotfuscator olduğu bir *derleme sonrası* sistem .NET uygulamaları için.
-Visual Studio kullanıcılarına Dotfuscator CE ile bağlanabildiğinizden emin [derlemeleri karartmak] [ obfuscation] ve ekleme [active koruma önlemleri] [ checks] içine Uygulama - tüm Dotfuscator özgün kaynak koduna erişim gerek olmadan.
+Visual Studio kullanıcılarına Dotfuscator CE ile bağlanabildiğinizden emin [derlemeleri karartmak][obfuscation] ve ekleme [active koruma önlemleri][checks] içine Uygulama - tüm Dotfuscator özgün kaynak koduna erişim gerek olmadan.
 Dotfuscator katmanlı koruma stratejisi oluşturma uygulamanızı birden çok yolla korur.
 
-Dotfuscator CE gibi bir geniş .NET derlemesi ve uygulama türlerini destekler, [Evrensel Windows Platformu (UWP)] [ uwp] ve [Xamarin] [ xamarin].
+Dotfuscator CE gibi bir geniş .NET derlemesi ve uygulama türlerini destekler, [Evrensel Windows Platformu (UWP)][uwp] ve [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Fikri mülkiyet koruması
 
 Uygulama tasarımı, davranış ve uygulama fikri mülkiyet (IP) biçimler.
 Ancak, .NET Framework için oluşturulan uygulamaların temelde books açın değildir; Ters mühendislik .NET derlemeleri için çok kolaydır [üst düzey meta veriler ve Ara kod içerdiğinden][assemblies].
 
-Dotfuscator CE içeren temel [.NET karartma] [ obfuscation] biçiminde [yeniden adlandırma][renaming].
+Dotfuscator CE içeren temel [.NET karartma][obfuscation] biçiminde [yeniden adlandırma][renaming].
 Bu adlandırma önemli bilgiler genel olarak Dotfuscator kodunuzla obfuscating tersine mühendislik, kaynak kodda için yetkisiz erişim riskini azaltır.
 Gizleme çaba sarf, kod incelemesi - IP, ticari sır olarak yasal korunduğunu oluşturma önemli bir adım korumak için de gösterir.
 
 Çoğu [uygulama bütünlüğünü koruma özellikleri](#application-integrity-protection) tersine mühendislik Dotfuscator CE daha fazla süreçlerden kaçınmıştır.
 Örneğin, kötü bir aktör uygulamasının program mantığını anlamak için çalışan bir örneği için bir hata ayıklayıcının girişiminde bulunabilir.
-Dotfuscator ekleme [koruma hata ayıklama davranışı] [ debug] uygulamanıza bu obstruct.
+Dotfuscator ekleme [koruma hata ayıklama davranışı][debug] uygulamanıza bu obstruct.
 
 ## <a name="application-integrity-protection"></a>Uygulama bütünlüğünü koruma
 
 Kaynak kodunuzu korunmasına ek olarak, uygulamanızı tasarlandığı gibi kullanıldığından emin olmak önemli.
 Saldırganlar, uygulamanızın lisanslama ilkeleri (yani, yazılım korsanlığı), çalabilir veya uygulama tarafından işlenen hassas verileri işlemek için ya da uygulamanın davranışını değiştirmek için aşmak için çalma girişiminde bulunabilir.
 
-Dotfuscator CE ekleme [uygulama doğrulama kodu] [ checks] içine dahil olmak üzere derlemelerinizin [koruma kurcalamaya][tamper], [ Anti-hata ayıklama][debug], ve [hologram cihaza] [ root] ölçümleri.
+Dotfuscator CE ekleme [uygulama doğrulama kodu][checks] içine dahil olmak üzere derlemelerinizin [koruma kurcalamaya][tamper], [ Anti-hata ayıklama][debug], ve [hologram cihaza][root] ölçümleri.
 Geçersiz uygulama durumu algılandığında bir doğrulama kodu için [uygun bir şekilde çağırmak durum adresine uygulama koduna bağlı][check-app].
-Veya kodu yazamazlar tercih ederseniz Geçersiz tanıtıcı kullanan uygulama, Dotfuscator de ekleme [yanıt] [ check-action] , kaynak kodunuzda değişiklik gerektirmeden davranışları.
+Veya kodu yazamazlar tercih ederseniz Geçersiz tanıtıcı kullanan uygulama, Dotfuscator de ekleme [yanıt][check-action] , kaynak kodunuzda değişiklik gerektirmeden davranışları.
 
-Bu aynı yöntemlerin çoğu zorlamak için de kullanılabilir [yaşam son teslim tarihlerine] [ shelflife] yazılım değerlendirme veya deneme sürümü için.
+Bu aynı yöntemlerin çoğu zorlamak için de kullanılabilir [yaşam son teslim tarihlerine][shelflife] yazılım değerlendirme veya deneme sürümü için.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
