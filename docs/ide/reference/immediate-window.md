@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992639"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424246"
 ---
 # <a name="immediate-window"></a>Komut penceresi
 
@@ -102,7 +102,7 @@ Büyüktür (>), Visual Studio komutları verirken oturum girin **hemen** pencer
 
 İçinde herhangi bir önceki satırdaki tıkladığınızda **hemen** penceresinde tıklattığınızda, otomatik olarak işaretleme moduna. Bu, seçin, düzenleme ve herhangi bir metin düzenleyicisinde yaptığınız ve bunları geçerli satıra yapıştırmanıza gibi önceki komutların metnini kopyalamak sağlar.
 
-## <a name="the-equals-sign"></a>Equals sign(=)
+## <a name="the-equals-sign-"></a>Eşittir işareti (=)
 
 Girmek için kullanılan pencere `EvaluateStatement` komut belirleyen bir eşittir işareti (=) karşılaştırma işleci veya bir atama işleci olarak yorumlanır.
 

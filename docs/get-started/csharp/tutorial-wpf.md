@@ -14,16 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3aa55ede0d6d36e455a9ab7cc007afede0ff465d
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 757ec79e2ae1996c6453fd01b20e71e9a6d62594
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089204"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424518"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: İle basit uygulama oluşturmaC#
 
 Bu izlenecek yolu tamamlayarak, birçok araçları, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Bir "Hello, World" uygulaması oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında çalışma hakkında bilgi edinirken, hatalarını ayıklama ([IDE](visual-studio-ide.md)).
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="configure-the-ide"></a>IDE'yi yapılandırma
 

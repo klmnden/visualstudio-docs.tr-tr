@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fcd76cb535fdf7f043189720f291393e4ed9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919076"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424505"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Öğretici: Visual Studio'da Visual Basic ile çalışmaya başlama
 
 Bu öğreticide Visual Basic (VB) oluşturmak ve birkaç farklı konsol uygulamaları çalıştırma ve bazı özellikleri incelemek için Visual Studio kullanacaksınız [Visual Studio tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 

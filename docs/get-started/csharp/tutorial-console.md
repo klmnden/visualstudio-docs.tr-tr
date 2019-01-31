@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f303b67365b5f824fe1ee114921ddc94c333922
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936963"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424531"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Öğretici: Basit bir C# Visual Studio'da konsol uygulaması
 
@@ -530,7 +530,7 @@ namespace Calculator
 Bu öğreticiyi tamamlamak Tebrikler! Daha da fazla bilgi edinmek için şu öğretici ile devam edin.
 
 > [!div class="nextstepaction"]
-> [C# Eğitmenleri](/dotnet/csharp/tutorials/)
+> [Daha fazla devam C# öğreticiler](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

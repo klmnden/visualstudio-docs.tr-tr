@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999762"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424388"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
-Tanımlamak ve kod durumunu korumak için kod kapsamından emin olmak ve müşterilerinizin yapmadan önce hataları ve hataları bulmak için birim testlerini çalıştırmak için Visual Studio'yu kullanın.
+Visual Studio, tanımlamak ve kod durumunu korumak, kod kapsamından emin olmak için birim testleri çalıştırın ve müşterilerinizin yapmadan önce hataları ve hataları bulmak için kullanın. Sık kodunuzun düzgün çalıştığından emin olmak için birim testlerinizi çalıştırın.
 
 ## <a name="create-unit-tests"></a>Birim testleri oluşturma
 
-Birim testleri oluşturun ve bunları sık kodunuzun düzgün çalıştığından emin olmak için çalıştırın.
+Bu bölümde, yüksek düzeyde birim testi projesi oluşturma işlemini açıklar.
+
+> [!TIP]
+> "HelloWorld", test altındaki projeye bir örnek projesidir ve hiçbir kodunu gösterilecek içindir. Test için bkz: bir "HelloWorld" projesi oluşturmak istiyorsanız [ilk kez oluşturma C# konsol uygulaması](../ide/quickstart-csharp-console.md). İzlenecek tam yol makale için bkz: [oluşturma ve çalıştırma birim testleri için yönetilen kod](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Birim testi projesi oluşturun.
 
@@ -150,6 +153,7 @@ Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçeveler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Birim Testleri Oluştur komutu](create-unit-tests-menu.md)
 * [Intellitest ile testleri oluşturma](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Test Gezgini ile testleri çalıştırma](run-unit-tests-with-test-explorer.md)

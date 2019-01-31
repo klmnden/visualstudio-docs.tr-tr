@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 49177cf534c99d955474abbd9586effd33bf1cb9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ff1b15c42b01894044a01b99f506dc343333c0e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943948"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424479"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Öğretici: C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama
 
@@ -31,7 +31,7 @@ Visual Studio kullanarak ASP.NET Core ile C# geliştirme için Bu öğreticide, 
 
 ### <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ### <a name="update-visual-studio"></a>Visual Studio’yu güncelleştirme
 

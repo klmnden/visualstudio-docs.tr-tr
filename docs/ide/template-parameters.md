@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935026"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424453"
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
 Şablon örneği başlatıldığında, şablonunuzda değerleri değiştirebilirsiniz. Bu işlevini ayarlamak için kullanın *şablon parametreleri*. Şablon parametresi sınıf adları ve şablonda ad alanları gibi değerleri değiştirmek için kullanılabilir. Şablon Sihirbazı, bir kullanıcı yeni bir öğe ekler veya proje bu parametreler, arka planda çalışır.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Bildirme ve şablon parametreleri etkinleştirme
+## <a name="declare-and-enable-template-parameters"></a>Bildirme ve şablon parametreleri etkinleştir
 
 Şablon parametreleri biçimi $ içinde bildirilen*parametre*$. Örneğin:
 
@@ -32,7 +32,7 @@ ms.locfileid: "54935026"
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Parametre değiştirme şablonlarındaki etkinleştirmek için
+### <a name="enable-parameter-substitution-in-templates"></a>Parametre değiştirme şablonlarındaki etkinleştir
 
 1. İçinde *.vstemplate* dosya, şablonunu bulun `ProjectItem` parametre değiştirme etkinleştirmek istediğiniz öğeye karşılık gelen öğe.
 
@@ -46,11 +46,12 @@ ms.locfileid: "54935026"
 
 ## <a name="reserved-template-parameters"></a>Ayrılmış şablon parametreleri
 
-Aşağıdaki tabloda, herhangi bir şablon kullanılabilecek ayırtılmış şablon parametreleri listeler.
+Herhangi bir şablon tarafından kullanılan ayrılmış şablon parametreleri aşağıdaki tabloda listelenmektedir:
 
 |Parametre|Açıklama|
 |---------------|-----------------|
 |clrversion|Geçerli sürümü ortak dil çalışma zamanı (CLR).|
+|ext_*|Ekleme `ext_` üst şablonun değişkenlerine başvurmak için herhangi bir parametre öneki. Örneğin: `ext_safeprojectname`|
 |1-10 GUID|' % S'projesi bir proje dosyasında GUID değiştirmek için kullanılan bir GUID. En fazla 10 benzersiz GUID'ler belirtebilirsiniz (örneğin, `guid1`).|
 |ItemName|Kullanıcı tarafından sağlanan adı **Yeni Öğe Ekle** iletişim kutusu.|
 |MachineName|Geçerli bilgisayar adı (örneğin, Computer01).|
@@ -118,6 +119,7 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Nasıl yapılır: Bir şablonda parametreleri ikame](how-to-substitute-parameters-in-a-template.md)
 - [Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)
 - [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)
 - [Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)

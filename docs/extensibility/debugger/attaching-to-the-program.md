@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42d61b940d7ca30020ece1d1b1aab200360e9b0c
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014607"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424557"
 ---
 # <a name="attach-to-the-program"></a>Programa ekleme
 Programlarınızın uygun bağlantı noktası ile kaydettikten sonra hata ayıklayıcı, hata ayıklamak istediğiniz program eklemeniz gerekir.  
@@ -35,7 +35,7 @@ Programlarınızın uygun bağlantı noktası ile kaydettikten sonra hata ayıkl
   
    Sizin DE ayıklanacak uygulamayla aynı işlemde çalıştırmak sonra aşağıdaki yöntemleri uygulamalıdır [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
-- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   

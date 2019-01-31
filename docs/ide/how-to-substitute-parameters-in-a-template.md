@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031766"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424284"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Nasıl yapılır: Bir şablonda parametreleri ikame etme
 
@@ -25,7 +25,7 @@ ms.locfileid: "55031766"
 
 Aşağıdaki bölümde "güvenli proje adı" ile bir ad alanı adını değiştirmek için bir şablonu nasıl değiştireceğiniz gösterilmektedir.
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Ad alanı adı değiştirmek için bir parametre kullanmak için
+## <a name="example---namespace-name"></a>Örnek - ad alanı adı
 
 1. Bir veya daha fazla kod dosyaları şablonda parametre ekleyin. Örneğin:
 

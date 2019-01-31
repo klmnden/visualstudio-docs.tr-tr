@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985922"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424220"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Nasıl yapılır: Birden çok proje şablonu oluşturma
 
@@ -69,17 +69,20 @@ Kök *vstemplate* birden çok proje şablonu, aşağıdaki yollarla bir tek proj
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Varolan bir çözümden bir birden çok proje şablonu oluşturmak için
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Varolan bir çözümden birden çok proje şablonu oluşturma
 
 1. Bir çözüm oluşturun ve iki veya daha fazla proje ekleyin.
 
 1. Bunlar için bir şablonu dışarı aktarılmasına izin hazır olana kadar projeleri özelleştirin.
 
+   > [!TIP]
+   > Kullanıyorsanız [şablon parametreleri](template-parameters.md) ve istediğiniz üst şablonundan değişkenlerine başvurmak parametrenin adı ön eki `ext_`. Örneğin: `$ext_safeprojectname$`
+
 1. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar**.
 
    **Şablonu Dışarı Aktarma Sihirbazı** açılır.
 
-1. Üzerinde **seçtiğiniz şablon türüne** sayfasında **proje şablonu**. İçin bir şablonu dışarı aktarma ve ardından istediğiniz projeyi seçin **sonraki**.
+1. Üzerinde **seçtiğiniz şablon türüne** sayfasında **proje şablonu**. İçin bir şablonu dışarı aktarma ve ardından istediğiniz projeleri seçin **sonraki**. (Bu adımları çözümde her proje için yinelemeniz.)
 
 1. Üzerinde **şablon seçenekleri** şablonunuz için bir ad ve isteğe bağlı bir açıklama, simge ve önizleme görüntüsü girin. Seçin **son**.
 
