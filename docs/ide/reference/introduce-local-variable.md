@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fcd6032879dc8e218aa782d27a34250982fb7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a595de3b80635ad6974f2abb94bd9645d5a7f7
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961955"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483823"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio'da bir yerel değişken ekleme
 
@@ -47,11 +47,11 @@ Bu kod oluşturma için geçerlidir:
       - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - &nbsp; ![Ampul](media/bulb-cs.png) kırmızı dalgalı çizgi içeren satırda metin imleci ise sol kenar boşluğunda görünür simge.
+      - &nbsp; ![Tornavida](media/screwdriver.png) Sol kenar boşluğunda vurgulanan ifadesiyle satırındaki metin imleci ise görüntülenen simge.
 
    ![Yerel Önizleme Ekle](media/local-preview-cs.png)
 
-3. Seçin **(tüm örnekleri için) bir yerel değişken Ekle '*ifade*'** aşağı açılan menüden.
+3. Seçin **'expression' (tüm örnekleri) için yerel tanıt** aşağı açılan menüden.
 
    > [!TIP]
    > Kullanım **değişiklik önizlemesi** Önizleme pencerenin alt kısmındaki bağlantı [tüm değişiklikleri görmek için](../../ide/preview-changes.md) , oluşturulacak, seçim yapmadan önce.
@@ -71,5 +71,5 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Oluşturma](../code-generation-in-visual-studio.md)
-- [Değişiklikleri Önizleme](../../ide/preview-changes.md)
+- [Kod oluşturma](../code-generation-in-visual-studio.md)
+- [Değişiklikleri Önizle](../../ide/preview-changes.md)

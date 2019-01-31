@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924606"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484205"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>Birim testi projesi oluşturma
 
 1. Üzerinde **dosya** menüsünde **Ekle** > **yeni proje**.
+
+   > [!TIP]
+   > Varolan çözüme ek bir proje eklemek için birkaç yolu vardır. Çözüm üzerinde sağ **Çözüm Gezgini** ve **Ekle** > **yeni proje**. Ya da seçebilirsiniz **dosya** > **yeni** > **proje**ve ardından **yeni proje** iletişim kutusunda **Eklemek için çözüm** seçeneği:
+   >
+   > ![Yeni Proje iletişim kutusunda çözüm seçeneği ekleme](media/add-to-solution.png)
 
 2. İçinde **yeni proje** iletişim kutusunda **yüklü**, genişletme **Visual C#** ve ardından **Test**.
 

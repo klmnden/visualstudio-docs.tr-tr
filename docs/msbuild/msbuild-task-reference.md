@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951293"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483984"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild görev başvurusu
 Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşağıdaki listede bulunan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Zaman [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] yüklenen, ek görevler oluşturmak için kullanılan olan [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeleri. Daha fazla bilgi için [Visual C++ görevleri](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
  [Getassemblyıdentity görevi](../msbuild/getassemblyidentity-task.md)  
  Belirtilen dosyalardan derleme kimlikleri alır ve kimlik bilgilerini çıkarır.  
 
- [GetFrameworkPath görevi](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash görevi](../msbuild/getfilehash-task.md)  
+ Bir dosyanın içeriğini veya dosya kümesini sağlama toplamlarını hesaplar.
+
+[GetFrameworkPath görevi](../msbuild/getframeworkpath-task.md)  
  Yolunu alır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemeler.  
 
  [GetFrameworkSdkPath task](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ Görevler, derleme işlemi sırasında çalışan kodu sağlar. Görevleri aşa�
 
  [Vbc görevi](../msbuild/vbc-task.md)  
  Yürütülebilir dosyalar, dinamik bağlantı kitaplıkları veya kod modüllerini oluşturmak için Visual Basic Derleyicisi çağırır...  
+
+ [VerifyFileHash görevi](../msbuild/verifyfilehash-task.md)  
+ Bir dosyanın beklenen dosya karması eşleştiğini doğrular.
 
  [Uyarı görevi](../msbuild/warning-task.md)  
  Günlükleri bir derleme sırasında bir uyarı değerlendirilen bir koşullu ifadeye göre.  

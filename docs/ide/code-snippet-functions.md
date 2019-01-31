@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020470"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483724"
 ---
 # <a name="code-snippet-functions"></a>Kod parçacığı işlevleri
 
@@ -30,11 +30,11 @@ Aşağıdaki tablo ile kullanmak için kullanılabilir işlevler açıklar `Func
 
 |İşlev|Açıklama|Dil|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Tarafından belirtilen numaralandırma üyeleri için bir switch ifadesi ve bir dizi case deyimleri oluşturur `EnumerationLiteral` parametresi. `EnumerationLiteral` Parametresi bir numaralandırma sabit değeri başvurusu veya bir sabit listesi türü olmalıdır.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Tarafından belirtilen numaralandırma üyeleri için bir switch ifadesi ve bir dizi case deyimleri oluşturur `EnumerationLiteral` parametresi. `EnumerationLiteral` Parametresi bir numaralandırma sabit değeri başvurusu veya bir sabit listesi türü olmalıdır.|C#|
 |`ClassName()`|Eklenen kod parçacığı içeren sınıf adını döndürür.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Azaltır *TypeName* en basit haliyle kod parçacığını çağrıldığı bağlam parametresi.|C#|
+|`SimpleTypeName(TypeName)`|Azaltır *TypeName* en basit haliyle kod parçacığını çağrıldığı bağlam parametresi.|C#|
 
-## <a name="example"></a>Örnek
+## <a name="generateswitchcases-example"></a>GenerateSwitchCases örneği
 
 Aşağıdaki örnek nasıl kullanılacağını gösterir `GenerateSwitchCases` işlevi. Ne zaman bu kod parçacığı eklenir ve bir numaralandırma girilir `$switch_on$` değişmez değeri `$cases$` değişmez değeri oluşturur bir `case` deyimi için listedeki her bir değer.
 
@@ -76,7 +76,7 @@ Aşağıdaki örnek nasıl kullanılacağını gösterir `GenerateSwitchCases` i
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Örnek
+## <a name="classname-example"></a>ClassName örneği
 
 Aşağıdaki örnek nasıl kullanılacağını gösterir `ClassName` işlevi. Bu kod parçacığı eklendiğinde `$classname$` değişmez değeri, kod dosyanın bu konumda kapsayan sınıfın adı ile değiştirilir.
 
@@ -123,7 +123,7 @@ Aşağıdaki örnek nasıl kullanılacağını gösterir `ClassName` işlevi. Bu
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Örnek
+## <a name="simpletypename-example"></a>SimpleTypeName örneği
 
 Bu örnek nasıl kullanılacağını gösterir `SimpleTypeName` işlevi. Bu kod parçacığı bir kod dosyası yerleştirildiğinde `$SystemConsole$` değişmez değeri, en basit biçimi ile değiştirilecek <xref:System.Console> kod parçacığını çağrıldığı bağlamda türü.
 

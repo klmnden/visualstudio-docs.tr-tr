@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010395"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484140"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 
@@ -41,7 +41,7 @@ Bazı yeni başlayanlar için bazı renklerini görmek daha zordur. Daha fazla K
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Kodunuz hakkında yararlı bilgiler açığa çıkarmak için ek açıklamalarını kullanma
 
-Visual Studio düzenleyicisinde, "vb. yer işaretleri, özellikleri ve lightbulbs, hata ve uyarı"squiggles"gibi bir kod satırında belirli noktalarda özellikleri hakkında bilmeniz olanak tanıyan birçok metin Kenarlıklar" içerir. Ve ardından bu Kenarlıklar arasında gezinebilirsiniz yardımcı olmak için set "Satır ek açıklamalarını göster" komutunu kullanabilirsiniz.
+Visual Studio düzenleyicisinde, "vb. yer işaretleri, özellikleri ve tornavida ve ampul simgeleri, hata ve uyarı"squiggles"gibi bir kod satırında belirli noktalarda özellikleri hakkında bilmeniz olanak tanıyan birçok metin Kenarlıklar" içerir. Ve ardından bu Kenarlıklar arasında gezinebilirsiniz yardımcı olmak için set "Satır ek açıklamalarını göster" komutunu kullanabilirsiniz.
 
   ![Satır ek açıklamalarını göster komut kümesini kullan](media/show-line-annotations-command-set.png)
 

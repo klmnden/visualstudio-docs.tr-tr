@@ -1,6 +1,6 @@
 ---
 title: Yerel klasöre dağıtma
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -10,18 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0260be91e89a8ed1f9ce0cef89a5e361933ecc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0772e44bf7636edd84c88b3dbaedce7bf2f51604
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007717"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483568"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio kullanarak yerel bir klasöre uygulama dağıtma
 
 Kullanabileceğiniz **Yayımla** ASP.NET, ASP.NET Core, .NET Core ve Python uygulamaları yerel bir klasöre Visual Studio'dan yayımlamak için aracı. Node.js için adımları desteklenir ancak kullanıcı arabirimi farklıdır.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Yerel bir klasöre bir Windows Masaüstü uygulamasını yayınlamak gerekiyorsa bkz [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# veya Visual Basic) veya [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) (C++).
 
 ## <a name="deploy-to-a-local-folder"></a>Yerel klasöre dağıtma
 
@@ -33,7 +36,7 @@ Kullanabileceğiniz **Yayımla** ASP.NET, ASP.NET Core, .NET Core ve Python uygu
 
 1. İçinde **yayımlama hedefi seçin** iletişim kutusunda **klasör**.
 
-    ![Yayımlama seçilmeli olarak yerel klasörü seç](../deployment/media/quickstart-publish-folder.png "Klasör Seç")
+    ![Yayımlama hedefi olarak yerel klasörü seç](../deployment/media/quickstart-publish-folder.png "Klasör Seç")
 
 1. Bir yol girin veya seçin **Gözat** yerel klasörü belirtin.
 

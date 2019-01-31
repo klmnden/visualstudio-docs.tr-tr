@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115ffb5c22b45a8cdae1f404556d9aab3ed38bad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e90993a6600adaa7f14242289ecb91cf2e74634
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964619"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484114"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce test geliştirmesi
 
@@ -64,7 +64,7 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
    > [!NOTE]
    >  IntelliSense için IntelliSense deyim tamamlamada artık iki seçenek sunar: *tamamlama modunu* ve *öneri modu*. Öneri Modu tanımlanmadan önce sınıflar ve üyeler kullanılır durumlar için kullanın. Olduğunda bir **IntelliSense** penceresi açıksa, basabilirsiniz **Ctrl**+**Alt**+**alanı** arasında geçiş yapmak için tamamlama modu ile öneri modu. Bkz: [kullanım IntelliSense](../ide/using-intellisense.md) daha fazla bilgi için. Öneri Modu yardımcı olacak yazarken `Automobile` sonraki adımda.
 
-3. Bulun `TestMethod1()` yöntemi ve yeniden adlandırın `DefaultAutomobileIsInitializedCorrectly()`. Bu yöntemde, bir sınıf adlı yeni bir örneğini oluşturma `Automobile`aşağıdaki ekran görüntülerinde gösterildiği gibi. Bir derleme zamanı hatası gösteren dalgalı çizgi görünür ve bir [hızlı Eylemler](../ide/quick-actions.md) ampul sol kenar boşluğunda görünür (C# yalnızca), veya üzerine gelin, doğrudan dalgalı çizgi altında.
+3. Bulun `TestMethod1()` yöntemi ve yeniden adlandırın `DefaultAutomobileIsInitializedCorrectly()`. Bu yöntemde, bir sınıf adlı yeni bir örneğini oluşturma `Automobile`aşağıdaki ekran görüntülerinde gösterildiği gibi. Bir derleme zamanı hatası gösteren dalgalı çizgi görünür ve bir [hızlı Eylemler](../ide/quick-actions.md) hata ampul, sol kenar boşluğunda veya doğrudan dalgalı çizgi aşağıda geldiğinizde varsa görünür.
 
     ![Visual Basic'te hızlı Eylemler](../ide/media/genclass_underlinevb.png)
 
@@ -90,7 +90,7 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Kod üzerinde iki tanımlanmamış özelliklere başvurduğundan `Automobile`, altında dalgalı çizgi görünüyor `Model` ve `TopSpeed`. Üzerine `Model` ve **hızlı Eylemler** ampul ve ardından **'Automobile.Model' özelliğini üret**.
+2. Kod üzerinde iki tanımlanmamış özelliklere başvurduğundan `Automobile`, altında dalgalı çizgi görünüyor `Model` ve `TopSpeed`. Üzerine `Model` ve **hızlı Eylemler** hata ampul ve ardından **'Automobile.Model' özelliğini üret**.
 
 3. İçin bir özellik taslağı oluşturmak `TopSpeed` özelliği aynı şekilde.
 
@@ -104,12 +104,12 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Tıklayın **hızlı Eylemler** ampul altında kırmızı dalgalı oku ve ardından **'Otomobil' Oluşturucu üret**.
+2.  Tıklayın **hızlı Eylemler** hata ampul altında kırmızı dalgalı oku ve ardından **'Otomobil' Oluşturucu üret**.
 
      İçinde `Automobile` sınıf dosyası, yeni oluşturucuyu Oluşturucusu çağrısında kullanılan yerel değişkenlerin adlarını incelenmiştir dikkat edin, aynı adlara sahip özellikler bulundu `Automobile` sınıf ve oluşturucu gövdesinde için sağlanan kod bağımsız değişken değerleri depolamak `Model` ve `TopSpeed` özellikleri.
 
 
-3.  Yeni oluşturucuyu oluşturduktan sonra varsayılan oluşturucu çağrısı altında dalgalı çizgi görünür `DefaultAutomobileIsInitializedCorrectly`. Hata iletisi `Automobile` sınıfın sıfır bağımsız değişken alan hiçbir oluşturucu vardır. Parametreleri olmayan bir açık bir varsayılan oluşturucu oluşturmak için tıklayın **hızlı Eylemler** ampul ve ardından **'Otomobil' Oluşturucu üret**.
+3.  Yeni oluşturucuyu oluşturduktan sonra varsayılan oluşturucu çağrısı altında dalgalı çizgi görünür `DefaultAutomobileIsInitializedCorrectly`. Hata iletisi `Automobile` sınıfın sıfır bağımsız değişken alan hiçbir oluşturucu vardır. Parametreleri olmayan bir açık bir varsayılan oluşturucu oluşturmak için tıklayın **hızlı Eylemler** hata ampule ve ardından **'Otomobil' Oluşturucu üret**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Bir yöntem Saplaması
 Belirtimi belirten varsayar yeni bir `Automobile` içine koyabilirsiniz bir `IsRunning` , durum, `Model` ve `TopSpeed` özellikleri için varsayılan değerlerin dışında bir şey ayarlanır.
@@ -119,7 +119,7 @@ Belirtimi belirten varsayar yeni bir `Automobile` içine koyabilirsiniz bir `IsR
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Tıklayın **hızlı Eylemler** ampul için `myAuto.Start` yöntemi çağırın ve ardından **'Automobile.Start' metodunu üret**.
+2.  Tıklayın **hızlı Eylemler** hata ampul `myAuto.Start` yöntemi çağırın ve ardından **'Automobile.Start' metodunu üret**.
 
 3.  Tıklayın **hızlı Eylemler** ampul için `IsRunning` özelliği ve ardından **'Automobile.IsRunning' özelliğini üret**.
 

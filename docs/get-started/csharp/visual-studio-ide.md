@@ -12,18 +12,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 80edc9e5f181561d063dd9e497c837a961c2815d
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424597"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484179"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE Hoş Geldiniz |C#
 
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
-
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ![Visual Studio IDE](../media/visual-studio-ide.png)
 
@@ -100,7 +98,7 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE yükleyin
 
-Bu genel bakış makalesi, basit bir proje oluşturma işlemini gösterir ve bazı şeyleri çalışırken Visual Studio ile kullanma gibi yapabileceğiniz [IntelliSense](../../ide/using-intellisense.md) programın sırasında bir değişkenin değerini görmek için bir uygulama kodlama Yardımı olarak, hata ayıklama yürütme ve renk temasını değiştirme. Başlamak için [Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve sisteminize yüklenecek.
+Bu genel bakış makalesi, basit bir proje oluşturma işlemini gösterir ve bazı şeyleri çalışırken Visual Studio ile kullanma gibi yapabileceğiniz [IntelliSense](../../ide/using-intellisense.md) programın sırasında bir değişkenin değerini görmek için bir uygulama kodlama Yardımı olarak, hata ayıklama yürütme ve renk temasını değiştirme. Başlamak için [Visual Studio 2017'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ve sisteminize yüklenecek.
 
 Modüler yükleyici seçin ve yüklemek sağlayan *iş yükleri*, programlama dili veya tercih ettiğiniz platform için gerekli özellikler grupları olduğu. İçin adımları [bir program oluşturma](#create-a-program), seçtiğinizden emin olun **.NET Core çoklu platform geliştirme** yüklemesi sırasında iş yükü.
 

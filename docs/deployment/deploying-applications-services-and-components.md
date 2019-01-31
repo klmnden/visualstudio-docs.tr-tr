@@ -2,7 +2,7 @@
 title: Dağıtım özellik turu
 description: Visual Studio'dan uygulamaları dağıtmak için seçenekleri hakkında bilgi edinin.
 ms.custom: mvc
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4046abd84443bd1cff6b6e618f2dfba2de5e09dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 920734a76c184b8c0a44fb5118c40fc79ebd539c
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974938"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483919"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'daki dağıtımı da ilk bakma
 
@@ -48,20 +48,28 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
 ## <a name="publish-to-azure"></a>Azure'a Yayımlama
 
-- **ASP.NET**, **ASP.NET Core**, **Python**, ve **Node.js**: Azure App Service veya bir Azure sanal makinesi için uygulamaları hızlı bir şekilde dağıtmak için Yayımla Aracı'nı kullanabilirsiniz. Çözüm Gezgini'nde projeye sağ tıklayıp seçin **Yayımla**. (Tüm yayımlama profilleri daha önce yapılandırdıysanız, ardından tıklamanız **yeni profil oluşturma**.) Yayımla iletişim kutusunda seçin **App Service** veya **Azure sanal makineler**ve ardından yapılandırma adımlarını izleyin.
+- **ASP.NET**, **ASP.NET Core**, **Python**, ve **Node.js**: Azure App Service veya Azure App Service (kapsayıcılar kullanarak) Linux yayımlamak aşağıdaki yöntemlerden birini kullanarak.
 
-    ![Azure uygulama hizmeti seçin](../deployment/media/quickstart-publish-azure.png "Azure uygulama hizmeti seçin")
+  - Azure DevOps ile sürekli (veya otomatik) dağıtımı uygulamalar için kullanmak [Azure işlem hatları](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-    Visual Studio 2017 sürüm 15.7 ve üzeri, ASP.NET Core uygulamaları dağıtabileceğiniz **Linux için App Service**.
+  - Tek seferlik (veya elle) dağıtımı uygulamalar için kullanmak **Yayımla** Visual Studio'da araç.
 
-    Python uygulamaları için Ayrıca bkz: [Python - Azure App Service'te yayımlama](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+  Sunucunun daha özelleştirilmiş bir yapılandırma sağlayan bir dağıtım için de kullanabilirsiniz **Yayımla** uygulamaları dağıtmak için bir Azure sanal makinesi için aracı.
 
-    Hızlı bir giriş için bkz. [azure'a Yayımla](quickstart-deploy-to-azure.md) ve [Linux'a yayımlama](quickstart-deploy-to-linux.md). Ayrıca bkz [Azure'a bir ASP.NET Core uygulaması yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Git'i kullanarak dağıtım için bkz [ASP.NET core'un Git ile azure'a sürekli dağıtım](/aspnet/core/publishing/azure-continuous-deployment).
+  Kullanılacak **Yayımla** aracı, Çözüm Gezgini'nde projeye sağ tıklayıp seçin **Yayımla**. (Tüm yayımlama profilleri daha önce yapılandırdıysanız, ardından tıklamanız **yeni profil oluşturma**.) Yayımla iletişim kutusunda seçin **App Service** veya **Azure sanal makineler**ve ardından yapılandırma adımlarını izleyin.
 
-    Bir yayımlama profili, Visual Studio için Azure App Service'ten alma hakkında daha fazla bilgi için bkz: [yayımlama ayarlarını içeri aktarma ve Azure'a dağıtma](../deployment/tutorial-import-publish-settings-azure.md).
+  ![Azure uygulama hizmeti seçin](../deployment/media/quickstart-publish-azure.png "Azure uygulama hizmeti seçin")
 
-    > [!NOTE]
-    > Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [buradan kaydolun](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+  Visual Studio 2017 sürüm 15.7 başlayarak, ASP.NET Core uygulamaları dağıtabilirsiniz **Linux için App Service**.
+
+  Python uygulamaları için Ayrıca bkz: [Python - Azure App Service'te yayımlama](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+
+  Hızlı bir giriş için bkz. [azure'a Yayımla](quickstart-deploy-to-azure.md) ve [Linux'a yayımlama](quickstart-deploy-to-linux.md). Ayrıca bkz [Azure'a bir ASP.NET Core uygulaması yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Git'i kullanarak dağıtım için bkz [ASP.NET core'un Git ile azure'a sürekli dağıtım](/aspnet/core/publishing/azure-continuous-deployment).
+
+  Bir yayımlama profili, Visual Studio için Azure App Service'ten alma hakkında daha fazla bilgi için bkz: [yayımlama ayarlarını içeri aktarma ve Azure'a dağıtma](../deployment/tutorial-import-publish-settings-azure.md).
+
+  > [!NOTE]
+  > Zaten bir Azure hesabınız yoksa, şunları yapabilirsiniz [buradan kaydolun](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Web'de Yayımla veya ağ paylaşımına dağıtma
 
@@ -111,9 +119,9 @@ Bir masaüstü uygulamasının karmaşık bir kurulum daha gerektirip gerektirme
 
 Daha karmaşık geliştirme ve test uygulamalarınızı sanal ortamlara dağıtarak etkinleştirebilirsiniz. Daha fazla bilgi için [bir laboratuvar ortamında Test](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-## <a name="devops-deployment"></a>DevOps dağıtım
+## <a name="continuous-deployment"></a>Sürekli dağıtım
 
-Bir ekip ortamında, uygulamanızı sürekli dağıtımını etkinleştirmek için Azure işlem hatları kullanabilirsiniz. Daha fazla bilgi için [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts) ve [azure'a Dağıt](/azure/devops/deploy-azure/index?view=vsts).
+Azure işlem hatları, uygulamanızı sürekli dağıtımını etkinleştirmek için kullanabilirsiniz. Daha fazla bilgi için [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts) ve [azure'a Dağıt](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Diğer uygulama türleri için dağıtım
 

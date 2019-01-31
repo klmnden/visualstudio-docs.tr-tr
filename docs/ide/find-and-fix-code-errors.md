@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017103"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483776"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu Visual Studio'da çalışma
 
@@ -89,9 +89,9 @@ Tüm yeni veya güncelleştirilmiş uyarı görünür **hata listesi** IDE alt k
 
 ![Visual Studio hata listesinde uyarılar ile](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Kodu yeniden düzenleyin veya ampuller kullanın
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Kodu yeniden düzenleyin veya düzeltmek için hızlı Eylemler kullanın
 
-[Hızlı Eylemler](../ide/quick-actions.md)tornavida simgesine ya da ampul erişilebilir let satır içi kodu yeniden düzenleyin. Genel uyarıları gidermek için kolay bir yol oldukları hızla ve etkili bir şekilde de C#, C++ ve Visual Basic kodu. Bunlara erişmek için bir uyarı dalgalı oku üzerinde sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler**. Veya imlecinizi renkli dalgalı çizgi içeren satırda olduğunda basın **Ctrl**+**.** veya kenar boşluğunda ampul veya tornavida simgesini seçin. Olası düzeltmeleri veya yeniden düzenlemeler, bu kod satırı için uygulayabileceğiniz bir listesini görürsünüz.
+[Hızlı Eylemler](../ide/quick-actions.md)tornavida simgesine ya da ampul erişilebilir let satır içi kodu yeniden düzenleyin. Genel uyarıları gidermek için kolay bir yol oldukları hızla ve etkili bir şekilde de C#, C++ ve Visual Basic kodu. Bunlara erişmek için bir uyarı dalgalı oku üzerinde sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler**. Veya imlecinizi renkli dalgalı çizgi içeren satırda olduğunda basın **Ctrl**+**.** veya kenar boşluğunda ampul, hata ampul ya da tornavida simgesini seçin. Olası düzeltmeleri veya yeniden düzenlemeler, bu kod satırı için uygulayabileceğiniz bir listesini görürsünüz.
 
 ![Visual Studio ampul Önizleme](../ide/media/quick-actions-options.png)
 

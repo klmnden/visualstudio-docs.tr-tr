@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979068"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484192"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +99,7 @@ Başlatmak için **ekleme** işlemi, imleç türü başvuru konumu çözümlenem
 
 ![Kullanarak, hızlı genişletilmiş görüntü eylem ekleme](../ide/media/addusing-quickaction.png)
 
-Ampul simgesini tıklatın ve ardından **System.Xml; kullanarak** kullanarak otomatik olarak eklemek için yönergesi.
+Hata ampul simgesini tıklatın ve ardından **System.Xml; kullanarak** kullanarak otomatik olarak eklemek için yönergesi.
 
 ### <a name="remove-and-sort-usings"></a>Kullanımları Kaldır ve Sırala
 
@@ -123,7 +123,7 @@ Tarafından oluşturulan yöntem saptamalar **uygulama soyut temel sınıf** öz
 
 Dalgalı kırmızı alt çizgiyle her tanımlanmamış tanımlayıcı altında görünür. Tanımlayıcının fare işaretçisini getirdiğinizde, bir araç ipucunda bir hata iletisi görüntülenir. Uygun seçenekleri görüntülemek için aşağıdaki yordamlardan birini kullanabilirsiniz:
 
-- Tanımlanmamış tanımlayıcı tıklayın. A **hızlı Eylemler** ampul altında tanımlayıcı olarak görünür. Ampul tıklayın.
+- Tanımlanmamış tanımlayıcı tıklayın. A **hızlı Eylemler** hata ampul altında tanımlayıcı olarak görünür. Hata ampul tıklayın.
 
 - Tanımlanmamış tanımlayıcı tıklatın ve sonra basın **Ctrl**+**.** (**Ctrl** + nokta).
 

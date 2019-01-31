@@ -10,12 +10,12 @@ ms.author: shoag
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981705"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483802"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) için uygulama geliştirme
 Evrensel Windows platformu ve bizim bir Windows çekirdek ile masaüstlerine telefonlardan tüm Windows 10 cihazlarda aynı uygulamayı çalıştırabilirsiniz. Visual Studio ve evrensel Windows uygulaması geliştirme araçları ile bu evrensel Windows uygulamaları oluşturun.
@@ -39,7 +39,7 @@ Evrensel Windows platformu yeterlidir, sözleşmeler ve sürümleri koleksiyonud
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 UWP geliştirme yalnızca Windows 10'da destekler. Daha fazla ayrıntı için bkz. Visual Studio [Platform hedefleme](/visualstudio/productinfo/vs2017-compatibility-vs) ve [sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). İsteğe bağlı Evrensel Windows platformu geliştirme iş yükü de gerekir.
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). İsteğe bağlı Evrensel Windows platformu geliştirme iş yükü de gerekir.
 
      ![UWP iş yükü](media/uwp_workload.png)
 
