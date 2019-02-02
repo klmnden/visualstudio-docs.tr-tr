@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bfb9c93c3cf69b13c7879b25e6855f421fbea9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4400135eb48c68dc855bd38c2155c8e23c2c417c
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003869"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571141"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulamayı yayımladığınızda Visual Studio'da yayımlama ayarları
 
@@ -37,7 +37,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve. **NET Framework** geliştirme iş yükü. Bir .NET Core uygulaması için de gerekir. **NET Core** iş yükü.
+* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü.
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
@@ -47,9 +47,9 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 1. Visual Studio çalıştıran bilgisayarda **dosya** > **yeni proje**.
 
-1. Altında **Visual C#**  veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
+1. Altında **Visual C#**  veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (için C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
 
-    Belirtilen proje şablonları görmüyorsanız tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Yüklemelisiniz gerekli Visual Studio iş yüklerini tanımlamak için bu makaledeki önkoşullara bakın.
+    Belirtilen proje şablonları görmüyorsanız tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Yükleme **ASP.NET ve web geliştirme** iş yükü.
 
 1. Seçin ya da **MVC** (.NET Framework) veya **Web uygulaması (Model-View-Controller)** (için .NET Core) emin olun **kimlik doğrulaması yok** seçilir ve ardından **Tamam**.
 

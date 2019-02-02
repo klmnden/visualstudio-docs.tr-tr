@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 14e56ddbedb419b41f413b014391fc69caecc9dd
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344713"
----
-# <a name="visual-studio-2017-documentation"></a>Visual Studio 2017 belgeleri
+# <a name="visual-studio-documentation"></a>Visual Studio belgeleri
 
-Hoş Geldiniz! Bu depoyu Visual Studio 2017 için teknik belgeler için kaynak dosyaları içerir. Konular yayımlanan [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
+Hoş Geldiniz! Bu depoyu Visual Studio teknik belgeler için kaynak dosyaları içerir. Konular yayımlanan [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
 Bu depo için 23 Haziran 2017'den taşınmış olan https://github.com/Microsoft/vsdocs. Eski URL'ler trafiği burada yönlendirilir.
 

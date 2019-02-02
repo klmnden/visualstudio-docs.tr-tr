@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 920734a76c184b8c0a44fb5118c40fc79ebd539c
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 61da2f7de84ca5ab76e244faa7f45a9527f40515
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483919"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571115"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'daki dağıtımı da ilk bakma
 
@@ -44,7 +44,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ çalışma zamanı**: Yerel dağıtım ya da statik bağlama kullanarak Visual C++ çalışma zamanı dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Windows Masaüstü** Windows masaüstü uygulaması bir klasöre ClickOnce dağıtımını kullanarak yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ve Visual Basic). C + +/ CLR bkz [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C/C++ için bkz. [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Azure'a Yayımlama
 
@@ -83,9 +83,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
     Ayrıca, ASP.NET uygulamaları ve Hizmetleri diğer çeşitli yollarla dağıtabilirsiniz. Daha fazla bilgi için [dağıtma ASP.NET web uygulamaları ve Hizmetleri](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++ çalışma zamanı**: Merkezi dağıtım kullanarak Visual C++ çalışma zamanı dağıtabilirsiniz. Daha fazla bilgi için [yerel Masaüstü uygulamaları dağıtma (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
-
-- **Windows Masaüstü** Windows masaüstü uygulaması için bir web sunucusu veya ClickOnce dağıtımını kullanarak bir ağ dosya paylaşımına yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ve [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+- **Windows Masaüstü** Windows masaüstü uygulaması için bir web sunucusu veya ClickOnce dağıtımını kullanarak bir ağ dosya paylaşımına yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ve Visual Basic). C + +/ CLR bkz [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C/C++ için bkz. [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Microsoft Store için yayımlama
 

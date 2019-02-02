@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020575"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571193"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2. Adım: Görünümleri ve şablonların ile bir Django uygulaması oluşturma
 
@@ -35,7 +35,7 @@ Bu adımda, daha fazla bilgi için nasıl:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>2-1. adım: Varsayılan bir yapısı ile uygulama oluşturma
 
-Bir Django uygulaması belirli bir amaç için ilgili dosyaları içeren ayrı bir Python paketidir. Django projesi yansıtan bir web ana bilgisayarı bir tek etki alanı adı ayrı giriş noktalarından herhangi bir sayıda verebilen olgu herhangi bir sayıda uygulamaları içerebilir. Örneğin, www.contoso.com için tek bir uygulama, support.contoso.com için ikinci bir uygulama ve docs.contoso.com için üçüncü bir uygulama bir Django projesi için bir etki alanı contoso.com gibi içerebilir. Bu durumda, Django projesi site düzeyinde URL Yönlendirme ve ayarları işler (içinde kendi *urls.py* ve *settings.py* dosyaları), her uygulama kendi ayrı stil ve iç aracılığıyla davranışını varken Yönlendirme, görünümler, modelleri, statik dosyalar ve yönetim arabirimi.
+Bir Django uygulaması belirli bir amaç için ilgili dosyaları içeren ayrı bir Python paketidir. Django projesi yansıtan bir web ana bilgisayarı bir tek etki alanı adı ayrı giriş noktalarından herhangi bir sayıda verebilen olgu herhangi bir sayıda uygulamaları içerebilir. Örneğin, contoso.com için tek bir uygulama içerebilir gibi bir etki alanı için bir Django projesi `www.contoso.com`, support.contoso.com için ikinci bir uygulama ve docs.contoso.com için üçüncü bir uygulaması. Bu durumda, Django projesi site düzeyinde URL Yönlendirme ve ayarları işler (içinde kendi *urls.py* ve *settings.py* dosyaları), her uygulama kendi ayrı stil ve iç aracılığıyla davranışını varken Yönlendirme, görünümler, modelleri, statik dosyalar ve yönetim arabirimi.
 
 Bir Django uygulaması genellikle standart bir dosya kümesi ile başlar. Visual Studio öğe şablonları aynı amaca hizmet eder bir tümleşik menü komutu ile birlikte bir Django projesi içinde bir Django uygulaması başlatılamadı sağlar:
 

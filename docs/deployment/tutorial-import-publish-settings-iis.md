@@ -1,7 +1,7 @@
 ---
 title: Yayımlama alarak IIS yayımlama ayarları
 description: Oluşturma ve bir uygulamayı Visual Studio'dan IIS dağıtmak için bir yayımlama profilini İçeri Aktar
-ms.date: 05/07/2018
+ms.date: 01/31/2019
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 064eb9f57db538df4cae32777e9ac61359ddea4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 392770ae5a4ae37431c588d8d15f26a318bdc2c2
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026886"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571062"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -38,19 +38,21 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 yüklü olması gerekir ve **ASP.NET** ve **.NET Framework** geliştirme iş yükü. Bir .NET Core uygulaması için de ihtiyacınız **.NET Core** iş yükü.
+* Geliştirme bilgisayarınızda Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü.
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-* Yayımlama ayarları dosyası, IIS'den üretmek için Windows Server 2012 veya Windows Server 2016 çalıştıran bir bilgisayar olması gerekir ve IIS Web sunucusu rolü doğru yapılandırılmış olmalıdır. ASP.NET 4.5 ya da ASP.NET Core ayrıca yüklenmesi gerekir. ASP.NET Core için bkz: [IIS yayımlama](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Sunucunuzda, Windows Server 2012 veya Windows Server 2016 çalıştırmalıdır ve olmalıdır [IIS Web sunucusu rolü](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) düzgün yüklenmemiş (Yayımlama ayarları dosyası oluşturmak için gereken (*\*. publishsettings*)). ASP.NET 4.5 ya da ASP.NET Core, sunucuda ayrıca yüklenmelidir. ASP.NET 4.5 ' ayarlamak için bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core ' ayarlamak için bkz [ana bilgisayar Windows IIS üzerinde ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 
 1. Visual Studio çalıştıran bilgisayarda **dosya** > **yeni proje**.
 
-1. Altında **Visual C#**  veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
+1. Altında **Visual C#**  veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (için C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
 
-    Belirtilen proje şablonları görmüyorsanız tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Yüklemelisiniz gerekli Visual Studio iş yüklerini tanımlamak için bu makaledeki önkoşullara bakın.
+    Belirtilen proje şablonları görmüyorsanız tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Yükleme **ASP.NET ve web geliştirme** iş yükü.
+
+    (ASP.NET veya ASP.NET Core) seçtiğiniz proje şablonu karşılık gelmelidir 
 
 1. Seçin ya da **MVC** (.NET Framework) veya **Web uygulaması (Model-View-Controller)** (için .NET Core) emin olun **kimlik doğrulaması yok** seçilir ve ardından **Tamam**.
 

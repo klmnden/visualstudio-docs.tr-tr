@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 423a153c42b8ca07cd3a78e7ab78721fa6fd67e3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a4b94a26b8f22ee87e42a1f890c58ab1299524f
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935676"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571089"
 documentType: LandingData
 title: Visual Studio ile Azure Geliştirme
 metadata:
@@ -19,7 +19,7 @@ metadata:
   ms.author: ghogen
   ms.custom: seodec18
 sections:
-- title: Azure'a Yayımlama
+- title: Azure App Service'e dağıtma
   items:
   - type: paragraph
     text: Visual Studio ile hazırlık veya üretim ortamları için uygulamanızı Azure'a dağıtın veya sürekli tümleştirme ve dağıtım (CI/CD) ayarlayın.
@@ -32,17 +32,12 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: Azure’a ASP.NET Core uygulaması yayımlama
+      title: Azure'da ASP.NET Core uygulaması dağıtma
     - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NET.svg
-      title: Bir ASP.NET Web uygulamasını Azure'da yayımlama
-    - href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-      title: Azure İşlevleri yayımlama
+      title: Bir ASP.NET Web uygulamasını Azure'a dağıtma
     - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
       html: <p></p>
       image:
@@ -57,8 +52,8 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
-      title: Azure VM'ye ASP.NET Web Uygulaması yayımlama
-- title: Azure App Services ve Azure işlevleri
+      title: Azure VM için bir ASP.NET Web uygulaması dağıtma
+- title: Azure uygulama hizmetleri, Logic Apps ve Azure işlevleri
   items:
   - type: paragraph
     text: Web uygulamaları ve Azure'da barındırılan bir sunucusuz işlev oluşturmak için öğreticiler
@@ -72,7 +67,12 @@ sections:
       image:
         src: https://docs.microsoft.com/azure/media/index/AppService.svg
       title: ASP.NET Core
-    - href: /azure/azure-functions/functions-develop-vs
+    - href: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+      html: <p>Azure Logic Apps ile otomatik, ölçeklenebilir iş akışları oluşturun.</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/LogicApp.svg
+      title: Azure Logic Apps
+    - href: /azure/azure-functions/functions-create-your-first-function-visual-studio
       html: <p>Sunucusuz kod ile olayları işleme</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
@@ -95,8 +95,8 @@ sections:
       href: /visualstudio/containers
     - image:
         src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      text: Visual Studio'da docker araçları
-      href: /visualstudio/docker/vs-azure-tools-docker-setup
+      text: Visual Studio kapsayıcı araçları
+      href: /visualstudio/docker/docker-tools
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
       text: Kubernetes araçları
@@ -178,10 +178,10 @@ sections:
         src: https://docs.microsoft.com//media/common/i_code-performance.svg
       title: Performansını çözümleme
     - href: vs-azure-tools-publishing-a-cloud-service.md
-      html: <p>Azure'a bulut hizmeti yayımlama</p>
+      html: <p>Azure'da bir bulut hizmeti dağıtma</p>
       image:
         src: https://docs.microsoft.com//media/common/i_deploy.svg
-      title: Yayımlama
+      title: Dağıt
     - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
       html: <p>Bulut Hizmetleri ve Azure'da çalışan sanal makineler izleyip tanılamanıza</p>
       image:

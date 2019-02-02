@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
+ms.lasthandoff: 02/01/2019
 ms.locfileid: "54924022"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe komut satırı seçenekleri
@@ -43,7 +43,7 @@ ms.locfileid: "54924022"
 |**/ TestAdapterPath: [*yolu*]**|Zorlar *vstest.console.exe* işleminin test çalıştırmasında özel test bağdaştırıcılarını belirtilen yoldan (varsa) kullanın.<br />Örnek: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*platform türü*]**|Test çalıştırması için kullanılacak hedef platform mimarisi.<br />Geçerli değerler şunlardır: x86, x64 ve ARM.|
 |**/ Framework: [*framework sürümü*]**|Test çalıştırması için kullanılacak hedef .NET Framework sürümü.<br />Geçerli değerler Framework35, Framework40 framework45'tir ve FrameworkUap10:.<br />Hedef Framework'ü olarak belirtilmişse **Framework35**, CLR 4.0 "uyumlu olacak şekilde basitleştirip modu" testleri çalıştırın.<br />Örnek: `/Framework:framework40`|
-|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: ' / TestCaseFilter: "TestCategory = gece|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Kullanım bilgilerini görüntüler.|
 |**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: Bir Visual Studio Test sonuçları dosyası (TRX) içine sonuçlar'ı açmak için kullandığınız **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform = < varsayılan değer: "Herhangi bir CPU" >]**<br />**[; Flavor = < varsayılan değer: "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
 |**/ ListTests: [*dosya adı*]**|Testleri verili test kapsayıcısından bulunan listeler.|

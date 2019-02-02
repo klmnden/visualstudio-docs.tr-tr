@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a302eb05e6b4c763740f03baea4aa8bd41c72891
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959898"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571167"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 Metin Şablonları Yazma Yönergeleri
 Aşağıdaki genel yönergeleri program kodu veya diğer uygulama kaynakları Visual Studio'da oluşturmak istediğinizde yararlı olabilir. Kuralları sabit değil.
@@ -48,7 +48,8 @@ El ile ayrıca için oluşturulan kodu yazdığınız kodu için izin verin. Ort
 
   XML gibi diğer oluşturulan dillerde, kullanın `<#@include#>` elle yazılmış ve oluşturulan içerik basit birleşimlerini yapmak yönergesi. Daha karmaşık durumlarda elle yazılmış dosyalarla birlikte oluşturulan dosyanın birleştiren bir sonradan işleme adımı yazmak zorunda kalabilirsiniz.
 
-  Ortak malzeme içerme dosyasına taşıma veya benzer metin ve birden fazla şablon içinde kod bloklarını yinelemekten kaçınmak için çalışma zamanı şablonları kullanın `<#@ include #>` yönergesi. Daha fazla bilgi için [T4 dahil yönergesi](../modeling/t4-include-directive.md).
+  Ortak malzeme dosyaları veya çalışma zamanı şablonları taşıyın.
+  Metin ve birden fazla şablon içinde kod bloklarını benzer tekrarlamayı önlemek üzere kullanmak `<#@ include #>` yönergesi. Daha fazla bilgi için [T4 dahil yönergesi](../modeling/t4-include-directive.md).
 
   Ayrıca ayrı proje çalışma zamanı metin şablonları oluşturun ve ardından bunları tasarım zamanı şablonu çağırmak. Bunu yapmak için `<#@ assembly #>` ayrı proje erişmeye yönergesi. Örnekler için bkz ["Devralma içinde metin şablonlarında" Gareth Jones'un Blogundaki](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -57,13 +58,15 @@ El ile ayrıca için oluşturulan kodu yazdığınız kodu için izin verin. Ort
 
   Şablon devralabilir soyut bir sınıf yöntemleri koyabilirsiniz. Soyut sınıf devralmalıdır <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Daha fazla bilgi için [T4 şablon yönergesi](../modeling/t4-template-directive.md).
 
-  Bir yapılandırma dosyası kabul eden genel program kodu yazmak için bir değişken uygulama yazma yapılandırma dosyaları bir yöntem değil, kod oluşturur. Bu şekilde yazılmış bir uygulama, çok esnektir ve iş gereksinimleri değiştiğinde uygulama derlenmeden yapılandırılabilen. Ancak, bu yaklaşımın bir dezavantajı, uygulama daha belirli bir uygulamadan daha az iyi gerçekleştirir olur. Ayrıca, kısmen her zaman en genel türlerle dağıtılacak olduğundan, program kodu okuma ve bakımı daha zor olacaktır.
+  Kod, yapılandırma dosyalarını oluşturur.
+  Değişken uygulama yazmanın bir yöntemi, bir yapılandırma dosyası kabul eden genel program kod yazmaktır. Bu şekilde yazılmış bir uygulama, çok esnektir ve iş gereksinimleri değiştiğinde uygulama derlenmeden yapılandırılabilen. Ancak, bu yaklaşımın bir dezavantajı, uygulama daha belirli bir uygulamadan daha az iyi gerçekleştirir olur. Ayrıca, kısmen her zaman en genel türlerle dağıtılacak olduğundan, program kodu okuma ve bakımı daha zor olacaktır.
 
   Bunun aksine, değişken olan bölümleri derleme önce oluşturulan uygulama türü kesin belirlenmiş. Bu yazılım çok daha kolay ve daha güvenilir bir elle yazılmış kod yazma ve oluşturulan ile tümleştirmek için bölümleri sağlar.
 
   Kod oluşturma tüm avantajlarını elde etmek için program kodu yerine yapılandırma dosyalarını oluşturmak deneyin.
 
-  Oluşturulan kod klasörü şablonları ve oluşturulan dosyalar adlı bir proje klasörüne yerleştirin kullanım **oluşturulan kodu**, bunu yapmak için bunları doğrudan düzenlenemez dosyaların olmadığını temizleyin. Oluşturulan sınıfları eklemek veya geçersiz kılmak için özel kod oluşturursanız, bu sınıflar adlı bir klasöre yerleştirin **özel kod**. Tipik bir proje yapısını şöyle görünür:
+  Oluşturulan kod klasörü kullanın.
+  Şablonlar ve oluşturulan dosyalar adlı bir proje klasörüne yerleştirin **oluşturulan kodu**, bunu yapmak için bunları doğrudan düzenlenemez dosyaların olmadığını temizleyin. Oluşturulan sınıfları eklemek veya geçersiz kılmak için özel kod oluşturursanız, bu sınıflar adlı bir klasöre yerleştirin **özel kod**. Tipik bir proje yapısını şöyle görünür:
 
 ```
 MyProject
@@ -79,7 +82,8 @@ MyProject
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Çalışma zamanı (önceden işlenmiş) T4 şablonları için yönergeler
- Ortak malzeme taşıma devralınan şablonlara miras yöntemleri ve T4 metin şablonları arasında metin blokları paylaşmak için kullanabilirsiniz. Daha fazla bilgi için [T4 şablon yönergesi](../modeling/t4-template-directive.md).
+ Ortak malzeme devralınan şablonların içine taşıyın.
+Devralma, yöntemleri ve metin blokları T4 metin şablonları arasında paylaşmak için kullanabilirsiniz. Daha fazla bilgi için [T4 şablon yönergesi](../modeling/t4-template-directive.md).
 
  Ayrıca çalışma zamanı şablonları sahip dosyaları içerir.
 
@@ -96,7 +100,8 @@ Her çalışma zamanı şablonu şablon olarak aynı ada sahip bir kısmi sını
 
  `private string ComputeTotal() { ... }`
 
- İzin vermek için özel kod: uzantı noktaları göz önünde bulundurun oluşturma sanal yöntemler sağlamak \<#+ sınıf özelliği engeller #>. Bu değişiklik gerektirmeden çoğu bağlamlarda kullanılacak tek bir şablon sağlar. Şablonu değiştirmek yerine, en düşük ek mantık sağlayan türetilmiş bir sınıf oluşturabilirsiniz. Türetilmiş sınıf, normal ya da kodu veya bir çalışma zamanı şablon olabilir.
+ İzin vermek için özel kod: uzantı noktaları sağlar.
+Sanal yöntemleri oluşturmayı göz önünde bulundurun \<#+ sınıf özelliği engeller #>. Bu değişiklik gerektirmeden çoğu bağlamlarda kullanılacak tek bir şablon sağlar. Şablonu değiştirmek yerine, en düşük ek mantık sağlayan türetilmiş bir sınıf oluşturabilirsiniz. Türetilmiş sınıf, normal ya da kodu veya bir çalışma zamanı şablon olabilir.
 
  Örneğin, MyStandardRunTimeTemplate.tt içinde:
 
@@ -117,9 +122,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Tüm T4 şablonlarını için yönergeler
- Metin oluşturma alanından ayrı veri toplama deneyin hesaplama ve metin blokları karıştırmaktan kaçının. Her metin şablonunda, ilk kullanmak \<# kodunu engeller #> değişkenlerini ayarladıktan ve karmaşık hesaplamalar gerçekleştirmek için. İlk metin bloğundan şablonu veya ilk sonuna kadar \<#+ sınıf özelliği block #> uzun ifadeleri önlemek ve döngüler ve dallanmayı metin blokları içerdikleri yapmaktan kaçının. Bu uygulama şablonu okunması ve düzenlenmesi daha kolay hale getirir.
+ Veri toplama metin kuşaktan ayırın.
+Hesaplama ve metin blokları karıştırma kaçınmaya çalışın. Her metin şablonunda, ilk kullanmak \<# kodunu engeller #> değişkenlerini ayarladıktan ve karmaşık hesaplamalar gerçekleştirmek için. İlk metin bloğundan şablonu veya ilk sonuna kadar \<#+ sınıf özelliği block #> uzun ifadeleri önlemek ve döngüler ve dallanmayı metin blokları içerdikleri yapmaktan kaçının. Bu uygulama şablonu okunması ve düzenlenmesi daha kolay hale getirir.
 
- Kullanmayın `.tt` gibi farklı dosya adı uzantısı için dahil etme dosyaları kullanın `.ttinclude` dosyaları. Kullanım `.tt` olmasını istediğiniz dosyaları işlenen olarak çalışma zamanı veya tasarım zamanı metin şablonları için yalnızca. Bazı durumlarda, Visual Studio tanır `.tt` dosyaları ve işleme özelliklerini otomatik olarak ayarlar.
+ Kullanmayın `.tt` dosyaları.
+Gibi farklı dosya adı uzantısını kullanın `.ttinclude` dosyaları. Kullanım `.tt` olmasını istediğiniz dosyaları işlenen olarak çalışma zamanı veya tasarım zamanı metin şablonları için yalnızca. Bazı durumlarda, Visual Studio tanır `.tt` dosyaları ve işleme özelliklerini otomatik olarak ayarlar.
 
  Her şablon sabit bir prototip başlatın.
 Bir örnek oluşturur ve doğru olduğundan emin olun, istediğiniz kod veya metin yazın. Ardından uzantısı için .tt değiştirin ve içerik modeli okuyarak değiştiren kodun artımlı olarak ekleyin.
