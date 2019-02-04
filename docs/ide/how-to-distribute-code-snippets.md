@@ -13,18 +13,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985714"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690378"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Nasıl yapılır: Kod parçacıklarını dağıtma
 
 Kod parçacıklarınızı arkadaşlarınıza verebilir ve bunları kullanarak kendi bilgisayarlarındaki parçacıkları yükleme **kod parçacıkları Yöneticisi**. Bununla birlikte, dağıtılacak çok sayıda kod olması ya da daha yaygın olarak dağıtmak istiyorsanız, kod parçacığı dosyanızı bir Visual Studio uzantısına dahil etme. Visual Studio kullanıcılarına, uzantıyı daha sonra yükleyebilirsiniz.
 
-Visual Studio uzantıları oluşturmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio yüklemenizle eşleşen VSSDK sürümünü bulun [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+Visual Studio uzantıları oluşturmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio yüklemenizle eşleşen VSSDK sürümünü bulun [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 ## <a name="set-up-the-extension"></a>Uzantı ayarlayın
 

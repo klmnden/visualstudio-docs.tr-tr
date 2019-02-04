@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f34f686b91d6a140e975c13eec72e8703a1b47ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91e32cdae7310a99021946315279736bddb094a8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945261"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690144"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod ölçümleri verileri üretme
 
@@ -49,46 +49,58 @@ Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görünt�
 
 ## <a name="command-line-code-metrics"></a>Komut satırı kod ölçümleri
 
-Komut satırı için kod ölçümleri verileri üretme C# ve Visual Basic projeleri .NET Framework, .NET Core ve .NET Standard uygulamaları için. Kod ölçümleri komut satırı araçlarını çağrılır *Metrics.exe*.
+Komut satırı için kod ölçümleri verileri üretme C# ve Visual Basic projeleri .NET Framework, .NET Core ve .NET Standard uygulamaları için. Kod ölçümleri komut satırından çalıştırmak için yükleme [Microsoft.CodeAnalysis.Metrics NuGet paketini](#microsoftcodeanalysismetrics-nuget-package) ya da yapı [Metrics.exe](#metricsexe) yürütülebilir kendiniz.
 
-Edinme *Metrics.exe* yürütülebilir, gerekir [kendiniz oluşturmak](#generate-the-executable). Yakın gelecekte bir [yayımlanmış sürümü *Metrics.exe* kullanılabilir](https://github.com/dotnet/roslyn-analyzers/issues/1756) bunu kendiniz yapılandırmak zorunda değilsiniz.
+### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft.CodeAnalysis.Metrics NuGet paketi
 
-### <a name="generate-the-executable"></a>Yürütülebilir dosya oluşturur
-
-Yürütülebilir dosyayı oluşturmak için *Metrics.exe*, şu adımları izleyin:
-
-1. Kopya [roslyn/dotnet-Çözümleyicileri](https://github.com/dotnet/roslyn-analyzers) depo.
-2. Geliştirici komut istemi için Visual Studio'yu yönetici olarak açın.
-3. Kök klasöründen **roslyn Çözümleyicileri** depo, aşağıdaki komutu yürütün: `Restore.cmd`
-4. Dizini *src\Tools*.
-5. Oluşturmak için aşağıdaki komutu yürütün **Metrics.csproj** proje:
-
-   ```shell
-   msbuild /m /v:m /p:Configuration=Release Metrics.csproj
-   ```
-
-   Adlı bir yürütülebilir dosya *Metrics.exe* içinde oluşturulan *artifacts\bin* depo kökü altındaki dizin.
-
-   > [!TIP]
-   > Oluşturulacak *Metrics.exe* içinde [eski modu](#legacy-mode), aşağıdaki komutu yürütün:
-   >
-   > ```shell
-   > msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
-   > ```
-
-### <a name="usage"></a>Kullanım
-
-Çalıştırılacak *Metrics.exe*, kaynağı bir proje veya çözüm ve bir çıkış XML dosyası bağımsız değişken olarak. Örneğin:
+Yükleyerek komut satırından kod ölçümleri verileri üretme en kolay yolu olan [Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet paketi. Paketi yükledikten sonra Çalıştır `msbuild /t:Metrics` , proje dosyasını içeren dizinden. Örneğin:
 
 ```shell
-C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
-Loading ConsoleApp20.csproj...
-Computing code metrics for ConsoleApp20.csproj...
-Writing output to 'report.xml'...
-Completed Successfully.
+C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
+Microsoft (R) Build Engine version 16.0.360-preview+g9781d96883 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/22/2019 4:29:57 PM.
+Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" on node 1 (Metrics target(s))
+.
+Metrics:
+  C:\source\repos\ClassLibrary3\packages\Microsoft.CodeMetrics.2.6.4-ci\build\\..\Metrics\Metrics.exe /project:C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj /out:ClassLibrary3.Metrics.xml
+  Loading ClassLibrary3.csproj...
+  Computing code metrics for ClassLibrary3.csproj...
+  Writing output to 'ClassLibrary3.Metrics.xml'...
+  Completed Successfully.
+Done Building Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" (Metrics target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
 ```
 
-### <a name="output"></a>Çıkış
+Çıkış dosyası adını belirterek geçersiz kılabilir `/p:MetricsOutputFile=<filename>`. Ayrıca Al [eski stil](#previous-versions) kod ölçüm verileri belirterek `/p:LEGACY_CODE_METRICS_MODE=true`. Örneğin:
+
+```shell
+C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
+Microsoft (R) Build Engine version 16.0.360-preview+g9781d96883 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/22/2019 4:31:00 PM.
+The "MetricsOutputFile" property is a global property, and cannot be modified.
+Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" on node 1 (Metrics target(s))
+.
+Metrics:
+  C:\source\repos\ClassLibrary3\packages\Microsoft.CodeMetrics.2.6.4-ci\build\\..\Metrics.Legacy\Metrics.Legacy.exe /project:C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj /out:Legacy.xml
+  Loading ClassLibrary3.csproj...
+  Computing code metrics for ClassLibrary3.csproj...
+  Writing output to 'Legacy.xml'...
+  Completed Successfully.
+Done Building Project "C:\source\repos\ClassLibrary3\ClassLibrary3\ClassLibrary3.csproj" (Metrics target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+```
+
+### <a name="code-metrics-output"></a>Kod ölçümleri çıkışı
 
 Oluşturulan XML çıktısı, aşağıdaki biçimi alır:
 
@@ -124,7 +136,7 @@ Oluşturulan XML çıktısı, aşağıdaki biçimi alır:
                   <Metric Name="LinesOfCode" Value="7" />
                 </Metrics>
                 <Members>
-                  <Method Name="void Program.Main(string[] args)" File="C:\Users\mavasani\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
+                  <Method Name="void Program.Main(string[] args)" File="C:\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
                     <Metrics>
                       <Metric Name="MaintainabilityIndex" Value="100" />
                       <Metric Name="CyclomaticComplexity" Value="1" />
@@ -143,27 +155,55 @@ Oluşturulan XML çıktısı, aşağıdaki biçimi alır:
 </CodeMetricsReport>
 ```
 
-### <a name="tool-differences"></a>Aracı farkları
+### <a name="metricsexe"></a>Metrics.exe
 
-Visual Studio 2015 dahil olmak üzere Visual Studio'nun önceki sürümleri dahil adında bir komut satırı kod ölçümleri araç *Metrics.exe*. Bu Aracı'nın önceki sürümünü ikili bir analiz, diğer bir deyişle, derleme tabanlı analiz vermedi. Yeni aracı, bunun yerine kaynak kodunu analiz eder. Çünkü yeni *Metrics.exe* sonuçları önceki sürümleri tarafından oluşturulan için farklı kod tabanlı, kaynağıdır *Metrics.exe* ve Visual Studio 2017 IDE içinde.
+NuGet paketini yüklemek istemiyorsanız, oluşturma kullanabilir ve *Metrics.exe* doğrudan çalıştırılabilir. Oluşturulacak *Metrics.exe* çalıştırılabilir:
 
-Yeni *Metrics.exe* çözüm ve proje yüklü olduğu sürece, aracı ölçümleri kaynak kod hataları varsa bile işlem.
+1. Kopya [roslyn/dotnet-Çözümleyicileri](https://github.com/dotnet/roslyn-analyzers) depo.
+2. Geliştirici komut istemi için Visual Studio'yu yönetici olarak açın.
+3. Kök klasöründen **roslyn Çözümleyicileri** depo, aşağıdaki komutu yürütün: `Restore.cmd`
+4. Dizini *src\Tools*.
+5. Oluşturmak için aşağıdaki komutu yürütün **Metrics.csproj** proje:
 
-#### <a name="metric-value-differences"></a>Ölçüm değeri farkları
+   ```shell
+   msbuild /m /v:m /p:Configuration=Release Metrics.csproj
+   ```
 
-`LinesOfCode` Daha doğru ve güvenilir yeni ölçüm *Metrics.exe*. Bu codegen farkları bağımsız ve çalışma zamanı ve araç takımı değiştiğinde değiştirmez. Yeni *Metrics.exe* boş satırlar ve yorumlarla birlikte kod, gerçek satırları sayar.
+   Adlı bir yürütülebilir dosya *Metrics.exe* içinde oluşturulan *artifacts\bin* depo kökü altındaki dizin.
 
-Gibi diğer ölçümler `CyclomaticComplexity` ve `MaintainabilityIndex` formüller önceki sürümlerini kullanan *Metrics.exe*, ancak yeni *Metrics.exe* sayar `IOperations` (mantıksal Kaynak yönergeleri) yerine Ara dil (IL) yönergeleri. Sayılar önceki sürümlerden biraz farklı olacaktır *Metrics.exe* ve Visual Studio 2017 IDE kod ölçümleri sonuçları.
+#### <a name="metricsexe-usage"></a>Metrics.exe kullanımı
 
-### <a name="legacy-mode"></a>Eski mod
+Çalıştırılacak *Metrics.exe*, kaynağı bir proje veya çözüm ve bir çıkış XML dosyası bağımsız değişken olarak. Örneğin:
 
-Ayrıca yapı seçebilirsiniz *Metrics.exe* içinde *eski modu*. Aracı'nın eski modu sürümü oluşturulan aracın eski hangi sürümlerine yakın olan ölçüm değerleri oluşturur. Buna ek olarak, eski modda, *Metrics.exe* aracıyla oluşturulmuş kod ölçümleri için söz konusu önceki sürümlerini yöntemi aynı dizi türleri için kod ölçümleri oluşturur. Örneğin, kod ölçümleri verileri alan ve özellik başlatıcıları için oluşturmaz. Geriye dönük uyumluluk veya kodu iade kapılar varsa sayı kod ölçümlere göre eski modu kullanışlıdır. Derleme için komutu *Metrics.exe* eski modda:
+```shell
+C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
+Loading ConsoleApp20.csproj...
+Computing code metrics for ConsoleApp20.csproj...
+Writing output to 'report.xml'...
+Completed Successfully.
+```
+
+#### <a name="legacy-mode"></a>Eski mod
+
+Derleme seçtiğiniz *Metrics.exe* içinde *eski modu*. Aracın eski modu sürümünü gerekenler daha yakın olan ölçüm değerleri oluşturur [oluşturulan aracın eski sürümlerini](#previous-versions). Buna ek olarak, eski modda, *Metrics.exe* aracıyla oluşturulmuş kod ölçümleri için söz konusu önceki sürümlerini yöntemi aynı dizi türleri için kod ölçümleri oluşturur. Örneğin, kod ölçümleri verileri alan ve özellik başlatıcıları için oluşturmaz. Geriye dönük uyumluluk veya kodu iade kapılar varsa sayı kod ölçümlere göre eski modu kullanışlıdır. Derleme için komutu *Metrics.exe* eski modda:
 
 ```shell
 msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 ```
 
 Daha fazla bilgi için [eski modda kod ölçümleri oluşturma etkinleştir](https://github.com/dotnet/roslyn-analyzers/pull/1841).
+
+### <a name="previous-versions"></a>Önceki sürümler
+
+Visual Studio 2015 dahil olmak üzere Visual Studio'nun önceki sürümleri dahil da bilinen bir komut satırı kod ölçümleri araç *Metrics.exe*. Bu Aracı'nın önceki sürümünü ikili bir analiz, diğer bir deyişle, derleme tabanlı analiz vermedi. Yeni aracı, bunun yerine kaynak kodunu analiz eder. Yeni komut satırı kod ölçümleri aracı kaynak kod tabanlı olduğundan, sonuçlarını önceki sürümleri tarafından oluşturulan için farklı *Metrics.exe* ve Visual Studio 2017 IDE içinde.
+
+Çözüm ve proje yüklenebilir sürece yeni komut satırı kod ölçümleri aracı kaynak kod hataları varsa bile ölçümleri hesaplar.
+
+#### <a name="metric-value-differences"></a>Ölçüm değeri farkları
+
+`LinesOfCode` Ölçüm daha doğru ve güvenilir yeni komut satırı kod ölçümleri araç. Bu codegen farkları bağımsız ve çalışma zamanı ve araç takımı değiştiğinde değiştirmez. Yeni aracı boş satırlar ve yorumlarla birlikte kod, gerçek satırları sayar.
+
+Gibi diğer ölçümler `CyclomaticComplexity` ve `MaintainabilityIndex` formüller önceki sürümlerini kullanan *Metrics.exe*, ancak yeni aracı sayısını sayar `IOperations` (mantıksal kaynak yönergeleri) yerine Ara Dil (IL) yönergeleri. Sayılar önceki sürümlerden biraz farklı olacaktır *Metrics.exe* ve Visual Studio 2017 IDE kod ölçümleri sonuçları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

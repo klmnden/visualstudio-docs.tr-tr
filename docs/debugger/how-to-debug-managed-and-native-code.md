@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: e817302031ba2ec37102e5b3eb41a5b35460c546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029875"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690248"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 
@@ -44,7 +44,7 @@ Visual Studio, aşağıdaki iş yükleri ile yüklü olması gerekir:
 - **C++ ile masaüstü geliştirme**
 - Her iki **.NET masaüstü geliştirme** veya **.NET Core çoklu platform geliştirme**oluşturmak istediğiniz uygulama türünü bağlı olarak.
 
-Visual Studio sahip değilseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio sahip değilseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **açık Visual Studio yükleyicisi** Visual Studio'nun sol bölmede **yeni proje** iletişim kutusu. Visual Studio yükleyicisinde gerekir ve ardından iş yükleri seçin **Değiştir**.
 

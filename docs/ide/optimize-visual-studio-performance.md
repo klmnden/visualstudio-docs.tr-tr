@@ -13,12 +13,12 @@ f1_keywords:
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c56bd7bbfdd162a354432814decb2450eff6f360
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070467"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690325"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio performansını iyileştirme
 
@@ -26,7 +26,7 @@ Bu makalede, Visual Studio'nun yavaş çalıştığından bulursanız denemek i�
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 sürüm 15.6 yükseltin veya üzeri
 
-Visual Studio 2015 kullanıyorsanız, indirme [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz geliştirilmiş performansını denetlemek için. Çözümler iki ila üç kat daha hızlı Visual Studio 2017'deki diğer alanlarda performans geliştirmeleri ile çok yüklenir. Herhangi bir şey tarafından denediğiniz kaybetmemesi için visual Studio 2017 Visual Studio 2015 ile yan yana uyumlu değildir.
+Visual Studio 2015 kullanıyorsanız, indirme [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz geliştirilmiş performansını denetlemek için. Çözümler iki ila üç kat daha hızlı Visual Studio 2017'deki diğer alanlarda performans geliştirmeleri ile çok yüklenir. Herhangi bir şey tarafından denediğiniz kaybetmemesi için visual Studio 2017 Visual Studio 2015 ile yan yana uyumlu değildir.
 
 Visual Studio 2017 şu anda kullanıyorsanız, 15.6 veya sonraki sürümü çalıştırdığından emin olun. Veri çözümleri için iki veya üç kez sürüm 15.6 daha hızlı yükleneceğiyle olduğunu gösterir. İndirdiği [burada](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 

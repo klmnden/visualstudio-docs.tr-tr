@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61da2f7de84ca5ab76e244faa7f45a9527f40515
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: e083acb49d430c749929d84f58f59229fbde46ab
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571115"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690521"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'daki dağıtımı da ilk bakma
 
@@ -101,17 +101,17 @@ Visual Studio'dan Microsoft Store için dağıtım için uygulama paketi oluştu
 
 Bir cihazda test etmek için bir UWP uygulaması dağıtıyorsanız, bkz. [Visual Studio'da uzak bir makinede çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="create-an-installer-package-windows-client"></a>Bir yükleyici paketi (Windows istemcisi) oluştur
+## <a name="create-an-installer-package-windows-desktop"></a>Bir yükleyici paketi (Windows Masaüstü) oluştur
 
-Bir masaüstü uygulamasının karmaşık bir kurulum daha gerektirip gerektirmediğini [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) sağlayabilir, yükleyici paketi, bir kurulum projesi veya özel bir önyükleyici oluşturabilirsiniz.
+Bir masaüstü uygulamasının karmaşık bir kurulum daha ihtiyaç duyuyorsanız [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) sağlayabilir, bir Windows Installer paketi (MSI veya EXE yükleme dosyası) veya özel bir önyükleyici oluşturabilirsiniz.
 
-- WiX, MSI tabanlı yükleyici kullanılarak oluşturulabilir. [WiX Toolset Visual Studio 2017 uzantısı](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+- Bir MSI tabanlı yükleyicide paket kullanılarak oluşturulabilir. [WiX Toolset Visual Studio 2017 uzantısı](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Bu bir komut satırı araç setidir.
 
-- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera yazılımı Visual Studio 2017 (Community Edition desteklenmiyor) kullanılabilir. InstallShield Limited Edition'ın artık Visual Studio'ya dahildir ve Visual Studio 2017'de desteklenmez unutmayın. danışın [Flexera yazılım](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) gelecekteki kullanılabilirliği hakkında.
+- Bir MSI ya da EXE Yükleyici paketi kullanılarak oluşturulabilir. [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera yazılım. InstallShield Visual Studio 2017 (Community Edition desteklenmiyor) kullanılabilir. InstallShield Limited Edition'ın artık Visual Studio'ya dahildir ve Visual Studio 2017'de desteklenmez unutmayın. danışın [Flexera yazılım](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) gelecekteki kullanılabilirliği hakkında.
 
-- Bir kurulum projesi (vdproj) oluşturmak istiyorsanız, yükleme [Visual Studio 2017 yükleyicisi projeleri uzantısı](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Bir MSI ya da EXE Yükleyici paketi, using a Setup project (vdproj) oluşturulabilir. Bu seçeneği kullanmak için yükleme [Visual Studio 2017 yükleyicisi projeleri uzantısı](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-- Önkoşul bileşenlerinin Masaüstü uygulamaları için bir önyükleyici olarak bilinen genel bir yükleyici yapılandırarak yükleyebilirsiniz. Daha fazla bilgi için [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md).
+- Ayrıca, Masaüstü uygulamaları için önkoşul bileşenleri bir önyükleyici olarak bilinen genel bir yükleyici yapılandırarak yükleyebilirsiniz. Daha fazla bilgi için [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md).
 
 ## <a name="deploy-to-test-lab"></a>Laboratuvar test etmek için dağıtma
 

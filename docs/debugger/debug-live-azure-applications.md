@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 5c21fbbee529cc67f31df98f4a441fdefa3bae6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f0936078039c4c1071f0214b61702a7f57f794ec
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020119"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690198"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamalarında hata ayıklama
 
@@ -37,7 +37,7 @@ Bu öğreticide şunları yapacaksınız:
 
 * Anlık görüntü hata ayıklayıcısı, yalnızca Visual Studio 2017 Enterprise sürüm 15.5 veya üzerini içeren için kullanılabilir **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
 
-    Henüz yüklü değilse, yükleme [Visual Studio 2017 Enterprise sürüm 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya üzeri. Önceki bir Visual Studio 2017 yükleme güncelleştiriyorsanız, Visual Studio Yükleyicisi'ni çalıştırın ve anlık görüntü hata ayıklayıcı bileşeni iade **ASP.NET ve web geliştirme iş yükü**.
+    Henüz yüklü değilse, yükleme [Visual Studio 2017 Enterprise sürüm 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) veya üzeri. Önceki bir Visual Studio 2017 yükleme güncelleştiriyorsanız, Visual Studio Yükleyicisi'ni çalıştırın ve anlık görüntü hata ayıklayıcı bileşeni iade **ASP.NET ve web geliştirme iş yükü**.
 
 * Azure App Service planı temel veya daha yüksek.
 

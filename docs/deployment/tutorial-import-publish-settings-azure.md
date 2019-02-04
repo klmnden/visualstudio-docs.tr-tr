@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4400135eb48c68dc855bd38c2155c8e23c2c417c
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 98498b59f01bbd8a72a52695203d80a995497823
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571141"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690469"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulamayı yayımladığınızda Visual Studio'da yayımlama ayarları
 
@@ -39,7 +39,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 * Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 * Azure App Service'e oluşturun. Ayrıntılı yönergeler için bkz. [Visual Studio'yu kullanarak Azure'a bir ASP.NET Core web uygulaması dağıtma](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

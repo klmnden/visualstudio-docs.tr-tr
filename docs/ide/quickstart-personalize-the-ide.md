@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fc268c085b7c1fe83889a0f8860ee665cc7a4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2573e2de0dba830269711b9ee08f6f3ac2a24522
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011763"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690375"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: Düzenleyici ve Visual Studio IDE'yi kişiselleştirme
 
 5-10 dakika Bu hızlı başlangıçta, size Visual Studio renk teması koyu tema seçerek özelleştireceksiniz. Biz de iki farklı türde metin düzenleyicisinde metin renklerini özelleştireceksiniz.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 ## <a name="set-the-color-theme"></a>Renk teması ayarlayabilir
 

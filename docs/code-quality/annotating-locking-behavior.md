@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835298"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690327"
 ---
 # <a name="annotating-locking-behavior"></a>Kilitlenme Davranışını Yorumlama
 Çoklu iş parçacığı kullanan programınızda eşzamanlılık hataları önlemek için her zaman uygun kilitleme uzmanlık alanı izleyin ve SAL ek açıklamalarını kullanma.
@@ -105,6 +105,19 @@ ms.locfileid: "53835298"
 |`_Interlocked_`|Bir değişken açıklama ekler ve eşdeğerdir `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Çeşitli birbirine kenetlenmiş işlevlerden biri hedef işleneni ek açıklamalı işlevi parametredir.  Bu işlenenlerin özgü ek özellikleri olmalıdır.|
 |`_Write_guarded_by_(expr)`|Bir değişken açıklama ekler ve her değişkenin değiştirilmişse, tarafından adlandırılan kilit nesnenin kilit sayacını gösterir `expr` en az biri.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Akıllı kilitleme ve RAII ek açıklamaları
+ Akıllı kilitlere, genellikle yerel kilitleri kaydırma ve kendi ömürlerine yönetin. Akıllı kilit ve RAII desenleri desteğiyle kodlama ile kullanılabilecek ek açıklamaları aşağıdaki tabloda `move` semantiği.
+
+|Ek Açıklama|Açıklama|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Akıllı kilit alınmış varsaymak Çözümleyicisi söyler. Bu ek açıklama, parametre olarak başvuru kilit türü bekleniyor.|
+|`_Analysis_assume_smart_lock_released_`|Akıllı kilit serbest bırakıldığını varsaymak Çözümleyicisi söyler. Bu ek açıklama, parametre olarak başvuru kilit türü bekleniyor.|
+|`_Moves_lock_(target, source)`|Açıklar `move constructor` kilitleme durumu aktarır işlemi `source` nesnesini `target`. `target` Herhangi önce olduğundan kaybolur ve değiştirilen durum için yeni oluşturulan bir nesne olarak kabul edilir `source` durumu. `source` Olduğunu da hiçbir kilidi sayıları ve diğer ad kullanımı hedef ancak işaret diğer adlar ile temiz bir duruma Sıfırla değişmeden kalır.|
+|`_Replaces_lock_(target, source)`|Açıklar `move assignment operator` semantiği burada hedef kilidi serbest kaynak durumu aktarmadan önce. Bu bir birleşimi olarak görülebilir `_Moves_lock_(target, source)` önünde bir `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Standart açıklar `swap` nesneleri varsayan davranışı `left` ve `right` durumlarına exchange. Değiştirilen durum sayısı ve diğer ad kullanımı hedef kilit, varsa içerir. İşaret eden diğer adlar `left` ve `right` nesneleri değişmeden kalır.|
+|`_Detaches_lock_(detached, lock)`|Bir kilit sarmalayıcı türü dağılımı ile onun içerdiği kaynak sağlayan bir senaryo açıklanır. Bu nasıl benzer `std::unique_ptr` kendi iç işaretçi ile çalışır: işaretçisini ayıklayın ve akıllı işaretçi kapsayıcısı temiz bir durumda bırakır programcılar sağlar. Tarafından desteklenen benzer bir mantık `std::unique_lock` ve özel bir kilit sarmalayıcılar uygulanabilir. Durumuna (kilit sayısı ve diğer ad kullanımı hedef, eğer varsa), ayrılmış kilidi tutan sarmalayıcı kendi diğer adlar korurken sıfır kilit sayacını ve hiçbir diğer ad kullanımı hedef içeren sıfırlanarak sırada. Kilit sayıları (serbest bırakma ve alma) hiçbir işlem yok. Bu ek açıklama tam olarak davranır `_Moves_lock_` ayrılmış bağımsız değişkeni olmalıdır dışında `return` yerine `this`.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

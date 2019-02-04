@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392770ae5a4ae37431c588d8d15f26a318bdc2c2
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: b38f9d951be37619c84095c379879e1acd51cf7b
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571062"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690456"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -40,7 +40,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 * Geliştirme bilgisayarınızda Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
 * Sunucunuzda, Windows Server 2012 veya Windows Server 2016 çalıştırmalıdır ve olmalıdır [IIS Web sunucusu rolü](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) düzgün yüklenmemiş (Yayımlama ayarları dosyası oluşturmak için gereken (*\*. publishsettings*)). ASP.NET 4.5 ya da ASP.NET Core, sunucuda ayrıca yüklenmelidir. ASP.NET 4.5 ' ayarlamak için bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core ' ayarlamak için bkz [ana bilgisayar Windows IIS üzerinde ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
 
