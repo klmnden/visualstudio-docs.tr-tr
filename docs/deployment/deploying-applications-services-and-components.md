@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e083acb49d430c749929d84f58f59229fbde46ab
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690521"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742462"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'daki dağıtımı da ilk bakma
+# <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio'daki dağıtımı da ilk bakma
 
 Bir uygulama, hizmet ya da bileşeni dağıtarak, yüklemenin diğer bilgisayarlar, cihazlar veya sunucular üzerinde veya bulutta dağıtın. İhtiyacınız olan dağıtım türü için uygun yöntemi Visual Studio'da seçebilirsiniz. (Burada açıklanmamaktadır, diğer dağıtım araçları komut satırı dağıtımı veya NuGet gibi birçok uygulama türlerini destekler.)
 

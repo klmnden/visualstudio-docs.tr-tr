@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eb7059f5a0ecaf07858e6a24b62296383494725c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979562"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742485"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: Bir özel metin şablonu konağı oluşturma
 
-A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştürme motoru* çalıştırılacak. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
+A *metin şablonu ana bilgisayarı* bir ortam sağlayan *metin şablonu dönüştürme motoru* çalıştırılacak. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
 
 Kullanmak istiyorsanız özel bir ana bilgisayar yazabilirsiniz *metin şablonu dönüştürme* Visual Studio dışında veya bu işlevi özel araçlarla tümleştirmek isterseniz işlevi. Özel bir ana bilgisayar oluşturmak için devralınan bir sınıf oluşturmanız gerekir <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Her bir yöntem için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
 

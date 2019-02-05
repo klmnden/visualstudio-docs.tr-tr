@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036101"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742449"
 ---
 # <a name="receive-activity-designer"></a>Receive Etkinlik Tasarımcısı
 
@@ -52,7 +52,7 @@ Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Receive> özellikleri 
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Bu tarafından uygulanan hizmet işlemi için bilinen türleri koleksiyonu belirtir <xref:System.ServiceModel.Activities.Receive> etkinlik. Bu özellik ile birlikte kullanılması gereken <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> özelliğini <xref:System.Runtime.Serialization.DataContractSerializer>. Varsa göz ardı edilir <xref:System.Xml.Serialization.XmlSerializer> kullanılır.<br /><br /> Yanında bulunan üç nokta düğmesini seçin **KnownTypes** özellik kılavuzunda görüntülenecek alan **Editor Typu Kolekce** ilgili türleri ile ekleyebileceğiniz iletişim kutusu. Bu kutuyu kullanma hakkında daha fazla bilgi için bkz. [türü koleksiyon Düzenleyicisi iletişim kutusu](../workflow-designer/type-collection-editor-dialog-box.md) konu. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Belirtir <xref:System.Net.Security.ProtectionLevel> ileti.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> yalnızca kimlik doğrulamasını anlamına gelir.<br />2. <xref:System.Net.Security.ProtectionLevel> oturum iletilen veri bütünlüğünü sağlamaya yardımcı olmak için veri anlamına gelir.<br />3. <xref:System.Net.Security.ProtectionLevel> anlamına gelir, şifreleme ve veri gizliliği ve aktarılan veri bütünlüğünü sağlamaya yardımcı olmak için oturum açın. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Seri hale getirici tarafından uygulanan hizmet işlemi için kullanılacak türünü belirten <xref:System.ServiceModel.Activities.Receive> etkinlik. Varsayılan değer <xref:System.Runtime.Serialization.DataContractSerializer>, serileştirir ve bir XML akışı veya sağlanan veri sözleşme kullanan bir belge bir türün bir örneği seri durumdan çıkarır. <xref:System.Xml.Serialization.XmlSerializer> Daha fazla denetim gerekliyse, XML de kullanılabilir. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | İletinin eylem üstbilgisini belirtir. Değeri açıkça ayarlanmazsa, varsayılan: https://tempuri.org/{service sözleşme ad alanı} / {hizmet sözleşmesi adı} / {işlem adı}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | İletinin eylem üstbilgisini belirtir. Değeri açıkça ayarlanmazsa, varsayılan: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

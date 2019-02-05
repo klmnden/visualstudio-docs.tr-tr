@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948186"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742436"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Bir dosya adı veya türü bir yeniden düzenleme için bir dosya adı için bir tür eşitleme
 
@@ -31,6 +31,9 @@ Bu yeniden düzenleme için geçerlidir:
 **ne zaman:** Bir dosya veya türü yeniden adlandırmış ve karşılık gelen dosya ya da türü eşleşecek şekilde güncelleştirildi henüz yapmadıysanız.
 
 **Neden:** Farklı bir ad veya tam tersi, aradığınızı bulmak zor, bir dosyadaki türü yapılıyor. Türü veya dosya adı yeniden adlandırarak kodu daha okunabilir ve giderek daha kolay hale gelir.
+
+> [!NOTE]
+> Bu yeniden düzenleme henüz .NET Standard ve .NET Core projeleri için kullanılabilir değil.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -62,8 +65,6 @@ Bu yeniden düzenleme için geçerlidir:
    - Visual Basic: Dosya aşağıdaki örnekte **Employee.vb** adlandırıldı **Person.vb** tür adıyla eşleşecek şekilde.
 
        ![Satır içi sonucu Visual Basic](media/synctype-result-vb.png)
-
-> ! [NOT] Bu yeniden düzenleme henüz .NET Standard ve .NET Core projeleri için kullanılabilir değil.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
