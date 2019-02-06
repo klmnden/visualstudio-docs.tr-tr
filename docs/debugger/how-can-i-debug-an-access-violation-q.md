@@ -1,7 +1,7 @@
 ---
 title: Bir C++ erişim ihlali hata ayıklama | Microsoft Docs
 ms.custom: seodec18
-ms.date: 05/23/2017
+ms.date: 02/05/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
@@ -19,56 +19,65 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fe410eddd345dd80d270cd9c6a3eb29213d4389
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9ceb160c93e79d43428685d7b0e82a8a0670cc01
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926572"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767808"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Nasıl bir C++ erişim ihlali hata Ayıklayabilirim?
-## <a name="problem-description"></a>Sorun açıklaması  
- Kendi programımı bir erişim ihlali üretir. Bu sorunu nasıl ayıklayabilirim?  
+
+## <a name="problem-description"></a>Sorun açıklaması
+
+Kendi programımı bir erişim ihlali üretir. Bu sorunu nasıl ayıklayabilirim?  
   
-## <a name="solution"></a>Çözüm  
- Birden çok işaretçi başvuru kod satırında bir erişim ihlali alırsanız, hangi işaretçi erişim ihlaline neden olduğunu bulmak zor olabilir. Visual Studio 2015 güncelleştirme 1'de başlayarak, özel durum iletişim kutusunda artık açıkça erişim ihlaline neden işaretçi adları.  
+## <a name="solution"></a>Çözüm
+
+Birden çok işaretçi başvuru kod satırında bir erişim ihlali alırsanız, hangi işaretçi erişim ihlaline neden olduğunu bulmak zor olabilir. Visual Studio 2015 güncelleştirme 1'de başlayarak, özel durum iletişim kutusunda artık açıkça erişim ihlaline neden işaretçi adları.  
   
- Örneğin, aşağıdaki kodu göz önünde bulundurulduğunda, bir erişim ihlali almanız gerekir:  
-  
-```C++  
+Örneğin, aşağıdaki kodu göz önünde bulundurulduğunda, bir erişim ihlali almanız gerekir:  
+
+```C++
 #include <iostream>  
 using namespace std;  
   
-class ClassB {  
-public:  
-        ClassC* C;  
-        ClassB() {  
-                C = new ClassC();  
-        }  
-     void printHello() {  
-                cout << "hello world";  
-        }  
-};  
-  
-class ClassA {  
-public:  
-    ClassB* B;  
-      ClassA() {  
-                B = nullptr;  
-        }  
-};  
-  
-int main() {  
-    ClassA* A = new ClassA();  
-      A->B->printHello();  
-}  
+class ClassC {
+public:
+  void printHello() {
+    cout << "hello world";
+  }
+};
+
+class ClassB {
+public:
+  ClassC* C;
+  ClassB() {
+    C = new ClassC();
+  }
+};
+
+class ClassA {
+public:
+  ClassB* B;
+  ClassA() {
+    // Uncomment to fix
+    // B = new ClassB();
+  }
+};
+
+int main() {
+  ClassA* A = new ClassA();
+  A->B->C->printHello();
+
+}
 ```  
+
+Visual Studio 2015 güncelleştirme 1'de bu kodu çalıştırırsanız, aşağıdaki özel durum iletişim kutusunu görmeniz gerekir:  
   
- Visual Studio 2015 güncelleştirme 1'de bu kodu çalıştırırsanız, aşağıdaki özel durum iletişim kutusunu görmeniz gerekir:  
+![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
   
- ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
-  
- İşaretçi erişim ihlaline neden neden belirleyemiyorsa, soruna işaretçi doğru şekilde atandığını emin olmak için kod boyunca izleme.  Bir parametre olarak geçirilir, doğru geçirilir ve yanlışlıkla oluşturma olmayan emin bir [yüzeysel kopya](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Ardından değerlerini istemeden yere programda veri kesme noktası işaretçisi, başka bir yerde programda değiştirilen olmadığından emin olmak için söz konusu oluşturarak değiştirilmekte olan değil olduğunu doğrulayın. Veri kesme noktaları hakkında daha fazla bilgi için bkz: veri kesme noktası bölümünde [kullanılarak kesme noktaları](../debugger/using-breakpoints.md).  
+İşaretçi erişim ihlaline neden neden belirleyemiyorsa, soruna işaretçi doğru şekilde atandığını emin olmak için kod boyunca izleme.  Bir parametre olarak geçirilir, doğru geçirilir ve yanlışlıkla oluşturma olmayan emin bir [yüzeysel kopya](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Ardından değerlerini istemeden yere programda veri kesme noktası işaretçisi, başka bir yerde programda değiştirilen olmadığından emin olmak için söz konusu oluşturarak değiştirilmekte olan değil olduğunu doğrulayın. Veri kesme noktaları hakkında daha fazla bilgi için bkz: veri kesme noktası bölümünde [kullanılarak kesme noktaları](../debugger/using-breakpoints.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel Kodda Hata Ayıklama SSS](../debugger/debugging-native-code-faqs.md)

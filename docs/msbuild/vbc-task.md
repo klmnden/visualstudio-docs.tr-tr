@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969674"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768446"
 ---
 # <a name="vbc-task"></a>Vbc görevi
 Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağlantı kitaplıklarını (*.dll*), veya kod modüllerini (*.netmodule*). Daha fazla bilgi için *vbc.exe*, bkz: [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -51,7 +51,7 @@ Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağl
 | `Imports` | İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Belirtilen öğe koleksiyonlardan ad alanlarını alır. Bu parametre için karşılık gelen [-Imports](/dotnet/visual-basic/reference/command-line-compiler/imports) geçiş *vbc.exe* derleyici. |
 | `KeyContainer` | İsteğe bağlı `String` parametresi.<br /><br /> Şifreleme anahtar kapsayıcısı adını belirtir. Bu parametre için karşılık gelen [- keycontaıner](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) geçiş *vbc.exe* derleyici. |
 | `KeyFile` | İsteğe bağlı `String` parametresi.<br /><br /> Şifreleme anahtarını içeren dosya adını belirtir. Daha fazla bilgi için [- keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | İsteğe bağlı <xref:System.String?displayProperty=fullName> parametresi.<br /><br /> "9" veya "10", dil sürümünü belirtir. |
+| `LangVersion` | İsteğe bağlı <xref:System.String?displayProperty=fullName> parametresi.<br /><br /> Belirtir [dil sürümü](/dotnet/visual-basic/language-reference/configure-language-version), "15.5" gibi. |
 | `LinkResources` | İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Çıkış dosyasında .NET Framework kaynağına bağlantı oluşturur. kaynak dosyası çıkış dosyasına yerleştirilmez. Bu parametre için karşılık gelen [- linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) geçiş *vbc.exe* derleyici. |
 | `MainEntryPoint` | İsteğe bağlı `String` parametresi.<br /><br /> Sınıf veya içeren modül belirtir `Sub Main` yordamı. Bu parametre için karşılık gelen [-ana](/dotnet/visual-basic/reference/command-line-compiler/main) geçiş *vbc.exe* derleyici. |
 | `ModuleAssemblyName` | İsteğe bağlı `String` parametresi.<br /><br /> Bu modül bir parçası olan derlemeyi belirtir. |

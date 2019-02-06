@@ -9,12 +9,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9f4c00056c93230d588216ff425dee56d42e0961
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3555db278f469dde7754e752dd65b55ec51ceee0
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921104"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768490"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio için R araçları yükleme
 
@@ -30,7 +30,7 @@ Bu makalede:
 
 ## <a name="supported-versions-of-visual-studio"></a>Visual Studio'nun desteklenen sürümleri
 
-R araçları için Visual Studio (RTVS) Windows Community (ücretsiz) ile desteklenir, Professional ve Enterprise sürümleri her iki [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ve [Visual Studio 2015 güncelleştirme 3 (veya üstü)](http://go.microsoft.com/fwlink/?LinkId=691129) (doğrudan indirme).
+R araçları için Visual Studio (RTVS) Windows Community (ücretsiz) ile desteklenir, Professional ve Enterprise sürümleri her iki [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ve [Visual Studio 2015 güncelleştirme 3 (veya üstü)](http://go.microsoft.com/fwlink/?LinkId=691129) (doğrudan indirme).
 
 RTVS Visual Studio şu anda Mac için desteklenmiyor
 

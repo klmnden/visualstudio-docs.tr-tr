@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923983"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767913"
 ---
 # <a name="vsinstr-warnings"></a>Vsınstr uyarıları
 Aşağıdaki tabloda tarafından verilen uyarılar *VSInstr.exe* aracı. Uyarıyı görüntülenmesini engellemek için uyarı numaralarını NOWARN seçeneğiyle kullanabilirsiniz.  
   
 |Uyarı numarası|Açıklama|  
 |--------------------|-----------------|  
-|**VSP1026**|Kapsamı MSCorLib başvurma kitaplıklar üzerinde desteklenmiyor. Bu genellikle taşınabilir kitaplıklar için geçerlidir.|  
+|**VSP1026**|Kapsamı MSCorLib başvurma kitaplıklar üzerinde desteklenmiyor. Bu genellikle taşınabilir kitaplıklar için geçerlidir.<br /><br />[/Enablecodecoverage](/visualstudio/test/vstest-console-options) için .NET Core komut satırı seçeneği gereklidir.|  
 |**VSP2000**|İç Hata. Bu yürütülebilir dosya için modülün dosya adı alınamıyor.|  
 |**VSP2001**|\<derleme adı > kesin adlandırılmış bir derlemedir. Yürütülmek üzere önce onu yeniden imzalanması gerekir.<br /><br /> İmzalı bir derleme işaretlenmiş durumda olduğunda bu uyarı oluşur. Kullanabileceğiniz *sn.exe* aracı ikili çekilmeye veya geçici olarak devre dışı tanımlayıcı ad gereksinim kapatmak için. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  
 |**VSP2002**|İşlevi bulunamadı \<funcname > dosyasındaki \<dosya adı ><br /><br /> Bir işlev içinde belirtilen dosya bulunamıyorsa, bu uyarı oluşur.|  

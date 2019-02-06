@@ -1,7 +1,7 @@
 ---
 title: Çevrimdışı yüklemesini oluşturma
 description: Visual Studio bir güvenilir bir internet bağlantısı veya düşük bant genişliğine sahip olduğunuzda çevrimdışı yüklemeyi öğrenin.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a9c30570a284e037dc529b7ffa90eb2ed7d80c7
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035529"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768250"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Visual Studio 2017'in çevrimdışı yüklemesini oluşturma
 
-Biz, Visual Studio 2017'de ağ ve bilgisayar yapılandırmalarını çeşitli içinde çalışacak şekilde tasarlanmıştır. Denemenizi öneririz ancak [Visual Studio web yükleyicisini](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;küçük bir dosyadır ve en son düzeltmeler ve özellikler ile güncel kalın sağlar&mdash;için aktarmanızı değil olduğunu biliyoruz.
+Biz, Visual Studio 2017'de ağ ve bilgisayar yapılandırmalarını çeşitli içinde çalışacak şekilde tasarlanmıştır. Denemenizi öneririz ancak [Visual Studio web yükleyicisini](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;küçük bir dosyadır ve en son düzeltmeler ve özellikler ile güncel kalın sağlar&mdash;için aktarmanızı değil olduğunu biliyoruz.
 
 Örneğin, düşük bant genişliğine sahip bir ya da güvenilir bir internet bağlantısına sahip olabilir. Bu durumda, birkaç seçeneğiniz vardır: Kullanabileceğiniz yeni "Tümünü indir ve sonra Yükle" özelliğini yüklemeniz veya dosyaların yerel önbellek oluşturmak için komut satırını kullanabilirsiniz önce dosyaları indirmek için.
 
@@ -33,10 +33,14 @@ Biz, Visual Studio 2017'de ağ ve bilgisayar yapılandırmalarını çeşitli i�
 
 ## <a name="use-the-download-all-then-install-feature"></a>Kullanım "tümünü indir ve Yükle" özelliği
 
-[**Yeni 15,8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): Web yükleyiciyi indirdikten sonra yeni seçin **tümünü indir ve Yükle** Visual Studio Yükleyicisi'nden seçeneği. Ardından, yükleme işlemine devam.
+[**Yeni 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Web yükleyiciyi indirdikten sonra yeni seçin **tümünü indir ve Yükle** Visual Studio Yükleyicisi'nden seçeneği. Ardından, yükleme işlemine devam.
 
    !["Tümünü indir ve Yükle" seçeneği](media/download-all-then-install.png)
+
+Tasarladığımız "tümünü indir ve Yükle" üzerinde indirdiğiniz, aynı bilgisayar için tek bir yükleme olarak Visual Studio indirebilmeniz özelliği. Bu şekilde, Visual Studio yüklemeden önce web üzerinden güvenli bir şekilde kesebilirsiniz.
+
+> [!IMPORTANT]
+> Kullanmayın "tümünü indir ve Yükle" başka bir bilgisayara aktarmak için istediğinize çevrimdışı bir önbellek oluşturmak için özellik. Bu şekilde çalışmasını sağlamak üzere tasarlanmamıştır. <br><br>Visual Studio başka bir bilgisayara yüklemek için bkz, çevrimdışı bir önbellek oluşturmak istiyorsanız [yerel önbellek oluşturmak için komut satırını kullanın](#use-the-command-line-to-create-a-local-cache) yerel bir önbellek oluşturma hakkında daha fazla bilgi için bu sayfayı bir bölümünü veya [oluşturma bir Visual Studio 2017 yüklemesini ağ](../install/create-a-network-installation-of-visual-studio.md) ağ önbellek oluşturma hakkında daha fazla bilgi için.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Yerel önbellek oluşturmak için komut satırını kullanın
 
