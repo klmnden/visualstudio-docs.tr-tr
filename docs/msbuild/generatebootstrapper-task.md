@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980368"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853787"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper görevi
-Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik bir yol sağlar. Uygulama yaparak tüm bileşenler için ayrı yükleyiciler tümleştiren tek bir yükleyici olarak görev yapar.  
-  
-## <a name="task-parameters"></a>Görev parametreleri  
- Aşağıdaki parametreleri açıklayan `GenerateBootstrapper` görev.  
-  
+Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik bir yol sağlar. Uygulama yaparak tüm bileşenler için ayrı yükleyiciler tümleştiren tek bir yükleyici olarak görev yapar.
+
+## <a name="task-parameters"></a>Görev parametreleri
+Aşağıdaki parametreleri açıklayan `GenerateBootstrapper` görev.
+
 - `ApplicationFile`  
   
    İsteğe bağlı `String` parametresi.  
@@ -67,14 +67,14 @@ Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik b
   
    Önyükleyici derleme ürünlerin belirtir. Bu parametreye geçirilen öğe, aşağıdaki söz dizimini sahip olmanız gerekir:  
   
-  ```xml  
-  <BootstrapperItem  
-      Include="ProductCode">  
-      <ProductName>  
-          ProductName  
-      </ProductName>  
-  </BootstrapperItem>  
-  ```  
+  ```xml
+  <BootstrapperItem
+      Include="ProductCode">
+      <ProductName>
+          ProductName
+      </ProductName>
+  </BootstrapperItem>
+  ```
   
    `Include` Öznitelik yüklenmesi gereken önkoşul adını temsil eder. `ProductName` Öğe meta verileri isteğe bağlıdır ve paket bulunamazsa yapı altyapısı tarafından bir kolay ad kullanılacak. Bu öğeler, gerekli değildir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] giriş parametreleri, sürece hiçbir `ApplicationFile` belirtilir. Uygulamanız için yüklü olması gereken her bir ön koşul için bir öğe içermelidir.  
   
@@ -146,35 +146,35 @@ Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik b
   
    İsteğe bağlı `Boolean` parametresi.  
   
-   Varsa `true`, önyükleyici belirtilen giriş önyükleyici öğeleri XSD doğrulaması gerçekleştirir. Bu parametrenin varsayılan değeri `false`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte `GenerateBootstrapper` sahip olması gereken bir uygulamayı yüklemek için görev [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] bir önkoşul olarak yüklü.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">  
-            <ProductName>Microsoft .NET Framework 2.0</ProductName>  
-        </BootstrapperFile>  
-    </ItemGroup>  
-  
-    <Target Name="BuildBootstrapper">  
-        <GenerateBootstrapper  
-            ApplicationFile="WindowsApplication1.application"  
-            ApplicationName="WindowsApplication1"  
-            ApplicationUrl="http://mycomputer"  
-            BootstrapperItems="@(BootstrapperFile)"  
-            OutputPath="C:\output" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+   Varsa `true`, önyükleyici belirtilen giriş önyükleyici öğeleri XSD doğrulaması gerçekleştirir. Bu parametrenin varsayılan değeri `false`.
+
+## <a name="remarks"></a>Açıklamalar
+Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnekte `GenerateBootstrapper` sahip olması gereken bir uygulamayı yüklemek için görev [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] bir önkoşul olarak yüklü.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+            <ProductName>Microsoft .NET Framework 2.0</ProductName>
+        </BootstrapperFile>
+    </ItemGroup>
+
+    <Target Name="BuildBootstrapper">
+        <GenerateBootstrapper
+            ApplicationFile="WindowsApplication1.application"
+            ApplicationName="WindowsApplication1"
+            ApplicationUrl="http://mycomputer"
+            BootstrapperItems="@(BootstrapperFile)"
+            OutputPath="C:\output" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Görevler](../msbuild/msbuild-tasks.md)  
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)

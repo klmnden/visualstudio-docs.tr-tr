@@ -19,19 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15f3ae12aec25747629dfb634ad5790405a11c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940667"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854115"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest görevi
-Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşene ilişkin benzersiz bir kimliği tanımlayarak ve tüm derlemeleri ve bileşeni oluşturan dosyaları tanımlayan bir bileşeni açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi, uygulamanın giriş noktasını gösteren ve uygulama güvenlik düzeyini belirterek yerel bildirimi genişletir.  
+Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşene ilişkin benzersiz bir kimliği tanımlayarak ve tüm derlemeleri ve bileşeni oluşturan dosyaları tanımlayan bir bileşeni açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi, uygulamanın giriş noktasını gösteren ve uygulama güvenlik düzeyini belirterek yerel bildirimi genişletir.
 
-## <a name="parameters"></a>Parametreler  
- Parametreler için aşağıdaki tabloda açıklanmıştır `GenerateApplicationManifest` görev.  
-
+## <a name="parameters"></a>Parametreler
+Parametreler için aşağıdaki tabloda açıklanmıştır `GenerateApplicationManifest` görev.
 
 | Parametre | Açıklama |
 |---------------------------------| - |
@@ -65,293 +64,293 @@ Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 | `TrustInfoFile` | İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Uygulama güvenliğini belirten bir XML belgesini belirtir. XML belgesi kök öğesi asmv2 ad alanı içerisinde bir trustInfo düğümü olmalıdır. Görev yerel bir bildirim oluşturuyorsa Bu parametre yoksayılır. |
 | `UseApplicationTrust` | İsteğe bağlı `Boolean` parametresi.<br /><br /> TRUE ise `Product`, `Publisher`, ve `SupportUrl` özellikleri uygulama bildirimine yazılır. |
 
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.GenerateManifestBase> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Görev sınıfı parametrelerinin bir listesi için bkz. [görev taban sınıfı](../msbuild/task-base-class.md).  
+## <a name="remarks"></a>Açıklamalar
+Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.GenerateManifestBase> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Görev sınıfı parametrelerinin bir listesi için bkz. [görev taban sınıfı](../msbuild/task-base-class.md).
 
- Nasıl kullanılacağı hakkında daha fazla bilgi için `GenerateDeploymentManifest` görev bkz [GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md).  
+Nasıl kullanılacağı hakkında daha fazla bilgi için `GenerateDeploymentManifest` görev bkz [GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md).
 
- Bağımlılıklar ve dosyalar için girişler her öğe için ek dağıtım durumunu belirtmek için öğe meta verileri ile daha fazla donatılabilir.  
+Bağımlılıklar ve dosyalar için girişler her öğe için ek dağıtım durumunu belirtmek için öğe meta verileri ile daha fazla donatılabilir.
 
-## <a name="item-metadata"></a>Öğe meta verileri  
+## <a name="item-metadata"></a>Öğe meta verileri
 
-|Meta veri adı|Açıklama|  
-|-------------------|-----------------|  
-|`DependencyType`|Bağımlılık yayımlanır ve uygulama ya da bir önkoşul ile yüklü olup olmadığını gösterir. Bu meta verileri tüm bağımlılıklar için geçerlidir, ancak dosyalar için kullanılmaz. Bu meta veriler için kullanılabilen değerler şunlardır:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Yükleme varsayılan değerdir.|  
-|`AssemblyType`|Bağımlılığın yönetilen olup veya yerel bir derleme belirtir. Bu meta verileri tüm bağımlılıklar için geçerlidir, ancak dosyalar için kullanılmaz. Bu meta veriler için kullanılabilen değerler şunlardır:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` Bildirim oluşturucu derleme türünü otomatik olarak belirleyeceğini gösteren varsayılan değerdir.|  
-|`Group`|Ek dosyalar isteğe bağlı yükleme için grubu gösterir. Grup adı uygulama tarafından tanımlanabilir ve herhangi bir dize olabilir. Dosyanın varsayılan bir yükleme grubunun bölümü değil. boş bir dize belirtir. Grup içinde olmayan dosyalar ilk uygulama indirmesinin parçasıdır. Bir grup içindeki dosyalar yalnızca açıkça kullanan uygulama tarafından istendiğinde indirilen <xref:System.Deployment.Application>.<br /><br /> Bu meta veriler, tüm dosyalar için geçerlidir burada `IsDataFile` olduğu `false` ve tüm bağımlılıklarını burada `DependencyType` olduğu `Install`.|  
-|`TargetPath`|Oluşturulan bildirimde yolun nasıl tanımlanmalıdır belirtir. Bu öznitelik tüm dosyalar için geçerlidir. Bu öznitelik belirtilmezse öğe belirtimi kullanılır. Bu öznitelik tüm dosya ve bağımlılıkları için geçerli bir `DependencyType` değerini `Install`.|  
-|`IsDataFile`|A `Boolean` dosyayı bir veri dosyası olup olmadığını belirten bir meta veri değeri. Bir veri dosyası uygulama güncellemeleri arasında geçirildiğinden özeldir. Bu meta veriler yalnızca dosyalar için geçerlidir. `False` varsayılan değerdir.|  
+|Meta veri adı|Açıklama|
+|-------------------|-----------------|
+|`DependencyType`|Bağımlılık yayımlanır ve uygulama ya da bir önkoşul ile yüklü olup olmadığını gösterir. Bu meta verileri tüm bağımlılıklar için geçerlidir, ancak dosyalar için kullanılmaz. Bu meta veriler için kullanılabilen değerler şunlardır:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Yükleme varsayılan değerdir.|
+|`AssemblyType`|Bağımlılığın yönetilen olup veya yerel bir derleme belirtir. Bu meta verileri tüm bağımlılıklar için geçerlidir, ancak dosyalar için kullanılmaz. Bu meta veriler için kullanılabilen değerler şunlardır:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` Bildirim oluşturucu derleme türünü otomatik olarak belirleyeceğini gösteren varsayılan değerdir.|
+|`Group`|Ek dosyalar isteğe bağlı yükleme için grubu gösterir. Grup adı uygulama tarafından tanımlanabilir ve herhangi bir dize olabilir. Dosyanın varsayılan bir yükleme grubunun bölümü değil. boş bir dize belirtir. Grup içinde olmayan dosyalar ilk uygulama indirmesinin parçasıdır. Bir grup içindeki dosyalar yalnızca açıkça kullanan uygulama tarafından istendiğinde indirilen <xref:System.Deployment.Application>.<br /><br /> Bu meta veriler, tüm dosyalar için geçerlidir burada `IsDataFile` olduğu `false` ve tüm bağımlılıklarını burada `DependencyType` olduğu `Install`.|
+|`TargetPath`|Oluşturulan bildirimde yolun nasıl tanımlanmalıdır belirtir. Bu öznitelik tüm dosyalar için geçerlidir. Bu öznitelik belirtilmezse öğe belirtimi kullanılır. Bu öznitelik tüm dosya ve bağımlılıkları için geçerli bir `DependencyType` değerini `Install`.|
+|`IsDataFile`|A `Boolean` dosyayı bir veri dosyası olup olmadığını belirten bir meta veri değeri. Bir veri dosyası uygulama güncellemeleri arasında geçirildiğinden özeldir. Bu meta veriler yalnızca dosyalar için geçerlidir. `False` varsayılan değerdir.|
 
-## <a name="example"></a>Örnek  
- Bu örnekte `GenerateApplicationManifest` görev oluşturmak için bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ve `GenerateDeploymentManifest` tek derlemeli bir uygulama için bir dağıtım bildirimi oluşturmak için görev. Ardından kullanır `SignFile` bildirimleri imzalamak için bir görev.  
+## <a name="example"></a>Örnek
+Bu örnekte `GenerateApplicationManifest` görev oluşturmak için bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ve `GenerateDeploymentManifest` tek derlemeli bir uygulama için bir dağıtım bildirimi oluşturmak için görev. Ardından kullanır `SignFile` bildirimleri imzalamak için bir görev.
 
- Bu basit olası bildirim oluşturma senaryosunu göstermektedir burada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri, tek bir program için oluşturulur. Bildirimi için bir derlemeden bir varsayılan adını ve kimlik olayla.  
+Bu basit olası bildirim oluşturma senaryosunu göstermektedir burada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri, tek bir program için oluşturulur. Bildirimi için bir derlemeden bir varsayılan adını ve kimlik olayla.
 
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
 > 
 > [!NOTE]
->  Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
+> Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            EntryPoint="@(EntryPoint)">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            EntryPoint="@(EntryPoint)">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            EntryPoint="@(ApplicationManifest)">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            EntryPoint="@(ApplicationManifest)">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Örnek  
- Bu örnekte `GenerateApplicationManifest` ve `GenerateDeploymentManifest` oluşturmak için görevler [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama adını ve kimliğini belirterek, tek bir derleme ile uygulama ve dağıtım bildirimleri.  
+## <a name="example"></a>Örnek
+Bu örnekte `GenerateApplicationManifest` ve `GenerateDeploymentManifest` oluşturmak için görevler [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama adını ve kimliğini belirterek, tek bir derleme ile uygulama ve dağıtım bildirimleri.
 
- Kimliğini ve adını açıkça belirtilmesi dışında bu örnek önceki örneğe benzerdir. Ayrıca, bu örnek, yüklü bir uygulama yerine çevrimiçi bir uygulama olarak yapılandırılır.  
+Kimliğini ve adını açıkça belirtilmesi dışında bu örnek önceki örneğe benzerdir. Ayrıca, bu örnek, yüklü bir uygulama yerine çevrimiçi bir uygulama olarak yapılandırılır.
 
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
 > 
 > [!NOTE]
->  Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
+> Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            EntryPoint="@(EntryPoint)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            EntryPoint="@(EntryPoint)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-                AssemblyName="SimpleWinApp.application"  
-                AssemblyVersion="1.0.0.0"  
-                EntryPoint="@(ApplicationManifest)"  
-                Install="false"  
-                OutputManifest="SimpleWinApp.application">  
-                <Output  
-                    ItemName="DeployManifest"  
-                    TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+                AssemblyName="SimpleWinApp.application"
+                AssemblyVersion="1.0.0.0"
+                EntryPoint="@(ApplicationManifest)"
+                Install="false"
+                OutputManifest="SimpleWinApp.application">
+                <Output
+                    ItemName="DeployManifest"
+                    TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Örnek  
- Bu örnekte `GenerateApplicationManifest` ve `GenerateDeploymentManifest` oluşturmak için görevler [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve dağıtım birden çok dosya ve derlemesi olan bir uygulama için bildirimleri.  
+## <a name="example"></a>Örnek
+Bu örnekte `GenerateApplicationManifest` ve `GenerateDeploymentManifest` oluşturmak için görevler [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve dağıtım birden çok dosya ve derlemesi olan bir uygulama için bildirimleri.
 
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
 > 
 > [!NOTE]
->  Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
+> Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-        <DeployUrl>  
-            <!-- Insert the deployment URL here -->  
-        </DeployUrl>  
-        <SupportUrl>  
-            <!-- Insert the support URL here -->  
-        </SupportUrl>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+        <DeployUrl>
+            <!-- Insert the deployment URL here -->
+        </DeployUrl>
+        <SupportUrl>
+            <!-- Insert the support URL here -->
+        </SupportUrl>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe"/>  
-        <Dependency Include="ClassLibrary1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary2.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <Group>Secondary</Group>  
-        </Dependency>  
-        <Dependency Include="MyAddIn1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <TargetPath>Addins\MyAddIn1.dll</TargetPath>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary3.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Prerequisite</DependencyType>  
-        </Dependency>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe"/>
+        <Dependency Include="ClassLibrary1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <Dependency Include="ClassLibrary2.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <Group>Secondary</Group>
+        </Dependency>
+        <Dependency Include="MyAddIn1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <TargetPath>Addins\MyAddIn1.dll</TargetPath>
+        </Dependency>
+        <Dependency Include="ClassLibrary3.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Prerequisite</DependencyType>
+        </Dependency>
 
-        <File Include="Text1.txt">  
-            <TargetPath>Text\Text1.txt</TargetPath>  
-            <Group>Text</Group>  
-        </File>  
-        <File Include="DataFile1.xml ">  
-            <TargetPath>Data\DataFile1.xml</TargetPath>  
-            <IsDataFile>true</IsDataFile>  
-        </File>  
+        <File Include="Text1.txt">
+            <TargetPath>Text\Text1.txt</TargetPath>
+            <Group>Text</Group>
+        </File>
+        <File Include="DataFile1.xml ">
+            <TargetPath>Data\DataFile1.xml</TargetPath>
+            <IsDataFile>true</IsDataFile>
+        </File>
 
-        <IconFile Include="Heart.ico"/>  
-        <ConfigFile Include="app.config">  
-            <TargetPath>SimpleWinApp.exe.config</TargetPath>  
-        </ConfigFile>  
-        <BaseManifest Include="app.manifest"/>  
-    </ItemGroup>  
+        <IconFile Include="Heart.ico"/>
+        <ConfigFile Include="app.config">
+            <TargetPath>SimpleWinApp.exe.config</TargetPath>
+        </ConfigFile>
+        <BaseManifest Include="app.manifest"/>
+    </ItemGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            ConfigFile="@(ConfigFile)"  
-            Dependencies="@(Dependency)"  
-            Description="TestApp"  
-            EntryPoint="@(EntryPoint)"  
-            Files="@(File)"  
-            IconFile="@(IconFile)"  
-            InputManifest="@(BaseManifest)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            ConfigFile="@(ConfigFile)"
+            Dependencies="@(Dependency)"
+            Description="TestApp"
+            EntryPoint="@(EntryPoint)"
+            Files="@(File)"
+            IconFile="@(IconFile)"
+            InputManifest="@(BaseManifest)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            AssemblyName="SimpleWinApp.application"  
-            AssemblyVersion="1.0.0.0"  
-            DeploymentUrl="$(DeployToUrl)"  
-            Description="TestDeploy"  
-            EntryPoint="@(ApplicationManifest)"  
-            Install="true"  
-            OutputManifest="SimpleWinApp.application"  
-            Product="SimpleWinApp"  
-            Publisher="Microsoft"  
-            SupportUrl="$(SupportUrl)"  
-            UpdateEnabled="true"  
-            UpdateInterval="3"  
-            UpdateMode="Background"  
-            UpdateUnit="weeks">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            AssemblyName="SimpleWinApp.application"
+            AssemblyVersion="1.0.0.0"
+            DeploymentUrl="$(DeployToUrl)"
+            Description="TestDeploy"
+            EntryPoint="@(ApplicationManifest)"
+            Install="true"
+            OutputManifest="SimpleWinApp.application"
+            Product="SimpleWinApp"
+            Publisher="Microsoft"
+            SupportUrl="$(SupportUrl)"
+            UpdateEnabled="true"
+            UpdateInterval="3"
+            UpdateMode="Background"
+            UpdateUnit="weeks">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Örnek  
- Bu örnekte `GenerateApplicationManifest` uygulaması için yerel bir bildirim oluşturmak üzere görev *Test.exe*, yerel bileşen başvuran *Alpha.dll* ve yalıtılmış bir COM bileşeni  *Bravo.dll'yi*.  
+## <a name="example"></a>Örnek
+Bu örnekte `GenerateApplicationManifest` uygulaması için yerel bir bildirim oluşturmak üzere görev *Test.exe*, yerel bileşen başvuran *Alpha.dll* ve yalıtılmış bir COM bileşeni  *Bravo.dll'yi*.
 
- Bu örnek üretir *Test.exe.manifest*, uygulamayı XCOPY dağıtılabilir ve alınması avantajı ücretsiz COM kayıt yapma  
+Bu örnek üretir *Test.exe.manifest*, uygulamayı XCOPY dağıtılabilir ve alınması avantajı ücretsiz COM kayıt yapma
 
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
 
-```xml  
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <File Include="Test.exe" />  
-        <Dependency Include="Alpha.dll">  
-            <AssemblyType>Native</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <ComComponent Include="Bravo.dll" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <File Include="Test.exe" />
+        <Dependency Include="Alpha.dll">
+            <AssemblyType>Native</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <ComComponent Include="Bravo.dll" />
+    </ItemGroup>
 
-    <Target Name="Build">  
-        <GenerateApplicationManifest  
-            AssemblyName="Test.exe"  
-            AssemblyVersion="1.0.0.0"  
-            Dependencies="@(Dependency)"  
-            Files="@(File)"  
-            IsolatedComReferences="@(ComComponent)"  
-            ManifestType="Native">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+    <Target Name="Build">
+        <GenerateApplicationManifest
+            AssemblyName="Test.exe"
+            AssemblyVersion="1.0.0.0"
+            Dependencies="@(Dependency)"
+            Files="@(File)"
+            IsolatedComReferences="@(ComComponent)"
+            ManifestType="Native">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md)   
- [SignFile görevi](../msbuild/signfile-task.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Görevler](../msbuild/msbuild-tasks.md)  
+[GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md)  
+[SignFile görevi](../msbuild/signfile-task.md)  
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e98c79edfc3269781aa97250926f4c2587fb61bd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b24e6547e1e95e497088f2bde224eee033f32c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923681"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853215"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. Adım: Rasgele nesne ve simge listesi ekleme
 Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, form üzerindeki TableLayoutPanel denetiminde rasgele iki hücreye eklenir. Bunu yapmak için iki kullandığınız `new` deyimleri iki nesne oluşturmak için. İlki bir <xref:System.Random> matematik sınavı oyununda kullanılan gibi bir nesne. Bu koddaki kullanım amacıysa, TableLayoutPanel denetiminde rasgele hücre seçmektir. İçin yeni olabilecek ikinci nesne bir <xref:System.Collections.Generic.List%601> rasgele seçilen simgeleri depolamak için kullanılan nesne.

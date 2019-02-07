@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53c807835af42ac09aa71eba5dac05e9606af94f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc8d288f7157582d5bbdd47a8a67484b11a4750d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952866"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853163"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>10. Adım: Ek düğmeler ve onay kutusu için kod yazma
 Diğer dört yöntemi tamamlamaya artık hazırsınız. Bu kodu kopyalayıp, ancak bilgi almak istiyorsanız bu öğreticiden en iyi kodu yazıp IntelliSense kullanın.

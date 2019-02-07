@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2368f3f0deff4262ffebca736fc14e6d5bc142a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 926f147264214396ef746d57eb8a8b014abd5b58
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005448"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853576"
 ---
 # <a name="step-5-add-label-references"></a>5. Adım: Etiket başvuruları ekleme
 Program oyuncunun seçtiği etiket kontrollerini izlemesi gerekir. Şu anda program oyuncunun seçtiği tüm etiketleri göstermektedir. Ancak bunun değişmesini sağlayacağız. İlk etiket seçildikten sonra program etiketin simgesini göstermelidir. İkinci etiket seçildikten sonra iki simgeyi de kısa bir süre göstermeli ve ardından iki simgeyi de tekrar gizlemelidir. Programınız şimdi hangi etiket denetiminin ilk ve kullanarak, ikinci seçilir izlemek *başvuru değişkenlerini*.

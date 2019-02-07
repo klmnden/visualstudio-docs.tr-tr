@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: 49a64f7752bc5f6b3dbbb0dcfed385bfdd5ef9be
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 14a9ed8423779ad878fb5c304bbb6d28e1945a91
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296105"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853332"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Derleme yapılandırmaları oluşturma ve düzenleme
 
@@ -59,6 +60,10 @@ Bir yapılandırma yeniden adlandırmak için proje veya çözüm seçenekleri y
 Seçin **Yeniden Adlandır** düğmesi.
 
 ![yeniden adlandırma iletişim kutusu](media/create-and-edit-configurations-image5.png)
+
+## <a name="related-video"></a>İlgili Video
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

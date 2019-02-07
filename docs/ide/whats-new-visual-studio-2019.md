@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 01/29/2019
+ms.date: 02/07/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,13 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 9dd0785e3e20051a58fe46695f27d9be0ae8567a
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483711"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853972"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
 
@@ -115,6 +114,8 @@ Farklı görüntüleme ölçek faktörlerle yapılandırılan izleyiciler kullan
 Visual Studio 2019 Preview'ın yayınlanmasıyla birlikte, size Visual Studio kullanan (PMA) uygulamasını İzle bilgilerinizin ilk adımları sürüyor. Biz ne bağımsız olarak kullandığınız ölçek Etkenler görüntüleme doğru bir şekilde işlemek Visual Studio sağlayacak konusundaki temel çalışmalar yerleştirme.
 
    ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/per-monitor-aware-dpi-scaling.png)
+
+Daha fazla bilgi için [daha iyi bir çoklu monitör deneyimi ile Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda2189af9fd564c6240909e44db91f297b46b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 529665d342275611ab13253229fb8a2abde035fe
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985974"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853870"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4. Adım: TableLayoutPanel denetimi ile formunuzu düzenleme
 Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form denetimi. TableLayoutPanel, özel olarak daha sonra ekleyeceksiniz formda denetimleri düzgün şekilde hizalamaya yardımcı olur.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e00afd9c03200f39100ad885a58ccee79715b4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931758"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854050"
 ---
 # <a name="al-assembly-linker-task"></a>AL (derleme bağlayıcı) görevi
 AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir modül olan bir veya daha fazla veya kaynak dosyalar bildiriminden bir derleme oluşturmak için kullanılır. Bu görevi doğrudan kullanmak için gerekli değildir, dolayısıyla derleyicileri ve geliştirme ortamlarını zaten bu özellikleri sağlayabilir. Assembly Linker, karma dil geliştirme üretilen gibi birden çok bileşen dosyalarından tek bir derleme oluşturmak gereken geliştiriciler için yararlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modüllerinin hala dağıtılmış ve doğru bir şekilde yüklemek oluşturulan derleme için kullanılabilir olmalıdır. Daha fazla bilgi için *AL.exe*, bkz: [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -93,5 +93,6 @@ AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklon
 ```  
 
 ## <a name="see-also"></a>Ayrıca bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevler](../msbuild/msbuild-tasks.md)
+* [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
+* [Görevler](../msbuild/msbuild-tasks.md)
+

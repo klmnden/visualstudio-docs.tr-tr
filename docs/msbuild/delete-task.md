@@ -18,44 +18,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36b2c2a4a4d59426b8ccdd258a0a879ba50a1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0893ded1cd2eb40cc6004f90e29e0765ff48ca6a
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982253"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853810"
 ---
 # <a name="delete-task"></a>Silme görevi
-Belirtilen dosyaları siler.  
-  
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `Delete` görev.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`DeletedFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Başarıyla silinen dosyaları belirtir.|  
-|`Files`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Dosyaları silmek için belirtir.|  
-|`TreatErrorsAsWarnings`|İsteğe bağlı `Boolean` parametresi<br /><br /> Varsa `true`, hataları uyarı olarak kaydedilir. Varsayılan değer `false` şeklindedir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek dosyayı siler *MyApp.pdb*.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <PropertyGroup>  
-        <AppName>MyApp</AppName>  
-    </PropertyGroup>  
-  
-    <Target Name="DeleteFiles">  
-        <Delete Files="$(AppName).pdb" />  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+Belirtilen dosyaları siler.
+
+## <a name="parameters"></a>Parametreler
+Parametreleri aşağıdaki tabloda açıklanmıştır `Delete` görev.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`DeletedFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Başarıyla silinen dosyaları belirtir.|
+|`Files`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Dosyaları silmek için belirtir.|
+|`TreatErrorsAsWarnings`|İsteğe bağlı `Boolean` parametresi<br /><br /> Varsa `true`, hataları uyarı olarak kaydedilir. Varsayılan değer `false` şeklindedir.|
+
+## <a name="remarks"></a>Açıklamalar
+Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek dosyayı siler *MyApp.pdb*.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <AppName>MyApp</AppName>
+    </PropertyGroup>
+
+    <Target Name="DeleteFiles">
+        <Delete Files="$(AppName).pdb" />
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Görevler](../msbuild/msbuild-tasks.md)  
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)

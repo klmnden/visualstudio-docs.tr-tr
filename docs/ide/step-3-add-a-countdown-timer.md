@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d07265ec978b6bf444d1d98407ddace991c162df
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a11e9c75b463aeb4de14dc4bc66f2c7e6d1dae50
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935052"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853254"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3. Adım: Bir geri sayım Zamanlayıcısı ekleme
 Bu Eğitimin üçüncü kısmında sınava giren bitirmek kalan saniye sayısını izlemek için bir geri sayım Zamanlayıcısı ekleyeceksiniz.

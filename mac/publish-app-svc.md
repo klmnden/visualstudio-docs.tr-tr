@@ -9,14 +9,15 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac-dev15
+ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 9b73d598ef2d498d4c2c9c1296ef8cd3de760134
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768337"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853933"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak Azure App Service'e bir Web uygulaması yayımlama
 
@@ -67,3 +68,7 @@ Azure App Service'e ASP.NET Core uygulamaları yayımlamak için Yayımla Aracı
       ![App Service iletisi oluşturun](media/publish-create-app-service-message.png)
 
     ' I tıklattıktan sonra **Tamam** ileti kapatılır ve projeniz üzerinde çalışmaya devam edebilirsiniz. Durum çubuğu üstünde IDE ile yayımlama işleminin durumunu izleyebilirsiniz. Web uygulamanızı başarıyla yayımlandığında, sitenin varsayılan tarayıcınızda açılır.
+
+## <a name="related-video"></a>İlgili Video
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

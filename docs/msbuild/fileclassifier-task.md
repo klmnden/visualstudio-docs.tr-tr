@@ -17,55 +17,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 939b5b4adb6b3089987088b2bcd58e23844094b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9dccb229712d173e847a7205f03aad308fab224d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978392"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853202"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier görevi
-<xref:Microsoft.Build.Tasks.Windows.FileClassifier> Görev bir bütünleştirilmiş kod içine katıştırılmış olarak kaynak kaynak kümesini sınıflandırır. Bir kaynak yerelleştirilebilir değil ise, ana uygulama derlemesine eklenir; Aksi takdirde, bir uydu derlemeye eklenir.  
-  
-## <a name="task-parameters"></a>Görev parametreleri  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`CLREmbeddedResource`|Kullanılmayan.|  
-|`CLRResourceFiles`|Kullanılmayan.|  
-|`CLRSatelliteEmbeddedResource`|Kullanılmayan.|  
-|`Culture`|İsteğe bağlı **dize** parametresi.<br /><br /> Derleme için kullanılacak kültürü belirtir. Bu değer **null** derleme yerelleştirilemeyen ise. Varsa **null**, küçük değer varsayılan değerdir **CultureInfo.InvariantCulture** döndürür.|  
-|`MainEmbeddedFiles`|İsteğe bağlı **Itaskıtem []** çıkış parametresi.<br /><br /> Ana derleme gömülü yerelleştirilemeyen kaynaklar belirtir.|  
-|`OutputType`|Gerekli **dize** parametresi.<br /><br /> Belirtilen kaynak dosyalarıyla katıştırmak için dosya türünü belirtir. Geçerli değerler **exe**, **winexe**, veya **Kitaplığı**.|  
-|`SatelliteEmbeddedFiles`|İsteğe bağlı **Itaskıtem []** çıkış parametresi.<br /><br /> Belirtilen kültür için uydu derlemesine gömülür yerelleştirilebilir dosyaları belirtir **kültür** parametresi.|  
-|`SourceFiles`|Gerekli **Itaskıtem []** parametresi.<br /><br /> Dosyaları sınıflandırmak için listesini belirtir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa **kültür** parametresi ayarlanmadı, kullanılarak belirtilen tüm kaynakların **Kaynakdosyalar** parametresi yerelleştirilemeyen; bir ileilişkiliolduklarısüreceAksitakdirde,bunlaryerelleştirilebilir **Yerelleştirilebilir** ayarlanan öznitelik **false**.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, tek bir kaynak dosyasını kaynak olarak sınıflandırır ve French-Canadian (fr-CA) kültür için bir uydu derlemeye katıştırır.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask  
-    TaskName="Microsoft.Build.Tasks.Windows.FileClassifier"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <ItemGroup>  
-    <Resource Include="Resource1.bmp" />  
-  </ItemGroup>  
-  <Target Name="FileClassifierTask">  
-    <FileClassifier  
-      SourceFiles="Resource1.bmp"  
-      Culture="fr-CA"  
-      OutputType="exe" />  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)   
- [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+<xref:Microsoft.Build.Tasks.Windows.FileClassifier> Görev bir bütünleştirilmiş kod içine katıştırılmış olarak kaynak kaynak kümesini sınıflandırır. Bir kaynak yerelleştirilebilir değil ise, ana uygulama derlemesine eklenir; Aksi takdirde, bir uydu derlemeye eklenir.
+
+## <a name="task-parameters"></a>Görev parametreleri
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`CLREmbeddedResource`|Kullanılmayan.|
+|`CLRResourceFiles`|Kullanılmayan.|
+|`CLRSatelliteEmbeddedResource`|Kullanılmayan.|
+|`Culture`|İsteğe bağlı **dize** parametresi.<br /><br /> Derleme için kullanılacak kültürü belirtir. Bu değer **null** derleme yerelleştirilemeyen ise. Varsa **null**, küçük değer varsayılan değerdir **CultureInfo.InvariantCulture** döndürür.|
+|`MainEmbeddedFiles`|İsteğe bağlı **Itaskıtem []** çıkış parametresi.<br /><br /> Ana derleme gömülü yerelleştirilemeyen kaynaklar belirtir.|
+|`OutputType`|Gerekli **dize** parametresi.<br /><br /> Belirtilen kaynak dosyalarıyla katıştırmak için dosya türünü belirtir. Geçerli değerler **exe**, **winexe**, veya **Kitaplığı**.|
+|`SatelliteEmbeddedFiles`|İsteğe bağlı **Itaskıtem []** çıkış parametresi.<br /><br /> Belirtilen kültür için uydu derlemesine gömülür yerelleştirilebilir dosyaları belirtir **kültür** parametresi.|
+|`SourceFiles`|Gerekli **Itaskıtem []** parametresi.<br /><br /> Dosyaları sınıflandırmak için listesini belirtir.|
+
+## <a name="remarks"></a>Açıklamalar
+Varsa **kültür** parametresi ayarlanmadı, kullanılarak belirtilen tüm kaynakların **Kaynakdosyalar** parametresi yerelleştirilemeyen; bir ileilişkiliolduklarısüreceAksitakdirde,bunlaryerelleştirilebilir **Yerelleştirilebilir** ayarlanan öznitelik **false**.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek, tek bir kaynak dosyasını kaynak olarak sınıflandırır ve French-Canadian (fr-CA) kültür için bir uydu derlemeye katıştırır.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.FileClassifier"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <ItemGroup>
+    <Resource Include="Resource1.bmp" />
+  </ItemGroup>
+  <Target Name="FileClassifierTask">
+    <FileClassifier
+      SourceFiles="Resource1.bmp"
+      Culture="fr-CA"
+      OutputType="exe" />
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+[WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
+[Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
+[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)  
+[Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

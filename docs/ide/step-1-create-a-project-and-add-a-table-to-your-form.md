@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ae3bcb27e86a4646aa345d4cfd010f8d34dd56
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: d0343785990dccaa1800e6632a1534eb9778d166
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231813"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853319"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza tablo ekleme
 

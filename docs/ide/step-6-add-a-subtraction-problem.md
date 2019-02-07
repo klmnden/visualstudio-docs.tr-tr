@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71984c6f29abdae6533a0a5977958bea19a51c9f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8921a3ad10e0f785110cfb2c0ebb8de66b19e6cc
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043485"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853150"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6. Adım: Çıkarma problemi ekleme
 Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki görevleri nasıl gerçekleştireceğinizi öğrenin:

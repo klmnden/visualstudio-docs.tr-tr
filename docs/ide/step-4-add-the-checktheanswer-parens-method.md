@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6eaa3d382bdec738a40171f307b04b9e578868
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1eb2c16767be8f1607daf345e754ec9d0209126
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004649"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853881"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4. Adım: CheckTheAnswer() yöntemi ekleme
 Bu Eğitimin dördüncü kısmında bir yöntem yazacaksınız `CheckTheAnswer()`, matematik sorularının yanıtlarını doğru olup olmadığını belirler. Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).

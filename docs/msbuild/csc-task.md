@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b97ad15c6064f1c27eba252173f9afdfc33eda8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009693"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854128"
 ---
 # <a name="csc-task"></a>Csc görevi
-Sarmalar *csc.exe*, yürütülebilir dosyalar oluşturur (*.exe* dosyaları), dinamik bağlantı kitaplıklarını (*.dll* dosyaları), veya kod modüllerini (*.netmodule* dosyaları). Hakkında daha fazla bilgi için *csc.exe*, bkz: [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index).  
+Sarmalar *csc.exe*, yürütülebilir dosyalar oluşturur (*.exe* dosyaları), dinamik bağlantı kitaplıklarını (*.dll* dosyaları), veya kod modüllerini (*.netmodule* dosyaları). Hakkında daha fazla bilgi için *csc.exe*, bkz: [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `Csc` görev.  
-
+## <a name="parameters"></a>Parametreler
+Parametreleri aşağıdaki tabloda açıklanmıştır `Csc` görev.
 
 | Parametre | Açıklama |
 |------------------------------| - |
@@ -81,19 +80,19 @@ Sarmalar *csc.exe*, yürütülebilir dosyalar oluşturur (*.exe* dosyaları), di
 | `Win32Manifest` | İsteğe bağlı `String` parametresi.<br /><br /> Dahil edilecek Win32 bildirimi belirtir. |
 | `Win32Resource` | İsteğe bağlı `String` parametresi.<br /><br /> Bir Win32 kaynağı ekler (*.res*) çıktı dosyasına dosya. Daha fazla bilgi için [-win32res (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan `Microsoft.Build.Tasks.ManagedCompiler` öğesinden devralan sınıf <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Açıklamalar
+Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan `Microsoft.Build.Tasks.ManagedCompiler` öğesinden devralan sınıf <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte `Csc` bir çalıştırılabilir dosyadan kaynak dosyalarında derlemek için görev `Compile` öğe koleksiyonu.  
+## <a name="example"></a>Örnek
+Aşağıdaki örnekte `Csc` bir çalıştırılabilir dosyadan kaynak dosyalarında derlemek için görev `Compile` öğe koleksiyonu.
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevler](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)  
+[Görevler](../msbuild/msbuild-tasks.md)

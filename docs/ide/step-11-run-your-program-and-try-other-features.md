@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85377ed374447ca4508b93c89bd01434d43c5dad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7f37018a7ccc642b06382308b366644d5580d4cc
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042900"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853280"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>11. Adım: Programınızı çalıştırmak ve diğer özellikleri deneme
 Programınız bitti ve çalıştırılmaya hazır. Programınızı çalıştırmak ve arka plan rengini ayarlama <xref:System.Windows.Forms.PictureBox>. Daha fazla bilgi için formun rengini değiştirerek, düğmeleri ve onay kutusunu özelleştirerek ve formun özelliklerini değiştirerek programı iyileştirmeyi deneyin.

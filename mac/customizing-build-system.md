@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296313"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853644"
 ---
 # <a name="customizing-the-build-system"></a>Derleme sistemini özelleştirme
 
-MSbuild, Microsoft tarafından geliştirilen bir derleme, altyapısıdır, için öncelikle .NET uygulamalarının oluşturulmasını sağlar. Mono framework ayrıca Microsoft Build Engine çağrılır, kendi uygulaması olan **xbuild**. Ancak, xbuild tüm işletim sistemlerinde MSBuild kullanmak lehine aşamalı.
+MSBuild, Microsoft tarafından geliştirilen bir derleme, altyapısıdır, için öncelikle .NET uygulamalarının oluşturulmasını sağlar. Mono framework ayrıca Microsoft Build Engine çağrılır, kendi uygulaması olan **xbuild**. Ancak, xbuild tüm işletim sistemlerinde MSBuild kullanmak lehine aşamalı.
 
-**MSbuild** öncelikle için yapı sistemi olarak Visual Studio'da projeler için Mac için kullanılır
+**MSBuild** öncelikle için yapı sistemi olarak Visual Studio'da projeler için Mac için kullanılır
 
 MSBuild, kaynak dosyaları gibi girişler, bir dizi yararlanarak çalışır ve bunları çıktılarına, yürütülebilir dosyalar gibi dönüştürür. Bu çıkış, derleyici gibi araçların çağırarak ulaşır.
 

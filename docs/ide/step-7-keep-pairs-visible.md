@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d6d63aba5ab437cffd1e7275afa5eb9203a169
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f678b383b937d4ec5a40fe2d4ea65f7660a2a5a
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016764"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853228"
 ---
 # <a name="step-7-keep-pairs-visible"></a>7. Adım: Çiftleri görünür kılma
 Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün çalışır. Ancak oyuncu eşleşen bir çift seçtiğinde ne olması gerektiğini bir düşünün. Zamanlayıcıyı açarak yerine simgelerin kaybolmasını (kullanarak <xref:System.Windows.Forms.Timer.Start> yöntemi), böylece, artık kullanarak etiketleri izlemek oyun kendisini sıfırlamalı `firstClicked` ve `secondClicked` başvuru değişkenlerini sıfırlamadan Seçilen iki etiketlerinin renk.

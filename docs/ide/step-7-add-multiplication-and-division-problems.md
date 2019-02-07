@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34417cd35ed3a26bde977f24ab583e8b23c9b546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 64c57ce507be8df222c1eaa2636357dee518199c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956148"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853501"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7. Adım: Çarpma ve bölme soruları ekleyin
 Bu Eğitimin yedinci kısmında çarpma ve bölme soruları ekleyeceksiniz ancak önce bu değişiklik hakkında düşünün. Değerleri depolamayı da içeren ilk adımı düşünün.

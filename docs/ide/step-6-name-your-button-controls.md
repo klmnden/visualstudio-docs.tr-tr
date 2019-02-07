@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4624f6a4ce77aa03d3daea0781dc1cbd1028343d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043602"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853033"
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme denetimlerinizi adlandırma
 Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu eklediğinizde IDE otomatik olarak bunu adlı **pictureBox1**. Yalnızca bir tane <xref:System.Windows.Forms.CheckBox>, olarak adlandırılmış **checkBox1**. Bir süre sonra biraz kod yazacaksınız ve bu kod CheckBox'a ve PictureBox'a başvuracaktır. Olmadığı için bu denetimlerin her birinden yalnızca biri gördüğünüzde ne anlama geldiğini bilirsiniz **pictureBox1** veya **checkBox1** kodunuzda.

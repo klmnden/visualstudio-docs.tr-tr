@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a1188d202fd38ce0f14c5792ba6976b424d0d8c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937359"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853946"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Nasıl yapılır: Msbuild'de kaçış özel karakterleri
 
 Belirli karakterler özel bir anlamı olmayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. Karakterler örnekleri noktalı virgül (`;`) ve yıldız işaretlerini (`*`). Bu özel karakterlerin tam bir listesi için bkz. [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md).
-  
+
 Bu özel karakterlerin bir proje dosyasında sabit değer olarak kullanmak için bunlar sözdizimi kullanılarak belirtilmelidir `%<xx>`burada `<xx>` karakter ASCII onaltılık değerini temsil eder.
-  
+
 ## <a name="msbuild-special-characters"></a>MSBuild özel karakterleri
 
- Bir özel karakter kullanıldığı örnek konusu `Include` öğesi listeleri özniteliği. Örneğin, aşağıdaki madde listesini iki öğe bildirir: *Dosyam.cs* ve *MyClass.cs*.  
-  
-```xml  
-<Compile Include="MyFile.cs;MyClass.cs"/>  
-```  
-  
+Bir özel karakter kullanıldığı örnek konusu `Include` öğesi listeleri özniteliği. Örneğin, aşağıdaki madde listesini iki öğe bildirir: *Dosyam.cs* ve *MyClass.cs*.
+
+```xml
+<Compile Include="MyFile.cs;MyClass.cs"/>
+```
+
 Noktalı virgül adını içeren bir öğe bildirmek istiyorsanız, kullanmanız gerekir `%<xx>` noktalı virgül kaçış ve önlemek için söz dizimi [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gelen iki ayrı öğeleri bildirme. Örneğin, aşağıdaki öğe noktalı virgül çıkışları ve bir öğe adlı bildirir `MyFile.cs;MyClass.cs`.
-  
-```xml  
-<Compile Include="MyFile.cs%3BMyClass.cs"/>  
-```  
+
+```xml
+<Compile Include="MyFile.cs%3BMyClass.cs"/>
+```
 
 Ayrıca bir [özelliği işlevi](../msbuild/property-functions.md) kaçış dizeleri. Örneğin, bu yukarıdaki örneğe eşdeğerdir.
 
@@ -50,8 +50,7 @@ Ayrıca bir [özelliği işlevi](../msbuild/property-functions.md) kaçış dize
 
 Gösterimini kullanın `%<xx>` özel karakter yerine burada `<xx>` ASCII karakter onaltılık değerini temsil eder. Örneğin bir yıldız işareti kullanın (`*`) değerini sabit karakter olarak kullanın `%2A`.
 
- 
-## <a name="see-also"></a>Ayrıca bkz.  
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild.md)   
- [Öğeler](../msbuild/msbuild-items.md)   
+## <a name="see-also"></a>Ayrıca bkz.
+[MSBuild kavramları](../msbuild/msbuild-concepts.md)  
+[MSBuild](../msbuild/msbuild.md)  
+[Öğeler](../msbuild/msbuild-items.md)

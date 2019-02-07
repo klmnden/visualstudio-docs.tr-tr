@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3043605e401942fe6aedb51d5a36d58dc03f6d1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 85dd62d721ca072a26a5afb3199da3ea41d0f3b3
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959484"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55852760"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3. Adım: Her etikete rasgele simge atama
 Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bunu önlemek için simgeler rasgele formunuzdaki etiket denetimlerine kullanarak Ata bir `AssignIconsToSquares()` yöntemi.
