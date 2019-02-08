@@ -2,7 +2,6 @@
 title: Program hataları düzeltin ve kod geliştirin
 description: Bu makalede, Visual Studio hata ayıklama araçları ve birim testleri, derleme hataları dahil olmak üzere, kodunuzda, Kod Analizi sorunlarını düzeltilmesine yardımcı olabilir bazı temel yolu anlatılmaktadır.
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483776"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928315"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu Visual Studio'da çalışma
 

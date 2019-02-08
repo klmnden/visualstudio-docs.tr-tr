@@ -1,7 +1,6 @@
 ---
 title: Dosya, sembol'e Git satıra Git için Git
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06bc4e3bc598f57838d633ccf0713338d5f9179
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934763"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923544"
 ---
 # <a name="find-code-using-go-to-commands"></a>Git komutlarını kullanarak kod bulma
 

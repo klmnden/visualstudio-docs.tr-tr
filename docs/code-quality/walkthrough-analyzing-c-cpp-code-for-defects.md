@@ -1,7 +1,6 @@
 ---
-title: 'İzlenecek yol: Kusurları için C/C++ kodunu analiz etme'
+title: 'İzlenecek yol: C/C++ Kodunda Hata Olup Olmadığını Analiz Etme'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829517"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919683"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: Kusurları için C/C++ kodunu analiz etme
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: C/C++ Kodunda Hata Olup Olmadığını Analiz Etme
 
 Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurları için C/C++ kodunu analiz etme gösterir.
 

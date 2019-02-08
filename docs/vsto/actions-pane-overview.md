@@ -1,7 +1,6 @@
 ---
 title: Eylemler bölmesine genel bakış
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32fef9f6d197e9bd9e8ea29efb05ef0939a28e4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875959"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924389"
 ---
 # <a name="actions-pane-overview"></a>Eylemler bölmesine genel bakış
   Eylemler bölmesi bir özelleştirilebilirdir **belge eylemleri** görev bölmesi, belirli Microsoft Office Word belgesi ya da Microsoft Office Excel çalışma kitabına eklenmiş. Eylemler bölmesinde içindeki diğer yerleşik görev bölmeleri yanı sıra Office görev bölmesi gibi barındırılan **XML kaynağı** görev bölmesinde Excel veya **stilleri ve biçimlendirme** Word görev bölmesinde. Windows Forms veya WPF denetimleri, Eylemler bölmesi kullanıcı arabirimini tasarlamak için kullanabilirsiniz.

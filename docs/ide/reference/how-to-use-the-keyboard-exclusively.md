@@ -2,7 +2,6 @@
 title: 'Nasıl yapılır: Yalnızca klavyeyi kullanma'
 description: Varsayılan kısayol tuş birleşimleri gidin ve Visual Studio tümleşik geliştirme ortamında (IDE) kodu daha kolay hale getirmek için kullanmayı öğrenin.
 ms.date: 08/22/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d26507b3e26aeb90e26ad7d20774f7a659f58c90
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853894"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921425"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl yapılır: Yalnızca klavyeyi kullanma
 

@@ -1,7 +1,6 @@
 ---
 title: 'Nasıl yapılır: Kod Analizi Sözlüğünü Özelleştirme'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71ba70f536074365b3b0ead56b845216918f1a6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971825"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919852"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Nasıl yapılır: Kod Analizi Sözlüğünü Özelleştirme
 Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NET Framework yönergeleri hataları kodunuzda tanımlayıcıları kontrol etmek için yerleşik bir sözlük kullanır. Eklemek, kaldırmak veya hüküm ve kısaltmalar yerleşik sözlüğüne kısaltmalar değiştirmek için bir özel sözlük Xml dosyası oluşturabilirsiniz.

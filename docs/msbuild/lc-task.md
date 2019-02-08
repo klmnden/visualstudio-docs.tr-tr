@@ -18,54 +18,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb0e4d6cbcceb92485f3427e5e18a8d7e7fc18c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989568"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938936"
 ---
 # <a name="lc-task"></a>LC görevi
-Sarmalar *LC.exe*, oluşturduğu bir *.license* dosyasını bir *.licx* dosya. Daha fazla bilgi için *LC.exe*, bkz: [Lc.exe (lisans derleyici)](/dotnet/framework/tools/lc-exe-license-compiler).  
-  
-## <a name="parameters"></a>Parametreler  
- Parametreler için aşağıdaki tabloda açıklanmıştır `LC` görev.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`LicenseTarget`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Yürütülebilir dosya için belirten *.licenses* dosyalar oluşturulur.|  
-|`NoLogo`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Microsoft başlangıç başlığı görüntüsünü bastırır.|  
-|`OutputDirectory`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış yerleştirileceği dizini belirtir *.licenses* dosyaları.|  
-|`OutputLicense`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> çıkış parametresi.<br /><br /> Adını belirtir *.licenses* dosya. Adı bir ad belirtmezseniz *.licx* dosya kullanılır ve *.licenses* dosyasını içeren dizine yerleştirilir *.licx* dosya.|  
-|`ReferencedAssemblies`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Oluştururken yüklemek için başvurulan bileşenlerini belirtir *.license* dosya.|  
-|`SdkToolsPath`|İsteğe bağlı `String` parametresi.<br /><br /> SDK Araçları yolunu gibi belirtir *resgen.exe*.|  
-|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Dahil etmek için lisanslı bileşenleri içeren öğelerini belirten *.licenses* dosya. Daha fazla bilgi için belgelerine bakın `/complist` anahtarının [Lc.exe (lisans derleyici)](/dotnet/framework/tools/lc-exe-license-compiler).|  
-  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte `LC` lisansları derlemek için bir görev.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-<!-- Item declarations, etc -->  
-  
-    <Target Name="CompileLicenses">  
-        <LC  
-            Sources="@(LicxFile)"  
-            LicenseTarget="$(TargetFileName)"  
-            OutputDirectory="$(IntermediateOutputPath)"  
-            OutputLicenses="$(IntermediateOutputPath)$(TargetFileName).licenses"  
-            ReferencedAssemblies="@(ReferencePath);@(ReferenceDependencyPaths)">  
-  
-            <Output  
-                TaskParameter="OutputLicenses"  
-                ItemName="CompiledLicenseFile"/>  
-        </LC>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+Sarmalar *LC.exe*, oluşturduğu bir *.license* dosyasını bir *.licx* dosya. Daha fazla bilgi için *LC.exe*, bkz: [Lc.exe (lisans derleyici)](/dotnet/framework/tools/lc-exe-license-compiler).
+
+## <a name="parameters"></a>Parametreler
+Parametreler için aşağıdaki tabloda açıklanmıştır `LC` görev.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`LicenseTarget`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Yürütülebilir dosya için belirten *.licenses* dosyalar oluşturulur.|
+|`NoLogo`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Microsoft başlangıç başlığı görüntüsünü bastırır.|
+|`OutputDirectory`|İsteğe bağlı `String` parametresi.<br /><br /> Çıkış yerleştirileceği dizini belirtir *.licenses* dosyaları.|
+|`OutputLicense`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> çıkış parametresi.<br /><br /> Adını belirtir *.licenses* dosya. Adı bir ad belirtmezseniz *.licx* dosya kullanılır ve *.licenses* dosyasını içeren dizine yerleştirilir *.licx* dosya.|
+|`ReferencedAssemblies`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Oluştururken yüklemek için başvurulan bileşenlerini belirtir *.license* dosya.|
+|`SdkToolsPath`|İsteğe bağlı `String` parametresi.<br /><br /> SDK Araçları yolunu gibi belirtir *resgen.exe*.|
+|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Dahil etmek için lisanslı bileşenleri içeren öğelerini belirten *.licenses* dosya. Daha fazla bilgi için belgelerine bakın `/complist` anahtarının [Lc.exe (lisans derleyici)](/dotnet/framework/tools/lc-exe-license-compiler).|
+
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnekte `LC` lisansları derlemek için bir görev.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<!-- Item declarations, etc -->
+
+    <Target Name="CompileLicenses">
+        <LC
+            Sources="@(LicxFile)"
+            LicenseTarget="$(TargetFileName)"
+            OutputDirectory="$(IntermediateOutputPath)"
+            OutputLicenses="$(IntermediateOutputPath)$(TargetFileName).licenses"
+            ReferencedAssemblies="@(ReferencePath);@(ReferenceDependencyPaths)">
+
+            <Output
+                TaskParameter="OutputLicenses"
+                ItemName="CompiledLicenseFile"/>
+        </LC>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Görevler](../msbuild/msbuild-tasks.md)  
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)

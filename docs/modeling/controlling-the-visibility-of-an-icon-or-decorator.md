@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933756"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913216"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde görünen metin satırı. Dekoratör görünmesi ve modelinde özelliklerini durumuna bağlı olarak kaybolur. Örneğin, bir kişiyi temsil eden bir şekli üzerinde alt sayıda kişinin cinsiyet bağlı olarak görünür ve benzeri farklı simgeler olabilir.

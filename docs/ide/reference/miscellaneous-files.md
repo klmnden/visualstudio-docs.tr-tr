@@ -1,7 +1,6 @@
 ---
 title: Çeşitli Dosyalar
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.newfile
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2e00e836725620c9a3ded6e2df5119a66d1cb54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8bde65506a9005459f1102cd6181e0fa346ec26a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942290"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912709"
 ---
 # <a name="miscellaneous-files"></a>Çeşitli Dosyalar
 Kullanmak istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bağımsız olarak bir proje veya çözüm dosyaları üzerinde çalışmasına düzenleyiciler. Açık bir çözüm olsa da, açın ve bir çözüm veya proje eklemeden dosyaları değiştirin. Bağımsız olarak kapsayıcılardan çalışmak istediğiniz dosyaları diğer dosyalar çağrılır. Çeşitli dosyalar, çözümler ve projeler için dış, yapılarında dahil değildir ve ile kaynak denetimi altında bir çözüme eklenemez.

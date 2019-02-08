@@ -1,7 +1,6 @@
 ---
 title: '2. Adım: Rasgele bir toplama problemi oluşturma'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8ad9d2dc0ba3d4a51b9ff7ec3e0907eda56a03
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2897a94dca8210f5ebf11ab43b884108cc7171dd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854102"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931123"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rasgele bir toplama problemi oluşturma
 Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matematik soruları ekleyerek olun. Adlı bir yöntem de oluşturduğunuz `StartTheQuiz()` ve problemleri dolduran ve geri sayım Zamanlayıcısını başlatır. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorularını ekleyeceksiniz.
