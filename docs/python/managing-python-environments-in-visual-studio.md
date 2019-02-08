@@ -2,7 +2,6 @@
 title: Python ortamları ve yorumlayıcılarını yönetin
 description: Genel, sanal yönetmek için Python ortamları penceresi ve Python yorumlayıcılarını ve paketleri yükleme ve Visual Studio projelerine ortamları atama conda ortamları kullanın.
 ms.date: 12/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e883cb199ca2959015dac0c6492d19e7875c5ca1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 415739feaf313ae55e72033cc89116f0b8307dd4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958790"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949021"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 

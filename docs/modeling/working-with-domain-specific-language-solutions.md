@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc122767dbc2b7a901f75b26bcb8635cda64a0ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f070b02c9b91420fab9058e3d33aa682334f9cd4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960223"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951546"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Etki Alanına Özgü Dil Çözümleriyle Çalışma
 Bir etki alanına özgü dil (DSL) kullanarak bir Visual Studio çözümü oluşturulur. Bu bölüm, ayarlamak ve çözümü özelleştirme hakkında yöneliktir.

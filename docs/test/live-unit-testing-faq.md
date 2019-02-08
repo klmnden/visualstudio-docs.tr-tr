@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing SSS
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935599"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947399"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing sık sorulan sorular
 
@@ -139,7 +138,7 @@ Geçersiz `<OutDir>` doğrudan yapı işleminizde; geçersiz kılma `<OutputPath
 
 Ayarlama `LiveUnitTesting_BuildRoot` istediğiniz Live Unit Testing derleme yapıtlarını bırakılan yola kullanıcı düzeyinde ortam değişkeni. 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Explorer vs test edin. Live Unit Testing test çalıştırmaları 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Explorer vs test edin. Live Unit Testing test çalıştırmaları
 **Nasıl testleri Test Gezgini penceresinden testleri Live Unit Testing içinde çalışan farklı mı çalışıyor?**
 
 Bazı farklılıklar vardır:
@@ -158,7 +157,7 @@ Bazı farklılıklar vardır:
 **Testleri Live Unit Testing içinde katılmalarını nasıl dışlansın mı?**
 
 "Dahil etme ve dışlama projelerin test ve test yöntemleri" bölümüne bakın [kullanım Live Unit Testing Visual Studio 2017 Enterprise sürümünde](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) makale için kullanıcıya özgü ayarları. Testleri veya belirli düzenleme oturumu için testleri belirli bir kümesini çalıştırmak için veya kişisel tercihlerinize kalıcı hale getirmek için istediğiniz zaman yararlıdır.
- 
+
 Çözüme özel ayarlar için uyguladığınız <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> Live Unit Testing ile izleme eklenmiş gelen yöntemler, özellikler, sınıflar veya yapılar programlı olarak hariç tutmak için özniteliği. Buna ek olarak da ayarlayabilirsiniz `<ExcludeFromCodeCoverage>` özelliğini `true` proje dosyanızda izleme eklenmiş tüm proje dışlanacak. Live Unit Testing değil eklenmiş olan testleri çalışmaya devam edecektir, ancak kendi kapsamı olmayan görselleştirilir.
 
 Ayrıca denetleyebilirsiniz olmadığını `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` geçerli uygulama etki alanına yüklenir ve testleri üzerinde neden temelinde devre dışı bırakın. Örneğin, xUnit ile aşağıdaki gibi bir şey yapabilirsiniz:

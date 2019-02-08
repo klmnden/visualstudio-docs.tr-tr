@@ -19,15 +19,14 @@ ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004402"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945813"
 ---
 # <a name="validate-data-in-datasets"></a>Veri kümelerindeki verileri doğrulama
 Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri nesnelerine girilen değerlerin onaylanması işlemidir. Doğrulama işlemi ayrıca, bu değerler uygulamanız için kurulmuş kuralları takip ettiğiniz onaylar. Alttaki veritabanına güncelleştirmeleri göndermeden önce verileri doğrulamak için iyi bir uygulamadır. Bu, hataları ve bunun yanı sıra bir uygulama ve veritabanı arasındaki gidiş gelişlerin potansiyel sayısını azaltır.

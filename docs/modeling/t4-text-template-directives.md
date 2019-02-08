@@ -14,13 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f0772342f4770a4c9f6e378abe1e9a8c856fc411
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1447af5bcfd2b9b95b834e3b84cab7b8da88ea5b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966101"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946372"
 ---
 # <a name="t4-text-template-directives"></a>T4 Metin Şablonu Yönergeleri
 Yönergeler metin şablonu dönüştürme motoru için yönergeler sağlar.

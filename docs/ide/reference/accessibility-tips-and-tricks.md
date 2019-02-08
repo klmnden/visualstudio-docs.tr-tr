@@ -2,7 +2,6 @@
 title: Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 description: Engelli kişiler de dahil olmak üzere ipuçları ve Visual Studio tümleşik geliştirme ortamı (IDE) kullanmak herkes için daha erişilebilir hale gelmesine yardımcı olabilecek öneriler hakkında daha fazla bilgi edinin.
 ms.date: 09/15/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b59fda5efe0c68154d46daf0fbd34db6bbfacf
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853137"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954055"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 

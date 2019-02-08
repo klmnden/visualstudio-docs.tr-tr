@@ -1,19 +1,18 @@
 ---
 title: Oluşturma C# Equals ve GetHashCode metot geçersiz kılmaları
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d56a8f94665e20f8ca89b5a682eb6e44602bde0f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbe04ac7a28666f32aa1da3bebe5ed50f96fb900
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983748"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957971"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Equals ve oluşturma Visual Studio'da GetHashCode metot geçersiz kılmaları
 
