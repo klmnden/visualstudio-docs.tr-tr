@@ -1,7 +1,6 @@
 ---
 title: Özellik Sayfaları, JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9011a6614c59b033925cb2266d4e16a4f131a119
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923850"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929498"
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
 **Özellik sayfaları** proje ayarlarına erişim sağlar. Görüntülenen sayfaları kullanabilirsiniz **özellik sayfaları** proje özelliklerini değiştirmek için.

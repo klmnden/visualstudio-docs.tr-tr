@@ -2,7 +2,6 @@
 title: 'Hızlı Başlangıç: Bir ASP.NET Core web hizmetini oluşturunF#'
 description: Visual Studio ile bir ASP.NET Core web hizmeti oluşturmayı öğrenin F#, adım adım.
 ms.date: 08/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -12,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f80b44c866908ef142e7db7081269d5a5f641585
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853199"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934672"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: İlk ASP.NET Core web hizmeti oluşturmak için Visual StudioF#
 

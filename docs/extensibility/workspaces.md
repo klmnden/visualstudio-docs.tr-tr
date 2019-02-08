@@ -2,18 +2,17 @@
 title: Visual Studio'da çalışma alanları | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876909"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925442"
 ---
 # <a name="workspaces"></a>Çalışma Alanları
 
@@ -180,5 +179,5 @@ UI bağlamı otomatik yükle paketiniz için kullanılabilir. Değer `4646B819-1
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* [Dosya bağlamları](workspace-file-contexts.md) -dosya bağlam sağlayıcıları Klasör Aç çalışma alanları için kod zeka getirin. 
+* [Dosya bağlamları](workspace-file-contexts.md) -dosya bağlam sağlayıcıları Klasör Aç çalışma alanları için kod zeka getirin.
 * [Dizin oluşturma](workspace-indexing.md) -çalışma dizinini toplar ve çalışma alanı hakkında bilgileri kalıcıdır.

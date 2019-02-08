@@ -4,15 +4,14 @@ author: ghogen
 description: Visual Studio 2017 araçları ve Docker için Windows kullanmayı öğrenin
 ms.author: ghogen
 ms.date: 02/01/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d55a5b5473e49484e95261e239286e8c8f3cad3d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b98659e3aaec046de3963f3c217682695a8a81e2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853790"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914510"
 ---
 # <a name="quickstart-visual-studio-tools-for-docker"></a>Hızlı Başlangıç: Docker için Visual Studio Araçları
 

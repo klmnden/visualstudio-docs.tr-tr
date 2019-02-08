@@ -1,7 +1,6 @@
 ---
 title: Yazmaçları Listele Komutu
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e79829caea30ece2c427d851b68d74bf9c586e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943045"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934477"
 ---
 # <a name="list-registers-command"></a>Yazmaçları Listele Komutu
 Seçilen değeri kaydeder ve olanak tanır görüntüler liste kayıtları göstermek için değiştirin.

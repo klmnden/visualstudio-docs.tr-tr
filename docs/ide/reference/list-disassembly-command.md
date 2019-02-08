@@ -1,7 +1,6 @@
 ---
 title: Ayrıştırılmış Kodu Listele Komutu
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab169dba1ab6692c0a6df8665e20d2695c7ac2c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028856"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934308"
 ---
 # <a name="list-disassembly-command"></a>Ayrıştırılmış Kodu Listele Komutu
 Hata ayıklama işlemini başlatır ve hataların nasıl işleneceğini belirtmenizi sağlar.
