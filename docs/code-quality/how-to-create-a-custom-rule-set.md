@@ -1,7 +1,6 @@
 ---
 title: Özel Kod Analizi kural kümesi oluşturma
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 087651271de696345ed2bed97e24acf280af1cd6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026011"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952456"
 ---
 # <a name="customize-a-rule-set"></a>Bir kural kümesi özelleştirme
 

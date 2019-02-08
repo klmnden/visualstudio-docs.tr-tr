@@ -1,7 +1,6 @@
 ---
 title: Oluşturma ve bir kaynağı uygulama
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b39cbdd98aa58c369fed3dee7347dc66383b2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b27afce3f27b2a6325f3ee59f5220bac68275c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042016"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919345"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve bir kaynağı uygulama
 Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adlı yeniden kullanılabilir varlıklarda depolanır. Stilleri öğesi özellikleri ayarlamanızı ve birden çok öğe arasında tutarlı bir görünüm için bu ayarları yeniden etkinleştirin. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) denetiminin görünümünü tanımlar ve ayrıca bir kaynak olarak uygulanabilir. Daha fazla bilgi için [hızlı başlangıç: Stil denetimleri](http://go.microsoft.com/fwlink/?LinkID=248239) ve [hızlı başlangıç: Denetim şablonları](http://go.microsoft.com/fwlink/?LinkID=247982).

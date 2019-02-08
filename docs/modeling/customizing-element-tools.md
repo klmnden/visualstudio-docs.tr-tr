@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb5a43224ff94e0e5115265383bff578031793bc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a655cd0ff3412520f0576358b07020585a1f420
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936313"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909563"
 ---
 # <a name="customizing-element-tools"></a>Öğe Araçlarını Özelleştirme
 Bazı DSL tanımlarında öğeleri bir grup olarak tek bir kavramı gösterir. Örneğin, bir bileşen sabit bir dizi bağlantı noktası olan bir model oluşturursanız, her zaman aynı zamanda kendi ana bileşen oluşturulacak bağlantı noktalarını isteyebilirsiniz. Bu nedenle, bir grubu yerine yalnızca bir öğe oluşturur, böylece öğe oluşturma aracı özelleştirmeniz gerekir. Bunu başarmak için öğe oluşturma Aracı nasıl başlatılır özelleştirebilirsiniz.

@@ -18,45 +18,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fb225297973a1bedb6fabb56770622ecc100c3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e7e9e61ffd20828d73cef9c4ce3831d613d69bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026498"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922231"
 ---
 # <a name="makedir-task"></a>MakeDir görevi
-Dizin oluşturur ve gerekirse, tüm üst dizinleri.  
-  
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `MakeDir` görev.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`Directories`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Dizinler oluşturmak için dizi.|  
-|`DirectoriesCreated`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Bu görev tarafından oluşturulan dizinleri. Bazı dizinler oluşturulamadı, bu yöntemlere geçirilen öğelerin tümünü içermeyebilir `Directories` parametresi.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde `MakeDir` tarafından belirtilen dizin oluşturmak için görev `OutputDirectory` özelliği.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <PropertyGroup>  
-        <OutputDirectory>\Output\</OutputDirectory>  
-    </PropertyGroup>  
-  
-    <Target Name="CreateDirectories">  
-        <MakeDir  
-            Directories="$(OutputDirectory)"/>  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+Dizin oluşturur ve gerekirse, tüm üst dizinleri.
+
+## <a name="parameters"></a>Parametreler
+Parametreleri aşağıdaki tabloda açıklanmıştır `MakeDir` görev.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`Directories`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Dizinler oluşturmak için dizi.|
+|`DirectoriesCreated`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Bu görev tarafından oluşturulan dizinleri. Bazı dizinler oluşturulamadı, bu yöntemlere geçirilen öğelerin tümünü içermeyebilir `Directories` parametresi.|
+
+## <a name="remarks"></a>Açıklamalar
+Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Örnek
+Aşağıdaki kod örneğinde `MakeDir` tarafından belirtilen dizin oluşturmak için görev `OutputDirectory` özelliği.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <OutputDirectory>\Output\</OutputDirectory>
+    </PropertyGroup>
+
+    <Target Name="CreateDirectories">
+        <MakeDir
+            Directories="$(OutputDirectory)"/>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Görevler](../msbuild/msbuild-tasks.md)  
+[Görev başvurusu](../msbuild/msbuild-task-reference.md)

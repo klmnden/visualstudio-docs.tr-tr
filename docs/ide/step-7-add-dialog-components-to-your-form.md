@@ -1,7 +1,6 @@
 ---
 title: '7. Adım: Formunuza iletişim kutusu bileşenleri ekleme'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11788ed21d536642bdb3c88c59cea2dad009c9c3
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853488"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911084"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7. Adım: Formunuza iletişim kutusu bileşenleri ekleme
 Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan rengini seçin etkinleştirmek için bir <xref:System.Windows.Forms.OpenFileDialog> bileşeni ve bir <xref:System.Windows.Forms.ColorDialog> formunuza bileşen.

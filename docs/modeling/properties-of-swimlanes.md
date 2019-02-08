@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 38bb141c6011739e56c5e7fee0fe77729f472232
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933368"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956850"
 ---
 # <a name="properties-of-swimlanes"></a>Kulvarların Özellikleri
 Bir diyagrama Kulvarlar ekleyebilirsiniz. Kulvarlar dikey veya yatay alana bir diyagram bölün. Diğer şekiller Kulvarlar içinde görüntülenecek tanımlayabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).

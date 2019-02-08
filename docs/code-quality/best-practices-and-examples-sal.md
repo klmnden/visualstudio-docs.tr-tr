@@ -1,19 +1,18 @@
 ---
 title: En İyi Yöntemler ve Örnekler (SAL)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d9526cb9778dd7f4fde61cca5667c7eaece2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959202"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940587"
 ---
 # <a name="best-practices-and-examples-sal"></a>En İyi Yöntemler ve Örnekler (SAL)
 Kaynak kod ek açıklama dili (SAL) dışında en iyi şekilde yararlanmak ve bazı yaygın sorunları önlemek için bazı yollar şunlardır.

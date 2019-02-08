@@ -1,7 +1,6 @@
 ---
 title: Diğer Ad Komutu
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - tools.alias
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7572a77568ce6d3e8e1a2da721d6d851ac2d92cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e55b27ebc3a0a9690e04e19e53b65a7aa44834de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933165"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919423"
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
 Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.

@@ -2,18 +2,17 @@
 title: Visual Studio'da dosya bağlamları çalışma | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826870"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939196"
 ---
 # <a name="workspace-file-contexts"></a>Çalışma alanı dosyası bağlamları
 
@@ -27,7 +26,7 @@ Dosya bağlamları için en yaygın senaryoları, derleme, hata ayıklama ve dil
 
 ## <a name="file-context-lifecycle"></a>Dosya içeriği yaşam döngüsü
 
-Ömürleri bir `FileContext` belirleyici olduğu. Herhangi bir zamanda bir bileşen bazı içerik türleri kümesi için zaman uyumsuz olarak talep edebilir. Bazı alt istek içerik türleri desteği sağlayıcıları sorgulanır. `IWorkspace` Orta-man üzerinden sağlayıcıları ve tüketici arasında görür örneği <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> yöntemi. Tüketiciler istek bir bağlamı ve bağlama, diğer bir içerik isteği ve uzun süreli bir başvuru korumak göre kısa vadeli bazı eylemler gerçekleştirme. 
+Ömürleri bir `FileContext` belirleyici olduğu. Herhangi bir zamanda bir bileşen bazı içerik türleri kümesi için zaman uyumsuz olarak talep edebilir. Bazı alt istek içerik türleri desteği sağlayıcıları sorgulanır. `IWorkspace` Orta-man üzerinden sağlayıcıları ve tüketici arasında görür örneği <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> yöntemi. Tüketiciler istek bir bağlamı ve bağlama, diğer bir içerik isteği ve uzun süreli bir başvuru korumak göre kısa vadeli bazı eylemler gerçekleştirme.
 
 Değişiklikleri eskir bir dosya bağlamı neden dosyalara gerçekleşebilir. Sağlayıcı üzerinde bir olay tetikleyebilir `FileContext` güncelleştirmeleri tüketicilerinin bildirir. Örneğin, bir derleme bağlamı için bazı dosyası sağlanır, ancak bu bağlamı bir disk değişikliği geçersiz kılar, daha sonra olay özgün üretici çağırabilirsiniz. Yine, başvuran herhangi bir tüketiciye `FileContext` sonra yeni bir sorgulayabilirsiniz `FileContext`.
 

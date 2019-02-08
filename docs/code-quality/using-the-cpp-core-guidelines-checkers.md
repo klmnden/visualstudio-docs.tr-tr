@@ -1,5 +1,5 @@
 ---
-title: C++ temel yönergeleri denetleyicilerini kullanma
+title: C++ Temel Yönergeleri denetleyicilerini kullanma
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -7,15 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820244"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915003"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>C++ temel yönergeleri denetleyicilerini kullanma
+# <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcılar tarafından oluşturulan c++ kodlama hakkında en iyi taşınabilir bir kümesidir. Visual Studio, şu anda C++ için kod analizi araçlarında bir parçası olarak bu kural kümesini destekler. Ana Kılavuz denetleyicileri Visual Studio 2017'de varsayılan olarak yüklenir ve olan [Visual Studio 2015 için bir NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>C++ temel yönergeleri proje

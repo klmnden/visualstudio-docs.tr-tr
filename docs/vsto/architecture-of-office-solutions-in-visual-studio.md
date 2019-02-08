@@ -2,7 +2,6 @@
 title: Visual Studio'da Office çözümleri mimarisi
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cc30775f99d5d786444c99900e93647eb4faa87f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d64051de8f1c3479030a11b3d8dd8188214f677b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863389"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914272"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio'da Office çözümleri mimarisi
   Bu bölümdeki konular, Visual Studio'da Office geliştirme araçları kullanılarak oluşturulmuş çözümleri nasıl çalıştığı hakkında bilgi sağlar.  

@@ -6,15 +6,14 @@ ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3aeddaa1b3589857124e4658c758a52def896acd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51ca5704bae6d52bf6957b97ac01d2b587c05970
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983579"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943564"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Nasıl yapılır: Çoğullaştırmayı açıp (O/R Tasarımcısı) kapatma
 Varsayılan olarak, s ya da gelen zellikleri sonlanan adlara sahip veritabanı nesneleri sürüklediğinizde **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md), üretilen varlık sınıflarının adları çoğul için tekil değiştirilir. Bu, daha doğru bir şekilde oluşturulan varlık sınıfı verilerin tek bir kaydına eşler olgu temsil etmek için gerçekleştirilir. Örneğin, bir `Customers` tablo **O/R Tasarımcısı** sonuçları adlı bir varlık sınıfında `Customer` sınıfın yalnızca tek bir müşterinin verilerini tutacak çünkü.

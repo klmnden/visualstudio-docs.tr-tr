@@ -1,7 +1,6 @@
 ---
 title: Office çözümleri oluşturun
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -27,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4ab9fafbc56149bb1c1476ae9632ca81988dcd3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945423"
 ---
 # <a name="build-office-solutions"></a>Office çözümleri oluşturun
   Genel olarak, derleme ve hata ayıklama Office projeleri derleme ve Windows Forms gibi Visual Studio'da proje türlerinde hata ayıklama ile aynı olur. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [derlemek ve oluşturmak Visual Studio'da](../ide/compiling-and-building-in-visual-studio.md).
