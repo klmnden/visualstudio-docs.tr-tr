@@ -1,7 +1,6 @@
 ---
 title: Seçenekler Sayfası, Ortam Düğümü Özellikleri
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959820"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955758"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **ortam** kategori `DTE.Properties("Environment", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı özellikler koleksiyonuna erişmek için kullanılan çağrıdır ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
@@ -133,7 +132,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -   0: Giriş sayfasını aç<br />-   1: Son yüklenen çözümü yükleme<br />-   2: Göster **açık proje** iletişim kutusu<br />-   3: Göster **yeni proje** iletişim kutusu<br />-   4: Boş ortamı Göster<br />-   5: Başlangıç sayfasını göster|
+|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -   0: Giriş sayfasını aç<br />-   1: Son yüklenen çözümü yükleme<br />-   2: Göster **açık proje** iletişim kutusu<br />-   3: Göster **yeni proje** iletişim kutusu<br />-   4: Boş ortamı göster<br />-   5: Başlangıç sayfasını göster|
 |StartPageRSSUrl|Get/Set (dize)|RSS, akış URL'sini başlatma sırasında kullanılır.|
 |StartPageRefreshDownloadedContent|Get/Set (Boole)|Başlangıç sayfası StartPageRefreshInterval içinde belirtilen aralık her ilgi çekici sonra yeniler.|
 |StartPageRefreshInterval|Get/Set (kısa)|Aralığının başlangıç sayfası yenilemek için dakika cinsinden değeri.|

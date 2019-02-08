@@ -1,7 +1,6 @@
 ---
 title: Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb698083b6c24f0f7deed70e17f6a1e6b1f5b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977063"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924662"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **metin düzenleyici** kategori `DTE.Properties("TextEditor", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.

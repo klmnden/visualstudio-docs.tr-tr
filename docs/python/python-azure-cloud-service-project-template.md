@@ -2,7 +2,6 @@
 title: Python için Azure bulut hizmeti projesi şablonu
 description: Visual Studio, Azure cloud services rol dağıtımı, bağımlılıkları, dahil etme ve sorun giderme Python'da yazılmış için şablonlar sağlar.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0bdd95b5eb94567c7d05e1cedf7605c4e7688a89
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: aefb2ae530d5d48158faf1645b4d1eadd299aec6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231837"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925975"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python için Azure bulut hizmeti projeleri
 

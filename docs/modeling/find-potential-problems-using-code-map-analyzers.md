@@ -1,5 +1,5 @@
 ---
-title: Kod eşleme çözümleyicilerini kullanarak olası sorunları bulma
+title: Kod haritası çözümleyicilerini kullanarak olası sorunları bulma
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,13 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 04e4d51fba62c56ce39fd34d8179f73baeeea77a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025923"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912345"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Kod haritası çözümleyicilerini kullanarak olası sorunları bulma
 

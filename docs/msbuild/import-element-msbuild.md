@@ -18,95 +18,95 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a86ecf8f5f9619e36ad90a32680e9cfb7745f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945300"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924441"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
-Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.  
+Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 
- \<Proje >  
- \<İçeri aktarma >  
+\<Proje >  
+\<İçeri aktarma >  
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<Import Project="ProjectPath"  
-    Condition="'String A'=='String B'" />  
-```  
+```xml
+<Import Project="ProjectPath"
+    Condition="'String A'=='String B'" />
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Project`|Gerekli öznitelik.<br /><br /> İçeri aktarmak için proje dosyasının yolu. Yol, joker karakterler içerebilir. Eşleşen dosyaları sıralanmış olarak içeri aktarılır. Bu özelliği kullanarak, yalnızca bir dizine kod dosyasına ekleyerek bir proje için kod ekleyebilirsiniz.|  
-|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek olan koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Project`|Gerekli öznitelik.<br /><br /> İçeri aktarmak için proje dosyasının yolu. Yol, joker karakterler içerebilir. Eşleşen dosyaları sıralanmış olarak içeri aktarılır. Bu özelliği kullanarak, yalnızca bir dizine kod dosyasına ekleyerek bir proje için kod ekleyebilirsiniz.|
+|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek olan koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Alt öğeleri  
- Hiçbiri  
+### <a name="child-elements"></a>Alt öğeleri
+ Hiçbiri
 
-### <a name="parent-elements"></a>Üst öğeler  
+### <a name="parent-elements"></a>Üst öğeler
 
 | Öğe | Açıklama |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
 | [Importgroup](../msbuild/importgroup-element.md) | Bir koleksiyonunu içeren `Import` öğeleri isteğe bağlı bir koşul altında gruplandırılır. |
 
-## <a name="remarks"></a>Açıklamalar  
- Kullanarak `Import` öğesi, birçok proje dosyaları için ortak olan kod yeniden. Paylaşılan koda yaptığınız tüm güncelleştirmeleri almak için tüm projeleri yayılan çünkü kod bakımını kolaylaştırır.  
+## <a name="remarks"></a>Açıklamalar
+ Kullanarak `Import` öğesi, birçok proje dosyaları için ortak olan kod yeniden. Paylaşılan koda yaptığınız tüm güncelleştirmeleri almak için tüm projeleri yayılan çünkü kod bakımını kolaylaştırır.
 
- Kural gereği, paylaşılan içeri aktarılan proje dosyaları olarak kaydedilen *.targets* dosyaları, ancak bunlar standart [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı dosya adı uzantısına sahip olan bir projeyi içeri aktarma öğesinden önlemeniz değil, ancak kullanmanızı öneririz *.targets* tutarlılık için uzantısı.  
+ Kural gereği, paylaşılan içeri aktarılan proje dosyaları olarak kaydedilen *.targets* dosyaları, ancak bunlar standart [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı dosya adı uzantısına sahip olan bir projeyi içeri aktarma öğesinden önlemeniz değil, ancak kullanmanızı öneririz *.targets* tutarlılık için uzantısı.
 
- İçeri aktarılan projeleri göreli yollar içeri aktarma proje dizinine göreli olarak yorumlanır. Bu nedenle, farklı konumlardaki bazı proje dosyaları içinde bir proje dosyası aldıysanız, içeri aktarılan proje dosyasındaki göreli yollar içeri aktarılan her proje için farklı kabul edilecektir.  
+ İçeri aktarılan projeleri göreli yollar içeri aktarma proje dizinine göreli olarak yorumlanır. Bu nedenle, farklı konumlardaki bazı proje dosyaları içinde bir proje dosyası aldıysanız, içeri aktarılan proje dosyasındaki göreli yollar içeri aktarılan her proje için farklı kabul edilecektir.
 
- Tüm [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ayrılmış, proje dosyasına, örneğin, ilgili Özellikler `MSBuildProjectDirectory` ve `MSBuildProjectFile`, başvurulan içeri aktarılan bir projedeki alma proje dosyasını temel alarak değerler atanır.  
+ Tüm [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ayrılmış, proje dosyasına, örneğin, ilgili Özellikler `MSBuildProjectDirectory` ve `MSBuildProjectFile`, başvurulan içeri aktarılan bir projedeki alma proje dosyasını temel alarak değerler atanır.
 
- İçeri aktarılan proje yoksa bir `DefaultTargets` özniteliği, içeri aktarılan projeleri içeri aktarılır ve bulunan değerin ilk sırada inceledi `DefaultTargets` özniteliği kullanılır. Örneğin ProjectA ProjectB ve ProjectC (bu sırayla) alır ve ProjectB alır, ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ilk arar `DefaultTargets` ProjectA, ardından ProjectB, ardından ProjectD ve ProjectC son belirtilen.  
+ İçeri aktarılan proje yoksa bir `DefaultTargets` özniteliği, içeri aktarılan projeleri içeri aktarılır ve bulunan değerin ilk sırada inceledi `DefaultTargets` özniteliği kullanılır. Örneğin ProjectA ProjectB ve ProjectC (bu sırayla) alır ve ProjectB alır, ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ilk arar `DefaultTargets` ProjectA, ardından ProjectB, ardından ProjectD ve ProjectC son belirtilen.
 
- Şema içeri aktarılan bir proje, standart bir proje için aynıdır. Ancak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] olabilir bir içeri aktarılan proje genellikle kümesi veya hedefleri çalıştırın sırayı hangi özellikleri hakkında bilgi içermiyor içeri aktarılan bir proje oluşturmak kullanabilirsiniz, olası olmasıdır. İçeri aktarılan proje içine bu bilgileri sağlamak için aktarılır projeye bağlıdır.  
+ Şema içeri aktarılan bir proje, standart bir proje için aynıdır. Ancak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] olabilir bir içeri aktarılan proje genellikle kümesi veya hedefleri çalıştırın sırayı hangi özellikleri hakkında bilgi içermiyor içeri aktarılan bir proje oluşturmak kullanabilirsiniz, olası olmasıdır. İçeri aktarılan proje içine bu bilgileri sağlamak için aktarılır projeye bağlıdır.
 
 
-## <a name="wildcards"></a>Joker karakterler  
- .NET Framework 4'te MSBuild proje öznitelik joker karakterler sağlar. Joker karakterler olduğunda, tüm eşleşme bulundu (için yeniden üretilebilirliğini) sıralanır ve sırasını açıkça ayarlanmış olarak daha sonra bu sırayla aktarıldıkları.  
+## <a name="wildcards"></a>Joker karakterler
+ .NET Framework 4'te MSBuild proje öznitelik joker karakterler sağlar. Joker karakterler olduğunda, tüm eşleşme bulundu (için yeniden üretilebilirliğini) sıralanır ve sırasını açıkça ayarlanmış olarak daha sonra bu sırayla aktarıldıkları.
 
- Bu, başka birisi bir dosyayı içeri aktarma dosyası için dosya adı açıkça eklemeye gerek kalmadan içe aktarabilmesi genişletilebilirlik noktası olanağı sunmak istiyorsanız kullanışlıdır. Bu amaçla *Microsoft.Common.Targets* dosyasının en üstüne aşağıdaki satırı içerir.  
+ Bu, başka birisi bir dosyayı içeri aktarma dosyası için dosya adı açıkça eklemeye gerek kalmadan içe aktarabilmesi genişletilebilirlik noktası olanağı sunmak istiyorsanız kullanışlıdır. Bu amaçla *Microsoft.Common.Targets* dosyasının en üstüne aşağıdaki satırı içerir.
 
-```xml  
-<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>  
-```  
+```xml
+<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>
+```
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, çeşitli öğeleri ve özellikleri ve genel proje dosyasını içe aktaran bir proje gösterir.  
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, çeşitli öğeleri ve özellikleri ve genel proje dosyasını içe aktaran bir proje gösterir.
 
-```xml  
-<Project DefaultTargets="Compile"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Compile"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <PropertyGroup>  
-        <resourcefile>Strings.resx</resourcefile>  
+    <PropertyGroup>
+        <resourcefile>Strings.resx</resourcefile>
 
-        <compiledresources>  
-            $(O)\$(MSBuildProjectName).Strings.resources  
-        </compiledresources>  
-    </PropertyGroup>  
+        <compiledresources>
+            $(O)\$(MSBuildProjectName).Strings.resources
+        </compiledresources>
+    </PropertyGroup>
 
-    <ItemGroup>  
-        <CSFile Include="*.cs" />  
+    <ItemGroup>
+        <CSFile Include="*.cs" />
 
-        <Reference Include="System" />  
-        <Reference Include="System.Data" />  
-    </ItemGroup>  
+        <Reference Include="System" />
+        <Reference Include="System.Data" />
+    </ItemGroup>
 
-    <Import Project="$(CommonLocation)\General.targets" />  
-</Project>  
-```  
+    <Import Project="$(CommonLocation)\General.targets" />
+</Project>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)  
+[Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

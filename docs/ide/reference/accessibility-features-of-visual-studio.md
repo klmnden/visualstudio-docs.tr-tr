@@ -2,7 +2,6 @@
 title: Visual Studio'nun erişilebilirlik özellikleri
 description: Windows işletim sistemi hem de Visual Studio Geliştirici paketi daha erişilebilir engelli kişilerin yaşamlarını dahil herkes için yardımcı olun yardımcı programları ve erişilebilirlik özellikleri hakkında daha fazla bilgi edinin.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7011ec455ae9d723e7abfb8289f240c1fa6dd425
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853020"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935010"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun erişilebilirlik özellikleri
 

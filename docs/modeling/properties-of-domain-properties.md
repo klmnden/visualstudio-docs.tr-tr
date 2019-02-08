@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6151cafd1b89333e6db45abd3d93a61648346bc9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981200"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927860"
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 A *domain özelliği* değer tutan bir model öğesi olan bir özelliktir. Örneğin, `Person` etki alanı sınıfı özellikleri vardır `Name` ve `BirthDate`. DSL tanımındaki etki alanı özellikleri, etki alanı sınıfı kutusuna Diyagramı'nda ve etki alanı sınıfı, DSL Gezgini altında listelenir. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md).

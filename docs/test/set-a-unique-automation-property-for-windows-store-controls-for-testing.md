@@ -1,19 +1,18 @@
 ---
 title: Test Etme Amacıyla UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 7221f5ac3f966e41d0dbe7978cd9f59ad225d34a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd939162ff4063a66ac0afe1e6830a0d3b32bab2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992431"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933749"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Test etmek için UWP denetimleri için benzersiz Otomasyon özelliği ayarlama
 

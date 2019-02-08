@@ -4,15 +4,14 @@ author: ghogen
 description: Visual Studio 2017 araçları ve Docker için Windows kullanmayı öğrenin
 ms.author: ghogen
 ms.date: 02/01/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: e5bbc5d699facb32e8d476dbcdb5604b30ff5fa4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: d4f29056d81ab926318b987c7197a37989af8b49
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702043"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957646"
 ---
 Visual Studio ile kolayca oluşturun, hata ayıklama ve kapsayıcılı ASP.NET Core uygulamaları çalıştırın ve Azure Container Registry (ACR), Docker Hub, Azure App Service veya kendi kapsayıcı kayıt defteri yayımlarsınız. Bu makalede, biz ACR'ye yayınlayacaksınız.
 

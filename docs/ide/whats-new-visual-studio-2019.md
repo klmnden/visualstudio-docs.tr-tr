@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd0785e3e20051a58fe46695f27d9be0ae8567a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef49ce6e84f4e96c92489b35ca2c91401f16c7d2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853972"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957997"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
 
@@ -99,11 +99,16 @@ Visual Studio 2019 önizlemesi ile kullanmak için indirebileceğiniz yeni bir u
 
 Hemen kullanmaya başlamak için Yükle [Visual Studio için çekme istekleri](https://aka.ms/pr4vs) Visual Studio Market'ten uzantı.
 
-### <a name="develop-with-net-core-3-preview-1"></a>.NET Core 3 Önizleme 1 ile geliştirin
+### <a name="develop-with-net-core-3-preview"></a>.NET Core 3 Preview ile geliştirin
 
-Visual Studio 2019'ın Önizleme sürümüne yapı destekler [.NET Core 3](http://aka.ms/netcore3preview1) herhangi bir platform için uygulamalar. İOS ve Android, Xamarin ile mobil geliştirme .NET yanı sıra, platformlar arası C++ geliştirme artırmak ve desteklemek devam edeceğiz.
+Visual Studio 2019'ın Önizleme sürümüne yapı destekler [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) herhangi bir platform için uygulamalar. İOS ve Android, Xamarin ile mobil geliştirme .NET yanı sıra, platformlar arası C++ geliştirme artırmak ve desteklemek devam edeceğiz.
 
    ![Visual Studio 2019 .NET Core 3 Önizleme 1 ile uygulamalar geliştirin](media/dot-net-core-three-dev.png)
+
+Daha fazla bilgi için şu sayfalara bakın:
+
+* [.NET core 3 Önizleme 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) ve [.NET Core 3 Önizleme 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) sürüm notları
+* [.NET Core 3 Önizleme 1 Duyurusu](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) ve [.NET Core 3 Önizleme 2 Duyurusu](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) blog gönderileri
 
 ## <a name="continuous-innovation"></a>Sürekli yenilik
 
@@ -115,7 +120,7 @@ Visual Studio 2019 Preview'ın yayınlanmasıyla birlikte, size Visual Studio ku
 
    ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/per-monitor-aware-dpi-scaling.png)
 
-Daha fazla bilgi için [daha iyi bir çoklu monitör deneyimi ile Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
+Daha fazla bilgi için [daha iyi bir Visual Studio 2019 çoklu monitör deneyimiyle](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 

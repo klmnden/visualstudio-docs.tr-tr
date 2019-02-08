@@ -1,7 +1,6 @@
 ---
 title: Gelişmiş Derleme Ayarları İletişim Kutusu (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6ac21b5a10f45d6f105e02517a15a5b6c4b2368
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956603"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930473"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (C#)
 

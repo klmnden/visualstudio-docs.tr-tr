@@ -1,19 +1,18 @@
 ---
 title: Kaydırma çubuğu eşleme modu ve çubuğu modu
 ms.date: 09/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3189bf2c87b6996cfd11a42a05ee9612d79bee38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965779"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948362"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Nasıl yapılır: Kaydırma çubuğunu özelleştirme
 

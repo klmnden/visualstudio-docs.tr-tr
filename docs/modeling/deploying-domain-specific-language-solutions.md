@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 668e6e2866e1d2edfa6e04659b42a653e6769ba9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32d25856c80c5d2945eebb04930e90e74db90658
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960639"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952690"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Etki Alanına Özgü Dil Çözümlerini Dağıtma
 Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. Visual Studio, hedef bilgisayarda zaten yüklü olmalıdır.

@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 74466c4757c802647bc98082c68b3a9d73207f68
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940394"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949427"
 ---
 # <a name="writing-user-commands-and-actions"></a>Kullanıcı Komutları ve Eylemleri Yazma
 Bir etki alanına özgü dil komutları diyagrama ve gibi sürükle ve bırak hareketlerini yanıtlama tıklayın ve olaylara çift tıklayın ekleyerek özelleştirebilirsiniz.

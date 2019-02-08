@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9a85afd2024cb2ec723df053ebeca89ff52822
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020633"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921438"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Tam zamanında hata ayıklayıcı, Visual Studio kullanarak hata ayıklama
 
@@ -193,6 +192,7 @@ Just-ın-Time sırasında aşağıdaki hata iletilerinden görebileceğiniz hata
     Bu sorunu gidermek için Visual Studio yüklemenizi onarın veya yeniden yüklemek için Visual Studio Yükleyicisi'ni kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 - [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Just-ın-Time hata ayıklama, Seçenekler iletişim kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)

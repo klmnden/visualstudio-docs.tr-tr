@@ -1,7 +1,6 @@
 ---
 title: Özel başlangıç sayfası yüklemek veya başlangıç öğesini değiştirin
 ms.date: 02/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fca98116a6d810a97abbf4e1f850b2312f42c60
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070988"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948296"
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio için başlangıç sayfasını özelleştirme
 

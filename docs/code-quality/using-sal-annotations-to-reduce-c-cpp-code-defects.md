@@ -1,7 +1,6 @@
 ---
 title: C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: becbf24e8f957925584e9049b38b41cb6c511683
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954338"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919709"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 SAL Microsoft kaynak kodu ek açıklama dilidir. Kaynak kod ek açıklamaları kullanarak, amaç, arka plan kod açık yapabilirsiniz. Bu ek açıklamalar, ayrıca otomatik statik çözümleme araçları, kodunuzu daha doğru bir şekilde önemli ölçüde daha az hatalı pozitif sonuçları ve hatalı negatif analiz etmek etkinleştirin.

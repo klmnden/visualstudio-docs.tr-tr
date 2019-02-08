@@ -1,7 +1,6 @@
 ---
 title: 'Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi (Sınıf Tasarımcısı) arasında geçiş'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 822e846188b70994732473e66fe5bad3b5677164
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005754"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913830"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi arasında sınıf tasarımcısında değiştirme
 

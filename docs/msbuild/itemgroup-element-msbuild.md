@@ -18,71 +18,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2bb63fefe98426d63a7dd682c8a66c1d9b594c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070558"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910005"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup öğesi (MSBuild)
-Kullanıcı tanımlı bir dizi içeren [öğesi](../msbuild/item-element-msbuild.md) öğeleri. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.  
-  
- \<Proje >  
- \<ItemGroup >  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-<ItemGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemGroup>  
-```  
-  
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
-  
-### <a name="attributes"></a>Öznitelikler  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
-  
-### <a name="child-elements"></a>Alt öğeleri  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Öğesi](../msbuild/item-element-msbuild.md)|Yapı işlemi için girişler tanımlar. Sıfır veya daha fazla olabilir `Item` öğelerinde bir `ItemGroup`.|  
-  
-### <a name="parent-elements"></a>Üst öğeler  
-  
+Kullanıcı tanımlı bir dizi içeren [öğesi](../msbuild/item-element-msbuild.md) öğeleri. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.
+
+\<Proje >  
+\<ItemGroup >
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+<ItemGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemGroup>
+```
+
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
+
+### <a name="attributes"></a>Öznitelikler
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
+
+### <a name="child-elements"></a>Alt öğeleri
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[Öğesi](../msbuild/item-element-msbuild.md)|Yapı işlemi için girişler tanımlar. Sıfır veya daha fazla olabilir `Item` öğelerinde bir `ItemGroup`.|
+
+### <a name="parent-elements"></a>Üst öğeler
+
 | Öğe | Açıklama |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
 | [Hedef](../msbuild/target-element-msbuild.md) | .NET Framework 3.5 ile başlayan `ItemGroup` öğe içindeki görünebilir bir `Target` öğesi. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md). |
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği kullanıcı tarafından tanımlanan öğe koleksiyonlarını gösterir `Res` ve `CodeFiles` içinde bildirilen bir `ItemGroup` öğesi. Her bir öğe içinde `Res` içeren kullanıcı tanımlı bir alt öğe koleksiyonu [Itemmetadata](../msbuild/itemmetadata-element-msbuild.md) öğesi.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Res Include = "Strings.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-        <Res Include = "Dialogs.fr.resources" >  
-            <Culture>fr</Culture>  
-        </Res>  
-  
-        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />  
-        <CodeFiles Include="..\..\Resources\Constants.cs" />  
-    </ItemGroup>  
-...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Öğeleri](../msbuild/msbuild-items.md)   
- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)
+
+## <a name="example"></a>Örnek
+Aşağıdaki kod örneği kullanıcı tarafından tanımlanan öğe koleksiyonlarını gösterir `Res` ve `CodeFiles` içinde bildirilen bir `ItemGroup` öğesi. Her bir öğe içinde `Res` içeren kullanıcı tanımlı bir alt öğe koleksiyonu [Itemmetadata](../msbuild/itemmetadata-element-msbuild.md) öğesi.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Res Include = "Strings.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+        <Res Include = "Dialogs.fr.resources" >
+            <Culture>fr</Culture>
+        </Res>
+
+        <CodeFiles Include="**\*.cs" Exclude="**\generated\*.cs" />
+        <CodeFiles Include="..\..\Resources\Constants.cs" />
+    </ItemGroup>
+...
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)  
+[Öğeler](../msbuild/msbuild-items.md)  
+[Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)

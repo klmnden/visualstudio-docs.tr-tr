@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296482"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910993"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core kullanmaya başlama
 
@@ -41,7 +42,7 @@ Seçin **ASP.NET Core boş Web uygulaması** basın **sonraki**. Projeye bir ad 
 
 ![Yeni ASP.NET Core boş proje görünümü](media/asp-net-core-image4.png)
 
-ASP.NET Core boş Web uygulaması, iki varsayılan dosya ile bir web uygulaması oluşturur: **Program.cs** ve **Startup.cs**, hangi aşağıda açıklanmıştır. Ayrıca, ASP.NET Core ve .NET Core framework Proje yapı MSBuild hedefleri gibi projenizin NuGet Paket bağımlılıklarını içeren bir bağımlılıklar klasörünü oluşturur:
+ASP.NET Core boş Web uygulaması, bir web uygulaması ile iki varsayılan dosyaları oluşturur: **Program.cs** ve **Startup.cs**, hangi aşağıda açıklanmıştır. Ayrıca, ASP.NET Core ve .NET Core framework Proje yapı MSBuild hedefleri gibi projenizin NuGet Paket bağımlılıklarını içeren bir bağımlılıklar klasörünü oluşturur:
 
 ![Çözüm bölmesi bağımlılıklarını görüntüleme](media/asp-net-core-image12.png)
 
@@ -64,9 +65,9 @@ public static void Main(string[] args)
 ```
 ASP.NET Core uygulaması bir web sunucusunu yapılandırarak ve bir ana bilgisayar örneği aracılığıyla başlatma kendi ana yönteminde oluşturur [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Bu oluşturucu yapılandırılması konağın izin vermek için yöntemler sağlar. Şablon uygulaması, aşağıdaki yapılandırmaları kullanılır:
 
-* `UseKestrel`: Kestrel sunucusu uygulama tarafından kullanılacak belirtir
-* `UseContentRoot(Directory.GetCurrentDirectory())`: Web projesinin kök klasörüne uygulamanın içerik kök olarak uygulamanın bu klasörden başlattığınızda kullanır
-* `.UseIISIntegration()`: Belirtir uygulamanın IIS ile çalışması gerekir. IIS, ASP.NET Core ile iki kullanılacak `UseKestrel` ve `UseIISIntegration` belirtilmesi gerekir.
+* `UseKestrel`: Kestrel'i sunucusu uygulama tarafından kullanılacak belirtir
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Uygulama bu klasörden başlattığınızda web projesinin kök klasörüne uygulamanın içerik kök olarak kullanır.
+* `.UseIISIntegration()`: Uygulamanın IIS ile çalışmalıdır belirtir. IIS, ASP.NET Core ile iki kullanılacak `UseKestrel` ve `UseIISIntegration` belirtilmesi gerekir.
 * `.UseStartup<Startup>()`: Başlangıç sınıfı belirtir.
 
   Uygulamayı barındırmak ve bunu gelen HTTP isteklerini dinlemeye IWebHost derleme ve çalıştırma yöntemleri oluşturun.
@@ -130,9 +131,9 @@ Tercih ettiğiniz tarayıcıyı açın ve girin `http://localhost:5000/`, deği�
 
 ASP.NET Core uygulamaları için uygulamanın her bir parçasının sorumluluklarını mantıksal bir ayrım sağlamak için Model-View-Controller (MVC) tasarım deseni kullanın. MVC aşağıdakilerden oluşur:
 
-- **Model**: uygulama verileri temsil eden sınıf.
-- **Görünüm**: (çoğunlukla olduğu model verileri), uygulamanın kullanıcı arabirimini görüntüler.
-- **Denetleyici**: kullanıcı girişini ve etkileşimini tarayıcı isteklerini yürüten bir sınıf yanıt verir.
+- **Model**: Uygulama verilerini temsil eden sınıf.
+- **Görünüm**: (Bu genellikle model verileri), uygulamanın kullanıcı arabirimini görüntüler.
+- **Denetleyici**: Tarayıcı isteklerini yürüten bir sınıf kullanıcı girişini ve etkileşimini yanıt verir.
 
 MVC kullanma hakkında daha fazla bilgi için bkz [ASP.NET Core MVC genel bakış](/aspnet/core/mvc/overview) Kılavuzu.
 
@@ -236,3 +237,7 @@ Sonraki adımlar buradan hakkında daha fazla bilgi için aşağıdaki kılavuzl
 - [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) belgeleri.
 - [Yerel mobil uygulamalar için arka uç hizmetleri oluşturma](/aspnet/core/mobile/native-mobile-backend), bir Xamarin.Forms uygulaması için ASP.NET Core kullanarak REST hizmeti oluşturmak nasıl gösterir.
 - [ASP.NET Core uygulamalı laboratuvarı](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+
+## <a name="related-video"></a>İlgili Video
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

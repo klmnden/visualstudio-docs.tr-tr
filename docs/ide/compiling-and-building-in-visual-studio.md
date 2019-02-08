@@ -1,7 +1,6 @@
 ---
 title: Derleme oluşturma
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d091791a7ad5f7146aa6f916393e051388587dd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e943e43e93d7906c799b5ac5056f062d2522907f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023333"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910018"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Derleme ve Visual Studio'da derleyin
 

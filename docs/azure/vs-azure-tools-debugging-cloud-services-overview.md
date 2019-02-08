@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 43e866a6ee1a9d7e63d6e9fa85374d7efb972f9f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ec6778f7244df7ad535da066d8e0d91d8c0671e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977846"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929394"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Azure bulut hizmetinde hata ayıklamanın çeşitli yöntemlerini öğrenme
 Bu makalede, Azure bulut hizmeti hata ayıklamak için çeşitli yollar için bağlantılar sağlar.

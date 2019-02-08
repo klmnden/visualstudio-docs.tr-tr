@@ -2,7 +2,6 @@
 title: Python projeleri için öğe şablonları
 description: Başvuru listesini Ekle kullanılabilir olan Python proje öğesi şablonları > Visual Studio'da yeni öğe iletişim kutusu.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c82525599ce3c2adbc3aea1e7569748d877a6db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005897"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924701"
 ---
 # <a name="python-item-templates"></a>Python öğe şablonları
 

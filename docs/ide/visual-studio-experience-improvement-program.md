@@ -2,19 +2,18 @@
 title: Müşteri Deneyimi Geliştirme Programı
 description: Visual Studio'da gizlilik ayarlarının nasıl yönetileceğini öğrenin.
 ms.date: 05/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ddafa340f0d9ab87b359cf1a5cc5b92ea7cabe
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852679"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927535"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
 

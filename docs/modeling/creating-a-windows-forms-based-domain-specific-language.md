@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b6e192d9bf22f2cd299164c1782db208d250e773
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028705"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951520"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model durumunu görüntülemek için Windows Forms kullanabilirsiniz. Bu konuda, bir Windows formu Visual Studio Görselleştirme ve modelleme SDK'sını kullanarak bir DSL için bağlama aracılığıyla açıklanmaktadır.

@@ -1,7 +1,6 @@
 ---
 title: Kod Çözümlemesi, Proje Tasarımcısı
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9195bdb33b84420f66e93afb338b1c203c3886c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023125"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950729"
 ---
 # <a name="code-analysis-project-designer"></a>Kod Çözümlemesi, Proje Tasarımcısı
 Kodunuz üzerinde çalıştırmak için iyileştirilmiş kod analizi aracı içerir. Microsoft .NET Framework tasarım yönergeleri ile ortaya konan programlama ve tasarım kuralları ihlalleri gibi araç derlemelerinizi, bilgileri raporlar.

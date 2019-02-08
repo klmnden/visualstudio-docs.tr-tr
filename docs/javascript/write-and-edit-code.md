@@ -2,7 +2,6 @@
 title: JavaScript geliştiricileri için düzenleme giriş
 description: Bu giriş Kod Düzenleyicisi'nde Visual Studio için Visual Studio anlamak daha kolay JavaScript kodu yazma ve gezinme yapar yollardan bazılarını gösterir.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bf5c2af7f8c1737c83d9e39ddf9a87d9e2783960
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55767988"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957831"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 

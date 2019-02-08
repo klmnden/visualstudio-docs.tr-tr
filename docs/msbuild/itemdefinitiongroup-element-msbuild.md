@@ -18,70 +18,70 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9faf5d0b242f81726dc2e0b8fe4a955db31938a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0d88c8197cc93a2c898ecbf19d52127061b73604
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918426"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936583"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Itemdefinitiongroup öğesi (MSBuild)
-`ItemDefinitionGroup` Öğesi varsayılan olarak uygulanır, projedeki tüm öğeleri meta verileri değerler öğesi tanımları kümesini tanımlamak olanak tanır. Itemdefinitiongroup yerini gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için [öğesi tanımları](../msbuild/item-definitions.md).  
+`ItemDefinitionGroup` Öğesi varsayılan olarak uygulanır, projedeki tüm öğeleri meta verileri değerler öğesi tanımları kümesini tanımlamak olanak tanır. Itemdefinitiongroup yerini gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için [öğesi tanımları](../msbuild/item-definitions.md).
 
- \<Proje >  
- \<Itemdefinitiongroup >  
+\<Proje >  
+\<Itemdefinitiongroup >
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<ItemDefinitionGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemDefinitionGroup>  
-```  
+```xml
+<ItemDefinitionGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemDefinitionGroup>
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Alt öğeleri  
+### <a name="child-elements"></a>Alt öğeleri
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Öğesi](../msbuild/item-element-msbuild.md)|Yapı işlemi için girişler tanımlar. Sıfır veya daha fazla olabilir `Item` öğelerinde bir `ItemDefinitionGroup`.|  
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[Öğesi](../msbuild/item-element-msbuild.md)|Yapı işlemi için girişler tanımlar. Sıfır veya daha fazla olabilir `Item` öğelerinde bir `ItemDefinitionGroup`.|
 
-### <a name="parent-elements"></a>Üst öğeler  
+### <a name="parent-elements"></a>Üst öğeler
 
 | Öğe | Açıklama |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
 
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, iki meta veri öğeleri, m ve n, içinde bir Itemdefinitiongroup tanımlar. "M" meta veri öğesi "i" tarafından açıkça tanımlanmadığından Bu örnekte, "m" varsayılan meta veri "i" öğesine uygulanır. Ancak, varsayılan meta veri "n", "n" meta veri öğesi "i" tarafından zaten tanımlı olduğundan, "i" öğesine uygulanmaz.  
+## <a name="example"></a>Örnek
+Aşağıdaki kod örneği, iki meta veri öğeleri, m ve n, içinde bir Itemdefinitiongroup tanımlar. "M" meta veri öğesi "i" tarafından açıkça tanımlanmadığından Bu örnekte, "m" varsayılan meta veri "i" öğesine uygulanır. Ancak, varsayılan meta veri "n", "n" meta veri öğesi "i" tarafından zaten tanımlı olduğundan, "i" öğesine uygulanmaz.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemDefinitionGroup>  
-        <i>  
-            <m>m1</m>  
-            <n>n1</n>  
-        </i>        
-    </ItemDefinitionGroup>  
-    <ItemGroup>  
-        <i Include="a">  
-            <o>o1</o>  
-            <n>n2</n>  
-        </i>  
-    </ItemGroup>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemDefinitionGroup>
+        <i>
+            <m>m1</m>
+            <n>n1</n>
+        </i>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <i Include="a">
+            <o>o1</o>
+            <n>n2</n>
+        </i>
+    </ItemGroup>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Öğeler](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Ayrıca bkz.
+[Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
+[Öğeler](../msbuild/msbuild-items.md)

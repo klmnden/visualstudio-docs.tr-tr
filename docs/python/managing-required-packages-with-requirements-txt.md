@@ -2,7 +2,6 @@
 title: Bir requirements.txt dosyasını Paket bağımlılıklarını yönetin
 description: Requirements.txt dosyası bir proje bağımlılıklarınızı açıklar. Requirements.txt dosyasını içeren bir proje alırsanız, bu bağımlılıkların bir adımda kolayca yükleyebilirsiniz.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4979ea79a63c8d0618e9106a62cf85d03d7c26cf
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924350"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerekli paketleri requirements.txt ile yönetme
 

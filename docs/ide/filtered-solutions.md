@@ -1,8 +1,8 @@
 ---
 title: Projelerin bir alt kümesini yükleme
 ms.date: 12/04/2018
-ms.topic: conceptual
 ms.prod: visual-studio-dev16
+ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ef7a9874a89e8d2051e20008415824637305a34d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853371"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952924"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio'da filtrelenmiş çözümleri
 

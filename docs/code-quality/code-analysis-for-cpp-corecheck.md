@@ -1,7 +1,6 @@
 ---
 title: C++ temel yönergeleri denetleyici başvurusu
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959490"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949479"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ temel yönergeleri denetleyici başvurusu
 
@@ -193,7 +192,7 @@ Bkz: [C++ temel yönergeleri:  F.6: İşlevinizi oluşturması beklenmiyor, noex
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) değeri % değeri olan sınırları dışında (0, bağlı %) değişkeni '% değişken %'. Yalnızca dizi sınırları içindeki sabit ifadeleri dizini. Bkz: [C++ temel yönergeleri Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) ifade '% expr %': Diziden işaretçiye bozunma gerçekleştirmeyin. Bkz: [C++ temel yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '%expr%': Diziden işaretçiye bozunma gerçekleştirmeyin. Bkz: [C++ temel yönergeleri Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>GSL grubu
 

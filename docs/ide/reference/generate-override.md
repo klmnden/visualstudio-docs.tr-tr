@@ -1,19 +1,18 @@
 ---
 title: Bir yöntemi geçersiz kılma oluşturma
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8f7a306fbdaf917cee9263c937d58cf6bb82c37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: afb32a7ddb9a53ac6585cc690a3ba8fd1098b080
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918752"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947036"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio'da bir geçersiz kılma oluşturma
 

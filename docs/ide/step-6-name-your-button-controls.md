@@ -1,7 +1,6 @@
 ---
 title: '6. Adım: Düğme denetimlerinizi adlandırma'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4624f6a4ce77aa03d3daea0781dc1cbd1028343d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853033"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946173"
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme denetimlerinizi adlandırma
 Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu eklediğinizde IDE otomatik olarak bunu adlı **pictureBox1**. Yalnızca bir tane <xref:System.Windows.Forms.CheckBox>, olarak adlandırılmış **checkBox1**. Bir süre sonra biraz kod yazacaksınız ve bu kod CheckBox'a ve PictureBox'a başvuracaktır. Olmadığı için bu denetimlerin her birinden yalnızca biri gördüğünüzde ne anlama geldiğini bilirsiniz **pictureBox1** veya **checkBox1** kodunuzda.

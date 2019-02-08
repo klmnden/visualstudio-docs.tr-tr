@@ -12,15 +12,14 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 08cf47310c9743d1071dd46a30e5c04372ca5cb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996733"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928679"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri tablolardaki verileri düzenleyin. İşlem ekleme, güncelleştirme ve tablodaki kayıtları silme içerebilir. Verilere bağlı formunda, hangi alanların kullanıcı tarafından düzenlenebilir olduğunu belirtebilirsiniz. Bu gibi durumlarda, böylece değişiklikleri veritabanına geri daha sonra gönderilebilecek tüm değişiklik izleme veri bağlama altyapı işler. Verileri program aracılığıyla düzenlemeleri yapın ve bu değişiklikleri veritabanına geri göndermek istediğinize, nesneleri ve değişiklik izleme bunu yöntemleri kullanmanız gerekir.

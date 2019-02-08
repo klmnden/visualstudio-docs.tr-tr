@@ -3,7 +3,6 @@ title: Visual Basic geliştiricileri için düzenleme giriş
 description: Visual Studio Kod düzenleyicisinde bu 10 dakikalık bir giriş, Visual Studio yazma, gezinme ve Visual Basic kodu daha kolay anlama yapar yollardan bazılarını gösterir.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2183b12f1614adf7939c17b3e260cebb1c3238b
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424492"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939482"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
