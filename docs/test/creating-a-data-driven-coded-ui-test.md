@@ -1,7 +1,6 @@
 ---
 title: Verilerle çalışan kodlanmış UI testi Öğreticisi
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ebaad835888577a8616aab771ba30e4e29c61b
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231993"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970926"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Verilerle çalışan kodlanmış UI testi oluşturma
 
