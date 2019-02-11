@@ -81,7 +81,7 @@ Aşağıdaki karşılaştırmaya MLS ve MRO MKL ile R ve MRO MKL olmadan belirli
 
 ![MLS ve MRO MKL r ile ve MRO MKL olmadan karşılaştırma](media/samples-speed-comparison.png)
 
-R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
+R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
 
 Aşağıdaki şekilde, lojistik regresyon modellerini oluşturmaya, uçuş gecikme 15 dakikadan fazla tahmin etmek için kullanılan saniye sonra geçen süre karşılaştırır.  Geçen süre CRAN R kullanılan MLS yalnızca yaklaşık iki kez artarken küçük bir satır sayısını artırmak, büyük ölçüde artar. Bu kıyaslama ayrıntılarını gözden geçirin *Kıyaslama/rxGlm_benchmark. R* örnek.
 
