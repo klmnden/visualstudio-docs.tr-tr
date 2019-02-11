@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ef49ce6e84f4e96c92489b35ca2c91401f16c7d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957997"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987424"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
 
@@ -89,6 +89,8 @@ Daha fazla bilgi için [geliştirilmiş Visual Studio 2019 içinde: Nesnelerle v
 
 Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
 
+   ![LiveShare işbirliği özelliği Visual Studio 2019 gösteren animasyonlu GIF dosyası](media/live-share-collaboration.gif)
+
 Daha fazla bilgi için [Visual Studio Live Share gerçek zamanlı kod incelemeleri ve Etkileşimli Eğitim](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blog gönderisi.
 
 ## <a name="modern-development-support"></a>Modern geliştirme desteği
@@ -103,7 +105,7 @@ Hemen kullanmaya başlamak için Yükle [Visual Studio için çekme istekleri](h
 
 Visual Studio 2019'ın Önizleme sürümüne yapı destekler [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) herhangi bir platform için uygulamalar. İOS ve Android, Xamarin ile mobil geliştirme .NET yanı sıra, platformlar arası C++ geliştirme artırmak ve desteklemek devam edeceğiz.
 
-   ![Visual Studio 2019 .NET Core 3 Önizleme 1 ile uygulamalar geliştirin](media/dot-net-core-three-dev.png)
+   ![Visual Studio 2019'de .NET Core 3 Önizleme uygulamaları geliştirin](media/dot-net-core-three-dev.png)
 
 Daha fazla bilgi için şu sayfalara bakın:
 
@@ -132,6 +134,8 @@ Visual Studio Intellicode üretkenliğinizi artırmaya yardımcı olabilir, birk
 * Ekip stillerini ve desenleri uyması için Geliştirici Kılavuzu
 * Catch zor kod sorunlarını bulun
 * Açısından gerçekten önemli olan alanlara dikkat çekmek tarafından odağı kod incelemeleri
+
+ ![IntelliSense Öneri örneği](media/intellicode-intellisense-suggestion.png)
 
 Biz başlangıçta yalnızca desteklenen C# zaman biz öncelikle önizlemesi Intellicode uzantısı için Visual Studio. Şimdi, C++ ve XAML desteği Visual Studio'da çok ekledik.
 

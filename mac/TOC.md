@@ -9,7 +9,7 @@
 
 # [Kullanıcı Hesapları](user-accounts.md)
 ## [Oturum Açılıyor](signing-in.md)
-## [Aboneliği Etkinleştirme](activation.md)
+## [Aboneliği Etkinleştirme](enable-subscription.md)
 
 # [IDE’yi Özelleştirme](customizing-the-ide.md)
 ## [Mac için Visual Studio’yu Genişletme](extending-visual-studio-mac.md)

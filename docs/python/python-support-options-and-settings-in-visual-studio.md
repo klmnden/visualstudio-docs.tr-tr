@@ -1,7 +1,7 @@
 ---
 title: Seçenekler ve Python için ayarlar
 description: Visual Studio'da Python kodunu ve projeleri ile ilgili çeşitli ayarlar için bir başvuru.
-ms.date: 10/29/2018
+ms.date: 02/11/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7f403cea16c613c1e7b96251af02a4744a9145
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943447"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987398"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
 

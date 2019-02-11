@@ -10,7 +10,7 @@
 
 # [Kullanıcı Hesapları](/visualstudio/mac/user-accounts)
 ## [Oturum Açılıyor](/visualstudio/mac/signing-in)
-## [Aboneliği Etkinleştirme](/visualstudio/mac/activation)
+## [Aboneliği Etkinleştirme](/visualstudio/mac/enable-subscription)
 
 # [IDE’yi Özelleştirme](/visualstudio/mac/customizing-the-ide)
 ## [Mac için Visual Studio’yu Genişletme](/visualstudio/mac/extending-visual-studio-mac)
