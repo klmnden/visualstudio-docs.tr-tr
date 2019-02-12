@@ -10,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e22a7cf9aa00a48d3284273f66ec3e6069c16fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929199"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155402"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
 Kod düzenleyicisinde, geliştirme zamanınızın harcadığınız çünkü [Visual Studio'da Python desteği](installing-python-support-in-visual-studio.md) daha üretken olmanıza yardımcı olmak için işlevsellik sağlar. IntelliSense söz dizimi vurgulama, otomatik tamamlama, imza Yardımı, yöntemi geçersiz kılmalar, arama ve gezinti özellikleri içerir.
 
 Düzenleyici ile de tümleştirilen **etkileşimli** Visual Studio'daki kod ikisi arasındaki değişimi kolaylaştırın,. Bkz: [Öğreticisi 3. adım: Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) ve [etkileşimli penceresini - gönderme etkileşimli komutunu kullanma](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Ayrıntılar için.
-
-|   |   |
-|---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) Python kod (2 dk. 30 saniye) düzenleme, tanıtım için.|
 
 Visual Studio'da kod düzenleme genel belgeler için bkz: [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md). Ayrıca bkz: [anahat](../ide/outlining.md), kodunuzun belirli bölümleri odaklı kalmanıza yardımcı olur.
 

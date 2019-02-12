@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 487d03ff462fbb8fbcd5cbd1131103e5bacb3316
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935192"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155870"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -36,8 +36,7 @@ Visual Studio, çeşitli uygulama yapılarının bir projeden varolan bir klasö
 
 |   |   |
 |---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) Python projeleri (2 dk. 17s) giriş. |
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | Ayrıca bkz: [yakından bakış: Python projeleri ile kaynak denetimi kullanın](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 dk 55s). |
+| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Yakından bakış: Python projeleri ile kaynak denetimi kullanın](https://youtu.be/Aq8eqApnugM) (youtube.com, 8 dk 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Dosya ekleme, bir başlangıç dosyası atayın ve ortamlarını ayarlama
 

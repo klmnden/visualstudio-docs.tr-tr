@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f26b9fcb038380a57c6dd6c8f5752de9ac0ada1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957932"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155844"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -29,7 +29,7 @@ Python Mac için Visual Studio şu anda desteklenmiyor ancak Mac ve Linux'ta Vis
 Kullanmaya başlamak için:
 
 - İzleyin [yükleme yönergeleri](installing-python-support-in-visual-studio.md) Python iş yükü ayarlanamadı.
-- Bu makaledeki bölümler üzerinden Visual Studio Python yeteneklerini tanıyın. Ayrıca [(Microsoft Virtual Academy) bir video serisini izleyin](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) giriş (toplam 22 dakika) Visual Studio'da Python için.
+- Bu makaledeki bölümler üzerinden Visual Studio Python yeteneklerini tanıyın.
 - Bir veya daha fazla bir proje oluşturmak için hızlı başlangıç şablonları gidin. Emin değilseniz, başlayan [Flask ile web uygulaması oluşturma](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - İzleyin [Visual Studio'da Python çalışın](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) baştan sona tam deneyim için öğretici.
 
@@ -43,9 +43,8 @@ Kullanım **açık etkileşimli pencere** Python etkileşimli olarak Visual Stud
 
 Daha fazla bilgi için:
 
-- Video (2 dk. 35s): [Python ortamları yönetme](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Docs: [Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
-- Docs: [Python ortamları başvurusu](python-environments-window-tab-reference.md)
+- [Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
+- [Python ortamları başvurusu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zengin düzenleme, IntelliSense ve kod kavrama
 
@@ -55,7 +54,6 @@ Visual Studio söz dizimi renklendirme, otomatik tamamlama tüm kod ve kitaplık
 
 Daha fazla bilgi için:
 
-- Video (2 dk. 30 saniye): [Python kodunu Düzenle](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - Docs: [Python kodunu Düzenle](editing-python-code-in-visual-studio.md)
 - Docs: [Biçim Kodu](formatting-python-code.md)
 - Docs: [Kodu yeniden düzenleme](refactoring-python-code.md)
@@ -74,9 +72,8 @@ Visual Studio, satır içi çizimleri, .NET ve Windows Presentation Foundation (
 
 Daha fazla bilgi için:
 
-- Video (2 milyon 22s: [Python etkileşimli penceresi](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Docs: [Etkileşimli pencere](python-interactive-repl-in-visual-studio.md)
-- Docs: [Visual Studio'da Ipython](interactive-repl-ipython.md)
+- [Etkileşimli pencere](python-interactive-repl-in-visual-studio.md)
+- [Visual Studio'da Ipython](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Proje sistemi ve proje ve öğe şablonları
 
@@ -105,7 +102,6 @@ Visual Studio'nun güçlü, güçlü bir hata ayıklayıcı biridir. Python içi
 
 Daha fazla bilgi için:
 
-- Video: [Python 3 m 32s hata ayıklama](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - Docs: [Python hata ayıklama](debugging-python-in-visual-studio.md)
 - Docs: [Python/C++ karışık mod hata ayıklaması](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Docs: [Uzaktan Linux üzerinde hata ayıklama](debugging-python-code-on-remote-linux-machines.md)
@@ -119,7 +115,6 @@ Profil oluşturma nasıl uygulamanızdaki zaman harcandığını keşfediyor. Vi
 
 Daha fazla bilgi için:
 
-- Video: [Python 3 m 00s profil oluşturma](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - Docs: [Python profil oluşturma araçları](profiling-python-code-in-visual-studio.md)
 - Genel Visual Studio özellik belgeleri: [Profil oluşturma özelliği Turu](../profiling/profiling-feature-tour.md). (Tüm Visual Studio profil oluşturma özellikleri, Python için mevcuttur).
 
@@ -131,7 +126,6 @@ Bulma, çalıştırmak ve Visual Studio'da testleri yönetmek **Test Gezgini**ve
 
 Daha fazla bilgi için:
 
-- Video: [Python 2 milyon 31s test etme](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - Docs: [Python için birim test araçları](unit-testing-python-in-visual-studio.md)
 - Genel Visual Studio özellik belgeleri: [Birim testi kod](../test/unit-test-your-code.md).
 
@@ -140,12 +134,6 @@ Daha fazla bilgi için:
 Python iş yükü, Windows, Mac OS X ve Linux uygulamaları Azure hizmetlerinden aramanın basitleştiren, Python için Azure SDK'sı içerir.
 
 Daha fazla bilgi için [Python için Azure SDK'sı](/python/azure/?view=azure-python).
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy hakkındaki Python eğitim
-
-|   |   |
-|---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | <ul><li>[Python ile programlamaya giriş](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python başlangıç: Dizeler ve işlevleri](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python ile ilgili temel bilgiler: Liste ve döngüler](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[İlk Python sorular](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 
@@ -313,9 +301,3 @@ Visual Studio 2015 veya önceki kullanılabilir [visualstudio.microsoft.com/vs/o
 1. Windows 8 veya sonraki sürümünü gerektirir. **Hata ayıklayıcının (Python)** komutunu **Sunucu Gezgini** gerektirir [.NET 2.3 - Visual Studio 2013 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=323510) veya üzeri.
 
 1. Windows 8 veya sonraki sürümünü gerektirir.
-
-## <a name="additional-resources"></a>Ek kaynaklar
-
-- [IIS ve Python arasında köprü Wfastcgı](https://pypi.org/p/wfastcgi) (pypi.org)
-- [Microsoft Virtual Academy ücretsiz Python kursları](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft Virtual Academy üst Python sorular](https://aka.ms/mva-top-python-questions)

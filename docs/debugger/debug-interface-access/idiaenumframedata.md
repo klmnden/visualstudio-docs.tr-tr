@@ -12,102 +12,102 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55aba0ff827bde1be1736e7b4dc4e57eb249e144
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eea2b3e903e3311773bc1fcfe9df7d67949dc5e5
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014724"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155572"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
-Veri kaynağında bulunan çeşitli çerçeve veri öğeleri sıralar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDiaEnumFrameData : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaEnumFrameData`.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Alır `IEnumVARIANT Interface` bu Numaralandırıcının sürümü.|  
-|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Çerçeve veri öğe sayısını alır.|  
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Bir dizini yoluyla bir çerçeve veri öğesi alır.|  
-|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Belirtilen sayıda sabit listesi sırası çerçeve veri öğelerini alır.|  
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Belirtilen sayıda bir numaralandırma sıralı çerçeve veri öğeleri atlar.|  
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Bir çerçeve göreli sanal adres (RVA) göre döndürür.|  
-|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Bir çerçeve sanal adres (VA) döndürür.|  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirimden elde [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) yöntemi. Ayrıntılar için örneğe bakın.  
-  
-## <a name="example"></a>Örnek  
- Bu örnek nasıl alınacağını gösterir ( `GetEnumFrameData` işlevi) ve ( `ShowFrameData` işlevi) `IDiaEnumFrameData` arabirimi. Bkz: [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) arabirimi ilişkin bir örnek `PrintFrameData` işlevi.  
-  
-```C++  
-  
-      IDiaEnumFrameData* GetEnumFrameData(IDiaSession *pSession)  
-{  
-    IDiaEnumFrameData* pUnknown    = NULL;  
-    REFIID             iid         = __uuidof(IDiaEnumFrameData);  
-    IDiaEnumTables*    pEnumTables = NULL;  
-    IDiaTable*         pTable      = NULL;  
-    ULONG              celt        = 0;  
-  
-    if (pSession->getEnumTables(&pEnumTables) != S_OK)  
-    {  
-        wprintf(L"ERROR - GetTable() getEnumTables\n");  
-        return NULL;  
-    }  
-    while (pEnumTables->Next(1, &pTable, &celt) == S_OK && celt == 1)  
-    {  
-        // There is only one table that matches the given iid  
-        HRESULT hr = pTable->QueryInterface(iid, (void**)&pUnknown);  
-        pTable->Release();  
-        if (hr == S_OK)  
-        {  
-            break;  
-        }  
-    }  
-    pEnumTables->Release();  
-    return pUnknown;  
-}  
-  
-void ShowFrameData(IDiaSession *pSession)  
-{  
-    IDiaEnumFrameData* pEnumFrameData = GetEnumFrameData(pSession);;  
-  
-    if (pEnumFrameData != NULL)  
-    {  
-        IDiaFrameData* pFrameData;  
-        ULONG celt = 0;  
-  
-        while(pEnumFrameData->Next(1, &pFrameData, &celt) == S_OK &&  
-              celt == 1)  
-        {  
-            PrintFrameData(pFrameData);  
-            pFrameData->Release();  
-        }  
-        pEnumFrameData->Release();   
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Üst bilgi:** dia2.h  
-  
- **Kitaplığı:** diaguids.lib  
-  
- **DLL:** msdia80.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Veri kaynağında bulunan çeşitli çerçeve veri öğeleri sıralar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDiaEnumFrameData : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaEnumFrameData`.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Alır `IEnumVARIANT Interface` bu Numaralandırıcının sürümü.|
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Çerçeve veri öğe sayısını alır.|
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Bir dizini yoluyla bir çerçeve veri öğesi alır.|
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Belirtilen sayıda sabit listesi sırası çerçeve veri öğelerini alır.|
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Belirtilen sayıda bir numaralandırma sıralı çerçeve veri öğeleri atlar.|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Bir çerçeve göreli sanal adres (RVA) göre döndürür.|
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Bir çerçeve sanal adres (VA) döndürür.|
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+Bu arabirimden elde [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) yöntemi. Ayrıntılar için örneğe bakın.
+
+## <a name="example"></a>Örnek
+Bu örnek nasıl alınacağını gösterir ( `GetEnumFrameData` işlevi) ve ( `ShowFrameData` işlevi) `IDiaEnumFrameData` arabirimi. Bkz: [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) arabirimi ilişkin bir örnek `PrintFrameData` işlevi.
+
+```C++
+
+      IDiaEnumFrameData* GetEnumFrameData(IDiaSession *pSession)
+{
+    IDiaEnumFrameData* pUnknown    = NULL;
+    REFIID             iid         = __uuidof(IDiaEnumFrameData);
+    IDiaEnumTables*    pEnumTables = NULL;
+    IDiaTable*         pTable      = NULL;
+    ULONG              celt        = 0;
+
+    if (pSession->getEnumTables(&pEnumTables) != S_OK)
+    {
+        wprintf(L"ERROR - GetTable() getEnumTables\n");
+        return NULL;
+    }
+    while (pEnumTables->Next(1, &pTable, &celt) == S_OK && celt == 1)
+    {
+        // There is only one table that matches the given iid
+        HRESULT hr = pTable->QueryInterface(iid, (void**)&pUnknown);
+        pTable->Release();
+        if (hr == S_OK)
+        {
+            break;
+        }
+    }
+    pEnumTables->Release();
+    return pUnknown;
+}
+
+void ShowFrameData(IDiaSession *pSession)
+{
+    IDiaEnumFrameData* pEnumFrameData = GetEnumFrameData(pSession);;
+
+    if (pEnumFrameData != NULL)
+    {
+        IDiaFrameData* pFrameData;
+        ULONG celt = 0;
+
+        while(pEnumFrameData->Next(1, &pFrameData, &celt) == S_OK &&
+              celt == 1)
+        {
+            PrintFrameData(pFrameData);
+            pFrameData->Release();
+        }
+        pEnumFrameData->Release(); 
+    }
+}
+```
+
+## <a name="requirements"></a>Gereksinimler
+**Üst bilgi:** dia2.h
+
+**Kitaplığı:** diaguids.lib
+
+**DLL:** msdia80.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
+[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

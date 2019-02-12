@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4b37d2d8db3aad649b0285a952d2537e67d7c1b5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916758"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155493"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -68,10 +68,6 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 1. Yükleme sonrasında, yükleyici değiştirmek, başlatma, onarın veya Visual Studio'yu kaldırmak için seçenekler sağlar. **Değiştir** düğmesi değişiklikleri **güncelleştirme** ne zaman Visual Studio güncelleştirmelerinin yüklü bileşenler için kullanılabilir. ( **Değiştir** seçenek, ardından açılan menüsünden kullanılabilir.) Visual Studio ve Windows Installer da başlatabilirsiniz **Başlat** menüsünde "Visual Studio" arama yapın.
 
     ![Başlatma, değiştirme, değiştirme veya Visual Studio Yükleyicisi'nden kaldırılıyor](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) Visual Studio'da Python desteği yükleme.|
 
 ### <a name="troubleshooting"></a>Sorun giderme
 

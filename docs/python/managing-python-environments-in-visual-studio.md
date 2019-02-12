@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 415739feaf313ae55e72033cc89116f0b8307dd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4514aa132adab37425d0d49c4594fec8db09d12d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949021"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155727"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -70,10 +70,6 @@ Listelenen her bir ortamın sağda açılan bir denetimdir bir **etkileşimli** 
 
 > [!Note]
 > Visual Studio sistem site paketleri seçeneği uyar olsa da, bunu Visual Studio içinden gelen değiştirmek için bir yol sağlamaz.
-
-|   |   |
-|---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (2 dk. 35s) Visual Studio'da Python ortamlarında.|
 
 ### <a name="what-if-no-environments-appear"></a>Peki ortamı yok görünüyor?
 

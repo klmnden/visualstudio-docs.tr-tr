@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d306ec5789359469a25631f6e27dc2c13bcb7cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946463"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156143"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
@@ -54,10 +54,6 @@ Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için 
  > [!div class="button"]
  > [Visual Studio 2017 İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![video kamera simgesini film](media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) Visual Studio önyükleyicisi dosyasını indirin ve sizin için uygun olan Visual Studio sürümünü seçin. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>3. adım - Visual Studio Yükleyicisi'ni yükleme
 
@@ -94,29 +90,17 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 > [!TIP]
 > Yüklemeden sonra herhangi bir zamanda iş yükleri veya başlangıçta yüklenmedi bileşenleri yükleyebilirsiniz. Visual Studio'nun varsa **Araçları** > **araçları ve özellikleri Al...**  Visual Studio yükleyicisi açılır. Veya açık **Visual Studio yükleyicisi** Başlat menüsünden. Buradan yükleyin ve ardından istediğiniz bileşenleri ve iş yüklerini seçebileceğiniz **Değiştir**.
 
-|         |         |
-|---------|---------|
-|  ![video kamera simgesini film](media/video-icon.png "bir video izleyin")  |    [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) Visual Studio Yükleyicisi'ni yükleyin ve ardından bir iş yükünü yükleyin. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Adım 5 - tek bileşen seçin (isteğe bağlı)
 
 Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliği kullanmayı istemiyorsanız, tek tek bileşenler yükleyerek bunu yapabilirsiniz. Tek tek bileşenleri seçmek için tıklatın **tek tek bileşenler** seçeneğini Visual Studio Yükleyicisi'nden, neleri istediğiniz ve daha sonra izleyin seçin yönergeleri.
 
   ![Visual Studio 2017 - tek tek bileşenleri yükle](media/vs2017-components.PNG "tek tek bileşenler Visual Studio'yu yükleyin")
 
-  |         |         |
-  |---------|---------|
-  |  ![video kamera simgesini film](media/video-icon.png "bir video izleyin")  |   [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) ayrı ayrı bir bileşen Visual Studio Yükleyicisi'ni kullanarak yükleme hakkında. |
-
 ## <a name="step-6---install-language-packs-optional"></a>6. adım - yükleme dil paketleri (isteğe bağlı)
 
 Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio 2017 bir dilde yüklemek için tıklayın **dil paketlerini** seçeneğini Visual Studio Yükleyicisi'nden ve yönergeleri izleyin.
 
   ![Visual Studio 2017 - yükleme dil paketlerini](media/vs2017-languages.PNG "Visual Studio'yu yükleyin dil paketleri")
-
-  |         |         |
-  |---------|---------|
-  |  ![video kamera simgesini film](media/video-icon.png "bir video izleyin")  |   [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) dil paketi, Visual Studio Yükleyicisi'ni kullanarak yükleme hakkında. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Komut satırından yükleyici dilini değiştirme
 

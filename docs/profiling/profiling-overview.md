@@ -8,20 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0531d016b2ddcc90348dcbfd2ef80525ac400e5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039819"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155636"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio performansını ölçmek için araçlarına genel bakış
 
 Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları kullanarak uygulamanızı çalıştırma zamanı gibi bir süre boyunca (örneğin, değişken değerleri, işlev çağrıları ve olayları) veri toplar. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntülemek ya da uygulama performansınızı son İnceleme analizini gerçekleştirin.
-
-| | |
-|---------|---------|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) CPU kullanımını analiz etme ve bellek kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

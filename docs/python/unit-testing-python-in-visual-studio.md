@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04c418824ff3d21e033466427cf805913d156465
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935283"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155987"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Python kod için birim testi ayarlama
 
@@ -24,10 +24,6 @@ Birim testleri, bir uygulama, genellikle yalıtılmış İşlevler, sınıflar v
 Python bir program tasarlarken senaryolarını doğrulamak için birim testleri kapsamlı olarak kullanır. Bulma, yürütme ve ayrı olarak testleri çalıştırmak zorunda kalmadan birim testleri geliştirme sürecinizin bağlam içinde hata ayıklama Visual Studio'da Python desteği içerir.
 
 Bu makalede Python ile Visual Studio testi özellikleriyle birimi kısa bir özeti sağlanır. Birim testi genel hakkında daha fazla bilgi için bkz. [birim testi kod](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) birim testine Python'da (2 dk. 31s). |
 
 ## <a name="discover-and-view-tests"></a>Testleri görüntülemek ve keşfedin
 

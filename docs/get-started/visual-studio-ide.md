@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead4ed51d2cf72e505f905e5bab7be0551a6ee86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909979"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155962"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
@@ -286,5 +286,4 @@ Daha fazla kodlama içine dalmaya hazır değilseniz aşağıdaki dile özgü h�
 - Bulma [daha fazla Visual Studio özellikleri](../ide/advanced-feature-overview.md)
 - Ziyaret [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Okuma [Visual Studio blogu](https://blogs.msdn.microsoft.com/visualstudio/)
-- Ücretsiz Visual Studio kursları kullanıma [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
 - Visual Studio'yu indirin [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

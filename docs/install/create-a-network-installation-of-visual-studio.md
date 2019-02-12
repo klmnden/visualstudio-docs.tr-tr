@@ -1,7 +1,7 @@
 ---
 title: Bir ağ tabanlı yüklemesini oluşturma
 description: Visual Studio içinde bir kuruluş dağıtımı için bir ağ yükleme noktasını oluşturmayı öğrenin.
-ms.date: 01/15/2019
+ms.date: 02/12/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e208362352fc8d7024f02eae3d88a0d8d874b233
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69073866096d5b4a20501aadfd93f7befd4a0b12
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912098"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155441"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ oluşturun
 
@@ -123,8 +123,10 @@ Yöneticiler, bir yükleme betiğinin bir parçası istemci iş istasyonlarında
 > [!TIP]
 > Bir toplu iş dosyası bir parçası olarak çalıştırıldığında `--wait` seçeneği sağlar `vs_enterprise.exe` işlem çıkış kodu döndürür önce yükleme işlemi tamamlanana kadar bekler. Daha fazla tamamlanmış bir yüklemeyi eylemleri gerçekleştirmek Kurumsal Yönetici isterse kullanışlıdır (örneğin, [yüklemenin başarılı olabilmesi için bir ürün anahtarını uygulayan](automatically-apply-product-keys-when-deploying-visual-studio.md)) ancak yükleme işlemek için tamamlanıncaya kadar beklemeniz gerekir Bu yükleme dönüş kodu.  Kullanmıyorsanız, `--wait`, `vs_enterprise.exe` işlem çıkar önce yükleme tamamlandıktan ve yükleme işleminin durumunu temsil etmez, hatalı çıkış kodu döndürür.
 
+Bir düzenden yükleme sırasında düzeninde yüklü içeriği alınır. Düzende değil bir bileşeni seçtiğinizde, ancak bunu internet'ten gerekilir.  Visual Studio kurulumunu kullanın, düzende eksik herhangi bir içerik indirmesini önlemek istiyorsanız `--noWeb` seçeneği.  Varsa `--noWeb` kullanılır ve düzenini seçili yüklenmesi başarısız kurulum için herhangi bir içeriği eksik. 
 
-Bir düzenden yükleme sırasında düzeninde yüklü içeriği alınır. Düzende değil bir bileşeni seçtiğinizde, ancak bunu internet'ten gerekilir.  Visual Studio kurulumunu kullanın, düzende eksik herhangi bir içerik indirmesini önlemek istiyorsanız `--noWeb` seçeneği.  Varsa `--noWeb` kullanılır ve düzenini seçili yüklenmesi başarısız kurulum için herhangi bir içeriği eksik.
+> [!IMPORTANT]
+> `--noWeb` Seçeneği, güncelleştirmeleri denetlemesini Visual Studio Kurulumu Durdur değil. Daha fazla bilgi için [ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetlemek](controlling-updates-to-visual-studio-deployments.md) sayfası.
 
 ### <a name="error-codes"></a>Hata kodları
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c15dd5ee82c8c37f35a6c0ad07c4513a8d568c1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936921"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155675"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Yardım Görüntüleyicisi'ni yükleme
 
@@ -42,10 +42,6 @@ Aracılığıyla kolayca Microsoft Yardım Görüntüleyicisi'ni yüklemek için
 1. Açılan iletişim kutusunda, seçmek **yükleme** düğmesi.
 
    ![Yükle düğmesi](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![video kamera simgesini film](../install/media/video-icon.png) | [Bir video izleyin](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) Microsoft Yardım Görüntüleyici, Visual Studio Yükleyicisi'ni kullanarak yükleme hakkında. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

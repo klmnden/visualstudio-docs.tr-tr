@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: da95e1b4da39d645712a8429798d8a1ca468e056
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924155"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155220"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Öğretici: Visual Studio'da Python ile çalışma
 
@@ -78,5 +78,3 @@ Bu öğreticide tek ve boş bir kod dosyasını içeren basit bir projeyle başl
 - [Visual Studio'da Python projeleri](managing-python-projects-in-visual-studio.md).
 - [Python.org Python dil hakkında bilgi edinin](https://www.python.org)
 - [Yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/) (python.org)
-- [Microsoft Virtual Academy ücretsiz Python kursları](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft sanal Akademi üst Python sorular](https://aka.ms/mva-top-python-questions)

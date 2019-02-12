@@ -2,7 +2,7 @@
 title: Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme
 titleSuffix: ''
 description: Komut satırı parametreleri denetlemek veya Visual Studio yüklemenizi özelleştirmek için kullanmayı öğrenin.
-ms.date: 11/14/2018
+ms.date: 02/12/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d82af468af14a6d743d6b89326eae0e510ce358
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6f04d6cdf94a351025e62f4bafb1eb92b1fcf91
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909108"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155506"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
 
@@ -107,7 +107,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `--cache` | **15.2, isteğe bağlı olarak yeni**: Varsa, paketler için sonraki onarım yüklendikten sonra tutulacak. Bu, sonraki yükler, onarır veya değişiklikler için kullanılacak için genel ilke ayarını geçersiz kılar. Önbellek paketleri olan varsayılan ilkedir. Bu kaldırma komutu için göz ardı edilir. Nasıl olduğunu okuyun için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
 | `--nocache` | **15.2, isteğe bağlı olarak yeni**: Varsa, paketler kaldıktan sonra ya da onarılması işlemlerinin hangisinin yapılacağını silinir. Bunlar, yalnızca gerekli ve yeniden kullanımdan sonra silinmesi yeniden indirilir. Bu, sonraki yükler, onarır veya değişiklikler için kullanılacak için genel ilke ayarını geçersiz kılar. Önbellek paketleri olan varsayılan ilkedir. Bu kaldırma komutu için göz ardı edilir. Nasıl olduğunu okuyun için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
 | `--noUpdateInstaller` | **15.2, isteğe bağlı olarak yeni**: Varsa, sessiz belirtildiğinde kendini güncelleştirmesini yükleyici engeller. Yükleyici komutu başarısız ve yükleyici güncelleştirme gerekli olduğunda noUpdateInstaller sessiz ile belirtilmişse sıfır olmayan çıkış kodu döndürür. |
-| `--noWeb` | **15.3, isteğe bağlı olarak yeni**: Kurulum, artık Internet'ten yüklüyor herhangi bir içeriği indirir.  Yüklenmekte olan tüm içeriği çevrimdışı bir düzen içinde kullanılabilir olmalıdır.  Düzen içeriği eksik kurulum başarısız olur.  Daha fazla bilgi için [ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **15.3, isteğe bağlı olarak yeni**: Visual Studio kurulumunu Düzen dizininizdeki dosyalarda varsa, Visual Studio'yu yüklemek için kullanır. Düzende olmayan bileşenleri yüklemek bir kullanıcı çalışırsa, kurulum başarısız olur.  Daha fazla bilgi için [ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md). <br/><br/> **Önemli**: Bu anahtar, Visual Studio Kurulum güncelleştirmeleri denetlemesini durdurmaz. Daha fazla bilgi için [ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetlemek](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **15.7, isteğe bağlı olarak yeni**: Yükleme için özel yükleme yollarını belirtmek için kullanılır. Adları paylaşılan desteklenen bir yolu, önbellek ve yükleyin. |
 | `--path cache=<path>` | **15.7, isteğe bağlı olarak yeni**: Yükleme dosyalarının indirileceği konumu kullanır. Bu konum yalnızca Visual Studio'nun yüklü olduğu ilk kez ayarlanabilir. Örnek: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **15.7, isteğe bağlı olarak yeni**: Yan yana Visual Studio yüklemeleri için paylaşılan dosyaları içerir. Bazıları bu ayarı geçersiz ve başka bir sürücüye yükleme sırasında bazı araçları ve SDK'lar bu sürücüdeki bir konuma yükleyin. Örnek: `--path shared="C:\VS\shared"` <br><br>Önemli: Bu, Visual Studio'nun yüklü olduğu ilk kez ve yalnızca bir kez ayarlanabilir. |

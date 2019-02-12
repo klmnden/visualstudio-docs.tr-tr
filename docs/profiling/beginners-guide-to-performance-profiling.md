@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3219621b5253287845449cd02d50188b9bddd7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983683"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155311"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU kullanımını analiz etme ölçü uygulama performansı
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **CPU kullanımı** tanılama araçları, uygulamanız için performans verilerini almak için sekmesinde. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -30,10 +30,6 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 Hata ayıklayıcı zaman duraklatır, **CPU kullanımı** aracı, uygulamanızda yürütülen işlevler hakkında bilgi toplar. Aracı işleri yapan işlevleri listeler ve örnekleme oturumunun belirli segmentlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar.
 
 Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek sunar. Varsa **CPU kullanımı** duyduğunuz verileri sağlamazsa [diğer profil oluşturma araçları](../profiling/profiling-feature-tour.md) farklı türde size yardımcı olabilecek bilgiler sağlar. Çoğu durumda, uygulamanızın performans sorunu, CPU, bellek, işleme kullanıcı Arabirimi veya ağ isteği süresi gibi dışında bir şey tarafından kaynaklanabilir. Tanılama hub'ı, çok sayıda kaydedin ve bu tür verilerin analiz etmek için diğer bir seçenek sunar.
-
-| | |
-|---------|---------|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) CPU kullanımını analiz etme ve bellek kullanımını analiz etme gösteren tanılama araçlarını kullanma. |
 
 Bu makalede, normal, hata ayıklama iş akışından çözümlenirken CPU kullanımının açıklayacağız. CPU kullanımı eklenmiş bir hata ayıklayıcı olmadan veya - daha fazla bilgi için çalışan bir uygulamanın hedefleyerek çözümleyebilirsiniz [hata ayıklama olmadan profil oluşturma verisi toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [profil oluşturma araçları ile veyaHataAyıklayıcıolmadançalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 

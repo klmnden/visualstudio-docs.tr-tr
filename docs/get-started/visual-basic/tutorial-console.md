@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b308dae2f16819fe66d40bea5f4b487695f31032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909966"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155701"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Öğretici: Visual Studio'da Visual Basic ile çalışmaya başlama
 
@@ -141,10 +141,10 @@ Bir konsol uygulaması girdi alır ve çıktı olarak da bilinir bir komut satı
 Bu öğreticiyi tamamlamak Tebrikler! Daha da fazla bilgi edinmek için aşağıdaki öğreticiye bakın.
 
 > [!div class="nextstepaction"]
-> [Video öğretici: Yeni başlayanlar için Visual Basic temelleri](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Visual Basic ve Visual Studio'da .NET Core SDK'sı ile bir kitaplığı derleme](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Basic'te yenilikler nelerdir?](/dotnet/visual-basic/getting-started/whats-new)
-* [Visual Basic kod dosyaları için IntelliSense](../../ide/visual-basic-specific-intellisense.md)
+* [Visual Basic dili izlenecek yolu](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic Dil Başvurusu](/dotnet/visual-basic/language-reference/index)
+* [Visual Basic kod dosyaları için IntelliSense](../../ide/visual-basic-specific-intellisense.md)

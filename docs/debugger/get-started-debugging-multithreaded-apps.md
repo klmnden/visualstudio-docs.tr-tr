@@ -17,20 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b4cd77fb0d755079271668ba827c7d708b30b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936700"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155792"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama (C#, Visual Basic, C++)
 
 Visual Studio, çeşitli araçları ve çok iş parçacıklı uygulamalarda hata ayıklamanıza yardımcı olmak için kullanıcı arabirimi öğeleri sağlar. Bu öğreticide, iş parçacığı işaretçileri kullanmak gösterilir **Paralel Yığınlar** penceresinde **paralel izleme** pencere, koşullu kesme noktaları ve filtre kesme noktaları. Bu öğreticiyi tamamlamak, hata ayıklama çok iş parçacıklı uygulamalar için Visual Studio özellikleriyle alışmanızı.
-
-| | |
-|---------|---------|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [Bir video izleyin](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) benzer adımları gösteren çok iş parçacıklı hata ayıklama. |
 
 Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanma hakkında ek bilgiler sağlar:
 

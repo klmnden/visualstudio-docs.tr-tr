@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a7f47ace0d43416638221329dc74a431cdba587e
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987450"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155662"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
@@ -35,10 +35,6 @@ Visual Studio Python REPL modları, aralarından seçim yapabileceğiniz birçok
 Bu makalede **standart** ve **hata ayıklama** REPL modları. Ipython modları hakkında daha fazla bilgi için bkz: [Ipython REPL kullanma](interactive-repl-ipython.md).
 
 Örnekleri içeren ayrıntılı bilgi için düzenleyici etkileşim aşağıdaki gibi **Ctrl**+**Enter**, bkz: [Öğreticisi 3. adım: Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
-
-|   |   |
-|---|---|
-| ![video kamera simgesini film](../install/media/video-icon.png "bir video izleyin") | [(Microsoft Virtual Academy) videoyu](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) üzerinde **etkileşimli** penceresi (2 dk. 22s).|
 
 ## <a name="open-an-interactive-window"></a>Etkileşimli bir pencere açın
 

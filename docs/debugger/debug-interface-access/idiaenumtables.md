@@ -12,62 +12,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80b8bd26fbdb39f539df7ce520ca638458f2de65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 44a74d0c11f6d3f7265455bd8df1d481408d8e7b
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999359"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155831"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
-Veri kaynağında bulunan çeşitli tabloları sıralar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDiaEnumTables : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaEnumTables`.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|  
-|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Tablo sayısını alır.|  
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Bir dizin veya bir ad kullanarak bir tabloyu alır.|  
-|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Belirtilen bir sabit listesi sırası tablolarında sayısını alır.|  
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Bir numaralandırma sıralı tablolarda belirtilen sayıda atlar.|  
-|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
-|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) yöntemi.  
-  
-## <a name="example"></a>Örnek  
- Bu örnek nasıl alınacağını gösterir `IDiaEnumTables` oturumundan arabirimi. Tabloları kullanarak daha kapsamlı örnek için bkz [Idiatable](../../debugger/debug-interface-access/idiatable.md) arabirimi.  
-  
-```C++  
-void ShowTableNames(IDiaSession *pSession)  
-{  
-    CComPtr<IDiaEnumTables> pTables;  
-    if ( FAILED( psession->getEnumTables( &pTables ) ) )  
-    {  
-        Fatal( "getEnumTables" );  
-    }  
-    // Do something with table  
-}  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üst bilgi: dia2.h  
-  
- Kitaplık: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+Veri kaynağında bulunan çeşitli tabloları sıralar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDiaEnumTables : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+ Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaEnumTables`.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|
+|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Tablo sayısını alır.|
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Bir dizin veya bir ad kullanarak bir tabloyu alır.|
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Belirtilen bir sabit listesi sırası tablolarında sayısını alır.|
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Bir numaralandırma sıralı tablolarda belirtilen sayıda atlar.|
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+Bu arabirim çağırarak elde [Idiasession::getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) yöntemi.
+
+## <a name="example"></a>Örnek
+Bu örnek nasıl alınacağını gösterir `IDiaEnumTables` oturumundan arabirimi. Tabloları kullanarak daha kapsamlı örnek için bkz [Idiatable](../../debugger/debug-interface-access/idiatable.md) arabirimi.
+
+```C++
+void ShowTableNames(IDiaSession *pSession)
+{
+    CComPtr<IDiaEnumTables> pTables;
+    if ( FAILED( psession->getEnumTables( &pTables ) ) )
+    {
+        Fatal( "getEnumTables" );
+    }
+    // Do something with table
+}
+```
+
+## <a name="requirements"></a>Gereksinimler
+Üst bilgi: dia2.h
+
+Kitaplık: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
