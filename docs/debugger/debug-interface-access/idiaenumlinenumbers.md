@@ -12,91 +12,91 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8a39001fa07632fe6e229587aadf4ea4c9aacf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc977826517bca14187dcadbd73dfbf03b99d6bf
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014776"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227598"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
-Veri kaynağında bulunan çeşitli satır numaralarını numaralandırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDiaEnumLineNumbers : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaEnumLineNumbers`.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|  
-|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Satır numaraları sayısını alır.|  
-|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Bir satır numarası yoluyla dizin alır.|  
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Belirtilen bir numaralandırma sıralı satır numaralarını sayısını alır.|  
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Belirtilen sayıda satır numaralarını bir numaralandırma sıralı atlar.|  
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim, aşağıdaki metotlarından birini çağırarak elde edilen [Idiasession](../../debugger/debug-interface-access/idiasession.md) arabirimi:  
-  
--   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
-  
--   [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
-  
--   [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
-  
--   [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
-  
--   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
-  
-## <a name="example"></a>Örnek  
- Bu örnek nasıl alınacağını gösterir `IDiaEnumLineNumbers` oturumundan arabirimi. Bu durumda, örnek bir işlevin satır numarası numaralandırma alma işlemi gösterilmektedir (tarafından temsil edilen `pSymbol`). Satır numaralarını kullanarak daha kapsamlı örnek için bkz [Idialinenumber](../../debugger/debug-interface-access/idialinenumber.md) arabirimi.  
-  
-```C++  
-void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
-{  
-    ULONGLONG length = 0;  
-    DWORD isect = 0;  
-    DWORD offset = 0;  
-    pSymbol->get_addressSection( &isect );  
-    pSymbol->get_addressOffset( &offset );  
-    pSymbol->get_length( &length );  
-    if ( isect != 0 && length > 0 )  
-    {  
-        CComPtr< IDiaEnumLineNumbers > pLines;  
-        if ( SUCCEEDED( pSession->findLinesByAddr(  
-                                      isect,  
-                                      offset,  
-                                      static_cast<DWORD>( length ),  
-                                      &pLines )  
-                      )  
-           )  
-        {  
-            // Do something with the enumeration  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üst bilgi: dia2.h  
-  
- Kitaplık: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession::findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiasession::findlinesbyrva](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Idiasession::findlinesbyva](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
- [Idiasession::findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
+Veri kaynağında bulunan çeşitli satır numaralarını numaralandırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDiaEnumLineNumbers : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaEnumLineNumbers`.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Alır [IEnumVARIANT arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) bu Numaralandırıcının sürümü.|
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Satır numaraları sayısını alır.|
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Bir satır numarası yoluyla dizin alır.|
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Belirtilen bir numaralandırma sıralı satır numaralarını sayısını alır.|
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Belirtilen sayıda satır numaralarını bir numaralandırma sıralı atlar.|
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Bir numaralandırma sıralı başlangıç durumuna sıfırlar.|
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.|
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+Bu arabirim, aşağıdaki metotlarından birini çağırarak elde edilen [Idiasession](../../debugger/debug-interface-access/idiasession.md) arabirimi:
+
+- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)
+
+- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
+
+- [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)
+
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)
+
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+
+## <a name="example"></a>Örnek
+Bu örnek nasıl alınacağını gösterir `IDiaEnumLineNumbers` oturumundan arabirimi. Bu durumda, örnek bir işlevin satır numarası numaralandırma alma işlemi gösterilmektedir (tarafından temsil edilen `pSymbol`). Satır numaralarını kullanarak daha kapsamlı örnek için bkz [Idialinenumber](../../debugger/debug-interface-access/idialinenumber.md) arabirimi.
+
+```C++
+void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
+{
+    ULONGLONG length = 0;
+    DWORD isect = 0;
+    DWORD offset = 0;
+    pSymbol->get_addressSection( &isect );
+    pSymbol->get_addressOffset( &offset );
+    pSymbol->get_length( &length );
+    if ( isect != 0 && length > 0 )
+    {
+        CComPtr< IDiaEnumLineNumbers > pLines;
+        if ( SUCCEEDED( pSession->findLinesByAddr(
+                                      isect,
+                                      offset,
+                                      static_cast<DWORD>( length ),
+                                      &pLines )
+                      )
+           )
+        {
+            // Do something with the enumeration
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>Gereksinimler
+Üst bilgi: dia2.h
+
+Kitaplık: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
+[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
+[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
+[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
+[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
+[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

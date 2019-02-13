@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74e63f34a7285fc035ae2acd338a73725a77e6ce
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 28bd6b050f5f313132167631d25ec7c4be661462
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867214"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227374"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme
   Office çalışma zamanı için Visual Studio 2010 Araçları, Microsoft Office geliştirici araçları kullanarak oluşturulan çözümleri çalıştıran her bilgisayara yüklenmelidir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Yükleme sırasında çalışma zamanı otomatik olarak yüklenen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -48,7 +48,7 @@ ms.locfileid: "54867214"
   
      Bu kurulum dosyalarından indirebileceğiniz [Office çalışma zamanı için Visual Studio 2010 Araçları](http://go.microsoft.com/fwlink/?LinkId=140384). Önkoşulları [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .NET Framework için önkoşulları eşleşmesi.  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Dil paketlerini içerir. Windows yüklemesini İngilizce dışında bir dile ayarlanırsa, Windows için kullandığınız aynı dilde çalışma zamanı iletilerini görüntüleyebilirsiniz. Benzer şekilde, son kullanıcılar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ve çözümlerinizi aynı dilde Windows çalışma zamanı mesajlarını görünür ayarlanan İngilizce dışında bir dil için Windows yüklemeleri üzerinde çalıştırın. Bazı durumlarda, ek dil paketlerini gerekebilir. Örneğin, birden fazla dil ayarı Windows kopyanızı kullanıyorsa ya da devre dışı zaten yükledikten sonra başka bir dile geçiş yapmak ek dil paketlerini gerekebilir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Dil paketlerinin bulabilirsiniz [Microsoft Visual Studio 2010 Araçları için Microsoft Office sistemi (sürüm 4.0 çalışma zamanı) dil paketi](http://go.microsoft.com/fwlink/?LinkId=140386).  
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Dil paketlerini içerir. Windows yüklemesini İngilizce dışında bir dile ayarlanırsa, Windows için kullandığınız aynı dilde çalışma zamanı iletilerini görüntüleyebilirsiniz. Benzer şekilde, son kullanıcılar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ve çözümlerinizi aynı dilde Windows çalışma zamanı mesajlarını görünür ayarlanan İngilizce dışında bir dil için Windows yüklemeleri üzerinde çalıştırın. Bazı durumlarda, ek dil paketlerini gerekebilir. Örneğin, birden fazla dil ayarı Windows kopyanızı kullanıyorsa ya da devre dışı zaten yükledikten sonra başka bir dile geçiş yapmak ek dil paketlerini gerekebilir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Dil paketlerinin bulabilirsiniz [Microsoft Visual Studio 2010 Araçları için Microsoft Office sistemi (sürüm 4.0 çalışma zamanı) dil paketi](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

@@ -12,51 +12,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf55138c6260404fca706017131bbe5615d77b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5550ed7551e58140301f6a434d252a534b78228
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043018"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227211"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-Bu simgenin türünü temsil eden simgeyi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_type (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Döndürür bir [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) bu simgenin türünü temsil eden nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Bu simgenin türünü temsil eden simgeyi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_type (
+    IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`pRetVal`  
+[out] Döndürür bir [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) bu simgenin türünü temsil eden nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir simge olan türü belirlemek için bu yöntemi çağırın ve ortaya çıkan inceleyin [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) nesne. Bir simge türü almamayı mümkün olduğunu unutmayın. Örneğin, bir yapının adını tür yok ancak alt simge olabilir (kullanın [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) alt incelemek için yöntemi).  
-  
-## <a name="example"></a>Örnek  
-  
-```C++  
-IDiaSymbol*         pType;  
-CComPtr<IDiaSymbol> pBaseType;  
-if (SUCCEEDED(pType->get_type( &pBaseType ))) {  
-    BasicType btBaseType;  
-    if (SUCCEEDED(pBaseType->get_baseType((DWORD *)&btBaseType))) {  
-        // Do something with basic type.  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+
+## <a name="remarks"></a>Açıklamalar
+Bir simge olan türü belirlemek için bu yöntemi çağırın ve ortaya çıkan inceleyin [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) nesne. Bir simge türü almamayı mümkün olduğunu unutmayın. Örneğin, bir yapının adını tür yok ancak alt simge olabilir (kullanın [Idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) alt incelemek için yöntemi).
+
+## <a name="example"></a>Örnek
+
+```C++
+IDiaSymbol*         pType;
+CComPtr<IDiaSymbol> pBaseType;
+if (SUCCEEDED(pType->get_type( &pBaseType ))) {
+    BasicType btBaseType;
+    if (SUCCEEDED(pBaseType->get_baseType((DWORD *)&btBaseType))) {
+        // Do something with basic type.
+    }
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
+[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

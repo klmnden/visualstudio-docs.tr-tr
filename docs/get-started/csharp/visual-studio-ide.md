@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: c4bc87c717125e23c1312fa403a90452ba0dd3e6
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156000"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227845"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE Hoş Geldiniz |C#
 
@@ -122,18 +122,6 @@ Uyarlanmış ortam ayarlarını kullanmak için Visual Studio yapılandıralım 
 IDE'yi kişiselleştirme diğer yollar hakkında bilgi edinmek için [kişiselleştirme Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Bir program oluşturma
-
-İlk olarak uyarlanmış ortam ayarlarını kullanmak için Visual Studio yapılandıracağız C# geliştiriciler.
-
-1. Menü çubuğunda, **Araçları** > **içeri ve dışarı aktarma ayarları**.
-
-2. İçinde **içeri ve dışarı aktarma ayarları Sihirbazı**seçin **tüm ayarları Sıfırla** ilk sayfasında ve ardından **sonraki**.
-
-3. Üzerinde **geçerli ayarları Kaydet** sayfasında, geçerli ayarlarınızı kaydetmek için bir seçenek belirleyin veya değil ve ardından **sonraki**. (Herhangi bir ayarı özelleştirmediyseniz seçin **Hayır, sadece ayarları, geçerli ayarlarımı sıfırlama**.)
-
-4. Üzerinde **varsayılan ayarlar koleksiyonu seçin** sayfasında **Visual C#**  seçip **son**.
-
-5. Üzerinde **sıfırlama tamamlandı** sayfasında **Kapat**.
 
 Şimdi kolları sıvayın ve basit bir program oluşturun.
 

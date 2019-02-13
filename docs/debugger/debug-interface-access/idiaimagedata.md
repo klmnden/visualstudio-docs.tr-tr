@@ -12,111 +12,111 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6854a099548b8db97b26a2b3fe70c7870fb2af2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 625b9dd6a1ffb6e982097626018617c9b74d4746
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964944"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227112"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-Modülün veya görüntü temel konum ve bellek uzaklıkları ayrıntılarını sunar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDiaImageData : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaImageData`.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Uygulama göreli modül sanal bellekte konumunu alır.|  
-|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Görüntü sanal bellekte konumunu alır.|  
-|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Görüntü tabanlı burada bellek konumunu alır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bazı hata ayıklama akışları (XDATA, PDATA), ayrıca görüntüde depolanan verilerin kopyalarını içerir. Bu nesneler için sorgulanabilir veri akışı `IDiaImageData` arabirimi. Ayrıntılar için bu konudaki "Arayanlar için Notlar" bölümüne bakın.  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde `QueryInterface` üzerinde bir [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) nesne. Tüm hata ayıklama Not akışları Destek `IDiaImageData` arabirimi. Örneğin, şu anda yalnızca XDATA ve PDATA akışlarını destekleyen `IDiaImageData` arabirimi.  
-  
-## <a name="example"></a>Örnek  
- Bu örnekte tüm destekleyen herhangi bir akışı için hata ayıklama akışı arama `IDiaImageData` arabirimi. Böyle bir akış bulunursa, bu akış hakkında bazı bilgiler görüntülenir.  
-  
-```C++  
-void ShowImageData(IDiaSession *pSession)  
-{  
-    if (pSession != NULL)  
-    {  
-        CComPtr<IDiaEnumDebugStreams> pStreamsList;  
-        HRESULT hr;  
-  
-        hr = pSession->getEnumDebugStreams(&pStreamsList);  
-        if (SUCCEEDED(hr))  
-        {  
-            LONG numStreams = 0;  
-            hr = pStreamsList->get_Count(&numStreams);  
-            if (SUCCEEDED(hr))  
-            {  
-                ULONG fetched = 0;  
-                for (LONG i = 0; i < numStreams; i++)  
-                {  
-                    CComPtr<IDiaEnumDebugStreamData> pStream;  
-                    hr = pStreamsList->Next(1,&pStream,&fetched);  
-                    if (fetched == 1)  
-                    {  
-                        CComPtr<IDiaImageData> pImageData;  
-                        hr = pStream->QueryInterface(__uuidof(IDiaImageData),  
-                                                     (void **)&pImageData);  
-                        if (SUCCEEDED(hr))  
-                        {  
-                            CComBSTR name;  
-                            hr = pStream->get_name(&name);  
-                            if (SUCCEEDED(hr))  
-                            {  
-                                wprintf(L"Stream %s:\n",(BSTR)name);  
-                            }  
-                            else  
-                            {  
-                                wprintf(L"Failed to get name of stream\n");  
-                            }  
-  
-                            ULONGLONG imageBase = 0;  
-                            if (pImageData->get_imageBase(&imageBase) == S_OK)  
-                            {  
-                                wprintf(L"  image base = 0x%0I64x\n",imageBase);  
-                            }  
-  
-                            DWORD relVA = 0;  
-                            if (pImageData->get_relativeVirtualAddress(&relVA) == S_OK)  
-                            {  
-                                wprintf(L"  relative virtual address = 0x%08lx\n",relVA);  
-                            }  
-  
-                            ULONGLONG va = 0;  
-                            if (pImageData->get_virtualAddress(&va) == S_OK)  
-                            {  
-                                wprintf(L"  virtual address = 0x%0I64x\n", va);  
-                            }  
-                        }  
-                    }  
-                }  
-            }  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üst bilgi: dia2.h  
-  
- Kitaplık: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+Modülün veya görüntü temel konum ve bellek uzaklıkları ayrıntılarını sunar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDiaImageData : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaImageData`.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Uygulama göreli modül sanal bellekte konumunu alır.|
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Görüntü sanal bellekte konumunu alır.|
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Görüntü tabanlı burada bellek konumunu alır.|
+
+## <a name="remarks"></a>Açıklamalar
+Bazı hata ayıklama akışları (XDATA, PDATA), ayrıca görüntüde depolanan verilerin kopyalarını içerir. Bu nesneler için sorgulanabilir veri akışı `IDiaImageData` arabirimi. Ayrıntılar için bu konudaki "Arayanlar için Notlar" bölümüne bakın.
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+Bu arabirim çağırarak elde `QueryInterface` üzerinde bir [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) nesne. Tüm hata ayıklama Not akışları Destek `IDiaImageData` arabirimi. Örneğin, şu anda yalnızca XDATA ve PDATA akışlarını destekleyen `IDiaImageData` arabirimi.
+
+## <a name="example"></a>Örnek
+Bu örnekte tüm destekleyen herhangi bir akışı için hata ayıklama akışı arama `IDiaImageData` arabirimi. Böyle bir akış bulunursa, bu akış hakkında bazı bilgiler görüntülenir.
+
+```C++
+void ShowImageData(IDiaSession *pSession)
+{
+    if (pSession != NULL)
+    {
+        CComPtr<IDiaEnumDebugStreams> pStreamsList;
+        HRESULT hr;
+
+        hr = pSession->getEnumDebugStreams(&pStreamsList);
+        if (SUCCEEDED(hr))
+        {
+            LONG numStreams = 0;
+            hr = pStreamsList->get_Count(&numStreams);
+            if (SUCCEEDED(hr))
+            {
+                ULONG fetched = 0;
+                for (LONG i = 0; i < numStreams; i++)
+                {
+                    CComPtr<IDiaEnumDebugStreamData> pStream;
+                    hr = pStreamsList->Next(1,&pStream,&fetched);
+                    if (fetched == 1)
+                    {
+                        CComPtr<IDiaImageData> pImageData;
+                        hr = pStream->QueryInterface(__uuidof(IDiaImageData),
+                                                     (void **)&pImageData);
+                        if (SUCCEEDED(hr))
+                        {
+                            CComBSTR name;
+                            hr = pStream->get_name(&name);
+                            if (SUCCEEDED(hr))
+                            {
+                                wprintf(L"Stream %s:\n",(BSTR)name);
+                            }
+                            else
+                            {
+                                wprintf(L"Failed to get name of stream\n");
+                            }
+
+                            ULONGLONG imageBase = 0;
+                            if (pImageData->get_imageBase(&imageBase) == S_OK)
+                            {
+                                wprintf(L"  image base = 0x%0I64x\n",imageBase);
+                            }
+
+                            DWORD relVA = 0;
+                            if (pImageData->get_relativeVirtualAddress(&relVA) == S_OK)
+                            {
+                                wprintf(L"  relative virtual address = 0x%08lx\n",relVA);
+                            }
+
+                            ULONGLONG va = 0;
+                            if (pImageData->get_virtualAddress(&va) == S_OK)
+                            {
+                                wprintf(L"  virtual address = 0x%0I64x\n", va);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>Gereksinimler
+Üst bilgi: dia2.h
+
+Kitaplık: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

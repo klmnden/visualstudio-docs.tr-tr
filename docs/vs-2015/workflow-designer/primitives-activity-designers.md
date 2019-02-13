@@ -9,15 +9,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 165676bae3b3a0b6a5e0fd51f2b505701a0eba2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795524"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227559"
 ---
 # <a name="primitives-activity-designers"></a>Temel Öğeler Etkinlik Tasarımcıları
-Temel öğeler etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler yapılandırmak için kullanılan <xref:System.Activities> atayın ve gecikme gibi ad alanı. Bu bölümde bulunan konularda nasıl kullanılacağı hakkında rehberlik [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  
+Temel öğeler etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler yapılandırmak için kullanılan <xref:System.Activities.Statements> atayın ve gecikme gibi ad alanı. Bu bölümde bulunan konularda nasıl kullanılacağı hakkında rehberlik [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Assign](../workflow-designer/assign-activity-designer.md)  
@@ -49,5 +49,6 @@ Temel öğeler etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler ya
   
  [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+-[Etkinlik tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)

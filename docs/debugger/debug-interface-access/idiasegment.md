@@ -12,95 +12,95 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96eab5c753b0c84784b04eb4a7546557bdc77eca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9507e7791f1ecd61a2f7a6321bdf45fe256feb4
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986897"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227556"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-Bölüm numarası verilerden adres alanının kesimlerine eşler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDiaSegment : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaSegment`.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Segment numarasını alır.|  
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Bölüm başladığı kesimlerinde uzaklığını alır.|  
-|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Kesimdeki bayt sayısını alır.|  
-|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Segment okunup okunamayacağını gösteren bir bayrak alır.|  
-|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Segment değiştirilebilir olup olmadığını gösteren bir bayrak alır.|  
-|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Segment yürütülebilir olup olmadığını belirten bir bayrak alır.|  
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Bu kesimin için eşler bölüm numarası alır.|  
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Bölümün başlayan göreli sanal adres (RVA) alır.|  
-|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Bölüm başına sanal adresini (VA) alır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- DIA SDK'sı zaten çevirileri bölüm uzaklığı göreli sanal adreslerine gerçekleştirdiğinden, çoğu uygulama değil olun segmenti eşlemesinin bilgileri kullanın.  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu arabirim çağırarak elde [Idiaenumsegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) veya [Idiaenumsegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) yöntemleri. Ayrıntılar için örneğe bakın.  
-  
-## <a name="example"></a>Örnek  
- Bu işlev bir tablo ve en yakın simgenin tüm parçaları adresini görüntüler.  
-  
-```C++  
-void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
-{  
-    CComPtr<IDiaEnumSegments> pSegments;  
-    if ( SUCCEEDED( pTable->QueryInterface(  
-                                _uuidof( IDiaEnumSegments ),  
-                               (void**)&pSegments )  
-                  )  
-       )  
-    {  
-        CComPtr<IDiaSegment> pSegment;  
-        while ( SUCCEEDED( hr = pSegments->Next( 1, &pSegment, &celt ) ) &&  
-                celt == 1 )  
-        {  
-            DWORD rva;  
-            DWORD seg;  
-  
-            pSegment->get_addressSection( &seg );  
-            if ( pSegment->get_relativeVirtualAddress( &rva ) == S_OK )  
-            {  
-                printf( "Segment %i addr: 0x%.8X\n", seg, rva );  
-                pSegment = NULL;  
-  
-                CComPtr<IDiaSymbol> pSym;  
-                if ( psession->findSymbolByRVA( rva, SymTagNull, &pSym ) == S_OK )  
-                {  
-                    CDiaBSTR name;  
-                    DWORD    tag;  
-  
-                    pSym->get_symTag( &tag );  
-                    pSym->get_name( &name );  
-                    printf( "\tClosest symbol: %ws (%ws)\n",  
-                            name != NULL ? name : L"",  
-                            szTags[ tag ] );  
-                }  
-            }  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üst bilgi: dia2.h  
-  
- Kitaplık: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arabirimler (arabirim erişimi SDK'SINDA hata ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
- [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
+Bölüm numarası verilerden adres alanının kesimlerine eşler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDiaSegment : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaSegment`.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Segment numarasını alır.|
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Bölüm başladığı kesimlerinde uzaklığını alır.|
+|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Kesimdeki bayt sayısını alır.|
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Segment okunup okunamayacağını gösteren bir bayrak alır.|
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Segment değiştirilebilir olup olmadığını gösteren bir bayrak alır.|
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Segment yürütülebilir olup olmadığını belirten bir bayrak alır.|
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Bu kesimin için eşler bölüm numarası alır.|
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Bölümün başlayan göreli sanal adres (RVA) alır.|
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Bölüm başına sanal adresini (VA) alır.|
+
+## <a name="remarks"></a>Açıklamalar
+DIA SDK'sı zaten çevirileri bölüm uzaklığı göreli sanal adreslerine gerçekleştirdiğinden, çoğu uygulama değil olun segmenti eşlemesinin bilgileri kullanın.
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+Bu arabirim çağırarak elde [Idiaenumsegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) veya [Idiaenumsegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) yöntemleri. Ayrıntılar için örneğe bakın.
+
+## <a name="example"></a>Örnek
+Bu işlev bir tablo ve en yakın simgenin tüm parçaları adresini görüntüler.
+
+```C++
+void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
+{
+    CComPtr<IDiaEnumSegments> pSegments;
+    if ( SUCCEEDED( pTable->QueryInterface(
+                                _uuidof( IDiaEnumSegments ),
+                               (void**)&pSegments )
+                  )
+       )
+    {
+        CComPtr<IDiaSegment> pSegment;
+        while ( SUCCEEDED( hr = pSegments->Next( 1, &pSegment, &celt ) ) &&
+                celt == 1 )
+        {
+            DWORD rva;
+            DWORD seg;
+
+            pSegment->get_addressSection( &seg );
+            if ( pSegment->get_relativeVirtualAddress( &rva ) == S_OK )
+            {
+                printf( "Segment %i addr: 0x%.8X\n", seg, rva );
+                pSegment = NULL;
+
+                CComPtr<IDiaSymbol> pSym;
+                if ( psession->findSymbolByRVA( rva, SymTagNull, &pSym ) == S_OK )
+                {
+                    CDiaBSTR name;
+                    DWORD    tag;
+
+                    pSym->get_symTag( &tag );
+                    pSym->get_name( &name );
+                    printf( "\tClosest symbol: %ws (%ws)\n",
+                            name != NULL ? name : L"",
+                            szTags[ tag ] );
+                }
+            }
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>Gereksinimler
+Üst bilgi: dia2.h
+
+Kitaplık: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)  
+[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
