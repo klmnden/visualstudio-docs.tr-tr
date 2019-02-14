@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d387bbc54d1eb1619ddffbf7e96308834d125826
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911097"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270660"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -798,11 +798,17 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 | Edit.ExpandCurrentRegion | **CTRL + M, Ctrl + E** |
 | Edit.FormatDocument | **CTRL + K, Ctrl + D** |
 | Edit.FormatSelection | **CTRL + K, Ctrl + F** |
+| Edit.GotoAll | **Ctrl+T**<br /><br /> veya<br /><br /> **CTRL +** |
 | Edit.GotoBrace | **CTRL +]** |
 | Edit.GotoBraceExtend | **CTRL + SHIFT +]** |
+| Edit.GotoRecent | **CTRL + T, R** |
+| Edit.GotoNextIssueinFile | **Alt + PgDn** |
+| Edit.GotoPreviousIssueinFile **Alt + PgUp** |
 | Edit.HideSelection | **CTRL + M, Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt +.** |
 | Edit.IncrementalSearch | **CTRL + ı** |
+| Edit.InsertCaretsatAllMatching | **Shift + Alt +;** | 
+| Edit.InsertNextMatchingCaret | **Shift + Alt +.** | 
 | Edit.InsertTab | **sekmesi** |
 | Edit.LineCut | **CTRL + L** |
 | Edit.LineDelete | **Ctrl + Shift + L** |
@@ -845,7 +851,8 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 | Edit.SelectCurrentWord | **CTRL + W** |
 | Edit.SelectionCancel | **Kaçış** |
 | Edit.SelectToLastGoBack | **CTRL +=** |
-| Edit.ShowCodeLensMenu | **Alt +\`** |
+| Edit.ShowCodeLensMenu | **CTRL + K, Ctrl +\`** |
+| Edit.ShowNavigateMenu | **Alt +\`** |
 | Edit.StopHidingCurrent | **CTRL + M, Ctrl + U** |
 | Edit.StopOutlining | **CTRL + M, Ctrl + P** |
 | Edit.SwapAnchor | **CTRL + K, Ctrl + A** |

@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 02/08/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: af9f3031fed0711bc21709a2df7b91c4b4089a73
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987424"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270595"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
 
-**İçin güncelleştirilmiş [Preview 2 sürüm](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**İçin güncelleştirilmiş [Preview 3 sürümü](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
 >[!div class="button"]
 >[Önizlemeyi indirin](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -39,7 +39,7 @@ Visual Studio sunmak olan, üst düzey bir özeti aşağıda verilmiştir:
 * **[Sürekli yenilik](#continuous-innovation)**. Akıllı, bulut destekli desteğiyle akıllı kod.
 
 > [!NOTE]
-> Yeni özellikler ve işlevler Visual Studio 2019 preview'da tam listesi için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). Bir roundup ikinci önizlememiz yeniliklerin görüp [Visual Studio 2019 Önizleme 2 kullanıma sunuldu](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) blog gönderisi.
+> Yeni özellikler ve işlevler Visual Studio 2019 preview'da tam listesi için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
 
 ## <a name="personal-and-team-productivity"></a>Kişisel ve takım üretkenliği
 
@@ -53,7 +53,7 @@ Visual Studio 2019 açtığınızda fark edeceksiniz ilk şey, yeni bir başlang
 
 Bu yeni başlangıç penceresi kopyalama veya kullanıma alma kodu, bir projeyi veya çözümü açın, yerel bir klasöre açın veya yeni bir proje oluşturmak için seçenekler sunar. Basit bir iletişim kutusunda Bu seçeneklere sahip iki yeni başlayanlar yardımcı olur ve hızlı bir şekilde kod Gelişmiş Visual Studio kullanıcılarına alın.
 
-Daha fazla bilgi için [kodu alın: Yeni Visual Studio başlangıç penceresi nasıl tasarladığımız](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blog gönderisi.
+Daha fazla bilgi için [kodu alın: Yeni Visual Studio başlangıç penceresi nasıl tasarladığımız](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blog gönderisi.
 
 ### <a name="better-search"></a>Daha iyi arama
 
@@ -81,7 +81,7 @@ Ayrıca, bir değer İzle, Yereller ve Otomatikler pencereleri içinde nasıl g�
 
    ![Yeni İzleme penceresi ve biçim değerleri özelliği Visual Studio 2019](media/search-watch-window.png)
 
-Daha fazla bilgi için [geliştirilmiş Visual Studio 2019 içinde: Nesnelerle ve özelliklerle izleyin, Otolar ve yerel öğeler Windows Arama](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) blog gönderisi.
+Daha fazla bilgi için [geliştirilmiş Visual Studio 2019 içinde: Nesnelerle ve özelliklerle izleyin, Otolar ve yerel öğeler Windows Arama](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) blog gönderisi.
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Canlı Paylaşım
 
@@ -91,7 +91,7 @@ Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
 
    ![LiveShare işbirliği özelliği Visual Studio 2019 gösteren animasyonlu GIF dosyası](media/live-share-collaboration.gif)
 
-Daha fazla bilgi için [Visual Studio Live Share gerçek zamanlı kod incelemeleri ve Etkileşimli Eğitim](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blog gönderisi.
+Daha fazla bilgi için [Visual Studio Live Share gerçek zamanlı kod incelemeleri ve Etkileşimli Eğitim](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blog gönderisi.
 
 ## <a name="modern-development-support"></a>Modern geliştirme desteği
 
@@ -122,7 +122,7 @@ Visual Studio 2019 Preview'ın yayınlanmasıyla birlikte, size Visual Studio ku
 
    ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/per-monitor-aware-dpi-scaling.png)
 
-Daha fazla bilgi için [daha iyi bir Visual Studio 2019 çoklu monitör deneyimiyle](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
+Daha fazla bilgi için [daha iyi bir Visual Studio 2019 çoklu monitör deneyimiyle](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -141,7 +141,7 @@ Biz başlangıçta yalnızca desteklenen C# zaman biz öncelikle önizlemesi Int
 
 Ve kullanıyorsanız C#, kendi kod üzerinde özel bir model eğitip özelliği de ekledik.
 
-En yeni güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Visual Studio Intellicode, daha fazla dili destekleyen ve kodunuzdan öğrenir](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) blog gönderisi. Ve uzantısı ve karşıdan yükleme hakkında daha fazla bilgi için bkz. [Visual Studio Intellicode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) Microsoft DevLabs sayfasında.
+En yeni güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Visual Studio Intellicode, daha fazla dili destekleyen ve kodunuzdan öğrenir](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) blog gönderisi. Ve uzantısı ve karşıdan yükleme hakkında daha fazla bilgi için bkz. [Visual Studio Intellicode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) Microsoft DevLabs sayfasında.
 
 ## <a name="give-us-feedback"></a>Geri bildirimde bulunun
 

@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/13/2019
+ms.date: 02/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 311071e53aec9b3f61d6f8c889f2fa913c2341dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: d1134a0b757423c8196ae40f49fe5251e6de84f2
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227871"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270634"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -177,6 +177,7 @@ Aşağıdaki tabloda, Visual Studio 2019 Preview için tarih derleme numaraları
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Preview 3 | 13 Şubat 2019 | 16.0.28608.199 |
 | 16.0.0 | Önizleme 2.2 | 5 Şubat 2019 | 16.0.28602.52 |
 | 16.0.0 | 2.1 önizleme | 31 Ocak 2019 | 16.0.28529.54 |
 | 16.0.0 | Önizleme 2 | 23 Ocak 2019 | 16.0.28522.59 |
