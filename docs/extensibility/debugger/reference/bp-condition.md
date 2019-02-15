@@ -12,71 +12,71 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa34a3ab8920b719ecc52a9abdf987e14782078
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7cc7231e218af855d3cc24eebe694b21ba1b40a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998137"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315475"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
-Altında bir kesme noktası harekete koşullar açıklanmaktadır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typedef struct _BP_CONDITION {   
-   IDebugThread2* pThread;  
-   BP_COND_STYLE  styleCondition;  
-   BSTR           bstrContext;  
-   BSTR           bstrCondition;  
-   UINT           nRadix;  
-} BP_CONDITION;  
-```  
-  
-```csharp  
-public struct BP_CONDITION {   
-   public IDebugThread2 pThread;  
-   public uint          styleCondition;  
-   public string        bstrContext;  
-   public string        bstrCondition;  
-   public uint          nRadix;  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) etkin iş parçacığı için kesme noktasını içeren uygulamayı temsil eden nesne.  
-  
- `styleCondition`  
- Bir değer [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) bu kesme noktası koşulu stilini açıklayan sabit listesi.  
-  
- `bstrContext`  
- Kesme noktası konumu.  
-  
- `bstrCondition`  
- Kesme noktası tetikleyicisinin tetikleme koşulunu.  
-  
- `nRadix`  
- Sayısal yedeklenmesine değerlendirmede kullanılacak sayı tabanı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yapı üyesidir [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ve [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapıları.  
-  
- Bu yapı ayrıca bir parametre olarak geçirilen [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) ve [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) yöntemleri.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar ve birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)
+Altında bir kesme noktası harekete koşullar açıklanmaktadır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typedef struct _BP_CONDITION {
+    IDebugThread2* pThread;
+    BP_COND_STYLE  styleCondition;
+    BSTR           bstrContext;
+    BSTR           bstrCondition;
+    UINT           nRadix;
+} BP_CONDITION;
+```
+
+```csharp
+public struct BP_CONDITION {
+    public IDebugThread2 pThread;
+    public uint          styleCondition;
+    public string        bstrContext;
+    public string        bstrCondition;
+    public uint          nRadix;
+};
+```
+
+## <a name="members"></a>Üyeler
+`pThread`  
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) etkin iş parçacığı için kesme noktasını içeren uygulamayı temsil eden nesne.
+
+`styleCondition`  
+Bir değer [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) bu kesme noktası koşulu stilini açıklayan sabit listesi.
+
+`bstrContext`  
+Kesme noktası konumu.
+
+`bstrCondition`  
+Kesme noktası tetikleyicisinin tetikleme koşulunu.
+
+`nRadix`  
+Sayısal yedeklenmesine değerlendirmede kullanılacak sayı tabanı.
+
+## <a name="remarks"></a>Açıklamalar
+Bu yapı üyesidir [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ve [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapıları.
+
+Bu yapı ayrıca bir parametre olarak geçirilen [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) ve [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) yöntemleri.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
+[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
+[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)  
+[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)  
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
+[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

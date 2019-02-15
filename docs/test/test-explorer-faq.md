@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935127"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318322"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini hakkında SSS
 
@@ -107,7 +107,7 @@ Tüm test projelerinde, .csproj dosyasında kendi .NET test bağdaştırıcısı
 
 **Test projesi {} herhangi bir .NET NuGet bağdaştırıcı başvurmuyor. Test bulma veya yürütme bu proje için çalışmayabilir. Her çözüm .NET test projesinde test bağdaştırıcısı, NuGet başvuru önerilir.**
 
-Test bağdaştırıcısı uzantılarından kullanmak yerine, projeleri test bağdaştırıcısı NuGet paketlerini kullanmak için gerekli değildir. Bu gereksinim, büyük ölçüde performansı artırır ve daha az sorunları ile sürekli tümleştirme neden olur. .NET Test bağdaştırıcısı uzantısı kullanımdan kaldırma hakkında daha fazla bilgiyi [sürüm notları](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+Test bağdaştırıcısı uzantılarından kullanmak yerine, projeleri test bağdaştırıcısı NuGet paketlerini kullanmak için gerekli değildir. Bu gereksinim, büyük ölçüde performansı artırır ve daha az sorunları ile sürekli tümleştirme neden olur. .NET Test bağdaştırıcısı uzantısı kullanımdan kaldırma hakkında daha fazla bilgiyi [sürüm notları](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 > [!NOTE]
 > NUnit 3 test bağdaştırıcısı'na yükseltemedi olan ve NUnit 2 Test bağdaştırıcısı kullanıyorsanız, bu yeni Visual Studio sürümünde 15,8 bulma davranışı kapatabilirsiniz **Araçları** > **seçenekleri**  >  **Test**.

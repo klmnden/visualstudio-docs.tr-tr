@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: af9f3031fed0711bc21709a2df7b91c4b4089a73
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270595"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318400"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
 
@@ -89,7 +89,7 @@ Daha fazla bilgi için [geliştirilmiş Visual Studio 2019 içinde: Nesnelerle v
 
 Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
 
-   ![LiveShare işbirliği özelliği Visual Studio 2019 gösteren animasyonlu GIF dosyası](media/live-share-collaboration.gif)
+![LiveShare işbirliği özelliği Visual Studio 2019 gösteren animasyonlu GIF dosyası](media/live-share-collaboration.gif)
 
 Daha fazla bilgi için [Visual Studio Live Share gerçek zamanlı kod incelemeleri ve Etkileşimli Eğitim](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blog gönderisi.
 

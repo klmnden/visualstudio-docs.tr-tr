@@ -12,116 +12,116 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564f4c15e228692a6ffa21e22248b966860c5699
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 448cdf3087014b927a9c144fbc756c5cc8f4a37e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000282"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317412"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
-Bir kesme noktası isteği hakkında alınacak bilgileri belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_BPREQI_FIELDS {   
-   BPREQI_BPLOCATION   = 0x0001,  
-   BPREQI_LANGUAGE     = 0x0002,  
-   BPREQI_PROGRAM      = 0x0004,  
-   BPREQI_PROGRAMNAME  = 0x0008,  
-   BPREQI_THREAD       = 0x0010,  
-   BPREQI_THREADNAME   = 0x0020,  
-   BPREQI_PASSCOUNT    = 0x0040,  
-   BPREQI_CONDITION    = 0x0080,  
-   BPREQI_FLAGS        = 0x0100,  
-   BPREQI_ALLOLDFIELDS = 0x01ff  
-   BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only  
-   BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only  
-   BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only  
-   BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only  
-};  
-typedef DWORD BPREQI_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_BPREQI_FIELDS {   
-   BPREQI_BPLOCATION   = 0x0001,  
-   BPREQI_LANGUAGE     = 0x0002,  
-   BPREQI_PROGRAM      = 0x0004,  
-   BPREQI_PROGRAMNAME  = 0x0008,  
-   BPREQI_THREAD       = 0x0010,  
-   BPREQI_THREADNAME   = 0x0020,  
-   BPREQI_PASSCOUNT    = 0x0040,  
-   BPREQI_CONDITION    = 0x0080,  
-   BPREQI_FLAGS        = 0x0100,  
-   BPREQI_ALLOLDFIELDS = 0x01ff  
-   BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only  
-   BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only  
-   BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only  
-   BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- BPREQI_BPLOCATION  
- Başlat/kullanım `bpLocation` (kesme noktası konumu) alanının [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) veya [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapısı.  
-  
- BPREQI_LANGUAGE  
- Başlat/kullanım `guidLanguage` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_PROGRAM  
- Başlat/kullanım `pProgram` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_PROGRAMNAME  
- Başlat/kullanım `bstrProgramName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_THREAD  
- Başlat/kullanım `pThread` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_THREADNAME  
- Başlat/kullanım `bstrThreadName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_PASSCOUNT  
- Başlat/kullanım `bpPassCount` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_CONDITION  
- Başlat/kullanım `bpCondition` (kesme noktası koşulu) alanının `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_FLAGS  
- Başlat/kullanım `dwFlags` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_ALLOLDFIELDS  
- Başlat/tüm alanlar için kullanım, `BP_REQUEST_INFO` yapısı.  
-  
- BPREQI_VENDOR  
- Başlat/kullanım `guidVendor` alanını `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_CONSTRAINT  
- Başlat/kullanım `bstrConstraint` alanını `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_TRACEPOINT  
- Başlat/kullanım `bstrTracepoint` alanını `BP_REQUEST_INFO2` yapısı.  
-  
- BPREQI_ALLFIELDS  
- Tüm alanlar için belirtir `BP_REQUEST_INFO2` yapısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken olarak geçirilen [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) ve [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) hangi alanları belirlemek için yöntemleri [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ve [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) yapıları, başlatılacak.  
-  
- Bu bayraklar Ayrıca hangi alanları göstermek için kullanılan `BP_REQUEST_INFO` ve `BP_REQUEST_INFO2` yapıları, kullanılan ve geçerli her yapı döndürüldüğünde.  
-  
- Bu değerler, bit düzeyinde ile birleştirilebilir `OR`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+Bir kesme noktası isteği hakkında alınacak bilgileri belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_BPREQI_FIELDS {
+    BPREQI_BPLOCATION   = 0x0001,
+    BPREQI_LANGUAGE     = 0x0002,
+    BPREQI_PROGRAM      = 0x0004,
+    BPREQI_PROGRAMNAME  = 0x0008,
+    BPREQI_THREAD       = 0x0010,
+    BPREQI_THREADNAME   = 0x0020,
+    BPREQI_PASSCOUNT    = 0x0040,
+    BPREQI_CONDITION    = 0x0080,
+    BPREQI_FLAGS        = 0x0100,
+    BPREQI_ALLOLDFIELDS = 0x01ff
+    BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only
+    BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only
+    BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only
+    BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only
+};
+typedef DWORD BPREQI_FIELDS;
+```
+
+```csharp
+public enum enum_BPREQI_FIELDS {
+    BPREQI_BPLOCATION   = 0x0001,
+    BPREQI_LANGUAGE     = 0x0002,
+    BPREQI_PROGRAM      = 0x0004,
+    BPREQI_PROGRAMNAME  = 0x0008,
+    BPREQI_THREAD       = 0x0010,
+    BPREQI_THREADNAME   = 0x0020,
+    BPREQI_PASSCOUNT    = 0x0040,
+    BPREQI_CONDITION    = 0x0080,
+    BPREQI_FLAGS        = 0x0100,
+    BPREQI_ALLOLDFIELDS = 0x01ff
+    BPREQI_VENDOR       = 0x0200,   // BP_REQUEST_INFO2 only
+    BPREQI_CONSTRAINT   = 0x0400,   // BP_REQUEST_INFO2 only
+    BPREQI_TRACEPOINT   = 0x0800,   // BP_REQUEST_INFO2 only
+    BPREQI_ALLFIELDS    = 0x0fff    // BP_REQUEST_INFO2 only
+};
+```
+
+## <a name="members"></a>Üyeler
+BPREQI_BPLOCATION  
+Başlat/kullanım `bpLocation` (kesme noktası konumu) alanının [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) veya [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapısı.
+
+BPREQI_LANGUAGE  
+Başlat/kullanım `guidLanguage` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_PROGRAM  
+Başlat/kullanım `pProgram` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_PROGRAMNAME  
+Başlat/kullanım `bstrProgramName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_THREAD  
+Başlat/kullanım `pThread` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_THREADNAME  
+Başlat/kullanım `bstrThreadName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_PASSCOUNT  
+Başlat/kullanım `bpPassCount` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_CONDITION  
+Başlat/kullanım `bpCondition` (kesme noktası koşulu) alanının `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_FLAGS  
+Başlat/kullanım `dwFlags` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_ALLOLDFIELDS  
+Başlat/tüm alanlar için kullanım, `BP_REQUEST_INFO` yapısı.
+
+BPREQI_VENDOR  
+Başlat/kullanım `guidVendor` alanını `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_CONSTRAINT  
+Başlat/kullanım `bstrConstraint` alanını `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_TRACEPOINT  
+Başlat/kullanım `bstrTracepoint` alanını `BP_REQUEST_INFO2` yapısı.
+
+BPREQI_ALLFIELDS  
+Tüm alanlar için belirtir `BP_REQUEST_INFO2` yapısı.
+
+## <a name="remarks"></a>Açıklamalar
+Bağımsız değişken olarak geçirilen [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) ve [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) hangi alanları belirlemek için yöntemleri [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ve [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) yapıları, başlatılacak.
+
+Bu bayraklar Ayrıca hangi alanları göstermek için kullanılan `BP_REQUEST_INFO` ve `BP_REQUEST_INFO2` yapıları, kullanılan ve geçerli her yapı döndürüldüğünde.
+
+Bu değerler, bit düzeyinde ile birleştirilebilir `OR`.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
+[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

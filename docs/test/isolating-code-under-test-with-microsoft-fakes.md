@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937727"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316463"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes ile test edilen kodu yalıtma
 
@@ -35,7 +35,8 @@ Fakes iki türde olabilir:
 -   Bir .NET Framework projesi
 
 > [!NOTE]
-> .NET standard projeleri desteklenmez.
+> - .NET standard projeleri desteklenmez.
+> - Visual Studio ile profil oluşturma, Microsoft Fakes kullanan testler için kullanılamıyor.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Saptama ve Dolgu türü arasında seçin
 Genelde bu sınıfları aynı anda geliştirip güncelleştirdiğinizden bir Visual Studio projesini bileşen olarak kabul edebilirsiniz. Projenin çözümünüzdeki diğer projelere veya diğer derlemelere yaptığı çağrılar için saptama ve dolgu kullanmayı deneyebilirsiniz.

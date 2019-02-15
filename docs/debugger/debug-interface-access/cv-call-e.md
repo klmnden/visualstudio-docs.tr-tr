@@ -12,57 +12,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9963a36e8e9054103ea1517cb476670b0c6656f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012644"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316203"
 ---
 # <a name="cvcalle"></a>CV_call_e
-Bir işlev çağırma kuralını belirtir.  
-  
+Bir işlev çağırma kuralını belirtir.
+
 > [!NOTE]
->  En yaygın numaralandırma değerlerinden yalnızca aşağıda belirtilmiştir. Tam numaralandırma cvconst.h üstbilgi dosyasında kullanılabilir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-typedef enum CV_call_e {   
-   CV_CALL_NEAR_C    = 0x00,  
-   CV_CALL_NEAR_FAST = 0x04,  
-   CV_CALL_NEAR_STD  = 0x07,  
-   CV_CALL_NEAR_SYS  = 0x09,  
-   CV_CALL_THISCALL  = 0x0b,  
-   CV_CALL_CLRCALL   = 0x16  
-} CV_call_e;  
-```  
-  
-## <a name="elements"></a>Öğeleri  
- CV_CALL_NEAR_C  
- Yakın sağdan sola push kullanarak bir işlev çağırma kuralını belirtir. Çağıran işlev, yığını temizler.  
-  
- CV_CALL_NEAR_FAST  
- Yazmaçları ile yakın bir soldan sağa anında iletme kullanarak bir işlevi çağırma kuralını belirtir. Çağrılan işlev parametresi baytların toplamından yığın temizlemek için kullanır.  
-  
- CV_CALL_NEAR_STD  
- Yakın bir standart çağrı (sağdan sola anında iletme) kullanarak bir işlev çağırma kuralını belirtir.  
-  
- CV_CALL_NEAR_SYS  
- Yakın bir sistem çağrısı kullanarak bir işlev çağırma kuralını belirtir.  
-  
- CV_CALL_THISCALL  
- Kullanarak bir işlev çağırma kuralını belirtir `this` çağırın (`this` işaretçi geçirildi kayıttaki).  
-  
- CV_CALL_CLRCALL  
- Ortak dil çalışma zamanı (CLR tarafından) (çağırma kuralı olarak da bilinen bir yönetilen kod için) kullanılan bir işlevi çağırma kuralını belirtir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu numaralandırma değerleri için yapılan bir çağrı tarafından döndürülen [Idiasymbol::get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) yöntemi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: cvconst.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri ve yapıları](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+> En yaygın numaralandırma değerlerinden yalnızca aşağıda belirtilmiştir. Tam numaralandırma cvconst.h üstbilgi dosyasında kullanılabilir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+typedef enum CV_call_e {
+    CV_CALL_NEAR_C    = 0x00,
+    CV_CALL_NEAR_FAST = 0x04,
+    CV_CALL_NEAR_STD  = 0x07,
+    CV_CALL_NEAR_SYS  = 0x09,
+    CV_CALL_THISCALL  = 0x0b,
+    CV_CALL_CLRCALL   = 0x16
+} CV_call_e;
+```
+
+## <a name="elements"></a>Öğeleri
+CV_CALL_NEAR_C  
+Yakın sağdan sola push kullanarak bir işlev çağırma kuralını belirtir. Çağıran işlev, yığını temizler.
+
+CV_CALL_NEAR_FAST  
+Yazmaçları ile yakın bir soldan sağa anında iletme kullanarak bir işlevi çağırma kuralını belirtir. Çağrılan işlev parametresi baytların toplamından yığın temizlemek için kullanır.
+
+CV_CALL_NEAR_STD  
+Yakın bir standart çağrı (sağdan sola anında iletme) kullanarak bir işlev çağırma kuralını belirtir.
+
+CV_CALL_NEAR_SYS  
+Yakın bir sistem çağrısı kullanarak bir işlev çağırma kuralını belirtir.
+
+CV_CALL_THISCALL  
+Kullanarak bir işlev çağırma kuralını belirtir `this` çağırın (`this` işaretçi geçirildi kayıttaki).
+
+CV_CALL_CLRCALL  
+Ortak dil çalışma zamanı (CLR tarafından) (çağırma kuralı olarak da bilinen bir yönetilen kod için) kullanılan bir işlevi çağırma kuralını belirtir.
+
+## <a name="remarks"></a>Açıklamalar
+Bu numaralandırma değerleri için yapılan bir çağrı tarafından döndürülen [Idiasymbol::get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) yöntemi.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: cvconst.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

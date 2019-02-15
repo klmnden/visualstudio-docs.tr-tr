@@ -12,56 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5a7cb8cfbc4efc2ffd90a58c0c0650b677ed8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7acd5b87288365cde43b2eb8f460b52048dcf36f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966289"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318720"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-Bir program düğüme iliştirmek için hata ayıklama altyapısı (DE) nedenini belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
-};  
-typedef DWORD ATTACH_REASON;  
-```  
-  
-```csharp  
-public enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- ATTACH_REASON_AUTO  
- İşlem şu anda hata ayıklama modunda olduğundan ekleyin.  
-  
- ATTACH_REASON_LAUNCH  
- İşlem başlatıldığından ekleyin.  
-  
- ATTACH_REASON_USER  
- Bir kullanıcı isteği nedeniyle ekleyin.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu değerler için parametre olarak kullanılan [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) ve [iliştirme](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) yöntemleri.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Ekleme](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+Bir program düğüme iliştirmek için hata ayıklama altyapısı (DE) nedenini belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_ATTACH_REASON {
+    ATTACH_REASON_LAUNCH = 0x0001,
+    ATTACH_REASON_USER   = 0x0002,
+    ATTACH_REASON_AUTO   = 0x0003
+};
+typedef DWORD ATTACH_REASON;
+```
+
+```csharp
+public enum enum_ATTACH_REASON {
+    ATTACH_REASON_LAUNCH = 0x0001,
+    ATTACH_REASON_USER   = 0x0002,
+    ATTACH_REASON_AUTO   = 0x0003
+};
+```
+
+## <a name="members"></a>Üyeler
+ATTACH_REASON_AUTO  
+İşlem şu anda hata ayıklama modunda olduğundan ekleyin.
+
+ATTACH_REASON_LAUNCH  
+İşlem başlatıldığından ekleyin.
+
+ATTACH_REASON_USER  
+Bir kullanıcı isteği nedeniyle ekleyin.
+
+## <a name="remarks"></a>Açıklamalar
+Bu değerler için parametre olarak kullanılan [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) ve [iliştirme](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) yöntemleri.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)  
+[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

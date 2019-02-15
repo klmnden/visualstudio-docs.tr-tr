@@ -16,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921425"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315540"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl yapılır: Yalnızca klavyeyi kullanma
 
 > [!TIP]
-> Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
+> Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gidin ve tümleşik geliştirme ortamında (IDE) kodu kolaylaştıran birçok varsayılan kısayol tuş birleşimleri sağlar. Visual Studio'da kullanılan kısayol tuşları tam bir listesi için bkz. [varsayılan klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Diğer Microsoft ürünleri için kullanılabilen klavye kısayolları hakkında daha fazla bilgi için bkz: [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).
 

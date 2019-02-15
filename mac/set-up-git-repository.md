@@ -3,14 +3,14 @@ title: Bir Git deposu ayarlama
 description: Git, Subversion Mac için Visual Studio kullanarak
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796976"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317354"
 ---
 # <a name="set-up-a-git-repository"></a>Bir Git deposu ayarlama
 
@@ -87,9 +87,45 @@ Mevcut bir proje varsa _değil_ zaten sürüm denetiminde Git'te ayarlamak için
 
 ## <a name="publishing-a-new-project"></a>Yeni bir proje yayımlama
 
-Yeni Proje iletişim kutusu, git kullanarak yeni bir proje yayımlamak için kullanılabilir. Bunu etkinleştirmek için işaretleyin **sürüm denetimi için Git'i kullanabilirsiniz.** Aşağıdaki ekran görüntüsünde gösterildiği gibi onay kutusu. Deponuzu başlatmak ve isteğe bağlı bir .gitignore dosyası ekleyin:
+Yeni Proje iletişim kutusu, bir yerel git deposu ile yeni bir proje oluşturmak için kullanılabilir. Bunu etkinleştirmek için işaretleyin **sürüm denetimi için git kullanan** aşağıdaki ekran görüntüsünde gösterildiği gibi onay kutusu. Deponuzu başlatmak ve isteğe bağlı bir .gitignore dosyası ekleyin:
 
-![Değişiklikleri uzak depoya gönderin](media/version-control-git12.png)
+![Yeni proje oluşturma ile git desteği](media/version-control-git-publish-new1.png)
+
+Yeni yerel deponuzun yeni bir GitHub deposuna göndermek için aşağıdaki adımları izleyin:
+
+> [!NOTE]
+> Bir GitHub deposu zaten oluşturmadıysanız başvurmak [Github'da uzak bir depo oluşturma](#creating-a-remote-repo-on-github) bölümü.
+
+1. İlk işlemenize giderek oluşturma **sürüm denetimi > İnceleme çözüm ve işleme** menü çubuğundaki.
+
+2. Durum sekmesinde seçin **işleme** sol üstteki.
+
+3. Örneğin "ilk kaydı", bir işleme iletisi yazma sonra tıklayın **işleme**:
+
+    ![Git deposuna ilk değişiklikleri](media/version-control-git-publish-new2.png)
+
+4. Ardından, menü çubuğunda Git **sürüm denetimi > yönetme dalları ve uzak kaynakları**.
+
+5. Git **uzak kaynaklar** sekmesine ve ardından tıklayın **Ekle**.
+
+6. İçinde **uzak kaynak** penceresinde, önceden oluşturulmuş GitHub deponuza ayrıntılarını eklemek ve tıklayın **Tamam**:
+
+    ![Git deposu için Uzak kaynaklarını yapılandırma](media/version-control-git-publish-new3.png)
+
+7. Kapat **Git deposu Yapılandırması** sonra menü çubuğundaki penceresinde Git **sürüm denetimi > anında iletme değişiklikleri**.
+
+8. İçinde **depoya itme** penceresi tıklayarak **değişiklikleri anında iletme** düğmesi:
+
+    ![Değişiklikleri uzak depoya gönderin](media/version-control-git-publish-new4.png)
+
+9. İstendiğinde GitHub kullanıcı adınızı ve parolanızı girin.
+
+> [!NOTE]
+> Hesabınızı etkin iki öğeli kimlik doğrulamayı (2FA) varsa, bir erişim bir parola yerine kullanılan belirteç oluşturmak gerekir. Bir erişim belirteci oluşturmadıysanız, Git adımları [erişim belirteci](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) belgeleri.
+
+Mac için Visual Studio, artık uzak GitHub deponuza değişiklikleri gönderir:
+
+![Gönderme işlemi başarıyla tamamlandı onayı](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>Mevcut bir havuzuna göz atın
 

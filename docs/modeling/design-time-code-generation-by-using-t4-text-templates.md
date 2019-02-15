@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c31a33abd5767207f9c2406907961379f84bae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6370bdcba922ec1c1b358a773e4f891ea41230e3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924481"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318051"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual Studio projenize oluşturmanıza olanak tanır. Genellikle, böylece verileri göre hazırlanmasının kod farklılık şablonları yazma bir *model*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren veritabanı modelidir.
@@ -294,7 +294,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Visual Studio modelleme SDK'yı yüklediyseniz, bir derleme yaptığınızda otomatik olarak dönüştürülen tüm şablonları olabilir. Bunu yapmak için proje dosyanıza (.csproj veya .vbproj) bir metin düzenleyicisinde düzenleyin ve sonra diğer dosyanın sonuna aşağıdaki satırları ekleyin `<import>` ifadeleri:
 
 > [!NOTE]
-> Visual Studio 2017'de metin şablonu dönüştürme SDK'sını ve Visual Studio modelleme SDK'sı, Visual Studio'nun belirli özelliklerini yüklediğinizde otomatik olarak yüklenir. Daha fazla ayrıntı için [bu blog gönderisini](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Visual Studio 2017'de metin şablonu dönüştürme SDK'sını ve Visual Studio modelleme SDK'sı, Visual Studio'nun belirli özelliklerini yüklediğinizde otomatik olarak yüklenir. Daha fazla ayrıntı için [bu blog gönderisini](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

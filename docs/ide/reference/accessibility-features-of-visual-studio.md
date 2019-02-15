@@ -12,17 +12,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935010"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318595"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun erişilebilirlik özellikleri
 
 > [!TIP]
-> Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
+> Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
 
 Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aşağıdaki özellikler Visual Studio daha erişilebilir engelli kişiler için hale getirir:
 

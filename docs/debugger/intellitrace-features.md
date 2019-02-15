@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035243"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317776"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace özellikleri (C#, Visual Basic, C++)
 
@@ -105,21 +105,21 @@ IntelliTrace verilerini dosyasını kaydettiğinizde, toplanan IntelliTrace her 
 
 ## <a name="blogs"></a>Bloglar
 
-[Visual Studio Enterprise 2015'te IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[Visual Studio Enterprise 2015'te IntelliTrace](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[İzlenecek yol, Live Visual Studio 2015 (metin düzenleyici) IntelliTrace kullanarak hata ayıklama](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[İzlenecek yol, Live Visual Studio 2015 (metin düzenleyici) IntelliTrace kullanarak hata ayıklama](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[İzlenecek yol, Live Visual Studio 2015 (sosyal kulübü) IntelliTrace kullanarak hata ayıklama](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[İzlenecek yol, Live Visual Studio 2015 (sosyal kulübü) IntelliTrace kullanarak hata ayıklama](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[Visual Studio Enterprise destekler ekleme artık 2015'te IntelliTrace!](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[Visual Studio Enterprise destekler ekleme artık 2015'te IntelliTrace!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[IntelliTrace Standalone Collector'ı kullanarak bir windows hizmetini veri topla](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[IntelliTrace Standalone Collector'ı kullanarak bir windows hizmetini veri topla](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[IntelliTrace toplama planını düzenleme](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[IntelliTrace toplama planını düzenleme](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[Özel TraceSource ve IntelliTrace kullanarak hata ayıklama](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[Özel TraceSource ve IntelliTrace kullanarak hata ayıklama](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Active Directory hesapları altında çalışan IntelliTrace Standalone Collector ve uygulama havuzları](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Active Directory hesapları altında çalışan IntelliTrace Standalone Collector ve uygulama havuzları](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>Forumlar
 

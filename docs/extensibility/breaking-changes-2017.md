@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012280"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318751"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
-Visual Studio 2017 ile sunuyoruz bir [daha hızlı, daha basit Visual Studio yükleme deneyimi](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) özellikler ve iş yükleri üzerinde daha fazla seçeneğin kullanıcılar sağlarken kullanıcı sistemlerinde, Visual Studio etkisini azaltacak yüklü değildir. Bu geliştirmeler desteklemek için biz genişletilebilirlik modeline değişiklikler yaptık ve Visual Studio genişletilebilirliği için bozucu değişiklikler yaptınız. Bu belge, bu değişiklikler ve hangi onları adreslemek üzere yapılabilir teknik ayrıntılarını anlatmaktadır. Bazı bilgiler zaman içinde nokta uygulamasının Ayrıntılar ve daha sonra değiştirilemez lütfen unutmayın.
+Visual Studio 2017 ile sunuyoruz bir [daha hızlı, daha basit Visual Studio yükleme deneyimi](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) özellikler ve iş yükleri üzerinde daha fazla seçeneğin kullanıcılar sağlarken kullanıcı sistemlerinde, Visual Studio etkisini azaltacak yüklü değildir. Bu geliştirmeler desteklemek için biz genişletilebilirlik modeline değişiklikler yaptık ve Visual Studio genişletilebilirliği için bozucu değişiklikler yaptınız. Bu belge, bu değişiklikler ve hangi onları adreslemek üzere yapılabilir teknik ayrıntılarını anlatmaktadır. Bazı bilgiler zaman içinde nokta uygulamasının Ayrıntılar ve daha sonra değiştirilemez lütfen unutmayın.
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>VSIX biçimi ve yükleme etkileyen değişiklikler
 
@@ -28,7 +28,7 @@ VSIX biçimi değişiklikler şunlardır:
 * Kurulum Önkoşulları bildirimi. Visual Studio, hızlı yükleme basit, ' promise üzerinde sunmak için yükleyici artık kullanıcılara daha fazla yapılandırma seçeneği sunar. Sonuç olarak, özellik ve uzantı tarafından gerekli bileşenleri yüklü olduğundan emin olun, uzantıları bağımlılıklarını bildirmeniz gerekir.
   * Visual Studio 2017 yükleyicisi almak ve kullanıcı için gerekli olan bileşenler uzantınızı yüklemenin bir parçası olarak yüklemek otomatik olarak sunacaktır.
   * Kullanıcılar ayrıca, bildirimde 15.0 sürümünü hedefleyen olarak işaretlenmiş olsa bile yeni VSIX v3 biçimi kullanılarak oluşturulmamış bir uzantıyı yüklemeye çalıştığında uyarılır.
-* Gelişmiş özellikler için VSIX biçimi. Üzerinde teslim etmek için bir [low Impact yükleme](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) yan yana yüklemeleri de destekleyen Visual Studio, biz artık çoğu yapılandırma verileri, sistem kayıt defterine kaydetmek ve Visual Studio özel derlemeler GAC dışına taşındı. Biz de VSIX yükleme altyapısı ve VSIX biçimi yeteneklerini bazı yükleme türleri, uzantıları yüklemek için bunun yerine bir MSI veya EXE kullanmanıza olanak sağlayan artırdık.
+* Gelişmiş özellikler için VSIX biçimi. Üzerinde teslim etmek için bir [low Impact yükleme](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) yan yana yüklemeleri de destekleyen Visual Studio, biz artık çoğu yapılandırma verileri, sistem kayıt defterine kaydetmek ve Visual Studio özel derlemeler GAC dışına taşındı. Biz de VSIX yükleme altyapısı ve VSIX biçimi yeteneklerini bazı yükleme türleri, uzantıları yüklemek için bunun yerine bir MSI veya EXE kullanmanıza olanak sağlayan artırdık.
 
   Yeni özellikler şunları içerir:
 

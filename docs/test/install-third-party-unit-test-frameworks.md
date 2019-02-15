@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b4dd4e347d6a8c96cef9ce9028071214200682c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916173"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316151"
 ---
 # <a name="install-unit-test-frameworks"></a>Birim testi çerçevelerini yükleme
 
@@ -58,7 +58,7 @@ Bir liste diğer test araçları ile birlikte çerçevesini göz atmak için:
 
 ## <a name="update-to-the-latest-test-adapters"></a>İçin en son test bağdaştırıcısı güncelleştirme
 
-Test bulma ve yürütme için daha iyi bir deneyim için en son kararlı test bağdaştırıcısı güncelleştirme. MSTest, NUnit ve xUnit test bağdaştırıcısı güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Visual Studio blogu](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+Test bulma ve yürütme için daha iyi bir deneyim için en son kararlı test bağdaştırıcısı güncelleştirme. MSTest, NUnit ve xUnit test bağdaştırıcısı güncelleştirmeleri hakkında daha fazla bilgi için bkz. [Visual Studio blogu](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/).
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>En son kararlı test bağdaştırıcısı sürümüne güncelleştirmek için
 

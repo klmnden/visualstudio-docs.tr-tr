@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b29907488ba276f3deb18e10cf47a0205501e1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 470212f3b6dc4151b793dcd62b9ff1d39fc2e55b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982890"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316229"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da C# veya Visual Basic projesi
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın, projenizi Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve ardından uygulamanızı çalıştırın.
@@ -98,7 +98,7 @@ Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulama
 
      WPF uygulamanın ana pencere uzak bilgisayarda açık olduğunu görmeniz gerekir.
   
-14. Gerekirse, kesme noktasına isabet için gerekeni yapın. Kesme noktası etkin olduğunu görmeniz gerekir. Aksi takdirde, uygulama için semboller henüz. Yeniden deneyin ve bu işe yaramazsa, sembolleri yükleme hakkında bilgi edinin ve onları ilgili sorunları nasıl [sembol dosyalarını anlama ve Visual Studio'nun sembol ayarları](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+14. Gerekirse, kesme noktasına isabet için gerekeni yapın. Kesme noktası etkin olduğunu görmeniz gerekir. Aksi takdirde, uygulama için semboller henüz. Yeniden deneyin ve bu işe yaramazsa, sembolleri yükleme hakkında bilgi edinin ve onları ilgili sorunları nasıl [sembol dosyalarını anlama ve Visual Studio'nun sembol ayarları](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. Visual Studio makinede yürütme kesme noktasında durduruldu görmeniz gerekir.
   

@@ -12,60 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d8dfc8e032eecc854a0572c8a7bd14b0c551df7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028648"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316073"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Bir kesme noktası ilişkisiz nedeni sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
-};  
-typedef DWORD BP_UNBOUND_REASON;  
-```  
-  
-```csharp  
-public enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- BPUR_UNKNOWN  
- Bunun nedeni bilinmiyor.  
-  
- BPUR_CODE_UNLOADED  
- Kesme noktasını içeren kod kaldırıldı.  
-  
- BPUR_BREAKPOINT_REBIND  
- Farklı bir konuma kesme noktası yansıdı. Bu düzenlemeden sonra gerçekleşir ve kesme noktası hareket ettiğinde veya artık geçerli olmayan bir yola sahip bir dosya kesme noktasına bağlandığında işlemler devam edebilirsiniz.  
-  
- BPUR_ BREAKPOINT_ERROR  
- Kesme noktasına bağlı sonra hata olarak değerlendirilir. Bu, koşullar artık geçerli olmayan yönetilen kesme noktaları için gerçekleşir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tarafından döndürülen [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) yöntemi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+Bir kesme noktası ilişkisiz nedeni sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_BP_UNBOUND_REASON {
+    BPUR_UNKNOWN           = 0x0000,
+    BPUR_CODE_UNLOADED     = 0x0002,
+    BPUR_BREAKPOINT_REBIND = 0x0003,
+    BPUR_BREAKPOINT_ERROR  = 0x0004
+};
+typedef DWORD BP_UNBOUND_REASON;
+```
+
+```csharp
+public enum enum_BP_UNBOUND_REASON {
+    BPUR_UNKNOWN           = 0x0000,
+    BPUR_CODE_UNLOADED     = 0x0002,
+    BPUR_BREAKPOINT_REBIND = 0x0003,
+    BPUR_BREAKPOINT_ERROR  = 0x0004
+};
+```
+
+## <a name="members"></a>Üyeler
+BPUR_UNKNOWN  
+Bunun nedeni bilinmiyor.
+
+BPUR_CODE_UNLOADED  
+Kesme noktasını içeren kod kaldırıldı.
+
+BPUR_BREAKPOINT_REBIND  
+Farklı bir konuma kesme noktası yansıdı. Bu düzenlemeden sonra gerçekleşir ve kesme noktası hareket ettiğinde veya artık geçerli olmayan bir yola sahip bir dosya kesme noktasına bağlandığında işlemler devam edebilirsiniz.
+
+BPUR_ BREAKPOINT_ERROR  
+Kesme noktasına bağlı sonra hata olarak değerlendirilir. Bu, koşullar artık geçerli olmayan yönetilen kesme noktaları için gerçekleşir.
+
+## <a name="remarks"></a>Açıklamalar
+Tarafından döndürülen [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) yöntemi.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

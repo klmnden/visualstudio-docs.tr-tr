@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008718"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316894"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama (C#, Visual Basic)
 
@@ -216,7 +216,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
     - [Bu diğer tüm olayları ve IntelliTrace günlüğünde bilgi nedir?](../debugger/using-saved-intellitrace-data.md)
     - [Buradan başka ne yapabilirim?](#WhatElse)
-    - [Performans olayları hakkında daha fazla bilgi istiyor?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [Performans olayları hakkında daha fazla bilgi istiyor?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Bir özel durumu tanıla
 

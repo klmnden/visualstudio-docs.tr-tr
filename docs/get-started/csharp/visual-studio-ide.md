@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4bc87c717125e23c1312fa403a90452ba0dd3e6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227845"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317230"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE Hoş Geldiniz |C#
 
@@ -291,4 +291,4 @@ Bu tanıtıcı makaleler biriyle boyunca izleyerek daha fazla Visual Studio'ı k
 
 - Bulma [daha fazla Visual Studio özellikleri](../../ide/advanced-feature-overview.md)
 - Ziyaret [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Okuma [Visual Studio blogu](https://blogs.msdn.microsoft.com/visualstudio/)
+- Okuma [Visual Studio blogu](https://devblogs.microsoft.com/visualstudio/)

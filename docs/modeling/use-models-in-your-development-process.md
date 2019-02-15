@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f528f650f51d2d0db2aed2b40dcc6442d3b74b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950467"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315813"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 
@@ -133,7 +133,7 @@ Farklı türlerdeki diyagram, farklı düzeylerde soyutlama tasarım açıklamak
 |-|-|
 |**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım videolar: Oluşturma ve UML modellerini ve diyagramları (Visual Studio 2010 Ultimate) kullanın](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 ile UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: UML araçları ve genişletilebilirlik (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Forumları**|- [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Bloglar**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Bloglar**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Mimari Araç Kullanımı Kılavuzu](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970380"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316762"
 ---
 # <a name="validate-your-system-during-development"></a>Geliştirme sırasında sisteminizi doğrulama
 Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile tutarlı korunmasına yardımcı olabilirsiniz.
@@ -35,7 +35,7 @@ Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile
 |-|-|
 |**Videolar**|![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Doug yedi: Kod anlama ve Visual Studio 2010 ile sistem tasarımı](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [Channel 9: Bir bağımlılık diyagramı kullanarak uygulama mimarileri oluşturma](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![video bağlantı](../data-tools/media/playvideo.gif) [MSDN nasıl yaparım serisi: Bağımlılık diyagramları kullanarak kod doğrulama](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Forumları**|-   [Visual Studio Görselleştirme ve Modelleme Araçları](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Görselleştirme ve modelleme SDK'sını (DSL araçları)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Bloglar**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Bloglar**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Ayrıca bkz.

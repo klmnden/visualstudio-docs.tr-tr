@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcb1dbd003dca3139d9370460805b03f03647f43
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923785"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318463"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent'ı kullanarak (C#, Visual Basic)
 
@@ -296,7 +296,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 ### <a name="q-where-can-i-get-more-information"></a>S: Daha fazla bilgiyi nereden bulabilirim?  
   
 #### <a name="blogs"></a>Bloglar  
- [Microsoft İzleme Aracısı ile tanışın](https://blogs.msdn.microsoft.com/devops/2013/09/20/introducing-microsoft-monitoring-agent/)  
+ [Microsoft İzleme Aracısı ile tanışın](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent/)  
   
  [Üretim sunucularında IntelliTrace koleksiyonu en iyileştirme](http://go.microsoft.com/fwlink/?LinkId=255233)  
   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965698"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318803"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -89,9 +89,9 @@ textDocument/yeniden adlandırma | evet
 ## <a name="getting-started"></a>Başlarken
 
 > [!NOTE]
-> Visual Studio 15,8 Preview 3, ortak dil sunucusu protokolü için desteği ile başlayarak, Visual Studio'da yerleşiktir.  LSP uzantıları önizlememiz kullanarak derlediyseniz, [dil sunucusu istemci VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) sürümü, bunlar için 15,8 Preview 3 veya daha yüksek yükselttikten sonra çalışmayı durdurur.  Yeniden çalışma LSP uzantılarınızı almak için aşağıdakileri yapmanız gerekir:
+> Visual Studio 15,8 Preview 3, ortak dil sunucusu protokolü için desteği ile başlayarak, Visual Studio'da yerleşiktir. LSP uzantıları önizlememiz kullanarak derlediyseniz, [dil sunucusu istemci VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) sürümü, bunlar için 15,8 Preview 3 veya daha yüksek yükselttikten sonra çalışmayı durdurur. Yeniden çalışma LSP uzantılarınızı almak için aşağıdakileri yapmanız gerekir:
 >
-> 1. Microsoft Visual Studio dil sunucusu protokolü Önizleme VSIX kaldırın.  15,8 Preview 4 ile başlayarak, Visual Studio'da bir yükseltme gerçekleştirmek için her seferinde sizi otomatik olarak algılar ve önizleme VSIX için yükseltme işlemi sırasında kaldırın.
+> 1. Microsoft Visual Studio dil sunucusu protokolü Önizleme VSIX kaldırın. 15,8 Preview 4 ile başlayarak, Visual Studio'da bir yükseltme gerçekleştirmek için her seferinde sizi otomatik olarak algılar ve önizleme VSIX için yükseltme işlemi sırasında kaldırın.
 >
 > 2. En yeni önizleme olmayan sürümüne yönelik Nuget başvurunuz güncelleştirme [LSP paketleri](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
@@ -129,10 +129,10 @@ LSP diller için metin renklendirmesi nasıl belirtimi içermez. Uzantı gelişt
 
 4. Oluşturma bir *.pkgdef* dosya ve şuna benzer bir satır ekleyin:
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. Sağ tıklatın ve dosyaları **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
 
@@ -292,31 +292,31 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
 
 1. Bir JSON dosyası ekleyin (örneğin, *MockLanguageExtensionSettings.json*) projenizdeki ayarları ve kendi varsayılan değerlerini içerir. Örneğin:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. JSON dosya sağ tıklayıp **özellikleri**. Değişiklik **derleme** eylem "İçerik" ve "VSIX Ekle ' özelliğini true.
 
 3. Uygulama ConfigurationSections ve JSON dosyasında tanımlanan ayarlara yönelik önekleri listesini döndürür (Visual Studio kodu, bu eşleme Package.json'da yapılandırma bölümü adı):
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. .Pkgdef dosyası projeye ekleyin (yeni metin dosyası ekleyin ve .pkgdef için dosya uzantısı değiştirme). Pkgdef bu dosya, bu bilgileri içermelidir:
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     Örnek:
     ```xml
@@ -340,13 +340,13 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
 2. Kullanıcı bir dosyayı ekler *.vs* adlı bir klasör *VSWorkspaceSettings.json*.
 3. Kullanıcı için bir satır ekler *VSWorkspaceSettings.json* dosyası için bir ayar sunucu sağlar. Örneğin:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
-   Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir.  Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
+    Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir. Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
 
 4. Çalışma ayarları dosyasını oluşturun veya açın *VSWorkspaceSettings.json* ("Kullanıcı, bir çalışma alanı ayarlarını düzenleme" bakın).
 5. Ayarları json dosyasında aşağıdaki satırı ekleyin:
@@ -362,7 +362,7 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
 * "İleti": izleme açık ancak tek yöntem adı ve yanıt kimliği izlenen.
 * "Ayrıntılı": açık; izleme Tüm rpc message izlenen.
 
-İzleme içeriği ne zaman etkin bir dosyaya yazılır *%temp%\VisualStudio\LSP* dizin.  Günlük aşağıdaki adlandırma biçimine *[LanguageClientName]-[Datetime damga] .log*.  Şu anda yalnızca izleme klasörünü aç senaryoları için etkinleştirilebilir.  Bir dil Sunucusu'nu etkinleştirmek için tek bir dosyayı açma Tanılama izleme desteği yok.
+İzleme içeriği ne zaman etkin bir dosyaya yazılır *%temp%\VisualStudio\LSP* dizin. Günlük aşağıdaki adlandırma biçimine *[LanguageClientName]-[Datetime damga] .log*. Şu anda yalnızca izleme klasörünü aç senaryoları için etkinleştirilebilir. Bir dil Sunucusu'nu etkinleştirmek için tek bir dosyayı açma Tanılama izleme desteği yok.
 
 ### <a name="custom-messages"></a>Özel iletiler
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ Visual Studio'da LSP istemcisi API'sini kullanarak bir örnek uzantısı kaynak 
 
 **Visual Studio'da daha zengin bir özellik desteği sağlamak için LSP dil sunucumu desteklemek için özel Proje sistemi oluşturmak istiyorum nasıl ederim, bunu?**
 
-Visual Studio'da dil LSP tabanlı sunucular için destek dayanır [Klasör Aç özelliği](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) ve özel Proje sistemi gerektirmeyecek şekilde özel olarak tasarlanmıştır. Yönergeleri izleyerek kendi özel Proje sistemi oluşturabileceğinizi [burada](https://github.com/Microsoft/VSProjectSystem), ancak ayarları gibi bazı özellikler çalışmayabilir. Varsayılan başlatma mantığı LSP dil sunucuları için özel Proje sistemi kullanıyorsanız, dil server kullanabilirsiniz emin olmak için başlatma sırasında özel mantığı sağlayabilirsiniz gerekebilir için şu anda açılan klasörünün kök klasör konumunu geçirmektir düzgün bir şekilde başlatın.
+Visual Studio'da dil LSP tabanlı sunucular için destek dayanır [Klasör Aç özelliği](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) ve özel Proje sistemi gerektirmeyecek şekilde özel olarak tasarlanmıştır. Yönergeleri izleyerek kendi özel Proje sistemi oluşturabileceğinizi [burada](https://github.com/Microsoft/VSProjectSystem), ancak ayarları gibi bazı özellikler çalışmayabilir. Varsayılan başlatma mantığı LSP dil sunucuları için özel Proje sistemi kullanıyorsanız, dil server kullanabilirsiniz emin olmak için başlatma sırasında özel mantığı sağlayabilirsiniz gerekebilir için şu anda açılan klasörünün kök klasör konumunu geçirmektir düzgün bir şekilde başlatın.
 
 **Hata ayıklayıcı desteği nasıl ekleyebilirim?**
 

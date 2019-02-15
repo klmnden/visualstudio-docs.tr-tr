@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 666f0df2e0b210b41155a5c1cd082e969d029e4e
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155857"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316619"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE Hoş Geldiniz | Python
 
@@ -134,4 +134,4 @@ Aşağıdaki hızlı başlangıçlarını veya öğreticilerini birini izleyerek
 
 - Bulma [daha fazla Visual Studio özellikleri](../ide/advanced-feature-overview.md)
 - Ziyaret [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Okuma [Visual Studio blogu](https://blogs.msdn.microsoft.com/visualstudio/)
+- Okuma [Visual Studio blogu](https://devblogs.microsoft.com/visualstudio/)

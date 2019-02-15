@@ -12,51 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f05949dd275a7f1566b8cec3a49903249e3de1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79502e4a7a42a4c83957c0ef6b470fa9753db6fd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037206"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317464"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
-Dize dizisi açıklar yapısı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typedef struct tagBSTR_ARRAY {  
-   DWORD dwCount;  
-   BSTR* Members;  
-} BSTR_ARRAY;  
-```  
-  
-```csharp  
-struct BSTR_ARRAY {  
-   DWORD    dwCount;  
-   string[] Members;  
-}  
-```  
-  
-## <a name="terms"></a>Koşulları  
- dwCount  
- Sayı dizeleri `Members` dizisi.  
-  
- Üyeler  
- Dize dizisi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yapı döndürüldüğü [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) yöntemi.  
-  
- [Yalnızca C++] Her bir dizenin kullanarak boşaltılması `SysFreeString`ve `Members` dizi serbest, ile `CoTaskMemFree`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar ve birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+Dize dizisi açıklar yapısı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typedef struct tagBSTR_ARRAY {
+    DWORD dwCount;
+    BSTR* Members;
+} BSTR_ARRAY;
+```
+
+```csharp
+struct BSTR_ARRAY {
+    DWORD    dwCount;
+    string[] Members;
+}
+```
+
+## <a name="terms"></a>Koşulları
+dwCount  
+Sayı dizeleri `Members` dizisi.
+
+Üyeler  
+Dize dizisi.
+
+## <a name="remarks"></a>Açıklamalar
+Bu yapı döndürüldüğü [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) yöntemi.
+
+[Yalnızca C++] Her bir dizenin kullanarak boşaltılması `SysFreeString`ve `Members` dizi serbest, ile `CoTaskMemFree`.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

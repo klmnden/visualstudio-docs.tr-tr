@@ -12,77 +12,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 712876c38996b0e9b5f0b65cf0b0269d43b15907
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da34a7b5e2c111f7e9385d729f6c3739d1ada285
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028444"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317537"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Bir bellek bağlamı hakkında almak için hangi bilgilerin belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_CONTEXT_INFO_FIELDS {   
-   CIF_MODULEURL =       0x00000001,  
-   CIF_FUNCTION =        0x00000002,  
-   CIF_FUNCTIONOFFSET =  0x00000004,  
-   CIF_ADDRESS =         0x00000008,  
-   CIF_ADDRESSOFFSET =   0x00000010,  
-   CIF_ADDRESSABSOLUTE = 0x00000020,  
-   CIF_ALLFIELDS =       0x0000003f  
-};  
-typedef DWORD CONTEXT_INFO_FIELDS;  
-```  
-  
-```csharp  
-public enum enum_CONTEXT_INFO_FIELDS {  
-   CIF_MODULEURL =       0x00000001,  
-   CIF_FUNCTION =        0x00000002,  
-   CIF_FUNCTIONOFFSET =  0x00000004,  
-   CIF_ADDRESS =         0x00000008,  
-   CIF_ADDRESSOFFSET =   0x00000010,  
-   CIF_ADDRESSABSOLUTE = 0x00000020,  
-   CIF_ALLFIELDS =       0x0000003f  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- CIF_MODULEURL  
- Başlat/kullanım `bstrModuleUrl` alanını [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) yapısı.  
-  
- CIF_FUNCTION  
- Başlat/kullanım `bstrFunction` alanını `CONTEXT_INFO` yapısı.  
-  
- CIF_FUNCTIONOFFSET  
- Başlat/kullanım `posFunctionOffset` alanını `CONTEXT_INFO` yapısı.  
-  
- CIF_ADDRESS  
- Başlat/kullanım `bstrAddress` alanını `CONTEXT_INFO` yapısı.  
-  
- CIF_ADDRESSOFFSET  
- Başlat/kullanım `bstrAddressOffset` alanını `CONTEXT_INFO` yapısı.  
-  
- CIF_ALLFIELDS  
- Başlat/tüm alanları kullanmak `CONTEXT_INFO` yapısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu değerleri bir parametresine geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) hangi alanları göstermek için yöntemi [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) yapısı olan başlatılacak.  
-  
- Bu bayraklar Ayrıca hangi alanları göstermek için kullanılan `CONTEXT_INFO` yapısı, kullanılan ve geçerli yapısı döndürülür.  
-  
- Bu değerleri bir bit düzeyinde OR ile birleştirilebilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   
- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+Bir bellek bağlamı hakkında almak için hangi bilgilerin belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_CONTEXT_INFO_FIELDS {
+    CIF_MODULEURL =       0x00000001,
+    CIF_FUNCTION =        0x00000002,
+    CIF_FUNCTIONOFFSET =  0x00000004,
+    CIF_ADDRESS =         0x00000008,
+    CIF_ADDRESSOFFSET =   0x00000010,
+    CIF_ADDRESSABSOLUTE = 0x00000020,
+    CIF_ALLFIELDS =       0x0000003f
+};
+typedef DWORD CONTEXT_INFO_FIELDS;
+```
+
+```csharp
+public enum enum_CONTEXT_INFO_FIELDS {
+    CIF_MODULEURL =       0x00000001,
+    CIF_FUNCTION =        0x00000002,
+    CIF_FUNCTIONOFFSET =  0x00000004,
+    CIF_ADDRESS =         0x00000008,
+    CIF_ADDRESSOFFSET =   0x00000010,
+    CIF_ADDRESSABSOLUTE = 0x00000020,
+    CIF_ALLFIELDS =       0x0000003f
+};
+```
+
+## <a name="members"></a>Üyeler
+CIF_MODULEURL  
+Başlat/kullanım `bstrModuleUrl` alanını [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) yapısı.
+
+CIF_FUNCTION  
+Başlat/kullanım `bstrFunction` alanını `CONTEXT_INFO` yapısı.
+
+CIF_FUNCTIONOFFSET  
+Başlat/kullanım `posFunctionOffset` alanını `CONTEXT_INFO` yapısı.
+
+CIF_ADDRESS  
+Başlat/kullanım `bstrAddress` alanını `CONTEXT_INFO` yapısı.
+
+CIF_ADDRESSOFFSET  
+Başlat/kullanım `bstrAddressOffset` alanını `CONTEXT_INFO` yapısı.
+
+CIF_ALLFIELDS  
+Başlat/tüm alanları kullanmak `CONTEXT_INFO` yapısı.
+
+## <a name="remarks"></a>Açıklamalar
+Bu değerleri bir parametresine geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) hangi alanları göstermek için yöntemi [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) yapısı olan başlatılacak.
+
+Bu bayraklar Ayrıca hangi alanları göstermek için kullanılan `CONTEXT_INFO` yapısı, kullanılan ve geçerli yapısı döndürülür.
+
+Bu değerleri bir bit düzeyinde OR ile birleştirilebilir.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
+[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

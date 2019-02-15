@@ -12,12 +12,12 @@ helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: d1134a0b757423c8196ae40f49fe5251e6de84f2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270634"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317997"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -188,6 +188,7 @@ Aşağıdaki tabloda, Visual Studio 2019 Preview için tarih derleme numaraları
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [Visual Studio yayın ritmi](/visualstudio/productinfo/release-rhythm)
 * [Visual Studio 2017 Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)

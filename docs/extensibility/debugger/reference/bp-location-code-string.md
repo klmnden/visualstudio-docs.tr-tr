@@ -12,42 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fedefecdc59c7daf8dd1aa1b2ab015a5071ea25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0650c7b3c2961531b64539887a1c4c68ac2bc819
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000227"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316216"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-Tümleşik geliştirme ortamından (IDE) kullanıcının girebileceği bir dizesini kod kesme noktaları ayarlamak için kullanılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typedef struct _BP_LOCATION_CODE_STRING {   
-   BSTR bstrContext;  
-   BSTR bstrCodeExpr;  
-} BP_LOCATION_CODE_STRING;  
-```  
-  
-## <a name="members"></a>Üyeler  
- `bstrContext`  
- Kod içinde kesme, genellikle bir yöntem veya işlev adı olarak görülen bir çağrı yığınında bağlamı.  
-  
- `bstrCodeExpr`  
- Kodu kesme noktası tanımlamak için kullanıcının yazdığı bir dize.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yapı üyesidir [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) yapısı bir birleşimin parçası olarak.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar ve birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+Tümleşik geliştirme ortamından (IDE) kullanıcının girebileceği bir dizesini kod kesme noktaları ayarlamak için kullanılır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typedef struct _BP_LOCATION_CODE_STRING {
+    BSTR bstrContext;
+    BSTR bstrCodeExpr;
+} BP_LOCATION_CODE_STRING;
+```
+
+## <a name="members"></a>Üyeler
+`bstrContext`  
+Kod içinde kesme, genellikle bir yöntem veya işlev adı olarak görülen bir çağrı yığınında bağlamı.
+
+`bstrCodeExpr`  
+Kodu kesme noktası tanımlamak için kullanıcının yazdığı bir dize.
+
+## <a name="remarks"></a>Açıklamalar
+Bu yapı üyesidir [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) yapısı bir birleşimin parçası olarak.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

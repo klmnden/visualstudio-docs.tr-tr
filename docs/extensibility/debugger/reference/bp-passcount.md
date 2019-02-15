@@ -12,54 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1586e9bd8f0a33eb0b11370e81d283381e91866
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d51e0fc895c104c1a18ef079c6784384e4cedbb4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920463"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316697"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
-Bağlı bir koşullu kesme noktası tetiklendiğinde sayısı ve koşullar açıklanmaktadır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typedef struct _BP_PASSCOUNT {   
-   DWORD              dwPassCount;  
-   BP_PASSCOUNT_STYLE stylePassCount;  
-} BP_PASSCOUNT;  
-```  
-  
-```csharp  
-public struct BP_PASSCOUNT {   
-   public uint dwPassCount;  
-   public uint stylePassCount;  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- `dwPassCount`  
- Kaç kez tetiklemeden önce üzerinde bir kesme noktası geçirilecek.  
-  
- `stylePassCount`  
- Bir değer [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) kesme noktası stilini belirten sabit listesi sayısı geçirin.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yapı üyesidir [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) yapısı.  
-  
- Bu yapı ayrıca bir parametre olarak geçirilen[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) ve[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) yöntemleri.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar ve birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
- [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
- [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)
+Bağlı bir koşullu kesme noktası tetiklendiğinde sayısı ve koşullar açıklanmaktadır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typedef struct _BP_PASSCOUNT {
+    DWORD              dwPassCount;
+    BP_PASSCOUNT_STYLE stylePassCount;
+} BP_PASSCOUNT;
+```
+
+```csharp
+public struct BP_PASSCOUNT {
+    public uint dwPassCount;
+    public uint stylePassCount;
+};
+```
+
+## <a name="members"></a>Üyeler
+`dwPassCount`  
+Kaç kez tetiklemeden önce üzerinde bir kesme noktası geçirilecek.
+
+`stylePassCount`  
+Bir değer [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) kesme noktası stilini belirten sabit listesi sayısı geçirin.
+
+## <a name="remarks"></a>Açıklamalar
+Bu yapı üyesidir [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) yapısı.
+
+Bu yapı ayrıca bir parametre olarak geçirilen[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) ve[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) yöntemleri.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
+[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)  
+[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)  
+[BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)

@@ -19,17 +19,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932098"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318634"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
 
 > [!TIP]
-> Visual Studio için en yeni erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz. [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
+> Visual Studio için en yeni erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz. [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
 
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki konular, özellikler, ürünler ve Microsoft Windows engelli kişiler için daha erişilebilir hale getiren hizmetleri hakkında bilgi sağlar:
 

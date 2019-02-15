@@ -12,80 +12,80 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9fa97cf2a7280b8a2c965a4c01494fbd04b0be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008835"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317087"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Bir komutun görünümünü değiştirme
-Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılabilir olmadığında farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz hale, gizleme veya bunları gösterebilir veya denetleyin veya menüde seçeneğinin işaretini kaldırın.  
-  
- Bir komutun görünümünü değiştirmek için aşağıdaki eylemlerden birini gerçekleştirin:  
-  
-- Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.  
-  
-- Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.  
-  
-- Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.  
-  
-  Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.  
-  
-### <a name="to-change-the-appearance-of-a-menu-command"></a>Bir menü komutu görünümünü değiştirmek için  
-  
-1.  Bölümündeki yönergeleri [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md) adlı menü öğesi oluşturmak için `New Text`.  
-  
-2.  İçinde *ChangeMenuText.cs* dosyasında, aşağıdaki using deyimi:  
-  
-    ```csharp  
-    using System.Security.Permissions;  
-    ```  
-  
-3.  İçinde *ChangeMenuTextPackageGuids.cs* dosyasında, aşağıdaki satırı ekleyin:  
-  
-    ```csharp  
-    public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
-    ```  
-  
-4.  İçinde *ChangeMenuText.cs* dosya, ShowMessageBox yöntemindeki kodu aşağıdakiyle değiştirin:  
-  
-    ```csharp  
-    private void ShowMessageBox(object sender, EventArgs e)  
-    {  
-        var command = sender as OleMenuCommand;  
-        if (command.Text == "New Text")  
+Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılabilir olmadığında farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz hale, gizleme veya bunları gösterebilir veya denetleyin veya menüde seçeneğinin işaretini kaldırın.
+
+Bir komutun görünümünü değiştirmek için aşağıdaki eylemlerden birini gerçekleştirin:
+
+- Uygun bayrakları komut tablosu dosyasındaki komut tanımı belirtin.
+
+- Kullanım <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> hizmeti.
+
+- Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve ham komut nesneleri değiştirebilirsiniz.
+
+  Aşağıdaki adımlarda, bulmak ve yönetilen paket Framework (MPF) kullanarak bir komutun görünümünü güncelleştirmek gösterilmektedir.
+
+### <a name="to-change-the-appearance-of-a-menu-command"></a>Bir menü komutu görünümünü değiştirmek için
+
+1. Bölümündeki yönergeleri [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md) adlı menü öğesi oluşturmak için `New Text`.
+
+2. İçinde *ChangeMenuText.cs* dosyasında, aşağıdaki using deyimi:
+
+    ```csharp
+    using System.Security.Permissions;
+    ```
+
+3. İçinde *ChangeMenuTextPackageGuids.cs* dosyasında, aşağıdaki satırı ekleyin:
+
+    ```csharp
+    public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
+    ```
+
+4. İçinde *ChangeMenuText.cs* dosya, ShowMessageBox yöntemindeki kodu aşağıdakiyle değiştirin:
+
+    ```csharp
+    private void ShowMessageBox(object sender, EventArgs e)
+    {
+        var command = sender as OleMenuCommand;
+        if (command.Text == "New Text")
             ChangeMyCommand(command.CommandID.ID, false);
-    }  
-    ```  
-  
-5.  Güncelleştir istediğiniz komut elde <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> nesnesi ve ardından uygun özellikleri komut nesnesi üzerinde ayarlayın. Örneğin, aşağıdaki yöntemi bir VSPackage komut belirtilen komuttan kullanılabilir veya kullanılamaz hale getirir. Aşağıdaki kod öğesi adlı menü yapar `New Text` bunu tıklatıldıktan sonra kullanılamaz.  
-  
-    ```csharp  
-    public bool ChangeMyCommand(int cmdID, bool enableCmd)  
-    {  
-        bool cmdUpdated = false;  
-        var mcs = this.ServiceProvider.GetService(typeof(IMenuCommandService))  
-            as OleMenuCommandService;  
-        var newCmdID = new CommandID(new Guid(ChangeMenuTextPackageGuids.guidChangeMenuTextPackageCmdSet), cmdID);  
-        MenuCommand mc = mcs.FindCommand(newCmdID);  
-        if (mc != null)  
-        {  
-            mc.Enabled = enableCmd;  
-            cmdUpdated = true;  
-        }  
+    }
+    ```
+
+5. Güncelleştir istediğiniz komut elde <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> nesnesi ve ardından uygun özellikleri komut nesnesi üzerinde ayarlayın. Örneğin, aşağıdaki yöntemi bir VSPackage komut belirtilen komuttan kullanılabilir veya kullanılamaz hale getirir. Aşağıdaki kod öğesi adlı menü yapar `New Text` bunu tıklatıldıktan sonra kullanılamaz.
+
+    ```csharp
+    public bool ChangeMyCommand(int cmdID, bool enableCmd)
+    {
+        bool cmdUpdated = false;
+        var mcs = this.ServiceProvider.GetService(typeof(IMenuCommandService))
+            as OleMenuCommandService;
+        var newCmdID = new CommandID(new Guid(ChangeMenuTextPackageGuids.guidChangeMenuTextPackageCmdSet), cmdID);
+        MenuCommand mc = mcs.FindCommand(newCmdID);
+        if (mc != null)
+        {
+            mc.Enabled = enableCmd;
+            cmdUpdated = true;
+        }
         return cmdUpdated;
-    }  
-    ```  
-  
-6.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.  
-  
-7.  Üzerinde **Araçları** menüsünde tıklatın **çağırma ChangeMenuText** komutu. Bu noktada komut addır **çağırma ChangeMenuText**, komut işleyicisi çağırma değil **ChangeMyCommand()**.  
-  
-8.  Üzerinde **Araçları** artık görmeniz menü **yeni metin**. Tıklayın **yeni metin**. Komutu şimdi gri.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   
- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Menüleri ve komutlari genişletme komutları](../extensibility/extending-menus-and-commands.md)   
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+    }
+    ```
+
+6. Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.
+
+7. Üzerinde **Araçları** menüsünde tıklatın **çağırma ChangeMenuText** komutu. Bu noktada komut addır **çağırma ChangeMenuText**, komut işleyicisi çağırma değil **ChangeMyCommand()**.
+
+8. Üzerinde **Araçları** artık görmeniz menü **yeni metin**. Tıklayın **yeni metin**. Komutu şimdi gri.
+
+## <a name="see-also"></a>Ayrıca bkz.
+[Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)  
+[VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+[Menüleri ve komutlari genişletme komutları](../extensibility/extending-menus-and-commands.md)  
+[Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918552"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314604"
 ---
 # <a name="help-content-manager-overrides"></a>Yardım İçerik Yöneticisi geçersiz kılmaları
 
-Yardım Görüntüleyici ve Yardım güvenlikle ilgili özellikler Visual Studio IDE içindeki varsayılan davranışını değiştirebilirsiniz. Bazı seçenekler oluşturarak belirtilen bir [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) çeşitli kayıt defteri anahtarı değerlerini ayarlamak için dosya. Diğer kayıt defterinde doğrudan ayarlanır.
+Yardım Görüntüleyici ve Yardım güvenlikle ilgili özellikler Visual Studio IDE içindeki varsayılan davranışını değiştirebilirsiniz. Bazı seçenekler oluşturarak belirtilen bir [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) çeşitli kayıt defteri anahtarı değerlerini ayarlamak için dosya. Diğer kayıt defterinde doğrudan ayarlanır.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>.Pkgdef dosyası kullanarak Yardım Görüntüleyici davranışını denetleme
 

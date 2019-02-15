@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957448"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317126"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl yapılır: Uzantılardan kaynaklanan kullanıcı arabirimi gecikmelerini tanılama
 
@@ -102,7 +102,7 @@ Ardından, izleme dosyasını açın. PerfView veya yeni bir örneğini başlata
 Sonra sol bölmede izleme dosyasını seçin ve seçerek açın **açın** sağ tıklayın veya bağlam menüsünde.
 
 > [!NOTE]
-> Varsayılan olarak, bir ZIP arşivi PerfView çıkarır. Açtığınızda *trace.zip*, otomatik olarak arşiv açar ve izlemeyi açar. Kaldırarak bunu atlayabilirsiniz **Zip** izleme toplama sırasında kutusu. Aktarım ve izlemeler farklı makineler arasında planlıyorsanız, ancak işaretini karşı öneririz **Zip** kutusu. Bu seçenek olmadan Ngen derlemeler için gerekli pdb izleme eşlik değil ve bu nedenle Ngen derlemelerden sembolleri hedef makine üzerinde çözümlenmeyecek. (Bkz [bu blog gönderisini](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) Ngen derlemeler için pdb hakkında daha fazla bilgi için.) 
+> Varsayılan olarak, bir ZIP arşivi PerfView çıkarır. Açtığınızda *trace.zip*, otomatik olarak arşiv açar ve izlemeyi açar. Kaldırarak bunu atlayabilirsiniz **Zip** izleme toplama sırasında kutusu. Aktarım ve izlemeler farklı makineler arasında planlıyorsanız, ancak işaretini karşı öneririz **Zip** kutusu. Bu seçenek olmadan Ngen derlemeler için gerekli pdb izleme eşlik değil ve bu nedenle Ngen derlemelerden sembolleri hedef makine üzerinde çözümlenmeyecek. (Bkz [bu blog gönderisini](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) Ngen derlemeler için pdb hakkında daha fazla bilgi için.) 
 
 Bu, PerfView işlemek ve izlemeyi açmak birkaç dakika sürebilir. İzleme açıldıktan sonra çeşitli "görünümler" listesi altında görünür.
 

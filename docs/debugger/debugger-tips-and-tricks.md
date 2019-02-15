@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016540"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318426"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -77,9 +77,9 @@ Hata ayıklayıcı pencereleri gibi kullanarak değişkenleri görmek daha kolay
 3. Değişkeninde Bul **Yereller** penceresi (**hata ayıklama > Windows > Yereller**), değişkeni sağ tıklatın ve seçin **nesne kimliği yap**.
 
     ![Bir nesne kimliği oluşturma](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu değişken nesne kimliğidir.
-  
+
 5.  Nesne Kimliği değişkeni sağ tıklatın ve seçin **Gözcü Ekle**.
 
 Daha fazla bilgi için [bir nesne kimliği oluşturma](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Tür birden çok iş parçacıklı uygulamalar için ortak olan sorunları hata 
 #### <a name="to-show-threads-in-your-source-code"></a>İş parçacığı kaynak kodunuzu göstermek için
 
 1.  Hata ayıklama sırasında tıklayın **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") içinde **hata ayıklama** araç çubuğu.
-  
+
 2.  Pencerenin sol tarafındaki cilt payını bakın. Bu satırda gördüğünüz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") , iki bez iş parçacığı benzer. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
 
     Bir iş parçacığı işaret kısmen bir kesme noktası tarafından altına gizlenmiş, dikkat edin.
-  
+
 3.  İşaretçi iş parçacığı işaret gelin. Bir DataTip görünür. DataTip durdurulmuş her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirtir.
 
     İş parçacıklarında konumunu da görüntüleyebilirsiniz [Paralel Yığınlar penceresini](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Hata ayıklayıcı kod kullanıcı kodu olarak sınıflandırır nasıl kullanı
 
 Ek ipuçları ve püf noktaları ve daha ayrıntılı bilgi için şu blog postalarına bakın:
 
-- [Visual Studio'da hata ayıklama için 7 daha az bilinen atölyelere](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [Visual Studio 7 gizli toprağa değerli taşlar](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [Visual Studio'da hata ayıklama için 7 daha az bilinen atölyelere](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [Visual Studio 7 gizli toprağa değerli taşlar](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 [Klavye Kısayolları](../ide/tips-and-tricks-for-visual-studio.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02a27775a84dab7d95571665b7fad96e223ec45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933684"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316008"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio tasarımındaki yenilikler
 
@@ -38,7 +38,7 @@ Yazma deneyiminde daha bulunabilir ve daha erişilebilir değiştirme "Katman di
 
 Değişikliklerinizi hemen geçerli çözümün kodunu analiz sonuçları etkisini diyagramda her kaydettiğinizde göreceksiniz. Artık "Bağımlılıkları doğrulamak" komutunun tamamlanmasını beklemek zorunda değilsiniz.
 
-Daha fazla ayrıntı için [bu blog gönderisini](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Daha fazla ayrıntı için [bu blog gönderisini](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>UML tasarımcılarına kaldırıldı
 
@@ -59,7 +59,7 @@ Ancak, .NET ve C++ kodu mimarisini görselleştirmek aracılığıyla kullanıla
 
 UML tasarımcılarına önemli bir kullanıcı varsa, UML ihtiyaçlarınız için alternatif bir aracı üzerinde karar sırada Visual Studio 2015 veya önceki sürümlerini kullanmaya devam edebilirsiniz.
 
-Daha fazla ayrıntı için [bu blog gönderisini](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Daha fazla ayrıntı için [bu blog gönderisini](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

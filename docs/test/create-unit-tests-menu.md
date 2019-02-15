@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955147"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315111"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Birim test yöntemini saptamalar ile birim testleri Oluştur komutu oluşturun.
 
@@ -60,11 +60,11 @@ Test framework uzantıları Visual Studio Marketi'nde mevcuttur:
 
 ## <a name="when-should-i-use-this-feature"></a>Bu özellik ne zaman kullanmalıyım?
 
-Bu özelliği kullanmak için birim testleri oluşturmak için ihtiyacınız olduğunda, ancak özellikle mevcut kodunuzu sınarken çok az kayıpla veya hiç test kapsamı ve hiçbir belge sahip. Diğer bir deyişle, burada sınırlı veya var olmayan kod belirtimi. Etkili bir şekilde benzer bir yaklaşım uygular [akıllı birim testleri](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) kod gözlemlenen davranışını özelleştirmek.
+Bu özelliği kullanmak için birim testleri oluşturmak için ihtiyacınız olduğunda, ancak özellikle mevcut kodunuzu sınarken çok az kayıpla veya hiç test kapsamı ve hiçbir belge sahip. Diğer bir deyişle, burada sınırlı veya var olmayan kod belirtimi. Etkili bir şekilde benzer bir yaklaşım uygular [akıllı birim testleri](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) kod gözlemlenen davranışını özelleştirmek.
 
 Ancak, bu özellik burada Geliştirici bazı kodlar yazarak başlar ve birim uzmanlık alanı testi bootstrap kullanan durumunuza eşit oranda geçerlidir. Kodlama, akış içinde Geliştirici hızlı bir şekilde bir birim test metodu saptaması (ile uygun test sınıfı ve uygun bir test projesi) için belirli bir kod parçasını oluşturmak isteyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Birim testi "Birim Testleri Oluştur ile" yöntemi saplamalar oluşturma](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [Birim testi blog gönderileri](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [Birim testi "Birim Testleri Oluştur ile" yöntemi saplamalar oluşturma](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Birim testi blog gönderileri](https://devblogs.microsoft.com/devops/?s=unit+testing)

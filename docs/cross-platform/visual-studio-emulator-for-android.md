@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb89368869835edc8e6138c5b21d5a8b3970758
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957227"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318738"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 
@@ -84,7 +84,7 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
  Hedeflemek istediğiniz profilleri kümesine yükledikten sonra bu yeni profiller doğrudan Manager'dan yeşil tuşlarına basarak başlatabilirsiniz **Play** düğmesi. Bunlar herhangi bir Visual Studio platformlar arası mobil proje türünü hata ayıklama hedef açılır menüde görünür.
 
 ##  <a name="FeaturesTest"></a> Öykünücüde test etme özellikleri
- Öykünücüde test özellikleri hakkında ayrıntılı bilgi için bkz. Bu [blog gönderisi](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).
+ Öykünücüde test özellikleri hakkında ayrıntılı bilgi için bkz. Bu [blog gönderisi](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).
 
 ##  <a name="FeaturesNonTest"></a> Öykünücüde test etme özellikleri
  Aşağıdaki listede Android platform özellikleri açıklar, **olamaz** öykünücüsünde test edin. Bu özellikler fiziksel bir cihaz üzerinde test gerekir.

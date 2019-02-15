@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935101"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318816"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -72,7 +72,7 @@ Size yol gösteren yönergeler dahil olmak üzere yeni yükleme deneyimi hakkın
 
 **15.3 yeni**, Visual Studio kullanan birden çok müşteriye yardımcı teknolojiler arasındaki uyumluluğu artırmak için 1700 hedeflenen düzeltmeleri yaptık. Daha önce hiç olmadığı kadar ekran okuyucuları, yüksek karşıtlıklı tema ve diğer yardımcı teknolojiler ile daha uyumlu olan senaryoları onlarca vardır. Hata ayıklayıcı, düzenleyici ve kabukta tüm gotten önemli geliştirmeler içerir.
 
-Daha fazla bilgi için [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
+Daha fazla bilgi için [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
 
 ## <a name="performance-and-productivity"></a>Performans ve üretkenlik
 
@@ -80,7 +80,7 @@ Daha fazla bilgi için [erişilebilirlik geliştirmeleri Visual Studio 2017 sür
 
 Biz, Visual Studio'da, kullanıcı hesaplarını Takım Gezgini, Azure Araçları, Microsoft Store yayımlama ve daha fazlası arasında paylaşmamıza olanak tanıyan yeni bir kimlik hizmetini kullanıma sunduk.
 
-Artık, çok oturum açmış durumda kalabilir. Visual Studio 12 saatte yeniden imzalamanız sormaz. Daha fazla bilgi için bkz. [daha az Visual Studio oturum açma ister](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) blog gönderisi.
+Artık, çok oturum açmış durumda kalabilir. Visual Studio 12 saatte yeniden imzalamanız sormaz. Daha fazla bilgi için bkz. [daha az Visual Studio oturum açma ister](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) blog gönderisi.
 
 ### <a name="start-visual-studio-faster"></a>Visual Studio daha hızlı başlayın
 
@@ -131,7 +131,7 @@ Otomatikleştirilmiş test, herhangi bir DevOps işlem hattına önemli bir par�
 
 Otomatikleştirilmiş testleri hakkında daha fazla bilgi için bkz: [DevOps otomatikleştirilmiş testler CI/CD işlem hattı](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blog gönderisi.
 
-Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) adlı DevLabs uzantısının bkz [güvenle işleyin: İşleme zamanı kod kalitesini](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
+Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) adlı DevLabs uzantısının bkz [güvenle işleyin: İşleme zamanı kod kalitesini](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE geliştirmeleri
 
@@ -188,7 +188,7 @@ Biz A B daha güvenle ve daha az dikkat dağıtıcı faktör almanıza yardımc�
 
   ![Visual Studio 2017 yapı Görselleştirici](media/vsIDE-StructureVisualizer.png)
 
-Yeni verimlilik özellikleri hakkında daha fazla bilgi için bkz: [üretkenlik Visual Studio 2017'de](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) blog gönderisi işareti Wilson-Thomas'tarafından.
+Yeni verimlilik özellikleri hakkında daha fazla bilgi için bkz: [üretkenlik Visual Studio 2017'de](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) blog gönderisi işareti Wilson-Thomas'tarafından.
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ Yeni özel durum Yardımcısı, özel durum bilgilerini bir bakışta görmenizi
 
 ![Visual Studio'da yeni bir özel durum Yardımcısı iletişim kutusu](media/vs2017ide-ExceptionHelper.png)
 
-Daha fazla bilgi için [Visual Studio'da yeni özel durum Yardımcısı'nı kullanın](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blog gönderisi.
+Daha fazla bilgi için [Visual Studio'da yeni özel durum Yardımcısı'nı kullanın](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) blog gönderisi.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Anlık görüntüler ve IntelliTrace geri adım atma
 
@@ -328,7 +328,7 @@ Tüm Visual Studio 2017 sürümlerine dahil:
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) Hızlı Bul SQL parçalarını ve nesnelerini birden fazla veritabanında yardımcı olarak üretkenliğinizi artırır.
 
-Daha fazla bilgi için bkz. [Redgate veri araçları, Visual Studio 2017'de](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) blog gönderisi.
+Daha fazla bilgi için bkz. [Redgate veri araçları, Visual Studio 2017'de](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/) blog gönderisi.
 
 ### <a name="net-core"></a>.NET Core
 
