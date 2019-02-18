@@ -56,11 +56,10 @@
 ## [Azure App Service’e yayımlama](publish-app-svc.md)
 ## [Klasöre Yayımlama](publish-folder.md)
 
-
 # [İş yükleri](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [Javascript](javascript.md)
+### [JavaScript ve TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Azure İşlevleri’ne Giriş](azure-functions.md)
 ### [Öğretici: Azure İşlevleri](azure-functions-lab.md)

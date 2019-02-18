@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296469"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335395"
 ---
 # <a name="refactoring"></a>Yeniden Düzenle
 
@@ -105,6 +106,10 @@ Metin Düzenleyicisi sağ tarafında kaydırma çubuğu görüntüleyerek herhan
 Üst daireye tıklayarak, her öneri yüksek öneme sahip sorunlar ilk gösteren yineleyebilirsiniz. Bir tek tek sonuç veya satır geldiğinizde bağlam eylemleri sabit sorunu görüntüler:
 
 ![Kaynak analizi öğesi](media/refactoring-image5.png)
+
+## <a name="related-video"></a>İlgili Video
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

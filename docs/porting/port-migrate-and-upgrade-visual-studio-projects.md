@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768838"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335550"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -34,7 +35,7 @@ Bazı proje türleri için destek de zaman içinde değişir. Visual Studio'nun 
 
 Mevcut bu makalede, Visual Studio 2017 geçirebileceğiniz proje türleri için Ayrıntılar sağlar. Bu makalede, Visual Studio 2017'de artık desteklenmemektedir ve bu nedenle geçirilemiyor proje türleri dışlar. Makale ayrıca hiçbir geçiş sorunları olan desteklenen proje türleri dışlar; Bu liste bulunur [Platform hedefleme ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Belirli proje türleri, uygun iş yükleri için Visual Studio yükleyicisi aracılığıyla yüklenmesi gerekir. İş yükü yüklenmiş yoksa, Visual Studio bir bilinmeyen veya uyumsuz proje türü bildirir. Bu durumda, yükleme seçeneklerinizi denetleyin ve yeniden deneyin. Yeniden bakın [Platform hedefleme ve Uyumluluk](/visualstudio/productinfo/vs2017-compatibility-vs) makale Visual Studio 2017'de proje desteği hakkında ayrıntılı bilgi için.
 
 ## <a name="project-types"></a>Proje türleri

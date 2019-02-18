@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl Yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824294"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335356"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl Yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
+
 Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref:Microsoft.VisualStudio.Shell.UIContext>s etkinleşir. Ancak, bu UI bağlamları sertifikalarıdır, hiçbir seçenek uzantı yazarları bırakan ince değildir ancak noktasından önce etkinleştirir kullanılabilir bir UI bağlamı seçmek için gerçekten yüklenecek VSPackage'ı istedikleri. İyi bilinen UI bağlamı bir listesi için bkz. <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
- Paketler yüklenirken bir performans etkisi olabilir ve gerekli olandan daha çabuk yüklenirken en iyi yöntem değildir. Visual Studio 2015, kural tabanlı UI bağlamı, altında çalışacağı bir UI bağlamı etkinleştirildi ve ilişkili VSPackages yüklenen kesin koşulları tanımlamak uzantı yazarları sağlayan bir mekanizma kavramını sundu.  
+Paketler yüklenirken bir performans etkisi olabilir ve gerekli olandan daha çabuk yüklenirken en iyi yöntem değildir. Visual Studio 2015, kural tabanlı UI bağlamı, altında çalışacağı bir UI bağlamı etkinleştirildi ve ilişkili VSPackages yüklenen kesin koşulları tanımlamak uzantı yazarları sağlayan bir mekanizma kavramını sundu.  
   
 ## <a name="rule-based-ui-context"></a>Kural tabanlı UI bağlamı  
- Bir "kural" Yeni kullanıcı Arabirimi bağlamında (GUID) oluşur ve bir veya daha fazla "Terms" başvuran bir Boole ifadesi mantıksal birlikte "ve", "veya", "not" işlemleri. "Terms" çalışma zamanında dinamik olarak değerlendirilir ve kendi koşulları değişiklikleri her ifade değerlendirilir. İfade doğru olarak değerlendirildiğinde, ilişkili UI bağlamı etkinleştirildi. Aksi takdirde kullanıcı Arabirimi de-activated bağlamıdır.  
+
+Bir "kural" Yeni kullanıcı Arabirimi bağlamında (GUID) oluşur ve bir veya daha fazla "Terms" başvuran bir Boole ifadesi mantıksal birlikte "ve", "veya", "not" işlemleri. "Terms" çalışma zamanında dinamik olarak değerlendirilir ve kendi koşulları değişiklikleri her ifade değerlendirilir. İfade doğru olarak değerlendirildiğinde, ilişkili UI bağlamı etkinleştirildi. Aksi takdirde kullanıcı Arabirimi de-activated bağlamıdır.  
   
- Kural tabanlı UI bağlamı çeşitli şekillerde kullanılabilir:  
+Kural tabanlı UI bağlamı çeşitli şekillerde kullanılabilir:  
   
 1. Görünürlük kısıtlamaları komutları ve araç pencerelerini belirtin. UI bağlamı kural karşılanana kadar bu komutları/tools windows gizleyebilirsiniz.  
   
@@ -124,7 +126,8 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref
 ```  
   
 ## <a name="term-types"></a>Terim türleri  
- Terim desteklenen çeşitli türleri şunlardır:  
+
+Terim desteklenen çeşitli türleri şunlardır:  
   
 |Terim|Açıklama|  
 |-|-|  
@@ -138,16 +141,15 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref
 |SolutionHasProjectCapability:\<ifadesi >|Yukarıdaki benzer; ancak terimi olduğunda true ifade ile eşleşen tüm yüklenen proje çözümü vardır.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Her bir çözüm (toplu) özellikli proje varsa ve GUID belirli proje türüyle eşleşen bir özellik terimi true olur.|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>Sürümler arası uzantısı ile uyumluluk  
- Kural tabanlı UI bağlamı, Visual Studio 2015'te yeni bir özelliktir ve önceki sürümleri için unity'nin değil. Önceki sürümlerine taşıma değil, Visual Studio'nun birden çok sürümünü hedefleyen uzantıları/paketleri ile ilgili bir sorun oluşturur. Bu sürümler, Visual Studio 2013'te otomatik olarak yüklenir ve önceki olabilir, ama otomatik-Visual Studio 2015'te yüklenmesini önlemek için kural tabanlı UI bağlamı yararlanabilir.  
+
+Kural tabanlı UI bağlamı, Visual Studio 2015'te yeni bir özelliktir ve önceki sürümleri için unity'nin değil. Önceki sürümlerine taşıma değil, Visual Studio'nun birden çok sürümünü hedefleyen uzantıları/paketleri ile ilgili bir sorun oluşturur. Bu sürümler, Visual Studio 2013'te otomatik olarak yüklenir ve önceki olabilir, ama otomatik-Visual Studio 2015'te yüklenmesini önlemek için kural tabanlı UI bağlamı yararlanabilir.  
   
- Gibi paketlerin desteklemek için AutoLoadPackages girişleri kayıt defterinde girişi Visual Studio 2015'te ve üstünde olarak atlanması gerektiğini belirtmek için değer alanında bir bayrak şimdi sağlayabilirsiniz. Bu bayrak seçeneğine ekleyerek yapılabilir <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. VSPackage artık ekleyebilirsiniz **SkipWhenUIContextRulesActive** seçeneğini kendi <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> giriş yoksayılan Visual Studio 2015'te ve yukarıdaki belirtmek için özniteliği.  
-  
+Gibi paketlerin desteklemek için AutoLoadPackages girişleri kayıt defterinde girişi Visual Studio 2015'te ve üstünde olarak atlanması gerektiğini belirtmek için değer alanında bir bayrak şimdi sağlayabilirsiniz. Bu bayrak seçeneğine ekleyerek yapılabilir <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. VSPackage artık ekleyebilirsiniz **SkipWhenUIContextRulesActive** seçeneğini kendi <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> giriş yoksayılan Visual Studio 2015'te ve yukarıdaki belirtmek için özniteliği.  
 ## <a name="extensible-ui-context-rules"></a>Genişletilebilir UI bağlamı kuralları  
- Bazı durumlarda, paketleri statik UI bağlamı kurallarını kullanamazsınız. Örneğin, komut durumu, içeri aktarılan MEF sağlayıcıları tarafından desteklenen Düzenleyicisi türlere göre olacak şekilde genişletilebilirlik destekleyen bir paket olduğunu varsayalım. Komut geçerli düzen türünü destekleyen bir uzantısı varsa etkindir. Böyle durumlarda koşullarına bağlı olarak hangi MEF uzantıların kullanılabilir olduğunu değiştirirsiniz olduğundan paket statik bir UI bağlamı kural kullanamazsınız.  
+
+Bazı durumlarda, paketleri statik UI bağlamı kurallarını kullanamazsınız. Örneğin, komut durumu, içeri aktarılan MEF sağlayıcıları tarafından desteklenen Düzenleyicisi türlere göre olacak şekilde genişletilebilirlik destekleyen bir paket olduğunu varsayalım. Komut geçerli düzen türünü destekleyen bir uzantısı varsa etkindir. Böyle durumlarda koşullarına bağlı olarak hangi MEF uzantıların kullanılabilir olduğunu değiştirirsiniz olduğundan paket statik bir UI bağlamı kural kullanamazsınız.  
   
- Kural tabanlı UI bağlamı gibi paketlerin desteklemek için bir sabit kodlanmış ifadesi destek "*", katılması ile tüm aşağıdaki koşulları gösterir veya. Bu bilinen bir kural tabanlı UI bağlamı tanımlamak ve bu bağlamda komut durumuna bağlamak ana paket sağlar. Daha sonra ana paket için hedeflenen herhangi bir MEF uzantısına şartlarının başka koşullar veya ana ifade etkilemeden destekler düzenleyiciler için ekleyebilirsiniz.  
+Kural tabanlı UI bağlamı gibi paketlerin desteklemek için bir sabit kodlanmış ifadesi destek "*", katılması ile tüm aşağıdaki koşulları gösterir veya. Bu bilinen bir kural tabanlı UI bağlamı tanımlamak ve bu bağlamda komut durumuna bağlamak ana paket sağlar. Daha sonra ana paket için hedeflenen herhangi bir MEF uzantısına şartlarının başka koşullar veya ana ifade etkilemeden destekler düzenleyiciler için ekleyebilirsiniz.  
   
- Oluşturucu <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> belgeleri Genişletilebilir UI bağlamı kuralları sözdizimi gösterilmektedir.
+Oluşturucu <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> belgeleri Genişletilebilir UI bağlamı kuralları sözdizimi gösterilmektedir.

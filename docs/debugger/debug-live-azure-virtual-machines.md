@@ -1,25 +1,26 @@
 ---
-title: Canlı ASP.NET Azure uygulamalarında hata ayıklama
+title: Hata ayıklama Canlı ASP.NET Azure sanal makineler ve Azure sanal makine ölçek kümeleri
 description: Anlık görüntü noktaları ayarlamak ve anlık görüntü hata ayıklayıcısı ile anlık görüntüleri görüntüleme hakkında bilgi edinin.
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335603"
+ms.locfileid: "56335963"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamalarında hata ayıklama
+# <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Azure sanal makinelerinde Canlı ASP.NET uygulamalarında hata ayıklamak ve Snapshot Debugger'ı kullanarak Azure sanal makine ölçek kümeleri
 
 Snapshot Debugger, ilgilendiğiniz kod yürütüldüğünde, üretim uygulamalarınızı anlık görüntüsünü alır. Bir anlık görüntüsünü almak için hata ayıklayıcı açmasını sağlamak için anlık görüntü noktaları ve günlüğe kaydetme noktaları kodunuzda ayarlayın. Hata ayıklayıcı, tam olarak üretim uygulamanızın trafiğini etkilemeden, çıktığına görmenizi sağlar. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
 
@@ -34,13 +35,11 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Anlık görüntü hata ayıklayıcısı, yalnızca Visual Studio 2017 Enterprise sürüm 15.5 veya üzerini içeren için kullanılabilir **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
+* Azure sanal makineler (VM) ve Azure sanal makine ölçek kümeleri (VMSS) için Snapshot Debugger, yalnızca Visual Studio 2019 Enterprise Önizleme veya üzeri ile **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
 
-    Henüz yüklü değilse, yükleme [Visual Studio 2017 Enterprise sürüm 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) veya üzeri. Önceki bir Visual Studio 2017 yükleme güncelleştiriyorsanız, Visual Studio Yükleyicisi'ni çalıştırın ve anlık görüntü hata ayıklayıcı bileşeni iade **ASP.NET ve web geliştirme iş yükü**.
+    Henüz yüklü değilse, yükleme [Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/).
 
-* Azure App Service planı temel veya daha yüksek.
-
-* Anlık görüntü koleksiyonunu, Azure App Service'te çalışan aşağıdaki web uygulamaları için kullanılabilir:
+* Anlık görüntü koleksiyonu, aşağıdaki Azure VM/VMSS web uygulamaları için kullanılabilir:
   * .NET Framework 4.6.1 üzerinde çalışan ASP.NET uygulamalarından veya üzeri.
   * .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
 
@@ -49,44 +48,37 @@ Bu öğreticide şunları yapacaksınız:
 1. Anlık görüntü hata ayıklama için istediğiniz projeyi açın.
 
     > [!IMPORTANT]
-    > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure App Service için yayımlanır.
-::: moniker range="< vs-2019"
+    > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure VM/VMSS hizmetinize yayımlanmış.
 
-2. Bulut Gezgini'nde (**Görüntüle > Cloud Explorer**), projeniz için dağıtıldığı Azure App Service'ı sağ tıklatın ve seçin **Snapshot Debugger Ekle**.
+1. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
 
-   ![Snapshot debugger'ı Başlat](../debugger/media/snapshot-launch.png)
-
-    Seçtiğiniz ilk kez **Snapshot Debugger Ekle**, Azure App Service üzerinde Snapshot Debugger site uzantısını yüklemeniz istenir. Bu yükleme, Azure App service'inizi yeniden başlatılması gerekir.
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
-
-    * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
+    * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
   
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
+    * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
     ![Snapshot debugger Yayımla sayfasından başlatın](../debugger/media/snapshot-publish-attach.png)
 
-    * Aşağı açılan menüyü seçin hata ayıklama hedef **Snapshot Debugger**, isabet **F5** ve gerekli projenizi dağıtıldığı Azure App Service ve Azure depolamayı seçerseniz hesap ve ardından  **Ekleme**.
+    * Aşağı açılan menüyü seçin hata ayıklama hedef **Snapshot Debugger**, isabet **F5** ve gerekirse, web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama seçeneğini belirlerseniz hesap ve ardından  **Ekleme**.
     ![F5 aşağı açılan menüden snapshot debugger'ı Başlat](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), projeniz için dağıtıldığı Azure App Service'ı sağ tıklatın ve bir Azure depolama hesabını seçin ve ardından **Snapshot Debugger Ekle**.
+    * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), web uygulamanızın dağıtıldığı hedef Azure VM/VMSS sağ tıklayın ve bir Azure depolama hesabını seçin ve ardından **Snapshot Debugger Ekle**.
   
       ![Anlık görüntü Hata Ayıklayıcı'dan Cloud Explorer başlatma](../debugger/media/snapshot-launch.png)
 
-    Seçtiğiniz ilk kez **Snapshot Debugger Ekle**, Azure App Service üzerinde Snapshot Debugger site uzantısını yüklemeniz istenir. Bu yükleme, Azure App service'inizi yeniden başlatılması gerekir.
-::: moniker-end
+    > [!IMPORTANT]
+    > Seçtiğiniz ilk kez **Snapshot Debugger Ekle** VM'niz için IIS otomatik olarak yeniden başlatılır.
+    > Seçtiğiniz ilk kez **Snapshot Debugger Ekle** , VMSS için VMSS her örneğinin el ile yükseltme gerektirir.
 
-   Visual Studio anlık hata ayıklama modu sunulmuştur.
+    Meta verileri **modülleri** başlangıçta etkinleştirilmeyecek, web uygulamasına gidin ve **toplamaya Başla** düğmesi etkin olacak. Visual Studio anlık hata ayıklama modu sunulmuştur.
 
-  > [!NOTE]
-  > Application Insights site uzantısı, anlık görüntü hata ayıklaması da destekler. Bir "site uzantısı güncel değil" hata iletisi ile karşılaşırsanız, bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
+    > [!NOTE]
+    > Application Insights site uzantısı, anlık görüntü hata ayıklaması da destekler. Bir "site uzantısı güncel değil" hata iletisi ile karşılaşırsanız, bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
+    > VMSS için Snapshot Debugger için ilk kez ekledikten sonra onların VMSS örnekleri el ile yükseltme kullanıcısı gereklidir.
 
    ![Anlık görüntü hata ayıklama modu](../debugger/media/snapshot-message.png)
 
-   **Modülleri** penceresi gösterir, tüm modülleri, Azure App Service için ne zaman yüklemiş olduğunuz (seçin **hata ayıklama > Windows > modülleri** bu pencereyi açmak için).
+   **Modülleri** penceresi gösterir, tüm modüller için Azure VM/VMSS zaman yüklediniz (seçin **hata ayıklama > Windows > modülleri** bu pencereyi açmak için).
 
    ![Modüller penceresini denetleyin](../debugger/media/snapshot-modules.png)
 
@@ -96,7 +88,7 @@ Bu öğreticide şunları yapacaksınız:
 
    ![Bir anlık görüntü noktası ayarlayın](../debugger/media/snapshot-set-snappoint.png)
 
-2. Tıklayın **toplamaya Başla** anlık görüntü noktasını etkinleştirmek için.
+1. Tıklayın **toplamaya Başla** anlık görüntü noktasını etkinleştirmek için.
 
    ![Anlık görüntü noktasını Aç](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +155,7 @@ Bir anlık görüntü noktası isabet edildiğinde bir anlık görüntü alma ek
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu öğreticide, uygulama hizmetleri için Snapshot Debugger'ı kullanmayı öğrendiniz. Bu özellik hakkında daha fazla bilgi okumak isteyebilirsiniz.
+Bu öğreticide, Azure sanal makineler ve Azure sanal makine ölçek kümeleri için Snapshot Debugger kullanmayı öğrendiniz. Bu özellik hakkında daha fazla bilgi okumak isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
 > [Anlık görüntü hatalarını ayıklama hakkında SSS](../debugger/debug-live-azure-apps-faq.md)

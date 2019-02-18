@@ -1,7 +1,7 @@
 ---
-title: Uygulamaları Genelleştirme ve yerelleştirme
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: Yerelleştirme araçları
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -15,30 +15,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b8628f61c5fa2bc6eebadad23d5c9133f6fe4c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907354"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335265"
 ---
-# <a name="globalizing-and-localizing-applications"></a>Uygulamaları Genelleştirme ve yerelleştirme
+# <a name="develop-globalized-and-localized-apps"></a>Genelleştirilmiş ve yerelleştirilmiş uygulamalar geliştirin
 
-Uluslararası bir hedef kitle için uygulamanızı dağıtmayı planlıyorsanız, tasarım ve geliştirme aşamalarında birkaç şey aklınızda tutmanız gerekir. Tür planlara yoksa bile küçük bir çaba Önden şeyler önemli ölçüde planlarınızı gelecekte uygulamanızın sürümünü değiştirmelisiniz kolaylaştırabilir. Yerleşik hizmetler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yönetilen geliştirme ile Visual Studio kullanarak, farklı yerel ayarlara uyarlayabilirsiniz tek bir uygulama geliştirmeyi kolaylaştırır.
+Visual Studio yapar yerleşik hizmetlerinin avantajlarından yararlanarak uluslararası bir hedef kitle için kolay geliştirme [.NET Framework](/dotnet/standard/globalization-localization/).
 
-## <a name="resources"></a>Kaynaklar
+Örneğin, proje sistemi Windows Forms uygulamaları için geri dönüş UI kültürü hem de her ek UI kültürü için kaynak dosyaları oluşturabilirsiniz. Visual Studio'da bir proje oluşturduğunuzda, kaynak dosyalarını Visual Studio XML biçimi (.resx) Ara bir ikili biçimine (.resources), ardından uydu derlemeleri içinde gömülü derlenir. Daha fazla bilgi için [Visual Studio'daki kaynak dosyaları](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) ve [Masaüstü uygulamaları için uydu derlemeleri oluşturma](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
- Visual Studio, yerleşik hizmetlerinin avantajlarından yararlanarak uluslararası bir hedef kitle için kolay geliştirme yapmak için baştan tasarlanmış [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Aşağıdaki makaleler, Visual Studio'da yerleşik olarak bulunan uluslararası duruma getirme özellikleri tanıtan yardımcı olur.
-
- [.NET Framework tabanlı Uluslararası uygulamalara giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Studio kullanarak bir Uluslararası pazar için yazılım geliştirme ile ilgili kavramları tanıtır ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-
- [Uygulamaları yerelleştirme](../ide/localizing-applications.md) belirli bir kültür için uygulamaları özelleştirme hakkında sayfalara bağlantılar sağlar.
-
- [Uygulamaları Genelleştirme](../ide/globalizing-applications.md) birden çok kültürde destekleyen uygulamalar oluşturma hakkındaki sayfalara bağlantılar sağlar.
+Visual Studio'da çift yönlü dillerde uygulamalar oluşturma hakkında daha fazla bilgi için bkz: [Arapça ve İbranice için uygulamalar oluşturun](creating-applications-in-bi-directional-languages.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Dünya çapında kullanılmaya hazır uygulamalar geliştirmek için en iyi yöntemler](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) programlama uluslararası bir hedef kitle için arka plan bilgileri sağlar.
-- [Sınıf kitaplığına genel bakış](/dotnet/standard/class-library-overview) sınıfları, arabirimleri ve geliştirme işlemini hızlandırmak ve sistem işlevlerine erişmek için bir değer türlerini tanıtır.
-- <xref:System.Globalization> Bu ad alanındaki, dil, ülke/bölge, takvimler kullanımda, tarihler, para birimi ve sayıları ve sıralama için biçim desenleri için dizeleri sıralamak gibi kültürle ilişkili bilgileri tanımlayan sınıflar işaret eder.
-- <xref:System.Resources> Sınıflar ve arabirimler geliştiricilerin oluşturmasını sağlar, bu ad alanındaki noktaları depolayın ve bir uygulamada kullanılan çeşitli kültüre özgü kaynakları yönetin.
+- [Globalize ve .NET uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/)
+- [.NET uygulamalarında kaynakları](/dotnet/framework/resources/)

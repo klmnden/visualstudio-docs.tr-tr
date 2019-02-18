@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18471a94720a7e625cc183685a83c9f5388c64bb
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270621"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335525"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Yalnızca kullanıcı kodunu yalnızca kendi kodum ile hata ayıklama
 
@@ -81,7 +81,7 @@ Kullanıcı olmayan kod içinde işlenmeyen bir özel durum meydana gelirse, hat
 
 ## <a name="BKMK_C___Just_My_Code"></a> C++ yalnızca kendi kodum
   
-Visual Studio 2017 sürüm 15,8, kod için sadece benim kodumu başlatma Adımlama de desteklenir. Bu özellik ayrıca kullanılmasını gerektirir [(yalnızca benim kodum hata ayıklayıcı) /JMC](/cpp/build/reference/jmc) derleyici anahtarı. Anahtar, varsayılan olarak etkindir. İçin **çağrı yığını** penceresi ve çağrı yığını desteği yalnızca benim kodum içinde /JMC anahtar gerekli değildir.
+Visual Studio 2017 sürüm 15,8, kod için sadece benim kodumu başlatma Adımlama de desteklenir. Bu özellik ayrıca kullanılmasını gerektirir [(yalnızca benim kodum hata ayıklayıcı) /JMC](/cpp/build/reference/jmc) derleyici anahtarı. Anahtar, C++ projelerinde varsayılan olarak etkindir. İçin **çağrı yığını** penceresi ve çağrı yığını desteği yalnızca benim kodum içinde /JMC anahtar gerekli değildir.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Kullanıcı kodu sınıflandırılması için PDB kullanıcı kodu içeren ikili için hata ayıklayıcı tarafından yüklenen (kullanın **modülleri** bunu kontrol etmek için pencere).
 

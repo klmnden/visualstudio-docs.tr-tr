@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979653"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335512"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Eski API'yi kullanarak metin görünüme erişme
 Metin arabelleğinde depolanan metin metin görünümünü gösterir. Aşağıdaki bölümde gösterildiği gibi eski API'yi kullanarak metin görünümünü erişebilirsiniz.
@@ -23,7 +23,7 @@ Metin arabelleğinde depolanan metin metin görünümünü gösterir. Aşağıda
 ## <a name="text-view-object"></a>Metin görünümü nesnesi
  Her görünüm kendi metin arabelleği ile ilişkilendirilir ve görünüm arabellekteki veriler üzerinde bir penceredir. Aşağıdaki diyagram tarafından temsil edilen metin view nesnesinin anahtar arabirimler gösterilir <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Visual Studio metin View nesnesinin](../extensibility/media/vstextview.gif "vstextview") metni görünümü nesnesi
+ ![Visual Studio metin Görünüm nesnesi](../extensibility/media/vstextview.gif)
 
  Görünüm arabellekteki metni sunan bir yoludur. Görünümü'nde gördüklerinizi arabellekteki metni tam bir temsilini olmaması sözcük kaydırma ve anahat gibi özellikler içerir.
 

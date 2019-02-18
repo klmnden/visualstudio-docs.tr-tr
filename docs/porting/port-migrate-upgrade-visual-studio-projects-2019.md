@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058669"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335577"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Proje geçiş ve yükseltme reference for Visual Studio 2019 Önizleme
 
@@ -35,7 +35,7 @@ Bazı proje türleri için destek de zaman içinde değişir. Visual Studio'nun 
 
 Bu makalede, Visual Studio 2019 Önizleme geçirebileceğiniz proje türleri için Ayrıntılar sağlar. Ayrıca Visual Studio 2019 Önizleme'de kullanım dışı ya da yakında kullanım dışı olan proje türleri hakkında ayrıntılar sağlar. Bu makalede Visual Studio 2019 artık desteklenmemektedir ve bu nedenle geçirilemiyor proje türleri dışlar. Makale ayrıca hiçbir geçiş sorunları olan desteklenen proje türleri dışlar; Bu liste bulunur [Platform hedefleme ve Uyumluluk](/visualstudio/releases/2019/compatibility).
 
-> [!Important]
+> [!IMPORTANT]
 > Belirli proje türleri, belirli iş yükleri ile Visual Studio Yükleyicisi'nin yüklü olmasını gerektirir. İş yükü yüklenmiş yoksa, Visual Studio bir bilinmeyen veya uyumsuz proje türü bildirir. Bu durumda, yükleme seçeneklerinizi denetleyin ve yeniden deneyin. Bkz: [Platform hedefleme ve Uyumluluk](/visualstudio/releases/2019/compatibility) makale Visual Studio 2019 preview'da proje desteği hakkında ayrıntılı bilgi için.
 
 ## <a name="project-types"></a>Proje türleri
@@ -70,10 +70,10 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | SharePoint 2016 | Office geliştirici araçları Önizleme 2'de oluşturulan SharePoint eklentisi projeleri Visual Studio 2019 Önizleme'de açılamaz. Bu sınırlara yakın çalışmak için güncelleştirme `MinimumVisualStudioVersion` 12.0 için ve `MinimumOfficeToolsVersion` csproj vbproj dosyasında 12.2 için. |
 | Silverlight | Silverlight projeleri Visual Studio 2019 Preview sürümünde desteklenmiyor. Silverlight uygulamalarını korumak için Visual Studio 2015 kullanmaya devam edin. |
 | SQL - Redgate | Redgate SQL değişiklik Otomasyon (daha önce ReadyRoll Core olarak adlandırılır) Core, SQL Prompt Core ve SQL Search artık Visual Studio Yükleyicisi'nde aktarma.<br/><br/>Visual Studio 2017 için bu özellikleri kullanmaya devam edebilirsiniz. Visual Studio 2019 Preview sürümünde, Redgate SQL Toolbelt içinde kullanılabilir olan Ücretli SQL değişiklik otomasyon ve SQL Prompt ürünlere yükseltebilirsiniz.|
-| SQL Server Raporlama Hizmetleri ve SQL Server Analysis Services (SSRS, SSDT, SSAS, MSA'lar) | Desteği bu proje türleri için sağlanan iki uzantılar Visual Studio Galerisi aracılığıyla: [Microsoft Analysis Services modelleme projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) ve [Microsoft Reporting Services projeler](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT destek veri depolama ve işleme iş yüküyle Visual Studio 2019 önizlemesi de dahildir. |
+| SQL Server Raporlama Hizmetleri ve SQL Server Analysis Services (SSRS, SSDT, SSAS, MSA'lar) | Bu proje türleri için destek, iki uzantılar Visual Studio Galerisi aracılığıyla sağlanır:  [Microsoft Analysis Services modelleme projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) ve [Microsoft Reporting Services projeler](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT destek veri depolama ve işleme iş yüküyle Visual Studio 2019 önizlemesi de dahildir. |
 | SQL Server Integration Services (SSIS) | Visual Studio 2019 önizlemesi desteği, SQL Server veri Araçları (SSDT) aracılığıyla kullanılabilir. Daha fazla bilgi için [SQL Server Integration Services blogu](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Geri Visual Studio 2010 için Visual Studio'nun önceki sürümlerinde oluşturulmuş projeleri çalışma için Visual Studio 2019 Önizlemesi'ni kullanabilirsiniz. Projeyi ilk kez açtığınızda, en son derleyici ve araç takımı yükseltmek veya özgün olanları kullanmaya devam etmek için seçeneğiniz vardır. Özgün olanları kullanmaya devam etmek seçtiğinizde, Visual Studio 2019 Önizleme proje dosyasını değiştirmez ve projenizi oluşturmak için araç takımı'önceki Visual Studio yükleme kullanır. Özgün seçenekleri anlamına gelir tutma, hala proje Visual Studio özgün sürümünde gerekirse açabilirsiniz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](/cpp/porting/use-native-multi-targeting). |
-| Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: genişletilebilirlik projelerini Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
+| Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Laboratuvar Yönetimi | Microsoft Test Yöneticisi ya da Visual Studio 2010 SP1'i kullanabilirsiniz ve daha sonra herhangi bir bu sürümüyle oluşturduğunuz ortamları açabilirsiniz. Ancak, ortamları oluşturmadan önce Microsoft Test Yöneticisi'nin sürümü Team Foundation Server sürümü için Visual Studio 2010 SP1 eşleşmelidir. |
 | Apache Cordova için Visual Studio Araçları | Visual Studio 2019 Önizleme aşamasında Apache Cordova için destek kaldırılmıştır. Visual Studio 2019 önizlemede eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur.<br/><br/>(Cordova en son sürümü için destek sunar) Visual Studio Code uzantısı için Cordova araçları kullanmanız veya Visual Studio 2017'yi kullanarak devam edebilirsiniz. |
 | Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2019 önizlemede eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |

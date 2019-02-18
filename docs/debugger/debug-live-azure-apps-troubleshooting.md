@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943805"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335486"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio'da anlık görüntü hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -53,7 +53,19 @@ Aşağıdaki adımları gerçekleştirin:
 Aşağıdaki adımları gerçekleştirin:
 
 - Anlık görüntü hata ayıklayıcı bileşeni yüklü olduğundan emin olun. Visual Studio Yükleyicisi'ni açın ve kontrol **Snapshot Debugger** Azure iş yükü bileşeni.
+::: moniker range="< vs-2019"
 - Uygulamanızın desteklenen emin olun. Şu anda, yalnızca ASP.NET (4.6.1+) ve ASP.NET Core (2.0 +) uygulamalarını Azure App Services'a dağıtılmış desteklenir.
+::: moniker-end
+::: moniker range=">= vs-2019"
+- Uygulamanızın desteklenen emin olun:
+  - Azure uygulama hizmetleri - .NET Framework 4.6.1 üzerinde çalışan ASP.NET uygulamalarından veya üzeri.
+  - Azure uygulama hizmetleri - .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
+  - .NET Framework 4.6.1 üzerinde çalışan azure sanal makineler (ve VMSS) - ASP.NET uygulamalarını veya üzeri.
+  - .NET Core 2.0 veya daha sonra Windows çalıştıran azure sanal makineler (ve VMSS) - ASP.NET Core uygulamaları.
+  - Azure Kubernetes Hizmetleri - .NET Core 2.2 veya sonraki Debian 9 üzerinde çalışan ASP.NET Core uygulamaları.
+  - Azure Kubernetes Hizmetleri - .NET Core 2.2 veya sonraki Alpine 3.8 üzerinde çalışan ASP.NET Core uygulamaları.
+  - Azure Kubernetes Hizmetleri - .NET Core 2.2 veya sonraki Ubuntu 18.04 üzerinde çalışan ASP.NET Core uygulamaları.
+::: moniker-end
 
 ## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Sorun: Tanılama araçları kısıtlanmış anlık görüntü yalnızca görüyorum
 
@@ -66,7 +78,7 @@ Aşağıdaki adımları gerçekleştirin:
 ## <a name="known-issues"></a>Bilinen Sorunlar
 
 - Aynı App Service karşı birden fazla Visual Studio istemcilerle anlık görüntü hata ayıklama şu anda desteklenmiyor.
-- Roslyn IL en iyi duruma getirme, tam olarak ASP.NET Core projelerinde desteklenmez. Bazı ASP.NET Core projeleri için bkz. bazı değişkenleri veya bazı değişkenler koşullu Deyimlerinizde kullanın mümkün olmayabilir. 
+- Roslyn IL en iyi duruma getirme, tam olarak ASP.NET Core projelerinde desteklenmez. Bazı ASP.NET Core projeleri için bkz. bazı değişkenleri veya bazı değişkenler koşullu Deyimlerinizde kullanın mümkün olmayabilir.
 - Özel değişkenler gibi *$FUNCTION* veya *$CALLER*, günlüğe kaydetme noktaları ASP.NET Core projeleri için de koşullu ifadeler değerlendirilemez.
 - Anlık görüntü hata ayıklama sahip uygulama hizmetleri çalışmıyor [yerel önbelleğe alma](/azure/app-service/app-service-local-cache) açık.
 - API Apps hata ayıklama anlık görüntü şu anda desteklenmiyor.
@@ -86,4 +98,6 @@ Anlık görüntü hata ayıklama ve Application Insights site işleme yükler ve
 
 [Visual Studio’da hata ayıklama](../debugger/index.md)  
 [Snapshot Debugger'ı kullanarak canlı ASP.NET uygulamalarının hatalarını ayıklama](../debugger/debug-live-azure-applications.md)  
+[Canlı ASP.NET Azure sanal Machines\Virtual makineler ölçek Snapshot Debugger'ı kullanarak kümeleri hata ayıklama](../debugger/debug-live-azure-virtual-machines.md)  
+[Snapshot Debugger'ı kullanarak canlı ASP.NET Azure Kubernetes hata ayıklama](../debugger/debug-live-azure-kubernetes.md)  
 [Anlık görüntü hatalarını ayıklama hakkında SSS](../debugger/debug-live-azure-apps-faq.md)  
