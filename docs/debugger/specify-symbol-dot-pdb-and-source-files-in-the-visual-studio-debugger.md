@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7784e6bde19a556d31394f3443dbf4494042481
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4eb542c06ce14aaa57106fb5413f285595592ca0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005313"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317446"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtin (C#, C++, Visual Basic F#)
 
@@ -262,6 +262,6 @@ Hata ayıklayıcı kaynak dosyaları arar konumlarını belirtin ve arama belirl
 
 
 ## <a name="see-also"></a>Ayrıca bkz.  
-[Sembol dosyalarını ve Visual Studio sembol Ayarları'nı anlama](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Sembol dosyalarını ve Visual Studio sembol Ayarları'nı anlama](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Visual Studio 2012 ve 2013 değişiklikleri yükleme .NET uzaktan sembolü](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Visual Studio 2012 ve 2013 değişiklikleri yükleme .NET uzaktan sembolü](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
