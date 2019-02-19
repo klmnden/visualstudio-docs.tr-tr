@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54753522"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
@@ -136,7 +136,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
   
 |Özellik Öğesi Adı|Değer|Açıklama|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -   0: Giriş sayfasını aç<br />-   1: Son yüklenen çözümü yükleme<br />-   2: Göster **açık proje** iletişim kutusu<br />-   3: Göster **yeni proje** iletişim kutusu<br />-   4: Boş ortamı Göster<br />-   5: Başlangıç sayfasını göster|  
+|OnStartUp|Get/Set (Enum)|Öğesinden başlatma sırasında gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>, 0 ile 5 değerleriyle:<br /><br /> -   0: Giriş sayfasını aç<br />-   1: Son yüklenen çözümü yükleme<br />-   2: Göster **açık proje** iletişim kutusu<br />-   3: Göster **yeni proje** iletişim kutusu<br />-   4: Boş ortamı göster<br />-   5: Başlangıç sayfasını göster|  
 |StartPageRSSUrl|Get/Set (dize)|RSS, akış URL'sini başlatma sırasında kullanılır.|  
 |StartPageRefreshDownloadedContent|Get/Set (Boole)|Başlangıç sayfası StartPageRefreshInterval içinde belirtilen aralık her ilgi çekici sonra yeniler.|  
 |StartPageRefreshInterval|Get/Set (kısa)|Aralığının başlangıç sayfası yenilemek için dakika cinsinden değeri.|  

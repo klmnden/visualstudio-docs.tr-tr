@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756669"
 ---
 # <a name="cl-task"></a>CL Görevi
@@ -88,7 +88,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **AssemblyAndSourceCode** - **/FAs**  
   
-  - **Tüm** -   **/facs**  
+  - **Tüm** -  ** /facs**  
   
     Daha fazla bilgi için **/FA**, **/Fac**, **/Fas**, ve **/facs** seçeneklerini [/FA, /Fa (listeleme dosyası)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -182,7 +182,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **false** - *\<yok >*  
   
-  - **doğru** -   **/CLR**  
+  - **doğru** -  ** /CLR**  
   
   - **Pure** - **/clr:pure**  
   
@@ -210,7 +210,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **OldStyle** - **/Z7**  
   
-  - **ProgramDatabase** -   **/zi**  
+  - **ProgramDatabase** -  ** /zi**  
   
   - **EditAndContinue** - **/ZI**  
   
@@ -242,7 +242,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **StreamingSIMDExtensions** - **/arch:SSE**  
   
-  - **StreamingSIMDExtensions2** -   **/arch: SSE2**  
+  - **StreamingSIMDExtensions2** -  ** /arch: SSE2**  
   
     Daha fazla bilgi için [/arch (x86)](http://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
@@ -340,7 +340,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **Precise** - **/fp:precise**  
   
-  - **Katı** -   **/FP: strict**  
+  - **Katı** -  ** /FP: strict**  
   
   - **Fast** - **/fp:fast**  
   
@@ -408,7 +408,7 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **OnlyExplicitInline** - **/Ob1**  
   
-  - **AnySuitable** -   **/ob2**  
+  - **AnySuitable** -  ** /ob2**  
   
     Daha fazla bilgi için [/Ob (satır içi işlev genişletmesi)](http://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
@@ -484,9 +484,9 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **Devre dışı bırakılmış** - **/Od**  
   
-  - **MinSpace** -   **/O1**  
+  - **MinSpace** -  ** /O1**  
   
-  - **MaxSpeed** -   **/O2**  
+  - **MaxSpeed** -  ** /O2**  
   
   - **Tam** - **/Ox**  
   
@@ -592,11 +592,11 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
    Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-  - **Çok iş parçacıklı** -   **/MT**  
+  - **Çok iş parçacıklı** -  ** /MT**  
   
-  - **MultiThreadedDebug** -   **/mtd**  
+  - **MultiThreadedDebug** -  ** /mtd**  
   
-  - **MultiThreadedDLL** -   **/MD**  
+  - **MultiThreadedDLL** -  ** /MD**  
   
   - **MultiThreadedDebugDLL** - **/MDd**  
   
@@ -744,15 +744,15 @@ Visual C++ Derleyici aracı sarmalar cl.exe. Derleyici, yürütülebilir (.exe) 
   
   - **TurnOffAllWarnings** - **/W0**  
   
-  - **Level1** -   **/W1**  
+  - **Level1** -  ** /W1**  
   
-  - **Level2** -   **/w2**  
+  - **Level2** -  ** /w2**  
   
-  - **Level3** -   **/w3**  
+  - **Level3** -  ** /w3**  
   
-  - **Level4** -   **/W4**  
+  - **Level4** -  ** /W4**  
   
-  - **EnableAllWarnings** -   **/Wall**  
+  - **EnableAllWarnings** -  ** /Wall**  
   
     Daha fazla bilgi için **/W**_n_ seçeneğini [/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   

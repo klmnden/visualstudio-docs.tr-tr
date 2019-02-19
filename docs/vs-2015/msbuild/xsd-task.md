@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2c8e38959e9835ee26f283c59128749239178307
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778730"
 ---
 # <a name="xsd-task"></a>XSD Görevi
@@ -51,9 +51,9 @@ Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Arac�
   
      Her biri bir XSD seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **sınıflar** -   **/sınıfları**  
+    -   **sınıflar** -  ** /sınıfları**  
   
-    -   **veri kümesi** -   **/DataSet**  
+    -   **veri kümesi** -  ** /DataSet**  
   
 -   **Dil**  
   

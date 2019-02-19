@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780727"
 ---
 # <a name="performance-explorer-window"></a>Performans Gezgini Penceresi
@@ -37,7 +37,7 @@ ms.locfileid: "54780727"
   
 -   **Yeni performans oturumu** -performans Gezgini penceresi için bir boş performans oturumu ekler.  
   
--   **Başlatma** - **başlatma** komut düğmesi listesi sağlar, profil oluşturma hemen etkin olan bir hedef uygulama başlatılamadı (**başlatma profil oluşturma ile**) veya askıya alınmış (Profiloluşturma **Profil oluşturma ile Başlat duraklatıldı**).  
+-   **Başlatma** - **başlatma** komut düğmesi listesi sağlar, profil oluşturma hemen etkin olan bir hedef uygulama başlatılamadı (**başlatma profil oluşturma ile**) veya askıya alınmış (Profiloluşturma** Profil oluşturma ile Başlat duraklatıldı**).  
   
 -   **Yöntem** -oturumun profil oluşturma yöntemine mi örnekleme veya Araçlar belirtir.  
   
