@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769084"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
@@ -121,7 +121,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
    - Microsoft Windows Donanım onay Seti  
   
-     .. .önceki dosyaları yüklemiş olabilirler önceki adımda listelenen %ProgramFiles%\Windows Kits\8.0\ klasörler halinde ve lisans koşulları bu dosyalara ilişkin yapı sunucu haklarına izin vermeyebilir. Dosyaların derleme bilgisayarınıza kopyalanıp kopyalanmadığını doğrulamak yüklü her Windows Kiti için lisans koşullarını kontrol edin. Lisans koşulları yapı sunucusu haklarına izin verme, dosyaları yapı bilgisayarından kaldırın.  
+     ... Bunlar dosyaları önceki adımda listelenen %ProgramFiles%\Windows Kits\8.0\ klasörler halinde yüklemiş olabilir ve lisans koşulları bu dosyalara ilişkin yapı sunucu haklarına izin vermeyebilir. Dosyaların derleme bilgisayarınıza kopyalanıp kopyalanmadığını doğrulamak yüklü her Windows Kiti için lisans koşullarını kontrol edin. Lisans koşulları yapı sunucusu haklarına izin verme, dosyaları yapı bilgisayarından kaldırın.  
   
 2. Aşağıdaki klasörleri yinelemeli olarak ana bilgisayardan yapı bilgisayarına kopyalayın:  
   
