@@ -10,57 +10,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a9c56f50e878b26ddb1012527a0388e03af6898
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f79403bfd1dfe89868b3a8e3a901e2fc370609d
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941607"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412792"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-Hata ayıklama modülü arabirimine bir başvuru alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetModule(   
-   IDebugModule2 **ppModule  
-);  
-```  
-  
-```csharp  
-public int GetModule(   
-   out IDebugModule2 ppModule  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppModule`  
- [out] Başvuru için hata ayıklama modül arabirimi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugCodeContext** gösteren nesne [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) arabirimi.  
-  
-```cpp  
-HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-  
-    IfFalseGo( ppModule, E_INVALIDARG );  
-    *ppModule = NULL;  
-  
-    IfFailGo( this->GetModule(&pModule) );  
-    IfFailGo( pModule->QueryInterface(IID_IDebugModule2, (void**) ppModule) );  
-  
-Error:  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
+Hata ayıklama modülü arabirimine bir başvuru alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetModule(
+    IDebugModule2 **ppModule
+);
+```
+
+```csharp
+public int GetModule(
+    out IDebugModule2 ppModule
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`ppModule`  
+[out] Başvuru için hata ayıklama modül arabirimi.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugCodeContext** gösteren nesne [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) arabirimi.
+
+```cpp
+HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+
+    IfFalseGo( ppModule, E_INVALIDARG );
+    *ppModule = NULL;
+
+    IfFailGo( this->GetModule(&pModule) );
+    IfFailGo( pModule->QueryInterface(IID_IDebugModule2, (void**) ppModule) );
+
+Error:
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

@@ -12,61 +12,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc730be1ac49bddb8406a5f3322e800c86dce50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9e258f8a267ab2f8211cc4c6f908c3593a485ee
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041875"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412961"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Kesme noktası ilişkisiz nedenini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetReason(   
-   BP_UNBOUND_REASON* pdwUnboundReason  
-);  
-```  
-  
-```csharp  
-int GetReason(   
-   out enum_ BP_UNBOUND_REASON pdwUnboundReason  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pdwUnboundReason`  
- [out] Bir değer döndürür [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) kesme noktası ilişkisiz nedenini belirten sabit listesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Farklı bir konuma bir Düzenle ve devam et işlemi ya da bir kesme noktası hatası bağlanan bir belirleme DataSet'e bir kesme noktası nedenleri.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CBreakpointUnboundDebugEventBase** gösteren nesne [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) arabirimi.  
-  
-```cpp  
-STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
-    BP_UNBOUND_REASON* pdwUnboundReason)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( EVAL(pdwUnboundReason) )  
-    {  
-        *pdwUnboundReason = m_dwReason;  
-  
-        hRes = S_OK;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+Kesme noktası ilişkisiz nedenini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetReason(
+    BP_UNBOUND_REASON* pdwUnboundReason
+);
+```
+
+```csharp
+int GetReason(
+    out enum_ BP_UNBOUND_REASON pdwUnboundReason
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`pdwUnboundReason`  
+[out] Bir değer döndürür [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) kesme noktası ilişkisiz nedenini belirten sabit listesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+Farklı bir konuma bir Düzenle ve devam et işlemi ya da bir kesme noktası hatası bağlanan bir belirleme DataSet'e bir kesme noktası nedenleri.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CBreakpointUnboundDebugEventBase** gösteren nesne [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) arabirimi.
+
+```cpp
+STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
+    BP_UNBOUND_REASON* pdwUnboundReason)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( EVAL(pdwUnboundReason) )
+    {
+        *pdwUnboundReason = m_dwReason;
+
+        hRes = S_OK;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

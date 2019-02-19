@@ -12,54 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b1f22d92780dbd4178a7a0696bac5aa27337ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd5067591f4f296825db6362f4a7b91f1a7a37e8
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963716"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412820"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-Farklı türlerde oluşturucular seçer.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typedef enum ConstructorMatchOptions {   
-   crAll       = 0,  
-   crNonStatic = 1,  
-   crStatic    = 2  
-} CONSTRUCTOR_ENUM;  
-```  
-  
-```csharp  
-public enum ConstructorMatchOptions {   
-   crAll       = 0,  
-   crNonStatic = 1,  
-   crStatic    = 2  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- crAll  
- Tüm oluşturucular seçer.  
-  
- crNonStatic  
- Statik olmayan oluşturucular seçer.  
-  
- crStatic  
- Statik oluşturucular seçer.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken olarak geçirilen [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) yöntemi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: sh.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+Farklı türlerde oluşturucular seçer.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typedef enum ConstructorMatchOptions {
+    crAll       = 0,
+    crNonStatic = 1,
+    crStatic    = 2
+} CONSTRUCTOR_ENUM;
+```
+
+```csharp
+public enum ConstructorMatchOptions {
+    crAll       = 0,
+    crNonStatic = 1,
+    crStatic    = 2
+};
+```
+
+## <a name="members"></a>Üyeler
+crAll  
+Tüm oluşturucular seçer.
+
+crNonStatic  
+Statik olmayan oluşturucular seçer.
+
+crStatic  
+Statik oluşturucular seçer.
+
+## <a name="remarks"></a>Açıklamalar
+Bağımsız değişken olarak geçirilen [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) yöntemi.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: sh.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

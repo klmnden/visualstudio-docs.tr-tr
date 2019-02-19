@@ -12,63 +12,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fddab6fc65848a5fa2577785d9f3db934f50086
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8773a37e8762ad88513a2636b9c692b45be2c4ae
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012943"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413091"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
-Ayrıştırılmış kod akışın kapsamını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
-};  
-typedef DWORD DISASSEMBLY_STREAM_SCOPE;  
-```  
-  
-```csharp  
-public enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- DSS_HUGE  
- Kod bağlamı derlemesini açma işlemlerini uygulama istemci genellikle tek bir çağrıda almak daha daha fazla çıkış karşılaşırsınız belirtir.  
-  
- DSS_FUNCTION  
- Kod kapsamında yer alan işlevi çözülürken olduğunu belirtir. Ayrıştırılmış kod akış tarafından döndürülen bir işlevi temsil ettiğini belirtir [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) yöntemi.  
-  
- DSS_MODULE  
- Tarafından döndürülen `IDebugDisassemblyStream2::GetScope` yöntemi Ayrıştırılmış kod akış bir modülü temsil ettiğini belirtir.  
-  
- DSS_ALL  
- Tüm adres için ayrıştırılmış kodu belirtir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken olarak geçirilen [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) yöntemi ve tarafından döndürülen [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) yöntemi.  
-  
- Bu değerler, bit düzeyinde ile birleştirilebilir `OR`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
- [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+Ayrıştırılmış kod akışın kapsamını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_DISASSEMBLY_STREAM_SCOPE {
+    DSS_HUGE     = 0x10000000,
+    DSS_FUNCTION = 0x0001,
+    DSS_MODULE   = (DSS_HUGE) | 0x0002,
+    DSS_ALL      = (DSS_HUGE) | 0x0003
+};
+typedef DWORD DISASSEMBLY_STREAM_SCOPE;
+```
+
+```csharp
+public enum enum_DISASSEMBLY_STREAM_SCOPE {
+    DSS_HUGE     = 0x10000000,
+    DSS_FUNCTION = 0x0001,
+    DSS_MODULE   = (DSS_HUGE) | 0x0002,
+    DSS_ALL      = (DSS_HUGE) | 0x0003
+};
+```
+
+## <a name="members"></a>Üyeler
+DSS_HUGE  
+Kod bağlamı derlemesini açma işlemlerini uygulama istemci genellikle tek bir çağrıda almak daha daha fazla çıkış karşılaşırsınız belirtir.
+
+DSS_FUNCTION  
+Kod kapsamında yer alan işlevi çözülürken olduğunu belirtir. Ayrıştırılmış kod akış tarafından döndürülen bir işlevi temsil ettiğini belirtir [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) yöntemi.
+
+DSS_MODULE  
+Tarafından döndürülen `IDebugDisassemblyStream2::GetScope` yöntemi Ayrıştırılmış kod akış bir modülü temsil ettiğini belirtir.
+
+DSS_ALL  
+Tüm adres için ayrıştırılmış kodu belirtir.
+
+## <a name="remarks"></a>Açıklamalar
+Bağımsız değişken olarak geçirilen [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) yöntemi ve tarafından döndürülen [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) yöntemi.
+
+Bu değerler, bit düzeyinde ile birleştirilebilir `OR`.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)  
+[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

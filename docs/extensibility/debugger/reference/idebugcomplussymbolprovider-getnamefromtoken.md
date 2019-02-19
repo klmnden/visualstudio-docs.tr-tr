@@ -11,113 +11,113 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc1bf67a04fd625bc3e3431a510906072c7d375
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06f9a07b7c6e1abcf8bf63fb8f6bd61ec82d7e9b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017545"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413416"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Belirtilen meta veri nesnesi, verilen belirteçle ilişkili adı döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetNameFromToken (  
-   IUnknown* pMetadataImport,  
-   DWORD     dwToken,  
-   BSTR*     pbstrName  
-);  
-```  
-  
-```csharp  
-int GetNameFromToken (  
-   object     pMetadataImport,  
-   uint       dwToken,  
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pMetadataImport`  
- [in] Meta veri bilgilerini içeren nesne.  
-  
- `dwToken`  
- [in] Belirteç adı.  
-  
- `pbstrName`  
- [out] Belirtece karşılık gelen ad.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) arabirimi.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::GetNameFromToken(  
-    IUnknown* pMetadataImport,  
-    DWORD dwToken,  
-    BSTR* pbstrName  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<IMetaDataImport> pMetaData;  
-  
-    ASSERT(IsValidObjectPtr(this, CDebugSymbolProvider));  
-    ASSERT(IsValidInterfacePtr(pMetadataImport, IUnknown));  
-  
-    METHOD_ENTRY(CDebugSymbolProvider::GetNameFromToken);  
-  
-    IfFalseGo( pMetadataImport && pbstrName, E_INVALIDARG );  
-  
-    *pbstrName = NULL;  
-    IfFailGo( pMetadataImport->QueryInterface( IID_IMetaDataImport,  
-              (void**) &pMetaData ) );  
-  
-    switch ( TypeFromToken(dwToken) )  
-    {  
-        case mdtModule:  
-            IfFailGo( GetModuleName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        case mdtTypeDef:  
-            IfFailGo( GetTypeName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        case mdtFieldDef:  
-            IfFailGo( GetFieldName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        case mdtMethodDef:  
-            IfFailGo( GetMethodName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        case mdtEvent:  
-            IfFailGo( GetEventName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        case mdtProperty:  
-            IfFailGo( GetPropertyName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        case mdtAssembly:  
-            IfFailGo( GetAssemblyName( pMetaData, dwToken, pbstrName) );  
-            break;  
-  
-        default:  
-            ASSERT(!"Unsupported token passed to GetNameFromToken");  
-            hr = E_FAIL;  
-            break;  
-    }  
-  
-Error:  
-  
-    METHOD_EXIT(CDebugSymbolProvider::GetNameFromToken, hr);  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Belirtilen meta veri nesnesi, verilen belirteçle ilişkili adı döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetNameFromToken (
+    IUnknown* pMetadataImport,
+    DWORD     dwToken,
+    BSTR*     pbstrName
+);
+```
+
+```csharp
+int GetNameFromToken (
+    object     pMetadataImport,
+    uint       dwToken,
+    out string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`pMetadataImport`  
+[in] Meta veri bilgilerini içeren nesne.
+
+`dwToken`  
+[in] Belirteç adı.
+
+`pbstrName`  
+[out] Belirtece karşılık gelen ad.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) arabirimi.
+
+```cpp
+HRESULT CDebugSymbolProvider::GetNameFromToken(
+    IUnknown* pMetadataImport,
+    DWORD dwToken,
+    BSTR* pbstrName
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<IMetaDataImport> pMetaData;
+
+    ASSERT(IsValidObjectPtr(this, CDebugSymbolProvider));
+    ASSERT(IsValidInterfacePtr(pMetadataImport, IUnknown));
+
+    METHOD_ENTRY(CDebugSymbolProvider::GetNameFromToken);
+
+    IfFalseGo( pMetadataImport && pbstrName, E_INVALIDARG );
+
+    *pbstrName = NULL;
+    IfFailGo( pMetadataImport->QueryInterface( IID_IMetaDataImport,
+              (void**) &pMetaData ) );
+
+    switch ( TypeFromToken(dwToken) )
+    {
+        case mdtModule:
+            IfFailGo( GetModuleName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        case mdtTypeDef:
+            IfFailGo( GetTypeName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        case mdtFieldDef:
+            IfFailGo( GetFieldName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        case mdtMethodDef:
+            IfFailGo( GetMethodName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        case mdtEvent:
+            IfFailGo( GetEventName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        case mdtProperty:
+            IfFailGo( GetPropertyName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        case mdtAssembly:
+            IfFailGo( GetAssemblyName( pMetaData, dwToken, pbstrName) );
+            break;
+
+        default:
+            ASSERT(!"Unsupported token passed to GetNameFromToken");
+            hr = E_FAIL;
+            break;
+    }
+
+Error:
+
+    METHOD_EXIT(CDebugSymbolProvider::GetNameFromToken, hr);
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

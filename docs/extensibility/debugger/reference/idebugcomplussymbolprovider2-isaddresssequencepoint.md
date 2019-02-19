@@ -11,77 +11,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a17f65246d3550dd1de3b92718baae5ac44536f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41d33f95e6839e8def5915388972a66284f632a2
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040781"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412779"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
-Belirtilen hata ayıklama adresi bir dizi noktası olup olmadığını belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT IsAddressSequencePoint(  
-   IDebugAddress* pAddress  
-);  
-```  
-  
-```csharp  
-int IsAddressSequencePoint(  
-   IDebugAddress pAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pAddress`  
- [in] Tarafından temsil edilen adresi hata ayıklama [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Hata ayıklama adresi bir dizi noktası ise döndürür `S_OK`; Aksi halde döndürür `S_FALSE`.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) arabirimi.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  
-    IDebugAddress* pAddress  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CDEBUG_ADDRESS address;  
-    CComPtr<CModule> pModule;  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::LoadSymbol );  
-  
-    IfFalseGo( pAddress, E_INVALIDARG );  
-  
-    IfFailGo( pAddress->GetAddress( &address ) );  
-  
-    ASSERT(address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD);  
-    IfFalseGo( address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD, S_FALSE );  
-  
-    IfFailGo( GetModule( address.GetModule(), &pModule) );  
-  
-    if (!pModule->IsSequencePoint( address.addr.addr.addrMethod.tokMethod,  
-                                   address.addr.addr.addrMethod.dwVersion,  
-                                   address.addr.addr.addrMethod.dwOffset ))  
-    {  
-  
-        // S_FALSE indicates this is not a sequence point  
-  
-        hr = S_FALSE;  
-    }  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::LoadSymbol, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+Belirtilen hata ayıklama adresi bir dizi noktası olup olmadığını belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT IsAddressSequencePoint(
+    IDebugAddress* pAddress
+);
+```
+
+```csharp
+int IsAddressSequencePoint(
+    IDebugAddress pAddress
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`pAddress`  
+[in] Tarafından temsil edilen adresi hata ayıklama [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
+
+## <a name="return-value"></a>Dönüş Değeri
+Hata ayıklama adresi bir dizi noktası ise döndürür `S_OK`; Aksi halde döndürür `S_FALSE`.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) arabirimi.
+
+```cpp
+HRESULT CDebugSymbolProvider::IsAddressSequencePoint(
+    IDebugAddress* pAddress
+)
+{
+    HRESULT hr = S_OK;
+    CDEBUG_ADDRESS address;
+    CComPtr<CModule> pModule;
+
+    METHOD_ENTRY( CDebugSymbolProvider::LoadSymbol );
+
+    IfFalseGo( pAddress, E_INVALIDARG );
+
+    IfFailGo( pAddress->GetAddress( &address ) );
+
+    ASSERT(address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD);
+    IfFalseGo( address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD, S_FALSE );
+
+    IfFailGo( GetModule( address.GetModule(), &pModule) );
+
+    if (!pModule->IsSequencePoint( address.addr.addr.addrMethod.tokMethod,
+                                   address.addr.addr.addrMethod.dwVersion,
+                                   address.addr.addr.addrMethod.dwOffset ))
+    {
+
+        // S_FALSE indicates this is not a sequence point
+
+        hr = S_FALSE;
+    }
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::LoadSymbol, hr );
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

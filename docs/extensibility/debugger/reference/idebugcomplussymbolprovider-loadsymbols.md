@@ -11,77 +11,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ce94b09c700c6274c14b6b7d8ff34e99b314ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007379"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413377"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-Bellek belirtilen hata ayıklama sembolleri yükler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT LoadSymbols(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONGLONG baseAddress,  
-   IUnknown* pUnkMetadataImport,  
-   BSTR      bstrModuleName,  
-   BSTR      bstrSymSearchPath  
-);  
-```  
-  
-```csharp  
-int LoadSymbols(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   ulong  baseAddress,  
-   object pUnkMetadataImport,  
-   string bstrModuleName,  
-   string bstrSymSearchPath  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ulAppDomainID`  
- [in] Uygulama etki alanı tanımlayıcısı.  
-  
- `guidModule`  
- [in] Mondule benzersiz tanımlayıcısı.  
-  
- `baseAddress`  
- [in] Temel bir bellek adresi.  
-  
- `pUnkMetadataImport`  
- [in] Sembol meta veriler içeren nesne.  
-  
- `bstrModuleName`  
- [in] Modülün adı.  
-  
- `bstrSymSearchPath`  
- [in] Sembol dosyası için arama yolu.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) arabirimi.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::LoadSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    ULONGLONG baseOffset,  
-    IUnknown* _pMetadata,  
-    BSTR bstrModule,  
-    BSTR bstrSearchPath)  
-{  
-    return LoadSymbolsWithCorModule(ulAppDomainID, guidModule, baseOffset, _pMetadata, NULL, bstrModule, bstrSearchPath);  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Bellek belirtilen hata ayıklama sembolleri yükler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT LoadSymbols(
+    ULONG32   ulAppDomainID,
+    GUID      guidModule,
+    ULONGLONG baseAddress,
+    IUnknown* pUnkMetadataImport,
+    BSTR      bstrModuleName,
+    BSTR      bstrSymSearchPath
+);
+```
+
+```csharp
+int LoadSymbols(
+    uint   ulAppDomainID,
+    Guid   guidModule,
+    ulong  baseAddress,
+    object pUnkMetadataImport,
+    string bstrModuleName,
+    string bstrSymSearchPath
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`ulAppDomainID`  
+[in] Uygulama etki alanı tanımlayıcısı.
+
+`guidModule`  
+[in] Mondule benzersiz tanımlayıcısı.
+
+`baseAddress`  
+[in] Temel bir bellek adresi.
+
+`pUnkMetadataImport`  
+[in] Sembol meta veriler içeren nesne.
+
+`bstrModuleName`  
+[in] Modülün adı.
+
+`bstrSymSearchPath`  
+[in] Sembol dosyası için arama yolu.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) arabirimi.
+
+```cpp
+HRESULT CDebugSymbolProvider::LoadSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    ULONGLONG baseOffset,
+    IUnknown* _pMetadata,
+    BSTR bstrModule,
+    BSTR bstrSearchPath)
+{
+    return LoadSymbolsWithCorModule(ulAppDomainID, guidModule, baseOffset, _pMetadata, NULL, bstrModule, bstrSearchPath);
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -12,62 +12,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f9a2437609109fcdaf85ceb2cfd6fe9dcb6879
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990478"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413039"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-İki belge bağlamları karşılaştırma ölçütü belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
-};  
-typedef DWORD DOCCONTEXT_COMPARE;  
-```  
-  
-```csharp  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- DOCCONTEXT_EQUAL  
- Hedef belge bağlamına eşit olan listesinde ilk belge bağlamı bulur.  
-  
- DOCCONTEXT_LESS_THAN  
- Hedef belge bağlamı'dan küçük listedeki ilk belge bağlamı bulun.  
-  
- DOCCONTEXT_GREATER_THAN  
- Hedef belge bağlamı büyük listesinde ilk belge bağlamı bulur.  
-  
- DOCCONTEXT_SAME_DOCUMENT  
- Aynı belgede hedef belge bağlamı olarak listede ilk belge içeriği bulabilirsiniz.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken olarak geçirilen [karşılaştırma](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) yöntemi.  
-  
- Bu değerler, listedeki ilk belge içeriği bulmak için karşılaştırma ölçütleri belirtmek için kullanılır. Bir belge bağlamına belge bağlamları listesini kendisine karşı karşılaştırmak için verilen `IDebugDocumentContext2::Compare` yöntemi. Karşılaştırma işleci olan listede ilk belge bağlamı `true` sonra döndürülür.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+İki belge bağlamları karşılaştırma ölçütü belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_DOCCONTEXT_COMPARE {
+    DOCCONTEXT_EQUAL         = 0x0001,
+    DOCCONTEXT_LESS_THAN     = 0x0002,
+    DOCCONTEXT_GREATER_THAN  = 0x0003,
+    DOCCONTEXT_SAME_DOCUMENT = 0x0004
+};
+typedef DWORD DOCCONTEXT_COMPARE;
+```
+
+```csharp
+enum enum_DOCCONTEXT_COMPARE {
+    DOCCONTEXT_EQUAL         = 0x0001,
+    DOCCONTEXT_LESS_THAN     = 0x0002,
+    DOCCONTEXT_GREATER_THAN  = 0x0003,
+    DOCCONTEXT_SAME_DOCUMENT = 0x0004
+};
+```
+
+## <a name="members"></a>Üyeler
+DOCCONTEXT_EQUAL  
+Hedef belge bağlamına eşit olan listesinde ilk belge bağlamı bulur.
+
+DOCCONTEXT_LESS_THAN  
+Hedef belge bağlamı'dan küçük listedeki ilk belge bağlamı bulun.
+
+DOCCONTEXT_GREATER_THAN  
+Hedef belge bağlamı büyük listesinde ilk belge bağlamı bulur.
+
+DOCCONTEXT_SAME_DOCUMENT  
+Aynı belgede hedef belge bağlamı olarak listede ilk belge içeriği bulabilirsiniz.
+
+## <a name="remarks"></a>Açıklamalar
+Bağımsız değişken olarak geçirilen [karşılaştırma](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) yöntemi.
+
+Bu değerler, listedeki ilk belge içeriği bulmak için karşılaştırma ölçütleri belirtmek için kullanılır. Bir belge bağlamına belge bağlamları listesini kendisine karşı karşılaştırmak için verilen `IDebugDocumentContext2::Compare` yöntemi. Karşılaştırma işleci olan listede ilk belge bağlamı `true` sonra döndürülür.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
