@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037843"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335252"
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: İç içe Projeler uygulama
 
@@ -65,7 +65,7 @@ Bir iç içe proje türü oluşturduğunuzda, uygulanması gereken birkaç ek ad
      Bu noktada üst ve alt projeleri program aracılığıyla örneği olduğundan, iç içe projeler için özellikleri ayarlayabilirsiniz.
 
     > [!NOTE]
-    > Yalnızca iç içe geçmiş projeden bağlam bilgisi alır, ancak üst projeyi her bağlam için bu öğe olup olmadığını kontrol ederek sorabilir <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Bu şekilde, tek bir iç içe projeler için ek dinamik Yardım özniteliklerini ve belirli menü seçenekleri ekleyebilirsiniz.
+    > Yalnızca iç içe geçmiş projeden bağlam bilgisi alır, ancak üst projeyi her bağlam için bu öğe olup olmadığını kontrol ederek sorabilir [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). Bu şekilde, tek bir iç içe projeler için ek dinamik Yardım özniteliklerini ve belirli menü seçenekleri ekleyebilirsiniz.
 
 10. Hiyerarşi görüntülenmek üzere oluşturulmuş **Çözüm Gezgini** çağrısıyla <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> yöntemi.
 
