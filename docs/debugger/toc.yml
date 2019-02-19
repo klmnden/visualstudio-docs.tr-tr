@@ -362,11 +362,14 @@ items:
     items:
     - name: Canlı bir Azure uygulamasında hata ayıklama
       href: debug-live-azure-applications.md
-      items:
-      - name: Anlık görüntü hatalarını ayıklama hakkında SSS
-        href: debug-live-azure-apps-faq.md
-      - name: Anlık görüntü hatalarını ayıklamayla ilgili sorunları giderme
-        href: debug-live-azure-apps-troubleshooting.md
+    - name: Canlı bir Azure sanal makine uygulamasında hata ayıklama
+      href: debug-live-azure-virtual-machines.md
+    - name: Canlı bir Azure Kubernetes uygulamasında hata ayıklama
+      href: debug-live-azure-kubernetes.md
+    - name: Anlık görüntü hatalarını ayıklama hakkında SSS
+      href: debug-live-azure-apps-faq.md
+    - name: Anlık görüntü hatalarını ayıklamayla ilgili sorunları giderme
+      href: debug-live-azure-apps-troubleshooting.md
   - name: Belirli uygulama türlerinde hata ayıklama
     href: debugging-applications.md
     items:
@@ -838,9 +841,9 @@ items:
   items:
   - name: Visual Studio’da hata ayıklayıcısı yenilikleri
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 71d02bd5fba02367da6f28400c4b991784422133
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231667"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335473"
