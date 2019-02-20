@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335239"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450327"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
+# <a name="create-applications-in-bidirectional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
 
 Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüleyen uygulamalar oluşturmak için Visual Studio kullanabilirsiniz. Bazı özellikler için özellikleri ayarlayabilirsiniz. Diğer durumlarda, kod özellikleri uygulamalıdır.
 
 > [!NOTE]
 > Girin ve çift yönlü diller görüntülemek için uygun dili ile yapılandırılmış bir Windows sürümü ile çalışmalısınız. Bu bir İngilizce sürümüyle ilgili dil paketi yüklü olan Windows veya Windows uygun şekilde yerelleştirilmiş sürümünü olabilir.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Çift yönlü dil desteği uygulama türleri
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Çift yönlü dil desteği uygulama türleri
 
 -  Windows uygulamaları
 
-   İki yönlü metin, sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren tam çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için iki yönlü destek](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Tam olarak iki yönlü metnin sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için çift yönlü destek](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Web uygulamaları
 
-   Web Hizmetleri, UTF-8 ve çift yönlü diller gerektiren uygulamalar için uygun hale getirir, Unicode metni gönderip destekler. Bir web uygulaması yönlü destek derecesini bağımlı kullanıcının tarayıcı yönlü özelliklere ne kadar iyi destekler, bu nedenle web istemcisi uygulamalarını tarayıcılar için kendi kullanıcı arabirimini kullanır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Web Hizmetleri, UTF-8 ve çift yönlü diller gerektiren uygulamalar için uygun hale getirir, Unicode metni gönderip destekler. Web istemcisi uygulamalarını tarayıcılar için kullanıcı arabirimini kullanır, çift yönlü derecesini, destek için bir web uygulaması kullanıcı tarayıcısı bu çift yönlü Özellikler ne kadar iyi destekleyen bağlıdır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 Konsol uygulamaları, metin çift yönlü dil desteği içermez. Windows konsol uygulamaları ile nasıl çalıştığına ilişkin bir sonucu budur.
 
@@ -62,7 +62,7 @@ Varsayılan olarak, Visual Studio'daki metin girişi denetimleri sağdan sola ok
 
 - Her zaman onay kutuları, açılan listeler ve diğer Visual Studio iletişim kutularındaki denetimler sağdan sola okuma düzeni kullanın.
 
-- Kod Düzenleyicisi'ni (ve metin düzenleyici) sağdan sola okuma düzeni desteklemez. Bir çift yönlü dil metin girebilirsiniz, ancak okuma düzeni, her zaman sol ve sağ.
+- Kod Düzenleyicisi'ni (ve metin düzenleyici) sağdan sola okuma düzeni desteklemez. Bir çift yönlü dil metin girebilirsiniz, ancak okuma her zaman sol ve sağ sırasıdır.
 
 ## <a name="arabic-or-hebrew-object-names"></a>Arapça veya İbranice nesne adları
 

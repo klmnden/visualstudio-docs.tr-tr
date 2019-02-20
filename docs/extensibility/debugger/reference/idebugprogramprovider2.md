@@ -12,77 +12,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a91016c493b722ef6c14a0fe6e45468544f35d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a1ca2f649bd680249cc00ec537c6015def6ad8a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995602"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449614"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-Bu kayıtlı arabirim Yöneticisi (SDM) "aracılığıyla yayımlanan" programlar hakkında bilgi edinmek için oturum hata ayıklama sağlayan [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) arabirimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDebugProgramProvider2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE), ayıklanan programlar hakkında bilgi sağlamak için bu arabirimi uygular. Bu arabirim ölçüm kullanarak kayıt defterini DE bölümünde kayıtlı `metricProgramProvider`anlatılan şekilde [hata ayıklama için SDK Yardımcıları](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- COM'ın arama `CoCreateInstance` işleviyle `CLSID` kayıt defterinden alınan program sağlayıcısı. Örneğe bakın.  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Çalışan, çeşitli yollarla filtrelenmiş programlar hakkında bilgi edinir.|  
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Bir program düğümü verilen bir özel işlem kimliği alır.|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Belirli türde işlemleri ile ilişkili sağlayıcı olayları izlemek üzere bir geri çağırma oluşturur.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Bir yerel ayar için DE tarafından gereken tüm dile özgü kaynakları oluşturur.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Normalde, bir işlem, bu işlemde çalışan programlar hakkında bilgi edinmek için bu arabirimi kullanır.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)  
-{  
-    // This is typically defined globally.  For this example, it is  
-    // defined here.  
-    static const WCHAR strRegistrationRoot[] = L"Software\\Microsoft\\VisualStudio\\8.0Exp";  
-    IDebugProgramProvider2 *pProvider = NULL;  
-    if (pDebugEngineGuid != NULL) {  
-        CLSID clsidProvider = { 0 };  
-        ::GetMetric(NULL,  
-                    metrictypeEngine,  
-                    *pDebugEngineGuid,  
-                    metricProgramProvider,  
-                    &clsidProvider,  
-                    strRegistrationRoot);  
-        if (!IsEqualGUID(clsidProvider,GUID_NULL)) {  
-            CComPtr<IDebugProgramProvider2> spProgramProvider;  
-            spProgramProvider.CoCreateInstance(clsidProvider);  
-            if (spProgramProvider != NULL) {  
-                pProvider = spProgramProvider.Detach();  
-            }  
-        }  
-    }  
-    return(pProvider);  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [Hata Ayıklama için SDK Yardımcıları](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+Bu kayıtlı arabirim Yöneticisi (SDM) "aracılığıyla yayımlanan" programlar hakkında bilgi edinmek için oturum hata ayıklama sağlayan [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) arabirimi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDebugProgramProvider2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar
+Hata ayıklama altyapısı (DE), ayıklanan programlar hakkında bilgi sağlamak için bu arabirimi uygular. Bu arabirim ölçüm kullanarak kayıt defterini DE bölümünde kayıtlı `metricProgramProvider`anlatılan şekilde [hata ayıklama için SDK Yardımcıları](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+COM'ın arama `CoCreateInstance` işleviyle `CLSID` kayıt defterinden alınan program sağlayıcısı. Örneğe bakın.
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Çalışan, çeşitli yollarla filtrelenmiş programlar hakkında bilgi edinir.|
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Bir program düğümü verilen bir özel işlem kimliği alır.|
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Belirli türde işlemleri ile ilişkili sağlayıcı olayları izlemek üzere bir geri çağırma oluşturur.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Bir yerel ayar için DE tarafından gereken tüm dile özgü kaynakları oluşturur.|
+
+## <a name="remarks"></a>Açıklamalar
+Normalde, bir işlem, bu işlemde çalışan programlar hakkında bilgi edinmek için bu arabirimi kullanır.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="example"></a>Örnek
+
+```cpp
+IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
+{
+    // This is typically defined globally. For this example, it is
+    // defined here.
+    static const WCHAR strRegistrationRoot[] = L"Software\\Microsoft\\VisualStudio\\8.0Exp";
+    IDebugProgramProvider2 *pProvider = NULL;
+    if (pDebugEngineGuid != NULL) {
+        CLSID clsidProvider = { 0 };
+        ::GetMetric(NULL,
+                    metrictypeEngine,
+                    *pDebugEngineGuid,
+                    metricProgramProvider,
+                    &clsidProvider,
+                    strRegistrationRoot);
+        if (!IsEqualGUID(clsidProvider,GUID_NULL)) {
+            CComPtr<IDebugProgramProvider2> spProgramProvider;
+            spProgramProvider.CoCreateInstance(clsidProvider);
+            if (spProgramProvider != NULL) {
+                pProvider = spProgramProvider.Detach();
+            }
+        }
+    }
+    return(pProvider);
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)  
+[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)  
+[Hata Ayıklama için SDK Yardımcıları](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

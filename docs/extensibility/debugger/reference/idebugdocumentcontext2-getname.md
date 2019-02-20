@@ -12,85 +12,85 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c949d8767e3af72fcab145a95830a918ab109287
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: caa6957f2eb34d2b125d189c87d4ca9a58126209
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925879"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449989"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
-Bu belge bağlamına içeren belge görüntülenebilir adını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetName(   
-   GETNAME_TYPE gnType,  
-   BSTR*        pbstrFileName  
-);  
-```  
-  
-```csharp  
-int GetName(   
-   enum_GETNAME_TYPE  gnType,  
-   out string         pbstrFileName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `gnType`  
- [in] Bir değer [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) adı döndürülecek türünü belirten sabit listesi.  
-  
- `pbstrFileName`  
- [out] Dosya adını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem genellikle çağrısı iletir [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) yöntemi sürece belge bağlam belge adı kendisi (örneğin Göster) depolamak için yazılır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bu yöntem için basit bir uygulama gösterilmektedir `CDebugContext` gösteren nesne [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) arabirimi.  
-  
-```cpp  
-HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)    
-{    
-   HRESULT hr;    
-  
-   // Check for a valid file name argument.    
-   if (pbstrFileName)    
-   {    
-      *pbstrFileName = NULL;    
-  
-      switch (gnType)    
-      {    
-         case GN_NAME:    
-         case GN_FILENAME:    
-         {    
-            // Copy the member file name into the local file name.    
-            *pbstrFileName = SysAllocString(m_sbstrFileName);    
-            // Check for successful copy.    
-            hr = (*pbstrFileName) ? S_OK : E_OUTOFMEMORY;    
-            break;    
-         }    
-         default:    
-         {    
-            hr = E_FAIL;    
-            break;    
-         }    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+Bu belge bağlamına içeren belge görüntülenebilir adını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetName(
+    GETNAME_TYPE gnType,
+    BSTR*        pbstrFileName
+);
+```
+
+```csharp
+int GetName(
+    enum_GETNAME_TYPE  gnType,
+    out string         pbstrFileName
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`gnType`  
+[in] Bir değer [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) adı döndürülecek türünü belirten sabit listesi.
+
+`pbstrFileName`  
+[out] Dosya adını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+Bu yöntem genellikle çağrısı iletir [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) yöntemi sürece belge bağlam belge adı kendisi (örneğin Göster) depolamak için yazılır.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek, bu yöntem için basit bir uygulama gösterilmektedir `CDebugContext` gösteren nesne [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) arabirimi.
+
+```cpp
+HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
+{
+    HRESULT hr;
+
+    // Check for a valid file name argument.
+    if (pbstrFileName)
+    {
+        *pbstrFileName = NULL;
+
+        switch (gnType)
+        {
+            case GN_NAME:
+            case GN_FILENAME:
+            {
+                // Copy the member file name into the local file name.
+                *pbstrFileName = SysAllocString(m_sbstrFileName);
+                // Check for successful copy.
+                hr = (*pbstrFileName) ? S_OK : E_OUTOFMEMORY;
+                break;
+            }
+            default:
+            {
+                hr = E_FAIL;
+                break;
+            }
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
+[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

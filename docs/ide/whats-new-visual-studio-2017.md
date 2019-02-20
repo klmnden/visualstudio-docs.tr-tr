@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318816"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450600"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -364,7 +364,7 @@ Daha fazla bilgi için [yapay ZEKA için Visual Studio Araçları](../ai/about-a
 
 Visual Studio 2017 genellikle, geliştirme deneyimini daha da iyi hale getirebilir yeni özelliklerle güncelleştiriyoruz. Deneysel Önizleme aşamasında olan en önemli güncelleştirmeler bazılarını bir özeti aşağıda verilmiştir:
 
-* **[Paylaşım canlı](https://visualstudio.microsoft.com/services/live-share/)**, bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve anlık yönlü işbirliği doğrudan Visual Studio'dan elde etmenize olanak tanıyan yeni bir aracı. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.<br><br>Daha fazla bilgi için [Canlı Paylaşım SSS](/visualstudio/liveshare/faq).<br><br>
+* **[Paylaşım canlı](https://visualstudio.microsoft.com/services/live-share/)**, bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve Visual Studio'dan doğrudan anlık çift yönlü işbirliği elde etmenize olanak tanıyan yeni bir aracı. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.<br><br>Daha fazla bilgi için [Canlı Paylaşım SSS](/visualstudio/liveshare/faq).<br><br>
 * **[Intellicode](https://visualstudio.microsoft.com/services/intellicode/)**, geliştiriciler kod desenleri ve ekip stili için catch zor kod sorunlarını bulmak için daha iyi bağlama duyarlı kod tamamlama, teslim etmek için yapay ZEKA kullanarak yazılım geliştirme geliştiren yeni bir özellik Kılavuzu , ve odağı kod incelemeleri açısından gerçekten önemli alana odaklanılmıştır. <br><br>Daha fazla bilgi için [Intellicode SSS](/visualstudio/intellicode/faq).
 
 Daha fazla geliştirilme Visual Studio 2017 için ne hakkında olduğu edinmek ister misiniz? Bkz: [Visual Studio yol haritası](/visualstudio/productinfo/vs2018-roadmap) sayfası.

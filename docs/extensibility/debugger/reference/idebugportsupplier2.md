@@ -12,76 +12,76 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8721718390efb5c94b89b1185dcd64f11da4e0a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a52bc088b2781f31894213c4c37c50069c9fea2
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942340"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449898"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-Bu arabirim bağlantı noktalarına oturum hata ayıklama Yöneticisi (SDM) sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDebugPortSupplier2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Özel bağlantı noktası sağlayıcısı bağlantı noktası sağlayıcısı temsil etmek için bu arabirimi uygular.  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bir çağrı `CoCreateInstance` ile bir bağlantı noktası tedarikçi `GUID` (Bu, bu arabirimi sağlamak için normal şekilde) Bu arabirim döndürür. Örneğin:  
-  
-```cpp  
-IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
-{  
-    IDebugPortSupplier2 *pPS = NULL;  
-    if (pPortSupplierGuid != NULL) {  
-        CComPtr<IDebugPortSupplier2> spPortSupplier;  
-        spPortSupplier.CoCreateInstance(*pPortSupplierGuid);  
-        if (spPortSupplier != NULL) {  
-            pPS = spPortSupplier.Detach();  
-        }  
-    }  
-    return (pPS);  
-}  
-```  
-  
- Bir çağrı [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) tarafından kullanılan geçerli bağlantı noktası sağlayıcısı gösteren bu bir arabirim döndürür [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
-  
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) bağlantı noktası oluşturulan bağlantı noktası sağlayıcısı temsil eden bu arabirimi döndürür.  
-  
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) listesini temsil `IDebugPortSupplier` arabirimleri ( `IEnumDebugPortSuppliers` arabirimi öğesinden alınan [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), tüm bağlantı noktası sağlayıcıları temsil eden ilekayıtlı[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
-  
- Hata ayıklama altyapısı genellikle bağlantı noktası sağlayıcısı ile etkileşime girmez.  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugPortSupplier2`.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Bağlantı sağlayıcı adını alır.|  
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Bağlantı noktası tedarikçi tanımlayıcısını alır.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Bir bağlantı noktasına bağlantı noktası sağlayıcısı alır.|  
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Mevcut bağlantı noktalarını listeler.|  
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Bağlantı noktası sağlayıcısı yeni bağlantı noktaları ekleme desteklediğini doğrular.|  
-|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Bir bağlantı noktası ekler.|  
-|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Bir bağlantı noktası kaldırır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağlantı noktası sağlayıcısı adı ve kimliği ile kendisini tanımlamak, ekleyin ve bağlantı noktalarını kaldırın ve bağlantı noktası sağlayıcısı sağlayan tüm bağlantı noktalarını listele.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
+Bu arabirim bağlantı noktalarına oturum hata ayıklama Yöneticisi (SDM) sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDebugPortSupplier2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar
+Özel bağlantı noktası sağlayıcısı bağlantı noktası sağlayıcısı temsil etmek için bu arabirimi uygular.
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+Bir çağrı `CoCreateInstance` ile bir bağlantı noktası tedarikçi `GUID` (Bu, bu arabirimi sağlamak için normal şekilde) Bu arabirim döndürür. Örneğin:
+
+```cpp
+IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
+{
+    IDebugPortSupplier2 *pPS = NULL;
+    if (pPortSupplierGuid != NULL) {
+        CComPtr<IDebugPortSupplier2> spPortSupplier;
+        spPortSupplier.CoCreateInstance(*pPortSupplierGuid);
+        if (spPortSupplier != NULL) {
+            pPS = spPortSupplier.Detach();
+        }
+    }
+    return (pPS);
+}
+```
+
+Bir çağrı [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) tarafından kullanılan geçerli bağlantı noktası sağlayıcısı gösteren bu bir arabirim döndürür [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+
+[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) bağlantı noktası oluşturulan bağlantı noktası sağlayıcısı temsil eden bu arabirimi döndürür.
+
+[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) listesini temsil `IDebugPortSupplier` arabirimleri ( `IEnumDebugPortSuppliers` arabirimi öğesinden alınan [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), tüm bağlantı noktası sağlayıcıları temsil eden ilekayıtlı[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+
+Hata ayıklama altyapısı genellikle bağlantı noktası sağlayıcısı ile etkileşime girmez.
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugPortSupplier2`.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Bağlantı sağlayıcı adını alır.|
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Bağlantı noktası tedarikçi tanımlayıcısını alır.|
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Bir bağlantı noktasına bağlantı noktası sağlayıcısı alır.|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Mevcut bağlantı noktalarını listeler.|
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Bağlantı noktası sağlayıcısı yeni bağlantı noktaları ekleme desteklediğini doğrular.|
+|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Bir bağlantı noktası ekler.|
+|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Bir bağlantı noktası kaldırır.|
+
+## <a name="remarks"></a>Açıklamalar
+Bağlantı noktası sağlayıcısı adı ve kimliği ile kendisini tanımlamak, ekleyin ve bağlantı noktalarını kaldırın ve bağlantı noktası sağlayıcısı sağlayan tüm bağlantı noktalarını listele.
+
+## <a name="requirements"></a>Gereksinimler
+Üstbilgi: msdbg.h
+
+Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)  
+[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)  
+[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)  
+[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

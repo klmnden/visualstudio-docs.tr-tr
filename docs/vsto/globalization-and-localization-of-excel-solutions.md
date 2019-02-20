@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866837"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450184"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Genelleştirme ve yerelleştirme Excel çözümleri
   Bu bölüm Windows ayarları İngilizce dışındaki bilgisayarlarda çalışan Microsoft Office Excel çözümleri ilgili özel konular hakkında bilgi içerir. Diğer Visual Studio kullanarak çözüm türlerini oluşturduğunuzda karşılaşabileceğinizi birçok yönden Genelleştirme ve yerelleştirme Microsoft Office çözümleri aynı değildir. Genel bilgi için bkz. [Globalize ve uygulamalarını yerelleştirme](../ide/globalizing-and-localizing-applications.md).
@@ -47,7 +47,7 @@ ms.locfileid: "54866837"
  Yine de herhangi bir bölümünü belge metninin ile etkileşime giren kodunuzun metin ve adlandırılmış aralıklar, bu yer işaretleri diliyle eşleşiyor devam eder ve tüm gerekli Office belgesinin biçimlendirme diğer görünen alanları uyum emin olmanız gerekir farklı dil bilgisi ve metin uzunluğu için ayarlayın. Görece küçük metin içeren belge şablonları için kaynak dosyalarında metin depolamak ve ardından metni çalışma zamanında yükleme düşünmek isteyebilirsiniz.
 
 ### <a name="text-direction"></a>Metin yönü
- Excel'de, sağdan sola metin işlemek için çalışma özelliği ayarlayabilirsiniz. Konak denetimleri veya sahip herhangi bir denetime bir `RightToLeft` tasarımcıda otomatik olarak yerleştirilen özelliği, bu ayarlar çalışma zamanında eşleşmesi. Word belge ayarı (yalnızca değiştirmeniz, metin hizalamasını), iki yönlü metin yok denetimler için bu ayarı eşlenemez bu nedenle. Bunun yerine, her denetim için metin hizalamasını ayarlamanız gerekir. Tüm denetimleri yol ve bunları sağdan sola metin işlemek için zorlamak için kod yazmak mümkündür.
+ Excel'de, sağdan sola metin işlemek için çalışma özelliği ayarlayabilirsiniz. Konak denetimleri veya sahip herhangi bir denetime bir `RightToLeft` tasarımcıda otomatik olarak yerleştirilen özelliği, bu ayarlar çalışma zamanında eşleşmesi. Word için iki yönlü metnin (yalnızca değiştirmeniz, metin hizalamasını), bir belge ayarı yok denetimler için bu ayarı eşlenemez bu nedenle. Bunun yerine, her denetim için metin hizalamasını ayarlamanız gerekir. Tüm denetimleri yol ve bunları sağdan sola metin işlemek için zorlamak için kod yazmak mümkündür.
 
 ### <a name="change-culture"></a>Kültürü değiştirme
  İçin her şey bu iş parçacığı üzerinde çalışan iş parçacığı kültürü için yaptığınız tüm değişiklikler etkiler, belge düzeyinde özelleştirme kodunuzun ana UI iş parçacığı Excel, genellikle paylaşır; değişiklik özelleştirmeniz için sınırlı değildir.

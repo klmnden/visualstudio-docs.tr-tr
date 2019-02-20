@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73d3dd7d77caa1e3c7a3539638d125d927bebfbf
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908861"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450587"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -56,15 +56,15 @@ Gelişmiş Özellikler bulabilirsiniz **Düzenle** > **Gelişmiş** araç çubu�
 |Seçimi Biçimlendir|Kod satırlarının uygun girintisini ayarlar ve seçimdeki satırları ayırmak için çengelli ayraç taşır.|
 |Seçili satırları sekmeye Dönüştür|Uygun yerlerde sekmeleri öndeki boşlukları değiştirir.|
 |Seçili satırları sekmeye dönüştürme|Değişiklikleri sekmeleri boşluklarla değiştirin. Dosyanızdaki tüm boşlukları sekme (veya tüm sekmeleri boşluklara) dönüştürmek isterseniz, kullanabileceğiniz `Edit.ConvertSpacesToTabs` ve `Edit.ConvertTabsToSpaces` komutları. Bu komutlar Visual Studio menülerinde görünmez, ancak bunları çağırabilirsiniz **hızlı erişim** penceresinden veya komut penceresinden.|
-|Büyük Harf Yap|Büyük harfe Seçimdeki tüm karakterleri veya seçim yok ise büyük harfe ekleme noktasındaki karakteri değiştirir.|
-|Küçük harfe Dönüştür|Küçük harf, seçimdeki tüm karakterleri veya herhangi bir seçim yoksa ekleme noktasındaki karakteri küçük harfe değiştirir.|
+|Büyük Harf Yap|Büyük harfe Seçimdeki tüm karakterleri veya seçim yok ise büyük harfe ekleme noktasındaki karakteri değiştirir. Kısayol: **CTRL**+**Shift**+**U**.|
+|Küçük harfe Dönüştür|Küçük harf, seçimdeki tüm karakterleri veya herhangi bir seçim yoksa ekleme noktasındaki karakteri küçük harfe değiştirir. Kısayol: **CTRL**+**U**.|
 |Seçili satırları Yukarı Taşı|Seçili satır bir satır yukarı taşır. Kısayol: **Alt**+**yukarı ok**.|
 |Seçili satırları Aşağı Taşı|Seçili satır bir satır aşağı taşır. Kısayol: **Alt**+**aşağı ok**.|
 |Yatay boşluğu Sil|Sekme veya boşluk geçerli satırın sonunda siler.|
 |Boşluğu görüntüle|Boşlukları Kabarık noktalar olarak, sekmeleri oklar olarak görüntüler. Bir dosyanın sonu dikdörtgen bir simge olarak görüntülenir. Varsa **Araçları** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >  **Sözcük kaydırma** > **Show görünür glyph'leri sözcük kaydırma için** olduğu belirlenirse, o glyph de gösterilir.|
 |Sözcük kaydırma|Tüm satırların kod penceresinde görünür olmasını belgeye neden olur. Sözcük kaydırma ve buna kapatabilirsiniz **metin düzenleyici tüm diller** ayarları (**Araçları** > **seçenekleri** > **metin düzenleyicisi**   >  **Tüm diller**).|
-|Seçimi açıklama satırı yap|Seçime veya geçerli satıra yorum karakterleri ekler.|
-|Seçimi işletilir satıra Çevir|Seçimden veya geçerli satıra yorum karakterleri kaldırır.|
+|Seçimi açıklama satırı yap|Seçime veya geçerli satıra yorum karakterleri ekler. Kısayol: **CTRL**+**K**, **Ctrl**+**C**|
+|Seçimi işletilir satıra Çevir|Seçimden veya geçerli satıra yorum karakterleri kaldırır. Kısayol: **CTRL**+**K**, **Ctrl**+**U**|
 |Satır Girintisini Artır|Bir sekme (veya eşdeğer boşluk) seçilen satırlardan veya geçerli satırı ekler.|
 |Satır girintisini Azalt|Bir sekme (veya eşdeğer boşluk) seçilen satırlardan veya geçerli satırı kaldırır.|
 |Etiket Seç|Etiket (örneğin, XML veya HTML) içeren bir belgede etiket seçilir.|

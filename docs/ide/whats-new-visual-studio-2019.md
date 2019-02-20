@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318400"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450262"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
 
@@ -85,7 +85,7 @@ Daha fazla bilgi için [geliştirilmiş Visual Studio 2019 içinde: Nesnelerle v
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Canlı Paylaşım
 
-[Visual Studio Canlı Paylaşım](https://visualstudio.microsoft.com/services/live-share/) bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve anlık yönlü işbirliği doğrudan Visual Studio'dan elde etmenize olanak tanıyan bir geliştirici hizmetidir. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.
+[Visual Studio Canlı Paylaşım](https://visualstudio.microsoft.com/services/live-share/) bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve Visual Studio'dan doğrudan anlık çift yönlü işbirliği elde etmenize olanak tanıyan bir geliştirici hizmetidir. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.
 
 Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
 

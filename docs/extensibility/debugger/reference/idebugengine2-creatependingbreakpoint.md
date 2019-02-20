@@ -12,66 +12,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d55f278a5d966e71e2e3f8f1ebf36280016a9c48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1beac81e3d2b9e5a6c563028bbc39c7f4cb82539
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974951"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450340"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
-Hata ayıklama altyapısı (DE) bir bekleyen kesme noktası oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2*  pBPRequest,  
-   IDebugPendingBreakpoint2** ppPendingBP  
-);  
-```  
-  
-```csharp  
-int CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2     pBPRequest,  
-   out IDebugPendingBreakpoint2 ppPendingBP  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pBPRequest`  
- [in] Bir [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) oluşturmak için bekleyen kesme noktasını tanımlayan nesne.  
-  
- `ppPendingBP`  
- [out] Döndürür bir [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) bekleyen kesme noktasının temsil eden nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Genellikle döndürür `E_FAIL` varsa `pBPRequest` parametresi biri DE tarafından desteklenen herhangi bir dilde eşleşmiyor `pBPRequest` parametresi, geçersiz veya eksik.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir bekleyen kesme noktasının aslında bir kesme noktası kodunu bağlamak için gerekli tüm bilgileri bir koleksiyonudur. Bu yöntemin döndürdüğü bekleyen kesme noktasına kadar koduna bağlı değil [bağlama](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) yöntemi çağrılır.  
-  
- Bekleyen kesme noktası her kullanıcı kümeleri oturum hata ayıklama Yöneticisi (SDM) her ekli DE bu yöntemi çağırır. Bu kesme noktası o DE içinde çalışan programlar için geçerli olduğunu doğrulamak için DE en fazla olur.  
-  
- Kullanıcı, bir kod satırında bir kesme noktası ayarlar, bu koda karşılık gelen belgedeki en yakın satır kesme noktasını bağlamak DE ücretsizdir. Bu kullanıcının çok satırlı deyiminin ilk satırında bir kesme noktası ayarlayın, ancak son satırda (burada tüm kodlar hata ayıklama bilgilerini öznitelendirilen) bağlamak mümkün kılar.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bu yöntem için basit bir uygulama gösterilmektedir `CProgram` nesne. DE'ın uygulaması `IDebugEngine2::CreatePendingBreakpoint` sonra bu uygulama, her programda yöntemin tüm çağrıları iletebilir.  
-  
-```  
-HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
-{    
-  
-   // Create and initialize the CPendingBreakpoint object.  
-   CComObject<CPendingBreakpoint> *pPending;    
-   CComObject<CPendingBreakpoint>::CreateInstance(&pPending);    
-   pPending->Initialize(pBPRequest, m_pInterp, m_pCallback, m_pEngine);    
-   return pPending->QueryInterface(ppPendingBP);    
-}    
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [bağlama](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Hata ayıklama altyapısı (DE) bir bekleyen kesme noktası oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT CreatePendingBreakpoint(
+    IDebugBreakpointRequest2*  pBPRequest,
+    IDebugPendingBreakpoint2** ppPendingBP
+);
+```
+
+```csharp
+int CreatePendingBreakpoint(
+    IDebugBreakpointRequest2     pBPRequest,
+    out IDebugPendingBreakpoint2 ppPendingBP
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`pBPRequest`  
+[in] Bir [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) oluşturmak için bekleyen kesme noktasını tanımlayan nesne.
+
+`ppPendingBP`  
+[out] Döndürür bir [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) bekleyen kesme noktasının temsil eden nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Genellikle döndürür `E_FAIL` varsa `pBPRequest` parametresi biri DE tarafından desteklenen herhangi bir dilde eşleşmiyor `pBPRequest` parametresi, geçersiz veya eksik.
+
+## <a name="remarks"></a>Açıklamalar
+Bir bekleyen kesme noktasının aslında bir kesme noktası kodunu bağlamak için gerekli tüm bilgileri bir koleksiyonudur. Bu yöntemin döndürdüğü bekleyen kesme noktasına kadar koduna bağlı değil [bağlama](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) yöntemi çağrılır.
+
+Bekleyen kesme noktası her kullanıcı kümeleri oturum hata ayıklama Yöneticisi (SDM) her ekli DE bu yöntemi çağırır. Bu kesme noktası o DE içinde çalışan programlar için geçerli olduğunu doğrulamak için DE en fazla olur.
+
+Kullanıcı, bir kod satırında bir kesme noktası ayarlar, bu koda karşılık gelen belgedeki en yakın satır kesme noktasını bağlamak DE ücretsizdir. Bu kullanıcının çok satırlı deyiminin ilk satırında bir kesme noktası ayarlayın, ancak son satırda (burada tüm kodlar hata ayıklama bilgilerini öznitelendirilen) bağlamak mümkün kılar.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek, bu yöntem için basit bir uygulama gösterilmektedir `CProgram` nesne. DE'ın uygulaması `IDebugEngine2::CreatePendingBreakpoint` sonra bu uygulama, her programda yöntemin tüm çağrıları iletebilir.
+
+```
+HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)
+{
+    // Create and initialize the CPendingBreakpoint object.
+    CComObject<CPendingBreakpoint> *pPending;
+    CComObject<CPendingBreakpoint>::CreateInstance(&pPending);
+    pPending->Initialize(pBPRequest, m_pInterp, m_pCallback, m_pEngine);
+    return pPending->QueryInterface(ppPendingBP);
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
+[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
+[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

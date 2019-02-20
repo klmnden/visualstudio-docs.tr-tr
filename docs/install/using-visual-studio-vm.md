@@ -2,7 +2,7 @@
 title: Visual Studio kullanarak bir Azure sanal makinesinde
 titleSuffix: ''
 description: Bir Azure sanal makinesinde Visual Studio kullanmayı öğrenin
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952911"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450405"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -34,8 +34,8 @@ En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görünt�
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Önizleme (Önizleme 2)                   |           Enterprise         | Sürüm 16.0.0 Önizleme 2 |
-| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.4      |
+|    Visual Studio 2019: Önizleme (Önizleme 3)                   |           Enterprise         | Önizleme sürümüne 16.0.0 3 |
+| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.7      |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.20     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Hiçbiri             | (Bakım için süresi doldu)  |

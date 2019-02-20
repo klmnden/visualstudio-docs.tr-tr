@@ -12,65 +12,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb96842debd9c7132cbe7fe5629e5c9374a78cd5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14fc55c65aa94d4f84d541de9f20e5f5886142ad
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996655"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450093"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-Bu özellik için kullanılabilir özel görüntüleyiciler sayısını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetCustomViewerCount(  
-   ULONG* pcelt  
-);  
-```  
-  
-```csharp  
-int GetCustomViewerCount(  
-   out uint pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pcelt`  
- [out] Bu özellik için kullanılabilir özel görüntüleyiciler sayısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tür görselleştiricileri desteklemek için bu yöntem çağrısı iletir [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) yöntemi. İfade değerlendirici, ayrıca özel görüntüleyiciler için bu özelliğin türünü destekliyorsa, bu yöntem döndürülen değeri özel görüntüleyiciler sayısı ekler.  
-  
- Tür görselleştiricileri ve özel görüntüleyiciler arasındaki farklar hakkında ayrıntılı bilgi için bkz. [tür görselleştiricisi ve özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CProperty** gösteren nesne [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) arabirimi.  
-  
-```cpp  
-STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  
-{  
-    if (pcelt == NULL)  
-    {  
-        return E_POINTER;  
-    }  
-  
-    if (GetVisualizerService())  
-    {  
-        return m_pIEEVisualizerService->GetCustomViewerCount(pcelt);  
-    }  
-    else  
-    {  
-        return E_NOTIMPL;  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)   
- [Tür Görselleştiricisi ve Özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+Bu özellik için kullanılabilir özel görüntüleyiciler sayısını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetCustomViewerCount(
+    ULONG* pcelt
+);
+```
+
+```csharp
+int GetCustomViewerCount(
+    out uint pcelt
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+`pcelt`  
+[out] Bu özellik için kullanılabilir özel görüntüleyiciler sayısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+Tür görselleştiricileri desteklemek için bu yöntem çağrısı iletir [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) yöntemi. İfade değerlendirici, ayrıca özel görüntüleyiciler için bu özelliğin türünü destekliyorsa, bu yöntem döndürülen değeri özel görüntüleyiciler sayısı ekler.
+
+Tür görselleştiricileri ve özel görüntüleyiciler arasındaki farklar hakkında ayrıntılı bilgi için bkz. [tür görselleştiricisi ve özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CProperty** gösteren nesne [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) arabirimi.
+
+```cpp
+STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
+{
+    if (pcelt == NULL)
+    {
+        return E_POINTER;
+    }
+
+    if (GetVisualizerService())
+    {
+        return m_pIEEVisualizerService->GetCustomViewerCount(pcelt);
+    }
+    else
+    {
+        return E_NOTIMPL;
+    }
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
+[tür görselleştiricisi ve özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

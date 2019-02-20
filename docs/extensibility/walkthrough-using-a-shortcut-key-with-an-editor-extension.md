@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d484ae5bffad903258b7f6f5d4561a23dcba1f5d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988577"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450496"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici uzantısı ile kısayol tuşu kullanma
 Kısayol tuşları için düzenleyici uzantı yanıt verebilir. Aşağıdaki örneklerde, bir kısayol tuşu kullanarak görünüm kenarlığı metin görünümü ekleme işlemi gösterilmektedir. Bu izlenecek yol, Görünüm penceresi kenarlığı Düzenleyicisi şablonunu temel alıyorsa ve kenarlığı kullanarak eklemek imkan + karakter.  
@@ -47,12 +47,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 KeyBindingTestTextViewCreationListener.cs sınıf dosyasında AdornmentLayer adını değiştirmek **KeyBindingTest** için **PurpleCornerBox**:
   
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
+```csharp  
+[Export(typeof(AdornmentLayerDefinition))]  
+[Name("PurpleCornerBox")]  
+[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+public AdornmentLayerDefinition editorAdornmentLayer;  
+```  
 
 ## <a name="handle-typechar-command"></a>Tanıtıcı TYPECHAR komutu
 Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek için tek yolu uygulama önce bir <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> filtresine komutu. Visual Studio 2017 sürüm 15.6 Düzenleyicisi komut işleyicileri bağlı modern ve Basitleştirilmiş bir yaklaşım sunulmaktadır. Sonraki iki bölümde hem eski hem de modern yaklaşımı kullanarak bir komut nasıl ele alınacağını göstermektedir.
