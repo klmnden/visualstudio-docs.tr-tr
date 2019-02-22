@@ -10,43 +10,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22aa4c86cc00b57e7c290d8b5a5655713ee05052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad90c1ec332c2f214514e660b27dc5a915485f99
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955369"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641344"
 ---
 # <a name="wizards"></a>Sihirbazlar
-Bir sihirbaz oluşturduktan sonra genellikle eklemek istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başkalarının da kullanabilmesi için tümleşik geliştirme ortamı (IDE). Eklenen Sihirbazı ardından görünür **Yeni Proje Ekle** veya **Yeni Öğe Ekle** iletişim kutuları. Görmek için **Yeni Proje Ekle** veya **Yeni Öğe Ekle** iletişim kutuları, sağ tıklayın, açık bir çözümde **Çözüm Gezgini**, işaret **Ekle**, ve ardından **yeni proje** veya **yeni öğe**.  
-  
- Sihirbazlar uygulanabilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcıların bir ağaç görünümünü açtıklarında kullanılabilir değerler arasından seçim **Yeni Proje Ekle** iletişim kutusu veya **Yeni Öğe Ekle** iletişim kutusu veya ne zaman sağ bir öğeyi **Çözüm Gezgini**.  
-  
- Sihirbazı, yeni bir proje veya ites adını yerelleştirme seçeneği sağlar ve bunlar Sihirbazı'nı seçtiğinizde, kullanıcıların göreceği simgesi belirleyebilirsiniz. Ayrıca yeni öğeler kullanılabilir diğer öğeleri göre görünme sırasını denetleyebilirsiniz: Öğeleri alfabetik olarak düzenlenmiş gerekmez.  
-  
- Açıldığında, sihirbaza geçirilir özel parametrelere göre farklı şekilde başlayan bir Sihirbazı da sağlayabilirsiniz.  
-  
- Bu bölümdeki konular, neden kullanan dosyalarının tartışmak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Yeni Proje Ekle** ve **Yeni Öğe Ekle** kullanılabilir sihirbazları ve şablonlar arasındaki Sihirbazı'nı listelemek için iletişim kutuları ve Sihirbazı IDE'de düzgün çalışması için karşılaması gereken gereksinimleri.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Şablon Dizin Açıklaması (.Vsdir) Dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
- Dizin tanımı dosyaları şablonu genel bir bakış sağlar ve bunların klasörleri, sihirbaz .vsz dosyasına ve iletişim kutularında bir proje ile ilişkili şablon dosyaları görüntülemek için IDE içindeki işlevleri açıklanmaktadır.  
-  
- [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)  
- Nasıl sihirbazları IDE başlatıldığında açıklar ve üç .vsz dosyasının bölümlerini listeler.  
-  
- [Sihirbaz Arabirimi (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)  
- Açıklar `IDTWizard` sihirbazlar IDE içinde çalışacak şekilde uygulamalıdır arabirimi.  
-  
- [Bağlam Parametreleri](../../extensibility/internals/context-parameters.md)  
- Sihirbazlar nasıl uygulandığını ve IDE, uygulama için bağlam parametreleri başarılı olduğunda ne olacağını açıklar.  
-  
- [Özel Parametreler](../../extensibility/internals/custom-parameters.md)  
- Özel Parametreler sihirbaz başlatıldıktan sonra sihirbazın işlemi denetlemek için kullanmayı açıklar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Proje Türleri](../../extensibility/internals/project-types.md)  
- Yeni proje türleri tasarımı hakkında bilgi sağlayan ek konulara bağlantılar sağlar.  
-  
- [Projeleri Genişletme](../../extensibility/extending-projects.md)  
+Bir sihirbaz oluşturduktan sonra genellikle eklemek istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] başkalarının da kullanabilmesi için tümleşik geliştirme ortamı (IDE). Eklenen Sihirbazı ardından görünür **Yeni Proje Ekle** veya **Yeni Öğe Ekle** iletişim kutuları. Görmek için **Yeni Proje Ekle** veya **Yeni Öğe Ekle** iletişim kutuları, sağ tıklayın, açık bir çözümde **Çözüm Gezgini**, işaret **Ekle**, ve ardından **yeni proje** veya **yeni öğe**.
+
+ Sihirbazlar uygulanabilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcıların bir ağaç görünümünü açtıklarında kullanılabilir değerler arasından seçim **Yeni Proje Ekle** iletişim kutusu veya **Yeni Öğe Ekle** iletişim kutusu veya ne zaman sağ bir öğeyi **Çözüm Gezgini**.
+
+ Sihirbazı, yeni bir proje veya ites adını yerelleştirme seçeneği sağlar ve bunlar Sihirbazı'nı seçtiğinizde, kullanıcıların göreceği simgesi belirleyebilirsiniz. Ayrıca yeni öğeler kullanılabilir diğer öğeleri göre görünme sırasını denetleyebilirsiniz: Öğeleri alfabetik olarak düzenlenmiş gerekmez.
+
+ Açıldığında, sihirbaza geçirilir özel parametrelere göre farklı şekilde başlayan bir Sihirbazı da sağlayabilirsiniz.
+
+ Bu bölümdeki konular, neden kullanan dosyalarının tartışmak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Yeni Proje Ekle** ve **Yeni Öğe Ekle** kullanılabilir sihirbazları ve şablonlar arasındaki Sihirbazı'nı listelemek için iletişim kutuları ve Sihirbazı IDE'de düzgün çalışması için karşılaması gereken gereksinimleri.
+
+## <a name="in-this-section"></a>Bu Bölümde
+- [Şablon Dizin Açıklaması (.Vsdir) Dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+
+ Dizin tanımı dosyaları şablonu genel bir bakış sağlar ve bunların klasörleri, sihirbaz .vsz dosyasına ve iletişim kutularında bir proje ile ilişkili şablon dosyaları görüntülemek için IDE içindeki işlevleri açıklanmaktadır.
+
+- [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)
+
+ Nasıl sihirbazları IDE başlatıldığında açıklar ve üç .vsz dosyasının bölümlerini listeler.
+
+- [Sihirbaz Arabirimi (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
+
+ Açıklar `IDTWizard` sihirbazlar IDE içinde çalışacak şekilde uygulamalıdır arabirimi.
+
+- [Bağlam Parametreleri](../../extensibility/internals/context-parameters.md)
+
+ Sihirbazlar nasıl uygulandığını ve IDE, uygulama için bağlam parametreleri başarılı olduğunda ne olacağını açıklar.
+
+- [Özel Parametreler](../../extensibility/internals/custom-parameters.md)
+
+ Özel Parametreler sihirbaz başlatıldıktan sonra sihirbazın işlemi denetlemek için kullanmayı açıklar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+- [Proje Türleri](../../extensibility/internals/project-types.md)
+
+ Yeni proje türleri tasarımı hakkında bilgi sağlayan ek konulara bağlantılar sağlar.
+
+- [Projeleri Genişletme](../../extensibility/extending-projects.md)
+
  Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeler ve çözümler, kod dosyaları ve kaynak dosyalarını ve kaynak denetimi uygulamak nasıl düzenlemek için.

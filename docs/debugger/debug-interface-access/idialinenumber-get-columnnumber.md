@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f8442c12cdbe31111967bd04e2af6d091e36b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 72f01745ff7274719d6a967a50274eb316718c3b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632127"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
-İfade veya deyimin başladığı sütun sayısını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[C++]  
-HRESULT get_columnNumber (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] İfade veya deyimin başladığı sütun sayısını döndürür. Değer sıfır ise sütun bilgisi mevcut değil.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından döndürülen sütun satırına satırında deyiminin ilk karaktere bir bayt uzaklığı değerdir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+İfade veya deyimin başladığı sütun sayısını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+- [C++]
+HRESULT get_columnNumber ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] İfade veya deyimin başladığı sütun sayısını döndürür. Değer sıfır ise sütun bilgisi mevcut değil.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem tarafından döndürülen sütun satırına satırında deyiminin ilk karaktere bir bayt uzaklığı değerdir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -18,43 +18,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a58abb31ca4e6c48c45bd0883be37803520e30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022735"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639108"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild görev başvurusu
-Windows Presentation Foundation (WPF) derleme işlemi derleme görevleri işaretlemesi ve işlem kaynaklarını derlemek için görevleri de dahil olmak üzere, ek bir kümesi Microsoft build engine (MSBuild) genişletir.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [FileClassifier](../msbuild/fileclassifier-task.md)  
- Bir bütünleştirilmiş kod içine katıştırılmış olarak kaynak kaynak kümesini sınıflandırır. Bir kaynak yerelleştirilebilir değil ise, ana uygulama derlemesine eklenir; Aksi takdirde, bir uydu derlemeye eklenir.  
-  
- [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)  
- En az bir derleme oluşturur [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] projesinde sayfasına başvuruda o projede yerel olarak bildirilmiş bir tür. Oluşturulan derleme, derleme işlemi tamamlandıktan sonra veya derleme işlemi başarısız olursa kaldırılır.  
-  
- [GetWinFXPath](../msbuild/getwinfxpath-task.md)  
- Geçerli dizinin döndürür [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] çalışma zamanı.  
-  
- [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)  
- Yerelleştirilemeyen dönüştürür [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] proje dosyaları için derlenmiş ikili biçimi.  
-  
- [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)  
- İkinci geçiş işaretlemesi derleme gerçekleştirir [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] başvuru türleri aynı projedeki dosyaları.  
-  
- [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)  
- Yerelleştirme öznitelikleri ve yorumlar veya birden fazla birleştirir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tüm derleme için tek bir dosya halinde ikili biçimi dosyaları.  
-  
- [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)  
- Bir veya daha fazla kaynak katıştırır (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ikili biçimi ve diğer uzantı türleri) içine bir *.resources*dosya.  
-  
- [UidManager](../msbuild/uidmanager-task.md)  
- Denetler, güncelleştirir veya tüm yerelleştirmek için benzersiz tanımlayıcıları (Uıd'leri) kaldırır [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] kaynakta bulunan öğeleri [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dosyaları.  
-  
- [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- Ekler  **\<HostInBrowser / >** öğe uygulama bildiriminin (*\<projectname >. exe.manifest*) olduğunda bir [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] Proje oluşturulur.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [MSBuild](../msbuild/msbuild.md)
+Windows Presentation Foundation (WPF) derleme işlemi derleme görevleri işaretlemesi ve işlem kaynaklarını derlemek için görevleri de dahil olmak üzere, ek bir kümesi Microsoft build engine (MSBuild) genişletir.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [FileClassifier](../msbuild/fileclassifier-task.md)
+
+ Bir bütünleştirilmiş kod içine katıştırılmış olarak kaynak kaynak kümesini sınıflandırır. Bir kaynak yerelleştirilebilir değil ise, ana uygulama derlemesine eklenir; Aksi takdirde, bir uydu derlemeye eklenir.
+
+- [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
+
+ En az bir derleme oluşturur [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] projesinde sayfasına başvuruda o projede yerel olarak bildirilmiş bir tür. Oluşturulan derleme, derleme işlemi tamamlandıktan sonra veya derleme işlemi başarısız olursa kaldırılır.
+
+- [GetWinFXPath](../msbuild/getwinfxpath-task.md)
+
+ Geçerli dizinin döndürür [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] çalışma zamanı.
+
+- [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
+
+ Yerelleştirilemeyen dönüştürür [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] proje dosyaları için derlenmiş ikili biçimi.
+
+- [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
+
+ İkinci geçiş işaretlemesi derleme gerçekleştirir [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] başvuru türleri aynı projedeki dosyaları.
+
+- [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
+
+ Yerelleştirme öznitelikleri ve yorumlar veya birden fazla birleştirir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tüm derleme için tek bir dosya halinde ikili biçimi dosyaları.
+
+- [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
+
+ Bir veya daha fazla kaynak katıştırır (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] ikili biçimi ve diğer uzantı türleri) içine bir *.resources*dosya.
+
+- [UidManager](../msbuild/uidmanager-task.md)
+
+ Denetler, güncelleştirir veya tüm yerelleştirmek için benzersiz tanımlayıcıları (Uıd'leri) kaldırır [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] kaynakta bulunan öğeleri [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dosyaları.
+
+- [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
+
+ Ekler  **\<HostInBrowser / >** öğe uygulama bildiriminin (*\<projectname >. exe.manifest*) olduğunda bir [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] Proje oluşturulur.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [MSBuild](../msbuild/msbuild.md)

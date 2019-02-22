@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c092921c38153a587ee9fb4548175385507a67
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 15346bdd7c049a152a5a2d1668891f9d97da31fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853267"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644360"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath görevi
 Yolunu alır [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
@@ -58,5 +58,5 @@ Aşağıdaki örnekte `GetFrameworkSdkPath` yolunu depolamak için görev [!INCL
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
