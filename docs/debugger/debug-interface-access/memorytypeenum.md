@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0f0973c0491cd65c2d03be785bb03b8c2f31df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227426"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622677"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Bellek erişim türünü belirtir.
@@ -34,17 +34,13 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parametreler
-`MemTypeCode`  
-Erişim yalnızca bellek kod.
+`MemTypeCode` Erişim yalnızca bellek kod.
 
-`MemTypeData`  
-Veri veya yığın bellek erişir.
+`MemTypeData` Veri veya yığın bellek erişir.
 
-`MemTypeStack`  
-Erişim yalnızca bellek yığını.
+`MemTypeStack` Erişim yalnızca bellek yığını.
 
-`MemTypeAny`  
-Herhangi bir türden bellek erişir.
+`MemTypeAny` Herhangi bir türden bellek erişir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu sabit listesi değerleri geçirilen [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) farklı türde bellek erişimini sınırlamak için yöntemi.
@@ -53,5 +49,5 @@ Bu sabit listesi değerleri geçirilen [IDiaStackWalkHelper::readMemory](../../d
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

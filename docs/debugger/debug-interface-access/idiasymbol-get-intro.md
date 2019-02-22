@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020d631405586227d91fd06fb1794ab5554d1075
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226917"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613589"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 İşlev Giriş bir sanal işlev olup olmadığını belirten bir bayrak alır.
@@ -31,7 +31,8 @@ HRESULT get_intro ( 
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pRetVal`  
+`pRetVal`
+
 [out] Döndürür `TRUE` işlev giriş sanal; ise döndürür, aksi takdirde, `FALSE`.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -61,4 +62,4 @@ Her ikisi de `A::f1` ve `B::f1` sanal işlevler, ancak `A::f1` giriş sanaldır.
 |Sürüm:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

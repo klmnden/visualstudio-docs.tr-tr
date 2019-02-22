@@ -12,34 +12,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00a19e7c193aceafcb6134cb10cb0300162f582
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97ca8b06a480d2fddb2002a0b9a19f878caa58f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924619"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610729"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-Bir aday .dbg Dosya açıldığında çağrılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT NotifyOpenDBG (   
-   LPCOLESTR dbgPath,  
-   HRESULT   resultCode  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `dbgPath`  
- [in] .Dbg dosyasının tam yolu.  
-  
- `resultCode`  
- [in] Başarıyı gösteren kod (`S_OK`) veya bu dosyaya uygulanan yük hatası.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Dönüş kodu genellikle göz ardı edilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Bir aday .dbg Dosya açıldığında çağrılır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT NotifyOpenDBG ( 
+   LPCOLESTR dbgPath,
+   HRESULT   resultCode
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `dbgPath`
+
+[in] .Dbg dosyasının tam yolu.
+
+ `resultCode`
+
+[in] Başarıyı gösteren kod (`S_OK`) veya bu dosyaya uygulanan yük hatası.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Dönüş kodu genellikle göz ardı edilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

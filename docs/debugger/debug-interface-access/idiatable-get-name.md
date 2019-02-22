@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36fadcdabe80e7f74662a8d157bae88f68e09670
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc5ac9b3892ad9447f413df58d43791b1be1720a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969229"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626485"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
-Tablonun adını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_name (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Tablonun adını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Tablonun adını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_name ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Tablonun adını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

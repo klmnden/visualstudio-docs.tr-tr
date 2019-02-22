@@ -15,47 +15,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbb0c682f478ca7a950cb4d5c1ef88eeee98731a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8d8f193e50053b5cdf0b89cf41b09471c513ee9d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870759"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635182"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL Seçici iletişim kutusu (Visual Studio'da SharePoint Geliştirme)
-  URL Seçici iletişim kutusu içinde SharePoint çalıştıran yerel sunucu ana sayfa dosyası veya projenizdeki veya bulunan görüntü dosyaları gibi dosyaları seçebilirsiniz.  
-  
- Özellik ayarlamak için bir dosya seçmek için seçeneği varsa, bu iletişim kutusu görüntülenir. Üç nokta düğmesini seçerek bu iletişim kutusunu açabilirsiniz (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) çeşitli özelliklerinde yanındaki **özellikleri** penceresi. Belirli öznitelikler için değerleri atadığınızda üç nokta düğmesini de bir IntelliSense komut istemi görünür **kaynak** Tasarımcı görünümü.  
-  
+  URL Seçici iletişim kutusu içinde SharePoint çalıştıran yerel sunucu ana sayfa dosyası veya projenizdeki veya bulunan görüntü dosyaları gibi dosyaları seçebilirsiniz.
+
+ Özellik ayarlamak için bir dosya seçmek için seçeneği varsa, bu iletişim kutusu görüntülenir. Üç nokta düğmesini seçerek bu iletişim kutusunu açabilirsiniz (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) çeşitli özelliklerinde yanındaki **özellikleri** penceresi. Belirli öznitelikler için değerleri atadığınızda üç nokta düğmesini de bir IntelliSense komut istemi görünür **kaynak** Tasarımcı görünümü.
+
 ## <a name="uielement-list"></a>UIElement listesi
- **Proje klasörleri**  
- Proje veya SharePoint çalıştıran yerel sunucu üzerinde tanımlanan klasörlerin listesini görüntüler. Alt klasörleri görüntülemek için genişletme düğmesini seçin.  
-  
- Genişletin **proje** düğümünü, projenizdeki dosyaları seçin. İletişim kutusundaki olarak seçilebilir görünmesi için projenizdeki dosyaları aşağıdaki ölçütleri karşılaması gerekir:  
-  
-- Dosya eşlenmiş bir klasörde bulunmalıdır.  
-  
-- Dosya çözüm paketine eklenmesi gerekir.  
-  
-- Dosya başka bir projede yer almamalıdır.  
-  
-  Bu ölçütleri karşılamayan dosyalara başvurmak istiyorsanız, dosyanın yolu el ile girmek zorunda.  
-  
-  Genişletin **sunucu** düğümünü SharePoint çalıştıran yerel sunucu üzerinde bulunan dosyaları seçin. Bu dosyalar olarak seçilebilir iletişim kutusunda görünmesi için aşağıdaki ölçütleri karşılaması gerekir:  
-  
-- Dosya aşağıdaki eşlenen klasörler birinde bulunmalıdır: **Görüntüleri**, **düzenleri**, veya **ControlTemplates**.  
-  
-- Dosyanın SharePoint içerik veritabanı bulunamıyor.  
-  
-  Bu ölçütleri karşılamayan dosyalara başvurmak istiyorsanız, dosyanın yolu el ile girmek zorunda.  
-  
-  **Klasör içeriği**  
-  Seçilen klasördeki dosyaların bir listesini görüntüler. Bir dosya seçin ve ardından **Tamam** düğmesine iletişim kutusunu kapatmak ve onu çağıran işleme seçiminizi göndermek.  
-  
-  **Dosya türü**  
-  Gerçekleştirdiğiniz görev için uygun olan dosyalar listesinden seçmenize olanak sağlar.  
-  
+ **Proje klasörleri** proje ya da SharePoint çalıştıran yerel sunucu üzerinde tanımlanan klasörlerin listesini görüntüler. Alt klasörleri görüntülemek için genişletme düğmesini seçin.
+
+ Genişletin **proje** düğümünü, projenizdeki dosyaları seçin. İletişim kutusundaki olarak seçilebilir görünmesi için projenizdeki dosyaları aşağıdaki ölçütleri karşılaması gerekir:
+
+- Dosya eşlenmiş bir klasörde bulunmalıdır.
+
+- Dosya çözüm paketine eklenmesi gerekir.
+
+- Dosya başka bir projede yer almamalıdır.
+
+  Bu ölçütleri karşılamayan dosyalara başvurmak istiyorsanız, dosyanın yolu el ile girmek zorunda.
+
+  Genişletin **sunucu** düğümünü SharePoint çalıştıran yerel sunucu üzerinde bulunan dosyaları seçin. Bu dosyalar olarak seçilebilir iletişim kutusunda görünmesi için aşağıdaki ölçütleri karşılaması gerekir:
+
+- Dosya aşağıdaki eşlenen klasörler birinde bulunmalıdır: **Görüntüleri**, **düzenleri**, veya **ControlTemplates**.
+
+- Dosyanın SharePoint içerik veritabanı bulunamıyor.
+
+  Bu ölçütleri karşılamayan dosyalara başvurmak istiyorsanız, dosyanın yolu el ile girmek zorunda.
+
+  **Klasörünün içeriğini** seçili klasörde bulunan dosyaları listesini görüntüler. Bir dosya seçin ve ardından **Tamam** düğmesine iletişim kutusunu kapatmak ve onu çağıran işleme seçiminizi göndermek.
+
+  **Dosya türü** görevin yapmakta olduğunuz için uygun olan dosyalar listesinden seçim yapmanızı sağlar.
+
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
+- [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

@@ -16,62 +16,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d5aeac5115dfa251b42c824b88a779e22ad6a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978340"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610534"
 ---
 # <a name="importgroup-element"></a>Importgroup öğesi
-Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında gruplandırılmış öğeler. Daha fazla bilgi için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).  
+Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında gruplandırılmış öğeler. Daha fazla bilgi için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).
 
- \<Proje >  
- \<Importgroup >  
+ \<Proje > \<Importgroup >
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<ImportGroup Condition="'String A' == 'String B'">  
-    <Import ... />  
-    <Import ... />  
-</ImportGroup>  
-```  
+```xml
+<ImportGroup Condition="'String A' == 'String B'">
+    <Import ... />
+    <Import ... />
+</ImportGroup>
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Alt öğeleri  
+### <a name="child-elements"></a>Alt öğeleri
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[İçeri Aktar](../msbuild/import-element-msbuild.md)|Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.|  
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[İçeri Aktar](../msbuild/import-element-msbuild.md)|Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.|
 
-### <a name="parent-elements"></a>Üst öğeler  
+### <a name="parent-elements"></a>Üst öğeler
 
 | Öğe | Açıklama |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası. |
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği kod `ImportGroup` öğesi.  
+## <a name="example"></a>Örnek
+ Aşağıdaki örnekte gösterildiği kod `ImportGroup` öğesi.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ImportGroup>  
-        <Import Project="$(Targets1.targets)" />  
-        <Import Project="$(Targets2.targets)" />  
-    </ImportGroup>  
-...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ImportGroup>
+        <Import Project="$(Targets1.targets)" />
+        <Import Project="$(Targets2.targets)" />
+    </ImportGroup>
+...
+</Project>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Öğeler](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Öğeler](../msbuild/msbuild-items.md)

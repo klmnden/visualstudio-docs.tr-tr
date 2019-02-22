@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ba0a925f74bec1c4bd14d20bda13260f2083d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4460f5102fbb5fd62f332f41a2901d1759731e7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596899"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-Çerçeve için kod adresinin uzaklık bölümü alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Çerçeve kodunu adresini uzaklık bölümünü döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Çerçeve için kod adresinin uzaklık bölümü alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Çerçeve kodunu adresini uzaklık bölümünü döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -14,38 +14,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7254f5735be3efa45b7ba3be0541996cb6c2cc69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6d42bd1f7304d9f50b6334d9ac8ddd4f626605d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997643"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629462"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; öğesi (ClickOnce dağıtımı)
-Bir hata oluştuğunda göstermek için bir URI belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-<customErrorReporting  
-   uri  
-/>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu öğe isteğe bağlıdır. Bu olmadan, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] özel yığının gösteren bir hata iletişim kutusu görüntüler. Varsa `customErrorReporting` öğesi mevcutsa, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tarafından gösterilen URI'yi bunun yerine görüntülenir `uri` parametresi. Dıştaki özel durum sınıfı, iç özel durum sınıfı ve iç özel durum iletisi ' % s'hedef URI parametreleri olarak dahil edilir.  
-  
- Hata Raporlama işlevselliği uygulamanıza eklemek için bu öğeyi kullanırsınız. Oluşturulan URI hata türü hakkında bilgi içerdiğinden, Web sitenizi bilgileri ve görüntü, örneğin, uygun bir sorun giderme ekranı ayrıştırabilirsiniz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod parçacığında gösterildiği `customErrorReporting` bunu üretebilir oluşturulan URI ile birlikte bir öğe.  
-  
+Bir hata oluştuğunda göstermek için bir URI belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```xml
-<customErrorReporting uri=http://www.contoso.com/applications/error.asp />  
-  
-Example Generated Error:  
-http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)
+<customErrorReporting
+   uri
+/>
+```
+
+## <a name="remarks"></a>Açıklamalar
+ Bu öğe isteğe bağlıdır. Bu olmadan, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] özel yığının gösteren bir hata iletişim kutusu görüntüler. Varsa `customErrorReporting` öğesi mevcutsa, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tarafından gösterilen URI'yi bunun yerine görüntülenir `uri` parametresi. Dıştaki özel durum sınıfı, iç özel durum sınıfı ve iç özel durum iletisi ' % s'hedef URI parametreleri olarak dahil edilir.
+
+ Hata Raporlama işlevselliği uygulamanıza eklemek için bu öğeyi kullanırsınız. Oluşturulan URI hata türü hakkında bilgi içerdiğinden, Web sitenizi bilgileri ve görüntü, örneğin, uygun bir sorun giderme ekranı ayrıştırabilirsiniz.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod parçacığında gösterildiği `customErrorReporting` bunu üretebilir oluşturulan URI ile birlikte bir öğe.
+
+```xml
+<customErrorReporting uri=http://www.contoso.com/applications/error.asp />
+
+Example Generated Error:
+http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)

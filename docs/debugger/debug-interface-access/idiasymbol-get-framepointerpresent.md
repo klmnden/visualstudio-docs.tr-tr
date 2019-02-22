@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24797dc18a247c050225b3bcd8c8215b3b266464
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41120826404df4cc94bd6e65fa574509f55c302e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960444"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622273"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Çerçeve işaretçisini mevcut olup olmadığını belirten bir bayrak alır. Şu durumlarda kullanın [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) ayarlanır `SymTagFunction`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_framePointerPresent(   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out]] Döndürür `TRUE` çerçeve işaretçisini değişkenidir; Aksi takdirde, verir `FALSE`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Çerçeve işaretçisini mevcut olup olmadığını belirten bir bayrak alır. Şu durumlarda kullanın [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) ayarlanır `SymTagFunction`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_framePointerPresent( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out]] Döndürür `TRUE` çerçeve işaretçisini değişkenidir; Aksi takdirde, verir `FALSE`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üst bilgi: dia2.h  
-  
- Kitaplık: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="requirements"></a>Gereksinimler
+ Üst bilgi: dia2.h
+
+ Kitaplık: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

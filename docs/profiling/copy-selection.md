@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82fd0bbf4ed0e3d5b16df70dda29a215fd03535b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035347"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623001"
 ---
 # <a name="copy-selection"></a>Seçimi kopyala
-Bütün çağrı yığını raporu sekmesinden kopyalamak için tıklayın **kopyalama**. Ardından, o eylemi destekleyip herhangi bir programda çağrı yığınını yapıştırabilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+Bütün çağrı yığını raporu sekmesinden kopyalamak için tıklayın **kopyalama**. Ardından, o eylemi destekleyip herhangi bir programda çağrı yığınını yapıştırabilirsiniz.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

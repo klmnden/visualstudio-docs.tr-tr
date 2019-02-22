@@ -11,28 +11,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba235f98ce0c6f8016463c86635eff0c4178ff4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992470"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613940"
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 
-Visual Studio kod performans verilerini çözümleme toplamak ve görüntülemek için çeşitli yollar sunar. Çoğu durumda, performans araçları ile kullanmaya başlamak için en iyi yolu varsayılan ayarlarını kullanmaktır **performans Sihirbazı**. Sihirbaz, performans sorunlarını kodunuzda işaret edebilir uygulama istatistiklerini toplar.  
-  
+Visual Studio kod performans verilerini çözümleme toplamak ve görüntülemek için çeşitli yollar sunar. Çoğu durumda, performans araçları ile kullanmaya başlamak için en iyi yolu varsayılan ayarlarını kullanmaktır **performans Sihirbazı**. Sihirbaz, performans sorunlarını kodunuzda işaret edebilir uygulama istatistiklerini toplar.
+
 - Yaygın kodlama sorunlarını size Performans uyarılarını Visual Studio'da görünür **hata listesi** penceresi. Uyarılar kaynak kodunuzu gidin ve ayrıntılı yardımcı olacak Yardım konularını daha verimli kod yazma.
 
-- Performans raporları farklı düzeyde uygulama yapısı, kaynak kod satırlarına ve işlemleri görünümler sağlar. Performans raporları, uygulama yürütme verileri, arama göstermek ve belirli bir işlevin tüm uygulamanın çağırma ağacına işlevler olarak bilinir.  
-  
-Hızla bir proje, uygulama veya ASP.NET Web sitesi profili oluşturmak için Seç **hata ayıklama** > **performans Profiler**seçip **performans Sihirbazı**. Ayrıntılı yönergeler için bkz. [yeni başlayanlar için performans profili oluşturma Kılavuzu](../profiling/beginners-guide-to-cpu-sampling.md) ve [nasıl yapılır: Bir Web sitesi için performans verilerini toplama](../profiling/how-to-collect-performance-data-for-a-web-site.md).  
+- Performans raporları farklı düzeyde uygulama yapısı, kaynak kod satırlarına ve işlemleri görünümler sağlar. Performans raporları, uygulama yürütme verileri, arama göstermek ve belirli bir işlevin tüm uygulamanın çağırma ağacına işlevler olarak bilinir.
 
-El ile belirtin ve profil oluşturma oturumunu bir performans yapılandırmak için **hata ayıklama** > **Profiler** > **performans Gezgini**. Kullanım **hedefleri** klasörü ve **özellikleri** içinde sayfa **performans Gezgini** oturumları yapılandırmak için. Yönergeler için [nasıl yapılır: Performans oturumlarını elle oluşturma](../profiling/how-to-manually-create-performance-sessions.md).  
-  
+Hızla bir proje, uygulama veya ASP.NET Web sitesi profili oluşturmak için Seç **hata ayıklama** > **performans Profiler**seçip **performans Sihirbazı**. Ayrıntılı yönergeler için bkz. [yeni başlayanlar için performans profili oluşturma Kılavuzu](../profiling/beginners-guide-to-cpu-sampling.md) ve [nasıl yapılır: Bir Web sitesi için performans verilerini toplama](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+
+El ile belirtin ve profil oluşturma oturumunu bir performans yapılandırmak için **hata ayıklama** > **Profiler** > **performans Gezgini**. Kullanım **hedefleri** klasörü ve **özellikleri** içinde sayfa **performans Gezgini** oturumları yapılandırmak için. Yönergeler için [nasıl yapılır: Performans oturumlarını elle oluşturma](../profiling/how-to-manually-create-performance-sessions.md).
+
 **Ayrıca bkz:**
-  
- [Performans araçları genel bakış](../profiling/overviews-performance-tools.md)   
- [Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)   
- [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)   
- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+
+- [Performans araçları genel bakış](../profiling/overviews-performance-tools.md)
+- [Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)
+- [Verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)
+- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)

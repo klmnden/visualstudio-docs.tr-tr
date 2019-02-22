@@ -1,22 +1,16 @@
 ---
 layout: LandingPage
 title: Profil oluşturma kullanarak ölçü uygulama performansını | Microsoft Docs
-description: Bilgi nasıl uygulamaları, hizmetleri ve araçları, tercih ettiğiniz dilde performans profil için Visual Studio 2017'yi kullanın.
+description: 'Bilgi nasıl uygulamaları, hizmetleri ve araçları, tercih ettiğiniz dilde performans profil için Visual Studio 2017''yi kullanın.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a940aea1260090371b24c7ccdb0975a609b3d4d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155779"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Visual Studio'da uygulama performansını ölçmeye
 
-Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları ile hata ayıklayıcıda uygulamanızı çalıştırdığınız zaman içinde verileri (örneğin, değişken değerleri, işlev çağrıları ve olayları) birikebilir. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntüleyebilirsiniz. 
+Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları ile hata ayıklayıcıda uygulamanızı çalıştırdığınız zaman içinde verileri (örneğin, değişken değerleri, işlev çağrıları ve olayları) birikebilir. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntüleyebilirsiniz.
 
 <ul class="panelContent cardsFTitle">
     <li>

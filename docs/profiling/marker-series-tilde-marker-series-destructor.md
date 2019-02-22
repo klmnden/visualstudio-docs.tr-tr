@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f52485b24ebd1929a63c1055b4c6839fe22361
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9de1d51eb99fa6914f792ed4c34668f861caee02
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991547"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600330"
 ---
 # <a name="markerseriesmarkerseries-destructor"></a>marker_series:: ~ marker_series yok Edicisi
-Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-~marker_series();  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** CONCURRENCY::Diagnostic  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [marker_series class](../profiling/marker-series-class.md)
+Marker_series nesnesini yok eder ve ayrılan tüm kaynakları serbest bırakır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+~marker_series();
+```
+
+## <a name="requirements"></a>Gereksinimler
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** CONCURRENCY::Diagnostic
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [marker_series class](../profiling/marker-series-class.md)

@@ -11,21 +11,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 90fc485810c147ebb686382fca6bde4fd183d5ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06d1f4fa13f2cdb51e7e2fe6939b449fdb1c3f78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988863"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638147"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET web uygulamalarının komut satırı profili oluşturma
-Bu bölümde yordamları ve performans verilerini toplamak için seçenekleri açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.  
-  
+Bu bölümde yordamları ve performans verilerini toplamak için seçenekleri açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.
+
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
+>  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
 ## <a name="common-tasks"></a>Ortak görevler
-  
+
 | Görev | İlgili içerik |
 | - | - |
 | **Temel ASP.NET profil oluşturma verilerini kolayca toplayın:** Kullanım **VSPerfASPNETCmd** örnekleme, izleme, .NET bellek, çekişmeyi toplamak veya yapılandırma gereksinimleri ve gerekli olan Internet Information Services (IIS) yeniden başlatma olmadan etkileşim veri katmanı için aracı için **VSPerfCmd**. **VSPerfASPNETCmd** ek veri toplamak için veya veri toplamayı denetlemek için izin vermez. **Not:**  **VSPerfASPNETCmd** kullanmayı tercih edilen araç bağımsız profil oluşturucu profil ASP.NET Web siteleri için kullanın. | -   [Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) |
@@ -34,11 +34,11 @@ Bu bölümde yordamları ve performans verilerini toplamak için seçenekleri a�
 | **.NET bellek verileri toplamak:** Ayrılmış nesnelerin sayısı ve boyutu gösteren .NET bellek ayırma verilerini toplamak için örnekleme veya Araçlar'ı kullanın. Her çöp toplama nesildeki kazanılır nesnelerinin sayısı ve boyutu gösteren nesne yaşam süresi verilerini de toplayabilirsiniz. | -   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application.md) |
 | **Eşzamanlılık verileri toplamak:** Kaynak çekişmesi verisini toplamak için eşzamanlılık yöntemi kullanın. **Not:**  İş parçacığı etkinliği ve görselleştirme verilerini toplamak için Web uygulamaları desteklenmez. | -   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md) |
 | **Katman etkileşim verileri ekleyin:** Zaman uyumlu ilişkin performans verilerini ekleyebilirsiniz [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] çağrılarının [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması için bir Microsoft yapar [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı. | -   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
-  
+
 ## <a name="related-tasks"></a>İlişkili görevler
 
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**(İstemci) tek başına uygulamaların profilini oluşturma**|-   [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**(İstemci) tek başına uygulamaların profilini oluşturma**|-   [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)|
 |**Profil hizmetler**|-   [Profil hizmetler](../profiling/command-line-profiling-of-services.md)|

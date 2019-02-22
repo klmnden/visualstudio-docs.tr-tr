@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c48cb6abc0bd038f4a2226a1b2c13e3c1070e15
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ad15c3474157f9858c4647c47249121bd386d9a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980238"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612848"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
-Sanal Taban öteleme tablosundaki simgenin dizinini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_virtualBaseDispIndex (  
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Sanal Taban öteleme tabloya indisini döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.  
-  
+Sanal Taban öteleme tablosundaki simgenin dizinini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_virtualBaseDispIndex (
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Sanal Taban öteleme tabloya indisini döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

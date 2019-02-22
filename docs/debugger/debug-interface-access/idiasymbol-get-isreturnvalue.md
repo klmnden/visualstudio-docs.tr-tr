@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25265d25a3f4d89682ff7e4b8d74ee02f3c073c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950708"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622234"
 ---
 # <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-Değişkeni dönüş değeri taşıyan olup olmadığını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_isReturnValue(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir işaretçi bir `BOOL` değişkeni dönüş değeri taşıyan olup olmadığını belirtir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Değişkeni dönüş değeri taşıyan olup olmadığını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_isReturnValue(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir işaretçi bir `BOOL` değişkeni dönüş değeri taşıyan olup olmadığını belirtir.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

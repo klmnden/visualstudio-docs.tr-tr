@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea567014e32930e25960b069d2b755e2c0212b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923061"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627330"
 ---
 # <a name="msbuild-task"></a>MSBuild görevi
-Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başka projelerden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje.  
+Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başka projelerden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje.
 
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `MSBuild` görev.  
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `MSBuild` görev.
 
 
 | Parametre | Açıklama |
@@ -49,144 +49,144 @@ Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 | `UnloadProjectsOnCompletion` | İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, işlem tamamlandıktan sonra projenin yüklemesi kaldırılır. |
 | `UseResultsCache` | İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, önbelleğe alınan sonuç, varsa, döndürülür.<br /><br />  MSBuild görevi çalıştırırsanız, sonuç bir kapsamda konumlandırılmalıdır. <br /><br /> (ProjectFileName GlobalProperties) [TargetNames]<br /><br /> Yapı öğeleri listesi olarak |
 
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
 
- Kullanarak aksine [Exec görevi](../msbuild/exec-task.md) başlatmak için *MSBuild.exe*, bu görevi ndedir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt projeleri oluşturmak için işlem. Atlanabilir zaten oluşturulmuş hedefleri listesinde, üst ve alt yapı arasında paylaşılır. Bu görevi de olduğundan daha hızlıdır yeni [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] işlem oluşturulur.  
+ Kullanarak aksine [Exec görevi](../msbuild/exec-task.md) başlatmak için *MSBuild.exe*, bu görevi ndedir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt projeleri oluşturmak için işlem. Atlanabilir zaten oluşturulmuş hedefleri listesinde, üst ve alt yapı arasında paylaşılır. Bu görevi de olduğundan daha hızlıdır yeni [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] işlem oluşturulur.
 
- Bu görevi yalnızca proje dosyalarını aynı zamanda çözüm dosyalarını işleyebilir.  
+ Bu görevi yalnızca proje dosyalarını aynı zamanda çözüm dosyalarını işleyebilir.
 
- Gerekli herhangi bir yapılandırma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri aynı zamanda, yapılandırmayı uzak oluşsa da etkinleştirmek için (örneğin, bağlantı noktaları, protokolleri, zaman aşımı, yeniden denemeler vb.), altyapıyı kullanarak yapılandırılabilir yapılmalıdır bir yapılandırma dosyası. Mümkün olduğunda, yapılandırma öğeleri görev parametreleri üzerinde belirtilmesi erişebiliyor olmalısınız `MSBuild` görev.  
+ Gerekli herhangi bir yapılandırma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri aynı zamanda, yapılandırmayı uzak oluşsa da etkinleştirmek için (örneğin, bağlantı noktaları, protokolleri, zaman aşımı, yeniden denemeler vb.), altyapıyı kullanarak yapılandırılabilir yapılmalıdır bir yapılandırma dosyası. Mümkün olduğunda, yapılandırma öğeleri görev parametreleri üzerinde belirtilmesi erişebiliyor olmalısınız `MSBuild` görev.
 
- Başlayarak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, çözüm projeleri artık surface TargetOutputs tüm yapıların alt projeleri.  
+ Başlayarak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, çözüm projeleri artık surface TargetOutputs tüm yapıların alt projeleri.
 
-## <a name="pass-properties-to-projects"></a>Projelere özellikleri geçirme  
- Sürümlerinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öncesinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı geçirme 3.5, listelenen farklı projelere özelliklerini ayarlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğesi zor. Özellikleri öznitelik kullandıysanız [MSBuild görevi](../msbuild/msbuild-task.md), ayarına, toplu sürece oluşturulan projeleri tümüne uygulanan sonra [MSBuild görevi](../msbuild/msbuild-task.md) ve koşullu olarak farklı sağlanan öğe listesi her proje için özellikleri.  
+## <a name="pass-properties-to-projects"></a>Projelere özellikleri geçirme
+ Sürümlerinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öncesinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı geçirme 3.5, listelenen farklı projelere özelliklerini ayarlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğesi zor. Özellikleri öznitelik kullandıysanız [MSBuild görevi](../msbuild/msbuild-task.md), ayarına, toplu sürece oluşturulan projeleri tümüne uygulanan sonra [MSBuild görevi](../msbuild/msbuild-task.md) ve koşullu olarak farklı sağlanan öğe listesi her proje için özellikleri.
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, Bununla birlikte, iki yeni meta veri öğeleri, Özellikler ayrılmış ve farklı özellikleri farklı geçirmek için esnek bir şekilde sağladığınız AdditionalProperties projeleri durdurulmasını sağlar kullanılarak oluşturulan [MSBuild görevi](../msbuild/msbuild-task.md).  
-
-> [!NOTE]
->  Bu yeni meta veri öğeleri projeleri özniteliğinde geçirilen öğelere uygulanabilir [MSBuild görevi](../msbuild/msbuild-task.md).  
-
-## <a name="multi-processor-build-benefits"></a>Birden çok işlemcili derlemenin avantajları  
- Çok işlemcili bir sistemde projelerinizi paralel oluşturduğunuzda bu yeni meta veriler kullanmanın en önemli avantajlarından biri gerçekleşir. Meta veriler, tüm projeleri bir tek birleştirmenize olanak tanır [MSBuild görevi](../msbuild/msbuild-task.md) arama herhangi toplu işleme yapmak zorunda veya koşul olmadan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri. Ve yalnızca tek bir çağırdığınızda [MSBuild görevi](../msbuild/msbuild-task.md), tüm projeleri öznitelikte listelenen projeleri paralel olarak derlenir. (Ancak, yalnızca, `BuildInParallel=true` özniteliği mevcut [MSBuild görevi](../msbuild/msbuild-task.md).) Daha fazla bilgi için [paralel olarak birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
-
-## <a name="properties-metadata"></a>Özellikler meta verisi  
- Kullanarak birden çok çözüm dosyalarını oluştururken sık karşılaşılan bir senaryodur [MSBuild görevi](../msbuild/msbuild-task.md), yalnızca farklı derleme yapılandırmalarında kullanarak. Çözüm a1 oluşturmak isteyebilir hata ayıklama yapılandırması ve çözüm a2 kullanarak sürüm yapılandırmasını kullanarak. İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, bu proje dosyasını aşağıdaki gibi görünür:  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, Bununla birlikte, iki yeni meta veri öğeleri, Özellikler ayrılmış ve farklı özellikleri farklı geçirmek için esnek bir şekilde sağladığınız AdditionalProperties projeleri durdurulmasını sağlar kullanılarak oluşturulan [MSBuild görevi](../msbuild/msbuild-task.md).
 
 > [!NOTE]
->  Aşağıdaki örnekte, "..." ek çözüm dosyalarını temsil eder.  
+>  Bu yeni meta veri öğeleri projeleri özniteliğinde geçirilen öğelere uygulanabilir [MSBuild görevi](../msbuild/msbuild-task.md).
 
-### <a name="aproj"></a>a.proj  
+## <a name="multi-processor-build-benefits"></a>Birden çok işlemcili derlemenin avantajları
+ Çok işlemcili bir sistemde projelerinizi paralel oluşturduğunuzda bu yeni meta veriler kullanmanın en önemli avantajlarından biri gerçekleşir. Meta veriler, tüm projeleri bir tek birleştirmenize olanak tanır [MSBuild görevi](../msbuild/msbuild-task.md) arama herhangi toplu işleme yapmak zorunda veya koşul olmadan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri. Ve yalnızca tek bir çağırdığınızda [MSBuild görevi](../msbuild/msbuild-task.md), tüm projeleri öznitelikte listelenen projeleri paralel olarak derlenir. (Ancak, yalnızca, `BuildInParallel=true` özniteliği mevcut [MSBuild görevi](../msbuild/msbuild-task.md).) Daha fazla bilgi için [paralel olarak birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+## <a name="properties-metadata"></a>Özellikler meta verisi
+ Kullanarak birden çok çözüm dosyalarını oluştururken sık karşılaşılan bir senaryodur [MSBuild görevi](../msbuild/msbuild-task.md), yalnızca farklı derleme yapılandırmalarında kullanarak. Çözüm a1 oluşturmak isteyebilir hata ayıklama yapılandırması ve çözüm a2 kullanarak sürüm yapılandırmasını kullanarak. İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, bu proje dosyasını aşağıdaki gibi görünür:
 
- Özellikler meta verileri kullanarak, ancak, tek bir kullanmak için bunu basitleştirebilirsiniz [MSBuild görevi](../msbuild/msbuild-task.md)aşağıdaki gösterildiği gibi:  
+> [!NOTE]
+>  Aşağıdaki örnekte, "..." ek çözüm dosyalarını temsil eder.
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <Properties>Configuration=Debug</Properties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
- \- veya -  
+ Özellikler meta verileri kullanarak, ancak, tek bir kullanmak için bunu basitleştirebilirsiniz [MSBuild görevi](../msbuild/msbuild-task.md)aşağıdaki gösterildiği gibi:
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln..."/>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Debug"/>  
-    </Target>  
-</Project>  
-```  
+### <a name="aproj"></a>a.proj
 
-## <a name="additionalproperties-metadata"></a>AdditionalProperties meta verisi  
- Burada oluşturduğunuz iki çözüm dosyalarını kullanarak aşağıdaki senaryoyu göz önünde bulundurun [MSBuild görevi](../msbuild/msbuild-task.md), her iki sürüm yapılandırmasını kullanarak, ancak bir x86 kullanarak mimarisi ve diğer IA64 mimari kullanarak. İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, birden çok örneğini oluşturma gerekir [MSBuild görevi](../msbuild/msbuild-task.md): ile x86 sürüm yapılandırmasını kullanarak Projeyi derlemek için bir mimari, diğer sürüm yapılandırmasını IA64 ile kullanma Mimari. Proje dosyanız aşağıdaki gibi görünür:  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <Properties>Configuration=Debug</Properties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"/>
+    </Target>
+</Project>
+```
 
-### <a name="aproj"></a>a.proj  
+ \- veya -
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;   
-          Architecture=x86"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release;   
-          Architecture=ia64"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln..."/>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Debug"/>
+    </Target>
+</Project>
+```
 
- AdditionalProperties meta verileri kullanarak, tek bir kullanmak için bunu basitleştirebilirsiniz [MSBuild görevi](../msbuild/msbuild-task.md) aşağıdakileri kullanarak:  
+## <a name="additionalproperties-metadata"></a>AdditionalProperties meta verisi
+ Burada oluşturduğunuz iki çözüm dosyalarını kullanarak aşağıdaki senaryoyu göz önünde bulundurun [MSBuild görevi](../msbuild/msbuild-task.md), her iki sürüm yapılandırmasını kullanarak, ancak bir x86 kullanarak mimarisi ve diğer IA64 mimari kullanarak. İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, birden çok örneğini oluşturma gerekir [MSBuild görevi](../msbuild/msbuild-task.md): ile x86 sürüm yapılandırmasını kullanarak Projeyi derlemek için bir mimari, diğer sürüm yapılandırmasını IA64 ile kullanma Mimari. Proje dosyanız aşağıdaki gibi görünür:
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <AdditionalProperties>Architecture=x86  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <AdditionalProperties>Architecture=ia64  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;
+          Architecture=x86"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release;
+          Architecture=ia64"/>
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte `MSBuild` tarafından belirtilen projeleri oluşturmak için görev `ProjectReferences` öğe koleksiyonu. Sonuçta elde edilen hedef çıkışları depolanır `AssembliesBuiltByChildProjects` öğe koleksiyonu.  
+ AdditionalProperties meta verileri kullanarak, tek bir kullanmak için bunu basitleştirebilirsiniz [MSBuild görevi](../msbuild/msbuild-task.md) aşağıdakileri kullanarak:
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+### <a name="aproj"></a>a.proj
 
-    <ItemGroup>  
-        <ProjectReferences Include="*.*proj" />  
-    </ItemGroup>  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <AdditionalProperties>Architecture=x86
+              </AdditionalProperties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <AdditionalProperties>Architecture=ia64
+              </AdditionalProperties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
-    <Target Name="BuildOtherProjects">  
-        <MSBuild  
-            Projects="@(ProjectReferences)"  
-            Targets="Build">  
-            <Output  
-                TaskParameter="TargetOutputs"  
-                ItemName="AssembliesBuiltByChildProjects" />  
-        </MSBuild>  
-    </Target>  
+## <a name="example"></a>Örnek
+ Aşağıdaki örnekte `MSBuild` tarafından belirtilen projeleri oluşturmak için görev `ProjectReferences` öğe koleksiyonu. Sonuçta elde edilen hedef çıkışları depolanır `AssembliesBuiltByChildProjects` öğe koleksiyonu.
 
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+    <ItemGroup>
+        <ProjectReferences Include="*.*proj" />
+    </ItemGroup>
+
+    <Target Name="BuildOtherProjects">
+        <MSBuild
+            Projects="@(ProjectReferences)"
+            Targets="Build">
+            <Output
+                TaskParameter="TargetOutputs"
+                ItemName="AssembliesBuiltByChildProjects" />
+        </MSBuild>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

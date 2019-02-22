@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853878"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610040"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly görevi
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> En az bir görev oluşturur bir derleme [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] projesinde sayfasına başvuruda o projede yerel olarak bildirilmiş bir tür. Oluşturulan derleme, derleme işlemi tamamlandıktan sonra veya derleme işlemi başarısız olursa kaldırılır.
@@ -71,9 +71,9 @@ Aşağıdaki örnek geçici bir derleme oluşturur çünkü *Page1.xaml* aynı p
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
-[Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)  
-[Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[WPF XAML tarayıcı uygulamalarına genel bakış](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)
+- [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF XAML tarayıcı uygulamalarına genel bakış](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

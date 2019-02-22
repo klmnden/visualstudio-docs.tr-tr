@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922127"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645491"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme
 
@@ -42,7 +42,7 @@ Bu sayfa, siz yazarken deyimleri ve blokları biçimlendirme seçeneği içerir.
 
 ### <a name="configuring-clangformat-options"></a>ClangFormat seçeneklerini yapılandırma
 
-Visual Studio 2017 sürüm 15.7 ve üzeri, ClangFormat desteği varsayılan olarak etkindir. Tüm projeleriniz uygulamak için bu ortak biçimlendirme kuralları hangisinin seçebilirsiniz: LLVM, Google, Chromium, Mozilla veya WebKit. Bir özel biçim tanımını .clang-format veya _clang-format dosyası da oluşturabilirsiniz. Bir proje klasöründe böyle bir dosya varsa, Visual Studio tüm kaynak kodu dosyaları bu klasörde ve alt klasörlerinde biçimlendirmek için kullanır. 
+Visual Studio 2017 sürüm 15.7 ve üzeri, ClangFormat desteği varsayılan olarak etkindir. Tüm projeleriniz uygulamak için bu ortak biçimlendirme kuralları hangisinin seçebilirsiniz: LLVM, Google, Chromium, Mozilla veya WebKit. Bir özel biçim tanımını .clang-format veya _clang-format dosyası da oluşturabilirsiniz. Bir proje klasöründe böyle bir dosya varsa, Visual Studio tüm kaynak kodu dosyaları bu klasörde ve alt klasörlerinde biçimlendirmek için kullanır.
 
 Varsayılan olarak, Visual Studio arka planda çalıştırır clangformat.exe yazarken biçimlendirme uygular. Çağrılan biçimlendirme komutları çalıştırmak için yalnızca el ile belirtebilirsiniz **belgeyi Biçimlendir (Ctrl + K, Ctrl + D)** veya **seçimi Biçimlendir (Ctrl + K, Ctrl + F)**.
 

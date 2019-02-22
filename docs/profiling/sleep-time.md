@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e14fb1e90da5812d15cf36448b6c3f7283b5b87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be2d566228367e2cdb07aecc2d73eaf82a6d961f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637691"
 ---
 # <a name="sleep-time"></a>Bekleme süresi
-Bu segmentlerde faaliyet zaman çizelgesi uyku kategorilere ayrılır engelleme zamanı ile ilişkilidir. Uyku kategori, bir iş parçacığı, mantıksal çekirdek gönüllü verdiği ve herhangi bir çalışma yapılması anlamına gelir. Bu süre boyunca, bir iş parçacığı eşzamanlılık görselleştiricisi uyku sayılıyor bir API'de engellendi. API'leri gibi `Sleep()` ve `SwitchToThread()` bu gruba girer.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)
+Bu segmentlerde faaliyet zaman çizelgesi uyku kategorilere ayrılır engelleme zamanı ile ilişkilidir. Uyku kategori, bir iş parçacığı, mantıksal çekirdek gönüllü verdiği ve herhangi bir çalışma yapılması anlamına gelir. Bu süre boyunca, bir iş parçacığı eşzamanlılık görselleştiricisi uyku sayılıyor bir API'de engellendi. API'leri gibi `Sleep()` ve `SwitchToThread()` bu gruba girer.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)

@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a342fc0c6b63cd518a41210f46dc8c893f36b2eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938295"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615591"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-C++ özel durum işleme etkin olup olmadığını gösteren bir bayrak alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Döndürür `TRUE` C++ özel durum işleme aslında bu çerçeve için; Aksi halde döndürür `FALSE`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- C++ özel durum işleme, yapılandırılmış aynı veya sistem özel durum işleme değil.  
-  
- Yapılandırılmış özel durum işleme etkindir belirlemek için çağrı [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) yöntemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiastackframe](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)
+C++ özel durum işleme etkin olup olmadığını gösteren bir bayrak alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_cplusplusExceptionHandling ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Döndürür `TRUE` C++ özel durum işleme aslında bu çerçeve için; Aksi halde döndürür `FALSE`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ C++ özel durum işleme, yapılandırılmış aynı veya sistem özel durum işleme değil.
+
+ Yapılandırılmış özel durum işleme etkindir belirlemek için çağrı [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) yöntemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

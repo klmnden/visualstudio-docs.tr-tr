@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dccb229712d173e847a7205f03aad308fab224d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853202"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640590"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier görevi
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> Görev bir bütünleştirilmiş kod içine katıştırılmış olarak kaynak kaynak kümesini sınıflandırır. Bir kaynak yerelleştirilebilir değil ise, ana uygulama derlemesine eklenir; Aksi takdirde, bir uydu derlemeye eklenir.
@@ -64,8 +64,8 @@ Aşağıdaki örnek, tek bir kaynak dosyasını kaynak olarak sınıflandırır 
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
-[Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)  
-[Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)
+- [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

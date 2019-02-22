@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643957"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper görevi
 Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik bir yol sağlar. Uygulama yaparak tüm bileşenler için ayrı yükleyiciler tümleştiren tek bir yükleyici olarak görev yapar.
@@ -31,42 +31,42 @@ Algılama, indirmek ve bir uygulama ve önkoşulları yüklemek için otomatik b
 ## <a name="task-parameters"></a>Görev parametreleri
 Aşağıdaki parametreleri açıklayan `GenerateBootstrapper` görev.
 
-- `ApplicationFile`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Önyükleyici tüm önkoşulları yüklendikten sonra uygulamanın yükleme işlemini başlatmak için kullanacağı dosyasını belirtir. Bir yapı hatası kullanılmazsa sonuçlanır `BootstrapperItems` ya da `ApplicationFile` parametre belirtildi.  
-  
-- `ApplicationName`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Önyükleyici yükleyecek uygulamanın adını belirtir. Bu ad, yükleme sırasında önyükleyici kullanır kullanıcı arabiriminde görüntülenir.  
-  
-- `ApplicationRequiresElevation`  
-  
-   İsteğe bağlı `Boolean` parametresi.  
-  
-   Varsa `true`, hedef bilgisayarda yüklü olduğunda bileşeni yükseltilmiş izinlerle çalıştırır.  
-  
-- `ApplicationUrl`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Uygulamanın yükleyici barındırma Web konumu belirtir.  
-  
-- `BootstrapperComponentFiles`  
-  
-   İsteğe bağlı `String[]` çıkış parametresi.  
-  
-   Yerleşik önyükleyici paketi dosyalarının konumunu belirtir.  
-  
-- `BootstrapperItems`  
-  
-   İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.  
-  
-   Önyükleyici derleme ürünlerin belirtir. Bu parametreye geçirilen öğe, aşağıdaki söz dizimini sahip olmanız gerekir:  
-  
+- `ApplicationFile`
+
+   İsteğe bağlı `String` parametresi.
+
+   Önyükleyici tüm önkoşulları yüklendikten sonra uygulamanın yükleme işlemini başlatmak için kullanacağı dosyasını belirtir. Bir yapı hatası kullanılmazsa sonuçlanır `BootstrapperItems` ya da `ApplicationFile` parametre belirtildi.
+
+- `ApplicationName`
+
+   İsteğe bağlı `String` parametresi.
+
+   Önyükleyici yükleyecek uygulamanın adını belirtir. Bu ad, yükleme sırasında önyükleyici kullanır kullanıcı arabiriminde görüntülenir.
+
+- `ApplicationRequiresElevation`
+
+   İsteğe bağlı `Boolean` parametresi.
+
+   Varsa `true`, hedef bilgisayarda yüklü olduğunda bileşeni yükseltilmiş izinlerle çalıştırır.
+
+- `ApplicationUrl`
+
+   İsteğe bağlı `String` parametresi.
+
+   Uygulamanın yükleyici barındırma Web konumu belirtir.
+
+- `BootstrapperComponentFiles`
+
+   İsteğe bağlı `String[]` çıkış parametresi.
+
+   Yerleşik önyükleyici paketi dosyalarının konumunu belirtir.
+
+- `BootstrapperItems`
+
+   İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.
+
+   Önyükleyici derleme ürünlerin belirtir. Bu parametreye geçirilen öğe, aşağıdaki söz dizimini sahip olmanız gerekir:
+
   ```xml
   <BootstrapperItem
       Include="ProductCode">
@@ -75,77 +75,77 @@ Aşağıdaki parametreleri açıklayan `GenerateBootstrapper` görev.
       </ProductName>
   </BootstrapperItem>
   ```
-  
-   `Include` Öznitelik yüklenmesi gereken önkoşul adını temsil eder. `ProductName` Öğe meta verileri isteğe bağlıdır ve paket bulunamazsa yapı altyapısı tarafından bir kolay ad kullanılacak. Bu öğeler, gerekli değildir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] giriş parametreleri, sürece hiçbir `ApplicationFile` belirtilir. Uygulamanız için yüklü olması gereken her bir ön koşul için bir öğe içermelidir.  
-  
-   Bir yapı hatası kullanılmazsa sonuçlanır `BootstrapperItems` ya da `ApplicationFile` parametre belirtildi.  
-  
-- `BootstrapperKeyFile`  
-  
-   İsteğe bağlı `String` çıkış parametresi.  
-  
-   Yerleşik konumunu belirtir *setup.exe*  
-  
-- `ComponentsLocation`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Yükleme önkoşulları yüklemek aranacak önyükleyici için bir konum belirtir. Bu parametre aşağıdaki değerleri içerebilir:  
-  
-  - `HomeSite`: Önkoşul bileşeni satıcı tarafından barındırıldığını gösterir.  
-  
-  - `Relative`: Önkoşul uygulamanın aynı konumda olduğunu gösterir.  
-  
-  - `Absolute`: Tüm bileşenleri merkezi bir URL'de bulunabilir olduğunu gösterir. Bu değer ile birlikte kullanılması gereken `ComponentsUrl` giriş parametresi.  
-  
-    Varsa `ComponentsLocation` belirtilmezse, `HomeSite` varsayılan olarak kullanılır.  
-  
-- `ComponentsUrl`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Yükleme önkoşulları içeren URL'yi belirtir.  
-  
-- `CopyComponents`  
-  
-   İsteğe bağlı `Boolean` parametresi.  
-  
-   Varsa `true`, tüm çıktı dosyaları önyükleyici belirtilen yola kopyalar `OutputPath` parametresi. Değerlerini `BootstrapperComponentFiles` parametresi tüm tabanlı bu yolda. Varsa `false`, dosyalar kopyalanır değil ve `BootstrapperComponentFiles` değerleri değerini temel alarak `Path` parametresi.  Bu parametrenin varsayılan değeri `true`.  
-  
-- `Culture`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   UI önyükleyici için ve yükleme önkoşulları kültürü belirtir. Belirtilen kültür kullanılamıyorsa, görev değerini kullanır. `FallbackCulture` parametresi.  
-  
-- `FallbackCulture`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   UI önyükleyici için ve yükleme önkoşulları ikincil kültürü belirtir.  
-  
-- `OutputPath`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Kopyalanacak konumun belirtir *setup.exe* ve tüm dosyalar paket.  
-  
-- `Path`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Kullanılabilir tüm önkoşul paketleri konumunu belirtir.  
-  
-- `SupportUrl`  
-  
-   İsteğe bağlı `String` parametresi.  
-  
-   Önyükleyici yüklenmesi başarısız olursa sağlamak için URL'yi belirtir.  
-  
-- `Validate`  
-  
-   İsteğe bağlı `Boolean` parametresi.  
-  
+
+   `Include` Öznitelik yüklenmesi gereken önkoşul adını temsil eder. `ProductName` Öğe meta verileri isteğe bağlıdır ve paket bulunamazsa yapı altyapısı tarafından bir kolay ad kullanılacak. Bu öğeler, gerekli değildir. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] giriş parametreleri, sürece hiçbir `ApplicationFile` belirtilir. Uygulamanız için yüklü olması gereken her bir ön koşul için bir öğe içermelidir.
+
+   Bir yapı hatası kullanılmazsa sonuçlanır `BootstrapperItems` ya da `ApplicationFile` parametre belirtildi.
+
+- `BootstrapperKeyFile`
+
+   İsteğe bağlı `String` çıkış parametresi.
+
+   Yerleşik konumunu belirtir *setup.exe*
+
+- `ComponentsLocation`
+
+   İsteğe bağlı `String` parametresi.
+
+   Yükleme önkoşulları yüklemek aranacak önyükleyici için bir konum belirtir. Bu parametre aşağıdaki değerleri içerebilir:
+
+  - `HomeSite`: Önkoşul bileşeni satıcı tarafından barındırıldığını gösterir.
+
+  - `Relative`: Önkoşul uygulamanın aynı konumda olduğunu gösterir.
+
+  - `Absolute`: Tüm bileşenleri merkezi bir URL'de bulunabilir olduğunu gösterir. Bu değer ile birlikte kullanılması gereken `ComponentsUrl` giriş parametresi.
+
+    Varsa `ComponentsLocation` belirtilmezse, `HomeSite` varsayılan olarak kullanılır.
+
+- `ComponentsUrl`
+
+   İsteğe bağlı `String` parametresi.
+
+   Yükleme önkoşulları içeren URL'yi belirtir.
+
+- `CopyComponents`
+
+   İsteğe bağlı `Boolean` parametresi.
+
+   Varsa `true`, tüm çıktı dosyaları önyükleyici belirtilen yola kopyalar `OutputPath` parametresi. Değerlerini `BootstrapperComponentFiles` parametresi tüm tabanlı bu yolda. Varsa `false`, dosyalar kopyalanır değil ve `BootstrapperComponentFiles` değerleri değerini temel alarak `Path` parametresi.  Bu parametrenin varsayılan değeri `true`.
+
+- `Culture`
+
+   İsteğe bağlı `String` parametresi.
+
+   UI önyükleyici için ve yükleme önkoşulları kültürü belirtir. Belirtilen kültür kullanılamıyorsa, görev değerini kullanır. `FallbackCulture` parametresi.
+
+- `FallbackCulture`
+
+   İsteğe bağlı `String` parametresi.
+
+   UI önyükleyici için ve yükleme önkoşulları ikincil kültürü belirtir.
+
+- `OutputPath`
+
+   İsteğe bağlı `String` parametresi.
+
+   Kopyalanacak konumun belirtir *setup.exe* ve tüm dosyalar paket.
+
+- `Path`
+
+   İsteğe bağlı `String` parametresi.
+
+   Kullanılabilir tüm önkoşul paketleri konumunu belirtir.
+
+- `SupportUrl`
+
+   İsteğe bağlı `String` parametresi.
+
+   Önyükleyici yüklenmesi başarısız olursa sağlamak için URL'yi belirtir.
+
+- `Validate`
+
+   İsteğe bağlı `Boolean` parametresi.
+
    Varsa `true`, önyükleyici belirtilen giriş önyükleyici öğeleri XSD doğrulaması gerçekleştirir. Bu parametrenin varsayılan değeri `false`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -176,5 +176,5 @@ Aşağıdaki örnekte `GenerateBootstrapper` sahip olması gereken bir uygulamay
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

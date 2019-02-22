@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531bd7877a6bfc2f1300a7a397556c9e24d84654
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853436"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610469"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Nasıl yapılır: Virgülle ayrılmış bir öğe listesini görüntüleme
 Öğesi ile çalışırken listeleri [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), bu öğe listeleri içeriğini okumak kolay bir şekilde görüntülemek bazen kullanışlıdır. Veya özel ayırıcı dize ile ayrılmış olan öğelerin listesini alan bir görev olabilir. Her iki durumda, bir öğe listesi için bir ayırıcı dize belirtebilirsiniz.
@@ -67,5 +67,5 @@ Bu örnekte, eşdeğer komut satırı komutudur:
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[Öğeler](../msbuild/msbuild-items.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Öğeler](../msbuild/msbuild-items.md)

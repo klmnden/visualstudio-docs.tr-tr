@@ -15,44 +15,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ea89dcf3244da64fdadf4259e2afb3c4718630
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927482"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626810"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Bellek Ayırma Görünümü
-Ayırma görünümü, profil oluşturma çalışması süresince oluşturulan türlerini listeler. Her türde ayırmalar şeklinde sonuçlanan işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü türüdür.  
-  
- Profil oluşturma çalıştırmasını içinde oluşturulan türünden nesnelerin toplam sayısı ve bu tür nesneler için ayrılmış baytların toplam sayısı, türü bir satırdaki verileri görüntüler. Dahil ve hariç olan değerler türü için her zaman aynı olur.  
-  
-- Kapsamlı işleve ve çağrı ağacında üst işlev tarafından çağrılan alt işlevleri örneklerinde oluşturulan nesneler için değerler.  
-  
-- Bunlar üst işlev tarafından çağrılmış olduğunda doğrudan işlevi tarafından oluşturulan nesneler için özel değerler şunlardır. Alt işlevlerde oluşturulan nesneler dahil edilmez.  
-  
-  Verileri bir işlev için oluşturulan nesne sayısını ve üst tür nesneler için ayrılan bayt sayısını görüntüler.  
-  
-## <a name="highlight-the-execution-hot-path"></a>Yürütme etkin yolu vurgulayın  
- Çoğu nesne üst türü oluşturulan çağrı ağacını yürütme yolunu bulabilirsiniz.  
-  
--   En etkin yol görüntülemek için tür veya işlev sağ tıklayın ve ardından **etkin yolu Genişlet**.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Ad**|Ayrılmış türün veya işlevin adı.|  
-|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|  
-|**İşlem adı**|İşlemin adı.|  
-|**Modül adı**|Tür veya işlev içeren modül adı.|  
-|**Modül yolu**|Tür veya işlev içeren modül yolu.|  
-|**Kaynak dosyası**|Tür veya işlev tanımını içeren kaynak dosya.|  
-|**İşlevin satır numarası**|Bu tür tanımı veya kaynak dosyada işlev satır sayısı.|  
-|**Düzey**|Veri türü veya bir işlev için olup olmadığını gösterir.|  
-|**Kapsamlı ayırmalar**|-Bir işlev için işlevi tarafından oluşturulan üst öğe türündeki nesnelerin toplam sayısı. Bu sayı, alt işlevlerde oluşturulan nesneleri içerir.<br />-Bir tür için oluşturulan bu türdeki örneklerin toplam sayısı.|  
-|**Kapsamlı ayırma yüzdesi**|-Bir işlev için olan işleve göre üst türü kapsamlı ayırma profil oluşturma çalıştırmasını içinde oluşturulan tüm nesnelerin yüzdesi.<br />-Bir tür için, profil oluşturma çalışmasında oluşturulan nesnelerin toplam sayısının yüzdesi türün örneklerinin yoktu.|  
-|**Dışlamalı ayırmalar**|-Bir işlev için işlev çağrı yığınının başında doğrudan yürütülürken, oluşturulan nesne sayısı. Bu sayı, alt işlevlerde oluşturulan nesnelerin içermez.<br />-Bir tür için oluşturulan bu türdeki örneklerin toplam sayısı.|  
-|**Dışlamalı ayırma yüzdesi**|-Bir işlev için olan işleve göre üst türü dışlamalı ayırma profil oluşturma çalıştırmasını içinde oluşturulan tüm nesnelerin yüzdesi.<br />-Bir tür için, profil oluşturma çalışmasında oluşturulan nesnelerin toplam sayısının yüzdesi türün örneklerinin yoktu.|  
-|**Kapsamlı bayt**|-Bir işlev için üst türü nesneler için işlev tarafından ayrılan bellek bayt sayısı. Bu sayı, alt işlevleri tarafından ayrılan bellek içerir.<br />-Bir tür için türü örnekleri için profil oluşturma çalışmasında ayrılan toplam bayt sayısı.|  
-|**Kapsamlı bayt yüzdesi**|-Bir işlev için kapsamlı ayırma işleviyle üst türü, profil oluşturma çalışmasında ayrılan tüm bellek yüzdesini oluştu.<br />-Bir tür için, profil oluşturma çalışmasında ayrılan tüm bellek yüzdesi için ayrılmış örnekleri türü.|  
-|**Dışlamalı bayt**|-Bir işlev için üst türü nesneler için işlev tarafından ayrılan bellek bayt sayısı. Bu sayı, alt işlevleri tarafından ayrılan bellek içermez.<br />-Bir tür için profil oluşturma ayrılan bayt sayısı türü örnekleri için çalıştırın.|  
+Ayırma görünümü, profil oluşturma çalışması süresince oluşturulan türlerini listeler. Her türde ayırmalar şeklinde sonuçlanan işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümü türüdür.
+
+ Profil oluşturma çalıştırmasını içinde oluşturulan türünden nesnelerin toplam sayısı ve bu tür nesneler için ayrılmış baytların toplam sayısı, türü bir satırdaki verileri görüntüler. Dahil ve hariç olan değerler türü için her zaman aynı olur.
+
+- Kapsamlı işleve ve çağrı ağacında üst işlev tarafından çağrılan alt işlevleri örneklerinde oluşturulan nesneler için değerler.
+
+- Bunlar üst işlev tarafından çağrılmış olduğunda doğrudan işlevi tarafından oluşturulan nesneler için özel değerler şunlardır. Alt işlevlerde oluşturulan nesneler dahil edilmez.
+
+  Verileri bir işlev için oluşturulan nesne sayısını ve üst tür nesneler için ayrılan bayt sayısını görüntüler.
+
+## <a name="highlight-the-execution-hot-path"></a>Yürütme etkin yolu vurgulayın
+ Çoğu nesne üst türü oluşturulan çağrı ağacını yürütme yolunu bulabilirsiniz.
+
+-   En etkin yol görüntülemek için tür veya işlev sağ tıklayın ve ardından **etkin yolu Genişlet**.
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Ad**|Ayrılmış türün veya işlevin adı.|
+|**İşlem kimliği**|İşlem, profil oluşturma çalışması Kimliğine (PID).|
+|**İşlem adı**|İşlemin adı.|
+|**Modül adı**|Tür veya işlev içeren modül adı.|
+|**Modül yolu**|Tür veya işlev içeren modül yolu.|
+|**Kaynak dosyası**|Tür veya işlev tanımını içeren kaynak dosya.|
+|**İşlevin satır numarası**|Bu tür tanımı veya kaynak dosyada işlev satır sayısı.|
+|**Düzey**|Veri türü veya bir işlev için olup olmadığını gösterir.|
+|**Kapsamlı ayırmalar**|-Bir işlev için işlevi tarafından oluşturulan üst öğe türündeki nesnelerin toplam sayısı. Bu sayı, alt işlevlerde oluşturulan nesneleri içerir.<br />-Bir tür için oluşturulan bu türdeki örneklerin toplam sayısı.|
+|**Kapsamlı ayırma yüzdesi**|-Bir işlev için olan işleve göre üst türü kapsamlı ayırma profil oluşturma çalıştırmasını içinde oluşturulan tüm nesnelerin yüzdesi.<br />-Bir tür için, profil oluşturma çalışmasında oluşturulan nesnelerin toplam sayısının yüzdesi türün örneklerinin yoktu.|
+|**Dışlamalı ayırmalar**|-Bir işlev için işlev çağrı yığınının başında doğrudan yürütülürken, oluşturulan nesne sayısı. Bu sayı, alt işlevlerde oluşturulan nesnelerin içermez.<br />-Bir tür için oluşturulan bu türdeki örneklerin toplam sayısı.|
+|**Dışlamalı ayırma yüzdesi**|-Bir işlev için olan işleve göre üst türü dışlamalı ayırma profil oluşturma çalıştırmasını içinde oluşturulan tüm nesnelerin yüzdesi.<br />-Bir tür için, profil oluşturma çalışmasında oluşturulan nesnelerin toplam sayısının yüzdesi türün örneklerinin yoktu.|
+|**Kapsamlı bayt**|-Bir işlev için üst türü nesneler için işlev tarafından ayrılan bellek bayt sayısı. Bu sayı, alt işlevleri tarafından ayrılan bellek içerir.<br />-Bir tür için türü örnekleri için profil oluşturma çalışmasında ayrılan toplam bayt sayısı.|
+|**Kapsamlı bayt yüzdesi**|-Bir işlev için kapsamlı ayırma işleviyle üst türü, profil oluşturma çalışmasında ayrılan tüm bellek yüzdesini oluştu.<br />-Bir tür için, profil oluşturma çalışmasında ayrılan tüm bellek yüzdesi için ayrılmış örnekleri türü.|
+|**Dışlamalı bayt**|-Bir işlev için üst türü nesneler için işlev tarafından ayrılan bellek bayt sayısı. Bu sayı, alt işlevleri tarafından ayrılan bellek içermez.<br />-Bir tür için profil oluşturma ayrılan bayt sayısı türü örnekleri için çalıştırın.|
 |**Dışlamalı bayt yüzdesi**|-Bir işlev için işleve göre üst türü dışlamalı ayırmalar, profil oluşturma çalışmasında ayrılan tüm bellek yüzdesini oluştu.<br />-Bir tür için, profil oluşturma çalışmasında ayrılan tüm bellek yüzdesi için ayrılmış örnekleri türü.|

@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59eee930f13cb7f2d870c62d6cd0b47704eb94db
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a50328824bf6c869d6cfc1cef94af24566010e9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991339"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611265"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
-Çağırma yöntemlerinin bir göstergesini döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_callingConvention (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir değer döndürür [CV_call_e numaralandırması](../../debugger/debug-interface-access/cv-call-e.md) çağırma kuralı bir yöntem belirten sabit listesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Çağırma yöntemlerinin bir göstergesini döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_callingConvention ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir değer döndürür [CV_call_e numaralandırması](../../debugger/debug-interface-access/cv-call-e.md) çağırma kuralı bir yöntem belirten sabit listesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Gereksinim|Açıklama|  
-|-----------------|-----------------|  
-|Üst bilgi:|dia2.h|  
-|Sürüm:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV_call_e Numaralandırması](../../debugger/debug-interface-access/cv-call-e.md)
+>  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Gereksinim|Açıklama|
+|-----------------|-----------------|
+|Üst bilgi:|dia2.h|
+|Sürüm:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [CV_call_e Numaralandırması](../../debugger/debug-interface-access/cv-call-e.md)

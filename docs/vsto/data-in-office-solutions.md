@@ -14,30 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0dc88a5075d5830a26c5a9d3eaa99a885b6ddde1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621259"
 ---
 # <a name="data-in-office-solutions"></a>Office çözümlerindeki veriler
   Office çözümlerini almak veya verileri değiştirme olanağı verir. Visual Studio kullanarak Office çözümleri oluşturma, verilerle çalışmak birkaç farklı yolu vardır.
 
 ## <a name="in-this-section"></a>Bu bölümde
- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md) Office çözümlerinde denetimlere veri bağlama işlemini açıklamaktadır.
+- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
 
- [Özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md) Office çözümlerindeki veriler ile çalışmak için özel XML bölümleri kullanmayı açıklar.
+ Office çözümlerinde denetimlere veri bağlama işlemini açıklamaktadır.
 
- [Veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md) Office uygulamasını başlatmadan erişilebilir bir katıştırılmış veri adası içinde verilerin nasıl açıklar.
+- [Özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md)
 
- [XML şemaları ve verileri belge düzeyi özelleştirmeleri](../vsto/xml-schemas-and-data-in-document-level-customizations.md) XML verilere bağlı denetimler oluşturmak için belge düzeyi özelleştirmelerde XML şemaları kullanmayı açıklar.
+ Office çözümlerindeki veriler ile çalışmak için özel XML bölümleri kullanmayı açıklar.
 
- [Office çözümlerine genel bakış yerel veritabanı dosyaları kullanma](../vsto/using-local-database-files-in-office-solutions-overview.md) projelerinizi ve çevrimdışı kullanım için verileri önbelleğe alabilir, veritabanı dosyalarını içe aktarmayı açıklar.
+- [Belge düzeyi özelleştirmelerdeki önbelleğe alınmış veriler](../vsto/cached-data-in-document-level-customizations.md)
+
+ Office uygulamasını başlatmadan erişilebilir bir katıştırılmış veri adası içinde verileri depolamak açıklar.
+
+- [XML şemaları ve belge düzeyi özelleştirmelerdeki veriler](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+
+ XML verilere bağlı denetimler oluşturmak için belge düzeyi özelleştirmelerde XML şemaları kullanılacağını açıklar.
+
+- [Office çözümlerine genel bakış yerel veritabanı dosyaları kullanma](../vsto/using-local-database-files-in-office-solutions-overview.md)
+
+ Projelerinizi ve çevrimdışı kullanım için verileri önbelleğe alabilir, veritabanı dosyalarını içe aktarmayı açıklar.
 
 ## <a name="related-sections"></a>İlgili bölümler
- [Visual Studio'da verilere erişim](../data-tools/accessing-data-in-visual-studio.md) Visual Studio'da verilerle nasıl çalışılacağını konuları listeler.
+- [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)
 
- [Verileri kaydetme](../data-tools/saving-data.md) geri veri kaynağına bir veri kümesindeki verileri değiştirme ve değişiklikleri yazma dahil olmak üzere, veri kümeleri ile çalışma hakkındaki konulara bağlantılar sağlar.
+ Visual Studio'da verilerle nasıl çalışılacağını konuları listeler.
 
- [Tasarlama ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md) Visual Studio kullanarak Office projeleri oluşturmaya başlama hakkında bilgi için bağlantılar sağlar.
+- [Verileri kaydetme](../data-tools/saving-data.md)
+
+ Veri kaynağına değişiklikler yazma ve bir veri kümesindeki verileri değiştirme dahil olmak üzere, veri kümeleri ile çalışma hakkındaki konulara bağlantılar yedekleme sağlar.
+
+- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+
+ Visual Studio kullanarak Office projeleri oluşturmaya başlama hakkında bilgi için bağlantılar sağlar.

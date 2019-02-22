@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908497"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603267"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl yapılır: Visual Studio derleme işlemini genişletme
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yapı işlemi bir dizi tarafından tanımlanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* proje dosyanıza aktarmış dosyaları. Dosyaları, bunlardan alınan *Microsoft.Common.targets*, yapı işleminde bazı noktalarda özel görevleri çalıştırmanıza olanak tanır şekilde genişletilebilir. Bu makalede genişletmek için kullanabileceğiniz iki yöntem anlatılmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] derleme işlemi:
@@ -35,8 +35,8 @@ ms.locfileid: "55908497"
 
 1. Önceden tanımlanmış bir hedef belirleyin *Microsoft.Common.targets* geçersiz kılmak istediğiniz. Güvenli bir şekilde geçersiz kılabilirsiniz hedeflerin tam listesi için aşağıdaki tabloya bakın.
 
-2. Hemen önce hedef veya hedefleri, proje dosyasının sonunda tanımlamak `</Project>` etiketi. Örneğin:  
-  
+2. Hemen önce hedef veya hedefleri, proje dosyasının sonunda tanımlamak `</Project>` etiketi. Örneğin:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ ms.locfileid: "55908497"
         </Target>
     </Project>
     ```
-  
+
 3. Proje dosyası oluşturun.
 
 Aşağıdaki tabloda tüm hedeflerin gösterir *Microsoft.Common.targets* , güvenli bir şekilde geçersiz kılabilirsiniz.
@@ -124,6 +124,6 @@ Proje dosyalarını içeri aktaran projeler, yaptığınız özelleştirmelerin 
 |`CompileDependsOn`|Özel işlemler önce veya sonra derleme adımı eklemek istiyorsanız geçersiz kılmak için özellik.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Visual Studio tümleştirmesi](../msbuild/visual-studio-integration-msbuild.md)  
-[MSBuild kavramları](../msbuild/msbuild-concepts.md)  
-[.targets dosyaları](../msbuild/msbuild-dot-targets-files.md)
+- [Visual Studio tümleştirmesi](../msbuild/visual-studio-integration-msbuild.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+- [.targets dosyaları](../msbuild/msbuild-dot-targets-files.md)

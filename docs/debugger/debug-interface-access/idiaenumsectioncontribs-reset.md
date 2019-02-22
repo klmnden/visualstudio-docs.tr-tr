@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cc4ff77ae359d5804a02055d96f84467342b84
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fb0a79cf2ef300df7e0cf4a745d8d22a30a80fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939081"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644432"
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
-Bir numaralandırma sıralı başlangıç durumuna sıfırlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Bir numaralandırma sıralı başlangıç durumuna sıfırlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+ Döndürür `S_OK`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2083b6446fc4f818bfc7d88b2b8a029ef4b06624
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33617b71c8ba13c459df8bcf29fb8a51cf948299
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621369"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Önemli miktarda yansıma
 
-|||  
-|-|-|  
-|Kural Kimliği|DA0012|  
-|Kategori|.NET framework kullanımı|  
-|Profil oluşturma yöntemleri|Örnekleme|  
-|İleti|Yansıma aşırı kullanıyor olabilirsiniz. Bu pahalı bir işlemdir.|  
-|Kural türü|Uyarı|  
+|||
+|-|-|
+|Kural Kimliği|DA0012|
+|Kategori|.NET framework kullanımı|
+|Profil oluşturma yöntemleri|Örnekleme|
+|İleti|Yansıma aşırı kullanıyor olabilirsiniz. Bu pahalı bir işlemdir.|
+|Kural türü|Uyarı|
 
-## <a name="cause"></a>Sebep  
- System.Reflection yöntemleri InvokeMember ve GetMember gibi veya türü yöntemleri MemberInvoke gibi profil oluşturma verilerinin önemli bir kısmı çağrılarıdır. Mümkün olduğunda, erken bağlama yöntemlerine bağımlı derlemelerin bu yöntemler yerine göz önünde bulundurun.  
+## <a name="cause"></a>Sebep
+ System.Reflection yöntemleri InvokeMember ve GetMember gibi veya türü yöntemleri MemberInvoke gibi profil oluşturma verilerinin önemli bir kısmı çağrılarıdır. Mümkün olduğunda, erken bağlama yöntemlerine bağımlı derlemelerin bu yöntemler yerine göz önünde bulundurun.
 
-## <a name="rule-description"></a>Kural açıklaması  
- Yansıma, uygulamanızın bağımlı bir çalışma zamanı derleme geç bağlama gerçekleştirmek veya oluşturmak ve yeni türler çalışma zamanında dinamik olarak yürütmek için kullanılan .NET Framework'ün esnek bir özelliğidir. Ancak, sık kullanılan veya sıkı Döngülerde adlı bu teknikler performansı düşürebilir.  
+## <a name="rule-description"></a>Kural açıklaması
+ Yansıma, uygulamanızın bağımlı bir çalışma zamanı derleme geç bağlama gerçekleştirmek veya oluşturmak ve yeni türler çalışma zamanında dinamik olarak yürütmek için kullanılan .NET Framework'ün esnek bir özelliğidir. Ancak, sık kullanılan veya sıkı Döngülerde adlı bu teknikler performansı düşürebilir.
 
- Daha fazla bilgi için [yansıma ve geç bağlama](http://go.microsoft.com/fwlink/?LinkId=177826) bölüm 5 bölümüne — geliştirme yönetilen kod performansını iyileştirme .NET uygulama performansı ve ölçeklenebilirlik toplu uygulamaları ve Microsoft Patterns MSDN Kitaplığı.  
+ Daha fazla bilgi için [yansıma ve geç bağlama](http://go.microsoft.com/fwlink/?LinkId=177826) bölüm 5 bölümüne — geliştirme yönetilen kod performansını iyileştirme .NET uygulama performansı ve ölçeklenebilirlik toplu uygulamaları ve Microsoft Patterns MSDN Kitaplığı.
 
-## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
+## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma
  Hata Listesi penceresindeki iletiyi gitmek için çift tıklatın [işlev Ayrıntıları görünümü](../profiling/function-details-view.md) profil oluşturma verilerinin. .NET yansıma API'lerin kullanımını en sık yaptığınız program bölümleri bulmak için System.Type veya System.Reflection yöntemini çağırma işlevlerini inceleyin. Meta veri döndüren yöntemler kullanmaktan kaçının. Uygulamanızın performans kritik olduğunda, geç bağlama ve türleri dinamik olarak çalışma zamanında oluşturma kullanmaktan kaçının gerekebilir.

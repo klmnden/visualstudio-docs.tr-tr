@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08019de39c6e579bb0cfa08732f97a748141fb5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9ca0b183f0616705ec61475c4570fa11ce89640d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039806"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622286"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
-Bu işlev, bu sembol üst/kapsayıcı temsil eden bir sembol için bir işaretçi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_container(  
-   IDiaSymbol **pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir işaretçi döndüren bir `IDiaSymbol` bu simgenin kapsayıcı hakkında bilgileri içeren.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK döndürür; Aksi takdirde S_FALSE veya bir hata kodu döndürür.  
-  
+Bu işlev, bu sembol üst/kapsayıcı temsil eden bir sembol için bir işaretçi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_container(
+   IDiaSymbol **pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir işaretçi döndüren bir `IDiaSymbol` bu simgenin kapsayıcı hakkında bilgileri içeren.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılıysa S_OK döndürür; Aksi takdirde S_FALSE veya bir hata kodu döndürür.
+
 > [!NOTE]
->  S_FALSE dönüş değeri, özellik simge için kullanılabilir olmadığı anlamına gelir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Gereksinim|Açıklama|  
-|-----------------|-----------------|  
-|Üst bilgi:|dia2.h|  
-|Sürüm:|DIA SDK v8.0|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  S_FALSE dönüş değeri, özellik simge için kullanılabilir olmadığı anlamına gelir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Gereksinim|Açıklama|
+|-----------------|-----------------|
+|Üst bilgi:|dia2.h|
+|Sürüm:|DIA SDK v8.0|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

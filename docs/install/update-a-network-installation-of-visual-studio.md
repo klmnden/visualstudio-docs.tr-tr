@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28ba86dcfb1fb98d9ba88c06a8df2ea3a104ea4d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617294"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ tabanlı yüklemesini güncelleştirme
 
@@ -26,13 +26,13 @@ Bunu mümkün olması için bir ağ yükleme düzeni, Visual Studio'nun en son �
 
 ## <a name="how-to-update-a-network-layout"></a>Bir ağ düzeni güncelleştirme
 
-Böylece en son güncelleştirmeleri içeren ağ yükleme paylaşımınızdan yenilemek için çalıştırma güncelleştirilmiş paket artımlı olarak yüklemek için Düzen komutu.
+Böylece en son güncelleştirmeleri içeren ağ yükleme paylaşımınızdan yenilemek için çalıştırma `--layout` güncelleştirilmiş paket artımlı olarak yüklemek için komutu.
 
-İlk ağ düzeni oluşturduğunuz sırada kısmi bir düzen seçtiyseniz, bu ayarlar kaydedilir.  Gelecekteki Düzen komutları, önceki seçeneklerinin yanı sıra, belirttiğiniz yeni seçenekleri kullanın.  (Bu 15.3 sürümünde yenidir.)  Bir düzen daha eski bir sürümü kullanıyorsanız, içeriği güncelleştirmek için ağ yükleme düzeni (diğer bir deyişle, aynı iş yüklerini ve dilleri) oluştururken kullandığınız aynı komut satırı parametreleri kullanmanız gerekir.
+**15.3 yeni**: İlk ağ düzeni oluşturduğunuz sırada kısmi bir düzen seçtiyseniz, bu ayarlar kaydedilir.  Gelecekteki Düzen komutları, önceki seçeneklerinin yanı sıra, belirttiğiniz yeni seçenekleri kullanın. Ancak bir düzeni önceki bir sürümü kullanıyorsanız, içeriği güncelleştirmek için ağ yükleme düzeni (diğer bir deyişle, aynı iş yüklerini ve dilleri) oluştururken kullandığınız aynı komut satırı parametreleri kullanmanız gerekir.
 
 Bir dosya paylaşımında bir düzen barındırıyorsanız, özel bir kopyasını (örneğin, c:\vs2017offline) düzeni güncelleştirmek ve ardından, tüm güncelleştirilmiş içeriği karşıdan sonra dosya paylaşımınızı kopyalayın (örneğin, \\server\products\VS2017). Bunu yapmazsanız, Düzen güncelleştirildiği sırada Kurulum'u tüm kullanıcılar, henüz tamamen güncelleştirilmez tüm içeriğin elde düzenden mümkün olmayabilir, büyük bir olasılık yoktur.
 
-Şimdi oluşturur ve ardından bir düzen nasıl kullanacağımızı inceleyeceğiz:
+Şimdi oluşturur ve ardından bir düzen ilişkin bazı örnekleri incelemenize:
 
 * İlk olarak, yalnızca İngilizce için bir düzen ile bir iş yükü oluşturmak nasıl bir örnek aşağıdadır:
 
@@ -58,7 +58,7 @@ Bir dosya paylaşımında bir düzen barındırıyorsanız, özel bir kopyasın�
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* Son olarak, burada da bir ek iş yükü ve yerelleştirilmiş dil sürümü güncelleştirmeden ekleme. (Bu komut, ASP.NET ve Web iş yükü ekler.)  Artık yönetilen Masaüstü, Azure'da ve ASP.NET ve Web iş yüklerini Bu düzende dahil edilir.  İngilizce, Almanca ve Fransızca Dil kaynakları için bu iş yükleri de dahildir.  Ancak, bu komutu çalıştırdığınızda düzenini kullanılabilir en son sürüme güncelleştirilmedi.  Bu, mevcut sürümde kalır.
+* Son olarak, burada da bir ek iş yükü ve yerelleştirilmiş dil sürümü güncelleştirmeden ekleme. (Bu komut, ASP.NET ve Web iş yükü ekler.)  Artık yönetilen Masaüstü, Azure'da ve ASP.NET ve Web iş yüklerini Bu düzende dahil edilir. İngilizce, Almanca ve Fransızca Dil kaynakları için bu iş yükleri de dahildir.  Ancak, bu komutu çalıştırdığınızda düzenini kullanılabilir en son sürüme güncelleştirilmedi. Bu, mevcut sürümde kalır.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

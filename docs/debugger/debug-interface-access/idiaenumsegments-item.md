@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9e1632fa9031dc502cce6467e60e76d30bf874
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87751dcca1e2109db53c9d6dd4594bc969ffc684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999047"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616511"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
-Bir segmenti yoluyla dizin alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT Item (   
-   DWORD         index,  
-   IDiaSegment** segment  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- dizin  
- [in] Dizin [Idiasegment](../../debugger/debug-interface-access/idiasegment.md) alınacak nesne. İçin 0 aralığındaki dizinidir `count`-1, burada `count` tarafından döndürülen [Idiaenumsegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) yöntemi.  
-  
- Segment  
- [out] Döndürür bir [Idiasegment](../../debugger/debug-interface-access/idiasegment.md) istenen kesimini temsil eden nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaenumsegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Bir segmenti yoluyla dizin alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Item ( 
+   DWORD         index,
+   IDiaSegment** segment
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ dizin
+
+[in] Dizin [Idiasegment](../../debugger/debug-interface-access/idiasegment.md) alınacak nesne. İçin 0 aralığındaki dizinidir `count`-1, burada `count` tarafından döndürülen [Idiaenumsegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) yöntemi.
+
+ Segment
+
+[out] Döndürür bir [Idiasegment](../../debugger/debug-interface-access/idiasegment.md) istenen kesimini temsil eden nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

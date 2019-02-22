@@ -10,92 +10,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a53b3423cbda77f0625e6791e96db740636000
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925194"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625016"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` Yöntemi profili işareti ekler. *Vsp* dosya. Profil oluşturma için iş parçacığı içeren `MarkProfile` işlevi eklenecek işareti için açık olması gerekir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `lMarker`  
-  
- Eklenecek işaretçisi. İşaretin değerinden büyük veya 0 (sıfır) eşit olmalıdır.  
-  
-## <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri  
- İşlevi kullanarak başarısı veya başarısızlığı gösterir **PROFILE_COMMAND_STATUS** sabit listesi. Dönüş değeri aşağıdakilerden biri olabilir:  
-  
-|Numaralandırıcı|Açıklama|  
-|----------------|-----------------|  
-|MARK_ERROR_MARKER_RESERVED|Parametresi veya 0'a eşit olan küçük. Bu değerler ayrılmıştır. Açıklama ve işareti kaydedilmez.|  
-|MARK_ERROR_MODE_NEVER|HİÇ işlev çağrıldığında profil oluşturma modunda ayarlandı. Açıklama ve işareti kaydedilmez.|  
-|MARK_ERROR_MODE_OFF|İşlev çağrıldığında, profil oluşturma modunda OFF olarak ayarlandı. Açıklama ve işareti kaydedilmez.|  
-|MARK_ERROR_NO_SUPPORT|Bu bağlamda işareti desteği yok. Açıklama ve işareti kaydedilmez.|  
-|MARK_ERROR_OUTOFMEMORY|Bellek olayı kaydetmek kullanılabilir değildi. Açıklama ve işareti kaydedilmez.|  
-|MARK_TEXTTOOLONG|Dize en fazla 256 karakter aşıyor. Açıklama dizesi kesilmiş ve işareti ve yorum kaydedilir.|  
-|MARK_OK|MARK_OK tamamlandığını bildiren döndürülür.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Değeri işareti eklenir. *vsp* dosyası her zaman kod MarkProfile işlevi içeren iş parçacığı profili varsa çalışır. Birden çok kez MarkProfile çağırabilirsiniz.  
-  
- Profil işaretleri kapsam içinde geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç veya bitiş içinde herhangi bir iş parçacığı bir veri parçasının işaretlemek için kullanılabilir. *vsp* dosya.  
-  
- İşaretler ve açıklama işareti komutu veya API işlevleri (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) ile eklendiğinde işareti profili işlevi içeren iş parçacığı profil durumu olmalıdır.  
-  
+`MarkProfile` Yöntemi profili işareti ekler. *Vsp* dosya. Profil oluşturma için iş parçacığı içeren `MarkProfile` işlevi eklenecek işareti için açık olması gerekir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
+```
+
+#### <a name="parameters"></a>Parametreler
+ `lMarker`
+
+ Eklenecek işaretçisi. İşaretin değerinden büyük veya 0 (sıfır) eşit olmalıdır.
+
+## <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri
+ İşlevi kullanarak başarısı veya başarısızlığı gösterir **PROFILE_COMMAND_STATUS** sabit listesi. Dönüş değeri aşağıdakilerden biri olabilir:
+
+|Numaralandırıcı|Açıklama|
+|----------------|-----------------|
+|MARK_ERROR_MARKER_RESERVED|Parametresi veya 0'a eşit olan küçük. Bu değerler ayrılmıştır. Açıklama ve işareti kaydedilmez.|
+|MARK_ERROR_MODE_NEVER|HİÇ işlev çağrıldığında profil oluşturma modunda ayarlandı. Açıklama ve işareti kaydedilmez.|
+|MARK_ERROR_MODE_OFF|İşlev çağrıldığında, profil oluşturma modunda OFF olarak ayarlandı. Açıklama ve işareti kaydedilmez.|
+|MARK_ERROR_NO_SUPPORT|Bu bağlamda işareti desteği yok. Açıklama ve işareti kaydedilmez.|
+|MARK_ERROR_OUTOFMEMORY|Bellek olayı kaydetmek kullanılabilir değildi. Açıklama ve işareti kaydedilmez.|
+|MARK_TEXTTOOLONG|Dize en fazla 256 karakter aşıyor. Açıklama dizesi kesilmiş ve işareti ve yorum kaydedilir.|
+|MARK_OK|MARK_OK tamamlandığını bildiren döndürülür.|
+
+## <a name="remarks"></a>Açıklamalar
+ Değeri işareti eklenir. *vsp* dosyası her zaman kod MarkProfile işlevi içeren iş parçacığı profili varsa çalışır. Birden çok kez MarkProfile çağırabilirsiniz.
+
+ Profil işaretleri kapsam içinde geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç veya bitiş içinde herhangi bir iş parçacığı bir veri parçasının işaretlemek için kullanılabilir. *vsp* dosya.
+
+ İşaretler ve açıklama işareti komutu veya API işlevleri (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) ile eklendiğinde işareti profili işlevi içeren iş parçacığı profil durumu olmalıdır.
+
 > [!IMPORTANT]
->  MarkProfile yöntemi yalnızca izleme profil ile kullanılmalıdır.  
-  
-## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri  
- *Microsoft.VisualStudio.Profiler.dll*  
-  
-## <a name="function-information"></a>İşlev bilgisi  
- Üst bilgi: Bildirilen *VSPerf.h*  
-  
- İçeri aktarma kitaplığı: *VSPerf.lib*  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod MarkProfile işlevi gösterir.  
-  
-```cpp  
-void ExerciseMarkProfile()  
-{  
-    // Declare and initialize variables to pass to   
-    // MarkProfile.  The values of these parameters   
-    // are assigned based on the needs of the code;  
-    // and for the sake of simplicity in this example,   
-    // the variables are assigned arbitrary values.  
-    int markId = 03;  
-  
-    // Declare enumeration to hold return value of   
-    // call to MarkProfile.  
-    PROFILE_COMMAND_STATUS markResult;  
-  
-    // Variables used to print output.  
-    HRESULT hResult;  
-    TCHAR tchBuffer[256];  
-  
-    markResult = MarkProfile(markId);  
-  
-    // Format and print result.  
-    LPCTSTR pszFormat = TEXT("%s %d.\0");  
-    TCHAR* pszTxt = TEXT("MarkProfile returned");  
-    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,   
-        pszTxt, markResult);  
-  
-#ifdef DEBUG  
-    OutputDebugString(tchBuffer);  
-#endif  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)
+>  MarkProfile yöntemi yalnızca izleme profil ile kullanılmalıdır.
+
+## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri
+ *Microsoft.VisualStudio.Profiler.dll*
+
+## <a name="function-information"></a>İşlev bilgisi
+ Üst bilgi: Bildirilen *VSPerf.h*
+
+ İçeri aktarma kitaplığı: *VSPerf.lib*
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod MarkProfile işlevi gösterir.
+
+```cpp
+void ExerciseMarkProfile()
+{
+    // Declare and initialize variables to pass to
+    // MarkProfile.  The values of these parameters
+    // are assigned based on the needs of the code;
+    // and for the sake of simplicity in this example,
+    // the variables are assigned arbitrary values.
+    int markId = 03;
+
+    // Declare enumeration to hold return value of
+    // call to MarkProfile.
+    PROFILE_COMMAND_STATUS markResult;
+
+    // Variables used to print output.
+    HRESULT hResult;
+    TCHAR tchBuffer[256];
+
+    markResult = MarkProfile(markId);
+
+    // Format and print result.
+    LPCTSTR pszFormat = TEXT("%s %d.\0");
+    TCHAR* pszTxt = TEXT("MarkProfile returned");
+    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,
+        pszTxt, markResult);
+
+#ifdef DEBUG
+    OutputDebugString(tchBuffer);
+#endif
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Studio profil oluşturucu API Başvurusu (yerel)](../profiling/visual-studio-profiler-api-reference-native.md)

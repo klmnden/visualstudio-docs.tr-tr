@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9666808d5f75cb1de8b33751b3272f3a04d6ec83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d18edfaa5e30ba4a8c3e370eca1ab2398e6229a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917383"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630138"
 ---
 # <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
-HLSL türü yerleşik bir tür alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_buildInKind(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir işaretçi bir `DWORD` , yerleşik bir tür HLSL türü tutar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+HLSL türü yerleşik bir tür alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_buildInKind(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir işaretçi bir `DWORD` , yerleşik bir tür HLSL türü tutar.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

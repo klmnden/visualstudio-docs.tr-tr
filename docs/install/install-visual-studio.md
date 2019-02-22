@@ -2,7 +2,7 @@
 title: Visual Studio'yu yükleme
 titleSuffix: ''
 description: Visual Studio, adım adım yüklemeyi öğrenin.
-ms.date: 05/07/2018
+ms.date: 02/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156143"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607037"
 ---
 # <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
 
-Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bizim en yeni sürüm, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek için daha kolay bir şekilde kolaylaştırdık. Daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler, böylece biz de Visual Studio'nun minimum ayak kısalttık.
+Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bu sürümde, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek daha kolay bir şekilde kolaylaştırdık. Daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler, böylece biz de Visual Studio'nun minimum ayak kısalttık.
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio](/visualstudio/mac/installation).

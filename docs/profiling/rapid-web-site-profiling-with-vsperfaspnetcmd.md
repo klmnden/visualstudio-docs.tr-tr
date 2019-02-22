@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 617e032805f0074b813bc3a7dc5a66047186861b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 228200a3439deefd44ba69b205c1fb7e27fb98ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989724"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632621"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi
 
@@ -27,7 +27,7 @@ ms.locfileid: "54989724"
  Eşzamanlılık verileri toplama veya duraklatma ve sürdürme kullanarak profil oluşturma gibi bazı senaryolarda **VSPerfCmd** tercih edilen profil oluşturma yöntemidir.
 
 > [!NOTE]
->  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
 ## <a name="profile-an-aspnet-application"></a>Bir ASP.NET uygulamasının profilini oluşturun
 

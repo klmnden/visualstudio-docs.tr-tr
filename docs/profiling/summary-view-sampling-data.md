@@ -11,45 +11,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6240846439cd966e461722a2cda18a20bbfb478
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b98dc1baa94b9df4039718695ebe26ebf59da46
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029199"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614460"
 ---
 # <a name="summary-view---sampling-data"></a>Özet görünümü - örnekleme verileri
-Özet görünümü, bir profil oluşturma çalışmasında en pahalı performans işlevleri hakkında bilgi görüntüler. Rapor listeler ve bildirim bağlantıları açıklamasını dahil olmak üzere daha fazla bilgi için bkz. [özeti görünümünü](../profiling/summary-view.md).  
-  
+Özet görünümü, bir profil oluşturma çalışmasında en pahalı performans işlevleri hakkında bilgi görüntüler. Rapor listeler ve bildirim bağlantıları açıklamasını dahil olmak üzere daha fazla bilgi için bkz. [özeti görünümünü](../profiling/summary-view.md).
+
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="timeline-graph"></a>Zaman Çizelgesi grafiği  
- Özet görünümü zaman çizelgesi grafikte profil oluşturma gerçekleşen zaman içinde oluşturulan uygulamanın işlemci (CPU) kullanım yüzdesini gösterir. Seçili zaman aralığı için görünüme filtre uygulamak için zaman çizelgesi Grafiği'ni kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
-  
-## <a name="hot-path"></a>Etkin yol  
- **Etkin yolu** çoğu örnek toplandı yürütme yolunu görüntüler. İşlev için işlev ayrıntıları görüntülemek için bir işlev tıklayabilirsiniz. İşlevi için diğer görünümleri görüntülemek için işlev sağ tıklayın ve sonra listeden bir görünümü tıklatın.  
-  
- **Etkin yolu** her işlevine yönelik olarak aşağıdaki verileri içerir:  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Ad**|İşlevin adı.|  
-|**Kapsamlı örnek yüzdesi**|Bu işlev veya bu işlev tarafından çağrılan bir işlev yürütülürken gerçekleşen tüm örneklerin yüzdesi.|  
-|**Dışlamalı örnek yüzdesi**|İşlev işlev gövdesinde kod yürütülürken gerçekleşen tüm örneklerin yüzdesi. Bu işlev tarafından çağırılan işlevlerdeki toplanan örnekler dahil edilmez.|  
-  
-## <a name="functions-doing-most-individual-work"></a>En bireysel işleri yapan işlevler  
- **İşlevleri en bireysel işleri yapan** en yüksek sayıda profil oluşturma çalışması içinde dışlamalı örnek işlevleri görüntüler. Özel bir örnek, örnek toplandığında, kendi kod işlevi yürütülüyorsa bir işleve atanır. Örnek toplandığında işlevi başka bir işlevi çağırıyorsa, özel bir örnek için bir işlev atanmadı. Dışlamalı örnek çok sayıda önemli zaman işlevde harcanan gösterir.  
-  
- İşlev için işlev ayrıntıları görüntülemek için bir işlev tıklayabilirsiniz. İçin işlev sağ işlevi için diğer görünümleri görüntülemek ve sonra listeden bir görünümü tıklatın.  
-  
- **En bireysel işleri yapan işlevler** her işlevine yönelik olarak aşağıdaki verileri içerir:  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Ad**|İşlevin adı.|  
-|**Dışlamalı örnek yüzdesi**|İşlev kendi işlev gövdesindeki kod yürütülürken, toplanmış olan profil oluşturma, tüm örneklerin yüzdesi. Bu işlevi çağıran işlevler yürütülürken toplanan örnekler yüzdeyi dışlar.|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Özet görünümü - .NET bellek verileri](../profiling/summary-view-dotnet-memory-data.md)   
- [Özet görünümü - izleme verileri](../profiling/summary-view-instrumentation-data.md)
+>  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="timeline-graph"></a>Zaman Çizelgesi grafiği
+ Özet görünümü zaman çizelgesi grafikte profil oluşturma gerçekleşen zaman içinde oluşturulan uygulamanın işlemci (CPU) kullanım yüzdesini gösterir. Seçili zaman aralığı için görünüme filtre uygulamak için zaman çizelgesi Grafiği'ni kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+
+## <a name="hot-path"></a>Etkin yol
+ **Etkin yolu** çoğu örnek toplandı yürütme yolunu görüntüler. İşlev için işlev ayrıntıları görüntülemek için bir işlev tıklayabilirsiniz. İşlevi için diğer görünümleri görüntülemek için işlev sağ tıklayın ve sonra listeden bir görünümü tıklatın.
+
+ **Etkin yolu** her işlevine yönelik olarak aşağıdaki verileri içerir:
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Ad**|İşlevin adı.|
+|**Kapsamlı örnek yüzdesi**|Bu işlev veya bu işlev tarafından çağrılan bir işlev yürütülürken gerçekleşen tüm örneklerin yüzdesi.|
+|**Dışlamalı örnek yüzdesi**|İşlev işlev gövdesinde kod yürütülürken gerçekleşen tüm örneklerin yüzdesi. Bu işlev tarafından çağırılan işlevlerdeki toplanan örnekler dahil edilmez.|
+
+## <a name="functions-doing-most-individual-work"></a>En bireysel işleri yapan işlevler
+ **İşlevleri en bireysel işleri yapan** en yüksek sayıda profil oluşturma çalışması içinde dışlamalı örnek işlevleri görüntüler. Özel bir örnek, örnek toplandığında, kendi kod işlevi yürütülüyorsa bir işleve atanır. Örnek toplandığında işlevi başka bir işlevi çağırıyorsa, özel bir örnek için bir işlev atanmadı. Dışlamalı örnek çok sayıda önemli zaman işlevde harcanan gösterir.
+
+ İşlev için işlev ayrıntıları görüntülemek için bir işlev tıklayabilirsiniz. İçin işlev sağ işlevi için diğer görünümleri görüntülemek ve sonra listeden bir görünümü tıklatın.
+
+ **En bireysel işleri yapan işlevler** her işlevine yönelik olarak aşağıdaki verileri içerir:
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Ad**|İşlevin adı.|
+|**Dışlamalı örnek yüzdesi**|İşlev kendi işlev gövdesindeki kod yürütülürken, toplanmış olan profil oluşturma, tüm örneklerin yüzdesi. Bu işlevi çağıran işlevler yürütülürken toplanan örnekler yüzdeyi dışlar.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Özet Görünümü - .NET bellek verileri](../profiling/summary-view-dotnet-memory-data.md)
+- [Özet görünümü - izleme verileri](../profiling/summary-view-instrumentation-data.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07ed209b0e2fee460bd43e2a588a8deb25eeb1
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854076"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610131"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme
 Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşenleri sık derleyin. Örneğin, sembol bilgisi veya bir yayın yapısı sembol bilgisi ancak iyileştirmeler ile hata ayıklama derlemesi oluşturabilirsiniz. Veya, x86 gibi belirli bir platformda çalıştırmak için bir proje oluşturabilirsiniz veya [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Bu durumlarda, aynı derleme seçeneklerin çoğu kalır; yalnızca birkaç seçeneği, derleme yapılandırmasını kontrol etmek için değiştirilir. İle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], özellikleri ve koşulları farklı derleme yapılandırmalarında oluşturmak için kullanın.
@@ -183,7 +183,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[MSBuild](../msbuild/msbuild.md)  
-[MSBuild kavramları](../msbuild/msbuild-concepts.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[Proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Proje öğesi (MSBuild)](../msbuild/project-element-msbuild.md)

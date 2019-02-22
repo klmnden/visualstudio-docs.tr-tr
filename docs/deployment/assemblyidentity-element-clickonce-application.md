@@ -16,57 +16,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e70852f0e720f5c7c67fbce82608929ac13728f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992145"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635676"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; öğesi (ClickOnce uygulaması)
-Dağıtılan uygulamayı tanımlayan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+Dağıtılan uygulamayı tanımlayan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```xml
-  
-      <assemblyIdentity   
-   name  
-   version  
-   publicKeyToken  
-   processorArchitecture  
-   language  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
- `assemblyIdentity` Öğesi gereklidir. Alt öğe içerir ve aşağıdaki özniteliklere sahiptir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Name`|Gerekli. Uygulamanın adını tanımlar.<br /><br /> Varsa `Name` özel karakterler içeriyor ve tek veya çift tırnak gibi uygulama etkinleştirmesi başarısız olabilir.|  
-|`Version`|Gerekli. Uygulamanın sürüm numarası şu biçimde belirtir: `major.minor.build.revision`|  
-|`publicKeyToken`|İsteğe bağlı. Son 8 baytını temsil eden 16 karakterlik bir onaltılık dize belirtir `SHA-1` altında derleme veya uygulama imzalanan ortak anahtarı değerini karma. Katalog imzalamak için kullanılan ortak anahtar, 2048 bit olmalıdır veya büyük.<br /><br /> Bu öznitelik, bir derlemeyi imzalamayı önerilir ancak isteğe bağlı olsa da gereklidir. Bir derlemeyi imzalı değilse, değeri otomatik olarak imzalanan bir derlemeden kopyalama ya da sıfır "kukla" değerini kullanın.|  
-|`processorArchitecture`|Gerekli. İşlemciyi belirtir. Geçerli değerler `msil` tüm işlemciler için `x86` 32-bit Windows için `IA64` 64 bit Windows için ve `Itanium` Intel 64-bit Itanium işlemcilere için.|  
-|`language`|Gerekli. İki bölümü dil kodlarını tanımlar (örneğin, `en-US`) derlemenin. Bu öğe `asmv2` ad alanı. Belirtilmemişse, varsayılan değer `neutral`.|  
-  
-## <a name="examples"></a>Örnekler  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki kod örneğinde gösterilmiştir bir `assemblyIdentity` öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md).  
-  
-### <a name="code"></a>Kod  
-  
-```xml  
-<asmv1:assemblyIdentity   
-  name="My Application Deployment.exe"   
-  version="1.0.0.0"   
-  publicKeyToken="43cb1e8e7a352766"   
-  language="neutral"   
-  processorArchitecture="x86"   
-  type="win32" />  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)
+
+      <assemblyIdentity
+   name
+   version
+   publicKeyToken
+   processorArchitecture
+   language
+/>
+```
+
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
+ `assemblyIdentity` Öğesi gereklidir. Alt öğe içerir ve aşağıdaki özniteliklere sahiptir.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Name`|Gerekli. Uygulamanın adını tanımlar.<br /><br /> Varsa `Name` özel karakterler içeriyor ve tek veya çift tırnak gibi uygulama etkinleştirmesi başarısız olabilir.|
+|`Version`|Gerekli. Uygulamanın sürüm numarası şu biçimde belirtir: `major.minor.build.revision`|
+|`publicKeyToken`|İsteğe bağlı. Son 8 baytını temsil eden 16 karakterlik bir onaltılık dize belirtir `SHA-1` altında derleme veya uygulama imzalanan ortak anahtarı değerini karma. Katalog imzalamak için kullanılan ortak anahtar, 2048 bit olmalıdır veya büyük.<br /><br /> Bu öznitelik, bir derlemeyi imzalamayı önerilir ancak isteğe bağlı olsa da gereklidir. Bir derlemeyi imzalı değilse, değeri otomatik olarak imzalanan bir derlemeden kopyalama ya da sıfır "kukla" değerini kullanın.|
+|`processorArchitecture`|Gerekli. İşlemciyi belirtir. Geçerli değerler `msil` tüm işlemciler için `x86` 32-bit Windows için `IA64` 64 bit Windows için ve `Itanium` Intel 64-bit Itanium işlemcilere için.|
+|`language`|Gerekli. İki bölümü dil kodlarını tanımlar (örneğin, `en-US`) derlemenin. Bu öğe `asmv2` ad alanı. Belirtilmemişse, varsayılan değer `neutral`.|
+
+## <a name="examples"></a>Örnekler
+
+### <a name="description"></a>Açıklama
+ Aşağıdaki kod örneğinde gösterilmiştir bir `assemblyIdentity` öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md).
+
+### <a name="code"></a>Kod
+
+```xml
+<asmv1:assemblyIdentity
+  name="My Application Deployment.exe"
+  version="1.0.0.0"
+  publicKeyToken="43cb1e8e7a352766"
+  language="neutral"
+  processorArchitecture="x86"
+  type="win32" />
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)
+- [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)

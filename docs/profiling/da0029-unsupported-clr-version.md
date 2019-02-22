@@ -15,28 +15,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16782fcf3c8f859edd8363c43741f598d5929188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635546"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Desteklenmeyen CLR sürümü
 
-|||  
-|-|-|  
-|Kural Kimliği|DA0029|  
-|Kategori|Profil oluşturma araçları kullanım|  
-|Profil oluşturma yöntemi|Komut satırından profil oluşturma|  
-|İleti|Koleksiyon sırasında desteklenmeyen CLR sürümü algılandı. Yönetilen semboller düzgün çözülemiyor olabilir.|  
-|Kural türü|Bilgiler.|  
+|||
+|-|-|
+|Kural Kimliği|DA0029|
+|Kategori|Profil oluşturma araçları kullanım|
+|Profil oluşturma yöntemi|Komut satırından profil oluşturma|
+|İleti|Koleksiyon sırasında desteklenmeyen CLR sürümü algılandı. Yönetilen semboller düzgün çözülemiyor olabilir.|
+|Kural türü|Bilgiler.|
 
-## <a name="cause"></a>Sebep  
- Kullanan bir uygulama profili çalıştığınız [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] profil oluşturma araçları tarafından desteklenmiyor.  
+## <a name="cause"></a>Sebep
+ Kullanan bir uygulama profili çalıştığınız [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] profil oluşturma araçları tarafından desteklenmiyor.
 
-## <a name="rule-description"></a>Kural açıklaması  
- Profil oluşturma araçlarından uygulama içinde çalışan yönetilen kod için simgeleri çözme mümkün olmayacaktır. Bu uyarı oluşur. Profil oluşturma araçlarından çalışmakta olan uygulamalar için yönetilen kodu sembol çözümlenemiyor [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
+## <a name="rule-description"></a>Kural açıklaması
+ Profil oluşturma araçlarından uygulama içinde çalışan yönetilen kod için simgeleri çözme mümkün olmayacaktır. Bu uyarı oluşur. Profil oluşturma araçlarından çalışmakta olan uygulamalar için yönetilen kodu sembol çözümlenemiyor [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?  
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Yok.

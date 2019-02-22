@@ -11,50 +11,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c18bd4b5893d500c27bb32c9b5b7c4c22b7fc78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918037"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631958"
 ---
 # <a name="common-data-views"></a>Ortak veri görünümleri
-Bu bölüm, görünümleri ve tüm profil oluşturma yöntemleri için ortak olan profil oluşturucu veri dosyalarının raporları hakkında başvuru bilgileri içerir.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [Özet görünümü](../profiling/summary-view.md)  
- Özet görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [Arayan/Aranan görünümü](../profiling/caller-callee-view.md)  
- Çağrı ağacı görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [Çağrı ağacı görünümü](../profiling/call-tree-view.md)  
- Çağrı ağacı görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [Modüller görünümü](../profiling/modules-view.md)  
- Modül görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [İşlevler görünümü](../profiling/functions-view.md)  
- İşlevler görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [Satırlar görünümü](../profiling/lines-view.md)  
- Satır görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [Yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view.md)  
- Yönerge işaretçisi (IP) görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.  
-  
- [İşlem görünümü](../profiling/process-view.md)  
- Listeleri işlem ve iş parçacığı başlangıç ve bitiş zamanlarını.  
-  
- [İşaretler görünümü](../profiling/marks-view.md)  
- ETW ve örnekleme bir profil oluşturma veri dosyası içine eklenen olaylarını listeler.  
-  
-## <a name="related-sections"></a>İlgili bölümler  
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)  
- Görünümleri ve örnekleme metodu kullanılarak üretilen Profil Oluşturucu veri dosyalarının raporları hakkında başvuru bilgisi.  
-  
- [İzleme metodu veri görünümleri](../profiling/instrumentation-method-data-views.md)  
- Görünümleri ve araç haline getirme yöntemi kullanılarak üretilen Profil Oluşturucu veri dosyalarının raporları hakkında başvuru bilgisi.  
-  
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)  
+Bu bölüm, görünümleri ve tüm profil oluşturma yöntemleri için ortak olan profil oluşturucu veri dosyalarının raporları hakkında başvuru bilgileri içerir.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [Özet görünümü](../profiling/summary-view.md)
+
+ Özet görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [Arayan/Aranan görünümü](../profiling/caller-callee-view.md)
+
+ Çağrı ağacı görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [Çağrı ağacı görünümü](../profiling/call-tree-view.md)
+
+ Çağrı ağacı görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [Modüller görünümü](../profiling/modules-view.md)
+
+ Modül görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [İşlevler görünümü](../profiling/functions-view.md)
+
+ İşlevler görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [Satırlar görünümü](../profiling/lines-view.md)
+
+ Satır görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [Yönerge işaretçileri (IP) görünümü](../profiling/instruction-pointers-ips-view.md)
+
+ Yönerge işaretçisi (IP) görünümünü ve raporunu açıklar. Veri sütunları, profil oluşturma yöntemine bağlıdır.
+
+- [İşlem görünümü](../profiling/process-view.md)
+
+ Listeleri işlem ve iş parçacığı başlangıç ve bitiş zamanlarını.
+
+- [İşaretler görünümü](../profiling/marks-view.md)
+
+ ETW ve örnekleme bir profil oluşturma veri dosyası içine eklenen olaylarını listeler.
+
+## <a name="related-sections"></a>İlgili bölümler
+- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
+
+ Görünümleri ve örnekleme metodu kullanılarak üretilen Profil Oluşturucu veri dosyalarının raporları hakkında başvuru bilgisi.
+
+- [İzleme metodu veri görünümleri](../profiling/instrumentation-method-data-views.md)
+
+ Görünümleri ve araç haline getirme yöntemi kullanılarak üretilen Profil Oluşturucu veri dosyalarının raporları hakkında başvuru bilgisi.
+
+- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)
+
  Görünümleri ve .NET bellek koleksiyonu kullanılarak üretilen Profil Oluşturucu veri dosyalarının raporları hakkında başvuru bilgisi.

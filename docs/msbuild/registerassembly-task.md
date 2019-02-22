@@ -18,47 +18,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8e6c880d6213c2b64d46011dc890a0c2de44f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7d9ebe23cab26d6a90e16623917b61d261ed12f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039364"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636118"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly görevi
-Belirtilen derleme içindeki meta veriyi okur ve oluşturmak COM istemcilerinin veren kayıt defterine gerekli girişleri ekler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] şeffaf bir şekilde sınıfları. Bu görevin benzer, ancak aynı, davranıştır [Regasm.exe (derleme kayıt aracı)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  
-  
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `RegisterAssembly` görev.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`Assemblies`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Derlemeleri com ile Kaydettirilecek belirtir|  
-|`AssemblyListFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Arasında durumu hakkındaki bilgileri içeren `RegisterAssembly` görev ve [UnregisterAssembly](../msbuild/unregisterassembly-task.md) görev. Bu bilgiler engeller `UnregisterAssembly` kaydetmek için başarısız bir derleme kaydını çalışılıyor görevin `RegisterAssembly` görev.|  
-|`CreateCodeBase`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, genel derleme önbelleğinde yüklü olmayan bir derleme için dosya yolunu belirtir. kayıt defterinde bir kod temeli girişi oluşturur. Sonrasında genel derleme önbelleğine kaydettiriyor olduğunuz derlemeyi yükleyecekseniz bu seçeneği belirtmemelisiniz.|  
-|`TypeLibFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Belirtilen bütünleştirilmiş koddan oluşturmak için tür kitaplığını belirtir. Üretilmiş tür kitaplığını derleme içinde tanımlanmış erişilebilir türlerin tanımlarını içerir. Tür kitaplığını, aşağıdaki koşullar doğruysa yalnızca oluşturulur:<br /><br /> -Bir tür kitaplığı adının bu konumda mevcut değil.<br />-Bir tür kitaplığı var, ancak geçirilen derlemesinden daha eski.<br /><br /> Tür kitaplığını geçirilen derlemeden daha yeniyse, yeni bir tane oluşturulmaz, ancak derleme hala kaydedilir.<br /><br /> Bu parametre belirtilmezse, aynı sayıda öğe olmalıdır `Assemblies` parametresi veya görev başarısız olur. Giriş belirtilmezse, görev varsayılan derleme adını ve uzantısını öğesinin değiştirin *.tlb*.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte `RegisterAssembly` tarafından belirtilen derlemeyi kaydetmek üzere görev `MyAssemblies` öğe koleksiyonu.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyAssemblies Include="MyAssembly.dll" />  
-    <ItemGroup>  
-  
-    <Target Name="RegisterAssemblies">  
-        <RegisterAssembly  
-            Assemblies="@(MyAssemblies)" >  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+Belirtilen derleme içindeki meta veriyi okur ve oluşturmak COM istemcilerinin veren kayıt defterine gerekli girişleri ekler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] şeffaf bir şekilde sınıfları. Bu görevin benzer, ancak aynı, davranıştır [Regasm.exe (derleme kayıt aracı)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).
+
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `RegisterAssembly` görev.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`Assemblies`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> Derlemeleri com ile Kaydettirilecek belirtir|
+|`AssemblyListFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Arasında durumu hakkındaki bilgileri içeren `RegisterAssembly` görev ve [UnregisterAssembly](../msbuild/unregisterassembly-task.md) görev. Bu bilgiler engeller `UnregisterAssembly` kaydetmek için başarısız bir derleme kaydını çalışılıyor görevin `RegisterAssembly` görev.|
+|`CreateCodeBase`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, genel derleme önbelleğinde yüklü olmayan bir derleme için dosya yolunu belirtir. kayıt defterinde bir kod temeli girişi oluşturur. Sonrasında genel derleme önbelleğine kaydettiriyor olduğunuz derlemeyi yükleyecekseniz bu seçeneği belirtmemelisiniz.|
+|`TypeLibFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Belirtilen bütünleştirilmiş koddan oluşturmak için tür kitaplığını belirtir. Üretilmiş tür kitaplığını derleme içinde tanımlanmış erişilebilir türlerin tanımlarını içerir. Tür kitaplığını, aşağıdaki koşullar doğruysa yalnızca oluşturulur:<br /><br /> -Bir tür kitaplığı adının bu konumda mevcut değil.<br />-Bir tür kitaplığı var, ancak geçirilen derlemesinden daha eski.<br /><br /> Tür kitaplığını geçirilen derlemeden daha yeniyse, yeni bir tane oluşturulmaz, ancak derleme hala kaydedilir.<br /><br /> Bu parametre belirtilmezse, aynı sayıda öğe olmalıdır `Assemblies` parametresi veya görev başarısız olur. Giriş belirtilmezse, görev varsayılan derleme adını ve uzantısını öğesinin değiştirin *.tlb*.|
+
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnekte `RegisterAssembly` tarafından belirtilen derlemeyi kaydetmek üzere görev `MyAssemblies` öğe koleksiyonu.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyAssemblies Include="MyAssembly.dll" />
+    <ItemGroup>
+
+    <Target Name="RegisterAssemblies">
+        <RegisterAssembly
+            Assemblies="@(MyAssemblies)" >
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

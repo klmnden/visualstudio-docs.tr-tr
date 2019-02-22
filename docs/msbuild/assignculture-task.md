@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 980a9c49ee801af0caf45ecd6123c6af3e26f1ae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615259"
 ---
 # <a name="assignculture-task"></a>AssignCulture görevi
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcı dizesi içerebilir öğelerinin bir listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üretir `Culture` karşılık gelen içeren kültür tanımlayıcısı. Örneğin, dosya adı *Form1.fr-fr.resx* bu görev meta verilerle aynı dosya adını içeren bir öğe oluşturur tanımlayıcı "fr-fr", katıştırılmış bir kültür bulunduğundan `Culture` eşit `fr-fr`. Görev, dosya adları listesini de dosya kaldırıldı kültürüyle üretir.
@@ -78,5 +78,5 @@ Aşağıdaki tabloda, görev yürütme sonrasında çıkış öğelerin değerin
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (kültür = "fr")<br /><br /> *MyResource2.XX.resx* (ek meta veri yok)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

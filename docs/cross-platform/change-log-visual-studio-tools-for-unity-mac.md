@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027243"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611080"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Değişiklik Günlüğü (Unity için Visual Studio Araçları, Mac)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
@@ -34,11 +34,11 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   **Hata Ayıklayıcı:**
 
      -   Visual Studio veya Unity, özellikle 'Unity İşleme İliştir' ulaşmaktan olduğunda dondurma yapma veya oyunu yeniden Unity'nın hata ayıklayıcısı altyapısı ile iletişim kurmak için kullanılan Kitaplığı'nda bir kilitlenme düzeltildi.
-     
+
 -   **Tümleştirme:**
 
      -   Başka bir varsayılan düzenleyici seçildiğinde sabit Unity eklentisini etkinleştirme.
-     
+
      -   Sabit Unity dosya şablonu oluşturma.
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   **Tümleştirme:**
 
      -   Unity tarafından sabit bir Unity performans hatanın geçici çözümü geri alındı.
-     
+
 ## <a name="1601"></a>1.6.0.1
  Yayın Tarihi: 10 Temmuz 2018
 
@@ -58,7 +58,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   **Tümleştirme:**
 
      -   Sabit gölgelendirici kod coloration destekler.
-     
+
 ## <a name="1600"></a>1.6.0.0
  26 Haziran 2018'de yayınlanan
 
@@ -71,23 +71,23 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 -   **Proje oluşturma:**
 
      -   Unity performans hatanın geçici çözüm: projeleri oluştururken MonoIslands önbellek.
-     
+
      -   Taşınabilir pdb mdb için artık yeni Unity çalışma zamanı kullanırken dönüştürmez.
-     
+
 ## <a name="1502"></a>1.5.0.2
  18 Nisan 2018'de yayınlanan
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Tümleştirme:**
 
     -   Temel gölgelendirici kod tamamlama desteği eklendi.
-    
+
     -   Gölgelendirici dosyaları açıklamalarda geçiş için destek eklendi.
 
 ## <a name="1501"></a>1.5.0.1
  28 Mart 2018'de yayınlanan
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Tümleştirme:**
@@ -96,7 +96,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1500"></a>1.5.0.0
  21 Mart 2018'de yayınlanan
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Tümleştirme:**
@@ -105,7 +105,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1403"></a>1.4.0.3
  5 Mart 2018'de yayınlanan
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Proje oluşturma:**
@@ -118,7 +118,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1402"></a>1.4.0.2
  Yayın Tarihi: 24 Ocak 2018
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Proje oluşturma:**
@@ -133,7 +133,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1401"></a>1.4.0.1
  23 Ocak 2018'de yayınlanan
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Tümleştirme:**
@@ -142,7 +142,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1400"></a>1.4.0.0
  Yayın Tarihi: 13 Aralık 2017
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Proje oluşturma:**
@@ -157,7 +157,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1301"></a>1.3.0.1
  Yayın Tarihi: 12 Aralık 2017
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Tümleştirme:**
@@ -170,7 +170,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1300"></a>1.3.0.0
  Yayın Tarihi: 20 Kasım 2017
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Sihirbazlar:**
@@ -181,7 +181,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1200"></a>1.2.0.0
  Yayın Tarihi: 23 Ekim 2017
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Hata Ayıklayıcı:**
@@ -198,7 +198,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1103"></a>1.1.0.3
  Yayın Tarihi: 23 Ekim 2017
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Proje oluşturma:**
@@ -207,7 +207,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1102"></a>1.1.0.2
  Yayın Tarihi: 8 Ağustos 2017
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Hata Ayıklayıcı:**
@@ -220,7 +220,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1101"></a>1.1.0.1
  20 Temmuz 2017 tarihinde yayımlandı
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Tümleştirme:**
@@ -229,7 +229,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1100"></a>1.1.0.0
  12 Temmuz 2017 tarihinde yayımlandı
- 
+
 ### <a name="new-features"></a>Yeni Özellikler
 
 -   **Tümleştirme:**
@@ -240,9 +240,9 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   Derleme adı başvuruları mcs.rsp dosyalarıyla düzeltildi.
 
-    -   Assembly.json derleme birimler için destek eklendi.    
+    -   Assembly.json derleme birimler için destek eklendi.
 
-    -   Sabit ile API düzeyleri tanımlar.    
+    -   Sabit ile API düzeyleri tanımlar.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -252,7 +252,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 ## <a name="1001"></a>1.0.0.1
  4 Mayıs 2017 tarihinde yayımlandı
- 
+
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 -   **Tümleştirme:**

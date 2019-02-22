@@ -16,19 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c872f10b9a0d092cc5dc4c3904fad6c6d5a4ea94
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944773"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643775"
 ---
 # <a name="item-element-msbuild"></a>Öğe unsuru (MSBuild)
 Kullanıcı tanımlı bir öğe ve meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.
 
-\<Proje >  
-\<ItemGroup >  
-\<Öğesi >  
+\<Proje > \<ItemGroup > \<öğesi >
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -120,7 +118,7 @@ Aşağıdaki kod örneği kullanma işlemini gösterir `Update` adlı bir dosyay
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Öğeler](../msbuild/msbuild-items.md)  
-[Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)  
-[MSBuild özellikleri](../msbuild/msbuild-properties.md)  
-[Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Öğeler](../msbuild/msbuild-items.md)
+- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)
+- [MSBuild özellikleri](../msbuild/msbuild-properties.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

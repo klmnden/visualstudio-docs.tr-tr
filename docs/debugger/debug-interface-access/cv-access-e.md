@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5fa908692167b49c6bb92c892fb143b882d231
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318582"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605481"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Görünürlüğü (erişim düzeyi) üye işlevleri ve değişkenler kapsamını belirtir.
@@ -33,14 +33,11 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Öğeleri
-CV_private  
-Üye, özel erişimi vardır.
+CV_private üyesi özel erişimi var.
 
-CV_protected  
-Üye erişimi ile korumaya aldı.
+CV_protected üye erişimi ile korumaya aldı.
 
-CV_public  
-Üye erişimine sahiptir.
+CV_public üye erişimine sahiptir.
 
 ## <a name="remarks"></a>Açıklamalar
 `friend` Erişim belirticisi değil dahil burada çünkü genellikle sınıfın özel ve korumalı öğelerine erişimi olmayan üye işlevleri tarafından kullanılıyor. Kullanım [Idiasymbol::get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) ile simgeleri bulmak için yöntem `SymTagFriend` erişim.
@@ -49,6 +46,6 @@ CV_public
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)  
-[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
+- [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

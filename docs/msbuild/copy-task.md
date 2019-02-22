@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853553"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596301"
 ---
 # <a name="copy-task"></a>Kopyalama görevi
 Dosyaları, dosya sisteminde yeni bir konuma kopyalar.
@@ -111,5 +111,5 @@ Aşağıdaki örnek, yinelemeli bir kopyalamanın nasıl gerçekleştirileceğin
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

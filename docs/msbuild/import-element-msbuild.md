@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924441"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629917"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 
-\<Proje >  
-\<İçeri aktarma >  
+\<Proje > \<Al >
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -108,5 +107,5 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)  
-[Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

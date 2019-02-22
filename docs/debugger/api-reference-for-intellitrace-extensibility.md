@@ -10,27 +10,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5292cf3e9650264603772676da9738aecd52fb59
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009618"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606591"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace genişletilebilirliği için API Başvurusu
 
-Bu bölümdeki bilgileri kullanarak, okuma ve uygulamanızda .itrace dosyaları kodlayıp kod çözebilirsiniz IntelliTrace genişletilebilirlik API'leri kullanabilirsiniz.  
-  
+Bu bölümdeki bilgileri kullanarak, okuma ve uygulamanızda .itrace dosyaları kodlayıp kod çözebilirsiniz IntelliTrace genişletilebilirlik API'leri kullanabilirsiniz.
+
 ## <a name="in-this-section"></a>Bu bölümde
 
 Bu ad alanı, IntelliTrace genişletilebilirlik API'leri içerir:
-  
-- <xref:Microsoft.VisualStudio.IntelliTrace>  
-  
+
+- <xref:Microsoft.VisualStudio.IntelliTrace>
+
 ## <a name="related-sections"></a>İlgili bölümler
 
-[IntelliTrace](../debugger/intellitrace.md)  
-IntelliTrace ile hata ayıklama hakkında bilgi sağlar.  
-  
-[Geliştirici kodu örnekleri](https://code.msdn.microsoft.com/)  
-IntelliTrace genişletilebilirliğin nasıl kullanılacağını gösteren bir örnek uygulama barındırır.
+[IntelliTrace](../debugger/intellitrace.md) IntelliTrace ile hata ayıklama hakkında bilgi sağlar.
+
+[Geliştirici kodu örnekleri](https://code.msdn.microsoft.com/) IntelliTrace genişletilebilirliğin nasıl kullanılacağını gösteren bir örnek uygulama barındırır.

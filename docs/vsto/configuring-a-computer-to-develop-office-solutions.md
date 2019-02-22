@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78b66e1d7e9520f4aa54d8bcee54803659f9f6f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e559ddfec8570077a78fe980632366b4a57605de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863441"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632959"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Office çözümleri geliştirmek için bilgisayarı yapılandırma
 
@@ -27,7 +27,7 @@ VSTO eklentileri ve Microsoft Office özelleştirmelerini oluşturmak için Visu
 |--------------|------------------------|
 |Visual Studio 2017| Herhangi bir sürümü ile **Office/SharePoint geliştirme** iş yükü.|
 |.NET Framework|-.NET Framework 4 veya üzeri.|
-|Microsoft Office|<ul><li>Office Professional Plus için Office 365 dahil olmak üzere Office Paket sürümü.</li><li>Herhangi biri aşağıdaki tek başına uygulamalar:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 ve Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Proje</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) Office'in bir parçası yüklü olmalıdır. **Önemli:** Tıkla-Çalıştır Office 2010 uygulamalarının sürümleri desteklenmez.|
+|Microsoft Office|<ul><li>Office Professional Plus için Office 365 dahil olmak üzere Office Paket sürümü.</li><li>Herhangi biri aşağıdaki tek başına uygulamalar:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 ve Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) Office'in bir parçası yüklü olmalıdır. **Önemli:** Tıkla-Çalıştır Office 2010 uygulamalarının sürümleri desteklenmez.|
 
 Ayrıntılı yükleme adımları için bkz [nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
@@ -48,9 +48,8 @@ Visual Studio, .NET Framework ve Microsoft Office desteklenen bir sürümü yük
 Sorun yaşamaya devam ederseniz bkz [Office çözümlerindeki hatalar için ek destek](../vsto/additional-support-for-errors-in-office-solutions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
-[Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md)
+- [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md)

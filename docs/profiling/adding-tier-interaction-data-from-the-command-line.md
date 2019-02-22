@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e6af91a542c105704a7237d5cd1dcbf8efa2a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015816"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638549"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Komut satırından katman etkileşim verileri ekleme
 
@@ -61,7 +61,7 @@ Aşağıdaki örnekte, bir Windows masaüstü uygulaması izleme metodunu kullan
 3. Profil oluşturucuyu başlatın. Şu komutu yazın:
 
     ```cmd
-    vsperfcmd /start:trace /output:Desktop_tip.vsp 
+    vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
 4. Uygulama VSPerfCmd ile başlayın. Şu komutu yazın:
@@ -113,7 +113,7 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
 7. Profil oluşturucuyu başlatın. Şu komutu yazın:
 
     ```cmd
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
     ```
 
 8. Gerekirse, hizmeti başlatın.
@@ -121,7 +121,7 @@ Aşağıdaki örnekte, bir Windows hizmeti izleme metodunu kullanarak profili ve
 9. Hizmete profil oluşturucu iliştirin. Şu komutu yazın:
 
     ```cmd
-    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
     ```
 
 10. Hizmet çalışma ve profil oluşturma verisi toplar.

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873750"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636521"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe
   Böylece kullanılabilir bir veri öğesi belgede önbelleğe alınacak çevrimdışı olarak işaretleyebilirsiniz. Bu ayrıca, belgeyi bir sunucuda depolandığında başka kod tarafından değiştirilmesine belgedeki verileri mümkün kılar.
@@ -60,4 +60,8 @@ ms.locfileid: "54873750"
 4.  İçinde **özellikleri** penceresinde **değiştiriciler** özelliğini **genel** (Bu varsayılan **dahili**).
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Veriyi önbelleğe alma](../vsto/caching-data.md) [nasıl yapılır: Bir Office belgesi bir veri kaynağını programlamayla önbelleğe alma](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [nasıl yapılır: Bir parola korumalı belgede veriyi önbelleğe alma](../vsto/how-to-cache-data-in-a-password-protected-document.md) [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md) [verileri kaydetme](../data-tools/saving-data.md)
+- [Verileri önbelleğe](../vsto/caching-data.md)
+- [Nasıl yapılır: Bir Office belgesi bir veri kaynağını programlamayla önbelleğe alma](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Nasıl yapılır: Bir parola korumalı belgede veriyi önbelleğe alma](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Sunucudaki belgelerde verilere](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Verileri kaydetme](../data-tools/saving-data.md)

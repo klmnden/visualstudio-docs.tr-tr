@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4af16c9a0f2e254a0e63e95fb8c1f7881785a4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315150"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646349"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Bağlantılı modül ve uygulama kaynak kod dilini belirtir.
@@ -47,56 +47,39 @@ typedef enum CV_CFL_LANG {
 ```
 
 ## <a name="elements"></a>Öğeleri
-CV_CFL_C  
-Uygulama dilidir C.
+C. CV_CFL_C uygulama dildir
 
-CV_CFL_CXX  
-C++ uygulama dilidir.
+C++ CV_CFL_CXX uygulama dilidir.
 
-CV_CFL_FORTRAN  
-Uygulama, FORTRAN dilidir.
+FORTRAN CV_CFL_FORTRAN uygulama dilidir.
 
-CV_CFL_MASM  
-Uygulama, Microsoft Macro Assembler dilidir.
+Microsoft Macro Assembler CV_CFL_MASM uygulama dilidir.
 
-CV_CFL_PASCAL  
-Uygulama, Pascal dilidir.
+Pascal CV_CFL_PASCAL uygulama dilidir.
 
-CV_CFL_BASIC  
-Uygulama, temel dilidir.
+TEMEL CV_CFL_BASIC uygulama dilidir.
 
-CV_CFL_COBOL  
-Uygulama, COBOL dilidir.
+COBOL CV_CFL_COBOL uygulama dilidir.
 
-CV_CFL_LINK  
-Uygulama bağlayıcı tarafından oluşturulan bir modüldür.
+CV_CFL_LINK uygulama bağlayıcı tarafından oluşturulan bir modüldür.
 
-CV_CFL_CVTRES  
-CVTRES aracıyla dönüştürülen bir kaynak modülü uygulamasıdır.
+CVTRES aracıyla dönüştürülen bir kaynak modülü CV_CFL_CVTRES uygulamasıdır.
 
-CV_CFL_CVTPGD  
-Uygulama CVTPGD aracıyla oluşturulan POGO en iyi duruma getirilmiş bir modüldür.
+CV_CFL_CVTPGD uygulama CVTPGD aracıyla oluşturulan POGO en iyi duruma getirilmiş bir modüldür.
 
-CV_CFL_CSHARP  
-Uygulama C# dilidir.
+CV_CFL_CSHARP uygulama dilidir C#.
 
-CV_CFL_VB  
-Visual Basic uygulama dilidir.
+Visual Basic CV_CFL_VB uygulama dilidir.
 
-CV_CFL_ILASM  
-Uygulama dili Ara dil (diğer bir deyişle, ortak dil çalışma zamanı (CLR) derleme) derlemesidir.
+Ara dil derleme (diğer bir deyişle, ortak dil çalışma zamanı (CLR) derleme) CV_CFL_ILASM uygulama dilidir.
 
-CV_CFL_JAVA  
-Java uygulama dilidir.
+Java CV_CFL_JAVA uygulama dilidir.
 
-CV_CFL_JSCRIPT  
-Uygulama, Jscript dilidir.
+Jscript CV_CFL_JSCRIPT uygulama dilidir.
 
-CV_CFL_MSIL  
-Uygulama dilidir bir bilinmeyen Microsoft Ara dil (MSIL) kullanarak, büyük olasılıkla bir sonuç [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation) geçin.
+CV_CFL_MSIL uygulama dilidir bir bilinmeyen Microsoft Ara dil (MSIL) kullanarak, büyük olasılıkla bir sonuç [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation) geçin.
 
-CV_CFL_HLSL  
-Uygulama, yüksek düzey gölgelendirici dili dilidir.
+Yüksek düzey gölgelendirici dili CV_CFL_HLSL uygulama dilidir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu numaralandırma değerleri için yapılan bir çağrı tarafından döndürülen [Idiasymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) yöntemi.
@@ -105,5 +88,5 @@ Bu numaralandırma değerleri için yapılan bir çağrı tarafından döndürü
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

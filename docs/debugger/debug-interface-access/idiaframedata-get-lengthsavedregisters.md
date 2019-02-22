@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4b85c3f98d80039b6d490ccf690b10682f5d04
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e05ebb4d7a58be353bb933a4ce5e5053d8dbf33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950500"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599927"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
-Yığına itildi kaydedilmiş kayıtları bayt sayısını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_lengthSavedRegisters (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Kaydedilmiş kayıtları bayt sayısını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından döndürülen değer, genellikle bir programı dizenin yorumu kullanılır (bkz [Idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) yöntemi bir program dize tanımı için).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+Yığına itildi kaydedilmiş kayıtları bayt sayısını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_lengthSavedRegisters ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Kaydedilmiş kayıtları bayt sayısını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem tarafından döndürülen değer, genellikle bir programı dizenin yorumu kullanılır (bkz [Idiaframedata::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) yöntemi bir program dize tanımı için).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

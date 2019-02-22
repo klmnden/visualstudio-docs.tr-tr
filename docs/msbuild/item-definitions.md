@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e450ef87733ffed88436114458d804c125fc20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956980"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643840"
 ---
 # <a name="item-definitions"></a>Öğe tanımları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 kullanarak proje dosyalarındaki öğeleri statik bildirimi sağlayan [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Ancak, meta veriler için tüm öğeleri aynı olsa bile, yalnızca öğe düzeyinde meta veri eklenebilir. İtibariyle [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, adlı bir proje öğesi [Itemdefinitiongroup](../msbuild/itemdefinitiongroup-element-msbuild.md) bu sınırlamayı kaldırır. *Itemdefinitiongroup* adlandırılmış öğe türü içindeki tüm öğeler için varsayılan meta veri değerlerini ekleyen öğesi tanımları kümesini tanımlamanızı sağlar.
@@ -252,4 +252,4 @@ Başlayarak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsb
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Toplu İşleme](../msbuild/msbuild-batching.md)
+- [Toplu İşleme](../msbuild/msbuild-batching.md)

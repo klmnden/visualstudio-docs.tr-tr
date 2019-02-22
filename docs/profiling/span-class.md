@@ -12,38 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacf5699e1ccccf186b09bcd50c82cba203919fc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634714"
 ---
 # <a name="span-class"></a>span sınıfı
-Uygulamanın bir aşama tanımlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-class span;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Genel oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[span::span Oluşturucusu](../profiling/span-span-constructor.md)|Yeni bir örneğini başlatır `span` sınıfı.|  
-|[span::~span Yıkıcısı](../profiling/span-tilde-span-destructor.md)|Yok eder `span` nesne ve kaynaklarını serbest bırakır.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `span`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** CONCURRENCY::Diagnostic  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Tanılama ad alanı](../profiling/diagnostic-namespace.md)
+Uygulamanın bir aşama tanımlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+class span;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Genel oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[span::span Oluşturucusu](../profiling/span-span-constructor.md)|Yeni bir örneğini başlatır `span` sınıfı.|
+|[span::~span Yıkıcısı](../profiling/span-tilde-span-destructor.md)|Yok eder `span` nesne ve kaynaklarını serbest bırakır.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+ `span`
+
+## <a name="requirements"></a>Gereksinimler
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** CONCURRENCY::Diagnostic
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Tanılama ad alanı](../profiling/diagnostic-namespace.md)

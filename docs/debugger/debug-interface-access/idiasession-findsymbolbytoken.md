@@ -12,47 +12,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a248eb2c275ad576921cfaad04ce85ccd46f780
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f342efce1c05e305a3e55d6372d1862b04b1197
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023765"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642254"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
-Belirtilen meta veri belirteci içeren simgeyi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT findSymbolByToken (   
-   ULONG        token,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `token`  
- [in] Belirteç belirtir.  
-  
- `symtag`  
- [in] Bulunacak simge türü. Değerleri verilerinden alınır [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) sabit listesi.  
-  
- `ppSymbol`  
- [out] Döndürür bir [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) sembol temsil eden bir nesne alındı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="example"></a>Örnek  
-  
-```C++  
-IDiaSymbol* pFunc;  
-pSession->findSymbolByToken( token, SymTagFunction, &pFunc );  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum Numaralandırması](../../debugger/debug-interface-access/symtagenum.md)
+Belirtilen meta veri belirteci içeren simgeyi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT findSymbolByToken ( 
+   ULONG        token,
+   SymTagEnum   symtag,
+   IDiaSymbol** ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `token`
+
+[in] Belirteç belirtir.
+
+ `symtag`
+
+[in] Bulunacak simge türü. Değerleri verilerinden alınır [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) sabit listesi.
+
+ `ppSymbol`
+
+[out] Döndürür bir [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) sembol temsil eden bir nesne alındı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="example"></a>Örnek
+
+```C++
+IDiaSymbol* pFunc;
+pSession->findSymbolByToken( token, SymTagFunction, &pFunc );
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum Numaralandırması](../../debugger/debug-interface-access/symtagenum.md)

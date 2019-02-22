@@ -13,22 +13,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a05e009d35facbcab960c6550e7619b643fc7c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 09109d59522fcd6ace69abcd3335e2dec2edd91b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872111"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606295"
 ---
 # <a name="work-with-visio-shapes"></a>Visio şekilleri ile çalışma
-  Bu bölümdeki konularda, Office projelerinde şekilleri ile çalışmak için Microsoft Office Visio nesne modeli kullandığınız için adım adım yordamları ve kod örneklerini sağlar.  
-  
-|Görev|Yordam|  
-|----------|---------------|  
-|Şekiller, Visio belgesine kalıptan ekleyin.|[Nasıl yapılır: Visio belgesine program aracılığıyla şekiller ekleme](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
-|Şekiller bir Visio sayfasından kopyalayın ve başka bir sayfaya yapıştırın.|[Nasıl yapılır: Program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visio çözümleri](../vsto/visio-solutions.md)   
- [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)   
- [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+  Bu bölümdeki konularda, Office projelerinde şekilleri ile çalışmak için Microsoft Office Visio nesne modeli kullandığınız için adım adım yordamları ve kod örneklerini sağlar.
+
+|Görev|Yordam|
+|----------|---------------|
+|Şekiller, Visio belgesine kalıptan ekleyin.|[Nasıl yapılır: Visio belgesine program aracılığıyla şekiller ekleme](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|
+|Şekiller bir Visio sayfasından kopyalayın ve başka bir sayfaya yapıştırın.|[Nasıl yapılır: Program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visio çözümleri](../vsto/visio-solutions.md)
+- [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)
+- [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

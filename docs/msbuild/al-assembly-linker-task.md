@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854050"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624912"
 ---
 # <a name="al-assembly-linker-task"></a>AL (derleme bağlayıcı) görevi
-AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir modül olan bir veya daha fazla veya kaynak dosyalar bildiriminden bir derleme oluşturmak için kullanılır. Bu görevi doğrudan kullanmak için gerekli değildir, dolayısıyla derleyicileri ve geliştirme ortamlarını zaten bu özellikleri sağlayabilir. Assembly Linker, karma dil geliştirme üretilen gibi birden çok bileşen dosyalarından tek bir derleme oluşturmak gereken geliştiriciler için yararlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modüllerinin hala dağıtılmış ve doğru bir şekilde yüklemek oluşturulan derleme için kullanılabilir olmalıdır. Daha fazla bilgi için *AL.exe*, bkz: [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
+AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Bu derleme bağlayıcı aracı, bir modül olan bir veya daha fazla veya kaynak dosyalar bildiriminden bir derleme oluşturmak için kullanılır. Bu görevi doğrudan kullanmak için gerekli değildir, dolayısıyla derleyicileri ve geliştirme ortamlarını zaten bu özellikleri sağlayabilir. Assembly Linker, karma dil geliştirme üretilen gibi birden çok bileşen dosyalarından tek bir derleme oluşturmak gereken geliştiriciler için yararlıdır. Bu görev, bir tek derleme dosyasına modülleri birleştirmek değil; tek tek modüllerinin hala dağıtılmış ve doğru bir şekilde yüklemek oluşturulan derleme için kullanılabilir olmalıdır. Daha fazla bilgi için *AL.exe*, bkz: [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `AL` görev.  
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `AL` görev.
 
 
 | Parametre | Açıklama |
@@ -69,30 +69,29 @@ AL görevi sarmalar *AL.exe*, ile dağıtılmış bir aracı [!INCLUDE[winsdklon
 | `Win32Icon` | İsteğe bağlı `String` parametresi.<br /><br /> Ekler bir *.ico* derlemesindeki dosya. *.İco* dosya çıktı dosyasına dosya Gezgini'nde istenen görünümü verir. Bu parametre için karşılık gelen `/win32icon` seçeneğini [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Resource` | İsteğe bağlı `String` parametresi.<br /><br /> Bir Win32 kaynağı ekler (*.res* dosya) çıkış dosyasına. Daha fazla bilgi için belgelerine bakın `/win32res` seçeneğini [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, belirtilen seçeneklerle bir derleme oluşturur.  
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, belirtilen seçeneklerle bir derleme oluşturur.
 
-```xml  
-<AL  
-    EmbedResources="@(EmbeddedResource)"  
-    Culture="%(EmbeddedResource.Culture)"  
-    TemplateFile="@(IntermediateAssembly)"  
-    KeyContainer="$(KeyContainerName)"  
-    KeyFile="$(KeyOriginatorFile)"  
-    DelaySign="$(DelaySign)"  
+```xml
+<AL
+    EmbedResources="@(EmbeddedResource)"
+    Culture="%(EmbeddedResource.Culture)"
+    TemplateFile="@(IntermediateAssembly)"
+    KeyContainer="$(KeyContainerName)"
+    KeyFile="$(KeyOriginatorFile)"
+    DelaySign="$(DelaySign)"
 
-    OutputAssembly=  
-       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">  
+    OutputAssembly=
+       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">
 
-    <Output TaskParameter="OutputAssembly"  
-        ItemName="SatelliteAssemblies"/>  
-</AL>  
-```  
+    <Output TaskParameter="OutputAssembly"
+        ItemName="SatelliteAssemblies"/>
+</AL>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
-* [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>Ayrıca bkz.
+* [Görev başvurusu](../msbuild/msbuild-task-reference.md)
 * [Görevler](../msbuild/msbuild-tasks.md)
-

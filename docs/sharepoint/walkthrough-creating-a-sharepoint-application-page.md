@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866197"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630905"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>İzlenecek yol: SharePoint uygulama sayfası oluşturma
- 
+
 Uygulama sayfası, bir ASP.NET sayfasının özelleştirilmiş bir biçimidir. Uygulama sayfaları, bir SharePoint ana sayfası ile birleştirilmiş içerik bulunuyor. Daha fazla bilgi için [SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 Bu izlenecek yol, bir uygulama sayfası oluşturmak ve ardından yerel bir SharePoint sitesi kullanarak hata ayıklama işlemini göstermektedir. Bu sayfa, her kullanıcı oluşturduğunuz veya sunucu grubundaki tüm sitelerde değiştirdiğiniz tüm öğeleri gösterir.
@@ -153,5 +153,5 @@ Visual Web Designer uygulamasını aşağıdaki konulardan kullanarak SharePoint
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Nasıl yapılır: Uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)  
+[Nasıl yapılır: Uygulama sayfası oluşturma](../sharepoint/how-to-create-an-application-page.md)
 [Application _layouts sayfa türü](http://go.microsoft.com/fwlink/?LinkID=169274)

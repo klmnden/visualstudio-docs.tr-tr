@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413312"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605412"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -42,7 +42,7 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
     Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 
-* Sunucunuzda, Windows Server 2012 veya Windows Server 2016 çalıştırmalıdır ve olmalıdır [IIS Web sunucusu rolü](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) düzgün yüklenmemiş (Yayımlama ayarları dosyası oluşturmak için gereken (*\*. publishsettings*)). ASP.NET 4.5 ya da ASP.NET Core, sunucuda ayrıca yüklenmelidir. ASP.NET 4.5 ' ayarlamak için bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core ' ayarlamak için bkz [ana bilgisayar Windows IIS üzerinde ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). 
+* Sunucunuzda, Windows Server 2012 veya Windows Server 2016 çalıştırmalıdır ve olmalıdır [IIS Web sunucusu rolü](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) düzgün yüklenmemiş (Yayımlama ayarları dosyası oluşturmak için gereken (*\*. publishsettings*)). ASP.NET 4.5 ya da ASP.NET Core, sunucuda ayrıca yüklenmelidir. ASP.NET 4.5 ' ayarlamak için bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). ASP.NET Core ' ayarlamak için bkz [ana bilgisayar Windows IIS üzerinde ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 

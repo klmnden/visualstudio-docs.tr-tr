@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942821"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610547"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: Derleme dosyaları seçin
 Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasında ayrı olarak listeleyebilirsiniz veya tüm dosyaları bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz.
@@ -29,25 +29,25 @@ Bir derleme için dosyaları eklemek için bir öğe listesinde eklenmelidir [!I
 
 #### <a name="to-declare-items-individually"></a>Bildirmek için ayrı ayrı öğeler
 
-- Kullanım `Include` öznitelikleri benzer aşağıdaki:  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    veya  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Kullanım `Include` öznitelikleri benzer aşağıdaki:
+
+    `<CSFile Include="form1.cs"/>`
+
+    veya
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`
 
 #### <a name="to-declare-multiple-items"></a>Birden çok öğe bildirmek için
 
--   Kullanım `Include` öznitelikleri benzer aşağıdaki:  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    veya  
-  
+-   Kullanım `Include` öznitelikleri benzer aşağıdaki:
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    veya
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Joker karakter olarak girişleri belirtin
@@ -63,24 +63,24 @@ Aşağıdaki örnekler grafikleri dosyaları aşağıdaki dizinlerde içeren bir
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Tüm içerecek şekilde *.jpg* dosyalar *görüntüleri* dizin ve alt dizinleri
 
-- Aşağıdaki `Include` özniteliği:  
-  
+- Aşağıdaki `Include` özniteliği:
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Tüm içerecek şekilde *.jpg* dosyaları başlayarak *img*
 
-- Aşağıdaki `Include` özniteliği:  
-  
+- Aşağıdaki `Include` özniteliği:
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Sonlanan adlara sahip dizinlerinde tüm dosyaları eklenip eklenmeyeceğini *jpg formatından*
 
-- Aşağıdakilerden birini kullanın `Include` öznitelikleri:  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    veya  
-  
+- Aşağıdakilerden birini kullanın `Include` öznitelikleri:
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    veya
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Bir göreve geçiş öğeleri
@@ -88,17 +88,17 @@ Bir proje dosyasında kullanabileceğiniz @ görevler bir derleme için giriş o
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Tüm Visual C# veya Visual Basic dosyalarını girdi olarak kullanmak için
 
-- Kullanım `Include` öznitelikleri aşağıdakine benzer:  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    veya  
-  
+- Kullanım `Include` öznitelikleri aşağıdakine benzer:
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    veya
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  Bir derleme için girişler belirtmek için öğeleriyle joker karakterler kullanmanız gerekir; kullanarak girişleri belirtemezsiniz `Sources` özniteliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gibi görevleri [Csc](../msbuild/csc-task.md) veya [Vbc](../msbuild/vbc-task.md). Aşağıdaki örnek bir proje dosyasında geçerli değil:
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Örnek
@@ -170,5 +170,5 @@ Aşağıdaki kod örneği, tüm içerecek şekilde bir joker karakter kullanır.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Öğeler](../msbuild/msbuild-items.md)
+- [Nasıl yapılır: Dosyaları derlemeden dışlama](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Öğeler](../msbuild/msbuild-items.md)

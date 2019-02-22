@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c764e99fc9c5e5024ccc3d508949fd3a9d9b39e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56a79ea8ba7c4e5622ee468cec8fe6cb53dd197c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920597"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615994"
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
-Bir blok başladığı bellek adresi bölüm parçası alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- pRetVal  
- [out] Bir blok başladığı bellek adresi bölüm bölümünü döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="example"></a>Örnek  
-  
-```C++  
-CComPtr< IDiaLineNumber > pLine;  
-DWORD seg;  
-pLine->get_addressSection( &seg );  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idialinenumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)
+Bir blok başladığı bellek adresi bölüm parçası alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ pRetVal
+
+[out] Bir blok başladığı bellek adresi bölüm bölümünü döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="example"></a>Örnek
+
+```C++
+CComPtr< IDiaLineNumber > pLine;
+DWORD seg;
+pLine->get_addressSection( &seg );
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

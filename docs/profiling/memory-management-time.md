@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16378663dd07bb9810661ad50d3f1c011dfdd80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000375"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609377"
 ---
 # <a name="memory-management-time"></a>Bellek yönetimi zamanı
-Bu segmentlerde faaliyet zaman çizelgesi, bellek yönetimi sınıflandırılmış bir kez engelleme ile ilişkilidir. Bu senaryo, bir iş parçacığı bir bellek yönetimi işlemi gibi disk belleği ile ilişkili bir olay tarafından engellendiğini anlamına gelir. Bu süre boyunca, bir iş parçacığı eşzamanlılık görselleştiricisi bellek yönetimi sayılıyor bir API veya çekirdek durumda engellendi. Bunlar, sayfalama ve bellek ayırma gibi olayları içerir.  
-  
- Bellek yönetimi sınıflandırılmış blokları temel nedenleri daha iyi anlamak için profil raporlarını ve ilişkili çağrı yığınları inceleyin.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+Bu segmentlerde faaliyet zaman çizelgesi, bellek yönetimi sınıflandırılmış bir kez engelleme ile ilişkilidir. Bu senaryo, bir iş parçacığı bir bellek yönetimi işlemi gibi disk belleği ile ilişkili bir olay tarafından engellendiğini anlamına gelir. Bu süre boyunca, bir iş parçacığı eşzamanlılık görselleştiricisi bellek yönetimi sayılıyor bir API veya çekirdek durumda engellendi. Bunlar, sayfalama ve bellek ayırma gibi olayları içerir.
+
+ Bellek yönetimi sınıflandırılmış blokları temel nedenleri daha iyi anlamak için profil raporlarını ve ilişkili çağrı yığınları inceleyin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

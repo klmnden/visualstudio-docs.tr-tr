@@ -17,37 +17,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa799e54f2fc8be22b78eca837d6aee2e683b1d3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 9c10dcf48e5c047778b86c524b35b4e1d5d8cc8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863909"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614629"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Nasıl yapılır: Bir SharePoint projesine mevcut bir BDC modeli dosyası ekleme
-  Özelleştirme, paket ve model dosyası eklemek için Visual Studio kullanarak bir iş verileri bağlantısı (BDC) modeli yeniden (*.bdcm*) herhangi bir SharePoint grubu projesine. Daha fazla bilgi için [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md).  
-  
-### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Bir SharePoint projesine bir BDC modeli dosyası ekleme  
-  
-1. İçinde **Çözüm Gezgini**, bir SharePoint proje klasörünü seçin.  
-  
-2. Menü çubuğunda, **proje** > **varolan öğeyi Ekle**.  
-  
-3. İçinde **varolan öğeyi Ekle** iletişim kutusu, projenize ekleyin, dosyayı seçin ve ardından istediğiniz model tanım dosyasının konumuna göz atın **Ekle** düğmesi.  
-  
-    Model tanımlamıyorsa bir *türü .NET bütünleştirilmiş kodu satır, iş kolu (LOB) sistemine*, **LobSystem ekleme .NET bütünleştirilmiş kodu** iletişim kutusu açılır.  
-  
-4. İletişim kutusu görüntülenirse, aşağıdaki adımlardan birini gerçekleştirin:  
-  
-   - Öğesini alınan model meta verilerini tanımlamak için bir tasarımcı kullanır ve özel kod yazmak istiyorsanız **Evet** düğmesi, sistem adlandırın ve ardından **Tamam** düğmesi.  
-  
-   - Aksi takdirde seçin **Hayır** düğmesine ve ardından **Tamam** düğmesi.  
-  
-     **İş verileri bağlantı modeli** öğesi projeye eklenir.  
-  
+  Özelleştirme, paket ve model dosyası eklemek için Visual Studio kullanarak bir iş verileri bağlantısı (BDC) modeli yeniden (*.bdcm*) herhangi bir SharePoint grubu projesine. Daha fazla bilgi için [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Bir SharePoint projesine bir BDC modeli dosyası ekleme
+
+1. İçinde **Çözüm Gezgini**, bir SharePoint proje klasörünü seçin.
+
+2. Menü çubuğunda, **proje** > **varolan öğeyi Ekle**.
+
+3. İçinde **varolan öğeyi Ekle** iletişim kutusu, projenize ekleyin, dosyayı seçin ve ardından istediğiniz model tanım dosyasının konumuna göz atın **Ekle** düğmesi.
+
+    Model tanımlamıyorsa bir *türü .NET bütünleştirilmiş kodu satır, iş kolu (LOB) sistemine*, **LobSystem ekleme .NET bütünleştirilmiş kodu** iletişim kutusu açılır.
+
+4. İletişim kutusu görüntülenirse, aşağıdaki adımlardan birini gerçekleştirin:
+
+   - Öğesini alınan model meta verilerini tanımlamak için bir tasarımcı kullanır ve özel kod yazmak istiyorsanız **Evet** düğmesi, sistem adlandırın ve ardından **Tamam** düğmesi.
+
+   - Aksi takdirde seçin **Hayır** düğmesine ve ardından **Tamam** düğmesi.
+
+     **İş verileri bağlantı modeli** öğesi projeye eklenir.
+
 ## <a name="see-also"></a>Ayrıca bkz.
- [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Nasıl yapılır: BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)   
- [Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Nasıl yapılır: İçinde bir BDC özelliğine özel bir derlemeyi etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
- [İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)  
+- [İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Nasıl yapılır: BDC modeli oluşturma](../sharepoint/how-to-create-a-bdc-model.md)
+- [Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Nasıl yapılır: İçinde bir BDC özelliğine özel bir derlemeyi etme](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71fbcc3e47b0748c46f7094e1c512289253ab8fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6728418e848941bb537f5bec4cb4f772c73485c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916605"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642696"
 ---
 # <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
-Yığın çerçevesinin bayt cinsinden boyutunu alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_size (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Yığın çerçevesinin boyutu bayt cinsinden döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Yığın çerçevesinin bayt cinsinden boyutunu alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_size ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Yığın çerçevesinin boyutu bayt cinsinden döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

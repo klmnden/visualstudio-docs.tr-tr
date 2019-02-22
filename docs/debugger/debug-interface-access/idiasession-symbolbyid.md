@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71072c597a445d54fc3429e949b24fde81761fc1
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9b58fcf55741975a776e222b2845ae50774e7fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227676"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645517"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 Bir sembol benzersiz kimliğine göre alır.
@@ -32,10 +32,12 @@ HRESULT symbolById (
 ```
 
 #### <a name="parameters"></a>Parametreler
-`id`  
+`id`
+
 [in] Benzersiz tanımlayıcısı.
 
-`ppSymbol`  
+`ppSymbol`
+
 [out] Döndürür bir [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) sembol temsil eden bir nesne alındı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -64,6 +66,6 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
