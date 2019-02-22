@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aefa1c4b3767ae58cb526c6f5a663350efd3137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922879"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685033"
 ---
 # <a name="stepping-in-break-mode"></a>Kesme modunda Adımlama
-Aşağıdaki bölümde hata ayıklayıcı kesme modundayken ve kodunuz içinde adım adım gerekir oluşan süreci açıklanmaktadır:  
-  
-## <a name="stepping-process"></a>İşlem Adımlama  
-  
-1.  Çağrı [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) ile [STEPKIND](../../extensibility/debugger/reference/stepkind.md) ve [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) bir adımı yürütmeye yönelik bağımsız değişkenleri.  
-  
-2.  Bu adım tamamlandığında, gönderme bir [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) durdurma olay olarak.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Hata ayıklayıcısı olaylarını çağırma](../../extensibility/debugger/calling-debugger-events.md)
+Aşağıdaki bölümde hata ayıklayıcı kesme modundayken ve kodunuz içinde adım adım gerekir oluşan süreci açıklanmaktadır:
+
+## <a name="stepping-process"></a>İşlem Adımlama
+
+1.  Çağrı [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) ile [STEPKIND](../../extensibility/debugger/reference/stepkind.md) ve [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) bir adımı yürütmeye yönelik bağımsız değişkenleri.
+
+2.  Bu adım tamamlandığında, gönderme bir [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) durdurma olay olarak.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Hata ayıklayıcısı olaylarını çağırma](../../extensibility/debugger/calling-debugger-events.md)

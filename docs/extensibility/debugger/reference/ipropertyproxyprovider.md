@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyProvider
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716f3caedd2b3da9ce115148ecf15b33834238fc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c1e9afbe99e6265e47bf033c7d4af8e93590aaf6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953883"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718267"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
-Bu arabirim, görüntülemek ve nesnenin verileri değiştirmek için bir proxy arabirimi sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IPropertyProxyProvider : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- İfade değerlendirici (EE) bu arabirimi uygulayan aynı nesne üzerinde uygulayan [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) tür görselleştiricileri desteğinin EE'ın bir parçası olarak arabirimi.  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Çağrı [QueryInterface](/cpp/atl/queryinterface) üzerinde bir `IDebugProperty3` arabirimi bu arabirim elde edilir.  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- `IPropertyProxyProvider` Arabirimi uygulayan aşağıdaki yöntemi:  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Bir nesne üzerinde verileri görüntülemek için bir özellik proxy arabirimi alır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- EE uygulanması bu arabirimi uygulayan rağmen [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) genellikle tarafından işlenen [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Bkz: [Visualizing ve verileri görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md) IEEVisualizerService arabirimi edinme hakkında ayrıntılar için.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
- [Tür görselleştiricisi ve özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
- [Verileri Görselleştirme ve Görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+Bu arabirim, görüntülemek ve nesnenin verileri değiştirmek için bir proxy arabirimi sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IPropertyProxyProvider : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar
+ İfade değerlendirici (EE) bu arabirimi uygulayan aynı nesne üzerinde uygulayan [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) tür görselleştiricileri desteğinin EE'ın bir parçası olarak arabirimi.
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+ Çağrı [QueryInterface](/cpp/atl/queryinterface) üzerinde bir `IDebugProperty3` arabirimi bu arabirim elde edilir.
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+ `IPropertyProxyProvider` Arabirimi uygulayan aşağıdaki yöntemi:
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Bir nesne üzerinde verileri görüntülemek için bir özellik proxy arabirimi alır.|
+
+## <a name="remarks"></a>Açıklamalar
+ EE uygulanması bu arabirimi uygulayan rağmen [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) genellikle tarafından işlenen [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Bkz: [Visualizing ve verileri görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md) IEEVisualizerService arabirimi edinme hakkında ayrıntılar için.
+
+## <a name="requirements"></a>Gereksinimler
+ Üstbilgi: msdbg.h
+
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
+- [Tür Görselleştiricisi ve Özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [Verileri Görselleştirme ve Görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md)

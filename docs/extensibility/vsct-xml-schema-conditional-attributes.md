@@ -11,63 +11,63 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95308f286506aa9e032e3923bbff23c90d464d48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73e48cfb0a30ca71592879c8276ef1be76cb973f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070675"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680304"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Şeması koşullu öznitelikleri
-Tüm listeleri ve öğeleri koşullu öznitelikleri uygulayabilirsiniz. Mantıksal işleçler ve sembol genişletme ifadeler true veya false olarak değerlendirin. TRUE ise sonuçta elde edilen çıktıda ilişkili liste veya öğe dahildir.  
-  
- Belirteç genişletmeleri diğer belirteç genişletmeleri veya sabitler karşı test edebilirsiniz. İşlev `Defined()` değere sahip olsa bile belirli bir adı tanımlı olup olmadığını sınar.  
-  
- Koşul özniteliği bir listesine uygulandığında, koşul listesindeki her alt öğenin uygulanır. Bir alt öğesi bir koşul özniteliğine içeriyorsa, onun koşulu bir AND işlemi tarafından üst ifade ile birleştirilir.  
-  
- Değerler 1, '1' ve 'true' true ' değerlendirilir ve 0, '0' ve 'false' false ' değerlendirilir.  
-  
-## <a name="operators"></a>İşleçler  
- Koşullu ifadeler değerlendirmek için aşağıdaki işleçleri kullanın.  
-  
-|İşleç|Tanım|  
-|--------------|----------------|  
-|(,)|Gruplandırma|  
-|!|Mantıksal değil|  
-|\<, >, \<=, >=, ==, !=|İlişkisel ve eşitlik|  
-|and|Boole değeri|  
-|veya|Boole değeri|  
-  
-## <a name="examples"></a>Örnekler  
-  
-```xml  
-<Menu Condition="Defined(DEBUG)" ...  
-</Menu>  
-  
-<Menu Condition="%(SKU_MODE) = 'Demo'" ...  
-</Menu>  
-  
-<Menus Condition="Defined(DEBUG)">  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-  
-<Menus Condition="Defined(DEMO_SKU)">  
-    <Menus Condition="!Defined(DEBUG)">  
-        <Menu ...  
-        </Menu>  
-    </Menus>  
-  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-  
-<Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))   
-and !Defined(DEBUG)">  
-    <Menu ...  
-    </Menu>  
-</Menus>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Tüm listeleri ve öğeleri koşullu öznitelikleri uygulayabilirsiniz. Mantıksal işleçler ve sembol genişletme ifadeler true veya false olarak değerlendirin. TRUE ise sonuçta elde edilen çıktıda ilişkili liste veya öğe dahildir.
+
+ Belirteç genişletmeleri diğer belirteç genişletmeleri veya sabitler karşı test edebilirsiniz. İşlev `Defined()` değere sahip olsa bile belirli bir adı tanımlı olup olmadığını sınar.
+
+ Koşul özniteliği bir listesine uygulandığında, koşul listesindeki her alt öğenin uygulanır. Bir alt öğesi bir koşul özniteliğine içeriyorsa, onun koşulu bir AND işlemi tarafından üst ifade ile birleştirilir.
+
+ Değerler 1, '1' ve 'true' true ' değerlendirilir ve 0, '0' ve 'false' false ' değerlendirilir.
+
+## <a name="operators"></a>İşleçler
+ Koşullu ifadeler değerlendirmek için aşağıdaki işleçleri kullanın.
+
+|İşleç|Tanım|
+|--------------|----------------|
+|(,)|Gruplandırma|
+|!|Mantıksal değil|
+|\<, >, \<=, >=, ==, !=|İlişkisel ve eşitlik|
+|and|Boole değeri|
+|veya|Boole değeri|
+
+## <a name="examples"></a>Örnekler
+
+```xml
+<Menu Condition="Defined(DEBUG)" ...
+</Menu>
+
+<Menu Condition="%(SKU_MODE) = 'Demo'" ...
+</Menu>
+
+<Menus Condition="Defined(DEBUG)">
+    <Menu ...
+    </Menu>
+</Menus>
+
+<Menus Condition="Defined(DEMO_SKU)">
+    <Menus Condition="!Defined(DEBUG)">
+        <Menu ...
+        </Menu>
+    </Menus>
+
+    <Menu ...
+    </Menu>
+</Menus>
+
+<Menus Condition="(Defined(DEMO_SKU) or Defined(SAMPLE_SKU))
+and !Defined(DEBUG)">
+    <Menu ...
+    </Menu>
+</Menus>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

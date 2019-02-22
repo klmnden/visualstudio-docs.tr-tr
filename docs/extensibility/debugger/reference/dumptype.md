@@ -1,7 +1,7 @@
 ---
 title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DUMPTYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c81d9c9f3f5dc6b0a849e405133b7ecef1e4e59b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412974"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697138"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Döküm için ne kadar bir programın durumu ' (örneğin, çalışan iş parçacıkları, yığın çerçeveleri ve geçerli yönerge adresi) belirtir.
@@ -40,11 +40,9 @@ public enum enum_DUMPTYPE {
 ```
 
 ## <a name="members"></a>Üyeler
-DUMP_MINIDUMP  
-Küçük, küçük bir döküm belirtir.
+Küçük, küçük bir döküm DUMP_MINIDUMP belirtir.
 
-DUMP_FULLDUMP  
-Büyük, eksiksiz bir döküm belirtir.
+Büyük, eksiksiz bir döküm DUMP_FULLDUMP belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bağımsız değişken olarak geçirilen [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) yöntemi.
@@ -57,5 +55,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

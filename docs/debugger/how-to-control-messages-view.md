@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6cef8a962e9622c5b1c1c3cc1513fb38c343000
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0007d1ad1e87b2e1f2d34b039b4105bb525578a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999229"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690064"
 ---
 # <a name="how-to-control-messages-view"></a>Nasıl yapılır: İletiler Görünümünü Denetleme
-Spy ++ ile içeriğini önemli ölçüde denetime sahip bir [iletiler görünümünü](../debugger/messages-view.md) penceresi. Yapabilecekleriniz [başlatma ve durdurma](../debugger/how-to-start-and-stop-the-message-log-display.md) dilediğiniz zaman ve, iletileri görüntülemeyi belirtebilirsiniz:  
-  
-- Hangi ileti türlerini görmek istiyorsunuz.  
-  
-- İzlemek istediğiniz windows.  
-  
-- İleti satırları görüntü biçimi.  
-  
-  Bu ayarlar kullanılabilir [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md), ve bunlar yalnızca etkin olarak geçerli [iletiler görünümünü](../debugger/messages-view.md) penceresi. Bu iletişim kutusunu açmak için seçin **günlük iletilerini** gelen **Spy** menüsü.  
-  
+Spy ++ ile içeriğini önemli ölçüde denetime sahip bir [iletiler görünümünü](../debugger/messages-view.md) penceresi. Yapabilecekleriniz [başlatma ve durdurma](../debugger/how-to-start-and-stop-the-message-log-display.md) dilediğiniz zaman ve, iletileri görüntülemeyi belirtebilirsiniz:
+
+- Hangi ileti türlerini görmek istiyorsunuz.
+
+- İzlemek istediğiniz windows.
+
+- İleti satırları görüntü biçimi.
+
+  Bu ayarlar kullanılabilir [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md), ve bunlar yalnızca etkin olarak geçerli [iletiler görünümünü](../debugger/messages-view.md) penceresi. Bu iletişim kutusunu açmak için seçin **günlük iletilerini** gelen **Spy** menüsü.
+
   Üç sekmeli bölme, ileti seçenekleri kullanılabilir. Daha fazla bilgi için bkz: [Windows sekmesi, ileti seçenekleri iletişim kutusu](../debugger/windows-tab-message-options-dialog-box.md), [iletiler sekmesi, ileti seçenekleri iletişim kutusu](../debugger/messages-tab-message-options-dialog-box.md), ve [çıktı sekmesi, ileti seçenekleri iletişim kutusu](../debugger/output-tab-message-options-dialog-box.md).

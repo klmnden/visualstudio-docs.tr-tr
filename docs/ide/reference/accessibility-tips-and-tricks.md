@@ -1,7 +1,7 @@
 ---
 title: Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 description: Engelli kişiler de dahil olmak üzere ipuçları ve Visual Studio tümleşik geliştirme ortamı (IDE) kullanmak herkes için daha erişilebilir hale gelmesine yardımcı olabilecek öneriler hakkında daha fazla bilgi edinin.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318563"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680938"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 
 > [!TIP]
-> Son erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi için bkz: [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
+> Erişilebilirlik güncelleştirmeler hakkında daha fazla bilgi edinmek için [erişilebilirlik geliştirmeleri Visual Studio 2017 sürüm 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisi.
 
 Visual Studio, ekran okuyucuların ve diğer yardımcı teknolojiler ile uyumlu olan yerleşik erişilebilirlik özelliği içerir. Bu konu, yalnızca klavyeyle veya görevleri gerçekleştirmek için kullanabilirsiniz ve yüksek karşıtlıklı tema görünürlüğünü artırmak için kullanma hakkında bilgi içeren ortak kısayol tuş birleşimleri listeler. De kodunuz hakkında yararlı bilgiler açığa çıkarmak için ek açıklamalar kullanmayı gösterir ve ses ayarlama olayları oluşturma ve kesme noktası için ipuçları.
 
@@ -64,6 +64,7 @@ Bazı diğer yararlı kısayol tuş birleşimleri arasında şunlar yer alır.
 |İletişim kutusu|İletişim kutusunda bir onay kutusu seçeneğini kaldırın veya seçin. <br> <br> **NOT:** Standart Windows kısayol|**ARA ÇUBUĞU**|
 |Bağlam menüleri|(Sağ tıklama) bağlam menüsünü açın. <br> <br> **NOT:** Standart Windows kısayol|**SHIFT** + **F10**|
 |Menüler|Bir menü öğesi, Hızlandırıcı tuşlarıyla hızlıca erişin. Seçin **ALT** bir menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio'da proje Aç iletişim kutusunu görüntülemek için seçtiğiniz **ALT** + **F** + **O**  +  **P**.  <br><br> **NOT:** Standart Windows kısayol|**ALT** + **[harf]**|
+|Hızlı Başlatma arama kutusu| Visual Studio'da arama özelliğini kullanın|**CTRL** + **Q**|
 |Araç penceresi|Araç kutusu sekmeleri arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DARALTILDI**|
 |Araç penceresi|Bir denetimi araç kutusundan bir form veya Tasarımcısı ekleyin.|**GİRİN**|
 |Klavye, ortam, Seçenekler iletişim kutusu|Girilen bir tuş bileşimi Sil **kısayol tuşlarına basın** seçeneği.|**GERİ AL**|

@@ -11,29 +11,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ef6a8c34f7f5d51da459835a5867200e313fbb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eda65a49fce09dbbb085da7258a8536484af174
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009394"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56677584"
 ---
 # <a name="other-dialog-boxes"></a>Diğer İletişim Kutuları
-Bu iletişim kutularından Spy ++ programı hakkında bilgi görüntüler.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Microsoft Spy++ Hakkında](../debugger/about-microsoft-spy-increment.md)  
- Spy ++ programın sahipliği hakkında bilgiler.  
-  
- [Spy++ Yardımı İçin Telif Hakkı Bildirimi](../debugger/copyright-notice-for-spy-increment-help.md)  
- Yasal telif hakkı bildirimi.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
- Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümler içerir.  
-  
- [Spy++ kullanma](../debugger/using-spy-increment.md)  
- Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
-  
- [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
- Spy ++ ağaç görünümlerini windows, iletileri, süreçleri ve iş parçacıkları açıklar.
+Bu iletişim kutularından Spy ++ programı hakkında bilgi görüntüler.
+
+## <a name="in-this-section"></a>Bu Bölümde
+ [İlgili Microsoft Spy ++](../debugger/about-microsoft-spy-increment.md) Spy ++ programı'nın sahipliği hakkında bilgi.
+
+ [Spy ++ Yardımı için telif hakkı bildirimi](../debugger/copyright-notice-for-spy-increment-help.md) yasal telif hakkı bildirimi.
+
+## <a name="related-sections"></a>İlgili Bölümler
+ [Spy ++ başvurusu](../debugger/spy-increment-reference.md) her Spy ++ menü ve iletişim kutusunu açıklayan bölümleri içerir.
+
+ [Spy ++ kullanma](../debugger/using-spy-increment.md) Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.
+
+ [Spy ++ görünümleri](../debugger/spy-increment-views.md) Spy ++ ağaç görünümlerini windows, iletileri, süreçleri ve iş parçacıkları açıklar.

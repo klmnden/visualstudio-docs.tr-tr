@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450002"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680194"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Hata ayıklama başlatma bayrakları belirtir.
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>Üyeler
-LAUNCH_DEBUG  
-Hata ayıklama işlemi başlatır.
+LAUNCH_DEBUG hata ayıklama işlemi başlatır.
 
-LAUNCH_NODEBUG  
-Hata ayıklama olmadan işlem başlatır.
+LAUNCH_NODEBUG, hata ayıklama olmadan işlem başlatır.
 
-LAUNCH_ENABLE_ENC  
-KULLANIM DIŞI, KULLANMAYIN.
+LAUNCH_ENABLE_ENC KULLANIMDAN KALDIRILDI, KULLANMAYIN.
 
-LAUNCH_MERGE_ENV  
-Bir işlem başlatır ve ortam başlatan konakla birleştirir.
+LAUNCH_MERGE_ENV işlem başlatır ve ortam başlatan konakla birleştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu değerleri bir bağımsız değişken olarak geçirilen [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) yöntemi.
@@ -69,5 +65,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

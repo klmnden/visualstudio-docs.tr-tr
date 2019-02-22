@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f001659bc965956172e4b0d547c97bf8481608e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec28b693ee16153a48d3edc43b50ddbb15536dc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007823"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685852"
 ---
 # <a name="mtaskid-field"></a>m_taskıd alanı
-Destek alanı <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> özelliği.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Bütünleştirilmiş kod:** mscorlib (içinde *mscorlib.dll*)  
-  
- .NET Framework'den bu iç üye erişemediği için aşağıdaki söz dizimini ortak Ara dil (CIL) sağlanır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```csharp  
-.field private int32 m_taskId  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görev sınıfı](../../extensibility/debugger/task-class-internal-members.md)
+Destek alanı <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> özelliği.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Bütünleştirilmiş kod:** mscorlib (içinde *mscorlib.dll*)
+
+ .NET Framework'den bu iç üye erişemediği için aşağıdaki söz dizimini ortak Ara dil (CIL) sağlanır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```csharp
+.field private int32 m_taskId
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görev sınıfı](../../extensibility/debugger/task-class-internal-members.md)

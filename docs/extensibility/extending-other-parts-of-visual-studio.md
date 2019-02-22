@@ -10,31 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e742e2432596b4b31ecfcfc666a913076050cf06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927846"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683055"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Visual Studio'nun diğer bölümlerini genişletme
-Visual Studio UI genişletebileceğiniz çok daha fazla bölümü vardır. Burada birkaç gösteriyoruz.  
-  
-## <a name="create-a-vspackage"></a>VSPackage'ı oluşturma  
- Visual Studio genişletilebilirlik temel yapı taşları VSPackage ' dir.  VSPackage'ı eklemeyi öğrenin: [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)  
-  
-## <a name="extend-the-toolbox"></a>Araç kutusunu uzatma  
- Yeni denetimler ve diğer öğeleri araç kutusuna ekleyin ve araç kutusu işlevini nasıl kullanacağınızı öğrenin:  
-  
--   [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)  
-  
--   [Bir Windows Forms araç kutusu denetimi oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)  
-  
-## <a name="extend-the-status-bar"></a>Durum çubuğunu genişletme  
- Durum çubuğu ve ilerleme çubuğu için okuma ve yazma işlemini ve animasyonları ve diğer kullanıcı Arabirimi sağlayan öğrenin: [Durum çubuğunu genişletme](../extensibility/extending-the-status-bar.md).  
-  
-## <a name="create-custom-start-pages"></a>Özel başlangıç sayfaları oluşturma  
- Sıfırdan veya indirilebilir başlangıç sayfası örnek kendi başlangıç sayfanızı hale getirmeyi öğrenin: [Özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
-  
-## <a name="write-to-the-activity-log"></a>Etkinlik günlüğüne yazma  
- Etkinlik günlüğüne yazma işlemleri gerçekleştirmeyi öğreneceksiniz: [Nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).
+
+Visual Studio UI genişletebileceğiniz çok daha fazla bölümü vardır. Burada birkaç gösteriyoruz.
+
+## <a name="create-a-vspackage"></a>VSPackage'ı oluşturma
+
+Visual Studio genişletilebilirlik temel yapı taşları VSPackage ' dir.  VSPackage'ı eklemeyi öğrenin: [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)
+
+## <a name="extend-the-toolbox"></a>Araç kutusunu uzatma
+
+Yeni denetimler ve diğer öğeleri araç kutusuna ekleyin ve araç kutusu işlevini nasıl kullanacağınızı öğrenin:
+
+-   [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)
+
+-   [Bir Windows Forms araç kutusu denetimi oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)
+
+## <a name="extend-the-status-bar"></a>Durum çubuğunu genişletme
+
+Durum çubuğu ve ilerleme çubuğu için okuma ve yazma işlemini ve animasyonları ve diğer kullanıcı Arabirimi sağlayan öğrenin: [Durum çubuğunu genişletme](../extensibility/extending-the-status-bar.md).
+
+::: moniker range="vs-2017"
+
+## <a name="create-custom-start-pages"></a>Özel başlangıç sayfaları oluşturma
+
+Sıfırdan veya indirilebilir başlangıç sayfası örnek kendi başlangıç sayfanızı hale getirmeyi öğrenin: [Özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).
+
+::: moniker-end
+
+## <a name="write-to-the-activity-log"></a>Etkinlik günlüğüne yazma
+
+Etkinlik günlüğüne yazma işlemleri gerçekleştirmeyi öğreneceksiniz: [Nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).

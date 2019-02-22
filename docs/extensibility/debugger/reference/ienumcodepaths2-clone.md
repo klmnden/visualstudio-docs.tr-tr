@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumCodePaths2::Clone
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8fd1422b787fc8322e66e362b629092a1bb2cca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 54148f7442d714f40b0eab68131113c751cde8e9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006802"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684383"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
-Bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Clone(  
-   IEnumCodePaths2** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumCodePaths2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppEnum`  
- [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
+Bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Clone(
+   IEnumCodePaths2** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumCodePaths2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppEnum`
+
+ [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

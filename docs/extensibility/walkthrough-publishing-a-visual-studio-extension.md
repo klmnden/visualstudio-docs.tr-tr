@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038350"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716109"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısı yayımlama
 
@@ -73,33 +73,33 @@ Bu makalede bir varsayılan VSPackage uzantısı kullanır, ancak adımları her
 8. İçinde **2: Uzantı ayrıntılarını sağlayın**, otomatik olarak doldurulan gelen bazı alanlar *source.extension.vsixmanifest* uzantınızı dosyasından. Her hakkında daha fazla ayrıntı bulabilirsiniz:
 
     * **İç ad** uzantı ayrıntı sayfasında URL'de kullanılır. Örneğin, "myname" Yayımcı adı altında bir uzantısı yayımlama ve iç adı "uzantım" olacak şekilde belirterek bir URL'de sonuçları "marketplace.visualstudio\.com/items?itemName=myname.myextension", uzantının ayrıntılı bilgi için Sayfa.
-    
+
     * **Görünen ad** uzantınızın. Bu ad alanından otomatik olarak doldurulmuş *source.extension.vsixmanifest* dosya.
-   
+
     * **Sürüm** karşıya yüklediğiniz uzantı sayısı. Bu sürümü otomatik olarak doldurulan gelen *source.extension.vsixmanifest* dosya.
-    
+
     * **VSIX kimliği** Uzantınız için Visual Studio kullanan benzersiz tanımlayıcı. Bu tanımlayıcı, otomatik olarak yükseltilerek uzantınızı olmasını istiyorsanız gereklidir. Bu tanımlayıcı gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* dosya.
-    
+
    * **Logo** Uzantınız için kullanılır. Bu logo gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* sağlanırsa, dosya.
-    
+
      * **Kısa açıklama** uzantınızın ne yaptığını. Bu açıklama, gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* dosya.
-    
+
      * **Genel Bakış** ekran görüntüleri ve uzantınızın ne yaptığını hakkında ayrıntılı bilgi dahil etmek için iyi bir yerdir.
-    
+
      * **Desteklenen Visual Studio sürümleri** seçtiğiniz uzantınızı çalışır, Visual Studio'nun hangi sürümlerinin sağlar. Uzantınızı yalnızca sürümler yüklenir.
-    
+
      * ** Desteklenen Visual Studio sürümü uzantınızı üzerinde çalışacağı Visual Studio'nun hangi sürümlerinin seçmenize olanak sağlar. Uzantınızı yalnızca bu sürümü için yüklenir.
-    
+
      * **Tür**. En yaygın türü uzantıları **Araçları**.
-    
+
      * **Kategorileri**. En çok üç Uzantınız için bir en uygun olan seçin.
-    
+
      * **Etiketleri** uzantınızı olduğunu kullanıcıları Yardım anahtar sözcükleri. Etiketler, uzantılarınızı Market'te, aramanın ilgi düzeyini artırmaya yardımcı olabilir.
-    
+
      * **Fiyatlandırma kategorisi** uzantınızı maliyetidir.
-    
+
      * **Kaynak kodu deposu** toplulukla bağlantı kaynak kodunuzu paylaşmanıza olanak tanır.
-    
+
      * **Uzantınız için soru- cevap izin** uzantısı giriş sayfanızda sorular bırakın olanak sağlar.
 
 9. Tıklayın **Kaydet ve karşıya yükle**. Sayfa yayımcınıza için yedekleme bu seçeneği alır yönetin. Uzantınızı henüz yayımlanmamış. Uzantınızı yayımlamak için uzantı sağ tıklatın ve **genel yap**. Nasıl uzantınızı Market'te seçerek görüneceğini görüntüleyebileceğiniz **uzantıyı görüntüle**. Alım sayıları için tıklayarak **raporları**. Uzantınız için değişiklik yapmak için tıklatın **Düzenle**.
@@ -121,13 +121,13 @@ Market erişmek ve bir yayımcı hesabı yönetmek için ek kullanıcılara izin
 3. Ardından, eklemek ve doğru altında erişim düzeyini vermek istediğiniz kullanıcının e-posta adresi belirtebilirsiniz **bir rol seçin**.  Aşağıdaki seçeneklerden birini seçebilirsiniz:
 
    * **Oluşturucu**: Kullanıcı Uzantıları yayımlayabilir ancak olamaz görüntüleyebilir veya diğer kullanıcıların yayımladığı uzantıları yönetebilirsiniz.
-  
+
    * **Okuyucu**: Kullanıcı Uzantıları görüntüleyebilir ancak olamaz yayımlama veya uzantıları yönetin.
-  
+
    * **Katkıda bulunan**: Kullanıcı yayımlama ve uzantıları yönetebilen, ancak Yayımcı ayarlarını düzenleyebilir veya erişimi yönetin.
-  
+
    * **Sahibi**: Kullanıcı yayımlama ve uzantıları yönetin, yayımcı ayarlarını düzenleyebilir ve erişimi yönetin.
-  
+
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio Market'ten uzantı yükleme
 
 Uzantı yayımlandıktan sonra Visual Studio'da yükleyin ve test etmek.

@@ -18,47 +18,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0baa9e9a94b96682cda21dec9a5ba76cbe7f0065
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bd14f0d0a8fa0697ed8fead43bac69b0b002ed3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970922"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690571"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio'da bir UWP uygulaması Yenile
-  
- Hata ayıklama ve ardından seçerek JavaScript kullanarak UWP uygulaması yenileme sırasında kodunuzda değişiklikler yapabilirsiniz **Yenile Windows uygulama** düğmesini **hata ayıklama** araç çubuğu. Bu düğmeyi seçerek uygulama hata ayıklayıcıyı durdurup yeniden olmadan yeniden yükler. Yenileme özelliği, HTML, CSS ve JavaScript kodu Değiştir ve hızlı bir şekilde sonuçları görmek sağlar. Bu özellik, UWP uygulamaları için desteklenir.  
-  
- Yenileme değil, uygulama durumunu korumak veya uygulamanız için aşağıdaki değişiklikleri yansıtacak:  
-  
--   Görüntü paketi bildiriminde belirtilen değişiklikler de dahil olmak üzere paket bildirim dosyası değişiklikler.  
-  
--   Başvuru ekleme veya bir SDK başvurusu kaldırma gibi değiştirir veya Windows çalışma zamanı bileşenleri (.winmd dosyaları) değiştirir.  
-  
--   Kaynak dizeleri .resjson dosyalardaki değişiklikler gibi değiştirir.  
-  
--   Proje dosyası yolu adı değişiklikleri, yeni proje dosyaları ya da silinen dosyaları ile sonuçlanan değiştirir.  
-  
--   Proje ve öğe özellik değişiklikleri seçili hata ayıklama cihazı değişiklikleri gibi veya paket eylemi (Özellikler penceresinde) bir dosya için değişiklikler.  
-  
+
+ Hata ayıklama ve ardından seçerek JavaScript kullanarak UWP uygulaması yenileme sırasında kodunuzda değişiklikler yapabilirsiniz **Yenile Windows uygulama** düğmesini **hata ayıklama** araç çubuğu. Bu düğmeyi seçerek uygulama hata ayıklayıcıyı durdurup yeniden olmadan yeniden yükler. Yenileme özelliği, HTML, CSS ve JavaScript kodu Değiştir ve hızlı bir şekilde sonuçları görmek sağlar. Bu özellik, UWP uygulamaları için desteklenir.
+
+ Yenileme değil, uygulama durumunu korumak veya uygulamanız için aşağıdaki değişiklikleri yansıtacak:
+
+-   Görüntü paketi bildiriminde belirtilen değişiklikler de dahil olmak üzere paket bildirim dosyası değişiklikler.
+
+-   Başvuru ekleme veya bir SDK başvurusu kaldırma gibi değiştirir veya Windows çalışma zamanı bileşenleri (.winmd dosyaları) değiştirir.
+
+-   Kaynak dizeleri .resjson dosyalardaki değişiklikler gibi değiştirir.
+
+-   Proje dosyası yolu adı değişiklikleri, yeni proje dosyaları ya da silinen dosyaları ile sonuçlanan değiştirir.
+
+-   Proje ve öğe özellik değişiklikleri seçili hata ayıklama cihazı değişiklikleri gibi veya paket eylemi (Özellikler penceresinde) bir dosya için değişiklikler.
+
 > [!IMPORTANT]
->  Başvuruları değiştirme, paket bildirimini değiştirmek veya önceki listesinde belirtilen diğer değişiklikleri yapın, HTML, CSS ve JavaScript kaynak dosyalarını güncelleştirmek için hata ayıklayıcıyı yeniden başlatın ve durdurun gerekir.  
-  
-### <a name="to-refresh-an-app"></a>Bir uygulamayı yenilemek için  
-  
+>  Başvuruları değiştirme, paket bildirimini değiştirmek veya önceki listesinde belirtilen diğer değişiklikleri yapın, HTML, CSS ve JavaScript kaynak dosyalarını güncelleştirmek için hata ayıklayıcıyı yeniden başlatın ve durdurun gerekir.
+
+### <a name="to-refresh-an-app"></a>Bir uygulamayı yenilemek için
+
 1.  Visual Studio'da açın, UWP projesi ile seçin **yerel makine** hata ayıklama hedefi olarak.
-  
-     ![Select hata ayıklama hedef liste](../debugger/media/js_select_target.png "JS_Select_Target")  
-  
-3.  Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
-  
-4.  Visual Studio'ya geçiş yapın. 
-  
+
+     ![Select hata ayıklama hedef liste](../debugger/media/js_select_target.png "JS_Select_Target")
+
+3.  Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.
+
+4.  Visual Studio'ya geçiş yapın.
+
 5.  UWP uygulamanızın giriş sayfasının HTML bazıları düzenleyin.
-  
-7.  Tıklayın **Yenile Windows uygulama** şuna benzeyen düğmesi: ![Windows uygulama düğmesine Yenile](../debugger/media/js_refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)  
-  
+
+7.  Tıklayın **Yenile Windows uygulama** şuna benzeyen düğmesi: ![Windows uygulama düğmesine Yenile](../debugger/media/js_refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)
+
 8.  Uygulamasına geçin. Uygulama yüklenir ve güncelleştirilmiş HTML uygulaması oluşturmak için kullanılır.
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)

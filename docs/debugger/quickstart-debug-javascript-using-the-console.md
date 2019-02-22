@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227582"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720516"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio'da Konsolu kullanarak JavaScript hata ayıklama
 
@@ -249,11 +249,11 @@ Aşağıdaki çizimde, hedef liste JavaScript konsol penceresinde gösterir.
 Yürütme bağlamı kullanarak da geçebilirsiniz `cd` komutu, ancak bir yürütme bağlamı adını bilmeniz gerekir ve kullandığınız başvuru kapsamda olmalıdır. **Hedef** listesi diğer yürütme bağlamları daha iyi erişim sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Visual Studio’da uygulamaların hatalarını ayıklama](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)  
-[Uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Klavye kısayolları](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[HTML, CSS ve JavaScript'te hata ayıklama örnek kodu](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)  
-[WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)  
-[Ürün desteği ve erişilebilirlik](https://visualstudio.microsoft.com/vs/support/)
+- [Visual Studio’da uygulamaların hatalarını ayıklama](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)
+- [Uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Klavye kısayolları](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [HTML, CSS ve JavaScript'te hata ayıklama örnek kodu](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)
+- [WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)
+- [Ürün desteği ve erişilebilirlik](https://visualstudio.microsoft.com/vs/support/)

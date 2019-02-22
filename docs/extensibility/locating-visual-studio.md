@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b57150a7a2ad94b4e0706f3dd21d2fe410ed813d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944390"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683577"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio bulun
 
@@ -33,7 +33,7 @@ Bir yolu veya geçerli işlem verilen tek bir örneği bulun veya tüm örnekler
 
 Visual Studio ve diğer araçları, derleme ortamları, PowerShell betikleri, yükleyiciler ve daha fazla senaryo bulmak için doğrudan kullanabilir veya kendi komut dosyalarınızı birlikte yeniden açık kaynak araçlar vardır.
 
-| Proje | Açıklama |
+| Project | Açıklama |
 | ------- | ----------- |
 | [vswhere](https://github.com/Microsoft/vswhere) | Yayın veya yayın öncesi sürüm, hangi ürünü yüklü olduğundan ve hangi iş yüklerini yüklü gibi ölçütlerine uyan örneklerini bulmak için yerel yürütülebilir tek dosya. Ayrıca, daha az bilgi, Visual Studio 2017 için ve döndürülmesine rağmen Visual Studio 2010 ve sonraki sürümleri, bulma destekler. Bkz: [wiki](https://github.com/Microsoft/vswhere/wiki) örnekler. |
 | [VSSetup cmdlet'leri](https://github.com/Microsoft/vssetup.powershell) | Desteklenen PowerShell cmdlet'leri 2.0 ve üzeri sürümlerde, aynı ölçütüne göre örneklerini bulmak için kullanabileceğiniz Zengin bilgiler nesneler olarak iade _vswhere_ ve örnekleri hakkında daha fazla özellikleri bulur. Bkz: [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) örnekler. |
@@ -41,4 +41,4 @@ Visual Studio ve diğer araçları, derleme ortamları, PowerShell betikleri, y�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017 Kurulum değişiklikler](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Visual Studio 2017 Kurulum değişiklikler](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)

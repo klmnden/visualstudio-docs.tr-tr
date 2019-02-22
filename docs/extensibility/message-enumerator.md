@@ -11,62 +11,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fb85f727f4059e76bf5b73c71c0514a4c8cfc24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37932ce6e64361692d659355e9ab6e88ee5462ed
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969791"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713184"
 ---
 # <a name="message-enumerator"></a>İleti numaralandırıcısı
-Aşağıdaki bayrakları için kullanılan `TEXTOUTPROC` işlevini çağırdığında, IDE sağlayan bir geri çağırma işlevidir [SccOpenProject](../extensibility/sccopenproject-function.md) (bkz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) geri çağırma hakkında ayrıntılı bilgi için işlevi).  
-  
- İşlemi iptal etmek için IDE istenirse, iptal iletilerinden birini alabilirsiniz. Bu durumda, kaynak denetim eklentisini kullanan `SCC_MSG_STARTCANCEL` görüntülemek için IDE sormak **iptal** düğmesi. Bundan sonra herhangi bir dizi normal ileti gönderilebilir. Bu döndürür varsa `SCC_MSG_RTN_CANCEL`, eklenti işlemi çıkar ve döndürür. Ayrıca eklentinin yoklar `SCC_MSG_DOCANCEL` düzenli aralıklarla kullanıcı işlemi iptal etti belirlemek için. Tüm işlemler yapılır ya da devre dışı kullanıcı iptal etti, eklenti gönderirken `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, ve SCC_MSG_ERROR türleri, iletileri kaydırma listesinde gösterilen iletileri için kullanılır. `SCC_MSG_STATUS` metin bir durum çubuğu veya geçici görüntüleme alanı içinde gösterilmesi gerekir olduğunu gösteren özel bir türdür. Kalıcı olarak listede kalmaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-enum {   
-   SCC_MSG_RTN_CANCEL = -1,   
-   SCC_MSG_RTN_OK = 0,   
-   SCC_MSG_INFO = 1   
-   SCC_MSG_WARNING,   
-   SCC_MSG_ERROR,   
-   SCC_MSG_STATUS,   
-   SCC_MSG_DOCANCEL,   
-   SCC_MSG_STARTCANCEL,   
-   SCC_MSG_STOPCANCEL   
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- SCC_MSG_RTN_CANCEL  
- Belirtmek için geri dönüş iptal edin.  
-  
- SCC_MSG_RTN_OK  
- Devam etmek için geri çağrısından döndürür.  
-  
- SCC_MSG_INFO  
- Bilgilendirme iletisidir.  
-  
- SCC_MSG_WARNING  
- İleti bir uyarıdır.  
-  
- SCC_MSG_ERROR  
- İleti bir hatadır.  
-  
- SCC_MSG_STATUS  
- İleti için durum çubuğunu yöneliktir.  
-  
- SCC_MSG_DOCANCEL  
- Herhangi bir metin; IDE döndürür `SCC_MSG_RTN_OK` veya `SCC_MSG_RTN_CANCEL`.  
-  
- SCC_MSG_STARTCANCEL  
- Bir iptal döngü başlatır.  
-  
- SCC_MSG_STOPCANCEL  
- İptal döngü durdurur.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Kaynak denetimi eklentileri](../extensibility/source-control-plug-ins.md)   
- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)
+Aşağıdaki bayrakları için kullanılan `TEXTOUTPROC` işlevini çağırdığında, IDE sağlayan bir geri çağırma işlevidir [SccOpenProject](../extensibility/sccopenproject-function.md) (bkz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) geri çağırma hakkında ayrıntılı bilgi için işlevi).
+
+ İşlemi iptal etmek için IDE istenirse, iptal iletilerinden birini alabilirsiniz. Bu durumda, kaynak denetim eklentisini kullanan `SCC_MSG_STARTCANCEL` görüntülemek için IDE sormak **iptal** düğmesi. Bundan sonra herhangi bir dizi normal ileti gönderilebilir. Bu döndürür varsa `SCC_MSG_RTN_CANCEL`, eklenti işlemi çıkar ve döndürür. Ayrıca eklentinin yoklar `SCC_MSG_DOCANCEL` düzenli aralıklarla kullanıcı işlemi iptal etti belirlemek için. Tüm işlemler yapılır ya da devre dışı kullanıcı iptal etti, eklenti gönderirken `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, ve SCC_MSG_ERROR türleri, iletileri kaydırma listesinde gösterilen iletileri için kullanılır. `SCC_MSG_STATUS` metin bir durum çubuğu veya geçici görüntüleme alanı içinde gösterilmesi gerekir olduğunu gösteren özel bir türdür. Kalıcı olarak listede kalmaz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+enum { 
+   SCC_MSG_RTN_CANCEL = -1, 
+   SCC_MSG_RTN_OK = 0, 
+   SCC_MSG_INFO = 1 
+   SCC_MSG_WARNING, 
+   SCC_MSG_ERROR, 
+   SCC_MSG_STATUS, 
+   SCC_MSG_DOCANCEL, 
+   SCC_MSG_STARTCANCEL, 
+   SCC_MSG_STOPCANCEL 
+};
+```
+
+## <a name="members"></a>Üyeler
+ SCC_MSG_RTN_CANCEL iptal belirtmek için gelen geri dönün.
+
+ SCC_MSG_RTN_OK iade den devam etmek için geri çağırma.
+
+ SCC_MSG_INFO ileti bilgilendirme amaçlıdır.
+
+ SCC_MSG_WARNING ileti bir uyarıdır.
+
+ SCC_MSG_ERROR, bir hata iletisidir.
+
+ SCC_MSG_STATUS ileti durum çubuğu için tasarlanmıştır.
+
+ Metin SCC_MSG_DOCANCEL yok; IDE döndürür `SCC_MSG_RTN_OK` veya `SCC_MSG_RTN_CANCEL`.
+
+ SCC_MSG_STARTCANCEL başlar iptal bir döngü.
+
+ SCC_MSG_STOPCANCEL iptal döngü durdurur.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Kaynak denetimi eklentileri](../extensibility/source-control-plug-ins.md)
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

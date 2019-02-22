@@ -1,7 +1,7 @@
 ---
 title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugModule2::ReloadSymbols
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 182561200e6239520b1345f43cc0a150baa30622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961315"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721309"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-ARTIK KULLANILMIYOR. KULLANMAYIN. Bu modüle ilişkin simgeleri yeniden yükler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT ReloadSymbols(   
-   LPCOLESTR pszUrlToSymbols,  
-   BSTR*     pbstrDebugMessage  
-);  
-```  
-  
-```csharp  
-int ReloadSymbols(   
-   string     pszUrlToSymbols,  
-   out string pbstrDebugMessage  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pszUrlToSymbols`  
- [in] Sembol deposu yolu.  
-  
- `pbstrDebugMessage`  
- [out] Örneğin modül adı modüller penceresini sağındaki görüntülenen bir durum veya hata iletisi, bir bilgilendirme iletisi döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Hata ayıklama altyapısı her zaman döndürmelidir `E_FAIL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem artık desteklenmiyor. Uygulama [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) yöntemi yerine.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
- [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)
+ARTIK KULLANILMIYOR. KULLANMAYIN. Bu modüle ilişkin simgeleri yeniden yükler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT ReloadSymbols( 
+   LPCOLESTR pszUrlToSymbols,
+   BSTR*     pbstrDebugMessage
+);
+```
+
+```csharp
+int ReloadSymbols( 
+   string     pszUrlToSymbols,
+   out string pbstrDebugMessage
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pszUrlToSymbols`
+
+ [in] Sembol deposu yolu.
+
+ `pbstrDebugMessage`
+
+ [out] Örneğin modül adı modüller penceresini sağındaki görüntülenen bir durum veya hata iletisi, bir bilgilendirme iletisi döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Hata ayıklama altyapısı her zaman döndürmelidir `E_FAIL`.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem artık desteklenmiyor. Uygulama [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) yöntemi yerine.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
+- [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)

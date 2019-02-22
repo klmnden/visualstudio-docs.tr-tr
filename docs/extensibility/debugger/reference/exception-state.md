@@ -1,7 +1,7 @@
 ---
 title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EXCEPTION_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d2063e892511f3de03ab2ee5db9fe41da48e16
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: a9c0c5ed3f4432deeb26e97ff21f6d89de9ee109
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412753"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720321"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Özel durum durumu belirtir.
@@ -74,50 +74,35 @@ public enum enum_EXCEPTION_STATE {
 ```
 
 ## <a name="members"></a>Üyeler
-EXCEPTION_NONE  
-Özel durumda Dur değil.
+EXCEPTION_NONE yapmak özel durumda değil durdurun.
 
-EXCEPTION_STOP_FIRST_CHANCE  
-Özel durum sırasında ilk Açmadığınızda durdurun. Bir özel durum olayı açıklayan bu bayrağı özel durum olayı bir ilk fırsat özel durum olayı olduğunu gösterir.
+Özel durumun ilk Açmadığınızda EXCEPTION_STOP_FIRST_CHANCE durdur. Bir özel durum olayı açıklayan bu bayrağı özel durum olayı bir ilk fırsat özel durum olayı olduğunu gösterir.
 
-EXCEPTION_STOP_SECOND_CHANCE  
-Özel durum ikinci tetikleyicisinin tetikleme adresindeki durdurun. Bir özel durum olayı açıklayan özel durum olayı bir ikinci şans özel durum olayı olduğunu gösterir.
+Özel durum ikinci Açmadığınızda EXCEPTION_STOP_SECOND_CHANCE durdur. Bir özel durum olayı açıklayan özel durum olayı bir ikinci şans özel durum olayı olduğunu gösterir.
 
-EXCEPTION_STOP_USER_FIRST_CHANCE  
-Bir kullanıcı modu özel ilk tetikleyicisinin tetikleme adresindeki durdurun. Bir özel durum olayı açıklayan özel durum olayı, kullanıcı ilk fırsat özel durum olayı olduğunu gösterir.
+Bir kullanıcı modu özel durumun ilk Açmadığınızda EXCEPTION_STOP_USER_FIRST_CHANCE durdur. Bir özel durum olayı açıklayan özel durum olayı, kullanıcı ilk fırsat özel durum olayı olduğunu gösterir.
 
-EXCEPTION_STOP_USER_UNCAUGHT  
-Bir kullanıcı modu özel durum yakalanmadı durdur. Bir özel durum olayı açıklayan özel durum olayı bir yakalanmayan kullanıcı modu özel durum olayı olduğunu gösterir.
+Bir kullanıcı modu özel olmayan yakalandığında EXCEPTION_STOP_USER_UNCAUGHT durdurun. Bir özel durum olayı açıklayan özel durum olayı bir yakalanmayan kullanıcı modu özel durum olayı olduğunu gösterir.
 
-EXCEPTION_STOP_ALL  
-Hiçbir özel durdurun. Bir özel durum olayı açıklayan kurulurken kullanılmaz.
+Herhangi bir özel durum EXCEPTION_STOP_ALL durdur. Bir özel durum olayı açıklayan kurulurken kullanılmaz.
 
-EXCEPTION_CANNOT_BE_CONTINUED  
-Bir özel durum olayı açıklayan özel durum gelen ettirilemez gösterir.
+EXCEPTION_CANNOT_BE_CONTINUED açıklayan bir özel durum olayı gösterir özel durum gelen devam edemiyor.
 
-EXCEPTION_CODE_SUPPORTED  
-Özel durum kodu, destekleyici sahip olduğunu gösterir. Bir özel durum görüntülenmesinde kullanılan
+EXCEPTION_CODE_SUPPORTED, özel durum kodu, destekleyici sahip olduğunu gösterir. Bir özel durum görüntülenmesinde kullanılan
 
-EXCEPTION_CODE_DISPLAY_IN_HEX  
-Özel durum kodunu onaltılık olarak görüntüleneceğini belirtir. Bir özel durum görüntülenmesinde kullanılır.
+EXCEPTION_CODE_DISPLAY_IN_HEX, özel durum kodunu onaltılık olarak görüntüleneceğini belirtir. Bir özel durum görüntülenmesinde kullanılır.
 
-EXCEPTION_JUST_MY_CODE_SUPPORTED  
-Özel durum kodu JustMyCode desteklediğini belirtir. Bir özel durum görüntülenmesinde kullanılır.
+EXCEPTION_JUST_MY_CODE_SUPPORTED özel durum kodu JustMyCode desteklediğini belirtir. Bir özel durum görüntülenmesinde kullanılır.
 
-EXCEPTION_MANAGED_DEBUG_ASSISTANT  
-Yönetilen kod hata ayıklayıcı özel durumlarını işlemelidir gösterir. Aksi durumda kümesi, varsayılan hata ayıklayıcı özel durumları işler. Bu geçirilir [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) yöntemi ve kullanılan değil [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) yapısı.
+Yönetilen kod hata ayıklayıcı özel durumlarını işlemelidir EXCEPTION_MANAGED_DEBUG_ASSISTANT gösterir. Aksi durumda kümesi, varsayılan hata ayıklayıcı özel durumları işler. Bu geçirilir [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) yöntemi ve kullanılan değil [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) yapısı.
 
-EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
-ESKİ, KULLANMAYIN.
+EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT ESKİ, KULLANMAYIN.
 
-EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
-ESKİ, KULLANMAYIN.
+EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
 
-EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
-ESKİ, KULLANMAYIN.
+EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT ESKİ, KULLANMAYIN.
 
-EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
-ESKİ, KULLANMAYIN.
+EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
 
 ## <a name="remarks"></a>Açıklamalar
 Olarak kullanılan `dwState` üyesi [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) yapısı, özel durum ve ne hakkında yapılabilir durumunu göstermek için.
@@ -134,6 +119,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)  
-[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
+- [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

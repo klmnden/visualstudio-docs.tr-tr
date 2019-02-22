@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73ec1bacc0efd02020712f0aceadf69772de47a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf423ddc91926fb04adac849783b7c26b4c4f720
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644334"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708114"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 Bayt belirtilen göreli sanal adres (RVA) yürütülebilir dosyasından başlayarak belirtilen sayıda okur.
@@ -47,7 +47,8 @@ HRESULT ReadExecutableAtRVA ( 
 [out] Okunan bayt sayısını döndürür.
 
  `data[]`
-- [out içinde] Dosyadan okunan bayt ile doldurulmuş bir dizi.
+
+[out içinde] Dosyadan okunan bayt ile doldurulmuş bir dizi.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, bir göreli sanal adres kullanarak bir çalıştırılabilir dosyadan veri baytı yüklenecek DIA destek kod tarafından çağrılır. Support, bu yöntem çağrılır [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi.

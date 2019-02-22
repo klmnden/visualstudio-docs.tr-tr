@@ -1,5 +1,5 @@
 ---
-title: Özel başlangıç sayfası yüklemek veya başlangıç öğesini değiştirin
+title: Değişiklik başlangıç deneyimi
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948296"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685137"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio için başlangıç sayfasını özelleştirme
+# <a name="customize-startup"></a>Başlangıç'ı özelleştirme
 
-Visual Studio için başlangıç deneyimi gösterildiği gibi birkaç farklı yolla özelleştirebileceğiniz **açık proje** iletişim kutusu veya en son yüklenen çözümü açma. Araç penceresinde çalışan ve Visual Studio'ya özel dahili komutları çalıştıran bir Windows Presentation Foundation (WPF) XAML sayfası olarak, özel bir başlangıç sayfası da gösterebilirsiniz.
+Visual Studio için başlangıç deneyimini çözümünüzün en son ya da boş bir geliştirme ortamı yalnızca bir açma gibi birçok farklı şekilde özelleştirebilirsiniz.
+
+::: moniker range="vs-2017"
+
+Araç penceresinde çalışan ve Visual Studio'ya özel dahili komutları çalıştıran bir Windows Presentation Foundation (WPF) XAML sayfası olarak, özel bir başlangıç sayfası da gösterebilirsiniz.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>Başlangıç öğesini değiştirmek için
 
@@ -30,7 +36,19 @@ Visual Studio için başlangıç deneyimi gösterildiği gibi birkaç farklı yo
 
 1. Genişletin **ortam**ve ardından **başlangıç**.
 
+::: moniker range="vs-2017"
+
 1. İçinde **başlangıçta** listesinde, Visual Studio'yu başlattıktan sonra görüntülenecek öğeyi seçin.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. İçinde **, başlangıçta açılması** listesinde, Visual Studio'yu başlattıktan sonra olmasını istediğinizi seçin. Aralarından seçim yapabileceğiniz **başlangıç penceresi** (olanak sağlayan yeni veya mevcut bir projeyi açmayı), **en son çözüm**, veya **boş ortam**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>Özel başlangıç sayfası göstermek için
 
@@ -46,9 +64,11 @@ Yapabilecekleriniz [kendi özel başlangıç sayfası oluşturma](../extensibili
 
 1. İçinde **başlangıç sayfasını Özelleştir** listesinde, istediğiniz sayfayı seçin.
 
-> [!NOTE]
+> [!TIP]
 > Özel başlangıç sayfasındaki bir hata Visual Studio'nun çökmesine neden olursa, Visual Studio'yu güvenli modda başlatabilir ve varsayılan başlangıç sayfasını kullanacak şekilde ayarlayabilirsiniz. Bkz: [safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

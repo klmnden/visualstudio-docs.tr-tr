@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
 - GetMethodFromAddress
@@ -11,66 +11,73 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d55b029ac0c99392627d44e9fc33394e5eb744e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998904"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683473"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Belirtilen hata ayıklama adresindeki yöntem hakkında bilgi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetMethodFromAddress(  
-   IDebugAddress* pAddress,  
-   GUID*          pGuid,  
-   DWORD*         pAppID,  
-   _mdToken*      pTokenClass,  
-   _mdToken*      pTokenMethod,  
-   DWORD*         pdwOffset,  
-   DWORD*         pdwVersion  
-);  
-```  
-  
-```csharp  
-int GetMethodFromAddress(  
-   IDebugAddress pAddress,  
-   out Guid      pGuid,  
-   out uint      pAppID,  
-   out uint      pTokenClass,  
-   out uint      pTokenMethod,  
-   out uint      pdwOffset,  
-   out uint      pdwVersion  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pAddress`  
- [in] Tarafından temsil edilen adresi hata ayıklama [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.  
-  
- `pGuid`  
- [out] Modülün benzersiz tanımlayıcısı.  
-  
- `pAppID`  
- [out] Uygulama etki alanı tanımlayıcısı.  
-  
- `pTokenClass`  
- [out] Belirteç, içeren sınıfı temsil eder.  
-  
- `pTokenMethod`  
- [out] Modülü temsil eden belirteç.  
-  
- `pdwOffset`  
- [out] Başından itibaren bayt uzaklığını `pAddress` parametresi.  
-  
- `pdwVersion`  
- [out] Yöntem sürüm numarası.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
+Belirtilen hata ayıklama adresindeki yöntem hakkında bilgi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetMethodFromAddress(
+   IDebugAddress* pAddress,
+   GUID*          pGuid,
+   DWORD*         pAppID,
+   _mdToken*      pTokenClass,
+   _mdToken*      pTokenMethod,
+   DWORD*         pdwOffset,
+   DWORD*         pdwVersion
+);
+```
+
+```csharp
+int GetMethodFromAddress(
+   IDebugAddress pAddress,
+   out Guid      pGuid,
+   out uint      pAppID,
+   out uint      pTokenClass,
+   out uint      pTokenMethod,
+   out uint      pdwOffset,
+   out uint      pdwVersion
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pAddress`
+
+ [in] Tarafından temsil edilen adresi hata ayıklama [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
+
+ `pGuid`
+
+ [out] Modülün benzersiz tanımlayıcısı.
+
+ `pAppID`
+
+ [out] Uygulama etki alanı tanımlayıcısı.
+
+ `pTokenClass`
+
+ [out] Belirteç, içeren sınıfı temsil eder.
+
+ `pTokenMethod`
+
+ [out] Modülü temsil eden belirteç.
+
+ `pdwOffset`
+
+ [out] Başından itibaren bayt uzaklığını `pAddress` parametresi.
+
+ `pdwVersion`
+
+ [out] Yöntem sürüm numarası.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

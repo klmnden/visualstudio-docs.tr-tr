@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227819"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721062"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>HTML ve CSS Visual Studio'da UWP uygulamalarında hata ayıklama
 
@@ -254,10 +254,10 @@ Bir uygulamanın hataları ayıklanırken üç yolla DOM öğeleri seçebilirsin
 > Üzerine gelerek öğeleri vurgulama, Windows Phone öykünücüsü'nde kısmen desteklenir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Visual Studio’da uygulamaların hatalarını ayıklama](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)  
-[Klavye kısayolları](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)  
-[HTML, CSS ve JavaScript'te hata ayıklama örnek kodu](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Ürün desteği ve erişilebilirlik](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Visual Studio’da uygulamaların hatalarını ayıklama](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [WebView denetiminde hata ayıklama](../debugger/debug-a-webview-control.md)
+- [Klavye kısayolları](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)
+- [HTML, CSS ve JavaScript'te hata ayıklama örnek kodu](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Ürün desteği ve erişilebilirlik](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
