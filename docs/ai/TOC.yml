@@ -1,45 +1,52 @@
+items:
 - name: AI için Visual Studio Araçları
   href: index.yml
   items:
-    - name: Genel Bakış
+  - name: Genel Bakış
+    items:
+    - name: AI için Visual Studio Araçları Hakkında
+      href: about-ai-tools.md
+  - name: Yükleme
+    href: installation.md
+  - name: Hızlı Başlangıçlar
+    items:
+    - name: Tensorflow + Python
+      href: tensorflow-local.md
+  - name: Öğreticiler
+    items:
+    - name: TensorFlow + Azure Ayrıntılı Öğrenme Sanal Makinesi
+      href: tensorflow-vm.md
+  - name: Nasıl yapılır kılavuzları
+    items:
+    - name: Proje oluşturma
       items:
-        - name: AI için Visual Studio Araçları Hakkında
-          href: about-ai-tools.md
-    - name: Yükleme
-      href: installation.md
-    - name: Hızlı Başlangıçlar
-      items:
-        - name: Tensorflow + Python
-          href: tensorflow-local.md
-    - name: Öğreticiler
-      items:
-        - name: TensorFlow + Azure Ayrıntılı Öğrenme Sanal Makinesi
-          href: tensorflow-vm.md
-    - name: Nasıl yapılır kılavuzları
-      items:
-        - name: Proje oluşturma
-          items:
-            - name: Örnek galeriden proje oluşturma
-              href: create-project-gallery.md
-            - name: Mevcut koddan proje oluşturma
-              href: create-project-existing.md
-            - name: Şablondan proje oluşturma
-              href: create-project.md
-            - name: GitHub deposundan proje oluşturma
-              href: create-project-repo.md
-        - name: Modelinizi eğitin
-          href: train-model.md
-        - name: İş ayrıntılarını görüntüleme
-          href: job-details.md
-        - name: GPU kullanımını izleme
-          href: monitor-gpu.md
-        - name: TensorBoard’u izleme
-          href: monitor-tensorboard.md
-        - name: Depolama alanını yönetme
-          href: manage-storage.md
-    - name: Örnekler
-      items:
-        - name: GitHub
-          href: 'https://github.com/Microsoft/samples-for-ai'
-        - name: Machine Learning Galerisi
-          href: 'https://gallery.cortanaintelligence.com/projects'
+      - name: Örnek galeriden proje oluşturma
+        href: create-project-gallery.md
+      - name: Mevcut koddan proje oluşturma
+        href: create-project-existing.md
+      - name: Şablondan proje oluşturma
+        href: create-project.md
+      - name: GitHub deposundan proje oluşturma
+        href: create-project-repo.md
+    - name: Modelinizi eğitin
+      href: train-model.md
+    - name: İş ayrıntılarını görüntüleme
+      href: job-details.md
+    - name: GPU kullanımını izleme
+      href: monitor-gpu.md
+    - name: TensorBoard’u izleme
+      href: monitor-tensorboard.md
+    - name: Depolama alanını yönetme
+      href: manage-storage.md
+  - name: Örnekler
+    items:
+    - name: GitHub
+      href: https://github.com/Microsoft/samples-for-ai
+    - name: Machine Learning Galerisi
+      href: https://gallery.cortanaintelligence.com/projects
+ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624392"
