@@ -8,46 +8,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f78e7a6e71eccba185a9f1c363dc39b7a74a365
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961341"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637483"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak .NET Framework bellek verileri toplama
 
-Bu bölümde, yordamları ve bellek ayırma ve nesne yaşam verisi .NET istemci (tek başına) uygulaması için komut satırından örnekleme yöntemini kullanarak toplamak için seçenekleri açıklar.  
-  
-## <a name="common-tasks"></a>Ortak görevler
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Bir uygulama ve .NET bellek profili Başlat**|-   [Nasıl Yapılır: Bellek verileri toplamak için Profil Oluşturucu ile bir .NET Framework uygulamasını başlatma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
-|**Profil oluşturucuyu bir .NET uygulaması ekleme**|-   [Nasıl Yapılır: Bellek verileri toplamak için bir .NET Framework uygulamasına profil oluşturucu ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
-|**.NET bellek verileri toplamak için bir uygulamasını izleme**|-   [Nasıl Yapılır: Bir tek başına bir .NET Framework bileşenini ve bellek verilerini toplamak Profil Oluşturucu ile izleme](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
-  
-## <a name="related-tasks"></a>İlişkili görevler
-  
-### <a name="profile-stand-alone-applications"></a>Bağımsız uygulamalar profili  
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Örnekleme yöntemiyle profili**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**Kaynak çakışması ve iş parçacığı etkinliği profil**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+Bu bölümde, yordamları ve bellek ayırma ve nesne yaşam verisi .NET istemci (tek başına) uygulaması için komut satırından örnekleme yöntemini kullanarak toplamak için seçenekleri açıklar.
 
-  
-### <a name="profile-net-memory-data"></a>Profil .NET bellek verileri  
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Profil ASP.NET uygulamaları**|-   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profil hizmetler**|-   [.NET bellek verileri toplama](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
-  
-### <a name="analyze-net-memory-data-views-and-reports"></a>.NET bellek verisi görünümleri ve raporları analiz edin  
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)  
-  
-## <a name="reference"></a>Başvuru  
- [Komut satırı profil oluşturma araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)
+## <a name="common-tasks"></a>Ortak görevler
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Bir uygulama ve .NET bellek profili Başlat**|-   [Nasıl Yapılır: Bellek verileri toplamak için Profil Oluşturucu ile bir .NET Framework uygulamasını başlatma](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
+|**Profil oluşturucuyu bir .NET uygulaması ekleme**|-   [Nasıl Yapılır: Bellek verileri toplamak için bir .NET Framework uygulamasına profil oluşturucu ekleme](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
+|**.NET bellek verileri toplamak için bir uygulamasını izleme**|-   [Nasıl Yapılır: Bir tek başına bir .NET Framework bileşenini ve bellek verilerini toplamak Profil Oluşturucu ile izleme](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|
+
+## <a name="related-tasks"></a>İlişkili görevler
+
+### <a name="profile-stand-alone-applications"></a>Bağımsız uygulamalar profili
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Örnekleme yöntemiyle profili**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**Kaynak çakışması ve iş parçacığı etkinliği profil**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+
+
+### <a name="profile-net-memory-data"></a>Profil .NET bellek verileri
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Profil ASP.NET uygulamaları**|-   [Bellek verileri toplama](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
+|**Profil hizmetler**|-   [.NET bellek verileri toplama](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+
+### <a name="analyze-net-memory-data-views-and-reports"></a>.NET bellek verisi görünümleri ve raporları analiz edin
+- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)
+
+## <a name="reference"></a>Başvuru
+- [Komut satırı profil oluşturma araçları başvurusu](../profiling/command-line-profiling-tools-reference.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870041"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631971"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Birlikte yazmayı ve eklentileri anlama
 
@@ -26,4 +26,4 @@ Birlikte yazmayı Excel için Windows masaüstünün diğer kullanıcılarla ayn
 Not: Windows Masaüstü Excel için birlikte yazmayı, 2017'de kullanıma sunulmuştur ve Office365 şu anda abonelerine yöneliktir. Office 2016 veya önceki kalıcı bir lisans satın almış kullanıcılar şu anda coauthoring özelliğe sahip. (Excel Online Excel Android, iOS için Excel ve Windows Store Excel Mobile'da da destek birlikte yazmayı).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Excel çözümleri](./excel-solutions.md)
+- [Excel çözümleri](./excel-solutions.md)

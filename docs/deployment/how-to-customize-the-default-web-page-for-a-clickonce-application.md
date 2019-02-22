@@ -17,38 +17,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 324066d1f6bd6ad1719b2dc960de2b2357ec8cbd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9831c1176b5e71650742226e77bfca58dfa35a01
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976387"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608454"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme
-ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik olarak oluşturulur ve birlikte uygulamayı yayınladınız. Varsayılan sayfa adı uygulama ve uygulama yükleme, önkoşulları yükleyin veya MSDN Yardımı'na erişmek için bağlantılar içerir.  
-  
+ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik olarak oluşturulur ve birlikte uygulamayı yayınladınız. Varsayılan sayfa adı uygulama ve uygulama yükleme, önkoşulları yükleyin veya MSDN Yardımı'na erişmek için bağlantılar içerir.
+
 > [!NOTE]
->  Sayfada gördüğünüz gerçek bağlantıları burada sayfası görüntülendiğinde bilgisayar ve hangi bağlıdır Önkoşullar dahil.  
-  
- Web sayfası için varsayılan ad *Publish.htm*; adı değiştirebilirsiniz **Proje Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
-  
- *Publish.htm* Web sayfası, yalnızca daha yeni bir sürümü algılanırsa yayımlanır.  
-  
+>  Sayfada gördüğünüz gerçek bağlantıları burada sayfası görüntülendiğinde bilgisayar ve hangi bağlıdır Önkoşullar dahil.
+
+ Web sayfası için varsayılan ad *Publish.htm*; adı değiştirebilirsiniz **Proje Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+
+ *Publish.htm* Web sayfası, yalnızca daha yeni bir sürümü algılanırsa yayımlanır.
+
 > [!NOTE]
->  Yaptığınız değişiklikler, **Yayımla** ayarlarını etkilemez *Publish.htm* sayfası, bir özel durum: başlangıçta yayımladıktan sonra önkoşulları ekleyip, önkoşullarının listesi olur. artık doğru olmayabilir. Değişiklikleri yansıtacak şekilde önkoşul bağlantı metnini düzenlemek gerekir.  
-  
-### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme  
-  
-1.  Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
-  
-2.  Web sunucusunda açık *Publish.htm* dosyasında Visual Web Designer'ı veya başka bir HTML düzenleyicisi.  
-  
-3.  İstediğiniz gibi sayfayı özelleştirmek ve kaydedin.  
-  
-4.  İsteğe bağlı. Visual Studio özelleştirilmiş Yayımla Web sayfanızın üzerine yazmasını engellemek için işareti kaldırın **sonra dağıtım Web sayfasını otomatik olarak üretmek her yayımlama** içinde **yayımlama seçeneği** iletişim kutusu.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
- [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
- [Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+>  Yaptığınız değişiklikler, **Yayımla** ayarlarını etkilemez *Publish.htm* sayfası, bir özel durum: başlangıçta yayımladıktan sonra önkoşulları ekleyip, önkoşullarının listesi olur. artık doğru olmayabilir. Değişiklikleri yansıtacak şekilde önkoşul bağlantı metnini düzenlemek gerekir.
+
+### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme
+
+1.  Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+
+2.  Web sunucusunda açık *Publish.htm* dosyasında Visual Web Designer'ı veya başka bir HTML düzenleyicisi.
+
+3.  İstediğiniz gibi sayfayı özelleştirmek ve kaydedin.
+
+4.  İsteğe bağlı. Visual Studio özelleştirilmiş Yayımla Web sayfanızın üzerine yazmasını engellemek için işareti kaldırın **sonra dağıtım Web sayfasını otomatik olarak üretmek her yayımlama** içinde **yayımlama seçeneği** iletişim kutusu.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)
+- [Nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

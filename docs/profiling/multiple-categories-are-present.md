@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56588ef029e71bcd8e860dff5bf86bc2e87000a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956824"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597991"
 ---
 # <a name="multiple-categories-are-present"></a>Birden çok kategori mevcut
-Etkinlik belirtilen zaman aralığı için birden fazla tür içeren bir bölüm seçilmedi. İki renkten görüntülendiğini göreceksiniz bir dikey diğer yığın. Bu renklerin üst iki en sık rastlanan etkinliği yalnızca belirli bir zaman aralığında temsil eder. Bu iki etkinliği sıklığını diğerine göre üç veya yarısının dikey çubuk olarak gösterilir. Daha fazla ayrıntı için bu bölümde iş parçacığı görünümünün üzerinde yakınlaştırmayı deneyin.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Yürütme zamanı (iş parçacıkları görünümü)](../profiling/execution-time-threads-view.md)   
- [G/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md)   
- [Bellek yönetimi zamanı](../profiling/memory-management-time.md)   
- [Önalım zamanı](../profiling/preemption-time.md)   
- [Bekleme süresi](../profiling/sleep-time.md)   
- [Eşitleme saati](../profiling/synchronization-time.md)   
- [UI işleme zamanı](../profiling/ui-processing-time.md)
+Etkinlik belirtilen zaman aralığı için birden fazla tür içeren bir bölüm seçilmedi. İki renkten görüntülendiğini göreceksiniz bir dikey diğer yığın. Bu renklerin üst iki en sık rastlanan etkinliği yalnızca belirli bir zaman aralığında temsil eder. Bu iki etkinliği sıklığını diğerine göre üç veya yarısının dikey çubuk olarak gösterilir. Daha fazla ayrıntı için bu bölümde iş parçacığı görünümünün üzerinde yakınlaştırmayı deneyin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Yürütme zamanı (iş parçacıkları görünümü)](../profiling/execution-time-threads-view.md)
+- [G/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md)
+- [Bellek yönetimi zamanı](../profiling/memory-management-time.md)
+- [Önalım zamanı](../profiling/preemption-time.md)
+- [Bekleme süresi](../profiling/sleep-time.md)
+- [Eşitleme saati](../profiling/synchronization-time.md)
+- [UI işleme zamanı](../profiling/ui-processing-time.md)

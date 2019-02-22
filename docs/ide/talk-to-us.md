@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946086"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609442"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio ürün geri bildirimi
 
@@ -38,12 +38,12 @@ Visual Studio'nun yayın öncesi sürümlerde bir **bu ürünü değerlendirin**
 
 Visual Studio desteği hakkında bilgi için bkz: [destek yaşam döngüsü ve Bakım](/visualstudio/productinfo/vs-servicing-vs) sayfası.
 
-Diğer Microsoft ürünleri ve Hizmetleri için bkz. [Microsoft Destek](http://go.microsoft.com/fwlink/?LinkID=99019) için çevrimiçi Yardım.
+Diğer Microsoft ürünleri ve Hizmetleri için bkz. [Microsoft Destek](https://go.microsoft.com/fwlink/?LinkID=99019) için çevrimiçi Yardım.
 
 > [!NOTE]
-> Amerika Birleşik Devletleri ve Kanada dışında destek seçenekleri değişebilir. Bölgesel irtibatların listesi için bkz. [Microsoft Dünya çapında siteler](http://www.microsoft.com/worldwide/).
+> Amerika Birleşik Devletleri ve Kanada dışında destek seçenekleri değişebilir. Bölgesel irtibatların listesi için bkz. [Microsoft Dünya çapında siteler](https://www.microsoft.com/worldwide/).
 
-Doğrudan Microsoft'tan yönetilen destek gerektiren büyük kuruluşlarda, çeşitli Kurumsal Destek sunumları yoluyla sözleşmeler mevcuttur. Daha fazla bilgi için [Microsoft Kurumsal Destek çözümleri](http://go.microsoft.com/fwlink/?LinkId=258223).
+Doğrudan Microsoft'tan yönetilen destek gerektiren büyük kuruluşlarda, çeşitli Kurumsal Destek sunumları yoluyla sözleşmeler mevcuttur. Daha fazla bilgi için [Microsoft Kurumsal Destek çözümleri](https://go.microsoft.com/fwlink/?LinkId=258223).
 
 Ürün yeni bir bilgisayar ya da cihaz ile yüklenmiş gelirse, bu yazılım için teknik destek ve yardımı donanım üreticisi sağlar. Destek için doğrudan üreticiye başvurun.
 
@@ -51,7 +51,7 @@ Microsoft destek hizmetleri, o anda geçerli olan fiyatlara, şartlara ve koşul
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Geliştirici topluluğuna istiyorum
 
-Sorular ve cevaplar diğer geliştiricilerle paylaşmak istediğiniz kullanırsanız [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com) site [MSDN Forumları](https://social.msdn.microsoft.com/Forums/home), veya [StackOverflow](http://stackoverflow.com/). Ayrıca diğer geliştiricilerden gelen kod görüntüleyebilir ve kendi örneklerinizi paylaşabilirsiniz [geliştirici kodu örnekleri](https://code.msdn.microsoft.com/) site.
+Sorular ve cevaplar diğer geliştiricilerle paylaşmak istediğiniz kullanırsanız [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com) site [MSDN Forumları](https://social.msdn.microsoft.com/Forums/home), veya [Stack Overflow](https://stackoverflow.com/). Ayrıca diğer geliştiricilerden gelen kod görüntüleyebilir ve kendi örneklerinizi paylaşabilirsiniz [geliştirici kodu örnekleri](https://code.msdn.microsoft.com/) site.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio belgelerini geliştirmeye yardımcı olmak istiyorum
 

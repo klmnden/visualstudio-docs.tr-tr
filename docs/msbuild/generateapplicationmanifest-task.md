@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854115"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626628"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest görevi
 Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşene ilişkin benzersiz bir kimliği tanımlayarak ve tüm derlemeleri ve bileşeni oluşturan dosyaları tanımlayan bir bileşeni açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi, uygulamanın giriş noktasını gösteren ve uygulama güvenlik düzeyini belirterek yerel bildirimi genişletir.
@@ -88,7 +88,7 @@ Bu basit olası bildirim oluşturma senaryosunu göstermektedir burada [!INCLUDE
 
 > [!NOTE]
 > Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
-> 
+>
 > [!NOTE]
 > Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Kimliğini ve adını açıkça belirtilmesi dışında bu örnek önceki örne�
 
 > [!NOTE]
 > Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
-> 
+>
 > [!NOTE]
 > Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ Bu örnekte `GenerateApplicationManifest` ve `GenerateDeploymentManifest` oluşt
 
 > [!NOTE]
 > Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
-> 
+>
 > [!NOTE]
 > Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ Bu örnek üretir *Test.exe.manifest*, uygulamayı XCOPY dağıtılabilir ve al�
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile görevi](../msbuild/signfile-task.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [GenerateDeploymentManifest görevi](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile görevi](../msbuild/signfile-task.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

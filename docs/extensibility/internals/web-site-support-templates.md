@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961604"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618204"
 ---
 # <a name="web-site-support-templates"></a>Web Sitesi Destek Şablonları
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web sitesi proje ve öğe şablonları, yeni Web sitesi projeleri ve öğeleri sıfırdan oluşturma gereksinimini ortadan kaldırarak geliştirme sürecini hızlandırmak Web sitesini yeniden kullanılabilir ve özelleştirilebilir proje ve öğe saptamalar sağlar. Daha fazla bilgi için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] şablonları, [oluşturma proje ve öğe şablonları](../../ide/creating-project-and-item-templates.md).
@@ -185,4 +185,4 @@ ms.locfileid: "54961604"
      Varsa yeni bir ana sayfa ve onun bağımlı dosya içeriğini belirleyen şablon dosyası.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Web Sitesi Desteği](../../extensibility/internals/web-site-support.md)
+- [Web Sitesi Desteği](../../extensibility/internals/web-site-support.md)

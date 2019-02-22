@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e977916f55220ba0dad878e8cbcbdaaea973ea13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035737"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613030"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-Bu dosya başvuran satır numarasına sahip bir derleme, bir numaralandırıcı alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_compilands (   
-   IDiaEnumSymbols** ppRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppRetVal`  
- [out] Döndürür bir [Idiaenumsymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) bu dosyayı başvuran satır numaraları olan tüm derleme listesini içeren nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasourcefile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Bu dosya başvuran satır numarasına sahip bir derleme, bir numaralandırıcı alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_compilands ( 
+   IDiaEnumSymbols** ppRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppRetVal`
+
+[out] Döndürür bir [Idiaenumsymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) bu dosyayı başvuran satır numaraları olan tüm derleme listesini içeren nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

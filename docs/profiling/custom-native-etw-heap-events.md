@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089272"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615552"
 ---
 # <a name="custom-native-etw-heap-events"></a>Özel yerel ETW yığın olayları
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Bu kitaplık, C ve C++ içinde kolayca kullanılabilir.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Bu dekoratör derleyici, bu işlev çağrısı bir ayırıcı olduğunu bildirir.  Her işlev çağrısı çıkarır çağıran site adresini, çağrı talimatı boyutunu ve yeni bir yeni nesne typeid'ye `S_HEAPALLOCSITE` simgesi.  Bir çağrı yığını atandığında, bu bilgileri içeren bir ETW olay Windows yayar.  Bellek profili Oluşturucu aracı dönüş adresi eşleştirme için arama çağrı yığını size yol gösterir. bir `S_HEAPALLOCSITE` sembol ve simge TypeID bilgileri ayırma çalışma zamanı türünü görüntülemek için kullanılır.
    >
@@ -79,7 +79,7 @@ Bu kitaplık, C ve C++ içinde kolayca kullanılabilir.
    ```
 
    C kullanıyorsanız `OpenHeapTracker` işlevini.  Bu işlev, diğer izleme işlevlerini çağırırken kullanacağınız bir tanıtıcı döndürür:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Bu kitaplık, C ve C++ içinde kolayca kullanılabilir.
    ```
 
 ## <a name="track-memory-usage"></a>Bellek kullanımı İzle
-Bu çağrılar yerinde özel yığının kullanımınızı artık standardı kullanılarak izlenebilir **bellek kullanımı** Visual Studio'daki aracı.  Bu aracı kullanma hakkında daha fazla bilgi için lütfen bkz [bellek kullanımı](../profiling/memory-usage.md) belgeleri. Yığın profili oluşturmayı, görüntülenen özel yığının kullanımınızı görmeyeceğiniz anlık görüntüler sayesinde, aksi takdirde etkin olun. 
+Bu çağrılar yerinde özel yığının kullanımınızı artık standardı kullanılarak izlenebilir **bellek kullanımı** Visual Studio'daki aracı.  Bu aracı kullanma hakkında daha fazla bilgi için lütfen bkz [bellek kullanımı](../profiling/memory-usage.md) belgeleri. Yığın profili oluşturmayı, görüntülenen özel yığının kullanımınızı görmeyeceğiniz anlık görüntüler sayesinde, aksi takdirde etkin olun.
 
 ![Yığın profili oluşturmayı etkinleştir](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Standart Windows yığın ile bu aracı sızıntıları ve bozulma için ana aç
 > Visual Studio da içeren bir **bellek kullanımı** aracına **performans profili oluşturma** etkinleştirildiğinden araç takımı **hata ayıklama**  >   **Performans Profiler** menü seçeneğini veya **Alt**+**F2** klavye birleşimi.  Bu özellik, yığın izleme içermez ve burada açıklandığı gibi özel yığının görüntülenmez.  Yalnızca **tanılama araçları** ile etkin hale getirilebilir penceresinde **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**  menüsünden veya **Ctrl**+**Alt**+**F2** klavye birleşimi, bu işlevler içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)  
-[Bellek Kullanımı](../profiling/memory-usage.md)
+[Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)
+[bellek kullanımı](../profiling/memory-usage.md)

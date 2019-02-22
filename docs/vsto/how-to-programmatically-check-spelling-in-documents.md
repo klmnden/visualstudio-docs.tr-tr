@@ -13,25 +13,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78e0819650f7e7156f4f957312425e7853c20c77
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: cbb02ef8d1032a77cccd045401d9e3387f48a963
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875712"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621103"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Nasıl yapılır: Program aracılığıyla Yazımı denetleme
-  Belgede yazım denetimi yapmak için kullanın <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi. Bu yöntem, sağlanan parametresi doğru yazıldığından emin olup olmadığını gösteren bir Boole değeri döndürür.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="to-check-spelling-and-display-results-in-a-message-box"></a>Yazım denetimi ve sonuçları bir ileti kutusu içinde görüntülemek için  
-  
-1.  Çağrı <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi ve yazım hataları denetlemek için metin aralığı geçirin. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.  
-  
+  Belgede yazım denetimi yapmak için kullanın <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi. Bu yöntem, sağlanan parametresi doğru yazıldığından emin olup olmadığını gösteren bir Boole değeri döndürür.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="to-check-spelling-and-display-results-in-a-message-box"></a>Yazım denetimi ve sonuçları bir ileti kutusu içinde görüntülemek için
+
+1.  Çağrı <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi ve yazım hataları denetlemek için metin aralığı geçirin. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
+
      [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
-     [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

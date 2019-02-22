@@ -12,46 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baa1dbde2f4cbe9d537c181c73832f57b31b6041
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce251da3c1cb7b1da00971d46cc0801ad24b8985
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043044"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600821"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
-Hata ayıklama dizini .exe dosyasında bulundu çağrılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT NotifyDebugDir (   
-   BOOL  fExecutable,  
-   DWORD cbData,  
-   BYTE  data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `fExecutable`  
- [in] `TRUE` hata ayıklama dizini, yürütülebilir bir dosya (.dbg Dosya yerine) salt okunur ise.  
-  
- `cbData`  
- [in] Hata ayıklama dizininde bulunan verileri baytlık sayısı.  
-  
- `data[]`  
- [in] Oturum hata ayıklama dizini doldurulmuş bir dizi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Dönüş kodu genellikle göz ardı edilir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yürütülebilir dosya işlenirken bir hata ayıklama dizini bulduğunda, bu geri çağırma yöntemini çağırır.  
-  
- Bu yöntem, hata ayıklama bilgisi .pdb dosyasında bulunan dışındaki desteklemek için istemcinin ters mühendislik hata ayıklama ve/veya yürütülebilir dosya ihtiyacını ortadan kaldırır. Bu verilerle istemcide kullanılabilir hata ayıklama bilgilerinin türünü ve bu yürütülebilir dosya veya .dbg dosyasında bulunan tanıyabilirsiniz.  
-  
- Çoğu istemci çünkü bu geri çağırma gerekmeyeceğinden `IDiaDataSource::loadDataForExe` yöntemi .pdb hem .dbg dosyaları sembolleri sunmak için gerekli olduğunda şeffaf bir şekilde açılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idialoadcallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+Hata ayıklama dizini .exe dosyasında bulundu çağrılır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT NotifyDebugDir ( 
+   BOOL  fExecutable,
+   DWORD cbData,
+   BYTE  data[]
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `fExecutable`
+
+[in] `TRUE` hata ayıklama dizini, yürütülebilir bir dosya (.dbg Dosya yerine) salt okunur ise.
+
+ `cbData`
+
+[in] Hata ayıklama dizininde bulunan verileri baytlık sayısı.
+
+ `data[]`
+
+[in] Oturum hata ayıklama dizini doldurulmuş bir dizi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Dönüş kodu genellikle göz ardı edilir.
+
+## <a name="remarks"></a>Açıklamalar
+ [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yürütülebilir dosya işlenirken bir hata ayıklama dizini bulduğunda, bu geri çağırma yöntemini çağırır.
+
+ Bu yöntem, hata ayıklama bilgisi .pdb dosyasında bulunan dışındaki desteklemek için istemcinin ters mühendislik hata ayıklama ve/veya yürütülebilir dosya ihtiyacını ortadan kaldırır. Bu verilerle istemcide kullanılabilir hata ayıklama bilgilerinin türünü ve bu yürütülebilir dosya veya .dbg dosyasında bulunan tanıyabilirsiniz.
+
+ Çoğu istemci çünkü bu geri çağırma gerekmeyeceğinden `IDiaDataSource::loadDataForExe` yöntemi .pdb hem .dbg dosyaları sembolleri sunmak için gerekli olduğunda şeffaf bir şekilde açılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87fe52e1bdf3fda37f9eda964364e7b5cc13dec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e30894ec98dd1db4de0b724082467a681a0fa696
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942470"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615461"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Değer türleri için'lerin üzerine yaz'geçersiz kılma
 
-|||  
-|-|-|  
-|Kural Kimliği|DA0006|  
-|Kategori|.NET framework kullanımı|  
-|Profiiling yöntemleri|Örnekleme|  
-|İleti|Equals ve eşitlik işleci değer türleri üzerinde geçersiz kılar.|  
-|İleti türü|Uyarı|  
+|||
+|-|-|
+|Kural Kimliği|DA0006|
+|Kategori|.NET framework kullanımı|
+|Profiiling yöntemleri|Örnekleme|
+|İleti|Equals ve eşitlik işleci değer türleri üzerinde geçersiz kılar.|
+|İleti türü|Uyarı|
 
-## <a name="cause"></a>Sebep  
- Profil oluşturma verilerinin önemli bir kısmı çağrılarıdır Equals yöntemini veya bir genel değer türü eşitlik işleçleri. Daha verimli bir yöntem uygulamayı düşünün.  
+## <a name="cause"></a>Sebep
+ Profil oluşturma verilerinin önemli bir kısmı çağrılarıdır Equals yöntemini veya bir genel değer türü eşitlik işleçleri. Daha verimli bir yöntem uygulamayı düşünün.
 
-## <a name="rule-description"></a>Kural açıklaması  
- Değer türleri için eşittir'ın devralınmış uygulaması kullanan <xref:System.Reflection> kitaplığı ve türdeki tüm alanların içeriğini karşılaştırır. Yansıma hesaplama açısından pahalıdır ve her alan için eşitlik karşılaştırma gereksiz olabilir. Kullanıcıları karşılaştırmak veya örneklerini sıralamak ya da tablo anahtarlarını karma olarak kullanmayı bekliyorsanız, değer türünüz Equals uygulamalıdır. İşleç aşırı yüklemesi programlama dilini destekler, ayrıca eşitlik ve eşitsizlik işleci bir uygulama sağlamalıdır.  
+## <a name="rule-description"></a>Kural açıklaması
+ Değer türleri için eşittir'ın devralınmış uygulaması kullanan <xref:System.Reflection> kitaplığı ve türdeki tüm alanların içeriğini karşılaştırır. Yansıma hesaplama açısından pahalıdır ve her alan için eşitlik karşılaştırma gereksiz olabilir. Kullanıcıları karşılaştırmak veya örneklerini sıralamak ya da tablo anahtarlarını karma olarak kullanmayı bekliyorsanız, değer türünüz Equals uygulamalıdır. İşleç aşırı yüklemesi programlama dilini destekler, ayrıca eşitlik ve eşitsizlik işleci bir uygulama sağlamalıdır.
 
- Equals ve eşitlik işleçleri geçersiz kılma hakkında daha fazla bilgi için bkz. [uygulama Equals ve eşitlik operatörünün (==) için yönergeler](http://go.microsoft.com/fwlink/?LinkId=177818).  
+ Equals ve eşitlik işleçleri geçersiz kılma hakkında daha fazla bilgi için bkz. [uygulama Equals ve eşitlik operatörünün (==) için yönergeler](http://go.microsoft.com/fwlink/?LinkId=177818).
 
-## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
+## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma
  Equals ve eşitlik işleçleri uygulama örneği için bkz: kod çözümleme kural [CA1815: Geçersiz kılma eşittir ve işleç değer türleri üzerinde](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

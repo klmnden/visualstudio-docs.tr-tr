@@ -14,59 +14,59 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1aa7be95b0812b27c302500bd166abcb00c7089d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: cf2ef7aac4b9e9b54beeed0d4a6d6be31983c30e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874538"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602266"
 ---
 # <a name="develop-office-solutions"></a>Office çözümleri geliştirme
-  Sonra Visual Studio'da Office geliştirme araçlarını kullanarak bir proje tasarlayın ve proje dosyalarını kurduğunuzda, özel kullanıcı arabirimi (UI) ve kod uygulama hakkında yoğunlaşabilirsiniz başlayabilirsiniz.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
-> [!NOTE]  
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.  
-  
-## <a name="office-solutions-programming-model"></a>Office çözümleri programlama modeli  
- Office nesne modeli, çeşitli programlayabileceğiniz nesneleri gösterir. Yönetilen kod kullanarak Office çözümleri program her Office birincil birlikte çalışma derlemelerindeki türlerini kullanan kod yazın. Visual Studio'da Office proje şablonları kullanarak oluşturduğunuz çözümlerde, ayrıca projenizde oluşturulan sınıflar karşı doğrudan kod yazma. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).  
-  
-## <a name="program-different-types-of-office-solutions"></a>Office çözümleri farklı türde program  
- Oluşturmakta olduğunuz çözüm türü projenizde kullanabileceğiniz özellikleri belirler. Örneğin, Windows Forms denetimleri ve genişletilmiş Office denetimleri ekleyebilirsiniz (adlı *konak denetimlerini*) öğeleri sürükleyerek, belge düzeyinde özelleştirmeler için **araç kutusu** Visual Studio'da tasarım zamanında . Bir VSTO eklentisi geliştiriyorsanız, ancak yalnızca bu tür denetimler belgelerine çalışma zamanında kod yazarak ekleyebilirsiniz.  
-  
- Çözümleri farklı türleri için özel özellikler hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
-  
-- [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md).  
-  
-- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md).  
-  
-- [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).  
-  
-  Office çözümleri ve projeleri oluşturmanıza yardımcı olacak yordamlar planlamanıza yardımcı olacak arka plan bilgileri için bkz. [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).  
-  
-## <a name="related-topics"></a>İlgili konular  
-  
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)|Office çözümlerinde kod yazma farklı yönlerini açıklar.|  
-|[VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)|VSTO eklentileri ve ilgili programlama görevlerini programlama modeli genel bakış sağlar.|  
-|[Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)|Belge düzeyi özelleştirmeleri ve ilgili programlama görevlerini programlama modeli genel bakış sağlar.|  
-|[Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)|VSTO eklentileri ve belge düzeyi özelleştirmeleri kullanarak kullanıcı Arabirimi, Office uygulamalarını özelleştirebileceğiniz farklı yollarını açıklar.|  
-|[Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)|Office çözümlerinde, denetimlere veri bağlama ve verileri belge düzeyi özelleştirmelerdeki önbelleğe alma gibi verilerle çalışabilirsiniz farklı yollarını açıklar.|  
+  Sonra Visual Studio'da Office geliştirme araçlarını kullanarak bir proje tasarlayın ve proje dosyalarını kurduğunuzda, özel kullanıcı arabirimi (UI) ve kod uygulama hakkında yoğunlaşabilirsiniz başlayabilirsiniz.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+> [!NOTE]
+>  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+
+## <a name="office-solutions-programming-model"></a>Office çözümleri programlama modeli
+ Office nesne modeli, çeşitli programlayabileceğiniz nesneleri gösterir. Yönetilen kod kullanarak Office çözümleri program her Office birincil birlikte çalışma derlemelerindeki türlerini kullanan kod yazın. Visual Studio'da Office proje şablonları kullanarak oluşturduğunuz çözümlerde, ayrıca projenizde oluşturulan sınıflar karşı doğrudan kod yazma. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
+
+## <a name="program-different-types-of-office-solutions"></a>Office çözümleri farklı türde program
+ Oluşturmakta olduğunuz çözüm türü projenizde kullanabileceğiniz özellikleri belirler. Örneğin, Windows Forms denetimleri ve genişletilmiş Office denetimleri ekleyebilirsiniz (adlı *konak denetimlerini*) öğeleri sürükleyerek, belge düzeyinde özelleştirmeler için **araç kutusu** Visual Studio'da tasarım zamanında . Bir VSTO eklentisi geliştiriyorsanız, ancak yalnızca bu tür denetimler belgelerine çalışma zamanında kod yazarak ekleyebilirsiniz.
+
+ Çözümleri farklı türleri için özel özellikler hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+
+- [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md).
+
+- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md).
+
+- [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md).
+
+  Office çözümleri ve projeleri oluşturmanıza yardımcı olacak yordamlar planlamanıza yardımcı olacak arka plan bilgileri için bkz. [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
+
+## <a name="related-topics"></a>İlgili konular
+
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)|Office çözümlerinde kod yazma farklı yönlerini açıklar.|
+|[VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)|VSTO eklentileri ve ilgili programlama görevlerini programlama modeli genel bakış sağlar.|
+|[Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)|Belge düzeyi özelleştirmeleri ve ilgili programlama görevlerini programlama modeli genel bakış sağlar.|
+|[Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)|VSTO eklentileri ve belge düzeyi özelleştirmeleri kullanarak kullanıcı Arabirimi, Office uygulamalarını özelleştirebileceğiniz farklı yollarını açıklar.|
+|[Office çözümlerindeki veriler](../vsto/data-in-office-solutions.md)|Office çözümlerinde, denetimlere veri bağlama ve verileri belge düzeyi özelleştirmelerdeki önbelleğe alma gibi verilerle çalışabilirsiniz farklı yollarını açıklar.|
 |[Otomatik kaydetme Office çözümlerini nasıl etkiler?](./how-autosave-impacts-office-solutions.md)|Office çözümleri için otomatik kaydetme etkinken yapmanız gerekebilir ayarlamalar açıklar.|
-|[Office çözümlerinde sorun giderme](../vsto/troubleshooting-office-solutions.md)|Office çözümleri oluşturma sırasında karşılaşabileceğiniz genel sorunları çözmek için ipuçları sağlar.|  
-|[Office'te iş parçacığı desteği](../vsto/threading-support-in-office.md)|Office çözümlerinde birden çok iş parçacığı ile çalışmaya genel bir bakış sağlar.|  
-|[Office projelerinde erişilebilirlik](../vsto/accessibility-in-office-projects.md)|Office çözümlerinde kullanılabilir erişilebilirlik özelliklerini açıklar.|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Özel belge özelliklerini oluşturma ve değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [Nasıl yapılır: Okuma ve yazma için belge özellikleri](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [Nasıl yapılır: Office Çok Dilde Kullanıcı arabirimini hedefleme](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
- [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
- [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
- [İzlenecek yol: İlk VSTO eklentinizi Outlook için oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
- [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
- [İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
- [İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
- [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+|[Office çözümlerinde sorun giderme](../vsto/troubleshooting-office-solutions.md)|Office çözümleri oluşturma sırasında karşılaşabileceğiniz genel sorunları çözmek için ipuçları sağlar.|
+|[Office'te iş parçacığı desteği](../vsto/threading-support-in-office.md)|Office çözümlerinde birden çok iş parçacığı ile çalışmaya genel bir bakış sağlar.|
+|[Office projelerinde erişilebilirlik](../vsto/accessibility-in-office-projects.md)|Office çözümlerinde kullanılabilir erişilebilirlik özelliklerini açıklar.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Nasıl yapılır: Özel belge özelliklerini oluşturma ve değiştirme](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Nasıl yapılır: Okuma ve yazma için belge özellikleri](../vsto/how-to-read-from-and-write-to-document-properties.md)
+- [Nasıl yapılır: Office Çok Dilde Kullanıcı arabirimini hedefleme](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
+- [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [İzlenecek yol: İlk VSTO eklentinizi Outlook için oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
+- [İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
+- [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)

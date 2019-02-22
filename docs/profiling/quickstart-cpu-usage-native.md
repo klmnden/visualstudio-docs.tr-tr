@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000711"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633713"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Hızlı Başlangıç: CPU kullanım verilerini, Visual Studio (C++) çözümleme
 
@@ -57,64 +57,64 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla 
-  
+
+## <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
+
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `main` işlevi:
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
 
     > [!TIP]
     > İki kesme noktaları ayarlayarak veri toplamayı çözümlemek istediğiniz kod parçalarını sınırlayabilirsiniz.
-  
+
 3.  **Tanılama araçları** pencere zaten görünür değilse, bunu devre dışı bırakmış. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
 
 4.  Tıklayın **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
@@ -147,7 +147,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
      Şimdi, artık performans verileri bölge için özellikle uygulamanız iki kesme noktaları arasında çalışan kod için var.
 
      Profil Oluşturucu, iş parçacığı veri hazırlama başlar. Bitmesini bekleyin.
-  
+
      CPU kullanımı aracı raporda görüntüler **CPU kullanımı** sekmesi.
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
@@ -165,7 +165,7 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 
 2. İşlev listesinde çift `getNumber` işlevi.
 
-    İşlev çift tıkladığınızda **çağıran/çağrılan** görünümü sol bölmede açılır. 
+    İşlev çift tıkladığınızda **çağıran/çağrılan** görünümü sol bölmede açılır.
 
     ![Tanılama araçları arayan-Aranan görünümü](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 - [CPU kullanımını analiz etme](../profiling/cpu-usage.md) CPU kullanım aracı hakkında daha ayrıntılı bilgiler.
 - -Daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya eklenmiş bir hata ayıklayıcı olmadan CPU kullanımını analiz etme [hata ayıklama olmadan profil oluşturma verisi toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [profil oluşturma araçları ile veya hata ayıklayıcı olmadan çalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Ayrıca bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
 
- [Visual Studio profil oluşturma](../profiling/index.md)  
- [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)
+- [Visual Studio profil oluşturma](../profiling/index.md)
+- [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

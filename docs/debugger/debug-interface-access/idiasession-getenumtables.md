@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c331171a62d2319666229f108428b9d62b7464e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227624"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608597"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Sembol deposu içerisinde bulunan tüm tablolar için bir numaralandırıcı alır.
@@ -31,7 +31,8 @@ HRESULT getEnumTables (
 ```
 
 #### <a name="parameters"></a>Parametreler
-`ppEnumTables`  
+`ppEnumTables`
+
 [out] Döndürür bir [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables.md) nesne. Bu arabirim, sembol deposundaki tablolar numaralandırmak için kullanın.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -67,5 +68,5 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

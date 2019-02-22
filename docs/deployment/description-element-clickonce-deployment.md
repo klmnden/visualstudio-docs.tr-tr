@@ -16,50 +16,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c926da377688b1248daa01f015cda7914434a36
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013905"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618568"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Açıklama&gt; öğesi (ClickOnce dağıtımı)
-Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımlar ve bir **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-  
-      <description   
-   publisher   
-   product  
-   suiteName  
-   supportUrl  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
- `description` Öğesi gereklidir ve içinde `urn:schemas-microsoft-com:asm.v1` ad alanı. Alt öğe içerir ve aşağıdaki özniteliklere sahiptir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`publisher`|Gerekli. Windows simge yerleşimi için kullanılan şirket adını tanımlayan **Başlat** menü ve **Program Ekle veya Kaldır** Denetim Masası, yükleme için dağıtım yapılandırıldığında.|  
-|`product`|Gerekli. Tam ürün adını tanımlar. Windows yüklü simgesi başlığı olarak kullanılan **Başlat** menüsü.|  
-|`suiteName`|İsteğe bağlı. Bir alt klasörde tanımlayan `publisher` Windows klasöründe **Başlat** menüsü.|  
-|`supportUrl`|İsteğe bağlı. Gösterilen destek URL'sini belirtir **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi. Windows uygulama desteği için bu URL için bir kısayol da oluşturulur **Başlat** dağıtım yüklemesi için yapılandırıldığında menüsü.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Description öğesi tüm dağıtım yapılandırmaları gerekir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde gösterilmiştir bir `description` öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md) konu.  
-  
-```xml  
-<description   
-  asmv2:publisher="My Company Name"  
-  asmv2:product="My Application"  
-  xmlns="urn:schemas-microsoft-com:asm.v1" />  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)
+Bir kabuk varlığı oluşturmak için kullanılan uygulama bilgilerini tanımlar ve bir **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+
+      <description 
+   publisher 
+   product
+   suiteName
+   supportUrl
+/>
+```
+
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
+ `description` Öğesi gereklidir ve içinde `urn:schemas-microsoft-com:asm.v1` ad alanı. Alt öğe içerir ve aşağıdaki özniteliklere sahiptir.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`publisher`|Gerekli. Windows simge yerleşimi için kullanılan şirket adını tanımlayan **Başlat** menü ve **Program Ekle veya Kaldır** Denetim Masası, yükleme için dağıtım yapılandırıldığında.|
+|`product`|Gerekli. Tam ürün adını tanımlar. Windows yüklü simgesi başlığı olarak kullanılan **Başlat** menüsü.|
+|`suiteName`|İsteğe bağlı. Bir alt klasörde tanımlayan `publisher` Windows klasöründe **Başlat** menüsü.|
+|`supportUrl`|İsteğe bağlı. Gösterilen destek URL'sini belirtir **Program Ekle veya Kaldır** Denetim Masası'ndaki öğesi. Windows uygulama desteği için bu URL için bir kısayol da oluşturulur **Başlat** dağıtım yüklemesi için yapılandırıldığında menüsü.|
+
+## <a name="remarks"></a>Açıklamalar
+ Description öğesi tüm dağıtım yapılandırmaları gerekir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneğinde gösterilmiştir bir `description` öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md) konu.
+
+```xml
+<description
+  asmv2:publisher="My Company Name"
+  asmv2:product="My Application"
+  xmlns="urn:schemas-microsoft-com:asm.v1" />
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)
