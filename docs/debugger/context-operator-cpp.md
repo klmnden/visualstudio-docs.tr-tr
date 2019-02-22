@@ -22,53 +22,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7e31f1eb259f6633f747f0243a08e09caf4539d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965607"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633544"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Bağlam işleci Visual Studio hata ayıklayıcısında (C++)
-Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu içerik işlecini kullanabilirsiniz. Bağlam işleci, aksi takdirde yerel bir ad tarafından gizlenen bir dış kapsam adı belirtmek için kullanışlıdır.  
-  
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Söz dizimi  
- Bağlam belirtmenin iki yolu vardır:  
-  
-1.  {, [*Modülü*]} *ifadesi*  
-  
-     Küme ayraçları iki virgül ve modül içermelidir (yürütülebilir veya DLL) adını veya tam yolu.  
-  
-     Örneğin, bir kesme noktasında ayarlanacak `SomeFunction` EXAMPLE.dll işlevi:  
-  
-    ```C++  
-    {,,EXAMPLE.dll}SomeFunction  
-    ```  
-  
-2.  *Modül*! *ifade*  
-  
-    ```C++  
-    EXAMPLE.dll!SomeFunction  
-    ```  
-  
-- *Modül* bir modül adı. Aynı ada sahip modüller arasında ayırt etmek için bir tam yol kullanabilirsiniz.  
-  
-   Varsa *Modülü* yolu, virgül, katıştırılmış bir boşluk veya bir küme ayracı içerir, bağlam ayrıştırıcının dizesi düzgün tanıyabilmesi, yolu tırnak kullanmanız gerekir. Tek tırnak işaretleri çift tırnak işareti kullanmalısınız bir Windows dosya adının parçası olarak kabul edilir. Örneğin,  
-  
-  ```C++  
-  {,,"a long, long, library name.dll"} g_Var  
-  ```  
-  
-- *ifade* işlev adı, değişken adı veya işaretçi adresi gibi geçerli bir hedef çözümler herhangi geçerli bir C++ ifadesi *Modülü*.  
-  
-  İfade değerlendirici bir ifadede bir sembol karşılaştığında sembolünün şu sırayla arar:  
-  
-1.  Sözcük kapsamı geçerli blok küme ayraçları içine alındığına ve dışa doğru kapsayan bir blok ile devam bir deyimler serisini başlayarak dışa doğru. Geçerli blok yönerge işaretçisi adresi geçerli konumu içeren kodudur.  
-  
-2.  İşlev kapsamı. Geçerli işlev.  
-  
-3.  C++ üye işlevinin içerisinde geçerli konumu ise sınıf kapsamı. Sınıf kapsamı, tüm temel sınıflar içerir. İfade değerlendirici, normal baskınlık kurallarını kullanır.  
-  
-4.  Genel semboller geçerli modül içinde.  
-  
+Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu içerik işlecini kullanabilirsiniz. Bağlam işleci, aksi takdirde yerel bir ad tarafından gizlenen bir dış kapsam adı belirtmek için kullanışlıdır.
+
+##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Söz dizimi
+ Bağlam belirtmenin iki yolu vardır:
+
+1.  {, [*Modülü*]} *ifadesi*
+
+     Küme ayraçları iki virgül ve modül içermelidir (yürütülebilir veya DLL) adını veya tam yolu.
+
+     Örneğin, bir kesme noktasında ayarlanacak `SomeFunction` EXAMPLE.dll işlevi:
+
+    ```C++
+    {,,EXAMPLE.dll}SomeFunction
+    ```
+
+2.  *Modül*! *ifade*
+
+    ```C++
+    EXAMPLE.dll!SomeFunction
+    ```
+
+- *Modül* bir modül adı. Aynı ada sahip modüller arasında ayırt etmek için bir tam yol kullanabilirsiniz.
+
+   Varsa *Modülü* yolu, virgül, katıştırılmış bir boşluk veya bir küme ayracı içerir, bağlam ayrıştırıcının dizesi düzgün tanıyabilmesi, yolu tırnak kullanmanız gerekir. Tek tırnak işaretleri çift tırnak işareti kullanmalısınız bir Windows dosya adının parçası olarak kabul edilir. Örneğin,
+
+  ```C++
+  {,,"a long, long, library name.dll"} g_Var
+  ```
+
+- *ifade* işlev adı, değişken adı veya işaretçi adresi gibi geçerli bir hedef çözümler herhangi geçerli bir C++ ifadesi *Modülü*.
+
+  İfade değerlendirici bir ifadede bir sembol karşılaştığında sembolünün şu sırayla arar:
+
+1.  Sözcük kapsamı geçerli blok küme ayraçları içine alındığına ve dışa doğru kapsayan bir blok ile devam bir deyimler serisini başlayarak dışa doğru. Geçerli blok yönerge işaretçisi adresi geçerli konumu içeren kodudur.
+
+2.  İşlev kapsamı. Geçerli işlev.
+
+3.  C++ üye işlevinin içerisinde geçerli konumu ise sınıf kapsamı. Sınıf kapsamı, tüm temel sınıflar içerir. İfade değerlendirici, normal baskınlık kurallarını kullanır.
+
+4.  Genel semboller geçerli modül içinde.
+
 5.  Ortak semboller geçerli programı.

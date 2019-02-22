@@ -12,41 +12,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2cb978ddd62c3e274133e2d209c2634783c708
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 921bef3514b802672296dda6d680b665f1f42482
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871240"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632504"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office çözüm güvenliğinde sorunlarını giderme
-  Bu konuda, Office çözümleri güvenliğini sağlama ile çalışırken karşılaşabileceğiniz genel sorunları çözmek için ipuçları verilmektedir.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
-## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Güvenilir çözümleri kısıtlı sitelerden yüklenemez.  
- Web sitesi Internet Explorer Yasak siteler bölgesi listede yoksa, kullanıcılar bir web konumundan bir çözüm yükleyemez. Çözüm, güvenilir bir sertifika ile imzalanmış olsa bile bu geçerlidir.  
-  
- Dağıtım bildirimi URL'sini beş bölgeleri birine kategorilere ayrılabilir:  
-  
-- Bilgisayarım  
-  
-- Internet  
-  
-- Yerel intranet  
-  
-- Güvenilen siteler  
-  
-- Yasak siteler  
-  
-  Dağıtım bildiriminin konumunu Yasak siteler bölgesi için atanmış olan varsa [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] çözüm yüklemez. Konumun bilinen ve güvenilir kullanıcı konumu Yasak siteler bölgesi kaldırabileceğiniz ve çözümü yükler. Bölgelerini yönetme hakkında daha fazla bilgi için bkz. [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).  
-  
-## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Internet Explorer Artırılmış Güvenlik Yapılandırması veya Internet Explorer 7 yüklü olmadığında çözümleri ağ dosya paylaşımları veya web konumlarında yüklenemez  
- Internet Explorer Artırılmış Güvenlik Yapılandırması (IEESC) Windows Server 2003'te ve üstünde ve Internet Explorer 7 ve üzeri, İnternet'e göz atabilmenizi kullanıcıların önemli ölçüde kısıtlar. Kullanıcılar, yüklemeye çalıştığınızda, Office Çözümlerinden bir ağ dosyası paylaşımı veya web konumu, bunlar aşağıdaki hata iletisini alabilirsiniz: "Sertifika için dağıtım bildirimi imzalamak için kullanıldığından bu uygulamada özelleştirilmiş işlevleri çalışmaz *SolutionName* güvenilir değil. Daha fazla yardım için yöneticinize başvurun."  
-  
- Dağıtım bildirimi URL'sini Internet bölgesine kategorize edilirse IEESC ve Internet Explorer 7 ve üzeri ile bildirim güvenilir bir yayımcıdan bir sertifikası olmalıdır veya çözüm yüklenemez. IEESC, varsayılan davranışı güven karar vermek için son kullanıcı onay istemi görüntülenir.  
-  
- IEESC ve Internet Explorer 7 etkisini yönetmek ve üzeri, Web siteleri ve Evrensel Adlandırma Kuralı (UNC) yolları belirlemek için güvenilir ve güvenilen güvenlik bölgeleri (Yerel intranet veya Güvenilen siteler) birine ekleyin. Bölgelerini yönetme hakkında daha fazla bilgi için bkz. [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)  
+  Bu konuda, Office çözümleri güvenliğini sağlama ile çalışırken karşılaşabileceğiniz genel sorunları çözmek için ipuçları verilmektedir.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Güvenilir çözümleri kısıtlı sitelerden yüklenemez.
+ Web sitesi Internet Explorer Yasak siteler bölgesi listede yoksa, kullanıcılar bir web konumundan bir çözüm yükleyemez. Çözüm, güvenilir bir sertifika ile imzalanmış olsa bile bu geçerlidir.
+
+ Dağıtım bildirimi URL'sini beş bölgeleri birine kategorilere ayrılabilir:
+
+- Bilgisayarım
+
+- Internet
+
+- Yerel intranet
+
+- Güvenilen siteler
+
+- Yasak siteler
+
+  Dağıtım bildiriminin konumunu Yasak siteler bölgesi için atanmış olan varsa [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] çözüm yüklemez. Konumun bilinen ve güvenilir kullanıcı konumu Yasak siteler bölgesi kaldırabileceğiniz ve çözümü yükler. Bölgelerini yönetme hakkında daha fazla bilgi için bkz. [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).
+
+## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Internet Explorer Artırılmış Güvenlik Yapılandırması veya Internet Explorer 7 yüklü olmadığında çözümleri ağ dosya paylaşımları veya web konumlarında yüklenemez
+ Internet Explorer Artırılmış Güvenlik Yapılandırması (IEESC) Windows Server 2003'te ve üstünde ve Internet Explorer 7 ve üzeri, İnternet'e göz atabilmenizi kullanıcıların önemli ölçüde kısıtlar. Kullanıcılar, yüklemeye çalıştığınızda, Office Çözümlerinden bir ağ dosyası paylaşımı veya web konumu, bunlar aşağıdaki hata iletisini alabilirsiniz: "Sertifika için dağıtım bildirimi imzalamak için kullanıldığından bu uygulamada özelleştirilmiş işlevleri çalışmaz *SolutionName* güvenilir değil. Daha fazla yardım için yöneticinize başvurun."
+
+ Dağıtım bildirimi URL'sini Internet bölgesine kategorize edilirse IEESC ve Internet Explorer 7 ve üzeri ile bildirim güvenilir bir yayımcıdan bir sertifikası olmalıdır veya çözüm yüklenemez. IEESC, varsayılan davranışı güven karar vermek için son kullanıcı onay istemi görüntülenir.
+
+ IEESC ve Internet Explorer 7 etkisini yönetmek ve üzeri, Web siteleri ve Evrensel Adlandırma Kuralı (UNC) yolları belirlemek için güvenilir ve güvenilen güvenlik bölgeleri (Yerel intranet veya Güvenilen siteler) birine ekleyin. Bölgelerini yönetme hakkında daha fazla bilgi için bkz. [yapılandırma ClickOnce Güvenilen Yayımcılar](http://go.microsoft.com/fwlink/?LinkId=94774).
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)

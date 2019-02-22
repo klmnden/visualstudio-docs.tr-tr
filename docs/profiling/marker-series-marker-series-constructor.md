@@ -12,43 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa010c535b984eb6a00bcb8234815f3d489b87b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5178b2cebdfa4246256aef6334e026ef091fa553
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939458"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639966"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series Oluşturucusu
-Yeni bir örneğini başlatır `marker_series` sınıfı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-marker_series();  
-marker_series(  
-   _In_ LPCTSTR _SeriesName  
-);  
-marker_series(  
-   _In_ const GUID* _ProviderGuid  
-);  
-marker_series(  
-   _In_ const GUID* _ProviderGuid,  
-   _In_ LPCTSTR _SeriesName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `_SeriesName`  
- Oluşturulacak dizinin adı.  
-  
- `_ProviderGuid`  
- Seri sağlayıcısı GUID.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** CONCURRENCY::Diagnostic  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [marker_series class](../profiling/marker-series-class.md)
+Yeni bir örneğini başlatır `marker_series` sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+marker_series();
+marker_series(
+   _In_ LPCTSTR _SeriesName
+);
+marker_series(
+   _In_ const GUID* _ProviderGuid
+);
+marker_series(
+   _In_ const GUID* _ProviderGuid,
+   _In_ LPCTSTR _SeriesName
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `_SeriesName` Oluşturulacak dizinin adı.
+
+ `_ProviderGuid` Seri sağlayıcısı GUID.
+
+## <a name="requirements"></a>Gereksinimler
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** CONCURRENCY::Diagnostic
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [marker_series class](../profiling/marker-series-class.md)

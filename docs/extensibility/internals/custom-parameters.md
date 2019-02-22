@@ -11,38 +11,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fb10e4d5b4386791b0a4aa9b2927e97e6006c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957539"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596666"
 ---
 # <a name="custom-parameters"></a>Özel Parametreler
-Bir sihirbaz başlatıldıktan sonra özel parametreler sihirbaz işlemi denetleyin. İlgili *.vsz* dosyası tümleşik geliştirme ortamı (IDE) paketlenir ve Sihirbazı başlattığınızda sihirbaz dize dizisi geçirilen kullanıcı tanımlı parametre dizisi sağlar. Sihirbaz dizisini ayrıştırır ve gerçek işlem sihirbazın denetlemek için bu bilgileri kullanır. Bu şekilde, bir sihirbaz işlevselliği içeriğine bağlı olarak özelleştirebilirsiniz *.vsz* dosya.  
-  
- Sihirbazı başlattığınızda bağlam parametreleri, diğer taraftan, proje durumunu tanımlar. Daha fazla bilgi için [bağlam parametreleri](../../extensibility/internals/context-parameters.md).  
-  
- Aşağıdaki örneğidir bir *.vsz* özel parametreleri olan dosyası:  
-  
-```  
-VSWIZARD 8.0  
-Wizard=VsWizard.VsWizard_Engine  
-Param="WIZARD_NAME = Sample Wizard"  
-Param="WIZARD_UI = FALSE"  
-Param="RELATIVE_PATH = VSWizards\Classwiz\ATL"  
-Param="PREPROCESS_FUNCTION = CanAddATLSupport"  
-Param="PROJECT_TYPE = CSPROJ"  
-```  
-  
- Yazarı *.vsz* dosyası parametrelerinin değerlerini ekler. Bir kullanıcı seçtiğinde **yeni proje** veya **Yeni Öğe Ekle** üzerinde **dosya** menüsü veya bir projeye sağ tıklayarak **Çözüm Gezgini**, IDE Bu değerleri dize dizisi toplar. IDE sonra projenin çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> yöntemiyle <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> bayrak kümesi ve proje çağrıları <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> Sihirbazı'nı çalıştıran ve sonucu döndürerek sorumlu yöntemi.  
-  
- Sihirbaz, dize dizisi, ayrıştırma ve dizeleri uygun şekilde hareket sorumludur. Özel Parametreler uygulayarak bu şekilde, çeşitli işlevler gerçekleştiren bir sihirbaz oluşturabilirsiniz. Diğer bir deyişle, bir sihirbaz üç farklı olabilir *.vsz* dosyaları. Her dosya, farklı çeşitli durumlarda sihirbazda davranışını denetlemek için özel parametreleri kümesini geçirir.  
-  
- Daha fazla bilgi için [sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
- [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)   
- [Sihirbazlar](../../extensibility/internals/wizards.md)   
- [Sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)
+Bir sihirbaz başlatıldıktan sonra özel parametreler sihirbaz işlemi denetleyin. İlgili *.vsz* dosyası tümleşik geliştirme ortamı (IDE) paketlenir ve Sihirbazı başlattığınızda sihirbaz dize dizisi geçirilen kullanıcı tanımlı parametre dizisi sağlar. Sihirbaz dizisini ayrıştırır ve gerçek işlem sihirbazın denetlemek için bu bilgileri kullanır. Bu şekilde, bir sihirbaz işlevselliği içeriğine bağlı olarak özelleştirebilirsiniz *.vsz* dosya.
+
+ Sihirbazı başlattığınızda bağlam parametreleri, diğer taraftan, proje durumunu tanımlar. Daha fazla bilgi için [bağlam parametreleri](../../extensibility/internals/context-parameters.md).
+
+ Aşağıdaki örneğidir bir *.vsz* özel parametreleri olan dosyası:
+
+```
+VSWIZARD 8.0
+Wizard=VsWizard.VsWizard_Engine
+Param="WIZARD_NAME = Sample Wizard"
+Param="WIZARD_UI = FALSE"
+Param="RELATIVE_PATH = VSWizards\Classwiz\ATL"
+Param="PREPROCESS_FUNCTION = CanAddATLSupport"
+Param="PROJECT_TYPE = CSPROJ"
+```
+
+ Yazarı *.vsz* dosyası parametrelerinin değerlerini ekler. Bir kullanıcı seçtiğinde **yeni proje** veya **Yeni Öğe Ekle** üzerinde **dosya** menüsü veya bir projeye sağ tıklayarak **Çözüm Gezgini**, IDE Bu değerleri dize dizisi toplar. IDE sonra projenin çağırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> yöntemiyle <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> bayrak kümesi ve proje çağrıları <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> Sihirbazı'nı çalıştıran ve sonucu döndürerek sorumlu yöntemi.
+
+ Sihirbaz, dize dizisi, ayrıştırma ve dizeleri uygun şekilde hareket sorumludur. Özel Parametreler uygulayarak bu şekilde, çeşitli işlevler gerçekleştiren bir sihirbaz oluşturabilirsiniz. Diğer bir deyişle, bir sihirbaz üç farklı olabilir *.vsz* dosyaları. Her dosya, farklı çeşitli durumlarda sihirbazda davranışını denetlemek için özel parametreleri kümesini geçirir.
+
+ Daha fazla bilgi için [sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
+- [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)
+- [Sihirbazlar](../../extensibility/internals/wizards.md)
+- [Sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

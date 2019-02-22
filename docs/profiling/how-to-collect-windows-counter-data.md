@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9554740cc576fc90ed232e64dbc4f73b619a8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022475"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640941"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Nasıl yapılır: Windows sayaç verileri toplama
 
@@ -48,6 +48,6 @@ Windows sayaçları profil oluşturma sırasında belirlenen aralıklarla toplan
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Performans oturumu özellikleri](../profiling/performance-session-properties.md)  
+[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+[performans oturumu özellikleri](../profiling/performance-session-properties.md)
 [CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)

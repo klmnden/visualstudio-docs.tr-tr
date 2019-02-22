@@ -19,40 +19,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921071"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635143"
 ---
 # <a name="project-element-msbuild"></a>Proje öğesi (MSBuild)
-Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.  
+Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası.
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
 | Öznitelik | Açıklama |
 |------------------------| - |
@@ -63,7 +63,7 @@ Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
 | `TreatAsLocalProperty` | İsteğe bağlı öznitelik.<br /><br /> Genel olarak kabul olmaz özellik adları. Bu öznitelik, bir proje veya hedefler dosyasının ve sonraki tüm içe aktarmaları ayarlanan özellik değerlerini geçersiz kılmasını belirli komut satırı özelliklerini engeller. Noktalı virgülle (;) birden çok özelliklerdir ayrılmış.<br /><br /> Normalde, genel özellikler, proje veya hedefler dosyasında ayarlanan özellik değerlerini geçersiz kılar. Özelliği içinde listelenmişse `TreatAsLocalProperty` , genel özellik değerini değil geçersiz kılma değeri'nda bu dosya ve sonraki tüm içeri aktarmaları ayarlanan özellik değerleri. Daha fazla bilgi için [nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Not:**  Genel özellikleri kullanarak bir komut isteminde ayarlama **-özellik** (veya **-p**) geçin. Ayrıca ayarlamak veya birden çok proje derleme alt projeler için genel özelliklerini kullanarak değiştirmek `Properties` MSBuild görevinin özniteliği. Daha fazla bilgi için [MSBuild görevi](../msbuild/msbuild-task.md). |
 | `Xmlns` | İsteğe bağlı öznitelik.<br /><br /> Bu seçenek belirtildiğinde, `xmlns` öznitelik değerini olmalıdır `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
-### <a name="child-elements"></a>Alt öğeleri  
+### <a name="child-elements"></a>Alt öğeleri
 
 | Öğe | Açıklama |
 | - | - |
@@ -78,11 +78,11 @@ Gerekli kök öğesi bir [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
 | [Hedef](../msbuild/target-element-msbuild.md) | İsteğe bağlı öğe.<br /><br /> İçin görevler kümesini içeren [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ardışık olarak yürütmek için. Görevleri kullanarak belirtilen [görev](../msbuild/task-element-msbuild.md) öğesi. Sıfır veya daha fazla olabilir `Target` proje öğeleri. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | İsteğe bağlı öğe.<br /><br /> Görevleri kaydetmek için bir yol sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Sıfır veya daha fazla olabilir `UsingTask` proje öğeleri. |
 
-### <a name="parent-elements"></a>Üst öğeler  
- Yok.  
+### <a name="parent-elements"></a>Üst öğeler
+ Yok.
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: İlk olarak oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)   
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Nasıl yapılır: İlk olarak oluşturmak için hangi hedef belirtin](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

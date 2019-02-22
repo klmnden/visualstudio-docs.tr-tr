@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 726bca63018ca2396126c487f2588da5c658a5eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975939"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637678"
 ---
 # <a name="visible-timeline-profile"></a>Görünür zaman çizelgesi profili
-Görünür zaman çizelgesi profili iş parçacığı engelleme görünüm için istatistiksel bilgiler ve raporlar için bağlantılar sağlar. Yakınlaştırma, uzaklaştırma, yatay kaydırma, Kanallar Gizle veya kanalları Göster olarak etkin göstergesi sayıları şu anda Görünümü'nde nedir yansıtacak şekilde değiştirin. Göstergeye bir öğe hakkında bir rapor görüntülemek için öğeyi tıklatın.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+Görünür zaman çizelgesi profili iş parçacığı engelleme görünüm için istatistiksel bilgiler ve raporlar için bağlantılar sağlar. Yakınlaştırma, uzaklaştırma, yatay kaydırma, Kanallar Gizle veya kanalları Göster olarak etkin göstergesi sayıları şu anda Görünümü'nde nedir yansıtacak şekilde değiştirin. Göstergeye bir öğe hakkında bir rapor görüntülemek için öğeyi tıklatın.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

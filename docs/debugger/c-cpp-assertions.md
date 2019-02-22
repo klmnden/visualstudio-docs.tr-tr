@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987476"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628331"
 ---
 # <a name="cc-assertions"></a>C/C++ Onayları
 Bir onay deyimi programınızda herhangi bir noktada doğru olması beklenen bir koşulu belirtir. Bu koşul true değilse onaylama işlemi başarısızsa, programınızın yürütülmesini kesildiğinde ve [onaylama başarısız iletişim kutusu](../debugger/assertion-failed-dialog-box.md) görünür.
@@ -46,7 +46,7 @@ Visual C++, aşağıdaki yapılar üzerinde alan onaylama deyimleri destekler:
 
 - C Çalışma Zamanı Kitaplığı'nı kullanan programlar için CRT onaylar.
 
-- ANSI [assert işlevi](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) diğer C/C++ programları için.  
+- ANSI [assert işlevi](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) diğer C/C++ programları için.
 
   Onaylamalar mantık hataları catch, bir işlemin sonuçlarını denetleyin ve işlenen hata koşulları Test için kullanabilirsiniz.
 
@@ -63,7 +63,7 @@ Visual C++, aşağıdaki yapılar üzerinde alan onaylama deyimleri destekler:
 
 - [MFC assert_valıd ve CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [AssertValid sınırlamaları](#BKMK_Limitations_of_AssertValid)  
+- [AssertValid sınırlamaları](#BKMK_Limitations_of_AssertValid)
 
   [Onaylamalar kullanma](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ Bu kod, hata durumunu işlemek için onay deyimi kullanır. Sonuç olarak, herha
 [Bu konudaki](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)  
-[Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)  
-[Yönetilen Koddaki Onaylamalar](../debugger/assertions-in-managed-code.md)
+
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
+- [Yönetilen Koddaki Onaylamalar](../debugger/assertions-in-managed-code.md)

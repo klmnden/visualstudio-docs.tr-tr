@@ -20,21 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942abb66e56e72cbe462f35944a9e4e03d471052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941820"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619855"
 ---
 # <a name="assertion-failed-dialog-box"></a>Onaylama Başarısız İletişim Kutusu
-Bir onay deyimi, programınızda belirli bir noktada doğru tutun beklediğiniz bir koşulu belirtir. Bu koşul true tutmazsa, onaylama işlemi başarısızsa, programınızın yürütülmesini yarıda ve bu iletişim kutusu görüntülenir.  
-  
-|Şuna tıklayın|Bitiş|  
-|-----------|--------|  
-|Yeniden Dene|Hata ayıklama doğrulama veya bildirimler ilgili yardım alın.|  
-|Yoksayma|Onaylama yoksay ve programı çalıştırmaya devam edin.|  
-|Durdurma|Programın yürütülmesini durdurmak ve hata ayıklama oturumunu sona erdirme.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ Onaylamaları](../debugger/c-cpp-assertions.md)
+Bir onay deyimi, programınızda belirli bir noktada doğru tutun beklediğiniz bir koşulu belirtir. Bu koşul true tutmazsa, onaylama işlemi başarısızsa, programınızın yürütülmesini yarıda ve bu iletişim kutusu görüntülenir.
+
+|Şuna tıklayın|Bitiş|
+|-----------|--------|
+|Yeniden Dene|Hata ayıklama doğrulama veya bildirimler ilgili yardım alın.|
+|Yoksayma|Onaylama yoksay ve programı çalıştırmaya devam edin.|
+|Durdurma|Programın yürütülmesini durdurmak ve hata ayıklama oturumunu sona erdirme.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+- [C/C++ Onaylamaları](../debugger/c-cpp-assertions.md)
